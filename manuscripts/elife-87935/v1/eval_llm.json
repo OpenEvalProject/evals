@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C96"
+    ],
+    "result": "Vangl2 expression is upregulated in sepsis patients and in immune cells/organs following LPS stimulation. In human sepsis patients, Vangl2 mRNA levels are elevated in PBMCs, and higher Vangl2 expression correlates with lower inflammatory markers. In mice, LPS treatment induces Vangl2 expression in lymphoid organs (spleen, lymph nodes) and in myeloid cells (BMDMs, neutrophils, peritoneal macrophages).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C4, and C96 are supported by qPCR data from patient samples (Figure 1A), clinical measurements (Figure 1\u2014figure supplement 1A), tissue expression data (Figure 1B), and cell-specific expression data (Figure 1\u2014figure supplement 1C-E). The data consistently demonstrate Vangl2 upregulation during inflammatory conditions across multiple experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Myeloid-specific deletion of Vangl2 (Vangl2\u0394M mice) increases susceptibility to LPS-induced septic shock and enhances inflammatory cytokine production. All Vangl2\u0394M mice died within 20 hours of LPS treatment compared to 20% mortality in WT mice. Vangl2\u0394M mice showed elevated IL-1\u03b2 protein in CD11b+ splenocytes, increased mRNA levels of Il1b, Tnfa, and Il6 in spleen, and elevated serum levels of IL-1\u03b2, TNF-\u03b1, and IL-6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are well-supported by survival data (Figure 1C), western blot analysis (Figure 1D), qPCR data (Figure 1E), and ELISA measurements (Figure 1F). The convergent evidence from survival, tissue-level gene expression, and systemic cytokine measurements provides strong support for the conclusion that Vangl2 deficiency exacerbates septic shock.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "RNA-seq analysis of Vangl2-deficient BMDMs reveals differential gene expression with enrichment in inflammatory pathways. 907 genes were upregulated and 1092 downregulated in Vangl2\u0394M BMDMs after LPS stimulation, with KEGG analysis showing enrichment in TNF signaling and cytokine-cytokine receptor interaction pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 are supported by RNA-seq data (Figure 2\u2014figure supplement 1A) and KEGG pathway analysis (Figure 2\u2014figure supplement 1C). The transcriptomic approach provides unbiased evidence for Vangl2's role in regulating inflammatory gene expression, though validation of specific differentially expressed genes would strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Vangl2 negatively regulates NF-\u03baB activation in myeloid cells. Vangl2-deficient peritoneal macrophages and neutrophils show enhanced and sustained phosphorylation of p65, elevated production of proinflammatory cytokines (TNF-\u03b1, IL-6, IL-1\u03b2), and increased p65 nuclear accumulation. Conversely, Vangl2 overexpression in A549 cells inhibits p65 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 are supported by western blot time-course data (Figure 2A-D), qPCR and ELISA measurements (Figure 2E-F, Figure 2\u2014figure supplement 1D-F), immunofluorescence data (Figure 2G-H), and overexpression experiments (Figure 2I-J). The bidirectional evidence from loss-of-function and gain-of-function experiments provides strong mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Vangl2 inhibits NF-\u03baB activation induced by multiple inflammatory stimuli and acts downstream of the NF-\u03baB signaling cascade. Vangl2 dose-dependently inhibits NF-\u03baB-luciferase activity induced by LPS, IL-1\u03b2, or TNF-\u03b1. Vangl2 also inhibits NF-\u03baB activation induced by overexpression of MyD88, IRAK1, TRAF6, IKK\u03b1, IKK\u03b2, or p65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C18 are supported by luciferase reporter assays (Figure 3A-D, Figure 3\u2014figure supplement 1A-F). The dose-dependent inhibition and the ability to suppress activation induced by multiple pathway components suggest Vangl2 acts at a downstream point in the pathway, though the inference about acting at the p65 level requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Vangl2 physically interacts with p65 through its PkBD domain to suppress NF-\u03baB signaling. Co-IP experiments show Vangl2 interacts with multiple NF-\u03baB pathway components in overexpression systems, but endogenously associates specifically with p65 upon LPS stimulation. The interaction occurs primarily in the cytoplasm and is enhanced by LPS treatment. Domain mapping reveals the PkBD domain is necessary and sufficient for p65 interaction and functional inhibition of NF-\u03baB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 are supported by co-IP data (Figure 3E-F, Figure 3\u2014figure supplement 1G-I, L), confocal microscopy (Figure 3G, Figure 3\u2014figure supplement 1K), domain deletion analysis (Figure 3H-I, Figure 3\u2014figure supplement 1M), and functional assays (Figure 3J). The convergence of biochemical interaction data, localization studies, and domain mapping provides strong evidence for the Vangl2-p65 interaction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Vangl2 promotes p65 protein degradation in a phosphorylation-independent manner, primarily in the cytoplasm. Vangl2 overexpression dose-dependently reduces p65 protein levels without affecting p65 mRNA. Both p65 and Vangl2 phosphorylation mutants retain the ability to mediate degradation. Vangl2 interacts with and degrades p65 in the cytoplasmic fraction. Vangl2-deficient BMDMs show stabilized p65 expression and slower degradation rates after LPS treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 are supported by western blot dose-response data (Figure 4A), qPCR (Figure 4B), phosphorylation mutant experiments (Figure 4\u2014figure supplement 1A-B), cellular fractionation (Figure 4C, Figure 4\u2014figure supplement 1C), endogenous protein stability assays (Figure 4D), and CHX-chase experiments (Figure 4\u2014figure supplement 1D). The multiple complementary approaches provide strong evidence for Vangl2-mediated p65 degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Vangl2 promotes p65 degradation specifically through the autophagy pathway, not proteasomal or caspase-mediated pathways. Degradation is blocked by autophagy/autolysosome inhibitors (CQ, Baf A1, 3-MA) but not by proteasome inhibitor (MG132) or caspase inhibitors (Z-VAD, VX-765). Rapamycin-induced autophagy enhances Vangl2-mediated p65 degradation. Genetic ablation of autophagy genes (ATG5, Beclin1) abolishes Vangl2-mediated p65 degradation and rescues NF-\u03baB activation. Co-localization of p65 with LC3B is enhanced by LPS stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 are supported by pharmacological inhibitor experiments (Figure 4E, Figure 4\u2014figure supplement 1E), rapamycin treatment (Figure 4F), genetic knockout experiments (Figure 4G-I, Figure 4\u2014figure supplement 1F-G), and confocal microscopy (Figure 4\u2014figure supplement 1H). The combination of pharmacological and genetic approaches provides robust evidence for autophagy-mediated degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Vangl2 mediates NDP52-directed selective autophagic degradation of p65, not p62-mediated degradation. Vangl2 interacts with multiple cargo receptors (p62, NDP52, NBR1, Nix), but p65 only interacts with p62 and NDP52. Vangl2 specifically promotes the p65-NDP52 association but not p65-p62 interaction. Vangl2-mediated p65 degradation and NF-\u03baB inhibition are rescued in NDP52 KO cells but not in p62 KO cells. Vangl2 deficiency attenuates endogenous p65-NDP52 association. p65 degradation rates are reduced in NDP52 KO but not p62 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 are supported by co-IP screening (Figure 5A-B), interaction enhancement assays (Figure 5C), genetic knockout experiments (Figure 5D, F-H, Figure 5\u2014figure supplement 1A-C), endogenous co-IP (Figure 5E), and functional assays (Figure 5G, Figure 5\u2014figure supplement 1B). The systematic comparison between NDP52 and p62 using multiple approaches provides strong evidence for NDP52-specific cargo receptor function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Vangl2 promotes K63-linked poly-ubiquitination of p65, which serves as a signal for autophagic degradation. Poly-ubiquitination of p65 is impaired in Vangl2-deficient BMDMs after LPS stimulation. Vangl2 specifically increases total and K63-linked ubiquitination of p65 but does not affect other ubiquitin linkages (K11, K27, K33, K48). Vangl2 knockdown inhibits K63-linked poly-ubiquitination of p65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by endogenous co-IP ubiquitination assays (Figure 6A), ubiquitin linkage-specific experiments using ubiquitin mutants (Figure 6B-C), and siRNA knockdown experiments (Figure 6D). The use of linkage-specific ubiquitin mutants provides strong evidence for K63-specific ubiquitination, which is consistent with NDP52-mediated selective autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Vangl2 functions as an adaptor protein to recruit E3 ubiquitin ligase PDLIM2 to p65, promoting K63-linked ubiquitination and subsequent autophagic degradation. RNA-seq identified PDLIM2 as downregulated in Vangl2-deficient BMDMs. PDLIM2 knockdown blocks Vangl2-mediated NF-\u03baB inhibition and p65 degradation, and increases inflammatory cytokine expression. Vangl2 interacts with PDLIM2 and promotes p65-PDLIM2 association. PDLIM2 accelerates p65 degradation in the presence of Vangl2. PDLIM2 deficiency impairs Vangl2-mediated K63-linked ubiquitination of p65, and Vangl2 knockdown inhibits PDLIM2-mediated K63-linked ubiquitination of p65.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 are supported by RNA-seq data (Figure 7\u2014figure supplement 1A-D), siRNA knockdown experiments (Figure 7A-C, Figure 7\u2014figure supplement 1E-G), co-IP interaction studies (Figure 7D-E), degradation assays (Figure 7F), and ubiquitination experiments (Figure 7G-H). The convergent evidence from transcriptomics, functional assays, protein interactions, and ubiquitination studies provides strong support for PDLIM2 as the E3 ligase recruited by Vangl2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C95"
+    ],
+    "result": "Vangl2 functions as a 'molecular brake' in negative regulation of NF-\u03baB signaling during sepsis through a multi-component mechanism. Upon inflammatory stimulation, Vangl2 is induced and acts as an adaptor to recruit E3 ubiquitin ligase PDLIM2, which catalyzes K63-linked ubiquitination of p65. This ubiquitination promotes recognition by cargo receptor NDP52, leading to selective autophagic degradation of p65, thereby suppressing proinflammatory cytokine production and ameliorating sepsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C85, and C95 represent the overall mechanistic model synthesized from the study's findings. These summary claims are supported by the convergence of evidence from patient samples, mouse models, cellular assays, protein interactions, ubiquitination studies, and autophagy experiments. The model is illustrated in Figure 7I and integrates all major findings into a coherent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Vangl2 may regulate the NF-\u03baB pathway independently of its conventional PCP pathway. Vangl2 phosphorylation mutants promote p65 degradation, and p65 degradation is blocked by autophagy inhibitors but not by JNK or Wnt/\u03b2-catenin inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by experiments with Vangl2 phosphorylation mutants (Figure 4\u2014figure supplement 1B) and pathway inhibitor studies (mentioned in text but data not shown). While the phosphorylation mutant data is shown, the pathway inhibitor data is not presented, which weakens the conclusion. Additional experiments with other PCP pathway inhibitors would strengthen this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Vangl2 deficiency in myeloid cells affects specific cell type differentiation but not overall immune system development. Vangl2\u0394M mice show increased numbers of monocytes, macrophages, and neutrophils in spleen and bone marrow, but no significant differences in spleen and lymph node size. The authors infer that Vangl2-dependent NF-\u03baB functions influence inflammatory disease progression rather than immune system development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99 and C100 are supported by flow cytometry data (Figure 1\u2014figure supplement 1H-I) and gross morphology observations (Figure 1\u2014figure supplement 1G). The data show altered myeloid cell populations without gross developmental defects. However, the inference about developmental versus inflammatory roles would benefit from more comprehensive developmental studies and analysis of immune function under homeostatic conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Vangl2 may be more important in circulating immune cells than in resident immune cell populations. LPS stimulation did not induce Vangl2 expression in lungs and liver, despite these organs containing many resident immune cells, while expression was induced in lymphoid organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 is based on tissue-specific expression patterns (Figure 1B) showing differential Vangl2 induction. However, the inference about circulating versus resident immune cells is speculative and not directly tested. The study did not isolate and compare resident versus circulating immune cells, nor did it examine Vangl2 function in tissue-resident macrophages. Additional experiments specifically comparing these populations would be needed to support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The PkBD domain of Vangl2 plays a pivotal role in mediating interactions with target proteins, and Vangl2 may have multifunctional roles in regulating different types of autophagy (CMA and selective autophagy). The PkBD domain mediates interactions with both LAMP-2A (for CMA) and p65 (for selective autophagy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105 and C106 are supported by domain mapping experiments showing PkBD-mediated p65 interaction (Figure 3H-J) and citations to previous work on LAMP-2A interaction (C104). The convergence of current findings with previous work on CMA suggests Vangl2 may regulate multiple autophagy pathways through the same domain. However, the multifunctional role claim is somewhat speculative and would benefit from direct comparative studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Vangl2 deficiency results in increased accumulation of phosphorylated p65 and IKK at 30 min post-LPS stimulation, suggesting Vangl2 may also regulate the immediate early phase of inflammatory response via the IKK-p65 axis. This early effect may occur before autophagic degradation is initiated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is supported by western blot data showing early phosphorylation changes (Figure 2A-D). However, claim C114 is speculative, as acknowledged by the authors stating \"which need further study.\" The mechanism by which Vangl2 might regulate early IKK-p65 activation is not investigated. The observation is interesting but requires additional mechanistic studies to determine if this represents a separate function of Vangl2 or is related to the autophagy-mediated mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C102",
+      "C103",
+      "C104",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background and literature context claims describing prior knowledge about Vangl2 functions, NF-\u03baB signaling, autophagy mechanisms, and related regulatory proteins. These claims establish the scientific context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C67-C111, excluding those already grouped) are supported by citations to previous literature and represent established scientific knowledge. They provide appropriate context for the study but do not constitute novel findings. The citations appear appropriate and the background information is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The Vangl2-PDLIM2-NDP52 complex in regulation of p65-mediated NF-\u03baB signaling could be a therapeutic target for immunotherapy against infection and inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is a speculative statement about potential therapeutic applications. While the mechanistic findings provide a foundation for this speculation, no therapeutic validation experiments are presented. The claim represents a reasonable hypothesis for future work but is not directly supported by experimental evidence in the current study.",
+    "result_type": "MINOR"
+  }
+]

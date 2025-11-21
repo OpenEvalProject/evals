@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C8",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C76"
+    ],
+    "result": "Human genetic analysis demonstrates that uninterrupted CAG repeat length, not polyglutamine length, determines age-at-onset in HD. Loss of interruption carriers behave as if they have 3 additional CAGs, while duplicated interruption carriers behave as if they have 1 fewer CAG, suggesting that converting a 43 CAG canonical repeat to duplicated interruption could delay onset by ~12 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8, C15, C16, and C76 provide converging evidence from human genetic data showing that age-at-onset correlates with uninterrupted CAG repeat length rather than polyglutamine length. The least square approximation analysis (C15, C16) quantifies additional effects of interruption patterns, and the predicted 12-year delay (C17) follows logically from these observations. The statistical significance (C76, p=1.007E-12) strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Base editing strategies using combinations of cytosine base editors (BE4max, BE4-NG, BE4-SpG, evo-SpG) and gRNAs efficiently converted CAG to CAA at various sites in the HTT CAG repeat without generating significant indels. Different base editors showed distinct conversion patterns, with evo-SpG demonstrating the highest overall conversion efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C29 are supported by MiSeq sequencing data showing CAG-to-CAA conversion without significant indel formation above baseline (C23). Multiple base editor-gRNA combinations produced significant conversions (C24-C27), with detailed characterization of conversion sites (C28-C29). The lack of significant indels is critical for safety and is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C54",
+      "C55"
+    ],
+    "result": "Candidate BE strategies (BE4max-gRNA 1) converted CAG to CAA on both expanded (51 CAG) and non-expanded (17 CAG) HTT repeats without altering huntingtin protein levels or causing significant indels. Conversion efficiency was slightly higher on the non-expanded repeat, likely due to lower GC content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C38, C54-C55 are supported by data from the engineered HEK293-51 CAG cell line showing CAG-to-CAA conversion on both alleles (C36, C54) without increased indels (C35) or altered protein levels (C38, C55). The modest difference in conversion efficiency between alleles (C37, p=0.04996) is explained mechanistically by GC content differences. Immunoblot data confirm no change in huntingtin levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "RNAseq analysis of HEK293 cells treated with candidate BE strategies (BE4max-gRNA 1 and BE4max-gRNA 2) showed no significant changes in HTT mRNA levels or genome-wide gene expression (FDR 0.05), despite achieving significant on-target CAG-to-CAA conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by RNAseq data showing significant on-target conversion (C39) without changes in HTT expression (C40) or any other genes at FDR 0.05 (C41). The volcano plot comparison to random samples provides additional evidence that BE treatment did not cause transcriptome-wide changes. This supports the safety profile of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C69",
+      "C79",
+      "C80"
+    ],
+    "result": "AAV9-mediated delivery of a split cytosine base editor with gRNA 2 significantly decreased somatic CAG repeat expansion in the liver of HD knock-in mice (p=1.78E-6 after correcting for tail CAG and age). However, the effects were modest, potentially due to delivery limitations, insufficient dosage, and difficulty targeting very long CAG repeats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43 demonstrate statistically significant reduction in repeat expansion in treated mice using linear regression analysis. However, C69, C79, and C80 acknowledge important limitations: the effect size was modest, sequence confirmation was not possible due to technical constraints, and multiple factors likely limited efficacy. The result is supported but with clear caveats about the magnitude of effect and technical challenges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45"
+    ],
+    "result": "HD knock-in mice carrying CAA-interrupted repeats (105 interrupted CAG) showed complete abolition of CAG repeat expansion compared to mice with uninterrupted repeats (105 CAG), demonstrating that CAA interruption can completely suppress the major disease modifier in HD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C44, C45 are supported by fragment analysis comparing interrupted and uninterrupted repeat mice, showing complete loss of expansion in interrupted repeat mice. This provides proof-of-concept that CAA interruption can eliminate somatic instability, the major disease driver. The comparison uses commercially available mouse lines with matched CAG length but different interruption status, providing strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Off-target analysis showed that gRNAs 1 and 2 had relatively few predicted off-targets due to unique sequences near PAMs. Experimental validation of predicted off-target sites in protein-coding genes showed low conversion levels compared to on-target, and low-level conversions in CAG repeats of other polyglutamine disease genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by computational prediction (Off-Spotter) and experimental validation showing low off-target activity. The unique sequences near PAMs for gRNAs 1 and 2 (C31) resulted in fewer predicted off-targets, which were experimentally confirmed to show low conversion (C32). Analysis of other polyglutamine disease genes also showed generally low off-target conversion (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C63"
+    ],
+    "result": "BE4-NG and BE4-SpG produced modest but significant levels of duplicated interruption (0.5-1% increase) with gRNAs 5 and 7, but overall, the BE strategies evaluated did not robustly generate the duplicated interruption pattern found in humans, potentially due to suboptimal PAM availability at required sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C63 are supported by MiSeq data showing modest duplicated interruption generation (C30) and acknowledge the limitation that robust duplicated interruption was not achieved (C63). The explanation regarding PAM availability is reasonable given the known PAM requirements of the base editors tested. This represents a limitation of the current approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "In patient-derived iPSCs and differentiated neurons, gRNAs 1 and 2 produced modest CAG-to-CAA conversion (<3%) on both mutant and normal HTT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by sequencing analysis of treated iPSCs and neurons. However, the low conversion efficiency is acknowledged as a technical limitation related to delivery challenges in these cell types. This result demonstrates feasibility but highlights the need for improved delivery methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript describes established properties of cytosine base editors: BE4 exhibits high C-to-T editing with NGG PAMs and an activity window at positions 4-8; nucleotide context (especially G preceding C) affects conversion efficiency; and evolved variants like evoCDA1 show improved editing on GC targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by citations to previous literature describing the properties of base editors. These are established facts about the tools used in the study rather than novel findings. They provide important context for understanding the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Base editing using nickase Cas9 does not intentionally create DSBs, has been demonstrated effective for point mutations in disease models, and is already in human trials. This study expands the application of BE to repeat expansion disorders, demonstrating that base conversion can address disease-causing repeat mutations without DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C60-C62 are supported by citations to previous literature (C46-C49, C60-C61) and the experimental data in this manuscript (C62). The novelty is in applying BE to repeat expansion disorders (C62), which is well-supported by the experimental results showing CAG-to-CAA conversion without significant indels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C58",
+      "C59"
+    ],
+    "result": "The BE strategies are derived from human genetic observations showing uninterrupted CAG repeat length as the therapeutic target, and can achieve allele-specific consequences without targeting individual SNPs, making them applicable to all HD subjects\u2014a major advantage over SNP-targeting approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C58-C59 are supported by the human genetic data (C51) and the logical inference that BE strategies targeting the CAG repeat itself don't require SNP heterozygosity (C58-C59). The citation supporting genetically validated targets (C50) strengthens the rationale. This represents a significant conceptual advantage over previous allele-specific approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "BE strategies applied to fully penetrant 40-41 CAG repeats could convert them to reduced penetrance (36-39 CAG), and may convert some reduced penetrant repeats (36-37 CAG) to non-pathogenic (<36 CAG), potentially preventing disease manifestation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 are logical inferences based on the mechanism of CAG-to-CAA conversion and known penetrance thresholds. However, these are predictions that have not been experimentally validated. The use of 'may be able' (C53) indicates speculation. While mechanistically plausible, clinical validation would be required to confirm these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C68"
+    ],
+    "result": "On the mutant allele, shortening the uninterrupted CAG repeat is expected to reduce somatic instability and disease potential. On the normal allele, CAG repeat length variation has not been associated with abnormal phenotype, so shortening should be benign. This allows early application without deficiency-related adverse effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C68 combine mechanistic inference (C56) with literature support (C57, C68). The inference that shortening CAG repeats reduces instability (C56) is well-supported by the relationship between repeat length and instability. The safety on the normal allele (C57) is supported by citation. The conclusion about early application (C68) follows logically but remains to be validated clinically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The inability to directly target putative toxic species (RAN translation, exon 1A huntingtin fragment) may be a limitation, but if these species depend on uninterrupted CAG repeat length, CAG-to-CAA conversion may ameliorate their contribution to pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 acknowledge a potential limitation (C64) but suggest a possible mitigation (C65). The speculation in C65 ('may be able') indicates this is uncertain. The relationship between uninterrupted CAG length and alternative toxic species has not been established, making this evaluation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "BE strategies may not produce clinical benefits if applied too late in disease, given evidence for significant neurodegeneration at clinical onset. This suggests timing of treatment is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by logical inference (C66) and citation to evidence of neurodegeneration at onset (C67). This is a reasonable concern based on the known pathology of HD, though it remains to be tested in clinical trials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Several challenges must be addressed for clinical translation: efficient delivery methods are critical; optimal conversion levels for clinical benefit are unknown and require preclinical studies; base editors with improved specificity are needed; and immunogenicity concerns must be addressed through thorough assessment and potential immunosilencing strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 identify important challenges for clinical translation. These are reasonable concerns supported by citations (C73, C75) and logical inference about requirements for successful therapy (C70-C72, C74). These represent important future directions rather than current limitations of the proof-of-concept work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C77",
+      "C78"
+    ],
+    "result": "Background on HD pathogenesis: expanded CAG repeats in HTT cause HD; somatic CAG repeat instability is repeat length-dependent, shows tissue-specific patterns correlating with vulnerability, and is driven by DNA repair genes identified in GWAS. Striatal and liver instability share mechanisms, with liver potentially more accessible for AAV delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12, C77-C78 provide established background information supported by citations to previous literature. These are well-accepted facts in the field that provide context for the study rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

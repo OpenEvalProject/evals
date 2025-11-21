@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study identified 192 gyral peak clusters in humans (96 per hemisphere) and 85 in macaques (42-43 per hemisphere). Using cross-species registration, 51 shared peak clusters were identified (25 left, 26 right hemisphere), with 141 human-unique and 34 macaque-unique peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 provide consistent quantitative data on peak cluster identification across species. The numbers are internally consistent (192 total = 96+96 for humans; 85 total \u2248 42+43 for macaques; shared + unique = total for each species). The methodology using cross-species registration (C99) and watershed clustering is described, and Figure 1 provides visual confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Shared peaks are predominantly distributed in lower-order sensorimotor and visual networks (SMN, V1, V2), while unique peaks are concentrated in higher-order networks (DMN, CON, FPN, DAN, Language). This pattern is particularly pronounced in humans, with approximately 65% of shared peaks in lower-order regions and 74% of unique peaks in higher-order regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are well-supported by quantitative data in Table 1 and Figure 2, showing clear distributional patterns. The statistical analysis demonstrates significant differences, and the finding aligns with evolutionary conservation principles cited in C31-C32. The percentages (C52-C53) provide specific quantification supporting the general pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C43"
+    ],
+    "result": "Shared peak clusters exhibit significantly greater inter-individual consistency than unique peaks in both species (p<0.001, t=4.74 humans, t=2.67 macaques). Macaque peaks show overall higher consistency than human peaks. A positive but non-significant correlation exists between human and macaque shared peak consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by statistical tests with reported p-values and t-values shown in Figure 3a. The higher consistency in macaques is visually evident and quantitatively supported. However, C43's correlation claim is weakened by non-significance (R\u00b2=0.01-0.07, p>0.05), though the positive trend is acknowledged. The statistical rigor is appropriate for the sample sizes (n=880 humans, n=591 macaques).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Shared peaks exhibit larger sulc and local surface area but smaller curvature compared to unique peaks in both species. In humans specifically, shared peaks show thinner cortex but greater myelination than unique peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by quantitative data in Table 2 with statistical significance (p<0.001 for most comparisons). The anatomical patterns are consistent with known correlations cited in C44-C46. The exception for macaque local surface area (p=0.59) is appropriately noted. The human-specific features (cortical thickness, myelin) are justified by data availability limitations in the macaque dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C49"
+    ],
+    "result": "Shared peaks demonstrate significantly higher functional connectivity metrics (degree, strength, clustering coefficient, betweenness, efficiency) compared to unique peaks, suggesting they function as network hubs. This pattern holds for most metrics in both species (p<0.001), with exceptions for betweenness and efficiency in macaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C49 are well-supported by Table 3 data with appropriate statistical tests. The hub interpretation (C49) is reasonable given the connectivity metrics, though it remains somewhat inferential. The exceptions for macaque betweenness and efficiency are properly noted. The finding is contextualized with prior literature (C50) on small-world network properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C59",
+      "C60"
+    ],
+    "result": "Shared peaks are surrounded by more diverse brain regions than unique peaks across multiple brain atlases with median parcellation resolution (7-300 parcels). This pattern is inconsistent at very low (<30 parcels) or very high (>400 parcels) resolutions, which is attributable to parcellation resolution effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C60 are supported by extensive analysis across 10 human and 3 macaque atlases (Tables 4-5) with FDR-corrected p-values. The resolution-dependency (C59-C60) is appropriately acknowledged and explained as a methodological artifact. The robustness across multiple atlases with median resolution strengthens the conclusion, though the interpretation requires careful consideration of parcellation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C74",
+      "C75"
+    ],
+    "result": "Using LASSO regression with 10-fold cross-validation (\u03bb=0.027), 28 genes were identified as important for classifying shared vs. unique peaks. Seven genes showed significant differential expression: PECAM1, TLR1, SNAP29, DHRS4, BHMT2, PLBD1, KCNH5, with SNAP29 higher and KCNH5 lower in shared peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C74-C75 are supported by appropriate statistical methods (LASSO with cross-validation, Welch's t-test). The lambda selection is justified (Figure 5), achieving reasonable accuracy (0.84 training, 0.75 testing). The choice of Schaefer-500 atlas is well-reasoned. However, the functional interpretations (C73, C76-C81) are more speculative and rely heavily on literature associations rather than direct mechanistic evidence from this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C87"
+    ],
+    "result": "The observed distribution patterns align with evolutionary principles: motor and sensory regions are conserved across species, while higher-order association cortex shows species-specific expansion. This reflects the 'tethering hypothesis' of differential regional allometric growth during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C87 appropriately contextualize the findings within established evolutionary neuroscience literature. The citations to Hopkins et al., 2014; Krubitzer, 2007; Buckner and Krienen, 2013 support these interpretations. The data from this study (distribution of shared/unique peaks) provides additional morphological evidence consistent with these evolutionary principles, though the study itself does not directly test evolutionary mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The presence of shared peaks in higher-order networks (CON, DMN) is explained by recent findings on the somato-cognitive action network (SCAN) and evidence for DMN conservation across primates from cytoarchitectonic and anatomical tracing studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 provide appropriate literature context (Gordon et al., 2023; Buckner et al., 2008; Mantini et al., 2011) to explain seemingly contradictory findings. The discussion reconciles why some higher-order networks show shared peaks despite the general pattern of unique peaks in higher-order regions. This represents valid scientific reasoning based on cited evidence, though it remains interpretive rather than directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "The higher consistency of shared peaks and overall higher consistency in macaques is attributed to genetic coding of folding patterns, neuronal migration preferences, and simpler folding patterns in macaques being more easily retained across individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C40 are supported by citations (Kriegstein et al., 2006; Friedrich et al., 2021), but C42 is explicitly speculative. While the genetic basis for folding patterns is established in the literature, the specific explanation for macaque-human differences in consistency remains inferential. The claim is reasonable but lacks direct mechanistic evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The unexpected inverse relationship between sulc and curvature in gyral peaks (compared to whole-brain patterns) is explained by weaker correlations within gyri and region-specific variations in areas like anterior cingulate, dorsolateral frontal cortex, and middle temporal gyrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide reasonable explanations for apparent contradictions with whole-brain patterns. C47 is a logical inference based on the restricted anatomical domain (gyri only), while C48 is supported by citation to Schmitt et al., 2021. This demonstrates appropriate consideration of methodological constraints and regional heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Despite 65% of shared peaks being in lower-order regions and 74% of unique peaks in higher-order regions, shared peaks show higher connectivity metrics. This apparent contradiction is reconciled by scale: shared peaks may function as 'provincial hubs' at fine scales within regions, while higher-order regions like DMN serve as global hubs at coarse scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 address an important apparent contradiction in the data. The multi-scale hub interpretation is reasonable and supported by citations (Guimer\u00e0 and Nunes Amaral, 2005; Hwang et al., 2017). However, C54 is explicitly speculative. The explanation is plausible but would benefit from more direct evidence of multi-scale network organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C71",
+      "C72"
+    ],
+    "result": "Shared peaks' association with more diverse brain regions may reflect higher functional diversity, potentially related to less cortical expansion and smaller proportions of ancestral progenitor cells, allowing participation in varied brain functions. Shared peaks are more likely located at regional 'boundaries' across different parcellation schemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C64, C71-C72 are highly speculative (explicitly noted as speculation in evidence). While C71 is supported by data analysis, the functional interpretations (C61, C64, C72) and developmental mechanisms (C62-C63) lack direct evidence. The citation to Clowry et al., 2018 supports general principles but not the specific application to shared peaks. These remain plausible hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SNAP29 and KCNH5 show differential expression between shared and unique peaks. Higher SNAP29 in shared peaks may minimize neural circuit disruption in lower-level regions. Higher KCNH5 in unique peaks coincides with human-prevalent diseases (epileptic encephalopathies, ASD) associated with Kv10.2 dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C74-C75 (differential expression) are data-supported, the functional interpretations (C73, C76-C81) are highly speculative. C77 and C81 make causal-sounding claims without mechanistic evidence. The associations rely on literature about gene functions and disease prevalence but don't establish direct links to peak characteristics. The reasoning is plausible but requires substantial additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Brain parcellation, while providing computational and interpretational efficiency, has inherent limitations: properties vary within regions, adjacent vertices across boundaries may be similar, boundaries vary by modality, and the brain has no true 'boundaries.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 accurately describe established limitations of brain parcellation methods, supported by citations (Eickhoff et al., 2018; Glasser et al., 2016). These are well-accepted principles in neuroimaging that appropriately contextualize the study's findings about peaks at regional boundaries. This represents accurate characterization of methodological considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C98",
+      "C102",
+      "C103"
+    ],
+    "result": "Current cross-species studies using limited anatomical landmarks cannot address whole-brain analysis needs. Gyral peaks, defined as local highest points of gyri, are stable across individuals and ages in both species, making them suitable whole-brain landmarks for cross-species research on cortical folding and brain evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93, C98, C102-C103 establish the rationale and significance of the study. The limitations of current approaches (C88-C90) are supported by citations. The properties of gyral peaks (C91-C93) are supported by prior work (Zhang et al., 2022; 2023). The conclusion that peaks are suitable landmarks (C98) is a reasonable inference from their demonstrated properties, though the actual utility for evolutionary inference (C103) remains to be fully demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background context on human-macaque evolutionary divergence (~25 million years ago), cortical folding's role in cognition, anatomical and functional differences between species, and conservation of primary sulci and brain networks like DMN across primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide appropriate background context supported by relevant citations. These establish the scientific foundation for the study but represent prior knowledge rather than new findings. The citations appear appropriate for the claims made, though verification of specific details (e.g., exact divergence time in C1) would require checking the cited source.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Established anatomical correlations include positive correlation between sulc and local surface area, negative correlation between myelin and curvature, and negative correlation between local surface area and cortical thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 cite appropriate prior literature (Yang et al., 2016; Schmitt et al., 2021; Maingault et al., 2016) to establish known anatomical relationships. These are used to validate the patterns observed in the current study's data. The claims represent accurate characterization of prior findings relevant to interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Methodological approaches included cross-species registration (Xu et al., 2020) to align macaque peaks to human brain surface, Brain Connectivity Toolbox for computing network features, and LASSO regression on AHBA gene expression data for gene selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 accurately describe key methodological components with appropriate citations. The cross-species registration method is published and validated (Xu et al., 2020), BCT is a standard tool (Rubinov and Sporns, 2010), and LASSO is an appropriate feature selection method. These represent valid methodological choices, though full evaluation would require examining the detailed methods section.",
+    "result_type": "MINOR"
+  }
+]

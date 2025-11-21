@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Streblospio benedicti exhibits a developmental dimorphism with two morphs (PP and LL) that differ in egg size, developmental timing, larval ecology, and morphology, but produce morphologically indistinguishable adults. The morphs proceed through the same developmental stages despite egg size differences, with LL embryos taking longer to reach equivalent stages. The traits are heritable and crosses between morphs are viable with intermediate F1 offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 collectively describe the study system and are well-supported by direct statements in the manuscript text, citations to previous work, and visual evidence in Figure 1. The characterization of the developmental dimorphism is fundamental to the study and is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C64",
+      "C65"
+    ],
+    "result": "Only 36.2% of expressed genes are differentially expressed between PP and LL morphs at any stage. Early development shows many genes with small magnitude differences, while at gastrulation fewer genes (<5% of DE genes) show larger magnitude differences. PCA analysis reveals that developmental stage and morph account for most variance, with pre- and post-gastrulation development distinctly separated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C64-C65 present quantitative RNAseq results with specific percentages and are supported by data shown in Figure 2B-C. The interpretation that morphs are more functionally distinct early due to maternal provisioning differences (C13) is reasonable and supported by citations, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C22",
+      "C23",
+      "C24",
+      "C44",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Gene expression differences between morphs are categorized into three types: heteromorphic (45.9% of DE genes, same expression pattern but different magnitude), heterochronic (29% of DE genes, different expression timing), and morph-specific (25.3% of DE genes). Most heterochronic changes are minor timing shifts, and heteromorphic changes account for most gene expression differences overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C22-C24, C44, C66-C68 present the core quantitative classification of gene expression differences. The clustering analysis methodology is described and the percentages sum appropriately. The conclusion that heterochrony is common but not the main driver (C24) is directly supported by the quantitative data showing heteromorphy accounts for the largest proportion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Heterochronic genes expressed earlier in PP are enriched for mesoderm specification, cell fate specification, and organogenesis pathways, while genes shifted earlier in LL are enriched for metabolic functions. Most heterochronic shifts are relatively small, with genes switching between similar expression clusters, though a few genes show large differences in expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C69-C73 present GO enrichment results and cluster switching analysis supported by Figures 5A-B. The functional enrichments are consistent with known biological differences between feeding and non-feeding larvae. The Pearson correlation analysis (C72) provides quantitative support for the claim that most shifts are minor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "195 genes (25.3% of DE genes) are morph-specific, with considerably more PP-specific genes (150) than LL-specific genes (45). PP-specific genes are enriched for cell fate specification and signaling pathways but lack metabolic process genes. The findings suggest PP embryos require specific cell types that are reduced or lost in LL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C74-C78 present morph-specific gene analysis results supported by Figure 6 and GO enrichment tests. The DAFS method for determining expression thresholds is described in Methods. The interpretation that PP requires specific cell types (C78) is reasonable given the data, though somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "F1 offspring show intermediate gene expression patterns but with high variability, misexpression, and more genes matching paternal than maternal expression patterns at each stage. Most genes (>8000 out of 14,327) have conserved expression among PP, LL, and F1 embryos. The high variability negatively impacts statistical power for assigning regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C79, C81-C84 describe F1 expression patterns supported by Figure 8A-B. The observation of paternal bias in early stages (C83) is noted as unexpected given that maternal transcripts should dominate early development, which appropriately flags an anomaly. The impact on statistical power (C84) is a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C43",
+      "C45",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The regulatory architecture of differential expression is predominantly trans-acting, with no purely cis-acting modifications observed. Very few morph-specific genes are expressed in F1s, suggesting trans-acting negative regulation. Only 143 genes out of ~2000 DE genes with morph-differentiating SNPs could be assigned regulatory modes due to F1 misexpression, but these are assumed to be representative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C32, C43, C45, C86-C89 present regulatory architecture results supported by Figure 9. However, the small number of genes with confident assignments (143 genes, C88) raises concerns about statistical power and representativeness. The assumption that these genes are proportionally representative (C89) is stated but not validated. The conclusion about trans-acting dominance may be premature given the limited sample size and high F1 variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Parental effects on gene expression are most pronounced at early developmental stages and drop sharply after gastrulation, consistent with maternal transcript degradation. Reciprocal F1s (PL vs LP) do not show significantly different regulatory mode changes, though only three developmental stages were sampled for LP crosses due to limited LL clutch sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C93-C95 describe parental effects analysis supported by Figure 10. The pattern of early parental effects declining after gastrulation is consistent with known biology of maternal transcript degradation. The limitation to three stages for LP crosses (C94) is appropriately noted as a constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Comparison of egg (maternal) and embryo (maternal and zygotic) regulatory landscapes shows greater cis-acting regulation in maternally expressed genes, suggesting that maternal and zygotic gene regulatory architecture may evolve through distinct mechanisms and on separate timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 compare current embryo data to previous egg data (Harry and Zakas, 2023). While the comparison is interesting, C92 is explicitly speculative ('may evolve') and the evidence is indirect, relying on comparison across different studies. The claim requires additional validation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The pattern of differential expression\u2014numerous small differences early followed by fewer large differences at gastrulation\u2014is consistent with gastrulation as a phylotypic stage that canalizes development. Genes remaining differentially expressed post-gastrulation are candidates for maintaining morphological differences between morphs, though expression levels might converge later in development as both morphs reach adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39, C96-C99 provide biological interpretation of the expression patterns in the context of developmental biology theory. The phylotypic stage concept (C39) is well-established and appropriately cited. The interpretations are reasonable given the data, though C99 is explicitly speculative about later developmental stages not examined in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C100",
+      "C101",
+      "C103",
+      "C104"
+    ],
+    "result": "Given previous findings of limited genomic differentiation between morphs, morph-specific genes are likely driven by regulatory differences rather than genomic rearrangements or duplications. The predominance of trans-acting regulation is consistent with theoretical expectations for early divergence and has been reported in other species, though this is the first study to examine regulatory architecture within divergent morphs of the same species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C100-C101, C103-C104 provide evolutionary context and interpretation. The reasoning about morph-specific genes (C100-C101) is logical given prior genomic work. The theoretical framework about trans-acting factors in early divergence (C41-C42) is supported by citations. The novelty claim (C104) appropriately positions the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study used lab-reared S. benedicti from New Jersey (PP) and California (LL), with experiments conducted at 20\u00b0C. Six developmental stages were sampled with appropriate cell count verification. Statistical thresholds were set at FDR-adjusted p<0.05 and >2-fold change. Mapping rates did not differ significantly between morphs (p=0.1118), and various analytical parameters (cluster numbers, correlation thresholds) were appropriately determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C56 describe methodological details that are clearly stated in the Methods section. The statistical thresholds, sample collection procedures, and analytical parameters are appropriate and well-documented. The mapping rate analysis (C52) provides important validation that reference genome bias is not a major concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C85",
+      "C90"
+    ],
+    "result": "Misexpression in F1s is consistent with patterns reported in other hybridization studies and is thought to result from epistatic interactions between divergent genomes. Almost no genes show dominant or additive inheritance patterns, while 150 genes are overdominant. Studies in Drosophila indicate maternal and zygotic effects are regulated differently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C85, C90 provide context from the literature to interpret the F1 results. The citations appropriately support the general knowledge claims about misexpression and regulatory differences between maternal and zygotic effects.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1926 @@
+{
+  "submission": {
+    "id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:22:27.557112Z",
+    "updated_at": "2025-11-20T22:22:27.557112Z"
+  },
+  "content": [
+    {
+      "id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "content_type": "manuscript",
+      "content_text": "# Neural network emulation of the human ventricular cardiomyocyte action potential for more efficient computations in pharmacological studies\n\n## Authors\n\n- Thomas Grandits<sup>1</sup> ([ORCID: 0000-0001-7441-8002](https://orcid.org/0000-0001-7441-8002)) \u2020\n- Christoph M Augustin<sup>3</sup> ([ORCID: 0000-0001-6341-4014](https://orcid.org/0000-0001-6341-4014))\n- Gundolf Haase<sup>1</sup> ([ORCID: 0000-0002-3439-6117](https://orcid.org/0000-0002-3439-6117))\n- Norbert Jost<sup>5</sup>\n- Gary R Mirams<sup>7</sup> ([ORCID: 0000-0002-4569-4312](https://orcid.org/0000-0002-4569-4312))\n- Steven A Niederer<sup>8</sup> ([ORCID: 0000-0002-4612-6982](https://orcid.org/0000-0002-4612-6982))\n- Gernot Plank<sup>3</sup>\n- Andr\u00e1s Varr\u00f3<sup>5</sup> ([ORCID: 0000-0003-0745-3603](https://orcid.org/0000-0003-0745-3603))\n- L\u00e1szl\u00f3 Vir\u00e1g<sup>5</sup>\n- Alexander Jung<sup>3</sup> ([ORCID: 0000-0002-0723-4403](https://orcid.org/0000-0002-0723-4403)) \u2020\n\n### Affiliations\n\n1. Department of Mathematics and Scientific Computing, University of Graz Graz Austria ([ROR:01faaaf77](https://ror.org/01faaaf77))\n2. NAWI Graz, University of Graz Graz Austria ([ROR:01faaaf77](https://ror.org/01faaaf77))\n3. Gottfried Schatz Research Center for Cell Signaling, Metabolism and Aging - Division of Medical Physics and Biophysics, Medical University of Graz Graz Austria ([ROR:01faaaf77](https://ror.org/01faaaf77))\n4. BioTechMed-Graz Graz Austria ([ROR:02jfbm483](https://ror.org/02jfbm483))\n5. Department of Pharmacology and Pharmacotherapy, University of Szeged Szeged Hungary ([ROR:01pnej532](https://ror.org/01pnej532))\n6. HUN-REN-TKI, Research Group of Pharmacology Budapest Hungary\n7. Centre for Mathematical Medicine & Biology, School of Mathematical Sciences, University of Nottingham Nottingham United Kingdom ([ROR:01ee9ar58](https://ror.org/01ee9ar58))\n8. Division of Imaging Sciences & Biomedical Engineering, King\u2019s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nComputer models of the human ventricular cardiomyocyte action potential (AP) have reached a level of detail and maturity that has led to an increasing number of applications in the pharmaceutical sector. However, interfacing the models with experimental data can become a significant computational burden. To mitigate the computational burden, the present study introduces a neural network (NN) that emulates the AP for given maximum conductances of selected ion channels, pumps, and exchangers. Its applicability in pharmacological studies was tested on synthetic and experimental data. The NN emulator potentially enables massive speed-ups compared to regular simulations and the forward problem (find drugged AP for pharmacological parameters defined as scaling factors of control maximum conductances) on synthetic data could be solved with average root-mean-square errors (RMSE) of 0.47 mV in normal APs and of 14.5 mV in abnormal APs exhibiting early afterdepolarizations (72.5% of the emulated APs were alining with the abnormality, and the substantial majority of the remaining APs demonstrated pronounced proximity). This demonstrates not only very fast and mostly very accurate AP emulations but also the capability of accounting for discontinuities, a major advantage over existing emulation strategies. Furthermore, the inverse problem (find pharmacological parameters for control and drugged APs through optimization) on synthetic data could be solved with high accuracy shown by a maximum RMSE of 0.22 in the estimated pharmacological parameters. However, notable mismatches were observed between pharmacological parameters estimated from experimental data and distributions obtained from the Comprehensive in vitro Proarrhythmia Assay initiative. This reveals larger inaccuracies which can be attributed particularly to the fact that small tissue preparations were studied while the emulator was trained on single cardiomyocyte data. Overall, our study highlights the potential of NN emulators as powerful tool for an increased efficiency in future quantitative systems pharmacology studies.\n\n## Introduction\n\nComputer models of human physiology are becoming increasingly detailed and mature and the area of ventricular cardiomyocyte electrophysiology (EP) is one of the most advanced. The most updated models include fine representations of ion movements through various important channels, pumps, and exchangers, and take the complex handling of intracellular calcium accurately into account (Grandi et al., 2010; O\u2019Hara et al., 2011; Tomek et al., 2019; Bartolucci et al., 2020). While these models have individual strengths and limitations in replicating different aspects of physiology, pathology, and pharmacology (Corrado et al., 2021; Amuzescu et al., 2021), their degree of credibility has reached a level that has led to an increasing number of applications in academia and beyond. This holds in particular for the pharmaceutical sector, where much effort is spent on using computer modeling to reduce traditional preclinical and clinical methodologies for assessing the efficacy and safety of novel drug candidates (Mirams et al., 2011; Passini et al., 2017; Li et al., 2019; Passini et al., 2021). To improve the regulatory assessment of a drug\u2019s proarrhythmic potential, the Comprehensive in Vitro Proarrhythmia Assay (CiPA) was proposed in 2013 following a workshop at the US Food and Drug Administration (Sager et al., 2014; Colatsky et al., 2016; Strauss et al., 2021). A central component is a computer model of human ventricular cardiomyocyte EP that is coupled to a pharmacological model describing the interaction between a given drug and multiple arrhythmia-relevant channels (Dutta et al., 2017; Li et al., 2017; Li et al., 2019). For a given drug, experimental channel block data are collected to inform the pharmacological model and corresponding simulations of the action potentials (AP; time course of the transmembrane potential) are performed to predict the proarrhythmic risk based on a mechanistically motivated biomarker (Chang et al., 2017; Li et al., 2017; Li et al., 2019). The prediction is then compared with findings in experimental (Blinova et al., 2018) and clinical (Vicente et al., 2018) studies. To compute the drugged AP for given pharmacological parameters is a forward problem, while the corresponding inverse problem is to find pharmacological parameters for given control (before drug administration) and drugged AP. Some relevant examples for the latter have been presented by Bottino et al., 2006 who estimated pharmacological parameters from APs of canine Purkinje fibers and by Tveito et al. who estimated pharmacological parameters from AP biomarkers measured in human induced pluripotent stem cell-derived cardiomyocytes (Tveito et al., 2018) and several animal ventricular cardiomyocytes (Tveito et al., 2020). Furthermore, Jaeger et al., 2021 identified the optimal polypharmacological treatment for recovering APs of mutant ventricular cardiomyocytes based on biomarkers of simulated wild type and mutant APs.\n\nWhen the models are interfaced with experimental data, attention should be paid to the inherent uncertainty in the data that results from beat-to-beat variability (intrinsic variability), cell-to-cell variability (extrinsic variability), and measurement errors (observational uncertainty) (Mirams et al., 2016). Uncertainty propagates through the given problem from APs to estimated parameters or from parameters to predicted APs and must be properly quantified to draw reliable conclusions from the results. Multiple methodologies exist for this purpose (Oakley and O\u2019Hagan, 2004; Mirams et al., 2016; Sher et al., 2022) but usually require many simulations, which even for ordinary differential equation (ODE)-based models of cardiomyocyte EP can become a significant computational burden when considering that each simulation includes a substantial number of beats to reach the model\u2019s limit cycle, (also often called steady state). To overcome this problem, surrogate models have emerged which approximate (emulate) chosen outputs for given inputs multiple orders of magnitude faster. In line with uncertainty quantification literature, the cardiomyocyte EP model is from now on termed the \u2018simulator\u2019, whereas the surrogate model is termed the \u2018emulator\u2019. Earlier work has reported on an emulator based on linear interpolation of a multi-dimensional lookup table Mirams et al., 2014 and more recently, Gaussian process (GP) emulators have become popular. Their key advantage is that in- and outputs are modeled as random distributions which allows for rapid sampling of the posterior distributions (Chang et al., 2015; Johnstone et al., 2016; Coveney and Clayton, 2018; Ghosh, 2018; Rasmussen, 2019; Coveney et al., 2021) and while outputs of recently published GP emulators were relevant biomarkers of the AP (Chang et al., 2015; Johnstone et al., 2016; Coveney and Clayton, 2018; Ghosh, 2018; Coveney et al., 2021), the emulation of the entire AP can also be realized, for example through dimensionality reduction techniques such as the principal component analysis or regressing state-transition models (Mohammadi et al., 2019). However, GP emulators are not well suited to capture discontinuities of the response surface as standard GP emulators assume a smooth and continuous response to changes in parameter values. Applying GPs for modeling discontinuous functions therefore remains a largely open problem. Thus, they may fail to capture AP abnormalities, which is a particular drawback for pharmacological studies where bifurcations in behavior such as early afterdepolarizations (EAD) can occur (Ghosh, 2018). To address this, Ghosh, 2018 presented a two-step approach for the emulation of the AP duration at 90% repolarization that first sets up a GP for the location of discontinuities and then fits separate GP emulators for the output of interest either side of these boundaries. In contrast, it has been proven that neural networks (NN) can approximate even discontinuous functions with arbitrary precision in theory (Hornik et al., 1989), while recent works using NNs show empirically promising results for modeling partial differential equations containing discontinuities (Jagtap et al., 2020). These features render NN emulators suitable emulation candidates and while Lei and Mirams, 2021 have recently investigated NN emulation of hERG channel kinetics, Jeong et al., 2023 proposed a neural network using AP shapes as input for the prediction of a drug\u2019s proarrhythmic risk. However, to the best of our knowledge, NN emulators have not yet been used as surrogate for cardiomyocyte EP models.\n\nThe present study introduces NN emulation of the human ventricular cardiomyocyte AP and investigates the applicability in pharmacological studies. To this end, a NN emulator was developed based on data generated using a state-of-the-art simulator (Tomek et al., 2019; Tomek et al., 2020) and the evaluation was done for forward and inverse problems on synthetic and experimental data.\n\n## Materials and methods\n\nThe methodology of this study including the development of the emulator and the evaluation is outlined in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig1-v1.jpg)\n\n**Figure 1.:** The simulator is visualized by a schematic human ventricular cardiomyocyte that includes all currents considered for the emulator training. Inputs of the emulator (see Figure 3) are the corresponding maximum conductances ($G$) but for the sake of illustration, only three representatives are shown. Output is the AP ($V_{m}(t)$). Training and validation data (maximum conductances $G^$ and APs $V^_{m}(t)$) were generated by the simulator. The evaluationwas performed for forward and inverse problems and to this end, the pharmacological parameter s was introduced. This describes the interaction between the drug and a given target and was defined as scaling factor of the respective maximum conductance in control conditions (s < 1:block, s=1:no effect, s > 1:enhancement). Synthetic data (control maximum conductances and drugged maximum conductances obtained through scaling, and control and drugged APs) and experimental data (control and drugged APs) were used for the evaluation (Orvos, 2019). The forward problem was only solved for whereas the inverse problem was solved for both synthetic and experimental data. When experimental data were used, estimated pharmacological parameters were compared to distributions derived from data published within the CiPA initiative (Chang et al., 2017; Li et al., 2017).\n\n### Simulator\n\nThe simulator of Tomek et al., 2020 (ToR-ORd-dynCl simulator) was used. This is available in CARPentry (Vigmond et al., 2008) and was implemented based on the published CellML file for the endocardial subtype (ToRORd_dynCl_endo.cellml, https://github.com/jtmff/torord/tree/master/cellml; jtmff, 2020). Simulations were performed in CARPentry with the single cell tool bench. To compute the gating variables, the Rush-Larsen Method (Rush and Larsen, 1978) was employed, which uses an analytical solution assuming fixed voltage over a small timestep, and the remaining variables were computed by the Forward Euler method. To ensure low computational cost, we found the maximum solver and sampling time steps that still produce accurate results as follows. Various solver and sampling time steps were applied to generate APs and the biomarkers (AP biomarkers and abnormalities) used in this study were computed and compared with those that correspond to the minimum time steps (solver: $0.005\u00a0ms$; sampling: $0.01\u00a0ms$). We considered the time steps with only 2% relative difference for all AP biomarkers (solver: $0.01\u00a0ms$; sampling: $0.05\u00a0ms$) to offer a sufficiently good approximation. APs were stimulated at a pacing cycle length of $1000\u00a0ms$ using $1\u00a0ms$ long rectangular transmembrane current density pulses of $53\u00a0\\frac{\\muA}{cm^{2}}$ (Tomek et al., 2019). To approach the simulator\u2019s steady state, a series of 1000 stimuli were applied for each new parameter set starting from the initial states specified in the CellML file (when 1000 additional stimuli were applied, the maximum intracellular [Ca2+], [Cl-], and [Na+] changed by 1.5%, 0.15%, and 1.7%, respectively). Note, that the simulations can also be performed using open-source software such as (Clerx et al., 2016), OpenCOR (Garny and Hunter, 2015) and openCARP (Plank et al., 2021).\n\n### Emulator\n\nHere, we present the architecture and capabilities of the implemented and trained emulator. Details on the practical implementation and a link to the public code can be found in Code & data availability.\n\n#### Data\n\nWe generated three data sets in the study to train, validate and test the emulator performance.\n\n##### Training/validation data (#1)\n\nThe first data set is the the supervised training data set, containing pairs of maximum conductance samples $x$ and the corresponding AP $V^_{m}(t)$ that was obtained from the simulator. Sobol\u2019 sequences were used to generate 40,000 maximum conductance samples, containing 20,000 maximum conductance samples between 0% and 200% of the original values and 20,000 maximum conductance samples between 50% and 150% of the original values. The first covers a range that was considered plausible in terms of physiology and pathology (Britton et al., 2017; Tomek et al., 2019), and in terms of pharmacology (where full block is plausible). The latter covers a range that was considered particularly relevant in line with experimental calibration results presented in Tomek et al., 2019 and patch clamp measurements of channels that were exposed to 30 clinical drugs blocks in up to the fourfold of the maximum free therapeutic concentration were analyzed in agreement with the CiPA paradigm (Li et al., 2019; Crumb et al., 2016). The SALib-Sensitivity Analysis Library (Herman and Usher, 2017) was used in the entire study for the generation of samples based on Sobol\u2019 sequences. For each maximum conductance sample, simulations were performed to obtain the corresponding 40,000 APs. APs with a transmembrane potential difference of more than 10% of the amplitude between $t=0$ and $1000\u00a0ms$ (indicative of an AP that is far away from full repolarization) were excluded. This, however, applied to only 116 APs.\n\nStarting from the original APs in data set #1, the data were first extended by $10\u00a0ms$ from $t\\in[0,\u00a01000]\u00a0ms$ to $t\\in[\u221210,\u00a01000]\u00a0ms$ to enable some extrapolation of $V_{m}$ and hence a better alignment of the depolarization; for $t\\in[\u221210,\u00a00]\u00a0ms$ the initial resting membrane potential $V_{m}\u2062(0)$ was held constant. Then, the data were non-uniformly resampled from the original uniformly simulated APs, to emphasize the depolarization slope with a high accuracy while lowering the number of repolarization samples. For this purpose, we resamled the APs to $4\u00a0kHz$ for $t\\in[\u221220,\u00a0\u22125)\u00a0ms$ (resting phase) and $10\u00a0kHz$ for $t\\in[\u22125,\u00a020)\u00a0ms$ (depolarization phase) to $4\u00a0kHz$. The repolarization phase ($t\\in[20,\u00a01000]\u00a0ms$) was also resampled to $4\u00a0kHz$.\n\nFrom the initial training data set, 20% were randomly chosen to be used for validation leaving 31908 pairs of maximum conductances and corresponding APs for training. Figure 2 shows processed APs that were used for training, validation and the APs excluded due to missing full repolarization as described above.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig2-v1.jpg)\n\n**Figure 2.:** Additionally we show the excluded APs on the right (see text for description of the exclusion criteria).\n\n##### Synthetic test data (#2/#3)\n\nTwo sets of synthetic data were created using the simulator and each of the sets consisted of control and drug data with pairs of maximum conductances and corresponding APs.\n\nThe control data were the same in both sets. They were created using an experimentally calibrated population of 100 synthetic cardiomyocytes (Britton et al., 2013; Muszkiewicz et al., 2016; Gemmell et al., 2016). and to this end, Sobol\u2019 sequences were used to generate samples of maximum conductances with values between 50% and 150% of the original values. Maximum conductance samples that produced APs without abnormalities (checked for the last two consecutive APs; see AP biomarkers and abnormalities), and with seven biomarker values (derived from the last AP; see AP biomarkers and abnormalities) in agreement with experimental ranges (Table 1) were included in the population. Please note that the experimental ranges were not derived from the data set described in Experimental data (#4).\n\n**Table 1.**\n AP biomarkers and their experimental ranges used to generate the population of synthetic cardiomyocytes.These were adopted from Passini et al., 2017. Experimental data were collected at 37\u00b0C in small right ventricular trabeculae and papillary tissue preparations obtained from healthy human hearts during pacing with a cycle length of $1000\u00a0ms$ (Britton et al., 2017; O\u2019Hara et al., 2011).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>AP biomarker</th>\n      <th>Unit</th>\n      <th>Min</th>\n      <th>Max</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RMP</td>\n      <td>mV</td>\n      <td>-95</td>\n      <td>-80</td>\n    </tr>\n    <tr>\n      <td>dVmMax</td>\n      <td>mVms-1</td>\n      <td>100</td>\n      <td>1000</td>\n    </tr>\n    <tr>\n      <td>Peak</td>\n      <td>mV</td>\n      <td>10</td>\n      <td>55</td>\n    </tr>\n    <tr>\n      <td>APD40</td>\n      <td>ms</td>\n      <td>85</td>\n      <td>320</td>\n    </tr>\n    <tr>\n      <td>APD50</td>\n      <td>ms</td>\n      <td>110</td>\n      <td>350</td>\n    </tr>\n    <tr>\n      <td>APD90</td>\n      <td>ms</td>\n      <td>180</td>\n      <td>440</td>\n    </tr>\n    <tr>\n      <td>Tri90\u221240</td>\n      <td>ms</td>\n      <td>50</td>\n      <td>150</td>\n    </tr>\n  </tbody>\n</table>\n\nData set #2: The motivation for creating data set #2 was to evaluate the emulator on data of normal APs. Drug data were created using 100 synthetic drugs represented by a set of pharmacological parameters. Each synthetic drug was built to have four different targets, with all channels, pumps, and exchangers related to the emulator inputs considered as potential targets. To this end, 100 samples of four pharmacological parameters, each with values between 0.5 (50% block) and 1.5 (50% enhancement) were randomly generated. The synthetic drugs were applied to the entire synthetic cardiomyocyte population by scaling each of the relevant control maximum conductances with the corresponding pharmacological parameter. The samples that produced APs without abnormalities (checked for the last two consecutive APs; see AP biomarkers and abnormalities) were included in the data set. No sample was excluded and thus, the data set consisted of 100 control data pairs and 10,000 drug data pairs.\n\nData set #3: The motivation for creating data set #3 was to test the emulator on data of abnormal APs showing the repolarization abnormality EAD. This is considered a particularly relevant AP abnormality in pharmacological studies because of their role in the genesis of drug-induced ventricular arrhythmia\u2019s (Weiss et al., 2010). Drug data were created using 10 synthetic drugs with the hERG channel and the Cav1.2 channel as targets. To this end, 10 samples with pharmacological parameters for $G_{Kr}$ and $P_{Ca}$ (Table 2) were generated and the synthetic drugs were applied to the entire synthetic cardiomyocyte population by scaling $G_{Kr}$ and $P_{Ca}$ with the corresponding pharmacological parameter. Of the 1000 APs simulated, we discarded APs with a transmembrane potential difference of more than 10% of the amplitude between $t=0$ and $1000\u00a0ms$ (checked for the last AP), indicative of an AP that is far away from fully repolarizing within $1000\u00a0ms$. This left us with 950 APs, 171 of which exhibit EAD (see EAD classification).\n\n**Table 2.**\n Pharmacological parameter samples (synthetic drugs) with scaling factors for Gkr and Pca to generate the drug data of data set #3.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>ID</th>\n      <th>1</th>\n      <th>2</th>\n      <th>3</th>\n      <th>4</th>\n      <th>5</th>\n      <th>6</th>\n      <th>7</th>\n      <th>8</th>\n      <th>9</th>\n      <th>10</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gkr</td>\n      <td>0.05</td>\n      <td>0.06</td>\n      <td>0.07</td>\n      <td>0.08</td>\n      <td>0.09</td>\n      <td>0.10</td>\n      <td>0.11</td>\n      <td>0.12</td>\n      <td>0.13</td>\n      <td>0.14</td>\n    </tr>\n    <tr>\n      <td>Pca</td>\n      <td>1.20</td>\n      <td>1.22</td>\n      <td>1.24</td>\n      <td>1.26</td>\n      <td>1.28</td>\n      <td>1.30</td>\n      <td>1.32</td>\n      <td>1.34</td>\n      <td>1.36</td>\n      <td>1.38</td>\n    </tr>\n  </tbody>\n</table>\n\n##### Experimental data (#4)\n\nIn the experimental data set, APs were recorded in small right ventricular trabeculae and papillary tissue preparations that were isolated from healthy human hearts (Orvos, 2019). The hearts were obtained from organ donors whose hearts were explanted to obtain pulmonary and aortic valves for transplant surgery. Before cardiac explantation, organ donors did not receive medication apart from dobutamine, furosemide, and plasma expanders. Proper consent was obtained for use of each individual\u2019s tissue for experimentation. The conventional microelectrode technique was used for AP recordings and all measurements were carried out at 37\u00b0C. Stimulation of APs was done at a pacing cycle length of $1000\u00a0ms$ using a pair of platinum electrodes that provided rectangular current pulses of $2\u00a0ms$ duration. To allow the preparations to equilibrate, stimuli were delivered for at least $60\u00a0min$ before the measurements started. Measurements were performed under control conditions and after administration of five channel-blocking drugs at one concentration in multiple preparations. Drugs were cisapride ($30\u00a0nM$), dofetilide ($10\u00a0nM$), sotalol ($30\u00a0\\mum$), terfenadine ($1\u00a0\\mum$), and verapamil ($300\u00a0nM$). The last 10 consecutive APs of each measurement were analyzed to quantify the beat-to-beat variability. Overall, the beat-to-beat variability was found to be small (standard deviation in all APs below $7\u00a0mV$ before the peak due to time alignment mismatch and below $2\u00a0mV$ after the peak) and thus, the last 10 consecutive APs of each measurement were averaged. In most of the preparations, the standard deviation between beats did not vary over time and thus, no temporal correlation of noise was assumed. Averaging also reduced the noise level. The experimental data set contained one pair of averaged control and drugged AP per preparation per drug. Pairs were excluded if the biomarker values (see AP biomarkers and abnormalities) of the control or the drugged AP were not in the range found in the training data (see Training). This applied to seven pairs and the final data set contained three pairs for cisapride, dofetilide, sotalol, and terfenadine, and one pair for verapamil. All measurements were performed at the University of Szeged, Hungary, and conformed to the principles of the Declaration of Helsinki. Experimental protocols were approved by the University of Szeged and by the National Scientific and Research Ethical Review Boards (No. 51-57/1997 OEj and 4991-0/2010-1018EKU [339/PI/010]).\n\nAn overview of all utilized data is given in Table 3.\n\n**Table 3.**\n Summary of the data used in this study, along with their usage and the number of valid samples.Note that each AP is counted individually, also in cases of control/drug pairs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>ID</th>\n      <th>Description</th>\n      <th>Usage</th>\n      <th>Origin</th>\n      <th>Samples</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>#1</td>\n      <td>Training/validation data</td>\n      <td>Training and validating the emulator, choosing the best architecture (Architecture)</td>\n      <td>Simulation</td>\n      <td>39,884</td>\n    </tr>\n    <tr>\n      <td>#2</td>\n      <td>Synthetic drug data, normal APs</td>\n      <td>Testing forward and inverse performance for normal APs (\u2018Forward problem\u2019 and \u2018Inverse problem based on synthetic data\u2019)</td>\n      <td>Simulation</td>\n      <td>104</td>\n    </tr>\n    <tr>\n      <td>#3</td>\n      <td>Synthetic drug data, including EAD APs</td>\n      <td>Testing forward performance of abnormal (EAD) APs (\u2018Forward problem\u2019)</td>\n      <td>Simulation</td>\n      <td>950</td>\n    </tr>\n    <tr>\n      <td>#4</td>\n      <td>Experimental cardiomyocytes</td>\n      <td>Testing and comparing the inverse performance with data published by the CiPA initiative (Li et al., 2017; Chang et al., 2017; \u2019Inverse problem based on experimental data\u2019)</td>\n      <td>Orvos, 2019</td>\n      <td>26</td>\n    </tr>\n  </tbody>\n</table>\n\n### Architecture\n\nThe emulator takes maximum conductances of channels, pumps, and exchangers as inputs and computes the corresponding AP ($V_{m}\u2062(t)$) after the last stimulus as output. It was trained to represent human ventricular cardiomyocytes under control and drugged conditions and the inputs were selected based on two assumptions: (1) The kinetics of channels are preserved, while the number of channels, pumps, and exchangers vary due to different expression levels (Syed et al., 2005; Groenendaal et al., 2015; Krogh-Madsen et al., 2016). These numbers are captured in the simulator by the maximum conductance parameters (or permeability parameters but maximum conductance is used as general term here for the sake of simplicity) that determine the respective current densities; (2) Channels, pumps, and exchangers are potential (intended and unintended) drug targets and the interaction between drugs and their targets can be described by a scaling of the related maximum conductances (Brennan et al., 2009). The corresponding scaling factors are pharmacological parameters. These assumptions allowed us to focus on maximum conductances and we considered those as inputs which either the AP is sensitive to (GNa, GNaL, PCa, Gto, GKr, GK1, GNCX, PNaK) or which are related to common drug targets (GNa, GNaL, PCa, Gto, GKr, GKs, GK1; Crumb et al., 2016) leading to the following selection: GNa, GNaL, PCa, Gto, GKr, GKs, GK1, GNCX, and PNaK. AP sensitivity was quantified using a global sensitivity analysis (GSA; see.Appendix 2) and the inclusion threshold was a total-effect Sobol\u2019 sensitivity index (ST) above 0.1 with respect to any of the considered biomarkers (see.Appendix 1).\n\nSeveral emulator architectures were tried on the training and validation data sets and the final choice was hand-picked as a good trade-off between high accuracy on the validation set (#1) and low computational runtime cost. We decided to utilize a two-stage emulator architecture: First, the maximum conductances $x$ \u2013 normalized to the range $x_{i}\\in[\u22120.5,\u00a00.5]$ \u2013 are encoded using a first NN ($\u0398_{1}$) into a latent representation $\u03d1$. Second, this intermediate representation parameterizes a function $f_{\u03d1}:\u211d\u2192\u211d$ defined by a second NN ($\u0398_{2}$) that can be continuously evaluated to receive the emulated AP at time $t$. To help the second NN in computing the fast depolarization, a simple depolarization term $(tanh)$ is added to $f_{\u03d1}$. The parameters of this depolarization function are slope (d1), offset (d2), and amplitude (d3), and are created by encoding the parameters through the first network, similar to the latent code. The AP approximated by the emulator is thus defined by\n\n$$\nV_{m}(t):=f_{\\theta}(t)+tanh\u2061(d_{1}^{2}(t\u2212d_{2}))+d_{3}^{2}.\n$$\n\nA schematic drawing of the emulator architecture is provided in 2. Splitting the network into two parts \u2014 one for encoding the parameters into a latent space and a second one for evaluating $f_{\u03d1}$ \u2014 allowed us to give the emulator enough complexity without markedly increasing the computational cost: in most cases, it is desirable to compute the whole AP in the entire range, for example $[0,\u00a01000]\u00a0ms$, and not only at a single time step. Creating a single network that computes the mapping from maximum conductances to the transmembrane potential at a single time step (compare Figure 3) is either orders of magnitudes slower than encoding the parameters into a latent vector (only done once per AP) or would require to reduce the complexity of the network, which led to inaccurate emulations in the validation. The additional depolarization term was introduced to address the difficulty of fitting the depolarization phase during training and decreased the required training time substantially. Note that the mapping from maximum conductances $x$ to depolarization parameters ${d_{1},d_{2},d_{3}}$ is also learned through $\u0398_{1}$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig3-v1.jpg)\n\n**Figure 3.:** The maximum conductances $x$ are encoded into depolarization parameters di and a latent space representation $\u03d1$ that uniquely defines the time series functional $f_{\u03d1}:\u211d\u2192\u211d$. The time is normalized and encoded in polynomials up to degree 8 ($t^{p}$ for $p\\in{1,2,\u2026\u20628}$), before being appended to the latent code $\\theta.\u00a0f_{\\theta}$ is then used in conjunction with the depolarization helper $tanh$ to approximate the AP $V_{m}\u2062(t)$.\n\nThe exact architecture employed \u2013 chosen by a cross-validation approach (see Validation) \u2013 comprised a first network ($\u0398_{1}$) of four fully connected layers of 256 neurons, each to encode the parameters into the latent vector $\u03d1\\in\u211d^{256}$. This first network additionally generates the parameterization for the depolarization model ${d_{1},d_{2},d_{3}}$. The second network, computing the APs from the latent representation ($\u0398_{2}$), consisted of four fully connected layers of 64 neurons each. Exponential linear unit (ELU) activation functions Clevert et al., 2016 were used for all layers, except for the final non-linear layer, which was modeled using a $tanh$ activation function followed by a $[-1,1]^{64}\u2192\u211d$ linear layer.\n\n### Training\n\nAlthough different regularization schemes such as variational losses (e.g. $\\frac{d\u2062V_{m}}{d\u2062t}$) were tried, the wealth of training data allowed us to define the training loss purely in terms of mean-squared-error (MSE)\n\n$$\nL(\u0398_{1},\u0398_{2})=\\frac{1}{2|T|}\\sum(x,V^_{m})\\inX\u00af\u2282X\\sumt\\inT(f_{\u03d1_{\u0398_{1}}(x),\u0398_{2}}(t)\u2212V^_{m}(t))^{2}dt,\n$$\n\nwhere $f_{\u03d1_{\u0398_{1}}\u2062(x),\u0398_{2}}$ describes the output of the emulator using the current NN weights $\u0398_{1}/\u0398_{2}$, $X\u00af$ refers to the current training batch and $X$ is the training data set containing both target APs $V^_{m}$ and corresponding maximum conductances $x$. For the training, increasing batch sizes ($|X\u00af|1250$ 1250 to 1800) were used, both in terms of the entire AP and considering only subsets over time $T\u2282T$ from $\\frac{1}{16}|T|$ to $|T|$, resulting in a reduction of training time needed. The neural network was trained for a total number of 5000 epochs using the first-order gradient-based algorithm ADAM Kingma and Ba, 2017. The training time was approximately $4\u00a0h$ on the GPU specified in Computational performance.\n\n### Validation\n\nA cross-validation approach was used to quantify and compare the performance of various emulator architectures. The validation was based on 20% of the initial training data set (7976 pairs of maximum conductances and corresponding APs, see Training). For each pair, the emulated AP $V_{m}$ was compared against the simulated AP $V^_{m}$, given the same maximum conductances. The mismatch was quantified by the root-mean-squared error (RMSE) defined as\n\n$$\nRMSE(V_{m},V\u223c_{m}):=\\sqrt{\\frac{1}{|T|}\\int_{T}(V_{m}(t)\u2212V^_{m}(t))^{2}dt}.\n$$\n\nThe mismatch was also quantified in terms of AP biomarkers $b\\in\u211d^{N}$ (see AP biomarkers and abnormalities) and normalized maximum conductances $x$ (see Time series fitting and estimation of maximum conductances and pharmacological parameters) in which case the RMSE was defined as\n\n$$\nRMSE(b,b\u223c):=\\sqrt{\\frac{1}{N}||b\u2212b\u223c||_{2}^{2}}andRMSE(x,x\u223c):=\\sqrt{\\frac{1}{N}||x\u2212x\u223c||_{2}^{2}},\n$$\n\nfor $N$ samples.\n\n### Time series fitting and estimation of maximum conductances and pharmacological parameters\n\nTime series fitting is the basis for solving the inverse problem. To fit a given AP $V^_{m}$, defined on a subset of the trained domain $T^\u2282T$, the first step was to choose a trial set of maximum conductances $x_{0}$. Then, for the given trial set, the corresponding AP was emulated and the trial set of maximum conductances was iteratively updated by solving the following minimization problem:\n\n$$\nminx,t_{0}\\frac{1}{2|T^|}\\sumt\\inT^(V_{m}(x,t\u2212t_{0})\u2212V_{m}^(t))^{2}dt+\\frac{\\lambda_{x_{0}}}{2}||x\u2212x^||_{2}^{2}+\\delta_{[\u22120.5,0.5]}(x),\n$$\n\nwhere $V_{m}(x,t):=f_{\\theta_{\u0398_{1}}(x),\u0398_{2}}(t)$ is a shorthand for the emulator approximation function and t0 is a temporal offset parameter helping in fitting the exact depolarization timing. Here, $\\delta_{[-0.5,0.5]}\u2062(x)$ is the element-wise indicator function on the normalized feasible parameter space $[-0.5,0.5]$. The minimization was done using ADAM (Kingma and Ba, 2017) combined with a projection on the feasible space.\n\nTo estimate maximum conductances for a given control AP, the control AP was fitted using the original maximum conductance values as initial guesses and priors: $x_{0}=x^=0$. To estimate maximum conductances for a given drugged AP, the drugged AP was fitted using the maximum conductances estimated for the respective control AP as initial guesses and priors: $x_{0}=x^=x^{c}$. The pharmacological parameters (scaling factors of control maximum conductances) were computed as element-wise ratios between the drugged and control maximum conductances $(s)_{i}:=\\frac{(G^{d})_{i}}{(G^{c})_{i}}$ but here, $G^{d}$ and $G^{c}$ are the non-normalized maximum conductances, where $(G^{c})_{i}>0$.\n\nSince multiple sets of maximum conductances produced similarly good fits of the given AP, the parameter $\\lambda_{x_{0}}$ was introduced which minimizes the difference between original and control maximum conductances and between control and drugged maximum conductances, respectively. The value was chosen to be $\\lambda_{x_{0}}=10$ with respect to the highest accuracy found for the synthetic data set #2 that was generated for the evaluation (see Synthetic test data (#2/#3)).\n\n### Evaluation\n\nThe evaluation was performed for forward and inverse problems in pharmacological studies on synthetic and experimental data.\n\nThe raw experimental data were obtained without filtering but some filtering was applied before interfacing the data with the emulator. The APs contained a stimulus artifact between 0 and $1.5\u00a0ms$ that was filtered as follows. For each of the last 10 consecutive APs, the transmembrane potential $V_{m}$ closest to the end of the recorded time series was defined as the resting transmembrane potential $R\u2062M\u2062P$ and $V_{m}\u2062(t)=R\u2062M\u2062P$ was set for $t\\in[0,\u00a01.75]ms$. Then, the APs were resampled at $100\u00a0kHz$ and a low-pass filtering was performed with a second-order butterworth filter (cutoff at $2.5\u00a0kHz$) to reduce the high-frequency noise of the signal. Finally, the filtered APs were averaged and the averaged AP was again resampled at $1\u00a0kHz$ for $t\\in[15,\u00a01000]ms$ (repolarization) and $100\u00a0kHz$ in $t\\in[0,\u00a015)ms$ (depolarization). An example comparison of a raw and a filtered averaged AP is given in Figure 4.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig4-v1.jpg)\n\n**Figure 4.:** One dofetilide control AP is shown as example.\n\n#### Computational performance\n\nThe simulation of a single AP (see Simulator) sampled at a resolution of 20 kHZ took 293 s on one core of a AMD Ryzen Threadripper 2990 WX (clock rate: 3.0 GHZ) in CARPentry. Adaptive timestep solver of variable order, such as implemented in Myokit (Clerx et al., 2016), can significantly lower the simulation time (30 s for our setup) by using small step sizes close to the depolarization (phase 0) and increasing the time step in all other phases. The emulation of a steady state AP sampled at a resolution of 20 KHZ for $t\\in[\u221210,1000]\u00a0ms$ took 18.7 ms on a AMD Ryzen 7 3800 X (clock rate: 3.9 GHZ) and 1.2 ms on a Nvidia A100 (Nvidia Corporation, USA), including synchronization and data copy overhead between CPU and GPU.\n\nThe amount of required beats to reach the steady state of the cell in the simulator has a major impact on the runtime and is not known a-priori. On the other hand, both simulator and emulator runtime linearly depends on the time resolution, but since the output of the emulator is learned, the time resolution can be chosen at arbitrarily without affecting the AP at the sampled times. This makes direct performance comparisons between the two methodologies difficult. To still be able to quantify the speed-up, we ran Myokit using 100 beats to reach steady state, taking 3.2 s of simulation time. In this scenario, we witnessed a speed-up of 171 and $2\u22c510^{3}$ of our emulator on CPU and GPU, respectively (again including synchronization and data copy overhead between CPU and GPU in the latter case). Note that both methods are similarly expected to have a linear parallelization speedup across multiple cells.\n\nFor the inverse problem, we parallelized the problem for multiple cells and keep the problem on the GPU to minimize the overhead, achieving emulations (including backpropagation) that run in 120 s per AP at an average temporal resolution of 2 KHZ. We consider this the peak performance which will be necessary for the inverse problem in Inverse problem based on synthetic data.\n\n#### Forward problem\n\nThe emulator evaluation for the forward problem, i.e. to find the drugged AP for given pharmacological parameters, was only performed on synthetic data since maximum conductances were not available experimentally. The maximum conductances of data sets #2 and #3 were used to consider data with normal APs and with abnormal APs exhibiting EADs. Pharmacological parameters are not inputs of the emulator but drugged maximum conductances that were computed as control maximum conductances scaled by the given pharmacological parameters (see Synthetic test data (#2/#3)). These were used to emulate drugged APs. The RMSE was used to quantify the mismatch between the emulated and the ground truth AP.\n\n#### Inverse problem\n\nThe emulator evaluation for the inverse problem, that is to find the pharmacological parameters for given control and drugged APs (through optimization), was performed on both synthetic and experimental data. When using synthetic data, the data set #2 was used including data with normal APs. First, control and drugged maximum conductances were estimated based on control and drugged APs and then, pharmacological parameters were computed as ratios of drugged and control conductances (see Time series fitting and estimation of maximum conductances and pharmacological parameters). The mismatch between estimated and ground truth maximum conductances were quantified using the error that is defined through\n\n$$\ne_{n}:=(x\u2212x^),\n$$\n\nwhere $x$ and $x^$ are the normalized estimated and ground truth maximum conductances (see Architecture). Similarly, we computed the mismatch between estimated and ground truth scaling factor vectors ($S$ and $S^$ respectively) as\n\n$$\ne_{s}:=(s\u2212s^).\n$$\n\nWhen using experimental data, maximum conductances and pharmacological parameters were estimated in the same way but due to a lack of experimental maximum conductances, the mismatch between estimated and ground truth values could not be quantified. Instead, the estimated pharmacological parameters were compared with distributions computed from data published within the CiPA initiative (Li et al., 2017; Chang et al., 2017) (CiPA distributions). The data set (https://github.com/FDA/CiPA/tree/master/Hill_fitting/results; Chang and Li, 2017) includes 2000 IC50 values and Hill coefficients for each drug and for up to seven targets ($I_{N\u2062a}$, $I_{N\u2062a\u2062L}$, $I_{C\u2062a\u2062L}$, $I_{t\u2062o}$, $I_{K\u2062r}$, $I_{K\u2062s}$, $I_{K\u20621}$). The pore-block model (Brennan et al., 2009) was used to obtain the corresponding scaling factors.\n\n## Results\n\n### Evaluation\n\n#### Forward problem\n\nThe emulator evaluation for the forward problem was only done on synthetic data and both data sets #2 and #3 (see Synthetic test data (#2/#3)) were used to analyze the solution accuracy for normal and abnormal APs exhibiting EADs.\n\nThe data set #2 was used first and Figure 5 illustrates the distribution of RMSEs between emulated and ground truth drugged APs. In total 104 APs were emulated in 0.6 s. The average RMSE over all APs was 0.47 mV and only for a few APs the RMSE was >1 mV with 1.5 mV being the maximum. Largest mismatches were located in the phases 0 and 3 of the AP. While the mismatches in phase 3 were simply a result of imperfect emulation, the mismatches in phase 0 were a result of the difficulty in matching the depolarization time exactly.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig5-v1.jpg)\n\n**Figure 5.:** Left: histogram of RMSEs for the APs, right: APs with the largest RMSEs. The RMSE is given above each subplot.\n\nFigure 6 shows the distribution of biomarker mismatches between emulated and ground truth drugged APs. The low RMSEs between the APs translated into low RMSEs between the AP biomarkers. Likewise, the difficulty in exactly matching the depolarization time leads to elevated errors and more outliers in the biomarkers influenced by the depolarization phase ($TP$ and $d\u2062V\u2062m\u2062M\u2062a\u2062x$).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig6-v1.jpg)\n\n**Figure 6.:** Histograms of mismatches for each biomarker are shown and the RMSE is given in the upper left corner. The number in the right upper corner denotes the number of outliers of the 10,000 samples which lie outside the shown ranges.\n\nThe data set #3 was used second and Appendix 3 shows all emulated APs, both containing the EAD and non-EAD cases. The emulation of all 950 APs took 0.76 s on the GPU specified in Training We show the emulation of all maximum conductances and the classification of the emulation. The comparison with the actual EAD classification (based on the criterion outlined in Appendix 1) results in true-positive (EAD both in the simulation and emulation), false-negative (EAD in the simulation, but not in the emulation), false-positive (EAD in the emulation, but not in the simulation) and true-negative (no EAD both in the emulation and simulation). The emulations achieved 72.5% sensitivity (EAD cases correctly classified) and 94.9% specificity (non-EAD cases correctly classified), with an overall acurracy of 90.8% (total samples correctly classified). A substantial amount of wrongly classified APs showcase a notable proximity to the threshold of manifesting EADs. Figure 7 illustrates the distribution of RMSEs in the EAD APs between emulated and ground truth drugged APs. The average RMSE over all EAD APs was 14.5 mV with 37.1 mV being the maximum. Largest mismatches were located in phase 3 of the AP, in particular in emulated APs that did not fully repolarize.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig7-v1.jpg)\n\n**Figure 7.:** Left: histogram of RMSEs for the APs, right: APs with the largest RMSEs. Of the 171 emulated APs, 124 exhibit the expected EADs (based on the criterion outlined in Appendix 1). The RMSE is given above each subplot. All emulated APs are shown in Appendix 3.\n\n#### Inverse problem based on synthetic data\n\nThe emulator evaluation for the inverse problem was first done using synthetic data (data set #2, see Synthetic test data (#2/#3)). For this, we minimized (3) by using ADAM (Kingma and Ba, 2017) with no batching for 104 iterations for all 100 cardiomyocytes times 100 drugs (i.e. 104 APs), resulting in a total of 108 emulations, taking approximately 3.5 h on the GPU specified in Training. Control and drugged APs could be fitted with an average RMSE of 0.8 mV. Largest mismatches were located in phase 0 and 3 of the AP for the reasons given above (see Forward problem). Figure 8 shows the distribution of the errors between the estimated and the ground truth maximum conductances and pharmacological parameters. For both the maximum conductances (RMSE $\\leq0.18$) and the related pharmacological parameters (RMSE $\\leq0.22$), the errors were closely distributed around zero. However, the RMSEs increased from the control maximum conductance over the drugged maximum conductance to the pharmacological parameters and there were distinctive differences among maximum conductances and related pharmacological parameters with the smallest for GKr and the largest for GKs.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig8-v1.jpg)\n\n**Figure 8.:** Left: boxplot of errors between normalized estimated and ground truth control maximum conductances, middle: boxplot of errors between normalized estimated and ground truth drugged maximum conductances, right: boxplot of errors between estimated and ground truth pharmacological parameters. Error definitions are given in (4) and (5). The RMSE over all data is given below each parameter.\n\n#### Inverse problem based on experimental data\n\nThe emulator evaluation for the inverse problem was then done on experimental data (Experimental data (#4)). Similar to the synthetic inverse problem, we optimized (3), this time for $5\u22c510^{4}$ and $2.5\u22c510^{4}$ epochs for control and drug APs for each drug sample. The total computational time spent on this task was 2.8 hr on the GPU specified in Training.\n\nFigure 9 shows the fitted and the ground truth APs for all drugs. Control and drugged APs could be fitted with average RMSEs shown in Table 4. The largest mismatch was located in phase 0 for most APs, which was the result from an imperfect matching of the exact depolarization timing.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig9-v1.jpg)\n\n**Figure 9.:** Comparison of the fitted APs (solid lines) and the experimental APs (dashed lines) at control (red) and after drug administration (blue) for all drugs.\n\n**Table 4.**\n Average RMSE over control and drugged APs measured in all preparations per drug.All values in mV.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Drug</th>\n      <th>RMSE control</th>\n      <th>RMSE drug</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cisapride</td>\n      <td>1.53</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Dofetilide</td>\n      <td>2.05</td>\n      <td>1.73</td>\n    </tr>\n    <tr>\n      <td>Sotalol</td>\n      <td>1.4</td>\n      <td>2.51</td>\n    </tr>\n    <tr>\n      <td>Terfenadine</td>\n      <td>1.22</td>\n      <td>1.08</td>\n    </tr>\n    <tr>\n      <td>Verapamil</td>\n      <td>1.93</td>\n      <td>2.21</td>\n    </tr>\n  </tbody>\n</table>\n\nFigure 10 compares the estimated pharmacological parameters and the CiPA distributions. Pharmacological parameters that fell into the range spanned by $\\mu\\pm(0.15+\\sigma)$ of the CiPA distribution, where $\\mu,\\sigma$ are the distribution\u2019s mean and standard deviation respectively, were classified as successfully estimated while the others were classified as unsuccessfully estimated. In total, 50% of the pharmacological parameters could be estimated succesfully and while all pharmacological parameters related to GKs could be successfully estimated, unsuccessfully estimated parameters were found across all maximum conductances, in particular related to GK1 for which all pharmacological parameters could not be successfully estimated (Table 5).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/91911/elife-91911-fig10-v1.jpg)\n\n**Figure 10.:** The histograms compare the estimated pharmacological parameters (dashed vertical lines) from data of multiple preparations with the CiPA distributions (blue; see Inverse problem). The black dash dotted vertical lines are the borders of the range (grey) that was used to determine if the estimation of the given pharmacological parameter was successful. The range is spanned up by \u00b5 \u00b1 (0.15 + \u03c3) of the CiPA distribution. Successfully estimated parameters are shown as green lines and unsuccessfully estimated parameters are shown as red lines. The number in the upper left corner indicates for how many preparations the parameters could be successfully estimated in relation to the total number of preparations for the given drug.\n\n**Table 5.**\n Pharmacological parameters related to maximum conductances that were considered successfullyor unsuccessfully estimated across all preparations and drugs.For each channel, the drugs are stated forwhich respective data from the CiPA initiative were available. C, D, S, T, V, A mark cisapride, dofetilide, sotalol,terfenadine, verapamil, all drugs respectively.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Gna</th>\n      <th>GNaL</th>\n      <th>Gto</th>\n      <th>GKr</th>\n      <th>GKs</th>\n      <th>GK</th>\n      <th>PCa</th>\n      <th>Total</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Successful</td>\n      <td>6</td>\n      <td>6</td>\n      <td>8</td>\n      <td>3</td>\n      <td>9</td>\n      <td>0</td>\n      <td>5</td>\n      <td>37</td>\n    </tr>\n    <tr>\n      <td>Unsuccessful</td>\n      <td>3</td>\n      <td>1</td>\n      <td>5</td>\n      <td>10</td>\n      <td>0</td>\n      <td>10</td>\n      <td>8</td>\n      <td>37</td>\n    </tr>\n    <tr>\n      <td>Ratio</td>\n      <td>0.67</td>\n      <td>0.86</td>\n      <td>0.62</td>\n      <td>0.23</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0.38</td>\n      <td>0.5</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nNN emulation of the human ventricular cardiomyocyte AP was introduced and the applicability in pharmacological studies was investigated.\n\n### Evaluation\n\nThe evaluated NN emulator showed highly accurate AP emulations for the forward problem on synthetic data. High accuracy was found in normal APs in data set #2 (average RMSE was 0.47 mV; Figure 5) and to a lesser extent also in abnormal APs exhibiting EADs: of the emulated EAD APs, 72.5% exhibited alignment with the abnormality, and the substantial majority of the remaining APs demonstrated pronounced proximity, while the average RMSE among the EAD APs was 14.5 mV (Figure 7). In comparison, the normal APs exhibiting no EAD in data set #3 could be reconstructed with an average RMSE of 4.02 mV and the overall accuracy of classifying EAD on emulated APs was 90.8%. Increasing the amount of training data within the relevant range could lead to further enhancements in accuracy for abnormal APs. Nevertheless, this observation demonstrates that the emulator is also capable of accounting for discontinuities of the response surface. This is particularly useful in pharmacological studies and a key advantage over existing emulation approaches (Chang et al., 2015; Johnstone et al., 2016; Coveney and Clayton, 2018; Ghosh, 2018; Rasmussen, 2019; Coveney et al., 2021).\n\nThe emulator was further evaluated for the inverse problem on synthetic and also on experimental data. Maximum conductances and related pharmacological parameters could be widely estimated with high accuracy on synthetic data (RMSE $\\leq0.18$ and $\\leq0.21$ for all maximum conductances and pharmacological parameters, respectively; Figure 8).\n\nThe RMSEs increased from the control maximum conductance over the drugged maximum conductance to the pharmacological parameters which may be because the estimation of drugged maximum conductances depends on the control maximum conductances and the computation of pharmacological parameters depends on both control and drugged maximum conductances (see Time series fitting and estimation of maximum conductances and pharmacological parameters) allowing that errors can propagate and amplify. Distinctive differences were observed among the maximum conductances and related pharmacological parameters and the largest RMSEs were found for GKs throughout. This can be attributed to various degrees of parameter identifiability Sarkar and Sobie, 2010; Zaniboni et al., 2010; Groenendaal et al., 2015; Jaeger et al., 2019; Whittaker et al., 2020 and the results agree with the GSA that indicates almost non-identifiability of GKs (Appendix 2).\n\nLarger inaccuracies were found in the inverse problem solutions on experimental data (Figure 10, Table 4). The first reason may be low parameter identifiability and we want to highlight inaccuracies in estimating the pharmacological parameters related to GKr, PCa, and GNaL when the hERG channel was blocked in parallel to the Cav1.2 channel (verapamil) or in parallel to both the Cav1.2 and the Nav1.5-late channel (terfenadine). The hERG channel block (prolongation of the AP), and the Cav1.2 and Nav1.5-late channel block (shortening of the AP) are known to have opposite effects on the AP Orvos, 2019. At the given drug concentrations, these effects were apparently counterbalancing, which resulted in negligible changes of the AP (Figure 9). This situation made the estimation of pharmacological parameters very challenging and led to particularly large inaccuracies for terfenadine. The accurate estimations of the pharmacological parameters related to GKs are surprising at first in light of the almost non-identifiability. This was due to the combination of two factors: (1) different from synthetic data, the drugs at the given concentrations did not affect the corresponding KCNQ1-MinK channel and (2) the difference between control and drugged maximum conductance was weakly enforced to be minimal (see Time series fitting and estimation of maximum conductances and pharmacological parameters) which leads to almost no difference in non-identifiable parameters and hence, to a pharmacological parameter of one. The accuracy will likely be much lower in drugs that affect the KCNQ1-MinK channel.\n\nThe second and probably main reason for the inaccuracies may be the fact that the data were collected in small tissue preparations, whereas the emulator was trained on data generated by a simulator that represents single cardiomyocytes. APs in small tissue preparations are slightly different from those in single cardiomyocytes. Differences can arise from electrotonic coupling and the mixture of cells including fibroblasts that are able to modify the EP (Kohl and Gourdie, 2014; Mayer et al., 2017; Hall et al., 2021). This can hamper the fitting of the APs and consequently, the estimation of the maximum conductances and pharmacological parameters.\n\n### Emulator\n\nThe presented NN emulator enables a massive speed-up compared to regular simulations and the evaluation for the forward problem on synthetic data showed also highly accurate AP emulations. Cardiomyocyte EP models are already very quick to evaluate in the scale of seconds (see Computational performance), but the achieved runtime of emulations allows to solve time consuming simulation protocols markedly more efficient. One such scenario is the presented inverse maximum conductance estimation problem (see Inverse problem based on synthetic data and Inverse problem based on experimental data), where for estimating maximum conductances of a single AP, we need to emulate the steady state AP at least several hundred times as part of an optimization procedure. Further applications include the probabilistic use of cardiomyocyte EP models with uncertainty quantification (Chang et al., 2017; Johnstone et al., 2016) where thousands of samples of parameters are potentially necessary to compute a distribution of the steady-state properties of subsequent APs, and the creation of cell populations (Muszkiewicz et al., 2016; Gemmell et al., 2016; Britton et al., 2013). In addition to the aforementioned strengths of the presented NN emulator, some further valuable features are worth mentioning that arise from the continuous nature of the emulator. First, the AP can be emulated and fitted at any desired resolution. Second, timing offsets, for example between stimuli in the data to be fitted and the training data, can be accounted for using t0 in (3) without retraining. Last but not least, the transmembrane potential gradient $\\frac{d\u2062V_{m}}{d\u2062t}$, recently highlighted in terms of proarrhythmic potential prediction (Jeong et al., 2022), can be continuously derived and is not dependent on the temporal discretization.\n\n### Limitations and future work\n\nSome limitations have to be considered. First, the emulator has only maximum conductances as inputs. Although these explain much of the AP variability seen between cardiomyocytes (Britton et al., 2013; Muszkiewicz et al., 2016), the inclusion of parameters related to the channel kinetics might enable a more detailed consideration of drug effects in pharmacological studies. In general, the question of complete parameter identifiability utilizing only APs remains an open challenge (Zaniboni et al., 2010). Channel kinetics determine the contribution of the corresponding current to the AP generation in different phases and can thus also modulate drug effects, but were however neglected, as the expansion of the input space might be unsuitable for solving the inverse problem when only AP data are used. Second, the interaction between drugs and their targets is solely captured through scaling of the related maximum conductance at control, which is mostly adequate but in fact an oversimplification (Brennan et al., 2009). The interaction can be dependent on time, voltage, and channel state, which requires the use of Markov models with many more parameters (Brennan et al., 2009; Li et al., 2017; Lei et al., 2024). Again, this expands the input space and might be unsuitable for solving the inverse problem when only AP data are used. Moreover, drugs that are applied over a longer period of time can also cause modifications of the maximum conductances through changes in gene expression (Shim et al., 2023). This requires attention to avoid misinterpretations of found blocking or enhancement effects, for example by estimating the control maximum conductances again after a washout procedure. Third, the inverse problem was only solved for AP data obtained from one single stimulation protocol. Johnstone et al., 2016 have shown that the usage of AP data obtained from various stimulation protocols can improve the parameter identifiability and thus, the accuracy of parameter estimates. To be able to use those data in the presented approach, the pacing cycle length must be included as additional input in the emulator and the emulator may be trained on more than the last AP of the pacing series. This would also allow to capture alternans. Last but not least, the number of drugs and concentrations considered in the inverse problem on experimental data poses a limitation. The ultimate goal is to have a tool that provides highly accurate solutions for drugs with different targets and concentrations. To this end, analyses must be extended by data obtained from a series of available and well characterized drugs. The data should be collected in single cardiomyocytes in order to minimize the discussed inaccuracies that stem from the use of tissue preparation data. Further simulation studies of the inverse problem on tissue slabs versus cardiomyocyte EP model could be integrated to assess the impact of differences in setups. This should be addressed in future work. Of note, the presented approach can also be straightforwardly applied to other transients, for example intracellular [Ca2+] or sarcomere length.\n\n### Conclusion\n\nThis paper introduced NN emulation of the human ventricular cardiomyocyte AP and tested its applicability in pharmacological studies. The computational cost of the NN emulator was compared to that of the simulator, revealing a massive speed-up of more than 1e3. The accuracy of solving the forward problem on synthetic data was found to be high for normal APs and this hold mostly true for abnormal APs exhibiting EADs. This advantage distinguishes our novel approach from existing emulation methods. While larger inaccuracies were observed when utilizing experimental data \u2013 a limitation thoroughly discussed and particularly inherent to the fact that small tissue preparations were studied while the emulator was trained on single cardiomyocyte data \u2013 the accuracy of solving the inverse problem on synthetic data remained high. Collectively, these findings underscore the potential of NN emulators in improving the efficiency of future quantitative systems pharmacology studies.\n",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yongliang Yang, Dalian University of Technology China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91911.3.sa0](https://doi.org/10.7554/eLife.91911.3.sa0)\n\nThis valuable prospective study develops a new tool to accelerate pharmacological studies by using neural networks to emulate the human ventricular cardiomyocyte action potential. The evidence supporting the conclusions is convincing, based on using a large and high-quality dataset to train the neural network emulator. There are nevertheless a few areas in which the article may be improved through validating the neural network emulators against extensive experimental data. In addition, the article may be improved through delineating the exact speed-up achieved and the scope for acceleration. The work will be of broad interest to scientists working in cardiac simulation and quantitative system pharmacology.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91911.3.sa1](https://doi.org/10.7554/eLife.91911.3.sa1)\n\nSummary:\n\nThe authors present a neural network (NN)-based approach to computationally cheaper emulation of simulations of biophysically relatively detailed cardiac cell models based on systems of ordinary differential equations. Relevant case studies are used to demonstrate the performance in prediction of standard action potentials, as well as action potentials manifesting early depolarizations. Application to the \"reverse problem\" (inferring the effect of pharmacological compounds on ion channels based on action potential data before and after drug treatment) is also explored, which is a task of generally high interest.\n\nStrengths:\n\nThis is a well-designed study, which explores an area that many in the cardiac simulation community will be interested in. The article is well written and I particularly commend the authors on transparency of methods description, code sharing, etc. - it feels rather exemplary in this regard and I only wish more authors of cardiac simulation studies took such an approach. The training speed of the network is encouraging and the technique is accessible to anyone with a reasonably strong GPU, not needing specialized equipment.\n\nWeaknesses:\n\nBelow are several points that I consider to be weaknesses and/or uncertainties of the work:\n\n1. The scope for acceleration of single cell simulations is not vast, as it is easy to simulate tens of thousands of cells per day on a workstation computer, using simulation conditions similar to those of the authors. While this covers a large part of what is needed in the field, I agree with the authors that there are applications where the presented technology is helpful. In such cases, e.g., in uncertaintly quantification, it will enable studies that would be difficult to carry out previously. In addition, any application involving long-term pre-pacing of a large number of cells will benefit greatly from the reported tool.\n\nAn area which is definitely in need of acceleration is simulations of whole ventricles or hearts, but it is not clear how much potential for speedup would the presented technology bring there. I can imagine interesting applications of rapid emulation in such a setting, some of which could be hybrid in nature (e.g. using simulation for the region around the wavefront of propagating electrical waves, while emulating the rest of the tissue, which is behaving more regularly/predictable, and is likely to be emulated well), but this is definitely beyond of the scope of this article.\n\n2. The exact speed-up achieved by the NN emulation is somewhat context-dependent. In particular, the reported speedup critically depends on the number of beats in the simulation. The emulator learns to directly estimate the state of the cell after X beats (where X is decided by the operator of training). The speedup appears to be relatively marginal when a single beat is simulated versus emulated - but when 1000 beats are simulated, this takes 1000fold more time for simulation, but unchanged time for emulation.\n\nWhile the initial submission did not communicate the practical speedup entirely clearly, this was addressed well by the authors in the revised version.\n\n3. It appears that the accuracy of emulation drops off relatively sharply with increasing real-world applicability/relevance of the tasks it is applied to. That said, the authors are to be commended on declaring this transparently, rather than withholding such analyses. I particularly enjoyed the discussion of the not always amazing results of the inverse problem on the experimental data. The point on low parameter identifiability is an important one, and serves as a warning against overconfidence in our ability to infer cellular parameters from action potentials alone. On the other hand, I'm not that sure the difference between small tissue preps and single cells which authors propose as another source of the discrepancy will be that vast beyond the AP peak potential (probably much of the tissue prep is affected by the pacing electrode?), but that is a subjective view only. The influence of coupling could be checked if the simulated data were generated from 2D tissue samples/fibres, e.g. using the Myokit software.\n\nIn summary, I believe the range of tasks where the emulator provides a major advance is relatively narrow, particularly given the relatively limited need for further speedup compared to simulations. However, this does not make the study uninteresting in the slightest - on the contrary, it explores something that many of us are thinking about, and it is likely to stimulate further development in the direction of computationally efficient emulation of relatively complex simulations.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91911.3.sa2](https://doi.org/10.7554/eLife.91911.3.sa2)\n\nSummary:\n\n1. Grandits and colleagues were trying to develop a new tool to accelerate pharmacological studies by using neural networks to emulate the human ventricular cardiomyocyte action potential (AP). The AP is a complex electrical signal that governs the heartbeat, and it is important to accurately model the effects of drugs on the AP to assess their safety and efficacy. Traditional biophysical simulations of the AP are computationally expensive and time-consuming. The authors hypothesized that neural network emulators could be trained to predict the AP with high accuracy and that these emulators could also be used to quickly and accurately predict the effects of drugs on the AP.\n\nStrengths:\n\n2. One of the study's major strengths is that the authors use a large and high-quality dataset to train their neural network emulator. The dataset includes a wide range of APs, including normal and abnormal APs exhibiting EADs. This ensures that the emulator is robust and can be used to predict the AP for a variety of different conditions.\n\nAnother major strength of the study is that the authors demonstrate that their neural network emulator can be used to accelerate pharmacological studies. For example, they use the emulator to predict the effects of a set of known arrhythmogenic drugs on the AP. The emulator is able to predict the effects of these drugs, even though it had not been trained on these drugs specifically.\n\nWeaknesses:\n\nOne weakness of the study is that it is important to validate neural network emulators against experimental data to ensure that they are accurate and reliable. The authors do this to some extent, but further validation would be beneficial. In particular for the inverse problem, where the estimation of pharmacological parameters very challenging and led to particularly large inaccuracies.\n\nAdditional context:\n\n4. The work by Grandits et al. has the potential to revolutionize the way that pharmacological studies are conducted. Neural network emulation has the promise to reduce the time and cost of drug development and to improve the safety and efficacy of new drugs. The methods and data presented in the paper are useful to the community because they provide a starting point for other researchers to develop and improve neural network emulators for the human ventricular cardiomyocyte AP. The authors have made their code and data publicly available, which will facilitate further research in this area.\n\n5. It is important to note that neural network emulation is still a relatively new approach, and there are some challenges that need to be addressed before it can be widely adopted in the pharmaceutical industry. For example, neural network emulators need to be trained on large and high-quality datasets. Additionally, it is important to validate neural network emulators against experimental data to ensure that they are accurate and reliable. Despite these challenges, the potential benefits of neural network emulation for pharmacological studies are significant. As neural network emulation technology continues to develop, it is likely to become a valuable tool for drug discovery and development.\n",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d4a3e0ac-c81b-47c6-853d-e235458fd072",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C1",
+      "claim": "Computer models of the human ventricular cardiomyocyte action potential have reached a level of detail and maturity that has led to an increasing number of applications in the pharmaceutical sector.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer models of the human ventricular cardiomyocyte action potential (AP) have reached a level of detail and maturity that has led to an increasing number of applications in the pharmaceutical sector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the state of the field, drawing from established scientific consensus about model development and applications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "461906c0-2abc-4ae5-8491-52c633309449",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C2",
+      "claim": "The most updated cardiomyocyte models include fine representations of ion movements through various important channels, pumps, and exchangers.",
+      "claim_type": "EXPLICIT",
+      "source": "The most updated models include fine representations of ion movements through various important channels, pumps, and exchangers, and take the complex handling of intracellular calcium accurately into account (Grandi et al., 2010; O'Hara et al., 2011; Tomek et al., 2019; Bartolucci et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "42270c50-6558-4cef-875d-2b8a59a24118",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C3",
+      "claim": "The most updated cardiomyocyte models take the complex handling of intracellular calcium accurately into account.",
+      "claim_type": "EXPLICIT",
+      "source": "The most updated models include fine representations of ion movements through various important channels, pumps, and exchangers, and take the complex handling of intracellular calcium accurately into account (Grandi et al., 2010; O'Hara et al., 2011; Tomek et al., 2019; Bartolucci et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "8ac5ad68-e6a8-45b6-ad94-8a0ec58aaa00",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C4",
+      "claim": "Cardiomyocyte models have individual strengths and limitations in replicating different aspects of physiology, pathology, and pharmacology.",
+      "claim_type": "EXPLICIT",
+      "source": "While these models have individual strengths and limitations in replicating different aspects of physiology, pathology, and pharmacology (Corrado et al., 2021; Amuzescu et al., 2021), their degree of credibility has reached a level that has led to an increasing number of applications in academia and beyond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to comparative studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "d1aa2b00-389e-4245-8e78-f3cab7538f13",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C5",
+      "claim": "The Comprehensive in Vitro Proarrhythmia Assay (CiPA) was proposed in 2013 following a workshop at the US Food and Drug Administration.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the regulatory assessment of a drug's proarrhythmic potential, the Comprehensive in Vitro Proarrhythmia Assay (CiPA) was proposed in 2013 following a workshop at the US Food and Drug Administration (Sager et al., 2014; Colatsky et al., 2016; Strauss et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to CiPA initiative publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "02b47328-1f8b-4e2c-a317-ab99598562de",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C6",
+      "claim": "A central component of CiPA is a computer model of human ventricular cardiomyocyte electrophysiology coupled to a pharmacological model.",
+      "claim_type": "EXPLICIT",
+      "source": "A central component is a computer model of human ventricular cardiomyocyte EP that is coupled to a pharmacological model describing the interaction between a given drug and multiple arrhythmia-relevant channels (Dutta et al., 2017; Li et al., 2017; Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to CiPA methodology papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "c1d7b34f-fbdb-4360-ad3a-0379d7ccf9f8",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C7",
+      "claim": "Bottino et al., 2006 estimated pharmacological parameters from action potentials of canine Purkinje fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Some relevant examples for the latter have been presented by Bottino et al., 2006 who estimated pharmacological parameters from APs of canine Purkinje fibers and by Tveito et al. who estimated pharmacological parameters from AP biomarkers measured in human induced pluripotent stem cell-derived cardiomyocytes (Tveito et al., 2018) and several animal ventricular cardiomyocytes (Tveito et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bottino et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "46424a37-09f6-418d-8da2-26a386d39cde",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C8",
+      "claim": "Tveito et al. estimated pharmacological parameters from AP biomarkers measured in human induced pluripotent stem cell-derived cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Some relevant examples for the latter have been presented by Bottino et al., 2006 who estimated pharmacological parameters from APs of canine Purkinje fibers and by Tveito et al. who estimated pharmacological parameters from AP biomarkers measured in human induced pluripotent stem cell-derived cardiomyocytes (Tveito et al., 2018) and several animal ventricular cardiomyocytes (Tveito et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tveito et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "9f02782b-0702-479d-9bab-78fa06bd4575",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C9",
+      "claim": "Uncertainty in experimental data results from beat-to-beat variability, cell-to-cell variability, and measurement errors.",
+      "claim_type": "EXPLICIT",
+      "source": "When the models are interfaced with experimental data, attention should be paid to the inherent uncertainty in the data that results from beat-to-beat variability (intrinsic variability), cell-to-cell variability (extrinsic variability), and measurement errors (observational uncertainty) (Mirams et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mirams et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "00cbe2ee-6b27-4140-97cd-0f010ad5da5a",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C10",
+      "claim": "Gaussian process emulators are not well suited to capture discontinuities of the response surface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GP emulators are not well suited to capture discontinuities of the response surface as standard GP emulators assume a smooth and continuous response to changes in parameter values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about Gaussian process properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "48068bfc-bbf3-4e16-ae0c-b457ca4f24a6",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C11",
+      "claim": "Neural networks can approximate even discontinuous functions with arbitrary precision in theory.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, it has been proven that neural networks (NN) can approximate even discontinuous functions with arbitrary precision in theory (Hornik et al., 1989), while recent works using NNs show empirically promising results for modeling partial differential equations containing discontinuities (Jagtap et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hornik et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "32f2e8d4-e052-48a8-b1cb-07b4fac04f14",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C12",
+      "claim": "The ToR-ORd-dynCl simulator was used as the simulator in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulator of Tomek et al., 2020 (ToR-ORd-dynCl simulator) was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the simulator used, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "701dbd0a-6430-46a2-b848-3eff89af4304",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C14",
+      "claim": "A series of 1000 stimuli were applied for each new parameter set to approach the simulator's steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "To approach the simulator's steady state, a series of 1000 stimuli were applied for each new parameter set starting from the initial states specified in the CellML file (when 1000 additional stimuli were applied, the maximum intracellular [Ca2+], [Cl-], and [Na+] changed by 1.5%, 0.15%, and 1.7%, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological detail with data showing convergence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "d27987b8-80c5-44b1-844b-88fe8269a88b",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C15",
+      "claim": "Sobol' sequences were used to generate 40,000 maximum conductance samples for training data.",
+      "claim_type": "EXPLICIT",
+      "source": "Sobol' sequences were used to generate 40,000 maximum conductance samples, containing 20,000 maximum conductance samples between 0% and 200% of the original values and 20,000 maximum conductance samples between 50% and 150% of the original values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological detail about data generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "2f61ec2e-86be-48d6-8169-d1cba8c8898b",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C17",
+      "claim": "20% of the initial training data set were randomly chosen for validation, leaving 31908 pairs for training.",
+      "claim_type": "EXPLICIT",
+      "source": "From the initial training data set, 20% were randomly chosen to be used for validation leaving 31908 pairs of maximum conductances and corresponding APs for training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific data about train-validation split.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "7b87c074-6b66-4fa7-abe7-5d047d4d4cfa",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C19",
+      "claim": "The emulator inputs were selected as GNa, GNaL, PCa, Gto, GKr, GKs, GK1, GNCX, and PNaK.",
+      "claim_type": "EXPLICIT",
+      "source": "These assumptions allowed us to focus on maximum conductances and we considered those as inputs which either the AP is sensitive to (GNa, GNaL, PCa, Gto, GKr, GK1, GNCX, PNaK) or which are related to common drug targets (GNa, GNaL, PCa, Gto, GKr, GKs, GK1; Crumb et al., 2016) leading to the following selection: GNa, GNaL, PCa, Gto, GKr, GKs, GK1, GNCX, and PNaK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Methodological decision based on sensitivity analysis and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "d14b7de7-6767-4eee-afda-6e1169c8badf",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C22",
+      "claim": "The neural network was trained for a total number of 5000 epochs using the ADAM algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural network was trained for a total number of 5000 epochs using the first-order gradient-based algorithm ADAM Kingma and Ba, 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Training methodology with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "3797f443-abd7-40b4-ba0c-a03f504d2895",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C24",
+      "claim": "The simulation of a single action potential sampled at 20 kHz took 293 seconds on one core of an AMD Ryzen Threadripper 2990 WX in CARPentry.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulation of a single AP (see Simulator) sampled at a resolution of 20 kHZ took 293 s on one core of a AMD Ryzen Threadripper 2990 WX (clock rate: 3.0 GHZ) in CARPentry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured computational performance data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "f6500f9c-917b-427c-b26b-3107d932c350",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C25",
+      "claim": "Adaptive timestep solvers can significantly lower the simulation time to 30 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptive timestep solver of variable order, such as implemented in Myokit (Clerx et al., 2016), can significantly lower the simulation time (30 s for our setup) by using small step sizes close to the depolarization (phase 0) and increasing the time step in all other phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured computational performance data with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "0ad325dd-0b68-4346-8111-4b1584785a23",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C29",
+      "claim": "Data set #2 consisted of 100 control data pairs and 10,000 drug data pairs with no samples excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "No sample was excluded and thus, the data set consisted of 100 control data pairs and 10,000 drug data pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific data about the synthetic test dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "507edd91-f2a1-4697-83cb-8c0d65670658",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C31",
+      "claim": "Experimental action potentials were recorded in small right ventricular trabeculae and papillary tissue preparations isolated from healthy human hearts.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experimental data set, APs were recorded in small right ventricular trabeculae and papillary tissue preparations that were isolated from healthy human hearts (Orvos, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental data source with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "40b2cba5-e9fb-4be0-b2a7-c7f394446a04",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C32",
+      "claim": "The hearts were obtained from organ donors whose hearts were explanted to obtain pulmonary and aortic valves for transplant surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "The hearts were obtained from organ donors whose hearts were explanted to obtain pulmonary and aortic valves for transplant surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental tissue source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "1072884a-21ef-4979-bcc7-9fe580902540",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C33",
+      "claim": "All experimental measurements were performed at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The conventional microelectrode technique was used for AP recordings and all measurements were carried out at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental condition specification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "096ee014-ec42-41d8-ba00-fdfbe43c031d",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C36",
+      "claim": "Seven experimental data pairs were excluded because biomarker values were not in the range found in the training data.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairs were excluded if the biomarker values (see AP biomarkers and abnormalities) of the control or the drugged AP were not in the range found in the training data (see Training). This applied to seven pairs and the final data set contained three pairs for cisapride, dofetilide, sotalol, and terfenadine, and one pair for verapamil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data exclusion criteria and resulting dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "446c630c-168a-441b-8a3a-b9d1dc4ff251",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C37",
+      "claim": "The final experimental data set contained three pairs for cisapride, dofetilide, sotalol, and terfenadine, and one pair for verapamil.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairs were excluded if the biomarker values (see AP biomarkers and abnormalities) of the control or the drugged AP were not in the range found in the training data (see Training). This applied to seven pairs and the final data set contained three pairs for cisapride, dofetilide, sotalol, and terfenadine, and one pair for verapamil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific data about final experimental dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "5e585d00-f9f7-4e3c-bb3c-f51a03027243",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C38",
+      "claim": "The average RMSE over all normal action potentials in data set #2 was 0.47 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The average RMSE over all APs was 0.47 mV and only for a few APs the RMSE was >1 mV with 1.5 mV being the maximum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from forward problem evaluation shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "5d67c992-9f04-4897-a1de-d49f646aa649",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C39",
+      "claim": "The maximum RMSE for normal action potentials in data set #2 was 1.5 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The average RMSE over all APs was 0.47 mV and only for a few APs the RMSE was >1 mV with 1.5 mV being the maximum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from forward problem evaluation shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "d939e922-cc1d-4079-a8d0-ef180b42d012",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C40",
+      "claim": "104 action potentials from data set #2 were emulated in 0.6 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "In total 104 APs were emulated in 0.6 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured computational performance for forward problem.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "29308e76-6a58-48ff-8108-83a54cd697be",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C41",
+      "claim": "The emulator achieved 72.5% sensitivity in detecting early afterdepolarizations.",
+      "claim_type": "EXPLICIT",
+      "source": "The emulations achieved 72.5% sensitivity (EAD cases correctly classified) and 94.9% specificity (non-EAD cases correctly classified), with an overall acurracy of 90.8% (total samples correctly classified).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative classification performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "9df6c828-3b3a-4a2a-af12-73a449be5322",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C42",
+      "claim": "The emulator achieved 94.9% specificity in detecting early afterdepolarizations.",
+      "claim_type": "EXPLICIT",
+      "source": "The emulations achieved 72.5% sensitivity (EAD cases correctly classified) and 94.9% specificity (non-EAD cases correctly classified), with an overall acurracy of 90.8% (total samples correctly classified).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative classification performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "4debbf77-be3f-45f9-b3cc-8c45d7095e56",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C43",
+      "claim": "The emulator achieved 90.8% overall accuracy in classifying early afterdepolarizations.",
+      "claim_type": "EXPLICIT",
+      "source": "The emulations achieved 72.5% sensitivity (EAD cases correctly classified) and 94.9% specificity (non-EAD cases correctly classified), with an overall acurracy of 90.8% (total samples correctly classified).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative classification performance metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "21efd0f2-5870-4302-b1e0-ceb849e18132",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C44",
+      "claim": "The average RMSE over all EAD action potentials was 14.5 mV with 37.1 mV being the maximum.",
+      "claim_type": "EXPLICIT",
+      "source": "The average RMSE over all EAD APs was 14.5 mV with 37.1 mV being the maximum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from forward problem evaluation on EAD APs shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "45c57ff9-dd82-4d38-8cc7-baced8e42d10",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C45",
+      "claim": "The emulation of all 950 action potentials in data set #3 took 0.76 seconds on GPU.",
+      "claim_type": "EXPLICIT",
+      "source": "The emulation of all 950 APs took 0.76 s on the GPU specified in Training",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured computational performance for EAD dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "7c35ed6a-1246-4308-b3ea-0e3a42552a55",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C46",
+      "claim": "Control and drugged action potentials in the inverse problem on synthetic data could be fitted with an average RMSE of 0.8 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Control and drugged APs could be fitted with an average RMSE of 0.8 mV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative result from inverse problem evaluation on synthetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "8e0b9dcf-094c-4dc0-9daa-4b35c97868df",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C47",
+      "claim": "The inverse problem on synthetic data required 10^8 emulations taking approximately 3.5 hours on GPU.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we minimized (3) by using ADAM (Kingma and Ba, 2017) with no batching for 104 iterations for all 100 cardiomyocytes times 100 drugs (i.e. 104 APs), resulting in a total of 108 emulations, taking approximately 3.5 h on the GPU specified in Training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured computational performance for inverse problem.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "e55cd461-8049-4900-bafa-60d87b9f870d",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C50",
+      "claim": "The smallest RMSE in estimated pharmacological parameters was found for GKr.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the RMSEs increased from the control maximum conductance over the drugged maximum conductance to the pharmacological parameters and there were distinctive differences among maximum conductances and related pharmacological parameters with the smallest for GKr and the largest for GKs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative result from inverse problem evaluation shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "6936f204-3096-46fa-b288-da6db2a41e44",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C51",
+      "claim": "The largest RMSE in estimated pharmacological parameters was found for GKs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the RMSEs increased from the control maximum conductance over the drugged maximum conductance to the pharmacological parameters and there were distinctive differences among maximum conductances and related pharmacological parameters with the smallest for GKr and the largest for GKs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative result from inverse problem evaluation shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "993ae879-027a-47a6-b6a0-a78b2dbd7fb0",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C53",
+      "claim": "The total computational time for the inverse problem on experimental data was 2.8 hours on GPU.",
+      "claim_type": "EXPLICIT",
+      "source": "The total computational time spent on this task was 2.8 hr on the GPU specified in Training.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured computational performance for inverse problem on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "14059249-8ceb-4189-b478-2ed8736a918c",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C54",
+      "claim": "50% of the pharmacological parameters estimated from experimental data could be successfully estimated when compared to CiPA distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 50% of the pharmacological parameters could be estimated succesfully and while all pharmacological parameters related to GKs could be successfully estimated, unsuccessfully estimated parameters were found across all maximum conductances, in particular related to GK1 for which all pharmacological parameters could not be successfully estimated (Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative result from inverse problem evaluation on experimental data shown in Figure 10 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "f7315238-c725-424a-9eb1-dc431e31d780",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C55",
+      "claim": "All pharmacological parameters related to GKs estimated from experimental data were successfully estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 50% of the pharmacological parameters could be estimated succesfully and while all pharmacological parameters related to GKs could be successfully estimated, unsuccessfully estimated parameters were found across all maximum conductances, in particular related to GK1 for which all pharmacological parameters could not be successfully estimated (Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Specific result from inverse problem evaluation on experimental data shown in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "ca3713c6-9d53-4a5e-a514-f519af1a0f0f",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C56",
+      "claim": "All pharmacological parameters related to GK1 estimated from experimental data could not be successfully estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 50% of the pharmacological parameters could be estimated succesfully and while all pharmacological parameters related to GKs could be successfully estimated, unsuccessfully estimated parameters were found across all maximum conductances, in particular related to GK1 for which all pharmacological parameters could not be successfully estimated (Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Specific result from inverse problem evaluation on experimental data shown in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "31bcf833-a329-4d2f-b23a-130ab1a6cb50",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C57",
+      "claim": "The NN emulator demonstrates the capability of accounting for discontinuities, a major advantage over existing emulation strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates not only very fast and mostly very accurate AP emulations but also the capability of accounting for discontinuities, a major advantage over existing emulation strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the EAD emulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "8a79b17b-9595-4a76-bfa9-4df238a5a4aa",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C58",
+      "claim": "Inaccuracies in estimating pharmacological parameters from experimental data can be attributed to the fact that small tissue preparations were studied while the emulator was trained on single cardiomyocyte data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, notable mismatches were observed between pharmacological parameters estimated from experimental data and distributions obtained from the Comprehensive in vitro Proarrhythmia Assay initiative. This reveals larger inaccuracies which can be attributed particularly to the fact that small tissue preparations were studied while the emulator was trained on single cardiomyocyte data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about source of error based on methodological differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "839f7f33-c74c-4b04-b1fd-3f2fda7a1b63",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C59",
+      "claim": "Action potentials in small tissue preparations are slightly different from those in single cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The second and probably main reason for the inaccuracies may be the fact that the data were collected in small tissue preparations, whereas the emulator was trained on data generated by a simulator that represents single cardiomyocytes. APs in small tissue preparations are slightly different from those in single cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about tissue vs. single cell electrophysiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "c4102e82-2cff-41b2-a03b-09b246f4df4d",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C60",
+      "claim": "Differences between tissue and single cell action potentials can arise from electrotonic coupling and the mixture of cells including fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences can arise from electrotonic coupling and the mixture of cells including fibroblasts that are able to modify the EP (Kohl and Gourdie, 2014; Mayer et al., 2017; Hall et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "539f1ffe-a323-4445-8d61-0ec01db40a81",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C61",
+      "claim": "The emulator enables massive speed-ups compared to regular simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented NN emulator enables a massive speed-up compared to regular simulations and the evaluation for the forward problem on synthetic data showed also highly accurate AP emulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from computational performance measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "aeed8621-068f-43e1-8a33-c3db7b66b24d",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C62",
+      "claim": "The continuous nature of the emulator allows the action potential to be emulated and fitted at any desired resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the aforementioned strengths of the presented NN emulator, some further valuable features are worth mentioning that arise from the continuous nature of the emulator. First, the AP can be emulated and fitted at any desired resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about capability based on emulator architecture.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "7cfd9fb5-a701-455d-bc95-50fd345e386b",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C63",
+      "claim": "Timing offsets can be accounted for using t\u2080 in the optimization without retraining the emulator.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, timing offsets, for example between stimuli in the data to be fitted and the training data, can be accounted for using t0 in (3) without retraining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about capability based on emulator architecture and optimization formulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "643f1a2d-d536-488f-aeef-d799f0fac52e",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C65",
+      "claim": "The emulator has only maximum conductances as inputs, which is a limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Some limitations have to be considered. First, the emulator has only maximum conductances as inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged limitation of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "0713814d-a24a-4f19-8952-7afa6627b1df",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C66",
+      "claim": "Maximum conductances explain much of the action potential variability seen between cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these explain much of the AP variability seen between cardiomyocytes (Britton et al., 2013; Muszkiewicz et al., 2016), the inclusion of parameters related to the channel kinetics might enable a more detailed consideration of drug effects in pharmacological studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "e4b14de4-5158-4717-946c-e330de37c1a4",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C67",
+      "claim": "The interaction between drugs and their targets is solely captured through scaling of the related maximum conductance at control, which is an oversimplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the interaction between drugs and their targets is solely captured through scaling of the related maximum conductance at control, which is mostly adequate but in fact an oversimplification (Brennan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged limitation with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "c5fbc968-8f4c-4b5d-a7ce-76f850a28912",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C68",
+      "claim": "The inverse problem was only solved for action potential data obtained from one single stimulation protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the inverse problem was only solved for AP data obtained from one single stimulation protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged limitation of the study design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "7c772482-6ffc-4518-9333-83fea40b5e4d",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C69",
+      "claim": "Johnstone et al., 2016 showed that the usage of action potential data obtained from various stimulation protocols can improve parameter identifiability.",
+      "claim_type": "EXPLICIT",
+      "source": "Johnstone et al., 2016 have shown that the usage of AP data obtained from various stimulation protocols can improve the parameter identifiability and thus, the accuracy of parameter estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "79be8ee7-a6da-4d22-8f21-259938f03d1f",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C70",
+      "claim": "The number of drugs and concentrations considered in the inverse problem on experimental data poses a limitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Last but not least, the number of drugs and concentrations considered in the inverse problem on experimental data poses a limitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledged limitation of the study scope.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "8f3a9652-0197-42ca-ac14-1f5a7739318d",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C71",
+      "claim": "The presented approach can be straightforwardly applied to other transients such as intracellular [Ca2+] or sarcomere length.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the presented approach can also be straightforwardly applied to other transients, for example intracellular [Ca2+] or sarcomere length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential extensions of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "65d601d4-4021-4816-996e-b4cda01ad7e6",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C72",
+      "claim": "The computational cost of the NN emulator revealed a massive speed-up of more than 1e3 compared to the simulator.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational cost of the NN emulator was compared to that of the simulator, revealing a massive speed-up of more than 1e3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from computational performance measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "f45cb3d9-d280-4316-8983-dbcd986f0962",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C73",
+      "claim": "The accuracy of solving the forward problem on synthetic data was found to be high for normal action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of solving the forward problem on synthetic data was found to be high for normal APs and this hold mostly true for abnormal APs exhibiting EADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of results from forward problem evaluation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "41df951c-571f-40f3-bc31-db3d8d39bf9e",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C74",
+      "claim": "The accuracy of solving the forward problem on synthetic data held mostly true for abnormal action potentials exhibiting early afterdepolarizations.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of solving the forward problem on synthetic data was found to be high for normal APs and this hold mostly true for abnormal APs exhibiting EADs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of results from forward problem evaluation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "41ccf9f4-d9c1-4658-9058-e042e0a3f206",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C75",
+      "claim": "The accuracy of solving the inverse problem on synthetic data remained high.",
+      "claim_type": "EXPLICIT",
+      "source": "While larger inaccuracies were observed when utilizing experimental data \u2013 a limitation thoroughly discussed and particularly inherent to the fact that small tissue preparations were studied while the emulator was trained on single cardiomyocyte data \u2013 the accuracy of solving the inverse problem on synthetic data remained high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of results from inverse problem evaluation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "eee834df-d34f-46b6-93a8-ce16a2bbdc35",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "claim_id": "C76",
+      "claim": "These findings underscore the potential of NN emulators in improving the efficiency of future quantitative systems pharmacology studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these findings underscore the potential of NN emulators in improving the efficiency of future quantitative systems pharmacology studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overall conclusion drawn from all results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7ae02a84-ee1b-427e-af5e-d6aa8e1b7ef7",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a neural network emulator trained on 31,908 action potential simulations generated using the ToR-ORd-dynCl simulator with 9 maximum conductance parameters as inputs (GNa, GNaL, PCa, Gto, GKr, GKs, GK1, GNCX, PNaK). Training used 40,000 Sobol' sequence samples with 1000 stimuli per parameter set to reach steady state, trained for 5000 epochs using ADAM optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C14, C15, C17, C19, and C22 provide comprehensive methodological details about simulator selection, data generation, training/validation split, input selection, and training procedure. These are well-documented with appropriate citations and specific quantitative details that enable reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "f5a55843-ffff-4224-9b59-6ba84dd7846d",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The neural network emulator achieved a massive computational speed-up of more than 1000\u00d7 compared to the simulator, with single AP emulation taking 1.2 ms on GPU versus 293 seconds (or 30 seconds with adaptive timestep) for simulation. The emulator processed 104 APs in 0.6 seconds and 950 APs in 0.76 seconds, enabling efficient inverse problem solving that required 10^8 emulations in 3.5 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C40, C45, C47, C53, C61, and C72 provide consistent computational performance measurements across different hardware configurations and problem types. The speed-up claims are well-supported by direct timing comparisons, though the exact speed-up depends on simulation parameters (number of beats to steady state, time resolution).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "44bb07f9-2314-4f23-adb1-c596cf894b77",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For the forward problem on normal action potentials (data set #2), the emulator achieved high accuracy with an average RMSE of 0.47 mV and maximum RMSE of 1.5 mV across 104 test cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C39, and C73 are directly supported by quantitative results shown in Figure 5. The RMSE values are specific and consistent, demonstrating high emulation accuracy for normal APs. The evaluation is straightforward and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "0f9a8178-4fac-4472-8dd3-f3d5df60d8ab",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For abnormal action potentials exhibiting early afterdepolarizations (EADs), the emulator achieved 72.5% sensitivity, 94.9% specificity, and 90.8% overall accuracy in EAD classification, with an average RMSE of 14.5 mV (maximum 37.1 mV) among EAD APs. This demonstrates the emulator's capability to account for discontinuities, a major advantage over existing emulation strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44, C57, and C74 provide specific classification metrics and error measurements for EAD detection shown in Figure 7 and Appendix 3. The results demonstrate reasonable but imperfect performance on discontinuous behavior. The claim of advantage over existing methods (C57) is supported by the theoretical limitations of Gaussian processes (C10) and the empirical results, though direct comparative experiments were not performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "39f53b74-bd6a-4f68-a9c5-c662184efccf",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For the inverse problem on synthetic data, control and drugged APs could be fitted with an average RMSE of 0.8 mV, and pharmacological parameters were estimated with high accuracy (RMSE \u22640.22). The smallest RMSE was found for GKr and the largest for GKs, with RMSEs increasing from control to drugged maximum conductances to pharmacological parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C50, C51, and C75 are supported by quantitative results shown in Figure 8. The progressive increase in error from control to drug to scaling factors is explained by error propagation. The differential accuracy across parameters is attributed to varying parameter identifiability, which is reasonable and supported by sensitivity analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "96f335e2-1612-4f6e-b13e-f0ae17902399",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experimental data were collected from small right ventricular trabeculae and papillary tissue preparations from healthy human donor hearts at 37\u00b0C using conventional microelectrode technique. After excluding 7 pairs with biomarker values outside training data range, the final dataset contained 13 control-drug AP pairs across 5 drugs (cisapride, dofetilide, sotalol, terfenadine, verapamil).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C36-C37 provide clear documentation of experimental data sources, conditions, and exclusion criteria. The tissue source and experimental conditions are well-specified with appropriate ethical approvals. The exclusion criteria are reasonable given the emulator's training domain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "069ee4bf-1e11-44aa-954c-9745f85b5bf7",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "When applied to experimental data, 50% of pharmacological parameters could be successfully estimated when compared to CiPA distributions. All GKs-related parameters were successfully estimated, while all GK1-related parameters failed estimation, with unsuccessful estimates found across other conductances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by quantitative results in Figure 10 and Table 5. The 50% success rate and specific patterns of success/failure across different conductances are clearly documented. However, the success criterion (\u03bc \u00b1 (0.15 + \u03c3) of CiPA distribution) appears somewhat arbitrary and is not well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "0a1e8e8a-daa2-4227-ba17-038bf15eba83",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Inaccuracies in estimating pharmacological parameters from experimental data are attributed to the mismatch between small tissue preparations used experimentally and single cardiomyocyte data used for training. Action potentials in tissue preparations differ from single cells due to electrotonic coupling and cell mixture including fibroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 provide a reasonable explanation for the larger inaccuracies observed with experimental data. The tissue-vs-cell mismatch is well-established in the literature (C60 supported by citations). However, this represents a significant limitation that undermines the practical applicability of the approach, as most experimental data come from tissue preparations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "f3f0f615-05b3-4cd1-81b5-5256a9a758a0",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The continuous nature of the emulator enables action potential emulation at any desired resolution and allows accounting for timing offsets using t\u2080 in optimization without retraining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C63 are logical inferences from the emulator architecture described in the methods. The continuous time representation (neural network evaluating f_\u03d1(t)) inherently supports arbitrary temporal resolution and time shifting. These are valuable practical features, though not empirically demonstrated in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "82562e0a-491b-4662-8f68-4409828a5077",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study has several acknowledged limitations: (1) emulator inputs are restricted to maximum conductances, excluding channel kinetics parameters; (2) drug-target interactions are oversimplified as conductance scaling; (3) only single stimulation protocol data were used; (4) limited number of drugs and concentrations in experimental validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 represent honest acknowledgment of study limitations. Each limitation is well-articulated with supporting citations (C66, C67, C69). The authors appropriately identify these as areas for future work. These limitations are significant and affect the generalizability and practical applicability of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "3f08e1f6-36d4-46fa-a609-77424d900820",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes that cardiomyocyte models have matured for pharmaceutical applications, particularly in CiPA for proarrhythmia assessment. Existing Gaussian process emulators cannot capture discontinuities, while neural networks theoretically can approximate discontinuous functions, motivating the current approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 provide appropriate background context supported by relevant citations. The motivation for using neural networks over Gaussian processes is well-established through theoretical (C11) and practical (C10) considerations. This background appropriately frames the study's contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "fd59075b-3619-459a-bfe6-146d03b27ccd",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Synthetic test data set #2 for normal APs consisted of 100 control data pairs and 10,000 drug data pairs with no samples excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 provides specific information about the test dataset composition. The data generation procedure is clearly described in the methods, and the lack of exclusions indicates the synthetic drugs produced physiologically plausible APs within the training domain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "1fbc9000-c657-4440-ac5a-5340e685a788",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The presented approach can be straightforwardly applied to other transients such as intracellular [Ca2+] or sarcomere length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is speculative about potential extensions. While the general neural network approach could theoretically be applied to other time series outputs, no evidence is provided that this would be 'straightforward.' Different transients may have different characteristics (e.g., different timescales, coupling to other variables) that could affect emulator performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "4b21f431-69ec-4156-b59a-f663ea633a17",
+      "content_id": "e0453afe-b433-427e-a85a-b0f931f6c261",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings underscore the potential of neural network emulators in improving the efficiency of future quantitative systems pharmacology studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 represents the overall conclusion. It is supported by the demonstrated speed-ups (C72) and reasonable accuracy on synthetic data (C38-C51, C73-C75). However, the significant limitations with experimental data (C54-C60) and acknowledged methodological constraints (C65-C70) suggest the potential is qualified rather than fully realized. The claim is appropriately cautious ('potential,' 'improving efficiency') rather than overstating the current capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "063a4688-3397-4b94-9cf1-6f9dea828e9d",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The neural network emulator achieves massive computational speedup (>1000\u00d7) compared to traditional biophysical simulations. Single AP simulation took 293s (or 30s with adaptive solvers), while emulation of 104 APs took 0.6s, and inverse problem solving on synthetic data required 3.5 hours for 10^8 emulations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge the computational speedup as a strength. One reviewer notes 'The training speed of the network is encouraging' and another states the speedup 'will enable studies that would be difficult to carry out previously.' The editor summary describes the evidence as 'convincing.' While one reviewer notes the speedup is 'context-dependent' and 'relatively marginal when a single beat is simulated,' they acknowledge this was 'addressed well by the authors in the revised version.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "4c538e60-eaee-4cd3-9feb-e02256d0d8bb",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The emulator achieves high accuracy for normal action potentials on synthetic data, with average RMSE of 0.47 mV and maximum RMSE of 1.5 mV across 104 test cases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding. The editor states 'The evidence supporting the conclusions is convincing, based on using a large and high-quality dataset.' One reviewer notes 'the evaluation for the forward problem on synthetic data showed also highly accurate AP emulations' and describes the study as 'well-designed.' Another reviewer highlights 'One of the study's major strengths is that the authors use a large and high-quality dataset to train their neural network emulator.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The emulator can handle discontinuous action potentials with early afterdepolarizations (EADs), achieving 72.5% sensitivity, 94.9% specificity, and 90.8% overall accuracy in classification, though with higher RMSE (average 14.5 mV, max 37.1 mV) than normal APs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this capability as a key strength. One reviewer states 'This demonstrates not only very fast and mostly very accurate AP emulations but also the capability of accounting for discontinuities, a major advantage over existing emulation strategies.' The editor notes the work demonstrates 'performance in prediction of standard action potentials, as well as action potentials manifesting early depolarizations.' While accuracy is lower for EADs than normal APs, reviewers do not challenge the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "2d61166b-dda3-4206-8d04-360daadd6f48",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The inverse problem on synthetic data achieves high accuracy, with control and drugged APs fitted at average RMSE of 0.8 mV. Parameter estimation accuracy varies by conductance, with smallest errors for GKr and largest for GKs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these synthetic data results without challenge. One reviewer notes 'the accuracy of solving the inverse problem on synthetic data remained high.' The editor describes the evidence as 'convincing.' While reviewers express concerns about experimental data results (see separate result), they do not question the synthetic data performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "31161ff8-1a5f-4db8-93c7-1b332b60908b",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "When applied to experimental data from human tissue preparations, only 50% of pharmacological parameters could be successfully estimated. All GKs parameters were successfully estimated, but all GK1 parameters failed. The authors attribute inaccuracies to the mismatch between training on single-cell data and testing on tissue preparations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express significant concerns about these results while acknowledging the authors' transparency. One reviewer states 'the accuracy of emulation drops off relatively sharply with increasing real-world applicability/relevance' and notes 'I particularly enjoyed the discussion of the not always amazing results of the inverse problem on the experimental data.' Another reviewer identifies this as a weakness: 'the estimation of pharmacological parameters very challenging and led to particularly large inaccuracies.' The editor recommends 'validating the neural network emulators against extensive experimental data.' Reviewers question whether tissue-cell differences fully explain the discrepancies.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "ffc14ba2-bc66-4a5d-a060-b2d57bc9dbff",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Neural networks can handle discontinuities in the response surface, unlike Gaussian process emulators, providing a theoretical advantage for emulating action potentials with early afterdepolarizations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this theoretical advantage and its practical demonstration. One reviewer explicitly states this 'demonstrates...the capability of accounting for discontinuities, a major advantage over existing emulation strategies.' The claims about GP limitations and NN capabilities are supported by citations and are not challenged by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "cea6797a-f508-4624-98aa-19cd74e32297",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The emulator was trained using the ToR-ORd-dynCl simulator with 40,000 Sobol-sampled maximum conductance combinations (9 inputs: GNa, GNaL, PCa, Gto, GKr, GKs, GK1, GNCX, PNaK), with 1000 stimuli applied to reach steady state, using 80/20 train-validation split and 5000 ADAM training epochs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly commend the methodological transparency. One reviewer states 'I particularly commend the authors on transparency of methods description, code sharing, etc. - it feels rather exemplary in this regard.' The editor notes the work uses 'a large and high-quality dataset to train the neural network emulator.' No reviewer challenges the training methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "ddd69e5e-0ba3-4560-b5d9-368107746516",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Experimental validation used action potentials recorded from human right ventricular trabeculae and papillary tissue at 37\u00b0C, with 7 pairs excluded due to biomarker values outside training range, leaving 13 drug-control pairs across 5 drugs (cisapride, dofetilide, sotalol, terfenadine, verapamil).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express concern about the limited experimental validation. The editor states the article 'may be improved through validating the neural network emulators against extensive experimental data.' One reviewer notes 'the number of drugs and concentrations considered in the inverse problem on experimental data poses a limitation.' While reviewers do not challenge the data description itself, they indicate more extensive validation is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "a52e3005-dbdb-4922-a0f5-014b933bc781",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The continuous nature of the emulator enables flexible features including emulation at any desired resolution and accounting for timing offsets without retraining.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these claimed capabilities. One reviewer notes the emulator could have 'interesting applications' in various settings and describes the work as exploring 'something that many of us are thinking about.' These architectural features are presented as inferences from the design and are not disputed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "1e0762e4-777a-4e8e-bf78-bade9a893add",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The study has several acknowledged limitations: emulator inputs limited to maximum conductances (not channel kinetics), drug effects captured only through conductance scaling (oversimplification), single stimulation protocol used (multiple protocols could improve identifiability), and limited number of drugs/concentrations in experimental validation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly commend the authors' transparency about limitations. One reviewer states 'the authors are to be commended on declaring this transparently, rather than withholding such analyses.' Another notes 'The point on low parameter identifiability is an important one, and serves as a warning against overconfidence in our ability to infer cellular parameters from action potentials alone.' Reviewers agree these are genuine limitations but appreciate the honest discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "8a841c72-8ee8-45a7-8634-b7740936fbf0",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Background context establishing that cardiac cell models have matured for pharmaceutical applications, CiPA initiative uses computational models for drug assessment, and previous work has estimated pharmacological parameters from action potential data, though uncertainty from variability and measurement error must be considered.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are citation-supported contextual statements that reviewers do not challenge. One reviewer notes the work 'explores an area that many in the cardiac simulation community will be interested in' and another states it 'has the potential to revolutionize the way that pharmacological studies are conducted,' implicitly accepting the background context. The editor describes the work as being 'of broad interest to scientists working in cardiac simulation and quantitative system pharmacology.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "8fbe1e11-1c32-441f-a035-ff1080955561",
+      "content_id": "119e015c-c9d3-4c89-925d-5d601db4b0be",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "The approach could potentially be applied to other transients (intracellular Ca2+, sarcomere length) and has potential to improve efficiency of future quantitative systems pharmacology studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these forward-looking statements about potential applications. One reviewer notes the technology 'is likely to stimulate further development in the direction of computationally efficient emulation' and states 'I can imagine interesting applications of rapid emulation in such a setting.' Another reviewer states the work 'has the potential to revolutionize the way that pharmacological studies are conducted' and 'is likely to become a valuable tool for drug discovery and development.' While these are speculative claims, reviewers view them as reasonable given the demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32f2e8d4-e052-48a8-b1cb-07b4fac04f14",
+      "result_id": "7ae02a84-ee1b-427e-af5e-d6aa8e1b7ef7"
+    },
+    {
+      "claim_id": "701dbd0a-6430-46a2-b848-3eff89af4304",
+      "result_id": "7ae02a84-ee1b-427e-af5e-d6aa8e1b7ef7"
+    },
+    {
+      "claim_id": "d27987b8-80c5-44b1-844b-88fe8269a88b",
+      "result_id": "7ae02a84-ee1b-427e-af5e-d6aa8e1b7ef7"
+    },
+    {
+      "claim_id": "2f61ec2e-86be-48d6-8169-d1cba8c8898b",
+      "result_id": "7ae02a84-ee1b-427e-af5e-d6aa8e1b7ef7"
+    },
+    {
+      "claim_id": "7b87c074-6b66-4fa7-abe7-5d047d4d4cfa",
+      "result_id": "7ae02a84-ee1b-427e-af5e-d6aa8e1b7ef7"
+    },
+    {
+      "claim_id": "d14b7de7-6767-4eee-afda-6e1169c8badf",
+      "result_id": "7ae02a84-ee1b-427e-af5e-d6aa8e1b7ef7"
+    },
+    {
+      "claim_id": "3797f443-abd7-40b4-ba0c-a03f504d2895",
+      "result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d"
+    },
+    {
+      "claim_id": "f6500f9c-917b-427c-b26b-3107d932c350",
+      "result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d"
+    },
+    {
+      "claim_id": "d939e922-cc1d-4079-a8d0-ef180b42d012",
+      "result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d"
+    },
+    {
+      "claim_id": "45c57ff9-dd82-4d38-8cc7-baced8e42d10",
+      "result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d"
+    },
+    {
+      "claim_id": "8e0b9dcf-094c-4dc0-9daa-4b35c97868df",
+      "result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d"
+    },
+    {
+      "claim_id": "993ae879-027a-47a6-b6a0-a78b2dbd7fb0",
+      "result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d"
+    },
+    {
+      "claim_id": "539f1ffe-a323-4445-8d61-0ec01db40a81",
+      "result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d"
+    },
+    {
+      "claim_id": "65d601d4-4021-4816-996e-b4cda01ad7e6",
+      "result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d"
+    },
+    {
+      "claim_id": "5e585d00-f9f7-4e3c-bb3c-f51a03027243",
+      "result_id": "44bb07f9-2314-4f23-adb1-c596cf894b77"
+    },
+    {
+      "claim_id": "5d67c992-9f04-4897-a1de-d49f646aa649",
+      "result_id": "44bb07f9-2314-4f23-adb1-c596cf894b77"
+    },
+    {
+      "claim_id": "f45cb3d9-d280-4316-8983-dbcd986f0962",
+      "result_id": "44bb07f9-2314-4f23-adb1-c596cf894b77"
+    },
+    {
+      "claim_id": "29308e76-6a58-48ff-8108-83a54cd697be",
+      "result_id": "0f9a8178-4fac-4472-8dd3-f3d5df60d8ab"
+    },
+    {
+      "claim_id": "9df6c828-3b3a-4a2a-af12-73a449be5322",
+      "result_id": "0f9a8178-4fac-4472-8dd3-f3d5df60d8ab"
+    },
+    {
+      "claim_id": "4debbf77-be3f-45f9-b3cc-8c45d7095e56",
+      "result_id": "0f9a8178-4fac-4472-8dd3-f3d5df60d8ab"
+    },
+    {
+      "claim_id": "21efd0f2-5870-4302-b1e0-ceb849e18132",
+      "result_id": "0f9a8178-4fac-4472-8dd3-f3d5df60d8ab"
+    },
+    {
+      "claim_id": "31bcf833-a329-4d2f-b23a-130ab1a6cb50",
+      "result_id": "0f9a8178-4fac-4472-8dd3-f3d5df60d8ab"
+    },
+    {
+      "claim_id": "41df951c-571f-40f3-bc31-db3d8d39bf9e",
+      "result_id": "0f9a8178-4fac-4472-8dd3-f3d5df60d8ab"
+    },
+    {
+      "claim_id": "7c35ed6a-1246-4308-b3ea-0e3a42552a55",
+      "result_id": "39f53b74-bd6a-4f68-a9c5-c662184efccf"
+    },
+    {
+      "claim_id": "e55cd461-8049-4900-bafa-60d87b9f870d",
+      "result_id": "39f53b74-bd6a-4f68-a9c5-c662184efccf"
+    },
+    {
+      "claim_id": "6936f204-3096-46fa-b288-da6db2a41e44",
+      "result_id": "39f53b74-bd6a-4f68-a9c5-c662184efccf"
+    },
+    {
+      "claim_id": "41ccf9f4-d9c1-4658-9058-e042e0a3f206",
+      "result_id": "39f53b74-bd6a-4f68-a9c5-c662184efccf"
+    },
+    {
+      "claim_id": "507edd91-f2a1-4697-83cb-8c0d65670658",
+      "result_id": "96f335e2-1612-4f6e-b13e-f0ae17902399"
+    },
+    {
+      "claim_id": "40b2cba5-e9fb-4be0-b2a7-c7f394446a04",
+      "result_id": "96f335e2-1612-4f6e-b13e-f0ae17902399"
+    },
+    {
+      "claim_id": "1072884a-21ef-4979-bcc7-9fe580902540",
+      "result_id": "96f335e2-1612-4f6e-b13e-f0ae17902399"
+    },
+    {
+      "claim_id": "096ee014-ec42-41d8-ba00-fdfbe43c031d",
+      "result_id": "96f335e2-1612-4f6e-b13e-f0ae17902399"
+    },
+    {
+      "claim_id": "446c630c-168a-441b-8a3a-b9d1dc4ff251",
+      "result_id": "96f335e2-1612-4f6e-b13e-f0ae17902399"
+    },
+    {
+      "claim_id": "14059249-8ceb-4189-b478-2ed8736a918c",
+      "result_id": "069ee4bf-1e11-44aa-954c-9745f85b5bf7"
+    },
+    {
+      "claim_id": "f7315238-c725-424a-9eb1-dc431e31d780",
+      "result_id": "069ee4bf-1e11-44aa-954c-9745f85b5bf7"
+    },
+    {
+      "claim_id": "ca3713c6-9d53-4a5e-a514-f519af1a0f0f",
+      "result_id": "069ee4bf-1e11-44aa-954c-9745f85b5bf7"
+    },
+    {
+      "claim_id": "8a79b17b-9595-4a76-bfa9-4df238a5a4aa",
+      "result_id": "0a1e8e8a-daa2-4227-ba17-038bf15eba83"
+    },
+    {
+      "claim_id": "839f7f33-c74c-4b04-b1fd-3f2fda7a1b63",
+      "result_id": "0a1e8e8a-daa2-4227-ba17-038bf15eba83"
+    },
+    {
+      "claim_id": "c4102e82-2cff-41b2-a03b-09b246f4df4d",
+      "result_id": "0a1e8e8a-daa2-4227-ba17-038bf15eba83"
+    },
+    {
+      "claim_id": "aeed8621-068f-43e1-8a33-c3db7b66b24d",
+      "result_id": "f3f0f615-05b3-4cd1-81b5-5256a9a758a0"
+    },
+    {
+      "claim_id": "7cfd9fb5-a701-455d-bc95-50fd345e386b",
+      "result_id": "f3f0f615-05b3-4cd1-81b5-5256a9a758a0"
+    },
+    {
+      "claim_id": "643f1a2d-d536-488f-aeef-d799f0fac52e",
+      "result_id": "82562e0a-491b-4662-8f68-4409828a5077"
+    },
+    {
+      "claim_id": "0713814d-a24a-4f19-8952-7afa6627b1df",
+      "result_id": "82562e0a-491b-4662-8f68-4409828a5077"
+    },
+    {
+      "claim_id": "e4b14de4-5158-4717-946c-e330de37c1a4",
+      "result_id": "82562e0a-491b-4662-8f68-4409828a5077"
+    },
+    {
+      "claim_id": "c5fbc968-8f4c-4b5d-a7ce-76f850a28912",
+      "result_id": "82562e0a-491b-4662-8f68-4409828a5077"
+    },
+    {
+      "claim_id": "7c772482-6ffc-4518-9333-83fea40b5e4d",
+      "result_id": "82562e0a-491b-4662-8f68-4409828a5077"
+    },
+    {
+      "claim_id": "79be8ee7-a6da-4d22-8f21-259938f03d1f",
+      "result_id": "82562e0a-491b-4662-8f68-4409828a5077"
+    },
+    {
+      "claim_id": "d4a3e0ac-c81b-47c6-853d-e235458fd072",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "461906c0-2abc-4ae5-8491-52c633309449",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "42270c50-6558-4cef-875d-2b8a59a24118",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "8ac5ad68-e6a8-45b6-ad94-8a0ec58aaa00",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "d1aa2b00-389e-4245-8e78-f3cab7538f13",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "02b47328-1f8b-4e2c-a317-ab99598562de",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "c1d7b34f-fbdb-4360-ad3a-0379d7ccf9f8",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "46424a37-09f6-418d-8da2-26a386d39cde",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "9f02782b-0702-479d-9bab-78fa06bd4575",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "00cbe2ee-6b27-4140-97cd-0f010ad5da5a",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "48068bfc-bbf3-4e16-ae0c-b457ca4f24a6",
+      "result_id": "3f08e1f6-36d4-46fa-a609-77424d900820"
+    },
+    {
+      "claim_id": "0ad325dd-0b68-4346-8111-4b1584785a23",
+      "result_id": "fd59075b-3619-459a-bfe6-146d03b27ccd"
+    },
+    {
+      "claim_id": "8f3a9652-0197-42ca-ac14-1f5a7739318d",
+      "result_id": "1fbc9000-c657-4440-ac5a-5340e685a788"
+    },
+    {
+      "claim_id": "eee834df-d34f-46b6-93a8-ce16a2bbdc35",
+      "result_id": "4b21f431-69ec-4156-b59a-f663ea633a17"
+    },
+    {
+      "claim_id": "3797f443-abd7-40b4-ba0c-a03f504d2895",
+      "result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d"
+    },
+    {
+      "claim_id": "f6500f9c-917b-427c-b26b-3107d932c350",
+      "result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d"
+    },
+    {
+      "claim_id": "d939e922-cc1d-4079-a8d0-ef180b42d012",
+      "result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d"
+    },
+    {
+      "claim_id": "45c57ff9-dd82-4d38-8cc7-baced8e42d10",
+      "result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d"
+    },
+    {
+      "claim_id": "8e0b9dcf-094c-4dc0-9daa-4b35c97868df",
+      "result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d"
+    },
+    {
+      "claim_id": "993ae879-027a-47a6-b6a0-a78b2dbd7fb0",
+      "result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d"
+    },
+    {
+      "claim_id": "539f1ffe-a323-4445-8d61-0ec01db40a81",
+      "result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d"
+    },
+    {
+      "claim_id": "65d601d4-4021-4816-996e-b4cda01ad7e6",
+      "result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d"
+    },
+    {
+      "claim_id": "5e585d00-f9f7-4e3c-bb3c-f51a03027243",
+      "result_id": "4c538e60-eaee-4cd3-9feb-e02256d0d8bb"
+    },
+    {
+      "claim_id": "5d67c992-9f04-4897-a1de-d49f646aa649",
+      "result_id": "4c538e60-eaee-4cd3-9feb-e02256d0d8bb"
+    },
+    {
+      "claim_id": "d939e922-cc1d-4079-a8d0-ef180b42d012",
+      "result_id": "4c538e60-eaee-4cd3-9feb-e02256d0d8bb"
+    },
+    {
+      "claim_id": "f45cb3d9-d280-4316-8983-dbcd986f0962",
+      "result_id": "4c538e60-eaee-4cd3-9feb-e02256d0d8bb"
+    },
+    {
+      "claim_id": "29308e76-6a58-48ff-8108-83a54cd697be",
+      "result_id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8"
+    },
+    {
+      "claim_id": "9df6c828-3b3a-4a2a-af12-73a449be5322",
+      "result_id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8"
+    },
+    {
+      "claim_id": "4debbf77-be3f-45f9-b3cc-8c45d7095e56",
+      "result_id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8"
+    },
+    {
+      "claim_id": "21efd0f2-5870-4302-b1e0-ceb849e18132",
+      "result_id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8"
+    },
+    {
+      "claim_id": "45c57ff9-dd82-4d38-8cc7-baced8e42d10",
+      "result_id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8"
+    },
+    {
+      "claim_id": "31bcf833-a329-4d2f-b23a-130ab1a6cb50",
+      "result_id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8"
+    },
+    {
+      "claim_id": "41df951c-571f-40f3-bc31-db3d8d39bf9e",
+      "result_id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8"
+    },
+    {
+      "claim_id": "7c35ed6a-1246-4308-b3ea-0e3a42552a55",
+      "result_id": "2d61166b-dda3-4206-8d04-360daadd6f48"
+    },
+    {
+      "claim_id": "8e0b9dcf-094c-4dc0-9daa-4b35c97868df",
+      "result_id": "2d61166b-dda3-4206-8d04-360daadd6f48"
+    },
+    {
+      "claim_id": "e55cd461-8049-4900-bafa-60d87b9f870d",
+      "result_id": "2d61166b-dda3-4206-8d04-360daadd6f48"
+    },
+    {
+      "claim_id": "6936f204-3096-46fa-b288-da6db2a41e44",
+      "result_id": "2d61166b-dda3-4206-8d04-360daadd6f48"
+    },
+    {
+      "claim_id": "41ccf9f4-d9c1-4658-9058-e042e0a3f206",
+      "result_id": "2d61166b-dda3-4206-8d04-360daadd6f48"
+    },
+    {
+      "claim_id": "14059249-8ceb-4189-b478-2ed8736a918c",
+      "result_id": "31161ff8-1a5f-4db8-93c7-1b332b60908b"
+    },
+    {
+      "claim_id": "f7315238-c725-424a-9eb1-dc431e31d780",
+      "result_id": "31161ff8-1a5f-4db8-93c7-1b332b60908b"
+    },
+    {
+      "claim_id": "ca3713c6-9d53-4a5e-a514-f519af1a0f0f",
+      "result_id": "31161ff8-1a5f-4db8-93c7-1b332b60908b"
+    },
+    {
+      "claim_id": "8a79b17b-9595-4a76-bfa9-4df238a5a4aa",
+      "result_id": "31161ff8-1a5f-4db8-93c7-1b332b60908b"
+    },
+    {
+      "claim_id": "839f7f33-c74c-4b04-b1fd-3f2fda7a1b63",
+      "result_id": "31161ff8-1a5f-4db8-93c7-1b332b60908b"
+    },
+    {
+      "claim_id": "c4102e82-2cff-41b2-a03b-09b246f4df4d",
+      "result_id": "31161ff8-1a5f-4db8-93c7-1b332b60908b"
+    },
+    {
+      "claim_id": "00cbe2ee-6b27-4140-97cd-0f010ad5da5a",
+      "result_id": "ffc14ba2-bc66-4a5d-a060-b2d57bc9dbff"
+    },
+    {
+      "claim_id": "48068bfc-bbf3-4e16-ae0c-b457ca4f24a6",
+      "result_id": "ffc14ba2-bc66-4a5d-a060-b2d57bc9dbff"
+    },
+    {
+      "claim_id": "31bcf833-a329-4d2f-b23a-130ab1a6cb50",
+      "result_id": "ffc14ba2-bc66-4a5d-a060-b2d57bc9dbff"
+    },
+    {
+      "claim_id": "32f2e8d4-e052-48a8-b1cb-07b4fac04f14",
+      "result_id": "cea6797a-f508-4624-98aa-19cd74e32297"
+    },
+    {
+      "claim_id": "701dbd0a-6430-46a2-b848-3eff89af4304",
+      "result_id": "cea6797a-f508-4624-98aa-19cd74e32297"
+    },
+    {
+      "claim_id": "d27987b8-80c5-44b1-844b-88fe8269a88b",
+      "result_id": "cea6797a-f508-4624-98aa-19cd74e32297"
+    },
+    {
+      "claim_id": "2f61ec2e-86be-48d6-8169-d1cba8c8898b",
+      "result_id": "cea6797a-f508-4624-98aa-19cd74e32297"
+    },
+    {
+      "claim_id": "7b87c074-6b66-4fa7-abe7-5d047d4d4cfa",
+      "result_id": "cea6797a-f508-4624-98aa-19cd74e32297"
+    },
+    {
+      "claim_id": "d14b7de7-6767-4eee-afda-6e1169c8badf",
+      "result_id": "cea6797a-f508-4624-98aa-19cd74e32297"
+    },
+    {
+      "claim_id": "507edd91-f2a1-4697-83cb-8c0d65670658",
+      "result_id": "ddd69e5e-0ba3-4560-b5d9-368107746516"
+    },
+    {
+      "claim_id": "40b2cba5-e9fb-4be0-b2a7-c7f394446a04",
+      "result_id": "ddd69e5e-0ba3-4560-b5d9-368107746516"
+    },
+    {
+      "claim_id": "1072884a-21ef-4979-bcc7-9fe580902540",
+      "result_id": "ddd69e5e-0ba3-4560-b5d9-368107746516"
+    },
+    {
+      "claim_id": "096ee014-ec42-41d8-ba00-fdfbe43c031d",
+      "result_id": "ddd69e5e-0ba3-4560-b5d9-368107746516"
+    },
+    {
+      "claim_id": "446c630c-168a-441b-8a3a-b9d1dc4ff251",
+      "result_id": "ddd69e5e-0ba3-4560-b5d9-368107746516"
+    },
+    {
+      "claim_id": "aeed8621-068f-43e1-8a33-c3db7b66b24d",
+      "result_id": "a52e3005-dbdb-4922-a0f5-014b933bc781"
+    },
+    {
+      "claim_id": "7cfd9fb5-a701-455d-bc95-50fd345e386b",
+      "result_id": "a52e3005-dbdb-4922-a0f5-014b933bc781"
+    },
+    {
+      "claim_id": "643f1a2d-d536-488f-aeef-d799f0fac52e",
+      "result_id": "1e0762e4-777a-4e8e-bf78-bade9a893add"
+    },
+    {
+      "claim_id": "0713814d-a24a-4f19-8952-7afa6627b1df",
+      "result_id": "1e0762e4-777a-4e8e-bf78-bade9a893add"
+    },
+    {
+      "claim_id": "e4b14de4-5158-4717-946c-e330de37c1a4",
+      "result_id": "1e0762e4-777a-4e8e-bf78-bade9a893add"
+    },
+    {
+      "claim_id": "c5fbc968-8f4c-4b5d-a7ce-76f850a28912",
+      "result_id": "1e0762e4-777a-4e8e-bf78-bade9a893add"
+    },
+    {
+      "claim_id": "7c772482-6ffc-4518-9333-83fea40b5e4d",
+      "result_id": "1e0762e4-777a-4e8e-bf78-bade9a893add"
+    },
+    {
+      "claim_id": "79be8ee7-a6da-4d22-8f21-259938f03d1f",
+      "result_id": "1e0762e4-777a-4e8e-bf78-bade9a893add"
+    },
+    {
+      "claim_id": "d4a3e0ac-c81b-47c6-853d-e235458fd072",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "461906c0-2abc-4ae5-8491-52c633309449",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "42270c50-6558-4cef-875d-2b8a59a24118",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "8ac5ad68-e6a8-45b6-ad94-8a0ec58aaa00",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "d1aa2b00-389e-4245-8e78-f3cab7538f13",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "02b47328-1f8b-4e2c-a317-ab99598562de",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "c1d7b34f-fbdb-4360-ad3a-0379d7ccf9f8",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "46424a37-09f6-418d-8da2-26a386d39cde",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "9f02782b-0702-479d-9bab-78fa06bd4575",
+      "result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0"
+    },
+    {
+      "claim_id": "8f3a9652-0197-42ca-ac14-1f5a7739318d",
+      "result_id": "8fbe1e11-1c32-441f-a035-ff1080955561"
+    },
+    {
+      "claim_id": "eee834df-d34f-46b6-93a8-ce16a2bbdc35",
+      "result_id": "8fbe1e11-1c32-441f-a035-ff1080955561"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "17349ea9-2dc4-4356-862a-3389c5fb0229",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f5a55843-ffff-4224-9b59-6ba84dd7846d",
+      "peer_result_id": "063a4688-3397-4b94-9cf1-6f9dea828e9d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on computational speedup claims (C24, C25, C40, C45, C47, C53, C61, C72). Both evaluations find the evidence convincing and supported. OpenEval notes context-dependency of speedup, which peer reviewers also acknowledge but consider adequately addressed by authors.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "1336c437-8619-4f1f-8919-ee5202237172",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "7ae02a84-ee1b-427e-af5e-d6aa8e1b7ef7",
+      "peer_result_id": "cea6797a-f508-4624-98aa-19cd74e32297",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on methodological transparency and training procedures (C12, C14, C15, C17, C19, C22). Both evaluations commend the detailed documentation and reproducibility. Peer reviewers explicitly praise the 'exemplary' transparency and code sharing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "fee3325f-a168-42b9-86ae-01dfcfb36a85",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "44bb07f9-2314-4f23-adb1-c596cf894b77",
+      "peer_result_id": "4c538e60-eaee-4cd3-9feb-e02256d0d8bb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on high accuracy for normal action potentials (C38, C39, C73). Both evaluations find the synthetic data results well-supported by quantitative evidence. Peer reviewers emphasize the large, high-quality dataset as a major strength. Peer result also includes C40 which appears in OpenEval R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "afdc2744-47b2-4b82-b671-94e3a852b50a",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0f9a8178-4fac-4472-8dd3-f3d5df60d8ab",
+      "peer_result_id": "94730ef2-12ae-4240-9027-d6f73d2fd9d8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on EAD detection capability (C41, C42, C43, C44, C57, C74). Both evaluations recognize this as a key advantage over Gaussian processes. OpenEval notes 'reasonable but imperfect performance,' while peer reviewers describe it as 'a major advantage' despite lower accuracy than normal APs. Peer result also includes C45 which appears in OpenEval R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "c908857d-1398-4f62-a302-bbf95edaf0ac",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "39f53b74-bd6a-4f68-a9c5-c662184efccf",
+      "peer_result_id": "2d61166b-dda3-4206-8d04-360daadd6f48",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on inverse problem performance with synthetic data (C46, C50, C51, C75). Both evaluations accept these results as supported. OpenEval provides detailed explanation of error propagation, while peer reviewers note 'accuracy remained high' without challenge. Peer result also includes C47 which appears in OpenEval R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "21f01977-d0f1-4ea5-b034-4ca7bde934ed",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "069ee4bf-1e11-44aa-954c-9745f85b5bf7",
+      "peer_result_id": "31161ff8-1a5f-4db8-93c7-1b332b60908b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial agreement on experimental data results (C54, C55, C56). OpenEval finds claims supported but notes arbitrary success criteria. Peer reviewers express significant concerns (UNCERTAIN evaluation) about 'sharp drop-off' in accuracy and question whether tissue-cell mismatch fully explains discrepancies. Both acknowledge authors' transparency.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "196103d7-bf4b-4c0d-944e-54a4a146b909",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "0a1e8e8a-daa2-4227-ba17-038bf15eba83",
+      "peer_result_id": "31161ff8-1a5f-4db8-93c7-1b332b60908b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on tissue-cell mismatch explanation (C58, C59, C60). OpenEval finds the explanation reasonable and supported by citations (SUPPORTED), while peer reviewers question whether this fully explains the discrepancies (UNCERTAIN). Both recognize this as a significant limitation affecting practical applicability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "dbfb7778-3e7d-4869-8fad-020b4c0bdb66",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "96f335e2-1612-4f6e-b13e-f0ae17902399",
+      "peer_result_id": "ddd69e5e-0ba3-4560-b5d9-368107746516",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on experimental data documentation (C31, C32, C33, C36, C37). OpenEval finds the data sources and exclusion criteria well-documented (SUPPORTED). Peer reviewers don't challenge the documentation itself but express concern about limited experimental validation scope (UNCERTAIN), recommending more extensive validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "3c0bd0f4-832c-4215-a21d-db9cdb5df8ce",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f3f0f615-05b3-4cd1-81b5-5256a9a758a0",
+      "peer_result_id": "a52e3005-dbdb-4922-a0f5-014b933bc781",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on continuous time capabilities (C62, C63). Both evaluations accept these architectural features as logical inferences from the design. OpenEval notes they are not empirically demonstrated; peer reviewers view them as enabling 'interesting applications' without dispute.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "7f719e48-3cc5-45f5-8c93-dccb14931618",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "82562e0a-491b-4662-8f68-4409828a5077",
+      "peer_result_id": "1e0762e4-777a-4e8e-bf78-bade9a893add",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on study limitations (C65, C66, C67, C68, C69, C70). Both evaluations commend the authors' transparency and honest acknowledgment of constraints. Peer reviewers explicitly praise the transparent discussion rather than withholding negative results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "2001ebfe-3cc8-4300-985c-9275bcb521e8",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "3f08e1f6-36d4-46fa-a609-77424d900820",
+      "peer_result_id": "8a841c72-8ee8-45a7-8634-b7740936fbf0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on background context (C1-C9 in both, C10-C11 also in OpenEval). Both evaluations accept the citation-supported background without challenge. Peer reviewers implicitly validate the context by describing the work as addressing an area of broad interest. OpenEval R11 includes C10-C11 which peer R6 also addresses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "0868b391-6266-441a-a93a-d9cce04b57fd",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "3f08e1f6-36d4-46fa-a609-77424d900820",
+      "peer_result_id": "ffc14ba2-bc66-4a5d-a060-b2d57bc9dbff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on theoretical advantages over Gaussian processes (C10, C11). Both evaluations accept the GP limitations and NN capabilities as well-established. Peer reviewers explicitly affirm this as 'a major advantage.' Peer R6 also addresses C57 which appears in OpenEval R4.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "4eda630f-9bde-481c-9057-4bc45ca7202d",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "1fbc9000-c657-4440-ac5a-5340e685a788",
+      "peer_result_id": "8fbe1e11-1c32-441f-a035-ff1080955561",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on extensibility claim (C71). OpenEval expresses uncertainty about whether extension would be 'straightforward' (UNCERTAIN), noting lack of evidence. Peer reviewers accept this forward-looking statement as reasonable speculation (SUPPORTED), viewing it as stimulating further development. Peer R12 also addresses C76.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "fe65bbbd-542a-45c0-8901-07b3a94a0902",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "4b21f431-69ec-4156-b59a-f663ea633a17",
+      "peer_result_id": "8fbe1e11-1c32-441f-a035-ff1080955561",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on overall conclusion with qualifications (C76). OpenEval finds the conclusion appropriately cautious given limitations (SUPPORTED). Peer reviewers accept the potential applications as reasonable (SUPPORTED), with some stating it could 'revolutionize' pharmacological studies, though they recommend more extensive validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    },
+    {
+      "id": "693544fd-02a0-476c-89dd-1f98b8731515",
+      "submission_id": "333dcde9-1d91-45c8-9279-3df4a65a720a",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "fd59075b-3619-459a-bfe6-146d03b27ccd",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates test dataset composition (C29) as clearly documented and supported. No corresponding peer review evaluation found for this specific methodological detail.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:22:27.557112Z"
+    }
+  ]
+}

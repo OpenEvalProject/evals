@@ -1,0 +1,176 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "mAMCase exhibits dual pH optima at pH 2.0 and 6.5, with the acidic optimum showing 6.3-fold higher kcat and 2.5-fold worse KM compared to neutral pH. These optima correspond to the pH of the stomach and lungs, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23, C24, C25, and C26 collectively demonstrate the dual pH optima through kinetic measurements (Figure 1B-D). The quantitative kinetic parameters (kcat and KM) are derived from Michaelis-Menten analysis of endpoint assay data with appropriate replicates (n=4). The correlation to physiological sites is supported by citation and represents a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C30",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "High-resolution crystal structures (1.30-1.95 \u00c5) of mAMCase in complex with GlcNAcn reveal extensive conformational and configurational ligand heterogeneity, including both \u03b1- and \u03b2-anomers and continuous density resembling higher-order oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C30, C32, C33, and C34 are supported by crystallographic data deposited in the PDB with appropriate resolution ranges. The observation of anomer heterogeneity and continuous density is directly observable in electron density maps. The mechanistic interpretation (C34) about oxocarbenium intermediate formation is a reasonable chemical inference from the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The mAMCase active site contains conserved tryptophan residues that stabilize ligand binding through H-\u03c0 interactions, and key residues (Asp213, Tyr141, Glu140) form hydrogen bonds that orient the substrate for catalysis. The active site is pre-organized prior to ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 describe structural features directly observable in the crystal structures with specific distance measurements (e.g., 2.8 \u00c5 for Glu140 to glycosidic oxygen). The comparison to other chitinases is supported by citations. The inference about pre-organization (C41) is supported by comparison of apo and holo structures showing similar conformations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Asp138 exhibits conformational heterogeneity, flipping between inactive (toward Asp136) and active (toward Glu140) conformations. Asp138 preferentially adopts the active conformation when the -1 subsite is at least 50% occupied, showing strong positive correlation with ligand occupancy in the -2 to +1 subsites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are supported by Ringer analysis (C43) confirming two Asp138 conformations and quantitative correlation analysis shown in Figure 3B (C44). The 50% occupancy threshold (C45) is derived from structural data analysis. The conformational heterogeneity is directly observable in electron density maps across multiple structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C56"
+    ],
+    "result": "PROPKA calculations reveal that the pKa values of catalytic residues Asp136 and Glu140 are affected by Asp138 conformation. In the inactive conformation, pKa values are 2.0, 13.0, and 7.7 for Asp136, Asp138, and Glu140, respectively. In the active conformation, values shift to 3.4, 12.4, and 6.4. Glu140 (pKa 7.7) remains protonated across the enzyme's active pH range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C56 report PROPKA calculations performed on crystal structures. The pKa values are computationally derived and show consistent trends across multiple structures (Figure 4A, Supplementary file 2). The inference about protonation states at different pH values (C49, C56) follows logically from the calculated pKa values. However, PROPKA is a prediction tool with inherent limitations in accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Molecular dynamics simulations suggest pH-dependent mechanisms for catalytic residue protonation. At pH 2.0, Asp138 readily rotates from inactive to active conformation, while at pH 6.5, Asp138 remains hydrogen-bonded to Asp136 in the inactive conformation. Glu140 maintains its acidic proton oriented toward the glycosidic bond (1.5-2.3 \u00c5, median 1.8 \u00c5) across all simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C50-C53 describe MD simulation results, but critical methodological details raise concerns. The simulations are only 10 ns in duration, which may be insufficient to observe rare conformational transitions. The simulations were performed at pH 2.0 and 6.5, but crystal structures were only obtained at pH 4.74-5.60, creating a gap between experimental validation and computational predictions. The protonation states were assigned by 3DProtonate and confirmed by PROPKA, but the accuracy of these predictions at extreme pH is uncertain. While the observations are internally consistent, longer simulations and experimental validation at the simulated pH values would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "The authors propose a dual mechanism for Glu140 protonation: at neutral pH, proton shuttling occurs through the catalytic triad (Asp136\u2192Asp138\u2192Glu140), while at acidic pH, Glu140 is directly protonated from solution. This mechanism explains the dual pH optima of mAMCase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54, C55, C57-C60, and C63 present a mechanistic model integrating kinetic, structural, and computational data. While the model is internally consistent and explains the observed dual pH optima, it remains largely speculative. The proton shuttling mechanism at neutral pH (C59) and direct protonation at acidic pH (C60) are inferences not directly demonstrated experimentally. The MD simulations are too short to observe actual proton transfer events. The model would benefit from additional experimental validation such as neutron crystallography (mentioned in Discussion as future work) or pH-dependent kinetic isotope effect studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "mAMCase shows apparent product inhibition at 4MU-chitobioside concentrations above 80 \u03bcM across all pH values, potentially due to transglycosylation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe an observation from kinetic data with comparison to chitotriosidase (C27, supported by citation). The product inhibition is observable in the kinetic curves. The transglycosylation hypothesis (C29) is supported by citation to prior work showing this activity at pH 2.0 and 7.0. However, the authors acknowledge this leads to systematic underprediction by Michaelis-Menten modeling at high substrate concentrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Sequence differences between mouse and human AMCase may explain their different pH activity profiles. Human AMCase lacks surface-stabilizing salt bridges (Lys78Gln, Asp82Gly, Lys160Gln mutations) and may be destabilized at low pH. Evolutionary pressure may differ due to dietary chitin exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C65 attempt to explain species differences. C61 is supported by citation. C62 identifies specific mutations through sequence comparison, but the functional impact is inferred, not experimentally validated. C64 and C65 are speculative hypotheses about protein stability and evolutionary pressure. No experimental data on hAMCase stability at low pH is presented in this study, and the evolutionary hypothesis (C65), while plausible, lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establishing the biological context of chitin, AMCase function, and GH18 catalytic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C22 provide established background knowledge supported by appropriate citations to prior literature. These claims accurately represent the current understanding of chitin biology, AMCase expression and function, and the GH18 catalytic mechanism. C22 is a reasonable chemical expectation about the oxazolinium intermediate.",
+    "result_type": "MINOR"
+  }
+]

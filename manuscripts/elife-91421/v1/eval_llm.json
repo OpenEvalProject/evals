@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes the theoretical framework by contrasting Hebbian plasticity models (which require temporal and spatial specificity) with evidence that synaptic plasticity is neither temporally nor spatially restricted. These claims provide the conceptual foundation for investigating non-Hebbian forms of plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9, C10, and C11 accurately describe established Hebbian plasticity models based on well-cited literature. Claims C2 and C12 correctly summarize known properties of synaptic plasticity that deviate from strict Hebbian rules, also supported by appropriate citations. These claims establish valid scientific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript reviews prior work on heterosynaptic LTP (heteroLTP), establishing that it can stabilize transient LTP, can be induced in non-potentiated synapses receiving subthreshold stimuli, and operates within a temporal window of minutes to tens of minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 accurately summarize established literature on heteroLTP mechanisms, supported by appropriate citations. These claims provide essential background for the experimental work and are consistent with the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors established a weak associative conditioning protocol where optogenetic stimulation of thalamic inputs paired with footshock produced minimal or no detectable memory (7%\u00b12% freezing at 24hr), in contrast to strong conditioning (60%\u00b17% freezing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, C69, and C70 are supported by experimental data in Figure 1 and Figure 1\u2014figure supplement 1b, showing appropriate controls (optical CS alone, unpaired conditioning) and statistical comparisons. The weak conditioning protocol is essential for testing whether LTP manipulations can strengthen otherwise transient memories. Sample sizes appear adequate (n=4-9 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "HomoLTP (high-frequency stimulation of thalamic inputs) applied minutes before, immediately after, or 24 hours after weak conditioning significantly increased conditioned freezing response, converting the weak memory into a lasting one. HomoLTP alone in na\u00efve animals did not produce freezing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C18, C19 are supported by behavioral data in Figure 1b with appropriate statistics (One-way ANOVA, p=0.0020, n=9). Claims C71-C73 provide important controls showing homoLTP requires prior conditioning. The temporal flexibility of homoLTP (effective at multiple time points) is a key finding, though the 24hr effect is surprising and mechanistically unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The optical homoLTP protocol produced lasting potentiation of in vivo field potentials in the lateral amygdala, confirming the physiological effect of the optogenetic manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by in vivo electrophysiology data in Figure 1c-d (n=5). This provides critical validation that the behavioral effects correlate with synaptic potentiation. However, the manuscript would benefit from more detailed quantification and statistical analysis of the electrophysiological changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors developed a dual-color optogenetic approach where prolonged yellow light renders ChrimsonR-expressing axons temporarily insensitive to blue light, enabling independent activation of thalamic (ChrimsonR) and cortical (oChIEF) inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by comprehensive data in Figure 2 showing the co-illumination approach works in slices and in vivo. The mechanism (opsin inactivation rather than transmitter depletion) is supported by recovery kinetics and pharmacological controls. Claims C74-C77 provide appropriate context. This technical advance is essential for testing heteroLTP and represents a significant methodological contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "HeteroLTP (potentiation of cortical inputs) applied immediately after weak conditioning of thalamic inputs produced lasting memory, but was ineffective when applied 24 hours later. Control mice expressing opsin only in thalamic inputs showed no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C28-C30 are supported by behavioral data in Figure 3c with appropriate controls and statistics (unpaired t-test, p=0.0100, n=9-10). The temporal specificity of heteroLTP (effective immediately but not at 24hr) contrasts with homoLTP and is consistent with synaptic tagging models. The control experiment (C29) is critical for ruling out non-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C78",
+      "C79"
+    ],
+    "result": "The thalamic inputs to the lateral amygdala convey footshock signals, as demonstrated by time-locked GCaMP activity and reduced footshock-evoked responses in thalamic-lesioned mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by fiber photometry data (Figure 4b) and lesion experiments (Figure 4d, n=6 per group). Claim C78 provides appropriate anatomical context. These results establish that thalamic inputs carry the unconditioned stimulus information, which is important for interpreting the unpaired conditioning experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C51",
+      "C52",
+      "C80"
+    ],
+    "result": "Both homoLTP and heteroLTP effectively uncovered aversive memory in unpaired conditioning paradigm (where CS and US are not temporally paired), despite unpaired conditioning alone producing no detectable memory or synaptic potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C51-C52 are supported by behavioral data in Figure 4f and Figure 4\u2014figure supplement 2a-b. The finding that LTP can reveal memory from unpaired conditioning is surprising and challenges strict Hebbian models. However, the 24hr delayed homoLTP effect in unpaired conditioning (C36) was not statistically significant, suggesting temporal constraints. The lack of synaptic potentiation after unpaired conditioning (C52, C80) is supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C53",
+      "C54"
+    ],
+    "result": "HeteroLTP applied after unpaired conditioning produced conditioned response comparable to paired conditioning. Footshock alone did not produce detectable synaptic potentiation, but was required for heteroLTP to induce potentiation of thalamic inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C53-C54 are supported by behavioral (Figure 4h) and electrophysiological data (Figure 4j, n=5-6). The requirement for footshock priming (C39-C40) is demonstrated by appropriate controls. This suggests a non-Hebbian mechanism where subthreshold activation enables subsequent heteroLTP, consistent with the Cross Talk model discussed by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C48",
+      "C84"
+    ],
+    "result": "In vivo electrophysiology from freely moving mice showed lasting potentiation of both thalamic and cortical pathways 24hr after heteroLTP induction, correlating with successful memory recall. All mice with successful recall showed successful synaptic potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C48, C84 are supported by in vivo recording and behavioral data in Figure 5b-c (n=4). The correlation between synaptic potentiation and behavioral recall is compelling. However, the sample size is small, and the claim of \"strong correlation\" would benefit from quantitative correlation analysis. Claim C43 provides an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "In ex vivo slices, weak stimulation of thalamic inputs produced transient potentiation that decayed within 90 minutes, but was stabilized into lasting potentiation when followed by strong stimulation of cortical inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by slice electrophysiology data in Figure 5d-f (10 animals, 15 slices, Welch's t-test p=0.0062). This provides direct cellular evidence for heteroLTP stabilization of weak potentiation, complementing the behavioral findings. The slice experiments offer better control over stimulation parameters than in vivo experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "Memory strength can be enhanced by homoLTP before or after conditioning, and by heteroLTP minutes after conditioning. HeteroLTP efficacy drops considerably at 24hr, while homoLTP remains effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C49 are summary conclusions supported by the collective experimental data from Figures 1-5. The differential temporal dynamics of homoLTP versus heteroLTP represent a key finding. However, the mechanism underlying the persistent efficacy of homoLTP at 24hr remains unexplained and warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The temporal specificity of heteroLTP (effective at minutes but not 24hr) is consistent with the Synaptic Tagging and Capture (STC) model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 appropriately interprets the heteroLTP temporal window data in the context of established STC models, supported by relevant citations. This interpretation is reasonable given the data, though alternative mechanisms are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The unpaired conditioning results are more consistent with the Cross Talk model (heteroLTP can potentiate synapses receiving subthreshold stimulation) than the STC model. Footshock may prime thalamic inputs through subthreshold activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide reasonable interpretation of the unpaired conditioning data in the context of the Cross Talk model. Claim C56 is explicitly speculative. Claim C57 is supported by control data. The interpretation is logical but the underlying mechanism remains to be directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The recovery of conditioned response following homoLTP is unlikely to be reinstatement, as homoLTP is effective before association formation and previous work showed LTP cannot restore extinguished conditioned responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 addresses an important alternative explanation. The arguments against reinstatement are reasonable: homoLTP works before conditioning (C4) and prior work showed LTP doesn't restore extinction. However, this interpretation could be strengthened with additional controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Computational models with comparable circuit architecture yield similar results (heteroLTP stabilizes weak memory), though different circuit arrangements may produce different outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 appropriately reference computational modeling work that supports the experimental findings. These claims provide useful theoretical context, though the manuscript does not present original modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The data point to an intracellular mechanism requiring prior priming but not necessarily prior synaptic potentiation. Extracellular communication (glutamate spillover) is unlikely based on developmental considerations and control experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 provide mechanistic interpretation. Claim C62 is explicitly speculative. The argument against extracellular mechanisms (C63) is supported by citations and control data (Figure 4\u2014figure supplement 2d). However, the specific intracellular mechanism remains unidentified and requires future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior work has shown that novel experiences and dopaminergic activation can strengthen memory encoding, potentially through protein synthesis-dependent mechanisms and neuromodulator signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 accurately summarize relevant prior literature with appropriate citations. These claims provide useful context for discussing how experiences outside the learning window can influence memory, though they describe others' work rather than the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "The transformation of transient experience into lasting memory is neither restricted to the time of experience nor to the synapses triggered by it, but can be influenced by past and future events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is the main conclusion of the manuscript, supported by the collective experimental evidence showing that homoLTP and heteroLTP can strengthen memories when applied before, during, or after conditioning. This represents a significant challenge to strict Hebbian models of learning and memory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Most neurons within the lateral amygdala receive direct projections from cortical regions (auditory/associative).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 accurately describes established anatomy of the lateral amygdala based on appropriate citations. This anatomical fact is important for the experimental design but is not a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83",
+      "C85"
+    ],
+    "result": "Optical LTP protocols produce expected behavioral changes, and the lasting behavioral and electrophysiological consequences of heteroLTP demonstrated here have not been reported before.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by citations and the current data. Claim C85 asserts novelty, which appears justified given the comprehensive demonstration of heteroLTP effects on behavior and physiology over 24hr, though a more thorough literature review would strengthen this claim.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Single-cell RNA sequencing of E8.5 mouse embryos identified six major tissue types in cranial tissues, including cranial NCC, which were further subdivided into five subclusters. The final dataset consisted of 21,190 cells from two transgenic mouse lines (Wnt1-Cre;RosaLSL-eYFP and Mef2c-F10N-LacZ) that differentially label premigratory and migratory NCC populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C36 describe the experimental design, data collection, and initial clustering analysis. The methodology is clearly described with appropriate sample sizes (n=6 embryos per line), validated transgenic markers (C27-C29 with citations), and standard bioinformatic approaches. The identification of tissue types using established markers (C31-C35) is well-supported by Figure 1C-D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Subclustering of cranial NCC revealed that subclusters 0-1 represent early migratory NCC expressing both migratory markers (Vim, Sox10, Twist1) and NCC specifier genes (Zeb2, Pax3, Nr6a1, Sox9, Foxd3, Snai1), while subclusters 2-3 represent late migratory NCC with higher expression of late migratory program genes. Subcluster 4 exhibits a neuroepithelial identity based on Sox1/Sox2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are supported by gene expression analysis shown in Figure 2B and Figure 2\u2014figure supplement 1, with appropriate citations to established NCC markers. The inference that subclusters 0-1 represent earlier stages than 2-3 (C39) is logically derived from known biology of NCC specifier downregulation during migration. The characterization is consistent with published NCC development programs (C40).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Higher resolution clustering identified subcluster 17' as premigratory NCC based on high Wnt1 expression and expression of neural plate border/NCC specifier genes without migratory markers. Subclusters 2' and 10' were identified as EMT intermediate states, showing reduced Wnt1 and neural plate border specifiers compared to 17', along with decreased expression of tight junction/polarity genes and increased expression of cytoskeletal rearrangement genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by heatmap analysis in Figure 2D-E showing differential gene expression patterns. The identification of intermediate states is based on logical progression of marker expression (high Wnt1 \u2192 reduced Wnt1 \u2192 Sox10+) and molecular signatures consistent with EMT biology (junction breakdown, cytoskeletal changes). The inference is reasonable given the expression patterns, though the term 'intermediate' is interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The two intermediate NCC populations (subclusters 2' and 10') are distinguished by cell cycle phase, with 2' expressing S phase genes and 10' expressing G2/M phase genes. Pseudotime and trajectory analyses revealed that these populations form simultaneously and independently from premigratory NCC but converge into a common pool of early migratory NCC, suggesting NCC can undergo EMT and delamination in either S or G2/M phase without distinct downstream fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 are supported by cell cycle gene expression analysis (Figure 3A-B) and trajectory analysis (Figure 3C-D). The use of Monocle 3 for pseudotime analysis is appropriate. The interpretation that the two populations form independently but converge (C58-C59) is directly supported by the trajectory visualization. The inference about cell cycle-dependent delamination (C60) is reasonable but would benefit from additional validation beyond transcriptional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cell cycle marker analysis revealed that the majority of delaminating cranial NCC express EdU (S phase) or pHH3 (G2/M phase) markers, while almost 50% of premigratory trunk NCC do not express either marker. This suggests that specific cell cycle phases are intimately connected to mouse cranial NCC EMT and delamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by immunostaining quantification shown in Figure 4C-D (n=3 embryos). The comparison between cranial and trunk NCC is appropriate and reveals a meaningful difference. However, the inference in C64 is somewhat overstated\u2014the data show correlation but not causation. The claim would be stronger if stated as 'associated with' rather than 'intimately connected to.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Aphidicolin treatment to inhibit S phase cell cycle progression resulted in significantly fewer migratory NCC compared to controls, with minimal cell death. The remaining migratory NCC predominantly expressed pHH3 (G2/M marker), supporting that cranial NCC delamination in G2/M phase is independent of S phase delamination and demonstrating that cell cycle regulation is critical for cranial NCC delamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by experimental data in Figure 4B, E and Figure 4\u2014figure supplement 1. The Aphidicolin treatment successfully blocked S phase (no EdU incorporation) without inducing cell death (TUNEL staining). The significant reduction in migratory NCC (p<0.0001, n=3) and persistence of pHH3+ cells support the interpretation. However, the conclusion about 'independence' (C68) is inferential\u2014the data show S phase inhibition doesn't completely block delamination, which is consistent with but doesn't definitively prove independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "SABER-FISH spatial analysis revealed that intermediate stage NCC markers Dlc1, Sp5, and Pak3 are expressed in the dorsolateral region of the neuroepithelium, where Wnt1 expression is slightly diminished but Sox10 expression is minimal. This spatially resolves EMT intermediate stages to the dorsolateral edge of the neural plate border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by SABER-FISH data in Figure 5B-C, including polyline kymograph analysis showing spatial expression gradients. The validation of SABER-FISH probes against traditional in situ hybridization (Figure 5\u2014figure supplement 2) strengthens confidence in the results. The spatial localization is clearly demonstrated and provides important in vivo validation of the scRNA-seq findings. The conclusion (C76) appropriately summarizes the spatial findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Dlc1 was prioritized for functional studies because it is highly expressed in all EMT intermediate stage NCC but not premigratory NCC, and Dlc1 null mice exhibit craniofacial malformations. Lentiviral shRNA knockdown of Dlc1 (achieving ~30% reduction) resulted in significantly fewer migratory NCC without affecting cell death, with all three shRNA constructs showing consistent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 are supported by experimental data in Figure 6B-D and Figure 6\u2014figure supplement 1. The rationale for prioritizing Dlc1 is sound (C77-C80). The knockdown experiments show consistent, statistically significant reductions in migratory NCC across all three shRNA constructs (p<0.05 to p<0.0001, n=4 per group), with no increase in cell death (C83). However, the modest 30% knockdown level (C84) raises questions about whether this represents a physiologically relevant reduction or if the effect might be underestimated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Dlc1 plays a critical role in regulating mouse cranial NCC delamination, potentially through its function as a Rho GTPase-activating protein that regulates Rho and Cdc42 activity, which in turn modulate actin cytoskeleton dynamics, stress fiber formation, filopodium formation, and tight junction organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 states a 'critical role' for Dlc1, which is supported by the knockdown data (C24, C81-C82). However, claims C85-C90 about the mechanism are largely speculative, based on citations to prior work on Dlc1 function rather than direct mechanistic studies in this system. The authors appropriately use cautious language ('may be mediated via,' C90), but the mechanistic claims remain unvalidated hypotheses requiring future work to test whether Dlc1 acts through RhoGTPase signaling in this context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Studies in chicken and zebrafish embryos suggest that Dlc1 and related GAP family members regulate NCC delamination across vertebrate species, with Dlc1 overexpression causing ectopic delamination and loss of directionality, while Dlc1 inhibition reduces NCC emigration. This suggests the role of Dlc1 in NCC delamination might be evolutionarily conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 appropriately summarize prior work in other species (with citations to Liu et al., 2017 and Clay and Halloran, 2013) and draw reasonable comparative conclusions. The speculation about evolutionary conservation (C98) is appropriately cautious ('might be'). However, these are not primary findings of this study but rather contextualization of the results within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The identification of intermediate stage cranial NCC during delamination is consistent with NCC EMT being a developmental epithelial-to-mesenchymal plasticity (EMP) event. Similar to cancer EMT, NCC downregulate epithelial features while maintaining co-expression of epithelial and mesenchymal markers and are localized at the dorsolateral edge. However, unlike some cancer intermediate states, mouse EMT intermediate NCC represent a transient state that eventually forms migratory NCC with mesenchymal character.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 represent the major conceptual conclusions of the study. The comparison to cancer EMP is supported by the data showing: (1) intermediate transcriptional states (C51-C53), (2) co-expression of epithelial and mesenchymal markers (C52-C53, C108), (3) spatial localization at the tissue edge (C76, C109), and (4) transient nature with convergence to migratory state (C59, C110). The speculation about EMP being a common developmental phenomenon (C111) is appropriately cautious. These conclusions are well-supported by the collective findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that EMT is a cellular process converting epithelial to mesenchymal cells, traditionally viewed as binary but now recognized to involve intermediate states (EMP) in cancer. NCC formation represents a classic developmental EMT example, but whether intermediate states exist in developmental EMT remains largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide background context supported by appropriate citations to established literature. These claims accurately represent the current state of knowledge and properly motivate the study's research question (C12). No primary data evaluation is needed for these introductory claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "During NCC formation, Sox1/Sox2 are downregulated in the dorsal neural plate border while Sox9/Sox10 are activated in the SoxB to SoxE switch. Overexpression studies show Sox2 represses NCC specification while Sox9/Sox10 promote NCC formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 summarize established knowledge about Sox gene regulation during NCC development, supported by multiple citations. These provide important context for interpreting the subcluster identities but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Cranial and trunk NCC exhibit differences in delamination timing (before vs. after neural plate closure), migration pattern (bulk collective vs. progressive chain migration), and regulatory networks, as established by prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 accurately summarize established differences between cranial and trunk NCC development, supported by appropriate citations. These provide important context for the study's focus on cranial NCC and the comparative cell cycle analysis (C62-C63).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Prior studies in chicken and zebrafish embryos have shown that cell cycle status is associated with NCC delamination, with most trunk NCC in S phase during delamination, active cell division in dorsal neuroepithelium, and G1/S transition required for trunk NCC delamination. However, only ~30% of cranial NCC in chicken are in S phase during delamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 appropriately summarize prior work on cell cycle and NCC delamination in other species, supported by citations. These provide important comparative context for the mouse cranial NCC findings and highlight species/axial differences. The contrast with chicken cranial NCC (C119) is particularly relevant for interpreting the mouse results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "High DLC1 expression is detected in melanoma tissues, where it is necessary and sufficient for melanoma growth and metastasis, suggesting potential relevance to cancer biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 cite prior work (Yang et al., 2020b) connecting DLC1 to melanoma, which is relevant given that melanoma derives from neural crest. This provides translational context but is not a primary finding of the study.",
+    "result_type": "MINOR"
+  }
+]

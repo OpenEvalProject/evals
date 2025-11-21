@@ -1,0 +1,2062 @@
+{
+  "submission": {
+    "id": "352af923-1243-4386-8bc3-0822203529ca",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:49:32.821281Z",
+    "updated_at": "2025-11-20T22:49:32.821281Z"
+  },
+  "content": [
+    {
+      "id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "content_type": "manuscript",
+      "content_text": "# Improved clinical data imputation via classical and quantum determinantal point processes\n\n## Authors\n\n- Skander Kazdaghli<sup>1</sup> ([ORCID: 0009-0005-9044-0919](https://orcid.org/0009-0005-9044-0919)) \u2020\n- Iordanis Kerenidis<sup>1</sup>\n- Jens Kieckbusch<sup>3</sup>\n- Philip Teare<sup>4</sup>\n\n### Affiliations\n\n1. QC Ware Paris France\n2. Universite de Paris, CNRS, IRIF Paris France ([ROR:05f82e368](https://ror.org/05f82e368))\n3. Emerging Innovations Unit, Discovery Sciences, BioPharmaceuticals R&D, AstraZeneca Cambridge United Kingdom ([ROR:04r9x1a08](https://ror.org/04r9x1a08))\n4. Centre for AI, Data Science & AI, BioPharmaceuticals R&D, AstraZeneca Cambridge United Kingdom ([ROR:04r9x1a08](https://ror.org/04r9x1a08))\n\n\u2020 Corresponding author\n\n## Abstract\n\nImputing data is a critical issue for machine learning practitioners, including in the life sciences domain, where missing clinical data is a typical situation and the reliability of the imputation is of great importance. Currently, there is no canonical approach for imputation of clinical data and widely used algorithms introduce variance in the downstream classification. Here we propose novel imputation methods based on determinantal point processes (DPP) that enhance popular techniques such as the multivariate imputation by chained equations and MissForest. Their advantages are twofold: improving the quality of the imputed data demonstrated by increased accuracy of the downstream classification and providing deterministic and reliable imputations that remove the variance from the classification results. We experimentally demonstrate the advantages of our methods by performing extensive imputations on synthetic and real clinical data. We also perform quantum hardware experiments by applying the quantum circuits for DPP sampling since such quantum algorithms provide a computational advantage with respect to classical ones. We demonstrate competitive results with up to 10 qubits for small-scale imputation tasks on a state-of-the-art IBM quantum processor. Our classical and quantum methods improve the effectiveness and robustness of clinical data prediction modeling by providing better and more reliable data imputations. These improvements can add significant value in settings demanding high precision, such as in pharmaceutical drug trials where our approach can provide higher confidence in the predictions made.\n\n## Introduction\n\nMissing data is a recurring problem in machine learning and in particular for clinical datasets, where it is common that numerous feature values are not present for reasons including incomplete data collection and discrepancies in data formats and data corruption (Luo, 2022; Emmanuel et al., 2021; Pedersen et al., 2017; Myers, 2000). Machine learning is routinely used in life science and clinical research for prediction tasks, such as diagnostics (Qin et al., 2019) and prognostics (Booth et al., 2021), as well as estimation tasks, such as biomarker proxies (Wang et al., 2017) and digital biomarkers (Rendleman et al., 2019). Beyond the research setting, machine learning is becoming more commonplace as regulated Software as a Medical Device, where machine learning models are influencing \u2013 or making \u2013 clinical decisions that affect patient care.\n\nMachine learning algorithms typically require complete datasets and missing values can significantly affect the quality of the machine learning models trained on such data. This is in large part due to the fact that there can be different underlying reasons for the missingness: for example, feature values can be missing completely at random (MCAR), missing at random (MAR), and missing not at random (MNAR), each one with their own characteristics.\n\nDespite its importance for clinical trials, there is no canonical approach for dealing with missingness and finding appropriate, effective and reproducible methods remains a challenge. A common way to deal with missing clinical data is to exclude subjects that do not have the complete set of feature values present. A drawback of this approach is that excluding subjects can in fact introduce significant biases in the final model. For example, it can result in the model being trained to be more effective for the type of subjects that are likely to have complete data than for those that do not. Moreover, the effectiveness and reliability of clinical trials are reduced when subjects with missing feature values are excluded from the clinical trial.\n\nData imputation is an alternative to the complete dataset approach, where subjects with missing feature values are not excluded. Instead, missing values are imputed to create a complete dataset that is then used for a classification task as shown in Figure 1. There are different ways to achieve this, including \u2018filling\u2019 missing values with zeros, or with the mean value of the feature across all subjects that have such a value present. These methods provide consistent imputation results, but there are important caveats for using such simple methods since they ignore possible correlations between features and can make the dataset appear more homogeneous than it really is. More advanced data imputation methods have been proposed in the literature: iterative methods include the multivariate imputation by chained equations (MICE) (Groothuis-Oudshoorn, 2011) and MissForest (Stekhoven and B\u00fchlmann, 2012) algorithms, and deep learning methods include GAIN (generative adversarial imputation nets) Yoon and Jordon, 2018 and MIWAE (missing data importance-weighted autoencoder) (Mattei and Frellsen, 2019). Recent results Shadbahr et al., 2022 have shown that for clinical data two iterative imputation methods, MiceRanger, which uses predictive mean matching, and MissForest, which uses Random Forests to predict the missing values of each feature using the other features, provide the best results and have been used here as a baseline.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89947/elife-89947-fig1-v1.jpg)\n\nSeveral metrics are routinely used to quantify the quality of data imputation: point-wise discrepancy measures include root mean square error, mean absolute error, and coefficient of determination ($R^{2}$). Feature-wise discrepancy measures include Kullback\u2013Leibler divergence, two-sample Kolmogorov\u2013Smirnov statistic or (2-)Wasserstein distance. Ultimately, the quality and reliability of imputations can be measured by the performance of a downstream predictor, which is usually the area under the receiver operating curve (AUC) for a classification task. In practical terms, the performance of the downstream classifier is usually of highest importance for clinical datasets: for example, in one of our datasets, the classifier denominates a binary outcome of a critical care unit stay (e.g., survival) for each patient. Accordingly, we have used AUC for the classification task here on different holdout sets (see Figure 2) to assess the performance of our novel methods.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89947/elife-89947-fig2-v1.jpg)\n\n**Figure 2.:** First, the imputer is trained on the whole observed dataset X as shown in step (a). In step (b), the imputed data is split into three consecutive folds (holdout sets H1, H2, and H3), then a classifier is trained on each combination of two holdout sets (development sets D1, D2, and D3) and the area under the receiver operating curve (AUC) is calculated for each holdout set.\n\nIn order to increase the resulting AUC, we combine the MissForest and MiceRanger imputation methods with determinantal sampling, based on determinantal point processes (DPP) (Derezi\u0144ski and Mahoney, 2021; Kulezsa and Taskar, 2011), which favors samples that are diverse and thus reduces the variance of the training of each decision tree that in turn provides more accurate models. In essence, determinantal sampling picks subsets of data according to a distribution that gives more weight to subsets of data that contain diverse data points. More precisely, each subset of data points is picked according to the volume encapsulated by these data points. The determinantal distribution increases the attention given to uncommon or out-of-the-ordinary data points rather than biasing the learning process towards the more commonly found data, which can improve the overall prediction accuracy in particular for unbalanced datasets as is often the case for clinical data (Derezi\u0144sk and Mahoney). Determinantal sampling for regression and classification tasks with full data has been proposed previously for linear regressors (Derezi\u0144ski et al., 2018) and for Random Forest training for a financial data classification use case where it outperformed the standard Random Forest model (Thakkar et al., 2023). However, an inherent feature of standard Random Forest and determinantal sampling algorithms is randomness that produces data imputations that vary from one run of the algorithm to the next. This is often undesirable since the downstream classification performance can also be affected, which motivated us to apply a deterministic version of determinantal sampling (Schreurs and Suykens, 2021) within the Random Forests of the imputation methods to provide more robust and reliable imputations.\n\nThrough deterministic determinantal sampling, we address two challenges in data imputation: first, we provide improved data imputation methods that can increase the performance of the downstream classifier; and second, we remove the variance of the common stochastic and multiple imputation methods, thus ensuring reproducibility, easier integration in machine learning workflows, and compliance with healthcare regulations. While these improvements are of particular relevance for clinical data, our algorithms can also be advantageous for other imputation tasks where improving downstream classification and removing variance is of importance.\n\nIn order to demonstrate this improvement, we apply our methods to two classification datasets: a synthetic dataset and a public clinical dataset where the predicted outcome is the survival of the patient.\n\nIn addition, we explore the potential of quantum computing to speed up these novel imputation methods: we provide a quantum circuit implementation of the determinantal sampling algorithm that offers a computational advantage compared to its classical counterpart. The best classical algorithms for determinantal sampling take in practice cubic time in the number of features to provide a sample (Derezi\u0144ski and Mahoney, 2021). In contrast, the quantum algorithm we present here, based on theoretical analysis in Kerenidis and Prakash, 2022, has running time that scales linearly with the number of features. We measure running time as the depth of the necessary quantum circuits, given that the quantum processing units that are being developed currently offer the possibility of performing parallel operations on disjoint qubits.\n\nThis suggests that with the advent of next-generation quantum computers with more and better qubits, one could also expect a computational speedup in performing determinantal sampling using a quantum computer. Here, we demonstrate competitive results with up to 10 qubits for small-scale imputation tasks on a state-of-the-art IBM quantum processor.\n\nThis work combines classical (Derezi\u0144ski and Mahoney, 2021) and quantum (Kerenidis and Prakash, 2022) DPP algorithms with widely used data imputation methods, resulting in novel data imputation algorithms that can improve performance on classical computers while also having the potential of a quantum speedup in the future.\n\n## Results\n\nIn \u2018Methods\u2019, we provide a detailed description of our four imputation methods, DPP-MICE, DPP-MissForest, detDPP-MICE, and detDPP-MissForest. All of them are based on iterative imputation methods that use the observed values of every column to predict the missing values. The model used to fill missing values in each column is the Random Forest classifier. Our imputation methods replace the standard Random Forest used by the original miceRanger and MissForest imputers by the DPP-Random Forest model, for our first two imputers, and the detDPP-Random Forest for the latter two. The DPP-Random Forest model subsamples the data for each decision tree using determinantal sampling instead of uniform sampling, while the detDPP-Random Forest model deterministically picks for each decision tree the subset of data that has the maximum probability according to the determinantal distribution. We also demonstrate a computationally advantageous way to perform the determinantal sampling on quantum computers.\n\nIn order to benchmark the different imputation methods, we used two types of datasets with a categorical outcome variable. First, a synthetic dataset, created using the scikit-learn method make_classification. It consists of 2000 rows with 25 informative features. This is useful to study the imputation quality where features have equal importance. Second, the MIMIC-III dataset (Johnson et al., 2016): the Medical Information Mart for Intensive Care (MIMIC) dataset, which is a freely available clinical database. It is comprised of data for patients who stayed in critical care units at the Beth Israel Deaconess Medical Center between 2001 and 2012. It contains the data of 7214 patients with 14 features.\n\nWe also applied two types of missingness on these datasets: MCAR, where the missingness distribution is independent of any observed or unobserved variable, and MNAR, where the missingness distribution depends on the outcome variable. We expect similar results to hold for the MAR case as well, but it was not considered in this work.\n\nWe present the numerical results in terms of the AUC of the downstream classification task in Table 1 and provide graphs of the results in Tables 2 and 3. Each experiment was run 10 times with different random seeds to get the variance of the results.\n\n**Table 1.**\n AUC results for the SYNTH and MIMIC-III datasets, with MCAR and MNAR missingness, three holdout sets, and six different imputation methods.Values are expressed as mean \u00b1 SD of 10 values for each experiment. DPP-MICE and detDPP-MICE are in bold when outperforming MICE and the underlined one is the best of the three. DPP-MissForest and detDPP-MissForest are in bold when outperforming MissForest and the underlined one is the best of the three.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset</th>\n      <th>Missingness</th>\n      <th>Set</th>\n      <th>MICE</th>\n      <th>DPP-MICE</th>\n      <th>detDPP-MICE</th>\n      <th>MissForest</th>\n      <th>DPP-MissForest</th>\n      <th>detDPP-MissForest</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">SYNTH</td>\n      <td rowspan=\"3\">MCAR</td>\n      <td>H1</td>\n      <td>0.8318 \u00b1 0.0113</td>\n      <td>0.835 \u00b1 0.0083</td>\n      <td>0.8352</td>\n      <td>0.8525 \u00b1 0.0044</td>\n      <td>0.8552 \u00b1 0.0049</td>\n      <td>0.8582</td>\n    </tr>\n    <tr>\n      <td>H2</td>\n      <td>0.8316 \u00b1 0.008</td>\n      <td>0.8369 \u00b1 0.0128</td>\n      <td>0.84</td>\n      <td>0.8465 \u00b1 0.0057</td>\n      <td>0.849 \u00b1 0.003</td>\n      <td>0.8491</td>\n    </tr>\n    <tr>\n      <td>H3</td>\n      <td>0.8205 \u00b1 0.0127</td>\n      <td>0.8266 \u00b1 0.0096</td>\n      <td>0.8272</td>\n      <td>0.8436 \u00b1 0.0031</td>\n      <td>0.8452 \u00b1 0.0048</td>\n      <td>0.855</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">MNAR</td>\n      <td>H1</td>\n      <td>0.8903 \u00b1 0.0046</td>\n      <td>0.8915 \u00b1 0.007</td>\n      <td>0.8934</td>\n      <td>0.7133 \u00b1 0.0063</td>\n      <td>0.7171 \u00b1 0.01</td>\n      <td>0.7185</td>\n    </tr>\n    <tr>\n      <td>H2</td>\n      <td>0.8755 \u00b1 0.01</td>\n      <td>0.8745 \u00b1 0.0072</td>\n      <td>0.8955</td>\n      <td>0.7052 \u00b1 0.0036</td>\n      <td>0.7124 \u00b1 0.0078</td>\n      <td>0.7167</td>\n    </tr>\n    <tr>\n      <td>H3</td>\n      <td>0.9003 \u00b1 0.0059</td>\n      <td>0.9005 \u00b1 0.006</td>\n      <td>0.9041</td>\n      <td>0.769 \u00b1 0.0103</td>\n      <td>0.7773 \u00b1 0.0129</td>\n      <td>0.7905</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">MIMIC</td>\n      <td rowspan=\"3\">MCAR</td>\n      <td>H1</td>\n      <td>0.7621 \u00b1 0.0046</td>\n      <td>0.7628 \u00b1 0.0049</td>\n      <td>0.7641</td>\n      <td>0.7687 \u00b1 0.0012</td>\n      <td>0.77 \u00b1 0.0013</td>\n      <td>0.771</td>\n    </tr>\n    <tr>\n      <td>H2</td>\n      <td>0.7541 \u00b1 0.0037</td>\n      <td>0.7532 \u00b1 0.0047</td>\n      <td>0.7619</td>\n      <td>0.7649 \u00b1 0.0019</td>\n      <td>0.777 \u00b1 0.0019</td>\n      <td>0.7707</td>\n    </tr>\n    <tr>\n      <td>H3</td>\n      <td>0.7365 \u00b1 0.0055</td>\n      <td>0.7394 \u00b1 0.0052</td>\n      <td>0.7471</td>\n      <td>0.7485 \u00b1 0.001</td>\n      <td>0.7507 \u00b1 0.0017</td>\n      <td>0.7515</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">MNAR</td>\n      <td>H1</td>\n      <td>0.77 \u00b1 0.0026</td>\n      <td>0.7717 \u00b1 0.0036</td>\n      <td>0.7722</td>\n      <td>0.6616 \u00b1 0.0065</td>\n      <td>0.6715 \u00b1 0.07</td>\n      <td>0.6760</td>\n    </tr>\n    <tr>\n      <td>H2</td>\n      <td>0.777 \u00b1 0.0064</td>\n      <td>0.7818 \u00b1 0.0029</td>\n      <td>0.7812</td>\n      <td>0.6748 \u00b1 0.0045</td>\n      <td>0.6778 \u00b1 0.0048</td>\n      <td>0.6798</td>\n    </tr>\n    <tr>\n      <td>H3</td>\n      <td>0.7324 \u00b1 0.0047</td>\n      <td>0.7363 \u00b1 0.0031</td>\n      <td>0.7403</td>\n      <td>0.6368 \u00b1 0.0034</td>\n      <td>0.64 \u00b1 0.004</td>\n      <td>0.6419</td>\n    </tr>\n  </tbody>\n</table>\n\n_AUC = area under the receiver operating curve; MCAR = missing completely at random; MNAR = missing not at random._\n\n**Table 2.**\n AUC results on the different holdout sets after imputation using MICE, DPP-MICE, and detDPP-MICE.In the case of MICE and DPP-MICE, the boxplots correspond to 10 AUC values for 10 iterations of the same imputation and classification algorithms, depicting the lower and upper quartiles as well as the median of these 10 values. The AUC values are the same for every iteration of the detDPP-MICE algorithm.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>MCAR</th>\n      <th>MNAR</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SYNTH</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MIMIC</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_AUC = area under the receiver operating curve; MCAR = missing completely at random; MNAR = missing not at random._\n\n**Table 3.**\n AUC results on the different holdout sets after imputation using MissForest, DPP-MissForest, and detDPP-MissForest.In the case of MissForest and DPP-MissForest, the boxplots correspond to 10 AUC values for 10 iterations of the same imputation and classification algorithm, depicting the lower and upper quartiles as well as the median of these 10 values. The AUC values are always the same for every iteration of the detDPP-MissForest algorithm.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>MCAR</th>\n      <th>MNAR</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SYNTH</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MIMIC</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_AUC = area under the receiver operating curve; MCAR = missing completely at random; MNAR = missing not at random._\n\nOverall, DPP-MICE and DPP-MissForest provide improved results compared to their classical baseline MICE and MissForest. This is the case for both the synthetic and the MIMIC datasets and for both MCAR and MNAR missingness. Even more interestingly, the detDPP-MICE and detDPP-MissForest collapse the variance of the imputed data to 0 and moreover lead in most cases to even higher AUC than the expectation of the previous methods.\n\n### DPP-MICE and detDPP-MICE outperform MICE\n\nWe present the performance results of MICE-based methods in terms of the AUC of the downstream classification task using an XGBoost classifier, which has been shown to be the strongest classifier for such datasets (Shadbahr et al., 2022). We used the default parameters of the classifier since our focus is comparing the different imputation methods. In each case, the original dataset with induced missing values is imputed using MICE, DPP-MICE, or detDPP-MICE, then it is divided into threefolds of development/holdout sets. The downstream classifier is then trained on each development set and its performance is measured by the AUC for the corresponding holdout set. The results are shown in Table 1 and in the figures in Table 2.\n\nThe imputation procedure is performed for a total of 10 iterations over all the columns and for each column, a (DPP) Random Forest regressor is trained using 10 trees. For each Random Forest training, the dataset is divided into batches of 150 points each and DPPs are used to sample from every batch.\n\nThe results show that across the 12 in total dataset experiments DPP-MICE outperforms MICE on expectation in 10 of them, while detDPP-MICE provides a single deterministic imputation, which outperforms the expected result from MICE in all 12 datasets and from DPP-MICE 11 out of 12 times.\n\n### DPP-MissForest and detDPP-MissForest outperform MissForest\n\nHere we present the performance results of MissForest-based methods in terms of the AUC of the downstream classification task using again an XGBoost classifier. In each case, the original dataset with induced missing values is imputed using MissForest, DPP-MissForest, or detDPP-MissForest, then it is divided into threefolds of development/holdout sets. The downstream classifier is again then trained on each development set and its performance is measured by the AUC for the corresponding holdout set. The results are shown in Table 1 and in the figures in Table 3. The specifics of the Random Forest training are the same as in the case of MICE.\n\nThe results show that across all experiments DPP-MissForest outperforms MissForest in all 12 of them, while detDPP-MissForest provides a single deterministic imputation that outperforms the expected result from MissForest in all 12 datasets and from DPP-MissForest in 11 out of 12 times.\n\n### Quantum hardware implementation of DPP-MissForest results in competitive downstream classification\n\nAs we describe in \u2018Methods\u2019, quantum computers can in principle be used to offer a computational advantage in determinantal sampling. In order to better understand the state of the art of current quantum hardware, we used a currently available quantum computer to perform determinantal sampling within a DPP-MissForest imputation method for scaled-down versions of the synthetic and MIMIC datasets.\n\nFor the purposes of our experiments, we used the \u2018ibm_hanoi\u2019 27-qubit quantum processor shown in Figure 3. We implemented quantum circuits with up to 10 qubits. We also performed quantum simulations using the qiskit noiseless simulator. The decision trees of the DPP-Random Forests used by the imputation models are trained using batches of decreasing sizes (see Table 4). For example, for the algorithm with batch size equal to 10, the algorithm first samples 2 out of the 10 data points to use for the first decision tree, then from the remaining 8 data points it picks another 2 for the second tree, then 2 from the remaining 6, and last 2 from the remaining 4. In other words, we train four different trees, and each time we use a quantum circuit with number of qubits equal to 10, 8, 6, and 4, to perform the respective determinantal sampling.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89947/elife-89947-fig3-v1.jpg)\n\n**Table 4.**\n Data matrix sizes used by the quantum determinantal point processes (DPP) circuits to train each tree.The number of rows corresponds to the number of data points and is equal to the number of qubits of every circuit.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Batch size</th>\n      <th>Tree 1</th>\n      <th>Tree 2</th>\n      <th>Tree 3</th>\n      <th>Tree 4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>7</td>\n      <td>(7,2)</td>\n      <td>(5,2)</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>(8,2)</td>\n      <td>(6,2)</td>\n      <td>(4,2)</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>(10,2)</td>\n      <td>(8,2)</td>\n      <td>(6,2)</td>\n      <td>(4,2)</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the figures of Table 5 and in Table 6, we provide for the different dataset experiments the AUC for MissForest, the simulated results of the quantum version of DPP-MissForest, and the actual hardware experimental results of running the quantum version of DPP-MissForest. Even for these very small datasets, when simulating the quantum version of DPP-MissForest, we demonstrate an increase in the AUC compared to the MissForest algorithm. This further highlights the potential advantages of determinantal sampling within imputation methods. Of note, running our algorithms on current hardware introduces variance in the downstream classifier. Importantly, this variance is due to noise in the hardware rather than inherent to the algorithm.\n\n**Table 5.**\n Hardware results using the IBM quantum processor, depicting AUC results of the downstream classifier task after imputing missing values using DPP-MissForest.In the case of MissForest and the quantum hardware DPP-MissForest implementations, the boxplots correspond to 10 AUC values for 10 iterations of the same imputation and classification algorithm, depicting the lower and upper quartiles as well as the median of these 10 values. The AUC values are the same for every iteration of the quantum DPP-MissForest algorithm using the simulator.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Batch size: 7Number of trees: 2</th>\n      <th>Batch size: 8Number of trees: 3</th>\n      <th>Batch size: 10Number of trees: 4</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>MCAR SYNTH</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MCAR MIMIC</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MNAR SYNTH</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MNAR MIMIC</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_AUC = area under the receiver operating curve; MCAR = missing completely at random; MNAR = missing not at random._\n\n**Table 6.**\n Numerical quantum hardware results showing the AUC results of the downstream classifier task on reduced datasets.Values are represented according to mean \u00b1 SD format given 10 values for each experiment.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset</th>\n      <th>Missingness</th>\n      <th>Batch size</th>\n      <th>Trees</th>\n      <th>MissForest</th>\n      <th>detDPP-MissForest (simulator)</th>\n      <th>detDPP-MissForest (hardware)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">SYNTH</td>\n      <td rowspan=\"3\">MCAR</td>\n      <td>7</td>\n      <td>2</td>\n      <td>0.868 \u00b1 0.0302</td>\n      <td>0.9026</td>\n      <td>0.8598 \u00b1 0.021</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>3</td>\n      <td>0.8667 \u00b1 0.0342</td>\n      <td>0.9256</td>\n      <td>0.8923 \u00b1 0.027</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>4</td>\n      <td>0.8725 \u00b1 0.0275</td>\n      <td>0.9028</td>\n      <td>0.8902 \u00b1 0.024</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">MNAR</td>\n      <td>7</td>\n      <td>2</td>\n      <td>0.7122 \u00b1 0.0264</td>\n      <td>0.78</td>\n      <td>0.7149 \u00b1 0.02</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>3</td>\n      <td>0.7153 \u00b1 0.022</td>\n      <td>0.729</td>\n      <td>0.7036 \u00b1 0.0167</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>4</td>\n      <td>0.7258 \u00b1 0.0157</td>\n      <td>0.7868</td>\n      <td>0.7082 \u00b1 0.036</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">MIMIC</td>\n      <td rowspan=\"3\">MCAR</td>\n      <td>7</td>\n      <td>2</td>\n      <td>0.7127 \u00b1 0.038</td>\n      <td>0.7522</td>\n      <td>0.7117 \u00b1 0.0315</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>3</td>\n      <td>0.7136 \u00b1 0.03</td>\n      <td>0.7728</td>\n      <td>0.7448 \u00b1 0.0258</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>4</td>\n      <td>0.6968 \u00b1 0.03</td>\n      <td>0.7327</td>\n      <td>0.7262 \u00b1 0.0299</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">MNAR</td>\n      <td>7</td>\n      <td>2</td>\n      <td>0.7697 \u00b1 0.0133</td>\n      <td>0.7794</td>\n      <td>0.7742 \u00b1 0.0108</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>3</td>\n      <td>0.7713 \u00b1 0.0112</td>\n      <td>0.7943</td>\n      <td>0.767 \u00b1 0.0125</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>4</td>\n      <td>0.7712 \u00b1 0.0116</td>\n      <td>0.7922</td>\n      <td>0.7675 \u00b1 .01545</td>\n    </tr>\n  </tbody>\n</table>\n\n_AUC = area under the receiver operating curve; MCAR = missing completely at random; MNAR = missing not at random._\n\nOur quantum hardware results are competitive with standard methods and in many cases close to the values expected from the simulation. In some cases, we observed a clear deterioration of the AUC due to the noise and errors in the quantum hardware. The results are closer to the simulations when using MCAR missingness with larger batch sizes that use more trees both for synthetic and the MIMIC datasets. As explained above, even though the algorithm with batch size 10 means using a quantum circuit with 10 qubits, the fact that we use four trees overall with a decreasing number of data points each time, and thus a decreasing number of qubits (namely, 10, 8, 6, and 4), results in an overall more reliable imputation.\n\n## Discussion\n\nMissing data is a critical issue for machine learning practitioners as complete datasets are usually required for training machine learning algorithms. To achieve complete datasets, missing values are usually imputed. In the case of clinical data, missing values and imputation can be a potential source of bias and can considerably influence the robustness and interpretability of results. Nevertheless, there is no canonical way to deal with missing data, which makes improvements in data imputation methods an attractive and impactful approach to increase the effectiveness and reliability of clinical trials. In this proof-of-concept study, we assessed the downstream consequences of implementing such improvements focussing on MCAR and MNAR to assess the usefulness of our approach. MNAR and MCAR represent two extreme cases of missingness with importance for clinical data imputation applications.\n\nDeterminantal point processing methods increase the diversity of the data picked to train the models, showcasing also that data gathering and preprocessing are important to remove biases related to over-representation of particular data types. This is more important when dealing with unbalanced datasets, as is the case often with clinical data. Determinantal sampling is an important tool not only for Random Forest models, but also for linear regression, where data diversity results in more robust and fair models (Derezi\u0144ski et al., 2018). Moreover, such sampling methods based on DPP are computationally intensive and quantum computers are expected to be useful in this case: quantum computers offer an asymptotic speedup for performing this sampling, and it is expected that next-generation quantum computers will provide a speedup in practice.\n\nWe show that, as expected, the quantum version of detDPP-MissForest does not introduce any variance in the downstream classifier when simulated in the absence of hardware noise. While the AUC improvements achieved in our experiments may seem modest, it is the consistency of improvements we observed in our simulation results coupled with removal of variance that makes our approach attractive for clinical data applications where these characteristics are extremely desirable. When implemented on quantum hardware, we observed variance that is caused by the noise in the hardware itself. More precisely, the output of the quantum circuit is not a sample from the precise determinantal distribution but from a noisy version of it, and this noise depends on the particular quantum circuit implemented and the quality of the hardware. Thus when attempting to compute the highest probability element using samples from the quantum circuit on current hardware, the result is not deterministic. Importantly, unlike for standard MissForest, this variance is not inherent in the algorithm and is expected to reduce considerably with the advent of better quality quantum computers. The quantum circuits needed to efficiently perform determinantal sampling require a number of qubits equal to the batch size used for each decision tree within the Random Forest training and the depth of the quantum circuit is roughly proportional to the number of features. As an example, if we would like to perform the quantum version of the determinantal imputation methods we used for MIMIC-III, then we would need a quantum computer with 150 qubits (the batch size) that can be reliably used to perform a quantum circuit of depth around 400 (the depth is given by $4\u2062d\u2062log\u2061n$, where $n=150$ is the batch size and $d=14$ is the number of features; Kerenidis and Prakash, 2022). While quantum hardware with a few hundred qubits that can perform computations of a few hundred steps are not available right now, it seems quite possible that they will be available in the not so far future. In the meantime, further optimization could also help reduce the quantum resources needed for such imputation methods.\n\nWhile our DPP-based imputation methods can run classically on small datasets such as MIMIC-III, they are computationally intensive and are hard to parallelize due to the sequential nature of the algorithm. This results in less and less efficient imputation for larger datasets where DPP sampling is applied to bigger batches. For example, when a DPP-MICE imputation is run on a dataset of 200 features and batches of size 400, then the training is expected to take multiple hours on a single GPU. The quantum DPP algorithm therefore could provide a way to speed up the hardest part of the imputer using a next-generation quantum computer. For instance, if $d=200$, and batch size is 400, the number of qubits will be 400 and the depth of the quantum circuit would be \u2248 6400, whereas it would take $\u223c8*10^{6}$ classical steps for DPP sampling. These are of course simply illustrative calculations and will require more detailed analysis as these machines become available and will need to include parameters such as clock speeds and error correction overheads. Only then can it be experimentally proven that this theoretical asymptotic speedup can translate to a practical speedup for this particular algorithm.\n\nIn summary, here we propose novel data imputation methods that, first, improve the widely used iterative imputation methods \u2013 MiceRanger and MissForest \u2013 as measured by the AUC of a downstream classifier; second, remove the variance of the imputation methods, thus ensuring reproducibility and simpler integration into machine learning workflows; and third, become even more efficient when run on quantum computers. Based on our results, we anticipate an impact of our algorithms on the reliability of models in high-precision value settings, including in pharmaceutical drug trials where they can provide higher confidence in the predictions made by eradicating the stochastic variance due to multiple imputations. In addition, tasks that are currently overwhelmed by the challenges of missingness become more tractable through the approaches introduced here, which is a common problem with real-world-evidence investigations, where detDPP-MICE and detDPP-MissForest can yield improved performance in the face of missingness.\n\n## Methods\n\n### Determinantal point processes (DPPs)\n\nGiven a set of items $\ud835\udcb4={y_{1},\u2026,y_{N}}$, a point process $\ud835\udcab$ is a probability distribution over all subsets of the set $\ud835\udcb4$. It is called a determinantal point process (DPP) if, for any subset $Y$ drawn from $\ud835\udcb4$ according to $\ud835\udcab$, we have\n\n$$\nP(T\u2286Y)=det\u2061(K_{T,T}),\n$$\n\nwhere $K$ is a real symmetric $N\\timesN$ matrix, and $K_{T,T}$ is its submatrix whose rows and columns are indexed by $T$. The matrix $K$ is called the marginal kernel of $Y$.\n\nFor an $n\\timesd$ data matrix $A$ and $L=AA^{T}$, we define the $L$-ensemble $DPP_{L}(L)$ as the distribution where the probability of sampling $T$ is\n\n$$\nP({T})=\\frac{det(L_{T,T})}{det(I+L)}\u221dVol^{2}({a_{i}:i\\inT}),\n$$\n\nwhere $V\u2062o\u2062l\u2062({a_{i}:i\\inT})$ is the volume of the parallelepiped spanned by the rows of $A$ indexed by $T$.\n\nAccording to this distribution, the probability of sampling points that are similar and thus form a smaller volume is reduced in favor of samples that are more diverse.\n\nAn $L$-ensemble is a determinantal point process if $K=L(I+L)^{\u22121}$.\n\n#### Stochastic k-DPPs\n\nThe distribution $k\u2212DPP_{L}(L)$ is defined as an $L$-ensemble which is constrained to subsets of size $|T|=k$.\n\nDifferent algorithms have been proposed in the literature to sample from $k-DPP\u2062s$, namely Kulesza and Taskar, 2012, where sampling $d$ rows from an $N\\timesd$ matrix takes $O\u2062(N\u2062d^{2})$ time. There have been improvements over this initial proposal as in Mahoney et al., 2019, where there is a preprocessing cost of $O\u2062(N\u2062d^{2})$ and each DPP sample requires $O\u2062(d^{3})$ arithmetic operations.\n\n#### Deterministic k-DPPs\n\nStochastic DPP sampling may be efficient in practice; however, deterministic algorithms are important for different use cases since they are more interpretable, are less prone to errors, and have no failure probability, which is especially relevant for clinical data (El Shawi et al., 2019).\n\nWe use a deterministic version of DPP sampling as proposed in Schreurs and Suykens, 2021 (see Algorithm 1), which is a greedy maximum volume approach. For each deterministic $k-DPP$ sample, elements with the highest probability are added iteratively. The complexity of the algorithm for selecting deterministically $d$ rows from an $N\\timesd$ matrix is $O\u2062(N^{2}\u2062d)$ for the preprocessing step and $O\u2062(N\u2062d^{3})$ for the sampling step.\n\n<table>\n  <thead>\n    <tr>\n      <th>Algorithm 1 Deterministic k-DPP algorithm</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Input:N\u00d7N Kernel matrix K\u227b0, sample size k.Initialization:T\u2190\u2205V\u2208Rn\u00d7k: first k eigenvectors of K.P=VV\u22bap0(i)=\u2016VTei\u20162,i=1,\u2026,kp\u2190p0 andi=0while: i\u2264k do\u2009\u2002\u2002\u2002\u2002ti\u2208arg\u2061maxp\u2009\u2002\u2002\u2002\u2002\u2009T\u2190T\u222a{ti}\u2009\u2002\u2002\u2002\u2002p(j)=p0(j)\u2212PTjTPTT\u2020PTj,j=1\u2026n\u2009\u2002\u2002\u2002\u2002\u2009i\u2190i+1end whileOutput:T.</td>\n    </tr>\n  </tbody>\n</table>\n\n### DPP-Random Forest and detDPP-Random Forest\n\nThe Random Forest is a widely used ensemble learning model for classification and regression problems. It trains a number of decision trees on different samples from the dataset, and the final prediction of the Random Forest is the average of the decision trees for regression tasks or the class predicted by the most decision trees for classification tasks.\n\nThe samples used to train each tree are drawn uniformly with replacement from the original dataset (bootstrapping). The DPP-Random Forest algorithm (see Figure 4) replaces the uniform sampling with DPP sampling without replacement.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89947/elife-89947-fig4-v1.jpg)\n\n**Figure 4.:** Since the batches are fixed, DPP sampling can be easily parallelized, either classically or quantumly. DPP, determinantal point processes.\n\nThe running time of the standard Random Forest training on an $N\\timesd$ matrix is $O~(Nd)$, whereas the DPP-Random Forest algorithm takes $O~\u2062(N\u2062d^{2}+d^{3})$ steps to run. This shows that while for small $d$ the classical DPP-enhanced algorithms can still be efficient, they quickly become inefficient for larger feature spaces.\n\nDeterminantal sampling for regression and classification tasks with full data has been proposed previously for linear regressors (Micha\u0142 Derezi\u0144ski and Hsu 2018) and for Random Forest training for a financial data classification use case where it outperformed the standard Random Forest model (Thakkar et al., 2023).\n\nWe can also use the deterministic version of DPP sampling for the Random Forest algorithm. This requires removing the sample used at each step (which is the one with the highest probability according to the determinantal distribution) in order to create a smaller dataset from which to sample for the next decision tree (see Figure 5). We call this new model detDPP-Random Forest.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89947/elife-89947-fig5-v1.jpg)\n\n**Figure 5.:** At each step, a decision tree is trained usingthe sample that corresponds to the highest determinantal probability, and which is then removed from the original batch before continuing to the next decision tree.\n\nLet us note that the distributions of the in-bag DPP samples, which are biased toward diversity, and the out-of-bag (OOB) samples, which reflect the original dataset\u2019s distribution, may be different. This could lead to an inaccurate calculation of the OOB error that can be in fact overestimated (Janitza and Hornung, 2018). In the DPP-Random Forest case, the batches are stratified and according to the output variable that follows the same distribution as the original dataset. Thus, sampling from different batches could bridge the gap between the in-bag and the OOB distributions. We leave these considerations for future work.\n\n### Quantum methods for DPPs\n\nQuantum machine learning has been a rapidly developing field and many applications have been explored, including with biomedical data, both using quantum algorithms to speedup linear algebraic procedures and through quantum neural networks (Cerezo et al., 2022; Biamonte et al., 2017; Landman et al., 2022; Cherrat et al., 2022).\n\nIn Kerenidis and Prakash, 2022, it was shown that there exist quantum algorithms for performing the determinantal sampling with better computational complexity than the best known classical methods. We describe below the quantum circuits that are needed for performing this quantum algorithm on quantum hardware with different connectivity characteristics and provide a resource analysis for the number of qubits, the number of gates, and the depth of the quantum circuit.\n\nFirst, we introduce an important component of the quantum DPP circuit, which is the Clifford loader. Given an input state $x\\in\u211d^{n}$, it performs the following operation:\n\n$$\nC(x)=\\sumi=1nx_{i}Z^{i\u22121}XI^{n\u2212i}\n$$\n\nIn other words, it encodes the vector $x$ as a sum of the mutually anti-commuting operators generating the Clifford algebra.\n\nFor implementing this operation with an efficient quantum circuit, we use standard one- and two-qubit gates, such as the X, Z, CZ gates as well as a parameterized two-qubit gate called the reconfigurable beam splitter (RBS) gate, which does the following operation:\n\n$$\nRBS(\\theta)=(10000cos\u2061\\thetasin\u2061\\theta00\u2212sin\u2061\\thetacos\u2061\\theta00001)\n$$\n\nWe provide in Figure 6 three different versions of the Clifford loader that take advantage of the specific connectivity of the quantum hardware, for example, grid connectivity for superconducting qubits or all-to-all connectivity for trapped-ion qubits. These constructions are optimal (up to constant factor) on the number of two-qubit gates. We provide the exact resource analysis in Table 7.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89947/elife-89947-fig6-v1.jpg)\n\n**Figure 6.:** Each line corresponds to a qubit. Each vertical line connecting two qubits corresponds to a reconfigurable beam splitter (RBS) gate. We also use $X,Z,C\u2062Z$ gates. The depth of the first two loaders is linear, and the last one is logarithmic on the number of qubits.\n\n**Table 7.**\n Summary of the characteristics of the different quantum determinantal point processes (DPP) circuits.NN = nearest neighbor connectivity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Clifford loader</th>\n      <th>Hardware connectivity</th>\n      <th>Depth</th>\n      <th># of RBS gates</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Diagonal</td>\n      <td>NN</td>\n      <td>2nd</td>\n      <td>2nd</td>\n    </tr>\n    <tr>\n      <td>Semi-diagonal</td>\n      <td>NN</td>\n      <td>nd</td>\n      <td>2nd</td>\n    </tr>\n    <tr>\n      <td>Parallel</td>\n      <td>All-to-all</td>\n      <td>4d log(n)</td>\n      <td>2nd</td>\n    </tr>\n  </tbody>\n</table>\n\nWe can now use the Clifford loaders described above to perform $k-D\u2062P\u2062P$ sampling, as described (Kerenidis and Prakash, 2022).\n\nGiven an orthogonal matrix $A=(a^{1},\u2026,a^{d})$, we can apply the qDPP circuit shown in Figure 7, which is just a sequential application of $d$ Clifford loaders, one for each column of the matrix, to the $|0^{n}\u27e9$ state, and that leads to the following result:\n\n$$\n|\ud835\udc9c\u27e9=\ud835\udc9e\u2062(a^{d})\u2062\u22ef\u2062\ud835\udc9e\u2062(a^{2})\u2062\ud835\udc9e\u2062(a^{1})\u2062|0^{n}\u27e9=\\sum|S|=ddet\u2061(A_{S})\u2062|e_{S}\u27e9\n$$\n\n![Figure 7.](https://cdn.elifesciences.org/articles/89947/elife-89947-fig7-v1.jpg)\n\n**Figure 7.:** Quantum determinant sampling circuit for an orthogonal matrix $A=(a^{1},\u2026,a^{d})$.It uses the Clifford loader, which is a unitary quantum operator: $\ud835\udc9e\u2062(x)=\\sum_{i=1}^{n}x_{i}\u2062Z^{i-1}\u2062X\u2062I^{n-i},for\u2003x\\in\u211d^{n}$.\n\nDirectly measuring at the end of the circuit provides a sample from the correct determinantal distribution.\n\nBoth the classical and the quantum algorithms require a preprocessing step with a similar complexity (see Table 8), and the improvement using the quantum method achieves a quadratic to cubic speedup in the sampling step. This speedup holds for $n=O\u2062(d)$. This is the case for our current implementation of DPP sampling from smaller batches (see Figure 4). In addition, the quantum DPP algorithm is efficient in terms of the number of measurements required since one measurement is equivalent to generating one DPP sample.\n\n**Table 8.**\n Complexity comparison of d-DPP sampling algorithms, both classical (Mahoney et al., 2019) and quantum (Kerenidis and Prakash, 2022).The problem considered is DPP sampling of $d$ rows from an $n\\timesd$ matrix, where $n=O\u2062(d)$. For the quantum case, we provide both the depth and the size of the circuits.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Classical</th>\n      <th>Quantum</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Preprocessing</td>\n      <td>O(d3)</td>\n      <td>O(d3)</td>\n    </tr>\n    <tr>\n      <td>Sampling</td>\n      <td>O~(d3)</td>\n      <td>O~(d)depthO~(d2)gates</td>\n    </tr>\n  </tbody>\n</table>\n\n_DPP = determinantal point processes._\n\n#### Quantum versions of the imputation methods\n\nIt is easy to define now a quantum version of the DPP-MICE and DPP-MissForest algorithms, where we use the quantum circuit described above to sample from the corresponding DPP. We can also define a variant of the deterministic algorithms, though here we need to pay attention to the fact that the quantum circuit enables to sample from the determinantal distribution but does not efficiently give us a classical description of the entire distribution. Hence, one can instead sample many times from the quantum circuit and output the most frequent element. This provides a sample with less variance but it only becomes deterministic in the limit of infinite measurements. In the experiments we performed, we used 1000 shots and the samples from the quantum circuits were indeed most of the time the highest probability elements. Of course in the worst case, there exist distributions where, for example, the highest and second highest elements are exponentially close to each other, in which case the quantum algorithm would need an exponential number of samples to output the highest element with high probability. Note though that the quantum imputation algorithm will still have a good performance even with few samples (any high-probability element provides the needed diversity of the inputs), though it will not be deterministic.\n\n### Availability of data and code\n\nThe code for the different DPP imputation methods is publicly available at github.com/AstraZeneca/dpp_imp, (copy archived at AstraZeneca, 2023). The synthetic dataset can be generated using the make_classification method from scikit-learn. The MIMIC-III dataset (Johnson et al., 2016) is also publicly available.\n",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Martin Gra\u00f1a, Institut Pasteur de Montevideo Uruguay\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89947.3.sa0](https://doi.org/10.7554/eLife.89947.3.sa0)\n\nThe methods presented in this work provide modest yet consistent accuracy improvements for data classification tasks where certain data are missing. The authors also present a way to use quantum computers for this task. The methodology and results for the classical (non-quantum) case are solid, although evidence for the practical quantum advantage via their approach in 'next generation' quantum computers remains incomplete. The results are valuable and should interest data scientists, life scientists and anyone working in quantum computing.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89947.3.sa1](https://doi.org/10.7554/eLife.89947.3.sa1)\n\nSummary:\n\nThe article written by Kazdaghli et al. proposes a modification of imputation methods, to better account and exploit the variability of the data. The aim is to reduce the variability of the imputation results.\n\nThe authors propose two methods, one that still includes some imputation variability, but accounts for the distribution of the data points to improve the imputation. The other one proposes a determinantal sampling, that presents no variation in the imputation data, but it seems to be, that they measure the variation in the classification task, instead. As these methods grow easily in computation requirements and time, they also propose an algorithm to run these methods in quantum processors.\n\nStrengths:\n\nThe sampling method for imputing missing values that account for the variability of the data seems to be accurate.\n\nWeaknesses:\n\nThe authors state \"Ultimately, the quality and reliability of imputations can be measured by the performance of a downstream predictor, which is usually the AUC (area under the receiver operating curve) for a classification task.\" but there is no citation of other scientists doing this. I think the authors could have evaluated the imputations directly, as they mention in the introduction, I understand that the final goal in the task is to have a better classification. In a real situation, they would have data that would be used for training the algorithm, and then new data that needs to be imputed and classified. Is there any difference between imputing all the data together and training the algorithm, versus doing the imputation, training a classifier, then imputing new data (for the testing set), and then testing the classification?\n\nI wonder if there could be some spurious interaction between the imputation and the classification methods, that could bias the data in the sense of having a better classification, but not imputing the real values; in particular when the deterministic DPP is used.\n",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "27234b25-9643-41ab-9851-bec621ce6b2a",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C1",
+      "claim": "Missing clinical data is a typical situation in the life sciences domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Imputing data is a critical issue for machine learning practitioners, including in the life sciences domain, where missing clinical data is a typical situation and the reliability of the imputation is of great importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a motivation for the work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "893f9877-4eea-457c-834e-3c1b001e70fc",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C2",
+      "claim": "There is no canonical approach for imputation of clinical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, there is no canonical approach for imputation of clinical data and widely used algorithms introduce variance in the downstream classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a problem in the abstract and introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "55c4102a-9dbe-4bf0-82ff-27f7dec185ad",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C3",
+      "claim": "Widely used imputation algorithms introduce variance in downstream classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, there is no canonical approach for imputation of clinical data and widely used algorithms introduce variance in the downstream classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a problem that the proposed methods address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "c1aa6ebf-a3a2-4cf6-8f55-09fd1d081048",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C4",
+      "claim": "DPP-based imputation methods improve the quality of imputed data as demonstrated by increased accuracy of downstream classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Their advantages are twofold: improving the quality of the imputed data demonstrated by increased accuracy of the downstream classification and providing deterministic and reliable imputations that remove the variance from the classification results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim supported by experimental results in Tables 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "13256987-3cf8-4a90-ac58-74431a4a60b0",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C5",
+      "claim": "DPP-based imputation methods provide deterministic and reliable imputations that remove variance from classification results.",
+      "claim_type": "EXPLICIT",
+      "source": "Their advantages are twofold: improving the quality of the imputed data demonstrated by increased accuracy of the downstream classification and providing deterministic and reliable imputations that remove the variance from the classification results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim supported by experimental results showing zero variance for detDPP methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "bcbdb8bb-a39c-4e70-bec7-1edbc30dd0cc",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C6",
+      "claim": "Quantum algorithms for DPP sampling provide a computational advantage with respect to classical ones.",
+      "claim_type": "EXPLICIT",
+      "source": "We also perform quantum hardware experiments by applying the quantum circuits for DPP sampling since such quantum algorithms provide a computational advantage with respect to classical ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by theoretical analysis cited from Kerenidis and Prakash, 2022 and complexity comparisons in Table 8.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "01b1dc14-ba71-4f8f-97ae-72274f43191f",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C7",
+      "claim": "The quantum DPP implementation demonstrates competitive results with up to 10 qubits on IBM quantum processor.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate competitive results with up to 10 qubits for small-scale imputation tasks on a state-of-the-art IBM quantum processor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Tables 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "ded5da08-5bd3-4801-a745-0ff9632a6f1e",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C8",
+      "claim": "Missing data is common in clinical datasets due to incomplete data collection, discrepancies in data formats, and data corruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Missing data is a recurring problem in machine learning and in particular for clinical datasets, where it is common that numerous feature values are not present for reasons including incomplete data collection and discrepancies in data formats and data corruption (Luo, 2022; Emmanuel et al., 2021; Pedersen et al., 2017; Myers, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "132990ee-09be-4c93-be50-448b38411b8e",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C9",
+      "claim": "Machine learning is routinely used in life science and clinical research for prediction tasks such as diagnostics and prognostics.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning is routinely used in life science and clinical research for prediction tasks, such as diagnostics (Qin et al., 2019) and prognostics (Booth et al., 2021), as well as estimation tasks, such as biomarker proxies (Wang et al., 2017) and digital biomarkers (Rendleman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "308aeb3f-9055-4dde-a7c2-dc2978900cd1",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C10",
+      "claim": "Machine learning algorithms typically require complete datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning algorithms typically require complete datasets and missing values can significantly affect the quality of the machine learning models trained on such data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "b61ac8a8-cffd-4e93-b615-4aff562fa412",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C11",
+      "claim": "Missing values can significantly affect the quality of machine learning models.",
+      "claim_type": "EXPLICIT",
+      "source": "Machine learning algorithms typically require complete datasets and missing values can significantly affect the quality of the machine learning models trained on such data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "9f53d2a1-e6e3-463e-b1da-2eadefbdb5c3",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C12",
+      "claim": "Feature values can be missing completely at random (MCAR), missing at random (MAR), or missing not at random (MNAR).",
+      "claim_type": "EXPLICIT",
+      "source": "This is in large part due to the fact that there can be different underlying reasons for the missingness: for example, feature values can be missing completely at random (MCAR), missing at random (MAR), and missing not at random (MNAR), each one with their own characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about types of missingness.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "31f53dcf-8a4e-4599-8b45-111d4c24bb92",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C13",
+      "claim": "Excluding subjects with missing data can introduce significant biases in the final model.",
+      "claim_type": "EXPLICIT",
+      "source": "A drawback of this approach is that excluding subjects can in fact introduce significant biases in the final model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known problem with complete-case analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "68f63507-7b8e-471e-aa43-82b0720e1156",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C14",
+      "claim": "MiceRanger and MissForest provide the best results for clinical data imputation among iterative methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent results Shadbahr et al., 2022 have shown that for clinical data two iterative imputation methods, MiceRanger, which uses predictive mean matching, and MissForest, which uses Random Forests to predict the missing values of each feature using the other features, provide the best results and have been used here as a baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shadbahr et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "fdaae297-61a9-4dee-bde5-023716f7eb5d",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C15",
+      "claim": "Determinantal sampling picks subsets of data according to a distribution that gives more weight to subsets containing diverse data points.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, determinantal sampling picks subsets of data according to a distribution that gives more weight to subsets of data that contain diverse data points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how DPP sampling works.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "4ca00aa1-bc4e-4383-a675-77470fcf4c7d",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C16",
+      "claim": "Each subset of data points is picked according to the volume encapsulated by these data points in determinantal sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, each subset of data points is picked according to the volume encapsulated by these data points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical description of DPP sampling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "41b12558-5b4d-4a1a-84e0-e073d11705b1",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C17",
+      "claim": "Determinantal sampling can improve overall prediction accuracy particularly for unbalanced datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The determinantal distribution increases the attention given to uncommon or out-of-the-ordinary data points rather than biasing the learning process towards the more commonly found data, which can improve the overall prediction accuracy in particular for unbalanced datasets as is often the case for clinical data (Derezi\u0144sk and Mahoney).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and reasoning about how DPP works.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "aa0bdbea-df7f-4910-97f7-1de65f904abe",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C18",
+      "claim": "Standard Random Forest and determinantal sampling algorithms produce data imputations that vary from one run to the next.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an inherent feature of standard Random Forest and determinantal sampling algorithms is randomness that produces data imputations that vary from one run of the algorithm to the next.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of these algorithms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "3cd12359-bbe6-4a17-9c9d-d296250e5c56",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C19",
+      "claim": "Deterministic determinantal sampling provides more robust and reliable imputations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is often undesirable since the downstream classification performance can also be affected, which motivated us to apply a deterministic version of determinantal sampling (Schreurs and Suykens, 2021) within the Random Forests of the imputation methods to provide more robust and reliable imputations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the benefits of the deterministic approach, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "d472badd-ccd0-47ca-ba82-5c583dce450a",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C20",
+      "claim": "The best classical algorithms for determinantal sampling take cubic time in the number of features.",
+      "claim_type": "EXPLICIT",
+      "source": "The best classical algorithms for determinantal sampling take in practice cubic time in the number of features to provide a sample (Derezi\u0144ski and Mahoney, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "940f842c-5a3b-4fa4-b203-50964af7ff48",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C21",
+      "claim": "The quantum algorithm for determinantal sampling has running time that scales linearly with the number of features.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the quantum algorithm we present here, based on theoretical analysis in Kerenidis and Prakash, 2022, has running time that scales linearly with the number of features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to theoretical analysis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "b34efed0-e8ee-401e-85c5-cce432494730",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C22",
+      "claim": "The synthetic dataset consists of 2000 rows with 25 informative features.",
+      "claim_type": "EXPLICIT",
+      "source": "First, a synthetic dataset, created using the scikit-learn method make_classification. It consists of 2000 rows with 25 informative features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental dataset used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "a742052b-9c12-4b8c-8b13-48a0ad4c73ab",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C23",
+      "claim": "The MIMIC-III dataset contains data of 7214 patients with 14 features.",
+      "claim_type": "EXPLICIT",
+      "source": "It is comprised of data for patients who stayed in critical care units at the Beth Israel Deaconess Medical Center between 2001 and 2012. It contains the data of 7214 patients with 14 features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical dataset used in experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "dceeb94b-a97f-48f9-ab79-5f92b9f022ed",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C24",
+      "claim": "DPP-MICE outperforms MICE on expectation in 10 out of 12 dataset experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that across the 12 in total dataset experiments DPP-MICE outperforms MICE on expectation in 10 of them, while detDPP-MICE provides a single deterministic imputation, which outperforms the expected result from MICE in all 12 datasets and from DPP-MICE 11 out of 12 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental results from Table 1 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "32d7e4cb-aeda-47d2-baea-c480f56955d5",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C25",
+      "claim": "detDPP-MICE outperforms the expected result from MICE in all 12 datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that across the 12 in total dataset experiments DPP-MICE outperforms MICE on expectation in 10 of them, while detDPP-MICE provides a single deterministic imputation, which outperforms the expected result from MICE in all 12 datasets and from DPP-MICE 11 out of 12 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental results from Table 1 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "b5f79bf9-7243-4a96-ada5-aa8591ecf02e",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C26",
+      "claim": "detDPP-MICE outperforms DPP-MICE in 11 out of 12 experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that across the 12 in total dataset experiments DPP-MICE outperforms MICE on expectation in 10 of them, while detDPP-MICE provides a single deterministic imputation, which outperforms the expected result from MICE in all 12 datasets and from DPP-MICE 11 out of 12 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental results from Table 1 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "ef0862d6-d50e-4bc2-9f9f-ad1050ba21be",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C27",
+      "claim": "DPP-MissForest outperforms MissForest in all 12 experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that across all experiments DPP-MissForest outperforms MissForest in all 12 of them, while detDPP-MissForest provides a single deterministic imputation that outperforms the expected result from MissForest in all 12 datasets and from DPP-MissForest in 11 out of 12 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental results from Table 1 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "30a54fe1-1a0e-46c8-b1b8-6fdb143816c7",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C28",
+      "claim": "detDPP-MissForest outperforms MissForest in all 12 datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that across all experiments DPP-MissForest outperforms MissForest in all 12 of them, while detDPP-MissForest provides a single deterministic imputation that outperforms the expected result from MissForest in all 12 datasets and from DPP-MissForest in 11 out of 12 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental results from Table 1 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "c95a6a7c-b24e-438f-9233-549eb0e1bc90",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C29",
+      "claim": "detDPP-MissForest outperforms DPP-MissForest in 11 out of 12 experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that across all experiments DPP-MissForest outperforms MissForest in all 12 of them, while detDPP-MissForest provides a single deterministic imputation that outperforms the expected result from MissForest in all 12 datasets and from DPP-MissForest in 11 out of 12 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of experimental results from Table 1 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "56ccd034-2bf6-43ca-9298-917f99ad188c",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C30",
+      "claim": "The experiments used the 'ibm_hanoi' 27-qubit quantum processor.",
+      "claim_type": "EXPLICIT",
+      "source": "For the purposes of our experiments, we used the 'ibm_hanoi' 27-qubit quantum processor shown in Figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the quantum hardware used in experiments, with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "75147e7e-9536-4f60-8393-72758e3368b8",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C31",
+      "claim": "Quantum circuits with up to 10 qubits were implemented in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "We implemented quantum circuits with up to 10 qubits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scale of quantum experiments performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "d7782820-850c-46b7-908f-2f13fb04f482",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C32",
+      "claim": "The quantum version of DPP-MissForest demonstrates an increase in AUC compared to MissForest when simulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for these very small datasets, when simulating the quantum version of DPP-MissForest, we demonstrate an increase in the AUC compared to the MissForest algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results in Tables 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "0b99f201-57bc-41fb-8472-1142da1086f7",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C33",
+      "claim": "Variance in quantum hardware results is due to noise in the hardware rather than inherent to the algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this variance is due to noise in the hardware rather than inherent to the algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing simulated and hardware results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "e7cf3471-48df-4dd0-9e5c-d1910904462a",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C34",
+      "claim": "Quantum hardware results are competitive with standard methods and in many cases close to simulation values.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantum hardware results are competitive with standard methods and in many cases close to the values expected from the simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Tables 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "84054964-023d-4a9a-9162-80ec1c197f0c",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C35",
+      "claim": "Determinantal point processing methods increase the diversity of data picked to train models.",
+      "claim_type": "EXPLICIT",
+      "source": "Determinantal point processing methods increase the diversity of the data picked to train the models, showcasing also that data gathering and preprocessing are important to remove biases related to over-representation of particular data types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how DPP methods work and their benefits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "05f5ea83-f1c5-4e7c-8e2d-3ea58682f71c",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C36",
+      "claim": "Data diversity is more important when dealing with unbalanced datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "This is more important when dealing with unbalanced datasets, as is the case often with clinical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as reasoning for why DPP methods are beneficial for clinical data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "2c9ee947-225b-4d36-9f0b-fdf1b78dcffa",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C37",
+      "claim": "Quantum computers offer an asymptotic speedup for performing determinantal sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, such sampling methods based on DPP are computationally intensive and quantum computers are expected to be useful in this case: quantum computers offer an asymptotic speedup for performing this sampling, and it is expected that next-generation quantum computers will provide a speedup in practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical analysis and complexity comparisons.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "14e752ba-6485-46b6-be4f-1e410b9419df",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C38",
+      "claim": "The quantum version of detDPP-MissForest does not introduce variance in downstream classifier when simulated without hardware noise.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that, as expected, the quantum version of detDPP-MissForest does not introduce any variance in the downstream classifier when simulated in the absence of hardware noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by simulation results showing deterministic outputs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "11326329-0fa5-4432-82cc-81c48692ea20",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C39",
+      "claim": "Variance observed in quantum hardware implementation is caused by noise in the hardware itself.",
+      "claim_type": "EXPLICIT",
+      "source": "When implemented on quantum hardware, we observed variance that is caused by the noise in the hardware itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing simulation and hardware results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "ca9ab6e4-10a7-490f-8efd-911f425b924d",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C40",
+      "claim": "The output of quantum circuits on current hardware is a sample from a noisy version of the determinantal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, the output of the quantum circuit is not a sample from the precise determinantal distribution but from a noisy version of it, and this noise depends on the particular quantum circuit implemented and the quality of the hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of why hardware results differ from simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "697888b8-f9c6-4ba5-94b9-ba070415a91a",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C41",
+      "claim": "The variance in quantum hardware results is expected to reduce with better quality quantum computers.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, unlike for standard MissForest, this variance is not inherent in the algorithm and is expected to reduce considerably with the advent of better quality quantum computers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on understanding that variance is due to hardware noise.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "97544730-9fe8-421a-a981-b4fe70409ae6",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C42",
+      "claim": "The quantum circuits for determinantal sampling require a number of qubits equal to the batch size used for each decision tree.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantum circuits needed to efficiently perform determinantal sampling require a number of qubits equal to the batch size used for each decision tree within the Random Forest training and the depth of the quantum circuit is roughly proportional to the number of features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quantum resource requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "506be065-8ee0-47fd-9dc7-f9ab3f7858af",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C43",
+      "claim": "The depth of quantum circuits for determinantal sampling is roughly proportional to the number of features.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantum circuits needed to efficiently perform determinantal sampling require a number of qubits equal to the batch size used for each decision tree within the Random Forest training and the depth of the quantum circuit is roughly proportional to the number of features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quantum resource requirements.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "55cb9caa-560e-4671-b0e1-16409b5f7a7a",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C44",
+      "claim": "DPP-based imputation methods are computationally intensive and hard to parallelize due to the sequential nature of the algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "While our DPP-based imputation methods can run classically on small datasets such as MIMIC-III, they are computationally intensive and are hard to parallelize due to the sequential nature of the algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of classical DPP methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "4487744e-8b42-4342-a190-31a8b4ed00ed",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C45",
+      "claim": "DPP-based imputation methods become less efficient for larger datasets with bigger batches.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in less and less efficient imputation for larger datasets where DPP sampling is applied to bigger batches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a scalability limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "abe96528-d65f-4b17-8826-c1887d8ca1fd",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C46",
+      "claim": "The quantum DPP algorithm could provide a way to speed up imputation using next-generation quantum computers.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantum DPP algorithm therefore could provide a way to speed up the hardest part of the imputer using a next-generation quantum computer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about future quantum computing applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "987d5a0f-3d0f-4bd0-9962-a4d87ab868d6",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C47",
+      "claim": "The proposed algorithms can have impact on reliability of models in high-precision settings such as pharmaceutical drug trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results, we anticipate an impact of our algorithms on the reliability of models in high-precision value settings, including in pharmaceutical drug trials where they can provide higher confidence in the predictions made by eradicating the stochastic variance due to multiple imputations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the practical impact of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "be6d50ea-5719-442f-8443-f19fd75e811b",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C51",
+      "claim": "The probability of sampling similar points that form a smaller volume is reduced in DPP sampling in favor of more diverse samples.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this distribution, the probability of sampling points that are similar and thus form a smaller volume is reduced in favor of samples that are more diverse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the diversity-promoting property of DPPs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "2862b584-0139-4274-9dd7-8af045b2ec19",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C55",
+      "claim": "Deterministic algorithms are important for clinical data because they are more interpretable, less prone to errors, and have no failure probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic DPP sampling may be efficient in practice; however, deterministic algorithms are important for different use cases since they are more interpretable, are less prone to errors, and have no failure probability, which is especially relevant for clinical data (El Shawi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and reasoning about clinical applications.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "3ba688a8-2b9a-42e7-a75c-3a49050d4747",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C57",
+      "claim": "Random Forest trains decision trees on different samples from the dataset drawn uniformly with replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "The samples used to train each tree are drawn uniformly with replacement from the original dataset (bootstrapping).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes standard Random Forest methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "8faba983-fe6a-4a89-a186-aadff1c53e5f",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C58",
+      "claim": "DPP-Random Forest replaces uniform sampling with DPP sampling without replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "The DPP-Random Forest algorithm (see Figure 4) replaces the uniform sampling with DPP sampling without replacement.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the key modification in DPP-Random Forest, with reference to Figure 4.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "df4899b1-1375-4da1-b3f9-3503656fe588",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C62",
+      "claim": "Determinantal sampling for regression and classification with full data has been proposed previously for linear regressors.",
+      "claim_type": "EXPLICIT",
+      "source": "Determinantal sampling for regression and classification tasks with full data has been proposed previously for linear regressors (Derezi\u0144ski et al., 2018) and for Random Forest training for a financial data classification use case where it outperformed the standard Random Forest model (Thakkar et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "2976f06f-2594-4f5b-8c2e-753ce83613e2",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C63",
+      "claim": "Determinantal sampling for Random Forest training outperformed standard Random Forest in a financial data classification use case.",
+      "claim_type": "EXPLICIT",
+      "source": "Determinantal sampling for regression and classification tasks with full data has been proposed previously for linear regressors (Derezi\u0144ski et al., 2018) and for Random Forest training for a financial data classification use case where it outperformed the standard Random Forest model (Thakkar et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Thakkar et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "ed764592-1fe3-4e10-8fce-0f90e6132e93",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C64",
+      "claim": "The distributions of in-bag DPP samples and out-of-bag samples may be different, potentially leading to inaccurate OOB error calculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Let us note that the distributions of the in-bag DPP samples, which are biased toward diversity, and the out-of-bag (OOB) samples, which reflect the original dataset's distribution, may be different. This could lead to an inaccurate calculation of the OOB error that can be in fact overestimated (Janitza and Hornung, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a potential limitation noted with citation support.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "d243a9cf-6a55-4e81-b067-37c8b7f74bd4",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C65",
+      "claim": "Quantum machine learning has been a rapidly developing field with many applications explored including with biomedical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantum machine learning has been a rapidly developing field and many applications have been explored, including with biomedical data, both using quantum algorithms to speedup linear algebraic procedures and through quantum neural networks (Cerezo et al., 2022; Biamonte et al., 2017; Landman et al., 2022; Cherrat et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "bd07b28b-80ce-4315-8d16-ffe6f5bdc31f",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C66",
+      "claim": "Quantum algorithms for determinantal sampling have better computational complexity than the best known classical methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In Kerenidis and Prakash, 2022, it was shown that there exist quantum algorithms for performing the determinantal sampling with better computational complexity than the best known classical methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "e5b32b63-461c-4fc0-83b7-c0b3b1907ed3",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C68",
+      "claim": "Three different versions of the Clifford loader are provided that take advantage of specific connectivity of quantum hardware.",
+      "claim_type": "EXPLICIT",
+      "source": "We provide in Figure 6 three different versions of the Clifford loader that take advantage of the specific connectivity of the quantum hardware, for example, grid connectivity for superconducting qubits or all-to-all connectivity for trapped-ion qubits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6 with different circuit designs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "98fb4dd9-f5c9-47a2-95b7-a8f8e88370fa",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C69",
+      "claim": "The Clifford loader constructions are optimal up to constant factor on the number of two-qubit gates.",
+      "claim_type": "EXPLICIT",
+      "source": "These constructions are optimal (up to constant factor) on the number of two-qubit gates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the optimality of the circuit designs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "2480e569-d5cc-41ae-88c3-f60039d2bc91",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C70",
+      "claim": "Directly measuring at the end of the quantum DPP circuit provides a sample from the correct determinantal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Directly measuring at the end of the circuit provides a sample from the correct determinantal distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the quantum circuit produces DPP samples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "217ec9f6-13ec-4f88-88c6-715a7abfdd65",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C71",
+      "claim": "Classical and quantum DPP algorithms require a preprocessing step with similar complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the classical and the quantum algorithms require a preprocessing step with a similar complexity (see Table 8), and the improvement using the quantum method achieves a quadratic to cubic speedup in the sampling step.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 8 comparing complexities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "815a9c61-ef87-4469-83e3-19647597879a",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C72",
+      "claim": "The quantum method achieves a quadratic to cubic speedup in the sampling step compared to classical methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the classical and the quantum algorithms require a preprocessing step with a similar complexity (see Table 8), and the improvement using the quantum method achieves a quadratic to cubic speedup in the sampling step.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 8 comparing complexities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "afabc6cc-9829-4a3b-9f0c-b287e14f434e",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C74",
+      "claim": "The quantum DPP algorithm is efficient in terms of the number of measurements required since one measurement is equivalent to generating one DPP sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the quantum DPP algorithm is efficient in terms of the number of measurements required since one measurement is equivalent to generating one DPP sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an efficiency property of the quantum algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "e770e3f6-cb55-46e2-a35f-22ba2ae343b3",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C75",
+      "claim": "The quantum circuit does not efficiently give a classical description of the entire determinantal distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We can also define a variant of the deterministic algorithms, though here we need to pay attention to the fact that the quantum circuit enables to sample from the determinantal distribution but does not efficiently give us a classical description of the entire distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the quantum approach for deterministic sampling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "e7a5dc13-e55e-43ee-a77d-4e9845424adb",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C76",
+      "claim": "For the quantum deterministic variant, one can sample many times and output the most frequent element to provide a sample with less variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, one can instead sample many times from the quantum circuit and output the most frequent element. This provides a sample with less variance but it only becomes deterministic in the limit of infinite measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approach for approximating deterministic sampling with quantum circuits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "3198bcca-9ab5-4e4a-aa93-6589841e4e0f",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C77",
+      "claim": "In the experiments, 1000 shots were used and samples from quantum circuits were most of the time the highest probability elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiments we performed, we used 1000 shots and the samples from the quantum circuits were indeed most of the time the highest probability elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach and observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "f36a9ac8-e482-4139-840d-a26f92cfd855",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C78",
+      "claim": "The quantum imputation algorithm will have good performance even with few samples because any high-probability element provides needed diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Note though that the quantum imputation algorithm will still have a good performance even with few samples (any high-probability element provides the needed diversity of the inputs), though it will not be deterministic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reasoning about why the quantum algorithm is still useful even without perfect determinism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "b36b38cc-3f15-4bef-abf6-6ca3385f9654",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C79",
+      "claim": "The code for the different DPP imputation methods is publicly available at github.com/AstraZeneca/dpp_imp.",
+      "claim_type": "EXPLICIT",
+      "source": "The code for the different DPP imputation methods is publicly available at github.com/AstraZeneca/dpp_imp, (copy archived at AstraZeneca, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the availability of code for reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "02395fec-ee23-46f9-af08-b81f41d51f78",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C80",
+      "claim": "The synthetic dataset can be generated using the make_classification method from scikit-learn.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic dataset can be generated using the make_classification method from scikit-learn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how to reproduce the synthetic dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "0a7001b2-cd7a-4ddc-acf9-1e1985292bd5",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "claim_id": "C81",
+      "claim": "The MIMIC-III dataset is publicly available.",
+      "claim_type": "EXPLICIT",
+      "source": "The MIMIC-III dataset (Johnson et al., 2016) is also publicly available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the availability of the clinical dataset used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4eade14d-d1a2-4369-9f29-08420c325c7f",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Missing clinical data is a common and significant problem in machine learning applications. The authors establish that there is no canonical approach for handling missing data, and that widely used imputation algorithms introduce variance in downstream classification tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C8-C13 collectively establish the problem context through direct statements and citations to prior work. These are well-established facts in the field supported by multiple references, providing solid motivation for the proposed methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "8d89425d-63e0-47cb-98c0-68bf2b6f8c9b",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MiceRanger and MissForest are established as the best-performing iterative imputation methods for clinical data, serving as appropriate baselines for comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by citation to Shadbahr et al., 2022, which provides empirical evidence for the superiority of these methods. Claim C9 establishes the broader context of machine learning applications in clinical research through multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "9a064ff9-ec2b-438a-a8ab-9d11e71501e7",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Determinantal point processes (DPPs) provide a principled approach to sampling diverse subsets of data by weighting subsets according to the volume they span, which is particularly beneficial for unbalanced datasets common in clinical applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C51 provide mathematical and conceptual descriptions of DPP sampling supported by citations. Claims C35-C36 explain the benefits for clinical data. The theoretical foundation is well-established in cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "88f294db-c8fa-4a6d-b0ba-71e476a5955f",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Standard Random Forest and stochastic DPP algorithms produce variable imputations across runs, motivating the use of deterministic DPP variants that provide more robust and reliable results, which is especially important for clinical applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C55 establish the problem of stochasticity and the solution through deterministic sampling. The reasoning is sound and supported by citation to Schreurs and Suykens, 2021, and El Shawi et al., 2019 for clinical relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "2ecf3ccc-16fe-414b-ade8-7c79be12218a",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DPP-MICE and detDPP-MICE improve downstream classification accuracy compared to standard MICE across multiple datasets and missingness types, with detDPP-MICE providing deterministic imputations that outperform MICE in all 12 experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 summarize experimental results from Tables 1-2 showing consistent improvements. The data supports the claims with 10 replications per experiment. However, the improvements are modest (typically 0.001-0.008 AUC units) and statistical significance testing is not reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "2aee485f-b32b-4153-9cb5-9285cae7b710",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DPP-MissForest and detDPP-MissForest improve downstream classification accuracy compared to standard MissForest across all experimental conditions, with detDPP-MissForest providing deterministic imputations that outperform MissForest in all 12 datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 summarize experimental results from Tables 1 and 3 showing consistent improvements across all 12 experiments. The pattern of improvement is more consistent than for MICE-based methods. However, statistical significance is not formally tested, and effect sizes are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "9c18dfd6-c581-463b-9f3e-c05203f9fe93",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Deterministic DPP methods (detDPP-MICE and detDPP-MissForest) eliminate variance in classification results by providing single deterministic imputations, as demonstrated by zero variance across repeated runs in simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C38 are supported by Tables 2-3 showing single values (no variance) for detDPP methods compared to distributions for stochastic methods. This is a direct consequence of the deterministic algorithm design and is clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "81faf6a8-9d43-4c9f-9db7-a712cdf19149",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Quantum algorithms for DPP sampling offer theoretical computational advantages over classical methods, with linear scaling in the number of features compared to cubic classical complexity, achieving quadratic to cubic speedup in the sampling step.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C66, C71-C72 are supported by citations to theoretical work (Kerenidis and Prakash, 2022; Derezi\u0144ski and Mahoney, 2021) and complexity analysis in Table 8. The theoretical speedup is well-established, though practical speedup on current hardware is not demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "9eb2c83d-8f80-4b12-a187-dca0f0dc2284",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Quantum hardware implementation of DPP-MissForest on IBM's 27-qubit processor demonstrates competitive performance with classical methods for small-scale tasks (up to 10 qubits), with simulated quantum versions showing AUC improvements over standard MissForest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C32 and C34 describe quantum experiments with data in Tables 5-6. While simulations show improvements, hardware results are highly variable and often worse than classical methods due to noise. The claim of \"competitive\" performance (C7, C34) is ambiguous\u2014hardware results sometimes match classical methods but often underperform. The scale (10 qubits) is too small to demonstrate practical quantum advantage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "9982305e-b208-4d20-9da6-1a3125e4738d",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Variance observed in quantum hardware implementations is attributed to hardware noise rather than algorithmic stochasticity, and is expected to decrease with improved quantum computers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C39-C40 are supported by comparing simulation results (deterministic) with hardware results (variable) in Tables 5-6. The inference that noise causes variance is reasonable. However, C41 is speculative about future hardware improvements, though the reasoning is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "a15c30ce-6765-4c4d-8dda-5922074d6495",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The quantum DPP circuit implementation requires qubits equal to batch size with depth proportional to features, uses optimized Clifford loaders for different hardware connectivities, and efficiently produces DPP samples through direct measurement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 and C68-C70, C74 describe the quantum circuit design with support from Figures 6-7 and Table 7. The technical details are consistent with cited theoretical work and the circuit designs are shown. The optimality claim (C69) is stated but not proven in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "88b88ed2-747b-4fce-82ea-84f15cf67f39",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The quantum deterministic variant approximates deterministic sampling by taking the most frequent element from multiple measurements (1000 shots used), which provides reduced variance while maintaining good performance even without perfect determinism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 describe the quantum deterministic approach and its limitations. The approach is reasonable given quantum circuit constraints. Claim C77 provides experimental details. However, C78's claim of \"good performance\" is somewhat speculative and not rigorously validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "cda7030b-bf8e-4459-9997-e2d358452447",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Classical DPP-based imputation methods are computationally intensive and scale poorly to larger datasets, but quantum implementations could provide practical speedup on next-generation quantum computers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C45 acknowledge computational limitations of classical DPP methods, which is honest and supported by complexity analysis. However, claims C46 and C37 about future quantum speedup are speculative. While theoretical speedup exists, practical demonstration requires quantum hardware that doesn't yet exist at the required scale and quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "77a9b334-f7c1-4aba-976a-f746aba0382b",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The proposed algorithms are anticipated to impact reliability of models in high-precision settings such as pharmaceutical drug trials by providing higher confidence through elimination of stochastic variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 is speculative about practical impact. While the elimination of variance is demonstrated, the modest AUC improvements and lack of validation in actual drug trial settings make the anticipated impact uncertain. The reasoning is plausible but requires further validation in real-world applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "464b74d8-e4ba-44de-99e9-bacb4b450ca0",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Experiments used a synthetic dataset (2000 rows, 25 features) and the MIMIC-III clinical dataset (7214 patients, 14 features), with code and data publicly available for reproducibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 and C79-C81 describe experimental datasets and reproducibility resources. The datasets are well-described and publicly available. Code availability supports reproducibility. These are straightforward methodological details that are adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "55abe00e-7a47-48c8-9096-f21799e24362",
+      "content_id": "a241f281-6776-43f5-b48a-35d3f11bc137",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "DPP-Random Forest modifies standard Random Forest by replacing uniform bootstrapping with DPP sampling without replacement, building on prior work showing benefits for linear regressors and financial classification, though potential OOB error estimation issues are noted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe the algorithmic modification clearly with Figure 4 support. Claims C62-C63 provide context from prior work through citations. Claim C64 acknowledges a potential limitation with citation support. The methodological description is clear and appropriately contextualized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "7993e003-2356-49f7-899d-f248bd919a8e",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The DPP-based imputation methods (DPP-MICE, detDPP-MICE, DPP-MissForest, and detDPP-MissForest) improve classification accuracy compared to baseline methods (MICE and MissForest) across 12 dataset experiments on synthetic and MIMIC-III clinical data. The deterministic variants (detDPP) consistently outperform both baseline methods and stochastic DPP variants.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer states that 'the methods presented in this work provide modest yet consistent accuracy improvements for data classification tasks where certain data are missing' and describes 'the methodology and results for the classical (non-quantum) case are solid.' The anonymous reviewer acknowledges 'the sampling method for imputing missing values that account for the variability of the data seems to be accurate.' Both reviewers accept the accuracy improvements without challenging the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "98c8e2a6-f6db-493a-948e-f331ddcbefae",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The deterministic DPP-based methods (detDPP-MICE and detDPP-MissForest) provide deterministic imputations that eliminate variance in downstream classification results, unlike standard stochastic methods. When simulated without hardware noise, the quantum version also produces deterministic outputs with zero variance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The anonymous reviewer raises a significant concern about this claim, questioning whether 'there could be some spurious interaction between the imputation and the classification methods, that could bias the data in the sense of having a better classification, but not imputing the real values; in particular when the deterministic DPP is used.' The reviewer suggests the authors should evaluate imputations directly rather than only through downstream classification performance, indicating uncertainty about whether the deterministic property truly reflects accurate imputation or merely optimization for classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "793bbb2b-9b77-4dc6-943c-e22450f64111",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Quantum algorithms for DPP sampling provide theoretical computational advantages over classical methods, with running time scaling linearly (quantum) versus cubically (classical) with the number of features, achieving quadratic to cubic speedup in the sampling step after similar preprocessing complexity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The first reviewer explicitly states that 'evidence for the practical quantum advantage via their approach in \"next generation\" quantum computers remains incomplete,' indicating skepticism about the practical realization of the theoretical speedup claims. While the theoretical complexity advantage is cited from prior work, the reviewer questions whether this translates to practical advantage, leaving the quantum computational benefit uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "b1ffa4f2-caa7-4f2d-a6fd-73594357d7a4",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Quantum hardware experiments on IBM's 27-qubit processor with circuits up to 10 qubits demonstrate competitive results with standard methods for small-scale imputation tasks. Simulated quantum DPP-MissForest shows AUC improvements over MissForest, and hardware results are often close to simulation values.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer acknowledges the quantum hardware experiments as part of the work and states 'the results are valuable and should interest data scientists, life scientists and anyone working in quantum computing.' While noting limitations about future quantum advantage, the reviewer does not challenge the actual hardware experimental results presented, accepting them as demonstrating competitive performance at the small scale tested.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "0be6a02a-0642-4326-8907-889b958b9204",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Variance observed in quantum hardware results is caused by noise in the current quantum hardware rather than being inherent to the algorithm. The output represents a sample from a noisy version of the determinantal distribution, and this variance is expected to reduce with better quality quantum computers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer challenges this interpretation of the quantum hardware noise. The first reviewer's comment about incomplete evidence for practical quantum advantage relates to future scalability rather than disputing the noise characterization. The explanation that hardware noise causes variance (rather than algorithmic randomness) is accepted as a reasonable interpretation of the experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "07235ef6-e610-4ccf-9c61-6370f2f33892",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Missing clinical data is a common problem in life sciences due to incomplete data collection, format discrepancies, and corruption. There is no canonical imputation approach, and widely used algorithms introduce variance in downstream classification. Machine learning algorithms require complete datasets, and missing values significantly affect model quality.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer challenges these background claims about the problem of missing data in clinical settings. These are presented as established knowledge and motivation for the work, and both reviewers accept the problem framing without objection.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "ded20eaf-3745-4498-89da-5f2de6d78754",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Determinantal point processes (DPP) sample subsets based on diversity (volume in feature space), giving more weight to diverse data points and reducing attention to similar points. This improves prediction accuracy particularly for unbalanced datasets like clinical data. DPP-Random Forest replaces uniform bootstrapping with DPP sampling without replacement.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer explicitly states as a strength that 'the sampling method for imputing missing values that account for the variability of the data seems to be accurate.' Neither reviewer challenges the theoretical basis or mechanism of DPP sampling. The methodology is accepted as sound.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "cbc24649-f011-44a7-9641-c132bf111194",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "DPP-based imputation methods are computationally intensive and hard to parallelize due to their sequential nature, becoming less efficient for larger datasets with bigger batches. Quantum circuits require qubits equal to batch size with depth proportional to features. Quantum DPP algorithms could speed up imputation on next-generation quantum computers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These computational limitations and resource requirements are stated by the authors and not disputed by reviewers. The first reviewer's skepticism about practical quantum advantage relates to whether future quantum computers will deliver the speedup, not to the characterization of classical computational challenges or quantum resource requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "1c84a532-7652-4f36-8640-bb2b2329409b",
+      "content_id": "3cb14c84-3fa4-4d82-ae3c-b882ff5ba9b6",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The proposed algorithms can impact reliability of models in high-precision settings such as pharmaceutical drug trials by providing higher confidence in predictions through elimination of stochastic variance from multiple imputations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim about practical impact is speculative. The anonymous reviewer's concern about potential spurious interactions between imputation and classification methods directly questions whether the deterministic property truly provides the claimed reliability benefits, particularly for clinical applications. The reviewer's suggestion to evaluate imputations directly indicates uncertainty about whether improved classification necessarily means improved imputation quality.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "27234b25-9643-41ab-9851-bec621ce6b2a",
+      "result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f"
+    },
+    {
+      "claim_id": "893f9877-4eea-457c-834e-3c1b001e70fc",
+      "result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f"
+    },
+    {
+      "claim_id": "55c4102a-9dbe-4bf0-82ff-27f7dec185ad",
+      "result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f"
+    },
+    {
+      "claim_id": "ded5da08-5bd3-4801-a745-0ff9632a6f1e",
+      "result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f"
+    },
+    {
+      "claim_id": "308aeb3f-9055-4dde-a7c2-dc2978900cd1",
+      "result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f"
+    },
+    {
+      "claim_id": "b61ac8a8-cffd-4e93-b615-4aff562fa412",
+      "result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f"
+    },
+    {
+      "claim_id": "9f53d2a1-e6e3-463e-b1da-2eadefbdb5c3",
+      "result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f"
+    },
+    {
+      "claim_id": "31f53dcf-8a4e-4599-8b45-111d4c24bb92",
+      "result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f"
+    },
+    {
+      "claim_id": "68f63507-7b8e-471e-aa43-82b0720e1156",
+      "result_id": "8d89425d-63e0-47cb-98c0-68bf2b6f8c9b"
+    },
+    {
+      "claim_id": "132990ee-09be-4c93-be50-448b38411b8e",
+      "result_id": "8d89425d-63e0-47cb-98c0-68bf2b6f8c9b"
+    },
+    {
+      "claim_id": "fdaae297-61a9-4dee-bde5-023716f7eb5d",
+      "result_id": "9a064ff9-ec2b-438a-a8ab-9d11e71501e7"
+    },
+    {
+      "claim_id": "4ca00aa1-bc4e-4383-a675-77470fcf4c7d",
+      "result_id": "9a064ff9-ec2b-438a-a8ab-9d11e71501e7"
+    },
+    {
+      "claim_id": "41b12558-5b4d-4a1a-84e0-e073d11705b1",
+      "result_id": "9a064ff9-ec2b-438a-a8ab-9d11e71501e7"
+    },
+    {
+      "claim_id": "be6d50ea-5719-442f-8443-f19fd75e811b",
+      "result_id": "9a064ff9-ec2b-438a-a8ab-9d11e71501e7"
+    },
+    {
+      "claim_id": "84054964-023d-4a9a-9162-80ec1c197f0c",
+      "result_id": "9a064ff9-ec2b-438a-a8ab-9d11e71501e7"
+    },
+    {
+      "claim_id": "05f5ea83-f1c5-4e7c-8e2d-3ea58682f71c",
+      "result_id": "9a064ff9-ec2b-438a-a8ab-9d11e71501e7"
+    },
+    {
+      "claim_id": "aa0bdbea-df7f-4910-97f7-1de65f904abe",
+      "result_id": "88f294db-c8fa-4a6d-b0ba-71e476a5955f"
+    },
+    {
+      "claim_id": "3cd12359-bbe6-4a17-9c9d-d296250e5c56",
+      "result_id": "88f294db-c8fa-4a6d-b0ba-71e476a5955f"
+    },
+    {
+      "claim_id": "2862b584-0139-4274-9dd7-8af045b2ec19",
+      "result_id": "88f294db-c8fa-4a6d-b0ba-71e476a5955f"
+    },
+    {
+      "claim_id": "c1aa6ebf-a3a2-4cf6-8f55-09fd1d081048",
+      "result_id": "2ecf3ccc-16fe-414b-ade8-7c79be12218a"
+    },
+    {
+      "claim_id": "dceeb94b-a97f-48f9-ab79-5f92b9f022ed",
+      "result_id": "2ecf3ccc-16fe-414b-ade8-7c79be12218a"
+    },
+    {
+      "claim_id": "32d7e4cb-aeda-47d2-baea-c480f56955d5",
+      "result_id": "2ecf3ccc-16fe-414b-ade8-7c79be12218a"
+    },
+    {
+      "claim_id": "b5f79bf9-7243-4a96-ada5-aa8591ecf02e",
+      "result_id": "2ecf3ccc-16fe-414b-ade8-7c79be12218a"
+    },
+    {
+      "claim_id": "c1aa6ebf-a3a2-4cf6-8f55-09fd1d081048",
+      "result_id": "2aee485f-b32b-4153-9cb5-9285cae7b710"
+    },
+    {
+      "claim_id": "ef0862d6-d50e-4bc2-9f9f-ad1050ba21be",
+      "result_id": "2aee485f-b32b-4153-9cb5-9285cae7b710"
+    },
+    {
+      "claim_id": "30a54fe1-1a0e-46c8-b1b8-6fdb143816c7",
+      "result_id": "2aee485f-b32b-4153-9cb5-9285cae7b710"
+    },
+    {
+      "claim_id": "c95a6a7c-b24e-438f-9233-549eb0e1bc90",
+      "result_id": "2aee485f-b32b-4153-9cb5-9285cae7b710"
+    },
+    {
+      "claim_id": "13256987-3cf8-4a90-ac58-74431a4a60b0",
+      "result_id": "9c18dfd6-c581-463b-9f3e-c05203f9fe93"
+    },
+    {
+      "claim_id": "14e752ba-6485-46b6-be4f-1e410b9419df",
+      "result_id": "9c18dfd6-c581-463b-9f3e-c05203f9fe93"
+    },
+    {
+      "claim_id": "d472badd-ccd0-47ca-ba82-5c583dce450a",
+      "result_id": "81faf6a8-9d43-4c9f-9db7-a712cdf19149"
+    },
+    {
+      "claim_id": "940f842c-5a3b-4fa4-b203-50964af7ff48",
+      "result_id": "81faf6a8-9d43-4c9f-9db7-a712cdf19149"
+    },
+    {
+      "claim_id": "bd07b28b-80ce-4315-8d16-ffe6f5bdc31f",
+      "result_id": "81faf6a8-9d43-4c9f-9db7-a712cdf19149"
+    },
+    {
+      "claim_id": "217ec9f6-13ec-4f88-88c6-715a7abfdd65",
+      "result_id": "81faf6a8-9d43-4c9f-9db7-a712cdf19149"
+    },
+    {
+      "claim_id": "815a9c61-ef87-4469-83e3-19647597879a",
+      "result_id": "81faf6a8-9d43-4c9f-9db7-a712cdf19149"
+    },
+    {
+      "claim_id": "bcbdb8bb-a39c-4e70-bec7-1edbc30dd0cc",
+      "result_id": "9eb2c83d-8f80-4b12-a187-dca0f0dc2284"
+    },
+    {
+      "claim_id": "01b1dc14-ba71-4f8f-97ae-72274f43191f",
+      "result_id": "9eb2c83d-8f80-4b12-a187-dca0f0dc2284"
+    },
+    {
+      "claim_id": "56ccd034-2bf6-43ca-9298-917f99ad188c",
+      "result_id": "9eb2c83d-8f80-4b12-a187-dca0f0dc2284"
+    },
+    {
+      "claim_id": "75147e7e-9536-4f60-8393-72758e3368b8",
+      "result_id": "9eb2c83d-8f80-4b12-a187-dca0f0dc2284"
+    },
+    {
+      "claim_id": "d7782820-850c-46b7-908f-2f13fb04f482",
+      "result_id": "9eb2c83d-8f80-4b12-a187-dca0f0dc2284"
+    },
+    {
+      "claim_id": "e7cf3471-48df-4dd0-9e5c-d1910904462a",
+      "result_id": "9eb2c83d-8f80-4b12-a187-dca0f0dc2284"
+    },
+    {
+      "claim_id": "0b99f201-57bc-41fb-8472-1142da1086f7",
+      "result_id": "9982305e-b208-4d20-9da6-1a3125e4738d"
+    },
+    {
+      "claim_id": "11326329-0fa5-4432-82cc-81c48692ea20",
+      "result_id": "9982305e-b208-4d20-9da6-1a3125e4738d"
+    },
+    {
+      "claim_id": "ca9ab6e4-10a7-490f-8efd-911f425b924d",
+      "result_id": "9982305e-b208-4d20-9da6-1a3125e4738d"
+    },
+    {
+      "claim_id": "697888b8-f9c6-4ba5-94b9-ba070415a91a",
+      "result_id": "9982305e-b208-4d20-9da6-1a3125e4738d"
+    },
+    {
+      "claim_id": "97544730-9fe8-421a-a981-b4fe70409ae6",
+      "result_id": "a15c30ce-6765-4c4d-8dda-5922074d6495"
+    },
+    {
+      "claim_id": "506be065-8ee0-47fd-9dc7-f9ab3f7858af",
+      "result_id": "a15c30ce-6765-4c4d-8dda-5922074d6495"
+    },
+    {
+      "claim_id": "e5b32b63-461c-4fc0-83b7-c0b3b1907ed3",
+      "result_id": "a15c30ce-6765-4c4d-8dda-5922074d6495"
+    },
+    {
+      "claim_id": "98fb4dd9-f5c9-47a2-95b7-a8f8e88370fa",
+      "result_id": "a15c30ce-6765-4c4d-8dda-5922074d6495"
+    },
+    {
+      "claim_id": "2480e569-d5cc-41ae-88c3-f60039d2bc91",
+      "result_id": "a15c30ce-6765-4c4d-8dda-5922074d6495"
+    },
+    {
+      "claim_id": "afabc6cc-9829-4a3b-9f0c-b287e14f434e",
+      "result_id": "a15c30ce-6765-4c4d-8dda-5922074d6495"
+    },
+    {
+      "claim_id": "e770e3f6-cb55-46e2-a35f-22ba2ae343b3",
+      "result_id": "88b88ed2-747b-4fce-82ea-84f15cf67f39"
+    },
+    {
+      "claim_id": "e7a5dc13-e55e-43ee-a77d-4e9845424adb",
+      "result_id": "88b88ed2-747b-4fce-82ea-84f15cf67f39"
+    },
+    {
+      "claim_id": "3198bcca-9ab5-4e4a-aa93-6589841e4e0f",
+      "result_id": "88b88ed2-747b-4fce-82ea-84f15cf67f39"
+    },
+    {
+      "claim_id": "f36a9ac8-e482-4139-840d-a26f92cfd855",
+      "result_id": "88b88ed2-747b-4fce-82ea-84f15cf67f39"
+    },
+    {
+      "claim_id": "55cb9caa-560e-4671-b0e1-16409b5f7a7a",
+      "result_id": "cda7030b-bf8e-4459-9997-e2d358452447"
+    },
+    {
+      "claim_id": "4487744e-8b42-4342-a190-31a8b4ed00ed",
+      "result_id": "cda7030b-bf8e-4459-9997-e2d358452447"
+    },
+    {
+      "claim_id": "abe96528-d65f-4b17-8826-c1887d8ca1fd",
+      "result_id": "cda7030b-bf8e-4459-9997-e2d358452447"
+    },
+    {
+      "claim_id": "2c9ee947-225b-4d36-9f0b-fdf1b78dcffa",
+      "result_id": "cda7030b-bf8e-4459-9997-e2d358452447"
+    },
+    {
+      "claim_id": "987d5a0f-3d0f-4bd0-9962-a4d87ab868d6",
+      "result_id": "77a9b334-f7c1-4aba-976a-f746aba0382b"
+    },
+    {
+      "claim_id": "b34efed0-e8ee-401e-85c5-cce432494730",
+      "result_id": "464b74d8-e4ba-44de-99e9-bacb4b450ca0"
+    },
+    {
+      "claim_id": "a742052b-9c12-4b8c-8b13-48a0ad4c73ab",
+      "result_id": "464b74d8-e4ba-44de-99e9-bacb4b450ca0"
+    },
+    {
+      "claim_id": "b36b38cc-3f15-4bef-abf6-6ca3385f9654",
+      "result_id": "464b74d8-e4ba-44de-99e9-bacb4b450ca0"
+    },
+    {
+      "claim_id": "02395fec-ee23-46f9-af08-b81f41d51f78",
+      "result_id": "464b74d8-e4ba-44de-99e9-bacb4b450ca0"
+    },
+    {
+      "claim_id": "0a7001b2-cd7a-4ddc-acf9-1e1985292bd5",
+      "result_id": "464b74d8-e4ba-44de-99e9-bacb4b450ca0"
+    },
+    {
+      "claim_id": "3ba688a8-2b9a-42e7-a75c-3a49050d4747",
+      "result_id": "55abe00e-7a47-48c8-9096-f21799e24362"
+    },
+    {
+      "claim_id": "8faba983-fe6a-4a89-a186-aadff1c53e5f",
+      "result_id": "55abe00e-7a47-48c8-9096-f21799e24362"
+    },
+    {
+      "claim_id": "df4899b1-1375-4da1-b3f9-3503656fe588",
+      "result_id": "55abe00e-7a47-48c8-9096-f21799e24362"
+    },
+    {
+      "claim_id": "2976f06f-2594-4f5b-8c2e-753ce83613e2",
+      "result_id": "55abe00e-7a47-48c8-9096-f21799e24362"
+    },
+    {
+      "claim_id": "ed764592-1fe3-4e10-8fce-0f90e6132e93",
+      "result_id": "55abe00e-7a47-48c8-9096-f21799e24362"
+    },
+    {
+      "claim_id": "c1aa6ebf-a3a2-4cf6-8f55-09fd1d081048",
+      "result_id": "7993e003-2356-49f7-899d-f248bd919a8e"
+    },
+    {
+      "claim_id": "dceeb94b-a97f-48f9-ab79-5f92b9f022ed",
+      "result_id": "7993e003-2356-49f7-899d-f248bd919a8e"
+    },
+    {
+      "claim_id": "32d7e4cb-aeda-47d2-baea-c480f56955d5",
+      "result_id": "7993e003-2356-49f7-899d-f248bd919a8e"
+    },
+    {
+      "claim_id": "b5f79bf9-7243-4a96-ada5-aa8591ecf02e",
+      "result_id": "7993e003-2356-49f7-899d-f248bd919a8e"
+    },
+    {
+      "claim_id": "ef0862d6-d50e-4bc2-9f9f-ad1050ba21be",
+      "result_id": "7993e003-2356-49f7-899d-f248bd919a8e"
+    },
+    {
+      "claim_id": "30a54fe1-1a0e-46c8-b1b8-6fdb143816c7",
+      "result_id": "7993e003-2356-49f7-899d-f248bd919a8e"
+    },
+    {
+      "claim_id": "c95a6a7c-b24e-438f-9233-549eb0e1bc90",
+      "result_id": "7993e003-2356-49f7-899d-f248bd919a8e"
+    },
+    {
+      "claim_id": "13256987-3cf8-4a90-ac58-74431a4a60b0",
+      "result_id": "98c8e2a6-f6db-493a-948e-f331ddcbefae"
+    },
+    {
+      "claim_id": "aa0bdbea-df7f-4910-97f7-1de65f904abe",
+      "result_id": "98c8e2a6-f6db-493a-948e-f331ddcbefae"
+    },
+    {
+      "claim_id": "3cd12359-bbe6-4a17-9c9d-d296250e5c56",
+      "result_id": "98c8e2a6-f6db-493a-948e-f331ddcbefae"
+    },
+    {
+      "claim_id": "14e752ba-6485-46b6-be4f-1e410b9419df",
+      "result_id": "98c8e2a6-f6db-493a-948e-f331ddcbefae"
+    },
+    {
+      "claim_id": "bcbdb8bb-a39c-4e70-bec7-1edbc30dd0cc",
+      "result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111"
+    },
+    {
+      "claim_id": "d472badd-ccd0-47ca-ba82-5c583dce450a",
+      "result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111"
+    },
+    {
+      "claim_id": "940f842c-5a3b-4fa4-b203-50964af7ff48",
+      "result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111"
+    },
+    {
+      "claim_id": "2c9ee947-225b-4d36-9f0b-fdf1b78dcffa",
+      "result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111"
+    },
+    {
+      "claim_id": "bd07b28b-80ce-4315-8d16-ffe6f5bdc31f",
+      "result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111"
+    },
+    {
+      "claim_id": "217ec9f6-13ec-4f88-88c6-715a7abfdd65",
+      "result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111"
+    },
+    {
+      "claim_id": "815a9c61-ef87-4469-83e3-19647597879a",
+      "result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111"
+    },
+    {
+      "claim_id": "01b1dc14-ba71-4f8f-97ae-72274f43191f",
+      "result_id": "b1ffa4f2-caa7-4f2d-a6fd-73594357d7a4"
+    },
+    {
+      "claim_id": "56ccd034-2bf6-43ca-9298-917f99ad188c",
+      "result_id": "b1ffa4f2-caa7-4f2d-a6fd-73594357d7a4"
+    },
+    {
+      "claim_id": "75147e7e-9536-4f60-8393-72758e3368b8",
+      "result_id": "b1ffa4f2-caa7-4f2d-a6fd-73594357d7a4"
+    },
+    {
+      "claim_id": "d7782820-850c-46b7-908f-2f13fb04f482",
+      "result_id": "b1ffa4f2-caa7-4f2d-a6fd-73594357d7a4"
+    },
+    {
+      "claim_id": "e7cf3471-48df-4dd0-9e5c-d1910904462a",
+      "result_id": "b1ffa4f2-caa7-4f2d-a6fd-73594357d7a4"
+    },
+    {
+      "claim_id": "0b99f201-57bc-41fb-8472-1142da1086f7",
+      "result_id": "0be6a02a-0642-4326-8907-889b958b9204"
+    },
+    {
+      "claim_id": "11326329-0fa5-4432-82cc-81c48692ea20",
+      "result_id": "0be6a02a-0642-4326-8907-889b958b9204"
+    },
+    {
+      "claim_id": "ca9ab6e4-10a7-490f-8efd-911f425b924d",
+      "result_id": "0be6a02a-0642-4326-8907-889b958b9204"
+    },
+    {
+      "claim_id": "697888b8-f9c6-4ba5-94b9-ba070415a91a",
+      "result_id": "0be6a02a-0642-4326-8907-889b958b9204"
+    },
+    {
+      "claim_id": "27234b25-9643-41ab-9851-bec621ce6b2a",
+      "result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892"
+    },
+    {
+      "claim_id": "893f9877-4eea-457c-834e-3c1b001e70fc",
+      "result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892"
+    },
+    {
+      "claim_id": "55c4102a-9dbe-4bf0-82ff-27f7dec185ad",
+      "result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892"
+    },
+    {
+      "claim_id": "ded5da08-5bd3-4801-a745-0ff9632a6f1e",
+      "result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892"
+    },
+    {
+      "claim_id": "308aeb3f-9055-4dde-a7c2-dc2978900cd1",
+      "result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892"
+    },
+    {
+      "claim_id": "b61ac8a8-cffd-4e93-b615-4aff562fa412",
+      "result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892"
+    },
+    {
+      "claim_id": "9f53d2a1-e6e3-463e-b1da-2eadefbdb5c3",
+      "result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892"
+    },
+    {
+      "claim_id": "31f53dcf-8a4e-4599-8b45-111d4c24bb92",
+      "result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892"
+    },
+    {
+      "claim_id": "68f63507-7b8e-471e-aa43-82b0720e1156",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "fdaae297-61a9-4dee-bde5-023716f7eb5d",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "4ca00aa1-bc4e-4383-a675-77470fcf4c7d",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "41b12558-5b4d-4a1a-84e0-e073d11705b1",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "84054964-023d-4a9a-9162-80ec1c197f0c",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "05f5ea83-f1c5-4e7c-8e2d-3ea58682f71c",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "be6d50ea-5719-442f-8443-f19fd75e811b",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "2862b584-0139-4274-9dd7-8af045b2ec19",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "3ba688a8-2b9a-42e7-a75c-3a49050d4747",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "8faba983-fe6a-4a89-a186-aadff1c53e5f",
+      "result_id": "ded20eaf-3745-4498-89da-5f2de6d78754"
+    },
+    {
+      "claim_id": "97544730-9fe8-421a-a981-b4fe70409ae6",
+      "result_id": "cbc24649-f011-44a7-9641-c132bf111194"
+    },
+    {
+      "claim_id": "506be065-8ee0-47fd-9dc7-f9ab3f7858af",
+      "result_id": "cbc24649-f011-44a7-9641-c132bf111194"
+    },
+    {
+      "claim_id": "55cb9caa-560e-4671-b0e1-16409b5f7a7a",
+      "result_id": "cbc24649-f011-44a7-9641-c132bf111194"
+    },
+    {
+      "claim_id": "4487744e-8b42-4342-a190-31a8b4ed00ed",
+      "result_id": "cbc24649-f011-44a7-9641-c132bf111194"
+    },
+    {
+      "claim_id": "abe96528-d65f-4b17-8826-c1887d8ca1fd",
+      "result_id": "cbc24649-f011-44a7-9641-c132bf111194"
+    },
+    {
+      "claim_id": "987d5a0f-3d0f-4bd0-9962-a4d87ab868d6",
+      "result_id": "1c84a532-7652-4f36-8640-bb2b2329409b"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "9c05e245-b8bc-4f0c-988a-d115617a7b06",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "4eade14d-d1a2-4369-9f29-08420c325c7f",
+      "peer_result_id": "07235ef6-e610-4ccf-9c61-6370f2f33892",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on background claims (C1-C3, C8, C10-C13) establishing the problem context of missing data in clinical settings. Both evaluations find these well-established facts supported by citations, providing solid motivation for the work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "a812b33f-6351-4165-bdff-7e57fbb160d0",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "9982305e-b208-4d20-9da6-1a3125e4738d",
+      "peer_result_id": "0be6a02a-0642-4326-8907-889b958b9204",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C33, C39-C41 regarding quantum hardware noise causing variance. Both evaluations accept the interpretation that noise (rather than algorithmic randomness) causes variability in hardware results, finding this explanation reasonable and supported by experimental observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "c426162d-cb26-4507-80fc-e3d166a232d9",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "77a9b334-f7c1-4aba-976a-f746aba0382b",
+      "peer_result_id": "1c84a532-7652-4f36-8640-bb2b2329409b",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty regarding claim C47 about practical impact. Both evaluations find this speculative - OpenEval notes modest improvements and lack of real-world validation, while peer reviewer questions whether improved classification necessarily means improved imputation quality for clinical applications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "d1a72c32-de8e-407e-9e5c-4885eb9aa599",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "2ecf3ccc-16fe-414b-ade8-7c79be12218a",
+      "peer_result_id": "7993e003-2356-49f7-899d-f248bd919a8e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address classical experimental results (C4, C24-C26) showing consistent improvements. OpenEval finds claims supported but notes modest effect sizes and lack of statistical significance testing. Peer review accepts the accuracy improvements as solid without challenging the results, showing general agreement with minor reservations from OpenEval.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "667c3a4b-4663-47eb-b393-8fa14a69d9a0",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "2aee485f-b32b-4153-9cb5-9285cae7b710",
+      "peer_result_id": "7993e003-2356-49f7-899d-f248bd919a8e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate classical experimental results (C4, C27-C29) showing consistent improvements. OpenEval finds support but notes lack of formal statistical testing and modest effect sizes. Peer review accepts the methodology and results as solid, indicating agreement on the validity of findings despite OpenEval's methodological notes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "228cbbc9-258e-4443-b4f0-08b16fc03ea7",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "9eb2c83d-8f80-4b12-a187-dca0f0dc2284",
+      "peer_result_id": "b1ffa4f2-caa7-4f2d-a6fd-73594357d7a4",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on quantum hardware performance (C6-C7, C30-C32, C34). OpenEval rates as UNCERTAIN, noting high variability and ambiguous 'competitive' claims with hardware often underperforming. Peer review rates as SUPPORTED, accepting the hardware results as demonstrating competitive performance at small scale, showing disagreement on interpretation of quantum experimental results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "a975b9d7-5ef3-4814-9e2e-dcc78dd4fff7",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "9c18dfd6-c581-463b-9f3e-c05203f9fe93",
+      "peer_result_id": "98c8e2a6-f6db-493a-948e-f331ddcbefae",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant divergence on deterministic property claims (C5, C38). OpenEval finds these SUPPORTED by direct experimental evidence in Tables 2-3. Peer review rates as UNCERTAIN, questioning whether deterministic results reflect accurate imputation or spurious optimization for classification, suggesting need for direct imputation evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "e465c743-794c-44b7-a80e-e092ee0b5db5",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "88f294db-c8fa-4a6d-b0ba-71e476a5955f",
+      "peer_result_id": "98c8e2a6-f6db-493a-948e-f331ddcbefae",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on deterministic sampling rationale (C18-C19, C55). OpenEval finds the reasoning sound and supported by citations. Peer review's uncertainty focuses on C5 and C38 (downstream effects) rather than the foundational claims C18-C19, showing agreement on theoretical basis but divergence on practical implications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "851cdf6e-5caf-4db4-b0b6-6e78a18aefd8",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "81faf6a8-9d43-4c9f-9db7-a712cdf19149",
+      "peer_result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on quantum speedup claims (C20-C21, C66, C71-C72). OpenEval rates as SUPPORTED based on theoretical citations and complexity analysis, noting practical speedup not demonstrated. Peer review rates as UNCERTAIN, explicitly questioning whether theoretical advantage translates to practical benefit, showing skepticism about real-world quantum advantage.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "a1fe8b29-55ea-4a31-b892-d39dff2ad8bf",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "cda7030b-bf8e-4459-9997-e2d358452447",
+      "peer_result_id": "793bbb2b-9b77-4dc6-943c-e22450f64111",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address quantum advantage speculation (C37, C44-C46). OpenEval rates as UNCERTAIN, noting computational limitations are honest but future quantum speedup is speculative. Peer review also expresses uncertainty about practical quantum advantage in 'next generation' computers, showing agreement on the speculative nature of quantum benefits.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "c9a3ba93-b551-438b-b46c-17a6956c9346",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "cda7030b-bf8e-4459-9997-e2d358452447",
+      "peer_result_id": "cbc24649-f011-44a7-9641-c132bf111194",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate computational limitations (C44-C46). OpenEval rates as UNCERTAIN due to speculative quantum speedup claims despite acknowledged classical limitations. Peer review rates as SUPPORTED, accepting the characterization of computational challenges without disputing them, showing partial agreement on classical limitations but divergence on quantum solution prospects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "3a5ed9ab-fbc5-4b34-8793-dde85f665cb0",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "9a064ff9-ec2b-438a-a8ab-9d11e71501e7",
+      "peer_result_id": "ded20eaf-3745-4498-89da-5f2de6d78754",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address DPP theoretical foundation (C15-C17, C35-C36, C51). OpenEval finds these SUPPORTED by citations and mathematical descriptions. Peer review also rates as SUPPORTED, explicitly noting the sampling method appears accurate and accepting the theoretical basis, showing strong agreement on DPP methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "eec4c348-2c86-4c42-b8d6-6eaf24e2b3f0",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "a15c30ce-6765-4c4d-8dda-5922074d6495",
+      "peer_result_id": "cbc24649-f011-44a7-9641-c132bf111194",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address quantum circuit design (C42-C43). OpenEval finds claims SUPPORTED with consistent technical details and citations. Peer review also rates as SUPPORTED, accepting the computational characterization without dispute, showing agreement on technical quantum implementation details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "e857a664-1ff7-43ac-ab7c-6b44ca6eb124",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "55abe00e-7a47-48c8-9096-f21799e24362",
+      "peer_result_id": "ded20eaf-3745-4498-89da-5f2de6d78754",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address algorithmic modifications (C57-C58). OpenEval finds the methodological description SUPPORTED with clear documentation. Peer review also rates as SUPPORTED, accepting the sampling method as accurate, showing agreement on the technical approach and its presentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "890021fd-8cd0-4056-b189-1aa827e62bad",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "8d89425d-63e0-47cb-98c0-68bf2b6f8c9b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C14 and C9 about machine learning in clinical research and superiority of certain methods as SUPPORTED by citations. No corresponding peer review evaluation found for these specific background and contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "0caf1008-849f-4803-951b-a61cacf86241",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "a15c30ce-6765-4c4d-8dda-5922074d6495",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates quantum circuit design claims (C42-C43, C68-C70, C74) as SUPPORTED with technical details from figures and tables. While peer review addresses some overlapping claims (C42-C43) in R8, the full set of circuit design claims including optimality (C69) is only evaluated by OpenEval.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "92a50156-80ca-47df-9b4d-97e6f2864635",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "88b88ed2-747b-4fce-82ea-84f15cf67f39",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates quantum deterministic approach and limitations (C75-C78) as SUPPORTED, noting the approach is reasonable given constraints but performance claims are somewhat speculative. No corresponding peer review evaluation found for these specific quantum implementation details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    },
+    {
+      "id": "961a76f5-432d-4077-9e37-2bd693d9eaf4",
+      "submission_id": "352af923-1243-4386-8bc3-0822203529ca",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "464b74d8-e4ba-44de-99e9-bacb4b450ca0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates experimental datasets and reproducibility resources (C22-C23, C79-C81) as SUPPORTED, noting adequate documentation and code availability. No corresponding peer review evaluation found for these methodological and reproducibility claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:49:32.821281Z"
+    }
+  ]
+}

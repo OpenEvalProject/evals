@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors successfully inserted a 275 bp G4-array or G4-mutated control sequence at chr12:79872423\u201379872424 using CRISPR-Cas9 genome editing. The insertions were homozygous and confirmed by PCR and Sanger sequencing, with minimal GC content change in the control (72.4% vs 76.73%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C30 describe the experimental design and validation of the insertion. The methodology is clearly described with appropriate controls, and validation data (PCR, sequencing) are provided in Figures 1B and Figure 1\u2014figure supplement 3. The experimental design is sound with matched insertion sites and appropriate sequence controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33"
+    ],
+    "result": "In vivo G4 formation was confirmed in the G4-array insert but not in the G4-mutated control using BG4 antibody ChIP-qPCR. Significant BG4 binding was observed only in cells with the G4-array insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C32, C33 are supported by BG4 ChIP-qPCR data presented in Figure 2\u2014figure supplement 1. The data show clear differential binding between G4-array and control, with appropriate statistical testing (n=2, p<0.05). This validates that the inserted sequence forms G4 structures in vivo as intended.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C8",
+      "C36",
+      "C37",
+      "C38",
+      "C41"
+    ],
+    "result": "The G4-array insertion led to significant increases in enhancer histone marks H3K4Me1 and H3K27Ac compared to the G4-mutated control, while showing no G4-specific changes in H3K27Me3, H3K9Me3, or H3K4Me3. This pattern indicates enhancer-like characteristics of the inserted G4s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C41 are well-supported by ChIP-qPCR data in Figure 2A-E with appropriate replication (n=3) and statistical testing. The selective enrichment of enhancer marks (H3K4Me1, H3K27Ac) without changes in repressive or promoter marks provides strong evidence for enhancer-like function. The inference in C41 is reasonable given established knowledge about these histone marks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C12",
+      "C86"
+    ],
+    "result": "Four genes (PAWR, PPP1R12A, NAV3, and SLC6A15) showed increased expression in G4-array cells compared to G4-mutated control cells, with effects observed up to 5 Mb from the insertion site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C12, C86 are supported by mRNA expression data in Figure 3A with appropriate replication (n=3) and statistical significance. The distance-dependent analysis up to 5 Mb is clearly documented. However, only 4 of multiple tested genes showed significant changes, suggesting specificity rather than global effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C11"
+    ],
+    "result": "The G4-array insertion increased recruitment of Ser5-phosphorylated RNA Pol II at surrounding gene promoters and induced G4-dependent chromosomal looping interactions between the insertion site and gene promoters, detectable by 3C assay up to 1.6 Mb away.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C11 are supported by ChIP-qPCR (Figure 3B) and 3C data (Figure 3C) with n=3 replicates and statistical testing. However, there's a discrepancy: C11 claims effects up to 5 Mb, but the text states 3C could only detect interactions up to 1.6 Mb (NAV3). The 5 Mb claim appears to refer to gene expression rather than direct looping interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C9",
+      "C88",
+      "C89"
+    ],
+    "result": "The G4-array insertion led to modest recruitment of p300 and more substantial recruitment of functionally active acetylated p300/CBP compared to the G4-mutated control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C50, C9, C88, C89 are supported by ChIP-qPCR data in Figures 3D and 3E with appropriate replication (n=3) and statistical testing. The differential magnitude of recruitment (modest for p300, substantial for acetylated p300/CBP) is clearly shown in the data and supports the mechanistic link to enhancer function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C90"
+    ],
+    "result": "LNA-mediated disruption of the inserted G4s led to decreased expression of PPP1R12A and NAV3, and modest decreases in H3K4Me1 and H3K27Ac enhancer marks. These effects were specific to G4-array cells and not observed in G4-mutated control cells, demonstrating reversibility of G4-dependent enhancer functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57, C90 are supported by LNA treatment data in Figure 4 with appropriate controls and replication (n=3). The specificity is demonstrated by lack of effect in G4-mutated cells (Figure 4\u2014figure supplement 1). However, the decreases in histone marks are described as 'modest' and 'not marked,' which somewhat weakens the reversibility argument. The result still supports causality but suggests G4 disruption may not completely reverse all effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C83"
+    ],
+    "result": "The G4-array insertion induced more than twice as many genome-wide Hi-C interactions (6390) compared to the G4-mutated control (3133), while the control showed similar interaction numbers to unmodified HEK293T cells (3968). This demonstrates G4-specific induction of long-range chromatin interactions throughout the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C61, C83 are strongly supported by Hi-C data in Figure 5 and Supplementary file 1. The comparison with HEK293T control cells effectively rules out insertion artifacts. The >2-fold difference is substantial and the normalization for sequencing depth is appropriate. The genome-wide nature is demonstrated by circos plots showing trans-chromosomal interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "The G4-array induced increased Hi-C interactions both within the immediate TAD and throughout the genome, while preserving the overall TAD architecture. The chromatin domain structure remained largely unchanged compared to both the G4-mutated control and unmodified HEK293T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C62-C64, C67 are supported by Hi-C matrices in Figures 6A-B and Figure 6\u2014figure supplement 1. The preservation of TAD boundaries while increasing interactions is an important finding. The comparison with published HEK293T data strengthens the conclusion that insertions don't disrupt overall architecture. This demonstrates that G4s can modulate interactions within existing structural frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70",
+      "C84",
+      "C85"
+    ],
+    "result": "The G4-array induced significantly more Hi-C interactions in downstream regions compared to upstream regions. This asymmetry is explained by the insertion site being proximal to and downstream of a TAD boundary, which restricts upstream interactions while allowing downstream interactions within the TAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, C68-C70, C84, C85 are supported by Hi-C differential analysis in Figures 6C-F. The 'architectural stripe' pattern in Figure 6C clearly shows downstream enrichment. The mechanistic explanation invoking TAD boundary constraints (C69, C85) is a reasonable inference based on the Hi-C data and established TAD biology, though it remains somewhat speculative without direct testing of boundary function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "G4-array insertion at a second locus (10M) largely replicated enhancer-like effects observed at the 79M locus, including increased H3K4Me1 and H3K27Ac marks and enhanced expression of surrounding genes (KLRC2, KLRC1, NTF3). However, context-specific differences were evident, including increased H3K27Me3 (suggesting a poised enhancer state) and less marked H3K27Ac enrichment, indicating that G4 effects depend on adjacent chromatin context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82, C91-C93 are supported by data in Figure 7 with appropriate replication (n=3). The replication at a second locus strengthens causal claims. The context-dependent differences (C73, C74, C81, C82, C92) are important observations supported by the data, though the mechanistic basis remains speculative. The poised enhancer interpretation (C81, C92) is reasonable given the bivalent histone mark pattern and is supported by citation to prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C94",
+      "C95",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The findings demonstrate a causal role of G4 DNA structures in both enhancer function and long-range chromatin interactions. Results from two independent insertion loci show that DNA secondary structure motifs (G4s) directly control 3D chromatin state and gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, C94, C95, C119-C121 represent the main conclusions synthesizing all experimental results. The causal claim is well-supported by: (1) controlled insertion experiments with appropriate sequence controls, (2) validation of G4 formation in vivo, (3) demonstration of enhancer marks and gene activation, (4) Hi-C evidence of increased long-range interactions, (5) LNA-mediated reversibility, and (6) replication at two independent loci. The experimental design with matched controls at the same locus is particularly strong for establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C87"
+    ],
+    "result": "The inserted G4-array sequence functions as an enhancer element, as evidenced by enrichment of H3K4Me1 and H3K27Ac enhancer marks and recruitment of p300/acetylated p300/CBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C87 are inferences based on the histone mark and coactivator recruitment data (Figures 2, 3). The inference is well-supported by multiple converging lines of evidence: enhancer-specific histone marks, p300 recruitment, long-range gene activation, and chromatin looping. The characterization as 'enhancer-like' is appropriate and conservative given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Promoters of genes activated by the G4-array insertion (PAWR, PPP1R12A, NAV3, SLC6A15) harbor potential G4-forming sequences (pG4), and relative enrichment of pG4s was evident within significantly enhanced Hi-C contact points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C113 are supported by computational analysis shown in Figure 3\u2014figure supplement 1 and Figure 6F. The observation that activated gene promoters contain pG4s is interesting and consistent with the hypothesis of G4-G4 interactions mediating looping. However, this is correlative rather than causal evidence, and the functional significance of these pG4s is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C98",
+      "C99"
+    ],
+    "result": "The 79M insertion site (chr12:79872423\u201379872424) was selected because it was markedly isolated with minimal interactions with surrounding regions, devoid of G4-forming motifs within \u00b12.5 kb, and relatively sparse in long-range interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C98, C99 describe the rationale for site selection. C25 is supported by analysis of published Hi-C data (Rao et al., 2014) shown in Figure 1\u2014figure supplement 1. C26, C98, C99 are supported by computational sequence analysis. The selection criteria are appropriate for testing G4-specific effects by minimizing confounding from endogenous G4s and pre-existing interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C97"
+    ],
+    "result": "The inserted G4-array sequence was derived from the hTERT promoter region and was previously reported to form stable G4s in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C97 are supported by citations to prior literature (Lim et al., 2010; Monsen et al., 2020; Palumbo et al., 2009; Sharma et al., 2021). The choice of a well-characterized G4-forming sequence strengthens the experimental design. The in vivo G4 formation is independently validated in this study by BG4 ChIP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The authors acknowledge that impacts of mutations in the control sequence on binding of specific transcription factors, particularly SP1 (which binds G4s), cannot be ruled out as potential confounding factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is an appropriate caveat acknowledged by the authors. While the mutations were minimal and GC content was preserved, the possibility of altered transcription factor binding is a legitimate concern. This is a limitation of the control design, though the overall experimental approach with multiple lines of evidence still supports the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C39",
+      "C40",
+      "C51",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The manuscript provides extensive background on G4 biology, including their roles in gene regulation, chromatin organization, and long-range interactions, drawing from prior literature. This includes correlations between G4s and enhancer marks, TAD boundaries, and various mechanisms of G4-mediated chromatin looping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C24, C39, C40, C51, C101-C111, C114-C118 represent background knowledge and prior work, all supported by appropriate citations. These claims establish the context and rationale for the current study. The authors accurately represent prior work, though most of these studies showed correlations rather than causation, which motivates the current experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The authors speculate that G4-mediated chromatin interactions may be contextually dependent on the type of G4 structure in addition to adjacent sequence context, noting that further studies will be necessary to elucidate these factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is explicitly speculative about future research directions. While the context-dependence observed between the two insertion sites (79M vs 10M) supports the general idea, the specific role of G4 structure type is not tested in this study. This is an appropriate direction for future work but cannot be evaluated as supported or unsupported based on current data.",
+    "result_type": "MINOR"
+  }
+]

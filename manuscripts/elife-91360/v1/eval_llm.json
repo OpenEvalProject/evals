@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C112"
+    ],
+    "result": "BADGERS is a powerful method that uses GWAS summary statistics to perform biobank-wide association scans without requiring multiple traits measured in the same cohort. Simulation studies demonstrate that BADGERS provides consistent effect estimates and comparable statistical power to regression analysis based on individual-level data, without inflating type-I error rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide comprehensive simulation evidence showing BADGERS controls type-I error, produces highly consistent effect estimates with individual-level regression (C24), and achieves comparable statistical power (C25). The method's performance is well-validated through multiple simulation settings, supporting the claims about its capabilities (C1, C2, C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Application of BADGERS to two independent AD datasets (n=61,212) identified 48 significant trait associations with AD after meta-analysis. The strongest associations include family history of AD/dementia (p=3.7e-77 maternal, p=5.2e-28 paternal), high cholesterol (p=2.5e-15), and multiple cognitive/intelligence traits (fluid intelligence p=2.4e-14). Education-related traits showed consistent protective associations, while lack of education increased AD risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C50 provide detailed, specific p-values and effect directions for identified associations. The two-stage design with discovery (C30) and replication (C31, C32) phases, followed by meta-analysis (C33), provides strong evidence. The reported associations are highly significant and show consistent effect directions across datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Multivariate conditional analysis revealed that major trait categories (family history, high cholesterol, and education/cognition) showing the strongest marginal associations with AD are independent from each other. Hierarchical clustering divided 48 traits into 15 representative clusters, all of which remained nominally significant (p<0.05) in multivariate analysis with consistent effect directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 describe a systematic approach to assess independence of associations through hierarchical clustering and multivariate analysis. The finding that major trait categories are independent (C57) is supported by low genetic correlation between maternal and paternal family history (r=0.052, C59) and consistent results in conditional analysis (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C125",
+      "C126"
+    ],
+    "result": "After removing the APOE region, 38 of 48 traits remained significant under Bonferroni correction. Family history, dementia diagnosis, and high cholesterol showed substantial drops in significance, while associations with cognition/intelligence traits were virtually unchanged, suggesting APOE has a limited role in cognitive trait associations with AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C125-C126 consistently report differential effects of APOE removal on different trait categories. The stability of cognition/intelligence associations (C62, C126) contrasts with reduced significance for family history and cholesterol (C61, C125), providing evidence for distinct biological mechanisms. The specific numbers (38/48 remaining significant, C60) support the robustness of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C127",
+      "C128"
+    ],
+    "result": "Mendelian randomization analysis (MR-IVW) identified 9 traits with Bonferroni-corrected significance, with family history showing the strongest causal effects (p=1.1e-233 maternal, p=1.7e-69 paternal). Among 48 traits identified by BADGERS, 23 reached nominal significance in MR-IVW, demonstrating BADGERS has superior statistical power for hypothesis-free screening compared to MR methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C74 and C127-C128 provide comprehensive comparison between BADGERS and MR-IVW. The consistent effect directions (C66) and overlap of significant findings (C65, C73-C74) validate BADGERS results. The power comparison (C127) is supported by specific numbers: 48 traits in BADGERS vs 9 in MR-IVW (C64), demonstrating BADGERS' advantage for biobank-wide screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "GSMR identified 18 traits with Bonferroni-corrected significance but showed only moderate consistency with MR-IVW and BADGERS. Only 1 trait overlapped with MR-IVW and 6 with BADGERS. GSMR failed to identify paternal family history or high cholesterol as risk factors, and 23 traits lacked sufficient SNPs for GSMR analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 provide detailed comparison with GSMR, including specific overlap statistics (C77, C78) and methodological limitations (C81). The moderate consistency (C76) and failure to identify key risk factors (C79) are clearly documented. Consistent effect directions (C82) provide some validation, but the limited overlap and power issues (C83) are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Analysis of AD endophenotypes identified 29 significant associations (FDR<0.05) showing distinct patterns. Maternal family history was strongly associated with all five EPAD subgroups, with strongest association in the memory subgroup (p=3.3e-16). Intelligence/cognition traits were specifically associated with the 'none' subgroup (no relative impairment), while high cholesterol associated with language, memory, and mix subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 describe differential associations between risk factors and AD subgroups with specific p-values and patterns. The finding that intelligence traits specifically associate with the 'none' subgroup (C90-C91) while family history associates broadly (C86) suggests distinct mechanisms. The consistency with APOE \u03b54 frequency in the memory subgroup (C88) provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "AD risk factors showed surprisingly weak associations with CSF biomarkers A\u03b242 and tau. Maternal family history was associated with ptau181 (p=4.2e-4) but not with A\u03b242 or tau. Sex-stratified analyses did not yield significant associations at FDR<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 consistently report lack of strong associations with CSF biomarkers, which is explicitly noted as surprising (C94). The specific finding for ptau181 (C95) contrasts with null results for A\u03b242 and tau (C96), and the lack of sex-specific effects (C97) is clearly documented. However, the authors acknowledge limited sample size as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Family history (p=3.8e-8 maternal, p=1.4e-5 paternal) and high cholesterol (p=2.1e-5) were strongly associated with NFT Braak stages and showed similar patterns with neuritic plaques. Other neuropathologic features (CAA, LBD, HS, VBI) did not show strong associations, though family history showed negative association with VBI and intelligence traits showed positive association with LBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 report specific associations with neuropathologic features with detailed p-values. The strong associations with classic AD pathologies (NFT, NP; C98-C100) contrast with weaker associations for other features (C101). The distinct patterns noted for VBI and LBD (C102-C103), though not statistically significant, suggest differential mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In the pre-clinical WRAP cohort (n=1,198), 12 significant associations (FDR<0.05) were identified. Surprisingly, parental history and high cholesterol were not associated with MCI or cognitive scores. Instead, education and intelligence traits strongly predicted pre-clinical cognition, with education level associated with delayed recall (p=4.0e-5 to 7.7e-7) and learning (p=7.6e-6 to 5.0e-8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 describe a striking pattern where risk factors strongly associated with AD pathology (family history, cholesterol) do not predict pre-clinical cognition (C105), while intelligence/education traits do (C106-C111). This finding is explicitly noted as surprising (C105) and provides evidence for distinct mechanisms. The specific p-values for education associations (C107-C111) support the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Various AD risk factors affect disease course through distinct biological processes. Family history and high cholesterol are strongly associated with classic AD neuropathologies (NP, NFT), while intelligence and education traits predict pre-clinical cognitive phenotypes and MCI. This suggests at least two separate components: factors that contribute to pathology accumulation (e.g., cholesterol, APOE) and factors that buffer pathology effects on cognition (e.g., intelligence, education).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7-C8, and C117-C124 synthesize findings across multiple analyses to propose distinct mechanisms. The differential associations with pathologies vs. pre-clinical cognition (C119-C120) support the two-component model (C122). The interpretation about pathology accumulation vs. cognitive reserve (C123-C124) is consistent with cited literature (Stern, 2012) and the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Using multivariate effect estimates (LDpred) to calculate PRS improved imputation accuracy (correlation 0.91 vs 0.79 with marginal PRS) but did not substantially affect statistical power in association testing (88% vs 86% power at \u03b1=0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 reports specific power estimates showing minimal difference between marginal and multivariate PRS approaches. The finding that improved prediction accuracy does not translate to substantially improved power is clearly documented with quantitative evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C138"
+    ],
+    "result": "The analysis included 1,738 heritable traits from the UK Biobank, selected based on nominally significant heritability estimates (p<0.05). All 48 traits identified in the meta-analysis have nominally significant heritability estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 and C138 describe the trait selection criteria and confirm that identified traits meet heritability thresholds. This is a straightforward methodological detail that is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The protective effect of higher educational and occupational attainment on dementia risk is well-established in the literature, as is the association between cholesterol buildup and \u03b2-amyloid plaques in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 cite relevant literature to support known associations. These are background claims that contextualize the findings rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C148",
+      "C149"
+    ],
+    "result": "BADGERS is positioned as a hypothesis-free screening method with superior statistical power compared to MR methods due to its ability to utilize PRS with large numbers of SNPs. The recommended workflow is to use BADGERS for initial screening followed by MR methods for careful causal inference. BADGERS bridges large biobanks with disease-specific studies, addressing limitations of insufficient disease cases in biobanks and lack of risk factor measurements in disease studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 and C148-C149 describe the intended use and advantages of BADGERS, which are supported by the empirical comparisons with MR methods (48 vs 9 significant traits). The proposed workflow (C133) is a reasonable recommendation given the power differences demonstrated in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "BADGERS requires a reference panel for LD estimation. Population mismatch between the reference panel and GWAS may create bias. Simulation results suggest 1000 Genomes European samples are sufficient when GWAS is conducted on European samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 describe methodological requirements and limitations of BADGERS. The simulation validation of 1000 Genomes as a reference panel (C136) provides empirical support for the recommendation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C139",
+      "C140"
+    ],
+    "result": "Environmental factors may play a significant role in identified associations, and the heritability of some traits may be influenced by correlations with other traits. Association results from BADGERS should be interpreted with caution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137, C139-C140 acknowledge important limitations regarding environmental confounding and trait correlations. These are appropriate caveats given that BADGERS identifies associations rather than establishing causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Limited sample size in AD endophenotype studies is a limitation that made it challenging to assess effects of traits weakly associated with AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 acknowledge a clear limitation regarding statistical power for endophenotype analyses. This is an appropriate caveat for interpreting null or weak associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "Maternal family history showed stronger associations with various phenotypes than paternal family history, which may be explained by sample size differences in the UK Biobank (28,507 vs 15,022 cases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 report an observed difference and provide a plausible alternative explanation based on sample size rather than biological sex differences. This is an appropriate interpretation given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "BADGERS requires training data and disease GWAS to be independent but of similar genetic ancestry. Development of methods more robust to sample overlap and diverse genetic ancestry remains an open problem for future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 describe current limitations and future research directions. These are appropriate acknowledgments of methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C147",
+      "C150",
+      "C151"
+    ],
+    "result": "The study provides new insights into the genetic basis of AD and reveals distinct mechanisms for risk factor involvement in AD etiologies. The growing sample sizes in GWAS and biobanks, along with increasingly accessible summary statistics, make BADGERS a valuable tool for human genetics research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147, C150-C151 provide concluding statements about the contributions and future utility of BADGERS. These are supported by the comprehensive empirical findings presented throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

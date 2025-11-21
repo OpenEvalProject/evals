@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors developed an ODE model integrating noise-driven/signal-driven modes with AND/OR logic operations in a CIS network topology. The model predicts that AND-AND and OR-OR motifs produce distinct expression patterns in stem cells, with AND-AND showing low expression of both TFs and OR-OR showing high co-expression, relating to biological observations of lineage-specifying TF expression in stem cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise the computational study as 'well-described' and commend 'the introduction of the concept of combinatorial logic, exemplified by the double 'and' and double 'or' (AA/OO) logic motifs.' The reviewers note that results are 'presented clearly, enhancing accessibility and intuitive understanding,' indicating acceptance of the core modeling framework and its predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Under noise-driven differentiation with asymmetric noise levels, the AND-AND and OR-OR motifs produce opposite fate-decision biases. When noise in TF X is higher than Y, AND-AND motif cells shift toward LX while OR-OR motif cells shift toward LY. The authors establish that knowledge of two of noise profiles, logic motifs, and fate-decision bias allows inference of the third.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers state that 'the authors establish a relationship between noise profiles, logic-motifs, and fate-decision modes, showing that defining any two of these properties allows the inference of the third.' This directly affirms the core finding about opposite biases under different logic motifs with identical noise patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Under symmetrical signal induction (increasing basal expression of both TFs), AND-AND and OR-OR motifs exhibit opposite behaviors. In AND-AND, stem cells lose self-renewal capacity and differentiate, with a transient fully-connected stage observed in 82.7% of parameter sets. In OR-OR, differentiated cells can be reprogrammed back to stem state through bi-directional induction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge that 'opposite trends of fate transitions occur under two logic motifs' under symmetrical signal induction and note the authors 'successfully map' these logic motifs 'to previously described cell fate decision processes.' The thorough comparison and predictive power are highlighted as strengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Under asymmetrical signal induction (increasing only one TF inducer), the authors identify a progression-accuracy trade-off in cell fate decisions. AND-AND motif prioritizes progression (rapid differentiation with some inaccuracy), while OR-OR motif prioritizes accuracy (unambiguous fate choice). This pattern is robust across 96% of AND-AND and 70% of OR-OR parameter sets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state that the authors 'identify, under the signal-driven mode, two fundamental patterns of cell fate decisions: either prioritising progression or accuracy in the differentiation process.' The robustness analysis across parameter sets strengthens this finding, which reviewers do not challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Different logic motifs produce distinct reprogramming trajectories. AND-AND enables one-step direct conversion between differentiated fates, while OR-OR requires a two-step transition mediated by the stem cell state. OR-OR motif facilitates de-differentiation through bi-directional or unilateral induction, whereas AND-AND makes de-differentiation substantially more difficult.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note the 'predictive power' of the framework and that 'the authors use simulations to make insightful predictions about the regulatory organisation of stem cell differentiation systems.' The distinct trajectories and reprogramming capabilities are part of the successfully mapped predictions to biological processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Expression variance patterns distinguish noise-driven from signal-driven modes. Under noise-driven differentiation, variance changes monotonically (declining for highly-expressed TF in AND-AND, rising for lowly-expressed TF in OR-OR). Under signal-driven mode, variance exhibits non-monotonic patterns due to bifurcations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state that the authors provide 'solid support for distinguishing distinct driving forces behind fate decisions based on noise profiles,' which directly encompasses the variance pattern analysis. The framework's ability to distinguish modes is highlighted as a key contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Analysis of published hematopoiesis data (Mojtahedi et al., 2016) shows that Gata1 and PU.1 expression variance exhibits nonmonotonic patterns during EPO and GM-CSF/IL-3 induction, suggesting the Gata1-PU.1 circuit performs in an AND-AND-like manner under signal-driven mode.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers commend the 'creative approach for formulating hypotheses about gene regulation during stem cell differentiation using single-cell sequencing data' and note the authors 'apply this analysis to available high-throughput datasets of cell fate decisions in hematopoiesis.' The application to real data is treated as a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Analysis of mESC differentiation data (Semrau et al., 2017) under RA exposure shows that 73% of fate-decision TFs exhibit gradually increasing variance, with Gbx2 and Tbx3 showing high initial expression. This suggests the system performs in an OR-OR-like manner under noise-driven mode.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the authors 'apply this analysis to available high-throughput datasets of cell fate decisions in...embryogenesis' and note the framework offers 'a creative approach for formulating hypotheses' from sequencing data. The embryogenesis application is accepted alongside the hematopoiesis analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Analysis of EB to iMK chemical reprogramming data (Qin et al., 2022) shows FLI1 and KLF1 expression patterns consistent with OR-OR motif. The model predicts sequential saddle-node bifurcations and two-step transition through iPEM intermediate state, matching experimental observations. Expression variance patterns support signal-driven mode.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers highlight the 'predictive power' of the framework and note that authors 'successfully map' logic motifs 'to previously described cell fate decision processes.' The consistency between model predictions and experimental observations in the reprogramming system is implicitly accepted through praise of the predictive capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Fuzzy c-means clustering of genes by expression variance patterns in the EB to iMK system identified 12 clusters. Cluster 5 (with FLI1) relates to platelet functions, cluster 10 (with KLF1) to blood cell metabolism. The analysis identified EGR3 and ETS1 as potentially important regulators not in the original GRN, and MYC and FOS as hub regulators.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note the authors 'utilise the observed noise patterns to nominate key regulators,' which directly encompasses this clustering analysis and regulator identification. The approach is treated as a valid application of the framework for hypothesis generation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C133",
+      "C135",
+      "C136"
+    ],
+    "result": "The analytical framework enables inference of logic motifs and driving forces from mean and variance patterns in gene expression, providing a 'top-down' approach for investigating causality in fate decisions and locating core regulators without a priori knowledge.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state the framework offers 'a creative approach for formulating hypotheses about gene regulation during stem cell differentiation using single-cell sequencing data' and praise its 'predictive power.' The top-down inference capability is implicitly endorsed through these positive assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C130",
+      "C153"
+    ],
+    "result": "Under noise-driven mode, logic motifs act as a 'broker' to shape fate preferences. The authors propose that if organisms have functional demands for specific biases, noise profiles will be iterated via logic motifs through evolution. Understanding logic motifs is prerequisite for explaining how epigenetic changes affect fate-decision preferences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the framework 'sheds light on the dynamic landscape of epigenetic cell fate decisions, emphasising the role of combinatorial logic in coordinating noise and signal-driven processes.' This interpretive framework about logic motifs as evolutionary adaptations is accepted as part of the theoretical contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The model predicts that AND-AND motif promotes differentiation under symmetrical induction while OR-OR stabilizes stem cell fates. Restoring stemness by inducing antagonistic lineage genes is more feasible under OR-OR motif. Experimental observation that differentiation eventually occurs under simultaneous EPO and GM-CSF/IL-3 induction supports AND-AND-like behavior in hematopoiesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note the authors 'successfully make predictions about the regulatory organisation of stem cell differentiation systems' and that these predictions are mapped to biological processes. The consistency with experimental observations (Mojtahedi et al., 2016) strengthens the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "A robust fully-connected stage was found in AND-AND motif where all three fates are directly interconnected, potentially corresponding to the priming/activation stage before lineage commitment. This stage was not found in OR-OR motif, suggesting priming necessity depends on logic motifs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praise the 'thorough comparison of two model configurations' and note that results 'underscore the importance of integration logic.' The fully-connected stage as a distinguishing feature between motifs is part of this accepted comparison, though reviewers do not specifically discuss this detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The progression-accuracy trade-off is illustrated by biological examples: hematopoiesis (with AND-AND-like circuit) shows rapid CMP depletion during inflammation prioritizing progression, while C. elegans development emphasizes accuracy. The emphasis on progression or accuracy may be embedded in logic motifs of core GRNs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the identification of 'two fundamental patterns of cell fate decisions: either prioritising progression or accuracy' and note the successful mapping to biological processes. The biological examples supporting this trade-off are implicitly accepted as part of the framework's explanatory power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C160",
+      "C161"
+    ],
+    "result": "The authors propose a classification system for fate-decision systems based on logic motifs and driving modes: hematopoiesis (AND-AND, signal-driven), RA exposure embryogenesis (OR-OR, noise-driven), and chemical reprogramming (OR-OR, signal-driven). Classification enables enrichment of common properties and prediction of achievable reprogramming trajectories.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers state the authors 'propose the underlying driving force in each case' for different biological systems and praise the 'predictive power' of the framework. The classification system is implicitly endorsed through acceptance of the applications to multiple datasets and the predictive capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C30"
+    ],
+    "result": "The manuscript establishes the biological and theoretical context for studying cell fate decisions, including the debate between noise-driven and signal-driven modes in Waddington's landscape, the role of GRNs and TF cooperativity, the prevalence of CIS networks in binary fate decisions, and the gap in understanding how regulatory logic affects fate decisions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the manuscript 'explores the debate between static (noise-driven) and dynamic (signal-driven) perspectives within Waddington's epigenetic landscape' and note it 'highlights the essential role of gene regulatory networks in this process.' The background framing is accepted without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C59",
+      "C60"
+    ],
+    "result": "Under signal-driven mode, two basic patterns are identified: progression and accuracy. Biological examples include HSC fate-decision bias toward myeloid over lymphoid, which shifts with aging and infection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state the authors 'identify, under the signal-driven mode, two fundamental patterns of cell fate decisions: either prioritising progression or accuracy in the differentiation process.' The biological context is accepted as supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C144",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors' models reconsider multiple regulations from TF-CRE binding level (compared to Hill function approaches), use solution landscape for intuitive interpretation, and provide a blueprint for designing logic motifs with particular functions in synthetic biology applications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers commend the 'rigorous evaluation of assumptions in modelling' and note the 'results of the simulations are presented clearly, enhancing accessibility and intuitive understanding.' The methodological advances and potential applications are implicitly endorsed through these positive assessments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129",
+      "C131",
+      "C132",
+      "C134",
+      "C137"
+    ],
+    "result": "The manuscript discusses the broader context of expression variance analysis, including its use in identifying critical transitions, characterizing HSC aging heterogeneity, and the general challenge that variance patterns are not intuitively accessible. Signal manipulation is noted as more experimentally accessible than noise tuning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the framework addresses 'the role of noise in gene regulatory networks' and offers a 'creative approach' for analyzing sequencing data. The contextual discussion about variance analysis and experimental accessibility is accepted without challenge.",
+    "result_type": "MINOR"
+  }
+]

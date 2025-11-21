@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "RBBP6 depletion does not generally affect antisense transcription termination. While RBBP6 loss causes increased transcription downstream of sense gene polyadenylation signals (PAS), it has minimal effect on upstream antisense transcription, even when antisense transcripts contain multiple PAS sequences. This indicates that PAS-dependent termination cannot fully explain promoter-proximal attenuation of antisense transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 provide converging experimental evidence from POINT-seq showing that RBBP6 depletion selectively affects sense but not antisense transcription. The western blot (C27), genome browser tracks (C28-C29), and metaplot/heatmap analyses (C30-C31) consistently demonstrate this directional effect. The analysis of PAS-containing antisense transcripts (C32-C33) and citation to prior XRN2 work (C34) strengthen the conclusion that most antisense termination is PAS-independent (C35-C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "INTS11 depletion causes widespread upregulation and extension of antisense transcription while having more limited effects on sense transcription. INTS11 loss strongly affects short non-coding RNAs including antisense transcripts and eRNAs, with the most affected protein-coding genes being lowly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 provide comprehensive POINT-seq evidence demonstrating INTS11's preferential effect on antisense transcription. The genome browser tracks (C39-C41), metaplots and heatmaps (C42-C43), and analysis of different promoter types (C44-C46) consistently show stronger antisense effects. The conclusion that short ncRNAs are more affected than protein-coding transcripts (C47) is well-supported by the data across multiple transcript classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Sense transcriptional initiation is more efficient than antisense initiation, establishing initial promoter directionality. Using sPOINT-seq to capture promoter-proximal paused RNAPII, the authors show higher signal in the sense direction with more focused sense transcription start sites compared to dispersed antisense TSSs. INTS11 loss causes mild reduction in sPOINT signal, suggesting enhanced antisense transcription after INTS11 depletion is not due to increased initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 present novel sPOINT-seq methodology and data showing differential initiation efficiency. The metaplots (C49) and TSS mapping (C51-C52) provide clear visual evidence of higher and more focused sense initiation. The interpretation that INTS11 effects are not due to increased initiation (C53-C54) is logically sound, though the alternative explanation (C55) acknowledges uncertainty about the mechanism. The overall conclusion about preferential sense initiation (C4, C50) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C88"
+    ],
+    "result": "CDK9 activity protects sense transcription from INTS11-dependent attenuation. When CDK9 is inhibited, sense transcription becomes sensitive to INTS11, resulting in bidirectional transcription increase upon combined CDK9 inhibition and INTS11 depletion. Even when both are compromised, sense transcription remains higher than antisense, consistent with more efficient sense initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide strong POINT-seq evidence showing that CDK9 inhibition sensitizes sense transcription to INTS11. The genome browser tracks (C64), metaplots (C66-C68), and heatmaps demonstrate this bidirectional effect convincingly. The conclusion that CDK9 protects sense transcription from INTS11 (C6, C67, C88) is well-supported by the experimental data. The hypothesis (C62-C63) is validated by the experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Engineered recruitment of CDK9 via the HIV TAT system desensitizes transcription to INTS11. TAT-mediated CDK9 recruitment strongly stimulates HIV transcription (~200-fold) and reduces sensitivity to INTS11 loss, while CDK9 inhibition restores INTS11 sensitivity even in TAT-activated transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 provide qRT-PCR evidence from HIV reporter experiments demonstrating that CDK9 recruitment alleviates INTS11-dependent attenuation. The data showing TAT stimulation (C84), reduced INTS11 sensitivity with TAT (C85), and restored sensitivity with CDK9 inhibition (C87) form a coherent experimental series supporting the conclusion (C8, C86). This orthogonal approach strengthens the main findings about CDK9-INTS11 antagonism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "INTS11 depletion enhances RNAPII CTD phosphorylation (Ser5p and Ser2p) regardless of CDK9 activity status. While CDK9 inhibition suppresses Ser2p as expected, both Ser5p and Ser2p are enhanced by INTS11 loss even when CDK9 is inhibited, suggesting other kinases can phosphorylate RNAPII when INTS11 is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73-C75 are supported by western blot data in Figure 4E showing the phosphorylation patterns. However, the interpretation that redundant kinases compensate for CDK9 (C76) is speculative. The data clearly show maintained phosphorylation upon INTS11 loss, but the mechanism remains uncertain. The result is supported but the mechanistic explanation requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CDK7 inhibition sensitizes protein-coding transcripts to INTS11 attenuation, potentially because CDK7 is required to activate CDK9 or because Integrator targets RNAPII when CDK7 is inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by qRT-PCR data showing CDK7 inhibition effects. However, the mechanistic explanations (C78-C79) are speculative and based on prior literature rather than direct experimental evidence in this study. The result demonstrates an effect but the mechanism remains uncertain. This is a supporting observation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Some antisense transcription is sensitive to CDK9 inhibition, indicating CDK9 activity on a subset of antisense RNAPII. Following CDK9 inhibition and INTS11 loss, the largest recovery of protein-coding transcription occurs at gene 5' ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by POINT-seq data showing CDK9-sensitive antisense transcription. The observation (C70) about 5' recovery is consistent with poor elongation without CDK9. However, this represents a nuance to the main model rather than contradicting it. The data support that CDK9 effects are not strictly binary between sense and antisense.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Preferential sense transcriptional initiation significantly contributes to mammalian promoter directionality. The authors hypothesize this reflects unidirectional arrangement of core promoter elements, consistent with evolutionary acquisition of directionality in yeast and associations between focused initiation and highly expressed genes with defined promoter elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is well-supported by the sPOINT-seq data presented earlier. The hypothesis about promoter element arrangement (C90, C94) is speculative but reasonable given the data. The supporting citations about yeast evolution (C91) and mammalian promoter features (C92-C93) provide context. The main conclusion about preferential initiation is supported, though the mechanistic explanation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors hypothesize INTS11 controls transcriptional attenuation via its endonuclease activity, but note that the commonly used inactive mutant (E203Q) poorly associates with other Integrator components, similar to catalytic mutations in the related CPSF73 endonuclease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by co-immunoprecipitation data showing poor E203Q association with Integrator. The parallel to CPSF73 (C97) is supported by citation. However, the hypothesis about endonuclease activity (C95) remains speculative, and the authors acknowledge the formal possibility that non-catalytic effects could explain their observations. This is an important methodological caveat rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "INTS11 and SPT5 are adjacent in the RNAPII:Integrator structure, and SPT5 is a prominent CDK9 substrate. The authors propose SPT5 phosphorylation might evict INTS11 or prevent its association with RNAPII. Consistent with this, Integrator is enriched on promoters while phosphorylated SPT5 is prevalent during elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99, C101-C102 are supported by citations to structural and genomic studies. However, the proposed mechanism of SPT5 phosphorylation affecting INTS11 association (C100) is speculative and not directly tested in this study. The spatial and temporal patterns are consistent with the model but do not prove the mechanism. This represents a plausible hypothesis requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Antisense transcription increased by INTS11 loss is not accompanied by increased Ser5p and Ser2p phosphorylation, suggesting CDK7 and CDK9 activities are less prevalent for antisense versus sense transcription. Some CDK9-sensitive antisense transcription may undergo INTS11-independent attenuation and be targeted by the poly(A) exosome targeting connection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by citation to published data. The inference about lower CDK7/CDK9 activity on antisense RNAPII (C104-C105) is logical given the phosphorylation data. The speculation about INTS11-independent attenuation (C106) and exosome targeting (C107) is supported by citations but represents interpretation rather than direct experimental evidence from this study. The overall conclusion is reasonable but relies partly on prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The Restrictor complex restrains antisense transcription and associates with PAF-bound RNAPII, distinct from Integrator which associates with NELF-bound RNAPII. Various complexes may target different forms of RNAPII before and after CDK9 activity, though Integrator influences a greater volume of antisense RNAPII than the cleavage and polyadenylation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by citations to published work including the authors' prior studies. The inference about different complexes targeting different RNAPII forms (C111) is reasonable given the structural data. The conclusion about Integrator's greater influence (C112) is supported by comparing RBBP6 and INTS11 depletion effects in this study. This contextualizes the findings within the broader transcription termination landscape.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "U1 snRNA promotes RNAPII elongation and shields transcription from early termination via PAS-dependent mechanisms and the Restrictor complex. The lack of U1 sites may limit RNAPII elongation and render it sensitive to Integrator or Restrictor. Recent work suggests U1-mediated antagonism of INTS11 contributes to promoter directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C115 are supported by citations to published literature including recent work. The speculation about U1 site absence affecting Integrator/Restrictor sensitivity (C114) is reasonable but not directly tested. This discussion contextualizes the findings within the existing U1 model of directionality, acknowledging recent complementary work. The claims are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors present a comprehensive model for promoter directionality: sPOINT demonstrates more efficient sense transcription initiation establishing directionality, then CDK9 activity prevents attenuation by Integrator in the sense direction while antisense transcription is hypersensitive to INTS11 and terminates early. Since INTS11 occupies most promoters and CDK9 activity is near-universally required for protein-coding transcription, this model can generally explain how directionality is initiated and maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 synthesize the major experimental findings into a coherent model. Claims C119-C120 about INTS11 occupancy and CDK9 requirement are supported by established knowledge and citations. The overall conclusion (C121) that this model explains directionality is well-supported by the convergent evidence from sPOINT-seq, POINT-seq with INTS11 depletion, CDK9 inhibition experiments, and HIV reporter assays. This represents the main conceptual contribution of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Bidirectional transcription at promoters is a widespread phenomenon across eukaryotes. In humans and other organisms, sense transcription usually dominates and produces mRNA while antisense transcription rapidly terminates. Bidirectionality is proposed to be the evolutionary ground state of promoters, with directionality acquired over time through DNA sequences and proteins favoring directional initiation and elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent well-established knowledge in the field supported by the manuscript's citations and experimental observations. Claims C9-C13 about evolutionary conservation and acquisition of directionality are supported by appropriate citations to published literature. These claims provide essential background context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The existing model for mammalian promoter directionality involves U1 snRNA promoting elongation by binding RNA and preventing early termination through inhibiting PAS and antagonizing other attenuation mechanisms. U1 binding sites are rarer in short antisense transcripts, which are often rich in PAS sequences proposed to promote termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 accurately describe the prior model for promoter directionality, supported by appropriate citations to published literature. These claims establish the conceptual framework that the current study challenges and refines. The claims are well-supported by citations but represent prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The Integrator complex comprises multiple modules including the endonuclease INTS11 and phosphatase activity mediated by INTS6-PP2A. INTS11 loss broadly affects promoter-proximal transcriptional attenuation while INTS6-PP2A regulates RNAPII escape into elongation. INTS6-PP2A functionally antagonizes CDK9, which is vital for RNAPII promoter escape and productive elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 accurately describe established knowledge about Integrator complex composition and function, supported by appropriate citations to published literature. These claims provide essential background for understanding the experimental approach and interpreting the results. The claims are well-supported but represent prior knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "INTS11 affects transcription very early, occupies promoters, and becomes less active as RNAPII moves into elongation. CDK9 phosphorylates RNAPII and other factors to release promoter-proximally paused RNAPII into elongation, while the Integrator-associated phosphatase PP2A antagonizes CDK9. Integrator phosphatase has little effect on antisense transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by multiple citations to published literature establishing the temporal and spatial dynamics of INTS11 and CDK9 activities. These claims provide crucial mechanistic context for the authors' hypothesis about inverse correlation between INTS11 sensitivity and CDK9 activity. The claims accurately represent prior knowledge that motivates the current study.",
+    "result_type": "MINOR"
+  }
+]

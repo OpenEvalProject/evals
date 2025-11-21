@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C71"
+    ],
+    "result": "Protonation of H87 and D342 controls the OCC\u2194OF transition as an extracellular gate. In standard protonation states, OCC is metastable relative to OF (~3 kcal/mol higher, ~3 kcal/mol barrier). H87 protonation raises OCC by ~4 kcal/mol and decreases the barrier to ~1.5 kcal/mol, while D342 protonation lowers the barrier by ~1 kcal/mol without affecting relative energies. These effects are additive, abolishing the metastable OCC state when both are protonated. Unbiased MD shows spontaneous OCC\u2192OF opening requires H87 protonation and D342-R206 salt bridge disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C43-C44, C46-C47, C50-C55, and C71 provide converging evidence from both unbiased MD simulations and 2D-PMF calculations showing that H87 and D342 protonation control extracellular gate opening. The quantitative free energy changes are internally consistent, and the additive effects are demonstrated through multiple computational approaches. The mechanistic details (H87-D317 interaction, D342-R206 hydrogen bonding) provide molecular-level support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C70"
+    ],
+    "result": "Cell-based transport assays validate the importance of H87 and D342 for transporter function. H87A and D342A mutations significantly reduce transport activity compared to wild-type, with D342A retaining more activity than H87A, consistent with computational predictions that H87 protonation contributes more to OF stabilization than D342 protonation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C70 describe experimental validation that is consistent with the computational predictions. The relative transport activities of the mutants (D342A > H87A) align with the 2D-PMF results showing H87 has a larger effect on the OCC-OF equilibrium. However, the assays measure overall transport rather than specific conformational transitions, so the validation is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "E53 and E622 protonation controls the OCC\u2194IF transition as intracellular gate triggers. In standard protonation states, OCC forms a well-defined basin with IF raised ~2 kcal/mol and separated by a ~3 kcal/mol barrier. Protonation of either E53 or E622 lowers IF to similar energy as OCC and reduces the barrier by ~1 kcal/mol. These effects are additive: when both are protonated, IF is favored by ~3.5 kcal/mol and accessible via only a ~1 kcal/mol barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C56-C59 present consistent findings from 2D-PMF calculations showing how E53 and E622 protonation drives the OCC\u2192IF transition. The quantitative free energy changes are clearly reported with error estimates, and the additive nature of the effects is demonstrated. The results are consistent with unbiased MD observations (C48-C49) showing increased intracellular gate flexibility upon E53/E622 protonation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C74"
+    ],
+    "result": "E622 plays a dual role in substrate binding and release. ABFE calculations show that substrate affinity is similar in OF and IF states, but E622 protonation significantly decreases substrate affinity. Combined with the finding that E622 protonation favors the OCC\u2192IF transition, this suggests E622 protonation both stabilizes IF and facilitates substrate release from the holo IF state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C74 present ABFE calculations showing substrate affinity in different states and protonation conditions. The dual role of E622 is logically inferred from combining ABFE results (decreased affinity upon protonation) with 2D-PMF results (IF stabilization upon protonation). The thermodynamic cycle is internally consistent, though the mechanism of how E622 protonation facilitates release could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C39"
+    ],
+    "result": "Substrate binding stabilizes the OCC state relative to OF by ~1 kcal/mol through increased flexibility in orthogonal degrees of freedom (PC 2). This stabilization may trigger proton movement further into the transporter, driven by entropic gains from increased flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C63, and C64 describe findings from comparing apo and holo 2D-PMFs for the OCC\u2194OF transition. The ~1 kcal/mol stabilization is quantified and attributed to increased basin width in PC 2. The interpretation that this triggers proton movement (C64) is a reasonable inference from the thermodynamic data, though the mechanism is speculative. The finding is consistent across multiple protonation states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C40",
+      "C73"
+    ],
+    "result": "Substrate binding increases the pKa of E56 in the ExxER motif by ~0.6 log units in both OF and OCC states, thermodynamically facilitating protonation. This effect is validated by ABFE calculations showing complementary changes in substrate affinity with E56 protonation state, closing the thermodynamic cycle. The mechanism involves substrate engagement of R57, which interacts with both E56 and the substrate C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C65-C67, and C73 present converging evidence from constant-pH MD and ABFE calculations. The pKa shift is quantified with error estimates from triplicate simulations, and the thermodynamic cycle closure validates the CpHMD results using an orthogonal method. The authors acknowledge limitations of the hybrid-solvent CpHMD method for membrane proteins but provide validation through ABFE. The mechanistic link through R57 is structurally reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The intracellular gate is more flexible than the extracellular gate in the apo, standard protonation state. Protonation of E53 and E622 or insertion of Ala-Phe substrate increases intracellular gate flexibility, enabling spontaneous opening in unbiased MD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 describe observations from unbiased MD simulations showing differential gate flexibility and conditions that promote intracellular gate opening. These findings are consistent with the 2D-PMF results (C56-C59) showing lower barriers for the OCC\u2192IF transition. The observations are based on extensive sampling (triplicate 1 \u03bcs simulations in multiple conditions) and provide qualitative support for the quantitative free energy calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The presence of L-Ala-L-Phe substrate produces a comparable effect to H87 and D342 protonation on extracellular gate opening in unbiased MD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 describes an observation from unbiased MD that substrate binding can promote extracellular gate opening similar to H87/D342 protonation. This is supported by Figure 2b panels 5-6 and is consistent with the 2D-PMF results showing substrate-induced OCC stabilization (C63). However, the mechanism differs (substrate acts through increased flexibility rather than direct protonation effects), and the observation is qualitative rather than quantitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The IF-partially-occluded cryo-EM structure (7PMY) does not behave well in MD simulations, showing either partial extracellular gate opening or helical unfolding. In contrast, AlphaFold-derived IF structures (replicates 1 and 3) are stable in MD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe methodological observations about the stability of different starting structures in MD simulations. These are directly supported by Figure 1\u2014figure supplement 2 showing trajectory behavior. The observations justify the authors' choice to use AlphaFold-derived IF structures rather than the 7PMY structure for subsequent simulations. This is important for establishing the validity of the computational models used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The intracellular gate consists of broad close-packing of hydrophobic residues on TM 4, 5, 10, and 11, possibly stabilized by the D170-K642 salt bridge. The extracellular gate is spread along the cleft between N- and C-terminal bundles, with contributions from the H87-S321 polar interaction network and the R206-D342 and K64-D317 salt bridges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 describe structural features inferred from cryo-EM structures and AlphaFold models, with reference to Figure 1b-c. These structural descriptions provide the basis for selecting residues to investigate in subsequent simulations. The inferences are reasonable based on the structural data, though the relative importance of different interactions (e.g., D170-K642 vs hydrophobic packing) is not quantitatively established until later in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C72"
+    ],
+    "result": "The mammalian H87 residue is only conserved in some prokaryotic homologues, and R206-D342 is conserved only among mammalian POTs. This suggests the extracellular gating mechanism is less conserved than the overall alternating access mechanism, which is supported by differences from bacterial POT studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C72 describe sequence conservation patterns and their implications for mechanism conservation. The conservation analysis is straightforward and the speculation (C27) is validated by the computational and experimental results showing H87 and D342 are important for mammalian POT function. The comparison with bacterial POTs (C72) is supported by discussion of prior work on PepTSo and PepTXc, though the claim would be stronger with explicit sequence alignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study employs extensive unbiased and enhanced-sampling MD (~1 ms total) to map the SLC15A2 conformational cycle and thermodynamic driving forces. Simulations identify key differences in the extracellular gate between mammalian and bacterial POTs, validated experimentally in cell-based transport assays. Constant-pH MD and ABFE calculations establish mechanistic links between proton binding and peptide recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 provide an overview of the study's approach and main findings. These are supported by the detailed results presented in subsequent claims and figures. The extensive sampling (~1 ms) is documented in Tables 3-4, the differences from bacterial POTs are discussed in the context of H87 and D342 conservation (C25-C27, C72), and the experimental validation is shown in Figure 7. The mechanistic links are established through the pKa calculations (C65-C67) and ABFE results (C60-C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The study assumes a 2:1 proton:peptide stoichiometry for neutral di-peptides, motivated by computational results indicating distinct and additive roles for two protons in the conformational cycle mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 describes a key assumption of the study. This assumption is reasonable given the conflicting literature on stoichiometry (C14-C17) and is supported by the computational results showing distinct roles for H87/D342 (extracellular gate) and E53/E622 (intracellular gate) with additive effects. However, the study does not explicitly test alternative stoichiometries, and the assumption could affect interpretation of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims establish that POTs are pharmaceutically important, evolutionarily conserved transporters that couple peptide uptake to proton symport via an alternating access mechanism. Previous structural and functional studies have identified key residues involved in proton transfer (H87, E53, E56) and substrate binding (E622, R57, Y61, Y94), though the detailed mechanism of proton-substrate coupling remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C9-C22, C28-C35 provide background information from the literature, supported by appropriate citations. These claims establish the context and motivation for the study. C35 is a hypothesis rather than an established fact, but it is clearly presented as such. The background claims are well-supported by the cited literature and provide appropriate context for the computational and experimental work presented.",
+    "result_type": "MINOR"
+  }
+]

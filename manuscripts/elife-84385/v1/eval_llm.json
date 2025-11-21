@@ -1,0 +1,176 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A custom-built current source circuit based on operational amplifier feedback control delivers stable, precise current (\u226410 \u03bcA precision error) for electrolytic lesioning. The device maintained constant current output across 14 lesions in awake rhesus macaques, though voltage fluctuated considerably and calibration showed 10-20 \u03bcA deviations attributed to parasitic resistance through the animal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C23-C30 collectively demonstrate successful device operation with current stability data (Figure 6), voltage traces showing expected fluctuations, and reasonable explanations for calibration deviations. The circuit design is well-documented with appropriate technical references (C7), and performance is validated across multiple in vivo tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Electrolytic lesioning through microelectrode arrays creates controlled, localized tissue damage in cortex. Ex vivo testing showed spheroidal cavitations (1.5 mm diameter at 250 \u03bcA/10 min, 0.5 mm at 180 \u03bcA/1 min), while in vivo testing revealed well-demarcated conical regions of parenchymal damage with coagulative necrosis. Control experiments confirmed that current delivery, not array insertion alone, causes coagulative necrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 are well-supported by histological evidence (Figures 2-3) showing lesion characteristics across multiple species and parameters. The control experiments (C16) appropriately demonstrate that electrolytic current, not mechanical trauma, causes the observed tissue damage. The technique's applicability across cortical regions is validated through testing in multiple porcine cortical areas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C22",
+      "C48"
+    ],
+    "result": "Lesion volume and damage type are controllable through current amplitude and duration parameters. Across 61 lesions in 16 animals, increasing current amplitude and duration increased lesion volume, while lower parameters shifted damage from cavitation to rarefied tissue damage with parenchymal rarefaction and coagulative necrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C22, and C48 are supported by systematic parameter exploration documented in Figures 4-5 and histological observations. The exponential relationship between duration and volume for 180 \u03bcA current (R\u00b2=0.413, C20) shows a trend, though the modest R\u00b2 suggests considerable variability. The sample size of 61 lesions across 16 animals provides reasonable statistical power for these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Microelectrode arrays maintain recording capability after electrolytic lesioning, with even lesion electrodes continuing to record reliably. Post-lesion analysis revealed temporary increases in neuronal turnover rates, with statistically significant decreases in matching neurons between pre- and post-lesion days, indicating accelerated population changes consistent with neuronal loss or silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C34, C38-C40 are supported by electrophysiological data (Figure 7) showing preserved waveforms and quantitative turnover analysis. The statistical approach using Gaussian mixture models and median tests (p<0.017) appropriately identifies lesion-evoked changes. The authors appropriately acknowledge limitations in distinguishing silenced from terminated neurons (C39-C40) and potential underestimation of neuronal loss outside recording range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The electrolytic lesioning device is compatible with different multielectrode probe types. Testing with a Plexon U-Probe linear electrode in rabbit cortex demonstrated successful lesion creation with varying parameters. The device requires probes with two directly connectable electrodes and can accommodate electrode impedances up to 6 M\u03a9 with the current op-amp configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C43-C45 demonstrate cross-platform compatibility through successful U-Probe testing (Figure 8) and clear technical specifications. The impedance calculations (C44) are mathematically sound based on Ohm's law and op-amp specifications. The cited typical electrode impedance range of 100 k\u03a9 to 1 M\u03a9 (C45) is appropriately referenced, supporting the device's broad applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The technique was validated through progressive testing from ex vivo to in vivo models following ethical guidelines (3 R's), culminating in 14 lesions across two awake-behaving rhesus macaques using standardized Utah arrays. Parameter selection was informed by prior literature showing that lesions of approximately 1.5 mm diameter cause behavioral deficits, and the procedure is considered non-painful due to absence of CNS pain receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C47, C49-C53 document appropriate experimental progression and ethical considerations. The citation-supported claims about lesion size-behavior relationships (C51) and pain physiology (C52) provide reasonable justification for parameter choices. IACUC approval (C53) and adherence to 3 R's principles (C49) demonstrate ethical rigor. The standardized array specifications (C47) support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Electrolytic lesioning causes cell death through multiple mechanisms including heat, electroporation, and local pH changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by appropriate citations to published literature on electrolytic lesioning mechanisms. This represents established knowledge about the technique's mode of action rather than a novel finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Larger lesions are theoretically achievable by using higher currents or non-adjacent electrode pairs, potentially spanning up to 5.6 mm across opposite corners of the Utah array.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is speculative and not experimentally validated. While the geometric calculation for maximum electrode separation is correct, the actual lesion characteristics at these parameters remain untested. The relationship between electrode spacing and lesion geometry may not be linear or predictable without empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The electrolytic lesioning device costs approximately $300 to build, making it an affordable addition to electrophysiology setups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 provides a specific cost estimate based on the parts list for the device. This is a straightforward factual claim about the device's affordability, though costs may vary with component availability and do not include labor or design time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Neuronal data analysis employed standard spike detection methods with -4\u00d7 RMS threshold, excluding atypical waveforms (>300 \u03bcV amplitude or >1 ms width) based on established physiological criteria for Utah array recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe standard, well-established electrophysiology analysis methods appropriately supported by citations. The exclusion criteria are reasonable and consistent with known characteristics of cortical neuron recordings from Utah arrays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Historical context establishes that lesion studies have been instrumental for brain-behavior causality, while neuroelectrophysiology has evolved from limited single-neuron recordings to modern high-density arrays with thousands of electrodes. Current tools combining recording with inactivation are needed to establish causal connections to behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide appropriate historical and scientific context supported by extensive citations. These represent established knowledge in the field rather than novel findings, but appropriately motivate the need for the presented technique.",
+    "result_type": "MINOR"
+  }
+]

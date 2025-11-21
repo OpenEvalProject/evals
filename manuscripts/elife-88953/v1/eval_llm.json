@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C37",
+      "C38"
+    ],
+    "result": "Human participants' sensitivity to gravity's direction follows a Gaussian distribution with \u03c3=19.9\u00b0, where confidence in judging collapse trajectories as normal decreases gradually as the simulated gravity deviates from vertical. This pattern is consistent across participants (\u03c3 ranging 11.1-37.1\u00b0) and unaffected by horizontal angle \u03c6 or the presence of a wall blocking external forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 and C37-C38 provide converging experimental evidence from 10 participants showing that gravity's direction is encoded as a Gaussian distribution rather than a deterministic vertical direction. The statistical fitting (\u03c3=19.9), individual variability data, and control conditions (wall addition) all support this core finding. The experimental design appropriately manipulates gravity direction in simulation while measuring human judgments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C39",
+      "C40"
+    ],
+    "result": "The Gaussian representation of gravity's direction is cognitively impenetrable, as demonstrated by high correlation (r=0.91, p<0.01) between \u03c3 values when participants judged collapse trajectories in upright versus upside-down conditions (\u03c3=19.9 vs \u03c3=17.2, not significantly different).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C39-C40 demonstrate that the stochastic representation persists even when the visual context is inverted, supporting cognitive impenetrability. The high correlation between conditions and lack of significant difference in \u03c3 values provide strong evidence that this representation is encapsulated and not influenced by task context or visual experience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The Mental Gravity Simulator (MGS) with stochastic gravity representation (inference bias=0.04, p>0.05) better matches human stability judgments than the Natural Gravity Simulator (NGS) with deterministic gravity (inference bias=-0.31, p<0.01), despite similar correlation magnitudes (r=0.75 vs r=0.70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 demonstrate that the MGS eliminates the systematic bias present in the NGS model. The key evidence is the non-significant inference bias for MGS versus significant negative bias for NGS, indicating MGS better captures human judgment patterns. The comparison appropriately uses both correlation and bias metrics to evaluate model fit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C30"
+    ],
+    "result": "The stochastic world model explains the illusion that taller objects are perceived as more unstable, with inference bias increasing monotonically with stack height (all heights: inference bias <0, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C30 show that the MGS reproduces the height-dependent instability illusion observed in humans. The monotonic increase in bias with height and consistent negative bias across all heights provide strong support. This offers a parsimonious explanation without requiring external perturbations, though the mechanism (center of gravity susceptibility) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C31",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A reinforcement learning framework demonstrates that stochastic representation of gravity's direction (\u03c3=21.6) emerges through agent-environment interactions without external noise. The width of the Gaussian distribution decreases monotonically as the number of blocks increases (2-15 blocks), showing environment-dependent adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C31, C60-C62 provide computational modeling evidence that stochastic gravity representation can emerge from experience-dependent learning. The RL framework appropriately simulates prediction-observation mismatches, and the resulting \u03c3=21.6 is close to human data (\u03c3=19.9). The systematic variation with block number demonstrates robustness and environmental sensitivity. However, this is a computational demonstration of plausibility rather than proof of the actual mechanism in humans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C32"
+    ],
+    "result": "The stochastic world model (MGS) provides superior efficiency (3.49 vs 1.32, t=9.12, p<0.001) compared to the deterministic model (NGS) by trading modest accuracy loss (80.1% vs 95.3%) for substantially faster response time (27.1% vs 75.2% of simulation time).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C32 demonstrate the ecological advantage of stochastic representation through computational analysis. The efficiency metric appropriately combines accuracy and speed, and the statistical comparisons are significant. However, the efficiency calculation method (accuracy/time) is somewhat arbitrary and could be formulated differently. The ecological interpretation is reasonable but speculative regarding actual survival advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Human stability inference variance best matches the MGS model when running three simulations, suggesting humans perform a limited number of mental simulations for stability judgments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 provide model-behavior correspondence analysis showing that three simulations best match human variance patterns. This is a reasonable inference about human cognitive strategy, though it relies on the assumption that variance is the appropriate metric for matching and that the MGS accurately captures human simulation processes. The claim is supported but involves some inferential leaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior research establishes that humans possess intuitive physics capabilities including rapid stability judgments, early developmental expectations about gravity and support, and neural substrates in the parieto-insular vestibular cortex. The brain is proposed as a generative machine using world models for prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 and C33-C34 appropriately cite and summarize prior literature establishing the foundation for the current study. These are background claims supported by citations to previous work. The accuracy of these citations and characterizations cannot be fully verified without checking the original sources, but they represent standard knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The study employed appropriate experimental procedures with 10 participants for trajectory judgment (Experiment 1) and 11 participants for stability judgment (Experiment 2, one excluded), using 60 stacks (26 unstable, 34 stable) with ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 describe methodological details that are straightforward and appropriate. Sample sizes are modest but reasonable for psychophysics experiments. The exclusion criterion (rs<0.30) is clearly stated. Ethical approval is documented. These are standard methodological practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "While a deterministic model with external perturbations is theoretically equivalent to the stochastic model, the cognitive impenetrability and self-consistency observed favor the stochastic model without requiring external perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 acknowledge theoretical equivalence but argue for parsimony based on the cognitive impenetrability findings (C13-C14). This is a reasonable inference, though the distinction between the models may be more about explanatory preference than empirical distinguishability. The argument for the stochastic model is supported but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The findings suggest that the stochastic world model may emerge through predictive coding mechanisms, supports active inference theory, resonates with embodied intelligence concepts, and has implications for developing human-like AI and understanding ecological advantages for survival and adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C50 and C63-C67 are largely speculative interpretations and implications of the findings. While they are reasonable extensions of the results, they go beyond what the data directly demonstrate. These claims involve theoretical proposals (predictive coding, active inference) and future applications (AI development) that are not empirically tested in this study. The connections are plausible but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Summary claims state that the world model on gravity is stochastic rather than deterministic, fits human behavior better, explains the height-instability illusion, balances accuracy and speed, and provides an example of how a priori knowledge is implemented in mind.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C51-C54 are summary statements of the main findings. These are supported by the collective evidence from the experimental and computational results (C8-C28). They appropriately synthesize the key contributions of the study without overstating the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study positions itself relative to the Noisy Newtonian Framework, which attributes uncertainty to external sources (perception, forces) rather than the intuitive physics engine itself. The current findings suggest uncertainty is inherent in the representation of gravity's direction, confirmed by cognitive impenetrability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C55-C59 appropriately characterize prior theoretical frameworks and position the current work as offering an alternative explanation. The distinction between external noise and internal stochastic representation is conceptually clear, and the cognitive impenetrability evidence (C13-C14, C59) supports this distinction. This represents a valid theoretical contribution.",
+    "result_type": "MAJOR"
+  }
+]

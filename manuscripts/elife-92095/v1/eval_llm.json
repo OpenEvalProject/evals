@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C49"
+    ],
+    "result": "POAGAD2\u2192TMN neurons are most active during REMs and become activated throughout NREMs before transitioning to REMs. Fiber photometry recordings show that calcium activity of these neurons is significantly higher during REMs compared to wake and NREMs, increases 40s before REMs onset, and gradually rises throughout NREMs episodes. This activity is preceded by increases in \u03b8 and \u03c3 EEG power and reduction in \u03b4 power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C13-C19, and C49 are well-supported by fiber photometry data from Figure 1 showing state-dependent activity patterns. The temporal dynamics during state transitions are quantified with appropriate statistical tests (one-way rm ANOVA with post-hoc corrections). The spectrotemporal correlation analysis (C17) provides additional mechanistic insight linking neural activity to EEG features characteristic of pre-REMs transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C50"
+    ],
+    "result": "Optogenetic inhibition of POAGAD2\u2192TMN neurons using SwiChR++ specifically reduces REMs without affecting wake or NREMs. The inhibition increased \u03b4 and \u03c3 power in the EEG during REMs, and the lost REMs was not compensated during subsequent recovery sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26-C29, and C50 are supported by optogenetic inhibition experiments in Figure 2 with appropriate controls (eYFP mice, within-subject comparisons). Statistical analyses using mixed ANOVA and corrected t-tests demonstrate specificity for REMs (C27-C28). The lack of homeostatic rebound (C30-C31) is a critical observation but requires cautious interpretation as it may reflect insufficient REMs pressure accumulation rather than a direct role in homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "The loss of REMs during SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons was not followed by a homeostatic increase in REMs during post-laser recovery sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by post-laser recordings showing no differences between SwiChR++ and eYFP groups (Figure 2E). However, this result is complex to interpret: it could indicate that POAGAD2\u2192TMN neurons are required for homeostatic compensation, or that the inhibition protocol did not generate sufficient REMs pressure to trigger rebound. The interpretation becomes clearer when combined with the REMs restriction experiments (Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C51"
+    ],
+    "result": "During REMs restriction, POAGAD2\u2192TMN neurons exhibit increased number and amplitude of calcium transients, particularly during NREMs, reflecting accumulation of REMs pressure. The amplitude remains elevated during the rebound phase. REMs restriction successfully reduced REMs amount and duration while increasing frequency, and was followed by compensatory REMs rebound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C41, and C51 are well-supported by fiber photometry during REMs restriction (Figure 3). The REMs restriction protocol is validated with appropriate metrics (amount, duration, frequency, motor activations). The increased calcium transient number and amplitude during restriction are quantified with statistical comparisons to baseline. The interpretation that this reflects homeostatic REMs pressure (C41) is reasonable but remains inferential until causally tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C52"
+    ],
+    "result": "Optogenetic inhibition of POAGAD2\u2192TMN neurons during REMs restriction blocked the subsequent homeostatic rebound of REMs. During restriction with inhibition, REMs amount and frequency were reduced, and the rebound phase showed significantly less REMs compared to control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42-C44, C47-C48, and C52 are supported by optogenetic inhibition during REMs restriction experiments (Figure 4). The experimental design appropriately combines REMs restriction with targeted inhibition during the last 3 hours when REMs pressure is highest. Statistical comparisons between SwiChR++ and eYFP groups demonstrate blocked rebound (C43, d=-1.317). This is the key causal experiment linking POAGAD2\u2192TMN activity to homeostatic regulation. The interpretation (C48) that these neurons encode REMs need is well-supported by the combined restriction and inhibition data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C63"
+    ],
+    "result": "POAGAD2\u2192TMN neurons are crucial for the homeostatic regulation of REMs in mice. Their activity reflects increased need for REMs through enhanced calcium transients and is required for rebound following REMs loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53, and C63 represent the main conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: (1) state-dependent activity with pre-REMs activation, (2) necessity for REMs shown by optogenetic inhibition, (3) increased activity during REMs restriction, and (4) blocked rebound when inhibited during restriction. The combination of correlative (photometry) and causal (optogenetics) approaches provides strong support for the homeostatic role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C56"
+    ],
+    "result": "TMNHIS neurons are highly active during wake and less active during NREMs and REMs. Their activity gradually decreases during NREMs episodes and throughout the inter-REM interval, reaching lowest levels at REMs onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 and C56 are supported by fiber photometry recordings of TMNHIS neurons (Figure 1\u2014figure supplement 2) and are consistent with prior electrophysiological studies. The data show appropriate statistical comparisons across brain states. The observation that TMNHIS activity reaches its lowest at REMs onset (C23) provides important context for understanding the reciprocal relationship with POAGAD2\u2192TMN neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C57"
+    ],
+    "result": "A minimal activity of TMNHIS neurons is required for entering REMs, and suppression of TMNHIS activity likely facilitates transitions to REMs. Mutual inhibition between TMNHIS and POAGAD2\u2192TMN neurons may explain their antagonistic activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C25 and C57 are inferred from the observation that TMNHIS activity reaches its lowest at REMs onset (C23) and known connectivity. While the inference is reasonable and consistent with the flip-flop switch model of sleep regulation, these claims lack direct experimental support in the current study. The mutual inhibition model (C57) is plausible given prior anatomical data but is not directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "SwiChR++-mediated inhibition of TMNHIS neurons increased the amount of REMs compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by optogenetic inhibition data in Figure 2\u2014figure supplement 2C. This result is consistent with the known wake-promoting role of histamine neurons and provides a control experiment showing opposite effects compared to POAGAD2\u2192TMN inhibition. However, the authors note that TMN contains other neuron types, so the effect may not be solely due to histamine neuron inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Inhibition of POAGAD2\u2192TMN neurons during REMs restriction reduced REMs \u03b4 power and NREMs \u03b8 and \u03c3 power. The reduced \u03b8 and \u03c3 power during NREMs could result from fewer attempts to enter REMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by EEG spectral analysis in Figure 4E. The reduced \u03b8 and \u03c3 power during NREMs is interpreted as reflecting fewer REMs transition attempts (C46), which is consistent with the reduced REMs frequency data (C42). This provides additional mechanistic insight into how POAGAD2\u2192TMN inhibition affects REMs homeostasis beyond just reducing REMs amount.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "REMs is characterized by activated EEG and muscle atonia with vivid dreams, and is homeostatically regulated across multiple species including mice, rats, cats, and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent established background knowledge supported by extensive prior literature. These are appropriately cited and provide necessary context for the study. No issues with these foundational claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C54",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "Prior research has established that the POA contains sleep-active neurons necessary for sleep, including POAGAD2\u2192TMN neurons that promote sleep when activated. POA neurons show increased c-Fos expression during REMs restriction. The TMN contains histamine neurons whose antagonism causes sleepiness. Multiple POA subpopulations are most active during REMs. The POA is also involved in NREMs homeostasis. REMs disturbances are observed in psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C54-C55, C58-C62, C64-C69, C71-C72 represent prior work that is appropriately cited and provides context for the current study. These background claims are well-established in the literature and are accurately represented. The citations appear appropriate and support the stated claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C73"
+    ],
+    "result": "The elevated activity of POAGAD2\u2192TMN neurons during heightened REMs pressure may result from increased excitability. Elucidating REMs homeostasis mechanisms may provide therapeutic targets for psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70 and C73 are speculative statements about mechanisms and future applications. C70 draws an analogy to findings in Drosophila and hippocampus but lacks direct experimental support. C73 is a reasonable speculation about translational potential given the association between REMs disturbances and psychiatric disorders, but remains untested. These are appropriately framed as speculative in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Virus expression and optic fiber tracts were located in the ventrolateral POA, lateral POA, and lateral part of medial POA. The automatic brain state classification algorithm has 90.256% accuracy compared to manual scoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe methodological details. C74 is supported by anatomical verification shown in figures. C75 provides validation of the automated sleep scoring algorithm, which is important for data quality. The 90.256% accuracy is reasonable for automated sleep scoring and the algorithm has been used in multiple prior publications from the group.",
+    "result_type": "MINOR"
+  }
+]

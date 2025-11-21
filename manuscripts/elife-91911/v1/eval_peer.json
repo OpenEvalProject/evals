@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C40",
+      "C45",
+      "C47",
+      "C53",
+      "C61",
+      "C72"
+    ],
+    "result": "The neural network emulator achieves massive computational speedup (>1000\u00d7) compared to traditional biophysical simulations. Single AP simulation took 293s (or 30s with adaptive solvers), while emulation of 104 APs took 0.6s, and inverse problem solving on synthetic data required 3.5 hours for 10^8 emulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge the computational speedup as a strength. One reviewer notes 'The training speed of the network is encouraging' and another states the speedup 'will enable studies that would be difficult to carry out previously.' The editor summary describes the evidence as 'convincing.' While one reviewer notes the speedup is 'context-dependent' and 'relatively marginal when a single beat is simulated,' they acknowledge this was 'addressed well by the authors in the revised version.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C73"
+    ],
+    "result": "The emulator achieves high accuracy for normal action potentials on synthetic data, with average RMSE of 0.47 mV and maximum RMSE of 1.5 mV across 104 test cases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding. The editor states 'The evidence supporting the conclusions is convincing, based on using a large and high-quality dataset.' One reviewer notes 'the evaluation for the forward problem on synthetic data showed also highly accurate AP emulations' and describes the study as 'well-designed.' Another reviewer highlights 'One of the study's major strengths is that the authors use a large and high-quality dataset to train their neural network emulator.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C57",
+      "C74"
+    ],
+    "result": "The emulator can handle discontinuous action potentials with early afterdepolarizations (EADs), achieving 72.5% sensitivity, 94.9% specificity, and 90.8% overall accuracy in classification, though with higher RMSE (average 14.5 mV, max 37.1 mV) than normal APs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this capability as a key strength. One reviewer states 'This demonstrates not only very fast and mostly very accurate AP emulations but also the capability of accounting for discontinuities, a major advantage over existing emulation strategies.' The editor notes the work demonstrates 'performance in prediction of standard action potentials, as well as action potentials manifesting early depolarizations.' While accuracy is lower for EADs than normal APs, reviewers do not challenge the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C75"
+    ],
+    "result": "The inverse problem on synthetic data achieves high accuracy, with control and drugged APs fitted at average RMSE of 0.8 mV. Parameter estimation accuracy varies by conductance, with smallest errors for GKr and largest for GKs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these synthetic data results without challenge. One reviewer notes 'the accuracy of solving the inverse problem on synthetic data remained high.' The editor describes the evidence as 'convincing.' While reviewers express concerns about experimental data results (see separate result), they do not question the synthetic data performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "When applied to experimental data from human tissue preparations, only 50% of pharmacological parameters could be successfully estimated. All GKs parameters were successfully estimated, but all GK1 parameters failed. The authors attribute inaccuracies to the mismatch between training on single-cell data and testing on tissue preparations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concerns about these results while acknowledging the authors' transparency. One reviewer states 'the accuracy of emulation drops off relatively sharply with increasing real-world applicability/relevance' and notes 'I particularly enjoyed the discussion of the not always amazing results of the inverse problem on the experimental data.' Another reviewer identifies this as a weakness: 'the estimation of pharmacological parameters very challenging and led to particularly large inaccuracies.' The editor recommends 'validating the neural network emulators against extensive experimental data.' Reviewers question whether tissue-cell differences fully explain the discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C57"
+    ],
+    "result": "Neural networks can handle discontinuities in the response surface, unlike Gaussian process emulators, providing a theoretical advantage for emulating action potentials with early afterdepolarizations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this theoretical advantage and its practical demonstration. One reviewer explicitly states this 'demonstrates...the capability of accounting for discontinuities, a major advantage over existing emulation strategies.' The claims about GP limitations and NN capabilities are supported by citations and are not challenged by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C15",
+      "C17",
+      "C19",
+      "C22"
+    ],
+    "result": "The emulator was trained using the ToR-ORd-dynCl simulator with 40,000 Sobol-sampled maximum conductance combinations (9 inputs: GNa, GNaL, PCa, Gto, GKr, GKs, GK1, GNCX, PNaK), with 1000 stimuli applied to reach steady state, using 80/20 train-validation split and 5000 ADAM training epochs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly commend the methodological transparency. One reviewer states 'I particularly commend the authors on transparency of methods description, code sharing, etc. - it feels rather exemplary in this regard.' The editor notes the work uses 'a large and high-quality dataset to train the neural network emulator.' No reviewer challenges the training methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "result": "Experimental validation used action potentials recorded from human right ventricular trabeculae and papillary tissue at 37\u00b0C, with 7 pairs excluded due to biomarker values outside training range, leaving 13 drug-control pairs across 5 drugs (cisapride, dofetilide, sotalol, terfenadine, verapamil).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express concern about the limited experimental validation. The editor states the article 'may be improved through validating the neural network emulators against extensive experimental data.' One reviewer notes 'the number of drugs and concentrations considered in the inverse problem on experimental data poses a limitation.' While reviewers do not challenge the data description itself, they indicate more extensive validation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The continuous nature of the emulator enables flexible features including emulation at any desired resolution and accounting for timing offsets without retraining.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these claimed capabilities. One reviewer notes the emulator could have 'interesting applications' in various settings and describes the work as exploring 'something that many of us are thinking about.' These architectural features are presented as inferences from the design and are not disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study has several acknowledged limitations: emulator inputs limited to maximum conductances (not channel kinetics), drug effects captured only through conductance scaling (oversimplification), single stimulation protocol used (multiple protocols could improve identifiability), and limited number of drugs/concentrations in experimental validation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly commend the authors' transparency about limitations. One reviewer states 'the authors are to be commended on declaring this transparently, rather than withholding such analyses.' Another notes 'The point on low parameter identifiability is an important one, and serves as a warning against overconfidence in our ability to infer cellular parameters from action potentials alone.' Reviewers agree these are genuine limitations but appreciate the honest discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background context establishing that cardiac cell models have matured for pharmaceutical applications, CiPA initiative uses computational models for drug assessment, and previous work has estimated pharmacological parameters from action potential data, though uncertainty from variability and measurement error must be considered.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are citation-supported contextual statements that reviewers do not challenge. One reviewer notes the work 'explores an area that many in the cardiac simulation community will be interested in' and another states it 'has the potential to revolutionize the way that pharmacological studies are conducted,' implicitly accepting the background context. The editor describes the work as being 'of broad interest to scientists working in cardiac simulation and quantitative system pharmacology.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C76"
+    ],
+    "result": "The approach could potentially be applied to other transients (intracellular Ca2+, sarcomere length) and has potential to improve efficiency of future quantitative systems pharmacology studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these forward-looking statements about potential applications. One reviewer notes the technology 'is likely to stimulate further development in the direction of computationally efficient emulation' and states 'I can imagine interesting applications of rapid emulation in such a setting.' Another reviewer states the work 'has the potential to revolutionize the way that pharmacological studies are conducted' and 'is likely to become a valuable tool for drug discovery and development.' While these are speculative claims, reviewers view them as reasonable given the demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

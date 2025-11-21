@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study recruited 46 right-handed participants (27 females, aged 18\u201328 years), excluded 10 due to data quality issues, and analyzed data from 36 participants with appropriate ethics approval.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not question the sample size, exclusion criteria, or ethics approval. The methodological details are treated as standard and acceptable for this type of neuroimaging study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Participants performed a baseline block (70 trials, no feedback) followed by a learning block (200 trials with reward feedback). The task design isolated reward-based learning by withholding visual feedback about finger trajectory, preventing error-based learning. Subjects successfully increased their scores over the 200 learning trials.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers described the task as 'novel,' 'compelling,' and 'goes beyond the current state of the art.' One reviewer noted the task is 'new' and represents a methodological advance. The behavioral learning effect is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study defined three equal-length epochs (baseline, early learning, late learning) and extracted BOLD time-series from cortical (Schaefer 1000) and striatal (Harvard-Oxford) parcellations. Covariance matrices were estimated for each epoch and centered using a Riemannian manifold approach to remove subject-level clustering and reveal task-related effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praised the 'state-of-the-art neuroimaging analyses' and 'interesting analysis approaches.' The centering procedure and manifold approach are treated as methodologically sound and appropriate for isolating task-related connectivity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The top three principal components of the baseline manifold explain ~70% of variance and replicate the tripartite structure of brain organization: PC1 distinguishes visual from somatomotor regions, PC2 distinguishes visual/somatomotor from DMN regions, and PC3 represents a gradient of DAN/FCN versus DMN regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the PCA results or the interpretation of the tripartite structure. The manifold approach is described as 'novel' and 'interesting,' and the baseline characterization is treated as a valid foundation for subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Manifold eccentricity (Euclidean distance from centroid) was computed for each region and interpreted as reflecting functional segregation (higher eccentricity) versus integration (lower eccentricity). Baseline eccentricity correlates positively with node strength (r=0.88) and within-manifold degree (r=0.45), and negatively with participation coefficient (r=\u22120.74).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not question the eccentricity metric or its interpretation. The correlations with standard graph-theoretic measures are presented as validation, and reviewers accepted this framework for interpreting connectivity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "During early learning, sensorimotor areas in the dorsal attention network showed increased covariance with salience/ventral attention network areas and reduced covariance with DMN areas. During late learning, this pattern reversed, with sensorimotor areas showing increased covariance with DMN areas. Posteromedial cortex showed the opposite pattern across learning phases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers described the findings as 'clear and well-presented,' one reviewer raised a critical concern: 'most of the results could also be explained by changes in attention allocation during the session, or changes in movement speed (independent of learning).' The lack of a control condition limits interpretability as learning-specific versus generic task engagement effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "From baseline to early learning, several brain regions exhibited manifold expansion (increased eccentricity/segregation), including bilateral sensorimotor, premotor, supplementary motor, superior parietal cortex, lateral visual cortex, and DMN areas (MFG, MPFC, IFG, MTC). In contrast, posterior medial cortex (PMC) and posterior angular gyrus exhibited manifold contraction (decreased eccentricity/integration).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledged the results are 'clear' but expressed concern about whether these changes reflect learning-specific processes or generic attention/engagement effects. One reviewer noted 'it is nonetheless very limiting if one cannot ascertain whether the observed effects are due to attention (independent of learning) or attention allocated in the pursuit of learning.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C42",
+      "C43"
+    ],
+    "result": "No significant changes in striatal regions were observed from baseline to early learning or from early to late learning. The right pallidum approached significance (p=0.01) but did not survive FDR correction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the null findings in the striatum. The authors' discussion of potential methodological limitations (parcellation resolution) is treated as reasonable speculation rather than a fundamental flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "From early to late learning, DMN regions (MFG, MPFC, IFG, MTC) exhibited manifold contraction (increased integration), while PMC and posterior angular gyrus exhibited manifold expansion (increased segregation). Salience/ventral attention network areas (dACC, anterior insula) also showed expansion during late learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Similar to early learning effects, reviewers questioned whether these changes are learning-specific or reflect generic task engagement dynamics. The reversal pattern is noted but its interpretation as learning-related remains uncertain without a control condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Seed-based connectivity analysis of left MPFC showed that during early learning, MPFC increased connectivity with other DMN regions and decreased connectivity with DAN areas. During late learning, this pattern reversed. The authors interpret manifold expansion of MPFC during early learning as arising from DMN segregation, and contraction during late learning as arising from increased connectivity with DAN areas.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers praised the 'combination of connectivity-based, followed by further scrutiny of seed-based connectivity analyses' as providing 'a more comprehensive viewpoint.' However, the concern about learning-specificity versus attention effects applies equally to these seed-based results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "During early learning, left premotor cortex (PMd) increased connectivity with DAN and salience/ventral attention network areas, and decreased connectivity with DMN areas and hippocampus. During late learning, this pattern reversed, with increased DMN/hippocampus connectivity and decreased DAN/salience connectivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The seed-based analysis is methodologically sound and complements the manifold findings, but the interpretation as learning-specific remains uncertain due to the lack of control for generic attention or engagement effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "During early learning, left PMC decreased connectivity with other DMN-A and Control-C regions, hippocampus, and MPFC, while increasing connectivity with DAN and salience/ventral attention areas. During late learning, this reversed. The authors interpret PMC contraction during early learning as arising from integration with DAN/salience networks, and expansion during late learning as arising from within-network DMN/Control segregation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted the PMC findings as interesting and the opposite pattern compared to other regions is acknowledged. However, the learning-specificity concern applies here as well, and the interpretation of PMC as orchestrating explore/exploit transitions remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Summary finding: During early learning, there is increased functional coupling between DAN sensorimotor areas and salience/ventral attention network areas. During late learning, DAN sensorimotor areas switch their connectivity to DMN areas.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the core summary result of the paper. While reviewers found it 'clear and well-presented,' the critical limitation is that 'it remains to be seen whether these changes reflect generic changes in task engagement during learning or are specific to reward-based motor learning.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Individual differences analysis: Subjects exhibit significant variation in motor learning ability. Functional PCA identified a single component capturing ~75% of learning curve variability. The change in eccentricity of the DAN-A network correlated with learning performance: greater contraction from baseline to early learning and greater expansion from early to late learning were associated with better task performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer noted this is 'the only direct analysis linking behavioural changes to neural changes' but expressed concern that 'the DAN-A shows the opposite trend than group level effects.' The reviewer suggests 'it could be that these learning effects are indeed much smaller and subtler compared to more dominant group-level attention effects during the task.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "During early learning, DAN-A regions showed largest connectivity increases with salience/ventral attention subnetwork (SalVentAttn-B). During late learning, DAN-A regions showed largest connectivity increases with DMN subnetwork (DMN-B). This transition in functional coupling is associated with differences in subject performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This finding is presented as supporting the group-level effects at the individual differences level. However, the reviewer's concern about the opposite trend in DAN-A eccentricity compared to group effects raises questions about consistency and interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors speculate that the relatively small size of the striatum may have limited detection of connectivity changes, as subcortical structures exhibit gradients that may require voxel-level analysis. However, the low-dimensional manifold architecture in cortex did not strongly depend on whether striatal regions were included.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this methodological limitation or the authors' speculation. The null striatal findings are treated as a limitation rather than a fundamental flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Detailed preprocessing and analysis pipeline: fMRI data were preprocessed using fMRIPrep with standard steps including motion correction, slice-timing correction, coregistration, normalization, and denoising with 34 motion/physiological regressors. Functional connectivity matrices were estimated using Ledoit-Wolf estimator. PCA was used for dimensionality reduction, and individual manifolds were aligned to a baseline template using Procrustes alignment (average r=0.88 correlation). Statistical testing included FDR correction and spatial autocorrelation-aware null models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers described the methods as 'state-of-the-art,' 'convincing,' and representing methodological advances. One reviewer noted the revision 'has produced a stronger manuscript' and thanked the authors for 'thorough responses.' The preprocessing and analysis pipeline is treated as rigorous and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Theoretical framework and interpretation: The authors situate their findings within existing literature on reward-based learning, DMN function, salience/ventral attention network roles in exploration, and the unique topographic position of PMC. They interpret early learning connectivity as reflecting exploration (DAN-salience coupling) and late learning as reflecting exploitation (DAN-DMN coupling), with PMC potentially orchestrating this transition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers found the manuscript 'clear and comprehensible' and the theoretical framing well-articulated, the core interpretive limitation remains: without a control condition, it is unclear whether the observed patterns reflect learning-specific processes or generic attention/engagement dynamics. The PMC interpretation as orchestrating explore/exploit transitions is acknowledged as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Overall conclusions: The study establishes neural changes supporting reward-based motor learning and identifies distinct transitions in functional coupling between sensorimotor and transmodal cortex during behavioral adaptation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers described the study as 'valuable,' 'important,' and 'useful,' but consistently noted the limitation that 'it remains to be seen whether these changes reflect generic changes in task engagement during learning or are specific to reward-based motor learning.' The work is seen as motivating future research but not definitively establishing learning-specific mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

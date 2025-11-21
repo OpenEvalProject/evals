@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "PURA syndrome is caused by sporadic mutations in the PURA gene, with hallmarks including developmental delay, intellectual disability, hypotonia, epileptic seizures, and feeding difficulties. Unlike other genetic disorders, almost all mutations across the PURA protein sequence result in full disease penetrance, with no identifiable hot-spot regions and an underrepresentation of mild phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15, C16 establish PURA syndrome as a monogenetic disorder with well-documented clinical features, supported by multiple citations. Claims C2, C26, C27, C28, C29 describe the unusual pattern of full penetrance across the protein sequence without hot-spots, which is consistently supported by cited literature and forms the central motivation for this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C95",
+      "C96"
+    ],
+    "result": "Wild-type hsPURA co-localizes to stress granules in an RNA-binding-dependent manner, but patient-related variants (K97E, I206F, F233del) do not show significant changes in stress granule association. PURA knockdown resulted in smaller stress granules without altering their total number, suggesting stress granule association may not be a core feature of PURA syndrome pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 are supported by immunofluorescence data in Figure 1B,C and quantification showing no significant differences for patient variants. The m11 mutant control (C32-C33) demonstrates RNA-binding dependence. Claims C34-C36 are supported by knockdown data in Figure 1\u2014figure supplement 4C. The interpretation (C95-C96) is appropriately cautious given the incomplete knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C97"
+    ],
+    "result": "Overexpressed hsPURA co-localizes with P-bodies in an RNA-binding-dependent manner, and patient-related variants K97E and F233del show significantly reduced P-body co-localization. This impaired P-body association may play a role in PURA syndrome etiology, with dimerization appearing important for P-body association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are well-supported by immunofluorescence data in Figure 2A,B with statistical significance (p<0.05) for K97E and F233del variants. The RNA-binding dependence (C39-C40) is demonstrated by the m11 mutant control. The inference about dimerization (C43) is reasonable based on F233del data and previous predictions, though indirect. Claim C97 appropriately suggests a potential role based on convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C111"
+    ],
+    "result": "hsPURA does not readily undergo phase separation with total cellular RNA under the tested experimental conditions, suggesting P-body formation is unlikely to directly depend on phase separation by hsPURA but rather on its function as a gene regulator of P-body core factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is directly supported by negative phase separation data in Figure 2\u2014figure supplement 1 with appropriate positive control (FUS RGG3). Claim C45 appropriately qualifies the interpretation, acknowledging limitations while citing recent work (C111, Molitor et al., 2023) showing PURA's role in regulating P-body proteins. The conclusion is appropriately cautious and evidence-based.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C106"
+    ],
+    "result": "Recombinant expression tests showed that patient variants R199P, I206F, F233del, and R245P resulted in insoluble protein, while K97E and R140P variants were soluble and could be purified. For variants predicted to have folding defects, expression tests consistently resulted in insoluble samples, validating previous predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by expression data documented in Supplementary file 1a. Claim C106 correctly summarizes that predicted folding defects correlated with insolubility, providing experimental validation of computational predictions from Reijnders et al., 2018. This represents a straightforward and well-documented experimental result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C5"
+    ],
+    "result": "The crystal structure of the C-terminal PUR domain (hsPURA III) was determined at 1.7 \u00c5 resolution, revealing the typical PC4-like fold with four antiparallel \u03b2-strands and one \u03b1-helix. The domain forms an intermolecular homodimer and shows high structural similarity to dmPURA III (r.m.s.d. 1.26 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are well-supported by crystallographic data presented in Figure 3A and Supplementary file 1b (PDB ID: 8CHW). The resolution (1.7 \u00c5) is excellent, and the structural description is consistent with the PC4-like fold family. The comparison to dmPURA III (C52) is quantitatively supported with r.m.s.d. values and shown in Figure 3\u2014figure supplement 1A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The C-terminal PUR domain (hsPURA III) binds RNA and exhibits strand separation activity for double-stranded DNA. Full-length hsPURA shows much more efficient RNA binding and dsDNA strand separation than the PUR III domain alone, indicating potential cooperativity between N- and C-terminal PUR domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C55 are supported by EMSA data (Figure 3B,C) and unwinding assay data (Figure 3D). Claim C54 is appropriately cited to previous work. Claims C56-C57 are supported by quantitative comparison in Figure 3D,E showing full-length protein is more efficient (Km 0.83 \u00b5M vs 4.26 \u00b5M), though the inference of cooperativity (C57) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Patient mutations F233del and R245P in the C-terminal PUR domain are predicted to impair structural integrity and dimerization. F233 is part of the \u03b2-sheet and contributes to dimerization, while its deletion likely disrupts \u03b2-sheet folding. NanoBRET assays confirmed that both F233del and R245P variants show strongly reduced dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Structural predictions (C58-C61) are supported by the crystal structure analysis (Figure 3\u2014figure supplement 4A,B) and previous homology modeling. The experimental validation (C62-C63) is well-supported by NanoBRET data in Figure 3F showing statistically significant reduction in dimerization signal (p<0.001 for both variants). The combination of structural analysis and functional validation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C5"
+    ],
+    "result": "The crystal structure of the N-terminal PUR domain (hsPURA I\u2013II) was determined, showing overall similarity to dmPURA I\u2013II (r.m.s.d. 1.2 \u00c5) but with marked differences between the four molecules in the asymmetric unit, particularly in loop regions and \u03b2-sheet edges. This suggests greater structural flexibility than average domain folds and likely greater than its D. melanogaster ortholog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by crystallographic data in Figure 4A and Supplementary file 1b (PDB ID: 8CHT) and comparison to dmPURA in Figure 4\u2014figure supplement 1. Claims C66-C67 are supported by structural analysis shown in Figure 4B, demonstrating variability between molecules in the asymmetric unit. The inference of greater flexibility (C67) is reasonable based on the observed structural differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The N-terminal PUR domain (hsPURA I\u2013II) quantitatively binds CGG-repeat RNA. The K97E variant shows moderately but significantly decreased RNA binding, consistent with altered surface electrostatic potential. In contrast, R140P shows wild-type-like RNA binding, suggesting it might be a benign variant. The m11 mutant shows no detectable RNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are well-supported by EMSA data in Figure 4C,D with appropriate statistical analysis. The K97E reduction is significant (p=1.5E-05), while R140P shows no significant difference (p=0.5). The electrostatic explanation for K97E (C70) is supported by Figure 3\u2014figure supplement 1B. The interpretation that R140P is benign (C72) is appropriately cautious and supported by functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The N-terminal PUR domain shows considerable strand-separating activity for dsDNA. The K97E variant shows 90% loss of strand-separation activity, while R140P shows wild-type-like activity. The nucleic acid-binding-deficient m11 variant fails to separate dsDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are well-supported by unwinding assay data in Figure 4E,F with quantification showing K97E has significantly reduced activity (p=3.9E-16) while R140P is not significantly different (p=0.07). The m11 negative control (C75) validates the assay. The 90% reduction for K97E (C76) is clearly demonstrated in the quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CD spectroscopy showed that hsPURA I\u2013II and R140P variant have typical alpha-beta profiles suggesting proper folding, while K97E shows strongly altered secondary structure content. This was unexpected as K97E is a surface mutation predicted not to affect structural integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are directly supported by CD spectroscopy data in Figure 5A showing clear differences in spectral profiles. The observation that K97E affects folding despite being a surface mutation (C80) is appropriately noted as unexpected and contradicts previous predictions, motivating further structural investigation. The data quality appears good with clear differences between variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The crystal structure of hsPURA I\u2013II K97E was solved at 2.45 \u00c5 resolution, revealing two molecules in the asymmetric unit with unusual differences (r.m.s.d. 1.48 \u00c5). Chain B shows register shifts in \u03b2-strands (\u03b25 by one amino acid, \u03b26 by two amino acids) without destroying the overall scaffold. This demonstrates great structural flexibility and promiscuity in folding of the N-terminal PUR domain, with the \u03b2-ridge being the most divergent part.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 are well-supported by crystallographic data in Figure 5B-E and Supplementary file 1b (PDB ID: 8CHU). The register shifts (C86) are clearly shown in Figure 5D,E with electron density maps. The structural analysis is thorough and the interpretation of folding promiscuity (C89) is well-justified by the observation that a surface mutation induces significant but localized structural changes without complete unfolding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "NMR measurements showed that K97E mutation does not induce global unfolding but triggers structural rearrangements mostly in the \u03b2-strand region. Molecular dynamics simulations revealed that K97E has higher flexibility than wild-type in several regions, particularly the N-terminal part of the \u03b11 helix and C-terminal ends of \u03b25 and \u03b26.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by NMR data in Figure 5F and Figure 5\u2014figure supplement 3A showing well-dispersed resonances indicating a folded core with perturbations in \u03b2-strand regions. Claim C91 is supported by molecular dynamics simulations in Figure 5\u2014figure supplement 3B with statistical analysis showing significant differences in RMSF. The combination of NMR and MD provides strong complementary evidence for localized structural rearrangements rather than global unfolding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The crystal structure of hsPURA I\u2013II R140P was solved at 2.15 \u00c5 resolution, showing no major structural differences from wild-type (r.m.s.d. 0.89 \u00c5). Combined with functional data showing wild-type-like RNA binding and strand separation, this indicates R140P is unlikely to impair structural integrity and is consistent with being a benign variant. R140P is now listed in ClinVar as 'uncertain significance.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by crystallographic data in Figure 5\u2014figure supplement 1 (PDB ID: 8CHV) showing minimal structural differences. Claims C101-C102 appropriately integrate structural and functional data (from earlier results) to conclude R140P is likely benign. Claim C103 provides independent validation from ClinVar database. The convergent evidence from structure, RNA binding, strand separation, and clinical reclassification strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C6",
+      "C7"
+    ],
+    "result": "The flexibility and promiscuity of hsPURA domain folding render this protein particularly susceptible to mutations, even when amino-acid substitutions impose only moderate changes to local charge and stereochemistry. This structural property explains why so many genetic variations across the PURA sequence result in the full disease spectrum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 represent the central mechanistic conclusion of the study, integrating structural data (C6) showing high dynamics and promiscuity with the clinical observation (C7) of full penetrance. This is well-supported by: (1) crystal structures showing conformational variability in asymmetric units, (2) K97E demonstrating that even surface mutations cause misfolding, (3) NMR and MD data confirming flexibility, and (4) correlation with clinical data. The logic is sound and evidence-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "There is a clear correlation between defects observed in in vitro analyses and reported pathogenicity in patients. In vitro and structural studies are suitable tools to classify genetic variants as potentially pathogenic or benign. While predictions of misfolding events appear reliable, structural predictions of surface-exposed residues are more complicated, as moderate surface mutations like K97E can result in promiscuous folding and full disease symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 represent appropriate conclusions based on the comprehensive dataset. The correlation (C104) is demonstrated by multiple variants tested. The diagnostic potential (C105, C110) is appropriately framed as proof-of-principle. The distinction between buried and surface residue predictions (C107-C109) is well-illustrated by the contrasting examples of R140P (benign) and K97E (pathogenic), both surface residues with different outcomes. The conclusions are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "PURA is ubiquitously expressed and implicated in transcriptional/translational regulation and mRNA transport in neurons. It is important for postnatal brain development and has been implicated as a modulator of neurodegenerative disorders (FXTAS, ALS-FTD), where it is present in pathological RNA foci and can protect against RNA toxicity and reduce mutant FUS toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 provide important biological context for PURA function, all supported by appropriate citations to published literature. These are background claims establishing the broader significance of PURA beyond the syndrome, though they are not experimentally tested in this study. The citations appear appropriate and the claims are consistent with established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Based on dmPURA crystal structures, three PUR repeats (I, II, III) fold into globular domains. Repeats I and II form an N-terminal domain via intramolecular interactions, while two repeats III from different molecules mediate dimerization. All PUR domains belong to the PC4-like family that binds single-stranded nucleic acids and can unwind double-stranded DNA/RNA. Previous homology modeling predicted effects of mutations but remained speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C25 provide essential structural background based on previous work (Graebsch et al., Weber et al.) and are appropriately cited. These claims establish the rationale for the current structural studies and acknowledge limitations of previous homology-based predictions (C24-C25), motivating the need for experimental human structures. All claims are consistent with cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "A recent study showed that hsPURA knockdown in HeLa and fibroblast cells resulted in down-regulation of essential P-body proteins LSM14a and DDX6, most likely leading to strongly impaired P-body formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 cite recent work (Molitor et al., 2023) to provide context for interpreting the P-body localization results. The citation appears appropriate and the claims are used to support the interpretation that P-body formation depends on PURA's gene regulatory function rather than phase separation. This is background information from cited work, not experimentally tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The experimentally determined structures of human N- and C-terminal PUR domains offer more physiological structural reference points for future assessments of novel hsPURA mutations and their potential pathogenicity in patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is an appropriate forward-looking statement about the utility of the structures determined in this study. It is well-supported by the demonstration that human structures (46% identity to Drosophila) reveal features not apparent in homology models, particularly the structural flexibility and promiscuity. The claim is appropriately framed as an expectation for future work rather than a definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Patient mutations across PURA impair its co-localization with processing bodies, and these mutations either destroyed the folding integrity, RNA binding, or dimerization of PURA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is supported by P-body localization data in Figure 2 showing reduced co-localization for K97E and F233del. Claim C4 is supported by the comprehensive characterization showing: insolubility for some variants (folding), reduced RNA binding for K97E (Figure 4C,D), and reduced dimerization for F233del and R245P (Figure 3F). These represent the main functional consequences of the mutations studied.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1753 @@
+{
+  "submission": {
+    "id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:20:16.621206Z",
+    "updated_at": "2025-11-20T23:20:16.621206Z"
+  },
+  "content": [
+    {
+      "id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "content_type": "manuscript",
+      "content_text": "# Structural characterization of ligand binding and pH-specific enzymatic activity of mouse Acidic Mammalian Chitinase\n\n## Authors\n\n- Roberto Efra\u00edn D\u00edaz<sup>1</sup> ([ORCID: 0000-0002-1172-9919](https://orcid.org/0000-0002-1172-9919))\n- Andrew K Ecker<sup>3</sup>\n- Galen J Correy<sup>1</sup>\n- Pooja Asthana<sup>1</sup>\n- Iris D Young<sup>1</sup>\n- Bryan Faust<sup>3</sup>\n- Michael C Thompson<sup>7</sup>\n- Ian B Seiple<sup>3</sup>\n- Steven Van Dyken<sup>9</sup>\n- Richard M Locksley<sup>10</sup>\n- James S Fraser<sup>1</sup> ([ORCID: 0000-0002-5080-2859](https://orcid.org/0000-0002-5080-2859)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n2. Tetrad Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n3. Department of Pharmaceutical Chemistry, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n4. Cardiovascular Research Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n5. Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n6. Biophysics Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n7. Chemistry and Chemical Biology Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n8. Department of Chemistry and Chemical Biology, University of California, Merced Merced United States ([ROR:00d9ah105](https://ror.org/00d9ah105))\n9. Department of Pathology and Immunology, Washington University School of Medicine in St Louis St Louis United States ([ROR:036c27j91](https://ror.org/036c27j91))\n10. Department of Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n11. Department of Microbiology and Immunology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))\n12. University of California, Howard Hughes Medical Institute, San Francisco San Francisco United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nChitin is an abundant biopolymer and pathogen-associated molecular pattern that stimulates a host innate immune response. Mammals express chitin-binding and chitin-degrading proteins to remove chitin from the body. One of these proteins, Acidic Mammalian Chitinase (AMCase), is an enzyme known for its ability to function under acidic conditions in the stomach but is also active in tissues with more neutral pHs, such as the lung. Here, we used a combination of biochemical, structural, and computational modeling approaches to examine how the mouse homolog (mAMCase) can act in both acidic and neutral environments. We measured kinetic properties of mAMCase activity across a broad pH range, quantifying its unusual dual activity optima at pH 2 and 7. We also solved high-resolution crystal structures of mAMCase in complex with oligomeric GlcNAcn, the building block of chitin, where we identified extensive conformational ligand heterogeneity. Leveraging these data, we conducted molecular dynamics simulations that suggest how a key catalytic residue could be protonated via distinct mechanisms in each of the two environmental pH ranges. These results integrate structural, biochemical, and computational approaches to deliver a more complete understanding of the catalytic mechanism governing mAMCase activity at different pH. Engineering proteins with tunable pH optima may provide new opportunities to develop improved enzyme variants, including AMCase, for therapeutic purposes in chitin degradation.\n\n## Introduction\n\nChitin, a polymer of \u03b2(1-4)-linked N-acetyl-D-glucosamine (GlcNAc), is the second most abundant polysaccharide in nature. Chitin is present in numerous pathogens, such as nematode parasites, dust mites, and fungi (Cabib and Bowers, 1975; Zhu et al., 2016; Tang et al., 2015), and is a pathogen-associated molecular pattern (PAMP) that activates mammalian innate immunity (Elieh Ali Komi et al., 2018). To mitigate constant exposure to environmental chitin, mammals have evolved unusual multi-gene loci that are highly conserved and encode chitin-response machinery, including chitin-binding (chi-lectins) and chitin-degrading (chitinases) proteins.\n\nHumans express two active chitinases as well as five chitin-binding proteins that recognize chitin across many tissues (Bussink et al., 2007). Chitin levels can be potentially important for mammalian lung and gastrointestinal health. These tissues have distinct pH, with the lung environment normally ~pH 7.0 and the stomach environment normally ~pH 2.0, which raises the question of how chitin-response machinery has evolved to function optimally across such diverse chemical environments. Acidic Mammalian Chitinase (AMCase, also known as Chia, for chitinase, acidic) was originally discovered in the stomach and named for its acidic isoelectric point. AMCase is also constitutively expressed in the lungs at low levels and overexpressed upon chitin exposure (Van Dyken and Locksley, 2018; Zhu et al., 2004; Reese et al., 2007), suggesting this single enzyme has evolved to perform its function under vastly different chemical conditions. Chitin clearance is particularly important for mammalian pulmonary health, where exposure to and accumulation of chitin can be deleterious. In the absence of AMCase, chitin accumulates in the airways, leading to epithelial stress, chronic activation of type 2 immunity, and age-related pulmonary fibrosis (Van Dyken et al., 2017; Van Dyken and Locksley, 2018).\n\nAMCase is a member of the glycosyl hydrolase family 18 (GH18) (Davies and Henrissat, 1995), the members of which hydrolyze sugar linkages through a conserved two-step mechanism where the glycosidic oxygen is protonated by an acidic residue and a nucleophile adds into the anomeric carbon leading to elimination of the hydrolyzed product (Figure 1A). This mechanism is corroborated by structures of different GH18 chitinases, most notably S. marcescens Chitinase A (PDB ID: 1FFQ) (Papanikolau et al., 2003). In inhibitor-bound structures for human AMCase (hAMCase; PDB ID: 3FY1), interactions mimicking the retentive, post-cleavage intermediate state pre-hydrolysis of the oxazolinium intermediate are adopted by the nonhydrolyzable analogs (Cole et al., 2010; Olland et al., 2009). Unlike the nonhydrolyzable inhibitors, we expect that the oxazolinium intermediate formed from chitin will reopen into the reducing-end GlcNAc monomer unit upon the nucleophilic addition of water.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig1-v1.jpg)\n\n**Figure 1.:** (A) Chemical depiction of the conserved two-step mechanism where the glycosidic oxygen is protonated by an acidic residue and a nucleophile adds into the anomeric carbon leading to elimination of the hydrolyzed product. (B) The rate of 4MU-chitobioside catalysis (1 /s) by mAMCase catalytic domain is plotted as a function of 4MU-chitobioside concentration (\u00b5M). Each data point represents n=4 with error bars representing the standard deviation. Michaelis-Menten equation without substrate inhibition was used to estimate the kcat and KM from the initial rate of reaction at various substrate concentrations. (C) The rate of substrate turnover (1 /s) by mAMCase catalytic domain is plotted as a function of pH. Error bars represent the 95% confidence interval. (D) The Michaelis-Menten constant of mAMCase catalytic domain is plotted as a function of pH. Error bars represent the 95% confidence interval. (E) The catalytic efficiency (kcat/KM) of mAMCase catalytic domain is plotted as a function of pH. (F) Hypothetical catalytic activity modeled explained by a low pH mechanism (red), and high pH mechanism (blue) and their corresponding total activity (dashed line).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of modified endpoint 4MU-chitobioside assay. (B) Reaction pH before and after quenching with 0.1 M Gly-NaOH pH 10.7, and (C) a pH strip reference sheet.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) A linear fit forced through Y=0 is used to generate the standard curve for converting RFU to 4MU [\u00b5M]. Each data point represents n=8 with error bars representing the standard deviation. (B) 4MU fluorescence (RFU) is plotted as a function of time (s). Each data point represents n=4 with error bars representing the standard deviation. A linear fit is applied to each concentration of 4MU-chitobioside to calculate an initial rate. RFU is converted to \u00b5M using a 4MU standard curve. (C) The rate of 4MU-chitobioside catalysis (1 /s) by mAMCase catalytic domain is plotted as a function of 4MU-chitobioside concentration (\u00b5M). Each data point represents n=4 with error bars representing the standard deviation. Michaelis-Menten equation without substrate inhibition was used to estimate the kcat and KM from the initial rate of reaction at various substrate concentrations.\n\nBiochemical studies of mouse AMCase (mAMCase) measuring relative activity levels demonstrated a global maximum activity at acidic pH, but also a broad second local optimum near neutral pH (Boot et al., 2001). This result suggested that mAMCase exhibits two distinct pH optima, which is unlike most enzymes that exhibit a shift or broadening of enzymatic activity across conditions (Yoong et al., 2006; Sajedi et al., 2005; Bhunia et al., 2011). For mAMCase the global maximum near pH 2.0 resembles the chemical environments of the stomach and the local maximum near pH 7.0 is similar to the environment of the lung. These two pH optima in the same enzyme suggest that mAMCase may employ different mechanisms to perform its function in different environments (Seibold et al., 2009). In contrast, the human homolog has maximal activity at pH 4.6 with sharply declining activity at more acidic and basic pH (Seibold et al., 2009; Chou et al., 2006). This optimum corresponds with the pH of lung tissue in pulmonary fibrosis and other disease contexts, suggesting that hAMCase may have been selected for its ability to clear chitin from the lungs and restore healthy lung function.\n\nThe activity of mAMCase has been previously measured through endpoint experiments with limited insight into the rate of catalysis, substrate affinity, and potential substrate inhibition (Seibold et al., 2009). While the pH profile of mAMCase has been reported as a percentage of maximum activity at a given pH, it is unclear how the individual kinetic parameters (KM or kcat) vary (Boot et al., 2001). These gaps have made it challenging to define the mechanism by which mAMCase shows distinct enzymatic optima at different pHs. One possibility is that mAMCase undergoes structural rearrangements to support this adaptation. Alternatively AMCase may have subtly different mechanisms for protonating the catalytic glutamic acid depending on the environmental pH.\n\nIn this work, we explore these hypotheses by employing biophysical, biochemical, and computational approaches to observe and quantify mAMCase function at different pHs. We measured the mAMCase hydrolysis of chitin, which revealed significant activity increase under more acidic conditions compared to neutral or basic conditions. To understand the relationship between catalytic residue protonation state and pH-dependent enzyme activity, we calculated the theoretical pKa of the active site residues and performed molecular dynamics (MD) simulations of mAMCase at various pHs. We also directly observed conformational and chemical features of mAMCase between pH 4.74 and 5.60 by solving X-ray crystal structures of mAMCase in complex with oligomeric GlcNAcn across this range. Together these data support a model in which mAMCase employs two different mechanisms for obtaining a proton in a pH-dependent manner, providing a refined explanation as to how this enzyme recognizes its substrate in disparate environments.\n\n## Results\n\n### New assay confirms broad pH profile for mAMCase\n\nPrior studies have focused on relative mAMCase activity at different pH (Boot et al., 2001; Seibold et al., 2009; Kashimura et al., 2015), limiting the ability to define its enzymological properties precisely and quantitatively across conditions of interest. To expand upon these previous observations of dual optima in mAMCase activity at pH 2.0 and 7.0, we measured mAMCase activity in vitro. We developed an approach that would enable direct measurement of kcat and KM for mAMCase across a broad pH range by modifying a prior assay that continuously measures mAMCase-dependent breakdown of a fluorogenic chitin analog, 4-methylumbelliferone (4MU) conjugated chitobioside. To overcome the pH-dependent fluorescent properties of 4MU-chitobioside, we reverted the assay into an endpoint assay, which allowed us to measure substrate breakdown across different pH (Barad et al., 2020; Figure 1\u2014figure supplement 1).\n\nWe conducted our endpoint assay across a pH range of 2.0\u20137.4 to reflect the range of physiological conditions at its in vivo sites of action (Figure 1B; Data available at doi: 10.5281/zenodo.8250616). We then derived the Michaelis-Menten parameters at each pH value measured (Figure 1\u2014figure supplement 2; Data available at doi: 10.5281/zenodo.8250616). We found that mAMCase has maximum activity at pH 2.0 with a secondary local maximum at pH 6.5, pointing to a bimodal distribution of activity across pH. This is consistent with the relative activity measurements previously performed on mAMCase, but distinct from a single broad pH range, as has been observed for kcat of hAMCase (Boot et al., 2001; Seibold et al., 2009). The two maxima at pH 2.0 and 6.5 are an approximate match the pH at the primary in vivo sites of mAMCase expression, the stomach and lungs, respectively (Seibold et al., 2009). These observations raise the possibility that mAMCase, unlike other AMCase homologs, may have evolved an unusual mechanism to accommodate multiple physiological conditions.\n\nWe also found that low pH primarily improves the rate of mAMCase catalysis 6.3-fold (kcat; Figure 1C), whereas KM (Figure 1D) worsens 2.5-fold from pH 7.4 to pH 2.0. Similar to chitotriosidase the other active chitinase in mammals and also a GH18 chitinase, we observe an apparent reduction in the rate of mAMCase catalysis across all pH values measured at 4MU-chitobioside concentrations above 80 \u03bcM, which suggests that mAMCase may be subject to product inhibition (Aguilera et al., 2003). The underlying mechanism for the observed product inhibition may be that mAMCase can transglycosylate the products, as has been previously observed at pH 2.0 and 7.0 (Wakita et al., 2017). This potential product inhibition leads to a systematic underprediction of rates by the Michaelis-Menten model at high substrate concentrations. The catalytic efficiency (kcat/KM) of mAMCase may not capture the effects of product inhibition given that these constants reflect sub-saturating substrate concentrations. Independent of the potential for product inhibition, the trend that mAMCase has highest kcat at very low pH and another local optimum at more neutral pH is clear. We hypothesize that these activity data resemble two overlapping activity distributions, suggesting that the rate at lower pH activity is dependent on the concentration of free protons in solution and that the higher pH optimum results from a distinct mechanism (Figure 1E).\n\n### Characterization of mAMCase ligand occupancy and conformational heterogeneity\n\nOur biochemical analyses led us to hypothesize that the pH-dependent activity profile of mAMCase is linked to the mechanism by which catalytic residues are protonated. Previous structural studies on AMCase have focused on interactions between inhibitors like methylallosamidin and the catalytic domain of the protein. We built on these efforts by solving the structure of mAMCase in complex with oligomeric GlcNAcn, the building block of chitin. We used chitin oligomers because they are chemically identical to polymeric chitin found in nature but are soluble and therefore more amenable for co-crystallization than crystalline chitin is. We successfully determined high resolution X-ray crystal structures of the apo mAMCase catalytic domain at pH 5.0 and 8.0 (PDB ID: 8FG5, 8FG7) and holo mAMCase catalytic domain between pH 4.74\u20135.60 in complex with either GlcNAc2 or GlcNAc3 (PDB ID: 8GCA, 8FRC, 8FR9, 8FRB, 8FRD, 8FRG, 8FRA; Figure 2\u2014figure supplement 1; Table 1).\n\n**Table 1.**\n Data collection and refinement statistics.Statistics for the highest resolution shell are shown in parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Dataset</th>\n      <th>Apo at 100 K</th>\n      <th>Apo at 277 K</th>\n      <th>Holo with GlcNAc3 at pH 4.74</th>\n      <th>Holo with GlcNAc2 at pH 4.91</th>\n      <th>Holo with GlcNAc2 at pH 5.08</th>\n      <th>Holo with GlcNAc2 at pH 5.25</th>\n      <th>Holo with GlcNAc2 at pH 5.25</th>\n      <th>Holo with GlcNAc2 at pH 5.43</th>\n      <th>Holo with GlcNAc2 at pH 5.60</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB ID</td>\n      <td>8FG5</td>\n      <td>8FG7</td>\n      <td>8GCA</td>\n      <td>8FRC</td>\n      <td>8FR9</td>\n      <td>8FRB</td>\n      <td>8FRD</td>\n      <td>8FRG</td>\n      <td>8FRA</td>\n    </tr>\n    <tr>\n      <td>Diffraction Data DOI</td>\n      <td>10.18430/M38FG5</td>\n      <td>10.18430/M38FG7</td>\n      <td>10.18430/M38GCA</td>\n      <td>10.18430/M38FRC</td>\n      <td>10.18430/M38FR9</td>\n      <td>10.18430/M38FRB</td>\n      <td>10.18430/M38FRD</td>\n      <td>10.18430/M38FRG</td>\n      <td>10.18430/M38FRA</td>\n    </tr>\n    <tr>\n      <td>pH</td>\n      <td>5.00</td>\n      <td>8.00</td>\n      <td>4.74</td>\n      <td>4.91</td>\n      <td>5.08</td>\n      <td>5.25</td>\n      <td>5.25</td>\n      <td>5.43</td>\n      <td>5.60</td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>GlcNAc3</td>\n      <td>GlcNAc2</td>\n      <td>GlcNAc2</td>\n      <td>GlcNAc2</td>\n      <td>GlcNAc2</td>\n      <td>GlcNAc2</td>\n      <td>GlcNAc2</td>\n    </tr>\n    <tr>\n      <td>[Ligand] mM</td>\n      <td>N/A</td>\n      <td>N/A</td>\n      <td>12.67</td>\n      <td>29.00</td>\n      <td>19.33</td>\n      <td>19.33</td>\n      <td>29.00</td>\n      <td>29.00</td>\n      <td>19.33</td>\n    </tr>\n    <tr>\n      <td>Wavelength</td>\n      <td>1.117</td>\n      <td>1.116</td>\n      <td>1.116</td>\n      <td>1.116</td>\n      <td>1.116</td>\n      <td>1.116</td>\n      <td>1.116</td>\n      <td>1.116</td>\n      <td>1.116</td>\n    </tr>\n    <tr>\n      <td>Resolution range</td>\n      <td>46.8\u20131.3 (1.346\u20131.3)</td>\n      <td>50.88\u20131.64 (1.699\u20131.64)</td>\n      <td>61.83\u20131.7 (1.761\u20131.7)</td>\n      <td>69.52\u20131.92 (1.989\u20131.92)</td>\n      <td>69.59\u20131.5 (1.554\u20131.5)</td>\n      <td>57.29\u20131.7 (1.761\u20131.7)</td>\n      <td>58.67\u20131.68 (1.74\u20131.68)</td>\n      <td>69.59\u20131.741 (1.803\u20131.741)</td>\n      <td>86.27\u20131.95 (2.02\u20131.95)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P 1 21 1</td>\n      <td>P 21 21 21</td>\n      <td>P 21 21 2</td>\n      <td>P 2 21 21</td>\n      <td>P 2 21 21</td>\n      <td>P 21 21 21</td>\n      <td>P 2 21 21</td>\n      <td>P 21 21 2</td>\n      <td>P 21 21 21</td>\n    </tr>\n    <tr>\n      <td>Unit cell (length)</td>\n      <td>60.04 42.25 67.41</td>\n      <td>63.6466 71.8436 84.6724</td>\n      <td>76.0664 91.7195 106.132</td>\n      <td>70.9333 92.6896 105.123</td>\n      <td>71.1131 92.6412 105.423</td>\n      <td>91.9263 106.963 146.492</td>\n      <td>70.755 92.451 104.99</td>\n      <td>92.8934 105.041 70.8116</td>\n      <td>92.0659 106.705 146.57</td>\n    </tr>\n    <tr>\n      <td>Unit cell (angles)</td>\n      <td>90 95.18 90</td>\n      <td>90 90 90</td>\n      <td>90 90 90</td>\n      <td>90 90 90</td>\n      <td>90 90 90</td>\n      <td>90 90 90</td>\n      <td>90 90 90</td>\n      <td>90 90 90</td>\n      <td>90 90 90</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>2099252 (194837)</td>\n      <td>620486 (61796)</td>\n      <td>516529 (48842)</td>\n      <td>339863 (33874)</td>\n      <td>702566 (63651)</td>\n      <td>1010525 (98078)</td>\n      <td>499250 (48902)</td>\n      <td>420425 (37138)</td>\n      <td>691049 (67775)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>83050 (8251)</td>\n      <td>47999 (4678)</td>\n      <td>82111 (8079)</td>\n      <td>53587 (5242)</td>\n      <td>109106 (10560)</td>\n      <td>158679 (15679)</td>\n      <td>78153 (7593)</td>\n      <td>71329 (6974)</td>\n      <td>105512 (10401)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>25.3 (23.6)</td>\n      <td>12.9 (13.2)</td>\n      <td>6.3 (6.0)</td>\n      <td>6.3 (6.5)</td>\n      <td>6.4 (6.0)</td>\n      <td>6.4 (6.3)</td>\n      <td>6.4 (6.4)</td>\n      <td>5.9 (5.3)</td>\n      <td>6.5 (6.6)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.99 (99.98)</td>\n      <td>99.37 (98.65)</td>\n      <td>99.72 (99.42)</td>\n      <td>99.88 (99.79)</td>\n      <td>97.48 (95.47)</td>\n      <td>99.87 (99.88)</td>\n      <td>98.71 (97.03)</td>\n      <td>99.56 (99.03)</td>\n      <td>99.74 (99.62)</td>\n    </tr>\n    <tr>\n      <td>Mean I/sigma(I)</td>\n      <td>13.31 (1.88)</td>\n      <td>7.00 (1.19)</td>\n      <td>8.83 (3.12)</td>\n      <td>7.72 (3.21)</td>\n      <td>16.77 (5.46)</td>\n      <td>9.09 (3.10)</td>\n      <td>9.68 (3.09)</td>\n      <td>6.18 (2.56)</td>\n      <td>5.65 (1.26)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor</td>\n      <td>15.81</td>\n      <td>16.38</td>\n      <td>12.17</td>\n      <td>13.44</td>\n      <td>9.16</td>\n      <td>12.47</td>\n      <td>11.55</td>\n      <td>15.76</td>\n      <td>12.64</td>\n    </tr>\n    <tr>\n      <td>R-merge</td>\n      <td>0.1342 (2.107)</td>\n      <td>0.2489 (2.119)</td>\n      <td>0.1811 (1.138)</td>\n      <td>0.1531 (0.5265)</td>\n      <td>0.06539 (0.2976)</td>\n      <td>0.1111 (0.5593)</td>\n      <td>0.1155 (0.569)</td>\n      <td>0.1321 (0.4674)</td>\n      <td>0.1619 (0.6276)</td>\n    </tr>\n    <tr>\n      <td>R-meas</td>\n      <td>0.137 (2.153)</td>\n      <td>0.2591 (2.203)</td>\n      <td>0.1972 (1.242)</td>\n      <td>0.1669 (0.5728)</td>\n      <td>0.07122 (0.3259)</td>\n      <td>0.121 (0.61)</td>\n      <td>0.126 (0.6197)</td>\n      <td>0.1448 (0.5188)</td>\n      <td>0.176 (0.6822)</td>\n    </tr>\n    <tr>\n      <td>R-pim</td>\n      <td>0.02718 (0.4382)</td>\n      <td>0.07097 (0.5968)</td>\n      <td>0.07709 (0.4917)</td>\n      <td>0.06573 (0.2233)</td>\n      <td>0.02784 (0.1311)</td>\n      <td>0.04745 (0.2411)</td>\n      <td>0.04965 (0.2425)</td>\n      <td>0.05834 (0.2207)</td>\n      <td>0.06836 (0.2647)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.999 (0.858)</td>\n      <td>0.996 (0.502)</td>\n      <td>0.997 (0.805)</td>\n      <td>0.994 (0.884)</td>\n      <td>0.999 (0.943)</td>\n      <td>0.997 (0.888)</td>\n      <td>0.993 (0.68)</td>\n      <td>0.994 (0.845)</td>\n      <td>0.997 (0.845)</td>\n    </tr>\n    <tr>\n      <td>CC*</td>\n      <td>1 (0.961)</td>\n      <td>0.999 (0.818)</td>\n      <td>0.999 (0.944)</td>\n      <td>0.998 (0.969)</td>\n      <td>1 (0.985)</td>\n      <td>0.999 (0.97)</td>\n      <td>0.998 (0.9)</td>\n      <td>0.998 (0.957)</td>\n      <td>0.999 (0.957)</td>\n    </tr>\n    <tr>\n      <td>Reflections used in refinement</td>\n      <td>83046 (8251)</td>\n      <td>47968 (4677)</td>\n      <td>82030 (8059)</td>\n      <td>53543 (5242)</td>\n      <td>109065 (10557)</td>\n      <td>158531 (15678)</td>\n      <td>78103 (7592)</td>\n      <td>71295 (6967)</td>\n      <td>105380 (10401)</td>\n    </tr>\n    <tr>\n      <td>Reflections used for R-free</td>\n      <td>4099 (422)</td>\n      <td>2328 (234)</td>\n      <td>4142 (427)</td>\n      <td>2738 (273)</td>\n      <td>5449 (559)</td>\n      <td>7978 (802)</td>\n      <td>3878 (334)</td>\n      <td>3561 (348)</td>\n      <td>5174 (542)</td>\n    </tr>\n    <tr>\n      <td>R-work</td>\n      <td>0.1317 (0.2361)</td>\n      <td>0.1469 (0.2707)</td>\n      <td>0.1598 (0.2428)</td>\n      <td>0.1472 (0.1616)</td>\n      <td>0.1376 (0.1615)</td>\n      <td>0.1423 (0.1850)</td>\n      <td>0.1396 (0.1724)</td>\n      <td>0.1657 (0.2194)</td>\n      <td>0.1695 (0.2074)</td>\n    </tr>\n    <tr>\n      <td>R-free</td>\n      <td>0.1519 (0.2613)</td>\n      <td>0.1717 (0.3244)</td>\n      <td>0.1978 (0.2952)</td>\n      <td>0.1898 (0.2065)</td>\n      <td>0.1644 (0.1932)</td>\n      <td>0.1778 (0.2315)</td>\n      <td>0.1689 (0.2113)</td>\n      <td>0.2083 (0.2737)</td>\n      <td>0.2056 (0.2463)</td>\n    </tr>\n    <tr>\n      <td>CC(work)</td>\n      <td>0.970 (0.583)</td>\n      <td>0.978 (0.789)</td>\n      <td>0.969 (0.819)</td>\n      <td>0.953 (0.846)</td>\n      <td>0.971 (0.922)</td>\n      <td>0.970 (0.878)</td>\n      <td>0.963 (0.903)</td>\n      <td>0.959 (0.749)</td>\n      <td>0.961 (0.869)</td>\n    </tr>\n    <tr>\n      <td>CC(free)</td>\n      <td>0.969 (0.558)</td>\n      <td>0.975 (0.729)</td>\n      <td>0.953 (0.775)</td>\n      <td>0.951 (0.793)</td>\n      <td>0.966 (0.910)</td>\n      <td>0.958 (0.791)</td>\n      <td>0.954 (0.882)</td>\n      <td>0.951 (0.757)</td>\n      <td>0.970 (0.846)</td>\n    </tr>\n    <tr>\n      <td>Number of non-hydrogen atoms</td>\n      <td>3583</td>\n      <td>3427</td>\n      <td>7330</td>\n      <td>6953</td>\n      <td>7507</td>\n      <td>13986</td>\n      <td>6951</td>\n      <td>7343</td>\n      <td>14428</td>\n    </tr>\n    <tr>\n      <td>macromolecules</td>\n      <td>3107</td>\n      <td>3097</td>\n      <td>6094</td>\n      <td>6016</td>\n      <td>6186</td>\n      <td>11938</td>\n      <td>6019</td>\n      <td>6286</td>\n      <td>11900</td>\n    </tr>\n    <tr>\n      <td>ligands</td>\n      <td>1</td>\n      <td>1</td>\n      <td>394</td>\n      <td>342</td>\n      <td>516</td>\n      <td>746</td>\n      <td>344</td>\n      <td>401</td>\n      <td>571</td>\n    </tr>\n    <tr>\n      <td>solvent</td>\n      <td>475</td>\n      <td>329</td>\n      <td>1034</td>\n      <td>763</td>\n      <td>1057</td>\n      <td>1666</td>\n      <td>756</td>\n      <td>852</td>\n      <td>2237</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>376</td>\n      <td>376</td>\n      <td>752</td>\n      <td>738</td>\n      <td>750</td>\n      <td>1478</td>\n      <td>738</td>\n      <td>738</td>\n      <td>1478</td>\n    </tr>\n    <tr>\n      <td>Nucleic acid bases</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>RMS(bonds)</td>\n      <td>0.006</td>\n      <td>0.008</td>\n      <td>0.008</td>\n      <td>0.007</td>\n      <td>0.01</td>\n      <td>0.006</td>\n      <td>0.007</td>\n      <td>0.008</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>RMS(angles)</td>\n      <td>0.88</td>\n      <td>0.96</td>\n      <td>1.05</td>\n      <td>0.91</td>\n      <td>1.1</td>\n      <td>0.92</td>\n      <td>0.91</td>\n      <td>1.12</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>98.4</td>\n      <td>98.66</td>\n      <td>98.8</td>\n      <td>98.23</td>\n      <td>98.26</td>\n      <td>98.84</td>\n      <td>98.64</td>\n      <td>98.35</td>\n      <td>98.1</td>\n    </tr>\n    <tr>\n      <td>Ramachandran allowed (%)</td>\n      <td>1.6</td>\n      <td>1.34</td>\n      <td>1.2</td>\n      <td>1.77</td>\n      <td>1.74</td>\n      <td>1.16</td>\n      <td>1.36</td>\n      <td>1.65</td>\n      <td>1.9</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>1.22</td>\n      <td>0.92</td>\n      <td>0.62</td>\n      <td>0.79</td>\n      <td>0.92</td>\n      <td>0.87</td>\n      <td>0.63</td>\n      <td>0.6</td>\n      <td>0.88</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>1.66</td>\n      <td>0.83</td>\n      <td>1.25</td>\n      <td>1.85</td>\n      <td>1.3</td>\n      <td>1.31</td>\n      <td>1.6</td>\n      <td>1.44</td>\n      <td>1.66</td>\n    </tr>\n    <tr>\n      <td>Average B-factor</td>\n      <td>21.71</td>\n      <td>19.1</td>\n      <td>16.09</td>\n      <td>14.55</td>\n      <td>12.73</td>\n      <td>15.72</td>\n      <td>14.2</td>\n      <td>17.9</td>\n      <td>15.9</td>\n    </tr>\n    <tr>\n      <td>macromolecules</td>\n      <td>19.83</td>\n      <td>17.9</td>\n      <td>13.9</td>\n      <td>13.24</td>\n      <td>10.3</td>\n      <td>13.76</td>\n      <td>12.5</td>\n      <td>16.36</td>\n      <td>13.88</td>\n    </tr>\n    <tr>\n      <td>ligands</td>\n      <td>98.88</td>\n      <td>46.35</td>\n      <td>23.57</td>\n      <td>18.87</td>\n      <td>15.73</td>\n      <td>17.53</td>\n      <td>15.9</td>\n      <td>23.5</td>\n      <td>19.18</td>\n    </tr>\n    <tr>\n      <td>solvent</td>\n      <td>33.82</td>\n      <td>30.3</td>\n      <td>27.53</td>\n      <td>23.9</td>\n      <td>26.25</td>\n      <td>29.3</td>\n      <td>27.32</td>\n      <td>27.98</td>\n      <td>26.24</td>\n    </tr>\n    <tr>\n      <td>Number of TLS groups</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nAcross these different datasets, we observed complex ligand density in the active site of mAMCase. In all of our datasets, we observed continuous ligand density that resembled higher order chitin oligomers (e.g. GlcNAc4, GlcNAc5, or GlcNAc6). This observation was confusing given that these structures were co-crystallized with either GlcNAc2 or GlcNAc3. For example, due to the continuous nature of ligand density observed in our mAMCase-GlcNAc3 co-crystal structure at pH 4.74 (PDB ID: 8GCA, chain A), we initially modeled hexaacetyl-chitohexaose (H-(GlcNAc)6-OH) into the \u20134 to +2 sugar-binding subsites, using the nomenclature for sugar-binding subsites from Davies et al., 1997. This nomenclature defines the sugar-binding subsites as -n to +n, with -n corresponding to the non-reducing end and +n the reducing end.\n\nWe next continued with a modeling approach that replaced higher order oligomer models with models that only used the chemically defined oligomers present in the crystallization drop. To accomplish this modeling of different binding poses, we placed multiple copies of these oligomers consistent with an interpretation of extensive conformational heterogeneity (Figure 2\u2014figure supplement 2). In one sample co-crystallized with GlcNAc3 at pH 4.74 (PDB ID: 8GCA, chains A-B), we identified ligand density that was consistent with GlcNAc2, suggesting that some hydrolysis occurs in the crystal. The resulting model includes compositional heterogeneity as there are both types of oligomer present.\n\nTherefore, across all of our datasets, we modeled a combination of ligand binding events consisting of overlapping GlcNAc2 or GlcNAc3 molecules at each sugar-binding site, i.e. GlcNAc2 ResID 401 Conf. A occupied subsites \u20133 to \u20132 while GlcNAc2 ResID 401 Conf. C occupied subsites \u20132 to \u20131. By providing each ligand molecule with an alternative conformation ID, this allowed both occupancies and B-factors to be refined (Figure 2A, B and C; additional details in Methods). Across these different datasets, we observed ligand density for different combinations of occupancy over the \u20134 to +2 sugar-binding subsites (Figure 2A). While modeling chito-oligomers into strong electron density, we observed strong positive difference density between sugar-binding subsites near the C2 N-acetyl and the C6\u2019 alcohol moieties. Using the non-crystallographic symmetry (NCS) \u2018ghost\u2019 feature in Coot, we were then able to observe that the positive difference density between ligand subsites in one chain could be explained by the dominant ligand pose observed in another associated crystallographic chain, suggesting the presence of a low-occupancy binding events. This observation led to the discovery that GlcNAcn occupies intermediate subsites, which we label n+0.5, continuing to follow the nomenclature established by Davies et al., in addition to canonical sugar-binding subsites (Figure 2B; Davies et al., 1997).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig2-v1.jpg)\n\n**Figure 2.:** (A) PDB ID: 8GCA, chain A. Stick representation of all GlcNAc2 sugar-binding events observed in n sugar-binding subsites with 2mFo-DFc map shown as a 1.2 \u00c5 contour (blue), the subsite nomenclature, and a schematic of alternative conformation ligand modeling. (B) PDB ID: 8FRA, chain D. Stick representation of all GlcNAcn binding events observed in n+0.5 sugar-binding subsites with 2mFo-DFc map shown as a 1.2 \u00c5 contour (blue), the subsite nomenclature, and a schematic of alternative conformation ligand modeling. (C) PDB ID: 8FR9, chain B. Stick representation of all GlcNAcn binding events observed in n and n+0.5 sugar-binding subsites with 2mFo-DFc map shown as a 1.2 \u00c5 contour (blue), the subsite nomenclature, and a schematic of alternative conformation ligand modeling.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Brightfield view of crystals used to determine the structures reported in this paper. (B) Hanging drop crystallization trays were set up as a 2-condition gradient to identify optimal crystallization conditions for AMCase +GlcNAcn. pH increased along the X-axis from pH 3.70\u20135.60. Ligand concentration increased along the Y-axis from 0 mM to 29 mM [GlcNAc2], 19 mM [GlcNAc3], 10 mM [GlcNAc4], or 8 mM [GlcNAc5]. Black boxes indicate conditions where crystals grew. Lilac boxes indicate conditions for structures reported in this paper.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** PDB ID: 8FG5, 8FG7 (apo); 8GCA, 8FRC, 8FR9, 8FRB, 8FRD, 8FRG, 8FRA (holo). Violin plots showing the distribution of pKa across Asp136, Asp138, Glu140 between (A) apo and (B) holo mAMCase structures in the inactive or active conformation.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Stick representation of ligand and aromatic residues Trp31, Tyr34, Trp99, and Trp218 in the active site with 2mFo-DFc map shown as a 1.2 \u00c5 contour (blue). (B) Stick representation of ligand and polar residues Arg145, His208, Asp213, and His269 in the active site with 2mFo-DFc map shown as a 1.2 \u00c5 contour (blue). (C, D) Stick representation of ligand and catalytic residues Asp136, Asp138, and Glu140 in the active site with 2mFo-DFc map shown as a 1.2 \u00c5 contour (blue).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) PDB ID: 8GCA, chain A with GlcNAc6 modeled for viewing simplicity. Stick representation highlighting the stabilizing H-\u03c0 interactions between Trp31, Trp360, and Trp218 and the \u22123,\u20131,+1, and +2 sugars, respectively. (B) PDB ID: 8GCA, chain A with GlcNAc6 modeled for viewing simplicity. Stick representation highlighting the stabilizing hydrogen bond interactions between the \u20131 sugar and Asp138 (2.6 \u00c5) and Asp213 (3.4 \u00c5), and between the +1 sugar and Tyr141 (3.0 \u00c5). Glu140 is 2.8 \u00c5 from the glycosidic oxygen bridging the \u20131 and +1 sugars. (C) PDB ID: 8FRA, chains C (left) and D (right). Stick representation highlighting the stabilizing hydrogen bond interactions that we argue stabilize the +1 sugar (left; chain A) and the +1\u2019 sugar-binding subsite (right; chain B).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Ringer analysis to detect alternative conformations in electron density maps. Ringer detected one peak for Asp136 at \u03c71=180\u00b0 and Glu140 at \u03c71=300\u00b0, indicating only one conformation, whereas two peaks were detected for Asp138 at \u03c71=180\u00b0 and \u03c71=300\u00b0, indicating two alternative conformations. (B) Stick representation of Asp136, Asp138, and Glu140 with 2mFo-DFc map volume shown as a 1.2 \u00c5 contour (blue).\n\nIn addition to identifying novel n+0.5 sugar-binding subsites, we also observed strong positive difference density above the +1 subsite, which we label +1\u2019. During ligand refinement, we observed density for both the \u03b1- and \u03b2\u20131,4-linked GlcNAc2 anomers in the active site. This unexpected configurational heterogeneity, which is observable because of the high resolution of our datasets (1.30\u20131.95 A\u030a), likely formed as a result of equilibration between the two anomers through an oxocarbenium close-ion-pair intermediate. The ability for the active site to accommodate and form interactions with these ligands is important given its role in degrading crystalline chitin, a complex and often recalcitrant substrate that likely requires multiple binding events by AMCase before degradation can occur. We did not identify consistent trends between the contents of the crystallization drop (pH, substrate identity, and substrate concentration), the crystal properties (space group, unit cell dimensions, resolution), and the resulting density in the active site; however, as outlined below, the protein conformations and substrate states are highly correlated. Collectively, modeling a combination of ligand binding modes, linkages, and anomers allowed us to interpret the resulting coordinates in a more complete model of how mAMCase coordinates and stabilizes polymeric chitin for catalysis (Figure 2; Figure 2\u2014figure supplement 2; Figure 2\u2014figure supplement 3; Supplementary file 1).\n\n### Structural characterization of mAMCase catalytic triad D1xD2xE\n\nWe interpreted the protein-ligand interactions along the canonical binding sites (Figure 2\u2014figure supplement 2). As with other chitinases, we observe a network of tryptophans consisting of Trp31, Trp360, Trp99, and Trp218 stabilizing the positioning of the ligand into the binding site through a series of H-\u03c0 interactions with the \u22123,\u20131,+1, and +2 sugars, respectively (Watanabe et al., 2003; Horn et al., 2006; Zakariassen et al., 2009). These interactions are primarily with the axial hydrogens of the respective sugars but also include the N-H of the \u20133 and +1 sugar and the 6\u2019 O-H of the +2 sugar (Figure 2\u2014figure supplement 3). Further, we observe Asp213 accepting a hydrogen bond with the 6\u2019 OH of the \u20131 sugar and Tyr141 acting as a hydrogen bond donor to the 6\u2019 OH of the +1 sugar. These two hydrogen bonds likely orient the ligand in the catalytically competent pose where the glycosidic oxygen bridging the \u20131 and +1 sugars is 2.8 A\u030a away from the acidic Glu140 -OH (Figure 2\u2014figure supplement 4). With this proximity, Glu140 can act as a hydrogen bond donor to the strained (122o bond angle) bridging oxygen forming a hydrogen bond to promote the formation of an oxazolinium intermediate and subsequent cleavage of the glycosidic bond. We observed two interactions with the sugar in the \u20134 position supporting the ligand orientation far from the enzymatic active site. Residues involved in ligand binding and catalysis adopt similar side chain conformations in the absence of ligand (PDB ID: 8FG5, 8FG7), suggesting that the active site is organized prior to ligand binding and not subject to ligand-stabilized conformational changes.\n\nWe hypothesize that the +1\u2019 subsite is primarily occupied by the product GlcNAc2 prior to its displacement from the active site by subsequent sliding of polymeric chitin (Figure 2B; Jim\u00e9nez-Ortega et al., 2021). At this position, Trp99 and Trp218 engage in CH-\u03c0 interactions with the +1 and+2 sugars, respectively while Asp213 forms a new H-bond with the carbonyl oxygen and Tyr141 retains an H-bond with the hydroxyl moiety on the +1 sugar. We are able to observe this post-catalysis binding mode due to the stabilizing interactions between GlcNAc2 and Asp213, Trp99, Trp218, and Tyr141 (Figure 2\u2014figure supplement 3). Together, these observations highlight the dynamic chitin binding modes within the mAMCase active site. Collectively, the observed non-canonical binding modes of these sugars is consistent with previous observations that once bound to polymeric chitin, GH18 chitinases engage in chain sliding from the reducing end of the substrate following catalysis (Nakamura et al., 2018).\n\nIn contrast to the largely static interactions outlined above, we observed conformational heterogeneity in the catalytically critical Asp138 residue, suggesting flipping between two equally stable states facing each of the other two residues in the catalytic triad (Asp136 or Glu140; van Aalten et al., 2001). Using Ringer, we confirmed that there are two Asp138 conformations and only a single conformation for Asp136 and Glu140 (Figure 2\u2014figure supplement 4; Data available at doi: 10.5281/zenodo.7758815; Lang et al., 2010). Across 20 chains from the datasets derived from different pH and co-crystallization conditions (Supplementary file 1), we quantified whether Asp138 is preferentially oriented towards Asp136 (inactive conformation) or preferentially oriented towards Glu140 (active conformation).\n\nPrior work has suggested that Asp138 orients itself towards Glu140 to promote stabilization of the substrate\u2019s twisted boat conformation in the \u20131 subsite. Therefore, we explored if Asp138 conformation is correlated with ligand pose (Olland et al., 2009; van Aalten et al., 2001; Fusetti et al., 2002; Songsiriritthigul et al., 2008). As previously mentioned, we assign alternative conformation IDs to each ligand molecule based on its subsite positioning. We calculate subsite occupancy by taking the sum of all alternative ligand conformations at a given subsite, i.e. the occupancy of subsite \u20132 is equal to the occupancies of GlcNAc2 ResID 401 Conf. A and GlcNAc2 ResID 401 Conf. C (Figure 3A; see Methods for additional details; Data available at doi: 10.5281/zenodo.7905828). We observe a strong positive correlation between Asp138 conformation and ligand pose only in the \u20132 to +1 subsites (Figure 3B; Supplementary file 1). When the \u20131 subsite is at least 50% occupied, Asp138 prefers the active conformation (up towards Glu140). In this orientation, Asp138(HD2) forms a H-bond with Glu140(OE1) (2.6 A\u030a) while Asp138(OD1) forms an H-bond with the amide nitrogen of GlcNAc in the \u20131 subsite (2.6 A\u030a). Glu140(OE2) is 2.8 A\u030a away from the glycosidic oxygen bridging the \u20131 and +1 sugars. We suspect that the inverse correlation between Asp138 active conformation and the \u20132.5 and \u20131.5 sugar-binding subsites represents ligand translocation toward the catalytic residues, prior to enzyme engagement with the ligand. When chitin occupies a canonical sugar-binding subsite, AMCase forms stabilizing H-bonds with the ligand prior to catalysis. These observations are consistent with the proposed catalytic mechanism where upon protonation, the equilibrium between Asp138 conformations shifts to favor the active conformation (toward Glu140) where Asp138 stabilizes Glu140 in proximity to the glycosidic oxygen prior to catalysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig3-v1.jpg)\n\n**Figure 3.:** (A) PDB ID: 8FR9, chain B. Schematic of the alternative conformation ligand modeling. (B) Linear correlation between sugar-binding subsite occupancy and Asp138 active conformation occupancy.\n\n### Theoretical pKa calculations of mAMCase catalytic triad D1xD2xE\n\nBased on the dual pH optimum observed in our kinetics assay and the conformational heterogeneity of Asp138, we calculated the theoretical pKa for catalytic D1xD2xE motif on mAMCase using PROPKA 3.0. PROPKA does not account for alternative conformations in its calculations, so we split our protein models to contain single conformations of the catalytic residues Asp136, Asp138, and Glu140. While PROPKA does account for ligands in its calculations, running the calculations with different alternative conformations of GlcNAc2 or GlcNAc3 had little effect on the calculated pKas for the active site residues (Figure 2\u2014figure supplement 2; Data available at doi: 10.5281/zenodo.7905863). Despite the observed ligand heterogeneity, we observe a relatively narrow range of pKa values for the catalytic triad. This suggests that the pKa of the catalytic residues is primarily influenced by the position of nearby residues and that the placement of solvent or ligand molecules has little effect. When Asp138 is oriented towards Asp136 (the inactive conformation), the pKa of the catalytic residues are 2.0, 13.0, 7.7 for Asp136, Asp138, and Glu140 respectively. Similarly, when Asp138 is oriented towards Glu140 (the active conformation), the pKa of the catalytic residues are 3.4, 12.4, 6.4 for Asp136, Asp138, and Glu140, respectively. Taking this information together, it is clear that the pKa of Asp136 and Glu140 are both affected by the orientation of Asp138 (Figure 4A; Supplementary file 2; Data available at doi: 10.5281/zenodo.7905863). The pKa of Asp136 suggests that at pH >3.4, Asp136 is deprotonated, and its conjugate base is more stable. We observe a similar pKa distribution for the catalytic triad in human AMCase and other GH18 chitinases with publicly available structures and optimum pH activity profiles (Figure 4A\u2013C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig4-v1.jpg)\n\n**Figure 4.:** (A) PDB ID: 8GCA, chain A. Distribution of pKa across Asp136, Asp138, Glu140 of mAMCase structures in either Asp138 inactive or Asp138 active conformation. (B) PDB ID: 3FXY, 3RM4, 3RM8, 3RME (inactive conformation); 2YBU, 3FY1 (active conformation). Distribution of pKa across Asp136, Asp138, Glu140 of hAMCase structures in either Asp138 inactive or Asp138 active conformation. (C) PDB ID: 3ALF, 3AQU, 3FXY, 3RM4, 3RM8, 3RME (inactive conformation); 2UY2, 2UY3, 2YBU, 4HME, 4MNJ, 4R5E, 4TXE (active conformation). Distribution of pKa across the catalytic triad D1xD2xE of GH18 chitinases in either D2 inactive or active conformation.\n\nGiven the pH range of our crystallization conditions, we expect that Asp136 is deprotonated while Asp138 and Glu140 are protonated. We hypothesize that this anionic aspartate is capable of forming a strong ionic hydrogen bond interaction with Asp138 orienting it in the inactive conformation. When Asp136 is protonated to its aspartic acid state at pH <3.2, we expect that it is only capable of forming the relatively weaker neutral hydrogen bond with Asp138 lowering the favorability of the inactive conformation.\n\nAdditionally, when interpreting the pKa of Glu140, we hypothesize that under acidic conditions (pH 2.0\u20136.5), Glu140 is capable of obtaining its catalytic proton from solution. The accessibility of Asp138\u2019s proton to Glu140 progressively decreases as pH increases from pH 2.0\u20136.5. In contrast, under neutral and basic conditions (pH 6.0\u20137.4), Asp138 can shuttle a proton from Asp136 by rotating about its C\u03b1-C\u03b2 bond to supply Glu140 with the proton. Glu140 subsequently uses the proton that it obtained from Asp138 to protonate the glycosidic bond in chitin, promoting hydrolysis as previously described in several chitinases (van Aalten et al., 2001; Synstad et al., 2004; Bussink et al., 2008). While this mechanism could explain how mAMCase has a local optimum at pH 2.0, it is insufficient to explain why we do not observe a similar optimum in hAMCase. The narrow range of pKa values across GH18 chitinases suggest that differences in optimal activity by pH may be influenced by other factors, such as protein stability, conformational dynamics, or coordination of distal GlcNAc residues by ionizable residues (Mishra et al., 2021).\n\n### Molecular dynamics\n\nBased on our enzymology results suggesting the possibility of differential activity between acidic pH (pH 2.0) and near neutral pH (pH 6.5) and theoretical pKa calculations of the active site residues, we performed short atomistic molecular dynamics simulations to interrogate the movement of catalytic residues. While all the crystal structures we obtained were collected in a narrow acidic pH range between 4.74\u20135.60, we ran simulations at pH 2.0 and pH 6.5, ensuring that the protonation states of side chains populated by 3DProtonate were supported by our PROPKA calculations (Data available at doi: 10.5281/zenodo.7758821; Labute, 2009; Olsson et al., 2011). These simulations allowed us to investigate our hypothesis that at neutral pH mAMCase enzymatic activity is dependent on the protonation state of Asp136. We performed simulations using protein models that contain Asp138 in either the inactive (down towards Asp136; \u2018inactive simulation\u2019) or active conformation (up towards Glu140; \u2018active simulation\u2019) to avoid bias from the starting conformation.\n\nIn all our simulations, we observe that Glu140 orients its acidic proton towards the glycosidic bond between the \u20131 and +1 sugars. The distance between the acidic proton of Glu140 and the glycosidic oxygen fluctuates between 1.5 and 2.3 A\u030a for the duration of the simulation, with a median distance of 1.8 A\u030a. The positioning of this proton is necessary to allow for the oxocarbenium cleavage of the glycosidic bond and recapitulates the positioning of Glu140 in our experimental structures. In simulations initiated from the inactive conformation at pH 2.0, we observe that Asp 138 is readily able to rotate about its C\u03b1-C\u03b2 bond to adopt the active conformation forming the same hydrogen bond between Asp138 and Glu140. In contrast, from simulations at pH 6.5 started from the Asp138 inactive conformation, we observe that Asp138 remains hydrogen bonded to Asp136 throughout the duration of the simulation (inactive conformation; Figure 5A\u2013C; Data available at doi: 10.5281/zenodo.7758821). This series of simulations allowed us to better visualize which catalytic side chains are dynamic and which catalytic side chains positioning are well maintained to help build our catalytic mechanism.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig5-v1.jpg)\n\n**Figure 5.:** (A) Asp138 \u03c71 angles over a 10 ns simulation. (B) Representative minimum distance snapshots of structure during pH 6.5 inactive simulation (left), and pH 2.0 active simulation (right). (C) Distribution of Asp138 \u03c71 angles over a 10 ns simulation.\n\n## Discussion\n\nmAMCase is an unusual enzyme that can bind and degrade polymeric chitin in very different pH environments. We hypothesized that mAMCase employs different mechanisms to protonate its catalytic glutamate under acidic and neutral pH. Through our analysis, we hypothesize that the observed ligand and catalytic residue densities and occupancies in our crystal structures are consistent with the previously proposed GH18 catalytic mechanism (Meekrathok et al., 2017). By modeling GlcNAc2 as sequentially overlapping ligands in alternative conformations (Figure 2), we are able to visualize each step in the proposed catalytic cycle of mAMCase (Figure 6, Animation 1, Animation 2). This mechanism, which has been observed in other glycoside hydrolases, occurs when the glycosidic oxygen is protonated by an acidic residue and a nucleophile adds into the anomeric carbon leading to elimination of the hydrolyzed product.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89918/elife-89918-fig6-v1.jpg)\n\n**Figure 6.:** (A) PDB ID: 8GCA, chain A with no ligand (step 1); with GlcNAc4 generated by phenix.elbow using PubChem ID: 10985690 (step 2); with GlcNAc6 generated by phenix.elbow using PubChem ID: 6918014 (step 3\u20134, 8); with oxazolinium intermediate generated by phenix.elbow using PubChem ID: 25260046 (steps 5.1\u20135.2); with GlcNAc2 and GlcNAc4 generated by phenix.elbow using PubChem ID: 439544 and 10985690, respectively (steps 6\u20137). Chemical representation of GH18 catalytic cycle with corresponding molecular models of each step. Catalytic residues Asp136, Asp138, Glu140, and ligands are shown as sticks. Protons are shown as gray spheres.\n\n![Animation 1.](https://cdn.elifesciences.org/articles/89918/elife-89918-animation1-v1.gif.jpg)\n\n**Animation 1.:** Catalytic residues Asp136, Asp138, Glu140, and ligands are shown as sticks. Protons are shown as gray spheres.\n\n![Animation 2.](https://cdn.elifesciences.org/articles/89918/elife-89918-animation2-v1.gif.jpg)\n\n**Animation 2.:** Catalytic residues Asp136, Asp138, Glu140, and ligands are shown as sticks. Protons are shown as gray spheres.\n\nBased on our crystal data and simulations, we envision that at neutral pH, Asp136 is deprotonated (pKa = 2.1) forming an ionic hydrogen bond with Asp138 (pKa = 13.1). In contrast, at low pH Asp136 is protonated, yet continues to form a weaker hydrogen bond with Asp138 (Figure 6 - Step 1). Glu140 (pKa = 7.7) is protonated across the enzyme\u2019s active pH range. Upon ligand binding (Figure 6 - Step 2), Glu140 stabilizes the sugar at the \u20131 subsite. The ligand then translocates forward by one GlcNAc2 to occupy the +1 and+2 subsites (Figure 6 - Step 3). At neutral pH, Asp136 is predominantly deprotonated. When protonation of Asp136 occurs, this destabilizes the Asp136-Asp138 hydrogen bond and allows Asp138 to rotate about its C\u03b1-C\u03b2 bond into the active conformation (towards Glu140). However, since Asp136 is always protonated at low pH, the Asp136-Asp138 hydrogen bond is less energetically favorable, therefore Asp138 can adopt the active conformation more readily (Figure 6- Step 4).\n\nOnce Asp138 is in the active conformation, Asp138 and Glu140 form stabilizing interactions with the N-acetyl group of the ligand, priming it to become the nucleophile required for catalysis (Figure 6 - Step 4). Glu140 provides its ionizable proton to the ligand\u2019s glycosidic oxygen, increasing the electrophilicity of the anomeric carbon (Figure 6 - Step 5; Iino et al., 2019). The carbonyl oxygen of the \u20131 sugar N-acetyl group then nucleophilically adds into the anomeric carbon from the \u03b2 face to cleave the glycosidic bond, forming the oxazolinium intermediate. At neutral pH, the resultant deprotonated Glu140 is then re-protonated through proton shuttling in which Asp136 donates its proton to Asp138 and Asp138 donates its ionizable proton to Glu140. At acidic pH, we propose that Glu140 can be directly re-protonated by a proton in solution (Figure 6 - Step 5). At a neutral pH, this leads to Asp138 returning to an inactive conformation. However, at low pH Asp136 and Glu140 are both protonated due to the high concentration of protons in solution, allowing Asp138 to remain in the active conformation and form stabilizing interactions with the N-acetyl group on the ligand. The oxazolinium intermediate is then hydrolyzed by a water molecule, generating a GlcNAc2 catalysis product in the +1 and+2 sugar subsites (Figure 6 - Step 6). The GlcNAc2 product dissociates from the +1 to+2 sugar subsites, then the ligand undergoes \u2018decrystallization\u2019 and \u2018chain sliding\u2019 before re-entering the catalytic cycle, assuming AMCase is bound to a longer polymer such as its natural substrate (Nakamura et al., 2018). At neutral pH this catalytic mechanism is reset with Asp138 in its inactive conformation, however at low pH the catalytic mechanism is reset with Asp138 already in the active conformation. This could lead to faster rates of catalysis at lower pH compared to the neutral pH mechanism, providing a possible explanation for the observed changes in rate at varying pH.\n\nWhile our model helps us propose a plausible explanation of why mAMCase is highly active at pH 2, it does not explain why hAMCase has a single activity optimum around pH 5.\n\nPrior work by Kashimura et al. has demonstrated that E. coli-expressed mAMCase is remarkably stable across a broad pH range (Kashimura et al., 2013). Similar experiments have not yet been performed on hAMCase. Olland et al., 2009 previously identified Arg145, His208, and His269 as important for pH specificity . Seibold et al., 2009 argued that hAMCase isoforms containing asthma protective mutations N45D, D47N, and M61R, which are wildtype in mAMCase, may influence the pKa of Asp138-Glu140 by undergoing structural rearrangement . Tabata et al., 2022 identified mutations across the course of evolution in Carnivora that were inactivating or structurally destabilizing (loss of S-S bonds; ). Okawa et al., 2016 identified how primate AMCase lost activity by integration of specific, potentially pKa-shifting, mutations relative to the mouse counterpart .\n\nTo this end, we explored sequence differences between mouse and human AMCase homologs for insight into why mAMCase has such high enzymatic activity at pH 2.0 and 6.5 compared to hAMCase. We identified ionizable residues on mAMCase that likely contribute to its overall stability and are not present in hAMCase. Mutations Lys78Gln, Asp82Gly, and Lys160Gln result in the loss of surface-stabilizing salt bridges in hAMCase and may contribute to its reduced activity at more acidic pH. It is likely that the dual pH optima of mAMCase is intrinsic to the catalytic mechanism, where Glu140 can be protonated directly from solution (at low pH) or through proton shuttling across the catalytic triad (at neutral pH; Figure 1E). However, hAMCase is likely too destabilized at low pH to observe an increase in kcat. hAMCase may be under less pressure to maintain high activity at low pH due to humans\u2019 noninsect-based diet, which contains less chitin compared to other mammals with primarily insect-based diets (Tabata et al., 2022).\n\nTogether, these data demonstrate the importance of using structural and biochemical assays to develop our understanding of the catalytic mechanism governing mAMCase activity. Using biochemical and structural methods, we have developed a detailed model of how AMCase fulfills its role in chitin recognition and degradation. Small chitin oligomers are ideal for measuring the ability of AMCase to cleave \u03b2\u20131,4-glycosidic linkages between GlcNAc units, but these small oligomers do not represent the complex crystalline chitin encountered by AMCase in the lung. It is difficult to extrapolate the effects we observe using small chitin oligomers to binding (kon), processivity (kproc), catalysis (kcat), or product release (koff) on the native large and heterogeneous oligomeric substrates. In the future, we hope to be able to directly visualize the mAMCase-chitin interactions and characterize each step of the catalytic mechanism including decrystallization, degradation, product release, and chain sliding (also known as processivity).\n\nTo further understand the impact of pH on the structure of AMCase, it will be necessary to crystallize AMCase across a broader pH range that may expose conformational and structural changes that contribute to mAMCase\u2019s unique pH activity profile. Our simulations have important limitations that could be overcome by quantum mechanical simulations that allow for changes in protonation state and improved consideration of polarizability. Further, neutron diffraction crystallography could provide novel critical insight into the placement of protons across the active site and help to develop a more complete model of mAMCase\u2019s catalytic mechanism at different pH. Understanding the mechanistic basis behind an enzyme\u2019s dual pH optima will enable us to engineer proteins with tunable pH optima to develop improved enzyme variants for therapeutic purposes for diseases, such as asthma and lung fibrosis.\n\n## Methods\n\n### Protein expression and purification\n\nProtein expression and purification mAMCase catalytic domain (UniProt: Q91XA9; residues 22\u2013391) was cloned into a pTwist CMV [pmRED006; Twist Biosciences; Addgene ID: 200228] or pcDNA3.1(+) [pmRED013; Genscript; Addgene ID: 200229] expression vector with a C-terminal 6xHis tag. To express mAMCase catalytic domain, 0.8\u20131 \u00b5g/mL plasmid DNA was transfected into ExpiCHO-S cells (ThermoFisher Scientific #A29127) using the Max Titer protocol (ThermoFisher Scientific MAN0014337). After cells were grown shaking at 37 \u00b0C with 8% CO2 for 18\u201322 hours, ExpiFectamine CHO Enhancer (ThermoFisher Scientific #A29129) and ExpiCHO feed (ThermoFisher Scientific #A29129) was added to the flask. Cells were then transferred to 32 \u00b0C with 5% CO2 for an additional 9\u201313 days of growth, with a second volume of ExpiCHO feed added to the flask on day 5 post-transfection. Cells were removed by centrifugation at 4000 RCF for 15 min at 4 \u00b0C, and the remaining supernatant was filtered using a 0.22 \u00b5m filter at 4 \u00b0C. Filtered supernatant was either dialyzed into Ni\u2013nitrilotriacetic acid (NTA) loading buffer [100 mM Tris-HCl (pH 8.0), 150 mM NaCl] at 4 \u00b0C in a 10 kDa molecular weight cutoff (MWCO) Slide-A-Lyzer Dialysis Cassette, (ThermoFisher Scientific #66810) for 18\u201324 hr or concentrated in a 10 kDa MWCO centrifugal concentrator (Amicon #UFC901008) at 4000 RCF in 5 min intervals until the final volume was equal to 10 mL, which was then diluted 1:10 with loading buffer for a total volume of 100 mL. The dialyzed supernatant volume was filtered using a 0.22 \u00b5m filter at 4 \u00b0C. All purification steps were performed at 4 \u00b0C using an \u00c4KTA fast protein liquid chromatography system (Cytiva). The dialyzed supernatant was applied to a 5 ml HisTrap FF column (Cytiva, 17525501). The column was washed with 40 mL of loading buffer followed by 25 mL of 10% Ni-NTA elution buffer [100 mM Tris-HCl (pH 8.0), 150 mM NaCl, 500 mM imidazole] and then eluted over a 50 mL gradient from 10% to 100% elution buffer. Eluted protein was concentrated to 2.5 mL using a 10 kDa MWCO centrifugal concentrator (Amicon, UFC901024). The sample was further purified by size exclusion chromatography (SEC) using a HiLoad 16/600 Superdex 75 pg column (Cytiva, 28989333) equilibrated with SEC buffer [25 mM Tris-HCl (pH 8.0), 50 mM NaCl]. Eluted fractions were collected and stored at 4 \u00b0C for further use.\n\n### 4MU-chitobioside endpoint assay\n\nChitinase catalytic activity has previously been assayed using 4-methylumbelliferyl chitobioside (4MU-CB; Sigma-Aldrich M9763) (O\u2019Brien and Colwell, 1987; Renkema et al., 1995). 100 nM chitinase enzyme was incubated with varying concentrations of 4MU-chitobioside up to 117 \u03bcM in McIlvaine Buffer at 37 \u00b0C (Barad et al., 2020). The 4-methylumbelliferone (4MU) fluorophore is quenched by a \u00df-glycosidic linkage to a short chitin oligomer, which is cleaved by a chitinase enzyme, which generates fluorescence with peak excitation at 360 nm and emission at 450 nm. 4MU fluorescence is pH-dependent with peak excitation at 360 nm and emission at 450 nm at pH 7.0. It has been previously reported that 4MU peak excitation/emission increases and fluorescence intensity decreases as pH becomes more acidic (Zhi et al., 2013). Given the pH-dependent fluorescence properties of the 4MU fluorophore, we incubate the reaction at different pH, then quench with 0.1 M Gly-NaOH pH 10.7. Quenching the reaction with 0.1 M Gly-NaOH pH 10.7 stops the enzyme reaction and shifts the pH to maximize the quantum yield of the 4MU substrate.\n\nA Tecan Spark multimode microplate reader is pre-heated to 37 \u00b0C. 4MU-chitobioside (Sigma-Aldrich M9763) and AMCase are separately pre-incubated at 37 \u00b0C for 15 min. Twenty-five \u00b5L of 4MU-chitobioside or McIlvaine Buffer (Boston Bioproducts) is transferred into each well in a Multiplate 96-Well PCR Plate, high profile, unskirted, clear (Bio-Rad MLP9601). Using a Multidrop Combi Reagent Dispenser (Thermo Scientific #5840300), 25 \u00b5L of either 100 nM AMCase or McIlvaine Buffer (Boston Bioproducts) is dispensed into each well in the Multiplate 96-Well PCR Plate (Corning #3993). The Multiplate 96-Well PCR Plate is then incubated at 37 \u00b0C in a 96-well Non-Skirted PCR Plate Block (Thermo Scientific #88870120) in a digital dry bath (Thermo Scientific #88870006).\n\nThe reaction is quenched with 50 \u00b5L 0.1 M Gly-NaOH pH 10.7 at timepoints 0\u201d, 15\u201d, 30\u201d, 45\u201d, 60\u201d, 90\u201d. Forty \u00b5L of the quenched reaction is transferred to a 384-well Low Volume Black Flat Bottom Polystyrene NBS Microplate (Corning #3820), then immediately read using the following parameters:\n\nThis assay was performed in quadruplicate for each pH unit reported. This allowed us to reliably measure initial rates of catalysis across a large range of pH conditions. The workflow for this assay is illustrated in (Figure 1). A detailed protocol for this assay can be found on (protocols.io).\n\n### Analysis of kinetic data\n\nTwenty-five \u00b5L of 200 \u00b5M 4MU fluorophore (Sigma-Aldrich M1381) was serially diluted into 25 \u00b5L McIlvaine Buffer (Boston Bioproducts) across the range of pHs to obtain five diluted ligand concentrations ranging from 100 \u00b5M to 6.25 \u00b5M as well as ligand free. This dilution series was performed in duplicate per 96-Well PCR plate for a total of 8 replicates per ligand concentration at each given pH value. At the end of the experiment, the 4MU dilution series is quenched with 50 \u00b5L 0.1 M Gly-NaOH pH 10.7 for a final dilution series ranging from 50 \u00b5M to 3.125 \u00b5M.\n\nRelative fluorescence (RFU) was plotted against 4MU concentration, then a simple linear regression with the constraint Y=0 when X=0 was performed to obtain a standard curve. We then used the equation Y=mX + b, where m is the slope from the standard curve and Y is the RFU from a given experimental data point, to determine the concentration of 4MU [\u00b5M] generated by AMCase at a given time point.\n\nAverage 4MU concentration [\u00b5M] (n=4) was plotted as a function of time with error bars representing the standard deviation. We then fit a simple linear regression with the constraint Y=0 when X=0 to obtain the initial rate of enzyme activity (4MU [\u00b5M]/sec) at each concentration of 4MU-chitobioside [\u00b5M]. Average initial rate (n=4) was plotted as a function of 4MU-chitobioside concentration [\u00b5M] with error bars representing the standard deviation. We fit our data to a Michaelis-Menten function without substrate inhibition to obtain Vmax and KM parameters. We used the equation kcat = Vmax/[Enzyme] where [Enzyme]=0.1 \u00b5M to calculate kcat. We calculated catalytic efficiency (CE) using the equation CE = KM/kcat. Kinetic parameters Vmax, KM, kcat, and catalytic efficiency were plotted as a function of pH.\n\n### Apo crystallization\n\nUsing hanging-drop vapor diffusion, crystallization screens were performed using a 96-well Clear Flat Bottom Polystyrene High Binding microplate (Corning CLS9018BC) with 0.5 mL of reservoir solution in each well. Crystallization drops were set up on 96-well plate seals (SPT Labtech 4150\u201305100) with 0.2 \u00b5l of AMCase at 11 mg/ml and 0.2 \u00b5l of reservoir using an SPT Labtech mosquito crystal. After 21 days at 20 \u00b0C, we observed crystals in a reservoir solution containing 20% PEG-6000, 0.1 M Sodium Acetate pH 5.0, and 0.2 M Magnesium Chloride (II) (MgCl2) (NeXtal PACT Suite Well A10; #130718).\n\n### Apo data collection, processing, and refinement at cryogenic temperature\n\nDiffraction data were collected at the beamline ALS 8.3.1 at 100 K. Diffraction data from multiple crystals were merged using xia2 (Winter, 2010), implementing DIALS (Winter et al., 2018) for indexing and integration, and Aimless (Winn et al., 2011) for scaling and merging. We confirmed the space group assignment using DIMPLE (Wojdyr et al., 2013). We calculated phases by the method of molecular replacement, using the program Phaser (McCoy et al., 2007) and a previous structure of hAMCase (PDB: 3FXY) as the search model. The model was manually adjusted in Coot to fit the electron density map calculated from molecular replacement, followed by automated refinement of coordinates, atomic displacement parameters, and occupancies using phenix.refine (Afonine et al., 2012) with optimization of restraint weights. Default refinement parameters were used, except the fact that five refinement macrocycles were carried out per iteration and water molecules were automatically added to peaks in the 2mFo-DFc electron density map higher than 3.5 \u00c5. The minimum model-water distance was set to 1.8 \u00c5, and a maximum model-water distance was set to 6 \u00c5. For later rounds of refinement, hydrogens were added to riding positions using phenix.ready_set, and B-factors were refined anisotropically for non-hydrogen and non-water atoms. Following two initial rounds of iterative model building and refinement using the aforementioned strategy, we began introducing additional parameters into the model, enabled by the extraordinarily high resolution of our diffraction data. First, we implemented anisotropic atomic displacement parameters for heavy atoms (C, N, O, and S), followed by refinement of explicit hydrogen atom positions. A final round of refinement was performed without updating water molecules.\n\n### Apo data collection, processing, and refinement at room temperature\n\nDiffraction data were collected at the beamline ALS 8.3.1 at 277 K. Data collection, processing, refinement, and model building were performed as described previously for the apo crystals at cryogenic temperature.\n\n### Holo crystallization\n\nInitially, crystals were grown by hanging-drop vapor diffusion with a reservoir solution containing 20% PEG-6000 (Hampton Research HR2533), 0.1 M Sodium Acetate (pH 3.6, Hampton Research HR293301; pH 4.1, Hampton Research HR293306; pH 5.0, Hampton Research HR293315; pH 5.6, Hampton Research HR293321), and 0.2 M Magnesium Chloride (II) (MgCl2) (Hampton Research HR2559). Screens were performed using a 96-well Clear Flat Bottom Polystyrene High Binding microplate (Corning CLS9018BC) with 0.5 mL of reservoir solution in each well. Crystallization drops were set up on 96-well plate seals (SPT Labtech 4150\u201305100) with 0.2 \u00b5l of AMCase at 11 mg/ml and 0.2 \u00b5l of reservoir using an SPT Labtech mosquito crystal. Crystals grew after 1\u20132 days at 20 \u00b0C.\n\nUsing hanging drop diffusion vapor, holo crystals grew after 12 hours at 20 \u00b0C. For the holo form with GlcNAc2 (Megazyme O-CHI2), this construct crystallized in either P21212 or P212121 with either 2 or 4 molecules in the ASU and diffracted to a maximum resolution between 1.50\u20131.95 \u00c5. For the holo form with GlcNAc3 (Megazyme O-CHI3), this construct crystallized in P21212 with 2 molecules in the ASU and diffracted to a maximum resolution of 1.70 \u00c5.\n\n### Holo data collection, processing, and refinement at cryogenic temperature\n\nDiffraction data were collected at the beamline ALS 8.3.1 and SSRL beamline 12\u20131 at 100 K. Data collection, processing, refinement, and model building were performed as described previously for the apo crystals.\n\nLigands were modeled into 2mFo-DFc maps with Coot, using restraints generated by phenix.elbow from an isomeric SMILES (simplified molecular input line-entry system) string (Emsley and Cowtan, 2004) using AM1 geometry optimization. Default refinement parameters were used, except the fact that five refinement macrocycles were carried out per iteration and water molecules were automatically added to peaks in the 2mFo-DFc electron density map higher than 3.5 \u00c5. The minimum model-water distance was set to 1.8 \u00c5, and a maximum model-water distance was set to 6 \u00c5. Changes in protein conformation and solvation were also modeled. Hydrogens were added with phenix.ready_set, and waters were updated automatically. A final round of refinement was performed without updating water molecules (Wojdyr et al., 2013).\n\n### Ligand modeling\n\nFor consistency, ligands were assigned an alternative conformation ID based on the sugar-binding subsites it occupied:\n\nLigand occupancies and B-factors using phenix.refine. Ligands with occupancies \u22640.10 were removed from the model.\n\n### Ringer analysis\n\nIndividual residues in each of the mAMCase structures were run through Ringer using mmtbx.ringer. Outputs from the csv file were then plotted using Matplotlib.\n\n### pKa analysis\n\nWe used the APBS-PDB2PQR software suite (https://server.poissonboltzmann.org/pdb2pqr; Jurrus et al., 2018). Each PDB model was separated into two separate models containing a single Asp138 conformation in either the inactive (down towards Asp136) or active conformation (up towards Glu140). Solvent and ligand molecules were not modified. The pH of the crystallization condition was provided for PROPKA to assign protonation states. The default forcefield PARSE was used. The following additional options were selected: Ensure that new atoms are not rebuilt too close to existing atoms; Optimize the hydrogen bonding network.\n\n### Molecular dynamics\n\nSimulations were performed using hexaacetyl-chitohexaose (PubChem Compound ID: 6918014) modeled into 8GCA with Asp138 in either the inactive (down towards Asp136) or active conformation (up towards Glu140). The model PDB file was opened in MOE and solvated in a sphere of water 10 \u00c5 away from the protein. This system then underwent structural preparation for simulations using the standard parameters with the AMBER14 forcefield. The system then was protonated to set pH {2.0, 6.5} based on sidechain pKa predictions using the 3DProtonate menu followed by confirmation of appropriate protonation by PROPKA calculations. Protonated models underwent energy minimization by steepest descent before simulations were set up. Equilibration was performed for 10 ps followed by 100 ps of thermal gradient equilibration from 0K to 300K. A thermal bath equilibration was run for 100 ps before the production runs were started. Productions were run for 10 ns with a time step of 0.5 fs to not overshoot bond vibrations. The simulation was sampled every 10 ps for subsequent data analysis which was performed using the MOE database viewer and replotted using GraphPad Prism.\n",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amie K Boal, Pennsylvania State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89918.3.sa0](https://doi.org/10.7554/eLife.89918.3.sa0)\n\nThis structural and biochemical study of the mouse homolog of acidic mammalian chitinase (AMCase) enhances our understanding of the pH-dependent activity and catalytic properties of mouse AMCase, and it sheds light on its adaptation to different physiological pH environments. The methods and analysis of data are solid, providing several lines of evidence to support the development of mechanistic hypotheses. While the findings and interpretation will be valuable to those studying AMCase in mice, the broader significance, including extension of the results to other species including human, remain less clear.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89918.3.sa1](https://doi.org/10.7554/eLife.89918.3.sa1)\n\nGeneral comments:\n\nThis paper investigates the pH-specific enzymatic activity of mouse acidic mammalian chitinase (AMCase) and aims to elucidate its function's underlying mechanisms. The authors employ a comprehensive approach, including hydrolysis assays, X-ray crystallography, theoretical calculations of pKa values, and molecular dynamics simulations to observe the behavior of mouse AMCase and explore the structural features influencing its pH-dependent activity.\n\nThe study's key findings include determining kinetic parameters (Kcat and Km) under a broad range of pH conditions, spanning from strong acid to neutral. The results reveal pH-dependent changes in enzymatic activity, suggesting that mouse AMCase employs different mechanisms for protonation of the catalytic glutamic acid residue and the neighboring two aspartic acids at the catalytic motif under distinct pH conditions.\n\nThe novelty of this research lies in the observation of structural rearrangements and the identification of pH-dependent mechanisms in mouse AMCase, offering a unique perspective on its enzymatic activity compared to other enzymes. By investigating the distinct protonation mechanisms and their relationship to pH, the authors reveal the adaptive nature of mouse AMCase, highlighting its ability to adjust its catalytic behavior in response to varying pH conditions. These insights contribute to our understanding of the pH-specific enzymatic activity of mouse AMCase and provide valuable information about its adaptation to different physiological conditions.\n\nOverall, the study enhances our understanding of the pH-dependent activity and catalytic properties of mouse AMCase and sheds light on its adaptation to different physiological pH environments.\n\nComments on revised version:\n\nIn their revised manuscript, the authors have made significant efforts to address the reviewers' comments.\n",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "978995a0-c918-4141-8fce-fe6832a3d6e9",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C1",
+      "claim": "Chitin is an abundant biopolymer and pathogen-associated molecular pattern that stimulates a host innate immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Chitin is an abundant biopolymer and pathogen-associated molecular pattern that stimulates a host innate immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background information about chitin's role in immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "b74f2416-7fd9-4a8f-9dd3-3cf3312a14ed",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C2",
+      "claim": "Mammals express chitin-binding and chitin-degrading proteins to remove chitin from the body.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammals express chitin-binding and chitin-degrading proteins to remove chitin from the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background knowledge about mammalian chitin response.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "8e58ca1e-267c-492b-a387-0039a9a574dd",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C3",
+      "claim": "Acidic Mammalian Chitinase (AMCase) is an enzyme known for its ability to function under acidic conditions in the stomach but is also active in tissues with more neutral pHs, such as the lung.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these proteins, Acidic Mammalian Chitinase (AMCase), is an enzyme known for its ability to function under acidic conditions in the stomach but is also active in tissues with more neutral pHs, such as the lung.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as background information about AMCase function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "79ada89e-3963-4129-9ecb-e49b4fc935b3",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C4",
+      "claim": "mAMCase has unusual dual activity optima at pH 2 and 7.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured kinetic properties of mAMCase activity across a broad pH range, quantifying its unusual dual activity optima at pH 2 and 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on kinetic measurements performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "225fed3f-8206-44cc-96bc-bcaa2680f81d",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C5",
+      "claim": "High-resolution crystal structures of mAMCase in complex with oligomeric GlcNAcn were solved.",
+      "claim_type": "EXPLICIT",
+      "source": "We also solved high-resolution crystal structures of mAMCase in complex with oligomeric GlcNAcn, the building block of chitin, where we identified extensive conformational ligand heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and supported by crystallographic data in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a4a9fc9d-db1b-4b1c-99da-8330d0906859",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C6",
+      "claim": "Extensive conformational ligand heterogeneity was identified in mAMCase crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We also solved high-resolution crystal structures of mAMCase in complex with oligomeric GlcNAcn, the building block of chitin, where we identified extensive conformational ligand heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract and detailed in the results section with structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "c5d55be5-1620-4085-a795-e031510b68f4",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C7",
+      "claim": "Molecular dynamics simulations suggest how a key catalytic residue could be protonated via distinct mechanisms in each of the two environmental pH ranges.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging these data, we conducted molecular dynamics simulations that suggest how a key catalytic residue could be protonated via distinct mechanisms in each of the two environmental pH ranges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on computational simulations performed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "49dbb9e7-c5f8-4181-9b12-e76e16d26231",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C8",
+      "claim": "Chitin is a polymer of \u03b2(1-4)-linked N-acetyl-D-glucosamine (GlcNAc).",
+      "claim_type": "EXPLICIT",
+      "source": "Chitin, a polymer of \u03b2(1-4)-linked N-acetyl-D-glucosamine (GlcNAc), is the second most abundant polysaccharide in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established chemical knowledge about chitin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "20f85b42-f89c-4112-98f0-825a9c7f7336",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C9",
+      "claim": "Chitin is the second most abundant polysaccharide in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Chitin, a polymer of \u03b2(1-4)-linked N-acetyl-D-glucosamine (GlcNAc), is the second most abundant polysaccharide in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about chitin abundance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "68d88f92-4bd6-4922-a624-d9064f98fe3a",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C10",
+      "claim": "Chitin is present in numerous pathogens, such as nematode parasites, dust mites, and fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Chitin is present in numerous pathogens, such as nematode parasites, dust mites, and fungi (Cabib and Bowers, 1975; Zhu et al., 2016; Tang et al., 2015), and is a pathogen-associated molecular pattern (PAMP) that activates mammalian innate immunity (Elieh Ali Komi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "9fab6b3f-6f02-4021-bc24-b6b744353fea",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C11",
+      "claim": "Chitin is a pathogen-associated molecular pattern (PAMP) that activates mammalian innate immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Chitin is present in numerous pathogens, such as nematode parasites, dust mites, and fungi (Cabib and Bowers, 1975; Zhu et al., 2016; Tang et al., 2015), and is a pathogen-associated molecular pattern (PAMP) that activates mammalian innate immunity (Elieh Ali Komi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Elieh Ali Komi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "c05f0a80-8fcf-4642-92f3-fdf5424a5907",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C12",
+      "claim": "Humans express two active chitinases as well as five chitin-binding proteins that recognize chitin across many tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans express two active chitinases as well as five chitin-binding proteins that recognize chitin across many tissues (Bussink et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bussink et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "7fe81139-328b-4db6-8285-bfb32a5f9d31",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C13",
+      "claim": "The lung environment is normally ~pH 7.0.",
+      "claim_type": "EXPLICIT",
+      "source": "These tissues have distinct pH, with the lung environment normally ~pH 7.0 and the stomach environment normally ~pH 2.0, which raises the question of how chitin-response machinery has evolved to function optimally across such diverse chemical environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established physiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "e082126a-a8d2-4075-95d9-080952e93690",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C14",
+      "claim": "The stomach environment is normally ~pH 2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "These tissues have distinct pH, with the lung environment normally ~pH 7.0 and the stomach environment normally ~pH 2.0, which raises the question of how chitin-response machinery has evolved to function optimally across such diverse chemical environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established physiological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "956b0d53-ae51-4ad0-b0b1-b18ba546078d",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C15",
+      "claim": "AMCase was originally discovered in the stomach and named for its acidic isoelectric point.",
+      "claim_type": "EXPLICIT",
+      "source": "Acidic Mammalian Chitinase (AMCase, also known as Chia, for chitinase, acidic) was originally discovered in the stomach and named for its acidic isoelectric point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as historical background about AMCase discovery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "243a478b-7452-4881-906c-09d9f45be4c6",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C16",
+      "claim": "AMCase is constitutively expressed in the lungs at low levels and overexpressed upon chitin exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "AMCase is also constitutively expressed in the lungs at low levels and overexpressed upon chitin exposure (Van Dyken and Locksley, 2018; Zhu et al., 2004; Reese et al., 2007), suggesting this single enzyme has evolved to perform its function under vastly different chemical conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Van Dyken and Locksley, 2018; Zhu et al., 2004; Reese et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "af683bfe-4ff7-4e21-81a5-a4731b595fc0",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C17",
+      "claim": "In the absence of AMCase, chitin accumulates in the airways, leading to epithelial stress, chronic activation of type 2 immunity, and age-related pulmonary fibrosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of AMCase, chitin accumulates in the airways, leading to epithelial stress, chronic activation of type 2 immunity, and age-related pulmonary fibrosis (Van Dyken et al., 2017; Van Dyken and Locksley, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Van Dyken et al., 2017; Van Dyken and Locksley, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a47575b0-1fbd-475f-a2a5-4dbdf4df8cec",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C18",
+      "claim": "AMCase is a member of the glycosyl hydrolase family 18 (GH18).",
+      "claim_type": "EXPLICIT",
+      "source": "AMCase is a member of the glycosyl hydrolase family 18 (GH18) (Davies and Henrissat, 1995), the members of which hydrolyze sugar linkages through a conserved two-step mechanism where the glycosidic oxygen is protonated by an acidic residue and a nucleophile adds into the anomeric carbon leading to elimination of the hydrolyzed product (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Davies and Henrissat, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "4c88ad3e-ea29-4fac-9f24-c9709efc8d96",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C19",
+      "claim": "GH18 members hydrolyze sugar linkages through a conserved two-step mechanism where the glycosidic oxygen is protonated by an acidic residue and a nucleophile adds into the anomeric carbon leading to elimination of the hydrolyzed product.",
+      "claim_type": "EXPLICIT",
+      "source": "AMCase is a member of the glycosyl hydrolase family 18 (GH18) (Davies and Henrissat, 1995), the members of which hydrolyze sugar linkages through a conserved two-step mechanism where the glycosidic oxygen is protonated by an acidic residue and a nucleophile adds into the anomeric carbon leading to elimination of the hydrolyzed product (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a0ef7f4d-5d2f-4c9a-8de2-21e07c674d68",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C20",
+      "claim": "The GH18 catalytic mechanism is corroborated by structures of different GH18 chitinases, most notably S. marcescens Chitinase A (PDB ID: 1FFQ).",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism is corroborated by structures of different GH18 chitinases, most notably S. marcescens Chitinase A (PDB ID: 1FFQ) (Papanikolau et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Papanikolau et al., 2003 and reference to structural data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a5ae003f-3273-4998-924b-6bf3e8e35e80",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C21",
+      "claim": "In inhibitor-bound structures for human AMCase (hAMCase; PDB ID: 3FY1), interactions mimicking the retentive, post-cleavage intermediate state pre-hydrolysis of the oxazolinium intermediate are adopted by the nonhydrolyzable analogs.",
+      "claim_type": "EXPLICIT",
+      "source": "In inhibitor-bound structures for human AMCase (hAMCase; PDB ID: 3FY1), interactions mimicking the retentive, post-cleavage intermediate state pre-hydrolysis of the oxazolinium intermediate are adopted by the nonhydrolyzable analogs (Cole et al., 2010; Olland et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cole et al., 2010; Olland et al., 2009 and reference to structural data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "2b084a84-d979-475f-b00d-3b00b74cbd72",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C22",
+      "claim": "The oxazolinium intermediate formed from chitin will reopen into the reducing-end GlcNAc monomer unit upon the nucleophilic addition of water.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the nonhydrolyzable inhibitors, we expect that the oxazolinium intermediate formed from chitin will reopen into the reducing-end GlcNAc monomer unit upon the nucleophilic addition of water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an expectation based on chemical reasoning about the catalytic mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "86d6c5cb-6fef-41cf-a197-20a1a3a89ae4",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C23",
+      "claim": "mAMCase has maximum activity at pH 2.0 with a secondary local maximum at pH 6.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mAMCase has maximum activity at pH 2.0 with a secondary local maximum at pH 6.5, pointing to a bimodal distribution of activity across pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the kinetic assay data presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "3226c2f7-07bc-4920-b726-52571434d46c",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C24",
+      "claim": "The two maxima at pH 2.0 and 6.5 are an approximate match to the pH at the primary in vivo sites of mAMCase expression, the stomach and lungs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The two maxima at pH 2.0 and 6.5 are an approximate match the pH at the primary in vivo sites of mAMCase expression, the stomach and lungs, respectively (Seibold et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the measured pH optima to physiological sites, supported by citation to Seibold et al., 2009.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "c7bd7a49-6352-4112-a97a-861548c24b2e",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C25",
+      "claim": "Low pH primarily improves the rate of mAMCase catalysis 6.3-fold (kcat).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that low pH primarily improves the rate of mAMCase catalysis 6.3-fold (kcat; Figure 1C), whereas KM (Figure 1D) worsens 2.5-fold from pH 7.4 to pH 2.0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the kinetic data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "d74050e2-1df5-47b5-82a1-281d4e6e0d49",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C26",
+      "claim": "KM worsens 2.5-fold from pH 7.4 to pH 2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that low pH primarily improves the rate of mAMCase catalysis 6.3-fold (kcat; Figure 1C), whereas KM (Figure 1D) worsens 2.5-fold from pH 7.4 to pH 2.0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the kinetic data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "3e5b65fe-4ba1-458f-bbba-87a0a96ef90e",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C27",
+      "claim": "Similar to chitotriosidase, mAMCase shows an apparent reduction in the rate of catalysis across all pH values measured at 4MU-chitobioside concentrations above 80 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to chitotriosidase the other active chitinase in mammals and also a GH18 chitinase, we observe an apparent reduction in the rate of mAMCase catalysis across all pH values measured at 4MU-chitobioside concentrations above 80 \u03bcM, which suggests that mAMCase may be subject to product inhibition (Aguilera et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the kinetic data, with comparison to chitotriosidase supported by citation to Aguilera et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "18db2a7c-35c0-4be5-a483-79ce612e9267",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C28",
+      "claim": "mAMCase may be subject to product inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to chitotriosidase the other active chitinase in mammals and also a GH18 chitinase, we observe an apparent reduction in the rate of mAMCase catalysis across all pH values measured at 4MU-chitobioside concentrations above 80 \u03bcM, which suggests that mAMCase may be subject to product inhibition (Aguilera et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed kinetic behavior, with comparison to chitotriosidase.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "c567e82f-5bb6-47f0-9ad1-ea8c02eb30f2",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C29",
+      "claim": "mAMCase can transglycosylate the products, as has been previously observed at pH 2.0 and 7.0.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying mechanism for the observed product inhibition may be that mAMCase can transglycosylate the products, as has been previously observed at pH 2.0 and 7.0 (Wakita et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the mechanism of product inhibition, supported by citation to Wakita et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "e0e041c2-6a89-4f15-830d-89ac4a6c528e",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C30",
+      "claim": "High resolution X-ray crystal structures of the apo mAMCase catalytic domain at pH 5.0 and 8.0 were determined (PDB ID: 8FG5, 8FG7).",
+      "claim_type": "EXPLICIT",
+      "source": "We successfully determined high resolution X-ray crystal structures of the apo mAMCase catalytic domain at pH 5.0 and 8.0 (PDB ID: 8FG5, 8FG7) and holo mAMCase catalytic domain between pH 4.74\u20135.60 in complex with either GlcNAc2 or GlcNAc3 (PDB ID: 8GCA, 8FRC, 8FR9, 8FRB, 8FRD, 8FRG, 8FRA; Figure 2\u2014figure supplement 1; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reporting new crystal structures deposited in the PDB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "c875606d-a86d-44c4-852c-c234e20831c1",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C32",
+      "claim": "Continuous ligand density resembling higher order chitin oligomers (e.g. GlcNAc4, GlcNAc5, or GlcNAc6) was observed in all datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Across these different datasets, we observed complex ligand density in the active site of mAMCase. In all of our datasets, we observed continuous ligand density that resembled higher order chitin oligomers (e.g. GlcNAc4, GlcNAc5, or GlcNAc6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the electron density maps of the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "d6f2724d-edd8-4524-a6b4-b2ae525cc607",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C33",
+      "claim": "Ligand density for both the \u03b1- and \u03b2\u20131,4-linked GlcNAc2 anomers was observed in the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "During ligand refinement, we observed density for both the \u03b1- and \u03b2\u20131,4-linked GlcNAc2 anomers in the active site. This unexpected configurational heterogeneity, which is observable because of the high resolution of our datasets (1.30\u20131.95 \u00c5), likely formed as a result of equilibration between the two anomers through an oxocarbenium close-ion-pair intermediate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the high-resolution crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "278da207-cca2-4804-b8ac-e3b8d374eff7",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C34",
+      "claim": "The configurational heterogeneity of \u03b1- and \u03b2\u20131,4-linked GlcNAc2 anomers likely formed as a result of equilibration between the two anomers through an oxocarbenium close-ion-pair intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "This unexpected configurational heterogeneity, which is observable because of the high resolution of our datasets (1.30\u20131.95 \u00c5), likely formed as a result of equilibration between the two anomers through an oxocarbenium close-ion-pair intermediate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism of anomer formation based on chemical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a64c0afb-262c-419b-8f5a-69583df5d427",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C35",
+      "claim": "A network of tryptophans consisting of Trp31, Trp360, Trp99, and Trp218 stabilizes the positioning of the ligand into the binding site through a series of H-\u03c0 interactions with the \u22123,\u20131,+1, and +2 sugars, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As with other chitinases, we observe a network of tryptophans consisting of Trp31, Trp360, Trp99, and Trp218 stabilizing the positioning of the ligand into the binding site through a series of H-\u03c0 interactions with the \u22123,\u20131,+1, and +2 sugars, respectively (Watanabe et al., 2003; Horn et al., 2006; Zakariassen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the crystal structures, with comparison to other chitinases supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "c2285534-1db2-4c9a-b707-caae50b2bbc1",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C36",
+      "claim": "Asp213 accepts a hydrogen bond with the 6' OH of the \u20131 sugar.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observe Asp213 accepting a hydrogen bond with the 6' OH of the \u20131 sugar and Tyr141 acting as a hydrogen bond donor to the 6' OH of the +1 sugar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a4957b54-6748-44b1-9837-559724ade56c",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C37",
+      "claim": "Tyr141 acts as a hydrogen bond donor to the 6' OH of the +1 sugar.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observe Asp213 accepting a hydrogen bond with the 6' OH of the \u20131 sugar and Tyr141 acting as a hydrogen bond donor to the 6' OH of the +1 sugar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a7788498-d764-4a57-bd79-615278bc6246",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C38",
+      "claim": "The glycosidic oxygen bridging the \u20131 and +1 sugars is 2.8 \u00c5 away from the acidic Glu140 -OH.",
+      "claim_type": "EXPLICIT",
+      "source": "These two hydrogen bonds likely orient the ligand in the catalytically competent pose where the glycosidic oxygen bridging the \u20131 and +1 sugars is 2.8 \u00c5 away from the acidic Glu140 -OH (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "5c94086f-f054-40ab-a926-e0d5684eea89",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C39",
+      "claim": "Glu140 can act as a hydrogen bond donor to the strained (122\u00b0 bond angle) bridging oxygen forming a hydrogen bond to promote the formation of an oxazolinium intermediate and subsequent cleavage of the glycosidic bond.",
+      "claim_type": "EXPLICIT",
+      "source": "With this proximity, Glu140 can act as a hydrogen bond donor to the strained (122o bond angle) bridging oxygen forming a hydrogen bond to promote the formation of an oxazolinium intermediate and subsequent cleavage of the glycosidic bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the catalytic mechanism based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "9bc63619-a45d-419c-936b-5403f00d3563",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C40",
+      "claim": "Residues involved in ligand binding and catalysis adopt similar side chain conformations in the absence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues involved in ligand binding and catalysis adopt similar side chain conformations in the absence of ligand (PDB ID: 8FG5, 8FG7), suggesting that the active site is organized prior to ligand binding and not subject to ligand-stabilized conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing apo and holo structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "ba0f910f-4232-462e-987b-ec1168193e1b",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C41",
+      "claim": "The active site is organized prior to ligand binding and not subject to ligand-stabilized conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues involved in ligand binding and catalysis adopt similar side chain conformations in the absence of ligand (PDB ID: 8FG5, 8FG7), suggesting that the active site is organized prior to ligand binding and not subject to ligand-stabilized conformational changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the structural comparison of apo and holo forms.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "9ae830b6-8f6d-4583-9d80-d13b6a7bb502",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C42",
+      "claim": "Conformational heterogeneity was observed in the catalytically critical Asp138 residue, suggesting flipping between two equally stable states facing each of the other two residues in the catalytic triad (Asp136 or Glu140).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the largely static interactions outlined above, we observed conformational heterogeneity in the catalytically critical Asp138 residue, suggesting flipping between two equally stable states facing each of the other two residues in the catalytic triad (Asp136 or Glu140; van Aalten et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the crystal structures, with comparison to prior work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "22a46536-d721-433e-b060-8116e413e5c0",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C43",
+      "claim": "There are two Asp138 conformations and only a single conformation for Asp136 and Glu140.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Ringer, we confirmed that there are two Asp138 conformations and only a single conformation for Asp136 and Glu140 (Figure 2\u2014figure supplement 4; Data available at doi: 10.5281/zenodo.7758815; Lang et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed using Ringer analysis of the electron density, with citation to the method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "b02adc32-b6a7-447b-82fd-233a79f09725",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C44",
+      "claim": "A strong positive correlation exists between Asp138 conformation and ligand pose only in the \u20132 to +1 subsites.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe a strong positive correlation between Asp138 conformation and ligand pose only in the \u20132 to +1 subsites (Figure 3B; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from analysis of the structural data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "20bb3d64-ab55-4fd2-ad4a-b1bb60a4fbc3",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C45",
+      "claim": "When the \u20131 subsite is at least 50% occupied, Asp138 prefers the active conformation (up towards Glu140).",
+      "claim_type": "EXPLICIT",
+      "source": "When the \u20131 subsite is at least 50% occupied, Asp138 prefers the active conformation (up towards Glu140).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analysis of the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "4f7b5b26-c260-4811-b442-f4844aa56f67",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C46",
+      "claim": "When Asp138 is oriented towards Asp136 (the inactive conformation), the pKa of the catalytic residues are 2.0, 13.0, 7.7 for Asp136, Asp138, and Glu140 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When Asp138 is oriented towards Asp136 (the inactive conformation), the pKa of the catalytic residues are 2.0, 13.0, 7.7 for Asp136, Asp138, and Glu140 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from PROPKA calculations on the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "79522a19-763c-48b9-9ae9-c69658be86d4",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C47",
+      "claim": "When Asp138 is oriented towards Glu140 (the active conformation), the pKa of the catalytic residues are 3.4, 12.4, 6.4 for Asp136, Asp138, and Glu140, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when Asp138 is oriented towards Glu140 (the active conformation), the pKa of the catalytic residues are 3.4, 12.4, 6.4 for Asp136, Asp138, and Glu140, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from PROPKA calculations on the crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "0ebebe5a-8333-40ce-9bd9-51e532be570c",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C48",
+      "claim": "The pKa of Asp136 and Glu140 are both affected by the orientation of Asp138.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking this information together, it is clear that the pKa of Asp136 and Glu140 are both affected by the orientation of Asp138 (Figure 4A; Supplementary file 2; Data available at doi: 10.5281/zenodo.7905863).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the PROPKA calculations shown in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "8f3b80ca-a85d-4f60-b43b-fb3acf261a72",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C49",
+      "claim": "At pH >3.4, Asp136 is deprotonated, and its conjugate base is more stable.",
+      "claim_type": "EXPLICIT",
+      "source": "The pKa of Asp136 suggests that at pH >3.4, Asp136 is deprotonated, and its conjugate base is more stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the calculated pKa values.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "bc5e3a74-1dd1-436f-8f3a-49f47a93a0f7",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C50",
+      "claim": "In all simulations, Glu140 orients its acidic proton towards the glycosidic bond between the \u20131 and +1 sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "In all our simulations, we observe that Glu140 orients its acidic proton towards the glycosidic bond between the \u20131 and +1 sugars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "0ffe0e1f-dc8c-4103-969f-6fc67cfad63b",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C51",
+      "claim": "The distance between the acidic proton of Glu140 and the glycosidic oxygen fluctuates between 1.5 and 2.3 \u00c5 for the duration of the simulation, with a median distance of 1.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance between the acidic proton of Glu140 and the glycosidic oxygen fluctuates between 1.5 and 2.3 \u00c5 for the duration of the simulation, with a median distance of 1.8 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "eaded75d-1efb-4ed6-b0e6-d44fd62d6c83",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C52",
+      "claim": "In simulations initiated from the inactive conformation at pH 2.0, Asp138 is readily able to rotate about its C\u03b1-C\u03b2 bond to adopt the active conformation forming the same hydrogen bond between Asp138 and Glu140.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulations initiated from the inactive conformation at pH 2.0, we observe that Asp 138 is readily able to rotate about its C\u03b1-C\u03b2 bond to adopt the active conformation forming the same hydrogen bond between Asp138 and Glu140.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the molecular dynamics simulations at pH 2.0.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "6f61b019-29a2-4533-8e4b-2a720bad75bb",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C53",
+      "claim": "In simulations at pH 6.5 started from the Asp138 inactive conformation, Asp138 remains hydrogen bonded to Asp136 throughout the duration of the simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, from simulations at pH 6.5 started from the Asp138 inactive conformation, we observe that Asp138 remains hydrogen bonded to Asp136 throughout the duration of the simulation (inactive conformation; Figure 5A\u2013C; Data available at doi: 10.5281/zenodo.7758821).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the molecular dynamics simulations at pH 6.5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "1a784cbc-2ce5-4fb1-bb1d-89cb201753a6",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C54",
+      "claim": "At neutral pH, Asp136 is deprotonated (pKa = 2.1) forming an ionic hydrogen bond with Asp138 (pKa = 13.1).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our crystal data and simulations, we envision that at neutral pH, Asp136 is deprotonated (pKa = 2.1) forming an ionic hydrogen bond with Asp138 (pKa = 13.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the pKa calculations and simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "2690aee2-bce9-4569-a50e-48f181b57673",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C55",
+      "claim": "At low pH Asp136 is protonated, yet continues to form a weaker hydrogen bond with Asp138.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at low pH Asp136 is protonated, yet continues to form a weaker hydrogen bond with Asp138 (Figure 6 - Step 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic interpretation based on the pKa calculations and simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "52adaee4-d2a7-49f4-8961-dccc76aca59b",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C56",
+      "claim": "Glu140 (pKa = 7.7) is protonated across the enzyme's active pH range.",
+      "claim_type": "EXPLICIT",
+      "source": "Glu140 (pKa = 7.7) is protonated across the enzyme's active pH range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the calculated pKa value.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "7b2579bb-e2d7-4e50-a627-9d1907c85cca",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C57",
+      "claim": "At neutral pH, when protonation of Asp136 occurs, this destabilizes the Asp136-Asp138 hydrogen bond and allows Asp138 to rotate about its C\u03b1-C\u03b2 bond into the active conformation (towards Glu140).",
+      "claim_type": "EXPLICIT",
+      "source": "At neutral pH, Asp136 is predominantly deprotonated. When protonation of Asp136 occurs, this destabilizes the Asp136-Asp138 hydrogen bond and allows Asp138 to rotate about its C\u03b1-C\u03b2 bond into the active conformation (towards Glu140).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the structural and computational data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "1d8a7762-f794-4182-9298-06b0f0072656",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C58",
+      "claim": "At low pH, since Asp136 is always protonated, the Asp136-Asp138 hydrogen bond is less energetically favorable, therefore Asp138 can adopt the active conformation more readily.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since Asp136 is always protonated at low pH, the Asp136-Asp138 hydrogen bond is less energetically favorable, therefore Asp138 can adopt the active conformation more readily (Figure 6- Step 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic interpretation based on the structural and computational data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "ff7f2f3e-8434-4d2b-a1c4-e3382b20e63e",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C59",
+      "claim": "At neutral pH, the resultant deprotonated Glu140 is then re-protonated through proton shuttling in which Asp136 donates its proton to Asp138 and Asp138 donates its ionizable proton to Glu140.",
+      "claim_type": "EXPLICIT",
+      "source": "At neutral pH, the resultant deprotonated Glu140 is then re-protonated through proton shuttling in which Asp136 donates its proton to Asp138 and Asp138 donates its ionizable proton to Glu140.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the catalytic cycle at neutral pH.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "14e55261-f6ef-4eb2-abe4-cbba6c504ac1",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C60",
+      "claim": "At acidic pH, Glu140 can be directly re-protonated by a proton in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "At acidic pH, we propose that Glu140 can be directly re-protonated by a proton in solution (Figure 6 - Step 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic hypothesis for the catalytic cycle at acidic pH.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a48b448c-6f77-4042-b329-08e885f3169f",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C61",
+      "claim": "E. coli-expressed mAMCase is remarkably stable across a broad pH range.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work by Kashimura et al. has demonstrated that E. coli-expressed mAMCase is remarkably stable across a broad pH range (Kashimura et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kashimura et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "9809e33d-a9f8-4c5f-a5c4-408801f8b50b",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C62",
+      "claim": "Mutations Lys78Gln, Asp82Gly, and Lys160Gln result in the loss of surface-stabilizing salt bridges in hAMCase and may contribute to its reduced activity at more acidic pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations Lys78Gln, Asp82Gly, and Lys160Gln result in the loss of surface-stabilizing salt bridges in hAMCase and may contribute to its reduced activity at more acidic pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from sequence comparison and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a5ec420e-6acb-4b1d-ba96-c7a0ee584e34",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C63",
+      "claim": "The dual pH optima of mAMCase is intrinsic to the catalytic mechanism, where Glu140 can be protonated directly from solution (at low pH) or through proton shuttling across the catalytic triad (at neutral pH).",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the dual pH optima of mAMCase is intrinsic to the catalytic mechanism, where Glu140 can be protonated directly from solution (at low pH) or through proton shuttling across the catalytic triad (at neutral pH; Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic hypothesis integrating the kinetic, structural, and computational data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "31a0cb84-18a3-44ab-bf9a-2c2b178c0e26",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C64",
+      "claim": "hAMCase is likely too destabilized at low pH to observe an increase in kcat.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hAMCase is likely too destabilized at low pH to observe an increase in kcat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis to explain the difference between mouse and human AMCase.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "dbbf4a38-cc05-4f54-86fa-17916e64b8fc",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "claim_id": "C65",
+      "claim": "hAMCase may be under less pressure to maintain high activity at low pH due to humans' noninsect-based diet, which contains less chitin compared to other mammals with primarily insect-based diets.",
+      "claim_type": "EXPLICIT",
+      "source": "hAMCase may be under less pressure to maintain high activity at low pH due to humans' noninsect-based diet, which contains less chitin compared to other mammals with primarily insect-based diets (Tabata et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an evolutionary hypothesis supported by citation to Tabata et al., 2022.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9a17ae9e-4d8c-44b1-aea9-a4df6240890e",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "mAMCase exhibits dual pH optima at pH 2.0 and 6.5, with the acidic optimum showing 6.3-fold higher kcat and 2.5-fold worse KM compared to neutral pH. These optima correspond to the pH of the stomach and lungs, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C23, C24, C25, and C26 collectively demonstrate the dual pH optima through kinetic measurements (Figure 1B-D). The quantitative kinetic parameters (kcat and KM) are derived from Michaelis-Menten analysis of endpoint assay data with appropriate replicates (n=4). The correlation to physiological sites is supported by citation and represents a reasonable inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "31b3d0e2-ef90-43db-a9f3-393ed3fe4156",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "High-resolution crystal structures (1.30-1.95 \u00c5) of mAMCase in complex with GlcNAcn reveal extensive conformational and configurational ligand heterogeneity, including both \u03b1- and \u03b2-anomers and continuous density resembling higher-order oligomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C30, C32, C33, and C34 are supported by crystallographic data deposited in the PDB with appropriate resolution ranges. The observation of anomer heterogeneity and continuous density is directly observable in electron density maps. The mechanistic interpretation (C34) about oxocarbenium intermediate formation is a reasonable chemical inference from the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "63af0433-9fdd-470c-814d-9073cdcabee1",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The mAMCase active site contains conserved tryptophan residues that stabilize ligand binding through H-\u03c0 interactions, and key residues (Asp213, Tyr141, Glu140) form hydrogen bonds that orient the substrate for catalysis. The active site is pre-organized prior to ligand binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 describe structural features directly observable in the crystal structures with specific distance measurements (e.g., 2.8 \u00c5 for Glu140 to glycosidic oxygen). The comparison to other chitinases is supported by citations. The inference about pre-organization (C41) is supported by comparison of apo and holo structures showing similar conformations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "ea97a48a-9397-47c4-9195-47330f9bf0a6",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Asp138 exhibits conformational heterogeneity, flipping between inactive (toward Asp136) and active (toward Glu140) conformations. Asp138 preferentially adopts the active conformation when the -1 subsite is at least 50% occupied, showing strong positive correlation with ligand occupancy in the -2 to +1 subsites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 are supported by Ringer analysis (C43) confirming two Asp138 conformations and quantitative correlation analysis shown in Figure 3B (C44). The 50% occupancy threshold (C45) is derived from structural data analysis. The conformational heterogeneity is directly observable in electron density maps across multiple structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "c2e913d0-2bc6-4dcf-b857-2b8af9857afe",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PROPKA calculations reveal that the pKa values of catalytic residues Asp136 and Glu140 are affected by Asp138 conformation. In the inactive conformation, pKa values are 2.0, 13.0, and 7.7 for Asp136, Asp138, and Glu140, respectively. In the active conformation, values shift to 3.4, 12.4, and 6.4. Glu140 (pKa 7.7) remains protonated across the enzyme's active pH range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 and C56 report PROPKA calculations performed on crystal structures. The pKa values are computationally derived and show consistent trends across multiple structures (Figure 4A, Supplementary file 2). The inference about protonation states at different pH values (C49, C56) follows logically from the calculated pKa values. However, PROPKA is a prediction tool with inherent limitations in accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "5cf963da-ff08-4e01-94bc-a1c4a52cf205",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations suggest pH-dependent mechanisms for catalytic residue protonation. At pH 2.0, Asp138 readily rotates from inactive to active conformation, while at pH 6.5, Asp138 remains hydrogen-bonded to Asp136 in the inactive conformation. Glu140 maintains its acidic proton oriented toward the glycosidic bond (1.5-2.3 \u00c5, median 1.8 \u00c5) across all simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C50-C53 describe MD simulation results, but critical methodological details raise concerns. The simulations are only 10 ns in duration, which may be insufficient to observe rare conformational transitions. The simulations were performed at pH 2.0 and 6.5, but crystal structures were only obtained at pH 4.74-5.60, creating a gap between experimental validation and computational predictions. The protonation states were assigned by 3DProtonate and confirmed by PROPKA, but the accuracy of these predictions at extreme pH is uncertain. While the observations are internally consistent, longer simulations and experimental validation at the simulated pH values would strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "62ef2049-aec7-456a-9ff6-e103fd49f999",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose a dual mechanism for Glu140 protonation: at neutral pH, proton shuttling occurs through the catalytic triad (Asp136\u2192Asp138\u2192Glu140), while at acidic pH, Glu140 is directly protonated from solution. This mechanism explains the dual pH optima of mAMCase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54, C55, C57-C60, and C63 present a mechanistic model integrating kinetic, structural, and computational data. While the model is internally consistent and explains the observed dual pH optima, it remains largely speculative. The proton shuttling mechanism at neutral pH (C59) and direct protonation at acidic pH (C60) are inferences not directly demonstrated experimentally. The MD simulations are too short to observe actual proton transfer events. The model would benefit from additional experimental validation such as neutron crystallography (mentioned in Discussion as future work) or pH-dependent kinetic isotope effect studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "ad0767e1-3894-4010-88c6-505ec6845a81",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "mAMCase shows apparent product inhibition at 4MU-chitobioside concentrations above 80 \u03bcM across all pH values, potentially due to transglycosylation activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 describe an observation from kinetic data with comparison to chitotriosidase (C27, supported by citation). The product inhibition is observable in the kinetic curves. The transglycosylation hypothesis (C29) is supported by citation to prior work showing this activity at pH 2.0 and 7.0. However, the authors acknowledge this leads to systematic underprediction by Michaelis-Menten modeling at high substrate concentrations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "fdd93e77-925e-48ee-9b56-f0fabfc3c260",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sequence differences between mouse and human AMCase may explain their different pH activity profiles. Human AMCase lacks surface-stabilizing salt bridges (Lys78Gln, Asp82Gly, Lys160Gln mutations) and may be destabilized at low pH. Evolutionary pressure may differ due to dietary chitin exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C65 attempt to explain species differences. C61 is supported by citation. C62 identifies specific mutations through sequence comparison, but the functional impact is inferred, not experimentally validated. C64 and C65 are speculative hypotheses about protein stability and evolutionary pressure. No experimental data on hAMCase stability at low pH is presented in this study, and the evolutionary hypothesis (C65), while plausible, lacks direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "9ff11942-e211-48bb-86db-40aa367dfa5e",
+      "content_id": "6488e8b5-722c-4ab2-8199-f73df84dc7ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context of chitin, AMCase function, and GH18 catalytic mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C22 provide established background knowledge supported by appropriate citations to prior literature. These claims accurately represent the current understanding of chitin biology, AMCase expression and function, and the GH18 catalytic mechanism. C22 is a reasonable chemical expectation about the oxazolinium intermediate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "38dfec93-57c9-4964-a5c8-b3f14890652e",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors report that mAMCase exhibits dual pH optima at pH 2.0 and 6.5, matching the physiological pH of the stomach and lungs respectively. Low pH primarily improves kcat 6.3-fold while KM worsens 2.5-fold from pH 7.4 to pH 2.0.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm these findings, stating 'The study's key findings include determining kinetic parameters (Kcat and Km) under a broad range of pH conditions' and 'The methods and analysis of data are solid, providing several lines of evidence to support the development of mechanistic hypotheses.' No concerns are raised about the kinetic measurements or dual pH optima.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "c9b1640c-0e1b-4eea-8b01-979ce9db0f81",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "High-resolution crystal structures (1.30-1.95 \u00c5) of mAMCase were solved in apo and holo forms, revealing extensive conformational ligand heterogeneity including both \u03b1- and \u03b2-1,4-linked GlcNAc2 anomers and continuous density resembling higher order chitin oligomers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the structural work, noting 'This structural and biochemical study...enhances our understanding' and 'The methods and analysis of data are solid.' The observation of configurational heterogeneity and ligand conformations is not questioned, indicating acceptance of these crystallographic findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "44923811-e22f-46c8-b34a-8674d03b7ef2",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The crystal structures reveal conserved binding interactions including a network of tryptophans (Trp31, Trp360, Trp99, Trp218) stabilizing ligand positioning, hydrogen bonds from Asp213 and Tyr141 to the ligand, and positioning of the glycosidic oxygen 2.8 \u00c5 from Glu140. The active site is pre-organized prior to ligand binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the structural analysis without critique, stating the methods are 'solid' and provide 'several lines of evidence.' The detailed structural observations about binding interactions and active site organization are not challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "f6403ab1-7599-4ced-ab94-0cacfd0aa2e3",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Conformational heterogeneity was observed in the catalytic residue Asp138, which flips between two states facing Asp136 (inactive) or Glu140 (active). A strong positive correlation exists between Asp138 conformation and ligand occupancy in the -2 to +1 subsites, with Asp138 preferring the active conformation when the -1 subsite is at least 50% occupied.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm 'the observation of structural rearrangements and the identification of pH-dependent mechanisms' as novel contributions. The Ringer analysis confirming Asp138 conformational heterogeneity and its correlation with ligand binding is not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "50e385ef-ffb6-4a27-b093-3acfc6bfd5ff",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "PROPKA calculations show that Asp138 conformation affects the pKa values of the catalytic triad. In the inactive conformation, pKa values are 2.0, 13.0, 7.7 for Asp136, Asp138, and Glu140; in the active conformation they are 3.4, 12.4, 6.4 respectively. Glu140 (pKa ~7.7) remains protonated across the enzyme's active pH range.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the pKa calculations as part of the 'comprehensive approach, including...theoretical calculations of pKa values' and note the methods are 'solid.' The calculated pKa values and their implications are not challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "066f1310-4bcb-4f51-8f08-23a623349cc6",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Molecular dynamics simulations show that Glu140 maintains its acidic proton oriented toward the glycosidic bond (1.5-2.3 \u00c5 distance). At pH 2.0, Asp138 readily rotates from inactive to active conformation, while at pH 6.5 it remains hydrogen bonded to Asp136 in the inactive conformation throughout the simulation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the computational work, noting the study employs 'molecular dynamics simulations to observe the behavior of mouse AMCase' and that these provide evidence for 'pH-dependent mechanisms.' The simulation results are accepted as part of the solid methodological approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "e84212ca-d614-43f5-b5d1-ef936b852487",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors propose a mechanistic model where dual pH optima arise from distinct protonation mechanisms: at neutral pH, Glu140 is re-protonated through proton shuttling via the catalytic triad (Asp136\u2192Asp138\u2192Glu140), while at acidic pH, Glu140 can be directly re-protonated from solution. The model explains how Asp138 conformation and protonation states differ between pH environments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the mechanistic interpretation, stating 'the results reveal pH-dependent changes in enzymatic activity, suggesting that mouse AMCase employs different mechanisms for protonation of the catalytic glutamic acid residue...under distinct pH conditions.' They describe this as providing 'valuable information about its adaptation to different physiological conditions.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "a0c994d1-d2f2-4c85-8219-d27635f1e675",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "mAMCase shows apparent reduction in catalysis rate at 4MU-chitobioside concentrations above 80 \u03bcM across all pH values, suggesting product inhibition possibly due to transglycosylation activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This observation from kinetic data is not questioned by reviewers, who affirm the kinetic analysis is solid. The product inhibition hypothesis is presented as consistent with prior literature and is accepted as part of the overall kinetic characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "acec3bd1-90be-4815-9aeb-9d15c4bd68fa",
+      "content_id": "72772fdc-3a7b-447b-b610-d15b7d8952aa",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors discuss differences between mouse and human AMCase, suggesting that hAMCase may be too destabilized at low pH to show increased kcat, possibly due to loss of surface-stabilizing salt bridges and reduced evolutionary pressure from humans' non-insect-based diet.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express concern about broader significance, noting 'the broader significance, including extension of the results to other species including human, remain less clear.' This indicates uncertainty about the applicability and interpretation of findings beyond mouse AMCase, though the speculation itself is not directly refuted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "79ada89e-3963-4129-9ecb-e49b4fc935b3",
+      "result_id": "9a17ae9e-4d8c-44b1-aea9-a4df6240890e"
+    },
+    {
+      "claim_id": "86d6c5cb-6fef-41cf-a197-20a1a3a89ae4",
+      "result_id": "9a17ae9e-4d8c-44b1-aea9-a4df6240890e"
+    },
+    {
+      "claim_id": "3226c2f7-07bc-4920-b726-52571434d46c",
+      "result_id": "9a17ae9e-4d8c-44b1-aea9-a4df6240890e"
+    },
+    {
+      "claim_id": "c7bd7a49-6352-4112-a97a-861548c24b2e",
+      "result_id": "9a17ae9e-4d8c-44b1-aea9-a4df6240890e"
+    },
+    {
+      "claim_id": "d74050e2-1df5-47b5-82a1-281d4e6e0d49",
+      "result_id": "9a17ae9e-4d8c-44b1-aea9-a4df6240890e"
+    },
+    {
+      "claim_id": "225fed3f-8206-44cc-96bc-bcaa2680f81d",
+      "result_id": "31b3d0e2-ef90-43db-a9f3-393ed3fe4156"
+    },
+    {
+      "claim_id": "a4a9fc9d-db1b-4b1c-99da-8330d0906859",
+      "result_id": "31b3d0e2-ef90-43db-a9f3-393ed3fe4156"
+    },
+    {
+      "claim_id": "e0e041c2-6a89-4f15-830d-89ac4a6c528e",
+      "result_id": "31b3d0e2-ef90-43db-a9f3-393ed3fe4156"
+    },
+    {
+      "claim_id": "c875606d-a86d-44c4-852c-c234e20831c1",
+      "result_id": "31b3d0e2-ef90-43db-a9f3-393ed3fe4156"
+    },
+    {
+      "claim_id": "d6f2724d-edd8-4524-a6b4-b2ae525cc607",
+      "result_id": "31b3d0e2-ef90-43db-a9f3-393ed3fe4156"
+    },
+    {
+      "claim_id": "278da207-cca2-4804-b8ac-e3b8d374eff7",
+      "result_id": "31b3d0e2-ef90-43db-a9f3-393ed3fe4156"
+    },
+    {
+      "claim_id": "a64c0afb-262c-419b-8f5a-69583df5d427",
+      "result_id": "63af0433-9fdd-470c-814d-9073cdcabee1"
+    },
+    {
+      "claim_id": "c2285534-1db2-4c9a-b707-caae50b2bbc1",
+      "result_id": "63af0433-9fdd-470c-814d-9073cdcabee1"
+    },
+    {
+      "claim_id": "a4957b54-6748-44b1-9837-559724ade56c",
+      "result_id": "63af0433-9fdd-470c-814d-9073cdcabee1"
+    },
+    {
+      "claim_id": "a7788498-d764-4a57-bd79-615278bc6246",
+      "result_id": "63af0433-9fdd-470c-814d-9073cdcabee1"
+    },
+    {
+      "claim_id": "5c94086f-f054-40ab-a926-e0d5684eea89",
+      "result_id": "63af0433-9fdd-470c-814d-9073cdcabee1"
+    },
+    {
+      "claim_id": "9bc63619-a45d-419c-936b-5403f00d3563",
+      "result_id": "63af0433-9fdd-470c-814d-9073cdcabee1"
+    },
+    {
+      "claim_id": "ba0f910f-4232-462e-987b-ec1168193e1b",
+      "result_id": "63af0433-9fdd-470c-814d-9073cdcabee1"
+    },
+    {
+      "claim_id": "9ae830b6-8f6d-4583-9d80-d13b6a7bb502",
+      "result_id": "ea97a48a-9397-47c4-9195-47330f9bf0a6"
+    },
+    {
+      "claim_id": "22a46536-d721-433e-b060-8116e413e5c0",
+      "result_id": "ea97a48a-9397-47c4-9195-47330f9bf0a6"
+    },
+    {
+      "claim_id": "b02adc32-b6a7-447b-82fd-233a79f09725",
+      "result_id": "ea97a48a-9397-47c4-9195-47330f9bf0a6"
+    },
+    {
+      "claim_id": "20bb3d64-ab55-4fd2-ad4a-b1bb60a4fbc3",
+      "result_id": "ea97a48a-9397-47c4-9195-47330f9bf0a6"
+    },
+    {
+      "claim_id": "4f7b5b26-c260-4811-b442-f4844aa56f67",
+      "result_id": "c2e913d0-2bc6-4dcf-b857-2b8af9857afe"
+    },
+    {
+      "claim_id": "79522a19-763c-48b9-9ae9-c69658be86d4",
+      "result_id": "c2e913d0-2bc6-4dcf-b857-2b8af9857afe"
+    },
+    {
+      "claim_id": "0ebebe5a-8333-40ce-9bd9-51e532be570c",
+      "result_id": "c2e913d0-2bc6-4dcf-b857-2b8af9857afe"
+    },
+    {
+      "claim_id": "8f3b80ca-a85d-4f60-b43b-fb3acf261a72",
+      "result_id": "c2e913d0-2bc6-4dcf-b857-2b8af9857afe"
+    },
+    {
+      "claim_id": "52adaee4-d2a7-49f4-8961-dccc76aca59b",
+      "result_id": "c2e913d0-2bc6-4dcf-b857-2b8af9857afe"
+    },
+    {
+      "claim_id": "c5d55be5-1620-4085-a795-e031510b68f4",
+      "result_id": "5cf963da-ff08-4e01-94bc-a1c4a52cf205"
+    },
+    {
+      "claim_id": "bc5e3a74-1dd1-436f-8f3a-49f47a93a0f7",
+      "result_id": "5cf963da-ff08-4e01-94bc-a1c4a52cf205"
+    },
+    {
+      "claim_id": "0ffe0e1f-dc8c-4103-969f-6fc67cfad63b",
+      "result_id": "5cf963da-ff08-4e01-94bc-a1c4a52cf205"
+    },
+    {
+      "claim_id": "eaded75d-1efb-4ed6-b0e6-d44fd62d6c83",
+      "result_id": "5cf963da-ff08-4e01-94bc-a1c4a52cf205"
+    },
+    {
+      "claim_id": "6f61b019-29a2-4533-8e4b-2a720bad75bb",
+      "result_id": "5cf963da-ff08-4e01-94bc-a1c4a52cf205"
+    },
+    {
+      "claim_id": "1a784cbc-2ce5-4fb1-bb1d-89cb201753a6",
+      "result_id": "62ef2049-aec7-456a-9ff6-e103fd49f999"
+    },
+    {
+      "claim_id": "2690aee2-bce9-4569-a50e-48f181b57673",
+      "result_id": "62ef2049-aec7-456a-9ff6-e103fd49f999"
+    },
+    {
+      "claim_id": "7b2579bb-e2d7-4e50-a627-9d1907c85cca",
+      "result_id": "62ef2049-aec7-456a-9ff6-e103fd49f999"
+    },
+    {
+      "claim_id": "1d8a7762-f794-4182-9298-06b0f0072656",
+      "result_id": "62ef2049-aec7-456a-9ff6-e103fd49f999"
+    },
+    {
+      "claim_id": "ff7f2f3e-8434-4d2b-a1c4-e3382b20e63e",
+      "result_id": "62ef2049-aec7-456a-9ff6-e103fd49f999"
+    },
+    {
+      "claim_id": "14e55261-f6ef-4eb2-abe4-cbba6c504ac1",
+      "result_id": "62ef2049-aec7-456a-9ff6-e103fd49f999"
+    },
+    {
+      "claim_id": "a5ec420e-6acb-4b1d-ba96-c7a0ee584e34",
+      "result_id": "62ef2049-aec7-456a-9ff6-e103fd49f999"
+    },
+    {
+      "claim_id": "3e5b65fe-4ba1-458f-bbba-87a0a96ef90e",
+      "result_id": "ad0767e1-3894-4010-88c6-505ec6845a81"
+    },
+    {
+      "claim_id": "18db2a7c-35c0-4be5-a483-79ce612e9267",
+      "result_id": "ad0767e1-3894-4010-88c6-505ec6845a81"
+    },
+    {
+      "claim_id": "c567e82f-5bb6-47f0-9ad1-ea8c02eb30f2",
+      "result_id": "ad0767e1-3894-4010-88c6-505ec6845a81"
+    },
+    {
+      "claim_id": "a48b448c-6f77-4042-b329-08e885f3169f",
+      "result_id": "fdd93e77-925e-48ee-9b56-f0fabfc3c260"
+    },
+    {
+      "claim_id": "9809e33d-a9f8-4c5f-a5c4-408801f8b50b",
+      "result_id": "fdd93e77-925e-48ee-9b56-f0fabfc3c260"
+    },
+    {
+      "claim_id": "31a0cb84-18a3-44ab-bf9a-2c2b178c0e26",
+      "result_id": "fdd93e77-925e-48ee-9b56-f0fabfc3c260"
+    },
+    {
+      "claim_id": "dbbf4a38-cc05-4f54-86fa-17916e64b8fc",
+      "result_id": "fdd93e77-925e-48ee-9b56-f0fabfc3c260"
+    },
+    {
+      "claim_id": "978995a0-c918-4141-8fce-fe6832a3d6e9",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "b74f2416-7fd9-4a8f-9dd3-3cf3312a14ed",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "8e58ca1e-267c-492b-a387-0039a9a574dd",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "49dbb9e7-c5f8-4181-9b12-e76e16d26231",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "20f85b42-f89c-4112-98f0-825a9c7f7336",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "68d88f92-4bd6-4922-a624-d9064f98fe3a",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "9fab6b3f-6f02-4021-bc24-b6b744353fea",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "c05f0a80-8fcf-4642-92f3-fdf5424a5907",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "7fe81139-328b-4db6-8285-bfb32a5f9d31",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "e082126a-a8d2-4075-95d9-080952e93690",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "956b0d53-ae51-4ad0-b0b1-b18ba546078d",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "243a478b-7452-4881-906c-09d9f45be4c6",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "af683bfe-4ff7-4e21-81a5-a4731b595fc0",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "a47575b0-1fbd-475f-a2a5-4dbdf4df8cec",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "4c88ad3e-ea29-4fac-9f24-c9709efc8d96",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "a0ef7f4d-5d2f-4c9a-8de2-21e07c674d68",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "a5ae003f-3273-4998-924b-6bf3e8e35e80",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "2b084a84-d979-475f-b00d-3b00b74cbd72",
+      "result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e"
+    },
+    {
+      "claim_id": "79ada89e-3963-4129-9ecb-e49b4fc935b3",
+      "result_id": "38dfec93-57c9-4964-a5c8-b3f14890652e"
+    },
+    {
+      "claim_id": "86d6c5cb-6fef-41cf-a197-20a1a3a89ae4",
+      "result_id": "38dfec93-57c9-4964-a5c8-b3f14890652e"
+    },
+    {
+      "claim_id": "3226c2f7-07bc-4920-b726-52571434d46c",
+      "result_id": "38dfec93-57c9-4964-a5c8-b3f14890652e"
+    },
+    {
+      "claim_id": "c7bd7a49-6352-4112-a97a-861548c24b2e",
+      "result_id": "38dfec93-57c9-4964-a5c8-b3f14890652e"
+    },
+    {
+      "claim_id": "d74050e2-1df5-47b5-82a1-281d4e6e0d49",
+      "result_id": "38dfec93-57c9-4964-a5c8-b3f14890652e"
+    },
+    {
+      "claim_id": "225fed3f-8206-44cc-96bc-bcaa2680f81d",
+      "result_id": "c9b1640c-0e1b-4eea-8b01-979ce9db0f81"
+    },
+    {
+      "claim_id": "a4a9fc9d-db1b-4b1c-99da-8330d0906859",
+      "result_id": "c9b1640c-0e1b-4eea-8b01-979ce9db0f81"
+    },
+    {
+      "claim_id": "e0e041c2-6a89-4f15-830d-89ac4a6c528e",
+      "result_id": "c9b1640c-0e1b-4eea-8b01-979ce9db0f81"
+    },
+    {
+      "claim_id": "c875606d-a86d-44c4-852c-c234e20831c1",
+      "result_id": "c9b1640c-0e1b-4eea-8b01-979ce9db0f81"
+    },
+    {
+      "claim_id": "d6f2724d-edd8-4524-a6b4-b2ae525cc607",
+      "result_id": "c9b1640c-0e1b-4eea-8b01-979ce9db0f81"
+    },
+    {
+      "claim_id": "278da207-cca2-4804-b8ac-e3b8d374eff7",
+      "result_id": "c9b1640c-0e1b-4eea-8b01-979ce9db0f81"
+    },
+    {
+      "claim_id": "a64c0afb-262c-419b-8f5a-69583df5d427",
+      "result_id": "44923811-e22f-46c8-b34a-8674d03b7ef2"
+    },
+    {
+      "claim_id": "c2285534-1db2-4c9a-b707-caae50b2bbc1",
+      "result_id": "44923811-e22f-46c8-b34a-8674d03b7ef2"
+    },
+    {
+      "claim_id": "a4957b54-6748-44b1-9837-559724ade56c",
+      "result_id": "44923811-e22f-46c8-b34a-8674d03b7ef2"
+    },
+    {
+      "claim_id": "a7788498-d764-4a57-bd79-615278bc6246",
+      "result_id": "44923811-e22f-46c8-b34a-8674d03b7ef2"
+    },
+    {
+      "claim_id": "5c94086f-f054-40ab-a926-e0d5684eea89",
+      "result_id": "44923811-e22f-46c8-b34a-8674d03b7ef2"
+    },
+    {
+      "claim_id": "9bc63619-a45d-419c-936b-5403f00d3563",
+      "result_id": "44923811-e22f-46c8-b34a-8674d03b7ef2"
+    },
+    {
+      "claim_id": "ba0f910f-4232-462e-987b-ec1168193e1b",
+      "result_id": "44923811-e22f-46c8-b34a-8674d03b7ef2"
+    },
+    {
+      "claim_id": "9ae830b6-8f6d-4583-9d80-d13b6a7bb502",
+      "result_id": "f6403ab1-7599-4ced-ab94-0cacfd0aa2e3"
+    },
+    {
+      "claim_id": "22a46536-d721-433e-b060-8116e413e5c0",
+      "result_id": "f6403ab1-7599-4ced-ab94-0cacfd0aa2e3"
+    },
+    {
+      "claim_id": "b02adc32-b6a7-447b-82fd-233a79f09725",
+      "result_id": "f6403ab1-7599-4ced-ab94-0cacfd0aa2e3"
+    },
+    {
+      "claim_id": "20bb3d64-ab55-4fd2-ad4a-b1bb60a4fbc3",
+      "result_id": "f6403ab1-7599-4ced-ab94-0cacfd0aa2e3"
+    },
+    {
+      "claim_id": "4f7b5b26-c260-4811-b442-f4844aa56f67",
+      "result_id": "50e385ef-ffb6-4a27-b093-3acfc6bfd5ff"
+    },
+    {
+      "claim_id": "79522a19-763c-48b9-9ae9-c69658be86d4",
+      "result_id": "50e385ef-ffb6-4a27-b093-3acfc6bfd5ff"
+    },
+    {
+      "claim_id": "0ebebe5a-8333-40ce-9bd9-51e532be570c",
+      "result_id": "50e385ef-ffb6-4a27-b093-3acfc6bfd5ff"
+    },
+    {
+      "claim_id": "8f3b80ca-a85d-4f60-b43b-fb3acf261a72",
+      "result_id": "50e385ef-ffb6-4a27-b093-3acfc6bfd5ff"
+    },
+    {
+      "claim_id": "52adaee4-d2a7-49f4-8961-dccc76aca59b",
+      "result_id": "50e385ef-ffb6-4a27-b093-3acfc6bfd5ff"
+    },
+    {
+      "claim_id": "c5d55be5-1620-4085-a795-e031510b68f4",
+      "result_id": "066f1310-4bcb-4f51-8f08-23a623349cc6"
+    },
+    {
+      "claim_id": "bc5e3a74-1dd1-436f-8f3a-49f47a93a0f7",
+      "result_id": "066f1310-4bcb-4f51-8f08-23a623349cc6"
+    },
+    {
+      "claim_id": "0ffe0e1f-dc8c-4103-969f-6fc67cfad63b",
+      "result_id": "066f1310-4bcb-4f51-8f08-23a623349cc6"
+    },
+    {
+      "claim_id": "eaded75d-1efb-4ed6-b0e6-d44fd62d6c83",
+      "result_id": "066f1310-4bcb-4f51-8f08-23a623349cc6"
+    },
+    {
+      "claim_id": "6f61b019-29a2-4533-8e4b-2a720bad75bb",
+      "result_id": "066f1310-4bcb-4f51-8f08-23a623349cc6"
+    },
+    {
+      "claim_id": "1a784cbc-2ce5-4fb1-bb1d-89cb201753a6",
+      "result_id": "e84212ca-d614-43f5-b5d1-ef936b852487"
+    },
+    {
+      "claim_id": "2690aee2-bce9-4569-a50e-48f181b57673",
+      "result_id": "e84212ca-d614-43f5-b5d1-ef936b852487"
+    },
+    {
+      "claim_id": "7b2579bb-e2d7-4e50-a627-9d1907c85cca",
+      "result_id": "e84212ca-d614-43f5-b5d1-ef936b852487"
+    },
+    {
+      "claim_id": "1d8a7762-f794-4182-9298-06b0f0072656",
+      "result_id": "e84212ca-d614-43f5-b5d1-ef936b852487"
+    },
+    {
+      "claim_id": "ff7f2f3e-8434-4d2b-a1c4-e3382b20e63e",
+      "result_id": "e84212ca-d614-43f5-b5d1-ef936b852487"
+    },
+    {
+      "claim_id": "14e55261-f6ef-4eb2-abe4-cbba6c504ac1",
+      "result_id": "e84212ca-d614-43f5-b5d1-ef936b852487"
+    },
+    {
+      "claim_id": "a5ec420e-6acb-4b1d-ba96-c7a0ee584e34",
+      "result_id": "e84212ca-d614-43f5-b5d1-ef936b852487"
+    },
+    {
+      "claim_id": "3e5b65fe-4ba1-458f-bbba-87a0a96ef90e",
+      "result_id": "a0c994d1-d2f2-4c85-8219-d27635f1e675"
+    },
+    {
+      "claim_id": "18db2a7c-35c0-4be5-a483-79ce612e9267",
+      "result_id": "a0c994d1-d2f2-4c85-8219-d27635f1e675"
+    },
+    {
+      "claim_id": "c567e82f-5bb6-47f0-9ad1-ea8c02eb30f2",
+      "result_id": "a0c994d1-d2f2-4c85-8219-d27635f1e675"
+    },
+    {
+      "claim_id": "a48b448c-6f77-4042-b329-08e885f3169f",
+      "result_id": "acec3bd1-90be-4815-9aeb-9d15c4bd68fa"
+    },
+    {
+      "claim_id": "9809e33d-a9f8-4c5f-a5c4-408801f8b50b",
+      "result_id": "acec3bd1-90be-4815-9aeb-9d15c4bd68fa"
+    },
+    {
+      "claim_id": "31a0cb84-18a3-44ab-bf9a-2c2b178c0e26",
+      "result_id": "acec3bd1-90be-4815-9aeb-9d15c4bd68fa"
+    },
+    {
+      "claim_id": "dbbf4a38-cc05-4f54-86fa-17916e64b8fc",
+      "result_id": "acec3bd1-90be-4815-9aeb-9d15c4bd68fa"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "515d76aa-8417-4b19-bf32-e59d4f10fb64",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "9a17ae9e-4d8c-44b1-aea9-a4df6240890e",
+      "peer_result_id": "38dfec93-57c9-4964-a5c8-b3f14890652e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C4, C23-C26 regarding dual pH optima and kinetic parameters. Both evaluations find the kinetic measurements and Michaelis-Menten analysis well-supported with solid methodology and appropriate replicates.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "e3a536a8-ded8-48c0-b0ea-ebf37550a0a5",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "31b3d0e2-ef90-43db-a9f3-393ed3fe4156",
+      "peer_result_id": "c9b1640c-0e1b-4eea-8b01-979ce9db0f81",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C5, C6, C30, C32-C34 regarding crystallographic data and structural observations. Both evaluations accept the anomer heterogeneity, continuous density observations, and mechanistic inferences about oxocarbenium intermediate formation as well-supported by the structural data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "b64e3d53-870f-434e-9811-78f62e3b06a0",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "63af0433-9fdd-470c-814d-9073cdcabee1",
+      "peer_result_id": "44923811-e22f-46c8-b34a-8674d03b7ef2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C35-C41 regarding detailed structural features and active site organization. Both evaluations accept the distance measurements, binding interactions, and pre-organization inferences as directly observable and well-supported by crystallographic analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "589e19ab-e58d-4097-96d1-e1b636db327e",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "ea97a48a-9397-47c4-9195-47330f9bf0a6",
+      "peer_result_id": "f6403ab1-7599-4ced-ab94-0cacfd0aa2e3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C42-C45 regarding Asp138 conformational heterogeneity. Both evaluations affirm the Ringer analysis, correlation with ligand binding, and structural rearrangements as novel and well-supported contributions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "bae60795-a564-4537-9777-afb6f6c6f09e",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "c2e913d0-2bc6-4dcf-b857-2b8af9857afe",
+      "peer_result_id": "50e385ef-ffb6-4a27-b093-3acfc6bfd5ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C46-C49, C56 regarding PROPKA pKa calculations. OpenEval notes inherent limitations in prediction tool accuracy, while peer reviewers accept the calculations as part of a solid comprehensive approach without raising concerns about computational accuracy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "1004295c-a64f-4563-a048-0932e4d29a85",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "5cf963da-ff08-4e01-94bc-a1c4a52cf205",
+      "peer_result_id": "066f1310-4bcb-4f51-8f08-23a623349cc6",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C7, C50-C53 regarding MD simulation results. OpenEval rates as UNCERTAIN due to short 10 ns simulation duration, pH gap between simulations and crystal structures, and lack of experimental validation. Peer reviewers rate as SUPPORTED, accepting the simulations as providing solid evidence for pH-dependent mechanisms without questioning duration or validation gaps.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "efb8f307-895d-4f5b-ab4d-1581ebcd0568",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "62ef2049-aec7-456a-9ff6-e103fd49f999",
+      "peer_result_id": "e84212ca-d614-43f5-b5d1-ef936b852487",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C54-C55, C57-C60, C63 regarding the mechanistic model. OpenEval rates as UNCERTAIN, noting the model is largely speculative with proton shuttling mechanisms not directly demonstrated and simulations too short to observe proton transfer. Peer reviewers rate as SUPPORTED, affirming the pH-dependent mechanistic interpretation as providing valuable information about physiological adaptation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "15a9ff6d-848d-4a26-93b5-c15e4b2d0592",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "ad0767e1-3894-4010-88c6-505ec6845a81",
+      "peer_result_id": "a0c994d1-d2f2-4c85-8219-d27635f1e675",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C27-C29 regarding product inhibition and transglycosylation. Both evaluations accept these observations from kinetic data as supported by prior literature, with OpenEval noting the acknowledged systematic underprediction at high substrate concentrations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "40e14612-622e-48a9-acfc-1ea746d18c39",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "fdd93e77-925e-48ee-9b56-f0fabfc3c260",
+      "peer_result_id": "acec3bd1-90be-4815-9aeb-9d15c4bd68fa",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C61-C62, C64-C65 regarding species differences. Both evaluations rate as UNCERTAIN. OpenEval notes lack of experimental validation for functional impacts and speculative nature of stability and evolutionary hypotheses. Peer reviewers express concern about broader significance and extension to other species including human.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    },
+    {
+      "id": "b75b2764-c1d6-4bee-9181-b8070f6608eb",
+      "submission_id": "8a1dc8dc-e2f0-4b5b-8687-30d4779f9dd2",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "9ff11942-e211-48bb-86db-40aa367dfa5e",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C1-C3, C8-C22 as SUPPORTED background knowledge with appropriate citations. No corresponding peer review evaluation found for these background/introductory claims, as peer reviewers focused on novel findings rather than established literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:16.621206Z"
+    }
+  ]
+}

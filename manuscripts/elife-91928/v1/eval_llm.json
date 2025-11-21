@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study recruited 46 right-handed participants (27 females, aged 18\u201328 years), excluded 10 due to data quality issues, resulting in a final sample of 36 participants. The study received ethics approval from Queen's University Research Ethics Board (CNS-019-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C4 provide complete and consistent information about participant recruitment, exclusion criteria, final sample size, and ethics approval. The arithmetic is correct (46-10=36), exclusion criteria are clearly defined, and ethics approval is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Participants performed a reward-based motor learning task with a baseline block (70 trials, no feedback) followed by a learning block (200 trials with score feedback). The task design isolated reward-based learning by eliminating visual feedback of finger trajectories, preventing error-based learning. Participants successfully increased their scores over the 200 learning trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5\u2013C11 describe the experimental design and behavioral results. The task structure is clearly defined with appropriate controls. The claim that only reward-based learning was possible (C8) is supported by the experimental design (no visual feedback), though the complete elimination of error-based learning is a strong assumption. Behavioral improvement (C10) is supported by Figure 1D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "BOLD time-series data were extracted using the Schaefer 1000 cortical parcellation and Harvard-Oxford striatal parcellation, and functional connectivity matrices were estimated for each epoch. A Riemannian manifold centering procedure was applied to remove subject-level variance, which successfully abolished subject-level clustering and revealed task-related structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12\u2013C18 describe the data extraction and preprocessing pipeline. The methods are well-documented with appropriate citations. The effectiveness of the centering procedure is demonstrated in Figure 2, showing clear abolishment of subject-level clustering. The rationale for centering (C15) is supported by multiple citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The top three principal components of the baseline manifold explain approximately 70% of variance and recapitulate the tripartite structure of brain organization, distinguishing visual, somatomotor, and default mode network regions along a processing hierarchy from unimodal to transmodal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C24 describe the baseline manifold structure. The quantitative result (70% variance explained) is clearly stated with figure reference. The interpretation of PCs replicating known brain architecture is supported by citations and consistent with prior literature. The tripartite structure is well-established in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Manifold eccentricity, computed as Euclidean distance from the manifold centroid, provides a measure of functional segregation versus integration. This interpretation is validated by strong correlations with graph-theoretic measures: positive correlations with node strength (r=0.88) and within-module degree (r=0.45), and negative correlation with participation coefficient (r=-0.74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25\u2013C29 define the eccentricity metric and validate its interpretation. The validation approach is sound, using established graph-theoretic measures. All correlations are statistically significant (p<0.001) and show expected patterns. The strong correlation with node strength (r=0.88) particularly supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "During early learning (baseline to early contrast), most brain regions showed manifold expansion (increased segregation), including sensorimotor areas, DAN regions, and DMN areas. However, posterior medial cortex and posterior angular gyrus showed manifold contraction (increased integration). No significant changes were observed in striatal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34\u2013C38 describe the primary findings for early learning. The results are supported by Figure 4A with appropriate statistical correction (FDR q<0.05). The null result for striatum (C38) is appropriately reported. The pattern of expansion and contraction is clearly documented across multiple brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "During late learning (early to late contrast), the pattern reversed: DMN regions showed contraction while PMC and posterior AG showed expansion. Salience/ventral attention network regions also showed expansion. Again, no significant striatal changes were observed, though right pallidum approached significance (p=0.01) but did not survive FDR correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39\u2013C43 describe late learning changes. The reversal pattern is clearly documented in Figure 4B. The null result for striatum is consistently reported with appropriate statistical detail (C43). The near-significant result for right pallidum is appropriately disclosed with exact p-value and corrected alpha threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Seed connectivity analysis of left MPFC revealed that its manifold expansion during early learning arose from increased within-DMN connectivity (segregation), while its contraction during late learning arose from increased connectivity with DAN sensorimotor areas (integration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44\u2013C47 provide mechanistic interpretation of MPFC eccentricity changes through seed connectivity analysis. The connectivity patterns (C44, C45) are supported by Figure 5A. The interpretations (C46, C47) logically follow from the connectivity data and are consistent with the eccentricity framework established earlier.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Left premotor cortex (PMd) showed increased connectivity with DAN and SalVentAttn networks and decreased connectivity with DMN during early learning, with this pattern reversing during late learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48\u2013C50 describe PMd connectivity changes supported by Figure 5B. The pattern is inverse to MPFC, showing sensorimotor regions coupling with attention networks early and DMN late. The reversal pattern strengthens the overall interpretation of network reconfiguration during learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Left posterior medial cortex (PMC) showed a unique pattern opposite to other regions: decreased within-DMN connectivity and increased connectivity with DAN and SalVentAttn during early learning (manifold contraction), reversing to increased within-DMN connectivity during late learning (manifold expansion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51\u2013C55 describe PMC's distinctive connectivity pattern supported by Figure 5C. The opposite pattern compared to other DMN regions is clearly documented. The interpretations (C54, C55) are consistent with the eccentricity framework and suggest a special coordinating role for PMC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study identifies a general pattern of network reconfiguration during learning: DAN sensorimotor areas couple with SalVentAttn network during early learning and switch to DMN coupling during late learning. Posteromedial cortex shows the opposite pattern, suggesting a coordinating role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30\u2013C33, C56\u2013C57 synthesize the main findings. The pattern is consistently supported across multiple analyses (whole-brain eccentricity, seed connectivity). The interpretation of PMC's coordinating role (C33) is speculative but reasonable given its unique pattern. This represents the core finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Subjects showed significant individual variation in motor learning ability. Functional PCA identified a single component capturing approximately 75% of variability in learning curves, providing a scalar measure of overall learning performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58\u2013C60 describe the behavioral analysis approach. The use of fPCA is appropriate for capturing temporal patterns in learning curves. The 75% variance explained indicates a dominant pattern of individual differences. The method is well-justified and properly implemented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Changes in DAN-A network eccentricity correlated with learning performance: greater contraction during early learning and greater expansion during late learning predicted better performance. This was driven by DAN-A connectivity with SalVentAttn-B during early learning and DMN-B during late learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61\u2013C65 describe brain-behavior relationships supported by Figure 7. The statistical approach using spin-test permutation with spatial autocorrelation correction is rigorous. The specificity to DAN-A (not DAN-B) is appropriately documented. The connectivity patterns (C63, C64) provide mechanistic insight into the performance relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C42",
+      "C43",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "No significant changes in striatal regions were observed during learning. The authors suggest this may reflect methodological limitations (coarse parcellation, small striatal size) rather than absence of striatal involvement, noting that cortical manifold structure was largely independent of striatal inclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C42\u2013C43, C92\u2013C94 address the null striatal findings. The null results are appropriately reported with statistical details. The methodological limitations are thoughtfully discussed (C92, C93). The independence of cortical manifold from striatal inclusion (C94, Figure 3\u2014supplement 2) supports the validity of the cortical findings despite the null striatal results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "fMRI data were preprocessed using fMRIPrep 20.1.1 with standard procedures including motion correction, slice-timing correction, coregistration, spatial normalization, and denoising with 34 motion and physiological regressors. Time series were filtered (high-pass 128s, low-pass 100s) and z-scored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95\u2013C109 document the preprocessing pipeline. The use of fMRIPrep is standard and appropriate. All preprocessing steps are clearly described with software versions and parameters. The 34-regressor denoising approach (24 motion + 10 aCompCor) is rigorous. The filtering parameters are reasonable for fMRI data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Functional connectivity matrices were estimated using Ledoit-Wolf estimator with equal-length epochs to avoid bias. Manifolds were constructed using PCA (selected for reliability over nonlinear methods) with row-wise thresholding (top 10%) and cosine similarity. Individual manifolds were aligned to baseline template using Procrustes alignment (average r=0.88). Statistical comparisons used FDR correction (q<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110\u2013C116 describe the manifold construction and statistical methods. The Ledoit-Wolf estimator is appropriate for high-dimensional covariance estimation. The choice of PCA over nonlinear methods is justified by citation (C113). The Procrustes alignment quality (r=0.88) indicates good reliability. Statistical correction is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Network-level correlations with behavior were tested using spatial autocorrelation-preserving null models (spin-test) to account for spatial structure in brain maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 describes the statistical approach for brain-behavior correlations. The spin-test method is state-of-the-art for controlling spatial autocorrelation in brain maps. The approach is properly cited and appropriately applied to network-level analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The introduction establishes that MPFC and striatum evaluate prediction errors for learning, that DMN was historically associated with task-negative activity but is now recognized to support demanding cognitive tasks, and that DMN's unique topographic position may enable coordination of distributed brain functions. Prior work showed DMN involvement in motor adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66\u2013C75 provide background context from prior literature. All claims are supported by appropriate citations. The characterization of DMN's evolving understanding (C68, C69) accurately reflects the literature. The topographic hypothesis (C70\u2013C72) is properly attributed. The prior motor adaptation finding (C75) provides direct motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The manifold approach, originally developed for neural population activity in macaques, has been successfully applied to human brain organization. SalVentAttn network regions are implicated in cognitive control, motivation, exploratory behavior, and responding to novel stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76\u2013C81 provide methodological and theoretical background. The manifold approach's origins and applications are properly cited (C76, C77). The characterization of SalVentAttn function (C78\u2013C81) is supported by appropriate citations and provides context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The discussion contextualizes findings within prior literature showing that early reward-guided learning involves more variable, exploratory behavior, and that DMN-premotor connectivity increases after rule learning. The results support the hypothesis that DMN-sensorimotor interactions enable memory-guided behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82\u2013C85 interpret the results in light of prior work. The connections to prior literature are appropriate and well-cited. The interpretation that DMN supports memory-guided behavior (C85) is consistent with the data showing late-learning DMN-sensorimotor coupling, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The discussion proposes that PMC's unique properties\u2014containing signals from across cortex, linked to reward processing and strategy selection, and capable of long-timescale integration\u2014position it to orchestrate the transition from exploration to exploitation during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86\u2013C91 propose a specific functional role for PMC. While the properties attributed to PMC (C86\u2013C89) are supported by citations, the proposed orchestrating role (C90, C91) is speculative. The data show PMC's unique connectivity pattern but do not directly test its causal role in coordinating network transitions. This interpretation, while plausible, requires additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The study establishes neural changes supporting reward-based motor learning and identifies distinct transitions in functional coupling between sensorimotor and transmodal cortex during behavioral adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118\u2013C119 state the main conclusions. These are well-supported by the comprehensive set of analyses showing systematic changes in network organization during learning. The identification of distinct early and late learning patterns with reversal of connectivity is a robust finding replicated across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  }
+]

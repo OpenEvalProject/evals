@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "DUX4 expression is significantly more prevalent in metastatic cancers (10-50% of advanced bladder, breast, kidney, prostate, and skin cancers) compared to primary tumors in TCGA cohorts. Metastatic tumors express full-length DUX4 transcripts at higher levels than primary cancers, and this expression is detectable by both poly(A)-selection and hybrid capture RNA-seq methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C32 provide converging evidence from multiple metastatic cancer cohorts showing higher DUX4 expression frequency and levels compared to TCGA primary tumors (Figure 1B,C). RNA-seq coverage analysis confirms full-length transcript expression (C27, Figure 1D), and methodological validation (C29-C31) demonstrates that findings are not technical artifacts from formalin-fixed tissue processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "DUX4 expression in metastatic urothelial carcinoma is associated with suppression of immune-related gene expression, including downregulation of IFN-\u03b3 signaling, MHC class I and II antigen presentation genes, T cell activation markers, and chemokines involved in immune cell recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 present comprehensive transcriptomic evidence from the IMvigor210 cohort showing that DUX4+ tumors have reduced expression of immune genes across multiple pathways (Figures 2A,B, 2C, 2D,E and supplements). GO enrichment analysis (C34-C35), gene signature analyses (C36, C41-C42), and individual gene expression measurements (C37-C39, C43-C44) all converge on the conclusion of immune suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46"
+    ],
+    "result": "DUX4 expression is significantly associated with immune cell exclusion phenotypes in urothelial carcinoma, with DUX4+ tumors showing higher proportions of immune-excluded or immune-desert phenotypes and decreased PD-L1 expression on both tumor and immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45-C46 are supported by immunohistochemistry data from the IMvigor210 cohort (Figures 2F, 2G,H and supplements). The IHC analysis directly validates the transcriptomic findings by showing reduced CD8+ T cell infiltration and lower PD-L1 protein levels in DUX4+ tumors, with statistically significant differences (multinomial proportion tests).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C49"
+    ],
+    "result": "DUX4 expression is significantly associated with decreased objective response to PD-L1 blockade in urothelial carcinoma patients, as measured by RECIST criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C49 are supported by clinical response data from the IMvigor210 trial (Figure 3A). The multinomial proportion test shows statistically significant differences in RECIST response categories between DUX4+ and DUX4- patients, with DUX4+ patients having lower rates of complete and partial responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "DUX4 expression is a significant independent predictor of survival in ICI-treated urothelial carcinoma patients after controlling for tumor mutational burden and clinical variables, with DUX4+ status associated with a 3.2-fold increased risk of death and over 12 months reduction in median survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C51-C60 present rigorous survival analyses using multivariate Cox proportional hazards regression (Figure 4A) showing DUX4 remains significant after controlling for TMB, ECOG PS, and other covariates. Goodness-of-fit metrics (BIC, AIC, C-index in C56, Figure 4B) and likelihood ratio tests (C58) demonstrate that adding DUX4 improves model performance. Risk stratification analyses (C59-C60) validate predictive utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Random Survival Forest modeling confirms DUX4 expression as an important predictor of survival in ICI-treated patients, with DUX4+ status associated with approximately 20% decrease in 1- and 1.5-year survival probabilities, 53% increase in mortality, and at least 12.5 months reduction in median survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C72 present comprehensive RSF analysis with appropriate model validation (OOB error 38.4%, test error 32.6% in C61-C62). Multiple feature importance metrics converge on identifying DUX4 as a major contributor (Shapley values, permutation importance, minimal depth in C66-C67). Partial dependence analyses (C69-C72, Figure 5F) quantify the absolute effect of DUX4 on survival outcomes, with predictions validated against Kaplan-Meier estimates (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C77",
+      "C78"
+    ],
+    "result": "DUX4 expression in metastatic cancers is associated with reduced anti-tumor immunity and decreased patient survival under ICI treatment, consistent with DUX4's known mechanism of STAT1 inhibition and IFN-\u03b3 pathway suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C77-C78 synthesize the manuscript's findings with prior mechanistic knowledge. The association with reduced immunity (C73) is supported by the transcriptomic and IHC data (Results 2-3), while decreased survival (C74) is supported by the survival analyses (Results 4-6). The mechanistic interpretation (C77-C78) is supported by RNA-seq coverage showing full-length transcripts (Figure 1D) and citations to prior studies demonstrating STAT1 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Time-dependent analysis reveals that ECOG Performance Status has the strongest impact on early survival while DUX4 expression effects are most prominent at later timepoints, suggesting DUX4 principally affects long-term survival outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by time-dependent Shapley value analysis (Figure 5D) showing temporal variation in feature importance. The finding that ECOG PS dominates early predictions while DUX4 becomes more important later is a novel insight from the RSF modeling. This is corroborated by citations to prior studies (C80-C81) showing ECOG PS impacts early survival in ICI-treated patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Higher tumor mutational burden (TMB) is linked to improved survival outcomes in the urothelial carcinoma cohort treated with PD-L1 blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by Kaplan-Meier survival analysis (Figure 3B) showing statistically significant survival differences between high and low TMB groups. This finding is consistent with established knowledge about TMB as a predictor of ICI response and serves as a positive control validating the cohort and analytical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "DUX4 expression may serve as a pan-cancer biomarker for ICI resistance, with potential clinical utility for patient stratification through binary categorization (e.g., via immunohistochemistry).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C85 are partially speculative. While C82-C83 cite prior work and present gene expression data (Figure 2B) showing downregulation of other checkpoint genes, the pan-cancer applicability is inferred rather than directly demonstrated. C84 is supported by the survival analyses in urothelial carcinoma, but C85 is explicitly speculative about clinical utility of IHC-based screening. Additional validation in other cancer types and prospective clinical studies would be needed to fully support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "DUX4-positive samples are defined as those with expression >1 TPM, while for survival analyses, DUX4-negative samples are defined as <0.25 TPM to avoid misclassifications due to RNA-seq sensitivity limitations at very low expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 describe methodological decisions for defining DUX4 expression status. The >1 TPM threshold (C87) is justified by comparison to embryonic expression levels (2-10 TPM, C86). The more stringent <0.25 TPM threshold for survival analyses (C88-C89) is a reasonable approach to avoid misclassification, though it excludes 126 patients. The rationale is supported by citation to prior work on RNA-seq quantification limits (Mortazavi et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C33",
+      "C40",
+      "C47",
+      "C48",
+      "C75",
+      "C76",
+      "C86"
+    ],
+    "result": "Background claims establishing prior knowledge about ICI mechanisms, DUX4 biology, and the IMvigor210 trial cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C24, C33, C40, C47-C48, C75-C76, C86 provide background context supported by citations to prior literature. These establish: (1) ICI success and resistance mechanisms (C7-C16); (2) DUX4 expression in primary cancers and embryos (C1, C17-C24, C86); (3) the IMvigor210 cohort characteristics (C33); and (4) the importance of IFN-\u03b3 signaling and PD-L1 expression for ICI response (C40, C47-C48, C75-C76). All are appropriately cited and provide necessary context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

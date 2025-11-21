@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript establishes the epidemiological context for malaria in Tanzania and Zanzibar, noting that Tanzania accounts for 3% of global malaria cases with heterogeneous transmission, while Zanzibar is a pre-elimination setting with low-level seasonal transmission maintained by effective control measures. Despite these measures, elimination has been difficult due to importation from mainland Tanzania and Kenya, ongoing local transmission despite vector control, and a reservoir of asymptomatic infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by appropriate citations to prior work (Alegana et al., 2021; World Health Organization, 2022; Bj\u00f6rkman et al., 2019; Le Menach et al., 2011; and others). These claims establish the epidemiological background and are consistent with the cited literature. The claims are appropriately attributed to prior knowledge rather than presented as novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript describes the rationale for using parasite genomics to study malaria epidemiology, noting that genomics has been used in other low-transmission settings and that previous whole-genome sequencing work in this region showed highly similar populations within regions and highly related parasite pairs between locations. However, previous work lacked sufficient samples to assess transmission within Zanzibar, motivating the current study using molecular inversion probes (MIPs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 appropriately cite prior work (Neafsey et al., 2021; Chang et al., 2019; Fola et al., 2023; Morgan et al., 2020; Aydemir et al., 2018) and accurately describe the rationale and methodological foundation for the current study. The limitation of previous work (C12) is acknowledged and provides clear justification for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study analyzed 391 samples collected from coastal Tanzania (178) and Zanzibar (213) during 2016-2018, including both asymptomatic and symptomatic infections. Samples were geolocalized to shehias in Zanzibar and collected from Bagamoyo district on the mainland. After filtering and quality control, 282 samples at 1270 loci were retained for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 describe the study design, sample collection, and data processing. These are supported by appropriate citations (Msellem et al., 2020; Topazian et al., 2022) and references to Table 1 and Figure 1\u2014figure supplement 1. The sample sizes and filtering steps are clearly documented, though the manuscript would benefit from more detail on quality control thresholds and their justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Parasite populations from coastal mainland Tanzania and Zanzibar remain highly related overall, with Zanzibari parasites closely related to other East African parasites. However, Zanzibari parasites showed higher within-population than between-population IBD and evidence of microstructure on the archipelago. PCA showed little population differentiation, but K-means clustering revealed more highly related pairs within clusters than between clusters. No parasite pairs showed IBD >0.20 between Zanzibar and coastal Tanzania or between Unguja and Pemba.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C31-C39 are supported by multiple analyses including PCA (Figure 1A), K-means clustering (Figure 2), and IBD comparisons (Figures 2, 4\u2014figure supplements 3 and 4). The finding of high overall relatedness but population microstructure is well-supported by the data. However, the interpretation that IBD >0.20 represents meaningful differentiation could be better justified with statistical testing or comparison to expected values under different transmission scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "DAPC analysis showed geographic differentiation of parasites, with less variation near the port of Zanzibar town and more differentiation in districts further from the port. Isolation by distance analysis showed rapid decay of relatedness over short geographic distances in Zanzibar overall and within Unguja, but in Pemba, mean IBD remained at a relatively high level even at longer distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by DAPC (Figure 1B) and isolation by distance analyses (Figure 3A-C, Figure 3\u2014figure supplement 1). The contrasting patterns between Unguja and Pemba are clearly shown in the data. However, the manuscript does not provide statistical tests for the significance of the isolation by distance patterns or confidence intervals for the decay rates, which would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Within Zanzibar, parasite clones are shared within and between shehias, suggesting local outbreaks. In Unguja, multiple identical or near-identical parasite pairs are shared over longer distances, suggesting longer distance gene flow. In northern Pemba, a large cluster of highly related parasites was identified across six shehias, with network analysis revealing two highly related clusters connected by an intermediate parasite (FMH42), suggesting recombination on the archipelago and sustained transmission from a seeding event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by network analyses and IBD data (Figure 4A-C, Figure 4\u2014figure supplements 1-2). The identification of the Pemba outbreak cluster is particularly well-supported by the network structure showing IBD >0.99 within clusters. However, the inference that FMH42 represents recombination (C48) is speculative and would benefit from additional genetic evidence or simulation studies to rule out alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Asymptomatic infections demonstrated greater complexity of infection (COI) than symptomatic infections on both the coastal mainland (mean COI 2.5 vs 1.7, p<0.05) and in Zanzibar (mean COI 2.2 vs 1.7, p=0.05). A similar pattern was seen with Fws, with lower Fws in asymptomatic samples consistent with higher within-host complexity. Despite these differences, parasites from asymptomatic and symptomatic infections clustered together in PCA, suggesting similar core genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by statistical analyses (Wilcoxon-Mann-Whitney tests) and visualization (Figure 5A-B, Figure 1A). The p-values are reported and the findings are consistent with some prior studies (cited in C88). However, the p-value for Zanzibar (p=0.05) is at the threshold of significance, and the manuscript does not report effect sizes or correct for multiple testing. The interpretation that core genomes are similar (C53) is reasonable but limited by the fact that the MIP panel targets only core genome SNPs and does not assess hypervariable regions (acknowledged in C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Drug resistance mutations did not vary substantially between Zanzibar and coastal Tanzania populations. High prevalence (\u22650.90) was observed for five mutations associated with sulfadoxine/pyrimethamine resistance. Pfcrt mutations associated with chloroquine and amodiaquine resistance were present at approximately 0.05 prevalence. Wild-type Pfmdr1-N86 and D1246 were dominant at 0.99 prevalence, associated with reduced lumefantrine susceptibility. No WHO-validated or candidate Pfk13 polymorphisms associated with artemisinin resistance were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by data presented in Table 2 and appropriate citations for the functional significance of mutations (Djimd\u00e9 et al., 2001; Holmgren et al., 2006; Sisowath et al., 2005). The prevalence estimates include 95% confidence intervals calculated using the Pearson-Klopper method. However, the manuscript does not report the number of samples successfully genotyped for each locus (though this is in Table 2), and Figure 1\u2014figure supplement 3B shows variable coverage across loci, which could affect the reliability of prevalence estimates for some mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The study concludes that parasites between Zanzibar and coastal mainland Tanzania remain highly related, but population microstructure on the island reflects ongoing low-level transmission in Zanzibar, partially driven by asymptomatic infections that potentially constitute a long-term reservoir. This microstructure is likely the result of continued pressure from effective control measures. Parasite genomics allows parsing of differences in parasite populations and reveals substructure in low-transmission areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 represent the main conclusions of the study and are supported by the collective evidence from IBD analyses, isolation by distance, network analyses, and COI comparisons. The interpretation that microstructure results from control measures (C62) is reasonable but somewhat speculative, as the study does not directly test this hypothesis or compare to areas with different control intensities. The conclusion about asymptomatic infections as a reservoir (C61) is supported by the COI data but would be strengthened by longitudinal data or transmission studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study's findings are contextualized with a recent study identifying 'hotspot' shehias near Zanzibar town and northern Pemba, which overlapped with areas of high IBD in this study. The authors argue that areas of substructure represent parasites that differentiated in relative isolation and are important targets for intervention. They recommend targeted interventions including mass drug administration and vector control in isolated pockets, along with measures to prevent imported malaria, to accelerate progress toward elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C71 integrate the study's findings with prior work (Bisanzio et al., 2023) and make recommendations for intervention strategies. While the overlap with hotspot shehias (C65) provides external validation, the recommendations for targeted interventions (C68, C71) are based on inference rather than direct evidence from this study. The citation of a negative trial in Kenya (C67, Bousema et al., 2016) actually argues against the effectiveness of hotspot targeting, which somewhat contradicts the recommendation. The recommendations would be strengthened by modeling studies or pilot intervention data specific to Zanzibar's context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study discusses that parasite populations within Zanzibar may be more isolated than expected, allowing differentiation, which may indicate effective local malaria control with continued micro-transmission. Despite overall genetic similarity, no parasite pairs with IBD >0.20 were found between coastal mainland and Zanzibar, preventing identification of specific importation events due to convenience sampling, low sample numbers, and lack of sampling from all mainland travel hubs. However, clear transmission of highly related parasites (IBD >0.99) was observed within each population, with highly related parasites in Zanzibar mainly occurring within 20-30 km.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 provide important discussion of the study's findings and limitations. The acknowledgment of study design limitations (C76) is appropriate and well-supported by citation to Bisanzio et al., 2023. The finding of within-population transmission (C78) and the spatial scale of relatedness (C79) are supported by the data. The comparison to previous work (C80, Morgan et al., 2020) provides validation. However, the interpretation that isolation indicates effective control (C73) is speculative and could be tested with temporal data or comparison to areas with different control intensities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The network of highly related P. falciparum parasites from six shehias in north Pemba provides an example of likely recent near-clonal transmission consistent with an outbreak. A recent independent study (Holzschuh et al., 2023) also found local population microstructure in Pemba and near-clonal parasites in the same district (Micheweni). The authors conclude that small clusters potentially drive much of the malaria transmission within the archipelago through routine human movement or mosquito travel, with less frequent longer distance transmission events due to longer range human migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are well-supported by the network analysis (Figure 4C) and external validation from an independent study (Holzschuh et al., 2023). The convergence of findings from two independent studies strengthens the conclusions. However, the inference about mechanisms of transmission (C84, C85) is speculative and based on spatial patterns rather than direct evidence of human movement or mosquito dispersal. The citation to Huestis et al., 2019 regarding mosquito travel is appropriate but the relevance to this specific setting could be better justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study discusses the biology of asymptomatic parasitemia, noting it is common globally and increasingly important in Zanzibar, though the underlying biology in low-transmission settings remains unclear. The finding of higher COI in asymptomatic infections is consistent with some prior studies but contradicts others. Unlike a Zambian study suggesting genetic differences between asymptomatic and symptomatic infections, this study found no differential clustering based on clinical status using core genome SNPs. However, the authors acknowledge that the MIP approach does not address variation in hypervariable gene families or gene expression differences, which would require long-read sequencing and transcriptional profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 provide appropriate context from prior literature (Lindblade et al., 2013; Morris et al., 2015; Bj\u00f6rkman and Morris, 2020; Collins et al., 2022; and others) and acknowledge the mixed findings in the literature. The comparison to the Zambian study (C91-C92) appropriately notes methodological differences. The acknowledgment of methodological limitations (C94) and suggestions for future work (C95) are appropriate. The finding of no differential clustering (C93) is supported by Figure 1A, though the interpretation is limited by the scope of the genomic data analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "While no artemisinin resistance mutations were observed in Pfk13, other antimalarial-resistant mutations of concern were found. High prevalence of sulfadoxine/pyrimethamine resistance mutations was observed, and prevalence of amodiaquine resistance polymorphisms was similar to previous reports. Wild-type Pfmdr1-N86 was dominant, raising concerns about reduced lumefantrine susceptibility. The authors recommend continued surveillance given the emergence of artemisinin resistance mutations in East Africa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 are supported by data in Table 2 and appropriate citations (Msellem et al., 2020; Moser et al., 2021). The finding of no artemisinin resistance mutations is important for public health and is clearly stated. The concern about lumefantrine susceptibility (C99) is appropriate given the prevalence data. The recommendation for continued surveillance (C100) is reasonable given the regional context, though it is somewhat speculative as it is based on potential future emergence rather than current data from this study.",
+    "result_type": "MAJOR"
+  }
+]

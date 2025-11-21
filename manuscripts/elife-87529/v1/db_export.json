@@ -1,0 +1,2114 @@
+{
+  "submission": {
+    "id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:45:21.098714Z",
+    "updated_at": "2025-11-20T22:45:21.098714Z"
+  },
+  "content": [
+    {
+      "id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "content_type": "manuscript",
+      "content_text": "# Therapeutic doses of ketamine acutely attenuate the aversive effect of losses during decision-making\n\n## Authors\n\n- Mariann Oemisch<sup>1</sup>\n- Hyojung Seo<sup>2</sup> ([ORCID: 0000-0002-2928-9018](https://orcid.org/0000-0002-2928-9018)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n2. Department of Psychiatry and Neuroscience, Yale School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe discovery of rapid-acting antidepressant, ketamine has opened a pathway to a new generation of treatments for depression, and inspired neuroscientific investigation based on a new perspective that non-adaptive changes in the intrinsic excitatory and inhibitory circuitry might underlie the pathophysiology of depression. Nevertheless, it still remains largely unknown how the hypothesized molecular and synaptic levels of changes in the circuitry might mediate behavioral and neuropsychological changes underlying depression, and how ketamine might restore adaptive behavior. Here, we used computational models to analyze behavioral changes induced by therapeutic doses of ketamine, while rhesus macaques were iteratively making decisions based on gains and losses of tokens. When administered intramuscularly or intranasally, ketamine reduced the aversiveness of undesirable outcomes such as losses of tokens without significantly affecting the evaluation of gains, behavioral perseveration, motivation, and other cognitive aspects of learning such as temporal credit assignment and time scales of choice and outcome memory. Ketamine\u2019s potentially antidepressant effect was separable from other side effects such as fixation errors, which unlike outcome evaluation, was readily countered with strong motivation to avoid errors. We discuss how the acute effect of ketamine to reduce the initial impact of negative events could potentially mediate longer-term antidepressant effects through mitigating the cumulative effect of those events produced by slowly decaying memory, and how the disruption-resistant affective memory might pose challenges in treating depression. Our study also invites future investigations on ketamine\u2019s antidepressant action over diverse mood states and with affective events exerting their impacts at diverse time scales.\n\n## Introduction\n\nDepression is a debilitating mental illness that causes enormous personal sufferings as well as societal and economic burden (Whiteford et al., 2013; Greenberg et al., 2021; Mrazek et al., 2014). The discovery of ketamine, a non-competitive N-methyl-D-aspartate (NMDA) receptor antagonist as a rapid-acting antidepressant, inspired extensive research to understand the mechanisms of ketamine\u2019s action as well as a new perspective on the neurobiology of depression that depression might reflect non-adaptive changes in the glutamatergic and GABA (gamma aminobutyric acid)-ergic signal transmission of the prefrontal and limbic system in response to environmental stress and adversity (Berman et al., 2000; Zarate et al., 2006; Sanacora et al., 2008; Lapidus et al., 2014; Krystal et al., 2013; Abdallah et al., 2015; Duman et al., 2016; Murrough et al., 2017; Krystal et al., 2019; Duman et al., 2019). Despite recent progress in understanding the mechanisms of ketamine\u2019s antidepressant action at cellular, synaptic, and network levels, many questions remain regarding enhancing the specificity to target depressive symptoms without undesirable side effects as well as long-term safety for repeated dosing (Krystal et al., 1994; Sanacora et al., 2017; Short et al., 2018; Bonaventura et al., 2021).\n\nA major gap in our knowledge that hampers the effort to design novel treatments with high specificity and low off-target effect lies at the functional-systems level to link cellular and synaptic phenomena to physiological and behavioral processes that directly cause the symptoms of depression. In light of symptomatic heterogeneity within the diagnostic category of mental disorders including depression, the importance of integrative and comprehensive analyses with regard to multiple functional domains/systems has been recognized to promote interpretable and translatable results from pre-clinical and clinical research (Cuthbert, 2014; Kozak and Cuthbert, 2016). Nevertheless, this type of analyses and results for assessing the behavioral effect of ketamine\u2019s antidepressant action have seldom been available from the behavioral tests prevalently used in rodents (e.g. forced swim test, sucrose preference test, etc.) or self-reports from human subjects/patients. Another type of scarce data is early behavioral signs of ketamine\u2019s action that might mediate and/or predict its longer-term effects. Ketamine has shown to induce rapid-onset (<1 hr) cellular, molecular, physiological, and connectivity changes that are thought to reflect and/or mediate its antidepressant action (Li et al., 2010; Yang et al., 2018; Al Shweiki et al., 2020; Grimm et al., 2015; Scheidegger et al., 2016; Gould et al., 2019). In contrast, the acute behavioral effect that can be indicative of and/or predict longer-term effects has been hard to isolate from dissociative side effects.\n\nHere, we assessed the effects of therapeutic doses of ketamine (0.5\u20131 mg/kg) administered intramuscularly (IM) or intranasally (IN) on cognitive, affective, and motivational aspects of learning and decision-making. Three rhesus monkeys performed a token-based biased matching pennies (BMP) game against a computerized opponent in which they gained or lost tokens as the outcome of their decisions (Seo and Lee, 2009; Seo et al., 2014). We found that ketamine acutely reduced the adverse effect of undesirable outcomes such as losses of tokens, which was independent of other side effects such as ocular nystagmus. However, ketamine did not significantly change animals\u2019 motivation to earn reward, behavioral perseveration, or other cognitive aspects of learning and memory. These results constitute a rare report of an acute effect of therapeutic dose of ketamine on the processing of affectively negative events during dynamic decision-making. Our study also demonstrates the sensitivity and the potential of the non-human primate model in assessing behavioral and systems-level mechanisms of antidepressant action as well as investigating the pathophysiology of depression when combined with recently developed tools for large-scale neural recording and circuit manipulation.\n\n## Results\n\nThree rhesus monkeys were trained to play a token-based BMP game against a computerized opponent, in which their choice typically depended on the outcomes obtained from each choice in the past trials (Figure 1A, B). In the control sessions where saline was administered, animals tended to repeat the choice that yielded a token, while switching away from the choice that led to non-gain outcomes, with a stronger tendency to switch after loss than neutral outcome (i.e. zero token) (Equation 1; Figure 1C). The reinforcing and punishing effects of gain and non-gain outcomes also decayed exponentially over time, with the recent outcomes exerting a larger effect than remote ones. Ketamine selectively reduced the punishing effect of non-gain outcomes, with significantly larger change being induced after loss than neutral outcome (Figure 1C). In addition, the ketamine-induced modulation was larger for the effect of recent than remote outcomes (analysis of variance [ANOVA], three-way interaction among outcome, trial lag, and drug condition, F(8, 1964) = 4.05, F(8, 1649) = 4.46, and F(8, 509) = 3.62 for animal P, Y, and B, respectively. p < 0.001 in all animals for IM administration of 0.5 mg/kg; F(8, 1229) = 4.89, p < 0.001 in animal P; F(8, 389) = 1.89, p = 0.06 in Y; F(8, 1002) = 3.27, p = 0.001 in B for IN administration of 1 mg/kg). 0.25 mg/kg of IM-administered and 0.5 mg/kg of IN-administered ketamine produced qualitatively similar results (Figure 1\u2014figure supplement 1). We focused our main analyses on the data collected with 0.5 mg/kg IM- and 1 mg/kg IN-administered ketamine, which produced comparable plasma concentration and behavioral effects (Figure 2). Plasma concentration and its time course over 60 min were also comparable to those measured after 0.5 mg/kg in human subjects (Zarate et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig1-v1.jpg)\n\n**Figure 1.:** (A) Temporal sequence of trial events. Gray cross indicates the target that the animal was required to fixate during each epoch. Each trial began with the animal\u2019s gaze on the fixation target displayed on the center of a computer monitor for 0.5 s. Solid red disks around the fixation target indicated the tokens owned by the animal, namely asset, with empty disks serving as placeholders for the tokens to be acquired for exchange with juice reward. After two green disks were displayed for 0.5 s at the diametrically opposed positions along the horizontal meridian, the fixation target was extinguished signaling the animal to indicate its choice by shifting gaze to one of the two green disks. After 0.5 s of fixation, a feedback ring appeared around the chosen target with its color indicating the choice outcome, followed by the corresponding change in tokens. Once the animal collected six tokens, they were automatically exchanged with six drops of apple juice. After juice reward, the animal began the subsequent trial with two to four free tokens. Tokens and placeholders stayed on the screen throughout the trial and inter-trial interval. (B) Payoff matrix of BMP. (C) Coefficients from logistic regression models applied separately to the data from saline (sal) and ketamine (ket) sessions with intramuscular (IM, filled symbols) and intranasal (IN, empty symbols) administration. Standard errors are shown as horizontal bars above/below each coefficient. Lines are exponential functions best fit to the coefficients from saline (solid) and ketamine (dotted) sessions, and those from IM (thick) and IN (thin) sessions. Bars at the top of each panel indicate that the difference between saline and ketamine sessions is statistically significant with the horizontal position and color of each bar coding trial lag and outcome (same color scheme as that of saline sessions), respectively (independent sample t-test, p < 0.05; IM and IN sessions were combined). For IM sessions, N=52 (Sal) and 17 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=25 (Sal) and 9 (Ket) for monkey B. For IN sessions, N=23 (Sal) and 13 (Ket) for monkey P; N=16 (Sal) and 10 (Ket) for monkey Y; N=19 (Sal) and 8 (Ket) for monkey B.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Regression coefficients reflecting the effects of gain, neutral (zero token), and loss outcomes obtained in the past trials are plotted. Solid and dotted lines represent data from saline and ketamine sessions, respectively. Solid (empty) symbols indicate that the corresponding coefficients are (not) significantly different from zero (one-sample t-test, p < 0.05). * indicates that the coefficients from ketamine and saline sessions are significantly different for corresponding trial lag of outcome (independent sample t-test, p < 0.05). Standard error is shown as horizontal bars above/below each coefficient. For IM sessions, N=50 (Sal) and 14 (Ket) for monkey P; N=36 (Sal) and 10 (Ket) for monkey Y. For IN sessions, N=34 (Sal) and 12 (Ket) for monkey P; N=28 (Sal) and 12 (Ket) for monkey B.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig2-v1.jpg)\n\n**Figure 2.:** Dotted lines indicate the data from individual sessions, and dotted lines for average across individual sessions. Blood sample was taken every 20 min after injection.\n\nOutcome-dependent choice behavior and its modulation by ketamine were also parametrically modeled by exponential function, in which the initial impact of each outcome at the time of delivery gradually decayed over subsequent trials (Equation 2; Figure 1C). Ketamine significantly reduced initial amplitude/impact of non-gain outcomes ($b_{0}^{k}$) consistently in all three animals, and with both IM ($b_{0}^{k}$ = 0.45 (P), 0.63 (Y), 1.36 (B) for loss, t-test, p < $10^{-11}$ for all animals; $b_{0}^{k}$ = 0.28 (P), 0.58 (Y), 0.61 (B) for neutral outcome, p < $10^{-5}$ for all animals) and IN administration ($b_{0}^{k}$ = 0.29 (P), 0.56 (Y), 1.36 (B) for loss, p <  $10^{-11}$ for all animals; $b_{0}^{k}$ = 0.22 (P), 0.31 (Y), 0.83 (B) for neutral outcome, p < 0.001 for all animals). Ketamine did not significantly modulate the time constant of decay, and the modulation of initial impact was sufficient to explain the behavioral phenomena.\n\nDependence of choice on the cumulative effect of temporally discounted past outcomes is the signature of reinforcement learning (RL) (Lee et al., 2012). We used RL models to gain further insights into the possible mechanisms underlying ketamine-induced behavioral modulation (see Materials and methods). We first determined the variant/class of RL model that best explained the animals\u2019 choice behavior under normal conditions (i.e. saline sessions) (Table 1). The differential forgetting (DF) model best fit the data in all three animals, in which the value functions of chosen and unchosen action decayed at different rates, with forgetting being slower for chosen than unchosen action (Figure 3 and Table 3).\n\n**Table 1.**\n Reinforcement learning models for normal behavior during saline sessions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th></th>\n      <th>Value update</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Q-learning (Q)</td>\n      <td rowspan=\"2\"></td>\n      <td>Qt+1A=\u03b1F\u2219QtA+1-\u03b1F\u2219Rt , if A is chosen.</td>\n    </tr>\n    <tr>\n      <td>Rt = 1, 0, \u22121 for gain, neutral, and loss, respectively.</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Q-learning with subjective outcome evaluation(QSE)</td>\n      <td rowspan=\"2\"></td>\n      <td>Qt+1A=\u03b1F\u2219QtA+\u2206t , if A is chosen.</td>\n    </tr>\n    <tr>\n      <td>\u2206t = \u2206G , \u2206N , \u2206L for gain, neutral, and loss (QSE).\u2206N = 0 (QSE-R)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Differential forgetting(DF)</td>\n      <td rowspan=\"2\"></td>\n      <td>Qt+1A=\u03b1F-C\u2219QtA+\u2206t , if A is chosen.Qt+1A=\u03b1F-UC\u2219QtA , if A is not chosen.</td>\n    </tr>\n    <tr>\n      <td>\u2206t = \u2206G , \u2206N , \u2206L for gain, neutral, and loss (DF).\u2206N = 0 (DF-R)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Non-differential forgetting (NDF)</td>\n      <td rowspan=\"2\"></td>\n      <td>Qt+1A=\u03b1F\u2219QtA+\u2206t , if A is chosen.Qt+1A=\u03b1F\u2219QtA , if A is not chosen.</td>\n    </tr>\n    <tr>\n      <td>\u2206t = \u2206G , \u2206N , \u2206L for gain, neutral, and loss (NDF).\u2206N = 0 (NDF-R)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">DF with asset-gated outcome evaluation(DF-A)</td>\n      <td rowspan=\"2\"></td>\n      <td>Qt+1A=\u03b1F-C\u2219QtA+\u03bb\u2219assett\u2219Rt , if A is chosen.Qt+1A=\u03b1F-UC\u2219QtA , if A is not chosen.</td>\n    </tr>\n    <tr>\n      <td>Rt = 1, 0, \u22121 for gain, neutral, and loss, respectively.</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig3-v1.jpg)\n\n**Figure 3.:** Each row shows free (filled circles), unused (empty circles), and fixed (specific values) parameters of a variant of reinforcement learning (RL) model. For the details of RL models and parameters, see Table 1. Heat map on the right represents natural logarithm of differential BIC (Bayesian information criterion) of each variant from the best model. Best model for each animal is indicated by check (\u221a) mark. Q(standard): standard Q-learning model; Q-SE: Q-learning with subjective outcome evaluation; DF: differential forgetting model; DF-R: differential forgetting with neutral outcome being the reference point; NDF: non-differential forgetting model; NDF-R: non-differential forgetting model with neutral outcome being the reference point; NDF-A: non-differential forgetting model with asset-gated outcome evaluation.\n\nBuilding on the best model explaining normal behavior \u2013 the DF model, we asked how ketamine (0.5 mg/kg, IM) modulated the parameters of this model by testing variants of DF models, in each of which a different subset of parameters of the model were allowed to vary/deviate freely from the baseline parameters estimated from saline sessions (Table 2).\n\n**Table 2.**\n Reinforcement learning models for ketamine-induced modulation of choice behavior.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>K-model</th>\n      <th>Hypothesis</th>\n      <th>Model parameters</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Value model</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>Common modulation of LR/value for non-gain outcomes</td>\n      <td>\u2206t = \u2206NS+k, \u2206LS+k, for neutral and loss outcomes, respectively.</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Differential modulation of LR/value for non-gain outcome</td>\n      <td>\u2206t = \u2206NS+k1 , \u2206LS+k2 , for neutral and loss outcomes, respectively.</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Differential modulation of LR/value for gain vs. non-gain outcome</td>\n      <td>\u2206t = \u2206GS+k1 , \u2206NS+k2 , \u2206LS+k2 , for gain, neutral, and loss outcomes.</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td>Differential modulation of LR/value for all the outcomes</td>\n      <td>\u2206t = \u2206GK , \u2206NK , \u2206LK , for gain, neutral, and loss outcomes, respectively.</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Memory model</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td>Differential modulation of forgetting rate for chosen and unchosen actions</td>\n      <td>\u03b1F-CK , \u03b1F-UCK for chosen and unchosen action, respectively.</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Perseveration model</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td>Modulation of perseveration tendency</td>\n      <td>XtK=1-\u03b5\u2219QtR-QtL+\u03b5\u2219ItCItC = 1 (\u22121), if right (left) target was chosen at trial t.</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td>Modulation of LR/value and perseveration</td>\n      <td>Model 4 + model 6</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Temporal credit assignment (TCA) model</td>\n    </tr>\n    <tr>\n      <td>8</td>\n      <td>Increase mis-assignment</td>\n      <td>XtK=QtR-QtL+\u03c91\u2219It-2c\u2219\u2206t-1+ \u03c92\u2219It-3c\u2219\u2206t-1 + \u03c93\u2219It-4c\u2219\u2206t-1ItC = 1 (\u22121), if right (left) target was chosen at trial t.\u2206ts = \u2206GS , \u2206NS , \u2206LS for gain, neutral, and loss t trial t.</td>\n    </tr>\n    <tr>\n      <td>9</td>\n      <td>Increase spread</td>\n      <td>XtK=QtR-QtL+\u03c91\u2219It-1c\u2219\u2206t-2+ \u03c92\u2219It-1c\u2219\u2206t-3 + \u03c93\u2219It-1c\u2219\u2206t-4ItC = 1 (\u22121), if right (left) target was chosen at trial t.\u2206ts = \u2206GS , \u2206NS , \u2206LS for gain, neutral, and loss at trial t.</td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>Increase statistical learning (SL)</td>\n      <td>XtK=QtR-QtL+\u03c91\u22c5I(|rFreqt|&gt;\u03c4)\u22c5rFreqt\u22c5avg\u0394trFreqt=FreqR,t-FreqL,t,FreqA,t=\u03c1*FreqA,t-1+IchosenI(|rFreqt|\u2265\u03c4)=1(0),if|rFreqt|\u2265(&lt;)\u03c4avg\u2206t=\u03c6*avg\u2206t-1+\u2206tS\u2206ts = \u2206GS , \u2206NS , \u2206LS for gain, neutral, and loss at trial t.</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"2\">Motivation model</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>Modulation of asset-gated outcome evaluation</td>\n      <td>Qt+1A=\u03b1F-CS\u2219QtA+\u03bb\u2219\u03b1LS\u2219assett\u2219\u2206tS , if A is chosen.Qt+1A=\u03b1F-UCS\u2219QtA , if A is not chosen.\u2206tS = \u2206GS , \u2206NS , \u2206LS for gain, neutral, and loss at trial t.</td>\n    </tr>\n  </tbody>\n</table>\n\nIn all three animals, the model incorporating valence-dependent change in outcome evaluation best fit the choice data from ketamine sessions with (K-model 7 in the parenthesis, P) or without (K-model 4, P and Y/B) additional change in the tendency of choice perseveration (Figure 4 and Table 3). Under ketamine, value update increased positively following all outcomes, thus increasing overall probability of repeating the same choice or namely, choice perseveration. However, the change was larger for non-gain outcomes, with the largest modulation after loss, consistent with the results from our model comparison that the model including only a perseveration component performed worse than the best model in all three animals (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig4-v1.jpg)\n\n**Figure 4.:** Each row shows fixed (gray-filled circles), free (colored circles), and unused (empty circles) parameters of a variant of differential forgetting (DF) model. For the details of each model, see Table 2. \u03b8 represents a set of parameters added to a particular variant of DF model, and the number inside colored circles indicate the number of added parameters (>1). For the details of each model, see Table 2. Heat map on the right represents natural logarithm of differential BIC (Bayesian information criterion) of each variant from the best model. Best model for each animal is indicated by check (\u221a) mark. DF(saline): differential forgetting model fit to the data from saline session; Common mod. non-gain: common modulation of non-gain outcome evaluation; Separate mod. neutral vs. loss: differential modulation of neutral and loss outcome evaluation; Separate mod. gain vs. non-gain: differential modulation of gain and non-gain outcome evaluation; Separate mod. all: outcome-dependent modulation of outcome evaluation; Separate mod. forgetting rate: differential modulation of forgetting rate for chosen and unchosen target; Inc perseveration: increased perseveration; Mod. value for all & inc perseveration: outcome-dependent modulation of outcome evaluation and increased perseveration; Inc misassign: increased backward credit misassignment; Inc spread: increased forward spread in credit assignment; Inc statistical learning: increased statistical learning of reward rate; Mod. asset gating: modulation of asset-gated outcome evaluation.\n\n**Table 3.**\n Maximum likelihood parameter estimates of the best models for saline and ketamine sessions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>\u03b1F-C</th>\n      <th>\u03b1F-UC</th>\n      <th>\u2206G</th>\n      <th>\u2206N</th>\n      <th>\u2206L</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>P</td>\n      <td>Saline</td>\n      <td>0.72</td>\n      <td>0.09</td>\n      <td>\u22120.57</td>\n      <td>\u22121.3</td>\n      <td>\u22122.31</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Ketamine</td>\n      <td></td>\n      <td></td>\n      <td>0.40 (0.49)</td>\n      <td>0.11 (0.18)</td>\n      <td>\u22120.18 (\u22120.15)</td>\n    </tr>\n    <tr>\n      <td>Y</td>\n      <td>Saline</td>\n      <td>0.65</td>\n      <td>0.20</td>\n      <td>\u22120.54</td>\n      <td>\u22121.91</td>\n      <td>\u22123.15</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Ketamine</td>\n      <td></td>\n      <td></td>\n      <td>0.31</td>\n      <td>\u22120.18</td>\n      <td>\u22120.95</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>Saline</td>\n      <td>0.83</td>\n      <td>0.19</td>\n      <td>\u22121.07</td>\n      <td>\u22122.26</td>\n      <td>\u22124.12</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Ketamine</td>\n      <td></td>\n      <td></td>\n      <td>0.18</td>\n      <td>\u22120.25</td>\n      <td>\u22121.01</td>\n    </tr>\n  </tbody>\n</table>\n\nWhen the effect of ketamine was simulated with the best models within each class of ketamine models, K-model 4 (differential modulation of outcome evaluation for all three outcomes) produced the most similar results to actual data (Figure 5, Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig5-v1.jpg)\n\n**Figure 5.:** Simulated data were generated with the maximum likelihood parameters of best-fitting models for saline (differential forgetting model) and ketamine (K-model 4: differential modulation of value for all the outcomes) sessions. Simulated choice was analyzed with logistic regression model (Equation 1).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Format is same as in Figure 4. Each column represents simulated data with best-fitting parameters for individual monkey (P, Y, and B from left to right).\n\nUnlike monkeys Y and B, the best-fitting model for monkey P indicated that ketamine reduced overall tendency to switch choice in addition to outcome-dependent modulation of outcome evaluation. However, Bayesian information criterion (BIC) differed only slightly (dBIC = 3.99) between the best-fitting (K-model 7) and the second-best model (K-model 4) and the model predictions for choice behavior were very similar both qualitatively and quantitatively (Table 3 and Figure 5). We conclude that the behavioral effects of ketamine were consistent across all three monkeys. We did not find convincing evidence to support that ketamine significantly modulated cognitive (i.e. memory, temporal credit assignment [TCA] models) or motivational (i.e. motivation model) aspects of the animal\u2019s behavior. However, ketamineinduced ocular nystagmus particularly when animals were holding fixation (i.e. pre-feedback fixation) on a peripheral target immediately after a choice was made.\n\nCentripetal eye drift measured by eye velocity was significantly larger under ketamine (Figure 6; 0.5 mg/kg IM, three-way interaction among drug, dose, and time in ANOVA, F(3, 523) = 20.69, p < 0.001 for P, F(3,439) = 118.33, p < 0.001 for Y, two-way interaction between drug and time, F(3, 124) = 40.72, p < 0.001 for B; 1 mg/kg IN, three-way interaction, F(3, 103) = 3.54, p = 0.018 for Y, F(3,242) = 6.26, p < 0.001 for B, main effect of drug, F(1, 326) = 20.61, p < 0.001 for P). Overall magnitude of nystagmus was significantly larger when ketamine was administered IM than IN (t-test, p < 0.001 for all three animals).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig6-v1.jpg)\n\n**Figure 6.:** (A) Ocular position and velocity during fixation on the peripheral target in example trials during saline (left panel) and ketamine (right panel) sessions. (B) Time course of mean ocular velocity aligned at the time of saline or ketamine injection (monkey P, Y, and B from top to bottom). Shades indicate standard error. IM and IN indicates intramuscular and intranasal administration, respectively. For IM sessions, N=52 (Sal) and 17 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=25 (Sal) and 9 (Ket) for monkey B. For IN sessions, N=23 (Sal) and 13 (Ket) for monkey P; N=16 (Sal) and 10 (Ket) for monkey Y; N=19 (Sal) and 8 (Ket) for monkey B.\n\nKetamine\u2019s effects on both ocular nystagmus and negative evaluation of loss peaked and waned away within 1 hr after the injection (Figures 6 and 7). Despite the similar time course, further analysis suggested that these two effects were unlikely to be produced by a common mechanism/process. Nystagmus tended to cause fixation errors during the pre-feedback waiting period in a small number of trials. We found that as the animals owned more tokens and therefore were closer to earning juice reward, fixation errors became less frequent under ketamine (two-way interaction between drug condition and # of owned token in linear regression, t = \u22123.6, \u22123.3, and \u22129.5 for P, Y, and B, respectively, p < 0.001 for all three animals; Figure 8A), suggesting that animals could counter the undesirable effect of ketamine when they had stronger motivation to obtain juice reward. However, ketamine-induced modulation of loss evaluation (i.e. reduced probability of choice switch after loss) did not systematically change with animals\u2019 motivation gated by the number of accrued tokens (two-way interaction between drug condition and # of owned tokens in linear regression, p > 0.25 for all three animals; Figure 8B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig7-v1.jpg)\n\n**Figure 7.:** Time course of attenuation in loss evaluation induced by 0.5 mg/kg of intramuscularly (A) and 1 mg/kg of intranasally (B) administered ketamine. Regression coefficient reflecting ketamine\u2019s modulation of the effect of each outcome from the previous trial (trial lag 1) is plotted as a function of time relative to the injection. Solid (empty) symbols indicate that coefficients are (not) significantly different from zero (t-test, p < 0.05). Dotted lines represent standard error obtained from shuffled data (N=1000) between saline and ketamine sessions separately for each outcome. For IM sessions, N=52 (Sal) and 12 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=4 (Sal) and 7 (Ket) for monkey B.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig8-v1.jpg)\n\n**Figure 8.:** (A) Difference in the rate of fixation break/trial between ketamine and saline sessions is plotted as a function of cumulative number of tokens (as a proxy for time with the satiation effect being controlled). Number of tokens owned by the animal at a given trial (asset) is color coded. Vertical dotted lines demarcate the latest data point that was included in the linear regression analysis. (B) Difference in the probability of choice switch after loss from the previous trial (trial lag 1) between ketamine and saline sessions is plotted as a function of asset at the time of decision. Due to limited number of loss trials, analysis was performed after dividing trials into four groups according to asset (0\u20131, 2, 3, 4). N=52 (Sal) and 17 (Ket) for monkey P; N=49 (Sal) and 15 (Ket) for monkey Y; N=25 (Sal) and 9 (Ket) for monkey B.\n\n## Discussion\n\nThe acute behavioral effects of ketamine that might reflect antidepressant activity have seldom been systematically examined as the potential antidepressant effects could be obscured by dissociative side effects in the assessment based on self-report/rating (Berman et al., 2000; Sanacora et al., 2017; Gould et al., 2019). Using a token-based decision task and extensive computational modeling, we examined the behavioral modulation induced by therapeutic doses of ketamine to gain insights into possible early signs of ketamine\u2019s antidepressant activity. We identified the robust effect of ketamine in attenuating negative evaluation of decision outcomes, without affecting the animal\u2019s motivation to obtain juice reward, the ability for proper TCA or the time constant of memory decay for decision outcomes.\n\nNegative bias in perception, memory, feedback, and emotional processing has been reported to be one of the core behavioral/neuropsychological features of depression and negative affective bias, in particular, was proposed to play a causal role in the development, maintenance, and treatment of depression (Clark et al., 2009; Roiser et al., 2012; Godlewska and Harmer, 2021). Changes in emotional processing \u2013 increased (decreased) positive (negative) affective bias early in the course of antidepressant treatment were also reported to predict later clinical response (Tranter et al., 2009; Shiroma et al., 2014; Browning et al., 2019; Rychlik et al., 2017). While ketamine\u2019s antidepressant effect is reported to be sustained over a week of period (Zarate et al., 2006), ketamine\u2019s effect on outcome evaluation was acute and did not last over subsequent days (Figure 9). This discrepancy might be attributable to the possible differences in the state of brain network between healthy subjects and those with depression as well as the type of measures taken to assess ketamine\u2019s effect. It is noteworthy that even in our task in which the contingency of gains and losses were designed to reinforce dynamic choice, the impact of loss was cumulative as memory decayed slowly over trials and therefore, attenuation of initial impact of loss had a longer-term effect beyond the time of initial evaluation (Figure 1C). In real-world situations where life events have consequences and their memory decays at much longer time scales than in our study, ketamine\u2019s acute/early effect might be able to mediate longer-term changes in negative affective processing/schemata and mood while patients continue to interact with their social environment during the course of treatment (Godlewska and Harmer, 2021; Shiroma et al., 2014; Soltani et al., 2021). Nevertheless, systematic studies are required to understand whether the reduced aversiveness to loss in our task might share the same mechanisms that underlie ketamine\u2019s antidepressant action.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/87529/elife-87529-fig9-v1.jpg)\n\n**Figure 9.:** Regression coefficients reflecting the effects of gain, neutral (zero token), and loss outcomes obtained in the past trials are plotted. Solid (dotted) lines represent data from saline sessions >1 day (1 day) after a ketamine session. Solid (empty) symbols indicate that the corresponding coefficients are (not) significantly different from zero (t-test, p < 0.05). Standard error is shown as horizontal bars above/below each coefficient. For IM sessions, N=37 (Sal) and 14 (Ket) for monkey P; N=35 (Sal) and 13 (Ket) for monkey Y; N=18 (Sal) and 6 (Ket) for monkey B. For IN sessions, N=37 (Sal) and 12 (Ket) for monkey P; N=25 (Sal) and 10 (Ket) for monkey Y.\n\nKetamine has been used as a pharmacological model of schizophrenia inducing cognitive deficits (Krystal et al., 1994; Blackman et al., 2013; Fleming et al., 2022). Ketamine was reported to impair cognitive functions such as working memory, context-dependent behavioral control, task-switching, rule learning, and reasoning (Taffe et al., 2002; Condy et al., 2005; Skoblenick and Everling, 2012; Krystal et al., 2000; Brunamonti et al., 2014). We tested multiple hypotheses regarding ketamine\u2019s possible effects on the time constant of choice and outcome memory, accurate association between an outcome and its causative choice (i.e. TCA) and behavioral perseveration. Ketamine increased the overall probability of repeated choice. However, since this tendency was outcome dependent, with the effect being significantly larger for non-gain outcomes, and largest for loss, this effect cannot be entirely explained by increased perseveration alone. These results are consistent with a previous report that ketamine did not affect the process of learning, but only affected the integration of information for decision (Scholl et al., 2014). These results also suggest that the memory of affective events and their associations (i.e. TCA) might be more resistant to acute disruption by NMDA receptor blockade, than affectively neutral information or rules. This disruption-resistant affective memory might underlie the delayed onset of antidepressant\u2019s therapeutic effect and treatment-resistant depression.\n\nIt was reported that oculomotor side effects induced by ketamine rapidly decreased over repeated administrations (Pouget et al., 2010). Interestingly, we found that ketamine-induced fixation errors could be countered at a very short time scale (i.e. on a trial basis) through animals\u2019 strong motivation to earn juice reward, further corroborating our findings that ketamine did not change the animal\u2019s motivation for reward.\n\nFinally, our results demonstrate the sensitivity and the potential of the non-human primate model for investigation of the neurobiology of depression and antidepressant treatments, warranting further study on the mechanisms of ketamine\u2019s antidepressant action over different mood states and contexts carrying affective events that have impacts at diverse time scales.\n\n## Materials and methods\n\n### Animal preparation\n\nThree male monkeys (Macaca mulatta, P, Y, and B; body weight, 12\u201316 kg) were used. The animal was seated in a primate chair with its head fixed, and eye position was monitored with a high-speed eye tracker (ET 49, Thomas Recording, Giessen, Germany). All procedures used in this study were approved by the Institutional Animal Care and Use Committee at Yale University (Protocol #: 11058), and conformed to the Public Health Service Policy on Humane Care and Use of Laboratory Animals and Guide for the Care and Use of Laboratory Animals.\n\n### Behavioral task\n\nAnimals were trained to perform a token-based BMP task (Figure 1A). Details of the task have been previously published (Seo and Lee, 2009). Briefly, animals played a competitive BMP game against a computerized opponent and the outcome of each trial was determined jointly by the animal\u2019s and the opponent\u2019s choice according to the payoff matrix (Figure 1B). The payoff matrix was adjusted for each animal to produce comparable choice behavior across all three animals. When the animals matched the opponent\u2019s choice, they gained one (monkey P) or two (monkey Y/B) tokens, whereas non-matching choices incurred either zero token (i.e. neutral outcome) or loss of one (Y/B) or two (P) tokens, with the probability of loss being higher (lower) than that of zero token for the risky (safe) target. The locations of \u2018safe\u2019 and \u2018risky\u2019 targets were fixed during a block of 40 trials and then switched with a probability of 0.1 afterwards. The computer opponent simulated a rational player who exploits any predictable patterns in the animal\u2019s choice and outcome history to minimize the animal\u2019s payoff (Seo and Lee, 2009). To maximize payoff, the animals were required to dynamically change their choices to minimize serial correlations in the sequence of choice and outcome that could be exploited by the opponent.\n\n### Administration of ketamine\n\nFor IM administration, 0.25 or 0.5 mg/kg of ketamine (Ketaset, Zoetis Inc) was injected into the right or left calf muscle. Doses were selected based on the therapeutic doses of ketamine when it is used as antidepressant for human patients. For IN administration, 0.5 or 1 mg/kg of ketamine was delivered into the right or left nostril using an IN mucosal atomization device (MAD Nasal, Teleflex Medical). Ketamine was administered with a 6.4-day interval on average (2\u20137 days), and sterile saline (IM) or sterile water (IN) were administered in-between successive ketamine sessions.\n\n### Analysis of choice behavior\n\n#### Logistic regression model\n\nThe effect of past outcomes on an animal\u2019s choice was analyzed using the following model:\n\n$$\nlogit[P_{t}(R)]=\\sumi=15b_{i}^{G}G(t\u2212i)+\\sumi=15b_{i}^{N}N(t\u2212i)+\\sumi=15b_{i}^{L}L(t\u2212i)+\\sumi=15b_{i}^{R}R(t\u2212i)\n$$\n\nwhere $P_{t}R$ is the probability of animal\u2019s choosing right target at the current trial t, G(t \u2212 i), N(t \u2212 i), L(t \u2212 i), and R(t \u2212 i) are regressors encoding gain, neutral, loss, and juice reward outcome that occurred after right (left) choice in the ith trial into the past as 1 (\u22121), and other outcomes as 0, respectively. $b_{i}^{G},b_{i}^{N},b_{i}^{L},b_{i}^{R}$ are regression coefficients, with positive (negative) coefficients indicating that the particular outcome at trial t \u2212 i tended to increase (decrease) the animal\u2019s tendency to choose the same target at trial t, relative to chance level (Figure 1C). Separate regression models were fit to saline, IM and IN administered ketamine sessions for each animal.\n\n### Nonlinear regression \u2013 exponential model\n\nWe modeled the temporal decay of the effect of past outcome over multiple trials and its modulation by ketamine with the following exponential function:\n\n$$\nY_{i}^{O}=[b_{0}^{s}+b_{0}^{k}\u22c5I_{k}]\u22c5exp[\u2212(i\u22121)/(b_{1}^{s}+b_{1}^{k}\u22c5I_{k})](o=gain,neutral\u2228loss)\n$$\n\nwhere i is trial lag (ith trial into the past), $I_{k}$ is an indicator variable encoding ketamine (saline) session as 1 (0). $b_{0}^{s}$ and $b_{1}^{s}$ are initial amplitude and decay time constant, respectively, for saline session, whereas $b_{0}^{k}$ and $b_{1}^{k}$ are modulation by ketamine. Exponential functions were fit to the data with nonlinear regression using fitnlm.m in MATLAB (MathWorks), separately for each outcome.\n\n### RL models\n\nWe used RL models to investigate the potential cognitive/computational processes that might be modulated by ketamine. RL models have been extensively and successfully applied to explain reward-guided choice behavior (Lee et al., 2012). The general idea of RL is that the outcomes experienced from a particular action/state are integrated over time to form the reward expectation or the value of that action/state, and that an action among alternatives is chosen to maximize the expected outcome. One algorithm for the integration is to incrementally update the old expectation/value with a prediction error which can be formalized as follows for a single-state situation (Sutton and Barto, 1998):\n\n$$\nQ_{t+1}(A)=Q_{t}(A)+\\alpha_{L}\u22c5[R_{t}\u2212Q_{t}(A)](standardQ\u2212learning)\n$$\n\nwhere $Q_{t}A$ is the value function for action A at trial t, $\\alpha_{L}$ is learning rate, and $R_{t}-Q_{t}A$ is the discrepancy between actual outcome, $R_{t}$ and the expectation/value, namely reward prediction error. This formula can be rearranged as follows Barraclough et al., 2004; Ito and Doya, 2009:\n\n$$\nQ_{t+1}(A)=(1\u2212\\alpha_{L})\u22c5Q_{t}(A)+\\alpha_{L}\u22c5R_{t}=\\alpha_{F}\u22c5Q_{t}(A)+\\alpha_{L}\u22c5R_{t}\n$$\n\nwhere $\\alpha_{F}$ and $\\alpha_{L}$ are separate parameters for the forgetting rate of the old value estimate and the learning rate of a new outcome, respectively. With $0<\\alpha_{F}<1$, the old value function decays exponentially over time, simulating forgetting. Action selection was modeled with a softmax function,\n\n$$\nP_{t}(R)=1/(1+e^{\u2212\\beta\u22c5X_{t}}),X_{t}=[Q_{t}(R)\u2212Q_{t}(L)]\n$$\n\nwhere probability of choosing right target, $P_{t}R$ was a logistic function of the estimated value of right relative to left choice. Inverse temperature, \u03b2 regulated randomness of choice determining the influence of action values on decision.\n\nTo investigate the effects of ketamine, we first tested multiple variants of the general model and determined the model that best explained normal behavior during saline sessions (Table 1; Figure 3). This is important, since we can expect to characterize the effect of ketamine accurately only in the context of a reliable behavioral model for how the animal\u2019s behavior was influenced by the outcomes of their previous choices.\n\nThen, we examined how the parameters of this model were modulated by ketamine (Table 2; Figure 4).\n\n### Model selection for saline sessions\n\nIn the most restricted, standard Q-learning model, value was updated only for the chosen action by taking a weighted average of $Q_{t}A$ and $R_{t}$ with $\\alpha_{F}=1-\\alpha_{L}$ . $R_{t}$ , was fixed as \u22121, 0, and 1 for gain, neutral, and loss outcome, respectively. These arrangements confined action value Q within the range of \u22121\u22121.\n\nFor three variants of RL models \u2013 Q-learning with subjective evaluation (QSE), DF, and non-differential forgetting (NDF) models, we relaxed the restrictions of the Q-learning model in two ways. First, $R_{t}$ was set as a free parameter reflecting subjective outcome evaluation. When both $\\alpha_{L}$ and $R_{t}$ are set as free parameters, the model becomes underdetermined. Therefore, in these models, the product of learning rate and outcome value, $\\alpha_{L}\u2219R_{t}$ was consolidated into a single parameter $\\Delta_{t}$ or the total amount of change due to a new outcome which could take different values for gain ($\\Delta_{G}$), neutral ($\\Delta_{N}$), and loss ($\\Delta_{L}$) outcome. We also tested the models in which $\\Delta_{N}$ was fixed as 0 simulating effectively neutral outcome. Second, action value Q for the unchosen action was allowed to decay, with DF rates for chosen ($\\alpha_{F-C}$) and unchosen ($\\alpha_{F-UC}$) actions in a DF model, and with a common forgetting rate, $\\alpha_{F}$ in an NDF model. Action values were updated only for the chosen action in a QSE model.\n\nFinally, we tested an additional model in which outcome evaluation was gated by asset (non-DF with asset-gated outcome evaluation \u2013 NDF-A model) or the number of tokens owned by the animal at the time of decision, simulating temporal discounting of outcome value depending on its temporal distance to the primary reward that was always given only after six tokens were acquired.\n\nFor all tested models other than Q-learning model, \u03b2 was fixed to be 1, as a model was underdetermined when both \u03b2 and $\\Delta_{t}$ could vary freely. Model parameters were fit to choice data to maximize the likelihood of data. BIC was used for model comparison and selection of the best model.\n\n### Model selection for ketamine sessions\n\nTo understand the effect of ketamine, we started with the best-fitting model of normal behavior during saline sessions \u2013 the DF model, and then asked how ketamine might modulate the parameters of this model. The null (baseline) model assumed that ketamine did not cause any parametric changes in the behavior, and the model prediction of trial-to-trial choice was generated with the maximum likelihood (ML) parameters, namely \u2018baseline parameters\u2019 estimated from saline sessions as follows:\n\n$$\nQ_{t+1}(A)=\\alpha_{F\u2212C}^{S}\u22c5Q_{t}(A)+\u0394_{t},ifAischosen,\n$$\n\n\n\n$$\nQ_{t+1}(A)=\\alpha_{F\u2212C}^{S}\u22c5Q_{t}(A)+\u0394_{t},ifAisnotchosen,\n$$\n\n\n\n$$\n\u0394_{t}=\u0394_{G}^{S},\u0394_{N}^{S},\u0394_{L}^{S},forgain,neutral,andloss,respectively.\n$$\n\n\n\n$$\nP_{t}(R)=1/(1+e^{\u2212X_{t}^{S}}),X_{t}^{S}=[Q_{t}(R)\u2212Q_{t}(L)]\n$$\n\nwhere $\\alpha_{FC}^{S}$ , $\\alpha_{FUC}^{S}$ , $\\Delta_{G}^{S}$ , $\\Delta_{N}^{S}$ , $\\Delta_{L}^{S}$ (baseline parameter-estimates) were ML parameters of the DF model fit to the data from saline sessions.\n\nIn each of the ketamine models, we set a subset of parameters of the DF model to freely vary from the baseline parameter-estimates. Value models (K-model 1\u20134, Table 2) hypothesized that ketamine changed outcome evaluation differentially for gain, neutral, and loss outcomes, whereas a memory model (K-model 5) tested whether ketamine affected the forgetting rate or the rate of value decay. Perseveration models hypothesized that ketamine affected the behavioral tendency to perseverate (K-model 6), possibly in tandem with a change in value update (K-model 7). TCA models tested whether ketamine changed the way a particular outcome properly updated the value of causative action, possibly leading to misassignment of the credit for an outcome to the choice that happened in the past (K-model 8), spread of the credit to future choice (K-model 9), or assignment of the credit for recent outcomes collectively to the frequently chosen target in the near past (K-model 10) (Walton et al., 2010; Jocham et al., 2016). Finally, a motivation model (K-model 11) hypothesized that ketamine changed the gain with which asset position modulated the value update for each outcome.\n\n### Analysis of ketamine-induced ocular nystagmus\n\nOcular nystagmus during fixation on a peripheral target consists of two components \u2013 slow centripetal drift (i.e. slow phase), and a subsequent corrective saccade to re-capture the target (i.e. fast phase) (Barnes, 1982). Eye position was sampled and recorded at 250 Hz. We used average velocity of eye movement during pre-feedback fixation on a chosen target to detect the slow phase of the nystagmus induced by ketamine. The sign of eye velocity was adjusted in the way that centripetal eye movement during fixation had negative velocity. Fast phase eye movement with velocity >20\u00b0 (visual angle)/s was first removed from the pre-feedback fixation period, and then eye velocity was averaged during the remaining time points of the fixation period for each trial (for statistical analysis) or in 1-min non-overlapping bins for visualization of time course (Figure 6).\n\n### Analysis of plasma concentration of ketamine\n\nTo be able to effectively compare behavioral effects observed following IM and IN administration of ketamine, we measured plasma concentration of ketamine following IM and IN administrations in monkey B (one session for 0.5 mg/kg IM; two sessions for 0.5 mg/kg IN; two sessions for 1 mg/kg IN administration). Blood samples were collected at 10, 25, 40, 60, and 75 min following ketamine administration and analyzed with the high performance liquid chromatography (HPLC) protocol. 100 ng of the internal standard clonidine and 0.5 ml of thawed plasma were added to a 15-ml polypropylene tube and 15 ml of diethyl ether added. Following 5 min of vortex mixing, 4 ml of the upper ether layer was transferred to a new polypropylene tube and 250 \u00b5l of 0.01 M phosphoric acid added. After vortex mixing for 5 min, the lower aqueous layer was transferred to a 1.5-ml tube and evaporated under vacuum (~1 hr, SpeedVac evaporator, medium heat). The dry residue was dissolved in 150 \u03bcl of 0.01 sodium monobasic dihydrogen phosphate. 50 \u03bcl of the extract was injected and separated on a 3-\u03bcm Cyano Spherisorb HPLC column (4.6 \u00d7 100 mm) eluted with 80% 0.01 sodium acetate/20% acetonitrile (0.8 ml/min, 40\u00b0C). Norketamine, ketamine, and clonidine were detected by UV absorption (220 nm; Hitachi L-7400) with retention times of 6.1, 8.1, and 11.0 min, respectively; and with absolute detection limits of 0.2, 0.5, and 0.3 ng, respectively. Extracted standards were prepared using 0.5 ml aliquots of pooled human plasma. Plasma drug concentrations of samples were calculated knowing the peak height ratios of the extracted standards, the peak height ratios in samples and the amount of internal standard added (200 ng/ml). When injecting 50 \u03bcl of the extract, norketamine and ketamine were determined with concentration detection limits of 1 and 2 ng/ml, respectively.\n",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alicia Izquierdo, University of California, Los Angeles United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87529.3.sa0](https://doi.org/10.7554/eLife.87529.3.sa0)\n\nThe authors use reinforcement learning modeling to study the alterations following acute ketamine in macaques. The evidence supporting the conclusion that ketamine reduces the impact of losses vs. neutral/gains is solid. In this version of this valuable study, the authors make more measured interpretations about the relationship between the processing of losses and ketamine's antidepressant effects.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87529.3.sa1](https://doi.org/10.7554/eLife.87529.3.sa1)\n\nOemisch and Seo use sophisticated reinforcement learning (RL) modeling to show that acute ketamine reduces the strength impact of losses vs neutral/gains on the subsequent trial performance of a token-based biased matching-pennies task. In this version, the authors make more measured interpretations about the potential relevance of their results to ketamine's antidepressant effects for the most part.\n\nMy prior review emphasized what I considered to be an over-interpretation of the relevance of their data (that I find interesting and of value) to mechanisms of action of ketamine's antidepressant effects. The authors have corrected those excesses exception for the last sentence of the introduction, which continues to suggest they are studying both mechanisms of antidepressant actions as well as the pathophysiology of depression.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87529.3.sa2](https://doi.org/10.7554/eLife.87529.3.sa2)\n\nOemisch and Seo set out to examine the effects of low-dose ketamine on reinforcement learning, with the idea that alterations in reinforcement learning and/or motivation might inform our understanding of what alterations co-occur with potential antidepressant effects. Macaques performed a reinforced/punished matching pennies task while under effects of saline or ketamine administration and the data were fit to a series of reinforcement learning models to determine which model described behavior under saline most closely and then what parameters of this best-fitting model were altered by ketamine. They found a mixed effect, with two out of three macaques primarily exhibiting an effect of ketamine on the processing of losses and one out of three macaques exhibiting an effect of ketamine on processing losses and perseveration. They found that these effects of ketamine appeared to be dissociable from the nystagmus effects of the ketamine.\n\nThe findings are novel, and the data suggesting that ketamine primarily affects on the processing of losses (under the procedures used) are solid. However, it is unclear whether the connection between the processing of losses and the antidepressant effects of ketamine is justified, and the current findings may be more useful for those studying reinforcement learning than those studying depression and antidepressant effects. In addition, the co-occurrence of different behavioral procedures with different patterns of ketamine effects, with one macaque tested with different parameters than the other two exhibiting effects of ketamine that were best fit with a different model than the other two macaques, suggests that there may be difficulty in generalizing these findings to reinforcement learning more generally.\n\n(1) First, the authors should be more explicit and careful in the connection they are trying to make about the link between loss processing and depression. The authors call their effect a \"robust antidepressant-like behavioral effect.\" However, there are no references to support this or discussion of how the altered loss processing would relate directly to the antidepressant effects. A few statements about a link to antidepressant effects have been removed or moderated, but many remain, including those in the abstract. The authors provide little to no support for this link, so the current version represents solid evidence for an effect on loss processing and incomplete or weak evidence for an antidepressant effect.\n\n(2) It appears that the monkey P was given smaller rewards and punishers than the other two monkeys, and this monkey had an effect of ketamine on perseveration that was not observed in the other two monkeys. This may be due to this monkey being trained and tested before the other animals, but it does raise the issue of the generality of the authors' findings. It seems possible that the procedures used for the other two monkeys (with no deviation at all) might support the best-fit model that the authors favor. However, if changes in the size of the rewards and punishments suddenly make ketamine affect perseveration, then it suggests that ketamine's effect is highly parameter-specific. For example, might there be some parameters where ketamine would only alter perseveration and not loss processing?\n",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d42c523c-2b22-47ac-a8c9-9d508609688c",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C1",
+      "claim": "Ketamine is a non-competitive N-methyl-D-aspartate (NMDA) receptor antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of ketamine, a non-competitive N-methyl-D-aspartate (NMDA) receptor antagonist as a rapid-acting antidepressant, inspired extensive research to understand the mechanisms of ketamine's action as well as a new perspective on the neurobiology of depression that depression might reflect non-adaptive changes in the glutamatergic and GABA (gamma aminobutyric acid)-ergic signal transmission of the prefrontal and limbic system in response to environmental stress and adversity (Berman et al., 2000; Zarate et al., 2006; Sanacora et al., 2008; Lapidus et al., 2014; Krystal et al., 2013; Abdallah et al., 2015; Duman et al., 2016; Murrough et al., 2017; Krystal et al., 2019; Duman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text as a known property of ketamine, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "947a6b56-455a-41a4-bb37-c4fa8e391da6",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C2",
+      "claim": "Ketamine has been discovered as a rapid-acting antidepressant.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of ketamine, a non-competitive N-methyl-D-aspartate (NMDA) receptor antagonist as a rapid-acting antidepressant, inspired extensive research to understand the mechanisms of ketamine's action as well as a new perspective on the neurobiology of depression that depression might reflect non-adaptive changes in the glutamatergic and GABA (gamma aminobutyric acid)-ergic signal transmission of the prefrontal and limbic system in response to environmental stress and adversity (Berman et al., 2000; Zarate et al., 2006; Sanacora et al., 2008; Lapidus et al., 2014; Krystal et al., 2013; Abdallah et al., 2015; Duman et al., 2016; Murrough et al., 2017; Krystal et al., 2019; Duman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and supported by multiple citations from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b195eccc-c30e-471d-a010-2344fb4f6d07",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C3",
+      "claim": "Depression might reflect non-adaptive changes in the glutamatergic and GABA-ergic signal transmission of the prefrontal and limbic system in response to environmental stress and adversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of ketamine, a non-competitive N-methyl-D-aspartate (NMDA) receptor antagonist as a rapid-acting antidepressant, inspired extensive research to understand the mechanisms of ketamine's action as well as a new perspective on the neurobiology of depression that depression might reflect non-adaptive changes in the glutamatergic and GABA (gamma aminobutyric acid)-ergic signal transmission of the prefrontal and limbic system in response to environmental stress and adversity (Berman et al., 2000; Zarate et al., 2006; Sanacora et al., 2008; Lapidus et al., 2014; Krystal et al., 2013; Abdallah et al., 2015; Duman et al., 2016; Murrough et al., 2017; Krystal et al., 2019; Duman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a perspective on depression neurobiology supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "467ee1c1-6ae7-454e-bee4-5d420a54ecc7",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C4",
+      "claim": "Depression causes enormous personal sufferings as well as societal and economic burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Depression is a debilitating mental illness that causes enormous personal sufferings as well as societal and economic burden (Whiteford et al., 2013; Greenberg et al., 2021; Mrazek et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "0729f082-f140-4e33-bf3d-879eda9990eb",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C5",
+      "claim": "Ketamine has shown to induce rapid-onset (<1 hr) cellular, molecular, physiological, and connectivity changes that are thought to reflect and/or mediate its antidepressant action.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine has shown to induce rapid-onset (<1 hr) cellular, molecular, physiological, and connectivity changes that are thought to reflect and/or mediate its antidepressant action (Li et al., 2010; Yang et al., 2018; Al Shweiki et al., 2020; Grimm et al., 2015; Scheidegger et al., 2016; Gould et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "3290c7ae-feac-46b6-b806-a3ebdea694be",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C6",
+      "claim": "Three rhesus monkeys performed a token-based biased matching pennies (BMP) game against a computerized opponent in which they gained or lost tokens as the outcome of their decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Three rhesus monkeys performed a token-based biased matching pennies (BMP) game against a computerized opponent in which they gained or lost tokens as the outcome of their decisions (Seo and Lee, 2009; Seo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup used in the study, with citations to previous work using this paradigm.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "eb32e117-37b9-4567-86a5-b7e0c2ab2a03",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C7",
+      "claim": "In control sessions where saline was administered, animals tended to repeat the choice that yielded a token, while switching away from the choice that led to non-gain outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the control sessions where saline was administered, animals tended to repeat the choice that yielded a token, while switching away from the choice that led to non-gain outcomes, with a stronger tendency to switch after loss than neutral outcome (i.e. zero token) (Equation 1; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data, shown in Figure 1C and modeled by Equation 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "d6011f49-3771-44f1-a76d-cecda8fc5a6a",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C8",
+      "claim": "Animals had a stronger tendency to switch after loss than neutral outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the control sessions where saline was administered, animals tended to repeat the choice that yielded a token, while switching away from the choice that led to non-gain outcomes, with a stronger tendency to switch after loss than neutral outcome (i.e. zero token) (Equation 1; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experimental data, shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "1507e5ea-88e4-4ff4-ab33-9a35269d24d2",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C9",
+      "claim": "The reinforcing and punishing effects of gain and non-gain outcomes decayed exponentially over time, with the recent outcomes exerting a larger effect than remote ones.",
+      "claim_type": "EXPLICIT",
+      "source": "The reinforcing and punishing effects of gain and non-gain outcomes also decayed exponentially over time, with the recent outcomes exerting a larger effect than remote ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "e399174b-34c9-45eb-b8f8-8aba401f95e3",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C10",
+      "claim": "Ketamine selectively reduced the punishing effect of non-gain outcomes, with significantly larger change being induced after loss than neutral outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine selectively reduced the punishing effect of non-gain outcomes, with significantly larger change being induced after loss than neutral outcome (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "ec493f1d-a7c2-427d-8f2d-37fcdf507402",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C11",
+      "claim": "The ketamine-induced modulation was larger for the effect of recent than remote outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ketamine-induced modulation was larger for the effect of recent than remote outcomes (analysis of variance [ANOVA], three-way interaction among outcome, trial lag, and drug condition, F(8, 1964) = 4.05, F(8, 1649) = 4.46, and F(8, 509) = 3.62 for animal P, Y, and B, respectively. p < 0.001 in all animals for IM administration of 0.5 mg/kg; F(8, 1229) = 4.89, p < 0.001 in animal P; F(8, 389) = 1.89, p = 0.06 in Y; F(8, 1002) = 3.27, p = 0.001 in B for IN administration of 1 mg/kg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis (ANOVA) of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "8b9ace28-5932-412f-b149-cb9e64196aeb",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C12",
+      "claim": "0.5 mg/kg IM-administered and 1 mg/kg IN-administered ketamine produced comparable plasma concentration and behavioral effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused our main analyses on the data collected with 0.5 mg/kg IM- and 1 mg/kg IN-administered ketamine, which produced comparable plasma concentration and behavioral effects (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study comparing different administration routes and doses, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "95efe47d-e0bf-49b7-98fd-55aee131cab3",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C13",
+      "claim": "Plasma concentration and its time course over 60 min after 0.5 mg/kg IM ketamine were comparable to those measured after 0.5 mg/kg in human subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma concentration and its time course over 60 min were also comparable to those measured after 0.5 mg/kg in human subjects (Zarate et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the study's pharmacokinetic data with published human data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "f57797f6-d342-49e5-af14-dc41468fa5e1",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C15",
+      "claim": "Ketamine did not significantly modulate the time constant of decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine did not significantly modulate the time constant of decay, and the modulation of initial impact was sufficient to explain the behavioral phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the parametric modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "1e4efce5-a604-4fcd-a2e5-0678f5dec121",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C16",
+      "claim": "The differential forgetting (DF) model best fit the data in all three animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential forgetting (DF) model best fit the data in all three animals, in which the value functions of chosen and unchosen action decayed at different rates, with forgetting being slower for chosen than unchosen action (Figure 3 and Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model comparison analysis shown in Figure 3 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "f627de5a-b84c-4f92-9381-656d7da3224c",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C17",
+      "claim": "In the differential forgetting model, forgetting is slower for chosen than unchosen action.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential forgetting (DF) model best fit the data in all three animals, in which the value functions of chosen and unchosen action decayed at different rates, with forgetting being slower for chosen than unchosen action (Figure 3 and Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a characteristic of the best-fitting model identified in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "11d72b76-42d2-429e-b037-c6e50a0ddc6c",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C18",
+      "claim": "The model incorporating valence-dependent change in outcome evaluation best fit the choice data from ketamine sessions in all three animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In all three animals, the model incorporating valence-dependent change in outcome evaluation best fit the choice data from ketamine sessions with (K-model 7 in the parenthesis, P) or without (K-model 4, P and Y/B) additional change in the tendency of choice perseveration (Figure 4 and Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from model comparison analysis shown in Figure 4 and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b1aae533-0cea-46db-97df-ac97b5734229",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C19",
+      "claim": "Under ketamine, value update increased positively following all outcomes, thus increasing overall probability of repeating the same choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Under ketamine, value update increased positively following all outcomes, thus increasing overall probability of repeating the same choice or namely, choice perseveration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the reinforcement learning model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b66b57f5-63d6-4808-88f7-c70c3ccca241",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C20",
+      "claim": "The change in value update under ketamine was larger for non-gain outcomes, with the largest modulation after loss.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the change was larger for non-gain outcomes, with the largest modulation after loss, consistent with the results from our model comparison that the model including only a perseveration component performed worse than the best model in all three animals (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the reinforcement learning model analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b6907840-a04c-4a71-9213-54de6814bf01",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C21",
+      "claim": "Ketamine-induced ocular nystagmus occurred particularly when animals were holding fixation on a peripheral target immediately after a choice was made.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ketamineinduced ocular nystagmus particularly when animals were holding fixation (i.e. pre-feedback fixation) on a peripheral target immediately after a choice was made.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "1d4352d7-d2a9-489b-b1c0-145e0077b723",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C22",
+      "claim": "Centripetal eye drift measured by eye velocity was significantly larger under ketamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Centripetal eye drift measured by eye velocity was significantly larger under ketamine (Figure 6; 0.5 mg/kg IM, three-way interaction among drug, dose, and time in ANOVA, F(3, 523) = 20.69, p < 0.001 for P, F(3,439) = 118.33, p < 0.001 for Y, two-way interaction between drug and time, F(3, 124) = 40.72, p < 0.001 for B; 1 mg/kg IN, three-way interaction, F(3, 103) = 3.54, p = 0.018 for Y, F(3,242) = 6.26, p < 0.001 for B, main effect of drug, F(1, 326) = 20.61, p < 0.001 for P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of eye movement data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "9fe6f5cb-4f67-473e-a536-2cac193e6a28",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C23",
+      "claim": "Overall magnitude of nystagmus was significantly larger when ketamine was administered IM than IN.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall magnitude of nystagmus was significantly larger when ketamine was administered IM than IN (t-test, p < 0.001 for all three animals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical comparison of the two administration routes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "6f36db18-9616-4cb6-9850-168d2827550b",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C24",
+      "claim": "Ketamine's effects on both ocular nystagmus and negative evaluation of loss peaked and waned away within 1 hr after the injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine's effects on both ocular nystagmus and negative evaluation of loss peaked and waned away within 1 hr after the injection (Figures 6 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the time course analysis shown in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "acf2cfeb-a95a-4eb0-b036-3782a4508fe5",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C25",
+      "claim": "As the animals owned more tokens and were closer to earning juice reward, fixation errors became less frequent under ketamine.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that as the animals owned more tokens and therefore were closer to earning juice reward, fixation errors became less frequent under ketamine (two-way interaction between drug condition and # of owned token in linear regression, t = \u22123.6, \u22123.3, and \u22129.5 for P, Y, and B, respectively, p < 0.001 for all three animals; Figure 8A), suggesting that animals could counter the undesirable effect of ketamine when they had stronger motivation to obtain juice reward.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from linear regression analysis shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "ce9e7e3c-9047-4b37-b30b-fdd7d80629ff",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C26",
+      "claim": "Animals could counter the undesirable effect of ketamine on fixation when they had stronger motivation to obtain juice reward.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that as the animals owned more tokens and therefore were closer to earning juice reward, fixation errors became less frequent under ketamine (two-way interaction between drug condition and # of owned token in linear regression, t = \u22123.6, \u22123.3, and \u22129.5 for P, Y, and B, respectively, p < 0.001 for all three animals; Figure 8A), suggesting that animals could counter the undesirable effect of ketamine when they had stronger motivation to obtain juice reward.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "a27f9a80-55c7-4928-9308-e197128187ea",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C27",
+      "claim": "Ketamine-induced modulation of loss evaluation did not systematically change with animals' motivation gated by the number of accrued tokens.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ketamine-induced modulation of loss evaluation (i.e. reduced probability of choice switch after loss) did not systematically change with animals' motivation gated by the number of accrued tokens (two-way interaction between drug condition and # of owned tokens in linear regression, p > 0.25 for all three animals; Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from linear regression analysis shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "8dffa0bd-bf00-46ed-9097-7d47ec62713a",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C28",
+      "claim": "Ketamine did not significantly change animals' motivation to earn reward, behavioral perseveration, or other cognitive aspects of learning and memory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ketamine did not significantly change animals' motivation to earn reward, behavioral perseveration, or other cognitive aspects of learning and memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the various analyses conducted in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "aaac87ee-1776-43f2-9ed7-1def3ab7f931",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C29",
+      "claim": "Ketamine acutely reduced the adverse effect of undesirable outcomes such as losses of tokens, which was independent of other side effects such as ocular nystagmus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ketamine acutely reduced the adverse effect of undesirable outcomes such as losses of tokens, which was independent of other side effects such as ocular nystagmus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "f005d1e4-ef91-47b2-9ea6-bc3b5fee3dff",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C30",
+      "claim": "Ketamine reduced the aversiveness of undesirable outcomes such as losses of tokens without significantly affecting the evaluation of gains, behavioral perseveration, motivation, and other cognitive aspects of learning such as temporal credit assignment and time scales of choice and outcome memory.",
+      "claim_type": "EXPLICIT",
+      "source": "When administered intramuscularly or intranasally, ketamine reduced the aversiveness of undesirable outcomes such as losses of tokens without significantly affecting the evaluation of gains, behavioral perseveration, motivation, and other cognitive aspects of learning such as temporal credit assignment and time scales of choice and outcome memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "4895c326-2196-4315-90c1-73858ce22b97",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C31",
+      "claim": "Ketamine's potentially antidepressant effect was separable from other side effects such as fixation errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine's potentially antidepressant effect was separable from other side effects such as fixation errors, which unlike outcome evaluation, was readily countered with strong motivation to avoid errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis comparing fixation errors and outcome evaluation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "fa17e533-e3e3-46ff-86ba-bb96b4984451",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C32",
+      "claim": "Fixation errors under ketamine, unlike outcome evaluation, were readily countered with strong motivation to avoid errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine's potentially antidepressant effect was separable from other side effects such as fixation errors, which unlike outcome evaluation, was readily countered with strong motivation to avoid errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "2e64ad47-579e-4dea-b3d5-85b737df8b3b",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C33",
+      "claim": "Negative bias in perception, memory, feedback, and emotional processing has been reported to be one of the core behavioral/neuropsychological features of depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative bias in perception, memory, feedback, and emotional processing has been reported to be one of the core behavioral/neuropsychological features of depression and negative affective bias, in particular, was proposed to play a causal role in the development, maintenance, and treatment of depression (Clark et al., 2009; Roiser et al., 2012; Godlewska and Harmer, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "9e5890f6-9a41-48e0-a6ba-77e55b43c157",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C34",
+      "claim": "Negative affective bias was proposed to play a causal role in the development, maintenance, and treatment of depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative bias in perception, memory, feedback, and emotional processing has been reported to be one of the core behavioral/neuropsychological features of depression and negative affective bias, in particular, was proposed to play a causal role in the development, maintenance, and treatment of depression (Clark et al., 2009; Roiser et al., 2012; Godlewska and Harmer, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposed mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "4864e83b-0658-4d90-868a-93e6e6a4c1b4",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C35",
+      "claim": "Changes in emotional processing \u2013 increased positive and decreased negative affective bias early in the course of antidepressant treatment were reported to predict later clinical response.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in emotional processing \u2013 increased (decreased) positive (negative) affective bias early in the course of antidepressant treatment were also reported to predict later clinical response (Tranter et al., 2009; Shiroma et al., 2014; Browning et al., 2019; Rychlik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "41014cf4-bf26-4362-8ce4-39f4300da669",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C36",
+      "claim": "Ketamine's antidepressant effect is reported to be sustained over a week of period.",
+      "claim_type": "EXPLICIT",
+      "source": "While ketamine's antidepressant effect is reported to be sustained over a week of period (Zarate et al., 2006), ketamine's effect on outcome evaluation was acute and did not last over subsequent days (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge from a citation, contrasted with the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "a8a9cce5-e360-489f-8541-0ddd768d24bd",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C37",
+      "claim": "Ketamine's effect on outcome evaluation was acute and did not last over subsequent days.",
+      "claim_type": "EXPLICIT",
+      "source": "While ketamine's antidepressant effect is reported to be sustained over a week of period (Zarate et al., 2006), ketamine's effect on outcome evaluation was acute and did not last over subsequent days (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "ebbb469a-41d2-4704-aa9a-2f330dbe975c",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C38",
+      "claim": "Attenuation of initial impact of loss had a longer-term effect beyond the time of initial evaluation due to slowly decaying memory.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that even in our task in which the contingency of gains and losses were designed to reinforce dynamic choice, the impact of loss was cumulative as memory decayed slowly over trials and therefore, attenuation of initial impact of loss had a longer-term effect beyond the time of initial evaluation (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b9d66465-b210-4e15-8496-4569c5a567be",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C39",
+      "claim": "Ketamine has been used as a pharmacological model of schizophrenia inducing cognitive deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine has been used as a pharmacological model of schizophrenia inducing cognitive deficits (Krystal et al., 1994; Blackman et al., 2013; Fleming et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "d6b5b99d-747a-4f58-865a-d6b108e77857",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C40",
+      "claim": "Ketamine was reported to impair cognitive functions such as working memory, context-dependent behavioral control, task-switching, rule learning, and reasoning.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine was reported to impair cognitive functions such as working memory, context-dependent behavioral control, task-switching, rule learning, and reasoning (Taffe et al., 2002; Condy et al., 2005; Skoblenick and Everling, 2012; Krystal et al., 2000; Brunamonti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "7c051468-9e75-4090-bb9e-c5c6384ad44e",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C41",
+      "claim": "Ketamine increased the overall probability of repeated choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine increased the overall probability of repeated choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b55f529e-11db-402d-a4e6-24a8a433f4e3",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C42",
+      "claim": "The tendency for repeated choice under ketamine was outcome dependent, with the effect being significantly larger for non-gain outcomes, and largest for loss.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since this tendency was outcome dependent, with the effect being significantly larger for non-gain outcomes, and largest for loss, this effect cannot be entirely explained by increased perseveration alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "53ea17c5-89ca-4d7e-84ea-5557629b548d",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C43",
+      "claim": "Ketamine did not affect the process of learning, but only affected the integration of information for decision.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a previous report that ketamine did not affect the process of learning, but only affected the integration of information for decision (Scholl et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the current findings with a previous study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "2308f674-92e3-4a24-8c9c-96fc04698733",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C44",
+      "claim": "The memory of affective events and their associations might be more resistant to acute disruption by NMDA receptor blockade than affectively neutral information or rules.",
+      "claim_type": "EXPLICIT",
+      "source": "These results also suggest that the memory of affective events and their associations (i.e. TCA) might be more resistant to acute disruption by NMDA receptor blockade, than affectively neutral information or rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "f389ff70-eae0-495c-87f2-eb6c0d2318a4",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C45",
+      "claim": "Oculomotor side effects induced by ketamine rapidly decreased over repeated administrations.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that oculomotor side effects induced by ketamine rapidly decreased over repeated administrations (Pouget et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "d84a8a57-c77c-4e9c-a1fd-36827d71481b",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C46",
+      "claim": "Ketamine-induced fixation errors could be countered at a very short time scale through animals' strong motivation to earn juice reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that ketamine-induced fixation errors could be countered at a very short time scale (i.e. on a trial basis) through animals' strong motivation to earn juice reward, further corroborating our findings that ketamine did not change the animal's motivation for reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "621ee690-fe2c-4578-9173-33ce4e77d0c1",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C47",
+      "claim": "Three male rhesus macaques (Macaca mulatta, P, Y, and B; body weight, 12\u201316 kg) were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Three male monkeys (Macaca mulatta, P, Y, and B; body weight, 12\u201316 kg) were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "4dc81b32-8f27-4830-b93d-25caa04a58f5",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C48",
+      "claim": "All procedures used in this study were approved by the Institutional Animal Care and Use Committee at Yale University (Protocol #: 11058).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures used in this study were approved by the Institutional Animal Care and Use Committee at Yale University (Protocol #: 11058), and conformed to the Public Health Service Policy on Humane Care and Use of Laboratory Animals and Guide for the Care and Use of Laboratory Animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "8cda3e57-38cd-45dd-b60d-35bef0275cc4",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C49",
+      "claim": "The procedures conformed to the Public Health Service Policy on Humane Care and Use of Laboratory Animals and Guide for the Care and Use of Laboratory Animals.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures used in this study were approved by the Institutional Animal Care and Use Committee at Yale University (Protocol #: 11058), and conformed to the Public Health Service Policy on Humane Care and Use of Laboratory Animals and Guide for the Care and Use of Laboratory Animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b61cc32a-e110-408d-afc7-bb54fd025a0a",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C50",
+      "claim": "For IM administration, 0.25 or 0.5 mg/kg of ketamine was injected into the right or left calf muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "For IM administration, 0.25 or 0.5 mg/kg of ketamine (Ketaset, Zoetis Inc) was injected into the right or left calf muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for ketamine administration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b9ae151a-28c8-4c12-b087-59da5eb1364d",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C51",
+      "claim": "Doses were selected based on the therapeutic doses of ketamine when it is used as antidepressant for human patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Doses were selected based on the therapeutic doses of ketamine when it is used as antidepressant for human patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for dose selection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "719ee28a-4656-47d8-aec0-e7e11bb58c0b",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C52",
+      "claim": "For IN administration, 0.5 or 1 mg/kg of ketamine was delivered into the right or left nostril using an IN mucosal atomization device.",
+      "claim_type": "EXPLICIT",
+      "source": "For IN administration, 0.5 or 1 mg/kg of ketamine was delivered into the right or left nostril using an IN mucosal atomization device (MAD Nasal, Teleflex Medical).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for intranasal ketamine administration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "2d502368-55ce-45b8-a60a-1c7068b0b6f3",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C53",
+      "claim": "Ketamine was administered with a 6.4-day interval on average (2\u20137 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine was administered with a 6.4-day interval on average (2\u20137 days), and sterile saline (IM) or sterile water (IN) were administered in-between successive ketamine sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for drug administration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "018a2482-3a4e-4fad-a5f0-7cf8d75cdb04",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C54",
+      "claim": "Sterile saline (IM) or sterile water (IN) were administered in-between successive ketamine sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ketamine was administered with a 6.4-day interval on average (2\u20137 days), and sterile saline (IM) or sterile water (IN) were administered in-between successive ketamine sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the control condition in the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "e6bf5b3d-cd26-489f-9220-70230f0e5b22",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C55",
+      "claim": "The acute effect of ketamine to reduce the initial impact of negative events could potentially mediate longer-term antidepressant effects through mitigating the cumulative effect of those events produced by slowly decaying memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We discuss how the acute effect of ketamine to reduce the initial impact of negative events could potentially mediate longer-term antidepressant effects through mitigating the cumulative effect of those events produced by slowly decaying memory, and how the disruption-resistant affective memory might pose challenges in treating depression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis discussed based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b3e45767-5e5d-46cf-ab2c-4fe9649ae3c8",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C56",
+      "claim": "The disruption-resistant affective memory might pose challenges in treating depression.",
+      "claim_type": "EXPLICIT",
+      "source": "We discuss how the acute effect of ketamine to reduce the initial impact of negative events could potentially mediate longer-term antidepressant effects through mitigating the cumulative effect of those events produced by slowly decaying memory, and how the disruption-resistant affective memory might pose challenges in treating depression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis discussed based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "f6c56a1e-9109-4f7a-8a4a-7c47241c8137",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C57",
+      "claim": "The acute behavioral effect of ketamine that can be indicative of and/or predict longer-term effects has been hard to isolate from dissociative side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the acute behavioral effect that can be indicative of and/or predict longer-term effects has been hard to isolate from dissociative side effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "69e6ec95-9e8d-4d3f-8aa0-a9042cde752b",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C58",
+      "claim": "The acute behavioral effects of ketamine that might reflect antidepressant activity have seldom been systematically examined as the potential antidepressant effects could be obscured by dissociative side effects in the assessment based on self-report/rating.",
+      "claim_type": "EXPLICIT",
+      "source": "The acute behavioral effects of ketamine that might reflect antidepressant activity have seldom been systematically examined as the potential antidepressant effects could be obscured by dissociative side effects in the assessment based on self-report/rating (Berman et al., 2000; Sanacora et al., 2017; Gould et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the literature supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "82a85250-689a-45d5-ac60-5e012ee4bd29",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C59",
+      "claim": "The study identified the robust effect of ketamine in attenuating negative evaluation of decision outcomes, without affecting the animal's motivation to obtain juice reward, the ability for proper TCA or the time constant of memory decay for decision outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified the robust effect of ketamine in attenuating negative evaluation of decision outcomes, without affecting the animal's motivation to obtain juice reward, the ability for proper TCA or the time constant of memory decay for decision outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "c8367376-d166-4032-84b4-aa1c267bbeeb",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C60",
+      "claim": "The study demonstrates the sensitivity and the potential of the non-human primate model in assessing behavioral and systems-level mechanisms of antidepressant action.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also demonstrates the sensitivity and the potential of the non-human primate model in assessing behavioral and systems-level mechanisms of antidepressant action as well as investigating the pathophysiology of depression when combined with recently developed tools for large-scale neural recording and circuit manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the value of the experimental approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "8d76291b-d556-4036-a567-bd3b006d5df4",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C61",
+      "claim": "The study demonstrates the sensitivity and the potential of the non-human primate model for investigating the pathophysiology of depression when combined with recently developed tools for large-scale neural recording and circuit manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also demonstrates the sensitivity and the potential of the non-human primate model in assessing behavioral and systems-level mechanisms of antidepressant action as well as investigating the pathophysiology of depression when combined with recently developed tools for large-scale neural recording and circuit manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the value of the experimental approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "03c14f76-9ff8-4e92-89ed-4789698923c3",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C62",
+      "claim": "The results demonstrate the sensitivity and the potential of the non-human primate model for investigation of the neurobiology of depression and antidepressant treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our results demonstrate the sensitivity and the potential of the non-human primate model for investigation of the neurobiology of depression and antidepressant treatments, warranting further study on the mechanisms of ketamine's antidepressant action over different mood states and contexts carrying affective events that have impacts at diverse time scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the value of the experimental approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "720ad0ba-2ffd-43e8-9e8e-0a3125f4fc99",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C63",
+      "claim": "The computer opponent simulated a rational player who exploits any predictable patterns in the animal's choice and outcome history to minimize the animal's payoff.",
+      "claim_type": "EXPLICIT",
+      "source": "The computer opponent simulated a rational player who exploits any predictable patterns in the animal's choice and outcome history to minimize the animal's payoff (Seo and Lee, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design of the behavioral task.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "f7d7383c-fe29-4400-b004-d7d515a093dd",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C64",
+      "claim": "To maximize payoff, the animals were required to dynamically change their choices to minimize serial correlations in the sequence of choice and outcome that could be exploited by the opponent.",
+      "claim_type": "EXPLICIT",
+      "source": "To maximize payoff, the animals were required to dynamically change their choices to minimize serial correlations in the sequence of choice and outcome that could be exploited by the opponent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task demands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "367cff01-69a3-4575-91b1-c580fc9e7957",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C65",
+      "claim": "Eye position was sampled and recorded at 250 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye position was sampled and recorded at 250 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b84b68bf-2de8-4580-ac63-5b0d7e424fdd",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C66",
+      "claim": "Average velocity of eye movement during pre-feedback fixation on a chosen target was used to detect the slow phase of the nystagmus induced by ketamine.",
+      "claim_type": "EXPLICIT",
+      "source": "We used average velocity of eye movement during pre-feedback fixation on a chosen target to detect the slow phase of the nystagmus induced by ketamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis method for nystagmus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "08859d2a-630c-4bea-a82f-2202a7ca8996",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C67",
+      "claim": "Blood samples were collected at 10, 25, 40, 60, and 75 min following ketamine administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood samples were collected at 10, 25, 40, 60, and 75 min following ketamine administration and analyzed with the high performance liquid chromatography (HPLC) protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for pharmacokinetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "c3629c0c-45e6-4a3d-aa91-b6e8cc38cc96",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C68",
+      "claim": "Plasma samples were analyzed with the high performance liquid chromatography (HPLC) protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Blood samples were collected at 10, 25, 40, 60, and 75 min following ketamine administration and analyzed with the high performance liquid chromatography (HPLC) protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method for measuring ketamine concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "faaa8fb5-ca6a-49b5-9a9f-f51c989b1206",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C69",
+      "claim": "0.25 mg/kg of IM-administered and 0.5 mg/kg of IN-administered ketamine produced qualitatively similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "0.25 mg/kg of IM-administered and 0.5 mg/kg of IN-administered ketamine produced qualitatively similar results (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "f09bf5d9-0daf-47c6-9415-13617420fd07",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C70",
+      "claim": "When the animal collected six tokens, they were automatically exchanged with six drops of apple juice.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the animal collected six tokens, they were automatically exchanged with six drops of apple juice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reward structure of the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "94d0c5dc-4d27-4243-b7c6-948feab9c884",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C71",
+      "claim": "After juice reward, the animal began the subsequent trial with two to four free tokens.",
+      "claim_type": "EXPLICIT",
+      "source": "After juice reward, the animal began the subsequent trial with two to four free tokens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "0541ec20-7963-47e4-8b90-8f0009823331",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C72",
+      "claim": "The locations of 'safe' and 'risky' targets were fixed during a block of 40 trials and then switched with a probability of 0.1 afterwards.",
+      "claim_type": "EXPLICIT",
+      "source": "The locations of 'safe' and 'risky' targets were fixed during a block of 40 trials and then switched with a probability of 0.1 afterwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the task structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "7a510977-d8aa-4fe4-871e-4b9460c34a38",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C73",
+      "claim": "The payoff matrix was adjusted for each animal to produce comparable choice behavior across all three animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The payoff matrix was adjusted for each animal to produce comparable choice behavior across all three animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design to control for individual differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "c39aef70-8e52-47f6-bfc9-174dbe181feb",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C74",
+      "claim": "When the animals matched the opponent's choice, they gained one (monkey P) or two (monkey Y/B) tokens.",
+      "claim_type": "EXPLICIT",
+      "source": "When the animals matched the opponent's choice, they gained one (monkey P) or two (monkey Y/B) tokens, whereas non-matching choices incurred either zero token (i.e. neutral outcome) or loss of one (Y/B) or two (P) tokens, with the probability of loss being higher (lower) than that of zero token for the risky (safe) target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the payoff structure of the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "971df746-eb0b-4135-8bca-e256ce93c1ff",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C75",
+      "claim": "Non-matching choices incurred either zero token or loss of one (Y/B) or two (P) tokens, with the probability of loss being higher than that of zero token for the risky target.",
+      "claim_type": "EXPLICIT",
+      "source": "When the animals matched the opponent's choice, they gained one (monkey P) or two (monkey Y/B) tokens, whereas non-matching choices incurred either zero token (i.e. neutral outcome) or loss of one (Y/B) or two (P) tokens, with the probability of loss being higher (lower) than that of zero token for the risky (safe) target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the payoff structure of the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "73e0f959-ce60-411b-8cd8-64cb97e8eebc",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C76",
+      "claim": "The probability of loss was lower than that of zero token for the safe target.",
+      "claim_type": "EXPLICIT",
+      "source": "When the animals matched the opponent's choice, they gained one (monkey P) or two (monkey Y/B) tokens, whereas non-matching choices incurred either zero token (i.e. neutral outcome) or loss of one (Y/B) or two (P) tokens, with the probability of loss being higher (lower) than that of zero token for the risky (safe) target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the payoff structure of the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "f3925d36-c588-4d66-b577-d8eb8800e075",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C77",
+      "claim": "Reinforcement learning models have been extensively and successfully applied to explain reward-guided choice behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "RL models have been extensively and successfully applied to explain reward-guided choice behavior (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "11381aa8-5aab-4925-97a8-d4b4e50ee722",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C78",
+      "claim": "BIC was used for model comparison and selection of the best model.",
+      "claim_type": "EXPLICIT",
+      "source": "BIC was used for model comparison and selection of the best model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for model selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "4309fda4-911c-49ed-a604-7ca3a584cff1",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C79",
+      "claim": "BIC differed only slightly (dBIC = 3.99) between the best-fitting (K-model 7) and the second-best model (K-model 4) for monkey P.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Bayesian information criterion (BIC) differed only slightly (dBIC = 3.99) between the best-fitting (K-model 7) and the second-best model (K-model 4) and the model predictions for choice behavior were very similar both qualitatively and quantitatively (Table 3 and Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "e48621a8-4920-45de-bc43-1988147c4c31",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C80",
+      "claim": "The model predictions for choice behavior were very similar both qualitatively and quantitatively between K-model 7 and K-model 4 for monkey P.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Bayesian information criterion (BIC) differed only slightly (dBIC = 3.99) between the best-fitting (K-model 7) and the second-best model (K-model 4) and the model predictions for choice behavior were very similar both qualitatively and quantitatively (Table 3 and Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model comparison analysis shown in Table 3 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "fc23dfca-f945-4d4a-bbba-17dfe738bf52",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C81",
+      "claim": "The behavioral effects of ketamine were consistent across all three monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the behavioral effects of ketamine were consistent across all three monkeys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis across all subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "73894c68-bcfe-441a-874d-a0b274ad8566",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "claim_id": "C82",
+      "claim": "The study did not find convincing evidence to support that ketamine significantly modulated cognitive (i.e. memory, temporal credit assignment models) or motivational (i.e. motivation model) aspects of the animal's behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find convincing evidence to support that ketamine significantly modulated cognitive (i.e. memory, temporal credit assignment [TCA] models) or motivational (i.e. motivation model) aspects of the animal's behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Three rhesus monkeys performed a token-based biased matching pennies task where they made choices to gain or lose tokens. Under saline control conditions, animals showed outcome-dependent choice behavior: they repeated choices that yielded tokens and switched away from choices that led to non-gain outcomes, with stronger switching after losses than neutral outcomes. The effects of past outcomes decayed exponentially over trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 and C47-C76 collectively describe the experimental design and baseline behavioral findings. The task design is clearly described with appropriate controls (saline sessions), and the behavioral patterns are quantified with regression analysis (Equation 1, Figure 1C). The exponential decay of outcome effects is demonstrated empirically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ketamine (0.5 mg/kg IM and 1 mg/kg IN) selectively reduced the punishing effect of non-gain outcomes, with significantly larger effects after losses than neutral outcomes. The modulation was larger for recent than remote outcomes and did not affect the time constant of memory decay. Both administration routes produced comparable plasma concentrations and behavioral effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 demonstrate ketamine's selective effect on negative outcome evaluation with appropriate statistical support (ANOVA, p<0.001 across animals). Claims C12-C13 and C67-C69 provide pharmacokinetic validation showing comparable drug exposure across routes and to human therapeutic doses. The parametric modeling (C15) appropriately isolates the initial impact effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "e6935a31-7836-4abc-9a1f-5d516fc6592a",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The differential forgetting (DF) reinforcement learning model best fit the baseline behavioral data in all three animals. In this model, value functions for chosen and unchosen actions decay at different rates, with slower forgetting for chosen than unchosen actions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 describe model selection results supported by BIC comparison (C78) across multiple model variants (Figure 3, Table 3). The DF model is established as the best baseline model, providing a foundation for analyzing ketamine effects. The approach follows standard RL modeling practices (C77).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ketamine's effects were best explained by valence-dependent changes in outcome evaluation. Under ketamine, value updates increased positively following all outcomes, but the change was larger for non-gain outcomes with the largest modulation after loss. This effect was consistent across all three animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C41-C42 describe the best-fitting ketamine model (K-model 4 or 7) with appropriate model comparison (Figure 4, Table 3). Claims C79-C80 acknowledge that for monkey P, two models fit similarly (dBIC=3.99), but both support the same interpretation. Claim C81 appropriately concludes consistency across subjects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "60267c23-cc19-4d51-951b-d536a2d0438d",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ketamine did not significantly change animals' motivation to earn reward, behavioral perseveration, or other cognitive aspects of learning including memory decay rates and temporal credit assignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C82 are supported by model comparison analyses showing that models incorporating changes in motivation, memory, or temporal credit assignment did not fit the data better than the valence-dependent outcome evaluation model (Figure 4, Table 2). This represents appropriate null findings from systematic model testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "4a92a077-a380-4464-99f3-2f288128949f",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ketamine induced ocular nystagmus during peripheral fixation, with significantly larger centripetal eye drift under ketamine compared to saline. The magnitude of nystagmus was larger with IM than IN administration. Both nystagmus and negative outcome evaluation effects peaked and waned within 1 hour after injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 describe oculomotor side effects with appropriate statistical support (ANOVA, p<0.001; t-test, p<0.001) and clear methodology (C65-C66). The time course analysis (Figures 6-7) demonstrates parallel temporal dynamics for nystagmus and behavioral effects, though the claims appropriately note these may reflect different mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "1cceacf4-a4aa-47a3-9291-3d22c8dd0832",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ketamine-induced fixation errors decreased as animals owned more tokens and were closer to reward, suggesting animals could counter this side effect with strong motivation. However, ketamine's modulation of loss evaluation did not change with motivation level, indicating separability of the potentially antidepressant effect from oculomotor side effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by linear regression analyses (p<0.001 for fixation errors, p>0.25 for loss evaluation) shown in Figure 8. Claims C31-C32 and C46 appropriately interpret this dissociation as evidence that the behavioral effect on outcome evaluation is independent of oculomotor side effects and motivation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "6e2593fc-c2fb-4676-babf-59740a541562",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ketamine acutely reduced the adverse effect of undesirable outcomes (losses) without significantly affecting evaluation of gains, behavioral perseveration, motivation, or cognitive aspects of learning such as temporal credit assignment and memory time scales. This effect was independent of other side effects like ocular nystagmus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 and C59 synthesize the main findings, which are supported by the regression analyses (C10-C11), RL modeling (C18-C20), and dissociation from side effects (C25-C27). These summary claims accurately reflect the convergent evidence from multiple analytical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "d7d21ae6-a815-4914-838b-6ed9b45a1149",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "While ketamine's antidepressant effect in humans is reported to be sustained over a week, ketamine's effect on outcome evaluation in this study was acute and did not last over subsequent days.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 appropriately cites prior literature (Zarate et al., 2006) for sustained clinical effects. Claim C37 is supported by data shown in Figure 9 demonstrating no carryover effects in sessions >1 day after ketamine. This temporal dissociation is important for interpreting the acute behavioral findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "0abed70a-729b-4e78-a5a7-8c33847cd31c",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The attenuation of initial impact of loss had longer-term effects beyond initial evaluation due to slowly decaying memory. The authors propose that ketamine's acute effect in reducing the initial impact of negative events could potentially mediate longer-term antidepressant effects by mitigating cumulative effects of those events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C38 is supported by the data showing slow memory decay (Figure 1C). However, claim C55 is explicitly speculative (\"could potentially mediate\") and represents a hypothesis rather than a demonstrated result. The proposed mechanism linking acute to long-term effects requires further validation and is appropriately presented as discussion rather than established finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "5ad08e75-41ff-408c-8f6a-65e43bf50c44",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The results are consistent with previous findings that ketamine affects integration of information for decision but not the learning process itself. The memory of affective events and their associations may be more resistant to acute disruption by NMDA receptor blockade than affectively neutral information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 appropriately compares findings to prior work (Scholl et al., 2014). Claim C44 is a reasonable interpretation supported by the finding that temporal credit assignment and memory decay were not affected (C82) while outcome evaluation was modulated (C10). The inference is appropriately qualified (\"might be\").",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "44ce5bc6-edd7-4137-9373-5b876c2e3b67",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates the sensitivity and potential of the non-human primate model for assessing behavioral and systems-level mechanisms of antidepressant action and investigating the pathophysiology of depression, particularly when combined with tools for large-scale neural recording and circuit manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by the successful demonstration of specific, quantifiable behavioral effects of therapeutic ketamine doses in a complex decision-making task. The study shows that detailed computational modeling can dissect drug effects on specific cognitive/affective processes in primates, validating the approach for future mechanistic studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "c502726f-beca-4d6c-b425-5745a6578b94",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establish that ketamine is an NMDA receptor antagonist and rapid-acting antidepressant, that depression involves negative bias in emotional processing, and that acute behavioral effects of ketamine have been difficult to isolate from dissociative side effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 and C33-C40 appropriately cite established literature to provide context. Claims C57-C58 correctly identify a gap in the field regarding acute behavioral effects. These background claims are well-supported by citations and provide appropriate motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "a6847fb0-0516-4761-9c83-ddbde60bfe3a",
+      "content_id": "7efc819b-26f1-46d0-9181-5656eed9e08d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The disruption-resistant affective memory might pose challenges in treating depression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 is speculative and extrapolates from the finding that affective memory appears resistant to acute ketamine effects (C44). While this is a reasonable hypothesis for discussion, it is not directly tested in the study and represents future work rather than an established result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "6f9989a8-5508-4c7e-9004-32e11b4ad92e",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Ketamine selectively reduced the punishing effect of non-gain outcomes, particularly losses, without significantly affecting evaluation of gains, behavioral perseveration, motivation, or other cognitive aspects of learning. This effect was demonstrated through reinforcement learning modeling showing that ketamine reduced the aversiveness of losses more than neutral outcomes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this finding. The editor states 'the evidence supporting the conclusion that ketamine reduces the impact of losses vs. neutral/gains is solid.' Reviewer 1 confirms the authors 'use sophisticated reinforcement learning (RL) modeling to show that acute ketamine reduces the strength impact of losses vs neutral/gains.' Reviewer 2 states 'the data suggesting that ketamine primarily affects on the processing of losses (under the procedures used) are solid.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "6a5b8119-431a-414a-ae10-61412f70d5c4",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The model incorporating valence-dependent change in outcome evaluation best fit the ketamine data across all three animals, with some evidence of increased choice perseveration. Two animals (Y/B) showed primarily loss processing effects, while one animal (P) showed both loss processing and perseveration effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises concerns about generalizability, noting 'one macaque tested with different parameters than the other two exhibiting effects of ketamine that were best fit with a different model than the other two macaques, suggests that there may be difficulty in generalizing these findings.' The reviewer questions whether 'changes in the size of the rewards and punishments suddenly make ketamine affect perseveration' and whether this suggests 'ketamine's effect is highly parameter-specific.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "a0edf1ff-7d3c-4711-833d-f415d17d4e0c",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Ketamine's effect on loss evaluation was separable from side effects like fixation errors and nystagmus. Fixation errors could be countered by strong motivation (more tokens owned), while the loss evaluation effect was independent of motivational state.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this dissociation finding. Reviewer 2 states 'They found that these effects of ketamine appeared to be dissociable from the nystagmus effects of the ketamine.' No reviewer challenges the separability of these effects, though the broader interpretation regarding antidepressant mechanisms is questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "273b76b5-34f8-47ce-a229-66f35790c0ea",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors propose that ketamine's acute effect on reducing negative evaluation could potentially mediate longer-term antidepressant effects through mitigating cumulative effects of negative events, linking their findings to negative affective bias in depression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Multiple reviewers express concern about this interpretation. Reviewer 1 notes the authors 'make more measured interpretations about the potential relevance of their results to ketamine's antidepressant effects for the most part' but still flags 'the last sentence of the introduction, which continues to suggest they are studying both mechanisms of antidepressant actions as well as the pathophysiology of depression.' Reviewer 2 states 'it is unclear whether the connection between the processing of losses and the antidepressant effects of ketamine is justified' and notes 'the authors provide little to no support for this link, so the current version represents solid evidence for an effect on loss processing and incomplete or weak evidence for an antidepressant effect.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "83a16f88-2537-4c7c-b0af-a98c711fb94d",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Ketamine did not significantly modulate the time constant of memory decay, motivation to earn reward, or other cognitive aspects of learning such as temporal credit assignment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these negative findings. The findings are presented as part of the overall characterization of ketamine's selective effects, and reviewers accept that ketamine's effects were specific to loss processing rather than affecting these other cognitive parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "9fe81a8e-cb98-4c7b-89e6-d233af8ec88e",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Different doses and routes of ketamine administration (0.5 mg/kg IM and 1 mg/kg IN) produced comparable plasma concentrations and behavioral effects, with pharmacokinetics comparable to human therapeutic doses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the pharmacokinetic data or dose comparisons. These methodological details are accepted as supporting the validity of the behavioral findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "a5af7cf9-23af-40f9-89a2-fafd16e5e2c5",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Ketamine induced ocular nystagmus (centripetal eye drift) during peripheral fixation, with effects peaking and waning within 1 hour. IM administration produced larger nystagmus than IN administration.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these side effects without challenge. Reviewer 2 notes the dissociability of nystagmus from the loss processing effects, implicitly accepting the nystagmus findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "611fe51a-2668-4381-b63e-513a5df3d43f",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Ketamine's effect on outcome evaluation was acute and did not persist over subsequent days, contrasting with the sustained antidepressant effects reported in clinical studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this temporal characterization. The acute nature of the effect is accepted as part of the study's findings, though its relationship to sustained antidepressant effects remains questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "9d3086de-f444-4715-9715-572a43a1a0ba",
+      "content_id": "a98a8392-0549-425c-b11a-b509716f1fff",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The study demonstrates the sensitivity and potential of the non-human primate model for investigating behavioral mechanisms of antidepressant action and depression neurobiology.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the editor calls this 'a valuable study,' Reviewer 2 questions the broader implications, stating 'the current findings may be more useful for those studying reinforcement learning than those studying depression and antidepressant effects.' The methodological contribution is acknowledged, but its specific relevance to depression research is questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3290c7ae-feac-46b6-b806-a3ebdea694be",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "eb32e117-37b9-4567-86a5-b7e0c2ab2a03",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "d6011f49-3771-44f1-a76d-cecda8fc5a6a",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "1507e5ea-88e4-4ff4-ab33-9a35269d24d2",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "621ee690-fe2c-4578-9173-33ce4e77d0c1",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "4dc81b32-8f27-4830-b93d-25caa04a58f5",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "8cda3e57-38cd-45dd-b60d-35bef0275cc4",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "720ad0ba-2ffd-43e8-9e8e-0a3125f4fc99",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "f7d7383c-fe29-4400-b004-d7d515a093dd",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "f09bf5d9-0daf-47c6-9415-13617420fd07",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "94d0c5dc-4d27-4243-b7c6-948feab9c884",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "0541ec20-7963-47e4-8b90-8f0009823331",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "7a510977-d8aa-4fe4-871e-4b9460c34a38",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "c39aef70-8e52-47f6-bfc9-174dbe181feb",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "971df746-eb0b-4135-8bca-e256ce93c1ff",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "73e0f959-ce60-411b-8cd8-64cb97e8eebc",
+      "result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8"
+    },
+    {
+      "claim_id": "e399174b-34c9-45eb-b8f8-8aba401f95e3",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "ec493f1d-a7c2-427d-8f2d-37fcdf507402",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "8b9ace28-5932-412f-b149-cb9e64196aeb",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "95efe47d-e0bf-49b7-98fd-55aee131cab3",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "f57797f6-d342-49e5-af14-dc41468fa5e1",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "b61cc32a-e110-408d-afc7-bb54fd025a0a",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "b9ae151a-28c8-4c12-b087-59da5eb1364d",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "719ee28a-4656-47d8-aec0-e7e11bb58c0b",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "2d502368-55ce-45b8-a60a-1c7068b0b6f3",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "018a2482-3a4e-4fad-a5f0-7cf8d75cdb04",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "08859d2a-630c-4bea-a82f-2202a7ca8996",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "c3629c0c-45e6-4a3d-aa91-b6e8cc38cc96",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "faaa8fb5-ca6a-49b5-9a9f-f51c989b1206",
+      "result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88"
+    },
+    {
+      "claim_id": "1e4efce5-a604-4fcd-a2e5-0678f5dec121",
+      "result_id": "e6935a31-7836-4abc-9a1f-5d516fc6592a"
+    },
+    {
+      "claim_id": "f627de5a-b84c-4f92-9381-656d7da3224c",
+      "result_id": "e6935a31-7836-4abc-9a1f-5d516fc6592a"
+    },
+    {
+      "claim_id": "f3925d36-c588-4d66-b577-d8eb8800e075",
+      "result_id": "e6935a31-7836-4abc-9a1f-5d516fc6592a"
+    },
+    {
+      "claim_id": "11381aa8-5aab-4925-97a8-d4b4e50ee722",
+      "result_id": "e6935a31-7836-4abc-9a1f-5d516fc6592a"
+    },
+    {
+      "claim_id": "11d72b76-42d2-429e-b037-c6e50a0ddc6c",
+      "result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3"
+    },
+    {
+      "claim_id": "b1aae533-0cea-46db-97df-ac97b5734229",
+      "result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3"
+    },
+    {
+      "claim_id": "b66b57f5-63d6-4808-88f7-c70c3ccca241",
+      "result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3"
+    },
+    {
+      "claim_id": "7c051468-9e75-4090-bb9e-c5c6384ad44e",
+      "result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3"
+    },
+    {
+      "claim_id": "b55f529e-11db-402d-a4e6-24a8a433f4e3",
+      "result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3"
+    },
+    {
+      "claim_id": "4309fda4-911c-49ed-a604-7ca3a584cff1",
+      "result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3"
+    },
+    {
+      "claim_id": "e48621a8-4920-45de-bc43-1988147c4c31",
+      "result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3"
+    },
+    {
+      "claim_id": "fc23dfca-f945-4d4a-bbba-17dfe738bf52",
+      "result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3"
+    },
+    {
+      "claim_id": "8dffa0bd-bf00-46ed-9097-7d47ec62713a",
+      "result_id": "60267c23-cc19-4d51-951b-d536a2d0438d"
+    },
+    {
+      "claim_id": "73894c68-bcfe-441a-874d-a0b274ad8566",
+      "result_id": "60267c23-cc19-4d51-951b-d536a2d0438d"
+    },
+    {
+      "claim_id": "b6907840-a04c-4a71-9213-54de6814bf01",
+      "result_id": "4a92a077-a380-4464-99f3-2f288128949f"
+    },
+    {
+      "claim_id": "1d4352d7-d2a9-489b-b1c0-145e0077b723",
+      "result_id": "4a92a077-a380-4464-99f3-2f288128949f"
+    },
+    {
+      "claim_id": "9fe6f5cb-4f67-473e-a536-2cac193e6a28",
+      "result_id": "4a92a077-a380-4464-99f3-2f288128949f"
+    },
+    {
+      "claim_id": "6f36db18-9616-4cb6-9850-168d2827550b",
+      "result_id": "4a92a077-a380-4464-99f3-2f288128949f"
+    },
+    {
+      "claim_id": "367cff01-69a3-4575-91b1-c580fc9e7957",
+      "result_id": "4a92a077-a380-4464-99f3-2f288128949f"
+    },
+    {
+      "claim_id": "b84b68bf-2de8-4580-ac63-5b0d7e424fdd",
+      "result_id": "4a92a077-a380-4464-99f3-2f288128949f"
+    },
+    {
+      "claim_id": "acf2cfeb-a95a-4eb0-b036-3782a4508fe5",
+      "result_id": "1cceacf4-a4aa-47a3-9291-3d22c8dd0832"
+    },
+    {
+      "claim_id": "ce9e7e3c-9047-4b37-b30b-fdd7d80629ff",
+      "result_id": "1cceacf4-a4aa-47a3-9291-3d22c8dd0832"
+    },
+    {
+      "claim_id": "a27f9a80-55c7-4928-9308-e197128187ea",
+      "result_id": "1cceacf4-a4aa-47a3-9291-3d22c8dd0832"
+    },
+    {
+      "claim_id": "4895c326-2196-4315-90c1-73858ce22b97",
+      "result_id": "1cceacf4-a4aa-47a3-9291-3d22c8dd0832"
+    },
+    {
+      "claim_id": "fa17e533-e3e3-46ff-86ba-bb96b4984451",
+      "result_id": "1cceacf4-a4aa-47a3-9291-3d22c8dd0832"
+    },
+    {
+      "claim_id": "d84a8a57-c77c-4e9c-a1fd-36827d71481b",
+      "result_id": "1cceacf4-a4aa-47a3-9291-3d22c8dd0832"
+    },
+    {
+      "claim_id": "aaac87ee-1776-43f2-9ed7-1def3ab7f931",
+      "result_id": "6e2593fc-c2fb-4676-babf-59740a541562"
+    },
+    {
+      "claim_id": "f005d1e4-ef91-47b2-9ea6-bc3b5fee3dff",
+      "result_id": "6e2593fc-c2fb-4676-babf-59740a541562"
+    },
+    {
+      "claim_id": "82a85250-689a-45d5-ac60-5e012ee4bd29",
+      "result_id": "6e2593fc-c2fb-4676-babf-59740a541562"
+    },
+    {
+      "claim_id": "41014cf4-bf26-4362-8ce4-39f4300da669",
+      "result_id": "d7d21ae6-a815-4914-838b-6ed9b45a1149"
+    },
+    {
+      "claim_id": "a8a9cce5-e360-489f-8541-0ddd768d24bd",
+      "result_id": "d7d21ae6-a815-4914-838b-6ed9b45a1149"
+    },
+    {
+      "claim_id": "ebbb469a-41d2-4704-aa9a-2f330dbe975c",
+      "result_id": "0abed70a-729b-4e78-a5a7-8c33847cd31c"
+    },
+    {
+      "claim_id": "e6bf5b3d-cd26-489f-9220-70230f0e5b22",
+      "result_id": "0abed70a-729b-4e78-a5a7-8c33847cd31c"
+    },
+    {
+      "claim_id": "53ea17c5-89ca-4d7e-84ea-5557629b548d",
+      "result_id": "5ad08e75-41ff-408c-8f6a-65e43bf50c44"
+    },
+    {
+      "claim_id": "2308f674-92e3-4a24-8c9c-96fc04698733",
+      "result_id": "5ad08e75-41ff-408c-8f6a-65e43bf50c44"
+    },
+    {
+      "claim_id": "c8367376-d166-4032-84b4-aa1c267bbeeb",
+      "result_id": "44ce5bc6-edd7-4137-9373-5b876c2e3b67"
+    },
+    {
+      "claim_id": "8d76291b-d556-4036-a567-bd3b006d5df4",
+      "result_id": "44ce5bc6-edd7-4137-9373-5b876c2e3b67"
+    },
+    {
+      "claim_id": "03c14f76-9ff8-4e92-89ed-4789698923c3",
+      "result_id": "44ce5bc6-edd7-4137-9373-5b876c2e3b67"
+    },
+    {
+      "claim_id": "d42c523c-2b22-47ac-a8c9-9d508609688c",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "947a6b56-455a-41a4-bb37-c4fa8e391da6",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "b195eccc-c30e-471d-a010-2344fb4f6d07",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "467ee1c1-6ae7-454e-bee4-5d420a54ecc7",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "0729f082-f140-4e33-bf3d-879eda9990eb",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "2e64ad47-579e-4dea-b3d5-85b737df8b3b",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "9e5890f6-9a41-48e0-a6ba-77e55b43c157",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "4864e83b-0658-4d90-868a-93e6e6a4c1b4",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "b9d66465-b210-4e15-8496-4569c5a567be",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "d6b5b99d-747a-4f58-865a-d6b108e77857",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "f389ff70-eae0-495c-87f2-eb6c0d2318a4",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "f6c56a1e-9109-4f7a-8a4a-7c47241c8137",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "69e6ec95-9e8d-4d3f-8aa0-a9042cde752b",
+      "result_id": "c502726f-beca-4d6c-b425-5745a6578b94"
+    },
+    {
+      "claim_id": "b3e45767-5e5d-46cf-ab2c-4fe9649ae3c8",
+      "result_id": "a6847fb0-0516-4761-9c83-ddbde60bfe3a"
+    },
+    {
+      "claim_id": "e399174b-34c9-45eb-b8f8-8aba401f95e3",
+      "result_id": "6f9989a8-5508-4c7e-9004-32e11b4ad92e"
+    },
+    {
+      "claim_id": "b66b57f5-63d6-4808-88f7-c70c3ccca241",
+      "result_id": "6f9989a8-5508-4c7e-9004-32e11b4ad92e"
+    },
+    {
+      "claim_id": "f005d1e4-ef91-47b2-9ea6-bc3b5fee3dff",
+      "result_id": "6f9989a8-5508-4c7e-9004-32e11b4ad92e"
+    },
+    {
+      "claim_id": "82a85250-689a-45d5-ac60-5e012ee4bd29",
+      "result_id": "6f9989a8-5508-4c7e-9004-32e11b4ad92e"
+    },
+    {
+      "claim_id": "11d72b76-42d2-429e-b037-c6e50a0ddc6c",
+      "result_id": "6a5b8119-431a-414a-ae10-61412f70d5c4"
+    },
+    {
+      "claim_id": "b1aae533-0cea-46db-97df-ac97b5734229",
+      "result_id": "6a5b8119-431a-414a-ae10-61412f70d5c4"
+    },
+    {
+      "claim_id": "7c051468-9e75-4090-bb9e-c5c6384ad44e",
+      "result_id": "6a5b8119-431a-414a-ae10-61412f70d5c4"
+    },
+    {
+      "claim_id": "b55f529e-11db-402d-a4e6-24a8a433f4e3",
+      "result_id": "6a5b8119-431a-414a-ae10-61412f70d5c4"
+    },
+    {
+      "claim_id": "fc23dfca-f945-4d4a-bbba-17dfe738bf52",
+      "result_id": "6a5b8119-431a-414a-ae10-61412f70d5c4"
+    },
+    {
+      "claim_id": "aaac87ee-1776-43f2-9ed7-1def3ab7f931",
+      "result_id": "a0edf1ff-7d3c-4711-833d-f415d17d4e0c"
+    },
+    {
+      "claim_id": "4895c326-2196-4315-90c1-73858ce22b97",
+      "result_id": "a0edf1ff-7d3c-4711-833d-f415d17d4e0c"
+    },
+    {
+      "claim_id": "fa17e533-e3e3-46ff-86ba-bb96b4984451",
+      "result_id": "a0edf1ff-7d3c-4711-833d-f415d17d4e0c"
+    },
+    {
+      "claim_id": "acf2cfeb-a95a-4eb0-b036-3782a4508fe5",
+      "result_id": "a0edf1ff-7d3c-4711-833d-f415d17d4e0c"
+    },
+    {
+      "claim_id": "ce9e7e3c-9047-4b37-b30b-fdd7d80629ff",
+      "result_id": "a0edf1ff-7d3c-4711-833d-f415d17d4e0c"
+    },
+    {
+      "claim_id": "a27f9a80-55c7-4928-9308-e197128187ea",
+      "result_id": "a0edf1ff-7d3c-4711-833d-f415d17d4e0c"
+    },
+    {
+      "claim_id": "2e64ad47-579e-4dea-b3d5-85b737df8b3b",
+      "result_id": "273b76b5-34f8-47ce-a229-66f35790c0ea"
+    },
+    {
+      "claim_id": "9e5890f6-9a41-48e0-a6ba-77e55b43c157",
+      "result_id": "273b76b5-34f8-47ce-a229-66f35790c0ea"
+    },
+    {
+      "claim_id": "4864e83b-0658-4d90-868a-93e6e6a4c1b4",
+      "result_id": "273b76b5-34f8-47ce-a229-66f35790c0ea"
+    },
+    {
+      "claim_id": "e6bf5b3d-cd26-489f-9220-70230f0e5b22",
+      "result_id": "273b76b5-34f8-47ce-a229-66f35790c0ea"
+    },
+    {
+      "claim_id": "b3e45767-5e5d-46cf-ab2c-4fe9649ae3c8",
+      "result_id": "273b76b5-34f8-47ce-a229-66f35790c0ea"
+    },
+    {
+      "claim_id": "f57797f6-d342-49e5-af14-dc41468fa5e1",
+      "result_id": "83a16f88-2537-4c7c-b0af-a98c711fb94d"
+    },
+    {
+      "claim_id": "8dffa0bd-bf00-46ed-9097-7d47ec62713a",
+      "result_id": "83a16f88-2537-4c7c-b0af-a98c711fb94d"
+    },
+    {
+      "claim_id": "73894c68-bcfe-441a-874d-a0b274ad8566",
+      "result_id": "83a16f88-2537-4c7c-b0af-a98c711fb94d"
+    },
+    {
+      "claim_id": "8b9ace28-5932-412f-b149-cb9e64196aeb",
+      "result_id": "9fe81a8e-cb98-4c7b-89e6-d233af8ec88e"
+    },
+    {
+      "claim_id": "95efe47d-e0bf-49b7-98fd-55aee131cab3",
+      "result_id": "9fe81a8e-cb98-4c7b-89e6-d233af8ec88e"
+    },
+    {
+      "claim_id": "faaa8fb5-ca6a-49b5-9a9f-f51c989b1206",
+      "result_id": "9fe81a8e-cb98-4c7b-89e6-d233af8ec88e"
+    },
+    {
+      "claim_id": "b6907840-a04c-4a71-9213-54de6814bf01",
+      "result_id": "a5af7cf9-23af-40f9-89a2-fafd16e5e2c5"
+    },
+    {
+      "claim_id": "1d4352d7-d2a9-489b-b1c0-145e0077b723",
+      "result_id": "a5af7cf9-23af-40f9-89a2-fafd16e5e2c5"
+    },
+    {
+      "claim_id": "9fe6f5cb-4f67-473e-a536-2cac193e6a28",
+      "result_id": "a5af7cf9-23af-40f9-89a2-fafd16e5e2c5"
+    },
+    {
+      "claim_id": "6f36db18-9616-4cb6-9850-168d2827550b",
+      "result_id": "a5af7cf9-23af-40f9-89a2-fafd16e5e2c5"
+    },
+    {
+      "claim_id": "41014cf4-bf26-4362-8ce4-39f4300da669",
+      "result_id": "611fe51a-2668-4381-b63e-513a5df3d43f"
+    },
+    {
+      "claim_id": "a8a9cce5-e360-489f-8541-0ddd768d24bd",
+      "result_id": "611fe51a-2668-4381-b63e-513a5df3d43f"
+    },
+    {
+      "claim_id": "c8367376-d166-4032-84b4-aa1c267bbeeb",
+      "result_id": "9d3086de-f444-4715-9715-572a43a1a0ba"
+    },
+    {
+      "claim_id": "8d76291b-d556-4036-a567-bd3b006d5df4",
+      "result_id": "9d3086de-f444-4715-9715-572a43a1a0ba"
+    },
+    {
+      "claim_id": "03c14f76-9ff8-4e92-89ed-4789698923c3",
+      "result_id": "9d3086de-f444-4715-9715-572a43a1a0ba"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "989e7216-4c05-4ae8-8249-4d4165d8b972",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "d7d21ae6-a815-4914-838b-6ed9b45a1149",
+      "peer_result_id": "611fe51a-2668-4381-b63e-513a5df3d43f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C36-C37 regarding temporal characteristics. Both evaluations support that ketamine effects are acute without carryover, though peer reviewers question the relationship to sustained antidepressant effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "dddef39a-d8bd-476d-b613-93f2a776c07a",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "44ce5bc6-edd7-4137-9373-5b876c2e3b67",
+      "peer_result_id": "9d3086de-f444-4715-9715-572a43a1a0ba",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C60-C62 about methodological contributions. OpenEval finds the approach fully supported, while peer reviewers express uncertainty about broader implications, with Reviewer 2 questioning whether findings are more relevant to reinforcement learning than depression research.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "095e2bae-b89d-4930-a937-6202f7387a0c",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1cceacf4-a4aa-47a3-9291-3d22c8dd0832",
+      "peer_result_id": "a0edf1ff-7d3c-4711-833d-f415d17d4e0c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C25-C27, C31-C32 regarding dissociation between behavioral effects and oculomotor side effects. Both evaluations support this finding, though peer reviewers question broader interpretations about antidepressant mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "fdf3a994-8723-466a-b81d-33127878a68d",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "60267c23-cc19-4d51-951b-d536a2d0438d",
+      "peer_result_id": "83a16f88-2537-4c7c-b0af-a98c711fb94d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C28, C82 regarding negative findings. Both evaluations support that ketamine did not affect motivation, memory, or temporal credit assignment, accepting these as valid null results that characterize ketamine's selectivity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "5386d432-f8b7-4175-b0cd-3d3ae5d80c87",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4a92a077-a380-4464-99f3-2f288128949f",
+      "peer_result_id": "a5af7cf9-23af-40f9-89a2-fafd16e5e2c5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C21-C24 regarding oculomotor side effects. Both evaluations support the nystagmus findings with appropriate statistical support, accepting these as documented side effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "464e833a-77f3-4fda-b80a-bda9981a833b",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "e95fffdb-f386-4e0c-9feb-9ee3f7f5f4b3",
+      "peer_result_id": "6a5b8119-431a-414a-ae10-61412f70d5c4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergence on claims C18-C19, C41-C42, C81 regarding model selection and generalizability. OpenEval finds the best-fitting ketamine model supported across subjects, while Reviewer 2 raises concerns about parameter-specificity and generalizability due to different models fitting different subjects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "248adbf2-033e-4ac3-97dd-e793654ba98d",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "6e2593fc-c2fb-4676-babf-59740a541562",
+      "peer_result_id": "6f9989a8-5508-4c7e-9004-32e11b4ad92e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address main findings (C29-C30, C59) about ketamine's selective effect on loss processing. OpenEval finds these summary claims supported by convergent evidence, and peer reviewers explicitly affirm the core finding with the editor calling evidence 'solid.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "e8406681-2ccc-49dd-b996-fb6037a1b556",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "8da9f8c4-3506-40f9-a24c-bcbce1496e88",
+      "peer_result_id": "9fe81a8e-cb98-4c7b-89e6-d233af8ec88e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C12-C13, C69 regarding pharmacokinetic validation. Both evaluations support the dose comparisons and drug exposure data as methodologically sound without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "4d2bbbc4-6699-4e07-b3b3-633cdba61e4f",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "c502726f-beca-4d6c-b425-5745a6578b94",
+      "peer_result_id": "273b76b5-34f8-47ce-a229-66f35790c0ea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on background claims C33-C35. OpenEval finds these appropriately cited, while peer reviewers (particularly Reviewer 1) express concern about framing regarding antidepressant mechanisms and depression pathophysiology in the introduction.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "1c4878d0-6aa7-4348-aee7-8a732a23e1a4",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "a6847fb0-0516-4761-9c83-ddbde60bfe3a",
+      "peer_result_id": "273b76b5-34f8-47ce-a229-66f35790c0ea",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claim C56 about affective memory resistance. OpenEval rates as uncertain/speculative, and peer reviewers similarly question the connection to antidepressant effects, noting weak or incomplete evidence for this interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "18d323af-e617-4596-831d-98cf789086ef",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "0abed70a-729b-4e78-a5a7-8c33847cd31c",
+      "peer_result_id": "273b76b5-34f8-47ce-a229-66f35790c0ea",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claim C55 about mechanisms linking acute to long-term effects. OpenEval rates as uncertain/speculative, and peer reviewers express similar concerns, with Reviewer 2 stating authors provide 'little to no support for this link.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "b533a844-af1f-4cbd-ab65-e9bd2a037bbc",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "12c3de28-a206-46fc-ab41-f3bbaeb006a8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C6-C9, C47-C76 regarding experimental design and baseline behavioral findings as supported. No corresponding peer review evaluation specifically addresses these methodological and baseline characterization claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "7534c2f6-b4d1-4ec5-9b38-bc62f68e1185",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "e6935a31-7836-4abc-9a1f-5d516fc6592a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C16-C17, C77-C78 regarding model selection and BIC comparison for baseline models as supported. No corresponding peer review evaluation specifically addresses these baseline model selection claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    },
+    {
+      "id": "72dee2d6-e396-4bfa-9186-5815f4524eeb",
+      "submission_id": "e96cd5b5-72d7-49b4-85db-7e21074e0374",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "5ad08e75-41ff-408c-8f6a-65e43bf50c44",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C43-C44 comparing findings to prior work and interpreting selective effects on outcome evaluation as supported. No corresponding peer review evaluation specifically addresses these comparative interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:45:21.098714Z"
+    }
+  ]
+}

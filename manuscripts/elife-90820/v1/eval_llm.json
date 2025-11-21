@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C10",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "HP1 paralogs (HP1\u03b1, HP1\u03b2, HP1\u03b3) share a conserved domain architecture but differ in sequence similarity and charge properties. The disordered regions (NTE, hinge, CTE) show lower sequence similarity between paralogs compared to the highly conserved folded domains (CD, CSD). HP1\u03b2 has the highest net negative charge (-13), followed by HP1\u03b3 (-5) and HP1\u03b1 (-3), with corresponding differences in isoelectric points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C10, C23-C33 collectively establish the structural and sequence characteristics of HP1 paralogs through sequence analysis and cited literature. The data on domain similarities, charge distributions, and isoelectric points are internally consistent and supported by referenced experimental work (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C78",
+      "C79"
+    ],
+    "result": "HP1\u03b1 contains a unique phosphorylatable serine patch (residues 11-14) in its NTE that is constitutively phosphorylated in vivo and dramatically enhances LLPS propensity. HP1\u03b2 and HP1\u03b3 lack this phosphorylatable motif and cannot tune hinge-NTE interactions through this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C78-C79 describe a key regulatory mechanism specific to HP1\u03b1. The phosphorylation site is documented in cited literature (C34, C35, C78), and the absence of this motif in HP1\u03b2 and HP1\u03b3 is confirmed by sequence analysis (C79). This provides a molecular explanation for differential LLPS regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Coarse-grained simulations reveal that HP1\u03b2 adopts more extended conformations (Rg = 3.93 \u00b1 0.78 nm) than HP1\u03b1 (3.20 \u00b1 0.31 nm) and HP1\u03b3 (3.48 \u00b1 0.69 nm), correlating with increasing net negative charge. In phase coexistence simulations, HP1\u03b2 does not undergo phase separation, while HP1\u03b1 and HP1\u03b3 form stable condensates with HP1\u03b3 showing approximately twofold higher Csat than HP1\u03b1. Critical temperatures decrease in the order HP1\u03b1 > HP1\u03b3 > HP1\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 present simulation results that are internally consistent and align with experimental observations cited in the text (C36, C40). The correlation between net charge, conformational expansion, and phase separation propensity is well-supported by the computational data. Error bars are reported for key measurements (C40, C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "NTE-hinge interactions are the primary driver of HP1 LLPS in the absence of DNA, with HP1\u03b1's positively charged hinge interacting with negatively charged patches on the NTE. Competition from the CTE negatively influences LLPS propensity. Both disordered segments and folded domains contribute to the multivalent interaction networks required for phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C75-C77 synthesize the simulation findings into a mechanistic model. The conclusions are well-supported by contact analysis data (C43, C44) and are consistent with the domain-swapping experiments described in subsequent claims. The interplay between different domains is demonstrated through multiple lines of computational evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Domain-swapping simulations demonstrate that HP1\u03b1's hinge region is necessary and sufficient for phase separation. Replacing HP1\u03b1's IDRs or hinge with those from HP1\u03b2 or HP1\u03b3 reduces or abolishes phase separation. Conversely, inserting HP1\u03b1's hinge into HP1\u03b2 or HP1\u03b3 dramatically enhances their phase separation, with HP1\u03b3-\u03b1Hinge showing Csat nearly threefold lower than phosphorylated HP1\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 present systematic domain-swapping experiments that clearly establish the critical role of the HP1\u03b1 hinge. The results are internally consistent and demonstrate both loss-of-function (C45, C46) and gain-of-function (C48, C49) phenotypes. The data directly support the mechanistic conclusions about hinge-NTE interactions (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C81",
+      "C83"
+    ],
+    "result": "The chromodomain (CD) plays a more dominant role than the chromoshadow domain (CSD) in influencing phase separation. Swapping the CD from HP1\u03b2 or HP1\u03b3 into HP1\u03b1 enhances phase separation by increasing hinge-CD interactions and reducing competing CTE contacts. The CD domains of HP1\u03b2 and HP1\u03b3 contain more negatively charged residues with larger solvent-accessible surface area than HP1\u03b1, facilitating multivalent electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54, C81, C83 establish the unexpected contribution of folded domains to LLPS through systematic domain-swapping experiments. The structural basis for enhanced interactions (C52) is supported by surface area analysis. The conclusion that CD and NTE work cooperatively (C81) is well-supported by the contact analysis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C90"
+    ],
+    "result": "HP1 heterodimers (HP1\u03b1\u03b2, HP1\u03b1\u03b3, HP1\u03b2\u03b3) can undergo phase separation with Csat values intermediate between their constituent homodimers. HP1\u03b1\u03b2 and HP1\u03b1\u03b3 heterodimers show approximately tenfold higher Csat than HP1\u03b1 homodimers. The presence of HP1\u03b1 or HP1\u03b3 monomers in heterodimers with HP1\u03b2 can induce sufficient inter-dimer interactions to stabilize the condensed phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C90 demonstrate that heterodimers have distinct phase separation properties. The simulation data (C57, C58) are internally consistent and the mechanistic interpretation (C59) is supported by contact analysis. However, the authors acknowledge limitations in their rigid-body treatment of CSD dimers, which may not fully capture biological behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In simulations with DNA, HP1\u03b2 does not undergo phase separation while DNA stabilizes HP1\u03b1 and HP1\u03b3 condensates, with HP1\u03b3 showing approximately twofold higher Csat than HP1\u03b1. HP1\u03b1 interacts with DNA primarily through its lysine/arginine-rich hinge, HP1\u03b3 through its extended positively charged NTE and hinge, while HP1\u03b2 shows unfavorable electrostatic interactions due to extended acidic patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67, C91-C93 present simulation results with DNA that are consistent with cited experimental observations (C60-C62). The contact analysis clearly identifies the molecular basis for differential DNA binding (C65-C67). The results align with the charge distribution patterns established earlier in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In multicomponent mixtures, HP1\u03b2/HP1\u03b1 shows scaffold-client phase separation behavior with HP1\u03b2 localizing to the condensate periphery, while HP1\u03b3/HP1\u03b1 shows cooperative phase separation with co-localization. DNA enhances HP1\u03b1 phase separation but partially excludes HP1\u03b3 and strongly excludes HP1\u03b2 from the HP1\u03b1-DNA core. The HP1\u03b1 hinge serves as a central hub connecting paralogs through electrostatic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74, C86-C89 describe complex multicomponent phase behavior supported by phase diagrams (C71, C72) and spatial distribution analysis (C69, C70). The scaffold-client vs. cooperative distinction is well-supported by concentration-dependent partitioning data. The results are consistent with experimental observations cited in C88.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose a model where HP1\u03b1 initiates condensation with DNA or upon phosphorylation, HP1\u03b3 cooperatively enhances HP1\u03b1 condensates to form heterochromatic domains, while HP1\u03b2 creates a phase boundary that fine-tunes phase separation in a concentration-dependent manner, potentially limiting heterochromatin spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C98 present an integrative model based on the simulation results. While the model is consistent with the computational data, C98 explicitly includes speculative language ('potentially') about biological function. The model requires experimental validation to confirm the proposed roles in heterochromatin organization and spreading. The biological implications extend beyond what the simulations directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study demonstrates that HP1 paralogs exhibit distinct LLPS behaviors governed by net charge and charge patterning, with contributions from both conserved folded domains and less-conserved disordered regions. DNA can significantly reshape condensate stability through competitive interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 represent the main conclusions of the manuscript, which are well-supported by the comprehensive simulation data presented in subsequent claims. The distinct LLPS behaviors (C2) are demonstrated through phase coexistence simulations (C40-C42), the role of charge (C3) is established through sequence analysis and domain swapping (C36-C49), domain contributions (C4) are shown through chimera studies (C45-C54), and DNA effects (C5) are demonstrated through multicomponent simulations (C63-C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C33",
+      "C55",
+      "C60",
+      "C61",
+      "C62",
+      "C82",
+      "C85"
+    ],
+    "result": "Background claims establish the biological context and prior experimental findings on HP1 paralogs, including their localization patterns, domain functions, binding properties, and differential LLPS behaviors observed in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C22, C33, C55, C60-C62, C82, C85 cite established literature to provide context for the computational study. These are well-supported by the referenced citations and represent accepted knowledge in the field. The claims are used appropriately to motivate the research questions addressed by the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C84"
+    ],
+    "result": "The high sequence homology of CSD domains suggests heterodimerization is likely, and the oligomerization mechanism of human HP1 paralogs appears distinct from Swi6, which uses direct CD-CD interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C84 make reasonable inferences based on sequence homology (C56) and comparison with cited work on Swi6 (C84). The inference about heterodimerization likelihood is supported by the experimental evidence cited in C14. The distinction from Swi6 is appropriately qualified as 'appears to be distinct' and is based on cited structural work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Deletion of HP1\u03b1 CTE in the context of phosphorylation reduced Csat tenfold, supporting a model where reducing CTE competition enhances LLPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 cites experimental observations that support the computational model. This experimental result is consistent with the simulation findings about CTE competition (C77) and provides independent validation of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "When HP1\u03b1-DNA condensates are pre-formed, subsequently added HP1\u03b2 remains at the phase boundary while HP1\u03b3 co-localizes and stabilizes the condensates through preferential NTE and hinge interactions with DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 describe sequential addition experiments in simulations that demonstrate differential partitioning behavior. The results are consistent with the interaction patterns established in earlier claims (C65-C67, C92) and provide mechanistic insight into how paralogs compete for or cooperate in DNA-containing condensates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Methodological details specify that simulations used the HPS-Urry model for proteins and a two-bead-per-nucleotide model for DNA, conducted at 320 K and 100 mM salt concentration. All-atom simulations used the Amber99SBws-STQ force field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 provide essential methodological information. The choice of models is appropriate and well-documented in cited literature (C100, C103). The simulation temperature (C102) is justified by the need for sufficient phase separation signal. The methods are described with sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

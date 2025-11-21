@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "\u03b1S exhibits concentration-dependent aggregation with a critical concentration around 500 \u03bcM. Below this threshold (300-400 \u03bcM), most chains remain as free monomers. At 500 \u03bcM, there is a sharp drop in free monomers consistent with the experimentally reported critical concentration for LLPS. At 750 \u03bcM, aggregation increases but ~60% of chains remain free, suggesting \u03b1S lacks strong spontaneous self-aggregation tendency in water alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are well-supported by simulation data shown in Figure 2, with clear concentration-dependent trends. The 500 \u03bcM critical concentration aligns with experimental literature (C19). The observation that 60% remain free at 750 \u03bcM (C21-C22) is directly measured and supports the conclusion about limited intrinsic aggregation propensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Both molecular crowders and salt enhance \u03b1S aggregation, with crowders showing a slightly more pronounced effect. The addition of either crowders (10% v/v) or salt (50 mM NaCl) leads to decreased numbers of free monomers and increased average cluster sizes compared to \u03b1S in water alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are directly supported by simulation data in Figure 3, showing clear quantitative differences in monomer numbers and cluster sizes. The comparative statement about crowders being slightly more effective (C30) is based on direct comparison of the data, though the magnitude of difference appears modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C4",
+      "C77"
+    ],
+    "result": "Surface tension of \u03b1S droplets responds differently to crowders versus salt. Crowders minimally impact surface tension (remaining similar to \u03b1S alone at ~0.004 mN/m), while salt increases surface tension to ~0.0075 mN/m. Both values are considerably lower than FUS droplets (~0.05 mN/m), suggesting lower aggregation propensity for \u03b1S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35, C4, and C77 are supported by surface tension calculations shown in Figure 4a. The differential response to crowders (entropy-driven) versus salt (enthalpy-driven) is clearly demonstrated. The comparison to FUS provides useful context, though it relies on literature values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C2"
+    ],
+    "result": "\u03b1S aggregates exhibit LLPS-like properties with approximately two orders of magnitude difference in protein concentration between dilute and droplet phases across all environmental conditions (water, crowders, salt). This pronounced concentration difference is a hallmark characteristic of LLPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C2 are well-supported by concentration calculations shown in Figure 4b and supplementary figures. The two orders of magnitude difference is clearly demonstrated and appropriately interpreted as evidence of LLPS-like behavior based on established LLPS criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C78",
+      "C79"
+    ],
+    "result": "Crowders and salt enhance aggregation through different thermodynamic mechanisms. Crowders act primarily through entropic means via excluded volume effects, while salt acts through enthalpic means by increasing droplet surface tension. Both decrease the relative free energy of transfer between phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C78-C79 are supported by the combination of surface tension data (Figure 4a) and free energy calculations (Figure 4c). The mechanistic interpretation is reasonable given the known physics of crowding and electrostatic screening, though the inference about entropy vs. enthalpy could benefit from more direct thermodynamic measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "\u03b1S chains adopt extended conformations within droplets compared to the dilute phase, as evidenced by radius of gyration distributions. Proteins undergo significant conformational changes upon aggregation regardless of initial configuration, with the most extended initial state (ms1) showing the least RMSD. This suggests LLPS favors extended conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C41-C45 are supported by Rg distribution analysis (Figure 5a) and RMSD calculations (Figure 5b-c). The extended conformations in the dense phase are clearly demonstrated. The hypothesis about LLPS favoring extended states (C45) is reasonable but remains somewhat speculative as it's based on correlation rather than direct mechanistic proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C46",
+      "C47"
+    ],
+    "result": "\u03b1S chains within droplets maintain mutually perpendicular orientations (peak at ~90\u00b0) to minimize inter-chain electrostatic repulsions. This orientation pattern is consistent across all environmental conditions (water, crowders, salt), indicating a conserved structural feature of \u03b1S droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C46-C47 are supported by angle distribution analysis shown in Figure 5d. The peak at right angles is clearly demonstrated and consistent across conditions. The interpretation about minimizing electrostatic repulsions is reasonable given the charged nature of \u03b1S, though direct energetic validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Droplet stability stems from reduced intra-chain interactions (particularly Nter-Cter and NAC-NAC) in the dense phase, which facilitates increased inter-chain interactions. This pattern is consistent across environmental conditions and aligns with experimental FRET observations showing replacement of intra-chain NAC-NAC interactions with inter-chain NAC-NAC interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C48-C52, C80-C82 are well-supported by differential contact map analysis (Figure 6) and inter-chain contact maps (supplementary figures). The reduction in intra-chain interactions and increase in inter-chain interactions is clearly demonstrated. Agreement with experimental FRET data (C52, C82) provides important validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Residues 95-110 (VKKDQLGKNEEGAPQE) show reduced contact probabilities upon introduction of crowders/salt. These highly charged residues are hypothesized to require spatial reorientation to minimize electrostatic repulsions and may function to prevent aggregation-prone conformations under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C56 are partially supported by contact map data, but the mechanistic interpretation (C54-C56) is largely speculative. While the reduced contacts for residues 95-110 are observed (C53), the explanations about spatial reorientation and functional role in preventing aggregation are inferences without direct experimental validation. Additional mutagenesis or energetic analysis would be needed to confirm these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C58",
+      "C59",
+      "C64",
+      "C83",
+      "C84"
+    ],
+    "result": "\u03b1S chains within droplets form small-world-like networks with consistent small-worldness coefficient (S \u2248 3.4) across all environmental conditions. The network topology shows a few highly connected hub nodes with most nodes having 3-5 connections. The modes of interactions, orientations, and connectivities remain invariant across different environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C57-C59, C64, C83-C84 are supported by graph theory analysis (Figure 7) showing consistent S values around 3.4 across conditions. The small-world network characterization is appropriate given the clustering coefficient and path length properties. The invariance across conditions is clearly demonstrated and represents a novel finding about \u03b1S droplet organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "\u03b1S has low inherent LLPS propensity dictated by its primary sequence. Sequence analysis shows Shannon entropy suggesting phase separation tendency, but hydrophobicity, NLLR scores, and LLPS propensity scores all indicate low propensity. This explains why environmental factors (crowders, salt) are required to enhance LLPS, as demonstrated in simulations and experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C76 are supported by comprehensive sequence analysis (Figure 8) comparing \u03b1S to LLPS+, LLPS-, and PDB* datasets. Multiple independent metrics (Shannon entropy, hydrophobicity, NLLR, LLPS propensity) converge on the conclusion of low intrinsic LLPS propensity. This analysis effectively explains the simulation observations and aligns with experimental critical concentration data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C98",
+      "C99"
+    ],
+    "result": "Martini 3 coarse-grained force field was selected for this study due to its explicit water representation and detailed amino acid description. The force field required optimization for IDPs as default parameters underestimate global dimensions and overestimate protein-protein interactions for disordered proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87, C98-C99 are supported by methodological justification and known limitations of Martini 3 for IDPs. The rationale for force field selection is reasonable, and the need for optimization is well-established in the literature. The optimization procedure is described in detail in the Methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Radius of gyration (Rg) was selected as the primary metric for optimizing water-protein interactions in Martini 3 for \u03b1S. From a polymer physics perspective, Rg serves as an effective metric for calibrating solvent quality around the biopolymer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by the methodological rationale and validation shown in Figure 9. The choice of Rg as an optimization metric is justified from polymer physics principles, and the optimization procedure shows good agreement with atomistic simulations for both single-chain Rg and dimer binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background context establishing that \u03b1S is an intrinsically disordered protein implicated in Parkinson's disease through aberrant aggregation, and that IDP aggregates are associated with various diseases including neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12 represent well-established background knowledge in the field, supported by appropriate citations. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background on LLPS phenomenon and prior experimental findings showing that \u03b1S can undergo LLPS above critical concentration (~500 \u03bcM), with aggregation influenced by crowders, ionic strength, and pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16, C23-C26 represent established prior work appropriately cited from the literature. These provide important context and experimental benchmarks for the computational study but are not original findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C89",
+      "C90",
+      "C95"
+    ],
+    "result": "Speculative statements about future research directions, including potential therapeutic strategies targeting residue-level interactions, investigating \u03b1S-membrane interactions, exploring crowder properties, and understanding water's role in LLPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65, C89-C90, C95 are explicitly speculative statements about future work. While reasonable hypotheses based on the current findings, they lack experimental support and represent suggestions rather than established results. These are appropriately presented as discussion points rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Discussion points citing prior work on \u03b1S physiological form, familial mutations, droplet stability challenges, and the importance of water in LLPS, along with summary of current study's identification of key residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C91-C94 combine literature citations with summary of current findings. The cited prior work is appropriately referenced, and the summary of key residue identification (C93) is supported by the contact map analysis presented earlier.",
+    "result_type": "MINOR"
+  }
+]

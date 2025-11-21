@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors developed and validated three conditional gene targeting strategies (GFP RNAi, Flp-out, and CRISPR/Cas9) for CCT genes in Drosophila. Pan-neuronal expression of shRNAGFP or flippase almost completely eliminated GFP signals, and adult-stage knockout using hsFLP or elav-Switch eliminated most signals. However, some cCCT knockin lines showed lethality similar to their mutants, indicating functional effects unsuitable for conditional manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide direct experimental evidence with quantified efficiency data and imaging support showing near-complete gene disruption. The functional validation with nAChR\u03b22 sleep phenotype (C34) confirms biological relevance. The identification of limitations (C36-C38) demonstrates appropriate critical assessment. However, the claim of 'high efficiency' for adult-stage knockout (C31) is qualified by 'most, though not all' signal elimination, and leaky expression issues (C32-C33) suggest incomplete temporal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors developed a CRISPR/Cas9-based conditional knockout system (C-cCCTomics) using optimized sgRNA scaffolds and three sgRNAs per gene selected for high efficiency and no off-target effects. Initial validation with Cas9.HC showed variable efficiency: complete elimination of PDF signals but incomplete elimination of Dh31-GFP signals, and failed to phenocopy sleep defects in nAChR knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide direct sequencing and imaging evidence of gene disruption. The behavioral validation (C44) shows phenotypic similarity to known mutants. However, the failure to reproduce sleep phenotypes (C45) and the conclusion that efficiency was 'not effective enough for all genes' (C46) appropriately acknowledges limitations. The sgRNA selection methodology (C40) is well-documented with multiple prediction tools cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Modified Cas9 variants with chromatin-modulating peptides (Cas9.M6 and Cas9.M9) significantly improved gene knockout efficiency compared to unmodified Cas9.HC. Cas9.M9 achieved 97.19\u00b12.15% efficiency vs 69.58\u00b13.04% for Cas9.HC in ple knockout, with similar improvements across 14 additional genes (87-90% average efficiency). High-throughput sequencing confirmed elevated mutation rates (20-64% for modified vs 6-43% for Cas9.HC), and Cas9.M9 successfully phenocopied nAChR mutant sleep defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 provide quantified efficiency data with sample sizes and statistical significance. The multi-gene validation (C53) and sequencing confirmation (C55) strengthen the conclusion. Importantly, C54 rules out differential expression as a confounding factor. The functional validation (C57) demonstrates biological relevance. However, the sequencing mutation rates (C55) are lower than imaging-based efficiency estimates, likely due to the presence of non-expressing cells in the samples as the authors note.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Using genetic intersection strategies, the authors identified 43 CCT genes expressed in clock neurons (out of 148 analyzed), with varying distributions across eight neuronal subsets. The expression patterns largely confirmed previous reports for some genes (CCHa1, sNFP, Trissin) but revealed broader expression for others (Nplp1, Dh31). Some well-known genes (Pdf, Pdfr) showed no stable signals in Flp-out experiments despite expected expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 provide specific quantitative data supported by figures. Validation against prior literature (C60-C63) shows consistency for some genes, lending credibility. However, the authors acknowledge significant limitations: discrepancies with previous reports (C64-C65), failure to detect known genes (C67), and technical issues with the Flp-out strategy. The authors attribute differences to broader labeling by KI-LexA drivers or inefficiency of the LexAop system, but these explanations are speculative and the true accuracy of the expression map remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Conditional knockout screen of 67 CCT genes in clock neurons identified CNMa as a regulator of morning anticipation. CNMa knockout in clock neurons advanced morning activity and increased MAPI in both sexes, phenocopied by germline CNMa knockout. The screen also reproduced known phenotypes for Pdf, Pdfr, and Dh31, but revealed leaky expression of Cas9.M9 affecting some genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 validate the system by reproducing known mutant phenotypes with appropriate citations. The CNMa findings (C73-C76) are supported by multiple lines of evidence: conditional knockout, germline knockout, and consistency across sexes. However, the discovery of Cas9.M9 leaky expression (C70) is a significant limitation that undermines confidence in negative results from this screen. The authors appropriately switched to Cas9.M6 for follow-up work, but this means the initial screen results should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CNMa is expressed in DN1p neurons with two distinct projection patterns: type I (2 neurons projecting anteriorly) and type II (4 neurons with posterior projections). Both types contribute to morning anticipation regulation, but type I neurons show stronger phenotypes with advanced morning peaks, suggesting they are the main functional subset. Two type I CNMa neurons are also Pdfr-positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide detailed anatomical characterization with imaging support. The functional dissection (C83-C85) uses multiple GAL4 drivers to distinguish type I and type II contributions, showing differential phenotypes. However, the conclusion that type I neurons are 'the main functional subset' (C86) is stated as 'a possibility' in the source text, indicating appropriate caution. The identification of Pdfr/CNMa double-positive neurons (C87) provides a mechanistic link to known circadian pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Pdfr reintroduction in type I CNMa neurons (GMR51H05, GMR79A11) partially rescued Pdfr knockout phenotypes more effectively than type II neurons (GMR91F02). Conversely, Pdfr knockout in type I CNMa neurons decreased morning anticipation. These results suggest CNMa secretion may be regulated by PDF/PDFR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 provide rescue and loss-of-function experiments that converge on the same conclusion about type I neuron function. The quantitative comparison (C88) is supported by statistical analysis. However, C90 notes that CNMa-GAL4-mediated Pdfr knockout was less effective than GMR51H05-GAL4, suggesting incomplete overlap. The speculation about PDF regulation of CNMa (C91) is appropriately labeled as 'a possibility' and is based on the Pdfr/CNMa co-expression rather than direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "CNMaR knockout showed advanced morning activity and increased MAPI in both sexes, similar to CNMa knockout. CNMaR is broadly expressed across the brain, especially in DN1p, DN3, PI, and SOG regions. Pan-neuronal conditional knockout of CNMaR phenocopied the germline knockout, confirming CNMaR functions similarly to CNMa in regulating morning anticipation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C96 provide convergent evidence from germline and conditional knockouts showing consistent phenotypes. The expression characterization (C94-C95) is supported by imaging data. The conclusion (C97) is well-supported by the parallel phenotypes of ligand and receptor knockouts. However, the broad expression of CNMaR throughout the brain (C94) contrasts with the more restricted CNMa expression, raising questions about which CNMaR-expressing neurons are functionally relevant that are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Loss of CNMa in DN1ps or CNMaR causes advanced morning activity, indicating CNMa-CNMaR suppresses morning anticipation, opposite to the promoting role of PDF-PDFR. This establishes an antagonistic relationship between CNMa-CNMaR and PDF-PDFR signaling in regulating morning anticipation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims are well-supported by the detailed experimental results in claims C74-C76, C93, and C96. The antagonistic relationship (C11) is supported by the opposite phenotypes: CNMa/CNMaR loss advances morning activity while Pdf/Pdfr loss eliminates it. However, the claim about PDF-PDFR's 'promoting role' (C10) relies on prior literature citations rather than new data in this manuscript. The mechanistic basis for antagonism remains unclear - it could be direct interaction or parallel pathways with opposite effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The chemoconnectome (CCT) concept encompasses all chemical transmission between neurons and target cells. CCTomics tools overcome limitations of previous strategies by enabling behavioral screening and accurate manipulation of CCT genes, but are limited by developmental lethality of some knockouts and cell-type-specific gene functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 describe prior work that is referenced but not experimentally validated in this manuscript. Claim C12 about advantages is supported by the successful applications demonstrated throughout the paper. Claims C13-C14 about limitations are validated by the viability data (C36-C37) and motivate the development of conditional systems. These are appropriate contextual claims that frame the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work has established RNAi libraries covering the fly genome, CRISPR/Cas9 for somatic manipulation in Drosophila (since 2014), tRNA-flanking sgRNA systems, and UAS-sgRNA libraries for kinases and GPCRs. However, no sgRNA libraries covering all CCT genes exist, and CRISPR/Cas9 efficiency has not been systematically validated in the Drosophila nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C15-C21) accurately summarize prior literature with appropriate citations and identify gaps that motivate the current work. The claims about what doesn't exist (C20-C21) are knowledge claims that frame the novelty of the current study. These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Drosophila circadian behavior shows morning and evening anticipations in LD cycles and ~24hr periodicity in DD conditions. Approximately 150 clock neurons coordinate these behaviors, with specific neuropeptides (PDF/PDFR, AstC, NPF, CCHa1, Dh31) regulating morning and evening activities. No advanced morning activity phenotype had been reported in flies prior to this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are well-cited background knowledge about Drosophila circadian biology that contextualizes the study. Claim C29 about the novelty of advanced morning activity is a knowledge claim that highlights the significance of the CNMa findings. These are appropriate literature-based claims that frame the biological context.",
+    "result_type": "MINOR"
+  }
+]

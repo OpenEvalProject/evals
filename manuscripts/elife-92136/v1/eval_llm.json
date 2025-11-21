@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The phoPR-KO mutant shows significantly lower intracellular cAMP levels compared to WT under normal and stress conditions, which is restored by complementation. The lower cAMP is not due to increased secretion or differential viability under stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are well-supported by cAMP measurements (Figure 1A-B), CFU viability data (Figure 1\u2014figure supplement 1), and immunoblotting controls (Figure 1C). The fold-difference analysis between secreted and intracellular cAMP provides logical support for C55.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "PhoP functions as a repressor of rv0805 phosphodiesterase expression. RT-qPCR analysis shows that rv0805 expression is significantly elevated (6.5-fold) in phoPR-KO, while expression of other ACs and PDEs (rv0386, rv1264, rv1647, rv2488c, rv1339, rv1357c, rv2837c) remains unaffected by phoP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C56-C58, C61-C62 are directly supported by RT-qPCR data in Figure 2A showing specific regulation of rv0805 by PhoP while other enzymes remain unchanged. This establishes PhoP as a specific repressor of rv0805.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C4",
+      "C67",
+      "C68"
+    ],
+    "result": "PhoP directly binds to the rv0805 promoter in an acidic pH-dependent manner. Under acidic conditions (pH 4.5), rv0805 expression is significantly repressed and PhoP shows enhanced recruitment to the rv0805 promoter region. The PhoP binding site spans positions -127 to -110 relative to the ORF start site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 and C4 are supported by RT-qPCR (Figure 2B), ChIP-qPCR (Figure 2C), bioinformatic prediction (Figure 2\u2014figure supplement 1A), and EMSA data (Figure 2\u2014figure supplement 1B). The convergence of multiple experimental approaches provides strong evidence for direct PhoP binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C116",
+      "C117"
+    ],
+    "result": "Acidic pH-dependent repression of rv0805 requires PhoR-mediated phosphorylation of PhoP. The phoPR-KO::phoP strain (lacking PhoR) fails to repress rv0805 under acidic pH, while the complemented strain (phoPR-KO::phoPR) shows normal pH-dependent repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71, C116-C117 are supported by RT-qPCR data comparing strains with and without PhoR (Figure 3A-B). This demonstrates that PhoR kinase activity is required for PhoP-mediated repression, establishing the signal transduction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Ectopic expression of rv0805 depletes intracellular cAMP levels. WT-Rv0805 shows 2.1-fold reduction in cAMP compared to WT, while expression of catalytically inactive Rv0805M has no effect on cAMP levels, demonstrating that cAMP depletion is due to phosphodiesterase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C72-C74 are supported by cAMP measurements (Figure 3C) and RT-qPCR data (Figure 3\u2014figure supplement 1A). The use of the catalytically inactive mutant (Rv0805M) as a control provides strong evidence that the effect is specifically due to PDE activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C113"
+    ],
+    "result": "CRISPRi-mediated knockdown experiments confirm the PhoP-rv0805-cAMP regulatory axis. phoP knockdown increases rv0805 expression and decreases cAMP levels, while rv0805 knockdown increases cAMP levels without affecting phoP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C113 are supported by RT-qPCR (Figure 3D) and cAMP measurements (Figure 3E) in knockdown strains. This orthogonal approach using CRISPRi validates the regulatory relationship established by knockout studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C114"
+    ],
+    "result": "Disruption of the PhoP-rv0805-cAMP pathway reduces stress tolerance. Both phoPR-KO and WT-Rv0805 show increased susceptibility to acidic pH, diamide, and cumene hydrogen peroxide compared to WT, while WT-Rv0805M behaves like WT. This phenotype is attributable to reduced cAMP levels rather than altered cell wall composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C80-C86, C114 are supported by growth curves (Figure 4A), Alamar Blue assays (Figure 4B), CFU data (Figure 4C), and RT-qPCR of lipid biosynthesis genes (Figure 4\u2014figure supplement 1B). The similar phenotypes of phoPR-KO and WT-Rv0805, but not WT-Rv0805M, strongly support the cAMP-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Reduced cAMP levels impair the ability to inhibit phagosome maturation. WT-Rv0805 and phoPR-KO show increased phagosome-lysosome fusion compared to WT, while WT-Rv0805M maintains the ability to inhibit phagosome maturation like WT bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C87-C92 are supported by confocal microscopy (Figure 4D), co-localization quantification (Figure 4E), and Pearson's correlation analysis (Figure 4F). The convergence of multiple imaging metrics provides strong evidence for the role of cAMP in phagosome maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Disruption of the PhoP-rv0805-cAMP pathway severely attenuates virulence in mice. WT-Rv0805 shows ~218-fold reduction in lung CFU and significantly reduced spleen dissemination compared to WT, similar to the attenuation observed in phoPR-KO (~246-fold reduction). WT-Rv0805M shows only marginal attenuation (~7-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by mouse infection CFU data from lungs (Figure 5A) and spleens (Figure 5B). The similar attenuation of phoPR-KO and WT-Rv0805, but not WT-Rv0805M, provides strong evidence that PhoP-dependent repression of rv0805 is critical for virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Disruption of the PhoP-rv0805-cAMP pathway reduces lung pathology. WT-infected lungs show severe pathology with granulocyte aggregation and necrotic debris, while phoPR-KO and WT-Rv0805 infected lungs show reduced pathology with smaller granulomas and open alveolar spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by histopathological analysis (Figure 5C). The reduced pathology correlates with reduced bacterial burden and provides additional evidence for the importance of the PhoP-rv0805-cAMP pathway in virulence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C118",
+      "C120"
+    ],
+    "result": "The authors conclude that PhoP maintains cAMP homeostasis by repressing rv0805, which is essential for stress tolerance and intracellular survival. Dysregulation of cAMP (either by phoP deletion or rv0805 overexpression) impairs the ability to mount appropriate stress responses and coordinate gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C118, C120 represent the main conclusions inferred from the collective experimental data. The convergence of cAMP measurements, stress tolerance assays, macrophage infections, and mouse studies provides strong support for this integrated model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C101",
+      "C102"
+    ],
+    "result": "The introduction establishes the biological context: M. tuberculosis encounters diverse host environments and uses complex regulatory networks including cAMP signaling and the PhoPR system. Prior work shows PhoP is essential for virulence and responds to acidic pH, while cAMP signaling is critical for pathogenesis, but the regulatory mechanisms linking these systems were unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C49, C101-C102 represent established knowledge and prior work supported by extensive citations. These claims provide appropriate context and identify the knowledge gap addressed by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C60",
+      "C105",
+      "C106",
+      "C107",
+      "C110"
+    ],
+    "result": "Background on Rv0805: It is a cAMP-specific phosphodiesterase present only in slow-growing pathogenic M. tuberculosis, stabilized by divalent cations, and catalytically active on various substrates. Recent work implicates it in propionate detoxification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C59-C60, C105-C107, C110 are supported by citations to prior structural, biochemical, and functional studies. These provide important context for understanding Rv0805 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C119"
+    ],
+    "result": "The discussion contextualizes findings with recent discoveries: Rv0805 controls propionate detoxification, explaining PhoP's link to carbon metabolism; phoPR is induced under acidic pH in macrophages; PhoP interacts with CRP to control virulence genes; and rv0805 depletion attenuates growth in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104, C108-C109, C111-C112, C119 are supported by citations to recent studies. These claims appropriately integrate the current findings with emerging literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Overexpression of PDEs (wild-type or mutant Rv0805) does not affect bacterial growth under normal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by CFU data (Figure 3\u2014figure supplement 1B), confirming that the observed phenotypes are not due to general growth defects.",
+    "result_type": "MINOR"
+  }
+]

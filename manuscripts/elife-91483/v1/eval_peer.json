@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A supervised classifier model was developed to assign mouse phenotypes (control, ataxia, dystonia, tremor) based on single-neuron spike signatures from cerebellar nuclei recordings. The classifier identified skewness, CV2, and ISI>25 as key differentiating parameters and achieved classification accuracies of 85% for control, 79% for ataxia, 88% for dystonia, and 54% for tremor.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Multiple reviewers acknowledge the classifier as a weak point, with one noting 'limited efficacy, particularly for identifying mice with tremor' (54% accuracy). Another reviewer states 'the applicability of the classifier...remains this paper's weak point' and notes 'cross-validated performance of the model on a single mouse model of tremor is, for instance, only 54%.' However, reviewers also note that 'the concern about classifier accuracy is ameliorated by the fact that the classifier parameters are easily interpretable' and that the simplicity (only three parameters) provides a 'reasonable starting point' despite limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Spike signatures were shared across etiologically distinct but phenotypically similar ataxia models. In Atxn1154Q/+ mice, most neurons exhibited control signatures (22/34) with dystonia signatures being second most common (10/24). In Pcp2Cre;Ank1fl/fl mice, half showed abnormal signatures with dystonia being most common (6/14). Both ataxia models showed significantly lower skewness than the archetypal dystonia model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer specifically notes 'some of the interpretation of this work remains unclear to this reviewer (in particular Fig. 2, with ataxia models)' despite applauding the rigor. The data show unexpected patterns where ataxia models exhibit control and dystonia signatures rather than pure ataxia signatures, which complicates interpretation. However, no reviewer explicitly challenges the data quality or statistical analyses presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Two dystonia models with different severity levels showed distinct spike signature distributions. Mild dystonia (Pdx1Cre;Slc17a6fl/fl) mice had more control signatures and lower skewness compared to severe dystonia (ouabain infusion) mice, with skewness correlating with dystonia severity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about these dystonia model comparisons. One reviewer notes the work 'effectively demonstrate[s] that across different mouse models of cerebellar disease, there are distinct changes in the firing properties of CN neurons.' The correlation between spike signatures and disease severity is consistent with the overall positive reception of the electrophysiological findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In Car8wdl/wdl mice, propranolol treatment that normalized tremor behavior also shifted spike signatures from tremor (8/13 neurons before treatment) to predominantly control and dystonia signatures (6/15 each after treatment), with corresponding increases in ISI>25 values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this pharmacological manipulation result. One reviewer notes the 'recordings across multiple phenotypic models including genetic and pharmacologic manipulations' as a major strength. The propranolol data provide important validation that spike signatures can shift with behavioral changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Optogenetic stimulation of Purkinje cells using patterns designed to mimic disease-specific spike signatures induced corresponding motor phenotypes in healthy mice. Each stimulation paradigm (ataxia, dystonia, tremor) produced distinct behavioral repertoires matching predicted phenotypes, with the dystonia paradigm causing the most dystonic movements and the tremor paradigm producing the most severe tremor.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers strongly support the optogenetic findings. One states 'the robust phenotypes elicited by Purkinje neuron stimulation' is a major strength. Another notes 'these results show convincingly that specific patterns of cerebellar output are sufficient to cause specific movement abnormalities.' A third reviewer states the findings 'show that (2) driving CN neurons in a time-varying manner that mimics the statistics measured in disease models results in behavioral phenomena reminiscent of the disease states' and calls this 'quite convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66"
+    ],
+    "result": "The combined electrophysiological and optogenetic data demonstrate that distinct spike signatures promote the behavioral presentation of cerebellar diseases, with spike trains being sufficient to cause motor impairments rather than merely correlating with disease states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm this central conclusion. One states 'the observation that different firing statistics at the level of the cerebellar nuclei directly impart disease-specific phenotypes is quite convincing.' Another notes the work 'show convincingly that specific patterns of cerebellar output are sufficient to cause specific movement abnormalities.' The causal interpretation is well-supported by the optogenetic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C73"
+    ],
+    "result": "The authors propose that there is a healthy range of cerebellar nuclei spiking activity, and diseases arise from shifts outside this range that can be independent of plasticity or circuit rewiring. Co-expression of different motor phenotypes may arise from a spectrum of spike signal defects, and successful therapies should maintain activity within the healthy range.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these interpretive conclusions as reasonable extensions of the data. One reviewer notes the findings 'suggest that aberrant activity in the CN can originate from various sources...but ultimately, these changes are funneled through the CN neurons, whose firing rates are affected, and this, in turn, drives some portion of the aberrant behavior' and calls this 'a noteworthy observation.' No reviewer challenges these mechanistic interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C67"
+    ],
+    "result": "The study demonstrates that nonsimultaneous recordings from heterogeneous neuron populations are sufficient to determine distinct pathogenic signatures, suggesting cerebellar-targeted DBS may be beneficial for normalizing disease-causing spike patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these methodological and translational conclusions. One reviewer notes the work 'underscores the potential of targeting these output neurons in the treatment of cerebellar disease.' The acceptance of the classifier approach, despite its limitations, supports the conclusion that population-level recordings can identify disease signatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors interpret that degenerative and non-degenerative ataxias may have different underlying circuit alterations, that irregular patterns in dystonia may relate to timing of muscle contractions, and that a large proportion of neurons must produce abnormal signatures to generate severe phenotypes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these mechanistic interpretations. One reviewer specifically notes the complexity of the ataxia data (Fig. 2) remains 'unclear' but still 'applaud[s] the rigor, and sharing complex data that is not always straightforward to understand,' suggesting acceptance of the authors' interpretations as reasonable hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims establishing that the cerebellum contributes to diverse motor conditions (ataxia, dystonia, tremor) and that specific circuit manipulations in mice produce these phenotypes, but the neural substrates encoding this diversity remain unclear.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are foundational background claims that reviewers implicitly accept without challenge. One reviewer notes 'the authors' dataset and analysis provide a fundamental new understanding of how cerebellar output contributes to various cerebellar-dependent diseases,' affirming the premise that understanding neural substrates is an important gap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Methodological considerations including that recordings likely capture excitatory neurons due to cell size, that optogenetic stimulation affects both excitatory and inhibitory nuclei neurons, and that similar approaches have been used in human DBS studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about these methodological points. The technical approach is implicitly accepted, with one reviewer calling the work 'technically impressive' and noting 'the analysis pushes the envelope of how cerebellar dysfunction is classified.'",
+    "result_type": "MINOR"
+  }
+]

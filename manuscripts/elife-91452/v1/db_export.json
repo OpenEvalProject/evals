@@ -1,0 +1,2232 @@
+{
+  "submission": {
+    "id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:11:06.623298Z",
+    "updated_at": "2025-11-20T23:11:06.623298Z"
+  },
+  "content": [
+    {
+      "id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "content_type": "manuscript",
+      "content_text": "# Potassium-mediated bacterial chemotactic response\n\n## Authors\n\n- Chi Zhang<sup>1</sup> ([ORCID: 0000-0003-3154-2657](https://orcid.org/0000-0003-3154-2657)) \u2020\n- Rongjing Zhang<sup>1</sup> ([ORCID: 0009-0008-5519-6385](https://orcid.org/0009-0008-5519-6385)) \u2020\n- Junhua Yuan<sup>1</sup> ([ORCID: 0000-0002-6437-0655](https://orcid.org/0000-0002-6437-0655)) \u2020\n\n### Affiliations\n\n1. Hefei National Research Center for Physical Sciences at the Microscale and Department of Physics, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacteria in biofilms secrete potassium ions to attract free swimming cells. However, the basis of chemotaxis to potassium remains poorly understood. Here, using a microfluidic device, we found that Escherichia coli can rapidly accumulate in regions of high potassium concentration on the order of millimoles. Using a bead assay, we measured the dynamic response of individual flagellar motors to stepwise changes in potassium concentration, finding that the response resulted from the chemotaxis signaling pathway. To characterize the chemotactic response to potassium, we measured the dose\u2013response curve and adaptation kinetics via an F\u00f6rster resonance energy transfer (FRET) assay, finding that the chemotaxis pathway exhibited a sensitive response and fast adaptation to potassium. We further found that the two major chemoreceptors Tar and Tsr respond differently to potassium. Tar receptors exhibit a biphasic response, whereas Tsr receptors respond to potassium as an attractant. These different responses were consistent with the responses of the two receptors to intracellular pH changes. The sensitive response and fast adaptation allow bacteria to sense and localize small changes in potassium concentration. The differential responses of Tar and Tsr receptors to potassium suggest that cells at different growth stages respond differently to potassium and may have different requirements for potassium.\n\n## Introduction\n\nPotassium is an important ion in the normal physiological process of organisms (Gr\u00fcndling, 2013). Potassium ions are a major component in establishing the resting membrane potential and thus ensure proper function of the muscles and nerves. Potassium deficiency can affect many biological functions, such as human heartbeat (Zacchia et al., 2016) and photosynthesis and respiration of plants (Li et al., 2020). In prokaryotes, such as bacteria, potassium ions play a critical role in maintaining the osmotic pressure, pH value and membrane potential of cells (Ballal et al., 2007; Epstein, 2003). In addition, both the expression of genes and the activities of enzymes are also regulated by potassium ions (Ali et al., 2017; Ballal et al., 2007; Epstein, 2003; Nanatani et al., 2015).\n\nBecause of its central role in maintaining the normal physiological state of cells, organisms have evolved a series of regulatory systems to control the intracellular concentration of potassium ions, such as Na+/K+ ATP pumps in higher organisms and potassium transport systems in prokaryotes. Most of the studies on potassium have focused on its effects on cell physiology or the dynamics of potassium transport systems. In contrast, studies on the behavioral response to environmental potassium concentration changes and the signaling pathways involved are very limited for bacteria.\n\nBacteria sense and respond to chemicals via the chemotaxis signaling pathway. In Escherichia coli, chemo stimuli are detected by transmembrane receptors (Bray et al., 1998; Endres et al., 2008; Homma et al., 2004). The sensed signal is then transmitted to the associated cytoplasmic histidine kinase CheA, affecting its autophosphorylation (Li and Hazelbauer, 2011; Li et al., 2013). CheA transfers its phosphoryl group to the response regulator CheY and the methylesterase CheB, yielding CheY-P and CheB-P, respectively (Bren and Eisenbach, 2000). CheY-P binds to the base of the flagellar motor, increasing the probability of motor rotating clockwise (CW), namely motor CW bias, and thus increasing the cell tumble frequency (Dyer and Dahlquist, 2006; Lam et al., 2013; van Albada and Ten Wolde, 2009). The phosphatase CheZ binds to CheY-P and accelerates its dephosphorylation. CheB-P and CheR demethylate and methylate the receptors, respectively, to accomplish robust adaptation in chemotaxis (Djordjevic and Stock, 1997; Djordjevic and Stock, 1998; Levin et al., 2002; Lupas and Stock, 1989; Lybarger and Maddock, 1999).\n\nConventional stimuli are sensed by E. coli directly or indirectly. The former suggests that the ligand can bind to the periplasmic domain of the corresponding receptor directly and modify kinase activity, such as MeAsp and serine (Neumann et al., 2010; Tajima et al., 2011). The latter requires the help of binding proteins, such as maltose sensed by the Tar receptor with the help of periplasmic maltose-binding protein (Brass and Manson, 1984), and peptides sensed by the Tap receptor with the help of peptide-binding proteins (Manson et al., 1986). However, the detailed mechanism of bacterial sensing and response to ionic stimuli, such as the chemotactic repellent, nickel ions, is not clear (de Pina et al., 1995; Englert et al., 2010). The chemotactic response of other ions also remains to be studied.\n\nIt was discovered recently that bacteria in biofilms secrete potassium into their surroundings through ion channels on the cell membrane, thereby affecting the behavior of distant free bacteria and attracting them (Humphries et al., 2017; Prindle et al., 2015). However, how limited changes in potassium concentration regulate the movement of bacteria, especially after long-distance diffusion, is still unclear.\n\nHere, we constructed a linear concentration gradient of potassium ions with a microfluidic device, and found obvious taxis to the region of high concentration for wild-type E. coli. To determine the origin of this taxis, we measured the response of motor speed and CW bias to a stepwise increase in potassium concentration. The motor CW bias exhibits an attractant-like response, while the motor speed remains constant, which suggests a constant proton motive force (PMF). The chemotaxis-defective strain did not respond to this stimulus. This confirmed that the CW bias response of motors resulted from the upstream chemotaxis signaling pathway. To further characterize the response of the chemotactic signal to potassium, we directly measured the response of kinase activity to different concentrations of potassium chloride by monitoring the F\u00f6rster resonance energy transfer (FRET) between CheY-eYFP (yellow fluorescent protein) and CheZ-eCFP (cyan fluorescent protein). We ruled out the possibility of osmotaxis by comparing the responses to 30 mM potassium chloride and 60 mM sucrose. The dose\u2013response curve and step response of kinase activity to potassium suggested a sensitive sensing process and fast adaptation. Further experiments with mutants expressing Tar, Tsr, or no receptor suggested that this chemotactic response may result from the increase in intracellular pH. Our findings suggest a new mechanism of chemotactic response to ionic stimuli. Employing a coarse-grained chemotaxis model with parameters extracted from our measurements, we performed stochastic simulation of E. coli cells in a potassium gradient generated by a biofilm producing an oscillating potassium signal, and demonstrated the delayed periodic attraction of the cells to the biofilm.\n\n## Results\n\n### Chemotaxis in a linear concentration gradient of potassium\n\nIt has been reported that potassium ions work as a communication agent in swarms and biofilms for both Bacillus subtilis and Pseudomonas aeruginosa. A high concentration of potassium chloride (300 mM) could attract swimming cells (Humphries et al., 2017; Prindle et al., 2015). To study the chemotactic response of E. coli to potassium, we set up a linear concentration profile of potassium chloride with a microfluidic device designed as described previously (Liu et al., 2022; Tian et al., 2021).\n\nAs shown in Figure 1A a five-channel diffusion device was constructed. 2% (wt/vol) agarose was injected into the two resistance channels through port (b) to block the passage of cells without influencing the diffusion of potassium. A 100-mM potassium chloride solution, prepared in the potassium-depleted motility buffer, flows through the source channel from port (a) to (a\u2032), while potassium-depleted motility buffer flows through the sink channel from port (c) to (c\u2032). Potassium diffuses from the source channel to the sink channel and forms a linear concentration gradient in the observation channel (Tian et al., 2021). The wild-type strain HCB1 was sealed in the observation channel through port (p) with a drop of hot agarose (2% wt/vol). The movements of the cells were recorded by a high-speed CMOS camera. Four movies were recorded. An example video is shown in Video 1. We calculated the displacement of the mean cell position for each movie. The average results are plotted in Figure 1B. The shaded area denotes standard error of the mean (SEM). We also computed the cell density profile along the y-axis in the observation channel at the initial time of t = 1 s and steady state (t = 300 s). As shown in Figure 1C, the green squares and blue dots are experimental data. The error bars denote SEM. We found that the distribution of cells is exponential at steady state, similar to the results of logarithmic chemotactic sensing in a linear MeAsp gradient (Kalinin et al., 2009). The red solid line denotes the exponential fit, with a fitted decay constant of 0.0085 \u00b1 0.0004 \u03bcm\u22121. As reported previously (Kalinin et al., 2009), the fitted exponential decay constant equals vd/vs, where vd and vs denote the drift velocity and cell motility constant, respectively. For wild-type E. coli with vs = 53.2 \u03bcm2/s (Wu et al., 2006), we obtained a drift velocity vd = 0.45 \u00b1 0.02 \u03bcm/s.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig1-v1.jpg)\n\n**Figure 1.:** (A) Design diagram of the microfluidic device. The source channel and sink were flowed with 100 mM KCl and motility buffer, respectively. The inlets of KCl, agarose, motility buffer, and cells are denoted by (a), (b), (c), and (p), respectively. The outlets are labeled by the corresponding letters with the prime symbol. (B) The average chemotaxis migration coefficient (CMC) of four datasets as a function of time for the wild-type strain (HCB1) under a linear concentration gradient of KCl. The shaded area denotes standard error of the mean (SEM). (C) The cell density profile in the observing channel along the y-axis at the beginning (t = 1 s, green squares) and a steady state (t = 300 s, blue dots). The red solid line is an exponential fit to the data. Error bars denote SEM.\n\n![Video 1.](https://cdn.elifesciences.org/articles/91452/elife-91452-video1.mp4.jpg)\n\n**Video 1.:** The left side is the source channel. Scale bar = 20 \u00b5m.\n\nAccording to our results, the wild-type strain exhibited significant movement toward the area of high concentration in a linear concentration gradient of potassium chloride, which was similar to its chemotaxis in a typical attractant concentration gradient (Jiang et al., 2010; Kalinin et al., 2009; Liu et al., 2022; Son et al., 2016). Thus, E. coli could be attracted by potassium and perform a trend movement in a linear gradient field on the order of millimoles. We sought to further investigate the characteristics and mechanisms of this attractant-like response.\n\n### The response of the motor rotational signal to potassium\n\nPotassium is important for maintaining cell membrane potential, which is one of the two components of PMF. PMF is the energy source for the flagellar motor. The absolute value of the transmembrane electrical potential will decrease when the concentration of extracellular potassium increases. This may lead to a change in PMF and affect bacterial chemotaxis by directly changing the motor behavior. However, earlier studies found that a sudden change in membrane potential in E. coli would result in a reverse change in the transmembrane proton concentration difference, thus keeping PMF virtually constant (Bakker and Mangerich, 1981).\n\nTo test whether the chemotactic response of E. coli to potassium resulted from possible PMF changes, we monitored the motor response of the wild-type strain (JY26-pKAF131) to a stepwise addition of 30 mM potassium chloride using a bead assay. As shown in Figure 2A, the cell body was attached to a 0.01% poly-L-lysine-coated cover slide. A 1-\u03bcm-diameter bead was marked on the truncated filament. We used a high-speed CMOS camera to record the rotation of the bead. As shown in Figure 2B, the typical traces of motor rotational speed (blue line) and CW bias (purple line) were calculated. The positive and negative values of speed denote CCW (counter-clockwise) and CW rotation, respectively. The CW bias is positively correlated with the intracellular concentration of CheY-P (Cluzel et al., 2000), and the rotational speed is proportional to the PMF (Gabel and Berg, 2003). The stimulus (30 mM KCl) was added at t = 120 s and removed at t = 480 s. The average trace of 83 motors is shown in Figure 2C. The moments of addition and removal of stimulus were shifted to t = 0, which are marked by the purple dashed line and green dashed line, respectively. The CW bias decreased upon addition of potassium chloride, and then it adapted to a higher level than the pre-stimulus value. Such over adaptation was similar to the response of CW bias to sucrose in osomotaxis (Rosko et al., 2017). However, the motor speed remained constant during this process, confirming that the PMF remained constant, which was different from the osmotaxis response of motors. The results suggested that the response of motor CW bias to potassium was not due to PMF change. We performed further experiments with the chemotaxis-defective strain (HCB901-pBES38). The average result of 22 motors exhibited no response to 30 mM potassium chloride for either CW bias or speed (Figure 2D), especially on the time scale of the chemotactic response as seen in the wild-type cells. These results confirmed that the CW bias response of the motor to potassium resulted from the upstream chemotaxis signaling pathway.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic diagram of the bead assay for the flagellar motor. (B) Typical trace of rotational speed (blue line) and clockwise (CW) bias (purple line) of individual motors for the wild-type strain (JY26-pKAF131). The positive and negative values of speed denote counter-clockwise (CCW) and CW rotation, respectively. 30 mM KCl was added at t = 120 s and removed at t = 480 s. (C) The average response of 83 motors from 5 samples for the wild-type strain to 30 mM KCl. The vertical purple (green) dashed lines indicate the moment of adding (removing) stimulus. The shaded areas denote standard error of the mean (SEM). (D) The average response of 22 motors from 4 samples for the chemotaxis-defective strain (HCB901-pBES38) to 30 mM KCl. The vertical purple (green) dashed lines indicate the moment of adding (removing) stimulus. The shaded areas denote SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** There are 83 motors from 5 samples to 30 mM KCl and 91 motors from 4 samples to 15 mM K2SO4. The shaded areas denote standard error of the mean (SEM).\n\n### The response of the chemotactic signal to potassium\n\nTo directly measure the response of the chemotactic signal to potassium ions, we monitored the receptor-kinase activity in vivo by monitoring the FRET between CheY-eYFP and CheZ-eCFP.\n\nUsing the FRET setup described previously (Zhang et al., 2018), we measured the chemotactic response of a cell population with the wild-type strain (HCB1288-pVS88). We measured the response of the same sample to potassium chloride at different concentrations and to 100 \u03bcM MeAsp (a typical saturated attractant for the Tar receptor in E. coli). As shown in Figure 3A, potassium (blue solid line) induces a significant chemotactic response as an attractant. Compared with 100 \u03bcM MeAsp, 30 mM KCl resulted in a larger response and faster adaptation. Moreover, the chemotactic signal exhibits an imprecise adaptation. This is different from the over adaptation exhibited by motor CW bias. To exclude the effect of chloride ion, we quantitatively compared the response of the chemotactic signal to 10 mM KCl and 5 mM K2SO4, both of which contain 10 mM potassium ion with or without chloride ion. As shown in Figure 3\u2014figure supplement 1, they induce similar responses. We also measured the response of the motor rotational signal to 15 mM K2SO4 using the bead assay and compared it with the response to 30 mM KCl (Figure 2C). The results are shown in Figure 2\u2014figure supplement 1. The response of CW bias to 15 mM K2SO4 exhibited an attractant response, characterized by a decreased CW bias upon the addition of K2SO4, followed by an over-adaptation that is qualitatively similar to the response to 30 mM KCl. Thus, the chemotactic response mainly resulted from potassium ions rather than chloride ions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig3-v1.jpg)\n\n**Figure 3.:** (A) Chemotactic response of the wild-type strain (HCB1288-pVS88) to stepwise addition and removal of KCl. The blue solid line denotes the orignal signal, and the red dots represent the pH-corrected signal, which was recalculated from the pH-corrected cyan fluorescent protein (CFP) and yellow fluorescent protein (YFP) channels using the response of the no-receptor strain. (B) Comparison of the chemotactic response to 30 mM KCl and 60 mM sucrose. The vertical purple (green) dashed lines indicate the moment of adding (removing) stimulus. (C) Quantitative comparison among the responses to 100 \u03bcM MeAsp, 30 mM KCl, and 60 mM sucrose. The hollow and solid red bars represent the value calculated from the original signal and the pH-coPlrrected signal, respectively. The errors denote standard error of the mean (SEM).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The chemotactic response of the wild-type strain (HCB1288-pVS88) to 10 mM KCl and 5 mM K2SO4. The vertical purple (green) arrows denote the moment of adding (removing) stimulus. (B) Quantitative comparison among the responses to 10 mM KCl and 5 mM K2SO4. The errors denote standard error of the mean (SEM).\n\nEarlier studies have shown that changes in osmotic pressure caused by a change in ion concentration on the millimole scale can also lead to chemotactic responses in E. coli by altering the interaction between receptors (Vaknin and Berg, 2006). Here, we obtained a similar over adaptation in the CW bias response of motors as that of osmotaxis. To determine whether the chemotactic response to potassium was due to changes in osmotic pressure, we compared the response to both 30 mM KCl and 60 mM sucrose, both of which induced the same osmotic pressure. The results are shown in Figure 3B. In our measurements, 60 mM sucrose induced a repellent-like response, which is consistent with previous work (Vaknin and Berg, 2006), whereas 30 mM KCl induced an attractant response. Thus, the chemotactic response of E. coli to KCl did not result from osmotaxis. The quantitative comparison of the three types of chemicals is shown in Figure 3C. The response to 30 mM KCl was 1.79 \u00b1 0.10 times as large as that to 100 \u03bcM MeAsp, while the response to 60 mM sucrose was \u22120.30 \u00b1 0.05 times as large as that to 100 \u03bcM MeAsp.\n\n### Quantitative characterization of the chemotactic response to potassium\n\nTo quantitively describe the response of receptor-kinase activity to potassium ions, we measured the dose\u2013response curve of HCB1288-pVS88 to potassium chloride. As shown in Figure 4A, different concentrations of KCl were added and then removed. The FRET value of the immediate response after adding each concentration of stimulus was recorded. The FRET values were normalized by the pre-stimulus FRET value. The relative kinase activity was obtained by rescaling the FRET values of 1 (the pre-stimulus value) to 0.94 (the value after adding a saturated concentration of stimulus) to the range between 1 and 0, then the relation between relative kinase activity and concentrations of KCl was obtained (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig4-v1.jpg)\n\n**Figure 4.:** (A) A typical example of the dose\u2013response measurement. The blue solid line denotes the original signal, and the red dots represent the pH-corrected signal, recalculated from the pH-corrected cyan fluorescent protein (CFP) and yellow fluorescent protein (YFP) signals using the response of the no-receptor strain. The vertical purple (green) dashed lines indicate the moment of adding (removing) stimulus. (B) The dose\u2013response curve of relative kinase activity to KCl. The blue dots and gray circles represent the pH-corrected and original experimental data, respectively. The red solid and gray dashed lines are the fit curves for the blue dots and gray circles, respectively, using a Hill function. The fitted Hill coefficient for original and pH-corrected response were 0.53 \u00b1 0.04 and 0.88 \u00b1 0.14, respectively, and the concentration for half-maximal response (K0.5) were 0.64 \u00b1 0.12 and 0.33 \u00b1 0.06 mM, accordingly. (C) Definition of adaptation time in the step response. The gray and blue lines represent the original and pH-corrected signals, respectively. (D) The adaptation level $P=(R^{\u2217}\u2212R_{L})/(1\u2212R_{L})$ and adaptation time (T) as a function of the concentration of KCl, calculated with pH-corrected data. The errors denote standard error of the mean (SEM).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The blue solid line denotes the ratio of yellow fluorescent protein (YFP) to cyan fluorescent protein (CFP), while the cyan and yellow dots represent the PMT signals from CFP and YFP channel, respectively. The vertical purple (green) dashed lines indicate the moment of adding (removing) 30 and 100 mM KCl in order.\n\nAs shown in Figure 4B, the gray circles represent experimental data for potassium. We fitted them with a Hill function (gray dashed line). The fitted Hill coefficient was 0.53 \u00b1 0.04. However, this value was revised to 0.88 \u00b1 0.14 when we corrected the FRET responses for the pH effects on the brightness of eCFP and eYFP (the blue dots and red solid line). The concentration for half-maximal response (K0.5) was 0.64 \u00b1 0.12 mM before correction and 0.33 \u00b1 0.06 mM after correction. To study the adaptation kinetics, we measured the step response for different concentrations of potassium. As shown in Figure 4C, we calculated the adaptation percentage $P=(R^{*}-R_{L})/(1-R_{L})$ and adaptation time T, where R* and RL are the adapted value and the lowest value of the FRET signal after stepwise addition of potassium, respectively. The adaptation percentage (P) and the adaptation time (T) for different concentrations of potassium are shown in Figure 4D.\n\nAccording to our measurements, E. coli responds sensitively (with a small K0.5) and adapts quickly to potassium chloride in a range of 0.01\u2013100 mM. The recovery of the chemotactic response was imprecise for all concentrations of potassium ions.\n\n### The chemotactic response to potassium may result from the intracellular pH increase\n\nWe showed that the attractant-like response of the chemotactic signal to potassium does not result from osmotaxis. Moreover, the PMF or motor speed did not change during that process. Considering that the absolute value of the transmembrane potential deceases as the concentration of extracellular potassium ions increases, the intracellular pH will increase to maintain a constant PMF. To confirm this, we monitored the intracellular pH using the pH-sensitive fluorescent protein pHlourin2, by computing the ratio of emitted fluorescence intensities with 405 and 488 nm excitations (the ratio increases with pH value) (Mahon, 2011). The results are shown in Figure 5A. The intracellular pH of the wild-type strain (HCB33-pTrc99a_pHlourin2) increases immediately upon addition of 30 mM KCl. The purple arrows denote the moment of adding stimulus, while green arrows denote the moment of removing stimulus. As a control, 20 mM sodium benzoate with pH = 4.55 was added at t = 720 s to decrease the intracellular pH to 4.55 (Nakamura et al., 2009).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig5-v1.jpg)\n\n**Figure 5.:** (A) The response of intracellular pH to 30 mM KCl for the wild-type strain (HCB33-pTrc99a_pHluorin2). The response to 20 mM sodium benzoate solution with pH = 4.55 was used as a control. (B) The chemotactic response of the Tsr-only strain (HCB1414-pPA114-pVS88) to four typical concentrations of potassium. The blue line denotes the orignal signal, and the red dots represent the pH-correcting signal. (C) The chemotactic response of the Tar-only strain (HCB1414-pLC113-pVS88) to four typical concentrations of potassium. The blue line denotes the orignal signal, and the red dots represent the pH-correcting signal. (D) The chemotactic response of the no-receptor strain (HCB1414-pVS88) to 30 mM KCl. The vertical purple (green) arrows denote the moment of adding (removing) stimulus.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The vertical purple (green) arrows denote the moment of adding (removing) stimulus. The response to the removal of sodium benzoate seems to be a superposition of an attractant and a repellent response, the reason for which deserves to be further explored.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) The CFP intensity response of HCB1414-pVS88 to 30 mM KCl before and after YFP bleaching (50 min, yellow shaded area). Blue dots are experimental data. Fr and Fb are the CFP intensities for cells in motility medium (green dashed line) and 30 mM KCl (red dashed line), respectively. (B) The CFP intensity response of HCB1288-pVS88 to 30 mM KCl. Blue dots are experimental data. The CFP intensity for cells in motility medium is denoted with the green dashed line. The theoretical fluorescence enhancement (red dashed line) was calculated by multiplying the level of the green dashed line by Fr/Fb in A. The vertical down (up) arrows denote the moment of adding (removing) 30 mM KCl. The background measured with HCB1288-pVS18 was subtracted.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) The original FRET signal of the no-receptor mutant in response to KCl. The vertical purple (green) dashed lines indicate the moment of adding (removing) KCl in the following order: 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30, and 100 mM. (B) The original cyan fluorescent protein (CFP) (cyan solid line) and yellow fluorescent protein (YFP) (yellow solid line) signals of the no-receptor mutant in response to KCl. The vertical purple (green) dashed lines represent the same events as in (A). The horizontal blue (red) solid lines represent the PMT signal values before (after) the addition of KCl at special concentrations. (C) The relationship between the ratio of PMT signal post- to pre-KCl addition and the concentration of KCl for CFP (cyan dots) and YFP (yellow dots).\n\nIt was reported that Tar and Tsr mediate opposite responses to the changes in intracellular pH (Krikos et al., 1985; Umemura et al., 2002). Therefore, we measured the chemotactic response of strains expressing only the Tar or Tsr receptor via the FRET assay. As shown in Figure 5B, four different concentrations of KCl were added and removed successively, and the kinases activity of the Tsr-only strain exhibited an attractant response. Its imprecise adaptation is apparent as the potassium concentration increases. In contrast, the Tar-only strain exhibited a biphasic response, with kinase activity increasing sharply and then decreasing rapidly below the pre-stimulus level upon addition of potassium (Figure 5C). Such a biphasic response was also observed in the response of the Tar-only strain to 40 mM sodium benzoate at pH of 7.0 (Figure 5\u2014figure supplement 1). Note that the cytoplasmic pH deceases upon addition of sodium benzoate at pH of 7.0, so that the response to addition of sodium benzoate is opposite to the response to addition of potassium for the Tar-only strain. Therefore, the different responses of the Tar- and Tsr-only strains to potassium were consistent with the responses to the increase in intracellular pH.\n\nWe noted that both major receptors exhibited imprecise adaptation to stepwise addition of potassium. To investigate whether this was due to chemotactic sensing, we monitored the response of the strain with no chemoreceptors to stepwise addition of potassium. Upon addition of potassium, the FRET value decreased and remained at a constant value similar to the adapted level for the strains with chemoreceptors (Figure 5D). This indicated that the imprecise adaptation seen for the wild-type, Tar-only, and Tsr-only strains was not due to chemosensing. As the solution pH affects the brightness of fluorescent proteins, we hypothesize that this apparent imprecise adaptation was due to the differential change in eCFP and eYFP brightness when the cytoplasmic pH changed. To test this hypothesis, we bleached the eYFPs of the no-receptor strain (HCB1414-pVS88), eliminating possible FRET between CheY-eYFP and CheZ-eCFP, and compared the response of CFP fluorescence intensity to 30 mM KCl before and after bleaching. As shown in Figure 5\u2014figure supplement 2A, the CFP intensity showed similar amount of increase upon addition of KCl (i.e., increase of cytoplasmic pH) before and after YFP bleaching. Thus, such a response did not result from FRET, but from changes in fluorescence intensity due to an increase in intracellular pH. We calculated the ratio of CFP fluorescence intensity P = Fr/Fb = 1.056 without FRET, where Fr and Fb were the CFP intensity for cells in 30 mM KCl and motility medium, respectively. From this ratio, we could calculate the theoretical enhancement in CFP intensity due to pH increase for the wild-type strain (HCB1288-pVS88) after adding 30 mM KCl (red dashed line in Figure 5\u2014figure supplement 2B), which we found was similar to the adapted level of the CFP signal. This further proved that the apparent imprecise adaptation in the FRET signal was due to changes in eCFP and eYFP brightness when the cytoplasmic pH changed.\n\n### Revised FRET responses by correcting the pH effects on the brightness of eCFP and eYFP\n\nTo minimize the impact of pH changes altering the fluorescent protein brightness on FRET measurements of chemotactic response and adaptation to potassium, we measured the full potassium response curve for the no-receptor mutant (HCB1414-pVS88), as shown in Figure 5\u2014figure supplement 3. We characterized the pH effects on CFP and YFP channels at different concentrations of KCl, and the relationship between the ratio of the signal post- to pre-KCl addition and the KCl concentration was established for both channels, as shown in Figure 5\u2014figure supplement 3C. The pH-corrected signal after KCl addition for strains with receptors was obtained by dividing the original signal after KCl addition by this ratio at the specific KCl concentration. This procedure was applied to both CFP and YFP channels. The pH-corrected responses for the Tar- and Tsr-only strains are represented by red dots in Figure 5BC.\n\nWe recalculated the FRET responses to stepwise addition of KCl, with an example depicted by the red dots in Figure 3A. The corrected response magnitude to 30 mM KCl is similar to that of 100 \u03bcM MeAsp, being 1.06 \u00b1 0.10 times as large, as shown by the red bar in Figure 3C. We also calculated the dose\u2013response curve and the adaptation curve from the pH-corrected signals, as shown in Figure 4. The FRET signal also exhibits over-adaptation, similar to the bead assay, when we recalculated the response by correcting the CFP and YFP channels. The fitted Hill coefficient for the dose\u2013response curve is 0.88 \u00b1 0.14 (mean \u00b1 standard deviation [SD]), which is close to the response to MeAsp (~1.2) (Sourjik and Berg, 2002b), and the concentration for half-maximal response (K0.5) was 0.33 \u00b1 0.06 mM (mean \u00b1 SD).\n\nOur results indicated that the increase in the extracellular concentration of potassium leads to an increase in the intracellular pH. The Tar and Tsr receptors respond to the increase in intracellular pH differently. The wild-type strain exhibits a similar response to the Tsr-only strain due to the larger amount of Tsr than Tar receptors. These responses could be adapted via methylation and demethylation of receptors.\n\n### The chemotaxis-based simulation of E. coli attraction by the potassium signal produced by a biofilm\n\nBased on the mechanism of potassium sensing we established here, we sought to simulate the chemotactic swimming of E. coli cells in response to a periodic potassium signal secreted from a typical biofilm (Humphries et al., 2017).\n\nTo simulate the periodically fluctuating field of potassium concentration produced by the biofilm, an oscillating source was introduced using a cosine function $L_{s}=L_{0}1-cos\u20612\\pit/T$ at position x = 0, where $L_{0}$ is the half maximum concentration of potassium, and $T$ denotes the period of oscillation. In a semi-infinite liquid environment, this source results in an oscillating spatiotemporal profile of potassium\n\n$$\nL(x,t)=L_{0}[1\u2212cos\u2061(\\frac{2\\pit}{T}\u2212\\sqrt{\\frac{\\pi}{DT}}x)exp\u2061(\u2212\\sqrt{\\frac{\\pi}{DT}}x)],\n$$\n\nwhere $D=1333.3\u00a0\\mum^{2}/s$ is the diffusion constant of potassium in water (Fell and Hutchison, 1971). The profile is shown in Figure 6A (see Appendix 1 for the detailed derivation).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig6-v1.jpg)\n\n**Figure 6.:** (A) The oscillating spatial gradient of potassium. (B) The dose\u2013response curve of receptor-kinase activity to potassium. Blue dots are pH-corrected experimental data (blue dots in Figure 4B). Red solid line is the fitting curve with Equation 2. (C) Typical traces of simulated mean positions with  $L_{0}$ = 1.0 mM and T = 2 hr. The blue and green lines denote the mean x-position ($1500-x$) and mean y-position ($y$), respectively. The purple dashed line indicates the oscillating potassium source at x = 0. The phase delay $\\Delta\u03d5$ is defined as the phase shift between the trough of the mean x-position and the trough of potassium source except for t/T = 0. (D) The comparison of the mean x-position under different periods of the driving source: T = 1, 2, 3, and 4 hr. The purple dashed line indicates the oscillating potassium source at x = 0. (E) The relation between the phase delay $\\Delta\u03d5$ and the driving period T. Each data was calculated by the average of 10 simulations. The error denotes standard deviation. (F) The relation between lag time ($\\Delta\u03d5\u2219T$) and the driving period T. The error denotes standard deviation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The relation between phase delay ($\u0394\u03d5$) and driving periods (T) with different L0.Each data point was calculated by the average of 10 simulations. Error bars denote standard deviation.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91452/elife-91452-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Each data point was calculated by the average of 10 simulations. Error bars denote standard deviation.\n\nSimilar to the two-state model of pH taxis of E. coli (Hu and Tu, 2013; Hu and Tu, 2014), we employed a coarse-grained model of the chemotaxis signaling pathway to simulate the chemotactic motion of E. coli in the potassium profile (see Materials and methods for details) (Liu et al., 2022; Tian et al., 2021). We utilized the Monod\u2013Wyman\u2013Changeux allosteric model (Monod et al., 1965) to describe the potassium sensing by chemoreceptors (Tu et al., 2008):\n\n$$\na=\\frac{1}{1+exp\u2061[N(f_{m}(m)+f_{L}(L))]},\n$$\n\nwhere a is the kinase activity of the cluster of chemoreceptors, m is the methylation level of receptors, L denotes the concentration of extracellular potassium, N is the number of receptor homodimers in an allosteric cluster, and fm and fL represent the methylation- and ligand-dependent free energy, respectively.\n\n$$\nf_{L}L=ln\u2061\\frac{1+L/K_{off}}{1+L/K_{on}},\n$$\n\n\n\n$$\nf_{m}m=\\alpham-m_{0},\n$$\n\nwhere Koff and Kon are the ligand dissociation constants for inactive and active receptors, respectively, \u03b1 is the free energy change per added methyl group, and m0 is the methylation level where fm crosses zero. As shown in Figure 6B, the dose\u2013response of kinase activity to potassium could be well fitted by Equation 2 to extract the parameters.\n\nIn our simulation, cells swim in a square space with dimensions of $0\\leqx\\leq1500\u00a0\\mum$ and $0\\leqy\\leq1500\\mum$ with a constant speed of 25 \u03bcm/s. Ten thousand cells were uniformly distributed in the space at $t=0$. Each simulation was performed for at least four periods. An example of the traces of the mean positions in the x-direction (blue solid line) and y-direction (green solid line) is shown in Figure 6C. The cells effectively tracked the potassium gradient and their positions exhibited fluctuations in the direction of the gradient, similar to that observed experimentally by Humphries et al., 2017. Furthermore, a phase delay between the mean x-position and the potassium source was observed, indicating a temporal shift in response.\n\nWe simulated the taxis of cells under the oscillating source with $L_{0}=1\u00a0mM$ and T = 1, 2, 3, and 4 hr. Four typical traces are shown in Figure 6D, and the relation between the phase shift ($\u0394\u03d5$, as denoted in Figure 6C) and the driving period (T) is shown in Figure 6E. We found that the phase delay decreases significantly with the increase of driving period, a trend that is consistent with previous experimental observations in the biofilm (Humphries et al., 2017). Similar behavior was observed in frequency-dependent E. coli chemotaxis to spatially and temporally varying MeAsp source (Zhu et al., 2012). Furthermore, we also computed the lag time ($\u0394\u03d5\u2219T$) of the average x-position relative to the electric signal (potassium concentration). The relation between lag time and the driving period is shown in Figure 6F. For driving periods of 1, 2, 3, and 4 hr, the oscillation in the E. coli cell displacement lagged the potassium source by 11.7 \u00b1 0.5, 14.7 \u00b1 0.7, 14.8 \u00b1 0.9, and 14.2 \u00b1 1.0 min (mean \u00b1 SD), respectively. These values closely resemble the 9\u201335 min lag observed in biofilm experiments for B. subtilis and P. aeruginosa (Humphries et al., 2017). Notably, this result was not affected by the specific value of L0 (Figure 6\u2014figure supplement 1).\n\n## Discussion\n\nPotassium ions play a critical role in many physiological processes of bacteria. Bacteria in biofilms release potassium ions to their surroundings through ion channels on the cell membrane, thus influencing the behavior of surrounding bacteria and attracting distant free bacteria to swim toward them. However, the mechanism of bacterial sensing and response to potassium ions was unclear. Here, we found that E. coli senses the concentration change of extracellular potassium ions sensitively via the chemotaxis signaling pathway, and this chemotactic sensing is achieved through changes in intracellular pH.\n\nWe found that E. coli could quickly converge to the area with a higher concentration of potassium under a linear concentration profile. The measurements of the response of individual motors to stepwise addition and removal of 30 mM KCl via the bead assay demonstrated that the attractant response resulted from the chemotaxis signaling pathway instead of the possible PMF effect on the motor itself. We also demonstrated that the PMF remained unchanged when KCl was added or removed.\n\nTo directly measure the chemotactic response of E. coli to potassium ions, we measured the response to different concentrations of potassium via FRET between CheY-eYFP and CheZ-eCFP. After correcting the pH effects on the brightness of CFP and YFP proteins, we found that the chemotactic response of wild-type E. coli to 30 mM KCl was 1.06\u00b10.10 times that to 100 \u03bcM MeAsp. The response to 60 mM sucrose was \u22120.30 \u00b1 0.05 times that to 100 \u03bcM MeAsp. This suggested that the attractant response to potassium was independent of the osmolality response. To quantitatively describe the chemotactic response to potassium, we systematically measured the dose\u2013response curve and the step responses. We obtained a Hill coefficient of 0.88 \u00b1 0.14 and a concentration of 0.33 \u00b1 0.06 mM for the half-maximal response. This showed that E. coli had a very sensitive response to potassium ions and could sense weak changes in potassium concentration. We also found that E. coli adapts quickly to potassium concentration changes in the range of 0.01\u2013100 mM, which promotes cell localization to the peak of a potassium concentration profile.\n\nFor other strong attractant stimuli such as high concentrations of MeAsp, the step response typically shows a low plateau before it adapts. However, in the case of potassium, the FRET signal does not typically display an obvious plateau following the stimuli. To observe the low plateau before adaptation, a saturating amount of attractant should be added in a stepwise manner. According to the dose\u2013response curve we measured for potassium, a saturating amount of potassium would be close to 100 mM. In fact, there is a small segment of the low plateau in the step response to 30 mM KCl (Figure 4C). To observe more of this low plateau, we could have used a higher concentration of KCl. However, a stimulation higher than 30 mM KCl will induce substantial physiological changes in the cell, resulting in a significant decrease in fluorescence for both channels (Figure 4\u2014figure supplement 1). Therefore, the range of KCl concentration that can be reliably applied in FRET measurements is limited.\n\nWhile keeping the PMF unchanged, addition of potassium decreases the membrane potential and thus increases the intracellular pH. This was demonstrated by intracellular pH measurements. We also measured the chemotactic response of mutant strains expressing only Tsr or Tar to different concentrations of potassium. The Tsr-only strain responded to potassium as an attractant, whereas the Tar-only strain exhibited a biphasic response (a repellent-like followed by an attractant-like response). The different responses of Tar and Tsr to potassium were consist with their responses to changes in intracellular pH. We further demonstrated the biphasic response of the Tar-only strain to 40 mM sodium benzoate with pH of 7.0 that induced a decrease in intracellular pH. The differential responses of the Tsr and Tar receptors to potassium may be a strategy by which bacteria adjust their response to potassium at different growth stages during which bacteria express different ratios of Tsr to Tar receptors (Kalinin et al., 2010; Yang and Sourjik, 2012). For the growth stage used in our measurements here, the amount of Tsr was more than that of Tar in the wild-type strain (Li and Hazelbauer, 2004), so the response to potassium was dominated by Tsr.\n\nThe response of the Tar-only strain to potassium warrants further discussion (Figure 5C). This strain shows a repellent response to stepwise addition of low concentrations of potassium, specifically less than 10 mM. This is consistent with previous observations of the response of Tar to changes in intracellular pH (Krikos et al., 1985; Umemura et al., 2002). Interestingly, it exhibits a biphasic response to high potassium concentrations of 10 mM and above. This biphasic response might result from additional pH effects on the activity of intracellular enzymes such as CheRB and CheA (Conley et al., 1994), which may have a different timescale and response from the Tar receptor.\n\nBased on the potassium sensing mechanism we established here, we performed stochastic simulation of bacterial taxis in a biofilm-produced potassium gradient, demonstrating that E. coli cells can be periodically attracted by the biofilm. Moreover, we observed a time delay between the positions of the cells and the electric signal of the biofilm. Specifically, we found that the oscillation of E. coli cell displacement lags the potassium source by 11.7 \u00b1 0.5, 14.7 \u00b1 0.7, 14.8 \u00b1 0.9, and 14.2 \u00b1 1.0 min (mean \u00b1 SD) for driving periods of 1, 2, 3, and 4 hr, respectively. Remarkably, these values closely resemble the 9\u201335 min lag observed in biofilm experiments for B. subtilis and P. aeruginosa (Humphries et al., 2017), despite the potential variations in the potassium sensing mechanisms among these bacterial species. The potassium sensing mechanism we established here contributed to our understanding of the complex dynamics of electrical signaling in biofilm environments.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Wild-type AW405</td>\n      <td>Howard Berg Lab Armstrong et al., 1967</td>\n      <td>HCB1</td>\n      <td>Also known as AW405</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Wild-type RP437</td>\n      <td>Howard Berg Lab Parkinson, 1978</td>\n      <td>HCB33</td>\n      <td>Also known as RP437</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>CheY** strain</td>\n      <td>Howard Berg Lab</td>\n      <td>HCB901</td>\n      <td>\u0394cheZ fliC, Ptrc420 cheY13DK106YW</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>RP437 with \u0394cheY cheZ</td>\n      <td>Howard Berg Lab Sourjik and Berg, 2002b</td>\n      <td>HCB1288</td>\n      <td>Also known as VS104;\u0394cheY cheZ</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>RP437 with \u0394tar tsr tap trg aer cheY cheZ</td>\n      <td>Howard Berg Lab Sourjik and Berg, 2002a</td>\n      <td>HCB1414</td>\n      <td>Also known as VS181;\u0394tar tsr tap trg aer cheY cheZ</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>RP437 with \u0394fliC</td>\n      <td>This paper</td>\n      <td>JY26</td>\n      <td>The fliC gene of strain RP437 was deleted; \u0394fliC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pVS18(plasmid)</td>\n      <td>Howard Berg Lab Sourjik and Berg, 2002a</td>\n      <td>pVS18</td>\n      <td>CheY-eYFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pVS88(plasmid)</td>\n      <td>Howard Berg Lab Sourjik and Berg, 2004</td>\n      <td>pVS88</td>\n      <td>CheY-eYFP and CheZ-eCFP</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pBES38(plasmid)</td>\n      <td>Howard Berg Lab</td>\n      <td>pBES38</td>\n      <td>LacIq and FliCsticky</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pKAF131(plasmid)</td>\n      <td>Howard Berg Lab Yuan et al., 2010</td>\n      <td>pKAF131</td>\n      <td>FliCsticky</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLC113(plasmid)</td>\n      <td>Howard Berg Lab Ames et al., 2002</td>\n      <td>pLC113</td>\n      <td>Tar</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pPA114(plasmid)</td>\n      <td>Howard Berg Lab Ames et al., 2002</td>\n      <td>pPA114</td>\n      <td>Tsr</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pTrc99a_pHluorin2(plasmid)</td>\n      <td>This paper</td>\n      <td>pTrc99a_pHluorin2</td>\n      <td>The gene pHluorin2 was cloned into pTrc99a under an IPTG-inducible promoter.</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tryptone</td>\n      <td>Oxoid</td>\n      <td>CAT# LP0042B</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IPTG</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAT# I6758</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lactic acid</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAT# 252476</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom script</td>\n      <td>Zhang, 2024</td>\n      <td>https://github.com/CZhang2023/2024_eLife_potassium</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Strains and plasmids\n\nStrain HCB1 was derived from E. coli K12 strain AW405 (Armstrong et al., 1967). Strains JY26 (\u0394fliC), HCB33, HCB901 (\u0394cheZ fliC, Ptrc420 cheY13DK106YW) (Scharf et al., 1998), HCB1288 (\u0394cheY cheZ) (Sourjik and Berg, 2002b), and HCB1414 (\u0394tar tsr tap trg aer cheY cheZ) (Sourjik and Berg, 2002a) were derived from E. coli K12 strain RP437 (Parkinson, 1978). The plasmid pKAF131 constitutively expresses FliCsticky (Yuan et al., 2010). The plasmid pBES38 constitutively expresses both LacIq and the sticky filament FliCsticky (Scharf et al., 1998). The promoters used for the constitutive expression of LacIq and FliCsticky were the Iq promotor and the native promoter of fliC, respectively (Scharf et al., 1998). The FRET pair CheY-eYFP and CheZ-eCFP was expressed from plasmid pVS88 under an isopropyl-\u03b2-d-thiogalactoside (IPTG)-inducible promoter (Sourjik and Berg, 2004). The plasmid pVS18 was used to express CheY-eYFP under an IPTG-inducible promoter (Sourjik and Berg, 2002a). The plasmids pLC113 and pPA114 were used to express Tar and Tsr receptors under a salicylate-inducible promoter, respectively (Ames et al., 2002). The gene pHluorin2 was cloned into pTrc99a under an IPTG-inducible promoter, yielding pTrc99a_pHluorin2. The strains and plasmids used in this study are shown in Table 1.\n\n**Table 1.**\n Strains and plasmids used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain</th>\n      <th>Plasmids</th>\n      <th>Assay</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HCB1</td>\n      <td>-</td>\n      <td>Microfluidic assay</td>\n    </tr>\n    <tr>\n      <td>JY26</td>\n      <td>pKAF131</td>\n      <td>Bead assay</td>\n    </tr>\n    <tr>\n      <td>HCB901</td>\n      <td>pBES38</td>\n      <td>Bead assay</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">HCB1288</td>\n      <td>pVS88</td>\n      <td>FRET assay</td>\n    </tr>\n    <tr>\n      <td>pVS18</td>\n      <td>FRET assay</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">HCB1414</td>\n      <td>pVS88</td>\n      <td>FRET assay</td>\n    </tr>\n    <tr>\n      <td>pLC113, pVS88</td>\n      <td>FRET assay</td>\n    </tr>\n    <tr>\n      <td>pPA114, pVS88</td>\n      <td>FRET assay</td>\n    </tr>\n    <tr>\n      <td>HCB33</td>\n      <td>pTrc99a_pHluorin2</td>\n      <td>Intracellular pH measurement</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nAll cells were grown at 33\u00b0C in 10 ml T-broth (1% tryptone and 0.5% NaCl) to an OD600 between 0.45 and 0.50 with appropriate antibiotics and inducers, collected by centrifugation and washed twice with potassium-depleted motility buffer (10 mM NaPO4, 0.1 mM ethylenediaminetetraacetic acid, 1 mM methionine, 10 mM lactic acid, pH 7.0). Cells of HCB1 were centrifuged for 6 min at 1200 \u00d7 g. Cells of JY26-pKAF131 were grown with 25 \u03bcg/ml chloramphenicol. HCB901-pBES38 cells were grown with 100 \u03bcg/ml ampicillin and 23 \u03bcM IPTG. Both were centrifuged for 2 min at 4000 \u00d7 g. Cells of HCB1288-pVS88 and HCB1414-pVS88 were grown with 100 \u03bcg/ml ampicillin and 100 \u03bcM IPTG in the dark. Cells of HCB1414-pLC113-pVS88 and HCB1414-pPA114-pVS88 were grown with 100 \u03bcg/ml ampicillin, 25 \u03bcg/ml chloramphenicol, 100 \u03bcM IPTG, and 1 \u03bcM salicylate in the dark. Cells of HCB33-pTrc99a_pHlourin2 were grown with 100 \u03bcg/ml ampicillin and 100 \u03bcM IPTG. Cells were stored at 4\u00b0C before use. All experiments were carried out at 23\u00b0C. The KCl solution used in this work was prepared in the potassium-depleted motility buffer.\n\n### Microfluidics\n\nWe constructed a 100-\u03bcm-depth microfluidic device similar to that described previously (Liu et al., 2022; Tian et al., 2021). The design is shown in Figure 1A. There are two auxiliary channels and three primary channels. The width of the auxiliary channels is 100 \u03bcm, while the width of the primary channels is 400 \u03bcm. The source and sink channels were used to flow 100 mM KCl and potassium-depleted motility buffer, respectively, and the observing channel was used to observe the motion of cells. The auxiliary channels were filled with 2% agarose gel at a temperature of 68\u00b0C and cooled down. In our measurement, we kept the flow at a rate of 5 ml/min in both source and sink channels with a syringe pump (Pump-22; Harvard Apparatus). The potassium ions could diffuse from the source channel to the sink channel and form a linear gradient in the observing channel. Cells of HCB1 were sealed in the observing channel, and their movement was recorded by a fast CMOS camera (Flare 2M360-CL, IO Industries) equipped on a Nikon Ti-E microscope at a magnification of \u00d720. The chemotaxis migration coefficient, as an indicator of the mean cell position (Kalinin et al., 2010), was calculated as the average of (xi \u2212 xc)/194, where xi is the x-position of the ith cell, xc is the x-position of the center of the observing channel, and 194 \u03bcm is the half-width of the observed region.\n\n### Bead assay\n\nWe sheared the sticky filaments of the washed cell suspensions by passing them 200 times between two syringes equipped with 23-gauge needles and connected by a 7-cm-long polyethylene tube (0.58 mm inside diameter, no. 0427411; Becton Dickinson), and condensed them into 300 \u03bcl in potassium-depleted motility buffer. To measure motor rotation, sheared cells were immobilized on a coverslip coated with poly-L-lysine (0.01%, P4707; Sigma, St. Louis, MO) assembled on a flow chamber (Berg and Block, 1984), and allowed to stand for 5 min. Then, 1-\u03bcm-diameter polystyrene beads (0.27%, no. 0731; Polysciences) were flowed to replace the suspension and attached to the sheared filament stubs by allowing it to stand for 4 min. The rotation of beads was recorded by a fast CMOS camera (Flare 2M360-CL, IO Industries) equipped on a Nikon Ti-E inverted phase-contrast microscope at a magnification of \u00d740. The CW bias and rotational speed were calculated with a 20-s time window and 1-s time slide.\n\n### FRET assay\n\nThe experimental setup used in FRET measurements was the same as that described previously (Zhang et al., 2018). The FRET setup was based on a Nikon Ti-E microscope equipped with a 40\u00d7 0.60 NA objective. The illumination light was provided by a 130-W mercury lamp, attenuated by a factor of 1024 with neutral density filters, and passed through an excitation bandpass filter (FF02-438/24-25, Semrock) and a dichroic mirror (FF458-Di02\u221225x36, Semrock). The epifluorescent emission was split into cyan and yellow channels by a second dichroic mirror (FF509-FDi01\u221225x36, Semrock). The signals in the two channels were then filtered by two emission bandpass filters (FF01-483/32-25 and FF01-542/32-25, Semrock) and collected by two photon-counting photomultipliers (H7421-40, Hamamatsu, Hamamatsu City, Japan), respectively. Signals from the two photomultipliers were recorded at a sampling rate of 1 Hz using a data-acquisition card installed in a computer (USB-1901(G)\u20131020, ADlink, New Taipei, Taiwan).\n\nThe washed cell suspension was concentrated 45 times and flowed into a flow chamber equipped with a poly-L-lysine-coated coverslip, allowing it to stand for 20 min. Then, the chamber was maintained under a constant flow (500 $\\mul/min$) of potassium-depleted motility buffer by a syringe pump (Pump-22; Harvard Apparatus). The same flow was used to add and remove stimulus. All data analysis was performed using custom scripts in MATLAB 2018b (MathWorks). The FRET value was calculated as the ratio of YFP to CFP intensities, normalized by the pre-stimulus value. The impact of pH on the original signals for both CFP and YFP channels was corrected by\n\n$$\nS_{pH\u2212corrected}(L;t_{addition}<t<t_{removal})=\\frac{S_{orignal}(L;t_{addition}<t<t_{removal})}{C_{pH}(L)}\n$$\n\nwhere $S_{pH\u2212corrected}(L;t_{addition}<t<t_{removal})$ and $S_{orignal}(L;t_{addition}<t<t_{removal})$ represent the pH-corrected and original PMT signal (CFP or YFP channel) from the moment of addition of L mM KCl to the moment of its removal, respectively, and $C_{pH}(L)$ is the correction factor, which is the ratio of PMT signal post- to pre-KCl addition for the no-receptor mutant at L mM KCl, for CFP or YFP channel as shown Figure 5\u2014figure supplement 3. The pH-corrected FRET response is then calculated as the ratio of the pH-corrected YFP to the pH-corrected CFP, normalized by the pre-stimulus ratio.\n\nFor the YFP photobleaching assay, we measured the background of the CFP channel by recording the intensity of the CFP channel for the strain expressing only CheY-eYFP (HCB1288-pVS18). We monitored the response of the CFP signal to 30 mM KCl before and after bleaching YFP. The bleaching was carried out with a YFP filter set (C-FL YFP BP HYQ535, #41028, Chroma) under mercury lamp illumination without attenuation and sustained for 50 min. All these measurements were performed under the same conditions.\n\n### Intracellular pH measurements\n\nThe washed cells of HCB33-pTrc99a_pHluorin2 were immobilized on a coverslip assembled on a flow chamber and coated with poly-L-lysine. Then, a constant flow (500 $\\mul/min$) was applied to the cells. The samples were illuminated periodically with two lasers. In each period, the laser with a wavelength of 405 nm was illuminated for 200 ms and stopped for 400 ms, and the laser with a wavelength of 488 nm was illuminated for another 200 ms and stopped for another 400 ms. The emission light passed through the T495lp dichroic mirror and AT495lp longpass filter and was collected by an EMCCD (Andor DU897) equipped on a Nikon Ti-E inverted phase-contrast microscope at a magnification of \u00d7100. The changes in intracellular pH could be characterized by the ratio of emitted fluorescence between the two excitation lasers.\n\n### Simulation of bacterial taxis in an oscillating spatial gradient of potassium\n\nIn our simulation, cells were treated as self-propelled particles. They could swim smoothly (a run state) with a constant speed of 25 \u03bcm/s and with rotational diffusion (the rotational diffusion constant was 0.062 rad2/s) (Vladimirov et al., 2010), or stop to reorient (a tumble state). The tumble angle $\\theta$ was selected from the probability distribution $P(\\theta)=0.5\u2217(1+cos\\theta)\u2217sin\u2061\\theta(0\\leq\\theta\\leq\\pi)$ (Berg and Brown, 1972; Neumann et al., 2010). A coarse-grained model of the chemotaxis signaling pathway (Jiang et al., 2010; Tu et al., 2008) was utilized to describe the sensing and adaptation of chemoreceptors to changes in extracellular potassium concentration:\n\n$$\na=\\frac{1}{1+exp\u2061[N(\\alpha(m\u2212m_{0})+ln\u2061\\frac{1+L/K_{off}}{1+L/K_{on}})]},\u00a0\u00a0\u00a0\n$$\n\n\n\n$$\n\\frac{dm}{dt}=k_{R}(1\u2212a)\u2212k_{B}a,\n$$\n\nwhere $a$ is the kinase activity of the cluster of chemoreceptors, $m$ is the methylation level of receptors, and $L$ denotes the concentration of extracellular potassium. In the denominator on the right-hand side of Equation 3, the two terms within the parentheses of the exponential expression represent the methylation-dependent (fm) and ligand-dependent (fL) free energy, respectively. The parameters $N=0.85,f_{m}=0.84,\u00a0K_{off}=0.17mM,\u00a0K_{on}=55.17mM$ were determined by fitting the dose\u2013response curve in Figure 6B. The values of the parameters $\\alpha=\u22121.7,m_{0}=1.0,k_{R}=0.005s^{\u22121},k_{B}=0.010s^{\u22121}$ were chosen to be the same as before (Liu et al., 2022).\n\nThe CheY-P concentration (Yp) is proportional to the kinase activity: $Yp=7.86a$ (Jiang et al., 2010; van Albada and Ten Wolde, 2009), and is related to the motor CW bias (B) by (Cluzel et al., 2000):\n\n$$\nB=\\frac{Yp^{10.3}}{Yp^{10.3}+3.1^{10.3}}\n$$\n\nThen the switching rate from run to tumble and from tumble to run were determined by $B/0.11$ and $5s^{\u22121}$, respectively (Berg and Brown, 1972; He et al., 2016).\n\nIn the simulation, cells swim in a square space with dimensions of $0\\leqx\\leq1500\\mum$ and $0\\leqy\\leq1500\u00a0\\mum$. We implemented periodic boundary condition for the y-direction, and reflective boundaries for the x-direction. Ten thousand cells were uniformly distributed throughout the square space at $t=0$. The time step is 0.01 s. They swam in a steady oscillating spatial gradient of potassium created by an oscillating source at x = 0. The simulation was performed for a minimum of four periods to observe and analyze the long-term behavior of the cells in response to the oscillating gradient. The simulated lag time decreases with the methylation rate kR, but levels off at high values of kR (Figure 6\u2014figure supplement 2).\n",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91452.4.sa0](https://doi.org/10.7554/eLife.91452.4.sa0)\n\nIn this important study, the authors report a novel measurement of the Escherichia coli chemotactic response and demonstrate that these bacteria display an attractant response to potassium, which is connected to intracellular pH level. The experimental evidence provided is convincing and the work will be of interest to microbiologists studying chemotaxis.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91452.4.sa1](https://doi.org/10.7554/eLife.91452.4.sa1)\n\nSummary:\n\nThis paper shows that E. coli exhibits a chemotactic response to potassium by measuring both the motor response (using a bead assay) and the intracellular signaling response (CheY phosporylation level via FRET) to step changes in potassium concentration. They find increase in potassium concentration induces a considerable attractant response, with amplitude comparable to aspartate, and cells can quickly adapt (and generally over-adapt). The authors propose that the mechanism for potassium response is through modifying intracellular pH; they find both that potassium modifies pH and other pH modifiers induce similar attractant responses. It is also shown, using Tar- and Tsr-only mutants, that these two chemoreceptors respond to potassium differently. Tsr has a standard attractant response, while Tar has a biphasic response (repellent-like then attractant-like). Finally, the authors use computer simulations to study the swimming response of cells to a periodic potassium signal secreted from a biofilm and find a phase delay that depends on the period of oscillation.\n\nStrengths:\n\nThe finding that E. coli can sense and adapt to potassium signals and the connection to intracellular pH is quite interesting and this work should stimulate future experimental and theoretical studies regarding the microscopic mechanisms governing this response. The evidence (from both the bead assay and FRET) that potassium induces an attractant response is convincing, as is the proposed mechanism involving modification of intracellular pH. The updated manuscript controls for the impact of pH on the fluorescent protein brightness that can bias the measured FRET signal. After correction the response amplitude and sharpness (hill coefficient) are comparable to conventional chemoattractants (e.g. aspartate), indicating the general mechanisms underlying the response may be similar. The authors suggest that the biphasic response of Tar mutants may be due to pH influencing the activity of other enzymes (CheA, CheR or CheB), which will be an interesting direction for future study.\n\nWeaknesses:\n\nThe measured response may be biased by adaptation, especially for weak potassium signals. For other attractant stimuli, the response typically shows a low plateau before it recovers (adapts). In the case of potassium, the FRET signal does not have an obvious plateau following the stimuli of small potassium concentrations, perhaps due to the faster adaptation compared to other chemoattractants. It is possible cells have already partially adapted when the response reaches its minimum, so the measured response may be a slight underestimate of the true response. Mutants without adaptation enzymes appear to be sensitive to potassium only at much larger concentrations, where the pH significantly disrupts the FRET signal; more accurate measurements would require the development of new mutants and/or measurement techniques.\n\nNote added after the second revision: The authors made a reasonable argument regarding the effects of adaptation, which were estimated to be small.\n",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7d24078a-b3df-4f3d-80af-13b37a759fed",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C1",
+      "claim": "Bacteria in biofilms secrete potassium ions to attract free swimming cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria in biofilms secrete potassium ions to attract free swimming cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known phenomenon that motivates the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "3555111a-80b3-4707-be77-7ecd36e9798c",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C2",
+      "claim": "Escherichia coli can rapidly accumulate in regions of high potassium concentration on the order of millimoles.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using a microfluidic device, we found that Escherichia coli can rapidly accumulate in regions of high potassium concentration on the order of millimoles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by experimental data from microfluidic device measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "70e934b1-6f29-427e-b50b-3745eb376e08",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C3",
+      "claim": "The response of E. coli to potassium resulted from the chemotaxis signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a bead assay, we measured the dynamic response of individual flagellar motors to stepwise changes in potassium concentration, finding that the response resulted from the chemotaxis signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bead assay measurements showing motor CW bias response and lack of response in chemotaxis-defective strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "1e8a11a1-6ec0-4d8f-86e8-3828c41cb4b1",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C4",
+      "claim": "The chemotaxis pathway exhibited a sensitive response and fast adaptation to potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the chemotactic response to potassium, we measured the dose\u2013response curve and adaptation kinetics via an F\u00f6rster resonance energy transfer (FRET) assay, finding that the chemotaxis pathway exhibited a sensitive response and fast adaptation to potassium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FRET assay measurements of dose-response curves and adaptation kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "13d2e2be-5e27-4d13-855e-fd62ef2ef1c8",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C5",
+      "claim": "Tar receptors exhibit a biphasic response to potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "Tar receptors exhibit a biphasic response, whereas Tsr receptors respond to potassium as an attractant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FRET measurements in Tar-only mutant strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "b4fa3168-cace-4ff6-844f-d9f9d41a6120",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C6",
+      "claim": "Tsr receptors respond to potassium as an attractant.",
+      "claim_type": "EXPLICIT",
+      "source": "Tar receptors exhibit a biphasic response, whereas Tsr receptors respond to potassium as an attractant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FRET measurements in Tsr-only mutant strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "15513c0a-238e-4913-9f63-943bb1c8c329",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C7",
+      "claim": "The different responses of Tar and Tsr receptors to potassium were consistent with the responses of the two receptors to intracellular pH changes.",
+      "claim_type": "EXPLICIT",
+      "source": "These different responses were consistent with the responses of the two receptors to intracellular pH changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with known pH responses and measurements with sodium benzoate.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "48e3037a-e654-4af1-9aca-d6d0d4938c90",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C8",
+      "claim": "Potassium ions play a critical role in maintaining the osmotic pressure, pH value and membrane potential of bacterial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In prokaryotes, such as bacteria, potassium ions play a critical role in maintaining the osmotic pressure, pH value and membrane potential of cells (Ballal et al., 2007; Epstein, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "17bbddf3-773d-4b68-b0a8-bc0d9b994dbf",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C9",
+      "claim": "Both the expression of genes and the activities of enzymes are regulated by potassium ions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both the expression of genes and the activities of enzymes are also regulated by potassium ions (Ali et al., 2017; Ballal et al., 2007; Epstein, 2003; Nanatani et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "75ee5f74-4d38-4afd-bbfc-0cf050aa28bf",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C10",
+      "claim": "Bacteria sense and respond to chemicals via the chemotaxis signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria sense and respond to chemicals via the chemotaxis signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about bacterial chemotaxis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "df2f6990-8ba9-44b6-9f40-68b8b8410e6d",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C11",
+      "claim": "In Escherichia coli, chemo stimuli are detected by transmembrane receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli, chemo stimuli are detected by transmembrane receptors (Bray et al., 1998; Endres et al., 2008; Homma et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "04f50416-4e65-4aa3-a09c-4b73f5bbd278",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C12",
+      "claim": "The sensed signal is transmitted to the associated cytoplasmic histidine kinase CheA, affecting its autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensed signal is then transmitted to the associated cytoplasmic histidine kinase CheA, affecting its autophosphorylation (Li and Hazelbauer, 2011; Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "361ee212-0e1b-4946-82b4-9fc1bb62225f",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C13",
+      "claim": "CheA transfers its phosphoryl group to the response regulator CheY and the methylesterase CheB, yielding CheY-P and CheB-P, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "CheA transfers its phosphoryl group to the response regulator CheY and the methylesterase CheB, yielding CheY-P and CheB-P, respectively (Bren and Eisenbach, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "cdf67b9f-12c0-489a-a204-d89d19c7c5f9",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C14",
+      "claim": "CheY-P binds to the base of the flagellar motor, increasing the probability of motor rotating clockwise (CW), namely motor CW bias, and thus increasing the cell tumble frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "CheY-P binds to the base of the flagellar motor, increasing the probability of motor rotating clockwise (CW), namely motor CW bias, and thus increasing the cell tumble frequency (Dyer and Dahlquist, 2006; Lam et al., 2013; van Albada and Ten Wolde, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "d50bf009-d5cb-4ff0-aaf8-2d203ced1fca",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C15",
+      "claim": "The phosphatase CheZ binds to CheY-P and accelerates its dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphatase CheZ binds to CheY-P and accelerates its dephosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the chemotaxis signaling pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "6dec4d73-e4dd-477a-baa7-506647ca23a7",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C16",
+      "claim": "CheB-P and CheR demethylate and methylate the receptors, respectively, to accomplish robust adaptation in chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "CheB-P and CheR demethylate and methylate the receptors, respectively, to accomplish robust adaptation in chemotaxis (Djordjevic and Stock, 1997; Djordjevic and Stock, 1998; Levin et al., 2002; Lupas and Stock, 1989; Lybarger and Maddock, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "f1296cb2-b9c5-46a7-947f-7ae67c7da092",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C17",
+      "claim": "MeAsp and serine can bind to the periplasmic domain of the corresponding receptor directly and modify kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The former suggests that the ligand can bind to the periplasmic domain of the corresponding receptor directly and modify kinase activity, such as MeAsp and serine (Neumann et al., 2010; Tajima et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "c31b9a66-5eda-4aab-8b65-0c5446e6287c",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C18",
+      "claim": "Maltose is sensed by the Tar receptor with the help of periplasmic maltose-binding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter requires the help of binding proteins, such as maltose sensed by the Tar receptor with the help of periplasmic maltose-binding protein (Brass and Manson, 1984), and peptides sensed by the Tap receptor with the help of peptide-binding proteins (Manson et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "619fedea-7859-4561-b688-a57dd9e745c1",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C19",
+      "claim": "Peptides are sensed by the Tap receptor with the help of peptide-binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter requires the help of binding proteins, such as maltose sensed by the Tar receptor with the help of periplasmic maltose-binding protein (Brass and Manson, 1984), and peptides sensed by the Tap receptor with the help of peptide-binding proteins (Manson et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "e9370ff9-5579-45e3-9425-39014cb5b0bb",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C20",
+      "claim": "Bacteria in biofilms secrete potassium into their surroundings through ion channels on the cell membrane, thereby affecting the behavior of distant free bacteria and attracting them.",
+      "claim_type": "EXPLICIT",
+      "source": "It was discovered recently that bacteria in biofilms secrete potassium into their surroundings through ion channels on the cell membrane, thereby affecting the behavior of distant free bacteria and attracting them (Humphries et al., 2017; Prindle et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "3369eb74-86da-446d-a132-5bb834c72ad7",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C21",
+      "claim": "Wild-type E. coli exhibited significant movement toward the area of high concentration in a linear concentration gradient of potassium chloride.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our results, the wild-type strain exhibited significant movement toward the area of high concentration in a linear concentration gradient of potassium chloride, which was similar to its chemotaxis in a typical attractant concentration gradient (Jiang et al., 2010; Kalinin et al., 2009; Liu et al., 2022; Son et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by microfluidic device measurements and comparison with known attractant responses.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "6c9a733d-12b6-45dc-8dd0-e8c47a125bf9",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C22",
+      "claim": "The drift velocity of wild-type E. coli in a linear potassium gradient is 0.45 \u00b1 0.02 \u03bcm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "For wild-type E. coli with vs = 53.2 \u03bcm2/s (Wu et al., 2006), we obtained a drift velocity vd = 0.45 \u00b1 0.02 \u03bcm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental data using the fitted exponential decay constant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "b66e8d3f-604c-4bcf-bac7-fd60e4f906d2",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C23",
+      "claim": "A sudden change in membrane potential in E. coli would result in a reverse change in the transmembrane proton concentration difference, thus keeping PMF virtually constant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, earlier studies found that a sudden change in membrane potential in E. coli would result in a reverse change in the transmembrane proton concentration difference, thus keeping PMF virtually constant (Bakker and Mangerich, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "04db2e44-621c-4fd0-8c9f-c8f7d95b7f20",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C24",
+      "claim": "The motor speed remained constant during the response to potassium, confirming that the PMF remained constant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the motor speed remained constant during this process, confirming that the PMF remained constant, which was different from the osmotaxis response of motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bead assay measurements showing constant motor speed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "b80c3e48-0843-43e4-80a6-d1078ff65c8b",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C25",
+      "claim": "The chemotaxis-defective strain exhibited no response to 30 mM potassium chloride for either CW bias or speed.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed further experiments with the chemotaxis-defective strain (HCB901-pBES38). The average result of 22 motors exhibited no response to 30 mM potassium chloride for either CW bias or speed (Figure 2D), especially on the time scale of the chemotactic response as seen in the wild-type cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bead assay measurements with chemotaxis-defective strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "653554dd-259d-43fc-8e73-c762ea95d08b",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C26",
+      "claim": "The response of motor CW bias to potassium resulted from the upstream chemotaxis signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirmed that the CW bias response of the motor to potassium resulted from the upstream chemotaxis signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of response in chemotaxis-defective strains and the constant PMF.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "91fe07b6-067f-47e7-91ad-1a0e527f8618",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C27",
+      "claim": "30 mM KCl resulted in a larger response and faster adaptation compared to 100 \u03bcM MeAsp.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with 100 \u03bcM MeAsp, 30 mM KCl resulted in a larger response and faster adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FRET assay measurements comparing responses to KCl and MeAsp.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "2b9e84f1-368a-4c02-82d4-a9f4ca8213be",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C28",
+      "claim": "The chemotactic signal exhibits an imprecise adaptation to potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the chemotactic signal exhibits an imprecise adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in FRET measurements, though later corrected for pH effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "ca465101-9b60-4909-9fc4-ea7f0a90400f",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C29",
+      "claim": "The chemotactic response mainly resulted from potassium ions rather than chloride ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the chemotactic response mainly resulted from potassium ions rather than chloride ions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of responses to KCl and K2SO4 at equivalent potassium concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "eb3fd754-c356-4c5c-aeec-d027a01c7d15",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C30",
+      "claim": "Changes in osmotic pressure caused by a change in ion concentration on the millimole scale can lead to chemotactic responses in E. coli by altering the interaction between receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies have shown that changes in osmotic pressure caused by a change in ion concentration on the millimole scale can also lead to chemotactic responses in E. coli by altering the interaction between receptors (Vaknin and Berg, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "9956a919-4d31-4dcc-ba3a-fe8c83ca73b5",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C31",
+      "claim": "60 mM sucrose induced a repellent-like response.",
+      "claim_type": "EXPLICIT",
+      "source": "In our measurements, 60 mM sucrose induced a repellent-like response, which is consistent with previous work (Vaknin and Berg, 2006), whereas 30 mM KCl induced an attractant response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by FRET measurements and comparison with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "ad07d3c1-5f36-4edc-b8a9-ecd11b8577b9",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C32",
+      "claim": "The chemotactic response of E. coli to KCl did not result from osmotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the chemotactic response of E. coli to KCl did not result from osmotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the opposite responses to KCl and sucrose at equivalent osmotic pressure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "79017cfb-bc25-44d0-9e96-c67987e96345",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C33",
+      "claim": "The response to 30 mM KCl was 1.79 \u00b1 0.10 times as large as that to 100 \u03bcM MeAsp (before pH correction).",
+      "claim_type": "EXPLICIT",
+      "source": "The response to 30 mM KCl was 1.79 \u00b1 0.10 times as large as that to 100 \u03bcM MeAsp, while the response to 60 mM sucrose was \u22120.30 \u00b1 0.05 times as large as that to 100 \u03bcM MeAsp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from FRET measurements before pH correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "0d61dc72-2ac5-4ad5-922a-25354a519d9a",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C34",
+      "claim": "The response to 60 mM sucrose was \u22120.30 \u00b1 0.05 times as large as that to 100 \u03bcM MeAsp.",
+      "claim_type": "EXPLICIT",
+      "source": "The response to 30 mM KCl was 1.79 \u00b1 0.10 times as large as that to 100 \u03bcM MeAsp, while the response to 60 mM sucrose was \u22120.30 \u00b1 0.05 times as large as that to 100 \u03bcM MeAsp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from FRET measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "ee114d18-9bc1-41aa-b7ba-15701f2cacca",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C35",
+      "claim": "The fitted Hill coefficient for the dose-response curve to potassium was 0.53 \u00b1 0.04 (before pH correction).",
+      "claim_type": "EXPLICIT",
+      "source": "The fitted Hill coefficient was 0.53 \u00b1 0.04.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is obtained by fitting experimental dose-response data before pH correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "f818bfb4-19b9-4ba5-9226-10b1d7482a11",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C36",
+      "claim": "The fitted Hill coefficient for the dose-response curve to potassium was 0.88 \u00b1 0.14 (after pH correction).",
+      "claim_type": "EXPLICIT",
+      "source": "However, this value was revised to 0.88 \u00b1 0.14 when we corrected the FRET responses for the pH effects on the brightness of eCFP and eYFP (the blue dots and red solid line).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is obtained by fitting experimental dose-response data after pH correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "0a93470c-998e-4af1-8d94-8e8ecd9d4f81",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C37",
+      "claim": "The concentration for half-maximal response (K0.5) to potassium was 0.64 \u00b1 0.12 mM (before pH correction).",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration for half-maximal response (K0.5) was 0.64 \u00b1 0.12 mM before correction and 0.33 \u00b1 0.06 mM after correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is obtained by fitting experimental dose-response data before pH correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "ef14bcdc-bcec-49be-b51f-d4e0300cc5ae",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C38",
+      "claim": "The concentration for half-maximal response (K0.5) to potassium was 0.33 \u00b1 0.06 mM (after pH correction).",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration for half-maximal response (K0.5) was 0.64 \u00b1 0.12 mM before correction and 0.33 \u00b1 0.06 mM after correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is obtained by fitting experimental dose-response data after pH correction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "81337ef7-9c00-4742-853a-8ebd44196af8",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C39",
+      "claim": "E. coli responds sensitively and adapts quickly to potassium chloride in a range of 0.01\u2013100 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our measurements, E. coli responds sensitively (with a small K0.5) and adapts quickly to potassium chloride in a range of 0.01\u2013100 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dose-response and adaptation kinetics measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "d3c25063-dca7-4545-be28-59e74bae9cbe",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C40",
+      "claim": "The intracellular pH of the wild-type strain increases immediately upon addition of 30 mM KCl.",
+      "claim_type": "EXPLICIT",
+      "source": "The intracellular pH of the wild-type strain (HCB33-pTrc99a_pHlourin2) increases immediately upon addition of 30 mM KCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by measurements using pH-sensitive fluorescent protein pHlourin2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "f330fe2f-7574-476d-8489-4982ada78129",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C41",
+      "claim": "The increase in the extracellular concentration of potassium leads to an increase in the intracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that the increase in the extracellular concentration of potassium leads to an increase in the intracellular pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pH measurements with pHlourin2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "8da399d6-ad4f-4de2-a2b8-e6e0be14168a",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C42",
+      "claim": "Tar and Tsr mediate opposite responses to the changes in intracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that Tar and Tsr mediate opposite responses to the changes in intracellular pH (Krikos et al., 1985; Umemura et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "d38bec84-e334-401d-81b6-32803c1972c3",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C43",
+      "claim": "The Tsr-only strain exhibited an attractant response to potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5B, four different concentrations of KCl were added and removed successively, and the kinases activity of the Tsr-only strain exhibited an attractant response.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET measurements in Tsr-only mutant strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "0033a5ab-3ffc-4b9d-a89e-7508b9655427",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C44",
+      "claim": "The Tar-only strain exhibited a biphasic response to potassium, with kinase activity increasing sharply and then decreasing rapidly below the pre-stimulus level upon addition of potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Tar-only strain exhibited a biphasic response, with kinase activity increasing sharply and then decreasing rapidly below the pre-stimulus level upon addition of potassium (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by FRET measurements in Tar-only mutant strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "54baa530-4baf-4d76-83c4-f67de795c308",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C45",
+      "claim": "The different responses of the Tar- and Tsr-only strains to potassium were consistent with the responses to the increase in intracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the different responses of the Tar- and Tsr-only strains to potassium were consistent with the responses to the increase in intracellular pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with known pH responses and measurements with sodium benzoate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "f5c0dd0a-a5a4-4ded-9e50-0b58190e8eed",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C46",
+      "claim": "Both major receptors exhibited imprecise adaptation to stepwise addition of potassium.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that both major receptors exhibited imprecise adaptation to stepwise addition of potassium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in FRET measurements of Tar-only and Tsr-only strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "f34393a9-ecc6-4dfd-9863-2f73de60e572",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C47",
+      "claim": "The imprecise adaptation seen for the wild-type, Tar-only, and Tsr-only strains was not due to chemosensing.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicated that the imprecise adaptation seen for the wild-type, Tar-only, and Tsr-only strains was not due to chemosensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar response in the no-receptor strain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "9aa00d03-a3ff-4509-9efb-e7e7cf44d92c",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C48",
+      "claim": "The apparent imprecise adaptation was due to the differential change in eCFP and eYFP brightness when the cytoplasmic pH changed.",
+      "claim_type": "EXPLICIT",
+      "source": "As the solution pH affects the brightness of fluorescent proteins, we hypothesize that this apparent imprecise adaptation was due to the differential change in eCFP and eYFP brightness when the cytoplasmic pH changed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by YFP bleaching experiments showing similar CFP response before and after bleaching.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "69f75248-384f-4e99-addc-dafede6d14c7",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C49",
+      "claim": "The corrected response magnitude to 30 mM KCl is similar to that of 100 \u03bcM MeAsp, being 1.06 \u00b1 0.10 times as large.",
+      "claim_type": "EXPLICIT",
+      "source": "The corrected response magnitude to 30 mM KCl is similar to that of 100 \u03bcM MeAsp, being 1.06 \u00b1 0.10 times as large, as shown by the red bar in Figure 3C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from pH-corrected FRET measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "707b9aeb-2a31-4e83-9d54-63130f4000dc",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C50",
+      "claim": "The FRET signal exhibits over-adaptation when recalculated by correcting the CFP and YFP channels for pH effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET signal also exhibits over-adaptation, similar to the bead assay, when we recalculated the response by correcting the CFP and YFP channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in pH-corrected FRET measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "0ac3a24f-7113-4ca8-8759-e1cd3a320424",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C51",
+      "claim": "The fitted Hill coefficient for the pH-corrected dose-response curve is 0.88 \u00b1 0.14, which is close to the response to MeAsp (~1.2).",
+      "claim_type": "EXPLICIT",
+      "source": "The fitted Hill coefficient for the dose\u2013response curve is 0.88 \u00b1 0.14 (mean \u00b1 standard deviation [SD]), which is close to the response to MeAsp (~1.2) (Sourjik and Berg, 2002b), and the concentration for half-maximal response (K0.5) was 0.33 \u00b1 0.06 mM (mean \u00b1 SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is obtained by fitting pH-corrected dose-response data and comparing with literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "ddc8ed45-2afb-4532-87fc-cfea6b234b6d",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C52",
+      "claim": "The wild-type strain exhibits a similar response to the Tsr-only strain due to the larger amount of Tsr than Tar receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The wild-type strain exhibits a similar response to the Tsr-only strain due to the larger amount of Tsr than Tar receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of responses and known receptor expression levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "a8193ec3-94b8-496f-8cc6-2a98615943c0",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C53",
+      "claim": "E. coli cells can be periodically attracted by the biofilm based on the potassium sensing mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the potassium sensing mechanism we established here, we performed stochastic simulation of bacterial taxis in a biofilm-produced potassium gradient, demonstrating that E. coli cells can be periodically attracted by the biofilm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by computational simulation using parameters from experimental measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "05f3266d-cd82-464a-8a41-d803f49023e0",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C54",
+      "claim": "The oscillation of E. coli cell displacement lags the potassium source by 11.7 \u00b1 0.5, 14.7 \u00b1 0.7, 14.8 \u00b1 0.9, and 14.2 \u00b1 1.0 min for driving periods of 1, 2, 3, and 4 hr, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that the oscillation of E. coli cell displacement lags the potassium source by 11.7 \u00b1 0.5, 14.7 \u00b1 0.7, 14.8 \u00b1 0.9, and 14.2 \u00b1 1.0 min (mean \u00b1 SD) for driving periods of 1, 2, 3, and 4 hr, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from computational simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "0bbcf63a-e49f-4224-a5ea-d21fc285c8b2",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C55",
+      "claim": "The simulated lag times closely resemble the 9\u201335 min lag observed in biofilm experiments for B. subtilis and P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, these values closely resemble the 9\u201335 min lag observed in biofilm experiments for B. subtilis and P. aeruginosa (Humphries et al., 2017), despite the potential variations in the potassium sensing mechanisms among these bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between simulation results and experimental observations from literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "39904e3a-bda7-4ac5-af89-6bf074c0217d",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C56",
+      "claim": "E. coli had a very sensitive response to potassium ions and could sense weak changes in potassium concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that E. coli had a very sensitive response to potassium ions and could sense weak changes in potassium concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low K0.5 value measured in dose-response experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "1011840a-62de-4cb6-94ae-9a504a712b5d",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C57",
+      "claim": "E. coli adapts quickly to potassium concentration changes in the range of 0.01\u2013100 mM, which promotes cell localization to the peak of a potassium concentration profile.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that E. coli adapts quickly to potassium concentration changes in the range of 0.01\u2013100 mM, which promotes cell localization to the peak of a potassium concentration profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from adaptation kinetics measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "c6562adb-ab0d-4c45-8dc0-5bfdb080d26b",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C58",
+      "claim": "Addition of potassium decreases the membrane potential and thus increases the intracellular pH while keeping the PMF unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "While keeping the PMF unchanged, addition of potassium decreases the membrane potential and thus increases the intracellular pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by pH measurements and motor speed measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "da1c623a-5756-4e20-b212-7279efd32fab",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C59",
+      "claim": "The differential responses of the Tsr and Tar receptors to potassium may be a strategy by which bacteria adjust their response to potassium at different growth stages during which bacteria express different ratios of Tsr to Tar receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential responses of the Tsr and Tar receptors to potassium may be a strategy by which bacteria adjust their response to potassium at different growth stages during which bacteria express different ratios of Tsr to Tar receptors (Kalinin et al., 2010; Yang and Sourjik, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known receptor expression patterns at different growth stages.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "31414b60-1476-4b0e-baa5-8542def4d5ba",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C60",
+      "claim": "For the growth stage used in the measurements, the amount of Tsr was more than that of Tar in the wild-type strain, so the response to potassium was dominated by Tsr.",
+      "claim_type": "EXPLICIT",
+      "source": "For the growth stage used in our measurements here, the amount of Tsr was more than that of Tar in the wild-type strain (Li and Hazelbauer, 2004), so the response to potassium was dominated by Tsr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from known receptor expression levels and observed response patterns.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "9b152935-4c3f-4e33-b802-70bd4f971e1e",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C61",
+      "claim": "The Tar-only strain shows a repellent response to stepwise addition of low concentrations of potassium, specifically less than 10 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "This strain shows a repellent response to stepwise addition of low concentrations of potassium, specifically less than 10 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in FRET measurements of Tar-only strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "10d97382-e522-42c0-be7d-8f4c47a80918",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C62",
+      "claim": "The Tar-only strain exhibits a biphasic response to high potassium concentrations of 10 mM and above.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it exhibits a biphasic response to high potassium concentrations of 10 mM and above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in FRET measurements of Tar-only strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "ddbf9f2a-25e3-4fd2-afe6-cc011fa75e75",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C63",
+      "claim": "The biphasic response of Tar-only strain to high potassium concentrations might result from additional pH effects on the activity of intracellular enzymes such as CheRB and CheA.",
+      "claim_type": "EXPLICIT",
+      "source": "This biphasic response might result from additional pH effects on the activity of intracellular enzymes such as CheRB and CheA (Conley et al., 1994), which may have a different timescale and response from the Tar receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known pH effects on enzyme activity.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "d72f9ceb-9ce8-4c6e-b172-6bd45e648d06",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C64",
+      "claim": "The phase delay between the mean x-position and the potassium source decreases significantly with the increase of driving period.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the phase delay decreases significantly with the increase of driving period, a trend that is consistent with previous experimental observations in the biofilm (Humphries et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in computational simulations and compared with experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "2f8c8829-1a1c-4d39-998c-ab17e348b37d",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C65",
+      "claim": "The lag time result was not affected by the specific value of L0.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this result was not affected by the specific value of L0 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulations with different L0 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "b6bc0c77-7ac9-4f5e-8fa2-e6c5d44cbb46",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C66",
+      "claim": "E. coli senses the concentration change of extracellular potassium ions sensitively via the chemotaxis signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that E. coli senses the concentration change of extracellular potassium ions sensitively via the chemotaxis signaling pathway, and this chemotactic sensing is achieved through changes in intracellular pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by multiple experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "9fd6ea5f-c8e5-4aa1-ad3e-b286487ed8fa",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C67",
+      "claim": "The chemotactic sensing of potassium is achieved through changes in intracellular pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that E. coli senses the concentration change of extracellular potassium ions sensitively via the chemotaxis signaling pathway, and this chemotactic sensing is achieved through changes in intracellular pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by pH measurements and receptor-specific responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "5f6d31d6-0056-42b2-80ac-a830624ceb61",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C68",
+      "claim": "The attractant response to potassium was independent of the osmolality response.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that the attractant response to potassium was independent of the osmolality response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of responses to KCl and sucrose at equivalent osmotic pressure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "438387af-8e16-4262-9980-0e21c121fa64",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C69",
+      "claim": "The distribution of cells is exponential at steady state in a linear potassium gradient, similar to the results of logarithmic chemotactic sensing in a linear MeAsp gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the distribution of cells is exponential at steady state, similar to the results of logarithmic chemotactic sensing in a linear MeAsp gradient (Kalinin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in microfluidic experiments and compared with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "5e1a23f9-449d-4825-bdf6-9ae2d2dafcfe",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C70",
+      "claim": "The fitted exponential decay constant equals vd/vs, where vd and vs denote the drift velocity and cell motility constant, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported previously (Kalinin et al., 2009), the fitted exponential decay constant equals vd/vs, where vd and vs denote the drift velocity and cell motility constant, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "9900b820-9404-4055-b06b-8334a538017f",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C71",
+      "claim": "The CW bias is positively correlated with the intracellular concentration of CheY-P.",
+      "claim_type": "EXPLICIT",
+      "source": "The CW bias is positively correlated with the intracellular concentration of CheY-P (Cluzel et al., 2000), and the rotational speed is proportional to the PMF (Gabel and Berg, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "b2f6866f-1291-4c8e-a163-25d8a4020743",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C72",
+      "claim": "The rotational speed is proportional to the PMF.",
+      "claim_type": "EXPLICIT",
+      "source": "The CW bias is positively correlated with the intracellular concentration of CheY-P (Cluzel et al., 2000), and the rotational speed is proportional to the PMF (Gabel and Berg, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "9e8cfdbb-736d-4061-833b-be0150cea5c6",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C73",
+      "claim": "The CW bias decreased upon addition of potassium chloride, and then it adapted to a higher level than the pre-stimulus value.",
+      "claim_type": "EXPLICIT",
+      "source": "The CW bias decreased upon addition of potassium chloride, and then it adapted to a higher level than the pre-stimulus value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in bead assay measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "19159a5f-9b2f-4e48-8915-32dbf23744f8",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C74",
+      "claim": "The over adaptation in CW bias response to potassium was similar to the response of CW bias to sucrose in osomotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such over adaptation was similar to the response of CW bias to sucrose in osomotaxis (Rosko et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous literature on osmotaxis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "abd17b5d-6083-46ca-971e-411b272ce8fb",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C75",
+      "claim": "10 mM KCl and 5 mM K2SO4 induce similar chemotactic responses.",
+      "claim_type": "EXPLICIT",
+      "source": "To exclude the effect of chloride ion, we quantitatively compared the response of the chemotactic signal to 10 mM KCl and 5 mM K2SO4, both of which contain 10 mM potassium ion with or without chloride ion. As shown in Figure 3\u2014figure supplement 1, they induce similar responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by FRET measurements comparing KCl and K2SO4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "6b014368-83f7-4e9c-9a81-8b5090201bbc",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C76",
+      "claim": "The response of CW bias to 15 mM K2SO4 exhibited an attractant response, characterized by a decreased CW bias upon the addition of K2SO4, followed by an over-adaptation that is qualitatively similar to the response to 30 mM KCl.",
+      "claim_type": "EXPLICIT",
+      "source": "The response of CW bias to 15 mM K2SO4 exhibited an attractant response, characterized by a decreased CW bias upon the addition of K2SO4, followed by an over-adaptation that is qualitatively similar to the response to 30 mM KCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in bead assay measurements comparing K2SO4 and KCl.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "4fde2ef1-e7b1-4b80-a9c0-d7dfa65af8e6",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C77",
+      "claim": "A high concentration of potassium chloride (300 mM) could attract swimming cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that potassium ions work as a communication agent in swarms and biofilms for both Bacillus subtilis and Pseudomonas aeruginosa. A high concentration of potassium chloride (300 mM) could attract swimming cells (Humphries et al., 2017; Prindle et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "96c2bc4c-c96e-4464-afda-140a41d87734",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C78",
+      "claim": "Potassium ions work as a communication agent in swarms and biofilms for both Bacillus subtilis and Pseudomonas aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that potassium ions work as a communication agent in swarms and biofilms for both Bacillus subtilis and Pseudomonas aeruginosa. A high concentration of potassium chloride (300 mM) could attract swimming cells (Humphries et al., 2017; Prindle et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported in previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "26556412-7731-43c2-aa45-46e525fd35d7",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C79",
+      "claim": "The absolute value of the transmembrane electrical potential will decrease when the concentration of extracellular potassium increases.",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute value of the transmembrane electrical potential will decrease when the concentration of extracellular potassium increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of membrane potential.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "0ea79f72-8025-4fea-9144-15fe7bc70738",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C80",
+      "claim": "Potassium deficiency can affect many biological functions, such as human heartbeat and photosynthesis and respiration of plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Potassium deficiency can affect many biological functions, such as human heartbeat (Zacchia et al., 2016) and photosynthesis and respiration of plants (Li et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "05766507-1c63-498e-b0a0-343a7863b7d9",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C81",
+      "claim": "Potassium ions are a major component in establishing the resting membrane potential and thus ensure proper function of the muscles and nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "Potassium ions are a major component in establishing the resting membrane potential and thus ensure proper function of the muscles and nerves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "7a699f65-e4d6-401c-89a4-ac0077671f0f",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "claim_id": "C82",
+      "claim": "Potassium is an important ion in the normal physiological process of organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Potassium is an important ion in the normal physiological process of organisms (Gr\u00fcndling, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fcf418d4-1cbc-4431-a781-904169a1d106",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "E. coli exhibits chemotaxis toward high potassium concentrations in a linear gradient, accumulating with a drift velocity of 0.45 \u00b1 0.02 \u03bcm/s and an exponential steady-state distribution similar to MeAsp chemotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C21, C22, C69, and C70 collectively demonstrate chemotactic accumulation in microfluidic gradients with quantitative measurements of drift velocity and exponential distribution. The experimental design is appropriate, and the comparison to established MeAsp chemotaxis provides validation. The use of established relationships (C70) to calculate drift velocity from fitted parameters is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The motor CW bias response to potassium results from the chemotaxis signaling pathway, not from PMF changes, as evidenced by constant motor speed and lack of response in chemotaxis-defective strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24, C25, C26 provide converging evidence from bead assays showing attractant-like CW bias response with constant motor speed (ruling out PMF effects) and no response in chemotaxis-defective mutants. The control experiments (C25) are critical and well-executed. Claims C73, C74, C76 provide additional characterization showing over-adaptation similar to osmotaxis but with different mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "E. coli exhibits sensitive chemotactic response to potassium (K0.5 = 0.33 \u00b1 0.06 mM after pH correction, Hill coefficient = 0.88 \u00b1 0.14) with fast adaptation, though apparent imprecise adaptation is an artifact of pH effects on fluorescent proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27, C35-C39, C49-C51 document dose-response and adaptation kinetics via FRET assays. The critical insight is the pH correction (C36, C38, C49, C51) which reveals that apparent imprecise adaptation (C28, C33) was artifactual. The corrected Hill coefficient (0.88 \u00b1 0.14) is close to MeAsp (~1.2), supporting physiological relevance. The low K0.5 (C38, C56) demonstrates high sensitivity. However, the pH correction methodology relies on measurements from a no-receptor strain and assumptions about fluorophore behavior that could introduce systematic errors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "a466a9a4-282e-42cc-a451-b23749921c8b",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The chemotactic response is specific to potassium ions rather than chloride ions, as demonstrated by equivalent responses to KCl and K2SO4 at matched potassium concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C75, C76 provide direct experimental evidence comparing KCl and K2SO4 responses in both FRET and bead assays. The control is well-designed, using equivalent potassium concentrations (10 mM K+ from either 10 mM KCl or 5 mM K2SO4) to isolate the effect of the cation. The qualitative similarity of responses (C76) strengthens the conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "06f35707-6984-46a0-9da9-dd25bfd4f3d5",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The attractant response to potassium is independent of osmotaxis, as 30 mM KCl induces an attractant response while 60 mM sucrose (equivalent osmotic pressure) induces a repellent response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C34, C68 demonstrate that potassium chemotaxis is distinct from osmotaxis through direct comparison of responses to KCl and sucrose at equivalent osmotic pressure. The opposite signs of the responses (attractant vs. repellent) provide strong evidence. The quantitative measurements (C33, C34) show the response to 30 mM KCl was 1.79 \u00b1 0.10 times that to MeAsp, while sucrose was \u22120.30 \u00b1 0.05 times, clearly distinguishing the mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "8bdad0e8-5c97-43c4-a5af-e8c3a70e1697",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Addition of extracellular potassium increases intracellular pH while maintaining constant PMF, and this pH change mediates the chemotactic response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C41 provide direct pH measurements using pHlourin2 showing immediate pH increase upon KCl addition. Claim C58 integrates this with the constant PMF observation (C24) to propose the mechanism. Claim C67 states this as the main mechanistic conclusion. The evidence is strong, though the causal link between pH change and chemotactic response relies partly on inference from receptor-specific responses (addressed in another result).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "ef958ce8-4500-40de-840c-5e913585119d",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tar and Tsr receptors respond differently to potassium: Tsr exhibits attractant response while Tar shows biphasic response (repellent at <10 mM, biphasic at \u226510 mM), consistent with their known differential responses to intracellular pH changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C43, C44 document the differential responses in receptor-only mutants via FRET. Claims C7, C42, C45 connect these observations to known pH responses from literature. Claims C52, C60 explain wild-type behavior based on receptor expression levels. Claims C61, C62 provide additional detail on Tar concentration-dependence. The consistency with prior pH response literature (C42) strengthens the mechanistic interpretation, though the biphasic Tar response at high concentrations remains incompletely explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "b9e21433-a4e1-4605-a1fc-bc29628407a4",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The apparent imprecise adaptation observed in FRET measurements was not due to chemosensing but resulted from differential pH effects on eCFP and eYFP brightness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C47, C48 identify and explain an important experimental artifact. The observation in no-receptor strains (C47) rules out chemosensing. The YFP bleaching experiments showing similar CFP response before and after bleaching (C48) provide direct evidence for the pH artifact explanation. This is critical for correct interpretation of adaptation kinetics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "e5621402-7054-41d7-9043-3123101201fb",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Computational simulations based on the measured potassium sensing mechanism predict that E. coli cells are periodically attracted to biofilms with lag times of 11.7-14.8 min (for 1-4 hr periods), closely matching experimental observations in B. subtilis and P. aeruginosa biofilms (9-35 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55, C64, C65 describe simulation results using experimentally-derived parameters. The simulated lag times (C54) fall within the range observed experimentally in other species (C55), providing validation. The phase delay decreasing with driving period (C64) matches experimental trends. The robustness to L0 parameter (C65) strengthens confidence. However, the comparison is across different bacterial species, and the simulation makes simplifying assumptions about the chemotaxis pathway that may not fully capture biological complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "18fab79c-90e5-4e3f-a638-8baa2510135e",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The biphasic response of Tar to high potassium concentrations might result from pH effects on intracellular enzymes like CheRB and CheA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is explicitly speculative, proposing a mechanism for the observed biphasic Tar response at high potassium concentrations. While the speculation is reasonable and cites relevant literature on pH effects on enzyme activity, no direct experimental evidence is provided to test this hypothesis. This remains an interesting but unvalidated mechanistic proposal.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "329f2537-93e6-4044-96f1-bebf3cea9b54",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The differential responses of Tsr and Tar receptors to potassium may allow bacteria to adjust their response at different growth stages when receptor expression ratios vary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C59 proposes an adaptive explanation for the differential receptor responses, citing literature on growth-stage-dependent receptor expression. While the speculation is plausible and grounded in known biology, it is explicitly presented as speculation without direct experimental support. Testing this would require measurements across different growth stages, which were not performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge claims about potassium physiology, chemotaxis signaling pathway, and prior observations of potassium-mediated bacterial communication in biofilms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C8-C23, C71-C72, C77-C82) represent established knowledge from literature or general biological principles, appropriately cited. They provide necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with established understanding of bacterial physiology and chemotaxis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "dc4fd583-19e9-4d16-85a5-a9c6934ea1b9",
+      "content_id": "41ddbf73-af65-4458-afa7-6e4518f29903",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "E. coli senses extracellular potassium concentration changes sensitively via the chemotaxis signaling pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is the overarching conclusion supported by the convergence of multiple experimental approaches: microfluidic chemotaxis (C2, C21), bead assays (C3, C24-C26), FRET measurements (C4, C36-C39), and pH measurements (C40-C41). The evidence from multiple independent assays provides strong support for this central conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "2b5f82de-b5a6-474a-9207-d98d673686c3",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "E. coli exhibits chemotactic accumulation in potassium gradients. Using microfluidic devices, the authors show that wild-type E. coli rapidly accumulates in regions of high potassium concentration (millimolar range), with an exponential cell distribution at steady state and a measured drift velocity of 0.45 \u00b1 0.02 \u03bcm/s.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states the work demonstrates 'bacteria display an attractant response to potassium' and the reviewer confirms 'the evidence (from both the bead assay and FRET) that potassium induces an attractant response is convincing.' The microfluidic accumulation data is not specifically questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "5c12c9c8-3daf-4459-80eb-8c1a60954fe1",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The potassium response operates through the chemotaxis signaling pathway rather than direct motor effects. Bead assay measurements show that motor CW bias decreases upon potassium addition with over-adaptation, motor speed remains constant (indicating constant PMF), and chemotaxis-defective strains show no response.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer states 'the evidence (from both the bead assay and FRET) that potassium induces an attractant response is convincing' and does not challenge the conclusion that the response results from the chemotaxis pathway. The constant motor speed and lack of response in chemotaxis-defective strains support this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "26abf9f0-2466-45c3-a233-2f3dc693281d",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "E. coli shows sensitive and fast-adapting chemotactic responses to potassium. After pH correction, the response amplitude to 30 mM KCl is comparable to 100 \u03bcM MeAsp (1.06 \u00b1 0.10 times), with a Hill coefficient of 0.88 \u00b1 0.14 (close to MeAsp's ~1.2) and K0.5 of 0.33 \u00b1 0.06 mM, indicating sensitive detection and rapid adaptation across 0.01-100 mM range.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer explicitly states 'After correction the response amplitude and sharpness (hill coefficient) are comparable to conventional chemoattractants (e.g. aspartate), indicating the general mechanisms underlying the response may be similar.' This directly supports the claims about sensitivity and adaptation after pH correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "cd7b1fae-630e-41c2-9935-13ee19f355eb",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The apparent imprecise adaptation observed in initial FRET measurements was an artifact of pH effects on fluorescent protein brightness. YFP bleaching experiments and measurements in receptor-free strains demonstrated that the differential brightness changes of eCFP and eYFP with pH changes caused the apparent imprecise adaptation, which becomes over-adaptation after correction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer notes 'The updated manuscript controls for the impact of pH on the fluorescent protein brightness that can bias the measured FRET signal' and confirms the corrected results are comparable to conventional attractants. This indicates acceptance of the pH correction methodology and the revised interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "b30f5a02-40e3-45df-a315-1452108d310c",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The chemotactic response is specific to potassium ions rather than chloride ions. Comparisons between KCl and K2SO4 at equivalent potassium concentrations (10 mM K+ from either 10 mM KCl or 5 mM K2SO4) show similar chemotactic responses in both FRET and bead assays.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer does not challenge this control experiment or the conclusion that potassium rather than chloride drives the response. The comparison between different potassium salts is a standard control that was apparently accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "44ca0509-b633-44d1-a01b-784244683051",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The attractant response to potassium is independent of osmotaxis. While 60 mM sucrose (equivalent osmotic pressure to 30 mM KCl) induced a repellent-like response (-0.30 \u00b1 0.05 times MeAsp response), 30 mM KCl induced an attractant response, demonstrating the response is not due to osmotic pressure changes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer does not question this control or the conclusion that osmotaxis does not explain the potassium response. The opposite responses to KCl and sucrose at equivalent osmotic pressure provide clear evidence accepted by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "d9b25aeb-bea0-4700-b8d6-42c256ebac21",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Potassium increases intracellular pH while maintaining constant PMF. Measurements with pH-sensitive fluorescent protein pHlourin2 show that extracellular potassium addition immediately increases intracellular pH, and this pH change mediates the chemotactic sensing of potassium.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states the work demonstrates the attractant response 'is connected to intracellular pH level' and the reviewer confirms 'the proposed mechanism involving modification of intracellular pH' is convincing. The reviewer states 'they find both that potassium modifies pH and other pH modifiers induce similar attractant responses.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Tar and Tsr receptors respond differently to potassium. Tsr-only strains show standard attractant responses, while Tar-only strains exhibit biphasic responses (repellent at <10 mM, biphasic at \u226510 mM). These differential responses are consistent with known opposite responses of these receptors to intracellular pH changes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer explicitly states 'It is also shown, using Tar- and Tsr-only mutants, that these two chemoreceptors respond to potassium differently. Tsr has a standard attractant response, while Tar has a biphasic response (repellent-like then attractant-like).' This confirms acceptance of the receptor-specific response data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "a09ed115-3372-40fb-8283-d06dc2d6c4b3",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The biphasic response of Tar at high potassium concentrations might result from pH effects on intracellular enzyme activities (CheA, CheR, CheB) with different timescales than the receptor response.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The reviewer acknowledges this as speculation, stating 'The authors suggest that the biphasic response of Tar mutants may be due to pH influencing the activity of other enzymes (CheA, CheR or CheB), which will be an interesting direction for future study.' This indicates the mechanism is proposed but not definitively established.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "5994a863-c56f-4cc7-940a-921a215e87c5",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Computational simulations demonstrate that E. coli can be periodically attracted by biofilm-produced potassium gradients. The simulations show oscillation lag times of 11.7-14.8 minutes (depending on driving period), closely matching experimental observations of 9-35 minutes in B. subtilis and P. aeruginosa biofilms, with phase delay decreasing as driving period increases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer summarizes this work stating 'the authors use computer simulations to study the swimming response of cells to a periodic potassium signal secreted from a biofilm and find a phase delay that depends on the period of oscillation' without raising concerns. The match to experimental biofilm data supports the model's validity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "410696bd-a1f1-4a6b-96f0-fad848692c6d",
+      "content_id": "daa5b1dd-22ba-4f85-b7f3-030739d53c6c",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Potential underestimation of response magnitude due to adaptation effects. For weak potassium signals, cells may partially adapt before the response reaches minimum, potentially causing slight underestimation of true response amplitude, particularly affecting measurements at low concentrations where adaptation is faster.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The reviewer notes as a weakness: 'The measured response may be biased by adaptation, especially for weak potassium signals...It is possible cells have already partially adapted when the response reaches its minimum, so the measured response may be a slight underestimate.' However, the reviewer adds 'The authors made a reasonable argument regarding the effects of adaptation, which were estimated to be small.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3555111a-80b3-4707-be77-7ecd36e9798c",
+      "result_id": "fcf418d4-1cbc-4431-a781-904169a1d106"
+    },
+    {
+      "claim_id": "3369eb74-86da-446d-a132-5bb834c72ad7",
+      "result_id": "fcf418d4-1cbc-4431-a781-904169a1d106"
+    },
+    {
+      "claim_id": "6c9a733d-12b6-45dc-8dd0-e8c47a125bf9",
+      "result_id": "fcf418d4-1cbc-4431-a781-904169a1d106"
+    },
+    {
+      "claim_id": "438387af-8e16-4262-9980-0e21c121fa64",
+      "result_id": "fcf418d4-1cbc-4431-a781-904169a1d106"
+    },
+    {
+      "claim_id": "5e1a23f9-449d-4825-bdf6-9ae2d2dafcfe",
+      "result_id": "fcf418d4-1cbc-4431-a781-904169a1d106"
+    },
+    {
+      "claim_id": "70e934b1-6f29-427e-b50b-3745eb376e08",
+      "result_id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03"
+    },
+    {
+      "claim_id": "04db2e44-621c-4fd0-8c9f-c8f7d95b7f20",
+      "result_id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03"
+    },
+    {
+      "claim_id": "b80c3e48-0843-43e4-80a6-d1078ff65c8b",
+      "result_id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03"
+    },
+    {
+      "claim_id": "653554dd-259d-43fc-8e73-c762ea95d08b",
+      "result_id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03"
+    },
+    {
+      "claim_id": "9e8cfdbb-736d-4061-833b-be0150cea5c6",
+      "result_id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03"
+    },
+    {
+      "claim_id": "19159a5f-9b2f-4e48-8915-32dbf23744f8",
+      "result_id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03"
+    },
+    {
+      "claim_id": "6b014368-83f7-4e9c-9a81-8b5090201bbc",
+      "result_id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03"
+    },
+    {
+      "claim_id": "1e8a11a1-6ec0-4d8f-86e8-3828c41cb4b1",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "91fe07b6-067f-47e7-91ad-1a0e527f8618",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "2b9e84f1-368a-4c02-82d4-a9f4ca8213be",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "79017cfb-bc25-44d0-9e96-c67987e96345",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "ee114d18-9bc1-41aa-b7ba-15701f2cacca",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "f818bfb4-19b9-4ba5-9226-10b1d7482a11",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "0a93470c-998e-4af1-8d94-8e8ecd9d4f81",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "ef14bcdc-bcec-49be-b51f-d4e0300cc5ae",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "81337ef7-9c00-4742-853a-8ebd44196af8",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "69f75248-384f-4e99-addc-dafede6d14c7",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "707b9aeb-2a31-4e83-9d54-63130f4000dc",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "0ac3a24f-7113-4ca8-8759-e1cd3a320424",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "39904e3a-bda7-4ac5-af89-6bf074c0217d",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "1011840a-62de-4cb6-94ae-9a504a712b5d",
+      "result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd"
+    },
+    {
+      "claim_id": "ca465101-9b60-4909-9fc4-ea7f0a90400f",
+      "result_id": "a466a9a4-282e-42cc-a451-b23749921c8b"
+    },
+    {
+      "claim_id": "abd17b5d-6083-46ca-971e-411b272ce8fb",
+      "result_id": "a466a9a4-282e-42cc-a451-b23749921c8b"
+    },
+    {
+      "claim_id": "6b014368-83f7-4e9c-9a81-8b5090201bbc",
+      "result_id": "a466a9a4-282e-42cc-a451-b23749921c8b"
+    },
+    {
+      "claim_id": "eb3fd754-c356-4c5c-aeec-d027a01c7d15",
+      "result_id": "06f35707-6984-46a0-9da9-dd25bfd4f3d5"
+    },
+    {
+      "claim_id": "9956a919-4d31-4dcc-ba3a-fe8c83ca73b5",
+      "result_id": "06f35707-6984-46a0-9da9-dd25bfd4f3d5"
+    },
+    {
+      "claim_id": "ad07d3c1-5f36-4edc-b8a9-ecd11b8577b9",
+      "result_id": "06f35707-6984-46a0-9da9-dd25bfd4f3d5"
+    },
+    {
+      "claim_id": "0d61dc72-2ac5-4ad5-922a-25354a519d9a",
+      "result_id": "06f35707-6984-46a0-9da9-dd25bfd4f3d5"
+    },
+    {
+      "claim_id": "5f6d31d6-0056-42b2-80ac-a830624ceb61",
+      "result_id": "06f35707-6984-46a0-9da9-dd25bfd4f3d5"
+    },
+    {
+      "claim_id": "d3c25063-dca7-4545-be28-59e74bae9cbe",
+      "result_id": "8bdad0e8-5c97-43c4-a5af-e8c3a70e1697"
+    },
+    {
+      "claim_id": "f330fe2f-7574-476d-8489-4982ada78129",
+      "result_id": "8bdad0e8-5c97-43c4-a5af-e8c3a70e1697"
+    },
+    {
+      "claim_id": "c6562adb-ab0d-4c45-8dc0-5bfdb080d26b",
+      "result_id": "8bdad0e8-5c97-43c4-a5af-e8c3a70e1697"
+    },
+    {
+      "claim_id": "9fd6ea5f-c8e5-4aa1-ad3e-b286487ed8fa",
+      "result_id": "8bdad0e8-5c97-43c4-a5af-e8c3a70e1697"
+    },
+    {
+      "claim_id": "13d2e2be-5e27-4d13-855e-fd62ef2ef1c8",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "b4fa3168-cace-4ff6-844f-d9f9d41a6120",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "15513c0a-238e-4913-9f63-943bb1c8c329",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "8da399d6-ad4f-4de2-a2b8-e6e0be14168a",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "d38bec84-e334-401d-81b6-32803c1972c3",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "0033a5ab-3ffc-4b9d-a89e-7508b9655427",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "54baa530-4baf-4d76-83c4-f67de795c308",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "ddc8ed45-2afb-4532-87fc-cfea6b234b6d",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "31414b60-1476-4b0e-baa5-8542def4d5ba",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "9b152935-4c3f-4e33-b802-70bd4f971e1e",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "10d97382-e522-42c0-be7d-8f4c47a80918",
+      "result_id": "ef958ce8-4500-40de-840c-5e913585119d"
+    },
+    {
+      "claim_id": "f5c0dd0a-a5a4-4ded-9e50-0b58190e8eed",
+      "result_id": "b9e21433-a4e1-4605-a1fc-bc29628407a4"
+    },
+    {
+      "claim_id": "f34393a9-ecc6-4dfd-9863-2f73de60e572",
+      "result_id": "b9e21433-a4e1-4605-a1fc-bc29628407a4"
+    },
+    {
+      "claim_id": "9aa00d03-a3ff-4509-9efb-e7e7cf44d92c",
+      "result_id": "b9e21433-a4e1-4605-a1fc-bc29628407a4"
+    },
+    {
+      "claim_id": "a8193ec3-94b8-496f-8cc6-2a98615943c0",
+      "result_id": "e5621402-7054-41d7-9043-3123101201fb"
+    },
+    {
+      "claim_id": "05f3266d-cd82-464a-8a41-d803f49023e0",
+      "result_id": "e5621402-7054-41d7-9043-3123101201fb"
+    },
+    {
+      "claim_id": "0bbcf63a-e49f-4224-a5ea-d21fc285c8b2",
+      "result_id": "e5621402-7054-41d7-9043-3123101201fb"
+    },
+    {
+      "claim_id": "d72f9ceb-9ce8-4c6e-b172-6bd45e648d06",
+      "result_id": "e5621402-7054-41d7-9043-3123101201fb"
+    },
+    {
+      "claim_id": "2f8c8829-1a1c-4d39-998c-ab17e348b37d",
+      "result_id": "e5621402-7054-41d7-9043-3123101201fb"
+    },
+    {
+      "claim_id": "ddbf9f2a-25e3-4fd2-afe6-cc011fa75e75",
+      "result_id": "18fab79c-90e5-4e3f-a638-8baa2510135e"
+    },
+    {
+      "claim_id": "da1c623a-5756-4e20-b212-7279efd32fab",
+      "result_id": "329f2537-93e6-4044-96f1-bebf3cea9b54"
+    },
+    {
+      "claim_id": "7d24078a-b3df-4f3d-80af-13b37a759fed",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "48e3037a-e654-4af1-9aca-d6d0d4938c90",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "17bbddf3-773d-4b68-b0a8-bc0d9b994dbf",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "75ee5f74-4d38-4afd-bbfc-0cf050aa28bf",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "df2f6990-8ba9-44b6-9f40-68b8b8410e6d",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "04f50416-4e65-4aa3-a09c-4b73f5bbd278",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "361ee212-0e1b-4946-82b4-9fc1bb62225f",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "cdf67b9f-12c0-489a-a204-d89d19c7c5f9",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "d50bf009-d5cb-4ff0-aaf8-2d203ced1fca",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "6dec4d73-e4dd-477a-baa7-506647ca23a7",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "f1296cb2-b9c5-46a7-947f-7ae67c7da092",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "c31b9a66-5eda-4aab-8b65-0c5446e6287c",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "619fedea-7859-4561-b688-a57dd9e745c1",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "e9370ff9-5579-45e3-9425-39014cb5b0bb",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "b66e8d3f-604c-4bcf-bac7-fd60e4f906d2",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "9900b820-9404-4055-b06b-8334a538017f",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "b2f6866f-1291-4c8e-a163-25d8a4020743",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "4fde2ef1-e7b1-4b80-a9c0-d7dfa65af8e6",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "96c2bc4c-c96e-4464-afda-140a41d87734",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "26556412-7731-43c2-aa45-46e525fd35d7",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "0ea79f72-8025-4fea-9144-15fe7bc70738",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "05766507-1c63-498e-b0a0-343a7863b7d9",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "7a699f65-e4d6-401c-89a4-ac0077671f0f",
+      "result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00"
+    },
+    {
+      "claim_id": "b6bc0c77-7ac9-4f5e-8fa2-e6c5d44cbb46",
+      "result_id": "dc4fd583-19e9-4d16-85a5-a9c6934ea1b9"
+    },
+    {
+      "claim_id": "3555111a-80b3-4707-be77-7ecd36e9798c",
+      "result_id": "2b5f82de-b5a6-474a-9207-d98d673686c3"
+    },
+    {
+      "claim_id": "3369eb74-86da-446d-a132-5bb834c72ad7",
+      "result_id": "2b5f82de-b5a6-474a-9207-d98d673686c3"
+    },
+    {
+      "claim_id": "6c9a733d-12b6-45dc-8dd0-e8c47a125bf9",
+      "result_id": "2b5f82de-b5a6-474a-9207-d98d673686c3"
+    },
+    {
+      "claim_id": "438387af-8e16-4262-9980-0e21c121fa64",
+      "result_id": "2b5f82de-b5a6-474a-9207-d98d673686c3"
+    },
+    {
+      "claim_id": "70e934b1-6f29-427e-b50b-3745eb376e08",
+      "result_id": "5c12c9c8-3daf-4459-80eb-8c1a60954fe1"
+    },
+    {
+      "claim_id": "04db2e44-621c-4fd0-8c9f-c8f7d95b7f20",
+      "result_id": "5c12c9c8-3daf-4459-80eb-8c1a60954fe1"
+    },
+    {
+      "claim_id": "b80c3e48-0843-43e4-80a6-d1078ff65c8b",
+      "result_id": "5c12c9c8-3daf-4459-80eb-8c1a60954fe1"
+    },
+    {
+      "claim_id": "653554dd-259d-43fc-8e73-c762ea95d08b",
+      "result_id": "5c12c9c8-3daf-4459-80eb-8c1a60954fe1"
+    },
+    {
+      "claim_id": "9e8cfdbb-736d-4061-833b-be0150cea5c6",
+      "result_id": "5c12c9c8-3daf-4459-80eb-8c1a60954fe1"
+    },
+    {
+      "claim_id": "1e8a11a1-6ec0-4d8f-86e8-3828c41cb4b1",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "91fe07b6-067f-47e7-91ad-1a0e527f8618",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "f818bfb4-19b9-4ba5-9226-10b1d7482a11",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "ef14bcdc-bcec-49be-b51f-d4e0300cc5ae",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "81337ef7-9c00-4742-853a-8ebd44196af8",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "69f75248-384f-4e99-addc-dafede6d14c7",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "0ac3a24f-7113-4ca8-8759-e1cd3a320424",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "39904e3a-bda7-4ac5-af89-6bf074c0217d",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "1011840a-62de-4cb6-94ae-9a504a712b5d",
+      "result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d"
+    },
+    {
+      "claim_id": "2b9e84f1-368a-4c02-82d4-a9f4ca8213be",
+      "result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb"
+    },
+    {
+      "claim_id": "79017cfb-bc25-44d0-9e96-c67987e96345",
+      "result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb"
+    },
+    {
+      "claim_id": "ee114d18-9bc1-41aa-b7ba-15701f2cacca",
+      "result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb"
+    },
+    {
+      "claim_id": "0a93470c-998e-4af1-8d94-8e8ecd9d4f81",
+      "result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb"
+    },
+    {
+      "claim_id": "f5c0dd0a-a5a4-4ded-9e50-0b58190e8eed",
+      "result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb"
+    },
+    {
+      "claim_id": "f34393a9-ecc6-4dfd-9863-2f73de60e572",
+      "result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb"
+    },
+    {
+      "claim_id": "9aa00d03-a3ff-4509-9efb-e7e7cf44d92c",
+      "result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb"
+    },
+    {
+      "claim_id": "707b9aeb-2a31-4e83-9d54-63130f4000dc",
+      "result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb"
+    },
+    {
+      "claim_id": "ca465101-9b60-4909-9fc4-ea7f0a90400f",
+      "result_id": "b30f5a02-40e3-45df-a315-1452108d310c"
+    },
+    {
+      "claim_id": "abd17b5d-6083-46ca-971e-411b272ce8fb",
+      "result_id": "b30f5a02-40e3-45df-a315-1452108d310c"
+    },
+    {
+      "claim_id": "6b014368-83f7-4e9c-9a81-8b5090201bbc",
+      "result_id": "b30f5a02-40e3-45df-a315-1452108d310c"
+    },
+    {
+      "claim_id": "9956a919-4d31-4dcc-ba3a-fe8c83ca73b5",
+      "result_id": "44ca0509-b633-44d1-a01b-784244683051"
+    },
+    {
+      "claim_id": "ad07d3c1-5f36-4edc-b8a9-ecd11b8577b9",
+      "result_id": "44ca0509-b633-44d1-a01b-784244683051"
+    },
+    {
+      "claim_id": "0d61dc72-2ac5-4ad5-922a-25354a519d9a",
+      "result_id": "44ca0509-b633-44d1-a01b-784244683051"
+    },
+    {
+      "claim_id": "5f6d31d6-0056-42b2-80ac-a830624ceb61",
+      "result_id": "44ca0509-b633-44d1-a01b-784244683051"
+    },
+    {
+      "claim_id": "d3c25063-dca7-4545-be28-59e74bae9cbe",
+      "result_id": "d9b25aeb-bea0-4700-b8d6-42c256ebac21"
+    },
+    {
+      "claim_id": "f330fe2f-7574-476d-8489-4982ada78129",
+      "result_id": "d9b25aeb-bea0-4700-b8d6-42c256ebac21"
+    },
+    {
+      "claim_id": "c6562adb-ab0d-4c45-8dc0-5bfdb080d26b",
+      "result_id": "d9b25aeb-bea0-4700-b8d6-42c256ebac21"
+    },
+    {
+      "claim_id": "9fd6ea5f-c8e5-4aa1-ad3e-b286487ed8fa",
+      "result_id": "d9b25aeb-bea0-4700-b8d6-42c256ebac21"
+    },
+    {
+      "claim_id": "13d2e2be-5e27-4d13-855e-fd62ef2ef1c8",
+      "result_id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90"
+    },
+    {
+      "claim_id": "b4fa3168-cace-4ff6-844f-d9f9d41a6120",
+      "result_id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90"
+    },
+    {
+      "claim_id": "d38bec84-e334-401d-81b6-32803c1972c3",
+      "result_id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90"
+    },
+    {
+      "claim_id": "0033a5ab-3ffc-4b9d-a89e-7508b9655427",
+      "result_id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90"
+    },
+    {
+      "claim_id": "54baa530-4baf-4d76-83c4-f67de795c308",
+      "result_id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90"
+    },
+    {
+      "claim_id": "9b152935-4c3f-4e33-b802-70bd4f971e1e",
+      "result_id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90"
+    },
+    {
+      "claim_id": "10d97382-e522-42c0-be7d-8f4c47a80918",
+      "result_id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90"
+    },
+    {
+      "claim_id": "ddbf9f2a-25e3-4fd2-afe6-cc011fa75e75",
+      "result_id": "a09ed115-3372-40fb-8283-d06dc2d6c4b3"
+    },
+    {
+      "claim_id": "a8193ec3-94b8-496f-8cc6-2a98615943c0",
+      "result_id": "5994a863-c56f-4cc7-940a-921a215e87c5"
+    },
+    {
+      "claim_id": "05f3266d-cd82-464a-8a41-d803f49023e0",
+      "result_id": "5994a863-c56f-4cc7-940a-921a215e87c5"
+    },
+    {
+      "claim_id": "0bbcf63a-e49f-4224-a5ea-d21fc285c8b2",
+      "result_id": "5994a863-c56f-4cc7-940a-921a215e87c5"
+    },
+    {
+      "claim_id": "d72f9ceb-9ce8-4c6e-b172-6bd45e648d06",
+      "result_id": "5994a863-c56f-4cc7-940a-921a215e87c5"
+    },
+    {
+      "claim_id": "f818bfb4-19b9-4ba5-9226-10b1d7482a11",
+      "result_id": "410696bd-a1f1-4a6b-96f0-fad848692c6d"
+    },
+    {
+      "claim_id": "ef14bcdc-bcec-49be-b51f-d4e0300cc5ae",
+      "result_id": "410696bd-a1f1-4a6b-96f0-fad848692c6d"
+    },
+    {
+      "claim_id": "0ac3a24f-7113-4ca8-8759-e1cd3a320424",
+      "result_id": "410696bd-a1f1-4a6b-96f0-fad848692c6d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "39e4527b-a852-4ade-9612-fc3207d4e663",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "fcf418d4-1cbc-4431-a781-904169a1d106",
+      "peer_result_id": "2b5f82de-b5a6-474a-9207-d98d673686c3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the microfluidic chemotaxis accumulation data (C2, C21, C22, C69). OpenEval provides detailed technical validation including drift velocity calculations and exponential distributions, while peer review confirms the attractant response without challenging the microfluidic data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "0bb3ecbe-0050-4550-a0b0-2cdc96eae72c",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "83b4ae7e-0935-408e-8ad0-844fe92aaf03",
+      "peer_result_id": "5c12c9c8-3daf-4459-80eb-8c1a60954fe1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the bead assay evidence (C3, C24, C25, C26, C73) showing attractant-like CW bias response through the chemotaxis pathway. OpenEval emphasizes the critical control experiments and over-adaptation characterization, while peer review confirms the bead assay evidence is convincing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "d2bbf78e-7c64-4a86-98f8-69508d2acf83",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd",
+      "peer_result_id": "26abf9f0-2466-45c3-a233-2f3dc693281d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the FRET dose-response and adaptation kinetics after pH correction (C4, C27, C36, C38, C39, C49, C51, C56, C57). OpenEval notes the corrected Hill coefficient approaches MeAsp values but raises concerns about pH correction methodology. Peer review confirms corrected results are comparable to conventional attractants.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "15aa4eed-ad06-4918-9cb5-598be06e76da",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd",
+      "peer_result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address adaptation and pH correction artifacts (C28, C33, C35, C37, C50). OpenEval explains how pH correction revealed that imprecise adaptation was artifactual. Peer review confirms acceptance of the pH correction methodology and revised interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "f5411a37-9fc6-49f3-9bad-4f669506332c",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "1bdb72c3-824f-4bd0-8a82-8ff03c4dabdd",
+      "peer_result_id": "410696bd-a1f1-4a6b-96f0-fad848692c6d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the pH-corrected FRET measurements (C36, C38, C51). OpenEval supports the corrected measurements while noting potential systematic errors. Peer review raises uncertainty about adaptation bias in weak signals but acknowledges the authors' argument that effects are small.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "488d806c-757d-4d18-83ea-91b9ecfb4fd3",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a466a9a4-282e-42cc-a451-b23749921c8b",
+      "peer_result_id": "b30f5a02-40e3-45df-a315-1452108d310c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on the KCl vs K2SO4 control experiment (C29, C75, C76). Both support that potassium rather than chloride drives the response. OpenEval emphasizes the well-designed control using equivalent potassium concentrations, while peer review accepts this standard control without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "8b5dac7a-5e64-40c8-b42c-91637d07a6c1",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "06f35707-6984-46a0-9da9-dd25bfd4f3d5",
+      "peer_result_id": "44ca0509-b633-44d1-a01b-784244683051",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the distinction between potassium chemotaxis and osmotaxis (C31, C32, C34, C68). OpenEval highlights the opposite response signs and quantitative measurements, while peer review accepts the control showing osmotaxis does not explain the potassium response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "aee42b91-d905-4a28-8f10-c5028f3655b7",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "8bdad0e8-5c97-43c4-a5af-e8c3a70e1697",
+      "peer_result_id": "d9b25aeb-bea0-4700-b8d6-42c256ebac21",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on the pH mechanism (C40, C41, C58, C67). Both support that KCl addition increases intracellular pH and this drives the chemotactic response. OpenEval notes the causal link relies partly on inference, while peer review confirms the proposed pH mechanism is convincing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "89620340-650d-4b92-92fc-c8d97e4941b1",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ef958ce8-4500-40de-840c-5e913585119d",
+      "peer_result_id": "f03a2c2c-3dcc-4126-b6ce-1e50ec461b90",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the differential receptor responses (C5, C6, C43, C44, C45, C61, C62). OpenEval emphasizes consistency with pH response literature and notes the biphasic Tar response remains incompletely explained. Peer review confirms acceptance of receptor-specific data including Tar's biphasic response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "3fad3fd8-8fb0-40bd-a474-d5b956ba7110",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b9e21433-a4e1-4605-a1fc-bc29628407a4",
+      "peer_result_id": "cd7b1fae-630e-41c2-9935-13ee19f355eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the identification and explanation of the pH artifact in FRET measurements (C46, C47, C48). OpenEval details the YFP bleaching experiments as critical evidence. Peer review confirms acceptance of the pH correction methodology that controls for fluorescent protein brightness bias.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "32ca03c8-c10a-4d15-9394-7ebdc30d0b3e",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "e5621402-7054-41d7-9043-3123101201fb",
+      "peer_result_id": "5994a863-c56f-4cc7-940a-921a215e87c5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the simulation results (C53, C54, C55, C64). OpenEval validates the simulated lag times against experimental data from other species and notes robustness. Peer review summarizes the periodic signal simulations without raising concerns about the modeling approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "944d6b0f-6e22-4b92-bbd5-0c00c69f7811",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "18fab79c-90e5-4e3f-a638-8baa2510135e",
+      "peer_result_id": "a09ed115-3372-40fb-8283-d06dc2d6c4b3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on uncertainty regarding the biphasic Tar response mechanism (C63). Both classify this as speculative. OpenEval notes the hypothesis is reasonable but lacks direct experimental support. Peer review acknowledges this as an interesting direction for future study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "913c2a53-fbaa-4848-8e5c-4f18bd13d226",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "329f2537-93e6-4044-96f1-bebf3cea9b54",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies C59 as uncertain speculation about adaptive explanation for differential receptor responses based on growth-stage-dependent expression. No corresponding peer review evaluation found addressing this specific adaptive hypothesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "048e35a3-6cf8-4c4b-a449-c4ffd0a69362",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "c9ef5f57-9c57-4710-8f12-2bc5bbc87f00",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval categorizes C1, C8-C23, C71-C72, C77-C82 as supported established knowledge from literature providing context. No corresponding peer review evaluation found, as reviewers typically do not evaluate background knowledge claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    },
+    {
+      "id": "ead2a37c-e6d1-43aa-9aca-7e49410858fa",
+      "submission_id": "943bae7d-9c97-44f9-8cb4-23d2660edfec",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "dc4fd583-19e9-4d16-85a5-a9c6934ea1b9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the overarching conclusion (C66) that bacteria sense potassium through pH-mediated chemotaxis, citing convergence of multiple experimental approaches. No single corresponding peer review result, though this conclusion is implicitly supported across multiple peer evaluations (R1, R2, R7).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:11:06.623298Z"
+    }
+  ]
+}

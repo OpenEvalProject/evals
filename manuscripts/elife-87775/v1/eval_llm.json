@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study deployed GPS and accelerometer loggers on 163 wild barn owls during two breeding seasons, collecting high-resolution movement data including 84,855 landings categorized into perching events and hunting strikes. Behavioral classification algorithms were developed and validated using video footage, and landing force was estimated from accelerometer data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C17-C115) provide comprehensive documentation of data collection, behavioral classification, and force estimation procedures. The sample size is substantial (163 individuals, ~85,000 landings), methods are validated with video footage (C100), and the approach is appropriately cited. The methodology appears sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Hunting strikes generated landing forces over four times higher than perching events (ratio 4.5, p<0.001), with hunting strikes equivalent to ~13 times body weight and perching events ~3 times body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 report statistically significant differences in landing force between hunting strikes and perching events with appropriate statistical tests (z-ratio: 486.3, p<0.001). The large sample size and highly significant p-value provide strong support for this fundamental distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C55"
+    ],
+    "result": "Landing force during perching varied significantly with perch type (poles lowest at 8.33 N, buildings highest at 8.96 N) and decreased with time until the next hunting attempt, with the pattern differing by perch type. The reduction was most pronounced on poles in the last 30 minutes before strikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 and C55 are supported by statistical analysis (GAMM) with significant p-values (p<0.001 for poles, buildings; p=0.005 for trees) and confidence intervals. The temporal pattern showing force reduction approaching hunting attempts is well-documented with appropriate statistical methods (derivative analysis, C118). Figure 2 provides visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Owls launched more attacks from poles than from trees, with the fewest attacks launched from buildings, showing a clear temporal pattern in perch type use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by data analysis and Figure 2B. The temporal pattern in perch selection is clearly demonstrated and relates to the hunting strategy, though the underlying mechanism requires interpretation (C63-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C54",
+      "C61"
+    ],
+    "result": "During sit-and-wait hunts, pre-hunt perching force predicted hunting success, with success decreasing by 15% for every 1 N increase in landing force (odds ratio: 0.85, p=0.04). Landing force affected the success of subsequent strikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C54, and C61 demonstrate a statistically significant relationship between landing force and hunting success for sit-and-wait strategy (p=0.04). However, the effect size is modest and the low R-squared value (acknowledged in C62) indicates other factors are important. The relationship is specific to sit-and-wait hunting (C50 shows no effect for hunting on the wing).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "When hunting from the wing, the force applied during pre-hunt perching events had no effect on hunting success (odds ratio: 1.07, p=0.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by appropriate statistical analysis showing no significant relationship (p=0.19). This negative result is important for establishing the specificity of the landing force effect to sit-and-wait hunting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Hunting strategy and success were related to strike force. When hunting on the wing, successful strikes involved greater forces than unsuccessful strikes, but this pattern was not observed for perch-launched hunts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by statistical analysis with large sample sizes (n=24,464 for wing hunting, n=3,517 for perch hunting) and confidence intervals. The differential pattern between hunting strategies is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Males were lighter than females (281\u00b116.5 g vs 322\u00b122.6 g), provided nearly three times more prey per night, displayed higher hunting effort, but females used sit-and-wait strategy more frequently. Despite different strategies, perching events per night were similar between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 document sex differences in body mass, provisioning behavior, and hunting strategy with appropriate sample sizes and descriptive statistics. The data are internally consistent and supported by figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Barn owls were more successful using sit-and-wait strategy than hunting on the wing. Males were more successful than females for both strategies (sit-and-wait: 34.5% vs 26.8%; on-wing: 26.1% vs 19.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by statistical analysis with confidence intervals. The sex differences in hunting success are consistent across both strategies and statistically well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Females generated 26% higher landing forces than males during perching but only 6% higher during hunting strikes. When normalized by body mass, males exhibited lower forces than females when perching but higher forces during hunting strikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by statistical analysis with confidence intervals. The differential pattern between perching and striking, and the reversal when normalized by body mass, is well-documented and provides insight into sex-specific hunting mechanics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Males flew slower than females by 0.23 m/s during foraging (males: 5.24 m/s; females: 5.47 m/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by statistical analysis with confidence intervals. While the difference is small in absolute terms, it is statistically significant and relates to body mass differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Trip duration increased with use of sit-and-wait strategy, with owls using only sit-and-wait taking an average of 15 minutes longer than those hunting only on the wing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by statistical analysis (LMM). The finding is important for understanding trade-offs between hunting strategies but represents a supporting observation rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C56"
+    ],
+    "result": "Strike forces in barn owls are the highest recorded in any bird relative to body mass, with maximal forces reaching over 34 times body weight (100 N), exceeding previous estimates for captive barn owls and secretary bird kicking strikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C56 are supported by data analysis and comparison with cited literature. However, C78 acknowledges that the 50 Hz sampling rate likely underestimates true peak forces, suggesting these values are conservative estimates. The comparison is valid but limited by sampling constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C124"
+    ],
+    "result": "Barn owls reduce landing force as they approach prey, representing a novel form of motion-induced sound camouflage. This is the first measurement of landing force in a wild setting and reveals a link between acoustic camouflage and hunting success, with the physical environment affecting the capacity for sound camouflage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C57-C60, and C124 represent the study's primary conclusions. The reduction in landing force approaching prey is well-documented (C28-C31), the link to hunting success is statistically demonstrated (C51-C52), and the novelty claim appears justified. However, the acoustic camouflage interpretation (C59-C60) is inferential\u2014the study measures force, not sound, and assumes force correlates with sound production (based on C16). Direct acoustic measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Hunting success is affected by additional unmeasured factors. Owls may use different perch types for different purposes: buildings/trees for resting or wide-area surveillance (30-90 min before strikes), and poles for active prey searching (5-10 min before strikes). Poles may enhance prey localization due to proximity to ground.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C67 are largely speculative interpretations of observed patterns. While the temporal patterns in perch use are documented (C32), the functional explanations (resting, information gathering, prey localization) are inferred without direct evidence. C62 correctly notes the low R-squared value indicates unmeasured factors, but the specific factors mentioned lack empirical support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C73",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Various mechanistic explanations are proposed for observed patterns: soft landings may minimize energy dissipation and sound production; poles provide predictable landing surfaces in open habitats; males may compensate for lower body mass through flight speed adjustments; slower flight may aid prey localization; hunting strategy choice reflects time constraints and energetic considerations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70, C72-C73, and C80-C86 are speculative mechanistic explanations for observed patterns. While plausible and supported by citations to relevant literature, these claims go beyond what the data directly demonstrate. They represent reasonable hypotheses but would require additional experiments (e.g., acoustic measurements, flight speed manipulation, energetic studies) to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The results likely underestimate true peak forces due to 50 Hz sampling rate, compared to >2 kHz typically used for impact force measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 correctly identifies a methodological limitation. The 50 Hz sampling rate is indeed low for capturing peak forces during rapid impacts, and the comparison to crash testing standards (>2 kHz) is appropriate. This limitation should be considered when interpreting absolute force values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C79"
+    ],
+    "result": "Owls use whole-body dynamics during strikes, and their lower limbs serve dual functions of shock absorption during perching and generating powerful hunting strikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C79 are reasonable inferences from the observed force data and the contrast with secretary birds (C76). The dual function interpretation is supported by the documented force differences between perching and striking (C21-C23).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Minimizing landing force is particularly important for nocturnal predators in quiet environments targeting prey with acute hearing. The ability to minimize landing force is modulated by perch characteristics, suggesting spatial patterns in acoustic camouflage effectiveness and potential links to habitat quality and land-use practices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 extend the findings to broader ecological implications. C87 is well-supported by citations and logical reasoning. C88 is directly supported by the data (C24-C31). C89-C90 are reasonable extrapolations but represent hypotheses requiring further testing across different habitats and landscapes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C68",
+      "C69",
+      "C71",
+      "C76"
+    ],
+    "result": "Background claims establishing the context of predation, camouflage evolution, motion-induced conspicuousness and sound production, owl silent flight adaptations, and landing biomechanics in birds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 and C68-C69, C71, C76 provide literature-based context and are appropriately cited. These establish the theoretical framework and prior knowledge supporting the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Statistical analyses employed appropriate mixed-effects models (LMM, GAMM, GLMM) with proper random effects structure, model selection using AICc, and derivative analysis to identify periods of significant change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 document the statistical methodology. The approaches are appropriate for the data structure (repeated measures, nested design), and model selection procedures are standard. The methods are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

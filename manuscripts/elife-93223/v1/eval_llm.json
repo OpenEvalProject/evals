@@ -1,0 +1,426 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Nuclear organization is fundamental to cellular function and gene regulation, with nuclear landmarks providing specialized environments for nuclear processes. Disruptions in nuclear organization can contribute to disease development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C18 establish the importance of nuclear organization through extensive literature citations. Claims C2-C3 document the role of experimental and computational approaches in understanding nuclear organization. These are well-established background claims supported by appropriate citations to the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "High-throughput sequencing methods like Hi-C and imaging techniques like DNA FISH have revealed structural elements of genome organization, though sequencing methods provide averaged contacts that can mask heterogeneity, and translating contact data to spatial positions remains challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 describe established experimental techniques and their limitations, supported by appropriate citations to the original methods papers and studies. These are accurate descriptions of the current state of experimental approaches in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Computational polymer simulation approaches have been used to model chromosome folding and interactions with nuclear landmarks, but the field lacks well-documented, standardized software tools, and comprehensive high-resolution whole nucleus models remain scarce.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe computational modeling approaches with appropriate citations. Claims C30-C32 identify gaps in the field (lack of standardized tools and comprehensive models), which represent the authors' assessment of the field and motivation for their work. This assessment is reasonable given the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C33",
+      "C34",
+      "C44",
+      "C45",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "OpenNucleome provides particle-based representations of chromosomes at 100 KB resolution, encompassing nuclear lamina, nucleoli, and speckles, with 10-fold improved resolution compared to previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C33-C34, C44-C45, C50-C54 describe the model components and resolution, which are directly demonstrated in Figure 1 and the Methods section. The 10-fold resolution improvement (C44) is stated relative to previous work and is verifiable from the model description.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The nucleus model uses a coupled self-assembly energy function with three components: chromosome self-assembly (including ideal potential, compartment interactions, and interchromosomal interactions), nuclear body assembly (using Lennard-Jones potentials), and chromosome-landmark coupling. Model parameters are determined from experimental data using maximum entropy optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C69 describe the energy function design and parameterization approach. The model design is clearly illustrated in Figure 1C and described in the text with appropriate citations to the biological processes being approximated (C58, C61, C64) and the optimization method (C69). The interpretable design philosophy (C68) is a stated goal that is achieved through the described approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C63",
+      "C64",
+      "C65",
+      "C75",
+      "C76",
+      "C162"
+    ],
+    "result": "The model includes a kinetic scheme for speckles with phosphorylated and dephosphorylated particles that interconvert via chemical reactions, producing ~30 speckle droplets consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C63-C65 describe the speckle model with phosphorylation dynamics, shown in Figure 1B. Claims C75-C76 demonstrate that the model produces the correct number of speckles (~30) as shown in Figure 2\u2014figure supplement 1. Claim C162 describes the semi-grand Monte Carlo method used with appropriate citation. The approach is novel and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C129",
+      "C130",
+      "C131",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The model incorporates explicit nuclear envelope dynamics to explore the impact of large-scale deformations on genome organization by applying forces to compress the lamina particle mesh.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C129-C131, C166-C168 describe the nuclear deformation capability, which is demonstrated in Figure 7A-B. The implementation is clearly described in the Methods section with appropriate details about the force application and lamina dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C49",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "OpenNucleome is implemented in OpenMM with a modular Python architecture that enables GPU acceleration, achieving 150-fold speedup over 4 CPU cores, with the software including tutorials and analysis tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C49, C77-C80, C86-C90 describe the software implementation and performance. The GPU acceleration performance is directly demonstrated in Figure 3C showing 150\u00d7 speedup. The modular design and available documentation (C80) are verifiable features of the software. The limited CPU scaling (C90) is shown in the data, though the explanation (C91) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C92",
+      "C93",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Model parameters are optimized iteratively by performing MD simulations, computing contact maps and chromosome-landmark contacts, comparing with experimental data (Hi-C, TSA-Seq, DamID), and updating parameters using the Adam optimization algorithm. A diverse set of 50 initial configurations is essential for reproducing interchromosomal contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C92-C93, C169-C172 describe the parameter optimization workflow illustrated in Figure 2. The iterative optimization procedure is clearly documented with appropriate citation to the Adam algorithm (C73). The importance of diverse initial configurations (C93) is supported by Figure 6\u2014figure supplement 2B showing improved agreement with more configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Simulated nuclear structures faithfully reproduce Hi-C contact maps (r=0.89), Lamin B DamID signals, and SON TSA-Seq data across all chromosomes, capturing chromosome territories, compartmentalization patterns, and complex chromatin-nuclear envelope interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40, C95-C106 describe validation against sequencing data, demonstrated in Figures 4 and 4\u2014figure supplement 1. The high correlation coefficients (r=0.89 for Hi-C, r=0.89 for interchromosomal contacts) and good agreement across multiple data types provide strong quantitative support. The anti-correlation between DamID and TSA-Seq (C105) is visible in Figure 4C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The model accurately predicts chromosome radius of gyration and normalized radial positions (r=0.74) compared to DNA-MERFISH data, which were not used for parameterization, strongly supporting the coupled assembly mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 describe validation against MERFISH data shown in Figure 5A-B. The key point that MERFISH data were not used for training (C109) makes this a true prediction rather than fitting, strengthening support for the model mechanism (C111). The correlation coefficient of 0.74 (C108) represents good agreement for this independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The model reproduces the subdiffusive behavior of telomeres with anomalous exponent \u03b1~0.59 and diffusion coefficient matching experimental values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 describe telomere dynamics validation shown in Figure 5C-D. The subdiffusive behavior is demonstrated with appropriate comparison to experimental values from cited studies. The anomalous exponent distribution and diffusion coefficient are quantitatively consistent with experiments, providing validation of the model's dynamic properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Chromosomes exhibit arrested dynamics with no significant changes in radial positions over cell cycle timescales, predicting that large-scale chromosome movements are unlikely during G1 phase, consistent with theoretical predictions and experimental observations of solid-like chromatin behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117, C141-C143 describe arrested chromosome dynamics shown in Figure 6A and Figure 6\u2014figure supplement 1. The prediction of limited chromosome movement (C117) is supported by the simulation data and is consistent with cited theoretical (C142) and experimental (C143) studies. This represents a testable prediction from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C144"
+    ],
+    "result": "Inherent heterogeneity in chromosome contacts naturally emerges within single cells, with weak correlations in interchromosomal contacts (average r~0.06) and Lamin B DamID profiles (average r=0.53) across trajectories due to differences in chromosome radial positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C118-C121, C144 describe single-cell heterogeneity shown in Figure 6B-D. The low correlation coefficients for interchromosomal contacts and DamID profiles across trajectories are quantitatively demonstrated. The mechanistic explanation linking heterogeneity to arrested dynamics and radial position differences (C120-C121, C144) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Simulated configurations capture the variation of interchromosomal contact probabilities across individual cells observed in DNA-MERFISH data, supporting the biological relevance of the in silico structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 compare simulated heterogeneity with experimental single-cell data shown in Figure 6\u2014figure supplement 2A. The similar distributions of interchromosomal contact variations between simulation and experiment provide validation that the model captures biologically relevant single-cell heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42",
+      "C124",
+      "C125",
+      "C126",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Robust contacts between chromosomes and nuclear bodies (speckles) can be established through a coupled self-assembly mechanism, with high conservation (average r=0.72 for TSA-Seq) across trajectories achieved through rapid nucleation of speckle particles at specific genomic loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C124-C125, C149-C151 describe robust chromosome-speckle contacts shown in Figure 6D. The high correlation of TSA-Seq signals (r=0.72) contrasts with low correlation of interchromosomal contacts, demonstrating selective robustness. The mechanistic explanation via nucleation (C150-C151) is a reasonable inference. Experimental support is provided by citation (C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C43",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The simulations reveal 'fixed points'\u2014genomic loci robustly anchored to specific nuclear bodies\u2014that remain resilient despite fluctuations in chromosome positions and nuclear shapes, supporting a nuclear zoning model for genome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C43, C146-C148 describe the fixed points concept and nuclear zoning model. The resilience of chromosome-nuclear body contacts (C12) is demonstrated by high TSA-Seq correlations across trajectories and nuclear deformations (Figures 6D, 7C). The interpretation supporting the nuclear zoning model (C13, C43, C146) is reasonable given the data and is supported by citation to the zoning model (C147).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "The heterogeneity of chromosome radial positions raises doubts about whether radial positioning provides robust mechanisms for gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 represents an interpretation of the heterogeneity results with citations to studies on radial positioning. The weak correlation of radial positions across cells (Figure 6) provides evidence for this interpretation, though this is a conceptual conclusion rather than a direct experimental test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Nuclear deformation causes reorganization of chromosomes with reduced correlation of interchromosomal contacts and DamID profiles, while TSA-Seq signals remain highly correlated, suggesting speckles dynamically reorganize to maintain contacts with genomic loci, which may be essential for robust genome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 describe nuclear deformation effects shown in Figure 7C. The differential effects on interchromosomal contacts/DamID (reduced correlation) versus TSA-Seq (maintained correlation) are clearly demonstrated. The interpretation that speckles reorganize to maintain contacts (C135) is a reasonable inference from the data. The functional speculation (C136) is appropriately qualified as 'may be essential.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "OpenNucleome enhances capabilities of existing genome simulation tools by combining open-source accessibility (like Open-MiChroM), high-resolution whole nucleus modeling (like Alber lab software), and dynamic simulations with explicit nuclear condensates (like Fujishiro and Sasai model).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 compare OpenNucleome with other software tools with appropriate citations. The comparisons are fair and accurately describe how OpenNucleome combines features from different existing approaches. This represents a reasonable assessment of the software's position in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Despite heterogeneity in individual cells, the ensemble exhibits conserved features including preferential chromosome positioning near the nuclear envelope and higher average contact frequencies between certain chromosome pairs, though the origin of these features remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 describe ensemble-level conservation despite single-cell heterogeneity. The conserved average radial positions (C154, shown in Figure 5B) and interchromosomal contact preferences (C155) are demonstrated in the data. The acknowledgment that the origin remains unclear (C156) is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C157",
+      "C160",
+      "C161",
+      "C173"
+    ],
+    "result": "Two integration schemes were used: Langevin dynamics with \u03b3\u207b\u00b9=10.0 for ensemble generation and Brownian dynamics with \u03b3\u207b\u00b9=0.01 for realistic dynamics, with the different damping coefficients balancing viscous environment approximation and conformational sampling efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157, C160-C161, C173 describe the simulation protocols. The use of two different integration schemes with different damping coefficients is clearly documented in Methods. The rationale for the different damping coefficients (C160-C161) represents reasonable methodological choices for different simulation purposes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Experimental data (Hi-C, TSA-Seq, Lamin-B DamID) from HFF cell lines were obtained from the 4DN data portal and processed at 100KB resolution using standard tools (Juicer) and published methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C180 describe data sources and processing methods. The data sources are clearly identified (4DN portal) and processing methods are documented with appropriate citations to the tools (Juicer, C177) and methods (C178). This provides sufficient information for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The limited CPU scaling is potentially due to the system's heterogeneous distribution of particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is explicitly marked as speculation ('potentially due to') about the cause of limited CPU scaling shown in Figure 3C. While the limited scaling is demonstrated, the mechanistic explanation is not tested and remains speculative.",
+    "result_type": "MINOR"
+  }
+]

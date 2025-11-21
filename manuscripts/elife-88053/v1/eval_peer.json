@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C30",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors demonstrate that a rate-based recurrent neural network with slow fluctuations of intrinsic excitability can induce representational drift. Neurons with high excitability are preferentially recruited into ensembles during reactivation, leading to gradual remodeling of recurrent synaptic weights and replacement of original ensemble members over successive days.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this core finding, stating the authors 'convincingly show that when they change their intrinsic excitability term, upon stimulation, the Hebbian synapses in their network gradually evolve, and the combined synaptic connectivity and altered excitability result in drifting patterns of activity' (Fig. 1, Fig. 2a). The editor notes the authors 'provide convincing evidence that fluctuations can contribute to drift.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C73"
+    ],
+    "result": "The model predicts that drift is mechanistically induced by co-activation of previously active neurons along with neurons having high excitability at the time of reactivation, which leads to remodeling of recurrent weights.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this mechanistic explanation without challenge. The anonymous reviewer summarizes the mechanism accurately, noting that 'the new high intrinsic excitability subset becomes both more strongly activated by the global input and also more strongly recurrently connected,' indicating acceptance of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C31",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The drifting ensemble is informative about its temporal history, with correlation between activity patterns decreasing across days. A classifier can perfectly decode the absolute day of reactivation from the activity patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm these findings, noting 'their classification analyses (Fig. 2) show that information is preserved in the network.' The reviewer confirms the authors 'are able to build a classifier that decodes the day...with perfect accuracy,' accepting this result without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C52",
+      "C53",
+      "C69"
+    ],
+    "result": "The gradual nature of drift is necessary for decoding temporal information from ensemble activity. Only an intermediate range of excitability amplitude permits temporal decoding; when excitability is too low (E=0) or too high (E=3), temporal order cannot be decoded.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly highlight this as a key finding, stating 'the observation that only a specific range of excitability bias values permits decoding of the temporal structure of the history of intrinsic excitability (Fig. 2f and Figure S1) is interesting, and as the authors point out, not trivial.' This indicates strong reviewer support for this non-obvious result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C33",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Memory content can be steadily maintained and decoded by an output neuron with plastic synapses using Hebbian learning. The output weights track the drifting ensemble by decreasing weights to neurons leaving the ensemble and increasing weights to newly recruited neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding, noting 'their readout neuron successfully tracks the active cells (Fig. 3).' However, one reviewer notes that 'given how the learning rule...is constructed, it is trivial that this unit responds to the most active neurons,' suggesting the mechanism is straightforward rather than surprising.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The drift results are independent of specific model architecture, with similar drifting behavior observed when excitability is defined as changes in activation function slope rather than threshold, and when using sparse rather than all-to-all connectivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer acknowledges that 'a revised version of the manuscript models slope-based excitability changes in addition to threshold-based changes. This serves to address the above concern that as constructed here changes in excitability threshold are not distinguishable from changes in input.' This indicates the additional simulations successfully addressed reviewer concerns about model specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The network can encode and maintain two distinct memories simultaneously, with both ensembles showing similar drift. Two output decoders can independently track their respective drifting ensembles without interference from the other memory.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly notes that 'a revised version of the manuscript addresses this question, demonstrating that the network is capable of maintaining two distinct memories.' This was added in response to a reviewer request, and the reviewer accepts the result without further critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The drift rate does not depend on the size of the original ensemble.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is presented with supporting data (Figure 1\u2014figure supplement 2) and is not questioned by reviewers, indicating implicit acceptance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The quality of memory read-out by the output neuron decreases with increasing drift rate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is presented with supporting data (Figure 3\u2014figure supplement 1) and is not challenged by reviewers, indicating acceptance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C68",
+      "C74",
+      "C32"
+    ],
+    "result": "The model suggests fluctuations of excitability could act as a cellular mechanism for drift that serves a computational purpose by 'time-stamping' memories, allowing the pool of high-excitability neurons to bias memory ensemble allocation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the model demonstrates that 'changes in intrinsic excitability are sufficient to induce drift,' a key concern remains unresolved: 'it remains unclear what the model would do should only a subset of neurons receive a given, fixed input. In that case, are excitability changes sufficient to induce drift? This remains an important question that is not addressed.' This indicates uncertainty about whether excitability changes alone are sufficient or whether the global input structure is necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The gradual drift mechanism could support complex cognitive functions like mental time-travel during memory recall and help link temporally proximate memories while dissociating temporally distant ones. This mechanism could be complementary to learning-induced excitability changes observed experimentally.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These speculative interpretations are consistent with the model results and prior literature. Reviewers do not challenge these interpretations, and the editor notes the study provides 'important theoretical insight' into drift mechanisms, implicitly accepting the broader implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The model addresses drift in firing rates rather than tuning curves, consistent with recent findings that these arise from different mechanisms (experience vs. passage of time). The study provides a possible mechanism for time-driven drift in firing rates through dynamical excitability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This framing is presented as consistent with recent literature and is not challenged by reviewers, indicating acceptance of this interpretation of the model's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model suggests drift could depend on any experience affecting excitability dynamics, including exercise, neurogenesis, sleep, or dopamine level changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These speculative extensions are supported by citations to experimental work and are not challenged by reviewers, indicating acceptance as reasonable implications of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The work is a proof of principle highlighting the importance of considering excitability when studying drift, though further experimental work is needed to test this link.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly agree with this characterization. The editor calls it 'an important theoretical study' and the reviewer states 'this paper represents an important contribution' while noting 'what we see here is that changes in intrinsic excitability are sufficient to induce drift,' accepting the proof-of-principle nature of the work.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Aligned color-location trajectories improve working memory performance compared to misaligned trajectories, with the benefit primarily observed for color memory (especially items 2 and 3) but not location memory. Location memory overall performed better than color memory across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 provide converging statistical evidence from ANOVA and paired t-tests showing that trajectory alignment enhances memory precision, particularly for color sequences. The main effect of alignment (p=0.047), significant improvements for color items 2 and 3 (p<0.001 and p=0.015), and lack of improvement for location sequences are all well-documented with appropriate statistics and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Aligned trajectories elicit significant correlations between recalled location and color trajectory errors for first-second and second-third item pairs, but not for first-third pairs. Misaligned trajectories show no such correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate behavioral evidence for trajectory alignment through multiple statistical approaches (one-sample t-tests, correlation analysis, and generalized linear mixed-effects models). The significant correlations for adjacent pairs (p<0.001 and p=0.004) and absence of correlations in the misaligned condition provide strong evidence that participants spontaneously align trajectories across feature domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Location and color information can be successfully decoded from EEG signals during stimulus presentation for both aligned and misaligned conditions, with color showing weaker decoding strength than location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 establish basic neural decoding capabilities using inverted encoding models with cluster-based permutation tests (p<0.001). The weaker color decoding is consistent with behavioral performance differences. The independent decoding of location and color features is ensured by experimental design constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "During the 'recall location' period, the aligned condition shows spontaneous neural replay of the task-irrelevant color sequence in a forward, temporally compressed manner, while the misaligned condition shows no such replay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 provide strong neural evidence for spontaneous replay using time-resolved decoding with appropriate statistical controls (cluster-based permutation tests, two-way ANOVA with p=0.001). The selective replay in the aligned condition for task-irrelevant features is particularly compelling evidence for structure-based memory organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Color sequence replay exhibits a forward temporal pattern with ~110-140 ms lags between consecutive items, confirmed by significant correlation between empirical and theoretical transition patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 characterize the temporal dynamics of neural replay using cross-correlation analysis and comparison to theoretical patterns (r=0.690, p=0.040). The methods are appropriate for establishing sequential replay profiles, though the correlation is moderate in strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "During encoding, neural representations of first-to-second and second-to-third trajectories emerge after presentation of the respective second and third items in the aligned condition. The first-to-second trajectory is reactivated after the third item, suggesting linking of trajectory segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate trajectory encoding and reactivation using SVM decoding with cluster-based permutation tests (p<0.001 and p=0.006). The reactivation of the first-to-second trajectory after the third item provides neural evidence for trajectory linking during encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C101"
+    ],
+    "result": "Participants with higher behavioral trajectory correlations show stronger neural reactivation of trajectories during encoding, and higher trajectory representation during encoding predicts clearer forward replay during recall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, and C101 establish brain-behavior relationships through median-split analyses with bootstrap tests (p=0.037). While the median-split approach is somewhat crude, the convergence between encoding representations and recall replay patterns provides meaningful evidence for the functional role of trajectory representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The aligned condition shows sustained decoding of compression trajectories during the retention period based on alpha-band activity, while the misaligned condition shows only transient decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 reports trajectory decoding during retention using alpha-band power, but the authors acknowledge the results are 'not as clear' as other periods. The interpretation that misaligned decoding reflects offset responses is speculative. More rigorous analysis and controls would strengthen this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C61",
+      "C79"
+    ],
+    "result": "Shared common structure is spontaneously leveraged for storage of multiple sequences through compressed encoding and neural replay, demonstrating that structure can be both factorized from content and aligned across domains to facilitate efficient working memory organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C61, and C79 synthesize the main findings into an overarching conclusion. The convergence of behavioral improvements, trajectory correlations, neural replay, and encoding reactivation provides strong multi-level evidence for structure-based memory organization. The spontaneous nature is supported by the lack of explicit task requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Neural replay occurs for task-irrelevant color sequences but not task-relevant location sequences during location recall preparation, excluding alternative explanations such as motor preparation or sequential rehearsal, and demonstrating that replay mediates structure alignment in working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 provide a strong logical argument based on the selective replay pattern. The absence of location replay during location recall preparation effectively rules out motor and attentional confounds. This dissociation is critical for establishing the spontaneous, structure-driven nature of the replay phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study employed 33 participants performing a visual sequence working memory task with aligned and misaligned color-location trajectory conditions, with EEG recording during encoding, retention, and recall periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C80-C90 describe the experimental design and procedures. The methods are clearly documented with appropriate detail about participants, stimuli, timing, and conditions. The sample size (n=33) is reasonable for EEG studies, though no power analysis is reported. Ethical approval and participant criteria are properly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "EEG data were acquired with 64 channels, preprocessed using standard procedures including ICA artifact removal, and analyzed using inverted encoding models for feature decoding, SVM for trajectory decoding, and cluster-based permutation tests for statistical inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C100 document the EEG acquisition and analysis pipeline. The methods follow established practices with appropriate citations. However, some details are missing: the specific ICA components removed, the number of trials excluded due to artifacts, and validation of the IEM assumptions. The cluster-based permutation approach is appropriate for controlling multiple comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The trajectory alignment manipulation reflects a higher-order relationship between cognitive maps that differs from Gestalt perceptual principles, cannot be explained by associative memory due to trial-by-trial rotation variability, and differs from prior structure learning studies by not involving pre-training or rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide conceptual distinctions between the current manipulation and alternative frameworks. The arguments are logical and supported by appropriate citations. The trial-by-trial rotation variation is a key design feature that rules out simple associative explanations. These distinctions help position the work within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Working memory has limited capacity, but cognitive maps can serve as common frameworks to compress information across domains. Prior work has identified neural signatures of cognitive maps (grid-like code, neural replay) in both spatial and non-spatial tasks, leading to the hypothesis that cognitive maps might reorganize memory information to overcome capacity limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 establish the theoretical background through extensive citations to prior literature. The progression from WM capacity limits to cognitive maps to the current hypothesis is logical. However, these are primarily literature review claims rather than novel findings. The hypothesis (C20) is clearly stated and motivated by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The findings can be understood within frameworks of schematic abstraction and cognitive maps, where structure and content are represented in a factorized manner. Neural replay has been shown to support abstract structure representation, inference, and generalization across domains, with humans spontaneously extracting statistical regularities for efficient memory organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C78 provide theoretical context and interpretation of the findings through extensive citations. The discussion appropriately distinguishes between cognitive maps and schemas while acknowledging their relationship. The factorization framework and prior replay findings are well-established in the literature. However, some claims (C72-C73) mix empirical findings with interpretation.",
+    "result_type": "MINOR"
+  }
+]

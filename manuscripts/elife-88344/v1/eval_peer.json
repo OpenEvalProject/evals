@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C52",
+      "C53"
+    ],
+    "result": "The VEXAT model can replicate muscle responses to length changes across multiple scales (small and large perturbations), more accurately captures impedance and active lengthening responses than Hill-type models, and is computationally efficient with few states for large-scale simulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the model's value and performance. Reviewer 1 states 'the evidence presented to support the model is solid, since it outperforms Hill-type models in a variety of conditions.' Reviewer 2 notes 'the authors succeed in demonstrating the need to incorporate titin in muscle models' and confirms the model 'accurately predicts in situ force' from multiple experimental datasets. Reviewer 3 acknowledges the model 'is the first to simultaneously include both' crossbridge and titin stiffness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C94",
+      "C95"
+    ],
+    "result": "The VEXAT model can reproduce classical force-velocity and force-length relations of muscle, though with slight differences from embedded curves due to series viscoelasticity and a rightward shift in the force-length profile.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these claims about the model's ability to reproduce classical muscle properties. Reviewer 2 explicitly states the model 'accurately predicts in situ force' from multiple datasets including those testing force-length and force-velocity relations. The acknowledged differences are presented as model characteristics rather than failures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C77",
+      "C80"
+    ],
+    "result": "The VEXAT model has limitations including poor low-frequency phase response, inability to match experimental VAF at 15 Hz perturbations, greater phase shift than biological data at low frequencies, and lack of a mechanism for passive force enhancement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations are acknowledged by the authors and not disputed by reviewers. Reviewer 1 notes 'the combination of phenomenological and mechanistic aspects of the model may sometimes make it challenging to interpret the output,' which relates to these limitations. Reviewer 3 states 'it is not clear to me, either physiologically or in the model, what drives the shift from the high stiffness in short-range perturbations to the somewhat lower stiffness in mid-range perturbations,' indicating unresolved mechanistic questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "At 90 Hz perturbations, the VEXAT model achieves 89% VAF (within the experimental range of 78-99%), while the Hill model achieves only 58% VAF.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these comparative performance results. Reviewer 1 states 'the evidence presented to support the model is solid, since it outperforms Hill-type models in a variety of conditions.' Reviewer 2 confirms the model 'accurately predicts in situ force of cat soleus (Kirsch et al. 1994)' which includes these high-frequency perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C82",
+      "C48"
+    ],
+    "result": "During active lengthening on the descending limb, the VEXAT model continues to develop tension while the Hill model's tension drops due to negative stiffness, demonstrating that biological muscle does not exhibit negative stiffness in this region.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this key advantage of the VEXAT model. Reviewer 1 notes the model 'outperforms Hill-type models in a variety of conditions.' Reviewer 2 states 'The results clearly demonstrate the weaknesses of Hill models and the advantages of incorporating titin into theoretical treatments of muscle mechanics.' This finding addresses a fundamental limitation of Hill-type models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "The Leonard et al. 2010 experiment shows active force continues to develop linearly during lengthening beyond actin-myosin overlap until mechanical failure, with titin-deleted myofibrils failing at short lengths and low stresses. Only the VEXAT model with linear titin element can match this experimental data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these results. Reviewer 2 explicitly states the authors 'show that the model accurately predicts...rabbit psoas myofibrils (Leonard et al. 2010).' Reviewer 3 acknowledges 'The effort to include a role for titin in muscle models is a major strength of the methods and results' and that this addresses force responses to 'long-range stretches.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C6",
+      "C23"
+    ],
+    "result": "Prior to this work, no single muscle model could replicate force responses to both small and large perturbations while reproducing classical Hill and Gordon experiments, potentially leading simulation studies to reach conclusions valid in simulation but not reality.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this gap in the literature. Reviewer 2 states 'Due to the significant limitations of Hill-type models, alternative models are needed and therefore the work is important and timely.' Reviewer 3 notes 'it is valuable to have a single model which can predict muscle force under all these physiologically relevant conditions,' confirming the previous absence of such a model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31"
+    ],
+    "result": "Existing models have fundamental structural limitations: Hill models lack active spring elements, Huxley models lack active damping, linearized models cannot capture nonlinear relations, and several modified Hill models use serial rather than parallel spring-damper connections that fail to reproduce experimental phase shifts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these characterizations of existing models. Reviewer 3 acknowledges 'It is well established that Hill-type models do not have any mechanism by which they can predict the effect of active muscle stretch,' confirming the structural limitations described. These claims provide context for the model development rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C100",
+      "C103",
+      "C104"
+    ],
+    "result": "The VEXAT model makes several simplifying assumptions: treating actin and myosin filaments as rigid, lumping six titin filaments together, assuming titin-actin rather than titin-myosin interaction, modeling this interaction as activation-dependent damping rather than rigid attachment, and assuming titin cannot be actively preloaded.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express concerns about the model's assumptions and their implications. Reviewer 2 states 'it remains unclear whether the model will be practical for use with data from different muscles or preparations. Several ad hoc modifications were described in the paper.' Reviewer 3 notes 'the combination of phenomenological and mechanistic aspects...may limit the insight that can be gained' and questions 'what drives the shift from the high stiffness in short-range perturbations to the somewhat lower stiffness in mid-range perturbations,' suggesting uncertainty about whether the assumptions capture the underlying physiology correctly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "While activation-dependent stiffness originates from crossbridges, the origins of activation-dependent damping are not yet established. The VEXAT model assumes damping originates from attached crossbridges because it varies linearly with activation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This assumption is not directly challenged but falls under broader reviewer concerns about mechanistic interpretation. Reviewer 3 states 'it is not clear to me, either physiologically or in the model, what drives the shift from the high stiffness in short-range perturbations to the somewhat lower stiffness,' indicating uncertainty about the physiological basis of model components including damping mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Recent experiments (Tomalka et al. 2021) suggest crossbridge force might decrease during lengthening rather than increase as in Hill models, which would require adjusting the VEXAT model if replicated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is presented as a speculative future modification. Reviewers do not comment on this specific claim, but Reviewer 2's concern that 'the degree to which the model requires parameter optimization for different muscles, preparations and experiment types remains unclear' suggests uncertainty about how the model would need to be adapted to accommodate new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "The VEXAT model in its current form ignores phenomena related to submaximal contractions including the shift in peak force-length relation and scaling of maximum shortening velocity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This limitation is acknowledged by the authors and not disputed by reviewers. Reviewer 2 notes 'it remains unclear whether the model will be practical for use with data from different muscles or preparations,' which encompasses these unmodeled phenomena. This is treated as a known limitation rather than a fundamental flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Various alternative models (Huxley, linearized impedance, Forcinito, Haeufle, G\u00fcnther, Tamura, De Groote, Rode, Schappacher-Tilp) are predicted to have difficulty reproducing the Kirsch et al. 1994 experiment due to structural limitations such as lacking active damping, using serial connections, or missing titin components.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 directly challenges the limited comparison: 'I find the comparison to a Hill-type muscle model to be somewhat limiting...Many other models, some of which are also simple enough to be incorporated into whole-body simulations, have incorporated mechanistic elements which allow for the prediction of force responses to muscle stretch. And it is not clear from the results presented here that this model would outperform such models.' This indicates the predictions about other models' performance are not adequately demonstrated.",
+    "result_type": "MINOR"
+  }
+]

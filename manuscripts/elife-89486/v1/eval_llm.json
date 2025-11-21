@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Double-positive (Doub+) Tri-PyMT cells, representing 2-5% of total cells, mark the EMT transitioning phase. These cells express intermediate levels of epithelial and mesenchymal markers, have higher percentages of S and G2/M phase cells, and show enrichment of ribosome biogenesis pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 collectively demonstrate that Doub+ cells represent a transitional EMT state through multiple lines of evidence: flow cytometry quantification (C27), protein expression patterns (C29), cell cycle analysis (C30), and RNA-seq data showing both epithelial/mesenchymal markers (C31) and RiBi pathway enrichment (C32). The convergence of these independent measurements provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Single-cell RNA sequencing and trajectory analysis revealed that ribosome biogenesis (RiBi) is transiently elevated during the EMT transitioning phase. Trans cells show significant enrichment of RiBi genes compared to epithelial or mesenchymal cells, with RiBi activity peaking during transition and declining as cells complete EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide comprehensive scRNA-seq evidence for transient RiBi elevation during EMT. The trajectory analysis (C34), differential gene expression (C35-C36), GSEA (C37), correlation with pseudotime (C38-C39), and RT-PCR validation (C40) all converge on the same conclusion. The statistical significance (p<0.05) and multiple analytical approaches strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Ribosome biogenesis is also upregulated during the MET process. GFP+/Epcam- cells injected into mice showed ~50% EpCam expression after 4 weeks, and scRNA-seq analysis revealed elevated RiBi activity in tumor cells with epithelial phenotypes during MET, with significant positive correlation between RiBi and MET pseudotime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 demonstrate RiBi upregulation during MET through in vivo experiments and scRNA-seq analysis. The experimental design (C41), trajectory analysis (C42-C43), and correlation analysis (C44-C45) provide consistent evidence. However, the sample size (n=3 mice) is modest, though the scRNA-seq provides single-cell resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Doub+ cells exhibit elevated ERK and mTOR signaling, increased p-Rps6 levels, enlarged cell size, enhanced nascent protein synthesis, more nucleoli, and higher transcription activity compared to RFP+ or GFP+ cells, indicating that RiBi activation is linked to these signaling pathways and functional outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 provide multiple lines of functional evidence linking signaling pathways to RiBi activity. Western blot data (C46-C47, C49), flow cytometry (C50), OPP incorporation (C51), immunostaining (C52), and EU incorporation (C53) all support the conclusion. The citation to prior work (C48) provides mechanistic context. The convergence of multiple assays strengthens the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Pharmacological inhibition of ribosome biogenesis using Pol I inhibitors (BMH21 or CX5461) impaired both EMT and MET transitions. Treatment prevented RFP+ to GFP+ fluorescence switch, blocked mesenchymal marker expression while preserving epithelial markers, and prevented EpCam retrieval by GFP+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 demonstrate that pharmacological RiBi inhibition blocks EMT/MET transitions through flow cytometry (C56, C59), EU incorporation (C57), and Western blot (C58) data. The use of two independent inhibitors (BMH21 and CX5461) strengthens the conclusion. Statistical significance is reported (p<0.01), though sample sizes are modest (n=2-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Genetic knockdown of ribosomal proteins Rps24 or Rps28 reduced nucleoli numbers and impaired both EMT (RFP to GFP switch) and MET (regain of Epcam), confirming the requirement of RiBi for EMT/MET transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 provide genetic validation of the pharmacological findings. Knockdown of two independent ribosomal proteins produced consistent phenotypes in nucleoli number (C61) and EMT/MET capability (C62). However, the mechanism by which depleting one r-protein affects overall ribosome assembly relies on cited work (C60), and off-target effects cannot be fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "BMH21 synergizes with chemotherapy drugs, particularly cyclophosphamide (CTX), to reduce tumor cell viability. At 100-200 nM concentrations, BMH21 showed high synergy scores with CTX (\u03b4high = 8.45), and synergistic effects were observed with multiple chemotherapy drugs including 5FU, Cisplatin, Doxorubicin, Gemcitabine, and Paclitaxel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 demonstrate drug synergy through in vitro cytotoxicity assays and synergy analysis using SynergyFinder. The quantitative synergy scores (C65) and testing across multiple chemotherapy drugs (C66) strengthen the conclusion. However, the experiments used duplicates (n=2 wells/treatment), which is minimal for establishing robust synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "In vivo combination therapy of BMH21 and CTX significantly reduced chemoresistant metastatic tumor outgrowth in the Tri-PyMT model. The combination treatment eliminated both RFP+ and GFP+ cells, prevented EMT/MET transitions, and showed superior efficacy compared to monotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 provide comprehensive in vivo validation through BLI (C67), flow cytometry (C68), and immunofluorescence (C69, C71, C72). The experimental design with competitive metastasis assay is appropriate. Statistical significance is reported (p<0.05, n=5 mice/group), which is adequate for animal studies. The mechanistic interpretation (C70) is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The synergistic effect of BMH21 and CTX was validated in a second model using human LM2 breast cancer cells, which undergo MET during lung metastasis outgrowth. Combination therapy significantly reduced metastatic tumor burden compared to monotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide independent validation in a human cell line model. The RT-PCR data (C73) confirms MET involvement, and BLI data (C74) shows therapeutic efficacy. The use of a second model strengthens generalizability, though only one human cell line was tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of human breast cancer patient samples showed a trend of higher RiBi activity in tumor cells with lower EMT pseudotime, with one patient (Patient B) showing highest RiBi activity in the EMT/MET transitioning phase, suggesting similar RiBi dynamics in human breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 analyze only two patient samples, which is insufficient to draw strong conclusions about human breast cancer. While Patient B shows the expected pattern (C76), the overall trend is described as weak (C75). The analysis is exploratory and requires validation in larger patient cohorts. The scRNA-seq data quality and patient selection criteria are not described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "High RiBi activity in breast tumors is associated with significantly worse prognosis in both TCGA PanCancer Atlas and METABRIC databases, with RiBiHigh patients showing worse survival than RiBiLow patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 analyzes large patient cohorts (1084 and 2500 samples) from established databases with statistical significance (p<0.05). However, the analysis is correlative and does not establish causation. The cutoffs for RiBiHigh (>1) and RiBiLow (<0.5) appear arbitrary and are not justified. Confounding factors and patient stratification details are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "EMT contributes to chemotherapy resistance in breast cancer, but current EMT-targeting strategies that block EMT stimuli, signaling, or mesenchymal features may paradoxically promote MET, which also contributes to malignancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C16 establish the rationale for the study based on established knowledge (C1, C14) and cited literature (C15-C16). These claims provide appropriate context but do not represent novel findings from this study. The citations support the statements about current therapeutic limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C22",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study utilized the Tri-PyMT EMT lineage-tracing model and MDA-MB231-LM2 cells, both modified with luciferase for in vivo imaging. The Tri-PyMT model traces EMT via permanent RFP-to-GFP fluorescence switch and reliably reports EMT phenotype changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C17-C18, C22, C89-C91 describe the experimental models used. The Tri-PyMT model is well-established (cited to Fischer et al., 2015 and Lourenco et al., 2020), and the luciferase modification is standard methodology. These are methodological details rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "RFP+ Tri-PyMT cells actively transition to GFP+ in vitro in growth medium containing 10% FBS, and the fluorescence switch is irreversible, with GFP+ cells accumulating until a balanced ratio is reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe the in vitro behavior of the Tri-PyMT model. The data in Figure 1\u2014figure supplement 1A supports C25, and C26 describes a known property of the Cre-lox system. These observations establish the experimental system but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "EMT involves multiple growth factors, signaling pathways, transcription factors, and genes, leading to a spectrum of EMT phenotypes. The Tri-PyMT model has sparked debate about EMT definition and significance, with different mesenchymal markers showing different patterns in metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C19-C21, C23-C24 provide background on EMT complexity and the Tri-PyMT model's limitations based on cited literature. These claims contextualize the study but do not represent novel findings. The citations appropriately support the statements about prior work and ongoing debates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C54",
+      "C55",
+      "C60",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C87",
+      "C88"
+    ],
+    "result": "Prior work has established that: Rps6 phosphorylation is regulated by mTORC1/ERK crosstalk; rRNA transcription is mediated by Pol I; BMH21 and CX5461 are Pol I inhibitors; depleting one r-protein compromises ribosome assembly; RiBi is elevated during TGF\u03b2-induced EMT; RiBi is associated with epithelial CTCs; some chemotherapeutics affect RiBi; and RiBi is dysregulated in most cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C54-C55, C60, C78, C80-C82, C87-C88 cite prior literature to provide mechanistic context and rationale. These are appropriately cited background claims that support the study's framework but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study discovered that RiBi is transiently elevated during EMT/MET transitions, mediated by ERK and mTOR signaling, and is essential for EMT/MET completion. Targeting RiBi with Pol I inhibitors impaired EMT/MET capability and synergized with chemotherapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C83-C86 summarize the main findings. These are supported by the detailed experimental results in other claim groups. However, these are summary statements that aggregate findings rather than representing distinct results. The claim that RiBi is 'essential' (C7) may be overstated, as the experiments show impairment but not complete abolition of EMT/MET.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Targeting the RiBi pathway presents a promising strategy for treating patients with advanced breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C11 is the main conclusion but represents an inference beyond the data. While the preclinical evidence is strong, translation to human patients requires clinical validation. The claim is appropriately cautious ('suggests,' 'promising') but the evidence is limited to mouse models and one human cell line. Clinical feasibility, toxicity, and efficacy in patients remain unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Using the Tri-PyMT model, EMT transitioning (Doub+) cells had higher percentages of cells in S and G2/M phases compared to RFP+ and GFP+ cells, which differs from prior observations of G1 arrest during TGF\u03b2-induced EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by cell cycle analysis data (Figure 1\u2014figure supplement 1B) showing statistical significance (p<0.0001, n=4). The authors acknowledge this differs from prior work (C78) and suggest different EMT stimuli may explain the discrepancy. This is a valid observation but the mechanistic explanation remains speculative.",
+    "result_type": "MINOR"
+  }
+]

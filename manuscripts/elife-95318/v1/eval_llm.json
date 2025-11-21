@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C72",
+      "C73"
+    ],
+    "result": "RBM7 expression is decreased in breast cancer, particularly in metastatic lesions, and low RBM7 expression correlates with poor patient survival outcomes. Multiple datasets (TCGA, GEO, METABRIC) and tissue analyses show RBM7 is reduced in tumors versus normal tissue, in lymph node metastases versus primary tumors, and in distant metastases, with lower expression associated with reduced overall and disease-free survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C72-C73 provide converging evidence from multiple independent datasets (TCGA, GEO, METABRIC, cBioPortal), immunohistochemistry on tissue microarrays, and paired primary/metastatic samples. The consistency across different cohorts (>1000 patients), multiple analysis methods, and tissue types strongly supports the clinical relevance of RBM7 downregulation in breast cancer progression and metastasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "RBM7 depletion promotes breast cancer metastasis by enhancing migration, invasion, and angiogenesis. RBM7 knockdown upregulates metastasis-associated genes, increases lung metastases in vivo, enhances cell migration and invasion in multiple breast cancer cell lines, and promotes HUVEC tube formation, while RBM7 overexpression has opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 demonstrate functional effects of RBM7 through multiple complementary approaches: RNA-seq pathway analysis, qRT-PCR validation, in vivo metastasis models, transwell migration/invasion assays across multiple cell lines (MDA-MB-231, MCF7, 4T1, BT549, HCC1937), and tube formation assays. The consistency of gain-of-function and loss-of-function experiments provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C68"
+    ],
+    "result": "RBM7 regulates alternative splicing in breast cancer, primarily functioning as a splicing activator for skipping exon (SE) and alternative 5' splice site (A5E) events. RBM7 depletion causes widespread changes in splicing (551 decreased PSI, 289 increased PSI), with SE events most prominently affected. RBM7 binds UUUCUU motifs enriched near regulated exons and localizes to the nucleus, with affected genes involved in cytoskeleton organization and metastasis-related processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22, C68 are supported by comprehensive RNA-seq analysis of alternative splicing events, motif enrichment analysis, RT-PCR validation of specific targets, immunofluorescence localization data, and Gene Ontology/network enrichment analyses. The identification of ~70% of SE/A5E events showing decreased PSI upon RBM7 depletion, combined with motif enrichment and nuclear localization, provides strong evidence for RBM7's role as a splicing activator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "RBM7 directly regulates MFGE8 alternative splicing by binding to UUUCUU motifs upstream of exon 7's 3' splice site, promoting inclusion of exon 7 to produce the MFGE8-L isoform. RBM7 depletion shifts splicing toward the MFGE8-S isoform, which lacks the F5/8 type C2 domain. This regulation is demonstrated through integrated RIP-seq, RNA-seq, RT-PCR validation, minigene reporter assays, and antisense oligonucleotide experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 provide strong mechanistic evidence through multiple complementary approaches: integration of RIP-seq and RNA-seq data to identify MFGE8 as a target, RT-PCR validation across multiple cell lines, minigene reporter assays demonstrating direct regulation, RIP assays showing specific binding to UUUCUU motifs, and ASO experiments confirming the functional importance of the binding site. The convergence of these independent methods strongly supports direct regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C76",
+      "C77"
+    ],
+    "result": "MFGE8-L and MFGE8-S isoforms have opposing functional effects on breast cancer cell behavior. MFGE8-L suppresses migration and invasion, inhibits STAT1 phosphorylation, and localizes to cell-cell contact sites, while MFGE8-S lacks the second F5/8 type C domain, abolishes MFGE8-L's inhibitory function, promotes migration/invasion, shows diffuse nuclear/cytoplasmic localization, and does not affect STAT1 phosphorylation. Differential gene expression between isoforms is enriched in cell adhesion molecules and JAK-STAT signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40, C76-C77 demonstrate functional differences through transwell migration/invasion assays, gelatin degradation assays, immunofluorescence localization studies, transcriptome profiling, pathway enrichment analysis, and western blot analysis of STAT1 phosphorylation. The consistency of results across multiple functional assays and the mechanistic link to STAT1 signaling provide strong support for opposing roles of the two isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C51"
+    ],
+    "result": "MFGE8 splicing switch mediates RBM7's effects on breast cancer aggressiveness. Restoration of MFGE8-L expression rescues the pro-metastatic phenotype caused by RBM7 depletion, and ASO-mediated blockade of RBM7 binding to MFGE8 pre-mRNA increases exon 7 skipping and enhances cell migration/invasion, demonstrating that MFGE8 splicing regulation is a key mechanism by which RBM7 suppresses metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C51 provide rescue experiments demonstrating causality: MFGE8-L restoration reverses RBM7 knockdown phenotypes, and ASO experiments phenocopy RBM7 depletion effects. These complementary gain-of-function and loss-of-function approaches establish MFGE8 splicing as a critical mediator of RBM7's tumor suppressor function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C67",
+      "C78"
+    ],
+    "result": "RBM7 depletion activates NF-\u03baB signaling independently of MFGE8 splicing, contributing to breast cancer metastasis through enhanced angiogenesis. RBM7 knockdown increases p65 phosphorylation, decreases I\u03baB\u03b1 phosphorylation, and upregulates IL-1\u03b2 expression, while MFGE8-L/S do not affect NF-\u03baB pathway components or angiogenic factors. NF-\u03baB inhibitor PDTC blocks the pro-angiogenic effects of RBM7 depletion on HUVEC tube formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50, C67, C78 demonstrate a second, MFGE8-independent mechanism through GSEA analysis, western blot analysis of NF-\u03baB pathway components, qRT-PCR and ELISA measurements of IL-1\u03b2, and pharmacological inhibition experiments. The observation that MFGE8 isoforms do not affect angiogenic factors or NF-\u03baB signaling, while NF-\u03baB inhibition blocks RBM7 depletion-induced angiogenesis, supports a parallel pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "MFGE8 exon 7 skipping is increased in breast cancer and correlates with metastasis and poor prognosis. TCGA analysis shows increased exon 7 exclusion in tumors versus normal tissues across multiple cancer types. Patient sample analysis confirms higher MFGE8-S proportion in tumors versus normal tissue and in lymph node metastases versus primary tumors. High MFGE8 exon 7 expression correlates with better overall survival and positively correlates with RBM7 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 provide clinical validation through TCGA database analysis, RT-PCR on patient samples (6 tumor/normal pairs, 5 primary/metastasis pairs), survival analysis, and correlation analysis. The consistency between database analysis and direct patient sample measurements, combined with survival data, supports clinical relevance of the MFGE8 splicing switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C62",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "RBM7 interacts with spliceosomal component SF3B2, and both proteins cooperatively regulate MFGE8 splicing. Co-immunoprecipitation demonstrates RBM7-SF3B2 interaction, and SF3B2 depletion promotes MFGE8 exon 7 skipping similar to RBM7 depletion. The RRM domain of RBM7 binds a proline-rich segment in SF3B2, suggesting mutually exclusive binding of SF3B2 and ZCCHC8 to RBM7, indicating dual roles in splicing and RNA surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C62, C69-C71 are supported by co-IP experiments, RT-PCR analysis of SF3B2 knockdown effects, and integration with prior structural studies. The similar splicing phenotypes of RBM7 and SF3B2 depletion, combined with physical interaction data, support a cooperative mechanism. However, the claim about mutually exclusive binding (C70) is inferred from structural similarity rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background and context claims about RBM7, MFGE8, alternative splicing, and breast cancer biology from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66, C81-C92 are background statements supported by citations to previous literature. These provide context for the study but do not represent novel findings. The citations appear appropriate for establishing the scientific background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "Summary and concluding claims about RBM7's role in breast cancer metastasis and potential clinical applications. RBM7 regulates alternative splicing of multiple targets including AKT2, and the coordinated action of MFGE8 splicing switch and NF-\u03baB activation drives metastasis in RBM7-depleted breast cancer. RBM7 and its regulated splicing variants are proposed as potential therapeutic biomarkers and prognostic indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C79-C80 integrate findings from the study. C74 is supported by experimental observation. C75 and C79 are well-supported summaries of the major findings. C80 is a speculative proposal for future clinical applications that requires additional validation studies, but is reasonable based on the presented data showing clinical correlations.",
+    "result_type": "MAJOR"
+  }
+]

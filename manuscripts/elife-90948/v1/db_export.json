@@ -1,0 +1,1764 @@
+{
+  "submission": {
+    "id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:13:32.162715Z",
+    "updated_at": "2025-11-20T23:13:32.162715Z"
+  },
+  "content": [
+    {
+      "id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "content_type": "manuscript",
+      "content_text": "# Enhancing CRISPR prime editing by reducing misfolded pegRNA interactions\n\n## Authors\n\n- Weiting Zhang<sup>1</sup>\n- Karl Petri<sup>3</sup>\n- Junyan Ma<sup>1</sup>\n- Hyunho Lee<sup>3</sup>\n- Chia-Lun Tsai<sup>6</sup>\n- J Keith Joung<sup>3</sup>\n- Jing-Ruey Joanna Yeh<sup>1</sup> ([ORCID: 0000-0002-7768-4901](https://orcid.org/0000-0002-7768-4901)) \u2020\n\n### Affiliations\n\n1. Cardiovascular Research Center, Massachusetts General Hospital Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n2. Department of Medicine, Harvard Medical School Boston United States\n3. Molecular Pathology Unit and Center for Cancer Research, Massachusetts General Hospital Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n4. Department of Pathology, Harvard Medical School Charlestown United States\n5. Medical College, Dalian University Dalian China ([ROR:00g2ypp58](https://ror.org/00g2ypp58))\n6. Center for Computational and Integrative Biology, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCRISPR prime editing (PE) requires a Cas9 nickase-reverse transcriptase fusion protein (known as PE2) and a prime editing guide RNA (pegRNA), an extended version of a standard guide RNA (gRNA) that both specifies the intended target genomic sequence and encodes the desired genetic edit. Here, we show that sequence complementarity between the 5\u2019 and the 3\u2019 regions of a pegRNA can negatively impact its ability to complex with Cas9, thereby potentially reducing PE efficiency. We demonstrate this limitation can be overcome by a simple pegRNA refolding procedure, which improved ribonucleoprotein-mediated PE efficiencies in zebrafish embryos by up to nearly 25-fold. Further gains in PE efficiencies of as much as sixfold could also be achieved by introducing point mutations designed to disrupt internal interactions within the pegRNA. Our work defines simple strategies that can be implemented to improve the efficiency of PE.\n\n## Introduction\n\nPE is a versatile gene-editing technology that enables programmable installation of any nucleotide substitution and small insertions/deletions without requiring a DNA donor template or the introduction of DNA double-strand breaks (Anzalone et al., 2020). It utilizes a Cas9 nickase (nCas9)-reverse transcriptase (RT) fusion protein called PE2 and a prime editing guide RNA (pegRNA, Figure 1a). Like a gRNA, the pegRNA directs nCas9 to the target DNA site specified by the 5\u2019 spacer sequence. The non-target DNA strand nicked by nCas9 then anneals to a complementary primer binding site (PBS) at the 3\u2019 end of the pegRNA. Subsequently, the adjacent reverse transcriptase template (RTT) also encoded in the pegRNA is reverse transcribed by the PE2 RT generating a 3\u2019 DNA \u2018flap\u2019 that encodes the desired edit (Anzalone et al., 2019). Although PE has been successfully employed in mammalian cells, plants, Drosophila, zebrafish and mice, the editing efficiencies observed are generally lower than those observed with other forms of CRISPR/Cas-based editing (e.g. nucleases and base editors; Anzalone et al., 2019; Bosch et al., 2021; Petri et al., 2022; Lin et al., 2020; Liu et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90948/elife-90948-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic illustrating the hybridization of a pegRNA and its target DNA. Four segments of a pegRNA are shown. PBS, Primer Binding Site; RTT, Reverse Transcriptase Template. Target DNA positions (as well as the corresponding sequences in the RTT) are numbered counting from the SpCas9-induced nick towards \u2018NGG\u2019, the protospacer adjacent motif (PAM). (b) Mutation frequencies induced by SpCas9 with gRNAs and pegRNAs in zebrafish. All pegRNAs carried a single nucleotide substitution at position +5 or+6, with RTT lengths of 14- or 15-nucleotide (nt), and PBS lengths of 10-nt (pegRNA-PBS10) or 13-nt (pegRNA-PBS13). Target loci are indicated at the bottom. SpCas9 protein was complexed with gRNA or pegRNA at a molar ratio of 1:2 (0.6 \u00b5M of gRNA or pegRNA). (c) Schematic illustrating hypothetical conformations of correctly folded and misfolded pegRNAs. The spacer is shown in green, Cas9-binding scaffold in orange and 3\u2019 extension including PBS and RTT in blue. Dotted lines indicate potential base pairings. (d) Schematic illustrating the in vitro competition assay for Cas9 binding and substrate cleavage. Possible outcomes of the assay are shown in a representative gel. Lane 1 shows the addition of Competitor A with a high SpCas9-binding affinity resulting in 100% inhibition of cleavage of DNA substrates (1.2 kilobase pairs). Lane 2 shows the addition of Competitor B with a low SpCas9-binding affinity yielding a mix of uncleaved and cleaved (900 and 300 base pairs) DNA substrate. Lane 3 shows the reaction without any competitor resulting in 100% cleaved DNA products. (e) Agarose gel image showing the results of in vitro SpCas9 cleavage of DNA substrate in the presence of gRNA or pegRNAs targeting gpr78a as competitors, with or without refolding (indicated on top of the gel). Random RNA isolated from tolura yeast was used as a negative control. Assays were performed in triplicate. (f) Percentage of uncleaved DNA substrate in the presence or absence of competitor gRNA or pegRNA calculated using data from Figure 1\u2014source data 1 and Figure 1\u2014source data 2. Competitor gRNA and pegRNA target loci are indicated at the top. Competitor types are shown at the bottom. Dots represent individual data points, bars the mean and error bars \u00b1 s.e.m. Unpaired two-tailed t-test with equal variance was used to compare non-refolded gRNA vs non-refolded pegRNA, non-refolded pegRNA vs non-refolded pegRNA with three mutations in PBS, and non-refolded vs refolded pegRNAs. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90948/elife-90948-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Indel frequencies in zebrafish induced by SpCas9 complexed with non-refolded or refolded pegRNAs at a molar ratio of 1:2 (1.8 \u00b5M of pegRNA). Target loci, PBS lengths, and pegRNA-specified edits are indicated at the bottom. Dots represent individual data points (n=3 biologically independent replicates, 5\u201310 embryos per replicate), bars the mean and error bars \u00b1 s.e.m. Results of unpaired two-tailed t-test with equal variance are shown in *p<0.05, **p<0.01, ***p<0.001.\n\nTo explore potential mechanisms for the lower editing frequencies observed with PE, we tested whether the 3\u2019 PBS/RTT segment might impact the ability of a pegRNA to function with standard SpCas9 nuclease. To do this, we compared the mutation frequencies induced by SpCas9 with matched pairs of pegRNAs and standard gRNAs (i.e. lacking the PBS and RTT 3\u2019 extensions) targeting the same spacer sequences. We performed these comparisons in one-cell stage zebrafish embryos by injecting Cas9 protein complexed with equimolar concentrations of either pegRNAs or gRNAs targeting six different endogenous gene loci. To quantify indel frequencies induced at these sites, we extracted genomic DNA from embryos one day following injection and performed targeted amplicon next-generation sequencing (NGS). We found that across all six target spacer sites, lower indel frequencies were observed with pegRNAs than with their matched gRNAs (Figure 1b), suggesting that the presence of the 3\u2019 extension in a pegRNA decreases Cas9-induced gene editing.\n\nOne potential explanation for the lower Cas9 activities we observed with pegRNAs compared with standard gRNAs is that interactions between complementary sequences in the 5' spacer and 3' PBS and RTT might cause misfolding of pegRNAs in a way that decreases their abilities to complex with Cas9 protein (Figure 1c).This possibility seemed likely given that previous work has shown that even shorter length internal interactions between bases in standard gRNAs can stabilize alternative non-functional folding and low SpCas9-induced mutation efficiencies (Thyme et al., 2016). To test our hypothesis, we used a previously described in vitro assay (Thyme et al., 2016) that assesses the abilities of various gRNAs (and, in this case, pegRNAs) to complex with Cas9 protein. In this assay, various matched pegRNAs and gRNAs targeted to endogenous zebrafish gene spacer targets compete with a gRNA targeting an EGFP reporter gene sequence for complexation with Cas9 nuclease (Figure 1d). The degree of successful competition by a given gRNA or pegRNA can be assessed by measuring cleavage of an EGFP target DNA site substrate included in each reaction (Figure 1d). Using this assay, we compared matched gRNAs and pegRNAs targeted to four different genomic DNA sites, gpr78a, adgrf3b, cacng2b and gpr85 and found that in all four cases the gRNAs could efficiently compete with the EGFP-targeted gRNA for binding to Cas9 (as judged by reduced cleavage of the EGFP DNA target site template), whereas the pegRNAs were substantially and significantly reduced in this capability (Figure 1e and f; Figure 1\u2014source data 1 and 2). To test whether this reduced Cas9-binding capability of the pegRNAs might be caused in part by their 5\u2019 vs 3\u2019 complementarity, we performed additional in vitro experiments with matched pegRNAs in which we introduced three point mutations in the 3\u2019 PBS region of the pegRNAs (Figure 1\u2014source data 3) and found that these mutated pegRNAs showed significant increases in their competitive Cas9-binding activities (Figure 1e and f; Figure 1\u2014source data 1 and 2).\n\nHaving determined that pegRNAs may suffer from reduced binding to Cas9 protein, we next considered whether refolding the pegRNAs could improve their Cas9 binding capabilities. We considered this hypothesis because it has been previously shown that refolding low-activity gRNAs believed to have alternative folding configurations can significantly improve their abilities to mediate Cas9-induced indels (Thyme et al., 2016). We found that subjecting pegRNAs to a refolding procedure consisting of heat denaturation followed by slow cooling (Materials and methods) significantly improved their abilities to bind Cas9 in the in vitro DNA cleavage competition assay (although not to levels observed with matched standard gRNAs Figure 1e and f; Figure 1\u2014source data 1 and 2). Consistent with this, we also observed that re-folding of pegRNAs prior to formation and injection of pegRNA-Cas9 ribonucleoprotein complexes into zebrafish embryos also increased Cas9-mediated indel frequencies by up to 2.8-fold for four of the seven target sites tested (Figure 1\u2014figure supplement 1).\n\nNext, we evaluated whether refolding the pegRNAs would also increase PE efficiencies in zebrafish embryos. For this experiment we used 17 pegRNAs from our earlier study (Petri et al., 2022) that were designed to introduce various types of mutations (base substitutions, insertions, or deletions) and that had exhibited a range of PE efficiencies from barely active to the best performers. We found that refolding prior to embryo injection significantly increased the frequencies of pure PE (defined as the alleles containing only the pegRNA-specified edits without any other mutations) frequencies for nine of these 17 pegRNAs (Figure 2a and b). Significant increases were observed with seven of 12 pegRNAs designed to introduce base substitutions (increases ranging from 2.6- to 24.7-fold; Figure 2a) and 2 of 3 pegRNAs designed to create insertion pegRNAs (increases ranging from 1.7- to 4.6-fold; Figure 2b). We did not observe significant increases in PE efficiencies with the two pegRNAs designed to induce deletions (Figure 2b), perhaps due relatively lower degree of complementarity between the 5\u2019 spacer and 3\u2019 RTT because of the deletion encoded in the latter region. In general, increases in pure PE frequencies due to re-folding were accompanied by significant increases in non-pure PE frequencies (Figure 2\u2014figure supplement 1a, b) and therefore PE purity values (defined as the percentage of pure PE edits out of total edits) did not show significant differences for most of the pegRNAs we assessed (Figure 2\u2014figure supplement 1c, d). The only exceptions were two scn2b substitution pegRNAs that actually showed significantly improved PE purities with re-folding and the cacng2b deletion pegRNA that showed significantly reduced PE purity with refolding (Figure 2\u2014figure supplement 1c, d).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90948/elife-90948-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2013b) Pure PE frequencies of non-refolded and refolded substitution pegRNAs (a) and insertion or deletion pegRNAs (b) with PE2 in zebrafish. Target loci, PBS lengths (labeled as \u2018P\u2019 followed by the number of nucleotides), RTT lengths (labeled as \u2018R\u2019 followed by the number of nucleotides), and pegRNA-specified edits (denoted as the position of the edit followed by the edit) are shown at the top. Pure PE represents sequencing reads containing only the pegRNA-specified mutations. (c\u2013d) Pure PE frequencies with refolded pegRNAs carrying additional RTT mutations (at +1,+2 or+3) and PE2 in zebrafish. Target loci, PBS, and RTT lengths are shown at the top and pegRNA-specified edits are shown at the bottom. All pegRNAs had 3 or 4 thymine (T) nucleotides at the 3\u2019 end except for the ones labeled \u2018A end\u2019 for scn2b in which the terminal Ts were replaced with adenine (A) nucleotides. Dots represent individual data points (n=3 biologically independent replicates, 5\u201310 embryos per replicate), bars the mean and error bars \u00b1 s.e.m. *p<0.05, **p<0.01, ***p<0.001 (unpaired two-tailed t-test with equal variance).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90948/elife-90948-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a\u2013b) Frequencies of non-pure PE edits (labeled as other edits) mediated by PE2 with non-refolded and refolded substitution pegRNAs (a) and insertion or deletion pegRNAs (b). (c\u2013d) PE purities (%) calculated as pure PE over total edit (pure and non-pure PE) frequencies for substitution pegRNAs (c) and insertion or deletion pegRNAs (d). Target loci, PBS lengths (labeled as \u2018P\u2019 followed by the number of nucleotides), RTT lengths (labeled as \u2018R\u2019 followed by the number of nucleotides), and pegRNA-specified edits are indicated at the top. Dots represent individual data points (n=3 biologically independent replicates, 5\u201310 embryos per replicate), bars the mean and error bars \u00b1 s.e.m. Results of unpaired two-tailed t-test with equal variance are shown in *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90948/elife-90948-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a\u2013b) Frequencies of non-pure PE edits (labeled as other edits) mediated by PE2 with refolded pegRNAs with or without an additional mutation in the RTT (at +1,+2 or+3). (c) PE purities calculated as pure PE over total edit (pure and non-pure PE) frequencies. Target loci, PBS lengths (labeled as \u2018P\u2019 followed by the number of nucleotides), and RTT lengths (labeled as \u2018R\u2019 followed by the number of nucleotides) are shown at the top. pegRNA-specified edits (denoted as the position of the edit followed by the edit) are shown at the bottom. Dots represent individual data points (n=3 biologically independent replicates, 5\u201310 embryos per replicate), bars the mean, error bars \u00b1 s.e.m. Results of unpaired two-tailed t-test with equal variance are shown in *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/90948/elife-90948-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** SpCas9 protein and pegRNA were combined at a molar ratio of 1:2. (1.8 \u00b5M of pegRNA). Target loci, PBS lengths (labeled as \u2018P\u2019 followed by the number of nucleotides), and RTT lengths (labeled as \u2018R\u2019 followed by the number of nucleotides) are shown at the top. pegRNA-specified edits (denoted as the position of the edit followed by the edit) are shown at the bottom. Dots represent individual data points (n=3 biologically independent replicates, 5\u201310 embryos per replicate), bars the mean and error bars \u00b1 s.e.m. Results of unpaired two-tailed t-test with equal variance are shown in **p<0.01.\n\nLastly, we tested whether introduction of single point mutations in the RTT region to reduce complementarity of pegRNA 5\u2019 and 3\u2019 regions might also lead to increases in PE efficiencies. Specifically, we explored the effects of creating mutations at the +1,+2, or +3 positions of the RTT (+1 defined as the first nucleotide just 5\u2019 to the first nucleotide of the PBS and +2 and+3 being further upstream within the pegRNA, Figure 1a) on PE efficiencies in zebrafish embryos. To do this, we introduced RTT + 1,+2, or +3 mutations into three pegRNAs that each mediated low PE frequencies even after re-folding (0.39\u20132.33%; Figure 2c) and that each encoded a single nucleotide substitution edit (encoded at RTT positions + 5 or+6). Following re-folding, complexation with PE2, and injection into zebrafish embryos, we found that pegRNAs harboring mutations at the RTT + 1 and+2 positions could make PE more efficient than their unmutated pegRNA counterparts (Figure 2c and Figure 2\u2014figure supplement 2a). Based on these results, we introduced a mutation at the RTT + 2 position in five additional pegRNAs specifying a single edit and found that the mutation increased mean pure PE frequencies in all five cases (Figure 2d). Three of the five mutated pegRNAs showed statistically significant increases in pure PE frequencies and two of these three pegRNAs also showed significant increases in non-pure PE frequencies (Figure 2d and Figure 2\u2014figure supplement 2b). Overall, a mutation at the RTT + 2 position increased pure PE frequency up to 6.7-fold (mean 2.4-fold; Figure 2c and d). PE purity was unchanged except for one pegRNA (cacng2b) that showed a modest but statistically significant increase (Figure 2\u2014figure supplement 2c). Testing of three re-folded pegRNAs harboring the RTT + 2 mutations showed that they all induced higher indel frequencies with SpCas9 nuclease in zebrafish embryos than matched re-folded pegRNAs without the RTT + 2 mutations (Figure 2\u2014figure supplement 3), suggesting that the +2 mutations function to enhance the abilities of these pegRNAs to form functional complexes with Cas9 protein.\n\n## Discussion\n\nOur work delineates and validates two simple and general strategies for improving the efficiency of PE that can be readily practiced by any investigator. Delivery of PE components as RNP complexes offers multiple potential advantages relative to DNA or RNA delivery (e.g. increased efficiency, reduced off-target effects, and avoiding risk of integration events; Kim et al., 2014; Raguram et al., 2022; Burger et al., 2016; Kanchiswamy, 2016; Svitashev et al., 2016; Wang et al., 2020; Ponnienselvan et al., 2023) and we show that combining pegRNA re-folding with the introduction of point mutations at the RTT +1 or+2 position can increase RNP-induced pure PE frequencies by as much as 29-fold in zebrafish embryos (Figure 1, Figure 2 and Supplementary file 1). Our previous results showing that RNP-mediated PE functions in both zebrafish embryos and cultured human cells (Petri et al., 2022) suggest that these simple strategies should likely improve PE in other settings such as human and other cell types as well. The introduction of RTT mutations to reduce pegRNA 5\u2019 and 3\u2019 complementarity can also be used when practicing PE technology using non-RNP-delivery methods such as DNA or RNA transfection, transduction, and/or injection. Notably, Li et al., 2022 have reported that introducing additional mutations in the RTT +1 to+3 positions can also enhance PE efficiency in human cells via DNA transfection. One important consideration in using the RTT mutation strategy is to ensure that the additional change introduced is either silent (if in a coding region) or otherwise benign in its effect (Li et al., 2022). Corroborating our findings, Ponnienselvan et al., 2023 recently reported that 3\u2019 truncated pegRNAs are preferentially loaded onto Cas9 and the prime editor protein, potentially due to reduced pegRNA 5\u2019\u20133\u2019 interactions. Although beyond the scope of this current work, it will be interesting to explore whether pegRNA re-folding and/or RTT mutation might be combined with other previously described strategies for improving PE efficiencies (e.g. adding various structured RNA motifs to the 3\u2019 termini of pegRNAs Nelson et al., 2022; Zhang et al., 2022 or PE proteins with improved architectures and activities Nelson et al., 2022; Doman et al., 2022; Liu et al., 2021).\n\nOur findings also have more broad implications for both the design of pegRNAs and the range of genomic spacer sequences that can be targeted by PE for recognition and editing. Previous work has shown that the length and base composition of pegRNA PBS and RTT sequences can influence PE efficiency for any given target spacer site (Ponnienselvan et al., 2023; Kim et al., 2021; Li et al., 2021; Lin et al., 2021). Our work adds another parameter (internal complementarity between the 5\u2019 spacer and 3\u2019 PBS/RTT regions of the pegRNA) to be considered as one designs and tests various combinations to optimize PE activity. Accounting for this additional consideration may impact the nature of spacer sequences that can efficiently be targeted (e.g. higher GC content and/or melting temperature may actually be undesirable) and the length and composition of PBS/RTT sequences that can be used. We envision that the generation of larger datasets of optimized pegRNAs and consideration of all the parameters that can influence pegRNA activities (including internal complementarity) may yield improved rules and software for in silico design in the future.\n\n## Materials and methods\n\n### Production of gRNAs and pegRNAs\n\nThe gRNAs and pegRNAs (Supplementary file 2) used in this work were synthesized by in vitro transcription. The DNA templates for in vitro transcription were constructed by one-step PCR, using a C9E constant oligonucleotide containing the enhanced SpCas9 scaffold (Petri et al., 2022), forward primer carrying the SP6 promoter and target-specific spacer, and the reverse primer with the 3\u2019 extension containing the primer binding site and RTT. Primer sequences and PCR formulation are listed in Supplementary file 3. PCR reactions were conducted with Phusion High-Fidelity DNA polymerase (New England Biolabs, no. M0530L) using the following cycling program: 98 \u00b0C for 30 s, followed by 35 cycles of 98 \u00b0C for 10 s, 65 \u00b0C for 30 s, and 72 \u00b0C for 15 s, followed by a final 72 \u00b0C extension for 5 min. The PCR products were purified using the Monarch PCR & DNA Cleanup Kit (New England Biolabs, no. T1030L). In vitro transcription of pegRNAs and gRNAs was performed using the HiScribe SP6 RNA Synthesis Kit (New England Biolabs, no. E2070S), purified using the Monarch RNA Cleanup Kit (New England Biolabs, no. T2030L) and eluted in water.\n\n### Purification of PE2 and SpCas9 protein\n\nPE2 protein was purified as previously described (Petri et al., 2022). SpCas9 protein was purified as described in Gagnon et al., 2014 with some modifications. Chemically competent Rosetta (DE3) competent cells (Novagen, no. 70954) were transformed with pET-28b-Cas9-His (Addgene, no. 47327) by heat shock following the manufacturers\u2019 instructions. 25 ml of overnight culture grown from a single colony in Luria Bertani (LB) medium with 50 \u03bcg ml\u20131 kanamycin was transferred into 670 ml of autoinduction medium (24 g l\u20131 yeast extract, 12 g l\u20131 soy peptone, 12.5 g l\u20131 potassium phosphate dibasic, 2.3 g l\u20131 potassium phosphate monobasic, 0.4% glycerol) containing 50 \u03bcg ml\u20131 kanamycin. The culture was incubated at 37 \u00b0C for about 4 hr until the OD600 of the culture had reached 1.0\u20132.0 and was then switched to 18 \u00b0C for another 24 hr. Cells were collected and resuspended in lysis buffer consisting of 20 mM Tris-HCl pH 8.0, 20 mM imidazole, 150 mM NaCl, 0.1% Triton X-100, 5 mM 2-mercaptoethanol and cOmplete Protease Inhibitor Cocktail (Roche, no. 11697498001). The cell suspension was subjected to sonication (Qsonica) for 2 min (20 s pulses and 20 s rest between pulses) at 4 \u00b0C. Lysate was cleared by centrifugation at 14,000 rpm for 10 min at 4 \u00b0C. The supernatant was mixed with 2 ml Ni-NTA agarose (QIAGEN, no. 30250) and kept on a rotator at room temperature for 1 hr. Subsequently, the supernatant-agarose mixture was loaded onto an Econo-Column chromatography column (Bio-Rad, no. 7374011) and the supernatant flowed through by gravity. The flow-through was re-loaded onto the same column once more. The column was then washed with 80 ml of wash buffer (20 mM Tris pH 8, 20 mM Imidazole, 500 mM NaCl). Protein was eluted with 20 mM Tris pH 8, 250 mM Imidazole, and 300 mM NaCl, analyzed for purity by SDS\u2013polyacrylamide gel electrophoresis (PAGE), and the elution buffer was replaced with 20 mM Tris pH 8.0, 200 mM KCl, 10 mM MgCl2, and 10% glycerol by dialysis using Slide-A-Lyzer G2 Dialysis Cassettes with 20 kDa cutoff (Thermo Fisher Scientific, no. 87737) at 4 \u00b0C overnight. Protein concentration was determined with UV absorbance at 280 nm on a NanoDrop spectrometer, and purified proteins were stored at \u221280 \u00b0C.\n\n### Refolding of pegRNAs and RNP complexation of refolded pegRNAs with Cas9 or PE2\n\nPegRNAs in water were refolded by heating at 98 \u00b0C for 2 min and slowly cooling down at a rate of \u20130.1 \u00b0C per second to 30 \u00b0C. Refolded pegRNAs were immediately added to the SpCas9 or PE2 protein, mixed gently, spun for 10 s at 6000 RPM in a mini centrifuge (Fisherbrand), and followed by a 10 min incubation at 30 \u00b0C.\n\n### In vitro competition assay for Cas9 binding and substrate cleavage\n\nWe tested the ability of pegRNAs and matched gRNAs to inhibit Cas9-induced cleavage of a DNA substrate (EGFP) by competing with the cognate EGFP gRNA for binding to Cas9 (Thyme et al., 2016). For this assay 6 \u03bcl of Cas9 protein (16.67 ng/\u00b5l) in 400 mM KCl, 20 mM MgCl2, and 40 mM Tris-HCL at pH 8.0. was mixed with 2 \u03bcl of gRNA or pegRNA being tested, or random RNA (SIGMA, no R6625) in a molar ratio of 1:2, and 2 \u03bcl of 25 ng/\u03bcl EGFP DNA substrate (1200 bp, amplified using the primers listed in Supplementary file 4). After incubating the mixture at 30 \u00b0C for 15 min, 2 \u03bcl of EGFP gRNA at the same molar concentration as the test gRNAs and pegRNAs, was added to the mixture and the cleavage reaction performed at 37 \u00b0C. After 30 min, the reactions were stopped by adding a gel loading dye (New England Biolabs, no. B7024A) followed by heat inactivation at 80 \u00b0C for 10 min. The cleaved DNA samples were separated on a 2% agarose gel by electrophoresis. The fluorescent intensity of each band was calculated by dividing its total fluorescent intensity measured in Image J/FIJI Gels by its band size in bp, yielding a unit fluorescent intensity for each band. The cleavage percentages were calculated by dividing the unit fluorescent intensity of the cleaved band at 900 bp by the sum of the values for the non-cleaved band at 1200 bp and the cleaved band at 900 bp.\n\n### Zebrafish husbandry\n\nAll zebrafish (Danio rerio) husbandry and experiments were approved by the Massachusetts General Hospital Subcommittee on Research Animal Care and performed under the guidelines of the Institutional Animal Care and Use Committee at the Massachusetts General Hospital (Protocol #2005N000025).\n\n### Zebrafish gene editing with Cas9 and PE2\n\nMicroinjections were performed using the one-cell stage of TuAB zebrafish embryos. Each embryo was injected with 2 nl of the RNP mixture at a Cas9 or PE2 protein to gRNA or pegRNA molar ratio of 1:2 (750 ng/\u00b5l of PE2 with 240 ng/\u00b5l of pegRNA, Figure 2; 500 ng/\u00b5l of Cas9 with 3 mixed pegRNAs of 80 ng/\u00b5l each, Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 3) and immediately transferred to an incubator at 32 \u00b0C for PE2 and 28.5 \u00b0C for Cas9. For Figure 1b, six gRNAs, pegRNAs with a 10-nt PBS (pegRNA-PBS10), or pegRNAs with a 13-nt PBS (pegRNA-PBS13) were pooled together and mixed with Cas9 (20 ng/\u00b5l of each gRNA and 25 ng/\u00b5l of each pegRNA; Cas9 to gRNA/pegRNA molar ratio of 1:2) and injected as described above. One day post-fertilization, between five and ten embryos that developed normally from each condition were pooled and lysed in 10 mM Tris-HCl pH 8.0, 2 mM EDTA pH 8.0, 0.2% Triton X-100 and 100 \u03bcg ml\u20131 Proteinase K (5\u20136 \u03bcl of lysis buffer/embryo). Lysates were incubated at 50 \u00b0C overnight with occasional mixing, heated at 95 \u00b0C for 10 min to inactive Proteinase K, and stored at 4 \u00b0C.\n\n### Targeted deep sequencing\n\nAmplicons for targeted sequencing were generated in two PCR steps. In the first step (PCR1), regions containing the target sites were amplified from 1 \u03bcl of the zebrafish embryo lysate, using touchdown PCR with Phusion High-Fidelity Polymerase (NEB, no. M0530S) and primers containing partial sequencing adapters (Supplementary file 5). For some samples, the products of PCR1 were purified using the Monarch PCR & DNA Cleanup Kit (New England Biolabs, no. T1030L) and deep sequenced at the MGH DNA Core. For the rest of the samples, the products of PCR1 were diluted 200-fold with water and used in the second PCR step (PCR2), where Illumina barcodes and P5/P7 sequences were attached to PCR1 products. The PCR2 product yield was assessed by agarose gel electrophoresis and pooled together in equal amounts. The PCR2 product pools were subjected to three steps of purification with the Monarch PCR & DNA Cleanup Kit (New England Biolabs, no. T1030L), Gel DNA Recover Kit (Zymoclean, no.11\u2013300 C), and paramagnetic beads (1:1 beads/sample) using the same purification protocol as with AMPure XP beads (Beckman Coulter, no. B37419AB). The product purity was assessed via capillary electrophoresis on a QIAxcel instrument (Qiagen) and quantified by spectrophotometry (NanoDrop). The resulting sequencing libraries were sequenced using the MiSeq system (Illumina v.2 kit, 2\u00d7150 bp).\n\n### Deep sequencing analysis\n\nSequencing data were analyzed with CRISPResso2 (Clement et al., 2019). Cas9 nuclease-treated samples were analyzed using Cas9 mode with a 5 bp quantification window size. PE-treated samples were analyzed using Prime editor mode with a 5 bp quantification window size and a 5 bp pegRNA extension quantification window size. CRISPResso2 was run with quality filtering (only those reads with an average quality score \u226530 were considered).\n\n### Statistical analysis\n\nFor all bar graphs, mean and s.e.m. (only for samples with n>2) were calculated and plotted using GraphPad Prism v.8. Statistical analysis of the significance level was conducted using an unpaired two-tailed t-test with equal variance in Microsoft Excel version 2301.\n",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "22601320-c177-4e37-96e5-3c7e2d15da92",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Filippo Del Bene, Institut de la Vision France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90948.2.sa0](https://doi.org/10.7554/eLife.90948.2.sa0)\n\nThis useful paper reports on two simple methods for improving the efficiency of prime editing, a prominent gene editing technique. In combination with published modifications, the strategies described in this study may lead to significant improvements in editing efficiencies. The data are solid, and the methods will be of broad interest to anyone using gene editing.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90948.2.sa1](https://doi.org/10.7554/eLife.90948.2.sa1)\n\nSummary: This work by Zhang et al. provides new strategies to improve the efficiency of precise Prime Editing (PE) in zebrafish embryos. The authors test how two simple changes impact PE efficiency: first, by refolding the pegRNA before complexing with Cas9 nickase-reverse transcriptase PE2, and second, by introducing mutations to the pegRNA intended to reduce its autoinhibitory activity by disrupting complementarity between the 5' spacer sequence and the 3' PBS-RTT (Primer Binding Site-Reverse Transcriptase Template).\n\nStrengths: The authors tested multiple loci in the zebrafish genome to determine how pegRNA refolding and point mutations in the RTT would impact overall mutagenesis efficiency and precise PE at the target sites. The impact on efficiency was tested with three types of pegRNAs designed to introduce base substitutions, insertions or deletions. Next-generation sequencing of amplicons from pooled, injected embryos provided robust measurement of mutagenesis and editing. Insertion and deletion pegRNAs were overall more efficient than substitution pegRNAs, which may be useful information in considering experimental design strategy for introducing a specific variant. There is potential for further improvement by combining the authors' methods with previously published strategies to improve pegRNAs through design and chemical modification.\n\nWeaknesses: The observed increases in the frequency of precise PE were relatively minor and inconsistent across the multiple pegRNAs tested. The substitution pegRNAs showed very low precise PE, at levels less than 1 percent, therefore the fold changes reported were still representative of 10 percent or less of overall edits. Overall mutagenesis frequency, as measured by indel formation, increased along with increased precise PE. The approach produces highly genetically mosaic embryos, therefore the utility for transient studies in injected zebrafish embryos is unclear. Data on improved germline transmission frequency of precise PE alleles would strengthen the study and be of wide interest in the zebrafish community.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90948.2.sa2](https://doi.org/10.7554/eLife.90948.2.sa2)\n\nPrime editing is a major gene editing technique because it allows for the introduction of all possible substitutions, as well as small insertions and deletions, without causing double strand breaks. However, its efficiency is often limited. In a previous study, the authors showed that prime editing could be performed in zebrafish using recombinant PE2 protein and pegRNAs generated by in vitro transcription, but at many of the sites tested, gene editing efficiency remained relatively low.\n\nIn this current paper, the authors find that when pegRNAs were combined with Cas9, many induced much less indels than their corresponding guide RNAs and propose that this is due to the complementarity between the 5' and 3' regions of pegRNAs. Two methods aiming to reduce the resulting circularization of pegRNAs were next shown to increase the efficiency of prime editing: a slow refolding protocol (which was previously shown to be useful for inefficient guide RNAs), and the introduction of a substitution at position +2 of the reverse transcriptase template sequence. The data obtained and analyzed is solid and convincing.\n\nThese methods are remarkably straightforward and proved beneficial for most of the pegRNAs tested. Consequently, they represent important advances for the prime editing technique.\n\nIt should be noted, however, that despite these advances, prime editing activity remained relatively low for a significant proportion of pegRNAs tested (with less than 2% sequencing reads exhibiting the expected sequence change). This shows that further improvements are still needed for this important gene editing technique.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90948.2.sa3](https://doi.org/10.7554/eLife.90948.2.sa3)\n\nIn this study, Weiting Zhang et al., improved the editing efficiency of prime editor by reducing misfolded pegRNA interactions, and the improvement of efficiency for prime editor helped to expand its application range. It is a research paper on technology improvement. This study is somewhat innovative.\n",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "29bfafbe-faa6-4025-90ff-5e49affcc6e8",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C1",
+      "claim": "CRISPR prime editing (PE) requires a Cas9 nickase-reverse transcriptase fusion protein (known as PE2) and a prime editing guide RNA (pegRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR prime editing (PE) requires a Cas9 nickase-reverse transcriptase fusion protein (known as PE2) and a prime editing guide RNA (pegRNA), an extended version of a standard guide RNA (gRNA) that both specifies the intended target genomic sequence and encodes the desired genetic edit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about PE technology that is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "9d891beb-408c-4061-9e1c-be2b3212d4ce",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C2",
+      "claim": "pegRNA is an extended version of a standard guide RNA (gRNA) that both specifies the intended target genomic sequence and encodes the desired genetic edit.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPR prime editing (PE) requires a Cas9 nickase-reverse transcriptase fusion protein (known as PE2) and a prime editing guide RNA (pegRNA), an extended version of a standard guide RNA (gRNA) that both specifies the intended target genomic sequence and encodes the desired genetic edit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about pegRNA structure and function that is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "b885c1fb-8e58-468e-a552-63ef3c6ca112",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C3",
+      "claim": "Sequence complementarity between the 5' and the 3' regions of a pegRNA can negatively impact its ability to complex with Cas9.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that sequence complementarity between the 5' and the 3' regions of a pegRNA can negatively impact its ability to complex with Cas9, thereby potentially reducing PE efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from in vitro competition assays and zebrafish experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "a355f347-45f7-4fd3-a192-476ad3370922",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C4",
+      "claim": "Sequence complementarity between the 5' and the 3' regions of a pegRNA can potentially reduce PE efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that sequence complementarity between the 5' and the 3' regions of a pegRNA can negatively impact its ability to complex with Cas9, thereby potentially reducing PE efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that reduced Cas9 binding leads to reduced editing efficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c5d4ef2d-8b0b-4fe5-be86-b6a316bce355",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C5",
+      "claim": "A simple pegRNA refolding procedure can improve ribonucleoprotein-mediated PE efficiencies in zebrafish embryos by up to nearly 25-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate this limitation can be overcome by a simple pegRNA refolding procedure, which improved ribonucleoprotein-mediated PE efficiencies in zebrafish embryos by up to nearly 25-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "539c3e65-b148-4df7-af4c-875232e0b8be",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C6",
+      "claim": "Introducing point mutations designed to disrupt internal interactions within the pegRNA can achieve further gains in PE efficiencies of as much as sixfold.",
+      "claim_type": "EXPLICIT",
+      "source": "Further gains in PE efficiencies of as much as sixfold could also be achieved by introducing point mutations designed to disrupt internal interactions within the pegRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2c and 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "59450c1a-d212-4ca3-8b22-8518ec939e63",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C7",
+      "claim": "PE enables programmable installation of any nucleotide substitution and small insertions/deletions without requiring a DNA donor template or the introduction of DNA double-strand breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "PE is a versatile gene-editing technology that enables programmable installation of any nucleotide substitution and small insertions/deletions without requiring a DNA donor template or the introduction of DNA double-strand breaks (Anzalone et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Anzalone et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "20654ac8-da3c-4573-9eb2-404b828930e6",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C8",
+      "claim": "PE utilizes a Cas9 nickase (nCas9)-reverse transcriptase (RT) fusion protein called PE2 and a prime editing guide RNA (pegRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "It utilizes a Cas9 nickase (nCas9)-reverse transcriptase (RT) fusion protein called PE2 and a prime editing guide RNA (pegRNA, Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a definitional statement about PE components that is established knowledge and illustrated in Figure 1a.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "cca499f6-00ac-4188-80be-b9232493c91a",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C9",
+      "claim": "The pegRNA directs nCas9 to the target DNA site specified by the 5' spacer sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Like a gRNA, the pegRNA directs nCas9 to the target DNA site specified by the 5' spacer sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about how pegRNA functions in PE.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "2371ca91-1f53-45a8-a7da-55c882488563",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C10",
+      "claim": "The non-target DNA strand nicked by nCas9 anneals to a complementary primer binding site (PBS) at the 3' end of the pegRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-target DNA strand nicked by nCas9 then anneals to a complementary primer binding site (PBS) at the 3' end of the pegRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of PE based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5170a2d5-2a72-4483-9816-14cc826de976",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C11",
+      "claim": "The reverse transcriptase template (RTT) encoded in the pegRNA is reverse transcribed by the PE2 RT generating a 3' DNA 'flap' that encodes the desired edit.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the adjacent reverse transcriptase template (RTT) also encoded in the pegRNA is reverse transcribed by the PE2 RT generating a 3' DNA 'flap' that encodes the desired edit (Anzalone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of PE supported by citation to Anzalone et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c0f6c061-b240-4532-b7fe-c6c1f2c602b3",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C12",
+      "claim": "PE has been successfully employed in mammalian cells, plants, Drosophila, zebrafish and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Although PE has been successfully employed in mammalian cells, plants, Drosophila, zebrafish and mice, the editing efficiencies observed are generally lower than those observed with other forms of CRISPR/Cas-based editing (e.g. nucleases and base editors; Anzalone et al., 2019; Bosch et al., 2021; Petri et al., 2022; Lin et al., 2020; Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "99cd0ef9-e187-4d30-b50c-d18738baae51",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C13",
+      "claim": "The editing efficiencies observed with PE are generally lower than those observed with other forms of CRISPR/Cas-based editing (e.g. nucleases and base editors).",
+      "claim_type": "EXPLICIT",
+      "source": "Although PE has been successfully employed in mammalian cells, plants, Drosophila, zebrafish and mice, the editing efficiencies observed are generally lower than those observed with other forms of CRISPR/Cas-based editing (e.g. nucleases and base editors; Anzalone et al., 2019; Bosch et al., 2021; Petri et al., 2022; Lin et al., 2020; Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5a582066-039f-405d-91f6-aecd338b5808",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C14",
+      "claim": "Lower indel frequencies were observed with pegRNAs than with their matched gRNAs across all six target spacer sites tested in zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that across all six target spacer sites, lower indel frequencies were observed with pegRNAs than with their matched gRNAs (Figure 1b), suggesting that the presence of the 3' extension in a pegRNA decreases Cas9-induced gene editing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "27987870-8e37-4dcf-b2ec-1a5a7f8c76f1",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C15",
+      "claim": "The presence of the 3' extension in a pegRNA decreases Cas9-induced gene editing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that across all six target spacer sites, lower indel frequencies were observed with pegRNAs than with their matched gRNAs (Figure 1b), suggesting that the presence of the 3' extension in a pegRNA decreases Cas9-induced gene editing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental observation that pegRNAs show lower indel frequencies than matched gRNAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "b9f33a1d-c1ed-450d-9ee7-497506954b94",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C16",
+      "claim": "Interactions between complementary sequences in the 5' spacer and 3' PBS and RTT might cause misfolding of pegRNAs in a way that decreases their abilities to complex with Cas9 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential explanation for the lower Cas9 activities we observed with pegRNAs compared with standard gRNAs is that interactions between complementary sequences in the 5' spacer and 3' PBS and RTT might cause misfolding of pegRNAs in a way that decreases their abilities to complex with Cas9 protein (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis proposed by the authors and illustrated in Figure 1c.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "4b1d37fc-d2ed-4338-9cba-af92ed57fbd1",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C17",
+      "claim": "Internal interactions between bases in standard gRNAs can stabilize alternative non-functional folding and low SpCas9-induced mutation efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "This possibility seemed likely given that previous work has shown that even shorter length internal interactions between bases in standard gRNAs can stabilize alternative non-functional folding and low SpCas9-induced mutation efficiencies (Thyme et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Thyme et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5fff13a1-826a-4774-ba59-c908e49eb0ad",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C18",
+      "claim": "In all four cases tested, gRNAs could efficiently compete with the EGFP-targeted gRNA for binding to Cas9, whereas the pegRNAs were substantially and significantly reduced in this capability.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay, we compared matched gRNAs and pegRNAs targeted to four different genomic DNA sites, gpr78a, adgrf3b, cacng2b and gpr85 and found that in all four cases the gRNAs could efficiently compete with the EGFP-targeted gRNA for binding to Cas9 (as judged by reduced cleavage of the EGFP DNA target site template), whereas the pegRNAs were substantially and significantly reduced in this capability (Figure 1e and f; Figure 1\u2014source data 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "b8570060-5395-47b5-88e8-de6125b49310",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C19",
+      "claim": "Introducing three point mutations in the 3' PBS region of pegRNAs showed significant increases in their competitive Cas9-binding activities.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this reduced Cas9-binding capability of the pegRNAs might be caused in part by their 5' vs 3' complementarity, we performed additional in vitro experiments with matched pegRNAs in which we introduced three point mutations in the 3' PBS region of the pegRNAs (Figure 1\u2014source data 3) and found that these mutated pegRNAs showed significant increases in their competitive Cas9-binding activities (Figure 1e and f; Figure 1\u2014source data 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "ffc905c9-8947-4a30-b456-5e7f2438170c",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C20",
+      "claim": "Refolding low-activity gRNAs believed to have alternative folding configurations can significantly improve their abilities to mediate Cas9-induced indels.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered this hypothesis because it has been previously shown that refolding low-activity gRNAs believed to have alternative folding configurations can significantly improve their abilities to mediate Cas9-induced indels (Thyme et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Thyme et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "011f77bf-2ccd-44f1-bbe1-cb8817d86083",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C21",
+      "claim": "Subjecting pegRNAs to a refolding procedure consisting of heat denaturation followed by slow cooling significantly improved their abilities to bind Cas9 in the in vitro DNA cleavage competition assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that subjecting pegRNAs to a refolding procedure consisting of heat denaturation followed by slow cooling (Materials and methods) significantly improved their abilities to bind Cas9 in the in vitro DNA cleavage competition assay (although not to levels observed with matched standard gRNAs Figure 1e and f; Figure 1\u2014source data 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "b1a28b88-d368-4024-9854-abe7cc2ffc83",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C22",
+      "claim": "Refolded pegRNAs did not reach Cas9-binding levels observed with matched standard gRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that subjecting pegRNAs to a refolding procedure consisting of heat denaturation followed by slow cooling (Materials and methods) significantly improved their abilities to bind Cas9 in the in vitro DNA cleavage competition assay (although not to levels observed with matched standard gRNAs Figure 1e and f; Figure 1\u2014source data 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "7f3c0dad-3857-418b-92ae-5c4586bd2bf4",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C23",
+      "claim": "Re-folding of pegRNAs prior to formation and injection of pegRNA-Cas9 ribonucleoprotein complexes into zebrafish embryos increased Cas9-mediated indel frequencies by up to 2.8-fold for four of the seven target sites tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we also observed that re-folding of pegRNAs prior to formation and injection of pegRNA-Cas9 ribonucleoprotein complexes into zebrafish embryos also increased Cas9-mediated indel frequencies by up to 2.8-fold for four of the seven target sites tested (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "7df86dab-981e-4a1b-9881-58ffe970ae97",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C24",
+      "claim": "Refolding prior to embryo injection significantly increased the frequencies of pure PE for nine of 17 pegRNAs tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that refolding prior to embryo injection significantly increased the frequencies of pure PE (defined as the alleles containing only the pegRNA-specified edits without any other mutations) frequencies for nine of these 17 pegRNAs (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "7147fc5b-9991-4b6f-9bac-628aa0ceda10",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C25",
+      "claim": "Pure PE is defined as the alleles containing only the pegRNA-specified edits without any other mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that refolding prior to embryo injection significantly increased the frequencies of pure PE (defined as the alleles containing only the pegRNA-specified edits without any other mutations) frequencies for nine of these 17 pegRNAs (Figure 2a and b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement provided by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "0e7634bf-e560-4751-9817-0002e35c69c4",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C26",
+      "claim": "Significant increases in pure PE were observed with seven of 12 pegRNAs designed to introduce base substitutions (increases ranging from 2.6- to 24.7-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Significant increases were observed with seven of 12 pegRNAs designed to introduce base substitutions (increases ranging from 2.6- to 24.7-fold; Figure 2a) and 2 of 3 pegRNAs designed to create insertion pegRNAs (increases ranging from 1.7- to 4.6-fold; Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "d8e8f6c0-681e-4428-8b51-644d79dbee24",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C27",
+      "claim": "Significant increases in pure PE were observed with 2 of 3 pegRNAs designed to create insertion pegRNAs (increases ranging from 1.7- to 4.6-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Significant increases were observed with seven of 12 pegRNAs designed to introduce base substitutions (increases ranging from 2.6- to 24.7-fold; Figure 2a) and 2 of 3 pegRNAs designed to create insertion pegRNAs (increases ranging from 1.7- to 4.6-fold; Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "6ee73d9e-8a79-4b21-9905-51db366d0978",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C28",
+      "claim": "No significant increases in PE efficiencies were observed with the two pegRNAs designed to induce deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe significant increases in PE efficiencies with the two pegRNAs designed to induce deletions (Figure 2b), perhaps due relatively lower degree of complementarity between the 5' spacer and 3' RTT because of the deletion encoded in the latter region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5841daca-f744-4eda-81c9-d61d7fe0043a",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C29",
+      "claim": "The lack of significant increases in PE efficiencies with deletion pegRNAs may be due to relatively lower degree of complementarity between the 5' spacer and 3' RTT because of the deletion encoded in the latter region.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe significant increases in PE efficiencies with the two pegRNAs designed to induce deletions (Figure 2b), perhaps due relatively lower degree of complementarity between the 5' spacer and 3' RTT because of the deletion encoded in the latter region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation proposed by the authors for their observation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "71b00d61-60e8-4b6e-8d63-1cbd4dd6f31e",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C30",
+      "claim": "Increases in pure PE frequencies due to re-folding were accompanied by significant increases in non-pure PE frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, increases in pure PE frequencies due to re-folding were accompanied by significant increases in non-pure PE frequencies (Figure 2\u2014figure supplement 1a, b) and therefore PE purity values (defined as the percentage of pure PE edits out of total edits) did not show significant differences for most of the pegRNAs we assessed (Figure 2\u2014figure supplement 1c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1a, b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "629b41a5-1a9b-42b0-843f-9b8f6245e425",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C31",
+      "claim": "PE purity is defined as the percentage of pure PE edits out of total edits.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, increases in pure PE frequencies due to re-folding were accompanied by significant increases in non-pure PE frequencies (Figure 2\u2014figure supplement 1a, b) and therefore PE purity values (defined as the percentage of pure PE edits out of total edits) did not show significant differences for most of the pegRNAs we assessed (Figure 2\u2014figure supplement 1c, d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement provided by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "a2528774-bc8d-46cf-a0ef-197bb24e43e4",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C32",
+      "claim": "PE purity values did not show significant differences for most of the pegRNAs assessed after refolding.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, increases in pure PE frequencies due to re-folding were accompanied by significant increases in non-pure PE frequencies (Figure 2\u2014figure supplement 1a, b) and therefore PE purity values (defined as the percentage of pure PE edits out of total edits) did not show significant differences for most of the pegRNAs we assessed (Figure 2\u2014figure supplement 1c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5533f096-f078-4552-a0b8-47144fbe2c20",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C33",
+      "claim": "Two scn2b substitution pegRNAs showed significantly improved PE purities with re-folding.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exceptions were two scn2b substitution pegRNAs that actually showed significantly improved PE purities with re-folding and the cacng2b deletion pegRNA that showed significantly reduced PE purity with refolding (Figure 2\u2014figure supplement 1c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "26d1d1cb-54ae-4e30-afab-cf6a9c2c61f0",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C34",
+      "claim": "The cacng2b deletion pegRNA showed significantly reduced PE purity with refolding.",
+      "claim_type": "EXPLICIT",
+      "source": "The only exceptions were two scn2b substitution pegRNAs that actually showed significantly improved PE purities with re-folding and the cacng2b deletion pegRNA that showed significantly reduced PE purity with refolding (Figure 2\u2014figure supplement 1c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1c, d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "732a0c54-f884-42bc-85c0-2662658142aa",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C35",
+      "claim": "PegRNAs harboring mutations at the RTT +1 and +2 positions could make PE more efficient than their unmutated pegRNA counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Following re-folding, complexation with PE2, and injection into zebrafish embryos, we found that pegRNAs harboring mutations at the RTT + 1 and+2 positions could make PE more efficient than their unmutated pegRNA counterparts (Figure 2c and Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2c and Figure 2\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5901de0c-29a3-467c-a654-6c6dae868449",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C36",
+      "claim": "A mutation at the RTT +2 position increased mean pure PE frequencies in all five cases tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we introduced a mutation at the RTT + 2 position in five additional pegRNAs specifying a single edit and found that the mutation increased mean pure PE frequencies in all five cases (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "78c5de12-ce8f-4c9c-b608-60ed3e9333e1",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C37",
+      "claim": "Three of the five mutated pegRNAs with RTT +2 mutations showed statistically significant increases in pure PE frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the five mutated pegRNAs showed statistically significant increases in pure PE frequencies and two of these three pegRNAs also showed significant increases in non-pure PE frequencies (Figure 2d and Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "b92fba72-96c1-4d53-bdb3-3c6a32a05dc1",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C38",
+      "claim": "Two of the three pegRNAs with significant increases in pure PE frequencies also showed significant increases in non-pure PE frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the five mutated pegRNAs showed statistically significant increases in pure PE frequencies and two of these three pegRNAs also showed significant increases in non-pure PE frequencies (Figure 2d and Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2d and Figure 2\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "9ab52a37-806c-4515-a8e9-1d18abfdf00e",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C39",
+      "claim": "A mutation at the RTT +2 position increased pure PE frequency up to 6.7-fold (mean 2.4-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, a mutation at the RTT + 2 position increased pure PE frequency up to 6.7-fold (mean 2.4-fold; Figure 2c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "506ada62-3246-4d2f-93b1-b4b6a5af8c45",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C40",
+      "claim": "PE purity was unchanged except for one pegRNA (cacng2b) that showed a modest but statistically significant increase with RTT +2 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "PE purity was unchanged except for one pegRNA (cacng2b) that showed a modest but statistically significant increase (Figure 2\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5bdea58d-c390-435f-a709-3ed993e0daa6",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C41",
+      "claim": "Three re-folded pegRNAs harboring the RTT +2 mutations all induced higher indel frequencies with SpCas9 nuclease in zebrafish embryos than matched re-folded pegRNAs without the RTT +2 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing of three re-folded pegRNAs harboring the RTT + 2 mutations showed that they all induced higher indel frequencies with SpCas9 nuclease in zebrafish embryos than matched re-folded pegRNAs without the RTT + 2 mutations (Figure 2\u2014figure supplement 3), suggesting that the +2 mutations function to enhance the abilities of these pegRNAs to form functional complexes with Cas9 protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "6004aa24-a2bf-4b3b-b784-13579bf4c3dd",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C42",
+      "claim": "The RTT +2 mutations function to enhance the abilities of pegRNAs to form functional complexes with Cas9 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing of three re-folded pegRNAs harboring the RTT + 2 mutations showed that they all induced higher indel frequencies with SpCas9 nuclease in zebrafish embryos than matched re-folded pegRNAs without the RTT + 2 mutations (Figure 2\u2014figure supplement 3), suggesting that the +2 mutations function to enhance the abilities of these pegRNAs to form functional complexes with Cas9 protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that RTT +2 mutations increase indel frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "572c7801-974c-4aa6-866b-c5b2b4819af1",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C43",
+      "claim": "Delivery of PE components as RNP complexes offers multiple potential advantages relative to DNA or RNA delivery (e.g. increased efficiency, reduced off-target effects, and avoiding risk of integration events).",
+      "claim_type": "EXPLICIT",
+      "source": "Delivery of PE components as RNP complexes offers multiple potential advantages relative to DNA or RNA delivery (e.g. increased efficiency, reduced off-target effects, and avoiding risk of integration events; Kim et al., 2014; Raguram et al., 2022; Burger et al., 2016; Kanchiswamy, 2016; Svitashev et al., 2016; Wang et al., 2020; Ponnienselvan et al., 2023) and we show that combining pegRNA re-folding with the introduction of point mutations at the RTT +1 or+2 position can increase RNP-induced pure PE frequencies by as much as 29-fold in zebrafish embryos (Figure 1, Figure 2 and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c84f4091-4550-4db4-ac73-6fa1774088a5",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C44",
+      "claim": "Combining pegRNA re-folding with the introduction of point mutations at the RTT +1 or +2 position can increase RNP-induced pure PE frequencies by as much as 29-fold in zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Delivery of PE components as RNP complexes offers multiple potential advantages relative to DNA or RNA delivery (e.g. increased efficiency, reduced off-target effects, and avoiding risk of integration events; Kim et al., 2014; Raguram et al., 2022; Burger et al., 2016; Kanchiswamy, 2016; Svitashev et al., 2016; Wang et al., 2020; Ponnienselvan et al., 2023) and we show that combining pegRNA re-folding with the introduction of point mutations at the RTT +1 or+2 position can increase RNP-induced pure PE frequencies by as much as 29-fold in zebrafish embryos (Figure 1, Figure 2 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1, Figure 2 and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5057939d-1197-4f7f-a0aa-a4d412909133",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C45",
+      "claim": "RNP-mediated PE functions in both zebrafish embryos and cultured human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous results showing that RNP-mediated PE functions in both zebrafish embryos and cultured human cells (Petri et al., 2022) suggest that these simple strategies should likely improve PE in other settings such as human and other cell types as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Petri et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c2c3aebf-a0fc-4e1d-9edd-4dd409baf040",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C46",
+      "claim": "The simple strategies of pegRNA refolding and RTT mutations should likely improve PE in other settings such as human and other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous results showing that RNP-mediated PE functions in both zebrafish embryos and cultured human cells (Petri et al., 2022) suggest that these simple strategies should likely improve PE in other settings such as human and other cell types as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on prior results in zebrafish and human cells.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "533069c7-69b5-409c-a036-909b1df7a92c",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C47",
+      "claim": "The introduction of RTT mutations to reduce pegRNA 5' and 3' complementarity can be used when practicing PE technology using non-RNP-delivery methods such as DNA or RNA transfection, transduction, and/or injection.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of RTT mutations to reduce pegRNA 5' and 3' complementarity can also be used when practicing PE technology using non-RNP-delivery methods such as DNA or RNA transfection, transduction, and/or injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the applicability of the RTT mutation strategy to other delivery methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "8edf8778-40a5-4c0b-a674-07a3f4eadd49",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C48",
+      "claim": "Li et al., 2022 reported that introducing additional mutations in the RTT +1 to +3 positions can enhance PE efficiency in human cells via DNA transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Li et al., 2022 have reported that introducing additional mutations in the RTT +1 to+3 positions can also enhance PE efficiency in human cells via DNA transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Li et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5179c2b5-820a-454c-8db3-7b17b96f7640",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C49",
+      "claim": "One important consideration in using the RTT mutation strategy is to ensure that the additional change introduced is either silent (if in a coding region) or otherwise benign in its effect.",
+      "claim_type": "EXPLICIT",
+      "source": "One important consideration in using the RTT mutation strategy is to ensure that the additional change introduced is either silent (if in a coding region) or otherwise benign in its effect (Li et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical consideration supported by citation to Li et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "39458097-3e34-4166-8821-e95a6dd23b38",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C50",
+      "claim": "Ponnienselvan et al., 2023 reported that 3' truncated pegRNAs are preferentially loaded onto Cas9 and the prime editor protein, potentially due to reduced pegRNA 5'\u20133' interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Corroborating our findings, Ponnienselvan et al., 2023 recently reported that 3' truncated pegRNAs are preferentially loaded onto Cas9 and the prime editor protein, potentially due to reduced pegRNA 5'\u20133' interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ponnienselvan et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "d493bab4-98f1-4f1d-9ef5-381e1b33efea",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C51",
+      "claim": "Adding various structured RNA motifs to the 3' termini of pegRNAs can improve PE efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although beyond the scope of this current work, it will be interesting to explore whether pegRNA re-folding and/or RTT mutation might be combined with other previously described strategies for improving PE efficiencies (e.g. adding various structured RNA motifs to the 3' termini of pegRNAs Nelson et al., 2022; Zhang et al., 2022 or PE proteins with improved architectures and activities Nelson et al., 2022; Doman et al., 2022; Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nelson et al., 2022 and Zhang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "505a4f34-98ee-40cf-bd69-508ec026d919",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C52",
+      "claim": "PE proteins with improved architectures and activities can improve PE efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although beyond the scope of this current work, it will be interesting to explore whether pegRNA re-folding and/or RTT mutation might be combined with other previously described strategies for improving PE efficiencies (e.g. adding various structured RNA motifs to the 3' termini of pegRNAs Nelson et al., 2022; Zhang et al., 2022 or PE proteins with improved architectures and activities Nelson et al., 2022; Doman et al., 2022; Liu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nelson et al., 2022; Doman et al., 2022; Liu et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "a2788835-e356-40f4-bff5-fcd13c3541a8",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C53",
+      "claim": "The length and base composition of pegRNA PBS and RTT sequences can influence PE efficiency for any given target spacer site.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that the length and base composition of pegRNA PBS and RTT sequences can influence PE efficiency for any given target spacer site (Ponnienselvan et al., 2023; Kim et al., 2021; Li et al., 2021; Lin et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "e3902d19-211d-405c-93dd-a81deefc4bf3",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C54",
+      "claim": "Internal complementarity between the 5' spacer and 3' PBS/RTT regions of the pegRNA is an additional parameter to be considered when designing and testing various combinations to optimize PE activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work adds another parameter (internal complementarity between the 5' spacer and 3' PBS/RTT regions of the pegRNA) to be considered as one designs and tests various combinations to optimize PE activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "25fcb325-7ea5-46b8-b8d0-d06bbefa554f",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C55",
+      "claim": "Accounting for internal complementarity may impact the nature of spacer sequences that can efficiently be targeted (e.g. higher GC content and/or melting temperature may actually be undesirable).",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for this additional consideration may impact the nature of spacer sequences that can efficiently be targeted (e.g. higher GC content and/or melting temperature may actually be undesirable) and the length and composition of PBS/RTT sequences that can be used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "11f8e5f8-5200-4bce-b9d2-5e9ecccd882d",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C56",
+      "claim": "Accounting for internal complementarity may impact the length and composition of PBS/RTT sequences that can be used.",
+      "claim_type": "EXPLICIT",
+      "source": "Accounting for this additional consideration may impact the nature of spacer sequences that can efficiently be targeted (e.g. higher GC content and/or melting temperature may actually be undesirable) and the length and composition of PBS/RTT sequences that can be used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c0f1ac2e-18b2-43f0-8281-bd23283e4e2d",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C57",
+      "claim": "The generation of larger datasets of optimized pegRNAs and consideration of all parameters that can influence pegRNA activities (including internal complementarity) may yield improved rules and software for in silico design in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "We envision that the generation of larger datasets of optimized pegRNAs and consideration of all the parameters that can influence pegRNA activities (including internal complementarity) may yield improved rules and software for in silico design in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "0fc3c89c-0fef-4d2c-8a94-718546c8c354",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C58",
+      "claim": "The DNA templates for in vitro transcription were constructed by one-step PCR, using a C9E constant oligonucleotide containing the enhanced SpCas9 scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA templates for in vitro transcription were constructed by one-step PCR, using a C9E constant oligonucleotide containing the enhanced SpCas9 scaffold (Petri et al., 2022), forward primer carrying the SP6 promoter and target-specific spacer, and the reverse primer with the 3' extension containing the primer binding site and RTT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description supported by citation to Petri et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "0218934b-bb3c-4fa4-a6ee-1af605550d17",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C59",
+      "claim": "PegRNAs in water were refolded by heating at 98 \u00b0C for 2 min and slowly cooling down at a rate of \u20130.1 \u00b0C per second to 30 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "PegRNAs in water were refolded by heating at 98 \u00b0C for 2 min and slowly cooling down at a rate of \u20130.1 \u00b0C per second to 30 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the refolding procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "f7ad3ade-dee8-4c63-82c0-799658e367b6",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C60",
+      "claim": "Refolded pegRNAs were immediately added to the SpCas9 or PE2 protein, mixed gently, and followed by a 10 min incubation at 30 \u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Refolded pegRNAs were immediately added to the SpCas9 or PE2 protein, mixed gently, spun for 10 s at 6000 RPM in a mini centrifuge (Fisherbrand), and followed by a 10 min incubation at 30 \u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the RNP complexation procedure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "3d169a5f-5e1c-4978-ba54-c1713937b34f",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "claim_id": "C61",
+      "claim": "All zebrafish husbandry and experiments were approved by the Massachusetts General Hospital Subcommittee on Research Animal Care and performed under the guidelines of the Institutional Animal Care and Use Committee at the Massachusetts General Hospital (Protocol #2005N000025).",
+      "claim_type": "EXPLICIT",
+      "source": "All zebrafish (Danio rerio) husbandry and experiments were approved by the Massachusetts General Hospital Subcommittee on Research Animal Care and performed under the guidelines of the Institutional Animal Care and Use Committee at the Massachusetts General Hospital (Protocol #2005N000025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript describes the basic mechanism and components of CRISPR prime editing (PE), including the PE2 fusion protein and pegRNA structure and function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7-C11 are definitional statements about PE technology that represent established knowledge in the field, supported by appropriate citations (Anzalone et al., 2019, 2020). These provide necessary background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "4c5cfcb6-89b1-459b-87d4-ec73c6dc38ec",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PE has been successfully employed across multiple model systems but generally shows lower editing efficiencies compared to other CRISPR/Cas-based editing methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C13 are supported by multiple citations to prior work (Anzalone et al., 2019; Bosch et al., 2021; Petri et al., 2022; Lin et al., 2020; Liu et al., 2020), establishing the motivation for improving PE efficiency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "6cab8322-3c75-4881-8554-a6276dbdc068",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PegRNAs show reduced Cas9 binding and lower indel frequencies compared to standard gRNAs, potentially due to misfolding caused by complementarity between the 5' spacer and 3' PBS/RTT regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 are supported by experimental data from zebrafish embryo injections (Figure 1b) and in vitro competition assays (Figure 1e-f). The hypothesis of misfolding (C16) is supported by prior work (Thyme et al., 2016, C17) and validated by experiments showing that PBS mutations increase Cas9 binding (C19).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Refolding pegRNAs through heat denaturation and slow cooling significantly improves their ability to bind Cas9 and increases Cas9-mediated indel frequencies in zebrafish embryos, though not to levels of standard gRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C20-C23 are supported by in vitro competition assay data (Figure 1e-f) and zebrafish experiments (Figure 1\u2014figure supplement 1). The refolding strategy is based on prior work (Thyme et al., 2016, C20) and shows consistent improvements across multiple target sites, with increases up to 2.8-fold for Cas9-mediated indels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Refolding pegRNAs prior to embryo injection significantly increases pure prime editing frequencies for 9 of 17 pegRNAs tested, with improvements ranging from 1.7- to 24.7-fold for substitutions and insertions, but not for deletions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C24-C28 are supported by experimental data in Figure 2a-b showing significant increases in pure PE frequencies for 7 of 12 substitution pegRNAs and 2 of 3 insertion pegRNAs. The lack of improvement for deletion pegRNAs (C28) is documented, though the explanation (C29) is speculative. Statistical significance is reported with appropriate tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5e99591c-31f0-499d-8df0-97ea961fb3a4",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Increases in pure PE frequencies from refolding are generally accompanied by increases in non-pure PE frequencies, resulting in unchanged PE purity for most pegRNAs, with exceptions for two scn2b pegRNAs (improved purity) and one cacng2b pegRNA (reduced purity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by data in Figure 2\u2014figure supplement 1a-d. The observation that PE purity (defined in C31) remains largely unchanged despite increased pure PE frequencies is clearly documented, with specific exceptions noted and statistically validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Introducing point mutations at RTT +1 and +2 positions to disrupt internal complementarity increases pure PE frequencies, with RTT +2 mutations showing improvements in all five tested cases (up to 6.7-fold, mean 2.4-fold) and statistical significance in three cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35-C40 are supported by experimental data in Figure 2c-d and Figure 2\u2014figure supplement 2. The RTT +2 mutation strategy shows consistent improvements across multiple pegRNAs with appropriate statistical testing. PE purity remained largely unchanged except for one pegRNA (C40), documented in Figure 2\u2014figure supplement 2c.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "200538e6-672e-4913-8e9a-367163c1e186",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RTT +2 mutations enhance pegRNA ability to form functional complexes with Cas9 protein, as evidenced by increased indel frequencies with SpCas9 nuclease in zebrafish embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by data in Figure 2\u2014figure supplement 3 showing that three refolded pegRNAs with RTT +2 mutations all induced higher indel frequencies than matched pegRNAs without mutations. The mechanistic inference (C42) is reasonable based on the observed functional improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "a5028e62-3e25-4e27-8750-8eb90a2d062d",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Combining pegRNA refolding with RTT +1 or +2 mutations can increase RNP-induced pure PE frequencies by up to 29-fold in zebrafish embryos, with RNP delivery offering advantages over DNA/RNA delivery methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by multiple citations regarding RNP delivery advantages. Claim C44 is supported by experimental data across Figures 1-2 and Supplementary file 1, demonstrating the combined effect of both strategies with the maximum 29-fold improvement clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "6f428d6a-298c-46c3-ae6a-f01c53ba246a",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The refolding and RTT mutation strategies should likely improve PE in other settings including human cells and can be applied to non-RNP delivery methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C45 is supported by citation to prior work (Petri et al., 2022) showing RNP-mediated PE functions in both zebrafish and human cells. However, claims C46 and C47 are speculative inferences about applicability to other systems and delivery methods without direct experimental validation in those contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "ebdf9d2e-273e-4eab-aad5-504799a08eb4",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work by Li et al., 2022 and Ponnienselvan et al., 2023 corroborates the findings that RTT mutations and reduced 5'-3' interactions can enhance PE efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 accurately cite relevant prior work that supports and corroborates the manuscript's findings. The citations are appropriate and the claims about prior work appear accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Internal complementarity between pegRNA 5' spacer and 3' PBS/RTT regions is an additional parameter for optimizing PE activity that may impact spacer sequence selection and PBS/RTT design, potentially leading to improved design rules in the future.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by appropriate citations to prior work. Claim C54 is a reasonable conclusion from the experimental findings. Claims C55-C57 are speculative but logical inferences about implications for future pegRNA design, appropriately framed as possibilities rather than established facts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "76c616d8-25a7-4f1f-9fc8-038508d98cf1",
+      "content_id": "1d563b61-f9a7-4917-a912-6dd3651864b3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript describes methodological details for pegRNA production, refolding procedures, RNP complexation, and ethical approval for zebrafish experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 are methodological descriptions that are appropriately detailed and supported by citations where relevant (C58 cites Petri et al., 2022). The refolding protocol (C59) and RNP complexation procedure (C60) are clearly specified. Ethical approval (C61) is properly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "5b82d73e-3f7c-4235-afb4-92e750d69470",
+      "content_id": "22601320-c177-4e37-96e5-3c7e2d15da92",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that sequence complementarity between the 5' spacer and 3' PBS/RTT regions of pegRNAs negatively impacts their ability to complex with Cas9, thereby reducing prime editing efficiency. This was shown through in vitro competition assays and zebrafish experiments where pegRNAs exhibited lower indel frequencies and reduced Cas9-binding capability compared to matched gRNAs, and introducing mutations to disrupt this complementarity restored Cas9-binding activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple reviewers acknowledge this finding. Reviewer 2 states 'the authors find that when pegRNAs were combined with Cas9, many induced much less indels than their corresponding guide RNAs and propose that this is due to the complementarity between the 5' and 3' regions of pegRNAs.' Reviewer 1 notes the authors 'test how two simple changes impact PE efficiency...by introducing mutations to the pegRNA intended to reduce its autoinhibitory activity by disrupting complementarity.' The data is described as 'solid and convincing' by Reviewer 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "7f605c77-4f92-4619-a468-53d94d590af6",
+      "content_id": "22601320-c177-4e37-96e5-3c7e2d15da92",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors show that a simple pegRNA refolding procedure (heat denaturation followed by slow cooling) significantly improves prime editing efficiencies in zebrafish embryos. Refolding increased pure PE frequencies for 9 of 17 pegRNAs tested, with increases ranging from 2.6- to 24.7-fold for substitution pegRNAs and 1.7- to 4.6-fold for insertion pegRNAs, though no significant improvement was observed for deletion pegRNAs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the data as solid, Reviewer 1 notes significant weaknesses: 'The observed increases in the frequency of precise PE were relatively minor and inconsistent across the multiple pegRNAs tested. The substitution pegRNAs showed very low precise PE, at levels less than 1 percent, therefore the fold changes reported were still representative of 10 percent or less of overall edits.' Reviewer 2 similarly notes 'despite these advances, prime editing activity remained relatively low for a significant proportion of pegRNAs tested (with less than 2% sequencing reads exhibiting the expected sequence change).'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c20750b8-2dae-455d-a90d-399d0484d49b",
+      "content_id": "22601320-c177-4e37-96e5-3c7e2d15da92",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrate that introducing point mutations at the RTT +1 or +2 positions to disrupt internal pegRNA complementarity can further improve prime editing efficiency. Mutations at the RTT +2 position increased pure PE frequencies in all five cases tested, with three showing statistically significant increases and overall improvements up to 6.7-fold (mean 2.4-fold).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding as part of the overall methodological advance. Reviewer 2 states 'Two methods aiming to reduce the resulting circularization of pegRNAs were next shown to increase the efficiency of prime editing: a slow refolding protocol...and the introduction of a substitution at position +2 of the reverse transcriptase template sequence.' The editor notes 'the strategies described in this study may lead to significant improvements in editing efficiencies' and Reviewer 2 calls these methods 'remarkably straightforward and proved beneficial for most of the pegRNAs tested.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "fd70bb7a-c609-49e0-8063-1e828b6ab7ef",
+      "content_id": "22601320-c177-4e37-96e5-3c7e2d15da92",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors report that increases in pure PE frequencies due to refolding were generally accompanied by increases in non-pure PE frequencies, resulting in no significant changes in PE purity (percentage of pure PE edits out of total edits) for most pegRNAs tested, with exceptions being two scn2b substitution pegRNAs showing improved purity and one cacng2b deletion pegRNA showing reduced purity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly notes this limitation: 'Overall mutagenesis frequency, as measured by indel formation, increased along with increased precise PE.' This observation is not disputed by other reviewers and represents an acknowledged characteristic of the method's performance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "2a0db8cc-4c79-4a83-a0c2-3ad549a993f5",
+      "content_id": "22601320-c177-4e37-96e5-3c7e2d15da92",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors demonstrate that combining pegRNA refolding with RTT +1 or +2 mutations can increase RNP-induced pure PE frequencies by as much as 29-fold in zebrafish embryos.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states 'This useful paper reports on two simple methods for improving the efficiency of prime editing' and notes 'In combination with published modifications, the strategies described in this study may lead to significant improvements in editing efficiencies.' Reviewer 2 describes the methods as 'important advances for the prime editing technique' and notes 'The data obtained and analyzed is solid and convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c090a4b5-facf-4279-a107-63aeb27ac343",
+      "content_id": "22601320-c177-4e37-96e5-3c7e2d15da92",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors propose that their strategies should likely improve PE in other settings beyond zebrafish (such as human and other cell types) and that internal complementarity represents an additional parameter to consider when designing pegRNAs, potentially impacting the nature of spacer sequences and PBS/RTT compositions that can be efficiently targeted.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative claims about broader applicability and design implications. Reviewer 1 notes 'The approach produces highly genetically mosaic embryos, therefore the utility for transient studies in injected zebrafish embryos is unclear. Data on improved germline transmission frequency of precise PE alleles would strengthen the study and be of wide interest in the zebrafish community.' This suggests uncertainty about even the immediate practical utility, let alone broader applications.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2",
+      "content_id": "22601320-c177-4e37-96e5-3c7e2d15da92",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Background claims describing the established components and mechanism of prime editing technology, including that PE requires PE2 protein and pegRNA, enables programmable edits without double-strand breaks, and has been employed across multiple model systems though with generally lower efficiency than other CRISPR-based editing methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are background/definitional claims that reviewers do not question. Reviewer 2 explicitly states 'Prime editing is a major gene editing technique because it allows for the introduction of all possible substitutions, as well as small insertions and deletions, without causing double strand breaks. However, its efficiency is often limited.' This confirms the established context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "29bfafbe-faa6-4025-90ff-5e49affcc6e8",
+      "result_id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435"
+    },
+    {
+      "claim_id": "9d891beb-408c-4061-9e1c-be2b3212d4ce",
+      "result_id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435"
+    },
+    {
+      "claim_id": "59450c1a-d212-4ca3-8b22-8518ec939e63",
+      "result_id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435"
+    },
+    {
+      "claim_id": "20654ac8-da3c-4573-9eb2-404b828930e6",
+      "result_id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435"
+    },
+    {
+      "claim_id": "cca499f6-00ac-4188-80be-b9232493c91a",
+      "result_id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435"
+    },
+    {
+      "claim_id": "2371ca91-1f53-45a8-a7da-55c882488563",
+      "result_id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435"
+    },
+    {
+      "claim_id": "5170a2d5-2a72-4483-9816-14cc826de976",
+      "result_id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435"
+    },
+    {
+      "claim_id": "c0f6c061-b240-4532-b7fe-c6c1f2c602b3",
+      "result_id": "4c5cfcb6-89b1-459b-87d4-ec73c6dc38ec"
+    },
+    {
+      "claim_id": "99cd0ef9-e187-4d30-b50c-d18738baae51",
+      "result_id": "4c5cfcb6-89b1-459b-87d4-ec73c6dc38ec"
+    },
+    {
+      "claim_id": "5a582066-039f-405d-91f6-aecd338b5808",
+      "result_id": "6cab8322-3c75-4881-8554-a6276dbdc068"
+    },
+    {
+      "claim_id": "27987870-8e37-4dcf-b2ec-1a5a7f8c76f1",
+      "result_id": "6cab8322-3c75-4881-8554-a6276dbdc068"
+    },
+    {
+      "claim_id": "b9f33a1d-c1ed-450d-9ee7-497506954b94",
+      "result_id": "6cab8322-3c75-4881-8554-a6276dbdc068"
+    },
+    {
+      "claim_id": "4b1d37fc-d2ed-4338-9cba-af92ed57fbd1",
+      "result_id": "6cab8322-3c75-4881-8554-a6276dbdc068"
+    },
+    {
+      "claim_id": "5fff13a1-826a-4774-ba59-c908e49eb0ad",
+      "result_id": "6cab8322-3c75-4881-8554-a6276dbdc068"
+    },
+    {
+      "claim_id": "b8570060-5395-47b5-88e8-de6125b49310",
+      "result_id": "6cab8322-3c75-4881-8554-a6276dbdc068"
+    },
+    {
+      "claim_id": "b885c1fb-8e58-468e-a552-63ef3c6ca112",
+      "result_id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2"
+    },
+    {
+      "claim_id": "a355f347-45f7-4fd3-a192-476ad3370922",
+      "result_id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2"
+    },
+    {
+      "claim_id": "ffc905c9-8947-4a30-b456-5e7f2438170c",
+      "result_id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2"
+    },
+    {
+      "claim_id": "011f77bf-2ccd-44f1-bbe1-cb8817d86083",
+      "result_id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2"
+    },
+    {
+      "claim_id": "b1a28b88-d368-4024-9854-abe7cc2ffc83",
+      "result_id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2"
+    },
+    {
+      "claim_id": "7f3c0dad-3857-418b-92ae-5c4586bd2bf4",
+      "result_id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2"
+    },
+    {
+      "claim_id": "c5d4ef2d-8b0b-4fe5-be86-b6a316bce355",
+      "result_id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5"
+    },
+    {
+      "claim_id": "7df86dab-981e-4a1b-9881-58ffe970ae97",
+      "result_id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5"
+    },
+    {
+      "claim_id": "7147fc5b-9991-4b6f-9bac-628aa0ceda10",
+      "result_id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5"
+    },
+    {
+      "claim_id": "0e7634bf-e560-4751-9817-0002e35c69c4",
+      "result_id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5"
+    },
+    {
+      "claim_id": "d8e8f6c0-681e-4428-8b51-644d79dbee24",
+      "result_id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5"
+    },
+    {
+      "claim_id": "6ee73d9e-8a79-4b21-9905-51db366d0978",
+      "result_id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5"
+    },
+    {
+      "claim_id": "5841daca-f744-4eda-81c9-d61d7fe0043a",
+      "result_id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5"
+    },
+    {
+      "claim_id": "71b00d61-60e8-4b6e-8d63-1cbd4dd6f31e",
+      "result_id": "5e99591c-31f0-499d-8df0-97ea961fb3a4"
+    },
+    {
+      "claim_id": "629b41a5-1a9b-42b0-843f-9b8f6245e425",
+      "result_id": "5e99591c-31f0-499d-8df0-97ea961fb3a4"
+    },
+    {
+      "claim_id": "a2528774-bc8d-46cf-a0ef-197bb24e43e4",
+      "result_id": "5e99591c-31f0-499d-8df0-97ea961fb3a4"
+    },
+    {
+      "claim_id": "5533f096-f078-4552-a0b8-47144fbe2c20",
+      "result_id": "5e99591c-31f0-499d-8df0-97ea961fb3a4"
+    },
+    {
+      "claim_id": "26d1d1cb-54ae-4e30-afab-cf6a9c2c61f0",
+      "result_id": "5e99591c-31f0-499d-8df0-97ea961fb3a4"
+    },
+    {
+      "claim_id": "539c3e65-b148-4df7-af4c-875232e0b8be",
+      "result_id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72"
+    },
+    {
+      "claim_id": "732a0c54-f884-42bc-85c0-2662658142aa",
+      "result_id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72"
+    },
+    {
+      "claim_id": "5901de0c-29a3-467c-a654-6c6dae868449",
+      "result_id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72"
+    },
+    {
+      "claim_id": "78c5de12-ce8f-4c9c-b608-60ed3e9333e1",
+      "result_id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72"
+    },
+    {
+      "claim_id": "b92fba72-96c1-4d53-bdb3-3c6a32a05dc1",
+      "result_id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72"
+    },
+    {
+      "claim_id": "9ab52a37-806c-4515-a8e9-1d18abfdf00e",
+      "result_id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72"
+    },
+    {
+      "claim_id": "506ada62-3246-4d2f-93b1-b4b6a5af8c45",
+      "result_id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72"
+    },
+    {
+      "claim_id": "5bdea58d-c390-435f-a709-3ed993e0daa6",
+      "result_id": "200538e6-672e-4913-8e9a-367163c1e186"
+    },
+    {
+      "claim_id": "6004aa24-a2bf-4b3b-b784-13579bf4c3dd",
+      "result_id": "200538e6-672e-4913-8e9a-367163c1e186"
+    },
+    {
+      "claim_id": "572c7801-974c-4aa6-866b-c5b2b4819af1",
+      "result_id": "a5028e62-3e25-4e27-8750-8eb90a2d062d"
+    },
+    {
+      "claim_id": "c84f4091-4550-4db4-ac73-6fa1774088a5",
+      "result_id": "a5028e62-3e25-4e27-8750-8eb90a2d062d"
+    },
+    {
+      "claim_id": "5057939d-1197-4f7f-a0aa-a4d412909133",
+      "result_id": "6f428d6a-298c-46c3-ae6a-f01c53ba246a"
+    },
+    {
+      "claim_id": "c2c3aebf-a0fc-4e1d-9edd-4dd409baf040",
+      "result_id": "6f428d6a-298c-46c3-ae6a-f01c53ba246a"
+    },
+    {
+      "claim_id": "533069c7-69b5-409c-a036-909b1df7a92c",
+      "result_id": "6f428d6a-298c-46c3-ae6a-f01c53ba246a"
+    },
+    {
+      "claim_id": "8edf8778-40a5-4c0b-a674-07a3f4eadd49",
+      "result_id": "ebdf9d2e-273e-4eab-aad5-504799a08eb4"
+    },
+    {
+      "claim_id": "5179c2b5-820a-454c-8db3-7b17b96f7640",
+      "result_id": "ebdf9d2e-273e-4eab-aad5-504799a08eb4"
+    },
+    {
+      "claim_id": "39458097-3e34-4166-8821-e95a6dd23b38",
+      "result_id": "ebdf9d2e-273e-4eab-aad5-504799a08eb4"
+    },
+    {
+      "claim_id": "d493bab4-98f1-4f1d-9ef5-381e1b33efea",
+      "result_id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f"
+    },
+    {
+      "claim_id": "505a4f34-98ee-40cf-bd69-508ec026d919",
+      "result_id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f"
+    },
+    {
+      "claim_id": "a2788835-e356-40f4-bff5-fcd13c3541a8",
+      "result_id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f"
+    },
+    {
+      "claim_id": "e3902d19-211d-405c-93dd-a81deefc4bf3",
+      "result_id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f"
+    },
+    {
+      "claim_id": "25fcb325-7ea5-46b8-b8d0-d06bbefa554f",
+      "result_id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f"
+    },
+    {
+      "claim_id": "11f8e5f8-5200-4bce-b9d2-5e9ecccd882d",
+      "result_id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f"
+    },
+    {
+      "claim_id": "c0f1ac2e-18b2-43f0-8281-bd23283e4e2d",
+      "result_id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f"
+    },
+    {
+      "claim_id": "0fc3c89c-0fef-4d2c-8a94-718546c8c354",
+      "result_id": "76c616d8-25a7-4f1f-9fc8-038508d98cf1"
+    },
+    {
+      "claim_id": "0218934b-bb3c-4fa4-a6ee-1af605550d17",
+      "result_id": "76c616d8-25a7-4f1f-9fc8-038508d98cf1"
+    },
+    {
+      "claim_id": "f7ad3ade-dee8-4c63-82c0-799658e367b6",
+      "result_id": "76c616d8-25a7-4f1f-9fc8-038508d98cf1"
+    },
+    {
+      "claim_id": "3d169a5f-5e1c-4978-ba54-c1713937b34f",
+      "result_id": "76c616d8-25a7-4f1f-9fc8-038508d98cf1"
+    },
+    {
+      "claim_id": "b885c1fb-8e58-468e-a552-63ef3c6ca112",
+      "result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470"
+    },
+    {
+      "claim_id": "a355f347-45f7-4fd3-a192-476ad3370922",
+      "result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470"
+    },
+    {
+      "claim_id": "5a582066-039f-405d-91f6-aecd338b5808",
+      "result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470"
+    },
+    {
+      "claim_id": "27987870-8e37-4dcf-b2ec-1a5a7f8c76f1",
+      "result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470"
+    },
+    {
+      "claim_id": "b9f33a1d-c1ed-450d-9ee7-497506954b94",
+      "result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470"
+    },
+    {
+      "claim_id": "5fff13a1-826a-4774-ba59-c908e49eb0ad",
+      "result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470"
+    },
+    {
+      "claim_id": "b8570060-5395-47b5-88e8-de6125b49310",
+      "result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470"
+    },
+    {
+      "claim_id": "c5d4ef2d-8b0b-4fe5-be86-b6a316bce355",
+      "result_id": "7f605c77-4f92-4619-a468-53d94d590af6"
+    },
+    {
+      "claim_id": "011f77bf-2ccd-44f1-bbe1-cb8817d86083",
+      "result_id": "7f605c77-4f92-4619-a468-53d94d590af6"
+    },
+    {
+      "claim_id": "b1a28b88-d368-4024-9854-abe7cc2ffc83",
+      "result_id": "7f605c77-4f92-4619-a468-53d94d590af6"
+    },
+    {
+      "claim_id": "7f3c0dad-3857-418b-92ae-5c4586bd2bf4",
+      "result_id": "7f605c77-4f92-4619-a468-53d94d590af6"
+    },
+    {
+      "claim_id": "7df86dab-981e-4a1b-9881-58ffe970ae97",
+      "result_id": "7f605c77-4f92-4619-a468-53d94d590af6"
+    },
+    {
+      "claim_id": "0e7634bf-e560-4751-9817-0002e35c69c4",
+      "result_id": "7f605c77-4f92-4619-a468-53d94d590af6"
+    },
+    {
+      "claim_id": "d8e8f6c0-681e-4428-8b51-644d79dbee24",
+      "result_id": "7f605c77-4f92-4619-a468-53d94d590af6"
+    },
+    {
+      "claim_id": "6ee73d9e-8a79-4b21-9905-51db366d0978",
+      "result_id": "7f605c77-4f92-4619-a468-53d94d590af6"
+    },
+    {
+      "claim_id": "539c3e65-b148-4df7-af4c-875232e0b8be",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "732a0c54-f884-42bc-85c0-2662658142aa",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "5901de0c-29a3-467c-a654-6c6dae868449",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "78c5de12-ce8f-4c9c-b608-60ed3e9333e1",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "b92fba72-96c1-4d53-bdb3-3c6a32a05dc1",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "9ab52a37-806c-4515-a8e9-1d18abfdf00e",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "506ada62-3246-4d2f-93b1-b4b6a5af8c45",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "5bdea58d-c390-435f-a709-3ed993e0daa6",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "6004aa24-a2bf-4b3b-b784-13579bf4c3dd",
+      "result_id": "c20750b8-2dae-455d-a90d-399d0484d49b"
+    },
+    {
+      "claim_id": "71b00d61-60e8-4b6e-8d63-1cbd4dd6f31e",
+      "result_id": "fd70bb7a-c609-49e0-8063-1e828b6ab7ef"
+    },
+    {
+      "claim_id": "a2528774-bc8d-46cf-a0ef-197bb24e43e4",
+      "result_id": "fd70bb7a-c609-49e0-8063-1e828b6ab7ef"
+    },
+    {
+      "claim_id": "5533f096-f078-4552-a0b8-47144fbe2c20",
+      "result_id": "fd70bb7a-c609-49e0-8063-1e828b6ab7ef"
+    },
+    {
+      "claim_id": "26d1d1cb-54ae-4e30-afab-cf6a9c2c61f0",
+      "result_id": "fd70bb7a-c609-49e0-8063-1e828b6ab7ef"
+    },
+    {
+      "claim_id": "c84f4091-4550-4db4-ac73-6fa1774088a5",
+      "result_id": "2a0db8cc-4c79-4a83-a0c2-3ad549a993f5"
+    },
+    {
+      "claim_id": "c2c3aebf-a0fc-4e1d-9edd-4dd409baf040",
+      "result_id": "c090a4b5-facf-4279-a107-63aeb27ac343"
+    },
+    {
+      "claim_id": "533069c7-69b5-409c-a036-909b1df7a92c",
+      "result_id": "c090a4b5-facf-4279-a107-63aeb27ac343"
+    },
+    {
+      "claim_id": "e3902d19-211d-405c-93dd-a81deefc4bf3",
+      "result_id": "c090a4b5-facf-4279-a107-63aeb27ac343"
+    },
+    {
+      "claim_id": "25fcb325-7ea5-46b8-b8d0-d06bbefa554f",
+      "result_id": "c090a4b5-facf-4279-a107-63aeb27ac343"
+    },
+    {
+      "claim_id": "11f8e5f8-5200-4bce-b9d2-5e9ecccd882d",
+      "result_id": "c090a4b5-facf-4279-a107-63aeb27ac343"
+    },
+    {
+      "claim_id": "29bfafbe-faa6-4025-90ff-5e49affcc6e8",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    },
+    {
+      "claim_id": "9d891beb-408c-4061-9e1c-be2b3212d4ce",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    },
+    {
+      "claim_id": "59450c1a-d212-4ca3-8b22-8518ec939e63",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    },
+    {
+      "claim_id": "20654ac8-da3c-4573-9eb2-404b828930e6",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    },
+    {
+      "claim_id": "cca499f6-00ac-4188-80be-b9232493c91a",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    },
+    {
+      "claim_id": "2371ca91-1f53-45a8-a7da-55c882488563",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    },
+    {
+      "claim_id": "5170a2d5-2a72-4483-9816-14cc826de976",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    },
+    {
+      "claim_id": "c0f6c061-b240-4532-b7fe-c6c1f2c602b3",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    },
+    {
+      "claim_id": "99cd0ef9-e187-4d30-b50c-d18738baae51",
+      "result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "47420d9a-68e4-47dc-aa39-2e792d98ec6c",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "5e99591c-31f0-499d-8df0-97ea961fb3a4",
+      "peer_result_id": "fd70bb7a-c609-49e0-8063-1e828b6ab7ef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C30-C34 regarding PE purity remaining largely unchanged despite increased pure PE frequencies. Both evaluations mark these claims as SUPPORTED, with peer reviewers explicitly noting 'Overall mutagenesis frequency, as measured by indel formation, increased along with increased precise PE.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "7396a998-7f34-4f27-a683-ea0b728797c3",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "85ec08a8-3675-4aa0-a7aa-fe94cf0e2435",
+      "peer_result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on background/definitional claims C1, C2, C7-C13 about PE technology and its limitations. Both evaluations mark these as SUPPORTED. Peer reviewers confirm the established context without questioning these foundational claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "319d63c1-ca12-415f-a773-9035fa4ec1f2",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0e6f0ec7-b212-4b98-9d49-b480eafc4f72",
+      "peer_result_id": "c20750b8-2dae-455d-a90d-399d0484d49b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C6, C35-C40 regarding RTT +2 mutation strategy. Both evaluations mark these as SUPPORTED. Peer reviewers describe these methods as 'remarkably straightforward and proved beneficial for most of the pegRNAs tested.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "fe61987a-a005-4fe6-980a-37214322d102",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "6cab8322-3c75-4881-8554-a6276dbdc068",
+      "peer_result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C14-C19 regarding pegRNA misfolding hypothesis and PBS mutations. Both evaluations mark these as SUPPORTED. Peer reviewers describe the data as 'solid and convincing' and acknowledge the autoinhibitory activity findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "6b10d9b6-3c34-4662-b735-b484bad1bca8",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "27bfbe80-c1aa-4a15-bcc8-d78b7d35b3c5",
+      "peer_result_id": "7f605c77-4f92-4619-a468-53d94d590af6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on claims C5, C24-C28 regarding pure PE frequency improvements. OpenEval marks as SUPPORTED, but peer reviewers mark as UNCERTAIN, noting 'The observed increases in the frequency of precise PE were relatively minor and inconsistent' and that 'prime editing activity remained relatively low for a significant proportion of pegRNAs tested.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "74dabba3-5456-49d2-a3a5-f37d10fc00d6",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a5028e62-3e25-4e27-8750-8eb90a2d062d",
+      "peer_result_id": "2a0db8cc-4c79-4a83-a0c2-3ad549a993f5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C44 regarding combined effect of both strategies. Both evaluations mark as SUPPORTED. Peer reviewers describe the methods as 'important advances' and note they 'may lead to significant improvements in editing efficiencies.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "27875299-271e-40a4-8a59-47437f8c8d2b",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "4c5cfcb6-89b1-459b-87d4-ec73c6dc38ec",
+      "peer_result_id": "1e676fd1-6f7c-46e5-9f09-08dc59aa10e2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C12-C13 regarding motivation for improving PE efficiency. Both evaluations mark as SUPPORTED as part of the established background context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "4f876329-4195-4e22-8e6e-6550b338d21f",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "200538e6-672e-4913-8e9a-367163c1e186",
+      "peer_result_id": "c20750b8-2dae-455d-a90d-399d0484d49b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C41-C42 regarding refolded pegRNAs with RTT +2 mutations inducing higher indel frequencies. Both evaluations mark as SUPPORTED as part of the overall methodological advance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "23c3e50b-2f0d-4f89-8248-6e8634b86a46",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2",
+      "peer_result_id": "5b82d73e-3f7c-4235-afb4-92e750d69470",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C3-C4, C20-C23 regarding refolding strategy and in vitro competition assay data. OpenEval marks as SUPPORTED; peer reviewers acknowledge these findings as part of the solid data on autoinhibitory activity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c5368812-d0b3-49f5-9710-d3a85e2ef9ca",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "2770949e-49b1-4ab1-b22a-102ba1d96fd2",
+      "peer_result_id": "7f605c77-4f92-4619-a468-53d94d590af6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claims C20-C23. OpenEval marks as SUPPORTED based on consistent improvements across target sites. Peer reviewers acknowledge the data but express concerns about overall low editing efficiency in their evaluation of related claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "615974ab-4765-457f-b38c-90aa1bd3b78d",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "6f428d6a-298c-46c3-ae6a-f01c53ba246a",
+      "peer_result_id": "c090a4b5-facf-4279-a107-63aeb27ac343",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty regarding claims C46-C47 about broader applicability. OpenEval marks as UNCERTAIN noting 'speculative inferences about applicability to other systems.' Peer reviewers also mark as UNCERTAIN, noting concerns about practical utility and lack of germline transmission data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "a5587f8c-54e8-4c3f-b1b8-60a02ccafc59",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "a65d1aab-cdcd-4320-a898-ce315fb8ac8f",
+      "peer_result_id": "c090a4b5-facf-4279-a107-63aeb27ac343",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C54-C57 regarding implications for pegRNA design. OpenEval marks as SUPPORTED, describing them as 'logical inferences appropriately framed as possibilities.' Peer reviewers mark as UNCERTAIN, questioning practical utility and broader applications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "0a8c187b-fbd0-4595-9cf9-7f2909dfb3b2",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "ebdf9d2e-273e-4eab-aad5-504799a08eb4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C48-C50 regarding citations to prior work as SUPPORTED. No corresponding peer review evaluation found for these specific citation accuracy claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    },
+    {
+      "id": "c6853632-abf3-402a-9f76-9d9144681187",
+      "submission_id": "95d99493-e84b-4a90-8e04-5c439ec8d308",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "76c616d8-25a7-4f1f-9fc8-038508d98cf1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C58-C61 regarding methodological descriptions and ethical approval as SUPPORTED. No corresponding peer review evaluation found for these methodological detail claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:13:32.162715Z"
+    }
+  ]
+}

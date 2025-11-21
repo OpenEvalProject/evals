@@ -1,0 +1,166 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C74"
+    ],
+    "result": "Using ALPS to correlate single-cell pigmentation with gene expression, the authors found that the degree of pigmentation in iPSC-RPE cells did not project specific gene expression profiles or clusters. Even genes directly related to melanin synthesis (TYR, TYRP1) showed only modest correlation with color (r=0.434-0.458), and the highest correlation was with CST3 (r=0.565), suggesting pigmentation is a temporal condition with time-lag between mRNA expression and melanin synthesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers accept this core finding. Reviewer 1 states 'The presented evidence is solid in showing that there is heterogeneous gene expression in iPSC-derived RPE cells, and there is no significant correlation with the pigmentation.' Reviewer 2 notes 'it is the first time that the absence of correlation between pigmentation and function is studied' and describes methods as 'good and experiments very rigorous.' Reviewer 3 acknowledges 'the authors identify clusters of cells that present differential gene expression, but this showed no association with the degree of pigmentation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C75",
+      "C81"
+    ],
+    "result": "GSEA analysis identified 15 biological pathways enriched in darker iPSC-RPE cells, including lysosome- and complement-related pathways. Specific genes showed modest correlations: PASP (r=0.34), CTSD (r=0.31) for lysosome pathways, and C1R, C1S (r=0.31), C3 (r=0.27) for complement pathways, suggesting darker cells may be more prone to facilitate these protective functions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge this finding but express concerns about its interpretation and significance. Reviewer 1 notes 'lysosomal- and complement-related pathways were partially enriched in darker cells' but does not elaborate on the strength of this finding. Reviewer 3 specifically critiques that 'the positive correlation of cluster formation with complement and lysosome-related genes is not discussed,' indicating the biological significance and interpretation remain unclear. The weak correlation coefficients (0.27-0.34) and lack of mechanistic discussion leave the functional relevance uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors utilized ALPS (Automated Live imaging and cell Picking system) to photograph 2,304 iPSC-RPE cells, measure RGB channel intensities (which showed strong correlation r>0.99), pick individual cells, and perform single-cell RNA sequencing to correlate visual pigmentation with gene expression profiles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accept the methodology as sound. Reviewer 1 describes it as 'a novel microscopy-based method' and states 'This methodology can be used by other researchers interested in analyzing gene expression related to microscopic images.' Reviewer 2 notes 'The methods are good and experiments very rigorous.' Reviewer 3 acknowledges the technical achievement, stating the work 'present[s] a novel method to analyze the correlation between the degree of pigmentation and the gene expression profile...at the single cell level' using ALPS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "t-SNE analysis showed iPSC-RPE and Lonza-RPE formed different clusters, with iPSC-RPE dividing into four sub-clusters. The major clusters (0 and 1) showed no critical differences in key RPE factor expression or gene ontology terms, consistent with previous findings that iPSC-RPE gene expression is slightly different from but closer to Lonza-RPE than to ARPE19 cell line.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these clustering results without challenge. Reviewer 1 notes 'there is heterogeneous gene expression in iPSC-derived RPE cells' as solidly demonstrated. The comparative analysis with Lonza-RPE is acknowledged as part of the dataset generation ('An important amount of data related to gene expression and heterogeneity of the iPSC-RPE population has been generated' - Reviewer 3), and no concerns are raised about the clustering methodology or interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Cluster-8, consisting of 32 cells, showed expression of proliferation marker MKI67 but not iPSC marker LIN28A, suggesting it is not residual iPSCs but may represent an adult stem cell population of RPE.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is not specifically challenged by reviewers, though it receives no explicit discussion. The characterization of cluster-8 as proliferative but not pluripotent (lacking LIN28A) is presented with supporting data (Figure 2\u2014figure supplement 3). The speculative interpretation about adult stem cells (C47) is appropriately hedged ('could be possible') and does not appear to concern reviewers, likely because it is clearly marked as speculation rather than a definitive claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C101",
+      "C102"
+    ],
+    "result": "Lonza-RPE showed biased distribution of cell color among clusters, with highly pigmented cells in clusters 2 and 3 but not 7, and pigmentation level correlated with gene expression profile, potentially reflecting the developmental process of RPE gaining protective function during embryogenesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding about Lonza-RPE is accepted without challenge. Reviewer 1 acknowledges the comparative analysis between iPSC-RPE and Lonza-RPE as part of the solid evidence. The differential behavior of Lonza-RPE (fetal-derived) versus iPSC-RPE supports the authors' interpretation that iPSC-RPE may be more plastic, though reviewers do not specifically comment on this distinction. The lack of reviewer concern suggests acceptance of this comparative observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Gene sets related to retinoid recycling and melanin synthesis showed weak or less correlation with color intensity in iPSC-RPE cells, with retinoid recycling genes showing correlation coefficients of 0.11-0.25 and melanin synthesis genes showing similarly low correlations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These negative findings are implicitly accepted as part of the overall conclusion that pigmentation does not strongly correlate with functional gene expression. Reviewer 1's statement that 'there is no significant correlation with the pigmentation' encompasses these findings. The weak correlation with melanin synthesis genes specifically supports the main conclusion and is not challenged, though Reviewer 3 notes the need for better discussion of functional implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C38"
+    ],
+    "result": "iPSC-RPE cells were generated from two iPSC lines (201B7 and 253G1) and quality-verified by multiple methods (qPCR for RPE65/Bestrophin/CRALBP/MERTK, immunostaining for PAX6/MiTF/Bestrophin, ELISA for PEDF/VEGF), showing hexagonal morphology, pigmentation, and diverse degrees of pigmentation even at confluence. Lonza fetal RPE cells were used for comparison.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quality control methods and cell characterization are accepted without challenge. Reviewer 2 explicitly states 'The methods are good and experiments very rigorous.' The comprehensive quality verification using multiple established markers aligns with standard practices in the field and supports the validity of the experimental system. No reviewer questions the adequacy of cell characterization or quality control procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors discuss that ESC/iPSC-derived RPE cells may be more plastic and retain immature profiles despite spontaneous pigmentation in vitro, and that environmental niche is significant for melanogenesis, as evidenced by cells becoming heavily pigmented after transplantation. They conclude that in vitro pigmentation may be a spontaneous but not necessary sign of protective function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concerns about the interpretation and physiological relevance of these conclusions. Reviewer 2 notes 'They suggest that this status could be different in vitro than in vivo but do not provide proper experiments to validate this hypothesis.' Reviewer 3 states 'I fail to grasp from the introduction what is the previous evidence that leads to the hypothesis. Why would color intensity be related to the quality of cell transplantation? In fact, cell transplantation is not evaluated at all in this work.' These critiques indicate the in vivo relevance and functional implications remain inadequately supported.",
+    "result_type": "MAJOR"
+  }
+]

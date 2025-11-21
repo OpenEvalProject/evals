@@ -1,0 +1,1607 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Artificial neural networks (ANNs) are a powerful class of computational models for unravelling neural mechanisms of brain function.",
+    "claim_type": "EXPLICIT",
+    "source": "Artificial neural networks (ANNs) are a powerful class of computational models for unravelling neural mechanisms of brain function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about ANNs that draws from established understanding in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "For neural control of movement, ANNs currently must be integrated with software simulating biomechanical effectors.",
+    "claim_type": "EXPLICIT",
+    "source": "However, for neural control of movement, they currently must be integrated with software simulating biomechanical effectors, leading to limiting impracticalities",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the current state of the field based on existing practices.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Biomechanical effectors are not generally differentiable, constraining researchers to reinforcement learning algorithms despite the existence and potential biological relevance of faster training methods.",
+    "claim_type": "EXPLICIT",
+    "source": "biomechanical effectors are not generally differentiable, constraining researchers to reinforcement learning algorithms despite the existence and potential biological relevance of faster training methods.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the technical limitations of existing biomechanical simulation software and their implications.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "MotorNet is an open-source Python toolbox for creating arbitrarily complex, differentiable, and biomechanically realistic effectors that can be trained on user-defined motor tasks using ANNs.",
+    "claim_type": "EXPLICIT",
+    "source": "To address these limitations, we developed MotorNet, an open-source Python toolbox for creating arbitrarily complex, differentiable, and biomechanically realistic effectors that can be trained on user-defined motor tasks using ANNs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of what MotorNet is and what it does.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "MotorNet requires no dependencies outside Python.",
+    "claim_type": "EXPLICIT",
+    "source": "MotorNet requires no dependencies outside Python, making it easy to get started with.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification of the software.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "MotorNet allows training ANNs on typically used motor control models such as a two joint, six muscle, planar arm within minutes on a typical desktop computer.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, it allows training ANNs on typically used motor control models such as a two joint, six muscle, planar arm within minutes on a typical desktop computer.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a performance claim about the software that can be verified through testing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "MotorNet is built on PyTorch.",
+    "claim_type": "EXPLICIT",
+    "source": "MotorNet is built on PyTorch and therefore can implement any network architecture that is possible using the PyTorch framework.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification of the software implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "MotorNet can implement any network architecture that is possible using the PyTorch framework.",
+    "claim_type": "EXPLICIT",
+    "source": "MotorNet is built on PyTorch and therefore can implement any network architecture that is possible using the PyTorch framework.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of being built on PyTorch.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Research on the neural control of movement has a long and fruitful history of complementing empirical studies with theoretical work.",
+    "claim_type": "EXPLICIT",
+    "source": "Research on the neural control of movement has a long and fruitful history of complementing empirical studies with theoretical work (Lindsay, 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Lindsay, 2022.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "A wide variety of computational model classes have been proposed to explain empirical observations, such as equilibrium point control, optimal control, and parallel distributed processing models.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, a wide variety of computational model classes have been proposed to explain empirical observations, such as equilibrium point control (Feldman and Levin, 1995; Flanagan et al., 1993; Gribble and Ostry, 2000; Won and Hogan, 1995), optimal control (Shadmehr and Krakauer, 2008; Todorov, 2004), and parallel distributed processing models (Fetz, 1993; Gomi and Kawato, 1993; Jordan and Rumelhart, 1992; Lillicrap and Scott, 2013), commonly known as artificial neural networks (ANNs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations to published work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "ANNs gained in popularity only recently following their rise to prominence in machine learning.",
+    "claim_type": "EXPLICIT",
+    "source": "Although ANNs were formalized many decades ago, they gained in popularity only recently following their rise to prominence in machine learning (ML; LeCun et al., 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to LeCun et al., 2015.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "ANNs' greater explanatory power and biological realism provide significant advantages against alternative model classes.",
+    "claim_type": "EXPLICIT",
+    "source": "as their greater explanatory power and biological realism provide significant advantages against alternative model classes (Gershman and \u00d6lveczky, 2020; Lillicrap et al., 2019; Richards et al., 2019; Saxe et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Production of theoretical work using ANN models may be viewed as a two-step effort: building a realistic simulation environment that mimics the behaviour of bodily effectors and implementing the policy ANNs themselves to train on the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "For neural control of movement, production of theoretical work using ANN models may be viewed as a two-step effort: (1) building a realistic simulation environment that mimics the behaviour of bodily effectors and (2) implement the policy ANNs themselves to train on the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual framework proposed by the authors.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Many open-source platforms achieve each of these steps individually, such as MuJoCo or OpenSim for building environments, and JAX, PyTorch, or TensorFlow for building and training policy ANNs.",
+    "claim_type": "EXPLICIT",
+    "source": "Many open-source platforms achieve each of these steps individually, such as MuJoCo (Todorov et al., 2012) or OpenSim (Delp et al., 2007; Seth et al., 2018) for building environments, and JAX, PyTorch, or TensorFlow for building and training policy ANNs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to existing software platforms.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The user must rely on two different software platforms, one for the environment and one for the policy ANN.",
+    "claim_type": "EXPLICIT",
+    "source": "First, the user must rely on two different software platforms, one for the environment and one for the policy ANN.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a limitation of current approaches.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Communication between platforms is not built-in, requiring users to produce custom code to link the policy ANN software with the software implementing the simulation of the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "Communication between platforms is not built-in, requiring users to produce custom code to link the policy ANN software with the software implementing the simulation of the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a technical limitation of existing approaches.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Gymnasium is a Python toolbox that provides an interface between policies and environments.",
+    "claim_type": "EXPLICIT",
+    "source": "A current remedy to this issue is gymnasium (Chinnaiya et al., 2023), a Python toolbox that provides an interface between policies and environments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Chinnaiya et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Gymnasium constrains the user to reinforcement learning algorithms despite the existence and potential biological relevance of faster training methods such as backpropagation.",
+    "claim_type": "EXPLICIT",
+    "source": "However, gymnasium constrains the user to reinforcement learning algorithms (Fujimoto et al., 2018; Lillicrap et al., 2019; Mnih et al., 2015) despite the existence and potential biological relevance of faster training methods such as backpropagation (Lillicrap et al., 2020; Whittington and Bogacz, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The inability to use backpropagation to train policies has been circumvented by training separate ANNs such as multi-layer perceptrons or recurrent neural networks as 'forward models' approximating the behaviour of effectors.",
+    "claim_type": "EXPLICIT",
+    "source": "To date, this has been circumvented by training separate ANNs such as multi-layer perceptrons or recurrent neural networks (RNNs) as 'forward models' approximating the behaviour of effectors that are normally implemented in a separate software package (e.g., Lillicrap and Scott, 2013; Willett et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Lillicrap and Scott, 2013 and Willett et al., 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Training the model took about 13 min on a 2022 Mac Studio with an M1 Max central processing unit.",
+    "claim_type": "EXPLICIT",
+    "source": "Training the model above took about 13 min on a 2022 Mac Studio with an M1 Max central processing unit (Apple Inc, Cupertino, CA, USA).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct measurement from the experiment.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The arm26 effector and the centre-out reaching task are included in the toolbox as pre-built objects.",
+    "claim_type": "EXPLICIT",
+    "source": "Because the arm26 effector and the centre-out reaching task are particularly common in the motor control literature, they are included in the toolbox as pre-built objects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software features.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Users can easily declare their own custom-made effector and environment objects if desired by subclassing the base Effector and Environment class.",
+    "claim_type": "EXPLICIT",
+    "source": "Note however that users can easily declare their own custom-made effector and environment objects if desired by subclassing the base Effector and Environment class, respectively",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software capabilities.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "A MotorNet model can be viewed as a differentiable environment that can directly employ outputs from a policy ANN as action signals.",
+    "claim_type": "EXPLICIT",
+    "source": "Functionally, a MotorNet model can be viewed as a differentiable environment that can directly employ outputs from a policy ANN as action signals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software architecture.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "By default, 'visual' feedback consists of a vector indicating endpoint cartesian coordinates.",
+    "claim_type": "EXPLICIT",
+    "source": "By default, 'visual' feedback consists of a vector indicating endpoint cartesian coordinates",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the default software behavior.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The policy ANN may be any PyTorch network.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the policy ANN may be any PyTorch network, and the MotorNet environments are designed to match standard gymnasium API conventions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software flexibility.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "MotorNet environments are designed to match standard gymnasium API conventions.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the policy ANN may be any PyTorch network, and the MotorNet environments are designed to match standard gymnasium API conventions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "It is not necessary to create a policy by sub-classing a MotorNet Policy object.",
+    "claim_type": "EXPLICIT",
+    "source": "That is, it is not necessary to create a policy by sub-classing a MotorNet Policy object.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software flexibility.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Models are based on five object classes: Skeleton, Muscle, Effector, Environment, and Policy objects.",
+    "claim_type": "EXPLICIT",
+    "source": "Models are based on five object classes: Skeleton, Muscle, Effector, Environment, and Policy objects (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the software architecture, with reference to Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Each object has its own base class, from which the user can create a custom subclass if desired.",
+    "claim_type": "EXPLICIT",
+    "source": "Each object has its own base class, from which the user can create a custom subclass if desired.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software architecture.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "MotorNet comes with a set of pre-built subclasses for each, which implement commonly used computational model formalizations.",
+    "claim_type": "EXPLICIT",
+    "source": "MotorNet comes with a set of pre-built subclasses for each, which implement commonly used computational model formalizations (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the software features, with reference to Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Environment objects are the entry point of the model.",
+    "claim_type": "EXPLICIT",
+    "source": "Environment objects are the entry point of the model (Figure 3a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the software architecture, with reference to Figure 3a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Effector objects are essentially wrapper objects that hold the Muscle and Skeleton objects and handle coordination of information flow between them.",
+    "claim_type": "EXPLICIT",
+    "source": "Effector objects are essentially wrapper objects that hold the Muscle and Skeleton objects and handle coordination of information flow between them (Figure 3a, b)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the software architecture, with reference to Figure 3a and 3b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The Environment may maintain a delay buffer, which stores state information for a certain time, allowing the observation vector to be fed time-delayed state information.",
+    "claim_type": "EXPLICIT",
+    "source": "The Environment may maintain a delay buffer, which stores state information for a certain time (according to the \u0394p and \u0394v parameters, Figure 2), allowing the observation vector to be fed time-delayed state information.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the software functionality, with reference to Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The modular structure allows MotorNet to flexibly compute detailed biomechanical properties of Effector objects, such as arbitrary muscle paths, geometry-dependent moment arms, non-linear muscle activations, and passive force production from muscle stretch.",
+    "claim_type": "EXPLICIT",
+    "source": "The modular structure detailed above allows MotorNet to flexibly compute detailed biomechanical properties of Effector objects, such as arbitrary muscle paths (Nijhof and Kouwenhoven, 2000), geometry-dependent moment arms (Murray et al., 1995; Sherman et al., 2013), non-linear muscle activations, and passive force production from muscle stretch (Cheng, 2000; Millard et al., 2013; Thelen, 2003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations to published work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The moment arm is defined for each muscle as the change in value of the DoF of the skeleton for a given change in the muscle's length.",
+    "claim_type": "EXPLICIT",
+    "source": "the Effector object can then calculate the moment arm of forces produced, which is defined for each muscle as the change in value of the DoF of the skeleton for a given change in the muscle's length (Murray et al., 1995; Sherman et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Murray et al., 1995 and Sherman et al., 2013.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Moment arms generally vary depending on the positional configuration of the Effector.",
+    "claim_type": "EXPLICIT",
+    "source": "Moment arms generally vary depending on the positional configuration of the Effector.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general biomechanical principle.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "For each hyperplane the diagonal with constant moment arm lines up with the path formed by the muscle when the point-mass is at the centre of the workspace.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, for each hyperplane the diagonal with constant moment arm lines up with the path formed by the muscle when the point-mass is at the centre of the workspace.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the data shown in Figure 4c.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Muscles whose shortening leads to an increase in the DoF considered express negative moment arms.",
+    "claim_type": "EXPLICIT",
+    "source": "Note also that muscles whose shortening leads to an increase in the DoF considered \u2013 or inversely whose lengthening leads to a decrease in the DoF \u2013 express negative moment arms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a biomechanical convention explained in the text.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The moment arm of a mono-articular muscle with respect to a joint it does not span is always null regardless of the joint configuration.",
+    "claim_type": "EXPLICIT",
+    "source": "As expected, the moment arm of that muscle with respect to the shoulder joint is always null (black arrows, Figure 4d) regardless of the joint configuration since the muscle does not span that joint.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 4d and is consistent with biomechanical principles.",
+    "evidence_type": [
+      "DATA",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "A bi-articular muscle's moment arm is non-zero with respect to both joints.",
+    "claim_type": "EXPLICIT",
+    "source": "In comparison, a bi-articular muscle's moment arm is non-zero with respect to both joints (Figure 4e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 4e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "A bi-articular muscle's moment arms with respect to each joint show a small interaction as the other joint's angle changes.",
+    "claim_type": "EXPLICIT",
+    "source": "This also leads the moment arms with respect to each joint to show a small interaction as the other joint's angle changes, as indicated by a slight 'bend' in the hyperplane (black arrows, Figure 4e).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 4e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Drift is negligible at the centre of the joint space but starts to increase towards the edge.",
+    "claim_type": "EXPLICIT",
+    "source": "We can see that drift is negligible at the centre of the joint space but starts to increase towards the edge (Figure 4f)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 4f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Drift towards the edge of joint space indicates that the associated joint configurations lead to overstretched muscle lengths and resulting in passive force production.",
+    "claim_type": "EXPLICIT",
+    "source": "indicating that the associated joint configurations lead to overstretched muscle lengths and resulting in passive force production.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the observed drift pattern.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The presence of passive drift is dependent on the user's modelling choices.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that since this phenomenon is dependent on the slack length value of each muscle, which is user-defined, the presence of passive drift is dependent on the user's modelling choices.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of the model parameters.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "A typical way to ensure the computation learnt by an ANN is functionally meaningful is to test its out-of-distribution generalization.",
+    "claim_type": "EXPLICIT",
+    "source": "A typical way to ensure the computation learnt by an ANN is functionally meaningful is to test its out-of-distribution generalization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a standard practice in machine learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The loss value decreased smoothly during training despite the rich variability of the training set.",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this variability, the loss value decreased smoothly (Figure 5b).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 5b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "In all cases, the RNN could correct for the mechanical perturbation, reach to the target, and stabilize.",
+    "claim_type": "EXPLICIT",
+    "source": "In all cases, the RNN could correct for the mechanical perturbation, reach to the target, and stabilize (Figure 5c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 5c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "In all cases, the RNN could integrate the sensorimotor information to bring the arm's endpoint back into the target.",
+    "claim_type": "EXPLICIT",
+    "source": "In all cases, the RNN could integrate the sensorimotor information to bring the arm's endpoint back into the target (Figure 5d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 5d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "In some cases, perturbations beyond a given magnitude led to an oscillatory trajectory, indicating that perturbations beyond a given magnitude remain increasingly challenging to control for.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, in some cases this led to an oscillatory trajectory (e.g., for a rightward +12 N perturbation, Figure 5d), indicating that perturbations beyond a given magnitude remain increasingly challenging to control for.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5d with an inference about control difficulty.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Muscle activations are similar before the occurrence of the perturbation, and remain similar immediately after, indicating a time delay in the response.",
+    "claim_type": "EXPLICIT",
+    "source": "We can see that muscle activations are similar before the occurrence of the perturbation, and remain similar immediately after, indicating a time delay in the response.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from Figure 5e with an inference about time delay.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The fastest responses occurred for the bi-articular muscles and the shoulder extensor muscle.",
+    "claim_type": "EXPLICIT",
+    "source": "The fastest responses occurred for the bi-articular muscles and the shoulder extensor muscle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from the data in Figure 5e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The RNN's response to a perturbation is not a mere stimulus-driven reactive response, but an integrated response that can delay or withhold the production of counteracting forces if necessary.",
+    "claim_type": "EXPLICIT",
+    "source": "This illustrates that the RNN's response to a perturbation is not a mere stimulus-driven reactive response, but an integrated response that can delay or withhold the production of counteracting forces if necessary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference from the observed muscle activation patterns.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "For the non-perturbed movement, the canonical tri-phasic muscle activation pattern reported in empirical studies can be observed.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that for the non-perturbed movement (black line in Figure 5e), we can observe the canonical tri-phasic muscle activation pattern reported in empirical studies (Wierzbicka et al., 1986).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5e supported by a citation to Wierzbicka et al., 1986.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The model with a perturbation-free network can handle perturbations during reaching relatively well, even up to \u00b16 N.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, following the same amount of training, the model with a perturbation-free network can handle perturbations during reaching relatively well, even up to \u00b16 N (Figure 5f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 5f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Muscle activations tend to differ in response to a perturbation between the perturbation-trained and perturbation-free networks, suggesting that the perturbation-free network might learn a slightly different control policy.",
+    "claim_type": "EXPLICIT",
+    "source": "Even though kinematics appeared superficially similar (Figure 5c, f), this comparison shows that muscle activations tend to differ in response to a perturbation (Figure 5e), suggesting that the perturbation-free network might learn a slightly different control policy.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an observation from Figure 5e with an inference about control policy.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The perturbation-free network is much less capable of stabilizing against the forces than its perturbation-trained counterpart.",
+    "claim_type": "EXPLICIT",
+    "source": "The perturbation-free network is much less capable of stabilizing against the forces than its perturbation-trained counterpart.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from comparing Figure 5d and 5g.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Even though the mere existence of a sensorimotor feedback input can help handle simple perturbations, exposing the model to perturbations during training does provide the network with additional information to learn a more robust control policy.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, even though the mere existence of a sensorimotor feedback input can help handle simple perturbations (Figure 5f), exposing the model to perturbations during training does provide the network with additional information to learn a more robust control policy.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an inference from comparing the performance of the two networks.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "MotorNet can train ANNs to reliably find a control policy for the effector.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, these simulations show that MotorNet can train ANNs to reliably find a control policy for the effector.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The resulting networks learn generalizable control policies that integrate sensorimotor feedback into its computation.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the resulting networks learn generalizable control policies that integrate sensorimotor feedback into its computation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion drawn from the simulation results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The training procedure to which the network is exposed is important to produce these control policies.",
+    "claim_type": "EXPLICIT",
+    "source": "This also illustrates the importance of the training procedure to which the network is exposed to produce these control policies (Driscoll et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Driscoll et al., 2022.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Training an RNN to perform a simple centre-out reaching task using an arm model results in the RNN neurons displaying a preferential movement direction (PMD) where they are more likely to fire.",
+    "claim_type": "EXPLICIT",
+    "source": "In that study, the authors show that training an RNN to perform a simple centre-out reaching task using an arm model similar to the arm26 in Figure 1a results in the RNN neurons displaying a preferential movement direction (PMD) where they are more likely to fire.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of findings from Lillicrap and Scott, 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The distribution of PMDs was asymmetrical, with a greater proportion of neurons firing for reaches around 135 and 325 degrees, matching empirical observations from non-human primate electrophysiological recordings in the primary motor cortex.",
+    "claim_type": "EXPLICIT",
+    "source": "The distribution of PMDs was asymmetrical, with a greater proportion of neurons firing for reaches around 135 and 325 degrees, matching empirical observations from non-human primate electrophysiological recordings in the primary motor cortex (Scott et al., 2001).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of findings from Lillicrap and Scott, 2013, with a citation to Scott et al., 2001.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "This asymmetrical representation of PMDs during reaching movements did not occur when RNNs were trained to control an effector that lacked the geometrical properties of an arm.",
+    "claim_type": "EXPLICIT",
+    "source": "Next, they showed that this asymmetrical representation of PMDs during reaching movements did not occur when RNNs were trained to control an effector that lacked the geometrical properties of an arm such as illustrated in Figure 4c\u2013e and section 'Training an ANN to perform a centre-out reaching task against a curl field'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of findings from Lillicrap and Scott, 2013.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "90 GRU units were sufficient to efficiently train the network to perform the task, as opposed to up to 1000 perceptron nodes in the original study.",
+    "claim_type": "EXPLICIT",
+    "source": "Because our RNN employs GRUs instead of a multi-layer perceptron, 90 units were sufficient to efficiently train the network to perform the task, as opposed to up to 1000 perceptron nodes in the original study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison between the current study and the original study.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Muscle activation patterns in the arm26 effector were like those reported in the original study.",
+    "claim_type": "EXPLICIT",
+    "source": "Following training, we first ensured that muscle activation patterns in the arm26 effector were like those reported in the original study (Figure 6d).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 6d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "A great variety of activation patterns over movement direction was observed.",
+    "claim_type": "EXPLICIT",
+    "source": "Regarding network activity, we observed a great variety of activation patterns over movement direction (Figure 6f).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 6f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Some GRUs showed a preference for timing.",
+    "claim_type": "EXPLICIT",
+    "source": "Some GRUs showed a preference for timing (e.g., neuron A4, C5)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from Figure 6f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Some GRUs showed a strong preference for reaching direction that was sustained over time.",
+    "claim_type": "EXPLICIT",
+    "source": "while others showed a strong preference for reaching direction that was sustained over time (neuron C3, A2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from Figure 6f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Most neurons showed a mixed preference for encoding time and reaching direction.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, most neurons showed a mixed preference for encoding time and reaching direction (neuron C8, A8).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation from Figure 6f.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "This heterogeneous set of responses matches empirical observations in non-human primate primary motor cortex recordings.",
+    "claim_type": "EXPLICIT",
+    "source": "This heterogeneous set of responses matches empirical observations in non-human primate primary motor cortex recordings (Churchland and Shenoy, 2007; Michaels et al., 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Churchland and Shenoy, 2007 and Michaels et al., 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The heterogeneous set of responses replicate similar visualizations from previously published work.",
+    "claim_type": "EXPLICIT",
+    "source": "and replicate similar visualizations from previously published work (Fortunato et al., 2024; Lillicrap and Scott, 2013; Safaie et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Fortunato et al., 2024, Lillicrap and Scott, 2013, and Safaie et al., 2023.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The colormap yields a 'ridge' of maximal activity whose peak varies across reach angle, forming a crooked line, illustrating a representational bias.",
+    "claim_type": "EXPLICIT",
+    "source": "The resulting colormap (Figure 6e, left panel) yields a 'ridge' of maximal activity whose peak varies across reach angle, forming a crooked line, illustrating a representational bias.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 6e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "This crooked ridge line was not observed in an RNN trained to control for a point-mass effector instead using an identical training procedure and analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "This crooked ridge line was not observed in an RNN trained to control for a point-mass effector instead using an identical training procedure and analysis (Figure 6e, right panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 6e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The same bias was reproduced invariably for the RNNs controlling an arm26 effector.",
+    "claim_type": "EXPLICIT",
+    "source": "The same bias was reproduced invariably for the RNNs controlling an arm26 effector (Figure 4d, e, 6a)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 6c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The bias failed to arise for RNNs controlling a point-mass.",
+    "claim_type": "EXPLICIT",
+    "source": "while it failed to arise for those controlling a point-mass (Figure 4a\u2013c, 6a).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated in Figure 6c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "These results mimic the observations made in the original study, specifically, that RNNs controlling an effector with no arm-like geometrical properties will not result in the biased PMD representation during reaching movements commonly observed in non-human primate electrophysiological studies.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, these results mimic the observations made in the original study (Lillicrap and Scott, 2013), specifically, that RNNs controlling an effector with no arm-like geometrical properties will not result in the biased PMD representation during reaching movements commonly observed in non-human primate electrophysiological studies (Scott et al., 2001; Scott and Kalaska, 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conclusion supported by citations to Lillicrap and Scott, 2013, Scott et al., 2001, and Scott and Kalaska, 1997.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "An established best practice in machine learning is to iterate quickly around a cycle of formulating an idea, implementing that idea in functionally efficient code, and testing the idea through running the simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "In the field of ML, an established best practice is to iterate quickly around a cycle of (1) formulating an idea, (2) implementing that idea in functionally efficient code, and (3) testing the idea through running the simulations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of best practices in machine learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "This [idea \u2192 code \u2192 test \u2192 idea] cycle is reminiscent of the [hypothesis \u2192 design task \u2192 test \u2192 hypothesis] cycle in empirical work, also known as the hypothetico-deductive method.",
+    "claim_type": "EXPLICIT",
+    "source": "This [idea \u2192 code \u2192 test \u2192 idea] cycle is reminiscent of the [hypothesis \u2192 design task \u2192 test \u2192 hypothesis] cycle in empirical work, also known as the hypothetico-deductive method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison between machine learning practices and scientific method.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "An important practice in ML is to ensure that one iteration of that cycle is quick enough, because producing an efficient model may require many such iterations.",
+    "claim_type": "EXPLICIT",
+    "source": "An important practice in ML is to ensure that one iteration of that cycle is quick enough, because producing an efficient model may require many such iterations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of best practices in machine learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "A way to view MotorNet is to improve iteration speed through this cycle.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on this framework, a way to view MotorNet is to improve iteration speed through this cycle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a conceptual framing of MotorNet's purpose.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The modular architecture of MotorNet enables users to alter specific aspects of the model while keeping everything else identical.",
+    "claim_type": "EXPLICIT",
+    "source": "The modular architecture of MotorNet enables users to alter specific aspects of the model while keeping everything else identical.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "MotorNet naturally allows users to create and tune objects to fit individual requirements.",
+    "claim_type": "EXPLICIT",
+    "source": "MotorNet naturally allows users to create and tune objects to fit individual requirements.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software flexibility.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "This flexibility will likely vary depending on the goal.",
+    "claim_type": "EXPLICIT",
+    "source": "This flexibility will likely vary depending on the goal (Figure 7).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a speculation about software use, with reference to Figure 7.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Some extensions only require adjusting parameter values of existing object classes, such as editing the Arm26 Skeleton class to match the arm of a non-human primate.",
+    "claim_type": "EXPLICIT",
+    "source": "Some extensions only require adjusting parameter values of existing object classes, such as editing the Arm26 Skeleton class to match the arm of a non-human primate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an example of software extensibility.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Other extensions will require subclassing, such as creating an Effector for an eyeball, which might require special geometric properties building on the point-mass Skeleton object.",
+    "claim_type": "EXPLICIT",
+    "source": "Other extensions will require subclassing, such as creating an Effectorfor an eyeball, which might require special geometric properties building on the point-mass Skeleton object (Table 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an example of software extensibility.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Effectors that stray away from typical vertebrate effectors will likely prove more challenging, such as an octopus arm, because they do not rely on bones.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, effectors that stray away from typical vertebrate effectors will likely prove more challenging, such as an octopus arm, because they do not rely on bones.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about software limitations.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "While all these extensions vary in the difficulty of their implementation, each has the capacity to fit and work harmoniously within the framework of the MotorNet architecture.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, while all these extensions vary in the difficulty of their implementation, each has the capacity to fit and work harmoniously within the framework of the MotorNet architecture.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a claim about the software architecture's flexibility.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "When motor control researchers want to create canonical models, they must implement their own version of said model based on methodological descriptions of previously published scientific articles.",
+    "claim_type": "EXPLICIT",
+    "source": "Typically, when motor control researchers want to create canonical models, they must implement their own version of said model based on methodological descriptions of previously published scientific articles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of current practices in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Because MotorNet is open source, individual contributions can easily be shared online for the benefit of others.",
+    "claim_type": "EXPLICIT",
+    "source": "However, because MotorNet is open source, individual contributions can easily be shared online for the benefit of others.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the benefits of open source software.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "If a researcher creates a Muscle class with a parametrizable pennation angle, future researchers and team will not have to re-create their own implementation of the same object anymore.",
+    "claim_type": "EXPLICIT",
+    "source": "For instance, if a researcher creates a Muscle class with a parametrizable pennation angle (Millard et al., 2013; Thelen, 2003), future researchers and team will not have to re-create their own implementation of the same object anymore.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an example of the benefits of open source software.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Open source practices allow more dynamical peer-checking, avoiding dissemination of errors and improving consistency of model implementations.",
+    "claim_type": "EXPLICIT",
+    "source": "This also allows more dynamical peer-checking, avoiding dissemination of errors and improving consistency of model implementations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the benefits of open source software.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "MotorNet will be able to benefit from community-driven incremental work through open-source practices.",
+    "claim_type": "EXPLICIT",
+    "source": "In other words, MotorNet will be able to benefit from community-driven incremental work through open-source practices.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about the future development of MotorNet.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "For the past several years, ML has been standing out as one of the most dynamic research fields, achieving breakthroughs and successfully scaling innovative work towards solving everyday problems.",
+    "claim_type": "EXPLICIT",
+    "source": "For the past several years, ML has been standing out as one of the most dynamic research fields, achieving breakthroughs and successfully scaling innovative work towards solving everyday problems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the field of machine learning.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "It would be challenging for MotorNet to keep up with the pace of ML innovation to provide users with implementations of the latest architectures and algorithms.",
+    "claim_type": "EXPLICIT",
+    "source": "It would be challenging for MotorNet to keep up with the pace of ML innovation to provide users with implementations of the latest architectures and algorithms.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the challenges of software development.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Relying on PyTorch to build policies ensures that any innovation in model design quickly finds its way to a viable MotorNet implementation, because PyTorch capabilities allow for fast adaptation aligned with progress in ML.",
+    "claim_type": "EXPLICIT",
+    "source": "Rather, we rely on PyTorch to build policies. This ensures that any innovation in model design quickly finds its way to a viable MotorNet implementation, because PyTorch capabilities allow for fast adaptation aligned with progress in ML.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software design strategy.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "MotorNet is built with the following logic in mind: anything PyTorch can build, MotorNet should be able to use as a policy.",
+    "claim_type": "EXPLICIT",
+    "source": "Generally, MotorNet is built with the following logic in mind: anything PyTorch can build, MotorNet should be able to use as a policy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the software design philosophy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The MotorNet Environment class is a subclass of gymnasium's Env base class and abides by its associated API.",
+    "claim_type": "EXPLICIT",
+    "source": "The MotorNet Environment class is a subclass of gymnasium's Env base class and abides by its associated API (Chinnaiya et al., 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a technical specification of the software, supported by a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "MotorNet environments are by design compatible with any Python toolbox that works with gymnasium.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, MotorNet environments are by design compatible with any Python toolbox that works with gymnasium, which is a standard and popular interfacing toolbox to link reinforcement learning agents with environments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical consequence of the software design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Gymnasium is a standard and popular interfacing toolbox to link reinforcement learning agents with environments.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, MotorNet environments are by design compatible with any Python toolbox that works with gymnasium, which is a standard and popular interfacing toolbox to link reinforcement learning agents with environments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of gymnasium.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Gymnasium is very well documented and widely used.",
+    "claim_type": "EXPLICIT",
+    "source": "It is very well documented and widely used, which will ensure that users who wish to employ reinforcement learning to control MotorNet environments will be able to do so relatively effortlessly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of gymnasium.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Users who wish to employ reinforcement learning to control MotorNet environments will be able to do so relatively effortlessly.",
+    "claim_type": "EXPLICIT",
+    "source": "It is very well documented and widely used, which will ensure that users who wish to employ reinforcement learning to control MotorNet environments will be able to do so relatively effortlessly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prediction about user experience.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Typical biomechanical software distributions implement some form of collision physics in their physics engine.",
+    "claim_type": "EXPLICIT",
+    "source": "Typical biomechanical software distributions implement some form of collision physics in their physics engine (Delp et al., 2007; Seth et al., 2018; Todorov et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to existing software.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "MotorNet does not implement collision physics.",
+    "claim_type": "EXPLICIT",
+    "source": "This is not the case for MotorNet.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of MotorNet.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Some biomechanical software distributions such as OpenSim propose a large array of joint types such as hinge joints or rotational joints, and complex muscle paths such as wrap points that trigger only when the muscle collides with them.",
+    "claim_type": "EXPLICIT",
+    "source": "Some biomechanical software distributions such as OpenSim propose a large array of joint types such as hinge joints or rotational joints, and complex muscle paths such as wrap points that trigger only when the muscle collides with them (Delp et al., 2007; Seth et al., 2010; Seth et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to OpenSim documentation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "MotorNet does not yet implement these types of features.",
+    "claim_type": "EXPLICIT",
+    "source": "While these features increase the realism of a biomechanical model, MotorNet does not yet implement these types of features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about a limitation of MotorNet.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "The lack of complex biomechanical features constrains what types of effectors MotorNet can realistically implement.",
+    "claim_type": "EXPLICIT",
+    "source": "In practice, this constrains what types of effectors MotorNet can realistically implement and adding some of these features is under consideration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the implications of the limitation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Adding some of these features is under consideration.",
+    "claim_type": "EXPLICIT",
+    "source": "In practice, this constrains what types of effectors MotorNet can realistically implement and adding some of these features is under consideration.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about future development plans.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Some of the limitations outlined are considered as future routes for improvement.",
+    "claim_type": "EXPLICIT",
+    "source": "Some of the limitations outlined above are considered as future routes for improvement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about future development plans.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "It is becoming increasingly evident that spinal contribution plays a prominent role in motor control beyond the typically considered spinal reflex.",
+    "claim_type": "EXPLICIT",
+    "source": "It is becoming increasingly evident that spinal contribution plays a prominent role in motor control beyond the typically considered spinal reflex (Reschechtko and Pruszynski, 2020; Weiler et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to Reschechtko and Pruszynski, 2020 and Weiler et al., 2019.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "One may consider that supraspinal control interacts with spinal contribution to define a motor control policy.",
+    "claim_type": "EXPLICIT",
+    "source": "One may consider that supraspinal control interacts with spinal contribution to define a motor control policy (Loeb, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Loeb, 2021.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "A policy's latent dynamics will be significantly impacted by the presence of a spinal compartment.",
+    "claim_type": "EXPLICIT",
+    "source": "Within MotorNet, this suggests that a policy's latent dynamics will be significantly impacted by the presence of a spinal compartment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the implications of adding a spinal compartment.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "It may be worthwhile to implement a spinal compartment to explore the consequences of such biological design, especially with regard to upstream computation.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, it may be worthwhile to implement one such spinal compartment to explore the consequences of such biological design, especially with regard to upstream computation (Cisek, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future development, supported by a citation to Cisek, 2019.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "A deeply established idea in neuroscience is that distinct regions will perform different computations, and thus that a complex system may not be considered as a uniform, fully connected network.",
+    "claim_type": "EXPLICIT",
+    "source": "A deeply established idea in neuroscience is that distinct regions will perform different computations, and thus that a complex system may not be considered as a uniform, fully connected network (Abbott and Svoboda, 2020; Keeley et al., 2020; Pesaran et al., 2021; Semedo et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "For the motor control system, using a modular network architecture with controlled communication between each module has been shown to have more explanatory power than a non-modular system.",
+    "claim_type": "EXPLICIT",
+    "source": "This is also true for the motor control system, where using a modular network architecture with controlled communication between each module has been shown to have more explanatory power than a non-modular system (Michaels et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Michaels et al., 2020.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "A potential development for MotorNet is to include a model class with a modular architecture to study how cross-region networks work to enable neural control of the body.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, a potential development for MotorNet is to include a model class with a modular architecture to study how cross-region networks work to enable neural control of the body.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future development.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "Most published work in motor control relies either on Hill-type muscle models or direct torque actuators similar to the ReLu muscle that MotorNet provides.",
+    "claim_type": "EXPLICIT",
+    "source": "Most published work in motor control relies either on Hill-type muscle models (Bhushan and Shadmehr, 1999; Kistemaker et al., 2006; Kistemaker et al., 2010; Nijhof and Kouwenhoven, 2000) or direct torque actuators (Lillicrap and Scott, 2013) similar to the ReLu muscle that MotorNet provides.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by multiple citations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "Despite its popularity, even the more-detailed Hill-type muscle remains a phenomenological model of real muscle behaviour, which can easily show its limits when trying to understand how the brain controls movement.",
+    "claim_type": "EXPLICIT",
+    "source": "However, despite its popularity, even the more-detailed Hill-type muscle remains a phenomenological model of real muscle behaviour, which can easily show its limits when trying to understand how the brain controls movement (Blum et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by a citation to Blum et al., 2020.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Alternative muscle model formalizations exist, such as the Distribution-Moment muscle model, which may be worth implementing within MotorNet as well.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternative muscle model formalizations exist, such as the Distribution-Moment muscle model (Zahalak, 1981), which may be worth implementing within MotorNet as well.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculation about future development, supported by a citation to Zahalak, 1981.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "For all models, the timestep size was 0.01 s.",
+    "claim_type": "EXPLICIT",
+    "source": "For all models, the timestep size was 0.01 s",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "Effectors were actuated using numerical integration with the Euler method.",
+    "claim_type": "EXPLICIT",
+    "source": "Effectors were actuated using numerical integration with the Euler method.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a methodological detail.",
+    "evidence_type": [
+      "DATA"
+    ]
+  }
+]

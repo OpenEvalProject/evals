@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Genetically predicted T2D (via weighted genetic risk score, wGRS) is associated with lower fracture risk and higher BMD in UK Biobank. The wGRS of 404 SNPs was strongly associated with T2D (OR=1.6, p<2\u00d710\u207b\u00b9\u2076). Genetically determined T2D was associated with lower fracture risk (OR=0.982, p=0.006) for all fractures, with similar protective trends for weight-bearing and other bone fractures. No significant sex interactions were identified. Genetically determined T2D was also associated with higher BMD in pooled samples and in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 provide convergent evidence from one-sample MR (wGRS) analysis in UK Biobank. The wGRS is strongly associated with T2D, validating the instrument strength. Multiple fracture outcomes and BMD show consistent associations with genetically predicted T2D, with appropriate covariate adjustment and sex-stratified analyses. The statistical significance is robust across outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Two-sample MR analysis confirms that genetically predicted T2D causally reduces fracture risk. Using 298 independent SNPs as instruments, IVW (OR=0.965, p=0.003), simple median (OR=0.967, p=0.033), and MR-PRESSO (OR=0.967, p=0.004) methods all showed protective effects. MR-Egger regression also suggested inverse association (OR=0.9666, p=0.0002). After FDR correction, two SNPs including rs4580892 near RSPO3 remained significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 present two-sample MR results using independent GWAS summary data. Multiple MR methods (IVW, simple median, MR-PRESSO, MR-Egger) converge on a protective effect of genetically predicted T2D on fracture risk. Heterogeneity was detected but results remained significant after accounting for pleiotropy. The identification of rs4580892 near RSPO3 provides biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "Multivariable MR analysis shows that T2D has a direct protective effect on fracture risk and increases BMD, independent of BMI. T2D had a direct effect on decreased fracture risk adjusted for BMI (OR=0.974, p=0.017), with BMI mediating 9.03% of the protective effect. T2D also showed a direct effect on increased BMD after adjusting for BMI (\u03b2=0.042, p=1.92\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, and C37 demonstrate that the protective genetic effect of T2D on fracture and positive effect on BMD persist after adjusting for BMI in multivariable MR. The mediation analysis quantifies BMI's contribution (9.03%), indicating that the genetic effect is largely independent of BMI. This addresses potential confounding by body weight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Two-sample MR analysis demonstrates a causal association between genetically predicted T2D and increased BMD. IVW (\u03b2=0.041, p=8.14\u00d710\u207b\u2079), simple median (\u03b2=0.028, p=6.59\u00d710\u207b\u00b9\u00b3), and MR-PRESSO (\u03b2=0.029, p=1.14\u00d710\u207b\u00b9\u2074) all showed consistent positive associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide convergent evidence from multiple two-sample MR methods showing that genetically predicted T2D increases BMD. The highly significant p-values and consistency across methods strengthen the causal inference. This complements the wGRS findings (C24-C25) using independent data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "T2D and fracture exhibit polygenic overlap with predominantly inverse genetic effects. LDSC showed non-significant genetic correlation (rg=-0.0114). MiXeR analysis identified 428 shared causal variants (18% of T2D variants), with only 39% showing concordant direction and negative correlation of effect sizes (rho_\u03b2=-0.336).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 characterize the shared genetic architecture between T2D and fracture using complementary methods (LDSC and MiXeR). The findings reveal polygenic overlap despite non-significant overall genetic correlation, with predominantly discordant effect directions. This provides mechanistic insight into the inverse relationship observed in MR analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ConjFDR analysis identified 10 genomic loci shared between T2D and fracture, with the top signal at rs4580892 in RSPO3 (conjFDR=1.45E-05). Seven of 10 loci showed inverse effect directions. The rs4580892_T allele was associated with increased T2D risk (OR=1.041227, p=8.46\u00d710\u207b\u2079) but decreased fracture risk (OR=0.944, p=3.68\u00d710\u207b\u00b9\u2070).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 identify specific shared loci using conjFDR, with RSPO3 emerging as the top signal. The inverse effect directions at rs4580892 for T2D and fracture are statistically robust and biologically plausible. This provides a specific genetic locus linking the two traits with opposite effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Higher RSPO3 expression in adipose subcutaneous is associated with increased T2D risk but decreased fracture risk, and is linked to central adiposity. SMR analysis showed higher RSPO3 expression associated with increased T2D risk (OR=1.102, p=0.004) and decreased fracture risk (OR=0.695, p=0.0005). RSPO3 expression was also associated with higher waist circumference (\u03b2=0.090, p=0.004), waist-hip ratio (\u03b2=0.204, p=0.0002), and visceral adipose (\u03b2=0.199, p=4.36\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 use SMR to link RSPO3 gene expression to both T2D and fracture with opposite effects, and to adiposity measures. The associations are statistically significant and provide a mechanistic link through fat distribution. This supports the hypothesis that RSPO3 mediates the inverse relationship between T2D and fracture through effects on body composition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Increased circulating RSPO3 protein is associated with increased T2D risk but reduced fracture risk. MR analysis using pQTL data showed circulating RSPO3 associated with increased T2D risk (OR=1.24, p=7.86\u00d710\u207b\u2079) and reduced fracture risk (OR=0.73, p=4.1\u00d710\u207b\u00b9\u2070).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 extend the RSPO3 findings from gene expression (C48-C49) to circulating protein levels using pQTL data. The consistent inverse associations with T2D and fracture at the protein level strengthen the biological plausibility of RSPO3 as a mediator. The effect sizes are substantial and highly significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "T2D and BMD show significant positive genetic correlation and extensive polygenic overlap with predominantly concordant effects. LDSC showed positive genetic correlation (rg=0.0923, p=2.50\u00d710\u207b\u2076). MiXeR identified 691 shared variants (29% of T2D variants). ConjFDR identified 661 shared loci, with 68% showing concordant associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 characterize the shared genetic architecture between T2D and BMD, contrasting with the T2D-fracture relationship. The positive genetic correlation, extensive polygenic overlap, and predominantly concordant effect directions are well-supported by multiple complementary methods (LDSC, MiXeR, conjFDR). This explains the 'diabetic bone paradox' at the genetic level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Descriptive characteristics of the UK Biobank cohort used for observational analyses. Among 352,879 participants, 13,817 (3.92%) developed T2D during 2006-2015 with mean duration 8.34 years. T2D patients were older (63.20 vs 60.55, p<2.2\u00d710\u207b\u00b9\u2076), had higher BMI (32.07 vs 27.08, p<2.2\u00d710\u207b\u00b9\u2076), and 16,147 (4.6%) had fractures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 provide descriptive statistics for the observational cohort. The sample sizes are large, and the statistical comparisons are highly significant. These baseline characteristics are essential for interpreting the subsequent observational analyses and show expected differences between T2D and non-T2D groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Observational analysis shows T2D patients have higher fracture risk after adjusting for multiple covariates, with BMI mediating 30.2% of the effect. Cox regression showed T2D associated with increased fracture risk (HR=1.527, p<2\u00d710\u207b\u00b9\u2076) after adjusting for age, sex, BMI, physical activity, HbA1c, medication, and fall history. BMI mediated 30.2% of the effect. The association persisted after additionally controlling for BMD (HR=1.574, p<2\u00d710\u207b\u00b9\u2076) and was observed for both weight-bearing and other bone fractures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present observational associations between T2D and fracture risk in UK Biobank. The analyses adjust for multiple relevant covariates and show robust associations across different fracture sites. The mediation analysis quantifies BMI's protective contribution (30.2%). However, these observational findings contrast with the genetic analyses, highlighting the importance of unmeasured confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The association between T2D and fracture risk depends on the number of T2D-related risk factors present. Stratified Cox regression showed T2D with \u22652 risk factors associated with increased fracture risk (HR=1.39, p=1.32\u00d710\u207b\u2077), one risk factor showed attenuated effect (HR=1.20, p=0.010), and no risk factors showed non-significant association (HR=1.08, p=0.452).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 demonstrate a dose-response relationship between T2D-related risk factors and fracture risk. The stratified analysis shows that fracture risk decreases as risk factors are eliminated, becoming non-significant in T2D patients without risk factors. This reconciles the observational and genetic findings, suggesting that T2D-related complications, not T2D itself, drive fracture risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Observational analysis shows T2D patients have higher BMD, with the effect size decreasing as the number of risk factors increases. T2D patients had higher BMD than non-diabetic subjects (0.57 vs 0.54, p<2.2\u00d710\u207b\u00b9\u2076). Linear regression showed T2D associated with increased BMD (\u03b2=0.00957, p=1.35\u00d710\u207b\u00b9\u2070). The effect size decreased with increasing risk factors (no risk factors: \u03b2=0.023; one risk factor: \u03b2=0.020; \u22652 risk factors: \u03b2=0.017).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 show that T2D is associated with higher BMD in observational data, consistent with the genetic findings. The stratified analysis reveals that the BMD advantage decreases with increasing risk factors, paralleling the fracture risk findings. This supports the 'diabetic bone paradox' at the observational level while showing that risk factors modulate the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C88",
+      "C97"
+    ],
+    "result": "Summary conclusion that genetically predicted T2D is associated with higher BMD and lower fracture risk, and does not show the 'diabetic bone paradox' when confounding is minimized through genetic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C88, and C97 summarize the main genetic findings. These conclusions are well-supported by the convergent evidence from wGRS (C19-C25), two-sample MR (C26-C37), and multivariable MR analyses. The genetic approach alleviates confounding by T2D-related complications, revealing that genetically determined T2D does not increase fracture risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The observed effect of T2D on fracture risk in observational studies is driven by T2D-related risk factors rather than T2D itself. Stratified analyses showed the effect size decreased as risk factors decreased, becoming non-significant when no risk factors were present. This suggests the 'diabetic bone paradox' may not exist if T2D-related risk factors are eliminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C87, and C89 synthesize the stratified observational findings (C69-C71) with the genetic results to propose that T2D-related complications, not T2D per se, drive fracture risk. This interpretation is supported by the dose-response relationship with risk factors and the contrast between genetic and observational findings. However, the specific risk factors used may not capture all relevant confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Speculation that shared genetic components between bone metabolism and T2D, mediated by obesity tendency, may explain the inverse association pattern observed in genetic analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 are explicitly speculative interpretations of the genetic findings. While the RSPO3 findings (C48-C54) linking to adiposity provide some support, and BMI mediation analyses (C33, C65) show BMI's role, the mechanistic pathway remains incompletely characterized. The speculation is reasonable but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims about T2D prevalence, healthcare costs, and complications, establishing the clinical significance of the research question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide standard background information about T2D, supported by appropriate citations. These are well-established facts in the literature and provide context for the study. The claims are appropriately referenced and not controversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims about osteoporosis, factors affecting bone health, and the 'diabetic bone paradox' concept, establishing the research context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 provide background on osteoporosis and introduce the 'diabetic bone paradox' concept with appropriate citations. These establish the research question and are well-supported by prior literature. The paradox concept is central to the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Review of prior observational studies showing conflicting evidence about the relationship between T2D and fracture risk, with some studies showing increased risk and others showing no increase or even decreased risk. Studies also suggest BMD remains a useful predictor in T2D patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C18 review prior observational literature, appropriately citing multiple studies with conflicting findings. This establishes the controversy and heterogeneity in the literature that motivates the current study's genetic approach. The citations appear accurate and the summary of findings is balanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background on RSPO3 biology, including its role as a WNT-signaling modulator, effects on osteoblasts and bone mass, and impact on body fat distribution and T2D risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 provide biological context for RSPO3 with appropriate citations to prior literature. These claims establish the biological plausibility of RSPO3 as a mediator linking T2D, bone health, and adiposity. The citations support the mechanistic framework for interpreting the genetic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C91",
+      "C92"
+    ],
+    "result": "Discussion of T2D-related risk factors for fracture, including medications (insulin, thiazolidinediones), falls, physical activity, weight loss interventions, and hyperglycemia effects on bone cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C91-C92 review known T2D-related risk factors for fracture with appropriate citations. These provide context for the stratified analyses and support the interpretation that T2D complications, rather than T2D itself, drive fracture risk. The citations appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Discussion of alternative bone assessment methods, MR methodology, and comparison with prior MR studies of T2D and fracture/BMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 provide methodological context and comparison with prior work. The MR methodology description (C94) is accurate. The comparison with Trajanoska et al. 2018 (C95) and Ahmad et al. 2017/Mitchell et al. 2021 (C96) appropriately positions the current study relative to prior work. The citations support the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Discussion of BMI differences between T2D and non-T2D groups in UK Biobank, and review of prior studies identifying risk factors and showing lower fracture risk in T2D patients without risk factors or with overweight BMI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 provide supporting evidence from the current study (C100) and prior literature (C101-C103) for the interpretation that risk factors and BMI modulate the T2D-fracture relationship. The citations to Axelsson et al. 2023 and Davie et al. 2021 are appropriate and support the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Clinical recommendation that managing T2D complications is important for preventing fracture risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a reasonable clinical recommendation based on the study findings, particularly the stratified analyses showing that fracture risk decreases when T2D-related risk factors are eliminated. However, this is an inference from observational data and the specific interventions are not tested in this study.",
+    "result_type": "MINOR"
+  }
+]

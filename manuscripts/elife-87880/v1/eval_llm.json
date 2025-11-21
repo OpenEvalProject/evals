@@ -1,0 +1,519 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on DOA and OPA1: DOA is a progressive form of blindness caused by degeneration of retinal ganglion cells and their axons, primarily due to mutations in the OPA1 gene. OPA1 encodes a mitochondrial dynamin-like GTPase with multiple functions. DOA plus, affecting ~20% of OPA1 mutation carriers, often results from missense mutations in the GTPase domain that may exert dominant-negative effects, though not all GTPase domain mutations cause DOA plus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C32) provide well-established background knowledge about DOA, OPA1, and DOA plus, supported by multiple citations to prior research. The epidemiological data, genetic basis, protein function, and clinical manifestations are consistent with the scientific literature. This foundational information appropriately contextualizes the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Limitations of existing DOA models: Prior models in yeast, fibroblasts, mice, zebrafish, C. elegans, and Drosophila have provided insights into OPA1 function but have limitations. Mouse models show slow phenotype development (16-17 months), zebrafish models show developmental abnormalities but haven't been used for optic nerve studies, and C. elegans models show limited nervous system phenotypes. Previous Drosophila models showed various phenotypes but limited evidence of optic nerve axonal abnormalities. The ability to distinguish LOF from DN effects in an in vivo model at the structural level of retinal axon degeneration has remained elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C47 accurately summarize limitations of existing models based on cited literature. The authors correctly identify gaps in prior work, particularly the lack of in vivo models that can directly observe retinal axon degeneration and distinguish LOF from DN mutations at the structural level. This establishes the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Drosophila visual system as a model: The Drosophila visual system is structurally similar to mammals with conserved mechanisms of synaptogenesis and neural circuit formation. Drosophila R7/8 photoreceptors extend retinal axons from the retina to the medulla, providing potential application as a model for mammalian photoreceptors and RGCs. The authors define Drosophila retinal axons as analogous to the human optic nerve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by citations demonstrating structural and functional conservation between Drosophila and mammalian visual systems. The explicit methodological definition (C52) of retinal axons as analogous to the optic nerve is reasonable given the anatomical similarities, though this is an approximation rather than a perfect equivalence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "dOPA1 knockdown causes mitochondrial fragmentation in retinal axons: dOPA1 colocalizes with mitochondria in retinal axons (C53). dOPA1 RNAi significantly reduced mitochondrial signal intensity in retinal axons (C54). Electron microscopy revealed significantly decreased mitochondrial size in R1-6 axons (C60), with 22.8% showing severely abnormal ultrastructure (C62). Trafficking defects are not the main cause of mitochondrial mislocalization (C59), suggesting dOPA1 maintains mitochondrial morphology by promoting fusion (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C63 are well-supported by experimental data from confocal microscopy (Figure 1B), quantitative fluorescence analysis (Figures 1C-E), and electron microscopy (Figures 1F-J). The comparison with milton knockdown (C56-C59) appropriately controls for transport defects. Statistical significance is reported (p=0.0006 for intensity, p<0.0001 for mitochondrial area). The conclusion about mitochondrial fusion (C63) is a reasonable inference from the fragmentation phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "dOPA1 knockdown increases ROS levels and activates mitophagy: ROS levels were significantly elevated in dOPA1 knockdown retinal axons compared to controls (C64, Figure 2A-C). Post dOPA1 knockdown, there was significant elevation in mCherry-positive, GFP-negative puncta at 1 week, demonstrating activation of mitophagy (C66, Figure 2D-H).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C66 are supported by experimental data using MitoSOX for ROS detection and mitoQC reporter for mitophagy. The mitoQC system is an established method for detecting mitophagy. Statistical analyses show significant differences. The temporal aspect (1 week for mitophagy) is appropriately documented. These findings are consistent with prior reports in mouse and nematode models (C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "dOPA1 knockdown causes progressive axonal degeneration preceding cell body degeneration: dOPA1 knockdown caused axonal degeneration 1 day after eclosion that further decreased after 1 week (C67, Figure 3B-F). Similar results were obtained with an independent RNAi line (C68). The knockdown caused decreased rhabdomeres per ommatidium in 1-week-old adults (C69), but ommatidia remained intact at day 0 despite axonal loss (C70). This indicates neuronal degeneration starts from axons and continues to cell bodies (C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are well-supported by quantitative data using MeDUsA for axon counting (Figure 3B-F) and electron microscopy for rhabdomere counting (Figure 3G-K). The temporal sequence showing axonal degeneration (day 1) preceding cell body degeneration (1 week) is clearly demonstrated with statistical significance (p<0.0001). Replication with an independent RNAi line (C68) strengthens the findings. The dying-back pattern is appropriately identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "dOPA1 knockdown produces rough-eye phenotype: Homozygous dOPA1 mutations display a glossy eye phenotype (C73, prior work). GMR-Gal4-driven dOPA1 knockdown also produced a glossy eye-like rough-eye phenotype (C74, Figure 3\u2014supplement 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by prior literature (C73) and experimental observation (C74). However, the authors note that GMR-Gal4 is not exclusive to photoreceptors, so the retinal axonal degeneration could potentially be secondary to abnormalities in support cells. This caveat is appropriately acknowledged in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "dOPA1 mutant analysis confirms requirement for retinal axon maintenance: dOPA1 mutant somatic clones showed significantly fewer retinal axons than controls at 1 day after eclosion (C75, Figure 4A-B, D). dOPA1 expression partially rescued the axonal degeneration (C76, Figure 4C-D). These results indicate dOPA1 is necessary for maintaining retinal axon numbers (C77), and the neurodegeneration mimics mammalian optic nerve degeneration (C78-C79), suggesting conserved OPA1 function across species (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by mutant clone analysis with appropriate genetic controls (FLP/FRT system). The partial rescue by dOPA1 expression (C76) demonstrates specificity. Statistical significance is shown (Figure 4D). The comparison to mammalian phenotypes (C78-C79) is reasonable given the similar mitochondrial fragmentation, increased ROS, and axonal degeneration. The inference about functional conservation (C80) is justified but should be considered preliminary pending direct functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "hOPA1 can functionally substitute for dOPA1, but disease mutations show differential rescue: hOPA1 expression in dOPA1 mutant retinal axons partially rescued axon numbers (C81, Figure 5E), suggesting hOPA1 and dOPA1 are interchangeable (C82). However, hOPA1 mutations (2708-2711del, I382M, D438V, R445H) failed to rescue to the same extent as WT (C83). The 2708-2711del and I382M mutations showed weak rescue (C84), suggesting LOF with residual activity (C85), consistent with disease severity (C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by rescue experiment data (Figure 5E) with appropriate sample sizes and statistical analysis. The differential rescue efficiency among mutations is clearly demonstrated. The interpretation that 2708-2711del and I382M retain partial function (C85) is reasonable based on the quantitative rescue data. The correlation with clinical disease severity (C86) is an appropriate inference, though direct clinical correlation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "hOPA1 mutations show differential effects on ROS rescue: WT hOPA1 effectively mitigated ROS elevation, whereas 2708-2711del, D438V, and R445H did not (C87, Figure 5F). Importantly, I382M reduced ROS levels comparably to WT (C88). These findings demonstrate that both axonal degeneration and ROS increase can be counteracted by hOPA1 (C89), with I382M acting as a relatively weak hypomorph (C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by ROS quantification data (Figure 5F) with statistical analysis. The differential behavior of I382M (rescuing ROS but not axons as effectively) is interesting and well-documented. The characterization of I382M as a weak hypomorph (C90) is consistent with the data showing partial rescue of both phenotypes. This suggests ROS elevation and axonal degeneration may be partially separable phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C98"
+    ],
+    "result": "Co-expression experiments distinguish LOF from DN mutations: When WT hOPA1 was co-expressed with mutant forms in dOPA1 mutant background, WT, 2708del, and I382M showed no interference with rescue (C91, Figure 6B). However, D438V and R445H significantly suppressed the rescue (C92, C97, Figure 6B-C), demonstrating DN effects. This experimental model can separate LOF and DN mutations (C93, C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93, C97-C98 are strongly supported by co-expression experiment data (Figure 6B) with clear statistical significance. The experimental design is appropriate for testing DN effects: if a mutation is DN, it should interfere with WT rescue when co-expressed. The differential behavior of D438V/R445H (suppressing rescue) versus 2708del/I382M (not suppressing) provides clear evidence for distinguishing LOF from DN mutations. This is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C11"
+    ],
+    "result": "Summary of fly model utility: LOF of dOPA1 in Drosophila imitates human DOA with optic nerve degeneration (C94). The degeneration was successfully reversed by expressing hOPA1 (C95). Previously reported mutations could not be rescued except I382M (C96). The fly model will allow investigating new hOPA1 mutations for DOA or DOA plus (C99) and guides initial treatment strategies (C11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96, C99, C11 appropriately summarize the major findings. The model's utility for investigating new mutations (C99) is a reasonable projection based on the demonstrated ability to distinguish LOF from DN effects. However, the claim about guiding treatment strategies (C11) is somewhat speculative, as no treatments currently exist (C31), and the model would need validation with therapeutic interventions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Prior applications of MeDUsA methodology: The authors previously used MeDUsA to quantify axonal degeneration in various neurological disorders (C100), including identifying a SART1 variant with gain-of-toxic-function (C101-C102) and DHX9 LOF mutations causing neurodevelopmental disorder (C103-C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 describe prior work by the authors using the MeDUsA methodology, supported by citations to their previous publications. This establishes the validity and broad applicability of the quantification method used in the current study. These are appropriately cited as prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Differential rescue of ROS versus axonal degeneration suggests multiple pathogenic mechanisms: dOPA1 knockdown precipitates both axonal degeneration and ROS elevation (C105). hOPA1 expression partially reversed axonal degeneration but nearly completely normalized ROS levels (C106), implying factors other than ROS drive axonal degeneration (C107). Differences between DN and LOF mutations were evident in axonal degeneration but less apparent with ROS as a biomarker (C108).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by the differential rescue data (Figures 5E-F). The observation that ROS is more completely rescued than axonal degeneration (C106) is quantitatively demonstrated and suggests ROS elevation is not the sole driver of axonal loss (C107). The reduced discriminatory power of ROS for LOF versus DN (C108) is an important limitation for using ROS as a biomarker. These inferences are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Systemic dOPA1 knockdown shows no changes in mitochondrial quantity or autophagy: In systemic dOPA1 knockdown, assessments of mitochondrial quantity (COXII) and autophagy activity (Atg8a) revealed no significant changes (C109, Figure 5\u2014supplement 1), suggesting cellular consequences of reduced OPA1 expression vary across cell types (C110).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by western blot data (Figure 5\u2014supplement 1) showing no significant differences in COXII or Atg8a-II/I ratios across genotypes. The inference about cell-type-specific effects (C110) is reasonable given the localized effects in retinal axons versus lack of systemic changes. However, the use of whole-body lysates may dilute tissue-specific changes, which is a limitation of this analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Incomplete rescue by dOPA1 may reflect expression level, non-autonomous effects, or isoform requirements: Expressing dOPA1 in dOPA1 mutant retinal axons resulted in significant but incomplete rescue (C111). Possible explanations include: the Gal4 line may not replicate endogenous expression levels/timing (C112), non-autonomous effects from other cell types (C113), or requirements for multiple OPA1 isoforms as in mice (C114-C115).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 appropriately discuss limitations of the rescue experiments. The incomplete rescue (C111) is clearly shown in the data (Figure 4D). The proposed explanations (C112-C113) are reasonable hypotheses, though speculative. The citation to mouse OPA1 isoform requirements (C114) provides support for the isoform hypothesis (C115). These represent thoughtful consideration of experimental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Novel aspects of the fly model: The fly model is the first simple organism allowing observation of retinal axon degeneration (C116). Prior studies observed mitochondrial fragmentation in other Drosophila tissues (C117). The study demonstrates dOPA1 knockdown causes sequential deterioration from axonal terminals to cell bodies (C118), aligning with dying-back neuropathy (C119).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 appropriately highlight the novelty of directly observing retinal axon degeneration in a simple organism. The comparison to prior Drosophila work (C117) is accurate based on citations. The dying-back pattern (C118-C119) is well-supported by the temporal data (Figures 3F, 3K) and appropriately connected to established neuropathology concepts with citation support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Advantages of the fly model over other systems: dOPA1 function can be substituted by hOPA1 (C121), confirming OPA1 functional conservation across species (C122). The fly model allows rapid phenotype observation (C123), unlike mouse models requiring 16-17 months (C124-C125). Previous models in nematodes, flies, and zebrafish did not directly observe axonal degeneration (C127), making the fly model useful for time-efficient analysis (C126).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 are well-supported. The functional substitution (C121) is demonstrated by rescue data (Figure 5E). The comparison to mouse model timelines (C124-C125) is accurate based on citations. The claim about being first to directly observe axonal degeneration in a simple organism (C127) is supported by literature review. The advantage of rapid analysis (C123, C126) is a valid inference from the 1-day to 1-week timeframe versus 16-17 months in mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C143",
+      "C149",
+      "C198"
+    ],
+    "result": "Potential applications of the model: The model has potential for screening modifiers and drugs (C128), demonstrating pathological significance of mutations and genetic diagnosis (C129), understanding mutation pathophysiology (C143), determining pathological effects of rare mutations/VUS (C149), and pathological modifier screening contributing to drug development (C198).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C129, C143, C149, C198 describe potential future applications of the model. While the model's ability to distinguish LOF from DN mutations is demonstrated, these broader applications (drug screening, modifier screening, VUS characterization) remain speculative and unvalidated. The model would need to be tested with known modifiers or therapeutic compounds to establish utility for screening. These are reasonable projections but lack experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Characterization of I382M as a mild hypomorph: The 2708-2711del mutation showed limited detectability, likely due to frameshift producing truncated protein (C130). I382M, D438V, and R445H showed expression comparable to WT (C131). Differential rescue efficiency suggests 2708-2711del and I382M retain partial function (C132). I382M has been described as a mild hypomorph (C133) that alone doesn't cause significant clinical outcomes (C134) despite reduced protein levels (C135), with minimal effects on mitochondrial volume and fusion (C136). Metabolomics classified I382M as mild hypomorph (C137). The authors hypothesize I382M is a mild hypomorphic variant contributing to severity in compound heterozygosity (C138).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C138 integrate current experimental data with prior literature. The western blot data (C130-C131, Figure 5B-C) support differential protein detection. The partial rescue by I382M (C132) is demonstrated in Figures 5E-F. The characterization as mild hypomorph is well-supported by multiple prior studies (C133-C137) and consistent with the current data. The hypothesis about compound heterozygosity (C138) is reasonable speculation based on the data, though it remains to be tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Advantages over yeast and fibroblast models: Results for LOF/DN segmentation were consistent with yeast models and patient fibroblasts (C139), confirming conserved OPA1 function (C140). The Drosophila model advantage is observing phenotypes mimicking actual disease state of axonal degeneration (C141) and analyzing at both molecular and structural levels (C142).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 appropriately compare the current model to prior systems. The consistency with yeast and fibroblast studies (C139) is supported by citations and validates the approach. The claimed advantages (C141-C142) are legitimate: the model does allow direct observation of axonal degeneration in an intact organism, which yeast and fibroblasts cannot provide, while maintaining the ability to perform molecular analyses. This represents a genuine advance over prior in vitro systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Growing challenge of VUS in OPA1: Advances in genome analysis identified many OPA1 variants (C144), creating challenges with growing VUS numbers (C145). ClinVar classified 110/319 (34%) OPA1 variants as VUS in 2019 (C146), increasing to 357/840 (42%) by 2022 (C147), suggesting continued increase (C148).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 accurately describe the VUS problem in genomic medicine. The ClinVar data (C146-C147) are specific and verifiable. The trend analysis showing increase from 34% to 42% VUS is correctly calculated. The projection of continued increase (C148) is reasonable speculation based on the observed trend. This appropriately motivates the need for functional assays to characterize VUS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Species-specific OPA1 oligomerization may prevent cross-species DN effects: Expressing D438V and R445H in dOPA1 background did not cause degeneration (C150). The Middle and GED domains show 54.3% and 63.6% concordance between hOPA1 and dOPA1 (C156), lower than 71.8% in GTPase domain (C157), suggesting species-specific oligomerization (C158). Expression of dOPA1K273A (GTPase-negative) degenerated axons (C159). These results imply dOPA1 and hOPA1 are interchangeable but may not interact with each other (C160).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150, C156-C160 are well-supported. The lack of degeneration when expressing human DN mutants in WT fly background (C150) is shown in Figure 6A. The sequence alignment data (C156-C157) are from Figure 6\u2014supplement 1. The inference about species-specific oligomerization (C158, C160) is reasonable given the lower conservation in oligomerization domains and the lack of cross-species DN effects. The dOPA1K273A data (C159) provides additional support. This explains why the co-expression system (with dOPA1 knockout) was necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Molecular basis of OPA1 oligomerization: In yeast Mgm1, K854 near C-terminus is important for oligomerization and GTPase activity (C151). hOPA1 has low GTPase activity but interaction with cardiolipin causes aggregation and increased GTP hydrolysis (C152). In C. thermophilum, Mgm1 forms dimers then tetramers at C-terminal Stalk domain (C153). Structural analysis predicted Middle and GED domains are necessary for dimer/oligomer formation in hOPA1 (C154). Peptide-binding assays showed coiled-coil domain (part of GED) is required for hOPA1 interactions (C155).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 accurately summarize prior research on OPA1 oligomerization mechanisms, each supported by appropriate citations. This background information contextualizes the sequence analysis (C156-C157) and explains why oligomerization domain divergence might prevent cross-species protein-protein interactions. The integration of data from multiple species (yeast, fungus, human) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C161"
+    ],
+    "result": "Potential for chimeric hOPA1 gene therapy: The findings could enable development of chimeric hOPA1 retaining function while avoiding interaction with endogenous hOPA1, potentially useful for gene therapy since iPSCs have been generated from R445H patients (C161).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C161 is highly speculative. While the observation that dOPA1 and hOPA1 don't interact (C160) is supported, the leap to chimeric protein design for gene therapy is unsubstantiated. The citation about iPSC generation (Sladen et al., 2021) confirms technical feasibility of obtaining patient cells but doesn't validate the chimeric protein approach. This would require extensive protein engineering, functional validation, and therapeutic testing. The speculation is reasonable but lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "OPA1 involvement in other diseases: OPA1 has been implicated in normal tension glaucoma, multiple sclerosis-like illness, Parkinson's disease and dementia, and cardiomyopathy (C162). The connection between these diseases and OPA1 is not fully understood (C163), but further DOA research may provide insight (C164). The model could help understand mechanisms underlying these diseases (C165).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 appropriately discuss broader implications. The associations with other diseases (C162) are supported by multiple citations. The acknowledgment of incomplete understanding (C163) is accurate. The speculation about future insights (C164-C165) is reasonable given OPA1's multiple functions, though these applications remain to be demonstrated. This appropriately places the work in broader context without overstating current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Limitations for mtDNA analysis: DOA involves mtDNA depletion (C166), but the model is limited for mtDNA analysis (C167). Drosophila mtDNA gene content is similar to vertebrates but gene order differs (C168). mOPA1 interacts with mtDNA via exon 4b binding to D-loops (C169), but exon 4b homology is absent in Drosophila (C170) and D-loops haven't been found in fly mtDNA (C171). D-loops are involved in human mtDNA replication (C172), while A+T region is the origin in Drosophila (C173), suggesting mechanistic differences (C174). Therefore, dOPA1-mtDNA association may differ from mammals (C175) and requires further investigation (C176).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C176 appropriately acknowledge a significant limitation of the model. The citations support the differences in mtDNA biology between flies and mammals (C168-C173). The inference that dOPA1-mtDNA interactions may differ (C175) is reasonable given these differences. The acknowledgment that this aspect requires further investigation (C176) is appropriate. This represents honest assessment of model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Uncertainty about OPA1 processing in Drosophila: L-OPA1 and S-OPA1 formation mechanisms are well-characterized in mammals (C177) but not in Drosophila. In hOPA1, S1/S2 sites are processed by OMA1 and Yme1L (C178). Drosophila Yme1L is involved in dOPA1 degradation rather than cleavage (C179), and i-AAA cleavage site doesn't exist in dOPA1 (C180). Yeast Mgm1 is processed by Pcp1 (C181), but Drosophila Rhomboid-7 is not required for dOPA1 processing (C182). Western blots show three hOPA1 sizes (C183), likely representing full-length with MIS (C184), long-form (C185), and short-form (C186), but processing mechanism is unclear (C189). Drosophila lacks OMA1 (C187) and the expressed hOPA1 lacks S2 site (C188). Anti-dOPA1 detects three bands (C190), suggesting cleavage occurs (C191), but proteases are unidentified (C192). Whether Drosophila mechanisms can study L-OPA1/S-OPA1 roles in DOA remains unclear (C193).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C193 provide thorough discussion of OPA1 processing uncertainty in Drosophila, well-supported by citations. The western blot observations (C183-C186) are from Figure 5B-D. The acknowledgment of uncertainty (C189, C192, C193) is appropriate given the lack of identified processing machinery in flies. This represents another honest assessment of model limitations, particularly for studying isoform-specific functions. The speculation about band identities (C184-C186) is reasonable but explicitly uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Summary of model capabilities: A new DOA model in Drosophila was established (C194) that replicates human optic nerve degeneration allowing rapid genetic analysis (C195) and distinguishes LOF from DN effects by axonal degeneration but not ROS, autophagy, or mitochondrial quantity (C196). These findings reveal pathological significance of mutations and are useful for diagnosing DOA or DOA plus (C197).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C197 appropriately summarize the study's main achievements. The model establishment (C194) and ability to replicate human disease (C195) are well-demonstrated throughout the results. The specific capability to distinguish LOF from DN by axonal degeneration but not other markers (C196) is clearly shown in Figures 5-6. The utility for diagnosis (C197) is a reasonable inference, though clinical validation would be needed. This is an accurate summary of supported findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C199"
+    ],
+    "result": "Future aspirations: The authors hope to provide insights applicable to fundamental treatment of DOA in the future (C199).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C199 expresses aspirational goals for future research. While the model provides tools for understanding DOA pathophysiology and testing mutations, the path from these findings to fundamental treatment is long and uncertain. No therapeutic interventions are tested in the current study. This represents a reasonable research goal but lacks experimental support for therapeutic development.",
+    "result_type": "MINOR"
+  }
+]

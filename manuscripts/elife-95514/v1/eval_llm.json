@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C63",
+      "C65"
+    ],
+    "result": "C-C mismatches enhance both DNA bendability and nucleosome mechanical stability. Single-molecule cyclization assays show that C-C mismatches increase DNA bendability (C20, C63), while fluorescence-force spectroscopy demonstrates increased unwrapping forces for nucleosomes containing C-C mismatches at three different positions (R18, R39, R56) along the 601 sequence (C21, C22, C33, C34, C65). Despite these mechanical changes, mismatches do not alter nucleosome positioning as shown by electrophoretic mobility and FRET values (C26, C27, C28).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by complementary experimental approaches. DNA cyclization data (C20, C63) directly measure bendability, while fluorescence-force spectroscopy (C21, C22, C32, C33) quantifies mechanical stability at multiple mismatch positions. The consistency across different mismatch locations (C34) and the control data showing no positional changes (C26-C28) strengthen the conclusions. The experimental design appropriately separates positional effects from mechanical effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Mismatch-containing nucleosomes exhibit history-dependent mechanical behavior across stretching cycles. The ED1 side unwraps at lower forces during initial cycles and progressively higher forces in subsequent cycles (C29, C30, C31), suggesting potential nucleosome repositioning under force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation is clearly documented with experimental data (Figure 2) showing cycle-dependent changes in unwrapping force (C29-C31). However, the mechanistic interpretation regarding repositioning remains speculative as the authors acknowledge that direct positional measurements would require different FRET probe configurations. The phenomenon itself is well-documented even if the underlying mechanism requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The mechanical stabilization effect of C-C mismatches is localized to the DNA side containing the mismatch. ED2 labeling experiments show that the side without the mismatch exhibits unwrapping patterns similar to wild-type nucleosomes (C35, C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ED2 control experiment (C35) provides critical evidence for the localized nature of the mismatch effect. This asymmetric behavior (C36) is consistent with the local flexibility model and strengthens the mechanistic interpretation. The experimental design appropriately tests whether the effect is global or local.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A single C-C mismatch in the TA-poor side of the 601 sequence induces approximately sevenfold increase in DNA cyclization rate, effectively symmetrizing the flexibility difference between the TA-rich and TA-poor sides. The mismatch-induced flexibility increase matches the natural flexibility difference between the two sides of the 601 sequence (C38, C67, C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative comparison between mismatch-induced flexibility changes and natural sequence-dependent flexibility differences (C38, C67, C69) is well-supported by cyclization data (C39, C40). The position-dependent effects (C40) are appropriately interpreted in terms of measurement sensitivity. The convergence of the ~7-fold values provides strong quantitative support for the flexibility symmetrization model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Control experiments with altered biotin tether positions confirm that the enhanced cyclization rates of mismatch-containing DNA are not artifacts of tether location. Despite biotin position affecting absolute cyclization rates, mismatch-containing constructs consistently loop faster than matched controls (C43, C44, C45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control experiments (C43-C45) appropriately address a potential confounding factor identified in prior work (C41, C42). The systematic comparison across different tether positions strengthens confidence that the mismatch effect is intrinsic to DNA mechanics rather than an experimental artifact. This is rigorous experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Different mismatch types show varying effects on DNA bendability, with C-containing mismatches (C-C, C-A, C-T) producing the largest reductions in looping time, while G-containing mismatches (G-G, G-T, G-A) show minimal effects (C46, C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic survey of all eight mismatch types (C46) provides comprehensive data, and the pattern of C-containing mismatches being most flexible (C47) is consistent with prior literature (Fields et al., 2013). However, the authors note discrepancies with published EFRET values for T-T and G-T mismatches, suggesting either sequence context effects or methodological differences. The general trends are supported, but quantitative comparisons across methods show some inconsistencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Despite achieving flexibility symmetry through mismatches, the unwrapping behavior differs from symmetry achieved through TA repeats. The TA-rich side remains mechanically stable even when the TA-poor side is made flexible by a mismatch (C70), indicating that mismatches do not globally affect coordination of DNA end unwrapping (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between mismatch-induced and sequence-induced flexibility symmetry (C70, C71) reveals important mechanistic distinctions. The observation that similar apparent flexibility produces different unwrapping patterns suggests that local vs. distributed flexibility elements have different effects on nucleosome mechanics. This is a sophisticated interpretation supported by the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Yeast nucleosomes are mechanically less stable and unwrap more symmetrically than Xenopus nucleosomes. Outer turn probes show lower zero-force FRET values and reduced mechanical stability for yeast nucleosomes (C24, C25, C48, C49, C51), while inner turn probes show similar zero-force FRET but stepwise unwrapping patterns (C50, C52, C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The species comparison is supported by systematic measurements across multiple FRET probe positions (C48-C52). The observation of lower stability and increased symmetry for yeast nucleosomes (C24, C25, C53) is consistent across different probes. The data quality appears adequate with n=4-22 molecules per condition, though the bimodal distribution for yeast ED2 (40% weak, 60% strong) suggests heterogeneity that could benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Species-specific differences in nucleosome mechanical stability are attributed to histone sequence divergence, particularly in the H3 \u03b13-helix region near the dyad. Yeast histones show lower sequence conservation (C55) and structural destabilization (C54), with specific residue substitutions affecting nucleosome positioning and stability (C56, C57, C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation connecting histone sequence differences (C55) to mechanical stability differences is supported by structural (C54) and functional (C56) evidence from the literature. The specific hypothesis about H3 \u03b13-helix residues (C56, C57) is well-grounded in prior work. However, the causal connection between sequence differences and the observed mechanical properties (C58) remains inferential and would benefit from direct testing with histone variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C61",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Enhanced nucleosome mechanical stability from mismatches is proposed to reduce DNA accessibility to repair machinery, potentially explaining the accumulation of single-nucleotide polymorphisms near nucleosome dyads. This effect would be most relevant when mismatches escape detection before nucleosome deposition or arise through non-replicative mechanisms (C23, C72, C73, C76, C77, C78, C79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanistic model connecting enhanced stability (C72) to reduced accessibility (C73) and mutation accumulation (C23, C76) is logical and consistent with prior observations (C75). However, this remains a speculative model without direct evidence that repair machinery access is actually impeded. The authors appropriately acknowledge limitations (C77-C79), noting that most mismatches are likely repaired before nucleosome deposition (C78). The model is plausible but requires direct testing of repair efficiency on mismatch-containing nucleosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C66"
+    ],
+    "result": "The positive correlation between DNA flexibility and nucleosome mechanical stability observed for mismatches is consistent with previous findings for sequence variations and cytosine modifications. The enhancement is attributed to a possible kink at the mismatch position (C64, C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistency with prior work (C66, citing Ngo et al. 2015, 2016) strengthens the generalizability of the flexibility-stability relationship. However, the kink mechanism (C64) is speculative and not directly tested. The correlation is well-established across multiple perturbations, but the molecular mechanism remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The authors predict that other DNA lesions and alternative structures (single-strand damages, bulky adducts, R-loops) that alter local flexibility would similarly affect nucleosome mechanical stability (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is an explicit prediction for future work (C80) based on the established flexibility-stability relationship. While the extrapolation is logical, it remains untested and speculative. The prediction is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The authors acknowledge limitations of the 601 sequence for in vivo relevance and identify a native yeast sequence (SWH1) that positions nucleosomes consistently in vitro and in vivo (C59, C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitation of the 601 sequence (C59) is well-documented in the literature, and the identification of an alternative native sequence (C60) is appropriately cited. This represents methodological context rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Enhanced mechanical stability might shield DNA from transcription, preventing expression of genes with misincorporated nucleotides (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is pure speculation (C62) without supporting data. While it represents an interesting hypothesis about alternative functional implications, it is not tested and remains highly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background context establishing that DNA mismatches arise from multiple sources, affect DNA physical properties, and that nucleosome positioning correlates with mutation rates. Prior work established the relationship between DNA flexibility and nucleosome stability under tension (C1-C19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge supported by appropriate citations. They set the context for the current work but do not represent new findings. The prior work from the same group (C14-C19) is appropriately cited and provides the foundation for the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C84",
+      "C85",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MotorNet is an open-source Python toolbox that creates differentiable, biomechanically realistic effectors trainable with ANNs. The toolbox is built on PyTorch, requires no external dependencies, features a modular architecture with five object classes (Skeleton, Muscle, Effector, Environment, Policy), and is compatible with gymnasium API conventions. Training a two-joint, six-muscle arm model takes approximately 13 minutes on a typical desktop computer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C34 provide comprehensive technical specifications and architectural details that are internally consistent and verifiable. The performance claim (C20) provides specific hardware and timing information. The modular design is well-documented with clear object hierarchies (C29-C33, Figure 3). The PyTorch foundation (C7) and gymnasium compatibility (C100-C101) are technical facts that can be verified from the codebase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "MotorNet implements detailed biomechanical properties including geometry-dependent moment arms, arbitrary muscle paths, and passive force production from muscle stretch. Moment arms vary with effector configuration and are computed using geometric first principles. For mono-articular muscles, moment arms are null for non-spanned joints, while bi-articular muscles show non-zero moment arms for both joints with small interactions. Passive drift from muscle stretch is negligible at the center of joint space but increases toward edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C47 are supported by detailed demonstrations in Figure 4 showing moment arm calculations for point-mass and arm26 models. The biomechanical principles cited (C36, Murray et al., 1995; Sherman et al., 2013) are well-established. The observations about mono-articular (C42) and bi-articular (C43-C44) muscles are consistent with known biomechanics and demonstrated in the figures. The passive drift analysis (C45-C47) is directly shown in Figure 4f.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C62"
+    ],
+    "result": "ANNs trained with MotorNet learn generalizable control policies that integrate sensorimotor feedback. A 110-GRU RNN trained on reaching tasks with mechanical perturbations successfully corrected for perturbations, reached targets, and stabilized across both within-distribution (\u00b13N, \u00b16N) and out-of-distribution (\u00b16N, \u00b112N) perturbations. The network exhibited delayed, integrated responses rather than stimulus-driven reactions, with fastest responses in bi-articular muscles and shoulder extensors. Non-perturbed movements showed canonical tri-phasic muscle activation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C62 are well-supported by experimental results shown in Figure 5. The training procedure is detailed in Methods with specific loss functions and parameters. The generalization to out-of-distribution perturbations (C50-C52) demonstrates robust learning. The muscle activation analysis (C53-C56) shows biologically plausible patterns including tri-phasic activation (C56, supported by Wierzbicka et al., 1986). The conclusion that networks learn generalizable policies (C61-C62) follows logically from the demonstrated performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "Training procedure significantly impacts learned control policies. Networks trained without perturbations could handle simple perturbations during reaching (up to \u00b16N) but were much less capable of stabilizing against forces in postural tasks compared to perturbation-trained networks. While sensorimotor feedback alone provides some robustness, exposure to perturbations during training enables learning of more robust control policies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by direct comparison between perturbation-trained and perturbation-free networks shown in Figure 5c-g. The observation that muscle activations differ despite similar kinematics (C58) suggests different control strategies. The reduced stabilization capability in postural tasks (C59) is clearly demonstrated. The conclusion (C60) is well-supported by the comparative data. Citation to Driscoll et al., 2022 (C63) provides additional support for the importance of training procedures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MotorNet successfully replicates the finding that effector geometry defines neural representation bias. RNNs controlling arm26 effectors showed asymmetric preferential movement direction (PMD) distributions with greater proportions of neurons firing for reaches around 135\u00b0 and 325\u00b0, matching primate motor cortex recordings. This bias was consistently absent in RNNs controlling point-mass effectors. Network activity showed heterogeneous responses encoding timing, direction, or mixed preferences, consistent with empirical observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C79 successfully replicate Lillicrap and Scott, 2013. The replication used 90 GRUs instead of 1000 perceptron nodes (C67), demonstrating efficiency. Muscle activation patterns matched the original study (C68). The PMD bias is clearly shown in Figure 6c,e for arm26 but not point-mass effectors (C75-C78). The heterogeneous neural responses (C69-C72) match empirical data (C73-C74, supported by multiple citations). The replication was performed across 8 networks per condition, providing statistical robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Current approaches to neural control of movement modeling face two key limitations: (1) researchers must use separate software platforms for biomechanical simulation and ANN implementation, requiring custom integration code, and (2) non-differentiable biomechanical effectors constrain researchers to reinforcement learning despite faster alternatives like backpropagation. While gymnasium provides an interface solution, it still constrains users to reinforcement learning algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 accurately describe the state of the field and motivation for MotorNet. The limitations are well-documented through citations to existing software (C14: MuJoCo, OpenSim) and methods (C18-C19: reinforcement learning, forward models). The two-platform problem (C15-C16) and non-differentiability constraint (C3, C18) are technical facts about existing tools. The characterization of gymnasium's limitations (C17-C18) is accurate regarding its reinforcement learning focus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MotorNet improves iteration speed through the machine learning development cycle of idea\u2192code\u2192test\u2192idea, analogous to the scientific hypothetico-deductive method. The modular architecture enables rapid iteration by allowing users to alter specific model aspects while keeping everything else constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 present a conceptual framework for understanding MotorNet's value proposition. The comparison to the hypothetico-deductive method (C81) is reasonable. The claim about improving iteration speed (C83) is supported by the modular architecture described throughout the paper and the demonstrated training times (C20). This is a valid design principle supported by the technical implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "MotorNet's flexibility varies by implementation goal, from simple parameter adjustments (e.g., editing Arm26 for primate arms) to subclassing for new effector types (e.g., eyeball models) to more challenging implementations for non-vertebrate effectors (e.g., octopus arms). All extensions can work within the MotorNet architecture framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C90 are largely speculative (C86-C89 marked as SPECULATION). While the modular architecture (C84-C85) supports extensibility in principle, the specific examples (primate arm, eyeball, octopus) are hypothetical. The claim that all extensions can work harmoniously (C90) is an inference not yet demonstrated. These represent design intentions rather than validated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "MotorNet's open-source nature enables sharing of implementations, reducing redundant work and enabling community-driven development. Researchers can share custom implementations (e.g., muscles with pennation angles) that others can reuse, allowing for peer-checking and improved consistency of model implementations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe standard benefits of open-source software development. The current practice of reimplementing models (C91) is accurately described. The benefits of code sharing (C92-C94) are well-established principles of open-source development. While C95 is speculative about future community contributions, it is a reasonable expectation based on successful open-source projects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "MotorNet leverages PyTorch for policy implementation rather than implementing ML innovations directly, ensuring that advances in ML quickly become available to MotorNet users. The design principle is that anything PyTorch can build, MotorNet can use as a policy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 describe a sound software design strategy. The rapid pace of ML innovation (C96) is well-known. The decision to rely on PyTorch (C98-C99) rather than reimplementing algorithms (C97) is a practical architectural choice that is validated by the demonstrated flexibility (C8, C26). This is supported by the technical implementation details provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Gymnasium is a standard, well-documented, and widely-used interfacing toolbox for linking reinforcement learning agents with environments. MotorNet's compatibility with gymnasium enables users to employ reinforcement learning relatively effortlessly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 accurately describe gymnasium's role in the ML ecosystem. The characterization as standard and popular (C102-C103) is verifiable. The prediction about ease of use (C104) is reasonable given gymnasium's documentation and MotorNet's API compliance (C100). This is a minor supporting detail about software compatibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "MotorNet currently lacks collision physics and complex biomechanical features (e.g., multiple joint types, wrap points) that are present in other biomechanical software like OpenSim. These limitations constrain the types of effectors that can be realistically implemented, though adding some features is under consideration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 honestly acknowledge current limitations. The comparison to other software (C105, C107) is supported by citations. The statement that MotorNet lacks these features (C106, C108) is a factual limitation. The inference about constraints (C109) is logical. The statement about future consideration (C110) is appropriately tentative. This transparent discussion of limitations strengthens the paper's credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Future development may include implementing a spinal compartment to explore spinal contributions to motor control beyond reflexes. Spinal contribution plays a prominent role in motor control through interaction with supraspinal control, which would significantly impact policy latent dynamics in MotorNet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C115 discuss potential future work. The importance of spinal contributions (C112-C113) is supported by citations (Reschechtko and Pruszynski, 2020; Weiler et al., 2019; Loeb, 2021). However, the impact on MotorNet (C114) is speculative, and the implementation (C115) is explicitly tentative ('may be worthwhile'). This represents a reasonable research direction but not a current result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Future development may include modular network architectures to study cross-region interactions in motor control. Modular architectures with controlled inter-module communication have shown greater explanatory power than non-modular systems for the motor control system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118 discuss another potential future direction. The neuroscience principle (C116) and motor control application (C117) are supported by citations. However, the potential MotorNet implementation (C118) is speculative. This is a reasonable future direction based on established principles but not a current capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Most motor control work uses Hill-type muscles or direct torque actuators. Despite popularity, Hill-type muscles remain phenomenological models with limitations. Alternative formalizations like the Distribution-Moment model may be worth implementing in MotorNet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 discuss muscle model options. The current state of the field (C119) and limitations of Hill-type models (C120) are supported by citations. However, the suggestion to implement alternative models (C121) is speculative ('may be worth'). This represents a potential improvement rather than a current feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C124"
+    ],
+    "result": "All models used a timestep size of 0.01 s and Euler method for numerical integration of effector actuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122 and C124 provide basic methodological details that are clearly stated and verifiable from the Methods section. These are standard technical specifications necessary for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C74",
+      "C75",
+      "C76",
+      "C103"
+    ],
+    "result": "The authors developed a fully automated Barnes maze variant with 24 vestibules, automated position changes via arena rotation, and a tinted cover to control visual cues while allowing infrared tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14, C15 describe the apparatus design with explicit details supported by Figures 1 and supplementary figures. Claims C74-C76 acknowledge advantages and limitations. The apparatus is functional and well-documented, though C75-C76 note potential confounds and design constraints that should be considered in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mice (n=19, 10 male, 9 female) performed 10 trials/day for 15 days (acquisition), followed by a probe test and 4 days of reversal learning with a changed goal position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental protocol is clearly described with adequate sample size (C20, C105-C106). The exclusion of one female mouse (C106) is appropriately documented. Pooling male and female data (C21) is justified by similarity but sex-specific analyses are also provided in supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Trial path length and number of vestibule visits decreased across days, with the largest drop between days 1-2, while individual segment path lengths remained constant, indicating learning was driven by reduced vestibule visits rather than altered running paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 present a coherent analysis of learning-related changes supported by Figures 2 and supplementary figures with appropriate statistical comparisons. The inference that learning affects vestibule visit number rather than running paths (C24) is logically derived from the data showing constant segment lengths but decreasing trial lengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Mice progressively showed preference for the goal vicinity across days and spent significantly more time in the goal quadrant and vestibule during probe tests, confirming use of allocentric cues for goal learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by appropriate statistical tests (Wilcoxon sign-rank, paired t-tests) with significant p-values and data shown in Figures 2d and supplementary figures. The conclusion about allocentric navigation (C31) is appropriately drawn from the probe test results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C78"
+    ],
+    "result": "Serial strategy usage increased across days, with a strong clockwise directional preference (3.56\u00d7 larger peak) determined by vestibule orientation, as confirmed by directional reversal when vestibule orientation was switched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 document serial strategy characteristics with appropriate statistics (ANOVA, t-tests). The directional preference (C34) and its mechanistic explanation (C35) are supported by the vestibule orientation manipulation (C36) shown in Figure 2\u2014supplement 4, providing strong causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Within-session analysis showed that segment length and serial bout distributions evolved across trials within days, resembling the evolution observed across days, while trial length and vestibule visit distributions remained stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by Figure 3 showing within-trial dynamics. The finding that some measures change within sessions while others don't provides insight into the timescale of strategy adaptation. The analysis appropriately uses pooled data from days 6-15.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Three stochastic processes were implemented representing random (uniform distribution), spatial (exponential decay with goal distance), and serial (incremental steps with directional bias) strategies, with none individually reproducing all experimental distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 describe the stochastic process implementations with explicit mathematical details. Figure 4 demonstrates that individual strategies cannot fully reproduce experimental data (C50), motivating the mixture model. The parameter choices (e.g., tau=2, 80/20 directional bias) are stated as heuristically determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C98"
+    ],
+    "result": "A mixture model combining the three stochastic strategies with optimal strategy switches every N=6 vestibule visits successfully reproduced experimental distributions across days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 describe the mixture model with clear optimization procedure (mean square error minimization over parameter space). Figure 5c shows N=6 is optimal with appropriate statistical comparisons. The model fit quality is demonstrated in Figures 5b and supplements, supporting the conclusion (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C6",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Spatial strategy increased progressively from 13.4% to 53% (days 1-15) at the expense of random strategy (58.2% to 3.8%), while serial strategy increased abruptly from day 1 to day 2 (28.4% to 44.6%), with spatial strategy development matching hippocampal spatial map development timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 report strategy evolution with appropriate statistics (paired t-tests, significant p-values). The interpretation linking spatial strategy development to hippocampal processes (C92) is supported by citations but represents correlation rather than causal evidence. The distinct timescales for spatial vs serial strategy development (C91, C93) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C101"
+    ],
+    "result": "Traditional classification criteria (based on trial-level categorization) showed random strategy remaining high (~46% on day 15), contrasting with mixture model results, suggesting trial-by-trial methods may not capture the full strategy repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C101 compare traditional and new methods, showing substantial differences. The critique of traditional methods (C101) is justified by the finding that strategies switch within trials (every ~6 vestibules), making trial-level classification inadequate. This is a methodological contribution of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Individual mice showed considerable strategy diversity, with significant sex differences: males showed progressive spatial strategy increase (r=0.895, p<0.0001) while females did not (r=-0.17, p=0.54), and females showed larger serial strategy increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 document sex differences with appropriate correlation analyses and p-values shown in Figure 5\u2014supplement 2. The caveat about individual-level model reliability (C61) is appropriately noted. The speculative explanation (C96) is clearly marked as such. Sample sizes (10 male, 9 female) are adequate for detecting the reported effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C102",
+      "C72",
+      "C73"
+    ],
+    "result": "A Markov chain model revealed that mice preferentially initiated trials with random or spatial strategies and showed high probability of strategy reuse, but required 20\u00d7 more computation time than the mixture model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe Markov chain model results supported by Figure 6. The genetic algorithm optimization is detailed in methods. The computational cost comparison (C72) and practical recommendation (C73) are appropriate. The speculative explanation for initial strategy preferences (C70) is clearly marked.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C80",
+      "C104"
+    ],
+    "result": "Learning rates and spatial strategies were comparable to traditional Barnes maze studies, and this is the first implementation of stochastic processes that complementarily account for exploration patterns in the Barnes maze.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by citations and data comparison. The novelty claim (C80) is appropriately contextualized with citations to prior work. The summary claim (C104) accurately reflects the study's main contribution. These claims appropriately position the work within existing literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C97"
+    ],
+    "result": "The spatial strategy likely involves allocentric navigation with hippocampal cognitive maps; the serial strategy may combine thigmotaxis with egocentric responses and associative learning; the random strategy may engage exploratory circuits including hippocampus, prefrontal cortex, and basal ganglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C89 present mechanistic interpretations supported by extensive citations to prior literature. However, these are largely speculative (C86, C88, C89) as the current study does not include neural recordings or manipulations. The interpretations are plausible and well-grounded in literature but lack direct experimental support from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Most trials (<6 segments, ~60-66%) involved single strategy use throughout, while substantial trials (>6 segments) involved strategy switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are logical inferences from the optimal N=6 finding and trial length distributions shown in Figure 2c. The quantitative estimates (~60-66%) are derived from the data. This supports the conclusion that strategies can switch within trials.",
+    "result_type": "MINOR"
+  }
+]

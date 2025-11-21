@@ -1,0 +1,491 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C197",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C211",
+      "C212",
+      "C215"
+    ],
+    "result": "The authors developed and deployed a dynamic multiplexed cytokine secretion platform using microfluidic single-cell encapsulation. The platform enables highly sensitive measurements of individual cytokine-secreting cells for up to three cytokines simultaneously, providing dynamic resolution into secretion behavior through quantitative and longitudinal measurements over 4 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 and C197-C215 collectively describe the platform development, capabilities, and analytical workflow. The methodology is well-documented with references to prior work (Portmann et al., 2023), detailed experimental procedures, and data analysis pipelines. Figure 1 provides visual evidence of the platform design and functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Polyfunctionality generally decreased with prolonged stimulation times across multiple stimulants. A global 2.3-fold reduction in cells secreting two or more cytokines was observed after prolonged incubation (from 3% to 1.3%), with a statistically significant increase in mono-secreting cells (62.4\u00b16.3% vs. 78.3\u00b14.8%, p=0.006) and decrease in bi-secreting cells (37.2\u00b16.4% vs. 20.9\u00b14.8%, p=0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C54-C107 provide consistent quantitative evidence across multiple experimental conditions with statistical validation (Figure 3). The findings are supported by data from multiple stimulants (LPS, zymosan, PMA/ionomycin) showing the same trend, though some stimuli showed variations (C107). The statistical tests are appropriate (paired two-sided t-tests, p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "After LPS stimulation, the total number of cytokine-secreting cells decreased with prolonged stimulation (8.2% to 1.6% for panel 1; 9.4% to 4.5% for panel 2). The decrease was primarily due to disappearance of polyfunctional IL-6+/TNF-\u03b1+ and IL-8+/MIP-1\u03b1+ cells, while certain mono-secreting populations (IL-6, IL-8) increased, indicating a shift to mono-cytokine response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 provide detailed quantitative data from LPS stimulation experiments shown in Figure 2A. The observations are internally consistent and show that polyfunctional cell reduction does not correlate directly with mono-secreting cell changes, supporting the interpretation of a shift in response type rather than simple cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Zymosan stimulation led to reduction of overall cytokine-secreting cells at prolonged incubation times (-5.2% and -5.3% for panels 1 and 2). Unlike LPS, only IL-8+/MIP-1\u03b1+ polyfunctional cells were reduced while IL-6+/TNF-\u03b1+ cells remained stable at very low frequency, but both stimuli showed a shift towards mono-cytokine response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide quantitative data from zymosan experiments (Figure 2B) and compare results to LPS stimulation. The differential effects on polyfunctional populations between LPS and zymosan are clearly documented, supporting stimulus-specific responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PMA/ionomycin stimulation resulted in decreased IL-6/TNF-\u03b1/IFN-\u03b3 mono-secreting cells (-4.2%) but increased IL-2/IL-8/MIP-1\u03b1 mono-secreting cells (+7.9%). Polyfunctionality decreased in panel 1 (TNF-\u03b1+/IFN-\u03b3+ by 2.8%) but not in panel 2, where new polyfunctional populations (IL-2+/MIP-1\u03b1+, IL-2+/IL-8+/MIP-1\u03b1+) appeared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 describe complex, panel-specific responses to PMA/ionomycin (Figure 2C). The quantitative data show differential effects on different cytokine panels, with appearance of new polyfunctional populations counteracting decreases in others. This demonstrates stimulus-specific complexity in polyfunctional responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Anti-CD3/anti-CD28 and PHA stimulation showed increased overall cytokine-secreting cells and, uniquely, increased polyfunctionality in panel 1 over prolonged incubation (TNF-\u03b1+/IFN-\u03b3+ rising by 1.4% and 1.1% respectively). These T-cell-targeting stimuli produced responses distinctly different from innate immune stimulants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 document the unique behavior of T-cell stimulants (Figure 2D-E), showing increased rather than decreased polyfunctionality with prolonged stimulation. The quantitative data are consistent between anti-CD3/anti-CD28 and PHA, supporting the interpretation that T-cell responses differ from innate immune responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C127",
+      "C128",
+      "C129",
+      "C176"
+    ],
+    "result": "No general correlation was observed between the frequency of polyfunctional cells and the concentration of secreted cytokines. Secretion rates highly depended on the employed stimulus and measured cytokines, and the disappearance of polyfunctional cells could not be linked to lower secretion rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C127-C129, and C176 are supported by the complex, stimulus-specific patterns shown in Figure 4. Different stimuli produced different effects on secretion rates even within the same polyfunctional populations, and some populations showed increased secretion rates despite decreased cell frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C111",
+      "C115",
+      "C121",
+      "C125",
+      "C130",
+      "C164",
+      "C180",
+      "C181",
+      "C184"
+    ],
+    "result": "A general trend towards higher cytokine secretion in polyfunctional cells compared to mono-cytokine-secreting cells was consistently observed across all measured conditions. Polyfunctional cells displayed elevated in-droplet concentrations with similar secretion dynamics but higher secretion levels, underscoring their importance in directed immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C111-C184 are supported by comparative data in Figure 4 and Figure 4\u2014figure supplement 1. The trend is described as consistent across multiple stimuli and cytokine combinations, though the magnitude varies. This represents a robust finding despite stimulus-specific variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Three distinct dynamic secretion patterns were identified in IL-6+/TNF-\u03b1+ cells: simultaneous (40%), sequential (40%), and semi-sequential with overlap (20%). Detailed analysis of LPS and PHA stimulation revealed stimulus-specific differences in secretion dynamics and endpoint concentrations, with polyfunctional cells showing higher TNF-\u03b1 concentrations early after LPS stimulation that disappeared with prolonged incubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C140 are supported by manual analysis of 50 cells (Figure 5) and quantitative dynamic measurements (Figure 6A-B). The statistical analysis (Kolmogorov-Smirnov tests) appropriately assesses distribution differences. However, the manual analysis sample size (n=50) is relatively small for establishing the 40%/40%/20% distribution with high confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "TNF-\u03b1+/IFN-\u03b3+ polyfunctional cells showed similar dynamic profiles for short and long stimulation times after anti-CD3/anti-CD28 and PMA/ionomycin stimulation, with consistently elevated concentrations compared to mono-secreting cells. Significant differences in secretion rate distributions were observed over time (p=0.0024 for IFN-\u03b3, p=0.0005 for TNF-\u03b1 after anti-CD3/anti-CD28; p<0.0001 for both after PMA/ionomycin), with appearance of high-secreting populations (>100 molecules/s) at prolonged incubation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C150 are supported by quantitative dynamic data in Figure 6C-D with appropriate statistical tests. The emergence of high-secreting populations is clearly documented with specific percentages (18.4% vs 0.3% for IFN-\u03b3 after PMA/ionomycin). The findings are internally consistent across both stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "IL-8+/MIP-1\u03b1+ polyfunctional cells showed complex, time-dependent secretion dynamics. After zymosan stimulation, distinct differences appeared early (1 hr) with greatly increased IL-8 concentrations in polyfunctional cells (42.8 vs 13.5 nM), while MIP-1\u03b1 showed delayed increase after 60 min. With prolonged stimulation, IL-8 secretion decreased while MIP-1\u03b1 greatly increased, with significant shifts in high-secreting cell populations (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C163 are supported by detailed time-course data in Figure 6E-F. The temporal dynamics are well-documented with specific time points and concentrations. The opposing trends for IL-8 (decreasing) and MIP-1\u03b1 (increasing) with prolonged stimulation are clearly demonstrated with statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The study gained insights into the occurrence and disappearance of polyfunctional cells and differentiated simultaneous from consecutive secretion. The observed reduction in polyfunctional cells did not result in increased mono-cytokine-secreting cells, indicating a reduction of overall polyfunctionality rather than just ceasing secretion of one cytokine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C165-C167 summarize key findings supported by data in Figures 2-3. The interpretation that polyfunctional cell reduction represents overall functionality loss rather than transition to mono-secretion is supported by the quantitative data and is consistent with prior work (Han et al., 2012, C167).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Three main polyfunctional cell populations were identified: IL-6+/TNF-\u03b1+, TNF-\u03b1+/IFN-\u03b3+, and IL-8+/MIP-1\u03b1+. These populations showed subpopulation-specific changes over time, with IL-6+/TNF-\u03b1+ and IL-8+/MIP-1\u03b1+ mainly disappearing for all stimuli, while TNF-\u03b1+/IFN-\u03b3+ increased in response to PHA and anti-CD3/anti-CD28 but not PMA/ionomycin, suggesting stimulation-dependent evolution of T cell polyfunctionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 summarize patterns observed across all experiments (Figure 2). The identification of three main populations is well-supported by the data, and the differential behavior of TNF-\u03b1+/IFN-\u03b3+ cells across stimuli is clearly documented. However, C100 is somewhat speculative about T cell-specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Anti-CD3/anti-CD28 and PHA stimulation displayed more polyfunctional cells after prolonged stimulation, potentially due to slower mechanism of action of these T-cell-targeting stimulants. The frequency of polyfunctional cells could be indicative of the current immune state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C168 is supported by data (Figure 2D-E), but C169 and C170 are speculative interpretations. While the citations support the slower T-cell activation mechanisms, the causal link to increased polyfunctionality is not directly demonstrated. The suggestion that polyfunctional cell frequency indicates immune state (C170) is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Short-lived polyfunctional cells were observed with innate immune cell stimulants (LPS and zymosan). The authors suggest this could indicate that polyfunctionality decrease happens across different immune cell populations and is very short-lived in innate immune cells, potentially representing a specialized response, though additional studies are needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C172 is supported by the LPS and zymosan data (Figure 2A-B). However, C173-C175 acknowledge the knowledge gap and speculative nature of the interpretation. Without cell-type-specific analysis (acknowledged limitation in C192), the attribution to innate immune cells specifically is uncertain. The call for additional studies (C175) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Differential cytokine regulation occurred within the same polyfunctional cell populations, with upregulation of one cytokine and downregulation of another. For example, prolonged LPS stimulation led to reduced IL-6+/TNF-\u03b1+ cell numbers with decreased TNF-\u03b1 but increased IL-6 secretion rates, potentially indicating a granular shift toward more specialized responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C178 are supported by the secretion rate data (Figure 4). The specific example of LPS-stimulated IL-6+/TNF-\u03b1+ cells is well-documented. However, C179's interpretation as a \"granular shift\" is somewhat speculative, though it is a reasonable hypothesis based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C185"
+    ],
+    "result": "No general trend in distinct secretion patterns differentiating mono-secretors from polyfunctional cells was identified. For most stimulations, similar secretion dynamics were observed between mono- and polyfunctional cells, though notable exceptions existed, such as a distinct lag phase for TNF-\u03b1 secretion in polyfunctional cells after early LPS stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C183 and C185 are supported by the dynamic data in Figure 6. The general similarity in dynamics with elevated concentrations in polyfunctional cells is well-documented. The specific exception of TNF-\u03b1 lag phase after LPS (C185) is noted but the mechanistic interpretation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "The study has several acknowledged limitations: low parallelization (only 3 cytokines measured simultaneously in limited combinations), masking of some polyfunctionality, inherent limitations of single-cell methods in capturing paracrine signaling, and use of PBMCs preventing cell-type-specific conclusions. Alternative approaches like preselecting cell populations could increase statistical power but might impact secretion patterns and clinical relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C195 provide a thorough and honest assessment of methodological limitations. These are appropriate acknowledgments that help contextualize the findings. The discussion of trade-offs between different experimental approaches (C193-C195) demonstrates scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The study expanded stimulants to well-known standards for immune cell activation (LPS, zymosan, PMA/ionomycin, anti-CD3/anti-CD28, PHA, and RPMI control). Supernatant analysis identified GM-CSF, IFN-\u03b3, IL-2, IL-6, IL-8, MIP-1\u03b1, MIP-1\u03b2, and TNF-\u03b1 in sufficient concentrations. The study focused on six cytokines (excluding MIP-1\u03b2) measured in two panels of three cytokines each at 1 hr and 24 hr time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 describe the experimental design, supported by Figure 1\u2014figure supplement 1 showing supernatant data. The rationale for cytokine selection and panel design is clearly explained. The choice of time points (1 hr and 24 hr) is appropriate for capturing dynamic changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C126"
+    ],
+    "result": "Secretion rate changes with prolonged stimulation were complex and cytokine-specific. IL-6 secretion rates increased for LPS, zymosan, and PMA/ionomycin in IL-6+/TNF-\u03b1+ cells, while TNF-\u03b1 rates increased only for PMA/ionomycin. TNF-\u03b1+/IFN-\u03b3+ cells showed increased TNF-\u03b1 secretion across all three stimulations. IL-8+/MIP-1\u03b1+ cells showed no overall trend, with responses dependent on stimulation and incubation time. PMA/ionomycin uniquely induced IL-2+/MIP-1\u03b1+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C126 are supported by detailed quantitative data in Figure 4. The complexity and stimulus-specificity of secretion rate changes are well-documented. The identification of PMA/ionomycin-specific IL-2+/MIP-1\u03b1+ population (C122-C124) is clearly shown, though the correlation with frequency increase (C124) is noted as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C196",
+      "C198",
+      "C199"
+    ],
+    "result": "The authors conclude that polyfunctional cytokine responses are equivocal and complex but could offer a valid readout for immune system dynamics. The observed biological signatures could potentially be used to assess immune status in health and disease, facilitate personalized treatment in immune-related disorders, and address fundamental research questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C196 is a reasonable summary supported by the data. However, C198-C199 are speculative about future applications. While the potential is plausible given the detailed characterization achieved, actual clinical utility would require extensive validation studies not performed here. The speculation is appropriately qualified with \"could be used.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "The study used PBMCs from anonymized healthy donors (ethics approval EK202-N-56), with cells isolated from buffy coat, stored frozen, then thawed and stimulated. Supernatant cytokine concentrations were measured using Isoplexis CodePlex platform (18 cytokines). Statistical analyses used paired two-sided t-tests and Kolmogorov-Smirnov tests with 95% confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C203 and C216-C219 describe standard experimental procedures with appropriate ethical approval. The methods are clearly documented. The limitation of anonymized samples (C203) preventing demographic analysis is acknowledged. Statistical methods are appropriate for the data types analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The introduction establishes that cytokine polyfunctionality is well-established in T cells and associated with better disease control, but current understanding is limited by endpoint measurement techniques that cannot differentiate concurrent from sequential secretion. Dynamic measurements are crucial but rarely reported, and direct analysis of secreted proteins may be beneficial given cytokine function depends on location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C44 provide appropriate background and rationale supported by numerous citations to prior work. The knowledge gap (C3-C4, C36-C42) is well-established and justifies the study. The citations appear appropriate for the claims made, establishing both the importance of polyfunctionality and limitations of current methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Non-stimulated PBMCs exhibited small decreases in overall cytokine-secreting cells for both panels (-0.6% and -0.4%), with IL-8+/MIP-1\u03b1+ cells decreasing by 1.5%. These changes were relatively small compared to stimulated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide appropriate negative control data (Figure 2F). The small magnitude of changes in non-stimulated cells validates that observed effects in stimulated conditions are stimulus-dependent rather than artifacts of the measurement system or time in culture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C213",
+      "C214"
+    ],
+    "result": "Quality control procedures included manual inspection when fewer than 50 droplets were identified as positive, with exclusion of data when fewer than 10 droplets met visual inspection criteria (absence of fluorescence aggregates, presence of intact beadline).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C213-C214 describe appropriate quality control measures for the single-cell analysis. The thresholds (50 for manual inspection, 10 for exclusion) are reasonable for ensuring data quality, though the specific values appear somewhat arbitrary and are not justified with statistical rationale.",
+    "result_type": "MINOR"
+  }
+]

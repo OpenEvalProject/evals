@@ -1,0 +1,617 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study generated a comprehensive single-cell RNA sequencing atlas of mouse skin wounds at 4 days post-infection, analyzing approximately 23,000 cells from both E. faecalis-infected and uninfected wounds. The integrated dataset identified 5 major cell classes (epithelial, immune, fibroblast, endothelial, and neural) comprising 24 distinct clusters, with cells from infected wounds (~13,000) showing distinct clustering patterns compared to uninfected wounds (~9,500).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C66-C72 collectively describe the experimental approach and primary dataset characteristics. The scRNA-seq methodology is clearly documented (C5), sample sizes are quantified (C6, C66, C72), and cell type annotations are systematically presented with supporting figures (C67-C71). The cross-entropy test (Figure 1\u2014figure supplement 1F) statistically validates the distinct clustering patterns between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C64",
+      "C65"
+    ],
+    "result": "E. faecalis infection altered the expression of key wound healing markers at 4 days post-infection. Infected wounds showed significantly lower Pdgfa expression compared to unwounded skin (while uninfected wounds remained unchanged), lowest Egf expression levels, and higher Tgfb1 expression. These changes correlate with delayed wound healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C60, C64-C65 are supported by qPCR data shown in Figure 1A with statistical significance indicated (p-values provided). The interpretation linking these expression changes to delayed healing (C64-C65) is reasonable given established roles of these growth factors, though the correlation is observational rather than mechanistic. Sample sizes are adequate (n=6-8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C84",
+      "C85",
+      "C11",
+      "C49",
+      "C108"
+    ],
+    "result": "E. faecalis infection induced infection-specific keratinocyte populations (clusters 0 and 6) characterized by co-expression of Krt5 and Krt10, with cluster 0 enriched in Zeb2 and cluster 6 in Gjb6. These populations represent migratory stem-like and partial epithelial-mesenchymal transition (EMT) keratinocyte states, indicating premature and incomplete EMT at an early stage of infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C84-C85, C11, C49, C108 are well-supported by multiple lines of evidence: clustering analysis (Figure 2A-B), marker gene expression (Figure 2C), Gene Ontology analysis showing ECM remodeling and migratory signatures (Figure 2F-G), and RNA velocity analysis predicting lineage relationships (Figure 2H-I). The partial EMT interpretation is supported by co-expression patterns and functional enrichment data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Infection-specific keratinocyte clusters exhibited signatures related to ECM remodeling, chemokine signaling, migratory pathways, and inflammatory response. RNA velocity analysis predicted a lineage relationship between Zeb2hi and Gjb6hi keratinocytes, with temporal expression analysis revealing three distinct transcriptional states: early (undifferentiated basal markers), intermediate (intraepithelial T cell protein family), and late (cell adhesion signatures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C97 are supported by Gene Ontology analysis (Figure 2F-G), RNA velocity analysis (Figure 2H-I), lineage driver gene identification (Figure 2J), and temporal gene expression analysis (Figure 2K). The computational methods are appropriate and the findings are internally consistent across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Cell-cell interaction analysis revealed 61 predicted interactions in infected keratinocytes (compared to 34 in uninfected) out of 991 total interactions. Outgoing signals from infected keratinocytes included EGF and SPP1 signaling pathways, with specific ligand-receptor pairs (Hbegf:Egfr, Spp1:Cd44, Spp1:integrin pairs) known to induce immunosuppression. Enrichment of keratinocyte-endothelial cell interactions was observed in infected wounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C104 are supported by CellChat analysis with quantitative data (Figure 2L, supplementary figures). The identification of specific ligand-receptor pairs is data-driven, and the immunosuppressive function of SPP1 pathway pairs is supported by appropriate citations (C103). The increased number of interactions in infected conditions is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C135"
+    ],
+    "result": "E. faecalis infection induced two infection-specific fibroblast clusters (0 and 2) that retained fibroblastic identity while expressing markers linked to ECM deposition (Col1a1, Col1a2, Col6a2, Vim, Fn1, Eln, Aspn, Pdgfrb, Fap) and exhibiting enrichment of myeloid-specific markers (Hbb-bs, Lyz2) and profibrotic gene signatures (Inhba, Saa3, Timp1). These findings suggest premature ECM deposition and a pathological repair profile characterized by Timp1hi and Lyz2hi fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123, C135 are supported by clustering analysis (Figure 3A-B), marker gene expression data (Figure 3C-E), and Gene Ontology analysis (Figure 3F-G). The interpretation of premature ECM deposition is supported by citations indicating these processes typically occur later in wound healing (C121). The identification of myofibroblast characteristics is supported by co-expression patterns and literature (C123).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "RNA velocity analysis of infected fibroblasts revealed two terminal populations (Cilphi fibrotic cluster 4 and Mkxhi reparative cluster 5) originating from infection-specific clusters 0 and 2. Lineage driver genes (Csgalnact1, Atrnl1, Slit3, Rbms3, Magi2) known to induce fibrotic tissue formation were expressed. Cell Rank analysis identified two states: an initial prolonged state associated with immune suppression genes (Serpine1, Serping1, Prrx1, Ncam1, Chl1) and a terminal state showing delayed inflammatory response genes (Cd74, Ifi202b, Acod1, Cxcl2, F13a1, S100a9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C133 are supported by RNA velocity analysis (Figure 3H-I), lineage driver gene analysis with supporting citations for gene function (Figure 3J, C128), and Cell Rank temporal analysis (Figure 3K). The interpretation of immune suppression in early states and delayed inflammatory response in terminal states is supported by the specific genes identified and their known functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C148",
+      "C149",
+      "C150",
+      "C12",
+      "C50",
+      "C167"
+    ],
+    "result": "E. faecalis infection induced two infection-specific macrophage clusters (2 and 5) among 12 total clusters. Infected wounds showed downregulation of Mrc1 and upregulation of both Arg1 and Nos2 compared to uninfected wounds, validated by both bulk tissue qPCR and in vitro BMDM infection experiments. In the scRNA-seq atlas, tissue-resident macrophages (Mrc1) predominated in uninfected wounds while M2-like macrophages (Arg1) were abundant in infected wounds, supporting an anti-inflammatory wound environment during E. faecalis infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C145, C148-C150, C12, C50, C167 are strongly supported by multiple lines of evidence: clustering analysis (Figure 4A-B), bulk tissue qPCR with statistical significance (Figure 4D), in vitro validation in BMDMs (Figure 4E), and scRNA-seq marker analysis (Figure 4F-G). The convergence of in vitro, in vivo, and scRNA-seq data provides robust support for M2-like polarization during infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C157",
+      "C158",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "RNA velocity identified cluster 2 as the terminal macrophage population in infected wounds (versus clusters 1 and 4 in uninfected). Infected macrophages expressed inflammation-related genes (Fth1, Slpi, Il1b, Nmes1, Ptges, Cxcl3) suggesting roles in tissue remodeling. Temporal analysis revealed two major states: an early state enriched in antigen-presenting MHC class II genes (H2-Ab1, H2-Eb1, H2-Eb2) and GPCRs (Gpr137b, Grp171, Gpr183) with Mrc1, and a late state with higher Cd36, Met, Sgms2, Fn1, Zeb2, and Arg2 suggesting M2-like polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C155, C157-C158, C162-C164 are supported by RNA velocity analysis (Figure 4H-I), differential gene expression analysis (Figure 4J), and temporal gene expression heat map (Figure 4K). The interpretation of tissue remodeling roles is supported by appropriate citations (C158). The progression from antigen-presenting to M2-like states is clearly documented in the temporal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C168",
+      "C169",
+      "C13",
+      "C14",
+      "C51",
+      "C52"
+    ],
+    "result": "Cellular interactome analysis revealed enrichment of ANNEXIN signaling (Anxa1:Fpr1 and Anxa1:Fpr2 pairs) between M2-like macrophages and endothelial cells or neutrophils, which inhibits pro-inflammatory cytokine production. The ANXA1:FPR1 interaction has been implicated in tumor microenvironments, indicating that E. faecalis-infected wounds mimic anti-inflammatory transcriptional programs of tumor microenvironments. Macrophage crosstalk with neutrophils regulates chemokine signaling while promoting anti-inflammatory interactions with endothelial cells, and infected macrophages drive pathogenic vascularization signatures in endothelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C166, C168-C169, C13-C14, C51-C52 are supported by cell-cell interaction analysis (Figure 4\u2014figure supplement 1I-K) and ligand-receptor pair identification. The functional interpretation of ANNEXIN signaling is supported by appropriate citations (C166). The comparison to tumor microenvironment is justified by multiple citations to cancer biology literature (C168). The integration of macrophage-neutrophil-endothelial interactions is supported by the comprehensive interaction analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Six neutrophil subpopulations were identified, with clusters 0 and 2 abundant in infected conditions. All neutrophils highly expressed Csf3r and Itgam. Higher expression of Cxcr2, Fcgr3, and Fth1 in clusters 0, 1, 2, 4, and 5 indicated migrating and maturing neutrophils regardless of infection status. Cluster 3 lacked Cxcr2 and Fcgr3 but was enriched in Camk1d, suggesting mature but inactive neutrophils. Infection-enriched neutrophils showed functional shifts: cluster 0 with high Lrg1 indicating activated phagocytic phenotype, and Csf1hi cluster 2 associated with negative regulation of apoptosis, cytokine production, and neutrophil activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C176 are supported by clustering analysis (Figure 5A-B), marker gene expression (Figure 5C-D), differential expression analysis (Figure 5E-G), and Gene Ontology analysis. The interpretation of neutrophil maturation states is supported by appropriate citations (C174). The functional characterization of infection-enriched clusters is data-driven and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C186",
+      "C187",
+      "C188",
+      "C190",
+      "C191",
+      "C193"
+    ],
+    "result": "RNA velocity analysis estimated infected neutrophils with propensity to become Lrg1hi neutrophils (cluster 0), driven by genes Entpd1, Picalm, Hdc, Cytip, Sipa1l1, and Fos. Temporal analysis revealed three distinct states: early (Ccl6, Il36g, Cxcl2, S100a6, S100a9 suggesting pro-inflammatory response), intermediate, and late (ribosomal proteins, metalloproteinases Mmp3/Mmp19/Adamts5, Cxcl1 suggesting perturbed infiltration). Cellular interactome analysis predicted anti-inflammatory neutrophil status through strong CCL signaling (Ccl3:Ccr1 axis) between neutrophils and M2-like macrophages, predictive of neutrophil extravasation. Overall, neutrophil analysis revealed perturbed pro-inflammatory resolution that may contribute to anti-inflammatory macrophage polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C184, C186-C188, C190-C191, C193 are supported by RNA velocity analysis (Figure 5H-I), lineage driver gene identification, temporal gene expression analysis (Figure 5J), and cell-cell interaction analysis (Figure 5K-M). The interpretation of perturbed pro-inflammatory resolution is supported by the temporal progression from pro-inflammatory to anti-inflammatory signatures. The Ccl3:Ccr1 axis function is supported by appropriate citation (C191).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "Two endothelial cell populations were identified with 13 clusters showing high Pecam1 and Plvap expression. Clusters 0 and 8 were exclusively found in infected ECs and were involved in ECM deposition, cell differentiation, and development, indicating an anti-inflammatory niche. RNA velocity analysis showed faster velocity in Sparchi (cluster 0) and Cilphi (cluster 8) cells, suggesting dynamic transcriptional states. Top lineage driver genes (Malat1, Tcf4, Rlcb1, Diaph2, Bmpr2, Adamts9) indicate pathogenic mechanisms in proliferating ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C199 are supported by clustering analysis (Figure 6A-B), Gene Ontology analysis (Figure 6C-D), RNA velocity analysis (Figure 6E), and lineage driver gene identification (Figure 6F). The interpretation of anti-inflammatory niche is supported by the functional enrichment data. The characterization of dynamic transcriptional states is appropriate based on RNA velocity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C213",
+      "C214"
+    ],
+    "result": "NicheNet analysis revealed Il1b ligand from M2-like macrophages correlated with expression of target genes (Bgn, Cd14, Ccl3, Csf3r, Itgam, Tnf) in endothelial cells. BGN has been associated with tumor EC signatures, and Cd14 expression suggests TLR activation. Cell-cell interaction analysis predicted that Ptgs2, Spp1, and Il1a ligand activity in M2-like macrophages influenced expression of calprotectin (S100a8, S100a9) and Csf3, suggesting potential disruption of EC integrity. CellChat analysis showed EC activation of SPP1 and CXCL signaling pathways, with ligands abundant in keratinocytes, fibroblasts, and M2-like macrophages. These findings suggest uninfected wounds undergo reparative angiogenesis while E. faecalis infection evokes pathological vascularization, with M2-like macrophage-EC interactions as targets of altered signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C206, C213-C214 are supported by NicheNet analysis (Figure 6G), CellChat analysis (Figure 6H-J), and ligand expression data. The interpretation of pathological vascularization is supported by comparison to tumor biology literature (C201) and TLR activation mechanisms (C202). The integration of multiple cell types in the immunosuppressive ecosystem is well-documented through comprehensive interaction analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239",
+      "C241",
+      "C242",
+      "C243",
+      "C245"
+    ],
+    "result": "Ligand-receptor interaction analysis revealed an immune-suppressive ecosystem driven by M2-like macrophages during infection. CellChat confirmed M2-like macrophages regulate angiogenesis through Vegfa:Vegfr1. The Spp1 ligand correlated with integrins and Cd44 in ECs, with infected keratinocytes and fibroblasts as primary Spp1 sources (highlighting partial EMT state). The Spp1:Cd44 interaction in M2-like macrophages and ECs indicated proliferative state. Neutrophil chemokine Cxcl2 strongly correlated with Ackr1 suggesting neutrophil extravasation. Hbegf secretion by keratinocytes and Ereg-enriched fibroblasts confirmed anti-inflammatory microenvironment and angiogenic ECs. The increased number of predicted signaling interactions suggests E. faecalis modulates cellular communication to alter immune response. The CXCL/SPP1 signaling pathway emerges as critical in shaping the immune-altering ecosystem, demonstrating collaborative roles of keratinocytes, fibroblasts, and immune cells in immune suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C232-C239, C241-C243, C245 integrate findings from multiple cell-cell interaction analyses (Figures 6G-J, supplementary figures) with ligand expression data. The identification of CXCL/SPP1 as a central pathway is supported by its consistent appearance across multiple cell type interactions. The interpretation of collaborative immune suppression is well-supported by the comprehensive interaction network analysis showing convergence of multiple cell types on these pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Wound infections are highly prevalent and can lead to delayed or failed healing with significant morbidity and economic impacts, occurring in contexts including diabetic foot ulcers, burns, and surgical sites. E. faecalis is often found in persistent non-healing wounds, but its contribution to chronic wounds remains understudied. The skin is the largest defense system in mammals with unique cellular heterogeneity maintaining tissue homeostasis. Previous comprehensive studies have highlighted skin complexity but primarily focused on intact skin or uninfected wounds, offering limited insights into wound healing following infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C16-C20 provide background context supported by general medical knowledge (C1-C3, C16-C17) and literature citations (C18). The assessment of the research gap (C4, C19-C20) is reasonable based on the cited literature focusing on uninfected conditions. These claims establish appropriate motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Efficient wound healing involves three interconnected stages (inflammation, proliferation, remodeling) mediated by inter- and intracellular molecular interactions involving soluble ligands and innate immune system. The inflammatory phase initiates leukocyte migration with neutrophils responding to pro-inflammatory cytokines (IL-1\u03b2, TNF-\u03b1, IFN-\u03b3) and extravasating to injury sites. The proliferative stage reduces wound size through contraction and epithelial barrier re-establishment facilitated by activated keratinocytes modulated by inflammatory responses, cytokines, and growth factors. Tissue remodeling restores mechanical properties through ECM reorganization, degradation, and synthesis. Dysregulation can lead to pathological outcomes with persistent inflammation and excessive ECM production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 describe established wound healing biology supported by appropriate citations. These claims provide necessary background for interpreting the experimental findings and are consistent with current understanding of wound healing processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "E. faecalis is a commensal gut bacterium and opportunistic pathogen responsible for surgical site infections and diabetic ulcers. Bacterial wound infections including E. faecalis are biofilm-associated, resulting in antibiotic-tolerant populations leading to persistent infections. E. faecalis has mechanisms to evade immune clearance by suppressing pro-inflammatory M1-like macrophage phenotype and preventing neutrophil extracellular trap formation, and can persist and replicate within epithelial cells and macrophages. The combination of biofilm formation and immune evasion makes Enterococcal wound infections a significant clinical challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 describe established characteristics of E. faecalis supported by appropriate citations. These claims provide essential background on the pathogen's biology and clinical significance, establishing the rationale for studying its effects on wound healing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Prior investigations in a murine wound model revealed a bifurcated trajectory of E. faecalis infection: an acute replication phase with increasing CFU and pro-inflammatory response (cytokine/chemokine production, neutrophil infiltration), followed by a persistence stage where CFU stabilize at ~10^5 by 2-3 dpi coinciding with delayed healing. Specific bacterial determinants were identified: de novo purine biosynthesis enhances fitness during acute phase, while galactose/mannose uptake systems and mprF gene product are associated with nutrient acquisition and antimicrobial resistance during persistence. However, the intricate interplay between persistence-associated virulence factors, immunomodulatory evasion strategies, and implications in delayed wound healing remains to be investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 describe previous findings from the authors' prior work supported by appropriate citations. These claims establish the foundation for the current study by documenting known infection dynamics and identifying the specific knowledge gap (C46) that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "EGF primarily influences skin cell growth, proliferation, and differentiation during later stages of wound healing (typically around 10 days post-injury), explaining reduced Egf expression in uninfected wounds at 4 days. During tissue maintenance, TGF-\u03b21 acts as a growth inhibitor, and its absence leads to keratinocyte hyperproliferation. Elevated TGF-\u03b21 levels have been observed in epidermis of chronic wounds in both humans and mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61-C63 describe established knowledge about growth factor functions in wound healing, supported by appropriate citations. These claims provide necessary context for interpreting the gene expression changes observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C151",
+      "C152"
+    ],
+    "result": "The analysis identified M2-like macrophage polarization populations marked by higher expression of Arg1, Egr2, Fn1, and Fpr2, and tissue-resident macrophage (TRM) populations expressing Ccr5, Cd68, Fcgr1, Mrc1 (Cd206), Ms4a4c, and Pparg. Both macrophage populations exhibited limited expression of M1-like markers Grp18 and Nos2 (iNos). The analysis allowed segregation of dendritic cells and Langerhans cells (cluster 10) from macrophage populations, characterized by co-expression of langerin (Cd207) and integrin alpha X (Itgax/Cd11c), confirming validity of cell annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75, C151-C152 describe cell type identification and marker validation supported by expression data in supplementary figures. The segregation of DC/LC from macrophages using established markers (C151-C152) validates the annotation approach. These findings establish the cellular composition necessary for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C107",
+      "C109",
+      "C223"
+    ],
+    "result": "Distinct keratinocyte populations were identified including hair follicle stem cells (Lrg5hi), differentiating basal cells (Ivlhi), terminally differentiated keratinocytes (Lorhi), and bulge stem cells (Krt15hi), reflecting skin complexity. RNA velocity of uninfected wound keratinocytes revealed terminal hair follicle (Lrg5hi) and proliferating keratinocyte (Mki67hi) populations originating from basal keratinocytes, underlining normal wound healing. Uninfected wounds showed proliferating keratinocyte and hair follicle cells consistent with previous findings on wound healing and skin maintenance signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83, C107, C109, C223 describe keratinocyte populations in uninfected wounds supported by marker expression data (Figure 2D) and RNA velocity analysis (Figure 2H). The findings are consistent with previous literature (C223), validating the experimental approach and providing a baseline for comparison with infected conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Keratinocytes from uninfected wounds showed macrophage migration inhibitory factor (Mif) ligand interactions with receptors Cd44, Cd74, and Cxcr4 in immune cells (DC/LC and TRM), suggesting these keratinocytes promote cell proliferation, wound healing, and survival. The data show epidermal cells undergo migratory and inflammatory gene regulation during normal wound healing, whereas E. faecalis induces anti-inflammatory transcriptional modulation that may promote chronicity. These findings demonstrate keratinocytes exist in a low inflammation profile under homeostasis, which is exacerbated upon E. faecalis infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C110-C112 integrate ligand-receptor interaction data with interpretation supported by citations (C106). The comparison between normal healing and infection-induced responses is supported by the differential expression and interaction analyses. The interpretation of low inflammation profile exacerbated by infection is consistent with the overall dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Upon injury, fibroblasts primarily migrate into wound sites, produce ECM by secreting growth factors, and regulate inflammatory response. In response to injury, fibroblasts produce increased ECM by inhibiting the metalloproteinase (MMP) family through tissue inhibitor of metalloproteinases 1 (TIMP1). A rare fibroblast population expressing myeloid lineage cell markers was previously reported during normal wound healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 describe established fibroblast biology in wound healing, with C117 supported by appropriate citation. These claims provide necessary background for interpreting the fibroblast findings in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C134",
+      "C140",
+      "C224",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "Uninfected fibroblasts contribute to healthy wound healing with proliferative and elastin-rich fibroblast populations. RNA velocity analysis of uninfected wound fibroblasts revealed two terminal populations originating from Fbn1hi fibroblasts: elastin-rich (Elnhi) and keratinocyte-like (Krt1hi/Krt10hi) fibroblasts. Two infection-specific fibroblast populations enriched in Lyz2 (and Tagln) and Timp1 were found, identifying myofibroblast characteristics. RNA velocity confirmed cluster 5 as terminal fibroblast population derived from myofibroblasts (cluster 2), with Timp1 expression correlating with cell growth and proliferation signatures (Sparc, Fgf7, Malat1) over latent time. These findings collectively demonstrate a profibrotic state in fibroblasts driven by E. faecalis-induced transcriptional dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134, C140, C224-C227 integrate findings from RNA velocity analysis (Figures 3H-I) and temporal gene expression analysis (supplementary figures) to characterize both normal and infection-induced fibroblast states. The identification of terminal populations and their characteristics is supported by multiple analytical approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "In E. faecalis-infected wounds, interactions involving Spp1 ligand with cell adhesion receptor Cd44 and integrins (Itgav+Itgb1, Itgav+Itgb3, Itgav+Itgb5, Itga4+Itgb1, Itga5+Itgb1, Itga9+Itgb1) and EGF signaling pairing Ereg:Egfr were observed. These interactions were particularly strong between macrophages (ligands) and endothelial cells (receptors), suggesting involvement in infected wound microenvironment. By contrast, uninfected wounds showed normal wound healing profile with reparative VEGF and TGF-\u03b2 signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 describe ligand-receptor interactions supported by cell-cell interaction analysis in supplementary figures. The comparison between infected and uninfected signaling profiles is clearly documented and provides context for understanding the pathological changes during infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Co-expression of both M1-like and M2-like macrophage markers during infection has been previously reported for M. tuberculosis, T. cruzi, and G. lamblia infections as an indicator of immunosuppressive phenotype promoting anti-inflammatory environment during prolonged infection. Csf1 upregulation in neutrophils mediates macrophage differentiation toward immunotolerant phenotype characterized by low LY6C expression and increased proliferation rate. Higher abundance of cell proliferation marker Mki67 was observed in infected myeloid cells, with expression specific to terminal macrophage clusters 2 and 5, while Ly6c1 level was lower in all macrophages but specific to LCs. These findings suggest neutrophils may contribute to anti-inflammatory polarization of E. faecalis infected macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C147, C177-C182 integrate established knowledge from other infection models (C146-C147) with current findings on marker expression (C179-C181) to interpret neutrophil-macrophage interactions. The interpretation of neutrophil contribution to macrophage polarization (C182) is reasonable based on the Csf1 expression data and established mechanisms (C177).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C153",
+      "C156",
+      "C228",
+      "C229"
+    ],
+    "result": "Gene Ontology analysis revealed infection-specific macrophages were involved in immune response, ECM production, and protein translation. Cluster 5 did not exhibit velocity vectors since these cells were highly segregated from main myeloid clusters and differed vastly in gene expression. Prolonged macrophage survival is associated with impaired wound healing. COX-2 (cyclooxygenase-2, encoded by Ptgs2 gene) has been reported as crucial regulator of M2-like polarization in tumor-associated macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153, C156, C228-C229 provide functional characterization of macrophage populations (C153) supported by Gene Ontology analysis, explain technical observations from RNA velocity analysis (C156), and provide relevant background from literature (C228-C229) that contextualizes the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C189",
+      "C191",
+      "C192"
+    ],
+    "result": "MMP19 has been implicated in M2 polarization, consistent with anti-inflammatory signatures of infected macrophage populations. The Ccl3:Ccr1 axis is an interaction predictive of neutrophil extravasation during E. faecalis infection. Neutrophil extravasation is a vital event in immune responses to infections to ensure host survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189, C191-C192 provide supporting context from literature that helps interpret the observed gene expression patterns and cell-cell interactions. These claims are appropriately cited and relevant to understanding the biological significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "In uninfected ECs, fibroblasts modulated expression of target genes (Tek, Foxo1, Sele) with notable angiopoietin 1 activity, pointing to normal endothelial cell activity. During unperturbed wound healing, macrophages modulate angiogenesis by producing proteases including MMPs which degrade ECM in wound bed. Macrophages secrete chemotactic factors (TNF-\u03b1, VEGF, TGF-\u03b2) to promote EC migration. The TGF-\u03b2 signaling pathway induces fibroblast proliferation and ECM production in wound healing. Analysis of cellular interactome in uninfected wound dataset revealed strong interactions in TGF-\u03b2 and VEGF signaling pathways, corroborating previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C207-C212 describe normal wound healing processes in uninfected conditions, supported by NicheNet analysis (C207-C208), established biological knowledge (C209-C211), and cell-cell interaction analysis consistent with previous literature (C212). These findings provide important baseline comparisons for the pathological changes observed during infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220"
+    ],
+    "result": "Previous scRNA-seq studies have primarily focused on transcriptional profiles of epithelial and fibroblast populations in wound healing, but the impact of host-pathogen interactions on wound healing transcriptional programs remains to be investigated. This work presents the first comprehensive single-cell atlas of mouse skin wounds following infection, highlighting transcriptional aberration in wound healing. E. faecalis has immunosuppressive activity in various tissues and infection sites. By surveying approximately 23,000 cells, the study identified cell types, characterized shared and distinct transcriptional programs, and delineated terminal phenotypes and signaling pathways in homeostatic healing or bacterial wound infections. These scRNA-seq findings elucidate the immunosuppressive role of E. faecalis during wound infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C215-C220 provide context for the study's novelty (C215-C217) supported by literature citations, establish the pathogen's known characteristics (C218), and summarize the study's scope and contributions (C219-C220). The claim of being the first comprehensive single-cell atlas of infected wounds (C217) appears justified based on the cited literature focusing on uninfected conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C240"
+    ],
+    "result": "While macrophage polarization is complex in humans and other higher organisms, the scRNA-seq data suggests E. faecalis infection drives an anti-inflammatory microenvironment resembling tumor microenvironment. These findings confirm and expand on previous studies highlighting the immunosuppressive role of E. faecalis in different contexts. The study confirms the immune-suppressive role of E. faecalis in wound healing, consistent with previous findings in different experimental settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C230-C231, C240 provide appropriate caveats about macrophage complexity (C230) while interpreting the findings in context of previous work (C231, C240). The comparison to tumor microenvironment is supported by the ANXA1:FPR1 interaction data and appropriate citations. These claims appropriately position the current findings within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C246",
+      "C247",
+      "C248"
+    ],
+    "result": "The study lacks a reference dataset of uninfected, unwounded dorsal skin transcriptome, which would have allowed investigation of transcriptomic changes temporally, especially induced by wounding alone. Although public datasets were explored to address this limitation, the low number of cells in public datasets, particularly for macrophage populations, prevented their inclusion in the analysis. Additionally, the absence of multiple time points hinders ability to examine temporal changes and dynamic kinetics of host responses following infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C246-C248 acknowledge important study limitations. The lack of unwounded skin reference (C246) and multiple time points (C248) are legitimate limitations that affect interpretation of temporal dynamics. The explanation for not using public datasets (C247) is reasonable given the need for adequate cell numbers, particularly for macrophage analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C86",
+      "C92",
+      "C93"
+    ],
+    "result": "Zeb2hi keratinocytes co-expressing Cxcl2, Il1b, and Wfdc17 indicate a myeloid-derived suppressor cell-like phenotype implying an immunosuppressive environment. Gjb6hi keratinocytes demonstrated reduced expression of Pof1b, Krt77, Dnase1l3, and Krtdap as well as increased Clic4 expression, suggesting E. faecalis infection perturbs normal healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C92-C93 make interpretations about cell phenotypes and functional implications based on gene expression patterns. While the gene expression data is clear (C92), the interpretation of MDSC-like phenotype (C86) and perturbation of normal healing (C93) are inferences that would benefit from additional functional validation. The citations support the MDSC interpretation (C86), but direct functional evidence is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C244"
+    ],
+    "result": "The CXCL/SPP1 signaling pathway has potential as a therapeutic target for chronic infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C244 is a speculative statement about therapeutic potential. While the pathway's importance is well-documented in the study, the claim of therapeutic potential is not directly tested. This represents a reasonable hypothesis for future work but lacks experimental validation in the current study.",
+    "result_type": "MINOR"
+  }
+]

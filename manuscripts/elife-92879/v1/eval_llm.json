@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "COPD is a major global health burden with no curative treatments. COPD ranks as the third leading cause of mortality, is projected to cause over a billion deaths by the end of the 21st century, and emphysema (the most clinically significant variant) often progresses despite smoking cessation. Inhalation of PM2.5 from pollution and tobacco smoke are established risk factors for COPD development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by citations to published literature and represent well-established epidemiological and clinical knowledge about COPD. These background claims provide appropriate context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior work has established that nanosized carbon black (nCB), a component of PM2.5, activates immune cells and drives T cell-dependent inflammatory responses leading to emphysema in mice. Aberrant T cells, particularly IL-17-secreting Th17 cells, are implicated in COPD pathogenesis through promotion of lung epithelial destruction and recruitment of inflammatory cells that release matrix-degrading enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 summarize prior published work by the authors and others, all supported by appropriate citations. These establish the scientific foundation for the current study but represent background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background literature establishes that Tc17 cells play critical roles in autoimmune and inflammatory disorders, require ROR\u03b3t for differentiation and IL-17A production, and that ROR\u03b3t expression is elevated in COPD. The Mirlet7 miRNA family has been reported to be downregulated in emphysematous lung tissue and to regulate IL-17+ T cell responses, though mechanisms remain ill-defined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 provide comprehensive background on Tc17 cells, ROR\u03b3t, and Mirlet7 miRNAs, all supported by citations to published literature. These establish the rationale for investigating Mirlet7 regulation of ROR\u03b3t in emphysema but are not novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "MIRLET7 clusters (MIRLET7A3/MIRLET7B and MIRLET7A1/MIRLET7F1/MIRLET7D) are downregulated in T cells from emphysema patients and in mouse models of emphysema. Analysis of published RNA-seq data and qPCR validation showed significant downregulation of Mirlet7ahg and Mirlet7bhg transcripts in COPD lungs, and CD4+ T cell expression of Mirlet7 family members inversely correlated with emphysema severity by CT scan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C36 are supported by multiple lines of evidence including analysis of published RNA-seq data (GSE57148), qPCR validation in human samples, and correlation analysis with disease severity. The data consistently demonstrate Mirlet7 downregulation across human COPD samples and mouse models (Figures 1B-H), establishing a key observation for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Generation and baseline characterization of let7bc2LOF mice showed robust conditional deletion of Mirlet7bc2 in T cells, normal Mendelian birth ratios, no overt lung histopathology up to 1 year of age, and comparable immune cell populations to controls under homeostatic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by qPCR validation of deletion (Figure 2B) and comprehensive baseline characterization including histology and flow cytometry (Figure 2\u2014figure supplement 1). This establishes that the genetic model is valid and that Mirlet7bc2 deletion does not cause spontaneous pathology, which is critical for interpreting subsequent challenge experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Deletion of Mirlet7bc2 in T cells exacerbates experimental emphysema. let7bc2LOF mice showed increased alveolar enlargement (MLI measurements), enhanced airway infiltration of macrophages and neutrophils, and elevated expression of matrix metalloproteinases (Mmp9, Mmp12) following nCB or cigarette smoke exposure compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by multiple complementary measurements including histomorphometry (MLI), BAL cell counts, and gene expression analysis (Figures 2C-G). The data consistently show worsened emphysema phenotype in let7bc2LOF mice across two different exposure models (nCB and CS), providing strong evidence for a protective role of Mirlet7bc2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mirlet7bc2 specifically regulates Tc17 but not Tc1 or Th17 responses in emphysema. nCB exposure induced both Tc17 and Tc1 cells in wild-type mice, but let7bc2LOF mice showed selective increases in CD8+IL17A+ Tc17 cells while CD8+IFN\u03b3+ Tc1, Th1, Th17, and Treg populations remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 are supported by comprehensive flow cytometry analysis (Figure 3A-D) showing selective effects on Tc17 cells. The specificity of the phenotype (affecting Tc17 but not Tc1, Th17, or Tregs) is well-documented and suggests a refined regulatory mechanism. However, the lack of effect on Th17 cells is somewhat surprising given that both cell types require ROR\u03b3t.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mirlet7 directly targets ROR\u03b3t. Bioinformatic analysis identified a conserved Mirlet7 binding site in the Rorc 3'UTR. Both let7bc2LOF and let7afdLOF mice showed increased ROR\u03b3t expression in thymocytes and peripheral T cells, with enhanced ROR\u03b3t in lung T cells following nCB exposure, demonstrating overlapping functionality of independent Mirlet7 clusters in restraining ROR\u03b3t expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are supported by TargetScan analysis (Figure 4A) and flow cytometry measurements of ROR\u03b3t protein levels in multiple tissues and conditions (Figures 4B-E). The observation that two independent Mirlet7 clusters regulate ROR\u03b3t strengthens the conclusion. However, the compensatory effect in naive lung T cells (C59) suggests additional complexity in regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In vitro experiments confirm that Mirlet7 directly suppresses Rorc and negatively regulates Tc17 differentiation. Mirlet7bc2- and Mirlet7afd-deficient CD8+ T cells showed enhanced Tc17 differentiation and IL-17A production but normal Tc1 differentiation, with increased ROR\u03b3t expression. Luciferase reporter assays demonstrated that Mirlet7b directly represses Rorc through the predicted binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 are supported by multiple in vitro assays including flow cytometry, ELISA, and luciferase reporter assays (Figure 5A-I). The luciferase data with wild-type and mutant 3'UTR constructs (C72-C74) provide direct mechanistic evidence for Mirlet7 targeting of Rorc. The consistency across two independent Mirlet7 clusters strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Gain-of-function experiments show that enforced Mirlet7g expression suppresses ROR\u03b3t and dampens type 17 T cell responses but does not protect from emphysema. let7GOF mice showed reduced ROR\u03b3t in T cells at baseline and were resistant to nCB-induced increases in Tc17 and Th17 cells, but exhibited comparable lung alveolar distension to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 are supported by flow cytometry and histopathology data (Figure 6B-F). The GOF experiments provide important complementary evidence for Mirlet7 regulation of ROR\u03b3t and type 17 responses. However, the lack of protection from emphysema (C79-C80) despite reduced type 17 responses suggests that Mirlet7g overexpression alone is insufficient or that other pathways contribute to disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The authors propose that chronic nCB exposure orchestrates emergence and accumulation of Tc17 cells which may act in parallel with Th17 cells to promote tissue damage in emphysema.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is partially supported by the data showing increased Tc17 cells in nCB-exposed mice, but the proposed mechanism of action 'in parallel with Th17 cells' is speculative. The study does not directly test whether Tc17 cells are necessary or sufficient for tissue damage, nor does it demonstrate functional cooperation with Th17 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The authors acknowledge limitations of the Mirlet7g GOF model, noting that it expresses only Mirlet7g which may be less potent than the two mature forms from the Mirlet7b/Mirlet7c2 cluster, potentially explaining why GOF mice showed reduced type 17 responses but were not protected from alveolar remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 represent reasonable speculation by the authors about limitations of their model, supported by the experimental observations. This interpretation is plausible given that different Mirlet7 family members may have overlapping but non-identical functions and potencies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Discussion of prior literature and speculation about mechanisms. The authors discuss published work on Mirlet7 downregulation in COPD, Tc17 cell functions, ROR\u03b3t regulation, and potential mechanisms for Mirlet7 downregulation in emphysematous T cells, including transcriptional and post-transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C98 represent discussion of published literature (supported by appropriate citations) and reasonable speculation by the authors. These provide important context and interpretation but do not constitute novel experimental findings from this study.",
+    "result_type": "MINOR"
+  }
+]

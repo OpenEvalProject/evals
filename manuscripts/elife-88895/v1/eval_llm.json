@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The introduction establishes that ecDNA are circular DNA molecules enriched for oncogenes that lack centromeres, segregate asymmetrically, drive tumor heterogeneity and treatment resistance, exhibit altered chromatin accessibility and regulation, and are prevalent across 0-59.6% of tumor types in TCGA samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C8) are all supported by citations to prior published work and represent established background knowledge from the literature. They appropriately set the context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The study analyzed 870 TCGA samples (234 ecDNA(+), 636 ecDNA(-)) from 14 tumor types, excluding BFB and complex non-cyclic samples to minimize false-negative ecDNA classifications due to short-read sequencing limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 describe the sample selection methodology with clear rationale. The exclusion criteria are justified based on technical limitations (C10) and biological relationships (C11), though these introduce potential selection bias that could affect generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Using Boruta feature selection on 200 resampled datasets (80% of samples each), the authors identified 408 Core genes persistently predictive of ecDNA status. Pvclust clustering with AU confidence >0.95 identified 354 stable co-expression clusters, expanding the Core set to 643 CorEx genes (408 Core + 235 co-expressed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 describe a methodologically sound approach combining feature selection and clustering. The resampling strategy (C15) addresses class imbalance, and the clustering approach (C17-C18) is statistically justified. The threshold of 10/200 trials is somewhat arbitrary but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "ecDNA(-) samples had slightly but significantly lower tumor purity than ecDNA(+) samples (p=0.0036), though this did not substantially confound CorEx gene selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 reports a statistically significant difference in tumor purity. While the authors address this concern in supplementary analyses, the lower purity in ecDNA(-) samples could reduce ecDNA detection sensitivity and introduce bias. The magnitude and impact require careful interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "CorEx and Core genes showed superior predictive performance (AUPRC 0.48-0.5) compared to GLM and Top-|LFC| genes (AUPRC 0.43), with significantly higher recall at precision \u22650.7 (p<4.8e-21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 demonstrate modest but statistically significant improvement in predictive performance. However, the overall AUPRC values are relatively low (<0.5), indicating that ecDNA status prediction remains challenging even with optimized gene sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "CorEx gene expression directionality was significantly consistent across 10 of 11 tumor types tested (exception: sarcoma, which contains liposarcomas with chromothripsis), supporting a pan-cancer role in ecDNA biogenesis and maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 demonstrate cross-tumor-type validation with appropriate statistical testing. The sarcoma exception (C26) is explained by biological differences. However, the inference of causality regarding 'biogenesis and maintenance' (C28) goes beyond what correlation data can support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "CorEx genes had higher baseline expression in both ecDNA(+) and ecDNA(-) samples compared to Top-|LFC| genes (p<2e-308), with modest but persistent log-fold changes (median 0.30, mean 0.41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 characterize the expression properties of CorEx genes with appropriate statistics. The modest effect sizes suggest these genes represent subtle but consistent transcriptional changes rather than dramatic differential expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Among 643 CorEx genes, 262 were up-regulated in ecDNA(+) samples, enriching 187 GO biological processes clustered into 11 categories. These included cell cycle regulation, cell division, DNA damage response, and HOX genes (17 members up-regulated), with 165 genes explained by these categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 describe comprehensive GO enrichment analysis with appropriate clustering methodology. The biological interpretation is reasonable, though the causal language in C39 ('to ensure ecDNA presence') overstates what can be concluded from correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "DNA damage response genes were significantly enriched for double-strand break repair pathways. Alt-EJ (p=0.0063), SSA (p=0.0063), and HR (p<0.00001) were significantly up-regulated, while classical NHEJ was not (p=0.19), suggesting enhanced dependence on non-classical NHEJ pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 provide detailed pathway analysis with appropriate statistical testing. The differential regulation of DSB repair pathways is well-documented. However, the inference about 'enhanced dependence' (C48) requires functional validation beyond expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Key c-NHEJ genes (XLF/NHEJ1, LIG4, PNKP, POLL, POLM) were down-regulated while Alt-EJ genes (PARP-1, POLQ, LIG1, LIG3, FEN1) and HDR genes (BLM, EXO1, RPA1, RPA3, BRCA1, BRCA2, RAD51) were up-regulated, suggesting pathway choice favoring alt-EJ and HDR over c-NHEJ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 provide detailed gene-level analysis with statistical support. The pattern is consistent with alternative DSB repair pathway usage. However, expression changes alone do not prove functional pathway preference, and post-translational regulation is not assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "271 down-regulated CorEx genes enriched 73 GO terms clustered into 7 categories, all immunomodulatory. The largest category was lymphocyte activation (75 genes), with additional categories including cytokine activation, inflammation, and leukocyte chemotaxis. Remarkably, all 10 TLRs were significantly down-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C71 demonstrate comprehensive down-regulation of immune pathways with appropriate statistical support. The breadth of immune suppression across multiple pathways is striking. However, bulk RNA-seq cannot distinguish whether this reflects tumor cell-intrinsic changes or altered immune cell infiltration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Four of seven down-regulated gene categories mapped to the cancer immune cycle, with significant down-regulation in inflammation (p=0.005), leukocyte chemotaxis (p=0.03), and lymphocyte activation (p=0.0075), but not cytokine production (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 map findings to an established cancer immunity framework with appropriate statistical testing. The selective down-regulation across most but not all immune cycle steps is well-documented, though mechanistic interpretation requires caution with bulk RNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Immune subtype analysis showed increased C1/C2 subtypes and depleted C3/C6 subtypes in ecDNA(+) samples (p=0.00396), consistent with prior reports of immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 provide independent validation using immune subtyping with appropriate statistical testing. The consistency with prior work (C77) strengthens confidence, though the chi-squared test assumes independence that may not hold for related immune subtypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Total mutation burden was significantly higher in ecDNA(+) samples overall, including when limited to deleterious mutations. However, when controlling for cancer type, only GBM (lower in ecDNA(+)), LGG (higher in ecDNA(+)), and UCEC (lower in ecDNA(+)) showed differential burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 demonstrate that the pan-cancer mutation burden difference is largely driven by tumor type composition rather than ecDNA status per se. This is an important negative result that appropriately qualifies the initial finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "TP53 was the only gene with significantly higher mutation frequency in ecDNA(+) samples after multiple testing correction (OR 2.67, adjusted p=4.22e-07), while BRAF mutations were more common in ecDNA(-) samples (OR 0.27, adjusted p<0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 identify specific differentially mutated genes with appropriate multiple testing correction. The TP53 finding is robust and biologically plausible (C84), though the causal interpretation requires validation. BRAF significance is marginal (FDR<0.1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Collections of gene mutations could not distinguish ecDNA(+) from ecDNA(-) samples using XGBoost classification or PCA, in contrast to gene expression data. APOBEC signature enrichment (SBS2/SBS13) in ecDNA(+) samples was confirmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 demonstrate that mutation patterns are less informative than expression patterns for ecDNA status prediction. This is an important negative result. The APOBEC signature finding (C87) confirms prior work and provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Robustness analysis across 8 different Boruta selection thresholds showed that 93 GO terms (49.7%) were enriched at all thresholds, and 155 terms (82.9%) were enriched in at least 5 of 8 thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 demonstrate that the main GO enrichment findings are robust to the arbitrary 10/200 trial threshold. This sensitivity analysis strengthens confidence in the biological conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "65 genes with harmonic rank <3 represented the most persistent CorEx genes, impacting cell division (16 genes), cell cycle (10 genes), and DNA damage response (16 genes). Only EGFR and CDK4 from the 24 most frequently amplified genes on ecDNA were in this set. TPX2, KIF2C, and AURKA (appearing in \u2265180/200 trials) represent potential widespread vulnerabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 identify high-confidence candidate genes using multiple ranking criteria. The observation that persistent CorEx genes are not themselves on ecDNA (C93-C94) is important. However, the inference about 'vulnerabilities' (C98) requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Among 18 highly-ranked down-regulated genes, 14 came from a single cluster, with 6 appearing in \u2265180 Boruta trials (CHMP7, XPO7, INTS9, TACR1, KIAA1967, PCM1). Some (CHMP7, XPO7, KIAA1967) are reported tumor suppressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 identify persistent down-regulated genes with literature support for tumor suppressor roles. However, the functional significance of their down-regulation in ecDNA(+) tumors remains unclear and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The study concludes that ecDNA-containing tumors show profound alterations in gene regulation, up-regulating DNA damage/repair, cell cycle control, and mitotic processes while down-regulating immune pathways. This strengthens the case for targeting these processes and suggests Alt-EJ preference over c-NHEJ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 summarize the main findings appropriately. The conclusions are supported by the data, though the therapeutic implications (C105) and mechanistic inferences (C106) require experimental validation. The language appropriately uses 'suggests' rather than claiming causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Down-regulated genes were primarily immunomodulatory, encompassing most aspects of the cancer immune cycle, suggesting impaired recognition of tumor DNA/proteins as foreign. cGAS was up-regulated while STING was down-regulated, suggesting potential for STING agonist intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C109 are well-supported by the expression data. However, C110's therapeutic suggestion for STING agonists is speculative and not directly tested. The mechanistic interpretation of 'impaired recognition' (C109) requires validation beyond expression correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study discusses that while high TMB is generally associated with better immunotherapy response, this relationship varies by tumor type, with gliomas showing opposite patterns, consistent with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 appropriately contextualize the findings within existing literature on TMB and immunotherapy response. These are citations to prior work that help interpret the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The authors conclude that ecDNA-containing tumors have profound transcriptional alterations that do not arise solely from genes on ecDNAs themselves, but reflect fundamental global processes in DSB repair, cell cycle control, and immune regulation contributing to ecDNA formation and pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 provide appropriate concluding interpretation. The distinction between ecDNA-encoded genes and chromosomal gene expression changes (C115) is important and supported by the data (C93-C94). However, the causal language about 'contributing to formation and pathogenesis' goes beyond what correlation data can prove.",
+    "result_type": "MAJOR"
+  }
+]

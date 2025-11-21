@@ -1,0 +1,165 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C44",
+      "C45",
+      "C62",
+      "C63"
+    ],
+    "result": "Structural analysis reveals that Tyr199 and Tyr309 of human PANX1 are located near the side tunnel, with Tyr199 partially buried at the intersubunit interface and Tyr309 completely buried inside the protein. Both residues are conserved among PANX1 orthologs, and phosphorylation would require conformational changes or partial unfolding of the intracellular domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14, C44-C45, C62-C63 are supported by structural data from cryo-EM structures (Figure 1A) and sequence alignment (Figure 1B). The structural location of these residues is clearly demonstrated, and the inference about required conformational changes for phosphorylation is reasonable given the buried nature of these residues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Commercially available anti-PANX1-pY198 and anti-PANX1-pY308 antibodies are nonspecific. The anti-PANX1-pY198 antibody recognizes only Src but not PANX1, while the anti-PANX1-pY308 antibody recognizes a non-phosphorylated peptide epitope around Y309. Both antibodies show promiscuous activity against mSrc and/or other endogenous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C15-C20 are strongly supported by multiple experimental approaches including western blots (Figures 2B, 3A), in vitro phosphorylation assays, and mutagenesis experiments (Figure 3B-C). The data consistently demonstrate that these antibodies fail to specifically recognize phosphorylated PANX1 at the claimed sites and instead detect other proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Neither Tyr199 nor Tyr309 is a major phosphorylation site for Src kinase in heterologous expression systems. This conclusion is supported by in vitro phosphorylation assays, Phos-tag gel analysis in HEK293T and Neuro2A cells, and LC-MS/MS analysis showing no phosphorylation at these sites even with constitutively active Src.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21-C26 are supported by converging evidence from multiple orthogonal techniques: pan-phosphotyrosine antibody detection (Figure 3A), Phos-tag gels showing no mobility shift (Figures 4A, 5B, 6A), and LC-MS/MS data unambiguously identifying non-phosphorylated peptides at both sites (Figure 4 supplements 3-5). The consistency across methods and cell types strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C64"
+    ],
+    "result": "PANX1 channel current remains unchanged in the presence of constitutively active mSrc-Y529F, as measured by whole-cell patch clamp electrophysiology. Two-way ANOVA revealed no significant difference between hPANX1 alone and hPANX1 co-expressed with mSrc-Y529F (p=0.7875).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C64 are supported by electrophysiology data (Figure 7B) with appropriate statistical analysis. The lack of functional change in PANX1 currents in the presence of active Src provides functional evidence consistent with the biochemical findings that Src does not phosphorylate PANX1 at the proposed sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Critical assessment of prior literature reveals inconsistencies in the use of phospho-specific antibodies. In DeLalio et al. 2019, the pY198 antibody signal does not match the expected location of mPANX1 protein. In Weilinger et al. 2016, pY308 signal is present even for the Y308F mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide critical assessment of prior work based on examination of published figures. These observations are consistent with the current study's findings about antibody non-specificity and raise valid concerns about the interpretation of previous results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Technical observations about PANX1 expression and antibody specificity: hPANX1 expressed in Neuro2A cells is heavily glycosylated, which can be removed by PNGase F treatment. The anti-PANX1 antibody from Abcam detects non-specific bands at 100 kDa and 50 kDa, with the 50 kDa band likely representing endogenous PANX1 and the 100 kDa band being a non-specific target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by deglycosylation experiments (Figures 5A, 6\u2014figure supplement 1) showing that PNGase F treatment reduces heterogeneous bands to a single band, confirming N-linked glycosylation. The identification of non-specific bands is based on differential sensitivity to PNGase F treatment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C46"
+    ],
+    "result": "Characterization of Src variants used in the study: Y529F mutation renders Src constitutively active by disrupting autoinhibitory interactions, K297M mutation abolishes ATP-binding capability, and mouse Src has 99.4% sequence similarity to human Src.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C46 are supported by citations to prior literature and are well-established properties of Src variants. The sequence similarity statement is verifiable. These claims provide important methodological context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors acknowledge limitations and alternative interpretations: Tyr199 and Tyr309 may be phosphorylated by other kinases in other cell lines, Tyr150 may not be effectively recognized by mSrc, and Src may still regulate PANX1 through indirect mechanisms involving additional proteins such as STIM1/2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 represent appropriate acknowledgment of study limitations and alternative hypotheses. These speculative statements are clearly identified as such and are supported by citations to relevant literature (e.g., C61 citing Patil et al. 2022). This demonstrates scientific rigor in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Background and context from prior literature: PANX1 is a large-pore channel involved in ATP release and various physiological processes. Previous studies have reported Src-mediated phosphorylation at Tyr198/308 in various cellular contexts, though some studies showed Src involvement without direct phosphorylation. Other phosphorylation sites and regulatory mechanisms have also been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C6-C9, C30-C43, C52-C54 are background claims supported by citations to prior literature. These provide essential context for understanding the current study's motivation and significance. The authors appropriately cite relevant prior work, though the current study challenges some of these previous findings.",
+    "result_type": "MINOR"
+  }
+]

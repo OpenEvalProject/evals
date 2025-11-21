@@ -1,0 +1,152 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The DPP-based imputation methods (DPP-MICE, detDPP-MICE, DPP-MissForest, and detDPP-MissForest) improve classification accuracy compared to baseline methods (MICE and MissForest) across 12 dataset experiments on synthetic and MIMIC-III clinical data. The deterministic variants (detDPP) consistently outperform both baseline methods and stochastic DPP variants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer states that 'the methods presented in this work provide modest yet consistent accuracy improvements for data classification tasks where certain data are missing' and describes 'the methodology and results for the classical (non-quantum) case are solid.' The anonymous reviewer acknowledges 'the sampling method for imputing missing values that account for the variability of the data seems to be accurate.' Both reviewers accept the accuracy improvements without challenging the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C18",
+      "C19",
+      "C38"
+    ],
+    "result": "The deterministic DPP-based methods (detDPP-MICE and detDPP-MissForest) provide deterministic imputations that eliminate variance in downstream classification results, unlike standard stochastic methods. When simulated without hardware noise, the quantum version also produces deterministic outputs with zero variance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anonymous reviewer raises a significant concern about this claim, questioning whether 'there could be some spurious interaction between the imputation and the classification methods, that could bias the data in the sense of having a better classification, but not imputing the real values; in particular when the deterministic DPP is used.' The reviewer suggests the authors should evaluate imputations directly rather than only through downstream classification performance, indicating uncertainty about whether the deterministic property truly reflects accurate imputation or merely optimization for classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C20",
+      "C21",
+      "C37",
+      "C66",
+      "C71",
+      "C72"
+    ],
+    "result": "Quantum algorithms for DPP sampling provide theoretical computational advantages over classical methods, with running time scaling linearly (quantum) versus cubically (classical) with the number of features, achieving quadratic to cubic speedup in the sampling step after similar preprocessing complexity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The first reviewer explicitly states that 'evidence for the practical quantum advantage via their approach in \"next generation\" quantum computers remains incomplete,' indicating skepticism about the practical realization of the theoretical speedup claims. While the theoretical complexity advantage is cited from prior work, the reviewer questions whether this translates to practical advantage, leaving the quantum computational benefit uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "Quantum hardware experiments on IBM's 27-qubit processor with circuits up to 10 qubits demonstrate competitive results with standard methods for small-scale imputation tasks. Simulated quantum DPP-MissForest shows AUC improvements over MissForest, and hardware results are often close to simulation values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer acknowledges the quantum hardware experiments as part of the work and states 'the results are valuable and should interest data scientists, life scientists and anyone working in quantum computing.' While noting limitations about future quantum advantage, the reviewer does not challenge the actual hardware experimental results presented, accepting them as demonstrating competitive performance at the small scale tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Variance observed in quantum hardware results is caused by noise in the current quantum hardware rather than being inherent to the algorithm. The output represents a sample from a noisy version of the determinantal distribution, and this variance is expected to reduce with better quality quantum computers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer challenges this interpretation of the quantum hardware noise. The first reviewer's comment about incomplete evidence for practical quantum advantage relates to future scalability rather than disputing the noise characterization. The explanation that hardware noise causes variance (rather than algorithmic randomness) is accepted as a reasonable interpretation of the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Missing clinical data is a common problem in life sciences due to incomplete data collection, format discrepancies, and corruption. There is no canonical imputation approach, and widely used algorithms introduce variance in downstream classification. Machine learning algorithms require complete datasets, and missing values significantly affect model quality.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer challenges these background claims about the problem of missing data in clinical settings. These are presented as established knowledge and motivation for the work, and both reviewers accept the problem framing without objection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C35",
+      "C36",
+      "C51",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Determinantal point processes (DPP) sample subsets based on diversity (volume in feature space), giving more weight to diverse data points and reducing attention to similar points. This improves prediction accuracy particularly for unbalanced datasets like clinical data. DPP-Random Forest replaces uniform bootstrapping with DPP sampling without replacement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anonymous reviewer explicitly states as a strength that 'the sampling method for imputing missing values that account for the variability of the data seems to be accurate.' Neither reviewer challenges the theoretical basis or mechanism of DPP sampling. The methodology is accepted as sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DPP-based imputation methods are computationally intensive and hard to parallelize due to their sequential nature, becoming less efficient for larger datasets with bigger batches. Quantum circuits require qubits equal to batch size with depth proportional to features. Quantum DPP algorithms could speed up imputation on next-generation quantum computers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These computational limitations and resource requirements are stated by the authors and not disputed by reviewers. The first reviewer's skepticism about practical quantum advantage relates to whether future quantum computers will deliver the speedup, not to the characterization of classical computational challenges or quantum resource requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The proposed algorithms can impact reliability of models in high-precision settings such as pharmaceutical drug trials by providing higher confidence in predictions through elimination of stochastic variance from multiple imputations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim about practical impact is speculative. The anonymous reviewer's concern about potential spurious interactions between imputation and classification methods directly questions whether the deterministic property truly provides the claimed reliability benefits, particularly for clinical applications. The reviewer's suggestion to evaluate imputations directly indicates uncertainty about whether improved classification necessarily means improved imputation quality.",
+    "result_type": "MINOR"
+  }
+]

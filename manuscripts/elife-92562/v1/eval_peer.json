@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C19",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors developed a Newtonian-mechanics two-dimensional rigid body chain model (ElegansBot) of C. elegans locomotion, consisting of rigid segments connected by damped torsional springs, with anisotropic Stokes friction as the only external force.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the model's simplicity and general applicability as strengths, but raise concerns about its novelty and justification. One reviewer notes 'a functionally similar approach was developed in 2012 to describe worm locomotion in lattices (Majmudar, 2012)' which is not discussed. Another reviewer questions why drag coefficients 'had to be changed by a factor of 100' and whether this reflects physical reality or model limitations. The editor notes the model is '2-dimensional' applied to '3-dimensional turning behavior without sufficient justification.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C55",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The model reproduces forward crawling and swimming locomotion with velocities matching experimental observations (0.208 mm/s for crawling, 0.223 mm/s for swimming), and reveals that during crawling the body pushes diagonally along the ground surface while during swimming the worm gains momentum when bent in a c-shape.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm these results. One reviewer states 'the model reproduces experimental movement data using realistic physical parameters' and notes 'the matching of speeds (though requiring adjusted drag coefficients) is a strength.' Another reviewer acknowledges 'the biomechanics of nematode turning behaviors are relatively less well described' but does not challenge the forward locomotion results. However, the need for adjusted drag coefficients raises some questions about parameter validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C71",
+      "C72",
+      "C84"
+    ],
+    "result": "ElegansBot successfully reproduces complex locomotion behaviors including omega-turns, delta-turns, and escaping behavior (forward-backward-turn-forward sequences), with trajectories accurately matching experimental videos.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express mixed views on these claims. One reviewer identifies 'applying a biomechanical model to omega-turn behaviors' as a primary strength since 'the biomechanics of nematode turning behaviors are relatively less well described.' However, the editor critically notes the model is '2-dimensional' applied to '3-dimensional turning behavior without sufficient justification.' Another reviewer cautions that 'the worm touches itself during such turns, and even crosses over itself in delta turns, and so the estimated drag coefficients and the resultant mechanical forces are likely incorrect.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Power calculations show that during both escaping behavior and delta-turns, the worm produces substantially more power during backward locomotion and turning (3-8 times higher) compared to initial forward locomotion, with specific quantified values for each phase.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer identifies 'the increase in power during omega turns' as 'one of the more novel results,' suggesting this is a strength. However, another reviewer notes 'the results of the application of the model to previously unstudied behaviors are primarily qualitative and do not produce new predictions.' A third reviewer states 'the breakdown of drag forces and torque distributions during forward locomotion and turning behaviors may be interesting' but emphasizes these need validation and comparison with other tools, and notes the forces are 'likely incorrect' when the worm touches itself during turns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "During omega-turn or delta-turn, the worm gains significant propulsion from deep bend regions to change direction, a mechanism newly discovered using ElegansBot.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While one reviewer notes that applying the model to turning behaviors is a strength since these are 'relatively less well described,' the editor states 'the results of the application of the model to previously unstudied behaviors are primarily qualitative and do not produce new predictions.' Another reviewer questions 'what novel model predictions are made?' suggesting the predictive power is unclear. The claim of 'newly discovered mechanism' is not explicitly validated by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ElegansBot improves on previous models by including inertia in equations of motion, enabling kinetic analysis and requiring only body angles as input data to recover trajectories.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers directly challenge claims of improvement over prior work. One reviewer states 'the strength of the model presented in this work relative to prior approaches is not well supported' and notes 'the sole nematode model cited aims to do something different, and arguably more significant.' The editor concludes 'the claim that this work improves on extant mechanical models is incomplete.' Another reviewer notes 'it is unsurprising that it can reproduce experimentally observed kinematics' since the model takes kinematics as input, questioning what advantage this provides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "To the authors' knowledge, there was no prior kinetic model reproducing complex C. elegans locomotion including all modes (forward, backward, turns) from experimental observations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenge this novelty claim. One reviewer states 'the overall novelty of the approach is questionable' and notes 'a functionally similar approach was developed in 2012 to describe worm locomotion in lattices (Majmudar, 2012, Roy. Soc. Int.), which is not discussed.' The reviewer also notes 'other modeling approaches do take experimental body kinematics as inputs and use them to produce force fields, however, they are not cited or discussed,' indicating the literature review is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "ElegansBot could be used to connect neural network models to behaviors and has broad utility for analyzing motion of other rod-shaped animals and robots.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer affirms 'the model is straightforward in implementation and so likely is adaptable to modification and addition of control circuits.' Another states 'the model is general due to its simplicity and likely useful for various undulatory movements.' These potential applications are treated as reasonable extensions by reviewers, though they are speculative rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Background claims about C. elegans anatomy, development, physical properties, and locomotion principles based on established literature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are standard background claims about C. elegans supported by citations to established literature. Reviewers do not question these foundational facts, implicitly accepting them as established knowledge. One reviewer notes 'the grounding in empirical data' as a strength, supporting the use of established parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Methodological details including data sources, tracking software (Tierpsy Tracker, WormPose), implementation in Python 3.8, computational performance, and parameter sources from prior work.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these methodological claims. One reviewer notes the model's computational efficiency and straightforward implementation as strengths. Another reviewer's concern about parameter validation (drag coefficients) relates to justification rather than the stated sources, and one reviewer explicitly states satisfaction with revisions addressing previous concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The force dispersion pattern in the model resembles that of snake locomotion and the simulation tracks resemble experimental traces on agar plates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These comparative observations are not challenged by reviewers. One reviewer emphasizes 'the grounding in empirical data' as a strength, and another notes the model 'reproduces experimental movement data,' which implicitly supports these qualitative comparisons to other systems and experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Mechanical simulators of rod-shaped animals have been used in various studies to demonstrate how muscle activities are represented as behavioral phenotypes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This background claim about prior modeling work is not disputed by reviewers, though they do critique the authors' characterization of how their work relates to and improves upon these prior models. The existence and general purpose of such models is accepted as established context.",
+    "result_type": "MINOR"
+  }
+]

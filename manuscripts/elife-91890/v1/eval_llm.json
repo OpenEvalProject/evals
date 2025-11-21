@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Serotonin modulates appetitive behavior in an odor-specific manner in locusts. At 1% concentration, serotonin injection increased PORs to hexanol (HEX) and benzaldehyde (BZA), decreased PORs to linalool (LOOL), and had no significant effect on ammonium (AMN) responses. Control experiments with saline injection or time passage alone showed no changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide quantitative behavioral data showing differential effects of serotonin on different odorants, with appropriate controls (C28). The odor-specific modulation is well-documented across multiple odorants with statistical significance indicated. The experimental design includes proper controls for injection effects and time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Serotonin enhances appetitive behavioral responses over a wide range of odorant concentrations. Serotonin increased PORs to HEX and BZA across four log units of concentration (0.01-10% v/v), eliminated the response reduction observed at the highest concentrations, while having minimal effects on LOOL and AMN responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 demonstrate dose-response relationships with serotonin treatment across multiple concentrations. The data show consistent enhancement for specific odorants (HEX, BZA) across concentration ranges, with statistical support indicated in Figure 2. The elimination of high-concentration response reduction is a notable finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Serotonin alters spontaneous activity of projection neurons in the antennal lobe, inducing bursty firing patterns. After serotonin application, PNs exhibited spontaneous bursts of spikes with significantly reduced inter-spike intervals (ISI), indicating increased excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by intracellular recordings from 82 PN-odor combinations showing consistent changes in spontaneous firing patterns. The ISI analysis provides quantitative evidence (median ISI reduction, p=3.57\u00d710\u207b\u2076) with appropriate statistical testing. The shift in ISI distributions is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Serotonin changes the intrinsic excitability of individual projection neurons. Current injection experiments showed that before serotonin, spiking activity increased monotonically with current magnitude, but after serotonin, spiking remained relatively stable regardless of current injection magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by current injection experiments (Figure 4\u2014figure supplement 2) showing altered input-output relationships. This provides direct evidence for changes in intrinsic excitability independent of network effects. However, the sample size (n=4 cells) is relatively small for this critical mechanistic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Serotonin enhances odor-evoked response magnitude while preserving temporal response patterns. The total number of spikes increased during both ON and OFF periods after serotonin application, but response timing (ON vs OFF) was robustly maintained, with ON responses more consistently preserved than OFF responses. Non-responsive neurons remained inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C52 are well-supported by systematic analysis of 82 PN-odor combinations with appropriate controls (C49). The preservation of temporal features while increasing magnitude is clearly demonstrated through multiple analyses. The differential robustness of ON vs OFF responses (C46) adds nuance. Statistical support is provided throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Serotonin preserves ensemble-level odor identity information despite amplifying responses. PCA analysis showed that ON and OFF response trajectories before and after serotonin overlapped, and correlation analysis confirmed high similarity in odor-evoked ensemble patterns, while spontaneous activity patterns changed significantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by complementary dimensionality reduction (PCA) and correlation analyses of high-dimensional neural data. The preservation of odor identity despite response amplification is demonstrated through multiple analytical approaches. The negative correlation of spontaneous activity (C55) contrasts appropriately with preserved odor-evoked correlations (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A simple linear regression model with neural ensembles segregated by behavioral relevance successfully predicts odor-specific behavioral modulation. The model assigns positive weights to neurons activated by high-POR odorants (HEX) and negative weights to neurons activated by low-POR odorants (LOOL), explaining how uniform neural amplification produces odor-specific behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C71 describe a linear model that successfully predicts behavioral outcomes (C65, Figure 6D). The model is built on published extracellular data (89 PNs) and shows appropriate segregation of neural ensembles (C66-C68). The mechanistic explanation (C71) is logical and consistent with the 'neuron-anti-neuron' framework cited from prior work (C63-C64). Model generalization is demonstrated in Figure 6\u2014figure supplement 1 (correlation=0.79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Serotonin influences feeding-related behaviors in locusts, but its role in hunger-state-dependent modulation remains unclear. Fed locusts showed reduced responses to HEX and BZA compared to hungry locusts, but serotonin injection increased responses in both fed and hungry animals to comparable levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by behavioral data from fed vs hungry locusts (Figure 7, n=24). The finding that serotonin increases responses in both states (C73-C74) is clearly demonstrated. However, C77 appropriately acknowledges that this pattern does not definitively establish serotonin's role in hunger-state modulation, as the effect is not state-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Neural segregation based on behavioral relevance occurs early in the olfactory pathway at the antennal lobe level. Extracellular recordings showed that hexanol (high POR) and linalool (low POR) activate highly non-overlapping sets of projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by extracellular recording data (Figure 6E) showing distinct neural ensembles for odorants with different behavioral valences. This provides anatomical/functional evidence for the segregation proposed in the linear model. The conclusion that segregation begins early (C86) is a reasonable inference from antennal lobe data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C82"
+    ],
+    "result": "Serotonin allows for sensitive and robust odor recognition by enhancing response strength while maintaining odor identity information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C82 are interpretive conclusions well-supported by the combined findings that serotonin increases response magnitude (C3, C48) while preserving temporal features (C4, C52) and ensemble patterns (C5, C57). This interpretation logically follows from the data showing enhanced sensitivity without loss of discriminability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "POR patterns remain consistent when evaluated 15 minutes versus 3 hours after serotonin injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by data in Figure 1\u2014figure supplement 4 showing temporal stability of serotonin effects. This addresses a potential concern about the different timing used for behavioral (3 hr) versus electrophysiological (5-10 min) experiments, though the justification for the delay difference could be clearer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Methodological details for behavioral and electrophysiological experiments are provided, including animal preparation, odorant concentrations, injection protocols, recording parameters, and analysis criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C111 describe experimental methods with appropriate detail. Key parameters are specified: animal source, odorant dilutions, injection volumes and concentrations, recording electrode properties, trial structure, and response classification thresholds. The 3-hour stabilization period (C99) and different timing for electrophysiology (C100) are noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Projection neurons and local neurons in the locust antennal lobe can be distinguished by their spiking properties: PNs fire full-blown sodium spikes while GABAergic local neurons fire only calcium spikelets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 describe established physiological properties used for cell identification, supported by Figure 4\u2014figure supplement 3. This is important for validating that recordings were from the intended cell type (PNs). The distinction is presented as established knowledge with visual confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C94"
+    ],
+    "result": "The odorant panel includes compounds with diverse ecological relevance: hexanol is a green-leaf volatile, benzaldehyde is a putative locust aggregation pheromone, linalool is used in pesticides, and 4-vinyl anisole is a sexual maturation pheromone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C94 characterize the odorants used, supported by appropriate citations. This contextualizes the behavioral relevance of the chosen odorants and justifies the diverse panel selection. The characterizations are from cited literature rather than determined in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Increased neural sensitivity in projection neurons could compensate for decreased sensory input from olfactory sensory neurons during serotonergic modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is explicitly speculative ('it is possible') and attempts to reconcile the apparent contradiction between presynaptic inhibition of sensory neurons and increased PN responses. While this is a reasonable hypothesis, no direct evidence is provided for this compensatory mechanism. The claim appropriately acknowledges uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C78",
+      "C83",
+      "C87",
+      "C90"
+    ],
+    "result": "Background context on behavioral flexibility, neuromodulation, and serotonin's roles in insects is established through citations to prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C19, C78, C83, C87, and C90 provide literature context through appropriate citations. These establish the research framework and prior findings. The citations appear appropriate for the claims made, though the accuracy of specific cited findings cannot be verified without checking the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Neuron-anti-neuron pairs have been used for predicting motor outputs, and mushroom body output neurons form segregated channels for opposing behaviors in insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 cite prior work to support the conceptual framework of the linear model. These establish that the proposed architecture is consistent with known neural coding schemes. The citations appear appropriate for contextualizing the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C81"
+    ],
+    "result": "The increase in PN spiking activity appears inconsistent with presynaptic inhibition of sensory neurons, and changes in input-output mapping resulted in increased behavioral responses to HEX and BZA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 notes an apparent contradiction between different serotonin effects, appropriately citing relevant work. Claim C81 interprets the link between neural and behavioral changes. Both are reasonable interpretations of the data, though C79 acknowledges the tension that requires explanation (addressed speculatively in C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Neural segregation based on behavioral relevance could occur at any level of the olfactory pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a general statement about where segregation could theoretically occur. This is appropriately qualified and provides context for the specific finding that segregation is observed at the antennal lobe level (C85-C86). The claim is conceptually sound.",
+    "result_type": "MINOR"
+  }
+]

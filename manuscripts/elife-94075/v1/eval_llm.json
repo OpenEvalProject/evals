@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The E9 region, located approximately 9 kb upstream of the DPYD transcription start site, functions as a cis-regulatory enhancer element that modulates DPYD expression. This was demonstrated using CRISPRi and CRISPRa approaches in HepG2 and HCT116 cells, showing that targeting dCas9-KRAB to E9 decreased DPYD expression while targeting dCas9-P300 increased it, with corresponding changes in histone modifications (H3K9me3 and H3K27ac).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C37 provide converging evidence from multiple experimental approaches (CRISPRi/a in two cell lines, ChIP-qPCR for histone modifications) that consistently demonstrate E9's regulatory function. The bidirectional effects (repression with KRAB, activation with P300) with appropriate epigenetic changes strongly support the enhancer function. The lack of consistent effects for E16 and E20 strengthens the specificity of the E9 finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The germline variant rs4294451, located within the E9 enhancer region, differentially regulates DPYD expression in an allele-specific manner. The T allele is associated with higher DPYD expression, more active chromatin marks (higher H3K27ac, lower H3K9me3), and greater luciferase reporter activity compared to the A allele, as demonstrated in both CRISPR knock-in cell models and human liver specimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 present consistent evidence across multiple experimental systems (reporter assays, CRISPR knock-in cells, human liver tissues) and multiple readouts (expression, chromatin marks, reporter activity) all pointing to the same conclusion about allele-specific effects. The dose-dependent effects in heterozygous cells (C44, C47) provide additional support for a direct cis-regulatory mechanism. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Allele-specific expression analysis using RT-ddPCR in human liver specimens demonstrates that rs4294451 significantly affects DPYD expression in vivo. Using coding region variants (c.85T>C and c.496A>G) in linkage disequilibrium with rs4294451 as proxies, the T allele at rs4294451 was associated with 18-51% higher expression compared to the linked alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 describe a technically sophisticated approach to measure allele-specific expression in human tissues using linked coding variants as proxies. The LD values are provided (C49, C50), the fractional abundances are quantified with confidence intervals (C51, C54), and appropriate controls (homozygous samples) are included (C53, C55). The approach is valid given that rs4294451 is non-coding, though the imperfect LD (especially for c.496, R\u00b2=0.21) introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C81"
+    ],
+    "result": "The E9 enhancer region physically interacts with the DPYD promoter in a genotype-dependent manner, with cells carrying the rs4294451 T allele showing significantly stronger enhancer-promoter interactions than those with the A allele, as measured by 3C-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C58, and C81 present 3C-qPCR data demonstrating physical chromatin interactions between E9 and the DPYD promoter. The bidirectional approach (anchoring primers at both the promoter and E9) strengthens the finding. Statistical significance is reported (p<0.001) and ANOVA across all three genotypes confirms the genotype-dependent effect. This provides direct evidence for enhancer-promoter looping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C6"
+    ],
+    "result": "The rs4294451 genotype determines cellular sensitivity to 5-FU, with A/A cells being significantly more sensitive (IC50 = 9.1 \u03bcM) than T/T cells (IC50 = 95.0 \u03bcM), and heterozygous cells showing intermediate sensitivity (IC50 = 29.9 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, and C6 present RTCA data showing a >10-fold difference in 5-FU IC50 between genotypes, with statistical significance (p<0.0001) and a clear dose-dependent relationship matching the expression data. The intermediate phenotype in heterozygotes supports a gene-dosage effect. This functionally links the genetic variant to drug response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C82",
+      "C83"
+    ],
+    "result": "CEBPB is a critical transcription factor that binds to the E9 enhancer region and regulates DPYD expression in an rs4294451 genotype-dependent manner. Cells with the T/T genotype show significantly higher CEBPB occupancy at both E9 and the DPYD promoter compared to A/A or A/T cells, and CEBPB overexpression increases reporter activity more strongly with the T allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 and C82-C83 provide multiple lines of evidence: computational prediction of CEBPB binding (C62-C63), reporter assays with CEBPB overexpression (C64-C66), and ChIP-qPCR showing differential binding (C67). The convergence of computational, functional, and biochemical data strongly supports CEBPB as a key regulator. However, C102 notes that in silico analysis predicted the A allele would have stronger binding, which contradicts the experimental results, suggesting complexity in the binding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CEBPB knockdown selectively reduces DPYD expression and 5-FU resistance in cells carrying the rs4294451 T allele but not in A/A cells, demonstrating that CEBPB-mediated regulation is genotype-dependent and functionally relevant to drug sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 present loss-of-function experiments using two independent shRNAs showing that CEBPB knockdown reduces DPYD expression and 5-FU IC50 only in T-allele carriers. The genotype-specific effect (no change in A/A cells, C71) is critical evidence that CEBPB specifically mediates the T-allele effect. ChIP data (C70) confirms reduced CEBPB occupancy upon knockdown. This provides strong mechanistic evidence linking CEBPB to the variant's functional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C89",
+      "C90"
+    ],
+    "result": "The rs4294451-T allele shows substantial population frequency variation, with the highest minor allele frequency in African/African American individuals (40% MAF, with 65-70% estimated to be carriers) compared to European ancestry (23% MAF, ~35% carriers) and East Asian individuals (7% MAF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 and C89-C90 report allele frequencies from gnomAD, a well-established population genetics database. The frequencies are clearly stated with appropriate population stratification. The carrier frequency estimates (C89, C90) are calculated from allele frequencies using standard Hardy-Weinberg assumptions, which is appropriate for common variants. This is descriptive population genetics data that is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C84",
+      "C85"
+    ],
+    "result": "The study identifies rs4294451 as a candidate biomarker for 5-FU toxicity risk based on its effects on DPYD expression and cellular drug sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C84, and C85 summarize the main findings linking rs4294451 to DPYD regulation and 5-FU response. The designation as a 'candidate biomarker' (C85) is appropriately cautious given that clinical validation in patient cohorts is not presented in this manuscript. The in vitro and ex vivo evidence strongly supports the biological mechanism, but clinical utility remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors hypothesize that rs4294451-T carriers may have increased risk of tumor resistance to 5-FU due to elevated hepatic DPD expression reducing systemic drug exposure, and that tumor cells may retain the enhancer function leading to increased intratumoral drug inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C93, C94, and C95 are explicitly speculative (C86 and C95 are marked as SPECULATION in evidence_type). While the hypothesis is biologically plausible based on the demonstrated effects on DPD expression and 5-FU sensitivity in cell lines, no clinical outcome data or tumor-specific analyses are presented. C94 suggests colorectal cancer cells 'likely retain' enhancer function based on HCT116 data, but this is a single cell line and may not represent all tumors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "African American patients have worse overall survival in colorectal cancer compared to white patients, with both biological and non-biological factors contributing to this disparity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91 and C92 cite established literature on cancer health disparities. These are background claims providing context for the potential clinical relevance of the rs4294451 frequency differences across populations. The citations support these well-established observations in cancer epidemiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In silico analysis predicted that the rs4294451 A allele would create a stronger CEBPB binding site, but experimental data showed the opposite, with the T allele associated with higher activity. This discrepancy may be explained by cell-type specific binding and non-consensus motifs that are modulated by surrounding DNA sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 acknowledge a discrepancy between computational prediction and experimental results, and provide a literature-based explanation (C104 with citations). This transparent reporting of contradictory findings and attempt to reconcile them strengthens rather than weakens the overall conclusions, as it shows the authors considered alternative explanations and that the experimental data are robust despite not matching simple predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "This study represents the first report directly linking CEBPB to 5-FU metabolism and the first mechanistic demonstration of cis-regulatory variant effects on DPYD expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C106, and C108 assert novelty of the findings. These are claims about the state of the literature that cannot be definitively verified without comprehensive literature review, but the authors state this is 'to our knowledge' which is appropriately cautious. The mechanistic depth of the CEBPB-DPYD connection and the functional characterization of a regulatory variant are indeed novel contributions based on the presented work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The rs4294451 variant is in linkage disequilibrium with coding variants (c.85T>C and c.496A>G) that define haplotypes previously associated with differential DPD activity and 5-FU toxicity risk, suggesting that rs4294451 may modulate the effects of these coding variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 describe the relationship between rs4294451 and previously characterized DPYD variants, with appropriate citations. C115 is speculative about the combined effects but is appropriately framed as such. The LD relationships are quantified (C49, C50) and the prior associations are cited (C113, C114). This contextualizes the current findings within existing pharmacogenetic knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establishing that enhancers regulate tissue-specific gene expression, that genetic variants in enhancers contribute to cancer processes including therapeutic resistance, and that most GWAS variants lie in non-coding regions including enhancers, though mechanisms remain largely elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C17 are background statements supported by citations or established knowledge. These provide context for the study but are not novel findings. The citations appear appropriate for these well-established concepts in genomics and cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on DPYD and 5-FU: DPD is the rate-limiting enzyme for 5-FU metabolism, eliminating ~85% of circulating drug; DPD deficiency causes severe toxicity; known DPYD coding variants explain <20% of severe toxicities; and mechanisms of 5-FU resistance remain elusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 provide essential background on the DPYD/5-FU system with appropriate citations. These establish the clinical significance and knowledge gaps that motivate the study. The statistics (85% elimination, <20% explained toxicities) are cited to primary literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Discussion claims about the clinical significance of DPD expression: liver DPD is pivotal to both toxicity and resistance; 5-FU has a narrow therapeutic window; coding variants are unlikely to contribute to resistance; and elevated DPD in tumors or liver promotes resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are discussion points supported by citations that contextualize the findings. These are established concepts in 5-FU pharmacology that frame the significance of the regulatory variant findings. The citations appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Background on CEBPB: it is a member of the CCAAT Enhancer Binding Protein family with bZIP domains, is highly expressed in liver, has multiple isoforms with activating and inhibitory functions, and can interact with other transcription factors to co-regulate gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 provide background on CEBPB biology with appropriate citations. C99 is an inference from the experimental data that active isoforms regulate DPYD, which is reasonable given the overexpression and knockdown results, though isoform-specific experiments were not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Discussion of potential connections between CEBPB and 5-FU: mir-191 regulates CEBPB and is associated with 5-FU resistance; CEBPB signaling is activated by 5-FU treatment; and a mir-27a variant affects DPD regulation and toxicity risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 discuss connections to prior work with appropriate citations. C110 is speculative ('might represent') about CEBPB-mediated DPYD activation being a dynamic response to therapy, which is appropriately cautious. These discussion points contextualize the findings within broader regulatory networks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The rs4294451 variant has a 27% global minor allele frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 states a 27% 'global' MAF, but the detailed population-specific data (C73-C75) show substantial variation (7-40% across populations). A single 'global' MAF may be misleading given this heterogeneity. The 27% figure is not clearly sourced to a specific database query or calculation method in the abstract. This appears to be an oversimplification of the population-specific data presented later.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The rs4294451 T allele is associated with elevated DPYD expression and enriched for active chromatin marks in human liver tissues, consistent with prior eQTL findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C88 summarize findings that are supported by the allele-specific expression data (C51-C56) and ChIP-qPCR from human liver (C48). C87 appropriately cites prior work (Etheridge et al., 2020) and notes consistency with current findings. This validates the cell line findings in human tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims that therapeutic resistance has been reported for nearly all anti-cancer drugs and that up to 90% of cancer mortalities can be linked to drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 are background statements with citations (Mansoori et al., 2017; Ramos et al., 2021). While the 90% figure is striking, it is attributed to a citation. These provide motivation for studying resistance mechanisms but are not findings of this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors propose the SAPHIRE (Synergy-\u03a6-Redundancy) neurocognitive architecture, which divides information processing in the brain into three stages: (i) gatekeeping/gathering information from specialized modules into a workspace via synergistic interactions, (ii) integration within the workspace, and (iii) broadcasting integrated information back to modules via redundant interactions. This architecture emerges from a trade-off between performance and robustness in distributed systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C48 present a theoretical framework (SAPHIRE) based on information-theoretic principles and distributed systems theory. While the theoretical motivation is well-articulated (C39-C42), the three-stage architecture itself (C37-C38) is a proposal rather than an empirically demonstrated result. The operational definitions (C43-C48) are reasonable but remain to be validated against empirical data in subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Using Integrated Information Decomposition on resting-state fMRI data from 100 Human Connectome Project subjects, the authors operationalize gateways and broadcasters based on participation coefficient for synergistic versus redundant interactions. Gateways (high synergistic participation) are identified primarily in the default mode network, while broadcasters (high redundant participation) are located mainly in the executive control network, especially lateral prefrontal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 describe a clear methodological approach and report specific empirical findings. The operational definitions (C51-C52) are grounded in established graph theory (C49-C50), the analysis is performed on a substantial dataset (C53), and the results are robust to alternative module definitions (C58). The finding that lateral prefrontal cortex acts as a broadcaster aligns with GNWT predictions (C61), providing convergent validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors test the hypothesis that brain regions supporting consciousness should show reductions in integrated information during loss of consciousness (regardless of cause) that are restored upon recovery. They use two measures of integrated information (original \u03a6 and revised \u03a6R) applied to resting-state fMRI from 15 healthy volunteers under propofol anesthesia and 22 patients with chronic disorders of consciousness, analyzing changes with Network Based Statistics and a composite null hypothesis test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 establish clear hypotheses based on theoretical predictions from IIT and GNWT (C62-C63), describe appropriate datasets for testing these hypotheses (C64), and employ rigorous statistical methods including NBS correction and a composite null hypothesis test designed to detect shared effects across datasets (C69-C70). The use of the revised \u03a6R measure addresses known limitations of the original formulation (C66-C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Analysis using the revised \u03a6R measure revealed widespread reorganization of integrated information during loss of consciousness, with both increases and decreases observed. Critically, \u03a6R connections were reduced when consciousness was lost (in both anesthesia and DOC) and restored during recovery, with reductions localized primarily to the default mode network (bilateral precuneus, medial prefrontal cortex, inferior parietal cortex). The overall balance favored reduced integrated information (sum of F-scores = -25.37). The original \u03a6 measure failed to identify these consistent reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 report statistically significant findings (p<0.001) across multiple comparisons (C71-C73), with specific anatomical localization (C75) and quantitative assessment of the overall effect (C77). The contrast between \u03a6R and original \u03a6 results (C78) demonstrates the empirical validity of the revised measure. The findings meet the pre-specified criteria of tracking consciousness across different causes of unconsciousness and recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Regions showing reliable reductions in \u03a6R during loss of consciousness correspond to gateway nodes (not broadcasters) of the synergistic workspace, with all reductions occurring specifically within the default mode network. This suggests that loss of consciousness corresponds to anterior-posterior disconnection in integrated information between DMN gateway nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 integrate findings from the HCP-based workspace identification with the consciousness dataset, showing that \u03a6R reductions specifically affect gateway regions in the DMN. This provides a direct link between the proposed SAPHIRE architecture and consciousness, though C81 involves some interpretive inference beyond the direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The main findings regarding \u03a6R reductions in medial prefrontal and posterior cingulate/precuneus are robust to alternative analytical choices, including different brain parcellations (Schaefer-200 + Tian-32), alternative NBS threshold definitions (extent vs. intensity), and more stringent cluster thresholds (F>12). However, increases in \u03a6R were less robust across different approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 demonstrate appropriate sensitivity analyses to establish the robustness of the main findings. The acknowledgment that increases were less robust (C84) shows appropriate scientific caution and strengthens confidence in the more robust decreases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The SAPHIRE architecture identifies a synergistic workspace composed of prefrontal and parietal cortices, functionally decomposed into gateways (DMN) and broadcasters (FPN/executive control network). This data-driven identification provides a new framework for understanding functional differences between DMN and FPN based on their complementary roles in the workspace. The FPN, particularly lateral prefrontal cortex, acts as a broadcaster consistent with GNWT predictions and is positioned to coordinate whole-brain dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 synthesize the empirical findings with theoretical frameworks. The identification of workspace composition (C86) is supported by prior work (citation to Luppi et al., 2022b), the gateway/broadcaster distinction is empirically demonstrated (C88), and the interpretation regarding FPN function (C92-C93) is supported by convergent evidence from network neuroscience literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The default mode network, comprising posterior cingulate/precuneus, medial prefrontal cortex, and inferior parietal cortices, occupies a crucial position at the convergence of functional gradients and forms a structural/functional core of the brain. The DMN is involved in self-referential processing, episodic memory, and future-oriented cognition, with posterior regions acting as relays to the hippocampal memory system. This positions the DMN to integrate and contextualize information entering the workspace by combining it with past experiences and mental models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 synthesize well-established findings from the literature (supported by multiple citations) with the current study's identification of the DMN as containing gateway nodes. The interpretation of the DMN's role (C102) is a reasonable inference based on its known functional properties and anatomical connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The study confirms and expands Shanahan's 'connective core' hypothesis from a functional, information-centric perspective, differentiating multiple roles played by different regions within this core using novel information-theoretic tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 appropriately position the current work relative to prior theoretical proposals. The study provides empirical support for the connective core hypothesis while adding functional differentiation (gateways vs. broadcasters) not present in the original structural hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Brain regions exhibiting consciousness-specific reductions in integrated information coincide with major nodes of the synergistic workspace, with main disruptions localized in gateway nodes rather than broadcasters. Loss of consciousness can be understood as a breakdown of entry points to the synergistic core. The revised \u03a6R measure demonstrates empirical validity, while the original \u03a6 measure failed to show consistent reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 synthesize the main empirical findings regarding consciousness and integrated information. The localization to gateway nodes (C106) is empirically demonstrated, and the contrast between \u03a6R and original \u03a6 (C108-C109) validates the theoretical improvements of the revised measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "The findings align with prior evidence that DMN information content and integrative capacity are compromised during loss of consciousness from various causes (anesthesia, brain injury, COVID-19). Breakdown of DMN connectivity within the synergistic workspace may represent failure to integrate one's self-narrative into the stream of consciousness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 appropriately contextualize the findings within existing literature (C110 supported by extensive citations). The interpretation regarding self-narrative (C111) is speculative but reasonable given the DMN's known role in self-referential processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "During anesthesia, reductions in integrated information extend beyond the synergistic core to thalamic, auditory, and somatomotor regions, resembling regions that stop responding to sensory stimuli during propofol-induced EEG slow-wave activity saturation. This suggests propofol disrupts thalamocortical sensory information processing ('thalamocortical isolation'), with the thalamus and sensory cortices ceasing to provide information to the synergistic workspace.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C114 report additional findings and draw connections to prior work on propofol effects. However, C113 acknowledges the absence of EEG data to confirm SWAS in the current study, and C115 is explicitly speculative ('we propose'). The interpretation is plausible but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The findings are consistent with GNWT's proposal that unconsciousness represents network dysfunction creating inhospitable conditions for global information exchange. Nodes of the synergistic workspace become disconnected in terms of integrated information during loss of consciousness, especially between anterior and posterior regions. Brain regions meeting three criteria (belonging to workspace, showing overall \u03a6R reductions, disconnecting from other workspace regions) constitute an interconnected 'synergistic core' supporting consciousness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 synthesize the findings in relation to GNWT. The three criteria for the synergistic core (C118) are clearly defined and empirically demonstrated through the combination of workspace identification and consciousness-related changes in integrated information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study acknowledges limitations of using BOLD fMRI (indirect proxy of neural activity with limited temporal resolution) but employed HRF deconvolution to mitigate confounds. The overall \u03a6R reduction findings are broadly consistent with prior ECoG work in non-human primates showing a shift away from synergy during anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 appropriately acknowledge methodological limitations (C119) and steps taken to address them (C120). The convergence with prior electrophysiological work (C121) provides cross-method validation despite the limitations of BOLD fMRI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study clarifies that pairwise \u03a6R does not measure whole-brain integrated information as specified in IIT, is based on IIT 2.0 (conceptually distinct from IIT 3.0/4.0), and should be interpreted as a theoretically grounded macroscale indicator that tracks consciousness rather than a direct cause of it. The empirical relationship between \u03a6R and consciousness requires further investigation at the microscale and regarding causal mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 demonstrate appropriate scientific caution in interpreting the findings and their relationship to IIT. The clarifications about what is and is not claimed (C125-C127) strengthen the scientific rigor of the work, and the acknowledgment of needed future work (C128) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study observed increases in integrated information during loss of consciousness (possibly compensatory), appearing to coincide with broadcaster nodes. Lateral prefrontal cortex showed paradoxical increases in integrated information during anesthesia and DOC, suggesting different workspace subsets may be differentially involved in consciousness. However, these increases were less robust across analytical approaches than the decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C133 report intriguing findings but acknowledge their speculative nature (C129) and lack of robustness (C133). The interpretation regarding differential involvement of workspace subsets (C132) is reasonable but requires further investigation. The paradoxical increases (C131) contrast with theoretical expectations and remain unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Dreaming occurs in up to 27% of anesthesia cases, and disconnected consciousness (behavioral unresponsiveness with preserved mental imagery) has been demonstrated during anesthesia. Some participants in the current study may have been disconnected but still conscious, potentially explaining observed increases in integrated information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C135 cite prior literature on disconnected consciousness, but C136 is explicitly speculative ('we cannot exclude'). Without EEG data or other measures to assess consciousness state during scanning, this remains a plausible but unverified alternative explanation for some findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "Reliance on resting-state data without external stimuli may have overestimated the DMN's role and underestimated the FPN's role in consciousness, given their differential recruitment during no-task conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 appropriately acknowledges a methodological limitation with supporting citation. This is a valid concern that should be considered when interpreting the relative importance of DMN versus FPN in consciousness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The current work is complementary to recent data-driven characterizations of the global workspace based on task involvement (Deco et al., 2021b), differing in focus (consciousness vs. cognition) and methodology (integrated information vs. transfer entropy). Different approaches to defining the global workspace can provide complementary insights, and information decomposition frameworks can be applied to various connectivity measures including transfer entropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 appropriately position the work within the broader literature and acknowledge the value of complementary approaches. The technical point about decomposing transfer entropy (C150-C151) is supported by citations and demonstrates the generality of the information decomposition framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Growing evidence indicates brain dynamics and time-resolved states are important for cognition and consciousness. Time-resolved extensions of the framework combined with higher temporal resolution neuroimaging (MEG/EEG) may shed further light on synergistic workspace dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 are well-supported by extensive citations. Claim C154 is a reasonable suggestion for future work based on existing time-resolved extensions of the framework (cited).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The proposed cognitive architecture has broad applicability due to its grounding in information theory and network science, potentially applicable to cognition in various organisms and artificial systems. The framework provides powerful insights about consciousness and neurocognitive architecture through information-resolved approaches, with practical tools applicable to diverse neuroimaging datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C158 appropriately summarize the study's contributions and potential applications. The generality claim (C155) is reasonable given the theoretical foundations, and the practical applicability (C157) is demonstrated through the current work. These are appropriate concluding statements supported by the presented work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose a framework (d-VAE) to define, extract, and validate behaviorally relevant neural signals based on two requirements: signals should resemble raw signals to preserve neuronal properties (encoding requirement) and contain maximal behavioral information (decoding requirement). The framework assumes raw signals are additively composed of relevant and irrelevant signals, with three validation criteria: relevant signals should decode better than raw signals, irrelevant signals should contain minimal information, and relevant signals should be similar to raw signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 establish the methodological foundation of the study. The framework is clearly defined with explicit assumptions (C78, C81), requirements (C79, C80), and validation criteria (C82-C84). The rationale for each criterion is provided (C85), creating a logically coherent approach to an inherently challenging problem where ground truth is unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "d-VAE successfully extracts effective behaviorally relevant signals that outperform raw signals and competing methods (PSID, pi-VAE, TNDM, LFADS) across multiple datasets. On synthetic data with known ground truth, d-VAE balances reconstruction and decoding to extract signals similar to ground truth. On real data, d-VAE achieves the highest decoding performance for relevant signals, lowest decoding for irrelevant signals, and highest neural similarity to raw signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C61-C63 demonstrate d-VAE's effectiveness through comprehensive validation on both synthetic and real datasets. The synthetic data validation (C61, C62) is particularly strong as it provides ground truth comparison. Real data results (C8-C10) show consistent superiority across multiple metrics and datasets with statistical testing. The firing pattern similarity (C63) provides qualitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C31",
+      "C64",
+      "C65",
+      "C72"
+    ],
+    "result": "Behaviorally irrelevant signals account for a large amount of trial-to-trial neuronal variability, with differential effects on neurons: small effect on strongly tuned neurons but large effect on weakly tuned neurons. After removing irrelevant signals, relevant signals show more consistent and stable patterns across trials, while irrelevant signals vary randomly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C31, C64-C65, C72 are well-supported by Fano factor analysis (Figure 3c-h) with strong statistical significance (p<10^-20). The differential effects on strongly vs. weakly tuned neurons (C31) are demonstrated through PD deviation analysis (Figure 3a, e). Visual evidence of trial consistency (Figure 3i) supports the stability claims. The conclusions logically follow from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Behaviorally relevant signals occupy a low-dimensional subspace (7-13 dimensions for 90% variance) while irrelevant signals require higher dimensionality (46-81 dimensions). The two signal types are nearly orthogonal, with relevant signals dominating larger variance PCs and irrelevant signals dominating smaller variance PCs. Using raw signals overestimates neural dimensionality compared to relevant signals alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19, C66-C69 are supported by comprehensive PCA analysis across three datasets (Figure 4). The dimensionality estimates are clearly quantified, and the orthogonality is demonstrated through variance capture analysis showing only 9-12% overlap (C17). The composition analysis (C18, C67-C68) is visualized in multiple figures with consistent results. The overestimation claim (C19) is directly shown in Figure 4\u2014figure supplement 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C42",
+      "C23",
+      "C59"
+    ],
+    "result": "Smaller R\u00b2 neurons (previously considered to contain little information) actually encode rich behavioral information in complex nonlinear ways. After signal distillation, decoding performance from smaller R\u00b2 neurons improves dramatically (100% improvement for ANN, 1300% for KF). These neurons are critical for neuronal redundancy, showing stronger correlation in relevant signals and enabling robustness to large-scale neuronal destruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C42, C23, C59 are strongly supported by decoding analysis (Figure 5a, d) with large effect sizes and statistical significance. The synthetic data validation (Figure 5\u2014figure supplement 2) confirms that d-VAE recovers masked information rather than creating it. The correlation matrix analysis (Figure 5b, e) and neuron drop-out experiments (Figure 5c, f) provide converging evidence for the redundancy and robustness claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C36",
+      "C37",
+      "C75"
+    ],
+    "result": "Smaller variance PC signals encode rich behavioral information in complex nonlinear ways. While KF can hardly decode secondary signals alone, ANN decodes them effectively, and these signals contain significantly more information than raw signals of equivalent dimensionality. This indicates behavioral information is distributed in a higher-dimensional subspace than expected from raw signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C36-C37, C75 are supported by cumulative decoding analysis (Figure 6b, e). The differential performance between KF and ANN on secondary signals (C24-C25) demonstrates nonlinear encoding. The comparison with raw signals of equivalent dimensionality (C75, p<0.01) provides strong evidence that irrelevant signals mask information. The higher-dimensionality conclusion (C37) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C38",
+      "C76",
+      "C77"
+    ],
+    "result": "Secondary signals improve KF decoding performance substantially but improve ANN only slightly when superimposed on primary signals. KF requires 30-40 dimensions for saturation, showing steady growth across 10-30 dimensions. The combination of smaller and larger variance PCs produces a synergy effect, where the sum of individual decoding performances is less than the combined performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C38, C76-C77 are supported by cumulative decoding analysis (Figure 6c, f). The differential improvement between KF and ANN (C26) is clearly shown. The synergy effect (C38) is demonstrated by comparing sum of individual performances to combined performance (C76), with citation to prior work on synergy. The interpretation of KF's inability to use nonlinear information (C77) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C39"
+    ],
+    "result": "Secondary signals significantly improve estimation of lower speed more than higher speed (p<0.05), suggesting that smaller variance PC signals may be involved in regulating precise motor control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C39 are supported by speed-region analysis (Figure 6\u2014figure supplement 1) with statistical testing. The absolute improvement ratio comparison (C28) is statistically significant. The visualization of relative improvement (Figure 6\u2014figure supplement 1d) provides qualitative support. However, the claim about precise motor control (C39) is somewhat speculative, though reasonably inferred from the data and supported by citation to analogous findings in hand postures (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C44",
+      "C45",
+      "C41"
+    ],
+    "result": "Linear decoder (KF) achieves comparable performance to nonlinear decoder (ANN) on behaviorally relevant signals (p=0.10-0.55), suggesting linear readout may be performed in motor cortex. This finding, combined with Occam's razor, indicates movement behaviors are more likely generated by linear readout, and that irrelevant signals significantly complicate information readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C30, C44-C45, C41 present a major conclusion but with important caveats. The comparable performance (C29) is well-documented (Figure 2b, f, j) with non-significant p-values. However, the inference of linear readout in motor cortex (C30, C45) is speculative. The authors provide evidence that d-VAE doesn't artificially linearize signals (synthetic data, Figure 5\u2014figure supplement 2c), but the leap from 'linear decoding is possible' to 'motor cortex uses linear readout' requires additional experimental validation beyond decoding performance. The claim is consistent with cited work across cortices (C58) but remains a hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The rotational dynamics of behaviorally relevant signals are similar to those of raw signals, while the rotational dynamics of behaviorally irrelevant signals are irregular.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by jPCA analysis (Figure 4\u2014figure supplement 3) using the top six PCs. This validates that removing irrelevant signals doesn't fundamentally alter the rotational structure observed in raw signals, which is important for consistency with prior work using jPCA. The irregular dynamics of irrelevant signals (C47) further supports their characterization as non-structured noise relative to behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Behaviorally irrelevant signals may include both meaningless noise and meaningful but behaviorally irrelevant signals, as they are not pure noise and carry some structure. Behaviorally relevant signals also exhibit some variability, which may arise from intrinsic components of neural encoding. Using raw signals causes overestimation of neural dimensionality, consistent with prior simulation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide important nuance about signal composition. The structure in irrelevant signals (C54) is supported by variance distribution analysis (Figure 4b, f) showing deviation from pure Gaussian noise. The variability in relevant signals (C55) is acknowledged with citation to motor learning literature. The dimensionality overestimation (C56) is supported by Figure 4\u2014figure supplement 4 and consistent with cited prior work (Altan et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "In motor cortex, behaviorally relevant neural responses are entangled with irrelevant signals (responses for other variables and ongoing noise), complicating the study of encoding and decoding mechanisms. The ground truth of behaviorally relevant signals is unknown, and existing methods have limitations: weakly tuned neurons and lower variance PCs are often discarded, and existing extraction methods focus on population-level patterns with specific assumptions about neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the motivation and context for the study. These are well-supported by citations to prior work (C3-C4, C6-C7) and represent established understanding in the field (C1-C2). The challenge of unknown ground truth (C5) is a fundamental problem that motivates the methodological approach. These claims provide essential background but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The irrelevant signals obtained by d-VAE contain little information, confirming effective separation. Irrelevant signals are the most critical factor affecting accurate and robust decoding, and achieving accurate linear decoding requires weak neural responses. The brain utilizes mechanisms such as attention and specialized filtering to suppress irrelevant signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C51-C53 provide supporting evidence and discussion points. The low information content of irrelevant signals (C49, Figure 2c, g, k) validates the separation method. The claims about factors affecting decoding (C51-C52) are reasonable conclusions from the study. The brain mechanisms claim (C53) is supported by citations to prior work and provides biological plausibility for the filtering-before-decoding hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C58",
+      "C60",
+      "C70",
+      "C73"
+    ],
+    "result": "The complexity of encoding mechanisms may underlie the simplicity of decoding mechanisms. Linear readout might serve as a general principle in the brain, supported by observations across multiple cortices. Nonlinear mixed selectivity can yield high-dimensional responses allowing linear readout. Weakly tuned neurons may have higher nonlinear encoding susceptible to irrelevant signal interference. Irrelevant signals may hinder investigation of neural circuit organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C58, C60, C70, C73 are largely speculative or interpretive. The encoding-decoding complexity relationship (C50) is an interesting hypothesis but not directly tested. The general principle claim (C58) is supported by citations but remains speculative. The nonlinear mixed selectivity claim (C60) is cited from prior work. The explanation for PD deviation (C70) is plausible but speculative. The circuit organization claim (C73) is a reasonable inference but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C57",
+      "C59"
+    ],
+    "result": "Movement behaviors occupy a higher-dimensional neural space than previously expected. This finding is analogous to observations that smaller variance PCs of hand postures are task-dependent and relate to precise postures. The brain is robust enough to tolerate large-scale neuronal destruction while maintaining function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C57, C59 synthesize findings with broader implications. The higher-dimensionality claim (C43) is supported by the analysis of smaller variance PCs and dimensionality estimates. The analogy to hand postures (C57) is appropriately cited. The robustness claim (C59) is supported by the neuron drop-out experiments and cited prior work, though the specific degree of robustness observed may be enhanced by the signal separation.",
+    "result_type": "MINOR"
+  }
+]

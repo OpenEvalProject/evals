@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Prior work has established that temporal rescaling of sequential neural activity occurs in multiple brain areas during timing and motor tasks, and that temporally asymmetric Hebbian rules can model sequential activity retrieval. However, existing models with asymmetric plasticity retrieve sequences at fixed speeds that cannot be modulated by external input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 accurately summarize the state of prior research, establishing the biological phenomenon (C1), existing modeling approaches (C2), and their limitation (C3). These are well-supported by citations to established literature and provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C29",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors demonstrate that introducing heterogeneity in the temporal symmetry of plasticity rules across neurons enables flexible control of sequence retrieval speed through external inputs. Neurons with symmetric plasticity act as 'brakes' that slow dynamics, while neurons with asymmetric plasticity act as 'accelerators'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C29, C69-C70 describe the core mechanism and are well-supported by simulations in Figures 1-2 and mean-field theory (Equations 17-22). The bimodal model demonstrates clear speed modulation across a range of external inputs, with theoretical justification for the brake/accelerator roles. The mechanism is validated across multiple model variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In networks with homogeneous plasticity where the symmetry parameter z is fixed between 0 and 1, retrieval speed depends linearly on z. For z=0.5, retrieval is approximately twice as slow as in purely asymmetric networks, but speed cannot be dynamically modulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by Figure 1b-c and mean-field theory showing linear dependence of speed on z (Equation 16). The quantitative finding of 2\u00d7 slowdown at z=0.5 is demonstrated in simulations. This establishes the baseline behavior that motivates the heterogeneous approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "In the bimodal network model, retrieval speed can be controlled by varying external inputs to symmetric and asymmetric populations. Speed depends primarily on symmetric input in one regime and asymmetric input in another, with speed modulated by input magnitude rather than sign. The model achieves up to 4\u00d7 speed variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C44-C45 are well-supported by the phase diagrams in Figure 2 and simulations showing robust retrieval under noise. The characterization of different input regimes and the quantitative range of speed control are clearly demonstrated. The finding that magnitude rather than sign determines speed is an interesting mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C56",
+      "C64"
+    ],
+    "result": "Networks with nonlinear plasticity rules achieve a wider range of speeds than bilinear rules, including the ability to completely stop retrieval and create stable persistent activity states. Stability of persistent activity requires nonlinear dependence on firing rates and a finite fraction of neurons with symmetric plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C56, C64 are supported by Figure 3 and theoretical analysis. The phase diagram clearly shows regions of persistent activity and the transition to stopped retrieval. The requirement for nonlinearity is justified by reference to prior work (C57) and the model structure. The mechanistic requirements are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C71"
+    ],
+    "result": "The heterogeneous plasticity model can generate transitions between persistent 'preparatory' activity and sequential 'execution' activity by modulating external inputs. Brief input to symmetric neurons elicits persistent activity, which transitions to sequential retrieval when inhibition to asymmetric neurons is released. Retrieval speed during execution can still be modulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C30, C51-C55, C71 are well-demonstrated in Figure 4 with clear temporal dynamics showing the preparatory-to-execution transition. The mechanism is clearly explained and the ability to modulate execution speed is shown. Single neuron activity remains temporally sparse as expected. This represents a significant extension of the model's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C98",
+      "C99"
+    ],
+    "result": "The model dynamics reproduce key features of electrophysiological recordings during delayed motor tasks, where preparatory periods with persistent activity are followed by execution periods with transient sequential dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C98-C99 appropriately compare model behavior to experimental observations in motor cortex. The comparison is qualitative but reasonable, noting that the model captures 'landmark features' rather than claiming exact reproduction. The citations to experimental work (Churchland et al. 2012, Svoboda and Li 2018, Riehle and Requin 1989, Li et al. 2016) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C61",
+      "C63"
+    ],
+    "result": "Networks with a uniform distribution of plasticity rules (zi uniformly distributed on [0,1]) also exhibit flexible sequence retrieval with speed control, though stable persistent activity is not present in this configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C61, C63 are supported by Figure 5 showing flexible retrieval with uniform heterogeneity. The absence of persistent activity is correctly explained by the lack of a finite fraction of purely symmetric neurons (C64). This demonstrates robustness of the speed control mechanism to the distribution of heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C72",
+      "C87",
+      "C88"
+    ],
+    "result": "A reinforcement learning rule can learn the mapping between external inputs and desired retrieval speeds. Once learned, this mapping generalizes to control the speed of other stored sequences without relearning, unlike prior models that require training on multiple exemplars.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C72, C87-C88 are demonstrated in Figure 6 and Methods. The perturbation-based learning rule successfully converges to appropriate input values for target speeds. The generalization claim (C66) is stated but would benefit from explicit demonstration across multiple sequences. The comparison to Wang et al. 2018 (C88) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C73"
+    ],
+    "result": "Spiking neural networks with separate symmetric and asymmetric excitatory populations can achieve the same speed control behavior as rate networks. Small input biases (~1mV) are sufficient to generate temporal rescaling of approximately 2\u00d7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C73 are supported by Figure 7 showing successful speed control in spiking networks. The quantitative finding that 1mV biases (relative to 20mV threshold-rest difference) produce 2\u00d7 rescaling demonstrates biological plausibility. The implementation details in Methods are thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Experimental evidence shows diverse STDP kernels across brain structures, including both temporally asymmetric and symmetric forms. The model suggests a functional role for this observed heterogeneity in enabling flexible speed control, though heterogeneity within local networks remains experimentally uncharacterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25, C74-C80 appropriately review experimental findings on STDP diversity and connect them to the model's predictions. The citations are appropriate and the acknowledgment of experimental limitations (C80-C81) is important. The proposed functional role (C74) is a reasonable interpretation but remains speculative pending experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C85",
+      "C86"
+    ],
+    "result": "The proposed mechanism differs from prior speed control models by not requiring adaptation mechanisms, synaptic depression, or training on multiple exemplars spanning the desired speed range. However, the mapping between input and speed must still be learned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13, C85-C86 provide appropriate critical comparison with prior models (Murray and Escola 2017, Wang et al. 2018). The distinctions are clearly stated and the advantages/limitations are fairly presented. The requirement for learning the input-speed mapping (C87) is acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The model makes several testable experimental predictions: symmetric and asymmetric neurons can be identified by their firing rate dependence on speed; targeted optogenetic stimulation should modulate retrieval speed; the two populations should have distinct plasticity profiles; and 'null' input directions should exist that change firing patterns without affecting speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 present clear, testable predictions that follow logically from the model. The predictions are appropriately speculative (marked as SPECULATION in evidence_type) and provide concrete experimental approaches. These represent valuable future directions, though they remain untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Analysis of M1 activity suggests local inhibitory interneurons may not mediate preparatory-execution gating, though external inhibition or reduced excitation could serve this role. Recent evidence suggests thalamocortical interactions may drive the required transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 appropriately discuss potential neural mechanisms for gating, citing relevant experimental work (Kaufman et al. 2013, Nashef et al. 2021, Inagaki et al. 2022). The discussion acknowledges uncertainty and presents alternative mechanisms (C101-C102) as speculations. The connection to thalamic function is well-supported by recent literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "While the degree of temporal asymmetry variation within local networks is experimentally unknown, calcium-based plasticity models suggest heterogeneity could arise from biophysical parameter variation. The model assumes asymmetry depends only on postsynaptic neuron identity, consistent with calcium-dependent plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C82-C84 appropriately acknowledge experimental gaps while providing theoretical justification for the model assumptions. The connection to calcium-based models (Graupner and Brunel 2012) is appropriate. The hypothesis (C28) is clearly marked as such and provides motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior work established that temporally asymmetric Hebbian plasticity can generate sequential activity matching experimental observations, but these models have fixed retrieval speed constrained by the learning rule parameters. Whether speed can be controlled without depressive adaptation mechanisms was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 accurately characterize prior work and identify the gap addressed by the current study. The references to experimental evidence for depression in striatum (C14) and its potential absence in cortex (C15) appropriately motivate the need for alternative mechanisms. The limitation of fixed speed (C19-C20) is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Recent alternative approaches to flexible timing include low-rank networks trained with backpropagation (Beiran et al. 2023) and models with orthogonal preparatory/execution states (Bachschmid-Romano et al. 2023). Unlike the latter, the current model generates execution dynamics through recurrent connectivity rather than inheriting them from external inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C105-C107 appropriately compare the current work to recent alternative models. The distinctions are clearly stated, particularly the difference in how execution dynamics are generated (C106-C107). These comparisons help position the work within the current literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Gardner's approach to analyzing connectivity matrices that store memories has shown that attractor networks optimizing storage capacity produce connectivity statistics matching cortical data, including sparse connectivity and overrepresentation of bidirectional motifs. However, this overrepresentation is absent in networks storing sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 appropriately reference theoretical work (Gardner 1988, Brunel 2016) on optimal connectivity for memory storage. The distinction between attractor and sequence networks (C111) is relevant to understanding the current model's connectivity structure. This provides useful theoretical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "External inputs in the model are expressed relative to threshold, and the negative input regime produces biologically plausible average firing rates much smaller than maximal rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 explains a model design choice that affects the interpretation of results. This is a reasonable justification for focusing on negative inputs in Figure 2, though the biological plausibility claim would be strengthened by explicit comparison to experimental firing rate distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "In real neuronal networks, recurrent synaptic inputs are expected to shape responses to external inputs and how inputs sculpt connectivity, representing a complexity not fully addressed in the current simplified learning scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 appropriately acknowledges a limitation of the current work - that the learning scenario is simplified and does not account for the interaction between recurrent and external inputs during learning. This is marked as future work and represents an honest assessment of model limitations.",
+    "result_type": "MINOR"
+  }
+]

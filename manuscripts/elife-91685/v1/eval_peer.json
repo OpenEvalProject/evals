@@ -1,0 +1,169 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C35",
+      "C49",
+      "C50"
+    ],
+    "result": "Factorization of object identity from non-identity information (pose, background) increases from V4 to IT in macaque visual cortex and is critical for object identity decoding performance. A lesion experiment showed that reducing factorization while preserving other statistics (invariance, covariance) strongly impaired decoding performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers accepted these findings without challenge. The editor states the analyses provide 'convincing evidence' for factorization in neural data. Reviewer 1 notes the paper 'uses a wide variety of datasets' with 'consistent' results showing 'great sign of robustness.' Reviewer 2 acknowledges the authors addressed prior weaknesses and thanks them for doing so.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C23",
+      "C24",
+      "C26",
+      "C30",
+      "C31",
+      "C38"
+    ],
+    "result": "Across 12 datasets spanning monkey and human neural/behavioral data, DNN models with higher factorization scores better predicted neural responses and behavior. Factorization explained variance in neural predictivity beyond what classification accuracy alone could account for (Figure 6), improving understanding of brainlike models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes this as a 'valuable empirical contribution' with 'convincing evidence that high factorization scores are correlated with neural predictivity.' Reviewer 1 emphasizes Figure 6 as 'the most important' and states factorization 'explains some variance in neural similarity that classification accuracy does not explain.' Reviewer 2 praises the 'systematic' analysis across datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C27",
+      "C28",
+      "C25",
+      "C37"
+    ],
+    "result": "Invariance to scene parameters showed mixed correlations with neural predictivity: positive for appearance factors (background, lighting) but zero or negative for spatial transforms (pose, viewpoint). This suggests the brain maintains rather than discards non-class information in factorized subspaces.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these differential findings about invariance. The editor's statement that the work provides 'convincing evidence' encompasses both factorization and invariance results. Reviewer 1 notes the results are 'consistent across the datasets,' implicitly including the invariance patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Training DNNs consistently increased factorization of all scene parameters relative to untrained networks, but produced mixed effects on invariance (increasing it for background/lighting, decreasing it for pose/viewpoint).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are presented as part of the systematic DNN analysis that reviewers praised. Reviewer 2 specifically commends 'the authors' efforts in systematically conducting analysis' and notes the 'definition of factorization is simple and intuitive to understand,' supporting acceptance of how training affects these metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The main findings were robust to methodological choices: different PCA thresholds for quantifying factorization, using only ResNet-50 architecture, using RDMs instead of linear regression fits, and using covariance-based versus PCA-based factorization metrics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly praises the authors' transparency and notes they 'are very transparent, particularly in the supplementary material, showing results on all datasets. This is excellent practice.' The robustness analyses are part of this transparent reporting that reviewers accepted without objection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Factorization of frame-by-frame variance (local temporal changes, likely motion) from other variance sources in natural movies correlated with improved neural predictivity in both macaque and human data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This extension to natural movie stimuli is part of the broad dataset analysis that reviewers praised. Reviewer 1 states 'This paper uses a wide variety of datasets, spanning multiple brain areas and species. The results are consistent across the datasets,' which encompasses the natural movie findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors propose that factorization of visual scene information is a widely used strategy in both biological visual systems and predictive DNN models, representing an important organizational principle alongside invariance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states this work 'will be of interest to systems neuroscientists studying vision and could inspire further research.' Reviewer 1 notes 'This paper challenges the dominant approach to modeling neural responses in the ventral stream, which itself is valuable for diversifying the space of ideas,' affirming the conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C39",
+      "C40"
+    ],
+    "result": "Simulations demonstrated that factorized representations (orthogonal encoding) enable better generalization for decoding multiple variables from few training samples, and that high-dimensional representations facilitate factorization while factorized representations support classification.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conceptual/simulation results supporting the main empirical findings are not challenged by reviewers. Reviewer 2 notes 'the definition of factorization is simple and intuitive to understand,' suggesting acceptance of the conceptual framework including these supporting simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C56",
+      "C57"
+    ],
+    "result": "Background claims establishing that object classification has been the dominant objective for modeling ventral stream, that DNNs trained on classification match neural data but plateau in predictivity, and that visual neurons encode multiple types of information beyond object identity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background claims from prior literature that frame the motivation. Reviewer 1 explicitly acknowledges this context, stating 'beyond a certain threshold level of object classification performance, further improvement fails to produce a concomitant improvement in predicting primate neural responses... This suggests that classification performance may not be a sufficient objective.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C32",
+      "C33",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Conceptual claims relating factorization to prior concepts (disentanglement, abstraction, manifold geometry) and discussing functional benefits (supporting diverse behaviors, few-shot learning) and mathematical properties of factorization in high-dimensional spaces.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conceptual connections and theoretical discussions are not challenged by reviewers. Reviewer 2 notes the work explores factorization 'which has strong connections with emerging concepts like disentanglement and abstraction,' affirming these conceptual links are appropriate.",
+    "result_type": "MINOR"
+  }
+]

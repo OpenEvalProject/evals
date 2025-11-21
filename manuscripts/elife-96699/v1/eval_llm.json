@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C88"
+    ],
+    "result": "Incorporation of protease cleavage sites (HRV 3C and TEV) in Parkin constructs enables analysis of domain interactions without affecting protein function. SEC assays demonstrate that in native Parkin, Ubl-linker co-elutes with the core while in phospho-Parkin it does not, and RING2 co-elutes with the core in native but not phospho-Parkin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 and C88 are well-supported by SEC data in Figure 1C-D and activity assays in Figure 1\u2014figure supplement 2. The protease sites enable controlled untethering without perturbing native interactions, validating the experimental approach. The differential elution patterns between native and phospho-Parkin provide clear evidence for phosphorylation-dependent conformational changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "pUbl and RING2 competitively bind to RING0 in a dynamic equilibrium. Sequential protease treatment experiments show that removal of RING2 stabilizes pUbl binding and vice versa. Crystal structure of pUbl-depleted phospho-Parkin shows RING2 returns to its closed autoinhibited state, demonstrating transient RING2 displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 and C81-C83 are strongly supported by sequential SEC experiments (Figure 2A-B) and crystal structure analysis (Figure 2C, 3.3 \u00c5 resolution). The competitive binding model is directly demonstrated through the reciprocal stabilization effects. The crystal structure provides definitive evidence that RING2 displacement is reversible, challenging previous models of permanent displacement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C92"
+    ],
+    "result": "K211N mutation in the RING0 basic patch prevents RING2 displacement but not pUbl displacement, indicating that RING2 displacement rather than pUbl displacement is the major driver of Parkin activation. Crystal structure of phospho-Parkin K211N shows autoinhibited conformation with RING2 bound to RING0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C92 are well-supported by SEC data (Figure 3A), activity assays (Figure 3B), and crystal structure (Figure 3C). The dissociation between pUbl displacement and activity loss in the K211N mutant provides strong evidence that RING2 displacement is the critical activation step. However, the K211N mutation may have additional structural effects beyond blocking pUbl binding that could contribute to activity loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C89"
+    ],
+    "result": "Untethering RING2 from the Parkin core enables detection of trans-interactions between phospho-Parkin and native Parkin. Phospho-Parkin K211N forms a stable complex (Kd = 1.1 \u00b1 0.3 \u00b5M) with untethered \u0394Ubl-Parkin, with pUbl binding to RING0 in trans as shown by crystal structure at 1.92 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 and C89 are strongly supported by SEC (Figure 4B), ITC (Figure 4B), and crystal structure data (Figure 4D, Table 1). The experiments elegantly demonstrate that the fused RING2 domain outcompetes trans pUbl binding due to higher effective concentration, explaining why previous studies failed to detect trans-interactions. The high-resolution crystal structure provides definitive structural evidence for trans-complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C84"
+    ],
+    "result": "Native phospho-Parkin forms stable complexes with untethered WT-Parkin and \u0394Ubl-Parkin in trans, displacing RING2. Complex formation requires the RING0 basic patch (K211) and is confirmed by SEC-MALS showing molecular weight consistent with 1:1 complex (94 \u00b1 3 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C84 are well-supported by SEC (Figure 5A, 5C), SEC-MALS (Figure 5D), and the requirement for K211 (Figure 5C). The data demonstrate that trans-dimerization occurs with native full-length Parkin, not just engineered constructs. The SEC-MALS molecular weight measurement provides quantitative confirmation of 1:1 stoichiometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C85"
+    ],
+    "result": "Phospho-Parkin activates native WT-Parkin in trans. Catalytically inactive phospho-Parkin T270R/C431A increases WT-Parkin ubiquitination activity in a dose-dependent manner, demonstrating a trans-activation mechanism that represents an additional feedforward amplification pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49, and C85 are supported by ubiquitination assays (Figure 5E) showing dose-dependent activation. However, the activation of WT-Parkin (which has an intact autoinhibitory Ubl domain) is somewhat unexpected and suggests that RING2 displacement alone provides significant activation. The mechanism would benefit from additional controls and quantification of the activation magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Unlike phospho-ubiquitin, phospho-Ubl does not enhance Parkin phosphorylation by PINK1, indicating that pUbl and pUb binding induce distinct conformational changes in Parkin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by Phos-Tag analysis (Figure 5\u2014figure supplement 2D). This finding distinguishes the functional consequences of pUbl versus pUb binding and supports the model that these two phosphorylated domains have non-redundant roles in Parkin activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In cellular mitochondrial recruitment assays, mutation of the pUb binding pocket (H302A) completely abolishes trans-recruitment of catalytically inactive Parkin, while mutation of the pUbl binding pocket (K211N) produces moderate defects. Both require phosphorylatable co-expressed Parkin (not S65A mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by immunofluorescence microscopy and quantification (Figure 6A-D). The data demonstrate that pUb binding to RING1 is essential while pUbl binding to RING0 plays a supporting role in cellular recruitment. However, the cellular assays measure recruitment rather than direct activation, and the contribution of pUb-mediated recruitment versus pUbl-mediated trans-activation cannot be fully separated in this experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The ACT element is required for maintaining Parkin enzyme kinetics but not for E2~Ub binding or RING2 displacement. Deletion of ACT (\u0394101-109) slows Parkin activity, doubling the time to reach similar activity levels as wild-type phospho-Parkin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C55-C57 are supported by SEC assays (Figure 7A-B) and time-course ubiquitination assays (Figure 7C). The data demonstrate that ACT affects catalytic efficiency rather than the fundamental activation mechanism. The kinetic analysis is well-controlled and quantified, though additional kinetic parameters (kcat, Km) would strengthen the characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C86",
+      "C90"
+    ],
+    "result": "ACT can function in trans but is more efficient in cis. Crystal structures show that in trans-complexes without cis ACT, K48 of pUbl occupies the ACT binding pocket, while with cis ACT present, the ACT region is ordered and K48 is disordered. Functional assays confirm ACT can activate R0RBR in trans but less efficiently than in cis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C58-C68, C86, and C90 are supported by crystal structures at 1.92 \u00c5 and 2.6 \u00c5 (Figure 8A, 8C, Table 1) and ubiquitination assays (Figure 8D-F). The structural data elegantly explain the cis preference through competitive binding between K48 and ACT for the same pocket. The functional data confirm the structural observations. This represents a sophisticated analysis of cis versus trans regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C87",
+      "C93",
+      "C94"
+    ],
+    "result": "A donor ubiquitin binding site exists in the linker region (408-415) between REP and RING2. Crystal structure shows I411 mediates core hydrophobic interactions with ubiquitin. Mutations I411A, T415N, and K416A abolish Parkin activity and prevent E2~Ub binding. This hydrophobic residue is conserved across RBR family E3 ligases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C69-C72, C74-C78, C87, C93-C94 are strongly supported by crystal structure (Figure 9A-C), mutagenesis (Figure 9E), SEC with E2~Ub (Figure 9F), Ub-VS assays (Figure 9\u2014figure supplement 2B), and ubiquitin mutant assays (Figure 9\u2014figure supplement 2C). The convergent evidence from structure, mutagenesis, and binding assays provides compelling support. The conservation analysis strengthens the functional significance. This represents a novel mechanistic insight into RBR E3 ligase catalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C79",
+      "C80"
+    ],
+    "result": "Background claims establishing the biological context of Parkinson's disease, the PINK1-Parkin pathway, Parkin domain structure, autoinhibition mechanisms, and activation by phosphorylation. These represent established knowledge from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C25, C79-C80 are background knowledge claims supported by appropriate citations to the literature. These provide necessary context for interpreting the novel findings but are not original results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Crystal structure of pUbl-linker depleted Parkin (141-465)-pUb complex was determined at 3.3 \u00c5 resolution, showing autoinhibited conformation similar to previously solved structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by crystallographic data in Table 1 and structural analysis in Figure 2C. The 3.3 \u00c5 resolution is adequate for the conclusions drawn, though some regions show disorder (Figure 2\u2014figure supplement 1). This structure provides key evidence for the reversibility of RING2 displacement.",
+    "result_type": "MINOR"
+  }
+]

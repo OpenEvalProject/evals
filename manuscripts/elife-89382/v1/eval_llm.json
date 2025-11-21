@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The study used a fixed TCR\u03b2 mouse model (FoxP3-GFP mice with DO11.10 TCR\u03b2 transgene) to investigate TCR\u03b1 repertoires of eCD4 and eTreg cells across six antigenic challenges in multiple tissues. The model relies entirely on TCR\u03b1 diversity and produces highly convergent, traceable responses. 524 TCR\u03b1 libraries were sequenced, yielding 13,605\u00b114,948 UMI-labeled molecules and 3,392\u00b13,076 clonotypes per eTreg sample, and 37,412\u00b133,129 molecules and 5,518\u00b14,601 clonotypes per eCD4 sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C37 describe the experimental design, mouse model characteristics, and sequencing results. The methodology is well-documented with appropriate citations (C13, C15, C17, C30, C34), sample sizes are reported (C31, C35-C37), and the model's advantages for tracking convergent responses are clearly stated (C14-C19). The sequencing depth appears adequate for repertoire analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C70",
+      "C71"
+    ],
+    "result": "Both eCD4 and eTreg cells showed prominent clonal responses to each antigenic challenge in the lungs, with comparable decreases in diversity metrics. This indicates that the amplitude and focusness of effector and regulatory T cell responses in the lungs are generally comparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C70-C71 are supported by diversity analysis data shown in Figure 2a-c. The use of multiple diversity metrics (Chao1, Shannon-Wiener, observed diversity) with appropriate normalization (downsampling to 1000 UMIs) and statistical testing (parametric t-test) provides robust evidence. The comparable response magnitude between eCD4 and eTreg is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C72"
+    ],
+    "result": "The TCR\u03b1 repertoires of eTreg and eCD4 subsets were highly distinct across different antigenic challenges, as demonstrated by F2 overlap analysis and MDS visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C72 are supported by repertoire overlap analysis using the F2 metric (Figure 2d-e). The methodology is appropriate, using frequency-weighted overlap of the top 1000 clonotypes with matching TRAV genes and CDR3 sequences. The distinct clustering of eCD4 and eTreg repertoires across challenges is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C73",
+      "C74"
+    ],
+    "result": "eTreg repertoires were highly similar across mice for each challenge and differed between challenges. Common dominant TCR\u03b1 CDR3 motifs were identified for each challenge using cluster sequence analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C73-C74 are supported by repertoire overlap analysis and TCR cluster analysis (Figure 3a-b, supplementary figures). The TCRNET algorithm was used to identify homologous CDR3 clusters, and the convergence of responses across mice is well-documented. The identification of challenge-specific motifs is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C75"
+    ],
+    "result": "eTreg repertoires from three different cancer challenges (B16, LLC, and PYMT) clustered together and shared some TCR\u03b1 CDR3 motifs, suggesting a response to shared tumor-associated antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C75 are supported by clustering analysis showing similarity among cancer challenge repertoires (Figure 3a). The interpretation that shared motifs suggest common tumor-associated antigens is reasonable, though alternative explanations (e.g., shared inflammatory signals) are not explicitly ruled out. The finding is consistent across the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C76"
+    ],
+    "result": "The antigen-specific eTreg response in lungs was reflected in the lung-draining mediastinal lymph node (MLN) but not in distant tissues (AXLN, IGLN, spleen). Control mice showed distinct lung and MLN repertoires, confirming that repertoire similarity is dictated by antigenic challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 and C76 are supported by MDS analysis and repertoire overlap data (Figure 3b-f). The tissue-specific localization of antigen-focused responses is well-demonstrated, with appropriate controls showing that similarity requires antigenic challenge. The finding demonstrates selective tissue localization of Treg responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C81"
+    ],
+    "result": "The eTreg TCR repertoire response to a given tumor type was highly similar between lung and skin challenges, demonstrating that antigen-specific character dominates over tissue location. eCD4 cells showed similar patterns with comparable convergence magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C81 are supported by cross-tissue repertoire analysis (Figure 4). The finding that the same tumor antigens elicit similar TCR responses regardless of tissue location is important and well-supported by the data. The comparable convergence between eCD4 and eTreg strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C47",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C77",
+      "C78"
+    ],
+    "result": "For LLC and PYMT tumor challenges (but not other challenges), increased overlap between eCD4 and eTreg repertoires was observed at the site of challenge but not systemically. A dominant eCD4 TCR\u03b1 motif (cluster #408) was shared with eTreg subsets. This eCD4-to-eTreg conversion was strongest in skin and lung following LLC and PYMT challenge and was local rather than systemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C47, C58-C61, C77-C78 are supported by nucleotide-level overlap analysis of paired samples (Figure 5a-e). The use of nucleotide-level matching (top 100 clonotypes) provides stringent evidence for clonal conversion. The specificity to LLC and PYMT (but not B16) and the local nature of the effect strengthen the interpretation of tumor-induced plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C63",
+      "C64",
+      "C65",
+      "C79"
+    ],
+    "result": "An increased proportion of Treg-iNKT cells (classic TRAV11-CVVGDRGSALGRLHF-TRAJ18 TCR\u03b1) was observed among eTreg cells specifically upon LLC lung challenge. This was not due to increased eCD4 iNKT cells, suggesting induced iNKT conversion. The conversion was local and not observed systemically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C63-C65, C79 are supported by specific analysis of the canonical iNKT TCR\u03b1 sequence (Figure 5f-h). The finding that iNKT conversion occurs in LLC but not bleomycin or helminth challenges (despite iNKT presence in eCD4 for all three) provides strong evidence for tumor-specific plasticity. The local nature of the effect is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The observations of eCD4-eTreg overlap and iNKT conversion are attributed to transient plasticity of effector CD4+ T cells in the context of immunosuppressive tumor burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C27 is an interpretation of the plasticity findings. While the data showing conversion in LLC and PYMT but not other challenges is strong, the specific mechanism (immunosuppressive tumor burden) is not directly tested. Alternative explanations (e.g., specific tumor antigens, tumor microenvironment factors) are not ruled out. The interpretation is plausible but requires additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C66",
+      "C67",
+      "C68",
+      "C82",
+      "C83"
+    ],
+    "result": "Characteristic eTreg TCR\u03b1 CDR3 motifs were present in distinct lymphatic tissues (spleen, thymus, lymph nodes) irrespective of the applied challenge. MDS analysis showed close proximity of eTreg repertoires from the same lymphatic tissues across all challenges and animals, indicating that distinct antigenic specificities are characteristic of eTreg cells residing in particular lymphatic niches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C66-C68, C82-C83 are supported by global cluster analysis and MDS analysis excluding the challenge site (Figure 6a-b, Figure 3 supplements). The finding of tissue-resident, antigen-specific Treg populations is novel and well-supported. The analysis appropriately excludes the challenge site to focus on homeostatic tissue residency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The convergence of lymphatic tissue-resident TCR repertoires was less prominent for eCD4 T cells compared to eTreg cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by comparison of MDS plots for eCD4 and eTreg (Figure 6c-d). The finding that eTreg show stronger tissue-specific repertoire convergence than eCD4 suggests more stable tissue residency or more consistent antigen recognition patterns for Treg populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The eCD4 subset generally exhibited similar behavior patterns to eTregs, but the extent of convergence among eTreg repertoires was higher in most scenarios, indicating the highly antigen-specific nature of the Treg response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 summarize comparative findings between eCD4 and eTreg. The higher convergence in eTreg is supported by multiple analyses throughout the manuscript (Figures 2-6). This comparative finding strengthens the interpretation of antigen-specific Treg function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C86"
+    ],
+    "result": "Analysis of TCR\u03b1 repertoires on the fixed TCR\u03b2 background revealed highly focused, challenge-specific responses for both eCD4 and eTreg that were clonotypically shared between mice and tissues, forming convergent CDR3 motifs. However, eCD4 and eTreg TCR landscapes were distinct, suggesting these effector cell types originate from distinct T cell subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C86 summarize the main findings. The data consistently support challenge-specific, convergent responses and the distinction between eCD4 and eTreg repertoires. The interpretation that distinct repertoires suggest distinct origins is reasonable, though the study does not directly test developmental origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The data support the use of the fixed TCR\u03b2 chain FoxP3-GFP mouse as a 'digital' model of TCR response that benefits from highly convergent and easy-to-track TCR\u03b1 CDR3 clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by the successful demonstration of convergent, trackable responses throughout the study. The model's utility is validated by the clear identification of challenge-specific and tissue-specific TCR patterns. The term 'digital' appropriately describes the discrete, reproducible nature of the responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Detailed methods for mouse breeding, antigenic challenges, tissue preparation, cell sorting, and library preparation are described. Mice were challenged with six different antigens (tumors, influenza, helminth, bleomycin) in lung or skin, tissues were harvested at appropriate timepoints, and eCD4 and eTreg cells were sorted based on specific markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C106 describe experimental methods with appropriate detail and citations. The methods appear standard and appropriate for the study design. Sample sizes (3-7 mice per group) are modest but reasonable for repertoire studies. The use of CD45 labeling to distinguish tissue-infiltrating from circulating cells is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "TCR repertoire data were analyzed using established bioinformatics tools (MIGEC, MiXCR, VDJtools) with appropriate normalization, diversity metrics, overlap analysis, and statistical testing. TCR\u03b1 sequence homology clusters were generated using the TCRNET algorithm with appropriate baseline controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C126 describe computational methods with appropriate software versions and parameters. The use of UMI-based quantification, downsampling for normalization, and multiple diversity metrics represents best practices. The TCRNET clustering approach with random baseline is appropriate. Sample exclusion criteria (UMI <700, clonotype counts <700 or <100) are reasonable quality control measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C38",
+      "C39",
+      "C48",
+      "C62",
+      "C80"
+    ],
+    "result": "Background claims about Treg biology, including their frequency, function, development, and role in immune regulation, are stated based on established literature and supported by appropriate citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11, C38-C39, C48, C62, and C80 represent background knowledge with appropriate citations. These claims establish the scientific context for the study and are well-supported by the cited literature. No evaluation of the primary data is needed for these contextual claims.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Absence seizures in humans typically appear in children aged 5-7 years, are characterized by brief impairment of consciousness and unresponsiveness, last seconds to minutes, exhibit 2-5 Hz spike-and-wave discharges, can occur hundreds of times daily in untreated patients, and are accompanied by severe neuropsychiatric comorbidities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide well-established clinical characteristics of absence epilepsy in humans, all supported by appropriate citations to the literature (Loiseau et al., 1995; Szaflarski et al., 2010; Crunelli et al., 2020). These claims establish the clinical context and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Human neuroimaging studies suggest lack of conscious information processing during absence seizures due to impaired frontoparietal networks and lack of responsiveness to external stimuli, but current studies have been conducted only in resting state without external stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 establish the gap in knowledge that motivates this study. The claims about human studies are supported by citations (Blumenfeld, 2012; Luo et al., 2011), and C9 correctly identifies that prior neuroimaging studies lacked external stimulation paradigms, justifying the current experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "GAERS is a well-established model of absence epilepsy that recapitulates human features. Seizures arise from the somatosensory cortex barrel field and propagate to other structures including thalamus. During seizures, neuronal firing rates in frontoparietal cortical and thalamocortical neurons decrease, and fMRI studies show cortical decreases but subcortical increases. These alterations impair cognitive processing during seizures, though partial voluntary control may remain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C23 provide comprehensive background on GAERS and absence seizure mechanisms, all supported by appropriate citations (Depaulis et al., 2016; David et al., 2008; Meeren et al., 2002; Polack et al., 2007; Huguenard, 2019; McCafferty et al., 2023; Wachsmuth et al., 2021; Chipaux et al., 2013; Taylor et al., 2017). This establishes the scientific foundation for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "ZTE fMRI sequence was selected over EPI for awake imaging because it produces significantly lower acoustic noise (78.7 dB vs 114.5 dB), has less susceptibility-induced distortions, produces fewer EEG artifacts, though has lower functional contrast (~0.3% vs 1-1.5%). The EEG-fMRI setup achieved spatial SNR of ~25 and temporal SNR of 30-60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 describe the methodological optimization and rationale for sequence selection. The comparative data between ZTE and EPI (C27-C31) are from pilot studies and provide clear justification for the ZTE choice. The SNR measurements (C25-C26) characterize the technical quality of the setup. All claims are supported by measured data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Motion during ZTE fMRI was minimal, with mean framewise translation of 0.69\u00b10.32 \u00b5m, mean rotation of 0.79\u00b10.55\u00b0, and motion occurrences of 0.43\u00b10.45 motions/min. This represents a significant improvement over previous EPI studies (1.0\u00b10.20 motions/min) and is comparable to quiet MB-SWIFT sequences (0.48\u00b10.23 motions/min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 demonstrate the technical success of the awake imaging approach. The motion parameters are extremely low and well-characterized. The comparison to previous studies (C37, C38) provides appropriate context and validates the methodological improvements. All values are supported by measured data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "From 11 animals, 3 (27%) were discontinued due to noisy EEG, 1 (1%) due to lost implant. From 28 sessions, 6 (21%) were excluded for excessive movement, 4 (14%) for lack of seizures, and 1 (4%) for technical failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 transparently report exclusion criteria and attrition rates. The percentages and reasons are clearly stated. However, C40 states \"1%\" which appears to be an error (should be ~9% of 11 animals). Despite this minor inconsistency, the overall reporting of exclusions is appropriate and transparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Respiration remained stable during measurements at 2.2\u00b10.4 Hz (visual group) and 2.0\u00b10.3 Hz (whisker group), with no sudden changes due to stimulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate physiological stability during awake imaging. The respiration rates are within normal range for rats and the lack of stimulation-induced changes (C46) indicates animals remained calm. This supports the validity of the awake imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "During interictal visual stimulation, responses were seen in visual cortex, superior colliculus, thalamus, and frontal cortex. During seizures, visual cortex responses were less pronounced while superior colliculus remained stable. There were 136% more active voxels during interictal vs ictal states, with significant hemodynamic decreases in visual, somatosensory, and medial frontal cortices during seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 present the main fMRI findings for visual stimulation. The statistical analyses are appropriate (p<0.05, cluster-level corrected), the anatomical specificity is well-described, and the quantification of voxel differences (C49) provides clear evidence of reduced responsiveness during seizures. The findings are supported by Figure 3 and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "During interictal whisker stimulation, responses were seen in somatosensory cortex (including barrel field), auditory cortex, thalamus, and frontal cortex. During seizures, responses were less pronounced in thalamus and frontal cortex but still present in somatosensory cortex. There were 179% more active voxels during interictal vs ictal states, with significant hemodynamic decreases in somatosensory, auditory, and frontal cortices during seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 present the main fMRI findings for whisker stimulation, parallel to the visual stimulation results. The statistical analyses are appropriate, anatomical specificity is clear, and the even larger difference in active voxels (179% vs 136% for visual) strengthens the conclusion of reduced responsiveness during seizures. Findings are supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "HRF analysis showed significant polarity reversals during seizures in both visual cortex (2.8\u00b11.7 to -6.0\u00b12.0, p<0.001) and barrel cortex (4.1\u00b11.9 to -9.0\u00b11.9, p<0.001). When stimulation ended a seizure, response amplitudes were significantly higher than when it did not (visual: 8.1\u00b17.0 vs -6.0\u00b12.0; whisker: 4.8\u00b12.9 vs -9.0\u00b11.9, both p<0.001). HRF amplitudes were both positively and negatively signed depending on brain region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide detailed quantitative analysis of hemodynamic responses with appropriate statistics. The polarity reversal during seizures is a key finding, and the observation that stimulation ending a seizure produces different responses (C57, C59) is novel and interesting. All claims are supported by statistical analysis shown in Figure 4. Sample sizes appear adequate (n=9 and n=8 sessions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Seizures themselves (without stimulation) caused significant changes in 895 voxels across frontal, parietal, and occipital cortical regions. Response amplitudes were predominantly negative in cortical regions but positive in deeper structures like thalamus and basal ganglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 characterize the baseline seizure effect by pooling data from both stimulation groups. The finding of opposite polarity changes in cortical vs subcortical regions (C62) is consistent with prior literature cited in the introduction and adds to the evidence base. Supported by Figure 5 with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The mean-field model successfully captured SWD patterns similar to experimental observations, with hyperpolarization driven by strong adaptation current. Switching between AI and SWD dynamics was achieved by varying adaptation current strength. Simulations showed drastically restrained stimulus propagation during ictal vs interictal periods, with SWD oscillations dominating during seizures and preventing significant response to stimulation. This agreed with reduced responsiveness observed in fMRI experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 describe the computational modeling results that complement the experimental findings. The model successfully reproduces key features of the experimental data (C63, C66, C69) and provides mechanistic insight into the reduced responsiveness (C67). The agreement between simulation and experiment (C69) strengthens the overall conclusions. Supported by Figure 6 and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Absence seizures were successfully detected in awake GAERS during fMRI sessions despite MRI noise and restraint. Acoustic noise level is believed to be the most significant stress factor for awake rats during fMRI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 demonstrate the technical success of the awake imaging approach. C72 is an inference based on the authors' experience comparing motion levels across sequences. While C72 is somewhat speculative, it is reasonable given the data on motion reduction with quieter sequences (C36-C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "ZTE-based fMRI may provide better localization because it is sensitive to blood flow changes, and has been suggested to be 67% more sensitive than BOLD EPI due to detecting tissue oxygenation changes affecting T1-relaxation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 discuss potential advantages of ZTE but are presented as suggestions from literature rather than demonstrated in this study. C73 is supported by citations (Luh et al., 2000; Restom et al., 2007), but C74's specific \"67% more sensitive\" claim lacks a direct citation and is stated as a suggestion. These claims provide context but are not directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Visual stimulation responses in visual cortex, superior colliculus, and thalamus are consistent with rat visual pathways. Binocular stimulation produced bilateral responses. Frontal cortex activation can be explained by its role in attention, and lesions impair detection of light flashes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 interpret the visual stimulation results in the context of known rat neuroanatomy and function. The interpretations are reasonable and supported by appropriate citations (Sefton et al., 2015; Williams et al., 1999; Muir et al., 1996). The bilateral response (C76) is a straightforward observation from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Whisker stimulation responses in somatosensory cortex and ventral posteromedial thalamus are consistent with the rat whisker system. This suggests the somatosensory cortex (seizure initiation zone) is functional during interictal states. Auditory cortex activation may reflect rats differentiating air puff sounds from MRI noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 interpret whisker stimulation results appropriately with citation support (Adibi, 2019). C80 makes a reasonable inference about somatosensory cortex functionality. C81 is speculative (marked as such in the text) but provides a plausible explanation for an unexpected finding. The speculation is reasonable given the experimental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The silence component of SWD is thought to be caused by neuronal deactivation or increased inhibition, potentially resulting in decreased neuronal activity. Negative HRFs in cortical regions support this hypothesis. Recent studies show decreased firing rates in frontoparietal cortex and decreased cerebral blood flow during seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 integrate the current findings with prior literature to interpret the negative HRFs. C82 is well-supported by multiple citations. C83 appropriately connects the current findings to this hypothesis. C84-C85 cite recent supporting evidence (McCafferty et al., 2023; Nehlig et al., 1996). The integration of evidence is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Reduced cortical activation and limited activity propagation during seizures indicate decreased responsiveness and information processing. Previous studies show event-related potentials are modulated but present during seizures. The findings indicate decreased sum of excitatory-inhibitory neuronal state during SWD. Overall neuronal activity is globally decreased during SWD due to increased thalamocortical inhibition. fMRI measures the sum of neuronal activation, so reduced responsiveness implies SWD is a dominant feature that prevents responsiveness, particularly during the 'wave' phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 provide a comprehensive interpretation of the results. The reasoning is logical and well-supported by citations (Chipaux et al., 2013; Studer et al., 2019; McCafferty et al., 2023; McCafferty et al., 2018; Logothetis et al., 2001). The interpretation that the 'wave' phase prevents responsiveness (C92) is a reasonable inference from the data, though it could benefit from more direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Lack of conscious perception during stimulation could be caused by concomitant SWD complexes following stimulation (<500 ms). When stimulation ended a seizure, fMRI response amplitudes were higher than when it did not. This could mean stimulation response exceeded a threshold to shift the brain back to a responsive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C93 is supported by citation (Chipaux et al., 2013). C94 is a clear observation from the data (also in C57, C59). C95 is speculative (appropriately marked in text) but provides a reasonable interpretation of the threshold-like behavior observed. The speculation is constrained by the data and offers a testable hypothesis for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Cortical activation was spatially wider and stronger during interictal vs ictal stimulation. Decreased cortical HRF during SWD stimulation could play a role in decreased sensory perception. Combined fMRI and simulation results suggest rats with absence epilepsy have hindered and restricted (though not fully abolished) sensory processing during seizures. Sensory processing is hindered or suppressed by seizure occurrence, potentially contributing to decreased responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 summarize the main conclusions of the study. C96 is directly supported by the data (C49, C54). C97 is a reasonable inference from the HRF findings. C98-C99 appropriately integrate the experimental and computational findings. The qualification that processing is \"not fully abolished\" (C98) is important and supported by the observation that some responses persist during seizures (C48, C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study used 11 adult GAERS rats (8-12 months, 260\u00b121g, 6 males, 5 females) housed under standard conditions. EEG electrodes were implanted over motor and somatosensory cortex with reference on cerebellum. Rats underwent 8-day habituation to restraint and MRI noise. fMRI was performed at 9.4T using ZTE sequence. Visual stimulation used 3 Hz blue LED pulses (6s duration), whisker stimulation used 2 Hz air puffs (6s duration, 2.3 bar), with \u226520s inter-stimulus intervals. EEG was recorded at 1024 Hz. Seizures were identified as SWDs with 7-12 Hz frequency, \u22652x baseline amplitude, lasting \u22652s. fMRI preprocessing included removing first 5 volumes and smoothing with 1mm FWHM Gaussian filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C114 provide comprehensive methodological details. All parameters are clearly specified and appropriate for the experimental design. The seizure identification criteria (C111-C112) are standard and well-justified (C112 cites Blumenfeld, 2012). The preprocessing steps (C113-C114) are standard for fMRI analysis. The methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The AdEx mean-field model can produce different neuronal dynamics associated with interictal and ictal periods. Interictal periods were modeled by AI dynamics, while ictal periods were modeled by oscillatory dynamics resembling SWDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 describe the computational modeling approach. The model choice is appropriate and has been validated in prior work (referenced in text). The approach of modeling different brain states by varying model parameters (adaptation current strength, per C65) is standard and well-justified. The model successfully reproduces key experimental features (C63, C66).",
+    "result_type": "MINOR"
+  }
+]

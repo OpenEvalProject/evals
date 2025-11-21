@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C40",
+      "C41",
+      "C42",
+      "C105"
+    ],
+    "result": "GromovMatcher is introduced as a novel algorithm that uses optimal transport and the Gromov-Wasserstein method to align LC-MS datasets by leveraging feature intensity correlation structures. The method is claimed to deliver superior alignment accuracy and robustness compared to existing approaches while scaling to thousands of features with minimal hyperparameter tuning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the innovation and effectiveness of GromovMatcher. Reviewer 1 states 'the underlying method is innovative, the algorithm is clearly described, and the validation that is presented is convincing.' Reviewer 2 notes 'GromovMatcher achieves significant performance metrics compared to other existing methods.' Reviewer 3 identifies 'the main strength of this work in its combination of all levels of information' and calls the use of Gromov-Wasserstein 'the most innovative aspect.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "GromovMatcher (GM and GMT variants) outperforms metabCombiner and M2S on synthetic data across varying conditions including noise levels, feature overlap, and data normalizations. GM and GMT maintain recall above 0.95 and precision above 0.8 across most conditions, while metabCombiner shows lower sensitivity and M2S shows variable performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly validate the benchmarking results. Reviewer 2 states 'the authors have done extensive comparisons to claim that GromovMatcher performs well.' Reviewer 3 confirms 'the authors validate the performance of their GromovMatcher method using a dataset of cord blood' and describes the comparison with metabCombiner and M2S. No concerns are raised about the synthetic data validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In the EPIC CS-HCC validation using manually matched features, GM demonstrates the highest precision and recall without prior knowledge of the validation subset, while metabCombiner shows high precision but low sensitivity, and M2S performs comparably to GM due to the near-linear RT drift that favors its approach.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly describes this validation: 'The second validation was done using a (scaled and centered) dataset of metabolics from cancer datasets from the EPIC cohort that were manually matched by an expert.' The reviewer acknowledges the results without raising concerns about the CS-HCC matching performance or the comparison to manual matching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In the CS-PC validation, GM and M2S identify approximately 1000 common features with high recall, while metabCombiner detects only ~600 matches with recall below 0.5. Manual inspection reveals that some GM 'false positives' are actually correct matches missed by the expert, demonstrating that automated methods can identify valid matches beyond manual curation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes that the EPIC dataset 'was also used to show that using automated methods can identify more features that are associated with a particular group of samples than what was found by manual matching.' This directly supports the finding that GromovMatcher identifies correct matches beyond the expert manual matching, validating the CS-PC results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C37",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Using GromovMatcher to pool the CS, HCC, and PC studies, 243 features associated with alcohol intake are identified with FDR correction (including 185 from prior work and 55 newly discovered), and 36 features with Bonferroni correction (including all 10 from prior work). This demonstrates that GromovMatcher data pooling improves biomarker discovery for lifestyle risk factors associated with cancer.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly confirms this application: 'Specifically, the authors identify additional features connected to alcohol consumption.' The reviewer describes how the dataset was used to demonstrate that automated methods identify more associated features than manual matching, directly supporting the alcohol biomarker discovery claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "GM uses both mean feature intensities and their variances/covariances, making it robust to centering and scaling transformations that preserve correlations. In contrast, metabCombiner's performance is significantly affected by centering and scaling due to its reliance on intensity magnitude information.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 identifies as a main strength that GromovMatcher 'incorporates the information on distances between the features (in addition to also using m/z and RT)' and notes that other methods 'do not consider correlations between features.' This validates the claim about GM's use of correlation structures and its advantage over methods relying on intensity magnitudes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C49",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Due to limited manually curated validation datasets in untargeted metabolomics, the authors develop a dataset split procedure that generates pairs of validation datasets by randomly dividing an initial dataset and introducing RT drift to simulate real experimental variations. This allows systematic testing of alignment methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly acknowledges this limitation and the solution: 'The main weakness is that there seem not to be enough manually curated datasets that could be used for validation.' The reviewer accepts the dataset split procedure as a valid approach, stating the authors 'use 20 different splits and compare the GromovMatcher...with two other matching methods.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Existing automated alignment methods have two main limitations: they demand substantial fine-tuning of user-defined parameters and they ignore correlations among metabolic features which provide additional information on shared features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states: 'The authors of the paper identify two main shortcomings with previously established methods that attempt to match features from different experiments: (a) all other methods require fine-tuning of user-defined parameters, and, more importantly, (b) do not consider correlations between features.' This directly validates both claimed limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "GromovMatcher has limitations including potential challenges when aligning studies from populations with different characteristics (where correlation structures may be inconsistent) and current inability to handle more than two datasets simultaneously, though the latter can be addressed by aligning multiple studies to a reference dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 acknowledges the two-dataset limitation: 'The second weakness, as emphasized by the authors in the discussion is that the method as it is set up now can be directly used only to compare two datasets.' The reviewer expresses confidence that 'the authors will successfully implement novel algorithms to address this issue in the future,' accepting this as a known limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims about LC-MS metabolomics capabilities, applications, and challenges including low throughput, data incompatibility across laboratories, and limitations of manual matching and current pooling methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 provides a comprehensive summary that validates these background claims: 'The goal of untargeted metabolomics is to identify differences between metabolomes of different biological samples' and 'The main problem that complicates merging different experiments is that m/z and RT vary slightly for the same feature.' These contextual claims are accepted without challenge.",
+    "result_type": "MINOR"
+  }
+]

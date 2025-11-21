@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Modern neurophysiological recordings use multichannel sensor arrays with 100s-1000s of channels that record mixtures of cortical network oscillations. The source-to-sensor mixing and measurement noise complicate interpretation, creating a need for analysis tools to recover underlying dynamic components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C12 establish the context and motivation for the work through well-established knowledge about neurophysiological recordings and their challenges. These are supported by appropriate citations and represent accepted understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Existing blind source separation methods, including ICA and oscillatory-focused component analysis, have significant limitations: they require manual intervention for component selection, lack generative models for spatio-temporal dynamics, cannot separate Gaussian sources (like EEG/MEG), do not directly estimate interpretable mixing matrices, and rely on nonparametric estimates sensitive to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C25 provide a comprehensive critique of existing methods supported by appropriate citations and established knowledge. The limitations are well-documented in the literature and the logical connections between lack of generative models and practical difficulties are sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors propose Oscillation Component Analysis (OCA), a novel method using a bio-physically inspired state-space representation within a generative model. The method represents observed data as superposition of latent oscillations weighted by multichannel mixing matrices, with parameters inferred via Bayesian framework using generalized expectation maximization and empirical Bayes model selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C28-C31, C36-C38, C40-C41 describe the proposed method with appropriate mathematical formulation and citations to relevant prior work. The theoretical framework is clearly articulated and builds on established state-space modeling approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C52",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Due to intractability of exact posterior computation, the authors employ Variational Bayes inference to obtain closed-form approximations, with posteriors represented as multivariate Gaussian and inverse-Wishart distributions. Parameter estimation uses GEM algorithm with negative variational free energy as surrogate for log-likelihood in model selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C50, C52, C54-C55, C57 describe the inference procedure with appropriate citations and mathematical justification. The use of VB inference for intractable posteriors is standard practice and the approach is well-documented in appendices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The OCA pipeline accepts sensor recordings as continuous or epoched data with initial noise covariance, performs pre-whitening and PCA (retaining 99.9% variance), fits oscillation parameters via iterative learning, selects optimal number of components, and can extract oscillation time courses or reconstruct signals from component subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73 describe the practical implementation pipeline with clear justification for each step (e.g., PCA for handling rank-deficient data). The pipeline is demonstrated in Figure 1D and follows established practices from MNE-ICA pipeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In simulation with synthetic 64-channel EEG containing three oscillations (1.6 Hz slow/delta, 10 Hz and 12 Hz alpha) with known spatial distributions and temporal lags, OCA accurately recovered the oscillation time courses, spatial distributions, and noise covariance matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C84 describe a well-controlled simulation with ground truth. Figure 2 provides visual evidence supporting accurate recovery of oscillations and noise covariance. The simulation design is appropriate for validating the method's ability to separate known components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In comparative analysis on synthetic EEG, frequency-domain methods failed to identify underlying sources, ICA mixed independent signals (expected for Gaussian data), while OCA successfully recovered three distinct oscillatory components by explicitly modeling temporal dynamics. Similar results were obtained with real EEG data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 demonstrate OCA's advantages over conventional methods with appropriate comparisons shown in Figure 3. The explanation for ICA's failure (Gaussian data) is theoretically sound. Extension to real data (C93) strengthens the finding though details are in appendix.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "In propofol-induced unconsciousness EEG data (0, 2, 4 \u03bcg/mL concentrations), OCA identified increasing numbers of oscillation components (30, 30, 50 total; with slow/delta: 17, 17, 29 and alpha: 17, 9, 15), showing network fragmentation, decreasing slow/delta coherency, increasing alpha coherency, more sinusoidal dynamics, and anterior shift of alpha activity with increasing propofol concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C110 present comprehensive analysis of propofol EEG data with clear quantitative results shown in Figure 4. Findings align with prior literature (C108, citations to Lewis et al., Murphy et al., Cimenser et al., Purdon et al.), providing convergent validation. The interpretation of network fragmentation from increasing component numbers is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In sleep HD-EEG comparing relaxed wakefulness (eyes closed) and REM sleep, OCA identified 55 and 50 components respectively, with only 7 and 3 alpha components. Wakeful alpha was more regular/sinusoidal, while REM alpha had higher coherency (0.43 vs 0.32), more posterior spatial distribution, and substantially different cortical generators (principal angle 44.31\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C120 present detailed comparison of alpha oscillations across sleep states with quantitative metrics (coherency, principal angle) shown in Figure 5. The use of principal angle to quantify spatial differences is appropriate. The findings reveal distinct alpha generation mechanisms across states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "In resting-state MEG from Human Connectome Project, OCA identified 30 components (13 slow/delta, 10 alpha). The extracted real and imaginary oscillation pairs enable computation of instantaneous phase and amplitude without Hilbert transform, revealing specific phase-amplitude coupling between slow oscillations and one alpha component (OSC012) but not others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C129 demonstrate OCA's utility for cross-frequency coupling analysis with clear results shown in Figure 6. The ability to extract analytic signal components directly is a methodological advantage. The selective coupling finding illustrates OCA's ability to identify specific component interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C141",
+      "C142",
+      "C143",
+      "C166",
+      "C167",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "OCA provides a novel approach combining independent component identification with explicit oscillatory dynamics modeling via state-space representation. It circumvents frequency-domain limitations by decoupling spatial and temporal patterns, automatically identifies dominant oscillations, directly estimates interpretable mixing matrices, and provides parametric descriptions of oscillations and their spatial patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C143, C166-C167, C184-C186 summarize OCA's advantages supported by theoretical arguments and empirical demonstrations. The claims about circumventing frequency-domain limitations are validated by simulation and real data results. The interpretability advantages are inherent to the generative model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "While OCA's iterative parameter estimation is computationally burdensome compared to frequency-domain methods, once estimated, parameters enable efficient decomposition of new data. OCA can be viewed as learning optimal spatio-temporal filters that extract endogenous narrowband activity, similar to data-driven spatial filtering methods but with joint spatial-temporal estimation within Bayesian framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C153 provide balanced assessment of computational costs and benefits, with appropriate comparisons to related methods (spatio-temporal source separation). The acknowledgment of computational burden (C144) alongside efficiency after learning (C145) is honest. Comparisons to related methods are supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "OCA differs from ICA-based methods by incorporating explicit temporal dynamics in a 2D state-space representation that is interpretable. While generalizations of ICA with autoregressive modeling exist, they have seen limited adoption possibly due to interpretability issues. OCA's state-space approach provides interpretable oscillatory dynamics with data-driven model selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C165 position OCA relative to ICA and its variants with appropriate citations. The speculation about limited adoption of AR-ICA (C159) is acknowledged as such. The comparison to Matsuda & Komaki's work (C164-C165) appropriately credits similar approaches while distinguishing OCA's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Unlike many BSS methods that estimate backward spatial filters requiring separate inverse problem to obtain interpretable forward mixing patterns, OCA directly estimates the forward spatial distribution matrix, avoiding potential errors from the transformation step. OCA's backward extraction involves time-shifted signals and is never explicitly computed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C177 explain an important methodological distinction supported by citation to Haufe et al. The advantage of direct forward model estimation is theoretically sound and avoids known issues with interpreting backward filters. The explanation is clear and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Compared to empirical mode decomposition (EMD), which requires computationally demanding random sampling in high-dimensional space and is sensitive to noise due to nonparametric formulation, OCA employs a parametric model that is statistically efficient and resilient to noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C183 compare OCA to EMD with appropriate description of EMD's limitations. The advantages claimed for OCA's parametric approach are theoretically sound, though direct empirical comparison is not provided. The comparison is fair and well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "Preprocessing for all datasets used MNE-python 1.2 and Eelbrain 0.37 with default settings. Propofol EEG was bandpass filtered 0.1-40 Hz, downsampled to 100 Hz, with noise covariance from high-pass filtered (>30 Hz) data. Sleep EEG was filtered 1-40 Hz, downsampled to 100 Hz, with bad channels removed. MEG was artifact-corrected via signal-space projection and downsampled to 100 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C198 provide detailed preprocessing methods with appropriate citations and clear rationale (e.g., C189 explains 0.1 Hz highpass filtering). The methods are standard and well-documented, enabling reproducibility. Software versions are specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "Implementation of OCA algorithms is available as purdonlabmeeg Python library on GitHub under MIT license, with simulation scripts demonstrating usage. Analysis code for experimental data follows simulation script structure and is available upon request.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C201 describe code availability with specific repository location and license. The availability of simulation code enhances reproducibility. While experimental analysis code is not publicly posted, availability upon request is stated.",
+    "result_type": "MINOR"
+  }
+]

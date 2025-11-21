@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study analyzed multimodal MRI data from 439 participants aged 5.7\u201321.9 years from the HCP-D dataset, generating multiple connectomes (MPC, WMC, FC) using 210 cortical regions from the BNA atlas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23, C24, C78-C82 collectively describe the dataset, sample characteristics, imaging acquisition, and parcellation approach. The methodology is clearly documented with appropriate citations and ethical approvals, providing a solid foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Three communication models (communicability, mean first-passage times of random walkers, and flow graphs with timescales=1) were identified as the optimal combination for predicting FC from WMC, and a multilinear model was used to quantify SC\u2013FC coupling as adjusted r\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C89-C91 describe the model selection process and coupling quantification method. The selection is supported by statistical testing (p<0.05, 1000 spin test permutations, Table 1) and appropriate use of Haufe's transform to address overfitting concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "SC\u2013FC coupling was strongest in the visual and somatomotor networks, with significant coupling observed in specific cortical regions including middle frontal gyrus, precentral gyrus, and occipital lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C29 describe the spatial pattern of SC\u2013FC coupling with appropriate statistical testing (p<0.05, spin test permutations, Kruskal-Wallis ANOVA). The findings are supported by Figure 2 and consistent with prior literature on cortical hierarchies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "SC\u2013FC coupling showed negative associations with evolutionary expansion (r=-0.52) and functional principal gradient (r=-0.46), and positive association with myelin content (r=0.49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 report correlations between SC\u2013FC coupling and fundamental brain organization properties, all with p<0.001 and corrected for spatial autocorrelation using spin tests. The effect sizes are moderate and the statistical approach is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Different structural connectivity measures (MPC and WMC communication models) had preferential contributions to FC variance across cortical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by statistical testing (p<0.05, FDR corrected, Kruskal-Wallis ANOVA) and visualization in Figure 2G. The use of Haufe's transform provides interpretable weights for different SC predictors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SC\u2013FC coupling exhibited heterogeneous developmental changes dominated by increases in most cortical regions, particularly in frontal, temporal, parietal, and occipital areas, with some regions showing decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C37 describe age-related changes in SC\u2013FC coupling with appropriate statistical controls (sex, intracranial volume, head motion) and FDR correction. The findings are supported by Figure 3 and show regional heterogeneity in developmental trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "SC\u2013FC coupling significantly predicted individual differences in general intelligence (r=0.3-0.4 without age adjustment; r=0.11\u00b10.04 with age adjustment), with frontoparietal and default mode networks contributing most to prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42-C45 demonstrate predictive validity of SC\u2013FC coupling for intelligence using nested cross-validation with appropriate controls. The age-adjusted prediction (r=0.11) is modest but statistically significant (p=0.01, FDR corrected), suggesting SC\u2013FC coupling captures variance beyond developmental effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The spatial pattern of SC\u2013FC coupling development was associated with gene expression (r=0.41, p=0.006), with positive associations for oligodendrocyte-related genes (75 genes, enriched for myelination pathways) and negative associations for astrocyte-related genes (43 genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C46-C51 describe transcriptomic associations using PLS analysis with appropriate spatial autocorrelation correction (10,000 spin test permutations). The cell-type specificity analysis using permutation testing (p<0.001) provides mechanistic insight into developmental processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C87",
+      "C88"
+    ],
+    "result": "The study implemented conservative quality control procedures for head motion, including censoring frames with motion >0.15mm and excluding participants with <300 frames, while controlling for motion as a covariate in analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C87-C88 describe appropriate quality control measures for developmental fMRI data with citations to established methods. The conservative approach addresses a known confound in developmental neuroimaging studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study used established methods for MPC computation (14 equivolumetric surfaces) and WMC reconstruction (ball-and-stick model with probabilistic tractography, consistency-based thresholding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe standard neuroimaging methods with appropriate citations. The consistency-based thresholding approach addresses known issues with spurious tractography connections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The study used Elastic-Net algorithm with nested fivefold cross-validation to predict cognitive performance from SC\u2013FC coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 describe an appropriate machine learning approach with proper cross-validation to prevent overfitting. The nested CV framework separates hyperparameter tuning from performance evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Gene expression analysis used AHBA data preprocessed following recommended pipelines, with PLS analysis to link SC\u2013FC coupling development to transcriptomic profiles, followed by GO enrichment analysis and cell-type assignment to seven canonical classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 describe standard transcriptomic analysis methods with appropriate citations to established pipelines and databases. The approach follows best practices for linking neuroimaging phenotypes to gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C103",
+      "C77"
+    ],
+    "result": "Reproducibility analyses using different parcellation templates (HCPMMP), tractography strategies (deterministic vs. probabilistic), and split-half validation (1000 repetitions) demonstrated consistency of findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C100-C101, C103 describe comprehensive reproducibility analyses showing high correlations (r=0.79-0.98) across different methodological choices. The split-half validation with 1000 repetitions provides strong evidence for reliability of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The study acknowledges limitations including challenges in reconstructing short interhemispheric connections and potential bias from developmental changes in gene expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 appropriately acknowledge known technical limitations in tractography and transcriptomic analysis. These are honest assessments of methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study contextualizes findings within established literature on SC-FC coupling, cortical hierarchies, developmental neuroscience, and cellular mechanisms, citing prior work on communication models, myelination, synaptic pruning, and network maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C22, C52-C71 provide appropriate literature context with citations to relevant prior work. These claims establish the theoretical framework and interpret findings in light of existing knowledge about brain organization and development.",
+    "result_type": "MINOR"
+  }
+]

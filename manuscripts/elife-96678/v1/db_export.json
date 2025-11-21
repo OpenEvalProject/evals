@@ -1,0 +1,2151 @@
+{
+  "submission": {
+    "id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T00:18:27.475309Z",
+    "updated_at": "2025-11-21T00:18:27.475309Z"
+  },
+  "content": [
+    {
+      "id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "content_type": "manuscript",
+      "content_text": "# Released bacterial ATP shapes local and systemic inflammation during abdominal sepsis\n\n## Authors\n\n- Daniel Spari<sup>1</sup> ([ORCID: 0000-0002-5028-0851](https://orcid.org/0000-0002-5028-0851))\n- Annina Schmid<sup>1</sup>\n- Daniel Sanchez-Taltavull<sup>1</sup>\n- Shaira Murugan<sup>1</sup>\n- Keely Keller<sup>1</sup>\n- Nadia Ennaciri<sup>1</sup>\n- Lilian Salm<sup>1</sup> ([ORCID: 0000-0002-6812-3678](https://orcid.org/0000-0002-6812-3678))\n- Deborah Stroka<sup>1</sup> ([ORCID: 0000-0002-3517-3871](https://orcid.org/0000-0002-3517-3871))\n- Guido Beldi<sup>1</sup> ([ORCID: 0000-0002-9914-3807](https://orcid.org/0000-0002-9914-3807)) \u2020\n\n### Affiliations\n\n1. Department of Visceral Surgery and Medicine, Inselspital, Bern University Hospital, University Hospital of Bern Bern Switzerland ([ROR:01q9sj412](https://ror.org/01q9sj412))\n2. Department for BioMedical Research, Visceral Surgery and Medicine, University Hospital of Bern Bern Switzerland ([ROR:01q9sj412](https://ror.org/01q9sj412))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSepsis causes millions of deaths per year worldwide and is a current global health priority declared by the WHO. Sepsis-related deaths are a result of dysregulated inflammatory immune responses indicating the need to develop strategies to target inflammation. An important mediator of inflammation is extracellular adenosine triphosphate (ATP) that is released by inflamed host cells and tissues, and also by bacteria in a strain-specific and growth-dependent manner. Here, we investigated the mechanisms by which bacteria release ATP. Using genetic mutant strains of Escherichia coli (E. coli), we demonstrate that ATP release is dependent on ATP synthase within the inner bacterial membrane. In addition, impaired integrity of the outer bacterial membrane notably contributes to ATP release and is associated with bacterial death. In a mouse model of abdominal sepsis, local effects of bacterial ATP were analyzed using a transformed E. coli bearing an arabinose-inducible periplasmic apyrase hydrolyzing ATP to be released. Abrogating bacterial ATP release shows that bacterial ATP suppresses local immune responses, resulting in reduced neutrophil counts and impaired survival. In addition, bacterial ATP has systemic effects via its transport in outer membrane vesicles (OMV). ATP-loaded OMV are quickly distributed throughout the body and upregulated expression of genes activating degranulation in neutrophils, potentially contributing to the exacerbation of sepsis severity. This study reveals mechanisms of bacterial ATP release and its local and systemic roles in sepsis pathogenesis.\n\n## Introduction\n\nWorldwide, 11 million sepsis-related deaths were reported in 2017, which accounted for an estimated 19.7% of all global deaths (Rudd et al., 2020). Given its high incidence and immense socio-economic burden, the World Health Organization (WHO) has declared sepsis as a global health priority (Reinhart et al., 2017).\n\nSepsis is defined as life-threatening organ dysfunction caused by an imbalanced host immune response to infection. Antibiotic treatment remains the main approach to treat sepsis; however, despite the use of broad-spectrum antibiotics, lethality remains high. Immune-modulating strategies are an additional approach to antibiotics to curb excessive inflammation and to support an effective defense against the infectious agents. Until recently however, most trials inhibiting cytokine responses or Toll-like receptors failed, indicating that alternative approaches for immunomodulation are required (Cao et al., 2023).\n\nIt has been shown that adenosine triphosphate (ATP), as soon as it is released into the extracellular space, critically modulates inflammatory and immune responses (Di Virgilio et al., 2020; Eltzschig et al., 2012) by activating ionotropic P2X and metabotropic P2Y receptors (Burnstock, 2020; Junger, 2011). Also, such purinergic signaling critically alters immune responses during sepsis (Dosch et al., 2019; Ledderose et al., 2016; Spari and Beldi, 2020). In particular, we have described that the connexin-dependent release of ATP by macrophages initiates an autocrine loop of over-activation, resulting in altered local and systemic cytokine secretion, which exacerbates abdominal sepsis (Dosch et al., 2019). Such sepsis-promoting effects of host-derived extracellular ATP are secondary to inflammation initiated by bacterial pathogens.\n\nRecently, it has been discovered that also bacteria release ATP into the extracellular space (Mempin et al., 2013). Such ATP release might be a conserved mechanism of protection from host defense and precede host responses. ATP release has been shown for a variety of bacteria including the sepsis-associated Escherichia coli (E. coli) and Klebsiella pneumoniae (K. pneumoniae) from the Proteobacteria phylum or Enterococcus faecalis (E. faecalis) and Staphylococcus aureus (S. aureus) from the Firmicutes phylum (Diekema et al., 2019; Hironaka et al., 2013; Iwase et al., 2010; Mempin et al., 2013; Mure\u0219an et al., 2018).\n\nThe mechanisms by which inflammatory and immune responses in the host are modulated by such released bacterial ATP have just begun to be elucidated (Spari and Beldi, 2020). In colonized compartments such as the intestine, it has been shown that ATP released by mutualistic bacteria modulates local cellular and secretory immune responses (Atarashi et al., 2008; Perruzza et al., 2017; Proietti et al., 2019) and in the mouth, bacterial ATP release leads to biofilm dispersal and periodontitis (Ding et al., 2016a; Ding and Tan, 2016b). However, the role of ATP released by bacteria invading non-colonized compartments, such as the abdominal cavity or the blood in the context of local and systemic infections, remains to be determined.\n\nIn this study, we investigated if ATP released from bacteria influences the outcome of abdominal sepsis. We first isolated sepsis-associated bacteria and measured the amount of ATP they release. Second, we analyzed the function of the inner bacterial membrane on ATP release over time in E. coli and in E. coli with mutations in integral respiratory chain proteins (Mempin et al., 2013). Third, the function of the outer bacterial membrane on ATP release during growth was assessed using porin mutants (Alvarez et al., 2017; Choi and Lee, 2019). Fourth, we investigated local effects of ATP in the abdominal cavity. Lastly, based on the finding that bacteria secrete outer membrane vesicles (OMV) (Schwechheimer and Kuehn, 2015), we investigated systemic consequences of released bacterial ATP.\n\n## Results\n\n### E. coli, one of the major pathogens in sepsis, releases ATP in a growth-dependent manner\n\nTo assess ATP release of sepsis-associated bacteria, abdominal fluid of patients with abdominal sepsis was sampled and an/aerobically incubated on LB agar plates (Figure 1A). Twenty-five different colonies were randomly picked and analyzed by whole 16S-rRNA Sanger sequencing, which resulted in 12 different bacterial species (Figure 1B). From these, the four most clinically important sepsis-associated bacteria E. coli, K. pneumoniae (both gramneg), E. faecalis, and S. aureus (both grampos) (Diekema et al., 2019; Mure\u0219an et al., 2018) were further cultivated for experimental studies. We quantified released ATP over time (Figure 1\u2014figure supplement 1) using a luciferin-luciferase-based assay. A growth-dependent release of ATP was observed in all species, peaking during exponential growth phase (Figure 1C). Cumulative amount of released ATP was quantified using the area under the curve (AUC) of released ATP over time (AUC ATP). ATP release was detected across all assessed species (Figure 1D). To model these findings in mice, abdominal sepsis was induced using a standardized cecal ligation and puncture (CLP) model (Dosch et al., 2019; Figure 1E). Similar to human samples, Proteobacteria and Firmicutes phyla were predominating (Figure 1F, see Figure 1B). In the mouse model, E. coli released notably more cumulative ATP compared to E. faecalis and S. aureus (Figure 1G and H). The bacterial species assessed in humans and mice (E. coli, E. faecalis, S. aureus) differed on the strain level (sequences deposited, see Data availability statement) confirming that ATP release is strain-specific (Mempin et al., 2013). In summary, sepsis-associated bacteria release ATP in a growth-dependent and strain-specific manner. E. coli, which is one of the most frequent facultative pathogens in patients with abdominal sepsis, released the highest amount of ATP isolated from a standardized mouse model of abdominal sepsis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig1-v1.jpg)\n\n**Figure 1.:** (A) Experimental approach to isolate and cultivate sepsis-associated bacteria from abdominal fluid of patients with abdominal sepsis. (B) Bacterial species identified by whole 16S-rRNA Sanger sequencing from abdominal fluid of patients with abdominal sepsis. Three colonies out of 25 could not be identified. (C) Measurement of released ATP (M) and growth (OD600) over time (hours) from the four sepsis-associated bacteria E. coli, K. pneumoniae, E. faecalis, and S. aureus isolated from patients. N=2 independent bacteria cultures. Means and standard deviations are shown. (D) Area under the curve (AUC) of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP). One-way ANOVA, N=2 independent bacteria cultures. Means and individual values are shown. (E) Experimental approach to isolate and cultivate sepsis-associated bacteria from abdominal fluid of mice with abdominal sepsis. (F) Bacterial species identified by whole 16S-rRNA Sanger sequencing from abdominal fluid of mice with abdominal sepsis. Seven colonies out of 25 could not be identified. (G) Measurement of released ATP (M) and growth (OD600) over time (hours) from the three sepsis-associated bacteria E. coli, E. faecalis, and S. aureus isolated from mice. N=2 independent bacteria cultures. Means and standard deviations are shown. (H) AUC of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP). One-way ANOVA, N=2 independent bacteria cultures. Means and individual values are shown.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig1-figsupp1-v1.jpg)\n\n### Bacterial ATP release is dependent on ATP synthesis at the inner bacterial membrane and correlates with bacterial growth\n\nAfter having demonstrated that sepsis-associated bacteria release ATP, we next questioned whether and how ATP release is dependent on ATP generation. ATP synthase and cytochrome oxidases, which are located in the inner bacterial membrane, are key components of ATP generation under aerobic conditions. Therefore, ATP release of the E. coli parental strain (PS) was compared to all available mutants of ATP synthase subunits (\u0394atpA, \u0394atpB, \u0394atpC, \u0394atpD, \u0394atpE, \u0394atpF, \u0394atpH) and cytochrome bo3 oxidase subunits (\u0394cyoA, \u0394cyoB, \u0394cyoC, \u0394cyoD) from the Keio collection (Baba et al., 2006; Yamamoto et al., 2009). The use of different mutants allows to identify the most relevant subunits influencing ATP release. Also, it allows to identify a possible correlation of bacterial ATP release with growth, which is a function of ATP generation (Figure 2A; Galber et al., 2021; Ihssen et al., 2021; Ivancic et al., 2008; Lundin, 2000).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig2-v1.jpg)\n\n**Figure 2.:** (A) Illustration depicting the location of ATP synthase and cytochrome bo3 oxidase in gramneg bacteria. (B) Measurement of released ATP (M) and growth (OD600) over time (hours) from cytochrome bo3 oxidase (cyo) and ATP synthase (atp) mutants. The parental strain (PS) was added as a control. N=2 independent bacteria cultures. Means and standard deviations are shown. (C) Area under the curve (AUC) of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP) is shown individually in the left panel. N=2 independent bacteria cultures. Means and individual values are shown. Means of grouped cyo and atp mutants are compared in the right panel. t-Test. Means and individual values are shown. (D) Cumulative ATP (M*hours) and cumulative growth (OD600*hours) of all assessed cyo and atp mutants and the PS were plotted against each other. Pearson\u2019s correlation (r) and coefficient of determination (R2) of the applied linear model are depicted. 95% confidence level is shown by the black dashed lines.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Pearson\u2019s correlation (r) and coefficient of determination (R2) of the applied linear model are depicted. 95% confidence level is shown by the black dashed lines.\n\nBacterial growth (OD600) and ATP release were measured over time and cumulative ATP release (AUC ATP) was assessed (Figure 2B). We first noticed that mutations in subunits of ATP synthase, which is the key enzyme of ATP generation, were generally associated with significantly lower cumulative ATP release compared to mutations in cytochrome bo3 oxidase subunits (Figure 2C). Therefore, we suspected an interrelation between ATP generation and released ATP (see growth and ATP release curves in Figure 2B). We determined cumulative growth (AUC growth) in addition to cumulative ATP release and indeed, cumulative ATP release and cumulative growth were positively correlated (Figure 2D), similar to peak ATP and peak growth (OD600) that are positively correlated (Figure 2\u2014figure supplement 1). In summary, ATP release is directly dependent on ATP generation at the inner bacterial membrane. Mutations in subunits of bacterial ATP synthase have a higher impact on ATP generation, growth, and ATP release than mutations in subunits of cytochrome bo3 oxidase (Figure 2C).\n\n### Outer bacterial membrane integrity and bacterial death determine bacterial ATP release during growth\n\nWe next focused on the outer membrane by challenging its integrity while leaving ATP generation and the inner membrane intact. For that purpose, we used the E. coli porin mutants \u0394ompC, \u0394ompF, \u0394lamB, and \u0394phoE (Figure 3A; Baba et al., 2006; Yamamoto et al., 2009), which have been shown to suffer from impaired outer membrane integrity in varying degrees (Choi and Lee, 2019). ATP release and growth were measured over time including E. coli PS as baseline and membrane destabilizing EDTA and stabilizing Ca2+ as additional controls (Leive, 1968). Cumulative ATP release (AUC ATP) from the porin mutants were notably different compared to the PS, being lowest in \u0394ompC and highest in \u0394ompF (Figure 3B and C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illustration depicting the location of outer membrane porins in gramneg bacteria. (B) Measurement of released ATP (M) and growth (OD600) over time (hours) from outer membrane porin mutants. The parental strain (PS) and the PS supplemented with either 1 mM Ca2+ or 0.5 mM EDTA were added as controls. N=2 independent bacteria cultures. Means and standard deviations are shown. The red line marks the individual peak of ATP release and growth (OD600) at that time point. (C) Area under the curve (AUC) of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP). One-way ANOVA, N=2 independent bacteria cultures. Means and individual values are shown. (D) ATP concentration (M) and growth (OD600) at the individual peak of ATP release of all assessed outer membrane porin mutants, the PS, and the PS+Ca2+ (no peak for the EDTA control) were plotted against each other. Pearson\u2019s correlation (r) and coefficient of determination (R2) of the applied linear model are depicted. 95% confidence level is shown by the black dashed lines. (E) Gating strategy to identify added counting beads, live, injured, and dead bacteria. (F) Quantitative assessment of injured and dead bacteria, as identified by flow cytometry after 4 hr of culturing (ATP peak) of the PS, \u0394ompF and \u0394ompC. One-way ANOVA followed by Tukey post hoc test, N=4 independent bacteria cultures. Means and individual values are shown. (G) ATP concentration (M) after 4 hr of culturing (ATP peak) of the PS, \u0394ompF and \u0394ompC. One-way ANOVA followed by Tukey post hoc test, N=2 independent bacteria cultures. Means and individual values are shown.\n\nInterestingly, the \u0394ompF mutant had also a very high peak of released ATP (Figure 3B). We hypothesized that this is because of impaired membrane integrity, resulting in ATP release during growth and potentially bacterial death. Thus, we focused on the individual ATP peaks during growth, which were observed after 4 hr of culturing. There was a strong negative correlation between the individual peak of released ATP (marked by the red line in Figure 3B) and growth at the same time point (Figure 3D).\n\nWe did not interfere with ATP generation at the inner membrane but deliberately challenged the outer membrane and tested therewith if destabilization of the outer membrane integrity is associated with bacterial death. Indeed, outer membrane integrity and bacterial death are significantly increased in \u0394ompF compared to \u0394ompC and the PS after 4 hr (ATP peak) of culturing (Figure 3E and F), akin to the amount of released ATP (Figure 3G). We conclude from these data that destabilization of the outer bacterial membrane (as observed with the \u0394ompF mutant) results in bacterial death that is associated with ATP release.\n\nIn summary, outer membrane integrity and finally bacterial death notably contribute to the amount of bacterial ATP release during growth.\n\n### Released bacterial ATP reduces neutrophil counts and impairs survival during abdominal sepsis\n\nNext, we wanted to investigate the function of bacterial ATP release in vivo. To study this, we transformed the E. coli PS with an arabinose-inducible apyrase (PS+pAPY) and compared it to the PS transformed with the empty vector (PS+pEMPTY) (Proietti et al., 2019). In this model, ATP released by bacteria is hydrolyzed and consequently depleted by a periplasmic apyrase (Santapaola et al., 2006; Scribano et al., 2014).\n\nIndeed, apyrase induction resulted in a significant reduction of ATP release in PS+pAPY, compared to PS+pEMPTY (Figure 4\u2014figure supplement 1A and B). To test the consequences in vivo, apyrase was induced by arabinose 3 hr before intraabdominal (i.a.) injection into wild type C57Bl/6 mice (Figure 4A). Thereby ATP release was abrogated in the bacteria cultures that were used for injection (Figure 4B). In vivo, no difference in ATP levels was detected when ATP was measured directly in the abdominal fluid after 4 (Figure 4C) and 8 hr (Figure 4\u2014figure supplement 1C). This is not surprising given that ATP is rapidly hydrolyzed by ectonucleotidases in vivo (Eltzschig et al., 2012). After both 4 (Figure 4D and E) and 8 hr (Figure 4\u2014figure supplement 1D and E), no differences in local or systemic bacterial counts were observed. Yet, despite similar bacterial counts, the survival was significantly higher in the absence of bacterial ATP (PS+pAPY) compared to ATP-generating controls (PS+pEMPTY) after i.a. injection (Figure 4F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig4-v1.jpg)\n\n**Figure 4.:** (A) Experimental approach to determine the local role of bacterial ATP in vivo, intraabdominal (i.a.) injecting parental strain (PS)+pEMPTY or PS+pAPY. (B) Measurement of released ATP (M) in bacteria culture supernatant immediately before bacteria were i.a. injected. t-Test, N=2 independent bacteria cultures. Means and individual values are shown. (C) Measurement of ATP (M) in abdominal fluid from mice 4 hr after i.a. injection of bacteria. t-Test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (D) Quantitative assessment of colony forming units in abdominal fluid and (E) blood from mice 4 hr after i.a. injection of bacteria. Wilcoxon rank-sum test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. No growth for controls was detected. (F) Kaplan-Meier curves of mice after i.a. injection of bacteria. Log-rank test, n=10 animals per group. (G) Heatmap showing surface marker expression (x-axis), which was used to characterize the different immune cell populations (y-axis). (H) Concatenated (n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments) and down-sampled images of immune cell populations characterized in the abdominal cavity 4 hr after sham treatment or i.a. injection of bacteria. (I) Abundance of neutrophils, small peritoneal macrophages (SPM), and CX3CR1pos monocytes in abdominal fluid from mice 4 hr after sham treatment or i.a. injection of bacteria. One-way ANOVA followed by Tukey post hoc test, n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments. Means and individual values are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Measurement of released adenosine triphosphate (ATP) (M) and growth (OD600) over time (hours) from parental strain (PS)+pEMPTY and PS+pAPY. n=2 measurements of N=3 independent bacteria cultures. Means and standard deviations are shown. (B) Area under the curve (AUC) of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP). t-Test, n=2 measurements of N=3 independent bacteria cultures. Means and individual values are shown. (C) Measurement of ATP (M) in abdominal fluid from mice 8 hr after i.a. injection of bacteria. t-Test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (D) Quantitative assessment of colony forming units in abdominal fluid and (E) blood from mice 8 hr after i.a. injection of bacteria. Wilcoxon rank-sum test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. No growth for controls was detected. (F) Concatenated (n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments) and down-sampled images of immune cell populations characterized in the abdominal cavity 8 hr after sham treatment or i.a. injection of bacteria. (G) Abundance of neutrophils, small peritoneal macrophages (SPM), and CX3CR1pos monocytes in abdominal fluid from mice 8 hr after sham treatment or i.a. injection of bacteria. One-way ANOVA followed by Tukey post hoc test, n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments. Means and individual values are shown.\n\nNext, we asked how this difference in bacterial ATP release affects the immune system. Therefore, inflammatory cells in the abdominal cavity were characterized using flow cytometry (Figure 4G). As expected, a disappearance reaction of large peritoneal macrophages (LPM) was observed after both, E. coli PS+pEMPTY and E. coli PS+pAPY, i.a. injection compared to sham controls after 4 (Figure 4H) and 8 hr (Figure 4\u2014figure supplement 1F; Ghosn et al., 2010). Such LPM disappearance following abdominal E. coli infection is a result of free-floating clots composed of LPM and neutrophils and important for effective pathogen clearance (Salm et al., 2023; Vega-P\u00e9rez et al., 2021; Zindel et al., 2021) but not dependent on ATP release according to our data. Interestingly, however, the number of small peritoneal macrophages (SPM) and CX3CR1pos monocytes was significantly reduced, whereas neutrophils were significantly increased almost up to 8 hr (Figure 4I, Figure 4\u2014figure supplement 1G) in bacterial ATP-depleted abdominal sepsis (PS+pAPY). This effect is dependent on released bacterial ATP given that no differences in bacterial counts were observed (see Figure 4D and E, Figure 4\u2014figure supplement 1D\u2013E).\n\nIn summary, ATP released by bacteria suppresses abdominal inflammatory responses and worsened survival in a model of abdominal sepsis.\n\n### Establishing ATP-loaded OMV as a model system to assess the systemic relevance of bacterial ATP\n\nATP is rapidly metabolized in the extracellular space and therefore, the mode of action of released bacterial ATP is limited to the immediate cellular vicinity (Junger, 2011). However, the outcome of sepsis is not only dependent on local but also on systemic responses to microorganisms. Therefore, we hypothesized that bacterial ATP has systemic effects as protected cargo in OMV (Alvarez et al., 2017). OMV are small (20\u2013300 nm) spherical particles that are released by both gramneg and grampos bacteria (Schwechheimer and Kuehn, 2015). In gramneg bacteria, they bulge off the outer membrane and disseminate throughout the body (Jang et al., 2015). They are equipped with typical bacterial surface features lacking the machinery for self-reproduction, and contain DNA, proteins, and metabolites (Baeza and Mercade, 2021; Bitto et al., 2017; Kulp and Kuehn, 2010; Lee et al., 2007). Therefore, OMV are suited as a systemic delivery system for bacterial ATP. Indeed, recently, ATP has been detected in OMV derived from pathogenic Neisseria gonorrhoeae, Pseudomonas aeruginosa PAO1, and Acinetobacter baumannii AB41 (P\u00e9rez-Cruz et al., 2015).\n\nTo assess the potential of OMV as ATP carriers, we compared the OMV production from several hypervesiculation E. coli mutants (\u0394mlaE, \u0394mlaA, \u0394rfaD, \u0394degP, \u0394rodZ, \u0394nlpI, \u0394tolB) (Figure 5A; McBroom et al., 2006). The \u0394nlpI and \u0394tolB strains showed a 20- and 30-fold increase of OMV when compared with the PS (Figure 5B). We then assessed ATP release and growth over time from \u0394nlpI, \u0394tolB, and the PS, to identify their individual peak of ATP release, and isolated OMV at their individual peak of ATP release and after 24 hr (Figure 5\u2014figure supplement 1A). ATP was detected in OMV from all assessed strains at the individual peak of ATP release but only in minimal detectable levels after 24 hr (Figure 5C). The \u0394tolB OMV isolated after 24 hr were then used as ATP-depleted vehicles. Density gradient ultracentrifugation showed that most \u0394tolB OMV were of similar density and protein composition (Figure 5D, Figure 5\u2014figure supplement 1B). They were equipped with outer membrane ompF but not cytoplasmic ftsZ (Figure 5D), indicating that they are outer membrane derived. In order to generate OMV with known and constant ATP concentrations, we used electroporation (EP) to load OMV with ATP while empty OMV (\u0394tolB OMV harvested from 24 hr culture) served as ATP-depleted controls (Fu et al., 2020; Lenna\u00e1rd et al., 2021). Before and after EP, the OMV size distribution was assessed by nanoparticle tracking analysis and morphology by electron microscopy (Figure 5E, Figure 5\u2014figure supplement 1C). OMV were loaded with ATP (Figure 5F) and over time, the amount of ATP in OMV decreased, especially at physiological (37\u00b0C) temperature (Figure 5G) as opposed to 4\u00b0C (Figure 5\u2014figure supplement 1D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig5-v1.jpg)\n\n**Figure 5.:** (A) Illustration depicting the location of assessed proteins that lead to a hypervesiculation phenotype if knocked out in the gramneg bacterium E. coli. (B) Relative amount of OMV compared to the parental strain (PS) isolated from growth cultures of the assessed hypervesiculation mutants after 5 hr (exponential growth phase) and O/N (stationary phase). n=2 measurements of N=3 independent bacteria cultures. Means and individual values are shown. (C) Absolute quantification of ATP in OMV isolated from growth cultures of the PS, \u0394nlpI and \u0394tolB at their individual peak of ATP release and after 24 hr. n=2 measurements of N=3 independent bacteria cultures. Means and individual values are shown. (D) Amount of protein (BCA assay) detected in different fractions after density gradient ultracentrifugation. n=2 measurements of the different fractions. 20 \u00b5l of E. coli growth culture and 20 \u00b5l of each fraction were then characterized by Coomassie blue staining and specific detection of outer membrane ompF and cytoplasmic ftsZ. (E) Characterization of OMV by nanoparticle tracking analysis (n=5 measurements per sample) and electron microscopy (representative image) before and after electroporation. (F) Absolute quantification of ATP in OMV, which were loaded using different strategies. Columns 2\u20135: different concentrations of ATP incubated for 1 hr at 37\u00b0C (passive filling). Columns 6\u201312: different voltages with fixed settings for resistance (100 \u03a9) and capacitance (50 \u00b5F). N=2\u20139 independent experiments. Means and standard deviations are shown. (G) Relative quantification of ATP in OMV over 24 hr at 37\u00b0C after electroporation (0 hr=100%). n=2 measurements of N=3 independent experiments. Means and individual values are shown.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Measurement of released ATP (M) and growth (OD600) over time (hours) from PS, \u0394nlpI and \u0394tolB. OMV collection time points are marked in purple. n=2 measurements of N=3 independent bacteria cultures. Means and standard deviations are shown. (B) OMV before and after density gradient ultracentrifugation for 16 hr at 150,000\u00d7g. (C) Statistical parameters of OMV before electroporation as well as ATP-loaded and empty OMV after electroporation. (D) Relative quantification of ATP in OMV 16 hr at 4\u00b0C after electroporation (0 hr=100%). n=2 measurements of N=3 independent experiments. Means and individual values are shown.\n\nIn summary, OMV contain ATP and release ATP at physiological temperatures. To use OMV as an ATP delivery system, empty OMV were loaded using EP.\n\n### OMV-derived bacterial ATP induces degranulation processes in neutrophils after lysosomal uptake\n\nOMV are potent inducers of inflammation and sepsis (Park et al., 2010; Park et al., 2013), which travel throughout the body and are taken up by a variety of cells (Bittel et al., 2021; Kim et al., 2013; Lee et al., 2018). To tests the hypothesis that ATP within OMV mediates systemic effects of invasive bacteria, we injected ATP-loaded and empty OMV i.a. and investigated the resulting inflammation 1 hr after injection (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-v1.jpg)\n\n**Figure 6.:** (A) Experimental approach to determine the systemic role of bacterial ATP in vivo, intraabdominal (i.a.) injecting ATP-loaded or empty OMV. (B) Representative microscopic images of cells from the abdominal cavity 1 hr after i.a. injection of either ATP-loaded or empty OMV. OMV: DiI, Nucleus: DAPI, Neutrophils: Ly-6G-FITC. (C) Cells from remote organs were isolated 1 hr after i.a. injection of either ATP-loaded or empty OMV. OMV were mainly taken up by neutrophils (except in the spleen, ratio \u2248 1). t-Test with Benjamini-Hochberg correction, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (D) Representative microscopic image of pulmonary neutrophils 1 hr after i.a. injection of either ATP-loaded or empty OMV. OMV co-localize with the endolysosomal compartment. OMV: DiI, Endolysosomal system: LysoTracker Deep Red, Neutrophils: Ly-6G-FITC. (E) Pulmonary neutrophils were isolated 1 hr after i.a. injection of ATP\u03b3s-loaded or empty OMV, bead-sorted, and RNA sequencing was done. Principal component analysis shows significantly different clustering between neutrophils that took up ATP\u03b3s-loaded (NA) or empty OMV (NE). PERMANOVA, n=6 animals in the NE group, n=5 animals in the NA group. Ellipses represent 95% confidence level. (F) Volcano plot of RNA sequencing results shows an upregulation of genes mainly in the NA group. Genes classified in either lysosome (LYSO) or neutrophil degranulation pathways (NDG) or both, which were mentioned in the text, were highlighted. (G) Heatmap of the lysosome pathway (LYSO) showing the gene expression per sample. (H) Heatmap of the neutrophil degranulation pathway (NDG) showing the gene expression per sample.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Representative images of OMV uptake by neutrophils in the abdominal cavity 1 hr after intraabdominal (i.a.) injection additionally assessed using flow cytometry (ImageStream).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Gating strategy to identify large peritoneal macrophages (LPM), small peritoneal macrophages (SPM), and neutrophils in abdominal fluid. (B) Abundance of OMVpos/(OMVpos+OMVneg) LPM, SPM, and neutrophils 1 hr after intraabdominal (i.a.) injection of adenosine triphosphate (ATP)-loaded or empty OMV. t-Test with Benjamini-Hochberg correction, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (C) Abundance of LPM, SPM, and neutrophils 1 hr after sham treatment or i.a. injection of either ATP-loaded or empty OMV. One-way ANOVA, n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments. Means and individual values are shown.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Gating strategy to identify total OMVpos cells and specifically OMVpos neutrophils in blood and remote organs (lung, liver, kidney, and spleen). (B) Fraction of OMVpos/(OMVpos+OMVneg) neutrophils 1 hr after intraabdominal (i.a.) injection of adenosine triphosphate (ATP)-loaded or empty OMV. t-Test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (C) Fraction of % of CD45poslive cells 1 hr after intraabdominal (i.a.) injection of adenosine triphosphate (ATP)-loaded or empty OMV including control without OMV injection. t-Test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Pulmonary neutrophils were isolated 1 hr after i.a. injection of ATP\u03b3s-loaded or empty outer membrane vesicle (OMV), bead-sorted and assessed for purity by flow cytometry. A representative image is shown.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp5-v1.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Pulmonary neutrophils were isolated 1 hr after intraabdominal (i.a.) injection of ATP\u03b3s-loaded or empty outer membrane vesicle (OMV), bead-sorted, and RNA sequencing was done. This resulted in these significantly different pathways between the groups after enrichment analysis. DESeq, n=6 animals in the NE group, n=5 animals in the NA group.\n\nIn the abdominal fluid, uptake of DiI-stained OMV by leukocytes was independent of ATP cargo (Figure 6B, Figure 6\u2014figure supplement 1) and all major cell populations with phagocytic ability (LPM, SPM, neutrophils) were highly positive for OMV (Figure 6\u2014figure supplement 2A and B). LPM dramatically decreased, whereas neutrophils increased in response to OMV when compared to sham controls (Figure 6\u2014figure supplement 2C).\n\nWithin 1 hr, the DiI-stained OMV were distributed throughout the body and mainly taken up by neutrophils, with remarkable differences between organs (Figure 6\u2014figure supplement 3A and B, C). The highest ratio of OMVpos neutrophils compared to all other OMVpos cells was observed in the lung in an ATP-independent manner (Figure 6C). Intracellular fate of engulfed OMV is still a matter of discussion but one possibility is the degradation in the endolysosomal compartment (Bielaszewska et al., 2017; Juodeikis and Carding, 2022). We therefore injected DiI-stained OMV i.a. to assess to which membrane compartment OMV co-localize. A strong co-localization with the endolysosomal compartment of pulmonary neutrophils was identified (Figure 6D).\n\nTo determine what pathways OMV-derived bacterial ATP initiates in neutrophils after uptake into the endolysosomal compartment, pulmonary neutrophils were isolated (Figure 6\u2014figure supplement 4) for RNA sequencing. Uptake of ATP-loaded OMV resulted in a significantly different transcriptional activity compared to empty OMV (Figure 6E): The strongest differences were found in lysosomal and neutrophil degranulation pathways (Figure 6F, Figure 6\u2014figure supplement 5). In the lysosomal pathway, transcripts for proteins involved in autophagosome-lysosome fusion (Gabarap), endosome to lysosome transport (Hgsnat, Laptm5), or enzymatic cleavage (Capn1, Fuca1, Ctsb, Ctsd, Gba) were significantly higher expressed in response to ATP-loaded OMV when compared to empty OMV (Figure 6F and G). Furthermore, neutrophil degranulation was significantly increased in response to ATP-loaded OMV as indicated by increased expression of gene transcripts resulting in antibacterial activity (Lyz2, S100a8, Camp) or NETosis (Tlr2, Itgb2) (Figure 6F and H).\n\nIn summary, OMV are phagocytosed locally by major cell populations with phagocytic ability. Remotely, OMV were mainly taken up by neutrophils, where they co-localize with the endolysosomal compartment. Delivery of ATP by OMV resulted in an upregulation of lysosomal activation and neutrophil degranulation.\n\n## Discussion\n\nIn this study, we have demonstrated that ATP release is dependent on the respiratory chain located at the inner bacterial membrane. ATP synthase is most likely dominant compared to cytochrome bo3 oxidase because of its non-redundant function for ATP generation and bacterial growth. Mutations in one of the cytochrome bo3 oxidase subunits cyoA, cyoC, or cyoD could be compensated by another subunit. This is supported by lower ATP release in the cyoB mutant, which harbors all three prosthetic groups of the cytochrome bo3 oxidase and is therefore indispensable for proper function (Tsubaki et al., 2000). Alternatively, deficiency in the bo3-type oxidase could be partially compensated by bd-type oxidases (Borisov et al., 2011; Grauel et al., 2021).\n\nInstability of the outer bacterial membrane as we have seen for the \u0394ompF mutant (Choi and Lee, 2019) is associated with bacterial death and ATP release. It remains unclear whether loss of ATP results directly in bacterial death or bacterial death is the direct result of impaired outer bacterial membrane stability and ATP release is secondary to bacterial death. However, since the inner membrane and ATP generation remains intact and the periplasmic space is considered generally devoid of ATP, the latter seems more likely (Kulp and Kuehn, 2010). Previous studies used Sytox/PI staining and microscopy to identify bacterial death and did not identify bacterial death as a relevant source of extracellular ATP during exponential growth (Hironaka et al., 2013). Conversely, we used flow cytometry, a quantitatively more sensitive method, and our data demonstrated that impaired membrane integrity and bacterial death are critical for ATP release during growth. Despite low rates of bacterial death during exponential growth (Koch, 1959), and a low ratio of dead to live bacteria, the high gradient between intra- and extracellular ATP (approximately 100\u20131000\u00d7 higher) might be sufficient to explain the amount of released ATP measured (Leduc and van Heijenoort, 1980; Mempin et al., 2013).\n\nATP was detected within OMV and the concentration of ATP within OMV is sufficient to activate P2-type receptors in lysosomes (Araujo et al., 2020; Junger, 2011). Furthermore, OMV are released in response to environmental stresses like infection and sepsis (Kulp and Kuehn, 2010; Orench-Rivera and Kuehn, 2016). ATP is likely to activate P2 receptors, which have been shown to be expressed in lysosomes, such as P2X1, P2X3, or P2X4 (Qureshi et al., 2007; Robinson and Murrell-Lagnado, 2013). OMV can therefore be considered as non-living bacteria-resembling highly inflammatory vesicles (Jang et al., 2015; Kulp and Kuehn, 2010) that effectively distribute ATP throughout the body to activate cells, such as neutrophils, initiating systemic inflammatory responses. Activation of neutrophils in response to ATP-loaded OMV resulted in upregulation of inflammatory, lysosomal, and neutrophil degranulation pathways as well as an upregulation of the apoptosis pathway and genes involved in NETosis by a hitherto unknown mechanism. These pathways explain in part the low neutrophil counts we observed in mice. Such remote degranulation in response to OMV is unlikely to control bacteria at the source of sepsis but rather harmful to host tissues increasing sepsis severity (Eichelberger and Goldman, 2020).\n\nThe study has several limitations: Bacterial ATP release is strain specific (Figure 1; Mempin et al., 2013). As we focused on the laboratory BW25113 E. coli strain, it remains to be elucidated if impaired outer membrane integrity and bacterial death are also of such importance in other gramneg or also grampos bacteria. The approach to load OMV with ATP is rather artificial; it is, however, the only way to assure that ATP-loaded and empty OMV only differ in their ATP cargo. OMV have surface antigens and contain DNA, proteins, and other metabolites (Kulp and Kuehn, 2010), which are known to elicit inflammation as well. This was controlled using the same OMV as baseline vehicles.\n\nSeveral open questions need to be addressed in future projects: It remains to be determined how OMV are physiologically loaded with ATP. Potentially, despite the lack of a transporter, ATP may similarly to eukaryotic cells leak (Yegutkin et al., 2006) across the inner membrane into the periplasmic space that lacks the enzymes for ATP generation. Different types of OMV have been described in recent years, e.g., outer-inner membrane vesicles (O-IMV) or explosive OMV (Juodeikis and Carding, 2022; Takaki et al., 2020; Toyofuku et al., 2019; Turnbull et al., 2016; Turner et al., 2015), which are composed of outer membrane, inner membrane, and cytoplasmic content. The mechanisms, how these types of OMV are generated, could explain that ATP is found within them. However, the \u0394tolB mutant produces, unlike other tol mutants, only very few O-IMV (0.1\u20132% of all OMV) (P\u00e9rez-Cruz et al., 2013; Reimer et al., 2021; Takaki et al., 2020) and our western blot analysis suggests that our OMV are primarily outer membrane derived. Future studies may address the ATP cargo of the different OMV subgroups.\n\nOMV are promising diagnostic molecular biomarkers in gramneg sepsis (Michel and Gaborski, 2022) and it would be of relevance to compare OMV isolated from septic and control patients to assess possible differences in ATP cargo. Furthermore, it remains to be elucidated, which mechanisms lead to low local neutrophil counts. Since ATP is involved in cell death (Proietti et al., 2019) as well as in chemotaxis (Junger, 2011), increased cell death, impaired infiltration, or a combination of both is possible.\n\nThis study reveals that ATP is released by bacteria during growth because of impaired membrane integrity and bacterial death. ATP is also being released via OMV and therefore acts locally (direct release) and systemically (via OMV). Bacterial ATP reduces neutrophil counts, activates the endolysosomal system, and upregulates neutrophil degranulation, which together increase the severity of abdominal infection and early sepsis. These findings have the potential to lead to the development of novel treatments for abdominal sepsis, e.g., by in vitro generated OMV that modulate neutrophil function via delivery of inhibitors to intracellular purinergic receptors during sepsis.\n\n## Materials and methods\n\n### Human data\n\nFrom five patients that underwent revision laparotomy because of abdominal sepsis, swabs were taken from abdominal fluid, streaked on LB agar plates (15 g Agar, 5 g Bacto Yeast Extract, 10 g Bacto Tryptone, 5 g NaCl in 1 l ddH2O; Key resources table) and cultivated an/aerobically for 48 hr. The human experimental protocol was approved by the Cantonal Ethics Commission Bern, Switzerland (ethical approval 2017-00573, NCT03554148). Written informed consent was obtained from all patients and the study has been performed in accordance with the Declaration of Helsinki as well as the CONSORT statement.\n\n### Mouse handling\n\nSpecific pathogen-free C57Bl/6JRccHsd mice (Key resources table) were purchased at the age of 8 weeks from Inotiv (earlier Envigo, the Netherlands) and were housed in ventilated cages in the Central Animal Facility, University of Bern, Switzerland. All experiments were performed in the morning, mice were supplied with a 12 hr light/dark cycle at 22\u00b0C and fed ad libitum with chow and water. To minimize cage effects, we mixed mice over several cages and therefore only used female mice. All animal procedures were carried out in accordance with the Swiss guidelines for the care and use of laboratory animals as well as in accordance with the ARRIVE guidelines and were approved by the Animal Care Committee of the Canton of Bern (Switzerland) under the following number: BE41/2022.\n\n### CLP sepsis model\n\nTo isolate bacteria from mice with abdominal sepsis, CLP was performed as described elsewhere with some minor modifications (Rittirsch et al., 2009). In brief, mice were anesthetized s.c. injecting (3 \u00b5l/g body weight) a mixture of fentanyl (0.05 mg/ml), dormicum (5 mg/ml), and medetor (1 mg/ml) and were then shaved and disinfected with Betadine. Mid-line laparotomy was performed (approximately 1 cm) and the cecum was exposed. The proximal one third of the cecum was ligated with Vicryl 4-0 (Ethicon, cat# V1224H) and perforated with a 23 G needle. The cecum was returned to the abdominal cavity and the laparotomy was sutured continuously in two layers with prolene 6-0 (Ethicon, cat# MPP8697H). At the end, the antidote (naloxone [0.1 mg/ml], revertor [5 mg/ml], temgesic [0.3 mg/ml]) was s.c. injected (9 \u00b5l/g body weight). A semiquantitative score sheet was used to predict animal postoperative well-being. Mice were evaluated every 4 hr according to the following criteria: appearance, level of consciousness, activity, response to stimulus, eye shape, respiratory rate, and respiratory quality and analgesia was applied if necessary. After 10 hr, abdominal fluid was collected, spread on LB agar plates, and cultivated an/aerobically for 48 hr.\n\n### Whole 16S-rRNA Sanger sequencing\n\nTwenty-five colonies cultivated from abdominal fluid of patients and mice each described above were randomly picked and collected in separate sterile Eppendorf tubes and resuspended in 1 ml of sterile PBS. Each sample was centrifuged for 5 min at 20,000\u00d7g and washed once with 1 ml sterile PBS. The pellet was resuspended in 20 \u00b5l of sterile PBS and samples were incubated 5 min at 100\u00b0C. 1 \u00b5l was used for PCR using GoTaq G2 Green Master Mix (Key resources table) and the following primers (Key resources table) at a final concentration of 0.2 \u00b5M:\n\nPCR conditions were as follows: Initial 5 min at 94\u00b0C for denaturation, followed by 35 cycles of 1 min denaturation at 94\u00b0C, 1 min annealing at 43\u00b0C, and 2 min extension at 72\u00b0C, with a final extension for 10 min at 72\u00b0C. This resulted in a PCR product of optimally ~1400\u20131500 bp. 20 \u00b5l PCR product were run on 2% agarose gel for 90 min, cut out and purified using QIAquick Gel Extraction Kit (Key resources table). The amplicon concentration was measured using nanodrop (Thermo Fisher Scientific) and Sanger sequencing was done by Microsynth.\n\n### Quantification of released bacterial ATP\n\nBacteria were aerobically grown in 20 ml LB medium (5 g Bacto Yeast Extract, 10 g Bacto Tryptone, 5 g NaCl in 1 l ddH2O; Key resources table) overnight (O/N) (16 hr/37\u00b0C/200 rpm) and 0.25 ml of O/N culture were diluted in 100 ml fresh LB medium. Up to 24 hr, 0.25 ml bacteria culture were taken at several time points for growth assessment (OD600) and 1 ml was taken for ATP quantification. OD600 was measured using a Tecan Spark spectrophotometer. The 1 ml sample for ATP quantification was centrifuged for 5 min at 16,000\u00d7g, the supernatant was filtered through a 0.2 \u00b5m syringe filter and stored at \u201380\u00b0C. ATP was quantified using a luciferin-luciferase-based assay according to the manufacturer\u2019s protocol (ATP Kit SL, Key resources table) and bioluminescence was measured using a Tecan Spark spectrophotometer. In Figure 3, LB medium was supplemented with 1 mM calcium or 0.5 mM EDTA for the controls.\n\n### Absolute quantification of bacteria and assessment of viability\n\nGrowth culture was set up as described above and after 4 hr (ATP peak), samples were taken to quantify bacteria and assess viability. Bacteria were diluted in PBS and stained using the Cell Viability Kit with BD Liquid Counting Beads (Key resources table) according to the manufacturer\u2019s protocol. In brief, 100 \u00b5l of diluted bacterial growth culture was stained with 1 \u00b5l TO dye, 1 \u00b5l PI dye, and 10 \u00b5l of counting beads were added. The sample was acquired on a CytoFlex S (Beckman Coulter), setting the thresholds for the TO- and the PI-channel to 1000 and analysis was done with FlowJo software (Key resources table). Bacterial biomass was calculated to bacteria/ml culture according to the manufacturer\u2019s protocol.\n\n### Transformation of E. coli PS\n\nThe Keio collection (Key resources table) E. coli PS was aerobically grown in LB medium O/N (16 hr/37\u00b0C/200 rpm). 0.5 ml O/N culture was diluted in 35 ml fresh LB medium and incubated until OD600 was 0.35\u20130.45. Cultures were chilled in ice-water and washed two times with ice-cold 20 ml ultrapure water (Thermo Fisher Scientific, cat# 10977035) (20 min/4\u00b0C/3200\u00d7g). The supernatant was carefully decanted, and the bacterial pellet was gently resuspended by pipetting (no vortex). After the final wash, the pellet was resuspended in 240 \u00b5l ice-cold ultrapure water and kept on ice until EP. 80 \u00b5l of ice-cold bacterial cells were mixed with 1 \u00b5l plasmid (pBAD28==pEMPTY or pHND10==pAPY, 100\u2013200 ng, Key resources table) in chilled 0.1 cm cuvettes (Bio-Rad, cat# 1652089) and immediately electroporated (voltage = 1.8 kV, capacitance = 25 \u00b5F, resistance = 200 \u03a9). Directly after EP, 1 ml of warm LB medium was added to the cuvette, bacteria were transferred to a tube containing 10 ml pre-warmed LB medium and cultivated for 1 hr at 37\u00b0C. Then, bacteria were dispersed on LB agar plates supplemented with ampicillin (100 \u00b5g/ml) and incubated at 37\u00b0C. The next day, three colonies were picked, streaked on a new ampicillin supplemented LB agar plate, and incubated for 24 hr. The following day, two cryostocks were made from single colonies in LB medium supplemented with 20% glycerol.\n\n### Bacteria injection sepsis model\n\nThe Keio collection (Key resources table) E. coli PS transformed with either pEMPTY or pAPY was aerobically grown O/N (16 hr/37\u00b0C/200 rpm) in 20 ml LB medium supplemented with ampicillin (100 \u00b5g/ml). PS+pEMPTY and PS+pAPY were washed with PBS (20 min/22\u00b0C/3200\u00d7g) and resuspended in 20 ml fresh LB medium supplemented with ampicillin (100 \u00b5g/ml). To induce the apyrase, L-arabinose (0.03%, Sigma-Aldrich, cat# A3256-25G) was added. After 3 hr, bacteria were washed, resuspended in PBS supplemented with L-arabinose (0.03%) and 2\u00d7109 colony forming units were injected i.a. ATP in bacteria cultures and in the abdominal fluid were assessed using the same assay as described above (ATP Kit SL, Key resources table). Mice were evaluated for postoperative well-being every 4 hr as described above. After 4 and 8 hr and when the score reached specific criteria (for the survival experiment), animals were sacrificed using pentobarbital (150 mg/kg body weight) followed by organ collection.\n\n### Collection of abdominal fluid, blood, and organs\n\nAfter pentobarbital injection, the mice were placed on a surgical tray, fixed, the abdomen was shaved, the abdominal skin was disinfected with Betadine and the skin (but not peritoneum) was cut. Abdominal cells were isolated as described elsewhere with some modifications (Ray and Dittel, 2010). In brief, a 22 G peripheral IV catheter was inserted into the abdominal cavity through the peritoneum. The abdominal cavity was flushed two times with 5 ml MACS buffer (PBS supplemented with 3% FBS [Gibco, cat# 10500-064], 2% HEPES [Sigma-Aldrich, cat# H0887-100ml], and 2 mM EDTA [Sigma-Aldrich, cat# E5134-500G]). The first 5 ml were used to flush the upper abdomen under pressure, and the second 5 ml, to flush the lower abdomen under pressure. Part of the aspirated fluid was used for aerobic plating, if needed, and the rest was centrifuged for 5 min at 700\u00d7g to pellet the abdominal cells for various downstream applications. To collect blood, the peritoneum was opened. 300 \u00b5l blood was collected from the inferior vena cava using a 22 G peripheral IV catheter and a 1 ml syringe, which was prefilled with 30 \u00b5l 2 mM EDTA. Before organ collection (lungs, liver, kidney, and spleen), the mouse was flushed with 5 ml PBS. Organs were excised and used for downstream processing.\n\n### Digestion of organs and preparation of single-cell suspension\n\nHarvested organs were digested (Key resources table; kidney and lungs: 1 mg/ml Col I+1 mg/ml Col IV+1 mg/ml Col D+0.1 mg/ml DNase I in DMEM [Gibco, cat# 31966-047]+3% FBS for 30 min; liver: 1 mg/ml Col IV+0.1 mg/ml DNase I in DMEM+3% FBS for 20 min) at 37\u00b0C with a spinning magnet or gently pushed through a 100 \u00b5m mesh (spleen). After washing with MACS buffer (5 min/4\u00b0C/700\u00d7g), erythrocytes were lysed using self-made RBC buffer (90 g NH4Cl, 10 g KHCO3, 370 mg EDTA in 1 l ddH2O for 10\u00d7 stock). Cells were washed again and stained as described below.\n\n### Staining of cells and flow cytometry\n\nFirst, viability dye (Key resources table) and Fc-block (Key resources table) were diluted in PBS and cells were incubated for 20 min at 4\u00b0C in the dark. Cells were washed with MACS buffer and surface staining was done with the listed antibody cocktail:\n\nfor 20 min at 4\u00b0C in the dark. Cells were washed again and resuspended in MACS buffer for acquisition on an LSR-Fortessa (BD Biosciences). Analysis was done with FlowJo software (Key resources table) and OMIQ web-based analysis platform (https://www.omiq.ai/). To preserve the global structure of abdominal cell populations, uniform manifold approximation and projection was used as dimensionality reduction technique and cell populations were defined using FlowSOM clustering algorithm (Van Gassen et al., 2015).\n\n### Absolute quantification of bacteria by plating\n\nTo count bacteria in isolated abdominal fluid, blood, or growth cultures, serial dilutions were done (1 to 1:100,000) and 50 \u00b5l of each dilution was streaked on LB agar plates and aerobically incubated. Plates which had between 20 and 200 colony forming units were used for quantification.\n\n### Collection of OMV and ATP measurement of OMV\n\nE. coli PS or hypervesiculation mutants from the Keio collection were grown in LB medium for 5 hr, O/N (16 hr) or 24 hr at 37\u00b0C and 200 rpm. Bacteria cultures were then centrifuged (20 min/4\u00b0C/3200\u00d7g) to pellet bacteria. The supernatant was filtered through a 0.45 \u00b5m PES filter (Key resources table) and ultracentrifuged (1.5 hr/4\u00b0C/150,000\u00d7g) to pellet OMV. When ATP within OMV was measured, OMV were washed in PBS and directly stored at \u201380\u00b0C. ATP was quantified using a luciferin-luciferase-based assay according to the manufacturer\u2019s protocol (Microbial ATP Kit HS, Key resources table) and bioluminescence was measured using Tecan Spark spectrophotometer.\n\nIf OMV were used for characterization or i.a. injection, first ultracentrifugation was followed by a density gradient ultracentrifugation using OptiPrep (Iodixanol, STEMCELL Technologies, cat# 07820). OMV were resuspended in 50% OptiPrep and OptiPrep gradient (10%, 20%, 30%, 40%, 45%, 50%) was made in underlay technique starting with the 10% layer. Samples were ultracentrifuged (16 hr/4\u00b0C/150,000\u00d7g) and six fractions (fractions 1, 2, 3a, 3b, 4, and 5) were defined. Fractions were washed separately with PBS (1.5 hr/4\u00b0C/150,000\u00d7g) and the amount of OMV was determined measuring protein concentration using BCA assay according to the manufacturer\u2019s protocol (Thermo Fisher Scientific, cat# 23227). For experiments, only OMV from fraction 3 were used, which were washed with PBS (1.5 hr/4\u00b0C/150,000\u00d7g), resuspended in PBS, and stored at \u201380\u00b0C until further processing.\n\n### EP and staining of OMV\n\nIf EP and staining of OMV was performed, OMV were thawed, pelleted (1.5 hr/4\u00b0C/150,000\u00d7g), the pellet was resuspended in 720 \u00b5l EP buffer (500 mM sucrose and 1 ml glycerol in 10 ml ultrapure water) and kept on ice. This suspension was mixed with either 80 \u00b5l EP buffer (control) or 80 \u00b5l 10 mM ATP (or ATP\u03b3s for RNA sequencing experiment) (Key resources table), filled in chilled 0.4 mm EP cuvettes (Bio-Rad, cat# 1652088) and immediately electroporated (voltage = 1100 V, capacitance = 50 \u00b5F, resistance = 100 \u03a9). After EP, the OMV were 1:1 diluted in warm PBS and kept at 37\u00b0C for 20 min. DiI (Key resources table) was added 1:100 to the sample during the incubation time. OMV suspension was then washed with PBS (1.5 hr/4\u00b0C/150,000\u00d7g).\n\n### OMV injection sepsis model\n\nAfter the final wash in PBS (see above), OMV were resuspended in NaCl 0.9% and filtered through a 0.45 \u00b5m centrifuge filter tube (Sigma-Aldrich, cat# CLS8162-96EA). The final OMV suspension was quantified using a BCA assay. 25 \u00b5g of either ATP-loaded OMV or empty OMV were i.a. injected and mice were evaluated as described above. After 1 hr, the animal was sacrificed using pentobarbital followed by organ collection. Tissue digestion and flow cytometry was done as described above.\n\n### Assessment of ATP release by OMV\n\nOMV were electroporated as described above. After washing in PBS (1.5 hr/4\u00b0C/150,000\u00d7g), the OMV pellet was resuspended in 6 ml warm PBS and incubated at 37\u00b0C. At baseline, after 1, 3, 5, 10, and 24 hr, 1 ml was taken and washed with PBS (1.5 hr/4\u00b0C, 150,000\u00d7g). The OMV pellet was then resuspended in 200 \u00b5l PBS to assess protein concentration using a BCA assay, and ATP in OMV was quantified using a luciferin-luciferase-based assay according to the manufacturer\u2019s protocol (Intracellular ATP Kit HS, Key resources table). Bioluminescence was measured using a Tecan Spark spectrophotometer.\n\n### SDS-PAGE, protein staining, and western blot\n\n20 \u00b5l of diluted E. coli culture and 20 \u00b5l of the different OMV fractions (except fraction 1, since no protein could be detected) were diluted 1:1 with Laemmli/\u03b2ME (Laemmli buffer solution containing 5% \u03b2-mercaptoethanol). The mixture was heated at 100\u00b0C for 5 min, shortly centrifuged at 13,000 rpm and loaded on Mini-PROTEAN TGX Gels (Bio-Rad, cat# 4561094). Bio-Rad marker (6 \u00b5l) was added to one well and the gel was run at 100 V for 1.5 hr. The gel was then either directly stained with Coomassie blue or transferred to a membrane.\n\nCoomassie blue staining was done as follows: The gel was washed in ddH2O and the staining solution (Coomassie blue 0.1%, 40% ethanol, 10% acetic acid) was heated for 15 s in the microwave. Warm staining solution was added to the gel and gently shaken for 15 min. Then, staining solution was removed, and the gel was washed with ddH2O. Destaining solution (10% ethanol, 7.5% acetic acid) was added for 1 hr, exchanged and left O/N.\n\nTo transfer the proteins to a membrane, iBlot2 (Invitrogen) was used. Membranes were then blocked with 4% milk/PBS for 1 hr. FtsZ-antibody (1:200, Key resources table) and ompF-antibody (1:500, Key resources table) were added and incubated O/N at 4\u00b0C. The next day, membranes were washed with PBS Tween (PBST, 0.05%) three times for 5 min. Secondary fluorescent antibody was then added in milk (1:10,000, Key resources table) and membrane was incubated for 1 hr. The membrane was washed again with PBST three times for 5 min and then scanned using a Licor Odyssey.\n\n### Nanoparticle tracking analysis\n\nSize distribution of OMV was analyzed using the NanoSight NS300 Instrument (Malvern Panalytical, 405 nm laser) according to the manufacturer\u2019s protocols. OMV were resuspended in PBS and serial dilutions (1 to 1:100,000) were used to find suitable concentrations. Each experimental sample was analyzed five times. PBS was used to flush the system between the samples and to assess background. For each sample, the relative amount of OMV and the OMV size was recorded, which resulted in a size distribution curve. NTA 2.3 software was used to analyze the data and the following script was used for acquisition (Gheinani et al., 2018): SETTEMP 25; CAMERAON; CAMERAGAIN 12; CAMERALEVEL 11; REPEATSTART; SYRINGLOAD 100; DELAY 10; SYRINGSTOP; DELAY 15; CAPTURE 60; DELAY 1; REPEAT 4; SETTEMP OFF; PROCESSINGLESETTING; EXPORTRESULTS.\n\n### Electron microscopy negative staining\n\nFor imaging of negatively stained samples, 5 \u00b5l of OMV suspension were adsorbed on glow discharged carbon-coated 400 mesh copper grids (Plano) for 1\u20135 min. After washing the grids three times by dipping in ultrapure water, the grids were stained with 2% uranyl acetate solution (Electron Microscopy Science) in water for 45 s. The excess fluid was removed by gently pushing the grids sideways onto filter paper. The grids were then examined with an FEI Tecnai Spirit transmission electron microscope at 80 kV, which was equipped with a Veleta TEM CCD camera (Olympus).\n\n### Immunofluorescent microscopy\n\nOne hour after i.a. injection of DiI-stained OMV, lungs were digested as described above. Single-cell suspension was either fixed and imaged or live cells were imaged. For the fixed approach, single-cell suspension was immunolabeled with FITC-tagged anti-Ly-6G (Key resources table) at 1:100 dilution for 20 min at 4\u00b0C in the dark to distinguish neutrophils. Cells were washed once with PBS and applied onto glass slides using Cytospin (Thermo Shandon) for 5 min (1800 rpm). Slides were air-dried for 2 min, washed with PBS, and fixed using 4% paraformaldehyde solution for 10 min. Cell nuclei were stained with DAPI (Key resources table) at 1:5000 concentration in IF buffer (0.25% BSA, 0.1% Triton X-100 in PBS) for 1.5 hr at room temperature in the dark. After washing 3\u00d75 min with IF buffer, the slides were covered and sealed with nail polish.\n\nIf live cells were imaged, single-cell suspension was concurrently immunolabeled and stained with Hoechst 33342 (Key resources table) at 1:1000 dilution for cell nuclei, FITC-tagged anti-Ly-6G (Key resources table) at 1:100 dilution for neutrophils and LysoTracker Deep Red (Key resources table) at 1:1000 dilution for lysosomes for 30 min at 37\u00b0C in the dark. Cells were washed with MACS buffer and immediately imaged.\n\nFluorescence images were taken using either a Zeiss LSM710 or a Zeiss LSM980 inverted confocal laser scanning microscope equipped with a \u00d763 (NA1.4) oil immersion objective. Detector wavelength cutoffs were set to minimize signal crosstalk between fluorophores.\n\n### RNA isolation from pulmonary neutrophils\n\nOne hour after OMV i.a. injection, lungs were digested as described above. One animal had to be excluded, since the surgical time point has been missed. Neutrophils were isolated from single-cell suspension using Streptavidin MicroBeads (Miltenyi Biotec, cat# 130-048-101) according to the manufacturer\u2019s protocol. In brief, cells were counted and incubated with a biotinylated anti-mouse Ly-6G antibody (Key resources table) for 20 min at 4\u00b0C. After washing, Streptavidin MicroBeads were added and incubated for 20 min at 4\u00b0C. After washing, a MidiMACS separator (Miltenyi Biotec, cat# 130-042-302) together with an LS column (Miltenyi Biotec, cat# 130-042-401) was used to isolate neutrophils and purity of positively selected neutrophils as well as unlabeled cells was assessed by flow cytometry (Key resources table: Ly-6C PE-Cy7, CD11b APC). Neutrophils were pelleted, and supernatant was removed by pipetting. Neutrophils were snap-frozen and stored at \u201380\u00b0C. RNA was isolated directly from frozen neutrophils pellets using Promega ReliaPrep RNA Cell Miniprep System (Key resources table) according to the manufacturer\u2019s protocol and quality was assessed using Bioanalyzer and RNA 6000 Nano Kit (RQN 5.8\u20139.6, median 7.55). Samples were snap-frozen and stored at \u201380\u00b0C until further processing by the Next Generation Sequencing Platform, University of Bern, https://www.ngs.unibe.ch/.\n\n### RNA sequencing\n\nRNA sequencing libraries were prepared using Lexogen CORALL total RNA-seq library kit according to the manufacturer\u2019s protocol, which includes an rRNA depletion step. Sequencing was performed on an Illumina NovaSeq6000 SP flow cell, 2\u00d750 cycles.\n\n#### Alignment and quantification\n\nThe resulting fastq files were quality controlled using fastqc v0.11.9 (Babraham Bioinformatics, 2024). Forward R1 reads were debarcoded by moving the first 12 nucleotides on the 5' end to the name of the read via fastp v0.19.5 (Chen et al., 2018). The alignment was performed with STAR v2.7.10a_alpha_220818 (Dobin et al., 2013). First, a genome index was generated from the mouse reference genome GRCm39 ENSEMBL v108. Second, the reads were then aligned to the reference using STAR with default parameters. Gene read counts were quantified using featureCounts from subread v2.0.1 using the mm108 GTF annotation with default parameters (Liao et al., 2014).\n\n#### Data visualization\n\nThe data from the read count matrix was normalized to reads per million and log-transformed, x \u2192 log(1+x). The resulting data was used for principal component analysis, which was performed with the R function prcomp and visualized with a custom script using ggplot2 (Wickham, 2016).\n\n#### Differential gene expression\n\nDifferentially expressed genes were computed using the R package DESeq2 (Love et al., 2014).\n\n#### Pathway enrichment analysis\n\nThe differentially expressed genes obtained from DESeq2 with an adjusted p-value below 0.01 were uploaded to Metascape for pathway analysis on December 5, 2023 (Zhou et al., 2019).\n\n#### Heatmaps\n\nThe lists of genes of the pathways of interest were obtained from genome.jp for the KEGG pathways and using the R function gconvert from the R package gprofiler2 otherwise (Kolberg and Raudvere, 2023). The log-transformed data was used and the heatmaps were done with the heatmap.2 function of the R package gplots with the hierarchical cluster method \u2018complete\u2019 using Pearson\u2019s correlation distance (Warnes et al., 2022).\n\n#### Volcano plot\n\nThe volcano plots were performed with the R package ggplot2 and a custom R script (Wickham, 2016).\n\n### Statistical analysis\n\nDescriptive statistics and statistical tests were performed using Prism software (Key resources table) or R and RStudio (Key resources table). For differences between two groups a t-test was applied when data was normally distributed (parametric). Otherwise, a Wilcoxon rank-sum test was used (nonparametric). For differences between more than two groups, a one-way ANOVA followed by a Tukey post hoc test (parametric), or a Kruskal-Wallis test followed by a pairwise Wilcoxon rank-sum test with Benjamini-Hochberg correction (nonparametric) was used. For survival analyses, a log-rank test was used. No one-tailed tests were used. No method was used to predetermine experimental sample sizes. A linear model and the correlation between ATP and OD600 in Figure 2 and Figure 3 were computed using the R functions lm and cor.test with the following parameters:\n\nstats::cor.test(data$variableATP, data$variablegrowth, alternative = \"two.sided\", method = \"pearson\") summary(stats::lm(variableATP~variablegrowth, data = data)).\n\np<0.05 (P==padj, when correction for multiple testing was necessary) was considered significant in all statistical analyses unless stated otherwise in the figure legend. Significant differences are in italic.\n",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kiyoshi Takeda, Osaka University Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96678.3.sa0](https://doi.org/10.7554/eLife.96678.3.sa0)\n\nThis fundamental study advances our understanding of the role of bacterial-derived extracellular ATP in the pathogenesis of sepsis. The evidence supporting the conclusions is compelling, although not all concerns from a previous round of reviews were adequately addressed. The work will be of broad interest to researchers on microbiology and infectious diseases.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96678.3.sa1](https://doi.org/10.7554/eLife.96678.3.sa1)\n\nSummary:\n\nExtracellular ATP represents a danger-associated molecular pattern associated to tissue damage and can act also in an autocrine fashion in macrophages to promote proinflammatory responses, as observed in a previous paper by the authors in abdominal sepsis. The present study addresses an important aspect possibly conditioning the outcome of sepsis that is the release of ATP by bacteria. The authors show that sepsis-associated bacteria do in fact release ATP in a growth dependent and strain-specific manner. However, whether this bacterial derived ATP play a role in the pathogenesis of abdominal sepsis has not been determined. To address this question, a number of mutant strains of E. coli has been used first to correlate bacterial ATP release with growth and then, with outer membrane integrity and bacterial death. By using E. coli transformants expressing the ATP-degrading enzyme apyrase in the periplasmic space, the paper nicely shows that abdominal sepsis by these transformants results in significantly improved survival. This effect was associated to the reduction of small peritoneal macrophages and CX3CR1+ monocytes, and increase in neutrophils. To extrapolate the function of bacterial ATP from the systemic response to microorganisms, the authors exploited bacterial OMVs either loaded or not with ATP to investigate the systemic effects devoid of living microorganisms. This approach showed that ATP-loaded OMVs induced degranulation of neutrophils after lysosomal uptake, suggesting this mechanism could contribute to sepsis severity.\n\nStrengths:\n\nThe most compelling part of the study is the analysis of E. coli mutants to address different aspects of bacterial release of ATP that could be pathogenically relevant during systemic dissemination of bacteria in the host.\n\nWeaknesses:\n\nAs pointed out in the limitations of the study whether ATP-loaded OMVs could provide a mechanistic proof of the pathogenetic role of bacteria-derived ATP independently of live microorganisms in sepsis is interesting but not definitively convincing. It could be useful to see whether degranulation of neutrophils is differently induced also by apyrase-expressing vs control E. coli transformants. Also, the increase of neutrophils in bacterial ATP-depleted abdominal sepsis, which has better outcome than \"ATP-proficient\" sepsis, seems difficult to correlate to the hypothesized tissue damage induced by ATP delivered via non-infectious OMVs. Is neutrophils count affected by ATP delivered via OMVs? Probably a comparison of cytokine profiles in the abdominal fluids of E. coli and OMV treated animals could be helpful in defining the different responses induced by OMV-delivered vs bacterial-released ATP.\n\nThe analyses performed on OMV treated versus E. coli infected mice are not immediately related and difficult to combine when trying to draw a pathogenetic hypothesis for bacterial ATP in sepsis.\n\nIt's not clear why lung neutrophils were used for RNAseq.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96678.3.sa2](https://doi.org/10.7554/eLife.96678.3.sa2)\n\nSummary:\n\nIn their manuscript, Daniel Spari et al. explored the dual role of ATP in exacerbating sepsis, revealing that ATP from both host and bacteria significantly impacts immune responses and disease progression.\n\nStrengths:\n\nThe study meticulously examines the complex relationship between ATP release and bacterial growth, membrane integrity, and how bacterial ATP potentially dampens inflammatory responses, thereby impairing survival in sepsis models. Additionally, this compelling paper implies a concept that bacterial OMVs act as vehicles for the systemic distribution of ATP, influencing neutrophil activity and exacerbating sepsis severity.\n\nWeaknesses:\n\n(1) The researchers extracted and cultivated abdominal fluid on LB agar plates, then randomly picked 25 colonies for analysis. However, they didn't conduct 16S sequencing on the fluid itself. It's worth noting that the bacterial species present may vary depending on the individual patients. It would be beneficial if the authors could specify whether they've verified the existence of unculturable species capable of secreting high levels of Extracellular ATP.\n\n(2) Do mice lacking commensal bacteria show a lack of Extracellular ATP following cecal ligation puncture?\n\n(3) The authors isolated various bacteria from abdominal fluid, encompassing both Gram-negative and Gram-positive types. Nevertheless, their emphasis appeared to be primarily on the Gram-negative E. coli. It would be beneficial to ascertain whether the mechanisms of Extracellular ATP release differ between Gram-positive and Gram-negative bacteria. This is particularly relevant given that the Gram-positive bacterium E. faecalis, also isolated from the abdominal fluid, is recognized for its propensity to release substantial amounts of Extracellular ATP.\n\n(4) The authors observed changes in the levels of LPM, SPM, and neutrophils in vivo. However, it remains uncertain whether the proliferation or migration of these cells is modulated or inhibited by ATP receptors like P2Y receptors. This aspect requires further investigation to establish a convincing connection.\n\n(5) Additionally, is it possible that the observed in vivo changes could be triggered by bacterial components other than Extracellular ATP? In this research field, a comprehensive collection of inhibitors is available, so it is desirable to utilize them to demonstrate clearer results.\n\n(6) Have the authors considered the role of host-derived Extracellular ATP in the context of inflammation?\n\n(7) The authors mention that Extracellular ATP is rapidly hydrolyzed by ectonucleotases in vivo. Are the changes of immune cells within the peritoneal cavity caused by Extracellular ATP released from bacterial death or by OMVs?\n\n(8) In the manuscript, the sample size (n) for the data consistently remains at 2. I would suggest expanding the sample size to enhance the robustness and rigor of the results.\n",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a4f9bc3f-b455-4ba2-ace0-7e065c6f0176",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C1",
+      "claim": "Sepsis causes millions of deaths per year worldwide and is a current global health priority declared by the WHO.",
+      "claim_type": "EXPLICIT",
+      "source": "Sepsis causes millions of deaths per year worldwide and is a current global health priority declared by the WHO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO declaration and global health statistics",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "a1764a82-75ff-461b-b9f4-0d4e15baa234",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C2",
+      "claim": "Extracellular adenosine triphosphate (ATP) is released by inflamed host cells and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "An important mediator of inflammation is extracellular adenosine triphosphate (ATP) that is released by inflamed host cells and tissues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge about ATP release",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "9aec25e6-611a-426b-bee1-821c35d51715",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C3",
+      "claim": "Bacteria release ATP in a strain-specific and growth-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "An important mediator of inflammation is extracellular adenosine triphosphate (ATP) that is released by inflamed host cells and tissues, and also by bacteria in a strain-specific and growth-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "c1b2cc48-a95f-4338-9fcf-a5e61feb6cc5",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C4",
+      "claim": "ATP release by E. coli is dependent on ATP synthase within the inner bacterial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Using genetic mutant strains of Escherichia coli (E. coli), we demonstrate that ATP release is dependent on ATP synthase within the inner bacterial membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data using genetic mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "1de03899-527b-4f81-b437-8bebb1e468c1",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C5",
+      "claim": "Impaired integrity of the outer bacterial membrane contributes to ATP release and is associated with bacterial death.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, impaired integrity of the outer bacterial membrane notably contributes to ATP release and is associated with bacterial death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from porin mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "aca9804b-7153-42f5-8a10-7a63be465e74",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C6",
+      "claim": "Bacterial ATP suppresses local immune responses, resulting in reduced neutrophil counts and impaired survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Abrogating bacterial ATP release shows that bacterial ATP suppresses local immune responses, resulting in reduced neutrophil counts and impaired survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from apyrase-expressing bacteria in mouse model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "4c91a6b6-407d-4c31-9ff2-b2d39dc0f45a",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C7",
+      "claim": "Bacterial ATP has systemic effects via its transport in outer membrane vesicles (OMV).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, bacterial ATP has systemic effects via its transport in outer membrane vesicles (OMV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing ATP in OMV",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "49ffd95c-c5be-4dfc-95ea-a99e468c3d7e",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C8",
+      "claim": "ATP-loaded OMV are quickly distributed throughout the body.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP-loaded OMV are quickly distributed throughout the body and upregulated expression of genes activating degranulation in neutrophils, potentially contributing to the exacerbation of sepsis severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from OMV injection experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "a12b50f9-9daf-4f52-ac1b-2ed2b27ce159",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C9",
+      "claim": "ATP-loaded OMV upregulate expression of genes activating degranulation in neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP-loaded OMV are quickly distributed throughout the body and upregulated expression of genes activating degranulation in neutrophils, potentially contributing to the exacerbation of sepsis severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA sequencing data from pulmonary neutrophils",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "1a7d8e3d-f62c-4b4c-bc22-153bb41ae43e",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C10",
+      "claim": "11 million sepsis-related deaths were reported in 2017, accounting for 19.7% of all global deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "Worldwide, 11 million sepsis-related deaths were reported in 2017, which accounted for an estimated 19.7% of all global deaths (Rudd et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rudd et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "feec1cac-de1a-46bc-b807-0242f805984d",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C11",
+      "claim": "The World Health Organization has declared sepsis as a global health priority.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its high incidence and immense socio-economic burden, the World Health Organization (WHO) has declared sepsis as a global health priority (Reinhart et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Reinhart et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "109f833a-9c78-42d7-9941-5f50a35ec967",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C12",
+      "claim": "Sepsis is defined as life-threatening organ dysfunction caused by an imbalanced host immune response to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Sepsis is defined as life-threatening organ dysfunction caused by an imbalanced host immune response to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established medical definition",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "19ed34ab-d8a9-4b70-a6d4-e022e4a6bc7e",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C13",
+      "claim": "Despite the use of broad-spectrum antibiotics, lethality from sepsis remains high.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibiotic treatment remains the main approach to treat sepsis; however, despite the use of broad-spectrum antibiotics, lethality remains high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical knowledge and literature",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "48e571c5-0c97-4f7b-a790-7b797fefedde",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C14",
+      "claim": "Most trials inhibiting cytokine responses or Toll-like receptors have failed.",
+      "claim_type": "EXPLICIT",
+      "source": "Until recently however, most trials inhibiting cytokine responses or Toll-like receptors failed, indicating that alternative approaches for immunomodulation are required (Cao et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cao et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "1b176781-6a74-46a8-b2c4-2b6967d52f27",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C15",
+      "claim": "Extracellular ATP critically modulates inflammatory and immune responses by activating ionotropic P2X and metabotropic P2Y receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that adenosine triphosphate (ATP), as soon as it is released into the extracellular space, critically modulates inflammatory and immune responses (Di Virgilio et al., 2020; Eltzschig et al., 2012) by activating ionotropic P2X and metabotropic P2Y receptors (Burnstock, 2020; Junger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "bf314258-f936-4927-ba61-617e04d69ada",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C16",
+      "claim": "Purinergic signaling critically alters immune responses during sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, such purinergic signaling critically alters immune responses during sepsis (Dosch et al., 2019; Ledderose et al., 2016; Spari and Beldi, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "5b28115f-de5f-4c3b-976f-b547c1c9a474",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C17",
+      "claim": "Connexin-dependent release of ATP by macrophages initiates an autocrine loop of over-activation, resulting in altered local and systemic cytokine secretion that exacerbates abdominal sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we have described that the connexin-dependent release of ATP by macrophages initiates an autocrine loop of over-activation, resulting in altered local and systemic cytokine secretion, which exacerbates abdominal sepsis (Dosch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dosch et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "9be4aae1-2772-4e78-88e1-067ea3e3b71d",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C18",
+      "claim": "Bacteria release ATP into the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been discovered that also bacteria release ATP into the extracellular space (Mempin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mempin et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "bdb0be52-6796-42d8-9536-4bb4c8b44abf",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C19",
+      "claim": "ATP release has been shown for E. coli, K. pneumoniae, E. faecalis, and S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP release has been shown for a variety of bacteria including the sepsis-associated Escherichia coli (E. coli) and Klebsiella pneumoniae (K. pneumoniae) from the Proteobacteria phylum or Enterococcus faecalis (E. faecalis) and Staphylococcus aureus (S. aureus) from the Firmicutes phylum (Diekema et al., 2019; Hironaka et al., 2013; Iwase et al., 2010; Mempin et al., 2013; Mure\u0219an et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "ee5d9fa5-5ad3-4048-ae53-50ef8bc23adb",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C20",
+      "claim": "ATP released by mutualistic bacteria in the intestine modulates local cellular and secretory immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In colonized compartments such as the intestine, it has been shown that ATP released by mutualistic bacteria modulates local cellular and secretory immune responses (Atarashi et al., 2008; Perruzza et al., 2017; Proietti et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "a35f48c4-a7d2-49a2-b0eb-f821c9b6254c",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C21",
+      "claim": "Bacterial ATP release in the mouth leads to biofilm dispersal and periodontitis.",
+      "claim_type": "EXPLICIT",
+      "source": "and in the mouth, bacterial ATP release leads to biofilm dispersal and periodontitis (Ding et al., 2016a; Ding and Tan, 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ding et al., 2016a and Ding and Tan, 2016b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "f60b91dc-62be-4be5-b23f-9aa5a65b4e2e",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C22",
+      "claim": "Twenty-five different colonies were randomly picked from abdominal fluid of patients with abdominal sepsis and analyzed by whole 16S-rRNA Sanger sequencing, resulting in 12 different bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-five different colonies were randomly picked and analyzed by whole 16S-rRNA Sanger sequencing, which resulted in 12 different bacterial species (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data and Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "0bea7817-8851-4f97-9d02-1be690980e40",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C23",
+      "claim": "A growth-dependent release of ATP was observed in all assessed sepsis-associated bacterial species, peaking during exponential growth phase.",
+      "claim_type": "EXPLICIT",
+      "source": "A growth-dependent release of ATP was observed in all species, peaking during exponential growth phase (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "5c0efa34-48d8-4830-831a-b87bf5e82328",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C24",
+      "claim": "ATP release was detected across all assessed bacterial species from patients.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP release was detected across all assessed species (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "87a9e738-071e-4e59-9159-9289e2c19793",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C25",
+      "claim": "In the mouse model, Proteobacteria and Firmicutes phyla were predominating, similar to human samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to human samples, Proteobacteria and Firmicutes phyla were predominating (Figure 1F, see Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 1F and 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "a15f7649-5fe7-43ef-9304-c3f90bc086a7",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C26",
+      "claim": "In the mouse model, E. coli released notably more cumulative ATP compared to E. faecalis and S. aureus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse model, E. coli released notably more cumulative ATP compared to E. faecalis and S. aureus (Figure 1G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 1G and 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "225bf7be-a766-48ca-95dc-5ce75c332c83",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C27",
+      "claim": "The bacterial species assessed in humans and mice differed on the strain level, confirming that ATP release is strain-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial species assessed in humans and mice (E. coli, E. faecalis, S. aureus) differed on the strain level (sequences deposited, see Data availability statement) confirming that ATP release is strain-specific (Mempin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Mempin et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "7684dced-5b89-40ef-8027-beebb24459b3",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C28",
+      "claim": "Mutations in subunits of ATP synthase were generally associated with significantly lower cumulative ATP release compared to mutations in cytochrome bo3 oxidase subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We first noticed that mutations in subunits of ATP synthase, which is the key enzyme of ATP generation, were generally associated with significantly lower cumulative ATP release compared to mutations in cytochrome bo3 oxidase subunits (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "924706ba-22e7-4798-b0fe-24afc019a184",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C29",
+      "claim": "Cumulative ATP release and cumulative growth were positively correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined cumulative growth (AUC growth) in addition to cumulative ATP release and indeed, cumulative ATP release and cumulative growth were positively correlated (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data and statistical analysis shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "e8377846-4f41-4409-b9d7-fd82d0f7ff4a",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C30",
+      "claim": "Peak ATP and peak growth (OD600) are positively correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "similar to peak ATP and peak growth (OD600) that are positively correlated (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "aba4d24c-d796-46b2-85c8-fcdb58ae65fb",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C31",
+      "claim": "Cumulative ATP release from the porin mutants were notably different compared to the parental strain, being lowest in \u0394ompC and highest in \u0394ompF.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulative ATP release (AUC ATP) from the porin mutants were notably different compared to the PS, being lowest in \u0394ompC and highest in \u0394ompF (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 3B and 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "418edaac-9422-4d2f-921a-cd9a0b963bf9",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C32",
+      "claim": "There was a strong negative correlation between the individual peak of released ATP and growth at the same time point.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a strong negative correlation between the individual peak of released ATP (marked by the red line in Figure 3B) and growth at the same time point (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data and statistical analysis shown in Figures 3B and 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "9ff24b0c-f542-4b73-b26b-39bffa7ff101",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C33",
+      "claim": "Outer membrane integrity and bacterial death are significantly increased in \u0394ompF compared to \u0394ompC and the parental strain after 4 hr of culturing.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, outer membrane integrity and bacterial death are significantly increased in \u0394ompF compared to \u0394ompC and the PS after 4 hr (ATP peak) of culturing (Figure 3E and F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figures 3E and 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "30850543-eb9c-486c-8219-f8c95443f9cd",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C34",
+      "claim": "Destabilization of the outer bacterial membrane results in bacterial death that is associated with ATP release.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude from these data that destabilization of the outer bacterial membrane (as observed with the \u0394ompF mutant) results in bacterial death that is associated with ATP release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data on porin mutants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "87083d64-da6b-4700-b54e-ffe7a06d1b9e",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C35",
+      "claim": "Apyrase induction resulted in a significant reduction of ATP release in PS+pAPY compared to PS+pEMPTY.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, apyrase induction resulted in a significant reduction of ATP release in PS+pAPY, compared to PS+pEMPTY (Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4\u2014figure supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "c7484cd7-39d5-4401-bc07-1f5930af5b57",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C36",
+      "claim": "ATP release was abrogated in the bacteria cultures that were used for injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereby ATP release was abrogated in the bacteria cultures that were used for injection (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "0ddaead1-225e-467d-b550-ba484cdb7389",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C37",
+      "claim": "No difference in ATP levels was detected in abdominal fluid after 4 and 8 hr following bacterial injection.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, no difference in ATP levels was detected when ATP was measured directly in the abdominal fluid after 4 (Figure 4C) and 8 hr (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C and Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "0d173ff3-4089-4c61-8eb9-7e1e11d8342a",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C38",
+      "claim": "No differences in local or systemic bacterial counts were observed after 4 and 8 hr following bacterial injection.",
+      "claim_type": "EXPLICIT",
+      "source": "After both 4 (Figure 4D and E) and 8 hr (Figure 4\u2014figure supplement 1D and E), no differences in local or systemic bacterial counts were observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 4D, 4E, and Figure 4\u2014figure supplement 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "297df355-f76f-487b-9c4b-c5a78f137b79",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C39",
+      "claim": "Survival was significantly higher in the absence of bacterial ATP (PS+pAPY) compared to ATP-generating controls (PS+pEMPTY) after intraabdominal injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, despite similar bacterial counts, the survival was significantly higher in the absence of bacterial ATP (PS+pAPY) compared to ATP-generating controls (PS+pEMPTY) after i.a. injection (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "67e61bea-972f-4bae-9f1b-77b5d09a2f77",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C40",
+      "claim": "A disappearance reaction of large peritoneal macrophages (LPM) was observed after E. coli injection compared to sham controls after 4 and 8 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, a disappearance reaction of large peritoneal macrophages (LPM) was observed after both, E. coli PS+pEMPTY and E. coli PS+pAPY, i.a. injection compared to sham controls after 4 (Figure 4H) and 8 hr (Figure 4\u2014figure supplement 1F; Ghosn et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4H and Figure 4\u2014figure supplement 1F, and citation to Ghosn et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "e2b57b96-749a-4fd5-ba35-3883d0619588",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C41",
+      "claim": "The number of small peritoneal macrophages (SPM) and CX3CR1pos monocytes was significantly reduced, whereas neutrophils were significantly increased in bacterial ATP-depleted abdominal sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, the number of small peritoneal macrophages (SPM) and CX3CR1pos monocytes was significantly reduced, whereas neutrophils were significantly increased almost up to 8 hr (Figure 4I, Figure 4\u2014figure supplement 1G) in bacterial ATP-depleted abdominal sepsis (PS+pAPY).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 4I and Figure 4\u2014figure supplement 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "a47e297d-59b8-4e18-a0ee-efb23a87fa73",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C42",
+      "claim": "The \u0394nlpI and \u0394tolB strains showed a 20- and 30-fold increase of OMV when compared with the parental strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394nlpI and \u0394tolB strains showed a 20- and 30-fold increase of OMV when compared with the PS (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "d00c20ae-9cb1-493b-adae-832489aeec17",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C43",
+      "claim": "ATP was detected in OMV from all assessed strains at the individual peak of ATP release but only in minimal detectable levels after 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP was detected in OMV from all assessed strains at the individual peak of ATP release but only in minimal detectable levels after 24 hr (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "060621fc-8157-428f-be89-08c881756ed7",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C44",
+      "claim": "\u0394tolB OMV were equipped with outer membrane ompF but not cytoplasmic ftsZ, indicating that they are outer membrane derived.",
+      "claim_type": "EXPLICIT",
+      "source": "They were equipped with outer membrane ompF but not cytoplasmic ftsZ (Figure 5D), indicating that they are outer membrane derived.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "cb358a89-d5c3-4981-a8fb-4d173fe86a57",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C45",
+      "claim": "OMV were loaded with ATP using electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "OMV were loaded with ATP (Figure 5F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "aab3c7b5-d4f7-412a-b155-4063e42d2651",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C46",
+      "claim": "Over time, the amount of ATP in OMV decreased, especially at physiological (37\u00b0C) temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "and over time, the amount of ATP in OMV decreased, especially at physiological (37\u00b0C) temperature (Figure 5G) as opposed to 4\u00b0C (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5G and Figure 5\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "41954589-313f-475d-942c-29d0f9565650",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C47",
+      "claim": "Uptake of DiI-stained OMV by leukocytes in the abdominal fluid was independent of ATP cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "In the abdominal fluid, uptake of DiI-stained OMV by leukocytes was independent of ATP cargo (Figure 6B, Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 6B and Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "1e6ee9fa-382f-4b9b-9a4d-4caf13836d63",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C48",
+      "claim": "All major cell populations with phagocytic ability (LPM, SPM, neutrophils) were highly positive for OMV.",
+      "claim_type": "EXPLICIT",
+      "source": "and all major cell populations with phagocytic ability (LPM, SPM, neutrophils) were highly positive for OMV (Figure 6\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 6\u2014figure supplement 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "02c3c958-d76c-443b-9246-34601a6c6e78",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C49",
+      "claim": "LPM dramatically decreased, whereas neutrophils increased in response to OMV when compared to sham controls.",
+      "claim_type": "EXPLICIT",
+      "source": "LPM dramatically decreased, whereas neutrophils increased in response to OMV when compared to sham controls (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 6\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "10ea9f24-1b27-4777-99ad-40fd397332a5",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C50",
+      "claim": "Within 1 hr, DiI-stained OMV were distributed throughout the body and mainly taken up by neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "Within 1 hr, the DiI-stained OMV were distributed throughout the body and mainly taken up by neutrophils, with remarkable differences between organs (Figure 6\u2014figure supplement 3A and B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 6\u2014figure supplement 3A, B, and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "8238f999-8886-4c45-9c9d-8abdb962db9b",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C51",
+      "claim": "The highest ratio of OMVpos neutrophils compared to all other OMVpos cells was observed in the lung in an ATP-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest ratio of OMVpos neutrophils compared to all other OMVpos cells was observed in the lung in an ATP-independent manner (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "df11f98f-989b-4531-8001-2492bd7ef7b5",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C52",
+      "claim": "A strong co-localization of OMV with the endolysosomal compartment of pulmonary neutrophils was identified.",
+      "claim_type": "EXPLICIT",
+      "source": "A strong co-localization with the endolysosomal compartment of pulmonary neutrophils was identified (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscopy data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "e9c9abe3-8747-4001-9794-0ef828c78cc3",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C53",
+      "claim": "Uptake of ATP-loaded OMV resulted in a significantly different transcriptional activity compared to empty OMV in pulmonary neutrophils.",
+      "claim_type": "EXPLICIT",
+      "source": "Uptake of ATP-loaded OMV resulted in a significantly different transcriptional activity compared to empty OMV (Figure 6E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA sequencing data shown in Figure 6E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "1143ece0-e4ff-4730-8eed-3d6409bfc4c7",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C54",
+      "claim": "The strongest differences in transcriptional activity were found in lysosomal and neutrophil degranulation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest differences were found in lysosomal and neutrophil degranulation pathways (Figure 6F, Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA sequencing data shown in Figure 6F and Figure 6\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "93745e68-7ea7-4b91-8e00-122c6b8bc1d9",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C55",
+      "claim": "In the lysosomal pathway, transcripts for proteins involved in autophagosome-lysosome fusion, endosome to lysosome transport, or enzymatic cleavage were significantly higher expressed in response to ATP-loaded OMV.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lysosomal pathway, transcripts for proteins involved in autophagosome-lysosome fusion (Gabarap), endosome to lysosome transport (Hgsnat, Laptm5), or enzymatic cleavage (Capn1, Fuca1, Ctsb, Ctsd, Gba) were significantly higher expressed in response to ATP-loaded OMV when compared to empty OMV (Figure 6F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA sequencing data shown in Figures 6F and 6G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "fbb80b57-db01-4977-8b94-dfdbeec73cf2",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C56",
+      "claim": "Neutrophil degranulation was significantly increased in response to ATP-loaded OMV as indicated by increased expression of gene transcripts resulting in antibacterial activity and NETosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, neutrophil degranulation was significantly increased in response to ATP-loaded OMV as indicated by increased expression of gene transcripts resulting in antibacterial activity (Lyz2, S100a8, Camp) or NETosis (Tlr2, Itgb2) (Figure 6F and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA sequencing data shown in Figures 6F and 6H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "6ab18c2f-6ee8-4b68-bf64-e89a78de5fd9",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C57",
+      "claim": "ATP synthase is most likely dominant compared to cytochrome bo3 oxidase because of its non-redundant function for ATP generation and bacterial growth.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP synthase is most likely dominant compared to cytochrome bo3 oxidase because of its non-redundant function for ATP generation and bacterial growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data on mutants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "8a920d44-e711-4c9f-86a2-8f0cc9b3cd5d",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C58",
+      "claim": "Mutations in one of the cytochrome bo3 oxidase subunits cyoA, cyoC, or cyoD could be compensated by another subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in one of the cytochrome bo3 oxidase subunits cyoA, cyoC, or cyoD could be compensated by another subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing lower impact of these mutations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "5d4f11af-327d-47f8-b513-1a917478c5e2",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C59",
+      "claim": "Lower ATP release in the cyoB mutant is supported by the fact that cyoB harbors all three prosthetic groups of the cytochrome bo3 oxidase and is therefore indispensable for proper function.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by lower ATP release in the cyoB mutant, which harbors all three prosthetic groups of the cytochrome bo3 oxidase and is therefore indispensable for proper function (Tsubaki et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Tsubaki et al., 2000",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "26aa68b1-cbea-4ab3-8c79-0ca5a9af54fb",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C60",
+      "claim": "Deficiency in the bo3-type oxidase could be partially compensated by bd-type oxidases.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, deficiency in the bo3-type oxidase could be partially compensated by bd-type oxidases (Borisov et al., 2011; Grauel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Borisov et al., 2011 and Grauel et al., 2021",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "4049e7b7-ac8c-4474-a620-d6ba6f650beb",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C61",
+      "claim": "Previous studies using Sytox/PI staining and microscopy did not identify bacterial death as a relevant source of extracellular ATP during exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies used Sytox/PI staining and microscopy to identify bacterial death and did not identify bacterial death as a relevant source of extracellular ATP during exponential growth (Hironaka et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hironaka et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "9ad8b89b-f285-427e-81f1-a3608bf38acf",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C62",
+      "claim": "Flow cytometry is a quantitatively more sensitive method than microscopy for detecting bacterial death.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we used flow cytometry, a quantitatively more sensitive method, and our data demonstrated that impaired membrane integrity and bacterial death are critical for ATP release during growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data using flow cytometry",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "2430e012-609c-4f32-a860-d94fc1687f45",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C63",
+      "claim": "The gradient between intra- and extracellular ATP is approximately 100-1000\u00d7 higher intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite low rates of bacterial death during exponential growth (Koch, 1959), and a low ratio of dead to live bacteria, the high gradient between intra- and extracellular ATP (approximately 100\u20131000\u00d7 higher) might be sufficient to explain the amount of released ATP measured (Leduc and van Heijenoort, 1980; Mempin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koch, 1959; Leduc and van Heijenoort, 1980; and Mempin et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "0441055f-eaf9-4156-89b6-b21efc240d19",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C64",
+      "claim": "The concentration of ATP within OMV is sufficient to activate P2-type receptors in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP was detected within OMV and the concentration of ATP within OMV is sufficient to activate P2-type receptors in lysosomes (Araujo et al., 2020; Junger, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citations to Araujo et al., 2020 and Junger, 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "a76cbc1e-50aa-4062-ba0e-1bf00771f9d0",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C65",
+      "claim": "OMV are released in response to environmental stresses like infection and sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, OMV are released in response to environmental stresses like infection and sepsis (Kulp and Kuehn, 2010; Orench-Rivera and Kuehn, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kulp and Kuehn, 2010 and Orench-Rivera and Kuehn, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "539e57a2-cde5-4f44-a2be-ee31f0380292",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C66",
+      "claim": "P2X1, P2X3, and P2X4 receptors have been shown to be expressed in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP is likely to activate P2 receptors, which have been shown to be expressed in lysosomes, such as P2X1, P2X3, or P2X4 (Qureshi et al., 2007; Robinson and Murrell-Lagnado, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Qureshi et al., 2007 and Robinson and Murrell-Lagnado, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "1b9ba776-2ed1-407b-b00a-8339a26c6c16",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C67",
+      "claim": "OMV can be considered as non-living bacteria-resembling highly inflammatory vesicles that effectively distribute ATP throughout the body.",
+      "claim_type": "EXPLICIT",
+      "source": "OMV can therefore be considered as non-living bacteria-resembling highly inflammatory vesicles (Jang et al., 2015; Kulp and Kuehn, 2010) that effectively distribute ATP throughout the body to activate cells, such as neutrophils, initiating systemic inflammatory responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and supported by citations to Jang et al., 2015 and Kulp and Kuehn, 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "82322062-4df2-4f23-a309-e3d4eab12caf",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C68",
+      "claim": "Activation of neutrophils in response to ATP-loaded OMV resulted in upregulation of inflammatory, lysosomal, and neutrophil degranulation pathways as well as an upregulation of the apoptosis pathway and genes involved in NETosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of neutrophils in response to ATP-loaded OMV resulted in upregulation of inflammatory, lysosomal, and neutrophil degranulation pathways as well as an upregulation of the apoptosis pathway and genes involved in NETosis by a hitherto unknown mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "fa2fb397-de68-4580-8774-01a1819aef73",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C69",
+      "claim": "Remote degranulation in response to OMV is unlikely to control bacteria at the source of sepsis but rather harmful to host tissues increasing sepsis severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such remote degranulation in response to OMV is unlikely to control bacteria at the source of sepsis but rather harmful to host tissues increasing sepsis severity (Eichelberger and Goldman, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and supported by citation to Eichelberger and Goldman, 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "dd52164d-4c33-4bff-8579-6605299e7b0b",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C70",
+      "claim": "Bacterial ATP release is strain specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial ATP release is strain specific (Figure 1; Mempin et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 1 and citation to Mempin et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "a7339a16-8c36-496c-865a-31f7cb1e3a01",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C71",
+      "claim": "The \u0394tolB mutant produces only very few O-IMV (0.1-2% of all OMV).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the \u0394tolB mutant produces, unlike other tol mutants, only very few O-IMV (0.1\u20132% of all OMV) (P\u00e9rez-Cruz et al., 2013; Reimer et al., 2021; Takaki et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to P\u00e9rez-Cruz et al., 2013; Reimer et al., 2021; and Takaki et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "3fa6d1d5-18ca-4663-9d81-b11d6d3120be",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C72",
+      "claim": "Western blot analysis suggests that the OMV used in this study are primarily outer membrane derived.",
+      "claim_type": "EXPLICIT",
+      "source": "and our western blot analysis suggests that our OMV are primarily outer membrane derived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by western blot data showing presence of ompF and absence of ftsZ",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "965ea50d-898a-4706-9e2a-9b1ee3c69f6c",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C73",
+      "claim": "OMV are promising diagnostic molecular biomarkers in gram-negative sepsis.",
+      "claim_type": "EXPLICIT",
+      "source": "OMV are promising diagnostic molecular biomarkers in gramneg sepsis (Michel and Gaborski, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Michel and Gaborski, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "dbc05962-042b-4570-9c0d-1b0e1d042e31",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C74",
+      "claim": "ATP is involved in cell death and chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ATP is involved in cell death (Proietti et al., 2019) as well as in chemotaxis (Junger, 2011), increased cell death, impaired infiltration, or a combination of both is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Proietti et al., 2019 and Junger, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "43bb1552-69ff-487f-8ac8-f59a5f9d8b2d",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C75",
+      "claim": "The human experimental protocol was approved by the Cantonal Ethics Commission Bern, Switzerland (ethical approval 2017-00573, NCT03554148).",
+      "claim_type": "EXPLICIT",
+      "source": "The human experimental protocol was approved by the Cantonal Ethics Commission Bern, Switzerland (ethical approval 2017-00573, NCT03554148).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "3bd01b2a-b778-40c1-8af9-4de3b28b30ac",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C76",
+      "claim": "Written informed consent was obtained from all patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Written informed consent was obtained from all patients and the study has been performed in accordance with the Declaration of Helsinki as well as the CONSORT statement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical compliance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "eadad106-da21-4ce5-a868-ef7e57ff3fc9",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "claim_id": "C77",
+      "claim": "All animal procedures were approved by the Animal Care Committee of the Canton of Bern (Switzerland) under the number BE41/2022.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal procedures were carried out in accordance with the Swiss guidelines for the care and use of laboratory animals as well as in accordance with the ARRIVE guidelines and were approved by the Animal Care Committee of the Canton of Bern (Switzerland) under the following number: BE41/2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ac8b309f-d989-4980-ae65-11b1db0d06b7",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sepsis is a major global health problem causing millions of deaths annually, with high mortality despite antibiotic treatment and failed immunomodulatory trials targeting cytokines and Toll-like receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C14 provide consistent background information on sepsis epidemiology and treatment challenges, supported by appropriate citations to WHO declarations and clinical literature. These claims establish the clinical context and rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "9bd5686d-95e8-492e-af61-945320108e40",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Extracellular ATP is released by both host cells and bacteria in a strain-specific manner, modulating inflammatory and immune responses through purinergic signaling during sepsis and in various colonized compartments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C15-C21 establish prior knowledge about ATP as an inflammatory mediator released by both host and bacterial sources. All claims are supported by appropriate citations to established literature, providing solid background for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "c58938d1-8484-4077-b84d-9054837d396f",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sepsis-associated bacteria isolated from human and mouse abdominal fluid release ATP in a growth-dependent and strain-specific manner, with E. coli releasing notably more ATP than other species in the mouse model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 are supported by experimental data from 16S-rRNA sequencing and ATP measurements shown in Figure 1. The methodology is appropriate, with N=2 independent cultures providing preliminary evidence. However, the small sample size (N=2) limits statistical power for definitive conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bacterial ATP release is dependent on ATP synthase at the inner membrane and correlates positively with bacterial growth, with ATP synthase mutations having greater impact than cytochrome bo3 oxidase mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C30, and C57-C60 are supported by systematic analysis of Keio collection mutants with appropriate statistical correlations (Pearson's r, R\u00b2) shown in Figures 2C-D. The mechanistic interpretation (C57-C60) is reasonable given the data, though some aspects remain inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "eac01929-c9fb-4af9-8831-9d3ed054c468",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Impaired outer membrane integrity, particularly in the \u0394ompF mutant, is associated with bacterial death and ATP release during growth, with flow cytometry providing more sensitive detection than previous microscopy methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C31-C34, and C61-C63 are supported by experimental data from porin mutants using flow cytometry (Figures 3B-G). The negative correlation between ATP peak and growth (C32) and the association with membrane integrity/death (C33) are statistically demonstrated. The methodological comparison (C61-C62) appropriately contextualizes findings relative to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "4c898798-8f66-4ced-a4c8-ae404f677c6a",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Bacterial ATP suppresses local immune responses in abdominal sepsis, reducing neutrophil counts and impairing survival, as demonstrated using apyrase-expressing bacteria that abrogate ATP release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35-C41, and C74 are supported by in vivo experiments using PS+pAPY vs PS+pEMPTY (Figures 4B-I). The survival difference (C39, p=0.012) and altered immune cell populations (C41) are statistically significant despite no differences in bacterial counts (C38), supporting ATP-specific effects. Sample sizes (n=5-10) are appropriate for these endpoints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "ae2033bc-4ea1-4733-a40c-05b778f34670",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bacterial ATP is transported in outer membrane vesicles (OMV) at concentrations sufficient to activate P2-type receptors, with \u0394tolB mutants producing primarily outer membrane-derived OMV that can be loaded with ATP via electroporation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42-C46, C64-C65, and C71-C72 are supported by experimental characterization of OMV (Figure 5). Western blot confirmation of outer membrane origin (C44, C72), ATP detection in OMV (C43), and successful electroporation loading (C45-C46) provide converging evidence. The artificial loading approach is acknowledged as a limitation but necessary for controlled experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ATP-loaded OMV are rapidly distributed throughout the body within 1 hour, taken up by phagocytic cells locally and predominantly by neutrophils in remote organs (especially lung), where they co-localize with the endolysosomal compartment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C47-C52 are supported by microscopy and flow cytometry data (Figure 6B-D, supplements). The rapid systemic distribution (C50), preferential neutrophil uptake in lung (C51), and endolysosomal co-localization (C52) are well-documented. Sample sizes (n=5) are adequate for these descriptive analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ATP-loaded OMV upregulate expression of genes involved in lysosomal activation and neutrophil degranulation pathways in pulmonary neutrophils, potentially contributing to systemic inflammation and sepsis severity through remote tissue damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C53-C56, and C66-C69 are supported by RNA sequencing data showing significant transcriptional differences (PERMANOVA p=0.022, Figure 6E-H). Specific pathway enrichment in lysosomal and degranulation genes (C54-C56) is well-documented. The interpretation of harmful remote effects (C69) is reasonable but somewhat speculative, appropriately qualified in the text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "05e014f4-a7ff-4441-99ce-1be1b155c7fd",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Bacterial ATP release is strain-specific and OMV represent promising diagnostic biomarkers in gram-negative sepsis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is supported by experimental data (Figure 1) and appropriate citations. Claim C73 is supported by citation to Michel and Gaborski, 2022, representing a reasonable extrapolation from the findings but not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "ee9cd162-01b8-4aa6-a746-3564543025f2",
+      "content_id": "762a2b48-4b61-44cb-95cf-4c3a13b95763",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study received appropriate ethical approvals for human and animal experiments and followed established guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 document ethical compliance with specific approval numbers and adherence to Declaration of Helsinki, CONSORT, and ARRIVE guidelines. These are standard methodological claims appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "5197b75b-e1ee-41da-871d-d201502e50cb",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Sepsis-associated bacteria from human patients and mouse models release ATP in a growth-dependent and strain-specific manner. The authors isolated 12 bacterial species from human abdominal sepsis fluid and demonstrated ATP release peaking during exponential growth phase across all species, with E. coli releasing notably more ATP than E. faecalis and S. aureus in mouse models.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 describes this as 'the most compelling part of the study' and notes that 'the authors show that sepsis-associated bacteria do in fact release ATP in a growth dependent and strain-specific manner.' Reviewer 2 states the study 'meticulously examines the complex relationship between ATP release and bacterial growth.' The editor affirms 'the evidence supporting the conclusions is compelling.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "8be405ad-7791-43a2-820b-c7b3a765d953",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "ATP release by E. coli depends on ATP synthase in the inner bacterial membrane, with mutations in ATP synthase subunits showing significantly lower cumulative ATP release compared to cytochrome bo3 oxidase mutants. Cumulative ATP release and cumulative growth were positively correlated across mutant strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'the most compelling part of the study is the analysis of E. coli mutants to address different aspects of bacterial release of ATP that could be pathogenically relevant.' Reviewer 2 notes the study 'meticulously examines the complex relationship between ATP release and bacterial growth, membrane integrity.' No concerns were raised about these mechanistic findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Impaired outer membrane integrity contributes to ATP release and is associated with bacterial death. Porin mutants showed differential ATP release (lowest in \u0394ompC, highest in \u0394ompF), with a strong negative correlation between peak ATP release and growth. The \u0394ompF mutant showed significantly increased outer membrane permeability and bacterial death.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges the study uses 'E. coli mutants first to correlate bacterial ATP release with growth and then, with outer membrane integrity and bacterial death.' Reviewer 2 affirms the study examines 'membrane integrity, and how bacterial ATP potentially dampens inflammatory responses.' The methodological improvement using flow cytometry over microscopy is implicitly accepted without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "02a898ab-d1d7-4409-9cea-6e23050594a9",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Abrogating bacterial ATP release using apyrase-expressing E. coli resulted in significantly improved survival in abdominal sepsis despite similar bacterial counts. This was associated with reduced small peritoneal macrophages and CX3CR1+ monocytes, but significantly increased neutrophils in bacterial ATP-depleted sepsis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 states 'the paper nicely shows that abdominal sepsis by these transformants results in significantly improved survival' but raises concerns: 'the increase of neutrophils in bacterial ATP-depleted abdominal sepsis, which has better outcome than \"ATP-proficient\" sepsis, seems difficult to correlate to the hypothesized tissue damage.' Reviewer 1 also notes uncertainty about mechanisms, stating 'it remains uncertain whether the proliferation or migration of these cells is modulated or inhibited by ATP receptors' and questions whether 'observed in vivo changes could be triggered by bacterial components other than Extracellular ATP.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "902cf60e-3f72-4deb-9955-5bc8985f07b8",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Bacterial ATP is transported in outer membrane vesicles (OMV). The \u0394nlpI and \u0394tolB strains showed 20-30 fold increased OMV production, with ATP detected in OMV at peak release times. OMV were confirmed as outer membrane-derived by western blot, and ATP concentration within OMV is sufficient to activate P2-type receptors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes 'the authors exploited bacterial OMVs either loaded or not with ATP to investigate the systemic effects devoid of living microorganisms.' Reviewer 2 states 'this compelling paper implies a concept that bacterial OMVs act as vehicles for the systemic distribution of ATP.' The characterization of OMV is accepted without methodological concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "ATP-loaded OMV are quickly distributed throughout the body within 1 hour, mainly taken up by neutrophils with the highest ratio in the lung. OMV uptake by leukocytes was independent of ATP cargo, and strong co-localization with the endolysosomal compartment of pulmonary neutrophils was identified.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'this approach showed that ATP-loaded OMVs induced degranulation of neutrophils after lysosomal uptake.' Reviewer 2 affirms the paper shows OMVs 'influencing neutrophil activity and exacerbating sepsis severity.' The biodistribution data is accepted without challenge, though Reviewer 1 questions 'why lung neutrophils were used for RNAseq.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "59f17c1c-a027-4cb3-a812-a76682338256",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "ATP-loaded OMV upregulate expression of genes activating degranulation in neutrophils. RNA sequencing showed significantly different transcriptional activity in pulmonary neutrophils, with strongest differences in lysosomal and neutrophil degranulation pathways, including genes involved in antibacterial activity and NETosis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raises significant concerns: 'whether ATP-loaded OMVs could provide a mechanistic proof of the pathogenetic role of bacteria-derived ATP independently of live microorganisms in sepsis is interesting but not definitively convincing.' Reviewer 1 also notes 'the analyses performed on OMV treated versus E. coli infected mice are not immediately related and difficult to combine when trying to draw a pathogenetic hypothesis' and suggests 'a comparison of cytokine profiles in the abdominal fluids of E. coli and OMV treated animals could be helpful.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "01b1c571-3230-4e64-8a21-a48058cf9b0b",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Sepsis is a global health priority causing millions of deaths annually, with high lethality despite antibiotics and failed immunomodulatory trials targeting cytokines or Toll-like receptors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims establish context and are not challenged by any reviewer. The editor notes the work 'will be of broad interest to researchers on microbiology and infectious diseases,' implicitly accepting the clinical significance framing.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "3962e48b-2ee9-4089-8163-8aff932cb484",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Extracellular ATP is released by host cells and bacteria, modulating inflammatory and immune responses through P2X and P2Y receptors. Prior research has shown ATP release by various bacteria and its role in immune modulation in different anatomical compartments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These literature-based claims provide scientific background and are not questioned by reviewers. They establish the foundation for the study's rationale and are accepted as established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "bb7af49d-01b2-47b1-a6b6-7cb8e1c83673",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "OMV can be considered as bacteria-resembling inflammatory vesicles that distribute ATP systemically. P2 receptors are expressed in lysosomes, ATP is involved in cell death and chemotaxis, and OMV are promising diagnostic biomarkers in gram-negative sepsis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretive and literature-based claims are not directly challenged by reviewers. Reviewer 2 affirms the concept that 'bacterial OMVs act as vehicles for the systemic distribution of ATP,' supporting the overall interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "0b021dc8-4496-408e-b8c7-ef84eb37a030",
+      "content_id": "dccbbebb-abaf-4d90-8281-3914f32343b6",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The study received appropriate ethical approvals from the Cantonal Ethics Commission Bern for human studies and the Animal Care Committee of the Canton of Bern for animal studies, with written informed consent obtained from patients.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These procedural claims are standard ethical compliance statements and are not questioned by any reviewer. They are accepted as meeting publication requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a4f9bc3f-b455-4ba2-ace0-7e065c6f0176",
+      "result_id": "ac8b309f-d989-4980-ae65-11b1db0d06b7"
+    },
+    {
+      "claim_id": "1a7d8e3d-f62c-4b4c-bc22-153bb41ae43e",
+      "result_id": "ac8b309f-d989-4980-ae65-11b1db0d06b7"
+    },
+    {
+      "claim_id": "feec1cac-de1a-46bc-b807-0242f805984d",
+      "result_id": "ac8b309f-d989-4980-ae65-11b1db0d06b7"
+    },
+    {
+      "claim_id": "109f833a-9c78-42d7-9941-5f50a35ec967",
+      "result_id": "ac8b309f-d989-4980-ae65-11b1db0d06b7"
+    },
+    {
+      "claim_id": "19ed34ab-d8a9-4b70-a6d4-e022e4a6bc7e",
+      "result_id": "ac8b309f-d989-4980-ae65-11b1db0d06b7"
+    },
+    {
+      "claim_id": "48e571c5-0c97-4f7b-a790-7b797fefedde",
+      "result_id": "ac8b309f-d989-4980-ae65-11b1db0d06b7"
+    },
+    {
+      "claim_id": "a1764a82-75ff-461b-b9f4-0d4e15baa234",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "9aec25e6-611a-426b-bee1-821c35d51715",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "1b176781-6a74-46a8-b2c4-2b6967d52f27",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "bf314258-f936-4927-ba61-617e04d69ada",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "5b28115f-de5f-4c3b-976f-b547c1c9a474",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "9be4aae1-2772-4e78-88e1-067ea3e3b71d",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "bdb0be52-6796-42d8-9536-4bb4c8b44abf",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "ee5d9fa5-5ad3-4048-ae53-50ef8bc23adb",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "a35f48c4-a7d2-49a2-b0eb-f821c9b6254c",
+      "result_id": "9bd5686d-95e8-492e-af61-945320108e40"
+    },
+    {
+      "claim_id": "f60b91dc-62be-4be5-b23f-9aa5a65b4e2e",
+      "result_id": "c58938d1-8484-4077-b84d-9054837d396f"
+    },
+    {
+      "claim_id": "0bea7817-8851-4f97-9d02-1be690980e40",
+      "result_id": "c58938d1-8484-4077-b84d-9054837d396f"
+    },
+    {
+      "claim_id": "5c0efa34-48d8-4830-831a-b87bf5e82328",
+      "result_id": "c58938d1-8484-4077-b84d-9054837d396f"
+    },
+    {
+      "claim_id": "87a9e738-071e-4e59-9159-9289e2c19793",
+      "result_id": "c58938d1-8484-4077-b84d-9054837d396f"
+    },
+    {
+      "claim_id": "a15f7649-5fe7-43ef-9304-c3f90bc086a7",
+      "result_id": "c58938d1-8484-4077-b84d-9054837d396f"
+    },
+    {
+      "claim_id": "225bf7be-a766-48ca-95dc-5ce75c332c83",
+      "result_id": "c58938d1-8484-4077-b84d-9054837d396f"
+    },
+    {
+      "claim_id": "c1b2cc48-a95f-4338-9fcf-a5e61feb6cc5",
+      "result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619"
+    },
+    {
+      "claim_id": "7684dced-5b89-40ef-8027-beebb24459b3",
+      "result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619"
+    },
+    {
+      "claim_id": "924706ba-22e7-4798-b0fe-24afc019a184",
+      "result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619"
+    },
+    {
+      "claim_id": "e8377846-4f41-4409-b9d7-fd82d0f7ff4a",
+      "result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619"
+    },
+    {
+      "claim_id": "6ab18c2f-6ee8-4b68-bf64-e89a78de5fd9",
+      "result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619"
+    },
+    {
+      "claim_id": "8a920d44-e711-4c9f-86a2-8f0cc9b3cd5d",
+      "result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619"
+    },
+    {
+      "claim_id": "5d4f11af-327d-47f8-b513-1a917478c5e2",
+      "result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619"
+    },
+    {
+      "claim_id": "26aa68b1-cbea-4ab3-8c79-0ca5a9af54fb",
+      "result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619"
+    },
+    {
+      "claim_id": "1de03899-527b-4f81-b437-8bebb1e468c1",
+      "result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468"
+    },
+    {
+      "claim_id": "aba4d24c-d796-46b2-85c8-fcdb58ae65fb",
+      "result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468"
+    },
+    {
+      "claim_id": "418edaac-9422-4d2f-921a-cd9a0b963bf9",
+      "result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468"
+    },
+    {
+      "claim_id": "9ff24b0c-f542-4b73-b26b-39bffa7ff101",
+      "result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468"
+    },
+    {
+      "claim_id": "30850543-eb9c-486c-8219-f8c95443f9cd",
+      "result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468"
+    },
+    {
+      "claim_id": "4049e7b7-ac8c-4474-a620-d6ba6f650beb",
+      "result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468"
+    },
+    {
+      "claim_id": "9ad8b89b-f285-427e-81f1-a3608bf38acf",
+      "result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468"
+    },
+    {
+      "claim_id": "2430e012-609c-4f32-a860-d94fc1687f45",
+      "result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468"
+    },
+    {
+      "claim_id": "aca9804b-7153-42f5-8a10-7a63be465e74",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "87083d64-da6b-4700-b54e-ffe7a06d1b9e",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "c7484cd7-39d5-4401-bc07-1f5930af5b57",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "0ddaead1-225e-467d-b550-ba484cdb7389",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "0d173ff3-4089-4c61-8eb9-7e1e11d8342a",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "297df355-f76f-487b-9c4b-c5a78f137b79",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "67e61bea-972f-4bae-9f1b-77b5d09a2f77",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "e2b57b96-749a-4fd5-ba35-3883d0619588",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "dbc05962-042b-4570-9c0d-1b0e1d042e31",
+      "result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a"
+    },
+    {
+      "claim_id": "4c91a6b6-407d-4c31-9ff2-b2d39dc0f45a",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "a47e297d-59b8-4e18-a0ee-efb23a87fa73",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "d00c20ae-9cb1-493b-adae-832489aeec17",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "060621fc-8157-428f-be89-08c881756ed7",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "cb358a89-d5c3-4981-a8fb-4d173fe86a57",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "aab3c7b5-d4f7-412a-b155-4063e42d2651",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "0441055f-eaf9-4156-89b6-b21efc240d19",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "a76cbc1e-50aa-4062-ba0e-1bf00771f9d0",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "a7339a16-8c36-496c-865a-31f7cb1e3a01",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "3fa6d1d5-18ca-4663-9d81-b11d6d3120be",
+      "result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670"
+    },
+    {
+      "claim_id": "49ffd95c-c5be-4dfc-95ea-a99e468c3d7e",
+      "result_id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40"
+    },
+    {
+      "claim_id": "41954589-313f-475d-942c-29d0f9565650",
+      "result_id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40"
+    },
+    {
+      "claim_id": "1e6ee9fa-382f-4b9b-9a4d-4caf13836d63",
+      "result_id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40"
+    },
+    {
+      "claim_id": "02c3c958-d76c-443b-9246-34601a6c6e78",
+      "result_id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40"
+    },
+    {
+      "claim_id": "10ea9f24-1b27-4777-99ad-40fd397332a5",
+      "result_id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40"
+    },
+    {
+      "claim_id": "8238f999-8886-4c45-9c9d-8abdb962db9b",
+      "result_id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40"
+    },
+    {
+      "claim_id": "df11f98f-989b-4531-8001-2492bd7ef7b5",
+      "result_id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40"
+    },
+    {
+      "claim_id": "a12b50f9-9daf-4f52-ac1b-2ed2b27ce159",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "e9c9abe3-8747-4001-9794-0ef828c78cc3",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "1143ece0-e4ff-4730-8eed-3d6409bfc4c7",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "93745e68-7ea7-4b91-8e00-122c6b8bc1d9",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "fbb80b57-db01-4977-8b94-dfdbeec73cf2",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "539e57a2-cde5-4f44-a2be-ee31f0380292",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "1b9ba776-2ed1-407b-b00a-8339a26c6c16",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "82322062-4df2-4f23-a309-e3d4eab12caf",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "fa2fb397-de68-4580-8774-01a1819aef73",
+      "result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b"
+    },
+    {
+      "claim_id": "dd52164d-4c33-4bff-8579-6605299e7b0b",
+      "result_id": "05e014f4-a7ff-4441-99ce-1be1b155c7fd"
+    },
+    {
+      "claim_id": "965ea50d-898a-4706-9e2a-9b1ee3c69f6c",
+      "result_id": "05e014f4-a7ff-4441-99ce-1be1b155c7fd"
+    },
+    {
+      "claim_id": "43bb1552-69ff-487f-8ac8-f59a5f9d8b2d",
+      "result_id": "ee9cd162-01b8-4aa6-a746-3564543025f2"
+    },
+    {
+      "claim_id": "3bd01b2a-b778-40c1-8af9-4de3b28b30ac",
+      "result_id": "ee9cd162-01b8-4aa6-a746-3564543025f2"
+    },
+    {
+      "claim_id": "eadad106-da21-4ce5-a868-ef7e57ff3fc9",
+      "result_id": "ee9cd162-01b8-4aa6-a746-3564543025f2"
+    },
+    {
+      "claim_id": "f60b91dc-62be-4be5-b23f-9aa5a65b4e2e",
+      "result_id": "5197b75b-e1ee-41da-871d-d201502e50cb"
+    },
+    {
+      "claim_id": "0bea7817-8851-4f97-9d02-1be690980e40",
+      "result_id": "5197b75b-e1ee-41da-871d-d201502e50cb"
+    },
+    {
+      "claim_id": "5c0efa34-48d8-4830-831a-b87bf5e82328",
+      "result_id": "5197b75b-e1ee-41da-871d-d201502e50cb"
+    },
+    {
+      "claim_id": "87a9e738-071e-4e59-9159-9289e2c19793",
+      "result_id": "5197b75b-e1ee-41da-871d-d201502e50cb"
+    },
+    {
+      "claim_id": "a15f7649-5fe7-43ef-9304-c3f90bc086a7",
+      "result_id": "5197b75b-e1ee-41da-871d-d201502e50cb"
+    },
+    {
+      "claim_id": "225bf7be-a766-48ca-95dc-5ce75c332c83",
+      "result_id": "5197b75b-e1ee-41da-871d-d201502e50cb"
+    },
+    {
+      "claim_id": "c1b2cc48-a95f-4338-9fcf-a5e61feb6cc5",
+      "result_id": "8be405ad-7791-43a2-820b-c7b3a765d953"
+    },
+    {
+      "claim_id": "7684dced-5b89-40ef-8027-beebb24459b3",
+      "result_id": "8be405ad-7791-43a2-820b-c7b3a765d953"
+    },
+    {
+      "claim_id": "924706ba-22e7-4798-b0fe-24afc019a184",
+      "result_id": "8be405ad-7791-43a2-820b-c7b3a765d953"
+    },
+    {
+      "claim_id": "e8377846-4f41-4409-b9d7-fd82d0f7ff4a",
+      "result_id": "8be405ad-7791-43a2-820b-c7b3a765d953"
+    },
+    {
+      "claim_id": "6ab18c2f-6ee8-4b68-bf64-e89a78de5fd9",
+      "result_id": "8be405ad-7791-43a2-820b-c7b3a765d953"
+    },
+    {
+      "claim_id": "8a920d44-e711-4c9f-86a2-8f0cc9b3cd5d",
+      "result_id": "8be405ad-7791-43a2-820b-c7b3a765d953"
+    },
+    {
+      "claim_id": "5d4f11af-327d-47f8-b513-1a917478c5e2",
+      "result_id": "8be405ad-7791-43a2-820b-c7b3a765d953"
+    },
+    {
+      "claim_id": "26aa68b1-cbea-4ab3-8c79-0ca5a9af54fb",
+      "result_id": "8be405ad-7791-43a2-820b-c7b3a765d953"
+    },
+    {
+      "claim_id": "1de03899-527b-4f81-b437-8bebb1e468c1",
+      "result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb"
+    },
+    {
+      "claim_id": "aba4d24c-d796-46b2-85c8-fcdb58ae65fb",
+      "result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb"
+    },
+    {
+      "claim_id": "418edaac-9422-4d2f-921a-cd9a0b963bf9",
+      "result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb"
+    },
+    {
+      "claim_id": "9ff24b0c-f542-4b73-b26b-39bffa7ff101",
+      "result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb"
+    },
+    {
+      "claim_id": "30850543-eb9c-486c-8219-f8c95443f9cd",
+      "result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb"
+    },
+    {
+      "claim_id": "4049e7b7-ac8c-4474-a620-d6ba6f650beb",
+      "result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb"
+    },
+    {
+      "claim_id": "9ad8b89b-f285-427e-81f1-a3608bf38acf",
+      "result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb"
+    },
+    {
+      "claim_id": "2430e012-609c-4f32-a860-d94fc1687f45",
+      "result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb"
+    },
+    {
+      "claim_id": "87083d64-da6b-4700-b54e-ffe7a06d1b9e",
+      "result_id": "02a898ab-d1d7-4409-9cea-6e23050594a9"
+    },
+    {
+      "claim_id": "c7484cd7-39d5-4401-bc07-1f5930af5b57",
+      "result_id": "02a898ab-d1d7-4409-9cea-6e23050594a9"
+    },
+    {
+      "claim_id": "0ddaead1-225e-467d-b550-ba484cdb7389",
+      "result_id": "02a898ab-d1d7-4409-9cea-6e23050594a9"
+    },
+    {
+      "claim_id": "0d173ff3-4089-4c61-8eb9-7e1e11d8342a",
+      "result_id": "02a898ab-d1d7-4409-9cea-6e23050594a9"
+    },
+    {
+      "claim_id": "297df355-f76f-487b-9c4b-c5a78f137b79",
+      "result_id": "02a898ab-d1d7-4409-9cea-6e23050594a9"
+    },
+    {
+      "claim_id": "67e61bea-972f-4bae-9f1b-77b5d09a2f77",
+      "result_id": "02a898ab-d1d7-4409-9cea-6e23050594a9"
+    },
+    {
+      "claim_id": "e2b57b96-749a-4fd5-ba35-3883d0619588",
+      "result_id": "02a898ab-d1d7-4409-9cea-6e23050594a9"
+    },
+    {
+      "claim_id": "4c91a6b6-407d-4c31-9ff2-b2d39dc0f45a",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "a47e297d-59b8-4e18-a0ee-efb23a87fa73",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "d00c20ae-9cb1-493b-adae-832489aeec17",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "060621fc-8157-428f-be89-08c881756ed7",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "cb358a89-d5c3-4981-a8fb-4d173fe86a57",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "aab3c7b5-d4f7-412a-b155-4063e42d2651",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "0441055f-eaf9-4156-89b6-b21efc240d19",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "a76cbc1e-50aa-4062-ba0e-1bf00771f9d0",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "a7339a16-8c36-496c-865a-31f7cb1e3a01",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "3fa6d1d5-18ca-4663-9d81-b11d6d3120be",
+      "result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8"
+    },
+    {
+      "claim_id": "49ffd95c-c5be-4dfc-95ea-a99e468c3d7e",
+      "result_id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f"
+    },
+    {
+      "claim_id": "41954589-313f-475d-942c-29d0f9565650",
+      "result_id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f"
+    },
+    {
+      "claim_id": "1e6ee9fa-382f-4b9b-9a4d-4caf13836d63",
+      "result_id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f"
+    },
+    {
+      "claim_id": "02c3c958-d76c-443b-9246-34601a6c6e78",
+      "result_id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f"
+    },
+    {
+      "claim_id": "10ea9f24-1b27-4777-99ad-40fd397332a5",
+      "result_id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f"
+    },
+    {
+      "claim_id": "8238f999-8886-4c45-9c9d-8abdb962db9b",
+      "result_id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f"
+    },
+    {
+      "claim_id": "df11f98f-989b-4531-8001-2492bd7ef7b5",
+      "result_id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f"
+    },
+    {
+      "claim_id": "a12b50f9-9daf-4f52-ac1b-2ed2b27ce159",
+      "result_id": "59f17c1c-a027-4cb3-a812-a76682338256"
+    },
+    {
+      "claim_id": "e9c9abe3-8747-4001-9794-0ef828c78cc3",
+      "result_id": "59f17c1c-a027-4cb3-a812-a76682338256"
+    },
+    {
+      "claim_id": "1143ece0-e4ff-4730-8eed-3d6409bfc4c7",
+      "result_id": "59f17c1c-a027-4cb3-a812-a76682338256"
+    },
+    {
+      "claim_id": "93745e68-7ea7-4b91-8e00-122c6b8bc1d9",
+      "result_id": "59f17c1c-a027-4cb3-a812-a76682338256"
+    },
+    {
+      "claim_id": "fbb80b57-db01-4977-8b94-dfdbeec73cf2",
+      "result_id": "59f17c1c-a027-4cb3-a812-a76682338256"
+    },
+    {
+      "claim_id": "82322062-4df2-4f23-a309-e3d4eab12caf",
+      "result_id": "59f17c1c-a027-4cb3-a812-a76682338256"
+    },
+    {
+      "claim_id": "fa2fb397-de68-4580-8774-01a1819aef73",
+      "result_id": "59f17c1c-a027-4cb3-a812-a76682338256"
+    },
+    {
+      "claim_id": "a4f9bc3f-b455-4ba2-ace0-7e065c6f0176",
+      "result_id": "01b1c571-3230-4e64-8a21-a48058cf9b0b"
+    },
+    {
+      "claim_id": "1a7d8e3d-f62c-4b4c-bc22-153bb41ae43e",
+      "result_id": "01b1c571-3230-4e64-8a21-a48058cf9b0b"
+    },
+    {
+      "claim_id": "feec1cac-de1a-46bc-b807-0242f805984d",
+      "result_id": "01b1c571-3230-4e64-8a21-a48058cf9b0b"
+    },
+    {
+      "claim_id": "109f833a-9c78-42d7-9941-5f50a35ec967",
+      "result_id": "01b1c571-3230-4e64-8a21-a48058cf9b0b"
+    },
+    {
+      "claim_id": "19ed34ab-d8a9-4b70-a6d4-e022e4a6bc7e",
+      "result_id": "01b1c571-3230-4e64-8a21-a48058cf9b0b"
+    },
+    {
+      "claim_id": "48e571c5-0c97-4f7b-a790-7b797fefedde",
+      "result_id": "01b1c571-3230-4e64-8a21-a48058cf9b0b"
+    },
+    {
+      "claim_id": "a1764a82-75ff-461b-b9f4-0d4e15baa234",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "9aec25e6-611a-426b-bee1-821c35d51715",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "1b176781-6a74-46a8-b2c4-2b6967d52f27",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "bf314258-f936-4927-ba61-617e04d69ada",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "5b28115f-de5f-4c3b-976f-b547c1c9a474",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "9be4aae1-2772-4e78-88e1-067ea3e3b71d",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "bdb0be52-6796-42d8-9536-4bb4c8b44abf",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "ee5d9fa5-5ad3-4048-ae53-50ef8bc23adb",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "a35f48c4-a7d2-49a2-b0eb-f821c9b6254c",
+      "result_id": "3962e48b-2ee9-4089-8163-8aff932cb484"
+    },
+    {
+      "claim_id": "539e57a2-cde5-4f44-a2be-ee31f0380292",
+      "result_id": "bb7af49d-01b2-47b1-a6b6-7cb8e1c83673"
+    },
+    {
+      "claim_id": "1b9ba776-2ed1-407b-b00a-8339a26c6c16",
+      "result_id": "bb7af49d-01b2-47b1-a6b6-7cb8e1c83673"
+    },
+    {
+      "claim_id": "dd52164d-4c33-4bff-8579-6605299e7b0b",
+      "result_id": "bb7af49d-01b2-47b1-a6b6-7cb8e1c83673"
+    },
+    {
+      "claim_id": "965ea50d-898a-4706-9e2a-9b1ee3c69f6c",
+      "result_id": "bb7af49d-01b2-47b1-a6b6-7cb8e1c83673"
+    },
+    {
+      "claim_id": "dbc05962-042b-4570-9c0d-1b0e1d042e31",
+      "result_id": "bb7af49d-01b2-47b1-a6b6-7cb8e1c83673"
+    },
+    {
+      "claim_id": "43bb1552-69ff-487f-8ac8-f59a5f9d8b2d",
+      "result_id": "0b021dc8-4496-408e-b8c7-ef84eb37a030"
+    },
+    {
+      "claim_id": "3bd01b2a-b778-40c1-8af9-4de3b28b30ac",
+      "result_id": "0b021dc8-4496-408e-b8c7-ef84eb37a030"
+    },
+    {
+      "claim_id": "eadad106-da21-4ce5-a868-ef7e57ff3fc9",
+      "result_id": "0b021dc8-4496-408e-b8c7-ef84eb37a030"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "a4f91a65-85fe-46ab-81d9-2691a5f9bb3b",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "ac8b309f-d989-4980-ae65-11b1db0d06b7",
+      "peer_result_id": "01b1c571-3230-4e64-8a21-a48058cf9b0b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate background claims C1, C10-C14 on sepsis epidemiology and treatment challenges. OpenEval finds them supported by appropriate citations; peer reviewers accept these claims without challenge, implicitly supporting the clinical significance framing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "747e8b43-26f3-47af-80fd-0f16d440089d",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "9bd5686d-95e8-492e-af61-945320108e40",
+      "peer_result_id": "3962e48b-2ee9-4089-8163-8aff932cb484",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate background claims C2-C3, C15-C21 on ATP as inflammatory mediator. OpenEval finds all claims supported by established literature; peer reviewers accept these as established knowledge without questioning, providing foundation for study rationale.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "5e06ed1a-1567-4cff-bb65-e10231369d65",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "c58938d1-8484-4077-b84d-9054837d396f",
+      "peer_result_id": "5197b75b-e1ee-41da-871d-d201502e50cb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C22-C27 on bacterial ATP release. OpenEval finds them supported but notes small sample size (N=2) limits statistical power. Peer reviewers describe this as 'the most compelling part of the study' with no concerns about sample size, showing stronger endorsement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "b41a13c0-ec94-4baa-a8d1-c7ad963d5851",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b7fd40eb-a617-4fca-a0c7-cb3741f2d619",
+      "peer_result_id": "8be405ad-7791-43a2-820b-c7b3a765d953",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C4, C28-C30, C57-C60 on Keio collection mutant analysis. OpenEval finds mechanistic interpretation reasonable though inferential; peer reviewers explicitly call this 'the most compelling part' and 'meticulously examine' the relationship, showing strong agreement with more enthusiastic endorsement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "0799270f-8dc5-4479-8a58-740920c15753",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "eac01929-c9fb-4af9-8831-9d3ed054c468",
+      "peer_result_id": "f4968928-4a4c-4b54-8861-7bc8e4eb11cb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C5, C31-C34, C61-C63 on porin mutants and membrane integrity. OpenEval finds statistical demonstration adequate and methodological comparison appropriate; peer reviewers accept the flow cytometry methodology improvement without challenge, showing full agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "09cfed5a-54f9-4209-9619-2bea3e8098ec",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4c898798-8f66-4ced-a4c8-ae404f677c6a",
+      "peer_result_id": "02a898ab-d1d7-4409-9cea-6e23050594a9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate in vivo sepsis claims C35-C41 (peer also includes C6, C74). OpenEval finds survival differences and immune changes statistically supported. Peer reviewers rate as UNCERTAIN, noting difficulty correlating increased neutrophils with tissue damage hypothesis and questioning whether effects are ATP-specific or from other bacterial components. Significant disagreement on interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "e107f93a-83f5-4b33-9d18-d7b2b1474d6e",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ae2033bc-4ea1-4733-a40c-05b778f34670",
+      "peer_result_id": "902cf60e-3f72-4deb-9955-5bc8985f07b8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate OMV characterization claims C7, C42-C46, C64-C65, C71-C72. OpenEval acknowledges artificial loading as limitation but finds evidence converging and necessary for controlled experiments. Peer reviewers accept the OMV characterization and approach without methodological concerns, showing agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "44529f8e-ffdb-474f-a574-54ec9e5f7f4b",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "7d050a27-b6dd-41c1-b4c2-dff0c33bbc40",
+      "peer_result_id": "277cac6c-ff32-4d9c-b4c9-6c4330b6066f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate OMV biodistribution and uptake claims C8, C47-C52. OpenEval finds descriptive analyses well-documented with adequate sample sizes. Peer reviewers accept the biodistribution data without challenge, though question why lung neutrophils were used for RNAseq. Overall agreement with minor methodological question.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "7931223d-89b3-4542-98d8-a3a2e8a756bd",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0c0c27f7-8e78-4282-96ff-fbcb7975452b",
+      "peer_result_id": "59f17c1c-a027-4cb3-a812-a76682338256",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate transcriptional response claims C9, C53-C56, C68-C69 (peer excludes C66-C67). OpenEval finds RNA-seq data well-documented but notes harmful effects interpretation is speculative though appropriately qualified. Peer reviewers rate as UNCERTAIN, stating mechanistic proof is 'interesting but not definitively convincing' and noting difficulty combining OMV and E. coli infection analyses. Disagreement on strength of mechanistic conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "722186e9-0ec7-4acd-ad1d-d629cbb9fa9b",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "05e014f4-a7ff-4441-99ce-1be1b155c7fd",
+      "peer_result_id": "bb7af49d-01b2-47b1-a6b6-7cb8e1c83673",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C70, C73 on ATP release mechanisms and extrapolations. OpenEval finds C70 supported by data and C73 a reasonable extrapolation from literature. Peer reviewers also evaluate C66-C67, C74 together, accepting interpretive claims without direct challenge. Partial overlap with general agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    },
+    {
+      "id": "0ee28642-2fc6-44e8-b1ac-bd0041e45909",
+      "submission_id": "c11af0d9-d13e-481f-8986-49240f9c03d0",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ee9cd162-01b8-4aa6-a746-3564543025f2",
+      "peer_result_id": "0b021dc8-4496-408e-b8c7-ef84eb37a030",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate ethical compliance claims C75-C77. OpenEval notes these are standard methodological claims appropriately documented. Peer reviewers accept them as meeting publication requirements without question. Complete agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:18:27.475309Z"
+    }
+  ]
+}

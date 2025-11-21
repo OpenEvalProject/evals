@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "All major monoclonal antibody therapies targeting SARS-CoV-2, including cilgavimab and bebtelovimab which were previously efficacious against omicron BA.5, have lost efficacy against current circulating variants (XBB, BQ.1.1), resulting in no FDA-approved mAb therapy for SARS-CoV-2 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20-C23 are well-supported by citations to published literature and FDA data. The statements about mAb efficacy loss are factual assertions backed by multiple references (Takashita et al., 2022; Focosi et al., 2023; Imai et al., 2023) and FDA website information, providing strong evidence for this contextual background claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "SARS-CoV-2 has infected >40% of the world's population, and as the pandemic enters its endemic phase, omicron variants account for over 90% of current infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6-C8 provide epidemiological context supported by citations to published work and CDC data. These are factual statements about infection rates and variant prevalence that establish the public health significance of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C63",
+      "C64"
+    ],
+    "result": "The nanobody repertoire generated against wild-type SARS-CoV-2 spike protein remains effective against variants of concern including delta and omicron BA.1, with 35 of 41 nanobodies tested retaining efficacy against at least one variant (28 neutralized delta, 23 neutralized omicron BA.1, 15 neutralized both), representing approximately 1/3 of the original 116 nanobody repertoire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C35, C37, C63-C64 are strongly supported by experimental neutralization assay data presented in Figure 1 and described quantitatively in the text. The specific numbers of nanobodies with neutralization activity against different variants are clearly reported with appropriate experimental replication (n\u22654).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "There is a statistically significant correlation between binding affinity and neutralization efficacy for delta (Pearson's r=0.71, p=0.01; Spearman's rho=0.63, p=0.07), but not for omicron BA.1 (Pearson's r=0.27, p=0.31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 report statistical correlations, but C38 presents a borderline case where Spearman's rho has p=0.07, which does not meet the conventional significance threshold of p<0.05. The claim of 'statistically significant correlation' is only partially supported by the Pearson coefficient. Sample size and power analysis are not reported, making it difficult to assess whether the lack of significance for omicron BA.1 is meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Almost all nanobodies in groups I, I/II, II, and I/IV retained binding to omicron BA.4/BA.5 and also bound XBB and BQ.1.1 variants, with epitopes overlapping the bebtelovimab epitope. Nanobody S1-46 uniquely retained wild-type binding affinity across all tested variants (delta, BA.1, BA.4/BA.5, XBB, BQ.1.1) by targeting a conserved, previously untargeted epitope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 are supported by SPR binding data (Figure 3A) and epitope mapping analysis. The identification of S1-46 as a broadly reactive nanobody is particularly well-documented with quantitative binding data across multiple variants. The epitope conservation analysis and comparison with FDA-approved mAbs provides strong supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C56"
+    ],
+    "result": "Five nanobodies from groups I, I/II, II, and V neutralized live omicron BA.5 virus in plaque reduction neutralization tests, corroborating SPR binding observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C56 are supported by experimental plaque reduction neutralization test data (Figure 4) with appropriate replication (n\u22653). The live virus neutralization data validates the pseudovirus and SPR binding results, providing orthogonal experimental evidence for nanobody efficacy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C74"
+    ],
+    "result": "Eight nanobodies bind delta and all omicron lineages tested (BA.1/BA.4/BA.5/XBB/BQ.1.1) and are predicted to remain effective against current circulating strains including omicron EG.5 and HV.1 based on epitope conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C73-C74 include both experimental binding data (C73, supported by Figure 5B) and computational predictions (C4, C74). While the binding to tested variants is experimentally validated, the prediction for EG.5 and HV.1 is based solely on sequence conservation analysis without experimental validation. The prediction requires experimental confirmation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The original six RBD epitope groups were refined to 12 groups through structural modeling and efficacy analysis. These nanobody epitope groups show specific overlaps with mAb classes (groups I/III/IV/VII with class 1; groups II/III/IV/V with class 2; groups II/III/V with class 3), but many nanobody epitopes extend beyond mAb epitopes, particularly for groups I, II, V, and VII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by integrative structural modeling (described in Methods), experimental binding/neutralization data, and comparison with published mAb epitope data. The epitope mapping methodology is well-described and the comparisons are appropriately referenced (Figure 2, Figure 5A). The observation that nanobody epitopes extend beyond mAb epitopes is consistent with the smaller size of nanobodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Variant-specific nanobodies were identified: 5 of 26 delta-binding nanobodies were delta-specific, and 2 of 21 omicron BA.1-binding nanobodies were BA.1-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by experimental binding and neutralization data summarized in Figure 5B. The identification of variant-specific nanobodies is based on clear operational definitions and quantitative experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The S1-1 and S1-23 nanobody pair showed synergistic neutralization of wild-type SARS-CoV-2. Against delta, S1-23 lost neutralization activity (binding affinity decreased ~1000-fold) but synergistically enhanced S1-1 neutralization by up to 42-fold at concentrations >10\u207b\u00b3 \u03bcM. This synergy was lost against omicron sublineages where both nanobodies lost binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by experimental synergy assays using the BRAID model (Figure 6A) with appropriate replication (n=4). The quantitative measurements of binding affinity changes and synergistic enhancement are clearly reported. The loss of synergy with omicron variants is consistent with the loss of binding for both nanobodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "S1-36 synergistically enhanced S1-RBD-22 neutralization by up to 80-fold against both delta and omicron BA.1. The observed synergies are specific rather than pleiotropic, as evidenced by lack of enhancement when S1-1 was combined with non-specific LaM2 nanobody, and by dose-dependent antagonism between S1-23 and S1-RBD-16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by experimental synergy and antagonism assays (Figure 6B-D) with appropriate controls. The use of a non-specific nanobody control (LaM2) and demonstration of competitive antagonism provide strong evidence that the observed synergies are specific interactions rather than artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C84",
+      "C85"
+    ],
+    "result": "Non-neutralizing nanobodies can retain effectiveness as components of synergistic cocktails, indicating that synergy can operate through epistatic interactions from binding alone, not solely through direct neutralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C84-C85 are supported by the experimental demonstration that S1-23, which lost neutralization activity against delta but retained binding, could still synergistically enhance S1-1 neutralization (C77). This provides direct experimental evidence for the proposed mechanism of synergy through binding-mediated epistatic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The differential binding and neutralization of nanobodies across variants is attributed to specific mutations: decreased BA.1 neutralization correlates with RBD mutations; enhanced delta neutralization by groups I/II may result from increased RBD 'up' conformation; L452R mutation disrupts binding/neutralization for groups III/IV/V; T376A/D405N/R408S in BA.4/BA.5 affect groups I/II; and T478K in delta strengthens ACE2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C50-C53, C55, C57-C62 combine experimental observations with mechanistic inferences supported by citations. The correlations between specific mutations and binding/neutralization changes are well-documented in the data (Figures 1B, 3B). The mechanistic explanations are appropriately cited to published structural and functional studies, though some remain inferences rather than direct experimental demonstrations in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Specific nanobodies (S1-RBD-22, S1-RBD-9, S1-4, S1-RBD-5, S1-46, and group X members) retained wild-type-like binding and neutralizing ability against omicron BA.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by experimental binding and neutralization data presented in Figures 1A and 3A. The identification of these specific nanobodies as retaining activity is based on quantitative measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Many nanobody epitope groups remained efficacious against different variants of concern, possibly due to smaller epitope footprints allowing access to regions inaccessible to mAbs. However, spike evolution has also negatively impacted many nanobodies by abolishing or weakening their binding/neutralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by the comprehensive binding and neutralization data across multiple variants (Figures 1, 3, 6, 7). The inference about smaller epitope footprints is reasonable given the structural properties of nanobodies and the epitope mapping data, though it remains a mechanistic hypothesis rather than a directly tested conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Variant-specific nanobodies could enable accurate and rapid diagnosis of SARS-CoV-2 infections and real-time variant identification through unique 'molecular fingerprints'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is speculative and represents a proposed future application rather than a demonstrated result. While the identification of variant-specific nanobodies (C71-C72) provides a foundation for this application, no diagnostic assays were developed or tested in this study. This remains an untested hypothesis requiring substantial additional development work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background information on SARS-CoV-2 spike protein structure, antibody epitopes, variant mutations, and nanobody properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C19, C24-C27 provide established background knowledge supported by appropriate citations to published literature. These claims establish the scientific context for the study and are well-documented in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Nanobody technology enables extensive coverage of antigenic regions while targeting multiple unique epitope sites, and oligomerization has proven effective in boosting neutralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are general conclusions supported by the experimental results presented in the study (epitope diversity, synergy data) and by citations to prior work on oligomerization. These represent reasonable interpretations of the data and established knowledge.",
+    "result_type": "MINOR"
+  }
+]

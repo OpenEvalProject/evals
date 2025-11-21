@@ -1,0 +1,456 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C31"
+    ],
+    "result": "The authors developed an ODE model based on the CIS network topology that integrates noise-driven and signal-driven fate-decision modes with AND/OR logic operations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C31 describe the core methodological contribution. The model derivation is detailed in the Materials and Methods section with explicit equations (Equations 1-2, later 3-4), and the approach is clearly stated as integrating driving modes with logic operations. The mathematical framework is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The AND-AND and OR-OR motifs exhibit distinct expression patterns in stem cells: AND-AND stem cells express low levels of both TFs, while OR-OR stem cells express high levels of both TFs, with corresponding differences in state space topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by computational modeling results shown in Figure 2B-D and corroborated by citations to experimental literature (C34). The Boolean and continuous models consistently show these expression patterns, and the geometric interpretation via solution landscapes is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Under noise-driven conditions, the two logic motifs produce opposite fate-decision biases: higher noise in TF X drives AND-AND cells toward LX but OR-OR cells toward LY, establishing a triangular relationship among noise profiles, logic motifs, and fate bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C41 are supported by stochastic simulations shown in Figure 3A-F. The opposite bias is clearly demonstrated with specific noise parameters (\u03c3x=0.18, \u03c3y=0.12), and the heuristic relationship allowing inference of the third variable from any two is well-illustrated. The geometric basis in state space topology provides mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Noise-driven reprogramming from differentiated states requires different noise perturbations depending on logic motif: AND-AND requires increasing noise of the highly-expressed TF, while OR-OR requires increasing noise of the lowly-expressed TF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by simulations in Figure 3\u2014figure supplement 1A-B. The results are intuitive from the basin geometry shown in Figure 2C, providing mechanistic understanding. However, these are computational predictions without experimental validation in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Under symmetrical signal induction (increasing u), AND-AND motifs lose the stem cell attractor via pitchfork bifurcation, forcing differentiation, while OR-OR motifs lose differentiated attractors, maintaining stemness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by bifurcation analysis in Figure 4A-D. The mathematical characterization of bifurcation types is rigorous, and the solution landscape analysis clearly shows the distinct behaviors. The interpretation is consistent with the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The AND-AND motif exhibits a robust fully-connected stage (observed in 82.7% of parameter sets) where all three fates are directly interconnected, potentially corresponding to the priming/activation stage before lineage commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by solution landscape analysis (Figure 4C-E) and global parameter screening (6231 parameter sets). The robustness is well-established (82.7% vs 1.8% in OR-OR). However, the correspondence to experimental priming stages (C51) is speculative, supported only by citations to experimental observations without direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Under symmetrical signal induction, AND-AND differentiated cells maintain their fates while OR-OR differentiated cells can be reprogrammed back to stem state through bi-directional induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by bifurcation and solution landscape analysis in Figure 4A-G. The distinct reprogramming capabilities are clearly demonstrated through the sequence of attractor disappearance. The mechanistic basis is well-explained through the model dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Under symmetrical signal induction, stem cell behavior depends on logic motifs: AND-AND promotes differentiation while OR-OR maintains undifferentiated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 summarize the key findings from the symmetrical induction analysis. These are well-supported by the bifurcation analysis and solution landscape results in Figure 4, representing a major conceptual finding about how logic motifs control cell fate decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Under asymmetrical signal induction (increasing ux), both motifs eventually reach only LX state, but through different sequences: AND-AND loses S first then LY, while OR-OR loses LY first then S, representing a progression-accuracy trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by bifurcation analysis in Figure 5B-G. The distinct sequences are clearly demonstrated, and the interpretation as a progression-accuracy trade-off is well-reasoned from the basin geometry. The mechanistic explanation is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In AND-AND motif under asymmetric induction, stem cell renewal gate closes first, forcing immediate differentiation with bias toward LX but non-negligible probability of LY entry, compromising accuracy but ensuring progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by bifurcation and solution landscape analysis in Figure 5B, D. The interpretation of the progression-accuracy trade-off is well-grounded in the basin geometry and attractor sequence. The stochastic simulation in Figure 5\u2014figure supplement 1B confirms the non-negligible LY probability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "In OR-OR motif under asymmetric induction, the antagonistic fate LY disappears first, ensuring unambiguous differentiation toward LX and maintaining accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by bifurcation and solution landscape analysis in Figure 5C, F. The interpretation complements the AND-AND findings and is well-supported by the model dynamics. The accuracy emphasis is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Global parameter screening (6207 AND-AND, 6634 OR-OR parameter sets) shows the progression-accuracy trade-off sequence is robust: 96% AND-AND and 70% OR-OR motifs exhibit the predicted attractor vanishment patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by extensive parameter screening results shown in Figure 5\u2014figure supplement 1C-D. The high percentages (96% and 70%) demonstrate robustness across parameter space. The generality of the progression-accuracy trade-off is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Reprogramming trajectories differ by logic motif: AND-AND enables one-step direct LY-to-LX transition, while OR-OR requires two-step transition mediated by stem state (LY\u2192S\u2192LX).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by simulation results in Figure 5D, F and Figure 5\u2014figure supplement 2A-D. The distinct trajectories are clearly demonstrated and have important implications for reprogramming strategies. The mechanistic basis in attractor sequence is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "OR-OR motif enables dose-dependent reprogramming and de-differentiation through bi-directional or unilateral induction, while AND-AND motif makes de-differentiation substantially more difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 synthesize reprogramming implications from the model. C79 and C82 connect to experimental observations through citations, while C80-C81 are supported by the bifurcation analysis in Figures 4-5. The predictions are logical extensions of the model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Expression variance patterns distinguish driving modes: noise-driven shows monotonic variance trends (declining for highly-expressed TF in AND-AND, rising for lowly-expressed TF in OR-OR), while signal-driven shows non-monotonic patterns due to bifurcations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by stochastic simulations in Figure 6B-C and Figure 6\u2014figure supplement 1C-D. The distinct variance patterns provide a diagnostic tool for identifying driving modes and logic motifs. The mechanistic explanation through bifurcation-induced variance changes is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Analysis of published hematopoiesis data (Mojtahedi et al., 2016) shows Gata1 and PU.1 expression variance exhibits non-monotonic patterns during EPO and GM-CSF/IL-3 induction, indicating the Gata1-PU.1 circuit operates in AND-AND-like manner under signal-driven mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by analysis of published single-cell RT-qPCR data shown in Figure 6F and Figure 6\u2014figure supplement 2A-C. The non-monotonic variance patterns match model predictions for signal-driven AND-AND motif. The low expression in CMPs (Figure 6\u2014figure supplement 2C) supports AND-AND assignment. This represents successful application of the framework to real data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Analysis of mESC differentiation data (Semrau et al., 2017) shows 73% of fate-decision TFs have monotonically increasing variance, with key regulators Gbx2 and Tbx3 showing high initial expression and increasing variance, indicating OR-OR-like motif under noise-driven mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 are supported by analysis of published single-cell SMART-seq2 data shown in Figure 6G-H and Figure 6\u2014figure supplement 2D. The monotonic variance increase (73% of TFs) and high initial expression patterns match model predictions for noise-driven OR-OR motif. The classification is well-reasoned from the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Analysis of EB-to-iMK reprogramming data (Qin et al., 2022) shows FLI1 and KLF1 are both highly expressed in intermediate iPEM population, consistent with OR-OR motif, and model predicts sequential saddle-node bifurcations matching experimental two-step transition through iPEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 are supported by analysis of published 10x Genomics data shown in Figure 7A-D. The high co-expression pattern (Figure 7B) matches OR-OR predictions, and the bifurcation analysis (Figure 7C-D) correctly predicts the two-step transition through iPEM observed experimentally. This demonstrates strong model-experiment agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Expression variance analysis of EB-to-iMK reprogramming shows FLI1 declining then constant while KLF1 exhibits non-monotonic pattern, matching signal-driven OR-OR predictions and confirming FLI1 upregulation as key driving force for the two-step reprogramming process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115 are supported by model simulations (Figure 7E left) and data analysis (Figure 7E right). The variance patterns match signal-driven OR-OR predictions. The mechanistic explanation for KLF1's non-monotonic pattern (rapid shut-off at iPEM\u2192iMK transition) is well-grounded in the bifurcation analysis (Figure 7C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Fuzzy c-means clustering of expression variance patterns identifies 12 clusters, with cluster 5 (FLI1) enriched for platelet functions and cluster 10 (KLF1) for blood cell metabolism; 80% of filtered TFs appear in original GRN, with EGR3 and ETS1 identified as novel regulators and MYC/FOS as hub regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 are supported by clustering analysis (Figure 7F, Figure 7\u2014figure supplement 1C), GO enrichment (Figure 7G), and network analysis (Figure 7H). The 80% overlap with original GRN validates the approach, while identification of EGR3/ETS1 and MYC/FOS provides novel insights. However, C116 is stated as hypothesis rather than validated finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors' models advance beyond previous work by reconsidering TF regulation at the TF-CRE binding level rather than simple Hill functions, enabling mean and variance patterns to reveal logic motifs and driving forces through a top-down analytical framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 accurately describe the methodological advance and framework contributions. The TF-CRE binding formalism (Shea-Ackers) is detailed in Materials and Methods. The ability to infer logic motifs and driving forces from expression patterns is demonstrated through multiple biological examples. This represents a genuine conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C130"
+    ],
+    "result": "Under noise-driven mode, logic motifs act as 'brokers' shaping fate preferences, with noise profiles iterated through logic motifs to achieve functional demands; dissecting logic motifs is prerequisite for understanding how epigenetic changes affect fate-decision bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 are interpretive/speculative extensions based on the noise-driven results, relying on evolutionary assumptions not tested in the manuscript. C130 is a logical inference about future research directions. While the reasoning is sound, these claims go beyond what is directly demonstrated and would require additional evolutionary or epigenetic studies for full support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Expression variance patterns can indicate driving forces and key regulators during fate decisions, providing mechanistic explanation without a priori knowledge, though variance interpretation is generally not intuitively accessible compared to expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 synthesize the utility of expression variance analysis. C131-C132 cite prior work on variance applications, C133 is demonstrated through the three biological examples, C134 acknowledges limitations with citation, and C135-C136 describe the framework's contribution. The claims accurately represent the work's contributions and limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Under symmetrical signal induction, AND-AND promotes differentiation while OR-OR stabilizes stemness; OR-OR motif is more amenable to restoring stemness by inducing antagonistic genes, consistent with experimental observations in hematopoiesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 synthesize signal-driven findings with experimental validation. C138-C139 restate major findings, C140 is supported by Figure 4\u2014figure supplement 1C, C141-C142 cite experimental support from Mojtahedi et al. 2016, and C143 is a testable prediction. The integration of model predictions with experimental observations is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Solution landscape analysis reveals a robust fully-connected stage in AND-AND motif potentially corresponding to differentiation priming, not found in OR-OR motif, suggesting priming necessity depends on logic motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 are supported by solution landscape analysis and parameter screening. C144 cites prior work on solution landscape utility, C145 is demonstrated in Figure 4, C146 is speculative but reasonably grounded in experimental citations, and C147 is a logical inference. The speculation about priming (C146) is clearly identified as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The progression-accuracy trade-off is illustrated by hematopoiesis (rapid CMP depletion in inflammation, concordant with AND-AND) versus C. elegans development (accuracy emphasis), suggesting this property is embedded in logic motifs of core GRNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C153 connect the progression-accuracy trade-off to biological examples. C148 summarizes the trade-off from Figure 5\u2014figure supplement 1E, C149 is general knowledge, C150-C151 cite recent experimental support for AND-AND in hematopoiesis, C152 is general knowledge about C. elegans, and C153 is a reasonable inference. The biological grounding strengthens the conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors classified three biological examples (hematopoiesis as AND-AND signal-driven, embryogenesis as OR-OR noise-driven, reprogramming as OR-OR signal-driven), emphasizing that classification of fate decisions is vital for systematic investigation and enrichment of common properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 summarize the classification results and their importance. C154-C156 are supported by the data analyses in Figures 6-7, while C157-C158 are conceptual claims about the value of classification. The classifications are well-supported by the expression and variance pattern analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Reprogramming trajectories are coupled with logic motifs, with AND-AND more likely enabling direct conversion; this allows both explaining observed trajectories and postulating achievable reprogramming based on GRN logic motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 connect the framework to reprogramming applications. C159 cites prior work on trajectory types, C160 is supported by the trajectory analysis in Figure 5\u2014figure supplement 2, and C161 is a logical extension with citation. The predictive utility for reprogramming is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Logic motifs are essential elements in GRNs, and systematic understanding of their role is prerequisite for recapitulating fate transition dynamics in synthetic biology; the work provides a blueprint for designing logic motifs with particular functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C165 discuss synthetic biology applications. C162 cites recent work on CIS networks in mammalian cells, C163 is a logical requirement, C164 is supported by the work's findings, and C165 describes the framework's utility. The claims appropriately position the work for future synthetic biology applications.",
+    "result_type": "MINOR"
+  }
+]

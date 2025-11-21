@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19"
+    ],
+    "result": "Mice successfully performed a cross-modal sensory selection task, switching between respond-to-touch and respond-to-light rules with approximately 75% correct performance for both block types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C19 establish the behavioral task design and demonstrate that mice achieved balanced performance (~75% correct) across both rules. The statistical comparison (p=0.56, paired t-test, n=12 mice) confirms no significant difference between rule types, supporting successful task execution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21"
+    ],
+    "result": "Single neurons in S1, S2, MM, and ALM showed rule-dependent modulation of tactile responses, with 18-33% of neurons significantly discriminating between tHit and tCR trials, predominantly showing enhanced responses to behaviorally relevant stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, and C21 collectively demonstrate rule-dependent single-neuron activity using ROC analysis with appropriate statistical corrections (Bonferroni). The finding that the majority of discriminative neurons showed AUC >0.5 provides directional evidence for relevance-based enhancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Pre-stimulus single-neuron activity encoded task rules more prominently in motor cortical areas (MM: 21.4%, ALM: 10.2%) than sensory areas (S1: 4.5%, S2: 2.5%), with appropriate negative and positive controls validating the analysis approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 demonstrate differential rule encoding across cortical areas using ideal observer analysis. The negative control (C24: no pre-stimulus stimulus discrimination) and positive control (C25: post-stimulus stimulus discrimination) validate the analytical method, strengthening confidence in the main finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C61"
+    ],
+    "result": "Pre-stimulus rule preference of individual neurons correlated with their subsequent touch-evoked responses, suggesting that configuration of pre-stimulus states influences rule-dependent sensory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 reports significant correlations between pre-stimulus rule preference and post-stimulus response differences, particularly strong in MM (r=0.93, p<0.001) and ALM (r=0.83, p<0.001). Claim C61 appropriately interprets this as evidence for pre-stimulus state configuration affecting sensory processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Pre-stimulus population activity in MM and ALM robustly decoded task rules (non-overlapping 95% CIs between true and shuffled data), while S1 and S2 showed limited discriminability (overlapping CIs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 demonstrate population-level rule encoding using LDA with appropriate cross-validation. The statistical criterion (non-overlapping bootstrap 95% CIs) clearly distinguishes robust decoding in motor areas from limited decoding in sensory areas, supporting a hierarchical organization of rule representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C60"
+    ],
+    "result": "Sessions with greater pre-stimulus separation between tHit and tCR trajectories showed larger post-stimulus trajectory divergence, indicating that pre-stimulus state differences predict subsequent processing differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 reports a significant difference (permutation test, p<0.001, 40 sessions) between top and bottom 50% groups ranked by pre-stimulus distance. Claim C60 appropriately interprets this as evidence linking pre-stimulus states to subsequent processing, though the analysis pools across areas which may obscure area-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C62",
+      "C63"
+    ],
+    "result": "Neural subspaces for tactile processing differed between rules in all cortical areas, with pre-stimulus and post-stimulus subspace separations being correlated, suggesting that cortical populations are 'pre-configured' according to the current rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 demonstrate rule-dependent subspaces using variance alignment analysis with appropriate controls. The correlation between pre- and post-stimulus subspace overlaps (r=0.68, p<0.001, C32) supports the interpretation (C62-C63) that pre-stimulus configuration shapes subsequent processing. However, the analysis excludes sessions with <10 units, which may introduce selection bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C58"
+    ],
+    "result": "Stimulus coding dimensions were aligned across rules in S1, S2, and MM but not ALM, while choice coding dimensions were not aligned across rules in any area, suggesting that rule-dependent subspace differences result from changes in choice representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 systematically examine stimulus and choice CDs using dot product analysis with shuffled controls. The finding that choice CDs differ across rules even when controlling for motor direction (C36) strengthens the conclusion (C58) that choice representation changes drive subspace differences. However, limited trial numbers for some analyses may affect reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C59"
+    ],
+    "result": "Pre-stimulus population states in MM and ALM shifted progressively during rule transitions in parallel with behavioral rule switching, as measured by classifier performance tracking the transition periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 demonstrate progressive neural state shifts using rank correlation (Kendall's tau) with 95% CIs excluding zero for both MM and ALM. The analysis appropriately defines transition periods based on behavioral markers (first false alarm, first hit), linking neural and behavioral dynamics (C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C65",
+      "C66",
+      "C64"
+    ],
+    "result": "Optogenetic inhibition of MM and ALM during the pre-stimulus period impaired tactile detection in the cross-modal selection task but not in a simple tactile detection task, indicating a specific role for pre-stimulus motor cortical states in rule-dependent sensorimotor transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 demonstrate task-specific effects of pre-stimulus inhibition with appropriate controls (sham, post-stimulus inhibition, simple detection task). Claim C65 rules out motor deficits, and C66 synthesizes the findings to support a rule-specific function. The comparison between tasks (C41, C66) is critical for establishing specificity, though the simple detection task used slightly different stimulus parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Pre-stimulus inhibition of MM and AMM (but not ALM) impaired visual detection, while PPC inhibition affected both tactile and visual detection, suggesting differential roles of motor cortical subregions and PPC in cross-modal sensory selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 report differential effects of inhibition across areas and modalities with appropriate statistical criteria (95% CIs not including zero). The findings suggest anatomical specificity, though the manuscript notes that MM contains whisker motor areas while AMM is more anterior, potentially explaining the modality differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Neural responses to tactile stimuli were similar between rewarded hits and unrewarded false alarms, and analysis was restricted to periods preceding 97% of lick onsets, indicating that reward and overt movement did not confound the observed rule-dependent neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 address potential confounds through appropriate control analyses. The permutation test with Bonferroni correction (C44) shows minimal reward effects, and the temporal restriction (C45) minimizes movement contamination. These controls strengthen confidence in attributing neural differences to rule-dependent processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C68"
+    ],
+    "result": "The main conclusion is that flexible action selection in response to sensory input occurs via rule-dependent configuration of preparatory states in the motor cortex, specifically through pre-stimulus population states that shape subsequent sensorimotor transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C68 represent the study's central conclusion, synthesizing findings from neural recordings (single-unit and population analyses), subspace analyses, and optogenetic perturbations. The convergent evidence from multiple experimental approaches (correlational and causal) supports this mechanistic interpretation, though alternative mechanisms (e.g., subcortical contributions) are acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Tactile gating likely occurs upstream of ALM, consistent with anatomical connectivity showing somatosensory-motor cortex connections for tactile processing and visual cortex-ACC connections for visual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 infers upstream gating from reduced but observable tactile responses in ALM during respond-to-light blocks, supported by citations. Claims C47-C48 provide anatomical context from prior work and confirm visually evoked activity in AMM. The inference is reasonable but indirect, as the study did not directly test upstream gating mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The manuscript speculates that MM and ALM may receive rule information from medial prefrontal cortex and that redundant circuits or recurrent loops with subcortical regions may maintain rule information, though these mechanisms were not directly tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C55 are explicitly speculative (\"it is possible that\") and supported only by citations to prior work, not by data from the current study. While these are reasonable hypotheses for future investigation, they represent untested possibilities rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C56"
+    ],
+    "result": "The introduction and discussion contextualize the findings within established literature on rule-based behavior, sensorimotor pathways, neural population dynamics, and preparatory activity across species and brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C18, C49-C51, C54, C56) appropriately cite prior literature to establish context and compare findings. They represent accurate summaries of previous work rather than novel findings from this study. The citations appear appropriate for establishing the scientific background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C67"
+    ],
+    "result": "The study concludes that setting up appropriate initial states is a general strategy for context-specific processing and that MM and ALM play important roles in rule-dependent sensorimotor transformations within cortical networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C67 synthesize the study's findings with prior literature to propose general principles. C67 appropriately integrates multiple lines of evidence (pre-stimulus rule dependence, correlation with tactile processing, optogenetic necessity) to support the conclusion about MM and ALM's role. C57 extends this to a broader principle, which is reasonable given convergent evidence from this and prior studies.",
+    "result_type": "MAJOR"
+  }
+]

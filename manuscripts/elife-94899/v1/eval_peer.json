@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study cohort consisted of 115 participants with HIV on ART (median 9 years), with 77% male, 60% black, and median age 45 years.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledged the study as 'a large cross-sectional cohort' and noted it was 'notably inclusive of populations underrepresented in HIV science.' The cohort characteristics were not questioned or challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The percentage of intact proviruses exhibited a biphasic decay pattern over time on ART, with best-fit model showing breaks at 1.6 and 9 years. Early ART participants (0-6 years) showed high intact fractions (50-90%), while those on ART >6 years showed lower fractions (0-30%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the biphasic decay findings or the temporal patterns described. The modeling approach was accepted after authors addressed initial methodological concerns about normalization and log-scale analysis (noted as 'Edit, fixed').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C26",
+      "C29"
+    ],
+    "result": "Total HIV DNA frequency showed weak but significant correlations with immune activation markers (NKG2A+, PD-1+, HLA-DR+ T cells), negative correlations with naive T cell frequencies and CD38 expression, and inverse correlation with CD4/CD8 ratio. The magnitude of correlations was typically stronger for total HIV DNA than intact HIV DNA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledged these associations but emphasized their weakness: 'The spearman coefficients are ~0.3, (somewhat weak, and acknowledged as such)' and 'Despite the detailed experiments and methods, there was not a very strong signal.' The authors themselves acknowledged 'The associations...were fairly weak, despite being statistically significant.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C30"
+    ],
+    "result": "CD127\u2212 CD4 T cell frequencies were uniquely positively correlated with intact but not total HIV DNA, suggesting CD127 expression is uniquely associated with the intact reservoir.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted 'Certain markers were identified for further investigation' and did not challenge this specific finding. The unique association of CD127 with intact reservoir was accepted as a notable exception to the general pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "LOCO analysis revealed age and race as important covariates for immunophenotypes (particularly naive and central memory T cells, KLRG1), biological sex for NK cell NKG2A expression, and total HIV DNA as important for predicting specific immune features. Percentage intact HIV DNA contributed little to predictive power.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the LOCO analysis findings. The limited contribution of percentage intact HIV DNA aligns with reviewers' observation that 'categorical classification is for now hard to interpret.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ROC curve analysis identified 57 host variables with AUC >0.6 for reservoir metrics. Top classifiers for total HIV DNA included %NKG2A+CD4 T (AUC=0.70), for intact HIV DNA included %CD127+ CD4 T (AUC=0.71), and for percentage intact included years of ART (AUC=0.72). More variables exceeded AUC >0.6 for total (44) than intact (19) or percent intact (23).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers did not directly challenge these AUC values, they noted the overall weak predictive signal and that 'predictive models reach 70-80% prediction levels, though of sometimes categorical variables that are challenging to interpret.' The modest AUC values align with concerns about weak associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Unsupervised clustering using total HIV DNA-associated features identified two distinct clusters: Cluster 1 (n=50) with smaller total reservoir but higher percentage intact, and Cluster 2 (n=65) with larger total reservoir but lower percentage intact. Cluster 2 showed lower naive T cells, higher exhaustion markers, older age, longer ART, and lower CD4 nadir. Cannabis users were enriched in Cluster 1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the clustering analysis findings. The identification of two clusters was accepted as part of the comprehensive analytical approach, though reviewers noted overall that 'there was not a very strong signal' across analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Decision tree models achieved 82-84% accuracy in classifying high vs. low reservoir status using 4-5 immune variables. For total HIV DNA, key variables were CD8 T frequency, CD4 nadir, %CD38+HLA-DR\u2212 CD8 T, and %NKG2A+ CD4 T. For intact HIV DNA, key variables included %Tn CD8 T, HIV-specific CD4 T responses, %CD127+CD4 T, and CD4 nadir. For percentage intact, years of ART was most important.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers expressed concern about the categorical classification approach: 'categorical classification is for now hard to interpret' and 'the qualitative characterization of low/high reservoir is not standard.' They noted 'Given the continuous nature of these data it seems throughout that predicting above/below median is a little hard to translate into clinical meaning.' The 82-84% accuracy was acknowledged but questioned for utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C65"
+    ],
+    "result": "Logistic Regression achieved highest mean classification accuracy (69.31%) for total reservoir frequency, with LR models predicting high vs. low reservoir status with ~70% accuracy on average across all three reservoir metrics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted 'predictive models reach 70-80% prediction levels' but emphasized that 'the more powerful ML algorithms do not seem to outperform more classic regression methods' and questioned the utility given that 'they are not magical and cannot reveal strong relationships that fundamentally do not exist.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study's own limitations include weak associations despite statistical significance, modest ML model predictive ability (70%), likely insufficient cohort size for accurate ML models, and gender imbalance (mostly male participants) that could bias results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly agreed with these limitations, stating 'the authors have nicely adjusted their wording and fairly describe the results of their study' and noting 'Despite the detailed experiments and methods, there was not a very strong signal.' The sample size and gender imbalance concerns were implicitly supported by reviewer comments about limited utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Both intact and defective proviruses contribute to the immune signature of HIV latency during long-term ART, supporting a model where ongoing reservoir-immune cell interactions drive persistent CD4 T cell activation, albeit a relatively minor association.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledged the findings but emphasized their limited strength: 'an overall non-obvious relationship between immune markers and HIV reservoirs has been shown previously' and the associations observed were 'fairly weak.' The model is presented cautiously by authors ('albeit a relatively minor one') which aligns with reviewer skepticism about clinical significance.",
+    "result_type": "MAJOR"
+  }
+]

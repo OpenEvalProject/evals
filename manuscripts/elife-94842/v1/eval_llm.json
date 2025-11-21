@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13"
+    ],
+    "result": "Sequence analysis reveals that TRBP2-dsRBD1 and dsRBD2 share 30% identity and 38% similarity, with both domains containing conserved RNA-binding regions 1 and 3, but dsRBD1 harbors a P56Q mutation in region 2 while dsRBD2 maintains the canonical GPxH motif. Additionally, dsRBD2 contains a KR-helix motif and has a canonical-length loop 2, one residue longer than dsRBD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C13 are well-supported by sequence alignment data presented in Figure 1B and text. The sequence comparison is straightforward and the identification of conserved motifs and mutations is clearly documented. The structural implications are appropriately discussed with reference to known properties of proline and the KR-helix motif.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "TRBP2-dsRBD2 exists as a monomeric, well-folded protein in solution with 89% backbone resonance assignment achieved. The CS-Rosetta structure matches the characteristic dsRBD fold with RMSD of 1.284 \u00c5 to the previously reported structure (2CPN), and aligns with dsRBD1 with RMSD of 0.894 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 are supported by complementary biophysical data including SEC-MALS (C6), NMR HSQC spectra (C7), resonance assignment statistics (C8-C9), and structural comparisons (C10-C12). The RMSD values indicate good structural agreement, and the assignment statistics are typical for NMR studies of this size protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "MD simulations reveal that dsRBD2 is overall more rigid than dsRBD1, with average core RMSF of 0.22 nm versus 0.43 nm for dsRBD1. However, loop 2 of dsRBD2 exhibits high flexibility (RMSF 0.49 nm), which may facilitate strong contacts with RNA minor grooves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by MD simulation data shown in Figure 2. The RMSF analysis is appropriate and the comparison between domains is clear. However, C17 is speculative about functional implications. The simulations were performed in triplicate and showed stability (C18), which strengthens confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "NMR relaxation measurements at ps-ns timescale show that dsRBD2 has average R1 rates of 1.43 \u00b1 0.05 s\u207b\u00b9, similar to dsRBD1 (1.52 \u00b1 0.03 s\u207b\u00b9), but significantly higher heteronuclear nOe values (0.73 \u00b1 0.03 vs 0.63 \u00b1 0.02), indicating a more rigid core in dsRBD2 at picosecond timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are well-supported by NMR relaxation data measured at two field strengths (600 and 800 MHz) shown in Figure 3. The measurements include appropriate error analysis using duplicate data points and Monte Carlo simulations. The comparison between domains is statistically meaningful given the reported standard errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Extended model-free analysis reveals that RNA-binding regions (\u03b11, loop 2, \u03b12) of dsRBD2 show higher rigidity than dsRBD1, with a more compact structure (\u03c4c = 7.3 ns vs 7.64 ns) and higher thermal stability (Tm = 55\u00b0C vs 45\u00b0C), attributed to stabilizing interactions involving W173.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by model-free analysis of relaxation data and CD spectroscopy. The \u03c4c values suggest a more compact dsRBD2, though the difference is modest. C26 mentions CD data that are not shown ('data not shown'), which is a weakness. C27 relies on citation to previous work for the W173 stabilization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Analysis of \u03bcs-ms timescale dynamics shows that dsRBD2 has significantly lower conformational flexibility than dsRBD1, with only 7 residues fitting Rex-containing models versus 11 in dsRBD1, and no dispersion observed in CPMG experiments for either domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by extended model-free analysis (C28-C29) and CPMG relaxation dispersion data (C30-C31) shown in Figure 3 supplements. The absence of CPMG dispersion indicates that slower ms timescale motions are not present, which is clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "HARD NMR experiments reveal that dsRBD2 exhibits limited conformational exchange (10 \u03bcs to 10 ms timescale) with only 3 residues showing kex > 5000 Hz and >10% pB (R200, L212, R224), while dsRBD1 shows extensive exchange with 15 such residues distributed throughout the backbone, including all three RNA-binding regions with kex > 50,000 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are well-supported by HARD NMR data shown in Figures 4 and 5. The geometric approximation method was used to extract kex and pB values with appropriate error analysis (Monte Carlo simulations, n=500). The stark difference between domains (3 vs 15 residues) is clearly demonstrated and mapped onto structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "NMR titrations with various RNA constructs show that amide signals broaden at low RNA concentrations (0.1 equivalents), with broadening occurring throughout the entire backbone rather than just RNA-binding residues, suggesting slow-to-intermediate exchange and potential protein diffusion along RNA length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by NMR titration data and multiple citations to similar observations in other dsRBPs. The interpretation of line broadening as evidence for protein diffusion (C38) is reasonable but indirect, relying on analogy to smFRET studies by Koh et al. The recovery of signals with shorter RNA (D12) supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ITC measurements demonstrate that TRBP2-dsRBD2 binds D12 RNA with Kd = 1.18 \u00b1 0.32 \u03bcM through an enthalpy-driven mechanism (\u0394H = -10.12 \u00b1 0.43 kcal/mol, negative \u0394S), while TRBP2-dsRBD1 shows no significant heat exchange, indicating dsRBD2 binds more efficiently to short perfect A-form duplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are well-supported by ITC data shown in Figure 6 with measurements performed in triplicate. The differential binding is clear, though the inability to fit dsRBD1 data is noted. The thermodynamic interpretation (enthalpy-driven, no hydrophobic contribution based on negative \u0394S) is standard but could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Upon D12 RNA binding, dsRBD2 shows unperturbed R1 rates and nOe values but significantly increased R2 rates (10.92 \u00b1 0.37 to 20.04 \u00b1 0.11 s\u207b\u00b9) and increased \u03c4c (7.3 to 10.9 ns), indicating perturbation in \u03bcs-ms timescale dynamics and apparent molecular weight increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by NMR relaxation measurements in RNA-bound state shown in Figure 3. The selective increase in R2 rates while R1 and nOe remain constant is consistent with Rex contributions. The \u03c4c increase suggests complex formation, though the limiting RNA concentration (0.05 equivalents) raises questions about saturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Extended model-free analysis of RNA-bound dsRBD2 shows overall rigidification (higher S\u00b2 values) with Rex induction in multiple regions including \u03b11 (V168), \u03b21 (Y178), \u03b22 (T195), \u03b23 (I204), and \u03b12 (N216, L223), indicating that RNA binding affects not only RNA-binding residues but the entire core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by extended model-free analysis data. The observation that Rex is induced beyond RNA-binding regions is interesting and well-documented. However, the low RNA concentration (0.05 equivalents) used to avoid line broadening may complicate interpretation of the bound state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "CPMG relaxation dispersion experiments show no effective dispersion in R2,eff rates with increasing \u03bdCPMG for RNA-bound dsRBD2, indicating absence of motions in the slower ms timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by CPMG data shown in Figure 3 supplement 5. The absence of dispersion is clearly demonstrated and consistent with the apo state, indicating that RNA binding does not induce slower ms timescale motions detectable by CPMG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "HARD NMR reveals massive induction of 10 \u03bcs to 10 ms conformational dynamics upon RNA binding, with notable perturbations (\u0394kex > 10,000 Hz) in \u03b11 (G162, L167), loop 3 (V198), \u03b23 (E203, G207), and \u03b12 (A213, A219), while showing suppression in \u03b21 (V180), loop 3 (R200), and \u03b12 (L212, R224), demonstrating a relay of exchange between spatially proximal residue pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are well-supported by HARD NMR data shown in Figures 5 and 7. The observation of both enhancement and suppression of exchange (C55-C59) is particularly interesting, suggesting allosteric communication. The 'relay of exchange' concept is novel and well-documented with specific residue pairs. However, the extent of perturbation is notably lower than in dsRBD1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Comparison of RNA-induced dynamics shows that dsRBD2 undergoes enhanced conformational exchange in the 10 \u03bcs-10 ms timescale but with significantly lower amplitude (\u0394kex 10-50 kHz) than dsRBD1 (>50 kHz for at least 10 residues), indicating that dsRBD2 samples limited conformational space both in absence and presence of RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by comparative analysis of HARD NMR data between domains. The quantitative comparison of \u0394kex values provides clear evidence for differential dynamics. This is a key finding supporting the main conclusion about differential conformational plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose a model where dsRBD2 samples limiting conformational space while dsRBD1 recognizes diverse RNA substrates through high conformational plasticity, with dsRBD1 exploring RNA via dynamic interactions and dsRBD2 holding RNA via stronger canonical contacts, and RNA-induced conformational exchange potentially facilitating diffusion along RNA length to assist Dicer-mediated cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 represent reasonable interpretations of the comprehensive dynamics data, but C67 is highly speculative about functional implications for Dicer-mediated cleavage. While the differential dynamics are well-established, the connection to biological function (diffusion, Dicer assistance) lacks direct experimental validation. The model is plausible but requires additional functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The abstract claims are tested and supported: TRBP displays dynamic adaptability through differential binding affinity to 12-bp dsRNA, dsRBD2 depicts constrained conformational plasticity compared to dsRBD1, and RNA-induced conformational exchange in dsRBD2 remains modest compared to dsRBD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 summarize the main findings presented in the abstract. These are well-supported by the comprehensive data throughout the manuscript including ITC (C69), NMR dynamics at multiple timescales (C70), and HARD NMR (C71). The hypothesis (C68) is appropriately tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The introduction provides extensive background on dsRBDs, their structure, RNA-binding properties, classification into types A and B, and the specific properties of TRBP and its homologs, establishing context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C86 represent background information from the introduction, all supported by appropriate citations to previous literature. These establish the scientific context and rationale for the study. The citations appear appropriate and the background is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Previous work by the authors established that TRBP2-dsRBD1 adopts a conformationally dynamic structure with \u03bcs timescale motions throughout the backbone (kex > 50 kHz in RNA-binding sites) to recognize topologically different dsRNA structures, and the current study proposes that differential dynamics in the two dsRBDs enables recognition of diverse RNA substrates and may lead to diffusion along RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 accurately represent previous work by the authors (Paithankar et al., 2022). Claim C90 represents the overarching hypothesis of the current manuscript, which is tested through the comprehensive dynamics studies. The connection to previous work provides important context.",
+    "result_type": "MINOR"
+  }
+]

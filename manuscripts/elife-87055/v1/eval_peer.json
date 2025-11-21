@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C46"
+    ],
+    "result": "The model demonstrates that firing rate adaptation in a continuous attractor neural network produces oscillatory tracking, where the activity bump oscillates around external input. This generates forward and backward sweeps that naturally account for theta phase precession and procession of individual neurons, explaining experimentally observed theta sweeps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly support this as the main result. The editor states it provides 'valuable new insights' with 'convincing evidence.' Reviewer 1 calls findings (1) and (2) (forward and backward sequences) 'the main result of the paper' that is 'likely to be of interest.' Reviewer 2 describes the model as having 'surprisingly large explanatory power' and praises the 'simple yet rather illuminating competition between internally driven and externally driven dynamical trends.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C34",
+      "C35",
+      "C52",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "By tuning adaptation strength, the model explains the difference between bimodal cells (showing interleaved phase precession and procession with two firing peaks per theta cycle) and unimodal cells (where phase precession predominates). There is a continuum between these cell types controlled by adaptation strength.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly lists this among predictions 'especially interesting to experimentalists' starting at line 366. Reviewer 2 states 'the authors can account for the emergence of unimodal and bimodal cells' as part of the model's strengths. No reviewer challenges this finding, and it is presented as a natural consequence of the oscillatory tracking mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "The model explains constant cycling of theta sweeps in a T-maze environment, where the decoded position alternately propagates down different arms in successive theta cycles. This produces 'cycle skipping' effects at the single-cell level and cyclical patterns in sweep lengths.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly mentions 'constant cycling of sweeps across different arms of a T-maze' as a key insight. Reviewer 1 acknowledges the authors 'give credit for showing how this constant cycling can occur across individual theta cycles,' though notes similarity to Romani & Tsodyks 2015. Reviewer 1 also asks about the cyclical sweep length pattern (Fig 5b), suggesting it should be 'remarked upon and included in the discussion,' indicating acceptance of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The model explains speed modulation of place cell firing frequency, showing a linear relationship between firing frequency and running speed. This emerges as a consequence of oscillatory tracking rather than being the cause of phase shift, distinguishing it from dual oscillator models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states 'the section on the speed dependence of theta (starting with line 327) was very hard to understand' and requests 'a more graphical explanation of the phenomenon.' This indicates the reviewer accepts the result exists but finds the explanation unclear. The reviewer does not challenge the validity of the finding itself, only its presentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C77",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The model reproduces continued phase shift after transient hippocampal silencing, showing that firing phase tracks the animal's physical location independent of perturbation duration. This demonstrates a one-to-one correspondence between firing phase and traveled distance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 expresses difficulty understanding this result: 'I had a hard time understanding how the Zugaro et al., (2005) hippocampal inactivation experiment was accounted for by the model.' The reviewer's intuition suggests 'there is nothing to keep track of where the bump should be when the activity comes back on line' and requests more explanation. This indicates uncertainty about the mechanism rather than rejection of the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C38",
+      "C119"
+    ],
+    "result": "When adaptation is strong enough, the network bump can travel spontaneously in the attractor space (intrinsic mobility). This occurs because neurons at the bump center receive the strongest adaptation, destabilizing the bump at its current location.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly describes this as a key strength: 'For strong adaptation/weak external input, the network naturally exhibits an internally generated, travelling-wave dynamics along the attractor with some characteristic speed.' This is presented as part of the model's three-fold strengths and is not challenged by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C112"
+    ],
+    "result": "Due to delayed adaptation and asymmetric suppression effects, the bump height in forward sweeps is always higher than in backward sweeps. Forward sweeps always strongly suppress backward sweeps because oscillatory tracking begins with a forward sweep.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly lists this as 'a prediction that the bump height in the forward direction should be higher than in the backward direction' among predictions that 'would be especially interesting to experimentalists.' The reviewer requests these be 'listed more prominently in a separate section in the discussion,' indicating acceptance of the finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C113"
+    ],
+    "result": "The model predicts that bimodal cells will have two peaks in firing frequency (one above and one below LFP theta baseline), with precession-associated frequency positively correlating with running speed and procession-associated frequency negatively correlating. Both phase precession and procession continue after hippocampal perturbation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly includes 'predictions about bimodal and unimodal cells starting with line 366' among predictions that should be listed prominently for experimentalists. No reviewer challenges these predictions, treating them as natural extensions of the model's core mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Both short-term depression (STD) and spike frequency adaptation (SFA) can produce bi-directional sweeps within a CANN model, but SFA uniquely enables uni-directional sweeps without external theta inputs. STD and SFA differ mechanistically in how they attenuate neural activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 challenges an 'unsubstantiated claim in the paragraph beginning with line 413 that the Tsodyks and Romani (2015) model could not account for forwards and backwards sweeps,' stating 'it is far from obvious to me that both forward and backward sweeps are not possible in the Tsodyks and Romani model.' The reviewer demands the authors 'either prove that this is the case (with theory or simulation) or excise this statement.' This indicates uncertainty about the claimed distinction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "In a 2D CANN model, the activity bump sweeps along the tangent direction of the movement trajectory, similar to the 1D case, extending the mechanism to open field environments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is presented as a preliminary result and no reviewer challenges it. The claim is modest (extending to 2D) and follows naturally from the 1D mechanism. The lack of reviewer comment suggests implicit acceptance of this straightforward extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The model suggests that online theta sweeps and offline replay may share common mechanisms based on firing rate adaptation. Theta sweeps arise from interplay between adaptation and external input, while replay arises from adaptation alone when external input is weak.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges this hypothesis. It is presented as a natural extension of the model's core mechanism, and the authors provide experimental citations supporting coordinated emergence of theta sequences and replays. The lack of reviewer critique suggests acceptance of this as a reasonable speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "By setting parameters appropriately, the bump can oscillate in the theta band (6-10 Hz). While LFP theta is not explicitly modeled, theta sweeps share the same oscillation frequency as LFP theta because they are bounded by individual LFP theta cycles experimentally.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises concerns about model tuning: 'the system needs to be tuned to exhibit oscillation within the theta range and that this tuning involves a priori variable parameters such as the external input strength. Is the oscillating-tracking behavior overtly sensitive to input strength variations?' The reviewer also notes 'The author mentioned that an external pacemaker can serve to drive oscillation within the desired theta band but there is no evidence presented supporting this.' This indicates uncertainty about the robustness of theta-frequency oscillations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The CANN is an idealized model where many biological details are missing, including the assumption of translation-invariant connections. Such connection patterns may be learned through synaptic plasticity during active navigation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly raises this as 'the main limitation of this work is that it deals with a very idealized model' and questions 'Would the oscillating tracking behavior persist in the presence of connection heterogeneities?' This is presented as a limitation acknowledged by the authors themselves. The reviewer expresses uncertainty about whether the behavior would persist in more realistic models.",
+    "result_type": "MINOR"
+  }
+]

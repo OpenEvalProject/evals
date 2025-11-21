@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C63",
+      "C64",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Three rhesus monkeys performed a token-based biased matching pennies task where they made choices to gain or lose tokens. Under saline control conditions, animals showed outcome-dependent choice behavior: they repeated choices that yielded tokens and switched away from choices that led to non-gain outcomes, with stronger switching after losses than neutral outcomes. The effects of past outcomes decayed exponentially over trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C47-C76 collectively describe the experimental design and baseline behavioral findings. The task design is clearly described with appropriate controls (saline sessions), and the behavioral patterns are quantified with regression analysis (Equation 1, Figure 1C). The exponential decay of outcome effects is demonstrated empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Ketamine (0.5 mg/kg IM and 1 mg/kg IN) selectively reduced the punishing effect of non-gain outcomes, with significantly larger effects after losses than neutral outcomes. The modulation was larger for recent than remote outcomes and did not affect the time constant of memory decay. Both administration routes produced comparable plasma concentrations and behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 demonstrate ketamine's selective effect on negative outcome evaluation with appropriate statistical support (ANOVA, p<0.001 across animals). Claims C12-C13 and C67-C69 provide pharmacokinetic validation showing comparable drug exposure across routes and to human therapeutic doses. The parametric modeling (C15) appropriately isolates the initial impact effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C77",
+      "C78"
+    ],
+    "result": "The differential forgetting (DF) reinforcement learning model best fit the baseline behavioral data in all three animals. In this model, value functions for chosen and unchosen actions decay at different rates, with slower forgetting for chosen than unchosen actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe model selection results supported by BIC comparison (C78) across multiple model variants (Figure 3, Table 3). The DF model is established as the best baseline model, providing a foundation for analyzing ketamine effects. The approach follows standard RL modeling practices (C77).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C41",
+      "C42",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Ketamine's effects were best explained by valence-dependent changes in outcome evaluation. Under ketamine, value updates increased positively following all outcomes, but the change was larger for non-gain outcomes with the largest modulation after loss. This effect was consistent across all three animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C41-C42 describe the best-fitting ketamine model (K-model 4 or 7) with appropriate model comparison (Figure 4, Table 3). Claims C79-C80 acknowledge that for monkey P, two models fit similarly (dBIC=3.99), but both support the same interpretation. Claim C81 appropriately concludes consistency across subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C82"
+    ],
+    "result": "Ketamine did not significantly change animals' motivation to earn reward, behavioral perseveration, or other cognitive aspects of learning including memory decay rates and temporal credit assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C82 are supported by model comparison analyses showing that models incorporating changes in motivation, memory, or temporal credit assignment did not fit the data better than the valence-dependent outcome evaluation model (Figure 4, Table 2). This represents appropriate null findings from systematic model testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C65",
+      "C66"
+    ],
+    "result": "Ketamine induced ocular nystagmus during peripheral fixation, with significantly larger centripetal eye drift under ketamine compared to saline. The magnitude of nystagmus was larger with IM than IN administration. Both nystagmus and negative outcome evaluation effects peaked and waned within 1 hour after injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe oculomotor side effects with appropriate statistical support (ANOVA, p<0.001; t-test, p<0.001) and clear methodology (C65-C66). The time course analysis (Figures 6-7) demonstrates parallel temporal dynamics for nystagmus and behavioral effects, though the claims appropriately note these may reflect different mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C32",
+      "C46"
+    ],
+    "result": "Ketamine-induced fixation errors decreased as animals owned more tokens and were closer to reward, suggesting animals could counter this side effect with strong motivation. However, ketamine's modulation of loss evaluation did not change with motivation level, indicating separability of the potentially antidepressant effect from oculomotor side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by linear regression analyses (p<0.001 for fixation errors, p>0.25 for loss evaluation) shown in Figure 8. Claims C31-C32 and C46 appropriately interpret this dissociation as evidence that the behavioral effect on outcome evaluation is independent of oculomotor side effects and motivation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C59"
+    ],
+    "result": "Ketamine acutely reduced the adverse effect of undesirable outcomes (losses) without significantly affecting evaluation of gains, behavioral perseveration, motivation, or cognitive aspects of learning such as temporal credit assignment and memory time scales. This effect was independent of other side effects like ocular nystagmus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C59 synthesize the main findings, which are supported by the regression analyses (C10-C11), RL modeling (C18-C20), and dissociation from side effects (C25-C27). These summary claims accurately reflect the convergent evidence from multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "While ketamine's antidepressant effect in humans is reported to be sustained over a week, ketamine's effect on outcome evaluation in this study was acute and did not last over subsequent days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 appropriately cites prior literature (Zarate et al., 2006) for sustained clinical effects. Claim C37 is supported by data shown in Figure 9 demonstrating no carryover effects in sessions >1 day after ketamine. This temporal dissociation is important for interpreting the acute behavioral findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C55"
+    ],
+    "result": "The attenuation of initial impact of loss had longer-term effects beyond initial evaluation due to slowly decaying memory. The authors propose that ketamine's acute effect in reducing the initial impact of negative events could potentially mediate longer-term antidepressant effects by mitigating cumulative effects of those events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C38 is supported by the data showing slow memory decay (Figure 1C). However, claim C55 is explicitly speculative (\"could potentially mediate\") and represents a hypothesis rather than a demonstrated result. The proposed mechanism linking acute to long-term effects requires further validation and is appropriately presented as discussion rather than established finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The results are consistent with previous findings that ketamine affects integration of information for decision but not the learning process itself. The memory of affective events and their associations may be more resistant to acute disruption by NMDA receptor blockade than affectively neutral information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 appropriately compares findings to prior work (Scholl et al., 2014). Claim C44 is a reasonable interpretation supported by the finding that temporal credit assignment and memory decay were not affected (C82) while outcome evaluation was modulated (C10). The inference is appropriately qualified (\"might be\").",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study demonstrates the sensitivity and potential of the non-human primate model for assessing behavioral and systems-level mechanisms of antidepressant action and investigating the pathophysiology of depression, particularly when combined with tools for large-scale neural recording and circuit manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by the successful demonstration of specific, quantifiable behavioral effects of therapeutic ketamine doses in a complex decision-making task. The study shows that detailed computational modeling can dissect drug effects on specific cognitive/affective processes in primates, validating the approach for future mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C33",
+      "C34",
+      "C35",
+      "C39",
+      "C40",
+      "C45",
+      "C57",
+      "C58"
+    ],
+    "result": "Background claims establish that ketamine is an NMDA receptor antagonist and rapid-acting antidepressant, that depression involves negative bias in emotional processing, and that acute behavioral effects of ketamine have been difficult to isolate from dissociative side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C33-C40 appropriately cite established literature to provide context. Claims C57-C58 correctly identify a gap in the field regarding acute behavioral effects. These background claims are well-supported by citations and provide appropriate motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The disruption-resistant affective memory might pose challenges in treating depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is speculative and extrapolates from the finding that affective memory appears resistant to acute ketamine effects (C44). While this is a reasonable hypothesis for discussion, it is not directly tested in the study and represents future work rather than an established result.",
+    "result_type": "MINOR"
+  }
+]

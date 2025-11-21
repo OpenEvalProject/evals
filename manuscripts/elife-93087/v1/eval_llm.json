@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "HA cartilage exhibits severe damage compared to OA, characterized by hemosiderin deposition, subchondral bone loss, sGAG depletion, decreased COL2A1, increased MMP13, and elevated DNMT1 and DNMT3A protein levels, with no change in DNMT3B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are supported by multiple complementary techniques (histology, MRI, IHC staining) with quantification shown in Figure 1. The data consistently demonstrate severe cartilage pathology in HA compared to OA, with appropriate statistical testing (p<0.01, p<0.001). The increased DNMT1/3A without DNMT3B change provides a foundation for the methylation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Genome-wide DNA methylation analysis identified 1228 significant DMRs between HA and OA cartilages, with 69.95% hypermethylated and 30.05% hypomethylated, predominantly located in gene regulatory regions (93.49%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 are supported by genome-wide methylation profiling using 850K ChIP with appropriate statistical correction (Benjamini & Hochberg, p<0.05). The bimodal distribution, PCA separation, and genomic feature enrichment are consistent with expected methylation patterns. However, the small sample size (n=5 per group) is a limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Functional enrichment analysis revealed that DMR-related genes are significantly enriched in ECM organization, skeletal system development, ECM-receptor interaction, and PI3K-Akt signaling pathways, including known cartilage matrix genes COL1A1, COL1A2, and COMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by GO and KEGG pathway analyses with significant p-values (5.2\u00d710\u207b\u2076 and 5.3\u00d710\u207b\u2074). The enrichment of ECM-related pathways is biologically plausible given the cartilage degeneration phenotype. The involvement of COL1A1, COL1A2, and COMP is supported by appropriate citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C24"
+    ],
+    "result": "TNXB is the top differentially methylated gene in HA cartilages and shows decreased expression in HA compared to OA cartilage, but not in synovial membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C24 are supported by methylation analysis and IHC staining (Figure 2F-G) showing significant reduction in TNXB in HA cartilage (p<0.001) but no difference in synovial membranes. This tissue-specific pattern strengthens the cartilage-specific role of TNXB in HA pathogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In F8-/- mice, needle puncture-induced joint bleeding caused severe hemarthrosis, promoted cartilage degeneration at 4 and 8 weeks, decreased Col2a1 and Tnxb expression, increased Mmp13, Dnmt1, and Dnmt3a expression, and induced subchondral bone loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 are supported by multiple complementary analyses (histology, IHC, micro-CT) in the F8-/- mouse model at two time points. The data show consistent progression of HA-like pathology with appropriate statistical testing (p<0.001). The model recapitulates key features observed in human HA, validating its use for mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "DNA methyltransferase inhibitors RG108 and 5-Aza-dc significantly upregulated Tnxb mRNA levels in chondrocytes, indicating that DNA methylation inhibits TNXB expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by qPCR data showing dose-dependent upregulation of Tnxb with two independent DNMT inhibitors (Figure 4-supplement 1). This pharmacological evidence directly links DNA methylation to TNXB expression regulation, though the inference in C33 would be strengthened by direct methylation measurements at the TNXB promoter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Tnxb knockdown in chondrocytes decreased Col2a1 expression and increased Mmp13 expression at both mRNA and protein levels, indicating that TNXB positively regulates chondrocyte ECM metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by multiple complementary techniques (qPCR, Western blot, immunofluorescence) showing consistent effects of Tnxb knockdown on ECM markers (Figure 4A-H). The conclusion in C38 is appropriately inferred from the observed changes in anabolic (Col2a1) and catabolic (Mmp13) markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In vivo Tnxb knockdown in F8-/- mice accelerated HA development, causing more severe cartilage degeneration, decreased Col2a1, increased Mmp13, and reduced subchondral bone volume at 4 weeks post-injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by in vivo AAV-mediated knockdown experiments with histological, IHC, and micro-CT analyses (Figure 4I-L, supplement 2). The data demonstrate that Tnxb loss-of-function accelerates HA pathology, providing strong evidence for its protective role. Statistical significance is appropriate (p<0.01, p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Blood exposure and Tnxb knockdown induce chondrocyte apoptosis, as evidenced by increased TUNEL-positive cells, elevated pro-apoptotic markers (Bax, Cleaved-Caspase3), and decreased anti-apoptotic Bcl-2 in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are supported by TUNEL staining and Western blot/IHC analyses of apoptotic markers in both cultured chondrocytes and mouse cartilage (Figure 5A-L). The data consistently show increased apoptosis with Tnxb knockdown across multiple experimental systems with appropriate statistical testing (p<0.01, p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The PI3K/AKT signaling pathway is involved in HA cartilage degeneration, and Tnxb knockdown significantly decreased p-AKT1 levels while total AKT1 remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by KEGG pathway analysis, IHC staining, and Western blot data (Figure 5M-N, Figure 6A,D). The specific decrease in p-AKT1 without change in total AKT1 indicates regulation at the phosphorylation level. The pathway involvement is supported by both literature citations and experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "AKT agonist SC79 rescued the effects of Tnxb knockdown by upregulating Bcl-2 and Col2a1 while downregulating Bax, Mmp13, and Cleaved-Caspase9, indicating that TNXB regulates chondrocyte apoptosis and ECM degradation through AKT activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by rescue experiments using SC79 (Figure 6A-G) with appropriate dose validation (Figure 6-supplement 1). The pharmacological rescue provides strong evidence for the mechanistic link between TNXB and AKT signaling. Statistical testing shows significant effects (p<0.05, p<0.01, p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C102"
+    ],
+    "result": "This study provides the first comprehensive DNA methylation profile in HA progression, identifying TNXB as a key gene associated with HA, with decreased expression confirmed in both human and mouse HA cartilages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C102 are supported by the genome-wide methylation analysis and validation experiments across species. The novelty claim appears justified based on the literature review presented. However, the authors acknowledge the small sample size as a limitation for the methylation profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C103"
+    ],
+    "result": "Tnxb knockdown promotes ECM catabolism and chondrocyte apoptosis, accelerates HA development in F8-/- mice, and inhibits AKT1 activation, while AKT agonist rescues these effects, demonstrating that abnormal TNXB expression disrupts cartilage homeostasis through AKT1 suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 and C103 integrate multiple lines of evidence from in vitro and in vivo experiments, including loss-of-function and rescue studies. The mechanistic link through AKT1 is well-supported by the data. The conclusion is appropriately inferred from the collective evidence, though direct demonstration of TNXB-AKT1 interaction would strengthen the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "No significant alterations in TGF-\u03b2 signaling were observed in Tnxb-KD chondrocytes, despite TNXB's known role in blocking TGF-\u03b2 receptor interaction in endothelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by Western blot data (Figure 6-supplement 2) showing no change in p-Smad2 levels. This negative result is important as it suggests TNXB's mechanism in chondrocytes differs from its role in endothelial cells, supporting the AKT-mediated mechanism proposed by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "TNXB is suggested as a potentially novel therapeutic target for HA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is speculative and represents a future direction rather than a demonstrated result. While the data support TNXB's role in HA pathogenesis, therapeutic targeting would require additional studies including gain-of-function experiments, assessment of therapeutic window, and evaluation of potential side effects. The claim is appropriately framed as 'potentially novel' but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C22",
+      "C52",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background and contextual information about hemophilia, HA pathophysiology, DNA methylation mechanisms, TNXB family, and prior literature on related topics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C22, C52, C70-C129 represent background knowledge, literature context, and established scientific facts supported by appropriate citations. These claims provide necessary context for interpreting the novel findings but do not constitute primary results of this study. The citations appear appropriate and the background information is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C75",
+      "C76",
+      "C81"
+    ],
+    "result": "The identified HA-related DMRs show high enrichment in transcriptional start sites, suggesting DNA methylation is a critical mediator in HA pathology, with ECM-related genes as potential candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75, C76, and C81 are supported by the genomic feature distribution analysis and pathway enrichment results. The inference that DNA methylation is a 'critical mediator' (C76) is reasonable given the enrichment patterns, though the small sample size and lack of functional validation for most DMRs limits the strength of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "This study demonstrates for the first time a role of TNXB in cartilage homeostasis in vivo and in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by the functional validation experiments in both cultured chondrocytes and F8-/- mice. The novelty claim appears justified based on the literature review, as prior work on tenascin family members in cartilage focused on TNC rather than TNXB. The evidence from knockdown and rescue experiments provides strong support for TNXB's role in cartilage homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Remarkably increased apoptosis was observed following joint bleeding in F8-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by TUNEL staining data (Figure 5-supplement 1) showing increased apoptosis in the HA model. This observation provides important context for the subsequent mechanistic studies on TNXB's role in regulating chondrocyte apoptosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "AKT1 activation mediates the effect of TNXB on HA chondrocyte apoptosis and ECM catabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by the combination of loss-of-function (decreased p-AKT1 with Tnxb knockdown) and rescue (SC79 reverses Tnxb knockdown effects) experiments. The term 'mediates' is appropriate given the pharmacological rescue data, though direct biochemical evidence of TNXB-AKT1 interaction would strengthen the mechanistic understanding.",
+    "result_type": "MAJOR"
+  }
+]

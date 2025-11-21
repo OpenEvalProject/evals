@@ -1,0 +1,158 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C71",
+      "C72",
+      "C94",
+      "C95"
+    ],
+    "result": "The study introduces two new metrics: 'variant vulnerability' (the average susceptibility of an allelic variant across drugs in a panel) and 'drug applicability' (the average applicability of a drug across allelic variants). These metrics extend the concept of druggability to collections of drugs and genetic variants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Multiple reviewers acknowledge the conceptual value of the metrics, with one stating they are 'valuable new metrics' and another noting 'the strength of the result is in its conceptual advance.' However, all reviewers express concern that the utility and impact of these metrics remain undemonstrated. One reviewer states 'without this evidence, or some other type of empirical or theoretical support for the utility of these metrics, I am not fully convinced that these concepts have substantial impact,' and the editor notes the study 'fails to demonstrate the generality of the approach.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study analyzes data from 16 \u03b2-lactamase alleles across 7 \u03b2-lactam drugs/combinations, selected from a larger dataset (Mira et al. 2015) based on drugs that had significant negative effects on wild-type TEM-1 strains.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers strongly criticized the data selection approach. One reviewer states 'a clear explanation is still lacking' for why only 7 of 30 environments were selected, noting 'even for the selected data sets, not all points are significant compared to wild type.' The reviewer emphasizes this is 'a major concern' because the original study found differences between concentrations were comparable to differences between drugs, yet the authors 'cannot assess to what extent their metrics depend on drug concentration.' Another reviewer notes the 'small number of variant-drug-combinations' makes conclusions 'mostly tentative' and 'essentially anecdotal.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The allele MKSN (0110) displayed the lowest variant vulnerability with resistance to 3/7 drugs, while MKSD (0111) had the highest variant vulnerability. These alleles differ by a single mutation (N276D), demonstrating that a single mutation can significantly impact variant vulnerability through epistatic interactions with the genetic background.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not directly challenge these specific observations, they question the broader interpretation and significance. One reviewer notes that 'being based on only a handful of data points, both observations are essentially anecdotal and it is unclear what the reader is supposed to learn.' The limited dataset and lack of validation across other systems undermines confidence in the generalizability of these findings about single mutation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "TEM-1 (MEGN) and TEM-50 (LKSD) have low variant vulnerability values (ranked 11th and 12th), suggesting that evolved \u03b2-lactamases confer general survivability across drugs, consistent with the concept of cross-resistance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not directly address this finding, but their general critique of the limited dataset and anecdotal nature of conclusions applies. One reviewer states that observations 'being based on only a handful of data points, both observations are essentially anecdotal,' which would encompass this interpretation about TEM-1 and TEM-50. The lack of broader validation limits confidence in this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The lack of correlation between variant vulnerability values and those of nearest neighbors suggests the fitness landscape for variant vulnerability is rugged, where individual mutations contribute nonlinearly to susceptibility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not explicitly discuss this finding, but their concerns about the limited dataset and incomplete analysis apply. The interpretation of landscape ruggedness based on a small number of variants (16 alleles) without broader validation or connection to evolutionary outcomes remains tentative given reviewer critiques about demonstrating utility and generality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The amoxicillin/clavulanic acid combination (\u03b2-lactam plus \u03b2-lactamase inhibitor) had the highest drug applicability, affecting all 16 allelic variants, while amoxicillin alone had the lowest drug applicability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer specifically critiques this finding, noting that the authors write the observation 'fits intuition' but then 'in the Discussion this statement is partly retracted with reference to the piperacillin/tazobactam-combination which has low drug applicability.' The reviewer concludes 'being based on only a handful of data points, both observations are essentially anecdotal and it is unclear what the reader is supposed to learn.' This indicates the finding lacks sufficient support to draw meaningful conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Environmental epistasis analysis using LASSO regression reveals that the four-way interaction between all four loci has strong positive effects on growth in amoxicillin, cefotaxime, and ceftazidime (5.8, 8.4, and 5.5 standard deviations), but minimal effects on drugs with \u03b2-lactamase inhibitors. For amoxicillin/clavulanic acid, only two interactions have meaningful impact, with most interactions showing no or negative effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "One reviewer raises serious concerns about the epistasis analysis, stating it is 'incomplete in two ways.' First, 'Mira et al. pointed out that a fairly large fraction of the fitness differences between variants that they measured were not statistically significant. This information has been removed in the depiction...and it does not seem to be reflected in the results of the interaction analysis.' Second, 'the interpretation of the coefficients obtained from the epistatic decomposition depends strongly on the formalism that is being used,' and the explanation is insufficient. The reviewer provides a specific example: 'The substitution C (G238S) is well known to have a strong positive effective in cefotaxime, but the corresponding coefficient is essentially zero. So whatever the LASSO regression does, it cannot simply measure the effect on growth.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C87"
+    ],
+    "result": "The study demonstrates applicability to other drug classes by analyzing 16 alleles of P. falciparum dihydrofolate reductase with two antifolate drugs (pyrimethamine and cycloguanil), showing the methods can broadly apply to other study systems.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer acknowledges this addition, stating 'In the revised version, they investigate a second drug class that targets dihydrofolate reductase in Plasmodium' and notes 'the concepts seem to work for beta-lactam resistance and DHFR inhibitors in a protozoan.' However, the reviewer emphasizes 'I think that the utility of the terms will be more comprehensively demonstrated by using examples across a breadth of drug classes' and concludes 'The impact of the work on the field depends on a more comprehensive demonstration of the applicability of these new concepts to other drugs. This would be demonstrated in future work.' This indicates the generalizability remains insufficiently demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The study explicitly states it does not aim to provide insight about treatment regimes or inform real-world use of specific antimicrobials, and that direct clinical applications are limited. Instead, it offers an evolutionary perspective with metrics agnostic to drug type.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge and accept this limitation. One reviewer notes 'The authors are clear about the limitations of their approach - they are not looking for immediate clinical applicability.' This self-imposed limitation is not challenged by reviewers, though they do critique whether the metrics achieve even their stated goal of providing useful evolutionary perspective without validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study supports prior work highlighting the importance of higher-order interactions in antimicrobial resistance evolution and the existence of G\u00d7G\u00d7E interactions (environmental epistasis) as meaningful characteristics of fitness landscapes in microbial systems, contributing to recent evolutionary perspectives on antimicrobial resistance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the study 'addresses an interesting topic and underscores the need for evolution-based metrics,' they question whether the study successfully demonstrates this contribution. One reviewer notes the work 'could be improved with additional analysis that tie the new metrics to evolutionary outcomes,' and without this, they are 'not fully convinced that these concepts have substantial impact.' The connection to prior work on epistasis is undermined by the incomplete epistasis analysis critiqued by another reviewer.",
+    "result_type": "MINOR"
+  }
+]

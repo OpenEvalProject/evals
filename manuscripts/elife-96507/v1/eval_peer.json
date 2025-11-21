@@ -1,0 +1,141 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C71"
+    ],
+    "result": "The study identifies H87 and D342 as extracellular gate triggers controlling the OCC\u2194OF transition. Unbiased MD simulations show that protonation of both H87 and D342 allows spontaneous opening from OCC to OF, while individual protonation keeps the gate closed. 2D-PMF calculations reveal that H87 protonation raises the OCC basin by ~4 kcal/mol and decreases the barrier to ~1.5 kcal/mol, while D342 protonation lowers the barrier by ~1 kcal/mol without affecting relative free energies. The effects are additive, abolishing the metastable OCC state when both are protonated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accept these findings as convincing. Reviewer 1 states the study 'uses enhanced-sampling molecular dynamics (MD), backed by cell-based assays, revealing the importance of protonation of selected residues for PepT2 function' and notes 'the simulation approaches are convincing.' Reviewer 2 acknowledges the authors 'identified extra-cellular (H87 and D342) and intra-cellular (E53 and E622) triggers' and 'validated these triggers using free energy calculations.' Reviewer 3 describes the work as 'rigorous' with 'convincing' conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C70"
+    ],
+    "result": "Cell-based transport assays validate the importance of H87 and D342 for transporter function. Mutations H87A and D342A significantly decrease transport activity, with D342A showing more transport than H87A, consistent with computational predictions that H87 protonation contributes more to stabilizing OF relative to OCC.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge the experimental validation. Reviewer 1 notes the study is 'backed by cell-based assays' and Reviewer 3 states 'cell-based transport assays clearly establish the importance of the residues that have been identified as significant contributors to the transport mechanism using simulations.' The experimental results are treated as confirmatory evidence for the computational findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C48",
+      "C49",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study identifies E53 and E622 as intracellular gate triggers controlling the OCC\u2194IF transition. Unbiased MD shows the intracellular gate is more flexible than the extracellular gate in standard protonation states, and becomes more flexible with spontaneous opening upon protonation of E53 and E622 or substrate insertion. 2D-PMF calculations demonstrate that protonation of either E53 or E622 lowers IF to similar free energy as OCC and reduces the barrier by ~1 kcal/mol, with additive effects such that dual protonation favors IF by ~3.5 kcal/mol with only ~1 kcal/mol barrier.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as part of the comprehensive mechanism. Reviewer 2 notes the authors 'identified extra-cellular (H87 and D342) and intra-cellular (E53 and E622) triggers' and 'validated these triggers using free energy calculations.' Reviewer 3 lists as a key result that 'E622 is not only essential for peptide recognition but also its protonation facilitates substrate release and contributes to the intracellular gate opening.' No concerns are raised about these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C74"
+    ],
+    "result": "ABFE calculations reveal that substrate affinity is similar in OF and IF states, but E622 protonation significantly decreases substrate affinity. Combined with 2D-PMF results showing E622 protonation favors the OCC\u2192IF transition, the study proposes a dual function for E622 protonation: stabilizing the IF state relative to OCC and facilitating substrate release from holo IF.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as part of the mechanistic picture. Reviewer 3 explicitly lists as a key result that 'E622 is not only essential for peptide recognition but also its protonation facilitates substrate release and contributes to the intracellular gate opening.' The ABFE methodology is acknowledged as one of the advanced techniques appropriately combined in the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "2D-PMF calculations show that in holo PepT2, the OCC state is stabilized by ~1 kcal/mol compared to apo due to increased flexibility in orthogonal degrees of freedom (PC2 direction). This suggests substrate presence in conformations approaching OCC from OF may trigger proton movement further down into the transporter, driven by entropic gains from increased flexibility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about these substrate effects. Reviewer 3 notes the study 'attempts to identify links between conformational dynamics and chemical events such as proton binding, ligand-protein interactions, and intramolecular interactions' and finds the conclusions 'mostly convincing.' The mechanistic interpretation is accepted as part of the overall transport cycle description.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C65",
+      "C66",
+      "C67",
+      "C73"
+    ],
+    "result": "Constant-pH MD simulations show that substrate binding raises the E56 pKa in OF and OCC states by ~0.6 log units. ABFE calculations show a complementary effect of E56 protonation state on substrate affinity, closing the thermodynamic cycle. The study concludes that substrate binding facilitates protonation of E56 (and subsequently E53), with substrate engaging R57 to increase E56 pKa and thermodynamically facilitate proton movement down the transporter cleft.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accept the overall mechanistic picture, Reviewer 2 raises serious concerns about the CpHMD methodology: 'The CpHMD in AMBER is not rigorous for membrane simulations. The underlying generalized Born model fails to consider the membrane environment when updating charge states... it is likely unphysical for internal residues like the ExxER motif.' Additionally, Reviewer 2 notes 'the authors did not make the substrate (Ala-Phe dipeptide) protonatable in holo-simulations,' which 'prevents a complete representation of ligand-induced protonation events.' These methodological limitations cast uncertainty on the quantitative pKa shifts and their mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C25",
+      "C26",
+      "C27",
+      "C72"
+    ],
+    "result": "The simulations identify key differences in the extracellular gate between mammalian and bacterial POTs, validated experimentally in cell-based transport assays. The mammalian H87 residue is only conserved in some prokaryotic homologues, and R206\u2013D342 is conserved only among mammalian POTs. The study concludes that the extracellular gating mechanism is conserved less widely than the overall alternating access mechanism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these comparative findings. Reviewer 3 notes 'Comparison with bacterial proteins from the same family show that while the overall architecture of the proteins and likely mechanism are similar, the residues involved in the mechanism may differ.' This is treated as an interesting insight into evolutionary divergence within the POT family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C8"
+    ],
+    "result": "The study employs extensive unbiased and enhanced-sampling MD (totaling close to 1 ms of sampling) to map out the full SLC15A2 conformational cycle and its thermodynamic driving forces. Results from constant-pH MD and ABFE calculations establish a mechanistic link between proton binding and peptide recognition, revealing key details underpinning secondary active transport in POTs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers praise the methodological approach. Reviewer 1 states 'the simulation approaches are convincing, using long MD simulations, constant-pH MD and free energy calculations.' Reviewer 3 notes 'This is an extensive MD based study of PepT2, which is beyond the typical MD studies both in terms of the sheer volume of simulations as well as the advanced methodology used' and that 'the authors have appropriately combined equilibrium MD with alchemical free energy calculations, constant-pH MD and geometry-based free energy calculations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "The study works under the assumption of a 2:1 stoichiometry for neutral di-peptides, motivated by computational results indicating distinct and additive roles played by two protons in the conformational cycle mechanism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises concerns about this assumption: 'Variations in PepT2 stoichiometry suggests that substrates likely participate in proton transport... And it is not rigorous to assume that the N- and C-termini of a peptide do not protonate/deprotonate when transported. I think the authors should explicitly state that the current work and the proposed mechanism (Figure 8) are based on the assumption that the substrates do not uptake/release proton(s).' This indicates the stoichiometry assumption may limit the generalizability of the findings.",
+    "result_type": "MAJOR"
+  }
+]

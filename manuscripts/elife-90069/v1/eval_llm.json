@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15"
+    ],
+    "result": "Representational drift, where neuronal tuning changes over time in constant environments, has been observed across multiple brain regions, but its underlying mechanisms and properties remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14, and C15 establish the phenomenon of representational drift through multiple citations and accurately characterize the current state of knowledge. These are well-established observations from the literature that provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Neurons in various brain regions exhibit tuning to specific external variables, including place cells tuned to spatial position, visual cells tuned to visual features, and neurons tuned to action execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 describe well-established neuroscience findings supported by classic citations (O'Keefe, Hubel & Wiesel, McNaughton). These provide appropriate background knowledge for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Multiple hypotheses have been proposed to explain representational drift, including structural changes, temporal encoding, dropout regularization, solution space exploration, and continual learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 accurately summarize existing hypotheses from the literature with appropriate citations. These establish the theoretical landscape and motivate the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Recent experimental evidence suggests that representational drift in CA1 is driven by active experience, with rate maps decorrelating more when animals are active longer in a context, indicating drift is an active learning process rather than passive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by recent citations (Khatib et al., 2023; Geva et al., 2023) and provide key motivation for modeling drift as a learning phenomenon. The inference in C23 follows logically from the cited observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Previous modeling work showed that feedforward neural networks trained with Hebbian learning and parameter noise exhibit tuning changes due to undirected random walk within the solution manifold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 accurately describe findings from Qin et al., 2023, providing important context for how the current work extends beyond undirected drift to directed drift.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Machine learning theory predicts that after convergence to the zero-loss manifold, a second-order effect biases the random walk toward directions that reduce an implicit regularizer related to the Hessian (loss landscape flatness), occurring on much longer timescales than initial convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 accurately describe theoretical results from machine learning (Blanc et al., 2020; Li et al., 2021; Yang et al., 2023). These provide the theoretical foundation for the study's predictions about directed drift.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The three requirements for implicit regularization (overparameterization, noise, and gradient descent) can reasonably be expected in biological neural networks, with biologically plausible learning rules acting as noisy versions of gradient descent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide reasonable arguments for biological plausibility, supported by appropriate citations. The reasoning that biological networks are overparameterized and noisy is well-justified, and the caveat about gradient descent is appropriately addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C35",
+      "C36",
+      "C40"
+    ],
+    "result": "A feedforward neural network trained on a predictive coding task quickly converged to high performance with many spatially-tuned units, maintaining low loss during extended training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C35, C36, and C40 describe the initial simulation setup and convergence, supported by Figure 2B and consistent with prior work (Recanatesi et al., 2021). The observations are clearly demonstrated in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37",
+      "C41",
+      "C42",
+      "C44",
+      "C46"
+    ],
+    "result": "During continued training after convergence, the network exhibited spontaneous sparsification over timescales orders of magnitude longer than initial learning, with individual units becoming more spatially informative without hurting performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C37, C41, C42, C44, and C46 describe the key sparsification phenomenon supported by Figure 2C. The timescale separation is clearly shown, and the increase in spatial information while maintaining performance is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C45"
+    ],
+    "result": "Units changed their spatial tuning over time in a manner similar to experimental representational drift, with rate map correlations showing gradual change that slowed down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C45 are supported by Figures 2D and 2E, showing drift-like dynamics consistent with experimental observations (Ziv et al., 2013). The visual and quantitative evidence clearly demonstrates these phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C39"
+    ],
+    "result": "The observed sparsification is consistent with machine learning theory where networks move within solution space toward flatter areas of the loss function, with changes in activity statistics and representations serving as signatures of this movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C39 connect the simulation observations to ML theory. This interpretation is well-supported by the theoretical framework and the observed dynamics, though the mechanistic connection is further elaborated in later results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C38",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Analysis of four experimental datasets from different labs shows that CA1 neurons become sparser and more spatially informative with exposure to the same environment, supporting the existence of an intermediate directed drift phase that most experimental paradigms miss due to long pre-exposure periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C38, and C47-C56 present consistent evidence across four independent datasets (Figure 3) showing decreased fraction of place cells and increased spatial information. Statistical tests show significant trends (all p < 0.011). However, C48 is somewhat speculative about why other studies missed this effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Across 1151 simulations with varied parameters (learning algorithms, noise types, tasks, architectures), sparsification dynamics were robust, with nearly all simulations showing initial fast convergence followed by slower directed drift, though timescales varied with noise amplitude and label noise produced qualitatively different dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C68 demonstrate robustness across extensive parameter variations (Figure 4). The systematic exploration is thorough, including different learning rules (SGD, Adam, RMSprop, SED), noise types, and tasks. The exception for label noise (C60) is appropriately noted and theoretically predicted. The control with GD without noise (C67) is important. However, C66 about Adam/RMSprop is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Learning is divided into three overlapping phases: (1) fast task learning and convergence to low-loss solutions, (2) slow directed drift driven by implicit regularization, and (3) undirected random walk within the sub-manifold of maximum regularization, with most experimental studies capturing only the third phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C69-C75 present the main theoretical framework synthesizing simulation and experimental results. The three-phase model is well-supported by the data showing different timescales and dynamics. The characterization of phases is clear and consistent with both ML theory and observations. However, C74 is somewhat speculative about why experiments missed phase 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A two-dimensional loss function example demonstrates that gradient descent with noise converges to the zero-loss manifold and then exhibits biased random walk toward flatter regions, with the gradient having a component directed toward flat areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide an intuitive illustration of the mechanism using a simple 2D example (Figure 5A). The mathematical explanation in C78 is correct and helps build intuition for the higher-dimensional case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The fraction of active units is highly correlated with the number of non-zero Hessian eigenvalues, with each inactivated unit creating zero-rows in the Hessian, and update noise preferentially driving small eigenvalues to zero because the regularizer's slope approaches infinity as eigenvalues approach zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 establish the mechanistic connection between sparsification and Hessian structure, supported by Figure 5B-C and mathematical derivations in the methods. The correlation in C79 is clearly shown, and the mathematical reasoning in C80-C82 is sound. C83 provides useful intuition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C109",
+      "C110"
+    ],
+    "result": "Label noise produces different dynamics than update noise, with label noise regularizing the sum of eigenvalues rather than the sum of log-eigenvalues, as predicted by theory and observed in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C109, and C110 describe the differential effects of noise types, supported by Figure 5D and theoretical predictions from Blanc et al., 2020. This demonstrates that the specific form of implicit regularization depends on noise type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Representational drift can arise from ongoing learning with noise after good performance is achieved, with the directed component associated with sparsification in single-layer feedforward networks with update/label noise, though results may differ for other architectures and the CA1's lack of recurrent connections may explain the match to experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 summarize the main findings with appropriate caveats about generalization. C85-C86 are well-supported by the simulation and experimental results. C87-C88 appropriately limit the scope of conclusions. C89 provides a reasonable speculation about why the model matches CA1 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Recent related work (Qin et al., 2023; Pashakhanloo and Koulakov, 2023) focused on the final null drift phase, while some experimental studies (Deitch et al., 2021; Nguyen et al., 2022) may have observed the directed drift phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 appropriately contextualize the current work relative to recent literature. C90-C91 accurately characterize prior modeling work. C92-C93 offer alternative interpretations of experimental findings, though these are somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "In natural environments where tasks slowly change, the second directed drift phase may never stop, potentially representing the natural regime for neural networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94 and C95 are speculative about natural environments. While this is an interesting hypothesis, it lacks direct empirical support and represents future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "While representations are not a complete description of network behavior, the statistics of representational changes can provide insight into network dynamics and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 provide appropriate caveats about the interpretation of representational drift, with C96 supported by citation (Brette, 2019). This is a reasonable methodological point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Directed drift is robust to modeling choices and consistent with ML theory, but the specific aspects of the Hessian minimized and timescales depend on learning rules and noise, suggesting the possibility of inferring learning rules from drift statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are well-supported by the extensive simulations and theoretical consistency. C100 proposes an interesting future direction that follows logically from C99, though it remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The definition of low-loss depends on task and context, and challenging systems with new inputs could dissociate apparently identical configurations, potentially leading to decreased remapping probability as networks move to flatter loss regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 discuss implications for remapping. C101-C102 make reasonable conceptual points (C102 supported by Turner et al., 2021). However, C103 is speculative about remapping probability, and C104 simply cites a theoretical framework without testing it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Machine learning provides a useful model tool for neuroscience, with implicit regularization representing a general property of overparameterized systems that has not previously been applied to explain representational drift, analogous to 'survival of the flattest' in evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 discuss the broader significance of using ML theory for neuroscience. C105-C106 are supported by citations and accurately characterize the novelty. C107 makes a valid general point. C108 provides an interesting analogy to evolution (Codo\u00f1er et al., 2006).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C48",
+      "C51",
+      "C77"
+    ],
+    "result": "The authors propose 'diffusive lensing' as a nonequilibrium mechanism of membrane-less compartmentalization where particles accumulate in low-diffusivity regions, claiming this is relevant and potentially ubiquitous in living systems with far-reaching implications for biochemical processes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "All three reviewers fundamentally challenge the novelty and biological relevance of this central claim. Reviewer 1 states the 'lensing effect discussed is a direct consequence of the choice of the Ito convention...and its adequacy for the intracellular medium is insufficiently discussed and relatively doubtful.' Reviewer 2 notes 'the central part of the paper...is not new. Some of the papers authors cite already show that.' Reviewer 3 states most critically that 'the fact that it results in probability gradients is trivial once formulated this way (and in no way is this new)' and that the authors 'only demonstrates the well-known fact that when using arbitrary dynamical rules in heterogeneous diffusion simulations, one can get concentration gradients.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C68",
+      "C69",
+      "C71",
+      "C85"
+    ],
+    "result": "The authors use the It\u00f4 convention for modeling diffusion with spatially inhomogeneous diffusivity, claiming this is appropriate for the nonequilibrium cellular interior and that different mathematical interpretations result in different physical predictions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "All reviewers strongly criticize the choice and justification of the It\u00f4 convention. Reviewer 3 provides the most detailed critique, stating 'without further motivation than the statement that cells are out-of-equilibrium, drifts are arbitrarily set to zero in the Ito convention' and that 'the authors make no further justification of their choice of driftless Ito simulations than the fact that cells are out-of-equilibrium.' Reviewer 1 notes 'its adequacy for the intracellular medium is insufficiently discussed and relatively doubtful.' Reviewer 2 emphasizes 'just because there is spatial diffusion constant that does not mean there will be a spatial gradient of particles.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Agent-based simulations demonstrate that particles accumulate in low-diffusivity zones under the It\u00f4 convention, consistent with theoretical predictions, in both step-like and smooth diffusivity gradients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not dispute the simulation results themselves, they fundamentally question their interpretation and significance. Reviewer 3 states 'the fact that it results in probability gradients is trivial once formulated this way' and that the effect is 'entirely reliant on an undiscussed mechanism by which these assumptions would be completely violated.' Reviewer 2 notes that 'localisation of particles in the region of low diffusivity has been reported in many different context' and is not new. The simulations are technically correct but their biological meaning is contested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C54"
+    ],
+    "result": "Diffusive lensing modulates clustering behavior with inter-particle interactions, with the relative strengths and timescales of diffusive lensing and interactions determining whether clustering preferentially occurs in low-diffusive zones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 specifically identifies this as an area that 'could provide new results' but criticizes that it is 'not rigorous enough for a theory paper.' Reviewer 3 notes that 'enhanced clustering is also a trivial effect of this probability gradient' and criticizes the 'neighbor sensing' scheme as 'very peculiar and not physically motivated' stating it 'violates stochastic thermodynamics laws too, as detailed balance is apparently not respected.' The results lack the rigor needed to support the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Inhomogeneous diffusivity affects mean squared displacement (MSD) dynamics, with particles in diffusivity gradients showing intermediate dynamics and reduced saturation MSD, indicating that the diffusion coefficient alone is insufficient to describe diffusion in heterogeneous environments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 identifies the 'moment analysis for non-interacting particles in space with discrete patches of inhomogeneous diffusivity' as potentially interesting but states it is 'not rigorous enough for a theory paper.' The reviewers do not directly challenge the MSD observations but question whether the underlying framework (It\u00f4 convention without proper justification) makes these results meaningful for biological systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Inhomogeneous diffusivity creates 'diffusive highways' where the bulk region between low-diffusive zones enables faster effective dynamics compared to homogeneous diffusivity with the same weighted average, due to large fluxes at diffusivity interfaces.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not explicitly address this specific finding, it depends entirely on the validity of the It\u00f4 convention framework which all reviewers challenge. Reviewer 3's critique that the authors are studying 'the effects of this arbitrary force' (the spurious drift compensation) undermines the interpretation of these flux-based dynamics as biologically meaningful rather than artifacts of the modeling choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C62"
+    ],
+    "result": "Inhomogeneous diffusivity allows particle mobility at microscale and mesoscale to differ from homogeneous diffusion expectations, consistent with observed deviations from normal diffusion in cells, and a one-parameter description using average diffusion coefficient is insufficient.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 challenges the magnitude and biological relevance of these effects, noting that 'the diffusion contrasts logarithmically compare to the chemical potential ones -- for instance a major diffusion difference of 100x is equivalent to 4.6kT in potential energy, a relatively modest effect.' The reviewer argues that to prove biological relevance would require experimental validation showing enrichment that cannot be attributed to potential energy differences, which is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C70",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors speculate about various biological implications of diffusive lensing, including effects on biochemical reaction rates, positive feedback loops, cellular compensation mechanisms, and potential roles in prebiotic compartmentalization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "These speculative claims are undermined by the reviewers' fundamental challenges to the biological relevance of the underlying phenomenon. Reviewer 1 concludes 'the relevance of the presented results for biology remain unclear and based on incomplete evidence.' Reviewer 3 states that to prove biological relevance would require specific experimental validations that are not provided, and that 'the current article only demonstrates the well-known fact that when using arbitrary dynamical rules in heterogeneous diffusion simulations, one can get concentration gradients.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "The authors describe their agent-based modeling methodology using 2D random walk simulations with the It\u00f4 interpretation, including their approach to inter-particle interactions via neighbor-sensing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 strongly criticizes the methodological choices, stating 'it is regrettable that the authors choose to use agent-based custom simulations with little physical motivation, rather than a well-established stochastic differential equations framework.' The neighbor-sensing approach is criticized as 'very peculiar and not physically motivated' and as violating 'stochastic thermodynamics laws' because 'detailed balance is apparently not respected.' Reviewer 3 concludes the authors 'have chosen to disregard a century of stochastic thermodynamics in favor of a non-justified unphysical custom rule.'",
+    "result_type": "MAJOR"
+  }
+]

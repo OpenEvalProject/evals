@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Untargeted metabolomics via LC-MS provides comprehensive metabolic profiling with applications in drug development, disease diagnosis, and investigation of various health conditions including diabetes, inflammatory bowel diseases, and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C16 establish the capabilities and applications of LC-MS metabolomics with appropriate citations. These are well-established facts in the field and represent accurate background knowledge about the technology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C20",
+      "C21"
+    ],
+    "result": "Low throughput of LC-MS and variations across laboratories create major challenges for biomarker discovery, necessitating efficient data pooling algorithms, while manual matching is laborious and error-prone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, C20-C21 accurately describe known limitations of LC-MS metabolomics with supporting citations. These represent established challenges in the field that motivate the development of automated alignment methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26"
+    ],
+    "result": "Current automated data pooling methods have practical limitations including vulnerability to data variations, hyperparameter dependence, substantial fine-tuning requirements, and failure to leverage correlation information among metabolic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C26 identify specific limitations of existing methods that are demonstrated through the comparative benchmarking experiments in the paper. The claims are supported by both cited literature and the experimental results showing these methods' performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C105",
+      "C107",
+      "C110"
+    ],
+    "result": "GromovMatcher is introduced as a flexible algorithm that automatically combines LC-MS datasets using optimal transport by leveraging the principle that shared metabolic features have similar correlation patterns, computing pairwise distances between feature intensity vectors using Euclidean or cosine distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C38, C40-C42, C105, C107, C110 describe the core methodology of GromovMatcher. The fundamental assumption about correlation preservation is reasonable and the mathematical framework is properly described with appropriate distance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C113"
+    ],
+    "result": "Optimal transport and Gromov-Wasserstein methods have proven effective for various matching problems including multiomics analysis, cell development, and chromatogram alignment, with recent unbalanced formulations enabling partial matching of datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33, C113 accurately describe prior work on optimal transport with appropriate citations. The references to applications in genomics and other fields are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C115",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "GromovMatcher addresses practical challenges including partial feature overlap between datasets, nonlinear retention time drift, and provides optional thresholding (GMT variant) to refine matches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112, C115, C117, C119-C120 describe practical considerations and algorithmic features. The handling of partial overlap and RT drift are well-motivated by cited challenges in the field, and the method variants are clearly defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C133"
+    ],
+    "result": "A validation procedure was developed using dataset splitting with controlled noise addition to generate ground-truth data, where metabCombiner receives 100 known features for hyperparameter setting while M2S parameters are manually fine-tuned to optimize F1-score.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C51-C53, C133 describe the validation methodology. The approach is reasonable for generating synthetic test cases, though it should be noted that M2S receives optimization advantages that may not reflect real-world performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "GromovMatcher (GM and GMT) outperforms metabCombiner and M2S on synthetic data across varying noise levels and feature overlap, maintaining recall above 0.95 and precision above 0.8 even at low overlap, while metabCombiner shows reduced sensitivity especially at high noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C54-C60 report performance results supported by Figures 3 and 3-supplement 1. The benchmarking appears systematic with multiple noise levels and overlap conditions tested across 20 repetitions, providing quantitative evidence for the superiority claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "GM leverages correlation structures preserved under centering and scaling, while metabCombiner relies on mean intensity rankings and M2S on median intensities, making GM more robust when feature intensities are normalized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 explain methodological differences and are supported by Figure 3-supplement 2 showing GM/GMT maintain performance under centering/scaling while metabCombiner's performance degrades significantly. This demonstrates a key advantage of the correlation-based approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The EPIC cohort studies (CS, HCC, PC) acquired using the same LC-MS platform provide validation data, where Loftfield et al. previously identified 205 alcohol-associated features and manually matched 67 to HCC/PC studies, serving as ground truth for method comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 describe the EPIC data and prior work with appropriate citations. The use of manually curated matches as validation ground truth is reasonable, though the validation set is relatively small (90 features for CS-HCC positive mode).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "On CS-HCC matching, GM achieves the highest precision and recall without prior knowledge of the validation subset, while M2S performs comparably due to the near-linear RT drift allowing fine-tuned parameters to work effectively, and metabCombiner shows high precision but low sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 report EPIC validation results supported by Figure 4 and Table 2. However, the comparison is somewhat unfair as M2S and metabCombiner receive validation data for tuning while GM does not, making GM's superior performance more impressive but the comparison methodology questionable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "On CS-PC matching, GM and M2S show high recall but decreased precision compared to CS-HCC, with manual inspection revealing that 3 of 7 GM false positives were actually correct matches missed by expert annotation, while M2S had additional true mismatches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 report CS-PC results with manual verification of false positives. The discovery that automated methods found correct matches missed by experts is valuable, though the small numbers (3-7 features) limit statistical confidence. This demonstrates both method utility and validation set limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Using GM to pool CS, HCC, and PC studies, 243 features associated with alcohol intake were identified with FDR correction (including 185 from Loftfield discovery and 55 newly discovered), while Bonferroni correction identified 36 features including all 10 from Loftfield et al.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 report biomarker discovery results supported by Figure 5. The pooled analysis demonstrates practical utility by recovering all previously identified features plus discovering new ones. Statistical corrections are appropriately applied, though the biological validation of new features is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C37",
+      "C10",
+      "C104"
+    ],
+    "result": "GromovMatcher delivers superior alignment accuracy and robustness, scales to thousands of features with minimal hyperparameter tuning, and facilitates biomarker discovery for lifestyle risk factors associated with cancer by enabling seamless comparison of otherwise incompatible LC-MS data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C10, C37, C104 summarize the main contributions. These are supported by the synthetic benchmarking (thousands of features tested), EPIC validation (minimal tuning required), and alcohol biomarker application (practical utility demonstrated). The claims are well-substantiated by the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "GromovMatcher has limitations including potential challenges with populations having different correlation structures (addressable by subsample matching), inability to handle more than two datasets simultaneously (addressable by reference-based alignment or multi-distribution extensions), and opportunities for improvement by incorporating prior knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101, C103 honestly acknowledge limitations and suggest solutions. The limitation regarding population differences is theoretical but reasonable. The two-dataset limitation is demonstrated to be addressable by the sequential alignment approach used in the biomarker study. These represent appropriate discussion of method scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Manually curated datasets for validating alignment algorithms are limited in untargeted metabolomics, motivating development of the dataset split validation procedure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 accurately identifies a field-wide challenge. The development of the synthetic validation procedure is a reasonable response, though the reliance on a single real dataset (EXPOsOMICS) for generating synthetic pairs is a limitation not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "EPIC data preprocessing excluded case samples to ensure comparable metabolic profiles, followed established procedures from Loftfield et al., and the pooled analysis adjusted for demographic, lifestyle, and technical variables with appropriate multiple testing corrections (FDR and Bonferroni) at 5% significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137, C143-C149 describe preprocessing and statistical analysis procedures. The exclusion of cases is well-justified, preprocessing follows established protocols, and statistical adjustments are appropriate. The methodology is sound for the biomarker discovery application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Loftfield et al. used a discovery-validation approach with FDR correction in CS study followed by Bonferroni correction in HCC/PC validation, identifying 10 features validated in both EPIC and ATBC populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 accurately describe prior work from Loftfield et al. with appropriate citation. This provides important context for comparing the pooled analysis approach enabled by GromovMatcher.",
+    "result_type": "MINOR"
+  }
+]

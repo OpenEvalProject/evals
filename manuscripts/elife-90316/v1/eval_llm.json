@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SARS-CoV-2 Nsp5 interacts with human TRMT1. The authors identify a putative Nsp5 cleavage site in TRMT1 matching the consensus sequence of viral polyprotein cleavage sites, including a conserved glutamine at position 4. This site is predicted to be surface-exposed. Co-purification experiments show that catalytically inactive Nsp5-C145A, but not wild-type Nsp5, enriches endogenous and FLAG-tagged TRMT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 provide bioinformatic evidence for a putative cleavage site, while C47-C48 demonstrate specific interaction between Nsp5-C145A and TRMT1 through co-purification experiments. The use of catalytically inactive Nsp5 is appropriate for detecting substrate interactions. The convergent evidence from sequence analysis and biochemical interaction supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Nsp5 cleaves TRMT1 at a specific site matching viral polyprotein cleavage consensus sequences. Expression of wild-type Nsp5, but not catalytically inactive Nsp5-C145A, produces N-terminal (~58 kDa) and C-terminal (~20 kDa) TRMT1 fragments detectable by immunoblotting. Mutation of the conserved glutamine at position 530 to asparagine (Q530N) abolishes cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C55 provide direct experimental evidence of TRMT1 cleavage fragments appearing only with wild-type Nsp5. The Q530N mutation experiment (C59) provides strong evidence for site-specificity by abolishing cleavage. The fragments match predicted sizes (C50), and the requirement for glutamine at position 4 is consistent with established Nsp5 specificity (C57-C58). Multiple independent experiments support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C75",
+      "C76",
+      "C77",
+      "C118",
+      "C119"
+    ],
+    "result": "SARS-CoV-2 infection reduces cellular TRMT1 protein levels. MRC-5 cells infected with SARS-CoV-2 show ~30% reduction in TRMT1 at 24 and 48 hours post-infection. At high MOI (5.0), TRMT1 levels are reduced to near-background. The non-cleavable TRMT1-Q530N mutant is resistant to this reduction during infection, indicating that cleavage by Nsp5 is responsible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C118 provide quantified immunoblot data showing TRMT1 reduction in infected cells. The critical experiment comparing TRMT1-WT and TRMT1-Q530N stability during infection (C75-C76) provides strong evidence that Nsp5 cleavage is responsible for TRMT1 reduction. Multiple cell types and MOIs were tested, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "SARS-CoV-2 infection reduces TRMT1-catalyzed m2,2G tRNA modifications and other RNA modifications. m2,2G levels decreased by ~15% at 48 hours post-infection. More than half of tested RNA modifications showed decreases at 24 hours, with most modifications decreased at 48 hours post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present mass spectrometry data showing reduction in m2,2G and other RNA modifications. The data are quantified and include biological replicates. However, the broad reduction in multiple RNA modifications (C42-C43) suggests effects beyond TRMT1 cleavage alone, which the authors acknowledge. The m2,2G reduction is modest (~15%) and only significant at 48 hours, which is consistent with partial TRMT1 depletion rather than complete loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "TRMT1 cleavage fragments exhibit altered RNA binding properties. The N-terminal fragment shows no detectable enrichment of rRNA or tRNA, while the C-terminal fragment containing the zinc finger motif retains tRNA binding comparable to full-length TRMT1. The non-cleavable Q530N mutant binds RNA normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 provide RNA co-purification data showing differential binding by TRMT1 fragments. The C-terminal fragment retains tRNA binding while the N-terminal fragment does not, which is consistent with the zinc finger motif being in the C-terminal region. The Q530N control (C63) demonstrates that the mutation itself doesn't affect RNA binding. The experimental approach is appropriate for assessing RNA-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "TRMT1 cleavage fragments are catalytically inactive and cannot rescue tRNA modification in TRMT1-deficient cells. Full-length TRMT1 and TRMT1-Q530N restore m2,2G modification in both nuclear and mitochondrial tRNAs in TRMT1-KO cells, but neither N-terminal nor C-terminal fragments can rescue modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 present primer extension assays showing functional rescue by full-length TRMT1 but not by cleavage fragments. The use of TRMT1-KO cells as a null background is appropriate. The Q530N mutant serves as a control showing that the mutation doesn't affect catalytic activity. The inability of either fragment to rescue activity is consistent with both domains being required for function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "TRMT1 is required for efficient SARS-CoV-2 replication. TRMT1-KO cells show 3-4 fold reduction in viral RNA compared to wild-type cells. Re-expression of TRMT1 rescues viral replication to wild-type levels. Notably, expression of non-cleavable TRMT1-Q530N results in higher viral RNA production than wild-type TRMT1 at higher MOI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C80 provide qRT-PCR data showing reduced viral RNA in TRMT1-KO cells and rescue by TRMT1 re-expression. The genetic complementation experiment (C80) is critical for establishing causality. The enhanced replication with TRMT1-Q530N (C81) is particularly interesting and suggests that TRMT1 cleavage may limit viral replication. Multiple MOIs were tested, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "TRMT1 expression affects SARS-CoV-2 particle production and infectivity. Viral particles from TRMT1-KO cells show reduced titer and slightly lower infectivity. Re-expression of TRMT1 partially restores titer and increases infectivity. Expression of non-cleavable TRMT1-Q530N further enhances both viral titer and infectivity compared to wild-type TRMT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 present viral titer and infectivity measurements showing effects of TRMT1 on virus production. The TCID50 assay is appropriate for measuring infectious virus. The enhanced infectivity with TRMT1-Q530N (C85) is consistent with the viral RNA data and suggests that preventing TRMT1 cleavage benefits the virus. However, the mechanism remains unclear and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TRMT1 cleavage fragments exhibit altered subcellular localization. Full-length TRMT1 shows cytoplasmic and nuclear localization with partial mitochondrial overlap. The N-terminal fragment is primarily cytoplasmic with reduced nuclear signal, while the C-terminal fragment is predominantly nuclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 present microscopy data showing distinct localization patterns for full-length TRMT1 and its fragments. The altered localization is consistent with the C-terminal fragment containing the nuclear localization signal. The cytoplasmic localization of full-length TRMT1 supports the inference that cytoplasmic TRMT1 is the target of Nsp5 cleavage (C74). The use of mitochondrial and nuclear markers provides appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C87",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors conclude that Nsp5-dependent cleavage of TRMT1 and perturbation of tRNA modification patterns contribute to SARS-CoV-2 cellular pathogenesis. They suggest this could affect protein synthesis, cellular proliferation, metabolism, and potentially contribute to COVID-19 disease outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data clearly demonstrate TRMT1 cleavage by Nsp5 (C87) and effects on tRNA modifications (C95), the connection to cellular pathogenesis (C11) and disease outcomes (C98) is largely speculative. The modest reduction in m2,2G levels (~15%) and the observation that TRMT1-KO cells actually show reduced viral replication complicate the pathogenesis narrative. Claims C97-C98 are explicitly speculative. More direct evidence linking TRMT1 cleavage to cellular dysfunction would be needed to fully support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors note that concurrent and subsequent independent studies by D'Oliviera et al. and Lu and Zhou have corroborated the finding that TRMT1 is cleaved by SARS-CoV-2 main protease, with D'Oliviera et al. providing structural insights into the recognition mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 accurately reference concurrent work that independently validates the main finding. The convergence of multiple independent studies strengthens confidence in the core result. This is appropriately presented as corroborating evidence rather than as part of the primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C107",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors speculate on multiple possible mechanisms and biological significance of TRMT1 cleavage, including: coincidental targeting due to sequence similarity, effects on translation machinery, potential modification of viral RNAs, tRNA packaging into viral particles, and possible self-limitation of viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C91-C93, C100-C102, C105, C107, C112-C117) are explicitly speculative and presented as such by the authors. While some speculation is supported by citations to related phenomena in other systems, none of these mechanisms are directly tested in this manuscript. The speculation is reasonable given the data but remains unvalidated. Some hypotheses (e.g., C112 about self-limitation) seem inconsistent with the observation that TRMT1-Q530N enhances viral replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SARS-CoV-2 infection causes widespread changes in RNA modifications beyond m2,2G, affecting tRNA, rRNA, snRNA, and mRNA. This suggests that coronavirus infection may alter the levels or activity of multiple RNA modification enzymes in addition to TRMT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 presents mass spectrometry data showing broad changes in RNA modifications during infection. The inference that multiple enzymes may be affected (C110) is reasonable given the breadth of changes observed. This is supported by prior knowledge that RNA modification profiles change in response to cellular stress (C111). However, the mechanisms underlying these broad changes are not investigated in this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Missing clinical data is a common and significant problem in machine learning applications. The authors establish that there is no canonical approach for handling missing data, and that widely used imputation algorithms introduce variance in downstream classification tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C13 collectively establish the problem context through direct statements and citations to prior work. These are well-established facts in the field supported by multiple references, providing solid motivation for the proposed methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C9"
+    ],
+    "result": "MiceRanger and MissForest are established as the best-performing iterative imputation methods for clinical data, serving as appropriate baselines for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by citation to Shadbahr et al., 2022, which provides empirical evidence for the superiority of these methods. Claim C9 establishes the broader context of machine learning applications in clinical research through multiple citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C51",
+      "C35",
+      "C36"
+    ],
+    "result": "Determinantal point processes (DPPs) provide a principled approach to sampling diverse subsets of data by weighting subsets according to the volume they span, which is particularly beneficial for unbalanced datasets common in clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C51 provide mathematical and conceptual descriptions of DPP sampling supported by citations. Claims C35-C36 explain the benefits for clinical data. The theoretical foundation is well-established in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C55"
+    ],
+    "result": "Standard Random Forest and stochastic DPP algorithms produce variable imputations across runs, motivating the use of deterministic DPP variants that provide more robust and reliable results, which is especially important for clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C55 establish the problem of stochasticity and the solution through deterministic sampling. The reasoning is sound and supported by citation to Schreurs and Suykens, 2021, and El Shawi et al., 2019 for clinical relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "DPP-MICE and detDPP-MICE improve downstream classification accuracy compared to standard MICE across multiple datasets and missingness types, with detDPP-MICE providing deterministic imputations that outperform MICE in all 12 experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 summarize experimental results from Tables 1-2 showing consistent improvements. The data supports the claims with 10 replications per experiment. However, the improvements are modest (typically 0.001-0.008 AUC units) and statistical significance testing is not reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "DPP-MissForest and detDPP-MissForest improve downstream classification accuracy compared to standard MissForest across all experimental conditions, with detDPP-MissForest providing deterministic imputations that outperform MissForest in all 12 datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 summarize experimental results from Tables 1 and 3 showing consistent improvements across all 12 experiments. The pattern of improvement is more consistent than for MICE-based methods. However, statistical significance is not formally tested, and effect sizes are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C38"
+    ],
+    "result": "Deterministic DPP methods (detDPP-MICE and detDPP-MissForest) eliminate variance in classification results by providing single deterministic imputations, as demonstrated by zero variance across repeated runs in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C38 are supported by Tables 2-3 showing single values (no variance) for detDPP methods compared to distributions for stochastic methods. This is a direct consequence of the deterministic algorithm design and is clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C66",
+      "C71",
+      "C72"
+    ],
+    "result": "Quantum algorithms for DPP sampling offer theoretical computational advantages over classical methods, with linear scaling in the number of features compared to cubic classical complexity, achieving quadratic to cubic speedup in the sampling step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C66, C71-C72 are supported by citations to theoretical work (Kerenidis and Prakash, 2022; Derezi\u0144ski and Mahoney, 2021) and complexity analysis in Table 8. The theoretical speedup is well-established, though practical speedup on current hardware is not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "Quantum hardware implementation of DPP-MissForest on IBM's 27-qubit processor demonstrates competitive performance with classical methods for small-scale tasks (up to 10 qubits), with simulated quantum versions showing AUC improvements over standard MissForest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C32 and C34 describe quantum experiments with data in Tables 5-6. While simulations show improvements, hardware results are highly variable and often worse than classical methods due to noise. The claim of \"competitive\" performance (C7, C34) is ambiguous\u2014hardware results sometimes match classical methods but often underperform. The scale (10 qubits) is too small to demonstrate practical quantum advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Variance observed in quantum hardware implementations is attributed to hardware noise rather than algorithmic stochasticity, and is expected to decrease with improved quantum computers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C39-C40 are supported by comparing simulation results (deterministic) with hardware results (variable) in Tables 5-6. The inference that noise causes variance is reasonable. However, C41 is speculative about future hardware improvements, though the reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C68",
+      "C69",
+      "C70",
+      "C74"
+    ],
+    "result": "The quantum DPP circuit implementation requires qubits equal to batch size with depth proportional to features, uses optimized Clifford loaders for different hardware connectivities, and efficiently produces DPP samples through direct measurement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C68-C70, C74 describe the quantum circuit design with support from Figures 6-7 and Table 7. The technical details are consistent with cited theoretical work and the circuit designs are shown. The optimality claim (C69) is stated but not proven in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The quantum deterministic variant approximates deterministic sampling by taking the most frequent element from multiple measurements (1000 shots used), which provides reduced variance while maintaining good performance even without perfect determinism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe the quantum deterministic approach and its limitations. The approach is reasonable given quantum circuit constraints. Claim C77 provides experimental details. However, C78's claim of \"good performance\" is somewhat speculative and not rigorously validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C37"
+    ],
+    "result": "Classical DPP-based imputation methods are computationally intensive and scale poorly to larger datasets, but quantum implementations could provide practical speedup on next-generation quantum computers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C45 acknowledge computational limitations of classical DPP methods, which is honest and supported by complexity analysis. However, claims C46 and C37 about future quantum speedup are speculative. While theoretical speedup exists, practical demonstration requires quantum hardware that doesn't yet exist at the required scale and quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The proposed algorithms are anticipated to impact reliability of models in high-precision settings such as pharmaceutical drug trials by providing higher confidence through elimination of stochastic variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is speculative about practical impact. While the elimination of variance is demonstrated, the modest AUC improvements and lack of validation in actual drug trial settings make the anticipated impact uncertain. The reasoning is plausible but requires further validation in real-world applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Experiments used a synthetic dataset (2000 rows, 25 features) and the MIMIC-III clinical dataset (7214 patients, 14 features), with code and data publicly available for reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C79-C81 describe experimental datasets and reproducibility resources. The datasets are well-described and publicly available. Code availability supports reproducibility. These are straightforward methodological details that are adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DPP-Random Forest modifies standard Random Forest by replacing uniform bootstrapping with DPP sampling without replacement, building on prior work showing benefits for linear regressors and financial classification, though potential OOB error estimation issues are noted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 describe the algorithmic modification clearly with Figure 4 support. Claims C62-C63 provide context from prior work through citations. Claim C64 acknowledges a potential limitation with citation support. The methodological description is clear and appropriately contextualized.",
+    "result_type": "MINOR"
+  }
+]

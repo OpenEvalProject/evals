@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript establishes the background that hippocampal place cells exhibit theta phase precession and procession during locomotion, which are thought to support cognitive functions including planning and memory. However, the neural mechanisms underlying these phenomena, particularly interleaved forward and reverse sequences, remain largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately characterize the established experimental literature and identify a genuine gap in understanding. The claims are well-supported by appropriate citations to experimental work (O'Keefe and Recce 1993, Skaggs et al. 1996, Wang et al. 2020) and represent accepted knowledge in the field. This provides appropriate motivation for the modeling study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C38",
+      "C41"
+    ],
+    "result": "The authors develop a continuous attractor neural network (CANN) model where firing rate adaptation destabilizes bump attractor states, creating intrinsic mobility. When adaptation is strong enough, the network bump can travel spontaneously, and under competition between intrinsic and extrinsic (sensory input-driven) mobility, the network displays an oscillatory tracking state where the bump sweeps back and forth around external input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model architecture and dynamics are clearly described with mathematical formulations (Equations 1-13) and demonstrated through simulations (Figure 2). The theoretical analysis of bump stability, intrinsic mobility conditions (m > \u03c4/\u03c4_v), and oscillatory tracking regimes is mathematically derived and validated by simulations showing agreement between theory and simulation (Figure 2h,i). The mechanism is well-explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The oscillatory tracking state of the CANN naturally reproduces theta sweeps observed in hippocampus, where decoded position oscillates around the animal's physical location at theta frequency (6-10 Hz). The model generates forward and backward sweeps that resemble experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The connection between model dynamics and experimental theta sweeps is demonstrated through simulations (Figure 3a,b) that qualitatively match experimental data patterns. The oscillation frequency can be tuned to theta range through parameter selection, and the model reproduces the key phenomenology of theta sweeps. However, the model does not explicitly generate LFP theta but assumes correspondence based on experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C32",
+      "C33",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Forward sweeps of the network bump account for theta phase precession while backward sweeps account for theta phase procession of individual place cells. As an animal traverses a place field, firing phase remains constant upon entry, shifts in two streams (earlier for forward sweeps, later for backward sweeps) near the field center, and remains constant upon exit, with total phase shift of 180 degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phase shift mechanism is derived analytically (Equation 7) and demonstrated through simulations (Figure 3c-e). The model correctly predicts the 180-degree total phase shift and the three-stage progression through the place field, matching experimental observations (O'Keefe and Recce 1993, Skaggs et al. 1996). The mathematical analysis clearly links bump position dynamics to firing phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C34",
+      "C35",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Varying adaptation strength explains the difference between bimodal cells (showing interleaved phase precession and procession with two firing peaks per theta cycle) and unimodal cells (showing predominant phase precession with one peak). Strong adaptation causes asymmetric suppression where forward sweeps suppress backward sweeps, creating a continuum from bimodal to unimodal behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is clearly demonstrated through simulations showing how increasing adaptation strength progressively attenuates backward sweep amplitude (Figure 4c,d). The model reproduces both bimodal and unimodal firing patterns (Figure 4a,b,g,h) and explains weak phase procession in unimodal cells, consistent with experimental observations (Wang et al. 2020, Yamaguchi et al. 2002). The asymmetric suppression mechanism is well-explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The model extended to T-maze geometry reproduces constant cycling of theta sweeps between left and right arms at ~8 Hz as the animal approaches the choice point. This generates 'cycle skipping' where neurons fire on alternating theta cycles, with the mechanism relying on delayed adaptation alternately suppressing neurons on each arm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The T-maze simulations (Figure 5b) clearly demonstrate alternating sweeps onto left and right arms, reproducing the cycle skipping phenomenon observed experimentally (Kay et al. 2020). The auto-correlogram and cross-correlogram analyses (Figure 5d) match experimental patterns. The delayed adaptation mechanism provides a clear explanation for the alternation. The cyclical sweep length pattern is noted as a testable prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model explains the linear relationship between place cell firing frequency and running speed. Firing frequency has a baseline theta component plus an additional half-cycle due to phase precession, with faster running speeds completing this extra cycle faster, resulting in higher frequencies. This differs from dual oscillator models where speed modulation causes phase shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The frequency-speed relationship is demonstrated through simulations (Figure 6a) and explained mechanistically. The model correctly predicts that firing frequency increases linearly with speed, matching experimental observations (Geisler et al. 2007). The distinction from dual oscillator models is clearly articulated - in this model, speed modulation is a consequence rather than cause of phase shift. The mechanism is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C77",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The model reproduces continued phase shift after transient hippocampal silencing (up to 250 ms), with firing phase determined by the animal's new location in the place field regardless of silencing duration. This demonstrates a one-to-one correspondence between firing phase and traveled distance, independent of speed or perturbation duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The silencing experiment is simulated (Figure 6c) and shows that phase shift continues from the new location after perturbation, matching experimental observations (Zugaro et al. 2005). The mechanism - that phase is determined by relative position in the place field rather than time - is clearly explained and demonstrated. This supports robust phase-position coding and agrees with experimental findings that phase correlates better with location than time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The model suggests that laminar differences between unimodal and bimodal cells (superficial vs. deep CA1 neurons) may arise from different adaptation strengths in the two layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the model provides a plausible mechanistic explanation for observed laminar differences (Fern\u00e1ndez-Ruiz et al. 2017), this is presented as a suggestion without direct experimental validation or specific predictions about adaptation strength differences between layers. The claim is speculative and would require experimental measurement of adaptation properties in different CA1 layers to be supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C112",
+      "C113"
+    ],
+    "result": "The model makes several testable predictions for bimodal cells: two peaks in firing frequency (one above and one below theta baseline), with precession-associated frequency positively correlated with speed and procession-associated frequency negatively correlated; continued phase shift after perturbation; and higher bump height in forward vs. backward sweeps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions follow logically from the model's mechanisms and are demonstrated in simulations (Figure 6b, Figure 4c, Appendix figures). The predictions are specific and testable, though they have not yet been experimentally validated. The asymmetric suppression mechanism clearly predicts differential bump heights, and the frequency predictions follow from the phase shift dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The model provides a network mechanism for higher-frequency oscillation in place cells, addressing a limitation of oscillatory interference models. Unlike activation spreading models that require external theta reset, this model generates internal oscillatory states through firing rate adaptation rather than asymmetric connections or short-term depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to existing models is fair and well-documented with appropriate citations. The model's novel contribution - using firing rate adaptation to generate oscillatory tracking without external theta reset - is clearly articulated and demonstrated. The distinction from both oscillatory interference models (O'Keefe and Recce 1993, Lengyel et al. 2003) and activation spreading models (Tsodyks et al. 1996, Romani and Tsodyks 2015) is substantive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Both short-term depression (STD) and spike frequency adaptation (SFA) can produce bi-directional sweeps in the CANN model, but SFA uniquely enables uni-directional sweeps without external theta inputs. The mechanisms differ in that STD reduces recurrent connection strength while SFA provides direct inhibitory input to neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between STD and SFA mechanisms is based on simulations and the mechanistic differences are clearly explained. However, the claim that the difference in uni-directional sweep capability might be due to incomplete parameter exploration is appropriately acknowledged. The mechanistic distinction between the two forms of adaptation is valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The model can be generalized beyond linear tracks to complex environments including T-mazes (demonstrated), multiple-arm mazes, cascade-T environments, and 2D open fields. Preliminary 2D results show sweeps along the tangent direction of movement trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The T-maze extension is fully demonstrated with simulations. The claims about other environments are reasonable extrapolations given the model's structure, though not all are fully implemented. The 2D preliminary results (Appendix 1-figure 6) support the claim about tangent direction sweeps. The generalizability claims are appropriately qualified as extensions or preliminary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The model can be extended to grid cells by modifying the connection profile (torus-like or locally inhibitory), and grid cells would exhibit phase shift as animals move through grid fields. Grid cells and place cells might be coordinated by common external input and medial septum pacemaker signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the extension to grid cells is plausible given the model architecture and is supported by experimental observations of grid cell phase precession (Hafting et al. 2008, van der Meer and Redish 2011), this is presented as a future direction without actual implementation or simulation. The coordination hypothesis is speculative, though supported by relevant citations about medial septum function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The model suggests that online theta sweeps and offline replay may share common mechanisms based on firing rate adaptation. Theta sweeps arise from interplay between adaptation and external input, while replay arises from adaptation alone when external input is weak. The spontaneous bump movement speed during strong adaptation resembles fast replay speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the model demonstrates that strong adaptation can produce spontaneous bump movement at speeds faster than typical locomotion (Figure 2d), resembling replay, the connection between theta sweeps and replay remains speculative. The supporting evidence from coordinated development (Muessig et al. 2019) and simultaneous degradation (Drieu et al. 2018) is correlational. The hypothesis is plausible but requires further modeling and experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The CANN model is acknowledged as idealized, missing many biological details. The translation-invariant connection pattern assumed in the model may be learned through synaptic plasticity during active navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge model limitations and the idealized nature of the CANN framework. The suggestion about learning connection patterns through plasticity (Bittner et al. 2017) is reasonable but speculative. This represents appropriate scientific caution about model assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Theta phase shift provides an additional mechanism to improve animal localization beyond firing rate, which shows large variability. Taking phase into account significantly improves localization accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work (Fenton and Muller 1998, O'Keefe and Burgess 2005, Jensen and Lisman 2000) and provide appropriate context for the functional significance of the phenomena being modeled. The claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The model predicts cyclical patterns in theta sweep length as the animal approaches the T-maze decision point, with alternating long and short sweeps due to delayed adaptation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This prediction is clearly demonstrated in simulations (Figure 5b, lower panel) and a mechanistic explanation is provided based on the slow dynamics of adaptation. The prediction is specific and testable, though not yet experimentally validated. The authors appropriately note this as something to check in future experimental data.",
+    "result_type": "MINOR"
+  }
+]

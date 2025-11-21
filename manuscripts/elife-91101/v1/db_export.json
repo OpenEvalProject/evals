@@ -1,0 +1,2235 @@
+{
+  "submission": {
+    "id": "07773126-0627-4585-bac2-1aceed3caa70",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:41:07.338611Z",
+    "updated_at": "2025-11-20T22:41:07.338611Z"
+  },
+  "content": [
+    {
+      "id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "content_type": "manuscript",
+      "content_text": "# Associations of combined phenotypic aging and genetic risk with incident cancer: A prospective cohort study\n\n## Authors\n\n- Lijun Bian<sup>1</sup>\n- Zhimin Ma<sup>1</sup>\n- Xiangjin Fu<sup>1</sup>\n- Chen Ji<sup>1</sup>\n- Tianpei Wang<sup>1</sup>\n- Caiwang Yan<sup>1</sup>\n- Juncheng Dai<sup>1</sup>\n- Hongxia Ma<sup>1</sup>\n- Zhibin Hu<sup>1</sup> ([ORCID: 0000-0002-8277-5234](https://orcid.org/0000-0002-8277-5234))\n- Hongbing Shen<sup>1</sup> \u2020\n- Lu Wang<sup>3</sup> \u2020\n- Meng Zhu<sup>1</sup> ([ORCID: 0000-0001-5122-1733](https://orcid.org/0000-0001-5122-1733)) \u2020\n- Guangfu Jin<sup>1</sup> ([ORCID: 0000-0003-0249-5337](https://orcid.org/0000-0003-0249-5337)) \u2020\n\n### Affiliations\n\n1. Department of Epidemiology, Center for Global Health, School of Public Health, Nanjing Medical University Nanjing China ([ROR:059gcgy73](https://ror.org/059gcgy73))\n2. Jiangsu Key Lab of Cancer Biomarkers, Prevention and Treatment, Collaborative Innovation Center for Cancer Personalized Medicine and China International Cooperation Center for Environment and Human Health Nanjing Medical University Nanjing China ([ROR:059gcgy73](https://ror.org/059gcgy73))\n3. Department of Chronic Non-Communicable Disease Control, The Affiliated Wuxi Center for Disease Control and Prevention of Nanjing Medical University, Wuxi Center for Disease Control and Prevention, Wuxi Medical Center, Nanjing Medical University Wuxi China ([ROR:059gcgy73](https://ror.org/059gcgy73))\n4. Research Units of Cohort Study on Cardiovascular Diseases and Cancers, Chinese Academy of Medical Sciences Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Age is the most important risk factor for cancer, but aging rates are heterogeneous across individuals. We explored a new measure of aging-Phenotypic Age (PhenoAge)-in the risk prediction of site-specific and overall cancer.Methods:Using Cox regression models, we examined the association of Phenotypic Age Acceleration (PhenoAgeAccel) with cancer incidence by genetic risk group among 374,463 participants from the UK Biobank. We generated PhenoAge using chronological age and nine biomarkers, PhenoAgeAccel after subtracting the effect of chronological age by regression residual, and an incidence-weighted overall cancer polygenic risk score (CPRS) based on 20 cancer site-specific polygenic risk scores (PRSs).Results:Compared with biologically younger participants, those older had a significantly higher risk of overall cancer, with hazard ratios (HRs) of 1.22 (95% confidence interval, 1.18\u20131.27) in men, and 1.26 (1.22\u20131.31) in women, respectively. A joint effect of genetic risk and PhenoAgeAccel was observed on overall cancer risk, with HRs of 2.29 (2.10\u20132.51) for men and 1.94 (1.78\u20132.11) for women with high genetic risk and older PhenoAge compared with those with low genetic risk and younger PhenoAge. PhenoAgeAccel was negatively associated with the number of healthy lifestyle factors (Beta = \u20131.01 in men, p<0.001; Beta = \u20130.98 in women, p<0.001).Conclusions:Within and across genetic risk groups, older PhenoAge was consistently related to an increased risk of incident cancer with adjustment for chronological age and the aging process could be retarded by adherence to a healthy lifestyle.Funding:This work was supported by the National Natural Science Foundation of China (82230110, 82125033, 82388102 to GJ; 82273714 to MZ); and the Excellent Youth Foundation of Jiangsu Province (BK20220100 to MZ).\n\n## Introduction\n\nCancer continues to be the leading cause of death globally and the reduction of cancer-related deaths remains to be a public health priority (Bray et al., 2018). The morbidity and mortality of cancer increase dramatically with age, which demonstrates that aging is the greatest risk factor for cancer (Siegel et al., 2018). Although everyone gets older, individuals are aging at different rates (Rutledge et al., 2022). Therefore, the variation in the pace of aging between person may reflect the differences in susceptibility to cancer and death. Thus, measurement of an individual\u2019s biological age, particularly at the early stage of life, may promote the primary and secondary prevention of cancer through earlier identification of high-risk groups.\n\nRecently, Morgan and colleagues developed and validated a novel multi-system-based aging measurement (Levine et al., 2018), PhenoAge, which has been shown to capture long-term vulnerability to diseases like COVID-19, and strongly predict morbidity and mortality risk in diverse populations (Kuo et al., 2021b; Liu et al., 2018). However, it is largely unknown whether PhenoAge can predict overall cancer risk and identify high-risk individuals for potential personalized prevention.\n\nTo date, more than 2000 genetic loci have been identified as susceptibility markers for certain cancers by genome-wide association studies (GWAS) (Buniello et al., 2019). Although the effect of these individual loci is relatively modest on cancer risk, a PRS combining multiple loci together as an indicator of genetic risk has been proved to effectively predict the incidence of site-specific cancer (Dai et al., 2019; Lecarpentier et al., 2017; Mars et al., 2020). Recently, we systematically created site-specific cancer PRS for 20 cancer types, and constructed an incidence-weighted CPRS to assess the effect of genetic risk on overall incident cancer risk based on the UK Biobank (Zhu et al., 2021). Previous studies had indicated an interaction between genetic factors and age on cancer risk (Mavaddat et al., 2015). However, the extent to interaction between genetic factors and PhenoAge on overall cancer risk remained unclear.\n\nIn this study, we calculated PhenoAge in accordance with the method described previously and then evaluated the effectiveness of PhenoAge in predicting the risk of overall cancer in the UK Biobank. We also assessed the extent to which a level of accelerated aging was associated with an increased overall cancer risk across groups with a different genetic risk defined by the CPRS.\n\n## Methods\n\n### Participants\n\nThe participants included in this study are derived from the UK Biobank. The UK Biobank is a large population-based cohort study and detail protocol is publicly available (Bycroft et al., 2018). In brief, approximately 500,000 participants aged 40\u201370 were recruited from 22 assessment centers across England, Scotland, and Wales between 2006 and 2010 at baseline. Each eligible participant completed a written informed consent form and provided information on lifestyle and other potentially health-related aspects through extensive baseline questionnaires, interviews, and physical measurements. Meanwhile, biological samples of participants were also collected for biomarker assays and a blood draw was collected for genotyping. The UK Biobank study has approval from the Multi-center Research Ethics Committee, the National Information Governance Board for Health and Social Care in England and Wales, and the Community Health Index Advisory Group in Scotland (http://www.ukbiobank.ac.uk/ethics/).\n\n### PhenoAge and PhenoAgeAccel PRS\n\nWe calculated PhenoAge in accordance with the method described previously (Levine et al., 2018). Briefly, PhenoAge was calculated based on mortality scores from the Gompertz proportional hazard model on chronological age and nine multi-system clinical chemistry biomarkers (albumin, creatinine, glucose, [log] C-reactive protein [CRP], lymphocyte percent, mean cell volume, red blood cell distribution width, alkaline phosphatase, and white blood cell count) to predict all-cause mortality. The Biomarkers in the UK Biobank were measured at baseline (2006\u20132010) for all participants. To correct distribution skewness, we set the top and bottom 1% of values to the 99th and first percentiles. The formula of PhenoAge is given by\n\n$$\nPhenoAge=141.50+\\frac{ln-0.00553\\times\\frac{-1.51714\\timesexp\u2061xb}{0.0076927}}{0.09165}\n$$\n\nwhere\n\n$$\nxb=-19.907-0.0336\\timesalbumin+0.0095\\timescreatinine+0.1953\\timesglucose+0.0954\\timeslnCRP-0.0120\\timeslymphocytepercentage+0.0268\\timesmeancorpuscularvolume+0.3306\\timesredbloodcelldistributionwidthRDW+0.00188\\timesalkalinephosphatase+0.0554\\timeswhitebloodcellcount+0.0804\\timesage\n$$\n\nFinally, we calculated Phenotypic Age Acceleration (PhenoAgeAccel), which was defined as the residual resulting from a linear model when regressing Phenotypic Age on chronological age. Therefore, PhenoAgeAccel represents Phenotypic Age after accounting for chronological age (i.e. whether a person appears older [positive value] or younger [negative value] than expected, biologically, based on his/her age).\n\n55 independent PhenoAgeAccel-associated SNPs (p<5 \u00d7 10\u20138) and corresponding effect sizes were derived from a large-scale PhenoAgeAccel GWAS including 107,460 individuals of European ancestry (Kuo et al., 2021a). A PhenoAgeAccel PRS was created using an additive model as previously described (Dai et al., 2019). In short, the genotype dosage of each risk allele for each individual was summed after multiplying by its respective effect size of PhenoAgeAccel.\n\n### PRS calculation and CPRS construction\n\nThe calculation of site-specific cancer PRSs and the construction of CPRSs have been described in our previous published study (Zhu et al., 2021). In brief, for individual cancer, risk-associated single nucleotide polymorphisms (SNPs) and corresponding effect sizes were derived from the largest published GWASs in terms of sample size. Next, the dosage of each risk allele for each individual was summed after multiplication with its respective effect size of site-specific cancer. Except for nonmelanoma skin cancer and those without relevant GWAS or significant genetic loci published by now, we derived PRSs for 20 cancer types in this analysis. To generate an indicator of genetic risk for overall cancer, we constructed the CPRS as follows:\n\n$$\nCPRS_{i}=\\sum_{k=1}^{K}h_{k}PRS_{i,k}\n$$\n\nWhere $CPRS_{i}$ is the cancer polygenic risk score of ith individual, $h_{k}$ is the age-standardized incidence of site-specific cancer k in the UK population, and $PRS_{i,k}$ is the aforementioned PRS of site-specific cancer k. Given the different spectrum of cancer incidence between men and women, CPRS were constructed for males and females, respectively.\n\n### Assessment of healthy lifestyle\n\nWe adopted five healthy lifestyle factors according to the World Cancer Research Fund/American Institute of Cancer Research recommendations (https://www.aicr.org/cancer-prevention/) (Shams-White et al., 2019), i.e., no current smoking, no alcohol consumption, regular physical activity, moderate BMI (body-mass index, 18.5~30), and a healthy diet pattern. Participants of no current smoking were defined as never smokers or former smokers who had quit smoking at least 30 years. No alcohol consumption was defined as never alcohol use. Regular physical activity was defined as at least 75 min of vigorous activity per week or 150 min of moderate activity per week (or an equivalent combination) or engaging in vigorous activity once and moderate physical activity at least 5 days a week (Lourida et al., 2019). A healthy diet pattern was ascertained consumption of an increased amount of fruits, vegetables, whole grains, fish, and a reduced amount of red meats and processed meats (Lourida et al., 2019). The lifestyle index ranged from 0 to 5, with a higher index indicating a healthier lifestyle.\n\n### Outcomes\n\nOutcomes of incident cancer events in the UK Biobank were ascertained through record electronic linkage with the National Health Service central registers and death registries in England, Wales, and Scotland. Complete follow-up was updated to 31 October 2015 for Scotland, and to 31 March 2016 for England & Wales. Cancer events were coded using the tenth Revision of the International Classification of Diseases. The outcome of all cancer events were obtained from data fields 40006 and 40005 of the UK Biobank.\n\n### Statistical analysis\n\nCancer risk of participants in the UK Biobank was assessed from baseline until to the date of diagnosis, death, loss to follow-up, or date of complete follow-up, whichever occurred first. Multivariable Cox proportional hazards regression analyses were performed to assess associations between PhenoAgeAccel and cancer risk and to estimate hazard ratios (HRs) as well as 95% confidence intervals (CI). Schoenfeld residuals and log-log inspection were used to test the assumption of proportional hazards. HRs associated with per 5 years increased of PhenoAgeAccel was calculated for site-specific cancer and overall cancer, respectively. We compared HRs between biologically younger and older participants. In addition, we calculated HRs for participants at low (the bottom quintile of PhenoAgeAccel), intermediate (quintiles 2\u20134), and high (the top quintile) accelerated aging, and HRs for participants splitted by decile of accelerated aging.\n\nMeanwhile, participants were also divided into low (the bottom quintile of CPRS), intermediate (quintiles 2\u20134), and high (the top quintile) genetic risk groups. Absolute risk within each subgroup defined by PhenoAgeAccel and CPRS were calculated as the percentage of incident cancer cases occurring in a given group. We calculated absolute risk increase as the difference in cancer incidences among given groups, extrapolated the difference in 5 year event rates among given groups. The 95% CIs for the absolute risk increase were derived by drawing 1,000 bootstrap samples from the estimation dataset. We performed additive interaction analysis between genetic risk (defined by CPRS) and PhenoAgeAccel on overall cancer risk, as well as genetic risk (defined by PhenoAgeAccel PRS) and lifestyle on PhenoAgeAccel using two indexes: the relative excess risk due to interaction (RERI) and the attributable proportion due to interaction (AP) (Li and Chambless, 2007). The 95% CIs of the RERI and AP were estimated by bootstrap (n=5000), which would contain 0 if there was no additive interaction. We also used multivariable linear regression models to assess associations between the PhenoAgeAccel and individual lifestyle factors with adjustment for age, family history of cancer, Townsend deprivation index, height, and the first 10 principal components of ancestry. All the above-mentioned analyses were performed for men and women separately.\n\nParticipants with missing data on any of the covariates were multiple imputed, and independent analyses were also performed based on complete data for sensitivity analyses. Besides, to examine the reliability of our results, we conducted several sensitivity analyses: (1) reclassifying PhenoAgeAccel levels based on quartiles (bottom, 2\u20133, and top quartiles defined as low, intermediate, and high accelerated aging, respectively) or tertiles (corresponding to low, intermediate, and high accelerated aging) of PhenoAgeAccel; (2) reevaluating the effect of PhenoAgeAccel based on participants of unrelated British ancestry; (3) excluding incident cases of any cancer occurring during the two years of follow-up; and (4) retrained PhenoAge in cancer-free participants based on mortality. All p-values were two-sided and p<0.05 was considered statistically significant. All statistical analyses were performed with R software, version 3.6.3 (R Project for Statistical Computing).\n\n## Results\n\n### Participants\n\nAfter removing participants who had withdrawn their consent, had been diagnosed with cancer before baseline, failed to be genotyped, reported a mismatch sex with genetic data, or with missing data on PhenoAge, the final analytic dataset included 374,463 eligible participants (173,431 men and 201,032 women) (Figure 1). Of which, 169,573 participants were biologically older, with 92,189 men, and 77,384 women, whose median PhenoAgeAccel were 3.28 (interquartile range [IQR]: 1.50\u20136.06) and 3.07 (IQR: 1.33\u20135.79), respectively; 204,890 participants were biologically younger, with 81,242 men and 123,648 women, whose median PhenoAgeAccel were \u20132.61 (IQR: \u20134.35\u2013\u20131.25) and \u20133.55 (IQR: \u20135.64\u2013\u20131.81), respectively (Table 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91101/elife-91101-fig1-v1.jpg)\n\n**Figure 1.:** Participants who had withdrawn their consent, had been diagnosed with cancer before baseline, failed to be genotyped, reported a mismatch sex with genetic data, or with missing data on Phenotypic Age (PhenoAge) were excluded.\n\n**Table 1.**\n Baseline characteristics of participants stratified by Phenotypic Age Acceleration (PhenoAgeAccel) categories.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Men (n=173,431)</th>\n      <th colspan=\"2\">Women (n=201,032)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Biologically youngern=81,242</td>\n      <td>Biologically oldern=92,189</td>\n      <td>Biologically youngern=123,648</td>\n      <td>Biologically oldern=77,384</td>\n    </tr>\n    <tr>\n      <td>PhenoAgeAccel, median (IQR), years</td>\n      <td>\u20132.61 (\u22124.35\u2013-1.25)</td>\n      <td>3.28 (1.50\u20136.06)</td>\n      <td>\u20133.55 (\u22125.64\u2013-1.81)</td>\n      <td>3.07 (1.33\u20135.79)</td>\n    </tr>\n    <tr>\n      <td>Age at baseline, median (IQR), years</td>\n      <td>57.00 (49.00\u201362.00)</td>\n      <td>58.00 (50.00\u201364.00)</td>\n      <td>58.00 (51.00\u201363.00)</td>\n      <td>56.00 (48.00\u201362.00)</td>\n    </tr>\n    <tr>\n      <td>Height, median (IQR), centimeters</td>\n      <td>176.00 (171.00\u2013181.00)</td>\n      <td>175.00 (171.00\u2013180.00)</td>\n      <td>162.50 (158.00\u2013167.00)</td>\n      <td>162.00 (158.00\u2013166.50)</td>\n    </tr>\n    <tr>\n      <td>Townsend deprivation index, median (IQR)</td>\n      <td>\u20132.34 (\u22123.76\u20130.16)</td>\n      <td>\u20131.86 (\u22123.52\u20131.10)</td>\n      <td>\u20132.33 (\u22123.73\u20130.07)</td>\n      <td>\u20131.79 (\u22123.44\u20131.10)</td>\n    </tr>\n    <tr>\n      <td>Family history of cancer, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No</td>\n      <td>53907 (66.35)</td>\n      <td>60654 (65.79)</td>\n      <td>79800 (64.54)</td>\n      <td>50924 (65.81)</td>\n    </tr>\n    <tr>\n      <td>Yes</td>\n      <td>27335 (33.65)</td>\n      <td>31535 (34.21)</td>\n      <td>43848 (35.46)</td>\n      <td>26460 (34.19)</td>\n    </tr>\n    <tr>\n      <td>Healthy lifestyle factors, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>No current smoking</td>\n      <td>46412 (57.13)</td>\n      <td>43216 (46.88)</td>\n      <td>78743 (63.68)</td>\n      <td>45416 (58.69)</td>\n    </tr>\n    <tr>\n      <td>No alcohol consumption</td>\n      <td>2064 (2.54)</td>\n      <td>2828 (3.07)</td>\n      <td>6221 (5.03)</td>\n      <td>5459 (7.05)</td>\n    </tr>\n    <tr>\n      <td>Normal BMI</td>\n      <td>66120 (81.39)</td>\n      <td>62654 (67.96)</td>\n      <td>103054 (83.34)</td>\n      <td>49003 (63.32)</td>\n    </tr>\n    <tr>\n      <td>Regular physical activity</td>\n      <td>54346 (66.89)</td>\n      <td>57733 (62.62)</td>\n      <td>80629 (65.21)</td>\n      <td>46468 (60.05)</td>\n    </tr>\n    <tr>\n      <td>Healthy diet</td>\n      <td>18540 (22.82)</td>\n      <td>15486 (16.80)</td>\n      <td>39547 (31.98)</td>\n      <td>19826 (25.62)</td>\n    </tr>\n    <tr>\n      <td>Healthy lifestyle*, n (%)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favorable</td>\n      <td>7781 (9.58)</td>\n      <td>5255 (5.70)</td>\n      <td>17781 (14.38)</td>\n      <td>7178 (9.28)</td>\n    </tr>\n    <tr>\n      <td>Intermediate</td>\n      <td>57683 (71.00)</td>\n      <td>57489 (62.36)</td>\n      <td>87272 (70.58)</td>\n      <td>49324 (63.74)</td>\n    </tr>\n    <tr>\n      <td>Unfavorable</td>\n      <td>15778 (19.42)</td>\n      <td>29445 (31.94)</td>\n      <td>18595 (15.04)</td>\n      <td>20882 (26.98)</td>\n    </tr>\n    <tr>\n      <td>Albumin, median (IQR), (g/L)</td>\n      <td>46.20 (44.62\u201347.85)</td>\n      <td>44.95 (43.28\u201346.64)</td>\n      <td>45.47 (43.87\u201347.12)</td>\n      <td>44.04 (42.42\u201345.70)</td>\n    </tr>\n    <tr>\n      <td>Alkaline phosphatase, median (IQR), (U/L)</td>\n      <td>75.00 (64.30\u201387.40)</td>\n      <td>82.80 (70.10\u201397.90)</td>\n      <td>78.70 (65.10\u201393.90)</td>\n      <td>86.20 (70.60\u2013104.00)</td>\n    </tr>\n    <tr>\n      <td>Creatinine, median (IQR), (umol/L)</td>\n      <td>77.60 (70.90\u201384.70)</td>\n      <td>82.50 (74.40\u201391.60)</td>\n      <td>61.70 (56.00\u201367.90)</td>\n      <td>65.50 (58.90\u201373.20)</td>\n    </tr>\n    <tr>\n      <td>Glucose, median (IQR), (mmol/l)</td>\n      <td>4.82 (4.49\u20135.14)</td>\n      <td>5.09 (4.72\u20135.60)</td>\n      <td>4.84 (4.54\u20135.14)</td>\n      <td>5.05 (4.70\u20135.55)</td>\n    </tr>\n    <tr>\n      <td>C-reactive protein, median (IQR), (mg/dL)</td>\n      <td>0.09 (0.05\u20130.16)</td>\n      <td>0.19 (0.10\u20130.36)</td>\n      <td>0.10 (0.05\u20130.20)</td>\n      <td>0.25 (0.12\u20130.51)</td>\n    </tr>\n    <tr>\n      <td>Lymphocyte percent, median (IQR), (%)</td>\n      <td>29.86 (25.48\u201334.48)</td>\n      <td>25.60 (21.22\u201330.24)</td>\n      <td>31.09 (26.58\u201335.80)</td>\n      <td>27.00 (22.62\u201331.61)</td>\n    </tr>\n    <tr>\n      <td>Mean cell volume, median (IQR), (fL)</td>\n      <td>90.90 (88.46\u201393.30)</td>\n      <td>91.90 (89.10\u201394.74)</td>\n      <td>91.10 (88.60\u201393.54)</td>\n      <td>90.98 (87.64\u201394.02)</td>\n    </tr>\n    <tr>\n      <td>Red cell distribution width, median (IQR), (%)</td>\n      <td>13.01 (12.70\u201313.37)</td>\n      <td>13.63 (13.21\u201314.11)</td>\n      <td>13.10 (12.71\u201313.50)</td>\n      <td>13.90 (13.40\u201314.55)</td>\n    </tr>\n    <tr>\n      <td>White blood cell count, median (IQR), (1000 cells/uL)</td>\n      <td>6.12 (5.29\u20137.10)</td>\n      <td>7.27 (6.17\u20138.51)</td>\n      <td>6.24 (5.37\u20137.26)</td>\n      <td>7.41 (6.30\u20138.73)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Healthy lifestyle was defined as favorable (4\u20135 healthy lifestyle factors), intermediate (2\u20133 healthy lifestyle factors), and unfavorable (0\u20131 healthy lifestyle factor)._\n\n### Associations of PhenoAgeAccel with cancer risk\n\nThere were 22,370 incident cancer cases, with 11,532 men and 10,838 women, during a median follow-up of 7.09 years (IQR: 6.35\u20137.72). The PhenoAgeAccel was significantly associated with increased risk for cancer sites of lip-oral cavity-pharynx, esophagus, stomach, colon-rectum, pancreas, lung, breast, cervix uteri, corpus uteri, prostate, kidney, bladder, multiple myeloma, Hodgkin\u2019s disease, and lymphoid leukemia, while negatively associated with risk of prostate cancer after adjusting for chronological age and other covariates (Figure 2, Supplementary file 1a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91101/elife-91101-fig2-v1.jpg)\n\n**Figure 2.:** Cox proportional hazards regression adjusted for age, height, cancer family history, Townsend deprivation index at recruitment, and the first 10 principal components of ancestry. Error bars are 95% confidence intervals (CIs).\n\nFor overall cancer, we observed an obviously higher distribution of PhenoAgeAccel in incident cancer cases than participants without incident cancer in both men and women (Figure 3A and B). PhenoAgeAccel was significantly associated with an increased risk of overall cancer in men (HR = 1.15, 95% CI, 1.13\u20131.17, p<0.0001) and women (HR = 1.15, 95% CI, 1.13\u20131.17, p<0.0001) per 5 years increase (Table 2). We also observed a significant gradient increase in incident cancer risk from decile 1 to decile 10 of PhenoAgeAccel (Figure 3C and D). Compared with biologically younger participants, those older had a significantly higher risk of overall cancer, with HRs of 1.22 (95% CI, 1.18\u20131.27, p<0.0001) in men, 1.26 (95% CI, 1.22\u20131.31, p<0.0001) in women, respectively (Figure 3E and F). Besides, Compared with individuals at low accelerated aging (the bottom quintile of PhenoAgeAccel), those in the intermediate (quintiles 2\u20134) and high accelerated aging (the top quintile) had a significantly higher risk of overall cancer, with HRs of 1.15 (95% CI, 1.09\u20131.21, p<0.0001) and 1.44 (95% CI, 1.36\u20131.53, p<0.0001) in men, 1.15 (95% CI, 1.09\u20131.21, p<0.0001), and 1.46 (95% CI, 1.38\u20131.55, p<0.0001) in women, respectively. These results did not change after adjustment for genetic risk and lifestyle factors (Table 2). Similar patterns were noted in a series of sensitivity analyses with reclassifying accelerated aging levels according to quartiles or tertiles of the PhenoAgeAccel (Supplementary file 1b), exclusion of incident cancer cases occurred during the two years of follow-up (Supplementary file 1c), in the unimputed data (Supplementary file 1d), in the unrelated British population (Supplementary file 1e), or using retrained PhenoAge in cancer-free participants (Supplementary file 1f).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91101/elife-91101-fig3-v1.jpg)\n\n**Figure 3.:** The distribution of PhenoAgeAccel between participants with incident cancer and those without incident cancer in the UK Biobank for men(A) and women (B). Participants in the UK Biobank were divided into ten equal groups according to the PhenoAgeAccel for men (C) and women (D), and the hazard ratios (HRs) of each group were compared with those in the bottom decile of PhenoAgeAccel. Error bars are 95% confidence intervals (CIs). Standardized rates of cancer events in younger and older PhenoAge groups in the UK Biobank for men (E) and women (F). HRs and 95% CIs were estimated using Cox proportional hazard models with adjustment for age, height, family history of cancer, Townsend deprivation index, and the first 10 principal components of ancestry. Shaded areas are 95% CIs.\n\n**Table 2.**\n Association between Phenotypic Age Acceleration (PhenoAgeAccel) and cancer risk.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th colspan=\"2\">Model 1*</th>\n      <th colspan=\"2\">Model 2\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>n (cases)</td>\n      <td>Person-Years</td>\n      <td>HR (95% CI)</td>\n      <td>p value</td>\n      <td>HR (95% CI)</td>\n      <td>value</td>\n    </tr>\n    <tr>\n      <td rowspan=\"9\">Men</td>\n      <td>Per 5 years increase</td>\n      <td>173431 (11532)</td>\n      <td>1190628</td>\n      <td>1.15 (1.13\u20131.17)</td>\n      <td>1.55\u00d710\u201354</td>\n      <td>1.13 (1.11\u20131.15)</td>\n      <td>5.46\u00d710\u201344</td>\n    </tr>\n    <tr>\n      <td>Category</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biologically younger</td>\n      <td>81242 (4649)</td>\n      <td>564818</td>\n      <td>Ref.</td>\n      <td></td>\n      <td>Ref.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biologically older</td>\n      <td>92189 (6883)</td>\n      <td>625810</td>\n      <td>1.22 (1.18\u20131.27)</td>\n      <td>5.31\u00d710\u201326</td>\n      <td>1.19 (1.15\u20131.24)</td>\n      <td>3.18\u00d710\u201320</td>\n    </tr>\n    <tr>\n      <td>Quintiles\u2020</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Low</td>\n      <td>34687 (1864)</td>\n      <td>242519</td>\n      <td>Ref.</td>\n      <td></td>\n      <td>Ref.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Intermediate</td>\n      <td>104058 (6668)</td>\n      <td>716312</td>\n      <td>1.15 (1.09\u20131.21)</td>\n      <td>2.17\u00d710\u20137</td>\n      <td>1.12 (1.07\u20131.18)</td>\n      <td>8.01\u00d710\u20136</td>\n    </tr>\n    <tr>\n      <td>High</td>\n      <td>34686 (3000)</td>\n      <td>231797</td>\n      <td>1.44 (1.36\u20131.53)</td>\n      <td>1.01\u00d710\u201334</td>\n      <td>1.39 (1.31\u20131.47)</td>\n      <td>1.99\u00d710\u201327</td>\n    </tr>\n    <tr>\n      <td>p for trend</td>\n      <td></td>\n      <td></td>\n      <td>3.03\u00d710\u201337</td>\n      <td></td>\n      <td>1.65\u00d710\u201329</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td rowspan=\"9\">Women</td>\n      <td>Per 5 years increase</td>\n      <td>201032 (10838)</td>\n      <td>1393562</td>\n      <td>1.15 (1.13\u20131.17)</td>\n      <td>1.80\u00d710\u201353</td>\n      <td>1.13 (1.11\u20131.15)</td>\n      <td>1.35\u00d710\u201341</td>\n    </tr>\n    <tr>\n      <td>Category</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biologically younger</td>\n      <td>123648 (6229)</td>\n      <td>861570</td>\n      <td>Ref.</td>\n      <td></td>\n      <td>Ref.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biologically older</td>\n      <td>77384 (4609)</td>\n      <td>531993</td>\n      <td>1.26 (1.22\u20131.31)</td>\n      <td>5.91\u00d710\u201333</td>\n      <td>1.23 (1.18\u20131.28)</td>\n      <td>2.71\u00d710\u201325</td>\n    </tr>\n    <tr>\n      <td>Quintiles\u2021</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Low</td>\n      <td>40207 (1946)</td>\n      <td>281912</td>\n      <td>Ref.</td>\n      <td></td>\n      <td>Ref.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Intermediate</td>\n      <td>120618 (6351)</td>\n      <td>836341</td>\n      <td>1.15 (1.09\u20131.21)</td>\n      <td>1.46\u00d710\u20137</td>\n      <td>1.13 (1.07\u20131.18)</td>\n      <td>5.89\u00d710\u20136</td>\n    </tr>\n    <tr>\n      <td>High</td>\n      <td>40207 (2541)</td>\n      <td>275309</td>\n      <td>1.46 (1.38\u20131.55)</td>\n      <td>2.54\u00d710\u201336</td>\n      <td>1.40 (1.32\u20131.49)</td>\n      <td>5.94\u00d710\u201328</td>\n    </tr>\n    <tr>\n      <td>p for trend</td>\n      <td></td>\n      <td></td>\n      <td>4.23\u00d710\u201337</td>\n      <td></td>\n      <td>1.36\u00d710\u201328</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*Cox proportional hazards regression adjusted for Model 1, as well as cancer polygenic risk score and healthy lifestyle.\u2020Defined by quintiles of PhenoAgeAccel: low (the bottom quintile), intermediate (quintiles 2\u20134), and high (the top quintile).\u2021Cox proportional hazards regression adjusted for age, height, cancer family history, Townsend deprivation index at recruitment, and the first 10 principal components of ancestry.CI, confidence interval; HR, hazards ratio; Ref, reference._\n\n### Joint effect and interaction of genetic factor and PhenoAgeAccel on overall cancer risk\n\nThe overall incident cancer risk is associated with both genetic risk and PhenoAgeAccel in a dose-response manner (Figure 4). Of participants with high genetic risk and older PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 1477.89 (95% CI, 1410.87\u20131544.92) in men and 1076.17 (95% CI, 1014.14\u20131138.19) in women versus 581.06 (95% CI, 537.12\u2013625.00) in men and 594.71 (95% CI, 558.50\u2013630.92) in women with low genetic risk and younger PhenoAge. Approximate double risks [HR, 2.29 (95% CI, 2.10\u20132.51) in men, p<0.0001; 1.94 (95% CI, 1.78\u20132.11) in women, p<0.0001] were observed in participants with high genetic risk and older PhenoAge, compared with those with low genetic risk and younger PhenoAge. Similar patterns were noted by reclassifying accelerated aging levels into low (the bottom quintile of PhenoAgeAccel), intermediate (quintiles 2\u20134), and high (the top quintile) (Figure 4\u2014figure supplement 1). However, we did not observe the interaction between genetic and PhenoAgeAccel on overall cancer risk in men and women (Supplementary file 1g).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91101/elife-91101-fig4-v1.jpg)\n\n**Figure 4.:** The hazard ratios (HRs) were estimated using Cox proportional hazard models with adjustment for age, height, family history of cancer, Townsend deprivation index, and the first 10 principal components of ancestry. Participants were divided into younger and older PhenoAge under different genetic risk groups. Error bars are 95% confidence intervals (CIs).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91101/elife-91101-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The hazard ratios (HRs) were estimated using Cox proportional hazard models with adjustment for age, height, family history of cancer, Townsend deprivation index, and the first 10 principal components of ancestry. Participants were divided into low (the bottom quintile of PhenoAgeAccel), intermediate (quintiles 2\u20134), and high (the top quintile) accelerated aging under different genetic risk groups. Error bars are 95% confidence intervals (CIs).\n\n### Disadvantages of older PhenoAge with overall incident cancer\n\nIn further stratification analyses by genetic risk category with younger PhenoAge as the reference group, we confirmed that older PhenoAge was significantly associated with a higher incident cancer risk across genetic risk groups (Table 3). Among participants at high genetic risk, the standardized 5 year incident cancer rates were 5.78% and 4.58% for biologically younger men and women versus 6.90% and 5.17% for those older, respectively. Similarly, among participants at low genetic risk, the standardized 5 year incident cancer rates increased from 2.71% and 2.83% for biologically younger to 3.87% and 3.39% for those older in men and women, respectively. Similar patterns were noted by reclassifying accelerated aging levels into low (the bottom quintile of PhenoAgeAccel), intermediate (quintiles 2\u20134), and high (the top quintile) (Supplementary file 1h).\n\n**Table 3.**\n Risk of incident cancer according to Phenotypic Age Acceleration (PhenoAgeAccel) categories within each genetic risk level*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Gender</th>\n      <th rowspan=\"2\">PhenoAgeAccel category</th>\n      <th colspan=\"2\">Low genetic risk</th>\n      <th></th>\n      <th colspan=\"2\">Intermediate genetic risk</th>\n      <th></th>\n      <th colspan=\"2\">High genetic risk</th>\n    </tr>\n    <tr>\n      <th>Biologically younger</th>\n      <th>Biologically older</th>\n      <th></th>\n      <th>Biologically younger</th>\n      <th>Biologically older</th>\n      <th></th>\n      <th>Biologically younger</th>\n      <th>Biologically older</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">Men</td>\n      <td>No. of cases/Person years</td>\n      <td>668/114962</td>\n      <td>1031/124526</td>\n      <td></td>\n      <td>2606/338950</td>\n      <td>4012/376782</td>\n      <td></td>\n      <td>1375/110907</td>\n      <td>1840/124502</td>\n    </tr>\n    <tr>\n      <td>Hazards ratio</td>\n      <td rowspan=\"2\">Ref.</td>\n      <td rowspan=\"2\">1.29(1.17\u20131.42)</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">Ref.</td>\n      <td rowspan=\"2\">1.27(1.21\u20131.33)</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">Ref.</td>\n      <td rowspan=\"2\">1.10(1.02\u20131.18)</td>\n    </tr>\n    <tr>\n      <td>(95% CI)</td>\n    </tr>\n    <tr>\n      <td>p value</td>\n      <td></td>\n      <td>3.53\u00d710\u20137</td>\n      <td></td>\n      <td></td>\n      <td>3.15\u00d710\u201321</td>\n      <td></td>\n      <td></td>\n      <td>1.07\u00d710\u20132</td>\n    </tr>\n    <tr>\n      <td>Absolute risk (%)-5 years (95% CI)</td>\n      <td>2.71(2.49\u20132.94)</td>\n      <td>3.87(3.60\u20134.14)</td>\n      <td></td>\n      <td>3.57(3.41\u20133.72)</td>\n      <td>4.95(4.78\u20135.13)</td>\n      <td></td>\n      <td>5.78(5.44\u20136.11)</td>\n      <td>6.90(6.55\u20137.26)</td>\n    </tr>\n    <tr>\n      <td>Absolute risk increase (%)-5 years (95% CI)</td>\n      <td>Ref.</td>\n      <td>1.16(0.84\u20131.46)</td>\n      <td></td>\n      <td>Ref.</td>\n      <td>1.39(1.19\u20131.60)</td>\n      <td></td>\n      <td>Ref.</td>\n      <td>1.13(0.68\u20131.52)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Women</td>\n      <td>No. of cases/Person years</td>\n      <td>1030/173195</td>\n      <td>761/106937</td>\n      <td></td>\n      <td>3579/518611</td>\n      <td>2704/318753</td>\n      <td></td>\n      <td>1620/169764</td>\n      <td>1144/106303</td>\n    </tr>\n    <tr>\n      <td>Hazards ratio</td>\n      <td rowspan=\"2\">Ref.</td>\n      <td rowspan=\"2\">1.25(1.14\u20131.38)</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">Ref.</td>\n      <td rowspan=\"2\">1.30(1.24\u20131.37)</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">Ref.</td>\n      <td rowspan=\"2\">1.19(1.10\u20131.28)</td>\n    </tr>\n    <tr>\n      <td>(95% CI)</td>\n    </tr>\n    <tr>\n      <td>p value</td>\n      <td></td>\n      <td>2.65\u00d710\u20136</td>\n      <td></td>\n      <td></td>\n      <td>1.84\u00d710\u201324</td>\n      <td></td>\n      <td></td>\n      <td>8.19\u00d710\u20136</td>\n    </tr>\n    <tr>\n      <td>Absolute risk (%) -5 years (95% CI)</td>\n      <td>2.83(2.63\u20133.02)</td>\n      <td>3.39(3.12\u20133.65)</td>\n      <td></td>\n      <td>3.27(3.15\u20133.39)</td>\n      <td>4.02(3.86\u20134.19)</td>\n      <td></td>\n      <td>4.58(4.33\u20134.83)</td>\n      <td>5.17(4.84\u20135.49)</td>\n    </tr>\n    <tr>\n      <td>Absolute risk increase (%)-5 years (95% CI)</td>\n      <td>Ref.</td>\n      <td>0.56(0.26\u20130.86)</td>\n      <td></td>\n      <td>Ref.</td>\n      <td>0.76(0.57\u20130.93)</td>\n      <td></td>\n      <td>Ref.</td>\n      <td>0.59(0.23\u20130.98)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Cox proportional hazards regression is adjusted for age, height, family history of cancer, Townsend deprivation index, height, and the first 10 principal components of ancestry.CI, confidence interval; Ref, reference._\n\nIn addition, to evaluate the implication for cancer screening in populations with different PhenoAgeAccel, we estimated the 5 year absolute risk of overall cancer between biologically younger and older participants with increasing age. Assuming 2% of absolute risk within the next 5 years as the threshold to be recommended for cancer screening, biologically younger men would reach the threshold at age 52, whereas those older men would reach the threshold at age 50; similarly, biologically younger women would reach the 2% of 5 year absolute risk at age 46, whereas those older women would reach the threshold at age 44 (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91101/elife-91101-fig5-v1.jpg)\n\n**Figure 5.:** The x-axis is chronological age. The curves describe the average risk of participants in younger and older Phenotypic Age (PhenoAge) groups. The dashed curve represents the average risk of the whole population at different ages. The red horizontal dotted line represents 2% of 5 year absolute risks of overall cancer.\n\n### Associations of lifestyle factors with PhenoAgeAccel\n\nIn the UK Biobank, biologically younger men (9.6%, 7781/81,242) and women (14.4%, 17,781/123,648) were more likely to have a favorable lifestyle (4\u20135 healthy lifestyle factors) than older men (5.7%, 5255/92,189) and women (9.3%, 7178/77,384) (Table 1). Among both men and women, we observed that PhenoAgeAccel decreased with the increase of healthy lifestyle factors (Supplementary file 1i). In addition, we found a significant negative correlation between the number of healthy lifestyle factors and PhenoAgeAccel (Beta = \u20131.01 in men, p<0.001; Beta = \u20130.98 in women, p<0.001) (Supplementary file 1j). However, we did not observe any interaction between genetic risk and lifestyle on PhenoAgeAccel in both men and women (Supplementary file 1k).\n\n## Discussion\n\nIn this study, we calculated PhenoAgeAccel to explore the effect of accelerated aging on the risk of cancer, and demonstrated a positive association between accelerated aging and increased cancer risk after adjustment for chronological age in the UK Biobank. Meanwhile, older PhenoAge was consistently associated with an increased absolute risk of incident cancer within each genetic risk group; and participants with high genetic risk and older PhenoAge had the greatest incident cancer risk. Therefore, our findings provided the evidence for PhenoAgeAccel to be used for risk stratification of cancer, which were independent from genetic risk. Moreover, we also demonstrated that participants with older biological age often reaches the screening threshold 2 years in advance compared with biologically younger peers; and keeping a healthy lifestyle can effectively slow down the aging process.\n\nOlder age has been long recognized as the main risk factor for cancer, and the multistage model of carcinogenesis posits that the exponential increase in cancer incidence with age were mainly resulted from the sequential accumulation of oncogenic mutations in different tissues throughout life (Laconi et al., 2020). In consistent with this, age and exposure (i.e. smoking, ultraviolet light) dependent mutation signatures have been identified in several cancers by tissue sequencing (Alexandrov et al., 2020). However, biological aging is an enormously complex process and is thought to be influenced by multiple genetic and environmental factors (van Dongen et al., 2016). Therefore, several biomarkers, i.e., \u2018aging clocks\u2019 derived from epigenomic, transcriptomic, proteomic, and metabolomic data, have been proposed to measure the biological age and predict the risk of cancer and other diseases (Rutledge et al., 2022; Zhang et al., 2022). However, these measures were usually based on omics data and was not suitable for application in large populations by now. As a result, results from this study would provide a cost-effective indicator for measuring biological age as well as a novel biomarker for cancer risk prediction.\n\nThe associations between biological age and cancer risk has been investigated by several studies recently (Li et al., 2022) explored three DNA methylation phenotypic age and cancer risk in four subsets of a population-based cohort from Germany, and reported strong positive associations for lung cancer, while strong inverse associations for breast cancer (Li et al., 2022). Meanwhile, results from the Melbourne Collaborative Cohort Study reported that epigenetic aging was associated with increased cancer risk of kidney cancer and B-cell lymphoma (Dugu\u00e9 et al., 2018). However, because of sample size, the association results were still inconsistent for DNA methylation phenotypic age among different studies. Leukocyte telomere length was also significantly associated with age and were regarded as an indicator of aging. Based on data from the UK Biobank, (Schneider et al., 2022) recently explored the associations between telomere length and risk of several diseases, and reported significant positive associations of telomere length for lymphoid leukemia, multiple myeloma, non-Hodgkin lymphoma, esophagus cancer, while negative associations for malignant neoplasm of brain, mesothelioma, and melanoma (Schneider et al., 2022). The positive associations were in consistent with our findings, however, the negative associations were not significant in our study. Meanwhile, the study did not indicate associations for other cancers, including cancers of lung, stomach, pancreas, and kidney, which showed relatively large effects (HR >1.3) in our study. These findings indicated that the different measures of biological age may reflect the different aspects of aging, and could be joint application in cancer risk assessment.\n\nRecently, several studies have confirmed the associations between PhenoAgeAccel and cancer risk. Mak et al., 2023 explored three measures of biological age, including PhenoAge, and assessed their associations with the incidence of overall cancer and five common cancers (breast, prostate, lung, colorectal, and melanoma). In our previous study, we investigated the association between PhenoAgeAccel and lung cancer risk and analyzed the joint and interactive effects of PhenoAgeAccel and genetic factors on the risk of lung cancer (Ma et al., 2023). In comparison to these studies, our analysis expanded the range of cancers to 20 types and further explored the associations in different genetic and lifestyle contexts. Moreover, we also evaluated the potential implications of PhenoAge in population-level cancer screening. In addition, we observed a negative association between PhenoAgeAccel and prostate cancer risk. The unexpected association may have been confounded by diabetes and altered glucose metabolism, both of which are closely linked to aging. When we removed HbA1c and serum glucose from the biological age algorithms, the association became non-statistically significant. Similar findings were also reported by Mak et al., 2023 and Dugu\u00e9 et al., 2021.\n\nThe associations between PhenoAgeAccel and increased cancer risk may be partly attribute to a result of decline in the immune system and accumulation of environmental carcinogenic factors. Recent GWASs of PhenoAgeAccel showed that SNPs associated with PhenoAgeAccel were enriched in pathways of immune system and activation of pro-inflammatory (Kuo et al., 2021a; Levine et al., 2018). In addition to genetics, behaviors (i.e. obesity, smoking, alcohol consumption, and physical activity), and life course circumstances (i.e. socioenvironmental circumstances during childhood and adulthood) were reported to account for about 30% variances of phenotypic aging (Liu et al., 2019). This was in accordance with our findings that, adherence to healthy lifestyles (involving no current smoking, normal BMI, regular physical activity, and healthy diet) could slow down the aging process. In other words, these healthy lifestyles considered in our and previous studies may be causal drivers of phenotypic aging, they represent a more targetable strategy for reducing overall cancer burden by retarding the aging process. Therefore, PhenoAge provides a meaningful intermediate phenotype that can be used to guide interventions for high-risk groups and track intervention efficacy (Liu et al., 2019).\n\nThis study has several strengths, including a large sample size, a prospective design of the UK Biobank study, and an effective application of PhenoAgeAccel in predicting the risk of overall cancer. Nevertheless, we also acknowledge several limitations. First, we calculated PhenoAge based on 9 biomarkers from blood, which were measured at baseline. As such, we were unable to access the change of PhenoAgeAccel during the follow-up period. Second, previous studies have indicated that patricians in the UK Biobank differ from the general UK population because of low participation and healthy volunteer bias (Fry et al., 2017). Finally, even though the findings were achieved from participants with diverse ethnic backgrounds of the UK Biobank, the generalizability of our findings should be further assessed in more diverse populations when available.\n\nIn summary, our study showed that accelerated aging, which was measured by PhenoAgeAccel, was consistently related to an increased risk of several site-specific cancer and overall cancer with adjustment for chronological age, within and across genetic risk groups. PhenoAgeAccel can serve as a productive tool to facilitate the identification of cancer susceptible individuals, in combination with individual\u2019s genetic background, and act as an intermediate phenotype to guide interventions for high-risk groups and track intervention efficacy.\n",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicolas Schlecht, Roswell Park Comprehensive Cancer Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91101.3.sa0](https://doi.org/10.7554/eLife.91101.3.sa0)\n\nThis study presents fundamental findings that advance our understanding of the role of phenotypic aging in cancer risk. This article presents compelling results that show Phenotypic Age Acceleration (PhenoAgeAccel) can predict cancer incidence of different types and could be used with genetic risk to facilitate the identification of cancer-susceptible individuals. These results will be of broad interest to the research community and clinicians.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91101.3.sa1](https://doi.org/10.7554/eLife.91101.3.sa1)\n\nBian et al showed that biomarker-informed PhenoAgeAccel was consistently related to an increased risk of site-specific cancer and overall cancer within and across genetic risk groups. The results showed that PhenoAgeAccel and genetic liability of a bunch of cancers serve as productive tools to facilitate the identification of cancer-susceptible individuals under an additive model. People with a high genetic risk for cancer may benefit from PhenoAgeAccel-imformed interventions.\n\nAs the authors pointed out, the large sample size, the prospective design UK Biobank study, and the effective application of PhenoAgeAccel in predicting the risk of overall cancer are the major strengths of the study. Meanwhile, the CPRS seems to be a solid and comprehensive score based on incidence-weighted site-specific polygenic risk scores across 20 well-powered GWAS for cancers.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91101.3.sa2](https://doi.org/10.7554/eLife.91101.3.sa2)\n\nBian et al. calculated Phenotypic Age Acceleration (PhenoAgeAccel) via a linear model regressing Phenotypic Age on chronological age. They examined the associations between PhenoAgeAccel and cancer incidence using 374,463 individuals from the UK Biobank and found that older PhenoAge was consistently related to an increased risk of incident cancer, even among each risk group defined by genetics.\n\nThe study is well-designed, and uses a large sample size from the UK biobank.\n\nComments on revised version:\n\nThe authors have addressed all my concerns.\n",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fa9709b7-da95-4ede-b029-4575f714b32d",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C1",
+      "claim": "Cancer continues to be the leading cause of death globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer continues to be the leading cause of death globally and the reduction of cancer-related deaths remains to be a public health priority (Bray et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bray et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "5291a9c1-effd-4eba-ae08-8d0a27c32578",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C2",
+      "claim": "The morbidity and mortality of cancer increase dramatically with age.",
+      "claim_type": "EXPLICIT",
+      "source": "The morbidity and mortality of cancer increase dramatically with age, which demonstrates that aging is the greatest risk factor for cancer (Siegel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Siegel et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "6dc8d093-b189-45fe-8c27-cf09154a1f4d",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C3",
+      "claim": "Aging is the greatest risk factor for cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The morbidity and mortality of cancer increase dramatically with age, which demonstrates that aging is the greatest risk factor for cancer (Siegel et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Siegel et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "44bb4ea0-4efc-4c22-b4ac-806ddd61c4b4",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C4",
+      "claim": "Individuals are aging at different rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Although everyone gets older, individuals are aging at different rates (Rutledge et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rutledge et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "198a0718-b420-4194-b4b4-602b0a1893b7",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C5",
+      "claim": "PhenoAge has been shown to capture long-term vulnerability to diseases like COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Morgan and colleagues developed and validated a novel multi-system-based aging measurement (Levine et al., 2018), PhenoAge, which has been shown to capture long-term vulnerability to diseases like COVID-19, and strongly predict morbidity and mortality risk in diverse populations (Kuo et al., 2021b; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kuo et al., 2021b and Liu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "b3127ebe-e43e-4424-ade6-b67245658ef2",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C6",
+      "claim": "PhenoAge strongly predicts morbidity and mortality risk in diverse populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Morgan and colleagues developed and validated a novel multi-system-based aging measurement (Levine et al., 2018), PhenoAge, which has been shown to capture long-term vulnerability to diseases like COVID-19, and strongly predict morbidity and mortality risk in diverse populations (Kuo et al., 2021b; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kuo et al., 2021b and Liu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "ffbddd15-6be0-4790-9762-a67b0dac5486",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C7",
+      "claim": "More than 2000 genetic loci have been identified as susceptibility markers for certain cancers by genome-wide association studies.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, more than 2000 genetic loci have been identified as susceptibility markers for certain cancers by genome-wide association studies (GWAS) (Buniello et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buniello et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "201bc2b1-ea7a-44d5-84b6-5466324fbb97",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C8",
+      "claim": "A PRS combining multiple loci together as an indicator of genetic risk has been proved to effectively predict the incidence of site-specific cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the effect of these individual loci is relatively modest on cancer risk, a PRS combining multiple loci together as an indicator of genetic risk has been proved to effectively predict the incidence of site-specific cancer (Dai et al., 2019; Lecarpentier et al., 2017; Mars et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dai et al., 2019; Lecarpentier et al., 2017; Mars et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "6641c223-9078-4f0a-8700-774e22450ff2",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C9",
+      "claim": "The final analytic dataset included 374,463 eligible participants (173,431 men and 201,032 women).",
+      "claim_type": "EXPLICIT",
+      "source": "After removing participants who had withdrawn their consent, had been diagnosed with cancer before baseline, failed to be genotyped, reported a mismatch sex with genetic data, or with missing data on PhenoAge, the final analytic dataset included 374,463 eligible participants (173,431 men and 201,032 women) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study cohort and shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "87e952f8-ba27-4914-bf39-d63cfe188ae3",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C10",
+      "claim": "169,573 participants were biologically older, with 92,189 men and 77,384 women.",
+      "claim_type": "EXPLICIT",
+      "source": "Of which, 169,573 participants were biologically older, with 92,189 men, and 77,384 women, whose median PhenoAgeAccel were 3.28 (interquartile range [IQR]: 1.50\u20136.06) and 3.07 (IQR: 1.33\u20135.79), respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "026fe1d0-39f4-4de1-9d00-759320fb7b65",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C11",
+      "claim": "204,890 participants were biologically younger, with 81,242 men and 123,648 women.",
+      "claim_type": "EXPLICIT",
+      "source": "204,890 participants were biologically younger, with 81,242 men and 123,648 women, whose median PhenoAgeAccel were \u20132.61 (IQR: \u20134.35\u2013\u20131.25) and \u20133.55 (IQR: \u20135.64\u2013\u20131.81), respectively (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "e9dc6891-37ca-4819-b27c-3b9d5f827164",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C12",
+      "claim": "There were 22,370 incident cancer cases, with 11,532 men and 10,838 women, during a median follow-up of 7.09 years.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 22,370 incident cancer cases, with 11,532 men and 10,838 women, during a median follow-up of 7.09 years (IQR: 6.35\u20137.72).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "244f070a-e330-47bd-a657-a0e177c6c7a6",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C13",
+      "claim": "PhenoAgeAccel was significantly associated with increased risk for cancer sites of lip-oral cavity-pharynx, esophagus, stomach, colon-rectum, pancreas, lung, breast, cervix uteri, corpus uteri, prostate, kidney, bladder, multiple myeloma, Hodgkin's disease, and lymphoid leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "The PhenoAgeAccel was significantly associated with increased risk for cancer sites of lip-oral cavity-pharynx, esophagus, stomach, colon-rectum, pancreas, lung, breast, cervix uteri, corpus uteri, prostate, kidney, bladder, multiple myeloma, Hodgkin's disease, and lymphoid leukemia, while negatively associated with risk of prostate cancer after adjusting for chronological age and other covariates (Figure 2, Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from Cox regression analysis shown in Figure 2 and Supplementary file 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "e03b95cc-c3e4-4cc8-8c4d-9403a569557f",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C14",
+      "claim": "PhenoAgeAccel was negatively associated with risk of prostate cancer after adjusting for chronological age and other covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "The PhenoAgeAccel was significantly associated with increased risk for cancer sites of lip-oral cavity-pharynx, esophagus, stomach, colon-rectum, pancreas, lung, breast, cervix uteri, corpus uteri, prostate, kidney, bladder, multiple myeloma, Hodgkin's disease, and lymphoid leukemia, while negatively associated with risk of prostate cancer after adjusting for chronological age and other covariates (Figure 2, Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from Cox regression analysis shown in Figure 2 and Supplementary file 1a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "a9b33f8c-35ea-40c4-8079-b2f2755f8b64",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C15",
+      "claim": "PhenoAgeAccel was significantly associated with an increased risk of overall cancer in men (HR = 1.15, 95% CI, 1.13\u20131.17, p<0.0001) per 5 years increase.",
+      "claim_type": "EXPLICIT",
+      "source": "PhenoAgeAccel was significantly associated with an increased risk of overall cancer in men (HR = 1.15, 95% CI, 1.13\u20131.17, p<0.0001) and women (HR = 1.15, 95% CI, 1.13\u20131.17, p<0.0001) per 5 years increase (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "1522fcdf-ba5a-4d1a-b351-a75967155579",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C16",
+      "claim": "PhenoAgeAccel was significantly associated with an increased risk of overall cancer in women (HR = 1.15, 95% CI, 1.13\u20131.17, p<0.0001) per 5 years increase.",
+      "claim_type": "EXPLICIT",
+      "source": "PhenoAgeAccel was significantly associated with an increased risk of overall cancer in men (HR = 1.15, 95% CI, 1.13\u20131.17, p<0.0001) and women (HR = 1.15, 95% CI, 1.13\u20131.17, p<0.0001) per 5 years increase (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "8084dbbf-7938-47f3-95fb-82eee906844a",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C17",
+      "claim": "Compared with biologically younger participants, those older had a significantly higher risk of overall cancer, with HRs of 1.22 (95% CI, 1.18\u20131.27, p<0.0001) in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with biologically younger participants, those older had a significantly higher risk of overall cancer, with HRs of 1.22 (95% CI, 1.18\u20131.27, p<0.0001) in men, 1.26 (95% CI, 1.22\u20131.31, p<0.0001) in women, respectively (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from Cox regression analysis shown in Figure 3E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "a30cc9de-7535-4e77-ae07-261c3b23f652",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C18",
+      "claim": "Compared with biologically younger participants, those older had a significantly higher risk of overall cancer, with HRs of 1.26 (95% CI, 1.22\u20131.31, p<0.0001) in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with biologically younger participants, those older had a significantly higher risk of overall cancer, with HRs of 1.22 (95% CI, 1.18\u20131.27, p<0.0001) in men, 1.26 (95% CI, 1.22\u20131.31, p<0.0001) in women, respectively (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from Cox regression analysis shown in Figure 3E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "c1dc1441-f93a-4937-8908-21ceda5b1ea2",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C19",
+      "claim": "Individuals in the intermediate accelerated aging group (quintiles 2\u20134) had a significantly higher risk of overall cancer compared to those at low accelerated aging (the bottom quintile of PhenoAgeAccel), with HRs of 1.15 (95% CI, 1.09\u20131.21, p<0.0001) in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, Compared with individuals at low accelerated aging (the bottom quintile of PhenoAgeAccel), those in the intermediate (quintiles 2\u20134) and high accelerated aging (the top quintile) had a significantly higher risk of overall cancer, with HRs of 1.15 (95% CI, 1.09\u20131.21, p<0.0001) and 1.44 (95% CI, 1.36\u20131.53, p<0.0001) in men, 1.15 (95% CI, 1.09\u20131.21, p<0.0001), and 1.46 (95% CI, 1.38\u20131.55, p<0.0001) in women, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "d05b763d-8a63-4377-8072-45963a3b4f20",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C20",
+      "claim": "Individuals in the high accelerated aging group (the top quintile) had a significantly higher risk of overall cancer compared to those at low accelerated aging (the bottom quintile of PhenoAgeAccel), with HRs of 1.44 (95% CI, 1.36\u20131.53, p<0.0001) in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, Compared with individuals at low accelerated aging (the bottom quintile of PhenoAgeAccel), those in the intermediate (quintiles 2\u20134) and high accelerated aging (the top quintile) had a significantly higher risk of overall cancer, with HRs of 1.15 (95% CI, 1.09\u20131.21, p<0.0001) and 1.44 (95% CI, 1.36\u20131.53, p<0.0001) in men, 1.15 (95% CI, 1.09\u20131.21, p<0.0001), and 1.46 (95% CI, 1.38\u20131.55, p<0.0001) in women, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "1b7ad707-e2a3-4923-90d4-3373abed6988",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C21",
+      "claim": "Individuals in the intermediate accelerated aging group (quintiles 2\u20134) had a significantly higher risk of overall cancer compared to those at low accelerated aging (the bottom quintile of PhenoAgeAccel), with HRs of 1.15 (95% CI, 1.09\u20131.21, p<0.0001) in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, Compared with individuals at low accelerated aging (the bottom quintile of PhenoAgeAccel), those in the intermediate (quintiles 2\u20134) and high accelerated aging (the top quintile) had a significantly higher risk of overall cancer, with HRs of 1.15 (95% CI, 1.09\u20131.21, p<0.0001) and 1.44 (95% CI, 1.36\u20131.53, p<0.0001) in men, 1.15 (95% CI, 1.09\u20131.21, p<0.0001), and 1.46 (95% CI, 1.38\u20131.55, p<0.0001) in women, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "5ecdbf39-0b8c-459b-bbdc-5b66b125d012",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C22",
+      "claim": "Individuals in the high accelerated aging group (the top quintile) had a significantly higher risk of overall cancer compared to those at low accelerated aging (the bottom quintile of PhenoAgeAccel), with HRs of 1.46 (95% CI, 1.38\u20131.55, p<0.0001) in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, Compared with individuals at low accelerated aging (the bottom quintile of PhenoAgeAccel), those in the intermediate (quintiles 2\u20134) and high accelerated aging (the top quintile) had a significantly higher risk of overall cancer, with HRs of 1.15 (95% CI, 1.09\u20131.21, p<0.0001) and 1.44 (95% CI, 1.36\u20131.53, p<0.0001) in men, 1.15 (95% CI, 1.09\u20131.21, p<0.0001), and 1.46 (95% CI, 1.38\u20131.55, p<0.0001) in women, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "1c331714-f87e-4843-a8b5-f7b1301a9963",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C23",
+      "claim": "Of participants with high genetic risk and older PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 1477.89 (95% CI, 1410.87\u20131544.92) in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Of participants with high genetic risk and older PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 1477.89 (95% CI, 1410.87\u20131544.92) in men and 1076.17 (95% CI, 1014.14\u20131138.19) in women versus 581.06 (95% CI, 537.12\u2013625.00) in men and 594.71 (95% CI, 558.50\u2013630.92) in women with low genetic risk and younger PhenoAge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "2a623848-890e-4cfb-921d-d70afdb83114",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C24",
+      "claim": "Of participants with high genetic risk and older PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 1076.17 (95% CI, 1014.14\u20131138.19) in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Of participants with high genetic risk and older PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 1477.89 (95% CI, 1410.87\u20131544.92) in men and 1076.17 (95% CI, 1014.14\u20131138.19) in women versus 581.06 (95% CI, 537.12\u2013625.00) in men and 594.71 (95% CI, 558.50\u2013630.92) in women with low genetic risk and younger PhenoAge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "a095a552-758c-4aad-8cfe-0ccbb237e65b",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C25",
+      "claim": "Of participants with low genetic risk and younger PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 581.06 (95% CI, 537.12\u2013625.00) in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Of participants with high genetic risk and older PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 1477.89 (95% CI, 1410.87\u20131544.92) in men and 1076.17 (95% CI, 1014.14\u20131138.19) in women versus 581.06 (95% CI, 537.12\u2013625.00) in men and 594.71 (95% CI, 558.50\u2013630.92) in women with low genetic risk and younger PhenoAge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "666a3b50-f3ef-4e4b-b533-ab44a01f528f",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C26",
+      "claim": "Of participants with low genetic risk and younger PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 594.71 (95% CI, 558.50\u2013630.92) in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Of participants with high genetic risk and older PhenoAge, the incidence rates of overall cancer per 100,000 person-years were estimated to be 1477.89 (95% CI, 1410.87\u20131544.92) in men and 1076.17 (95% CI, 1014.14\u20131138.19) in women versus 581.06 (95% CI, 537.12\u2013625.00) in men and 594.71 (95% CI, 558.50\u2013630.92) in women with low genetic risk and younger PhenoAge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "82edc552-fe90-48a2-bdcf-7a92e6d2c107",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C27",
+      "claim": "Approximate double risks [HR, 2.29 (95% CI, 2.10\u20132.51) in men, p<0.0001] were observed in participants with high genetic risk and older PhenoAge, compared with those with low genetic risk and younger PhenoAge.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximate double risks [HR, 2.29 (95% CI, 2.10\u20132.51) in men, p<0.0001; 1.94 (95% CI, 1.78\u20132.11) in women, p<0.0001] were observed in participants with high genetic risk and older PhenoAge, compared with those with low genetic risk and younger PhenoAge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "e8da71e6-0657-4678-9b0a-2d746eb883cf",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C28",
+      "claim": "Approximate double risks [HR, 1.94 (95% CI, 1.78\u20132.11) in women, p<0.0001] were observed in participants with high genetic risk and older PhenoAge, compared with those with low genetic risk and younger PhenoAge.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximate double risks [HR, 2.29 (95% CI, 2.10\u20132.51) in men, p<0.0001; 1.94 (95% CI, 1.78\u20132.11) in women, p<0.0001] were observed in participants with high genetic risk and older PhenoAge, compared with those with low genetic risk and younger PhenoAge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "dc88a2e3-3734-4047-8b3e-8e5f2e7c0fd2",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C29",
+      "claim": "No interaction was observed between genetic and PhenoAgeAccel on overall cancer risk in men and women.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe the interaction between genetic and PhenoAgeAccel on overall cancer risk in men and women (Supplementary file 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from interaction analysis shown in Supplementary file 1g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "4efc4cb2-3ad7-4763-813d-1faa703bccb9",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C30",
+      "claim": "Among participants at high genetic risk, the standardized 5 year incident cancer rates were 5.78% for biologically younger men versus 6.90% for those older.",
+      "claim_type": "EXPLICIT",
+      "source": "Among participants at high genetic risk, the standardized 5 year incident cancer rates were 5.78% and 4.58% for biologically younger men and women versus 6.90% and 5.17% for those older, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "e85c196e-5e9d-49a8-a599-5e6c51c541bf",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C31",
+      "claim": "Among participants at high genetic risk, the standardized 5 year incident cancer rates were 4.58% for biologically younger women versus 5.17% for those older.",
+      "claim_type": "EXPLICIT",
+      "source": "Among participants at high genetic risk, the standardized 5 year incident cancer rates were 5.78% and 4.58% for biologically younger men and women versus 6.90% and 5.17% for those older, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "9289e3a7-b93e-4ff1-9256-5c64eb1f9385",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C32",
+      "claim": "Among participants at low genetic risk, the standardized 5 year incident cancer rates increased from 2.71% for biologically younger to 3.87% for those older in men.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, among participants at low genetic risk, the standardized 5 year incident cancer rates increased from 2.71% and 2.83% for biologically younger to 3.87% and 3.39% for those older in men and women, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "f04de9b2-4027-4b32-909e-f9c788cce4a7",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C33",
+      "claim": "Among participants at low genetic risk, the standardized 5 year incident cancer rates increased from 2.83% for biologically younger to 3.39% for those older in women.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, among participants at low genetic risk, the standardized 5 year incident cancer rates increased from 2.71% and 2.83% for biologically younger to 3.87% and 3.39% for those older in men and women, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "8d2b0482-8577-4d09-afff-ac32e53ca777",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C34",
+      "claim": "Biologically younger men would reach the 2% absolute risk threshold at age 52.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming 2% of absolute risk within the next 5 years as the threshold to be recommended for cancer screening, biologically younger men would reach the threshold at age 52, whereas those older men would reach the threshold at age 50; similarly, biologically younger women would reach the 2% of 5 year absolute risk at age 46, whereas those older women would reach the threshold at age 44 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study cohort shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "6a0eaeb8-0d91-4fc2-81bc-0fb0c302192a",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C35",
+      "claim": "Biologically older men would reach the 2% absolute risk threshold at age 50.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming 2% of absolute risk within the next 5 years as the threshold to be recommended for cancer screening, biologically younger men would reach the threshold at age 52, whereas those older men would reach the threshold at age 50; similarly, biologically younger women would reach the 2% of 5 year absolute risk at age 46, whereas those older women would reach the threshold at age 44 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study cohort shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "d72ba456-a223-4d3b-bd8c-e764c73af471",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C36",
+      "claim": "Biologically younger women would reach the 2% absolute risk threshold at age 46.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming 2% of absolute risk within the next 5 years as the threshold to be recommended for cancer screening, biologically younger men would reach the threshold at age 52, whereas those older men would reach the threshold at age 50; similarly, biologically younger women would reach the 2% of 5 year absolute risk at age 46, whereas those older women would reach the threshold at age 44 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study cohort shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "1798f53d-6511-4148-b346-f705265c6abe",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C37",
+      "claim": "Biologically older women would reach the 2% absolute risk threshold at age 44.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming 2% of absolute risk within the next 5 years as the threshold to be recommended for cancer screening, biologically younger men would reach the threshold at age 52, whereas those older men would reach the threshold at age 50; similarly, biologically younger women would reach the 2% of 5 year absolute risk at age 46, whereas those older women would reach the threshold at age 44 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from the study cohort shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "061a5588-69ad-44eb-90a9-d2313f976b5c",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C38",
+      "claim": "Biologically younger men (9.6%, 7781/81,242) were more likely to have a favorable lifestyle (4\u20135 healthy lifestyle factors) than older men (5.7%, 5255/92,189).",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK Biobank, biologically younger men (9.6%, 7781/81,242) and women (14.4%, 17,781/123,648) were more likely to have a favorable lifestyle (4\u20135 healthy lifestyle factors) than older men (5.7%, 5255/92,189) and women (9.3%, 7178/77,384) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "a0014e6a-42b0-4761-ad5b-0a2cef9cad17",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C39",
+      "claim": "Biologically younger women (14.4%, 17,781/123,648) were more likely to have a favorable lifestyle (4\u20135 healthy lifestyle factors) than older women (9.3%, 7178/77,384).",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK Biobank, biologically younger men (9.6%, 7781/81,242) and women (14.4%, 17,781/123,648) were more likely to have a favorable lifestyle (4\u20135 healthy lifestyle factors) than older men (5.7%, 5255/92,189) and women (9.3%, 7178/77,384) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort shown in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "a2425b46-af9d-4797-9d70-078dd04960ba",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C40",
+      "claim": "A significant negative correlation was found between the number of healthy lifestyle factors and PhenoAgeAccel (Beta = \u20131.01 in men, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found a significant negative correlation between the number of healthy lifestyle factors and PhenoAgeAccel (Beta = \u20131.01 in men, p<0.001; Beta = \u20130.98 in women, p<0.001) (Supplementary file 1j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from linear regression analysis shown in Supplementary file 1j",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "310a12ae-0a8b-4321-adf0-35c4391e8593",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C41",
+      "claim": "A significant negative correlation was found between the number of healthy lifestyle factors and PhenoAgeAccel (Beta = \u20130.98 in women, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found a significant negative correlation between the number of healthy lifestyle factors and PhenoAgeAccel (Beta = \u20131.01 in men, p<0.001; Beta = \u20130.98 in women, p<0.001) (Supplementary file 1j).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from linear regression analysis shown in Supplementary file 1j",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "aec58314-9a55-412e-afb0-64992b475d8c",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C42",
+      "claim": "No interaction was observed between genetic risk and lifestyle on PhenoAgeAccel in both men and women.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not observe any interaction between genetic risk and lifestyle on PhenoAgeAccel in both men and women (Supplementary file 1k).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from interaction analysis shown in Supplementary file 1k",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "0d1a4daa-954e-4c9f-82a3-a47042a78be6",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C43",
+      "claim": "Accelerated aging, measured by PhenoAgeAccel, was consistently related to an increased risk of several site-specific cancer and overall cancer with adjustment for chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our study showed that accelerated aging, which was measured by PhenoAgeAccel, was consistently related to an increased risk of several site-specific cancer and overall cancer with adjustment for chronological age, within and across genetic risk groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analyses throughout the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "4aad3d87-be84-4556-b7ac-7d6a78b62c53",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C44",
+      "claim": "The exponential increase in cancer incidence with age were mainly resulted from the sequential accumulation of oncogenic mutations in different tissues throughout life.",
+      "claim_type": "EXPLICIT",
+      "source": "Older age has been long recognized as the main risk factor for cancer, and the multistage model of carcinogenesis posits that the exponential increase in cancer incidence with age were mainly resulted from the sequential accumulation of oncogenic mutations in different tissues throughout life (Laconi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Laconi et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "83e6f574-01fb-4e9c-a85f-46b376cd708a",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C45",
+      "claim": "Age and exposure (i.e. smoking, ultraviolet light) dependent mutation signatures have been identified in several cancers by tissue sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In consistent with this, age and exposure (i.e. smoking, ultraviolet light) dependent mutation signatures have been identified in several cancers by tissue sequencing (Alexandrov et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alexandrov et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "41f8488f-c83a-4f28-9d20-084754bcd959",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C46",
+      "claim": "Biological aging is thought to be influenced by multiple genetic and environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, biological aging is an enormously complex process and is thought to be influenced by multiple genetic and environmental factors (van Dongen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to van Dongen et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "2adc45fd-5591-409c-aed8-25c15dc0830b",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C47",
+      "claim": "Several biomarkers, i.e., 'aging clocks' derived from epigenomic, transcriptomic, proteomic, and metabolomic data, have been proposed to measure the biological age and predict the risk of cancer and other diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, several biomarkers, i.e., 'aging clocks' derived from epigenomic, transcriptomic, proteomic, and metabolomic data, have been proposed to measure the biological age and predict the risk of cancer and other diseases (Rutledge et al., 2022; Zhang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rutledge et al., 2022 and Zhang et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "47d57a19-c79f-4ee6-a46c-faa974cb9653",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C48",
+      "claim": "Li et al., 2022 explored three DNA methylation phenotypic age and cancer risk in four subsets of a population-based cohort from Germany, and reported strong positive associations for lung cancer, while strong inverse associations for breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "(Li et al., 2022) explored three DNA methylation phenotypic age and cancer risk in four subsets of a population-based cohort from Germany, and reported strong positive associations for lung cancer, while strong inverse associations for breast cancer (Li et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "19a1c4b2-eb79-4b00-9e18-40505abc59a0",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C49",
+      "claim": "Results from the Melbourne Collaborative Cohort Study reported that epigenetic aging was associated with increased cancer risk of kidney cancer and B-cell lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, results from the Melbourne Collaborative Cohort Study reported that epigenetic aging was associated with increased cancer risk of kidney cancer and B-cell lymphoma (Dugu\u00e9 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dugu\u00e9 et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "e13f6eba-df2a-4455-b350-82b9a06f2c0c",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C50",
+      "claim": "Schneider et al., 2022 explored the associations between telomere length and risk of several diseases, and reported significant positive associations of telomere length for lymphoid leukemia, multiple myeloma, non-Hodgkin lymphoma, esophagus cancer, while negative associations for malignant neoplasm of brain, mesothelioma, and melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on data from the UK Biobank, (Schneider et al., 2022) recently explored the associations between telomere length and risk of several diseases, and reported significant positive associations of telomere length for lymphoid leukemia, multiple myeloma, non-Hodgkin lymphoma, esophagus cancer, while negative associations for malignant neoplasm of brain, mesothelioma, and melanoma (Schneider et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schneider et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "47badf82-aa06-40a2-ad48-e0161e5ddf11",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C51",
+      "claim": "Mak et al., 2023 explored three measures of biological age, including PhenoAge, and assessed their associations with the incidence of overall cancer and five common cancers (breast, prostate, lung, colorectal, and melanoma).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, several studies have confirmed the associations between PhenoAgeAccel and cancer risk. Mak et al., 2023 explored three measures of biological age, including PhenoAge, and assessed their associations with the incidence of overall cancer and five common cancers (breast, prostate, lung, colorectal, and melanoma).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mak et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "e775ebcb-ccaf-4ab5-9cc7-0926f430917f",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C52",
+      "claim": "Recent GWASs of PhenoAgeAccel showed that SNPs associated with PhenoAgeAccel were enriched in pathways of immune system and activation of pro-inflammatory.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent GWASs of PhenoAgeAccel showed that SNPs associated with PhenoAgeAccel were enriched in pathways of immune system and activation of pro-inflammatory (Kuo et al., 2021a; Levine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kuo et al., 2021a and Levine et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "a608b5d0-564c-428a-84bc-162c7b74a248",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C53",
+      "claim": "Behaviors (i.e. obesity, smoking, alcohol consumption, and physical activity), and life course circumstances (i.e. socioenvironmental circumstances during childhood and adulthood) were reported to account for about 30% variances of phenotypic aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to genetics, behaviors (i.e. obesity, smoking, alcohol consumption, and physical activity), and life course circumstances (i.e. socioenvironmental circumstances during childhood and adulthood) were reported to account for about 30% variances of phenotypic aging (Liu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "2143bd13-0231-4793-ac01-df055a90a560",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C54",
+      "claim": "Patricians in the UK Biobank differ from the general UK population because of low participation and healthy volunteer bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, previous studies have indicated that patricians in the UK Biobank differ from the general UK population because of low participation and healthy volunteer bias (Fry et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fry et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "135b25fc-a069-4759-b763-1de8e7c8be90",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C55",
+      "claim": "PhenoAgeAccel can serve as a productive tool to facilitate the identification of cancer susceptible individuals, in combination with individual's genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "PhenoAgeAccel can serve as a productive tool to facilitate the identification of cancer susceptible individuals, in combination with individual's genetic background, and act as an intermediate phenotype to guide interventions for high-risk groups and track intervention efficacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "96021b5d-0757-4563-803e-3602511a932a",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C56",
+      "claim": "PhenoAge was calculated based on mortality scores from the Gompertz proportional hazard model on chronological age and nine multi-system clinical chemistry biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, PhenoAge was calculated based on mortality scores from the Gompertz proportional hazard model on chronological age and nine multi-system clinical chemistry biomarkers (albumin, creatinine, glucose, [log] C-reactive protein [CRP], lymphocyte percent, mean cell volume, red blood cell distribution width, alkaline phosphatase, and white blood cell count) to predict all-cause mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the methodology used in the study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "f214eae8-fbfd-4902-9d7a-f5b7cbc283f7",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C57",
+      "claim": "PhenoAgeAccel was defined as the residual resulting from a linear model when regressing Phenotypic Age on chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we calculated Phenotypic Age Acceleration (PhenoAgeAccel), which was defined as the residual resulting from a linear model when regressing Phenotypic Age on chronological age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the methodology used in the study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "f79945aa-12f1-47e5-b8ca-b470fcf709f1",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C58",
+      "claim": "55 independent PhenoAgeAccel-associated SNPs (p<5 \u00d7 10\u20138) and corresponding effect sizes were derived from a large-scale PhenoAgeAccel GWAS including 107,460 individuals of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "55 independent PhenoAgeAccel-associated SNPs (p<5 \u00d7 10\u20138) and corresponding effect sizes were derived from a large-scale PhenoAgeAccel GWAS including 107,460 individuals of European ancestry (Kuo et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kuo et al., 2021a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "15b2183e-d5e2-4f4a-b9a4-23d0c5163d91",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C59",
+      "claim": "The UK Biobank is a large population-based cohort study with approximately 500,000 participants aged 40\u201370 recruited from 22 assessment centers across England, Scotland, and Wales between 2006 and 2010 at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "The UK Biobank is a large population-based cohort study and detail protocol is publicly available (Bycroft et al., 2018). In brief, approximately 500,000 participants aged 40\u201370 were recruited from 22 assessment centers across England, Scotland, and Wales between 2006 and 2010 at baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bycroft et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "737bb37e-bf99-4310-b2b2-fe39209ab928",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C60",
+      "claim": "Older PhenoAge was significantly associated with a higher incident cancer risk across genetic risk groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In further stratification analyses by genetic risk category with younger PhenoAge as the reference group, we confirmed that older PhenoAge was significantly associated with a higher incident cancer risk across genetic risk groups (Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from stratified Cox regression analysis shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "c15176d8-be35-4eef-aa89-3dbe5b8e3acb",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C61",
+      "claim": "PhenoAgeAccel decreased with the increase of healthy lifestyle factors among both men and women.",
+      "claim_type": "EXPLICIT",
+      "source": "Among both men and women, we observed that PhenoAgeAccel decreased with the increase of healthy lifestyle factors (Supplementary file 1i).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from the study cohort shown in Supplementary file 1i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "41a8c56b-3f89-4caf-912f-b9428e42f921",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C62",
+      "claim": "The associations between PhenoAgeAccel and increased cancer risk may be partly attribute to a result of decline in the immune system and accumulation of environmental carcinogenic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The associations between PhenoAgeAccel and increased cancer risk may be partly attribute to a result of decline in the immune system and accumulation of environmental carcinogenic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on biological mechanisms",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "290d6985-a033-4cf2-817b-23a772f75a36",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C63",
+      "claim": "Adherence to healthy lifestyles (involving no current smoking, normal BMI, regular physical activity, and healthy diet) could slow down the aging process.",
+      "claim_type": "EXPLICIT",
+      "source": "This was in accordance with our findings that, adherence to healthy lifestyles (involving no current smoking, normal BMI, regular physical activity, and healthy diet) could slow down the aging process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the negative correlation between healthy lifestyle factors and PhenoAgeAccel",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "e45c3843-0655-415c-8495-7ae41874e7cd",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C64",
+      "claim": "PhenoAge provides a meaningful intermediate phenotype that can be used to guide interventions for high-risk groups and track intervention efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PhenoAge provides a meaningful intermediate phenotype that can be used to guide interventions for high-risk groups and track intervention efficacy (Liu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu et al., 2019 and inferred from study findings",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "4aeaa070-4adb-453e-8b88-7c488934846d",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C65",
+      "claim": "The negative association between PhenoAgeAccel and prostate cancer risk may have been confounded by diabetes and altered glucose metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed a negative association between PhenoAgeAccel and prostate cancer risk. The unexpected association may have been confounded by diabetes and altered glucose metabolism, both of which are closely linked to aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about potential confounding",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "5ca7ef54-8af4-4afd-996b-831d75fc1760",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C66",
+      "claim": "When HbA1c and serum glucose were removed from the biological age algorithms, the association between PhenoAgeAccel and prostate cancer became non-statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "When we removed HbA1c and serum glucose from the biological age algorithms, the association became non-statistically significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "57705ab0-4c84-4a43-8d80-e8ee9deb535e",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C67",
+      "claim": "Similar findings regarding the negative association between PhenoAgeAccel and prostate cancer were also reported by Mak et al., 2023 and Dugu\u00e9 et al., 2021.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar findings were also reported by Mak et al., 2023 and Dugu\u00e9 et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mak et al., 2023 and Dugu\u00e9 et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "b921b8ea-eb6b-4f8f-bfc6-f2ddc80a6eee",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C68",
+      "claim": "A significant gradient increase in incident cancer risk was observed from decile 1 to decile 10 of PhenoAgeAccel.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a significant gradient increase in incident cancer risk from decile 1 to decile 10 of PhenoAgeAccel (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from Cox regression analysis shown in Figure 3C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "42373c3f-e794-4350-8ba6-fa80f27424e4",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C69",
+      "claim": "The overall incident cancer risk is associated with both genetic risk and PhenoAgeAccel in a dose-response manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall incident cancer risk is associated with both genetic risk and PhenoAgeAccel in a dose-response manner (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from Cox regression analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "9d2f1c62-6cf5-40c1-af11-92c862b9d206",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C70",
+      "claim": "A joint effect of genetic risk and PhenoAgeAccel was observed on overall cancer risk.",
+      "claim_type": "EXPLICIT",
+      "source": "A joint effect of genetic risk and PhenoAgeAccel was observed on overall cancer risk, with HRs of 2.29 (2.10\u20132.51) for men and 1.94 (1.78\u20132.11) for women with high genetic risk and older PhenoAge compared with those with low genetic risk and younger PhenoAge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "e23b95e8-a617-4143-8d12-d536f44ee7ba",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C71",
+      "claim": "PhenoAgeAccel was negatively associated with the number of healthy lifestyle factors (Beta = \u20131.01 in men, p<0.001; Beta = \u20130.98 in women, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "PhenoAgeAccel was negatively associated with the number of healthy lifestyle factors (Beta = \u20131.01 in men, p<0.001; Beta = \u20130.98 in women, p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from linear regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "eefcc738-073e-4b9c-a364-86a148f24701",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C72",
+      "claim": "Within and across genetic risk groups, older PhenoAge was consistently related to an increased risk of incident cancer with adjustment for chronological age.",
+      "claim_type": "EXPLICIT",
+      "source": "Within and across genetic risk groups, older PhenoAge was consistently related to an increased risk of incident cancer with adjustment for chronological age and the aging process could be retarded by adherence to a healthy lifestyle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from Cox regression analyses throughout the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "a5b80d1c-6e87-4957-90e0-b67b92f847b7",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C73",
+      "claim": "The aging process could be retarded by adherence to a healthy lifestyle.",
+      "claim_type": "EXPLICIT",
+      "source": "Within and across genetic risk groups, older PhenoAge was consistently related to an increased risk of incident cancer with adjustment for chronological age and the aging process could be retarded by adherence to a healthy lifestyle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the negative correlation between healthy lifestyle factors and PhenoAgeAccel",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "4b779cab-79ec-4c91-bbf9-30226ba21882",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C74",
+      "claim": "The variation in the pace of aging between person may reflect the differences in susceptibility to cancer and death.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the variation in the pace of aging between person may reflect the differences in susceptibility to cancer and death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that individuals age at different rates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "fb912d82-4454-4de3-8044-4b0174412d96",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C75",
+      "claim": "Measurement of an individual's biological age, particularly at the early stage of life, may promote the primary and secondary prevention of cancer through earlier identification of high-risk groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, measurement of an individual's biological age, particularly at the early stage of life, may promote the primary and secondary prevention of cancer through earlier identification of high-risk groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about potential applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "022d2e34-de27-46c3-a587-d9d5943f5328",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C76",
+      "claim": "Previous studies had indicated an interaction between genetic factors and age on cancer risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies had indicated an interaction between genetic factors and age on cancer risk (Mavaddat et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mavaddat et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "2ab12fed-55a1-4f0d-88d8-ee0d3c2563d3",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C77",
+      "claim": "The different measures of biological age may reflect the different aspects of aging.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicated that the different measures of biological age may reflect the different aspects of aging, and could be joint application in cancer risk assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of different biological age measures",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "a8baecc7-a6c0-4115-8b04-3d9db8dd9e18",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "claim_id": "C78",
+      "claim": "Different measures of biological age could be joint application in cancer risk assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicated that the different measures of biological age may reflect the different aspects of aging, and could be joint application in cancer risk assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about potential applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "086968ca-b61c-49b7-a3ab-2be0e40e11a3",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 374,463 UK Biobank participants (173,431 men and 201,032 women) after exclusions, with 169,573 biologically older and 204,890 biologically younger participants. During a median follow-up of 7.09 years, 22,370 incident cancer cases were identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 and C59 provide consistent cohort characteristics with clear exclusion criteria shown in Figure 1. The sample size is substantial, follow-up duration is adequate, and the data are internally consistent across tables and figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "767e2091-18d6-4320-91d3-037927faa77a",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PhenoAgeAccel was significantly associated with increased overall cancer risk in both men (HR=1.15 per 5 years, 95% CI 1.13-1.17) and women (HR=1.15, 95% CI 1.13-1.17). Biologically older participants had 22-26% higher cancer risk compared to younger participants, with a dose-response relationship across deciles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C15-C18, and C68 are well-supported by Cox regression analyses with appropriate adjustment for chronological age and covariates. The dose-response relationship (Figure 3C-D) and consistent effect sizes across sexes strengthen the findings. Statistical significance is robust (p<0.0001).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "4bef41dd-17a8-4be3-9101-79cf3f767aaf",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Compared to low accelerated aging (bottom quintile), intermediate (quintiles 2-4) and high (top quintile) accelerated aging groups showed significantly elevated cancer risk with HRs of 1.15 and 1.44-1.46 respectively in both sexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 demonstrate a clear gradient effect with appropriate statistical testing. The consistency across sexes and multiple sensitivity analyses (Supplementary file 1b) support the robustness of these categorical associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "b49c5f78-1e3f-4e25-9c9a-e09ff1db67dc",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PhenoAgeAccel showed a negative association with prostate cancer risk, which the authors attribute to potential confounding by diabetes and glucose metabolism. When glucose-related biomarkers were removed from the PhenoAge calculation, the association became non-significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C14, C65-C67 identify an unexpected finding with a plausible mechanistic explanation. However, the sensitivity analysis (C66) removing glucose biomarkers suggests the original PhenoAge measure may not be appropriate for prostate cancer. This requires further validation and raises questions about the specificity of PhenoAge for different cancer types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "7ac553a2-43d9-4615-828c-310cee794c14",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A joint effect of genetic risk (CPRS) and PhenoAgeAccel on overall cancer risk was observed, with participants having high genetic risk and older PhenoAge showing approximately double the cancer risk (HR=2.29 in men, 1.94 in women) compared to those with low genetic risk and younger PhenoAge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28, C69-C70 demonstrate strong joint effects with dose-response relationships shown in Figure 4. The incidence rates and hazard ratios are internally consistent. However, C29 notes no statistical interaction was detected, suggesting additive rather than multiplicative effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "8801f9fc-0baa-4d31-bc59-69cbfa63fa30",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "No statistical interaction was observed between genetic risk and PhenoAgeAccel on overall cancer risk, or between genetic risk and lifestyle factors on PhenoAgeAccel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C42 report negative findings for interaction effects, supported by formal interaction analyses (Supplementary files 1g, 1k). While the joint effects are substantial, the lack of interaction suggests independent additive contributions rather than synergistic effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "ae38464b-5b04-44aa-b213-6b41f3b8530c",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Within each genetic risk stratum, older PhenoAge was consistently associated with higher cancer incidence. Among high genetic risk participants, 5-year cancer rates were 5.78% vs 6.90% (men) and 4.58% vs 5.17% (women) for younger vs older biological age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 and C60 show consistent stratified effects across genetic risk groups (Table 3). The absolute risk differences are clinically meaningful and statistically significant across all strata, supporting the independent contribution of biological aging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "ff01df20-7de1-4533-b0c7-6d2f758a18c5",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using a 2% 5-year absolute risk threshold for cancer screening, biologically older individuals would reach this threshold 2 years earlier than biologically younger peers (age 50 vs 52 for men, 44 vs 46 for women).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C37 present screening implications based on Figure 5, but the 2% threshold appears arbitrary without clinical justification. While the age differences are derived from the data, translating these findings into screening recommendations requires validation studies and consideration of screening harms/benefits not addressed here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "778e872b-9f62-4182-b335-15464ce9736b",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Biologically younger participants were more likely to have favorable lifestyles (9.6% vs 5.7% in men, 14.4% vs 9.3% in women). A significant negative correlation existed between healthy lifestyle factors and PhenoAgeAccel (Beta=-1.01 in men, -0.98 in women, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41, C61, and C71 demonstrate consistent associations between lifestyle and biological aging using both categorical comparisons (Table 1) and linear regression (Supplementary file 1j). The effect sizes are modest but statistically robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "76262e06-cea5-4d11-8b88-032f2f064729",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Adherence to healthy lifestyles (no smoking, normal BMI, regular physical activity, healthy diet) could slow down the aging process and retard biological aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63 and C73 make causal inferences from cross-sectional associations. While the negative correlation between lifestyle factors and PhenoAgeAccel is well-established (C40-C41), the observational design cannot definitively establish that lifestyle changes cause slower aging. Reverse causation and residual confounding remain possible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "22022268-d92a-46f7-8e07-fd241a9e8b70",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that PhenoAgeAccel can serve as a tool to identify cancer-susceptible individuals in combination with genetic background, and that accelerated aging is consistently related to increased cancer risk across genetic risk groups after adjusting for chronological age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C55, and C72 represent the main conclusions, which are well-supported by the comprehensive analyses presented. The consistency across multiple cancer types, genetic risk strata, and sensitivity analyses strengthens these conclusions. However, the utility for clinical risk stratification (C55) requires prospective validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "c3b0e316-c18a-417d-97fd-2bf1b66a7002",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PhenoAge was calculated using a Gompertz proportional hazard model with chronological age and nine biomarkers to predict mortality. PhenoAgeAccel was defined as the residual from regressing PhenoAge on chronological age. A PhenoAgeAccel PRS was constructed using 55 SNPs from a GWAS of 107,460 individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 describe established methodology from prior publications (Levine et al., 2018; Kuo et al., 2021a). The methods are clearly described and appropriately referenced, though the manuscript does not validate the PhenoAge calculation in this cohort.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes that cancer is a leading cause of death globally, aging is the greatest cancer risk factor, individuals age at different rates, PhenoAge predicts morbidity/mortality, and polygenic risk scores effectively predict cancer incidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide background context supported by appropriate citations. These are established facts from prior literature that motivate the current study. However, C1 may be inaccurate as cardiovascular disease often competes with cancer as the leading cause of death depending on region and age group.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "fcbb1c56-2058-4c59-a912-328aa78cd418",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within existing literature on aging, cancer biology, mutation accumulation, and various biological age measures including DNA methylation, telomere length, and PhenoAge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C53, C76-C77 appropriately cite and summarize prior work. The comparisons with other aging measures (C48-C50) highlight that different measures may capture different aspects of aging, which is a reasonable interpretation supported by the cited studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "f872f6dc-0fd7-4b40-9c37-50720e059afd",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors acknowledge that UK Biobank participants differ from the general UK population due to low participation and healthy volunteer bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 appropriately cites a known limitation of the UK Biobank (Fry et al., 2017). This is an important caveat for generalizability, though the authors do not quantify how this might affect their results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "b67c6c71-1038-4e7a-8c47-db7597188937",
+      "content_id": "72ba5ecd-bdbc-424c-a9b4-6393458fa81b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that associations between PhenoAgeAccel and cancer may be mediated by immune decline and environmental factors, that PhenoAge could guide interventions, and that measuring biological age early in life may enable cancer prevention.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62, C64, C74-C75, and C78 represent speculative interpretations and future applications. While plausible based on the data, these claims extend beyond what the observational study can demonstrate. The mechanistic explanations (C62) and clinical utility (C64, C75, C78) require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "24da08d9-5c27-427a-b62c-41aa7bf461ca",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "PhenoAgeAccel was significantly associated with increased risk for multiple site-specific cancers and overall cancer in both men and women after adjusting for chronological age. The association was consistent across cancer types including lip-oral cavity-pharynx, esophagus, stomach, colon-rectum, pancreas, lung, breast, cervix uteri, corpus uteri, kidney, bladder, multiple myeloma, Hodgkin's disease, and lymphoid leukemia, with hazard ratios of 1.15 per 5 years increase in both sexes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states this article presents 'compelling results that show Phenotypic Age Acceleration (PhenoAgeAccel) can predict cancer incidence of different types.' Both anonymous reviewers affirm that 'PhenoAgeAccel was consistently related to an increased risk of site-specific cancer and overall cancer' and praise 'the effective application of PhenoAgeAccel in predicting the risk of overall cancer' as a major strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "53a983af-5e77-435d-af01-4c37532e3b50",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Biologically older participants (positive PhenoAgeAccel) had significantly higher cancer risk compared to biologically younger participants, with hazard ratios of 1.22 in men and 1.26 in women. A dose-response relationship was observed, with intermediate accelerated aging showing HRs of 1.15 and high accelerated aging showing HRs of 1.44-1.46 compared to low accelerated aging groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm these findings as part of the core results. One reviewer states that the study 'showed that biomarker-informed PhenoAgeAccel was consistently related to an increased risk of site-specific cancer and overall cancer within and across genetic risk groups.' The dose-response relationship is implicitly accepted as part of the overall positive assessment of the methodology and findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "A joint effect of genetic risk and PhenoAgeAccel on overall cancer risk was observed, with approximately double the risk (HR 2.29 in men, 1.94 in women) for participants with high genetic risk and older PhenoAge compared to those with low genetic risk and younger PhenoAge. The association was consistent across genetic risk strata, though no statistical interaction was detected.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor emphasizes that PhenoAgeAccel 'could be used with genetic risk to facilitate the identification of cancer-susceptible individuals.' One reviewer specifically notes that 'PhenoAgeAccel and genetic liability of a bunch of cancers serve as productive tools to facilitate the identification of cancer-susceptible individuals under an additive model,' directly supporting the joint effect findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "df7b05f8-8002-4851-a214-e28c1d428d1d",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Cancer incidence rates varied substantially by combined genetic risk and biological age status, ranging from 581-595 per 100,000 person-years in low genetic risk/younger PhenoAge groups to 1477-1076 per 100,000 person-years in high genetic risk/older PhenoAge groups. Biologically older individuals reached the 2% absolute 5-year cancer risk threshold 2 years earlier than biologically younger individuals.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings are part of the 'compelling results' praised by the editor and support the reviewers' assessment that the study effectively demonstrates how PhenoAgeAccel can 'facilitate the identification of cancer-susceptible individuals.' The clinical implications for screening thresholds align with the reviewers' statement that results 'will be of broad interest to the research community and clinicians.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Biologically younger individuals were more likely to have favorable lifestyles (4-5 healthy factors) than biologically older individuals. A significant negative correlation existed between healthy lifestyle factors and PhenoAgeAccel (Beta = -1.01 in men, -0.98 in women), suggesting adherence to healthy lifestyles could slow the aging process. No interaction was observed between genetic risk and lifestyle on PhenoAgeAccel.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "One reviewer explicitly states that 'People with a high genetic risk for cancer may benefit from PhenoAgeAccel-informed interventions,' which directly supports the lifestyle findings and their clinical implications. The overall positive assessment of the study design and findings by all reviewers encompasses these lifestyle-related results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "09c684cb-7dbc-41da-b21f-c69b8c85153a",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "PhenoAgeAccel can serve as a productive tool to facilitate identification of cancer-susceptible individuals in combination with genetic background, and provides a meaningful intermediate phenotype to guide interventions for high-risk groups and track intervention efficacy. Measurement of biological age may promote primary and secondary cancer prevention through earlier identification of high-risk groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states these results 'will be of broad interest to the research community and clinicians,' and one reviewer explicitly affirms that 'PhenoAgeAccel and genetic liability serve as productive tools to facilitate the identification of cancer-susceptible individuals' and that 'People with a high genetic risk for cancer may benefit from PhenoAgeAccel-informed interventions,' directly endorsing these translational claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "bf97053e-7e7f-4d90-ba1d-049d96a215d6",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The study analyzed 374,463 UK Biobank participants (173,431 men and 201,032 women) with 169,573 biologically older and 204,890 biologically younger individuals. During a median follow-up of 7.09 years, 22,370 incident cancer cases occurred.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly praise the 'large sample size' and 'prospective design UK Biobank study' as major strengths. One reviewer states 'the large sample size, the prospective design UK Biobank study...are the major strengths of the study,' directly affirming the cohort characteristics and study design.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "f23d8763-18dc-45bf-a08f-2607e426d409",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "PhenoAge was calculated using a Gompertz proportional hazard model based on chronological age and nine clinical chemistry biomarkers. PhenoAgeAccel was defined as the residual from regressing Phenotypic Age on chronological age. The genetic risk score was based on 55 independent PhenoAgeAccel-associated SNPs from a large-scale GWAS.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the study is 'well-designed' and one specifically notes 'the CPRS seems to be a solid and comprehensive score based on incidence-weighted site-specific polygenic risk scores across 20 well-powered GWAS for cancers,' indicating acceptance of the methodological approach including PhenoAge calculation and genetic risk scoring.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "fa5794fe-78d9-4091-afc7-01d9b9116142",
+      "content_id": "3615ac0a-1830-42a0-a47a-8f4ecf17caac",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "PhenoAgeAccel showed a negative association with prostate cancer risk, which may be confounded by diabetes and altered glucose metabolism. When HbA1c and serum glucose were removed from the biological age algorithms, the association became non-statistically significant. Similar findings were reported in other studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "While not explicitly discussed by reviewers, this finding is part of the overall results that reviewers found 'compelling' and well-designed. The final reviewer comment 'The authors have addressed all my concerns' suggests any potential issues with this unexpected finding were satisfactorily resolved during revision.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6641c223-9078-4f0a-8700-774e22450ff2",
+      "result_id": "086968ca-b61c-49b7-a3ab-2be0e40e11a3"
+    },
+    {
+      "claim_id": "87e952f8-ba27-4914-bf39-d63cfe188ae3",
+      "result_id": "086968ca-b61c-49b7-a3ab-2be0e40e11a3"
+    },
+    {
+      "claim_id": "026fe1d0-39f4-4de1-9d00-759320fb7b65",
+      "result_id": "086968ca-b61c-49b7-a3ab-2be0e40e11a3"
+    },
+    {
+      "claim_id": "e9dc6891-37ca-4819-b27c-3b9d5f827164",
+      "result_id": "086968ca-b61c-49b7-a3ab-2be0e40e11a3"
+    },
+    {
+      "claim_id": "15b2183e-d5e2-4f4a-b9a4-23d0c5163d91",
+      "result_id": "086968ca-b61c-49b7-a3ab-2be0e40e11a3"
+    },
+    {
+      "claim_id": "244f070a-e330-47bd-a657-a0e177c6c7a6",
+      "result_id": "767e2091-18d6-4320-91d3-037927faa77a"
+    },
+    {
+      "claim_id": "a9b33f8c-35ea-40c4-8079-b2f2755f8b64",
+      "result_id": "767e2091-18d6-4320-91d3-037927faa77a"
+    },
+    {
+      "claim_id": "1522fcdf-ba5a-4d1a-b351-a75967155579",
+      "result_id": "767e2091-18d6-4320-91d3-037927faa77a"
+    },
+    {
+      "claim_id": "8084dbbf-7938-47f3-95fb-82eee906844a",
+      "result_id": "767e2091-18d6-4320-91d3-037927faa77a"
+    },
+    {
+      "claim_id": "a30cc9de-7535-4e77-ae07-261c3b23f652",
+      "result_id": "767e2091-18d6-4320-91d3-037927faa77a"
+    },
+    {
+      "claim_id": "b921b8ea-eb6b-4f8f-bfc6-f2ddc80a6eee",
+      "result_id": "767e2091-18d6-4320-91d3-037927faa77a"
+    },
+    {
+      "claim_id": "c1dc1441-f93a-4937-8908-21ceda5b1ea2",
+      "result_id": "4bef41dd-17a8-4be3-9101-79cf3f767aaf"
+    },
+    {
+      "claim_id": "d05b763d-8a63-4377-8072-45963a3b4f20",
+      "result_id": "4bef41dd-17a8-4be3-9101-79cf3f767aaf"
+    },
+    {
+      "claim_id": "1b7ad707-e2a3-4923-90d4-3373abed6988",
+      "result_id": "4bef41dd-17a8-4be3-9101-79cf3f767aaf"
+    },
+    {
+      "claim_id": "5ecdbf39-0b8c-459b-bbdc-5b66b125d012",
+      "result_id": "4bef41dd-17a8-4be3-9101-79cf3f767aaf"
+    },
+    {
+      "claim_id": "e03b95cc-c3e4-4cc8-8c4d-9403a569557f",
+      "result_id": "b49c5f78-1e3f-4e25-9c9a-e09ff1db67dc"
+    },
+    {
+      "claim_id": "4aeaa070-4adb-453e-8b88-7c488934846d",
+      "result_id": "b49c5f78-1e3f-4e25-9c9a-e09ff1db67dc"
+    },
+    {
+      "claim_id": "5ca7ef54-8af4-4afd-996b-831d75fc1760",
+      "result_id": "b49c5f78-1e3f-4e25-9c9a-e09ff1db67dc"
+    },
+    {
+      "claim_id": "57705ab0-4c84-4a43-8d80-e8ee9deb535e",
+      "result_id": "b49c5f78-1e3f-4e25-9c9a-e09ff1db67dc"
+    },
+    {
+      "claim_id": "1c331714-f87e-4843-a8b5-f7b1301a9963",
+      "result_id": "7ac553a2-43d9-4615-828c-310cee794c14"
+    },
+    {
+      "claim_id": "2a623848-890e-4cfb-921d-d70afdb83114",
+      "result_id": "7ac553a2-43d9-4615-828c-310cee794c14"
+    },
+    {
+      "claim_id": "a095a552-758c-4aad-8cfe-0ccbb237e65b",
+      "result_id": "7ac553a2-43d9-4615-828c-310cee794c14"
+    },
+    {
+      "claim_id": "666a3b50-f3ef-4e4b-b533-ab44a01f528f",
+      "result_id": "7ac553a2-43d9-4615-828c-310cee794c14"
+    },
+    {
+      "claim_id": "82edc552-fe90-48a2-bdcf-7a92e6d2c107",
+      "result_id": "7ac553a2-43d9-4615-828c-310cee794c14"
+    },
+    {
+      "claim_id": "e8da71e6-0657-4678-9b0a-2d746eb883cf",
+      "result_id": "7ac553a2-43d9-4615-828c-310cee794c14"
+    },
+    {
+      "claim_id": "42373c3f-e794-4350-8ba6-fa80f27424e4",
+      "result_id": "7ac553a2-43d9-4615-828c-310cee794c14"
+    },
+    {
+      "claim_id": "9d2f1c62-6cf5-40c1-af11-92c862b9d206",
+      "result_id": "7ac553a2-43d9-4615-828c-310cee794c14"
+    },
+    {
+      "claim_id": "dc88a2e3-3734-4047-8b3e-8e5f2e7c0fd2",
+      "result_id": "8801f9fc-0baa-4d31-bc59-69cbfa63fa30"
+    },
+    {
+      "claim_id": "aec58314-9a55-412e-afb0-64992b475d8c",
+      "result_id": "8801f9fc-0baa-4d31-bc59-69cbfa63fa30"
+    },
+    {
+      "claim_id": "4efc4cb2-3ad7-4763-813d-1faa703bccb9",
+      "result_id": "ae38464b-5b04-44aa-b213-6b41f3b8530c"
+    },
+    {
+      "claim_id": "e85c196e-5e9d-49a8-a599-5e6c51c541bf",
+      "result_id": "ae38464b-5b04-44aa-b213-6b41f3b8530c"
+    },
+    {
+      "claim_id": "9289e3a7-b93e-4ff1-9256-5c64eb1f9385",
+      "result_id": "ae38464b-5b04-44aa-b213-6b41f3b8530c"
+    },
+    {
+      "claim_id": "f04de9b2-4027-4b32-909e-f9c788cce4a7",
+      "result_id": "ae38464b-5b04-44aa-b213-6b41f3b8530c"
+    },
+    {
+      "claim_id": "737bb37e-bf99-4310-b2b2-fe39209ab928",
+      "result_id": "ae38464b-5b04-44aa-b213-6b41f3b8530c"
+    },
+    {
+      "claim_id": "8d2b0482-8577-4d09-afff-ac32e53ca777",
+      "result_id": "ff01df20-7de1-4533-b0c7-6d2f758a18c5"
+    },
+    {
+      "claim_id": "6a0eaeb8-0d91-4fc2-81bc-0fb0c302192a",
+      "result_id": "ff01df20-7de1-4533-b0c7-6d2f758a18c5"
+    },
+    {
+      "claim_id": "d72ba456-a223-4d3b-bd8c-e764c73af471",
+      "result_id": "ff01df20-7de1-4533-b0c7-6d2f758a18c5"
+    },
+    {
+      "claim_id": "1798f53d-6511-4148-b346-f705265c6abe",
+      "result_id": "ff01df20-7de1-4533-b0c7-6d2f758a18c5"
+    },
+    {
+      "claim_id": "061a5588-69ad-44eb-90a9-d2313f976b5c",
+      "result_id": "778e872b-9f62-4182-b335-15464ce9736b"
+    },
+    {
+      "claim_id": "a0014e6a-42b0-4761-ad5b-0a2cef9cad17",
+      "result_id": "778e872b-9f62-4182-b335-15464ce9736b"
+    },
+    {
+      "claim_id": "a2425b46-af9d-4797-9d70-078dd04960ba",
+      "result_id": "778e872b-9f62-4182-b335-15464ce9736b"
+    },
+    {
+      "claim_id": "310a12ae-0a8b-4321-adf0-35c4391e8593",
+      "result_id": "778e872b-9f62-4182-b335-15464ce9736b"
+    },
+    {
+      "claim_id": "c15176d8-be35-4eef-aa89-3dbe5b8e3acb",
+      "result_id": "778e872b-9f62-4182-b335-15464ce9736b"
+    },
+    {
+      "claim_id": "e23b95e8-a617-4143-8d12-d536f44ee7ba",
+      "result_id": "778e872b-9f62-4182-b335-15464ce9736b"
+    },
+    {
+      "claim_id": "290d6985-a033-4cf2-817b-23a772f75a36",
+      "result_id": "76262e06-cea5-4d11-8b88-032f2f064729"
+    },
+    {
+      "claim_id": "a5b80d1c-6e87-4957-90e0-b67b92f847b7",
+      "result_id": "76262e06-cea5-4d11-8b88-032f2f064729"
+    },
+    {
+      "claim_id": "0d1a4daa-954e-4c9f-82a3-a47042a78be6",
+      "result_id": "22022268-d92a-46f7-8e07-fd241a9e8b70"
+    },
+    {
+      "claim_id": "135b25fc-a069-4759-b763-1de8e7c8be90",
+      "result_id": "22022268-d92a-46f7-8e07-fd241a9e8b70"
+    },
+    {
+      "claim_id": "eefcc738-073e-4b9c-a364-86a148f24701",
+      "result_id": "22022268-d92a-46f7-8e07-fd241a9e8b70"
+    },
+    {
+      "claim_id": "96021b5d-0757-4563-803e-3602511a932a",
+      "result_id": "c3b0e316-c18a-417d-97fd-2bf1b66a7002"
+    },
+    {
+      "claim_id": "f214eae8-fbfd-4902-9d7a-f5b7cbc283f7",
+      "result_id": "c3b0e316-c18a-417d-97fd-2bf1b66a7002"
+    },
+    {
+      "claim_id": "f79945aa-12f1-47e5-b8ca-b470fcf709f1",
+      "result_id": "c3b0e316-c18a-417d-97fd-2bf1b66a7002"
+    },
+    {
+      "claim_id": "fa9709b7-da95-4ede-b029-4575f714b32d",
+      "result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003"
+    },
+    {
+      "claim_id": "5291a9c1-effd-4eba-ae08-8d0a27c32578",
+      "result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003"
+    },
+    {
+      "claim_id": "6dc8d093-b189-45fe-8c27-cf09154a1f4d",
+      "result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003"
+    },
+    {
+      "claim_id": "44bb4ea0-4efc-4c22-b4ac-806ddd61c4b4",
+      "result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003"
+    },
+    {
+      "claim_id": "198a0718-b420-4194-b4b4-602b0a1893b7",
+      "result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003"
+    },
+    {
+      "claim_id": "b3127ebe-e43e-4424-ade6-b67245658ef2",
+      "result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003"
+    },
+    {
+      "claim_id": "ffbddd15-6be0-4790-9762-a67b0dac5486",
+      "result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003"
+    },
+    {
+      "claim_id": "201bc2b1-ea7a-44d5-84b6-5466324fbb97",
+      "result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003"
+    },
+    {
+      "claim_id": "4aad3d87-be84-4556-b7ac-7d6a78b62c53",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "83e6f574-01fb-4e9c-a85f-46b376cd708a",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "41f8488f-c83a-4f28-9d20-084754bcd959",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "2adc45fd-5591-409c-aed8-25c15dc0830b",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "47d57a19-c79f-4ee6-a46c-faa974cb9653",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "19a1c4b2-eb79-4b00-9e18-40505abc59a0",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "e13f6eba-df2a-4455-b350-82b9a06f2c0c",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "47badf82-aa06-40a2-ad48-e0161e5ddf11",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "e775ebcb-ccaf-4ab5-9cc7-0926f430917f",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "a608b5d0-564c-428a-84bc-162c7b74a248",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "022d2e34-de27-46c3-a587-d9d5943f5328",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "2ab12fed-55a1-4f0d-88d8-ee0d3c2563d3",
+      "result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418"
+    },
+    {
+      "claim_id": "2143bd13-0231-4793-ac01-df055a90a560",
+      "result_id": "f872f6dc-0fd7-4b40-9c37-50720e059afd"
+    },
+    {
+      "claim_id": "41a8c56b-3f89-4caf-912f-b9428e42f921",
+      "result_id": "b67c6c71-1038-4e7a-8c47-db7597188937"
+    },
+    {
+      "claim_id": "e45c3843-0655-415c-8495-7ae41874e7cd",
+      "result_id": "b67c6c71-1038-4e7a-8c47-db7597188937"
+    },
+    {
+      "claim_id": "4b779cab-79ec-4c91-bbf9-30226ba21882",
+      "result_id": "b67c6c71-1038-4e7a-8c47-db7597188937"
+    },
+    {
+      "claim_id": "fb912d82-4454-4de3-8044-4b0174412d96",
+      "result_id": "b67c6c71-1038-4e7a-8c47-db7597188937"
+    },
+    {
+      "claim_id": "a8baecc7-a6c0-4115-8b04-3d9db8dd9e18",
+      "result_id": "b67c6c71-1038-4e7a-8c47-db7597188937"
+    },
+    {
+      "claim_id": "244f070a-e330-47bd-a657-a0e177c6c7a6",
+      "result_id": "24da08d9-5c27-427a-b62c-41aa7bf461ca"
+    },
+    {
+      "claim_id": "e03b95cc-c3e4-4cc8-8c4d-9403a569557f",
+      "result_id": "24da08d9-5c27-427a-b62c-41aa7bf461ca"
+    },
+    {
+      "claim_id": "a9b33f8c-35ea-40c4-8079-b2f2755f8b64",
+      "result_id": "24da08d9-5c27-427a-b62c-41aa7bf461ca"
+    },
+    {
+      "claim_id": "1522fcdf-ba5a-4d1a-b351-a75967155579",
+      "result_id": "24da08d9-5c27-427a-b62c-41aa7bf461ca"
+    },
+    {
+      "claim_id": "0d1a4daa-954e-4c9f-82a3-a47042a78be6",
+      "result_id": "24da08d9-5c27-427a-b62c-41aa7bf461ca"
+    },
+    {
+      "claim_id": "eefcc738-073e-4b9c-a364-86a148f24701",
+      "result_id": "24da08d9-5c27-427a-b62c-41aa7bf461ca"
+    },
+    {
+      "claim_id": "8084dbbf-7938-47f3-95fb-82eee906844a",
+      "result_id": "53a983af-5e77-435d-af01-4c37532e3b50"
+    },
+    {
+      "claim_id": "a30cc9de-7535-4e77-ae07-261c3b23f652",
+      "result_id": "53a983af-5e77-435d-af01-4c37532e3b50"
+    },
+    {
+      "claim_id": "c1dc1441-f93a-4937-8908-21ceda5b1ea2",
+      "result_id": "53a983af-5e77-435d-af01-4c37532e3b50"
+    },
+    {
+      "claim_id": "d05b763d-8a63-4377-8072-45963a3b4f20",
+      "result_id": "53a983af-5e77-435d-af01-4c37532e3b50"
+    },
+    {
+      "claim_id": "1b7ad707-e2a3-4923-90d4-3373abed6988",
+      "result_id": "53a983af-5e77-435d-af01-4c37532e3b50"
+    },
+    {
+      "claim_id": "5ecdbf39-0b8c-459b-bbdc-5b66b125d012",
+      "result_id": "53a983af-5e77-435d-af01-4c37532e3b50"
+    },
+    {
+      "claim_id": "b921b8ea-eb6b-4f8f-bfc6-f2ddc80a6eee",
+      "result_id": "53a983af-5e77-435d-af01-4c37532e3b50"
+    },
+    {
+      "claim_id": "82edc552-fe90-48a2-bdcf-7a92e6d2c107",
+      "result_id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f"
+    },
+    {
+      "claim_id": "e8da71e6-0657-4678-9b0a-2d746eb883cf",
+      "result_id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f"
+    },
+    {
+      "claim_id": "dc88a2e3-3734-4047-8b3e-8e5f2e7c0fd2",
+      "result_id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f"
+    },
+    {
+      "claim_id": "737bb37e-bf99-4310-b2b2-fe39209ab928",
+      "result_id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f"
+    },
+    {
+      "claim_id": "42373c3f-e794-4350-8ba6-fa80f27424e4",
+      "result_id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f"
+    },
+    {
+      "claim_id": "9d2f1c62-6cf5-40c1-af11-92c862b9d206",
+      "result_id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f"
+    },
+    {
+      "claim_id": "1c331714-f87e-4843-a8b5-f7b1301a9963",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "2a623848-890e-4cfb-921d-d70afdb83114",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "a095a552-758c-4aad-8cfe-0ccbb237e65b",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "666a3b50-f3ef-4e4b-b533-ab44a01f528f",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "4efc4cb2-3ad7-4763-813d-1faa703bccb9",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "e85c196e-5e9d-49a8-a599-5e6c51c541bf",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "9289e3a7-b93e-4ff1-9256-5c64eb1f9385",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "f04de9b2-4027-4b32-909e-f9c788cce4a7",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "8d2b0482-8577-4d09-afff-ac32e53ca777",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "6a0eaeb8-0d91-4fc2-81bc-0fb0c302192a",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "d72ba456-a223-4d3b-bd8c-e764c73af471",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "1798f53d-6511-4148-b346-f705265c6abe",
+      "result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d"
+    },
+    {
+      "claim_id": "061a5588-69ad-44eb-90a9-d2313f976b5c",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "a0014e6a-42b0-4761-ad5b-0a2cef9cad17",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "a2425b46-af9d-4797-9d70-078dd04960ba",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "310a12ae-0a8b-4321-adf0-35c4391e8593",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "aec58314-9a55-412e-afb0-64992b475d8c",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "c15176d8-be35-4eef-aa89-3dbe5b8e3acb",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "290d6985-a033-4cf2-817b-23a772f75a36",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "e23b95e8-a617-4143-8d12-d536f44ee7ba",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "a5b80d1c-6e87-4957-90e0-b67b92f847b7",
+      "result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d"
+    },
+    {
+      "claim_id": "135b25fc-a069-4759-b763-1de8e7c8be90",
+      "result_id": "09c684cb-7dbc-41da-b21f-c69b8c85153a"
+    },
+    {
+      "claim_id": "e45c3843-0655-415c-8495-7ae41874e7cd",
+      "result_id": "09c684cb-7dbc-41da-b21f-c69b8c85153a"
+    },
+    {
+      "claim_id": "fb912d82-4454-4de3-8044-4b0174412d96",
+      "result_id": "09c684cb-7dbc-41da-b21f-c69b8c85153a"
+    },
+    {
+      "claim_id": "a8baecc7-a6c0-4115-8b04-3d9db8dd9e18",
+      "result_id": "09c684cb-7dbc-41da-b21f-c69b8c85153a"
+    },
+    {
+      "claim_id": "6641c223-9078-4f0a-8700-774e22450ff2",
+      "result_id": "bf97053e-7e7f-4d90-ba1d-049d96a215d6"
+    },
+    {
+      "claim_id": "87e952f8-ba27-4914-bf39-d63cfe188ae3",
+      "result_id": "bf97053e-7e7f-4d90-ba1d-049d96a215d6"
+    },
+    {
+      "claim_id": "026fe1d0-39f4-4de1-9d00-759320fb7b65",
+      "result_id": "bf97053e-7e7f-4d90-ba1d-049d96a215d6"
+    },
+    {
+      "claim_id": "e9dc6891-37ca-4819-b27c-3b9d5f827164",
+      "result_id": "bf97053e-7e7f-4d90-ba1d-049d96a215d6"
+    },
+    {
+      "claim_id": "15b2183e-d5e2-4f4a-b9a4-23d0c5163d91",
+      "result_id": "bf97053e-7e7f-4d90-ba1d-049d96a215d6"
+    },
+    {
+      "claim_id": "96021b5d-0757-4563-803e-3602511a932a",
+      "result_id": "f23d8763-18dc-45bf-a08f-2607e426d409"
+    },
+    {
+      "claim_id": "f214eae8-fbfd-4902-9d7a-f5b7cbc283f7",
+      "result_id": "f23d8763-18dc-45bf-a08f-2607e426d409"
+    },
+    {
+      "claim_id": "f79945aa-12f1-47e5-b8ca-b470fcf709f1",
+      "result_id": "f23d8763-18dc-45bf-a08f-2607e426d409"
+    },
+    {
+      "claim_id": "e03b95cc-c3e4-4cc8-8c4d-9403a569557f",
+      "result_id": "fa5794fe-78d9-4091-afc7-01d9b9116142"
+    },
+    {
+      "claim_id": "4aeaa070-4adb-453e-8b88-7c488934846d",
+      "result_id": "fa5794fe-78d9-4091-afc7-01d9b9116142"
+    },
+    {
+      "claim_id": "5ca7ef54-8af4-4afd-996b-831d75fc1760",
+      "result_id": "fa5794fe-78d9-4091-afc7-01d9b9116142"
+    },
+    {
+      "claim_id": "57705ab0-4c84-4a43-8d80-e8ee9deb535e",
+      "result_id": "fa5794fe-78d9-4091-afc7-01d9b9116142"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "42e1f7e3-2b28-43aa-8882-76b5546af897",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "086968ca-b61c-49b7-a3ab-2be0e40e11a3",
+      "peer_result_id": "bf97053e-7e7f-4d90-ba1d-049d96a215d6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on cohort characteristics (C9-C12, C59). Both evaluations support the study design, with OpenEval noting substantial sample size and adequate follow-up, while peer reviewers explicitly praise the 'large sample size' and 'prospective design UK Biobank study' as major strengths.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "3ca1813c-e79d-4028-998d-1559b4fa8365",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b49c5f78-1e3f-4e25-9c9a-e09ff1db67dc",
+      "peer_result_id": "fa5794fe-78d9-4091-afc7-01d9b9116142",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the unexpected prostate cancer finding (C14, C65-C67). OpenEval rates this as UNCERTAIN due to concerns about PhenoAge specificity for different cancer types, while peer reviewers rate it SUPPORTED, noting that concerns were 'satisfactorily resolved during revision.' This represents a key disagreement in confidence level.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "c2a161c1-d266-4c98-b954-3a4de257ae14",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "c3b0e316-c18a-417d-97fd-2bf1b66a7002",
+      "peer_result_id": "f23d8763-18dc-45bf-a08f-2607e426d409",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on methodology (C56-C58). Both evaluations support the PhenoAge calculation and genetic risk scoring methods. OpenEval notes appropriate referencing of established methods, while peer reviewers affirm the study is 'well-designed' with 'solid and comprehensive' scoring approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "6a1805ec-1d5e-4341-b9e6-b4040f9cbe29",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "767e2091-18d6-4320-91d3-037927faa77a",
+      "peer_result_id": "24da08d9-5c27-427a-b62c-41aa7bf461ca",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on core predictive findings. OpenEval supports C13, C15-C18, C68 with robust Cox regression analyses, while peer reviewers support overlapping claims C13-C16, C43, C72, praising 'compelling results' showing PhenoAgeAccel can predict cancer incidence. Both affirm the main predictive relationship.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "250443c8-ca0b-4531-aa82-18432e7720d4",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "767e2091-18d6-4320-91d3-037927faa77a",
+      "peer_result_id": "53a983af-5e77-435d-af01-4c37532e3b50",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address dose-response relationships and sex-specific effects (C17-C18, C68). OpenEval explicitly supports the dose-response gradient and consistency across sexes, while peer reviewers implicitly accept these as part of the 'consistently related' findings they endorse.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "b0f8ba1b-c7b6-4255-9328-46ce59d2cafb",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4bef41dd-17a8-4be3-9101-79cf3f767aaf",
+      "peer_result_id": "53a983af-5e77-435d-af01-4c37532e3b50",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on categorical associations (C19-C22, C68). OpenEval supports the gradient effect with appropriate statistical testing, while peer reviewers affirm these findings as part of the core results showing consistent increased risk across categories.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "d95e6209-15bf-48a7-abd5-96acd4c9afca",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7ac553a2-43d9-4615-828c-310cee794c14",
+      "peer_result_id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address joint effects of PhenoAgeAccel and genetic risk (C23-C28, C69-C70, C60, C29). OpenEval supports the strong joint effects but notes additive rather than multiplicative effects. Peer reviewers emphasize these findings, with the editor highlighting use 'with genetic risk to facilitate identification' and reviewers noting the 'additive model.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "55a6e1a5-d1b6-4ef9-8ec5-1a68babf5e29",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "ae38464b-5b04-44aa-b213-6b41f3b8530c",
+      "peer_result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address stratified effects across genetic risk groups (C30-C33, C60) and screening implications (C34-C37). OpenEval supports stratified effects but rates screening implications as UNCERTAIN due to arbitrary thresholds. Peer reviewers support both as part of 'compelling results' for identifying cancer-susceptible individuals.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "65fe57de-c568-405d-b34a-70a1d1d6de2a",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ff01df20-7de1-4533-b0c7-6d2f758a18c5",
+      "peer_result_id": "df7b05f8-8002-4851-a214-e28c1d428d1d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on screening implications (C34-C37). OpenEval rates as UNCERTAIN, questioning the arbitrary 2% threshold and noting lack of validation for screening recommendations. Peer reviewers rate as SUPPORTED, stating results 'will be of broad interest to clinicians' and support identification of susceptible individuals.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "19f5c91c-2965-432c-a9d0-0e8d835687f5",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "778e872b-9f62-4182-b335-15464ce9736b",
+      "peer_result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on lifestyle associations (C38-C41, C61, C71). OpenEval supports these with modest but robust effect sizes. Peer reviewers support these findings and their clinical implications, explicitly stating 'People with high genetic risk may benefit from PhenoAgeAccel-informed interventions.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "04069bfc-2354-4cf4-8141-f61eea702855",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "76262e06-cea5-4d11-8b88-032f2f064729",
+      "peer_result_id": "4e5b6fa9-5e41-4d7f-903b-92916834ff6d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on causal interpretation of lifestyle effects (C63, C73). OpenEval rates as UNCERTAIN, noting that observational design cannot establish causation and reverse causation remains possible. Peer reviewers rate as SUPPORTED, endorsing intervention implications without expressing caution about causal inference.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "0f5115eb-2036-44a2-b087-d714befb888c",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "22022268-d92a-46f7-8e07-fd241a9e8b70",
+      "peer_result_id": "24da08d9-5c27-427a-b62c-41aa7bf461ca",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on main conclusions (C43, C55, C72). OpenEval supports these conclusions while noting that clinical utility requires prospective validation. Peer reviewers fully endorse these as 'compelling results' that demonstrate effective application of PhenoAgeAccel in predicting cancer risk.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "475536d2-f1f4-482a-8cb5-473a32869758",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "22022268-d92a-46f7-8e07-fd241a9e8b70",
+      "peer_result_id": "09c684cb-7dbc-41da-b21f-c69b8c85153a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address clinical utility and risk stratification (C55, C64, C75, C78). OpenEval supports main conclusions but notes C55 requires prospective validation. Peer reviewers fully support translational claims, stating results will be of 'broad interest to clinicians' and that tools can 'facilitate identification' of susceptible individuals.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "65b8cc9a-ebab-48f2-8ca3-a09c45bce607",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "b67c6c71-1038-4e7a-8c47-db7597188937",
+      "peer_result_id": "09c684cb-7dbc-41da-b21f-c69b8c85153a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on speculative claims (C62, C64, C74-C75, C78). OpenEval rates as UNCERTAIN, noting these extend beyond what observational data can demonstrate and require experimental validation. Peer reviewers rate as SUPPORTED, explicitly endorsing that people 'may benefit from PhenoAgeAccel-informed interventions.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "09b89fda-6dfc-4669-8594-9bc2b1dffaae",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "8801f9fc-0baa-4d31-bc59-69cbfa63fa30",
+      "peer_result_id": "935dd9b4-6867-4ee2-8bff-c1ea610d4a5f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address lack of interaction effects (C29, C42, C60, C69-C70, C27-C28). OpenEval supports the negative interaction findings, noting additive rather than synergistic effects. Peer reviewers also affirm the additive model, with one reviewer explicitly noting tools 'serve as productive tools...under an additive model.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "740c2c99-6dfb-4a4a-832b-157c04cf4593",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "4080c1d1-87be-47f2-a8ba-1044ee7cc003",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background/introduction claims (C1-C8) as SUPPORTED with appropriate citations, noting C1 may be inaccurate regarding cancer as leading cause of death. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "d19b0bb2-86bb-4d59-b747-36d1c3eaad36",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "fcbb1c56-2058-4c59-a912-328aa78cd418",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature review and prior work citations (C44-C53, C76-C77) as SUPPORTED, noting appropriate comparisons with other aging measures. No corresponding peer review evaluation found for these literature review claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    },
+    {
+      "id": "972d80ff-fa68-45de-89bf-547a0bb3ef54",
+      "submission_id": "07773126-0627-4585-bac2-1aceed3caa70",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "f872f6dc-0fd7-4b40-9c37-50720e059afd",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates UK Biobank generalizability limitation (C54) as SUPPORTED, appropriately citing known selection bias. No corresponding peer review evaluation found for this specific limitation, though peer reviewers generally accepted the study design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:41:07.338611Z"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The manuscript establishes background knowledge about translation elongation rates and mRNA stability. Multiple mRNA attributes (secondary structure, codon composition, tRNA abundance, nascent peptide sequence, mRNA damage) affect ribosome speed. Codon optimality, rare codons, and stalling sequences influence translation efficiency. Recognition of slow ribosome dynamics by mRNA decay machinery triggers degradation during both RQC and general translation regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 represent well-established background knowledge supported by extensive citations to prior research. These claims provide the scientific context for the study and are appropriately referenced. No experimental validation is required as these are literature-based contextual claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The manuscript describes established mechanisms of eukaryotic mRNA decay and the role of DDX6/Dhh1p. General mRNA decay is initiated by CCR4-NOT-mediated deadenylation, followed by 5'-to-3' decay (DCP1/DCP2 decapping and XRN1 degradation) or 3'-to-5' decay by the exosome. DDX6 belongs to the DEAD-box ATPase/helicase family and its RecA2 domain mediates binding to translational regulators and decay machinery, linking translational repression to mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C39 represent established knowledge about mRNA decay pathways and DDX6 structure/function, all supported by appropriate citations to prior research. These provide essential background for understanding the experimental work presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Rare codons reduce mRNA stability in human cells in a DDX6-dependent manner. A reporter construct with 30 rare codons at the 3' end of Renilla luciferase showed reduced mRNA half-life (>10 hr to 8.0\u00b14.4 hr) in wild-type HEK293T cells. Loss of DDX6 stabilized this reporter to control levels (>10 hr), demonstrating that DDX6 acts as a sensor of codon optimality, a function conserved from yeast to mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are well-supported by experimental data shown in Figure 1A-C. The reporter design is clearly described, half-life measurements are quantified with error bars and R\u00b2 values, and the DDX6 KO rescue experiment provides strong evidence. The conclusion about evolutionary conservation is appropriately drawn from comparison with yeast studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "HEK293T DDX6 KO cells were generated using CRISPR/Cas9-mediated gene editing and validated by western blotting and genomic sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe the generation and validation of the DDX6 KO cell line, which is essential for all subsequent experiments. The validation is shown in Figure 1\u2014figure supplement 1A,B with both protein-level (western blot) and genomic-level (sequencing) confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In human cells, mRNA decay triggered by rare codon-related slow ribosome movement is initiated by CCR4-NOT-dependent deadenylation. Blocking CCR4-NOT activity with a POP2 dominant negative mutant stabilized the rare-codon reporter (half-life increased from 5.5\u00b12.8 hr to >10 hr), similar to mechanisms observed in yeast and zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by experimental data in Figure 1D-E showing stabilization of the reporter upon blocking CCR4-NOT activity. The conclusion is appropriately drawn from the experimental results and contextualized with prior work in other organisms (C48-C49 are cited background).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "DDX6 participates in ribosome stalling-mediated mRNA decay through a mechanism independent of modulating CCR4-NOT deadenylase activity. Tethering assays with CNOT3 showed that DDX6 knockout does not affect CCR4-NOT deadenylation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by tethering assay data in Figure 1\u2014figure supplement 1C. The experiment appropriately tests whether DDX6 modulates CCR4-NOT activity and provides evidence for an alternative mechanism. However, the mechanism by which DDX6 acts remains unclear and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "DDX6 physically interacts with ribosomal components through its C-terminal RecA2 domain. In vitro pulldown assays showed DDX6 co-purifies with ribosomal proteins. Co-immunoprecipitation experiments in human cells demonstrated that full-length DDX6 and the RecA2 domain, but not the RecA1 domain, interact with both large (RPL22) and small (RPS3A) ribosomal subunit proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by experimental data in Figure 2A-B. The in vitro pulldown (Figure 2A) and co-IP experiments (Figure 2B) provide converging evidence for DDX6-ribosome interaction. The domain mapping is clear, though the experiments were performed in the presence of RNase I, which may not completely eliminate RNA-mediated interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "DDX6 interacts with ribosomes via the FDF-binding surface in its RecA2 domain, the same region that mediates interactions with decay and translation repression machinery. Mutation of the FDF-binding surface (Mut2) abolished ribosome binding, while mutations disrupting NOT1 interaction (Mut1) or the DEAD-box motif did not affect ribosome binding. The Mut2 protein retained NOT1 binding, confirming proper folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are supported by mutant analysis in Figure 2C. The experimental design appropriately tests different interaction surfaces, and the control showing Mut2 still binds NOT1 addresses potential folding concerns. This provides strong evidence for the specific interaction interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DDX6 ATPase activity, RecA2-mediated interactions with both NOT1 and FDF-motif proteins are all required for DDX6 to mediate decay of poorly translated mRNAs. Complementation experiments in DDX6 KO cells showed that only wild-type DDX6, not ATPase-dead (E236Q), NOT1-binding mutant (Mut1), or FDF-binding mutant (Mut2), could restore rare-codon reporter decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by rescue experiments in Figure 2D-F. The experimental design systematically tests each functional domain/activity, and all mutants are expressed at comparable levels (Figure 2F). The results clearly demonstrate that multiple DDX6 functions are required for its role in mRNA decay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Ribosome profiling methodology and interpretation principles are described. The technique involves high-throughput sequencing of ribosome-protected RNA fragments, revealing genome-wide ribosome occupancy. Overall occupancy indicates protein synthesis levels, while local footprint distribution measures ribosome speed, with accumulation indicating reduced speed or stalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 describe established ribosome profiling methodology, appropriately cited to foundational papers. These provide necessary context for interpreting the experimental results that follow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "RNA-seq and ribosome profiling identified two classes of DDX6-regulated mRNAs. In DDX6 KO cells: (1) 1707 mRNAs were upregulated at steady-state (298 >2-fold), enriched for extracellular/membrane proteins; (2) 260 mRNAs showed increased translation efficiency (152 >2-fold), with 34% encoding zinc finger transcription factors. Only 38 mRNAs showed decreased TE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 are supported by RNA-seq and ribosome profiling data shown in Figure 3A-F and Figure 2\u2014figure supplement 1A-C. The experimental replicates clustered appropriately, statistical thresholds (FDR <0.005) are clearly stated, and GO analysis provides functional context. The strong enrichment for zinc finger transcription factors (FDR = 2.5E-46) is particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "DDX6-regulated mRNAs (translationally upregulated in KO cells) have lower GC content, longer coding sequences, and lower predicted mRNA stability scores compared to unaffected mRNAs. These features correlate with low codon optimality in mammals. Interestingly, these mRNAs did not have significantly lower baseline TE, but loss of DDX6 increased their TE above the overall average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 are supported by sequence analysis in Figure 3\u2014figure supplement 1A-C and comparison with predicted stability scores in Figure 3G. The statistical significance is clearly indicated (p-values shown). The finding that DDX6-regulated mRNAs don't have lower baseline TE (C93) is interesting and suggests DDX6 may prevent these mRNAs from being translated more efficiently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Manual screening of upregulated mRNAs identified 35 genes with local ribosome footprint accumulation, indicating potential stalling sites. The androgen receptor (AR) mRNA containing CAG repeats was among the most highly upregulated. CAG repeats may cause ribosome stalling due to limited tRNA availability and have been linked to neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by manual screening of ribosome profiling data (Figure 3\u2014figure supplement 2B-G). The identification of AR is notable given its CAG repeats. However, C97 cites a preprint (Aviner et al., 2022) which may not have undergone peer review. The connection to disease is speculative but appropriately presented as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "qPCR validation confirmed DDX6 dependency for 6 of 9 tested mRNAs (AR, BMP2, LGALS1, DLX5, ENO2, PSMB9). DDX6 KO cells had higher target mRNA levels, which were partially restored by expressing wild-type but not mutant DDX6, demonstrating DDX6 plays a direct role in regulating these mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by qPCR data in Figure 3H and Figure 3\u2014figure supplement 3A. The validation rate (6/9 = 67%) is reasonable. The authors note discrepancies between qPCR and RNA-seq quantification for some targets (AR, ENO2), which they attribute to normalization differences\u2014this transparency is appropriate. The rescue experiments strengthen the conclusion of direct DDX6 involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Endogenous stalling sequences from AR and BMP2 mRNAs confer translation-dependent, DDX6-dependent mRNA destabilization when inserted into reporter constructs. Stalling sequences before the stop codon reduced reporter half-life (AR: reduced from >10 hr; BMP2: 4.0\u00b11.9 hr vs >10 hr control), but this effect was abolished in DDX6 KO cells. Reporters with stalling sequences showed increased ribosome occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 are supported by reporter assays in Figure 4A-F. The experimental design appropriately distinguishes translation-dependent effects (stop codon position controls). Half-life measurements are quantified with error bars and R\u00b2 values. The RNA pulldown experiment (Figure 4F) provides additional evidence for increased ribosome occupancy on stalling sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study demonstrates that translation inefficiency modulates mRNA stability in human cells, with DDX6 playing a crucial role in triggering decay of slowly translated mRNAs. DDX6 serves as a mediator of ribosome stalling and mRNA decay, a function evolutionarily conserved from yeast to mammals. DDX6-CCR4-NOT interactions are essential, and reporter mRNAs with stalling regions are only destabilized when both translation and DDX6 are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 represent the main conclusions drawn from the collective experimental findings (C40-C108). These conclusions are well-supported by the data presented, including reporter assays, knockout/rescue experiments, mutant analysis, and transcriptome-wide profiling. The evolutionary conservation claim is appropriately based on comparison with yeast studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Loss of DDX6 could disrupt co-translational proteostasis of factors associated with neurodegenerative diseases (e.g., proteins with CAG repeats), potentially leading to intracellular aggregate formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C115 is speculative, based on the finding that AR mRNA (with CAG repeats) is upregulated in DDX6 KO cells and the citation of a preprint linking CAG expansions to disease. While the speculation is reasonable, no direct evidence for disrupted proteostasis or aggregate formation is provided. This represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The human RNA helicase DDX6 plays a critical role in mediating translation efficiency and mRNA stability in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 represents the overarching conclusion of the study, supported by the collective experimental findings demonstrating DDX6's role in both translational regulation (260 mRNAs with increased TE in KO) and mRNA stability (1707 upregulated mRNAs, reporter decay experiments).",
+    "result_type": "MAJOR"
+  }
+]

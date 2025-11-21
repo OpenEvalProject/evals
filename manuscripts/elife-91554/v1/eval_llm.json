@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors optimized the Whitfeld reaction for charge tRNA-Seq by demonstrating that periodate oxidation is complete after 5 min on ice (choosing 10 min as optimal), lysine cleavage at pH 8 is complete after 10 min but requires 4 hr for full deacylation, and ethylene glycol is a suitable quencher that enables a one-pot reaction. The pH reduction from 9.5 to 8 significantly improved RNA integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 are well-supported by experimental data shown in Figure 2 panels A-D and supplementary figures. The optimization is systematic, with gel-based validation of each step. The choice of ethylene glycol over glucose/ribose is supported by both chemical reasoning (C27) and experimental validation (C26, C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Blunt-end ligation showed high variability and barcode bias in charge measurements, with ligation efficiency never exceeding ~50%. In contrast, splint-assisted ligation achieved near-complete ligation with high specificity across all nine barcoded adapters for both CCA and CC-ending tRNAs, and tRNA processed through the Whitfeld reaction was effectively ligated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 are supported by experimental data in Figure 2\u2014figure supplements 2-5. The comparison between blunt-end and splint-assisted ligation is direct and quantitative. The observation of unligated tRNA after periodate oxidation (C35-C36) is noted but validated not to impact accuracy by later charge titration experiments (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Maxima RT polymerase achieves similar readthrough to TGIRT but with worse mapping statistics. Expression level measurements are highly sensitive to polymerase choice, while charge measurements are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by data in Figure 2\u2014figure supplements 6 and 7, and Supplementary file 4. The differential sensitivity of expression vs. charge measurements to polymerase choice is an important validation of the method's robustness for its primary purpose (charge measurement).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The final optimized method was validated using spike-in controls showing near-complete conversion, deacylation, and CCA-end integrity. Baseline charge measurements in H1299 cells showed excellent repeatability with high charge for most codons, generally a few percentage points higher than prior work in 293T cells, and validated low charge for specific tRNASer and tRNAGlu codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by data in Figure 2 panel F and Figure 2\u2014figure supplements 8-9. The validation using multiple controls (spike-in, deacylated, non-oxidized) is thorough. The comparison to prior work (C46-C47) appropriately acknowledges differences in cell lines and processing while noting general agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors implemented Smith-Waterman alignment with reference masking to improve read mapping. Optimized masking of 533 positions reduced multiple codon alignments from 11.71% to 5.09% without trade-off in mapping percentage. Reference masking had minimal effect on charge measurements but increased expression levels for select codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C59 are supported by data in Figure 3 and supplements. The grid search optimization (C55-C56) is systematic and well-documented. The Smith-Waterman approach (C51-C52) provides guaranteed best alignment at computational cost. The minimal impact on charge measurements (C59) is expected given the relative nature of the calculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The mcm5s2U modification shows large changes in misincorporation signature upon periodate oxidation, with variable effects on RT readthrough, mutation, and gap frequency. The misincorporation signature depends on the polymerase used, with Maxima showing better readthrough and increased mutation/gap frequency compared to TGIRT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by data in Figure 3\u2014figure supplements 2-3. The observation that periodate oxidation affects mcm5s2U is novel and mechanistically plausible given the thionucleoside chemistry. The polymerase-dependent differences are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Barcode replicate testing showed high precision with charge measurements having a standard deviation of 1.7 percentage points and RPM measurements having 5.1 percentage points. Adapter l4Sp consistently overestimated charge by ~3 percentage points, demonstrating the importance of investigating barcode bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by data in Figure 4 and supplements. The barcode replicate test is a rigorous assessment of precision. The identification of l4Sp bias (C65) validates the experimental design and demonstrates the method's ability to detect and quantify systematic errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Charge titration experiments showed excellent proportionality between predicted and measured charge across the full range, confirming high accuracy. The l4Sp adapter bias was confirmed, but no bias was found across different mixing proportions or sequencing runs. A 50% charge spike-in control showed mean charge of 50.36% with standard deviation of 1.11 percentage points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by data in Figure 5 and supplements. The charge titration is a rigorous test of accuracy using over 150 transcripts across 8 mixing ratios. The 50% spike-in control (C70) provides an independent validation. The correction factor approach for handling differential depletion during deacylation is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Aminoacylation half-lives measured by charge tRNA-Seq are determined mostly by amino acid identity and span a 37-fold range, confirming prior work. However, half-lives are approximately fourfold higher than previously reported despite similar conditions. The discriminator base influences half-life, with purines promoting longer half-lives than uracil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by data in Figure 6 and supplements. The half-life measurements are systematic with 11 timepoints and 4 replicates. The fourfold difference from prior work (C75) is unexplained but well-documented. The discriminator base effect (C76) is a novel observation enabled by comprehensive transcript sampling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Current methods for measuring tRNA charge have limitations: radiolabeling is accurate but limited to purified tRNAs, northern blotting has multiple technical limitations, and microarray approaches have been superseded by sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C7 represent established knowledge about existing methods supported by citations and general field knowledge. These claims provide appropriate context for the development of the new method but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The Whitfeld reaction uses periodate oxidation to attack 2,3-dihydroxyls on the 3' ribose of deacylated tRNA, followed by base elimination at high pH, resulting in one-base truncation. This reaction sequence was historically used for RNA sequencing attempts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 describe established chemistry of the Whitfeld reaction supported by historical citations. This is background knowledge appropriately cited and not a novel finding of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Base modifications on tRNAs cause RT problems (stalling, misincorporation, falloff), with Watson-Crick disrupting modifications being most problematic. AlkB demethylase and optimized incubation conditions can increase readthrough. Adapter ligation bias is a known problem in small-RNA sequencing, exacerbated in charge tRNA-Seq by different sequence contexts for acylated vs. deacylated tRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 represent established knowledge about tRNA-Seq challenges supported by citations. These provide appropriate context but are not novel findings. Claim C16 is a logical inference about the specific challenge in charge tRNA-Seq.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The tRNA 3' end contains four free nucleotides (discriminator base plus CCA) that can be engaged by a splint oligo to guide adapter ligation, improving specificity and efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe established tRNA structure (C17-C18) and cite prior work on splint-assisted ligation (C19). This is background knowledge supporting the method development but not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C82"
+    ],
+    "result": "The optimized charge tRNA-Seq method provides robust quantification of tRNA aminoacylation, supports measurements of relative expression levels, and can infer tRNA modifications through RT misincorporations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C82 are summary statements supported by the collective validation experiments throughout the manuscript (precision testing, accuracy testing, modification detection). These represent the main conclusions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Discussion points: ornithine may be a better cleavage inducer than lysine; splint-assisted ligation is highly efficient in the authors' experience; tRNAHis presents a potential challenge for splint-assisted ligation due to its 5' G addition, though reads are surprisingly abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are discussion points. C77 is based on citation, C78 on experimental experience and citation, C79 on citation, and C80-C81 on structural knowledge and experimental observation. These are appropriately qualified statements in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Methodological details: H1299 cells were cultured under standard conditions; TRIzol washing is critical to remove glycerol that inhibits periodate oxidation; Smith-Waterman alignment was implemented via SWIPE; reference sequences from GtRNAdb; physiological buffer composition specified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are methodological details. C85 combines chemical knowledge with experimental observation. These are appropriately documented methods supporting reproducibility.",
+    "result_type": "MINOR"
+  }
+]

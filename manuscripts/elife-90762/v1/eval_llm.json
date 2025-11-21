@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The major species of infection-derived sNS1 (isNS1) is a ~250 kDa complex composed of NS1 dimer and ApoA1. Immunoaffinity-purified isNS1 migrated at ~250 kDa on Native-PAGE, and reducing SDS-PAGE revealed two major bands at 50 kDa (NS1) and 25 kDa (ApoA1). Label-free quantification LC-MS showed NS1 and ApoA1 accounted for >77% of total ion intensity in the elute and >88% in the 250 kDa band.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary biochemical techniques (Native-PAGE, SDS-PAGE, western blot, LC-MS) consistently demonstrate that isNS1 is a ~250 kDa complex of NS1 and ApoA1 (C21, C23-C27). The LFQ data showing >77% combined intensity provides strong quantitative support (C25-C27). This represents a well-validated biochemical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CryoEM structural analysis of isNS1wt complexed with Ab56.2 or Fab56.2 revealed that NS1 dimer is semi-embedded on a spherical HDL particle through its hydrophobic surface. The HDL dimensions were measured at 82 \u00c5 by 65 \u00c5, consistent with known HDL structures. AlphaFold2-predicted models of NS1 dimer and Fab56.2 fitted into the cryoEM map with correlation value of 0.75.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the cryoEM data shows NS1 dimer associated with HDL-like spherical density (C29, C32), the authors explicitly state the reconstructions are limited to low resolutions (C31). The 0.75 correlation for model fitting is modest, and the structural interpretation relies heavily on computational predictions rather than high-resolution experimental data. The claim of 'semi-embedded' conformation (C33) is an inference from low-resolution maps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Crosslinking mass spectrometry identified 28 NS1:NS1 and 29 ApoA1:ApoA1 intramolecular crosslinks, plus 25 NS1:ApoA1 intermolecular crosslinks in isNS1wt. The NS1:ApoA1 interactions mapped primarily to the \u03b2-roll and wing domains of NS1 and helices 3, 4, 8, and 10 of ApoA1. Validation against structural models showed 85% of NS1:NS1, 76% of NS1:ApoA1, and 62% of ApoA1:ApoA1 crosslinks satisfied the <30 \u00c5 distance cutoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The XL-MS data provides detailed molecular interaction mapping with good validation rates against structural models (C39, C41, C42). The lower validation rate for ApoA1:ApoA1 crosslinks (62%) is reasonably explained by the known flexibility of ApoA1 dimers (C43). The data converges with the cryoEM findings to support NS1-HDL interaction through specific domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C44"
+    ],
+    "result": "The T164S mutant (isNS1ts) showed a significant population (53.7%) of free NS1ts dimers bound to Fab56.2, compared to only 3.5% free dimers in isNS1wt. Fewer crosslinks were identified between isNS1ts and ApoA1 compared to isNS1wt, suggesting the T164S mutation weakens NS1-HDL affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryoEM data clearly shows a major difference in the proportion of free vs HDL-bound NS1 between wild-type and mutant (C34 vs C30). The reduced crosslinks in isNS1ts corroborate this finding (C44). However, the mechanistic interpretation of 'weaker affinity' is an inference that would benefit from direct binding measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Recombinant sNS1 (rsNS1) forms oligomers of dimers, tetramers, and hexamers when crosslinked alone, but does not form stable complexes with exogenously added human HDL. Only 1 out of 6 rsNS1:ApoA1 intermolecular crosslinks satisfied the 30 \u00c5 distance cutoff when mapped to the NS1:ApoA1 cryoEM model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The XL-MS data clearly distinguishes rsNS1 behavior from isNS1 (C45-C49). The smearing pattern on SDS-PAGE with HDL addition (C46) and the poor validation of rsNS1:ApoA1 crosslinks (C49, only 17% vs 76% for isNS1) strongly support that rsNS1 does not form the same complex as infection-derived sNS1. This is an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Epitope mapping using peptide competition ELISA and HDX-MS identified residues 300-310 of NS1 as the primary binding site for Ab56.2. HDX-MS showed protection against deuterium exchange at residues 286-347 of the C-terminal \u03b2-ladder, with the most significant change at residues 300-310.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Two independent methods (peptide competition ELISA and HDX-MS) converge on the same epitope region (C51, C53-C55). The HDX-MS data shows protection even at long labeling times (100 min), indicating stable binding (C54). The complementary approaches provide strong support for the epitope identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "HDX-MS analysis of Fab56.2 revealed that all three CDRs of the heavy chain and CDRL2 of the light chain showed protection against deuterium exchange upon binding rsNS1c. CDRH3 showed the largest magnitude decrease, with the heavy chain serving as the primary anchor for NS1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HDX-MS data systematically maps the paratope with clear differential protection patterns (C56-C58). The spatial co-localization of protected regions forming the binding interface (C59) is well-supported by the data. This provides detailed molecular understanding of the antibody-antigen interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "sNS1 from DENV-infected mouse sera and a human patient forms similar complexes with ApoA1 as isNS1. Immunoaffinity-purified sNS1ts from mouse sera was detected at ~250 kDa by both anti-ApoA1 and anti-NS1 antibodies. In human patient serum, increasing anti-ApoA1 antibody resulted in corresponding increase in sNS1 detection, demonstrating specific association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the mouse sera data shows co-detection of NS1 and ApoA1 at ~250 kDa (C60), and the human patient data shows dose-dependent co-immunoprecipitation (C61), both experiments are limited by low sample numbers (pooled mouse sera, n=1 human patient). The sequence similarity argument (C63-C65) supports plausibility but doesn't validate the in vivo complex. More patient samples and direct structural confirmation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The data does not support the widely held hexameric model of sNS1 with a ~28 \u00c5 central channel filled with lipid. Instead, the findings confirm that infection-derived sNS1 exists as NS1 dimer(s) associated with HDL, requiring an exposed hydrophobic face incompatible with the hexamer model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural and biochemical data consistently show NS1 dimers associated with HDL rather than hexamers (C2, C20, C37-C41). The authors acknowledge their data confirms recent findings by Benfrid et al. 2022 (C72). The argument about lipid content and exposed hydrophobic surfaces (C74-C75) is logical given the HDL interaction data. However, the limitation to one antibody for purification (acknowledged in C71) means other NS1 populations cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Up to two NS1 dimers can dock onto a single HDL particle in infection-derived sNS1, similar to in vitro reconstitution studies. The concentration of isNS1:HDL (~30 \u03bcg/mL) is closer to clinically reported sNS1 concentrations (50 \u03bcg/mL) than the high concentrations (400 \u03bcg/mL) used in reconstitution studies, suggesting the NS1:HDL ratio varies with protein concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryoEM observations of up to two NS1 dimers per HDL (C68) are consistent with previous reconstitution studies (C67). The concentration comparison (C69) is valid and important for physiological relevance. The inference about concentration-dependent stoichiometry (C70) is reasonable but would benefit from systematic titration experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background on dengue virus, NS1 protein, and previous structural studies. DENV causes significant global health burden with severe infections characterized by endothelial dysfunction associated with sNS1. NS1 exists in multiple forms and has been structurally characterized, with previous models suggesting hexameric sNS1 and recent evidence of NS1-HDL interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge supported by appropriate citations (C5-C19). They set the context for the current study but do not represent new findings. The information is well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Previous functional studies showed isNS1 triggers proinflammatory cytokine production in human PBMCs, more pronounced with the T164S mutant. Provisional TEER assay data indicates acid-eluted isNS1 induces endothelial hyperpermeability. The authors propose that weaker HDL binding of the T164S mutant may explain increased disease severity through enhanced free sNS1 availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The functional data is cited from previous work (C77-C78) rather than presented here. The TEER data is described as 'provisional' (C79), suggesting incomplete analysis. The mechanistic explanation (C81) is highly speculative, connecting structural observations to in vivo pathology without direct experimental validation. This represents a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Discussion of conflicting literature on NS1:HDL complex function. Some studies show sNS1:HDL triggers proinflammatory signals and interacts with SR-BI receptor, while others show ApoA1 neutralizes NS1 proinflammatory effects and exogenous NS1 fails to worsen vascular leakage in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize contradictory findings in the literature (C82-C92), all supported by appropriate citations. The authors acknowledge these discrepancies and call for physiologically relevant studies. This represents a fair assessment of the field's current state rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The oligomeric state of NS1 is dynamic and may vary depending on context and environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable speculation (C76) given the data showing different NS1 oligomeric states under different conditions (infection-derived vs recombinant, with/without HDL). However, it's a general statement rather than a specific finding.",
+    "result_type": "MINOR"
+  }
+]

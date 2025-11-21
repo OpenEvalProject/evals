@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C48",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C109"
+    ],
+    "result": "A 68-year-old male patient with advanced retinal degeneration harbors four transcriptionally active intact copies of rhodopsin due to a complex duplication-inverted triplication-duplication event on chromosome 3q22.1. Clinical examination revealed characteristic features of autosomal dominant retinitis pigmentosa (adRP), including bone spicule pigmentation, optic disc pallor, vessel attenuation, and outer retinal atrophy sparing the central fovea. The genetic rearrangement was confirmed by NGS and segregated with disease in the family pedigree, consistent with autosomal dominant inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 and supporting claims provide comprehensive clinical, genetic, and pedigree evidence for RHO-CNV as the cause of adRP in this patient. The genetic characterization by NGS is detailed and confirmed by whole genome sequencing (C10-C11), the clinical phenotype is well-documented with imaging (C8-C9), and family segregation supports autosomal dominant inheritance (C13-C14). The absence of other causative variants (C12) strengthens the causal link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C21",
+      "C22",
+      "C54",
+      "C55",
+      "C106",
+      "C107"
+    ],
+    "result": "Patient-derived retinal organoids recapitulated key disease phenotypes, showing photoreceptor dysgenesis with stunted outer segments that failed to elongate over 300 days of culture. While patient organoids developed connecting cilia and inner segments similar to controls, they displayed short hair-like protrusions that did not extend into mature outer segments. These morphological defects were consistent across multiple differentiation rounds from three independent patient iPSC clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C21-C22, and C54 provide converging morphological evidence from light microscopy and transmission electron microscopy showing outer segment defects in patient organoids. The reproducibility across three independent clones (C106) and extended culture time (C107) strengthens confidence in the phenotype. However, the lack of an isogenic control line (acknowledged in the Discussion) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C23",
+      "C24",
+      "C25",
+      "C56",
+      "C91",
+      "C92"
+    ],
+    "result": "Patient retinal organoids showed significantly elevated RHO mRNA expression (~8-fold increase at D120 and D300) compared to controls, as measured by both qRT-PCR and bulk RNA sequencing. A smaller but significant increase in SAG (~2-4 fold) was also observed. Pan-photoreceptor and early rod marker genes showed similar expression levels between patient and control organoids, indicating normal early rod development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C23-C25 provide consistent evidence from two independent methods (qRT-PCR and RNA-seq) showing elevated RHO expression. The magnitude of increase (~8-fold) is consistent across methods and time points. Normal expression of early markers (C56) indicates the defect is specific to mature rod genes. Statistical significance is reported (C23-C24), though the non-significant IFT122 change (C92) appropriately acknowledges partial triplication of this gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C27",
+      "C28",
+      "C29",
+      "C59",
+      "C60",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C108"
+    ],
+    "result": "Patient organoids displayed elevated levels and mislocalization of rhodopsin protein, with RHO accumulating in photoreceptor cell bodies rather than outer segments at all analyzed time points (D200 and >D250). Western blot analysis showed 16-fold and 9-fold increases in monomeric and dimeric RHO, respectively, and 1.5-fold increase in SAG protein. Pan-photoreceptor markers and cone markers showed normal expression and localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C27-C29 provide strong protein-level evidence from immunofluorescence and western blotting showing both increased RHO levels and mislocalization. The quantification by western blot (C28-C29) is rigorous with appropriate loading controls. Normal expression of other photoreceptor markers (C59, C98) indicates specificity to RHO. The observation of occasional proper localization (C99) is appropriately noted. The inference that excessive protein is not being transported (C108) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C35",
+      "C57",
+      "C58",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Pathway enrichment analysis of RNA sequencing data revealed perturbations in N-linked glycosylation and ER/Golgi transport pathways in patient organoids. The authors infer that RHO overexpression overloads the rod ER by reducing the efficiency of RHO glycosylation, which is necessary for proper protein folding and transport to outer segments. Increases in phototransduction and synaptic signaling pathways were also detected, suggestive of photoreceptor dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 provides direct evidence from pathway analysis showing glycosylation and ER/Golgi transport defects. The mechanistic inference (C35, C96) is reasonable given the known role of N-linked glycosylation in RHO trafficking (C93-C95, established knowledge) and is supported by citations. The upregulation of phototransduction pathways (C57-C58) is consistent with compensatory responses. However, the lack of detected ER stress/UPR (C62) is somewhat surprising and may warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C30",
+      "C31",
+      "C32",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C101"
+    ],
+    "result": "Treatment with the small molecule PR3 (targeting NR2E3) resulted in dose-dependent reduction of RHO expression (4-30 fold decrease) and partial rescue of RHO protein localization from cell bodies to inner/outer segments in patient organoids. The optimal dose (0.25 \u00b5M) achieved best outer segment localization and normalized RHO expression to control levels, while 0.5 \u00b5M caused excessive reduction. PR3 showed no toxicity and no significant effects on cone opsin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C30-C32, C63-C66 provide comprehensive evidence for PR3 efficacy from qRT-PCR, immunofluorescence, and toxicity assays. The dose-response relationship is well-characterized (C30, C64-C66), and the specificity for rod genes with sparing of cone genes (C32) is demonstrated. The partial rescue of localization (C18, C31) is appropriately described as partial rather than complete. The lack of toxicity (C63) supports therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C102",
+      "C103"
+    ],
+    "result": "Bulk RNA sequencing analysis demonstrated that PR3-treated patient organoids were transcriptomically more similar to control organoids than vehicle-treated patient organoids. PR3 treatment salvaged upregulated rod phototransduction pathway components and upregulated genes involved in cilium organization, axoneme assembly, and ER-to-Golgi transport, suggesting recovery of rod photoreceptor maturation. The specific activity of PR3 in retina was confirmed by pathway analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 provide strong transcriptomic evidence for PR3 rescue effects using principal component analysis and pathway enrichment. The KEGG analysis (C68) shows normalization of dysregulated pathways, and the upregulation of cilium/trafficking genes (C69) is mechanistically consistent with improved outer segment formation. The specificity for retinal pathways (C102) and lack of cone effects (C103) support targeted action. The conclusion (C70) is appropriately cautious, stating PR3 \"could potentially rescue\" rather than definitively does.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Patient organoids showed no difference in apoptosis compared to controls by TUNEL analysis, and no differences in ER stress-unfolded protein response (UPR) pathway activation were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 provide negative results that are important for understanding disease mechanism. The TUNEL data (C61) is quantified and shows no significant difference. However, the UPR data (C62) is noted as \"data not shown,\" which limits evaluation. These findings suggest the disease mechanism differs from other RHO mutations that cause ER stress, supporting the authors' interpretation (C74).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C33",
+      "C34",
+      "C35",
+      "C47",
+      "C74"
+    ],
+    "result": "The study supports the conclusion that RHO-CNV associated adRP develops due to protein overexpression that overloads the photoreceptor post-translational modification machinery, and that RHO expression requires precise control for rod photoreceptor function and maintenance. The disease mechanism differs from other adRP mutations including P23H.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C47 represent the main conclusions drawn from the experimental data. These are well-supported by the convergent evidence from organoid phenotypes (morphology, expression, localization, pathway analysis) and therapeutic rescue. The comparison to mouse models (C33-C34) provides supporting context. The distinction from P23H mutations (C74) is reasonable given the lack of ER stress and persistence of mislocalized protein. However, these are broad mechanistic inferences that would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "This is the first reported study characterizing RHO-CNV as a novel cause of adRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 asserts novelty of the finding. While a conference proceedings is cited (Duncan et al., 2019), this appears to be the first full characterization. The claim is reasonable given the comprehensive genetic, clinical, and functional characterization presented. However, novelty claims should be verified through literature searches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background claims establish that RP affects 1 in 3000-5000 individuals, RHO mutations account for 25% of adRP cases, P23H was the first identified RHO mutation, and >150 RHO mutations have been identified with diverse mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide standard background information supported by appropriate citations. These are well-established facts in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Discussion claims contextualize findings with prior work, including mouse models of RHO overexpression, RHO mislocalization in other RP models, and considerations for gene therapy approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C33-C34, C38-C41 appropriately cite prior work on RHO overexpression and mislocalization. Claims C42-C43 discuss RPE65 gene therapy complications, which is relevant context for gene augmentation risks. Claims C71-C73 discuss IFT122 and glycosylation, addressing potential confounders. These discussion points are appropriately supported by citations and provide important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C44",
+      "C45",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C105"
+    ],
+    "result": "Background claims on RHO glycosylation, NR2E3 function, PR3 mechanism, nuclear receptors as drug targets, and iPSC disease modeling establish the scientific rationale for the study approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C44-C45, C75-C82, C90, C93-C95, C105 provide established biological knowledge and prior work that justifies the experimental approaches. These are appropriately cited or represent standard knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The authors speculate that careful individualized dose management of PR3 will likely be required for treating other adRP RHO mutations to balance reduction of mutant protein while maintaining adequate wild-type RHO expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is explicitly speculative (\"will likely be required\") and represents a reasonable extrapolation from the dose-response data. However, this is forward-looking and would require validation in other mutation contexts. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  }
+]

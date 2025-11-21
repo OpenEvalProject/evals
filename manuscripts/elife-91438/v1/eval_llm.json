@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "RNA-seq analysis of mouse liver after GW4064 treatment identified 190 high-confidence eRNAs, with 14 upregulated and 5 downregulated. Fincor was identified as one of the most robustly induced eRNAs (>10-fold induction), with transient expression peaking at 1 hr. Adjacent genes remained unchanged, and 590 genes were upregulated while 500 were downregulated genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 are well-supported by RNA-seq data (Figure 1A-D, Figure 1\u2014figure supplement 1C, 2A) with appropriate statistical thresholds (FDR <0.05, log2FC >1) and validation by RT-qPCR. The identification of eRNAs is based on sound methodology combining H3K27ac ChIP-seq with RNA-seq, and controls for neighboring genes strengthen the specificity of Fincor induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C75"
+    ],
+    "result": "FXR directly activates Fincor transcription through binding to an IR1 motif in the enhancer region. GRO-seq demonstrated FXR-dependent transcriptional activation in Fxr-flox but not Fxr-LKO mice. ChIP assays confirmed GW4064-induced recruitment of FXR, RXR\u03b1, and BRD4 to the Fincor enhancer, and luciferase assays validated the functional importance of the IR1 motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 and C75 provide converging evidence from multiple orthogonal approaches (GRO-seq, ChIP-seq, ChIP assays, luciferase reporters) demonstrating direct FXR-mediated transcriptional activation. The use of Fxr-LKO mice as a genetic control (C16-C17) and mutation of the IR1 motif (C22) provide strong mechanistic evidence. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C73",
+      "C76"
+    ],
+    "result": "Fincor is characterized as a liver-enriched, nuclear-localized, polyadenylated eRNA. It is highly expressed in liver with minimal expression in other tissues, predominantly localized to hepatocytes. RACE identified a 3.7 kb transcript, though RNA-seq suggests additional isoforms >10 kb. PhyloCSF analysis and in vitro translation assays confirmed Fincor lacks protein-coding potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31, C73, and C76 are supported by comprehensive molecular characterization using multiple complementary techniques (tissue expression profiling, RACE, PhyloCSF, in vitro translation, poly(A) enrichment, subcellular fractionation). The discrepancy between RACE (3.7 kb) and RNA-seq (>10 kb) is acknowledged (C27), suggesting multiple isoforms, which is reasonable for lncRNAs. All characterization data are consistent with Fincor being a bona fide eRNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C74",
+      "C77"
+    ],
+    "result": "Fincor is specifically induced by hammerhead-type FXR agonists (GW4064, cilofexor, tropifexor) but not by other FXR agonists (OCA, fexaramine) or the natural ligand cholic acid, even after prolonged treatment (1 week OCA, 6 hr CA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C74, and C77 are well-supported by systematic qPCR analysis comparing multiple FXR agonists (Figure 4B-E). The specificity for hammerhead-type agonists is demonstrated through both acute (1 hr) and chronic (1 week) treatments with appropriate controls. This ligand selectivity is a key finding distinguishing Fincor from canonical FXR targets like Nr0b2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C78"
+    ],
+    "result": "CRISPR/Cas9-mediated liver-specific knockdown of Fincor (~60% reduction) did not alter metabolic parameters under physiological conditions but affected expression of 71 genes (18 up, 53 down). Downregulated genes were enriched in pathways related to fatty acid oxidation, organelle organization, and metabolic processes, while neighboring genes remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 and C78 are supported by appropriate genetic manipulation (CRISPR/Cas9 in Cas9 mice) with tissue-specific validation (Figure 5B) and comprehensive RNA-seq analysis (Figure 5D-F). The lack of metabolic phenotype under basal conditions (C37) is clearly stated and appropriately measured. The specificity of knockdown (neighboring genes unchanged, C39) strengthens confidence in the approach. However, the modest number of affected genes (71) and lack of basal phenotype suggest Fincor may be more important under stress conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C70"
+    ],
+    "result": "In AMLN diet-induced NASH mice, tropifexor treatment reduced hepatic steatosis (Oil Red O staining, liver TG levels) and altered expression of genes involved in BA and lipid synthesis. These effects on steatosis were independent of Fincor, as Fincor knockdown did not alter tropifexor's beneficial effects on lipid accumulation or related gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 and C70 are supported by comprehensive analysis in a well-established NASH model (AMLN diet) with appropriate measurements (histology, biochemistry, gene expression). The independence of steatosis reduction from Fincor (C43, C46, C70) is clearly demonstrated by comparing tropifexor effects in control vs. Fincor knockdown mice (Figure 6C-E). This dissociation of effects is an important finding distinguishing Fincor-dependent from Fincor-independent actions of tropifexor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C69",
+      "C71",
+      "C83"
+    ],
+    "result": "In AMLN diet-induced NASH mice, tropifexor reduced hepatocyte ballooning, apoptosis (TUNEL), fibrosis (Sirius Red), and macrophage infiltration (F4/80), along with decreasing serum ALT/AST and hepatic inflammatory markers (IL1\u03b2, CCL2). These beneficial effects on inflammation, fibrosis, and apoptosis were markedly diminished by Fincor knockdown, as evidenced by histology, serum markers, and gene expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53, C69, C71, and C83 are strongly supported by comprehensive histological analysis (Figure 7A), biochemical markers (Figure 7B-C), and gene expression profiling (Figure 7D) in the AMLN NASH model. The requirement for Fincor in mediating tropifexor's anti-inflammatory and anti-fibrotic effects is demonstrated through loss-of-function experiments with multiple orthogonal readouts. The consistency across multiple NASH pathology markers strengthens the conclusion. This is a central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C85"
+    ],
+    "result": "Fincor expression is elevated in multiple mouse models of liver disease, including high-fat diet (12 weeks), high-fat/high-fructose diet (12 weeks), ANIT-induced cholestasis (48 hr), and bile duct ligation (1-3 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C85 are supported by qPCR measurements across multiple disease models (Figure 8A-D). The consistency of Fincor elevation across different types of liver injury (metabolic and cholestatic) suggests a general response to hepatic stress. However, the mechanisms driving Fincor elevation in these pathological conditions remain unclear, as noted by the authors' discussion of altered BA composition and potential regulation by multiple nuclear receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C79"
+    ],
+    "result": "Fincor shows moderate sequence conservation between mice and humans. A human lncRNA (XR_007061585.1) with sequence similarity to mouse Fincor was identified and found to be elevated in liver samples from PBC and NAFLD patients compared to normal individuals, but not in severe NASH-fibrosis patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C61 and C79 present translational data, but several limitations warrant caution. While sequence conservation is shown (C58, Figure 8E) and a human lncRNA is identified (C59, Figure 8F), the functional equivalence between mouse Fincor and human XR_007061585.1 is not established. The human expression data (C60-C61, Figure 8G-H) show elevation in PBC/NAFLD but not severe NASH-fibrosis, which is difficult to interpret without mechanistic understanding. Sample sizes and patient characteristics are not fully described. The authors appropriately note uncertainty about whether this represents a functional analog.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C81",
+      "C82",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C99",
+      "C100"
+    ],
+    "result": "Background and context claims establishing FXR biology, lncRNA/eRNA biology, NAFLD/NASH disease context, and prior work on FXR agonists including tropifexor's clinical development and distinct gene regulatory profile compared to other FXR agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8, C64-C68, C81-C82, C88-C92, C99-C100 provide background context supported by appropriate citations to prior literature. These establish the scientific rationale for the study. The claims about tropifexor's broader gene signature (C81-C82) are particularly relevant as they provide context for why Fincor might be specifically induced by hammerhead-type agonists. All background claims are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C72",
+      "C80",
+      "C93",
+      "C101",
+      "C102"
+    ],
+    "result": "Summary and concluding claims stating that pharmacological FXR activation by hammerhead-type agonists induces Fincor, which contributes to amelioration of NASH in mice, and that Fincor may represent a new drug target for metabolic disorders. The study demonstrates FXR mediates functions through lncRNA regulation and characterizes Fincor's role in tropifexor's therapeutic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C72, C80, C93, and C101 are well-supported summary statements accurately reflecting the experimental findings. However, claims C63 and C102 about Fincor as a 'new drug target' are speculative (appropriately qualified with 'may') and would require additional validation including gain-of-function studies, detailed mechanism of action, and assessment of therapeutic potential. The core conclusions about Fincor's role in mediating tropifexor's anti-inflammatory and anti-fibrotic effects are strongly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Discussion and mechanistic speculation about Fincor regulation and function, including: potential lack of contribution to physiological FXR functions (based on lack of CA induction), combinatorial regulation by multiple nuclear receptors (FXR, LXR, PPAR\u03b1, RXR\u03b1, HNF-4\u03b1), potential RNA-binding protein partners (KHDRBS1, RBM38, YBX2, YBX3), and limitations of the CRISPR approach used (deletion of FXR binding site).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84, C86-C87, C94-C98 represent speculative mechanistic discussion and acknowledged limitations. C84 is an inference from negative data (lack of CA induction) but doesn't rule out physiological roles under other conditions. C86-C87 are based on ChIP-seq data mining (Supplementary files) but lack experimental validation. C94-C96 identify potential binding partners through bioinformatic prediction but without experimental confirmation. C98 appropriately acknowledges a key limitation: the CRISPR approach cannot distinguish between effects of the transcript vs. transcription vs. TF binding. These are reasonable speculations but require future experimental validation.",
+    "result_type": "MINOR"
+  }
+]

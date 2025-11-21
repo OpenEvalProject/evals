@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C111"
+    ],
+    "result": "H1N1 infection induces ectopic tuft cell formation in the distal lung starting around 12-14 days post-infection. These ectopic tuft cells express taste signaling proteins including Dclk1, G\u03b1-gustducin, and Plc\u03b22, with approximately 78%, 60%, and 12% of ChAT-expressing cells co-expressing these markers, respectively. Chemical injury models (bleomycin, LPS, house dust mite) also induce ectopic tuft cells but to a lesser extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 and C111 are well-supported by immunostaining data (Figure 1), bodyweight tracking, histological analysis, and qRT-PCR showing upregulation of specific Tas2rs. The timing of tuft cell appearance is consistent with prior literature and confirmed by experimental observations at 14 dpi. The quantification of co-expression percentages is directly supported by imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Ectopic tuft cells express functional bitter taste receptors (Tas2rs) and downstream signaling machinery. Specific Tas2rs (Tas2r105, 108, 118, 137, 138) are upregulated at 25 dpi, while Tas2r135 and Tas2r143 are downregulated. Subsets of tuft cells respond to bitter compounds (denatonium benzoate and quinine) with calcium increases, and these responses are completely inhibited by AITC, gallein, or U73122.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by qRT-PCR data (Figure 2A) and calcium imaging experiments (Figure 2B-K). The functional validation through pharmacological inhibition provides strong evidence that the Tas2r signaling pathway is operational in these cells. The consistency with single-cell RNAseq data strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C112",
+      "C113"
+    ],
+    "result": "Conditional knockout of G\u03b313 in ChAT-expressing cells reduces ectopic tuft cell numbers in H1N1-infected lungs, but this effect is time-dependent. At 14 dpi, tuft cell densities are similar between WT and Gng13-cKO (~6 vs ~4 cells/mm\u00b2), but at 20, 25, and 50 dpi, WT shows significantly higher densities (120, 175, 102 cells/mm\u00b2) compared to Gng13-cKO (17, 57, 56 cells/mm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C53-C55, C112-C113 are well-supported by quantitative immunostaining data (Figure 3F-M). The temporal pattern clearly demonstrates that G\u03b313 is not required for initial tuft cell generation but is critical for subsequent expansion. Statistical significance is shown at multiple time points with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C8",
+      "C9",
+      "C11",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Gng13-cKO mice exhibit significantly worse outcomes following H1N1 infection compared to WT and Trpm5-/- mice. This includes greater bodyweight loss (30% vs 20% maximum), delayed peak loss (10 dpi vs 9 dpi), increased mortality (37.5% vs near 0%), larger lung injury areas, and higher wet-to-dry lung mass ratios at 25 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C8-C9, C11, C46-C52 are strongly supported by multiple complementary measurements including bodyweight tracking (Figure 3A), survival curves (Figure 3B), lung imaging and quantification (Figure 3C-D), and wet-to-dry weight ratios (Figure 3E). The consistency across multiple outcome measures and the inclusion of Trpm5-/- controls strengthen the conclusions. Sample sizes appear adequate (n=6 for bodyweight, n=44, 17, 14 for survival).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62"
+    ],
+    "result": "Gng13-cKO mice show increased macrophage infiltration in injured lung areas at both 20 and 25 dpi compared to WT, though both genotypes show a trend toward inflammation resolution with reduced immune cell numbers from 20 to 25 dpi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C62 are supported by CD64 immunostaining and quantification (Figure 4A-B). The data show significantly higher CD64+ cell densities in Gng13-cKO at both time points while demonstrating temporal reduction in both genotypes, indicating delayed but not absent resolution in the mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Gng13-cKO mice exhibit augmented pyroptosis and cell death following H1N1 infection. This is evidenced by increased expression of pyroptosis pathway genes (Gsdmd, Gsdme, Tlr4, Nlrp3, Asc, Casp1, Il1b) and proteins at 25 dpi, higher densities of Gsdmd+ (180 vs 88 cells/mm\u00b2) and Gsdme+ cells (77 vs 50 cells/mm\u00b2), increased IL-1\u03b2+ (153 vs 63 cells/mm\u00b2) and caspase-3+ cells (267 vs 66 cells/mm\u00b2), and more Sytox+ dying cells (96 vs 62 cells/mm\u00b2 at 25 dpi). The majority of pyroptotic cells are F4/80+ macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63-C76 are comprehensively supported by multiple complementary approaches: qRT-PCR (Figure 4C), Western blot (Figure 4D-E), immunostaining with multiple markers (Figures 5-6), and Sytox staining for dying cells (Figure 6). The cell type identification through co-staining with F4/80 and EpCAM provides important mechanistic insight. The consistency across mRNA, protein, and functional (cell death) measurements strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Gng13-cKO mice exhibit severer pulmonary epithelial leakage following H1N1 infection. BALF analysis shows significantly higher cell numbers, protein content, LDH activity, and IL-1\u03b2 levels in Gng13-cKO compared to WT at both 20 and 25 dpi. While WT shows significant improvement from 20 to 25 dpi in most parameters, Gng13-cKO shows slower recovery, with IL-1\u03b2 levels remaining elevated (82.12 pg/ml at 25 dpi vs 75.57 at 20 dpi).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C77-C92 are well-supported by comprehensive BALF analysis (Figure 7). Multiple independent measures of epithelial barrier integrity (cell count, protein content, LDH activity, IL-1\u03b2) all show consistent patterns of increased leakage in Gng13-cKO and delayed recovery. The baseline measurements at 0 dpi provide appropriate controls. The differential temporal dynamics between genotypes (significant WT improvement vs. persistent Gng13-cKO elevation) are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Gng13-cKO mice exhibit worsened fibrosis following H1N1 infection. Expression of fibrotic genes (Col1a1, Fn1, Timp1) is significantly higher in Gng13-cKO at 25 dpi compared to WT. Masson's trichrome staining shows greater fibrosis in Gng13-cKO (26.3%) compared to WT (12.3%) at 25 dpi. At 50 dpi, while both genotypes show reduced fibrosis, Gng13-cKO (15%) remains higher than WT (7.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C93-C103 are supported by both qRT-PCR (Figure 8A) and histological analysis with Masson's trichrome staining (Figure 8B-C). The temporal progression from 0 to 25 to 50 dpi is well-documented, showing both the development and partial resolution of fibrosis. The consistency between gene expression and histological quantification strengthens the findings. However, the claim that fibrosis at 50 dpi \"seemed to be more\" in Gng13-cKO (C103) suggests statistical uncertainty that should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C104",
+      "C105",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The authors conclude that the G\u03b313-mediated signal transduction pathway is critical for tuft cell-mediated inflammation resolution and functional repair, and that different tuft cell subtypes (G\u03b313-positive vs. negative) play opposite but balanced roles. G\u03b313-expressing tuft cells promote inflammation resolution and recovery, while G\u03b313-negative tuft cells may contribute to extended inflammation. The absence of G\u03b313-positive tuft cells leads to hyperinflammation and worse outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C104-C105, C145-C147 represent the major conclusions of the study. These are well-supported by the comprehensive phenotypic characterization showing worse outcomes in Gng13-cKO mice across multiple parameters (inflammation, pyroptosis, epithelial leakage, fibrosis, survival). The inference about opposing roles of tuft cell subtypes is reasonable given: (1) Pou2f3 knockout (eliminating all tuft cells) shows no effect on H1N1 outcomes (C134), while (2) Gng13-cKO (eliminating only G\u03b313+ tuft cells, ~28.6% of total) shows severe worsening. This suggests the remaining G\u03b313-negative tuft cells may be detrimental. However, the mechanism remains somewhat speculative (C147 includes \"perhaps\"), and direct functional evidence for pro-inflammatory activity of G\u03b313-negative tuft cells is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C56",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Trpm5 is not required for ectopic pulmonary tuft cell proliferation or H1N1 disease outcomes. Trpm5-/- mice show similar bodyweight loss/recovery curves and mortality to WT, and tuft cell densities are nearly identical between Trpm5-/- and WT at both 14 and 25 dpi. This contrasts with intestinal tuft cells, which require Trpm5 for proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C56, C121-C123 are supported by experimental data (Figure 3A-B, Figure 3\u2014supplement 2A-E) and citations to prior work. The inclusion of Trpm5-/- as a control is important for demonstrating that the Gng13-cKO phenotype is not simply due to disruption of the canonical taste signaling pathway. The tissue-specific differences in Trpm5 requirement are well-documented in the literature and confirmed here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Approximately 28.6% of Dclk1+ ectopic tuft cells in WT lungs express G\u03b313 at 25 dpi, while none remain G\u03b313+ in Gng13-cKO sections, confirming effective conditional knockout. Single-cell RNAseq reanalysis shows ~57% of Trpm5-GFP+ tuft cells are G\u03b313+, some of which co-express Alox5, a key enzyme for pro-resolving mediator biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by double immunostaining (Figure 3\u2014supplement 2G-H) and reanalysis of published scRNAseq data (Figure 3\u2014supplement 2I-J). The confirmation of knockout efficiency is important for interpreting the phenotype. The identification of Alox5 co-expression in G\u03b313+ tuft cells provides mechanistic insight into potential anti-inflammatory functions. The discrepancy between ~28.6% G\u03b313+ by immunostaining and ~57% by scRNAseq may reflect technical differences or population heterogeneity but doesn't undermine the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C145"
+    ],
+    "result": "The authors claim this is the first report indicating subtype-specific contributions of tuft cells to inflammation resolution and recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13 and C145 assert novelty based on the authors' knowledge of the literature. While the specific finding about G\u03b313+ vs. G\u03b313- tuft cell subtypes appears novel, the claim of being \"the first\" to show subtype-specific tuft cell functions is difficult to verify without comprehensive literature review. The heterogeneity of tuft cells has been previously documented (C27), and some functional differences between subtypes have been reported. The novelty may lie more in the specific context of inflammation resolution rather than subtype-specific functions per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors infer that different molecular mechanisms control initial generation versus subsequent expansion of ectopic tuft cells: initial generation does not require G\u03b313-mediated signaling, while expansion requires positive feedback signals from G\u03b313-mediated pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 represent mechanistic inferences based on the temporal pattern of tuft cell numbers (C53-C55, C112-C113). The logic is sound: similar numbers at 14 dpi but divergence at later time points suggests G\u03b313 affects proliferation/survival rather than initial specification. However, alternative explanations (e.g., delayed effects on generation, differential cell death) are not fully excluded. The inference is reasonable but would benefit from additional experiments (e.g., proliferation markers, lineage tracing).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors infer that Trpm5-dependent output signals are not involved in ectopic tuft cell proliferation, while G\u03b2\u03b313-activated effectors are involved. The differential impact is attributed to G\u03b313 being upstream of Trpm5, thus regulating more signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C133 represent mechanistic speculation based on the differential phenotypes of Trpm5-/- and Gng13-cKO mice. While the inference that G\u03b313 acts upstream of Trpm5 is consistent with known signaling cascades, the claim that this explains the differential effects is speculative (C133 uses \"probably attributed to\"). Alternative explanations include G\u03b313 acting through Trpm5-independent pathways or having functions unrelated to the canonical taste signaling cascade. Direct evidence for the proposed mechanism is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors discuss that Pou2f3 knockout (eliminating all tuft cells) does not affect H1N1 outcomes, contrasting with the severe Gng13-cKO phenotype. They speculate this discrepancy results from imbalanced tuft cell functions in Gng13-cKO, where remaining G\u03b313-negative tuft cells may be unable to contribute to resolution or may even stimulate inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C138 involve important comparisons with prior work and mechanistic speculation. The Pou2f3 knockout data (C134) is from cited literature, not this study. The inference about functional imbalance (C135, C137-C138) is logical but speculative. The timing argument (C136) is reasonable but doesn't directly address why G\u03b313-negative tuft cells might be harmful. Direct evidence for pro-inflammatory activity of G\u03b313-negative tuft cells is lacking. This represents an important hypothesis but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors propose that tuft cells can produce both pro-inflammatory mediators (IL-25, prostaglandins, leukotrienes) and anti-inflammatory specialized pro-resolving mediators (SPMs) through enzymes like Alox5, Alox15, Ptgs2, and cytochrome P450s. They hypothesize that Gng13 knockout disrupts the switch from pro-inflammatory to anti-inflammatory mediator production, with remaining tuft cells continuing to produce pro-inflammatory mediators while SPM-producing cells are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C144 integrate literature on tuft cell functions with the current findings. The expression of SPM-producing enzymes in tuft cells is supported by cited scRNAseq data (C140). However, the hypothesis about disrupted switching (C143) and differential functions of remaining cells (C144) is speculative. Direct measurement of pro-inflammatory vs. anti-inflammatory mediators in WT vs. Gng13-cKO tuft cells is not provided. The hypothesis is plausible and well-reasoned but requires experimental validation through lipid mediator profiling or similar approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Background information on tuft cells, respiratory system, taste signaling pathways, and related molecular mechanisms based on established knowledge and prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C29, C32, C106-C109, C117-C130 represent background information supported by citations to prior research and established scientific knowledge. These provide context for the current study but are not novel findings. The information appears accurate based on the citations provided, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  }
+]

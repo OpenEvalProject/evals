@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C45",
+      "C46",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C148",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "The authors propose an EMD-based neuron tracking method that identifies neurons across days using spatial location and waveform similarity rather than firing statistics. The method uses a two-stage EMD approach: first estimating rigid drift, then matching units based on a combined distance metric of physical location and waveform similarity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the method is 'generally sound and properly tested' and describe it as 'important' for tracking neurons across days. The editor states 'the methods and the strength of the evidence are convincing,' indicating acceptance of the core methodological approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C61",
+      "C62",
+      "C75",
+      "C107",
+      "C108",
+      "C109",
+      "C165",
+      "C209"
+    ],
+    "result": "The method was validated using visual receptive field similarity as ground truth for reference units, requiring units to be spatially nearby (within 30 \u03bcm) and have similar visual responses. Drift correction improved reference unit recovery.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the validation approach, with one noting 'they used the visual receptive fields of neurons in the mouse visual cortex (which tend to change little over time) as ground truth.' The validation strategy is not questioned, though reviewers note limitations about generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The method achieves high performance metrics: 84% average recovery rate across 1-47 days, 90% recovery for recordings up to 1 week apart, 78% for 5-7 weeks apart, with 99% accuracy up to 1 week and 95% accuracy at 5-7 weeks when applying a 10 \u03bcm threshold.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the performance, stating 'Their approach performs quite well, with a high proportion of neurons accurately matched across multiple weeks.' The editor notes 'the strength of the evidence are convincing,' indicating acceptance of the reported performance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C106",
+      "C110"
+    ],
+    "result": "The method estimates rigid drift by assuming homogeneous vertical movement along the probe insertion direction, which is justified by the small (~720 \u03bcm) recording range. The EMD can detect the direction and amount of imposed drift, as demonstrated with a 12 \u03bcm artificial drift.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer expresses confusion about 'the point of the imposed drift and how the value of 12\u00b5m is chosen,' requesting clarification on this demonstration. While the approach is not rejected, the reviewer indicates the explanation needs improvement for reader comprehension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C127",
+      "C128",
+      "C129",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Reference units represent only 29% of KSgood units and have a different z-distance distribution than all KSgood units. The authors developed a distribution fitting procedure to estimate false positive rates and select appropriate z-distance thresholds (10 \u03bcm) for the broader population.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this analytical approach. The method for handling the limited reference population and extrapolating to all units is accepted as part of the 'generally sound and properly tested' methodology, though generalizability concerns are raised separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C142",
+      "C143",
+      "C146",
+      "C147"
+    ],
+    "result": "Long-term tracking across all datasets identified 133 reference chains, 135 mixed chains, and 84 putative chains, with 46 reference, 51 mixed, and 9 putative units tracked across all recording sessions. Loss rates were similar across chain types within subjects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these tracking results. The demonstration of long-term tracking capability is implicitly accepted as part of the overall positive assessment that the method 'performs quite well' across multiple weeks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C179",
+      "C180",
+      "C236",
+      "C240"
+    ],
+    "result": "The method was developed and tested on visual cortex recordings from three mice over 2 months (1-47 days between sessions) using Kilosort 2.5 for spike sorting, with 65 recordings analyzed from 17 sessions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concern about generalizability, noting 'the study only looks at one brain area (visual cortex), in one species (mouse), using one type of spike sorter (Kilosort), and one type of behavioral prep (head-fixed).' The editor emphasizes 'the authors do not address whether their approach can be generalized to other brain areas, species, behaviors, or tools.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "The authors acknowledge that applying the algorithm to other brain areas and sorters may require parameter adjustment. They provide procedures for cases without reference data, though fitting without reference data slightly underestimates distribution width and increases estimated false positive rates, yielding conservative accuracy estimates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers note 'the authors suggest methods to generalize their technique to other experimental conditions' but emphasize 'no validation of those generalizations was done using data from different experimental conditions.' This represents a significant limitation in demonstrating broader applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "The reference unit definition has limitations: similarity scores are driven more by PSTH timing than response selectivity, single neurons can be highly correlated with 20+ other neurons, and coincidentally similar visual responses could contribute to inaccurate assignments. However, high overall accuracy suggests low impact of these potential errors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this self-critical assessment. The authors' acknowledgment of validation limitations and their reasoning about minimal impact given high accuracy is implicitly accepted as part of the thorough methodological discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C77",
+      "C207"
+    ],
+    "result": "The EMD uses a weighted combination of physical distance and waveform distance (L2 norm over 22 channels and 2.7 ms), with the weighting parameter affecting performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "A reviewer questions the weighting scheme, asking 'How performance is affected from using a different weighting of the 2 measures (for instance, using only cell distance and no waveform similarity)?' In revision, they note the w value of 1500 suggests 'only the waveform distance matter and that the location distance doesn't contribute much,' requesting confirmation of this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C134",
+      "C154",
+      "C158"
+    ],
+    "result": "The method can track units without visual responses (552 total tracked neurons with partial or no receptive field information, averaging 12 per dataset pair). Trackable units with strong visual responses are qualitatively similar to those without.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept this capability as part of the method's strength, noting it enables tracking 'without relying on matching neural receptive fields (which can change due to learning, aging, and disease).' This independence from functional responses is highlighted as 'very important.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "The method is simple and robust, requiring spike sorting only once per session using standard Kilosort. The authors acknowledge that spike sorting variability (60-70% unit repeatability) affects matching accuracy and recommend strategies like consensus across sorters and more frequent recordings to improve reliability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these practical considerations. The simplicity of requiring single-pass sorting is implicitly valued, and the discussion of limitations and recommendations for improvement is accepted as appropriate methodological transparency.",
+    "result_type": "MINOR"
+  }
+]

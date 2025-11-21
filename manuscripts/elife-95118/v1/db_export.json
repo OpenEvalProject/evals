@@ -1,0 +1,1644 @@
+{
+  "submission": {
+    "id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:58:48.175354Z",
+    "updated_at": "2025-11-20T22:58:48.175354Z"
+  },
+  "content": [
+    {
+      "id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "content_type": "manuscript",
+      "content_text": "# Human pannexin 1 channel is not phosphorylated by Src tyrosine kinase at Tyr199 and Tyr309\n\n## Authors\n\n- Zheng Ruan<sup>1</sup> ([ORCID: 0000-0002-4412-4916](https://orcid.org/0000-0002-4412-4916))\n- Junuk Lee<sup>1</sup> ([ORCID: 0000-0002-3596-2651](https://orcid.org/0000-0002-3596-2651))\n- Yangyang Li<sup>1</sup>\n- Juan Du<sup>1</sup> ([ORCID: 0000-0003-1467-1203](https://orcid.org/0000-0003-1467-1203)) \u2020\n- Wei L\u00fc<sup>1</sup> ([ORCID: 0000-0002-3009-1025](https://orcid.org/0000-0002-3009-1025)) \u2020\n\n### Affiliations\n\n1. Department of Structural Biology, Van Andel Institute Grand Rapids United States ([ROR:00wm07d60](https://ror.org/00wm07d60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtein phosphorylation is one of the major molecular mechanisms regulating protein activity and function throughout the cell. Pannexin 1 (PANX1) is a large-pore channel permeable to ATP and other cellular metabolites. Its tyrosine phosphorylation and subsequent activation have been found to play critical roles in diverse cellular conditions, including neuronal cell death, acute inflammation, and smooth muscle contraction. Specifically, the non-receptor kinase Src has been reported to phosphorylate Tyr198 and Tyr308 of mouse PANX1 (equivalent to Tyr199 and Tyr309 of human PANX1), resulting in channel opening and ATP release. Although the Src-dependent PANX1 activation mechanism has been widely discussed in the literature, independent validation of the tyrosine phosphorylation of PANX1 has been lacking. Here, we show that commercially available antibodies against the two phosphorylation sites mentioned above\u2014which were used to identify endogenous PANX1 phosphorylation at these two sites\u2014are nonspecific and should not be used to interpret results related to PANX1 phosphorylation. We further provide evidence that neither tyrosine residue is a major phosphorylation site for Src kinase in heterologous expression systems. We call on the field to re-examine the existing paradigm of tyrosine phosphorylation-dependent activation of the PANX1 channel.\n\n## Introduction\n\nPANX1 is a large-pore channel widely associated with many physiological and pathological processes, including immune response, inflammation, and vasoconstriction (Adamson and Leitinger, 2014; Makarenkova and Shestopalov, 2014; Good et al., 2015). The activation of PANX1 allows the release of ATP and other cellular metabolites to the extracellular space, serving as signaling molecules for neighboring cells (Chekeni et al., 2010; Medina et al., 2020). While the functional relevance of PANX1 in human physiology and diseases has been investigated for nearly two decades since the PANX family was cloned (Baranova et al., 2004; Sandilos and Bayliss, 2012; Scemes and Vel\u00ed\u0161kov\u00e1, 2019), the detailed structural and biophysical properties of the channel were only beginning to be elucidated. In 2020, we and others determined structures of PANX1 by single-particle cryo-electron microscopy (cryo-EM), revealing the channel stoichiometry, domain architecture, ion permeation pathways, and inhibition mechanisms (Michalski et al., 2020; Deng et al., 2020; Qu et al., 2020; Jin et al., 2020; Mou et al., 2020; Ruan et al., 2020). These structures have in turn motivated small-molecule docking analysis and the development of the first PANX1-selective channel blockers (Crocetti et al., 2021). Despite the remarkable progress made in the PANX1 field, the dynamic regulation of the channel opening and closing in various cellular contexts is not well understood. Which cellular stimuli PANX1 responds to and how they achieve channel activation, especially in a reversible manner, are unclear and largely under debate (Chiu et al., 2018; Mim et al., 2021). Deciphering the regulatory principle of the PANX1 is not only important to better characterize the function of the channel, but may also provide clues to the development of pharmaceutical agents to treat PANX1-associated diseases.\n\nPost-translational modifications, such as protease cleavage, glycosylation, phosphorylation, and S-nitrosylation, have been shown to play important roles in PANX1 regulation (Boyce et al., 2018). For example, caspase-dependent cleavage of the regulatory C-terminal tail of PANX1 is critically implicated for apoptotic cell clearance by the immune system (Chekeni et al., 2010; Medina et al., 2020). The glycosylation at the second extracellular loop of PANX1 sterically prevents the docking of two PANX1 heptamers into a gap-junction-like assembly (Sosinsky et al., 2011; Dahl and Locovei, 2006; Huang et al., 2007). Our recent cryo-EM study on PANX1 directly visualized both mechanisms and corroborates with prior studies (Ruan et al., 2020). While the caspase-dependent cleavage irreversibly activates PANX1, studies from several groups have converged on the concept that protein phosphorylation may be a novel mechanism to reversibly regulate PANX1 channel activity. In particular, the non-receptor tyrosine kinase Src seems to be a critical component during this process. For example, prolonged activation of P2X7 receptor leads to activation of PANX1 in many cell lines, opening of a large pore (Locovei et al., 2007; Pelegrin and Surprenant, 2006). Through the use of a mimetic peptide and kinase inhibitors, Src was later found to be involved in mediating the initial steps of this signal transduction, but it does not directly phosphorylate PANX1 per se (Iglesias et al., 2008). In a more recent study, PANX1 was proposed to make functional crosstalk with \u03b17 nicotinic acetylcholine receptor (\u03b17 nAChR) in neuroblastoma cell line (Maldifassi et al., 2021). Src kinase is also involved in this process; however, it is unclear if PANX1 is a direct substrate of Src (Maldifassi et al., 2021). In addition to tyrosine phosphorylation, murine PANX1 has been reported to undergo serine phosphorylation at Ser205 and Ser206, although two studies have shown contradictory effects of the two serine phosphorylation sites on PANX1 channel activity (Poornima et al., 2015; Medina et al., 2021). Likewise, the S394 of rat PANX1 could be phosphorylated by CaMKII upon an increase in cytoplasmic Ca2+ concentration (L\u00f3pez et al., 2021). However, this residue is not conserved in human PANX1 (hPANX1). More recently, T302 and S328 were reported to be phosphorylated by protein kinase A, which affects the mechanically induced chloride conductance of PANX1 through the lateral tunnels (L\u00f3pez et al., 2020).\n\nDirect evidence of PANX1 phosphorylation by Src was provided by two groups using western blot analysis, with Tyr198 and Tyr308 of mouse/rat PANX1 (equivalent to Tyr199 and Tyr309 of hPANX1) being the target residues. Interestingly, the underlying signaling events of PANX1 phosphorylation are non-canonical. For example, the phosphorylation of Tyr308 by Src kinase depends on ligand binding to the metabotropic NMDA receptor (NMDAR) in CA1 pyramidal neurons, but does not require its pore opening and Ca2+ conductance (Weilinger et al., 2012; Weilinger et al., 2016). As a result, it was suggested that NMDARs, Src kinase, and PANX1 could form a signaling complex, in which the NMDAR is the ligand-sensing module whereas the PANX1 is the pore-forming unit. Phosphorylation at Tyr308 is a key step for PANX1 activation in the NMDAR/Src/PANX1 signalosomes that eventually leads to the neuronal cell death during ischemia or stroke. Likewise, the phosphorylation of Tyr198 of mouse PANX1 (mPANX1) was found to be relevant in several different cellular contexts. For example, Lohman et al., 2015 showed that in vascular endothelial cells, Tyr198 phosphorylation\u2014which depends on type-1 TNF receptor (TNFR1) and Src kinase\u2014opens PANX1 channel, leading to ATP release and promoting leukocyte adhesion and emigration. Moreover, Tyr198 phosphorylation is linked to vasoconstriction and blood pressure regulation. Specifically, DeLalio et al., 2019 found that Tyr198 is constitutively phosphorylated by Src in vascular smooth muscle cells, possibly through an \u03b11-adrenergic receptor (\u03b11-AR)-based vasoconstriction mechanism. In a more recent study, Nouri-Nejad et al. identified Tyr150 of PANX1 as another phosphorylation site, presumably by Src, through electrospray ionization mass spectrometry, but only to a small degree (in 2 out of 11 LC-MS/MS spectra) (Nouri-Nejad et al., 2021). The functional consequence of Tyr150 phosphorylation to PANX1 is unclear, as phosphor-ablating mutant Y150F does not alter the properties of PANX1 current (Nouri-Nejad et al., 2021).\n\nThe initial aim of our study was to investigate how tyrosine phosphorylation regulates the channel activity of PANX1 through structural approaches. To this end, we first examined whether we could detect PANX1 phosphorylation using two commercially available antibodies claimed to be specific for phosphorylated PANX1 at the Y198 and Y308 sites, respectively. Surprisingly, neither antibody recognized PANX1 co-expressed with a constitutively active Src variant. This result raised concerns about the validity of the conclusion that Tyr198 and Tyr308 of PANX1 are phosphorylated, as identification of both sites relied on these antibodies. We further provided evidence that PANX1 is not phosphorylated at Tyr198 and Tyr308 by Src kinase, at least in heterologous expression systems. Therefore, the paradigm of tyrosine phosphorylation-dependent activation of PANX1 channel by Src kinase needs to be reconsidered.\n\n## Results\n\n### Structural location and conservation of putative tyrosine phosphorylation sites in PANX1\n\nStudies reporting the Src-mediated phosphorylation of Tyr198 and Tyr308 in murine PANX1 occurred prior to the availability of PANX1 structures (Michalski et al., 2020; Deng et al., 2020; Qu et al., 2020; Jin et al., 2020; Mou et al., 2020; Ruan et al., 2020; Weilinger et al., 2016; DeLalio et al., 2019). We first mapped the corresponding residues, Tyr199 and Tyr309, into the apo state structure of hPANX1 (Figure 1A). Interestingly, both residues are located in positions close to the side tunnel of PANX1, an anion-selective permeation pathway responsible for the PANX1 basal current (Ruan et al., 2020). Tyr199 is part of the intersubunit interface of PANX1 and is partially buried, which may make it less accessible to Src kinase. Tyr309, on the other hand, is completely buried inside the protein. Therefore, phosphorylation of Tyr199 and Tyr309, if occurs, would require at least conformational changes or partial unfolding of the intracellular domain. Such structural alternations are unlikely to occur spontaneously without specific cellular conditions that favor this process. Accordingly, phosphorylation of either of these two residues is expected to cause major conformational changes of the intracellular domain due to the negative charges and the bulky size of the introduced phosphate group(s).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig1-v1.jpg)\n\n**Figure 1.:** (A) The Tyr199 and Tyr309 of human PANX1 (hPANX1) are located close to the side tunnel. Two adjacent subunits are shown in semi-transparent surface representation. The Tyr199 and Tyr309 are shown in stick representation. The green spheres indicate the pathway of the side tunnel. (B) Sequence alignment of PANX1 orthologs, human PANX2, and PANX3. Tyr199 and Tyr309 are highlighted using a red circle. Secondary structural features are shown on the top.\n\nWe next compared the sequences of PANX1 across different species (Figure 1B). Both Tyr199 and Tyr309, as well as several residues nearby, are conserved among different PANX1 orthologs (Figure 1B), suggesting that phosphotyrosine antibodies developed against one species are likely to cross-react with the others. Tyr199 is also conserved in PANX2 and PANX3, the other two members of the pannexin family. In contrast, Tyr309 is only conserved in PANX1 and PANX3, while PANX2 has a phenylalanine at this position and lacks a few residues preceding this residue (Figure 1B). Given the critical location of the two tyrosine residues, we decided to experimentally characterize their phosphorylation status in the presence of Src kinase.\n\n### Commercial antibodies, anti-PANX1-pY198 and anti-PANX1-pY308, do not recognize phosphorylated human PANX1 in HEK293T cells\n\nTo investigate the phosphorylation of hPANX1 by Src, we used two commercially available phosphor-specific antibodies that were used in previous studies to identify Tyr198 and Tyr308 as phosphorylation sites of murine PANX1 (Weilinger et al., 2016; Lohman et al., 2015; DeLalio et al., 2019) and were later reported to react with hPANX1 (Metz and Elvers, 2022). In addition to wild-type hPANX1, we tested phosphor-ablating mutants Y199F and Y309F (equivalent to mPANX1 Y198F and Y308F) as negative controls, which are expected to abrogate the antibody binding even in the presence of active Src kinase. As in the prior studies (Weilinger et al., 2016; DeLalio et al., 2019), we used mouse Src (mSrc), which has 99.4% pairwise sequence similarity to human Src. To increase the chance of detecting phosphorylated PANX1 and to introduce a negative control for mSrc, we generated two mSrc mutants, Y529F and K297M, which enhances and abolishes the kinase activity, respectively (Figure 2A). For the ease of fluorescence imaging, our hPANX1 and mSrc genes are tagged with GFP and mCherry tags, respectively (See Materials and Methods for detailed construct information), which allowed us to compare the in-gel fluorescence with the western blot signals.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig2-v1.jpg)\n\n**Figure 2.:** (A) A schematic figure showing different mSrc mutants used in the study. Mouse Src wild-type (WT) undergoes a dynamic equilibrium between the inactive and active states that depends on the phosphorylation status of Tyr529. The Y529F mutation renders Src constitutively active due to the disruption of the autoinhibitory interaction between the SH2 domain and the C-terminal tail (Nada et al., 1991). The K297M is catalytically incompetent as the mutation abolishes the ATP-binding capability of mSrc (Roskoski, 2015). (B) Human PANX1 (WT, Y199F, or Y309F) are co-expressed with mSrc (WT or Y529F) in HEK293T cells. The cell lysates are analyzed by SDS-PAGE gel and blotted with anti-PANX1-pY198 (top) and anti-PANX1-pY308 (middle) antibodies. The in-gel fluorescence of GFP and mCherry signal are shown at the bottom. The positions of the signals detected by anti-PANX1-pY198 and anti-PANX1-pY308 antibodies do not match the position of the GFP fluorescence signal, indicating that the two antibodies are not specific for PANX1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Human PANX1 w- or w/o C-terminal GFP tag were co-expressed with mSrc-Y529F in HEK293T cells. The cell lysates were analyzed by SDS gel and blotted with anti-PANX1-pY198, anti-PANX1-pY308, anti-PANX1, and anti-Src antibodies. The in-gel fluorescence of GFP and mCherry signal were shown at the bottom. The positions of the signals detected by anti-PANX1-pY198 and anti-PANX1-pY308 antibodies did not match the position of the anti-PANX1 western blot signal and GFP fluorescence signal.\n\nFrom the non-transfected HEK293T cells, neither anti-PANX1-pY198 nor anti-PANX1-pY308 produced any signal, suggesting that the antibodies do not recognize endogenous proteins when hPANX1 and mSrc are absent (Figure 2B, lane 1). Similarly, from cells transfected with hPANX1 alone, including WT, Y199F, and Y309F, neither antibody produced any signal, despite the presence of clear GFP signals in the fluorescent gel indicating PANX1 expression (Figure 2B, lane 4\u20136). This is consistent with the notion that both antibodies do not recognize non-phosphorylated PANX1.\n\nUnexpectedly, from another control sample of cells transfected with WT mSrc alone, anti-PANX1-pY198 yielded two prominent bands close to 75 kDa; anti-PANX1-pY308 also produced a band corresponding to the lower band of anti-PANX1-pY198, albeit much weaker (Figure 2B, lane 2). While the lower band corresponded to the fluorescent signal of mSrc (Figure 2B, lane 2), the upper band may represent endogenous proteins induced and/or phosphorylated by mSrc. The same signal pattern was detected with anti-PANX1-pY198 antibody from cells expressing the constitutively active mSrc-Y529F variant alone, although both bands were slightly upshifted (Figure 2B, lane 3). This upward shift was also observed in the fluorescent signal of mSrc-Y529F, suggesting that it may be due to a more extensive phosphorylation of mSrc-Y529F itself (lower band) and other endogenous proteins (upper band) associated with mSrc-Y529F (Figure 2B, lane 3). Interestingly, in addition to the band corresponding to the mSrc fluorescence signal, the anti-PANX1-pY308 antibody showed a major band at about 50 kDa (Figure 2B, lane 3), which may represent other sets of endogenous proteins induced and/or phosphorylated by mSrc. Taken together, our control experiments showed that both antibodies demonstrate promiscuous activity against mSrc and/or other unknown endogenous proteins, raising concerns as to whether these antibodies should be used to interpret the phosphorylation of PANX1.\n\nDespite the caveats of the antibodies mentioned above, we proceeded to test whether the two antibodies could at least produce additional signals that may represent phosphorylated hPANX1 (when hPANX1 and mSrc are co-expressed). We designed several co-transfection experiments combining WT mSrc or its constitutively active variant (Y529F) with WT PANX1 or its phosphor-ablating mutants (Y199F and Y309F). All combinations yielded the same signal pattern as when mSrc was expressed alone (Figure 2B, lanes 7\u20139 vs 2, lanes 10\u201312 vs 3), although under some conditions the signals were weaker, which we attribute to the lower protein expression level indicated by the fluorescent signals (Figure 2B, lane 10). Even when the constitutively active mSrc was present, both antibodies failed to detect any signals corresponding to the GFP fluorescence signal of hPANX1 (Figure 2B, lanes 7\u201312). Furthermore, there was no difference in the signal pattern of WT hPANX1 and its two phosphor-ablating mutants, which is unexpected if these antibodies are indeed specific for phosphorylated PANX1.\n\nOur hPANX1 construct contains a GFP tag at its very C-terminus, which is unlikely to affect PANX1 phosphorylation due to the flexibility of the C-terminus and its considerable distance from the proposed phosphorylation sites. Nevertheless, to thoroughly address this concern, we co-expressed a GFP-free version of hPANX1 with the constitutively active mSrc-Y529F, and performed western blot analysis. Our result showed that both anti-PANX1-pY198 and anti-PANX1-pY308 failed to detect hPANX1, regardless of the presence of the C-terminal GFP tag (Figure 2\u2014figure supplement 1, lanes 3\u20136).\n\n### Anti-PANX1-pY198 and anti-PANX1-pY308 antibodies do not recognize phosphorylated human PANX1 in vitro\n\nWe next tested whether anti-PANX1-pY198 and anti-PANX1-pY308 antibodies could detect PANX1 phosphorylation in vitro, as demonstrated in the literature (DeLalio et al., 2019), using purified hPANX1 produced in-house and purified human Src with a C-terminal GST tag (Src-GST) purchased from a commercial source.\n\nWe first wanted to know whether purified hPANX1 could be phosphorylated by Src in an in vitro context. To this end, we used a pan-specific phosphotyrosine antibody, anti-pY100, which is expected to recognize a wide range of phosphorylated tyrosine sites. Our result clearly showed that anti-pY100 detected only Src (Figure 3A, lanes 7\u201312), which is known to be phosphorylated (Nada et al., 1991), but not PANX1 (Figure 3A, lanes 1\u20139), indicating that PANX1 is unlikely to be phosphorylated in our in vitro setting. Similar to anti-pY100, anti-PANX1-pY198 yielded a single band of the same size as the Src protein only in the presence of Src (Figure 3A, lanes 10\u201315). These data confirmed that anti-PANX1-pY198 recognizes only Src, but not PANX1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig3-v1.jpg)\n\n**Figure 3.:** (A) In vitro phosphorylation of hPANX1-GFP wild-type (WT) by active human Src-GST protein. The leftmost panel showed the in-gel fluorescence of GFP overlaid with protein marker. The other panels (from left to right) represent the western blot signal of anti-PANX1, anti-pY100, anti-Src, anti-PANX1-PANX1-pY198, and anti-PANX1-pY308 antibodies, respectively. (B) In vitro phosphorylation of hPANX1-GFP WT, L306A, K307A, V308A, Y309F, E310A, I311A, or L312A mutants. The left panel showed the in-gel fluorescence of GFP overlaid with protein marker. The right panel showed the western blot signal of anti-PANX1-pY308 antibody. Only hPANX1 WT lane showed western blot signal. (C) In vitro phosphorylation of hPANX1-GFP WT, Y309A, or Y309F mutants. The left panel showed the in-gel fluorescence of GFP overlaid with protein marker (red). The right panel showed the western blot signal of anti-PANX1-pY308 antibody. The Y309A mutant rendered PANX1 prone to oligomerization in our SDS gel experiment, but not for Y309F. (D) Whole cell lysate of HEK293T cells transiently transfected with hPANX1 WT or Y309F. Left panel showed the in-gel fluorescence of GFP overlaid with protein marker. Middle and right panels represent western blot result using anti-PANX1 and anti-PANX1-pY308 antibodies, respectively. The location where PANX1 is expected to migrate in the SDS-PAGE gel is indicated. Of note, visualizing such a band requires a very long exposure, which resulted in a large number of non-specific bands.\n\nNotably, anti-PANX1-pY308 appeared to detect both Src and hPANX1 (Figure 3A, lanes 16\u201318). However, the hPANX1 band was present even in the absence of Src (Figure 3A, lane 17), and was not detected by anti-pY100 (Figure 3A, lane 7\u20139). This led us to speculate that anti-PANX1-pY308 may recognize non-phosphorylated PANX1. To test this hypothesis, we performed in vitro phosphorylation experiments on hPANX1 mutants around Y309, including L306A, K307A, V308A, Y309F/A, E310A, I311A, and L312A (Figure 1B; Figure 3B and C). Our results showed that these mutations also abolished the detection of the hPANX1 band by anti-PANX1-pY308 (Figure 3B and C). Thus, our data indicate that the anti-PANX1-pY308 antibody recognizes a non-phosphorylated peptide epitope around Y309 of hPANX1.\n\nWe also speculate that anti-PANX1-pY308 prefers Src over hPANX1 as an epitope, because it recognized Src both in its purified form and in crude whole-cell lysate, whereas it only recognized hPANX1 in its purified form, but not in the whole-cell lysate (Figure 2B; Figure 3A\u2013C). As a result, the Src signal appeared to dominate in the western blot using whole-cell lysate (Figure 2B). To test this hypothesis, we blotted whole-cell lysates from HEK293T cells expressing either the WT PANX1 or the Y308F variant. Anti-PANX1-pY308 indeed detect a weak band for WT PANX1, but not for the Y308F variant (Figure 3D).\n\nTaken together, by using both cultured HEK293T cells and in vitro phosphorylation experiments, we demonstrated that the anti-PANX1-pY198 and anti-PANX1-pY308 antibodies are non-specific and may not be suitable for studying endogenous PANX1 protein phosphorylation.\n\n### Human PANX1 is not phosphorylated by mouse Src in HEK293T cells\n\nBecause commercially available phospho-specific antibodies failed to effectively recognize PANX1, we decided to use the Phos-tag gel to gauge the phosphorylation status of PANX1. The Phos-tag gel allowed for an effective separation of proteins based on their phosphorylation level (Nagy et al., 2018; Nishioka et al., 2021). We transiently transfected plasmids encoding hPANX1 and mSrc genes into HEK293T cells and analyzed the cell lysates by Phos-tag gel and western blot. Figure 4A clearly showed differential migration patterns of mSrc WT, Y529F, and K297M in Phos-tag gel. De-phosphorylating of mSrc by lambda protein phosphatase (\u03bb-PPase) could partially convert the phosphorylated species into the non-phosphorylated protein (Figure 4\u2014figure supplement 1), suggesting that Y529F and K297M mutation could affect the autophosphorylation of mSrc kinase itself (Figure 4A, lanes 3\u20135). The hPANX1, when expressed by itself, showed one prominent band in both Phos-tag gel and SDS-PAGE gel (Figures 4A and 3B, lane 2), which likely represents the non-phosphorylated hPANX1 due to the absence of mSrc. We next co-expressed WT hPANX1 with the three mSrc variants, and analyzed the cell lysates with Phos-tag gel to separate phosphorylated and unphosphorylated hPANX1. Contrary to our expectation, the GFP fluorescence only showed a monomeric band irrespective of mSrc activity, suggesting that hPANX1 is insensitive to phosphorylation by mSrc (Figure 4A, lanes 6\u20138 vs 2). To ensure that the expression levels of hPANX1 and mSrc were each comparable across the experimental conditions, we also analyzed the same cell lysate samples using regular SDS-PAGE gel followed by western blot and in-gel fluorescence and found no significant difference in protein expression (Figure 4B, lanes 2\u20138). Our PANX1 gene is tagged with GFP at its C-terminus. To investigate whether GFP would negatively affect the accessibility of the two tyrosine residues to mSrc, we also co-expressed WT hPANX1 without GFP with mSrc variants in HEK293T cells and analyze the cell lysate by Phos-tag gel and western blot analysis. No significant difference was observed between hPANX1 expressed alone or with mSrc variants in Phos-tag gel (Figure 4\u2014figure supplement 2, lane 7\u20139 vs 3). Therefore, our Phos-tag gel analysis indicates that mSrc has no impact on hPANX1 phosphorylation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig4-v1.jpg)\n\n**Figure 4.:** (A) The Phos-tag gel result of human PANX1 co-expressed with different mSrc mutants. The GFP and mCherry fluorescence signal were overlaid to generate the image. The mSrc kinase of different phosphorylation status are labeled. In all conditions, hPANX1 migrated as a single band. (B) Analysis of the same cell lysate sample in B using regular SDS-PAGE gel. Western blot experiment was conducted using anti-PANX1 (top) and anti-Src (middle) antibodies. The anti-PANX1 antibody detected a non-specific band at 100 kDa from the whole-cell lysate with unknown identity. The in-gel fluorescence for GFP and mCherry is shown at the bottom where the position of mSrc and PANX1 protein could be compared with the western blot signal.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Phos-tag gel showed that mSrc-mCherry wild-type (WT), Y529F, and K297M protein had different phosphorylation status. Phosphorylated mSrc could be converted to the non-phosphorylated form by \u03bb-PP.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Human PANX1 with/without C-terminal GFP tag is co-expressed with Src-mCherry WT, Y529F, or K297M in HEK293T cells. Cell lysate was subjected to PNGase F de-glycosylation prior to analysis on SDS-PAGE gel (upper and middle panels) or Phos-tag gel (bottom panel). Upper panel showed the GFP and mCherry fluorescence signal in SDS-PAGE gel. Middle panel showed the western blot result of anti-PANX1 antibody blot in SDS-PAGE gel. Bottom panel showed the western blot result of anti-PANX1 antibody blot in Phos-tag gel.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) The sequence coverage of hPANX1 expressed alone. (B) The sequence coverage of hPANX1 expressed with the constitutively active mSrc Y529F. Of note, both Tyr199 and Tyr309 are covered by LC-MS/MS spectra. The Liquid chromatography with tandem mass spectrometry (LC-MS/MS) data for wild-type (WT) human Pannexin 1 (PANX1) with or without co-expressing Src-Y529F mutant is deposited in Dryad database at https://doi.org/10.5061/dryad.4tmpg4fh7.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) The raw spectrum of (K) YPIVEQYLKTK(K) peptide from hPANX1 expressed without Src. B ions and Y ions are colored in red and blue, respectively. (B) The fragmentation table of the (K) YPIVEQYLKTK(K) peptide is shown in panel A. Red and blue colors highlighted the B ions and Y ions for the detected amino acid, respectively. The non-phosphorylated Tyr199 is supported by both B ions and Y ions (blue frame). (C) The raw spectrum of (K) YPIVEQYLK(T) peptide from human Pannexin 1 (PANX1) expressed with mSrc Y529F mutant. B ions and Y ions are colored in red and blue, respectively. (D) The fragmentation table of the (K) YPIVEQYLK(T) peptide shown in panel C. Red and blue color highlighted the B ions and Y ions for the detected amino acid. The non-phosphorylated Tyr199 is supported by Y ions (blue frame).\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) The raw spectrum of (K) VYEILPTFDVLHFK(S) peptide from hPANX1 expressed without Src. B ions and Y ions are colored in red and blue, respectively. (B) The fragmentation table of the (K) VYEILPTFDVLHFK(S) peptide is shown in A. Red and blue colors highlighted the B ions and Y ions for the detected amino acid, respectively. The non-phosphorylated Tyr308 is supported by B ions (blue frame). (C) The raw spectrum of (K) VYEILPTFDVLHFK(S) peptide from human Pannexin 1 (PANX1) expressed with mSrcY529F mutant. B ions and Y ions are colored in red and blue, respectively. (D) The fragmentation table of the (K) VYEILPTFDVLHFK(S) peptide shown in C. Red and blue color highlighted the B ions and Y ions for the detected amino acid. The non-phosphorylated Tyr309 is supported by both B ions and Y ions (blue frame).\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig4-figsupp6-v1.jpg)\n\n**Figure 4\u2014figure supplement 6.:** (A) The raw spectrum of (K) TPMSAEMR(E) peptide from hPANX1 expressed without Src. B ions and Y ions are colored in red and blue, respectively. (B) The fragmentation table of the (K) TPMSAEMR(E) peptide is shown in A. Red and blue colors highlighted the B ions and Y ions for the detected amino acid, respectively. The non-phosphorylated Ser385 is supported by both B ions and Y ions (blue frame). (C) One raw spectrum of (K) TPMSAEMR(E) peptide from human Pannexin 1 (PANX1) expressed with Src-Y529F mutant. B ions and Y ions are colored in red and blue, respectively. (D) The fragmentation table of the (K) TPMSAEMR(E) peptide shown in C. Red and blue color highlighted the B ions and Y ions for the detected amino acid. The phosphorylated Ser385 is supported by Y ions (blue frame). (E) One raw spectrum of (K) TPMSAEMR(E) peptide from hPANX1 expressed with Src-Y529F mutant. B ions and Y ions are colored in red and blue, respectively. (F) The fragmentation table of the (K) TPMSAEMR(E) peptide shown in (E). Red and blue color highlighted the B ions and Y ions for the detected amino acid. The non-phosphorylated Ser385 is supported by both B ions and Y ions (blue frame).\n\nHowever, the inability to detect phosphorylated hPANX1 by Phos-tag gel analysis may be due to the low level of phosphorylation. To address this possibility, we purified hPANX1 protein expressed alone or co-expressed with the constitutively active mSrc-Y529F variant, and conducted liquid chromatography with tandem mass spectrometry (LC-MS/MS) analysis on the samples, which offers high sensitivity for detecting phosphorylated species. While we unambiguously identified MS/MS spectra covered both Tyr199 and Tyr309 sites, the tyrosine residues are not phosphorylated even when hPANX1 is co-expressed with mSrc-Y529F (Figure 4\u2014figure supplements 3\u20135). Interestingly, we observed hPANX1 Ser385 phosphorylation when mSrc-Y529F is present (Figure 4\u2014figure supplement 6). However, out of 67 MS/MS spectra, only five spectra contain the phosphorylated Ser385 (~7.5%). We note that phosphorylated peptides may display a very different fragmentation and ionization efficiency compared to the non-phosphorylated counterparts (Dephoure et al., 2013). Therefore, the ratio of the MS/MS spectra does not represent the true phosphorylation level of hPANX1 protein. Our Phos-tag gel analysis suggests that the Ser385 phosphorylation could be at a very low level as we did not observe other major bands in Phos-tag gel when hPANX1 is co-expressed with mSrc-Y529F (Figure 4A). Nevertheless, our result clearly demonstrated that Tyr199 and Tyr309 of hPANX1 are not phosphorylated by mSrc, at least not to a detectable level, when transiently expressed in HEK293T cells.\n\n### Phosphorylation status of human PANX1 is not altered by Src in Neuro2A cells\n\nSince our results conducted in HEK293T cells contradicted to what was known in the literature, we wanted to test whether our result was cell line dependent. To this end, we co-expressed hPANX1 and mSrc in Neuro2A cells, which were previously used as a model system to access the phosphorylation of Y308 by NMDAR activation (Weilinger et al., 2016). We noticed that hPANX1 protein expressed in Neuro2A cells was heavily glycosylated as indicated by its heterogeneous migration bands in regular SDS-PAGE gel (Figure 5A, lane 2). However, the multimeric bands can be reduced to a single band after PNGase F treatment, confirming that the heterogeneity is indeed due to N-linked glycosylation (Figure 5A, lane 3). Next, we tested the phosphorylation status of the samples using Phos-tag gel. Our result showed that deglycosylated hPANX1 migrates to the same location independent of mSrc, suggesting that Src does not alter the phosphorylation status of hPANX1 (Figure 5B, lanes 8, 10, 12 vs 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig5-v1.jpg)\n\n**Figure 5.:** (A) A regular SDS gel showing the GFP and mCherry fluorescence signal of human PANX1 (hPANX1) and mSrc co-expressed in Neuro2A cells. For each condition containing PANX1, PNGase F treatment is performed to de-glycosylate the protein. (B) A PhosTag gel result using the same samples analyzed in A.\n\n### Mouse PANX1 is not phosphorylated by Src in HEK293T cells\n\nTo rule out the possibility that hPANX1 may not be recognized by mouse Src, we repeated the transient transfection experiment using mPANX1 (Figure 6). Using Phos-tag gel, we failed to observe any difference between mPANX1 expressed alone or co-expressed with mSrc variants in HEK293T cells, indicating that mPANX1 behaves in the same way as hPANX1 and is not phosphorylated by mSrc (Figure 6A, lanes 6\u20138 vs 2). The expression levels of mPANX1 and mSrc are each comparable across different experimental conditions as judged by western blot and in-gel fluorescence image (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig6-v1.jpg)\n\n**Figure 6.:** (A) A Phos-tag gel result of mPANX1 co-expressed with different mSrc mutants. The GFP and mCherry fluorescence signals are overlaid to generate the image. The mSrc kinase of different phosphorylation status are labeled. In all the conditions, mouse PANX1 migrates to a single band. (B) Analysis of the same cell lysate sample in B using regular SDS-PAGE gel. Western blot experiment is conducted using anti-PANX1 (top) and anti-Src (middle) antibodies. The in-gel fluorescence for GFP and mCherry is shown at the bottom where the position of mSrc and mPANX1 protein could be compared with the western blot signal.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The non-transfected HEK293T cells or cells transfected with PANX1 (without the GFP tag) are digested by PNGase F and analyzed by western blot. The anti-PANX1 antibody produced two bands from the non-transfected HEK293T cell lysate at approximately 100 kDa and 50 kDa. After PNGase F treatment, the 50 kDa band (indicated by blue dotted lines) can be partially shifted to a location where monomeric PANX1 protein is located. The 100 kDa band (indicated by dotted magenta lines) is not sensitive to PNGase F treatment. The right panel showed a long exposure image of the same blot on the left.\n\nWe noted that the PANX1 antibody from Abcam (Catalogue number: ab124131) seems to detect other non-specific bands in our experiment, including a major band close to 100 kDa and a minor band at approximately 50 kDa (Figures 4B and 6B). To sort out the identity of the two bands, we carried out a de-glycosylation experiment on non-transfected HEK293T cells and hPANX1-expressing cells (Figure 6\u2014figure supplement 1). Our result suggests that the 50 kDa band could be partially de-glycosylated and migrate to a location where overexpressed PANX1 protein is expected to stay, whereas the 100 kDa band is insensitive to PNGase F treatment (Figure 6\u2014figure supplement 1). Thus, the lower band (50 kDa) likely represents endogenous PANX1 from HEK293T cells, while the 100 kDa band is a non-specific target of anti-PANX1 antibody. This result highlights the caveats/complications of solely relying on western blot to interpret the band identity. When combined with the fluorescence signal, it is possible to determine with more confidence which bands correspond to the full-length mPANX1 and mSrc protein in the SDS-PAGE gel.\n\n### The PANX1 current remains unchanged in the presence of active mSrc\n\nTo investigate whether hPANX1 channel activity is affected by the presence of active mSrc, we co-expressed GFP-tagged hPANX1 with the mCherry-tagged constitutively active mSrc-Y529F, and performed whole-cell patch clamp analysis. We targeted cells showing both green and red fluorescence, indicative of expression of both hPANX1 and mSrc proteins (Figure 7A). We did not observe any significant difference in the CBX-sensitive currents compared to the currents when hPANX1 was expressed alone (Figure 7B). This data strongly suggests that mSrc does not affect the gating of hPANX1 channel in HEK293T cells, further reinforcing the notion that PANX1 is not phosphorylated by Src.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/95118/elife-95118-fig7-v1.jpg)\n\n**Figure 7.:** (A) Representative fluorescent images of HEK293T cells transfected with human PANX1 hPANX1-GFP and mSrc-Y529F-mCherry. Cells that show both green (GFP) and red (mCherry) fluorescence are selected for whole-cell patch-clamp analysis. (B) The CBX sensitive whole-cell current of hPANX1-GFP and hPANX1 +mSrc-Y529F-mCherry. Two-way ANOVA was conducted to compare the hPANX1-GFP and hPANX1+mSrc-Y529F-mCherry. The analysis revealed a non-significant difference between the two groups (F(1, 182)=0.07286, p=0.7875). Data are presented as mean \u00b1 SEM. The number of cells (n) measured are indicated.\n\n## Discussion\n\nProtein phosphorylation is a common mechanism to regulate the physiology of large-pore channel function. For example, Cx43 phosphorylation by p34cdc2 kinase is associated with channel internalization during mitosis (Xie et al., 1997; Kanemitsu et al., 1998; Lampe et al., 1998). The volume-regulated anion channel was also recently found to be phosphorylated by MSK1 kinase, which in turn controls cellular chloride efflux (Serra et al., 2021). Not unexpectedly, PANX1 phosphorylation is also implicated in several physiological conditions. The common scheme of these processes is that PANX1 acts downstream of a membrane receptor, including P2X7, NMDARs, \u03b17 nAChR, TNFR1, and \u03b11-AR, which senses various extracellular signal and results in PANX1 activation via a yet uncharacterized intracellular signaling cascade (Locovei et al., 2007; Maldifassi et al., 2021; Weilinger et al., 2012; Weilinger et al., 2016; Lohman et al., 2015; DeLalio et al., 2019). The Src non-receptor tyrosine kinase appears to be a key player during this process, as inhibiting Src activity by kinase inhibitors could quench PANX1 opening (Locovei et al., 2007; Maldifassi et al., 2021; Weilinger et al., 2012; Lohman et al., 2015; DeLalio et al., 2019). Several evidence to support the notion that Src could directly phosphorylate PANX1 comes from western blot analysis, in which phosphor-tyrosine antibodies against Y198 and Y308 of murine PANX1 were used. In the study by DeLalio et al., 2019, attempts have been made to compare the effectiveness of pY198 antibody against WT mPANX1 and Y198F mutant in HEK293T cells. However, the signal by the pY198 antibody does not seem to match where the mPANX1 protein is expected to appear, although the blot is rather noisy (see Figure 2 of DeLalio et al., 2019). In the study by Weilinger et al., pY308 signal is present even for Y308F mutant, suggesting that the antibody may not be specific for pY308 of rat PANX1 (see Figure 5b of Weilinger et al., 2016). Unfortunately, these antibodies are taken for granted and continued to be used for scientific research (Metz and Elvers, 2022).\n\nHere, we combined multiple techniques, including Phos-tag gel, western blot, LC-MS/MS, and patch-clamp electrophysiology to investigate Src-dependent PANX1 phosphorylation. Our results, in contrast to previous findings, indicate that Tyr199 and Tyr309 of hPANX1 are not effective substrates for Src kinase, at least in HEK293T and Neuro2A cells or in in vitro experiments using purified hPANX1. Nevertheless, it is still possible that these two tyrosine sites are phosphorylated by other tyrosine kinases in other cell lines. For example, recent electrospray ionization mass spectrometry analysis on hPANX1 identified Tyr150 as a minor phosphorylation site in human triple-negative breast cancer Hs578T cells (Nouri-Nejad et al., 2021). Our mass spectrometry data failed to detect any fragments corresponding to a phosphorylated Tyr150 even when an active mSrc kinase is coexpressed with hPANX1, suggesting that Tyr150 may not be effectively recognized by mSrc. Consistent with this, a number of other tyrosine kinases have been predicted as the candidates for Tyr150 phosphorylation (Nouri-Nejad et al., 2021). Likewise, our study also does not rule out the possibility that Src may still be involved in the regulation of PANX1, given the fact that Src kinase inhibitors affect PANX1 channel opening under these conditions (Locovei et al., 2007; Maldifassi et al., 2021; Weilinger et al., 2012; Lohman et al., 2015; DeLalio et al., 2019). It\u2019s possible that additional proteins are involved to relay the signaling output to PANX1. For example, the endoplasmic reticulum (ER)-resident stromal interaction molecules (STIM1/2) have recently been noted to mediate events between NMDAR and PANX1(Patil et al., 2022). Future studies are required to fully decipher the underlying mechanisms.\n\nGiven the fact that the commercially available antibodies against phospho-PANX1 are non-specific, we encourage the PANX1 research community to re-examine results derived from the Src-mediated PANX1 phosphorylation and the associated antibodies. The technological development in the production of phospho-specific antibodies represents a breakthrough in the field of protein kinase and phosphoprotein research, providing unprecedented detection precision and accuracy. While phospho-specific antibodies have been successfully developed for many protein targets, great caution still needs to be taken when analyzing novel phosphorylation sites, and control experiments (such as the use of phosphor-ablating mutants and pan-specific phosphorylation antibodies) should be conducted. Ideally, other complementary techniques such as mass spectrometry and Phos-tag gel analysis should be sought to independently verify the conclusion.\n\n## Materials and methods\n\n### Plasmid constructs\n\nFull-length human PANX1 in the pEGC Bacmam vector from our previous study was used (Ruan et al., 2020). Mouse PANX1 (UniprotID: Q9JIP4) was synthesized by GenScript and subcloned into the pEGC Bacmam vector (Goehring et al., 2014). The translated product contains the human or mouse PANX1 protein, a thrombin digestion site (LVPRGS), an enhanced GFP protein, and an 8 x His tag. pCMV5 mouse Src was a gift from Joan Brugge & Peter Howley (Addgene plasmid # 13663; http://n2t.net/addgene:13663; RRID:Addgene_13663). The mouse Src gene was subcloned into the pEGN Bacmam vector (Goehring et al., 2014). The translated product contains an mCherry protein, a thrombin digestion site, and the Src protein. Primers for site-directed mutagenesis were designed using QuikChange Primer Design website (https://www.agilent.com/store/primerDesignProgram.jsp) and synthesized by Eurofins Genomics. The QuikChange mutagenesis protocol was used to generate all the mutants of the study. Sanger sequencing was performed to identify positive clones.\n\n### Cell lines\n\nHEK293T cells are purchased from Sigma-Aldrich (Catalogue Number: 96121229). Neuro2A cells are purchased from ATCC (Catalogue Number: CCL-131). The cells are authenticated and are mycoplasma contamination tested negative by the vendor.\n\n### Cell culture\n\nAdherent HEK293T cells were grown in DMEM media supplemented with 10% fetal bovine serum. Transient transfection was conducted using lipofectamine-2000 by following the manufacturer\u2019s protocol. Specifically, the cells were cultured in 60 mm Petri dishes until 80% confluency. Transfection solution was made by mixing 500 ng of plasmid DNA, 4 uL of lipofectamine-2000 reagent, and 100 uL Opti-MEM media. After 10 min incubation at room temperature, the DNA-lipid complexes were added to the cell culture and incubated at 37 \u00b0C. The next day, 10 mM sodium butyrate was added to the cells to boost protein expression. The cell culture was then grown at 30 \u00b0C for another day before harvesting. The cell pellet was flash-frozen with liquid nitrogen and stored at \u201380 \u00b0C. For co-transfection experiments, equal amounts of hPANX1 (250 ng) and mSrc (250 ng) plasmids were used in the transfection mixture. For Neuro2A cell culture, EMEM media is used instead of DMEM. All the other procedures described above are the same for expressing proteins in Neuro2A cells.\n\n### Western blot\n\nFor the western blot experiment, the cell pellet was lysed in TBS buffer (20 mM Tris pH 8.0, 150 mM NaCl) with protease an inhibitor cocktail (1 mM phenylmethylsulfonyl fluoride, 2 mM pepstatin, 0.8 \u03bcM aprotinin and 2 \u03bcg/ml leupeptin), 1 mM sodium orthovanadate and 1% glyco-diosgenin detergent for 30 min on ice. The lysate was clarified by centrifugation at 21,000 rpm for 20 min and the soluble portions were mixed with 2 X SDS loading buffer supplemented with 5% 2-Mercaptoethanol. The samples were resolved in precast gradient Tris-Glycine gel (4\u201320%) or 7.5% PhosTag gel. A Chemidoc instrument was used to directly image the in-gel fluorescence signal after electrophoresis. Subsequently, the protein in the gel was transferred to the PVDF membrane using the semi-dry transfer buffer (48 mM Tris base, 39 mM glycine, 20% methanol). The membrane is blocked in the TBST buffer (20 mM Tris pH8.0, 150 mM NaCl, 0.1% Tween 80) with 4% non-fat milk for 1 h at room temperature. Afterward, primary antibodies (1:2000 dilution) were incubated with the membrane overnight at 4 \u00b0C. The next day, the membrane was washed with TBST buffer for four times, 10 min each before goat anti-rabbit/mouse IgG secondary antibodies were added (1:25000 dilution). After 1 hr, the secondary antibodies were discarded and the membrane was washed again with TBST for four times, 10 min each. The western blot signal was detected using ECL Pierce substrate and imaged using a Chemidoc instrument. A brightfield image was overlaid with the illuminance signal to visualize the position of protein markers in the membrane. The anti-PANX1 antibody is obtained from Abcam (Catalogue number: ab124131). The anti-Src (Catalogue number: 36D10) and anti-pY100 (Catalogue number: 9411) antibodies are obtained from Cell Signaling. The anti-PANX1-pY198 (Catalogue number: ABN1681) and anti-PANX1-pY308 (Catalogue number: ABN1680) antibodies were obtained from Millipore Sigma.\n\n### De-glycosylation assay\n\nFor de-glycosylation experiment, Neuro2A/HEK293T cells expressing designated genes were solubilized in TBS buffer with protease inhibitor cocktail (1 mM phenylmethylsulfonyl fluoride, 2 mM pepstatin, 0.8 \u03bcM aprotinin and 2 \u03bcg/ml leupeptin), 1 mM sodium orthovanadate and 1% glyco-diosgenin detergent for 30 min on ice. The samples were clarified by centrifugation at 21,000 rpm for 30 min. The de-glycosylation reaction was made by mixing 16 uL of the supernatant with 2 uL of PNGase F enzyme and 2 uL of GlycoBuffer 2 (10X). The control reaction replaced the PNGase F enzyme with water. The reaction was allowed to occur at room temperature overnight. The next day, the samples were mixed with 20 uL 2X SDS sample-loading buffer (BioRad) supplemented with 5% \u03b2ME and resolved by SDS-PAGE. The gel was imaged in the ChemiDoc system by probing the GFP and mCherry fluorescence signal.\n\n### De-phosphorylation assay\n\nFor the dephosphorylation experiment, mSrc-mCherry WT, Y529F, and K297M were expressed in HEK293T cells. The cells were lysed in TBS buffer (20 mM Tris pH8, 150 mM NaCl) with 1% glyco-diosgenin detergent for 30 min on ice. After clarifying the non-soluble debris by centrifugation at 21,000 rpm for 20 min, 20 \u03bcL supernatant was mixed with 2.5 \u03bcL of 10 X NEBuffer for Protein MetalloPhosphatases, 2.5 \u03bcL 10 mM MnCl2 and 2 \u03bcL Lambda Protein Phosphatase (NEB). The dephosphorylation reaction was allowed to occur at 30 \u00b0C overnight. Control samples without adding Lambda Protein Phosphatase are placed on ice. The next day, the samples were mixed with 2X SDS sample-loading buffer (BioRad) supplemented with 5% \u03b2ME and resolved by SDS-PAGE or Phos-tag gel. The gel was imaged in the ChemiDoc system by probing the mCherry fluorescence signal or western blot analysis.\n\n### Protein purification\n\nFor in vitro phosphorylation and mass-spectrometry analysis, the hPANX1 WT or mutants were expressed alone or co-expressed with mSrc Y529F mutant in HEK293T cells. Specifically, 50 \u03bcg of plasmid DNA (in the case of the co-expressing experiment, 25 \u03bcg of human PANX1 plasmid and 25 \u03bcg of mouse Src Y529F mutant plasmid was used) was mixed with 150 ug of PEI 25 K (Polysciences) in a and incubated at room temperature for 30 min. The DNA-PEI complex was then added to the suspension cell culture of HEK293T cells at a density of 2\u00d7106 cells/ml in FreeStyle medium (Gibco). After growing at 37 \u00b0C for 8 hr, 10 mM sodium butyrate was added, and the temperature was changed to 30 \u00b0C for 40 hr. The cells were then harvested and stored at \u201380 \u00b0C until purification. The protein purification procedure was described in our previous study (Ruan et al., 2020).\n\n### In vitro phosphorylation assay\n\nThe in vitro phosphorylation is conducted using the human Src-GST protein (Sigma-Aldrich, Catalogue number: S1076) according to the manufacturer\u2019s protocol. Specifically, 1.5 \u03bcg of purified PANX1 protein is mixed with kinase assay buffer (25 mm MOPS, pH 7.2, 20 mM MgCl2, 12.5 mM MnCl2, 5 mM EGTA, 2 mM EDTA, 0.25 mM DTT), diluted 1:5 with 50 ng/\u03bcl bovine serum albumin (BSA). The reaction was supplemented with 0.25 mM ATP, and 0.3 \u03bcg recombinant human (active) Src-GST kinase. Samples were incubated for 1 h at 30 \u00b0C using a PCR thermocycler. After 1 hr, 2 x SDS loading buffer (BioRad) is mixed with the sample to stop the reaction. The sample is then resolved by an Tris-Glycine gel for subsequent western blot analysis.\n\n### LC-MS/MS\n\nPurified hPANX1 protein w- or w/o- co-expressing mSrc Y529F mutant was resolved in SDS-PAGE gel and the band corresponding to hPANX1 protein was cut and subjected to in-gel digestion with trypsin. Half of each digested sample was analyzed by nano LC-MS/MS with a Waters M-Class HPLC system interfaced with a Thermo Fisher Fusion Lumos mass spectrometer. Peptides were loaded on a trapping column and eluted over a 75 \u00b5m analytical column at 350 nL/min; both columns were packed with Luna C18 resin (Phenomenex). The mass spectrometer was operated in data-dependent mode, with the Orbitrap operating at 60,000 FWHM and 15,000 FWHM for MS and MS/MS, respectively. The instrument was run with a 3 s cycle for MS and MS/MS.\n\nData were searched using a local copy of Mascot (Matrix Science) with the following parameters. Enzyme: Trypsin/P; Database: SwissProt Human (concatenated forward and reverse plus common contaminants); Fixed modification: Carbamidomethyl (C) Variable modifications: Oxidation (M), Acetyl (N-term), Pyro-Glu (N-term Q), Deamidation (N/Q); Mass values: Monoisotopic; Peptide Mass Tolerance: 10 ppm; Fragment Mass Tolerance: 0.02 Da; Max Missed Cleavages: 2. Mascot DAT files were parsed into Scaffold (Proteome Software) for validation, filtering and to create a non-redundant list per sample. Data were filtered using 1% protein and peptide FDR and requiring at least two unique peptides per protein.\n\n### Electrophysiology\n\nHEK293T cells were transfected using Lipofectamine 2000 (Thermo Fisher) according to the manufacturer\u2019s protocol. The transfected cells were incubated at 37 \u00b0C for 18\u201324 hr before electrophysiological measurements. Whole-cell recordings were performed using a Multiclamp 700B (Axon Instruments) and Clampex software, with pipettes of 3\u20135 MOhm resistance filled with an internal solution containing 145 mM NaCl, 10 mM Hepes, 10 mM EGTA, pH adjusted to 7.4. The external bath solution contained 160 mM NaCl, 10 mM Hepes, 3 mM KCl, 2 mM CaCl2, and 1 mM MgCl2, also adjusted to pH 7.4. During the recordings, voltage steps ranging from \u2212100 mV to +140 mV were applied, each lasting 100ms with a 20 mV increment between steps, and membrane currents were digitally recorded at 10 kHz and filtered at 2 kHz. To precisely measure the PANX1 channel\u2019s current, carbenoxolone disodium salt (CBX), a blocker of the channel, was added to the bath solution at a final concentration of 0.1 mM, and CBX-sensitive currents were subsequently calculated by comparing the difference in current amplitude in a cell with and without the presence of CBX.\n",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "26c1ff5e-533d-4416-93c8-e87088213fc9",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Randy B Stockbridge, https://ror.org/00jmfr291 University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95118.3.sa0](https://doi.org/10.7554/eLife.95118.3.sa0)\n\nThe current manuscript re-examines an established claim in the literature that human PANX-1 is regulated by Src kinase phosphorylation at two tyrosine residues, Y199 and Y309. This issue is important for our understanding of Pannexin channel regulation. The authors present an extensive series of experiments that fail to detect PANX-1 phosphorylation at these sites. Although the authors' approach is more rigorous than the previous studies, this work relies primarily on negative results that are not unambiguously definitive; the work nonetheless provides a compelling reason for the field to reexamine conclusions drawn in earlier studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95118.3.sa1](https://doi.org/10.7554/eLife.95118.3.sa1)\n\nThe current manuscript revisits previous reports in the literature. The human Pannexin 1 channel is regulated by phosphorylation at two residues by Src kinase. From this series of experiments, the authors conclude that PANX-1 is not phosphorylated at these residues.\n\nThe biggest strength of the manuscript is the comprehensiveness of the approach. The authors recapitulate prior experiments in the literature and also add a series of new, orthogonal experiments that all examine the claim of PANX-1 phosphorylation. The breadth of the reported experiments extends over multiple cell lines and protein constructs, in vitro purified proteins, mass spec, different phosphorylation detection reagents and antibodies, and functional electrophysiology assays that show that the addition of Src does not impact gating. The combined weight of all these data strongly suggests that the field should re-examine the claim that PANX-1 is regulated by phosphorylation at Y199 and Y309.\n\nAnother strength is that the authors go beyond simply showing that the antibodies do not recognize phosphorylated PANX-1. They also provide potential mechanisms for how the antibodies may be misleading. Both antibodies recognize phosphorylated Src-1. In the case of anti-PANX1-pY308, the authors provide solid mutagenesis evidence that the antibody also weakly recognizes a non-phosphorylated epitope of PANX1 in the same region as the tyrosine. This helps make a convincing case.\n\nSuch experiments, while not glamorous, have great practical importance for developing an accurate understanding of how Pannexin channels are regulated.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95118.3.sa2](https://doi.org/10.7554/eLife.95118.3.sa2)\n\nThe widely distributed pannexin 1 (PANX1) is an ATP-permeable channel that plays an important role in intercellular communication and has been implicated in various pathophysiological processes and diseases. Previous studies have demonstrated that PANX1 can be phosphorylated at two molecular sites via the non-receptor kinase Src, thereby leading to channel opening and ATP release. In this paper, the authors used a variety of methods to detect tyrosine phosphorylation modification of PANX1 channel protein, however, their results showed that commercially available antibodies against the two phosphorylation sites used in previous studies did not work well, in other words, phosphorylation changes in PANX1 could not be detected by those antibodies. Therefore, the authors call for the re-examination and evaluation of previous research results.\n\nIn general, this is a meticulous study, using different detection methods and different expression systems.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95118.3.sa3](https://doi.org/10.7554/eLife.95118.3.sa3)\n\nThe manuscript by Ruan et al. addresses an important issue in Panx1 research, i.e. the activation of the channel formed by Panx1 via protein phosphorylation. If the authors' conclusions are correct, the previous claims for Panx1 phosphorylation on the basis of the commercial anti-phospho-Panx1 antibodies would be in question.\n\nThis is a very detailed and comprehensive analysis making use of state-of-the-art techniques, including mass spectrometry and phos-tag gel electrophoresis.\n\nIn general, the study is well-controlled as relating to negative controls.\n\nThe value of this manuscript is, that it could spawn new, more function-oriented studies on the activation of Panx1 channels.\n\nThe weaknesses identified previously are reproduced below:\n\nWeaknesses:\n\nAlthough the manuscript addresses an important issue, the activation of the ATP-release channel Panx1 by protein phosphorylation, the data provided do not support the firm conclusion that such activation does not exist. The failure to reproduce published data obtained with commercial anti-phospho Panx1 antibodies can only be of limited interest for a subfield.\n\n(1) The title claiming that \"Panx1 is NOT phosphorylated...\" is not justified by the failure to reproduce previously published data obtained with these antibodies. If, as claimed, the antibodies do not recognize Panx1, their failure cannot be used to exclude tyrosine phosphorylation of the Panx1 protein. There is no positive control for the antibodies.\n\n(2) The authors claim that exogenous SRC expression does not phosphorylate Y198. DeLalio et al. 2019 show that Panx1 is constitutively phosphorylated at Y198, so an effect of exogenous SRC expression is not necessarily expected.\n\n(3) The authors argue that the GFP tag of Panx1at the COOH terminus does not interfere with folding since the COOH modified (thrombin cleavage site) Panx1 folds properly, forming an amorphous glob in the cryo-EM structure. However, they do not show that the COOH-modified Panx1 folds properly. It may not, because functional data strongly suggest that the terminal cysteine dives deep into the pore. For example, the terminal cysteine, C426, can form a disulfide bond with an engineered cysteine at position F54 (Sandilos et al. 2012).\n\n(4) The authors dismiss the additional arguments for tyrosine phosphorylation of Panx1 given by the various previous studies on Panx1 phosphorylation. These studies did not, as implied, solely rely on the commercial anti-phospho-Panx1 antibodies, but also presented a wealth of independent supporting data. Contrary to the authors' assertion, in the previous papers the pY198 and pY308 antibodies recognized two protein bands in the size range of glycosylated and partial glycosylated Panx1.\n\n(5) A phosphorylation step triggering channel activity of Panx1 would be expected to occur exclusively on proteins embedded in the plasma membrane. The membrane-bound fraction is small in relation to the total protein, which is particularly true for exogenously expressed proteins. Thus, any phosphorylated protein may escape detection when total protein is analyzed. Furthermore, to be of functional consequence, only a small fraction of the channels present in the plasma membrane need to be in the open state. Consequently, only a fraction of the Panx1 protein in the plasma membrane may need to be phosphorylated. Even the high resolution of mass spectroscopy may not be sufficient to detect phosphorylated Panx1 in the absence of enrichment processes.\n\n(6) In the electrophysiology experiments described in Figure 7, there is no evidence that the GFP-tagged Panx1 is in the plasma membrane. Instead, the image in Figure 7a shows prominent fluorescence in the cytoplasm. In addition, there is no evidence that the CBX-sensitive currents in 7b are mediated by Panx1-GFP and are not endogenous Panx1. Previous literature suggests that the hPanx1 protein needs to be cleaved (Chiu et al. 2014) or mutated at the amino terminus (Michalski et al 2018) to see voltage-activated currents, so it is not clear that the currents represent hPANX1 voltage-activated currents.\n\nNote from the editors: The authors provided a rebuttal to the latest review, but no additional data, so we encourage readers to read the concerns and the author responses.\n",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d96e41a8-fb89-4eb5-ae4a-6cba8b317670",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C1",
+      "claim": "PANX1 is a large-pore channel permeable to ATP and other cellular metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "Pannexin 1 (PANX1) is a large-pore channel permeable to ATP and other cellular metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known property of PANX1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "156edbf5-8f0e-437d-ab07-9bfe80877f3d",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C2",
+      "claim": "Tyrosine phosphorylation and subsequent activation of PANX1 play critical roles in neuronal cell death, acute inflammation, and smooth muscle contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Its tyrosine phosphorylation and subsequent activation have been found to play critical roles in diverse cellular conditions, including neuronal cell death, acute inflammation, and smooth muscle contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature as indicated in the abstract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "180946e1-7175-4bf3-8e37-0ae32803f91c",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C3",
+      "claim": "Src has been reported to phosphorylate Tyr198 and Tyr308 of mouse PANX1 (equivalent to Tyr199 and Tyr309 of human PANX1), resulting in channel opening and ATP release.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the non-receptor kinase Src has been reported to phosphorylate Tyr198 and Tyr308 of mouse PANX1 (equivalent to Tyr199 and Tyr309 of human PANX1), resulting in channel opening and ATP release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior reports in the literature about Src-mediated phosphorylation of PANX1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "8dba22a6-e3f7-4ebd-a361-277e142f825e",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C4",
+      "claim": "Commercially available antibodies against phosphorylation sites Tyr198 and Tyr308 of PANX1 are nonspecific.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that commercially available antibodies against the two phosphorylation sites mentioned above\u2014which were used to identify endogenous PANX1 phosphorylation at these two sites\u2014are nonspecific and should not be used to interpret results related to PANX1 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "34409aa2-584a-438e-bbb5-033aac82072b",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C5",
+      "claim": "Neither Tyr199 nor Tyr309 is a major phosphorylation site for Src kinase in heterologous expression systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We further provide evidence that neither tyrosine residue is a major phosphorylation site for Src kinase in heterologous expression systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data including Phos-tag gel, LC-MS/MS, and western blot analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "47c462ef-355d-401d-9d98-04a75b5a6717",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C6",
+      "claim": "PANX1 activation allows the release of ATP and other cellular metabolites to the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of PANX1 allows the release of ATP and other cellular metabolites to the extracellular space, serving as signaling molecules for neighboring cells (Chekeni et al., 2010; Medina et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "d7a1d652-ec41-4511-9592-4684d9ee5334",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C7",
+      "claim": "Structures of PANX1 were determined by single-particle cryo-electron microscopy in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2020, we and others determined structures of PANX1 by single-particle cryo-electron microscopy (cryo-EM), revealing the channel stoichiometry, domain architecture, ion permeation pathways, and inhibition mechanisms (Michalski et al., 2020; Deng et al., 2020; Qu et al., 2020; Jin et al., 2020; Mou et al., 2020; Ruan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to cryo-EM structure papers from 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "b1fae82e-c007-48ba-8ede-83d0750d3a91",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C8",
+      "claim": "Caspase-dependent cleavage of the regulatory C-terminal tail of PANX1 is critically implicated for apoptotic cell clearance by the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, caspase-dependent cleavage of the regulatory C-terminal tail of PANX1 is critically implicated for apoptotic cell clearance by the immune system (Chekeni et al., 2010; Medina et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "da6ad956-c5f3-4642-8069-42447394ce8a",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C9",
+      "claim": "Glycosylation at the second extracellular loop of PANX1 sterically prevents the docking of two PANX1 heptamers into a gap-junction-like assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The glycosylation at the second extracellular loop of PANX1 sterically prevents the docking of two PANX1 heptamers into a gap-junction-like assembly (Sosinsky et al., 2011; Dahl and Locovei, 2006; Huang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "4231c45a-ce63-4a7e-8013-b1168f27be5a",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C10",
+      "claim": "Tyr199 and Tyr309 of human PANX1 are located close to the side tunnel of PANX1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both residues are located in positions close to the side tunnel of PANX1, an anion-selective permeation pathway responsible for the PANX1 basal current (Ruan et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in Figure 1A and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "674bd002-4c60-4dcb-a85f-6ae159667f4f",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C11",
+      "claim": "Tyr199 is part of the intersubunit interface of PANX1 and is partially buried.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr199 is part of the intersubunit interface of PANX1 and is partially buried, which may make it less accessible to Src kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of PANX1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "a372b2a2-8b6f-4c1c-9a44-4eccc7115346",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C12",
+      "claim": "Tyr309 is completely buried inside the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr309, on the other hand, is completely buried inside the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of PANX1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "523290ea-6cf2-4a4e-8749-dacfd7d8ec6d",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C13",
+      "claim": "Phosphorylation of Tyr199 and Tyr309 would require conformational changes or partial unfolding of the intracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, phosphorylation of Tyr199 and Tyr309, if occurs, would require at least conformational changes or partial unfolding of the intracellular domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural location of these residues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "cf62ba5f-acc7-4ff8-b8e8-806378426a75",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C14",
+      "claim": "Tyr199 and Tyr309 are conserved among different PANX1 orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Tyr199 and Tyr309, as well as several residues nearby, are conserved among different PANX1 orthologs (Figure 1B), suggesting that phosphotyrosine antibodies developed against one species are likely to cross-react with the others.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "2a2aaab7-608e-4fec-9ecc-0eba74922d67",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C15",
+      "claim": "Anti-PANX1-pY198 antibody does not recognize phosphorylated human PANX1 in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when the constitutively active mSrc was present, both antibodies failed to detect any signals corresponding to the GFP fluorescence signal of hPANX1 (Figure 2B, lanes 7\u201312).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by western blot data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "13230575-4770-43a5-bf3a-208d5b05006e",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C16",
+      "claim": "Anti-PANX1-pY308 antibody does not recognize phosphorylated human PANX1 in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when the constitutively active mSrc was present, both antibodies failed to detect any signals corresponding to the GFP fluorescence signal of hPANX1 (Figure 2B, lanes 7\u201312).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary experimental finding supported by western blot data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "d34f5586-db8d-4c47-bae4-ce061bfb833a",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C17",
+      "claim": "Anti-PANX1-pY198 antibody shows promiscuous activity against mSrc and/or other unknown endogenous proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our control experiments showed that both antibodies demonstrate promiscuous activity against mSrc and/or other unknown endogenous proteins, raising concerns as to whether these antibodies should be used to interpret the phosphorylation of PANX1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing antibody signals in the absence of PANX1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "1a740f17-8d2e-452f-940c-d800f5e79cc7",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C18",
+      "claim": "Anti-PANX1-pY308 antibody shows promiscuous activity against mSrc and/or other unknown endogenous proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our control experiments showed that both antibodies demonstrate promiscuous activity against mSrc and/or other unknown endogenous proteins, raising concerns as to whether these antibodies should be used to interpret the phosphorylation of PANX1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing antibody signals in the absence of PANX1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "0e09ff21-b7e7-4035-865c-2d865d94d987",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C19",
+      "claim": "Anti-PANX1-pY198 antibody recognizes only Src, but not PANX1, in in vitro phosphorylation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to anti-pY100, anti-PANX1-pY198 yielded a single band of the same size as the Src protein only in the presence of Src (Figure 3A, lanes 10\u201315). These data confirmed that anti-PANX1-pY198 recognizes only Src, but not PANX1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro phosphorylation data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "e370983c-ed76-4fe3-95ba-36746e5ff9f4",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C20",
+      "claim": "Anti-PANX1-pY308 antibody recognizes a non-phosphorylated peptide epitope around Y309 of hPANX1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data indicate that the anti-PANX1-pY308 antibody recognizes a non-phosphorylated peptide epitope around Y309 of hPANX1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experiments showing that mutations around Y309 abolish antibody recognition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "47448237-d5fb-4889-b72c-c168bc5d75f1",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C21",
+      "claim": "Purified hPANX1 is not phosphorylated by Src in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result clearly showed that anti-pY100 detected only Src (Figure 3A, lanes 7\u201312), which is known to be phosphorylated (Nada et al., 1991), but not PANX1 (Figure 3A, lanes 1\u20139), indicating that PANX1 is unlikely to be phosphorylated in our in vitro setting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro phosphorylation data using pan-phosphotyrosine antibody.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "1a3a0492-0191-416c-89fe-9aee48c15a55",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C22",
+      "claim": "Human PANX1 is not phosphorylated by mouse Src in HEK293T cells as shown by Phos-tag gel analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to our expectation, the GFP fluorescence only showed a monomeric band irrespective of mSrc activity, suggesting that hPANX1 is insensitive to phosphorylation by mSrc (Figure 4A, lanes 6\u20138 vs 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Phos-tag gel data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "0bc0db17-d908-46e5-8ef6-a508b827dda3",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C23",
+      "claim": "LC-MS/MS analysis shows that Tyr199 and Tyr309 of hPANX1 are not phosphorylated even when co-expressed with constitutively active mSrc-Y529F.",
+      "claim_type": "EXPLICIT",
+      "source": "While we unambiguously identified MS/MS spectra covered both Tyr199 and Tyr309 sites, the tyrosine residues are not phosphorylated even when hPANX1 is co-expressed with mSrc-Y529F (Figure 4\u2014figure supplements 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-MS/MS data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "df4442ac-1b2c-4a07-a782-04a72ae85200",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C24",
+      "claim": "hPANX1 Ser385 phosphorylation is observed at low levels when mSrc-Y529F is present.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed hPANX1 Ser385 phosphorylation when mSrc-Y529F is present (Figure 4\u2014figure supplement 6). However, out of 67 MS/MS spectra, only five spectra contain the phosphorylated Ser385 (~7.5%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-MS/MS data shown in Figure 4\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "50a17b08-2bd6-4b42-a870-07d855331be9",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C25",
+      "claim": "Phosphorylation status of human PANX1 is not altered by Src in Neuro2A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result showed that deglycosylated hPANX1 migrates to the same location independent of mSrc, suggesting that Src does not alter the phosphorylation status of hPANX1 (Figure 5B, lanes 8, 10, 12 vs 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Phos-tag gel data from Neuro2A cells shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "bf1b7fc0-afae-4f6a-ba9b-5568cbe63f31",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C26",
+      "claim": "Mouse PANX1 is not phosphorylated by Src in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Phos-tag gel, we failed to observe any difference between mPANX1 expressed alone or co-expressed with mSrc variants in HEK293T cells, indicating that mPANX1 behaves in the same way as hPANX1 and is not phosphorylated by mSrc (Figure 6A, lanes 6\u20138 vs 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Phos-tag gel data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "5a23157a-3ce8-42fe-bbf4-3a441fd1fec9",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C27",
+      "claim": "The PANX1 current remains unchanged in the presence of active mSrc.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any significant difference in the CBX-sensitive currents compared to the currents when hPANX1 was expressed alone (Figure 7B). This data strongly suggests that mSrc does not affect the gating of hPANX1 channel in HEK293T cells, further reinforcing the notion that PANX1 is not phosphorylated by Src.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell patch clamp data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "9ce87432-3f13-473a-93d4-c027a323ed9a",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C28",
+      "claim": "The Y529F mutation renders Src constitutively active due to the disruption of the autoinhibitory interaction between the SH2 domain and the C-terminal tail.",
+      "claim_type": "EXPLICIT",
+      "source": "The Y529F mutation renders Src constitutively active due to the disruption of the autoinhibitory interaction between the SH2 domain and the C-terminal tail (Nada et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "b5379aa9-62c2-43c7-b614-b756b4985131",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C29",
+      "claim": "The K297M mutation abolishes the ATP-binding capability of mSrc.",
+      "claim_type": "EXPLICIT",
+      "source": "The K297M is catalytically incompetent as the mutation abolishes the ATP-binding capability of mSrc (Roskoski, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "c40c2634-87a2-4b63-939b-7f0db44a095e",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C30",
+      "claim": "Prolonged activation of P2X7 receptor leads to activation of PANX1 in many cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, prolonged activation of P2X7 receptor leads to activation of PANX1 in many cell lines, opening of a large pore (Locovei et al., 2007; Pelegrin and Surprenant, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "77c103c2-c973-40fd-a224-ea6585549201",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C31",
+      "claim": "Src was found to be involved in mediating the initial steps of P2X7-PANX1 signal transduction, but it does not directly phosphorylate PANX1.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the use of a mimetic peptide and kinase inhibitors, Src was later found to be involved in mediating the initial steps of this signal transduction, but it does not directly phosphorylate PANX1 per se (Iglesias et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "447efe36-c85b-43fe-9ffc-34c110bfae3d",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C32",
+      "claim": "PANX1 makes functional crosstalk with \u03b17 nicotinic acetylcholine receptor in neuroblastoma cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "In a more recent study, PANX1 was proposed to make functional crosstalk with \u03b17 nicotinic acetylcholine receptor (\u03b17 nAChR) in neuroblastoma cell line (Maldifassi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "0edbf21b-7153-4af9-8f83-78cf6300bd78",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C33",
+      "claim": "Murine PANX1 has been reported to undergo serine phosphorylation at Ser205 and Ser206.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to tyrosine phosphorylation, murine PANX1 has been reported to undergo serine phosphorylation at Ser205 and Ser206, although two studies have shown contradictory effects of the two serine phosphorylation sites on PANX1 channel activity (Poornima et al., 2015; Medina et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "8fd3ae39-9266-4a15-acb9-542857da2cba",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C34",
+      "claim": "S394 of rat PANX1 could be phosphorylated by CaMKII upon an increase in cytoplasmic Ca2+ concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the S394 of rat PANX1 could be phosphorylated by CaMKII upon an increase in cytoplasmic Ca2+ concentration (L\u00f3pez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "a7f10ac7-7987-4cf1-be46-fd5131c95318",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C35",
+      "claim": "S394 of rat PANX1 is not conserved in human PANX1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this residue is not conserved in human PANX1 (hPANX1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "8839009f-8534-4bae-b1bd-ebdce9fd0736",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C36",
+      "claim": "T302 and S328 of PANX1 were reported to be phosphorylated by protein kinase A.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, T302 and S328 were reported to be phosphorylated by protein kinase A, which affects the mechanically induced chloride conductance of PANX1 through the lateral tunnels (L\u00f3pez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "41255c11-1779-4fd3-95de-cc1aeddf9b19",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C37",
+      "claim": "Phosphorylation of Tyr308 by Src kinase depends on ligand binding to the metabotropic NMDA receptor in CA1 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the phosphorylation of Tyr308 by Src kinase depends on ligand binding to the metabotropic NMDA receptor (NMDAR) in CA1 pyramidal neurons, but does not require its pore opening and Ca2+ conductance (Weilinger et al., 2012; Weilinger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "4af1bc26-301d-47e2-8f63-ba3fe18bff5b",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C38",
+      "claim": "NMDARs, Src kinase, and PANX1 could form a signaling complex.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, it was suggested that NMDARs, Src kinase, and PANX1 could form a signaling complex, in which the NMDAR is the ligand-sensing module whereas the PANX1 is the pore-forming unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on prior studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "08f50a3d-6483-4790-b6b5-b41170b846c6",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C39",
+      "claim": "Phosphorylation at Tyr308 is a key step for PANX1 activation in the NMDAR/Src/PANX1 signalosomes that leads to neuronal cell death during ischemia or stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation at Tyr308 is a key step for PANX1 activation in the NMDAR/Src/PANX1 signalosomes that eventually leads to the neuronal cell death during ischemia or stroke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on prior studies in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "1e78b6dd-0daf-4c69-b013-4947af882add",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C40",
+      "claim": "Tyr198 phosphorylation of mouse PANX1 depends on type-1 TNF receptor and Src kinase in vascular endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Lohman et al., 2015 showed that in vascular endothelial cells, Tyr198 phosphorylation\u2014which depends on type-1 TNF receptor (TNFR1) and Src kinase\u2014opens PANX1 channel, leading to ATP release and promoting leukocyte adhesion and emigration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "aeb7938c-04c7-43cb-bd04-aecb14fce71c",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C41",
+      "claim": "Tyr198 is constitutively phosphorylated by Src in vascular smooth muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, DeLalio et al., 2019 found that Tyr198 is constitutively phosphorylated by Src in vascular smooth muscle cells, possibly through an \u03b11-adrenergic receptor (\u03b11-AR)-based vasoconstriction mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "dd5727cd-d10d-4e71-bb53-bcc5c1bc3692",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C42",
+      "claim": "Tyr150 of PANX1 was identified as another phosphorylation site, presumably by Src, through electrospray ionization mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In a more recent study, Nouri-Nejad et al. identified Tyr150 of PANX1 as another phosphorylation site, presumably by Src, through electrospray ionization mass spectrometry, but only to a small degree (in 2 out of 11 LC-MS/MS spectra) (Nouri-Nejad et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "2774e7e9-9c45-4226-9370-bf4f66934506",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C43",
+      "claim": "Phosphor-ablating mutant Y150F does not alter the properties of PANX1 current.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional consequence of Tyr150 phosphorylation to PANX1 is unclear, as phosphor-ablating mutant Y150F does not alter the properties of PANX1 current (Nouri-Nejad et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "45b6b7e1-6e7d-4626-9cad-47ba542ae353",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C44",
+      "claim": "Tyr199 is conserved in PANX2 and PANX3.",
+      "claim_type": "EXPLICIT",
+      "source": "Tyr199 is also conserved in PANX2 and PANX3, the other two members of the pannexin family.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "c34a5888-3ce2-4f36-821c-89d32a1ac771",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C45",
+      "claim": "Tyr309 is only conserved in PANX1 and PANX3, while PANX2 has a phenylalanine at this position.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Tyr309 is only conserved in PANX1 and PANX3, while PANX2 has a phenylalanine at this position and lacks a few residues preceding this residue (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "bc66a217-731b-4d88-9649-6d03b6a1c361",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C46",
+      "claim": "Mouse Src has 99.4% pairwise sequence similarity to human Src.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the prior studies (Weilinger et al., 2016; DeLalio et al., 2019), we used mouse Src (mSrc), which has 99.4% pairwise sequence similarity to human Src.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of sequence similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "f595df76-a520-4fd7-beb0-12736175d862",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C47",
+      "claim": "hPANX1 protein expressed in Neuro2A cells is heavily glycosylated.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that hPANX1 protein expressed in Neuro2A cells was heavily glycosylated as indicated by its heterogeneous migration bands in regular SDS-PAGE gel (Figure 5A, lane 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "74f3baf5-c7be-472e-9111-e1f48e201e42",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C48",
+      "claim": "The heterogeneity of hPANX1 migration in SDS-PAGE gel is due to N-linked glycosylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the multimeric bands can be reduced to a single band after PNGase F treatment, confirming that the heterogeneity is indeed due to N-linked glycosylation (Figure 5A, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by deglycosylation experiment shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "6c885c65-2ff0-47e8-a494-2640fdb6382e",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C49",
+      "claim": "The anti-PANX1 antibody from Abcam detects non-specific bands including a major band close to 100 kDa and a minor band at approximately 50 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that the PANX1 antibody from Abcam (Catalogue number: ab124131) seems to detect other non-specific bands in our experiment, including a major band close to 100 kDa and a minor band at approximately 50 kDa (Figures 4B and 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on western blot data shown in Figures 4B and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "d72f502a-0a2c-44d8-aef6-9e24c50b4635",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C50",
+      "claim": "The 50 kDa band detected by anti-PANX1 antibody likely represents endogenous PANX1 from HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the lower band (50 kDa) likely represents endogenous PANX1 from HEK293T cells, while the 100 kDa band is a non-specific target of anti-PANX1 antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on deglycosylation experiments shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "1e4819e2-b350-440b-8188-fa7dd4180431",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C51",
+      "claim": "The 100 kDa band detected by anti-PANX1 antibody is a non-specific target.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the lower band (50 kDa) likely represents endogenous PANX1 from HEK293T cells, while the 100 kDa band is a non-specific target of anti-PANX1 antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on deglycosylation experiments showing the 100 kDa band is insensitive to PNGase F treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "5c95806f-242a-4f58-9233-6051914834c2",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C52",
+      "claim": "Cx43 phosphorylation by p34cdc2 kinase is associated with channel internalization during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Cx43 phosphorylation by p34cdc2 kinase is associated with channel internalization during mitosis (Xie et al., 1997; Kanemitsu et al., 1998; Lampe et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "5cd9e696-6617-48d7-a699-c196fd7f3f02",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C53",
+      "claim": "The volume-regulated anion channel was recently found to be phosphorylated by MSK1 kinase, which controls cellular chloride efflux.",
+      "claim_type": "EXPLICIT",
+      "source": "The volume-regulated anion channel was also recently found to be phosphorylated by MSK1 kinase, which in turn controls cellular chloride efflux (Serra et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "4b98504f-a9f5-4f7e-87da-a1482acd985c",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C54",
+      "claim": "Inhibiting Src activity by kinase inhibitors could quench PANX1 opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The Src non-receptor tyrosine kinase appears to be a key player during this process, as inhibiting Src activity by kinase inhibitors could quench PANX1 opening (Locovei et al., 2007; Maldifassi et al., 2021; Weilinger et al., 2012; Lohman et al., 2015; DeLalio et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "f1d89f3f-2500-4631-bd53-2b8a7f7592df",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C55",
+      "claim": "The pY198 antibody signal does not match where the mPANX1 protein is expected to appear in the study by DeLalio et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "In the study by DeLalio et al., 2019, attempts have been made to compare the effectiveness of pY198 antibody against WT mPANX1 and Y198F mutant in HEK293T cells. However, the signal by the pY198 antibody does not seem to match where the mPANX1 protein is expected to appear, although the blot is rather noisy (see Figure 2 of DeLalio et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "72d5de96-5af2-4dab-848d-4ed64de2990e",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C56",
+      "claim": "In the study by Weilinger et al., pY308 signal is present even for Y308F mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In the study by Weilinger et al., pY308 signal is present even for Y308F mutant, suggesting that the antibody may not be specific for pY308 of rat PANX1 (see Figure 5b of Weilinger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "86d5f098-192e-4c67-95e5-d39183be2088",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C57",
+      "claim": "It is possible that Tyr199 and Tyr309 are phosphorylated by other tyrosine kinases in other cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it is still possible that these two tyrosine sites are phosphorylated by other tyrosine kinases in other cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement acknowledging limitations of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "85448612-99e2-4cb1-93e7-99f12875914d",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C58",
+      "claim": "Tyr150 may not be effectively recognized by mSrc based on mass spectrometry data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mass spectrometry data failed to detect any fragments corresponding to a phosphorylated Tyr150 even when an active mSrc kinase is coexpressed with hPANX1, suggesting that Tyr150 may not be effectively recognized by mSrc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS data from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "11207c61-4b69-41d7-b230-72e7220c41fc",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C59",
+      "claim": "Src may still be involved in the regulation of PANX1 through indirect mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, our study also does not rule out the possibility that Src may still be involved in the regulation of PANX1, given the fact that Src kinase inhibitors affect PANX1 channel opening under these conditions (Locovei et al., 2007; Maldifassi et al., 2021; Weilinger et al., 2012; Lohman et al., 2015; DeLalio et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement acknowledging that Src may have indirect effects.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "dfb2199a-b615-44d8-8684-ce1d1e7e72c1",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C60",
+      "claim": "Additional proteins may be involved to relay the signaling output from Src to PANX1.",
+      "claim_type": "EXPLICIT",
+      "source": "It's possible that additional proteins are involved to relay the signaling output to PANX1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "a5a6b264-8fe2-43b5-9b37-fa35c4a1eb7b",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C61",
+      "claim": "ER-resident stromal interaction molecules (STIM1/2) have been noted to mediate events between NMDAR and PANX1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the endoplasmic reticulum (ER)-resident stromal interaction molecules (STIM1/2) have recently been noted to mediate events between NMDAR and PANX1(Patil et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "6f5fa4ca-e6ea-4da1-b59c-1e50a8f13eb5",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C62",
+      "claim": "The side tunnel is an anion-selective permeation pathway responsible for the PANX1 basal current.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both residues are located in positions close to the side tunnel of PANX1, an anion-selective permeation pathway responsible for the PANX1 basal current (Ruan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "9b651915-e0db-4f6a-9ed2-f5fcf1fcb479",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C63",
+      "claim": "Phosphorylation of Tyr199 or Tyr309 is expected to cause major conformational changes of the intracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, phosphorylation of either of these two residues is expected to cause major conformational changes of the intracellular domain due to the negative charges and the bulky size of the introduced phosphate group(s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "34a991d6-7faa-47d4-b813-dd160ae20d67",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "claim_id": "C64",
+      "claim": "Two-way ANOVA revealed a non-significant difference between hPANX1-GFP and hPANX1+mSrc-Y529F-mCherry currents (F(1, 182)=0.07286, p=0.7875).",
+      "claim_type": "EXPLICIT",
+      "source": "Two-way ANOVA was conducted to compare the hPANX1-GFP and hPANX1+mSrc-Y529F-mCherry. The analysis revealed a non-significant difference between the two groups (F(1, 182)=0.07286, p=0.7875).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of electrophysiology data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fe40127c-2058-4904-bd1e-9205759f1646",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Structural analysis reveals that Tyr199 and Tyr309 of human PANX1 are located near the side tunnel, with Tyr199 partially buried at the intersubunit interface and Tyr309 completely buried inside the protein. Both residues are conserved among PANX1 orthologs, and phosphorylation would require conformational changes or partial unfolding of the intracellular domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14, C44-C45, C62-C63 are supported by structural data from cryo-EM structures (Figure 1A) and sequence alignment (Figure 1B). The structural location of these residues is clearly demonstrated, and the inference about required conformational changes for phosphorylation is reasonable given the buried nature of these residues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "bb21e524-4dbd-482a-94f1-dbc2797ec366",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Commercially available anti-PANX1-pY198 and anti-PANX1-pY308 antibodies are nonspecific. The anti-PANX1-pY198 antibody recognizes only Src but not PANX1, while the anti-PANX1-pY308 antibody recognizes a non-phosphorylated peptide epitope around Y309. Both antibodies show promiscuous activity against mSrc and/or other endogenous proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C15-C20 are strongly supported by multiple experimental approaches including western blots (Figures 2B, 3A), in vitro phosphorylation assays, and mutagenesis experiments (Figure 3B-C). The data consistently demonstrate that these antibodies fail to specifically recognize phosphorylated PANX1 at the claimed sites and instead detect other proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neither Tyr199 nor Tyr309 is a major phosphorylation site for Src kinase in heterologous expression systems. This conclusion is supported by in vitro phosphorylation assays, Phos-tag gel analysis in HEK293T and Neuro2A cells, and LC-MS/MS analysis showing no phosphorylation at these sites even with constitutively active Src.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21-C26 are supported by converging evidence from multiple orthogonal techniques: pan-phosphotyrosine antibody detection (Figure 3A), Phos-tag gels showing no mobility shift (Figures 4A, 5B, 6A), and LC-MS/MS data unambiguously identifying non-phosphorylated peptides at both sites (Figure 4 supplements 3-5). The consistency across methods and cell types strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "9b494f76-4c1e-48c5-b3f4-99bcaa88f3b9",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PANX1 channel current remains unchanged in the presence of constitutively active mSrc-Y529F, as measured by whole-cell patch clamp electrophysiology. Two-way ANOVA revealed no significant difference between hPANX1 alone and hPANX1 co-expressed with mSrc-Y529F (p=0.7875).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C64 are supported by electrophysiology data (Figure 7B) with appropriate statistical analysis. The lack of functional change in PANX1 currents in the presence of active Src provides functional evidence consistent with the biochemical findings that Src does not phosphorylate PANX1 at the proposed sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "b281730a-a449-4640-b300-541b6793cc97",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Critical assessment of prior literature reveals inconsistencies in the use of phospho-specific antibodies. In DeLalio et al. 2019, the pY198 antibody signal does not match the expected location of mPANX1 protein. In Weilinger et al. 2016, pY308 signal is present even for the Y308F mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 provide critical assessment of prior work based on examination of published figures. These observations are consistent with the current study's findings about antibody non-specificity and raise valid concerns about the interpretation of previous results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "31797e1d-598c-4e97-ac7e-01fb8b564682",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Technical observations about PANX1 expression and antibody specificity: hPANX1 expressed in Neuro2A cells is heavily glycosylated, which can be removed by PNGase F treatment. The anti-PANX1 antibody from Abcam detects non-specific bands at 100 kDa and 50 kDa, with the 50 kDa band likely representing endogenous PANX1 and the 100 kDa band being a non-specific target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are supported by deglycosylation experiments (Figures 5A, 6\u2014figure supplement 1) showing that PNGase F treatment reduces heterogeneous bands to a single band, confirming N-linked glycosylation. The identification of non-specific bands is based on differential sensitivity to PNGase F treatment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "a87ffbcc-07cc-4801-aba5-befd7a962042",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Characterization of Src variants used in the study: Y529F mutation renders Src constitutively active by disrupting autoinhibitory interactions, K297M mutation abolishes ATP-binding capability, and mouse Src has 99.4% sequence similarity to human Src.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29, C46 are supported by citations to prior literature and are well-established properties of Src variants. The sequence similarity statement is verifiable. These claims provide important methodological context for interpreting the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "0e9d7de0-1d75-4173-81c6-38f904751d42",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors acknowledge limitations and alternative interpretations: Tyr199 and Tyr309 may be phosphorylated by other kinases in other cell lines, Tyr150 may not be effectively recognized by mSrc, and Src may still regulate PANX1 through indirect mechanisms involving additional proteins such as STIM1/2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 represent appropriate acknowledgment of study limitations and alternative hypotheses. These speculative statements are clearly identified as such and are supported by citations to relevant literature (e.g., C61 citing Patil et al. 2022). This demonstrates scientific rigor in interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "e807da39-c774-488d-851b-b861a99e9a17",
+      "content_id": "9ff38202-b73a-484f-8a72-612d49b232de",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background and context from prior literature: PANX1 is a large-pore channel involved in ATP release and various physiological processes. Previous studies have reported Src-mediated phosphorylation at Tyr198/308 in various cellular contexts, though some studies showed Src involvement without direct phosphorylation. Other phosphorylation sites and regulatory mechanisms have also been reported.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C6-C9, C30-C43, C52-C54 are background claims supported by citations to prior literature. These provide essential context for understanding the current study's motivation and significance. The authors appropriately cite relevant prior work, though the current study challenges some of these previous findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb",
+      "content_id": "26c1ff5e-533d-4416-93c8-e87088213fc9",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The commercially available anti-PANX1-pY198 and anti-PANX1-pY308 antibodies are nonspecific and do not recognize phosphorylated PANX1. The anti-pY198 antibody recognizes only Src, while the anti-pY308 antibody recognizes a non-phosphorylated epitope around Y309. Both antibodies show promiscuous activity against mSrc and/or other endogenous proteins.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers acknowledge the comprehensiveness of the antibody validation experiments. Reviewer 1 states 'the authors go beyond simply showing that the antibodies do not recognize phosphorylated PANX-1. They also provide potential mechanisms for how the antibodies may be misleading.' Reviewer 2 notes this is 'a meticulous study' and Reviewer 3 acknowledges 'this is a very detailed and comprehensive analysis.' The antibody nonspecificity findings are accepted as valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b",
+      "content_id": "26c1ff5e-533d-4416-93c8-e87088213fc9",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Neither Tyr199 nor Tyr309 is a major phosphorylation site for Src kinase in heterologous expression systems. Multiple orthogonal methods (in vitro phosphorylation, Phos-tag gels, LC-MS/MS) failed to detect phosphorylation at these sites in human or mouse PANX1 when co-expressed with active Src in HEK293T or Neuro2A cells. Only minimal Ser385 phosphorylation (~7.5%) was detected by MS.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the comprehensive approach, Reviewer 4 raises critical concerns that 'the data provided do not support the firm conclusion that such activation does not exist.' Key concerns include: (1) lack of positive controls for the antibodies, (2) phosphorylation may occur only in membrane-bound fractions which represent a small portion of total protein, (3) 'even the high resolution of mass spectroscopy may not be sufficient to detect phosphorylated Panx1 in the absence of enrichment processes,' and (4) the GFP tag may interfere with proper folding. The editor notes 'this work relies primarily on negative results that are not unambiguously definitive.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "a442b907-2705-4f2b-95b4-5b044dc0701d",
+      "content_id": "26c1ff5e-533d-4416-93c8-e87088213fc9",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "PANX1 current remains unchanged in the presence of active mSrc as measured by whole-cell patch clamp electrophysiology. Two-way ANOVA revealed no significant difference between hPANX1-GFP alone and hPANX1+mSrc-Y529F-mCherry currents (p=0.7875).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 4 raises substantial concerns about the electrophysiology experiments: 'there is no evidence that the GFP-tagged Panx1 is in the plasma membrane. Instead, the image in Figure 7a shows prominent fluorescence in the cytoplasm.' Additionally, 'there is no evidence that the CBX-sensitive currents in 7b are mediated by Panx1-GFP and are not endogenous Panx1.' The reviewer notes that 'previous literature suggests that the hPanx1 protein needs to be cleaved or mutated at the amino terminus to see voltage-activated currents,' questioning whether the observed currents represent hPANX1.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "f99fefb8-2bab-43e8-85ad-8a12bc878c52",
+      "content_id": "26c1ff5e-533d-4416-93c8-e87088213fc9",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Structural analysis shows that Tyr199 and Tyr309 are located close to the side tunnel of PANX1, with Tyr199 partially buried at the intersubunit interface and Tyr309 completely buried inside the protein. Both residues are conserved among PANX1 orthologs, and phosphorylation would require conformational changes or partial unfolding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the structural analysis or conservation data. Reviewer 1 notes 'the breadth of the reported experiments' and the comprehensive approach. The structural observations are presented as context for understanding accessibility to kinases and are not disputed by any reviewer.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "7be92167-f181-4662-9690-b60168574f99",
+      "content_id": "26c1ff5e-533d-4416-93c8-e87088213fc9",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Critical assessment of prior literature reveals inconsistencies: in DeLalio et al. 2019, the pY198 antibody signal does not match where mPANX1 protein is expected to appear, and in Weilinger et al. 2016, pY308 signal is present even for the Y308F mutant.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 4 acknowledges these concerns but argues that 'the authors dismiss the additional arguments for tyrosine phosphorylation of Panx1 given by the various previous studies' and that 'these studies did not, as implied, solely rely on the commercial anti-phospho-Panx1 antibodies, but also presented a wealth of independent supporting data.' However, no reviewer directly refutes the specific observations about antibody signals in prior studies.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "13c9514f-d5da-4ccd-87ea-a37772885b03",
+      "content_id": "26c1ff5e-533d-4416-93c8-e87088213fc9",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Technical observations about protein detection: hPANX1 expressed in Neuro2A cells is heavily glycosylated, with heterogeneity due to N-linked glycosylation. The anti-PANX1 antibody from Abcam detects non-specific bands including a 100 kDa band (non-specific) and a 50 kDa band (likely endogenous PANX1).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These technical observations are not challenged by reviewers. Reviewer 2 describes the work as 'meticulous' and Reviewer 3 notes it is 'well-controlled as relating to negative controls.' The characterization of antibody specificity issues is consistent with the overall findings accepted by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "b518757f-cbfc-4df3-a94d-988b5b967115",
+      "content_id": "26c1ff5e-533d-4416-93c8-e87088213fc9",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors acknowledge limitations and alternative interpretations: Tyr199 and Tyr309 may be phosphorylated by other kinases in other cell lines, Tyr150 may not be effectively recognized by mSrc, and Src may still regulate PANX1 through indirect mechanisms involving additional relay proteins such as STIM1/2.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers appreciate these acknowledgments. The editor notes 'the work nonetheless provides a compelling reason for the field to reexamine conclusions drawn in earlier studies.' Reviewer 3 states 'the value of this manuscript is, that it could spawn new, more function-oriented studies on the activation of Panx1 channels.' These speculative statements align with reviewer expectations for balanced interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4231c45a-ce63-4a7e-8013-b1168f27be5a",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "674bd002-4c60-4dcb-a85f-6ae159667f4f",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "a372b2a2-8b6f-4c1c-9a44-4eccc7115346",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "523290ea-6cf2-4a4e-8749-dacfd7d8ec6d",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "cf62ba5f-acc7-4ff8-b8e8-806378426a75",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "45b6b7e1-6e7d-4626-9cad-47ba542ae353",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "c34a5888-3ce2-4f36-821c-89d32a1ac771",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "6f5fa4ca-e6ea-4da1-b59c-1e50a8f13eb5",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "9b651915-e0db-4f6a-9ed2-f5fcf1fcb479",
+      "result_id": "fe40127c-2058-4904-bd1e-9205759f1646"
+    },
+    {
+      "claim_id": "8dba22a6-e3f7-4ebd-a361-277e142f825e",
+      "result_id": "bb21e524-4dbd-482a-94f1-dbc2797ec366"
+    },
+    {
+      "claim_id": "2a2aaab7-608e-4fec-9ecc-0eba74922d67",
+      "result_id": "bb21e524-4dbd-482a-94f1-dbc2797ec366"
+    },
+    {
+      "claim_id": "13230575-4770-43a5-bf3a-208d5b05006e",
+      "result_id": "bb21e524-4dbd-482a-94f1-dbc2797ec366"
+    },
+    {
+      "claim_id": "d34f5586-db8d-4c47-bae4-ce061bfb833a",
+      "result_id": "bb21e524-4dbd-482a-94f1-dbc2797ec366"
+    },
+    {
+      "claim_id": "1a740f17-8d2e-452f-940c-d800f5e79cc7",
+      "result_id": "bb21e524-4dbd-482a-94f1-dbc2797ec366"
+    },
+    {
+      "claim_id": "0e09ff21-b7e7-4035-865c-2d865d94d987",
+      "result_id": "bb21e524-4dbd-482a-94f1-dbc2797ec366"
+    },
+    {
+      "claim_id": "e370983c-ed76-4fe3-95ba-36746e5ff9f4",
+      "result_id": "bb21e524-4dbd-482a-94f1-dbc2797ec366"
+    },
+    {
+      "claim_id": "34409aa2-584a-438e-bbb5-033aac82072b",
+      "result_id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d"
+    },
+    {
+      "claim_id": "47448237-d5fb-4889-b72c-c168bc5d75f1",
+      "result_id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d"
+    },
+    {
+      "claim_id": "1a3a0492-0191-416c-89fe-9aee48c15a55",
+      "result_id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d"
+    },
+    {
+      "claim_id": "0bc0db17-d908-46e5-8ef6-a508b827dda3",
+      "result_id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d"
+    },
+    {
+      "claim_id": "df4442ac-1b2c-4a07-a782-04a72ae85200",
+      "result_id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d"
+    },
+    {
+      "claim_id": "50a17b08-2bd6-4b42-a870-07d855331be9",
+      "result_id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d"
+    },
+    {
+      "claim_id": "bf1b7fc0-afae-4f6a-ba9b-5568cbe63f31",
+      "result_id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d"
+    },
+    {
+      "claim_id": "5a23157a-3ce8-42fe-bbf4-3a441fd1fec9",
+      "result_id": "9b494f76-4c1e-48c5-b3f4-99bcaa88f3b9"
+    },
+    {
+      "claim_id": "34a991d6-7faa-47d4-b813-dd160ae20d67",
+      "result_id": "9b494f76-4c1e-48c5-b3f4-99bcaa88f3b9"
+    },
+    {
+      "claim_id": "f1d89f3f-2500-4631-bd53-2b8a7f7592df",
+      "result_id": "b281730a-a449-4640-b300-541b6793cc97"
+    },
+    {
+      "claim_id": "72d5de96-5af2-4dab-848d-4ed64de2990e",
+      "result_id": "b281730a-a449-4640-b300-541b6793cc97"
+    },
+    {
+      "claim_id": "f595df76-a520-4fd7-beb0-12736175d862",
+      "result_id": "31797e1d-598c-4e97-ac7e-01fb8b564682"
+    },
+    {
+      "claim_id": "74f3baf5-c7be-472e-9111-e1f48e201e42",
+      "result_id": "31797e1d-598c-4e97-ac7e-01fb8b564682"
+    },
+    {
+      "claim_id": "6c885c65-2ff0-47e8-a494-2640fdb6382e",
+      "result_id": "31797e1d-598c-4e97-ac7e-01fb8b564682"
+    },
+    {
+      "claim_id": "d72f502a-0a2c-44d8-aef6-9e24c50b4635",
+      "result_id": "31797e1d-598c-4e97-ac7e-01fb8b564682"
+    },
+    {
+      "claim_id": "1e4819e2-b350-440b-8188-fa7dd4180431",
+      "result_id": "31797e1d-598c-4e97-ac7e-01fb8b564682"
+    },
+    {
+      "claim_id": "9ce87432-3f13-473a-93d4-c027a323ed9a",
+      "result_id": "a87ffbcc-07cc-4801-aba5-befd7a962042"
+    },
+    {
+      "claim_id": "b5379aa9-62c2-43c7-b614-b756b4985131",
+      "result_id": "a87ffbcc-07cc-4801-aba5-befd7a962042"
+    },
+    {
+      "claim_id": "bc66a217-731b-4d88-9649-6d03b6a1c361",
+      "result_id": "a87ffbcc-07cc-4801-aba5-befd7a962042"
+    },
+    {
+      "claim_id": "86d5f098-192e-4c67-95e5-d39183be2088",
+      "result_id": "0e9d7de0-1d75-4173-81c6-38f904751d42"
+    },
+    {
+      "claim_id": "85448612-99e2-4cb1-93e7-99f12875914d",
+      "result_id": "0e9d7de0-1d75-4173-81c6-38f904751d42"
+    },
+    {
+      "claim_id": "11207c61-4b69-41d7-b230-72e7220c41fc",
+      "result_id": "0e9d7de0-1d75-4173-81c6-38f904751d42"
+    },
+    {
+      "claim_id": "dfb2199a-b615-44d8-8684-ce1d1e7e72c1",
+      "result_id": "0e9d7de0-1d75-4173-81c6-38f904751d42"
+    },
+    {
+      "claim_id": "a5a6b264-8fe2-43b5-9b37-fa35c4a1eb7b",
+      "result_id": "0e9d7de0-1d75-4173-81c6-38f904751d42"
+    },
+    {
+      "claim_id": "d96e41a8-fb89-4eb5-ae4a-6cba8b317670",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "156edbf5-8f0e-437d-ab07-9bfe80877f3d",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "180946e1-7175-4bf3-8e37-0ae32803f91c",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "47c462ef-355d-401d-9d98-04a75b5a6717",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "d7a1d652-ec41-4511-9592-4684d9ee5334",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "b1fae82e-c007-48ba-8ede-83d0750d3a91",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "da6ad956-c5f3-4642-8069-42447394ce8a",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "c40c2634-87a2-4b63-939b-7f0db44a095e",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "77c103c2-c973-40fd-a224-ea6585549201",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "447efe36-c85b-43fe-9ffc-34c110bfae3d",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "0edbf21b-7153-4af9-8f83-78cf6300bd78",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "8fd3ae39-9266-4a15-acb9-542857da2cba",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "a7f10ac7-7987-4cf1-be46-fd5131c95318",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "8839009f-8534-4bae-b1bd-ebdce9fd0736",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "41255c11-1779-4fd3-95de-cc1aeddf9b19",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "4af1bc26-301d-47e2-8f63-ba3fe18bff5b",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "08f50a3d-6483-4790-b6b5-b41170b846c6",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "1e78b6dd-0daf-4c69-b013-4947af882add",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "aeb7938c-04c7-43cb-bd04-aecb14fce71c",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "dd5727cd-d10d-4e71-bb53-bcc5c1bc3692",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "2774e7e9-9c45-4226-9370-bf4f66934506",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "5c95806f-242a-4f58-9233-6051914834c2",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "5cd9e696-6617-48d7-a699-c196fd7f3f02",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "4b98504f-a9f5-4f7e-87da-a1482acd985c",
+      "result_id": "e807da39-c774-488d-851b-b861a99e9a17"
+    },
+    {
+      "claim_id": "8dba22a6-e3f7-4ebd-a361-277e142f825e",
+      "result_id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb"
+    },
+    {
+      "claim_id": "2a2aaab7-608e-4fec-9ecc-0eba74922d67",
+      "result_id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb"
+    },
+    {
+      "claim_id": "13230575-4770-43a5-bf3a-208d5b05006e",
+      "result_id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb"
+    },
+    {
+      "claim_id": "d34f5586-db8d-4c47-bae4-ce061bfb833a",
+      "result_id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb"
+    },
+    {
+      "claim_id": "1a740f17-8d2e-452f-940c-d800f5e79cc7",
+      "result_id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb"
+    },
+    {
+      "claim_id": "0e09ff21-b7e7-4035-865c-2d865d94d987",
+      "result_id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb"
+    },
+    {
+      "claim_id": "e370983c-ed76-4fe3-95ba-36746e5ff9f4",
+      "result_id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb"
+    },
+    {
+      "claim_id": "34409aa2-584a-438e-bbb5-033aac82072b",
+      "result_id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b"
+    },
+    {
+      "claim_id": "47448237-d5fb-4889-b72c-c168bc5d75f1",
+      "result_id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b"
+    },
+    {
+      "claim_id": "1a3a0492-0191-416c-89fe-9aee48c15a55",
+      "result_id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b"
+    },
+    {
+      "claim_id": "0bc0db17-d908-46e5-8ef6-a508b827dda3",
+      "result_id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b"
+    },
+    {
+      "claim_id": "df4442ac-1b2c-4a07-a782-04a72ae85200",
+      "result_id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b"
+    },
+    {
+      "claim_id": "50a17b08-2bd6-4b42-a870-07d855331be9",
+      "result_id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b"
+    },
+    {
+      "claim_id": "bf1b7fc0-afae-4f6a-ba9b-5568cbe63f31",
+      "result_id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b"
+    },
+    {
+      "claim_id": "5a23157a-3ce8-42fe-bbf4-3a441fd1fec9",
+      "result_id": "a442b907-2705-4f2b-95b4-5b044dc0701d"
+    },
+    {
+      "claim_id": "34a991d6-7faa-47d4-b813-dd160ae20d67",
+      "result_id": "a442b907-2705-4f2b-95b4-5b044dc0701d"
+    },
+    {
+      "claim_id": "4231c45a-ce63-4a7e-8013-b1168f27be5a",
+      "result_id": "f99fefb8-2bab-43e8-85ad-8a12bc878c52"
+    },
+    {
+      "claim_id": "674bd002-4c60-4dcb-a85f-6ae159667f4f",
+      "result_id": "f99fefb8-2bab-43e8-85ad-8a12bc878c52"
+    },
+    {
+      "claim_id": "a372b2a2-8b6f-4c1c-9a44-4eccc7115346",
+      "result_id": "f99fefb8-2bab-43e8-85ad-8a12bc878c52"
+    },
+    {
+      "claim_id": "523290ea-6cf2-4a4e-8749-dacfd7d8ec6d",
+      "result_id": "f99fefb8-2bab-43e8-85ad-8a12bc878c52"
+    },
+    {
+      "claim_id": "cf62ba5f-acc7-4ff8-b8e8-806378426a75",
+      "result_id": "f99fefb8-2bab-43e8-85ad-8a12bc878c52"
+    },
+    {
+      "claim_id": "f1d89f3f-2500-4631-bd53-2b8a7f7592df",
+      "result_id": "7be92167-f181-4662-9690-b60168574f99"
+    },
+    {
+      "claim_id": "72d5de96-5af2-4dab-848d-4ed64de2990e",
+      "result_id": "7be92167-f181-4662-9690-b60168574f99"
+    },
+    {
+      "claim_id": "f595df76-a520-4fd7-beb0-12736175d862",
+      "result_id": "13c9514f-d5da-4ccd-87ea-a37772885b03"
+    },
+    {
+      "claim_id": "74f3baf5-c7be-472e-9111-e1f48e201e42",
+      "result_id": "13c9514f-d5da-4ccd-87ea-a37772885b03"
+    },
+    {
+      "claim_id": "6c885c65-2ff0-47e8-a494-2640fdb6382e",
+      "result_id": "13c9514f-d5da-4ccd-87ea-a37772885b03"
+    },
+    {
+      "claim_id": "d72f502a-0a2c-44d8-aef6-9e24c50b4635",
+      "result_id": "13c9514f-d5da-4ccd-87ea-a37772885b03"
+    },
+    {
+      "claim_id": "1e4819e2-b350-440b-8188-fa7dd4180431",
+      "result_id": "13c9514f-d5da-4ccd-87ea-a37772885b03"
+    },
+    {
+      "claim_id": "86d5f098-192e-4c67-95e5-d39183be2088",
+      "result_id": "b518757f-cbfc-4df3-a94d-988b5b967115"
+    },
+    {
+      "claim_id": "85448612-99e2-4cb1-93e7-99f12875914d",
+      "result_id": "b518757f-cbfc-4df3-a94d-988b5b967115"
+    },
+    {
+      "claim_id": "11207c61-4b69-41d7-b230-72e7220c41fc",
+      "result_id": "b518757f-cbfc-4df3-a94d-988b5b967115"
+    },
+    {
+      "claim_id": "dfb2199a-b615-44d8-8684-ce1d1e7e72c1",
+      "result_id": "b518757f-cbfc-4df3-a94d-988b5b967115"
+    },
+    {
+      "claim_id": "a5a6b264-8fe2-43b5-9b37-fa35c4a1eb7b",
+      "result_id": "b518757f-cbfc-4df3-a94d-988b5b967115"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "1dc14b68-32f1-4da7-9e05-8f2164fa083c",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "bb21e524-4dbd-482a-94f1-dbc2797ec366",
+      "peer_result_id": "86a6ff59-a7c0-4aa7-8d98-9a6612da1ebb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate antibody validation experiments (C4, C15-C20) and reach the same SUPPORTED conclusion. OpenEval emphasizes the multiple experimental approaches demonstrating antibody non-specificity, while peer reviewers acknowledge the comprehensiveness and validity of these findings, with all reviewers praising the meticulous approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "1fee9dbb-b2ea-4e4d-abe0-9df9e1a1cfd5",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "9496bb08-5ee8-47de-93ec-eeb92ec8ed3d",
+      "peer_result_id": "b2bd76b6-73a8-46bc-937e-8bda08bdac6b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims about lack of phosphorylation (C5, C21-C26), but reach different conclusions. OpenEval finds the evidence SUPPORTED based on converging orthogonal techniques (pan-phosphotyrosine antibody, Phos-tag gels, LC-MS/MS). Peer reviewers rate this UNCERTAIN, raising concerns about lack of positive controls, potential detection limits of mass spectrometry without enrichment, and possible interference from GFP tags.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "5bdf96fe-4805-43a5-b7c6-4954e354a704",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "9b494f76-4c1e-48c5-b3f4-99bcaa88f3b9",
+      "peer_result_id": "a442b907-2705-4f2b-95b4-5b044dc0701d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate electrophysiology data (C27, C64), but disagree on interpretation. OpenEval finds the functional evidence SUPPORTED and consistent with biochemical findings. Peer reviewers rate this UNCERTAIN, questioning whether GFP-tagged PANX1 is properly localized to plasma membrane, whether observed currents are from tagged or endogenous PANX1, and whether the construct requires cleavage for proper function.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "b5d40bb4-c8f6-4621-bd6e-cab946fc6bd9",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b281730a-a449-4640-b300-541b6793cc97",
+      "peer_result_id": "7be92167-f181-4662-9690-b60168574f99",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate critical assessment of prior work (C55-C56) and reach SUPPORTED conclusions. OpenEval notes these observations are consistent with current findings about antibody non-specificity. Peer reviewers acknowledge the concerns but note that previous studies presented additional supporting data beyond just the commercial antibodies, though they don't directly refute the specific observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "0ee0f1df-aab7-4467-b57f-4d76efe9136e",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "31797e1d-598c-4e97-ac7e-01fb8b564682",
+      "peer_result_id": "13c9514f-d5da-4ccd-87ea-a37772885b03",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate deglycosylation experiments (C47-C51) and agree these are SUPPORTED. OpenEval emphasizes the confirmation of N-linked glycosylation through PNGase F treatment. Peer reviewers do not challenge these technical observations, describing the work as meticulous and well-controlled.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "298ed546-6f17-4d24-9862-d2dad08266f8",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "0e9d7de0-1d75-4173-81c6-38f904751d42",
+      "peer_result_id": "b518757f-cbfc-4df3-a94d-988b5b967115",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate acknowledgment of limitations and alternative hypotheses (C57-C61) and find them SUPPORTED. OpenEval notes these demonstrate scientific rigor in interpretation. Peer reviewers appreciate these acknowledgments and see value in the work prompting reexamination of earlier studies and spawning new function-oriented research.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "3a79445e-a172-4ac2-b625-e0bea64370ce",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "fe40127c-2058-4904-bd1e-9205759f1646",
+      "peer_result_id": "f99fefb8-2bab-43e8-85ad-8a12bc878c52",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address structural analysis and conservation data (C10-C14), reaching SUPPORTED conclusions. OpenEval emphasizes the structural demonstration of buried residues and reasonable inference about conformational changes. Peer reviewers do not challenge the structural analysis, noting the breadth and comprehensive approach of the experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "67a70a26-4ffe-42d2-8639-4ddd5e941971",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a87ffbcc-07cc-4801-aba5-befd7a962042",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims about Src variants (C28-C29, C46) as SUPPORTED based on prior literature and established properties. No corresponding peer review evaluation found for these specific methodological context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    },
+    {
+      "id": "ade814f9-c57a-4d30-a55d-01ff5552aebc",
+      "submission_id": "ac9c321e-a2bc-4d82-bc61-bf6ef5a67dde",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "e807da39-c774-488d-851b-b861a99e9a17",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates extensive background claims (C1-C3, C6-C9, C30-C43, C52-C54) as SUPPORTED based on citations to prior literature. No corresponding peer review evaluation found for these background context claims, though peer reviewers implicitly accept the motivation and significance context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:58:48.175354Z"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29"
+    ],
+    "result": "Manual review of 4,964 eLife images found that 12.8% (636 images) were 'Definitely problematic' for deuteranopes to interpret, while 77.9% (3,865 images) were 'Definitely okay'. This represents the core finding about the prevalence of accessibility issues in scientific images.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge this finding without challenge. Reviewer 1 states the authors 'manually assessed randomly selected images' and found '12.8% would be difficult for deuteranopes to interpret.' Reviewers 2 and 3 similarly cite the ~13% figure as a key finding. The manual review methodology and results are accepted as valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Among 'Definitely okay' images, 60.8% contained green and red/orange shades, but in 99.3% of these cases the contrasts were sufficient for deuteranope interpretation. Spatial distance between colors and labels within images mitigated potential problems in 54.2% and 48.4% of cases, respectively.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises a significant methodological concern: 'There is a missed chance here to have engaged deuteranopes as stakeholders earlier in the experimental design. This would have allowed to determine to what extent spatial separation and labelling of problematic color combinations responds to their needs.' The authors' judgments about mitigation factors were made without input from people with deuteranopia, creating uncertainty about whether these factors truly address accessibility needs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35"
+    ],
+    "result": "The percentage of 'Definitely problematic' articles declined steadily between 2012 and 2021 (with a modest increase in 2022), and this decline was statistically significant (p<0.001) using logistic regression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this temporal trend finding. Reviewer 1 notes 'the frequency of this problem has decreased over time,' and Reviewer 4 states 'There was a trend toward a decrease in problematic images over time, which is encouraging.' The statistical significance and overall pattern are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The number of 'Definitely problematic' articles differed significantly by subdiscipline (p<0.001), with Cell Biology, Developmental Biology, and Stem Cells and Regenerative Medicine having the highest percentages, while Evolutionary Biology, Genetics and Genomics, and Computational and Systems Biology had the lowest.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this finding without challenge. Reviewer 1 notes 'articles from cell-oriented disciplines were most often problematic.' The subdiscipline analysis and statistical significance are accepted as presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C44"
+    ],
+    "result": "A convolutional neural network (CNN) classified eLife hold-out test set images with an AUROC of 0.89 and AUPRC of 0.77 (manuscript reports 0.75 AUPRC in abstract, 0.77 in results).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the CNN's strong performance on eLife data. Reviewer 1 states the tool 'performed well for eLife articles,' and Reviewer 3 notes the model 'yields 0.89 AUROC score and 0.77 AUPRC on held-out eLife articles.' The performance metrics are not questioned for the eLife dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C63"
+    ],
+    "result": "The same CNN classified PubMed Central images with an AUROC of 0.78 and AUPRC of 0.39, representing a considerable drop in predictive performance compared to the eLife hold-out test set.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "All reviewers identify this performance drop as a significant limitation. Reviewer 1 states 'performance was weaker for a broader dataset of PubMed articles,' Reviewer 2 notes this 'is evidenced by a decrease in performance of the tool on the holdout dataset from PubMed Central,' and Reviewer 3 observes 'lower scores (0.78 and 0.39, respectively).' The generalizability of the tool is questioned, though the reported metrics themselves are not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C66"
+    ],
+    "result": "The CNN model may have developed a bias toward patterns specific to image types over-represented in eLife, and the diversity of PubMed Central is likely a factor behind the drop in performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers agree with this interpretation. Reviewer 2 states 'The use of training images from a single journal limits the generalizability of the empirical findings as well as of the automated screening tool itself,' and Reviewer 3 notes 'the focus on...selecting images from a single journal (eLife) for training limit the generalizability of the models.' The authors' explanation for reduced performance is accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The analysis relied on deuteranopia simulations with a severity value of 0.8 rather than the experiences of actual deuteranopes, and this single threshold does not represent the full spectrum of experiences that scientists with deuteranopia have.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly critiques this limitation: 'There is a missed chance here to have engaged deuteranopes as stakeholders earlier in the experimental design...whether setting the bar at a simulated severity of 80% is inclusive enough. A slightly lowered barrier is still a barrier to accessibility.' The methodological choice to use simulations rather than input from people with CVD is identified as a weakness that creates uncertainty about the findings' real-world applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A Web application was created where users can upload images, view simulated versions, and obtain predictions using the CNN model implemented with Tensorflow.js and the Machado et al. 2009 deuteranopia simulation matrix.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the web application positively. Reviewer 1 notes 'The authors also provide code that readers can download and run to test their own images,' and Reviewer 2 states 'The automated screening tool they provide is well-documented, open source, and relatively easy to install and use.' However, Reviewer 2 also notes a limitation: 'the classifier works well for electron microscopy images but fails at recognizing the classical diagnostic images for color-vision deficiency (Ishihara test images) as \"unfriendly.\"' Overall, the tool's existence and utility are supported despite some performance limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The percentage of 'Definitely problematic' figures in PubMed Central articles was 5.2%, considerably lower than eLife's 12.8%. One reason is that 38.5% of PubMed Central images were grayscale compared to 4.4% from eLife.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this comparative finding without challenge. The difference in problematic image rates and the explanation regarding grayscale images are not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Among individual metrics, the number of high color-distance ratio pairs performed best (AUROC: 0.75; AUPRC: 0.34). Logistic Regression using five metrics achieved AUROC: 0.82; AUPRC: 0.43 in cross-validation, but all CNN configurations outperformed it, with the best CNN using specific hyperparameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the model comparison results. Reviewer 3 notes 'The evaluation of various hyperparameters for the CNN model is extensive' and 'Machine learning algorithm used (CNN) is an appropriate choice for the problem.' The methodological approach and comparative performance are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "For 92 hold-out images misclassified by the CNN, reviewers determined that in 13 cases they had missed subtle patterns and labels should be changed, in 31 cases visual patterns might have confused the CNN but original labels were valid, and for 48 cases no confusing patterns were identified.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This error analysis is presented as part of the methodology and is not challenged by reviewers. It demonstrates the authors' attempt to understand model failures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Of 66,253 eLife images, 85.6% included at least one color pair that might be problematic for deuteranopes based on computational analysis. The mean pixel-wise color distance between original and simulated images exhibited a bimodal distribution (p<0.001), with 7.3% having very small differences (<0.01) and a median of 0.05 for the remainder.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these computational metrics as valid preliminary screening. Reviewer 3 notes 'Their CVD simulation combines five different metrics' as a strength. The distinction between computational detection of potentially problematic color pairs (85.6%) and manual determination of actually problematic images (12.8%) is implicitly accepted.",
+    "result_type": "MINOR"
+  }
+]

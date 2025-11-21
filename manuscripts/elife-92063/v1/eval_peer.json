@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C61",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors identified 15 candidate adaptive polymorphisms (CAPs) in the SARS-CoV-2 spike protein using an evolutionary probability (EP) approach with a threshold of EP < 0.05. These CAPs are located primarily at the receptor-binding domain (RBD) and Furin cleavage site, with some overlap with sites identified by other methods, leaving 11 as novel candidate adaptive sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly states that 'the specific comparison of which CAPs have been previously identified by other means, particularly with other computational methods that look into dynamics is still lacking' and urges the authors to provide deeper discussion comparing their CAP identification with previous work. The reviewer notes this comparison would strengthen the methodology, indicating the CAP identification itself needs better contextualization despite methodological soundness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C82"
+    ],
+    "result": "CAPs in closed chains exhibit negative coupling asymmetry (DCIasym) with respect to the hACE2 binding site in the open RBD chain, indicating allosteric control where CAPs dominate the dynamics of the hACE2 binding site. This asymmetry is specific to the open conformation and suggests CAPs play an allosteric role in locking the S protein in the RBD open state.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor notes 'the evidence, bolstered by an evolutionary approach and protein dynamics, is solid.' One reviewer states 'the results presented in this work are very well outlined' and 'comparing the calculated scores with previous experimentally obtained data is one of the strongest points of the manuscript.' The DCIasym analysis showing allosteric control is not specifically challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C83",
+      "C86",
+      "C87"
+    ],
+    "result": "The SARS-CoV-2 spike protein shows a high correlation (r = 0.94) between site flexibility (%DFI) and the occurrence of mutations, with more rigid residues having fewer variants. This analysis used approximately 24,000 sequences from the NCBI Datasets Project.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the evidence as 'solid' and one reviewer notes 'the citation of relevant similar results with different approaches strengthens the reasoning.' The correlation between flexibility and mutation rate is a well-established finding that reviewers do not challenge, and the reviewer praises the clear description of methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C89",
+      "C90"
+    ],
+    "result": "Omicron mutation sites (M = \u22121.74, SD = 1.00) have significantly greater allosteric control over hACE2 binding sites than Delta mutation sites (M = \u22120.98, SD = 0.80) (p<0.001), though both have far more control than random sites. The asymmetry is much more pronounced in Omicron variants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'the evidence, bolstered by an evolutionary approach and protein dynamics, is solid.' One reviewer notes 'the results presented in this work are very well outlined with well-written text, pleasant and well-described pictures.' The DCIasym comparison between variants is not specifically questioned by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "EpiScore computational results captured highly epistatic behavior among residues 493, 496, 498, 501, and 505, and lack of epistatic behavior for residues 339, 371, 373, and 375, matching experimental data. However, EpiScore showed higher epistasis values than experiment for residues 417, 440, 446, 477, 478, and 484.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer specifically praises 'comparing the calculated scores with previous experimentally obtained data is one of the strongest points of the manuscript.' The agreement between computational and experimental epistasis data is highlighted as a strength, and the discrepancies are acknowledged by the authors themselves, suggesting transparent reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C67",
+      "C68",
+      "C73",
+      "C74"
+    ],
+    "result": "Omicron shows a high proportion of additive mutations (peak centered on 1) compared to Delta, which exhibited many non-additive mutations with EpiScores below 1. Delta's non-additive dynamics are particularly associated with NTD mutations that dampen CAP control over hACE2 binding sites, while Omicron mutations are largely additive with respect to Wuhan variant CAPs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the study as 'important' and notes 'the evidence, bolstered by an evolutionary approach and protein dynamics, is solid.' One reviewer states 'the conclusion that CAP sites should be taken in particular account when considering the impact of the emergence of new strains and mutations is warranted.' The EpiScore analysis distinguishing Delta and Omicron is not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Three CAPs (346R, 486F, and 498Q) are responsible for EpiScore values upward of 2.0, indicating highly epistatic behavior. These residues are antibody binding sites or have high antibody accessibility scores, and their epistatic interactions with VOC mutations are crucial for maintaining hACE2 binding affinity while evading immunity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While one reviewer notes 'comparing the calculated scores with previous experimentally obtained data is one of the strongest points,' another reviewer specifically requests better comparison with prior work, stating 'the specific comparison of which CAPs have been previously identified by other means, particularly with other computational methods that look into dynamics is still lacking.' The identification of these specific CAPs needs better contextualization with previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C99"
+    ],
+    "result": "The XBB 1.5 subvariant contains a rare double nucleotide mutation (S486P) that displays epistasis with almost all XBB 1.5 variant sites at almost every hACE2 binding site (M = 1.40, SD = 0.46). This mutation has threefold importance: directly modifying antibody and hACE2 binding sites, and modifying hACE2 binding via epistatic cooperation with other mutations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the study as 'important' and the evidence as 'solid.' One reviewer notes 'the conclusion that CAP sites should be taken in particular account when considering the impact of the emergence of new strains and mutations is warranted.' The XBB 1.5 analysis extends the main findings to emerging variants and is not specifically challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Molecular dynamics simulations show that Omicron XBB exhibits heightened flexibility in hACE2 and antibody binding residues (reducing infectivity, enhancing immune evasion), while XBB 1.5 renders the RBD-ACE2 interface more rigid while increasing flexibility in antibody binding residues. The computational %DFI trends correlate highly (r = 0.97) with experimental Kd values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer notes a significant weakness: 'There are no replicas of the molecular dynamics (MD) simulations, understandable since it's not a MD-focused paper. However, the comparison of multiple replicas could enhance the reliability of the findings.' While the correlation with experimental data is strong, the lack of MD replicates raises concerns about the robustness of the dynamics-based conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C64",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "The study identifies a mechanistic pattern where allosteric sites (including CAPs F486 and Q498 previously identified by perturbation response scanning) exert control over binding site dynamics, and many of these allosteric sites regulating S protein function may have been subjected to adaptive evolution. CAP sites should be given special attention when considering future mutations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer specifically criticizes the lack of discussion: 'The authors also do not discuss their results in light of the work of Lam et al. (Sci. Comm, 2020) where an evolutionary analysis of Spike/ACE2 binding across homologues is performed' and notes the absence of comparison with 'single point mutational analysis of Teruel et al. in Plos Comp. Bio.' The reviewer emphasizes that 'knowing that a particular position identified here was also identified by works X, Y, Z adds a lot to the field.'",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors determined the first high-resolution cryo-EM structure of HGSNAT in complex with acetyl-CoA at 3.26 \u00c5 global resolution, revealing that HGSNAT is a dimer with C2 symmetry and comprises an N-terminal luminal domain (LD) and 11 transmembrane helices (TMs) per protomer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C60-C66 describe the structure determination and overall architecture, supported by cryo-EM data (Table 1, Figures 1-3). The resolution, symmetry, domain organization, and completeness of the model are well-documented. C131-C132 show agreement between the experimental structure and AlphaFold predictions (RMSD ~1.7 \u00c5), providing independent validation. The claim of novelty (C62, C42) is verifiable through structural database searches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The transmembrane domain exhibits a novel 4+4 fold architecture with internal pseudo-symmetry, where TMs 2-5 and TMs 6-9 are related by twofold rotation, forming a 'catalytic core' (TMs 2-5, TM10) and 'scaffold domain' (TMs 6-9, TM11), designated as the TNAT fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 describe the TMD architecture based on structural analysis (Figure 1D-F). The internal symmetry, domain organization, and evolutionary conservation (C73) are supported by structural data and sequence analysis. The naming of the TNAT fold (C74) is justified by the novelty of the architecture. However, the functional designation of 'catalytic core' and 'scaffold domain' is partly inferential based on proximity to the active site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C130",
+      "C214",
+      "C215"
+    ],
+    "result": "The luminal domain is a ~110 amino acid \u03b2-sandwich with a novel 'transthyretin-like' fold, comprising two \u03b2-sheets with unusual strand topology, positioned ~45 \u00c5 from the dimer interface and not involved in dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 describe the LD structure based on cryo-EM density (Figure 1, 2). The \u03b2-sandwich architecture, strand arrangement, and disulfide bonds are directly observed. C130, C214-C215 show that structural similarity searches yield <15% identity hits, supporting the novelty claim. The classification as 'transthyretin-like' is based on comparative analysis, though the fold is distinct enough to be considered novel. The lower resolution of LD (C61, C84) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C158"
+    ],
+    "result": "The LD-TMD interface is stabilized by an extensive ~35 \u00c5 interaction network involving salt bridges, hydrogen bonds, and hydrophobic interactions, which is essential for protein folding and stability as demonstrated by the C76F mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 describe specific interactions at the LD-TMD interface observed in the structure (Figure 2B, Figure 2\u2014supplement 2A). The interactions are well-documented with specific residues identified. C158 provides experimental validation: the C76F mutation at this interface reduces protein expression, supporting the functional importance of these interactions. The combination of structural and mutational data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The dimer interface spans ~35 \u00c5 on the luminal side, primarily mediated by a C334-C334 disulfide bond between LL2 loops and extensive \u03c0-\u03c0 interactions between LL2 and LL5, with the C334A mutant converting to monomer upon heating while F593A remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104 describe the dimer interface structure (Figure 2C, Figure 2\u2014supplement 2B). C105-C110 provide experimental validation through mutagenesis: C334A disrupts the disulfide and becomes monomeric upon heating, while F593A remains dimeric, demonstrating the critical role of the C334-C334 disulfide. The extensive \u03c0-\u03c0 network provides additional stability at room temperature. The experimental and structural data are mutually consistent and well-documented (Figure 4\u2014supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C163"
+    ],
+    "result": "The acetyl-CoA binding site (ACOS) is a ~75 \u00c5 pore spanning the TMD, lined by conserved residues of TMs 2-5 and bent TM10, with endogenously bound acetyl-CoA positioned such that its nucleoside head faces the cytosol and acetyl group is hydrogen-bonded to N258, ~4.5 \u00c5 from catalytic H269.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C125 describe the ACOS structure based on MOLEonline prediction and cryo-EM density (Figure 3, Figure 3\u2014supplement 1). The acetyl-CoA position, orientation, and interactions are clearly resolved in the density. C163 provides independent validation through LC-MS confirmation of endogenously bound acetyl-CoA. The TM10 bend (C113-C114) is structurally characterized. The charge polarity (C120) and specific interactions (C116, C122-C125) are well-documented. The mean correlation coefficient of 0.77 for acetyl-CoA modeling supports the quality of the fit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Mapping of >70 known MPS IIIC mutations onto the structure reveals that most destabilizing mutations cluster at the LD-TMD interface, with catalytic core mutations (E471K, R344C/H, P283L, N258I) directly affecting acetyl-CoA binding, as validated by N258I complete destabilization and R344H mild aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 describe the mutation mapping and FoldX analysis (Figure 4, Supplementary file 2). C145-C150 identify specific catalytic core mutations and predict their effects based on structural analysis. C151-C154 provide experimental validation: N258I shows complete destabilization (no FSEC peak despite expression), while R344H shows mild aggregation but maintained stability. The structural predictions are consistent with experimental observations. However, the mechanistic explanations (C146-C149) are inferences from structure, not direct functional measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "LD-TMD interface mutations (C76F, G262R, N273K, G423W, G424S/V) are predicted by FoldX to be highly destabilizing, with C76F experimentally confirmed to reduce protein expression, demonstrating the importance of LD-TMD interactions for folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 describe FoldX predictions for LD-TMD interface mutations (Figure 4, Supplementary file 2). C158 provides experimental validation: C76F reduces expression (Figure 4\u2014supplement 1A,B), supporting the prediction and demonstrating functional importance. The combination of computational prediction and experimental validation is consistent. However, only one mutation (C76F) was experimentally tested, limiting the validation of other predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Scaffold domain mutations (W403C, M482K, G486E, A489E, S518F, S539C, S541L) are predicted to be only mildly destabilizing, with W403C experimentally showing reduced thermal stability but maintained expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 describe FoldX predictions for scaffold domain mutations. C161 provides experimental validation for W403C: expression is maintained but thermal stability is reduced (Figure 4\u2014supplement 1A,G,I,M), consistent with the 'mildly destabilizing' prediction. The structural rationale (mutations face away from protein core) is reasonable. However, only one mutation was experimentally tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The structure represents an acetyl-CoA primed state at pH 7.5 where H269 is uncharged and acetyl-CoA is held by N258, awaiting protonation of H269 and substrate binding for catalysis, with N258 playing a greater role in stability than H269 as shown by complete destabilization of N258I versus stable H269A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C174 describe the interpretation of the structural state based on pH, acetyl-CoA binding, and prior biochemical data (C164-C167). C175-C177 provide experimental validation: H269A maintains expression and stability while N258I is completely destabilized, supporting the greater role of N258 in acetyl-CoA binding and protein stability. The interpretation is consistent with the structural observations (C172) and biochemical principles (C170-C171). However, the mechanistic interpretation (C173-C174) involves inference beyond direct structural observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C73",
+      "C139",
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "Evolutionary analysis reveals that the TMD (TMs 2-11) is highly conserved across kingdoms (RMSD 1-1.4 \u00c5 with archaea, bacteria, plants), while LD and TM1 are metazoan-specific, suggesting LD+TM1 form \u03b1-HGSNAT and TMs 2-11 form \u03b2-HGSNAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 show structural conservation of TMD across kingdoms with low RMSDs (Figure 2\u2014supplement 1). C73, C139 show TMD is evolutionarily conserved while LD/TM1 are not (Figure 4A). C211-C213 describe the genomic organization supporting this division. The speculation about \u03b1/\u03b2-HGSNAT boundaries (C213) is based on multiple lines of evidence (evolutionary conservation, genomic organization, structural flexibility). However, C87 shows the recombinant protein is not proteolyzed, so the \u03b1/\u03b2 division is inferred rather than directly observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C197",
+      "C226"
+    ],
+    "result": "The structure does not definitively resolve the catalytic mechanism debate, as the acetyl-CoA bound conformation could proceed through ordered sequential, random sequential, or ping-pong mechanisms, and concurrent work by Xu et al. also does not resolve substrate binding order or disprove acetylated intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C194, C226 acknowledge limitations of the current structure in resolving mechanistic questions. C197 critically assesses concurrent work. This is an honest assessment supported by the structural data showing only one state (acetyl-CoA bound) without evidence of H269 acetylation (C190) or substrate-bound states. The structure provides a snapshot but not a complete mechanistic picture. This limitation is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Optimization of HGSNAT expression and purification identified digitonin as the optimal detergent, with the protein predominantly dimeric in most conditions and best expressed at 32\u00b0C post-transduction, using N-terminal GFP fusion based on ColabFold predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 describe systematic optimization of expression and purification conditions using FSEC (Figure 1\u2014supplement 1). The experimental approach is sound: testing GFP position (C51), temperature (C55), detergent screening (C56), and thermal stability (C57). The choice of N-terminal GFP (C53) is rationalized by ColabFold prediction (C52). The observations are well-documented with supporting figures. This represents solid biochemical optimization work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "HGSNAT shows poor sequence conservation with known acetyl-CoA binding proteins and no structural homologs (Dali hits <17% identity over <25% length), belonging to the YeiB family of the TmAT superfamily, with a bent helix near the acetyl-CoA binding site potentially conserved across TmAT members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 describe lack of homology based on sequence and structure searches (Supplementary file 1). C135-C137 classify HGSNAT within TmAT superfamily. C138 notes a potentially conserved feature (bent helix) across families. The searches are appropriately conducted and the lack of homology supports the novelty claim. The classification is based on database annotations. The bent helix observation (C138) is speculative but reasonable based on cited work on ATAT family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "The function of the luminal domain remains unknown, though DeepSite predicts a ligand binding site and it may bind heparan sulfate to position the substrate near the active site, potentially undergoing conformational changes similar to SGNH domains in related proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C216-C223 acknowledge the unknown function of LD and present speculations. C217 describes a computational prediction (DeepSite). C219-C220 note lipid enhancement and unexplained density. C221-C222 draw analogies to OafB. C223 speculates about HS binding. These are reasonable hypotheses but lack experimental validation. The speculation is appropriately presented as such, but without functional data, the LD function remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Prior biochemical studies proposed conflicting mechanisms: Rome et al. suggested a ping-pong mechanism with histidine acetylation, Pshezhetsky et al. supported acetylated intermediates, Meikle et al. argued for random-order ternary complex formation, while Mahuran et al. found no acetylated intermediate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C189 accurately summarize prior biochemical work with appropriate citations. This represents a fair assessment of the conflicting literature on HGSNAT mechanism. The authors correctly identify the key debates in the field. This background is important for contextualizing their structural findings and acknowledging that the structure alone does not resolve these debates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The proteolytic processing of HGSNAT into \u03b1 and \u03b2 subunits remains unclear, with the proposed C123-C434 disulfide impossible in the current structure (~34 \u00c5 apart), and the recombinant protein appearing non-proteolyzed, suggesting \u03b1/\u03b2 subunits are held together by non-covalent interactions rather than disulfides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 describe prior knowledge about proteolytic processing. C87, C210 show the recombinant protein is not proteolyzed. C201-C204 demonstrate the proposed C123-C434 disulfide is structurally impossible in this conformation. C202-C203 identify alternative disulfide partners. C205-C209 discuss uncertainty about protease sites. The structural evidence contradicts a prior proposal (C123-C434 disulfide) and the authors appropriately propose alternative explanations (C205). However, the non-proteolyzed recombinant protein limits direct insights into the mature form.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "Concurrent work by Xu et al. obtained structures at pH 8.0 in GDN showing limited conformational changes, but future structures at lysosomal pH in membrane mimetics with native lipids are needed to fully resolve the catalytic mechanism and potential pH-driven conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C197 accurately describe concurrent work and its limitations. C198-C200 propose future experiments needed to resolve mechanistic questions. This represents appropriate acknowledgment of concurrent work and honest assessment of what remains unknown. The suggestions for future work (lysosomal pH, membrane mimetics, native lipids) are reasonable based on the current limitations.",
+    "result_type": "MINOR"
+  }
+]

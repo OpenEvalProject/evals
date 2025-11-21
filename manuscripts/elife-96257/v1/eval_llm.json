@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "H3-K27M is a driver mutation in DMGs that causes global epigenetic alterations including loss of H3K27me3, gain of H3K27ac, and deregulation of the MYC pathway, which collectively promote tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C9-C13 are well-supported by extensive citations to published literature and represent established knowledge in the field. These claims provide the foundational context for the study and are consistently referenced throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HDAC inhibitors show therapeutic promise in H3-K27M DMGs but cells develop resistance, and current standard of care (radiation alone) has not improved survival, highlighting the need for combination therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C53-C55 are supported by multiple citations to published studies and clinical trials. These claims establish the clinical rationale for the study and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MYC is highly expressed in H3-K27M DMGs and correlates with poor prognosis, but direct targeting of MYC is challenging due to its essential role in normal cells and lack of druggable binding pockets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C56-C59 are supported by citations to published literature and represent established knowledge about MYC in cancer biology. These claims provide the rationale for using an indirect MYC inhibitor (Sulfopin).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C18",
+      "C19",
+      "C60"
+    ],
+    "result": "Sulfopin is a PIN1 inhibitor that downregulates MYC target genes in vitro and blocks MYC-driven tumors in vivo with negligible toxicity in preclinical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C18-C19, and C60 are supported by citation to Dubiella et al., 2021. These claims accurately represent prior work on Sulfopin and provide the rationale for testing it in DMG models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Sulfopin treatment of H3-K27M DMG cells downregulates MYC target genes and increases H3K27me3 specifically at MYC target gene promoters without affecting global H3K27me3 distribution or causing PIN1 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by RNA-seq, RT-qPCR, Cut&Run, and western blot data (Figures 1A-D and supplements). The data consistently show specific effects on MYC targets with appropriate controls demonstrating specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Sulfopin treatment reduces viability of H3-K27M DMG cells in an H3-K27M-dependent manner, with DMG cells showing greater sensitivity than normal astrocytic-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by cell viability data across multiple cell lines including isogenic knockout controls (Figure 1E-F and supplements). The use of isogenic controls strengthens the conclusion of H3-K27M-dependent sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C61"
+    ],
+    "result": "Analysis of published DMG tumor data reveals that MYC and MYC target genes are highly expressed in DMG tumors (especially H3-K27M mutants) compared to normal tissue, while PIN1 expression is lower in tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C61 are supported by analysis of published transcriptomic datasets (Figure 1 supplements I-M). The analysis is appropriate and the findings are clearly presented, though the paradox of low PIN1 expression in tumors that respond to PIN1 inhibition is noted but not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C72",
+      "C73"
+    ],
+    "result": "Sulfopin sensitivity correlates with cell doubling time and MYC expression levels, with faster-dividing cells expressing higher MYC showing greater sensitivity to Sulfopin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C72-C73 are supported by correlation analyses across eight DMG cultures (Figure 1 supplements N-P). The correlations are statistically significant and biologically plausible given PIN1's role in cell cycle regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Sulfopin treatment reduces H3K27me3 signal over CpG islands, which may contribute to growth inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C34 is supported by Cut&Run data (Figure 1 supplement Q), but the interpretation is speculative. The reduction of H3K27me3 at CGIs contradicts the known requirement for residual H3K27me3 at CGIs for DMG cell survival, making the proposed mechanism unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C74"
+    ],
+    "result": "The combination of Sulfopin and Vorinostat shows additive effects on cell viability (reducing viability by 80%), with H3.3-K27M cells showing greater sensitivity than H3.1-K27M cells, correlating with higher MYC expression levels. MYC and MYC target genes are potential biomarkers of response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C74 are supported by extensive cell viability data across eight DMG cultures with BLISS index calculations (Figure 2 and supplements). The correlation between MYC expression and treatment response is well-documented and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C75"
+    ],
+    "result": "The combined treatment causes more extensive transcriptional changes than single agents (494 vs 145-167 genes), with significant downregulation of mTORC1, BMI1, cAMP, and IL-6/JAK/STAT3 pathways, induction of p21, and mTOR expression correlating with treatment response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C75 are supported by RNA-seq, GSEA, western blot, and RT-qPCR data (Figure 2 and supplements). The transcriptomic analysis is comprehensive with appropriate statistical methods, and key findings are validated by orthogonal methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Vorinostat increases global H3K27ac levels as expected, but Sulfopin alone reduces H3K27ac, and the combination shows attenuated H3K27ac accumulation compared to Vorinostat alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by single-molecule imaging and western blot data (Figure 3A-C and supplements). The use of single-molecule imaging provides quantitative validation of the western blot results, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The combined treatment causes the strongest reduction in H3K27ac at cluster 1 gene promoters (which are downregulated) and these genes gain H3K27me3, supporting their epigenetic repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by Cut&Run data showing coordinated changes in H3K27ac and H3K27me3 at specific gene promoters (Figure 3D-E and supplements). The correlation between histone modifications and gene expression changes is consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Enhancers that lose H3K27ac in the combined treatment (Vorinostat-unique enhancers) are associated with genes enriched for oncogenic pathways including RAS, MAPK, and PI3K-AKT signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by Cut&Run data and pathway enrichment analysis (Figure 3F-G and supplements). The analysis appropriately links enhancer regions to target genes and performs pathway enrichment, with specific examples validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The combination of Sulfopin and Vorinostat significantly reduces tumor growth in H3-K27M DMG xenograft models and decreases mTOR-positive tumor cells in vivo without affecting mTOR in surrounding normal mouse cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7-C8, and C50-C52 are supported by in vivo bioluminescence imaging and immunofluorescence data (Figure 4). The in vivo results are consistent with in vitro findings, and the specificity for tumor cells is demonstrated by analysis of surrounding tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C77"
+    ],
+    "result": "Despite significant tumor growth reduction, the combined treatment did not increase mouse survival, likely due to the aggressiveness of transplanted tumors rather than treatment toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C77 are supported by the in vivo experimental results. The interpretation that rapid deterioration reflects tumor aggressiveness rather than toxicity is reasonable given that all groups showed similar deterioration, though this limits the translational implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The PTEN/AKT/mTOR pathway plays a key role in DMG disease, with AKT gain or PTEN loss in ~70% of tumors. First-generation mTOR inhibitors had limitations, but dual mTORC1/mTORC2 inhibitors show efficacy in DMG models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by citations to published literature. These claims provide context for the observed mTOR pathway downregulation and are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The combined treatment inhibits mTOR signaling likely through alternative pathways, potentially via MYC-mTOR crosstalk where Sulfopin-mediated MYC inhibition impairs mTOR-dependent cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are mechanistic inferences based on observed pathway downregulation and literature on MYC-mTOR interactions. While plausible, the specific mechanism is speculative and not directly tested. Additional experiments targeting this pathway would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C76",
+      "C80"
+    ],
+    "result": "H3-K27M expression increases H3K27ac at repetitive elements and super-enhancers regulating oncogenes, but high MYC levels suppress interferon responses. Dual HDAC/MYC targeting may induce viral mimicry, and Sulfopin may attenuate H3K27ac through MYC target downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 are supported by citations to published literature, but claims C76 and C80 are speculative inferences not directly tested in this study. The proposed mechanisms for viral mimicry induction and H3K27ac attenuation are plausible but require experimental validation.",
+    "result_type": "MINOR"
+  }
+]

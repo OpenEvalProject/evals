@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C56",
+      "C57"
+    ],
+    "result": "Information capacity in heritable regulatory architectures grows combinatorially with the number of interacting molecules, requiring positive feedback loops for transmission. With 2, 3, and 4 entities, there are 1, 25, and 5604 heritable regulatory architectures respectively, with 4 entities storing ~12.45 bits of information\u2014exceeding a 4 base-pair genome (8 bits).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide computational enumeration data shown in Table 1. Claims C2, C17, C18 correctly calculate information capacity using log2 transformations. Claims C3, C56, C57 establish the theoretical requirement for positive feedback loops. The mathematical derivations and computational methods are described in detail, and the comparison to genome information storage is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C58",
+      "C59"
+    ],
+    "result": "The minimal heritable regulatory architecture consists of two molecules that mutually promote each other's production in a positive feedback loop. Not all positive feedback loops are heritable\u2014those promoting transient amplification (e.g., mutual repression) are incompatible with perpetual inheritance due to eventual loss by dilution or turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 establish the theoretical foundation for minimal heritable architectures with clear reasoning about dilution and turnover. Claims C58-C59 provide the fundamental requirement for sustained production, supported by citations to foundational work on the origin of life. The logic is internally consistent and well-grounded in first principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C4",
+      "C5"
+    ],
+    "result": "Genetic and epigenetic perturbations generate distinct heritable changes in regulatory architectures. Genetic changes result in unrestrained growth or decay depending on residual architecture, while epigenetic changes can result in growth, decay, or recovery at new steady states. Some architectures nearly indistinguishable by genetic perturbation can be distinguished epigenetically, and some epigenetic changes become permanently heritable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by systematic simulations shown in Figure 2 and supplementary figures for all 26 architectures. The simulations use ordinary differential equations with defined parameters (Supplementary file 1). Claims C4-C5 are demonstrated through the same simulation framework. The distinction between permanent and transient perturbations is clearly modeled and the outcomes are logically consistent with the underlying mathematical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The 26 simplest heritable regulatory architectures can be mutated to generate 61 different changes through single perturbations, yielding a change matrix density of ~0.19. Unlike DNA sequence changes (density = 1), not all changes are immediately accessible among architectures. Some architectures relying on all components for production cannot change without additional positive regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 provide enumeration data shown in Figure 3 with clear categorization of change types. Claim C25 makes a valid comparison to DNA mutability. Claim C27 identifies architectural constraints with logical reasoning. Claim C26 acknowledges underestimation due to gain-of-interaction mutations. The analysis is systematic and the constraints are logically derived from the requirement for sustained production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C6",
+      "C31"
+    ],
+    "result": "Of 225,000 simulated entity-sensor-property systems, 78,285 remained stable after 250 generations. Only architectures with \u22653 entities/sensors showed heritable epigenetic changes. Intrinsically unstable architectures can become heritable through periodic interactions with external regulators (e.g., environmental signals or somatic cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 report direct simulation results with system IDs provided in Supplementary file 2. Claim C30 is supported by simulations examining periodic perturbations (Videos 2-12, system 46357 example). Claims C6 and C31 extend these findings with reasonable speculation about biological applications. The simulation framework is described in Methods with sufficient detail for reproducibility, though the stochastic elements and parameter choices could affect generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Differential inhibition of positive feedback loops transmitting regulatory architectures can explain gene-specific differences in heritable RNA silencing in C. elegans. The dynamics depend on transgenerational inhibitory feedback reducing the HRDE-1-dependent 22G-pUG positive feedback loop, with sensors regulated by PRG-1 and opposed by piRNA binding to silenced mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C39, C42 cite published experimental observations. Claims C40-C41, C43-C44 propose a theoretical model (Figure 6d) to explain these observations. While the model is internally consistent and provides analytical expressions (Equations 4-5), it remains speculative. The proposed sensors are not identified experimentally, and the model has not been validated against quantitative experimental data. The claim requires experimental validation of the proposed inhibitory feedback mechanism and identification of the PRG-1-regulated sensors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "C. elegans development involves 14 cell divisions from zygote to zygote. Experimental observations show parental rde-4 can enable RNA silencing in rde-4(-) progeny, and loss of meg-3/4 causes persistent silencing defects despite restoration. Of 10,000 simulated ESP systems incorporating C. elegans developmental timing, 11 maintained all entities/sensors for 10 generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by curated developmental timing data (Supplementary file 3) from published literature. Claims C33-C34 cite published experimental observations. Claim C35 reports simulation results (Supplementary file 4) using the modified ESP framework. The integration of developmental timing into simulations is methodologically sound, though the small number of stable systems (11/10,000) suggests the parameter space may be highly constrained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Deducing regulatory architectures from perturbation outcomes is complicated by multiple architectures converging to the same result when perturbed (e.g., 16 architectures can yield architecture 'A'). While measuring dynamics after perturbing each entity/sensor can distinguish all 26 architectures, the required temporal resolution is unclear. Simulations exploring perturbations at different times could enhance understanding and guide experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by the transition analysis in Figure 3 and simulation results. The convergence problem is clearly demonstrated. Claim C66 is a reasonable methodological recommendation based on the identified challenges. The evaluation correctly identifies a fundamental limitation in inferring regulatory architectures from endpoint measurements, which is well-established in systems with feedback loops.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Entity-sensor-property (ESP) systems provide a framework for analyzing diverse regulatory interactions while preserving causation and heritability. The framework addresses limitations of existing regulatory networks by parsing bottleneck stage contents into entities, sensors, and sensed properties, allowing simulation despite incomplete knowledge. A positive feedback loop can only support inheritance of one property per entity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 cite limitations of existing approaches and reference prior work establishing the ESP framework. Claim C69 describes a stated advantage. Claims C45-C46 discuss general principles with reasoning about prions and other examples. The framework is internally consistent and the limitation that one feedback loop supports one property (C46) is logically sound. However, the practical utility and generalizability of the ESP framework for real biological systems remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C70",
+      "C71"
+    ],
+    "result": "Inducing heritable epigenetic changes is more challenging than genetic changes. DNA allows only 6 base exchanges per mutation, while 61 HRA changes are possible with \u22643 interactors. The genome likely has the highest information density per molecule. Information density changes through transcription/translation, folding, and complex formation. As architectures evolve, entities with many sensed properties appear central, suggesting any high-density information storage could act as a 'genome' in synthetic life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C49 compare mutability with valid reasoning and data (Figure 3). Claims C51-C53 describe information flow in gene expression with general biological knowledge. However, claims C50, C54, C70-C71 are largely speculative inferences about information density and evolutionary complexity without quantitative support. The comparison between genetic and epigenetic mutability (C47-C49) is supported, but the broader claims about information density and synthetic biology applications (C55) lack empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10"
+    ],
+    "result": "Interacting molecules create regulatory architectures that persist despite molecular turnover. Molecular localization and activity patterns are recreated across generations during comparable developmental stages, tracing waveforms that return in phase with similarity of form and function across generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a foundational statement framing the study. Claims C9-C10 cite previous work (Jose 2018, 2020c) establishing these observations. These claims provide the biological motivation for the theoretical framework developed in the manuscript. While the claims themselves are supported by citations, they represent background knowledge rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Genome editing and RNA interference are common experimental methods for perturbing entities/sensors. RNAi can cause heritable defects, and conditions promoting or inhibiting heritable epigenetic change after RNAi depend on regulatory architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 cite established experimental methods with appropriate references. Claim C63 cites previous work proposing architecture-dependence. These claims establish the experimental context for the theoretical analysis but do not present novel findings. The connection between experimental perturbations and the theoretical framework is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Mortal somatic lineages with cells that reproducibly interact with the immortal germ lineage could make a wider variety of architectures heritable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is a speculative inference based on simulation results about periodic rescue (C6, C30-C31). While the simulations show that periodic perturbations can stabilize otherwise unstable architectures, the extrapolation to somatic-germline interactions in multicellular organisms is not directly tested. The claim represents an interesting hypothesis but requires experimental validation in actual biological systems.",
+    "result_type": "MINOR"
+  }
+]

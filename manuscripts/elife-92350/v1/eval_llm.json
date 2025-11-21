@@ -1,0 +1,245 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C30",
+      "C31",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed ldSPIM, a novel imaging method combining light sheet microscopy with nanopipette-based local delivery of agonists to study Myddosome formation in live macrophages. This method overcomes limitations of TIRF and confocal microscopy by enabling whole-cell 3D imaging with high temporal resolution (2 s per cell scan) and controlled agonist delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C30, and C31 describe the technical capabilities of the method, which are well-established principles. Claims C27-C29 accurately describe limitations of alternative techniques. The method is demonstrated in subsequent experiments (C33-C53), providing validation of its functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Sonicated A\u03b2 fibrils were characterized by electron microscopy, showing the majority were less than 100 nm in length with a large population of sub-100 nm oligomers. Control experiments with PBS and A\u03b2 monomers showed no Myddosome formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by electron microscopy data in Figure 1\u2014figure supplement 1. Claim C35 provides appropriate negative controls shown in Figure 2, establishing specificity of the response to aggregated forms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Myddosomes formed significantly faster after LPS stimulation (mean 80 s) compared to sonicated A\u03b2 fibrils (mean 372 s), with statistical significance (p = 3.33E-8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by live-cell imaging data in Figure 4 with appropriate statistical testing (unpaired two-sided Student's t-test). The sample size (n=77 across five biological replicates) appears adequate, and the p-value indicates strong statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Myddosomes triggered by LPS had shorter mean lifetimes (162 s) compared to those triggered by A\u03b2 fibrils (182 s), with A\u03b2-triggered Myddosomes showing a higher proportion of longer-lived complexes. Photobleaching controls confirmed that signal loss was primarily due to Myddosome degradation rather than photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by lifetime distribution data in Figure 5 with appropriate statistical testing (Kolmogorov-Smirnov test, p < 0.0001). Claims C43-C45 provide critical photobleaching controls (Figure 5\u2014figure supplement 1) showing only 6% loss in fixed cells vs 90% in live cells over 500 s, validating that observed dynamics reflect biological processes. Claim C46 provides mean lifetime values from fitted data in Figure 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Most Myddosomes remained localized at the cell membrane rather than undergoing internalization during the first 30 minutes after stimulation with either LPS or A\u03b2 fibrils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by spatial localization analysis in Figure 7, showing stable membrane-localized populations that remain higher than cytoplasmic populations. The inference in C48 is reasonable given the data, though the threshold used for membrane vs cytoplasm classification (1.4 \u03bcm) should be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C49"
+    ],
+    "result": "Both LPS and A\u03b2 fibrils triggered formation of Myddosomes with a range of sizes (50-500 nm), with A\u03b2-triggered Myddosomes being consistently larger than LPS-triggered ones, especially at early time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C49 are supported by super-resolution dSTORM imaging data in Figures 8 and 9. Figure 9 shows statistically significant size differences (p < 0.05) at multiple time points. However, the resolution limit of dSTORM (~20 nm) should be considered when interpreting the smallest measured sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Small, circular Myddosomes (~100 nm diameter, shape factor = 1) formed in high proportion at early time points (30 min) and decreased over time. These small circular Myddosomes were less abundant after A\u03b2 triggering compared to LPS triggering at early time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by shape factor analysis in Figure 10. The bimodal distribution (C50), correlation with size (C51), and temporal dynamics (C52-C53) are clearly shown. However, the assumption that shape factor = 1 corresponds to functional Myddosomes requires further validation, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C56",
+      "C71",
+      "C72"
+    ],
+    "result": "The multivalency of A\u03b2 fibrils leads to formation of larger Myddosomes that form more slowly and take longer to disassemble compared to LPS. Myddosomes also change in size and shape over time with continued agonist exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C56 represent the main mechanistic interpretation supported by the kinetic (C4, C38-C39), lifetime (C5, C40-C42, C46), and size data (C6, C49). Claims C71-C72 summarize these findings. The interpretation is logical and consistent with the data, though direct evidence of multivalent binding is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C54",
+      "C55",
+      "C75",
+      "C77"
+    ],
+    "result": "Sonicated A\u03b2 fibrils trigger TLR4 signaling less efficiently than LPS, which may be explained by the combination of slower formation, longer lifetime, and altered structure of A\u03b2-triggered Myddosomes. Most Myddosomes are removed by disassembly at the cell surface for both agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C54-C55, C75, and C77 represent conclusions drawn from the experimental data. The reduced efficiency is inferred from the kinetic and structural differences observed. Claim C55 is supported by the membrane localization data (C47-C48). However, direct measurement of signaling output (e.g., cytokine production) in parallel with these imaging experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C61"
+    ],
+    "result": "Small round Myddosomes formed at early times are likely signaling competent, as are larger A\u03b2-triggered Myddosomes, based on correlation with NF-\u03baB translocation timing and prolonged TNF\u03b1 production, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63 are speculative inferences based on temporal correlation with previous work (C61). While plausible, the authors acknowledge they cannot distinguish signaling-competent from incompetent Myddosomes in the current study. Direct functional validation (e.g., co-imaging of Myddosomes with signaling readouts) would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C76",
+      "C78"
+    ],
+    "result": "The delayed kinetics and altered structure of Myddosomes may be a general property of protein aggregates, with smaller A\u03b2 aggregates potentially being more potent agonists than larger ones, and multivalent protein aggregates generally triggering TLR4 less effectively than LPS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C76, and C78 are speculative generalizations beyond the data presented. Only sonicated A\u03b2 fibrils were tested, so extension to other protein aggregates (tau, \u03b1-synuclein) or prediction about size-dependent potency requires additional experimental validation. These are reasonable hypotheses for future work but not supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Viral transduction may result in MyD88 overexpression leading to structural variation, though the observed heterogeneity in Myddosome structure may also be functionally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C58 acknowledge a significant limitation of the model system. Overexpression could artificially increase Myddosome size or alter stoichiometry. Without comparison to endogenous expression levels or physiological validation, it's unclear how much the observed heterogeneity reflects biology versus experimental artifact. This limitation affects interpretation of all structural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C73",
+      "C74"
+    ],
+    "result": "The structural diversity of Myddosomes provides a potential explanation for how diverse signaling outcomes are possible when TLR4 is activated by different agonists, with lifetime and structure playing important roles in signaling strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64, C73-C74 are interpretive and speculative. While the observed structural diversity is real, the functional significance is not directly demonstrated. The authors acknowledge that determining signaling competency of different-sized Myddosomes is an important future goal. Without this functional validation, the mechanistic link between structure and signaling outcome remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Myddosome formation is the rate-limiting step for both LPS and A\u03b2 aggregate triggering, as evidenced by the 80 s delay for LPS despite high affinity binding, direct delivery, and preformed TLR4 dimers. Similar reasoning applies to A\u03b2 aggregates given their high affinity (active at pM concentrations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 present a logical mechanistic interpretation. The presence of preformed TLR4 dimers (C66, supported by citation) and high affinity of LPS (C67, ~3 nM) make binding unlikely to be rate-limiting. The 80 s delay (C68) therefore suggests Myddosome assembly is slow. The inference for A\u03b2 (C69-C70) is reasonable given pM potency indicates high affinity, though direct affinity measurements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C59",
+      "C60"
+    ],
+    "result": "Background and prior work establishing the biological context for the study, including the role of TLR4 and Myddosomes in innate immunity and Alzheimer's disease, the composition and structure of Myddosomes, and previous findings on Myddosome formation kinetics and agonist-dependent differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C11-C26, C59-C60) represent established knowledge and prior work, appropriately cited throughout. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the background accurately represents the field.",
+    "result_type": "MINOR"
+  }
+]

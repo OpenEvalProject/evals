@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Different bacterial species have divergent effects on Orsay virus transmission in C. elegans. Ochrobactrum species promoted transmission (2.7-2.9-fold increase vs E. coli OP50), P. lurida MYb11 attenuated transmission (4.1-fold decrease vs E. coli OP50), and P. aeruginosa strains PA01 and PA14 further attenuated transmission (11-fold and 32-fold decrease vs E. coli OP50, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C38-C40, and C50-C52 provide consistent quantitative evidence from transmission assays showing species-specific effects of bacteria on virus transmission. The data are supported by multiple experimental replicates (Figure 1B-C, Figure 2A) with appropriate statistical analysis and controls. The confirmation experiment (C39) rules out multiple rounds of infection as a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Bacterial species dramatically modulate host susceptibility to Orsay virus infection over three orders of magnitude. The ID50 in the presence of P. lurida MYb11 was 120-fold higher than E. coli OP50 and 1800-fold higher than O. vermis MYb71. P. aeruginosa PA14 further attenuated host susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C42-C46 present quantitative dose-response data (Figure 1D-F) showing dramatic differences in ID50 values across bacterial species. The results are confirmed by independent FISH staining (C44-C45) and replicated across multiple experiments (Figure 1\u2014figure supplements 2-3). The three-order-of-magnitude range is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "P. aeruginosa PA14 nearly completely blocks Orsay virus infection. At the highest virus dose tested, only 0.5% of animals were infected with PA14 compared to 54% (PA01), 70% (P. lurida MYb11), and 97% (E. coli OP50). FISH staining confirmed no detectable infection in the presence of PA14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide converging evidence from both GFP reporter assays and FISH staining (Figure 2B-C) demonstrating the potent protective effect of P. aeruginosa PA14. The data are internally consistent and replicated (Figure 2\u2014figure supplement 1), with appropriate statistical comparisons showing significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Bacterial modulation of Orsay virus susceptibility is not explained by changes in host feeding behavior. Pharyngeal pumping rates showed no differences at 6 hr and only minor differences at 24 hr that do not correlate with susceptibility patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C57-C59 present pharyngeal pumping data (Figure 1\u2014figure supplement 4) showing minimal differences in feeding behavior that do not explain the observed effects on viral susceptibility. The inference (C49, C59) is reasonable given that O. vermis MYb71 (which promotes infection) had lower pumping rates than P. lurida MYb11 (which attenuates infection).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "General bacterial pathogenicity does not explain effects on host susceptibility to Orsay virus. O. vermis MYb71 and P. aeruginosa PA14 caused similar mortality but had opposite effects on viral susceptibility, suggesting specific rather than general pathogenic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 present lifespan data (Figure 2\u2014figure supplement 2) showing that bacteria with similar effects on host mortality have divergent effects on viral susceptibility. The inference (C67-C68) is well-supported by the dissociation between pathogenicity and viral susceptibility effects, though the authors appropriately note that specific pathogenic mechanisms may still contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Bacterial attenuation of Orsay virus transmission is not due to effects on viral RNA1 replication efficiency. A plasmid-based replication system showed no differences in RNA1 replication across bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 present data from a plasmid-based replication system (Figure 3A) that bypasses viral entry and directly tests replication efficiency. The system includes appropriate controls (heat-shock efficiency, replication-defective mutant), and the inference (C71) is justified by the lack of differences observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In RNAi-defective animals, viral RNA1 replication occurs regardless of bacterial species, but in wild-type animals, replication is reduced in the presence of P. aeruginosa. The reduced viral load in wild-type populations likely reflects fewer infected individuals rather than impaired replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 present qPCR data (Figure 3B-C) comparing viral replication in wild-type and rde-1 mutant backgrounds. The inference (C74) is reasonable given that replication occurs normally in the rde-1 background where infection rates are higher, suggesting the issue is infection frequency rather than replication capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Orsay virus is not rapidly degraded by P. lurida MYb11 or P. aeruginosa strains. A twofold difference in viral recovery between E. coli OP50 and P. lurida MYb11 was present at 30 minutes and did not increase over 24 hours, suggesting differences in virus recovery rather than degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 present viral stability data (Figure 3D-E) showing no substantial degradation over 24 hours. The inference (C77) about recovery differences is reasonable given the immediate appearance and lack of progression of the difference, though this interpretation could benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Viral shedding is not substantially reduced by bacterial species. Observed differences in viral levels likely reflect differences in virus recovery from bacterial lawns rather than actual differences in shedding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C80 present viral shedding data (Figure 3F), but the interpretation (C80) relies heavily on the viral stability results. The fourfold difference observed (C79) is substantial, and while the authors' interpretation about recovery differences is plausible, it remains speculative without direct validation. Additional experiments would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In P. aeruginosa PA01, quorum sensing regulators (las, rhl, pqs systems and gacA) are required for attenuation of Orsay virus infection, but individual exopolysaccharide production pathways are not involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 present genetic analysis data (Figure 4B, Figure 4\u2014figure supplement 1) showing that mutations in quorum sensing regulators suppress viral attenuation while exopolysaccharide mutants have no effect. The data are clear and the inferences (C88-C89) are well-supported by the mutant phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "In P. aeruginosa PA14, gacA and rhlR are required for attenuation of Orsay virus infection, with rhlI and pqsE functioning redundantly to regulate rhlR. The las system has a lesser effect, and exopolysaccharide production is not involved. There may be differential regulation or additional factors in PA14 compared to PA01.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C98 present genetic analysis in PA14 (Figure 4C-E, Figure 4\u2014figure supplement 2) showing similar but not identical patterns to PA01. The redundancy of rhlI and pqsE (C91-C93) is well-demonstrated by the double mutant phenotype. The speculation about differential regulation (C98) is appropriately cautious and supported by the observed differences between strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Quorum sensing mutants suppress attenuation of Orsay virus transmission. All PA01 quorum sensing mutants increased transmission >6-fold, while PA14 rhlR and gacA mutants increased transmission 19-fold and 17-fold respectively. The magnitude of suppression was greater in PA01 than PA14, suggesting possible strain-specific factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 present transmission assay data (Figure 4F) confirming that genetic effects on susceptibility translate to effects on transmission. The data are consistent with the susceptibility assays. The speculation about strain-specific factors (C103) is reasonable given the quantitative differences observed, though it remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Bacterial culture supernatants did not show potent effects on host susceptibility to Orsay virus, though local concentrations of quorum sensing compounds may differ from experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 present negative results from supernatant experiments (Figure 4\u2014figure supplement 3). While the data are clear, the authors appropriately note (C105) that this doesn't rule out effects at locally higher concentrations. The negative result is informative but doesn't definitively exclude secreted factors, limiting the strength of conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A candidate-based screen of 211 P. aeruginosa PA14 genes identified 18 putative hits, with 6 confirmed: ptsP, prpC, kinB (strong effects) and clpA, glnK, fabF1 (weaker effects). All six genes are required for full PA14 virulence in C. elegans, but represent only 6 of 41 virulence genes tested, indicating specificity beyond general virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 present results from a systematic genetic screen (Figure 5A-C) with appropriate validation. The screen design is sound, combining multiple gene sets. The inference about specificity (C112) is well-supported by the selective identification of 6 out of 41 virulence genes. The high variation in transmission assays (C110) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "gacA has a conserved role in attenuating Orsay virus infection and transmission in both P. aeruginosa and P. lurida MYb11. Knockout of gacA in P. lurida MYb11 increased infection from 43% to 77% and increased transmission 2.9-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 present genetic analysis in P. lurida MYb11 (Figure 6B-D) showing that gacA deletion suppresses viral attenuation. The data are confirmed by both GFP reporter and FISH (C114), and the inference about conservation (C116) is well-supported by the parallel effects in both Pseudomonas species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Knockout of P. lurida MYb11 orthologs of ptsP, prpC, or kinB did not suppress viral attenuation, unlike in P. aeruginosa PA14. This may reflect different gene functions between species or specific effects on PA14 virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 present negative results for three genes in P. lurida MYb11 (Figure 6E-F). The data are clear, and the authors appropriately present alternative interpretations (C118-C119) as speculation. The contrast with PA14 results is striking and suggests either functional divergence or virulence-specific mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C124",
+      "C125"
+    ],
+    "result": "In mixed bacterial cultures, P. lurida MYb11 dominates over O. vermis MYb71 in determining infection outcomes and reduces intestinal accumulation of Ochrobactrum. A 50% mixture of O. vermis MYb71 and P. lurida MYb11 attenuated infection to the same degree as pure P. lurida MYb11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 and C124-C125 present data from bacterial mixing experiments (Figure 7A-C) showing that P. lurida MYb11 can override the pro-viral effects of O. vermis MYb71. The colonization data (C124-C125) provide a mechanistic explanation by showing reduced Ochrobactrum accumulation in mixed cultures. The results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Electron microscopy revealed that O. vermis MYb71 closely associates with the intestinal brush border and glycocalyx, with regions of variable glycocalyx thickness and potential deformation of microvilli, unlike the uniform glycocalyx observed with E. coli OP50. This may promote Orsay virus infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126, C129-C131 present electron microscopy observations (Figure 7D-E) showing structural differences in the glycocalyx with different bacteria. While the observations are clear, the interpretation that this promotes infection (C131) is explicitly stated as speculation by the authors and has not been tested. The hypothesis is plausible given the S. marcescens precedent (C23), but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C138"
+    ],
+    "result": "Individual bacteria have profound, species-specific impacts on Orsay virus transmission. Host susceptibility can vary by over three orders of magnitude depending on the bacterial species present, and pathogenic P. aeruginosa can further attenuate transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 and C138 synthesize the major findings of the study. These conclusions are well-supported by the extensive quantitative data on transmission and susceptibility across multiple bacterial species. The three-order-of-magnitude range is documented (C6, C42-C43), and the species-specificity is demonstrated throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Tripartite host-virus-bacteria interactions play a critical role in determining virus transmissibility. Associated bacteria can effectively determine host susceptibility versus resistance to viral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 represent the overarching conclusions of the study. These are well-supported by the comprehensive experimental data showing that bacteria modulate both transmission and susceptibility through multiple mechanisms (quorum sensing, colonization, potential glycocalyx disruption). The quantitative evidence across multiple bacterial species and genetic analyses provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "The C. elegans-Orsay virus experimental system is tractable for identifying molecular determinants of viral transmission and will be useful for identifying additional biotic factors influencing transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 assess the utility of the experimental system. C139 is supported by the successful identification of specific bacterial genes (quorum sensing regulators, gacA, etc.) that modulate transmission. C140 is a reasonable projection about future applications, though it represents speculation about future work rather than a current result.",
+    "result_type": "MINOR"
+  }
+]

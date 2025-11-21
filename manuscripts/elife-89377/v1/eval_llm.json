@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The majority (~80%) of cardiac macrophages in healthy adult mice are derived from yolk sac erythro-myeloid progenitors (EMPs), with ~20% derived from definitive hematopoietic stem cells (HSCs), establishing that most resident cardiac macrophages are of early embryonic origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are well-supported by complementary lineage tracing experiments using two independent reporter systems (Tnfsf11aCre and Flt3Cre), with quantitative flow cytometry data showing ~80% YFP+ macrophages in EMP tracing and ~20% in HSC tracing. The conclusion logically follows from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The Csf1r\u0394FIRE mouse model specifically depletes ~90% of cardiac macrophages without affecting monocyte or neutrophil numbers, and the depleted macrophages are specifically EMP-derived resident macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are supported by flow cytometry and histology data showing selective macrophage depletion in \u0394FIRE mice. The specificity is confirmed by crossing with lineage tracing mice showing that depleted cells are YFP+ EMP-derived macrophages, while monocytes and neutrophils remain unaffected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Acute depletion of EMP-derived macrophages using diphtheria toxin in Tnfsf11aCreRosa26fs-DTR mice results in premature death within 24 hours and induces a systemic inflammatory response syndrome-like phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by survival data showing 100% mortality within 24 hours (n=6) and physiological measurements showing body temperature and cardiac volume changes. This establishes that DT-mediated depletion is not viable for studying resident macrophage function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Single-cell RNA-sequencing reveals that \u0394FIRE mice specifically lack two macrophage clusters expressing homeostatic and antigen-presenting genes, which correspond to ~90% of YFP+ EMP-derived macrophages, while other macrophage populations and monocytes remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 are supported by comprehensive scRNA-seq analysis showing specific cluster depletion in \u0394FIRE mice that correlates with YFP expression patterns in lineage tracing. The specificity is confirmed by unchanged gene expression and cell numbers in monocytes and inflammatory macrophage clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Absence of resident macrophages in \u0394FIRE mice is associated with altered gene expression in non-macrophage immune cells (T-cells, B-cells, NK cells) and reduced overall phagocytic capacity in the heart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by scRNA-seq data showing differential gene expression in non-macrophage clusters and computed phagocytosis scores. However, the functional significance of these changes in baseline conditions requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Absence of resident macrophages in \u0394FIRE mice negatively influences cardiac remodeling after I/R injury, with LVEF and stroke volume improving in controls but remaining unchanged or worsening in \u0394FIRE mice from day 6 to day 30 post-injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by longitudinal PET imaging data showing differential cardiac function trajectories between control and \u0394FIRE mice. The data demonstrate impaired functional recovery in \u0394FIRE mice, indicating a detrimental role of resident macrophage absence on cardiac remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Infarct size, measured by both viability defect (PET) and fibrotic area (histology), is not different between control and \u0394FIRE mice 30 days after I/R injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by both PET imaging and histological quantification showing no significant difference in infarct size. This finding is important as it distinguishes the effect of resident macrophages on remodeling from their effect on infarct size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "After I/R injury, resident macrophages remain depleted in the remote zone of \u0394FIRE mice, but bone marrow-derived macrophages are recruited normally to the infarct and border zones, where they represent the main population (~75% in infarct zone at day 30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are supported by immunohistology and lineage tracing data showing sustained resident macrophage depletion in remote zones but normal recruitment of BM-derived macrophages to injury sites. The spatial gradient of BM-derived macrophages (75% infarct, 50% border, 35% remote) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Resident (CD45.2+) and recruited (CD45.1+) macrophages exhibit profound transcriptional differences after I/R injury, with resident macrophages expressing homeostatic genes and upregulating development/homeostasis-related pathways, while recruited macrophages show inflammatory and immune defense-related gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by bulk RNA-sequencing of sorted macrophage populations from bone marrow chimeric mice. The differential gene expression and GO enrichment analyses clearly demonstrate distinct functional programs in the two populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Two days after I/R injury, \u0394FIRE mice show reduced homeostatic macrophages but unaltered inflammatory macrophages, with altered gene expression across immune cell types including reduced anti-inflammatory genes (Chil3, Lcn2), increased pro-apoptotic genes (Bcl2a1a, Bcl2a1d), and increased inflammasome activation in neutrophils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by scRNA-seq analysis showing cluster-specific changes and computed inflammasome scores. The data demonstrate that resident macrophage absence alters the inflammatory landscape beyond just macrophage populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Absence of resident macrophages in \u0394FIRE mice markedly reduces ligand-receptor interactions and communication signal strength from homeostatic and antigen-presenting macrophage clusters to neutrophils and lymphocytes, while BM-derived inflammatory macrophage communication and transcriptional profiles remain largely unaltered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by ligand-receptor interaction analysis from scRNA-seq data showing reduced intercellular communication from resident macrophage clusters but not from recruited macrophage clusters. This provides mechanistic insight into how resident macrophages influence other immune cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Continuous CSF1R inhibition with PLX5622 depletes cardiac macrophages within 7 days in healthy hearts and maintains depletion of both resident and recruited macrophages in all cardiac zones (remote, border, infarct) after I/R injury, without affecting neutrophil recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by flow cytometry and immunohistology data showing effective macrophage depletion at baseline and after injury in all cardiac zones. The specificity for macrophages is confirmed by unaltered neutrophil numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Combined absence of resident and recruited macrophages (PLX5622 treatment) results in increased infarct size and severe deterioration of cardiac function, with LVEF reduced at day 6 and remaining strongly impaired at day 30 after I/R injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by PET imaging and histology data showing worse outcomes with combined macrophage depletion compared to resident-only depletion. This demonstrates the beneficial role of recruited macrophages in limiting infarct size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Comparison of \u0394FIRE mice (resident macrophage depletion only) versus PLX5622-treated mice (both resident and recruited macrophage depletion) reveals that sole absence of resident macrophages has limited impact on cardiac remodeling, while combined absence significantly increases infarct size and worsens cardiac function, highlighting the beneficial effect of recruited macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by comparative analysis of the two depletion models showing differential effects on infarct size and cardiac function. The inference that recruited macrophages are beneficial is logically sound based on the worse outcomes when both populations are depleted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The study concludes that resident macrophages orchestrate inflammatory responses to improve cardiac remodeling, while recruited macrophages determine infarct size after I/R injury, representing distinct beneficial functions of the two macrophage populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 represent the main conclusions synthesized from multiple lines of evidence: \u0394FIRE mice show impaired remodeling but unchanged infarct size, while PLX5622 treatment shows both impaired remodeling and increased infarct size. The conclusions are well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The manuscript provides extensive background context through citations to prior work on macrophage biology, cardiovascular disease, myocardial infarction pathophysiology, macrophage ontogeny, and previous depletion studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C82 are all supported by appropriate citations to prior literature. These claims establish the scientific context and rationale for the current study. The accuracy of these citations would need to be verified against the original sources, but they appear appropriate for establishing background knowledge.",
+    "result_type": "MINOR"
+  }
+]

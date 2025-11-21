@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MotorNet is an open-source Python toolbox built on PyTorch that creates differentiable, biomechanically realistic effectors for training ANNs on motor tasks. The toolbox features a modular architecture with five object classes (Skeleton, Muscle, Effector, Environment, Policy), requires no dependencies outside Python, is compatible with gymnasium API, and can train networks on standard motor control models (e.g., two-joint, six-muscle planar arm) within minutes on a typical desktop computer.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the toolbox's functionality and design. Reviewer 1 states the manuscript 'provides solid evidence that MotorNet is easy to use,' Reviewer 2 notes 'the paper provides a detailed explanation of how the toolbox is structured,' and Reviewer 3 confirms that MotorNet 'provides a much simpler interface' and features 'a conveniently modular design.' The reviewers accept the technical specifications and architectural claims without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "MotorNet computes geometry-dependent moment arms that vary with effector configuration, demonstrating biomechanically realistic properties. For mono-articular muscles, moment arms are null with respect to joints they don't span, while bi-articular muscles show non-zero moment arms for both joints with small interactions. Passive drift from muscle stretch is negligible at the center of joint space but increases toward edges, dependent on user-defined slack length parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these biomechanical computations. Reviewer 3 explicitly states that the authors 'have built a set of biomechanically realistic end effectors' that are 'fully differentiable,' implicitly accepting the moment arm calculations and passive force properties described. The detailed biomechanical properties are treated as validated features of the toolbox.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Training demonstrations show that RNNs trained with MotorNet can learn generalizable control policies that integrate sensorimotor feedback. Networks trained with perturbations showed smooth loss decrease, could correct for mechanical perturbations up to certain magnitudes, and exhibited delayed muscle activation responses. Networks trained without perturbations could handle simple perturbations (\u00b16 N) but were less capable of stabilizing against larger forces, demonstrating that training procedure impacts the robustness of learned control policies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states the manuscript 'provides solid evidence that MotorNet is easy to use and can reproduce past results in the field, both at the neural and behavioural levels.' This directly affirms the training demonstrations and their outcomes. No reviewer challenges the perturbation experiments or the conclusions about training procedures affecting control policy robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MotorNet successfully replicates the Lillicrap and Scott (2013) study showing that RNNs controlling arm26 effectors develop asymmetrical preferential movement direction (PMD) distributions matching empirical primate motor cortex recordings, with biases around 135\u00b0 and 325\u00b0. This bias was consistently reproduced for arm26 effectors but failed to arise for point-mass effectors, demonstrating that arm-like geometrical properties drive the representational bias. Network units showed heterogeneous responses including timing preferences, directional preferences, and mixed encoding, matching empirical observations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly confirms the manuscript 'provides solid evidence that MotorNet...can reproduce past results in the field, both at the neural and behavioural levels,' directly validating this replication study. No reviewer questions the PMD distribution findings or the comparison between arm26 and point-mass effectors. The successful replication is treated as evidence of the toolbox's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "Current approaches to neural control of movement require integrating ANNs with separate biomechanical simulation software, creating practical limitations. Biomechanical effectors are not generally differentiable, constraining researchers to reinforcement learning algorithms despite the existence of faster training methods like backpropagation. Communication between platforms is not built-in, requiring custom code, and existing interfaces like gymnasium constrain users to reinforcement learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly validates this motivation, stating that 'other state-of-the-art simulation engines...afford more complex object manipulation and contact dynamics than MotorNet. However, MotorNet's approach allows for direct optimization of the controller network via gradient descent rather than reinforcement learning, which is a compromise currently required when other simulation engines' are used. This directly confirms the limitations described in the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "MotorNet's modular architecture enables users to alter specific model aspects while keeping everything else identical, allowing customization ranging from simple parameter adjustments (e.g., editing Arm26 for non-human primates) to more complex subclassing (e.g., creating eyeball effectors). While extensions vary in implementation difficulty, all have the capacity to work harmoniously within the MotorNet framework, though effectors that stray from typical vertebrate designs (e.g., octopus arms) will likely prove more challenging.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly affirms that 'the architecture features a conveniently modular design,' validating the modularity claims. Reviewer 2 notes the toolbox 'broadens the toolbox's application scope,' implicitly supporting the extensibility claims. No reviewer challenges the assertions about customization capabilities or the varying difficulty of different extensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "As open-source software, MotorNet enables individual contributions to be easily shared online, allowing future researchers to avoid re-implementing the same objects (e.g., a Muscle class with parametrizable pennation angle). This facilitates more dynamic peer-checking, avoids error dissemination, improves consistency of model implementations, and allows MotorNet to benefit from community-driven incremental work.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly validates the open-source benefits, stating 'The main outcome of the work, a toolbox, is supplemented by a GitHub repository and a documentation webpage. Both the repository and the webpage are well-organized and user-friendly.' This confirms the accessibility and community-oriented design. No reviewer challenges the claims about open-source advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "MotorNet's design strategy of building on PyTorch ensures that innovations in model design quickly become viable in MotorNet implementations, following the logic that anything PyTorch can build, MotorNet can use as a policy. Compatibility with gymnasium, a standard and well-documented interfacing toolbox, ensures users can employ reinforcement learning relatively effortlessly.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly affirms that 'The toolbox's latest version, developed in PyTorch, is expected to offer greater benefits to the community' and 'The new API, being compatible with Gymnasium, broadens the toolbox's application scope.' Reviewer 3 notes 'the software has been rewritten atop PyTorch which is increasingly popular in ML and computational neuroscience research.' These statements directly validate the design strategy claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "MotorNet does not implement collision physics or complex biomechanical features like multiple joint types (hinge, rotational) and complex muscle paths (wrap points) that other software like OpenSim provides. This constrains what types of effectors MotorNet can realistically implement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly acknowledges this limitation, stating 'Validation is limited to planar arm-like plants or point-masses, so future work exploring three-dimensional movements and other types of plants would strengthen the impact of the tool.' Reviewer 3 notes 'Other state-of-the-art simulation engines...afford more complex object manipulation and contact dynamics than MotorNet,' directly confirming the described limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MotorNet aims to improve iteration speed through the machine learning cycle of formulating ideas, implementing them in code, and testing through simulations\u2014analogous to the hypothetico-deductive method in empirical work. Quick iteration is important because producing efficient models may require many such cycles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly validates this purpose, stating 'MotorNet is designed to simplify the process of simulating complex experimental setups, enabling the rapid testing of hypotheses on how the brain generates specific movements.' Reviewer 3 confirms that MotorNet 'provides a much simpler interface for the researcher to develop and iterate through computational hypotheses.' These statements directly support the iteration speed improvement claims.",
+    "result_type": "MINOR"
+  }
+]

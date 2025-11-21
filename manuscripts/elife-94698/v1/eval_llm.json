@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors provide background on allergic contact dermatitis (ACD), describing it as a delayed-type hypersensitivity reaction affecting 15-20% of the population, involving sensitization and elicitation phases mediated by immune cells including CD8+ T cells as main effectors, and noting that dermal fibroblasts are heterogeneous resident cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by citations to established literature (Vocanson et al., 2009; Kaplan et al., 2012; Manresa, 2021; Chai et al., 2022; Huang et al., 2022) and represent accepted knowledge about ACD pathophysiology and skin biology. These background claims provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The DNFB-elicited ACD mouse model shows peak skin erythema and thickening at ~24 hr lasting until ~60 hr, with dermal expansion and mononuclear cell infiltration. Single-cell RNA-seq identified 30 cell clusters, with lymphocytes and myeloid cells being the main recruited cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by experimental data shown in Figure 1 and supplementary figures, including phenotypic observations, histology, and scRNA-seq analysis. The characterization of the ACD model and cell type identification appear methodologically sound with appropriate marker gene validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "In ACD, Ifng, Il17, and Il10 were primarily expressed by T cell sub-clusters, while Il4 and Il13 were primarily produced by basophils, and Il1b was highest in neutrophil/monocyte clusters. Ifng, but not Il4 or Il17a, was rapidly induced in skin draining lymph nodes at 24 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by scRNA-seq gene expression data (Figure 1G, Figure 1\u2014figure supplement 1G-H) and qRT-PCR validation. The finding that basophils, not T cells, are the primary source of type 2 cytokines is notable and well-documented with multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "T cells in ACD were classified into eight clusters (CD8+, CD4+, Treg, \u03b4\u03b3T, NKT, NK/ILC1, ILC2), with increased CD8+, CD4+, Treg, and NK/ILC1 cells. CD4+ and CD8+ T cells predominantly expressed central memory markers (Tcm) rather than effector or tissue-resident memory markers. Ifng was robustly induced in CD4+, CD8+, and NK/ILC1 clusters, while Il10 and Il17a were moderately induced only in Treg and \u03b4\u03b3T clusters, and Il4 was barely detectable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 are supported by comprehensive scRNA-seq analysis (Figure 2A-D, Figure 2\u2014figure supplement 1A-D) with appropriate marker gene validation. The characterization of T cell memory phenotypes is based on established markers (Cd28, Cd27, Ccr7, S1pr1/Cd62l for Tcm; Cx3cr1 for Tem; Itga1, Itgae, Cd69, Prdm1 for Trm), providing strong evidence for the central memory phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "GO pathway analysis revealed chemokine signaling and type II interferon signaling as top upregulated pathways in CD4+ and CD8+ T cells in ACD, while TGF\u03b2 and PI3K-Akt-mTOR signaling were top downregulated. Ifng and IFN-JAK-STAT-related genes were among top upregulated genes, while genes inhibiting T cell activation/Th1 polarization (Fos, Zfp36, Klf4) were top downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by GO pathway analysis and differential gene expression analysis (Figure 2E-F) with appropriate citations for gene functions (Xiao et al., 2012; Moore et al., 2018; An et al., 2011). The pathway analysis is consistent with the observed type-1 inflammatory phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "FACS analysis confirmed that DNFB-elicited ACD resulted in rapid increase in CD4+ and CD8+ T cells with significantly induced IFN\u03b3 expression, while IL4/IL13 and IL17 expression was inhibited, indicating T cells are primarily polarized to the IFN\u03b3-producing type-1 inflammatory phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by FACS data (Figure 2G, Figure 2\u2014figure supplement 1H-K) validating the scRNA-seq findings. The conclusion (C31) is appropriately inferred from multiple converging lines of evidence including scRNA-seq, pathway analysis, and FACS validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ACD led to increased basophils, mast cells, neutrophils, and macrophages. Il4 was primarily expressed by basophils and mast cells, while Il1b was primarily expressed by neutrophils and macrophages. Basophils expressed higher levels of Il4, Il13, and Il6 compared to mast cells, while mast cells expressed higher Ccl2 and Ccl7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by scRNA-seq data (Figure 3A-C, Figure 3\u2014figure supplement 1A) showing differential cytokine expression and comparative gene expression between basophils and mast cells. The characterization is based on established markers (Cd11b, Cma1, Mcpt8, Fcer1a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Validation experiments showed time-dependent elevation of Mcpt8 (basophil marker) but not Cma1 (mast cell marker). FACS analysis confirmed rapid increase in IL4/IL13-producing CD11B+ Fc\u03b5R1a+ basophils as early as 24 hr, with only moderate delayed increase in IL4/IL13-producing mast cells. Immunostaining showed dermal infiltration of both basophils and mast cells with co-localized Th2 cytokines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by multiple complementary approaches including qRT-PCR (Figure 3D), FACS (Figure 3E-F, Figure 3\u2014figure supplement 1B), and immunostaining (Figure 3\u2014figure supplement 1C), providing strong validation of the scRNA-seq findings regarding basophil-mediated type 2 cytokine production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In neutrophils/monocytes and macrophages, S100a8/9, Il1b, and Cxcl2 were highly expressed. Il1b was among top inducible genes in Cd68+ macrophages, while genes associated with M2 macrophages (Cd74, H2-Ab, Ccl24) were downregulated. GO pathway analysis identified 'cellular response to IFN\u03b3' as top upregulated and 'lipid metabolic' and 'actin cytoskeleton organization' as top downregulated pathways in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by scRNA-seq data (Figure 3H-I, Figure 3\u2014figure supplement 1D) and GO pathway analysis. The findings are biologically coherent, as M2 macrophage suppression and IFN\u03b3 response activation are consistent with type-1 inflammation, and the metabolic/cytoskeletal changes align with macrophage activation states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "FACS analysis confirmed time-dependent increase in neutrophil recruitment and shift of macrophages from resting (Ly6Clo) to inflammatory (Ly6Chi) state, with transient monocyte influx peaking at 24 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by FACS data (Figure 3J-M, Figure 3\u2014figure supplement 1E-G) using established protocols (Rahman et al., 2017). The characterization of myeloid cell dynamics provides validation of scRNA-seq findings and is consistent with inflammatory kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Pdgfra+ dermal fibroblasts were reclustered into seven sub-clusters defined as adipocyte progenitors (AP), adipose regulatory cells (Areg), preadipocytes (pAd), reticular/papillary dFBs, and peri-follicular dFBs based on marker genes. In the r5 preadipocyte cluster, ACD elicitation increased IFN-inducible genes (Cxcl9, Cxcl10, Stat1) and decreased preadipocyte signature genes (Lpl, Apoe) and ECM genes (Col1a1, Col3a1). The dFB_r5 cluster was enriched with interferon pathway transcription factors (Stat1, Irf1, Irf7), and GO pathway analysis showed upregulation of virus response, IFN\u03b3 response, and T-cell cytotoxicity pathways, with downregulation of ECM organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 are supported by comprehensive scRNA-seq analysis (Figure 4A-F, Figure 4\u2014figure supplement 1A-C) with appropriate marker gene validation based on multiple cited studies (Sun et al., 2023; Driskell et al., 2013; Plikus et al., 2021; Joost et al., 2020; Zachara et al., 2022; Schwalie et al., 2018). SCENIC TF analysis and GO pathway analysis provide additional support for the IFN\u03b3-responsive phenotype of the r5 cluster.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "IFNGR pathway genes (Stat1, Cxcl9, Cxcl10) were expressed at highest levels in dFB_r5 cluster, while Ifng and Cxcr3 were mainly expressed by T cells. Immunostaining showed CXCL9+ or CXCL10+ cells co-expressed PDGFRA in lower dermis where adipocytes are enriched, and pSTAT1 was detected in PDGFRA+Ly6A+ preadipocytes. CXCL9 co-localized with ICAM1, a preadipocyte marker, confirming CXCL9 is specifically induced in the preadipocyte subset of dermal fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 are supported by scRNA-seq data (Figure 4G, Figure 4\u2014figure supplement 1D) and validated by multiple immunostaining approaches (Figure 4H-J, Figure 4\u2014figure supplement 1F-K). The co-localization studies provide strong spatial validation of the scRNA-seq findings, with appropriate citation for ICAM1 as a preadipocyte marker (Merrick et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The active ACD preadipocytes (dFB_r5) and active IFN\u03b3-responsive vitiligo dermal fibroblasts are enriched with highly similar IFN\u03b3-inducible genes. The dFB_r5 preadipocytes exhibited highest expression of Ifngr1, Ifngr2, Stat1, Cxcl9, and Cxcl10 among all dFB clusters. Cell-chat analysis revealed IFN\u03b3 production from CD4+/CD8+ or ILC1/NK T cells acting on IFNGR expressed on dFB-r5 cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by comparative analysis with published vitiligo data (Figure 5\u2014figure supplement 1A, Supplementary file 3), scRNA-seq expression data (Figure 5\u2014figure supplement 1B), and cell-chat signaling network analysis (Figure 5A). The comparison with vitiligo dFBs strengthens the biological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In vitro, IFN\u03b3 uniquely upregulated a large pool of genes including antiviral and IFN\u03b3 pathway-related genes in primary dermal fibroblasts. Time course analysis showed IFN\u03b3 robustly induced Cxcl9, Cxcl10, Stat1, and Ccl2 as early as 8 hr, and suppressed lipogenesis (Apoe) and ECM (Col1a1) genes in a delayed manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by RNA-seq data (Figure 5B-C, Supplementary files 4-5) and qRT-PCR validation (Figure 5D, Figure 5\u2014figure supplement 1C). The in vitro experiments provide mechanistic validation of the in vivo scRNA-seq findings, showing direct IFN\u03b3 effects on dermal fibroblasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cxcr3 was specifically induced in T cells in ACD. In vitro co-culture experiments showed IFN\u03b3-primed dermal fibroblasts secreted high CXCL10 and their conditioned medium enhanced IFN\u03b3 production from na\u00efve T cells in a CXCR3-dependent manner. In the presence of CD3/CD28 stimulation, control dFB conditioned medium promoted type-2 polarization, while IFN\u03b3-primed dFB conditioned medium restored type-1 phenotype through CXCR3-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are supported by scRNA-seq data (Figure 5\u2014figure supplement 1D), ELISA (Figure 5F-H, Figure 5\u2014figure supplement 1E), and functional co-culture experiments with CXCR3 neutralizing antibody controls. The experiments demonstrate a functional CXCR3-dependent mechanism for dFB-mediated T cell polarization, though the in vitro system has limitations noted by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Tamoxifen-induced deletion of Ifngr1 in PDGFRA+ dermal fibroblasts (Ifngr1FB-iKO mice) specifically ablated IFNGR1 in dFBs but not other dermal cells. This resulted in significantly inhibited DNFB-mediated skin eczema development, dermal cell infiltration, induction of inflammatory genes (Cxcl9/10, Cxcr3, Ifng, Cd8a), CXCL9 expression in ICAM1+ preadipocytes, and CD8+ T cell infiltration, demonstrating that IFN\u03b3 receptor signaling in dermal fibroblasts is required for type-1 skin inflammation in ACD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are supported by genetic validation using conditional knockout mice with appropriate controls (Figure 6A-I, Figure 6\u2014figure supplement 1A-E). The specificity of IFNGR1 deletion in PDGFRA+ cells is confirmed by immunostaining, and multiple phenotypic, molecular, and histological readouts consistently show reduced ACD inflammation. This provides strong causal evidence for the role of dFB IFNGR signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In human ACD skin, numerous CD8+ IFN\u03b3+ T cells were present in dermal micro-vascular structures, with IFN\u03b3 detected exclusively from CD8+ T cells. Collagen bundles were thinner and disorganized in these structures. CD8+ T cells infiltrated around PDGFRA+ dermal fibroblasts, which expressed CXCL10, correlating with the murine dFB-r5 cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by immunostaining analysis of human ACD skin samples (Figure 7A-F, Figure 7\u2014figure supplement 1A-B) with appropriate healthy controls. The human data validate the clinical relevance of the mouse findings, showing conservation of the CD8+ T cell-dermal fibroblast interaction and CXCL10 production. However, the study is limited by small sample size (n=4/group) and lack of quantification for some observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Summary of key findings: Upon ACD elicitation, infiltrated CD4+/CD8+ lymphocytes were primarily IFN\u03b3-producing type 1 central memory phenotype, while type 2 cytokines (IL4/IL13) were dominantly expressed by basophils, IL17A by \u03b4\u03b3 T cells, and IL1\u03b2 by activated neutrophils/monocytes/macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 accurately summarize the major findings supported by comprehensive scRNA-seq analysis, FACS validation, and multiple complementary approaches throughout the manuscript. These summary claims are well-supported by the collective evidence from claims C11-C48.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Summary of dermal fibroblast findings: A preadipocyte-signature dermal fibroblast sub-cluster was identified as a prominent target for IFN\u03b3+ lymphocytes and dermal source for CXCL9/10. IFN\u03b3 treatment shifted dermal fibroblasts from collagen-producing to CXCL9/10-producing, promoting T cell polarization toward type-1 phenotype through CXCR3-dependent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 accurately summarize the major dermal fibroblast findings supported by scRNA-seq analysis (claims C49-C64), in vitro experiments (claims C68-C78), and in vivo validation (claims C79-C85). The summary appropriately integrates multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Summary of genetic validation: Targeted deletion of Ifngr1 in dermal fibroblasts reduced Cxcl9/10 expression, CD8+ T cell infiltration, and alleviated ACD inflammation in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 accurately summarize the genetic validation findings supported by the Ifngr1FB-iKO mouse experiments (claims C79-C85). The summary appropriately captures the key outcomes of the conditional knockout studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "Summary of human validation: IFN\u03b3+ CD8+ T cells and CXCL10-producing dermal fibroblasts co-enriched in the dermis of human ACD skin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 accurately summarizes the human validation findings supported by immunostaining analysis (claims C86-C92). The summary appropriately captures the clinical relevance of the mouse findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Overall conclusion: Dermal fibroblasts play an indispensable role in shaping type-1 skin inflammation through the IFNGR-CXCR3 signaling circuit during ACD pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 represents the main conclusion supported by multiple converging lines of evidence: scRNA-seq characterization of IFN\u03b3-responsive preadipocyte-signature dFBs (C49-C64), in vitro demonstration of IFN\u03b3-induced CXCL9/10 production and CXCR3-dependent T cell polarization (C68-C78), genetic validation showing requirement for dFB IFNGR signaling (C79-C85), and human validation (C86-C92). The term 'indispensable' is justified by the conditional knockout data showing significant reduction in ACD inflammation.",
+    "result_type": "MAJOR"
+  }
+]

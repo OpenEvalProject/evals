@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The simulations show that \u03b1-synuclein exhibits concentration-dependent aggregation, with a critical concentration around 500 \u03bcM matching experimental observations. Both molecular crowders and salt enhance aggregation propensity, with crowders showing a slightly more pronounced effect through excluded volume interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding, with one stating 'Their MD simulations showed that alpha-synuclein does not have a high LLPS-forming propensity, but the molecular crowding and salt addition tend to enhance the tendency of droplet formation.' The editor notes 'The data analysis is solid,' indicating acceptance of these concentration-dependent aggregation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C77",
+      "C39",
+      "C40",
+      "C78",
+      "C79"
+    ],
+    "result": "Surface tension calculations reveal that crowders minimally affect surface tension while salt increases it, with both achieving decreased free energy through different thermodynamic means\u2014crowders via entropy and salt via enthalpy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "A reviewer raises significant concerns: 'The calculation of the surface tension relies on the droplet shape. However, for the formed clusters in the MD simulations, the typical size is <10, which may be too small to rigorously define the droplet shape.' They note that previous work shows surface tension becomes stable only when chain number exceeds 100, questioning the validity of these calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Conformational analysis reveals that \u03b1-synuclein chains adopt extended conformations within droplets and maintain mutually perpendicular orientations to minimize electrostatic repulsions, consistent across all environmental conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer explicitly highlights this as a strength: 'It is also interesting to show that the aggregation pathway involves the disruption of the intra-chain interactions arising from C-terminal regions, which potentially facilitates the formation of inter-chain interactions.' The editor affirms 'The data analysis is solid,' supporting these conformational findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Droplet stability stems from diminished intra-chain interactions (particularly N-terminal to C-terminal and NAC-NAC regions), which facilitate inter-chain interactions. This pattern is consistent with experimental FRET observations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer explicitly notes this as a strength: 'It is also interesting to show that the aggregation pathway involves the disruption of the intra-chain interactions arising from C-terminal regions, which potentially facilitates the formation of inter-chain interactions.' The alignment with FRET data adds experimental validation that reviewers do not question.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C58",
+      "C59",
+      "C64",
+      "C83",
+      "C84"
+    ],
+    "result": "Graph theory analysis identifies small-world-like networks within droplets (S \u2248 3.4) that remain consistent across diverse environmental conditions, suggesting consensus interaction patterns among chains regardless of environment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'The data analysis is solid, and the methodology can help investigate other molecular processes involving intrinsically disordered proteins,' affirming the graph theory approach. A reviewer notes the study 'revealed important intra and inter-molecule conformational features' without questioning the small-world network analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sequence analysis using Shannon entropy, hydrophobicity, PLAAC NLLR scores, and LLPS propensity scores demonstrates that \u03b1-synuclein has low inherent LLPS propensity dictated by its primary structure, justifying the requirement for environmental factors to enhance phase separation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer summarizes: 'Their MD simulations showed that alpha-synuclein does not have a high LLPS-forming propensity, but the molecular crowding and salt addition tend to enhance the tendency of droplet formation.' This directly affirms the conclusion about low inherent propensity requiring environmental modulation, with no reviewer challenging the sequence analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors chose and re-parameterized the Martini 3 coarse-grained force field for its explicit water representation and detailed amino acid description, optimizing protein-water interactions against atomistic simulations to ensure compatibility with intrinsically disordered proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer explicitly praises this: 'The re-parameterized Martini 3 coarse-grained force field enables the large-scale MD simulations of the intrinsically disordered proteins with explicit solvent, which will be useful for a more realistic description of the molecular basis of LLPS.' The editor notes 'the methodology can help investigate other molecular processes involving intrinsically disordered proteins.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "There is approximately two orders of magnitude difference in \u03b1-synuclein concentration between dilute and droplet phases across all scenarios, which is a hallmark of LLPS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While a reviewer questions the surface tension calculations due to small cluster size, they do not challenge the concentration difference observations. The editor's statement that 'The data analysis is solid' and the reviewer's acknowledgment that simulations 'add biophysical insights into the molecular mechanism' suggest acceptance of this LLPS characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C93"
+    ],
+    "result": "Residues 95-110 (highly charged region) show reduced contact probabilities upon crowder/salt addition, requiring spatial reorientation to minimize electrostatic repulsions and facilitate larger aggregate formation. These residues appear to prevent aggregation-prone conformations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer notes the study 'revealed important intra and inter-molecule conformational features of the alpha-synuclein chains in the formed droplets and the key interactions responsible for the stability of the droplets.' The identification of key residues is implicitly accepted as part of the solid data analysis affirmed by the editor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establishing that \u03b1-synuclein is an intrinsically disordered protein implicated in Parkinson's disease, that IDPs can undergo LLPS and pathogenic aggregation, and that environmental factors like crowders and salt influence \u03b1-synuclein aggregation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background facts supported by citations. The editor notes the study addresses 'the pathogenesis of Parkinson's disease' and a reviewer states 'Aggregation of alpha-synuclein is linked to the pathogenesis of Parkinson's disease, and the liquid-liquid phase separation (LLPS) is considered to play an important role.' No reviewer questions these foundational claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C89",
+      "C90",
+      "C95"
+    ],
+    "result": "Speculative claims about potential therapeutic strategies, including that disturbing residue-level interactions might cause droplet dissolution, that investigating membrane interactions could have therapeutic potential, and that understanding water's role is essential for deeper comprehension of \u03b1-synuclein LLPS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "A reviewer explicitly identifies a gap: 'Although the authors emphasized the advantage of the Martini3 force field for its explicit description of solvent, this paper did not analyze the water behavior contained in the simulation trajectories and discuss the water's role in the aggregation and LLPS.' This indicates these speculative claims about water and therapeutic implications lack supporting analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "Discussion points noting that \u03b1-synuclein assumes oligomeric membrane-bound forms physiologically, that familial mutations show higher aggregation propensity, that pre-formed droplet stability challenges PD treatment, and that recent studies emphasize water's role in LLPS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are cited literature claims used for context. While a reviewer notes the lack of water analysis in the current study, they do not dispute these cited observations. The reviewer's comment actually reinforces the importance of water's role mentioned in these claims.",
+    "result_type": "MINOR"
+  }
+]

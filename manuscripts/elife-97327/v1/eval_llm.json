@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "RGS10 expression is reduced in breast cancer tissues compared to normal tissues. Analysis of the Genotype-Tissue Expression dataset showed RGS10 mRNA is highly expressed in normal breast tissue (C30), while RT-qPCR of 20 paired patient samples demonstrated significantly lower RGS10 mRNA in breast cancer versus adjacent normal tissue (p=0.003) (C32, C4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C4 provide converging evidence from database analysis and experimental validation (RT-qPCR with n=20 paired samples, p=0.003) demonstrating reduced RGS10 expression in breast cancer. The use of paired samples strengthens the finding, though the sample size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C5",
+      "C12"
+    ],
+    "result": "High RGS10 expression correlates with improved survival outcomes in breast cancer patients. Kaplan-Meier analysis of database samples showed high RGS10 mRNA associated with improved DFS (p=0.0066) and OS (p=0.027) (C33-C34). In 133 patient tissue samples, high RGS10 protein expression correlated with longer DFS (p=0.003) and OS (p=0.022) (C38-C39), supporting RGS10 as a prognostic biomarker (C12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent datasets (Kaplan-Meier plotter database and 133 patient cohort) consistently demonstrate significant associations between high RGS10 expression and improved survival outcomes. Statistical significance is reported for all comparisons with appropriate p-values. The convergence of mRNA and protein-level data strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "RGS10 protein expression correlates with clinicopathological features of breast cancer. In 133 patient samples analyzed by immunohistochemistry, RGS10 protein expression positively correlated with breast cancer subtype (p=0.043), distant metastasis (p=0.008), and survival status (p=0.024).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 report statistically significant correlations between RGS10 protein expression and multiple clinicopathological parameters in a cohort of 133 patients. The p-values indicate statistical significance, though the correlation with subtype is weaker (p=0.043) than with metastasis (p=0.008).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "RGS10 expression is an independent predictor of survival in breast cancer. Multivariate Cox regression identified histological grade and RGS10 protein expression as independent predictors of DFS (C40). Univariate analysis identified age, histological grade, and RGS10 expression as predictors of OS (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 reports multivariate analysis for DFS showing RGS10 as an independent predictor, which is appropriate. However, C41 reports only univariate analysis for OS, not multivariate analysis. Without multivariate analysis for OS, it cannot be concluded that RGS10 is an independent predictor of OS. The manuscript should have performed multivariate analysis for OS to support independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C45"
+    ],
+    "result": "RGS10 protein levels are inversely correlated with breast cancer cell aggressiveness. Western blotting showed RGS10 protein levels were lower in the highly aggressive MDA-MB-231 cell line compared to less aggressive MCF7 and SKBR3 cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C45 are supported by western blotting data (Figure 2A) comparing RGS10 expression across three well-characterized breast cancer cell lines with different aggressiveness profiles. The observation is consistent with the clinical data showing reduced RGS10 in more aggressive disease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C7",
+      "C8"
+    ],
+    "result": "RGS10 knockdown increases proliferation, colony formation, migration, and invasion of SKBR3 breast cancer cells. Using two independent shRNA constructs (shRNA-RGS10-161 and shRNA-RGS10-506), RGS10 depletion significantly increased proliferative ability, clonogenic ability, migration, and invasion compared to negative control (p<0.001 for all assays).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are well-supported by multiple functional assays (CCK-8, colony formation, transwell migration/invasion) with two independent shRNA constructs showing consistent results. Statistical significance (p<0.001) is reported for all comparisons. The use of two independent shRNAs reduces off-target concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RGS10 depletion leads to upregulation of genes involved in cytokine-cytokine receptor and extracellular matrix-receptor interactions. Transcriptome analysis revealed 70 significantly upregulated genes in RGS10-depleted SKBR3 cells, with KEGG pathway analysis showing enrichment in cytokine-cytokine receptor interactions and extracellular matrix-receptor interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by RNA-seq data with appropriate bioinformatics analysis (volcano plot, KEGG pathway analysis). The identification of specific pathways provides mechanistic insight into RGS10 function. However, the manuscript does not report validation of differentially expressed genes by independent methods (e.g., RT-qPCR).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C7"
+    ],
+    "result": "RGS10 depletion induces epithelial-mesenchymal transition (EMT) in breast cancer cells. Western blotting showed that RGS10-depleted SKBR3 cells had increased LCN2 and vimentin (mesenchymal markers) and decreased E-cadherin (epithelial marker) compared to control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 demonstrate EMT marker changes consistent with EMT induction following RGS10 knockdown. The data are supported by western blotting (Figure 3F). The changes in canonical EMT markers (E-cadherin down, vimentin up) provide strong evidence for EMT induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "MIR539-5p directly targets RGS10 in breast cancer cells. Luciferase reporter assays identified MIR539-5p as a miRNA that targets RGS10, with predicted binding sites in the 3'-UTR of RGS10 mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by luciferase reporter assay data (Figure 3G-H) showing reduced luciferase activity with wild-type but not mutant RGS10 3'-UTR constructs. This is the standard approach for validating miRNA-target interactions. The data support direct targeting of RGS10 by MIR539-5p.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MIR539-5p overexpression reduces RGS10 expression and increases malignant phenotypes in SKBR3 cells. Transfection with MIR539-5p mimic significantly decreased RGS10 mRNA and protein levels and significantly increased proliferation, colony formation, migration, and invasion compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 are supported by RT-qPCR, western blotting, and multiple functional assays (Figure 4B-G). The data demonstrate that MIR539-5p overexpression phenocopies RGS10 knockdown, supporting the regulatory relationship. Statistical significance is reported for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "MIR539-5p inhibition increases RGS10 expression and decreases malignant phenotypes in MDA-MB-231 cells. Transfection with MIR539-5p inhibitor significantly increased RGS10 protein levels and significantly decreased proliferation, colony formation, migration, and invasion compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 provide complementary loss-of-function data in a different cell line (MDA-MB-231) showing opposite effects to MIR539-5p overexpression. The use of gain- and loss-of-function approaches in different cell lines strengthens the conclusion about the MIR539-5p/RGS10 regulatory axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MIR539-5p overexpression induces EMT marker changes in SKBR3 cells. Western blotting and immunofluorescence showed decreased E-cadherin and increased LCN2, vimentin, and snail expression in SKBR3 cells overexpressing MIR539-5p compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by western blotting and immunofluorescence data (Figure 4H-I) showing changes in multiple EMT markers. The data demonstrate that MIR539-5p overexpression induces EMT, consistent with its regulation of RGS10. The use of two complementary techniques strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RGS10 depletion promotes tumor growth and EMT in vivo. Subcutaneous xenografts of RGS10-depleted SKBR3 cells showed significantly increased tumor growth compared to controls. Immunohistochemistry of tumor tissues showed increased LCN2, snail, and vimentin and decreased E-cadherin in RGS10-depleted tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by in vivo xenograft data (Figure 6A-D) showing both increased tumor growth and EMT marker changes. The in vivo validation strengthens the in vitro findings. However, the study design is limited to tumor growth and does not assess metastasis, which is a key claim of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C76",
+      "C77"
+    ],
+    "result": "RGS10 suppresses EMT and metastasis through a mechanism dependent on LCN2 and MIR539-5p. The authors propose a MIR539-5p/RGS10/LCN2 regulatory axis where MIR539-5p targets RGS10, and RGS10 deficiency activates the LCN2 pathway to induce EMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C9, C76, and C77 propose a regulatory axis, the manuscript does not provide direct evidence that RGS10 regulates LCN2 expression or that LCN2 is required for the effects of RGS10 depletion. The data show correlation (LCN2 increases when RGS10 is depleted) but not causation. Rescue experiments (e.g., LCN2 knockdown in RGS10-depleted cells) would be needed to establish dependency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C13"
+    ],
+    "result": "RGS10 functions as a tumor suppressor and potential therapeutic target in breast cancer. Based on reduced expression in cancer, correlation with poor prognosis, and functional effects on proliferation, migration, invasion, and EMT, the authors conclude RGS10 is a tumor suppressor and potential therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C11 (tumor suppressor) is well-supported by the collective data showing reduced expression in cancer, correlation with poor outcomes, and tumor-promoting effects of RGS10 loss. However, claim C13 (therapeutic target) is speculative. The data show RGS10 loss promotes cancer, but there is no evidence that increasing RGS10 expression would be therapeutically beneficial or feasible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "RGS10 expression in SKBR3 cells is associated with inflammatory response pathways. Gene set enrichment analysis showed that RGS10 expression was associated with inflammatory response gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by GSEA data (Table 5) showing enrichment of inflammatory response pathways in high-RGS10 expressing cells. This provides additional mechanistic insight into RGS10 function, though the functional significance is not experimentally validated.",
+    "result_type": "MINOR"
+  }
+]

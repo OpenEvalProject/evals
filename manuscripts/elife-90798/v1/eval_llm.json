@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Proteomic analysis reveals that E. coli colonized in tumors upregulates iron-related proteins (enterobactin biosynthesis and iron homeostasis) compared to E. coli grown in rich medium, indicating that the tumor microenvironment is iron-deficient for bacteria. This is supported by LC-MS/MS data showing 71 proteins preferentially expressed in tumors, many involved in iron acquisition pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27, C28 are directly supported by proteomic data (Figures 1d-f), showing upregulation of enterobactin synthesis and iron homeostasis proteins. The inference that tumors are iron-deficient (C3) logically follows from known E. coli iron-sensing regulation (C29). Sample sizes and statistical analyses appear adequate with biological replicates shown in hierarchical clustering (Figure 1e).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C31"
+    ],
+    "result": "E. coli colonization in tumors induces host expression of lipocalin 2 (LCN2), a protein that sequesters bacterial enterobactin. LC-MS/MS analysis demonstrated significant upregulation of LCN2 in tumors inoculated with E. coli compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by quantitative LC-MS/MS data (Figure 1g) showing statistically significant LCN2 upregulation (p<0.01). Claims C5 and C30 about LCN2 function are established knowledge supported by appropriate citations. This represents a key host defense response to bacterial colonization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Iron chelators show differential toxicity between cancer cells and E. coli, with VLX600 demonstrating the largest therapeutic window (280-fold difference, IC50 = 0.33 \u03bcM for MC38 cells vs 92.02 \u03bcM for E. coli).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by dose-response curves in Figure 2a with clear IC50 values reported. The differential sensitivity supports the therapeutic rationale. However, only one cancer cell line (MC38) was tested, limiting generalizability. Technical replicates appear adequate based on error bars.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Engineered E. coli expressing diguanylate cyclase (DGC) produces and secretes cyclic-di-GMP (CDG), which blocks LCN2-enterobactin binding and activates the STING pathway in macrophages. CDG secretion was confirmed by LC-MS/MS and functional activity demonstrated by enhanced IFN-\u03b2 secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by LC-MS/MS identification of CDG (Figure 2b) and bacterial survival assays (Figure 2\u2014supplement 1). Claim C40 is supported by IFN-\u03b2 ELISA data (Figure 2c) showing STING activation. The mechanism linking CDG to LCN2 blockade (C36) is supported by citation to Li et al., 2015. Multiple lines of evidence converge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Combination therapy of DGC-E. coli and VLX600 shows synergistic anti-tumor activity in MC38 tumor-bearing mice, achieving complete remission in 2/4 mice and establishing adaptive immunity. Monotherapies showed limited efficacy, and wild-type E. coli did not synergize with VLX600.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by tumor growth curves and survival data (Figure 2e-f). The requirement for CDG expression (C45) is demonstrated by lack of synergy with wild-type E. coli. Adaptive immunity (C46) is supported by tumor rechallenge data (Figure 2\u2014supplement 2). Sample size is small (n=4) but complete remission in 50% is notable. Statistical significance is indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Engineering E. coli with the IroA gene cluster enables synthesis of glycosylated enterobactin (salmochelin), which resists LCN2 sequestration through steric hindrance. IroA-E. coli demonstrates enhanced LCN2 resistance, superior iron acquisition, and increased cytotoxicity to cancer cells compared to wild-type E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by bacterial viability assays (Figure 3a) showing dose-dependent LCN2 resistance. Iron acquisition (C51) is demonstrated by CAS assay (Figure 3b). Enhanced cytotoxicity (C52) is shown in Figure 3c. The mechanism (C6, C47-C48) is established knowledge. Multiple complementary assays provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "IroA-E. coli demonstrates significantly improved anti-tumor efficacy compared to wild-type E. coli across multiple mouse tumor models (MC38 colon, E0771 breast, B16F10 melanoma), achieving complete remission in 6/10 MC38-bearing mice versus 0/10 for wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by tumor growth curves and survival data across three cancer models (Figures 3d-j). Statistical significance is indicated (p<0.01, p<0.001). Sample sizes are adequate (n=10 for MC38). Individual mouse data in supplementary figures strengthen the result. The consistency across multiple tumor types is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "IroA-E. coli demonstrates comparable safety to wild-type E. coli following intravenous administration, with no detectable bacteremia and no adverse effects on blood cell counts by day 7 post-injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by bacterial burden measurements (Figure 3k) and complete blood counts (Figure 3l) at multiple timepoints. The conclusion (C62) appropriately reflects the data showing no additional safety concerns. However, longer-term safety assessment and organ toxicity evaluation would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Comparative proteomic analysis of WT-E. coli versus IroA-E. coli colonized in tumors reveals that IroA-E. coli expresses significantly lower levels of iron-stress proteins (enterobactin biosynthesis and iron homeostasis), indicating reduced iron deficiency stress in the tumor microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by proteomic data showing differential protein expression (Figure 4a-c). All iron-related proteins show higher expression in WT versus IroA bacteria, supporting reduced stress in IroA-E. coli (C65). The inference is logical given known regulation of these proteins by iron availability. GO-term analysis appropriately categorizes the proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "IroA-E. coli treatment induces iron deficiency stress in host tumor cells, evidenced by elevated transferrin and transferrin receptor expression compared to WT-E. coli treatment, indicating competitive iron acquisition by the engineered bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by proteomic data (Figure 4d) showing elevated host transferrin/transferrin receptor. The interpretation (C68) that this reflects bacterial iron competition is reasonable given established knowledge (C67) about these proteins' regulation by iron availability. This provides evidence for the proposed mechanism of bacterial-mediated iron depletion affecting tumor cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C89"
+    ],
+    "result": "IroA-E. coli therapy establishes durable adaptive anti-tumor immunity mediated in part by CD8+ T cells. Cured mice resist tumor rechallenge, show elevated tumor-infiltrating CD8+ T cells, and anti-tumor activity is partially reduced by CD8+ T cell depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C69, C89 are supported by tumor rechallenge data (Figure 5a) showing complete protection. Claim C70 is supported by flow cytometry (Figure 5b) showing elevated CD8+ T cells. Claim C72 is supported by CD8 depletion experiments (Figure 5c) demonstrating partial dependence. The inference (C73) is reasonable but appropriately qualified as 'in part' since depletion only partially reduced efficacy. Multiple complementary approaches strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Systemic (intravenous) delivery of IroA-E. coli synergizes with oxaliplatin chemotherapy in MC38 tumor-bearing mice, achieving complete remission in 1/4 mice with acceptable tolerability (>90% body weight maintained). Monotherapies and WT-E. coli combinations showed inferior efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by tumor growth curves, survival data, and body weight measurements (Figure 6). The synergy is evident from comparison of combination versus monotherapies. However, sample size is small (n=4), and only 25% complete remission rate is modest. The subdued efficacy of IV versus intratumoral delivery (C77) is an important observation. Statistical significance is indicated for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "This study provides the first proteomic comparison of E. coli in tumors versus rich medium, revealing upregulation of de novo IMP synthesis proteins in tumor-colonized bacteria, suggesting purine limitation as another nutritional immunity mechanism beyond iron restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 about novelty appears reasonable given the specific comparison. Claim C83 is supported by the proteomic data. Claims C84-C86 appropriately cite prior work establishing the biological significance of purine synthesis upregulation. This represents an important secondary finding beyond the main iron-focused results, though it is not experimentally pursued further in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establishing that bacteria can target tumors, offer therapeutic advantages, face nutritional immunity in the host, and that E. coli adaptation to the tumor microenvironment is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C10-C21) represent established knowledge appropriately supported by citations to prior literature. Claim C17 correctly identifies the knowledge gap addressed by this study. These provide necessary context but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C74",
+      "C75"
+    ],
+    "result": "Contextual claims about LCN2's role in cancer aggressiveness and E. coli's tumor-targeting ability following intravenous injection, supported by citations to prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 about LCN2 in cancer and C74-C75 about E. coli tumor targeting are appropriately cited to prior literature. These provide important context for interpreting the therapeutic results but represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Speculative claim that enhanced bacterial adaptation to the tumor microenvironment may improve anti-tumor activity, based on the competitive relationship between bacteria and cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is a reasonable general statement about competition in the TME. Claim C88 is appropriately qualified as speculative ('may potentially'). While the overall study results support this hypothesis, these specific claims are presented as rationale rather than demonstrated conclusions. The speculation is reasonable given the experimental results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,459 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The MIR-506 family miRNAs are located in a conserved genomic region flanked by SLITRK2 and FMR1 across species. SLITRK2 and FMR1 mapped to chromosome 4 in zebrafish and birds but to the X chromosome in most mammals, with all MIR-506 family members located between these two genes in reverse orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, C11, and C12 are well-supported by genomic mapping data shown in Figure 1A across multiple species. The genomic location and orientation of these genes are clearly documented with appropriate citations to previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Conservation analysis reveals that SLITRK2 and FMR1 coding sequences are highly conserved (PhyloP ~4.9, PhastCons ~0.97), while MIR-506 family miRNAs show rapid divergence, with SmiRs being more divergent than FmiRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by PhyloP and PhastCons conservation scores shown in Figure 1C-D with appropriate statistical testing (Kruskal-Wallis test, p<0.05). The data clearly demonstrate differential conservation patterns between coding genes and miRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Analysis of modern human populations shows that MIR-506 family miRNAs are more conserved than pachytene piRNAs, with significantly lower derived allele frequency and mean nucleotide diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by statistical analysis of 1000 Genomes Project data (Figure 1E-F) with appropriate statistical testing (Kruskal-Wallis test, adjusted p<0.05). The comparison to pachytene piRNAs provides a meaningful evolutionary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Phylogenetic analysis suggests MIR-506 family miRNAs shared a common ancestor, with FmiRs emerging earlier than SmiRs, and the family arose much earlier than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by phylogenetic analysis (Figure 2\u2014figure supplement 1) and the presence of FmiRs in green sea turtles (Figure 1\u2014figure supplement 1). The evolutionary timing conclusion is appropriately contrasted with previous reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C32"
+    ],
+    "result": "The MIR-506 family miRNAs were derived from the MER91C DNA transposon, as evidenced by sequence alignment showing >94% identity and phylogenetic analysis confirming MER91C as the sister group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C32 are well-supported by multiple lines of evidence: BLAST alignment data across four species (Supplementary file 2), sequence alignment (Figure 2A), and phylogenetic analysis (Figure 2B, Figure 2\u2014figure supplement 2). The convergence of computational and phylogenetic evidence strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "MER91C DNA transposons can form hairpin structures and produce functional miRNAs when overexpressed in HEK293T cells, with AGO2 co-expression significantly increasing miRNA abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by RNA structure prediction (Figure 2C), small RNA-seq data from testis (Figure 2D), and experimental validation in HEK293T cells (Figure 2E-F). The AGO2 co-expression experiment provides functional evidence for miRNA loading and protection. However, the cell line experiments use a heterologous system (HEK293T) rather than testis cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MIR-506 family miRNAs are highly abundant in testis but barely expressed in other organs, and are predominantly expressed in haploid male germ cells (spermatids and spermatozoa), with ~80-83% significantly upregulated during spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are well-supported by small RNA-seq data from multiple species (Figure 3, Figure 3\u2014figure supplement 1) and purified mouse spermatogenic cells (Figure 3A) with appropriate statistical analysis (FDR < 0.05). The tissue-specificity and developmental expression patterns are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Sequential deletion of MIR-506 family clusters shows that single, double, or triple knockouts cause no discernible defects, but quadKO, quinKO, and XS males produce significantly smaller litters (~5 vs ~8 pups) despite normal testis weight, histology, sperm counts, and motility, with an inverse correlation between miRNAs inactivated and litter size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C42 are supported by systematic knockout experiments with appropriate controls and statistical analysis (one-way ANOVA, adjusted p<0.05). The data show a dose-dependent effect (R\u00b2=0.9139, p<0.05) and the XS line controls for potential off-target effects. The phenotype is subtle but reproducible across multiple breeding pairs (n\u226510 litters from 3 breeding pairs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "QuinKO sperm are less competitive than wild-type sperm in polyandrous mating scenarios, as demonstrated by sequential mating experiments, IVF with mixed sperm at different ratios, and co-artificial insemination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are supported by multiple complementary experimental approaches: sequential mating (Figure 4H-I), IVF at three different sperm ratios (Figure 4J), and co-artificial insemination (Figure 4K). Statistical analysis is appropriate (chi-squared test) and sample sizes are adequate. The use of mTmG reporter mice enables unambiguous paternity determination. The convergence of results across different experimental paradigms strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "QuinKO sperm show comparable blastocyst rates but significantly reduced two-cell rates (~39% vs ~88%) compared to control, suggesting reduced efficiency in fertilization and/or supporting early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by IVF data (Figure 4\u2014figure supplement 1M) with appropriate statistical analysis (paired t-test, p<0.05). The distinction between blastocyst rate (out of two-cell embryos) and two-cell rate (out of zygotes) is important and clearly defined. Sample sizes are adequate (n=67 for quinKO, n=58 for mTmG).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "RNA-seq analysis of knockout testes identified thousands of differentially expressed genes that are predicted targets of MIR-506 family miRNAs, with 431 shared targets enriched in pathways related to embryonic development, spermatogenesis, and cellular organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by RNA-seq data (Figure 5\u2014figure supplement 1A) with appropriate statistical thresholds (fold change \u22652, FDR<0.05) and target prediction using four different algorithms. GO term enrichment analysis (Figure 5B, Figure 5\u2014figure supplement 1B) is appropriate. However, the large number of DETs (1106-3405) raises questions about specificity, and the use of whole testis rather than purified cell populations may introduce confounding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Crisp1, Egr1, and Trpv4 are validated targets of MIR-506 family miRNAs, with Crisp1 and Egr1 confirmed by qPCR, Western blot, and luciferase assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by multiple validation approaches: qPCR (Figure 5\u2014figure supplement 1C), Western blot (Figure 5\u2014figure supplement 1E), and luciferase assays (Figure 5\u2014figure supplement 1F-G). The luciferase assays show that different miRNAs within the family can have opposite effects on the same target, which is interesting but complicates interpretation of the in vivo phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Small RNA-seq confirms successful deletion of targeted miRNAs in knockout mice and reveals genetic compensation, with other MIR-506 family members significantly upregulated when specific clusters are deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by small RNA-seq data (Figure 5C, Supplementary file 6) with appropriate statistical analysis (FDR<0.05). The observation of compensatory upregulation of other family members is important for interpreting the phenotypes and explains why multiple knockouts are required to observe effects. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Comparative analysis reveals that ~69% of target genes are shared among humans, mice, and rats, with target binding sites showing greater conservation than surrounding regions, suggesting purifying rather than adaptive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by comparative target analysis (Figure 6A) and PhyloP score analysis (Figure 6B-C) with appropriate statistical testing (t-test, p<0.05). Luciferase validation of human targets (Figure 6\u2014figure supplement 1A-B) confirms prediction accuracy. The interpretation of purifying selection is reasonable given the higher conservation of binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Human MIR-506 family members target significantly more genes per miRNA (~1268) than mouse counterparts (~1068), with human X-linked MIR-506 family targeting more genes than the average of all human miRNAs, while mouse X-linked MIR-506 family shows no such enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by comparative target analysis (Figure 6F, Figure 6\u2014figure supplement 1D) with appropriate statistical testing (t-test, p<0.05). The comparison to baseline (all miRNAs) is important for context. However, the analysis relies on computational predictions which may have species-specific biases, and the biological significance of targeting more genes per miRNA is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Analysis of MER91C-containing transcripts shows minimal contribution to target site expansion (only 3/28 human and 0/3 mouse genes are DETs), suggesting that increased targeting in humans results from miRNA sequence evolution rather than transposon expansion in target 3'UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by analysis of MER91C-containing transcripts (Figure 6\u2014figure supplement 1E). This is an important control that addresses a potential alternative explanation for increased targeting. The conclusion that human MIR-506 family has been subjected to additional selective pressure is reasonable but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The SLITRK2-FMR1 genomic region shows high variability among species but high similarity within clades, with U\u2192C and A\u2192G being the most common substitutions among MIR-506 family sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by D-GENIES dot plot analysis (Figure 1\u2014figure supplement 2A) and sequence alignment data (Figure 1\u2014figure supplement 2B-C). The observation of specific substitution patterns is interesting and potentially mechanistically relevant, though the functional significance is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Specific miRNAs (Mir201, Mir547, Mir509) in mice and rats are orthologs of human MIR506, MIR507, and MIR509, with some seed sequences remaining conserved despite overall divergence, suggesting both conserved and novel functions across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by sequence alignment data (Figure 1\u2014figure supplement 2C) with appropriate citations to MirGeneDB. The identification of orthologs is important for comparative analysis. The interpretation that the family contains both divergent and conserved miRNAs with potentially different functions is reasonable but remains somewhat speculative (C92).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The most common sequence substitutions (U-to-C and A-to-G) in MIR-506 family miRNAs are likely mediated by ADARs, with ~90% of A-to-I editing occurring in Alu elements, and G-U wobble base pairing potentially allowing evolved miRNAs to target similar sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 are based on sequence analysis (C95) and citations to previous work (C96-C97). While the observation of specific substitution patterns is supported by data, the mechanistic attribution to ADAR-mediated editing is speculative and not directly tested. The functional significance of G-U wobble pairing for target recognition is cited but not experimentally validated in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Knockout of Crisp1 in mice or inhibition of CRISP1 in human sperm phenocopies quinKO mice, with comparable sperm motility but reduced egg penetration ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are based on citations to previous studies (Da Ros et al., 2008; Maldera et al., 2014). While the authors did not perform these experiments themselves, the cited studies are appropriate and the comparison is relevant for interpreting the quinKO phenotype. This represents proper use of literature to contextualize findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Several human studies have correlated dysregulated MIR-506 family miRNAs with impaired male fertility due to maturation arrest and oligo-asthenozoospermia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is based on multiple citations to human studies (Supplementary file 4). This represents appropriate use of literature to establish clinical relevance. However, correlation does not establish causation, and the human studies cited may have limitations not discussed here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "No changes in sperm aggregation and midpiece size were observed in quinKO sperm, ruling out these parameters as mechanisms for reduced sperm competitiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by data in Figure 4\u2014figure supplement 1K-L with appropriate citations to previous work suggesting these parameters might affect competitiveness. This is an important negative control that helps narrow down potential mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Many X-linked miRNA genes escape meiotic sex chromosome inactivation (MSCI), and while individual knockouts show minimal effects, ablation of four or more MIR-506 family clusters produces detectable phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are based on citations to previous work (C81-C82) and current experimental data (C83). The integration of prior knowledge about MSCI escape with current knockout data provides important context for understanding the biological significance of these miRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Sperm competition is a significant evolutionary force, and quinKO males display compromised sperm competition, suggesting that MIR-506 family miRNAs function to enhance sperm competitiveness and male reproductive fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 integrate established evolutionary theory (C84, cited) with experimental data on quinKO sperm competition (C85) to reach a functional conclusion (C86). The experimental evidence for compromised sperm competition is strong, and the functional interpretation is reasonable, though the specific molecular mechanisms remain incompletely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "X-linked genes generally show faster evolution ('faster-X effect'), and despite conservation of SLITRK2 and FMR1, the intervening miRNA genes are divergent among mammalian clades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are based on appropriate citations to previous work. This provides important evolutionary context for interpreting the rapid evolution of MIR-506 family miRNAs despite their location between highly conserved genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "CRISPR-Cas9 genome editing can induce irreversible indels ('scars') used for lineage tracing, and transposable elements drive evolution through transposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are based on appropriate citations to previous work. These represent established principles that provide methodological and conceptual context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "MIR-506 family binding sites in target 3'UTRs are more conserved than surrounding regions, suggesting the seed region has undergone strong selection, consistent with previous studies showing correlations between miRNA expression and evolution of miRNAs and target sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 are supported by PhyloP score analysis (C98) with appropriate interpretation (C99) and contextualization with previous work (C100). The inference of strong selection on seed regions is reasonable given the conservation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Some miRNAs can activate rather than repress gene expression, miRNAs with the same seed sequences may have divergent functions, and sequences outside the seed region may play important roles in function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are based on appropriate citations to previous work (C101, C103) and supported by luciferase data showing differential effects of miRNAs with the same seed sequence (C102). This provides important context for interpreting the complex regulatory effects observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "By sequentially deleting all five highly expressed MIR-506 family clusters, the authors overcame compensatory effects and successfully revealed the physiological role of this miRNA family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is a summary statement supported by the entire experimental strategy and results. The systematic approach of generating multiple knockout lines was necessary to overcome genetic compensation and reveal function. This represents a key methodological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Mice in the wild are promiscuous with polyandrous mating, establishing sperm competition where the most competitive sperm fertilize eggs, and males fertile in monandrous mating may be functionally subfertile in polyandrous scenarios, with sperm competitiveness reflecting general male reproductive fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are based on appropriate citations to previous work on mating behavior and sperm competition. These establish the biological and evolutionary context for why the authors tested sperm competition rather than just standard fertility assays. The logic connecting monandrous vs. polyandrous mating to functional fertility is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "IVF may not ideally evaluate sperm competition as it bypasses key sites where competition occurs, and AI may be better than IVF but less desirable than polyandrous mating for assessing sperm competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 represent thoughtful discussion of experimental limitations. The authors appropriately acknowledge that their experimental approaches (IVF, AI) have limitations compared to natural polyandrous mating. This demonstrates scientific rigor in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "MIR-506 family miRNAs share many targets and compensate for each other's absence, working jointly through regulating target genes in spermatogenesis to ensure sperm competitiveness and male reproductive fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 represent the main conclusions of the study, integrating evidence from target analysis (C111) and functional experiments (C112). The evidence for shared targets and compensation is strong (small RNA-seq showing upregulation of other family members). The functional conclusion about sperm competitiveness is well-supported by multiple experimental approaches, though the specific molecular mechanisms remain incompletely defined.",
+    "result_type": "MAJOR"
+  }
+]

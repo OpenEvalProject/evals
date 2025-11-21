@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C78",
+      "C93"
+    ],
+    "result": "Women remain underrepresented among U.S. tenured and tenure-track faculty at PhD-granting institutions, comprising only 36% of faculty despite earning nearly half of doctorates. The study analyzes comprehensive employment data for 268,769 faculty across 111 academic fields from 2011-2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C13, C78, and C93 establish the scope and context of the study with clear data provenance. The dataset is comprehensive and well-defined, covering nearly all U.S. PhD-granting institutions over a decade. The underrepresentation claim is directly supported by the cited statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Between 2011-2020, hiring had a far greater impact than attrition on women's representation in 90% of academic fields. Women's representation increased by an average of 4.8 percentage points, with hiring contributing to increases in 95% of fields and attrition contributing to increases in 74% of fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C23, and C52-C54 present consistent findings from the decomposition analysis shown in Figure 1. The methodology for decomposing hiring and attrition effects is mathematically sound and clearly described. The percentages and effect sizes are specific and internally consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C64"
+    ],
+    "result": "Despite overall increases in women's representation, academia loses a higher share of women faculty relative to men at every career stage. Attrition decreased women's representation in 29 fields (26%), with 83% of these being majority-male fields, though hiring effects were large enough to produce net increases in 93% of these fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C29, and C64 are well-supported by the decomposition analysis and counterfactual modeling. The finding that men are more likely to be near retirement age (C27) provides important context for interpreting all-cause versus gendered attrition. The statistics are internally consistent and supported by cited prior work (Spoon et al., 2023).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C58",
+      "C59"
+    ],
+    "result": "Counterfactual modeling estimates that gendered attrition caused a net loss of 1,378 women faculty (0.67% of the professoriate) between 2011-2020, equivalent to approximately 72 entire departments. Sixteen fields exhibited significantly gendered attrition, with 15 ending 2020 with fewer women than predicted under gender-neutral attrition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, C36, C37, C58, and C59 present findings from the counterfactual modeling with clear statistical criteria (95% of simulations). The methodology is well-described, resembling the Leslie matrix model with appropriate adaptations. The conversion to 'departments lost' (C37) provides meaningful context, though it's a derived metric rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C110",
+      "C111"
+    ],
+    "result": "The apparent contradiction between all-cause attrition increasing women's representation in 74% of fields while gendered attrition caused net losses is explained by demographic structure: all-cause attrition reflects retirement of a previous generation (predominantly male), while gendered attrition reflects differential career-stage-specific risks. Significant effects are found at high levels of aggregation but often not at individual field levels due to smaller sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, C65, C66, C110, and C111 provide a coherent explanation for seemingly contradictory findings. The reasoning is sound: aggregate effects can be significant even when individual field-level effects are not statistically distinguishable from noise due to power issues. This is a sophisticated statistical insight well-supported by the simulation results in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C76",
+      "C77"
+    ],
+    "result": "Projection modeling shows that eliminating gendered attrition alone leads to only marginal increases in women's representation, while substantial and sustained changes to hiring are necessary to reach gender parity. Changes to hiring drive larger long-term increases than changes to attrition, with even modest annual hiring changes accumulating to substantial field-level changes over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C41, C48-C51, C76, and C77 present consistent conclusions from five projection scenarios shown in Figure 3. The modeling approach is transparent about assumptions (C112, C113) and appropriately cautious about interpretation. The finding that hiring matters more than attrition for future diversity is well-supported by the scenario comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C46",
+      "C47",
+      "C118",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Under the increased representation hiring scenario (OA+IR), women's representation would exceed parity in Medicine, Social Sciences, Humanities, and Public Administration by 2060. Equal-rate hiring with observed attrition (OA+ER) would not achieve stable parity because attrition remains gendered, though it produces the most rapid progress in male-dominated domains like Natural Sciences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C46, C47, C118, C120-C122 present specific findings from the projection scenarios with clear reference to Figure 3. The logical inference that equal hiring and retention guarantees eventual parity (C47) is mathematically sound. The finding that some domains would exceed parity under certain scenarios is an important nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Hiring contributed to negative changes in women's representation in five fields, including majority-women fields like Nursing and Gender Studies. Nine fields (8.1%) saw increases driven more by attrition than hiring, all in non-STEM fields. Only 5 fields (4.5%) saw overall decreases in women's representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C55-C57 identify important exceptions to the general pattern, demonstrating nuanced analysis. These findings are directly supported by the decomposition analysis in Figure 1. The identification of fields where women are already overrepresented experiencing hiring-driven decreases is particularly noteworthy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Women are more likely to report feeling 'pushed' out of academic jobs, and the literature identifies multiple potential causal mechanisms for gendered attrition including disparities in support and valuation, sexual harassment, workplace culture, work-life balance, and unequal impacts of parenthood. A disproportionate share of lost careers would likely be women of color.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, C69-C73, and C75 appropriately cite prior literature for causal mechanisms that the current study cannot directly test. The inference about women of color (C61) is reasonable given cited prior work on intersectional disadvantage. These claims properly distinguish between what the current study demonstrates versus what prior literature suggests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Field-specific studies of gendered faculty attrition sometimes reach conflicting conclusions, which may be explained by smaller sample sizes and greater relative fluctuations in hiring at the field level. Future studies should seek larger sample sizes whenever possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 provide a reasonable explanation for inconsistencies in prior literature based on the current study's findings about statistical power. The recommendation for larger samples (C68) is a logical inference from the observation that effects are significant at aggregate levels but not always at field levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study is limited to tenured and tenure-track faculty at U.S. PhD-granting institutions and analyzes data at the field and domain level rather than individual departments. Results will only generalize to other populations (non-tenure-track faculty, non-U.S. institutions) to the extent they share similar hiring rates, attrition rates, and demographics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 appropriately acknowledge important limitations of scope and generalizability. The authors are transparent about what populations are excluded and appropriately cautious about extrapolation. The acknowledgment that department-level patterns may differ from field-level patterns (C83, C84) is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The majority of women faculty in the U.S. are white, meaning the observed patterns are predominantly driven by this demographic. While attrition may not be the primary challenge for women's representation overall, it could still be a significant barrier for women of color and those from less privileged socioeconomic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 appropriately acknowledge that the study's findings about 'women' primarily reflect the experiences of white women due to demographic composition. The speculation that attrition effects may differ for women of color (C88) is reasonable and appropriately framed as uncertain. This demonstrates awareness of intersectionality limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Equal representation is not equivalent to equal or fair treatment. Pursuing diverse hiring without mitigating causes of existing inequities can create a 'bait and switch' dynamic where new faculty are hired into unsupportive environments, which is believed to contribute to higher turnover rates for women faculty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide important conceptual context about the limitations of purely quantitative representation measures. These claims are appropriately supported by citations to prior literature (Tienda 2013, Smith-Doerr et al. 2017, Slay et al. 2019) and represent thoughtful discussion of policy implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The methodology assigns only binary (woman/man) gender labels to faculty using name-based classification, which is acknowledged as a compromise due to technical limitations of name-based methods and is not intended to reinforce a gender binary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C96 transparently acknowledge a significant methodological limitation. The authors appropriately recognize that gender is nonbinary while explaining the practical constraints of their approach. This transparency about limitations is commendable, though the binary classification does limit the study's ability to capture experiences of nonbinary faculty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study defines hiring and attrition to include all cases where faculty join or leave a field within the dataset, including first-time tenure-track faculty, mid-career transitions from out-of-sample institutions, moves to non-PhD-granting institutions, retirements, and field transitions. Faculty who switch institutions within the same field are not counted as hires or attritions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 provide clear operational definitions of key terms. These definitions are reasonable and well-specified, allowing for reproducibility. The treatment of field transitions (C100) and within-field institutional moves (C101) is logical and clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The model resembles the Leslie matrix model used by demographers and ecologists, with adaptations to match historical faculty population sizes and career age distributions at hiring. Statistical significance was defined as 95% of simulations showing consistent direction of effect. Projection scenarios hold domain sizes fixed at 2020 values and do not extrapolate increasing trends in women among hires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C107, C109, C112-C115 describe the modeling approach with appropriate technical detail and transparency about assumptions. The connection to the Leslie matrix model (C106) provides theoretical grounding. The statistical significance criterion (C109) is clearly defined. The decision not to extrapolate hiring trends (C114) is conservative and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14"
+    ],
+    "result": "Diverse faculty representation improves educational experiences, accelerates innovation, and expands benefits of scientific advances. Higher education has remained inaccessible to large segments of society. Women have earned >50% of bachelor's degrees since 1981 and now receive 46% of doctorates, though only 38% of STEM PhDs compared to 59% of non-STEM PhDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 and C14 establish important background context through citations to prior literature and educational statistics. These claims appropriately frame the study's motivation and are well-supported by the cited sources. The statistics about degree attainment provide important context for interpreting faculty representation gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Faculty have long careers, so trends in gender representation reflect cumulative integration of hiring and attrition effects over many years. Most prior studies focus on single institutions, limiting generalizability. Field-wide assessments and cross-field comparisons are necessary for comprehensive understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 provide conceptual framing for why the study's approach is needed. The characterization of prior work (C17) is supported by citations. The argument for field-wide analysis (C18) is a reasonable inference about what's needed to overcome limitations of single-institution studies.",
+    "result_type": "MINOR"
+  }
+]

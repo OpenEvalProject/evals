@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors identified 15 candidate adaptive polymorphisms (CAPs) in the SARS-CoV-2 spike protein using an evolutionary probability (EP) approach based on phylogenetic analysis of 19 orthologous coronavirus sequences with \u226570% sequence identity. CAPs were defined as residues with EP < 0.05, representing fixed mutations that are rare in related sequences and thus candidates for adaptive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology for CAP identification is clearly described with appropriate evolutionary framework (C1, C106-C113). The specific CAP sites are explicitly listed (C2), and the phylogenetic approach with sequence selection criteria is justified (C107-C108). The EP threshold and interpretation are consistent with established neutral theory principles (C110-C113).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C100",
+      "C114"
+    ],
+    "result": "The identified CAPs predominantly localize to functionally critical regions including the receptor-binding domain (RBD) and Furin cleavage site (residues 676-689). Four CAP sites (478, 486, 498, 681) overlap with sites previously implicated in SARS-CoV-2 evolution by other studies, while 11 CAPs represent novel candidate adaptive sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural localization of CAPs is supported by both textual description and Figure 1C visualization (C3, C100). The overlap with prior studies provides external validation (C4, C5), and the identification of 11 novel sites is a straightforward calculation from the total 15 CAPs (C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C75",
+      "C76"
+    ],
+    "result": "CAPs in closed chains exhibit significant negative coupling asymmetry (DCIasym) with the hACE2 binding interface in the open RBD chain (closed: M = -0.06, SD = 0.33; open: M = -1.68, SD = 0.89; p<0.001), indicating allosteric control where CAPs in closed chains dominate the dynamics of the hACE2 binding site. This asymmetry disappears in the all-closed conformation, confirming it results from RBD opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DCIasym analysis provides quantitative evidence with statistical significance (C7, C8). The control experiment with all-closed conformation (C12) strengthens the interpretation that asymmetry arises from conformational state differences. The allosteric control mechanism is a reasonable inference from the negative asymmetry values (C9, C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Residues in the region 476-486 show extremely low DCIasym values (<-4) and have been previously suggested to stabilize S protein dynamics and prime it for Furin proteolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of region 476-486 as having extreme asymmetry values is data-driven (C10), and the functional interpretation is supported by citation to prior work (C11), providing convergent evidence for the importance of this region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C83",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Site flexibility (measured by %DFI) shows strong positive correlation (r = 0.94) with mutation frequency across ~24,000 SARS-CoV-2 sequences, with more rigid residues having fewer variants. This pattern is consistent with negative selection against mutations at functionally critical rigid sites as predicted by neutral theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis is clearly presented with high correlation coefficient (C13, C14) and substantial dataset (C86). The interpretation aligns with established evolutionary principles (C83, C85) and multiple prior studies support this flexibility-evolution relationship. The data sources are properly documented (C86, C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Omicron mutation sites exhibit significantly stronger allosteric control over hACE2 binding sites (M = -1.74, SD = 1.00) compared to Delta mutation sites (M = -0.98, SD = 0.80; p<0.001), though both show far more control than random sites (M = 0.03, SD = 0.85; p<0.001). This difference in allosteric control may contribute to differences in virulence and infection rates between variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DCIasym comparison between variants is statistically rigorous with appropriate controls (C17, C18). The quantitative differences are clearly demonstrated (C89). However, the causal link to virulence differences (C88, C90) is speculative and relies on correlative reasoning with cited clinical data, though the hypothesis is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The computational EpiScore method successfully captured experimentally determined epistatic behavior for residues 493, 496, 498, 501, and 505 (high epistasis) and 339, 371, 373, and 375 (low epistasis), though it showed higher epistasis values than experiments for residues 417, 440, 446, 477, 478, and 484.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While EpiScore shows agreement with experimental data for some residues (C20, C21), the systematic overestimation for other residues (C22) raises concerns about the method's quantitative accuracy. The validation is partial rather than comprehensive, and the discrepancies are not fully explained. Prior validation in other systems (C19) provides some confidence but doesn't address the specific limitations observed here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C67",
+      "C68",
+      "C73",
+      "C74"
+    ],
+    "result": "Omicron mutations show predominantly additive dynamics (EpiScore peak centered on 1; M = 0.86, SD = 0.46) with respect to Wuhan CAPs, while Delta exhibits non-additive dynamics with many mutations showing EpiScores below 1 (M = 0.70, SD = 0.50). Four of seven low-EP Delta mutations in the NTD show low EpiScores, suggesting they dampen CAP control over hACE2 binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EpiScore distributions clearly differentiate Delta and Omicron variants with statistical significance (C23, C24, C73, C74). The identification of NTD mutations with low EpiScores in Delta is data-driven (C25, C30). The interpretation regarding dampening of CAP control (C27) is a reasonable inference from the EpiScore values, though the mechanistic link to pathogenicity remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Three CAPs (346R, 486F, 498Q) generate highly epistatic EpiScore values (>2.0) and are located near each other in the protein structure. These residues are known or predicted antibody binding sites, and their epistatic interactions with VOC mutations are crucial for maintaining hACE2 binding affinity while enabling immune escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of specific CAPs responsible for high epistasis is data-driven (C31). The functional roles as antibody binding sites are supported by multiple citations (C32, C33, C35). The interpretation of their importance for balancing binding and immune escape (C34) is supported by both the EpiScore data and cited experimental studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C99"
+    ],
+    "result": "The XBB 1.5 subvariant contains a rare double-nucleotide S486P mutation that exhibits unprecedented immune escape capabilities. EpiScore analysis shows this mutation has significantly higher epistasis with other XBB 1.5 mutations (M = 1.40, SD = 0.46; p<0.01), suggesting threefold importance: direct modification of binding sites, epistatic modulation of hACE2 binding, and enhanced immune escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The S486P mutation is documented (C36) with experimental validation of immune escape (C37). The EpiScore analysis provides quantitative evidence of high epistasis (C38, C39). The threefold mechanism (C40, C99) is a reasonable synthesis of the data, though the relative contributions of each mechanism are not quantified. The interpretation is well-supported by convergent computational and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Molecular dynamics simulations reveal that Omicron XBB exhibits heightened flexibility in both hACE2 and antibody binding residues (reducing infectivity, enhancing immune evasion), while XBB 1.5 shows increased rigidity at the RBD-ACE2 interface but maintained flexibility at antibody binding sites. The sum of %DFI values correlates strongly with experimental binding affinities (r = 0.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulations provide mechanistic insights into variant-specific dynamics (C43, C44). The strong correlation with experimental data (C42) validates the computational approach. The interpretation linking flexibility changes to functional outcomes (C45, C46) is supported by cited experimental studies. However, the simulations are limited to 1 \u03bcs each, which may not fully sample conformational space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The effects of mutations are highly dependent on genetic background, with mutations showing different effects in Delta versus Omicron variant contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This context-dependence is demonstrated by the supplementary figure (C47) and is consistent with the epistatic interactions documented throughout the study. This is a well-established principle in evolutionary biology and is appropriately emphasized here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C48",
+      "C97",
+      "C98"
+    ],
+    "result": "The additive nature of Omicron mutations with respect to Wuhan CAPs may contribute to lower pathogenicity and higher immune escape compared to Delta, whose non-additive mutations may increase pathogenicity. Omicron shows lower hACE2 binding affinity but increased RBD open state occupancy, potentially explaining higher transmission despite reduced binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the EpiScore patterns clearly differ between variants (supported by C23-C24), the causal links to pathogenicity and transmission (C28, C97, C98) are speculative. The cited clinical data on hospitalization rates and the cited study on RBD opening (C29, C48) provide correlative support, but alternative explanations are not systematically excluded. The mechanistic pathway from EpiScore values to clinical outcomes requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C70"
+    ],
+    "result": "The study reveals a mechanistic pattern where allosteric sites (many of which are CAPs) exert control over binding site dynamics, and mutations at these sites modulate S protein function. CAPs remain important across variant evolution and should receive special attention when considering future mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-supported synthesis of the multiple analyses presented (C64, C65). The conclusion about continued CAP importance (C70) follows logically from the demonstration that both original CAPs and new variant-specific mutations show similar allosteric control patterns (C66). This represents the main conceptual contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C58",
+      "C100",
+      "C101",
+      "C115",
+      "C116"
+    ],
+    "result": "The S protein binds hACE2 through its RBD, which exhibits closed and open conformational states. The Furin cleavage site (residues 676-689) plays a key role in the opening process by facilitating S protein cleavage into S1 and S2 domains. TMPRSS2 also binds near this region, emphasizing its functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about SARS-CoV-2 spike protein biology, appropriately cited from the literature (C6, C49, C50, C51, C54, C58, C100, C101, C115, C116). This background information provides necessary context for interpreting the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C62"
+    ],
+    "result": "The authors propose that CAP residue positions hold potential for mutations that can alter RBD opening/closing dynamics, supported by observed mutations at these positions that affect infection rates. CAPs may be partially responsible for functional changes enabling human host infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is presented as a hypothesis (C77, C62) with supporting evidence from mutation databases (C78). While the DCIasym data support the allosteric role of CAPs, the direct causal link to RBD dynamics and human adaptation requires experimental validation. The proposal is reasonable but remains speculative without functional studies demonstrating that mutations at these sites actually alter RBD opening dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Omicron subvariants show increased immune evasion, and new mutations in antibody binding sites exhibit more epistatic interactions with CAPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased immune evasion is documented in cited literature (C71), and the EpiScore analysis demonstrates increased epistatic interactions (C72). This observation connects evolutionary dynamics to clinically relevant phenotypes.",
+    "result_type": "MINOR"
+  }
+]

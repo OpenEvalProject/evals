@@ -1,0 +1,2456 @@
+{
+  "submission": {
+    "id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:22:48.166710Z",
+    "updated_at": "2025-11-20T23:22:48.166710Z"
+  },
+  "content": [
+    {
+      "id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "content_type": "manuscript",
+      "content_text": "# Diffusive lensing as a mechanism of intracellular transport and compartmentalization\n\n## Authors\n\n- Achuthan Raja Venkatesh<sup>1</sup> ([ORCID: 0009-0003-1868-4068](https://orcid.org/0009-0003-1868-4068))\n- Kathy H Le<sup>1</sup> ([ORCID: 0009-0001-5575-7153](https://orcid.org/0009-0001-5575-7153))\n- David M Weld<sup>3</sup> ([ORCID: 0000-0002-4574-9491](https://orcid.org/0000-0002-4574-9491)) \u2020\n- Onn Brandman<sup>1</sup> ([ORCID: 0000-0002-2084-154X](https://orcid.org/0000-0002-2084-154X)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Department of Biological Sciences, Indian Institute of Science Education and Research (IISER) Mohali Mohali India ([ROR:01vztzd79](https://ror.org/01vztzd79))\n3. Department of Physics, University of California, Santa Barbara Santa Barbara United States ([ROR:02t274463](https://ror.org/02t274463))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhile inhomogeneous diffusivity has been identified as a ubiquitous feature of the cellular interior, its implications for particle mobility and concentration at different length scales remain largely unexplored. In this work, we use agent-based simulations of diffusion to investigate how heterogeneous diffusivity affects the movement and concentration of diffusing particles. We propose that a nonequilibrium mode of membrane-less compartmentalization arising from the convergence of diffusive trajectories into low-diffusive sinks, which we call \u2018diffusive lensing,\u2019 is relevant for living systems. Our work highlights the phenomenon of diffusive lensing as a potentially key driver of mesoscale dynamics in the cytoplasm, with possible far-reaching implications for biochemical processes.\n\n## Introduction\n\nDiffusion is a fundamental phenomenon of transport at scales ranging from atoms to galaxies. In cells, diffusion of individual components occurs in a complex, crowded milieu (Ellis, 2001; Luby-Phelps, 1999; van den Berg et al., 2017) that is known to exhibit position-dependent diffusivity (Berret, 2016; Garner et al., 2023; Huang et al., 2022; McLaughlin et al., 2020; \u015amigiel et al., 2022; Xiang et al., 2020). Diffusion can occur within or between cellular compartments, where concentrated components carry out chemical reactions. This rich interaction of diffusion and compartmentalization provides the context for cellular biochemistry. Diffusivity varies inversely with viscosity, a key biophysical parameter of the cytoplasm (Bausch et al., 1999; Hu et al., 2017) that dictates translational and rotational mobility of proteins and, by extension, possibly influences their activity (Huang et al., 2022; Lippincott-Schwartz et al., 2001; Pan et al., 2009). While diffusivity has been implicated in modulating or driving a range of cellular processes (Molines et al., 2022; Persson et al., 2020; Xie et al., 2022), the role of inhomogeneous diffusivity in shaping biochemistry by regulating biomolecular concentration and dynamics remains poorly understood. Observation of diverse instances of accumulation across scales motivates our search for uncovering how space-dependent diffusivity affects cell biology. The accumulation of small molecules within the nuclear pore, for instance, has been attributed to diffusion through a viscous region (Ma et al., 2012). At the macroscale, Chladni patterns are an example of particle concentration resulting from inhomogeneous stochastic transport coefficients (Grabec, 2017). The implications of inhomogeneous diffusivity as a nonequilibrium phenomenon occurring at time scales and length scales relevant to biology remain largely unexplored. Theoretically, more information is required to specify the problem than just the diffusion constant: different mathematical interpretations of the stochastic term in diffusion equations with a spatially inhomogeneous diffusion constant result in different physical predictions (see Appendix for more information). Interestingly, diverse mesoscale outcomes are also seen in the case of active biological matter (Bechinger et al., 2016; Needleman and Dogic, 2017; Yeomans, 2017), the density-dependent concentration of active Brownian particles (Cates and Tailleur, 2015) and size-dependent condensation kinetics in the case of C. elegans colony formation (Chen and Ferrell, 2021). While these phenomena focus on motile energy-expending tracers, here we emphasize the underlying space-dependency of a physical property characterizing diffusion. In particular, accumulation arising from inhomogeneous diffusivity may represent a novel mechanism of effective compartmentalization, a key activity for cells in regulating biochemical processes.\n\nIn this work, we employ agent-based modeling to explore how position-dependent diffusivity can affect the distribution of tracer particles. We show that under a set of assumptions that relate to the ambiguities intrinsic to modeling inhomogeneous diffusivity (see Appendix), transport due to a diffusivity gradient leads to particle trajectories being biased toward areas of lower diffusivity, leading to effective compartmentalization and the growth of concentration gradients; we call this effect \u2018diffusive lensing,\u2019 in non-quantitative analogy to the effects on light rays of media with inhomogeneous refractive index, including refraction and the formation of caustics. Analyzing particle trajectories, we show that diffusive lensing manifests differently from homogeneous diffusion at the emergent scale. We conclude that inhomogeneous diffusivity may have diverse implications for intracellular transport, from sequestering particles to modulating where and when higher-order processes such as clustering happen, in a way that is not predictable from equivalent homogeneous-diffusivity models and could affect biochemical reactions.\n\n## Results\n\n### Inhomogeneous diffusivity drives particle accumulation\n\nWe probed the effect of inhomogeneous diffusivity on particle concentration using agent-based modeling of particle dynamics (Figure 1\u2014figure supplement 1A; see Methods). In our modeling, the expected macroscale behavior is dictated by the It\u00f4 interpretation of heterogeneous diffusion (see Appendix) (Volpe and Wehr, 2016). Our model was non-anticipatory in that for a modeled particle traversing an inhomogeneous diffusivity, the step size distribution was defined by the diffusivity at its present position. Other equally consistent interpretations (such as the entirely anticipatory \u2018isothermal\u2019 interpretation) produce different macroscale behaviors (Figure 1\u2014figure supplement 1B). The range of physically incompatible possibilities resulting from different interpretations is known as the It\u00f4-Stratonovich dilemma (Lau and Lubensky, 2007; Sokolov, 2010; Tupper and Yang, 2012; Van Kampen, 1988; Volpe and Wehr, 2016). For systems at thermal equilibrium, the isothermal convention best describes transport; however, the non-equilibrium nature of the cellular interior motivates the consideration of non-isothermal conventions; the physically appropriate convention to use depends upon microscopic parameters and timescale hierarchies not captured in a coarse-grained model of diffusion. Note that while the It\u00f4 interpretation is deployed here, it is possible to convert from one interpretation to another (Volpe and Wehr, 2016) resulting in different interpretations converging at the same physical outcome (see Appendix). The equation used here is distinguished from the conventional 1D diffusion equation which arises from Fick\u2019s laws and is only unambiguously true for homogeneous diffusion (characterized by constant diffusivity).\n\nOver the course of the simulation, particles accumulated in the low-diffusivity zone (Figure 1A and C), consistent with steady-state closed form It\u00f4-convention solutions (Tupper and Yang, 2012). This accumulation entailed the transient depletion of particles on the high-diffusive side of the interface. A similar accumulation was observed in a smooth diffusivity gradient (Figure 1B and D). In both cases, the results from agent-based modeling were corroborated by predictions of the steady-state analytical forms derived from theory. Thus, agent-based simulations demonstrate that under the It\u00f4 convention, areas of decreased diffusivity lead to increases in the concentration of diffusing particles. We term this phenomenon \u2018diffusive lensing\u2019.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89794/elife-89794-fig1-v1.jpg)\n\n**Figure 1.:** (A) Particle distribution at various timesteps of a simulation with a step-like lower-diffusivity region. (B) Particle distribution at various timesteps for a simulation with a diffusivity gradient. (C) Steady-state particle distribution for the simulation in (A). (D) Steady-state particle distribution for the simulation in (B).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89794/elife-89794-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Agent-based modeling of particle dynamics was used in this study. Choosing the diffusivity at the start point of a particle hop is in line with the It\u00f4 interpretation. (B) Numerical solutions for drift-less Fokker-Planck equations with an inhomogeneous diffusion coefficient, for the It\u00f4, Stratonovich, and isothermal conventions.\n\n### Interaction-mediated clustering is affected by heterogenous diffusivity\n\nDiffusive lensing is an interaction-free mode of concentrating particles that stands in contrast to a more typical paradigm of particle accumulation: interaction-driven formation of higher-order structures like protein complexes, gels, crystals, and phase-separated condensates (Banani et al., 2017; Vekilov, 2010; Wu et al., 2023). How might interaction-induced clustering be modulated by inhomogeneous diffusion in a cellular context? To address this question, we heuristically modeled inter-particle interactions via a neighbor-sensing scheme in high and low interaction-strength regimes. The scheme involved using a step size for the modeled particle, which decreases as the number of particles in the vicinity increases (see Methods). At low interaction strength, clustering occurred only at the low-diffusivity end of a gradient (Figure 2A), while the same interaction strength was insufficient to produce clusters in a uniform diffusivity distribution (Figure 2\u2014figure supplement 1A and C). In contrast, a high interaction strength resulted in robust clustering manifesting before particle gradient formation reached the steady-state, leading to clustering towards the high-diffusivity side of the simulation region as well (Figure 2B). At this high interaction strength, the clustering rate remained the same throughout the region in the absence of a gradient (Figure 2\u2014figure supplement 1B and D). Taken together, the results reveal that diffusive lensing can modulate clustering and under certain circumstances cause diffusivity-dependent localized cluster formation, and furthermore that the relative strengths and timescales of each phenomenon quantitatively dictate whether increased clustering will preferentially occur in low-diffusive zones. Similar density-dependent clustering is observed in the case of active Brownian particles during motility-induced phase separation (Cates and Tailleur, 2015). Effects of diffusive lensing on particle concentration may additionally regulate reaction rates and drive stochastic clustering of enzymes (Jilkine et al., 2011).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89794/elife-89794-fig2-v1.jpg)\n\n**Figure 2.:** (A) Progress of a simulation comprising particles possessing weak interactions ($k=0.04$ is the interaction strength; see Methods), initialized with a uniform concentration of particles. (B) Progress of a simulation comprising particles possessing strong interactions ($k=0.1$), initialized with a uniform concentration of particles.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89794/elife-89794-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Progress of a simulation comprising particles possessing weak interactions ($k=0.04$), initialized with a uniform concentration of particles; no diffusivity gradient used here. (B) Progress of a simulation comprising particles possessing weak interactions ($k=0.1$), initialized with a uniform concentration of particles; no diffusivity gradient used here. (C) Mean local density versus time for particles possessing weak interaction strength. (D) Mean local density versus time for particles possessing strong interaction strength. For (C) and (D), n=1000 particles for mean local density calculation (error bars denote SEM).\n\n### Heterogeneous diffusion alters bulk particle motion as measured by in silico microrheology\n\nThe diffusion coefficient is a fundamental biophysical parameter that affects numerous other phenomena, including biochemical reaction rates. To elucidate particle diffusion at the microscale in the context of diffusive lensing, we used an in silico implementation of microrheology to analyze particle trajectories (see Methods; Figure 3\u2014figure supplement 1A). We computed the mean squared displacements (MSDs) for uniform diffusivity simulations (in the case of unencumbered and confined diffusion) and used these to understand how MSD is affected by heterogenous diffusivity in two cases: a continuous diffusivity gradient and a discrete step in diffusivity.\n\nParticle diffusion was unencumbered in the case of large bounds (relative to step size) (Figure 3A) and confined in the case of small bounds (Figure 3B) all in agreement with earlier results (Dix and Verkman, 2008; Saxton, 2007). The MSD at saturation in homogeneously diffusive systems was found to be agnostic to the underlying uniform diffusivity of the system, indicating that it is exclusively determined by the simulation region size. In contrast, particles in a diffusivity gradient exhibited dynamics intermediate to those of homogeneous high and low diffusivity cases, both in the diffusion coefficient and saturation MSD (Figure 3C, inset). The lowering of the saturation MSD reflects particle diffusion occurring within apparent simulation region bounds that confine more than the actual simulation region size. We note that such effective modifications of geometry are also a general feature of optical lensing. Apparent bounds were also found to occur in the two-zone diffusivity case (as in Figure 1A) where, at steady-state, particles populated the simulation region non-uniformly (Figure 3\u2014figure supplement 1B). For most of the diffusivity ratio parameter space, irrespective of whether the smaller zones were more or less diffusive relative to the bulk, a reduction in MSD was seen indicating effectively lower diffusion bounds (Figure 3D). The magnitude of reduction depended on whether most particles resided in the larger or smaller of the two zones. In one observed case ($\\frac{\\mu_{i}}{\\mu_{o}}=0.25$), however, the saturation MSD was higher than what was seen in the homogeneous diffusion scenario possibly due to particles robustly populating the bulk milieu followed by directed motion into the low-diffusive zone. The saturation MSD was also found to depend on the location of the low-diffusive zone: a more-centered zone resulted in a lowered saturation value, possibly due to weaker ratchet effects (Figure 3\u2014figure supplement 1C and D). These results point to the insufficiency of using the diffusion coefficient alone to describe diffusion in heterogenous milieu. They also indicate a potentially rich interplay between heterogenous diffusivity and anomalous diffusion that requires further investigation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89794/elife-89794-fig3-v1.jpg)\n\n**Figure 3.:** (A) mean squared displacement (MSD) versus time for homogeneous diffusion of 10,000 particles in a 5 mm \u00d7 5 mm simulation region. (B) Same as (A) for homogeneous diffusion in a more tightly bounded simulation region (1 \u03bcm \u00d7 0.45 \u03bcm). (C) MSD versus time for inhomogeneous diffusion in a diffusivity gradient versus homogeneous diffusion in the extreme diffusivity cases (simulation region size: 1 \u03bcm \u00d7 0.45 \u03bcm). Inset: zoomed region showing differential saturation of the MSD. (D) MSD versus time for inhomogeneous diffusion due to a stepwise diffusivity distribution with diffusivity ratio $\\frac{\\mu_{i}}{\\mu_{o}}$ relative to the bulk (simulation region size: 1 \u03bcm \u00d7 0.45 \u03bcm). In all cases, n=10,000 particles for MSD calculation (error bars denote SEM).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89794/elife-89794-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Analysis of simulation trajectories via in silico microrheology. (B) Increasing diffusiophoretic extent due to variation of the zone diffusivity in a chamber comprising a low-diffusive end. (C) Mean squared displacement after transition to normal diffusion (saturation mean squared displacement, MSD) depends both on the magnitude of diffusivity difference and the location of the zone itself. n=10,000 particles for MSD calculation (error bars denote SEM). (D) Histogram of at the end of the run for the cases of the 0.25 x low-diffusive zone located at the simulation region edge versus the center.\n\n### In silico FRAP in heterogeneously diffusive environments reveals drivers of mesoscale dynamics\n\nThe in silico microrheology analysis we performed provided insights into dynamics at the single-particle level (i.e. the microscale). To explore collective, emergent behaviors at the mesoscale while continuing to make contact with feasible experiments, we employed an in silico version of fluorescence recovery after photobleaching (in silico FRAP) (Figure 4\u2014figure supplement 1A and B), in more cell-like inhomogeneous environments. In particular, we modeled low-diffusive patches/granules in a cell using a three-parameter disc-packing setup comprising granule radius ($r$), packing density ($\u03d5$), and the ratio of granule diffusivity to bulk diffusivity ($\\frac{\\mu_{i}}{\\mu_{o}}$) (see Methods). We investigated the effect on dynamics of varying these parameters individually, with the goal of gaining an understanding of the effects of varying the amount, nature, and distribution of viscogens in cells. In all cases, the in silico \u2018photobleaching\u2019 event was conducted after the steady-state was attained (Figure 4\u2014figure supplement 1C, D and E). To explain observed changes in the recovery time that would be measured in a FRAP-type experiment, we probed how the mean dwell time of particles in low-diffusive granules varies as a function of these parameters. A decrease in the diffusivity ratio ($\\frac{\\mu_{i}}{\\mu_{o}}$) at fixed $\u03d5$ and $r$ resulted in a decline in measured particle mobility, as characterized by an increase in the simulated FRAP t1/2 values (Figure 4A). Decreasing $\\frac{\\mu_{i}}{\\mu_{o}}$ from 1 to 0.1 caused an approximate doubling of t1/2 (or halving of diffusivity). Similar reduction in mobility was observed upon variation of $\u03d5$ or $r$ separately, keeping the diffusivity ratio constant (Figure 4B and C). The decrease in average mobility in all three cases arose from changes in flux between the low-diffusive and bulk zones, as reflected by an increase in mean dwell times of particles within low-diffusive granules (Figure 4\u2014figure supplement 1F, G and H). Furthermore, such reductions in mobility were emergent in that they arose from the interplay between granular diffusivity and bulk-granule fluxes, as the regions of interest in the simulated photobleaching events comprised granules and the surrounding bulk environment. To investigate whether particle dynamics is affected by the underlying topography realizing the system\u2019s diffusivity, we averaged the granular and bulk diffusivity values to produce weighted-average diffusivity values, and compared in silico recovery in these simulations to that of the equivalent granule-comprising simulations. Such an averaging of the diffusivity to cause an effective uniform mobility for all resident particles resulted in slower dynamics than that of the equivalent granule-comprising simulations (Figure 4D). We conclude that inhomogeneity in diffusivity drives rapid effective dynamics via fluxes between the granular (interior) and bulk (exterior) environments, creating \u2018diffusive highways\u2019 for particles to move rapidly between low-diffusive regions. The diffusive lensing of particles into low-diffusive zones, and their consequent dwelling in these regions, can be tuned by modulating the underlying diffusivity distribution in myriad ways.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89794/elife-89794-fig4-v1.jpg)\n\n**Figure 4.:** (A) Simulated fluorescence recovery after photobleaching (FRAP) t1/2 as a function of granule:bulk diffusivity ratio ($r=0.1\\mum$, $\u03d5=o.6$). (B) Simulated FRAP as a function of granule radius ($\\frac{\\mu_{i}}{\\mu_{o}}=0.05$, $\u03d5=0.6$). (C) Simulated FRAP t1/2 as a function of granule packing density ($\\frac{\\mu_{i}}{\\mu_{o}}=0.05$, $\u03d5=0.01\\mum$). (D) Simulated FRAP for homogeneous and inhomogeneous diffusivity setups realizing the same effective diffusivities ($\\frac{\\mu_{i}}{\\mu_{o}}=0.05$, $\u03d5=0.01\\mum$). In all cases, n=3 ROIs were chosen for the simulated photobleaching (error bars denote SEM).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89794/elife-89794-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The in silico implementation of FRAP was used in this study. (B) Methodology for determining mean dwell time of particles in low-diffusive granules, from a set of simulation trajectories. (C) Steady-states of systems in the variation of granule diffusivity, before commencing in silico FRAP. (D) Steady-states of systems in the variation of granule radius, before commencing in silico FRAP. (E) Steady-states of systems in the variation of granule packing density, before commencing in silico FRAP. (F) Mean dwell time fraction variation as a function of granule:bulk diffusivity. (G) Mean dwell time fraction variation as a function of granule radius. (H) Mean dwell time fraction variation as a function of granule packing density. For (F)-(H), n=10,000 particles used for calculation (error bars denote SEM).\n\n## Discussion\n\nThe complex milieu of the cellular interior has been recently shown to feature heterogeneous diffusivity (Garner et al., 2023; Huang et al., 2022; McLaughlin et al., 2020; Parry et al., 2014; \u015amigiel et al., 2022; Xiang et al., 2020), yet the consequences of such inhomogeneity on compartmentalization and mesoscale molecular dynamics have remained unclear. Through agent-based modeling of diffusion using the It\u00f4 integration convention, we show that heterogenous diffusivity can lead to simulated particle trajectories converging into low-diffusive hotspots, causing the accumulation of diffusing particles into membrane-less compartments defined by the lower-diffusivity zones. We term this mode of transport \u2018diffusive lensing.\u2019 The underlying conclusions from our 2D simulations extend to 3D directly (see Methods). Diffusive lensing has wide-ranging effects on particle distribution and dynamics and, furthermore, it can occur across a wide parameter space. We, therefore, speculate that diffusive lensing is a ubiquitous phenomenon in living systems.\n\nWe found that inhomogeneous diffusivity allows for particle mobility at the microscale and mesoscale to be different from that expected in the presence of homogeneous diffusion. Such an expectation is in line with predicted and observed deviations from normal diffusion in cells (Bancaud et al., 2012; Baum et al., 2014). The relative strengths of diffusive lensing and inter-particle interactions (if any) determined the extent to which clustering was modulated by diffusive lensing: this interplay may be important for determining the effects of inhomogeneous diffusivity on biochemical reaction rates. In these simulations of clustering, particle concentration did not affect diffusivity. In the case that particle concentration decreases diffusivity (for example in the case of branched polysaccharides like glycogen), diffusive lensing may create a positive feedback loop that drives particles into areas where low diffusivity has been nucleated. The effect of diffusive lensing on runaway pathological processes like protein aggregation is a potential direction for future work.\n\nSpatially-averaged effective diffusion timescales were found to depend on the microscopic diffusivity distribution: the same average diffusivity can give rise to slower or faster dynamics depending on whether it is realized via homogeneous or heterogenous diffusivity distributions. In the latter case, the bulk region interspersed between the low-diffusive hotspots provides \u2018diffusive highways\u2019 that contribute to large fluxes at the diffusivity interface, thereby accounting for the faster dynamics. Such expressways and their associated fluxes may impact reaction kinetics by altering substrate turnover rates, congruent with the model of unusual transport processes potentially modifying reaction kinetics (B\u00e9nichou et al., 2010). In the context of subcellular low-diffusive regions (Garner et al., 2023), cells may compensate for geometry-imposed constraints on packing density and size of these regions by altering the diffusivity ratio (against the bulk milieu) instead. To map the detailed effects of inhomogeneous diffusivity on reaction rates, however, our work suggests that a key prerequisite is to chart a suitable set of meta parameters that provide an adequate description of inhomogeneous diffusion (Jin and Verkman, 2007), as a one-parameter description relying exclusively on the average diffusion coefficient is insufficient to fully specify the dynamics.\n\nChanges in viscosity have been shown to occur in the context of cellular processes including cell death (Kuimova et al., 2008), stress adaptation (Persson et al., 2020) and protein aggregation (Thompson et al., 2015). At any given time point, intracellular transport dynamics arise emergently from contributions across length scales ranging from crowding in the bulk milieu due to proteins (Wang et al., 2010), and large biomolecules (Delarue et al., 2018) to cytoskeleton (Carlini et al., 2020; Chaubet et al., 2020) and active flows in the cytoplasm (Arcizet et al., 2008), all leading to unusual anomalous diffusive behaviors at the mesoscale (Banks and Fradin, 2005; Bressloff, 2014; Dix and Verkman, 2008; H\u00f6fling and Franosch, 2013; Kuznetsova et al., 2015; Swaminathan et al., 1997; Zhou et al., 2008). These diffusive behaviors cannot be decoupled from the intrinsic heterogeneity in biomolecular properties themselves (Heald and Cohen-Fix, 2014; Milo and Phillips, 2015). The effects of all of these subcellular determinants and energy-dependent processes on how position-dependent diffusivity is maintained in a cell remains unclear.\n\nNot all cases of heterogeneous diffusivity will lead to diffusive lensing. This ambiguity is captured by the so-called It\u00f4-Stratonovich dilemma (Lau and Lubensky, 2007; Sokolov, 2010; Tupper and Yang, 2012; Van Kampen, 1988; Volpe and Wehr, 2016). Any mathematical conceptualization of diffusion in the presence of position-dependent diffusivity must confront this dilemma, according to which the steady-state concentration distribution of a diffusing tracer depends not only on the localized diffusivity distribution but also on conventions based on microscopic parameters not captured in a coarse-grained model of diffusion; these parameters might, for example, include correlation lengths and times of viscogens or physical characteristics of polymers (Bo et al., 2021; Kupferman et al., 2004; Lau and Lubensky, 2007; Sokolov, 2010; Tupper and Yang, 2012; Van Kampen, 1988; Vishen et al., 2019). We speculate that any source of heterogeneity in diffusivity (including, but not limited to: mesh size experienced by the diffusing tracer, temperature changes, viscogen identity, and concentration) can, in turn, modulate diffusive lensing by means of altering either the particle or the environment-induced noise relaxation time. While the It\u00f4 convention is deployed here to model the nonequilibrium cellular interior (Gnesotto et al., 2018; Phillips et al., 2012), in some cases the isothermal convention may be better suited for modeling transport. The choice of the convention (and the effect of the dilemma, by extension) may also be subverted by recasting the dynamics into an alternate convention by taking suitable drift terms into consideration (see Appendix). Indeed, diverse conventions have been used to model experimentally observed accumulation arising from varied sources of such position-dependent noise (Bringuier, 2011; Pesce et al., 2013; Volpe and Wehr, 2016).\n\nOur work underscores the need to not only examine diffusivity distributions in vivo as a function of local composition and the environment, but also to study their time evolution in response to external stimuli. More speculatively, we suggest that diffusive lensing serves as a potential candidate for a rudimentary mode of pre-biotic compartmentalization. Lensing-driven accumulation of diverse biomolecules may have served to produce chemically enriched spaces, acting as an antecedent of more sophisticated, membrane-bound, and membraneless organizational modalities; such a protocell organization is orthogonal to currently studied models (Monnard and Walde, 2015). This work demonstrates that diffusive lensing can have strong effects on transport and may be common in cellular contexts, modulating both passive and active flows. Future experimental and theoretical work will elucidate the extent of lensing inside and outside of cells and its effects on the biochemical reactions that sustain life.\n\n## Methods\n\n### Agent-based modeling (random walk simulations)\n\nAgent-based modeling of diffusion was conducted via 2D random walk simulations. Irrespective of how the It\u00f4-Stratonovich dilemma is interrogated, the underlying diffusion equations contain additive, separable contributions from each dimension, and this extends to 3D as well. Calculations were, therefore, carried out in 2D for simplicity and visualizability. Non-interacting point particles were initialized uniformly in a 2D simulation region with an aspect ratio matching that of an E. coli bacterium (Phillips et al., 2024). During each time step (also termed epoch or frame), every particle was moved along each coordinate by step sizes sampled from a uniform distribution, $U(\u2212S,S)$, where denotes the step size limit. Across a large number of steps, the distribution of displacements converges to the normal distribution by virtue of the central limit theorem. While sampling was not performed via the normal distribution directly by using the diffusion coefficient (D) as a parameter, the diffusion coefficient was instead arrived at as an emergent property of trajectories comprising a simulation, in a ground-up fashion. Reflection off the wall was modeled using a mirror-image rule. To model a zone of differential diffusivity relative to bulk diffusivity (either a fluid or a diffusivity zone), particle step sizes were sampled from zones characterized by different diffusivities, noting that the diffusion coefficient and diffusivity are inversely related Phillips et al., 2024 and $S\u221e\\sqrt{D}$. At all times, step sizes were sampled from distributions defined by the diffusivity around the present position in accordance with the It\u00f4 interpretation of multiplicative noise (Volpe and Wehr, 2016) (for theoretical predictions of the steady-state behaviors, see Numerical methods for the diffusion equations). In all simulations, a set seed of 1 was used for the random number generator. Simulations were run on MATLAB R2020a on Sherlock (a high-performance computing cluster at Stanford).\n\nIn the simulations which included inter-particle interactions, these interactions were modeled via a neighbor-sensing approach. The step size limit was modified as per the relation, $S_{eff}=Se^{\u2212}kn$, wheredenotes the sensing strength and denotes the number of neighbors (defined as those particles lying within a cutoff span around the particle in question). Such a rule-based approach modeled an effective attractive potential for the inter-particle interactions. Local density calculation used the same cutoff and the data were normalized to the mean local density of particles during initialization. Considering the computational work due to neighbor-sensing, a smaller number of particles (103) were deployed, for a longer period of 2\u00d7104 epochs.\n\nIn the low-diffusive granule simulations, the granules were modeled as disks with randomly initialized centers and fixed radii (r), covering the simulation region up to a desired packing density,$\u03d5$ . The algorithm saturated for $\u03d5\\geq0.6$, in which case, the disks were generated as per cubic close packing, and their positions were incrementally deviated over steps to reduce local ordering as much as possible. The ratio of diffusivity inside the granules to diffusivity outside the granules ($\\frac{\\mu_{i}}{\\mu_{0}}$) was the third parameter under consideration. No two disks were allowed to overlap and all disks were kept confined within the boundaries of the simulation region. The default setup is as follows:r = 0.01 \u03bcm (uniform), $\u03d5$=0.6 (that is, 60% of the simulation region is covered by the granules) and $\\frac{\\mu_{i}}{\\mu_{0}}$ = 0.05. Titration of one of these three parameters involved keeping the other two at the specified levels.\n\n### Numerical methods for the diffusion equations\n\nThe Fokker-Planck equations corresponding to the Ito, Stratonovich, and isothermal interpretations of inhomogeneous diffusion are as follows Gardiner, 2004; Tupper and Yang, 2012 (here $c(x,t)$ denotes the concentration distribution and $D(x)$ denotes the position-dependent diffusivity):\n\nThese equations were numerically evaluated via forward time-centered space (FTCS) schemes, with length and time increments set as 10-3 and 5\u00d710-7 arbitrary units, respectively, and the number of time steps was set to 105. A Gaussian well profile was used for the diffusion coefficient and the initial condition for the concentration distribution was a uniform distribution (Figure 1\u2014figure supplement 1B). For the theoretical prediction in each case, the following relation is used: $c(x,t)D(x)^{1\u2212\\alpha}=constant$ in steady-state, where $\\alpha$ denotes the integration convention used (Tupper and Yang, 2012). Analysis and data visualization were performed on MATLAB R2019a.\n\n### In silico microrheology\n\nAnalysis of particle trajectories was carried out via quantifying the mean squared displacements (MSD). These were calculated from 104 trajectories (each 105 timesteps in duration) per simulation. The timestep was set as 50 \u03bcs so that the diffusion coefficient was $\u22485\\mum^{2}/s$ order of magnitude for a small protein\u2019s mobility in the E. coli cytoplasm (Milo and Phillips, 2015).\n\n### In silico FRAP\n\nIn silico fluorescence recovery after photobleaching (FRAP) studies were performed on the diffusion simulations to quantify emergent dynamics at the mesoscale. 105 particles were deployed for a total duration of 0.5 s (104 epochs). Circular regions (radius of 0.2 \u03bcm) were chosen as the regions of interest (ROIs). In silico photobleaching was instantaneously performed and involved assigning the particles in the ROI the photobleach status. The background was chosen from a uniform diffusivity setup to ensure that the normalization is standardized. The outward turnover of these particles and the simultaneous inward flux of unbleached particles were captured via t1/2, the time taken for recovery up to 50% of the steady-state level of unbleached particles in the ROI (Sprague and McNally, 2005). In these simulations, t1/2 connotes the time taken for the number of \u2018unbleached\u2019 particles in the ROI to reach 50% of the steady-state value. To dissect particles\u2019 behavior during the simulation (in terms of bias towards inhabiting the low-diffusive granules), we calculated the mean dwell time across all particles, per simulation. This involved averaging the periods (of any duration) spent by particles inside low-diffusive granules. For normalization, the total simulation duration was used (0.5 s).\n",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "a734299b-4359-44a5-878d-38582c448637",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, Institut Curie, CNRS UMR168 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89794.3.sa0](https://doi.org/10.7554/eLife.89794.3.sa0)\n\nThe authors discuss an effect, \"diffusive lensing\", by which particles would accumulate in high-viscosity regions \u2013 for instance in the intracellular medium. To obtain these results, the authors rely on agent-based simulations using custom rules performed with the Ito stochastic calculus convention. The \"lensing effect\" discussed is a direct consequence of the choice of the Ito convention without spurious drift which has been discussed before and its adequacy for the intracellular medium is insufficiently discussed and relatively doubtful. Consequently, the relevance of the presented results for biology remain unclear and based on incomplete evidence.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89794.3.sa1](https://doi.org/10.7554/eLife.89794.3.sa1)\n\nThe revised manuscript \"Diffusive lensing as a mechanism of intracellular transport and compartmentalization\" is very similar to the original manuscript. The main difference between the revised and the original manuscript is that the authors have removed the reference to viscosity gradient and instead talk of diffusivity gradient. With this change the manuscript the analysis and claims in the manuscript are much more aligned. The manuscript, as the original version, explores the role of spatially varying diffusion constant in three scenarios:\n\n(i) Spatial localization of non-particles\n\n(ii) Clustering in presence of inter-particle interactions\n\n(iii) Moment analysis for non-interacting particles in space with discrete patches of inhomogeneous diffusivity.\n\nSince the manuscript has not changed much the strengths and weaknesses, in my opinion, remain similar to that of the original manuscript.\n\nStrengths: The implications of a heterogeneous environment on phase separation and reaction kinetics in cells are under-explored. This makes the general theme of this manuscript relevant and interesting.\n\nWeaknesses: The central part of the paper \"diffusive lensing\", i.e., particles localizing in the region of low diffusion constant is not new. Some of the papers authors cite already show that. The parts on phase separation and frap analysis that could provide new results are not rigorous enough for a theory paper.\n\nI reiterate some of my comments from the original version that are valid for the revised version as well.\n\nMy main criticism was not to say that some convention should be used or some not. But instead, the main point was to say that just because there is spatial diffusion constant that does not mean there will be a spatial gradient of particles. From the authors response to my comments, it is clear that they understand the subtilties around it and are aware of the relevant papers. However, a reader not familiar with this discussion may work under the impression that if there if there is a spatialy varying diffusion constant in cell there will be an accumulation of particles in the region of low diffusivity but that may not always be the case. Moreover, localisation of particles in the region of low diffusivity has been reported in many different context. Some of the papers that the author cite already show that. For example, in Rupprecht et al. 2018 non-isothermal interpretation is applied to the dynamics of objects inside cells.\n\nGiven that the central result is not new. The paper could still be of general interest to the biophysics community if the follow up sections (ii) Clustering in presence of inter-particle interactions and (iii) Moment analysis for non-interacting particles in space with discrete patches of inhomogeneous diffusivity were analysed rigorously.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89794.3.sa2](https://doi.org/10.7554/eLife.89794.3.sa2)\n\nSummary:\n\nThe authors study through theory and simulations the diffusion of microscopic particles, and aim to account for the effects of inhomogeneous viscosity and diffusion - in particular regarding the intracellular environment. They propose a mechanism, termed \"Diffusive lensing\", by which particles are attracted towards low-diffusivity regions where they remain trapped. To obtain these results, the authors rely on agent-based simulations using custom rules performed within the Ito stochastic calculus convention, without drift. They acknowledge the fact that this convention does not describe equilibrium systems, and that their results would not hold at equilibrium - and discard these facts by invoking the facts that cells are out-of-equilibrium. Finally, they show some applications of their findings, in particular enhanced clustering in the low-diffusivity regions. The authors conclude that as inhomogeneous diffusion is ubiquitous in life, so must their mechanism be, and hence it must be important.\n\nStrengths:\n\nThe article is well-written, clearly intelligible, its hypotheses are stated relatively clearly and the models and mathematical derivations are compatible with these hypotheses. In the appendices, the authors connect their findings to known results for classic stochastic differential equation formalisms.\n\nWeaknesses:\n\nThis study is, in my opinion, deeply flawed. The main problem lies in the hypotheses, in particular the choice of considering drift-less dynamics in the Ito convention. It is regrettable that the authors choose to use agent-based custom simulations with little physical motivation, rather than a well-established stochastic differential equations framework.\n\nIndeed, stochastic conventions are a notoriously tricky business, but they are both mathematically and physically well-understood and do not result in any \"dilemma\" [some citations in the article, such as (Lau and Lubensky) and (Volpe and Wehr), make an unambiguous resolution of these]. In the continuous-time limit, conventions are not an intrinsic, fixed property of a system, but a choice of writing; however, whenever going from one to another, one must include a corresponding \"spurious drift\" that compensates the effect of this change - a mathematical subtlety that is omitted in the article (except in a quick note in the appendix): in the presence of diffusive gradients, if the drift is zero in one convention, it will thus be non-zero in another. It is well established that for equilibrium systems obeying fluctuation-dissipation, the spurious drift vanishes in the anti-Ito stochastic convention; more precisely one can write in the anti-Ito convention\n\ndx/dt = - D(x)/kT grad U(x) + sqrt(2D(x)) dW\n\nwith D(x) the diffusion, kT the thermal energy (which is space-independent at equilibrium), and dW a d-dimensional Wiener process. Equivalently one can write in the Ito convention:\n\ndx/dt = - D(x)/kT grad U(x) + sqrt(2D(x)) dW + div D(x) (*)\n\nwhere the latter term is the spurious drift arising from convention change. This ensures that the diffusion gradients do not induce currents and probability gradients, and thus that the steady-state PDF is the Gibbs measure (this form has been confirmed experimentally, for instance, for colloidal particles near walls, that have strong diffusivity gradients despite not having significant forces). It generalizes to near-equilibrium systems with non-conservative forces and/or temperature gradient in the form:\n\ndx/dt = F(x) + sqrt(2D(x)) dW + div D(x) (**)\n\nwhere the drift field F(x) encodes these forces. In some cases, it has been shown through careful microscopic analysis that one can have effectively a different form for the last term, namely\n\ndx/dt = F(x) + sqrt(2D(x)) dW + alpha div D(x)\n\nwhere alpha is a \"convention parameter\" that would be = 1 at equilibrium. For instance, in the Volpe and Wehr review this can occur through memory effects in robotic dynamics, or through strong fluctuation-dissipation breakdown. In a near-equilibrium system, this should be strongly justified, as the continuous-time dynamics with alpha \\neq 1 and drift F would be indistinguishable from one with alpha = 1 and drift F + (1-alpha) div D: the authors would have the burden of proving that the observed (absence of) drift is indeed due to alpha\\neq 1, rather than to much more common force fields F(x).\n\nHere, without further motivation than the statement that cells are out-of-equilibrium, drifts are arbitrarily set to zero in the Ito convention, which is in (**) the equivalent to adding a force with drift $-div D$ exactly compensating the spurious drift. It is the effects of this arbitrary force that are studied in the article. The fact that it results in probability gradients is trivial once formulated this way (and in no way is this new - many of the references, for instance Volpe and Wehr, mention this). Enhanced clustering is also a trivial effect of this probability gradient (the local concentration is increased by this force field, so phase separation can occur). As a side note the \"neighbor sensing\" scheme to describe interactions is itself very peculiar and not physically motivated - it violates stochastic thermodynamics laws too, as detailed balance is apparently not respected. There again, the authors have chosen to disregard a century of stochastic thermodynamics in favor of a non-justified unphysical custom rule.\n\nThe authors make no further justification of their choice of driftless Ito simulations than the fact that cells are out-of-equilibrium, leaving the feeling that this is a detail. They make mentions of systems (eg glycogen, prebiotic environment) for which (near-)equilibrium physics should mostly prevail, and of fluctuation dissipation (\"Diffusivity varies inversely with viscosity\", in the introduction). Yet the \"phenomenon\" they discuss is entirely reliant on an undiscussed mechanism by which these assumptions would be completely violated (the citations they make for this - Gnesotto '18 and Phillips '12 - are simply discussions of the fact that cells are out-of-equilibrium, not on any consequences on the convention).\n\nFinally, while inhomogeneous diffusion is ubiquitous, the strength of this effect in realistic conditions is not discussed. Even in the most \"optimistic\" case where alpha=0 would make sense (knowing that in the cellular context we are discussing thermal systems immersed in water and if energy consumption and metabolism were stopped alpha would relax back to 1), the equation (*) above shows that having zero ito drift is equivalent to having a potential countering the spurious drift, with value\n\nU(x) = kT log(D(x) / D0 )\n\n[I have assumed isotropic diffusion for simplicity here, so the div is replaced by a grad]. This means that the diffusion contrasts logarithmically compare to the chemical potential ones -- for instance a major diffusion difference of 100x is equivalent to 4.6kT in potential energy, a relatively modest effect. To prove that the authors' effect of \"diffusive lensing\" is involved in such a system, one would thus have to\n\n1. observe strong spatial variations of the diffusion coefficient (this is doable, and was done before), AND\n\n2. show that there is an enrichment of the diffusing species in the low-diffusion region inversely proportional to the diffusion, AND\n\n3. show that this enrichment cannot be attributed to mild differences in potential energy, for instance by showing that if nonequilibrium energy consumption stops, the concentration fully homogenizes while the diffusion gradients remain.\n\nIf the authors were to successfully show all that in an experimental system, or design a theoretical framework where these effects convincingly emerge from physically realistic microscopic dynamical rules, they would have indeed discovered a new phenomenon. In contrast, the current article only demonstrates the well-known fact that when using arbitrary dynamical rules in heterogeneous diffusion simulations, one can get concentration gradients.\n",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "24e03d7d-a02a-416f-8071-4bcea7e59e2e",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C1",
+      "claim": "Inhomogeneous diffusivity has been identified as a ubiquitous feature of the cellular interior.",
+      "claim_type": "EXPLICIT",
+      "source": "While inhomogeneous diffusivity has been identified as a ubiquitous feature of the cellular interior, its implications for particle mobility and concentration at different length scales remain largely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior research establishing heterogeneous diffusivity in cells.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "addff33f-e632-43a0-adeb-4a2e02bff89d",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C2",
+      "claim": "The implications of inhomogeneous diffusivity for particle mobility and concentration at different length scales remain largely unexplored.",
+      "claim_type": "EXPLICIT",
+      "source": "While inhomogeneous diffusivity has been identified as a ubiquitous feature of the cellular interior, its implications for particle mobility and concentration at different length scales remain largely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "66df59e7-36e3-441e-89bc-69498c49b681",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C3",
+      "claim": "Diffusive lensing is a nonequilibrium mode of membrane-less compartmentalization arising from the convergence of diffusive trajectories into low-diffusive sinks.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that a nonequilibrium mode of membrane-less compartmentalization arising from the convergence of diffusive trajectories into low-diffusive sinks, which we call 'diffusive lensing,' is relevant for living systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical proposal of the work, supported by the simulations presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "f0a4f741-ba5e-49ec-b142-4af3228fd723",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C4",
+      "claim": "Diffusive lensing is relevant for living systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that a nonequilibrium mode of membrane-less compartmentalization arising from the convergence of diffusive trajectories into low-diffusive sinks, which we call 'diffusive lensing,' is relevant for living systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the modeling results and biological context.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "fb386284-4582-4cfd-b405-7dd0668e5663",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C5",
+      "claim": "Diffusive lensing is a potentially key driver of mesoscale dynamics in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work highlights the phenomenon of diffusive lensing as a potentially key driver of mesoscale dynamics in the cytoplasm, with possible far-reaching implications for biochemical processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the simulation results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "614ca9ec-0ff1-41da-80d7-03c0e46f5b63",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C6",
+      "claim": "Diffusive lensing has possible far-reaching implications for biochemical processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work highlights the phenomenon of diffusive lensing as a potentially key driver of mesoscale dynamics in the cytoplasm, with possible far-reaching implications for biochemical processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "5f8269fd-effe-47d1-b076-c8e14d15afaa",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C7",
+      "claim": "Diffusion of individual components in cells occurs in a complex, crowded milieu.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, diffusion of individual components occurs in a complex, crowded milieu (Ellis, 2001; Luby-Phelps, 1999; van den Berg et al., 2017) that is known to exhibit position-dependent diffusivity (Berret, 2016; Garner et al., 2023; Huang et al., 2022; McLaughlin et al., 2020; \u015amigiel et al., 2022; Xiang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8ec089e9-e827-490c-b8a3-ebb6fcd24da8",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C8",
+      "claim": "The cellular milieu is known to exhibit position-dependent diffusivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, diffusion of individual components occurs in a complex, crowded milieu (Ellis, 2001; Luby-Phelps, 1999; van den Berg et al., 2017) that is known to exhibit position-dependent diffusivity (Berret, 2016; Garner et al., 2023; Huang et al., 2022; McLaughlin et al., 2020; \u015amigiel et al., 2022; Xiang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to recent research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "655e702e-3c57-46a6-a50b-d87ac4a7e562",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C9",
+      "claim": "Diffusivity varies inversely with viscosity.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusivity varies inversely with viscosity, a key biophysical parameter of the cytoplasm (Bausch et al., 1999; Hu et al., 2017) that dictates translational and rotational mobility of proteins and, by extension, possibly influences their activity (Huang et al., 2022; Lippincott-Schwartz et al., 2001; Pan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established physical knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "e1f0bd21-4982-4c27-bd5f-f1ad4c167bd2",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C10",
+      "claim": "Viscosity is a key biophysical parameter of the cytoplasm that dictates translational and rotational mobility of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusivity varies inversely with viscosity, a key biophysical parameter of the cytoplasm (Bausch et al., 1999; Hu et al., 2017) that dictates translational and rotational mobility of proteins and, by extension, possibly influences their activity (Huang et al., 2022; Lippincott-Schwartz et al., 2001; Pan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "d46e4069-16c3-4a1e-8e81-02712e54a85d",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C11",
+      "claim": "Viscosity possibly influences protein activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusivity varies inversely with viscosity, a key biophysical parameter of the cytoplasm (Bausch et al., 1999; Hu et al., 2017) that dictates translational and rotational mobility of proteins and, by extension, possibly influences their activity (Huang et al., 2022; Lippincott-Schwartz et al., 2001; Pan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8d1952e8-9f67-46f0-89f1-7db537dcf48b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C12",
+      "claim": "Diffusivity has been implicated in modulating or driving a range of cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "While diffusivity has been implicated in modulating or driving a range of cellular processes (Molines et al., 2022; Persson et al., 2020; Xie et al., 2022), the role of inhomogeneous diffusivity in shaping biochemistry by regulating biomolecular concentration and dynamics remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "b0f2d575-0d27-4f13-b499-7137ca92293b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C13",
+      "claim": "The role of inhomogeneous diffusivity in shaping biochemistry by regulating biomolecular concentration and dynamics remains poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "While diffusivity has been implicated in modulating or driving a range of cellular processes (Molines et al., 2022; Persson et al., 2020; Xie et al., 2022), the role of inhomogeneous diffusivity in shaping biochemistry by regulating biomolecular concentration and dynamics remains poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "2f8abb79-fd41-4941-90a8-20b7cb37abb5",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C14",
+      "claim": "The accumulation of small molecules within the nuclear pore has been attributed to diffusion through a viscous region.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation of small molecules within the nuclear pore, for instance, has been attributed to diffusion through a viscous region (Ma et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "b4b6b9a7-3ab5-4ee1-8aeb-bbbd70fc4346",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C15",
+      "claim": "Chladni patterns are an example of particle concentration resulting from inhomogeneous stochastic transport coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "At the macroscale, Chladni patterns are an example of particle concentration resulting from inhomogeneous stochastic transport coefficients (Grabec, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "020e6c54-f591-4d75-8fba-12310f1573fc",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C16",
+      "claim": "The implications of inhomogeneous diffusivity as a nonequilibrium phenomenon occurring at time scales and length scales relevant to biology remain largely unexplored.",
+      "claim_type": "EXPLICIT",
+      "source": "The implications of inhomogeneous diffusivity as a nonequilibrium phenomenon occurring at time scales and length scales relevant to biology remain largely unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "bc876418-1a47-4be0-a738-9f5fcb692b0b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C17",
+      "claim": "More information is required to specify the problem of inhomogeneous diffusion than just the diffusion constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretically, more information is required to specify the problem than just the diffusion constant: different mathematical interpretations of the stochastic term in diffusion equations with a spatially inhomogeneous diffusion constant result in different physical predictions (see Appendix for more information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about the mathematical modeling of diffusion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "ce140abc-fac1-4144-8582-322656c1c6a2",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C18",
+      "claim": "Different mathematical interpretations of the stochastic term in diffusion equations with a spatially inhomogeneous diffusion constant result in different physical predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretically, more information is required to specify the problem than just the diffusion constant: different mathematical interpretations of the stochastic term in diffusion equations with a spatially inhomogeneous diffusion constant result in different physical predictions (see Appendix for more information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement about mathematical modeling.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "17c6ea7a-0ec1-4c53-aacb-1c233a429a8b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C19",
+      "claim": "Particles accumulated in the low-diffusivity zone in simulations with a step-like lower-diffusivity region.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of the simulation, particles accumulated in the low-diffusivity zone (Figure 1A and C), consistent with steady-state closed form It\u00f4-convention solutions (Tupper and Yang, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 1A and C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "3e7040bc-8a59-42c7-84a0-5ad4dcdad958",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C20",
+      "claim": "Particle accumulation in low-diffusivity zones is consistent with steady-state closed form It\u00f4-convention solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of the simulation, particles accumulated in the low-diffusivity zone (Figure 1A and C), consistent with steady-state closed form It\u00f4-convention solutions (Tupper and Yang, 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison with theoretical predictions from cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "db67e36e-17f6-429a-b57a-14600bab232d",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C21",
+      "claim": "Similar accumulation was observed in a smooth diffusivity gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar accumulation was observed in a smooth diffusivity gradient (Figure 1B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 1B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "edcd2d99-c96a-4669-94ef-8486b042b848",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C22",
+      "claim": "Agent-based simulations demonstrate that under the It\u00f4 convention, areas of decreased diffusivity lead to increases in the concentration of diffusing particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, agent-based simulations demonstrate that under the It\u00f4 convention, areas of decreased diffusivity lead to increases in the concentration of diffusing particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the simulation results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "28e21e41-4ee6-4ca3-a36b-8c9168440a08",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C23",
+      "claim": "At low interaction strength, clustering occurred only at the low-diffusivity end of a gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "At low interaction strength, clustering occurred only at the low-diffusivity end of a gradient (Figure 2A), while the same interaction strength was insufficient to produce clusters in a uniform diffusivity distribution (Figure 2\u2014figure supplement 1A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 2A and Figure 2\u2014figure supplement 1A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8da7a0cb-1d7a-485d-b137-aa4d8f987aeb",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C24",
+      "claim": "The same low interaction strength was insufficient to produce clusters in a uniform diffusivity distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "At low interaction strength, clustering occurred only at the low-diffusivity end of a gradient (Figure 2A), while the same interaction strength was insufficient to produce clusters in a uniform diffusivity distribution (Figure 2\u2014figure supplement 1A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 2\u2014figure supplement 1A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "4fbe2e9a-c971-44aa-b2a4-89de1021f633",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C25",
+      "claim": "At high interaction strength, robust clustering manifested before particle gradient formation reached the steady-state, leading to clustering towards the high-diffusivity side of the simulation region as well.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a high interaction strength resulted in robust clustering manifesting before particle gradient formation reached the steady-state, leading to clustering towards the high-diffusivity side of the simulation region as well (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "7893ceb7-3985-40df-a3f1-33665dd76210",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C26",
+      "claim": "At high interaction strength, the clustering rate remained the same throughout the region in the absence of a gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "At this high interaction strength, the clustering rate remained the same throughout the region in the absence of a gradient (Figure 2\u2014figure supplement 1B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 2\u2014figure supplement 1B and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "f99180a6-3149-4046-af18-3554f8d1204a",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C27",
+      "claim": "Diffusive lensing can modulate clustering and under certain circumstances cause diffusivity-dependent localized cluster formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results reveal that diffusive lensing can modulate clustering and under certain circumstances cause diffusivity-dependent localized cluster formation, and furthermore that the relative strengths and timescales of each phenomenon quantitatively dictate whether increased clustering will preferentially occur in low-diffusive zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the simulation results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8f6577fc-12ff-4eaa-a36a-b3a94d601cc5",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C28",
+      "claim": "The relative strengths and timescales of diffusive lensing and inter-particle interactions quantitatively dictate whether increased clustering will preferentially occur in low-diffusive zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results reveal that diffusive lensing can modulate clustering and under certain circumstances cause diffusivity-dependent localized cluster formation, and furthermore that the relative strengths and timescales of each phenomenon quantitatively dictate whether increased clustering will preferentially occur in low-diffusive zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the simulation results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "4b10c907-92b0-4961-94db-3009565d24e8",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C29",
+      "claim": "Particle diffusion was unencumbered in the case of large bounds relative to step size.",
+      "claim_type": "EXPLICIT",
+      "source": "Particle diffusion was unencumbered in the case of large bounds (relative to step size) (Figure 3A) and confined in the case of small bounds (Figure 3B) all in agreement with earlier results (Dix and Verkman, 2008; Saxton, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3A and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "58759015-0392-43a1-ade3-f35279b3d725",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C30",
+      "claim": "Particle diffusion was confined in the case of small bounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Particle diffusion was unencumbered in the case of large bounds (relative to step size) (Figure 3A) and confined in the case of small bounds (Figure 3B) all in agreement with earlier results (Dix and Verkman, 2008; Saxton, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3B and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "eb66ec28-5fd5-4abc-aaeb-24dd88990e92",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C31",
+      "claim": "The MSD at saturation in homogeneously diffusive systems was found to be agnostic to the underlying uniform diffusivity of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "The MSD at saturation in homogeneously diffusive systems was found to be agnostic to the underlying uniform diffusivity of the system, indicating that it is exclusively determined by the simulation region size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "0417970f-a446-411c-8777-dde3ab57cb79",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C32",
+      "claim": "The saturation MSD in homogeneously diffusive systems is exclusively determined by the simulation region size.",
+      "claim_type": "EXPLICIT",
+      "source": "The MSD at saturation in homogeneously diffusive systems was found to be agnostic to the underlying uniform diffusivity of the system, indicating that it is exclusively determined by the simulation region size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "78f164a6-b6c8-4606-85d3-648be6647bf6",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C33",
+      "claim": "Particles in a diffusivity gradient exhibited dynamics intermediate to those of homogeneous high and low diffusivity cases, both in the diffusion coefficient and saturation MSD.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, particles in a diffusivity gradient exhibited dynamics intermediate to those of homogeneous high and low diffusivity cases, both in the diffusion coefficient and saturation MSD (Figure 3C, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "239ed649-f28e-4042-853b-27019020d734",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C34",
+      "claim": "The lowering of the saturation MSD reflects particle diffusion occurring within apparent simulation region bounds that confine more than the actual simulation region size.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowering of the saturation MSD reflects particle diffusion occurring within apparent simulation region bounds that confine more than the actual simulation region size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "d5536955-6a8a-4b8b-909e-da46af24dd66",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C35",
+      "claim": "For most of the diffusivity ratio parameter space, irrespective of whether the smaller zones were more or less diffusive relative to the bulk, a reduction in MSD was seen indicating effectively lower diffusion bounds.",
+      "claim_type": "EXPLICIT",
+      "source": "For most of the diffusivity ratio parameter space, irrespective of whether the smaller zones were more or less diffusive relative to the bulk, a reduction in MSD was seen indicating effectively lower diffusion bounds (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "ab525c0f-ffe6-4bed-bc03-0c3901d82f73",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C36",
+      "claim": "The saturation MSD was found to depend on the location of the low-diffusive zone.",
+      "claim_type": "EXPLICIT",
+      "source": "The saturation MSD was also found to depend on the location of the low-diffusive zone: a more-centered zone resulted in a lowered saturation value, possibly due to weaker ratchet effects (Figure 3\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 3\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "68d90609-0b22-41e8-94db-c0fc31b3398a",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C37",
+      "claim": "A more-centered low-diffusive zone resulted in a lowered saturation MSD value, possibly due to weaker ratchet effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The saturation MSD was also found to depend on the location of the low-diffusive zone: a more-centered zone resulted in a lowered saturation value, possibly due to weaker ratchet effects (Figure 3\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data and includes a speculative explanation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "2106744c-6d7a-4c05-9cfa-cb4b4b9f6443",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C38",
+      "claim": "These results point to the insufficiency of using the diffusion coefficient alone to describe diffusion in heterogenous milieu.",
+      "claim_type": "EXPLICIT",
+      "source": "These results point to the insufficiency of using the diffusion coefficient alone to describe diffusion in heterogenous milieu.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "5f2a7924-198b-4c8c-b47b-c0fcb474dffa",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C42",
+      "claim": "The decrease in average mobility arose from changes in flux between the low-diffusive and bulk zones, as reflected by an increase in mean dwell times of particles within low-diffusive granules.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in average mobility in all three cases arose from changes in flux between the low-diffusive and bulk zones, as reflected by an increase in mean dwell times of particles within low-diffusive granules (Figure 4\u2014figure supplement 1F, G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 4\u2014figure supplement 1F, G and H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "5eb57828-1fe3-456c-965a-96be406a5d1d",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C43",
+      "claim": "Averaging the granular and bulk diffusivity values to produce weighted-average diffusivity values resulted in slower dynamics than that of the equivalent granule-comprising simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an averaging of the diffusivity to cause an effective uniform mobility for all resident particles resulted in slower dynamics than that of the equivalent granule-comprising simulations (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "9e7f64ce-02fa-4985-8e6a-de4d20069017",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C44",
+      "claim": "Inhomogeneity in diffusivity drives rapid effective dynamics via fluxes between the granular (interior) and bulk (exterior) environments, creating 'diffusive highways' for particles to move rapidly between low-diffusive regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that inhomogeneity in diffusivity drives rapid effective dynamics via fluxes between the granular (interior) and bulk (exterior) environments, creating 'diffusive highways' for particles to move rapidly between low-diffusive regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "750d9eb2-ae16-4ec0-9c56-57e115fab2a3",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C45",
+      "claim": "The diffusive lensing of particles into low-diffusive zones, and their consequent dwelling in these regions, can be tuned by modulating the underlying diffusivity distribution in myriad ways.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusive lensing of particles into low-diffusive zones, and their consequent dwelling in these regions, can be tuned by modulating the underlying diffusivity distribution in myriad ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "e95131fc-ae07-455d-b974-bb969efc1758",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C46",
+      "claim": "The complex milieu of the cellular interior has been recently shown to feature heterogeneous diffusivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex milieu of the cellular interior has been recently shown to feature heterogeneous diffusivity (Garner et al., 2023; Huang et al., 2022; McLaughlin et al., 2020; Parry et al., 2014; \u015amigiel et al., 2022; Xiang et al., 2020), yet the consequences of such inhomogeneity on compartmentalization and mesoscale molecular dynamics have remained unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to recent research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "d2bd9cca-fac7-4390-bf36-49f330f3484b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C47",
+      "claim": "The consequences of heterogeneous diffusivity on compartmentalization and mesoscale molecular dynamics have remained unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex milieu of the cellular interior has been recently shown to feature heterogeneous diffusivity (Garner et al., 2023; Huang et al., 2022; McLaughlin et al., 2020; Parry et al., 2014; \u015amigiel et al., 2022; Xiang et al., 2020), yet the consequences of such inhomogeneity on compartmentalization and mesoscale molecular dynamics have remained unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "413393e5-0f57-43b3-9361-421a4694d7bc",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C48",
+      "claim": "Through agent-based modeling of diffusion using the It\u00f4 integration convention, heterogenous diffusivity can lead to simulated particle trajectories converging into low-diffusive hotspots, causing the accumulation of diffusing particles into membrane-less compartments defined by the lower-diffusivity zones.",
+      "claim_type": "EXPLICIT",
+      "source": "Through agent-based modeling of diffusion using the It\u00f4 integration convention, we show that heterogenous diffusivity can lead to simulated particle trajectories converging into low-diffusive hotspots, causing the accumulation of diffusing particles into membrane-less compartments defined by the lower-diffusivity zones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the work, supported by simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "e8b4fc83-eb40-4971-b927-896a46a9b4db",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C49",
+      "claim": "The underlying conclusions from the 2D simulations extend to 3D directly.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying conclusions from our 2D simulations extend to 3D directly (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the generalizability of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "eeddfe13-b2ca-487c-87a9-a27935d82f51",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C50",
+      "claim": "Diffusive lensing can occur across a wide parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusive lensing has wide-ranging effects on particle distribution and dynamics and, furthermore, it can occur across a wide parameter space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8cb1413e-7f8f-4e1a-9790-4ce98a22f796",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C51",
+      "claim": "Diffusive lensing is a ubiquitous phenomenon in living systems.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, speculate that diffusive lensing is a ubiquitous phenomenon in living systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "946ad608-2c40-4b50-956d-da2d891b4efd",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C52",
+      "claim": "Inhomogeneous diffusivity allows for particle mobility at the microscale and mesoscale to be different from that expected in the presence of homogeneous diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhomogeneous diffusivity allows for particle mobility at the microscale and mesoscale to be different from that expected in the presence of homogeneous diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "4a265410-64b1-4e1d-af22-50eee17609da",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C53",
+      "claim": "Such an expectation of different mobility is in line with predicted and observed deviations from normal diffusion in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an expectation is in line with predicted and observed deviations from normal diffusion in cells (Bancaud et al., 2012; Baum et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "3b768710-10d9-406f-966a-9481b54ad2e3",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C54",
+      "claim": "The relative strengths of diffusive lensing and inter-particle interactions determined the extent to which clustering was modulated by diffusive lensing.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative strengths of diffusive lensing and inter-particle interactions (if any) determined the extent to which clustering was modulated by diffusive lensing: this interplay may be important for determining the effects of inhomogeneous diffusivity on biochemical reaction rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "9a933e5a-2471-4e0c-9878-7d54cf4e204d",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C55",
+      "claim": "The interplay between diffusive lensing and inter-particle interactions may be important for determining the effects of inhomogeneous diffusivity on biochemical reaction rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative strengths of diffusive lensing and inter-particle interactions (if any) determined the extent to which clustering was modulated by diffusive lensing: this interplay may be important for determining the effects of inhomogeneous diffusivity on biochemical reaction rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "01c0aa66-a062-40d1-a1b3-f71cfd33b147",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C56",
+      "claim": "In the case that particle concentration decreases diffusivity, diffusive lensing may create a positive feedback loop that drives particles into areas where low diffusivity has been nucleated.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case that particle concentration decreases diffusivity (for example in the case of branched polysaccharides like glycogen), diffusive lensing may create a positive feedback loop that drives particles into areas where low diffusivity has been nucleated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about a potential mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "7133db86-98e0-4903-9132-5bb65d6ffbc6",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C57",
+      "claim": "Spatially-averaged effective diffusion timescales were found to depend on the microscopic diffusivity distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatially-averaged effective diffusion timescales were found to depend on the microscopic diffusivity distribution: the same average diffusivity can give rise to slower or faster dynamics depending on whether it is realized via homogeneous or heterogenous diffusivity distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "561888dc-e823-400d-b3cc-5bd19b069f05",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C58",
+      "claim": "The same average diffusivity can give rise to slower or faster dynamics depending on whether it is realized via homogeneous or heterogenous diffusivity distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatially-averaged effective diffusion timescales were found to depend on the microscopic diffusivity distribution: the same average diffusivity can give rise to slower or faster dynamics depending on whether it is realized via homogeneous or heterogenous diffusivity distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "1c5ed2f3-69a9-4d7c-a41e-a99a5cd13f17",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C59",
+      "claim": "The bulk region interspersed between the low-diffusive hotspots provides 'diffusive highways' that contribute to large fluxes at the diffusivity interface, thereby accounting for the faster dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter case, the bulk region interspersed between the low-diffusive hotspots provides 'diffusive highways' that contribute to large fluxes at the diffusivity interface, thereby accounting for the faster dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "7ba161d2-f1de-4c99-b714-30ca3c0baf79",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C60",
+      "claim": "Such expressways and their associated fluxes may impact reaction kinetics by altering substrate turnover rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Such expressways and their associated fluxes may impact reaction kinetics by altering substrate turnover rates, congruent with the model of unusual transport processes potentially modifying reaction kinetics (B\u00e9nichou et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "28bbdb62-e47d-4667-b3b6-5111a689c3f9",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C61",
+      "claim": "Cells may compensate for geometry-imposed constraints on packing density and size of low-diffusive regions by altering the diffusivity ratio against the bulk milieu instead.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of subcellular low-diffusive regions (Garner et al., 2023), cells may compensate for geometry-imposed constraints on packing density and size of these regions by altering the diffusivity ratio (against the bulk milieu) instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential cellular mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "1ed382d3-1910-4b2b-8b75-b77134d11bca",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C62",
+      "claim": "A one-parameter description relying exclusively on the average diffusion coefficient is insufficient to fully specify the dynamics in inhomogeneous diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "To map the detailed effects of inhomogeneous diffusivity on reaction rates, however, our work suggests that a key prerequisite is to chart a suitable set of meta parameters that provide an adequate description of inhomogeneous diffusion (Jin and Verkman, 2007), as a one-parameter description relying exclusively on the average diffusion coefficient is insufficient to fully specify the dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "bd3b6c88-8ee8-4833-a34e-51992a168572",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C63",
+      "claim": "Changes in viscosity have been shown to occur in the context of cellular processes including cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in viscosity have been shown to occur in the context of cellular processes including cell death (Kuimova et al., 2008), stress adaptation (Persson et al., 2020) and protein aggregation (Thompson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "b42aa757-174d-4749-b316-b8be3d432b1b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C64",
+      "claim": "Changes in viscosity have been shown to occur in the context of stress adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in viscosity have been shown to occur in the context of cellular processes including cell death (Kuimova et al., 2008), stress adaptation (Persson et al., 2020) and protein aggregation (Thompson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "05d096e3-78eb-49a4-ad73-dc82b1431a60",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C65",
+      "claim": "Changes in viscosity have been shown to occur in the context of protein aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in viscosity have been shown to occur in the context of cellular processes including cell death (Kuimova et al., 2008), stress adaptation (Persson et al., 2020) and protein aggregation (Thompson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "33ec8655-8dc9-4d73-b66b-9e3f65bd36c6",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C66",
+      "claim": "The effects of subcellular determinants and energy-dependent processes on how position-dependent diffusivity is maintained in a cell remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of all of these subcellular determinants and energy-dependent processes on how position-dependent diffusivity is maintained in a cell remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "c73cdd8e-4ad4-4c1d-ac9d-274aded1df1c",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C67",
+      "claim": "Not all cases of heterogeneous diffusivity will lead to diffusive lensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all cases of heterogeneous diffusivity will lead to diffusive lensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the phenomenon.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8ec52ae2-f03d-42b1-9bef-ae87043d2e6f",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C68",
+      "claim": "This ambiguity is captured by the so-called It\u00f4-Stratonovich dilemma.",
+      "claim_type": "EXPLICIT",
+      "source": "This ambiguity is captured by the so-called It\u00f4-Stratonovich dilemma (Lau and Lubensky, 2007; Sokolov, 2010; Tupper and Yang, 2012; Van Kampen, 1988; Volpe and Wehr, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "774dd16f-34ff-4334-b90a-a1e00d2d545a",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C69",
+      "claim": "The steady-state concentration distribution of a diffusing tracer depends not only on the localized diffusivity distribution but also on conventions based on microscopic parameters not captured in a coarse-grained model of diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Any mathematical conceptualization of diffusion in the presence of position-dependent diffusivity must confront this dilemma, according to which the steady-state concentration distribution of a diffusing tracer depends not only on the localized diffusivity distribution but also on conventions based on microscopic parameters not captured in a coarse-grained model of diffusion; these parameters might, for example, include correlation lengths and times of viscogens or physical characteristics of polymers (Bo et al., 2021; Kupferman et al., 2004; Lau and Lubensky, 2007; Sokolov, 2010; Tupper and Yang, 2012; Van Kampen, 1988; Vishen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "2dd07e77-3fa4-4813-8094-605ba706fc4b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C70",
+      "claim": "Any source of heterogeneity in diffusivity can modulate diffusive lensing by means of altering either the particle or the environment-induced noise relaxation time.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that any source of heterogeneity in diffusivity (including, but not limited to: mesh size experienced by the diffusing tracer, temperature changes, viscogen identity, and concentration) can, in turn, modulate diffusive lensing by means of altering either the particle or the environment-induced noise relaxation time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "76f30a27-bd50-41bb-9154-4c940c12d46d",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C71",
+      "claim": "The It\u00f4 convention is deployed to model the nonequilibrium cellular interior.",
+      "claim_type": "EXPLICIT",
+      "source": "While the It\u00f4 convention is deployed here to model the nonequilibrium cellular interior (Gnesotto et al., 2018; Phillips et al., 2012), in some cases the isothermal convention may be better suited for modeling transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "891a88f7-6bda-4c47-bbd7-6f3519133286",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C72",
+      "claim": "In some cases the isothermal convention may be better suited for modeling transport.",
+      "claim_type": "EXPLICIT",
+      "source": "While the It\u00f4 convention is deployed here to model the nonequilibrium cellular interior (Gnesotto et al., 2018; Phillips et al., 2012), in some cases the isothermal convention may be better suited for modeling transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about alternative modeling approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "1eeaac48-c820-407c-a448-7c3586dacc47",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C73",
+      "claim": "Diverse conventions have been used to model experimentally observed accumulation arising from varied sources of position-dependent noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, diverse conventions have been used to model experimentally observed accumulation arising from varied sources of such position-dependent noise (Bringuier, 2011; Pesce et al., 2013; Volpe and Wehr, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8c47d806-ccb0-4822-aa72-f9d55a3cdf06",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C74",
+      "claim": "This work underscores the need to not only examine diffusivity distributions in vivo as a function of local composition and the environment, but also to study their time evolution in response to external stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work underscores the need to not only examine diffusivity distributions in vivo as a function of local composition and the environment, but also to study their time evolution in response to external stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "06e3a3c3-956d-427e-8050-5ec4e2ddba79",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C75",
+      "claim": "Diffusive lensing serves as a potential candidate for a rudimentary mode of pre-biotic compartmentalization.",
+      "claim_type": "EXPLICIT",
+      "source": "More speculatively, we suggest that diffusive lensing serves as a potential candidate for a rudimentary mode of pre-biotic compartmentalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculative.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "7f7b3e3b-ff89-429a-a67b-e5ddc6aea598",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C76",
+      "claim": "Lensing-driven accumulation of diverse biomolecules may have served to produce chemically enriched spaces, acting as an antecedent of more sophisticated, membrane-bound, and membraneless organizational modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Lensing-driven accumulation of diverse biomolecules may have served to produce chemically enriched spaces, acting as an antecedent of more sophisticated, membrane-bound, and membraneless organizational modalities; such a protocell organization is orthogonal to currently studied models (Monnard and Walde, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about prebiotic evolution.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "93a5ce22-8f83-4512-8639-8341c2a15556",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C77",
+      "claim": "This work demonstrates that diffusive lensing can have strong effects on transport and may be common in cellular contexts, modulating both passive and active flows.",
+      "claim_type": "EXPLICIT",
+      "source": "This work demonstrates that diffusive lensing can have strong effects on transport and may be common in cellular contexts, modulating both passive and active flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the work's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "47fc0a33-98fd-4ee5-b4e9-a78dff80e2a6",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C78",
+      "claim": "Agent-based modeling of diffusion was conducted via 2D random walk simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Agent-based modeling of diffusion was conducted via 2D random walk simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "dd7541ed-dffa-4525-9a20-060a69b498d9",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C79",
+      "claim": "The underlying diffusion equations contain additive, separable contributions from each dimension, and this extends to 3D as well.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of how the It\u00f4-Stratonovich dilemma is interrogated, the underlying diffusion equations contain additive, separable contributions from each dimension, and this extends to 3D as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mathematical properties of diffusion equations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "b1f3c2eb-7153-4f46-ba59-76196532a430",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C80",
+      "claim": "Calculations were carried out in 2D for simplicity and visualizability.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculations were, therefore, carried out in 2D for simplicity and visualizability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "2a09dd68-a24e-4766-a4a2-8c7322b4bb86",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C81",
+      "claim": "Non-interacting point particles were initialized uniformly in a 2D simulation region with an aspect ratio matching that of an E. coli bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-interacting point particles were initialized uniformly in a 2D simulation region with an aspect ratio matching that of an E. coli bacterium (Phillips et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation setup.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "3def4a67-e6ad-411c-b9bc-25ce803e51f4",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C83",
+      "claim": "Across a large number of steps, the distribution of displacements converges to the normal distribution by virtue of the central limit theorem.",
+      "claim_type": "EXPLICIT",
+      "source": "Across a large number of steps, the distribution of displacements converges to the normal distribution by virtue of the central limit theorem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mathematical properties of the simulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "cf6be3b4-fcd7-45dc-bdf6-224a51542888",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C84",
+      "claim": "The diffusion coefficient was arrived at as an emergent property of trajectories comprising a simulation, in a ground-up fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "While sampling was not performed via the normal distribution directly by using the diffusion coefficient (D) as a parameter, the diffusion coefficient was instead arrived at as an emergent property of trajectories comprising a simulation, in a ground-up fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodological approach.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "2ee8be54-33ed-4f70-abfb-7141e26ae663",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C85",
+      "claim": "At all times, step sizes were sampled from distributions defined by the diffusivity around the present position in accordance with the It\u00f4 interpretation of multiplicative noise.",
+      "claim_type": "EXPLICIT",
+      "source": "At all times, step sizes were sampled from distributions defined by the diffusivity around the present position in accordance with the It\u00f4 interpretation of multiplicative noise (Volpe and Wehr, 2016) (for theoretical predictions of the steady-state behaviors, see Numerical methods for the diffusion equations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation algorithm and its theoretical basis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "5709042c-3244-4775-a12d-c93bc4de959f",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C86",
+      "claim": "In the simulations which included inter-particle interactions, these interactions were modeled via a neighbor-sensing approach.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations which included inter-particle interactions, these interactions were modeled via a neighbor-sensing approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "cbf4a77d-f575-4676-92ba-54b1e8d0b800",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C88",
+      "claim": "Such a rule-based approach modeled an effective attractive potential for the inter-particle interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a rule-based approach modeled an effective attractive potential for the inter-particle interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the interaction model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "effabff2-fda9-4be6-afe6-be73fd44be7a",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C91",
+      "claim": "No two disks were allowed to overlap and all disks were kept confined within the boundaries of the simulation region.",
+      "claim_type": "EXPLICIT",
+      "source": "No two disks were allowed to overlap and all disks were kept confined within the boundaries of the simulation region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation constraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "e78e6f06-7b60-4ab1-b7ba-7d4ef728bb88",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C92",
+      "claim": "Analysis of particle trajectories was carried out via quantifying the mean squared displacements (MSD).",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of particle trajectories was carried out via quantifying the mean squared displacements (MSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "7c67db5e-56a2-4d34-a4c2-b7bf3a1f4df5",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C93",
+      "claim": "These MSDs were calculated from 10^4 trajectories (each 10^5 timesteps in duration) per simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These were calculated from 104 trajectories (each 105 timesteps in duration) per simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "ca8cdc9a-fa4a-499e-b45c-e4ab410fe00b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C95",
+      "claim": "In silico FRAP studies were performed on the diffusion simulations to quantify emergent dynamics at the mesoscale.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico fluorescence recovery after photobleaching (FRAP) studies were performed on the diffusion simulations to quantify emergent dynamics at the mesoscale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "59997a78-69f2-4e09-8928-c2eec79265e6",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C96",
+      "claim": "10^5 particles were deployed for a total duration of 0.5 s (10^4 epochs) in the in silico FRAP simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "105 particles were deployed for a total duration of 0.5 s (104 epochs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "21bb9074-6165-4280-b158-e4e306f8c64d",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C97",
+      "claim": "Circular regions (radius of 0.2 \u03bcm) were chosen as the regions of interest (ROIs) in the in silico FRAP simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular regions (radius of 0.2 \u03bcm) were chosen as the regions of interest (ROIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "1931f55a-12cc-4267-a288-ec05f4be7fbb",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C98",
+      "claim": "In silico photobleaching was instantaneously performed and involved assigning the particles in the ROI the photobleach status.",
+      "claim_type": "EXPLICIT",
+      "source": "In silico photobleaching was instantaneously performed and involved assigning the particles in the ROI the photobleach status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "7af45596-e4de-42cc-acce-0c64a8cfc6e4",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C99",
+      "claim": "t1/2 connotes the time taken for the number of 'unbleached' particles in the ROI to reach 50% of the steady-state value.",
+      "claim_type": "EXPLICIT",
+      "source": "In these simulations, t1/2 connotes the time taken for the number of 'unbleached' particles in the ROI to reach 50% of the steady-state value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the metric used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8ae1da48-8077-4057-9f24-1e9d676bc1c5",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "claim_id": "C100",
+      "claim": "Mean dwell time was calculated by averaging the periods spent by particles inside low-diffusive granules.",
+      "claim_type": "EXPLICIT",
+      "source": "To dissect particles' behavior during the simulation (in terms of bias towards inhabiting the low-diffusive granules), we calculated the mean dwell time across all particles, per simulation. This involved averaging the periods (of any duration) spent by particles inside low-diffusive granules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "77157bb9-17a3-4e5e-9185-d42756459f99",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes that inhomogeneous diffusivity is a known feature of the cellular interior based on prior research. Multiple recent studies have documented position-dependent diffusivity in cells, providing the biological context for the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7, C8, and C46 are well-supported by multiple citations to prior experimental work demonstrating heterogeneous diffusivity in cellular environments. These claims appropriately characterize the state of prior knowledge and provide valid motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "1f882684-3a5d-465c-a885-8e960463f0d8",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identify a gap in current knowledge: while inhomogeneous diffusivity has been documented, its implications for particle mobility, concentration, compartmentalization, and mesoscale dynamics remain poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C13, C16, and C47 accurately characterize the knowledge gap that motivates this study. These are reasonable statements about the current state of the field that justify the research direction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using agent-based simulations under the It\u00f4 convention, the authors demonstrate that particles accumulate in low-diffusivity zones in both step-like and smooth diffusivity gradients. This accumulation, termed 'diffusive lensing,' is consistent with theoretical predictions and represents the core phenomenon investigated in the manuscript.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19-C22, and C48 are well-supported by simulation data (Figures 1A-D) and agreement with theoretical predictions from Tupper and Yang (2012). The simulations appropriately implement the It\u00f4 convention and demonstrate the accumulation phenomenon clearly. However, the biological relevance depends critically on whether the It\u00f4 convention is the appropriate model for cellular systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "7301c89f-70ad-4be8-b2ec-a0eab2863cb8",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors acknowledge the It\u00f4-Stratonovich dilemma: different mathematical interpretations of stochastic diffusion with position-dependent diffusivity yield different physical predictions, and the appropriate convention depends on microscopic parameters not captured in coarse-grained models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, C67-C69 accurately describe a well-established theoretical issue in modeling inhomogeneous diffusion, supported by appropriate citations. The authors appropriately acknowledge this fundamental ambiguity, though the choice of It\u00f4 convention for cellular systems requires stronger justification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "94f1d7cd-0bfa-4b77-94de-79bc22a3f3c5",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors justify their use of the It\u00f4 convention for modeling the nonequilibrium cellular interior while acknowledging that other conventions may be more appropriate in some cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C73 acknowledge methodological choices but provide limited justification for why the It\u00f4 convention is appropriate for cellular systems beyond citing that cells are nonequilibrium. The citations provided (Gnesotto et al., 2018; Phillips et al., 2012) support the nonequilibrium nature of cells but do not directly validate the It\u00f4 convention choice. This is a critical assumption that affects all subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors demonstrate that diffusive lensing modulates interaction-mediated clustering in a manner dependent on the relative strengths and timescales of diffusive lensing versus inter-particle interactions. At low interaction strength, clustering occurs only in low-diffusivity regions, while at high interaction strength, clustering occurs throughout the simulation region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 and C54 are supported by simulation data (Figure 2 and supplements) showing differential clustering behavior under weak versus strong interaction regimes. The neighbor-sensing interaction model is heuristic but reasonable for exploring the interplay between diffusive lensing and clustering. The conclusions about relative timescales are appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "a0690bb5-9297-4838-8329-8f14014fbb90",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using in silico microrheology (MSD analysis), the authors show that inhomogeneous diffusivity creates apparent confinement effects that differ from homogeneous diffusion. Particles in diffusivity gradients exhibit intermediate dynamics between high and low diffusivity extremes, with reduced saturation MSD indicating effective confinement. The diffusion coefficient alone is insufficient to describe dynamics in heterogeneous environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C38, C52, and C62 are well-supported by MSD analysis (Figure 3 and supplements) with appropriate sample sizes (10,000 trajectories). The findings that saturation MSD depends on diffusivity distribution rather than just average diffusivity, and that position of low-diffusive zones matters, are clearly demonstrated. The conclusion that a single diffusion coefficient is insufficient is a logical inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Using in silico FRAP, the authors demonstrate that inhomogeneous diffusivity creates 'diffusive highways' where bulk regions between low-diffusive granules enable faster effective dynamics than equivalent homogeneous diffusivity distributions. The decrease in mobility arises from increased dwell times in low-diffusive granules, and dynamics can be tuned by modulating diffusivity distribution parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 and C57-C59 are supported by in silico FRAP simulations (Figure 4 and supplements) showing that heterogeneous diffusivity distributions produce faster recovery than homogeneous distributions with the same weighted-average diffusivity. The mechanistic explanation involving fluxes and dwell times is supported by the data. The concept of 'diffusive highways' is a reasonable interpretation of the simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "d3c0053a-18b5-4d63-ab92-a44bdcfd3c2f",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose that diffusive lensing is relevant for living systems, may be a key driver of mesoscale cytoplasmic dynamics with far-reaching implications for biochemical processes, can occur across a wide parameter space, and may be ubiquitous in living systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4-C6, C50, C51, and C77 make broad statements about biological relevance that are not directly supported by the simulation data. While the simulations demonstrate the phenomenon under the It\u00f4 convention, the biological relevance depends on: (1) whether the It\u00f4 convention appropriately describes cellular diffusion, (2) whether the parameter ranges explored are biologically relevant, and (3) experimental validation in living cells. The authors appropriately mark some claims as speculative (C51), but others are stated more definitively than the evidence supports.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "65c88c61-5658-45bd-a83b-4db171be42a8",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate about potential implications of diffusive lensing for biochemical reaction rates, positive feedback loops in systems where particle concentration affects diffusivity, cellular compensation mechanisms, and modulation by various sources of diffusivity heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55, C56, C60, C61, and C70 are explicitly speculative or qualified with 'may.' These represent reasonable hypotheses based on the simulation results but lack direct supporting evidence. They appropriately identify directions for future work but should not be considered established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "3c1a7604-9722-499f-aca5-e5fa61fae517",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors cite prior work establishing relationships between diffusivity and viscosity, the role of viscosity in protein mobility and potentially activity, examples of accumulation phenomena at various scales, and changes in viscosity during cellular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, C12, C14, C15, and C63-C65 appropriately cite prior research to establish context. Claim C11 about viscosity influencing protein activity is appropriately qualified as speculative and supported by citations. These claims accurately represent prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "5fb20a17-f395-410e-8942-290fee530fe9",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors claim that their 2D simulation results extend directly to 3D because diffusion equations contain additive, separable contributions from each dimension, and that 2D simulations were chosen for simplicity and visualization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49, C79, and C80 assert that 2D results extend to 3D based on mathematical separability. While the mathematical argument (C79) is correct for the diffusion equation itself, the claim that all conclusions extend directly to 3D (C49) is not rigorously demonstrated. Geometric effects, packing constraints, and flux dynamics may differ in 3D. This limitation should be acknowledged more explicitly or validated with 3D simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "e9d7dc52-0653-414a-b305-83cff9b50547",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors connect their findings to prior observations of anomalous diffusion in cells, note that mechanisms maintaining position-dependent diffusivity remain unclear, and recommend future experimental work examining diffusivity distributions and their temporal evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C66, and C74 appropriately connect the work to prior observations, acknowledge knowledge gaps, and suggest reasonable directions for future research. These are well-justified based on the simulation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "b70f8f7c-ad36-4ece-b959-4b6eb59d8284",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that diffusive lensing could represent a rudimentary mode of prebiotic compartmentalization, with lensing-driven accumulation potentially serving as an antecedent to more sophisticated organizational modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75 and C76 are explicitly marked as speculative and represent highly hypothetical extensions of the work to prebiotic chemistry. While creative, these claims lack any supporting evidence and make assumptions about prebiotic conditions that are not validated. This speculation is interesting but should be clearly distinguished from the supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "f92ece2e-0970-43c8-b8d6-21c090192b42",
+      "content_id": "71ab8b11-6023-41d2-a0b8-27ca8338b4d6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors describe their computational methods: 2D agent-based random walk simulations with E. coli-like geometry, It\u00f4 convention implementation, neighbor-sensing interaction model, MSD analysis from 10^4 trajectories, and in silico FRAP with specified parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78, C81, C83-C86, C88, C91-C93, and C95-C100 provide methodological details that are internally consistent and adequately described. The use of fixed random seeds (C85) supports reproducibility. Sample sizes appear adequate for the analyses performed. The methods are appropriate for the research questions, though the fundamental choice of It\u00f4 convention remains a critical assumption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "c62eb568-368d-42ef-9b94-c8c6166d095b",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors propose 'diffusive lensing' as a nonequilibrium mechanism of membrane-less compartmentalization where particles accumulate in low-diffusivity regions, claiming this is relevant and potentially ubiquitous in living systems with far-reaching implications for biochemical processes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "All three reviewers fundamentally challenge the novelty and biological relevance of this central claim. Reviewer 1 states the 'lensing effect discussed is a direct consequence of the choice of the Ito convention...and its adequacy for the intracellular medium is insufficiently discussed and relatively doubtful.' Reviewer 2 notes 'the central part of the paper...is not new. Some of the papers authors cite already show that.' Reviewer 3 states most critically that 'the fact that it results in probability gradients is trivial once formulated this way (and in no way is this new)' and that the authors 'only demonstrates the well-known fact that when using arbitrary dynamical rules in heterogeneous diffusion simulations, one can get concentration gradients.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "f2470cdb-0948-438f-a3ce-e5795b5733ab",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors use the It\u00f4 convention for modeling diffusion with spatially inhomogeneous diffusivity, claiming this is appropriate for the nonequilibrium cellular interior and that different mathematical interpretations result in different physical predictions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "All reviewers strongly criticize the choice and justification of the It\u00f4 convention. Reviewer 3 provides the most detailed critique, stating 'without further motivation than the statement that cells are out-of-equilibrium, drifts are arbitrarily set to zero in the Ito convention' and that 'the authors make no further justification of their choice of driftless Ito simulations than the fact that cells are out-of-equilibrium.' Reviewer 1 notes 'its adequacy for the intracellular medium is insufficiently discussed and relatively doubtful.' Reviewer 2 emphasizes 'just because there is spatial diffusion constant that does not mean there will be a spatial gradient of particles.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "24f92de0-1078-4056-a716-7a320f353024",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Agent-based simulations demonstrate that particles accumulate in low-diffusivity zones under the It\u00f4 convention, consistent with theoretical predictions, in both step-like and smooth diffusivity gradients.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not dispute the simulation results themselves, they fundamentally question their interpretation and significance. Reviewer 3 states 'the fact that it results in probability gradients is trivial once formulated this way' and that the effect is 'entirely reliant on an undiscussed mechanism by which these assumptions would be completely violated.' Reviewer 2 notes that 'localisation of particles in the region of low diffusivity has been reported in many different context' and is not new. The simulations are technically correct but their biological meaning is contested.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Diffusive lensing modulates clustering behavior with inter-particle interactions, with the relative strengths and timescales of diffusive lensing and interactions determining whether clustering preferentially occurs in low-diffusive zones.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 specifically identifies this as an area that 'could provide new results' but criticizes that it is 'not rigorous enough for a theory paper.' Reviewer 3 notes that 'enhanced clustering is also a trivial effect of this probability gradient' and criticizes the 'neighbor sensing' scheme as 'very peculiar and not physically motivated' stating it 'violates stochastic thermodynamics laws too, as detailed balance is apparently not respected.' The results lack the rigor needed to support the claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "07770424-5523-4724-a6c3-ea9a98552bf5",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Inhomogeneous diffusivity affects mean squared displacement (MSD) dynamics, with particles in diffusivity gradients showing intermediate dynamics and reduced saturation MSD, indicating that the diffusion coefficient alone is insufficient to describe diffusion in heterogeneous environments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 identifies the 'moment analysis for non-interacting particles in space with discrete patches of inhomogeneous diffusivity' as potentially interesting but states it is 'not rigorous enough for a theory paper.' The reviewers do not directly challenge the MSD observations but question whether the underlying framework (It\u00f4 convention without proper justification) makes these results meaningful for biological systems.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "95e81584-2ee2-45df-b1ad-eef34bac0a03",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Inhomogeneous diffusivity creates 'diffusive highways' where the bulk region between low-diffusive zones enables faster effective dynamics compared to homogeneous diffusivity with the same weighted average, due to large fluxes at diffusivity interfaces.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not explicitly address this specific finding, it depends entirely on the validity of the It\u00f4 convention framework which all reviewers challenge. Reviewer 3's critique that the authors are studying 'the effects of this arbitrary force' (the spurious drift compensation) undermines the interpretation of these flux-based dynamics as biologically meaningful rather than artifacts of the modeling choice.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "9a6996e9-0110-44fe-8ade-445bba1afcf3",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Inhomogeneous diffusivity allows particle mobility at microscale and mesoscale to differ from homogeneous diffusion expectations, consistent with observed deviations from normal diffusion in cells, and a one-parameter description using average diffusion coefficient is insufficient.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 challenges the magnitude and biological relevance of these effects, noting that 'the diffusion contrasts logarithmically compare to the chemical potential ones -- for instance a major diffusion difference of 100x is equivalent to 4.6kT in potential energy, a relatively modest effect.' The reviewer argues that to prove biological relevance would require experimental validation showing enrichment that cannot be attributed to potential energy differences, which is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors speculate about various biological implications of diffusive lensing, including effects on biochemical reaction rates, positive feedback loops, cellular compensation mechanisms, and potential roles in prebiotic compartmentalization.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "These speculative claims are undermined by the reviewers' fundamental challenges to the biological relevance of the underlying phenomenon. Reviewer 1 concludes 'the relevance of the presented results for biology remain unclear and based on incomplete evidence.' Reviewer 3 states that to prove biological relevance would require specific experimental validations that are not provided, and that 'the current article only demonstrates the well-known fact that when using arbitrary dynamical rules in heterogeneous diffusion simulations, one can get concentration gradients.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1",
+      "content_id": "a734299b-4359-44a5-878d-38582c448637",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors describe their agent-based modeling methodology using 2D random walk simulations with the It\u00f4 interpretation, including their approach to inter-particle interactions via neighbor-sensing.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewer 3 strongly criticizes the methodological choices, stating 'it is regrettable that the authors choose to use agent-based custom simulations with little physical motivation, rather than a well-established stochastic differential equations framework.' The neighbor-sensing approach is criticized as 'very peculiar and not physically motivated' and as violating 'stochastic thermodynamics laws' because 'detailed balance is apparently not respected.' Reviewer 3 concludes the authors 'have chosen to disregard a century of stochastic thermodynamics in favor of a non-justified unphysical custom rule.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "24e03d7d-a02a-416f-8071-4bcea7e59e2e",
+      "result_id": "77157bb9-17a3-4e5e-9185-d42756459f99"
+    },
+    {
+      "claim_id": "5f8269fd-effe-47d1-b076-c8e14d15afaa",
+      "result_id": "77157bb9-17a3-4e5e-9185-d42756459f99"
+    },
+    {
+      "claim_id": "8ec089e9-e827-490c-b8a3-ebb6fcd24da8",
+      "result_id": "77157bb9-17a3-4e5e-9185-d42756459f99"
+    },
+    {
+      "claim_id": "e95131fc-ae07-455d-b974-bb969efc1758",
+      "result_id": "77157bb9-17a3-4e5e-9185-d42756459f99"
+    },
+    {
+      "claim_id": "addff33f-e632-43a0-adeb-4a2e02bff89d",
+      "result_id": "1f882684-3a5d-465c-a885-8e960463f0d8"
+    },
+    {
+      "claim_id": "b0f2d575-0d27-4f13-b499-7137ca92293b",
+      "result_id": "1f882684-3a5d-465c-a885-8e960463f0d8"
+    },
+    {
+      "claim_id": "020e6c54-f591-4d75-8fba-12310f1573fc",
+      "result_id": "1f882684-3a5d-465c-a885-8e960463f0d8"
+    },
+    {
+      "claim_id": "d2bd9cca-fac7-4390-bf36-49f330f3484b",
+      "result_id": "1f882684-3a5d-465c-a885-8e960463f0d8"
+    },
+    {
+      "claim_id": "66df59e7-36e3-441e-89bc-69498c49b681",
+      "result_id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca"
+    },
+    {
+      "claim_id": "17c6ea7a-0ec1-4c53-aacb-1c233a429a8b",
+      "result_id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca"
+    },
+    {
+      "claim_id": "3e7040bc-8a59-42c7-84a0-5ad4dcdad958",
+      "result_id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca"
+    },
+    {
+      "claim_id": "db67e36e-17f6-429a-b57a-14600bab232d",
+      "result_id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca"
+    },
+    {
+      "claim_id": "edcd2d99-c96a-4669-94ef-8486b042b848",
+      "result_id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca"
+    },
+    {
+      "claim_id": "413393e5-0f57-43b3-9361-421a4694d7bc",
+      "result_id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca"
+    },
+    {
+      "claim_id": "bc876418-1a47-4be0-a738-9f5fcb692b0b",
+      "result_id": "7301c89f-70ad-4be8-b2ec-a0eab2863cb8"
+    },
+    {
+      "claim_id": "ce140abc-fac1-4144-8582-322656c1c6a2",
+      "result_id": "7301c89f-70ad-4be8-b2ec-a0eab2863cb8"
+    },
+    {
+      "claim_id": "c73cdd8e-4ad4-4c1d-ac9d-274aded1df1c",
+      "result_id": "7301c89f-70ad-4be8-b2ec-a0eab2863cb8"
+    },
+    {
+      "claim_id": "8ec52ae2-f03d-42b1-9bef-ae87043d2e6f",
+      "result_id": "7301c89f-70ad-4be8-b2ec-a0eab2863cb8"
+    },
+    {
+      "claim_id": "774dd16f-34ff-4334-b90a-a1e00d2d545a",
+      "result_id": "7301c89f-70ad-4be8-b2ec-a0eab2863cb8"
+    },
+    {
+      "claim_id": "76f30a27-bd50-41bb-9154-4c940c12d46d",
+      "result_id": "94f1d7cd-0bfa-4b77-94de-79bc22a3f3c5"
+    },
+    {
+      "claim_id": "891a88f7-6bda-4c47-bbd7-6f3519133286",
+      "result_id": "94f1d7cd-0bfa-4b77-94de-79bc22a3f3c5"
+    },
+    {
+      "claim_id": "1eeaac48-c820-407c-a448-7c3586dacc47",
+      "result_id": "94f1d7cd-0bfa-4b77-94de-79bc22a3f3c5"
+    },
+    {
+      "claim_id": "28e21e41-4ee6-4ca3-a36b-8c9168440a08",
+      "result_id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66"
+    },
+    {
+      "claim_id": "8da7a0cb-1d7a-485d-b137-aa4d8f987aeb",
+      "result_id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66"
+    },
+    {
+      "claim_id": "4fbe2e9a-c971-44aa-b2a4-89de1021f633",
+      "result_id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66"
+    },
+    {
+      "claim_id": "7893ceb7-3985-40df-a3f1-33665dd76210",
+      "result_id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66"
+    },
+    {
+      "claim_id": "f99180a6-3149-4046-af18-3554f8d1204a",
+      "result_id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66"
+    },
+    {
+      "claim_id": "8f6577fc-12ff-4eaa-a36a-b3a94d601cc5",
+      "result_id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66"
+    },
+    {
+      "claim_id": "3b768710-10d9-406f-966a-9481b54ad2e3",
+      "result_id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66"
+    },
+    {
+      "claim_id": "4b10c907-92b0-4961-94db-3009565d24e8",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "58759015-0392-43a1-ade3-f35279b3d725",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "eb66ec28-5fd5-4abc-aaeb-24dd88990e92",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "0417970f-a446-411c-8777-dde3ab57cb79",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "78f164a6-b6c8-4606-85d3-648be6647bf6",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "239ed649-f28e-4042-853b-27019020d734",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "d5536955-6a8a-4b8b-909e-da46af24dd66",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "ab525c0f-ffe6-4bed-bc03-0c3901d82f73",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "68d90609-0b22-41e8-94db-c0fc31b3398a",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "2106744c-6d7a-4c05-9cfa-cb4b4b9f6443",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "946ad608-2c40-4b50-956d-da2d891b4efd",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "1ed382d3-1910-4b2b-8b75-b77134d11bca",
+      "result_id": "a0690bb5-9297-4838-8329-8f14014fbb90"
+    },
+    {
+      "claim_id": "5f2a7924-198b-4c8c-b47b-c0fcb474dffa",
+      "result_id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b"
+    },
+    {
+      "claim_id": "5eb57828-1fe3-456c-965a-96be406a5d1d",
+      "result_id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b"
+    },
+    {
+      "claim_id": "9e7f64ce-02fa-4985-8e6a-de4d20069017",
+      "result_id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b"
+    },
+    {
+      "claim_id": "750d9eb2-ae16-4ec0-9c56-57e115fab2a3",
+      "result_id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b"
+    },
+    {
+      "claim_id": "7133db86-98e0-4903-9132-5bb65d6ffbc6",
+      "result_id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b"
+    },
+    {
+      "claim_id": "561888dc-e823-400d-b3cc-5bd19b069f05",
+      "result_id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b"
+    },
+    {
+      "claim_id": "1c5ed2f3-69a9-4d7c-a41e-a99a5cd13f17",
+      "result_id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b"
+    },
+    {
+      "claim_id": "f0a4f741-ba5e-49ec-b142-4af3228fd723",
+      "result_id": "d3c0053a-18b5-4d63-ab92-a44bdcfd3c2f"
+    },
+    {
+      "claim_id": "fb386284-4582-4cfd-b405-7dd0668e5663",
+      "result_id": "d3c0053a-18b5-4d63-ab92-a44bdcfd3c2f"
+    },
+    {
+      "claim_id": "614ca9ec-0ff1-41da-80d7-03c0e46f5b63",
+      "result_id": "d3c0053a-18b5-4d63-ab92-a44bdcfd3c2f"
+    },
+    {
+      "claim_id": "eeddfe13-b2ca-487c-87a9-a27935d82f51",
+      "result_id": "d3c0053a-18b5-4d63-ab92-a44bdcfd3c2f"
+    },
+    {
+      "claim_id": "8cb1413e-7f8f-4e1a-9790-4ce98a22f796",
+      "result_id": "d3c0053a-18b5-4d63-ab92-a44bdcfd3c2f"
+    },
+    {
+      "claim_id": "93a5ce22-8f83-4512-8639-8341c2a15556",
+      "result_id": "d3c0053a-18b5-4d63-ab92-a44bdcfd3c2f"
+    },
+    {
+      "claim_id": "9a933e5a-2471-4e0c-9878-7d54cf4e204d",
+      "result_id": "65c88c61-5658-45bd-a83b-4db171be42a8"
+    },
+    {
+      "claim_id": "01c0aa66-a062-40d1-a1b3-f71cfd33b147",
+      "result_id": "65c88c61-5658-45bd-a83b-4db171be42a8"
+    },
+    {
+      "claim_id": "7ba161d2-f1de-4c99-b714-30ca3c0baf79",
+      "result_id": "65c88c61-5658-45bd-a83b-4db171be42a8"
+    },
+    {
+      "claim_id": "28bbdb62-e47d-4667-b3b6-5111a689c3f9",
+      "result_id": "65c88c61-5658-45bd-a83b-4db171be42a8"
+    },
+    {
+      "claim_id": "2dd07e77-3fa4-4813-8094-605ba706fc4b",
+      "result_id": "65c88c61-5658-45bd-a83b-4db171be42a8"
+    },
+    {
+      "claim_id": "655e702e-3c57-46a6-a50b-d87ac4a7e562",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "e1f0bd21-4982-4c27-bd5f-f1ad4c167bd2",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "d46e4069-16c3-4a1e-8e81-02712e54a85d",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "8d1952e8-9f67-46f0-89f1-7db537dcf48b",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "2f8abb79-fd41-4941-90a8-20b7cb37abb5",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "b4b6b9a7-3ab5-4ee1-8aeb-bbbd70fc4346",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "bd3b6c88-8ee8-4833-a34e-51992a168572",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "b42aa757-174d-4749-b316-b8be3d432b1b",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "05d096e3-78eb-49a4-ad73-dc82b1431a60",
+      "result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517"
+    },
+    {
+      "claim_id": "e8b4fc83-eb40-4971-b927-896a46a9b4db",
+      "result_id": "5fb20a17-f395-410e-8942-290fee530fe9"
+    },
+    {
+      "claim_id": "dd7541ed-dffa-4525-9a20-060a69b498d9",
+      "result_id": "5fb20a17-f395-410e-8942-290fee530fe9"
+    },
+    {
+      "claim_id": "b1f3c2eb-7153-4f46-ba59-76196532a430",
+      "result_id": "5fb20a17-f395-410e-8942-290fee530fe9"
+    },
+    {
+      "claim_id": "4a265410-64b1-4e1d-af22-50eee17609da",
+      "result_id": "e9d7dc52-0653-414a-b305-83cff9b50547"
+    },
+    {
+      "claim_id": "33ec8655-8dc9-4d73-b66b-9e3f65bd36c6",
+      "result_id": "e9d7dc52-0653-414a-b305-83cff9b50547"
+    },
+    {
+      "claim_id": "8c47d806-ccb0-4822-aa72-f9d55a3cdf06",
+      "result_id": "e9d7dc52-0653-414a-b305-83cff9b50547"
+    },
+    {
+      "claim_id": "06e3a3c3-956d-427e-8050-5ec4e2ddba79",
+      "result_id": "b70f8f7c-ad36-4ece-b959-4b6eb59d8284"
+    },
+    {
+      "claim_id": "7f7b3e3b-ff89-429a-a67b-e5ddc6aea598",
+      "result_id": "b70f8f7c-ad36-4ece-b959-4b6eb59d8284"
+    },
+    {
+      "claim_id": "47fc0a33-98fd-4ee5-b4e9-a78dff80e2a6",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "2a09dd68-a24e-4766-a4a2-8c7322b4bb86",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "3def4a67-e6ad-411c-b9bc-25ce803e51f4",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "cf6be3b4-fcd7-45dc-bdf6-224a51542888",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "2ee8be54-33ed-4f70-abfb-7141e26ae663",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "5709042c-3244-4775-a12d-c93bc4de959f",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "cbf4a77d-f575-4676-92ba-54b1e8d0b800",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "effabff2-fda9-4be6-afe6-be73fd44be7a",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "e78e6f06-7b60-4ab1-b7ba-7d4ef728bb88",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "7c67db5e-56a2-4d34-a4c2-b7bf3a1f4df5",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "ca8cdc9a-fa4a-499e-b45c-e4ab410fe00b",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "59997a78-69f2-4e09-8928-c2eec79265e6",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "21bb9074-6165-4280-b158-e4e306f8c64d",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "1931f55a-12cc-4267-a288-ec05f4be7fbb",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "7af45596-e4de-42cc-acce-0c64a8cfc6e4",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "8ae1da48-8077-4057-9f24-1e9d676bc1c5",
+      "result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42"
+    },
+    {
+      "claim_id": "66df59e7-36e3-441e-89bc-69498c49b681",
+      "result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b"
+    },
+    {
+      "claim_id": "f0a4f741-ba5e-49ec-b142-4af3228fd723",
+      "result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b"
+    },
+    {
+      "claim_id": "fb386284-4582-4cfd-b405-7dd0668e5663",
+      "result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b"
+    },
+    {
+      "claim_id": "614ca9ec-0ff1-41da-80d7-03c0e46f5b63",
+      "result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b"
+    },
+    {
+      "claim_id": "413393e5-0f57-43b3-9361-421a4694d7bc",
+      "result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b"
+    },
+    {
+      "claim_id": "8cb1413e-7f8f-4e1a-9790-4ce98a22f796",
+      "result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b"
+    },
+    {
+      "claim_id": "93a5ce22-8f83-4512-8639-8341c2a15556",
+      "result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b"
+    },
+    {
+      "claim_id": "bc876418-1a47-4be0-a738-9f5fcb692b0b",
+      "result_id": "f2470cdb-0948-438f-a3ce-e5795b5733ab"
+    },
+    {
+      "claim_id": "ce140abc-fac1-4144-8582-322656c1c6a2",
+      "result_id": "f2470cdb-0948-438f-a3ce-e5795b5733ab"
+    },
+    {
+      "claim_id": "8ec52ae2-f03d-42b1-9bef-ae87043d2e6f",
+      "result_id": "f2470cdb-0948-438f-a3ce-e5795b5733ab"
+    },
+    {
+      "claim_id": "774dd16f-34ff-4334-b90a-a1e00d2d545a",
+      "result_id": "f2470cdb-0948-438f-a3ce-e5795b5733ab"
+    },
+    {
+      "claim_id": "76f30a27-bd50-41bb-9154-4c940c12d46d",
+      "result_id": "f2470cdb-0948-438f-a3ce-e5795b5733ab"
+    },
+    {
+      "claim_id": "2ee8be54-33ed-4f70-abfb-7141e26ae663",
+      "result_id": "f2470cdb-0948-438f-a3ce-e5795b5733ab"
+    },
+    {
+      "claim_id": "17c6ea7a-0ec1-4c53-aacb-1c233a429a8b",
+      "result_id": "24f92de0-1078-4056-a716-7a320f353024"
+    },
+    {
+      "claim_id": "3e7040bc-8a59-42c7-84a0-5ad4dcdad958",
+      "result_id": "24f92de0-1078-4056-a716-7a320f353024"
+    },
+    {
+      "claim_id": "db67e36e-17f6-429a-b57a-14600bab232d",
+      "result_id": "24f92de0-1078-4056-a716-7a320f353024"
+    },
+    {
+      "claim_id": "edcd2d99-c96a-4669-94ef-8486b042b848",
+      "result_id": "24f92de0-1078-4056-a716-7a320f353024"
+    },
+    {
+      "claim_id": "28e21e41-4ee6-4ca3-a36b-8c9168440a08",
+      "result_id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee"
+    },
+    {
+      "claim_id": "8da7a0cb-1d7a-485d-b137-aa4d8f987aeb",
+      "result_id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee"
+    },
+    {
+      "claim_id": "4fbe2e9a-c971-44aa-b2a4-89de1021f633",
+      "result_id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee"
+    },
+    {
+      "claim_id": "7893ceb7-3985-40df-a3f1-33665dd76210",
+      "result_id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee"
+    },
+    {
+      "claim_id": "f99180a6-3149-4046-af18-3554f8d1204a",
+      "result_id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee"
+    },
+    {
+      "claim_id": "8f6577fc-12ff-4eaa-a36a-b3a94d601cc5",
+      "result_id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee"
+    },
+    {
+      "claim_id": "3b768710-10d9-406f-966a-9481b54ad2e3",
+      "result_id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee"
+    },
+    {
+      "claim_id": "4b10c907-92b0-4961-94db-3009565d24e8",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "58759015-0392-43a1-ade3-f35279b3d725",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "eb66ec28-5fd5-4abc-aaeb-24dd88990e92",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "0417970f-a446-411c-8777-dde3ab57cb79",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "78f164a6-b6c8-4606-85d3-648be6647bf6",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "239ed649-f28e-4042-853b-27019020d734",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "d5536955-6a8a-4b8b-909e-da46af24dd66",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "ab525c0f-ffe6-4bed-bc03-0c3901d82f73",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "68d90609-0b22-41e8-94db-c0fc31b3398a",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "2106744c-6d7a-4c05-9cfa-cb4b4b9f6443",
+      "result_id": "07770424-5523-4724-a6c3-ea9a98552bf5"
+    },
+    {
+      "claim_id": "5f2a7924-198b-4c8c-b47b-c0fcb474dffa",
+      "result_id": "95e81584-2ee2-45df-b1ad-eef34bac0a03"
+    },
+    {
+      "claim_id": "5eb57828-1fe3-456c-965a-96be406a5d1d",
+      "result_id": "95e81584-2ee2-45df-b1ad-eef34bac0a03"
+    },
+    {
+      "claim_id": "9e7f64ce-02fa-4985-8e6a-de4d20069017",
+      "result_id": "95e81584-2ee2-45df-b1ad-eef34bac0a03"
+    },
+    {
+      "claim_id": "7133db86-98e0-4903-9132-5bb65d6ffbc6",
+      "result_id": "95e81584-2ee2-45df-b1ad-eef34bac0a03"
+    },
+    {
+      "claim_id": "561888dc-e823-400d-b3cc-5bd19b069f05",
+      "result_id": "95e81584-2ee2-45df-b1ad-eef34bac0a03"
+    },
+    {
+      "claim_id": "1c5ed2f3-69a9-4d7c-a41e-a99a5cd13f17",
+      "result_id": "95e81584-2ee2-45df-b1ad-eef34bac0a03"
+    },
+    {
+      "claim_id": "946ad608-2c40-4b50-956d-da2d891b4efd",
+      "result_id": "9a6996e9-0110-44fe-8ade-445bba1afcf3"
+    },
+    {
+      "claim_id": "4a265410-64b1-4e1d-af22-50eee17609da",
+      "result_id": "9a6996e9-0110-44fe-8ade-445bba1afcf3"
+    },
+    {
+      "claim_id": "1ed382d3-1910-4b2b-8b75-b77134d11bca",
+      "result_id": "9a6996e9-0110-44fe-8ade-445bba1afcf3"
+    },
+    {
+      "claim_id": "9a933e5a-2471-4e0c-9878-7d54cf4e204d",
+      "result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282"
+    },
+    {
+      "claim_id": "01c0aa66-a062-40d1-a1b3-f71cfd33b147",
+      "result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282"
+    },
+    {
+      "claim_id": "7ba161d2-f1de-4c99-b714-30ca3c0baf79",
+      "result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282"
+    },
+    {
+      "claim_id": "28bbdb62-e47d-4667-b3b6-5111a689c3f9",
+      "result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282"
+    },
+    {
+      "claim_id": "2dd07e77-3fa4-4813-8094-605ba706fc4b",
+      "result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282"
+    },
+    {
+      "claim_id": "06e3a3c3-956d-427e-8050-5ec4e2ddba79",
+      "result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282"
+    },
+    {
+      "claim_id": "7f7b3e3b-ff89-429a-a67b-e5ddc6aea598",
+      "result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282"
+    },
+    {
+      "claim_id": "47fc0a33-98fd-4ee5-b4e9-a78dff80e2a6",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    },
+    {
+      "claim_id": "dd7541ed-dffa-4525-9a20-060a69b498d9",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    },
+    {
+      "claim_id": "b1f3c2eb-7153-4f46-ba59-76196532a430",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    },
+    {
+      "claim_id": "2a09dd68-a24e-4766-a4a2-8c7322b4bb86",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    },
+    {
+      "claim_id": "3def4a67-e6ad-411c-b9bc-25ce803e51f4",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    },
+    {
+      "claim_id": "cf6be3b4-fcd7-45dc-bdf6-224a51542888",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    },
+    {
+      "claim_id": "2ee8be54-33ed-4f70-abfb-7141e26ae663",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    },
+    {
+      "claim_id": "5709042c-3244-4775-a12d-c93bc4de959f",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    },
+    {
+      "claim_id": "cbf4a77d-f575-4676-92ba-54b1e8d0b800",
+      "result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "bf2c1902-88e3-429f-9ba6-21e17ac8c70b",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7301c89f-70ad-4be8-b2ec-a0eab2863cb8",
+      "peer_result_id": "f2470cdb-0948-438f-a3ce-e5795b5733ab",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both address the It\u00f4 convention choice (C17, C18, C68, C69, C71). OpenEval finds the theoretical description well-established but notes the choice requires stronger justification (UNCERTAIN). Peer reviewers strongly criticize the choice as insufficiently justified and potentially inappropriate for cellular systems (UNSUPPORTED), with Reviewer 3 stating the authors provide no justification beyond cells being out-of-equilibrium.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "e23aa4ad-17bb-46d5-937d-7cf1931a0077",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "94f1d7cd-0bfa-4b77-94de-79bc22a3f3c5",
+      "peer_result_id": "f2470cdb-0948-438f-a3ce-e5795b5733ab",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the justification for the It\u00f4 convention (C71, C72, C73). OpenEval rates this UNCERTAIN, noting limited justification beyond nonequilibrium nature of cells. Peer reviewers are more critical (UNSUPPORTED), with all three reviewers challenging the adequacy of this justification and questioning whether the convention is appropriate for intracellular environments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "2b22d2dc-6a18-4ff7-8507-4f3c2cadccbf",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca",
+      "peer_result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both address the core diffusive lensing phenomenon (C3, C19-C22, C48). OpenEval finds simulations well-supported but notes biological relevance depends on It\u00f4 convention appropriateness (SUPPORTED with caveat). Peer reviewers fundamentally challenge novelty and biological relevance (UNSUPPORTED), with Reviewer 3 calling the probability gradient effect 'trivial' and Reviewer 2 noting it's already been reported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "d3798419-c379-46b7-aef7-f794dd5f8752",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "ceef180c-f3e8-4366-9db4-5a4c7d4432ca",
+      "peer_result_id": "24f92de0-1078-4056-a716-7a320f353024",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate simulation results showing accumulation (C19, C20, C21, C22). OpenEval finds the simulations technically sound and clearly demonstrate the phenomenon (SUPPORTED). Peer reviewers don't dispute the simulation results themselves but question their interpretation and significance (UNCERTAIN), with Reviewer 3 stating the gradient effect is 'trivial once formulated this way.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "05791f67-6f11-4bb3-8af1-e789540052bb",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d3c0053a-18b5-4d63-ab92-a44bdcfd3c2f",
+      "peer_result_id": "c62eb568-368d-42ef-9b94-c8c6166d095b",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address biological relevance claims (C4, C5, C6, C50, C51, C77). OpenEval rates these UNCERTAIN, noting broad statements not directly supported by simulations and dependence on It\u00f4 convention validity. Peer reviewers are more critical (UNSUPPORTED), with all three challenging novelty and biological relevance, and Reviewer 1 concluding 'the relevance of the presented results for biology remain unclear.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "983d3dd8-a5ca-4e7f-8eba-405c0edc5907",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "d5202470-3ebb-42a0-9e57-2ee16ea52e66",
+      "peer_result_id": "f6ee95d3-1f9b-4c9e-af2d-bfda93964bee",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate clustering with interactions (C23-C28, C54). OpenEval finds the results supported by simulation data, with reasonable heuristic model (SUPPORTED). Peer reviewers are critical (UNCERTAIN), with Reviewer 2 noting it could provide new results but is 'not rigorous enough' and Reviewer 3 criticizing the neighbor-sensing scheme as 'not physically motivated' and violating thermodynamic laws.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "23e9e1fa-c133-4b5d-b7bf-724333d5d066",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a0690bb5-9297-4838-8329-8f14014fbb90",
+      "peer_result_id": "07770424-5523-4724-a6c3-ea9a98552bf5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address MSD analysis findings (C29-C38, C52, C62). OpenEval finds these well-supported by data with adequate sample sizes (SUPPORTED). Peer reviewers rate UNCERTAIN, with Reviewer 2 finding the moment analysis potentially interesting but 'not rigorous enough for a theory paper,' and questioning whether the It\u00f4 framework makes results biologically meaningful.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "f739cf10-678d-4bb1-bdcb-f49005e155dd",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a0690bb5-9297-4838-8329-8f14014fbb90",
+      "peer_result_id": "9a6996e9-0110-44fe-8ade-445bba1afcf3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims about biological significance of findings (C52, C62 overlap with C53). OpenEval supports the MSD conclusions (SUPPORTED). Peer reviewers challenge the magnitude and biological relevance (UNCERTAIN), with Reviewer 3 noting that diffusion contrasts 'logarithmically compare to chemical potential ones' and arguing experimental validation is needed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "3e35d8f8-c789-46a4-bb9a-3b1d2d6f928c",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0b98e09f-0a95-4791-ab6b-dd4731330e3b",
+      "peer_result_id": "95e81584-2ee2-45df-b1ad-eef34bac0a03",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate FRAP simulation findings (C42-C45, C57-C59). OpenEval finds these supported by simulation data with reasonable mechanistic explanation (SUPPORTED). Peer reviewers rate UNCERTAIN, not explicitly addressing this finding but noting it depends entirely on the validity of the It\u00f4 framework which they fundamentally challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "b1a60a9a-e2bb-4218-8cfe-b311b6600358",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "65c88c61-5658-45bd-a83b-4db171be42a8",
+      "peer_result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address speculative claims (C55, C56, C60, C61, C70). OpenEval rates UNCERTAIN, noting these are explicitly speculative hypotheses lacking direct evidence but representing reasonable future directions. Peer reviewers rate UNSUPPORTED, arguing these claims are undermined by fundamental challenges to biological relevance of the underlying phenomenon.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "19b6da42-3112-476e-8d00-73e9d5f03bab",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "b70f8f7c-ad36-4ece-b959-4b6eb59d8284",
+      "peer_result_id": "8aa0205f-cd5f-47ae-9e6b-9381474b7282",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address highly speculative prebiotic chemistry claims (C75, C76). OpenEval rates UNCERTAIN, noting these are creative but lack supporting evidence and should be distinguished from supported findings. Peer reviewers rate UNSUPPORTED as part of broader critique that biological relevance claims are based on incomplete evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "2e41e7f9-5df8-48e6-9c8a-bdbc709cbac0",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "f92ece2e-0970-43c8-b8d6-21c090192b42",
+      "peer_result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both evaluate methodological choices (C78, C81, C83-C86, C88). OpenEval finds methods internally consistent and adequately described (SUPPORTED), though noting It\u00f4 convention remains critical assumption. Peer reviewers strongly criticize methodology (UNSUPPORTED), with Reviewer 3 stating authors use 'agent-based custom simulations with little physical motivation' and that neighbor-sensing violates thermodynamic laws.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "cfc30607-f48b-432d-b02d-9654493e3737",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "5fb20a17-f395-410e-8942-290fee530fe9",
+      "peer_result_id": "c8d3911f-98ff-47d1-885f-d2cc7ef182d1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address 2D to 3D extension claims (C49, C79, C80). OpenEval rates UNCERTAIN, noting mathematical argument is correct but direct extension not rigorously demonstrated. Peer reviewers don't explicitly address this but their methodological critique (UNSUPPORTED) of the simulation framework undermines confidence in these extensions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "344dde66-2c3e-479a-9d44-6384ccec9062",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "e9d7dc52-0653-414a-b305-83cff9b50547",
+      "peer_result_id": "9a6996e9-0110-44fe-8ade-445bba1afcf3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address connections to prior work and future directions (C53, C66, C74 vs C52, C53, C62). OpenEval finds these well-justified based on simulation results (SUPPORTED). Peer reviewers question whether effects are biologically meaningful (UNCERTAIN), with Reviewer 3 arguing experimental validation is needed to prove relevance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "34017b3b-b8ea-4c4e-9a95-24099cce1825",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "77157bb9-17a3-4e5e-9185-d42756459f99",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims about heterogeneous diffusivity in cells (C1, C7, C8, C46) well-supported by prior literature (SUPPORTED). No corresponding peer review evaluation found, though peer reviewers don't challenge the existence of heterogeneous diffusivity but rather the interpretation of its consequences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "a0a88dd2-02ff-40fc-bf88-36628a527a70",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "1f882684-3a5d-465c-a885-8e960463f0d8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds knowledge gap characterization (C2, C13, C16, C47) reasonable and justified (SUPPORTED). No corresponding peer review evaluation found, though peer reviewers challenge whether the study actually addresses a genuine gap, with Reviewer 2 noting the phenomenon 'is not new.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    },
+    {
+      "id": "e169dd9d-5526-4093-8667-b6bc64e70e79",
+      "submission_id": "8d9c6c5b-3800-4994-b604-bd6f924474b9",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "3c1a7604-9722-499f-aca5-e5fa61fae517",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds literature citations and context establishment (C9, C10, C11, C12, C14, C15, C63-C65) appropriate and accurate (SUPPORTED). No corresponding peer review evaluation found; reviewers don't challenge the background literature but rather the novelty and interpretation of the current work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:22:48.166710Z"
+    }
+  ]
+}

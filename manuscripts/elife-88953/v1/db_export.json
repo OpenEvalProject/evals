@@ -1,0 +1,2107 @@
+{
+  "submission": {
+    "id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:48:12.906564Z",
+    "updated_at": "2025-11-20T22:48:12.906564Z"
+  },
+  "content": [
+    {
+      "id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "content_type": "manuscript",
+      "content_text": "# A stochastic world model on gravity for stability inference\n\n## Authors\n\n- Taicheng Huang<sup>1</sup> ([ORCID: 0000-0002-7670-1124](https://orcid.org/0000-0002-7670-1124))\n- Jia Liu<sup>1</sup> ([ORCID: 0000-0003-0383-0934](https://orcid.org/0000-0003-0383-0934)) \u2020\n\n### Affiliations\n\n1. Department of Psychological and Cognitive Sciences & Tsinghua Laboratory of Brain and Intelligence, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe fact that objects without proper support will fall to the ground is not only a natural phenomenon, but also common sense in mind. Previous studies suggest that humans may infer objects\u2019 stability through a world model that performs mental simulations with a priori knowledge of gravity acting upon the objects. Here we measured participants\u2019 sensitivity to gravity to investigate how the world model works. We found that the world model on gravity was not a faithful replica of the physical laws, but instead encoded gravity\u2019s vertical direction as a Gaussian distribution. The world model with this stochastic feature fit nicely with participants\u2019 subjective sense of objects\u2019 stability and explained the illusion that taller objects are perceived as more likely to fall. Furthermore, a computational model with reinforcement learning revealed that the stochastic characteristic likely originated from experience-dependent comparisons between predictions formed by internal simulations and the realities observed in the external world, which illustrated the ecological advantage of stochastic representation in balancing accuracy and speed for efficient stability inference. The stochastic world model on gravity provides an example of how a priori knowledge of the physical world is implemented in mind that helps humans operate flexibly in open-ended environments.\n\n## Introduction\n\nAbout 2000 years ago, Confucius warned his disciples that a wise man should not stand next to a collapsing wall. We, wise or not, can easily judge whether a wall is stable or collapsing in a fraction of a second (Battaglia et al., 2013; Kubricht et al., 2017; McCloskey, 1983). This astonishing performance is unlikely to have been achieved by previous visual experience alone. Taking a stack consisting of 10 blocks as an example (Figure 1), we can quickly report its stability with a satisfactory accuracy of 70% on average (Bear et al., 2021; Zhang et al., 2016), but the universal cardinality of possible configurations is at least 1.14 \u00d7 1050 (Figure 1\u2014figure supplement 1), which is much larger than the total number of sand grains on Earth (est. 7.5 \u00d7 1018) (Blatner, 2013). Contrary to this intuition, 4-month-old infants, who have little visual experience of the physical world, expect a box to fall if it loses contact with a support platform (Baillargeon, 2004; Baillargeon, 1994). Our minds may therefore have devised a mechanism that differs from the widely used discriminative approach in artificial neural networks, which relies on the extensive visual experience of objects and feedback about their stability (Bear et al., 2021; Li et al., 2016; Zhang et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig1-v1.jpg)\n\n**Figure 1.:** (a) The design of the behavioral experiment. Left: a rotating camera was used to rotate a stack 360\u00b0 to display the three-dimensional appearance of the configuration. Middle: gravity\u2019s direction was randomly sampled from a spherical surface. Right: the physics simulator simulated the collapse trajectory of the stack under this selected direction, and participants reported whether the collapse trajectory was normal. (b) The spherical surface of gravity\u2019s direction was determined by two parameters $\\theta$ and $\\phi$. (c) The procedure of calculating participants\u2019 confidence level about normal trajectory as the function of angle pairs. Left: each cell represents the response of normal trajectory for an angle pair within a run. Middle: responses for unsampled pairs were interpolated with the averaged responses along $\\phi$. Right: the confidence level for each angle pair was calculated by averaging responses across runs and participants. (d) Left: gravity\u2019s direction encoded in the world model follows a Gaussian distribution with the vertical direction as the maximum likelihood. Note that the confidence level for $\\theta$ > 0 was sampled from $\\phi\u03f5(0^{\u2218},180^{\u2218})$, and for $\\theta$ < 0 was sampled from $\\phi\u03f5(180^{\u2218},360^{\u2218})$ . Right: the sphere represents the space of gravity\u2019s direction, with two poles pointing upward and downward, respectively. Each dot in the sphere represents one angle pair, and the color on a dot indicates the likelihood that the collapse trajectory under this gravity direction was judged normal. (e) In a new setting, gravity\u2019s direction is reversed. Left: an example collapse trajectory when gravity\u2019s direction was upward. Right: a trajectory when the direction was away from the vertical upward. (f) Gravity\u2019s direction encoded in the world model when gravity\u2019s direction in the physical world was reversed. Error bar: standard error, sample size=10.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Illustration of the block-stacking procedure to create stacks in different configurations. A configuration was constructed by placing multiple blocks within a designated area. If there was no positioned block in the area, a new block was placed on the ground; otherwise, it was placed on top of the positioned block. (b) Three types of blocks with an aspect ratio of 3:1:1. (c) This procedure can create a large number of stacks with different configurations within designated areas. Note that in small areas, the height of stacks was taller. (d) The lower bound of configurations\u2019 possible number and the number of blocks in a stack followed an exponential relationship with a base of 10. The procedure can create at least 1.14 \u00d7 1050 configurations for stacks consisting of 10 blocks. See the for the estimation.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** In both experiments 1 (a) and 2 (b), participants were instructed to determine which shape appeared most stable. Objectively, in the absence of external forces, all shapes possess equal stability. Yet, participants typically perceived the shape on the left as the most stable because of its larger base area. The discrepancy between objective realities and subjective feelings, as we propose, is attributed to the human mind representing gravity\u2019s direction as a Gaussian distribution, rather than as a singular value pointing directly downward.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Participants\u2019 confidence level about normal trajectory in $\\theta$ angles followed a Gaussian distribution, with the variance ranging from 11.1 to 37.1. No stochastic characteristic was observed in $\\phi$.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Experimental setting. We replicated the original setup with the addition of a wall implemented on one side. Left: the overall experimental scene; right: the scene shown to participants. (b) Human behaviors. Three participants conducted this experiment, and their responses consistently showed normal distributions without any skewness, suggesting that their judgments were not affected by the presence of the wall. These results support our claim that humans\u2019 judgments on stability were not affected by potential concerns regarding external forces.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Participants\u2019 confidence level about normal trajectory in $\\theta$ angles also followed a Gaussian distribution, with the variance ranging from 9.1 to 28.4, and no stochastic characteristic was observed along $\\phi$.\n\nIndeed, both behavioral and neuroimaging studies have suggested that humans possess a priori knowledge of Newton\u2019s law of physics in the mind. For example, infants as young as 7 months expect a downward-moving object to accelerate and an upward-moving object to decelerate (Friedman, 2002; Kim and Spelke, 1999), and adults can estimate the remaining time to catch a moving ball (McIntyre et al., 2001; Zago and Lacquaniti, 2005) even in the absence of visual information (Lacquaniti and Maioli, 1989; Zago et al., 2009). Further fMRI studies have revealed the parieto-insular vestibular cortex in the brain as the neural basis for gravity-based stability inference, suggesting that this knowledge is encapsulated as a cognitive module (Fischer et al., 2016; Indovina et al., 2005; Pramod et al., 2022). Accordingly, our brain is proposed as a set of generative machines that actively predict future events of the ever-changing physical world through mental simulation with a priori knowledge acting upon the world (Battaglia et al., 2013; Hegarty, 2004; Huang and Rao, 2011; Tenenbaum et al., 2011; Ullman et al., 2017). For this reason, the generative machine is also called the world model (Land, 2014; Tenenbaum et al., 2011).\n\nRecently, the idea of the world model has become popular to explain the predictive nature of the brain (Friston et al., 2021) and improve the generality and robustness of the artificial neural networks (Matsuo et al., 2022). However, how a priori knowledge is implemented in the world model remains to be determined. A prevailing theory suggests that the world model in the brain accurately mirrors the physical laws of the world (Allen et al., 2020; Battaglia et al., 2013; Zhou et al., 2022). For example, the direction of gravity encoded in the world model, a critical factor in stability inference, is assumed to be straight downward, aligning with its manifestation in the physical world. To explain the phenomenon that tall and thin objects are subjectively perceived as more unstable compared to short and fat ones (Figure 1\u2014figure supplement 2), external noise, such as imperfect perception and assumed external forces, is introduced to influence the output of the model. However, when the brain actively transforms sensory data into cognitive understanding, these data can become distorted (Kriegeskorte and Douglas, 2019; Naselaris et al., 2011), hereby introducing uncertainty into the representation of gravity\u2019s direction. In this scenario, the world model inherently incorporates uncertainty, eliminating the need for additional external noise to explain the inconsistency between subjective perceptions of stability and the actual stability of objects. Note that this distinction of these two theories is nontrivial: the former model implies a deterministic representation of the external world, while the latter suggests a stochastic approach. Here, we investigated these two alternative hypotheses regarding the construction of the world model in the brain by examining how gravity\u2019s direction is represented in the world model when participants judged object stability. Here, we investigated these two alternative hypotheses for the construction of the world model in the brain by examining how gravity\u2019s direction was represented in the world model when participants judged the stability of objects.\n\nTo do this, we measured participants\u2019 sensitivity to gravity\u2019s direction in a stability inference task (Battaglia et al., 2013) and found that gravity\u2019s direction was encoded in a Gaussian distribution, with the vertical direction as the maximum likelihood. This stochastic parameter was then built into the world model to simulate the displacement of blocks in a stack under the force of gravity, and the simulation result fits nicely with participants\u2019 judgment of stacks\u2019 stability and explains the daily illusion that taller objects are perceived as more likely to fall. A computational model with a reinforcement learning (RL) algorithm was devised to reveal its origin through interactions with the physical world. Finally, we explored the ecological advantage of the stochastic feature of the world model.\n\n## Results\n\n### The direction of gravity in the world model\n\nThe direction of gravity is perpendicular to the ground surface. Here, we first tested humans\u2019 sensitivity to gravity\u2019s direction to investigate how faithfully our gravity is represented in the world model compared to gravity in the physical world. To do this, we used Pybullet (Coumans and Bai, 2016), a forward physics simulator, to manipulate gravity\u2019s direction. Then, we asked the participants to judge whether the collapse trajectories of unstable stacks were normal (Figure 1a, Figure 1\u2014video 1). The direction of simulated gravity was measured by a parameter pair $\\theta,\\phi$ (Figure 1b), which determines the deviation of the direction of simulated gravity from the direction of gravity in the physical world. Specifically, $\\theta$ is the vertical component of the direction that affects the degree of collapse, and $\\phi$ is the horizontal component that determines the orientation of collapse. We collected participants\u2019 judgment of the normality of collapse trajectories while varying $\\theta$ from 0\u00b0 to 45\u00b0 and $\\phi$ from 0\u00b0 to 360\u00b0 across the force space, and the confidence level of the judgment for each angle pair was used to index participants\u2019 sensitivity to gravity\u2019s direction (Figure 1c). As expected, when $\\theta$ is equal to 0 (i.e., the direction of the simulated gravity is the direction of the natural gravity), the participants were likely to report that the collapse trajectory was normal (accuracy: 91.0%, STD: 8.0%). Then, the critical question is how participants\u2019 subjective sense of the normal degree of collapse trajectories changes as a function of $\\theta$. If our world model on gravity is a faithful replica of the physical reality, we should expect the immediate detection of abnormality when $\\theta$ is away from 0.\n\nContrary to this intuition, the subjective sense of the abnormality was not immediately apparent as $\\theta$ moved away from 0; instead, the confidence level of reporting normal trajectories decreased gradually as a function of $\\theta$, which was the best fit by a Gaussian function with $\\sigma=19.9$ (Figure 1d, left). That is, the participants were 50.9% confident in reporting a normal collapse trajectory when the vertical offset of $\\theta$ was 19.9\u00b0. In addition, accuracy in detecting the abnormality was not affected by $\\phi$ (Figure 1\u2014figure supplement 3), consistent with the uniformly distributed gravitational field in the physical world. This pattern was observed for all participants tested, with $\\sigma$ varying from 11.1 to 37.1 (Figure 1\u2014figure supplement 3), and remained unchanged with the addition of a wall on one side to block potential external disturbances from wind (Figure 1\u2014figure supplement 4). Therefore, the world model on gravity is unlikely to be a faithful replica of the physical world; instead, it encodes gravity\u2019s direction as a Gaussian distribution with the vertical direction as the maximum likelihood (Figure 1d, right).\n\nTo further test whether the world model on gravity, once established, is encapsulated from visual experience and task context, we inverted the virtual environment upside down with gravity\u2019s direction pointing upward, and then asked the same group of participants to judge whether collapse trajectories were normal (Figure 1e, Figure 1\u2014video 2). We found that the confidence level also decreased gradually as a function of $\\theta$ (Figure 1f, $\\sigma$ = 17.2; see Figure 1\u2014figure supplement 5 for each participant), which was not significantly different from that in the environment with gravity pointing downward. Indeed, each participant\u2019s $\\sigma$ in the upright condition was in high agreement with the $\\sigma$ in the upside-down condition (r = 0.91, p<0.01). That is, the visual experience and task context apparently did not cognitively penetrate humans\u2019 world model on gravity, suggesting that it is likely encapsulated as a cognitive module.\n\nHow does the stochastic gravity\u2019s direction in the world model affect our inference on objects\u2019 stability? To answer this question, we recruited an independent group of participants to estimate the stability of 60 stacks of different configurations (Figure 2a), half of which were stable. During the experiment, the participants were required to judge how stable each stack was on a 0\u20137 scale without feedback, which was used to index their subjective sense about stacks\u2019 stability. Two world models were constructed for comparison. One world model was equipped with a vertically downward direction of gravity without any stochastic variance. This deterministic model is intended to simulate how the stacks fell in the real world, and is therefore called a natural gravity simulator (NGS) (Figure 2b, top). The other model is the same as the NGS, except that the deterministic direction of gravity in the NGS was replaced by the stochastic direction obtained from the previous psychophysical experiment. This model is thus called the mental gravity simulator (MGS, Figure 2c, top). Both models were used to quantify the degree of stability by measuring the proportion of unmoved blocks after the collapse, where the proportion of unmoved blocks after the simulation was used to estimate the stability of the stacks.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig2-v1.jpg)\n\n**Figure 2.:** (a) An experiment to rate the stability of stacks, half of which were stable and the other half unstable. (b) Top: the procedure of the natural gravity simulator (NGS) to estimate the actual stability of stacks by simulation, and for unstable stacks the stability was indexed by the proportion of displaced blocks. Bottom: the correlation between the stability estimates of the participant and those of the NGS. Each dot represents one stack, and the lines denote the standard errors. (c) Top: the procedure of the mental gravity simulator (MGS), where the stability of a stack was estimated by averaging the estimated stabilities from multiple simulations with different gravity directions sampled from the Gaussian distribution. Bottom: the correlation between the stability estimates of the participant and those of the MGS. (d) Left: the illusion that taller objects are perceived as more unstable than shorter ones. Right: the inference bias was indexed by the difference between the stability estimated by the MGS and that estimated by the NGS. The larger the negative values, the more likely stacks were unstable. The x-axis denotes the height of a stack containing ten blocks, where the height, length, and width of each block were 1.2, 0.4, and 0.4, respectively. IB: inference bias. Error bar: standard error.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Only when the world model embodied Gaussian functions with intermediate variance (i.e., $\\sigma\\in(15,20)$) did the stability estimated by the MGS match participants\u2019 stability inference. On the other hand, when the variance was small, most points were positioned below the diagonal line, indicating the model considered stacks more stable in general as compared to participants\u2019 judgment. When the variance was large, the model considered stacks less stable. Note that all models showed high correlation coefficients regardless of the bias. In other words, the magnitude of the correlation is not the sole indicator to evaluate the fitness of the model. IB: inference bias.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The illusion that tall objects are considered more unstable than short ones manifests at all levels of variances of Gaussian functions, with larger variance leading to a stronger illusion.\n\nNGS-estimated stability was significantly correlated with participants\u2019 subjective sense (Figure 2b, bottom; r = 0.70, p<0.01), consistent with previous findings (Battaglia et al., 2013). However, the participants showed an obvious bias towards predicting a collapse for stacks regardless of their actual stability, as the dots in Figure 2b are more concentrated on the lower side of the diagonal line. This phenomenon is referred to as the inference bias, which was indexed as the difference in stability estimates between the participants and the NGS (inference bias = \u20130.31, p<0.01; see \u2018Methods\u2019). In other words, the participants were unlikely to infer stacks\u2019 stability from simulations with a deterministic direction of gravity pointing vertically downward. In contrast, the MGS randomly sampled pairs of  $(\\theta_{s},\\phi_{s})$ from the Gaussian distribution as gravity\u2019s directions 100 times, and the estimated stability of a stack was the averaged stability of simulations with different angle pairs. Aside from a similar magnitude of the correlation in the stability estimates between the participants and the MGS (Figure 2c, bottom; r = 0.75, p<0.01), the MGS, in contrast to the NGS, more precisely reflected participants\u2019 judgments of stability because the points were evenly distributed along the diagonal line (inference bias = 0.04, p>0.05; see Figure 2\u2014figure supplement 1 for the agreement when the MGS was implemented with different Gaussian functions). In other words, the magnitude of the correlation coefficients is not the only indicator to evaluate the model\u2019s fitness. In short, the world model that represents gravity\u2019s direction as a Gaussian distribution around the vertical direction properly explains our tendency to judge stacks as more prone to collapse.\n\nThe stochastic world model illustrated by the MGS that led to participants\u2019 inference bias may explain the daily illusion that we perceive taller objects to be more unstable than shorter ones (Figure 2d, left). An intuitive explanation from physics is that a tall object has a higher center of gravity, and thus an external perturbation makes it more likely to collapse. Our stochastic world model, on the other hand, provides an alternative explanation without introducing external perturbations because the center of gravity in taller objects is more susceptible to influence when gravity deviates slightly from a strictly downward direction during humans\u2019 internal simulations. To test this conjecture, we constructed a set of stacks with different heights and estimated the degree of stacks\u2019 stability with the MGS and the NGS, respectively. Because the MGS was considered to be the world model implemented in the brain, the inference bias here was calculated as the difference in stability estimates between the MGS and the NGS, with negative values indicating a tendency to judge a stable stack as an unstable one. Consistent with the inference bias found in humans, the MGS found stacks of all heights to be more prone to collapse (Figure 2d, right; inference bias <0, p<0.01 for all heights). Critically, the bias increased monotonically with increasing height, consistent with the illusion that taller objects are considered more prone to collapse (see Figure 2\u2014figure supplement 2 for the inference bias when the MGS was equipped with different levels of deviation). In short, the stochastic world model on gravity provides a more concise explanation for the daily illusion that taller objects are perceived as more likely to collapse, without assuming external perturbations.\n\n### The origin of the stochastic feature of the world model\n\nA deterministic model that combines gravity\u2019s veridical direction with external perturbations, such as an external force or perceptual uncertainty (Allen et al., 2020; Battaglia et al., 2013; Lake et al., 2017; Smith and Vul, 2013), is theoretically equivalent to our stochastic model that represents gravity\u2019s direction in a Gaussian distribution; therefore, it also fits well with humans\u2019 inference on stability by fine-tuning the parameters of external perturbations. While the cognitive impenetrability and the self-consistency observed in this study, without resorting to an external perturbation, favor the stochastic model over the deterministic one, the origin of this stochastic feature of the world model is unclear.\n\nHere we used an RL framework to unveil this origin because our intelligence emerges and evolves under the constraints of the physical world. Therefore, the stochastic feature may emerge as a biological agent interacts with the environment, where the mismatches between external feedback from the environment and internal expectations from the world model are in turn used to fine-tune the world model (Friston et al., 2021; MacKay, 1956; Matsuo et al., 2022). Note that a key aspect of the framework is determining whether the stochastic nature of the world model on gravity emerges through this interaction, even in the absence of external noise. To simulate this process, here we designed an RL framework to model this interactive process to illustrate how the world model on gravity evolves (Figure 3a). Specifically, an agent perceived a stack in the environment, which was then acted upon by a simulated gravity with direction parameters (i.e., $\\theta$ and $\\phi$) sampled from a spherical direction space. The initial probabilities for the sampling directions were identical (Figure 3b, left). The final state of the stack served as the agent\u2019s expectation under the effect of the simulated gravity. The mismatch between the expectation and the observed final state of the stack under the natural gravity was used to update the sampling probability of the direction space, with a larger discrepancy leading to a larger decrease in probabilities through RL. Within this RL framework, we constructed abundant stacks of 2\u201315 blocks to train the world model on gravity. As the training progressed, the probabilities of the direction space gradually converged downward (Figure 3b, middle; see Figure 3\u2014figure supplement 1 for the training trajectory). Although gravity\u2019s direction in the environment was vertical, the distribution of updated probabilities in the direction space was gradational ($\\sigma$ = 21.6; Figure 3b, right), which is close to gravity\u2019s direction represented in the world model derived from the psychophysics experiment on human participants. Therefore, the world model representing gravity\u2019s direction in a Gaussian distribution can emerge automatically as the agent interacts with the environment, without the need for any external perturbation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig3-v1.jpg)\n\n**Figure 3.:** (a) The reinforcement learning framework, which updated gravity\u2019s direction $(\\theta,\\phi)$ of the world model by minimizing the difference between the expectation from the internal simulation (i.e., simulated states) and the observation from the physical world (i.e., actual states). (b) Gravity\u2019s directions, which were uniformly distributed on the spherical surface, gradually converged downward as the training progressed and eventually stabilized in a Gaussian distribution with the vertical direction as the maximum likelihood. Color denotes the probability of a parameter pair being adopted as gravity\u2019s direction. (c) Left: world models constructed by reinforcement learning when stacks in the physical world were composed of different numbers of blocks ranging from 2 to 15. Right: the variance of the Gaussian distribution, illustrated by the width of the distribution of gravity\u2019s direction on a spherical surface, monotonically decreased as the number of blocks in the stacks increased.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The developmental trajectory of $\\theta$ (top) and $\\phi$ (bottom) angles.Sampling probabilities of $\\theta$ angles gradually decreased during reinforcement learning, with the probabilities from smaller $\\theta$ angles having a lower decrement tendency. The probability of $\\theta$ without any deviation (i.e., $\\theta=0$) keeps unchanged. Probabilities of all $\\theta$ angles finally reached convergence after about 50% training progress. Different from $\\theta$ angles, sampling probabilities of the $\\phi$ angles dropped evenly.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The number of blocks ranged from 2 to 15, and in all the worlds gravity\u2019s direction was in Gaussian distributions with the vertical direction as the maximum likelihood. Note that the world with stacks consisting of more block numbers led to smaller variances in the Gaussian function.\n\nTo further illustrate the idea that the environment constrains the form of intelligence, we systematically manipulated the appearance of the physical world while holding the natural gravity constant. Specifically, we constructed 14 worlds, each containing stacks of the same number of blocks, but with different configurations. The number of blocks ranged from 2 to 15. We trained the world model on gravity under the same RL framework for each world and found that all world models represented gravity\u2019s direction in a Gaussian distribution (Figure 3c, left; see Figure 3\u2014figure supplement 2 for all world models). However, the width of the distribution, indexed by the parameter of $\\sigma$, decreased monotonically as the number of blocks increased (Figure 3c, right). This phenomenon was shown because in general stacks containing more blocks were more likely to be affected by forces whose directions were not perpendicular to the ground surface, which provided more information about gravity, and thus resulted in a more accurate representation of gravity\u2019s direction in the world model. In short, the world model on gravity resonates with not only the physical law governing the environment, but also the specific regularities of the environment the agent encountered.\n\n### The ecological advantage of the stochastic world model\n\nWhen passing a cliff face, we have to be constantly aware of the stability of the rocks on the cliff. The ideal response would be both accurate and fast, but accuracy and speed are often difficult to achieve simultaneously. Here we investigated how the world model on gravity balances these two factors with its stochastic feature. To answer this question, we used a linear classifier (i.e., logistic regression) to model humans\u2019 decision-making behavior at different stages of the mental simulation. Specifically, we collected all the position coordinates of a stack\u2019s blocks at different stages of the simulation. The position difference between the intermediate states of the stack and the initial state provides information about the stability of the stack. For example, a stable stack should have no difference in the positions of the component blocks at all simulation stages, and an unstable stack should have a gradually increasing position difference. If the linear classifier detected the difference in positions sufficient for the classification at any stage, it classified the stack as unstable, otherwise stable (Figure 4a). The classification accuracy gradually increased as the simulation progressed until it reached the asymptote.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig4-v1.jpg)\n\n**Figure 4.:** (a) Illustration that modeled humans\u2019 decision-making behavior at different stages of the mental simulation using the natural gravity simulator (NGS) and mental gravity simulator (MGS). (b) The decision of the linear classifier based on the simulation of the MGS was less accurate than that of the NGS (top), but the decision was made faster in the MGS than in the NGS (middle). The MGS was more efficient than the NGS in combining accuracy and speed (bottom). (c) The relationship between the number of simulations and the variance of the estimated stability. (d) The difference in the variance of the estimated stability between the participants and the MGS. The difference was minimal when the MGS ran the simulation three times. Error bar: standard error.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Prediction accuracy decreased when the variance of the Gaussian function increased, and reached an asymptote of 0.75. (b) Response time decreased as the variance increased and reached an asymptote of 0.20. (c) The prediction accuracy and response time were combined as a measurement for efficiency, which gradually increased monotonically as the function of the variance until an asymptote of 4. Red box: the world model embodied no stochastic characteristic (i.e., the deterministic model); Blue box: the world model with different levels of variances. Error bar: standard error.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88953/elife-88953-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The simulation showed that the variance of stability inference decreased with the number of simulations. Note that the variance in the world model observed in participants best matched the variance when the simulation of the mental gravity simulator (MGS) was conducted three times.\n\nAs expected, for the NGS (i.e., the world model with the deterministic direction of gravity), the accuracy at the plateau was close to 100% (95.3% on average, Figure 4b, top red box), significantly higher than that for the MGS (80.1% on average, Figure 4b, top blue box) (t = 19.59, p<0.001), simply because of the stochastic feature of gravity\u2019s direction. However, while the initial growth rates of both models were comparable, the MGS reached the plateau crucial for decision-making sooner than the NGS (response time, indexed by the ratio between the time to reach the plateau and the time to reach the final stage: 27.1% vs 75.2%, t = 15.58, p<0.001) (Figure 4b middle). The same pattern was also observed with different variances of the Gaussian distribution (Figure 4\u2014figure supplement 1). That is, the stochastic world model prioritized speed over accuracy, echoing the basic principle of survival: fleeing potential danger as quickly as possible, rather than making a perfect decision with a dreadful delay. In addition, by integrating the prediction accuracy and the response time as a measure of efficiency, we found that the stochastic world model provided a better balance between accuracy and speed, with an efficiency significantly higher than that provided by the NGS (3.49 vs 1.32, t = 9.12, p<0.001; Figure 4b, bottom).\n\nOn the other hand, if time permits, multiple simulations with the MGS can significantly reduce the variance introduced by the stochastic representation of gravity\u2019s direction (Figure 4c). To explore whether humans adopted this strategy of performing multiple simulations before making a decision, we ran simulations with the MGS at different numbers of times and then matched them with humans\u2019 performance. We found that the variance of humans\u2019 inference on stability best matched that of the MGS after three simulations (Figure 4d; see Figure 4\u2014figure supplement 2 for the model-behavior correspondence under different numbers of simulations). Therefore, humans are likely to run simulations a limited number of times to infer stacks\u2019 stability.\n\n## Discussion\n\nIn this study, we investigated how the physical law of gravity is embodied in the brain as a world model that guides inferences on objects\u2019 stability. A series of psychophysics experiments showed that the world model on gravity is not a faithful replica of the physical world, but rather a stochastic model that captures the essence of the vertically downward direction of gravity as the maximum likelihood of a Gaussian distribution. The stochastic feature of the world model not only fits humans\u2019 stability inference behavior better than the deterministic model, but also provides new insight into the daily illusion that taller objects are perceived as more likely to collapse. We further illustrated how the stochastic feature evolved through interactions with the environment using RL, and well-balanced accuracy and speed to produce a unique ecological advantage for our survival in the physical world.\n\nAbout 300 years ago, the philosopher Immanuel Kant proposed the intuition of space and time as a priori knowledge in the mind for us to understand the physical world (Kant, 1781), but only until recently have researchers investigated how the intuition is implemented in the brain as intuitive physics (Kubricht et al., 2017; McCloskey, 1983). In the Noisy Newtonian Framework, intuitive physics is depicted as a combination of Newtonian physics and uncertainty generated by noise (Battaglia et al., 2013; Kubricht et al., 2017; Sanborn et al., 2013). The introduction of uncertainty helps to reconcile the misconception occurring under unfavorable conditions, such as unfamiliar events or static scenes (Kaiser et al., 1992; Kaiser et al., 1986; Kim and Spelke, 1999; McCloskey, 1983; Smith and Vul, 2013), which was once thought to support Aristotelian physics (Disessa, 1982; Halloun and Hestenes, 1985). The noise in previous studies was thought to originate from sources such as perceptual uncertainty or external perturbations of forces, rather than from the intuitive physical engine itself, which is thought to be a deterministic system. Our study extends these deterministic models by showing a stochastic world model that the noise instead came from the representation of gravity\u2019s direction under Gaussian distribution. The inherent stochastic feature of gravity\u2019s direction did not need to rely on external noise to explain the illusory instability of taller objects. In addition, it was also confirmed by the cognitive impenetrability of the Gaussian distribution of gravity\u2019s direction when gravity\u2019s direction in the physical world was reversed (Pylyshyn, 1980).\n\nWith an RL framework, we further proposed a possible origin of the stochastic feature of the world model through interactions with the physical world. In contrast to summarizing statistical patterns from experience (Bear et al., 2021; Li et al., 2016; Zhang et al., 2016), this framework was designed to simulate how an agent constructed the world model on gravity through agent-environment interactions. Specifically, a world model with undifferentiated directions of gravity generated a prediction on the stability of an object, and the mismatches between the prediction and the observation of the object from the physical world were used to fine-tune the distribution of the directions in the world model. This process is similar to how humans update their internal knowledge by comparing simulated expectations (Hegarty, 2004; Ullman et al., 2017) with actual observations (Baillargeon, 2004; Baillargeon, 1994; Kotovsky and Baillargeon, 2000). After several generations of error minimization, a Gaussian distribution of gravity\u2019s direction with the vertically downward direction as the maximum likelihood was similar to that observed in the human world model. Interestingly, when the physical worlds that the agent interacted with changed their appearance with stacks of different heights, the world models maintained their general patterns, but the stochastic representation of gravity\u2019s direction changed accordingly. This finding not only supports the robustness of the active inference (Hegarty, 2004; Ullman et al., 2017), which efficiently encodes critical features under different physical worlds, but also resonates with the idea that intelligence develops under the constraints of the physical world. Taken together, the finding from the RL framework implies that the world model on gravity in humans may also be constructed in the same way, possibly through the mechanism of the predictive coding in a generative process (Friston, 2018; Huang and Rao, 2011).\n\nOur world model on gravity provides an example of the world model theory that emphasizes the predictive nature of generative neural networks implemented with a priori knowledge of the physical world (Friston et al., 2021; Land, 2014; Matsuo et al., 2022). In contrast to traditional discriminative neural networks that learn statistical patterns for stability from gigantic amounts of labeled stacks, generative models equipped with the physics laws governing the physical world rely much less on experience. Importantly, the stochastic feature of the model further enhances the efficiency by balancing accuracy and speed, which improves our chances of better survival (Cosmides and Tooby, 1997) and adaptation to novel environments (e.g., astronauts in outer space; Wang et al., 2022). Indeed, the close link between human cognition and the physical world through interaction may shed light on the development of a new generation of AI with human-like intelligence that can work flexibly in open-ended environments (Marcus, 2020; Marcus, 2018).\n\n## Methods\n\n### Creating stacks with different configurations\n\nWe designed a block-stacking procedure in a physical simulation platform (PyBullet) to generate stacks with different configurations. All stacks used in this study were generated using this procedure with the same parameters listed below.\n\nThe block-stacking procedure includes three steps (Figure 1\u2014figure supplement 1a): (1) defining the designated area, (2) stacking blocks, and (3) fine-tuning block positions. The first step is to designate a restricted place area. All blocks of a stack were required to be placed within the designated area. The designated area controls the aggregation level of blocks, with a small area clustering blocks closer than a large area. The designated area is determined by two horizontal parameters x and y, which separately represent the size of the area in two horizontal directions. Therefore, when the block number is fixed, a smaller area in general constructs a higher stack. After designating the area, in step 2 we stacked blocks in random horizontal positions within the area one by one. If no block was positioned under a new block, the new block would be directly placed on the ground; otherwise, it would stack on the positioned block. The horizontal position of each block was independently sampled from a uniform distribution, with lower and upper bounds being -x and +x, or -y and +y separately (x and y were all independently sampled from a uniform distribution $U(0.2,2.0)$). The first two steps allow us to generate a large number of configurations within the designated area, which is the only restriction of the block-stacking procedure. To better control the physical stability of each stack, in step 3 we fine-tuned blocks in the stack by adjusting overlaps between every neighboring one, which was randomly sampled from a uniform distribution $U(0.2,0.8)$. Smaller overlap between neighboring blocks is more likely to construct unstable stacks, whereas more extensive overlap results in more stable stacks. The overlap of neighboring blocks without contact is set to 0. Note that the overlap between neighboring blocks is not the only factor determining a stack\u2019s stability, and step 3 is used to generate stacks without consuming too many computational resources.\n\nThe size of each block has a 3D aspect ratio of 3:1:1 (length:width:height), with an arbitrary unit of 1.2:0.4:0.4. This constitutes three types of blocks (length, width, or height is 1.2, respectively, see Figure 1\u2014figure supplement 1b). Each block of a stack was randomly selected as one of the three types of blocks. The mass of each block is set to 0.2 kg, and the friction coefficients and the coefficients of restitution between blocks are set to 1 and 0, respectively.\n\n### Estimating the stability of a stack\n\nThe stability of a stack was obtained by a rigid-body forward simulation under the natural gravity environment (i.e., NGS). The direction of the natural gravity points downward (i.e., $G\u2192$ = (0, 0,\u20139.8)), and all blocks of a stack are affected by the same gravity. Gravity is the only factor for changing the state of each block, and no external force is added during the simulation. Within each simulation, we recorded 500 simulation stages. In each stage, the center position of each block was collected to measure the stability of the stack. If the position of any block does not change during the simulation, the stack is considered stable, otherwise unstable. We formulate the stack\u2019s state according to the below criteria:\n\n$$\nStable:\u00a0\u2200t\u2227\u2200m,\u00a0|P_{tm}\u2212P_{0m}|<\\epsilonUnstable:\u00a0\u2203t\u2228\u2203m,|P_{tm}\u2212P_{0m}|>\\epsilon\n$$\n\nwhere $t$ is a simulation stage, m is the block number of a stack, $P_{tm}$ is the position of the block m at stage t, and $\\epsilon$ is the just noticeable difference (i.e., j.n.d) of the perception, which is set to 0.01.\n\nThe stability of a stack is further calculated by measuring the proportion of displaced blocks, which is formulated as follows:\n\n$$\nStability=\\frac{\\summ=1MI(|P_{Tm}\u2212P_{0m}|<\\epsilon)}{M}\n$$\n\nwhere M is the total number of blocks of a stack, and T is the final stage of the simulation (i.e., T = 500). $I(\u22c5)=1$ when $|P_{Tb}\u2212P_{0b}|<\\epsilon$, which denotes that the stack is stable.\n\n### Measuring participants\u2019 sensitivity to gravity\u2019s direction\n\nWe decomposed gravity\u2019s direction into three independent components (Figure 1b):\n\n$$\nG_{x}=gsin\u2061\\thetacos\u2061\\phiG_{y}=gsin\u2061\\thetasin\u2061\\phiG_{z}=gcos\u2061\\theta\n$$\n\nwhere g is the magnitude of gravity (g = 9.8), which was fixed in this study. $\\theta$ represents the vertical component, $\\phi$ represents the horizontal component, and x, y, and z are three mutually perpendicular axes. The direction of the gravity was determined by the angle pair $(\\theta,\\phi)$, where $\\theta$ affects the extent of the collapse, and $\\phi$ affects the orientation of the collapse. When $\\theta$ is 0, gravity\u2019s direction is vertical.\n\nWe performed a psychophysics experiment to measure humans\u2019 sensitivity to gravity\u2019s direction. In this experiment, 10 participants (five females, age range: 21\u201328 y) from Tsinghua University were recruited to finish four runs of the behavioral experiment, which measured their ability to detect the abnormality of stacks\u2019 collapse trajectories. The experiment was approved by the Institutional Review Board of Tsinghua University (2022 no. 34), and informed consent was obtained from all participants before the experiment.\n\nThe collapse trajectory of a stack was solely determined by gravity with different directions, where larger values of $\\theta$ and $\\phi$ made the trajectories more abnormal. A pilot experiment showed that almost all $\\theta_{s}$ greater than 45\u00b0 made the collapse trajectory abnormal to most participants, and therefore in the experiment, $\\theta$ ranges from 0\u00b0 to 45\u00b0 with a step of 3\u00b0. $\\phi$ ranges from 0\u00b0 to 360\u00b0 with a step of 24\u00b0. Therefore, $\\theta$ and $\\phi$ consists of 16 values, respectively, which were randomly combined into 96 pairs of ($\\theta,\\phi$), with each value repeating six times in each run. In a trial, an unstable stack was constructed, and then the camera rotated one circle to show the 3D configuration of the stack to participants (Figure 1\u2014video 1). The configuration was randomly selected from a dataset with more than 2000 unstable stacks, which was generated with the block-stacking procedure before the experiment. Each stack in the database was constructed with 10 blocks, and the color of each block was randomly rendered. There was a 1 s delay after the rotation, during which the participants were instructed to infer the collapse trajectory based on the configuration. Then, simulated gravity with a direction determined by an angle pair ($\\theta,\\phi$) was applied to the stack, and the stack started to collapse. If the collapse trajectory met participants\u2019 expectations, they were instructed to choose \u2018normal,\u2019 otherwise \u2018abnormal.\u2019 Once the judgment was made, the subsequent trial started immediately. Each trial lasts about 10 s, taking 16 min for a run.\n\nIn addition, to test if participants\u2019 sensitivity to gravity\u2019s direction is encapsulated from visual experience and task context, we flipped gravity\u2019s direction upside down by inverting the camera\u2019s view, and the rest procedure remained the same.\n\nTo calculate participants\u2019 sensitivity to gravity\u2019s direction, we converted their behavioral judgment into confidence levels about the normal trajectory, which is the percentage that a trajectory was judged as normal, which was calculated as below:\n\n$$\nRatio_{\\theta,\\phi}=\\frac{n_{\\theta,\\phi}}{N_{\\theta,\\phi}}\n$$\n\nwhere $n_{\\theta,\\phi}$ is the number of trajectories that were judged as \u2018normal\u2019 with the angle pair ($\\theta,\\phi$), and $N_{\\theta,\\phi}$ is the total number of trajectories with the same angle pair. Because the angle pairs tested were a subset of all possible angle pairs, we used the average ratio along $\\phi$ as the ratio of angle pairs untested (Figure 1c) to acquire each participant\u2019s tuning curve. Finally, we calculated participants\u2019 sensitivity by fitting their confidence levels at different $\\theta$ to a Gaussian distribution.\n\n$$\nRatio_{\\theta}=Ae^{-\\frac{\\theta^{2}}{2\\sigma^{2}}}\n$$\n\nwhere $Ratio_{\\theta}$ is the confidence level of $\\theta$, which was calculated by averaging the confidence level along all $\\phi_{s}$, A is the magnitude of the Gaussian curve, and $\\sigma$ is the variance of the Gaussian curve. The best-fitted $\\sigma$ was used to index participants\u2019 sensitivity to gravity\u2019s direction, and a larger $\\sigma$ indicates a lower sensitivity.\n\n### Measuring participants\u2019 ability on stability inference\n\nAnother group of 11 participants (five females, age range: 21\u201332 y) from Tsinghua University completed a behavioral experiment for judging the stability of 60 stacks. The experiment was approved by the Institutional Review Board of Tsinghua University, and informed consent was obtained from all participants before the experiment. One male participant (age: 25 y) was excluded from further analyses because his judgment showed an extremely weak correlation with the actual stability of stacks (rs < 0.30 for all experimental runs) compared to the rest of the participants.\n\nThe stacks contained 26 unstable and 34 stable stacks, which were randomly interleaved in each run. The participants were instructed to judge stacks\u2019 stability on an 8-point Likert scale, with 0 referring to \u2018definitely unstable\u2019 and 7 to \u2018definitely stable.\u2019 There was no feedback after each judgment. The participants completed six runs, within which the same group of stacks was presented but the sequence, blocks\u2019 colors, and camera\u2019s perspective were all randomized. After the experiment, only two participants reported that they suspected a few stacks were repeated in different runs, but they could not locate the stacks they suspected. Besides, their behavioral performance was not significantly different from other participants.\n\nParticipants\u2019 stability judgment was rescaled to 0 and 1 to match the scale of the stacks\u2019 stability. The participants\u2019 inference bias (IB) was indexed as the difference in stability judgment between the participants and the NGS, shown as\n\n$$\nIB=Stability_{human}-Stability_{NGS}\n$$\n\nNegative IB indicates that participants tended to consider a stable stack as an unstable one.\n\n### Estimating the stability of stacks based on the stochastic world model on gravity\n\nThe actual stability of a stack can be calculated with a one-time simulation of NGS ($G\u2192$ = (0, 0,\u20139.8)). In contrast, the stochastic nature of mental gravity requires a multiple-time simulation with different gravity\u2019s directions. Specifically, we first randomly sampled several angle pairs $(\\theta_{s},\\phi_{s})$ from the Gaussian distribution of gravity\u2019s directions in humans. The distribution was the average of two distributions acquired from the real world (i.e., gravity\u2019s direction is downward) and the inverted world (the direction is upward), with angles having larger confidence levels more likely being sampled. We then applied the simulated gravity with these sampled directions to the stack and used the averaged stability with these directions as the stability of the stack estimated by the MGS. Similar to the IB between the participants and the NGS, the IB between the MGS and NGS was calculated as\n\n$$\nIB=Stability_{MGS}-Stability_{NGS}\n$$\n\nStacks of different heights were created to investigate whether the stochastic world model on gravity results in the illusion that tall objects are considered less stable than short ones. The height of a stack was correlated with the size of the designated area, with a smaller area size corresponding to taller stacks. Therefore, we designated several square areas with different sizes. The side length of the squares ranged from 0.2 to 2.0, with an increase of 0.1. For each square, we used the block-stacking procedure to generate 100 stable and 100 unstable stacks consisting of 10 blocks. The height of each stack was the height of the highest block.\n\n### Investigating the origin of the stochastic world model on gravity\n\nAn RL framework was used to simulate the development of the stochastic nature of the world model on gravity. To do this, we first created stacks whose block number ranged from 2 to 15 with the block-stacking procedure, and initialized a spherical force space, where $\\theta$ ranged from 0\u00b0 to 180\u00b0 and $\\phi$ from 0\u00b0 to 360\u00b0, separately divided them into 61 sampling angles across the spherical force space (i.e., the angle density). The spherical space covered all possible force directions, with the initial probability of being sampled by the MGS identical. During the training, three angle pairs $(\\theta_{s},\\phi_{s})$ were sampled according to the probability of the spherical space, and then applied to a stack for simulating its collapse trajectory, which was divided into 500 stages. We optimized the sampling probability of gravity\u2019s direction by comparing the estimated stability (i.e., expectation) with the actual stability (i.e., observation) as a Q value, with a higher Q value suggesting that the sampled gravity\u2019s direction more likely mismatched the actual gravity\u2019s direction. The Q value was calculated as\n\n$$\nQ=\\frac{\\summ=1MI(|P_{m,(\\theta,\\phi)}\u2212P_{m}|<\\epsilon)}{M}\n$$\n\nwhere $P_{m,(\\theta,\\phi)}$ is the final position of block m with gravity\u2019s direction $(\\theta,\\phi)$, $P_{m}$ is the final position of block m with NGS, M is the block number of the stack, and the j.n.d. $\\epsilon$ is set to 0.01. The mismatch between the expectation and the observation was used to update the sampling probability of the angle pair using a temporal difference optimization\n\n$$\nW_{\\theta,\\phi}\u2190W_{\\theta,\\phi}+\\gamma(Q-W_{\\theta,\\phi})\n$$\n\nwhere  $\\gamma$ = 0.15 is the learning rate. This process was iterated to update the sample probability of angle pairs $(\\theta_{s},\\phi_{s})$ until the training stopped. The angle density and learning rate are two factors that affect the learning speed. A larger angle density prolongs the time to reach convergence but enables a more detailed force space; a higher learning rate accelerates convergence but incurs larger variance during training. To balance speed and convergence, we utilized 100,000 configurations for the training.\n\n### Evaluating the ecological advantage of the model\n\nTo investigate how the world model on gravity balances response accuracy and speed, we trained a linear classifier (i.e., logistic regression) to model humans\u2019 decision-making process at different simulation stages. During the simulation, the same stack was separately simulated using the NGS and MGS, and we collected the position coordinates of all blocks at each stage. Differences in the positions of the blocks between the intermediate stage and the initial stage provided information about the stability of a stack, with more displaced blocks suggesting the lower stack\u2019s stability. As the simulation proceeded, differences in position gradually accumulated for unstable stacks, otherwise unchanged for stable stacks. The linear classifier was trained to judge whether a stack is stable with differences in position as inputs.\n\nWe used the block-stacking procedure to create stacks consisting of 2\u201310 blocks and estimated their stabilities with the NGS for simulation in 500 stages. For each block number, there were 100 stable and 100 unstable stacks to train the linear classifier, and its prediction accuracy was measured with another group of 100 stable and 100 unstable stacks at every simulation stage.\n\nThe difference in positions of each block between the intermediate and initial stages was used as the input of the linear classifier. Specifically, we collected all vertex positions of a block during the simulation to acquire the difference in position, which included eight coordinate points for each block in each stage. We did not collect the central position as previously used in the stability estimation simply because it did not provide information on the shape and size of the block. We separately performed the simulation using the MGS and NGS, calculated the difference in position between the intermediate stage and the initial stage, and then flattened the difference to generate 24 position features for each block (i.e., eight positions per block in three-dimensional space). Therefore, for a 10-block stack as an example, 240 position features were prepared as the input of the linear classifier.\n\nPrediction accuracy at each stage was estimated by evaluating whether a stack tested was stable with the MGS or with the NGS. The highest accuracy in the whole simulation stages was used as the prediction accuracy. Accordingly, the first simulation stage to reach the maximum accuracy provided information on response speed: reaching the maximum accuracy with a smaller number of stages indicates the classifier model accomplishes stability inference in a shorter amount of time (i.e., quick response). Therefore, we measured the response speed by estimating the steps to reach the accuracy plateau\n\n$$\nTime=\\frac{t^}{T}t^=arg\u00a0maxt\u00a0Accuracy_{t}\n$$\n\nwhere $Accuracy_{t}$ is the accuracy of stage t, $t^$ is the stage that a linear classifier acquires the maximum accuracy for the first time, and T is the total stage number of each simulation (T = 500). Higher values indicate longer response time (i.e., slower response). Finally, the efficiency of the stability inference, which is the balance between accuracy and speed, was found by dividing the prediction accuracy by the response time.\n\n$$\nEfficiency=\\frac{Accuracy}{Time}\n$$\n",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00f6rn Diedrichsen, Western University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.88953.3.sa0](https://doi.org/10.7554/eLife.88953.3.sa0)\n\nIn this valuable study, the authors present findings that suggest that people do not faithfully replicate the physics of the real world but rather have a stochastic world model, specifically a stochastic representation of gravity. This contrasts with prior accounts that suggested a potentially noisy Newtonian model where the noise arises from perceptual uncertainty or (inferred) external perturbations. The experimental evidence is generally solid, with all experiments and model simulations being consistent with the proposed account. In the revision, the authors also added a number of control experiments that address some of the most pressing concerns of the original submission.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.88953.3.sa1](https://doi.org/10.7554/eLife.88953.3.sa1)\n\nSummary:\n\nThrough a set of experiments and model simulations, the authors tested whether the commonly assumed world model of gravity was a faithful replica of the physical world. They found that participants did not model gravity as single, fixed vector for gravity but instead as a distribution of possible vectors. Surprisingly, the width of this distribution was quite large (~20 degrees). While previous accounts had suggested that this uncertainty was due to perceptual noise or an inferred external perturbation, the authors suggest that this uncertainty simply arises from a noisy distribution of the representation of gravity's direction. A reinforcement learning model with an initial uniform distribution for gravity's direction ultimately converged to a precision on the same order as the human participants, which lends support to the authors' conclusion and suggests that this distribution is learned through experience. What's more, further simulations suggest that representing gravity with such a wide distribution may balance speed and accuracy, providing a potentially normative explanation for the world model with gravity as a distribution.\n\nStrengths:\n\nThe authors present surprising findings in a relatively straight-forward in a now classic experimental task. They provide a normative explanation based on a resource-rational framework for why people may have a stochastic world model instead of a deterministic world model. While the stochastic world model could be the result of people mentally simulating an external perturbation, the authors include several control experiments to test this possibility.\n\nWeaknesses:\n\nThe possibility of inferred external perturbations, as opposed to a stochastic world model, is difficult to rule out. This could stem from how people interpret task instructions and it will likely take many, clever studies, to fully reconcile these two alternative accounts.\n",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "08e11ded-773b-459c-90e2-771c26677841",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C1",
+      "claim": "Humans can judge whether a wall is stable or collapsing in a fraction of a second.",
+      "claim_type": "EXPLICIT",
+      "source": "We, wise or not, can easily judge whether a wall is stable or collapsing in a fraction of a second (Battaglia et al., 2013; Kubricht et al., 2017; McCloskey, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research (Battaglia et al., 2013; Kubricht et al., 2017; McCloskey, 1983)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "7f066fd6-8de1-4354-a211-44883c30e00e",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C2",
+      "claim": "Humans can report the stability of a 10-block stack with a satisfactory accuracy of 70% on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking a stack consisting of 10 blocks as an example (Figure 1), we can quickly report its stability with a satisfactory accuracy of 70% on average (Bear et al., 2021; Zhang et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research (Bear et al., 2021; Zhang et al., 2016)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "b041a7fe-515b-4184-a56e-2f01e3995fc2",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C3",
+      "claim": "The universal cardinality of possible configurations for a 10-block stack is at least 1.14 \u00d7 10^50.",
+      "claim_type": "EXPLICIT",
+      "source": "but the universal cardinality of possible configurations is at least 1.14 \u00d7 1050 (Figure 1\u2014figure supplement 1), which is much larger than the total number of sand grains on Earth (est. 7.5 \u00d7 1018) (Blatner, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1\u2014figure supplement 1 and citation (Blatner, 2013)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "714a685d-db6a-402d-9ae1-66da760314c3",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C4",
+      "claim": "4-month-old infants expect a box to fall if it loses contact with a support platform.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this intuition, 4-month-old infants, who have little visual experience of the physical world, expect a box to fall if it loses contact with a support platform (Baillargeon, 2004; Baillargeon, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research (Baillargeon, 2004; Baillargeon, 1994)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "292fbcf1-c9c4-4721-8dcf-508631140d19",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C5",
+      "claim": "Infants as young as 7 months expect a downward-moving object to accelerate and an upward-moving object to decelerate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, infants as young as 7 months expect a downward-moving object to accelerate and an upward-moving object to decelerate (Friedman, 2002; Kim and Spelke, 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research (Friedman, 2002; Kim and Spelke, 1999)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "dbd9e5b0-5cd4-47b9-9088-d2dbbf3a70a2",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C6",
+      "claim": "Adults can estimate the remaining time to catch a moving ball.",
+      "claim_type": "EXPLICIT",
+      "source": "and adults can estimate the remaining time to catch a moving ball (McIntyre et al., 2001; Zago and Lacquaniti, 2005) even in the absence of visual information (Lacquaniti and Maioli, 1989; Zago et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research (McIntyre et al., 2001; Zago and Lacquaniti, 2005; Lacquaniti and Maioli, 1989; Zago et al., 2009)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "bc3fc028-d309-483b-9924-0f96ef120440",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C7",
+      "claim": "The parieto-insular vestibular cortex in the brain is the neural basis for gravity-based stability inference.",
+      "claim_type": "EXPLICIT",
+      "source": "Further fMRI studies have revealed the parieto-insular vestibular cortex in the brain as the neural basis for gravity-based stability inference, suggesting that this knowledge is encapsulated as a cognitive module (Fischer et al., 2016; Indovina et al., 2005; Pramod et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to fMRI studies (Fischer et al., 2016; Indovina et al., 2005; Pramod et al., 2022)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "8e4cbc52-f765-4c6d-978c-55f992d78e3b",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C8",
+      "claim": "Participants were 91.0% accurate in reporting collapse trajectories as normal when \u03b8 equals 0.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when \u03b8 is equal to 0 (i.e., the direction of the simulated gravity is the direction of the natural gravity), the participants were likely to report that the collapse trajectory was normal (accuracy: 91.0%, STD: 8.0%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "2cde5aee-9783-4021-8cd5-2239cbe3c7d9",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C9",
+      "claim": "The confidence level of reporting normal trajectories decreased gradually as a function of \u03b8 and was best fit by a Gaussian function with \u03c3=19.9.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to this intuition, the subjective sense of the abnormality was not immediately apparent as \u03b8 moved away from 0; instead, the confidence level of reporting normal trajectories decreased gradually as a function of \u03b8, which was the best fit by a Gaussian function with \u03c3=19.9 (Figure 1d, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data and Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "a7ea97f4-c2e0-4f32-9f98-52204d6c0c07",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C10",
+      "claim": "Participants were 50.9% confident in reporting a normal collapse trajectory when the vertical offset of \u03b8 was 19.9\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the participants were 50.9% confident in reporting a normal collapse trajectory when the vertical offset of \u03b8 was 19.9\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "d76e9ac3-879b-4d9d-a21f-efc1fc78f5b6",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C11",
+      "claim": "Accuracy in detecting the abnormality was not affected by \u03c6.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, accuracy in detecting the abnormality was not affected by \u03c6 (Figure 1\u2014figure supplement 3), consistent with the uniformly distributed gravitational field in the physical world.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "f405912e-0646-4803-b8a3-5bc4425f2d4c",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C12",
+      "claim": "The world model on gravity encodes gravity's direction as a Gaussian distribution with the vertical direction as the maximum likelihood.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the world model on gravity is unlikely to be a faithful replica of the physical world; instead, it encodes gravity's direction as a Gaussian distribution with the vertical direction as the maximum likelihood (Figure 1d, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data and inference from results shown in Figure 1d",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "6b75cbd5-7fe5-4a60-a18b-72595a39572e",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C13",
+      "claim": "Each participant's \u03c3 in the upright condition was in high agreement with the \u03c3 in the upside-down condition (r = 0.91, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, each participant's \u03c3 in the upright condition was in high agreement with the \u03c3 in the upside-down condition (r = 0.91, p<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "070cc1ac-971c-429b-b2e7-33eb32ab9875",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C14",
+      "claim": "The visual experience and task context did not cognitively penetrate humans' world model on gravity.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the visual experience and task context apparently did not cognitively penetrate humans' world model on gravity, suggesting that it is likely encapsulated as a cognitive module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the consistency of \u03c3 values across different experimental conditions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "9dd0fefe-3713-4e75-b76d-a12a6c32cafb",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C15",
+      "claim": "NGS-estimated stability was significantly correlated with participants' subjective sense (r = 0.70, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "NGS-estimated stability was significantly correlated with participants' subjective sense (Figure 2b, bottom; r = 0.70, p<0.01), consistent with previous findings (Battaglia et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2b and citation to previous research",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "614d1ffb-0b62-449c-b2c9-3f3ecb7dc154",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C16",
+      "claim": "Participants showed an obvious bias towards predicting a collapse for stacks regardless of their actual stability (inference bias = \u20130.31, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the participants showed an obvious bias towards predicting a collapse for stacks regardless of their actual stability, as the dots in Figure 2b are more concentrated on the lower side of the diagonal line. This phenomenon is referred to as the inference bias, which was indexed as the difference in stability estimates between the participants and the NGS (inference bias = \u20130.31, p<0.01; see 'Methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "434d06af-4524-47fd-bea0-d01a89c1896e",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C17",
+      "claim": "The MGS showed a similar magnitude of correlation in stability estimates with participants (r = 0.75, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from a similar magnitude of the correlation in the stability estimates between the participants and the MGS (Figure 2c, bottom; r = 0.75, p<0.01)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "beac8378-a38b-4817-8b35-acbf3f5fbc23",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C18",
+      "claim": "The MGS more precisely reflected participants' judgments of stability with an inference bias of 0.04 (p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "the MGS, in contrast to the NGS, more precisely reflected participants' judgments of stability because the points were evenly distributed along the diagonal line (inference bias = 0.04, p>0.05; see Figure 2\u2014figure supplement 1 for the agreement when the MGS was implemented with different Gaussian functions).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2c and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "d600b46b-6145-40fe-a127-2642ceaba8c1",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C19",
+      "claim": "The MGS found stacks of all heights to be more prone to collapse (inference bias <0, p<0.01 for all heights).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the inference bias found in humans, the MGS found stacks of all heights to be more prone to collapse (Figure 2d, right; inference bias <0, p<0.01 for all heights).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figure 2d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "59b49893-f5eb-43cb-9f95-614c8d05e5ee",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C20",
+      "claim": "The inference bias increased monotonically with increasing height.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, the bias increased monotonically with increasing height, consistent with the illusion that taller objects are considered more prone to collapse (see Figure 2\u2014figure supplement 2 for the inference bias when the MGS was equipped with different levels of deviation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by simulation data shown in Figure 2d and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "225189ed-adbc-4af5-bb3e-17c9ba7a789c",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C21",
+      "claim": "The distribution of updated probabilities in the direction space was gradational (\u03c3 = 21.6) after reinforcement learning training.",
+      "claim_type": "EXPLICIT",
+      "source": "Although gravity's direction in the environment was vertical, the distribution of updated probabilities in the direction space was gradational (\u03c3 = 21.6; Figure 3b, right), which is close to gravity's direction represented in the world model derived from the psychophysics experiment on human participants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational modeling data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "1fd8a3ed-8af0-4048-9788-6ac0e59f5e48",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C22",
+      "claim": "All world models trained with different numbers of blocks represented gravity's direction in a Gaussian distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We trained the world model on gravity under the same RL framework for each world and found that all world models represented gravity's direction in a Gaussian distribution (Figure 3c, left; see Figure 3\u2014figure supplement 2 for all world models).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational modeling data shown in Figure 3c and Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "cf15a456-d8ee-4394-b2f6-01725766abc2",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C23",
+      "claim": "The width of the Gaussian distribution (\u03c3) decreased monotonically as the number of blocks increased.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the width of the distribution, indexed by the parameter of \u03c3, decreased monotonically as the number of blocks increased (Figure 3c, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational modeling data shown in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "b0fd4b18-1812-4460-a2e0-4bded5067e67",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C24",
+      "claim": "The accuracy at the plateau for the NGS was close to 100% (95.3% on average), significantly higher than that for the MGS (80.1% on average) (t = 19.59, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, for the NGS (i.e., the world model with the deterministic direction of gravity), the accuracy at the plateau was close to 100% (95.3% on average, Figure 4b, top red box), significantly higher than that for the MGS (80.1% on average, Figure 4b, top blue box) (t = 19.59, p<0.001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational modeling data shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "5cc186a2-3dc0-46c3-b833-50cc42c81ba9",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C25",
+      "claim": "The MGS reached the plateau crucial for decision-making sooner than the NGS (response time: 27.1% vs 75.2%, t = 15.58, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the initial growth rates of both models were comparable, the MGS reached the plateau crucial for decision-making sooner than the NGS (response time, indexed by the ratio between the time to reach the plateau and the time to reach the final stage: 27.1% vs 75.2%, t = 15.58, p<0.001) (Figure 4b middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational modeling data shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "ed1e6dfc-ecb6-49a3-b4d3-47f15411c271",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C26",
+      "claim": "The stochastic world model provided a better balance between accuracy and speed, with an efficiency significantly higher than that provided by the NGS (3.49 vs 1.32, t = 9.12, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, by integrating the prediction accuracy and the response time as a measure of efficiency, we found that the stochastic world model provided a better balance between accuracy and speed, with an efficiency significantly higher than that provided by the NGS (3.49 vs 1.32, t = 9.12, p<0.001; Figure 4b, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational modeling data shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "735b26c6-eac1-4dde-8e48-40c3c15033ed",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C27",
+      "claim": "The variance of humans' inference on stability best matched that of the MGS after three simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the variance of humans' inference on stability best matched that of the MGS after three simulations (Figure 4d; see Figure 4\u2014figure supplement 2 for the model-behavior correspondence under different numbers of simulations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison between human data and computational modeling shown in Figure 4d and Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "45168044-6184-495f-856a-0df5d7f425be",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C28",
+      "claim": "Humans are likely to run simulations a limited number of times to infer stacks' stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, humans are likely to run simulations a limited number of times to infer stacks' stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that human variance matches MGS with three simulations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "3a695bec-a0cc-4e2b-98fa-8c970c334e78",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C29",
+      "claim": "The world model on gravity is not a faithful replica of the physical laws, but instead encoded gravity's vertical direction as a Gaussian distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the world model on gravity was not a faithful replica of the physical laws, but instead encoded gravity's vertical direction as a Gaussian distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from psychophysics experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "47049626-30f1-4b6a-901f-d09d5f603ba3",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C30",
+      "claim": "The stochastic world model on gravity explains the illusion that taller objects are perceived as more likely to fall.",
+      "claim_type": "EXPLICIT",
+      "source": "The world model with this stochastic feature fit nicely with participants' subjective sense of objects' stability and explained the illusion that taller objects are perceived as more likely to fall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational modeling and comparison with human behavior",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "5d8a139a-f501-4e26-af88-b687b4abd59b",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C31",
+      "claim": "The stochastic characteristic of the world model likely originated from experience-dependent comparisons between predictions formed by internal simulations and the realities observed in the external world.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a computational model with reinforcement learning revealed that the stochastic characteristic likely originated from experience-dependent comparisons between predictions formed by internal simulations and the realities observed in the external world",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational modeling with reinforcement learning",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "7524de70-b051-4ce7-93a7-07a07ab4bfff",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C32",
+      "claim": "The stochastic representation has an ecological advantage in balancing accuracy and speed for efficient stability inference.",
+      "claim_type": "EXPLICIT",
+      "source": "which illustrated the ecological advantage of stochastic representation in balancing accuracy and speed for efficient stability inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational modeling comparing efficiency of stochastic vs deterministic models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "59f5acfd-ef1a-4a44-bdcd-045bfeea1084",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C33",
+      "claim": "The brain is proposed as a set of generative machines that actively predict future events of the ever-changing physical world through mental simulation with a priori knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, our brain is proposed as a set of generative machines that actively predict future events of the ever-changing physical world through mental simulation with a priori knowledge acting upon the world (Battaglia et al., 2013; Hegarty, 2004; Huang and Rao, 2011; Tenenbaum et al., 2011; Ullman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous theoretical work (Battaglia et al., 2013; Hegarty, 2004; Huang and Rao, 2011; Tenenbaum et al., 2011; Ullman et al., 2017)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "9a53173e-5c5b-4476-9812-679647f71eb8",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C34",
+      "claim": "A prevailing theory suggests that the world model in the brain accurately mirrors the physical laws of the world.",
+      "claim_type": "EXPLICIT",
+      "source": "A prevailing theory suggests that the world model in the brain accurately mirrors the physical laws of the world (Allen et al., 2020; Battaglia et al., 2013; Zhou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous theoretical work (Allen et al., 2020; Battaglia et al., 2013; Zhou et al., 2022)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "41f31a3c-1721-478c-8107-7d3b79945664",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C35",
+      "claim": "External noise, such as imperfect perception and assumed external forces, is introduced to explain the phenomenon that tall and thin objects are subjectively perceived as more unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain the phenomenon that tall and thin objects are subjectively perceived as more unstable compared to short and fat ones (Figure 1\u2014figure supplement 2), external noise, such as imperfect perception and assumed external forces, is introduced to influence the output of the model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Describes existing theoretical approaches in the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "6d91e440-128e-40fb-8aa9-8f4f5581242b",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C36",
+      "claim": "When the brain actively transforms sensory data into cognitive understanding, these data can become distorted.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the brain actively transforms sensory data into cognitive understanding, these data can become distorted (Kriegeskorte and Douglas, 2019; Naselaris et al., 2011), hereby introducing uncertainty into the representation of gravity's direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous research (Kriegeskorte and Douglas, 2019; Naselaris et al., 2011)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "0ff1b2e9-a42b-4694-a9c6-24ff9d4a9f01",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C37",
+      "claim": "The variance of participants' confidence level about normal trajectory in \u03b8 angles ranged from 11.1 to 37.1.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern was observed for all participants tested, with \u03c3 varying from 11.1 to 37.1 (Figure 1\u2014figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "c397a071-63e7-4ac7-83a6-96ff3cee1cc2",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C38",
+      "claim": "The pattern of Gaussian distribution remained unchanged with the addition of a wall on one side to block potential external disturbances from wind.",
+      "claim_type": "EXPLICIT",
+      "source": "and remained unchanged with the addition of a wall on one side to block potential external disturbances from wind (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "3ed36d0e-37f6-4ffe-81a1-34f2d6be7547",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C39",
+      "claim": "In the upside-down condition, the confidence level decreased gradually as a function of \u03b8 with \u03c3 = 17.2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the confidence level also decreased gradually as a function of \u03b8 (Figure 1f, \u03c3 = 17.2; see Figure 1\u2014figure supplement 5 for each participant)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1f and Figure 1\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "4cc02ebc-9b7d-4bb8-9a56-3c00642df3e5",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C40",
+      "claim": "The \u03c3 in the upside-down condition was not significantly different from that in the environment with gravity pointing downward.",
+      "claim_type": "EXPLICIT",
+      "source": "which was not significantly different from that in the environment with gravity pointing downward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical comparison of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "00974cf8-2d4a-48c8-9adb-731c7d8cb794",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C41",
+      "claim": "10 participants from Tsinghua University completed four runs of the behavioral experiment measuring their ability to detect the abnormality of stacks' collapse trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "In this experiment, 10 participants (five females, age range: 21\u201328 y) from Tsinghua University were recruited to finish four runs of the behavioral experiment, which measured their ability to detect the abnormality of stacks' collapse trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental procedure and sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "3f7dfae9-8750-4c83-b3b1-9e6f967020ac",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C42",
+      "claim": "Another group of 11 participants from Tsinghua University completed a behavioral experiment for judging the stability of 60 stacks.",
+      "claim_type": "EXPLICIT",
+      "source": "Another group of 11 participants (five females, age range: 21\u201332 y) from Tsinghua University completed a behavioral experiment for judging the stability of 60 stacks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental procedure and sample",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "729a1adc-f377-46a4-afff-6a4d0224b37d",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C43",
+      "claim": "One male participant was excluded from further analyses because his judgment showed an extremely weak correlation with the actual stability of stacks (rs < 0.30 for all experimental runs).",
+      "claim_type": "EXPLICIT",
+      "source": "One male participant (age: 25 y) was excluded from further analyses because his judgment showed an extremely weak correlation with the actual stability of stacks (rs < 0.30 for all experimental runs) compared to the rest of the participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes data exclusion criteria and results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "fed60df8-b097-44f8-8d93-1c9293f1c43e",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C44",
+      "claim": "The stacks used in the stability judgment experiment contained 26 unstable and 34 stable stacks.",
+      "claim_type": "EXPLICIT",
+      "source": "The stacks contained 26 unstable and 34 stable stacks, which were randomly interleaved in each run.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental stimuli",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "d3ffb89c-6d94-429f-bae1-a7fc6e8de28c",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C45",
+      "claim": "The experiment was approved by the Institutional Review Board of Tsinghua University (2022 no. 34).",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment was approved by the Institutional Review Board of Tsinghua University (2022 no. 34), and informed consent was obtained from all participants before the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "States ethical approval information",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "ae077c57-126b-4682-aed3-7238a93fc7e2",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C46",
+      "claim": "A deterministic model that combines gravity's veridical direction with external perturbations is theoretically equivalent to the stochastic model that represents gravity's direction in a Gaussian distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "A deterministic model that combines gravity's veridical direction with external perturbations, such as an external force or perceptual uncertainty (Allen et al., 2020; Battaglia et al., 2013; Lake et al., 2017; Smith and Vul, 2013), is theoretically equivalent to our stochastic model that represents gravity's direction in a Gaussian distribution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical comparison with citations to previous work (Allen et al., 2020; Battaglia et al., 2013; Lake et al., 2017; Smith and Vul, 2013)",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "ddb0291f-79dc-414b-8c5b-e8c87bec6494",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C47",
+      "claim": "The cognitive impenetrability and self-consistency observed in this study favor the stochastic model over the deterministic one.",
+      "claim_type": "EXPLICIT",
+      "source": "While the cognitive impenetrability and the self-consistency observed in this study, without resorting to an external perturbation, favor the stochastic model over the deterministic one",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "bde3dd5c-da34-4ab8-a51e-65ba2a82f0de",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C48",
+      "claim": "The stochastic feature of the world model may emerge as a biological agent interacts with the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the stochastic feature may emerge as a biological agent interacts with the environment, where the mismatches between external feedback from the environment and internal expectations from the world model are in turn used to fine-tune the world model (Friston et al., 2021; MacKay, 1956; Matsuo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical proposal supported by citations (Friston et al., 2021; MacKay, 1956; Matsuo et al., 2022)",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "7bfad6ac-559f-4ec8-a904-9ee32c110562",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C49",
+      "claim": "The world model on gravity in humans may be constructed through the mechanism of predictive coding in a generative process.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the finding from the RL framework implies that the world model on gravity in humans may also be constructed in the same way, possibly through the mechanism of the predictive coding in a generative process (Friston, 2018; Huang and Rao, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on computational modeling results, supported by citations (Friston, 2018; Huang and Rao, 2011)",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "33e6a304-2e52-4d9f-aad4-966e963fad51",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C50",
+      "claim": "The close link between human cognition and the physical world through interaction may shed light on the development of a new generation of AI with human-like intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the close link between human cognition and the physical world through interaction may shed light on the development of a new generation of AI with human-like intelligence that can work flexibly in open-ended environments (Marcus, 2020; Marcus, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative implication supported by citations (Marcus, 2020; Marcus, 2018)",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "3259a5b2-2e1c-43f1-af58-b283256ac07d",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C51",
+      "claim": "The stochastic world model on gravity provides an example of how a priori knowledge of the physical world is implemented in mind.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic world model on gravity provides an example of how a priori knowledge of the physical world is implemented in mind that helps humans operate flexibly in open-ended environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary claim based on the study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "a0190326-abe2-4868-af67-889bf7c0b140",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C52",
+      "claim": "The world model on gravity is not a faithful replica of the physical world, but rather a stochastic model that captures the essence of the vertically downward direction of gravity as the maximum likelihood of a Gaussian distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of psychophysics experiments showed that the world model on gravity is not a faithful replica of the physical world, but rather a stochastic model that captures the essence of the vertically downward direction of gravity as the maximum likelihood of a Gaussian distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "bf41e3b4-2160-40e5-bfe5-77fc57a0d793",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C53",
+      "claim": "The stochastic feature of the world model not only fits humans' stability inference behavior better than the deterministic model, but also provides new insight into the daily illusion that taller objects are perceived as more likely to collapse.",
+      "claim_type": "EXPLICIT",
+      "source": "The stochastic feature of the world model not only fits humans' stability inference behavior better than the deterministic model, but also provides new insight into the daily illusion that taller objects are perceived as more likely to collapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings comparing stochastic and deterministic models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "35cb6077-22d9-474f-a9be-c2c5c490fcfe",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C54",
+      "claim": "The stochastic feature well-balanced accuracy and speed to produce a unique ecological advantage for our survival in the physical world.",
+      "claim_type": "EXPLICIT",
+      "source": "and well-balanced accuracy and speed to produce a unique ecological advantage for our survival in the physical world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings on efficiency analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "8e211114-d336-4677-a756-b8ab66305ece",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C55",
+      "claim": "In the Noisy Newtonian Framework, intuitive physics is depicted as a combination of Newtonian physics and uncertainty generated by noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Noisy Newtonian Framework, intuitive physics is depicted as a combination of Newtonian physics and uncertainty generated by noise (Battaglia et al., 2013; Kubricht et al., 2017; Sanborn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes existing theoretical framework with citations (Battaglia et al., 2013; Kubricht et al., 2017; Sanborn et al., 2013)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "0bf610f1-a266-4c2c-8ec4-5a3e1bca9a41",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C56",
+      "claim": "The introduction of uncertainty helps to reconcile the misconception occurring under unfavorable conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The introduction of uncertainty helps to reconcile the misconception occurring under unfavorable conditions, such as unfamiliar events or static scenes (Kaiser et al., 1992; Kaiser et al., 1986; Kim and Spelke, 1999; McCloskey, 1983; Smith and Vul, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes theoretical explanation with citations (Kaiser et al., 1992; Kaiser et al., 1986; Kim and Spelke, 1999; McCloskey, 1983; Smith and Vul, 2013)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "a5b10553-9716-4ed7-9d92-e916314ce9b7",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C57",
+      "claim": "The noise in previous studies was thought to originate from sources such as perceptual uncertainty or external perturbations of forces, rather than from the intuitive physical engine itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The noise in previous studies was thought to originate from sources such as perceptual uncertainty or external perturbations of forces, rather than from the intuitive physical engine itself, which is thought to be a deterministic system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes assumptions in previous theoretical work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "ad0b4511-85b9-4ddd-9ab9-b211973f5dda",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C58",
+      "claim": "The inherent stochastic feature of gravity's direction did not need to rely on external noise to explain the illusory instability of taller objects.",
+      "claim_type": "EXPLICIT",
+      "source": "The inherent stochastic feature of gravity's direction did not need to rely on external noise to explain the illusory instability of taller objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the study's findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "baf5d76d-5d9a-4d90-b992-a1841920ba9d",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C59",
+      "claim": "The stochastic nature of the world model on gravity was confirmed by the cognitive impenetrability of the Gaussian distribution of gravity's direction when gravity's direction in the physical world was reversed.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it was also confirmed by the cognitive impenetrability of the Gaussian distribution of gravity's direction when gravity's direction in the physical world was reversed (Pylyshyn, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental findings, with citation (Pylyshyn, 1980)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "46210deb-c23d-4fb5-9396-0fe5eaa982ff",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C60",
+      "claim": "The RL framework was designed to simulate how an agent constructed the world model on gravity through agent-environment interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to summarizing statistical patterns from experience (Bear et al., 2021; Li et al., 2016; Zhang et al., 2016), this framework was designed to simulate how an agent constructed the world model on gravity through agent-environment interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the computational modeling approach with citations (Bear et al., 2021; Li et al., 2016; Zhang et al., 2016)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "f0696c9e-13fa-4382-b5be-b8e6dae3b9e5",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C61",
+      "claim": "A Gaussian distribution of gravity's direction with the vertically downward direction as the maximum likelihood emerged after several generations of error minimization in the RL framework.",
+      "claim_type": "EXPLICIT",
+      "source": "After several generations of error minimization, a Gaussian distribution of gravity's direction with the vertically downward direction as the maximum likelihood was similar to that observed in the human world model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational modeling results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "70cf1fcf-3e89-4d8a-b2f1-f4bf363f0049",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C62",
+      "claim": "When the physical worlds that the agent interacted with changed their appearance with stacks of different heights, the world models maintained their general patterns, but the stochastic representation of gravity's direction changed accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when the physical worlds that the agent interacted with changed their appearance with stacks of different heights, the world models maintained their general patterns, but the stochastic representation of gravity's direction changed accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by computational modeling results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "abe352ce-30d4-4215-9e36-a77d50f04c7c",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C63",
+      "claim": "This finding supports the robustness of the active inference, which efficiently encodes critical features under different physical worlds.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding not only supports the robustness of the active inference (Hegarty, 2004; Ullman et al., 2017), which efficiently encodes critical features under different physical worlds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on computational modeling results, with citations (Hegarty, 2004; Ullman et al., 2017)",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "8473e8a9-a516-4ffc-ab9f-01fb8cd08d40",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C64",
+      "claim": "The finding resonates with the idea that intelligence develops under the constraints of the physical world.",
+      "claim_type": "EXPLICIT",
+      "source": "but also resonates with the idea that intelligence develops under the constraints of the physical world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on computational modeling results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "406176ea-8fb7-465e-993b-cbae3f4a614e",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C65",
+      "claim": "The world model on gravity provides an example of the world model theory that emphasizes the predictive nature of generative neural networks implemented with a priori knowledge of the physical world.",
+      "claim_type": "EXPLICIT",
+      "source": "Our world model on gravity provides an example of the world model theory that emphasizes the predictive nature of generative neural networks implemented with a priori knowledge of the physical world (Friston et al., 2021; Land, 2014; Matsuo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical interpretation with citations (Friston et al., 2021; Land, 2014; Matsuo et al., 2022)",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "2bfbae8b-ee2d-4a78-b40b-65de29022ed0",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C66",
+      "claim": "Generative models equipped with the physics laws governing the physical world rely much less on experience than traditional discriminative neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to traditional discriminative neural networks that learn statistical patterns for stability from gigantic amounts of labeled stacks, generative models equipped with the physics laws governing the physical world rely much less on experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical comparison based on knowledge of neural network approaches",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "0912ab29-c1da-44f5-9d54-08a6d5011dce",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "claim_id": "C67",
+      "claim": "The stochastic feature of the model further enhances the efficiency by balancing accuracy and speed, which improves our chances of better survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the stochastic feature of the model further enhances the efficiency by balancing accuracy and speed, which improves our chances of better survival (Cosmides and Tooby, 1997) and adaptation to novel environments (e.g., astronauts in outer space; Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on efficiency analysis, with citations (Cosmides and Tooby, 1997; Wang et al., 2022)",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Human participants' sensitivity to gravity's direction follows a Gaussian distribution with \u03c3=19.9\u00b0, where confidence in judging collapse trajectories as normal decreases gradually as the simulated gravity deviates from vertical. This pattern is consistent across participants (\u03c3 ranging 11.1-37.1\u00b0) and unaffected by horizontal angle \u03c6 or the presence of a wall blocking external forces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 and C37-C38 provide converging experimental evidence from 10 participants showing that gravity's direction is encoded as a Gaussian distribution rather than a deterministic vertical direction. The statistical fitting (\u03c3=19.9), individual variability data, and control conditions (wall addition) all support this core finding. The experimental design appropriately manipulates gravity direction in simulation while measuring human judgments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "5373eaa4-7039-4e14-b105-4668c7db974f",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Gaussian representation of gravity's direction is cognitively impenetrable, as demonstrated by high correlation (r=0.91, p<0.01) between \u03c3 values when participants judged collapse trajectories in upright versus upside-down conditions (\u03c3=19.9 vs \u03c3=17.2, not significantly different).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 and C39-C40 demonstrate that the stochastic representation persists even when the visual context is inverted, supporting cognitive impenetrability. The high correlation between conditions and lack of significant difference in \u03c3 values provide strong evidence that this representation is encapsulated and not influenced by task context or visual experience.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "b565f36a-e2a2-4457-9f68-8903a25b7583",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Mental Gravity Simulator (MGS) with stochastic gravity representation (inference bias=0.04, p>0.05) better matches human stability judgments than the Natural Gravity Simulator (NGS) with deterministic gravity (inference bias=-0.31, p<0.01), despite similar correlation magnitudes (r=0.75 vs r=0.70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 demonstrate that the MGS eliminates the systematic bias present in the NGS model. The key evidence is the non-significant inference bias for MGS versus significant negative bias for NGS, indicating MGS better captures human judgment patterns. The comparison appropriately uses both correlation and bias metrics to evaluate model fit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "1a7b90a0-d278-4668-b258-d69ba570c872",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The stochastic world model explains the illusion that taller objects are perceived as more unstable, with inference bias increasing monotonically with stack height (all heights: inference bias <0, p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 and C30 show that the MGS reproduces the height-dependent instability illusion observed in humans. The monotonic increase in bias with height and consistent negative bias across all heights provide strong support. This offers a parsimonious explanation without requiring external perturbations, though the mechanism (center of gravity susceptibility) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "48ceca98-6987-4c15-89b9-636325cd0b3a",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A reinforcement learning framework demonstrates that stochastic representation of gravity's direction (\u03c3=21.6) emerges through agent-environment interactions without external noise. The width of the Gaussian distribution decreases monotonically as the number of blocks increases (2-15 blocks), showing environment-dependent adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23, C31, C60-C62 provide computational modeling evidence that stochastic gravity representation can emerge from experience-dependent learning. The RL framework appropriately simulates prediction-observation mismatches, and the resulting \u03c3=21.6 is close to human data (\u03c3=19.9). The systematic variation with block number demonstrates robustness and environmental sensitivity. However, this is a computational demonstration of plausibility rather than proof of the actual mechanism in humans.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "57d14aed-6c5e-4f49-9bb6-f85dff9ccabd",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The stochastic world model (MGS) provides superior efficiency (3.49 vs 1.32, t=9.12, p<0.001) compared to the deterministic model (NGS) by trading modest accuracy loss (80.1% vs 95.3%) for substantially faster response time (27.1% vs 75.2% of simulation time).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 and C32 demonstrate the ecological advantage of stochastic representation through computational analysis. The efficiency metric appropriately combines accuracy and speed, and the statistical comparisons are significant. However, the efficiency calculation method (accuracy/time) is somewhat arbitrary and could be formulated differently. The ecological interpretation is reasonable but speculative regarding actual survival advantage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "638a942a-a35d-4eb4-a216-ec1d9f35b380",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Human stability inference variance best matches the MGS model when running three simulations, suggesting humans perform a limited number of mental simulations for stability judgments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 provide model-behavior correspondence analysis showing that three simulations best match human variance patterns. This is a reasonable inference about human cognitive strategy, though it relies on the assumption that variance is the appropriate metric for matching and that the MGS accurately captures human simulation processes. The claim is supported but involves some inferential leaps.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior research establishes that humans possess intuitive physics capabilities including rapid stability judgments, early developmental expectations about gravity and support, and neural substrates in the parieto-insular vestibular cortex. The brain is proposed as a generative machine using world models for prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 and C33-C34 appropriately cite and summarize prior literature establishing the foundation for the current study. These are background claims supported by citations to previous work. The accuracy of these citations and characterizations cannot be fully verified without checking the original sources, but they represent standard knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "91556276-8688-4058-8e2c-99ef3e4d0930",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study employed appropriate experimental procedures with 10 participants for trajectory judgment (Experiment 1) and 11 participants for stability judgment (Experiment 2, one excluded), using 60 stacks (26 unstable, 34 stable) with ethical approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 describe methodological details that are straightforward and appropriate. Sample sizes are modest but reasonable for psychophysics experiments. The exclusion criterion (rs<0.30) is clearly stated. Ethical approval is documented. These are standard methodological practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "45aecb16-a3d8-4ba4-89a2-87b6581398c3",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "While a deterministic model with external perturbations is theoretically equivalent to the stochastic model, the cognitive impenetrability and self-consistency observed favor the stochastic model without requiring external perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 acknowledge theoretical equivalence but argue for parsimony based on the cognitive impenetrability findings (C13-C14). This is a reasonable inference, though the distinction between the models may be more about explanatory preference than empirical distinguishability. The argument for the stochastic model is supported but not definitive.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The findings suggest that the stochastic world model may emerge through predictive coding mechanisms, supports active inference theory, resonates with embodied intelligence concepts, and has implications for developing human-like AI and understanding ecological advantages for survival and adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C50 and C63-C67 are largely speculative interpretations and implications of the findings. While they are reasonable extensions of the results, they go beyond what the data directly demonstrate. These claims involve theoretical proposals (predictive coding, active inference) and future applications (AI development) that are not empirically tested in this study. The connections are plausible but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "d07ad1fd-426a-41eb-937e-f285f072fdc3",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Summary claims state that the world model on gravity is stochastic rather than deterministic, fits human behavior better, explains the height-instability illusion, balances accuracy and speed, and provides an example of how a priori knowledge is implemented in mind.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C51-C54 are summary statements of the main findings. These are supported by the collective evidence from the experimental and computational results (C8-C28). They appropriately synthesize the key contributions of the study without overstating the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e",
+      "content_id": "93371af3-a794-47f5-bedf-c111ec13ef9c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study positions itself relative to the Noisy Newtonian Framework, which attributes uncertainty to external sources (perception, forces) rather than the intuitive physics engine itself. The current findings suggest uncertainty is inherent in the representation of gravity's direction, confirmed by cognitive impenetrability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C55-C59 appropriately characterize prior theoretical frameworks and position the current work as offering an alternative explanation. The distinction between external noise and internal stochastic representation is conceptually clear, and the cognitive impenetrability evidence (C13-C14, C59) supports this distinction. This represents a valid theoretical contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "a60948ce-f95c-42f1-a129-a2ed88bb4257",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Participants' confidence in judging collapse trajectories as normal decreased gradually as a function of the angle \u03b8 from vertical, best fit by a Gaussian distribution with \u03c3=19.9\u00b0. This pattern was consistent across participants (\u03c3 ranging 11.1-37.1\u00b0) and unaffected by azimuthal angle \u03c6 or the addition of a wall to block wind, suggesting gravity's direction is encoded as a Gaussian distribution rather than a deterministic vertical vector.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, stating 'participants did not model gravity as single, fixed vector for gravity but instead as a distribution of possible vectors' with 'the width of this distribution was quite large (~20 degrees).' The experimental evidence is described as 'generally solid' and 'all experiments...being consistent with the proposed account.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "cbde0029-ffd9-431f-87b5-20bee18f1611",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The Gaussian representation of gravity's direction remained consistent across different visual contexts: participants showed high agreement between upright and upside-down conditions (r=0.91, p<0.01), with \u03c3 values not significantly different (19.9\u00b0 vs 17.2\u00b0). This cognitive impenetrability suggests the world model on gravity is encapsulated as a cognitive module.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the control experiments addressing cognitive impenetrability, noting 'the authors include several control experiments to test this possibility' of alternative explanations. The editor states 'the authors also added a number of control experiments that address some of the most pressing concerns,' indicating acceptance of this evidence for the stochastic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The Mental Gravity Simulator (MGS) with stochastic gravity representation better matched human stability judgments than the deterministic Natural Gravity Simulator (NGS). While both correlated with human judgments (NGS: r=0.70; MGS: r=0.75), the MGS showed no inference bias (0.04, p>0.05) compared to NGS's significant bias (-0.31, p<0.01). The MGS also replicated the human illusion that taller stacks are more prone to collapse, with inference bias increasing monotonically with height.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support this finding, stating the stochastic model 'fits humans' stability inference behavior better than the deterministic model' and noting it 'provides new insight into the daily illusion that taller objects are perceived as more likely to collapse.' The experimental evidence is described as 'solid' and consistent with the proposed account.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "bfb17b4e-7fc8-4d8b-8dc8-ee7e018832ba",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "A reinforcement learning framework demonstrated that a stochastic representation of gravity's direction emerges through agent-environment interactions. After training, the model converged to a Gaussian distribution (\u03c3=21.6\u00b0) similar to human participants. When trained on worlds with different stack heights, all models maintained Gaussian distributions but with \u03c3 decreasing monotonically as block numbers increased.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this computational finding, stating 'A reinforcement learning model with an initial uniform distribution for gravity's direction ultimately converged to a precision on the same order as the human participants, which lends support to the authors' conclusion and suggests that this distribution is learned through experience.' This is treated as strong supporting evidence for the origin of the stochastic representation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "c1d8b1f0-91ab-4a35-94a9-5d6d2d015566",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The stochastic MGS provided superior efficiency compared to the deterministic NGS by balancing accuracy and speed. While NGS achieved higher plateau accuracy (95.3% vs 80.1%, p<0.001), MGS reached decision-making plateau much faster (27.1% vs 75.2% of total time, p<0.001), resulting in significantly higher overall efficiency (3.49 vs 1.32, p<0.001).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly recognize this finding, noting 'further simulations suggest that representing gravity with such a wide distribution may balance speed and accuracy, providing a potentially normative explanation for the world model with gravity as a distribution.' They describe this as providing 'a normative explanation based on a resource-rational framework' for the stochastic representation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "4324e6eb-6bc7-4f7e-ab94-4cd4f8f66f06",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Human stability inference variance best matched the MGS after three simulations, suggesting humans run mental simulations a limited number of times rather than extensively sampling to infer stack stability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is implicitly accepted as part of the overall model validation. Reviewers state the 'experimental evidence is generally solid' and all simulations are 'consistent with the proposed account,' without raising concerns about this specific claim regarding simulation number.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "304358c4-72da-4bf9-9714-b7c6c979ab73",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors argue their stochastic model is favored over a theoretically equivalent deterministic model with external perturbations based on cognitive impenetrability and self-consistency observed in the experiments, which do not require resorting to external noise to explain the illusory instability of taller objects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge this is a key theoretical distinction but express uncertainty about fully ruling out alternatives. The anonymous reviewer states 'The possibility of inferred external perturbations, as opposed to a stochastic world model, is difficult to rule out' and notes 'it will likely take many, clever studies, to fully reconcile these two alternative accounts.' While control experiments were added, complete disambiguation remains challenging.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "db274f12-bb0a-4e50-896c-c261573ac54b",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The study's main conclusion is that the world model on gravity is not a faithful replica of physical laws but rather a stochastic model encoding gravity's direction as a Gaussian distribution. This stochastic feature explains the height-instability illusion, likely originates from experience-dependent learning, and provides ecological advantages by balancing accuracy and speed for efficient survival.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support the main conclusions, with the editor stating this is 'a valuable study' presenting findings that 'people do not faithfully replicate the physics of the real world but rather have a stochastic world model, specifically a stochastic representation of gravity.' The evidence is described as 'generally solid' with 'all experiments and model simulations being consistent with the proposed account.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "f0dda656-8392-41a5-9185-0d6fb049e011",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims establishing that humans can rapidly judge physical stability, that infants show early intuitive physics knowledge, that neural substrates exist for gravity-based inference, and that previous theories proposed noisy Newtonian frameworks where uncertainty arises from external sources rather than the world model itself.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are not directly discussed by reviewers but are implicitly accepted as established context. Reviewers focus their evaluation on the novel findings rather than questioning the foundational literature, indicating acceptance of this background framing.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "adddb5be-a225-4a3e-be7e-9eb8b5714ebe",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Methodological details about participant samples, experimental procedures, data exclusion criteria, and ethical approval for the psychophysics experiments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise concerns about the experimental methods or sample characteristics. The editor notes that 'the authors also added a number of control experiments that address some of the most pressing concerns,' suggesting methodological rigor was scrutinized and found acceptable.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "db817b55-bdbf-4f8f-9e12-043c2b19c771",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Theoretical interpretations and speculative implications suggesting the stochastic feature may emerge through predictive coding mechanisms, that this links human cognition to physical world constraints, and that these insights may inform development of human-like AI and provide ecological advantages for survival and adaptation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the theoretical framework, with the anonymous reviewer noting the authors 'provide a normative explanation based on a resource-rational framework for why people may have a stochastic world model instead of a deterministic world model.' These interpretations are treated as reasonable extensions of the empirical findings rather than being challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "78f2a440-c737-4f22-97df-bbbd0125df10",
+      "content_id": "3f198d5a-ca9b-44f7-bedc-90a4631f2b8d",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "The stochastic world model on gravity provides an example of how a priori knowledge of the physical world is implemented in mind to help humans operate flexibly in open-ended environments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary claim is implicitly supported by reviewers' overall positive assessment. The editor describes this as 'a valuable study' and reviewers note it presents 'surprising findings' that contribute to understanding of intuitive physics, indicating acceptance of its significance as an example of world model implementation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8e4cbc52-f765-4c6d-978c-55f992d78e3b",
+      "result_id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea"
+    },
+    {
+      "claim_id": "2cde5aee-9783-4021-8cd5-2239cbe3c7d9",
+      "result_id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea"
+    },
+    {
+      "claim_id": "a7ea97f4-c2e0-4f32-9f98-52204d6c0c07",
+      "result_id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea"
+    },
+    {
+      "claim_id": "d76e9ac3-879b-4d9d-a21f-efc1fc78f5b6",
+      "result_id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea"
+    },
+    {
+      "claim_id": "f405912e-0646-4803-b8a3-5bc4425f2d4c",
+      "result_id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea"
+    },
+    {
+      "claim_id": "0ff1b2e9-a42b-4694-a9c6-24ff9d4a9f01",
+      "result_id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea"
+    },
+    {
+      "claim_id": "c397a071-63e7-4ac7-83a6-96ff3cee1cc2",
+      "result_id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea"
+    },
+    {
+      "claim_id": "6b75cbd5-7fe5-4a60-a18b-72595a39572e",
+      "result_id": "5373eaa4-7039-4e14-b105-4668c7db974f"
+    },
+    {
+      "claim_id": "070cc1ac-971c-429b-b2e7-33eb32ab9875",
+      "result_id": "5373eaa4-7039-4e14-b105-4668c7db974f"
+    },
+    {
+      "claim_id": "3ed36d0e-37f6-4ffe-81a1-34f2d6be7547",
+      "result_id": "5373eaa4-7039-4e14-b105-4668c7db974f"
+    },
+    {
+      "claim_id": "4cc02ebc-9b7d-4bb8-9a56-3c00642df3e5",
+      "result_id": "5373eaa4-7039-4e14-b105-4668c7db974f"
+    },
+    {
+      "claim_id": "9dd0fefe-3713-4e75-b76d-a12a6c32cafb",
+      "result_id": "b565f36a-e2a2-4457-9f68-8903a25b7583"
+    },
+    {
+      "claim_id": "614d1ffb-0b62-449c-b2c9-3f3ecb7dc154",
+      "result_id": "b565f36a-e2a2-4457-9f68-8903a25b7583"
+    },
+    {
+      "claim_id": "434d06af-4524-47fd-bea0-d01a89c1896e",
+      "result_id": "b565f36a-e2a2-4457-9f68-8903a25b7583"
+    },
+    {
+      "claim_id": "beac8378-a38b-4817-8b35-acbf3f5fbc23",
+      "result_id": "b565f36a-e2a2-4457-9f68-8903a25b7583"
+    },
+    {
+      "claim_id": "d600b46b-6145-40fe-a127-2642ceaba8c1",
+      "result_id": "1a7b90a0-d278-4668-b258-d69ba570c872"
+    },
+    {
+      "claim_id": "59b49893-f5eb-43cb-9f95-614c8d05e5ee",
+      "result_id": "1a7b90a0-d278-4668-b258-d69ba570c872"
+    },
+    {
+      "claim_id": "47049626-30f1-4b6a-901f-d09d5f603ba3",
+      "result_id": "1a7b90a0-d278-4668-b258-d69ba570c872"
+    },
+    {
+      "claim_id": "225189ed-adbc-4af5-bb3e-17c9ba7a789c",
+      "result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a"
+    },
+    {
+      "claim_id": "1fd8a3ed-8af0-4048-9788-6ac0e59f5e48",
+      "result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a"
+    },
+    {
+      "claim_id": "cf15a456-d8ee-4394-b2f6-01725766abc2",
+      "result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a"
+    },
+    {
+      "claim_id": "5d8a139a-f501-4e26-af88-b687b4abd59b",
+      "result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a"
+    },
+    {
+      "claim_id": "46210deb-c23d-4fb5-9396-0fe5eaa982ff",
+      "result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a"
+    },
+    {
+      "claim_id": "f0696c9e-13fa-4382-b5be-b8e6dae3b9e5",
+      "result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a"
+    },
+    {
+      "claim_id": "70cf1fcf-3e89-4d8a-b2f1-f4bf363f0049",
+      "result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a"
+    },
+    {
+      "claim_id": "b0fd4b18-1812-4460-a2e0-4bded5067e67",
+      "result_id": "57d14aed-6c5e-4f49-9bb6-f85dff9ccabd"
+    },
+    {
+      "claim_id": "5cc186a2-3dc0-46c3-b833-50cc42c81ba9",
+      "result_id": "57d14aed-6c5e-4f49-9bb6-f85dff9ccabd"
+    },
+    {
+      "claim_id": "ed1e6dfc-ecb6-49a3-b4d3-47f15411c271",
+      "result_id": "57d14aed-6c5e-4f49-9bb6-f85dff9ccabd"
+    },
+    {
+      "claim_id": "7524de70-b051-4ce7-93a7-07a07ab4bfff",
+      "result_id": "57d14aed-6c5e-4f49-9bb6-f85dff9ccabd"
+    },
+    {
+      "claim_id": "735b26c6-eac1-4dde-8e48-40c3c15033ed",
+      "result_id": "638a942a-a35d-4eb4-a216-ec1d9f35b380"
+    },
+    {
+      "claim_id": "45168044-6184-495f-856a-0df5d7f425be",
+      "result_id": "638a942a-a35d-4eb4-a216-ec1d9f35b380"
+    },
+    {
+      "claim_id": "08e11ded-773b-459c-90e2-771c26677841",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "7f066fd6-8de1-4354-a211-44883c30e00e",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "b041a7fe-515b-4184-a56e-2f01e3995fc2",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "714a685d-db6a-402d-9ae1-66da760314c3",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "292fbcf1-c9c4-4721-8dcf-508631140d19",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "dbd9e5b0-5cd4-47b9-9088-d2dbbf3a70a2",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "bc3fc028-d309-483b-9924-0f96ef120440",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "59f5acfd-ef1a-4a44-bdcd-045bfeea1084",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "9a53173e-5c5b-4476-9812-679647f71eb8",
+      "result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc"
+    },
+    {
+      "claim_id": "00974cf8-2d4a-48c8-9adb-731c7d8cb794",
+      "result_id": "91556276-8688-4058-8e2c-99ef3e4d0930"
+    },
+    {
+      "claim_id": "3f7dfae9-8750-4c83-b3b1-9e6f967020ac",
+      "result_id": "91556276-8688-4058-8e2c-99ef3e4d0930"
+    },
+    {
+      "claim_id": "729a1adc-f377-46a4-afff-6a4d0224b37d",
+      "result_id": "91556276-8688-4058-8e2c-99ef3e4d0930"
+    },
+    {
+      "claim_id": "fed60df8-b097-44f8-8d93-1c9293f1c43e",
+      "result_id": "91556276-8688-4058-8e2c-99ef3e4d0930"
+    },
+    {
+      "claim_id": "d3ffb89c-6d94-429f-bae1-a7fc6e8de28c",
+      "result_id": "91556276-8688-4058-8e2c-99ef3e4d0930"
+    },
+    {
+      "claim_id": "ae077c57-126b-4682-aed3-7238a93fc7e2",
+      "result_id": "45aecb16-a3d8-4ba4-89a2-87b6581398c3"
+    },
+    {
+      "claim_id": "ddb0291f-79dc-414b-8c5b-e8c87bec6494",
+      "result_id": "45aecb16-a3d8-4ba4-89a2-87b6581398c3"
+    },
+    {
+      "claim_id": "bde3dd5c-da34-4ab8-a51e-65ba2a82f0de",
+      "result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8"
+    },
+    {
+      "claim_id": "7bfad6ac-559f-4ec8-a904-9ee32c110562",
+      "result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8"
+    },
+    {
+      "claim_id": "33e6a304-2e52-4d9f-aad4-966e963fad51",
+      "result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8"
+    },
+    {
+      "claim_id": "abe352ce-30d4-4215-9e36-a77d50f04c7c",
+      "result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8"
+    },
+    {
+      "claim_id": "8473e8a9-a516-4ffc-ab9f-01fb8cd08d40",
+      "result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8"
+    },
+    {
+      "claim_id": "406176ea-8fb7-465e-993b-cbae3f4a614e",
+      "result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8"
+    },
+    {
+      "claim_id": "2bfbae8b-ee2d-4a78-b40b-65de29022ed0",
+      "result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8"
+    },
+    {
+      "claim_id": "0912ab29-c1da-44f5-9d54-08a6d5011dce",
+      "result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8"
+    },
+    {
+      "claim_id": "3a695bec-a0cc-4e2b-98fa-8c970c334e78",
+      "result_id": "d07ad1fd-426a-41eb-937e-f285f072fdc3"
+    },
+    {
+      "claim_id": "3259a5b2-2e1c-43f1-af58-b283256ac07d",
+      "result_id": "d07ad1fd-426a-41eb-937e-f285f072fdc3"
+    },
+    {
+      "claim_id": "a0190326-abe2-4868-af67-889bf7c0b140",
+      "result_id": "d07ad1fd-426a-41eb-937e-f285f072fdc3"
+    },
+    {
+      "claim_id": "bf41e3b4-2160-40e5-bfe5-77fc57a0d793",
+      "result_id": "d07ad1fd-426a-41eb-937e-f285f072fdc3"
+    },
+    {
+      "claim_id": "35cb6077-22d9-474f-a9be-c2c5c490fcfe",
+      "result_id": "d07ad1fd-426a-41eb-937e-f285f072fdc3"
+    },
+    {
+      "claim_id": "41f31a3c-1721-478c-8107-7d3b79945664",
+      "result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e"
+    },
+    {
+      "claim_id": "6d91e440-128e-40fb-8aa9-8f4f5581242b",
+      "result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e"
+    },
+    {
+      "claim_id": "8e211114-d336-4677-a756-b8ab66305ece",
+      "result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e"
+    },
+    {
+      "claim_id": "0bf610f1-a266-4c2c-8ec4-5a3e1bca9a41",
+      "result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e"
+    },
+    {
+      "claim_id": "a5b10553-9716-4ed7-9d92-e916314ce9b7",
+      "result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e"
+    },
+    {
+      "claim_id": "ad0b4511-85b9-4ddd-9ab9-b211973f5dda",
+      "result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e"
+    },
+    {
+      "claim_id": "baf5d76d-5d9a-4d90-b992-a1841920ba9d",
+      "result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e"
+    },
+    {
+      "claim_id": "8e4cbc52-f765-4c6d-978c-55f992d78e3b",
+      "result_id": "a60948ce-f95c-42f1-a129-a2ed88bb4257"
+    },
+    {
+      "claim_id": "2cde5aee-9783-4021-8cd5-2239cbe3c7d9",
+      "result_id": "a60948ce-f95c-42f1-a129-a2ed88bb4257"
+    },
+    {
+      "claim_id": "a7ea97f4-c2e0-4f32-9f98-52204d6c0c07",
+      "result_id": "a60948ce-f95c-42f1-a129-a2ed88bb4257"
+    },
+    {
+      "claim_id": "d76e9ac3-879b-4d9d-a21f-efc1fc78f5b6",
+      "result_id": "a60948ce-f95c-42f1-a129-a2ed88bb4257"
+    },
+    {
+      "claim_id": "f405912e-0646-4803-b8a3-5bc4425f2d4c",
+      "result_id": "a60948ce-f95c-42f1-a129-a2ed88bb4257"
+    },
+    {
+      "claim_id": "0ff1b2e9-a42b-4694-a9c6-24ff9d4a9f01",
+      "result_id": "a60948ce-f95c-42f1-a129-a2ed88bb4257"
+    },
+    {
+      "claim_id": "c397a071-63e7-4ac7-83a6-96ff3cee1cc2",
+      "result_id": "a60948ce-f95c-42f1-a129-a2ed88bb4257"
+    },
+    {
+      "claim_id": "6b75cbd5-7fe5-4a60-a18b-72595a39572e",
+      "result_id": "cbde0029-ffd9-431f-87b5-20bee18f1611"
+    },
+    {
+      "claim_id": "070cc1ac-971c-429b-b2e7-33eb32ab9875",
+      "result_id": "cbde0029-ffd9-431f-87b5-20bee18f1611"
+    },
+    {
+      "claim_id": "3ed36d0e-37f6-4ffe-81a1-34f2d6be7547",
+      "result_id": "cbde0029-ffd9-431f-87b5-20bee18f1611"
+    },
+    {
+      "claim_id": "4cc02ebc-9b7d-4bb8-9a56-3c00642df3e5",
+      "result_id": "cbde0029-ffd9-431f-87b5-20bee18f1611"
+    },
+    {
+      "claim_id": "9dd0fefe-3713-4e75-b76d-a12a6c32cafb",
+      "result_id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87"
+    },
+    {
+      "claim_id": "614d1ffb-0b62-449c-b2c9-3f3ecb7dc154",
+      "result_id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87"
+    },
+    {
+      "claim_id": "434d06af-4524-47fd-bea0-d01a89c1896e",
+      "result_id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87"
+    },
+    {
+      "claim_id": "beac8378-a38b-4817-8b35-acbf3f5fbc23",
+      "result_id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87"
+    },
+    {
+      "claim_id": "d600b46b-6145-40fe-a127-2642ceaba8c1",
+      "result_id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87"
+    },
+    {
+      "claim_id": "59b49893-f5eb-43cb-9f95-614c8d05e5ee",
+      "result_id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87"
+    },
+    {
+      "claim_id": "225189ed-adbc-4af5-bb3e-17c9ba7a789c",
+      "result_id": "bfb17b4e-7fc8-4d8b-8dc8-ee7e018832ba"
+    },
+    {
+      "claim_id": "1fd8a3ed-8af0-4048-9788-6ac0e59f5e48",
+      "result_id": "bfb17b4e-7fc8-4d8b-8dc8-ee7e018832ba"
+    },
+    {
+      "claim_id": "cf15a456-d8ee-4394-b2f6-01725766abc2",
+      "result_id": "bfb17b4e-7fc8-4d8b-8dc8-ee7e018832ba"
+    },
+    {
+      "claim_id": "f0696c9e-13fa-4382-b5be-b8e6dae3b9e5",
+      "result_id": "bfb17b4e-7fc8-4d8b-8dc8-ee7e018832ba"
+    },
+    {
+      "claim_id": "70cf1fcf-3e89-4d8a-b2f1-f4bf363f0049",
+      "result_id": "bfb17b4e-7fc8-4d8b-8dc8-ee7e018832ba"
+    },
+    {
+      "claim_id": "b0fd4b18-1812-4460-a2e0-4bded5067e67",
+      "result_id": "c1d8b1f0-91ab-4a35-94a9-5d6d2d015566"
+    },
+    {
+      "claim_id": "5cc186a2-3dc0-46c3-b833-50cc42c81ba9",
+      "result_id": "c1d8b1f0-91ab-4a35-94a9-5d6d2d015566"
+    },
+    {
+      "claim_id": "ed1e6dfc-ecb6-49a3-b4d3-47f15411c271",
+      "result_id": "c1d8b1f0-91ab-4a35-94a9-5d6d2d015566"
+    },
+    {
+      "claim_id": "735b26c6-eac1-4dde-8e48-40c3c15033ed",
+      "result_id": "4324e6eb-6bc7-4f7e-ab94-4cd4f8f66f06"
+    },
+    {
+      "claim_id": "45168044-6184-495f-856a-0df5d7f425be",
+      "result_id": "4324e6eb-6bc7-4f7e-ab94-4cd4f8f66f06"
+    },
+    {
+      "claim_id": "ae077c57-126b-4682-aed3-7238a93fc7e2",
+      "result_id": "304358c4-72da-4bf9-9714-b7c6c979ab73"
+    },
+    {
+      "claim_id": "ddb0291f-79dc-414b-8c5b-e8c87bec6494",
+      "result_id": "304358c4-72da-4bf9-9714-b7c6c979ab73"
+    },
+    {
+      "claim_id": "ad0b4511-85b9-4ddd-9ab9-b211973f5dda",
+      "result_id": "304358c4-72da-4bf9-9714-b7c6c979ab73"
+    },
+    {
+      "claim_id": "baf5d76d-5d9a-4d90-b992-a1841920ba9d",
+      "result_id": "304358c4-72da-4bf9-9714-b7c6c979ab73"
+    },
+    {
+      "claim_id": "3a695bec-a0cc-4e2b-98fa-8c970c334e78",
+      "result_id": "db274f12-bb0a-4e50-896c-c261573ac54b"
+    },
+    {
+      "claim_id": "47049626-30f1-4b6a-901f-d09d5f603ba3",
+      "result_id": "db274f12-bb0a-4e50-896c-c261573ac54b"
+    },
+    {
+      "claim_id": "5d8a139a-f501-4e26-af88-b687b4abd59b",
+      "result_id": "db274f12-bb0a-4e50-896c-c261573ac54b"
+    },
+    {
+      "claim_id": "7524de70-b051-4ce7-93a7-07a07ab4bfff",
+      "result_id": "db274f12-bb0a-4e50-896c-c261573ac54b"
+    },
+    {
+      "claim_id": "a0190326-abe2-4868-af67-889bf7c0b140",
+      "result_id": "db274f12-bb0a-4e50-896c-c261573ac54b"
+    },
+    {
+      "claim_id": "bf41e3b4-2160-40e5-bfe5-77fc57a0d793",
+      "result_id": "db274f12-bb0a-4e50-896c-c261573ac54b"
+    },
+    {
+      "claim_id": "35cb6077-22d9-474f-a9be-c2c5c490fcfe",
+      "result_id": "db274f12-bb0a-4e50-896c-c261573ac54b"
+    },
+    {
+      "claim_id": "08e11ded-773b-459c-90e2-771c26677841",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "7f066fd6-8de1-4354-a211-44883c30e00e",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "b041a7fe-515b-4184-a56e-2f01e3995fc2",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "714a685d-db6a-402d-9ae1-66da760314c3",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "292fbcf1-c9c4-4721-8dcf-508631140d19",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "dbd9e5b0-5cd4-47b9-9088-d2dbbf3a70a2",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "bc3fc028-d309-483b-9924-0f96ef120440",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "59f5acfd-ef1a-4a44-bdcd-045bfeea1084",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "9a53173e-5c5b-4476-9812-679647f71eb8",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "41f31a3c-1721-478c-8107-7d3b79945664",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "6d91e440-128e-40fb-8aa9-8f4f5581242b",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "8e211114-d336-4677-a756-b8ab66305ece",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "0bf610f1-a266-4c2c-8ec4-5a3e1bca9a41",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "a5b10553-9716-4ed7-9d92-e916314ce9b7",
+      "result_id": "f0dda656-8392-41a5-9185-0d6fb049e011"
+    },
+    {
+      "claim_id": "00974cf8-2d4a-48c8-9adb-731c7d8cb794",
+      "result_id": "adddb5be-a225-4a3e-be7e-9eb8b5714ebe"
+    },
+    {
+      "claim_id": "3f7dfae9-8750-4c83-b3b1-9e6f967020ac",
+      "result_id": "adddb5be-a225-4a3e-be7e-9eb8b5714ebe"
+    },
+    {
+      "claim_id": "729a1adc-f377-46a4-afff-6a4d0224b37d",
+      "result_id": "adddb5be-a225-4a3e-be7e-9eb8b5714ebe"
+    },
+    {
+      "claim_id": "fed60df8-b097-44f8-8d93-1c9293f1c43e",
+      "result_id": "adddb5be-a225-4a3e-be7e-9eb8b5714ebe"
+    },
+    {
+      "claim_id": "d3ffb89c-6d94-429f-bae1-a7fc6e8de28c",
+      "result_id": "adddb5be-a225-4a3e-be7e-9eb8b5714ebe"
+    },
+    {
+      "claim_id": "bde3dd5c-da34-4ab8-a51e-65ba2a82f0de",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "7bfad6ac-559f-4ec8-a904-9ee32c110562",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "33e6a304-2e52-4d9f-aad4-966e963fad51",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "46210deb-c23d-4fb5-9396-0fe5eaa982ff",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "abe352ce-30d4-4215-9e36-a77d50f04c7c",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "8473e8a9-a516-4ffc-ab9f-01fb8cd08d40",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "406176ea-8fb7-465e-993b-cbae3f4a614e",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "2bfbae8b-ee2d-4a78-b40b-65de29022ed0",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "0912ab29-c1da-44f5-9d54-08a6d5011dce",
+      "result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771"
+    },
+    {
+      "claim_id": "3259a5b2-2e1c-43f1-af58-b283256ac07d",
+      "result_id": "78f2a440-c737-4f22-97df-bbbd0125df10"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "dc7b2f6b-f8aa-4a74-a277-067aba2a9ec9",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "640ea3d9-6a7a-4ffe-8cfb-85f0f78bc9ea",
+      "peer_result_id": "a60948ce-f95c-42f1-a129-a2ed88bb4257",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C8-C12, C37-C38. Both evaluations find the evidence for stochastic gravity representation (Gaussian distribution with \u03c3=19.9\u00b0) to be well-supported. Reviewers explicitly affirm the finding that participants model gravity as a distribution rather than a fixed vector, describing the experimental evidence as 'generally solid.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "f79f2589-de73-49eb-8863-3a3dd640ed18",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "5373eaa4-7039-4e14-b105-4668c7db974f",
+      "peer_result_id": "cbde0029-ffd9-431f-87b5-20bee18f1611",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C13-C14, C39-C40. Both evaluations support the cognitive impenetrability findings. OpenEval emphasizes the high correlation and lack of significant difference in \u03c3 values, while peer reviewers acknowledge the control experiments address alternative explanations, with the editor noting these experiments 'address some of the most pressing concerns.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "afb42604-9353-4b2a-823b-a78f005fc1de",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "b565f36a-e2a2-4457-9f68-8903a25b7583",
+      "peer_result_id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C15-C18 regarding MGS superiority over NGS. OpenEval focuses on the elimination of systematic bias, while peer review R3 also includes C19-C20 and emphasizes the model's ability to explain the height-dependent instability illusion. Both find the evidence solid and consistent.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "20e89681-09ec-41ce-aa57-4a0e65cad910",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "1a7b90a0-d278-4668-b258-d69ba570c872",
+      "peer_result_id": "aedc6fce-7e0d-4ccf-9ecf-ca228f7a2e87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C19-C20. OpenEval R4 focuses specifically on the height-dependent instability illusion and its parsimonious explanation through MGS. Peer R3 groups this with the broader model comparison (C15-C18), treating it as part of the overall evidence that the stochastic model fits human behavior better.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "9c110fde-6667-4a0c-ba68-700001e3b1ab",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a",
+      "peer_result_id": "bfb17b4e-7fc8-4d8b-8dc8-ee7e018832ba",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C21-C23, C61-C62 regarding reinforcement learning origins. OpenEval notes the close match between model \u03c3=21.6 and human \u03c3=19.9 but emphasizes this is computational plausibility rather than proof. Peer reviewers affirm this 'lends support' and 'suggests that this distribution is learned through experience,' treating it as strong supporting evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "add86ffb-a48c-47e0-b95f-0a989e82e725",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "57d14aed-6c5e-4f49-9bb6-f85dff9ccabd",
+      "peer_result_id": "c1d8b1f0-91ab-4a35-94a9-5d6d2d015566",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C24-C26 regarding ecological advantage. OpenEval notes the efficiency metric is somewhat arbitrary but the statistical comparisons are significant. Peer reviewers describe this as providing 'a normative explanation based on a resource-rational framework' that balances speed and accuracy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "e82ffd00-82c4-430a-b11d-cc562fd650c8",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "638a942a-a35d-4eb4-a216-ec1d9f35b380",
+      "peer_result_id": "4324e6eb-6bc7-4f7e-ab94-4cd4f8f66f06",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C27-C28. Both evaluations support the finding that three simulations best match human variance patterns. OpenEval notes this involves inferential leaps about cognitive strategy. Peer reviewers implicitly accept this as part of the overall model validation without raising specific concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "8e5a85ea-2234-40ae-b679-fc3c11aca9ed",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "c40add06-0ac1-4f6c-ab75-9a26184dc7dc",
+      "peer_result_id": "f0dda656-8392-41a5-9185-0d6fb049e011",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on background claims C1-C7, C33-C34. OpenEval notes these appropriately cite prior literature but cannot fully verify without checking sources. Peer reviewers implicitly accept this background framing by not questioning it, focusing instead on novel findings. Peer R9 also includes C35-C36, C55-C57 which OpenEval addresses separately in R13.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "3a668978-a63b-4904-836f-ffec9d383f5e",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "91556276-8688-4058-8e2c-99ef3e4d0930",
+      "peer_result_id": "adddb5be-a225-4a3e-be7e-9eb8b5714ebe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on methodological claims C41-C45. Both evaluations find the methods, sample sizes, exclusion criteria, and ethical approval appropriate and standard. OpenEval describes these as 'straightforward and appropriate,' while peer reviewers do not raise concerns and note methodological rigor was scrutinized.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "963c5a50-6240-4844-a5f9-548de11f53dc",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "45aecb16-a3d8-4ba4-89a2-87b6581398c3",
+      "peer_result_id": "304358c4-72da-4bf9-9714-b7c6c979ab73",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on claims C46-C47 regarding theoretical distinguishability. OpenEval rates as SUPPORTED, arguing the cognitive impenetrability findings support parsimony for the stochastic model, though noting the distinction may be about explanatory preference. Peer reviewers rate as UNCERTAIN, stating 'The possibility of inferred external perturbations...is difficult to rule out' and 'it will likely take many, clever studies, to fully reconcile these two alternative accounts.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "2611df76-548a-46f2-9c7d-04c2659d8d65",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "aa4cf7d3-99d1-4f3c-803c-27ff025f0ec8",
+      "peer_result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on evaluation type for claims C48-C50, C63-C67. OpenEval rates as UNCERTAIN, noting these are 'largely speculative interpretations' involving theoretical proposals (predictive coding, active inference) and future applications not empirically tested. Peer reviewers rate as SUPPORTED, accepting the theoretical framework as 'reasonable extensions of the empirical findings' and noting the normative explanation based on resource-rational framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "8c11d86f-d2fb-45bb-b26e-c5f47255bf54",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "d07ad1fd-426a-41eb-937e-f285f072fdc3",
+      "peer_result_id": "db274f12-bb0a-4e50-896c-c261573ac54b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on main conclusion claims C29, C52-C54. OpenEval notes these appropriately synthesize key contributions without overstating conclusions. Peer reviewers explicitly support the main conclusions, describing this as 'a valuable study' with 'generally solid' evidence. Peer R8 also includes C30-C32 and C53 which OpenEval addresses in other results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "07aed1ea-5596-4c99-b8b7-8ec88a8d9cc8",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "d07ad1fd-426a-41eb-937e-f285f072fdc3",
+      "peer_result_id": "78f2a440-c737-4f22-97df-bbbd0125df10",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C51 regarding significance as world model example. OpenEval groups this with other summary statements (C29, C52-C54) as appropriately synthesizing findings. Peer reviewers implicitly support this through overall positive assessment, describing it as 'a valuable study' presenting 'surprising findings.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "40fe7916-a0d6-4098-8a20-82e892f2920f",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e",
+      "peer_result_id": "f0dda656-8392-41a5-9185-0d6fb049e011",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on theoretical framing claims C35-C36, C55-C57. OpenEval finds the distinction between external noise and internal stochastic representation conceptually clear and supported by cognitive impenetrability evidence. Peer reviewers implicitly accept this background framing as established context. Peer R9 also includes background claims C1-C7, C33-C34 which OpenEval addresses in R8.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "b5b93554-b46e-4d14-b5fb-4565877456f3",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "e7aedeeb-0e1a-4aea-9078-878b33c0ef3e",
+      "peer_result_id": "304358c4-72da-4bf9-9714-b7c6c979ab73",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claims C58-C59 regarding theoretical distinction. OpenEval R13 treats these as part of the theoretical framing that is SUPPORTED by cognitive impenetrability evidence. Peer R7 addresses the broader theoretical distinguishability (C46-C47, C58-C59) and rates as UNCERTAIN, noting difficulty in fully ruling out alternative accounts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "f3f1d863-42e7-4cec-b87c-f0bc9e608ad7",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "1a7b90a0-d278-4668-b258-d69ba570c872",
+      "peer_result_id": "db274f12-bb0a-4e50-896c-c261573ac54b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on claim C30. OpenEval R4 focuses on the height-dependent instability illusion as evidence for MGS. Peer R8 includes C30 as part of the broader main conclusions, treating it as one component of the overall supported findings about stochastic world models.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "2e70bdb3-635a-4b17-b7e7-cb98cca7542d",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "57d14aed-6c5e-4f49-9bb6-f85dff9ccabd",
+      "peer_result_id": "db274f12-bb0a-4e50-896c-c261573ac54b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on claim C32. OpenEval R6 addresses the ecological advantage and efficiency analysis. Peer R8 includes C32 as part of the main conclusions summary, treating it as one aspect of the overall supported account.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "596777dd-61c4-458f-8c2a-4ec5565cfb1e",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a",
+      "peer_result_id": "db274f12-bb0a-4e50-896c-c261573ac54b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on claim C31. OpenEval R5 focuses on the computational modeling of learning origins. Peer R8 includes C31 as part of the main conclusions, treating it as one component of the overall evidence for stochastic representation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    },
+    {
+      "id": "dee7543a-3410-49b0-81fb-a5f51f78b84d",
+      "submission_id": "85fed1ac-82d2-4306-af84-eccc9d4118e6",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "48ceca98-6987-4c15-89b9-636325cd0b3a",
+      "peer_result_id": "db817b55-bdbf-4f8f-9e12-043c2b19c771",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on claim C60. OpenEval R5 includes C60 as part of the computational modeling evidence (rated SUPPORTED). Peer R11 includes C60 as part of theoretical interpretations and implications (rated SUPPORTED), treating it as a reasonable extension of empirical findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:48:12.906564Z"
+    }
+  ]
+}

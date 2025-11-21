@@ -1,0 +1,639 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C62",
+      "C207"
+    ],
+    "result": "The study identifies a novel open state (O1) in KV10.1 mutants with disrupted intracellular ring interactions that differs from the wild-type open state (O2) and can explain previously unexplained mutant behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C62, and C207 collectively establish the central finding that mutants with altered PASCap-CNBHD interactions reveal a distinct open state. This is supported by comprehensive electrophysiological data (Figures 1-2), single-channel recordings (Figure 5), and mathematical modeling (Figure 9) that consistently demonstrate two kinetically distinct open states with different conductance properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "\u0394PASCap and E600R mutants exhibit hyperpolarized activation thresholds and biphasic conductance-voltage relationships, contrasting with wild-type channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C86-C89 describe the shifted activation threshold and biphasic GV curves directly observed in Figure 1B. The data show consistent, reproducible biphasic behavior across multiple mutants with quantified voltage shifts (\u221280 mV vs. \u221240 mV for WT), providing strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Global fitting analysis reveals that the first component of the biphasic GV is conserved across all N-terminal deletion mutants, while the second component shifts with increasing deletion size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 describe the global fitting results shown in Figure 2A and Supplementary file 1. The mathematical analysis using Equation 3b successfully describes all mutant GV curves with shared parameters for the first component, providing quantitative support for two distinct gating processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The biphasic gating behavior reflects two sequential steps: voltage sensor movement leading to a pre-open state (O1, conducting in mutants but not WT), followed by ring reconfiguration leading to the conventional open state (O2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 present the mechanistic interpretation of the biphasic behavior. This is well-supported by the global fit analysis (Figure 2), the split channel experiments (C103-C105), and Mg2+ experiments (C108-C111) that demonstrate voltage sensor involvement in both components while the ring transition is unaffected by extracellular divalents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C236"
+    ],
+    "result": "Single-channel recordings of \u0394PASCap reveal two kinetically distinct classes of openings: long-lasting openings (hundreds of milliseconds) at weak depolarizations and brief openings at strong depolarizations, with transitions between them requiring closed intermediate states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C130 and C236 describe single-channel data shown in Figure 5. The recordings provide direct evidence for two open states with voltage-dependent kinetics, and the observation that transitions between them require closed intermediates supports the model structure. Control experiments with astemizole (C125) confirm channel identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C217"
+    ],
+    "result": "The mutant-specific open state O1 lacks the rapid flicker block characteristic of O2, resulting in larger macroscopic currents due to higher open probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C217 explain the mechanism underlying larger currents in O1. This is supported by single-channel recordings showing distinct kinetic behaviors (Figure 5) and modeling results (Figure 9) that require a flicker block for O2 but not O1 to reproduce experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Alternating brief depolarizing and hyperpolarizing pulses cause current accumulation in mutants that exceeds sustained depolarization, consistent with preferential accumulation in the slowly-deactivating O1 state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C121 describe the alternating pulse experiments shown in Figure 4. The observation that intermittent stimulation produces larger currents than sustained depolarization in mutants but not WT provides strong functional evidence for a slowly-deactivating open state (O1) that accumulates during the protocol.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C142",
+      "C220"
+    ],
+    "result": "Hyperpolarizing prepulses potentiate the first component of the biphasic response in mutants but not WT, indicating that O1 is preferentially accessed from deep closed states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C135-C142 describe prepulse experiments shown in Figures 6-7. The data demonstrate that \u2212160 mV prepulses increase current amplitude by 3-4 fold in mutants with no effect in WT, and specifically potentiate the first GV component. This provides strong evidence that O1 is accessed from hyperpolarized closed states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The L322H mutation, which restricts access to deep closed states, dramatically attenuates the first component of the biphasic GV in both \u0394PASCap and E600R backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 describe experiments shown in Figure 7C-D. The L322H mutation, known from prior work (C143) to limit deep closed states, eliminates the biphasic behavior and rectification in mutant backgrounds, providing strong genetic evidence linking deep closed states to O1 accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C151",
+      "C154",
+      "C155",
+      "C156",
+      "C177",
+      "C224"
+    ],
+    "result": "Elevated intracellular Ca2+ paradoxically increases current amplitude in mutants by promoting access to O1, converting the biphasic IV relationship to a linear one, with effects reversing as Ca2+ levels decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C151-C177 describe Ca2+ experiments shown in Figure 8. The data demonstrate that Ca2+ elevation causes transient linearization of the IV curve and current potentiation in mutants, with time courses matching Ca2+ dynamics (Figure 8\u2014supplement 1). This explains the previously paradoxical Ca2+ effects in these mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C226"
+    ],
+    "result": "Ca2+-CaM restores biphasic behavior in L322H mutants that normally show reduced access to deep closed states, supporting the hypothesis that Ca2+-CaM drives channels into deep closed states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 and C226 describe experiments shown in Figure 8A-B (upper right panels). The observation that Ca2+ induces biphasic behavior in L322H mutants that lack it at baseline provides strong mechanistic evidence that Ca2+-CaM promotes deep closed state occupancy, thereby facilitating O1 access.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Mutation of the C-terminal CaM binding site (BDC2) eliminates or attenuates the first component of the biphasic GV, with stronger effects in \u0394PASCap than E600R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C169 describe experiments shown in Figure 8C-D. The differential effects of BDC2 mutations in the two mutant backgrounds provide evidence for CaM's role in stabilizing O1, though the incomplete effect in E600R suggests mutant-specific differences in CaM dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C182",
+      "C183",
+      "C190",
+      "C191",
+      "C194",
+      "C195",
+      "C196",
+      "C199",
+      "C237"
+    ],
+    "result": "A two-layer Markov model with two open states (O1 and O2), three gating steps (two VSD movements and ring rotation), and a flicker block for O2 successfully reproduces all key experimental observations including biphasic GV curves, complex tail kinetics, prepulse effects, and alternating pulse responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C182-C237 describe the mathematical model shown in Figure 9 and supplements. The model quantitatively reproduces biphasic activation, triphasic tail currents, prepulse-dependent potentiation, alternating pulse accumulation, and Ca2+ effects. While the authors acknowledge limitations (C180, C247), the model successfully captures all major experimental features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The split channel \u03942-10.L341Split shows reduced first component compared to \u03942-10, indicating that coupling of voltage sensor motion to O1 entry does not require a continuous S4-S5 linker but suggests a downstream mechanism beyond position 342.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe the split channel experiment shown in Figure 2C-D. The data demonstrate that severing the S4-S5 linker reduces but does not eliminate O1 access, providing important mechanistic insight into voltage sensor coupling. However, the interpretation of the downstream mechanism (C105) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C216"
+    ],
+    "result": "Extracellular Mg2+ slows activation and shifts voltage dependence for both gating components but does not affect the transition between them, consistent with Mg2+ affecting voltage sensor movement while the ring transition occurs in the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 and C216 describe Mg2+ experiments shown in Figure 3. The data show that Mg2+ affects both GV components equally (~25 mV shift) but not the transition voltage between them, supporting the model that both components involve voltage sensor movement while the inter-component transition reflects cytoplasmic ring reconfiguration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Mutant channels show dramatically altered activation and deactivation kinetics compared to WT, with voltage-dependent transitions between slow monotonic deactivation (weak depolarizations) and fast biphasic deactivation (strong depolarizations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C85 describe kinetic data shown in Figures 1C-F. The detailed characterization of voltage-dependent kinetic changes provides strong evidence for state-dependent gating, with quantitative measurements showing mutants activate much slower at weak depolarizations but reach WT speeds at strong depolarizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C208",
+      "C209"
+    ],
+    "result": "The authors hypothesize that O1 corresponds to the 'non-conducting state 2' identified in KV10.2 by cryo-EM, where an intact intracellular ring prevents ion flow in WT but ring disruption in mutants allows permeation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C208-C209 present a structural hypothesis linking O1 to a specific cryo-EM structure. While this is a reasonable hypothesis based on structural similarity between KV10.1 and KV10.2 (C47), it remains speculative without direct structural evidence. The hypothesis is plausible but requires validation through structural studies of the mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C210",
+      "C211"
+    ],
+    "result": "The biphasic behavior is unlikely to result from two independent channel populations because mutant behavior is highly reproducible despite variable basal Ca2+ levels in oocytes, and only a small fraction (~4%) of channels are CaM-bound at basal Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C176 and C210-C211 present arguments against the two-population hypothesis. The consistency of mutant behavior across oocytes (C170), the inability of two populations to explain voltage-dependent transitions (C172), astemizole block of single-channel activity (C211), and pull-down data showing low basal CaM binding (C173-C176) collectively provide strong evidence against this alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C177",
+      "C225",
+      "C227"
+    ],
+    "result": "The study explains the mechanism of gating inhibition by Ca2+-Calmodulin: Ca2+-CaM stabilizes deep closed states, which inhibits WT channels (lacking permeable O1) but paradoxically activates mutants by promoting access to the high-conductance O1 state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C177, C225, and C227 present the mechanistic explanation for Ca2+-CaM effects. This is well-supported by the Ca2+ experiments (Figure 8), L322H rescue experiments (C226), and the logical consistency of the mechanism with all observations. The explanation resolves the previously paradoxical Ca2+ effects in mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C245",
+      "C246",
+      "C247",
+      "C253"
+    ],
+    "result": "The presented model structure is among the simplest that can reproduce the data, with fundamental features (three gating steps, flicker block, O1/O2 separation) being necessary, though finer structural details remain uncertain and the model never fits all experiments perfectly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 and C245-C253 provide an honest assessment of model limitations. The authors acknowledge that while the fundamental structure is well-constrained by data (C245-C246), finer details are uncertain (C247), automated global fitting was difficult (C181), and perfect fits were not achieved (C180). This transparent discussion of limitations is appropriate and does not undermine the model's explanatory power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C188",
+      "C189"
+    ],
+    "result": "Ca2+ effects in the model are implemented by shifting the voltage dependence of two transitions (\u03b3\u2194\u03b4 and \u03ba), which increases occupancy of the lower layer states and thereby access to O1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C198 and C188-C189 describe how Ca2+ effects are modeled (Figure 9D-E). The approach of shifting activation energies to represent Ca2+-CaM binding effects is mechanistically reasonable and successfully reproduces the experimental observations of linearized IV curves at high Ca2+.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C200",
+      "C201"
+    ],
+    "result": "The WT model is derived from the mutant model by removing O1 access and shifting ring rotation parameters in the hyperpolarizing direction to reflect more stable intracellular domain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C201 describe the WT model adaptation. This approach is logical and parsimonious, requiring minimal parameter changes to account for the structural differences between WT and mutants. The model successfully reproduces WT prepulse-dependent kinetics (C201).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "E600R-specific features (transient current peak, larger tail currents) can be reproduced by reducing the O2\u2192C2 rate constant and increasing the C2/O2 occupancy ratio, and the model can mimic KV11.1 with further parameter adjustments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C205 describe E600R-specific modeling shown in Figure 9\u2014supplement 5. The ability to reproduce E600R features and even mimic KV11.1 behavior with parameter adjustments demonstrates the model's flexibility and suggests mechanistic similarities across KCNH family members.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C228",
+      "C229"
+    ],
+    "result": "The initial hypothesis that CaM participates constitutively in gating is unlikely correct based on low basal CaM binding; instead, effects of CaM binding site mutations may relate more to their protein location than CaM binding ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C228-C229 represent a revision of the authors' initial hypothesis based on pull-down data (Figure 8\u2014supplement 4). This honest reassessment is scientifically appropriate, though the alternative explanation (C229) remains speculative and would benefit from additional structural or functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background on KCNH channel structure, function, and gating mechanisms, including differences from Shaker-type channels and the role of intracellular domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 provide established background knowledge about KCNH channels, supported by extensive citations. These claims establish the scientific context and rationale for the study, describing known structural features, gating differences from other K+ channel families, and the importance of intracellular domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background on the intracellular ring structure, its role in gating, CaM binding sites and effects, and current gaps in understanding of voltage sensor-ring coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C57 provide additional background on intracellular domain structure and function, CaM binding and effects, and identify gaps in current understanding. These are well-supported by citations and establish the specific questions addressed by the study, particularly the mechanism of voltage sensor-ring coupling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Background on the Cole-Moore shift in KV10.1, its relationship to deep closed states, and its compromise by N-terminal deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C134 provide background on the Cole-Moore shift, a well-established feature of KV10.1 gating. This background is important for interpreting the prepulse experiments and is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "No cumulative inactivation was detected in any mutants after repeated depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 reports a negative result that is important for interpretation. The absence of cumulative inactivation (demonstrated in Figure 4) supports the interpretation that current changes reflect state transitions rather than inactivation processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Changes in tail current amplitude likely reflect true changes in overall conductance rather than artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 provides an interpretation of tail current data based on correlation with conductance measurements. This is a reasonable inference supported by the consistency between tail amplitude changes and GV measurements (Figure 1B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Similar biphasic behavior has been mentioned for other mutations affecting intracellular domains, but the reasons have not been previously investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 place the current findings in context of prior observations. The citations support that biphasic behavior has been noted before, and C92 correctly identifies that mechanistic investigation was lacking, establishing the novelty of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Background on the effects of extracellular divalent cations on KV10.1 activation kinetics and their correlation with hydration enthalpy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 provide background on divalent cation effects, well-supported by citations. This background is essential for interpreting the Mg2+ experiments and their implications for voltage sensor movement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Single-channel activity was never detected in uninjected oocytes and was silenced by astemizole, confirming it results from \u0394PASCap expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 describe essential control experiments for single-channel recordings. The negative control (uninjected oocytes) and pharmacological validation (astemizole block, Figure 5\u2014supplement 1) provide strong evidence that observed activity is channel-specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Background on Ca2+-CaM effects: inhibition of WT channels is well-established, while paradoxical potentiation in mutants has been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 provide background on Ca2+-CaM effects, establishing the paradox that the study aims to explain. The claims are well-supported by citations and set up the rationale for the Ca2+ experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C218",
+      "C219"
+    ],
+    "result": "The presence of a second open state with larger openings when ring integrity is compromised could explain larger currents in heteromeric KV11.1 channels and may have physiological relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C218-C219 speculate about physiological relevance to heteromeric KV11.1 channels. While this is an interesting hypothesis supported by citation of relevant work on HERG1a/1b channels, it remains speculative without direct experimental evidence in the heteromeric context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C254",
+      "C255",
+      "C256",
+      "C257",
+      "C258",
+      "C259",
+      "C260"
+    ],
+    "result": "Summary and implications: KV10.1 gating involves sequential voltage sensor movement (permissive) and ring rotation (effective gate opening), with implications for modulation and physiological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C230-C260 provide summary statements and discuss implications. These are well-supported by the cumulative evidence from the study and appropriately discuss the significance for understanding KCNH channel regulation and function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C235",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244"
+    ],
+    "result": "Summary of the study's approach and model structure: two open states, three gating steps (two VSD, one ring), with O1 accessible after first VSD displacement and O2 requiring complete VSD displacement and ring reconfiguration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C235-C244 summarize the study's main findings and model structure. These summary statements accurately reflect the experimental evidence and modeling results presented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252"
+    ],
+    "result": "Discussion of model complexity: sigmoidal voltage dependences point to more complicated underlying structure, and complex voltage dependence of \u03ba signals unresolved structural details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C248-C252 provide thoughtful discussion of model limitations and the relationship between model complexity and underlying biology. This honest assessment of what the model does and doesn't explain is scientifically appropriate.",
+    "result_type": "MINOR"
+  }
+]

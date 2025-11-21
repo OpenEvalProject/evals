@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "ExoIII possesses highly active ssDNase activity, cleaving ssDNA at the 5\u2032-bond of phosphodiester from 3\u2032 to 5\u2032 end. Using fluorescence-quenching (FQ) reporters with different labeling configurations, the authors demonstrate that ExoIII rapidly cleaves ssDNA substrates, with over 90% cleavage in the first minute, at rates significantly faster than other nucleases tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C34-C42, and C44 are well-supported by systematic experimental data using three types of FQ reporters (standard, 5\u2032 T1-labeled, and base-labeled) shown in Figure 1. The experiments include appropriate controls (heat-deactivated enzymes, T7 exo as negative control, LbCas12a as positive control) and demonstrate consistent results across different reporter designs. The inference that ExoIII cleaves at internal phosphodiester bonds rather than terminal bonds (C40) is logically supported by the 5\u2032 T1-labeled reporter results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C66"
+    ],
+    "result": "ExoIII is an efficient 3\u2032\u21925\u2032 ssDNase with sequence-dependent digestion rates. Time-course gel electrophoresis analysis of three different ssDNA probes shows gradual degradation from 3\u2032 to 5\u2032 end, with an estimated average speed of approximately 1.5\u00d710^13 (25 pmol) phosphodiester bonds per minute. ExoIII digests dsDNA at least ten times faster than ssDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 and C66 are supported by comprehensive time-course gel electrophoresis data on three different ssDNA probes (Figure 2B-M) and comparative analysis with dsDNA substrates (Figure 2\u2014figure supplement 1). The experiments include appropriate controls (T7 exo, APE1, LbCas12a) and demonstrate consistent directional degradation. The quantitative rate calculations are based on gel band intensity measurements, though the exact calculation methodology could be more explicitly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mass spectrometry analysis reveals both exonuclease and endonuclease activities of ExoIII on ssDNA. The majority of ssDNA substrates (~72-99%) are degraded into mononucleotides, with remaining fragments retaining intact 5\u2032 end fluorophores and free 3\u2032-OH groups, indicating cleavage at the 5\u2032-side bond of phosphodiester. Additionally, 17 internal ssDNA fragments were identified, suggesting endonuclease activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 are well-supported by detailed mass spectrometry data (Figure 3, Table 1) showing specific cleavage products with masses matching theoretical predictions. The inference about cleavage site location (C63) is logically sound based on the retention of 5\u2032 fluorophores. However, claim C65 regarding sequence-specific activation of endonuclease activity is speculative and requires further investigation. The mass spectrometry provides high-resolution molecular evidence complementing the gel electrophoresis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The ssDNase activity of ExoIII requires Mg2+ and is temperature-dependent. EDTA completely inhibits the activity, demonstrating Mg2+ requirement. The activity is optimal at 16-37\u00b0C and significantly reduced at \u226542\u00b0C. Kinetic analysis shows each ExoIII molecule cleaves approximately one nucleotide every 3 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by systematic experimental data testing reaction conditions (Figure 4A-F). The EDTA inhibition experiments provide clear evidence for Mg2+ dependence. Temperature-dependence experiments show consistent trends across multiple temperatures. The kinetic calculations (C70) are based on concentration-dependent experiments with appropriate controls. The inference about optimal temperature range (C72) is reasonable based on the data, though additional intermediate temperatures could strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Consecutive identical nucleotides in ssDNA inhibit ExoIII digestion. Analysis of mass spectrometry products shows ExoIII digestion stalls at or ahead of zones with serial identical bases. Experimental testing with A20, C20, and T20 substrates confirms significantly slower degradation compared to mixed-sequence substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by convergent evidence from mass spectrometry analysis (Table 1, Figure 3) and direct experimental testing with homopolymeric substrates (Figure 4G-H). The observation is consistent across multiple probes and the follow-up experiments with A20, C20, and T20 provide direct validation. However, the mechanism underlying this sequence-dependent inhibition remains speculative and would benefit from structural or biophysical studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ExoIII in commercial isothermal amplification kits (MIRA-ExoIII and RPA-ExoIII) digests ssDNA probes, leading to false positive signals. The kits show significant fluorescence with FQ reporters compared to ExoIII-free controls, and gel analysis reveals 40-80% degradation of ssDNA probes within 20 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by experimental data comparing commercial kits with and without ExoIII (Figure 5A-E). The experiments include appropriate controls (MIRA and RPA without ExoIII) and demonstrate clear differences in fluorescence and probe degradation. The inference about low detection efficiency (C82) is logical based on the observed probe degradation, though actual impact on detection performance in real applications would require additional validation with target DNA present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Single-stranded DNA-binding proteins (T4 gp32 and SSB) protect ssDNA from ExoIII digestion. Pre-incubation with these proteins prevents ssDNA degradation by ExoIII, suggesting they could minimize unwanted ssDNase activity in commercial kits and may play regulatory roles in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by experimental data showing complete protection of ssDNA by T4 gp32 and SSB (Figure 5F-H). The experiments include appropriate concentration controls and demonstrate dose-dependent effects. Claim C88 regarding in vivo regulatory roles is speculative but reasonable based on the in vitro data. The proposed mechanism for differential degradation between commercial kits (C83) is plausible but would benefit from direct measurement of T4 gp32 concentrations in the kits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Point mutation analysis identifies critical residues for ssDNase activity. Residues D214, W212, F213, N153, D151, K121, and Y109 are essential for ssDNA cleavage, with six of these also critical for dsDNA activities. This suggests the ssDNase activity shares the same active center with dsDNA-targeted activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are well-supported by systematic mutagenesis data using both fluorescence assays and gel electrophoresis (Figure 6B-D). The experiments test 12 different mutants with appropriate wild-type controls. The inference that ssDNase and dsDNA activities share the same active center (C95) is strongly supported by the overlap of critical residues and is consistent with prior structural studies (citation to Lee et al., 2022). The conservation analysis (C100) provides additional support for the functional importance of these residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The R170A mutant shows differential effects on ExoIII activities: it retains dsDNA exonuclease activity but has impaired AP-endonuclease and ssDNase activities. R170 in the \u03b1M helix may help recognize or stabilize substrates for docking into the active site. K121A retains AP-endonuclease activity with weakened ssDNase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C106 are supported by experimental data comparing R170A and K121A mutants with wild-type on different substrates (Figure 6E, Figure 6\u2014figure supplement 3). The differential activity profile of R170A is clearly demonstrated, though the mechanistic interpretation (C105) is speculative. The suggestion that K121A could replace wild-type in commercial applications (C97) is reasonable but would require validation in actual detection assays. The structural location of R170 in the \u03b1M helix (C102) is supported by citation to Mol et al., 1995.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "A mechanistic model for ExoIII action on ssDNA is proposed based on structural analysis and experimental data. The model defines four functional units (capturing, phosphate-stabilizing, sugar ring-stacking, and phosphodiester-cleaving) and proposes that ssDNA must adopt a 'V'-shaped conformation for efficient processing. The model explains both endonuclease and exonuclease activities through distributive catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C119 present a detailed mechanistic model based on structural modeling (Figure 7) and integration of experimental data. While the model is internally consistent and explains many observations (sequence-dependent inhibition, endonuclease products, etc.), it is largely speculative and lacks direct structural evidence (e.g., crystal structure of ExoIII-ssDNA complex). The model is based on structure alignment and molecular docking rather than experimentally determined structures. Key predictions of the model (V-shaped conformation requirement, specific roles of functional units) would require validation through structural biology, biophysical measurements, or additional mutagenesis studies targeting the proposed substrate-binding interfaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "ExoIII digests dsDNA structures containing 3\u2032-end ssDNA, including 3\u2032 flaps and protruding tails. The enzyme rapidly processes 10-base protruding structures but shows reduced efficiency on 4-base protrusions. Notably, 3\u2032 A4-protruding ssDNA is resistant to digestion. A novel role in 3\u2032 flap removal during DNA repair is proposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C127 are supported by experimental data on various dsDNA substrates (Figure 8, Figure 8\u2014figure supplement 1). The experiments demonstrate clear length-dependent effects on digestion efficiency and identify A4 sequences as protective. The proposed biological role in 3\u2032 flap removal (C122) is speculative but reasonable, integrating the current findings with prior knowledge (citation to Yoo et al., 2021). The practical suggestion for using 3\u2032 A4-protruding substrates in biosensors (C127) is logical but would benefit from experimental validation. The results contradict prior reports (Henikoff, 1984) about ExoIII's inability to digest 3\u2032 protruding structures, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "ExoIII digests fork-shaped dsDNA structures starting from the 3\u2032 end ssDNA, with T4 gp32 providing protection. Bubble structures show no apparent digestion. These results suggest ExoIII may function on multiple types of dsDNA structures with 3\u2032 ssDNA in DNA repair or metabolism processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 are supported by experimental data on fork and bubble structures (Figure 8\u2014figure supplement 2). The protection experiments with T4 gp32 provide mechanistic insight into the digestion pathway. However, the biological significance (C135) is speculative and would require in vivo validation. The lack of digestion on bubble structures (C134) is interesting but the mechanism is not explored. Additional structural variants would strengthen the conclusions about substrate specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The study provides practical recommendations to minimize unwanted ssDNase activity in ExoIII-based diagnostics: adding T4 gp32, incorporating 3\u2032 A4 sequences, using K121A/R170A mutants, or raising temperature to \u226542\u00b0C. These recommendations are based on the demonstrated ssDNase activity and its characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C141 summarize the findings and provide practical recommendations. While C136-C137 are well-supported by the experimental data, the recommendations (C138-C141) are logical inferences but lack direct validation in actual diagnostic applications. The suggestions would benefit from proof-of-concept experiments demonstrating improved performance in real detection assays. Claim C140 regarding mutant applications is particularly speculative, as the mutants have not been tested in complete diagnostic workflows. Temperature elevation (C141) may affect other components of detection systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Structural comparison between ExoIII and its human homolog APE1 reveals deterioration of the \u03b1M helix in APE1, which may explain the massive disparity in ssDNase activity between the two enzymes. The degenerated activity in APE1 may have evolved to minimize genomic instability risk in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by structural alignment data (Figure 2N) and experimental comparison showing APE1 has much weaker ssDNase activity than ExoIII (Figure 1C). The structural observation about \u03b1M helix deterioration is clear. However, claim C55 regarding evolutionary adaptation to minimize genomic instability is highly speculative and lacks supporting evidence. The connection between ssDNase activity and genomic instability would require additional investigation, including analysis of APE1 function in human cells and potential consequences of enhanced ssDNase activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The ssDNase activity of ExoIII surpasses that of the conventional ssDNA-specific nuclease ExoI, suggesting potential biological significance in bacterial ssDNA metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 compares ExoIII's ssDNase activity to ExoI based on citation to Shen et al., 2023, but no direct comparative data is presented in this manuscript. The inference about biological significance is speculative. Direct side-by-side comparison under identical conditions would be needed to support this claim. Additionally, the biological significance would require in vivo studies examining ExoIII's role in bacterial ssDNA metabolism, which are not presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The study discusses challenges and implications for understanding ExoIII's biological roles. Examining in vivo functions through point mutations is challenging due to shared active centers. The ssDNase activity may confer 3\u2032 flap-cleaving ability for dealing with diverse DNA lesions, with ssDNA-binding proteins potentially playing regulatory roles in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C144 present reasonable inferences about biological implications and future directions. Claim C142 correctly identifies a limitation for in vivo studies based on the shared active center finding. Claims C143-C144 are speculative extrapolations from the in vitro data. While the 3\u2032 flap-cleaving ability is demonstrated in vitro (C120-C122), its actual biological role and regulation by ssDNA-binding proteins in vivo remain to be established. These claims appropriately identify important questions for future research but lack direct experimental support.",
+    "result_type": "MINOR"
+  }
+]

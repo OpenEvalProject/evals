@@ -1,0 +1,2078 @@
+{
+  "submission": {
+    "id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:20:54.350604Z",
+    "updated_at": "2025-11-20T23:20:54.350604Z"
+  },
+  "content": [
+    {
+      "id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "content_type": "manuscript",
+      "content_text": "# Homeostatic regulation of rapid eye movement sleep by the preoptic area of the hypothalamus\n\n## Authors\n\n- John J Maurer<sup>1</sup> ([ORCID: 0000-0003-2710-1963](https://orcid.org/0000-0003-2710-1963))\n- Alexandra Lin<sup>1</sup>\n- Xi Jin<sup>1</sup>\n- Jiso Hong<sup>1</sup>\n- Nicholas Sathi<sup>1</sup>\n- Romain Cardis<sup>2</sup>\n- Alejandro Osorio-Forero<sup>2</sup> ([ORCID: 0000-0003-4341-4206](https://orcid.org/0000-0003-4341-4206))\n- Anita L\u00fcthi<sup>2</sup> ([ORCID: 0000-0002-4954-4143](https://orcid.org/0000-0002-4954-4143))\n- Franz Weber<sup>1</sup>\n- Shinjae Chung<sup>1</sup> ([ORCID: 0000-0003-2268-563X](https://orcid.org/0000-0003-2268-563X)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience, Chronobiology and Sleep Institute, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))\n2. Department of Fundamental Neurosciences, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRapid eye movement sleep (REMs) is characterized by activated electroencephalogram (EEG) and muscle atonia, accompanied by vivid dreams. REMs is homeostatically regulated, ensuring that any loss of REMs is compensated by a subsequent increase in its amount. However, the neural mechanisms underlying the homeostatic control of REMs are largely unknown. Here, we show that GABAergic neurons in the preoptic area of the hypothalamus projecting to the tuberomammillary nucleus (POAGAD2\u2192TMN neurons) are crucial for the homeostatic regulation of REMs in mice. POAGAD2\u2192TMN neurons are most active during REMs, and inhibiting them specifically decreases REMs. REMs restriction leads to an increased number and amplitude of calcium transients in POAGAD2\u2192TMN neurons, reflecting the accumulation of REMs pressure. Inhibiting POAGAD2\u2192TMN neurons during REMs restriction blocked the subsequent rebound of REMs. Our findings reveal a hypothalamic circuit whose activity mirrors the buildup of homeostatic REMs pressure during restriction and that is required for the ensuing rebound in REMs.\n\n## Introduction\n\nRapid eye movement sleep (REMs) is homeostatically regulated as demonstrated in various species including mice, rats, cats, and humans (Siegel and Gordon, 1965; Beersma et al., 1990; Benington et al., 1994; Endo et al., 1997; Endo et al., 1998; Rechtschaffen et al., 1999; Franken, 2002; Shea et al., 2008). REMs restriction leads to an increased homeostatic need for REMs. During the subsequent recovery sleep, the amount of REMs is increased to compensate for the amount lost during restriction. While seminal dissection studies indicate a pontine origin of REMs, recent studies have revealed that neural populations in the hypothalamus, midbrain, amygdala and medulla regulate REMs by promoting or inhibiting REMs (Cl\u00e9ment et al., 2011; Jego et al., 2013; Hayashi et al., 2015; Van Dort et al., 2015; Weber et al., 2015; Weber et al., 2018; Chung et al., 2017; Torontali et al., 2019). However, we do not have a clear understanding about the homeostatic mechanisms regulating REMs and which brain regions integrate homeostatic REMs pressure.\n\nThe preoptic area of the hypothalamus (POA) is crucial for sleep regulation. The POA contains neurons that become activated during sleep and that are sufficient and necessary for sleep (Economo, 1930; Nauta, 1946; McGinty and Sterman, 1968; Sallanon et al., 1989; Sherin et al., 1996; Szymusiak et al., 1998; Lu et al., 2000; Gong et al., 2004; Takahashi et al., 2009; Zhang et al., 2015; Kroeger et al., 2018). Specifically, POA GABAergic neurons projecting to the tuberomammillary nucleus (POAGAD2\u2192TMN neurons) form a subpopulation of sleep-active POA neurons, and promote sleep when optogenetically activated (Chung et al., 2017). A previous study demonstrated that c-Fos expression in the POA is increased in REMs restricted rats (Gvilia et al., 2006). However, the molecular identity of POA neurons that become activated during heightened REMs pressure and whether their activity is necessary for homeostatic REMs regulation remains largely unknown.\n\nIn this study, using fiber photometry, we found that POAGAD2\u2192TMN neurons become gradually activated during non-rapid eye movement sleep (NREMs) before the onset of REMs and are most active during REMs. Optogenetic inhibition of POAGAD2\u2192TMN neurons significantly decreased REMs. We therefore hypothesized that the POAGAD2\u2192TMN neurons are well suited to encode homeostatic pressure for REMs. Using fiber photometry recordings combined with REMs restriction, we show that the activity of POAGAD2\u2192TMN neurons significantly increased during periods of heightened REMs pressure. Optogenetic inhibition of POAGAD2\u2192TMN neurons during REMs restriction prevented the subsequent increase of REMs during recovery sleep. Our findings identify a hypothalamic circuit regulating the homeostatic need for REMs.\n\n## Results\n\n### POAGAD2\u2192TMN neurons are most active during REMs\n\nTo monitor the population activity of POAGAD2\u2192TMN neurons in vivo during spontaneous sleep, we performed fiber photometry recordings. GAD2-Cre mice were injected with retrograde adeno-associated viruses (AAVs) encoding Cre-inducible GCaMP8s (AAVretro-FLEX-jGCaMP8s) into the TMN (Tervo et al., 2016; Zhang et al., 2023), and an optic fiber was implanted into the POA (Figure 1A; virus expression and optic fiber tracts were located in the ventrolateral POA, lateral POA, and the lateral part of medial POA). The calcium activity of POAGAD2\u2192TMN neurons was significantly higher during REMs compared with that during wake and NREMs (Figure 1B and C; detailed statistical results are shown in Figure legends and Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left, schematic of fiber photometry with simultaneous electroencephalogram (EEG) and electromyogram (EMG) recordings. Mouse brain figure adapted from the Allen Reference Atlas - Mouse Brain. Center left, fluorescence image of POA in a GAD2-Cre mouse injected with AAVretro-FLEX-jGCaMP8s into the TMN. Scale bar, 1 mm. Center right, location of fiber tracts. Each colored bar represents the location of optic fibers for photometry recordings. Right, heatmaps outlining areas with cell bodies expressing GCaMP8. The green color code depicts how many mice the virus expression overlapped at the corresponding location (n=10 mice). (B) Example fiber photometry recording. Shown are EEG spectrogram, EMG amplitude, color-coded brain states, and \u0394F/F signal. (C) Non-normalized and z-scored \u0394F/F activity during REMs, wake, and non-rapid eye movement sleep (NREMs). Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. One-way repeated measures (rm) ANOVA, p=9e-4, 2e-6 for non-normalized \u0394F/F and z-scored \u0394F/F signals; pairwise t-tests with Bonferroni correction, non-normalized \u0394F/F, p=0.0056, 0.0039 for REMs vs. wake and REMs vs. NREMs; z-scored \u0394F/F, p=6e-5, 1e-7. n=10 mice. (D) Average EEG spectrogram (top), z-scored \u0394F/F activity (middle) and normalized EEG \u03b4, \u03b8, and \u03c3 power (bottom) during NREMs\u2192REMs transitions (left) and NREMs\u2192wake transitions (right). Shading, \u00b1 s.e.m. One-way rm ANOVA, p=3.18e-49, 9.50e-8 for NREMs\u2192REMs and NREMs\u2192wake; pairwise t-tests with Holm-Bonferroni correction, NREMs\u2192REMs p<0.0419 between \u201340 and 30 s, NREMs\u2192wake p<0.0106 between \u201310 and 10 s. Gray bar, period when \u0394F/F activity was significantly different from baseline (\u221260 to \u201350 s). n=10 mice. (E) \u0394F/F activity during NREMs. The duration of NREMs episodes was normalized in time, ranging from 0% to 100%. Shading, \u00b1 s.e.m. Pairwise t-tests with Holm-Bonferroni correction p<8.14e-9 between 20 and 100. Gray bar, intervals where \u0394F/F activity was significantly different from baseline (0% to 20%, the first time bin). n=566 events. (F) Left, linear filter mapping the normalized EEG spectrogram onto the POAGAD2\u2192TMN neural activity. Time point 0 s corresponds to the predicted neural activity. Right, coefficients of the linear filter for \u03b4, \u03b8, and \u03c3 power band. Shading, \u00b1 s.e.m. See Supplementary file 1 for the actual p-values.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Related to Figure 1. (A) Left, schematic of fiber photometry with simultaneous electroencephalogram (EEG) and electromyogram (EMG) recordings. Mouse brain figure adapted from the Allen Reference Atlas - Mouse Brain. Middle, fluorescence image of POA and TMN in a GAD2-Cre mouse injected with AAV-FLEX-GCaMP6s into the POA and implanted with an optic fiber in the TMN. Scale bar, 0.5 mm. Right, location of fiber tracts. Each colored bar represents the location of optic fibers for photometry recordings. (B) Example fiber photometry recording. Shown are EEG spectrogram, EMG amplitude, color-coded brain states, and \u0394F/F signal. (C) Non-normalized and z-scored \u0394F/F activity during REMs, wake, and non-rapid eye movement sleep (NREMs). Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. One-way repeated measures (rm) ANOVA p=0.0162, 0.0029 for non-normalized \u0394F/F and z-scored \u0394F/F; pairwise t-tests with Bonferroni correction, non-normalized \u0394F/F, p=0.0187 for REMs vs. wake; z-scored \u0394F/F, p=0.0018, 0.0227 for REMs vs. wake or REMs vs. NREMs. (D) Average EEG spectrogram (top), calcium activity (bottom) during brain state transitions. Shading, \u00b1 s.e.m. One-way rm ANOVA, p=6.89e-8 for NREMs\u2192REMs transitions; pairwise t-tests with Holm-Bonferroni correction, p<0.0149 between \u201330 and \u201310 s, p=0.0002 between 0 and 10 s, p=0.0361 between 20 and 30 s. Gray bar, period when \u0394F/F activity was significantly different from baseline (\u221260 to \u201350 s). n=12 mice. See Supplementary file 1 for the actual p-values.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Related to Figure 1. (A) Left, schematic of fiber photometry with simultaneous electroencephalogram (EEG) and electromyogram (EMG) recordings. Middle, fluorescence image of TMN in an HDC-Cre mouse injected with AAV-FLEX-GCaMP6s and implanted with an optic fiber in the TMN. Scale bar, 1 mm. Right, location of fiber tracts. Each colored bar represents the location of optic fibers for photometry recordings. Mouse brain figure adapted from the Allen Reference Atlas - Mouse Brain. (B) Example fiber photometry recording. Shown are EEG spectrogram, EMG amplitude, color-coded brain states, and \u0394F/F signal. (C) Non-normalized and z-scored \u0394F/F activity during rapid eye movement sleep (REMs), wake, and non-rapid eye movement sleep (NREMs). Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. One-way repeated measures (rm) ANOVA p=5.23e-4, 1.862e-11 for non-normalized \u0394F/F and z-scored \u0394F/F; pairwise t-tests with Bonferroni correction, non-normalized \u0394F/F, p=0.0035, 0.0022 for REMs vs. wake or wake vs. NREMs; z-scored \u0394F/F, p=2.95e-7, 3.81e-8. n=11 mice. (D) Average EEG spectrogram (top), and calcium activity (bottom) during brain state transitions. Shading, \u00b1 s.e.m. One-way rm ANOVA, p=4.28e-40, 3.69e-22 for NREMs\u2192wake and REMs\u2192wake; pairwise t-tests with Holm-Bonferroni correction, NREMs\u2192wake p<1.44e-05 between 0 and 30 s, REMs\u2192wake p<0.002 between 0 and 20 s. Gray bar, period when \u0394F/F activity was significantly different from baseline (\u221260 to \u201350 s). n=11 mice. (E) \u0394F/F activity during NREMs. The duration of NREMs episodes was normalized in time, ranging from 0% to 100%. Shading, \u00b1 s.e.m. Pairwise t-tests with Holm-Bonferroni correction p<5.36e-33 between 20 and 100. Gray bar, intervals where \u0394F/F activity was significantly different from baseline (0% to 20%, the first time bin). n=889 events. (F) Average normalized EEG spectrogram (top), and z-scored \u0394F/F activity (bottom) during two successive REMs episodes and the inter-REM interval. Each REMs episode and inter-REM interval was compressed to unit length and the \u0394F/F activity was averaged over multiple episodes/intervals. Shading, s.e.m.\n\nWe further analyzed the activity changes of the POAGAD2\u2192TMN neurons during NREMs\u2192REMs or NREMs\u2192wake transitions. We found that the calcium activity of POAGAD2\u2192TMN neurons during NREMs\u2192 REMs transitions becomes significantly increased 40 s before the REMs onset and remains elevated throughout REMs (Figure 1D). During NREMs\u2192wake transitions, the activity of POAGAD2\u2192TMN neurons started rising 10 s before the wake onset and remained elevated for 10 s after the onset (Figure 1D). The \u0394F/F activity gradually increased throughout NREMs episodes (Figure 1E).\n\nGiven that both the \u03b8 and \u03c3 (6\u20139 and 10.5\u201316 Hz) power increased preceding the REMs onset (Figure 1D), we investigated the relationship between the POAGAD2\u2192TMN neuron activity and the spectral composition of the EEG in more detail (Figure 1F). We used a linear regression model to predict the current POAGAD2\u2192TMN neural activity based on the preceding and following spectral EEG features (Weber et al., 2010; Schott et al., 2023). We found that the activity of POAGAD2\u2192TMN neurons is preceded by an increase in the \u03b8 and \u03c3 power and reduction in the \u03b4 (0.5\u20134.5 Hz) power (Figure 1F). These changes in the EEG are characteristic for the stage of NREMs preceding REMs (Gottesmann, 1996) and their correlation with the activity of POAGAD2\u2192TMN neurons is consistent with a role of these neurons in promoting NREMs to REMs transitions.\n\nIn a complementary experiment, we monitored the calcium activity of POAGAD2\u2192TMN axonal fibers. GAD2-Cre mice were injected with AAV-FLEX-GCaMP6s into the POA and an optic fiber was implanted into the TMN (Figure 1\u2014figure supplement 1A). Similar to the activity found for POAGAD2\u2192TMN neurons using retrograde AAVs (Figure 1B and C), POAGAD2\u2192TMN fibers were most active during REMs (Figure 1\u2014figure supplement 1B and C). During NREMs, the activity of POAGAD2\u2192TMN axonal fibers gradually increased before transitioning to REMs (Figure 1\u2014figure supplement 1D), demonstrating that the activity of POAGAD2\u2192TMN axonal fibers closely resembles that of cell bodies. In summary, these results demonstrate that the activity in POAGAD2\u2192TMN neurons increases prior to the onset of REMs episodes, following an increase in the \u03b8 and \u03c3 power in the EEG.\n\nThe TMN contains histamine neurons (TMNHIS), and previous studies showed that POAGAD2 neurons innervate TMNHIS neurons (Chung et al., 2017; Saito et al., 2018). Consistent with previous electrophysiological studies (Steininger et al., 1999; Vanni-Mercier et al., 2003; John et al., 2004; Takahashi et al., 2006), we found in photometry recordings that TMNHIS neurons are highly active during wake and less active during NREMs and REMs (Figure 1\u2014figure supplement 2A\u2013C). Consistent with this, the activity of TMNHIS neurons became significantly activated after the transition from NREMs or REMs to wakefulness (Figure 1\u2014figure supplement 2D). The TMNHIS neuron activity gradually decreased during NREMs episodes (Figure 1\u2014figure supplement 2E), possibly as a result of inhibitory inputs from POAGAD2\u2192TMN neurons (Chung et al., 2017). Moreover, examining the time course of TMNHIS neurons between two successive REMs episodes (inter-REM interval), we found that their activity gradually decreases throughout the inter-REM interval, reaching its lowest level at the onset of REMs (Figure 1\u2014figure supplement 2F). This finding suggests that a minimal activity of TMNHIS neurons is required for entering REMs, and suppression of TMNHIS activity therefore likely facilitates transitions to REMs.\n\n### Inhibiting POAGAD2\u2192TMN neurons reduces REMs\n\nTo examine whether POAGAD2\u2192TMN neurons regulate REMs, we optogenetically inhibited these neurons using the bistable chloride channel SwiChR++ (Berndt et al., 2016; Smith et al., 2024; Stucynski et al., 2022). GAD2-Cre mice were bilaterally injected with retrograde AAVs encoding Cre-inducible SwiChR++ (AAVretro-DIO-SwiChR++-eYFP) or eYFP (AAVretro-DIO-eYFP) into the TMN followed by bilateral optic fiber implantation into the POA (Figure 2A). We compared SwiChR++ and eYFP recordings with and without laser stimulation (473 nm, 2 s step pulses at 60 s intervals for 3 hr, zeitgeber time [ZT] 2\u20135). SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons reduced the amount of REMs compared with recordings without laser stimulation in the same mice and eYFP mice with laser stimulation (Figure 2B and C). The overall time spent in wake and NREMs was not altered by SwiChR++-mediated inhibition (Figure 2C, Figure 2\u2014figure supplement 1A and B), suggesting that POAGAD2\u2192TMN neuron activity specifically regulates the amount of REMs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig2-v1.jpg)\n\n**Figure 2.:** (A) Left, schematic of optogenetic inhibition experiments. Center left, fluorescence image of POA in a GAD2-CRE mouse injected with AAVretro-DIO-SwiChR++-eYFP into the TMN. Scale bar, 1 mm. Center right, location of optic fiber tracts. Each colored bar represents the location of an optic fiber. Right, experimental paradigm for laser stimulation (2 s step pulses at 60 s intervals) in SwiChR++ and eYFP-expressing mice. Mouse brain figure adapted from the Allen Reference Atlas - Mouse Brain. (B) Example recording of a SwiChR++ (left) and eYFP mouse (right) with laser stimulation. Shown are electroencephalogram (EEG) power spectra, EMG amplitude, and color-coded brain states. (C) Percentage of time spent in REMs, non-rapid eye movement sleep (NREMs), and wakefulness with and without laser in SwiChR++ and eYFP mice. Mixed ANOVA, virus p=0.0629, laser p=0.0003, interaction p=0.0064; t-tests with Bonferroni correction, SwiChR-laser vs. SwiChR-w/o laser p=3.00e-5, SwiChR-laser vs. eYFP-laser p=0.0058. (D) Normalized EEG \u03b4, \u03b8, and \u03c3 power during REMs in SwiChR++ and eYFP mice with laser. Unpaired t-tests, SwiChR vs. eYFP p=0.0432, 0.0099 for \u03b4 and \u03c3. (E) Percentage of time spent in REMs, NREMs, and wakefulness during post-laser sessions. (C) Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. (D, E) Bars, averages across mice; dots, individual mice; error bars, \u00b1 s.e.m. SwiChR++: n=12 mice; eYFP: n=9 mice.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Related to Figure 2. (A) Duration of rapid eye movement sleep (REMs), non-rapid eye movement sleep (NREMs), and wake episodes with and without laser stimulation in SwiChR++ and eYFP mice. (B) Frequency of REMs, NREMs, and wake episodes with and without laser stimulation in SwiChR++ and eYFP mice. (C) Comparison of EEG \u03b4, \u03b8, and \u03c3 power during REMs, NREMs, and wakefulness with and without laser stimulation in SwiChR++ mice. Paired t-tests, SwiChR-laser vs. SwiChR-w/o laser p=0.0048, 0.0158 for \u03b4 and \u03c3 during REM. (D) Normalized EEG \u03b4, \u03b8, and \u03c3 power during NREMs, and wakefulness in SwiChR++ and eYFP mice. (E) Duration of REMs, NREMs, and wake episodes during 3 hr recordings directly following the laser stimulation interval (post laser) in SwiChR++ and eYFP mice. (F) Frequency of REMs, NREMs, and wake episodes during post-laser recordings in SwiChR++ and eYFP mice. (A\u2013C) Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. (D\u2013F) Bars, averages across mice; dots, individual mice, error bars, \u00b1 s.e.m. SwiChR++: n=12 mice; eYFP: n=9 mice.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Related to Figure 2. (A) Left, schematic of optogenetic inhibition experiments. Center left, fluorescence image of TMN in HDC-Cre mouse injected with AAV2-EF1a-DIO-SwiChR++-eYFP into the TMN. Scale bar, 1 mm. Center right, location of optic fiber tracts. Each colored bar represents the location of an optic fiber. Right, experimental paradigm for laser stimulation (2 s step pulses at 60 s intervals) in SwiChR++ and eYFP-expressing mice. Mouse brain figure adapted from the Allen Reference Atlas - Mouse Brain. (B) Example recording of a SwiChR++ (left) and eYFP mouse (right) with laser stimulation. Shown are EEG power spectra, electromyogram (EMG) amplitude, and color-coded brain states. (C) Percentage of time spent in rapid eye movement sleep (REMs), non-rapid eye movement sleep (NREMs), and wakefulness with and without laser in SwiChR++ and eYFP mice. REMs: mixed ANOVA, virus p=0.1470, laser p=0.0054, interaction p=0.0455; t-tests with Bonferroni correction, SwiChR-laser vs. SwiChR-w/o laser p=0.0019, SwiChR-laser vs. eYFP-laser p=0.0384. Wake: mixed ANOVA, virus p=0.6180, laser p=0.0909, interaction p=0.0378; t-tests with Bonferroni correction, SwiChR-laser vs. SwiChR-w/o laser p=0.0154. (D) Normalized EEG \u03b4, \u03b8, and \u03c3 power during REMs, NREMs, and wake in SwiChR++ and eYFP mice with laser. Unpaired t-tests, REMs: SwiChR vs. eYFP p=0.0498 for \u03b4; NREMs: SwiChR vs. eYFP p=0.0123, 0.0474 for \u03b4 and \u03b8. (C) Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. (D) Bars, averages across mice; dots, individual mice; error bars, \u00b1 s.e.m. SwiChR++: n=10 mice; eYFP: n=8 mice.\n\nNext, we compared the spectral composition of the EEG throughout recordings with or without laser stimulation in SwiChR++ and eYFP mice. During REMs, SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons increased the \u03b4 and \u03c3 power in the EEG compared with SwiChR++-without laser and eYFP-laser groups (Figure 2D, Figure 2\u2014figure supplement 1C). The \u03b4, \u03b8, and \u03c3 power in the EEG during NREMs and wake was indistinguishable between SwiChR++ and eYFP groups (Figure 2\u2014figure supplement 1D).\n\nNext, we investigated the effect of sustained inhibition of POAGAD2\u2192TMN neurons on the following 3 hr recording without laser stimulation (Figure 2E). Despite the reduction of REMs during the laser stimulation in SwiChR++ mice (Figure 2C), there were no differences in the amount of REMs, NREMs, and wake between SwiChR++ and eYFP groups during the post-laser recordings (Figure 2E, Figure 2\u2014figure supplement 1E and F), suggesting that the loss of REMs during SwiChR++-mediated inhibition was not followed by a homeostatic increase in REMs.\n\nIn a complementary experiment, we also investigated how inhibition of TMNHIS neurons regulates REMs using the same inhibitory optogenetics protocol. HDC-Cre mice were bilaterally injected with AAVs encoding Cre-inducible SwiChR++ (AAV2-EF1a-DIO-SwiChR++-eYFP) or eYFP (AAV2-Ef1\u03b1-DIO-eYFP) into the TMN followed by bilateral optic fibers implantation into the TMN (Figure 2\u2014figure supplement 2A). Consistent with the previous experiment, we compared SwiChR++ and eYFP recording with and without laser stimulation (Figure 2\u2014figure supplement 2A and B). SwiChR++-mediated inhibition of TMNHIS neurons increased the amount of REMs compared with recordings without laser stimulation in the same mice and eYFP mice with laser stimulation (Figure 2\u2014figure supplement 2C). Given that TMN also contains other types of neurons, inhibition of histamine neurons by POAGAD2\u2192TMN neurons may not be the sole source of the observed effect on REMs upon inhibition of POAGAD2\u2192TMN neurons.\n\nTaken together, we first demonstrated that SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons reduced the amount of REMs, supporting a necessary role of these neurons in REMs regulation. Second, the lost amount of REMs was not compensated for in the subsequent sleep suggesting that their activity is involved in the homeostatic regulation of REMs.\n\n### POAGAD2\u2192TMN neurons exhibit an increased number of calcium transients during REMs restriction\n\nTo probe whether the activity of POAGAD2\u2192TMN neurons changes during periods of high REMs pressure resulting from REMs restriction, we performed fiber photometry recordings combined with a closed-loop REMs restriction protocol (Figure 3A). To detect the onset of REMs, we adapted a previously applied automatic REMs detection algorithm (Weber et al., 2015; Weber et al., 2018; Stucynski et al., 2022; Schott et al., 2023). Briefly, the animal\u2019s brain state was classified based on real-time analysis of the EEG/EMG signals. As soon as a REMs episode was detected, a small vibrating motor attached to the animal\u2019s head was turned on to terminate REMs by briefly awakening the animal (Figure 3A, Figure 3\u2014figure supplement 1A; Cardis et al., 2021; Osorio-Forero et al., 2023). Compared with the baseline recordings from the same mice during the same circadian time, we found that 6 hr of REMs restriction (ZT 1.5\u20137.5) significantly reduced the amount of REMs and duration of REMs episodes, while increasing their frequency (Figure 3\u2014figure supplement 1A, D-F; amount: Cohen\u2019s d [d]=\u20131.621; duration: d=\u20132.669; frequency: d=1.294). The number of motor activations gradually increased as mice tried to enter REMs more frequently, indicating the accumulation of REMs pressure (Figure 3\u2014figure supplement 1B). Before the onset of the motor vibration, we found a clear increase in the EEG \u03b8 band reflecting NREMs to REMs transitions (Figure 3\u2014figure supplement 1C). We also investigated the effects of REMs restriction on the spectral composition of the EEG. We found an increased \u03b4 power for REMs during restriction (Figure 3\u2014figure supplement 1G). During rebound (ZT 7.5\u20138.5), the amount of REMs was significantly increased compared with that during the same circadian time due to an increased frequency of REMs episodes (Figure 3\u2014figure supplement 1H-K; amount: d=0.868; frequency: d=1.147), compensating for the amount of REMs lost during restriction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of REMs restriction/rebound and photometry recording experiments. The brain state was continuously monitored; once a REMs episode was detected, we used a vibrating motor (zeitgeber time [ZT] 1.5\u20135.5) or pulled a string (ZT 5.5\u20137.5) attached to the mouse head to terminate REMs. Fiber photometry recordings were performed during REMs restriction (ZT 6.5\u20137.5) and rebound (ZT 7.5\u20138.5). Mouse brain figure adapted from the Allen Reference Atlas - Mouse Brain. (B) Top, example fiber photometry recording. Shown are electroencephalogram (EEG) spectrogram, electromyogram (EMG) amplitude, color-coded brain states, and \u0394F/F signal. Bottom, brain states, \u0394F/F signal (green), low-pass filtered \u0394F/F signal (orange), detected peaks (red), and pulls (arrows) during a selected interval (dashed box) at an expanded timescale. (C) Number of calcium peaks during all states (left), non-rapid eye movement sleep (NREMs) (middle), and REMs (right). Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. n=8 mice. Total: two-way repeated measures (rm) ANOVA, treatment (baseline vs. manipulation) p=0.0031, time p=0.0613, interaction p=0.0189; t-tests with Bonferroni correction, REM restriction (restr.) vs. baseline (ZT 6.5\u20137.5) p=0.0033, restr. vs. REM rebound (reb.) p=0.0341, restr. vs. baseline (ZT 7.5\u20138.5) p=0.0049. NREMs: two-way rm ANOVA, treatment p=0.0233, time p=0.0363, interaction p=0.003; t-tests with Bonferroni correction, restr. vs. baseline (ZT 6.5\u20137.5) p=0.0057, restr. vs. reb. p=0.0046, restr. vs. baseline (ZT 7.5\u20138.5) p=0.0115. (D) Left, average NREMs calcium peaks during REMs restriction and baseline recordings. Right, average amplitude of the NREMs calcium peaks. The amplitude was calculated by subtracting the \u0394F/F value 10 s before the peak from its value at the peak. Unpaired t-tests, p=6.30e-10. n=295 and 196 peaks during restriction and baseline recordings. (E) Left, average REMs calcium peaks during REMs restriction and baseline recordings. Right, average amplitude of the REMs calcium peaks. Unpaired t-tests, p=0.0437. n=44 and 42 peaks during restriction and baseline recordings. (F) Left, average NREMs calcium peaks during REMs rebound and baseline recordings. Right, average amplitude of the NREMs calcium peaks. Unpaired t-tests, p=0.0002. n=180 and 196 peaks during rebound and baseline recordings. (G) Left, average REMs calcium peaks during REMs rebound and baseline recordings. Right, average amplitude of the REMs calcium peaks. n=84 and 36 peaks during rebound and baseline recordings. (D\u2013G) Bars, averages across trials; error bars, \u00b1 s.e.m; shadings, \u00b1 s.e.m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Related to Figure 3. (A) Example session during REMs restriction (top) and REMs rebound (bottom) from the same mouse. Shown are EEG spectrogram, electromyogram (EMG) amplitude, motor vibration events, and color-coded brain states. (B) Frequency of motor vibration events throughout REMs restriction (zeitgeber time [ZT] 1.5\u20137.5). Error bars, \u00b1 s.e.m. One-way ANOVA p=0.0061. (C) Average normalized EEG spectrogram preceding motor vibration onset. (D) Percentage of time spent in REMs, non-rapid eye movement sleep (NREMs), and wakefulness during 6 hr of REMs restriction (green, ZT 1.5\u20137.5) and baseline recordings (gray, ZT 1.5\u20137.5). Paired t-test, p=0.0006 for REMs amount. (E) Duration of REMs, NREMs, and wake episodes during 6 hr of REMs restriction (green) and baseline recordings (gray) (ZT 1.5\u20137.5). Paired t-tests, p=1.44e-5, 0.0276 for the duration of REMs and NREMs episodes. (F) Frequency of REMs, NREMs, and wake episodes during 6 hr of REMs restriction (green) and baseline recordings (gray) (ZT 1.5\u20137.5). Paired t-tests, p=0.0027 and 0.0043 for the frequency of REMs and NREMs episodes. (G) Power spectral density (PSD) of EEG during REMs, NREMs, and wakefulness during 6 hr of REMs restriction (green) and baseline recordings (gray) (ZT 1.5\u20137.5). Paired t-tests, p=0.0293 for REMs \u03b4 power. (H) Percentage of time spent in REMs, NREMs, and wakefulness during 1 hr of REMs rebound (green, ZT 7.5\u20138.5) and baseline sleep (gray, ZT 7.5\u20138.5). Paired t-tests, p=0.0226 for REMs amount. (I) Duration of REMs, NREMs, and wake episodes during 1 hr of REMs rebound (green) and baseline recordings (gray) (ZT 7.5\u20138.5). (J) Frequency of REMs, NREMs, and wake episodes during 1 hr of REMs rebound (green) and baseline recordings (gray). Paired t-tests, p=0.0055 for the frequency of REMs episodes (ZT 7.5\u20138.5). (K) PSD of EEG during REMs, NREMs, and wakefulness during 1 hr of REMs rebound (green) and baseline recordings (gray). Paired t-tests, p=0.0164 for wake \u03b4 power (ZT 7.5\u20138.5). (D\u2013F, H\u2013J) Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. n=10 mice. (G, K) Shadings, \u00b1 s.e.m. n=10 mice in G; n=9 mice in K, 1 mouse was excluded for REMs because there was no REMs during baseline recordings.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Related to Figure 3. (A) Percentage of REMs, duration, and frequency of REMs episodes during REMs restriction (green, zeitgeber time [ZT] 6.5\u20137.5) and baseline recordings (gray, ZT 6.5\u20137.5). Paired t-tests, p=0.0024, 0.0013 for amount and duration. (B) Percentage of REMs, duration, and frequency of REMs episodes during REMs rebound (green, ZT 7.5\u20138.5) and baseline recordings (gray, ZT 7.5\u20138.5). Paired t-tests, p=0.0066, 0.0047 for amount and frequency. Bars, averages across mice; lines, individual mice; error bars, \u00b1 s.e.m. n=8 mice.\n\nDuring REMs restriction, we observed an increased number of calcium transients in the activity of POAGAD2\u2192TMN neurons as the REMs pressure increased (Figure 3A and B). To detect and quantify these transients, we applied an algorithm previously applied to detect calcium events in fiber photometry recordings (Antila et al., 2022; Smith et al., 2024). Using fiber photometry, we monitored the population activity of POAGAD2\u2192TMN neurons during the last hour of REMs restriction (ZT 6.5\u20137.5, referred as restr.) and the first hour of REMs rebound (ZT 7.5\u20138.5, referred as reb.) and compared it with the activity during baseline recordings of the same mice on separate days at the same circadian time (Figure 3A and B). To restrict REMs, we used a motor (ZT 1.5\u20135.5) as previously described or gently pulled a string attached to the animal\u2019s head (ZT 5.5\u20137.5) during the photometry recordings (Figure 3A). The manual REMs deprivation was utilized during the last 2 hr of REMs restriction to avoid potential motion artifacts from the vibrating motor that could contaminate calcium signals. We verified that REMs was adequately restricted (Figure 3\u2014figure supplement 2). During restriction, the number of calcium transients of the POAGAD2\u2192TMN neurons was significantly increased compared with that during baseline recordings (Figure 3C). In particular, the number of calcium peaks was significantly elevated during NREMs, likely reflecting an increased pressure to transition to REMs (Figure 3C). As the duration of REMs episodes was largely reduced as a result of the restriction (Figure 3\u2014figure supplement 2A), the number of peaks during REMs was not changed.\n\nWe further examined the amplitude of calcium transients during both NREMs and REMs. During REMs restriction, the amplitude of NREMs and REMs calcium transients was significantly higher compared with that during the circadian baseline (Figure 3D and E) and remained elevated during NREMs in the rebound phase (Figure 3F and G). Overall, these findings show that during periods of high REMs pressure, the POAGAD2\u2192TMN neurons exhibit an increased number of calcium transients with higher amplitude compared with that during baseline levels suggesting that the activity of these neurons may reflect the heightened homeostatic need for REMs.\n\n### Inhibition of POAGAD2\u2192TMN neurons during REMs restriction reduces the REMs rebound\n\nTo investigate whether the activity of POAGAD2\u2192TMN neurons encodes REMs pressure and consequently facilitates the subsequent rebound in REMs, we optogenetically inhibited these neurons during the last 3 hr of REMs restriction. GAD2-Cre mice were bilaterally injected with retrograde AAVs encoding Cre-inducible SwiChR++ (AAVretro-DIO-SwiChR++-eYFP) or eYFP (AAVretro-DIO-eYFP) into the TMN followed by bilateral optic fiber implantation into the POA (Figure 4A). Mice underwent REMs restriction (6 hr, ZT 1.5\u20137.5), and laser stimulation (2 s step pulses at 60 s intervals) was applied during the last 3 hr (ZT 4.5\u20137.5), when the REMs pressure was highest (Figure 4A, Figure 3\u2014figure supplement 1B). During restriction, SwiChR-mediated inhibition of POAGAD2\u2192TMN neurons decreased the percentage of REMs and reduced the frequency of REMs episodes with marginal significance (Figure 4B\u2013D, Figure 4\u2014figure supplement 1A and B amount: d=\u20131.254). We found that inhibition of POAGAD2\u2192TMN neurons during REMs restriction resulted in a reduced amount of REMs during the rebound compared with that in eYFP mice (Figure 4B, F, and G, Figure 4\u2014figure supplement 1D, E, amount: d=\u20131.317). Thus, inactivating POAGAD2\u2192TMN neurons during heightened REMs pressure not only decreased the amount of REMs, but also prevented its homeostatic rebound during the following recovery sleep.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of REMs restriction/rebound and optogenetic inhibition experiments. During closed-loop REMs restriction (zeitgeber time [ZT] 1.5\u20137.5), a vibrating motor attached to the mouse head was used to terminate REMs. REMs was restricted for 6 hr (ZT 1.5\u20137.5). During the last 3 hr of restriction (ZT 4.5\u20137.5), laser stimulation (2 s step pulses at 60 s intervals) was applied in SwiChR++ and eYFP mice. Mouse brain figure adapted from the Allen Reference Atlas - Mouse Brain. (B) Example sessions from a SwiChR++ (top) and eYFP mouse (bottom) during REMs restriction with laser stimulation (left) and rebound (right). Shown are electroencephalogram (EEG) spectrogram, electromyogram (EMG) amplitude, motor vibration events, laser and color-coded brain states. (C) Percentage of time spent in REMs, non-rapid eye movement sleep (NREMs), and wakefulness during the last 3 hr of REMs restriction with laser stimulation (ZT 4.5\u20137.5) in mice expressing SwiChR++ and eYFP. Unpaired t-tests, p=0.026 for REMs amount. (D) Frequency of REMs episodes during the last 3 hr of REMs restriction with laser stimulation (ZT 4.5\u20137.5). Unpaired t-tests, p=0.0821. (E) Normalized EEG \u03b4, \u03b8, and \u03c3 power during the last 3 hr of REMs restriction with laser stimulation (ZT 4.5\u20137.5). Unpaired t-tests, p=0.0091, 0.0332, and 0.038 for REMs \u03b4, NREMs \u03b8 and \u03c3 power. (F) Percentage of time spent in REMs, NREMs, and wakefulness during REMs rebound (ZT 7.5\u20138.5) in SwiChR++ and eYFP mice. Unpaired t-tests, p=0.0205 for REMs amount. (G) Frequency of REMs episodes during REMs rebound (ZT 7.5\u20138.5). (H) Normalized EEG \u03b4, \u03b8, and \u03c3 power during REMs rebound (ZT 7.5\u20138.5). Bars, averages across mice; dots, individual mice; error bars, \u00b1 s.e.m. SwiChR++: n=9 mice; eYFP: n=7 mice.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92095/elife-92095-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Related to Figure 4. (A) Duration of REMs, non-rapid eye movement sleep (NREMs), and wake episodes during the last 3 hr of REMs restriction with laser stimulation (zeitgeber time [ZT] 4.5\u20137.5) in mice expressing SwiChR++ and eYFP. (B) Frequency of REMs, NREMs, and wake episodes during the last 3 hr of REMs restriction with laser stimulation in mice expressing SwiChR++ and eYFP. (C) Normalized EEG \u03b4, \u03b8, and \u03c3 power during the last 3 hr of REMs restriction with laser stimulation in eYFP and SwiChR++ mice. (D) Duration of REMs, NREMs, and wake episodes during REMs rebound (ZT 7.5\u20138.5) in mice expressing SwiChR++ and eYFP. (E) Frequency of REMs, NREMs, and wake episodes during REMs rebound (ZT 7.5\u20138.5) in mice expressing SwiChR++ and eYFP. (F) Normalized EEG \u03b4, \u03b8, and \u03c3 power during REMs rebound in eYFP and SwiChR++ mice. Bars, averages across mice; dots, individual mice; error bars, \u00b1 s.e.m. SwiChR++: n=9 mice; eYFP: n=7 mice.\n\nFinally, we examined the spectral composition of the EEG during the REMs restriction. We found that inhibition of POAGAD2\u2192TMN neurons during REMs restriction reduced the REMs \u03b4 power, NREMs \u03b8 and \u03c3 power compared with that in eYFP mice with laser stimulation (Figure 4E, Figure 4\u2014figure supplement 1C). The reduced \u03b8 and \u03c3 power during NREMs could result from less attempts to enter REMs (Figure 4D). During rebound, there were no significant differences in EEG \u03b4, \u03b8, and \u03c3 power during REMs and NREMs (Figure 4H, Figure 4\u2014figure supplement 1F).\n\nTaken together, inhibiting POAGAD2\u2192TMN neurons during REMs restriction significantly decreased the amount of REMs and blocked the subsequent rebound in REMs. Our data suggest that the heightened activity of POAGAD2\u2192TMN neurons during sleep encodes the increased need for REMs and consequently plays an important role in the homeostatic response to REMs restriction.\n\n## Discussion\n\nOur study demonstrates a role of POAGAD2\u2192TMN neurons in the homeostatic regulation of REMs. Using fiber photometry, we showed that the POAGAD2\u2192TMN neurons become activated throughout NREMs before transitioning to REMs, while being most active during REMs (Figure 1). Sustained optogenetic inhibition of POAGAD2\u2192TMN neurons reduced the overall amount of REMs, and the loss of REMs was not compensated during the subsequent recovery sleep (Figure 2). During the period of high REMs pressure, POAGAD2\u2192TMN neurons exhibited an increased number of calcium transients with elevated amplitude (Figure 3). Optogenetic inhibition of POAGAD2\u2192TMN neurons during REMs restriction attenuated the subsequent rebound of REMs (Figure 4). Our results suggest that the activity of POAGAD2\u2192TMN neurons reflects an increased need for REMs in the form of enhanced calcium transients and is required for the rebound following the loss of REMs.\n\nThe TMN contains histamine-producing neurons and antagonizing histamine signaling causes sleepiness (Watanabe et al., 1983; Panula et al., 1984; Lin et al., 1988; Bayliss et al., 1990; Haas et al., 2008; Uygun et al., 2016). Consistent with our photometry recordings (Figure 1\u2014figure supplement 2), electrophysiological recordings demonstrate that TMNHIS neurons are most active during wakefulness and less active during NREMs and REMs (Steininger et al., 1999; Vanni-Mercier et al., 2003; John et al., 2004; Takahashi et al., 2006). Throughout NREMs, the activity of TMNHIS neurons gradually decreased while that of POAGAD2\u2192TMN neurons showed an opposite pattern (Figure 1E, Figure 1\u2014figure supplement 2E), which is likely in part the result of direct synaptic inputs from the POAGAD2\u2192TMN neurons to TMNHIS neurons (Chung et al., 2017; Saito et al., 2018). TMNHIS neurons in turn inhibit putative sleep-active POA neurons (Williams et al., 2014). Mutual inhibition between TMNHIS and POAGAD2\u2192TMN neurons may explain their antagonistic activity pattern revealed in our fiber photometry recordings.\n\nWhile many studies have focused on the role of the POA in regulating NREMs (Sherin et al., 1996; Szymusiak et al., 1998; Lu et al., 2000; Zhang et al., 2015; Kroeger et al., 2018; Ma et al., 2019), previous in vivo electrophysiological studies found that the majority of sleep-active neurons in the POA are most active during REMs (Osaka and Matsumura, 1995; Takahashi et al., 2009; Antila et al., 2022). Similarly, recent fiber photometry recordings demonstrated that GABAergic neurons in the POA and their subtypes expressing cholecystokinin, corticotropin-releasing hormone, tachykinin 1, or galanin are most active during REMs (Miracca et al., 2022; Smith et al., 2024). Deleting the NMDA receptor GluN1 subunit in the POA reduced REMs (Miracca et al., 2022), and in line with this, sustained optogenetic inhibition of POAGAD2\u2192TMN neurons specifically decreased REMs. Consistent with these studies, our findings also support an important role of the POA in REMs regulation and, in addition, provide evidence that these neurons are also part of the homeostat regulating REMs.\n\nA previous study showed that the number of c-Fos positive POA neurons is positively correlated with the amount of REMs in rats (Lu et al., 2002). Moreover, REMs restriction led to an increase in the number of POA neurons expressing c-Fos, which was correlated with the number of attempts to enter REMs (Gvilia et al., 2006). Together with our findings that the number of calcium transients of POAGAD2\u2192TMN neurons increased during REMs restriction and that inhibition of these neurons blocked the following REMs rebound, these results support a crucial role of the POA in the homeostatic regulation of REMs. For the future, it would be interesting to test whether POA neurons projecting to other postsynaptic areas are also involved in the homeostatic regulation of REMs. A previous study showed that POA neurons projecting to REMs-regulatory pontine regions including the laterodorsal tegmental nucleus, locus coeruleus (LC), and dorsal raphe nucleus express increased levels of c-Fos after periods of dark exposure that increased REMs (Lu et al., 2002). However, the number of c-Fos positive POA neurons projecting to the LC was not increased upon REMs restriction, suggesting that this subpopulation may not be involved in the homeostatic regulation of REMs (Verret et al., 2006). Besides the TMN, the POA also projects to other REMs-regulatory regions such as the ventrolateral periaqueductal gray (vlPAG) and lateral hypothalamus (Steininger et al., 2001; Saito et al., 2018). Particularly, the projections to the vlPAG are of interest for future research, as GABAergic neurons in this area have been previously implicated in the homeostatic regulation of REMs (Hayashi et al., 2015; Weber et al., 2018). It remains to be tested whether POAGAD2\u2192TMN neurons also project to these brain regions to potentially regulate REMs homeostasis.\n\nThe cellular mechanisms underlying the elevated activity of POA neurons during high REMs pressure are unknown. Sleep-promoting neurons in the dorsal fan-shaped body of Drosophila display increased intrinsic neuronal excitability in response to sleep need (Donlea et al., 2014). REMs deprivation was shown to change the intrinsic excitability of hippocampal neurons and impact synaptic plasticity (McDermott et al., 2003; Mallick and Singh, 2011; Zhou et al., 2020). The elevated activity of POAGAD2\u2192TMN neurons during heightened REMs pressure may similarly be the result of an increased excitability. Given that the POA is also involved in the homeostatic regulation of NREMs (Sherin et al., 1996; Szymusiak et al., 1998; Gong et al., 2004; Zhang et al., 2015; Ma et al., 2019; Lu et al., 2000), it would be interesting to study how different POA subpopulations integrate the homeostatic need for NREMs and REMs.\n\nTogether, we have demonstrated a role of POAGAD2\u2192TMN neurons in the homeostatic regulation of REMs. REMs disturbances are observed in a variety of psychiatric disorders such as depression and PTSD and often precede their clinical onset (Ross et al., 1989; Gottesmann and Gottesman, 2007; Germain, 2013; Palagini et al., 2013). Elucidating the circuit mechanisms underlying the homeostatic regulation of REMs may provide novel therapeutic targets to specifically regulate and normalize REMs in these psychiatric disorders to alleviate associated symptoms and potentially slow down their progression.\n\n## Materials and methods\n\n### Mice\n\nAll experimental procedures were approved by the Institutional Animal Care and Use Committee (IACUC reference # 806197) at the University of Pennsylvania and conducted in compliance with the National Institutes of Health Office of Laboratory Animal Welfare Policy. Experiments were performed in male and female GAD2-IRES-Cre mice (#010802, Jackson Laboratory, generously donated by Taniguchi et al., 2011) or HDC-IRES-Cre mice (#021198, Jackson Laboratory, generously donated by Zecharia et al., 2012) aged 10\u201318 weeks, weighing 18\u201325 g at the time of surgery. Animals were group-housed with littermates on a 12 hr light/12 hr dark cycle (lights on 7 am and off 7 pm) with ad libitum access to food and water.\n\n### Viruses\n\nCre-dependent adeno-associated viral vectors were used to selectively express GCaMP, SwiChR++, or eYFP in POAGAD2 \u2192TMN neurons, POAGAD2 \u2192TMN projections, or TMNHIS neurons. pGP-AAV-Syn-FLEX-jGCaMP8s-WPRE was developed from the GENIE Project (Zhang et al., 2023) (162377-AAVrg, Addgene). pAAV-Syn-FLEX-GCaMP6s-WPRE-SV40 was developed from Douglas Kim & GENIE Project (Chen et al., 2013) (Penn Vector Core or 100845-AAV1, Addgene).\n\nrAAV2-Retro-Ef1\u03b1-DIO-SwiChR++-eYFP (R47730, UNC Vector Core).\n\nrAAV2-Retro-Ef1\u03b1-DIO-eYFP (R49556, UNC Vector Core).\n\n### Surgical procedures\n\nAll procedures followed the IACUC guidelines for rodent survival surgery. Mice were anesthetized with isoflurane (1\u20132%) during the surgery, and placed on a stereotaxic frame (Kopf) while being on a heating pad to maintain body temperature. The skin was incised and small holes were drilled for virus injections and implantations of optic fibers and EEG/EMG electrodes.\n\nFor fiber photometry experiments to image POAGAD2\u2192TMN neurons (Figures 1 and 3), pGP-AAV-Syn-FLEX-jGCaMP8s-WPRE was injected (Nanoject II, Drummond Scientific) into the TMN (300 nl; AP \u20132.4 mm; ML \u20131 mm; DV \u20135.4 to \u20135.2 mm, relative to bregma) and an optic fiber (400 \u03bcm diameter) was implanted into the POA (AP 0.2 mm; ML \u20130.6 mm; DV \u20135.2 mm). For imaging the POAGAD2 \u2192TMN axonal fibers (Figure 1\u2014figure supplement 1), pAAV-Syn-FLEX-GCaMP6s-WPRE-SV40 was injected into the POA (300 nl) and an optic fiber was implanted into the TMN. To image TMNHIS neurons (Figure 1\u2014figure supplement 2), pAAV-Syn-FLEX-GCaMP6s-WPRE-SV40 was injected into the TMN (300 nl) and an optic fiber was implanted into the TMN.\n\nFor optogenetic inhibition experiments (Figures 2 and 4), rAAV2-Retro-Ef1\u03b1-DIO-SwiChR++-eYFP (for inhibition group) or rAAV2-Retro-Ef1\u03b1-DIO-eYFP (for control group) was bilaterally injected into the TMN (300 nl) and bilateral optic fibers (200 \u03bcm diameter) were implanted into the POA (AP 0.2 mm; ML \u00b11.5 mm [angled at 10\u00b0]; DV \u20135.2 mm).\n\nAll mice were implanted with electroencephalogram (EEG) and electromyogram (EMG) electrodes. EEG signals were recorded with stainless steel wires attached to two screws, located in the skull on top of the parietal (AP \u20132 mm; ML 2 mm) and frontal cortex (AP 1.7 mm; ML 0.6 mm). A reference screw was inserted on top of the cerebellum. Two EMG electrodes were inserted into the neck musculature. The incision was closed with suture and the EEG/EMG electrodes and optic fibers were secured to the skull using dental cement (A-M Systems). We performed optogenetic and fiber photometry experiments at least 4 weeks after surgery.\n\n### Immunohistochemistry\n\nMice were deeply anesthetized and transcardially perfused with phosphate-buffered saline (PBS) followed by 4% paraformaldehyde (PFA) in PBS. Brains were removed and fixed overnight in 4% PFA in PBS and then stored in 30% sucrose in PBS. Brains were embedded with OCT compound (Tissue-Tek, Sakura Finetek) and frozen. 40 \u03bcm sections were cut using a cryostat (Thermo Scientific HM525 NX) and directly mounted onto glass slides. Brain sections were washed in PBS for 5 min, permeabilized using PBST (0.3% Triton X-100 in PBS) for 30 min, and incubated in blocking solution (5% normal donkey serum in 0.3% PBST; 017-000-001, Jackson ImmunoResearch Laboratories) for 1 hr. Brain sections were incubated with chicken anti-GFP antibody (1:1000; GFP8794984, Aves Lab) in the blocking solution overnight at 4\u00b0C. The following morning, sections were washed in PBS and incubated for 3 hr with the donkey anti-chicken secondary antibody conjugated to a green Alexa fluorophore 488 (1:500; 703-545-155, Jackson ImmunoResearch Laboratories). Afterward, sections were washed with PBS followed by counterstaining with Hoechst solution (#33342, Thermo Scientific). Slides were coverslipped with mounting medium (Fluoromount-G, Southern Biotechnic) and imaged using a fluorescence microscope (Microscope, Leica DM6B; Camera, Leica DFC7000GT; LED, Leica CTR6 LED) to verify virus expression and optic fiber placement. Animals were excluded if no virus expression is detected or the virus expression/optic fiber tips were not properly localized to the targeted area.\n\n### Viral transfection mapping\n\nWe generated heatmaps of the virus expression across mice as previously described (Smith et al., 2024; Stucynski et al., 2022; Schott et al., 2023). Coronal reference images for the corresponding AP coordinates were downloaded from the Allen Reference Atlas - Mouse Brain (atlas.brain-map.org). For a given AP reference atlas section, the corresponding histology section from each mouse was overlaid and regions in which GCaMP labeled cell bodies were present were manually outlined. Custom Python programs detected these outlines and determined for each location on the reference picture the number of mice with overlapping virus expression, which was encoded using different green color intensities.\n\n### Polysomnographic recordings\n\nAll sleep recordings were performed in a cage to which the animal had been habituated for several days. All recordings were performed during the light phase between 8 am and 5 pm (ZT1\u201310) in sound-attenuating chambers. For sleep recordings, EEG and EMG signals were recorded using an RHD2132 amplifier (Intan Technologies, sampling rate 1 kHz) connected to an RHD USB interface board (Intan Technologies). For fiber photometry experiments, a calcium signal was recorded using an RZ5P amplifier (Tucker-Davis Technologies, sampling rate 1.5 kHz). EEG and EMG signals were referenced to a ground screw located on top of the cerebellum. At the start of each sleep recording, EEG and EMG electrodes were connected to flexible recording cables via small connectors. To determine the brain state of the animal, we first computed the EEG and EMG spectrogram for sliding, half-overlapping 5 s windows, resulting in 2.5 s time resolution. To estimate within each 5 s window the power spectral density (PSD), we performed Welch\u2019s method with Hanning window using sliding, half-overlapping 2 s intervals. Next, we computed the time-dependent \u03b4 (0.5\u20134 Hz), \u03b8 (5\u201312 Hz), \u03c3 (12\u201320 Hz), and high \u03b3 (100\u2013150 Hz) power by integrating the EEG power in the corresponding ranges within the EEG spectrogram. In addition, we calculated the ratio of the \u03b8 and \u03b4 power (\u03b8/\u03b4) and the EMG power in the range of 50\u2013500 Hz. For each power band, we used its temporal mean to separate it into a low and high part (except for the EMG and \u03b8/\u03b4 ratio, where we used the mean plus one standard deviation as threshold). REMs was defined by a high \u03b8/\u03b4 ratio, low EMG, and low \u03b4 power. NREMs was defined by high \u03b4 power, a low \u03b8/\u03b4 ratio, and low EMG power. In addition, states with low EMG power, low \u03b4 power, but high \u03c3 power were scored as NREMs. Wake was defined by low \u03b4 power, high EMG power, and high \u03b3 power (if not otherwise classified as REMs). Our automatic algorithm that has been previously used in Weber et al., 2015; Weber et al., 2018; Chung et al., 2017; Antila et al., 2022; Smith et al., 2024; Stucynski et al., 2022; Schott et al., 2023, has 90.256% accuracy compared with the manual scoring by expert annotators. We manually verified the automatic classification using a graphical user interface visualizing the raw EEG and EMG signals, EEG spectrograms, EMG amplitudes, and the hypnogram to correct for errors, by visiting each single 2.5 s epoch in the hypnograms. The software for automatic brain state classification and manual scoring was programmed in Python (https://github.com/tortugar/Lab/tree/tortugar-patch-1/PySleep copy archived at tortugar, 2024).\n\n### Fiber photometry\n\nPrior to the recording, the optic fiber and EEG/EMG electrodes were connected to flexible patch cables. For calcium imaging, a first LED (Doric lenses) generated the excitation wavelength of 465 nm and a second LED emitted 405 nm light, which served as control for bleaching and motion artifacts. 465 and 405 nm signals were modulated at two different frequencies, 210 and 330 Hz respectively. Both lights traveled through dichroic mirrors (Doric lenses) before entering a patch cable attached to the optic fiber. Fluorescence signals emitted by GCaMP8s or GCaMP6s were collected by the optic fiber and traveled via the patch cable through a dichroic mirror and GFP emission filter (Doric lenses) before entering a photoreceiver (Newport Co.). Photoreceiver signals were relayed to an RZ5P amplifier and demodulated into two signals using the Synapse software (Tucker-Davis Technologies), corresponding to the 465 and 405 nm excitation wavelengths. To analyze the calcium activity, we used custom-written Python scripts. First, both signals were low-pass filtered at 2 Hz using a fourth order digital Butterworth filter. Next, we fitted the 405 nm to the 465 nm signal using linear regression. Finally, the linear fit was subtracted from the 465 nm signal to correct for photobleaching and/or motion artifacts, and the difference was divided by the linear fit yielding the \u0394F/F signal. Both the fluorescence signals and EEG/EMG signals were simultaneously recorded using the RZ5P amplifier. Fiber photometry recordings were excluded if the signals suddenly shifted, likely due to a loose connection between the optic fiber and patch cable.\n\n### Optogenetic manipulation\n\nSleep recordings were performed during the light phase (ZT2\u20138). Mice were tethered to bilateral patch cables connected with the lasers and a flexible recording cable to record EEG/EMG signals. The recording started after 30 min of habituation. For optogenetic inhibition experiments, 2 s step pulses (1\u20133 mW, 60 s intervals) were generated by a blue laser (473 nm, Laserglow) and sent through the optic fiber (200 \u00b5m diameter, Thorlabs) connected to the ferrule on the animal\u2019s head for 3 hr (ZT2\u20135). This laser stimulation protocol was rationally designed based on previous reports of sustained inhibition and prior results that recapitulate similar findings as inhibitory chemogenetic techniques (Iyer et al., 2016; Kim et al., 2016; Wiegert et al., 2017; Stucynski et al., 2022). TTL pulses to trigger the laser were controlled using a Raspberry Pi, which was controlled by a custom-programmed user interface programmed in Python. Following sustained inhibition, an additional 3 hr (ZT5\u20138) recording was performed without laser stimulation (post-laser session). Baseline recordings were performed (without laser stimulation, ZT2\u20135), and counterbalanced across mice and days to avoid potential order effects. For each mouse, we collected two to three baseline and laser recordings each.\n\n### REMs restriction\n\nWe employed an automatic REMs detection algorithm (Weber et al., 2015; Weber et al., 2018; Stucynski et al., 2022; Schott et al., 2023) and used a small vibrating motor to terminate/restrict REMs (Cardis et al., 2021; Osorio-Forero et al., 2023; https://github.com/luthilab/IntanLuthiLab, copy archived at luthilabcol, 2023). A small vibrating motor (DC 3 V Mini Vibration Motor, diameter: 10 mm, thickness: 3 mm, BOJACK) with a soldered lobster claw clasp was attached to a small wire hook secured in the dental cement of each mouse head. The motors had cables that were connected to a Raspberry Pi which controlled the motor onset and offset.\n\nThe automatic REMs detection algorithm determined whether the mouse was in REMs or not based on real-time spectral analysis of the EEG/EMG signals. The onset of REMs was defined as the time point where the EEG \u03b8/\u03b4 ratio exceeded a threshold (mean + 1 std of \u03b8/\u03b4), which was calculated from the same mouse using previous recordings. As soon as a REMs episode was detected, the small vibrating motor turned on to terminate REMs and consequently woke up the mouse. The motor vibrated until the REMs episode was terminated, i.e., when the \u03b8/\u03b4 ratio dropped below its mean value or if the EMG amplitude surpassed a threshold (mean + 0.5 std of amplitude). All REMs restriction experiments started at ZT1.5 and lasted until ZT7.5. Following the restriction, motors were turned off and mice were permitted to enter recovery sleep.\n\nTo monitor the calcium activity during REMs restriction using fiber photometry, we performed manual REMs restriction to avoid potential motion artifacts caused by the vibrating motor that could interfere with the integrity of the fiber photometry signals. Briefly mice underwent a 4 hr automatic REMs restriction protocol as described above. During the last 2 hr of restriction, REMs was detected manually based on the EEG and EMG signal by an experimenter who gently pulled on a string attached to the hook secured in the dental cement of the mouse head. To avoid potential photobleaching, the recording was performed during the last 1 hr of REMs restriction and 1 hr of REMs rebound. Each mouse also underwent a baseline recording on a separate day. The order of REMs restriction and baseline recordings were varied to minimize the impact of the experimental sequence on the results.\n\nWe also performed automatic REMs restriction combined with optogenetic inhibition. Each mouse underwent REMs restriction for 6 hr, and we continuously delivered 2 s step pulses (1\u20133 mW, 473 nm, Laserglow) at 60 s intervals during the last 3 hr of restriction (ZT4.5\u20137.5). Following REMs restriction, the recovery sleep was recorded.\n\n### Analysis of \u0394F/F activity at brain state transitions and during NREMs\n\nTo calculate the neural activity changes relative to brain state transitions (Figure 1D, Figure 1\u2014figure supplements 1D and 2D), we aligned the \u0394F/F signals for transitions across all mice relative to the time point of the transition (t=0 s). For each NREMs\u2192 REMs or NREMs\u2192wake transition, we ensured that the preceding NREMs episodes lasted for at least 60 s, only interrupted by short awakenings (\u226420 s). To determine the time point at which the activity significantly started to increase or decrease, we used the first 10 s of NREMs as baseline. For REMs\u2192wake and wake\u2192NREMs transitions, the preceding REMs or wake episode was at least 30 s long. Using one-way repeated measures (rm) ANOVA, we tested whether the activity (downsampled to 10 s bins) within each 10 s bin was significantly modulated throughout the transition (from \u201360 to 30 s). Finally, using pairwise t-tests with Holm-Bonferroni correction, we determined the time bins for which the activity significantly differed from the baseline bin (activity for bin \u201360 to \u201350 s). The time point for a given 10 s bin was set to its midpoint. To account for multiple comparisons, we divided the significance level (\u03b1=0.05) by the number of comparisons (Bonferroni correction). To analyze the activity throughout NREMs, we normalized the duration of all NREMs episodes and the corresponding \u0394F/F signals to the same length (Figure 1E, Figure 1\u2014figure supplement 2D and E).\n\n### Spectrotemporal correlation analysis\n\nTo identify features of the EEG spectrogram associated with POAGAD2\u2192TMN calcium activity, we adapted a receptive field model (Weber et al., 2010; Schott et al., 2023) to predict POAGAD2\u2192TMN neural activity from the spectrogram. Intuitively, we estimated a spectrotemporal filter using linear regression that predicts for each time point the POAGAD2 \u2192TMN calcium response. In more detail, we first computed the EEG spectrogram E(fi, tj) using 2 s windows with 80% overlap, resulting in a time resolution dt of 400 ms. Each spectrogram frequency was normalized by its mean power across the recording, and the parameter E(fi, tj) specifies the relative amplitude of frequency fi for time point tj. We then downsampled the \u0394F/F response using the same time resolution as for the spectrogram, and extracted all time bins with REMs, NREMs, or wake for analysis.\n\nTo predict the calcium response, the EEG spectrogram was linearly filtered with the kernel H(fi, tl). In analogy to receptive fields estimated using similar approaches for sensory neurons, we used the term \u2018spectral field\u2019 for H(fi, tl). The spectral field can be described as the set of coefficients that optimally relate the neural activity at time tj to the EEG spectrogram at time tj + l, where l represents the lag between the time points of the spectrogram and the neural response. The estimated frequency components of H(fi, tl) ranged from f1=0.5 Hz to fnf = 20 Hz, while the time axis ranged from \u2013nT * dt = \u201350 s to nT * dt = 50 s. Thus, H(fi, tl) comprises nf frequencies and 2 * nT+1 time bins over a window from \u201350 to +50 s relative to the neural response. The convolution of the EEG spectrogram with the spectral field can be expressed as\n\n$$\nr^(t_{j})=r_{0}+\\suml=\u2212n_{r}n_{r}\\sumi=1n_{f}E(f_{i},t_{j+l})H(f_{i}t_{i})\n$$\n\nThe scalar parameter r0 denotes a constant offset, and $r(t||j)$ denotes the predicted neural response. The optimal spectral field H(fi, tl) minimizes the mean-squared error between the predicted and measured neural response at time tj. To account for the large number of estimated parameters, we included a regularization term in the error function, which penalizes large kernel components and therefore guards against overfitting of the model. The spectral field for each recording was estimated using fivefold cross-validation to determine the regularization parameter (\u03bb) that optimized the average model performance on the test sets. Kernels were averaged across all recordings for individual animals; the spectrotemporal correlation in Figure 1F represents the mean spectral field across all mice.\n\n### PSD and power estimation\n\nThe PSD of the EEG was computed using Welch\u2019s method with the Hanning window for sliding, half-overlapping 2 s intervals. To calculate the power within a given frequency band, we approximated the corresponding area under the spectral density curve using a midpoint Riemann sum. To compute the EMG amplitude, we calculated the PSD of the EMG and integrated frequencies between 5 and 100 Hz. To test whether laser stimulation changed the spectral density during a specific brain state, we determined for each mouse the \u03b4, \u03b8, or \u03c3 power for that state with and without laser. To compare the PSD between experimental and control mice, we calculated the \u03b4, \u03b8, and \u03c3 power with and without laser stimulation for each mouse and normalized the power values with laser by the power obtained for epochs without laser.\n\n### Detection of calcium transients\n\nTo detect calcium transients, we first filtered the \u0394F/F signal with a zero-lag, fourth order digital Butterworth filter with cutoff frequency of 1/20 Hz. Next, prominent peaks in the signal were detected using the function scipy.find_peaks provided by the open source Python library scipy (https://scipy.org). As parameter for the peak prominence, we used 0.15 * distance between the 1st and 99th percentile of the distribution of the \u0394F/F signal. A transient was defined as occurring during NREMs and REMs, if the peak overlapped with NREMs or REMs respectively. The calcium transient amplitude was calculated by using the values 10 s preceding the peak and subtracting that from the peak values at 0 s.\n\n### Statistical tests\n\nStatistical analyses were performed using the Python modules (scipy.stats, https://scipy.org; pingouin, https://pingouin-stats.org) and Prism v9.5.0.0 (GraphPad Software Inc). We did not predetermine sample sizes, but cohorts were similarly sized as in other relevant sleep studies (Jego et al., 2013; Ma et al., 2019). All data collection was randomized and counterbalanced. All data are reported as mean \u00b1 s.e.m. A (corrected) p-value <0.05 was considered statistically significant for all comparisons. Data were compared using unpaired t-tests, paired t-tests, one-way ANOVAs, or two-way ANOVAs followed by multiple comparisons as appropriate. The statistical results for the figures are presented in the Supplementary file 1 and Figure legends.\n\n### Data and code sharing plans\n\nThe code used for data analysis is publicly available under: https://github.com/tortugar/Lab, copy archived at tortugar, 2024. All the data have been deposited at Zenodo (https://zenodo.org) and are available as of the date of publication.\n",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Adrien Peyrache, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92095.3.sa0](https://doi.org/10.7554/eLife.92095.3.sa0)\n\nThis valuable study advances our understanding of the brain nuclei involved in rapid-eye movement (REM) sleep regulation. Using a combination of imaging, electrophysiology, and optogenetic tools, the study provides convincing evidence that inhibitory neurons in the preoptic area of the hypothalamus influence REM sleep. This work will be of interest to neurobiologists working on the brain circuits of sleep.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92095.3.sa1](https://doi.org/10.7554/eLife.92095.3.sa1)\n\nThis paper identifies GABA cells in the preoptic hypothalamus and others in the posterior hypothalamus which are involved in REM sleep rebound (the increase in REM sleep) after selective REM sleep deprivation. By calcium photometry, these preoptic cells are most active during REM, and show more calcium signals during REM deprivation, suggesting they respond to \"REM pressure\". Inhibiting these cells ontogenetically diminishes REM sleep. The optogenetic and photometry work is carried out to a high standard, the paper is well written, and the findings are interesting and enhance our understanding of REM sleep regulation. The new findings make it clear that as for the circuitry that regulates NREM sleep, REM sleep circuitry is also quite distributed in the brain. It is unclear if there is a true \"REM center\". The study of mechanisms of catching up on lost sleep (sleep homeostasis), has previously focused on NREM sleep, where various circuits have been identified. That there is a special mechanism that also tracks time awake and compensates with REM sleep is intriguing.\n\nIn a broader context, the existence of REM rebound suggests that REM sleep must have a function, otherwise why catch up on it. There is a lot of literature that suggests REM contributes to emotional processing, for example. The new findings deepen our appreciation of REM regulation. As REM sleep is often disturbed in stress (e.g. post-traumatic stress disorder) and in depression, understanding more about REM regulation could ultimately aid treatments for people living with these conditions.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92095.3.sa2](https://doi.org/10.7554/eLife.92095.3.sa2)\n\nMaurer et al investigated the contribution of GAD2+ neurons in the preoptic area (POA), projecting to the tuberomammillary nucleus (TMN), to REM sleep regulation. They applied an elegant design to monitor and manipulate activity of this specific group of neurons: a GAD2-Cre mouse, injected with retrograde AAV constructs in the TMN, thereby presumably only targeting GAD2+ cells projecting to the TMN. Using this set-up in combination with technically challenging techniques including EEG with photometry and REM sleep deprivation, the authors found that this cell-type studied becomes active shortly (\u224840sec) prior to entering REM sleep and remains active during REM sleep. Moreover, optogenetic inhibition of GAD2+ cells inhibits REM sleep by a third, and also impairs the rebound in REM sleep in the following hour. Thus, the data makes a convincing case for a role of GAD2+ neurons in the POA projecting to the TMN in REM sleep regulation.\n",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "46d29225-a3dc-4323-8c48-6339e254003a",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C1",
+      "claim": "Rapid eye movement sleep (REMs) is characterized by activated electroencephalogram (EEG) and muscle atonia, accompanied by vivid dreams.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid eye movement sleep (REMs) is characterized by activated electroencephalogram (EEG) and muscle atonia, accompanied by vivid dreams.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characterization of REMs based on scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "7531803c-cee2-418f-b6a4-46fee65cc0bf",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C2",
+      "claim": "REMs is homeostatically regulated, ensuring that any loss of REMs is compensated by a subsequent increase in its amount.",
+      "claim_type": "EXPLICIT",
+      "source": "REMs is homeostatically regulated, ensuring that any loss of REMs is compensated by a subsequent increase in its amount.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the subsequent sentence.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "5c803618-5f9e-4974-bcb5-f7d252069848",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C3",
+      "claim": "REMs is homeostatically regulated in various species including mice, rats, cats, and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid eye movement sleep (REMs) is homeostatically regulated as demonstrated in various species including mice, rats, cats, and humans (Siegel and Gordon, 1965; Beersma et al., 1990; Benington et al., 1994; Endo et al., 1997; Endo et al., 1998; Rechtschaffen et al., 1999; Franken, 2002; Shea et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "5f5d7cc2-212b-4507-93b3-89b22d8a5080",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C4",
+      "claim": "GABAergic neurons in the preoptic area of the hypothalamus projecting to the tuberomammillary nucleus (POAGAD2\u2192TMN neurons) are crucial for the homeostatic regulation of REMs in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that GABAergic neurons in the preoptic area of the hypothalamus projecting to the tuberomammillary nucleus (POAGAD2\u2192TMN neurons) are crucial for the homeostatic regulation of REMs in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "f1e899df-540c-4413-8237-dd1fc11cf72c",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C5",
+      "claim": "POAGAD2\u2192TMN neurons are most active during REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "POAGAD2\u2192TMN neurons are most active during REMs, and inhibiting them specifically decreases REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c6e2be1d-b3de-40a2-8623-632b51c742b9",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C6",
+      "claim": "Inhibiting POAGAD2\u2192TMN neurons specifically decreases REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "POAGAD2\u2192TMN neurons are most active during REMs, and inhibiting them specifically decreases REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by optogenetic inhibition experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "884705bd-c0ba-4fd2-8404-9f2183159e3e",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C7",
+      "claim": "REMs restriction leads to an increased number and amplitude of calcium transients in POAGAD2\u2192TMN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "REMs restriction leads to an increased number and amplitude of calcium transients in POAGAD2\u2192TMN neurons, reflecting the accumulation of REMs pressure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fiber photometry data during REMs restriction shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "ed78fe8a-5323-414e-944e-ea43f60b7e94",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C8",
+      "claim": "Inhibiting POAGAD2\u2192TMN neurons during REMs restriction blocked the subsequent rebound of REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting POAGAD2\u2192TMN neurons during REMs restriction blocked the subsequent rebound of REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by optogenetic inhibition experiments during REMs restriction shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c7a40819-8a41-4cb5-af44-01d4d4acc536",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C9",
+      "claim": "The POA contains neurons that become activated during sleep and that are sufficient and necessary for sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "The POA contains neurons that become activated during sleep and that are sufficient and necessary for sleep (Economo, 1930; Nauta, 1946; McGinty and Sterman, 1968; Sallanon et al., 1989; Sherin et al., 1996; Szymusiak et al., 1998; Lu et al., 2000; Gong et al., 2004; Takahashi et al., 2009; Zhang et al., 2015; Kroeger et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "10df619d-7b5f-4c44-a5e5-36b5b9314532",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C10",
+      "claim": "POA GABAergic neurons projecting to the tuberomammillary nucleus form a subpopulation of sleep-active POA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, POA GABAergic neurons projecting to the tuberomammillary nucleus (POAGAD2\u2192TMN neurons) form a subpopulation of sleep-active POA neurons, and promote sleep when optogenetically activated (Chung et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "41381f5f-25d9-4aca-9307-3a0b5cea3ddf",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C11",
+      "claim": "POAGAD2\u2192TMN neurons promote sleep when optogenetically activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, POA GABAergic neurons projecting to the tuberomammillary nucleus (POAGAD2\u2192TMN neurons) form a subpopulation of sleep-active POA neurons, and promote sleep when optogenetically activated (Chung et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "48978157-ab1a-48d8-b169-e1a427dfc3b5",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C12",
+      "claim": "c-Fos expression in the POA is increased in REMs restricted rats.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study demonstrated that c-Fos expression in the POA is increased in REMs restricted rats (Gvilia et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "d7981343-f7bb-430c-a2c8-53f49089bfa0",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C13",
+      "claim": "The calcium activity of POAGAD2\u2192TMN neurons was significantly higher during REMs compared with that during wake and NREMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The calcium activity of POAGAD2\u2192TMN neurons was significantly higher during REMs compared with that during wake and NREMs (Figure 1B and C; detailed statistical results are shown in Figure legends and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c84e05a9-eeff-4984-9517-c5a234e949de",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C14",
+      "claim": "The calcium activity of POAGAD2\u2192TMN neurons during NREMs\u2192REMs transitions becomes significantly increased 40 s before the REMs onset and remains elevated throughout REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the calcium activity of POAGAD2\u2192TMN neurons during NREMs\u2192 REMs transitions becomes significantly increased 40 s before the REMs onset and remains elevated throughout REMs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "256874cd-6b6e-4f88-9f3e-079e2e876e7b",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C15",
+      "claim": "During NREMs\u2192wake transitions, the activity of POAGAD2\u2192TMN neurons started rising 10 s before the wake onset and remained elevated for 10 s after the onset.",
+      "claim_type": "EXPLICIT",
+      "source": "During NREMs\u2192wake transitions, the activity of POAGAD2\u2192TMN neurons started rising 10 s before the wake onset and remained elevated for 10 s after the onset (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "bebeef7b-c396-434c-b4e7-057f9325cd7f",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C16",
+      "claim": "The \u0394F/F activity of POAGAD2\u2192TMN neurons gradually increased throughout NREMs episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394F/F activity gradually increased throughout NREMs episodes (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "74bf74f2-08e8-4bba-a1ff-b8d9aaf9120f",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C17",
+      "claim": "The activity of POAGAD2\u2192TMN neurons is preceded by an increase in the \u03b8 and \u03c3 power and reduction in the \u03b4 power.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the activity of POAGAD2\u2192TMN neurons is preceded by an increase in the \u03b8 and \u03c3 power and reduction in the \u03b4 (0.5\u20134.5 Hz) power (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by spectrotemporal correlation analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "9e35e491-2331-4b94-a270-53d8e1fbf57c",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C18",
+      "claim": "POAGAD2\u2192TMN axonal fibers were most active during REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the activity found for POAGAD2\u2192TMN neurons using retrograde AAVs (Figure 1B and C), POAGAD2\u2192TMN fibers were most active during REMs (Figure 1\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data of axonal fibers shown in Figure 1\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "1ee18d2a-d628-4a01-a7b4-400293878502",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C19",
+      "claim": "During NREMs, the activity of POAGAD2\u2192TMN axonal fibers gradually increased before transitioning to REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "During NREMs, the activity of POAGAD2\u2192TMN axonal fibers gradually increased before transitioning to REMs (Figure 1\u2014figure supplement 1D), demonstrating that the activity of POAGAD2\u2192TMN axonal fibers closely resembles that of cell bodies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "af5b78b1-dd98-4193-baaf-b54df496eb38",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C20",
+      "claim": "TMNHIS neurons are highly active during wake and less active during NREMs and REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous electrophysiological studies (Steininger et al., 1999; Vanni-Mercier et al., 2003; John et al., 2004; Takahashi et al., 2006), we found in photometry recordings that TMNHIS neurons are highly active during wake and less active during NREMs and REMs (Figure 1\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1\u2014figure supplement 2A\u2013C and citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "2927b957-6524-4821-aebc-d5adf0128c33",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C21",
+      "claim": "The activity of TMNHIS neurons became significantly activated after the transition from NREMs or REMs to wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the activity of TMNHIS neurons became significantly activated after the transition from NREMs or REMs to wakefulness (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "35efaf09-3888-4780-9326-3b0cded1aaf2",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C22",
+      "claim": "The TMNHIS neuron activity gradually decreased during NREMs episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The TMNHIS neuron activity gradually decreased during NREMs episodes (Figure 1\u2014figure supplement 2E), possibly as a result of inhibitory inputs from POAGAD2\u2192TMN neurons (Chung et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1\u2014figure supplement 2E and a citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "35c1a577-7106-42f0-a816-eb4c5f1e5cca",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C23",
+      "claim": "TMNHIS neuron activity gradually decreases throughout the inter-REM interval, reaching its lowest level at the onset of REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, examining the time course of TMNHIS neurons between two successive REMs episodes (inter-REM interval), we found that their activity gradually decreases throughout the inter-REM interval, reaching its lowest level at the onset of REMs (Figure 1\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 1\u2014figure supplement 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "8f027c20-edbc-4b40-acd2-84e179c5b436",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C24",
+      "claim": "A minimal activity of TMNHIS neurons is required for entering REMs.",
+      "claim_type": "IMPLICIT",
+      "source": "This finding suggests that a minimal activity of TMNHIS neurons is required for entering REMs, and suppression of TMNHIS activity therefore likely facilitates transitions to REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TMNHIS activity reaches its lowest level at REMs onset.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c675efd1-c944-4b0f-b8fd-7ad30a5a625a",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C25",
+      "claim": "Suppression of TMNHIS activity likely facilitates transitions to REMs.",
+      "claim_type": "IMPLICIT",
+      "source": "This finding suggests that a minimal activity of TMNHIS neurons is required for entering REMs, and suppression of TMNHIS activity therefore likely facilitates transitions to REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TMNHIS activity reaches its lowest level at REMs onset.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "041e5ddf-58a6-4cdb-8829-ac419bc03ce4",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C26",
+      "claim": "SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons reduced the amount of REMs compared with recordings without laser stimulation in the same mice and eYFP mice with laser stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons reduced the amount of REMs compared with recordings without laser stimulation in the same mice and eYFP mice with laser stimulation (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic inhibition data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "26f0b08e-1f05-4a8d-8b68-400d0af565c7",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C27",
+      "claim": "The overall time spent in wake and NREMs was not altered by SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall time spent in wake and NREMs was not altered by SwiChR++-mediated inhibition (Figure 2C, Figure 2\u2014figure supplement 1A and B), suggesting that POAGAD2\u2192TMN neuron activity specifically regulates the amount of REMs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic inhibition data shown in Figure 2C and Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "bde739ed-0002-4545-8628-877e6cffda93",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C28",
+      "claim": "POAGAD2\u2192TMN neuron activity specifically regulates the amount of REMs.",
+      "claim_type": "IMPLICIT",
+      "source": "The overall time spent in wake and NREMs was not altered by SwiChR++-mediated inhibition (Figure 2C, Figure 2\u2014figure supplement 1A and B), suggesting that POAGAD2\u2192TMN neuron activity specifically regulates the amount of REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that inhibition only affected REMs and not wake or NREMs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "4dafe35b-df91-4463-ae31-623ca21d519b",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C29",
+      "claim": "SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons increased the \u03b4 and \u03c3 power in the EEG during REMs compared with SwiChR++-without laser and eYFP-laser groups.",
+      "claim_type": "EXPLICIT",
+      "source": "During REMs, SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons increased the \u03b4 and \u03c3 power in the EEG compared with SwiChR++-without laser and eYFP-laser groups (Figure 2D, Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EEG spectral analysis shown in Figure 2D and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "a33647da-a6f4-46d2-abc3-6a332295320a",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C30",
+      "claim": "There were no differences in the amount of REMs, NREMs, and wake between SwiChR++ and eYFP groups during the post-laser recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the reduction of REMs during the laser stimulation in SwiChR++ mice (Figure 2C), there were no differences in the amount of REMs, NREMs, and wake between SwiChR++ and eYFP groups during the post-laser recordings (Figure 2E, Figure 2\u2014figure supplement 1E and F), suggesting that the loss of REMs during SwiChR++-mediated inhibition was not followed by a homeostatic increase in REMs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data from post-laser recordings shown in Figure 2E and Figure 2\u2014figure supplement 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "14619e35-f1f4-4a92-8718-b2afa661b3dd",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C31",
+      "claim": "The loss of REMs during SwiChR++-mediated inhibition was not followed by a homeostatic increase in REMs.",
+      "claim_type": "IMPLICIT",
+      "source": "Despite the reduction of REMs during the laser stimulation in SwiChR++ mice (Figure 2C), there were no differences in the amount of REMs, NREMs, and wake between SwiChR++ and eYFP groups during the post-laser recordings (Figure 2E, Figure 2\u2014figure supplement 1E and F), suggesting that the loss of REMs during SwiChR++-mediated inhibition was not followed by a homeostatic increase in REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of rebound in REMs after inhibition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "63808637-da6d-42ec-b322-613c1329bfb7",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C32",
+      "claim": "SwiChR++-mediated inhibition of TMNHIS neurons increased the amount of REMs compared with recordings without laser stimulation in the same mice and eYFP mice with laser stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "SwiChR++-mediated inhibition of TMNHIS neurons increased the amount of REMs compared with recordings without laser stimulation in the same mice and eYFP mice with laser stimulation (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic inhibition data shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "f3151b54-cc1a-4e44-be8d-8e2d6e54b995",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C33",
+      "claim": "6 hr of REMs restriction significantly reduced the amount of REMs and duration of REMs episodes, while increasing their frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with the baseline recordings from the same mice during the same circadian time, we found that 6 hr of REMs restriction (ZT 1.5\u20137.5) significantly reduced the amount of REMs and duration of REMs episodes, while increasing their frequency (Figure 3\u2014figure supplement 1A, D-F; amount: Cohen's d [d]=\u20131.621; duration: d=\u20132.669; frequency: d=1.294).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by REMs restriction data shown in Figure 3\u2014figure supplement 1A, D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "470a7ca2-4ee1-44c9-9d47-8123225e6aff",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C34",
+      "claim": "The number of motor activations gradually increased as mice tried to enter REMs more frequently, indicating the accumulation of REMs pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of motor activations gradually increased as mice tried to enter REMs more frequently, indicating the accumulation of REMs pressure (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data on motor activations shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "e05102e7-6023-4064-8451-7cbe7a88b176",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C35",
+      "claim": "During rebound, the amount of REMs was significantly increased compared with that during the same circadian time due to an increased frequency of REMs episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "During rebound (ZT 7.5\u20138.5), the amount of REMs was significantly increased compared with that during the same circadian time due to an increased frequency of REMs episodes (Figure 3\u2014figure supplement 1H-K; amount: d=0.868; frequency: d=1.147), compensating for the amount of REMs lost during restriction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by REMs rebound data shown in Figure 3\u2014figure supplement 1H-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "3aac3729-8254-49ee-b1d8-49824204432d",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C36",
+      "claim": "During restriction, the number of calcium transients of the POAGAD2\u2192TMN neurons was significantly increased compared with that during baseline recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "During restriction, the number of calcium transients of the POAGAD2\u2192TMN neurons was significantly increased compared with that during baseline recordings (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data during REMs restriction shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "1d355d17-5c92-4a9d-b0cc-26f8fe186297",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C37",
+      "claim": "The number of calcium peaks in POAGAD2\u2192TMN neurons was significantly elevated during NREMs during REMs restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the number of calcium peaks was significantly elevated during NREMs, likely reflecting an increased pressure to transition to REMs (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "d24db26f-54e6-40c1-b22f-438f42003517",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C38",
+      "claim": "During REMs restriction, the amplitude of NREMs and REMs calcium transients in POAGAD2\u2192TMN neurons was significantly higher compared with that during the circadian baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "During REMs restriction, the amplitude of NREMs and REMs calcium transients was significantly higher compared with that during the circadian baseline (Figure 3D and E) and remained elevated during NREMs in the rebound phase (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "8affaae5-3b14-4a2a-8c17-f621abffca69",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C39",
+      "claim": "The amplitude of calcium transients in POAGAD2\u2192TMN neurons remained elevated during NREMs in the rebound phase.",
+      "claim_type": "EXPLICIT",
+      "source": "During REMs restriction, the amplitude of NREMs and REMs calcium transients was significantly higher compared with that during the circadian baseline (Figure 3D and E) and remained elevated during NREMs in the rebound phase (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fiber photometry data shown in Figure 3F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "179317c3-b605-4897-8f20-0eadbde3860c",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C40",
+      "claim": "During periods of high REMs pressure, the POAGAD2\u2192TMN neurons exhibit an increased number of calcium transients with higher amplitude compared with that during baseline levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings show that during periods of high REMs pressure, the POAGAD2\u2192TMN neurons exhibit an increased number of calcium transients with higher amplitude compared with that during baseline levels suggesting that the activity of these neurons may reflect the heightened homeostatic need for REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings from Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "4ed3df0a-e63f-49c1-91e2-32e41df180ef",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C41",
+      "claim": "The activity of POAGAD2\u2192TMN neurons may reflect the heightened homeostatic need for REMs.",
+      "claim_type": "IMPLICIT",
+      "source": "Overall, these findings show that during periods of high REMs pressure, the POAGAD2\u2192TMN neurons exhibit an increased number of calcium transients with higher amplitude compared with that during baseline levels suggesting that the activity of these neurons may reflect the heightened homeostatic need for REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between increased calcium transients and REMs pressure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "76579b7d-937f-44ed-b568-14eea99c4cec",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C42",
+      "claim": "SwiChR-mediated inhibition of POAGAD2\u2192TMN neurons during REMs restriction decreased the percentage of REMs and reduced the frequency of REMs episodes with marginal significance.",
+      "claim_type": "EXPLICIT",
+      "source": "During restriction, SwiChR-mediated inhibition of POAGAD2\u2192TMN neurons decreased the percentage of REMs and reduced the frequency of REMs episodes with marginal significance (Figure 4B\u2013D, Figure 4\u2014figure supplement 1A and B amount: d=\u20131.254).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic inhibition data during REMs restriction shown in Figure 4B\u2013D and Figure 4\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "0884e927-9f3c-4473-ae1d-ea4417399f17",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C43",
+      "claim": "Inhibition of POAGAD2\u2192TMN neurons during REMs restriction resulted in a reduced amount of REMs during the rebound compared with that in eYFP mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhibition of POAGAD2\u2192TMN neurons during REMs restriction resulted in a reduced amount of REMs during the rebound compared with that in eYFP mice (Figure 4B, F, and G, Figure 4\u2014figure supplement 1D, E, amount: d=\u20131.317).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by optogenetic inhibition data shown in Figure 4B, F, and G, and Figure 4\u2014figure supplement 1D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "8f851b22-7335-422e-8049-1253c4584d7b",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C44",
+      "claim": "Inactivating POAGAD2\u2192TMN neurons during heightened REMs pressure not only decreased the amount of REMs, but also prevented its homeostatic rebound during the following recovery sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inactivating POAGAD2\u2192TMN neurons during heightened REMs pressure not only decreased the amount of REMs, but also prevented its homeostatic rebound during the following recovery sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings from Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "28c8be3d-5789-42d9-8c73-56373877fb77",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C45",
+      "claim": "Inhibition of POAGAD2\u2192TMN neurons during REMs restriction reduced the REMs \u03b4 power, NREMs \u03b8 and \u03c3 power compared with that in eYFP mice with laser stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inhibition of POAGAD2\u2192TMN neurons during REMs restriction reduced the REMs \u03b4 power, NREMs \u03b8 and \u03c3 power compared with that in eYFP mice with laser stimulation (Figure 4E, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by EEG spectral analysis shown in Figure 4E and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "a8e0880f-33f7-4294-b83d-b6148953bfb9",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C46",
+      "claim": "The reduced \u03b8 and \u03c3 power during NREMs could result from less attempts to enter REMs.",
+      "claim_type": "IMPLICIT",
+      "source": "The reduced \u03b8 and \u03c3 power during NREMs could result from less attempts to enter REMs (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between EEG power and REMs attempts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "79df0f07-c466-464c-8dc3-a34125dca418",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C47",
+      "claim": "Inhibiting POAGAD2\u2192TMN neurons during REMs restriction significantly decreased the amount of REMs and blocked the subsequent rebound in REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, inhibiting POAGAD2\u2192TMN neurons during REMs restriction significantly decreased the amount of REMs and blocked the subsequent rebound in REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings from Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "6c437cda-3a97-4e80-a0e6-f771447fcaba",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C48",
+      "claim": "The heightened activity of POAGAD2\u2192TMN neurons during sleep encodes the increased need for REMs and consequently plays an important role in the homeostatic response to REMs restriction.",
+      "claim_type": "IMPLICIT",
+      "source": "Our data suggest that the heightened activity of POAGAD2\u2192TMN neurons during sleep encodes the increased need for REMs and consequently plays an important role in the homeostatic response to REMs restriction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined findings of increased activity during restriction and blocked rebound upon inhibition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "5751a328-22c1-41e1-b407-056768ab4ed4",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C49",
+      "claim": "POAGAD2\u2192TMN neurons become activated throughout NREMs before transitioning to REMs, while being most active during REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fiber photometry, we showed that the POAGAD2\u2192TMN neurons become activated throughout NREMs before transitioning to REMs, while being most active during REMs (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of findings from Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "86f77c51-2a21-4be6-a01e-9e1b2dc60d3f",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C50",
+      "claim": "Sustained optogenetic inhibition of POAGAD2\u2192TMN neurons reduced the overall amount of REMs, and the loss of REMs was not compensated during the subsequent recovery sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Sustained optogenetic inhibition of POAGAD2\u2192TMN neurons reduced the overall amount of REMs, and the loss of REMs was not compensated during the subsequent recovery sleep (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of findings from Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "31266b31-873c-402d-880d-457ed3a8c1b9",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C51",
+      "claim": "During the period of high REMs pressure, POAGAD2\u2192TMN neurons exhibited an increased number of calcium transients with elevated amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "During the period of high REMs pressure, POAGAD2\u2192TMN neurons exhibited an increased number of calcium transients with elevated amplitude (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of findings from Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "09cdcb66-7b1c-487c-ae71-1789a2769fe9",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C52",
+      "claim": "Optogenetic inhibition of POAGAD2\u2192TMN neurons during REMs restriction attenuated the subsequent rebound of REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic inhibition of POAGAD2\u2192TMN neurons during REMs restriction attenuated the subsequent rebound of REMs (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of findings from Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "8ff9ae2e-2eee-4ac9-a722-0e2e6588f52b",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C53",
+      "claim": "The activity of POAGAD2\u2192TMN neurons reflects an increased need for REMs in the form of enhanced calcium transients and is required for the rebound following the loss of REMs.",
+      "claim_type": "IMPLICIT",
+      "source": "Our results suggest that the activity of POAGAD2\u2192TMN neurons reflects an increased need for REMs in the form of enhanced calcium transients and is required for the rebound following the loss of REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c8bce90f-cf7d-49fe-af47-3bc70ce02bcf",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C54",
+      "claim": "The TMN contains histamine-producing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The TMN contains histamine-producing neurons and antagonizing histamine signaling causes sleepiness (Watanabe et al., 1983; Panula et al., 1984; Lin et al., 1988; Bayliss et al., 1990; Haas et al., 2008; Uygun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "186ed363-2361-47c6-999d-e39c466b2932",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C55",
+      "claim": "Antagonizing histamine signaling causes sleepiness.",
+      "claim_type": "EXPLICIT",
+      "source": "The TMN contains histamine-producing neurons and antagonizing histamine signaling causes sleepiness (Watanabe et al., 1983; Panula et al., 1984; Lin et al., 1988; Bayliss et al., 1990; Haas et al., 2008; Uygun et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c2b5e036-5a28-44b4-b42c-bb733ecdcbcb",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C56",
+      "claim": "TMNHIS neurons are most active during wakefulness and less active during NREMs and REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our photometry recordings (Figure 1\u2014figure supplement 2), electrophysiological recordings demonstrate that TMNHIS neurons are most active during wakefulness and less active during NREMs and REMs (Steininger et al., 1999; Vanni-Mercier et al., 2003; John et al., 2004; Takahashi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and data from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "351dc329-d2f8-461f-83da-0833b7525a29",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C57",
+      "claim": "Mutual inhibition between TMNHIS and POAGAD2\u2192TMN neurons may explain their antagonistic activity pattern revealed in fiber photometry recordings.",
+      "claim_type": "IMPLICIT",
+      "source": "Mutual inhibition between TMNHIS and POAGAD2\u2192TMN neurons may explain their antagonistic activity pattern revealed in our fiber photometry recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed activity patterns and known connectivity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c779eab1-1607-4f89-b861-26046f50dfb1",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C58",
+      "claim": "The majority of sleep-active neurons in the POA are most active during REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "While many studies have focused on the role of the POA in regulating NREMs (Sherin et al., 1996; Szymusiak et al., 1998; Lu et al., 2000; Zhang et al., 2015; Kroeger et al., 2018; Ma et al., 2019), previous in vivo electrophysiological studies found that the majority of sleep-active neurons in the POA are most active during REMs (Osaka and Matsumura, 1995; Takahashi et al., 2009; Antila et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "ae3c8903-475b-4d14-a02c-0bd886f8f91c",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C59",
+      "claim": "GABAergic neurons in the POA and their subtypes expressing cholecystokinin, corticotropin-releasing hormone, tachykinin 1, or galanin are most active during REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, recent fiber photometry recordings demonstrated that GABAergic neurons in the POA and their subtypes expressing cholecystokinin, corticotropin-releasing hormone, tachykinin 1, or galanin are most active during REMs (Miracca et al., 2022; Smith et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "536f1050-7b9b-480a-9a5b-a948904e979d",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C60",
+      "claim": "Deleting the NMDA receptor GluN1 subunit in the POA reduced REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Deleting the NMDA receptor GluN1 subunit in the POA reduced REMs (Miracca et al., 2022), and in line with this, sustained optogenetic inhibition of POAGAD2\u2192TMN neurons specifically decreased REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "afead5a4-b990-4317-a5bc-f30d6d8eda86",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C61",
+      "claim": "The number of c-Fos positive POA neurons is positively correlated with the amount of REMs in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study showed that the number of c-Fos positive POA neurons is positively correlated with the amount of REMs in rats (Lu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "b2771476-a200-4e47-bdc3-c26638e32139",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C62",
+      "claim": "REMs restriction led to an increase in the number of POA neurons expressing c-Fos, which was correlated with the number of attempts to enter REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, REMs restriction led to an increase in the number of POA neurons expressing c-Fos, which was correlated with the number of attempts to enter REMs (Gvilia et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "111b643e-5bd4-44aa-97b2-6f27a6bfa926",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C63",
+      "claim": "The POA is crucial for the homeostatic regulation of REMs.",
+      "claim_type": "IMPLICIT",
+      "source": "Together with our findings that the number of calcium transients of POAGAD2\u2192TMN neurons increased during REMs restriction and that inhibition of these neurons blocked the following REMs rebound, these results support a crucial role of the POA in the homeostatic regulation of REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined findings of the study and prior research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "9487f8b1-89bb-46f9-b03f-55faba8dd538",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C64",
+      "claim": "POA neurons projecting to REMs-regulatory pontine regions including the laterodorsal tegmental nucleus, locus coeruleus (LC), and dorsal raphe nucleus express increased levels of c-Fos after periods of dark exposure that increased REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study showed that POA neurons projecting to REMs-regulatory pontine regions including the laterodorsal tegmental nucleus, locus coeruleus (LC), and dorsal raphe nucleus express increased levels of c-Fos after periods of dark exposure that increased REMs (Lu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "75879f8f-5b61-43b6-998d-d7627ec4b8bd",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C65",
+      "claim": "The number of c-Fos positive POA neurons projecting to the LC was not increased upon REMs restriction, suggesting that this subpopulation may not be involved in the homeostatic regulation of REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of c-Fos positive POA neurons projecting to the LC was not increased upon REMs restriction, suggesting that this subpopulation may not be involved in the homeostatic regulation of REMs (Verret et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research and includes an inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "95607858-5670-46fa-bd55-e0cbbafa5eed",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C66",
+      "claim": "The POA also projects to other REMs-regulatory regions such as the ventrolateral periaqueductal gray (vlPAG) and lateral hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the TMN, the POA also projects to other REMs-regulatory regions such as the ventrolateral periaqueductal gray (vlPAG) and lateral hypothalamus (Steininger et al., 2001; Saito et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "0ada20db-aadb-46a7-8c01-9151e8fa6ce7",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C67",
+      "claim": "GABAergic neurons in the vlPAG have been previously implicated in the homeostatic regulation of REMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, the projections to the vlPAG are of interest for future research, as GABAergic neurons in this area have been previously implicated in the homeostatic regulation of REMs (Hayashi et al., 2015; Weber et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "be1aa64e-5d24-45de-98bf-e47d7ada6862",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C68",
+      "claim": "Sleep-promoting neurons in the dorsal fan-shaped body of Drosophila display increased intrinsic neuronal excitability in response to sleep need.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep-promoting neurons in the dorsal fan-shaped body of Drosophila display increased intrinsic neuronal excitability in response to sleep need (Donlea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "72e1c8df-6522-4d66-ab7c-22c6f6fb2a14",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C69",
+      "claim": "REMs deprivation was shown to change the intrinsic excitability of hippocampal neurons and impact synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "REMs deprivation was shown to change the intrinsic excitability of hippocampal neurons and impact synaptic plasticity (McDermott et al., 2003; Mallick and Singh, 2011; Zhou et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "123750c7-20ed-4ebd-9ded-f29a09ec4601",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C70",
+      "claim": "The elevated activity of POAGAD2\u2192TMN neurons during heightened REMs pressure may be the result of an increased excitability.",
+      "claim_type": "IMPLICIT",
+      "source": "The elevated activity of POAGAD2\u2192TMN neurons during heightened REMs pressure may similarly be the result of an increased excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on findings in other systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "ddc4fdea-eb9d-4aeb-8ecb-80a52227527a",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C71",
+      "claim": "The POA is also involved in the homeostatic regulation of NREMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the POA is also involved in the homeostatic regulation of NREMs (Sherin et al., 1996; Szymusiak et al., 1998; Gong et al., 2004; Zhang et al., 2015; Ma et al., 2019; Lu et al., 2000), it would be interesting to study how different POA subpopulations integrate the homeostatic need for NREMs and REMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "fad4ce44-7fc7-4a62-b069-c6fedf7bcdaf",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C72",
+      "claim": "REMs disturbances are observed in a variety of psychiatric disorders such as depression and PTSD and often precede their clinical onset.",
+      "claim_type": "EXPLICIT",
+      "source": "REMs disturbances are observed in a variety of psychiatric disorders such as depression and PTSD and often precede their clinical onset (Ross et al., 1989; Gottesmann and Gottesman, 2007; Germain, 2013; Palagini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "a6e127c0-d13f-4e8c-a070-9fd2f698acd1",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C73",
+      "claim": "Elucidating the circuit mechanisms underlying the homeostatic regulation of REMs may provide novel therapeutic targets to specifically regulate and normalize REMs in psychiatric disorders.",
+      "claim_type": "IMPLICIT",
+      "source": "Elucidating the circuit mechanisms underlying the homeostatic regulation of REMs may provide novel therapeutic targets to specifically regulate and normalize REMs in these psychiatric disorders to alleviate associated symptoms and potentially slow down their progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "a44ccc65-8908-43c6-b9cb-8302f3b12653",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C74",
+      "claim": "Virus expression and optic fiber tracts were located in the ventrolateral POA, lateral POA, and the lateral part of medial POA.",
+      "claim_type": "EXPLICIT",
+      "source": "pGP-AAV-Syn-FLEX-jGCaMP8s-WPRE was developed from the GENIE Project (Zhang et al., 2023) (162377-AAVrg, Addgene). pAAV-Syn-FLEX-GCaMP6s-WPRE-SV40 was developed from Douglas Kim & GENIE Project (Chen et al., 2013) (Penn Vector Core or 100845-AAV1, Addgene).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the anatomical location of experimental manipulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "b0733d87-3be8-4fdf-8c2f-2060f95ec15a",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "claim_id": "C75",
+      "claim": "The automatic brain state classification algorithm has 90.256% accuracy compared with manual scoring by expert annotators.",
+      "claim_type": "EXPLICIT",
+      "source": "Our automatic algorithm that has been previously used in Weber et al., 2015; Weber et al., 2018; Chung et al., 2017; Antila et al., 2022; Smith et al., 2024; Stucynski et al., 2022; Schott et al., 2023, has 90.256% accuracy compared with the manual scoring by expert annotators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "POAGAD2\u2192TMN neurons are most active during REMs and become activated throughout NREMs before transitioning to REMs. Fiber photometry recordings show that calcium activity of these neurons is significantly higher during REMs compared to wake and NREMs, increases 40s before REMs onset, and gradually rises throughout NREMs episodes. This activity is preceded by increases in \u03b8 and \u03c3 EEG power and reduction in \u03b4 power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C13-C19, and C49 are well-supported by fiber photometry data from Figure 1 showing state-dependent activity patterns. The temporal dynamics during state transitions are quantified with appropriate statistical tests (one-way rm ANOVA with post-hoc corrections). The spectrotemporal correlation analysis (C17) provides additional mechanistic insight linking neural activity to EEG features characteristic of pre-REMs transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "71729b2f-5d9f-46ce-bc93-5a900a409758",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of POAGAD2\u2192TMN neurons using SwiChR++ specifically reduces REMs without affecting wake or NREMs. The inhibition increased \u03b4 and \u03c3 power in the EEG during REMs, and the lost REMs was not compensated during subsequent recovery sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C26-C29, and C50 are supported by optogenetic inhibition experiments in Figure 2 with appropriate controls (eYFP mice, within-subject comparisons). Statistical analyses using mixed ANOVA and corrected t-tests demonstrate specificity for REMs (C27-C28). The lack of homeostatic rebound (C30-C31) is a critical observation but requires cautious interpretation as it may reflect insufficient REMs pressure accumulation rather than a direct role in homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "668a2ef3-aa15-49dd-b23e-2470c511a869",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The loss of REMs during SwiChR++-mediated inhibition of POAGAD2\u2192TMN neurons was not followed by a homeostatic increase in REMs during post-laser recovery sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are supported by post-laser recordings showing no differences between SwiChR++ and eYFP groups (Figure 2E). However, this result is complex to interpret: it could indicate that POAGAD2\u2192TMN neurons are required for homeostatic compensation, or that the inhibition protocol did not generate sufficient REMs pressure to trigger rebound. The interpretation becomes clearer when combined with the REMs restriction experiments (Figure 4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "d45f165c-a703-42e5-a720-4d33e2f299a2",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "During REMs restriction, POAGAD2\u2192TMN neurons exhibit increased number and amplitude of calcium transients, particularly during NREMs, reflecting accumulation of REMs pressure. The amplitude remains elevated during the rebound phase. REMs restriction successfully reduced REMs amount and duration while increasing frequency, and was followed by compensatory REMs rebound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C33-C41, and C51 are well-supported by fiber photometry during REMs restriction (Figure 3). The REMs restriction protocol is validated with appropriate metrics (amount, duration, frequency, motor activations). The increased calcium transient number and amplitude during restriction are quantified with statistical comparisons to baseline. The interpretation that this reflects homeostatic REMs pressure (C41) is reasonable but remains inferential until causally tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "f358f604-acf6-41d1-a19c-6ff2349afcaa",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optogenetic inhibition of POAGAD2\u2192TMN neurons during REMs restriction blocked the subsequent homeostatic rebound of REMs. During restriction with inhibition, REMs amount and frequency were reduced, and the rebound phase showed significantly less REMs compared to control mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C42-C44, C47-C48, and C52 are supported by optogenetic inhibition during REMs restriction experiments (Figure 4). The experimental design appropriately combines REMs restriction with targeted inhibition during the last 3 hours when REMs pressure is highest. Statistical comparisons between SwiChR++ and eYFP groups demonstrate blocked rebound (C43, d=-1.317). This is the key causal experiment linking POAGAD2\u2192TMN activity to homeostatic regulation. The interpretation (C48) that these neurons encode REMs need is well-supported by the combined restriction and inhibition data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "4d1f9334-cc37-451f-b5d7-ea1afb7b3bc5",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "POAGAD2\u2192TMN neurons are crucial for the homeostatic regulation of REMs in mice. Their activity reflects increased need for REMs through enhanced calcium transients and is required for rebound following REMs loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C53, and C63 represent the main conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: (1) state-dependent activity with pre-REMs activation, (2) necessity for REMs shown by optogenetic inhibition, (3) increased activity during REMs restriction, and (4) blocked rebound when inhibited during restriction. The combination of correlative (photometry) and causal (optogenetics) approaches provides strong support for the homeostatic role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "d7f3e1e8-91f0-4bc1-adfb-d254727db492",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TMNHIS neurons are highly active during wake and less active during NREMs and REMs. Their activity gradually decreases during NREMs episodes and throughout the inter-REM interval, reaching lowest levels at REMs onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 and C56 are supported by fiber photometry recordings of TMNHIS neurons (Figure 1\u2014figure supplement 2) and are consistent with prior electrophysiological studies. The data show appropriate statistical comparisons across brain states. The observation that TMNHIS activity reaches its lowest at REMs onset (C23) provides important context for understanding the reciprocal relationship with POAGAD2\u2192TMN neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "43ff7401-f7cc-41c8-94e2-37557b1dd701",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A minimal activity of TMNHIS neurons is required for entering REMs, and suppression of TMNHIS activity likely facilitates transitions to REMs. Mutual inhibition between TMNHIS and POAGAD2\u2192TMN neurons may explain their antagonistic activity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24-C25 and C57 are inferred from the observation that TMNHIS activity reaches its lowest at REMs onset (C23) and known connectivity. While the inference is reasonable and consistent with the flip-flop switch model of sleep regulation, these claims lack direct experimental support in the current study. The mutual inhibition model (C57) is plausible given prior anatomical data but is not directly tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "fb066c0c-b5ba-4763-b054-e7350ed843bb",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SwiChR++-mediated inhibition of TMNHIS neurons increased the amount of REMs compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by optogenetic inhibition data in Figure 2\u2014figure supplement 2C. This result is consistent with the known wake-promoting role of histamine neurons and provides a control experiment showing opposite effects compared to POAGAD2\u2192TMN inhibition. However, the authors note that TMN contains other neuron types, so the effect may not be solely due to histamine neuron inhibition.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "ffec20c6-f7f9-40f7-98a3-5f63e29c918a",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Inhibition of POAGAD2\u2192TMN neurons during REMs restriction reduced REMs \u03b4 power and NREMs \u03b8 and \u03c3 power. The reduced \u03b8 and \u03c3 power during NREMs could result from fewer attempts to enter REMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by EEG spectral analysis in Figure 4E. The reduced \u03b8 and \u03c3 power during NREMs is interpreted as reflecting fewer REMs transition attempts (C46), which is consistent with the reduced REMs frequency data (C42). This provides additional mechanistic insight into how POAGAD2\u2192TMN inhibition affects REMs homeostasis beyond just reducing REMs amount.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "6a0c9d09-3c6a-4231-82e9-e44aa76b2002",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "REMs is characterized by activated EEG and muscle atonia with vivid dreams, and is homeostatically regulated across multiple species including mice, rats, cats, and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 represent established background knowledge supported by extensive prior literature. These are appropriately cited and provide necessary context for the study. No issues with these foundational claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "53d68545-dddf-479f-bf31-da1b418c5139",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior research has established that the POA contains sleep-active neurons necessary for sleep, including POAGAD2\u2192TMN neurons that promote sleep when activated. POA neurons show increased c-Fos expression during REMs restriction. The TMN contains histamine neurons whose antagonism causes sleepiness. Multiple POA subpopulations are most active during REMs. The POA is also involved in NREMs homeostasis. REMs disturbances are observed in psychiatric disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12, C54-C55, C58-C62, C64-C69, C71-C72 represent prior work that is appropriately cited and provides context for the current study. These background claims are well-established in the literature and are accurately represented. The citations appear appropriate and support the stated claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "9d789b00-b1bc-4d29-afe6-1b5c6d616e32",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The elevated activity of POAGAD2\u2192TMN neurons during heightened REMs pressure may result from increased excitability. Elucidating REMs homeostasis mechanisms may provide therapeutic targets for psychiatric disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70 and C73 are speculative statements about mechanisms and future applications. C70 draws an analogy to findings in Drosophila and hippocampus but lacks direct experimental support. C73 is a reasonable speculation about translational potential given the association between REMs disturbances and psychiatric disorders, but remains untested. These are appropriately framed as speculative in the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "4669e99e-f763-43e7-a7ad-3c1466d7fe5c",
+      "content_id": "ec725e1f-4f19-4cf8-a707-d9ae37a575d4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Virus expression and optic fiber tracts were located in the ventrolateral POA, lateral POA, and lateral part of medial POA. The automatic brain state classification algorithm has 90.256% accuracy compared to manual scoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 describe methodological details. C74 is supported by anatomical verification shown in figures. C75 provides validation of the automated sleep scoring algorithm, which is important for data quality. The 90.256% accuracy is reasonable for automated sleep scoring and the algorithm has been used in multiple prior publications from the group.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "4023d875-867c-4a53-b875-ab271feecb0c",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "POAGAD2\u2192TMN neurons are most active during REM sleep and become activated throughout NREM sleep before transitioning to REM. Fiber photometry recordings show calcium activity is significantly higher during REM compared to wake and NREM, with activity increasing 40 seconds before REM onset and remaining elevated throughout REM episodes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm these findings. The editor states the study provides 'convincing evidence that inhibitory neurons in the preoptic area of the hypothalamus influence REM sleep.' Reviewer 1 notes 'these preoptic cells are most active during REM' based on 'calcium photometry.' Reviewer 2 confirms 'this cell-type studied becomes active shortly (\u224840sec) prior to entering REM sleep and remains active during REM sleep,' calling the data 'convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c99eedc7-c8bf-4628-8976-79a6fe26c38d",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Optogenetic inhibition of POAGAD2\u2192TMN neurons specifically reduces REM sleep without affecting wake or NREM sleep. The loss of REM during inhibition was not followed by homeostatic rebound during subsequent recovery sleep.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support these findings. Reviewer 1 states 'Inhibiting these cells ontogenetically diminishes REM sleep,' and Reviewer 2 notes 'optogenetic inhibition of GAD2+ cells inhibits REM sleep by a third.' The editor affirms the study provides 'convincing evidence' for the role of these neurons in REM regulation. The specificity for REM and lack of rebound are not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "f0913307-5d48-44c7-9982-9c5f8ea01097",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "During REM restriction, POAGAD2\u2192TMN neurons exhibit increased number and amplitude of calcium transients, particularly during NREM sleep. This elevated activity persists into the rebound phase and is interpreted as reflecting heightened homeostatic REM pressure.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly affirms this finding, stating these cells 'show more calcium signals during REM deprivation, suggesting they respond to \"REM pressure\".' Reviewer 2 confirms the data shows these neurons 'becomes active shortly (\u224840sec) prior to entering REM sleep.' The interpretation that this activity reflects REM pressure is accepted by reviewers without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Optogenetic inhibition of POAGAD2\u2192TMN neurons during REM restriction blocks the subsequent homeostatic rebound of REM sleep. This demonstrates that the heightened activity of these neurons encodes increased REM need and is required for homeostatic compensation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support this key finding. Reviewer 2 states the inhibition 'also impairs the rebound in REM sleep in the following hour,' making 'a convincing case for a role of GAD2+ neurons in the POA projecting to the TMN in REM sleep regulation.' Reviewer 1 notes the study identifies cells 'involved in REM sleep rebound' after deprivation. The editor calls the evidence 'convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "be106ede-8f7d-49c1-af9b-85da6b192d40",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "TMN histaminergic neurons show antagonistic activity patterns to POAGAD2\u2192TMN neurons, being highly active during wake and less active during NREM and REM sleep. Their activity gradually decreases during NREM episodes and reaches lowest levels at REM onset.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings are presented as confirmatory of prior work and are not questioned by reviewers. The claims are supported by citations to previous electrophysiological studies and are consistent with the current photometry data. Reviewers accept these characterizations without critique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "99b2a3b1-b831-4bd0-aec8-e45b709b4f5a",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Optogenetic inhibition of TMN histaminergic neurons increases REM sleep amount.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is presented as supplementary data and is not specifically discussed by reviewers, but it is consistent with the established wake-promoting role of histaminergic neurons. The lack of reviewer critique suggests acceptance of this confirmatory result.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "b76a4f0e-ef92-4326-bfa0-409b6a825207",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Six hours of REM restriction successfully reduces REM amount and duration while increasing REM episode frequency and motor activations. During rebound, REM amount increases due to increased episode frequency, compensating for lost REM.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the REM restriction methodology and resulting rebound. Reviewer 1 describes the study as identifying mechanisms 'after selective REM sleep deprivation,' and Reviewer 2 notes the use of 'technically challenging techniques including EEG with photometry and REM sleep deprivation.' The rebound phenomenon is central to the reviewers' positive assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "251641c6-ba3b-40b0-a7d4-2dc2450fb98b",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Inhibition of POAGAD2\u2192TMN neurons alters EEG spectral power during REM and NREM sleep, including increased delta and sigma power during REM with inhibition, and reduced theta and sigma power during NREM during restriction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These EEG findings are not specifically discussed by reviewers but are presented as supporting data for the main conclusions. The lack of critique and the reviewers' overall acceptance of the methodology and conclusions suggests these spectral analyses are considered valid supporting evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "ddc98ef7-c493-4124-a929-7787c90a7273",
+      "content_id": "5c6ada0f-6987-4210-b87d-03b1e4ff0e23",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The POA, specifically POAGAD2\u2192TMN neurons, plays a crucial role in homeostatic regulation of REM sleep in mice.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion is strongly endorsed by all reviewers. The editor calls it a 'valuable study' that 'advances our understanding,' Reviewer 1 states the findings 'enhance our understanding of REM sleep regulation,' and Reviewer 2 says the data makes 'a convincing case for a role of GAD2+ neurons in the POA projecting to the TMN in REM sleep regulation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f1e899df-540c-4413-8237-dd1fc11cf72c",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "d7981343-f7bb-430c-a2c8-53f49089bfa0",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "c84e05a9-eeff-4984-9517-c5a234e949de",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "256874cd-6b6e-4f88-9f3e-079e2e876e7b",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "bebeef7b-c396-434c-b4e7-057f9325cd7f",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "74bf74f2-08e8-4bba-a1ff-b8d9aaf9120f",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "9e35e491-2331-4b94-a270-53d8e1fbf57c",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "1ee18d2a-d628-4a01-a7b4-400293878502",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "5751a328-22c1-41e1-b407-056768ab4ed4",
+      "result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e"
+    },
+    {
+      "claim_id": "c6e2be1d-b3de-40a2-8623-632b51c742b9",
+      "result_id": "71729b2f-5d9f-46ce-bc93-5a900a409758"
+    },
+    {
+      "claim_id": "041e5ddf-58a6-4cdb-8829-ac419bc03ce4",
+      "result_id": "71729b2f-5d9f-46ce-bc93-5a900a409758"
+    },
+    {
+      "claim_id": "26f0b08e-1f05-4a8d-8b68-400d0af565c7",
+      "result_id": "71729b2f-5d9f-46ce-bc93-5a900a409758"
+    },
+    {
+      "claim_id": "bde739ed-0002-4545-8628-877e6cffda93",
+      "result_id": "71729b2f-5d9f-46ce-bc93-5a900a409758"
+    },
+    {
+      "claim_id": "4dafe35b-df91-4463-ae31-623ca21d519b",
+      "result_id": "71729b2f-5d9f-46ce-bc93-5a900a409758"
+    },
+    {
+      "claim_id": "86f77c51-2a21-4be6-a01e-9e1b2dc60d3f",
+      "result_id": "71729b2f-5d9f-46ce-bc93-5a900a409758"
+    },
+    {
+      "claim_id": "a33647da-a6f4-46d2-abc3-6a332295320a",
+      "result_id": "668a2ef3-aa15-49dd-b23e-2470c511a869"
+    },
+    {
+      "claim_id": "14619e35-f1f4-4a92-8718-b2afa661b3dd",
+      "result_id": "668a2ef3-aa15-49dd-b23e-2470c511a869"
+    },
+    {
+      "claim_id": "884705bd-c0ba-4fd2-8404-9f2183159e3e",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "f3151b54-cc1a-4e44-be8d-8e2d6e54b995",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "470a7ca2-4ee1-44c9-9d47-8123225e6aff",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "e05102e7-6023-4064-8451-7cbe7a88b176",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "3aac3729-8254-49ee-b1d8-49824204432d",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "1d355d17-5c92-4a9d-b0cc-26f8fe186297",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "d24db26f-54e6-40c1-b22f-438f42003517",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "8affaae5-3b14-4a2a-8c17-f621abffca69",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "179317c3-b605-4897-8f20-0eadbde3860c",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "4ed3df0a-e63f-49c1-91e2-32e41df180ef",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "31266b31-873c-402d-880d-457ed3a8c1b9",
+      "result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2"
+    },
+    {
+      "claim_id": "ed78fe8a-5323-414e-944e-ea43f60b7e94",
+      "result_id": "f358f604-acf6-41d1-a19c-6ff2349afcaa"
+    },
+    {
+      "claim_id": "76579b7d-937f-44ed-b568-14eea99c4cec",
+      "result_id": "f358f604-acf6-41d1-a19c-6ff2349afcaa"
+    },
+    {
+      "claim_id": "0884e927-9f3c-4473-ae1d-ea4417399f17",
+      "result_id": "f358f604-acf6-41d1-a19c-6ff2349afcaa"
+    },
+    {
+      "claim_id": "8f851b22-7335-422e-8049-1253c4584d7b",
+      "result_id": "f358f604-acf6-41d1-a19c-6ff2349afcaa"
+    },
+    {
+      "claim_id": "79df0f07-c466-464c-8dc3-a34125dca418",
+      "result_id": "f358f604-acf6-41d1-a19c-6ff2349afcaa"
+    },
+    {
+      "claim_id": "6c437cda-3a97-4e80-a0e6-f771447fcaba",
+      "result_id": "f358f604-acf6-41d1-a19c-6ff2349afcaa"
+    },
+    {
+      "claim_id": "09cdcb66-7b1c-487c-ae71-1789a2769fe9",
+      "result_id": "f358f604-acf6-41d1-a19c-6ff2349afcaa"
+    },
+    {
+      "claim_id": "5f5d7cc2-212b-4507-93b3-89b22d8a5080",
+      "result_id": "4d1f9334-cc37-451f-b5d7-ea1afb7b3bc5"
+    },
+    {
+      "claim_id": "8ff9ae2e-2eee-4ac9-a722-0e2e6588f52b",
+      "result_id": "4d1f9334-cc37-451f-b5d7-ea1afb7b3bc5"
+    },
+    {
+      "claim_id": "111b643e-5bd4-44aa-97b2-6f27a6bfa926",
+      "result_id": "4d1f9334-cc37-451f-b5d7-ea1afb7b3bc5"
+    },
+    {
+      "claim_id": "af5b78b1-dd98-4193-baaf-b54df496eb38",
+      "result_id": "d7f3e1e8-91f0-4bc1-adfb-d254727db492"
+    },
+    {
+      "claim_id": "2927b957-6524-4821-aebc-d5adf0128c33",
+      "result_id": "d7f3e1e8-91f0-4bc1-adfb-d254727db492"
+    },
+    {
+      "claim_id": "35efaf09-3888-4780-9326-3b0cded1aaf2",
+      "result_id": "d7f3e1e8-91f0-4bc1-adfb-d254727db492"
+    },
+    {
+      "claim_id": "35c1a577-7106-42f0-a816-eb4c5f1e5cca",
+      "result_id": "d7f3e1e8-91f0-4bc1-adfb-d254727db492"
+    },
+    {
+      "claim_id": "c2b5e036-5a28-44b4-b42c-bb733ecdcbcb",
+      "result_id": "d7f3e1e8-91f0-4bc1-adfb-d254727db492"
+    },
+    {
+      "claim_id": "8f027c20-edbc-4b40-acd2-84e179c5b436",
+      "result_id": "43ff7401-f7cc-41c8-94e2-37557b1dd701"
+    },
+    {
+      "claim_id": "c675efd1-c944-4b0f-b8fd-7ad30a5a625a",
+      "result_id": "43ff7401-f7cc-41c8-94e2-37557b1dd701"
+    },
+    {
+      "claim_id": "351dc329-d2f8-461f-83da-0833b7525a29",
+      "result_id": "43ff7401-f7cc-41c8-94e2-37557b1dd701"
+    },
+    {
+      "claim_id": "63808637-da6d-42ec-b322-613c1329bfb7",
+      "result_id": "fb066c0c-b5ba-4763-b054-e7350ed843bb"
+    },
+    {
+      "claim_id": "28c8be3d-5789-42d9-8c73-56373877fb77",
+      "result_id": "ffec20c6-f7f9-40f7-98a3-5f63e29c918a"
+    },
+    {
+      "claim_id": "a8e0880f-33f7-4294-b83d-b6148953bfb9",
+      "result_id": "ffec20c6-f7f9-40f7-98a3-5f63e29c918a"
+    },
+    {
+      "claim_id": "46d29225-a3dc-4323-8c48-6339e254003a",
+      "result_id": "6a0c9d09-3c6a-4231-82e9-e44aa76b2002"
+    },
+    {
+      "claim_id": "7531803c-cee2-418f-b6a4-46fee65cc0bf",
+      "result_id": "6a0c9d09-3c6a-4231-82e9-e44aa76b2002"
+    },
+    {
+      "claim_id": "5c803618-5f9e-4974-bcb5-f7d252069848",
+      "result_id": "6a0c9d09-3c6a-4231-82e9-e44aa76b2002"
+    },
+    {
+      "claim_id": "c7a40819-8a41-4cb5-af44-01d4d4acc536",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "10df619d-7b5f-4c44-a5e5-36b5b9314532",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "41381f5f-25d9-4aca-9307-3a0b5cea3ddf",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "48978157-ab1a-48d8-b169-e1a427dfc3b5",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "c8bce90f-cf7d-49fe-af47-3bc70ce02bcf",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "186ed363-2361-47c6-999d-e39c466b2932",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "c779eab1-1607-4f89-b861-26046f50dfb1",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "ae3c8903-475b-4d14-a02c-0bd886f8f91c",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "536f1050-7b9b-480a-9a5b-a948904e979d",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "afead5a4-b990-4317-a5bc-f30d6d8eda86",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "b2771476-a200-4e47-bdc3-c26638e32139",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "9487f8b1-89bb-46f9-b03f-55faba8dd538",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "75879f8f-5b61-43b6-998d-d7627ec4b8bd",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "95607858-5670-46fa-bd55-e0cbbafa5eed",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "0ada20db-aadb-46a7-8c01-9151e8fa6ce7",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "be1aa64e-5d24-45de-98bf-e47d7ada6862",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "72e1c8df-6522-4d66-ab7c-22c6f6fb2a14",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "ddc4fdea-eb9d-4aeb-8ecb-80a52227527a",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "fad4ce44-7fc7-4a62-b069-c6fedf7bcdaf",
+      "result_id": "53d68545-dddf-479f-bf31-da1b418c5139"
+    },
+    {
+      "claim_id": "123750c7-20ed-4ebd-9ded-f29a09ec4601",
+      "result_id": "9d789b00-b1bc-4d29-afe6-1b5c6d616e32"
+    },
+    {
+      "claim_id": "a6e127c0-d13f-4e8c-a070-9fd2f698acd1",
+      "result_id": "9d789b00-b1bc-4d29-afe6-1b5c6d616e32"
+    },
+    {
+      "claim_id": "a44ccc65-8908-43c6-b9cb-8302f3b12653",
+      "result_id": "4669e99e-f763-43e7-a7ad-3c1466d7fe5c"
+    },
+    {
+      "claim_id": "b0733d87-3be8-4fdf-8c2f-2060f95ec15a",
+      "result_id": "4669e99e-f763-43e7-a7ad-3c1466d7fe5c"
+    },
+    {
+      "claim_id": "5f5d7cc2-212b-4507-93b3-89b22d8a5080",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "f1e899df-540c-4413-8237-dd1fc11cf72c",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "d7981343-f7bb-430c-a2c8-53f49089bfa0",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "c84e05a9-eeff-4984-9517-c5a234e949de",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "256874cd-6b6e-4f88-9f3e-079e2e876e7b",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "bebeef7b-c396-434c-b4e7-057f9325cd7f",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "74bf74f2-08e8-4bba-a1ff-b8d9aaf9120f",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "9e35e491-2331-4b94-a270-53d8e1fbf57c",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "1ee18d2a-d628-4a01-a7b4-400293878502",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "5751a328-22c1-41e1-b407-056768ab4ed4",
+      "result_id": "4023d875-867c-4a53-b875-ab271feecb0c"
+    },
+    {
+      "claim_id": "c6e2be1d-b3de-40a2-8623-632b51c742b9",
+      "result_id": "c99eedc7-c8bf-4628-8976-79a6fe26c38d"
+    },
+    {
+      "claim_id": "041e5ddf-58a6-4cdb-8829-ac419bc03ce4",
+      "result_id": "c99eedc7-c8bf-4628-8976-79a6fe26c38d"
+    },
+    {
+      "claim_id": "26f0b08e-1f05-4a8d-8b68-400d0af565c7",
+      "result_id": "c99eedc7-c8bf-4628-8976-79a6fe26c38d"
+    },
+    {
+      "claim_id": "bde739ed-0002-4545-8628-877e6cffda93",
+      "result_id": "c99eedc7-c8bf-4628-8976-79a6fe26c38d"
+    },
+    {
+      "claim_id": "86f77c51-2a21-4be6-a01e-9e1b2dc60d3f",
+      "result_id": "c99eedc7-c8bf-4628-8976-79a6fe26c38d"
+    },
+    {
+      "claim_id": "884705bd-c0ba-4fd2-8404-9f2183159e3e",
+      "result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097"
+    },
+    {
+      "claim_id": "3aac3729-8254-49ee-b1d8-49824204432d",
+      "result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097"
+    },
+    {
+      "claim_id": "1d355d17-5c92-4a9d-b0cc-26f8fe186297",
+      "result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097"
+    },
+    {
+      "claim_id": "d24db26f-54e6-40c1-b22f-438f42003517",
+      "result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097"
+    },
+    {
+      "claim_id": "8affaae5-3b14-4a2a-8c17-f621abffca69",
+      "result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097"
+    },
+    {
+      "claim_id": "179317c3-b605-4897-8f20-0eadbde3860c",
+      "result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097"
+    },
+    {
+      "claim_id": "4ed3df0a-e63f-49c1-91e2-32e41df180ef",
+      "result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097"
+    },
+    {
+      "claim_id": "31266b31-873c-402d-880d-457ed3a8c1b9",
+      "result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097"
+    },
+    {
+      "claim_id": "ed78fe8a-5323-414e-944e-ea43f60b7e94",
+      "result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2"
+    },
+    {
+      "claim_id": "76579b7d-937f-44ed-b568-14eea99c4cec",
+      "result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2"
+    },
+    {
+      "claim_id": "0884e927-9f3c-4473-ae1d-ea4417399f17",
+      "result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2"
+    },
+    {
+      "claim_id": "8f851b22-7335-422e-8049-1253c4584d7b",
+      "result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2"
+    },
+    {
+      "claim_id": "79df0f07-c466-464c-8dc3-a34125dca418",
+      "result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2"
+    },
+    {
+      "claim_id": "6c437cda-3a97-4e80-a0e6-f771447fcaba",
+      "result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2"
+    },
+    {
+      "claim_id": "09cdcb66-7b1c-487c-ae71-1789a2769fe9",
+      "result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2"
+    },
+    {
+      "claim_id": "8ff9ae2e-2eee-4ac9-a722-0e2e6588f52b",
+      "result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2"
+    },
+    {
+      "claim_id": "af5b78b1-dd98-4193-baaf-b54df496eb38",
+      "result_id": "be106ede-8f7d-49c1-af9b-85da6b192d40"
+    },
+    {
+      "claim_id": "2927b957-6524-4821-aebc-d5adf0128c33",
+      "result_id": "be106ede-8f7d-49c1-af9b-85da6b192d40"
+    },
+    {
+      "claim_id": "35efaf09-3888-4780-9326-3b0cded1aaf2",
+      "result_id": "be106ede-8f7d-49c1-af9b-85da6b192d40"
+    },
+    {
+      "claim_id": "35c1a577-7106-42f0-a816-eb4c5f1e5cca",
+      "result_id": "be106ede-8f7d-49c1-af9b-85da6b192d40"
+    },
+    {
+      "claim_id": "c2b5e036-5a28-44b4-b42c-bb733ecdcbcb",
+      "result_id": "be106ede-8f7d-49c1-af9b-85da6b192d40"
+    },
+    {
+      "claim_id": "63808637-da6d-42ec-b322-613c1329bfb7",
+      "result_id": "99b2a3b1-b831-4bd0-aec8-e45b709b4f5a"
+    },
+    {
+      "claim_id": "f3151b54-cc1a-4e44-be8d-8e2d6e54b995",
+      "result_id": "b76a4f0e-ef92-4326-bfa0-409b6a825207"
+    },
+    {
+      "claim_id": "470a7ca2-4ee1-44c9-9d47-8123225e6aff",
+      "result_id": "b76a4f0e-ef92-4326-bfa0-409b6a825207"
+    },
+    {
+      "claim_id": "e05102e7-6023-4064-8451-7cbe7a88b176",
+      "result_id": "b76a4f0e-ef92-4326-bfa0-409b6a825207"
+    },
+    {
+      "claim_id": "4dafe35b-df91-4463-ae31-623ca21d519b",
+      "result_id": "251641c6-ba3b-40b0-a7d4-2dc2450fb98b"
+    },
+    {
+      "claim_id": "28c8be3d-5789-42d9-8c73-56373877fb77",
+      "result_id": "251641c6-ba3b-40b0-a7d4-2dc2450fb98b"
+    },
+    {
+      "claim_id": "111b643e-5bd4-44aa-97b2-6f27a6bfa926",
+      "result_id": "ddc98ef7-c493-4124-a929-7787c90a7273"
+    },
+    {
+      "claim_id": "5f5d7cc2-212b-4507-93b3-89b22d8a5080",
+      "result_id": "ddc98ef7-c493-4124-a929-7787c90a7273"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "1ff51d3f-f1ad-499c-b5b1-d8f5c17f9cf6",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7306d3c0-743b-4e2a-b53c-a8462931aa3e",
+      "peer_result_id": "4023d875-867c-4a53-b875-ab271feecb0c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support claims about state-dependent activity patterns of POAGAD2\u2192TMN neurons (C5, C13-C19, C49). OpenEval emphasizes the fiber photometry data, temporal dynamics, and spectrotemporal correlation analysis. Peer reviewers explicitly affirm these findings, with Reviewer 1 noting calcium photometry evidence and Reviewer 2 confirming the ~40sec pre-REM activation pattern.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "cf71a103-c017-4f4d-87bb-7310c37a74fa",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "71729b2f-5d9f-46ce-bc93-5a900a409758",
+      "peer_result_id": "c99eedc7-c8bf-4628-8976-79a6fe26c38d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support optogenetic inhibition findings (C6, C26-C28, C50). OpenEval notes appropriate controls and statistical analyses demonstrating REM specificity. Peer reviewers explicitly confirm the findings, with Reviewer 2 noting REM sleep inhibition by a third and Reviewer 1 affirming the optogenetic diminishment of REM. Both accept the lack of rebound without question.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "ab3e4ac4-37f8-4047-83c8-494d8e1138cd",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "668a2ef3-aa15-49dd-b23e-2470c511a869",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval provides nuanced interpretation of no homeostatic rebound claims (C30-C31), noting complexity in interpretation and suggesting the result could indicate either a role in homeostatic compensation or insufficient REM pressure generation. No corresponding peer review evaluation specifically addresses these claims in isolation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "2949c56a-51f7-43c2-a8c5-b5c4c9ee161c",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2",
+      "peer_result_id": "f0913307-5d48-44c7-9982-9c5f8ea01097",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support REM restriction photometry findings (C7, C33-C41, C51). OpenEval validates the restriction protocol and quantifies increased calcium activity, noting the homeostatic interpretation remains inferential. Peer Reviewer 1 explicitly affirms cells show more calcium signals during REM deprivation, interpreting this as responding to 'REM pressure' without expressing the caution OpenEval does.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "d62cfc00-2c20-4ebb-892b-c2b100d865f7",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d45f165c-a703-42e5-a720-4d33e2f299a2",
+      "peer_result_id": "b76a4f0e-ef92-4326-bfa0-409b6a825207",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address REM restriction methodology (C33-C35). OpenEval validates the protocol with appropriate metrics. Peer reviewers accept the methodology, with Reviewer 2 noting the technical challenges and Reviewer 1 describing the selective REM deprivation approach positively.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "0b033fa9-00b0-4cd2-a763-d051ef5795db",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "f358f604-acf6-41d1-a19c-6ff2349afcaa",
+      "peer_result_id": "cbfcbb2d-bb43-4f61-97c8-85bb2f02fda2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the key causal experiment combining REM restriction with optogenetic inhibition (C8, C42-C44, C47-C48, C52). OpenEval emphasizes this as the critical causal link to homeostatic regulation with specific effect size (d=-1.317). Peer reviewers explicitly endorse these findings, with Reviewer 2 calling it 'convincing' evidence for the role in REM regulation and rebound impairment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "e2b8206a-143a-4462-a512-9da47c57ada7",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "4d1f9334-cc37-451f-b5d7-ea1afb7b3bc5",
+      "peer_result_id": "ddc98ef7-c493-4124-a929-7787c90a7273",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the main conclusions (C4, C53, C63). OpenEval emphasizes convergence of multiple lines of evidence (correlative and causal). Peer reviewers strongly endorse the conclusions, with the editor calling it 'valuable' and 'convincing,' and reviewers affirming it advances understanding of REM regulation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "c5bc258e-2db6-424d-b40f-bea308ec0694",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "d7f3e1e8-91f0-4bc1-adfb-d254727db492",
+      "peer_result_id": "be106ede-8f7d-49c1-af9b-85da6b192d40",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on TMNHIS neuron characterization (C20-C23, C56). Both support the fiber photometry findings showing state-dependent activity and lowest activity at REM onset. OpenEval notes consistency with prior electrophysiological studies. Peer reviewers accept these confirmatory findings without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "432d1c7e-f103-43c9-914a-401e56942823",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "43ff7401-f7cc-41c8-94e2-37557b1dd701",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates claims about mutual inhibition and flip-flop switch model (C24-C25, C57) as UNCERTAIN, noting they are inferred but lack direct experimental support in the current study. No corresponding peer review evaluation specifically addresses these mechanistic inferences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "beac97a8-82f1-4b62-af33-d5a9b8613594",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "fb066c0c-b5ba-4763-b054-e7350ed843bb",
+      "peer_result_id": "99b2a3b1-b831-4bd0-aec8-e45b709b4f5a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the finding that inhibiting TMNHIS neurons increases REM (C32). OpenEval notes this is consistent with the wake-promoting role of histamine neurons and provides a control showing opposite effects. Peer reviewers implicitly accept this supplementary finding through lack of critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "dfc2f35a-1963-4416-95b2-ef2503e7151a",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ffec20c6-f7f9-40f7-98a3-5f63e29c918a",
+      "peer_result_id": "251641c6-ba3b-40b0-a7d4-2dc2450fb98b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support EEG spectral findings (C45). OpenEval specifically addresses reduced \u03b8 and \u03c3 power during NREM, interpreting this as reflecting fewer REM transition attempts. Peer reviewers accept the EEG analyses as valid supporting evidence without specific discussion, suggesting implicit agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "6f2000dc-fa40-44d5-b4d0-71652cee38a3",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "6a0c9d09-3c6a-4231-82e9-e44aa76b2002",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports background claims about REM sleep regulation (C1-C3) as established knowledge with appropriate citations. No corresponding peer review evaluation specifically addresses these foundational claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "1eb99c0c-b792-405c-bfcd-1848608c05d5",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "53d68545-dddf-479f-bf31-da1b418c5139",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports extensive prior work citations (C9-C12, C54-C55, C58-C62, C64-C69, C71-C72) as appropriately representing established literature. No corresponding peer review evaluation specifically addresses these background citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "f4904d66-975a-4977-a6dd-ca63b8fc1244",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "9d789b00-b1bc-4d29-afe6-1b5c6d616e32",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates speculative mechanistic and translational claims (C70, C73) as UNCERTAIN, noting they lack direct experimental support but are appropriately framed as speculative. No corresponding peer review evaluation addresses these discussion points.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "409e2e40-b078-4b8b-a9a9-0e091430c474",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "4669e99e-f763-43e7-a7ad-3c1466d7fe5c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports methodological validation claims (C74-C75) including anatomical verification and automated sleep scoring algorithm accuracy. No corresponding peer review evaluation specifically addresses these methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    },
+    {
+      "id": "353bf181-edc7-47b1-af77-6030f2dbb4cf",
+      "submission_id": "0e313d0f-abca-40c8-820e-010b7d81d778",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "71729b2f-5d9f-46ce-bc93-5a900a409758",
+      "peer_result_id": "251641c6-ba3b-40b0-a7d4-2dc2450fb98b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on EEG findings (C29). OpenEval addresses this as part of optogenetic inhibition results showing no NREM/wake effects. Peer reviewers implicitly accept EEG analyses as supporting evidence without specific discussion of C29.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:20:54.350604Z"
+    }
+  ]
+}

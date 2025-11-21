@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C142"
+    ],
+    "result": "Five out of seven tested yeast amino acid transporters (AGP1, BAP2, LYP1, MMP1, PUT4) have broader substrate spectra than previously reported in the literature. For example, BAP2 was found to support growth on 16 amino acids (\u03bc=0.07\u20130.31 hr\u207b\u00b9) compared to the previously reported 7 substrates, and PUT4 was found to transport Ser and Val in addition to its known substrates. AGP1 additionally supports very slow growth on citrulline (Cit).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C60 and C142 are well-supported by growth assay data presented in Table 1 and Figure 1. The experimental design using the \u039410AA strain with reintroduced transporters provides a clean system to assess substrate specificity. The identification of new substrates is based on statistically significant increases in growth rates compared to vector controls, which is an appropriate criterion. The growth-based assay appears sensitive enough to detect promiscuous activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C148"
+    ],
+    "result": "Single mutations in AGP1 (I334N, I412V, A484G, A484T) are sufficient to increase growth rates on citrulline by 1.9- to 3.2-fold compared to wild-type. The double mutant AGP1-NV showed a 2.8-fold increase. These growth improvements are corroborated by increased uptake rates of radiolabeled citrulline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 and C148 are strongly supported by growth assay data (Figure 3A) and uptake assay data (Figure 3B). The site-directed mutagenesis approach cleanly demonstrates that single mutations are sufficient for the phenotype. Statistical significance is indicated, and the correlation between growth and uptake rates strengthens the conclusion. Surface expression controls (C92) rule out expression differences as the cause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C152"
+    ],
+    "result": "A single L207S mutation in PUT4 is sufficient to enable growth on aspartate and glutamate, substrates that the wild-type transporter cannot support. The same mutation was independently recovered from selections on both Asp and Glu. Uptake assays confirm that glutamate is only taken up by the PUT4-S mutant and not by wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 and C152 are well-supported by growth assays (Figure 3C), uptake assays (Figure 3D), and sequencing data (Table 2). The independent recovery of the same mutation from two different selection conditions (Asp and Glu) provides strong evidence for its adaptive significance. The uptake data directly demonstrates gain of function for glutamate transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C132",
+      "C133",
+      "C167",
+      "C168",
+      "C169",
+      "C191",
+      "C192"
+    ],
+    "result": "AGP1 variants with single mutations retain the ability to grow on all 17 original substrates but show distinct fitness effects for each substrate. AGP1-V shows increased fitness on GABA, AGP1-N shows decreased fitness on Asp, Glu, and Ala, AGP1-NV shows decreased fitness on 12 of 17 substrates, AGP1-G shows increased fitness on GABA with no loss on other substrates, and AGP1-T shows decreased fitness on 9 of 17 substrates. This demonstrates substrate-specific trade-offs between ancestral and evolved functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C113, C132-C133, C167-C169, and C191-C192 are supported by comprehensive growth rate measurements on 17 substrates (Figure 4, Table 3). The relative fitness calculations are appropriate, and statistical testing (one-way ANOVA with Dunnett's test) is properly applied. The data clearly show that each mutation has a distinct impact on the fitness landscape, supporting the concept of trade-offs. The retention of all original substrate transport activities is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "For AGP1 variants, uptake rates of glutamate and phenylalanine at both 0.1 mM and 2 mM concentrations correlate well with relative fitness (growth rates) on these substrates. Variants showing reduced growth rates (AGP1-N, AGP1-NV, AGP1-T) also show reduced uptake rates, indicating that relative fitness is linked to transporter activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are supported by uptake assay data (Figure 5) showing correlation between uptake rates and growth rates. The use of two different substrate concentrations (0.1 mM and 2 mM) spanning the Km range strengthens the conclusion. The correlation analysis (Figure 5\u2014figure supplement 2) provides quantitative support. However, claim C120 appropriately acknowledges that alternative explanations (e.g., transporter internalization) cannot be completely excluded for some variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C134"
+    ],
+    "result": "The L207S mutation in PUT4 causes fitness loss on Ala and GABA (original substrates) but fitness gain on Val (a promiscuous substrate). The mutation dramatically reduces uptake of glycine while increasing fitness on valine by 2.4-fold. This demonstrates that the gain-of-function mutation affects transport of at least four original substrates with substrate-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C131 and C134 are supported by relative fitness measurements (Figure 6B) and uptake assays (Figure 6C-E). The correlation between uptake rates and fitness for Ala and GABA strengthens the mechanistic interpretation. The dramatic reduction in glycine uptake by PUT4-S compared to wild-type is clearly demonstrated. The classification of Val transport as promiscuous based on slow growth rate (\u03bc=0.03 hr\u207b\u00b9) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A single L207S mutation in PUT4 is sufficient to evolve a narrow-range transporter (6 substrates) into a broad-range transporter (15 substrates). The evolved PUT4-S variant transports Asp, Glu, Asn, Cit, Gln, Thr, Ile, Leu, and Met in addition to the six original substrates (Ala, GABA, Gly, Pro, Ser, Val), expanding substrate range to include both larger hydrophobic and hydrophilic amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 are strongly supported by comprehensive growth assays on 18 amino acids (Figure 7A). The data clearly demonstrate that the single L207S mutation dramatically expands substrate range. The analysis of substrate properties (hydropathy index and molecular volume in Figure 7B) provides mechanistic insight into the expanded specificity. This is a striking demonstration of how a single mutation can have pleiotropic effects on substrate recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Experimental evolution using the OrthoRep system yielded AGP1 and PUT4 variants with improved growth on target substrates. Evolved AGP1 variants from citrulline selection had multiple nonsynonymous mutations, mostly in transmembrane regions, with I334N (TM6) found in two variants and A484 mutations (TM10) in two variants. All PUT4 variants from both Asp and Glu selections contained the same L207S mutation (TM3), which structural analysis indicates is part of the substrate-binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C83 are supported by sequencing data (Table 2), growth assays (Figure 2\u2014figure supplements 1-2), and structural analysis (Figure 2, Figure 2\u2014figure supplement 4). The convergent evolution of L207S in all PUT4 variants from both Asp and Glu selections provides strong evidence for its functional importance. The structural predictions using AlphaFold and structural overlays with homologous proteins provide mechanistic context, though these are computational predictions rather than experimental structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The experimental evolution approach used the OrthoRep system for random mutagenesis with a dual-selection scheme: cultures were grown in minimal medium with 1 mM nitrogen-limiting mixture of original substrates plus 3 mM of the target substrate. This design was intended to purge nonfunctional transporters, maintain wild-type transporters at low numbers, and allow variants with novel substrate specificity to increase in the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 describe the experimental evolution methodology, which is well-documented and appropriately designed. The OrthoRep system is an established method (supported by citations C62). The dual-selection scheme is logical and should provide the intended selective pressures. The mutation rate and coverage calculations in the Methods section indicate that the evolutionary space was adequately sampled. The successful recovery of adaptive mutations validates the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C188",
+      "C189",
+      "C190",
+      "C201"
+    ],
+    "result": "The study demonstrates that APC-type membrane transporters can evolve novel functions through generalist intermediates, similar to classical soluble enzymes. Transporters have promiscuous weak activities that are often hidden in cellular contexts but can be enhanced by mutation. This allows organisms to explore new ecological niches while retaining the ability to thrive in the original environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C188-C190, and C201 represent the main conclusions of the study. These are well-supported by the experimental data showing: (1) discovery of promiscuous activities in wild-type transporters (C45-C60), (2) evolution of enhanced activity through single mutations (C84-C96), and (3) retention of original substrate transport with altered specificities (C99-C134). The comparison to soluble enzyme evolution is supported by appropriate citations and the parallel findings. This represents a significant contribution to understanding transporter evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C97",
+      "C98"
+    ],
+    "result": "Surface expression of AGP1 variants was similar to wild-type, and there was no significant difference in growth rates on ammonium (nitrogen source independent of amino acid uptake). PUT4-S showed higher surface expression than wild-type, but this difference is unlikely to explain the observed gain of function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 and C97-C98 are supported by fluorescence microscopy data (Figure 3\u2014figure supplements 1-2). These controls are important for ruling out expression differences as the cause of observed functional changes. The statistical analysis (one-way ANOVA for AGP1, Student's t-test for PUT4) is appropriate. The conclusion that expression differences don't explain the PUT4-S gain of function (C98) is reasonable given the magnitude of the functional change.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C120"
+    ],
+    "result": "Observed mistargeting of AGP1-N and AGP1-NV transporters to internal membranes could indicate misfolding of a fraction of the proteins, which could impact relative fitness. For AGP1-NV on phenylalanine, an effect of transporter internalization on fitness cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109 and C120 are speculative interpretations of localization data (Figure 5A). While the mistargeting observation is supported by microscopy data, the inference that this represents misfolding and the quantitative impact on fitness are not directly demonstrated. These are reasonable hypotheses that would require additional experiments (e.g., protein stability assays, quantification of mislocalized protein) to confirm. The authors appropriately present these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The transporter genes were expressed from a multicopy 2\u03bc plasmid where plasmid copy number inheritance is stochastic. This could allow cells with different copy numbers to have growth advantages, and the mean copy number is expected to change during cultivation. The growth rate therefore measures fitness when transporter gene copy number is optimized, which may explain the sensitivity of the growth-based assay for detecting promiscuous activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C147 present a hypothesis about why the growth-based assay is sensitive. While the stochastic nature of 2\u03bc plasmid inheritance is well-established (C143 with citation), the specific claims about copy number optimization and its role in assay sensitivity (C146-C147) are speculative. This is a reasonable hypothesis but lacks direct experimental support (e.g., measurements of plasmid copy number in different conditions or with different transporters). The sensitivity of the assay is demonstrated by the results, but the mechanistic explanation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Arginine and ornithine were excluded from analysis due to high background growth of the vector control, probably due to VBA5 transporter activity. Some growth of empty vector control was observed on Gly, Trp, Leu, Met, and Gln, which could indicate unknown substrate specificity of an endogenous transporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe experimental observations and limitations. The exclusion of Arg and Orn is justified by the data and supported by a citation explaining the likely cause (VBA5 activity). The observation of background growth on certain amino acids (C48) is appropriately noted as complicating interpretation. The speculation about unknown endogenous transporter activity (C49) is reasonable given the \u039410AA strain still retains some transporters. These represent appropriate acknowledgment of experimental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C151"
+    ],
+    "result": "Differences in observed growth rates on each amino acid can be explained by differences in transporter activity for these substrates or changes in expression of endogenous transporters. For example, the twofold higher growth rate on Leu compared to Pro could be caused by higher transcription of endogenous transporters in the presence of Leu. Altered substrate specificity could result from different affinity constants and/or maximal transport rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 and C151 are speculative explanations for observed phenomena. While these are reasonable hypotheses supported by citations to relevant literature (C56), they are not directly tested in this study. Distinguishing between intrinsic transporter activity differences and regulatory effects on endogenous transporters would require additional experiments (e.g., measuring endogenous transporter expression levels, determining Km and Vmax values). These represent plausible mechanistic interpretations but remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C130"
+    ],
+    "result": "The L207S mutation in PUT4 replaces a large hydrophobic leucine with a small hydrophilic serine, which is likely to increase both the size and hydrophilicity of the binding pocket. This could explain why the evolved transporter facilitates uptake of both hydrophilic and large hydrophobic amino acids, and could explain the fitness increase on valine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C157 and C130 present mechanistic interpretations based on amino acid properties and structural predictions. While the chemical reasoning is sound (leucine to serine substitution would indeed change pocket properties), these are inferences from structure rather than direct experimental measurements. The correlation between predicted structural changes and observed functional changes is consistent but not definitive. Direct structural studies (e.g., crystal structures, molecular dynamics simulations, or binding assays) would be needed to confirm these mechanistic explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C193",
+      "C194"
+    ],
+    "result": "The AGP1-G mutant showed the highest fitness gain on Cit with no loss of fitness on original substrates, suggesting this mutation could occur in populations even without Cit as selective pressure. In contrast, AGP1-NV had higher fitness cost for original substrates but higher gain for the novel substrate, representing a first step toward specialization that would only be viable if the novel substrate provides very high selective advantage. Gene duplication could then lead to specialization. Some adaptive mutations are nearly neutral toward original substrates, indicating they could become present as standing genetic variation before encountering new substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C176 and C193-C194 present evolutionary interpretations of the fitness data that are well-supported by the measurements in Table 3 and Figure 4. The observation that AGP1-G has no significant fitness loss on original substrates while gaining fitness on Cit is clearly demonstrated. The interpretation about evolutionary viability and standing genetic variation is reasonable and supported by citations to evolutionary theory (C176, C194-C196). These represent valid evolutionary inferences from the experimental data, though the predictions about natural populations remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The experimental selection was intentionally designed to emulate a newly encountered substrate for which no suitable transporter is available, leading to evolution toward substrate range expansion. In wild-type organisms, broad specificities are not always favorable as organisms possess multiple transporters with partial redundancy. The experimentally derived variants would probably not fare well in natural settings but provide information about transporter evolvability when faced with new solutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C182 appropriately contextualize the experimental findings and acknowledge limitations in generalizing to natural evolution. The experimental design rationale (C177) is clearly stated. The discussion of why broad specificity may not be favored in natural settings (C179-C180, supported by citation) is appropriate. The acknowledgment that the evolved variants may not be ecologically relevant (C181) while still providing insights into evolvability (C182) represents a balanced interpretation of the study's implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C140",
+      "C141",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "The introduction and discussion provide context from evolutionary biology and enzyme evolution literature, establishing that: (1) new protein functions are crucial for evolution, (2) enzyme evolution has been extensively studied but transporter evolution is understudied, (3) side activities can serve as sources for genetic innovation, (4) membrane transporters have fewer chemical constraints than enzymes that break/make bonds, (5) the APC superfamily is large and diverse, and (6) standing genetic variation and promiscuous activities can prime organisms for rapid adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C44, C140-C141, and C195-C200 represent background knowledge and literature context that are appropriately cited throughout. These establish the conceptual framework for the study and are well-supported by the cited literature. The claims about the understudied nature of transporter evolution (C3, C35) provide justification for the study. The discussion of standing genetic variation and its role in evolution (C195-C197) is supported by appropriate citations and connects the experimental findings to broader evolutionary theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The evolved mutations in AGP1 and PUT4 are positioned in functionally important regions based on comparison to other APC superfamily members. Structurally equivalent sites in LeuT (V104) and CAN1 (T180, T456) have been shown to affect substrate specificity. The evolved AGP1 mutations are in transmembrane helices creating the permeation pathway, with some positions conserved in YAT family members and others in conserved sequence motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C166 provide structural and evolutionary context for the identified mutations through comparison to other characterized transporters. These comparisons are supported by appropriate citations and sequence alignment data (C159-C160, C166). The structural predictions using AlphaFold (C77, C158) and overlays with homologous structures (C81) provide additional support. While these are not direct experimental characterizations of the evolved transporters, the comparative analysis is appropriate and strengthens the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "The cystine transporter CYN1 (distantly related to LYP1) is found in only a fraction of yeast species, suggesting not all yeasts benefit from cystine assimilation. This represents an example of transporter specialization that occurred over evolutionary time. The experiments emulate the first steps in such evolutionary scenarios and make them observable within laboratory timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C187 use CYN1 as a natural example of transporter specialization to contextualize the experimental findings. The observation about CYN1 distribution is supported by citation (C183). The speculation about its evolutionary origin from LYP1 (C185) is reasonable given their relationship but remains speculative. The statement that the experiments emulate early steps in specialization (C187) is a fair characterization of the study's contribution to understanding evolutionary processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "The observations on AGP1 evolution are consistent with previous studies showing that substrate promiscuity can result from adaptive mutations in different membrane transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C150 appropriately places the findings in the context of prior work on transporter evolution, supported by multiple citations. This demonstrates that the results are consistent with and extend previous observations in the field.",
+    "result_type": "MINOR"
+  }
+]

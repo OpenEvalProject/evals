@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C110"
+    ],
+    "result": "A highly saturated K. pneumoniae ECL8 mini-Tn5 transposon library was constructed containing >1 million mutants with 554,834 unique genome-wide insertion sites (499,919 within CDS), achieving near-saturation with insertions every 9.93 bp. Technical replicates showed high reproducibility (R\u00b2=0.955).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 and C110 collectively demonstrate successful library construction with comprehensive documentation of insertion density, saturation analysis, and reproducibility metrics. The data from sequencing, correlation analysis, and saturation curves (Figures 1 and supplements) provide strong quantitative support for library quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C40",
+      "C41",
+      "C44",
+      "C45"
+    ],
+    "result": "K. pneumoniae ECL8 contains at least 427 essential genes for growth on LB agar, identified through bimodal analysis (373 genes) and insertion-free region (IFR) analysis (54 additional genes). Most genes (4,551) were non-essential, while 241 had unclear essentiality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C30, C40-C41, C44-C45 are well-supported by the bimodal distribution analysis and IFR geometric modeling. The dual analytical approach (bimodal + IFR \u2265145 bp) provides robust identification of essential genes with appropriate statistical thresholds (log2-LR < -3.6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "COG functional analysis revealed that essential genes in K. pneumoniae ECL8 are enriched for translation (J), cell cycle control (D), and coenzyme metabolism (H), while depleted for signal transduction (T) and inorganic ion transport (P). This pattern correlates with essential genes in other Proteobacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by COG enrichment analysis (Figure 1\u2014figure supplement 4) and comparison to published data from S. enterica and C. crescentus. The functional enrichment patterns are consistent with core cellular processes and serve as internal validation of library quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "11 plasmid genes met criteria for essentiality, including repB (required for plasmid replication). However, these genes are likely required for plasmid maintenance rather than bacterial growth, as K. pneumoniae remains viable when plasmids are cured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 appropriately interpret the plasmid gene data. The single-copy plasmid status (C27, C36) and presence of repB (C37) support the inference that these are plasmid-essential rather than growth-essential genes. Citation support (C39) for plasmid curing viability strengthens this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "IFR analysis identified 59 unannotated regions \u2265145 bp lacking transposon insertions, with 46 containing potential ORFs. This demonstrates TraDIS potential for identifying previously uncharacterized essential small coding sequences and regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by IFR analysis and blastX identification. The polA example (C42-C43) validates the approach by identifying a known essential domain. However, the 46 putative ORFs (C47) require experimental validation, appropriately noted as potential rather than confirmed genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Directional transposon insertion bias was observed in the K2 capsule (cps) operon, with insertions poorly tolerated in the forward orientation. The cps operon encodes a KL2/K2 capsule with 18/18 expected genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by insertion pattern analysis (Figure 2B) and Kaptive analysis (C51). The directional bias is documented and cited to prior literature (C49). However, the mechanistic explanation remains speculative, as acknowledged in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Comparison of essential genes across four K. pneumoniae strains (ECL8, KPNIH1, RH201207, ATCC 43816) showed 434-642 essential genes per strain, with 57% of ECL8 essential genes shared across all strains. Higher numbers in KPNIH1 may reflect lower transposon density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by comparative genomic analysis (Figure 3). The 57% overlap (C56) demonstrates reasonable conservation while acknowledging strain-specific differences. The speculation about KPNIH1 (C55) is appropriately cautious and supported by citation regarding library density effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C121"
+    ],
+    "result": "Only 11 genes were identified as advantageous for K. pneumoniae ECL8 growth in urine (log2FC>-2, Q\u22640.05), including sodA, ompA, skp, iron acquisition genes (fepB, fepD, fepG, exbB, exbD), ytfL, and argH. Competitive index experiments validated reduced fitness of mutants in urine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C57-C62, C121 are well-supported by TraDIS analysis (Figure 4B) and competitive index validation (Figure 4G). The stringent statistical thresholds and experimental validation of 7 mutants provide strong evidence. The small number of genes (C121) is unexpected but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Iron limitation restricts K. pneumoniae growth in urine. Iron supplementation restored growth, while chelation exacerbated restriction. Fur regulon plays a pivotal role by regulating enterobactin synthesis and uptake, with fur mutants enriched (~7-fold) and fep mutants depleted in urine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by growth experiments (Figure 5B-D), area-under-curve analysis (C66), and TraDIS data showing fur enrichment (C67). The inference about Fur's role (C68) is well-supported by the complementary observations of fur enrichment and fep gene requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C120"
+    ],
+    "result": "144 genes were identified as advantageous for survival in human serum (log2FC\u2264-2, Q\u22640.05), including operons for LPS core antigen, O-antigen, and enterobacterial common antigen biosynthesis. K. pneumoniae showed 2-log reduction at 90 min and >4-log at 180 min in active serum, with no reduction in heat-inactivated control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C69-C73, C120 are supported by serum killing kinetics (Figure 6\u2014figure supplement 1) and TraDIS analysis (Figure 6B-C). The heat-inactivated control (C71) confirms complement-mediated killing. The large number of genes (C120) contrasts with the urinome and is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The glycosyltransferase wbbY showed the greatest fitness defect in serum. A \u0394wbbY mutant was highly serum-sensitive (no survival at 30 min), produced truncated LPS, and ECL8 encodes O1v2 O-antigen. Prior work in NTUH-K2044 confirmed wbbY's role in D-galactan II production and serum resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 are strongly supported by TraDIS data (C76), Kaptive analysis (C77), growth curves (C79), serum killing assays (C80), LPS profiles (C81), and corroborating citations (C83-C84). The validation in a different strain (C83-C84) strengthens confidence in the screen's robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Five genes (ompA, galE, exbB, exbD, sodA) conferred reduced fitness in both urine and serum. These genes function in membrane structure (ompA, galE), iron acquisition (exbB, exbD), and oxidative stress defense (sodA), highlighting the interplay between iron homeostasis and oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 are supported by comparative TraDIS analysis and extensive literature citations. The dual-niche requirement (C85) is data-driven. The mechanistic interpretations (C88-C90 for galE, C91-C93 for sodA) are well-supported by citations and represent reasonable inferences about cross-niche adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Transposon insertion orientation bias in gnd suggests coupled transcriptional regulation of O-antigen and capsule biosynthesis. O-antigen genes (wabI, waaL) contribute to serum resistance, while hns mutants showed increased serum resistance, with initial 2-log reduction at 30 min followed by proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by insertion pattern analysis (Figure 7\u2014figure supplement 3B), AlbaTraDIS analysis (Figure 7B), and serum killing assays (Figure 7F). The hns phenotype (C98-C100) is well-documented experimentally, though complementation was unsuccessful (noted in supplement).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "hns mutants confer serum resistance through activation of the Rcs regulon, increasing capsule production. This represents the first report of hns involvement in resisting complement-mediated killing in human serum, supported by enrichment of igaA mutants and prior work showing hns regulation of capsule genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 are supported by TraDIS data (C105), literature on Rcs regulation (C101-C104, C106), and the novelty claim is appropriately contextualized (C107). The inference about mechanism (C106) is reasonable given the regulatory network, though direct capsule measurements would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The ECL8 urinome and serum resistome differ from other TraDIS studies, with strain-specific variation in fitness genes. Only 3 genes (rfaH, lpp, arnD) were common across four K. pneumoniae serum resistome studies, though O-antigen/capsule genes were universally required. Comparison with E. coli EC958 revealed 14 shared serum resistance genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109, C114-C118 are supported by comparative analysis with published data. The variation is well-documented and appropriately discussed with multiple explanations (methodology, killing kinetics, strain differences). The inference about genotype being 'only a piece' (C109) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Biological replicates showed high correlation for both urine (R\u00b2=0.8483 and 0.9078) and serum (R\u00b2=0.91 for normal serum, R\u00b2=0.76 for heat-inactivated serum) experiments, demonstrating reproducibility of the TraDIS approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are directly supported by correlation analyses shown in supplementary figures. The high R\u00b2 values demonstrate good reproducibility, though the lower correlation for heat-inactivated serum (0.76) suggests some variability in this control condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The study utilized filter-sterilized urine, which may preclude identification of genes required for interspecies interactions in the urinary microbiome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 appropriately acknowledges a methodological limitation. This is a valid caveat supported by citations to relevant literature on urinary microbiome interactions. The limitation does not invalidate the findings but appropriately scopes their interpretation.",
+    "result_type": "MINOR"
+  }
+]

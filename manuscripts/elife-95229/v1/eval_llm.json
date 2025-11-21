@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Doxorubicin (Doxo) treatment induces senescence in mouse skeletal muscles and C2C12 myoblasts, as evidenced by increased expression of senescence markers (p21, Cdkn1a, Cdkn2a), DNA damage markers (\u03b3H2A.X), SASP factors (Cxcl1, Cxcl2, Tnfa, Il6, Tgfb1), enlarged nuclei, flattened cell morphology, and increased SA \u03b2-gal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 collectively demonstrate Doxo-induced senescence through multiple independent markers in both in vivo (mouse muscle) and in vitro (C2C12 cells) systems. The data includes immunofluorescence (Figures 1A-B, 1D-E), qPCR (Figures 1C, 1F), immunoblot (Figure 1G), and X-gal staining (Figure 1H), providing converging evidence from orthogonal methods. The use of multiple established senescence markers strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Doxo-induced senescent cells synthesize and release 15d-PGJ2, with significantly increased mRNA levels of prostaglandin biosynthetic enzymes (Ptgs1, Ptgs2, Ptgds) and a ~40-fold increase in 15d-PGJ2 concentration in conditioned medium from senescent versus quiescent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are well-supported by qPCR data (Figures 1C, 1I) showing time-dependent increases in biosynthetic enzyme expression and mass spectrometry data (Figure 1J) quantifying 15d-PGJ2 release. The temporal pattern of enzyme expression (Ptges elevated by Day 4, Ptgds by Day 8-12) is consistent with the biosynthetic pathway. The mass spectrometry quantification using standard curves provides rigorous evidence for 15d-PGJ2 as a SASP factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Conditioned medium from senescent cells inhibits myoblast differentiation (~20% decrease in fusion index), and this inhibition is rescued by AT-56 treatment (PTGDS inhibitor), indicating that PGD2/15d-PGJ2 released as SASP factors mediate the inhibitory effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by immunofluorescence data (Figure 2A) showing decreased fusion index with senescent cell conditioned medium and rescue with AT-56 treatment. The rescue experiment provides strong evidence for the causal role of PGD2/15d-PGJ2 pathway. However, the rescue is not complete, suggesting additional SASP factors may contribute. The inference that PGD2/15d-PGJ2 specifically mediates the effect is reasonable given the AT-56 mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "15d-PGJ2 treatment significantly decreases C2C12 myoblast proliferation, with increased doubling time from 13.76 hr (DMSO) to 57.24 hr (15d-PGJ2 10 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by cell counting data (Figure 2B) showing dose-dependent effects. The dramatic increase in doubling time (~4-fold) provides strong quantitative evidence. However, the manuscript does not report statistical analysis for the doubling time comparison, and the concentration used (10 \u00b5M) is higher than the non-cytotoxic range established in Figure 2\u2014figure supplement 1A (up to 5 \u00b5M), raising concerns about potential cytotoxic effects contributing to the observed proliferation decrease.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "15d-PGJ2 inhibits differentiation of both mouse C2C12 myoblasts and primary human myoblasts in a dose-dependent manner, as evidenced by decreased expression of differentiation markers (Myod1, Myog, Myhc, MHC) and reduced myoblast fusion (~75% decrease in nuclei per fiber).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are well-supported by multiple orthogonal methods: MTT viability assay (Figure 2\u2014figure supplement 1A), qPCR (Figure 2C), immunofluorescence (Figure 2D), and immunoblot (Figure 2E). The dose-response relationship is demonstrated across multiple markers. The consistency across mouse and human cells strengthens the generalizability. The MTT assay establishing non-cytotoxicity up to 5 \u00b5M is important for interpreting the differentiation effects at 1-4 \u00b5M.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "15d-PGJ2 covalently modifies HRas at cysteine 184 in C2C12 cells, as demonstrated by biotinylated 15d-PGJ2 pulldown experiments showing ~3.5-fold increased HRas binding and ~80% decreased binding in C184S mutant but not C181S mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by streptavidin immunoprecipitation data (Figure 3A) using biotinylated 15d-PGJ2. The differential binding of cysteine mutants provides strong evidence for site-specific modification at C184. The experimental design appropriately controls for non-specific binding using DMSO control and tests both C181S and C184S mutants. The ~80% reduction in C184S binding is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "15d-PGJ2 activates HRas in a cysteine 184-dependent manner, as measured by FRET between EGFP-HRas and mCherry-RAF-RBD, with ~30-40% increase in FRET index for wild-type and C181S mutant but not C184S mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by FRET microscopy data (Figures 3C-D) with appropriate controls for spectral bleed-through (Figure 3\u2014figure supplement 1A-B). The differential response of cysteine mutants provides strong evidence for C184-dependent activation. The FRET approach directly measures HRas-RAF-RBD interaction as a proxy for HRas activation. However, the manuscript does not report the number of cells analyzed or provide information about cell-to-cell variability, which would strengthen the statistical interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "15d-PGJ2 selectively activates the MAPK signaling pathway (increased Erk phosphorylation) but not the PI3K pathway (no change in Akt phosphorylation), and this activation requires the electrophilic cyclopentenone ring as demonstrated by reduced activity with 9,10-dihydro-15d-PGJ2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by immunoblot data (Figures 3E-F, Figure 3\u2014figure supplement 1C) showing dose-dependent Erk phosphorylation and lack of Akt phosphorylation. The use of 9,10-dihydro-15d-PGJ2 (lacking the electrophilic center) as a negative control is elegant and provides strong mechanistic evidence. However, the differential phosphorylation of Erk 42 kDa versus 44 kDa isoforms (C52) is noted but not explained or discussed, which could indicate isoform-specific effects or technical issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "15d-PGJ2 increases HRas localization at the plasma membrane relative to the Golgi (~20% decrease in Rmean) in wild-type HRas but not in C181S or C184S mutants, indicating C-terminal cysteine-dependent redistribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by confocal microscopy data (Figures 4B-C) using a ratiometric approach (Rmean) to quantify HRas distribution. The differential response of cysteine mutants provides evidence for the mechanism. However, the ~20% change in Rmean is relatively modest, and the manuscript does not discuss potential confounding factors such as changes in total HRas expression or Golgi/plasma membrane morphology. The lack of change in both C181S and C184S mutants (C60) is somewhat surprising given that C181S can still be modified by 15d-PGJ2 (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The inhibition of myoblast differentiation by 15d-PGJ2 is partially rescued in cells expressing HRas C184S mutant but not wild-type or C181S mutant, as measured by Myhc mRNA and MHC protein levels, indicating dependence on HRas C184 modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by qPCR (Figure 4D) and immunoblot (Figure 4E) data showing differential rescue in C184S mutant. The partial rescue (rather than complete) is appropriately noted and suggests additional mechanisms beyond HRas modification. However, the rescue is incomplete even in C184S mutant, and the manuscript does not adequately address whether this reflects incomplete penetrance, additional targets of 15d-PGJ2, or other factors. The brightfield images (Figure 4\u2014figure supplement 1E) provide qualitative support but are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "HRas V12 C181S (localized predominantly at Golgi) allows myoblast differentiation, while HRas V12 and HRas V12 C184S (localized at both plasma membrane and Golgi) inhibit differentiation, indicating that HRas intracellular distribution regulates differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are supported by confocal microscopy (Figure 4\u2014figure supplement 1A) and differentiation assays (Figure 4\u2014figure supplement 1B-D). This result provides important mechanistic insight linking HRas localization to function. However, the interpretation is complicated by the fact that all three constructs are constitutively active (V12 mutation), yet only C181S allows differentiation. The manuscript does not adequately explain why constitutively active HRas at the Golgi does not inhibit differentiation, which seems inconsistent with the general model that HRas activation inhibits differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study demonstrates a mechanism whereby Doxo-induced senescent myoblasts synthesize and release 15d-PGJ2, which covalently modifies HRas at cysteine 184, activates it, and inhibits myoblast differentiation, providing a mechanistic link between chemotherapy-induced senescence and impaired muscle homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 represent the integrated conclusion of the study, synthesizing results from multiple experiments. The mechanistic chain is well-supported by the individual results: Doxo induces senescence (C11-C21), senescent cells release 15d-PGJ2 (C22-C27), 15d-PGJ2 inhibits differentiation (C37-C42), 15d-PGJ2 modifies HRas at C184 (C44-C47), this modification activates HRas (C48-C51), and C184 mutation rescues differentiation (C63-C66). However, the causal chain relies on correlative evidence at some steps, and the in vivo relevance is not fully established since the rescue experiments are only performed in vitro.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Background claims establishing that senescent cells accumulate with tissue damage, secrete SASP factors including lipids, and that Doxo causes senescence and inhibits tissue regeneration in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C67-C78 are background/context claims supported by citations to established literature. These provide the scientific rationale for the study but are not novel findings. The citations appear appropriate and the claims are consistent with established knowledge in the senescence field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C43",
+      "C57",
+      "C58",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C119",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Background claims about 15d-PGJ2 biochemistry, HRas regulation, and prior work on muscle differentiation, Doxo effects, and chemotherapy-induced cachexia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C43, C57-C58, C79-C86, C91-C92, C94-C110, C113-C114, C116-C117, C119, C123-C126, C131-C137 are background claims supported by appropriate citations to established literature. These provide context and rationale but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C62"
+    ],
+    "result": "Prior work showing that conditioned medium from senescent cells inhibits myoblast differentiation in myotonic dystrophy and that HRas inhibits C2C12 myoblast differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C62 cite prior work that provides direct precedent for the current findings. These are appropriately cited and provide important context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "MCF7 breast cancer cells undergo senescence upon Doxo treatment, as evidenced by flattened morphology, increased nuclear p21, enlarged nuclei, and increased SA \u03b2-gal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by data in Figure 1\u2014figure supplement 1C-F showing multiple senescence markers in MCF7 cells. This result demonstrates that Doxo-induced senescence is not specific to muscle cells, supporting the generalizability of the findings. However, this is a minor supporting observation rather than a central finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C115"
+    ],
+    "result": "Covalent modification of HRas by 15d-PGJ2 activates HRas and the MAPK pathway, and preferential MAPK over PI3K activation may explain inhibition of myoblast differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are well-supported by FRET and immunoblot data (Figures 3C-F). However, claim C115 is more speculative, inferring a mechanism based on known roles of MAPK and PI3K in differentiation. While the inference is reasonable given the cited literature (C113-C114), the manuscript does not directly test whether MAPK inhibition or PI3K activation rescues the differentiation defect, which would be needed to definitively establish this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The inhibition of myoblast differentiation by 15d-PGJ2 is partially dependent on HRas modification, and 15d-PGJ2 alters HRas intracellular distribution, increasing plasma membrane localization in a manner requiring both C184 modification and C181 palmitoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118, C120-C122 integrate findings about HRas modification, localization, and function. The data support these claims, but the mechanistic interpretation (C122) that redistribution requires both C184 modification and C181 palmitoylation is inferred from the lack of redistribution in both mutants rather than directly demonstrated. The model is plausible but would benefit from additional experiments such as testing whether preventing palmitoylation (e.g., with 2-bromopalmitate) blocks 15d-PGJ2-induced redistribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "The intracellular distribution of HRas regulates myoblast differentiation, as demonstrated by differential effects of HRas V12 cysteine mutants with distinct localizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is supported by data in Figure 4\u2014figure supplement 1A-D. This is an important mechanistic finding linking HRas localization to function. However, as noted in the evaluation of C128-C130, the interpretation is complicated by the use of constitutively active HRas mutants, and the manuscript does not fully explain why Golgi-localized active HRas (V12 C181S) does not inhibit differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The study proposes that targeting 15d-PGJ2 synthesis and release by senescent cells could promote skeletal muscle homeostasis in cancer patients undergoing chemotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C140 represent speculative conclusions and therapeutic implications. While the mechanistic chain is supported by the data, the therapeutic potential (C140) is not directly tested. The study does not include in vivo rescue experiments (e.g., testing whether PTGDS inhibition improves muscle function in Doxo-treated mice) or demonstrate that the mechanism operates in vivo. The claims are reasonable extrapolations from the data but require substantial additional validation before being considered supported.",
+    "result_type": "MINOR"
+  }
+]

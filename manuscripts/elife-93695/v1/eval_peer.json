@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "GPSite is a multi-task network that predicts binding residues for DNA, RNA, peptide, protein, ATP, HEM, and metal ions using sequence embeddings from ProtTrans and predicted structures from ESMFold, incorporating a comprehensive geometric featurizer and edge-enhanced graph neural network, without relying on MSA or native structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly acknowledge GPSite's novel approach and architecture. Reviewer 2 states 'One major contribution of the authors is the fact that they feed this neural network with predicted structure from ESMFold for training and prediction (instead of native structure in similar works) and a high-quality protein Language Model representation.' Reviewer 3 confirms 'GPSite adopts predicted structure instead of native structures as input, enabling the model to be applied to a wider range of scenarios.' The Editor notes the method is 'valuable' and reviewers consistently recognize these design features as key contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "GPSite substantially surpasses state-of-the-art sequence-based and structure-based approaches on various benchmark datasets, achieving average AUC values of 0.918 and 0.921 and AUPR values of 0.603 and 0.594 on cross-validation and independent tests, with consistent performance indicating robustness.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm GPSite's superior performance. The Editor states the authors 'have conducted thorough benchmarking and ablation studies, providing convincing evidence of the model's overall performance.' Reviewer 3 confirms 'Based on the presented results, GPSite outperforms state-of-the-art methods in several benchmark datasets in terms of accuracy and efficiency.' Reviewer 1 highlights 'comprehensive benchmark against multiple methods, showcasing the performances of a large number of methods in various scenarios.' The quantitative results are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GPSite performs well even when structures are not well-predicted, maintaining superior performance compared to other methods on proteins with low TM-scores, while ESMFold produces high-quality structures in most cases with median TM-scores ranging from 0.76 to 0.96 across datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'GPSite adopts predicted structure instead of native structures as input, enabling the model to be applied to a wider range of scenarios where native structures are rare.' Reviewer 2 notes this as 'One major contribution' and the Editor acknowledges the work provides 'convincing evidence of the model's overall performance.' The robustness to structure quality is treated as a key strength without any reviewer expressing concerns about these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Ablation studies demonstrate that ProtTrans embeddings are critical for GPSite performance (AUPR 0.594 vs 0.516 without), outperforming MSA profiles especially for proteins with few homologs, while structure information is even more critical than sequence (AUPR 0.484 without structure), and the geometric featurizer is essential (AUPR drops from 0.594 to 0.533 without it).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly praises 'The ablations of some core elements of the method, such as the protein Language Model part, the use of multiple ligands in the same model, the input structure, or the use of predicted structure to complement native structure are very insightful. They can help convince the reader that every part of the framework is necessary.' The Editor confirms 'thorough benchmarking and ablation studies' provide convincing evidence. No reviewer challenges these ablation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Multi-task learning in GPSite consistently outperforms single-task baselines, especially for ligands with limited training data like HEM (AUPR increase of 0.086), by leveraging shared patterns across different ligand-binding proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 specifically highlights 'the use of multiple ligands in the same model' as one of the 'very insightful' ablations that 'can help convince the reader that every part of the framework is necessary.' The multi-task framework is recognized as a distinguishing feature by multiple reviewers, and the quantitative improvements are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C38",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C88"
+    ],
+    "result": "GPSite's low computational cost enables rapid genome-scale binding residue annotations for over 568,000 sequences in Swiss-Prot within 9 days (8.5 days for structure prediction, ~5 hours for inference), achieving comparable or faster prediction speed than other top-performing methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'The low computational cost of GPSite is beneficial, which enables rapid genome-scale binding residue annotations, indicating the model's potential for large-scale downstream applications and discoveries.' Reviewer 1 notes 'The availability of genome-scale binding residue annotations GPSite offers is a significant advancement.' The computational efficiency is consistently recognized as a key strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "GPSite binding scores for proteins with corresponding ligand-binding molecular functions are significantly higher than those without such annotations (p-value <10\u207b\u00b9\u2076\u2075), achieving satisfactory AUC values for most ligands, and predicted binding proteins are involved in biological processes consistent with existing knowledge.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The work is useful for the field, especially in disease mechanism elucidation and novel drug design.' The Editor notes the method provides 'convincing evidence' and reviewers do not challenge the validation of predictions against known annotations. The biological consistency of predictions is implicitly accepted through the overall positive assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "20.67% of pathogenic variant sites fall in GPSite-predicted interfaces (vs 11.97% for benign variants), with pathogenicity higher in predicted binding sites than non-binding sites, particularly for ATP and metal ion binding sites which form small pockets where single residue variants can substantially affect functionality.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges the work is 'useful for the field, especially in disease mechanism elucidation' and Reviewer 3 notes the 'potential for large-scale downstream applications and discoveries.' The variant analysis is presented as supporting evidence for the utility of predictions, and no reviewer challenges these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "GPSite trained on predicted structures can also use native structures as input when available, yielding extra performance boosts with average AUPR increase of 7.8%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'the use of predicted structure to complement native structure' as one of the insightful ablations. This flexibility is treated as an additional strength of the method without any concerns raised about the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "GPSite's latent representations effectively improve discriminability between binding and non-binding residues (shown by t-SNE visualization), and using these embeddings to train a simple MLP achieves AUC of 0.881 for carbohydrate-binding site prediction, outperforming training from scratch or other state-of-the-art methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'The performance of this framework as well as the provided dataset and web server make it useful to conduct studies.' The learned representations are implicitly validated through the overall positive assessment of the method's performance and utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Current methods for identifying binding sites rely on expensive MSA or experimental structures limiting genome-scale applications, haven't fully explored protein geometry, have restricted expressive capacities, and exhibit performance declines for unbound or predicted structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers implicitly accept this characterization of the field by acknowledging GPSite addresses these limitations. Reviewer 1 states the work 'seeks to overcome the limitations of current methods, which largely depend on multiple sequence alignments or experimental protein structures.' The Editor notes 'some imperfections of the comparisons to other methods that arise from intrinsic differences between training methods and data,' acknowledging the field's heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "GPSite is distinguished from previous approaches by: (1) liberation from MSA and native structures, (2) comprehensive geometric featurizer exploiting backbone and sidechain atoms, (3) global structure-aware and efficient message propagation on residue graphs, and (4) multi-task learning to model relationships among binding partners.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'It is a convincing outcome of previous efforts to Geometric Deep Learning approaches to model protein-ligand interactions.' Reviewer 1 notes 'they show a novel method with an original approach.' The distinguishing features are consistently recognized across reviews as key contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "GPSite annotations are accordant with existing knowledge and capable of facilitating discoveries of unexplored biology in protein function and genetic variants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The work is useful for the field, especially in disease mechanism elucidation and novel drug design. The availability of genome-scale binding residue annotations GPSite offers is a significant advancement.' Reviewer 3 notes 'the model's potential for large-scale downstream applications and discoveries.' The utility for biological discovery is consistently affirmed.",
+    "result_type": "MINOR"
+  }
+]

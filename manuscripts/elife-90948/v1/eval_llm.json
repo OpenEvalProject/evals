@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript describes the basic mechanism and components of CRISPR prime editing (PE), including the PE2 fusion protein and pegRNA structure and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C11 are definitional statements about PE technology that represent established knowledge in the field, supported by appropriate citations (Anzalone et al., 2019, 2020). These provide necessary background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "PE has been successfully employed across multiple model systems but generally shows lower editing efficiencies compared to other CRISPR/Cas-based editing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C13 are supported by multiple citations to prior work (Anzalone et al., 2019; Bosch et al., 2021; Petri et al., 2022; Lin et al., 2020; Liu et al., 2020), establishing the motivation for improving PE efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "PegRNAs show reduced Cas9 binding and lower indel frequencies compared to standard gRNAs, potentially due to misfolding caused by complementarity between the 5' spacer and 3' PBS/RTT regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by experimental data from zebrafish embryo injections (Figure 1b) and in vitro competition assays (Figure 1e-f). The hypothesis of misfolding (C16) is supported by prior work (Thyme et al., 2016, C17) and validated by experiments showing that PBS mutations increase Cas9 binding (C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Refolding pegRNAs through heat denaturation and slow cooling significantly improves their ability to bind Cas9 and increases Cas9-mediated indel frequencies in zebrafish embryos, though not to levels of standard gRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20-C23 are supported by in vitro competition assay data (Figure 1e-f) and zebrafish experiments (Figure 1\u2014figure supplement 1). The refolding strategy is based on prior work (Thyme et al., 2016, C20) and shows consistent improvements across multiple target sites, with increases up to 2.8-fold for Cas9-mediated indels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Refolding pegRNAs prior to embryo injection significantly increases pure prime editing frequencies for 9 of 17 pegRNAs tested, with improvements ranging from 1.7- to 24.7-fold for substitutions and insertions, but not for deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24-C28 are supported by experimental data in Figure 2a-b showing significant increases in pure PE frequencies for 7 of 12 substitution pegRNAs and 2 of 3 insertion pegRNAs. The lack of improvement for deletion pegRNAs (C28) is documented, though the explanation (C29) is speculative. Statistical significance is reported with appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Increases in pure PE frequencies from refolding are generally accompanied by increases in non-pure PE frequencies, resulting in unchanged PE purity for most pegRNAs, with exceptions for two scn2b pegRNAs (improved purity) and one cacng2b pegRNA (reduced purity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by data in Figure 2\u2014figure supplement 1a-d. The observation that PE purity (defined in C31) remains largely unchanged despite increased pure PE frequencies is clearly documented, with specific exceptions noted and statistically validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Introducing point mutations at RTT +1 and +2 positions to disrupt internal complementarity increases pure PE frequencies, with RTT +2 mutations showing improvements in all five tested cases (up to 6.7-fold, mean 2.4-fold) and statistical significance in three cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35-C40 are supported by experimental data in Figure 2c-d and Figure 2\u2014figure supplement 2. The RTT +2 mutation strategy shows consistent improvements across multiple pegRNAs with appropriate statistical testing. PE purity remained largely unchanged except for one pegRNA (C40), documented in Figure 2\u2014figure supplement 2c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "RTT +2 mutations enhance pegRNA ability to form functional complexes with Cas9 protein, as evidenced by increased indel frequencies with SpCas9 nuclease in zebrafish embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by data in Figure 2\u2014figure supplement 3 showing that three refolded pegRNAs with RTT +2 mutations all induced higher indel frequencies than matched pegRNAs without mutations. The mechanistic inference (C42) is reasonable based on the observed functional improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Combining pegRNA refolding with RTT +1 or +2 mutations can increase RNP-induced pure PE frequencies by up to 29-fold in zebrafish embryos, with RNP delivery offering advantages over DNA/RNA delivery methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by multiple citations regarding RNP delivery advantages. Claim C44 is supported by experimental data across Figures 1-2 and Supplementary file 1, demonstrating the combined effect of both strategies with the maximum 29-fold improvement clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The refolding and RTT mutation strategies should likely improve PE in other settings including human cells and can be applied to non-RNP delivery methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 is supported by citation to prior work (Petri et al., 2022) showing RNP-mediated PE functions in both zebrafish and human cells. However, claims C46 and C47 are speculative inferences about applicability to other systems and delivery methods without direct experimental validation in those contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Prior work by Li et al., 2022 and Ponnienselvan et al., 2023 corroborates the findings that RTT mutations and reduced 5'-3' interactions can enhance PE efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 accurately cite relevant prior work that supports and corroborates the manuscript's findings. The citations are appropriate and the claims about prior work appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Internal complementarity between pegRNA 5' spacer and 3' PBS/RTT regions is an additional parameter for optimizing PE activity that may impact spacer sequence selection and PBS/RTT design, potentially leading to improved design rules in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by appropriate citations to prior work. Claim C54 is a reasonable conclusion from the experimental findings. Claims C55-C57 are speculative but logical inferences about implications for future pegRNA design, appropriately framed as possibilities rather than established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The manuscript describes methodological details for pegRNA production, refolding procedures, RNP complexation, and ethical approval for zebrafish experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are methodological descriptions that are appropriately detailed and supported by citations where relevant (C58 cites Petri et al., 2022). The refolding protocol (C59) and RNP complexation procedure (C60) are clearly specified. Ethical approval (C61) is properly documented.",
+    "result_type": "MINOR"
+  }
+]

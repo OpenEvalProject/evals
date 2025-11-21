@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C73"
+    ],
+    "result": "H3-OPT achieves 2.24 \u00c5 average RMSD for CDR-H3 prediction, outperforming AlphaFold2 (2.85 \u00c5), IgFold (2.87 \u00c5), and other methods across all difficulty subgroups, representing a ~20% improvement over existing approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C60-C63, C73 provide consistent quantitative performance metrics with statistical significance (p<0.001 noted in figures). The test set (n=131) is adequately sized and non-redundant. Performance improvements are demonstrated across three difficulty subgroups (Sub1-3) with RMSDs of 1.10, 2.28, and 3.99 \u00c5 respectively. However, the 20% improvement claim should be interpreted cautiously as it varies by subgroup and metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39"
+    ],
+    "result": "AlphaFold2 demonstrates high overall accuracy for antibody structure prediction with TM-scores >0.93 and performs comparably to specialized antibody methods like DeepAb and NanoNet, though with variable performance on CDR-H3 loops depending on dataset and loop length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C39 present comprehensive benchmarking data across multiple metrics (TM-score, GDT-TS, GDT-HA, RMSD) on two independent datasets (DB1: n=47, DB2: n=78). The Z-score analysis (C32) provides appropriate statistical aggregation. The conclusion that AF2 is effective for overall structure but comparable (not superior) for CDR-H3 is well-supported by the comparative data showing DeepAb and NanoNet achieving similar or better CDR-H3 RMSDs in specific contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C85"
+    ],
+    "result": "Quantum mechanics-based re-ranking and optimization methods failed to improve CDR-H3 loop accuracy over AlphaFold2, with limited success on small test sets (8/14 targets) that did not generalize to larger datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 report negative results with appropriate data (Tables 1-3). The initial success (0.69 \u00c5 improvement on 14 targets) failed to replicate on DB3, and various QM approaches (PM6D3, B3LYP with different parameters) consistently showed \u0394RMSDs \u22640. The conclusion (C43, C85) appropriately acknowledges failure while suggesting future potential. This represents rigorous reporting of negative results, though the small initial test set (n=14) limits generalizability claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Molecular dynamics simulations showed limited utility for CDR-H3 loop optimization, succeeding on only 1 of 10 challenging targets (7N0R) while failing to generate accurate conformations for the remaining cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 report MD results with appropriate quantification. While 7N0R showed 5.30 \u00c5 improvement, the overall failure (all 10 targets >5 \u00c5 RMSD, most with \u0394C\u03b1-RMSD <1.5 \u00c5 per Table 4) is clearly documented. The RMSF analysis (C45) provides mechanistic insight into CDR-H3 flexibility. This represents honest reporting of a failed optimization approach with sufficient data to support the negative conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "H3-OPT architecture combines a template module (CBM and TGM) with a PLM-based prediction module, where ablation studies demonstrate that CBM improves accuracy for easy targets (0.62 \u00c5 for Sub1) while TGM benefits longer loops (0.68-1.04 \u00c5 for Sub2-3), with AF2 confidence scores showing strong negative correlation with RMSD (r=-0.67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 describe the method architecture and provide systematic ablation studies quantifying each component's contribution. The correlation analysis (C53) is appropriately quantified with Pearson coefficient. The ablation results (C54-C56) clearly demonstrate differential benefits across difficulty subgroups, supporting the modular design rationale. However, the confidence score threshold (0.8) appears empirically determined without cross-validation justification, and Table 9 shows performance varies with cutoff choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Fine-tuning ESM2 protein language model parameters improved H3-OPT performance to 2.24 \u00c5 overall RMSD, outperforming frozen PLM approaches (ProtTrans-T5: 2.40 \u00c5, AntiBERTy: 2.49 \u00c5, unfrozen ESM2: 2.32 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 report systematic PLM comparison (Table 5) showing ESM2 superiority and benefit of fine-tuning. The improvement from frozen (2.32 \u00c5) to fine-tuned (2.24 \u00c5) ESM2 is modest but consistent. However, the manuscript lacks details on fine-tuning hyperparameters, overfitting controls, and whether improvements are statistically significant. The choice to fine-tune all 33 layers may risk overfitting on the relatively small training set (n=1021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C65"
+    ],
+    "result": "Experimental validation with three anti-VEGF nanobody crystal structures showed H3-OPT achieved RMSDs of 1.41-1.54 \u00c5, substantially outperforming IgFold (2.45-2.89 \u00c5), particularly for predicting the short helix in CDR-H3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C64-C65 provide experimental validation with newly solved structures (PDB: 8IIU, 8IJZ, 8IJS). The RMSDs are precisely quantified and show consistent superiority over IgFold. However, this represents only 3 structures from a single antibody family (WT + 2 mutants with identical CDR-H3 sequences), limiting generalizability. The high AF2 confidence scores (>0.8) meant H3-OPT essentially used AF2 predictions directly via CBM, so this validates AF2 more than the novel PSPM component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "H3-OPT more accurately predicts surface properties of CDR-H3 loops, including surface amino acid counts (9.46 vs 9.40 native, compared to AF2's 9.81) and solvent-accessible surface areas, with statistically significant improvements over AlphaFold2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 report surface property predictions with statistical testing (p<0.05 to p<0.001 noted in Figure 8). The SAA prediction is close to native values, and SASA analysis shows smaller deviations than AF2. However, these are derivative metrics dependent on structural accuracy, not independent validations. The biological significance of small differences (9.46 vs 9.40 vs 9.81 SAAs) for antibody function is unclear and not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "H3-OPT improves prediction of antibody-antigen interactions, achieving higher precision (0.82 vs 0.71) and accuracy (0.98 vs 0.97) for contact residue prediction, lower distance errors (2.42 vs 4.85 \u00c5 MSE), and binding affinities closer to experimental values in MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C71 report improved binding site and affinity predictions on n=27 complexes. However, critical methodological concerns exist: (1) predicted antibody structures were superimposed onto experimental complex structures rather than predicting the complex de novo, (2) binding affinity calculations via MM/GBSA have known limitations and high uncertainty, (3) Table 6 shows high variability and some cases where AF2 performs better, (4) no experimental binding affinity measurements are provided for validation. These analyses demonstrate potential utility but require experimental validation of predicted binding affinities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "H3-OPT demonstrates superior performance on an independent CAMEO 2022 benchmark dataset, showing lower RMSDs than AlphaFold2 or tFold-Ab for 6 of 7 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 reports external validation on CAMEO 2022 data (Figure 7\u2014supplement 1), which is important for assessing generalizability. However, the sample size is very small (n=7), limiting statistical power. The manuscript provides minimal details about this analysis, and the figure shows substantial variability with some targets where other methods perform better. This represents useful but limited external validation that would benefit from larger benchmark sets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CDR-H3 prediction accuracy correlates with loop length: AlphaFold2 performs well for short loops (<10 residues), H3-OPT provides improvements for moderate lengths (10-25 residues), but all methods fail for very long loops (>25 residues) due to lack of homologous sequences and high conformational freedom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe length-dependent performance patterns supported by the subgroup analysis (Sub1-3 with average lengths 9.12, 11.08, 16.43). The correlation between length and difficulty is evident in the data. The conclusion that all methods fail for >25 residue loops is appropriately cautious. However, the mechanistic explanation (C83) about ESM2 fine-tuning is speculative, and the manuscript doesn't provide direct evidence that sequence context learning (vs. other factors) drives the improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "H3-OPT combines AlphaFold2 and PLM strengths but is less computationally efficient than IgFold due to AF2 dependency, while avoiding potential error propagation from IgFold's use of AF2-predicted structures in training data by using only high-quality experimental structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 discuss methodological trade-offs. The efficiency limitation (C74) is a logical consequence of the architecture. The criticism of IgFold's training data (C75) is valid but somewhat speculative regarding actual error propagation. The use of high-quality non-redundant training data (C76, n=1286 structures <2.5 \u00c5 resolution) is well-documented. However, no quantitative efficiency comparison (runtime, memory) is provided, and the claim about IgFold's error propagation lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C92",
+      "C93"
+    ],
+    "result": "H3-OPT has potential applications for optimizing antibody-antigen binding and engineering therapeutic antibodies with specialized biophysical properties for drug administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C5, C92-C93 make forward-looking application statements. While the improved structural predictions (supported by other results) provide a foundation for these applications, the manuscript presents no direct evidence of successful antibody optimization or engineering. The surface property and binding site predictions (Results 8-9) are suggestive but not validated experimentally. These represent reasonable hypotheses about potential utility rather than demonstrated capabilities, requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C84",
+      "C86"
+    ],
+    "result": "Future improvements to H3-OPT could come from larger high-resolution training datasets, PLMs with more parameters for 10-25 residue loops, and more accurate physics-based methods for long loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C84, C86 are speculative statements about future directions. While reasonable based on current limitations, these are hypotheses rather than demonstrated results. The suggestion about larger datasets (C78) is plausible but unproven. The PLM parameter scaling hypothesis (C84) lacks supporting evidence. The physics-based method suggestion (C86) contradicts the demonstrated failure of QM and MD approaches (Results 3-4) without explaining what would make future physics-based methods more successful.",
+    "result_type": "MINOR"
+  }
+]

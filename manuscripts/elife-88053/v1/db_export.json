@@ -1,0 +1,2389 @@
+{
+  "submission": {
+    "id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:46:38.554984Z",
+    "updated_at": "2025-11-20T22:46:38.554984Z"
+  },
+  "content": [
+    {
+      "id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "content_type": "manuscript",
+      "content_text": "# Drift of neural ensembles driven by slow fluctuations of intrinsic excitability\n\n## Authors\n\n- Geoffroy Delamare<sup>1</sup> ([ORCID: 0000-0001-6217-4370](https://orcid.org/0000-0001-6217-4370)) \u2020\n- Yosif Zaki<sup>2</sup>\n- Denise J Cai<sup>2</sup> ([ORCID: 0000-0002-7729-0523](https://orcid.org/0000-0002-7729-0523))\n- Claudia Clopath<sup>1</sup> ([ORCID: 0000-0003-4507-8648](https://orcid.org/0000-0003-4507-8648)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))\n2. Department of Neuroscience, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRepresentational drift refers to the dynamic nature of neural representations in the brain despite the behavior being seemingly stable. Although drift has been observed in many different brain regions, the mechanisms underlying it are not known. Since intrinsic neural excitability is suggested to play a key role in regulating memory allocation, fluctuations of excitability could bias the reactivation of previously stored memory ensembles and therefore act as a motor for drift. Here, we propose a rate-based plastic recurrent neural network with slow fluctuations of intrinsic excitability. We first show that subsequent reactivations of a neural ensemble can lead to drift of this ensemble. The model predicts that drift is induced by co-activation of previously active neurons along with neurons with high excitability which leads to remodeling of the recurrent weights. Consistent with previous experimental works, the drifting ensemble is informative about its temporal history. Crucially, we show that the gradual nature of the drift is necessary for decoding temporal information from the activity of the ensemble. Finally, we show that the memory is preserved and can be decoded by an output neuron having plastic synapses with the main region.\n\n## Introduction\n\nIn various brain regions, the neural code tends to be dynamic although behavioral outputs remain stable. Representational drift refers to the dynamic nature of internal representations as they have been observed in sensory cortical areas (Driscoll et al., 2017; Sadeh and Clopath, 2022; Driscoll et al., 2022) or the hippocampus (Ziv et al., 2013; Hainmueller and Bartos, 2018) despite stable behavior. It has even been suggested that pyramidal neurons from the CA1 and CA3 regions form dynamic rather than static memory engrams (Hainmueller and Bartos, 2018; Spalla et al., 2021), namely that the set of neurons encoding specific memories varies across days. In the amygdala, retraining of a fear memory task induces a turnover of the memory engram (Cho et al., 2021). Additionally, plasticity mechanisms have been proposed to compensate for drift and to provide a stable read-out of the neural code (Rule and O\u2019Leary, 2022), suggesting that information is maintained. Altogether, this line of evidence suggests that drift might be a general mechanism with dynamical representations observed in various brain regions.\n\nHowever, the mechanisms underlying the emergence of drift and its relevance for the neural computation are not known. Drift is often thought to arise from variability of internal states (Sadeh and Clopath, 2022), neurogenesis (Rechavi et al., 2022; Driscoll et al., 2017) or synaptic turnover (Attardo et al., 2015) combined with noise (Kossio et al., 2021; Manz and Memmesheimer, 2023). On the other hand, excitability might also play a role in memory allocation (Zhou et al., 2009; Mau et al., 2020; Rogerson et al., 2014; Silva et al., 2009), so that neurons having high excitability are preferentially allocated to memory ensembles (Cai et al., 2016; Rashid et al., 2016; Silva et al., 2009). Moreover, excitability is known to fluctuate over timescales from hours to days, in the amygdala (Rashid et al., 2016), the hippocampus (Cai et al., 2016; Grosmark and Buzs\u00e1ki, 2016), or the cortex (Huber et al., 2013; Levenstein et al., 2019). Subsequent reactivations of a neural ensemble at different time points could therefore be biased by excitability (Mau et al., 2022), which varies at similar timescales than drift (Mau et al., 2018). Altogether, this evidence suggest that fluctuations of excitability could act as a cellular mechanism for drift (Mau et al., 2020).\n\nIn this short communication, we aimed at proposing how excitability could indeed induce a drift of neural ensembles at the mechanistic level. We simulated a recurrent neural network (Delamare et al., 2022) equipped with intrinsic neural excitability and Hebbian learning. As a proof of principle, we first show that slow fluctuations of excitability can induce neural ensembles to drift in the network. We then explore the functional implications of such drift. Consistent with previous works (Rubin et al., 2015; Clopath et al., 2017; Mau et al., 2018; Miller et al., 2018), we show that neural activity of the drifting ensemble is informative about the temporal structure of the memory. This suggest that fluctuations of excitability can be useful for time-stamping memories (i.e. for making the neural ensemble informative about the time at which it was form). Finally, we confirmed that the content of the memory itself can be steadily maintained using a read-out neuron and local plasticity rule, consistently with previous computational works (Rule and O\u2019Leary, 2022). The goal of this study is to show one possible mechanistic implementation of how excitability can drive drift.\n\n## Results\n\nMany studies have shown that memories are encoded in sparse neural ensembles that are activated during learning and many of the same cells are reactivated during recall, underlying a stable neural representation (Josselyn and Tonegawa, 2020; Poo et al., 2016; Mau et al., 2020). After learning, subsequent reactivations of the ensemble can happen spontaneously during replay, retraining or during a memory recall task (e.g. following presentation of a cue Josselyn and Tonegawa, 2020; K\u00e1li and Dayan, 2004). Here, we directly tested the hypothesis that slow fluctuations of excitability can change the structure of a newly-formed neural ensemble, through subsequent reactivations of this ensemble.\n\nTo that end, we designed a rate-based, recurrent neural network, equipped with intrinsic neural excitability (Methods). We considered that the recurrent weights are all-to-all and plastic, following a Hebbian rule (Methods). The network was then stimulated following a 4day protocol: the first day corresponds to the initial encoding of a memory and the other days correspond to spontaneous or cue-induced reactivations of the neural ensemble (Methods). Finally, we considered that excitability of each neuron can vary on a day long timescale: each day, a different subset of neurons has increased excitability (Figure 1a, Methods).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig1-v1.jpg)\n\n**Figure 1.:** (a) Distribution of excitability $\u03f5_{i}$ for each neuron i, fluctuating over time. During each stimulation, a different pool of neurons has a high excitability (Methods). (b, c) Firing rates of the neurons across time. The red traces in panel (c) correspond to neurons belonging to the first assembly, namely that have a firing rate higher than the active threshold after the first stimulation. The black bars show the stimulation and the dashed line shows the active threshold. (d) Recurrent weights matrices after each of the four stimuli show the drifting assembly.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) $E=0$, no drift. A neural assembly is initially formed during the first stimulation and later reactivated every subsequent day. (b) $E=1.5$, partial drift. The ensemble is gradually modified during each new stimulation. (c) $E=3$, full drift. Each new stimulation leads to formation of a new ensemble, containing neurons that have high excitability during this time.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Drift rate against the size of the original engram. Bars show minimum, mean and maximum values. n=100 simulations.\n\n### Fluctuations of intrinsic excitability induce drifting of neural ensembles\n\nWhile stimulating the naive network on the first day, we observed the formation of a neural ensemble: some neurons gradually increase their firing rate (Figure 1b and c, neurons 10\u201320, time steps 1000\u20133000) during the stimulation. We observed that these neurons are highly recurrently connected (Figure 1d, leftmost matrix) suggesting that they form an assembly. This assembly is composed of neurons that have a high excitability (Figure 1a, neurons 10\u201320 have increase excitability) at the time of the stimulation. We then show that further stimulations of the network induce a remodeling of the synaptic weights. During the second stimulation for instance (Figure 1b and c, time steps 4000\u20136000), neurons from the previous assembly (10\u201320) are reactivated along with neurons having high excitability at the time of the second stimulation (Figure 1a, neurons 20\u201330). Moreover, across several days, recurrent weights from previous assemblies tend to decrease while others increase (Figure 1d). Indeed, neurons from the original assembly (Figure 1c, red traces) tend to be replaced by other neurons, either from the latest assembly or from the pool of neurons having high excitability. This is translated at the synaptic level, where weights from previous assemblies tend to decay and be replaced by new ones. Overall, each new stimulation updates the ensemble according to the current distribution of excitability, inducing a drift towards neurons with high excitability. Finally, in our model, the drift rate does not depend on the size of the original ensemble (Figure 1\u2014figure supplement 2, Methods).\n\n### Activity of the drifting ensemble is informative about the temporal structure of the past experience\n\nAfter showing that fluctuations of excitability can induce a drift among neural ensembles, we tested whether the drifting ensemble could contain temporal information about its past experiences, as suggested in previous works (Rubin et al., 2015).\n\nInspired by these works, we asked whether it was possible to decode relevant temporal information from the patterns of activity of the neural ensemble. We first observed that the correlation between patterns of activity after just after encoding decreases across days (Figure 2a, Methods), indicating that after each day, the newly formed ensemble resembles less the original one. Because the patterns of activity differ across days, they should be informative about the absolute day from which they were recorded. To test this hypothesis, we designed a day decoder (Figure 2b, Methods), following the work of Rubin et al., 2015. This decoder aims at inferring the reactivation day of a given activity pattern by comparing the activity of this pattern during training and the activity just after memory encoding without increase in excitability (Figure 2b, Methods). We found that the day decoder perfectly outputs the reactivation day as compared to using shuffled data (Figure 2c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig2-v1.jpg)\n\n**Figure 2.:** (a) Correlation of the patterns of activity between the first day and every other days, for n=10 simulations. Data are shown as mean \u00b1 s.e.m. (b) Schema of the day decoder. The day decoder maximises correlation between the patterns of each day with the pattern from the simulation with no increase in excitability. (c) Results of the day decoder for the real data (red) and the shuffled data (orange). Shuffled data consist of the same activity pattern for which the label of each cell for every seed has been shuffled randomly. For each simulation, the error is measured for each day as the difference between the decoded and the real day. Data are shown for n=10 simulations and for each of the 4 days. (d) Schema of the ordinal time decoder. This decoder output the permutation $\ud835\udc91$ that maximises the sum $S\u2062(\ud835\udc91)$ of the correlations of the patterns for each pairs of days. (e) Distribution of the value $S\u2062(\ud835\udc91)$ for each permutation of days $\ud835\udc91$. The value for the real permutation $S\u2062(\ud835\udc91_{real})$ is shown in black. (f) Student\u2019s test t-value for n=10 simulations, for the real (red) and shuffled (orange) data and for different amplitudes of excitability $E$. Data are shown as mean \u00b1 s.e.m. for n=10 simulations.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The same simulation protocol as Figure 1 was used while the recurrent weights matrix was made 50% sparse (Methods). (a) Firing rates of the neurons across time. The red traces correspond to neurons belonging to the first assembly, namely that have a firing rate higher than the active threshold after the first stimulation. The black bars show the stimulation and the dashed line shows the active threshold. (b) Recurrent weights matrices after each of the four stimuli show the drifting assembly. (c) Correlation of the patterns of activity between the first day and every other days. (d) Student\u2019s test t-value of the ordinal time decoder, for the real (red) and shuffled (orange) data and for different amplitudes of excitability $E$. (e) Center of mass of the distribution of the output weights (Methods) across days. (c\u2013e) Data are shown as mean \u00b1 s.e.m. for n=10 simulations.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The same simulation protocol as Figure 1 was used while the excitability changes were modeled as a change in the slope of the activation function (Methods). (a) Schema showing two different ways of defining excitability, as a threshold (top) or slope (bottom) of the activation function. Each line shows one neuron and darker lines correspond to neurons with increased excitability. (b) Firing rates of the neurons across time. The red traces correspond to neurons belonging to the first assembly, namely that have a firing rate higher than the active threshold after the first stimulation. The black bars show the stimulation and the dashed line shows the active threshold. (c) Recurrent weights matrices after each of the four stimuli show the drifting assembly. (d) Correlation of the patterns of activity between the first day and every other days. (e) Student\u2019s test t-value of the ordinal time decoder, for the real (red) and shuffled (orange) data and for different amplitudes of excitability $E$. (f) Center of mass of the distribution of the output weights (Methods) across days. (d-f) Data are shown as mean \u00b1 s.e.m. for n=10 simulations.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a, b) Firing rates of the neurons across time. The red traces in panel (b) correspond to neurons belonging to the first assembly and the green traces to the second assembly on the first day. They correspond to neurons having a firing rate higher than the active threshold after the first stimulation of each assembly. The black bars show the stimulation and the dashed line shows the active threshold. (c) Recurrent weights matrices after each of the eight stimuli showing the drifting of the first (top) and second (bottom) assembly.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Correlation of the patterns of activity between the first day and every other days, for the first assembly (red) and the second assembly (green). (b) Student\u2019s test t-value of the ordinal time decoder, for the first (red, left) and second ensemble (green, right) for different amplitudes of excitability $E$. Shuffled data are shown in orange. (c) Center of mass of the distribution of the output weights (Methods) across days for the first ($\ud835\udc7e_{1}^{out}$, red) and second ($\ud835\udc7e_{2}^{out}$, green) ensemble. (a\u2013c) Data are shown as mean \u00b1 s.e.m. for n=10 simulations. (d) Output neurons firing rate across time for the first ensemble ($y_{1}$, top) and the second ensemble ($y_{2}$, bottom). The red and green traces correspond to the real output. The dark blue, light blue and yellow traces correspond to the cases where the output weights were randomly shuffled for every time points after presentation of the first, second and third stimulus, respectively.\n\nAfter showing that the patterns of activity are informative about the reactivation day, we took a step further by asking whether the activity of the neurons is also informative about the order in which the memory evolved. To that end, we used an ordinal time decoder (Methods, as in Rubin et al., 2015) that uses the correlations between activity patterns for pairs of successive days, and for each possible permutation of days $\ud835\udc91$ (Figure 2d, Methods). The sum of these correlations $S\u2062(\ud835\udc91)$ differs from each permutation $\ud835\udc91$ and we assumed that the neurons are informative about the order at which the reactivations of the ensemble happened if the permutation maximising $S\u2062(\ud835\udc91)$ corresponds to the real permutation $\ud835\udc91^{real}$ (Figure 2e, Methods). We found that $S\u2062(\ud835\udc91^{real})$ was indeed statistically higher than $S\u2062(\ud835\udc91)$ for the other permutations $p$ (Figure 2f, Student\u2019s t-test, Methods). However, this was only true when the amplitude of the fluctuations of excitability $E$ was in a certain range. Indeed, when the amplitude of the fluctuations is null, that is when excitability is not increased ($E=0$), the ensemble does not drift (Figure 1\u2014figure supplement 1a). In this case, the patterns of activity are not informative about the order of reactivations. On the other hand, if the excitability amplitude is too high ($E=3$), each new ensemble is fully determined by the distribution of excitability, regardless of any previously formed ensemble (Figure 1\u2014figure supplement 1c). In this regime, the patterns of activity are not informative about the order of the reactivations either. In the intermediate regime ($E=1.5$), the decoder is able to correctly infer the order at which the reactivations happened, better than using the shuffled data (Figure 2f, Figure 1\u2014figure supplement 1b).\n\nFinally, we sought to test whether the results are independent on the specific architecture of the model. To that end, we defined a change of excitability as a change in the slope of the activation function, rather than of the threshold (Figure 2\u2014figure supplement 2, Methods). We also used sparse recurrent synaptic weights instead of the original all-to-all connectivity matrix (Figure 2\u2014figure supplement 1, Methods). In both cases, we observed a similar drifting behavior and were able to decode the temporal order in which the memory evolved.\n\n### A read-out neuron can track the drifting ensemble\n\nSo far, we showed that the drifting ensemble contains information about its history, namely about the days and the order at which the subsequent reactivations of the memory happened.\n\nHowever, we have not shown that we could use the neural ensemble to actually decode the memory itself, in addition to its temporal structure. To that end, we introduced a decoding output neuron connected to the recurrent neural network, with plastic weights following a Hebbian rule (Methods). As shown by Rule and O\u2019Leary, 2022, the goal was to make sure that the output neuron can track the ensemble even if it is drifting. This can be down by constantly decreasing weights from neurons that are no longer in the ensemble and increasing those associated with neurons joining the ensemble (Figure 3a). We found that the output neuron could steadily decode the memory (i.e. it has a higher firing than in the case where the output weights are randomly shuffled; Figure 3b). This is due to the fact that weights are plastic under Hebbian learning, as shown by Rule and O\u2019Leary, 2022. We confirmed that this was induced by a change in the output weights across time (Figure 3c). In particular, the weights from neurons that no longer belong to the ensemble are decreased while weights from newly recruited neurons are increased, so that the center of mass of the weights distribution drifts across time (Figure 3d). Finally, we found that the quality of the read-out decreases with the rate of the drift (Figure 3\u2014figure supplement 1, Methods).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig3-v1.jpg)\n\n**Figure 3.:** (a) Conceptual architecture of the network: the read-out neuron $y$ in red \u2018tracks\u2019 the ensemble by decreasing synapses linked to the previous ensemble and increasing new ones to linked to the new assembly. (b) Output neuron\u2019s firing rate across time. The red trace corresponds to the real output. The dark blue, light blue and yellow traces correspond to the cases where the output weights were randomly shuffled for every time points after presentation of the first, second and third stimulus, respectively. (c) Output weights for each neuron across time. (d) Center of mass of the distribution of the output weights (Methods) across days. The output weights are centered around the neurons that belong to the assembly at each day. Data are shown as mean \u00b1 s.e.m. for n=10 simulations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/88053/elife-88053-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Read-out quality computed on the firing rate of the output neuron against the rate of the drift (Methods). Each dot shows one simulation. n=100 simulations.\n\n### Two memories drift independently\n\nFinally, we tested whether the network is able to encode two different memories and whether excitability could make two ensembles drift. On each day, we stimulated a random half of the neurons (context A) and the other half (context B) sequentially (Methods). We found that, day after day, the two ensembles show a similar drift than when only one ensemble was formed (Figure 2\u2014figure supplement 3). In particular, the correlation between the patterns activity on the first day and the other days decay in a similar way (Figure 2\u2014figure supplement 4a). For both contexts, the temporal order of the reactivations can be decoded for a certain range of excitability amplitude (Figure 2\u2014figure supplement 4b). Finally, we found that using two output decoders allowed us to decode both memories independently. The output weights associated to both ensembles are remodeled to follow the drifting ensembles, but are not affected by the reactivation of the other ensemble (Figure 2\u2014figure supplement 4c). Indeed, both neurons are able to \u2018track\u2019 the reactivation of their associated ensemble while not responding to the other ensemble (Figure 2\u2014figure supplement 4d).\n\n## Discussion\n\nOverall, our model suggests a potential cellular mechanisms for the emergence of drift that can serve a computational purpose by \u2018time-stamping\u2019 memories while still being able to decode the memory across time. Although the high performance of the day decoder was expected, the performance of the ordinal time decoder is not trivial. Indeed, the patterns of activity of each day are informative about the distribution of excitability and therefore about the day at which the reactivation happened. However, the ability for the neural ensemble to encode the order of past reactivations requires drift to be gradual (i.e. requires consecutive patterns of activity to remain correlated across days). Indeed, if the amplitude of excitability is too low ($E=0$) or too high ($E=3$), it is not possible to decode the order at which the successive reactivations happened. This result is consistent with the previous works showing gradual change in neural representations, that allows for decoding temporal information of the ensemble (Rubin et al., 2015). Moreover, such gradual drifts could support complex cognitive mechanisms like mental time-travel during memory recall (Rubin et al., 2015).\n\nIn our model, drift is induced by co-activation of the previously formed ensemble and neurons with high excitability at the time of the reactivation. The pool of neurons having high excitability can therefore \u2018time-stamps\u2019 memory ensembles by biasing allocation of these ensembles (Clopath et al., 2017; Mau et al., 2018; Rubin et al., 2015). We suggest that such time-stamping mechanism could also help link memories that are temporally close and dissociate those which are spaced by longer time (Driscoll et al., 2022; Mau et al., 2020; Aimone et al., 2006). Indeed, the pool of neurons with high excitability varies across time so that any new memory ensemble is allocated to neurons which are shared with other ensembles formed around the same time. This mechanism could be complementary to the learning-induced increase in excitability observed in amygdala (Rashid et al., 2016), hippocampal CA1 (Cai et al., 2016) and dentate gyrus (Pignatelli et al., 2019).\n\nFinally, we intended to model drift in the firing rates, as opposed to a drift in the turning curve, of the neurons. Recent studies suggest that drifts in the mean firing rate and tuning curve arise from two different mechanisms (Geva et al., 2023; Khatib et al., 2023). Experience drives a drift in neurons turning curve while the passage of time drives a drift in neurons firing rate. In this sense, our study is consistent with these findings by providing a possible mechanism for a drift in the mean firing rates of the neurons driven a dynamical excitability. Our work suggests that drift can depend on any experience having an impact on excitability dynamics such as exercise as previously shown experimentally (Rechavi et al., 2022; de Snoo et al., 2023) but also neurogenesis (Aimone et al., 2006; Tran et al., 2022; Rechavi et al., 2022), sleep (Levenstein et al., 2017) or increase in dopamine level (Chowdhury et al., 2022).\n\nOverall, our work is a proof of principle which highlights the importance of considering excitability when studying drift, although further work would be needed to test this link experimentally.\n\n## Methods\n\n### Recurrent neural network with excitability\n\nOur rate-based model consists of a single region of $N$ neurons (with firing rate $r_{i}$, $1\\leqi\\leqN$). All-to-all recurrent connections $W$ are plastic and follow a Hebbian rule given by:\n\n$$\n\\frac{dW_{ij}}{dt}=r_{i}\u2217r_{j}/\\tau_{W}\u2212W_{ij}/\\tau_{decay}\n$$\n\nwhere $i$ and $j$ correspond to the pre- and post-synaptic neuron respectively. $\\tau_{W}$ and $\\tau_{decay}$ are the learning and the decay time constants of the weights, respectively.\n\nA hard bound of $[0,c]$ was applied to these weights. We also introduced a global inhibition term dependent on the activity of the neurons:\n\n$$\nI=I_{0}+I_{1}\\sumi=1Nr_{i}+I_{2}\\sumi=1Nr_{i}^{2}\n$$\n\nhere $I_{0}$, $I_{1}$ and $I_{2}$ are positive constants. All neurons receive the same input, $\u0394(t)$, during stimulation of the network (Figure 1c, black bars). Finally, excitability is modeled as a time-varying threshold $\u03f5_{i}$ of the input-output function of each neuron $i$. The rate dynamics of a neuron $i$ is given by:\n\n$$\n\\tau_{r}\\frac{dr_{i}}{dt}+r_{i}=ReLU(\u0394(t)+\\sumj=1NW_{ij}r_{j}\u2212I+\u03f5_{i}(t))\n$$\n\nwhere $\\tau_{r}$ is the decay time of the rates and ReLU is the rectified linear activation function. We considered that a neurons is active when its firing rate reaches the active threshold $\\theta$.\n\nIn Figure 2\u2014figure supplement 1, we applied a random binary mask to the recurrent weights in order to set 50% of the synapses at 0. A new mask was randomly sampled for each simulation.\n\nIn Figure 2\u2014figure supplement 2, we modeled excitability as a change of the slope of the activation function (ReLU) instead of a change of the threshold as previously used (Figure 2\u2014figure supplement 2a):\n\n$$\n\\tau_{r}\\frac{dr_{i}}{dt}+r_{i}=\u03f5_{i}(t)\u2217ReLU(\u0394(t)+\\sumj=1NW_{ij}r_{j}\u2212I)\n$$\n\n### Protocol\n\nWe designed a 4-day protocol, corresponding to the initial encoding of a memory (first day) and subsequent random or cue-induced reactivations of the ensemble (Josselyn and Tonegawa, 2020; K\u00e1li and Dayan, 2004) (second, third, and fourth day). Each stimulation consists of $N_{rep}$ repetitions of interval $T$ spaced by a inter-repetition delay $IR$. $\u0394(t)$ takes the value $\\delta$ during these repetitions and is set to 0 otherwise. The stimulation is repeated four times, modeling four days of reactivation, spaced by an inter-day delay $ID$. Excitability $\u03f5_{i}$ of each neuron $i$ is sampled from the absolute value of a normal distribution of mean 0 and standard deviation 1. In Figure 2\u2014figure supplement 2, excitability $\u03f5_{i}$ is sampled from the absolute value of a normal distribution of mean 0.4 and standard deviation 0.2. Neurons 10\u201320, 20\u201330, 30\u201340, and 40\u201350 then receive an increase of excitability of amplitude $E$, respectively on days 1, 2, 3, and 4 (Figure 1a). A different random seed is used for each repetition of the simulation. When two memories were modeled (Figure 2\u2014figure supplements 3 and 4), we stimulated a random half of the neurons (context A) and the other half (context B) successively (Figure 2\u2014figure supplement 3a), every day.\n\n### Decoders\n\nFor each day $d$, we recorded the activity pattern $V_{d}$, which is a vector composed of the firing rate of the neurons at the end of the last repetition of stimulation. To test the decoder, we also stimulated the network while setting the excitability at baseline ($E=0$), and recorded the resulted pattern of activity $V_{d}^{0}$ for each day $d$. We then designed two types of decoders, inspired by previous works (Rubin et al., 2015): (1) a day decoder which infers the day at which each stimulation happened and (2) an ordinal time decoder which infers the order at which the reactivations occurred. For both decoders, the shuffled data was obtained by randomly shuffling the day label of each neuron. When two memories were modeled (Figure 2\u2014figure supplements 3 and 4), the patterns of activity were taken at the end of the stimulations by context A and B, and the decoders were used independently on each memory.\n\n1. The day decoder aims at inferring the day at which a specific pattern of activity occurred. To that end, we computed the Pearson correlation between the pattern with no excitability $V_{d}^{0}$ of the day $d$ and the patterns of all days $d^{\u2032}$ from the first simulation $V_{d^{\u2032}}$. Then, the decoder outputs the day $d_{inf}$ that maximises the correlation:\n\n$$\nd_{inf}=argmaxd^{\u2032}\u2061{corr(V_{d}^{0},V_{d^{\u2032}})}\n$$\n\nThe error was defined as the difference between the inferred and the real day $d_{inf}\u2212d$.\n\n2. The ordinal time decoder aims at inferring the order at which the reactivations happened from the patterns of activity $V_{d}$ of every day $d$. To that end, we computed the pairwise correlations of each pair of consecutive days, for the $4!$ possible permutations of days $\ud835\udc91$. The real permutation is called $\ud835\udc91^{real}=(1,2,3,4)$ and corresponds to the real order of reactivations: day 1 \u2192 day 2 \u2192 day 3 \u2192 day 4. The sum of these correlations over the 3 pairs of consecutive days is expressed as:\n\n$$\nS(p)=\\sumi=13corr(V_{p_{i}},V_{p_{i+1}})\n$$\n\nWe then compared the distribution of these quantities for each permutation $\ud835\udc91$ to that of the real permutation $S\u2062(\ud835\udc91^{real})$ (Figure 2). The patterns of activity are informative about the order of reactivations if $S\u2062(\ud835\udc91^{real})$ corresponds to the maximal value of $S\u2062(\ud835\udc91)$. To compare $S\u2062(\ud835\udc91^{real})$ with the distribution $S\u2062(\ud835\udc91)$, we performed a Student\u2019s t-test, where the t-value is defined as:\n\n$$\nt=\\frac{S(p^{real})\u2212\\mu}{\\sigma/\\sqrt{N}}\n$$\n\nwhere \u03bc and \u03c3 correspond to the mean and standard deviation of the distribution $S\u2062(\ud835\udc91)$, respectively.\n\nThe drift rate \u0394 (Figure 1\u2014figure supplement 2 and Figure 3\u2014figure supplement 1) was computed as:\n\n$$\n\u0394=\\sumi=24(1\u2212corr(V_{1},V_{i}))\n$$\n\n### Memory read-out\n\nTo test if the network is able to decode the memory at any time point, we introduced a read-out neuron with plastic synapses to neurons from the recurrent network, inspired by previous computational works (Rule and O\u2019Leary, 2022). The weights of these synapses are named $\ud835\udc7e^{out}=(W_{i}^{out})_{1\\leqi\\leqN}$ and follow the Hebbian rule defined as:\n\n$$\n\\frac{dW_{ij}^{out}}{dt}=h(W^{out})\u2217r_{i}\u2217y/\\tau_{out}^{+}\u2212W_{i}^{out}/\\tau_{out}^{\u2212}\n$$\n\nwhere $\\tau_{out}^{+}$ and $\\tau_{out}^{\u2212}$ corresponds to the learning time and decay time constant, respectively. $h\u2062(\ud835\udc7e^{out})$ is a homeostatic term defined as $h\u2062(\ud835\udc7e^{out})=1-\\sum_{j=1}^{N}W_{j}^{out}$ which decreases to 0 throughout learning. $h$ takes the value 1 before learning and 0 when the sum of the weights reaches the value 1. $y$ is the firing rate of the output neuron defined $y$ as:\n\n$$\ny=\\sumi=1NW_{i}^{out}r_{i}\n$$\n\nThe read-out quality index $Q$ (Figure 3\u2014figure supplement 1) was defined as:\n\n$$\nQ=\u27e8\\sumd=24y_{d}/y_{d}^{shuffle}\u27e9_{N_{shuffle}}\n$$\n\nwhere $y_{d}$ corresponds to the value of $y$ taken at the end of the last repetition of day $d$, and $y_{d}^{shuffle}$ the equivalent with shuffled outputs weights. $\u27e8...\u27e9_{N_{shuffle}}$ indicates the average over $N_{shuffle}=10$ simulations.\n\nIn Figure 2\u2014figure supplements 3 and 4, two output decoders $y_{k}$, $k\\in{1,2}$, with corresponding weights $\ud835\udc7e_{\ud835\udc8c}^{out}=(W_{i,k}^{out})_{1\\leqi\\leqN}$ are defined as:\n\n$$\ny_{k}=\\sumi=1NW_{i,k}^{out}r_{i}+\\beta_{k}\n$$\n\nand follow the Hebbian rule defined as:\n\n$$\n\\frac{dW_{i,k}^{out}}{dt}=h(W_{i,k}^{out})\u2217r_{i}\u2217y_{k}/\\tau_{out}^{+}\u2212W_{i,k}^{out}/\\tau_{out}^{\u2212}\n$$\n\nThen, we aimed at allocating $y_{1}$ and $y_{2}$ to the first and the second ensemble (context A and B), respectively. To that end, we used supervised learning on the first day by adding a current $\\beta_{k}$ to the output neurons which is positive when the corresponding context is on:\n\n$$\n\\beta_{0}=0.1\u00a0if\u00a01000<t<3000,\u00a00\u00a0otherwise\\beta_{1}=0.1\u00a0if\u00a04000<t<6000,\u00a00\u00a0otherwise\n$$\n\nThe shuffled traces were obtained by randomly shuffling the output weights $\ud835\udc7e^{out}$ or $\ud835\udc7e_{\ud835\udc8c}^{out}$ for each ensemble $k$.\n\n### Table of parameters\n\nThe following parameters have been used for the simulations. When unspecified, the defaults values were used. All except $N$ are in arbitrary unit. Figure 2\u2014figure supplement 2 corresponds to the change from a threshold-based to a slope-based excitability. Figure 2\u2014figure supplements 3 and 4 corresponds to the stimulation of two ensembles. Figure 2\u2014figure supplement 1 corresponds to the sparsity simulation.\n\n<table>\n  <thead>\n    <tr>\n      <th>Param.</th>\n      <th>Description</th>\n      <th>Default</th>\n      <th>Figure 2\u2014figure supplement 2</th>\n      <th>Figure 2\u2014figure supplements 3 and 4</th>\n      <th>Figure 2\u2014figure supplement 1</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>N</td>\n      <td>Number of neurons</td>\n      <td>50</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>\u03c4W</td>\n      <td>Learning time constant of the recurrent weights</td>\n      <td>800</td>\n      <td>700</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>\u03c4decay</td>\n      <td>Decay time constant of the recurrent weights</td>\n      <td>1000</td>\n      <td>800</td>\n      <td>4000</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>\u03c4r</td>\n      <td>Decay time constant of the firing rates</td>\n      <td>20</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>\u03c4out+</td>\n      <td>Learning time constant of the output weights</td>\n      <td>200</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>\u03c4out\u2212</td>\n      <td>Decay time constant of the output weights</td>\n      <td>1000</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>I0</td>\n      <td>First inhibition parameter</td>\n      <td>12</td>\n      <td>4</td>\n      <td>8</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>I1</td>\n      <td>Second inhibition parameter</td>\n      <td>0.5</td>\n      <td>0.7</td>\n      <td>0.8</td>\n      <td>0.8</td>\n    </tr>\n    <tr>\n      <td>I2</td>\n      <td>Third inhibition parameter</td>\n      <td>0.05</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>\u03b4</td>\n      <td>Input current during stimulation</td>\n      <td>15</td>\n      <td>-</td>\n      <td>12</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>Amplitude of the fluctuations of excitability</td>\n      <td>1.5</td>\n      <td>0.5</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Nrep</td>\n      <td>Number of repetitions</td>\n      <td>10</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>Duration of each repetition</td>\n      <td>100</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>IR</td>\n      <td>Inter-repetition delay</td>\n      <td>100</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>ID</td>\n      <td>Inter-stimulation delay</td>\n      <td>1000</td>\n      <td>-</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>\u03b8</td>\n      <td>Active threshold</td>\n      <td>5</td>\n      <td>1</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>c</td>\n      <td>Cap on the recurrent weights</td>\n      <td>1</td>\n      <td>.5</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lisa M Giocomo, Stanford School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.88053.3.sa0](https://doi.org/10.7554/eLife.88053.3.sa0)\n\nThis is an important theoretical study providing insight into how fluctuations in excitability can contribute to gradual changes in the mapping between population activity and stimulus, commonly referred to as representational drift. The authors provide convincing evidence that fluctuations can contribute to drift. Overall, this is a well-presented study that explores the question of how changes in intrinsic excitability can influence distinct memory representations.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.88053.3.sa1](https://doi.org/10.7554/eLife.88053.3.sa1)\n\nSummary of the findings:\n\nThe authors explore an important question concerning the underlying mechanism of representational drift, which despite intense recent interest remains obscure. The paper explores the intriguing hypothesis that drift may reflect changes in the intrinsic excitability of neurons. The authors set out to provide theoretical insight into this potential mechanism.\n\nThey construct a rate model with all-to-all recurrent connectivity, in which recurrent synapses are governed by a standard Hebbian plasticity rule. This network receives a global input, constant across all neurons, which can be varied with time. Each neuron also is driven by an \"intrinsic excitability\" bias term, which does vary across cells. The authors study how activity in the network evolves as this intrinsic excitability term is changed.\n\nThey find that after initial stimulation of the network, those neurons where the excitability term is set high become more strongly connected and are in turn more responsive to the input. Each day the subset of neurons with high intrinsic excitability is changed, and the network's recurrent synaptic connectivity and responsiveness gradually shift, such that the new high intrinsic excitability subset becomes both more strongly activated by the global input and also more strongly recurrently connected. These changes result in drift, reflected by a gradual decrease across time in the correlation of the neuronal population vector response to the stimulus.\n\nThe authors are able to build a classifier that decodes the \"day\" (i.e. which subset of neurons had high intrinsic excitability) with perfect accuracy. This is despite the fact that the excitability bias during decoding is set to 0 for all neurons, and so the decoder is really detecting those neurons with strong recurrent connectivity, and in turn strong responses to the input. The authors show that it is also possible to decode the order in which different subsets of neurons were given high intrinsic excitability on previous \"days\". This second result depends on the extent by which intrinsic excitability was increased: if the increase in intrinsic excitability was either too high or too low, it was not possible to read out any information about the past ordering of excitability changes.\n\nFinally, using another Hebbian learning rule, the authors show that an output neuron, whose activity is a weighted sum of the activity of all neurons in the network, is able to read out the activity of the network. What this means specifically, is that although the set of neurons most active in the network changes, the output neuron always maintains a higher firing rate than a neuron with randomly shuffled synaptic weights, because the output neuron continuously updates its weights to sample from the highly active population at any given moment. Thus, the output neuron can read out a stable memory despite drift.\n\nStrengths:\n\nThe authors are clear in their description of the network they construct and in their results. They convincingly show that when they change their \"intrinsic excitability term\", upon stimulation, the Hebbian synapses in their network gradually evolve, and the combined synaptic connectivity and altered excitability result in drifting patterns of activity in response to an unchanging input (Fig. 1, Fig. 2a). Furthermore, their classification analyses (Fig. 2) show that information is preserved in the network, and their readout neuron successfully tracks the active cells (Fig. 3). Finally, the observation that only a specific range of excitability bias values permits decoding of the temporal structure of the history of intrinsic excitability (Fig. 2f and Figure S1) is interesting, and as the authors point out, not trivial.\n\nWeaknesses:\n\n1. The way the network is constructed, there is no formal difference between what the authors call \"input\", \u0394(t), and what they call \"intrinsic excitability\" \u0190_i(t) (see Equation 3). These are two separate terms that are summed (Eq. 3) to define the rate dynamics of the network. The authors could have switched the names of these terms: \u0394(t) could have been considered a global \"intrinsic excitability term\" that varied with time and \u0190_i(t) could have been the external input received by each neuron in the network. In that case, the paper would have considered the consequence of \"slow fluctuations of external input\" rather than \"slow fluctuations of intrinsic excitability\", but the results would have been the same. The difference is therefore semantic. The consequence is that this paper is not necessarily about \"intrinsic excitability\", rather it considers how a Hebbian network responds to changes in excitatory drive, regardless of whether those drives are labeled \"input\" or \"intrinsic excitability\".\n\nA revised version of the manuscript models \"slope-based\" excitability changes in addition to \"threshold-based\" changes. This serves to address the above concern that as constructed here changes in excitability threshold are not distinguishable from changes in input. However, it remains unclear what the model would do should only a subset of neurons receive a given, fixed input. In that case, are excitability changes sufficient to induce drift? This remains an important question that is not addressed by the paper in its current form.\n\n1. Given how the learning rule that defines the input to the readout neuron is constructed, it is trivial that this unit responds to the most active neurons in the network, more so than a neuron assigned random weights. What would happen if the network included more than one \"memory\"? Would it be possible to construct a readout neuron that could classify two distinct patterns? Along these lines, what if there were multiple, distinct stimuli used to drive this network, rather than the global input the authors employ here? Does the system, as constructed, have the capacity to provide two distinct patterns of activity in response to two distinct inputs?\n\nA revised version of the manuscript addresses this question, demonstrating that the network is capable of maintaining two distinct memories.\n\nImpact:\n\nDefining the potential role of changes in intrinsic excitability in drift is fundamental. Thus, this paper represents an important contribution. What we see here is that changes in intrinsic excitability are sufficient to induce drift. This raises the question for future work of the specific contributions of changing excitability from changing input to representational drift.\n",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9e51a5d-9c07-49c2-8393-da94714e94c9",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C1",
+      "claim": "Representational drift refers to the dynamic nature of neural representations in the brain despite the behavior being seemingly stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Representational drift refers to the dynamic nature of neural representations in the brain despite the behavior being seemingly stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement supported by established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "e4c70b72-c9d5-4386-a5b8-cd681f6ff104",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C2",
+      "claim": "Drift has been observed in many different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although drift has been observed in many different brain regions, the mechanisms underlying it are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established fact in the abstract, implicitly drawing on existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "1a4c1e2d-d6d0-461a-adc1-a2562a3f3176",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C3",
+      "claim": "The mechanisms underlying drift are not known.",
+      "claim_type": "EXPLICIT",
+      "source": "Although drift has been observed in many different brain regions, the mechanisms underlying it are not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "48123b9b-095b-4bb4-afc5-8b375c4d7918",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C4",
+      "claim": "Intrinsic neural excitability is suggested to play a key role in regulating memory allocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since intrinsic neural excitability is suggested to play a key role in regulating memory allocation, fluctuations of excitability could bias the reactivation of previously stored memory ensembles and therefore act as a motor for drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an established suggestion in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "8bb25c31-e421-40bd-aa4d-dcb8826d3f70",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C5",
+      "claim": "Fluctuations of excitability could bias the reactivation of previously stored memory ensembles and therefore act as a motor for drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Since intrinsic neural excitability is suggested to play a key role in regulating memory allocation, fluctuations of excitability could bias the reactivation of previously stored memory ensembles and therefore act as a motor for drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "b7751820-9e55-4010-8823-c38a8668ab17",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C6",
+      "claim": "A rate-based plastic recurrent neural network with slow fluctuations of intrinsic excitability can model drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose a rate-based plastic recurrent neural network with slow fluctuations of intrinsic excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the computational model proposed and implemented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "63a8654c-b018-4287-ad14-58ef9d187a90",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C7",
+      "claim": "Subsequent reactivations of a neural ensemble can lead to drift of this ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "We first show that subsequent reactivations of a neural ensemble can lead to drift of this ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational model presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "e43a32a0-5182-4ada-9036-e58d5e90c9fe",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C8",
+      "claim": "Drift is induced by co-activation of previously active neurons along with neurons with high excitability which leads to remodeling of the recurrent weights.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts that drift is induced by co-activation of previously active neurons along with neurons with high excitability which leads to remodeling of the recurrent weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the computational model based on simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "ee2dedd1-e1d2-447b-918f-d5c86642e1f5",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C9",
+      "claim": "The drifting ensemble is informative about its temporal history.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous experimental works, the drifting ensemble is informative about its temporal history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by model simulations and is consistent with prior experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "4e76a339-b89a-454a-8879-a14fea47e0dc",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C10",
+      "claim": "The gradual nature of the drift is necessary for decoding temporal information from the activity of the ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, we show that the gradual nature of the drift is necessary for decoding temporal information from the activity of the ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the computational model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "c3d207c8-6944-48ff-8e02-2003c000fc4c",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C11",
+      "claim": "The memory is preserved and can be decoded by an output neuron having plastic synapses with the main region.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that the memory is preserved and can be decoded by an output neuron having plastic synapses with the main region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through simulations with a read-out neuron.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "84bf5c6d-10c5-4b6f-a191-c6ca88930e57",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C12",
+      "claim": "Drift has been observed in sensory cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Representational drift refers to the dynamic nature of internal representations as they have been observed in sensory cortical areas (Driscoll et al., 2017; Sadeh and Clopath, 2022; Driscoll et al., 2022) or the hippocampus (Ziv et al., 2013; Hainmueller and Bartos, 2018) despite stable behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "95634b9a-3a70-4176-956f-81bad4f90507",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C13",
+      "claim": "Drift has been observed in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Representational drift refers to the dynamic nature of internal representations as they have been observed in sensory cortical areas (Driscoll et al., 2017; Sadeh and Clopath, 2022; Driscoll et al., 2022) or the hippocampus (Ziv et al., 2013; Hainmueller and Bartos, 2018) despite stable behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "e7861368-f623-4010-a614-588d7c3a303a",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C14",
+      "claim": "Pyramidal neurons from the CA1 and CA3 regions form dynamic rather than static memory engrams.",
+      "claim_type": "EXPLICIT",
+      "source": "It has even been suggested that pyramidal neurons from the CA1 and CA3 regions form dynamic rather than static memory engrams (Hainmueller and Bartos, 2018; Spalla et al., 2021), namely that the set of neurons encoding specific memories varies across days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "7542ac6a-4c04-4a32-a882-df1d7a5b3a5e",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C15",
+      "claim": "The set of neurons encoding specific memories varies across days.",
+      "claim_type": "EXPLICIT",
+      "source": "It has even been suggested that pyramidal neurons from the CA1 and CA3 regions form dynamic rather than static memory engrams (Hainmueller and Bartos, 2018; Spalla et al., 2021), namely that the set of neurons encoding specific memories varies across days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of what dynamic memory engrams means, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "33d39164-a1dd-49d0-a821-4a0ad9ab9401",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C16",
+      "claim": "Retraining of a fear memory task induces a turnover of the memory engram in the amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "In the amygdala, retraining of a fear memory task induces a turnover of the memory engram (Cho et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "5d67ca9e-40d1-4dac-93d9-9de300fef0d8",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C17",
+      "claim": "Plasticity mechanisms have been proposed to compensate for drift and to provide a stable read-out of the neural code.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, plasticity mechanisms have been proposed to compensate for drift and to provide a stable read-out of the neural code (Rule and O'Leary, 2022), suggesting that information is maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "b4a4c8e1-47fa-4402-91e8-901191e3efd0",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C18",
+      "claim": "Information is maintained despite drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, plasticity mechanisms have been proposed to compensate for drift and to provide a stable read-out of the neural code (Rule and O'Leary, 2022), suggesting that information is maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that plasticity mechanisms can provide stable read-out.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "110ccbd1-83ed-4462-b555-29cdfe6fa896",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C19",
+      "claim": "Drift might be a general mechanism with dynamical representations observed in various brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this line of evidence suggests that drift might be a general mechanism with dynamical representations observed in various brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the cited evidence.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "0c11314b-fdc2-4ffe-9144-e7a034177d87",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C20",
+      "claim": "Drift is often thought to arise from variability of internal states.",
+      "claim_type": "EXPLICIT",
+      "source": "Drift is often thought to arise from variability of internal states (Sadeh and Clopath, 2022), neurogenesis (Rechavi et al., 2022; Driscoll et al., 2017) or synaptic turnover (Attardo et al., 2015) combined with noise (Kossio et al., 2021; Manz and Memmesheimer, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "3514c89c-e30f-4c3a-8897-5840075bbe4f",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C21",
+      "claim": "Drift is often thought to arise from neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Drift is often thought to arise from variability of internal states (Sadeh and Clopath, 2022), neurogenesis (Rechavi et al., 2022; Driscoll et al., 2017) or synaptic turnover (Attardo et al., 2015) combined with noise (Kossio et al., 2021; Manz and Memmesheimer, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "31065e37-41b2-4663-82b1-bc811554cceb",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C22",
+      "claim": "Drift is often thought to arise from synaptic turnover combined with noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Drift is often thought to arise from variability of internal states (Sadeh and Clopath, 2022), neurogenesis (Rechavi et al., 2022; Driscoll et al., 2017) or synaptic turnover (Attardo et al., 2015) combined with noise (Kossio et al., 2021; Manz and Memmesheimer, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "bb316748-4022-4731-b230-aaf3772c3d19",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C23",
+      "claim": "Neurons having high excitability are preferentially allocated to memory ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, excitability might also play a role in memory allocation (Zhou et al., 2009; Mau et al., 2020; Rogerson et al., 2014; Silva et al., 2009), so that neurons having high excitability are preferentially allocated to memory ensembles (Cai et al., 2016; Rashid et al., 2016; Silva et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "46135440-604c-496e-8ace-6a7341b7eac3",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C24",
+      "claim": "Excitability is known to fluctuate over timescales from hours to days in the amygdala.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, excitability is known to fluctuate over timescales from hours to days, in the amygdala (Rashid et al., 2016), the hippocampus (Cai et al., 2016; Grosmark and Buzs\u00e1ki, 2016), or the cortex (Huber et al., 2013; Levenstein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "33f1bf20-8abb-4676-bf4e-60a8d008a479",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C25",
+      "claim": "Excitability is known to fluctuate over timescales from hours to days in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, excitability is known to fluctuate over timescales from hours to days, in the amygdala (Rashid et al., 2016), the hippocampus (Cai et al., 2016; Grosmark and Buzs\u00e1ki, 2016), or the cortex (Huber et al., 2013; Levenstein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "91ddd725-614e-4b44-8754-c4847a9813b8",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C26",
+      "claim": "Excitability is known to fluctuate over timescales from hours to days in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, excitability is known to fluctuate over timescales from hours to days, in the amygdala (Rashid et al., 2016), the hippocampus (Cai et al., 2016; Grosmark and Buzs\u00e1ki, 2016), or the cortex (Huber et al., 2013; Levenstein et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "47baa6c7-ad19-4b87-831a-756b72c523aa",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C27",
+      "claim": "Subsequent reactivations of a neural ensemble at different time points could be biased by excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent reactivations of a neural ensemble at different time points could therefore be biased by excitability (Mau et al., 2022), which varies at similar timescales than drift (Mau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "c09f1b5c-fd60-4b21-847c-653e6fd131d3",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C28",
+      "claim": "Excitability varies at similar timescales as drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent reactivations of a neural ensemble at different time points could therefore be biased by excitability (Mau et al., 2022), which varies at similar timescales than drift (Mau et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "eef3f797-0796-4649-999f-a2d6303781fa",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C29",
+      "claim": "Fluctuations of excitability could act as a cellular mechanism for drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this evidence suggest that fluctuations of excitability could act as a cellular mechanism for drift (Mau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "19754eac-2d0a-404f-a702-0f7b8bd629b5",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C30",
+      "claim": "Slow fluctuations of excitability can induce neural ensembles to drift in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "As a proof of principle, we first show that slow fluctuations of excitability can induce neural ensembles to drift in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "6e72aaac-512c-4370-932c-dc508fc35283",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C31",
+      "claim": "Neural activity of the drifting ensemble is informative about the temporal structure of the memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous works (Rubin et al., 2015; Clopath et al., 2017; Mau et al., 2018; Miller et al., 2018), we show that neural activity of the drifting ensemble is informative about the temporal structure of the memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model that is consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "6b8125f9-ac49-4c95-9a65-fc32b3c89b35",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C32",
+      "claim": "Fluctuations of excitability can be useful for time-stamping memories.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggest that fluctuations of excitability can be useful for time-stamping memories (i.e. for making the neural ensemble informative about the time at which it was form).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "1282c11a-efb1-41b4-81dc-abf052e9aa7c",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C33",
+      "claim": "The content of the memory itself can be steadily maintained using a read-out neuron and local plasticity rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we confirmed that the content of the memory itself can be steadily maintained using a read-out neuron and local plasticity rule, consistently with previous computational works (Rule and O'Leary, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the model and is consistent with prior computational work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "5cc8be64-003d-413e-8706-6aa860879ae5",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C34",
+      "claim": "Memories are encoded in sparse neural ensembles that are activated during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have shown that memories are encoded in sparse neural ensembles that are activated during learning and many of the same cells are reactivated during recall, underlying a stable neural representation (Josselyn and Tonegawa, 2020; Poo et al., 2016; Mau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "30ef3cf8-f7fb-4bf3-89cf-56a60b5405fd",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C35",
+      "claim": "Many of the same cells are reactivated during recall, underlying a stable neural representation.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have shown that memories are encoded in sparse neural ensembles that are activated during learning and many of the same cells are reactivated during recall, underlying a stable neural representation (Josselyn and Tonegawa, 2020; Poo et al., 2016; Mau et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "6b05744c-3039-4d03-9a2b-bafbce616420",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C36",
+      "claim": "Subsequent reactivations of the ensemble can happen spontaneously during replay, retraining or during a memory recall task.",
+      "claim_type": "EXPLICIT",
+      "source": "After learning, subsequent reactivations of the ensemble can happen spontaneously during replay, retraining or during a memory recall task (e.g. following presentation of a cue Josselyn and Tonegawa, 2020; K\u00e1li and Dayan, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "2e3b85d2-b9d4-4d50-9c56-5eb52d7c7a5c",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C37",
+      "claim": "During the first stimulation, a neural ensemble is formed composed of neurons that have high excitability at the time of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "While stimulating the naive network on the first day, we observed the formation of a neural ensemble: some neurons gradually increase their firing rate (Figure 1b and c, neurons 10\u201320, time steps 1000\u20133000) during the stimulation. We observed that these neurons are highly recurrently connected (Figure 1d, leftmost matrix) suggesting that they form an assembly. This assembly is composed of neurons that have a high excitability (Figure 1a, neurons 10\u201320 have increase excitability) at the time of the stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "160e4dd3-0fa8-4b33-8c9c-bb428c775a2a",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C38",
+      "claim": "Neurons forming an assembly are highly recurrently connected.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that these neurons are highly recurrently connected (Figure 1d, leftmost matrix) suggesting that they form an assembly.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "c4ac6ca3-7ea8-4eb8-b833-581ce1a91985",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C39",
+      "claim": "Further stimulations of the network induce a remodeling of the synaptic weights.",
+      "claim_type": "EXPLICIT",
+      "source": "We then show that further stimulations of the network induce a remodeling of the synaptic weights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "ec053241-12ac-400a-b537-ed58a5540d0e",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C40",
+      "claim": "During the second stimulation, neurons from the previous assembly are reactivated along with neurons having high excitability at the time of the second stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "During the second stimulation for instance (Figure 1b and c, time steps 4000\u20136000), neurons from the previous assembly (10\u201320) are reactivated along with neurons having high excitability at the time of the second stimulation (Figure 1a, neurons 20\u201330).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "ad1cbb78-2a75-4ad6-b064-6ccdb03652b8",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C41",
+      "claim": "Across several days, recurrent weights from previous assemblies tend to decrease while others increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, across several days, recurrent weights from previous assemblies tend to decrease while others increase (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "42f7b8e3-4315-424e-a64f-62b98047e1c6",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C42",
+      "claim": "Neurons from the original assembly tend to be replaced by other neurons, either from the latest assembly or from the pool of neurons having high excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, neurons from the original assembly (Figure 1c, red traces) tend to be replaced by other neurons, either from the latest assembly or from the pool of neurons having high excitability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "05a9fda7-39aa-4eab-8bca-f98be675fc20",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C43",
+      "claim": "Each new stimulation updates the ensemble according to the current distribution of excitability, inducing a drift towards neurons with high excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, each new stimulation updates the ensemble according to the current distribution of excitability, inducing a drift towards neurons with high excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model behavior observed in simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "ddfe555c-82e3-45d8-a824-1f985a8fd3d5",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C44",
+      "claim": "The drift rate does not depend on the size of the original ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in our model, the drift rate does not depend on the size of the original ensemble (Figure 1\u2014figure supplement 2, Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the model simulations and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "d974a1ea-54f6-454f-a95b-d7a1ec2c9f9e",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C45",
+      "claim": "The correlation between patterns of activity after just after encoding decreases across days.",
+      "claim_type": "EXPLICIT",
+      "source": "We first observed that the correlation between patterns of activity after just after encoding decreases across days (Figure 2a, Methods), indicating that after each day, the newly formed ensemble resembles less the original one.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "5ce07fdf-95ad-487e-b1dd-0729485f05e2",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C46",
+      "claim": "After each day, the newly formed ensemble resembles less the original one.",
+      "claim_type": "EXPLICIT",
+      "source": "We first observed that the correlation between patterns of activity after just after encoding decreases across days (Figure 2a, Methods), indicating that after each day, the newly formed ensemble resembles less the original one.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the decreasing correlation observed in simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "b8558779-6f5c-411e-8138-31e39caef9e2",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C47",
+      "claim": "The patterns of activity differ across days and should be informative about the absolute day from which they were recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the patterns of activity differ across days, they should be informative about the absolute day from which they were recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the observation that patterns differ across days.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "9d31ba57-44f7-46d8-b6b5-d0c7e79b9e5d",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C48",
+      "claim": "The day decoder perfectly outputs the reactivation day as compared to using shuffled data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the day decoder perfectly outputs the reactivation day as compared to using shuffled data (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the model simulations and shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "7fc85726-1688-490f-b0dd-d3ffb9d0da8c",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C52",
+      "claim": "When E=0, the patterns of activity are not informative about the order of reactivations.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the patterns of activity are not informative about the order of reactivations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model behavior when there is no drift.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "2f53ce54-8f26-4315-8073-1a0a74a91ce6",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C53",
+      "claim": "When E=3, the patterns of activity are not informative about the order of the reactivations.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regime, the patterns of activity are not informative about the order of the reactivations either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model behavior when drift is complete.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "3e8582a7-f469-4a35-8720-388348097a67",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C54",
+      "claim": "The results are independent of the specific architecture of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we sought to test whether the results are independent on the specific architecture of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is tested through additional simulations with different model architectures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "6a3d848e-042e-4b01-96ea-2eb8d6e32d58",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C55",
+      "claim": "Similar drifting behavior is observed when excitability is defined as a change in the slope of the activation function rather than of the threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "To that end, we defined a change of excitability as a change in the slope of the activation function, rather than of the threshold (Figure 2\u2014figure supplement 2, Methods). We also used sparse recurrent synaptic weights instead of the original all-to-all connectivity matrix (Figure 2\u2014figure supplement 1, Methods). In both cases, we observed a similar drifting behavior and were able to decode the temporal order in which the memory evolved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in additional model simulations shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "1758b81d-94b8-4cf1-b26b-dd033cf7b1a7",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C56",
+      "claim": "Similar drifting behavior is observed when using sparse recurrent synaptic weights instead of all-to-all connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "To that end, we defined a change of excitability as a change in the slope of the activation function, rather than of the threshold (Figure 2\u2014figure supplement 2, Methods). We also used sparse recurrent synaptic weights instead of the original all-to-all connectivity matrix (Figure 2\u2014figure supplement 1, Methods). In both cases, we observed a similar drifting behavior and were able to decode the temporal order in which the memory evolved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in additional model simulations shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "4dd03fb9-a8f9-45ec-90a6-73f4bce751bb",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C57",
+      "claim": "The output neuron can steadily decode the memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the output neuron could steadily decode the memory (i.e. it has a higher firing than in the case where the output weights are randomly shuffled; Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the model simulations and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "d34e3fbf-3361-4ca6-b869-3e9e81a5991b",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C58",
+      "claim": "The output neuron's ability to decode memory is due to the fact that weights are plastic under Hebbian learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the fact that weights are plastic under Hebbian learning, as shown by Rule and O'Leary, 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model mechanism, consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "c9c4efc6-31e4-454b-b6c3-3e2e537325c8",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C59",
+      "claim": "The output weights change across time, with weights from neurons that no longer belong to the ensemble decreasing and weights from newly recruited neurons increasing.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that this was induced by a change in the output weights across time (Figure 3c). In particular, the weights from neurons that no longer belong to the ensemble are decreased while weights from newly recruited neurons are increased, so that the center of mass of the weights distribution drifts across time (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figures 3c and 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "d34470d4-d52d-44dc-9990-c5a831bd9f21",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C60",
+      "claim": "The center of mass of the weights distribution drifts across time.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the weights from neurons that no longer belong to the ensemble are decreased while weights from newly recruited neurons are increased, so that the center of mass of the weights distribution drifts across time (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the model simulations and shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "711d6c5e-26c0-43b7-a208-895bcbf21a74",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C61",
+      "claim": "The quality of the read-out decreases with the rate of the drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that the quality of the read-out decreases with the rate of the drift (Figure 3\u2014figure supplement 1, Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the model simulations and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "db702f58-e2c3-4bc4-8a3f-7031f430c182",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C62",
+      "claim": "The network is able to encode two different memories and excitability can make two ensembles drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested whether the network is able to encode two different memories and whether excitability could make two ensembles drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is tested in additional model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "fe132aa7-66b2-4122-a630-9bb42a106017",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C63",
+      "claim": "When two ensembles are formed, both show similar drift as when only one ensemble was formed.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, day after day, the two ensembles show a similar drift than when only one ensemble was formed (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the model simulations and shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "e720ec48-a67c-4fb7-a5d4-0fd44cf7c0c4",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C64",
+      "claim": "For both contexts, the temporal order of the reactivations can be decoded for a certain range of excitability amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "For both contexts, the temporal order of the reactivations can be decoded for a certain range of excitability amplitude (Figure 2\u2014figure supplement 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the model simulations and shown in Figure 2\u2014figure supplement 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "12d99dc6-1c32-4be3-b82b-8b135330fa70",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C65",
+      "claim": "Using two output decoders allows decoding both memories independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that using two output decoders allowed us to decode both memories independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "ac5e23f1-0b08-47f2-8b40-e087c03a98aa",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C66",
+      "claim": "The output weights associated to both ensembles are remodeled to follow the drifting ensembles, but are not affected by the reactivation of the other ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "The output weights associated to both ensembles are remodeled to follow the drifting ensembles, but are not affected by the reactivation of the other ensemble (Figure 2\u2014figure supplement 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the model simulations and shown in Figure 2\u2014figure supplement 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "bae1c0e4-faf6-4afc-a4c7-cc70d31d38a1",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C67",
+      "claim": "Both output neurons are able to 'track' the reactivation of their associated ensemble while not responding to the other ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both neurons are able to 'track' the reactivation of their associated ensemble while not responding to the other ensemble (Figure 2\u2014figure supplement 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the model simulations and shown in Figure 2\u2014figure supplement 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "4e8a53eb-6925-43e1-8371-f9f236b920d4",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C68",
+      "claim": "The model suggests a potential cellular mechanism for the emergence of drift that can serve a computational purpose by 'time-stamping' memories while still being able to decode the memory across time.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our model suggests a potential cellular mechanisms for the emergence of drift that can serve a computational purpose by 'time-stamping' memories while still being able to decode the memory across time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "e928f58c-14f0-4a6b-a9a9-406db998c831",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C69",
+      "claim": "The ability for the neural ensemble to encode the order of past reactivations requires drift to be gradual.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ability for the neural ensemble to encode the order of past reactivations requires drift to be gradual (i.e. requires consecutive patterns of activity to remain correlated across days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model results showing that intermediate excitability levels are necessary for temporal decoding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "1a3335db-e10b-4f87-adb6-3b45a7b87983",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C71",
+      "claim": "The result that gradual drift enables temporal decoding is consistent with previous works showing gradual change in neural representations.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the previous works showing gradual change in neural representations, that allows for decoding temporal information of the ensemble (Rubin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as consistency with prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "b6a97105-2558-41c0-85a4-cc24b1e52251",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C72",
+      "claim": "Gradual drifts could support complex cognitive mechanisms like mental time-travel during memory recall.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, such gradual drifts could support complex cognitive mechanisms like mental time-travel during memory recall (Rubin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "95e021e0-209a-4ded-acfe-c54a1ebe52ab",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C73",
+      "claim": "In the model, drift is induced by co-activation of the previously formed ensemble and neurons with high excitability at the time of the reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, drift is induced by co-activation of the previously formed ensemble and neurons with high excitability at the time of the reactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description of how drift occurs in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "6c10dcb6-a6fc-4786-bc48-63a1c6ab25b1",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C74",
+      "claim": "The pool of neurons having high excitability can 'time-stamps' memory ensembles by biasing allocation of these ensembles.",
+      "claim_type": "EXPLICIT",
+      "source": "The pool of neurons having high excitability can therefore 'time-stamps' memory ensembles by biasing allocation of these ensembles (Clopath et al., 2017; Mau et al., 2018; Rubin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model mechanism, consistent with prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "468f96d0-0553-41cc-a81d-c0b0b5d1268c",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C75",
+      "claim": "Time-stamping mechanism could help link memories that are temporally close and dissociate those which are spaced by longer time.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that such time-stamping mechanism could also help link memories that are temporally close and dissociate those which are spaced by longer time (Driscoll et al., 2022; Mau et al., 2020; Aimone et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "87301b49-2a93-448f-af64-a1889c23201c",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C76",
+      "claim": "The pool of neurons with high excitability varies across time so that any new memory ensemble is allocated to neurons which are shared with other ensembles formed around the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the pool of neurons with high excitability varies across time so that any new memory ensemble is allocated to neurons which are shared with other ensembles formed around the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "c7eb66ed-d6b5-41d4-bc37-444ffc1f13a6",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C77",
+      "claim": "This mechanism could be complementary to the learning-induced increase in excitability observed in amygdala, hippocampal CA1 and dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism could be complementary to the learning-induced increase in excitability observed in amygdala (Rashid et al., 2016), hippocampal CA1 (Cai et al., 2016) and dentate gyrus (Pignatelli et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion supported by citations to experimental work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "409858f4-d93d-4318-9de7-e712abc93493",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C78",
+      "claim": "The study intended to model drift in the firing rates, as opposed to a drift in the turning curve, of the neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we intended to model drift in the firing rates, as opposed to a drift in the turning curve, of the neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the modeling approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "969c173d-8fc2-445f-b099-d9f8b4a3f002",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C79",
+      "claim": "Recent studies suggest that drifts in the mean firing rate and tuning curve arise from two different mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest that drifts in the mean firing rate and tuning curve arise from two different mechanisms (Geva et al., 2023; Khatib et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "a971d289-9269-4152-857a-1a1c9b26f9ca",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C80",
+      "claim": "Experience drives a drift in neurons turning curve while the passage of time drives a drift in neurons firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Experience drives a drift in neurons turning curve while the passage of time drives a drift in neurons firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "8a7008de-4a24-493d-be35-84f6d27336ef",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C81",
+      "claim": "The study is consistent with findings that the passage of time drives a drift in neurons firing rate by providing a possible mechanism for this drift driven by dynamical excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, our study is consistent with these findings by providing a possible mechanism for a drift in the mean firing rates of the neurons driven a dynamical excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as consistency with prior findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "1314b994-728f-4cf2-9aed-0ac3502bbfd1",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C82",
+      "claim": "Drift can depend on any experience having an impact on excitability dynamics such as exercise.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work suggests that drift can depend on any experience having an impact on excitability dynamics such as exercise as previously shown experimentally (Rechavi et al., 2022; de Snoo et al., 2023) but also neurogenesis (Aimone et al., 2006; Tran et al., 2022; Rechavi et al., 2022), sleep (Levenstein et al., 2017) or increase in dopamine level (Chowdhury et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion supported by citations to experimental work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "64488264-4f5c-44a9-9d2c-ca344826308c",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C83",
+      "claim": "Drift can depend on neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work suggests that drift can depend on any experience having an impact on excitability dynamics such as exercise as previously shown experimentally (Rechavi et al., 2022; de Snoo et al., 2023) but also neurogenesis (Aimone et al., 2006; Tran et al., 2022; Rechavi et al., 2022), sleep (Levenstein et al., 2017) or increase in dopamine level (Chowdhury et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion supported by citations to experimental work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "a6baefe1-e349-466f-a11e-9398ab495ae3",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C84",
+      "claim": "Drift can depend on sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work suggests that drift can depend on any experience having an impact on excitability dynamics such as exercise as previously shown experimentally (Rechavi et al., 2022; de Snoo et al., 2023) but also neurogenesis (Aimone et al., 2006; Tran et al., 2022; Rechavi et al., 2022), sleep (Levenstein et al., 2017) or increase in dopamine level (Chowdhury et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion supported by citations to experimental work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "6b926937-5b22-4008-bbc2-4a752750f9ce",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C85",
+      "claim": "Drift can depend on increase in dopamine level.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work suggests that drift can depend on any experience having an impact on excitability dynamics such as exercise as previously shown experimentally (Rechavi et al., 2022; de Snoo et al., 2023) but also neurogenesis (Aimone et al., 2006; Tran et al., 2022; Rechavi et al., 2022), sleep (Levenstein et al., 2017) or increase in dopamine level (Chowdhury et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion supported by citations to experimental work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "d8ac2c38-cd2c-45fa-9796-ba3f6b3cde0f",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C86",
+      "claim": "The work is a proof of principle which highlights the importance of considering excitability when studying drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our work is a proof of principle which highlights the importance of considering excitability when studying drift, although further work would be needed to test this link experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the nature and implications of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "a7ab4546-e270-4c6e-8958-3fcfd1e9a58d",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "claim_id": "C87",
+      "claim": "Further work would be needed to test the link between excitability and drift experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our work is a proof of principle which highlights the importance of considering excitability when studying drift, although further work would be needed to test this link experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the computational study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "360c892a-1101-4d54-b7fa-f79e857746b7",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Representational drift, the dynamic nature of neural representations despite stable behavior, has been observed across multiple brain regions including sensory cortex, hippocampus, and amygdala, but the underlying mechanisms remain unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C12-C13, C14-C16, and C19 collectively establish the phenomenon of drift as a well-documented observation across brain regions, supported by multiple citations to experimental work. The knowledge gap regarding mechanisms (C3) is appropriately stated and motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work suggests that intrinsic neural excitability plays a role in memory allocation, fluctuates on timescales similar to drift (hours to days), and could potentially act as a mechanism for drift by biasing reactivation of memory ensembles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20-C26 are well-supported by citations to experimental work establishing excitability's role in memory allocation and its fluctuation timescales. Claims C5, C27, C29 are appropriately presented as hypotheses/speculation that motivate the computational modeling work, not as established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "f88a9621-da05-44f0-9a45-9edfe88a788b",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A rate-based recurrent neural network with Hebbian plasticity and slow fluctuations of intrinsic excitability demonstrates that subsequent reactivations of a neural ensemble lead to drift, where neurons from the original assembly are gradually replaced by neurons with high excitability through remodeling of recurrent weights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C30, C37-C44 describe the core computational model and its primary finding. The model is clearly specified in the Methods, simulations are shown in Figure 1, and the mechanistic description of drift (co-activation leading to weight remodeling) is directly demonstrated. The finding that drift rate is independent of ensemble size (C44) is shown in supplementary data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "209f184b-64d1-4245-ae6e-437def2b122e",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The correlation between neural activity patterns decreases across days as the ensemble drifts, and a day decoder can perfectly identify the reactivation day from activity patterns compared to shuffled controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are directly supported by model simulations shown in Figure 2a-c. The decreasing correlation (C45-C46) and perfect day decoder performance (C48) are clearly demonstrated with appropriate controls (shuffled data). The inference that patterns should be informative about day (C47) logically follows from the observed differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "08913dbe-c415-4e1e-8813-71ec6905a911",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The drifting ensemble is informative about its temporal history, but crucially, the gradual nature of drift (intermediate excitability amplitude) is necessary for decoding temporal order, as extreme values (E=0 or E=3) prevent temporal decoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C31-C32, C52-C53, C69 describe a key finding about the relationship between drift gradualness and temporal information. This is supported by the ordinal time decoder results in Figure 2e-f showing that only intermediate excitability values enable temporal decoding. The mechanistic explanation (C8) is consistent with model observations. Statistical testing with Student's t-test is appropriately applied.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "f5499b89-cb8b-4675-9d8d-a3e1b3a872d5",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The drift phenomenon and temporal decoding capability are robust to model architecture variations, including defining excitability as changes in activation function slope rather than threshold, and using sparse rather than all-to-all connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 demonstrate robustness through additional simulations shown in Figure 2 supplements 1-2. Both alternative implementations produce similar drifting behavior and maintain temporal decoding capability, strengthening confidence that results are not artifacts of specific modeling choices.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Memory content can be steadily decoded by an output neuron with plastic Hebbian synapses that tracks the drifting ensemble by decreasing weights to neurons leaving the ensemble and increasing weights to newly recruited neurons, though read-out quality decreases with drift rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C33, C57-C61 describe the read-out mechanism and are supported by simulations in Figure 3. The output neuron maintains higher firing than shuffled controls (C57), weight dynamics are clearly shown (C59-C60), and the relationship between drift rate and read-out quality is demonstrated (C61). The mechanism is consistent with prior work by Rule and O'Leary (C58).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "28dbbf92-ceeb-47dd-90da-8800d492b6c0",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The network can encode two independent memories that drift similarly to single memories, with temporal order decodable for both contexts, and two output decoders can independently track each drifting ensemble without interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 extend the model to multiple memories and are supported by simulations in Figure 2 supplements 3-4. Both ensembles show similar drift (C63), temporal decoding works for both (C64), and output neurons independently track their respective ensembles (C66-C67), demonstrating the mechanism's scalability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "26ae84bf-7afc-49e8-9f9d-06a49fb2a375",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model proposes that fluctuating excitability provides a cellular mechanism for drift that serves a computational purpose by 'time-stamping' memories through biased allocation to neurons with high excitability at the time of reactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C73-C74, C76 synthesize the model's main conclusions. The mechanistic description (C73) is directly demonstrated in simulations, and the time-stamping interpretation (C74, C76) is a reasonable inference from the temporal decoding results. This represents the primary conceptual contribution of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "7f9312e7-82b9-4c70-a58f-5643df3ea51e",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model's findings are consistent with prior experimental work showing gradual representational changes, and the proposed mechanism could be complementary to learning-induced excitability changes and could help link temporally proximate memories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71, C75, C77 appropriately cite consistency with prior work, but C72 and C75 are speculative suggestions about cognitive mechanisms (mental time-travel) and memory linking that go beyond what the computational model demonstrates. These are reasonable hypotheses but lack direct support from the current simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "61cca3f2-ac01-42d7-98f2-e2bb414a4dd5",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study models drift in firing rates rather than tuning curves, consistent with recent findings that these arise from different mechanisms, and provides a possible mechanism for time-driven firing rate drift through dynamical excitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 appropriately position the work relative to recent findings (C79-C80 supported by citations). The statement that the model addresses firing rate drift (C78) is accurate, and the claim of consistency with time-driven mechanisms (C81) is a reasonable inference from the model design and results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "4fbd710a-db9a-4af8-8315-6eb379b5617d",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model suggests drift could depend on various experiences affecting excitability dynamics including exercise, neurogenesis, sleep, and dopamine levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C85 are speculative extensions supported by citations to experimental work showing these factors affect excitability. However, the model does not actually test these specific mechanisms\u2014it only demonstrates that fluctuating excitability can drive drift. These are reasonable hypotheses for future work but are not directly supported by the current model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "3c33fc93-3ef8-4b71-a2a1-2f016a96429b",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has established that memories are encoded in sparse ensembles with stable reactivation patterns, and plasticity mechanisms have been proposed to maintain information despite drift by providing stable read-out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C34-C36 summarize established findings from prior experimental and computational work, appropriately supported by citations. These provide important context for the current study and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "a0fb1ea8-856e-44a6-9019-b5c49593b26a",
+      "content_id": "11a5fe9f-ecd0-4917-ae80-d0eca6698ad5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The work is a proof-of-principle computational study highlighting the importance of considering excitability when studying drift, though experimental validation is needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 appropriately characterize the scope and limitations of the work. The acknowledgment that experimental validation is needed (C87) is important and honest. The characterization as proof-of-principle (C86) is accurate given the computational nature of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that a rate-based recurrent neural network with slow fluctuations of intrinsic excitability can induce representational drift. Neurons with high excitability are preferentially recruited into ensembles during reactivation, leading to gradual remodeling of recurrent synaptic weights and replacement of original ensemble members over successive days.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this core finding, stating the authors 'convincingly show that when they change their intrinsic excitability term, upon stimulation, the Hebbian synapses in their network gradually evolve, and the combined synaptic connectivity and altered excitability result in drifting patterns of activity' (Fig. 1, Fig. 2a). The editor notes the authors 'provide convincing evidence that fluctuations can contribute to drift.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "51574a59-f473-4b05-9948-467ee0968d11",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The model predicts that drift is mechanistically induced by co-activation of previously active neurons along with neurons having high excitability at the time of reactivation, which leads to remodeling of recurrent weights.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this mechanistic explanation without challenge. The anonymous reviewer summarizes the mechanism accurately, noting that 'the new high intrinsic excitability subset becomes both more strongly activated by the global input and also more strongly recurrently connected,' indicating acceptance of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The drifting ensemble is informative about its temporal history, with correlation between activity patterns decreasing across days. A classifier can perfectly decode the absolute day of reactivation from the activity patterns.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm these findings, noting 'their classification analyses (Fig. 2) show that information is preserved in the network.' The reviewer confirms the authors 'are able to build a classifier that decodes the day...with perfect accuracy,' accepting this result without criticism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "ec0a46a7-bea5-4489-9791-a75c457e0ffa",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The gradual nature of drift is necessary for decoding temporal information from ensemble activity. Only an intermediate range of excitability amplitude permits temporal decoding; when excitability is too low (E=0) or too high (E=3), temporal order cannot be decoded.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly highlight this as a key finding, stating 'the observation that only a specific range of excitability bias values permits decoding of the temporal structure of the history of intrinsic excitability (Fig. 2f and Figure S1) is interesting, and as the authors point out, not trivial.' This indicates strong reviewer support for this non-obvious result.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "11e8571b-b71f-4a38-b3d0-28211d9cfe3f",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Memory content can be steadily maintained and decoded by an output neuron with plastic synapses using Hebbian learning. The output weights track the drifting ensemble by decreasing weights to neurons leaving the ensemble and increasing weights to newly recruited neurons.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding, noting 'their readout neuron successfully tracks the active cells (Fig. 3).' However, one reviewer notes that 'given how the learning rule...is constructed, it is trivial that this unit responds to the most active neurons,' suggesting the mechanism is straightforward rather than surprising.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "1c5ef005-f74d-423a-964d-b48668a19377",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The drift results are independent of specific model architecture, with similar drifting behavior observed when excitability is defined as changes in activation function slope rather than threshold, and when using sparse rather than all-to-all connectivity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer acknowledges that 'a revised version of the manuscript models slope-based excitability changes in addition to threshold-based changes. This serves to address the above concern that as constructed here changes in excitability threshold are not distinguishable from changes in input.' This indicates the additional simulations successfully addressed reviewer concerns about model specificity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "4b6a1f4a-015e-41dd-9e1e-71d8cc1bb7ad",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The network can encode and maintain two distinct memories simultaneously, with both ensembles showing similar drift. Two output decoders can independently track their respective drifting ensembles without interference from the other memory.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer explicitly notes that 'a revised version of the manuscript addresses this question, demonstrating that the network is capable of maintaining two distinct memories.' This was added in response to a reviewer request, and the reviewer accepts the result without further critique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "4bc64ae7-a8ce-4fbd-a5f1-003644bd2d60",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The drift rate does not depend on the size of the original ensemble.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is presented with supporting data (Figure 1\u2014figure supplement 2) and is not questioned by reviewers, indicating implicit acceptance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "171108f9-a210-4664-8313-5153d8c3b610",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The quality of memory read-out by the output neuron decreases with increasing drift rate.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is presented with supporting data (Figure 3\u2014figure supplement 1) and is not challenged by reviewers, indicating acceptance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "e1bc1ef2-8489-486b-b13b-a3aa9a720fb3",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The model suggests fluctuations of excitability could act as a cellular mechanism for drift that serves a computational purpose by 'time-stamping' memories, allowing the pool of high-excitability neurons to bias memory ensemble allocation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the model demonstrates that 'changes in intrinsic excitability are sufficient to induce drift,' a key concern remains unresolved: 'it remains unclear what the model would do should only a subset of neurons receive a given, fixed input. In that case, are excitability changes sufficient to induce drift? This remains an important question that is not addressed.' This indicates uncertainty about whether excitability changes alone are sufficient or whether the global input structure is necessary.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "b11526fa-1d95-4736-aa7c-6068cbb2eb89",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The gradual drift mechanism could support complex cognitive functions like mental time-travel during memory recall and help link temporally proximate memories while dissociating temporally distant ones. This mechanism could be complementary to learning-induced excitability changes observed experimentally.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These speculative interpretations are consistent with the model results and prior literature. Reviewers do not challenge these interpretations, and the editor notes the study provides 'important theoretical insight' into drift mechanisms, implicitly accepting the broader implications.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "59092030-c880-4748-ae3a-6a4342f527d8",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "The model addresses drift in firing rates rather than tuning curves, consistent with recent findings that these arise from different mechanisms (experience vs. passage of time). The study provides a possible mechanism for time-driven drift in firing rates through dynamical excitability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This framing is presented as consistent with recent literature and is not challenged by reviewers, indicating acceptance of this interpretation of the model's scope.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "080f57a9-b827-4c99-a1ba-a23d7753f9f1",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The model suggests drift could depend on any experience affecting excitability dynamics, including exercise, neurogenesis, sleep, or dopamine level changes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These speculative extensions are supported by citations to experimental work and are not challenged by reviewers, indicating acceptance as reasonable implications of the model.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "9f174d56-1702-413a-b1fe-f3f8579bce43",
+      "content_id": "e653b83f-a06b-46a0-b0ac-5ba1797adeef",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "The work is a proof of principle highlighting the importance of considering excitability when studying drift, though further experimental work is needed to test this link.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly agree with this characterization. The editor calls it 'an important theoretical study' and the reviewer states 'this paper represents an important contribution' while noting 'what we see here is that changes in intrinsic excitability are sufficient to induce drift,' accepting the proof-of-principle nature of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a9e51a5d-9c07-49c2-8393-da94714e94c9",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "e4c70b72-c9d5-4386-a5b8-cd681f6ff104",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "1a4c1e2d-d6d0-461a-adc1-a2562a3f3176",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "84bf5c6d-10c5-4b6f-a191-c6ca88930e57",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "95634b9a-3a70-4176-956f-81bad4f90507",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "e7861368-f623-4010-a614-588d7c3a303a",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "7542ac6a-4c04-4a32-a882-df1d7a5b3a5e",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "33d39164-a1dd-49d0-a821-4a0ad9ab9401",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "110ccbd1-83ed-4462-b555-29cdfe6fa896",
+      "result_id": "360c892a-1101-4d54-b7fa-f79e857746b7"
+    },
+    {
+      "claim_id": "48123b9b-095b-4bb4-afc5-8b375c4d7918",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "8bb25c31-e421-40bd-aa4d-dcb8826d3f70",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "0c11314b-fdc2-4ffe-9144-e7a034177d87",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "3514c89c-e30f-4c3a-8897-5840075bbe4f",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "31065e37-41b2-4663-82b1-bc811554cceb",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "bb316748-4022-4731-b230-aaf3772c3d19",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "46135440-604c-496e-8ace-6a7341b7eac3",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "33f1bf20-8abb-4676-bf4e-60a8d008a479",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "91ddd725-614e-4b44-8754-c4847a9813b8",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "47baa6c7-ad19-4b87-831a-756b72c523aa",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "c09f1b5c-fd60-4b21-847c-653e6fd131d3",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "eef3f797-0796-4649-999f-a2d6303781fa",
+      "result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967"
+    },
+    {
+      "claim_id": "b7751820-9e55-4010-8823-c38a8668ab17",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "63a8654c-b018-4287-ad14-58ef9d187a90",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "19754eac-2d0a-404f-a702-0f7b8bd629b5",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "2e3b85d2-b9d4-4d50-9c56-5eb52d7c7a5c",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "160e4dd3-0fa8-4b33-8c9c-bb428c775a2a",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "c4ac6ca3-7ea8-4eb8-b833-581ce1a91985",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "ec053241-12ac-400a-b537-ed58a5540d0e",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "ad1cbb78-2a75-4ad6-b064-6ccdb03652b8",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "42f7b8e3-4315-424e-a64f-62b98047e1c6",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "05a9fda7-39aa-4eab-8bca-f98be675fc20",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "ddfe555c-82e3-45d8-a824-1f985a8fd3d5",
+      "result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b"
+    },
+    {
+      "claim_id": "d974a1ea-54f6-454f-a95b-d7a1ec2c9f9e",
+      "result_id": "209f184b-64d1-4245-ae6e-437def2b122e"
+    },
+    {
+      "claim_id": "5ce07fdf-95ad-487e-b1dd-0729485f05e2",
+      "result_id": "209f184b-64d1-4245-ae6e-437def2b122e"
+    },
+    {
+      "claim_id": "b8558779-6f5c-411e-8138-31e39caef9e2",
+      "result_id": "209f184b-64d1-4245-ae6e-437def2b122e"
+    },
+    {
+      "claim_id": "9d31ba57-44f7-46d8-b6b5-d0c7e79b9e5d",
+      "result_id": "209f184b-64d1-4245-ae6e-437def2b122e"
+    },
+    {
+      "claim_id": "e43a32a0-5182-4ada-9036-e58d5e90c9fe",
+      "result_id": "08913dbe-c415-4e1e-8813-71ec6905a911"
+    },
+    {
+      "claim_id": "ee2dedd1-e1d2-447b-918f-d5c86642e1f5",
+      "result_id": "08913dbe-c415-4e1e-8813-71ec6905a911"
+    },
+    {
+      "claim_id": "4e76a339-b89a-454a-8879-a14fea47e0dc",
+      "result_id": "08913dbe-c415-4e1e-8813-71ec6905a911"
+    },
+    {
+      "claim_id": "6e72aaac-512c-4370-932c-dc508fc35283",
+      "result_id": "08913dbe-c415-4e1e-8813-71ec6905a911"
+    },
+    {
+      "claim_id": "6b8125f9-ac49-4c95-9a65-fc32b3c89b35",
+      "result_id": "08913dbe-c415-4e1e-8813-71ec6905a911"
+    },
+    {
+      "claim_id": "7fc85726-1688-490f-b0dd-d3ffb9d0da8c",
+      "result_id": "08913dbe-c415-4e1e-8813-71ec6905a911"
+    },
+    {
+      "claim_id": "2f53ce54-8f26-4315-8073-1a0a74a91ce6",
+      "result_id": "08913dbe-c415-4e1e-8813-71ec6905a911"
+    },
+    {
+      "claim_id": "e928f58c-14f0-4a6b-a9a9-406db998c831",
+      "result_id": "08913dbe-c415-4e1e-8813-71ec6905a911"
+    },
+    {
+      "claim_id": "3e8582a7-f469-4a35-8720-388348097a67",
+      "result_id": "f5499b89-cb8b-4675-9d8d-a3e1b3a872d5"
+    },
+    {
+      "claim_id": "6a3d848e-042e-4b01-96ea-2eb8d6e32d58",
+      "result_id": "f5499b89-cb8b-4675-9d8d-a3e1b3a872d5"
+    },
+    {
+      "claim_id": "1758b81d-94b8-4cf1-b26b-dd033cf7b1a7",
+      "result_id": "f5499b89-cb8b-4675-9d8d-a3e1b3a872d5"
+    },
+    {
+      "claim_id": "c3d207c8-6944-48ff-8e02-2003c000fc4c",
+      "result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c"
+    },
+    {
+      "claim_id": "1282c11a-efb1-41b4-81dc-abf052e9aa7c",
+      "result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c"
+    },
+    {
+      "claim_id": "4dd03fb9-a8f9-45ec-90a6-73f4bce751bb",
+      "result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c"
+    },
+    {
+      "claim_id": "d34e3fbf-3361-4ca6-b869-3e9e81a5991b",
+      "result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c"
+    },
+    {
+      "claim_id": "c9c4efc6-31e4-454b-b6c3-3e2e537325c8",
+      "result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c"
+    },
+    {
+      "claim_id": "d34470d4-d52d-44dc-9990-c5a831bd9f21",
+      "result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c"
+    },
+    {
+      "claim_id": "711d6c5e-26c0-43b7-a208-895bcbf21a74",
+      "result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c"
+    },
+    {
+      "claim_id": "db702f58-e2c3-4bc4-8a3f-7031f430c182",
+      "result_id": "28dbbf92-ceeb-47dd-90da-8800d492b6c0"
+    },
+    {
+      "claim_id": "fe132aa7-66b2-4122-a630-9bb42a106017",
+      "result_id": "28dbbf92-ceeb-47dd-90da-8800d492b6c0"
+    },
+    {
+      "claim_id": "e720ec48-a67c-4fb7-a5d4-0fd44cf7c0c4",
+      "result_id": "28dbbf92-ceeb-47dd-90da-8800d492b6c0"
+    },
+    {
+      "claim_id": "12d99dc6-1c32-4be3-b82b-8b135330fa70",
+      "result_id": "28dbbf92-ceeb-47dd-90da-8800d492b6c0"
+    },
+    {
+      "claim_id": "ac5e23f1-0b08-47f2-8b40-e087c03a98aa",
+      "result_id": "28dbbf92-ceeb-47dd-90da-8800d492b6c0"
+    },
+    {
+      "claim_id": "bae1c0e4-faf6-4afc-a4c7-cc70d31d38a1",
+      "result_id": "28dbbf92-ceeb-47dd-90da-8800d492b6c0"
+    },
+    {
+      "claim_id": "4e8a53eb-6925-43e1-8371-f9f236b920d4",
+      "result_id": "26ae84bf-7afc-49e8-9f9d-06a49fb2a375"
+    },
+    {
+      "claim_id": "95e021e0-209a-4ded-acfe-c54a1ebe52ab",
+      "result_id": "26ae84bf-7afc-49e8-9f9d-06a49fb2a375"
+    },
+    {
+      "claim_id": "6c10dcb6-a6fc-4786-bc48-63a1c6ab25b1",
+      "result_id": "26ae84bf-7afc-49e8-9f9d-06a49fb2a375"
+    },
+    {
+      "claim_id": "87301b49-2a93-448f-af64-a1889c23201c",
+      "result_id": "26ae84bf-7afc-49e8-9f9d-06a49fb2a375"
+    },
+    {
+      "claim_id": "1a3335db-e10b-4f87-adb6-3b45a7b87983",
+      "result_id": "7f9312e7-82b9-4c70-a58f-5643df3ea51e"
+    },
+    {
+      "claim_id": "b6a97105-2558-41c0-85a4-cc24b1e52251",
+      "result_id": "7f9312e7-82b9-4c70-a58f-5643df3ea51e"
+    },
+    {
+      "claim_id": "468f96d0-0553-41cc-a81d-c0b0b5d1268c",
+      "result_id": "7f9312e7-82b9-4c70-a58f-5643df3ea51e"
+    },
+    {
+      "claim_id": "c7eb66ed-d6b5-41d4-bc37-444ffc1f13a6",
+      "result_id": "7f9312e7-82b9-4c70-a58f-5643df3ea51e"
+    },
+    {
+      "claim_id": "409858f4-d93d-4318-9de7-e712abc93493",
+      "result_id": "61cca3f2-ac01-42d7-98f2-e2bb414a4dd5"
+    },
+    {
+      "claim_id": "969c173d-8fc2-445f-b099-d9f8b4a3f002",
+      "result_id": "61cca3f2-ac01-42d7-98f2-e2bb414a4dd5"
+    },
+    {
+      "claim_id": "a971d289-9269-4152-857a-1a1c9b26f9ca",
+      "result_id": "61cca3f2-ac01-42d7-98f2-e2bb414a4dd5"
+    },
+    {
+      "claim_id": "8a7008de-4a24-493d-be35-84f6d27336ef",
+      "result_id": "61cca3f2-ac01-42d7-98f2-e2bb414a4dd5"
+    },
+    {
+      "claim_id": "1314b994-728f-4cf2-9aed-0ac3502bbfd1",
+      "result_id": "4fbd710a-db9a-4af8-8315-6eb379b5617d"
+    },
+    {
+      "claim_id": "64488264-4f5c-44a9-9d2c-ca344826308c",
+      "result_id": "4fbd710a-db9a-4af8-8315-6eb379b5617d"
+    },
+    {
+      "claim_id": "a6baefe1-e349-466f-a11e-9398ab495ae3",
+      "result_id": "4fbd710a-db9a-4af8-8315-6eb379b5617d"
+    },
+    {
+      "claim_id": "6b926937-5b22-4008-bbc2-4a752750f9ce",
+      "result_id": "4fbd710a-db9a-4af8-8315-6eb379b5617d"
+    },
+    {
+      "claim_id": "5d67ca9e-40d1-4dac-93d9-9de300fef0d8",
+      "result_id": "3c33fc93-3ef8-4b71-a2a1-2f016a96429b"
+    },
+    {
+      "claim_id": "b4a4c8e1-47fa-4402-91e8-901191e3efd0",
+      "result_id": "3c33fc93-3ef8-4b71-a2a1-2f016a96429b"
+    },
+    {
+      "claim_id": "5cc8be64-003d-413e-8706-6aa860879ae5",
+      "result_id": "3c33fc93-3ef8-4b71-a2a1-2f016a96429b"
+    },
+    {
+      "claim_id": "30ef3cf8-f7fb-4bf3-89cf-56a60b5405fd",
+      "result_id": "3c33fc93-3ef8-4b71-a2a1-2f016a96429b"
+    },
+    {
+      "claim_id": "6b05744c-3039-4d03-9a2b-bafbce616420",
+      "result_id": "3c33fc93-3ef8-4b71-a2a1-2f016a96429b"
+    },
+    {
+      "claim_id": "d8ac2c38-cd2c-45fa-9796-ba3f6b3cde0f",
+      "result_id": "a0fb1ea8-856e-44a6-9019-b5c49593b26a"
+    },
+    {
+      "claim_id": "a7ab4546-e270-4c6e-8958-3fcfd1e9a58d",
+      "result_id": "a0fb1ea8-856e-44a6-9019-b5c49593b26a"
+    },
+    {
+      "claim_id": "b7751820-9e55-4010-8823-c38a8668ab17",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "63a8654c-b018-4287-ad14-58ef9d187a90",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "19754eac-2d0a-404f-a702-0f7b8bd629b5",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "2e3b85d2-b9d4-4d50-9c56-5eb52d7c7a5c",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "160e4dd3-0fa8-4b33-8c9c-bb428c775a2a",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "c4ac6ca3-7ea8-4eb8-b833-581ce1a91985",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "ec053241-12ac-400a-b537-ed58a5540d0e",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "ad1cbb78-2a75-4ad6-b064-6ccdb03652b8",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "42f7b8e3-4315-424e-a64f-62b98047e1c6",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "05a9fda7-39aa-4eab-8bca-f98be675fc20",
+      "result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53"
+    },
+    {
+      "claim_id": "e43a32a0-5182-4ada-9036-e58d5e90c9fe",
+      "result_id": "51574a59-f473-4b05-9948-467ee0968d11"
+    },
+    {
+      "claim_id": "95e021e0-209a-4ded-acfe-c54a1ebe52ab",
+      "result_id": "51574a59-f473-4b05-9948-467ee0968d11"
+    },
+    {
+      "claim_id": "ee2dedd1-e1d2-447b-918f-d5c86642e1f5",
+      "result_id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8"
+    },
+    {
+      "claim_id": "6e72aaac-512c-4370-932c-dc508fc35283",
+      "result_id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8"
+    },
+    {
+      "claim_id": "d974a1ea-54f6-454f-a95b-d7a1ec2c9f9e",
+      "result_id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8"
+    },
+    {
+      "claim_id": "5ce07fdf-95ad-487e-b1dd-0729485f05e2",
+      "result_id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8"
+    },
+    {
+      "claim_id": "b8558779-6f5c-411e-8138-31e39caef9e2",
+      "result_id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8"
+    },
+    {
+      "claim_id": "9d31ba57-44f7-46d8-b6b5-d0c7e79b9e5d",
+      "result_id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8"
+    },
+    {
+      "claim_id": "4e76a339-b89a-454a-8879-a14fea47e0dc",
+      "result_id": "ec0a46a7-bea5-4489-9791-a75c457e0ffa"
+    },
+    {
+      "claim_id": "7fc85726-1688-490f-b0dd-d3ffb9d0da8c",
+      "result_id": "ec0a46a7-bea5-4489-9791-a75c457e0ffa"
+    },
+    {
+      "claim_id": "2f53ce54-8f26-4315-8073-1a0a74a91ce6",
+      "result_id": "ec0a46a7-bea5-4489-9791-a75c457e0ffa"
+    },
+    {
+      "claim_id": "e928f58c-14f0-4a6b-a9a9-406db998c831",
+      "result_id": "ec0a46a7-bea5-4489-9791-a75c457e0ffa"
+    },
+    {
+      "claim_id": "c3d207c8-6944-48ff-8e02-2003c000fc4c",
+      "result_id": "11e8571b-b71f-4a38-b3d0-28211d9cfe3f"
+    },
+    {
+      "claim_id": "1282c11a-efb1-41b4-81dc-abf052e9aa7c",
+      "result_id": "11e8571b-b71f-4a38-b3d0-28211d9cfe3f"
+    },
+    {
+      "claim_id": "4dd03fb9-a8f9-45ec-90a6-73f4bce751bb",
+      "result_id": "11e8571b-b71f-4a38-b3d0-28211d9cfe3f"
+    },
+    {
+      "claim_id": "d34e3fbf-3361-4ca6-b869-3e9e81a5991b",
+      "result_id": "11e8571b-b71f-4a38-b3d0-28211d9cfe3f"
+    },
+    {
+      "claim_id": "c9c4efc6-31e4-454b-b6c3-3e2e537325c8",
+      "result_id": "11e8571b-b71f-4a38-b3d0-28211d9cfe3f"
+    },
+    {
+      "claim_id": "d34470d4-d52d-44dc-9990-c5a831bd9f21",
+      "result_id": "11e8571b-b71f-4a38-b3d0-28211d9cfe3f"
+    },
+    {
+      "claim_id": "3e8582a7-f469-4a35-8720-388348097a67",
+      "result_id": "1c5ef005-f74d-423a-964d-b48668a19377"
+    },
+    {
+      "claim_id": "6a3d848e-042e-4b01-96ea-2eb8d6e32d58",
+      "result_id": "1c5ef005-f74d-423a-964d-b48668a19377"
+    },
+    {
+      "claim_id": "1758b81d-94b8-4cf1-b26b-dd033cf7b1a7",
+      "result_id": "1c5ef005-f74d-423a-964d-b48668a19377"
+    },
+    {
+      "claim_id": "db702f58-e2c3-4bc4-8a3f-7031f430c182",
+      "result_id": "4b6a1f4a-015e-41dd-9e1e-71d8cc1bb7ad"
+    },
+    {
+      "claim_id": "fe132aa7-66b2-4122-a630-9bb42a106017",
+      "result_id": "4b6a1f4a-015e-41dd-9e1e-71d8cc1bb7ad"
+    },
+    {
+      "claim_id": "e720ec48-a67c-4fb7-a5d4-0fd44cf7c0c4",
+      "result_id": "4b6a1f4a-015e-41dd-9e1e-71d8cc1bb7ad"
+    },
+    {
+      "claim_id": "12d99dc6-1c32-4be3-b82b-8b135330fa70",
+      "result_id": "4b6a1f4a-015e-41dd-9e1e-71d8cc1bb7ad"
+    },
+    {
+      "claim_id": "ac5e23f1-0b08-47f2-8b40-e087c03a98aa",
+      "result_id": "4b6a1f4a-015e-41dd-9e1e-71d8cc1bb7ad"
+    },
+    {
+      "claim_id": "bae1c0e4-faf6-4afc-a4c7-cc70d31d38a1",
+      "result_id": "4b6a1f4a-015e-41dd-9e1e-71d8cc1bb7ad"
+    },
+    {
+      "claim_id": "ddfe555c-82e3-45d8-a824-1f985a8fd3d5",
+      "result_id": "4bc64ae7-a8ce-4fbd-a5f1-003644bd2d60"
+    },
+    {
+      "claim_id": "711d6c5e-26c0-43b7-a208-895bcbf21a74",
+      "result_id": "171108f9-a210-4664-8313-5153d8c3b610"
+    },
+    {
+      "claim_id": "8bb25c31-e421-40bd-aa4d-dcb8826d3f70",
+      "result_id": "e1bc1ef2-8489-486b-b13b-a3aa9a720fb3"
+    },
+    {
+      "claim_id": "eef3f797-0796-4649-999f-a2d6303781fa",
+      "result_id": "e1bc1ef2-8489-486b-b13b-a3aa9a720fb3"
+    },
+    {
+      "claim_id": "4e8a53eb-6925-43e1-8371-f9f236b920d4",
+      "result_id": "e1bc1ef2-8489-486b-b13b-a3aa9a720fb3"
+    },
+    {
+      "claim_id": "6c10dcb6-a6fc-4786-bc48-63a1c6ab25b1",
+      "result_id": "e1bc1ef2-8489-486b-b13b-a3aa9a720fb3"
+    },
+    {
+      "claim_id": "6b8125f9-ac49-4c95-9a65-fc32b3c89b35",
+      "result_id": "e1bc1ef2-8489-486b-b13b-a3aa9a720fb3"
+    },
+    {
+      "claim_id": "1a3335db-e10b-4f87-adb6-3b45a7b87983",
+      "result_id": "b11526fa-1d95-4736-aa7c-6068cbb2eb89"
+    },
+    {
+      "claim_id": "b6a97105-2558-41c0-85a4-cc24b1e52251",
+      "result_id": "b11526fa-1d95-4736-aa7c-6068cbb2eb89"
+    },
+    {
+      "claim_id": "468f96d0-0553-41cc-a81d-c0b0b5d1268c",
+      "result_id": "b11526fa-1d95-4736-aa7c-6068cbb2eb89"
+    },
+    {
+      "claim_id": "87301b49-2a93-448f-af64-a1889c23201c",
+      "result_id": "b11526fa-1d95-4736-aa7c-6068cbb2eb89"
+    },
+    {
+      "claim_id": "c7eb66ed-d6b5-41d4-bc37-444ffc1f13a6",
+      "result_id": "b11526fa-1d95-4736-aa7c-6068cbb2eb89"
+    },
+    {
+      "claim_id": "409858f4-d93d-4318-9de7-e712abc93493",
+      "result_id": "59092030-c880-4748-ae3a-6a4342f527d8"
+    },
+    {
+      "claim_id": "969c173d-8fc2-445f-b099-d9f8b4a3f002",
+      "result_id": "59092030-c880-4748-ae3a-6a4342f527d8"
+    },
+    {
+      "claim_id": "a971d289-9269-4152-857a-1a1c9b26f9ca",
+      "result_id": "59092030-c880-4748-ae3a-6a4342f527d8"
+    },
+    {
+      "claim_id": "8a7008de-4a24-493d-be35-84f6d27336ef",
+      "result_id": "59092030-c880-4748-ae3a-6a4342f527d8"
+    },
+    {
+      "claim_id": "1314b994-728f-4cf2-9aed-0ac3502bbfd1",
+      "result_id": "080f57a9-b827-4c99-a1ba-a23d7753f9f1"
+    },
+    {
+      "claim_id": "64488264-4f5c-44a9-9d2c-ca344826308c",
+      "result_id": "080f57a9-b827-4c99-a1ba-a23d7753f9f1"
+    },
+    {
+      "claim_id": "a6baefe1-e349-466f-a11e-9398ab495ae3",
+      "result_id": "080f57a9-b827-4c99-a1ba-a23d7753f9f1"
+    },
+    {
+      "claim_id": "6b926937-5b22-4008-bbc2-4a752750f9ce",
+      "result_id": "080f57a9-b827-4c99-a1ba-a23d7753f9f1"
+    },
+    {
+      "claim_id": "d8ac2c38-cd2c-45fa-9796-ba3f6b3cde0f",
+      "result_id": "9f174d56-1702-413a-b1fe-f3f8579bce43"
+    },
+    {
+      "claim_id": "a7ab4546-e270-4c6e-8958-3fcfd1e9a58d",
+      "result_id": "9f174d56-1702-413a-b1fe-f3f8579bce43"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "03dbc249-8673-4f93-9020-a8a08ef27843",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b",
+      "peer_result_id": "68e5189a-fd2a-4a6e-afd6-b47795c59b53",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the core computational model findings (C6-C7, C30, C37-C43). OpenEval emphasizes the mechanistic description and independence from ensemble size (C44), while peer reviewers explicitly affirm the model 'convincingly shows' drift through excitability changes and Hebbian plasticity. High agreement on this central result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "18cea64c-4211-41ab-8a03-5fa163897979",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f5499b89-cb8b-4675-9d8d-a3e1b3a872d5",
+      "peer_result_id": "1c5ef005-f74d-423a-964d-b48668a19377",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on robustness claims (C54-C56). Both evaluations support that alternative implementations (slope-based and threshold-based excitability changes) produce similar results. Peer reviewers note this successfully addressed concerns about model specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "fa67ebf8-77d2-48dc-8377-8c2808c94d0f",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "28dbbf92-ceeb-47dd-90da-8800d492b6c0",
+      "peer_result_id": "4b6a1f4a-015e-41dd-9e1e-71d8cc1bb7ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on multi-memory extension (C62-C67). Both evaluations support that the model successfully maintains two distinct memories with independent drift and temporal decoding. Peer reviewers note this was added in response to their request and accept it without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "71f38faa-4e5e-48bb-8393-0f5d4db596cc",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "61cca3f2-ac01-42d7-98f2-e2bb414a4dd5",
+      "peer_result_id": "59092030-c880-4748-ae3a-6a4342f527d8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Full agreement on positioning relative to recent literature (C78-C81). Both evaluations support the framing that the model addresses firing rate drift and is consistent with time-driven mechanisms. No challenges from either evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "1f7a6873-ccb2-4247-b4b6-e7de0d312777",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4fbd710a-db9a-4af8-8315-6eb379b5617d",
+      "peer_result_id": "080f57a9-b827-4c99-a1ba-a23d7753f9f1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both mark as UNCERTAIN/SUPPORTED respectively for speculative extensions (C82-C85). OpenEval notes these mechanisms aren't directly tested in the model, while peer reviewers accept them as reasonable implications supported by citations. Mild divergence in confidence level.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "5bed9fad-582e-4032-9ed6-f6bbab896f7e",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a0fb1ea8-856e-44a6-9019-b5c49593b26a",
+      "peer_result_id": "9f174d56-1702-413a-b1fe-f3f8579bce43",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on scope and limitations (C86-C87). Both evaluations support the characterization as proof-of-principle work requiring experimental validation. Peer reviewers explicitly call it 'an important theoretical study' and 'important contribution.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "7b85ef92-2272-446d-b70d-99400aba8b00",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "209f184b-64d1-4245-ae6e-437def2b122e",
+      "peer_result_id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support decreasing correlation and perfect day decoder performance (C45-C48). OpenEval emphasizes the logical inference about temporal information (C47), while peer reviewers confirm 'perfect accuracy' in day classification. Strong agreement on these decoder results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "cb6bc430-5110-40cd-aac5-18652936ddf1",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "08913dbe-c415-4e1e-8813-71ec6905a911",
+      "peer_result_id": "ec0a46a7-bea5-4489-9791-a75c457e0ffa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the non-trivial finding about intermediate excitability enabling temporal decoding (C10, C52-C53, C69). Peer reviewers explicitly highlight this as 'interesting, and as the authors point out, not trivial.' OpenEval also covers additional claims (C8-C9, C31-C32) about drift gradualness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "20147611-f733-4299-b77c-12d3332afb1b",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c",
+      "peer_result_id": "11e8571b-b71f-4a38-b3d0-28211d9cfe3f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support read-out mechanism findings (C11, C33, C57-C60). OpenEval emphasizes consistency with prior work and relationship between drift rate and read-out quality (C61). Peer reviewers accept the result but note the mechanism is 'trivial' given the learning rule construction. Agreement on support but different emphasis on novelty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "ba867614-9f3f-45cf-969f-d1050ceecea4",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "7f9312e7-82b9-4c70-a58f-5643df3ea51e",
+      "peer_result_id": "b11526fa-1d95-4736-aa7c-6068cbb2eb89",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address speculative cognitive implications (C71-C72, C75-C77). OpenEval marks as UNCERTAIN noting claims go beyond model demonstrations, while peer reviewers SUPPORT as consistent with results and literature. OpenEval is more cautious about mental time-travel and memory linking claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "8dfc6e69-9c27-4865-be60-f47260f831bb",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "26ae84bf-7afc-49e8-9f9d-06a49fb2a375",
+      "peer_result_id": "51574a59-f473-4b05-9948-467ee0968d11",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on mechanistic claims. OpenEval R9 covers synthesis of main conclusions (C68, C73-C74, C76) marked SUPPORTED. Peer R2 focuses specifically on mechanistic explanation (C8, C73) also marked SUPPORTED. Both accept the core mechanism but OpenEval addresses broader time-stamping interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "fa759763-77b0-4804-90d8-d1c0e2b80d63",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "26ae84bf-7afc-49e8-9f9d-06a49fb2a375",
+      "peer_result_id": "e1bc1ef2-8489-486b-b13b-a3aa9a720fb3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address sufficiency of excitability changes. OpenEval R9 supports time-stamping interpretation (C68, C74, C76) as reasonable inference. Peer R10 marks UNCERTAIN (C5, C29, C32, C68, C74) noting unresolved question about whether excitability alone is sufficient without global input structure. Significant divergence on confidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "a727cfd3-0a19-473c-9552-2e1873356fb6",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "08913dbe-c415-4e1e-8813-71ec6905a911",
+      "peer_result_id": "51574a59-f473-4b05-9948-467ee0968d11",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on mechanistic explanation (C8). OpenEval R5 addresses broader temporal decoding findings while peer R2 focuses specifically on the mechanism of high excitability subset becoming more activated and connected. Both support the mechanistic explanation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "9277d931-0df2-4951-85cd-5e86ff6d89fc",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "08913dbe-c415-4e1e-8813-71ec6905a911",
+      "peer_result_id": "8d1c7ef8-b3c7-4239-905d-a9616a36bec8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on drift gradualness and decoder performance (C9, C31). OpenEval R5 emphasizes temporal decoding at intermediate excitability, while peer R3 focuses on information preservation and day classification. Both support overlapping claims but address different aspects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "ebed5671-53b9-4e09-b273-e13aa20b97ca",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "f88a9621-da05-44f0-9a45-9edfe88a788b",
+      "peer_result_id": "4bc64ae7-a8ce-4fbd-a5f1-003644bd2d60",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on ensemble size independence (C44). OpenEval R3 includes this as part of core model findings, while peer R8 addresses it separately with implicit acceptance. Both support the claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "314a6c0b-afc0-4390-9377-1165a5e1984e",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "7315fe5b-74c5-43d4-8aa9-965239bfb81c",
+      "peer_result_id": "171108f9-a210-4664-8313-5153d8c3b610",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on drift rate and read-out quality relationship (C61). OpenEval R7 includes this as part of read-out mechanism findings, while peer R9 addresses it separately without challenge. Both support the claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "3f646e7d-6668-4fb4-beab-7804c4066257",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "360c892a-1101-4d54-b7fa-f79e857746b7",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R1 addresses background claims about drift phenomenon and knowledge gaps (C1-C3, C12-C16, C19) marked SUPPORTED. No corresponding peer review evaluation found for these introductory/background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "e1c4fda3-c41f-48bb-b68a-760c5ba21496",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "065343d6-c7e9-4c07-9bb8-dd9ab7a59967",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R2 addresses background on excitability's role in memory allocation (C4, C20-C29) marked SUPPORTED. Distinguishes established facts from hypotheses. No direct peer review evaluation of these background claims, though peer R10 touches on C5 and C29 in context of sufficiency questions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    },
+    {
+      "id": "5c1bac11-0491-4a20-b675-b1386c74f289",
+      "submission_id": "a59b6f89-e3fa-4c85-89a0-d0c406b63d84",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "3c33fc93-3ef8-4b71-a2a1-2f016a96429b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R13 addresses summary of established findings from prior work (C17-C18, C34-C36) marked SUPPORTED. No corresponding peer review evaluation found for these contextual/literature summary claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:46:38.554984Z"
+    }
+  ]
+}

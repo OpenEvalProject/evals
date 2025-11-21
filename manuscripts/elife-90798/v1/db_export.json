@@ -1,0 +1,2552 @@
+{
+  "submission": {
+    "id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:55:00.318963Z",
+    "updated_at": "2025-11-20T22:55:00.318963Z"
+  },
+  "content": [
+    {
+      "id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "content_type": "manuscript",
+      "content_text": "# Overcoming the nutritional immunity by engineering iron-scavenging bacteria for cancer therapy\n\n## Authors\n\n- Sin-Wei Huang<sup>1</sup> ([ORCID: 0009-0004-1593-6511](https://orcid.org/0009-0004-1593-6511))\n- See-Khai Lim<sup>1</sup>\n- Yao-An Yu<sup>1</sup>\n- Yi-Chung Pan<sup>1</sup>\n- Wan-Ju Lien<sup>1</sup>\n- Chung-Yuan Mou<sup>3</sup> \u2020\n- Che-Ming Jack Hu<sup>1</sup> ([ORCID: 0000-0002-0988-7029](https://orcid.org/0000-0002-0988-7029)) \u2020\n- Kurt Yun Mou<sup>1</sup> ([ORCID: 0000-0001-5423-9031](https://orcid.org/0000-0001-5423-9031))\n\n### Affiliations\n\n1. Institute of Biomedical Sciences, Academia Sinica Taipei Taiwan ([ROR:05bxb3784](https://ror.org/05bxb3784))\n2. Doctoral Degree Program of Translational Medicine, National Yang Ming Chiao Tung University and Academia Sinica Taipei Taiwan ([ROR:00se2k293](https://ror.org/00se2k293))\n3. Department of Chemistry, National Taiwan University Taipei Taiwan ([ROR:05bqach95](https://ror.org/05bqach95))\n\n\u2020 Corresponding author\n\n## Abstract\n\nCertain bacteria demonstrate the ability to target and colonize the tumor microenvironment, a characteristic that positions them as innovative carriers for delivering various therapeutic agents in cancer therapy. Nevertheless, our understanding of how bacteria adapt their physiological condition to the tumor microenvironment remains elusive. In this work, we employed liquid chromatography-tandem mass spectrometry to examine the proteome of E. coli colonized in murine tumors. Compared to E. coli cultivated in the rich medium, we found that E. coli colonized in tumors notably upregulated the processes related to ferric ions, including the enterobactin biosynthesis and iron homeostasis. This finding indicated that the tumor is an iron-deficient environment to E. coli. We also found that the colonization of E. coli in the tumor led to an increased expression of lipocalin 2 (LCN2), a host protein that can sequester the enterobactin. We therefore engineered E. coli in order to evade the nutritional immunity provided by LCN2. By introducing the IroA cluster, the E. coli synthesizes the glycosylated enterobactin, which creates steric hindrance to avoid the LCN2 sequestration. The IroA-E. coli showed enhanced resistance to LCN2 and significantly improved the anti-tumor activity in mice. Moreover, the mice cured by the IroA-E. coli treatment became resistant to the tumor re-challenge, indicating the establishment of immunological memory. Overall, our study underscores the crucial role of bacteria\u2019s ability to acquire ferric ions within the tumor microenvironment for effective cancer therapy.\n\n## Introduction\n\nBacterial therapy has re-emerged as a promising modality for cancer treatment, building on the pioneering works of William Coley in the late 19th century (Carlson et al., 2020). As a living therapeutic agent, bacteria offer several advantages over traditional cancer treatments, including (1) active tumor targeting (Yamamoto et al., 2016; Kim et al., 2023), (2) tumor colonization (Westphal et al., 2008; Weibel et al., 2008), (3) immune system stimulation (Qiu et al., 2020; Yang et al., 2023), and (4) great engineerability for customized functionalities (Gurbatri et al., 2020; Hu et al., 2022; Canale et al., 2021). The tumor microenvironment (TME) provides unique cues, such as hypoxia, low pH values, and immune suppressors, which facilitate the selective targeting and colonization of certain bacteria, including E. coli (Ryan et al., 2009; Flentie et al., 2012). However, the restricted resource in the TME may pose challenges for bacterial survival and growth, potentially limiting their anti-tumor efficacy. While the molecular physiology of E. coli has been extensively studied under well-controlled laboratory conditions (Han and Lee, 2006; Mateus et al., 2020), it is unclear how E. coli adapts to the nutrition-limited and immune-responsive environment in tumors. An in-depth understanding of the intricate relationship between the TME and the adaptation of colonized bacteria may provide hints to unlock the full potential of bacterial therapy against cancers.\n\nIt is well-established that the innate and adaptive immunity are sequentially activated upon bacterial infection in humans. However, even before the innate immune response commences, a critical defense mechanism known as \u2018nutritional immunity\u2019 serves as the first line of protection to hinder the bacterial infection. Nutritional immunity is employed by the host organism through restricting the availability of essential nutrients to the invading pathogens (Weinberg, 1975; Murdoch and Skaar, 2022). For example, humans have evolved specialized proteins to chelate trace minerals, such as iron, zinc, and manganese, keeping their free-form concentrations at very low levels within the body (Andrews and Schmidt, 2007; Kambe et al., 2015; Roth et al., 2013). In response, pathogens have counter-evolved mechanisms to evade nutritional immunity. For instance, a variety of siderophores are developed by bacteria to acquire ferric ions from the host (Kramer et al., 2020). Intriguingly, humans have further adapted by evolving siderophore-sequestering proteins, such as LCN2, for bacterial inhibition (Singh et al., 2015; Bachman et al., 2009). These co-evolutionary events highlight the importance of nutritional immunity in combating bacteria (Golonka et al., 2019). Previous studies on bacterial cancer therapy have rarely examined the role of nutritional immunity, which may limit bacteria\u2019s therapeutic efficacy.\n\nIn this work, we aimed to understand how bacteria modulate their physiological states at the molecular level in response to the tumor microenvironment. We employed liquid chromatography-tandem mass spectrometry (LC-MS/MS) for a quantitative comparison of the proteome between E. coli cultured in a nutrient-rich medium and E. coli colonized in tumors. We found that E. coli colonized in tumors dramatically increases the protein expressions involved in the enterobactin biosynthesis and the iron ion homeostasis. This finding suggested that E. coli was stressed in an iron-deficient environment. Driven by this discovery, we hypothesized that enhancing the iron acquisition ability of E. coli might improve its anti-tumor activity. We engineered E. coli with enhanced iron-scavenging capacity by introducing LCN2 blockers, including cyclic-di-GMP and glycosylated enterobactin. The engineered bacteria evaded the nutritional immunity and achieved complete tumor emission in mouse models, highlighting strategy for improving anti-tumor bacterial therapy through circumvention of nutritional immunity.\n\n## Results\n\n### Tumor is an iron-deficient microenvironment for bacterial colonization\n\nWhile many bacteria are known to colonize and proliferate in the TME, it remains elusive how bacteria adapt to such a nutrition-limited environment as compared to a nutrition-rich one. To this end, we performed quantitative LC-MS/MS experiments to compare the proteome of E. coli colonized in the murine tumors or cultured in the rich medium (LB broth) (Figure 1\u2014figure supplement 1). Not surprisingly, there are many more proteins enriched in the rich medium than in the tumor condition. The Venn diagram and the volcano blot revealed hundreds of protein IDs enriched in the rich medium condition (Figure 1a and b). The Gene Ontology (GO)-term analysis revealed that many of these proteins are associated with the machineries of biosynthetic processes, cell division, and energy production (Figure 1c), reflecting that the E. coli was under a highly proliferative state in the rich medium. Interestingly, there were also 71 proteins that were preferentially expressed in the tumor condition over the rich medium condition. The GO-term analysis and the hierarchical clustering revealed that many of these proteins are involved in the processes of enterobactin synthesis and iron ion homeostasis (Figure 1d and e, and Figure 1\u2014figure supplement 2). Figure 1f showed that the individual proteins in these two processes were markedly up-regulated in the tumor condition. These proteins are known to be tightly controlled by the iron sensing system in E. coli, and only become up-regulated under the stress of iron deficiency (Seo et al., 2014). It is worth mentioning that while enterobactin facilitates the uptake of ferric ions into bacteria, the host immune cells can counteract by secreting a protein called LCN2, which possesses a specialized pocket to bind and sequester enterobactin (Fischbach et al., 2006). To investigate this possibility, we employed LC-MS/MS and analyzed the LCN2 expression in the tumors with or without E. coli colonization. Indeed, we observed a significant up-regulation of LCN2 expression in the tumors with E. coli inoculation (Figure 1g). Collectively, our data suggest that the tumor is an iron-deficient environment for E. coli colonization.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig1-v1.jpg)\n\n**Figure 1.:** (a) The Venn diagram of the E. coli protein IDs identified in the rich medium and in the tumor microenvironment (TME). (b) The volcano plot of the E. coli protein IDs quantified in the rich medium and in the TME. (c) The Gene Ontology (GO)-term analysis of the protein IDs enriched in the rich medium condition. (d) The GO-term analysis of the protein IDs enriched in the tumor condition. (e) The hierarchical clustering analysis of the protein IDs identified in the rich medium and in the TME. Each column is a biological replicate. (f) Left: the fold changes of individual proteins in the iron ion homeostasis process. These proteins are involved in transporting or processing the iron ions. Right: the fold changes of individual proteins in the enterobactin biosynthesis process. (g) Label-free quantification of lipocalin 2 (LCN2) in the tumors with and without E. coli inoculation. The error bars represent mean \u00b1 SD. Statistical analyses were performed by Student\u2019s t-test (**p<0.01).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The E. coli BL21(DE3) were harvested from rich medium and tumors, respectively, and subject to the liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The proteins involving enterobactin biosynthesis and iron ion homeostasis were enriched in the E. coli colonized in tumors. The STRING diagram was drawn for the representative proteins in these two processes. The node size represents the fold change (tumor/rich medium) of the protein determined by the label-free quantification method. The different interior colors of the nodes represent various biological processes defined by Gene Ontology (GO) terms. The lines indicate the existence of experimental evidence between the connected nodes.\n\n### Cyclic-di-GMP-producing E. coli synergizes with iron chelators for cancer therapy\n\nBased on the proteomic findings, we aimed to focus our therapeutic strategies on modulating the iron competition between bacteria and cancer cells in the tumor. First, we hypothesize that an iron chelator that lowers the effective pool concentration of iron may provide a selection pressure, which disfavors the growth of cancer cells over bacteria. We tested three iron chelators, deferoxamine, ciclopirox, and VLX600, which have been approved for clinical trials or medical applications (Lang et al., 2019; Qi et al., 2020; Frykn\u00e4s et al., 2016). All three chelators showed high cytotoxicity toward the cancer cells, suggesting the essential role of irons for the survival of mammalian cells (Figure 2a). On the other hand, E. coli can better tolerate these iron chelators at relatively high concentrations. Among them, VLX600 was the most potent drug against the cancer cells (IC50=0.33 \u03bcM) and provided the largest therapeutic window (280-fold difference) between the cancer cells and E. coli. In addition to the iron chelator, we also attempted to find approaches for counteracting the enterobactin sequestering function of LCN2. It has been reported that cyclic di-GMP (CDG) can block the binding between LCN2 and enterobactin, therefore, restoring the functionality of enterobactin (Li et al., 2015). In our bacterial culture study, we validated that the addition of CDG can enhance bacteria survival in the presence of LCN2 (Figure 2\u2014figure supplement 1), thus prompting our effort to prepare CDG-expressing bacteria. We engineered the E. coli by introducing a plasmid that carries the gene of diguanylate cyclase (DGC), an enzyme responsible for catalyzing the biosynthesis of cyclic di-GMP (CDG) (Lv et al., 2019). We showed that the E. coli transformed with the DGC plasmid (hereafter referred to DGC-E. coli) actively synthesized CDG and secreted it into the supernatant as detected by the LC/MS-MS mass spectrometry (Figure 2b). It is worth noting that CDG is also a potent ligand for the STING pathway, which can stimulate anti-tumor immunity (Diner et al., 2013; Krasteva and Sondermann, 2017; Chattopadhyay et al., 2020). When applying the DGC-E. coli supernatant to the macrophages, the macrophages enhanced the IFN-\u03b2 secretion, indicating the activation of the STING pathway by CDG (Figure 2c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig2-v1.jpg)\n\n**Figure 2.:** (a) Toxicity profiles of various iron chelators against MC38 cancer cells and E. coli. (b) Identification of cyclic-di-GMP secretion from DGC-E. coli by liquid chromatography-tandem mass spectrometry (LC-MS/MS). The precursor ion and the fragmented product ions correspond to the correct molecule weights of cyclic di-GMP (CDG). (c) IFN-\u03b2 secretion by RAW264.7 cells treated with the supernatants from wild-type E. coli or DGC-E. coli. (d) Schematic illustration of mouse treatments. The DGC-E. coli was intratumorally delivered on Day 0 and Day 9, whereas VLX600 was intravenously administrated every three days from Day 0 to Day 9. (e) Tumor growth curve for various treatment groups. The complete remission was only achieved in the CDG + VLX600 group (CR = 2/4). (f) The Kaplan-Meier analysis for different treatment groups. The mouse was considered dead when the tumor volume exceeded 1500 mm3. The error bars represent mean \u00b1 SD. Statistical analyses were performed by Student\u2019s t-test (*p<0.05).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** E. coli (1\u00d7104) were cultured in RPMI medium supplemented with LCN2 at 0.15 \u00b5M and Cyclic-di-GMP at 7.5 \u00b5M overnight. The number of survival bacteria were determined by plating the overnight culture on the LB agar plates. The survival rate was normalized to the no-treatment group.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The mice cured by diguanylate cyclase (DGC)-E. coli and VLX600 combination therapy were re-challenged with the same cell line (MC38) subcutaneously at the opposite flank. No tumor growth was observed. The na\u00efve mice were used as controls.\n\nWe evaluated the anti-tumor activity of VLX600 and DGC-E. coli in a syngeneic mouse model. The MC38 tumor-bearing mice received VLX600 and/or DGC-E. coli as depicted in Figure 2d. The VLX600 monotherapy only marginally suppressed the tumor growth as compared to the PBS control (Figure 2e). The DGC-E. coli monotherapy, although inhibited the tumor progression to a certain degree, did not show superior efficacy than the wild-type E. coli without the DGC plasmid transformation. Strikingly, the combination of DGC-E. coli and VLX600 showed significantly improved efficacy as compared to the individual mono-therapies. The tumor sizes were greatly suppressed, and 2 out of 4 mice achieved complete remission (Figure 2e and f). Of note, the combination of the wild-type E. coli and VLX600 did not result in such an improved activity, indicating that the CDG expression contributed to bacteria\u2019s synergism with the iron-chelating VLX600. The combination of CDG-expressing bacteria and VLX600 also established robust anticancer adaptive immunity as the mice cured by the combinatorial therapy showed no tumor development in a rechallenge study (Figure 2\u2014figure supplement 2). These results highlight the benefit of enhancing anticancer bacterial therapy through nutritional immunity manipulation.\n\n### Salmochelin-secreting E. coli significantly impeded tumor growth\n\nEncouraged by the results shown above, we sought to engineer E. coli with a more specific iron-scavenging functionality to assess its benefit against nutritional immunity. In nature, bacteria have evolved a strategy to block LCN2 through the expression of glycosylated enterobactin or salmochelin (Fischbach et al., 2006). Some pathogenic E. coli strains carry a gene cluster called IroA, which consists of five genes to perform enterobactin glycosylation and processing. The sugars on the enterobactin create steric hindrance to the LCN2 pocket, thereby abolishing LCN2 binding. To investigate this effect, we cloned the IroA cluster into a plasmid and transformed it into a non-IroA-carrying E. coli strain BL21(DE3). A non-enterobactin-expressing \u25b3entE-E. coli strain, which is particularly susceptible to LCN2 binding, was employed for comparison. We incubated the E. coli with varying concentrations of LCN2 and measured their viability by colony formation assay. Figure 3a shows that the E. coli without the IroA plasmid transformation (referred as WT-E. coli) was sensitive to LCN2, whereas the E. coli transformed with the IroA plasmid (referred as IroA-E. coli) was significantly more resistant to LCN2. The IroA-E. coli also showed stronger potency in acquisition of the iron ions than the WT-E. coli while the LCN2 was presented in the environment (Figure 3b). In line with this observation, we found that the enterobactin (including the glycosylated form) extracted from the IroA-E. coli was more cytotoxic to the cancer cells than that extracted from the WT E. coli (Figure 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig3-v1.jpg)\n\n**Figure 3.:** (a) E. coli viability in varying concentrations of lipocalin 2 (LCN2) protein. The \u0394entE strain, which could not generate enterobactin, was used as a negative control. (b) Iron-consuming ability of E. coli determined by the chrome azurol S (CAS) assay reagent. (c) Cytotoxicity of enterobactin on the MC38 colon cancer cells. The enterobactin was extracted from an equal supernatant volume of the wild-type (WT)-E. coli or the IroA-E. coli culture. The extraction buffer (DMSO) was used as a negative control. (d) Treatment schedule of IroA-E. coli in tumor-bearing mice. Two intratumoral injections were administered on Day 0 and Day 9. (e) Tumor growth curves across various treatment groups. (f) The Kaplan-Meier analysis for the mice in different treatment groups. (g) E0771 breast tumor growth curves for the different treatment groups. (h) Survival curves for mice in different treatment groups. (i) B16F10 melanoma tumor growth curves for the different treatment treatment groups. (j) Survival curves for mice in the different treatment groups. (k) The bacterial burden from the blood of mice on days 1, 3, and 7 following intravenous administration with different bacteria. (l) Whole blood cell analyses for the different treatment groups. The error bars represent mean \u00b1 SD. Statistical analyses were performed by one-way ANOVA (**p<0.01).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) The tumor growth curves of individual mice in MC38 tumor model (b) The tumor growth curves of individual mice in E0771 tumor model (c) The tumor growth curves of individual mice in B16F10 tumor model.\n\nIn mouse models of colon, breast, and melanoma cancers, the IroA-E. coli was significantly more efficacious than the WT-E. coli. In a MC38 mouse colon cancer model, 6 out of 10 mice treated by IroA-E. coli achieved complete remission, whereas none of the mice treated by the WT-E. coli experienced a cure (Figure 3d\u2013f, and Figure 3\u2014figure supplement 1a). In two other mouse models of E0771 breast cancer and B16F10 melanoma, the IroA-E. coli demonstrated improved anti-tumor ability as compared to WT bacteria (Figure 3g\u2013j, and Figure 3\u2014figure supplement 1b\u2013c). It should be pointed out LCN2 expression has been shown to elevate the aggressiveness of breast (Yang et al., 2009), melanoma (Adler et al., 2023), and colon cancers (Chaudhary et al., 2021), suggesting that WT bacteria may show reduced anticancer activity in more aggressive cancer types due to higher iron competition. Overall, we showed that the IroA cluster equips E. coli with an effective iron-scavenging capability, exerting a potent anti-tumor effect in the LCN2-rich tumor microenvironment.\n\nTo evaluate the safety of IroA-E. coli in comparison to WT bacteria, we intravenously administered the bacteria and conducted serial whole blood analyses on days 1, 3, and 7 post-injection to assess bacterial burden and blood cell counts (Figure 3k\u2013l). For both WT-E. coli and IroA-E. coli, bacterial burden was undetectable in the blood. Additionally, whole blood cell analysis indicated that IroA-E. coli did not adversely affect the immune system within the circulatory system compared to WT-E. coli. By day 7, all treatment groups had comparable blood cell counts to the untreated (UT) groups. These findings demonstrate that IroA-E. coli could enhance anti-tumor treatment without incurring additional risks of bacteremia or sepsis relative to WT-E. coli.\n\n### IroA-E. coli is less iron-deficient than WT-E. coli in the tumor microenvironment\n\nBecause the salmochelin secreted by IroA-E. coli is resistant to the sequestration of LCN2, we speculated that IroA-E. coli could have ameliorated the iron deficiency problem in the TME. To verify this speculation, we quantitatively compared the proteome of WT-E. coli and IroA-E. coli colonized in the tumors (Figure 4a). The GO-term analysis revealed that the many proteins enriched in WT-E. coli belong to the enterobactin biosynthesis process and the iron homeostasis. Figure 4b and Figure 4c showed the fold changes of the individual proteins in these two terms. Strikingly, all of these proteins were expressed at a much higher level in WT-E. coli than in IroA-E. coli. These results suggest that IroA-E. coli was less stressed by the iron-deficient environment in the TME, which is in accordance with IroA-E.coli\u2019s superior iron-scavenging ability from the glycosylated enterobactin. Besides the proteome of E. coli, we also examined the proteome changes in the host cells. We found that two iron-related proteins in mice, transferrin and transferring receptor, were elevated in the IroA-E. coli treatment as compared to the WT-E. coli treatment (Figure 4d). These two proteins are known to be up-regulated when the cells sense a lack of iron in the environment (Ponka and Lok, 1999; Theil, 1990; Ponka et al., 2015). Our finding corroborates a competitive scenario between the host cells and E. coli where the potent acquisition of ferric ion by IroA-E. coli posed an iron-deficient stress to the host cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig4-v1.jpg)\n\n**Figure 4.:** (a) Volcano plot analysis between the proteomes of WT-E. coli and IroA-E. coli in the mouse tumors. (b) Fold changes of the proteins involved in the iron ion homeostasis. All the fold changes are >1. (c) Fold changes of the proteins involved in the enterobactin biosynthetic process. All the fold changes are >1. (d) Fold changes of transferrin and transferring receptor in the tumor.\n\n### Tumor suppression by iron-scavenging IroA-E. coli establishes anticancer adaptive immunity\n\nGiven that the IroA-E. coli treatment achieved complete tumor remission in multiple tumor models, we sought to investigate whether it also triggered adaptive immune responses against cancers. For the MC38-burdened mice that achieved complete tumor remission upon IroA-E. coli treatment, the mice were re-challenged with MC38 cancer cells 6 weeks following tumor eradication. The absence of tumor growth upon rechallenge indicates the establishment of robust anticancer adaptive immunity (Figure 5a), which led us to further analyze the tumor-infiltrating lymphocytes (TILs) in the mice treated by PBS, WT-E. coli, IroA-E. coli. We found that the TILs, especially the CD8+ T cells, were elevated in the IroA-E. coli group compared to the WT-E. coli group (Figure 5b), highlighting the superior capacity of IroA-E. coli treatment towards enhancing CD8+ T cell infiltration into the tumor microenvironment. The enhanced CD8+ T cell infiltration can be attributed to the prolonged intratumoral colonization by the IroA-E. coli (Figure 5\u2014figure supplement 1), which can confer sustained immune stimulation for immune cell recruitment. We further performed a CD8+ T-cell depletion study, which showed that the anti-tumor activity of IroA-E. coli was partially weakened upon anti-CD8 depletion (Figure 5c). These results demonstrate that the robust tumor suppression by the IroA-E. coli therapy can be attributed in part to the elicitation of tumor-specific cytotoxicity T cells, which can in turn provide durable anticancer immunity following bacterial clearance.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig5-v1.jpg)\n\n**Figure 5.:** (a) The mice cured by IroA-E. coli were re-challenged with a subcutaneous inoculation of 2.5\u00d7105 MC38 cells. No tumor formation was observed. The na\u00efve mice were used as controls. (b) The proportions of tumor-infiltrating CD4+ and CD8+ T cells in different treatment groups. (c) The tumor-bearing mice were treated with IroA-E. coli in the presence or absence of the anti-CD8 depletion antibody. (d) Survival curves of mice in different treatment groups. The error bars represent mean \u00b1 SD. Statistical analyses were performed by one-way ANOVA (**p<0.01, ***p<0.001).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The bacteria were intratumorally delivered to tumor-bearing mice for 15 days. The tumors were collected and homogenized for measuring the bacteria number. The number of survival bacteria was determined by plating the overnight culture on the LB agar plates.\n\n### Systemic delivery of IroA-E. coli and oxaliplatin show synergistic tumor suppression\n\nIt has been reported that E. coli possesses great tumor-targeting ability following intravenous injection in mice due to the hypoxic and immune-suppressive tumor microenvironment. Our previous study has also shown that the combination of E. coli and oxaliplatin synergistically suppresses the tumor growth (Lim et al., 2024). We, therefore, attempted to apply IroA-E coli and oxaliplatin for cancer treatment using a systemic delivery approach as depicted in Figure 6a. All mice maintained over 90% of their weights and remained active and healthy during the course of the treatments (Figure 6b). Unlike the intratumoral injection, the intravenous injection of E. coli, either the wild-type or the IroA transformant, resulted in subdued anti-tumor efficacy (Figure 6c\u2013e). Also, the monotherapy of oxaliplatin only slightly inhibited the tumor growth. The combination of oxaliplatin with the wild-type E. coli delayed the tumor progression but did not achieve complete remission. Remarkably, the combination of oxaliplatin and IroA-E. coli significantly suppressed the tumor growth and achieved complete remission in 1 out of 4 mice. Overall, our data revealed that the systemic delivery of IroA-E. coli was synergistic with the oxaliplatin chemotherapy in the mouse tumor models.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90798/elife-90798-fig6-v1.jpg)\n\n**Figure 6.:** (a) The scheme of the systemic delivery of IroA-E. coli and oxaliplatin in the tumor-bearing mice. (b) The alteration of mouse weights during the treatment course. (c) Survival curves of the mice in various treatment groups. (d) The average tumor growth curves of different treatment groups. (e) The tumor growth curves of individual mice in (d). The error bars represent mean \u00b1 SD. Statistical analyses were performed by one-way ANOVA (*p<0.05, **p<0.01, ****p<0.0001).\n\n## Discussion\n\nThere are accumulating studies that apply bacteria as drug delivery vehicles for cancer therapy with various payloads, including toxins, cytokines, immune checkpoint inhibitors, etc. However, in order to optimize the therapeutic outcomes of these engineering endeavors, it is also very important to understand the bacterial adaptation in the TME. The growth conditions differ vastly between the in vitro cultivation and the intratumoral environments. The rich medium provides ample nutrients for the optimal bacterial growth and payload production, whereas tumor is a nutrient-deprived, acidic, and hypoxic environment, which may stress the bacteria and restraint the engineered functionality. Also, unlike the in vitro cultivation, bacteria face the competition from the cancer cells as well as the surveillance from the host\u2019s immune system. This work provides the first proteomic data comparing E. coli cultured in the rich medium and colonized in the mouse tumor. The results show that the TME is an iron-deficient environment for E. coli. Moreover, upon the bacterial inoculation, the host cells up-regulate LCN2 to further block the iron uptake of E. coli by enterobactin (Singh et al., 2015; Bachman et al., 2009). This observation inspired us to develop E. coli that overcame the nutritional immunity from the host. This discovery-driven design, especially the IroA implementation, proves to be highly effective in enhancing the anti-tumor activity of E. coli. It is of interest to investigate that if the iron uptake ability is also critical for other types of bacteria when applied in cancer therapy.\n\nIn addition to the enterobactin biosynthetic process and the iron ion homeostasis, our proteomic data also revealed other insights into the key nutrients whose scarcity within the TME may impede the bacterial growth. For example, the proteins involving \u2018the de novo synthesis of IMP\u2019 are highly enriched in the E. coli grown in tumors compared to the rich medium condition. Inosine phosphate (IMP) is the precursor of purine. When the environment is deficient of purine, the bacteria need to synthesize them using de novo pathways (Rolfes and Zalkin, 1988; Cho et al., 2011; Meng et al., 1990). A previous report by Samant et al. has shown that the genes associated with the de novo purine synthesis are the most critical factors for the growth of E. coli or other gram-negative bacteria in human serum (Samant et al., 2008). Their data indicate that, similar to iron, humans also control the purine at a very low level in blood as a strategy of nutritional immunity in order to restrain the proliferation of bacteria. In light of these findings, one potential avenue could involve engineering E. coli to bolster its ability for de novo nucleotide biosynthesis, therefore, facilitating better adaptation to the TME. Given that bacteria and cancer cells vie for growth within the TME, an enhanced bacterial adaptation to the TME may potentially improve the anti-tumor activity.\n\nOverall, our research revealed that the tug of war for iron plays a critical role when applying bacteria for cancer therapy. To aid the bacteria in this war, we have adopted several approaches, including the engineering of E. coli to secret cyclic-di-GMP and salmochelin. These methods have demonstrated effectiveness in treating murine tumors, resulting in a significant portion of complete remission. Notably, the cured mice have also established durable anti-tumor adaptive immunity. Our iron-scavenging strategy opens new avenues by overcoming the nutritional immunity hurdles in the realm of bacteria-based cancer therapy.\n\n## Materials and methods\n\n### Cancer cell strain and cultivation\n\nThe MC38 murine colon cancer cells were cultured in DMEM supplemented with 10% FBS, 1% penicillin-streptomycin solution (100 U/ml), 1 mM sodium pyruvate, 10mM HEPES, and 1% MEM Non-Essential Amino Acids Solution (100X). RAW264.7 macrophage cells were cultured in DMEM supplemented with 10%FBS, and 1% penicillin-streptomycin solution (100 U/ml). All cell lines were maintained in a humidified incubator at 37\u00b0C and 5% CO2.\n\n### Mouse experiments\n\nAll animal experiments were conducted under specific pathogen-free conditions according to the guidelines approved by the Animal Care and Usage Committee of Academia Sinica. Mice were housed at a temperature of 19\u201323\u00b0C with a 12-hr light-dark cycle and a humidity of 50\u201360%. A maximum of five mice were housed in a single individually ventilated cage with soft wood for nesting. Tumor dimensions were measured using a caliper, and tumor volume was calculated using the following formula: 0.52 x ((tumor length +tumor width)/2)3. Mice aged 6\u201310 weeks were subcutaneously injected with either 5\u00d710\u2075 MC38 murine colon cancer cells, 5\u00d710\u2075 E0771 breast cancer cells, or 1\u00d710\u2075 B16F10 melanoma cancer cells suspended in 100 \u00b5L PBS at the right flank. The Escherichia coli strain BL21(DE3) was cultured in LB medium at 37\u00b0C overnight. The overnight cultures were diluted 100-fold in fresh LB medium and incubated at 37\u00b0C for ~3 hr until the log phage. Prior to the intratumoral injection, the bacteria density was determined by measuring the OD600 (1 OD = 4\u00d7108 CFU/ml). For the proteomic experiment, the tumor-bearing mice were intratumorally injected with 4\u00d7108 BL21(DE3) in 50 \u00b5L PBS when the tumor volumes reached approximately 150 mm3. The tumors were harvested the following day for the LC-MS/MS analysis. For the intratumor-injection-based therapeutic experiment, the tumor-bearing mice were treated when the tumor volume reached ~150 mm3. The tumor-bearing mice were intratumorally injected with 4\u00d7108 BL21(DE3) on day 0 and day 9. VLX 600 (4.5 mg/kg) was administered via intravenous injection every three days for a total of four injections. For the intravenous-injection-based therapeutic experiment, the tumor-bearing mice were intravenously injected with 1\u00d7108 BL21(DE3) in 100 \u00b5L PBS every three days for four times. The Oxaliplatin (5 mg/kg) was administered intraperitoneally every three days for a total of five injections. For the CD8+ T cell depletion experiment, the mice received intraperitoneal injections of 100 \u00b5g anti-mouse CD8\u03b1 antibodies (BioXCell, Cat# BE0061) on days \u22126,\u20132, 2, 6, and 10, along with the intratumoral injections of 4\u00d710\u2078 BL21(DE3) on days 0 and 9. For tumor re-challenge study, MC38-burdened mice following bacterial therapy were subcutaneously injected with 5\u00d710\u2075 MC38 murine colon cancer cells for monitoring. Na\u00efve mice were challenged similarly as a control. Mice were considered dead and euthanized when the tumor reached a volume of 1500 mm3. This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols (Protocol#23-07-2027) of Academia Sinica.\n\n### Proteomics sample preparation\n\nFor the tumor-colonized bacteria, the tumors were excised, and homogenized, and processed to extract intratumoral bacteria cells. Red blood cells were removed using RBC lysis buffer. The mouse cells were removed through low-speed centrifugation at 1200 g for 2 min three times. The E coli was collected by centrifugation at 4500 g for 20 min. The samples were lysed using 4% SDS, 100 mM Tris-HCL (pH 9), and 1 x protease inhibitor cocktail set III. The cell lysates were heated at 95\u00b0C for 5 min and sonicated for 15 min using a Bioruptor Plus (Diagenode). The supernatant was collected after centrifugation at 18,000 g for 30 min at 4\u00b0C. Approximately 50 \u00b5L supernatant was mixed with 200 \u00b5L methanol, 50 \u00b5L chloroform, and 150 \u00b5L double-distilled water. The aqueous phase was removed after sitting the sample at room temperature for 10 min. Subsequently, the sample was mixed with another 150 \u00b5L methanol. The pellet was collected, dried for 20 min, and resuspended in 8 M urea and 50 mM triethylammonium bicarbonate buffer. The samples were reduced with 10 mM DTT, alkylated with 50 mM IAA, and digested using LysC and trypsin. Following acidification, the supernatant was loaded onto the SDB-XC StageTips (Rappsilber et al., 2007) and eluted by 80% ACN containing 0.1%TFA. The sample was lyophilized and stored at \u201320\u00b0C before further LC-MS/MS analysis. For the bacteria grown in the rich medium, the E. coli strain BL21(DE3) was cultured in LB medium at 37\u00b0C overnight. The overnight culture was diluted 100-fold in fresh LB medium and incubated at 37\u00b0C until the log phage (OD = 0.6). The bacteria were harvested by centrifugation and treated similarly to the bacteria harvested from tumors.\n\n### LC-MS/MS experiments\n\nThe sample was loaded onto the trap column (2 cm \u00d775 \u03bcm i.d., Symmetry C18), and then separated on a nanoACQUITY UPLC System (Waters, USA) equipped with a 25 cm \u00d775 \u03bcm i.d. BEH130 C18 column (Waters, USA) using a 5\u201335% buffer B (buffer A: 0.1% formic acid; buffer B: 0.1% formic acid in acetonitrile) gradient as the separation phase and a flow rate of 300 nl/min. The total running time was 120 min. The mass spectrometric data were collected on a high-resolution Q Exactive HF-X mass spectrometer (Thermo Fisher Scientific, Bremen, Germany) operating in the data-dependent mode. Full MS resolution was set to 60,000 at 200 m/z and the mass range was set to 350\u20131600. dd-MS2 resolution was set to 15,000 at 200 m/z. Isolation width was set to 1.3 m/z. Normalized collision energy was set to 28%. The LC-MS/MS data were matched with the human SwissProt database using the Mascot search engine v.2.6.1 (Matrix Science, UK) with the following parameters: the mass tolerance of precursor peptide was set to 10 ppm, and the tolerance for MS/MS fragments was 0.02 Da.\n\n### Proteomics data processing and statistical analysis\n\nRaw MS data were processed using MaxQuant version 2.0.1. Database search was performed with the Andromeda search engine through the Uniprot database (Cox et al., 2011). Both protein and peptide levels were filtered by a 1% false discovery rate (FDR). The variable modification setting included oxidation(M) and Acetyl (Protein N-term), and the fixed modification setting included carbamidomethyl(C). The \u2018match between runs\u2019 was set as 1 min, and the MaxQuant LFQ algorithm was employed for normalization. The statistical analysis was performed using Perseus version 1.6.15.0 and Prism version 8.0.2 (Tyanova et al., 2016). The proteinGroups output table from MaxQuant was utilized for proteomics analysis. The potential contaminant, reverse, and only-identified-by-site were filtered out. The LFQ intensity was log2-transformed and filtered for validity. NaN values were imputed, and bacterial cell LFQ intensity was normalized using a z-score. The LFQ intensity of bacterial cells was normalized using a z-score (n-average/standard deviation). A t-test with an FDR of 0.05 and S0 of 1 was performed to extract significantly different proteins. These proteins were uploaded to the DAVID database for biological interpretation, and the results were visualized in Prism. The raw data of LFQ intensity for significantly different proteins were averaged to calculate the difference in protein expression level.\n\n### Enterobactin extraction\n\nBL21(DE3) was cultured in the LB medium at 37\u2103 overnight. The overnight culture was 100-fold diluted to the M9 medium supplemented with 0.2% casamino acids, 0.2% glucose, 1 mM MgSO4, and 1 mg/mL vitamin B1 and grown for 20 hr. The bacteria were removed by centrifugation, and the supernatant was sterilized using a 0.22 \u03bcm filter. The cell-free supernatant was acidified to pH = 2 using 10 N HCl. An equal volume of ethyl acetate was added to the acidified supernatant and mixed using Intelli Mixer ERM-2L. The organic fraction was collected after 30 min incubation at room temperature and dried using a miVac centrifugal concentrator. All samples were resuspended in DMSO and stored at \u201320\u00b0C for further experiments.\n\n### Cytotoxicity assay of enterobactin\n\n1\u00d7104 MC38 cells in a 96-well plate were treated with the enterobactin extracted from WT-E. coli or IroA-E. coli for 48 hr. The cell viability was measured using the Cell Counting Kit-8 (CCK-8) according to the manufacturer\u2019s protocol. A cell-free mixture was used as a background reference, and the untreated cells were used as a control.\n\n### Characterization of cyclic-di-GMP (CDG) secreted from DGC-E. coli\n\nThe DGC plasmid carries the gene of the diguanylate cyclase fragment 82\u2013248 residues from Thermotoga maritima with a single mutation of Arg158Ala. The BL21(DE3) bacteria transformed with the DGC plasmid were cultured in LB at 37\u00b0C overnight. The overnight cultures were 100-fold diluted to fresh LB supplemented with 0.1 mM IPTG and kanamycin (50 ug/ml) and cultured at 37\u00b0C for 20 hr. The bacteria were pelleted, and the supernatant was collected and filtered using a 0.22 \u00b5m strainer. The supernatant was analyzed by LC-MS/MS to identify the CDG.\n\n### Interferon-\u03b2 quantification\n\n5\u00d7105 RAW264.7 cells in a 24-well plate were treated with the conditioned medium from DGC-E. coli or non-transformed E. coli for 18 hr. Subsequently, the cell culture medium was collected for IFN-\u03b2 quantification. The IFN-\u03b2 levels were measured using the Mouse IFN-beta ELISA kit (R&D, #P318019) following the manufacturer\u2019s protocol.\n\n### Iron chelating assay\n\nThe iron uptake ability of bacteria was determined using chrome azurol S (CAS) assay (Louden et al., 2011). The BL21(DE3) cells with or without IroA transformation were cultured in the M9 medium at 37\u00b0C overnight. The bacteria were collected by centrifugation and washed twice with PBS. 108 bacteria were inoculated into fresh M9 medium with CAS reagent and different concentrations of Lcn2 protein and incubated at 37\u00b0C overnight. The A630 of the bacterial cultured medium was measured to quantify the iron-consuming ability of the bacteria.\n\n### Lipocalin 2 resistance assay\n\nThe IroA-E. coli or non-transformed E. coli was cultured overnight in the LB medium. Next day, the bacterial culture was diluted to fresh RPMI supplemented with 10% FBS by 100-fold and incubated at 37\u00b0C for 5 hr to reach the log phase. 105 bacteria were treated with different concentrations of LCN2 and incubated at 37\u00b0C for 20 hr. The live bacteria were quantified by serial tittering on LB agar plates.\n\n### Tumor-infiltrating lymphocyte (TIL) analysis\n\nTumor tissues were cut into small pieces in the digestion buffer (1 mL RPMI supplemented with 10% FBS, 0.33 mg collagenase type IV (Sigma, Cat#C5138), and 66 \u00b5g DNase I from bovine pancreas (Cyrusbiosicence, Cat#101-9003-98-9)) and transferred into a C tube followed by sample processing using gentleMACS. The cell suspensions were filtered through a 40 \u00b5m strainer. The RBC lysis buffer was added to the tumor suspension to remove red blood cells. The cells were then blocked using the CD16/32 Fc blocker for 5 min on ice. The T cells were stained with eFluor780 viability dye, PE-CD45, APC-CD4, and FITC-CD8a antibodies. The stained T cells were analyzed by flow cytometer (Attune NxT cytometer), and the data were processed using FlowJo software.\n\n### Antibodies\n\n<table>\n  <thead>\n    <tr>\n      <th>Antibodies</th>\n      <th>Supplier</th>\n      <th>Catalog number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>anti-mouse CD16/32 Antibody</td>\n      <td>Biolegend</td>\n      <td>101301</td>\n    </tr>\n    <tr>\n      <td>PE anti-mouse CD45 Antibody</td>\n      <td>Biolegend</td>\n      <td>103105</td>\n    </tr>\n    <tr>\n      <td>APC anti-mouse CD4 Antibody</td>\n      <td>Biolegend</td>\n      <td>100516</td>\n    </tr>\n    <tr>\n      <td>FITC anti-mouse CD8a Antibody</td>\n      <td>Biolegend</td>\n      <td>100706</td>\n    </tr>\n    <tr>\n      <td>InVivoMAb anti-mouse CD8\u03b1</td>\n      <td>Bio X Cell</td>\n      <td>BE0061</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yamini Dalal, National Cancer Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90798.3.sa0](https://doi.org/10.7554/eLife.90798.3.sa0)\n\nThis valuable study combines proteomics and a mouse model to reveal the importance of iron uptake in bacterial therapy for cancer. The evidence presented is convincing. Notably, the authors showed upregulation of iron uptake of bacteria significantly inhibits tumor growth in vivo. This paper will be of interest to a broad audience including researchers in cancer biology, cell biology, and microbiology.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90798.3.sa1](https://doi.org/10.7554/eLife.90798.3.sa1)\n\nIn this manuscript, Huang and colleagues explored the role of iron in bacterial therapy for cancer. Using proteomics, they revealed the upregulation of bacterial genes that uptake iron, and reasoned that such regulation is an adaptation to the iron-deficient tumor microenvironment. Logically, they engineered E. coli strains with enhanced iron-uptake efficiency, and showed that these strains, together with iron scavengers, suppress tumor growth in a mouse model. Lastly, they reported the tumor suppression by IroA-E. coli provides immunological memory via CD8+ T cells. In general, I find the findings in the manuscript novel and the evidence convincing.\n\n(1) Although the genetic and proteomic data are convincing, would it be possible to directly quantify the iron concentration in (1) E. coli in different growth environments, and (2) tumor microenvironment? This will provide functional consequence of upregulating genes that import iron into the bacteria.\n\n(2) Related to 1, the experiment to study the synergistic effect of CDG and VLX600 (lines 139-175) is very nice and promising, but one flaw here is a lack of the measurement of iron concentration. Therefore, a possible explanation could be that CDG acts in another manner, unrelated to iron uptake, that synergizes with VLX600's function to deplete iron from cancer cells. Here, a direct measurement of iron concentration will show the effect of CDG on iron uptake, thus complementing the missing link.\n\n(3) Lines 250-268: Although statistically significant, I would recommend the authors characterize the CD8+ T cells a little more, as the mechanism now seems quite elusive. What signals or memories do CD8+ T cells acquire after IroA-E. coli treatment to confer their long-term immunogenicity?\n\n(4) Perhaps this goes beyond the scope of the current manuscript, but how broadly applicable is the observed iron-transport phenomenon in other tumor models? I would recommend the authors to either experimentally test it in another model, or at least discuss this question.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90798.3.sa2](https://doi.org/10.7554/eLife.90798.3.sa2)\n\nSummary:\n\nThe authors provide strong evidence that bacteria, such as E. coli, compete with tumor cells for iron resources and consequently reduce tumor growth. When sequestration between LCN2 and bacterobactin is blocked by upregulating CDG(DGC-E. coli) or salmochelin(IroA-E.coli), E. coli increase iron uptake from the tumor microenvironment (TME) and restrict iron availability for tumor cells. Long-term remission in IroA-E.coli treated mice is associated with enhanced CD8+ T cell activity. Additionally, systemic delivery of IroA-E.coli shows a synergistic effect with chemotherapy reagent oxaliplatin to reduce tumor growth.\n\nStrengths:\n\nIt is important to identify the iron-related crosstalk between E. coli and TME. Blocking lcn2-bacterobactin sequestration by different strategies consistently reduce tumor growth.\n\nWeaknesses:\n\nAs engineered E. coli upregulate their function to uptake iron, they may increase the likelihood of escaping from nutritional immunity (LCN2 becomes insensitive to sequester iron from the bacteria). Would this raise the chance of developing sepsis? Do authors think that it is safe to administrate these engineered bacteria in mice or humans?\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90798.3.sa3](https://doi.org/10.7554/eLife.90798.3.sa3)\n\nSummary:\n\nBased on their observation that tumor has an iron-deficient microenvironment, and the assumption that nutritional immunity is important in bacteria-mediated tumor modulation, the authors postulate that manipulation of iron homeostasis can affect tumor growth. This paper uses straightforward in vitro and in vivo techniques to examine a specific and important question of nutritional immunity in bacteria-mediated tumor therapy. They are successful in showing that manipulation of iron regulation during nutritional immunity does affect the virulence of the bacteria, and in turn the tumor. These findings open future avenues of investigation, including the use of different bacteria, different delivery systems for therapeutics, and different tumor types. The authors were also successful in addressing the reviewer's concerns adequately.\n",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b8a0e5af-e3e9-4dfa-b7ee-f79e33bb43e5",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C1",
+      "claim": "Certain bacteria demonstrate the ability to target and colonize the tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain bacteria demonstrate the ability to target and colonize the tumor microenvironment, a characteristic that positions them as innovative carriers for delivering various therapeutic agents in cancer therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that is supported by established scientific knowledge and citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "cb5aa3c6-a23a-4f9c-a9fb-590fd3a71f4a",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C2",
+      "claim": "E. coli colonized in tumors notably upregulated processes related to ferric ions, including enterobactin biosynthesis and iron homeostasis, compared to E. coli cultivated in rich medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to E. coli cultivated in the rich medium, we found that E. coli colonized in tumors notably upregulated the processes related to ferric ions, including the enterobactin biosynthesis and iron homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by LC-MS/MS proteomic data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "5d39e24b-f2dc-4671-b0c7-c2888edb500d",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C3",
+      "claim": "The tumor is an iron-deficient environment to E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicated that the tumor is an iron-deficient environment to E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the proteomic data showing upregulation of iron-related proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "1ce283ad-e70f-4b68-8f74-7b28a9a2f822",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C4",
+      "claim": "The colonization of E. coli in the tumor led to an increased expression of lipocalin 2 (LCN2).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the colonization of E. coli in the tumor led to an increased expression of lipocalin 2 (LCN2), a host protein that can sequester the enterobactin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by LC-MS/MS analysis data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "71455ff4-d8d7-4169-98d8-5cf302b52390",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C5",
+      "claim": "LCN2 is a host protein that can sequester enterobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the colonization of E. coli in the tumor led to an increased expression of lipocalin 2 (LCN2), a host protein that can sequester the enterobactin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about LCN2 function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "be45e652-ca01-4d1f-b636-bdedaa45c424",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C6",
+      "claim": "The IroA cluster enables E. coli to synthesize glycosylated enterobactin, which creates steric hindrance to avoid LCN2 sequestration.",
+      "claim_type": "EXPLICIT",
+      "source": "By introducing the IroA cluster, the E. coli synthesizes the glycosylated enterobactin, which creates steric hindrance to avoid the LCN2 sequestration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing resistance to LCN2 and established knowledge about the IroA cluster function.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "5b91f909-4486-4a45-93e6-60cd4c64bccd",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C7",
+      "claim": "IroA-E. coli showed enhanced resistance to LCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "The IroA-E. coli showed enhanced resistance to LCN2 and significantly improved the anti-tumor activity in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "f2a886c6-b4f4-400d-a814-3c3de5033d44",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C8",
+      "claim": "IroA-E. coli significantly improved anti-tumor activity in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The IroA-E. coli showed enhanced resistance to LCN2 and significantly improved the anti-tumor activity in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from multiple mouse tumor models shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "063b3fe4-a738-4e93-b998-21d787e3d06a",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C9",
+      "claim": "Mice cured by IroA-E. coli treatment became resistant to tumor re-challenge, indicating the establishment of immunological memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the mice cured by the IroA-E. coli treatment became resistant to the tumor re-challenge, indicating the establishment of immunological memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from tumor re-challenge studies shown in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "d92821b0-7727-4527-8775-b43e62c78a93",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C10",
+      "claim": "Bacterial therapy has re-emerged as a promising modality for cancer treatment, building on the pioneering works of William Coley in the late 19th century.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial therapy has re-emerged as a promising modality for cancer treatment, building on the pioneering works of William Coley in the late 19th century (Carlson et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Carlson et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "4cf7c9e3-28e2-44f5-8d89-a70c173c761a",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C11",
+      "claim": "Bacteria offer active tumor targeting as an advantage over traditional cancer treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "As a living therapeutic agent, bacteria offer several advantages over traditional cancer treatments, including (1) active tumor targeting (Yamamoto et al., 2016; Kim et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yamamoto et al., 2016 and Kim et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "698052ed-f37d-43a6-9e4d-0d5e553ff5c7",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C12",
+      "claim": "Bacteria offer tumor colonization as an advantage over traditional cancer treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "As a living therapeutic agent, bacteria offer several advantages over traditional cancer treatments, including (1) active tumor targeting (Yamamoto et al., 2016; Kim et al., 2023), (2) tumor colonization (Westphal et al., 2008; Weibel et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Westphal et al., 2008 and Weibel et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "d6eb8ae7-9647-475c-8a33-1dc4fb8051b5",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C13",
+      "claim": "Bacteria offer immune system stimulation as an advantage over traditional cancer treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "As a living therapeutic agent, bacteria offer several advantages over traditional cancer treatments, including (1) active tumor targeting (Yamamoto et al., 2016; Kim et al., 2023), (2) tumor colonization (Westphal et al., 2008; Weibel et al., 2008), (3) immune system stimulation (Qiu et al., 2020; Yang et al., 2023)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Qiu et al., 2020 and Yang et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b3a1fb65-561d-4638-b141-5325b9829fdc",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C14",
+      "claim": "Bacteria offer great engineerability for customized functionalities as an advantage over traditional cancer treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "As a living therapeutic agent, bacteria offer several advantages over traditional cancer treatments, including (1) active tumor targeting (Yamamoto et al., 2016; Kim et al., 2023), (2) tumor colonization (Westphal et al., 2008; Weibel et al., 2008), (3) immune system stimulation (Qiu et al., 2020; Yang et al., 2023), and (4) great engineerability for customized functionalities (Gurbatri et al., 2020; Hu et al., 2022; Canale et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gurbatri et al., 2020, Hu et al., 2022, and Canale et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "fcc18ab6-253a-4873-b871-162e605ee868",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C15",
+      "claim": "The tumor microenvironment provides unique cues such as hypoxia, low pH values, and immune suppressors.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumor microenvironment (TME) provides unique cues, such as hypoxia, low pH values, and immune suppressors, which facilitate the selective targeting and colonization of certain bacteria, including E. coli (Ryan et al., 2009; Flentie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ryan et al., 2009 and Flentie et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "0a85d76c-d56c-422b-ac9e-5f153db8050c",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C16",
+      "claim": "The molecular physiology of E. coli has been extensively studied under well-controlled laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While the molecular physiology of E. coli has been extensively studied under well-controlled laboratory conditions (Han and Lee, 2006; Mateus et al., 2020), it is unclear how E. coli adapts to the nutrition-limited and immune-responsive environment in tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Han and Lee, 2006 and Mateus et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "0cafe9ae-c16c-4c6b-8680-2eaa975f26a1",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C17",
+      "claim": "It is unclear how E. coli adapts to the nutrition-limited and immune-responsive environment in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "While the molecular physiology of E. coli has been extensively studied under well-controlled laboratory conditions (Han and Lee, 2006; Mateus et al., 2020), it is unclear how E. coli adapts to the nutrition-limited and immune-responsive environment in tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b187b61f-155a-44e4-9ddc-0d054f22222c",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C18",
+      "claim": "Nutritional immunity is employed by the host organism through restricting the availability of essential nutrients to invading pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Nutritional immunity is employed by the host organism through restricting the availability of essential nutrients to the invading pathogens (Weinberg, 1975; Murdoch and Skaar, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Weinberg, 1975 and Murdoch and Skaar, 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "bc818885-39a5-49ba-ab60-293cd0251fb8",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C19",
+      "claim": "Humans have evolved specialized proteins to chelate trace minerals such as iron, zinc, and manganese, keeping their free-form concentrations at very low levels within the body.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, humans have evolved specialized proteins to chelate trace minerals, such as iron, zinc, and manganese, keeping their free-form concentrations at very low levels within the body (Andrews and Schmidt, 2007; Kambe et al., 2015; Roth et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Andrews and Schmidt, 2007, Kambe et al., 2015, and Roth et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "a5a267a1-972f-4d56-bd26-e7b23ce4fdef",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C20",
+      "claim": "Bacteria have developed a variety of siderophores to acquire ferric ions from the host.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a variety of siderophores are developed by bacteria to acquire ferric ions from the host (Kramer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kramer et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "49d7d004-a0b2-409a-a64d-58c13bafb918",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C21",
+      "claim": "Humans have evolved siderophore-sequestering proteins such as LCN2 for bacterial inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, humans have further adapted by evolving siderophore-sequestering proteins, such as LCN2, for bacterial inhibition (Singh et al., 2015; Bachman et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Singh et al., 2015 and Bachman et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "6e75de58-b0c9-47fa-a8e8-1497462fc288",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C22",
+      "claim": "There are many more proteins enriched in the rich medium than in the tumor condition for E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, there are many more proteins enriched in the rich medium than in the tumor condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Venn diagram and volcano plot data shown in Figure 1a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "ae31544e-5493-41b9-a42f-02a678438894",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C23",
+      "claim": "The Venn diagram and volcano blot revealed hundreds of protein IDs enriched in the rich medium condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The Venn diagram and the volcano blot revealed hundreds of protein IDs enriched in the rich medium condition (Figure 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "d9f45423-3c36-4b0a-94dc-e6d4d42a8c59",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C24",
+      "claim": "Many proteins enriched in rich medium are associated with biosynthetic processes, cell division, and energy production.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gene Ontology (GO)-term analysis revealed that many of these proteins are associated with the machineries of biosynthetic processes, cell division, and energy production (Figure 1c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO-term analysis data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "2c75ee2b-187b-46bc-9b6e-1496732a465c",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C25",
+      "claim": "E. coli was under a highly proliferative state in the rich medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gene Ontology (GO)-term analysis revealed that many of these proteins are associated with the machineries of biosynthetic processes, cell division, and energy production (Figure 1c), reflecting that the E. coli was under a highly proliferative state in the rich medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the GO-term analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "9d3a06c8-1afa-4d63-a01e-84e8aca33deb",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C26",
+      "claim": "71 proteins were preferentially expressed in the tumor condition over the rich medium condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there were also 71 proteins that were preferentially expressed in the tumor condition over the rich medium condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteomic data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "ce36f89a-851f-46e2-a63b-55dc49d94d0f",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C27",
+      "claim": "Many proteins preferentially expressed in tumors are involved in enterobactin synthesis and iron ion homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The GO-term analysis and the hierarchical clustering revealed that many of these proteins are involved in the processes of enterobactin synthesis and iron ion homeostasis (Figure 1d and e, and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO-term analysis and hierarchical clustering data shown in Figure 1d, e, and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "c2f2ace6-f566-4d77-ab75-651e239a8fee",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C28",
+      "claim": "Individual proteins in enterobactin synthesis and iron ion homeostasis processes were markedly up-regulated in the tumor condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1f showed that the individual proteins in these two processes were markedly up-regulated in the tumor condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "a2b79d2f-8385-4132-a57a-156753bf309f",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C29",
+      "claim": "Proteins involved in enterobactin synthesis and iron homeostasis are tightly controlled by the iron sensing system in E. coli and only become up-regulated under iron deficiency stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are known to be tightly controlled by the iron sensing system in E. coli, and only become up-regulated under the stress of iron deficiency (Seo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Seo et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "d13827fa-01d1-47e6-a1b0-ef97af0b48a4",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C30",
+      "claim": "LCN2 possesses a specialized pocket to bind and sequester enterobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth mentioning that while enterobactin facilitates the uptake of ferric ions into bacteria, the host immune cells can counteract by secreting a protein called LCN2, which possesses a specialized pocket to bind and sequester enterobactin (Fischbach et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fischbach et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "deb28954-ae04-4f19-82b6-00be09ce592e",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C31",
+      "claim": "A significant up-regulation of LCN2 expression was observed in tumors with E. coli inoculation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed a significant up-regulation of LCN2 expression in the tumors with E. coli inoculation (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-MS/MS data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b0a8ea83-620e-43f8-9c7f-2577503f3a8d",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C32",
+      "claim": "All three iron chelators (deferoxamine, ciclopirox, and VLX600) showed high cytotoxicity toward cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All three chelators showed high cytotoxicity toward the cancer cells, suggesting the essential role of irons for the survival of mammalian cells (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "6a67a9f5-e939-430d-afae-5e37323a6088",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C33",
+      "claim": "E. coli can better tolerate iron chelators at relatively high concentrations compared to cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, E. coli can better tolerate these iron chelators at relatively high concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "c2d7c878-adf7-4ff4-bc79-73ddae644602",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C34",
+      "claim": "VLX600 was the most potent drug against cancer cells with an IC50 of 0.33 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, VLX600 was the most potent drug against the cancer cells (IC50=0.33 \u03bcM) and provided the largest therapeutic window (280-fold difference) between the cancer cells and E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "7f512ce5-dcdb-4d00-b49c-f5b11976b691",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C35",
+      "claim": "VLX600 provided the largest therapeutic window (280-fold difference) between cancer cells and E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, VLX600 was the most potent drug against the cancer cells (IC50=0.33 \u03bcM) and provided the largest therapeutic window (280-fold difference) between the cancer cells and E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "11248a78-a773-4015-b798-41c9a62bed57",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C36",
+      "claim": "Cyclic di-GMP (CDG) can block the binding between LCN2 and enterobactin, restoring the functionality of enterobactin.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that cyclic di-GMP (CDG) can block the binding between LCN2 and enterobactin, therefore, restoring the functionality of enterobactin (Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Li et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b0c470ee-73b4-49b2-a66c-554d5acb86c4",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C37",
+      "claim": "The addition of CDG can enhance bacteria survival in the presence of LCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "In our bacterial culture study, we validated that the addition of CDG can enhance bacteria survival in the presence of LCN2 (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "729d86e0-b66f-40fd-901f-2e1c550162b3",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C38",
+      "claim": "E. coli transformed with the DGC plasmid actively synthesized CDG and secreted it into the supernatant.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the E. coli transformed with the DGC plasmid (hereafter referred to DGC-E. coli) actively synthesized CDG and secreted it into the supernatant as detected by the LC/MS-MS mass spectrometry (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LC-MS/MS data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "adbeddb2-9cb6-478d-b4e2-5532b4eae389",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C39",
+      "claim": "CDG is a potent ligand for the STING pathway, which can stimulate anti-tumor immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that CDG is also a potent ligand for the STING pathway, which can stimulate anti-tumor immunity (Diner et al., 2013; Krasteva and Sondermann, 2017; Chattopadhyay et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Diner et al., 2013, Krasteva and Sondermann, 2017, and Chattopadhyay et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "fa1c9e36-6530-4a2e-a1db-54833d4a2386",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C40",
+      "claim": "DGC-E. coli supernatant enhanced IFN-\u03b2 secretion by macrophages, indicating activation of the STING pathway by CDG.",
+      "claim_type": "EXPLICIT",
+      "source": "When applying the DGC-E. coli supernatant to the macrophages, the macrophages enhanced the IFN-\u03b2 secretion, indicating the activation of the STING pathway by CDG (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "ae58124f-90aa-49a0-a2b6-6b5164806aad",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C41",
+      "claim": "VLX600 monotherapy only marginally suppressed tumor growth compared to PBS control.",
+      "claim_type": "EXPLICIT",
+      "source": "The VLX600 monotherapy only marginally suppressed the tumor growth as compared to the PBS control (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "19da8812-d6f0-4718-be1b-352b70ecfe3c",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C42",
+      "claim": "DGC-E. coli monotherapy inhibited tumor progression but did not show superior efficacy than wild-type E. coli without DGC plasmid transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The DGC-E. coli monotherapy, although inhibited the tumor progression to a certain degree, did not show superior efficacy than the wild-type E. coli without the DGC plasmid transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "439fe8ad-fe32-4c48-a7af-45edfbb4ed69",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C43",
+      "claim": "The combination of DGC-E. coli and VLX600 showed significantly improved efficacy compared to individual mono-therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the combination of DGC-E. coli and VLX600 showed significantly improved efficacy as compared to the individual mono-therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "5ab9bf2d-b70d-454b-957e-9ed04e2bf80a",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C44",
+      "claim": "2 out of 4 mice achieved complete remission with the combination of DGC-E. coli and VLX600.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumor sizes were greatly suppressed, and 2 out of 4 mice achieved complete remission (Figure 2e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2e and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "9970118a-d584-48f4-ab94-356062161cd0",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C45",
+      "claim": "The combination of wild-type E. coli and VLX600 did not result in improved activity, indicating that CDG expression contributed to bacteria's synergism with VLX600.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the combination of the wild-type E. coli and VLX600 did not result in such an improved activity, indicating that the CDG expression contributed to bacteria's synergism with the iron-chelating VLX600.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and inference from the comparison of treatment groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b7a41743-e767-4b38-97f0-bc8962152d1f",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C46",
+      "claim": "The combination of CDG-expressing bacteria and VLX600 established robust anticancer adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of CDG-expressing bacteria and VLX600 also established robust anticancer adaptive immunity as the mice cured by the combinatorial therapy showed no tumor development in a rechallenge study (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "3abaeab6-335a-435d-b0a0-36f5139ac490",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C47",
+      "claim": "Some pathogenic E. coli strains carry a gene cluster called IroA, which consists of five genes to perform enterobactin glycosylation and processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Some pathogenic E. coli strains carry a gene cluster called IroA, which consists of five genes to perform enterobactin glycosylation and processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the IroA cluster.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "a86d8540-667f-4dae-9962-08087ebd5aea",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C48",
+      "claim": "The sugars on enterobactin create steric hindrance to the LCN2 pocket, thereby abolishing LCN2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The sugars on the enterobactin create steric hindrance to the LCN2 pocket, thereby abolishing LCN2 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about glycosylated enterobactin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "da0e942f-704e-424c-ab00-df1fe5c1b142",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C49",
+      "claim": "E. coli without the IroA plasmid transformation (WT-E. coli) was sensitive to LCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3a shows that the E. coli without the IroA plasmid transformation (referred as WT-E. coli) was sensitive to LCN2",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "5c0ad276-a9b9-4b48-a448-98d6724c6245",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C50",
+      "claim": "E. coli transformed with the IroA plasmid (IroA-E. coli) was significantly more resistant to LCN2 than WT-E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3a shows that the E. coli without the IroA plasmid transformation (referred as WT-E. coli) was sensitive to LCN2, whereas the E. coli transformed with the IroA plasmid (referred as IroA-E. coli) was significantly more resistant to LCN2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "af9cfdbc-3b30-4c7d-976a-b95d8e0c9dab",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C51",
+      "claim": "IroA-E. coli showed stronger potency in acquisition of iron ions than WT-E. coli while LCN2 was present in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The IroA-E. coli also showed stronger potency in acquisition of the iron ions than the WT-E. coli while the LCN2 was presented in the environment (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "7589e3c7-db86-449c-b026-dcd863dbe0f7",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C52",
+      "claim": "Enterobactin extracted from IroA-E. coli was more cytotoxic to cancer cells than that extracted from WT E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this observation, we found that the enterobactin (including the glycosylated form) extracted from the IroA-E. coli was more cytotoxic to the cancer cells than that extracted from the WT E. coli (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "05b4b989-aacc-488e-9fe5-bc62d9b150b7",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C53",
+      "claim": "IroA-E. coli was significantly more efficacious than WT-E. coli in mouse models of colon, breast, and melanoma cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In mouse models of colon, breast, and melanoma cancers, the IroA-E. coli was significantly more efficacious than the WT-E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3d-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "e374321c-c047-46e6-bb8b-a296dde74630",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C54",
+      "claim": "6 out of 10 mice treated by IroA-E. coli achieved complete remission in the MC38 mouse colon cancer model.",
+      "claim_type": "EXPLICIT",
+      "source": "In a MC38 mouse colon cancer model, 6 out of 10 mice treated by IroA-E. coli achieved complete remission, whereas none of the mice treated by the WT-E. coli experienced a cure (Figure 3d\u2013f, and Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3d-f and Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "3cbc0bcc-05f6-4377-bfde-1f6f1f7048a9",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C55",
+      "claim": "None of the mice treated by WT-E. coli experienced a cure in the MC38 mouse colon cancer model.",
+      "claim_type": "EXPLICIT",
+      "source": "In a MC38 mouse colon cancer model, 6 out of 10 mice treated by IroA-E. coli achieved complete remission, whereas none of the mice treated by the WT-E. coli experienced a cure (Figure 3d\u2013f, and Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3d-f and Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "1bd50d09-52d3-4a56-a7b4-4206027c35a4",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C56",
+      "claim": "LCN2 expression has been shown to elevate the aggressiveness of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be pointed out LCN2 expression has been shown to elevate the aggressiveness of breast (Yang et al., 2009), melanoma (Adler et al., 2023), and colon cancers (Chaudhary et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Yang et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "71489fbe-ebe1-418a-988f-7ca4f309995e",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C57",
+      "claim": "LCN2 expression has been shown to elevate the aggressiveness of melanoma.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be pointed out LCN2 expression has been shown to elevate the aggressiveness of breast (Yang et al., 2009), melanoma (Adler et al., 2023), and colon cancers (Chaudhary et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Adler et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "fd180273-80b4-4860-a912-6d583398cc48",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C58",
+      "claim": "LCN2 expression has been shown to elevate the aggressiveness of colon cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be pointed out LCN2 expression has been shown to elevate the aggressiveness of breast (Yang et al., 2009), melanoma (Adler et al., 2023), and colon cancers (Chaudhary et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chaudhary et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "41908226-ba66-4eb0-8967-93a4cc0fa379",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C59",
+      "claim": "Bacterial burden was undetectable in the blood for both WT-E. coli and IroA-E. coli after intravenous administration.",
+      "claim_type": "EXPLICIT",
+      "source": "For both WT-E. coli and IroA-E. coli, bacterial burden was undetectable in the blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "e2b0e426-2d14-44e2-b383-74d17f73a2c8",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C60",
+      "claim": "IroA-E. coli did not adversely affect the immune system within the circulatory system compared to WT-E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, whole blood cell analysis indicated that IroA-E. coli did not adversely affect the immune system within the circulatory system compared to WT-E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "9d6052a8-e9bf-419e-8d77-da55b6bdcb38",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C61",
+      "claim": "By day 7, all treatment groups had comparable blood cell counts to the untreated groups.",
+      "claim_type": "EXPLICIT",
+      "source": "By day 7, all treatment groups had comparable blood cell counts to the untreated (UT) groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "2833d598-2677-4c59-9fb8-37bf1645fc46",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C62",
+      "claim": "IroA-E. coli could enhance anti-tumor treatment without incurring additional risks of bacteremia or sepsis relative to WT-E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings demonstrate that IroA-E. coli could enhance anti-tumor treatment without incurring additional risks of bacteremia or sepsis relative to WT-E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the safety data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "92b0d1f8-a63c-4b48-ad31-6248f21a9ba1",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C63",
+      "claim": "Many proteins enriched in WT-E. coli colonized in tumors belong to the enterobactin biosynthesis process and iron homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "The GO-term analysis revealed that the many proteins enriched in WT-E. coli belong to the enterobactin biosynthesis process and the iron homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GO-term analysis of proteomic data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "2f1d942e-17a2-41f7-a2d8-69cb92919902",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C64",
+      "claim": "All proteins involved in enterobactin biosynthesis and iron homeostasis were expressed at a much higher level in WT-E. coli than in IroA-E. coli when colonized in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4b and Figure 4c showed the fold changes of the individual proteins in these two terms. Strikingly, all of these proteins were expressed at a much higher level in WT-E. coli than in IroA-E. coli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteomic data shown in Figure 4b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "0131e99b-d3eb-43d4-bfc2-1a4ef0844f9b",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C65",
+      "claim": "IroA-E. coli was less stressed by the iron-deficient environment in the TME.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that IroA-E. coli was less stressed by the iron-deficient environment in the TME, which is in accordance with IroA-E.coli's superior iron-scavenging ability from the glycosylated enterobactin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the proteomic data showing lower expression of iron-stress proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "aeb91636-4a35-417d-927b-917b1c4a5dd9",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C66",
+      "claim": "Two iron-related proteins in mice, transferrin and transferrin receptor, were elevated in the IroA-E. coli treatment compared to the WT-E. coli treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that two iron-related proteins in mice, transferrin and transferring receptor, were elevated in the IroA-E. coli treatment as compared to the WT-E. coli treatment (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by proteomic data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "c3c23ee0-d20a-48f1-a2cc-470e1dc70371",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C67",
+      "claim": "Transferrin and transferrin receptor are known to be up-regulated when cells sense a lack of iron in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These two proteins are known to be up-regulated when the cells sense a lack of iron in the environment (Ponka and Lok, 1999; Theil, 1990; Ponka et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ponka and Lok, 1999, Theil, 1990, and Ponka et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b11fbce9-54e6-4159-873a-98f190e6f7a4",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C68",
+      "claim": "The potent acquisition of ferric ion by IroA-E. coli posed an iron-deficient stress to the host cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding corroborates a competitive scenario between the host cells and E. coli where the potent acquisition of ferric ion by IroA-E. coli posed an iron-deficient stress to the host cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the proteomic data showing elevated transferrin and transferrin receptor in host cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "96dbf17d-ae91-46da-8b95-4331d8d6c75c",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C69",
+      "claim": "The absence of tumor growth upon rechallenge indicates the establishment of robust anticancer adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of tumor growth upon rechallenge indicates the establishment of robust anticancer adaptive immunity (Figure 5a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "0d1ef85b-727d-471e-9275-2ae400e68d40",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C70",
+      "claim": "TILs, especially CD8+ T cells, were elevated in the IroA-E. coli group compared to the WT-E. coli group.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the TILs, especially the CD8+ T cells, were elevated in the IroA-E. coli group compared to the WT-E. coli group (Figure 5b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "732a8eba-b611-4f8b-9f78-a853f4910fb3",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C71",
+      "claim": "The enhanced CD8+ T cell infiltration can be attributed to the prolonged intratumoral colonization by the IroA-E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced CD8+ T cell infiltration can be attributed to the prolonged intratumoral colonization by the IroA-E. coli (Figure 5\u2014figure supplement 1), which can confer sustained immune stimulation for immune cell recruitment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "1f848eaf-dfce-4130-9ffc-1ee356c0cdea",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C72",
+      "claim": "The anti-tumor activity of IroA-E. coli was partially weakened upon anti-CD8 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "We further performed a CD8+ T-cell depletion study, which showed that the anti-tumor activity of IroA-E. coli was partially weakened upon anti-CD8 depletion (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "fc3b4f30-cbde-4ee1-814f-84d44455d4cb",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C73",
+      "claim": "The robust tumor suppression by IroA-E. coli therapy can be attributed in part to the elicitation of tumor-specific cytotoxic T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the robust tumor suppression by the IroA-E. coli therapy can be attributed in part to the elicitation of tumor-specific cytotoxicity T cells, which can in turn provide durable anticancer immunity following bacterial clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the CD8+ T cell depletion and tumor rechallenge studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "0caadf69-09e0-4f8d-9adf-b452ab0c0ac9",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C74",
+      "claim": "E. coli possesses great tumor-targeting ability following intravenous injection in mice due to the hypoxic and immune-suppressive tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that E. coli possesses great tumor-targeting ability following intravenous injection in mice due to the hypoxic and immune-suppressive tumor microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli tumor-targeting ability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "eb8c6e6d-3a36-42dc-b311-ef2c2fedd467",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C75",
+      "claim": "The combination of E. coli and oxaliplatin synergistically suppresses tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study has also shown that the combination of E. coli and oxaliplatin synergistically suppresses the tumor growth (Lim et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lim et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "22a1d9bf-e93e-4186-80c9-83daf1862a43",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C76",
+      "claim": "All mice maintained over 90% of their weights and remained active and healthy during the course of treatments with systemic delivery of IroA-E. coli and oxaliplatin.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice maintained over 90% of their weights and remained active and healthy during the course of the treatments (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "844ce375-9db2-4a8e-ad43-f1dbd3d4e103",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C77",
+      "claim": "Intravenous injection of E. coli, either wild-type or IroA transformant, resulted in subdued anti-tumor efficacy compared to intratumoral injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the intratumoral injection, the intravenous injection of E. coli, either the wild-type or the IroA transformant, resulted in subdued anti-tumor efficacy (Figure 6c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "c0f18ff3-dd0d-4617-bbb9-785c7b8666b4",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C78",
+      "claim": "Oxaliplatin monotherapy only slightly inhibited tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the monotherapy of oxaliplatin only slightly inhibited the tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "1a3b0be2-b904-4806-916a-ebced8dc2e29",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C79",
+      "claim": "The combination of oxaliplatin with wild-type E. coli delayed tumor progression but did not achieve complete remission.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of oxaliplatin with the wild-type E. coli delayed the tumor progression but did not achieve complete remission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "c5031989-ec63-4a41-a7dd-f9b31e71f757",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C80",
+      "claim": "The combination of oxaliplatin and IroA-E. coli significantly suppressed tumor growth and achieved complete remission in 1 out of 4 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the combination of oxaliplatin and IroA-E. coli significantly suppressed the tumor growth and achieved complete remission in 1 out of 4 mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "14702b40-e50e-4ed3-9ef9-bcf2d7fe4b74",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C81",
+      "claim": "The systemic delivery of IroA-E. coli was synergistic with oxaliplatin chemotherapy in mouse tumor models.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data revealed that the systemic delivery of IroA-E. coli was synergistic with the oxaliplatin chemotherapy in the mouse tumor models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "ebf31472-80ce-411d-8867-fcf070d4207a",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C82",
+      "claim": "This work provides the first proteomic data comparing E. coli cultured in rich medium and colonized in mouse tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "This work provides the first proteomic data comparing E. coli cultured in the rich medium and colonized in the mouse tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "5554a12c-d170-4213-91b0-9b73f6030f00",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C83",
+      "claim": "The proteins involving 'the de novo synthesis of IMP' are highly enriched in E. coli grown in tumors compared to the rich medium condition.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the proteins involving 'the de novo synthesis of IMP' are highly enriched in the E. coli grown in tumors compared to the rich medium condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the proteomic data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "fbed2ca4-0f76-46e3-83f2-0a912b65ff76",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C84",
+      "claim": "When the environment is deficient of purine, bacteria need to synthesize them using de novo pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Inosine phosphate (IMP) is the precursor of purine. When the environment is deficient of purine, the bacteria need to synthesize them using de novo pathways (Rolfes and Zalkin, 1988; Cho et al., 2011; Meng et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rolfes and Zalkin, 1988, Cho et al., 2011, and Meng et al., 1990.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "51660eae-26e1-4ee0-ba33-cfcf0f0c4c81",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C85",
+      "claim": "Genes associated with de novo purine synthesis are the most critical factors for the growth of E. coli or other gram-negative bacteria in human serum.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous report by Samant et al. has shown that the genes associated with the de novo purine synthesis are the most critical factors for the growth of E. coli or other gram-negative bacteria in human serum (Samant et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Samant et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "bb833162-fce3-4e73-9f59-f9fe4b385acd",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C86",
+      "claim": "Humans control purine at a very low level in blood as a strategy of nutritional immunity to restrain bacterial proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Their data indicate that, similar to iron, humans also control the purine at a very low level in blood as a strategy of nutritional immunity in order to restrain the proliferation of bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cited work by Samant et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b6f29260-ab74-450a-a7e8-a9f1b3cd4823",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C87",
+      "claim": "Bacteria and cancer cells vie for growth within the TME.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that bacteria and cancer cells vie for growth within the TME, an enhanced bacterial adaptation to the TME may potentially improve the anti-tumor activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the competitive relationship in the TME.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "1cc50713-9bb3-4548-949e-fcdab40f6bed",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C88",
+      "claim": "An enhanced bacterial adaptation to the TME may potentially improve anti-tumor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that bacteria and cancer cells vie for growth within the TME, an enhanced bacterial adaptation to the TME may potentially improve the anti-tumor activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential therapeutic strategies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "2e2666bf-a3b3-4e3f-9ce2-9e4b275ef682",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C89",
+      "claim": "The cured mice established durable anti-tumor adaptive immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the cured mice have also established durable anti-tumor adaptive immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tumor rechallenge experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "8cc92e92-eacd-4a3d-960e-17df21b0ea23",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C90",
+      "claim": "1128 protein IDs were identified in E. coli from tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The Venn diagram of the E. coli protein IDs identified in the rich medium and in the tumor microenvironment (TME).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in the Venn diagram in Figure 1a indicating 1128 total proteins in tumor (25 unique + 1103 shared).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "81b581d9-9a27-4ea7-895c-2f2702764db7",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C91",
+      "claim": "1798 protein IDs were identified in E. coli from rich medium (LB).",
+      "claim_type": "EXPLICIT",
+      "source": "The Venn diagram of the E. coli protein IDs identified in the rich medium and in the tumor microenvironment (TME).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in the Venn diagram in Figure 1a indicating 1798 total proteins in LB (695 unique + 1103 shared).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "59b14a55-b7a9-446d-b10c-6f29e6cfe6f4",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "claim_id": "C92",
+      "claim": "532 protein IDs were enriched in LB condition and 71 protein IDs were enriched in tumor condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The volcano plot of the E. coli protein IDs quantified in the rich medium and in the TME.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in the volcano plot legend in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Proteomic analysis reveals that E. coli colonized in tumors upregulates iron-related proteins (enterobactin biosynthesis and iron homeostasis) compared to E. coli grown in rich medium, indicating that the tumor microenvironment is iron-deficient for bacteria. This is supported by LC-MS/MS data showing 71 proteins preferentially expressed in tumors, many involved in iron acquisition pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C27, C28 are directly supported by proteomic data (Figures 1d-f), showing upregulation of enterobactin synthesis and iron homeostasis proteins. The inference that tumors are iron-deficient (C3) logically follows from known E. coli iron-sensing regulation (C29). Sample sizes and statistical analyses appear adequate with biological replicates shown in hierarchical clustering (Figure 1e).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "172522cf-43ec-4fce-99bb-42e71e99006e",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "E. coli colonization in tumors induces host expression of lipocalin 2 (LCN2), a protein that sequesters bacterial enterobactin. LC-MS/MS analysis demonstrated significant upregulation of LCN2 in tumors inoculated with E. coli compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by quantitative LC-MS/MS data (Figure 1g) showing statistically significant LCN2 upregulation (p<0.01). Claims C5 and C30 about LCN2 function are established knowledge supported by appropriate citations. This represents a key host defense response to bacterial colonization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "0488a761-c097-4053-a62f-252bc2c4f7af",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Iron chelators show differential toxicity between cancer cells and E. coli, with VLX600 demonstrating the largest therapeutic window (280-fold difference, IC50 = 0.33 \u03bcM for MC38 cells vs 92.02 \u03bcM for E. coli).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by dose-response curves in Figure 2a with clear IC50 values reported. The differential sensitivity supports the therapeutic rationale. However, only one cancer cell line (MC38) was tested, limiting generalizability. Technical replicates appear adequate based on error bars.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "aba552c2-a516-4598-90e3-d6796a011c82",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Engineered E. coli expressing diguanylate cyclase (DGC) produces and secretes cyclic-di-GMP (CDG), which blocks LCN2-enterobactin binding and activates the STING pathway in macrophages. CDG secretion was confirmed by LC-MS/MS and functional activity demonstrated by enhanced IFN-\u03b2 secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by LC-MS/MS identification of CDG (Figure 2b) and bacterial survival assays (Figure 2\u2014supplement 1). Claim C40 is supported by IFN-\u03b2 ELISA data (Figure 2c) showing STING activation. The mechanism linking CDG to LCN2 blockade (C36) is supported by citation to Li et al., 2015. Multiple lines of evidence converge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "90dc6de7-df05-49cc-b00a-5f4a0abd5190",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Combination therapy of DGC-E. coli and VLX600 shows synergistic anti-tumor activity in MC38 tumor-bearing mice, achieving complete remission in 2/4 mice and establishing adaptive immunity. Monotherapies showed limited efficacy, and wild-type E. coli did not synergize with VLX600.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by tumor growth curves and survival data (Figure 2e-f). The requirement for CDG expression (C45) is demonstrated by lack of synergy with wild-type E. coli. Adaptive immunity (C46) is supported by tumor rechallenge data (Figure 2\u2014supplement 2). Sample size is small (n=4) but complete remission in 50% is notable. Statistical significance is indicated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Engineering E. coli with the IroA gene cluster enables synthesis of glycosylated enterobactin (salmochelin), which resists LCN2 sequestration through steric hindrance. IroA-E. coli demonstrates enhanced LCN2 resistance, superior iron acquisition, and increased cytotoxicity to cancer cells compared to wild-type E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by bacterial viability assays (Figure 3a) showing dose-dependent LCN2 resistance. Iron acquisition (C51) is demonstrated by CAS assay (Figure 3b). Enhanced cytotoxicity (C52) is shown in Figure 3c. The mechanism (C6, C47-C48) is established knowledge. Multiple complementary assays provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "745d1486-198d-421e-9785-1bd1711c7261",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IroA-E. coli demonstrates significantly improved anti-tumor efficacy compared to wild-type E. coli across multiple mouse tumor models (MC38 colon, E0771 breast, B16F10 melanoma), achieving complete remission in 6/10 MC38-bearing mice versus 0/10 for wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 are supported by tumor growth curves and survival data across three cancer models (Figures 3d-j). Statistical significance is indicated (p<0.01, p<0.001). Sample sizes are adequate (n=10 for MC38). Individual mouse data in supplementary figures strengthen the result. The consistency across multiple tumor types is notable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "bbebe9d5-cd06-44ad-bec0-9a448e273a65",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IroA-E. coli demonstrates comparable safety to wild-type E. coli following intravenous administration, with no detectable bacteremia and no adverse effects on blood cell counts by day 7 post-injection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by bacterial burden measurements (Figure 3k) and complete blood counts (Figure 3l) at multiple timepoints. The conclusion (C62) appropriately reflects the data showing no additional safety concerns. However, longer-term safety assessment and organ toxicity evaluation would strengthen this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "50655a71-bd46-41bb-b31e-f51cb6f5a922",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparative proteomic analysis of WT-E. coli versus IroA-E. coli colonized in tumors reveals that IroA-E. coli expresses significantly lower levels of iron-stress proteins (enterobactin biosynthesis and iron homeostasis), indicating reduced iron deficiency stress in the tumor microenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by proteomic data showing differential protein expression (Figure 4a-c). All iron-related proteins show higher expression in WT versus IroA bacteria, supporting reduced stress in IroA-E. coli (C65). The inference is logical given known regulation of these proteins by iron availability. GO-term analysis appropriately categorizes the proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "c777345e-78a3-4990-bfe7-be45d0835f4e",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IroA-E. coli treatment induces iron deficiency stress in host tumor cells, evidenced by elevated transferrin and transferrin receptor expression compared to WT-E. coli treatment, indicating competitive iron acquisition by the engineered bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by proteomic data (Figure 4d) showing elevated host transferrin/transferrin receptor. The interpretation (C68) that this reflects bacterial iron competition is reasonable given established knowledge (C67) about these proteins' regulation by iron availability. This provides evidence for the proposed mechanism of bacterial-mediated iron depletion affecting tumor cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IroA-E. coli therapy establishes durable adaptive anti-tumor immunity mediated in part by CD8+ T cells. Cured mice resist tumor rechallenge, show elevated tumor-infiltrating CD8+ T cells, and anti-tumor activity is partially reduced by CD8+ T cell depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C69, C89 are supported by tumor rechallenge data (Figure 5a) showing complete protection. Claim C70 is supported by flow cytometry (Figure 5b) showing elevated CD8+ T cells. Claim C72 is supported by CD8 depletion experiments (Figure 5c) demonstrating partial dependence. The inference (C73) is reasonable but appropriately qualified as 'in part' since depletion only partially reduced efficacy. Multiple complementary approaches strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "a511def3-cbd8-4035-a80c-5d5562b56e75",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Systemic (intravenous) delivery of IroA-E. coli synergizes with oxaliplatin chemotherapy in MC38 tumor-bearing mice, achieving complete remission in 1/4 mice with acceptable tolerability (>90% body weight maintained). Monotherapies and WT-E. coli combinations showed inferior efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 are supported by tumor growth curves, survival data, and body weight measurements (Figure 6). The synergy is evident from comparison of combination versus monotherapies. However, sample size is small (n=4), and only 25% complete remission rate is modest. The subdued efficacy of IV versus intratumoral delivery (C77) is an important observation. Statistical significance is indicated for key comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "4349cd8c-3e84-4438-9b39-d2cae2c40f1f",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This study provides the first proteomic comparison of E. coli in tumors versus rich medium, revealing upregulation of de novo IMP synthesis proteins in tumor-colonized bacteria, suggesting purine limitation as another nutritional immunity mechanism beyond iron restriction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 about novelty appears reasonable given the specific comparison. Claim C83 is supported by the proteomic data. Claims C84-C86 appropriately cite prior work establishing the biological significance of purine synthesis upregulation. This represents an important secondary finding beyond the main iron-focused results, though it is not experimentally pursued further in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "c058f111-e6f3-48ff-a630-f79688d01354",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing that bacteria can target tumors, offer therapeutic advantages, face nutritional immunity in the host, and that E. coli adaptation to the tumor microenvironment is poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C10-C21) represent established knowledge appropriately supported by citations to prior literature. Claim C17 correctly identifies the knowledge gap addressed by this study. These provide necessary context but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "d56cd9c2-689c-4a0b-af98-f21ceed6b424",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Contextual claims about LCN2's role in cancer aggressiveness and E. coli's tumor-targeting ability following intravenous injection, supported by citations to prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 about LCN2 in cancer and C74-C75 about E. coli tumor targeting are appropriately cited to prior literature. These provide important context for interpreting the therapeutic results but represent established knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "06561c32-e39b-4811-9ef7-6a1c4196a518",
+      "content_id": "c91e23a5-9e97-4dfd-ad45-13517f709301",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Speculative claim that enhanced bacterial adaptation to the tumor microenvironment may improve anti-tumor activity, based on the competitive relationship between bacteria and cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is a reasonable general statement about competition in the TME. Claim C88 is appropriately qualified as speculative ('may potentially'). While the overall study results support this hypothesis, these specific claims are presented as rationale rather than demonstrated conclusions. The speculation is reasonable given the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "0678a9cd-9fde-4217-9008-aabacf5ae72c",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Proteomic analysis revealed that E. coli colonized in tumors upregulated iron-related processes (enterobactin biosynthesis and iron homeostasis) compared to E. coli grown in rich medium, indicating that the tumor is an iron-deficient environment for bacteria.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers found the proteomic evidence convincing. The editor states 'the evidence presented is convincing' and Reviewer 1 notes 'the genetic and proteomic data are convincing.' Reviewer 3 describes the findings as successful in showing iron regulation effects. No concerns were raised about the proteomic methodology or interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "0c3c82a0-c753-4d56-b348-03b6568ac9c5",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "E. coli colonization in tumors led to increased expression of host protein LCN2, which can sequester bacterial enterobactin.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted this finding without challenge. The observation of LCN2 upregulation is treated as part of the convincing evidence base by all reviewers, with no methodological concerns raised about the LC-MS/MS detection of LCN2.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "97e3249e-0d37-4e0c-b55a-f9089af150f3",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Iron chelators showed differential cytotoxicity between cancer cells and E. coli, with VLX600 providing the largest therapeutic window (280-fold difference, IC50 0.33 \u03bcM for cancer cells vs 92.02 \u03bcM for E. coli).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers did not directly challenge these in vitro findings, Reviewer 1 raised a critical concern about the lack of direct iron concentration measurements, stating 'one flaw here is a lack of the measurement of iron concentration' and suggesting 'a direct measurement of iron concentration will show the effect of CDG on iron uptake, thus complementing the missing link.' This indicates the mechanistic interpretation requires additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "af0bd87e-4aa2-4993-a991-3121a1ed1395",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "DGC-E. coli expressing cyclic di-GMP (CDG) combined with iron chelator VLX600 showed synergistic anti-tumor efficacy, achieving complete remission in 2 out of 4 mice and establishing adaptive immunity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 found the experiment 'very nice and promising' but identified a significant flaw: 'a lack of the measurement of iron concentration' and suggested 'a possible explanation could be that CDG acts in another manner, unrelated to iron uptake.' This indicates the mechanism of synergy is not fully established, though the therapeutic effect itself is accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "294849b2-56ff-430c-a665-cd35170b942c",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "IroA-E. coli engineered to produce glycosylated enterobactin showed enhanced resistance to LCN2, stronger iron acquisition, and greater cytotoxicity to cancer cells compared to wild-type E. coli.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor specifically highlighted that 'the authors showed upregulation of iron uptake of bacteria significantly inhibits tumor growth in vivo.' Reviewer 2 states 'the authors provide strong evidence' for the iron competition mechanism. The in vitro characterization of IroA-E. coli was not challenged by any reviewer.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "4d23d4ce-5a5c-4152-8531-3cab916d78be",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "IroA-E. coli demonstrated significantly improved anti-tumor efficacy compared to wild-type E. coli across multiple mouse tumor models (colon, breast, melanoma), achieving complete remission in 6 out of 10 mice in the MC38 colon cancer model while wild-type achieved none.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accepted the in vivo efficacy data. The editor notes the study 'reveal[s] the importance of iron uptake in bacterial therapy for cancer' and Reviewer 1 states 'I find the findings in the manuscript novel and the evidence convincing.' Reviewer 4 confirms 'they are successful in showing that manipulation of iron regulation during nutritional immunity does affect the virulence of the bacteria, and in turn the tumor.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "92b36f96-5cd1-42a3-a4a8-37cd4749e32f",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "IroA-E. coli showed comparable safety profile to wild-type E. coli with undetectable bacterial burden in blood and no adverse effects on the immune system, suggesting no additional risk of bacteremia or sepsis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raised a significant safety concern: 'As engineered E. coli upregulate their function to uptake iron, they may increase the likelihood of escaping from nutritional immunity... Would this raise the chance of developing sepsis? Do authors think that it is safe to administrate these engineered bacteria in mice or humans?' This indicates the safety data presented may be insufficient to fully address potential risks.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "07d08cf6-10a7-4bf2-a5c6-94358a2cacab",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Proteomic comparison showed that WT-E. coli expressed iron-stress proteins at much higher levels than IroA-E. coli when colonized in tumors, indicating IroA-E. coli was less stressed by the iron-deficient tumor environment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mechanistic finding was accepted by reviewers as part of the convincing proteomic evidence. Reviewer 1 specifically noted 'the genetic and proteomic data are convincing' without raising concerns about this comparative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "85dd3aa0-a965-47b0-a2fb-ecfc94b84725",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "IroA-E. coli treatment elevated host transferrin and transferrin receptor expression in tumors, indicating that enhanced bacterial iron acquisition created iron-deficient stress in tumor cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While this interpretation supports the iron competition model, Reviewer 1's request for 'direct quantify the iron concentration in (1) E. coli in different growth environments, and (2) tumor microenvironment' suggests that indirect evidence through transferrin/receptor upregulation may be insufficient without direct iron measurements to confirm the competitive mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "2a0223ce-a911-4086-bf02-35ec15d56440",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "IroA-E. coli treatment established durable anti-tumor adaptive immunity mediated by CD8+ T cells, as demonstrated by tumor rechallenge resistance and partial loss of efficacy upon CD8+ T cell depletion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 requested more mechanistic detail: 'I would recommend the authors characterize the CD8+ T cells a little more, as the mechanism now seems quite elusive. What signals or memories do CD8+ T cells acquire after IroA-E. coli treatment to confer their long-term immunogenicity?' This indicates the immune mechanism is incompletely characterized despite the statistical significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Systemic intravenous delivery of IroA-E. coli combined with oxaliplatin chemotherapy showed synergistic anti-tumor effects, achieving complete remission in 1 out of 4 mice with maintained safety (>90% body weight retention).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these combination therapy results without specific critique. Reviewer 4 notes the authors were 'successful in showing that manipulation of iron regulation during nutritional immunity does affect the virulence of the bacteria, and in turn the tumor,' which encompasses the combination therapy findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "ecc33fdb-92b9-4ff0-9715-7cfcb3bdd318",
+      "content_id": "4c4a3f81-9e2d-4951-b5d4-4b76b750f013",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Proteomic analysis revealed upregulation of de novo IMP synthesis proteins in tumor-colonized E. coli, suggesting purine deficiency as another nutritional immunity mechanism in the tumor microenvironment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This observation from the proteomic data was not challenged by reviewers. Reviewer 1 found the proteomic data convincing overall, and this finding represents an additional insight from the same accepted dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cb5aa3c6-a23a-4f9c-a9fb-590fd3a71f4a",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "5d39e24b-f2dc-4671-b0c7-c2888edb500d",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "6e75de58-b0c9-47fa-a8e8-1497462fc288",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "ae31544e-5493-41b9-a42f-02a678438894",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "d9f45423-3c36-4b0a-94dc-e6d4d42a8c59",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "2c75ee2b-187b-46bc-9b6e-1496732a465c",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "9d3a06c8-1afa-4d63-a01e-84e8aca33deb",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "ce36f89a-851f-46e2-a63b-55dc49d94d0f",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "c2f2ace6-f566-4d77-ab75-651e239a8fee",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "a2b79d2f-8385-4132-a57a-156753bf309f",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "8cc92e92-eacd-4a3d-960e-17df21b0ea23",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "81b581d9-9a27-4ea7-895c-2f2702764db7",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "59b14a55-b7a9-446d-b10c-6f29e6cfe6f4",
+      "result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2"
+    },
+    {
+      "claim_id": "1ce283ad-e70f-4b68-8f74-7b28a9a2f822",
+      "result_id": "172522cf-43ec-4fce-99bb-42e71e99006e"
+    },
+    {
+      "claim_id": "71455ff4-d8d7-4169-98d8-5cf302b52390",
+      "result_id": "172522cf-43ec-4fce-99bb-42e71e99006e"
+    },
+    {
+      "claim_id": "d13827fa-01d1-47e6-a1b0-ef97af0b48a4",
+      "result_id": "172522cf-43ec-4fce-99bb-42e71e99006e"
+    },
+    {
+      "claim_id": "deb28954-ae04-4f19-82b6-00be09ce592e",
+      "result_id": "172522cf-43ec-4fce-99bb-42e71e99006e"
+    },
+    {
+      "claim_id": "b0a8ea83-620e-43f8-9c7f-2577503f3a8d",
+      "result_id": "0488a761-c097-4053-a62f-252bc2c4f7af"
+    },
+    {
+      "claim_id": "6a67a9f5-e939-430d-afae-5e37323a6088",
+      "result_id": "0488a761-c097-4053-a62f-252bc2c4f7af"
+    },
+    {
+      "claim_id": "c2d7c878-adf7-4ff4-bc79-73ddae644602",
+      "result_id": "0488a761-c097-4053-a62f-252bc2c4f7af"
+    },
+    {
+      "claim_id": "7f512ce5-dcdb-4d00-b49c-f5b11976b691",
+      "result_id": "0488a761-c097-4053-a62f-252bc2c4f7af"
+    },
+    {
+      "claim_id": "11248a78-a773-4015-b798-41c9a62bed57",
+      "result_id": "aba552c2-a516-4598-90e3-d6796a011c82"
+    },
+    {
+      "claim_id": "b0c470ee-73b4-49b2-a66c-554d5acb86c4",
+      "result_id": "aba552c2-a516-4598-90e3-d6796a011c82"
+    },
+    {
+      "claim_id": "729d86e0-b66f-40fd-901f-2e1c550162b3",
+      "result_id": "aba552c2-a516-4598-90e3-d6796a011c82"
+    },
+    {
+      "claim_id": "adbeddb2-9cb6-478d-b4e2-5532b4eae389",
+      "result_id": "aba552c2-a516-4598-90e3-d6796a011c82"
+    },
+    {
+      "claim_id": "fa1c9e36-6530-4a2e-a1db-54833d4a2386",
+      "result_id": "aba552c2-a516-4598-90e3-d6796a011c82"
+    },
+    {
+      "claim_id": "ae58124f-90aa-49a0-a2b6-6b5164806aad",
+      "result_id": "90dc6de7-df05-49cc-b00a-5f4a0abd5190"
+    },
+    {
+      "claim_id": "19da8812-d6f0-4718-be1b-352b70ecfe3c",
+      "result_id": "90dc6de7-df05-49cc-b00a-5f4a0abd5190"
+    },
+    {
+      "claim_id": "439fe8ad-fe32-4c48-a7af-45edfbb4ed69",
+      "result_id": "90dc6de7-df05-49cc-b00a-5f4a0abd5190"
+    },
+    {
+      "claim_id": "5ab9bf2d-b70d-454b-957e-9ed04e2bf80a",
+      "result_id": "90dc6de7-df05-49cc-b00a-5f4a0abd5190"
+    },
+    {
+      "claim_id": "9970118a-d584-48f4-ab94-356062161cd0",
+      "result_id": "90dc6de7-df05-49cc-b00a-5f4a0abd5190"
+    },
+    {
+      "claim_id": "b7a41743-e767-4b38-97f0-bc8962152d1f",
+      "result_id": "90dc6de7-df05-49cc-b00a-5f4a0abd5190"
+    },
+    {
+      "claim_id": "be45e652-ca01-4d1f-b636-bdedaa45c424",
+      "result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a"
+    },
+    {
+      "claim_id": "5b91f909-4486-4a45-93e6-60cd4c64bccd",
+      "result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a"
+    },
+    {
+      "claim_id": "3abaeab6-335a-435d-b0a0-36f5139ac490",
+      "result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a"
+    },
+    {
+      "claim_id": "a86d8540-667f-4dae-9962-08087ebd5aea",
+      "result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a"
+    },
+    {
+      "claim_id": "da0e942f-704e-424c-ab00-df1fe5c1b142",
+      "result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a"
+    },
+    {
+      "claim_id": "5c0ad276-a9b9-4b48-a448-98d6724c6245",
+      "result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a"
+    },
+    {
+      "claim_id": "af9cfdbc-3b30-4c7d-976a-b95d8e0c9dab",
+      "result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a"
+    },
+    {
+      "claim_id": "7589e3c7-db86-449c-b026-dcd863dbe0f7",
+      "result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a"
+    },
+    {
+      "claim_id": "f2a886c6-b4f4-400d-a814-3c3de5033d44",
+      "result_id": "745d1486-198d-421e-9785-1bd1711c7261"
+    },
+    {
+      "claim_id": "05b4b989-aacc-488e-9fe5-bc62d9b150b7",
+      "result_id": "745d1486-198d-421e-9785-1bd1711c7261"
+    },
+    {
+      "claim_id": "e374321c-c047-46e6-bb8b-a296dde74630",
+      "result_id": "745d1486-198d-421e-9785-1bd1711c7261"
+    },
+    {
+      "claim_id": "3cbc0bcc-05f6-4377-bfde-1f6f1f7048a9",
+      "result_id": "745d1486-198d-421e-9785-1bd1711c7261"
+    },
+    {
+      "claim_id": "41908226-ba66-4eb0-8967-93a4cc0fa379",
+      "result_id": "bbebe9d5-cd06-44ad-bec0-9a448e273a65"
+    },
+    {
+      "claim_id": "e2b0e426-2d14-44e2-b383-74d17f73a2c8",
+      "result_id": "bbebe9d5-cd06-44ad-bec0-9a448e273a65"
+    },
+    {
+      "claim_id": "9d6052a8-e9bf-419e-8d77-da55b6bdcb38",
+      "result_id": "bbebe9d5-cd06-44ad-bec0-9a448e273a65"
+    },
+    {
+      "claim_id": "2833d598-2677-4c59-9fb8-37bf1645fc46",
+      "result_id": "bbebe9d5-cd06-44ad-bec0-9a448e273a65"
+    },
+    {
+      "claim_id": "92b0d1f8-a63c-4b48-ad31-6248f21a9ba1",
+      "result_id": "50655a71-bd46-41bb-b31e-f51cb6f5a922"
+    },
+    {
+      "claim_id": "2f1d942e-17a2-41f7-a2d8-69cb92919902",
+      "result_id": "50655a71-bd46-41bb-b31e-f51cb6f5a922"
+    },
+    {
+      "claim_id": "0131e99b-d3eb-43d4-bfc2-1a4ef0844f9b",
+      "result_id": "50655a71-bd46-41bb-b31e-f51cb6f5a922"
+    },
+    {
+      "claim_id": "aeb91636-4a35-417d-927b-917b1c4a5dd9",
+      "result_id": "c777345e-78a3-4990-bfe7-be45d0835f4e"
+    },
+    {
+      "claim_id": "c3c23ee0-d20a-48f1-a2cc-470e1dc70371",
+      "result_id": "c777345e-78a3-4990-bfe7-be45d0835f4e"
+    },
+    {
+      "claim_id": "b11fbce9-54e6-4159-873a-98f190e6f7a4",
+      "result_id": "c777345e-78a3-4990-bfe7-be45d0835f4e"
+    },
+    {
+      "claim_id": "063b3fe4-a738-4e93-b998-21d787e3d06a",
+      "result_id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa"
+    },
+    {
+      "claim_id": "96dbf17d-ae91-46da-8b95-4331d8d6c75c",
+      "result_id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa"
+    },
+    {
+      "claim_id": "0d1ef85b-727d-471e-9275-2ae400e68d40",
+      "result_id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa"
+    },
+    {
+      "claim_id": "732a8eba-b611-4f8b-9f78-a853f4910fb3",
+      "result_id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa"
+    },
+    {
+      "claim_id": "1f848eaf-dfce-4130-9ffc-1ee356c0cdea",
+      "result_id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa"
+    },
+    {
+      "claim_id": "fc3b4f30-cbde-4ee1-814f-84d44455d4cb",
+      "result_id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa"
+    },
+    {
+      "claim_id": "2e2666bf-a3b3-4e3f-9ce2-9e4b275ef682",
+      "result_id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa"
+    },
+    {
+      "claim_id": "22a1d9bf-e93e-4186-80c9-83daf1862a43",
+      "result_id": "a511def3-cbd8-4035-a80c-5d5562b56e75"
+    },
+    {
+      "claim_id": "844ce375-9db2-4a8e-ad43-f1dbd3d4e103",
+      "result_id": "a511def3-cbd8-4035-a80c-5d5562b56e75"
+    },
+    {
+      "claim_id": "c0f18ff3-dd0d-4617-bbb9-785c7b8666b4",
+      "result_id": "a511def3-cbd8-4035-a80c-5d5562b56e75"
+    },
+    {
+      "claim_id": "1a3b0be2-b904-4806-916a-ebced8dc2e29",
+      "result_id": "a511def3-cbd8-4035-a80c-5d5562b56e75"
+    },
+    {
+      "claim_id": "c5031989-ec63-4a41-a7dd-f9b31e71f757",
+      "result_id": "a511def3-cbd8-4035-a80c-5d5562b56e75"
+    },
+    {
+      "claim_id": "14702b40-e50e-4ed3-9ef9-bcf2d7fe4b74",
+      "result_id": "a511def3-cbd8-4035-a80c-5d5562b56e75"
+    },
+    {
+      "claim_id": "ebf31472-80ce-411d-8867-fcf070d4207a",
+      "result_id": "4349cd8c-3e84-4438-9b39-d2cae2c40f1f"
+    },
+    {
+      "claim_id": "5554a12c-d170-4213-91b0-9b73f6030f00",
+      "result_id": "4349cd8c-3e84-4438-9b39-d2cae2c40f1f"
+    },
+    {
+      "claim_id": "fbed2ca4-0f76-46e3-83f2-0a912b65ff76",
+      "result_id": "4349cd8c-3e84-4438-9b39-d2cae2c40f1f"
+    },
+    {
+      "claim_id": "51660eae-26e1-4ee0-ba33-cfcf0f0c4c81",
+      "result_id": "4349cd8c-3e84-4438-9b39-d2cae2c40f1f"
+    },
+    {
+      "claim_id": "bb833162-fce3-4e73-9f59-f9fe4b385acd",
+      "result_id": "4349cd8c-3e84-4438-9b39-d2cae2c40f1f"
+    },
+    {
+      "claim_id": "b8a0e5af-e3e9-4dfa-b7ee-f79e33bb43e5",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "d92821b0-7727-4527-8775-b43e62c78a93",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "4cf7c9e3-28e2-44f5-8d89-a70c173c761a",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "698052ed-f37d-43a6-9e4d-0d5e553ff5c7",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "d6eb8ae7-9647-475c-8a33-1dc4fb8051b5",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "b3a1fb65-561d-4638-b141-5325b9829fdc",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "fcc18ab6-253a-4873-b871-162e605ee868",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "0a85d76c-d56c-422b-ac9e-5f153db8050c",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "0cafe9ae-c16c-4c6b-8680-2eaa975f26a1",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "b187b61f-155a-44e4-9ddc-0d054f22222c",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "bc818885-39a5-49ba-ab60-293cd0251fb8",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "a5a267a1-972f-4d56-bd26-e7b23ce4fdef",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "49d7d004-a0b2-409a-a64d-58c13bafb918",
+      "result_id": "c058f111-e6f3-48ff-a630-f79688d01354"
+    },
+    {
+      "claim_id": "1bd50d09-52d3-4a56-a7b4-4206027c35a4",
+      "result_id": "d56cd9c2-689c-4a0b-af98-f21ceed6b424"
+    },
+    {
+      "claim_id": "71489fbe-ebe1-418a-988f-7ca4f309995e",
+      "result_id": "d56cd9c2-689c-4a0b-af98-f21ceed6b424"
+    },
+    {
+      "claim_id": "fd180273-80b4-4860-a912-6d583398cc48",
+      "result_id": "d56cd9c2-689c-4a0b-af98-f21ceed6b424"
+    },
+    {
+      "claim_id": "0caadf69-09e0-4f8d-9adf-b452ab0c0ac9",
+      "result_id": "d56cd9c2-689c-4a0b-af98-f21ceed6b424"
+    },
+    {
+      "claim_id": "eb8c6e6d-3a36-42dc-b311-ef2c2fedd467",
+      "result_id": "d56cd9c2-689c-4a0b-af98-f21ceed6b424"
+    },
+    {
+      "claim_id": "b6f29260-ab74-450a-a7e8-a9f1b3cd4823",
+      "result_id": "06561c32-e39b-4811-9ef7-6a1c4196a518"
+    },
+    {
+      "claim_id": "1cc50713-9bb3-4548-949e-fcdab40f6bed",
+      "result_id": "06561c32-e39b-4811-9ef7-6a1c4196a518"
+    },
+    {
+      "claim_id": "cb5aa3c6-a23a-4f9c-a9fb-590fd3a71f4a",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "5d39e24b-f2dc-4671-b0c7-c2888edb500d",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "6e75de58-b0c9-47fa-a8e8-1497462fc288",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "ae31544e-5493-41b9-a42f-02a678438894",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "d9f45423-3c36-4b0a-94dc-e6d4d42a8c59",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "2c75ee2b-187b-46bc-9b6e-1496732a465c",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "9d3a06c8-1afa-4d63-a01e-84e8aca33deb",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "ce36f89a-851f-46e2-a63b-55dc49d94d0f",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "c2f2ace6-f566-4d77-ab75-651e239a8fee",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "a2b79d2f-8385-4132-a57a-156753bf309f",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "ebf31472-80ce-411d-8867-fcf070d4207a",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "8cc92e92-eacd-4a3d-960e-17df21b0ea23",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "81b581d9-9a27-4ea7-895c-2f2702764db7",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "59b14a55-b7a9-446d-b10c-6f29e6cfe6f4",
+      "result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c"
+    },
+    {
+      "claim_id": "1ce283ad-e70f-4b68-8f74-7b28a9a2f822",
+      "result_id": "0c3c82a0-c753-4d56-b348-03b6568ac9c5"
+    },
+    {
+      "claim_id": "deb28954-ae04-4f19-82b6-00be09ce592e",
+      "result_id": "0c3c82a0-c753-4d56-b348-03b6568ac9c5"
+    },
+    {
+      "claim_id": "b0a8ea83-620e-43f8-9c7f-2577503f3a8d",
+      "result_id": "97e3249e-0d37-4e0c-b55a-f9089af150f3"
+    },
+    {
+      "claim_id": "6a67a9f5-e939-430d-afae-5e37323a6088",
+      "result_id": "97e3249e-0d37-4e0c-b55a-f9089af150f3"
+    },
+    {
+      "claim_id": "c2d7c878-adf7-4ff4-bc79-73ddae644602",
+      "result_id": "97e3249e-0d37-4e0c-b55a-f9089af150f3"
+    },
+    {
+      "claim_id": "7f512ce5-dcdb-4d00-b49c-f5b11976b691",
+      "result_id": "97e3249e-0d37-4e0c-b55a-f9089af150f3"
+    },
+    {
+      "claim_id": "11248a78-a773-4015-b798-41c9a62bed57",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "b0c470ee-73b4-49b2-a66c-554d5acb86c4",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "729d86e0-b66f-40fd-901f-2e1c550162b3",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "fa1c9e36-6530-4a2e-a1db-54833d4a2386",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "ae58124f-90aa-49a0-a2b6-6b5164806aad",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "19da8812-d6f0-4718-be1b-352b70ecfe3c",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "439fe8ad-fe32-4c48-a7af-45edfbb4ed69",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "5ab9bf2d-b70d-454b-957e-9ed04e2bf80a",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "9970118a-d584-48f4-ab94-356062161cd0",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "b7a41743-e767-4b38-97f0-bc8962152d1f",
+      "result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395"
+    },
+    {
+      "claim_id": "be45e652-ca01-4d1f-b636-bdedaa45c424",
+      "result_id": "294849b2-56ff-430c-a665-cd35170b942c"
+    },
+    {
+      "claim_id": "5b91f909-4486-4a45-93e6-60cd4c64bccd",
+      "result_id": "294849b2-56ff-430c-a665-cd35170b942c"
+    },
+    {
+      "claim_id": "3abaeab6-335a-435d-b0a0-36f5139ac490",
+      "result_id": "294849b2-56ff-430c-a665-cd35170b942c"
+    },
+    {
+      "claim_id": "a86d8540-667f-4dae-9962-08087ebd5aea",
+      "result_id": "294849b2-56ff-430c-a665-cd35170b942c"
+    },
+    {
+      "claim_id": "da0e942f-704e-424c-ab00-df1fe5c1b142",
+      "result_id": "294849b2-56ff-430c-a665-cd35170b942c"
+    },
+    {
+      "claim_id": "5c0ad276-a9b9-4b48-a448-98d6724c6245",
+      "result_id": "294849b2-56ff-430c-a665-cd35170b942c"
+    },
+    {
+      "claim_id": "af9cfdbc-3b30-4c7d-976a-b95d8e0c9dab",
+      "result_id": "294849b2-56ff-430c-a665-cd35170b942c"
+    },
+    {
+      "claim_id": "7589e3c7-db86-449c-b026-dcd863dbe0f7",
+      "result_id": "294849b2-56ff-430c-a665-cd35170b942c"
+    },
+    {
+      "claim_id": "f2a886c6-b4f4-400d-a814-3c3de5033d44",
+      "result_id": "4d23d4ce-5a5c-4152-8531-3cab916d78be"
+    },
+    {
+      "claim_id": "05b4b989-aacc-488e-9fe5-bc62d9b150b7",
+      "result_id": "4d23d4ce-5a5c-4152-8531-3cab916d78be"
+    },
+    {
+      "claim_id": "e374321c-c047-46e6-bb8b-a296dde74630",
+      "result_id": "4d23d4ce-5a5c-4152-8531-3cab916d78be"
+    },
+    {
+      "claim_id": "3cbc0bcc-05f6-4377-bfde-1f6f1f7048a9",
+      "result_id": "4d23d4ce-5a5c-4152-8531-3cab916d78be"
+    },
+    {
+      "claim_id": "41908226-ba66-4eb0-8967-93a4cc0fa379",
+      "result_id": "92b36f96-5cd1-42a3-a4a8-37cd4749e32f"
+    },
+    {
+      "claim_id": "e2b0e426-2d14-44e2-b383-74d17f73a2c8",
+      "result_id": "92b36f96-5cd1-42a3-a4a8-37cd4749e32f"
+    },
+    {
+      "claim_id": "9d6052a8-e9bf-419e-8d77-da55b6bdcb38",
+      "result_id": "92b36f96-5cd1-42a3-a4a8-37cd4749e32f"
+    },
+    {
+      "claim_id": "2833d598-2677-4c59-9fb8-37bf1645fc46",
+      "result_id": "92b36f96-5cd1-42a3-a4a8-37cd4749e32f"
+    },
+    {
+      "claim_id": "92b0d1f8-a63c-4b48-ad31-6248f21a9ba1",
+      "result_id": "07d08cf6-10a7-4bf2-a5c6-94358a2cacab"
+    },
+    {
+      "claim_id": "2f1d942e-17a2-41f7-a2d8-69cb92919902",
+      "result_id": "07d08cf6-10a7-4bf2-a5c6-94358a2cacab"
+    },
+    {
+      "claim_id": "0131e99b-d3eb-43d4-bfc2-1a4ef0844f9b",
+      "result_id": "07d08cf6-10a7-4bf2-a5c6-94358a2cacab"
+    },
+    {
+      "claim_id": "aeb91636-4a35-417d-927b-917b1c4a5dd9",
+      "result_id": "85dd3aa0-a965-47b0-a2fb-ecfc94b84725"
+    },
+    {
+      "claim_id": "b11fbce9-54e6-4159-873a-98f190e6f7a4",
+      "result_id": "85dd3aa0-a965-47b0-a2fb-ecfc94b84725"
+    },
+    {
+      "claim_id": "063b3fe4-a738-4e93-b998-21d787e3d06a",
+      "result_id": "2a0223ce-a911-4086-bf02-35ec15d56440"
+    },
+    {
+      "claim_id": "96dbf17d-ae91-46da-8b95-4331d8d6c75c",
+      "result_id": "2a0223ce-a911-4086-bf02-35ec15d56440"
+    },
+    {
+      "claim_id": "0d1ef85b-727d-471e-9275-2ae400e68d40",
+      "result_id": "2a0223ce-a911-4086-bf02-35ec15d56440"
+    },
+    {
+      "claim_id": "732a8eba-b611-4f8b-9f78-a853f4910fb3",
+      "result_id": "2a0223ce-a911-4086-bf02-35ec15d56440"
+    },
+    {
+      "claim_id": "1f848eaf-dfce-4130-9ffc-1ee356c0cdea",
+      "result_id": "2a0223ce-a911-4086-bf02-35ec15d56440"
+    },
+    {
+      "claim_id": "fc3b4f30-cbde-4ee1-814f-84d44455d4cb",
+      "result_id": "2a0223ce-a911-4086-bf02-35ec15d56440"
+    },
+    {
+      "claim_id": "2e2666bf-a3b3-4e3f-9ce2-9e4b275ef682",
+      "result_id": "2a0223ce-a911-4086-bf02-35ec15d56440"
+    },
+    {
+      "claim_id": "eb8c6e6d-3a36-42dc-b311-ef2c2fedd467",
+      "result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9"
+    },
+    {
+      "claim_id": "22a1d9bf-e93e-4186-80c9-83daf1862a43",
+      "result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9"
+    },
+    {
+      "claim_id": "844ce375-9db2-4a8e-ad43-f1dbd3d4e103",
+      "result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9"
+    },
+    {
+      "claim_id": "c0f18ff3-dd0d-4617-bbb9-785c7b8666b4",
+      "result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9"
+    },
+    {
+      "claim_id": "1a3b0be2-b904-4806-916a-ebced8dc2e29",
+      "result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9"
+    },
+    {
+      "claim_id": "c5031989-ec63-4a41-a7dd-f9b31e71f757",
+      "result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9"
+    },
+    {
+      "claim_id": "14702b40-e50e-4ed3-9ef9-bcf2d7fe4b74",
+      "result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9"
+    },
+    {
+      "claim_id": "5554a12c-d170-4213-91b0-9b73f6030f00",
+      "result_id": "ecc33fdb-92b9-4ff0-9715-7cfcb3bdd318"
+    },
+    {
+      "claim_id": "fbed2ca4-0f76-46e3-83f2-0a912b65ff76",
+      "result_id": "ecc33fdb-92b9-4ff0-9715-7cfcb3bdd318"
+    },
+    {
+      "claim_id": "51660eae-26e1-4ee0-ba33-cfcf0f0c4c81",
+      "result_id": "ecc33fdb-92b9-4ff0-9715-7cfcb3bdd318"
+    },
+    {
+      "claim_id": "bb833162-fce3-4e73-9f59-f9fe4b385acd",
+      "result_id": "ecc33fdb-92b9-4ff0-9715-7cfcb3bdd318"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "e2076208-71b8-4989-9c46-566989cdf882",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "1a35753b-cfe2-4c93-bde6-46793b90b8f2",
+      "peer_result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations find the proteomic evidence for iron-deficiency and enterobactin synthesis (C2, C27, C28, C90-C92) convincing and supported. OpenEval notes adequate statistical analyses and sample sizes, while peer reviewers describe the genetic and proteomic data as convincing without methodological concerns. Both support the inference of tumor iron-deficiency (C3). Claim C82 appears in peer R1 but is evaluated separately by OpenEval in R13.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "b6ee8982-0de1-415a-9a68-e2f86711a44a",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "172522cf-43ec-4fce-99bb-42e71e99006e",
+      "peer_result_id": "0c3c82a0-c753-4d56-b348-03b6568ac9c5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the LCN2 upregulation finding (C31, C4). OpenEval highlights the quantitative LC-MS/MS data with statistical significance, while peer reviewers accept this as part of the convincing evidence base without raising methodological concerns. Complete agreement on this result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "3a307598-fc89-41cc-80cd-ba7bba6ea9b4",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0488a761-c097-4053-a62f-252bc2c4f7af",
+      "peer_result_id": "97e3249e-0d37-4e0c-b55a-f9089af150f3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of the same claims (C32-C35). OpenEval finds the dose-response data supporting differential sensitivity adequate despite limited cell line testing. Peer reviewers rate this UNCERTAIN, with Reviewer 1 identifying a critical flaw: lack of direct iron concentration measurements to validate the mechanistic interpretation. The therapeutic effect is accepted but the iron-based mechanism requires additional validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "2c65f9d7-47b4-41f8-a319-66f26aece942",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "aba552c2-a516-4598-90e3-d6796a011c82",
+      "peer_result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on CDG mechanism and synergy (C36-C40, C41-C46). OpenEval finds multiple lines of evidence (LC-MS/MS, survival assays, ELISA, tumor growth) provide strong support. Peer reviewers rate UNCERTAIN, with Reviewer 1 noting the experiment is 'promising' but identifying the same critical flaw: lack of direct iron measurements, suggesting 'CDG acts in another manner, unrelated to iron uptake.' The therapeutic effect is accepted but mechanistic linkage to iron is questioned.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "7091007c-fdf2-417f-a023-b5f8e4a5800d",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "90dc6de7-df05-49cc-b00a-5f4a0abd5190",
+      "peer_result_id": "af0bd87e-4aa2-4993-a991-3121a1ed1395",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R5 evaluates tumor growth and adaptive immunity claims (C41-C46) as supported despite small sample size. These claims overlap with peer R4, which rates them UNCERTAIN due to mechanistic concerns about the iron competition model. Both acknowledge the therapeutic effect but peer reviewers question whether the mechanism is fully established.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "10a1ca59-7617-47c1-a5a8-9c71968c2478",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "b55e5ea4-0bb8-4202-bbf4-fbc060c9473a",
+      "peer_result_id": "294849b2-56ff-430c-a665-cd35170b942c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on IroA-E. coli characterization (C6, C7, C47-C52). Both evaluations find the in vitro data (viability assays, CAS assay, cytotoxicity) convincing. OpenEval notes multiple complementary assays provide strong support, while peer reviewers specifically highlight the strong evidence for iron competition mechanism and upregulation of bacterial iron uptake.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "c135ceae-9af0-4923-a99f-832943d211e3",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "745d1486-198d-421e-9785-1bd1711c7261",
+      "peer_result_id": "4d23d4ce-5a5c-4152-8531-3cab916d78be",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on in vivo efficacy across multiple cancer models (C8, C53-C55). Both evaluations find the tumor growth curves and survival data convincing with adequate statistical significance. OpenEval notes consistency across tumor types, while peer reviewers describe findings as novel and convincing, with the editor highlighting the importance of iron uptake in bacterial cancer therapy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "329a62ef-1abd-4d1a-85ac-1bd34af3112d",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "bbebe9d5-cd06-44ad-bec0-9a448e273a65",
+      "peer_result_id": "92b36f96-5cd1-42a3-a4a8-37cd4749e32f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of safety data (C59-C62). OpenEval finds bacterial burden and blood count measurements support the safety conclusion, though notes longer-term assessment would strengthen results. Peer reviewers rate UNCERTAIN, with Reviewer 2 raising significant concerns about sepsis risk from engineered bacteria with enhanced iron uptake escaping nutritional immunity. The presented safety data is deemed insufficient to address potential risks.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "f47334df-a1ad-466c-bb35-7fafee496bd1",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "50655a71-bd46-41bb-b31e-f51cb6f5a922",
+      "peer_result_id": "07d08cf6-10a7-4bf2-a5c6-94358a2cacab",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on bacterial proteomic findings (C63-C65). Both evaluations accept the differential protein expression data showing reduced iron stress in IroA-E. coli. OpenEval finds the inference logical based on known regulation, while peer reviewers accept this as part of the convincing proteomic evidence without specific concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "cebc2276-6920-437c-abe6-76a017277703",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c777345e-78a3-4990-bfe7-be45d0835f4e",
+      "peer_result_id": "85dd3aa0-a965-47b0-a2fb-ecfc94b84725",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of host transferrin/receptor upregulation (C66, C68). OpenEval finds the proteomic data and interpretation of bacterial iron competition reasonable based on established knowledge. Peer reviewers rate UNCERTAIN, noting that Reviewer 1's request for direct iron concentration measurements suggests indirect evidence through transferrin/receptor may be insufficient to confirm the competitive mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "ed06225f-6b72-4e6c-88dd-31183a5e9716",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "b1f4bf38-8786-4bc1-8ef1-fba53acbc1fa",
+      "peer_result_id": "2a0223ce-a911-4086-bf02-35ec15d56440",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of adaptive immunity findings (C9, C69-C73, C89). OpenEval finds the tumor rechallenge, flow cytometry, and CD8 depletion data provide strong support with appropriate qualification. Peer reviewers rate UNCERTAIN, with Reviewer 1 requesting more mechanistic characterization of CD8+ T cells, stating 'the mechanism now seems quite elusive' and asking what signals or memories CD8+ T cells acquire. Statistical significance is accepted but mechanistic understanding is incomplete.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "fe853e56-2b28-40bc-ad7a-e75bbd09b97d",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "a511def3-cbd8-4035-a80c-5d5562b56e75",
+      "peer_result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on combination therapy efficacy (C76-C81). Both evaluations accept the tumor growth, survival, and synergy data. OpenEval notes small sample size and modest complete remission rate but finds statistical significance adequate. Peer reviewers accept these findings as part of the successful demonstration that iron regulation manipulation affects bacterial virulence and tumor outcomes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "ae24238d-25de-4300-b4d6-ea807689e3fa",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "4349cd8c-3e84-4438-9b39-d2cae2c40f1f",
+      "peer_result_id": "ecc33fdb-92b9-4ff0-9715-7cfcb3bdd318",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on purine synthesis findings (C83-C86). Both evaluations accept this secondary observation from the proteomic data. OpenEval notes it represents an important finding not experimentally pursued further, while peer reviewers accept it as part of the convincing proteomic dataset without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "de5e207f-e119-4441-913d-69ce787aa8f3",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "4349cd8c-3e84-4438-9b39-d2cae2c40f1f",
+      "peer_result_id": "0678a9cd-9fde-4217-9008-aabacf5ae72c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R13 evaluates novelty claim C82 as supported and reasonable. Peer R1 includes C82 in their evaluation of proteomic findings, accepting it as part of the convincing evidence without specific comment on the novelty assertion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "f069257c-3cd0-4365-a90d-a18298415407",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "c058f111-e6f3-48ff-a630-f79688d01354",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R14 evaluates background/context claims (C1, C10-C21) as appropriately supported by citations to prior literature. No corresponding peer review evaluation found, as peer reviewers focused on novel experimental findings rather than background knowledge claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "9a42a5eb-7f12-45f0-9ba7-52e55348f083",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "d56cd9c2-689c-4a0b-af98-f21ceed6b424",
+      "peer_result_id": "97b96e9e-bbaf-439a-88cf-ffa9f4fe1cf9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R15 evaluates background claims about LCN2 in cancer and E. coli tumor targeting (C56-C58, C74-C75) as appropriately cited established knowledge. Peer R11 includes C75 in their evaluation of combination therapy but does not separately assess these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    },
+    {
+      "id": "05ee7ebd-1db5-4f45-99c2-1c5e59c5c7ed",
+      "submission_id": "a5463e97-d963-4f7c-a185-30d945ff0c16",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "06561c32-e39b-4811-9ef7-6a1c4196a518",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R16 evaluates speculative/rationale claims (C87-C88) as reasonably qualified speculation supported by overall study results. No corresponding peer review evaluation found, as peer reviewers did not separately assess these forward-looking statements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:55:00.318963Z"
+    }
+  ]
+}

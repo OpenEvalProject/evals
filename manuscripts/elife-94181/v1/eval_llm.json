@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Heat-killed E. coli (HK-E. coli) is a low-quality food that triggers cellular stress responses including UPRER and immune pathways in C. elegans, leading to avoidance behavior. Metabolomic and transcriptomic analyses reveal significant changes in metabolites and upregulation of stress response genes in animals fed HK-E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14, C84-C86 collectively demonstrate that HK-E. coli induces stress responses through multiple lines of evidence: behavioral avoidance assays (C4-C6), RNA-seq showing upregulation of stress genes (C7-C9), fluorescent reporter activation (C10-C11), and metabolomic changes (C84-C86). The data are internally consistent and supported by appropriate controls (C12-C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The UPRER response to HK-E. coli depends specifically on the IRE-1/XBP-1 branch, and neuronal XBP-1 is critical for animals to evaluate and avoid low-quality food.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 provide converging evidence through genetic knockdown/knockout experiments (C15), RNA-seq analysis (C16-C17), and tissue-specific rescue experiments (C18-C19) demonstrating that the IRE-1/XBP-1 branch, particularly in neurons, is essential for the food quality evaluation response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The PMK-1/p38 MAPK innate immune pathway is activated by HK-E. coli and is essential for food quality evaluation, with neuronal PMK-1 playing a critical role in avoidance behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 demonstrate PMK-1 pathway involvement through RNA-seq (C20), reporter assays (C21), Western blot showing increased phosphorylation (C22), and tissue-specific rescue experiments (C23-C24). The data consistently show that neuronal PMK-1 is necessary for proper food avoidance responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C63"
+    ],
+    "result": "XBP-1 acts upstream of PMK-1 in a linear pathway to evaluate low-quality food, with the innate immunity pathway playing a broader role in evaluating multiple unfavorable food sources including HK-E. coli, saprophytic staphylococci, and P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 establish epistasis through genetic experiments showing XBP-1 regulates PMK-1 but not vice versa, and double mutant analysis. Claims C28-C31 demonstrate differential roles of XBP-1 and PMK-1 in responses to various food types. The pathway independence from KGB-1 (C63) further validates the specificity of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Sugar/carbohydrate deficiency in HK-E. coli is a key nutritional deficit that induces stress responses. The E. coli yfbR mutant, which has higher carbohydrate levels, is less aversive to worms and induces weaker stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by behavioral assays (C32), metabolomics showing 13 differential metabolites including carbohydrates (C34, C36), and RNA-seq showing upregulation of glycolysis/gluconeogenesis genes (C35). The E. coli mutant screen provides a genetic approach linking carbohydrate metabolism to food quality perception.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Sugar supplementation (lactose, sucrose, glucose) inhibits HK-E. coli-induced UPRER, immune response, and avoidance behavior in a context-dependent manner, but does not support animal development on HK-E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 demonstrate that sugar supplementation specifically inhibits stress responses in HK-E. coli conditions through reporter assays, Western blots, and behavioral tests, with appropriate controls showing no effect on normal food or starvation. Claim C40 importantly shows that sugar alone is insufficient for growth, indicating that the stress response inhibition is distinct from nutritional sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Sugar supplementation promotes vitamin C biosynthesis in animals fed low-quality food, and vitamin C is the critical metabolite that inhibits UPRER-immune responses and food avoidance. Animals can adaptively increase VC levels to cope with poor food environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 provide strong evidence through vitamin C measurements (C42-C43), supplementation experiments (C45), and genetic epistasis using RNAi of VC biosynthesis genes (C46-C47). The finding that VC supplementation rescues the phenotype even when biosynthesis is blocked (C47) demonstrates VC is the key downstream effector. The adaptive response (C50) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52"
+    ],
+    "result": "Neuronal XBP-1 and PMK-1 are critical for monitoring sugar and vitamin C levels under low-quality food conditions, as demonstrated by tissue-specific rescue experiments showing that neuronal but not intestinal expression restores preference for sugar/VC-supplemented HK-E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 demonstrate through food selection assays with tissue-specific rescue that neuronal expression of XBP-1 or PMK-1 is necessary and sufficient to restore preference for supplemented food. This establishes the nervous system as the site of nutrient sensing for this food evaluation system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C77",
+      "C78"
+    ],
+    "result": "Animals maintain similar vitamin C levels when fed normal versus low-quality food, but can increase VC biosynthesis through sugar supplementation specifically under low-quality food conditions, suggesting a conditional adaptive response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C77-C78 demonstrate through vitamin C measurements that VC levels are similar between live and HK-E. coli feeding, but can be increased by sugar supplementation specifically in the HK-E. coli condition. This context-dependent regulation suggests an adaptive mechanism rather than constitutive VC production.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C58"
+    ],
+    "result": "Previous work from the authors established that HK-E. coli cannot support larval growth and that the TORC1-ELT-2 pathway evaluates vitamin B2 deficiency in HK-E. coli, while VB2 supplementation restores growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, and C58 cite the authors' previous publications (Qi et al., 2017; Qi and Han, 2018) establishing the HK-E. coli system and the TORC1-ELT-2 pathway for VB2 sensing. These are appropriately cited prior results that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background knowledge and literature context: UPRER and PMK-1 pathways are known stress response pathways activated by various stresses; vitamin C has established roles in antioxidant defense, biosynthesis, and stress protection; animals use sensory and cellular stress response systems to evaluate food quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C92 cite established knowledge from the literature with appropriate references. These provide necessary background context for interpreting the novel findings. The citations appear accurate based on the stated claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C82",
+      "C83"
+    ],
+    "result": "This study reveals a novel mechanism where UPRER (IRE-1/XBP-1) positively regulates innate immunity (PMK-1/p38 MAPK) to establish a physiological food evaluation system, and demonstrates that animals can adaptively alter vitamin C levels to cope with poor food environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C82, C83 are summary statements of the study's main conclusions, which are well-supported by the collective experimental evidence presented in the other claim groups. These represent the key conceptual advances of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Total translation ability is significantly reduced in animals fed HK-E. coli, suggesting that PMK-1 activation may slow translation to alleviate pressure on the UPR system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is supported by Western blot data (Figure 5\u2014figure supplement 1D), but claim C72 is explicitly speculative ('may serve as a mechanism'). While the hypothesis is reasonable given prior literature (C69-C70), the causal connection between PMK-1 activation and translation reduction in this context is not directly tested. Additional experiments would be needed to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The cellular stress response-based food evaluation system is slower than sensory evaluation, requiring multi-step signal transduction after food ingestion, and represents an evolutionary adaptation for detecting nutritional deficiencies not detected by sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is a reasonable inference from the temporal dynamics shown in the food choice assays (C5), but claims C80-C81 regarding evolutionary significance are speculative. While the logic is sound, direct evidence for evolutionary adaptation and the specific selective pressures is not provided. These are plausible interpretations but go beyond what the data directly demonstrate.",
+    "result_type": "MINOR"
+  }
+]

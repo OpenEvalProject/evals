@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Higher NK-PRDM1 expression correlates with better survival outcomes in liver, lung, and skin cancer patients based on TCGA data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide consistent correlation and survival data across multiple cancer types (LIHC, SKCM, LUAD) from TCGA datasets with appropriate statistical analysis. The inference in C5 is reasonable given the consistent association across cancer types, though it remains correlative rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "A conditional knockout mouse model (Ncr1-cre Prdm1fl/fl) was successfully generated with specific deletion of Prdm1 in NKp46+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 demonstrate successful model generation with RT-PCR validation showing near-complete loss of Prdm1 in sorted NK cells while maintaining expression in total splenocytes, confirming specificity of the knockout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prdm1 deficiency results in decreased NK cell numbers in peripheral tissues but increased numbers in bone marrow, with impaired terminal maturation across all tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 provide consistent flow cytometry data showing tissue-specific NK cell distribution changes and reduced mature (CD11b+CD27- and KLRG1+) NK cells across multiple tissues. The data converge to support Prdm1's role in NK cell maturation and tissue distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prdm1 deficiency shifts the balance of liver group 1 ILCs toward cNK cells and away from ILC1s, with altered expression of CD49a and CD49b markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 demonstrate consistent changes in liver ILC populations with flow cytometry showing increased cNK:ILC1 ratio, decreased absolute numbers of both populations (more pronounced in ILC1s), and altered surface marker expression. The data support Prdm1's role in maintaining ILC homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Prdm1 deficiency does not significantly affect NK cell cytotoxicity in a B2M-deficient cell rejection assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by in vivo cytotoxicity assay data, though this appears contradictory to later tumor surveillance findings. The short duration of the assay may not capture longer-term functional deficits or effects in the tumor microenvironment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prdm1 deficiency results in increased tumor metastasis in lung and liver with decreased IFN-\u03b3 production by NK cells and ILC1s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide converging evidence from B16F10 tumor models showing 2-4 fold increases in metastatic nodules, confirmed by histology, along with decreased IFN-\u03b3 secretion upon cytokine stimulation. The data strongly support Prdm1's role in tumor surveillance despite the apparent contradiction with C20.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "Bulk RNA-seq of Prdm1-deficient splenic cNK cells reveals 445 DEGs with enrichment of NF-\u03baB signaling, increased expression of transcription factors (Junb, Batf3, Nfkb1, Tcf7), and decreased expression of cytotoxic molecules (Gzmb, Prf1) and cytokine receptors (Il18rap, Il12rb2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 present comprehensive bulk RNA-seq analysis with appropriate statistical thresholds (log2FC>0.5, p<0.05), GO analysis, and GSEA. The transcriptional changes are consistent with the observed functional phenotypes (decreased cytotoxicity and IFN-\u03b3 production).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Flow cytometry validation confirms decreased CX3CR1, GZMB, and PRF1 expression in Prdm1-deficient NK cells and ILC1s across maturation stages, suggesting direct regulation rather than indirect effects through maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 provide flow cytometry validation of RNA-seq findings with the important observation that cytotoxic molecule reduction occurs across all maturation stages, supporting direct regulation by Prdm1. The inference in C38 is well-supported by the stage-specific analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Single-cell RNA-seq of liver CD45+ cells (10,978 cells) identifies 12 distinct clusters with decreased proportions of cNK cells and ILC1s in Prdm1 cko mice, and a shift toward cNK cells within group 1 ILCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe high-quality scRNA-seq data with appropriate quality control and cell numbers. The findings are consistent with flow cytometry data (C14-C19), providing single-cell resolution of the ILC population changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "ScRNA-seq identifies a 'Prf1 high' cNK cell cluster characterized by high expression of cytolysis genes that is significantly reduced in Prdm1 cko mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 identify a functionally important NK cell subset with strong cytotoxic potential that is Prdm1-dependent. GO analysis confirms the cytolytic function of this cluster, and the reduction in Prdm1 cko mice is consistent with decreased anti-tumor activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ScRNA-seq identifies a 'Junb high' cNK cell cluster (92.98% from Prdm1 cko mice) with upregulated transcription factors and signaling pathways but lower cytotoxic gene expression and suppressed mitochondrial pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 identify a distinct NK cell population that dramatically expands with Prdm1 loss. The transcriptional profile (high Junb, low Gzmb/Prf1, suppressed mitochondrial function) suggests an exhaustion-like or dysfunctional state. The near-exclusive presence in Prdm1 cko mice strongly supports Prdm1's role in suppressing this population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "ScRNA-seq identifies a 'Cxcr3 high' cNK cell cluster with tissue-resident characteristics and ILC1-like features that is significantly reduced in Prdm1 cko mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 identify a tissue-resident NK cell population with the highest ILC1 signature score among cNK clusters. The reduction in Prdm1 cko mice is consistent with decreased CX3CR1+ NK cells in peripheral tissues and accumulation in bone marrow, supporting Prdm1's role in NK cell tissue residency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ScRNA-seq identifies three ILC1 clusters ('Il7r high', 'Klra high', 'Gzmb high') with largely similar distribution between genotypes but consistent downregulation of Gzma/Gzmb and upregulation of Junb in Prdm1 cko cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 show that ILC1s are less dramatically affected than cNK cells at the cluster level, but still show consistent transcriptional changes. The Il7r high cluster shows activation of inflammatory pathways and expression of ILC3 signature genes, suggesting potential plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The 'Klra high' ILC1 cluster shows increased proportion in Prdm1 cko mice but decreased Ccl5 expression, potentially affecting innate-adaptive immune crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 identify changes in a functionally important ILC1 subset. The citation to Chen et al. 2022 (C66) provides context for the functional significance of Ly49E+ ILC1s. The decreased Ccl5 expression could impair DC recruitment, though this functional consequence is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The 'Gzmb high' ILC1 cluster with cytolytic function is significantly reduced in Prdm1 cko mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 identify a cytotoxic ILC1 population that is Prdm1-dependent, parallel to the Prf1 high cNK cluster. This supports Prdm1's role in maintaining cytotoxic function across both cNK and ILC1 populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Integration of bulk and single-cell RNA-seq identifies 17 core DEGs regulated by Prdm1 across liver cNK, splenic cNK, and liver ILC1s, including upregulation of Batf3, Junb, Tcf7, Nfkb1 and downregulation of Gzmb, Prf1, Fgl2, Cxcr6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 provide integrated analysis identifying core Prdm1-regulated genes. The negative correlation between Prdm1 and Batf3 in published data (C75) provides independent validation. This represents a key mechanistic finding linking Prdm1 to specific transcriptional programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Comparison with Hobit knockout data reveals that Prdm1 has broader effects in cNK cells while Hobit has greater impact in ILC1s, with overlapping regulation of genes including Junb, Fosb, Tcf7, Kit, Gzmb, Prf1, and Cxcr6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 provide comparative analysis with published Hobit knockout data, revealing both distinct and overlapping functions. This analysis appropriately uses published datasets and identifies important similarities in the regulatory networks, though the mechanistic relationship between Prdm1 and Hobit remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prdm1 deficiency in group 1 ILCs leads to increased macrophage numbers but decreased interaction strength between ILC1s and macrophages, particularly through reduced CXCL and MIF signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 use CellChat analysis to infer cell-cell interactions from scRNA-seq data. While the computational predictions are reasonable, they represent inferred rather than directly measured interactions. The finding that macrophages increase despite decreased ILC-macrophage interactions is interesting but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Prdm1-deficient NK cells and ILC1s show decreased mitochondrial mass but no significant changes in mitochondrial ROS or membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide flow cytometry-based assessment of mitochondrial function using three different probes. The selective decrease in mitochondrial mass without changes in ROS or membrane potential suggests altered mitochondrial biogenesis rather than dysfunction, consistent with the scRNA-seq findings of suppressed mitochondrial pathways in Junb high cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "In tumor-bearing mice, Prdm1-deficient liver cNK cells and ILC1s show decreased numbers and significantly reduced IFN-\u03b3 production in response to IL-12/IL-18 stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 demonstrate that Prdm1 deficiency impairs NK cell and ILC1 function in the tumor microenvironment. The more pronounced effect in ILC1s is consistent with their greater dependence on Prdm1 for maintenance. This provides mechanistic insight into the increased tumor burden observed in C21-C22.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background claims establishing the biological context of group 1 ILCs, their functions, markers, transcriptional regulation, and roles in cancer, based on published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C105 provide literature-based context with appropriate citations. These establish the scientific foundation for the study. However, some cited findings (e.g., C103, C105) appear contradictory to the current results, which the authors acknowledge and address through their experimental findings.",
+    "result_type": "MINOR"
+  }
+]

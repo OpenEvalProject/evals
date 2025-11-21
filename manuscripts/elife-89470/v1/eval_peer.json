@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C10",
+      "C88"
+    ],
+    "result": "The extended SMC framework can improve demographic inference in recent times, uncover hidden demographic events, infer hyper-mutable marker mutation rates, and integrate multiple heritable genomic markers to more accurately recover recent population size variation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states the study 'extends existing sequentially Markovian coalescent approaches' and provides 'solid validation of their methods via simulation.' Reviewer 3 affirms 'there is no reason why the concept of this work is not conceptually sound,' endorsing the methodological framework. The core contribution is accepted by all reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Simulations demonstrate that including hyper-mutable markers correctly infers recent bottlenecks even when mutation rates are unknown, with as little as 0.1% hyper-mutable sites providing substantial improvement over SNP-only methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises a 'major caveat' about 'strong dependence on knowing the epimutation rate,' noting that 'when the rate is not known' results may not look better. While simulations show improvement, Reviewer 2 questions whether 'results when the rates have to be estimated don't seem that much better than when focusing on SNPs alone,' creating uncertainty about practical performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C90"
+    ],
+    "result": "The method can accurately recover site- and region-level epimutation rates except when very high (close to 10^-2), with average estimates within a factor of 10 even at extreme rates, and can recover mutation rates of other markers when SNP mutation rate is known.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 highlights that 'the estimated rates differ by a large amount from earlier published ones' in the real data analysis, questioning the reliability of rate estimation. While simulations show reasonable accuracy, the discrepancy with experimental measurements raises concerns about practical applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Demographic inference with methylation data shows that when epimutation rates are known, bottlenecks can be accurately detected, and even 2% methylation coverage is sufficient for improvement; however, when rates are unknown, there is shape recovery but with scaling issues, and DMRs provide no significant gain without known rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 observes that 'when the epimutation rate is known, inferences do indeed look better; but this is not necessarily true when the rate is not known,' and notes 'a roughly similar pattern emerges in Supp. Figs. 4-7.' This conditional performance creates uncertainty about the method's practical utility when rates must be estimated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Segregating single methylated polymorphisms (SMPs) satisfy SMC modeling assumptions with rapid LD decay, while DMRs are unsuitable because they are on average twice as large as genealogy spans (222 bp vs 137 bp), violating the assumption of homogeneous epimutation distribution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes the authors 'provide solid validation of their methods via simulation and analysis of empirical data,' implicitly accepting these findings about SMPs vs DMRs. Reviewer 3 acknowledges the distinction between individual CGs and regions, stating 'they do this both for individual CGs and small regions,' accepting the differential treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C9",
+      "C108"
+    ],
+    "result": "Application to A. thaliana reveals that SNP-only analysis shows no strong post-LGM expansion, but including methylation data with known rates shows mild bottleneck and expansion, while estimating rates reveals a strong bottleneck 5,000-10,000 generations ago followed by expansion, potentially fitting post-LGM colonization of Europe.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 states 'the interpretation in Fig. 7 appears to hinge on whether the rates are known or estimated,' highlighting the sensitivity of conclusions to rate specification. The observation that 'estimated rates differ by a large amount from earlier published ones' raises questions about which demographic scenario is correct, creating uncertainty about the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Model-based analysis provides strong evidence that DMRs cannot emerge from site-level Poisson processes alone, requiring both site- and region-level spontaneous methylation/demethylation events, with non-independence observed up to 2 kb, and methylation likely violating Poisson process assumptions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 accepts the 'analysis of empirical data in Arabidopsis thaliana' as solid validation. Reviewer 3 notes 'small regions containing multiple CGs can also be treated as genetic markers based on their cumulative methylation level,' implicitly accepting the region-level process. The mechanistic insights about epimutation processes are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C107"
+    ],
+    "result": "The epimutation model cannot fully describe observed diversity, caution is warranted about selection conclusions from epigenomic data due to model violations, and an Ising model is suggested for future development, though it would violate current SMC assumptions; nonetheless, focusing on SMPs in genic regions could meet assumptions reasonably well.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 acknowledges the method 'may hold more promise as we get more and better epigenetic data, and in particular better knowledge of the epigenetic mutational process,' accepting that current understanding is incomplete. Reviewer 3's concern that 'it is not clear that CG methylation measurements are nearly as binary in other plants' aligns with recognition of model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Additional heritable markers like methylation may provide information on recent population history; CG methylation changes occur at rates 4-5 orders of magnitude faster than DNA mutations (10^-4 to 10^-3 per site per generation), are likely neutral genome-wide, and can be used as a molecular clock over years to decades.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 calls this 'an intriguing addition to infer population size history in the recent past.' Reviewer 3 states 'individual CGs in Arabidopsis tends to be either close to 100% methylated or close to 0%, and are inherited stably enough across generations that they can be treated as genetic markers,' endorsing the biological basis for using methylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Current A. thaliana demographic results are limited by inability to simultaneously account for background selection, population structure, and rate variation; however, the consistency between SNP and methylation-inferred demography confirms CG methylation heritability over thousands of generations and suggests fast ecological adaptation is not endlessly reshaping methylation patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges this is 'a foundation for further developments to explore when and where these methods will be best used,' accepting current limitations. Reviewer 2's concern about dependence on rates relates to methodology rather than challenging these specific biological interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C124",
+      "C125"
+    ],
+    "result": "The approach provides tools to study marker rates without experimental data when mechanisms are poorly understood, and can integrate markers to improve SMC when evolution is well understood; however, accurate marker annotation is advisable, gene body methylated genes are optimal but too sparse, and extra care is needed in other species due to tissue-specific methylation differences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly notes the concern that 'it is not clear that CG methylation measurements are nearly as binary in other plants and other eukaryotes as they are in Arabidopsis,' directly supporting the caution about generalization. Reviewer 1's statement that this is 'a foundation for further developments' accepts the current scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "With new sequencing technology providing long accurate reads and better marker detection, there will be improved understanding of marker heritability, and adding genomic markers besides SNPs will improve full genome approaches; this work paves the way for improved inference of traits, recombination rates, selection events, and represents the future of population genomics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'given the increasing availability of such data, this work is a timely contribution.' Reviewer 3 concludes 'especially in the future as new sequencing technologies provide both base calling and methylating calling capabilities, using CG methylation in addition to SNPs could become a useful and feasible tool,' endorsing the future potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C22",
+      "C23"
+    ],
+    "result": "SNP-based inferences suffer from lack of statistical resolution for recent events like bottlenecks, especially when recombination rate exceeds mutation rate; the typical low mutation rate (10^-9 to 10^-8) places strong limitations on analyzing recent bottlenecks (up to ~10^4 generations), which are often not found or poorly estimated in timing and magnitude.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accept this as the motivation for the work. Reviewer 1 states the method provides 'better power to infer size history in the recent past,' accepting the limitation of SNPs. Reviewer 3 begins with 'a limitation in using SNPs to understand recent histories of genomes is their low mutation frequency,' explicitly endorsing this premise.",
+    "result_type": "MAJOR"
+  }
+]

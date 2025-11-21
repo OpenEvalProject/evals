@@ -1,0 +1,165 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C42",
+      "C43",
+      "C44",
+      "C82"
+    ],
+    "result": "The authors optimized the Whitfeld reaction for tRNA charge measurement, including periodate oxidation at 10 min on ice, lysine-based cleavage at pH 8 for 4 hours, and use of ethylene glycol as quencher. They validated efficient oxidation, complete deacylation, and CCA-end integrity using spike-in and control experiments, concluding the method provides robust quantification of tRNA aminoacylation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the optimization and validation of the Whitfeld reaction. Reviewer 1 states 'improved methods for discrimination of aminoacyl-tRNAs from non-acylated tRNAs' and 'well-designed tests to optimize the protocol.' Reviewer 2 notes 'optimizing the Whitfeld or oxidation reaction' as a key improvement and calls it 'a strong methodological improvement.' Reviewer 3 acknowledges 'lysine-based chemistry that is more gentle on RNA' and 'carefully test different conditions to optimize their protocol using a set of well-designed controls.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C78"
+    ],
+    "result": "The authors found blunt-end ligation produced highly variable and barcode-biased charge measurements, achieving only ~50% ligation efficiency. They switched to splint-assisted ligation, which achieved near-complete ligation with high specificity and efficiency for both CCA- and CC-ending tRNAs, and validated compatibility with the Whitfeld reaction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this finding. Reviewer 1 highlights 'more efficient splint-assisted ligation to modify the tRNAs' ends' as an improvement. Reviewer 2 similarly notes 'using a splint-assisted ligation to modify the tRNAs' ends for the following RT-PCR reaction' as a key advance. Reviewer 3 mentions 'splint oligo-based adapter ligation' as part of the protocol. No concerns are raised about these ligation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors developed a reference masking approach that masks modified positions as 'N' based on misincorporation data. Optimized masking of 533 positions reduced reads with multiple codon alignments from 11.71% to 5.09% without reducing overall mapping percentage, with minimal effect on charge measurements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the alignment improvements. Reviewer 1 notes 'the use of an error-tolerating mapping algorithm to map the tRNA sequencing reads' as providing 'new tools.' Reviewer 2 states 'using an error-tolerating mapping algorithm to map the tRNA sequencing reads that contain mismatches at modified nucleotides' as an improvement. No concerns are raised about the masking approach or its validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Barcode replicate testing showed charge measurements have high precision with a standard deviation of 1.7 percentage points at the codon level. One adapter (l4Sp) consistently overestimated charge by ~3 percentage points. RPM measurements showed a standard deviation of 5.1 percentage points.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the precision measurements. Reviewer 2 states the authors 'addressed my concerns in the previous review' and performed 'exactly what I meant' with the end-to-end comparison. Reviewer 3 notes 'precision/reproducibility is essential when developing a new protocol' and acknowledges the authors focus on this, though requesting additional benchmarking. The precision data itself is not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Charge titration experiments mixing intact and deacylated RNA showed excellent proportionality between predicted and measured charge across the full range. A 50% charge spike-in control showed mean charge of 50.36% with standard deviation of 1.11 percentage points. The l4Sp adapter bias was confirmed, but no other biases were detected.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the accuracy validation. Reviewer 1 states 'results and conclusions are solid, with well-designed tests to optimize the protocol under different conditions.' Reviewer 2 confirms 'The revised manuscript of Davidsen and Sullivan has addressed my concerns' and calls it 'a strong methodological improvement.' The accuracy experiments are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Baseline charge measurements in H1299 cells showed excellent repeatability and high charge for most codons. Measurements were generally a few percentage points higher than Evans et al. 2017 for 293T cells. Low baseline charge was observed for tRNASer and tRNAGlu codons, validating prior observations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises significant concerns about the lack of direct benchmarking: 'it is not possible to estimate how much the results of this new protocol differ from alternative methods' and requests 'experiments with samples similar to those (like HEK cells or yeast cells) used in the mim-tRNAseq study and not with H1299 cells.' The authors' comparison to Evans et al. is acknowledged but deemed insufficient for proper benchmarking. The measurements themselves are not disputed, but their interpretation relative to other methods remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Aminoacylation half-life measurements confirmed that half-lives are determined mostly by amino acid identity and span a 37-fold range. Half-life estimates were highly correlated with Peacock et al. 2014 but approximately fourfold higher. The discriminator base influences half-life, with purine bases promoting longer half-lives than uracil.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the aminoacylation half-life experiments. Reviewer 1 notes 'well-designed tests' and 'solid' conclusions. Reviewer 2 states concerns were 'addressed' and calls it 'a strong methodological improvement.' While Reviewer 3 requests additional benchmarking for other applications, the half-life measurements themselves are not disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41"
+    ],
+    "result": "The method supports measurements of relative tRNA expression levels (RPM). Expression level measurements are highly sensitive to RT polymerase choice, but charge measurements are not sensitive to polymerase choice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the multipurpose applications. Reviewer 1 notes the method provides 'new tools for anyone interested in tRNA concentrations and functional states.' Reviewer 3 states 'The reported protocol can not only be used for quantification of tRNA aminoacylation but it can also be used for tRNA quantification' though requests additional benchmarking for these applications. The data showing polymerase effects on expression but not charge is not disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The method can infer tRNA modifications through RT misincorporation signatures. Large changes in misincorporation signatures were observed upon periodate oxidation of tRNAs with mcm5s2U modification. The misincorporation signature depends on polymerase used, with Maxima RT showing better readthrough and increased mutation/gap frequency compared to TGIRT.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the modification detection capability. Reviewer 2 notes 'using an error-tolerating mapping algorithm to map the tRNA sequencing reads that contain mismatches at modified nucleotides' as an improvement. Reviewer 3 requests benchmarking for 'analysis of tRNA modifications' but does not dispute the modification detection data itself. The misincorporation analyses are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Current methods to quantify tRNA charge have limitations: radiolabeling is accurate but limited to purified tRNAs; northern blotting has issues with cross-binding probes, low sensitivity, low throughput, and insufficient band separation; microarray approaches have been superseded by sequencing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept this characterization of existing methods by affirming the need for and value of the new protocol. Reviewer 1 calls it a 'valuable paper' providing 'new tools.' Reviewer 2 calls it 'a strong methodological improvement.' Reviewer 3 acknowledges 'an improved method' though requesting more direct comparison. The motivation for developing a new method is not disputed.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2194 @@
+{
+  "submission": {
+    "id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:45:01.378781Z",
+    "updated_at": "2025-11-20T23:45:01.378781Z"
+  },
+  "content": [
+    {
+      "id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "content_type": "manuscript",
+      "content_text": "# Selective recruitment of the cerebellum evidenced by task-dependent gating of inputs\n\n## Authors\n\n- Ladan Shahshahani<sup>1</sup> ([ORCID: 0000-0001-6189-9994](https://orcid.org/0000-0001-6189-9994)) \u2020\n- Maedbh King<sup>3</sup> ([ORCID: 0000-0001-5374-1011](https://orcid.org/0000-0001-5374-1011))\n- Caroline Nettekoven<sup>1</sup>\n- Richard B Ivry<sup>4</sup> ([ORCID: 0000-0003-4728-5130](https://orcid.org/0000-0003-4728-5130))\n- J\u00f6rn Diedrichsen<sup>1</sup> ([ORCID: 0000-0003-0264-8532](https://orcid.org/0000-0003-0264-8532)) \u2020\n\n### Affiliations\n\n1. Western Institute for Neuroscience, Western University, London Ontario Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n2. Cognitive, Linguistics, & Psychological Science, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))\n3. McGovern Institute, Massachusetts Institute of Technology Cambridge United Kingdom ([ROR:042nb2s44](https://ror.org/042nb2s44))\n4. Department of Psychology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n5. Helen Wills Neuroscience Institute, University of California Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n6. Department of Statistical and Actuarial Sciences, Western University London Ontario Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n7. Department of Computer Science, Western University, London Ontario Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFunctional magnetic resonance imaging (fMRI) studies have documented cerebellar activity across a wide array of tasks. However, the functional contribution of the cerebellum within these task domains remains unclear because cerebellar activity is often studied in isolation. This is problematic, as cerebellar fMRI activity may simply reflect the transmission of neocortical activity through fixed connections. Here, we present a new approach that addresses this problem. Rather than focus on task-dependent activity changes in the cerebellum alone, we ask if neocortical inputs to the cerebellum are gated in a task-dependent manner. We hypothesize that input is upregulated when the cerebellum functionally contributes to a task. We first validated this approach using a finger movement task, where the integrity of the cerebellum has been shown to be essential for the coordination of rapid alternating movements but not for force generation. While both neocortical and cerebellar activity increased with increasing speed and force, the speed-related changes in the cerebellum were larger than predicted by an optimized cortico-cerebellar connectivity model. We then applied the same approach in a cognitive domain, assessing how the cerebellum supports working memory. Enhanced gating was associated with the encoding of items in working memory, but not with the manipulation or retrieval of the items. Focusing on task-dependent gating of neocortical inputs to the cerebellum offers a promising approach for using fMRI to understand the specific contributions of the cerebellum to cognitive function.\n\n## Introduction\n\nMore than 30 years of neuroimaging has revealed that the human cerebellum is activated in a broad range of tasks including motor (Spraker et al., 2012), language (Petersen et al., 1989), working memory (Marvel and Desmond, 2010), attention (Allen et al., 1997), social (Van Overwalle et al., 2015), and visual cognition tasks (van Es et al., 2019) \u2013 for a review see Diedrichsen et al., 2019. Indeed, there are very few tasks that do not lead to activity in some part of the cerebellum. The presence of cerebellar activity is usually taken as evidence that the cerebellum plays a functional role associated with these tasks.\n\nHowever, there is an important problem with this line of reasoning. The cerebellar blood-oxygen-level-dependent (BOLD) signal does not reflect the activity levels of Purkinje cells, the output of the cerebellar cortex (Caesar et al., 2003a; Thomsen et al., 2004; Thomsen et al., 2009). Rather, it is determined solely by mossy fiber (Akg\u00f6ren et al., 1994; Gagliano et al., 2022; Mapelli et al., 2017) and climbing fiber (Caesar et al., 2003b; Mathiesen et al., 2000) input, with the former likely playing the dominant role (Attwell and Iadecola, 2002; Howarth et al., 2012).\n\nMossy fibers carry input from a wide array of neocortical areas, including prefrontal and parietal association cortices, as demonstrated directly through viral tracing studies in non-human primates (Kelly and Strick, 2003), and indirectly through resting-state functional connectivity (rs-FC) analysis in humans (Buckner et al., 2011; Ji et al., 2019; Marek et al., 2018; O\u2019Reilly et al., 2010). This means that increases in the cerebellar BOLD signal could simply reflect the automatic transmission of neocortical activity through fixed anatomical connections. As such, whenever a task activates a neocortical region, the corresponding cerebellar region would also be activated, regardless of whether the cerebellum is directly involved in the task or not.\n\nThe preceding arguments suggest that it is important to consider cerebellar activation in the context of the neocortical regions that provide its input. To approach this problem, we have recently developed and tested a range of cortical\u2013cerebellar connectivity models (King et al., 2023), designed to capture fixed, or task-invariant, transmission between neocortex and cerebellum. For each cerebellar voxel, we estimated a regularized multiple regression model to predict its activity level across a range of task conditions (King et al., 2019) from the activity pattern observed in the neocortex for the same conditions. The models were then evaluated in their ability to predict cerebellar activity in novel tasks, again based only on the corresponding neocortical activity pattern. Two key results emerged from this work. First, while rs-FC studies (Buckner et al., 2011; Ji et al., 2019; Marek et al., 2018) have assumed a 1:1 mapping between neocortical and cerebellar networks, models which allowed for convergent input from multiple neocortical regions to a single cerebellar region performed better in predicting cerebellar activity patterns. Second, when given a cortical activation pattern, the best performing model could predict about 50% of the reliable variance in the cerebellar cortex across tasks (King et al., 2023).\n\nThis model offers a powerful null model to evaluate whether the cerebellar BOLD signal can be fully explained by the fixed transmission of input from neocortex in a task-invariant manner. The fact that the prediction of these models did not reach the theoretically possible prediction accuracy suggests that the connectivity between the neocortex and cerebellum may not be fully task-invariant. Instead, neocortical input to the cerebellum may be modulated as a function of the relative importance of cerebellar computation in a task-specific manner. We refer to this as the selective recruitment hypothesis; specifically, we hypothesize that input is upregulated when cerebellar computation is required. Such task- or state-dependent gating would make evolutionary sense, given the substantial metabolic cost of granule cell activity (Attwell and Iadecola, 2002; Howarth et al., 2010).\n\nTo evaluate the selective recruitment hypothesis, we first turned to the motor domain where clinical studies provide a strong a priori hypothesis of when the cerebellum should be selectively recruited. Patients with cerebellar damage consistently show impairments in performing rapid alternating movements, a symptom called dysdiadochokinesia (Hallett et al., 1991; Mai et al., 1988). In contrast, these patients are generally able to exert grip forces comparable to healthy controls (Mai et al., 1988). Based on the selective recruitment hypothesis, we predicted that increases in cerebellar BOLD will be greater for increases in tapping speed compared to increases in finger force output, even when the neocortical activity is matched between conditions.\n\nWe then applied the approach in a cognitive domain. Working memory tasks have been shown to robustly activate hemispheric regions of cerebellar lobules VI, VII, and VIII (Chen and Desmond, 2005; Desmond et al., 1997). Furthermore, patients with cerebellar damage tend to show deficits in verbal working memory tasks (Cooper et al., 2012; Ilg et al., 2013; Kansal et al., 2017; Peterburs et al., 2010; Ravizza et al., 2006). However, the form of the deficits is unclear and quite variable (Hokkanen et al., 2006; McDougle et al., 2022; Pleger and Timmann, 2018; Starowicz-Filip et al., 2021), making it difficult to draw inferences concerning the computational contribution of the cerebellum to working memory tasks. We designed a digit span task that allowed us to evaluate three factors relevant for working memory: (1) task phase (encoding/recall), (2) memory load, and (3) information manipulation (forward/backward recall). We asked which combination of these three factors leads to selective recruitment in cerebellar working memory regions.\n\n## Results\n\n### Motor task\n\nTo test the selective recruitment hypothesis in the motor domain, we used a task which involved alternating finger presses of middle and ring finger (Figure 1). Starting at a baseline level of 1 Hz and 2.5 N, we either increased the force of each response or the required rate (Table 1). Both manipulations are expected to produce an increase in the BOLD response in neocortical motor areas (Diedrichsen et al., 2013; Thickbroom et al., 1998). As such, our task-invariant connectivity model predicts increased cerebellar activity with both increases in speed and force (Spraker et al., 2012). Critically, selective recruitment predicts that for equivalent activity levels in the neocortex, cerebellar activity should be higher in the speed than in the force condition.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig1-v1.jpg)\n\n**Figure 1.:** The height of the target force area indicated the target force, the number of white squares the target number of taps. During the press interval, the participant alternatively tapped the middle and ring finger. After each tap, the next box turned green. Reward feedback (e.g.,+4) was based on their performance.\n\n**Table 1.**\n Mean and between-subject standard deviation (\u00b1) of force, speed, and error rate for each condition across subjects.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Condition</th>\n      <th>Target force (N)</th>\n      <th>Target # taps in 6 s</th>\n      <th>Average force (N)</th>\n      <th>Average # taps in 6 s</th>\n      <th>Error rate (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>High speed</td>\n      <td>2.5</td>\n      <td>18</td>\n      <td>2.93 \u00b1 0.48</td>\n      <td>17.72 \u00b1 0.84</td>\n      <td>5 \u00b1 0.21</td>\n    </tr>\n    <tr>\n      <td>Medium speed</td>\n      <td>2.5</td>\n      <td>10</td>\n      <td>2.84 \u00b1 0.45</td>\n      <td>10.12 \u00b1 0.44</td>\n      <td>1 \u00b1 0.12</td>\n    </tr>\n    <tr>\n      <td>Baseline</td>\n      <td>2.5</td>\n      <td>6</td>\n      <td>2.80 \u00b1 0.41</td>\n      <td>6.32 \u00b1 0.8</td>\n      <td>15 \u00b1 0.36</td>\n    </tr>\n    <tr>\n      <td>Medium force</td>\n      <td>6</td>\n      <td>6</td>\n      <td>6.10 \u00b1 0.49</td>\n      <td>6.04 \u00b1 0.2</td>\n      <td>4 \u00b1 0.18</td>\n    </tr>\n    <tr>\n      <td>High force</td>\n      <td>10</td>\n      <td>6</td>\n      <td>9.73 \u00b1 0.66</td>\n      <td>6.04 \u00b1 0.2</td>\n      <td>2 \u00b1 0.13</td>\n    </tr>\n  </tbody>\n</table>\n\nParticipants complied well with task instructions, as evidenced by the group-averaged peak forces and number of taps, which were close to the target values (Table 1). The high error rate for the baseline condition reflects the fact that some of the participants completed the six taps in less than the minimum interval of 4 s in this very easy condition.\n\n### Increasing force and speed leads to increased activation in cortico-cerebellar motor network\n\nAs expected for right-hand movements, activation was observed in the hand areas of left (contralateral) M1 and S1 (Figure 2). Compared to the baseline condition, the combined M1/S1 region of interest (ROI) showed a significant activation increase in the high-force (t15 = 9.41, p = 1.10 \u00d7 10\u22127) and the high-speed conditions (t15 = 8.29, p = 5.54 \u00d7 10\u22127). Similarly, activity in the right anterior and posterior motor areas of the cerebellum (outlined in light gray in Figure 2, see Methods for details on ROI) increased with increasing force (t15 = 14.21, p = 4.14 \u00d7 10\u221210) and speed (t15 = 7.60, p = 1.59 \u00d7 10\u22126). The medium force and speed conditions were between baseline and high conditions, replicating previous findings of a parametric modulation of activity with both force (Spraker et al., 2012) and speed (J\u00e4ncke et al., 1999).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig2-v1.jpg)\n\n**Figure 2.:** Activity maps for high-force (left), baseline (middle), and high-speed (right) conditions. High levels of force and speed were chosen to show the spatial distribution of activity. Medium level of force and speed resulted in similar maps with activity levels between the baseline and high conditions. (A\u2013C) Lateral and medial surface of the left hemisphere. Dotted lines indicate the superior frontal, central, intra-parietal, and cingulate sulcus. (D\u2013F) Flat map of the cerebellum (Diedrichsen and Zotow, 2015) with lobular boundaries indicated in dotted line. The right anterior and posterior hand motor area (M3R, gray outline) was defined by a new functional atlas of the cerebellum (Nettekoven et al., 2024b).\n\nVisual inspection of the activation maps (Figure 2D vs. 2F) suggests that cerebellar activity increased more with speed than with force. One might take this result alone as an indication that recruitment of the cerebellum is relatively greater when the task requires the coordination of rapid finger movements compared to when an increase in force is required. However, the neocortical activation patterns for speed and force conditions were not completely matched (Figure 2A vs. 2C): Increasing speed led to more widespread activation in secondary motor areas compared to increasing force. Therefore, the observed differences in cerebellar activity could have resulted from additional fixed inputs from premotor and supplementary motor areas, rather than from a task-dependent recruitment of cerebellar circuits for the speed task.\n\n### Cerebellar activity for increased speed is larger than predicted by task-invariant connectivity\n\nTo distinguish these two hypotheses, we used our task-invariant cortico-cerebellar connectivity model (L2-regularized multiple regression, see methods), trained on a separate set of participants across a large range of tasks (King et al., 2023). This model provides an estimate of cerebellar activity expected from fixed anatomical connections with the neocortex. We take this as the reference point for asking if observed activation levels are greater than expected; what we use as our operational definition of selective recruitment. Figure 3A shows the connectivity weights from this model for the cerebellar right-hand area, region M3 (Nettekoven et al., 2024b). According to the model, inputs to cerebellar M3 do not only come from contralateral M1 and S1, but also from premotor and supplementary motor regions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig3-v1.jpg)\n\n**Figure 3.:** (A) Average connectivity weights from a group-level connectivity model (Ridge regression, multi-domain task battery [MDTB], task set A) for the cerebellar right-hand area shown on inflated surface of the left hemisphere. For evaluation of alternative connectivity models see Figure 3\u2014figure supplement 1. (B) Average observed cerebellar activation (y-axis) plotted against average prediction from the connectivity model (x-axis). Resting baseline (located at 0,0) is not shown explicitly but included in the regression. The error bars indicate the standard error of the mean of the signed residuals.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The connectivity model used in the main analysis was trained on task set A of the multi-domain task battery (MDTB) dataset using Ridge regression (King et al., 2023). As alternative connectivity models, we used Lasso regression on the same training set and a ridge regression model trained on five task-based datasets including MDTB (Nettekoven et al., 2024b). Predictive accuracy was calculated as the cosine similarity between observed and predicted activity patterns of all the task conditions used in this paper. Error bars indicate the standard error of predictive accuracy of the evaluated models.\n\nWe multiplied the neocortical activity patterns from each individual and condition with the connectivity weights from the model to predict the corresponding cerebellar M3 activity level. Note that the connectivity weights were estimated on subjects from independent task-based functional magnetic resonance imaging (fMRI) datasets; therefore, the predicted values were on a different scale compared to the observed values (Figure 3B). To account for this scaling difference, we used a simple linear regression between observed and predicted values.\n\nIn general, the predicted values closely match the observed values (average R2 = 0.60, standard error of the mean = 0.01). However, relative to the force conditions, the speed conditions resulted in larger cerebellar activity, even though the predicted activity was smaller. To test for systematic deviations across subjects, we submitted the signed residuals for all conditions to a one-way analysis of variance (ANOVA), revealing a significant effect of condition (F4, 60 = 6.796, p = 1.1 \u00d7 10\u22124). Post hoc tests revealed that the signed residual for the high-speed condition was significantly higher than for the high-force condition (t15 = 2.37, p = 0.0157). This was also the case when comparing medium speed and medium force (t15 = 1.94, p = 0.035). In summary, the increases in cerebellar activity for speed outstripped the activity increases for force, even when we accounted for differences in activity for the two conditions in neocortical input regions.\n\n### Alternative connectivity models\n\nWe recognize that our results depend on the connectivity model used to predict cerebellar activity. To ensure that our findings were robust, we replicated the results using two additional connectivity models (Figure 3\u2014figure supplement 1). First, we used an L1-regularized model, which resulted in sparser connectivity weights. In our previous study, we found that this model performed only slightly worse in predicting left-out data compared to the L2-regularized model (King et al., 2023). Second, we used a connectivity model that was trained on the entire multi-domain task battery (MDTB) dataset plus four additional large task-based datasets (Fusion model, see Methods). For both connectivity models, the predicted difference in the residual for the high-speed vs. high-force condition remained significant (L1 regression: t15 = 2.373, p = 0.0315, Fusion model: t15 = 2.140, p = 0.0492). Thus, consistent across various connectivity models, the results indicate selective recruitment of the cerebellum when the demands on finger coordination are increased relative to when the demands on force output are increased.\n\n### Working memory task\n\nWe conducted our initial test of the selective recruitment hypothesis using a motor task, for which we had a strong a priori prediction concerning the factors that lead to an upregulation of cortical input to the cerebellum. Having validated our approach here, we next turned to the cognitive domain, asking if our approach could help shed light on the functional contribution of the cerebellum to verbal working memory. Cerebellar activation, particularly in Lobules VI, Crus I, and VIII is consistently observed in fMRI studies of working memory (Cohen et al., 1997; Courtney et al., 1997; D\u2019Esposito and Postle, 2015; Nee et al., 2013). Here, we test if these cerebellar areas are especially recruited for a specific component process of working memory.\n\nWe implemented a digit span task in which participants memorized and subsequently recalled a sequence of visually presented digits (Figure 4A). Each trial began with a cue that signaled the recall direction (forward or backward) and the number of digits that had to be remembered (2, 4, 6). During the encoding phase, six digits were sequentially displayed from left to right at a rate of 1 digit/s. At the end of each 1-s presentation interval, the next digit was presented and the most recent digit either remained on the screen or was replaced by the hashtag symbol (#) if it had to be remembered. During the retrieval phase, all six digits had to be typed in on the keyboard, either backwards or forwards. Thus, while the memory load varied between two and six items, all conditions involved the presentation and production of six digits. On 25% of the trials (No-Go) the trial was terminated at the start of retrieval phase. The inclusion of these encoding-only trials gave us separate estimates of activity related to the encoding and retrieval phases (see methods). In summary, we measured activity for 12 conditions (2 recall directions \u00d7 3 memory loads \u00d7 2 phases).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig4-v1.jpg)\n\n**Figure 4.:** (A) Timeline of trial events. The cue signaled the recall direction (blue for backward and yellow for forward) and memory load (size of the white box indicated the number of memory digits) of the upcoming trial. During encoding, a new digit appeared every second and was replaced by the # symbol if it was a memory digit. After a 1-s delay, the task progressed to either the retrieval phase (Go trial) or skipped directly to the next trial (No-Go trials). (B) Proportion of error trials. Error bars indicate standard error of the mean across participants.\n\nFigure 4B shows the error rate (trials with at least one wrong press) during the scanning session. As expected, error rates increased with memory load and were also higher in the backwards condition. Consistent with previous imaging studies, the verbal working memory task led to high activity in the fronto-parietal network (Cohen et al., 1997; Courtney et al., 1997; D\u2019Esposito and Postle, 2015; Nee et al., 2013; Owen et al., 2005) during the encoding and retrieval phases (Figure 5). During the latter phase, we also observed activation in cortical motor areas, reflecting the response requirements of the task. Within the cerebellum, encoding and retrieval activated a superior region (lateral parts of lobule VI, extending to Crus I), as well as an inferior region (VIIb and VIIIa) (Chen and Desmond, 2005; Desmond et al., 1997). As observed previously for verbal working memory, the activity was more pronounced in the right than in the left cerebellar hemisphere (Desmond and Fiez, 1998). In our symmetric functional atlas (Nettekoven et al., 2024b), the best corresponding functional region was right D3 (see Methods, ROI).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig5-v1.jpg)\n\n**Figure 5.:** Group-averaged activation during the encoding (A) and retrieval (B) phases on an inflated representation of the left cerebral hemisphere (as in Figure 2). (C, D) Group average activity during the two phases in the cerebellum. The D3R subregion of the multi-demand network in the right cerebellar hemisphere was used in the main analysis (outlined in light gray).\n\n### Cerebellar activity for encoding at high load is larger than predicted by task-invariant connectivity\n\nTo estimate which neocortical regions provide input to our cerebellar ROI (D3R), we again used the task-invariant model of cortico-cerebellar connectivity model (King et al., 2023). The connectivity weights from the model (Figure 6A) suggest converging input from area 55b (located at the inferior end of the middle frontal gyrus), premotor eye field, area 6r (anterior to the primary motor cortex), and supplementary and cingulate eye field (SCEF, dorsomedial frontal cortex; Glasser et al., 2016). The model was used to predict activity in the cerebellar ROI for each condition and participant. After fitting a linear regression to account for scale differences between predicted and observed activations, we found that the predicted values matched the observed values relatively well at the individual level (R2 = 0.42, standard error = 0.01).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/96386/elife-96386-fig6-v1.jpg)\n\n**Figure 6.:** (A) Average connectivity weights from a group-level connectivity model for the cerebellar D3R region of interest. (B) Average observed cerebellar activation (y-axis) plotted against average prediction from the connectivity model (x-axis). Line shows the best linear relationship between predicted and observed activity with an intercept of zero. Error bars show standard error of the mean (SEM) of the signed residuals for each condition across subjects.\n\nTurning to our test of selective recruitment, there was one clear deviation where the observed cerebellar activation was greater than predicted (Figure 6B): During encoding in the highest load condition. A repeated 1-factor measures ANOVA on the residuals across all 12 conditions found a systematic deviation across participants (F11, 165 = 2.22, p = 0.0156). When we analyze the residuals using a 2 (phase) \u00d7 2 (recall direction) \u00d7 3 (load) ANOVA, we found a significant two-way interaction between load and phase (F2, 30 = 4.38, p = 0.02), but no significant effect of recall direction (F1, 15 = 0.95, p = 0.34). Thus, the results indicate selective recruitment of the cerebellum when the number of items to be encoded into working memory is high, an effect that holds for both the forward and backwards conditions.\n\nAs with the motor task, we repeated the analyses using two other cortico-cerebellar connectivity models. The same pattern of results was found with a significant difference across conditions (L1-regularized model trained on the MDTB dataset: F11, 165 = 2.34, p = 0.0105; L2-regularized model trained on five datasets: F11, 165 = 2.55, p = 5.3 \u00d7 10\u22123) due to a significant deviation from the predicted level of activation during encoding with a load of 6.\n\n## Discussion\n\nFunctional neuroimaging studies have shown that the human cerebellum is activated across a broad range of task domains. However, before inferring that the cerebellum contributes causally to these task, we need to consider that the BOLD signal in the cerebellar cortex is likely dominated by mossy-fiber input (Alahmadi et al., 2015; Alahmadi et al., 2016; Gagliano et al., 2022; Mapelli et al., 2017; Mathiesen et al., 2000; Thomsen et al., 2004; Thomsen et al., 2009), which in humans mostly carry information from neocortex. Thus, BOLD activation changes observed in the cerebellar cortex could be a consequence of the transmission of information through fixed anatomical connections. Given this possibility, it is problematic to assume that the activation implies a significant functional contribution, let alone make inferences about the nature of that contribution.\n\nOur first experiment in the motor domain clearly illustrates this problem. We found highly significant increases in the cerebellar BOLD signal for increases in both movement speed and force. Using the inferential logic traditionally employed in neuroimaging, one might conclude that the cerebellum plays a functional role in regulating both parameters. However, clinical studies have shown that cerebellar pathology results in a marked impairment in the ability to produce fast alternating movements, but has little impact on maximal force generation (Mai et al., 1988). This suggests that some observed change in cerebellar activity may not be functionally involved in controlling behavior.\n\nTo address these concerns, we first needed a strong null model: We used a cortico-cerebellar connectivity model (King et al., 2023), which was optimized to predict cerebellar activity based only on neocortical activity patterns across a wide array of tasks; thus, it provides a prediction of the expected cerebellar activity for any task if all cerebellar activity was indeed caused by a fixed, task-invariant transmission of activity from neocortex. This prediction takes into account that some functional networks, such as the fronto-parietal and salience networks, occupy a relatively larger area of the cerebellum than of the neocortex (Buckner et al., 2011; Marek et al., 2018), and that there will be variation in convergence across the cerebellar cortex. As shown in our previous study (King et al., 2023), this model provides a good prediction of cerebellar activity across a broad range of tasks, including those not used in developing the model. This confirms that a large proportion of the observed variation of cerebellar activity across tasks can be accounted for by fixed functional connections between neocortical and cerebellar regions.\n\nThe central idea explored in the current paper is that systematic deviations from this null model would occur, if neocortical input was upregulated when the cerebellum is required for a task (and/or downregulated when it is not). We first tested this selective recruitment hypothesis in the motor domain, where we had the strong a priori prediction: If input to the cerebellum is gated in a task-specific manner, then it should be upregulated during the production of fast alternating finger movements as compared to the production of high forces with the same fingers. This was indeed the case; activity in the cerebellar hand area increased more for increasing speed than force, even when activity in the neocortical hand areas was approximately matched across conditions. These results provide clear evidence for task-dependent gating (Cole et al., 2021).\n\nThis phenomenon now offers a new, more stringent criterion to infer functional involvement of the cerebellum: Rather than focusing on activation for a given task per se, we can now test if a cerebellar area is selectively recruited for a task. If the input to the cerebellum is upregulated in a task-specific manner, then the observed cerebellar activity should be larger than precited using the simultaneously observed neocortical activity and a task-invariant connectivity model. We can apply this approach to cognitive and social task to provide new insights into the contribution of the cerebellum in these domains.\n\nAs a first application, we chose to investigate cerebellar activation during a working memory task. Previous studies have consistently shown deficits in verbal working memory in cerebellar patients (Ilg et al., 2013; Kansal et al., 2017; Ravizza et al., 2006). The exact nature of these deficits, however, is still a matter of considerable debate. Here we tested whether a variation in memory load, recall direction (requiring reversal of digits during backward recall), task phase (encoding vs. retrieval), or some combination of these factors, would lead to selective recruitment of the cerebellum. We found strong activity in cerebellar working memory regions across all conditions, with the retrieval phase for six items recalled in reversed order leading to most activation. Following the traditional neuroimaging inference approach, these results would be taken as evidence for cerebellar involvement in item manipulation during retrieval.\n\nOur new analysis, however, highlights that the corresponding neocortical working memory regions also showed the highest activation level during this condition and, importantly, that the cerebellar activity in this condition was well predicted using a task-invariant connectivity model. In contrast, the connectivity-based analysis identified the encoding of six items into working memory (for both forward and backward retrieval) as a condition for which the observed cerebellar activity outstripped the prediction by the null model. This suggests that the cerebellum has a special role in encoding larger item sets into working memory. Further experiments using other working memory tasks and a more detailed manipulation of encoding, maintenance and manipulation processes will be required to precisely pinpoint the functional contribution of the cerebellum in this domain. Nonetheless, the current findings already provide important constraints on the cerebellar role in working memory, demonstrating the utility of our selective recruitment approach for studying cerebellar function in cognition.\n\nIn terms of using this new approach to investigate cerebellar function, there are a number of important methodological factors to consider. First, the analysis heavily depends on the connectivity model that is used to predict the cerebellar activity. We addressed this issue by considering multiple models, including variations that allowed for more or less convergence (King et al., 2023). We also showed that the results hold when using a model that is trained on a larger number of datasets (Nettekoven et al., 2024b), a step that improved the overall predictive accuracy of the approach (see Figure 3\u2014figure supplement 1). To be perfectly clear, we do believe that the task-invariant connectivity model is, as all models, ultimately wrong (Box, 1976). Indeed, our current study shows clear and systematic deviations from the model\u2019s prediction. Nonetheless, we consider it to be a useful model, in that it can serve as a strong null hypothesis, one that can be used to test for task-specific upregulation of activity. Therefore, our approach will benefit from further improvements of the model, such that it approximates the average cortico-cerebellar connectivity as closely and representatively as possible.\n\nSecond, the connectivity model, as it is currently constructed, does not predict the absolute level of cerebellar activity, but rather activity for one condition relative to other conditions. This limitation arises from the fact that the absolute magnitude of the BOLD signal in the cerebellum depends on many measurement-related factors, and the fact that we need to apply relatively heavy regularization to obtain good model performance. We therefore need to estimate the linear relationship between predicted and observed activity for each participant separately. Thus, our approach currently relies on the comparison to control conditions that activate similar neocortical regions to comparable extent, but recruit the cerebellum to a lesser degree.\n\nThird, cortico-cerebellar connectivity is of course bidirectional. In our model, we do not model the influence of the cerebellum on neocortical activity, mediated through projections from the deep cerebellar nuclei to the thalamus. The simple reason for this decision is that cerebellar activity does not reflect the output firing of the Purkinje cells (Caesar et al., 2003a; Thomsen et al., 2004; Thomsen et al., 2009) and that, in contrast to cerebellar activity, cortical activity is determined by many other sources, including powerful cortico-cortical connectivity (King et al., 2023).\n\nFinally, our approach does not allow us to conclude that the cerebellum is not necessary for a task when selective recruitment is not observed. Our approach simply shows that much of cerebellar activity can be fully accounted for by a task-invariant transmission of information from the neocortex, raising the possibility that this observed activity is an epiphenomenon of cortical input. Indeed, it would be very surprising if task-dependent gating was so complete that we would not see any activity in cerebellar circuits that receive input from activated cortical regions. Given this, we should expect some cerebellar activity even when the cerebellum makes minimal contributions to task performance (as observed in the force condition). Overall, we believe that showing task-specific violations on a task-invariant connectivity model provides much stronger evidence for a specific cerebellar role in a task than the mere presence of activity.\n\nAn important question for future study centers on elucidating the neurophysiological mechanisms that underlie task-dependent gating of cortical input to the cerebellum. One obvious candidate for gating are the pontine nuclei which integrate descending signals from different neocortical areas with feedback signals from the cerebellum (Schwarz and Thier, 1999). The cellular properties of pontine neurons are ideal for gating input signals in a state-dependent manner (M\u00f6ck et al., 1997). Alternatively, gating could be achieved via modulation within the granule cell layer itself, perhaps via recurrent loops involving inhibitory Golgi cells (Maex and De Schutter, 1998). Violations of our connectivity model may also be caused by increased climbing fiber input under specific task conditions. Finally, gating may already occur in the neocortex: A recent study (Park et al., 2022) showed more recruitment of neocortical neurons that project to the pons when controlling the spatial aspects of joystick manipulation, and more recruitment of neurons that project intra-cortically or to the striatum when controlling movement amplitude. Because the neocortical BOLD signal reflects the activity of both neuronal populations, pontine-projecting neurons may be more engaged during fast alternating movements, even though the fMRI activity is the same as during the production of high forces.\n\nWhichever combination of mechanisms is responsible for our observed effect, task-dependent gating of inputs to the cerebellum would be highly adaptive from a metabolic standpoint (Attwell and Iadecola, 2002): the costly mossy-fiber system would be most activated when cerebellar computation is required. For us as researchers, this gating phenomena offers a promising new keyhole that may allow us to unlock the use of fMRI for testing cerebellar contributions across cognitive tasks (Diedrichsen et al., 2019).\n\n## Methods\n\n### Participants\n\nAll participants gave informed consent under an experimental protocol approved by the Institutional Review Board at Western University (Protocol #107293). None of the participants reported a history of neurological or psychiatric disorders or current use of psychoactive medications. A total of 21 participants started the experiment. Of these, four participants were not scanned because of poor performance during the behavioral training session. The remaining 17 participants performed the tasks inside the scanner. The data for one participant were excluded due to an incidental finding. Therefore, the analyses were based on the data from 16 participants (8 females, 8 males, mean age = 25, std age = 2).\n\n### Apparatus and stimuli\n\nParticipants used a custom-made 5-key finger keyboard to perform the finger tapping and digit span tasks. A force transducer, located under each key (FSG15N1A, Honeywell Sensing and Control; dynamic range, 0\u201325 N), continuously recorded the isometric force exerted by each finger at a rate of 500 Hz. We recalibrated each sensor (no force applied) at the beginning of each run to correct for drift. The applied force was continuously displayed to the participants in form of five short horizontal bars that moved along the vertical axis proportional to force exerted by each finger (Figure 1A: applied forces).\n\n### Procedure\n\n#### Finger tapping task\n\nEach trial was randomly selected from one of five conditions (Table 1). In all conditions, the response interval lasted for 6 s and participants were instructed to adopt a rate to distribute their responses evenly across this interval. For the Baseline condition, the target force was 2.5 N, and the instructed number of presses was 6 (i.e., optimal performance is 1 response/s). For the medium and high-force conditions, the target force was either 6 or 10 N, with the target number of presses fixed at 6. For the medium and high-speed conditions, the target number of presses was 10 or 18, with the target force fixed at 2.5 N.\n\nA trial started with a short cueing phase (500 ms) during which two numeric characters (3 and 4) were presented on the screen, instructing the participant to tap with the right middle and ring finger. The required force level was indicated by a gray box that extended from 80% to 120% of the trial\u2019s target force (Figure 1, target force area), and the required number of presses by either 6, 10, or 18 small gray squares (Figure 1, instructed # taps).\n\nAfter the 500 ms cueing phase, the two rectangles framing the digits turned from white to green, signaling to the participants to perform alternating finger presses. A horizontal green line (Figure 1, timer) started growing from left to right, indicating the passing of time. A press was registered when the force exceeded 80% of the target force (lower bound of the target force area). At this point, the force area changed color from gray to green and the color of the corresponding press square changed. When the force level returned to <1 N, the force area color changed back to gray.\n\nAfter the response phase, participants received performance feedback. If the participant made the required number (\u00b12) of alternating movements and completed the set of responses within 4\u20136 s, they received visual feedback indicating they had earned four points. This response time window was relatively liberal, because our main focus was not to match speeds exactly, but to get sufficient variation across conditions. All other outcomes were considered errors and were not rewarded (0 points). If the average exerted force for the trial exceeded 120% of the target force, the experimenter provided verbal feedback, asking the participant to press with less force. The message \u2018TOO FAST\u2019 was displayed if total movement time was shorter than 4 s or if the number of produced presses exceeded the instructed number by more than two. The message \u2018TOO SLOW\u2019 was displayed if the number of produced presses by the end of the 6-s interval was 3 or more below the instructed number of presses. Visual feedback (points or error message) remained on the screen for 500 ms. After a delay of 500 ms (inter-trial interval), the next trial began with the appearance of the next cue.\n\n#### Digit span task\n\nEach trial started with a short cuing phase (500 ms), during which a red frame was presented outlining where the digits would appear along with a colored square on the left side that specified the recall direction (orange = forward recall; blue = backward recall). A white box within the red frame outlined the digits that would have to be remembered (2, 4, or 6). After the cue phase, a 6-s encoding phase started. Six digits were presented sequentially (1 s/digit) from left to right. The digits were drawn randomly (with replacement) from the set 1\u20135. The digits in the white box changed to a # symbol after 1 s; the other digits remained on the screen. For loads 2 and 4, the white box always encompassed the digits in the middle of the sequence (e.g., 13##45 or 1####5).\n\nThe encoding phase ended after the 1-s display time of the last digit and was followed by an additional 1-s delay. Following this, the procedure followed one of two paths. On No-Go trials, the screen blanked and 500 ms later, a new trial started with the cueing phase. These trials were included to be able to separate the activity associated with memory encoding and retrieval phases (see fMRI first-level analysis). On Go trials, the frame surrounding the digits turned green, indicating the start of the retrieval phase. Participants were instructed to press the key linked to the digit (1: thumb, 2: index, 3: middle, 4: ring, 5: pinky), either from memory or, for loads 2 and 4, from the visible digits on the screen. For forward trials (orange square), the participant was instructed to produce the responses to match the order observed in the encoding phase. For backwards trial (blue square), the participant was to reverse the sequential order of the digits, producing the right-most digit (last cued during encoding) first. For both conditions, the retrieval phase lasted for 7 s in total, giving participants enough time to complete the response (based on pilot work). To roughly match the speed of responding between the very easy (forward load 2) and very difficult (backwards load 6) conditions, participants were instructed to evenly space their responses across the 7-s retrieval period.\n\nParticipants received visual feedback immediately after each response. If the response was correct, the corresponding hashtag or digit turned green, if incorrect, red. Only one response was allowed for each item. At the end of the retrieval phase, participants received additional feedback for 500ms summarizing trial performance (+4: all correct; +3: 1 error; +2: 2 errors; 0: otherwise). This point system was selected to encourage participants to attempt to recall each item.\n\n#### Experimental sessions\n\nEach participant completed two sessions, a practice session conducted outside the scanner and a test session conducted in the scanner. Each session involved five runs of the finger tapping task interleaved with five runs of the digit span task. Each run of the finger tapping task consisted of 5 repetitions of each of the 5 conditions with the order randomized (total of 25 trials/run, approx. 5 min/run). Each run of the digit span task consisted of three Go trials and one No-Go trial for each of the six conditions (3 Set sizes \u00d7 2 Recall Directions) with the order fully randomize (total of 24 trials/run, approx. 8 min/run). The practice session was completed between 3 and 10 days prior to the scanning session.\n\n### Image acquisition\n\nMRI data were acquired on a 3T Siemens Prisma at the Center for Functional and Metabolic Mapping (CFMM) at Western University. A high-resolution whole-brain anatomical MPRAGE image was acquired at the beginning of the scanning session voxel size = 1 mm3, field-of-view = 25.6 \u00d7 25.6 \u00d7 25.6 cm3. Whole-brain functional images were acquired using an echo-planar imaging sequence with Repetition time (TR) = 1000 ms, Echo time (TE) = 30 ms, voxel size = 2.5 \u00d7 2.5 \u00d7 3 mm3, field-of-view = 20.8 \u00d7 20.8 \u00d7 20.8 cm3, 48 slices, P to A phase encoding direction, with multi-band acceleration factor = 3 (interleaved) and in-plane acceleration factor = 2. Gradient echo field maps were acquired to correct for distortions due to B0 inhomogeneities (acquisition parameters: voxel size = 3 \u00d7 3 \u00d7 3 mm3, field-of-view = 24 \u00d7 24 \u00d7 24 cm3). Physiological signals of heartbeat and respiration were recorded online during each functional run. Each functional run of the finger tapping task lasted ~5 min (260 volumes) and each run of the digit span task lasted for ~8 min (412 volumes).\n\n### fMRI data processing\n\nWe used tools from SPM12 (Friston et al., 1994) and custom written code in MATLAB 2018b to process the functional and anatomical data. We defined an individual coordinate system for each subject by setting the origin of the anatomical image to the approximate location of the anterior commissure. Anatomical images were segmented into gray matter, white matter, csf, and skull. Functional images were corrected for head motion using the six-parameter rigid body transformation and were then co-registered to the individual anatomical image. The mean functional image and the results of anatomical segmentation were used to generate a gray matter mask for functional images. Slice timing correction, smoothing, and group normalization were not applied at this stage.\n\n### fMRI first-level analysis\n\nA first-level general linear model (GLM) was fit to the time series data of each run separately using SPM12. For the motor dataset, each condition was modeled as a separate regressor using a 6-s boxcar covering the response interval, convolved with a canonical hemodynamic response function (HRF). Error trials (approx. 5% of all trials) were modeled as one single regressor in the GLM and this regressor was discarded from further analysis.\n\nFor the working memory task, the encoding phase was modeled using a 7-s boxcar including 6 s of digit sequence display and the 1-s delay. The retrieval phase was modeled using a separate 7-s boxcar regressor covering the response interval. In Go trials, the two regressors therefore followed each other immediately, leading to a substantial correlation after the convolution with the HRF. However, the inclusion of 25% No-Go trials, for which only the encoding regressor was present, de-correlated the encoding and retrieval regressors sufficiently to enable stable and accurate estimate of the two processes. For analysis of imaging data, we chose to include all trials, including trials in which the participants made an error. We justify this given that there was no evidence indicating that any participant ceased trying to do the task; as such, it is reasonable to assume that trials resulting in an error engaged the same memory processes.\n\nBeta weights estimated by the first-level GLM were divided by residual-root-mean-square image, resulting in normalized activity estimates for each voxel, condition, and run. Rest was not modeled explicitly but served as an implicit baseline. Functional and anatomical data were transformed into a cortical and cerebellar atlas using a unified code framework (available on GitHub; copy archived at Nettekoven et al., 2024a).\n\n### Cerebellar normalization\n\nThe cerebellum was isolated from the rest of the brain and segmented into white and gray matter using the Spatially Unbiased Infratentorial Template (SUIT) toolbox (Diedrichsen, 2006), followed in some cases by hand correction. Cerebellar white and gray matter probabilistic maps were deformed simultaneously into SUIT atlas space using a non-linear deformation algorithm (Ashburner, 2007). The deformation was applied to both anatomical images, and the normalized beta weights from the first-level GLM. Before normalization, the isolation mask was applied to discard the influence of adjacent inferior and occipital neocortical areas. For visualizations, the functional maps were projected onto a flat representation of the cerebellum (Diedrichsen and Zotow, 2015) using the SUIT toolbox.\n\n### Neocortical normalization\n\nFor each participant, the anatomical image was used to reconstruct neocortical white matter and pial surface using Freesurfer (Fischl, 2012). Reconstructed surfaces were inflated to a sphere and registered to the fsLR 32 k node template (Van Essen et al., 2012) using a sulcal-depth map and local curvature. Neocortical activity patterns were projected onto these surfaces by averaging the activation values of voxels touching the line between corresponding vertices of the individual white matter and pial surface.\n\n### ROI selection\n\nFor both datasets, we used a new symmetric functional atlas of the human cerebellum (Nettekoven et al., 2024b) that integrates data from seven large task-based datasets. The regions within this parcellation were estimated using a hierarchical Bayesian approach, with the constraint that the boundaries between regions were symmetric in the left and right hemispheres. For the motor dataset, we focused on right M3, a subregion of the motor domain that shows high selectivity for right-hand movements. For the working memory dataset, we focused on right D3, a subregion of the multi-demand network that that showed the clearest response to verbal digit span and verbal N-back tasks in the training data for the atlas.\n\n### Connectivity model\n\nWe used task-invariant models of cortico-cerebellar connectivity to predict the activity pattern in the cerebellar ROI given the activity pattern in the cerebral cortex (King et al., 2023). This served as the null model from which we could evaluate the deviations in activity patterns, the test of the selective recruitment hypothesis. The models were trained on a large dataset with N = 24 subjects, each of whom was scanned for ~6 hr using two sets of tasks spanning a large range of motor and cognitive domains (MDTB; King et al., 2019). Each task set was performed in two sessions. For each participant, the neocortical surface was subdivided using regular icosahedron parcellations of different granularities, resulting in P = 80\u20131848 parcels. The normalized activity estimates (see first-level analysis) for all N conditions were then averaged within each parcel and collected into a N \u00d7 P matrix. These neocortical activations served as the predictors in the model (X). The normalized activity estimates for the cerebellum were extracted in SUIT space at an isotropic resolution of 3 mm, resulting in an N \u00d7 Q (29 \u00d7 6918) matrix (Y). We estimated the P \u00d7 Q matrix of connectivity weight (W) by minimizing the square error of the linear regression model Y = X W + E. To regularize this underspecified estimation problem, we employed either L1 regularization (Lasso) or L2-regualrizarion (Ridge regression). Hyperparameters were tuned using fivefold cross-validation within the training data (see King et al., 2023 for details).\n\nThe models were trained on the first task set (N = 29 task conditions) and evaluated on the second task set of the MDTB (N = 32 different task conditions acquired from the same participants). Predictive accuracy of the model was defined as the Pearson correlation between the observed and predicted response profile of each voxel across the tasks. For the present paper, we selected the model with the highest predictive accuracy across subjects, a ridge-regression model with a regularization parameter of $\\lambda=exp\u2061$ (8) and 1848 neocortical parcels/predictors. We also used the Lasso model $\\lambda=exp\u2061$ (\u22125), 1848 neocortical parcels, to assess the generality of the results.\n\nFinally, we also tested an improved connectivity model that was obtained by integrating data from five task-based datasets (including MDTB), totaling 376 task conditions, 87 subjects, and 383 hr of imaging data (Nettekoven et al., 2024b). These new connectivity models were optimized and estimated on the individual subject level within each dataset, using L2-regularized regression (Ridge), and then averaged across all subjects and datasets. The data from the current study were not included in the derivation of these connectivity models.\n\nTo generate the predicted activity pattern, we used group-averaged connectivity weights for each voxel in the cerebellar ROI. We extracted the functional neocortical data by averaging the individual data within each of the 1848 neocortical parcel. As rest was not modeled explicitly in our first-level analyses, we added the resting baseline as a row of zeros to both the cortical and cerebellar data. In this way, the connectivity model was required to simultaneously predict the differences between conditions and the differences between each condition and rest. The matrix of individual neocortical activations was multiplied using the group-averaged connectivity weights to arrive at an individual prediction for each cerebellar voxel.\n\nGiven that connectivity weights were derived from a different dataset with different subjects and different signal-to-noise ratios (SNR), we fitted a simple linear regression line for each participant between the observed cerebellar activation and the model predictions for the selected ROI. The slope of the line accounts for differences in SNR between the two datasets. Even though rest is not shown in Figures 3B and 6B, it was included as a datapoint at (0,0) for the regression analysis. The residuals from this regression analysis were used for statistical testing across participants.\n",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marius V Peelen, Radboud University Nijmegen Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96386.3.sa0](https://doi.org/10.7554/eLife.96386.3.sa0)\n\nThis important study reports a novel approach to studying cerebellar function based on the idea of selective recruitment using fMRI. It provides convincing evidence for task-dependent gating of neocortical input to the cerebellum during a motor task and a working memory task. The study will be of interest to a broad cognitive neuroscience audience.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96386.3.sa1](https://doi.org/10.7554/eLife.96386.3.sa1)\n\nThis is an interesting and well-written paper reporting on a novel approach to studying cerebellar function based on the idea of selective recruitment using fMRI. The study is well-designed and executed. Analyses are sound and results are properly discussed. The paper makes a significant contribution to broadening our understanding of the role of cerebellum in human behavior.\n\nIn the revision, the authors did an excellent job in addressing my concerns.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96386.3.sa2](https://doi.org/10.7554/eLife.96386.3.sa2)\n\nSummary:\n\nShahshahani and colleagues used a combination of statistical modelling and whole-brain fMRI data in an attempt to separate the contributions of cortical and cerebellar regions in different cognitive contexts.\n\nStrengths:\n\n* The manuscript uses a sophisticated integration of statistical methods, cognitive neuroscience and systems neurobiology.\n\n* The authors use multiple statistical approaches to ensure robustness in their conclusions.\n\n* The consideration of the cerebellum as not a purely 'motor' structure is excellent and important.\n\nWeaknesses:\n\n* The assumption that cortical BOLD responses in cognitive tasks should be matched irrespective of cerebellar involvement does not cohere directly with the notion of 'forcing functions' introduced by Houk and Wise, suggesting the need for future work.\n",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b9318595-a6ac-4472-b365-875005aa213b",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C1",
+      "claim": "The cerebellar BOLD signal does not reflect the activity levels of Purkinje cells, the output of the cerebellar cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellar blood-oxygen-level-dependent (BOLD) signal does not reflect the activity levels of Purkinje cells, the output of the cerebellar cortex (Caesar et al., 2003a; Thomsen et al., 2004; Thomsen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Caesar et al., 2003a; Thomsen et al., 2004; Thomsen et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "d17d315f-9d22-4e88-b2f9-e77f8c84cf14",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C2",
+      "claim": "The cerebellar BOLD signal is determined solely by mossy fiber and climbing fiber input.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, it is determined solely by mossy fiber (Akg\u00f6ren et al., 1994; Gagliano et al., 2022; Mapelli et al., 2017) and climbing fiber (Caesar et al., 2003b; Mathiesen et al., 2000) input, with the former likely playing the dominant role (Attwell and Iadecola, 2002; Howarth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies on mossy fiber and climbing fiber contributions",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "40c8441d-bbc7-4c09-a81d-7da8f915f4d2",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C3",
+      "claim": "Mossy fibers carry input from a wide array of neocortical areas, including prefrontal and parietal association cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Mossy fibers carry input from a wide array of neocortical areas, including prefrontal and parietal association cortices, as demonstrated directly through viral tracing studies in non-human primates (Kelly and Strick, 2003), and indirectly through resting-state functional connectivity (rs-FC) analysis in humans (Buckner et al., 2011; Ji et al., 2019; Marek et al., 2018; O'Reilly et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to viral tracing studies and resting-state functional connectivity analyses",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "ed0c4ccf-339e-4f90-83c6-b0f2b7dafa82",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C5",
+      "claim": "The best performing connectivity model could predict about 50% of the reliable variance in the cerebellar cortex across tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, when given a cortical activation pattern, the best performing model could predict about 50% of the reliable variance in the cerebellar cortex across tasks (King et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to King et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "c084b274-d69d-45f8-9d5d-31d4fc69a26c",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C6",
+      "claim": "Patients with cerebellar damage consistently show impairments in performing rapid alternating movements, a symptom called dysdiadochokinesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with cerebellar damage consistently show impairments in performing rapid alternating movements, a symptom called dysdiadochokinesia (Hallett et al., 1991; Mai et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to clinical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "a572915f-ebf9-4bd1-bc73-2b88a8abb813",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C7",
+      "claim": "Patients with cerebellar damage are generally able to exert grip forces comparable to healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, these patients are generally able to exert grip forces comparable to healthy controls (Mai et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mai et al., 1988",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "876eb51e-1458-4354-ada5-7873004b72b9",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C8",
+      "claim": "Cerebellar activation, particularly in Lobules VI, VII, and VIII is consistently observed in fMRI studies of working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebellar activation, particularly in Lobules VI, Crus I, and VIII is consistently observed in fMRI studies of working memory (Cohen et al., 1997; Courtney et al., 1997; D'Esposito and Postle, 2015; Nee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple fMRI studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "ad56bf42-f7cd-477f-95e0-8f895c95e3ac",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C9",
+      "claim": "Patients with cerebellar damage tend to show deficits in verbal working memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, patients with cerebellar damage tend to show deficits in verbal working memory tasks (Cooper et al., 2012; Ilg et al., 2013; Kansal et al., 2017; Peterburs et al., 2010; Ravizza et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple patient studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "fff25018-5d75-464c-ae58-a80b11f07dfa",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C10",
+      "claim": "Participants complied well with task instructions in the motor task, as evidenced by group-averaged peak forces and number of taps being close to target values.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants complied well with task instructions, as evidenced by the group-averaged peak forces and number of taps, which were close to the target values (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data presented in Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "4156b0e1-62a2-4c7e-b264-8fb30dd2d982",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C11",
+      "claim": "The combined M1/S1 region showed a significant activation increase in the high-force condition compared to baseline (t15 = 9.41, p = 1.10 \u00d7 10\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the baseline condition, the combined M1/S1 region of interest (ROI) showed a significant activation increase in the high-force (t15 = 9.41, p = 1.10 \u00d7 10\u22127) and the high-speed conditions (t15 = 8.29, p = 5.54 \u00d7 10\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "92f4e5cc-6018-4c38-873e-b1b52bf83dfc",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C12",
+      "claim": "The combined M1/S1 region showed a significant activation increase in the high-speed condition compared to baseline (t15 = 8.29, p = 5.54 \u00d7 10\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the baseline condition, the combined M1/S1 region of interest (ROI) showed a significant activation increase in the high-force (t15 = 9.41, p = 1.10 \u00d7 10\u22127) and the high-speed conditions (t15 = 8.29, p = 5.54 \u00d7 10\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "54650bbc-b57b-46cd-a714-248f58aa4068",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C13",
+      "claim": "Activity in the right anterior and posterior motor areas of the cerebellum increased with increasing force (t15 = 14.21, p = 4.14 \u00d7 10\u221210).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, activity in the right anterior and posterior motor areas of the cerebellum (outlined in light gray in Figure 2, see Methods for details on ROI) increased with increasing force (t15 = 14.21, p = 4.14 \u00d7 10\u221210) and speed (t15 = 7.60, p = 1.59 \u00d7 10\u22126).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "a50426e3-8de3-4b8e-9415-4bd902b79ea6",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C14",
+      "claim": "Activity in the right anterior and posterior motor areas of the cerebellum increased with increasing speed (t15 = 7.60, p = 1.59 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, activity in the right anterior and posterior motor areas of the cerebellum (outlined in light gray in Figure 2, see Methods for details on ROI) increased with increasing force (t15 = 14.21, p = 4.14 \u00d7 10\u221210) and speed (t15 = 7.60, p = 1.59 \u00d7 10\u22126).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of fMRI data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "7826022a-732c-4711-85cd-e34b74c1e0d7",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C15",
+      "claim": "Increasing speed led to more widespread activation in secondary motor areas compared to increasing force.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the neocortical activation patterns for speed and force conditions were not completely matched (Figure 2A vs. 2C): Increasing speed led to more widespread activation in secondary motor areas compared to increasing force.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by visual inspection of activation maps in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "921e444d-f19d-40ac-88ce-b5c70fbe6051",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C16",
+      "claim": "The predicted values from the connectivity model closely match the observed cerebellar values (average R2 = 0.60, standard error of the mean = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the predicted values closely match the observed values (average R2 = 0.60, standard error of the mean = 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis comparing predicted and observed values",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "e26c3b62-1c51-4e38-af94-7bac4f2d9b6a",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C17",
+      "claim": "There was a significant effect of condition on signed residuals (F4, 60 = 6.796, p = 1.1 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "To test for systematic deviations across subjects, we submitted the signed residuals for all conditions to a one-way analysis of variance (ANOVA), revealing a significant effect of condition (F4, 60 = 6.796, p = 1.1 \u00d7 10\u22124).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ANOVA statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "f63db38f-4337-4c3d-8cd1-d4f271a3a99a",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C18",
+      "claim": "The signed residual for the high-speed condition was significantly higher than for the high-force condition (t15 = 2.37, p = 0.0157).",
+      "claim_type": "EXPLICIT",
+      "source": "Post hoc tests revealed that the signed residual for the high-speed condition was significantly higher than for the high-force condition (t15 = 2.37, p = 0.0157).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by post hoc statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "59d80f88-531f-4e80-ae60-1b8f0bae37ae",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C19",
+      "claim": "The signed residual for medium speed was significantly higher than for medium force (t15 = 1.94, p = 0.035).",
+      "claim_type": "EXPLICIT",
+      "source": "This was also the case when comparing medium speed and medium force (t15 = 1.94, p = 0.035).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by post hoc statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "fcb0c943-1885-4cb9-9aa4-445a420be607",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C20",
+      "claim": "The increases in cerebellar activity for speed outstripped the activity increases for force, even when accounting for differences in neocortical input regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the increases in cerebellar activity for speed outstripped the activity increases for force, even when we accounted for differences in activity for the two conditions in neocortical input regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of residuals from connectivity model predictions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "bd0a644b-8051-449f-90c5-3a1e3637e71f",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C21",
+      "claim": "Error rates in the working memory task increased with memory load.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, error rates increased with memory load and were also higher in the backwards condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "02ff3660-6061-4f9e-aa9e-b65cf287d819",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C22",
+      "claim": "Error rates in the working memory task were higher in the backwards condition.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, error rates increased with memory load and were also higher in the backwards condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "5998c5ec-c5c6-43bf-8fe2-0484c73b8ed1",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C23",
+      "claim": "The verbal working memory task led to high activity in the fronto-parietal network during the encoding and retrieval phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous imaging studies, the verbal working memory task led to high activity in the fronto-parietal network (Cohen et al., 1997; Courtney et al., 1997; D'Esposito and Postle, 2015; Nee et al., 2013; Owen et al., 2005) during the encoding and retrieval phases (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fMRI data shown in Figure 5 and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "88e942c9-15a4-40f5-86c9-91fa29fd75ec",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C24",
+      "claim": "During the retrieval phase, activation was observed in cortical motor areas, reflecting the response requirements of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "During the latter phase, we also observed activation in cortical motor areas, reflecting the response requirements of the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fMRI data and inference about task demands",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "3c814f49-8fd8-4e87-9974-6e6a8876a0a4",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C25",
+      "claim": "Within the cerebellum, encoding and retrieval activated a superior region (lateral parts of lobule VI, extending to Crus I), as well as an inferior region (VIIb and VIIIa).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the cerebellum, encoding and retrieval activated a superior region (lateral parts of lobule VI, extending to Crus I), as well as an inferior region (VIIb and VIIIa) (Chen and Desmond, 2005; Desmond et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fMRI data and citations to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6ce2c6b4-5ae1-4c99-9554-394296ac131f",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C26",
+      "claim": "For verbal working memory, the activity was more pronounced in the right than in the left cerebellar hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed previously for verbal working memory, the activity was more pronounced in the right than in the left cerebellar hemisphere (Desmond and Fiez, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fMRI data and citation to previous study",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "0a63e7b1-3eda-4455-a3a8-77dbf03e01a7",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C27",
+      "claim": "The connectivity model predicted cerebellar activity relatively well at the individual level (R2 = 0.42, standard error = 0.01) for the working memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "After fitting a linear regression to account for scale differences between predicted and observed activations, we found that the predicted values matched the observed values relatively well at the individual level (R2 = 0.42, standard error = 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of model predictions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "427e0945-b401-4be9-8372-2d85a6e27b40",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C28",
+      "claim": "There was a systematic deviation of residuals across participants in the working memory task (F11, 165 = 2.22, p = 0.0156).",
+      "claim_type": "EXPLICIT",
+      "source": "A repeated 1-factor measures ANOVA on the residuals across all 12 conditions found a systematic deviation across participants (F11, 165 = 2.22, p = 0.0156).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ANOVA statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "d5ea28cd-f528-4e90-8220-a65254ff9c5b",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C29",
+      "claim": "There was a significant two-way interaction between load and phase in the working memory task (F2, 30 = 4.38, p = 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "When we analyze the residuals using a 2 (phase) \u00d7 2 (recall direction) \u00d7 3 (load) ANOVA, we found a significant two-way interaction between load and phase (F2, 30 = 4.38, p = 0.02), but no significant effect of recall direction (F1, 15 = 0.95, p = 0.34).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ANOVA statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "12ab49c2-8217-4957-a892-c1602a95a65f",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C30",
+      "claim": "There was no significant effect of recall direction on residuals in the working memory task (F1, 15 = 0.95, p = 0.34).",
+      "claim_type": "EXPLICIT",
+      "source": "When we analyze the residuals using a 2 (phase) \u00d7 2 (recall direction) \u00d7 3 (load) ANOVA, we found a significant two-way interaction between load and phase (F2, 30 = 4.38, p = 0.02), but no significant effect of recall direction (F1, 15 = 0.95, p = 0.34).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ANOVA statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6a05ddf6-1c3d-40c4-be04-928f76a38f79",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C31",
+      "claim": "The results indicate selective recruitment of the cerebellum when the number of items to be encoded into working memory is high.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the results indicate selective recruitment of the cerebellum when the number of items to be encoded into working memory is high, an effect that holds for both the forward and backwards conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of residuals showing greater-than-predicted activity during high-load encoding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "791f92b4-ef21-4bfd-9ce9-cbe5c9a705bd",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C32",
+      "claim": "Increases in cerebellar BOLD signal could simply reflect the automatic transmission of neocortical activity through fixed anatomical connections.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that increases in the cerebellar BOLD signal could simply reflect the automatic transmission of neocortical activity through fixed anatomical connections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the fact that cerebellar BOLD reflects mossy fiber input from neocortex",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "64062c09-4d72-4a57-91c7-84ce796fdd53",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C33",
+      "claim": "Whenever a task activates a neocortical region, the corresponding cerebellar region would also be activated, regardless of whether the cerebellum is directly involved in the task or not.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, whenever a task activates a neocortical region, the corresponding cerebellar region would also be activated, regardless of whether the cerebellum is directly involved in the task or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from fixed anatomical connectivity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "b49f7030-96ab-4970-8edc-2e20b3cba93a",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C34",
+      "claim": "The fact that the prediction of connectivity models did not reach the theoretically possible prediction accuracy suggests that the connectivity between the neocortex and cerebellum may not be fully task-invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the prediction of these models did not reach the theoretically possible prediction accuracy suggests that the connectivity between the neocortex and cerebellum may not be fully task-invariant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from model performance data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "3ea39885-af01-4de7-a85d-62f796042666",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C35",
+      "claim": "Neocortical input to the cerebellum may be modulated as a function of the relative importance of cerebellar computation in a task-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, neocortical input to the cerebellum may be modulated as a function of the relative importance of cerebellar computation in a task-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis proposed to explain deviations from task-invariant connectivity model",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "d5c8212c-fc56-4e2d-aae7-83a32ca24de1",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C36",
+      "claim": "Task- or state-dependent gating would make evolutionary sense, given the substantial metabolic cost of granule cell activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Such task- or state-dependent gating would make evolutionary sense, given the substantial metabolic cost of granule cell activity (Attwell and Iadecola, 2002; Howarth et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on metabolic considerations and citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "cb0849b4-24a0-4a37-84fa-abe3a2de6085",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C37",
+      "claim": "Based on the selective recruitment hypothesis, increases in cerebellar BOLD will be greater for increases in tapping speed compared to increases in finger force output, even when the neocortical activity is matched between conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the selective recruitment hypothesis, we predicted that increases in cerebellar BOLD will be greater for increases in tapping speed compared to increases in finger force output, even when the neocortical activity is matched between conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "A priori prediction based on the selective recruitment hypothesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "7789cf57-4512-4b9c-9534-57a9e5e87b8a",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C38",
+      "claim": "Both manipulations (speed and force) are expected to produce an increase in the BOLD response in neocortical motor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Both manipulations are expected to produce an increase in the BOLD response in neocortical motor areas (Diedrichsen et al., 2013; Thickbroom et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "ed7d79e3-1349-4d54-949d-92d55da2c5cc",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C39",
+      "claim": "The task-invariant connectivity model predicts increased cerebellar activity with both increases in speed and force.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, our task-invariant connectivity model predicts increased cerebellar activity with both increases in speed and force (Spraker et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from connectivity model and citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "f1ca0748-827a-4807-b7eb-c244563590c3",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C40",
+      "claim": "Selective recruitment predicts that for equivalent activity levels in the neocortex, cerebellar activity should be higher in the speed than in the force condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, selective recruitment predicts that for equivalent activity levels in the neocortex, cerebellar activity should be higher in the speed than in the force condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Prediction from selective recruitment hypothesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "1035faca-2dd0-4cb7-a54a-f9bb623546c1",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C41",
+      "claim": "According to the connectivity model, inputs to cerebellar M3 do not only come from contralateral M1 and S1, but also from premotor and supplementary motor regions.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the model, inputs to cerebellar M3 do not only come from contralateral M1 and S1, but also from premotor and supplementary motor regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from connectivity model weights shown in Figure 3A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "2b325b7c-fa64-4049-b791-e0ca06b3f3e0",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C42",
+      "claim": "The predicted difference in the residual for the high-speed vs. high-force condition remained significant when using an L1-regularized model (t15 = 2.373, p = 0.0315).",
+      "claim_type": "EXPLICIT",
+      "source": "For both connectivity models, the predicted difference in the residual for the high-speed vs. high-force condition remained significant (L1 regression: t15 = 2.373, p = 0.0315, Fusion model: t15 = 2.140, p = 0.0492).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical test using alternative connectivity model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "dc12dd11-c423-495d-abc1-ac37ff1fc8a8",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C43",
+      "claim": "The predicted difference in the residual for the high-speed vs. high-force condition remained significant when using a Fusion model (t15 = 2.140, p = 0.0492).",
+      "claim_type": "EXPLICIT",
+      "source": "For both connectivity models, the predicted difference in the residual for the high-speed vs. high-force condition remained significant (L1 regression: t15 = 2.373, p = 0.0315, Fusion model: t15 = 2.140, p = 0.0492).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical test using alternative connectivity model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "28a2bb5c-57b6-4ae3-9f8c-46dea2c5dc7b",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C44",
+      "claim": "The results indicate selective recruitment of the cerebellum when the demands on finger coordination are increased relative to when the demands on force output are increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, consistent across various connectivity models, the results indicate selective recruitment of the cerebellum when the demands on finger coordination are increased relative to when the demands on force output are increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from consistent findings across multiple connectivity models",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "8d7f02bf-ac83-49ff-9444-851a1a05f0b0",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C45",
+      "claim": "The connectivity weights suggest converging input from area 55b, premotor eye field, area 6r, and supplementary and cingulate eye field to cerebellar D3R.",
+      "claim_type": "EXPLICIT",
+      "source": "The connectivity weights from the model (Figure 6A) suggest converging input from area 55b (located at the inferior end of the middle frontal gyrus), premotor eye field, area 6r (anterior to the primary motor cortex), and supplementary and cingulate eye field (SCEF, dorsomedial frontal cortex; Glasser et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from connectivity model weights shown in Figure 6A",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "fbeed3b4-fb97-4ea9-9eb7-db75a26d055e",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C46",
+      "claim": "There was one clear deviation where the observed cerebellar activation was greater than predicted: During encoding in the highest load condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Turning to our test of selective recruitment, there was one clear deviation where the observed cerebellar activation was greater than predicted (Figure 6B): During encoding in the highest load condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by visual inspection of Figure 6B and subsequent statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "1b577509-b69b-468b-bb5a-50641fc82ef8",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C47",
+      "claim": "The cerebellum has a special role in encoding larger item sets into working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the cerebellum has a special role in encoding larger item sets into working memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the finding of selective recruitment during high-load encoding",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "2029e1d9-2f8f-47bd-86c6-568bb8857750",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C48",
+      "claim": "Clinical studies have shown that cerebellar pathology results in a marked impairment in the ability to produce fast alternating movements, but has little impact on maximal force generation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clinical studies have shown that cerebellar pathology results in a marked impairment in the ability to produce fast alternating movements, but has little impact on maximal force generation (Mai et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to clinical study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "096a2dea-0f3d-46fd-afa1-83e70c30b93f",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C49",
+      "claim": "Some observed change in cerebellar activity may not be functionally involved in controlling behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that some observed change in cerebellar activity may not be functionally involved in controlling behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the discrepancy between activation patterns and clinical findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "64b037d4-0cf0-47b3-904b-26798a9557eb",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C50",
+      "claim": "A large proportion of the observed variation of cerebellar activity across tasks can be accounted for by fixed functional connections between neocortical and cerebellar regions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in our previous study (King et al., 2023), this model provides a good prediction of cerebellar activity across a broad range of tasks, including those not used in developing the model. This confirms that a large proportion of the observed variation of cerebellar activity across tasks can be accounted for by fixed functional connections between neocortical and cerebellar regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to King et al., 2023 study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "d138f9f5-a53e-4c6e-9f28-1c649f2bd1e7",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C51",
+      "claim": "Systematic deviations from the null model would occur if neocortical input was upregulated when the cerebellum is required for a task.",
+      "claim_type": "EXPLICIT",
+      "source": "The central idea explored in the current paper is that systematic deviations from this null model would occur, if neocortical input was upregulated when the cerebellum is required for a task (and/or downregulated when it is not).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis proposed in the study",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "f8e07bfd-4238-4799-b661-30c28c472453",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C52",
+      "claim": "If input to the cerebellum is gated in a task-specific manner, then it should be upregulated during the production of fast alternating finger movements as compared to the production of high forces with the same fingers.",
+      "claim_type": "EXPLICIT",
+      "source": "If input to the cerebellum is gated in a task-specific manner, then it should be upregulated during the production of fast alternating finger movements as compared to the production of high forces with the same fingers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "A priori prediction based on selective recruitment hypothesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "52e11ae6-1bf2-4740-9109-515a0f1b6ee7",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C53",
+      "claim": "Activity in the cerebellar hand area increased more for increasing speed than force, even when activity in the neocortical hand areas was approximately matched across conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This was indeed the case; activity in the cerebellar hand area increased more for increasing speed than force, even when activity in the neocortical hand areas was approximately matched across conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of fMRI data and connectivity model residuals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6651310b-d4c1-4746-b58f-3260939932b1",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C54",
+      "claim": "These results provide clear evidence for task-dependent gating.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide clear evidence for task-dependent gating (Cole et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the finding of differential cerebellar activation beyond predicted levels",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "4742b841-a56e-4932-9c95-57da6159ca5d",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C55",
+      "claim": "If the input to the cerebellum is upregulated in a task-specific manner, then the observed cerebellar activity should be larger than predicted using the simultaneously observed neocortical activity and a task-invariant connectivity model.",
+      "claim_type": "EXPLICIT",
+      "source": "If the input to the cerebellum is upregulated in a task-specific manner, then the observed cerebellar activity should be larger than precited using the simultaneously observed neocortical activity and a task-invariant connectivity model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference defining the operational criterion for selective recruitment",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "94e4a3c9-5506-4199-991a-5f216d445ed5",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C56",
+      "claim": "Previous studies have consistently shown deficits in verbal working memory in cerebellar patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have consistently shown deficits in verbal working memory in cerebellar patients (Ilg et al., 2013; Kansal et al., 2017; Ravizza et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to patient studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "37849070-e620-4cae-8375-858d6b123995",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C57",
+      "claim": "The exact nature of working memory deficits in cerebellar patients is still a matter of considerable debate.",
+      "claim_type": "EXPLICIT",
+      "source": "The exact nature of these deficits, however, is still a matter of considerable debate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from variability in reported deficits in the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "31e99aca-500e-4501-972f-14f3d223ea2e",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C58",
+      "claim": "The cerebellum is not necessary for a task when selective recruitment is not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our approach does not allow us to conclude that the cerebellum is not necessary for a task when selective recruitment is not observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explicit statement about limitations of the approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "f77a4577-72dc-4e07-ba58-55560abde69e",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C59",
+      "claim": "Much of cerebellar activity can be fully accounted for by a task-invariant transmission of information from the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach simply shows that much of cerebellar activity can be fully accounted for by a task-invariant transmission of information from the neocortex, raising the possibility that this observed activity is an epiphenomenon of cortical input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from connectivity model performance",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "ca5dc87c-b862-45f8-ac1a-c419d8e67cf8",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C60",
+      "claim": "We should expect some cerebellar activity even when the cerebellum makes minimal contributions to task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this, we should expect some cerebellar activity even when the cerebellum makes minimal contributions to task performance (as observed in the force condition).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the nature of fixed anatomical connectivity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "0756d4ba-e7b1-4abf-ac0a-5c679870c6bf",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C61",
+      "claim": "Showing task-specific violations on a task-invariant connectivity model provides much stronger evidence for a specific cerebellar role in a task than the mere presence of activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we believe that showing task-specific violations on a task-invariant connectivity model provides much stronger evidence for a specific cerebellar role in a task than the mere presence of activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the methodological advantage of the approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "3b45499f-0c92-4477-82ba-69e7ea4090b3",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C62",
+      "claim": "One obvious candidate for gating are the pontine nuclei which integrate descending signals from different neocortical areas with feedback signals from the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "One obvious candidate for gating are the pontine nuclei which integrate descending signals from different neocortical areas with feedback signals from the cerebellum (Schwarz and Thier, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on known anatomy and citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "a08c00ca-d704-49e7-801d-722281508da4",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C63",
+      "claim": "The cellular properties of pontine neurons are ideal for gating input signals in a state-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular properties of pontine neurons are ideal for gating input signals in a state-dependent manner (M\u00f6ck et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to study on pontine neuron properties",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "14eb8e24-40f7-4fea-a700-3b4a85db0148",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C64",
+      "claim": "Gating could be achieved via modulation within the granule cell layer itself, perhaps via recurrent loops involving inhibitory Golgi cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, gating could be achieved via modulation within the granule cell layer itself, perhaps via recurrent loops involving inhibitory Golgi cells (Maex and De Schutter, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on cerebellar circuitry and citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6bdc5eaa-1725-4048-ad98-b6b62c4e3869",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C65",
+      "claim": "Violations of the connectivity model may also be caused by increased climbing fiber input under specific task conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Violations of our connectivity model may also be caused by increased climbing fiber input under specific task conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about alternative mechanism",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "f5ed50c7-67b9-4d12-9d2d-4552bd592227",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C66",
+      "claim": "Gating may already occur in the neocortex, with more recruitment of neocortical neurons that project to the pons when controlling the spatial aspects of joystick manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, gating may already occur in the neocortex: A recent study (Park et al., 2022) showed more recruitment of neocortical neurons that project to the pons when controlling the spatial aspects of joystick manipulation, and more recruitment of neurons that project intra-cortically or to the striatum when controlling movement amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on citation to recent study",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "ba2f413d-b2ba-4e9c-8d96-f9eae9616b1f",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C67",
+      "claim": "Pontine-projecting neurons may be more engaged during fast alternating movements, even though the fMRI activity is the same as during the production of high forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the neocortical BOLD signal reflects the activity of both neuronal populations, pontine-projecting neurons may be more engaged during fast alternating movements, even though the fMRI activity is the same as during the production of high forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about differential engagement of neuronal populations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "248dad82-6f0f-404e-8ffe-7ef4d56cfd0f",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C68",
+      "claim": "Task-dependent gating of inputs to the cerebellum would be highly adaptive from a metabolic standpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Whichever combination of mechanisms is responsible for our observed effect, task-dependent gating of inputs to the cerebellum would be highly adaptive from a metabolic standpoint (Attwell and Iadecola, 2002): the costly mossy-fiber system would be most activated when cerebellar computation is required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on metabolic considerations and citation",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6dd0742b-84c6-4232-8b4f-7d56d8e40d17",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C69",
+      "claim": "Task-dependent gating offers a promising new approach that may allow researchers to use fMRI for testing cerebellar contributions across cognitive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "For us as researchers, this gating phenomena offers a promising new keyhole that may allow us to unlock the use of fMRI for testing cerebellar contributions across cognitive tasks (Diedrichsen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the methodological implications of the findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "523c8fae-d440-4404-b889-ee902dcba0c9",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C70",
+      "claim": "A total of 21 participants started the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 21 participants started the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of participant numbers",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "9668a709-ca0c-4428-b9b4-2989f817d5e0",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C71",
+      "claim": "Four participants were not scanned because of poor performance during the behavioral training session.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, four participants were not scanned because of poor performance during the behavioral training session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about participant exclusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "2acc4cd2-f36f-4f46-af19-8d1ad58d2a76",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C72",
+      "claim": "The data for one participant were excluded due to an incidental finding.",
+      "claim_type": "EXPLICIT",
+      "source": "The data for one participant were excluded due to an incidental finding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about data exclusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "ea536e85-15f2-48e1-b91e-701d62e1503c",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C73",
+      "claim": "The analyses were based on the data from 16 participants (8 females, 8 males, mean age = 25, std age = 2).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the analyses were based on the data from 16 participants (8 females, 8 males, mean age = 25, std age = 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of final sample characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6b4089dc-165b-427d-8eb0-49bf4758851b",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C74",
+      "claim": "MRI data were acquired on a 3T Siemens Prisma at the Center for Functional and Metabolic Mapping (CFMM) at Western University.",
+      "claim_type": "EXPLICIT",
+      "source": "MRI data were acquired on a 3T Siemens Prisma at the Center for Functional and Metabolic Mapping (CFMM) at Western University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of data acquisition details",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "c4e4eec8-8b35-484c-b625-fdccd96c9416",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "claim_id": "C75",
+      "claim": "Whole-brain functional images were acquired using an echo-planar imaging sequence with TR = 1000 ms, TE = 30 ms, voxel size = 2.5 \u00d7 2.5 \u00d7 3 mm3.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-brain functional images were acquired using an echo-planar imaging sequence with Repetition time (TR) = 1000 ms, Echo time (TE) = 30 ms, voxel size = 2.5 \u00d7 2.5 \u00d7 3 mm3, field-of-view = 20.8 \u00d7 20.8 \u00d7 20.8 cm3, 48 slices, P to A phase encoding direction, with multi-band acceleration factor = 3 (interleaved) and in-plane acceleration factor = 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of imaging parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a842add6-33de-4df8-b5c0-05a2ecc7c942",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cerebellar BOLD signal reflects mossy fiber and climbing fiber input from neocortical areas rather than Purkinje cell output. Mossy fibers carry input from diverse neocortical regions including prefrontal and parietal association cortices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by multiple citations to prior physiological and anatomical studies. These claims establish the foundational understanding that cerebellar BOLD reflects input rather than output, which is critical for interpreting the study's main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "1b147c12-7c42-4e19-a2c9-dcd44afedf2f",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A task-invariant connectivity model can predict approximately 50% of reliable variance in cerebellar activity across tasks, indicating that fixed functional connections between neocortical and cerebellar regions account for a large proportion of observed cerebellar activity variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C50 are supported by citation to King et al., 2023, which provides the empirical basis for the connectivity model used throughout this study. The model's predictive accuracy establishes the null hypothesis against which selective recruitment is tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "2fa16f3a-c235-42db-8029-ae762f160da1",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Clinical evidence shows that cerebellar damage impairs rapid alternating movements (dysdiadochokinesia) but has minimal impact on force generation, establishing differential cerebellar involvement in these motor parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C48 are supported by citations to clinical studies (Hallett et al., 1991; Mai et al., 1988). This clinical dissociation provides the a priori hypothesis for the motor task experiment and is critical for interpreting the selective recruitment findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "31e04dfa-2047-4b97-939b-76d15ab21bc3",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cerebellar activation in lobules VI, VII, and VIII is consistently observed in working memory fMRI studies, and patients with cerebellar damage show deficits in verbal working memory tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, and C56 are supported by multiple citations to prior fMRI and patient studies. These establish the rationale for investigating cerebellar involvement in working memory, though C57 notes the exact nature of deficits remains debated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "ece9de89-9350-4746-b06a-ae626a005c83",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Behavioral compliance in the motor task was good with performance close to target values. The final sample consisted of 16 participants after exclusions for poor performance and incidental findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C70-C73 provide methodological details about participant compliance and sample composition. The data in Table 1 supports good task compliance, and exclusion criteria are clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "e94169b2-0635-4a8f-9efe-cb46e7d1c493",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both high-force and high-speed conditions produced significant activation increases in M1/S1 and cerebellar motor areas compared to baseline. However, increasing speed led to more widespread activation in secondary motor areas compared to increasing force.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 report statistically significant activation differences with appropriate statistical tests and p-values. The observation of differential neocortical activation patterns (C15) is important for justifying the connectivity modeling approach, though this relies partly on visual inspection of Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "c6ed2452-e528-4506-9783-2fd734581c72",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The connectivity model predicted cerebellar activity well (R\u00b2=0.60), but systematic deviations showed that cerebellar activity for speed conditions exceeded predictions more than force conditions. This difference remained significant across multiple connectivity models, providing evidence for task-dependent gating during coordination demands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 and C41-C44 present the core motor task finding with appropriate statistical tests (ANOVA F4,60=6.796, p=1.1\u00d710\u207b\u2074; post-hoc tests with p<0.05). The robustness across alternative models (C42-C43) strengthens the conclusion. Claims C53-C54 appropriately interpret this as evidence for task-dependent gating, consistent with the a priori hypothesis based on clinical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "e159eecf-1373-4534-aad1-63d7ada864c3",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In the working memory task, error rates increased with memory load and were higher in the backwards condition, confirming task difficulty manipulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are supported by behavioral data shown in Figure 4B. These results confirm that the task manipulations had the intended effects on difficulty, which is important for interpreting the imaging results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "fcb74247-6587-49c4-9cc7-e8c723b2bd6a",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The working memory task activated the fronto-parietal network during encoding and retrieval, with motor area activation during retrieval. Cerebellar activation was observed in lobules VI, Crus I, VIIb, and VIIIa, with right hemisphere predominance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 describe activation patterns consistent with prior literature (supported by citations) and are illustrated in Figure 5. The patterns replicate known findings and establish the basis for the connectivity analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "For the working memory task, the connectivity model predicted cerebellar activity moderately well (R\u00b2=0.42), but systematic deviations revealed selective recruitment during encoding at high load (6 items). A significant load\u00d7phase interaction (F2,30=4.38, p=0.02) with no effect of recall direction suggests the cerebellum has a special role in encoding larger item sets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 and C45-C47 present the working memory findings with appropriate statistics. The ANOVA shows systematic deviations (F11,165=2.22, p=0.0156) and the interaction effect is significant. The interpretation that the cerebellum is selectively recruited for high-load encoding (C31, C47) is reasonable given the data, though the R\u00b2 is lower than for the motor task.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "cf73a6d4-ef5c-4e5b-aa3e-477d7573294e",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that cerebellar BOLD could reflect automatic transmission through fixed connections, but imperfect model predictions suggest task-specific modulation of neocortical input to the cerebellum (selective recruitment hypothesis), which would be metabolically adaptive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 present the conceptual framework and selective recruitment hypothesis. C32-C33 are logical inferences from C1-C3. C34-C35 are reasonable inferences from the model's imperfect predictions (C5). C36 provides evolutionary rationale supported by citations about metabolic costs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6fc8a246-64f5-4092-bbc1-2787fe6d5fd0",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The selective recruitment hypothesis predicts that cerebellar activity should exceed connectivity model predictions when cerebellar computation is required. For the motor task, this predicts greater cerebellar activity for speed than force when neocortical activity is matched.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40, C52, and C55 articulate the a priori predictions and operational definitions. These are logically derived from the hypothesis (C35-C36) and clinical evidence (C6-C7). The predictions are clearly testable and appropriately guide the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "29088d34-f7e9-4d3a-90fb-ecb4cb1f8bd1",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge that observed cerebellar activity may not always be functionally involved in behavior, that absence of selective recruitment does not prove the cerebellum is unnecessary, and that their approach provides stronger evidence than mere presence of activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C58-C61 appropriately discuss limitations and interpretive caveats. These are logical inferences from the nature of the connectivity model and the distinction between activity and functional necessity. The acknowledgment of limitations strengthens the overall argument.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "d75ad77b-bdac-4111-b02d-0018d469c21d",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate about potential mechanisms for task-dependent gating including pontine nuclei, granule cell layer modulation, climbing fiber input, or differential engagement of pontine-projecting neurons in neocortex. They argue this gating would be metabolically adaptive and offers a new approach for studying cerebellar function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C69 present speculative mechanisms and implications. These are appropriately labeled as speculation and are supported by relevant citations. The discussion of mechanisms (C62-C67) is reasonable given current anatomical and physiological knowledge. The methodological implications (C68-C69) follow logically from the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "27d0c142-0b47-4191-ad4c-1f7c84500058",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The exact nature of working memory deficits in cerebellar patients remains debated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is a reasonable inference from the variability in reported deficits in the literature. This motivates the need for the current study's approach to identify specific working memory components requiring cerebellar involvement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "549d28ca-7f87-43e0-89a5-f68e378dd8c0",
+      "content_id": "8bf0dbf7-862d-4346-8188-384f6bc9709a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "MRI data were acquired on a 3T Siemens Prisma using standard fMRI sequences with multiband acceleration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 provide standard methodological details about data acquisition. These are clearly stated and appropriate for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The motor task produced expected activation patterns in both neocortical and cerebellar motor areas. Both high-force and high-speed conditions activated M1/S1 and cerebellar motor regions, though speed conditions led to more widespread secondary motor area activation than force conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers praised the study as 'well-designed and executed' with 'sound' analyses. The editor described the evidence as 'convincing.' No reviewer questioned the basic activation findings from the motor task, indicating implicit acceptance of these foundational results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "d2bf3c30-c789-4a78-b983-2bec8d118117",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The connectivity model predicted cerebellar activity well (R\u00b2=0.60), but systematic deviations revealed that cerebellar activity was significantly higher for speed than force conditions even when accounting for neocortical input differences. This pattern held across multiple connectivity models (Ridge, L1, Fusion), providing evidence for task-dependent gating of cerebellar input during motor coordination demands.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorsed this finding as providing 'convincing evidence for task-dependent gating of neocortical input to the cerebellum during a motor task.' One reviewer noted the authors 'use multiple statistical approaches to ensure robustness in their conclusions,' directly supporting the cross-model validation. This is treated as a core contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "1a3f251d-48fa-4f72-9a95-40d4534298d9",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The working memory task produced expected behavioral and neural patterns: errors increased with load and in backwards conditions, and fMRI showed activation in fronto-parietal networks during encoding/retrieval and in cerebellar regions (lobules VI, Crus I, VIIb, VIIIa), with right-hemisphere predominance for verbal material.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers described the study as 'well-designed and executed' with 'sound' analyses, and no concerns were raised about the basic working memory task results. The editor's statement that the study provides 'convincing evidence' during 'a working memory task' indicates acceptance of these findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The connectivity model predicted working memory cerebellar activity moderately well (R\u00b2=0.42), but revealed selective recruitment: observed cerebellar activation exceeded predictions specifically during high-load encoding (load \u00d7 phase interaction, p=0.02), suggesting a special cerebellar role in encoding larger item sets into working memory.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers stated the study provides 'convincing evidence for task-dependent gating' during 'a working memory task,' explicitly endorsing this finding. The editor and reviewers praised the 'novel approach' and noted it makes 'a significant contribution to broadening our understanding of the role of cerebellum in human behavior.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "0162ec72-a386-40d8-a1dd-d22ba5280953",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors propose that while fixed anatomical connectivity accounts for much cerebellar activity across tasks, systematic deviations from task-invariant connectivity models indicate selective, task-dependent gating of neocortical input when cerebellar computation is functionally required. This approach provides stronger evidence for cerebellar involvement than mere presence of activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praised this as a 'novel approach to studying cerebellar function based on the idea of selective recruitment' and noted the 'sophisticated integration of statistical methods, cognitive neuroscience and systems neurobiology.' The conceptual framework is central to what reviewers identify as the study's contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6699aa75-86eb-4675-9d51-aa3b2298ade9",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors speculate about potential mechanisms for task-dependent gating, including modulation at pontine nuclei, within the granule cell layer, via climbing fiber input, or through differential recruitment of pontine-projecting versus other cortical neurons. They argue such gating would be metabolically adaptive.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer noted a weakness: 'The assumption that cortical BOLD responses in cognitive tasks should be matched irrespective of cerebellar involvement does not cohere directly with the notion of 'forcing functions' introduced by Houk and Wise, suggesting the need for future work.' This indicates the mechanistic interpretations require further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "4fc0f706-5157-4340-bc91-fb1823e96f8a",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Background claims establish that cerebellar BOLD reflects mossy/climbing fiber input rather than Purkinje cell output, that connectivity models predict ~50% of reliable cerebellar variance, and that clinical evidence shows cerebellar damage impairs rapid alternating movements and verbal working memory but spares force generation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are cited background claims that reviewers did not question. Reviewers praised the 'consideration of the cerebellum as not a purely motor structure' as 'excellent and important,' implicitly endorsing the background framework. No concerns were raised about the foundational literature.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "5d03dbeb-4715-4fe8-a2e3-4ac011d49c9f",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors predicted a priori that if selective recruitment occurs, cerebellar activity should exceed predictions for speed versus force conditions (motor task) and during high working memory load, based on clinical evidence and the selective recruitment hypothesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers noted the study was 'well-designed' and praised the approach. The fact that predictions were confirmed and reviewers found the evidence 'convincing' indicates the a priori hypotheses were appropriately formulated and tested.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "0e9c57d3-4fe5-49c6-a129-6ff3c671fb91",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors acknowledge limitations: absence of selective recruitment does not prove the cerebellum is unnecessary for a task, and some cerebellar activity may occur even when the cerebellum makes minimal functional contributions due to fixed anatomical connectivity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers praised the paper as 'well-written' and noted 'results are properly discussed.' The acknowledgment of limitations is part of what reviewers implicitly accepted as appropriate scientific reasoning. No concerns were raised about these caveats.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "96da070b-7931-4a19-af6e-f70292d6ee1e",
+      "content_id": "79f406f9-b5a7-4d92-b575-d8cc3c9ec689",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors conclude that task-dependent gating offers a promising new approach for using fMRI to test cerebellar contributions across cognitive tasks.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor stated this 'important study reports a novel approach' that 'will be of interest to a broad cognitive neuroscience audience.' Reviewers noted it 'makes a significant contribution to broadening our understanding' and represents a 'sophisticated integration' of methods. This strongly endorses the methodological contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9318595-a6ac-4472-b365-875005aa213b",
+      "result_id": "a842add6-33de-4df8-b5c0-05a2ecc7c942"
+    },
+    {
+      "claim_id": "d17d315f-9d22-4e88-b2f9-e77f8c84cf14",
+      "result_id": "a842add6-33de-4df8-b5c0-05a2ecc7c942"
+    },
+    {
+      "claim_id": "40c8441d-bbc7-4c09-a81d-7da8f915f4d2",
+      "result_id": "a842add6-33de-4df8-b5c0-05a2ecc7c942"
+    },
+    {
+      "claim_id": "ed0c4ccf-339e-4f90-83c6-b0f2b7dafa82",
+      "result_id": "1b147c12-7c42-4e19-a2c9-dcd44afedf2f"
+    },
+    {
+      "claim_id": "64b037d4-0cf0-47b3-904b-26798a9557eb",
+      "result_id": "1b147c12-7c42-4e19-a2c9-dcd44afedf2f"
+    },
+    {
+      "claim_id": "c084b274-d69d-45f8-9d5d-31d4fc69a26c",
+      "result_id": "2fa16f3a-c235-42db-8029-ae762f160da1"
+    },
+    {
+      "claim_id": "a572915f-ebf9-4bd1-bc73-2b88a8abb813",
+      "result_id": "2fa16f3a-c235-42db-8029-ae762f160da1"
+    },
+    {
+      "claim_id": "2029e1d9-2f8f-47bd-86c6-568bb8857750",
+      "result_id": "2fa16f3a-c235-42db-8029-ae762f160da1"
+    },
+    {
+      "claim_id": "876eb51e-1458-4354-ada5-7873004b72b9",
+      "result_id": "31e04dfa-2047-4b97-939b-76d15ab21bc3"
+    },
+    {
+      "claim_id": "ad56bf42-f7cd-477f-95e0-8f895c95e3ac",
+      "result_id": "31e04dfa-2047-4b97-939b-76d15ab21bc3"
+    },
+    {
+      "claim_id": "94e4a3c9-5506-4199-991a-5f216d445ed5",
+      "result_id": "31e04dfa-2047-4b97-939b-76d15ab21bc3"
+    },
+    {
+      "claim_id": "fff25018-5d75-464c-ae58-a80b11f07dfa",
+      "result_id": "ece9de89-9350-4746-b06a-ae626a005c83"
+    },
+    {
+      "claim_id": "523c8fae-d440-4404-b889-ee902dcba0c9",
+      "result_id": "ece9de89-9350-4746-b06a-ae626a005c83"
+    },
+    {
+      "claim_id": "9668a709-ca0c-4428-b9b4-2989f817d5e0",
+      "result_id": "ece9de89-9350-4746-b06a-ae626a005c83"
+    },
+    {
+      "claim_id": "2acc4cd2-f36f-4f46-af19-8d1ad58d2a76",
+      "result_id": "ece9de89-9350-4746-b06a-ae626a005c83"
+    },
+    {
+      "claim_id": "ea536e85-15f2-48e1-b91e-701d62e1503c",
+      "result_id": "ece9de89-9350-4746-b06a-ae626a005c83"
+    },
+    {
+      "claim_id": "4156b0e1-62a2-4c7e-b264-8fb30dd2d982",
+      "result_id": "e94169b2-0635-4a8f-9efe-cb46e7d1c493"
+    },
+    {
+      "claim_id": "92f4e5cc-6018-4c38-873e-b1b52bf83dfc",
+      "result_id": "e94169b2-0635-4a8f-9efe-cb46e7d1c493"
+    },
+    {
+      "claim_id": "54650bbc-b57b-46cd-a714-248f58aa4068",
+      "result_id": "e94169b2-0635-4a8f-9efe-cb46e7d1c493"
+    },
+    {
+      "claim_id": "a50426e3-8de3-4b8e-9415-4bd902b79ea6",
+      "result_id": "e94169b2-0635-4a8f-9efe-cb46e7d1c493"
+    },
+    {
+      "claim_id": "7826022a-732c-4711-85cd-e34b74c1e0d7",
+      "result_id": "e94169b2-0635-4a8f-9efe-cb46e7d1c493"
+    },
+    {
+      "claim_id": "921e444d-f19d-40ac-88ce-b5c70fbe6051",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "e26c3b62-1c51-4e38-af94-7bac4f2d9b6a",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "f63db38f-4337-4c3d-8cd1-d4f271a3a99a",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "59d80f88-531f-4e80-ae60-1b8f0bae37ae",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "fcb0c943-1885-4cb9-9aa4-445a420be607",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "1035faca-2dd0-4cb7-a54a-f9bb623546c1",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "2b325b7c-fa64-4049-b791-e0ca06b3f3e0",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "dc12dd11-c423-495d-abc1-ac37ff1fc8a8",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "28a2bb5c-57b6-4ae3-9f8c-46dea2c5dc7b",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "52e11ae6-1bf2-4740-9109-515a0f1b6ee7",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "6651310b-d4c1-4746-b58f-3260939932b1",
+      "result_id": "c6ed2452-e528-4506-9783-2fd734581c72"
+    },
+    {
+      "claim_id": "bd0a644b-8051-449f-90c5-3a1e3637e71f",
+      "result_id": "e159eecf-1373-4534-aad1-63d7ada864c3"
+    },
+    {
+      "claim_id": "02ff3660-6061-4f9e-aa9e-b65cf287d819",
+      "result_id": "e159eecf-1373-4534-aad1-63d7ada864c3"
+    },
+    {
+      "claim_id": "5998c5ec-c5c6-43bf-8fe2-0484c73b8ed1",
+      "result_id": "fcb74247-6587-49c4-9cc7-e8c723b2bd6a"
+    },
+    {
+      "claim_id": "88e942c9-15a4-40f5-86c9-91fa29fd75ec",
+      "result_id": "fcb74247-6587-49c4-9cc7-e8c723b2bd6a"
+    },
+    {
+      "claim_id": "3c814f49-8fd8-4e87-9974-6e6a8876a0a4",
+      "result_id": "fcb74247-6587-49c4-9cc7-e8c723b2bd6a"
+    },
+    {
+      "claim_id": "6ce2c6b4-5ae1-4c99-9554-394296ac131f",
+      "result_id": "fcb74247-6587-49c4-9cc7-e8c723b2bd6a"
+    },
+    {
+      "claim_id": "0a63e7b1-3eda-4455-a3a8-77dbf03e01a7",
+      "result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2"
+    },
+    {
+      "claim_id": "427e0945-b401-4be9-8372-2d85a6e27b40",
+      "result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2"
+    },
+    {
+      "claim_id": "d5ea28cd-f528-4e90-8220-a65254ff9c5b",
+      "result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2"
+    },
+    {
+      "claim_id": "12ab49c2-8217-4957-a892-c1602a95a65f",
+      "result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2"
+    },
+    {
+      "claim_id": "6a05ddf6-1c3d-40c4-be04-928f76a38f79",
+      "result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2"
+    },
+    {
+      "claim_id": "8d7f02bf-ac83-49ff-9444-851a1a05f0b0",
+      "result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2"
+    },
+    {
+      "claim_id": "fbeed3b4-fb97-4ea9-9eb7-db75a26d055e",
+      "result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2"
+    },
+    {
+      "claim_id": "1b577509-b69b-468b-bb5a-50641fc82ef8",
+      "result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2"
+    },
+    {
+      "claim_id": "791f92b4-ef21-4bfd-9ce9-cbe5c9a705bd",
+      "result_id": "cf73a6d4-ef5c-4e5b-aa3e-477d7573294e"
+    },
+    {
+      "claim_id": "64062c09-4d72-4a57-91c7-84ce796fdd53",
+      "result_id": "cf73a6d4-ef5c-4e5b-aa3e-477d7573294e"
+    },
+    {
+      "claim_id": "b49f7030-96ab-4970-8edc-2e20b3cba93a",
+      "result_id": "cf73a6d4-ef5c-4e5b-aa3e-477d7573294e"
+    },
+    {
+      "claim_id": "3ea39885-af01-4de7-a85d-62f796042666",
+      "result_id": "cf73a6d4-ef5c-4e5b-aa3e-477d7573294e"
+    },
+    {
+      "claim_id": "d5c8212c-fc56-4e2d-aae7-83a32ca24de1",
+      "result_id": "cf73a6d4-ef5c-4e5b-aa3e-477d7573294e"
+    },
+    {
+      "claim_id": "cb0849b4-24a0-4a37-84fa-abe3a2de6085",
+      "result_id": "6fc8a246-64f5-4092-bbc1-2787fe6d5fd0"
+    },
+    {
+      "claim_id": "7789cf57-4512-4b9c-9534-57a9e5e87b8a",
+      "result_id": "6fc8a246-64f5-4092-bbc1-2787fe6d5fd0"
+    },
+    {
+      "claim_id": "ed7d79e3-1349-4d54-949d-92d55da2c5cc",
+      "result_id": "6fc8a246-64f5-4092-bbc1-2787fe6d5fd0"
+    },
+    {
+      "claim_id": "f1ca0748-827a-4807-b7eb-c244563590c3",
+      "result_id": "6fc8a246-64f5-4092-bbc1-2787fe6d5fd0"
+    },
+    {
+      "claim_id": "f8e07bfd-4238-4799-b661-30c28c472453",
+      "result_id": "6fc8a246-64f5-4092-bbc1-2787fe6d5fd0"
+    },
+    {
+      "claim_id": "4742b841-a56e-4932-9c95-57da6159ca5d",
+      "result_id": "6fc8a246-64f5-4092-bbc1-2787fe6d5fd0"
+    },
+    {
+      "claim_id": "096a2dea-0f3d-46fd-afa1-83e70c30b93f",
+      "result_id": "29088d34-f7e9-4d3a-90fb-ecb4cb1f8bd1"
+    },
+    {
+      "claim_id": "31e99aca-500e-4501-972f-14f3d223ea2e",
+      "result_id": "29088d34-f7e9-4d3a-90fb-ecb4cb1f8bd1"
+    },
+    {
+      "claim_id": "f77a4577-72dc-4e07-ba58-55560abde69e",
+      "result_id": "29088d34-f7e9-4d3a-90fb-ecb4cb1f8bd1"
+    },
+    {
+      "claim_id": "ca5dc87c-b862-45f8-ac1a-c419d8e67cf8",
+      "result_id": "29088d34-f7e9-4d3a-90fb-ecb4cb1f8bd1"
+    },
+    {
+      "claim_id": "0756d4ba-e7b1-4abf-ac0a-5c679870c6bf",
+      "result_id": "29088d34-f7e9-4d3a-90fb-ecb4cb1f8bd1"
+    },
+    {
+      "claim_id": "3b45499f-0c92-4477-82ba-69e7ea4090b3",
+      "result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d"
+    },
+    {
+      "claim_id": "a08c00ca-d704-49e7-801d-722281508da4",
+      "result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d"
+    },
+    {
+      "claim_id": "14eb8e24-40f7-4fea-a700-3b4a85db0148",
+      "result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d"
+    },
+    {
+      "claim_id": "6bdc5eaa-1725-4048-ad98-b6b62c4e3869",
+      "result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d"
+    },
+    {
+      "claim_id": "f5ed50c7-67b9-4d12-9d2d-4552bd592227",
+      "result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d"
+    },
+    {
+      "claim_id": "ba2f413d-b2ba-4e9c-8d96-f9eae9616b1f",
+      "result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d"
+    },
+    {
+      "claim_id": "248dad82-6f0f-404e-8ffe-7ef4d56cfd0f",
+      "result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d"
+    },
+    {
+      "claim_id": "6dd0742b-84c6-4232-8b4f-7d56d8e40d17",
+      "result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d"
+    },
+    {
+      "claim_id": "37849070-e620-4cae-8375-858d6b123995",
+      "result_id": "27d0c142-0b47-4191-ad4c-1f7c84500058"
+    },
+    {
+      "claim_id": "6b4089dc-165b-427d-8eb0-49bf4758851b",
+      "result_id": "549d28ca-7f87-43e0-89a5-f68e378dd8c0"
+    },
+    {
+      "claim_id": "c4e4eec8-8b35-484c-b625-fdccd96c9416",
+      "result_id": "549d28ca-7f87-43e0-89a5-f68e378dd8c0"
+    },
+    {
+      "claim_id": "fff25018-5d75-464c-ae58-a80b11f07dfa",
+      "result_id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b"
+    },
+    {
+      "claim_id": "4156b0e1-62a2-4c7e-b264-8fb30dd2d982",
+      "result_id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b"
+    },
+    {
+      "claim_id": "92f4e5cc-6018-4c38-873e-b1b52bf83dfc",
+      "result_id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b"
+    },
+    {
+      "claim_id": "54650bbc-b57b-46cd-a714-248f58aa4068",
+      "result_id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b"
+    },
+    {
+      "claim_id": "a50426e3-8de3-4b8e-9415-4bd902b79ea6",
+      "result_id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b"
+    },
+    {
+      "claim_id": "7826022a-732c-4711-85cd-e34b74c1e0d7",
+      "result_id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b"
+    },
+    {
+      "claim_id": "921e444d-f19d-40ac-88ce-b5c70fbe6051",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "e26c3b62-1c51-4e38-af94-7bac4f2d9b6a",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "f63db38f-4337-4c3d-8cd1-d4f271a3a99a",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "59d80f88-531f-4e80-ae60-1b8f0bae37ae",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "fcb0c943-1885-4cb9-9aa4-445a420be607",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "2b325b7c-fa64-4049-b791-e0ca06b3f3e0",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "dc12dd11-c423-495d-abc1-ac37ff1fc8a8",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "28a2bb5c-57b6-4ae3-9f8c-46dea2c5dc7b",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "52e11ae6-1bf2-4740-9109-515a0f1b6ee7",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "6651310b-d4c1-4746-b58f-3260939932b1",
+      "result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117"
+    },
+    {
+      "claim_id": "bd0a644b-8051-449f-90c5-3a1e3637e71f",
+      "result_id": "1a3f251d-48fa-4f72-9a95-40d4534298d9"
+    },
+    {
+      "claim_id": "02ff3660-6061-4f9e-aa9e-b65cf287d819",
+      "result_id": "1a3f251d-48fa-4f72-9a95-40d4534298d9"
+    },
+    {
+      "claim_id": "5998c5ec-c5c6-43bf-8fe2-0484c73b8ed1",
+      "result_id": "1a3f251d-48fa-4f72-9a95-40d4534298d9"
+    },
+    {
+      "claim_id": "88e942c9-15a4-40f5-86c9-91fa29fd75ec",
+      "result_id": "1a3f251d-48fa-4f72-9a95-40d4534298d9"
+    },
+    {
+      "claim_id": "3c814f49-8fd8-4e87-9974-6e6a8876a0a4",
+      "result_id": "1a3f251d-48fa-4f72-9a95-40d4534298d9"
+    },
+    {
+      "claim_id": "6ce2c6b4-5ae1-4c99-9554-394296ac131f",
+      "result_id": "1a3f251d-48fa-4f72-9a95-40d4534298d9"
+    },
+    {
+      "claim_id": "0a63e7b1-3eda-4455-a3a8-77dbf03e01a7",
+      "result_id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a"
+    },
+    {
+      "claim_id": "427e0945-b401-4be9-8372-2d85a6e27b40",
+      "result_id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a"
+    },
+    {
+      "claim_id": "d5ea28cd-f528-4e90-8220-a65254ff9c5b",
+      "result_id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a"
+    },
+    {
+      "claim_id": "12ab49c2-8217-4957-a892-c1602a95a65f",
+      "result_id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a"
+    },
+    {
+      "claim_id": "6a05ddf6-1c3d-40c4-be04-928f76a38f79",
+      "result_id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a"
+    },
+    {
+      "claim_id": "fbeed3b4-fb97-4ea9-9eb7-db75a26d055e",
+      "result_id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a"
+    },
+    {
+      "claim_id": "1b577509-b69b-468b-bb5a-50641fc82ef8",
+      "result_id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a"
+    },
+    {
+      "claim_id": "791f92b4-ef21-4bfd-9ce9-cbe5c9a705bd",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "64062c09-4d72-4a57-91c7-84ce796fdd53",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "b49f7030-96ab-4970-8edc-2e20b3cba93a",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "3ea39885-af01-4de7-a85d-62f796042666",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "64b037d4-0cf0-47b3-904b-26798a9557eb",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "d138f9f5-a53e-4c6e-9f28-1c649f2bd1e7",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "4742b841-a56e-4932-9c95-57da6159ca5d",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "f77a4577-72dc-4e07-ba58-55560abde69e",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "0756d4ba-e7b1-4abf-ac0a-5c679870c6bf",
+      "result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953"
+    },
+    {
+      "claim_id": "d5c8212c-fc56-4e2d-aae7-83a32ca24de1",
+      "result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9"
+    },
+    {
+      "claim_id": "3b45499f-0c92-4477-82ba-69e7ea4090b3",
+      "result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9"
+    },
+    {
+      "claim_id": "a08c00ca-d704-49e7-801d-722281508da4",
+      "result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9"
+    },
+    {
+      "claim_id": "14eb8e24-40f7-4fea-a700-3b4a85db0148",
+      "result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9"
+    },
+    {
+      "claim_id": "6bdc5eaa-1725-4048-ad98-b6b62c4e3869",
+      "result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9"
+    },
+    {
+      "claim_id": "f5ed50c7-67b9-4d12-9d2d-4552bd592227",
+      "result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9"
+    },
+    {
+      "claim_id": "ba2f413d-b2ba-4e9c-8d96-f9eae9616b1f",
+      "result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9"
+    },
+    {
+      "claim_id": "248dad82-6f0f-404e-8ffe-7ef4d56cfd0f",
+      "result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9"
+    },
+    {
+      "claim_id": "b9318595-a6ac-4472-b365-875005aa213b",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "d17d315f-9d22-4e88-b2f9-e77f8c84cf14",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "40c8441d-bbc7-4c09-a81d-7da8f915f4d2",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "ed0c4ccf-339e-4f90-83c6-b0f2b7dafa82",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "c084b274-d69d-45f8-9d5d-31d4fc69a26c",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "a572915f-ebf9-4bd1-bc73-2b88a8abb813",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "876eb51e-1458-4354-ada5-7873004b72b9",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "ad56bf42-f7cd-477f-95e0-8f895c95e3ac",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "2029e1d9-2f8f-47bd-86c6-568bb8857750",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "94e4a3c9-5506-4199-991a-5f216d445ed5",
+      "result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a"
+    },
+    {
+      "claim_id": "cb0849b4-24a0-4a37-84fa-abe3a2de6085",
+      "result_id": "5d03dbeb-4715-4fe8-a2e3-4ac011d49c9f"
+    },
+    {
+      "claim_id": "7789cf57-4512-4b9c-9534-57a9e5e87b8a",
+      "result_id": "5d03dbeb-4715-4fe8-a2e3-4ac011d49c9f"
+    },
+    {
+      "claim_id": "ed7d79e3-1349-4d54-949d-92d55da2c5cc",
+      "result_id": "5d03dbeb-4715-4fe8-a2e3-4ac011d49c9f"
+    },
+    {
+      "claim_id": "f1ca0748-827a-4807-b7eb-c244563590c3",
+      "result_id": "5d03dbeb-4715-4fe8-a2e3-4ac011d49c9f"
+    },
+    {
+      "claim_id": "f8e07bfd-4238-4799-b661-30c28c472453",
+      "result_id": "5d03dbeb-4715-4fe8-a2e3-4ac011d49c9f"
+    },
+    {
+      "claim_id": "31e99aca-500e-4501-972f-14f3d223ea2e",
+      "result_id": "0e9c57d3-4fe5-49c6-a129-6ff3c671fb91"
+    },
+    {
+      "claim_id": "ca5dc87c-b862-45f8-ac1a-c419d8e67cf8",
+      "result_id": "0e9c57d3-4fe5-49c6-a129-6ff3c671fb91"
+    },
+    {
+      "claim_id": "6dd0742b-84c6-4232-8b4f-7d56d8e40d17",
+      "result_id": "96da070b-7931-4a19-af6e-f70292d6ee1e"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b5dabe8e-c885-4e33-aec4-8995cf257c88",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "c6ed2452-e528-4506-9783-2fd734581c72",
+      "peer_result_id": "d2bf3c30-c789-4a78-b983-2bec8d118117",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on motor task selective recruitment findings (C16-C20, C42-C44, C53-C54). Both evaluations find the evidence convincing with appropriate statistical support. Peer reviewers explicitly praised the robustness of multiple statistical approaches, aligning with OpenEval's assessment of cross-model validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "33d27999-3b03-45ce-9939-b96f0af08645",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "78dc2242-5f0b-4e69-ad7f-3d8c5ec265a2",
+      "peer_result_id": "2b4ed44c-275b-465d-a81a-da7c64ba7b6a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on working memory selective recruitment findings (C27-C31, C46-C47). Both find the evidence convincing for task-dependent gating during working memory tasks. Peer reviewers endorsed this as a significant contribution, consistent with OpenEval's supported evaluation despite noting lower R\u00b2 values.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "985f13fa-d65f-45e5-b0dd-8549fc77783c",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "e94169b2-0635-4a8f-9efe-cb46e7d1c493",
+      "peer_result_id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on motor task activation findings (C11-C15). Both evaluations support the statistical significance and appropriateness of the analyses. Peer reviewers' praise of the study as 'well-designed and executed' aligns with OpenEval's assessment of appropriate statistical tests.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "3493093e-f2de-4a11-aec2-30bed5dc08b2",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "6fc8a246-64f5-4092-bbc1-2787fe6d5fd0",
+      "peer_result_id": "5d03dbeb-4715-4fe8-a2e3-4ac011d49c9f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on a priori predictions and operational definitions (C37-C40, C52). Both evaluations find these appropriately formulated and testable. Peer reviewers' endorsement of the 'well-designed' study confirms OpenEval's assessment that predictions logically derive from the hypothesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "eb0d8199-5973-4069-ba44-c741e9999998",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d",
+      "peer_result_id": "6699aa75-86eb-4675-9d51-aa3b2298ade9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial disagreement on mechanistic interpretations (C62-C68). OpenEval finds these appropriately labeled speculations supported by citations. However, peer reviewers express uncertainty about the 'forcing functions' mechanism and coherence with assumptions about cortical BOLD responses, suggesting need for future work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "7bc416fe-ea04-4b9f-b5e0-f3632638b555",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "fcb74247-6587-49c4-9cc7-e8c723b2bd6a",
+      "peer_result_id": "1a3f251d-48fa-4f72-9a95-40d4534298d9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on working memory activation patterns (C23-C26). Both evaluations support these findings as replicating known results. Peer reviewers' acceptance of the working memory task results aligns with OpenEval's assessment of consistency with prior literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "728a12f0-3c12-46c4-a9c6-fa883154a262",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "cf73a6d4-ef5c-4e5b-aa3e-477d7573294e",
+      "peer_result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on conceptual framework and selective recruitment hypothesis (C32-C35). Peer reviewers explicitly praised the 'novel approach' and 'sophisticated integration,' strongly endorsing the framework that OpenEval found logically sound. Peer review also addresses C50-C51, C55, C59, C61 not in OpenEval R11.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "9c6b08ab-320a-4186-9c82-342a85343d4a",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "29088d34-f7e9-4d3a-90fb-ecb4cb1f8bd1",
+      "peer_result_id": "0e9c57d3-4fe5-49c6-a129-6ff3c671fb91",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on limitations and interpretive caveats (C58, C60). Both evaluations find these appropriately acknowledged. Peer reviewers' praise of proper discussion aligns with OpenEval's assessment that acknowledgment of limitations strengthens the argument.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6696038e-96dc-4e51-b057-bfea775becb5",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "e159eecf-1373-4534-aad1-63d7ada864c3",
+      "peer_result_id": "1a3f251d-48fa-4f72-9a95-40d4534298d9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on behavioral validation (C21-C22). Both evaluations support these findings. Peer reviewers' acceptance of the working memory task design implicitly endorses the behavioral results that OpenEval found important for interpreting imaging data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "09d97815-9509-414d-99c2-88d2e80ac97c",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "a842add6-33de-4df8-b5c0-05a2ecc7c942",
+      "peer_result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on foundational cerebellar physiology claims (C1-C3). Peer reviewers did not question these background claims and praised consideration of cerebellum beyond motor function, aligning with OpenEval's assessment of well-supported foundational understanding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "97789650-d040-4529-8d38-08516aa53855",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "2fa16f3a-c235-42db-8029-ae762f160da1",
+      "peer_result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on clinical dissociation evidence (C6-C7, C48). Peer reviewers implicitly endorsed this background framework without raising concerns, consistent with OpenEval's assessment that clinical evidence supports the a priori hypothesis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "6d69c0ce-baa8-49f4-8a4d-cd11aa0e0303",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "31e04dfa-2047-4b97-939b-76d15ab21bc3",
+      "peer_result_id": "4fc0f706-5157-4340-bc91-fb1823e96f8a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on cerebellar working memory background (C8-C9, C56). Peer reviewers did not question these foundational claims and praised the broader consideration of cerebellar function, aligning with OpenEval's supported evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "74d23624-c9fc-4e2f-b865-7dea4f32833a",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "1b147c12-7c42-4e19-a2c9-dcd44afedf2f",
+      "peer_result_id": "0162ec72-a386-40d8-a1dd-d22ba5280953",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on connectivity model basis (C50). Both evaluations accept the King et al. 2023 model as foundational. Peer reviewers' praise of the novel approach based on selective recruitment implicitly endorses the connectivity model framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "4ad30e48-e118-4884-8789-17034f98e09e",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "ece9de89-9350-4746-b06a-ae626a005c83",
+      "peer_result_id": "6f9317c9-4f98-45e2-9d6b-581ab99bf70b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on participant compliance (C10). Both evaluations support the methodological details. Peer reviewers' endorsement of the well-executed study aligns with OpenEval's assessment of good task compliance documentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "a27332e2-e8df-492c-9b70-e5dc72c6e21b",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "d75ad77b-bdac-4111-b02d-0018d469c21d",
+      "peer_result_id": "96da070b-7931-4a19-af6e-f70292d6ee1e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on methodological implications (C69). Peer reviewers explicitly endorsed the novel methodological contribution and broad significance, strongly aligning with OpenEval's assessment that methodological implications follow logically from findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "ef11af0b-d401-478c-adca-71a991ed3b4a",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "27d0c142-0b47-4191-ad4c-1f7c84500058",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claim C57 about variability in working memory deficits as supported and motivating the study. No corresponding specific peer review evaluation found, though peer reviewers' general endorsement of the study design suggests implicit acceptance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    },
+    {
+      "id": "745acfd4-4e4d-49ea-8f2d-8c640822325b",
+      "submission_id": "4d81b6e6-475b-4090-98d7-b384923ebb2a",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "549d28ca-7f87-43e0-89a5-f68e378dd8c0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated methodological details about data acquisition (C74-C75) as appropriately stated. No corresponding specific peer review evaluation found, though peer reviewers' praise of sound analyses suggests implicit acceptance of methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:45:01.378781Z"
+    }
+  ]
+}

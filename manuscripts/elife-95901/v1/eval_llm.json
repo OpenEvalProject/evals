@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study analyzed 251,277 female UK Biobank participants (mean age 56.8\u00b18.0 years), including 16,241 with breast cancer, followed for a median of 12.8 years. Breast cancer was identified using ICD-10 codes from cancer registry data, and outcomes (4,549 MI and 4,917 HF cases) were ascertained from multiple sources through December 31, 2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cohort characteristics, data sources, and follow-up procedures are clearly described with specific numbers (C8-C17, C47-C52). The use of validated ICD-10 codes, multi-source outcome ascertainment, and propensity score matching methodology (C45, C52) are appropriate. Ethical approval and informed consent are documented (C65-C67).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C30"
+    ],
+    "result": "In the total population analysis, breast cancer participants exhibited a significantly lower risk of MI (HR=0.83, 95% CI 0.73-0.94, p=0.002) and a significantly higher risk of HF (HR=1.20, 95% CI 1.09-1.33, p<0.001) compared to non-breast cancer participants after adjusting for multiple covariates. These findings are consistent with prior UK studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analyses with appropriate covariates show clear associations with significant p-values (C18-C19). The results align with prior research showing similar effect sizes (C30), providing external validation. However, the paradoxical decreased MI risk requires mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C57",
+      "C58",
+      "C68"
+    ],
+    "result": "Among breast cancer participants, younger age at diagnosis was significantly associated with elevated risks of both MI (HR=1.36 per 10-year decrease, 95% CI 1.19-1.56, p<0.001) and HF (HR=1.31 per 10-year decrease, 95% CI 1.18-1.46, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The continuous age analysis within breast cancer patients demonstrates a clear dose-response relationship with statistically significant associations (C10-C11, C57-C58). The effect sizes are substantial and clinically meaningful, with consistent findings across MI and HF outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C12",
+      "C59"
+    ],
+    "result": "After propensity score matching, breast cancer diagnosed before age 50 showed the highest cardiovascular risks (MI: HR=1.75, p=0.003; HF: HR=2.21, p<0.001), with progressively lower risks for diagnosis at 50-59 years (MI: HR=0.75, p=0.028; HF: HR=1.38, p=0.002) and \u226560 years (MI: HR=0.75, p=0.001; HF: HR=1.03, p=0.650).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The propensity score matching analysis effectively controls for confounding and demonstrates a clear age-dependent gradient in cardiovascular risk (C23-C28, C59). The youngest diagnosis group shows substantially elevated risks for both outcomes, while older diagnosis groups show protective or null effects for MI and variable effects for HF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Subgroup analyses revealed that hypertension and diabetes modified the association of breast cancer with incident HF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While effect modification by hypertension and diabetes is stated (C29), the manuscript does not provide specific interaction statistics, p-values for interaction terms, or detailed stratified results. The figures show subgroup analyses but statistical evidence for modification is not explicitly quantified in the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Sensitivity analyses demonstrated that the main findings remained stable after adjusting for competing risk of death, excluding early events (<5 years), excluding younger baseline participants (<50 years), changing follow-up endpoints (December 31, 2019), and adjusting for menopausal status, breast cancer surgery, and hormone replacement therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple sensitivity analyses address potential biases including reverse causality, competing risks, and unmeasured confounding (C60-C64). The consistency of results across these analyses strengthens confidence in the main findings, though specific results from supplementary files are referenced but not detailed in the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The elevated HF risk in breast cancer patients may be related to cardiotoxic effects of anthracycline and trastuzumab, while the decreased MI risk might be driven by cardioprotective effects of tamoxifen and socioeconomic factors. Younger patients face higher risks due to more aggressive tumors requiring anthracycline chemotherapy, breast-conserving surgery with radiotherapy (7.4% increased coronary events per gray), and chemotherapy-induced early menopause reducing estrogen exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These mechanistic explanations are largely speculative and based on cited literature rather than direct measurements in this study (C31-C38). The study lacks data on specific treatments (chemotherapy, radiotherapy, tamoxifen use), tumor characteristics, and radiation doses. While the proposed mechanisms are biologically plausible, they remain hypothetical without treatment-specific analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "This is claimed to be the largest study to date examining age at breast cancer diagnosis and cardiovascular outcomes, utilizing propensity score matching and Cox proportional hazards models. Multi-source outcome data provided higher accuracy than self-reported data, which has approximately 30% misclassification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The large sample size (251,277 participants, 16,241 with breast cancer) and long follow-up (12.8 years median) support the claim of being the largest such study (C44). The methodological approaches are appropriate (C45-C46), and the advantage of multi-source data over self-report is documented (C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background literature establishes that breast cancer is the most common cancer in women globally (2.3 million cases in 2020) with improving survival rates (>80% at 5 years), but CVD is the predominant cause of death in breast cancer patients, with excess risks of MI and HF, particularly in younger patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to established literature (C1-C7). The claims provide context for the study rationale and are consistent with current epidemiological understanding of breast cancer burden and cardiovascular complications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The findings highlight the need for increased attention to cardiovascular health in younger breast cancer patients, especially those diagnosed before age 50, and warrant development of cardiac monitoring strategies based on cardiovascular risk stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These clinical implications logically follow from the demonstrated elevated cardiovascular risks in younger breast cancer patients (C69-C70). The recommendations are appropriately cautious, calling for attention and strategy development rather than prescribing specific interventions without additional evidence.",
+    "result_type": "MAJOR"
+  }
+]

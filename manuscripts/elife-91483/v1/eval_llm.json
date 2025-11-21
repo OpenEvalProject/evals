@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The cerebellum contributes to diverse motor conditions (ataxia, dystonia, tremor), but the neural substrates encoding this diversity are unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 establish the foundational knowledge gap that motivates the study. C1 is well-established in the literature, and C2 accurately identifies the gap in understanding neural mechanisms underlying phenotypic diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A supervised classifier model using three spike train parameters (skewness, CV2, ISI>25) can correctly assign mouse phenotypes based on single-neuron signatures with 54-88% accuracy across disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 describe the classifier parameters, while C3 and C17-C20 provide quantitative validation. The classifier achieves majority-correct classification for control (85%), ataxia (79%), and dystonia (88%), though tremor performance is lower (54%). The approach is methodologically sound with appropriate training/validation splits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Two etiologically distinct ataxia models (Atxn1154Q/+ and Pcp2Cre;Ank1fl/fl) share lower skewness values compared to dystonia models, though many neurons retain control signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe the signature distributions, while C24-C27 provide statistical validation. The finding that degenerative ataxia models show intermediate irregularity (rather than the extreme regularity of the archetypal model) is well-supported by ANOVA with appropriate post-hoc tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Dystonia spike signatures are shared across etiologically distinct models, with phenotype severity correlating with the proportion of neurons exhibiting dystonia versus control signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 establish the phenotypic differences between models, C30-C31 show proportional differences with statistical tests, and C32-C35 demonstrate skewness differences. The correlation between signature proportion and severity is compelling, though causality cannot be definitively established from these correlational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Propranolol treatment in Car8wdl/wdl mice reduces tremor signatures and shifts ISI>25 values, correlating with known tremor reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 establish the pharmacological context (supported by prior work), while C38-C40 demonstrate signature changes. The shift from tremor signatures (8/13) to control/dystonia signatures (6/15 each) with propranolol provides pharmacological validation of the classifier model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Optogenetic stimulation of Purkinje cell terminals can induce disease-specific spike signatures in cerebellar nuclei neurons, with ataxia stimulation producing intermediate signatures and dystonia/tremor stimulations producing their respective signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 demonstrate that the same neurons can produce different signatures depending on stimulation pattern. The ataxia stimulation producing mixed control/dystonia signatures (7/16 and 8/16) mirrors the degenerative ataxia models, while dystonia (9/16) and tremor (11/16) stimulations produce majority-correct signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Optogenetically inducing disease-specific spike signatures in freely moving mice produces the predicted motor phenotypes, with each stimulation paradigm generating distinct behavioral profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 provide comprehensive behavioral validation across multiple assays (gait, dystonia rating, tremor monitoring), while C54 synthesizes the conclusion. The behavioral data show appropriate specificity (e.g., tremor stimulation produces >10-fold greater tremor than dystonia stimulation), though some overlap exists between phenotypes as expected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Spike signatures are shared across etiologically distinct but phenotypically similar disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is the overarching conclusion supported by the specific findings in Figures 2-4 (ataxia models C21-C27, dystonia models C28-C35, tremor models C36-C40). The evidence demonstrates that phenotypically similar models share spike signatures despite different underlying etiologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Mimicking pathophysiological spike signatures with optogenetics induces predicted motor impairments in otherwise healthy mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is the overarching conclusion supported by the optogenetic experiments (C41-C44 for electrophysiology, C45-C54 for behavior). The causal demonstration that spike signatures are sufficient to produce disease phenotypes is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C73"
+    ],
+    "result": "Distinct spike signatures promote the behavioral presentation of cerebellar diseases, with each disease arising from changes in the balance and representation of neural signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C73 represent the main conclusions synthesizing all findings. The evidence from classifier validation, cross-model comparisons, and optogenetic causality experiments collectively support this conclusion, though the exact mechanisms remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Historical clinical observations established that cerebellar lesions cause diverse motor impairments including ataxia, tremor, and dystonia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 cite historical literature (Holmes, Turner, Balint et al.) to establish the clinical context. These are well-established facts in the field and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Genetic and pharmacological manipulations of cerebellar circuits produce distinct motor phenotypes: GABAergic silencing causes ataxia, glutamatergic silencing causes dystonia, and harmaline/optogenetic bursting causes tremor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 summarize prior work from the authors and others, establishing the archetypal models used in the study. These are appropriately cited and form the foundation for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Degenerative and non-degenerative ataxias may have different underlying circuit alterations leading to distinct spike signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a reasonable interpretation based on the observed differences between the highly regular Pcp2Cre;Slc32a1fl/fl model and the intermediate irregular Atxn1154Q/+ and Pcp2Cre;Ank1fl/fl models. The interpretation is appropriately cautious ('may have').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Cerebellar movement disorders are associated with shifts from a healthy range of spiking activity, driven by functional changes that can be independent of plasticity or circuit rewiring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by the optogenetic experiments showing that the same neurons can produce healthy or disease signatures depending on stimulation. This demonstrates that pathological signatures can arise from functional changes rather than requiring structural alterations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Co-expression or comorbidity of motor disease behaviors may arise from a spectrum of spike signal defects, with neural signals potentially shifting between healthy and disease states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 are reasonable interpretations based on observed overlap in spike features and the optogenetic reversibility, but they remain speculative. The study does not directly test comorbidity or transient symptoms, so these claims require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C67"
+    ],
+    "result": "Successful therapeutic approaches should maintain cerebellar spiking within the healthy range without inducing different pathophysiological signatures, with cerebellar-targeted DBS potentially beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60 and C67 are therapeutic recommendations based on the findings, but they are speculative and not directly tested. While the logic is sound, clinical validation would be required to support these claims definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Recordings likely capture primarily excitatory neurons due to size bias, but optogenetic manipulations affect both excitatory and inhibitory nuclei neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 acknowledge important technical limitations. C61 is explicitly speculative, and C62 is supported by citation but represents an inference about the experimental approach. The inability to definitively identify recorded cell types is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Nonsimultaneous recordings from heterogeneous neurons are sufficient to determine distinct pathogenic signatures, consistent with findings in human DBS studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 contextualize the methodological approach. C63 appropriately cites human studies, and C64 is supported by the successful classification despite recording heterogeneity. However, the authors acknowledge that simultaneous recordings might provide additional insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Electrophysiological data confirm differences in spike train properties between diseases, and optogenetic experiments suggest these spike trains are sufficient to cause motor impairments, not merely biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 synthesize the key findings. The electrophysiological differences are well-documented (C65), and the optogenetic causality experiments provide strong evidence for sufficiency (C66), though the term 'suggest' appropriately acknowledges remaining uncertainties about mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Specific spike patterns may relate to disease mechanisms: incorrect modulation in ataxia, suppressed periods timing dystonic contractions, and rhythmic activity driving tremor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C70 propose mechanistic interpretations linking spike patterns to symptoms. While C70 is supported by prior work, C68 and C69 are more speculative. These interpretations are reasonable but require additional validation to establish causal relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "A large proportion of neurons must produce abnormal signatures for severe phenotypes, and optogenetic studies likely induced synchrony in addition to the intended signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by the proportional data in Figures 2-3 showing correlation between signature prevalence and severity. C72 acknowledges an important caveat about the optogenetic approach potentially inducing synchrony, which is a reasonable interpretation.",
+    "result_type": "MINOR"
+  }
+]

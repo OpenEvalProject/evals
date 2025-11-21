@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The recall-gated consolidation model proposes that consolidation into LTM depends on STM recall strength, filtering unreliable memories and substantially amplifying signal-to-noise ratio (SNR). The model demonstrates that LTM attains higher SNR than STM by selectively consolidating memories that pass a recall threshold, with simulations showing much higher SNR compared to parallel (non-interacting) STM+LTM models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers across all three reviews affirm the model as 'novel' and provide 'convincing analysis of the benefits.' One reviewer states the authors 'demonstrate that it allows substantially higher SNRs than previous synaptic consolidation models' and another notes 'the analysis is thorough and convincing.' The editor describes it as 'fundamental work' with 'convincing analysis,' indicating acceptance of the core mechanism and its SNR benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Recall-gated consolidation provides significant benefits across three learning paradigms: supervised learning, reinforcement learning, and unsupervised auto-associative memory tasks, as demonstrated in simulations (Figures 3E, F, G).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the model's application to multiple learning problems. One reviewer states the authors 'investigate the mechanism with different types of learning problems including supervised learning, reinforcement learning, and unsupervised auto-associative memory' and notes 'simulations demonstrate the model's advantages...and showcase its potential application to various learning tasks.' No concerns are raised about these demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model demonstrates that recall-gated consolidation achieves linear scaling of learnable timescale with memory repetitions (R), substantially outperforming synaptic consolidation models (binary switch, cascade) which achieve at best logarithmic scaling. The SNR amplification increases with STM SNR, and the mechanism enables longer learnable timescales particularly at high target SNRs, working complementarily with any underlying synaptic model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge these theoretical advantages. One states the authors 'demonstrate that it allows substantially higher SNRs than previous synaptic consolidation models' and 'provide an extensive mathematical treatment.' Another notes 'they extensively analyse the suggested mechanism in terms of memory recall, consolidation dynamics, and learnable timescales.' The editor confirms 'convincing analysis of the benefits of the proposed model,' supporting these scaling and performance claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The model explains spaced learning effects through non-monotonic gating functions optimized for environmental statistics where unreliable memories recur over short timescales. Unlike synaptic models where spacing effects require few intervening events and arise from saturation, recall-gated consolidation produces robust spacing effects over long timescales in the presence of many intervening plasticity events.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this result. One states 'the model's predictions align with observed spaced learning effects' and another notes the authors 'illustrate how the mechanism can explain spaced training effects.' The analysis is described as 'thorough and convincing' with no concerns raised about the spacing effect explanations or comparisons to synaptic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "An extended model with LTM subdivided into subpopulations with distinct gating functions produces heterogeneous memory timescales and predicts that memory retention timescale increases smoothly with training spacing interval, consistent with observations across species and with experimental findings on optimal spacing intervals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the model's predictions without raising concerns. One notes 'the model's predictions align with observed spaced learning effects' and the analysis is described as 'extensive' and 'thorough.' The connection to experimental observations is accepted as part of the model's explanatory power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The model predicts that memory recall responsibility gradually shifts from STM to LTM during consolidation, and that the rate of LTM updates increases both with time (as STM recall strengthens) and with environmental reliability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions are presented as model consequences and are part of the 'extensive mathematical treatment' and 'rigorous analysis' praised by reviewers. One reviewer notes the authors 'extensively analyse the suggested mechanism in terms of memory recall, consolidation dynamics' without raising concerns about these specific predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model predicts that STM benefits from sparser representations than LTM, with optimal sparsity in STM being even more sparse when supporting LTM consolidation. Denser LTM representations result in greater generalization and more robust, generalizable representations in LTM compared to STM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the model makes predictions about neural representations. One states the model 'gives rise to...differing neural representations in short- and long-term pathways' as part of the phenomena the model explains. The analytical derivations are part of the 'extensive mathematical treatment' that reviewers find convincing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The model's predictions are consistent with experimental observations across multiple species: Drosophila olfactory learning circuits implement recall-gated consolidation via disinhibition; songbird consolidation rates correlate with performance; rodent motor cortex disengagement tracks performance; and hippocampal replay is biased toward familiar patterns, consistent with recall-gated consolidation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concerns about experimental connections. One states 'the connection is rather weak and the model needs to make more specific predictions to be distinguishable from other theories of memory consolidation...and verifiable by experimental data.' Another notes 'the main weakness...is the equation of recall strength with the synaptic changes' and questions whether 'consolidation would stop' after learning, suggesting the model's predictions may not align with biological reality. The editor notes analyses are 'limited to the type of memory consolidation the authors consider (and don't consider), which limits the impact.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C19",
+      "C20"
+    ],
+    "result": "The model gives rise to task-dependent rates of consolidation, consistent with observations that consolidation is modulated by factors including performance quality, repetition, reliability, and novelty across multiple species and learning contexts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the model addresses task-dependent consolidation as one of the phenomena it explains, the weak connection to experimental data is a concern. One reviewer states 'the connection is rather weak' and requests 'more specific predictions to be distinguishable from other theories.' The general acknowledgment of the model's scope does not constitute strong support for these specific claims about task-dependence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21"
+    ],
+    "result": "Background claims establishing that systems consolidation occurs across species and contexts, involves selective consolidation, and offers computational advantages complementary to synaptic mechanisms. These include established knowledge about hippocampal-cortical consolidation, motor learning in rodents and songbirds, and olfactory learning in flies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background/contextual claims cited from literature that reviewers do not challenge. They form the established foundation upon which the novel model is built. Reviewers focus their evaluation on the novel contributions rather than questioning these established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Neural circuit implementations of recall-gated consolidation involve synaptic plasticity rules modulated by globally broadcast factors such as prediction accuracy, confidence, and familiarity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the model includes 'biologically plausible' implementations. One states the authors 'show that the required recall strength can be computed in a biologically plausible way for three different learning paradigms.' This indicates acceptance of the proposed circuit implementations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Background claim about Drosophila mushroom body organization and dopamine-driven plasticity in anatomically defined compartments containing MBONs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is established background knowledge cited from literature (Aso et al., 2014) that reviewers do not challenge. It provides context for the model's connection to experimental systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "Speculation that both synaptic and systems-level mechanisms likely contribute to spacing effects, with longer-timescale effects arising from systems-level recall mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is presented as speculation/discussion rather than a definitive claim. Reviewers do not challenge this interpretation, and it aligns with the model's demonstrated advantages at longer timescales that reviewers find convincing.",
+    "result_type": "MINOR"
+  }
+]

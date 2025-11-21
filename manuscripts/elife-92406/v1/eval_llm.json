@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The V276T mutation disrupts stage I folding (membrane topology) of GnRHR by reducing the efficiency of translocon-mediated membrane integration of TMD6, decreasing plasma membrane expression by 65 \u00b1 4% relative to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33, C36-C43 provide converging evidence from structural analysis (C33, C37, C39), in vitro membrane integration assays (C41), and cellular expression measurements (C42) that V276T specifically disrupts stage I folding. The structural context shows V276 is lipid-exposed without tertiary contacts (C39-C40), supporting the mechanism. The quantitative PME reduction (C42) and in vitro integration data (C41) provide direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C35",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The W107A mutation disrupts stage II folding (tertiary structure) of GnRHR by disrupting a conserved hydrogen bond network in extracellular loop 1, reducing plasma membrane expression by 88 \u00b1 4% relative to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34-C35, C44-C47 provide structural (C34-C35, C44-C45) and functional (C46) evidence that W107A disrupts tertiary structure without affecting membrane topology. The identification of a conserved hydrogen bond network (C35, C45) and its disruption by W107A (C44) provides mechanistic insight. The severe PME reduction (C46) supports functional impact, though the inference about misfolding (C47) is reasonable but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Deep mutational scanning was used to measure the plasma membrane expression of 251 missense variants across three genetic backgrounds (WT, V276T, W107A), with libraries containing 1615 designed variants distributed across loops and transmembrane domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C48-C53, C62-C65 describe the experimental design and execution of the DMS approach. The library design is well-documented (C48-C51), sequencing validation is provided (C52-C53), and the final dataset scope is clearly stated (C62-C65). The quality filtering process (C65) and replicate correlation (C66) support data reliability. This is a methodological result that enables the primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C80",
+      "C81",
+      "C103",
+      "C108"
+    ],
+    "result": "V276T and W107A form distinct epistatic interactions: V276T forms predominantly negative epistatic interactions with destabilizing mutations in soluble loops, while W107A forms positive interactions with mutations in both loops and transmembrane domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13, C80-C81, C103, C108 present the core finding of divergent epistasis patterns. The observation is supported by quantitative epistasis score distributions (C80-C81, Figure 5) and analysis of 251 variants (C9, C103). The mechanistic interpretation (C13) is reasonable given the data, though the underlying molecular mechanisms remain partially speculative. The conclusion that epistasis depends on both severity and mechanism (C10, C108) is well-supported by the comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C70",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Secondary mutations synergistically decrease expression in the V276T background (48% of cells show diminished expression), with negative epistasis most prominent among moderately destabilizing loop mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61, C70, C104-C106 describe the V276T epistasis pattern with quantitative flow cytometry data (C54-C55, C60) and structural context (C106). The observation of synergistic decreases (C56, C104) is supported by bimodal distributions (C54-C55) and domain-specific analysis (C70). The interpretation that this reflects combined destabilizing effects (C105) is reasonable but somewhat speculative. The prominence among loop mutations (C106) is a key observation supported by cluster analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C90",
+      "C97",
+      "C98",
+      "C107",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "W107A forms positive epistatic interactions with 40% of secondary mutations regardless of topological context, reflecting attenuated effects of destabilizing mutations in an already predominantly misfolded variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C90, C97-C98, C107, C114-C117 describe the W107A epistasis pattern with quantitative data (C71, C60) and mechanistic interpretation. The positive epistasis (C81, C114) is well-documented, and the interpretation that this reflects diminishing returns in an unstable protein (C90, C98, C117) is supported by thermodynamic principles (C118) and the low baseline expression (C116). However, the mechanistic explanation remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "Unsupervised learning identified three distinct clusters of variants: Cluster 1 (76 TMD variants with strong positive epistasis with W107A), Cluster 2 (30 loop variants with moderate destabilization and negative epistasis with V276T), and Cluster 3 (76 neutral loop variants with minimal epistasis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89, C91-C92 describe the unsupervised learning analysis using UMAP and HDBSCAN. The clustering is based on expression profiles alone (C86) and reveals clear structural and functional patterns (C87-C89). The observation that loop and TMD mutations form divergent epistatic interactions with V276T (C91) is well-supported, though the mechanistic interpretation (C92) remains speculative. The clustering provides an objective framework for understanding epistasis patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Rosetta modeling shows that TMD variants (Cluster 1, avg. \u0394\u0394G = +3.4 REU) are more destabilizing than loop variants (Clusters 2-3, avg. \u0394\u0394G = +2.2 and +0.8 REU), with destabilization correlating with positive epistasis for W107A but not fully explaining V276T epistasis patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97, C99-C102 describe computational stability predictions and their relationship to epistasis. The Rosetta modeling approach is appropriate (C93-C94), and the correlation between stability and PME is validated (C95). The observation that destabilization tracks with W107A epistasis (C97) is supported, but the finding that stability alone cannot explain V276T epistasis (C101-C102) is a key negative result. The conclusion that topological context matters (C102) is well-supported but requires additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mutations in C-terminal regions (ICL3, TMD6, TMD7) fare worse in the V276T background (p < 0.02), potentially reflecting late-stage cotranslational folding interactions, while mutations in ICL2, TMD4, and ECL2 are better tolerated in the W107A background (p < 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe domain-specific epistasis patterns with statistical support (Wilcoxon signed rank tests with p < 0.05). The C-terminal bias for V276T (C75) is consistent with the stage I folding defect in TMD6, and the interpretation about cotranslational folding (C76) is reasonable though speculative. The W107A pattern (C77) is well-documented statistically. These observations support the broader conclusion about mechanism-dependent epistasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Most mutations have additive effects on PME (epistasis scores near zero), but 98 of 251 variants show large differences in epistasis scores (\u22651.0) between V276T and W107A backgrounds, enriched for TMD variants (65% vs. 45% overall, p = 0.0019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C82-C84 describe the overall epistasis landscape with quantitative metrics. The observation that most mutations are additive (C78) is consistent with stable protein studies (C79). The identification of 98 variants with divergent epistasis (C82) and their enrichment in TMDs (C83) provides statistical support for mechanism-dependent epistasis (C84). The Fisher's exact test (p = 0.0019) supports the TMD enrichment claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The positive epistasis observed with W107A reflects thermodynamic principles: as protein stability decreases and the fraction of folded protein approaches zero, unfolding transitions become shallow, attenuating the effects of destabilizing mutations and inverting typical stability-mediated epistasis patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C115, C118-C121 provide a thermodynamic framework for understanding the W107A epistasis pattern. The fundamental thermodynamic principle (C111, C118) is well-established, and the application to the W107A data (C112-C115) is logical. The interpretation that epistasis patterns invert in unstable proteins (C121) is supported by the sigmoidal relationship between stability and folding (Figure 7), though this remains somewhat theoretical. The mechanistic explanation is coherent and consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The topological context-dependence of V276T epistasis suggests that stability-mediated epistasis in stage I folding (membrane integration) may be mechanistically distinct from stage II folding (tertiary structure), potentially reflecting differences in membrane insertion energetics, interhelical hydrogen bonding, and translocon complex remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C129 propose mechanistic explanations for the V276T epistasis pattern. While the observation of topological context-dependence is well-supported (C124), the mechanistic interpretations are largely speculative (C125-C129). The hypotheses about membrane insertion energetics (C126), interhelical hydrogen bonds (C127-C128), and translocon remodeling (C129) are plausible and supported by citations, but lack direct experimental validation in this study. Additional experiments would be needed to test these mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The findings reveal divergent, mechanism-dependent patterns of epistasis in membrane proteins, suggesting that folding-mediated epistasis varies among different classes of destabilizing mutations depending on folding efficiency and misfolding mechanism, with implications for understanding evolutionary constraints on membrane proteins and the attenuation of deleterious mutations in unstable proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C130-C133 summarize the broader implications of the study. The core finding of divergent epistasis patterns (C130) is well-supported by the data. The conclusion that epistasis depends on mutation class and folding efficiency (C131) is supported by the cluster analysis and thermodynamic modeling. The evolutionary implications (C132) and attenuation of deleterious effects in unstable proteins (C133) are reasonable inferences from the data. The 'ensemble epistasis' hypothesis (C109) is speculative but provides a useful conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The attenuation of destabilizing mutations in unstable proteins could expand accessible sequence space in metastable proteins and allow combinations of mutations that would not be tolerated in stable proteins, potentially explaining the persistence of misfolded alleles like \u0394F508-CFTR in human populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 extend the findings to broader evolutionary and biomedical contexts. While the hypothesis is logical and supported by citations about metastable proteins (C122), the application to human genetic variation (C123) is speculative. The \u0394F508-CFTR example is illustrative but not directly tested. These claims represent interesting hypotheses that would require additional population genetic and experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74"
+    ],
+    "result": "The DMS measurements are highly reproducible across biological replicates (average Spearman's \u03c1 = 0.936), with most mutations decreasing PME in all backgrounds, reflecting limited mutational tolerance. Only 20% and 8% of mutations enhance expression in WT and V276T backgrounds respectively, while loop residues are generally more permissive than TMD residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69, C74 describe data quality and general mutational tolerance patterns. The high correlation across replicates (C66) validates the experimental approach. The observation that most mutations are deleterious (C67) is expected and supported by citations (C67). The quantitative enhancement rates (C68-C69) and loop vs. TMD tolerance (C74) are well-documented in the data. These are important quality control and descriptive results that support the primary findings.",
+    "result_type": "MINOR"
+  }
+]

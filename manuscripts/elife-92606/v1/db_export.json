@@ -1,0 +1,2677 @@
+{
+  "submission": {
+    "id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:28:08.861190Z",
+    "updated_at": "2025-11-20T23:28:08.861190Z"
+  },
+  "content": [
+    {
+      "id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "content_type": "manuscript",
+      "content_text": "# Dengue viremia kinetics and effects on platelet count and clinical outcomes: An analysis of 2340 patients from Vietnam\n\n## Authors\n\n- Nguyen Lam Vuong<sup>1</sup> ([ORCID: 0000-0003-2684-3041](https://orcid.org/0000-0003-2684-3041)) \u2020\n- Nguyen Than Ha Quyen<sup>2</sup>\n- Nguyen Thi Hanh Tien<sup>2</sup>\n- Kien Duong Thi Hue<sup>2</sup>\n- Huynh Thi Le Duyen<sup>2</sup>\n- Phung Khanh Lam<sup>1</sup> ([ORCID: 0000-0001-7968-473X](https://orcid.org/0000-0001-7968-473X))\n- Dong Thi Hoai Tam<sup>2</sup>\n- Tran Van Ngoc<sup>3</sup>\n- Thomas Jaenisch<sup>4</sup>\n- Cameron P Simmons<sup>6</sup> ([ORCID: 0000-0002-9039-7392](https://orcid.org/0000-0002-9039-7392))\n- Sophie Yacoub<sup>2</sup>\n- Bridget A Wills<sup>2</sup> ([ORCID: 0000-0001-9086-8804](https://orcid.org/0000-0001-9086-8804))\n- Ronald Geskus<sup>2</sup> ([ORCID: 0000-0002-2740-3155](https://orcid.org/0000-0002-2740-3155)) \u2020\n\n### Affiliations\n\n1. University of Medicine and Pharmacy at Ho Chi Minh City Ho Chi Minh City Viet Nam ([ROR:025kb2624](https://ror.org/025kb2624))\n2. Oxford University Clinical Research Unit Ho Chi Minh City Viet Nam ([ROR:05rehad94](https://ror.org/05rehad94))\n3. Hospital for Tropical Diseases Ho Chi Minh City Viet Nam ([ROR:040tqsb23](https://ror.org/040tqsb23))\n4. Center for Global Health, Colorado School of Public Health Aurora United States ([ROR:005x9g035](https://ror.org/005x9g035))\n5. Heidelberg Institute of Global Health (HIGH), Heidelberg University Hospital Heidelberg Germany ([ROR:013czdx64](https://ror.org/013czdx64))\n6. Centre for Tropical Medicine and Global health, Nuffield Department of Clinical Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n7. World Mosquito Program, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Viremia is a critical factor in understanding the pathogenesis of dengue infection, but limited data exist on viremia kinetics. This study aimed to investigate the kinetics of viremia and its effects on subsequent platelet count, severe dengue, and plasma leakage.Methods:We pooled data from three studies conducted in Vietnam between 2000 and 2016, involving 2340 dengue patients with daily viremia measurements and platelet counts after symptom onset. Viremia kinetics were assessed using a random effects model that accounted for left-censored data. The effects of viremia on subsequent platelet count and clinical outcomes were examined using a landmark approach with a random effects model and logistic regression model with generalized estimating equations, respectively. The rate of viremia decline was derived from the model of viremia kinetics. Its effect on the clinical outcomes was assessed by logistic regression models.Results:Viremia levels rapidly decreased following symptom onset, with variations observed depending on the infecting serotype. DENV-1 exhibited the highest mean viremia levels during the first 5\u20136 days, while DENV-4 demonstrated the shortest clearance time. Higher viremia levels were associated with decreased subsequent platelet counts from day 6 onwards. Elevated viremia levels on each illness day increased the risk of developing severe dengue and plasma leakage. However, the effect size decreased with later illness days. A more rapid decline in viremia is associated with a reduced risk of the clinical outcomes.Conclusions:This study provides comprehensive insights into viremia kinetics and its effect on subsequent platelet count and clinical outcomes in dengue patients. Our findings underscore the importance of measuring viremia levels during the early febrile phase for dengue studies and support the use of viremia kinetics as outcome for phase-2 dengue therapeutic trials.Funding:Wellcome Trust and European Union Seventh Framework Programme.\n\n## Introduction\n\nDengue is the most common arboviral infection worldwide and is found mainly in tropical and subtropical areas. The disease has been a growing threat for decades, and in 2019 the World Health Organization (WHO) ranked it among the top 10 threats to global health (World Health Organization, 2009; World Health Organization, 2020). It is estimated that 105 million people are infected by dengue annually, of whom half develop symptoms (Cattarino et al., 2020). Although most infections are asymptomatic or self-limiting, the small proportion of patients who develop complications can still overwhelm health systems in dengue-endemic countries during seasonal epidemics. Climate change, increasing global travel, and urbanization all serve to amplify the distribution of Aedes aegypti, the main vector responsible for dengue transmission (Whitehorn and Yacoub, 2019; Yacoub et al., 2011). Although dengue has been known for centuries, specific treatment is still to be found, and the two licensed vaccines are of limited benefit (Kariyawasam et al., 2023; Redoni et al., 2020).\n\nExploring the variation in viremia levels could help improve our understanding of disease pathogenesis and potentially facilitate assessment of new vaccines and treatments for dengue. For example, knowing the natural kinetics of dengue viremia may help in selection of patient groups or timing of antiviral use in therapeutic intervention trials. Dengue viremia kinetics has been investigated in several studies (Ben-Shachar et al., 2016; Clapham et al., 2016; Clapham et al., 2014; Duyen et al., 2011; Matangkasombut et al., 2020; Nguyet et al., 2013; Simmons et al., 2007a; Tricou et al., 2011). The main findings are: (1) viremia rapidly decreases after symptom onset; (2) dengue virus (DENV)-1 infection gives higher viremia level than DENV-2 and DENV-3; and (3) primary infection gives higher viremia than secondary infection in DENV-1. However, these studies had limited sample sizes, particularly for DENV-4 serotype, and did not provide a full account of viremia kinetics. Three studies constructed mechanistic mathematical models and focused on investigating the role of the host immune response in controlling viremia (Ben-Shachar et al., 2016; Clapham et al., 2016; Clapham et al., 2014). Another study assessed viremia in infants aged under 18 months (Simmons et al., 2007a); the findings cannot be generalized to older children or adults. Others focused on peak viremia level after symptom onset, time to viral clearance and/or the probability of detecting virus on each illness day (Duyen et al., 2011; Matangkasombut et al., 2020; Nguyet et al., 2013; Tricou et al., 2011). In most analyses, viremia levels below the limit of detection were simply set as zero, which may not be appropriate.\n\nQuantifying the effect of viremia level on clinical outcomes is important to understand the mechanisms leading to severe disease. We and others have previously found that higher viremia levels are associated with more severe dengue (Duyen et al., 2011; Endy et al., 2004; Morsy et al., 2020; Tang et al., 2010; Tricou et al., 2011; Vaughn et al., 2000; Vuong et al., 2021), but the effect size was not strong (Vuong et al., 2021). However, all analyses were based on a single viremia value per individual. Investigating how individual viremia levels at different times after symptom onset affect the risk of severe outcome potentially provides new insights into pathogenic mechanisms. Another important question is whether a more rapid decline in viremia is associated with a lower risk of more severe clinical outcomes. One study has shown a slower rate of viral clearance being associated with more severe outcomes (Wang et al., 2006), while others have shown no association (Fox et al., 2011; Vaughn et al., 2000). This lack of conclusive evidence underscores the need for further investigation. In addition, the relationship between viremia kinetics and platelet count kinetics \u2013 an important hematological indicator \u2013 has yet to be investigated.\n\nThis study aims to improve our understanding of viremia kinetics, how it is associated with patient characteristics and virus serotype, and how it impacts disease severity, using a dataset derived from several thousand individuals with symptomatic dengue. First, we fitted a model for individual viremia kinetics that treats values below the detection limit as censored data, and assessed whether viremia kinetics differed by age, sex, serotype, or immune status. Second, we modeled platelet count kinetics and explored dependence on viremia level. We investigated the potential existence of a lagged effect of viremia, by analyzing platelet counts measured on and following the day of viremia assessment. Third, we modeled the effect of viremia levels measured at different days after symptom onset and the effect of the rate of viremia decline on development of two clinical outcomes, plasma leakage and severe dengue.\n\n## Methods\n\n### Study population\n\nWe used data from three prospective observational studies performed as part of the longstanding collaboration between the Oxford University Clinical Research Unit (OUCRU) and the Hospital for Tropical Diseases (HTD) in Ho Chi Minh City, Vietnam. Protocol synopses for the three studies are presented in Appendix 1. Briefly, studies A and B simultaneously ran from 2000 to 2009 and enrolled children aged between 5 and 15 years. Study A included children with a febrile illness presenting to community outpatient clinics, while study B included children admitted to HTD with a febrile illness suspected to be dengue. Some patients from study A were subsequently enrolled in study B after admission to hospital. Study C ran from 2011 to 2016 and enrolled adults and children presenting with possible dengue within 3 days of fever onset (IDAMS study, NCT01550016) (Jaenisch et al., 2016). Clinical evaluation and blood sampling were performed daily for all three studies. All studies were approved by the Oxford Tropical Research Ethics Committee and the Institutional Ethics Committee.\n\nWe identified 3527 laboratory-confirmed dengue patients. Among them, 2340 had relevant data on viremia kinetics and were included in this analysis (Figure 1). Details of dengue diagnostics are in Appendix 2.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig1-v1.jpg)\n\n**Figure 1.:** @Among 385 laboratory-confirmed dengue patients in study A, 31 individuals were later included in study B upon hospitalization. Of these, nine had viremia measurements available in both studies and were consequently analysed in study A. The remaining 22 lacked viremia data in study A but had measurements in study B, leading to their inclusion in study B in the analysis. #Although study B spanned from 2000 to 2009, daily viremia levels were only measured between 2006 and 2008. $In study C, one study site in Vietnam did not have daily viremia measurements. Overall, a random sample of 2340 from 3527 laboratory-confirmed dengue patients had data on viremia kinetics. PCR, polymerase chain reaction.\n\n### Plasma viremia measurement, dengue diagnostics, and clinical endpoints (details in Appendix 2)\n\nPlasma viremia levels were measured by reverse transcription polymerase chain reaction (RT-PCR), which was an internally controlled, serotype-specific, real-time, two-step assay in studies A and B (Simmons et al., 2007b), and a one-step procedure using a validated assay in study C (Hue et al., 2011). There was no formal validation of the detection limit for viremia for the two-step PCR used in studies A and B; we set it at 1000 copies/ml. In the one-step PCR used in study C, the detection limit was 300 copies/ml for DENV-1 and DENV-3, 60 copies/ml for DENV-2, and 600 copies/ml for DENV-4 (Hue et al., 2011).\n\nPatients were classified into probable primary (i.e., the first) or probable secondary (i.e., a second or subsequent) infection based on IgG results on paired samples. A probable primary infection was defined by two negative/equivocal IgG results on separate samples taken at least 2 days apart within the first 10 days of symptom onset, with at least one sample during the convalescent phase (days 6\u201310). A probable secondary infection was defined by at least one positive IgG result during the first 10 days. Cases without time-appropriate IgG results were classified as indeterminate.\n\nFor the clinical endpoints we selected severe dengue and plasma leakage. The definitions are based on the WHO 2009 guidelines (World Health Organization, 2009) and standard endpoint definitions for dengue trials (Tomashek et al., 2018). Severe dengue was defined as severe plasma leakage, severe bleeding, and/or severe organ impairment. Plasma leakage included moderate and severe leakage.\n\n### Statistical analysis (details in Appendix 3)\n\nIn Appendix 3\u2014figure 1 we show a directed acyclic graph (DAG) to display assumptions about the causal relationships between variables over illness day. Illness day is the number of days after symptom onset, where day 1 is the day of symptom onset. Potential confounders that needed to be corrected for were age, sex, DENV serotype, and primary/secondary immune status. In all analyses, we used a log-10 transformation for viremia levels.\n\nWe modeled viremia kinetics over time and explored dependence on age, sex, serotype, immune status, and PCR method using a linear mixed-effects regression model, allowing for left-censored values in the outcome variable. In the fixed effect, we allowed for interactions between serotype and immune status, and between illness day and all other covariates. Nonlinear trends by age and illness day were investigated using splines with three and four knots, respectively. We included a random effect with an intercept and splines for illness day with four knots to model the intra-person correlation. Due to the presence of a left-skewed distribution in log-10 viremia (Appendix 4\u2014figure 1), a sensitivity analysis was conducted using the 10th-root transformation.\n\nPlatelet counts were transformed using a fourth-root transformation since the distribution was right-skewed (Appendix 4\u2014figure 2). The effect of viremia on subsequent platelet count was investigated using the landmark approach (van Houwelingen and Putter, 2011). For each illness day from 1 to 7, a landmark dataset was created, which included viremia on that day, platelet count from that day to day 10, and the time-fixed variables (age, sex, serotype, immune status, and PCR method). For the supermodel that combined all landmark datasets, we used a linear mixed-effects model including viremia, age, sex, serotype, immune status, PCR method, illness day and landmark. In the fixed effect, we also included four-way interactions between viremia, serotype, PCR method and (1) and immune status, (2) illness day, and (3) landmark day. Splines with three knots were used to allow for nonlinear trends in log-10 viremia, age, illness day, and landmark day. We included a random effect with an intercept by the combination of individuals and landmark, and splines for illness day with three knots.\n\nThe effect of viremia on the clinical endpoints was investigated using a logistic regression model using the landmark approach (van Houwelingen and Putter, 2011). For each illness day from 1 to 7, a landmark dataset was created, which included viremia on that day, occurrence of the endpoint on or after that day, and the time-fixed variables similar to above. All individuals who had already experienced the relevant endpoint before that day were excluded. We fitted a logistic regression model for each landmark dataset and then fitted a supermodel that combined all the datasets. For the supermodel we used generalized estimating equations to account for repeated inclusion of individuals at multiple landmarks. We included viremia, age, sex, serotype, immune status, study, and landmark day, and allowed for the four-way interaction between viremia, serotype, immune status, and landmark day, and two-way interactions between viremia and all other covariates. Splines were used to allow for nonlinear trends in log-10 viremia (three knots), age (three knots), and landmark (three knots). Since plasma leakage had missing data, we performed an analysis with imputed data using multiple imputation by chained equations. The imputation was done in our previous study (Vuong et al., 2021).\n\nTo calculate the rate of viremia decline for each patient, we assumed a linear decline in log-10 viremia over time. We modified our viremia kinetics model by using a linear term for illness day rather than the original nonlinear terms, both in the fixed and in the random effect. For each patient, we then calculated fitted values using this model. The rate of viremia decline was defined as the daily difference in log-10 viremia. We assessed the impact of the decline rate on the clinical endpoints using logistic regression models. We did not use the landmark approach for this analysis since the decline rate was assumed to be constant over time. Covariates included the decline rate, serotype, immune status, and PCR method. Due to limited number of severe dengue cases, its model did not include any interaction terms. The plasma leakage model incorporated interactions between the decline rate and all other covariates.\n\nIn the analyses for platelet count and clinical outcomes, undetectable viremia levels were set as the specific detection limits, and a binary dummy variable (yes/no) was created to indicate whether the viremia value was undetectable. Since the individual spline terms are hard to interpret and the large dataset makes most differences statistically significant, results are primarily reported using plots of predicted values. All analyses were done using the statistical software R version 4.1.0 (R Core Team, 2021) with \u2018MCMCglmm\u2019 (Hadfield, 2010), \u2018lme4\u2019 (Bates et al., 2015), \u2018geepack\u2019 (Halekoh et al., 2006), and \u2018rms\u2019 (Harrell, 2021) packages for the models.\n\n## Results\n\nBaseline characteristics and outcomes are summarized in Table 1. Three quarters of the participants were children, and male sex predominated (60%). Most patients (85%) were enrolled on illness day 2 or 3. All four serotypes were included, but DENV-1 was the most prevalent (54%). Most infections (69%) were classified as probable secondary infection, while in 11% immune status could not be determined. There were 353 patients (15%) with plasma leakage and 65 patients (3%) with severe dengue. In Appendix 4\u2014table 1, we summarize plasma leakage and severe dengue by serotype and immune status. DENV-2 had the highest proportion of these two outcomes. Patients with probable secondary infection were more likely to experience these outcomes than those with probable primary infection or indeterminate immune status, regardless of the infecting serotype.\n\n**Table 1.**\n Baseline characteristics and clinical outcomes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>N*</th>\n      <th>All patients (N = 2340)</th>\n      <th>Study A (N = 363)</th>\n      <th>Study B (N = 622)</th>\n      <th>Study C (N = 1355)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Age, years</td>\n      <td>2340</td>\n      <td>13 (10; 18)</td>\n      <td>12 (9; 14)</td>\n      <td>12 (10; 13)</td>\n      <td>16 (10; 25)</td>\n    </tr>\n    <tr>\n      <td>Sex male</td>\n      <td>2340</td>\n      <td>1403 (60)</td>\n      <td>195 (54)</td>\n      <td>412 (66)</td>\n      <td>796 (59)</td>\n    </tr>\n    <tr>\n      <td>Illness day at enrolment</td>\n      <td>2340</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td></td>\n      <td>310 (13)</td>\n      <td>59 (16)</td>\n      <td>7 (1)</td>\n      <td>244 (18)</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td></td>\n      <td>848 (36)</td>\n      <td>150 (41)</td>\n      <td>155 (25)</td>\n      <td>543 (40)</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td></td>\n      <td>1137 (49)</td>\n      <td>114 (31)</td>\n      <td>455 (73)</td>\n      <td>568 (42)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td></td>\n      <td>45 (2)</td>\n      <td>40 (11)</td>\n      <td>5 (1)</td>\n      <td>0 (0)</td>\n    </tr>\n    <tr>\n      <td>Serotype</td>\n      <td>2340</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>DENV-1</td>\n      <td></td>\n      <td>1264 (54)</td>\n      <td>233 (64)</td>\n      <td>410 (66)</td>\n      <td>621 (46)</td>\n    </tr>\n    <tr>\n      <td>DENV-2</td>\n      <td></td>\n      <td>373 (16)</td>\n      <td>48 (13)</td>\n      <td>130 (21)</td>\n      <td>195 (14)</td>\n    </tr>\n    <tr>\n      <td>DENV-3</td>\n      <td></td>\n      <td>252 (11)</td>\n      <td>80 (22)</td>\n      <td>82 (13)</td>\n      <td>90 (7)</td>\n    </tr>\n    <tr>\n      <td>DENV-4</td>\n      <td></td>\n      <td>451 (19)</td>\n      <td>2 (1)</td>\n      <td>0 (0)</td>\n      <td>449 (33)</td>\n    </tr>\n    <tr>\n      <td>Immune status</td>\n      <td>2340</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Probable primary</td>\n      <td></td>\n      <td>474 (20)</td>\n      <td>134 (37)</td>\n      <td>124 (20)</td>\n      <td>216 (16)</td>\n    </tr>\n    <tr>\n      <td>Probable secondary</td>\n      <td></td>\n      <td>1619 (69)</td>\n      <td>219 (60)</td>\n      <td>464 (75)</td>\n      <td>936 (69)</td>\n    </tr>\n    <tr>\n      <td>Indeterminate</td>\n      <td></td>\n      <td>247 (11)</td>\n      <td>10 (3)</td>\n      <td>34 (5)</td>\n      <td>203 (15)</td>\n    </tr>\n    <tr>\n      <td>Plasma leakage</td>\n      <td>2288</td>\n      <td>353 (15)</td>\n      <td>43 (13)</td>\n      <td>177 (29)</td>\n      <td>133 (10)</td>\n    </tr>\n    <tr>\n      <td>Missing</td>\n      <td></td>\n      <td>52</td>\n      <td>39</td>\n      <td>13</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Illness day of plasma leakage</td>\n      <td>327</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td></td>\n      <td>2 (1)</td>\n      <td>0 (0)</td>\n      <td>0 (0)</td>\n      <td>2 (2)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td></td>\n      <td>71 (22)</td>\n      <td>12 (30)</td>\n      <td>35 (23)</td>\n      <td>24 (18)</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td></td>\n      <td>107 (33)</td>\n      <td>12 (30)</td>\n      <td>50 (32)</td>\n      <td>45 (34)</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td></td>\n      <td>105 (32)</td>\n      <td>12 (30)</td>\n      <td>49 (32)</td>\n      <td>44 (33)</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td></td>\n      <td>42 (13)</td>\n      <td>4 (10)</td>\n      <td>20 (13)</td>\n      <td>18 (14)</td>\n    </tr>\n    <tr>\n      <td>Missing</td>\n      <td></td>\n      <td>26</td>\n      <td>3</td>\n      <td>23</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Severe dengue</td>\n      <td>2340</td>\n      <td>65 (3)</td>\n      <td>6 (2)</td>\n      <td>40 (6)</td>\n      <td>19 (1)</td>\n    </tr>\n    <tr>\n      <td>Illness day of severe dengue</td>\n      <td>65</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td></td>\n      <td>2 (3)</td>\n      <td>0 (0)</td>\n      <td>2 (5)</td>\n      <td>0 (0)</td>\n    </tr>\n    <tr>\n      <td>4</td>\n      <td></td>\n      <td>13 (20)</td>\n      <td>0 (0)</td>\n      <td>12 (30)</td>\n      <td>1 (5)</td>\n    </tr>\n    <tr>\n      <td>5</td>\n      <td></td>\n      <td>24 (37)</td>\n      <td>2 (33)</td>\n      <td>16 (40)</td>\n      <td>6 (32)</td>\n    </tr>\n    <tr>\n      <td>6</td>\n      <td></td>\n      <td>20 (31)</td>\n      <td>4 (67)</td>\n      <td>7 (18)</td>\n      <td>9 (47)</td>\n    </tr>\n    <tr>\n      <td>7</td>\n      <td></td>\n      <td>6 (9)</td>\n      <td>0 (0)</td>\n      <td>3 (8)</td>\n      <td>3 (16)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Summary statistics are number of patients (%) or median (25th; 75th percentiles).DENV: dengue virus.*N represents the number of patients with available data (i.e., without missing data)._\n\n### Viremia kinetics and the relationship with clinical characteristics\n\nIndividual viremia trajectories are shown in Figure 2. Most individuals had a decreasing trend from day 1 or 2 onwards. However, values higher than the baseline value were observed up to day 7 (Appendix 4\u2014figure 3). The decreasing trend was consistent across all combinations of serotype and immune status (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig2-v1.jpg)\n\n**Figure 2.:** The dots represent the measured viremia levels and are connected by lines for each individual patient. The dashed lines indicate the detection limits, which are 300 copies/ml for DENV-1 and DENV-3, 60 copies/ml for DENV-2, and 600 copies/ml for DENV-4 in the one-step PCR cohort, and 1000 copies/ml in the two-step PCR cohort. Fifty-seven measured values that are lower than 1000 copies/ml in the two-step PCR cohort are considered as below the detection limit. Values below the detection limit are visually represented as 1/10 of the corresponding detection limit (on the original scale). DENV, dengue virus; PCR, polymerase chain reaction.\n\nIn Figure 3, we present the fitted values based on the model for viremia for the one-step PCR cohort. The mean viremia trajectory differed by serotype. DENV-1 gave the highest viremia levels, with DENV-2 in secondary infection giving similar levels from day 5 onwards. DENV-2, DENV-3, and DENV-4 had similar viremia levels during the first 3 days. However, viremia decreased rapidly in DENV-4, reaching undetectable levels in the shortest time, while DENV-2 showed the slowest decline. These differences between serotypes were more pronounced in case of probable primary infection (Figure 3A). In terms of immune status, probable primary infection showed higher viremia levels compared to probable secondary infection in DENV-1 from day 3 onwards. The disparity between probable primary and probable secondary infection was less pronounced in the other serotypes (Figure 3B). Mean viremia levels were comparable between females and males (Figure 3C), as well as across age (Figure 3D). The one-step PCR method resulted in longer viremia compared to the two-step PCR (Appendix 5\u2014figure 1). P values for the differences by age, serotype, immune status, and illness day were all <0.0001 (Appendix 5\u2014table 1). The sensitivity analysis using the 10th-root transformation of viremia gave results similar to the main analysis using log-10 viremia (Appendix 5\u2014figure 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig3-v1.jpg)\n\n**Figure 3.:** The colored lines represent the estimated mean viremia levels, and the colored shaded regions represent the corresponding 95% credible intervals. The horizontal lines represent the detection limits (D1, D2, D3, and D4 denote DENV-1, DENV-2, DENV-3, and DENV-4, respectively). Dashed lines indicate fitted viremia levels that are below the detection limit. Viremia levels are shown for age of 10 years, male sex, serotype DENV-1, probable secondary infection, and using the one-step PCR. DENV, dengue virus; PCR, polymerase chain reaction.\n\n### Effect of viremia on subsequent platelet count\n\nFigure 4 shows the mean platelet counts by viremia levels based on the supermodel for the one-step PCR method. There was minimal impact of viremia on days 1\u20135 platelet count. However, higher viremia levels gave decreased subsequent platelet counts from day 6 onwards, for all serotypes. The strength of this effect increased with later illness day and was more pronounced in DENV-1 and DENV-2 compared to DENV-3 and DENV-4. All covariates had low p values (Appendix 6\u2014table 1). The effect of viremia on subsequent platelet count remained consistent across subgroups of immune status, sex, and age. In the two-step PCR cohort, the effect of viremia on platelet count was less pronounced compared to the one-step PCR cohort, although the overall trends were similar (Appendix 6\u2014figure 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig4-v1.jpg)\n\n**Figure 4.:** The colored lines or dots represent the estimated mean platelet counts. The colored shaded regions and whiskers indicate the corresponding 95% confidence intervals. Each row represents the effect of viremia on a specific day to platelet count from that day to day 10. No fitted trends are made for DENV-4 in LM day 7 since viremia was undetectable in almost all DENV-4 cases from day 7 onwards. The mean platelet counts are shown for age of 10 years, male sex, probable secondary infection, and using the one-step PCR. DENV, dengue virus; LM, landmark; PCR, polymerase chain reaction; U, under the limit of detection.\n\n### Effect of viremia on clinical outcomes\n\nHigher viremia levels increased the risk of severe dengue and plasma leakage for each of the serotypes (Figure 5). The effect of viremia on both endpoints decreased with later landmark day of viremia measurement, particularly for severe dengue (Appendix 7\u2014table 1). However, these trends were not clear in the results obtained from the simple logistic regression models at each landmark time point (Appendix 7\u2014figure 1). This trend remained consistent across subgroups of sex, age, and study (Appendix 7\u2014figure 2). Furthermore, the results were consistent between the analyses with and without imputation (Appendix 7\u2014figure 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig5-v1.jpg)\n\n**Figure 5.:** The colored lines or dots represent the probability of the endpoints. The colored shaded regions and whiskers indicate the corresponding 95% confidence intervals. Each column represents the effect of viremia on a specific day. No fitted trends are made for DENV-4 in LM day 7 since viremia was undetectable in almost all DENV-4 cases from day 7 onwards. Note that due to the limited number of severe dengue in primary infections (only 1 case in DENV-1) and plasma leakage in primary DENV-4 (see Appendix 4\u2014table 1), the estimated probability of having these outcomes is nearly zero across all viremia levels within these subgroups. The probabilities are shown for age of 10 years, male sex, probable secondary infection, and from Study C. DENV, dengue virus, LM, landmark; PCR, polymerase chain reaction; U, under the limit of detection.\n\nThe supermodel revealed that older individuals had a relatively lower risk of developing severe dengue, but the trend was not significant. Males exhibited a slightly higher risk of severe dengue compared to females. The effect of serotype on the two endpoints was dependent on immune status. Individuals with probable secondary infection had a higher risk of experiencing both endpoints compared to those with probable primary infection (Appendix 7\u2014figure 4).\n\nFrom the model of viremia kinetics with a linear trend of illness day, the individual rate of viremia decline ranged from 0.58 to 2.01 log-10 copies/ml/day, with a median of 1.39 log-10 copies/ml/day. The logistic regression model demonstrated that a faster decline in viremia reduced the risk of severe dengue and plasma leakage (Figure 6). The effect on plasma leakage was stronger in the probable secondary infection group (Appendix 7\u2014table 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/92606/elife-92606-fig6-v1.jpg)\n\n**Figure 6.:** The colored lines represent the probability of the endpoints. The colored shaded regions indicate the corresponding 95% confidence intervals.\n\n## Discussion\n\nIn this study, we conducted a comprehensive analysis using a large dataset of 2340 viremic dengue patients to examine viremia kinetics from first presentation, its association with various virus and patient characteristics, and its impact on subsequent platelet count and disease severity. As others have described, we found that plasma viremia declines rapidly following the onset of symptoms, with the kinetics primarily influenced by the specific infecting serotype. Higher viremia levels were associated with a decrease in subsequent platelet count from day 6 onwards. Elevated viremia levels were found to increase the risk of developing severe dengue and plasma leakage, with the effect becoming weaker at later days. The effects of viremia on platelet count and clinical outcomes did not differ much by different subgroups of serotype, immune status, age, and sex. Moreover, a faster decline in viremia was associated with a reduced risk of the more severe clinical outcomes.\n\nThere is a limited number of published papers that studied the individual trajectory of dengue viremia. Most used data from Vietnam (Ben-Shachar et al., 2016; Clapham et al., 2016; Clapham et al., 2014; Duyen et al., 2011; Nguyet et al., 2013; Simmons et al., 2007a; Tricou et al., 2011), while one was from Thailand (Matangkasombut et al., 2020). Our study has provided further evidence supporting previous findings. We confirmed that (1) viremia rapidly decreases following the onset of symptoms, (2) DENV-1 exhibits higher viremia levels compared to DENV-2 and DENV-3, and (3) primary infection is associated with higher and more prolonged detectable viremia than secondary infection in DENV-1, while this pattern was not consistent across other serotypes. We have added viremia kinetics of DENV-4, and showed that viremia levels declined more rapidly than the other serotypes. Furthermore, our study demonstrated that the new PCR test has the ability to detect plasma viremia for a longer period compared to the older test. This may be attributed to the lower detection limits of the new test. Explaining the differences in viremia kinetics between serotypes remains challenging, as the molecular factors of the virus that influence plasma viremia levels are still unknown. It is also important to note that our study focused on the time since symptom onset rather than the time since infection. We cannot rule out that some of the observed differences are explained by a difference in time from infection to symptom onset.\n\nOur study suggests that higher viremia levels on any day before day 6 are associated with reduced platelet count on days 6\u20138, typically corresponding to the nadir of platelet count. Additionally, it is possible that viremia in the initial 4 days after symptom onset could affect platelet count with a delay of 3\u20134 days. The direct involvement of the dengue virus in triggering platelet activation and apoptosis can contribute to the development of thrombocytopenia. Thrombocytopenia in dengue infection is thought to occur through two mechanisms: bone marrow suppression, which reduces thrombopoiesis, and increased peripheral platelet clearance (Quirino-Teixeira et al., 2022). Various processes contribute to these mechanisms, including platelet\u2013leukocyte and platelet\u2013endothelial cell interactions, phagocytosis, complement-mediated lysis, aggregation, and clot formation. Additionally, several host immune response factors are involved in platelet activation (Balakrishna Pillai et al., 2022). In our analysis, we considered interactions between viremia level and both serotype and immune status. Interestingly, we observed that the effect of viremia level on subsequent platelet count did not differ much by serotype and immune status.\n\nHigher plasma viremia levels increase the risk of worse clinical outcomes, as demonstrated in our previous study that only utilized viremia at enrollment during the febrile phase (Vuong et al., 2021). The diminishing impact of viremia on the two endpoints on later illness days may be attributed to the heightened immune responses that are likely triggered by higher viremia levels, and the resulting complex interplay between these factors that underlies progression to severe dengue. The effects of viremia, age, serotype, immune status, and illness day on the clinical endpoints in this study are consistent with those observed in the previous study. The similarity between these two analyses, along with the weaker effect of viremia at later days, suggests that viremia levels around the time of symptom onset could serve as a reliable predictor of dengue severity. It suggests that the early febrile phase, specifically illness days 1\u20133, is the critical period of measuring viremia levels in clinical practice and dengue studies. Secondary infection remains a substantial risk factor for more severe outcomes, while viremia kinetics are not influenced much by immune status. These findings suggest that immune status and viremia may be independent predictors of clinical outcomes, following distinct pathways.\n\nThe landmark approach enabled us to investigate the effect of viremia on platelet count and the clinical endpoints at each illness day, ranging from days 1 to 7, while ensuring that the viremia measurements preceded the occurrence of the outcomes. The supermodel allows for investigation of trends of the effects, while gaining power because we assume the effects of some fixed factors (e.g., age and sex) to remain constant over time. There might be other potential confounders such as host genetic and immune response factors, but these data were not available. Moreover, we assumed that the relation between viremia level and platelet count was one-way: viremia level affects platelet count. Whether platelet count affects viremia is unknown.\n\nA notable strength of our study is the utilization of a large pooled dataset, which allowed for a flexible modeling approach to investigate the influence of age, sex, serotype, and immune status, as well as their interactions and nonlinear trends. The use of a model that accounts for left-censored data was needed for capturing the distribution of viremia levels, considering the significant proportion of undetectable values observed.\n\nThe study has several limitations. First, the study only included patients from Vietnam, which may restrict the generalizability of the findings to other countries and regions. Second, our study assessed viral RNA in the plasma, including both viable and non-viable viral particles, which could potentially lead to an overestimation of the infectious viral particles in the blood. Lastly, data during the incubation period were unavailable as patients are typically not diagnosed with dengue until symptom onset. Therefore, the trajectory of viremia from the time of infection onwards could not be demonstrated, and symptom onset was used as the reference point instead of infection. This could potentially lead to an inaccurate interpretation of the results if the incubation period is influenced by the same factors that we included in our analyses. For example, in cases of secondary infection, the immune response is stronger and quicker than in primary infection. This might lead to a shorter duration between infection and symptom onset, as well as faster viral clearance.\n\nIn conclusion, our findings reveal that viremia levels exhibit a rapid decline shortly after symptom onset, becoming undetectable after approximately 1 week in the majority of patients. Viremia kinetics display variations depending on the infecting serotype. Higher viremia levels are associated with a subsequent reduction in platelet count on illness days 6\u20138, and an increased risk of experiencing more severe clinical outcomes. Viremia serves as an important predictor of dengue outcomes, independent of the host immune status. However, when considering our previous analysis that involved single early viremia measurements, the addition of daily viremia measurements may not enhance the prediction of worse clinical outcomes. Thus, the measurement of viremia levels during the early febrile phase is an important marker for clinical practice and dengue-related research. Moreover, a faster decline in viremia was found to be associated with a reduced risk of more severe clinical outcomes, suggesting that viremia kinetics could be a good surrogate endpoint for phase-2 dengue therapeutic trials.\n",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mauro Martins Teixeira, Universidade Federal de Minas Gerais Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92606.3.sa0](https://doi.org/10.7554/eLife.92606.3.sa0)\n\nThis manuscript by Vuong and colleagues reports on the kinetics of viremia in a large set of individuals from Vietnam. In the large cohort, all 4 dengue serotypes are represented and the authors try to correlate viraemia measured at various days from illness onset with thrombocytopaenia and severe dengue, according to the WHO 2009 classification scheme. These are fundamental findings that provide compelling evidence of the importance of measuring viremia early in the phase of the disease. These data will help to inform the design of studies of antiviral drugs against dengue.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92606.3.sa1](https://doi.org/10.7554/eLife.92606.3.sa1)\n\nSummary:\n\nThis manuscript by Vuong and colleagues reports a study that pooled data from 3 separate longitudinal study that collectively spanned an observation period of over 15 years. The authors examined for correlation between viraemia measured at various days from illness onset with thrombocytopaenia and severe dengue, according to the WHO 2009 classification scheme. The motivation for this study is both to support the use of viraemia measurement as a prognostic indicator of dengue and also to, when an antiviral drug becomes licensed for use, guide the selection of patients for antiviral therapy. They found that the four DENVs show differences in peak and duration of viraemia and that viraemia levels before day 5 but not those after from illness onset correlated with platelet count and plasma leakage at day 7 onwards. They concluded that the viraemia kinetics call for early measurement of viraemia levels in the early febrile phase of illness.\n\nStrengths:\n\nThis is a unique study due to the large sample size and longitudinal viraemia measurements in the study subjects. The data addresses a gap in information in the literature, where although it has been widely indicated that viraemia levels are useful when collected early in the course of illness, this is the first time anyone has systematically examined this notion. The inclusion of correlation between rate of viraemia decline and risk of severe dengue/plasma leakage further strengthens the relevance of this paper to those interested in anti-dengue therapeutic research and development.\n\nWeaknesses:\n\nThe study only analysed data from dengue patients in Vietnam. Moreover, the majority of these patients had DENV-1 infection; few had DENV-4 infection. The data could thus be skewed by the imbalance in the prevalence of the different types of DENV during the period of observation. The use of patient-reported time of symptom onset as a reference point for viraemia measurement is pragmatic although there is subjectivity and thus noise in the data.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92606.3.sa2](https://doi.org/10.7554/eLife.92606.3.sa2)\n\nSummary:\n\nThe authors have carried out a comprehensive analysis regarding the kinetics of viraemia and clinical disease severity.\n\nStrengths:\n\nThe manuscript provides important information, especially regarding the time of clearance of the virus and disease severity.\n\nWeaknesses:\n\nDue to the lower number of patients with primary dengue, cannot get an idea regarding viraemia kinetics and disease severity for different serotypes during primary infection.\n",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "69af3baf-c896-4d4d-b753-9d02ac480b48",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C1",
+      "claim": "Dengue is the most common arboviral infection worldwide and is found mainly in tropical and subtropical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Dengue is the most common arboviral infection worldwide and is found mainly in tropical and subtropical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific consensus about dengue epidemiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "0f6743fe-3cc1-40fe-b3b2-9c64dff26197",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C2",
+      "claim": "In 2019 the World Health Organization (WHO) ranked dengue among the top 10 threats to global health.",
+      "claim_type": "EXPLICIT",
+      "source": "in 2019 the World Health Organization (WHO) ranked it among the top 10 threats to global health (World Health Organization, 2009; World Health Organization, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to WHO publications from 2009 and 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "5038d27b-3899-48ee-8d63-ed159052cc18",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C3",
+      "claim": "It is estimated that 105 million people are infected by dengue annually.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that 105 million people are infected by dengue annually, of whom half develop symptoms (Cattarino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This estimate is supported by a citation to Cattarino et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "24e5048f-e8bb-40a4-93b3-5a3a2beee832",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C4",
+      "claim": "Half of the 105 million people infected by dengue annually develop symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that 105 million people are infected by dengue annually, of whom half develop symptoms (Cattarino et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cattarino et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "d3d614ab-8ea6-4be0-bb21-89ff9d3ccb19",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C5",
+      "claim": "Climate change, increasing global travel, and urbanization all serve to amplify the distribution of Aedes aegypti, the main vector responsible for dengue transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Climate change, increasing global travel, and urbanization all serve to amplify the distribution of Aedes aegypti, the main vector responsible for dengue transmission (Whitehorn and Yacoub, 2019; Yacoub et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Whitehorn and Yacoub, 2019 and Yacoub et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "4c2fb00d-4267-4121-96b4-926399e03d2d",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C6",
+      "claim": "Specific treatment for dengue is still to be found.",
+      "claim_type": "EXPLICIT",
+      "source": "Although dengue has been known for centuries, specific treatment is still to be found, and the two licensed vaccines are of limited benefit (Kariyawasam et al., 2023; Redoni et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kariyawasam et al., 2023 and Redoni et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "b0b6f466-7a98-4d72-89ab-82bb51c5aeed",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C7",
+      "claim": "The two licensed dengue vaccines are of limited benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Although dengue has been known for centuries, specific treatment is still to be found, and the two licensed vaccines are of limited benefit (Kariyawasam et al., 2023; Redoni et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kariyawasam et al., 2023 and Redoni et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "2112a593-5b92-4216-87f2-f2faaf2077e1",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C8",
+      "claim": "Viremia rapidly decreases after symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The main findings are: (1) viremia rapidly decreases after symptom onset",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies on dengue viremia kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "55cd9c0f-5f42-4c2d-bfe5-a277d0f4cb03",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C9",
+      "claim": "DENV-1 infection gives higher viremia level than DENV-2 and DENV-3.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) dengue virus (DENV)-1 infection gives higher viremia level than DENV-2 and DENV-3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on dengue viremia kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "44c1264b-c466-4731-b69e-21b7025b7166",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C10",
+      "claim": "Primary infection gives higher viremia than secondary infection in DENV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) primary infection gives higher viremia than secondary infection in DENV-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on dengue viremia kinetics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e64b3e1b-747a-4777-869a-83413673656f",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C11",
+      "claim": "Previous studies on dengue viremia had limited sample sizes, particularly for DENV-4 serotype.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these studies had limited sample sizes, particularly for DENV-4 serotype, and did not provide a full account of viremia kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on review of previous literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "69ac8cae-248e-4e20-90e7-0b9df0b33359",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C12",
+      "claim": "Higher viremia levels are associated with more severe dengue.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have previously found that higher viremia levels are associated with more severe dengue (Duyen et al., 2011; Endy et al., 2004; Morsy et al., 2020; Tang et al., 2010; Tricou et al., 2011; Vaughn et al., 2000; Vuong et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "a193bc9b-602b-4160-8e4b-0be16255bf9d",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C13",
+      "claim": "The effect size of viremia on severe dengue was not strong in previous analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "but the effect size was not strong (Vuong et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Vuong et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "30a58bad-6f52-436e-a9c3-629df6e1ddb1",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C14",
+      "claim": "One study has shown a slower rate of viral clearance being associated with more severe outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "One study has shown a slower rate of viral clearance being associated with more severe outcomes (Wang et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "5b0e729f-d486-4fac-8533-84bc48fa6158",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C15",
+      "claim": "Some studies have shown no association between rate of viral clearance and severe outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "while others have shown no association (Fox et al., 2011; Vaughn et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fox et al., 2011 and Vaughn et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "05c23b79-d029-4ea2-b4b3-eba29b22ecfa",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C16",
+      "claim": "Studies A and B simultaneously ran from 2000 to 2009 and enrolled children aged between 5 and 15 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, studies A and B simultaneously ran from 2000 to 2009 and enrolled children aged between 5 and 15 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and is supported by the study protocols.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "89c8df32-ff2b-49ff-ab22-b4402d6ae731",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C17",
+      "claim": "Study A included children with a febrile illness presenting to community outpatient clinics.",
+      "claim_type": "EXPLICIT",
+      "source": "Study A included children with a febrile illness presenting to community outpatient clinics",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and is supported by the study protocols.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "4a227455-7f0d-4905-8fa6-9b3ea05addfb",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C18",
+      "claim": "Study B included children admitted to HTD with a febrile illness suspected to be dengue.",
+      "claim_type": "EXPLICIT",
+      "source": "while study B included children admitted to HTD with a febrile illness suspected to be dengue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and is supported by the study protocols.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "d79e3058-d9f2-4e24-ac2f-3db0f63955f4",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C19",
+      "claim": "Study C ran from 2011 to 2016 and enrolled adults and children presenting with possible dengue within 3 days of fever onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Study C ran from 2011 to 2016 and enrolled adults and children presenting with possible dengue within 3 days of fever onset (IDAMS study, NCT01550016) (Jaenisch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study design and is supported by a citation to Jaenisch et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "df94d6ef-db7a-46b1-a22e-0909e4932e1d",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C20",
+      "claim": "3527 laboratory-confirmed dengue patients were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 3527 laboratory-confirmed dengue patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the study data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "a95e4b91-4a57-46af-9cab-f30b381241ac",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C21",
+      "claim": "2340 patients had relevant data on viremia kinetics and were included in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, 2340 had relevant data on viremia kinetics and were included in this analysis (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the study data and Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "d133b993-f9f1-4b44-9836-b3d3484c2af2",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C22",
+      "claim": "The detection limit for viremia in the two-step PCR used in studies A and B was set at 1000 copies/ml.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no formal validation of the detection limit for viremia for the two-step PCR used in studies A and B; we set it at 1000 copies/ml.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision made by the researchers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "dba2c8d7-69fe-485f-b679-13ae90869f27",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C23",
+      "claim": "In the one-step PCR used in study C, the detection limit was 300 copies/ml for DENV-1 and DENV-3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the one-step PCR used in study C, the detection limit was 300 copies/ml for DENV-1 and DENV-3, 60 copies/ml for DENV-2, and 600 copies/ml for DENV-4 (Hue et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hue et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e587c0a7-386f-427a-afb2-194295aa3ee9",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C24",
+      "claim": "In the one-step PCR used in study C, the detection limit was 60 copies/ml for DENV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the one-step PCR used in study C, the detection limit was 300 copies/ml for DENV-1 and DENV-3, 60 copies/ml for DENV-2, and 600 copies/ml for DENV-4 (Hue et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hue et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "39e0a51e-017b-4690-90ae-4bcfd34a5b76",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C25",
+      "claim": "In the one-step PCR used in study C, the detection limit was 600 copies/ml for DENV-4.",
+      "claim_type": "EXPLICIT",
+      "source": "In the one-step PCR used in study C, the detection limit was 300 copies/ml for DENV-1 and DENV-3, 60 copies/ml for DENV-2, and 600 copies/ml for DENV-4 (Hue et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hue et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "0d9c7298-3642-4dc3-8068-9f06301c8764",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C26",
+      "claim": "Three quarters of the participants were children.",
+      "claim_type": "EXPLICIT",
+      "source": "Three quarters of the participants were children, and male sex predominated (60%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the baseline characteristics data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e0191e38-a0fc-423b-879f-a40b2bbd6442",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C27",
+      "claim": "Male sex predominated (60%) in the study population.",
+      "claim_type": "EXPLICIT",
+      "source": "Three quarters of the participants were children, and male sex predominated (60%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the baseline characteristics data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "d81d4602-21fa-4d3c-bb6a-c3cca87b5436",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C28",
+      "claim": "Most patients (85%) were enrolled on illness day 2 or 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Most patients (85%) were enrolled on illness day 2 or 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the baseline characteristics data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "0111dbc5-4751-497a-b3d1-5837998100aa",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C29",
+      "claim": "DENV-1 was the most prevalent serotype (54%).",
+      "claim_type": "EXPLICIT",
+      "source": "All four serotypes were included, but DENV-1 was the most prevalent (54%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the baseline characteristics data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "3af8ca0e-f8aa-4023-8d89-e6200a85bd17",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C30",
+      "claim": "Most infections (69%) were classified as probable secondary infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Most infections (69%) were classified as probable secondary infection, while in 11% immune status could not be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the baseline characteristics data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "b7aee492-555c-4f1b-a987-a6b7d1ae8c4c",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C31",
+      "claim": "In 11% of cases, immune status could not be determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Most infections (69%) were classified as probable secondary infection, while in 11% immune status could not be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the baseline characteristics data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "311094ca-a502-4284-a678-c599cb72158f",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C32",
+      "claim": "There were 353 patients (15%) with plasma leakage.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 353 patients (15%) with plasma leakage and 65 patients (3%) with severe dengue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the baseline characteristics data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "4c94a522-da3f-4ddc-a1e9-7141b722425b",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C33",
+      "claim": "There were 65 patients (3%) with severe dengue.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 353 patients (15%) with plasma leakage and 65 patients (3%) with severe dengue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the baseline characteristics data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "a2897081-c306-4f58-ac07-a068167df8be",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C34",
+      "claim": "DENV-2 had the highest proportion of plasma leakage and severe dengue.",
+      "claim_type": "EXPLICIT",
+      "source": "DENV-2 had the highest proportion of these two outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Appendix 4\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "5bcd9a7d-e084-4985-af70-60954caee086",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C35",
+      "claim": "Patients with probable secondary infection were more likely to experience plasma leakage and severe dengue than those with probable primary infection or indeterminate immune status, regardless of the infecting serotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with probable secondary infection were more likely to experience these outcomes than those with probable primary infection or indeterminate immune status, regardless of the infecting serotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data in Appendix 4\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "37996c5e-7d93-4ad6-922e-d0346bdcc819",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C36",
+      "claim": "Most individuals had a decreasing trend in viremia from day 1 or 2 onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "Most individuals had a decreasing trend from day 1 or 2 onwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the individual viremia trajectories shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "59e25f46-04d6-4b06-9b9e-00cc924286ef",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C37",
+      "claim": "Values higher than the baseline viremia value were observed up to day 7.",
+      "claim_type": "EXPLICIT",
+      "source": "However, values higher than the baseline value were observed up to day 7 (Appendix 4\u2014figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Appendix 4\u2014figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "6c5f221b-7647-4cc5-bb94-6d7d95757dfe",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C38",
+      "claim": "The decreasing trend in viremia was consistent across all combinations of serotype and immune status.",
+      "claim_type": "EXPLICIT",
+      "source": "The decreasing trend was consistent across all combinations of serotype and immune status (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "0d210d56-06f8-4bc2-9274-c7c67f097bac",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C39",
+      "claim": "DENV-1 gave the highest viremia levels during the first 5-6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "DENV-1 gave the highest viremia levels, with DENV-2 in secondary infection giving similar levels from day 5 onwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fitted values from the viremia kinetics model shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "7ea45618-6611-4c75-8195-743fb420fd2a",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C40",
+      "claim": "DENV-2 in secondary infection gave viremia levels similar to DENV-1 from day 5 onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "DENV-1 gave the highest viremia levels, with DENV-2 in secondary infection giving similar levels from day 5 onwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fitted values from the viremia kinetics model shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "46215960-a032-4e58-9cc7-f58ac20b0276",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C41",
+      "claim": "DENV-2, DENV-3, and DENV-4 had similar viremia levels during the first 3 days.",
+      "claim_type": "EXPLICIT",
+      "source": "DENV-2, DENV-3, and DENV-4 had similar viremia levels during the first 3 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fitted values from the viremia kinetics model shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "05f46437-f1a3-441c-b1ae-f241f5bcf423",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C42",
+      "claim": "Viremia decreased rapidly in DENV-4, reaching undetectable levels in the shortest time.",
+      "claim_type": "EXPLICIT",
+      "source": "However, viremia decreased rapidly in DENV-4, reaching undetectable levels in the shortest time, while DENV-2 showed the slowest decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fitted values from the viremia kinetics model shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "d098ee2e-1d50-418e-81a6-f5a6e903c42a",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C43",
+      "claim": "DENV-2 showed the slowest decline in viremia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, viremia decreased rapidly in DENV-4, reaching undetectable levels in the shortest time, while DENV-2 showed the slowest decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fitted values from the viremia kinetics model shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "9496d2ff-e421-4079-a742-43181e6c7c8d",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C44",
+      "claim": "Differences in viremia kinetics between serotypes were more pronounced in case of probable primary infection.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences between serotypes were more pronounced in case of probable primary infection (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "ae5a314b-ec3b-4d5c-9a0f-6153efbee87c",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C45",
+      "claim": "Probable primary infection showed higher viremia levels compared to probable secondary infection in DENV-1 from day 3 onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of immune status, probable primary infection showed higher viremia levels compared to probable secondary infection in DENV-1 from day 3 onwards.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fitted values from the viremia kinetics model shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "66532848-c0ef-4dd6-b578-171bd5a7dd47",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C46",
+      "claim": "The disparity between probable primary and probable secondary infection in viremia levels was less pronounced in DENV-2, DENV-3, and DENV-4 compared to DENV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The disparity between probable primary and probable secondary infection was less pronounced in the other serotypes (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "a8434541-d643-4c1d-ac22-cd10a03fcfec",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C47",
+      "claim": "Mean viremia levels were comparable between females and males.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean viremia levels were comparable between females and males (Figure 3C), as well as across age (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "42b02d1f-ce9d-48e6-9971-b58d0e107a38",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C48",
+      "claim": "Mean viremia levels were comparable across age.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean viremia levels were comparable between females and males (Figure 3C), as well as across age (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "87a7c287-920d-4e00-a154-3c54dabf27dd",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C49",
+      "claim": "The one-step PCR method resulted in longer viremia compared to the two-step PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The one-step PCR method resulted in longer viremia compared to the two-step PCR (Appendix 5\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Appendix 5\u2014figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "bec72271-34d6-4790-b555-ca0010d2d79e",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C50",
+      "claim": "P values for the differences in viremia by age, serotype, immune status, and illness day were all <0.0001.",
+      "claim_type": "EXPLICIT",
+      "source": "P values for the differences by age, serotype, immune status, and illness day were all <0.0001 (Appendix 5\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis results in Appendix 5\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "b8e83e41-e919-4b21-a1a7-f49bcc1dc1ab",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C51",
+      "claim": "There was minimal impact of viremia on days 1\u20135 platelet count.",
+      "claim_type": "EXPLICIT",
+      "source": "There was minimal impact of viremia on days 1\u20135 platelet count.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results from the platelet count model shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "c7176466-94eb-4f2c-9578-f804ee90f896",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C52",
+      "claim": "Higher viremia levels gave decreased subsequent platelet counts from day 6 onwards, for all serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, higher viremia levels gave decreased subsequent platelet counts from day 6 onwards, for all serotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results from the platelet count model shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e7767998-423e-4096-9389-62393bd091fc",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C53",
+      "claim": "The strength of the effect of viremia on platelet count increased with later illness day.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of this effect increased with later illness day and was more pronounced in DENV-1 and DENV-2 compared to DENV-3 and DENV-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results from the platelet count model shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "f42966ef-bb11-4098-b016-90102f16e072",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C54",
+      "claim": "The effect of viremia on platelet count was more pronounced in DENV-1 and DENV-2 compared to DENV-3 and DENV-4.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of this effect increased with later illness day and was more pronounced in DENV-1 and DENV-2 compared to DENV-3 and DENV-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results from the platelet count model shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "0ea329bd-b022-4630-86d0-175a6d92321c",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C55",
+      "claim": "The effect of viremia on subsequent platelet count remained consistent across subgroups of immune status, sex, and age.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of viremia on subsequent platelet count remained consistent across subgroups of immune status, sex, and age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the statistical model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e2377ae2-72bb-4195-bc29-97d8bd002d92",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C56",
+      "claim": "Higher viremia levels increased the risk of severe dengue for each of the serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher viremia levels increased the risk of severe dengue and plasma leakage for each of the serotypes (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results from the clinical outcomes model shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "2e59e00f-481d-41ea-93a1-41b6deeaf845",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C57",
+      "claim": "Higher viremia levels increased the risk of plasma leakage for each of the serotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher viremia levels increased the risk of severe dengue and plasma leakage for each of the serotypes (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results from the clinical outcomes model shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "f299af61-047e-4b5c-8b06-33bda956f8f4",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C58",
+      "claim": "The effect of viremia on severe dengue and plasma leakage decreased with later landmark day of viremia measurement.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of viremia on both endpoints decreased with later landmark day of viremia measurement, particularly for severe dengue (Appendix 7\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results in Appendix 7\u2014table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "7c1c0174-06f0-432f-98dc-eb7171bee48a",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C59",
+      "claim": "Older individuals had a relatively lower risk of developing severe dengue, but the trend was not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The supermodel revealed that older individuals had a relatively lower risk of developing severe dengue, but the trend was not significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results from the supermodel analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "f7aa2c76-1c60-4b2b-b912-a012ca7d0cec",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C60",
+      "claim": "Males exhibited a slightly higher risk of severe dengue compared to females.",
+      "claim_type": "EXPLICIT",
+      "source": "Males exhibited a slightly higher risk of severe dengue compared to females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results from the supermodel analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "cf4789fd-1822-443c-a398-5e74b7ae823f",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C61",
+      "claim": "Individuals with probable secondary infection had a higher risk of experiencing severe dengue and plasma leakage compared to those with probable primary infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals with probable secondary infection had a higher risk of experiencing both endpoints compared to those with probable primary infection (Appendix 7\u2014figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results shown in Appendix 7\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "cf6f0cfd-6a8c-4ed7-ae10-fa24126765b6",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C62",
+      "claim": "The individual rate of viremia decline ranged from 0.58 to 2.01 log-10 copies/ml/day, with a median of 1.39 log-10 copies/ml/day.",
+      "claim_type": "EXPLICIT",
+      "source": "From the model of viremia kinetics with a linear trend of illness day, the individual rate of viremia decline ranged from 0.58 to 2.01 log-10 copies/ml/day, with a median of 1.39 log-10 copies/ml/day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results from the modified viremia kinetics model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "6e2b8b1d-d1bf-4906-ab4a-d5b399e0bf44",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C63",
+      "claim": "A faster decline in viremia reduced the risk of severe dengue.",
+      "claim_type": "EXPLICIT",
+      "source": "The logistic regression model demonstrated that a faster decline in viremia reduced the risk of severe dengue and plasma leakage (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results from the logistic regression model shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "cc7e403d-68c4-43f9-a9d4-daeaa3b5c4ca",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C64",
+      "claim": "A faster decline in viremia reduced the risk of plasma leakage.",
+      "claim_type": "EXPLICIT",
+      "source": "The logistic regression model demonstrated that a faster decline in viremia reduced the risk of severe dengue and plasma leakage (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the results from the logistic regression model shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "30823223-8e51-45c3-9b4d-04bd1bae91cf",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C65",
+      "claim": "The effect of viremia decline rate on plasma leakage was stronger in the probable secondary infection group.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect on plasma leakage was stronger in the probable secondary infection group (Appendix 7\u2014table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the results in Appendix 7\u2014table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "abf63819-2f68-462c-8954-59a571852481",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C66",
+      "claim": "Viremia levels exhibit a rapid decline shortly after symptom onset, becoming undetectable after approximately 1 week in the majority of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our findings reveal that viremia levels exhibit a rapid decline shortly after symptom onset, becoming undetectable after approximately 1 week in the majority of patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "61c32ed6-cc4d-4ed9-8d46-6c7e7802b089",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C67",
+      "claim": "Viremia kinetics display variations depending on the infecting serotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Viremia kinetics display variations depending on the infecting serotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "38665732-e690-4ecd-be05-4075de732f5c",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C68",
+      "claim": "Higher viremia levels are associated with a subsequent reduction in platelet count on illness days 6\u20138.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher viremia levels are associated with a subsequent reduction in platelet count on illness days 6\u20138, and an increased risk of experiencing more severe clinical outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "1c348a22-0db0-4987-9fe6-df4360c1511d",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C69",
+      "claim": "Higher viremia levels are associated with an increased risk of experiencing more severe clinical outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher viremia levels are associated with a subsequent reduction in platelet count on illness days 6\u20138, and an increased risk of experiencing more severe clinical outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "9abad19e-460b-4dc6-a1a9-62d79135c350",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C70",
+      "claim": "Viremia serves as an important predictor of dengue outcomes, independent of the host immune status.",
+      "claim_type": "EXPLICIT",
+      "source": "Viremia serves as an important predictor of dengue outcomes, independent of the host immune status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's data analysis showing independent effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "5ad17076-a050-4ee3-93d9-ba431b166ea0",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C71",
+      "claim": "The addition of daily viremia measurements may not enhance the prediction of worse clinical outcomes compared to single early viremia measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when considering our previous analysis that involved single early viremia measurements, the addition of daily viremia measurements may not enhance the prediction of worse clinical outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with previous study results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "14f8397a-7123-4467-8c61-627cb9543452",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C72",
+      "claim": "The measurement of viremia levels during the early febrile phase is an important marker for clinical practice and dengue-related research.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the measurement of viremia levels during the early febrile phase is an important marker for clinical practice and dengue-related research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the study's findings about the predictive value of early viremia.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "19737b54-6bdb-414a-b3c2-02a37fec15ec",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C73",
+      "claim": "A faster decline in viremia was found to be associated with a reduced risk of more severe clinical outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a faster decline in viremia was found to be associated with a reduced risk of more severe clinical outcomes, suggesting that viremia kinetics could be a good surrogate endpoint for phase-2 dengue therapeutic trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "9009a2f2-06f0-4163-b1ca-b05607881c23",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C74",
+      "claim": "Viremia kinetics could be a good surrogate endpoint for phase-2 dengue therapeutic trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a faster decline in viremia was found to be associated with a reduced risk of more severe clinical outcomes, suggesting that viremia kinetics could be a good surrogate endpoint for phase-2 dengue therapeutic trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the association between viremia decline and clinical outcomes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "2813addf-1f39-4f4e-a7f0-4bf297da6e10",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C75",
+      "claim": "The direct involvement of the dengue virus in triggering platelet activation and apoptosis can contribute to the development of thrombocytopenia.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct involvement of the dengue virus in triggering platelet activation and apoptosis can contribute to the development of thrombocytopenia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about dengue pathogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "29bfba12-2da7-48b3-82f7-5740e9fc6ce2",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C76",
+      "claim": "Thrombocytopenia in dengue infection is thought to occur through two mechanisms: bone marrow suppression, which reduces thrombopoiesis, and increased peripheral platelet clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thrombocytopenia in dengue infection is thought to occur through two mechanisms: bone marrow suppression, which reduces thrombopoiesis, and increased peripheral platelet clearance (Quirino-Teixeira et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Quirino-Teixeira et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e8a55fe0-c317-49b8-983d-79678fce7e8a",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C77",
+      "claim": "It is possible that viremia in the initial 4 days after symptom onset could affect platelet count with a delay of 3\u20134 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it is possible that viremia in the initial 4 days after symptom onset could affect platelet count with a delay of 3\u20134 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temporal patterns observed in the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e19f8354-05e1-4546-84a7-d9487c2b813e",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C78",
+      "claim": "The effect of viremia level on subsequent platelet count did not differ much by serotype and immune status.",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis, we considered interactions between viremia level and both serotype and immune status. Interestingly, we observed that the effect of viremia level on subsequent platelet count did not differ much by serotype and immune status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "75a05f32-bcc9-48ad-bb70-a8947d6fe6d1",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C79",
+      "claim": "The diminishing impact of viremia on clinical endpoints on later illness days may be attributed to the heightened immune responses that are likely triggered by higher viremia levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The diminishing impact of viremia on the two endpoints on later illness days may be attributed to the heightened immune responses that are likely triggered by higher viremia levels, and the resulting complex interplay between these factors that underlies progression to severe dengue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "787fc384-2912-407a-af83-c60548ab244b",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C80",
+      "claim": "Viremia levels around the time of symptom onset could serve as a reliable predictor of dengue severity.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity between these two analyses, along with the weaker effect of viremia at later days, suggests that viremia levels around the time of symptom onset could serve as a reliable predictor of dengue severity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "46e6cb46-3a0e-4cb1-a494-99a524594470",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C81",
+      "claim": "The early febrile phase, specifically illness days 1\u20133, is the critical period of measuring viremia levels in clinical practice and dengue studies.",
+      "claim_type": "EXPLICIT",
+      "source": "It suggests that the early febrile phase, specifically illness days 1\u20133, is the critical period of measuring viremia levels in clinical practice and dengue studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings about when viremia has the strongest predictive value.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "5ef39b3c-6523-4da6-a3ac-e5e528862910",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C82",
+      "claim": "Secondary infection remains a substantial risk factor for more severe outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary infection remains a substantial risk factor for more severe outcomes, while viremia kinetics are not influenced much by immune status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "c376e0a7-51b5-40ae-ba7c-08536c8f7c94",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C83",
+      "claim": "Viremia kinetics are not influenced much by immune status.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary infection remains a substantial risk factor for more severe outcomes, while viremia kinetics are not influenced much by immune status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the study's data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "95c69c2a-fe6a-4dce-9dfc-226df509a865",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C84",
+      "claim": "Immune status and viremia may be independent predictors of clinical outcomes, following distinct pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that immune status and viremia may be independent predictors of clinical outcomes, following distinct pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed independent effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "966833cf-816e-4157-9751-25eef385743e",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C85",
+      "claim": "The study only included patients from Vietnam, which may restrict the generalizability of the findings to other countries and regions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the study only included patients from Vietnam, which may restrict the generalizability of the findings to other countries and regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "fe659422-9685-4627-a4f7-a63083947bd2",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C86",
+      "claim": "The study assessed viral RNA in the plasma, including both viable and non-viable viral particles, which could potentially lead to an overestimation of the infectious viral particles in the blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our study assessed viral RNA in the plasma, including both viable and non-viable viral particles, which could potentially lead to an overestimation of the infectious viral particles in the blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "90d0eda3-3ebc-4d8d-a596-47f1d42a162c",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C87",
+      "claim": "Data during the incubation period were unavailable as patients are typically not diagnosed with dengue until symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, data during the incubation period were unavailable as patients are typically not diagnosed with dengue until symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "852ae630-2d31-4953-a095-0832f5054b99",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C88",
+      "claim": "In cases of secondary infection, the immune response is stronger and quicker than in primary infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in cases of secondary infection, the immune response is stronger and quicker than in primary infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established scientific knowledge about dengue immunology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "6702a2c9-4233-4ac6-bb6c-db39255835e7",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C89",
+      "claim": "A stronger and quicker immune response in secondary infection might lead to a shorter duration between infection and symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This might lead to a shorter duration between infection and symptom onset, as well as faster viral clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for potential confounding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "7c6031ab-8a2b-4d8a-a1a0-23519842ee72",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C90",
+      "claim": "A stronger and quicker immune response in secondary infection might lead to faster viral clearance.",
+      "claim_type": "EXPLICIT",
+      "source": "This might lead to a shorter duration between infection and symptom onset, as well as faster viral clearance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for potential confounding.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "129bc841-762f-405c-91dc-f1c7a518ad9b",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C91",
+      "claim": "The new PCR test has the ability to detect plasma viremia for a longer period compared to the older test.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our study demonstrated that the new PCR test has the ability to detect plasma viremia for a longer period compared to the older test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the study's data analysis comparing the two PCR methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "f8f18147-54f5-4c28-bb2a-2b0ac4c3222d",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C92",
+      "claim": "The longer detection period of the new PCR test may be attributed to the lower detection limits of the new test.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be attributed to the lower detection limits of the new test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known detection limits of the two methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "4e45d1b6-3a5b-4205-981a-616a3256085c",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C93",
+      "claim": "Explaining the differences in viremia kinetics between serotypes remains challenging, as the molecular factors of the virus that influence plasma viremia levels are still unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Explaining the differences in viremia kinetics between serotypes remains challenging, as the molecular factors of the virus that influence plasma viremia levels are still unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "adc80515-bd77-49c6-968f-5e35dbbcb489",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "claim_id": "C94",
+      "claim": "Some of the observed differences in viremia kinetics between serotypes may be explained by a difference in time from infection to symptom onset.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also important to note that our study focused on the time since symptom onset rather than the time since infection. We cannot rule out that some of the observed differences are explained by a difference in time from infection to symptom onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative alternative explanation for the observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background context on dengue epidemiology, global health significance, and current treatment/vaccine limitations. These claims establish that dengue is a major global health threat with limited therapeutic options.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are well-supported by citations to WHO publications and peer-reviewed literature (C2, C3, C4, C5, C6, C7) and established scientific consensus (C1). These background claims appropriately contextualize the study's importance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "8dc22ca1-04fb-4a73-8c33-d299086bfa7a",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous studies have shown that viremia rapidly decreases after symptom onset, DENV-1 gives higher viremia than DENV-2/3, and primary infection gives higher viremia than secondary infection in DENV-1, but these studies had limited sample sizes particularly for DENV-4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are supported by citations to multiple previous studies. Claim C11 appropriately identifies a gap in prior literature that justifies the current study. These claims accurately summarize prior work and establish the rationale for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "05717368-31ea-4e03-8e88-00348b8b378b",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous studies have shown associations between higher viremia and severe dengue, though effect sizes were not strong. Evidence regarding viral clearance rate and severe outcomes has been inconsistent across studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 are supported by appropriate citations to prior literature. These claims accurately characterize the state of knowledge regarding viremia-outcome associations and identify inconsistencies in prior findings, establishing the need for the current comprehensive analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "8834d320-c753-4e55-a172-033f743870be",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study pooled data from three prospective observational studies in Vietnam (2000-2016) involving different patient populations, ultimately analyzing 2340 dengue patients with daily viremia measurements from an initial 3527 laboratory-confirmed cases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 describe the study design and are supported by study protocols, citations (C19), and Figure 1 (C21). The methodology is clearly documented with appropriate sample size reporting and patient selection criteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "bbfd1448-e660-42fb-9b47-d033aec7d25f",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Different PCR methods were used across studies with varying detection limits: 1000 copies/ml for two-step PCR (studies A/B), and serotype-specific limits (60-600 copies/ml) for one-step PCR (study C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 are supported by methodological descriptions and citation to Hue et al., 2011 (C23-C25). However, C22 acknowledges that the detection limit for two-step PCR was not formally validated but arbitrarily set, which is a methodological limitation that could affect interpretation of results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study population consisted predominantly of children (75%) and males (60%), with most patients enrolled on illness days 2-3. DENV-1 was most prevalent (54%), most infections were probable secondary (69%), and 15% had plasma leakage while 3% had severe dengue. DENV-2 and secondary infections showed higher rates of severe outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C35 are well-supported by baseline characteristics data presented in Table 1 and Appendix 4-table 1. The descriptive statistics are clearly reported with appropriate denominators and percentages. These baseline characteristics are essential for interpreting the study findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Viremia kinetics showed a general decreasing trend from days 1-2 onwards across all serotype/immune status combinations, though some increases were observed up to day 7. DENV-1 showed highest viremia levels, DENV-4 cleared fastest, and DENV-2 showed slowest decline. Primary DENV-1 infection showed higher viremia than secondary from day 3 onwards. Viremia levels were comparable across sex and age groups. The one-step PCR detected viremia longer than two-step PCR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C50 are supported by data presented in Figures 2-3 and Appendix figures, with statistical significance reported (C50, p<0.0001). The analysis appropriately uses mixed-effects models accounting for censored data. The findings are consistent with prior literature while adding new information about DENV-4 and methodological differences between PCR assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "f4beb306-d8a1-4270-8d26-43db89001d92",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Higher viremia levels were associated with decreased subsequent platelet counts from day 6 onwards for all serotypes, with effects strengthening on later illness days and being more pronounced in DENV-1/2 compared to DENV-3/4. This effect remained consistent across immune status, sex, and age subgroups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by Figure 4 and statistical analysis (Appendix 6-table 1). The landmark approach appropriately addresses temporal relationships. However, the analysis assumes unidirectional causality (viremia\u2192platelet count) without testing reverse causation, which is acknowledged as a limitation. The delayed effect (day 6 onwards) is biologically plausible given mechanisms of thrombocytopenia.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "4badb1e5-6799-4813-a06c-528c4ca9f7d1",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Higher viremia levels increased risk of severe dengue and plasma leakage for all serotypes, with effects decreasing at later landmark days. Older individuals had relatively lower (non-significant) risk of severe dengue, males had slightly higher risk, and secondary infections had higher risk of both outcomes compared to primary infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 are supported by Figure 5, Appendix 7 tables/figures, and statistical modeling using landmark approach with GEE. The findings are consistent with prior literature on dengue risk factors. The decreasing effect with later landmark days (C58) is appropriately interpreted as suggesting early viremia measurements are most predictive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "b60bd6d0-adc1-41d5-bb63-93c43a030dfe",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Individual viremia decline rates ranged from 0.58-2.01 log-10 copies/ml/day (median 1.39). Faster viremia decline was associated with reduced risk of both severe dengue and plasma leakage, with the effect on plasma leakage being stronger in secondary infections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by Figure 6 and statistical modeling results (Appendix 7-table 2). The analysis appropriately models decline rate as a linear trend and uses logistic regression to assess associations with outcomes. This represents a novel contribution addressing inconsistent prior findings about viral clearance and severity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "55479be6-594c-4385-9561-3315dd88f0ab",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study concludes that viremia exhibits rapid decline after symptom onset (undetectable after ~1 week), varies by serotype, and higher viremia is associated with reduced platelet counts on days 6-8 and increased risk of severe outcomes. Viremia serves as an important predictor independent of immune status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 represent summary conclusions supported by the comprehensive data analysis presented throughout the manuscript. The conclusion that viremia is an independent predictor (C70) is supported by statistical models showing effects after adjusting for immune status and other confounders.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "de6386c1-2065-435d-9e7a-eeb6252c46c7",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Daily viremia measurements may not enhance prediction of clinical outcomes compared to single early measurements, suggesting that early febrile phase viremia measurement is most important for clinical practice and research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is based on inference comparing current results to a previous study, but no formal comparative analysis is presented. Claim C72 follows logically from the finding that early viremia has strongest predictive value, but the conclusion about clinical utility requires validation in prospective studies. The inference is reasonable but not definitively demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "1365025c-43c0-4499-b24d-e462191fe1d7",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Faster viremia decline is associated with reduced risk of severe outcomes, suggesting viremia kinetics could serve as a surrogate endpoint for phase-2 dengue therapeutic trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C73 is well-supported by the data analysis (Figure 6). However, C74 is speculative - while the association between decline rate and outcomes is demonstrated, establishing viremia kinetics as a validated surrogate endpoint would require additional criteria including: demonstration that treatment effects on viremia predict treatment effects on clinical outcomes, regulatory acceptance, and prospective validation. The suggestion is reasonable but requires substantial additional work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "170a9752-c137-41b2-b334-1b4a320d70fd",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The observed delayed effect of viremia on platelet count (3-4 days) may be explained by mechanisms of dengue-induced thrombocytopenia including bone marrow suppression and peripheral clearance. The effect did not differ substantially by serotype or immune status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by citation to established literature on dengue pathogenesis. Claim C77 is a reasonable inference from the temporal patterns observed. Claim C78 is supported by the statistical analysis results. The mechanistic interpretation appropriately connects observed patterns to known biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "3a58ca39-9bb8-4d02-bfb6-513edd0d09b2",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The diminishing impact of viremia at later illness days may reflect complex immune-viremia interactions. Early febrile phase (days 1-3) represents the critical period for viremia measurement as a predictor of severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is speculative but biologically plausible. Claims C80-C81 are reasonable inferences from the data showing strongest predictive effects early in illness and consistency with prior single-measurement analysis. The interpretation appropriately acknowledges complexity while drawing practical conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "0e108f26-a55c-49cc-86dc-85875e8a27fa",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Secondary infection remains a substantial risk factor for severe outcomes while viremia kinetics are not strongly influenced by immune status, suggesting these may be independent predictors following distinct pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 are supported by the statistical analysis showing independent effects of immune status and viremia. Claim C84 is a reasonable inference from the observed independence, though the specific pathways are not elucidated. The interpretation is consistent with the data and appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "b894cf96-7b6f-48a4-a90e-1f7448d037c0",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study has limitations including: restriction to Vietnam (limiting generalizability), measurement of viral RNA rather than infectious particles (potential overestimation), and lack of data during incubation period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 represent appropriate acknowledgment of study limitations. C85 correctly identifies geographic restriction as limiting generalizability. C86 appropriately notes that PCR measures RNA not infectious virus. C87 correctly identifies the inherent limitation that patients present after symptom onset. These are honest assessments of methodological constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "cfc2ba42-3c0d-4691-a9f2-17cea42f4c58",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Differences in immune response between primary and secondary infections might affect the duration from infection to symptom onset and viral clearance, potentially confounding interpretation of viremia kinetics measured from symptom onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is supported by established immunological knowledge. Claims C89-C90 and C94 are speculative but represent important acknowledgment of potential confounding. The authors appropriately recognize that using symptom onset rather than infection time as the reference point could introduce bias if incubation periods differ systematically by factors being studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e17b20d6-cf83-48c5-9c4b-592c7be220cd",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The one-step PCR detected viremia for longer periods than the two-step PCR, likely due to lower detection limits of the newer assay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are supported by data comparison (Appendix 5-figure 1) and known detection limits of the methods. The inference that lower detection limits explain longer detection is logical and well-supported. This finding has important implications for comparing studies using different assays.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "eb8e24ad-06e0-4bbf-8617-98588d837710",
+      "content_id": "577e391d-2cf1-45bb-95d5-0f2f0239d9f2",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The molecular factors of the virus that influence plasma viremia levels remain unknown, making it challenging to explain differences in viremia kinetics between serotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 appropriately acknowledges a gap in current scientific understanding. This honest assessment recognizes that while the study documents serotype differences in viremia kinetics, the underlying viral mechanisms are not yet understood. This identifies an important area for future research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "bd80f588-9fd5-48f2-9bf2-d76b721160df",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study characterizes viremia kinetics across dengue serotypes and immune status, showing that viremia rapidly decreases after symptom onset with serotype-specific patterns. DENV-1 showed highest viremia levels, DENV-4 showed fastest decline, and DENV-2 showed slowest decline. Primary infection showed higher viremia than secondary infection particularly for DENV-1.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm these findings. The first reviewer states these are 'fundamental findings that provide compelling evidence,' the second reviewer acknowledges 'the four DENVs show differences in peak and duration of viraemia,' and the third reviewer confirms 'important information, especially regarding the time of clearance of the virus.' No concerns were raised about the viremia kinetics characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e44572e6-523b-4f20-b7d9-a19d2879abd3",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The study demonstrates that higher viremia levels are associated with decreased platelet counts from day 6 onwards across all serotypes, with the effect being more pronounced in DENV-1 and DENV-2. The effect was consistent across immune status, sex, and age subgroups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these findings about the relationship between viremia and platelet counts. The second reviewer explicitly acknowledges that 'viraemia levels before day 5 but not those after from illness onset correlated with platelet count,' which aligns with the delayed effect described. No methodological concerns were raised about this analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "22952032-7d0c-417c-9f0a-0689bb574f74",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Higher viremia levels increased the risk of severe dengue and plasma leakage across all serotypes, with the effect decreasing on later illness days. Viremia serves as an independent predictor of dengue outcomes separate from immune status, with early febrile phase (days 1-3) being the critical period for measurement.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers affirm these core findings. The first reviewer emphasizes these provide 'compelling evidence of the importance of measuring viremia early in the phase of the disease,' and the second reviewer confirms 'viraemia levels before day 5 but not those after from illness onset correlated with...plasma leakage at day 7 onwards.' The third reviewer acknowledges the 'important information...regarding...disease severity.' No concerns were raised about these associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "97c15229-c26f-4678-8460-33e3b0bb1d78",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "A faster rate of viremia decline was associated with reduced risk of severe dengue and plasma leakage, with the effect being stronger in secondary infections for plasma leakage. This suggests viremia kinetics could serve as a surrogate endpoint for phase-2 dengue therapeutic trials.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly acknowledges this finding, stating 'The inclusion of correlation between rate of viraemia decline and risk of severe dengue/plasma leakage further strengthens the relevance of this paper to those interested in anti-dengue therapeutic research and development.' The first reviewer notes the data 'will help to inform the design of studies of antiviral drugs against dengue,' supporting the therapeutic trial application. No concerns were raised about these analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "2ac86d1f-0bab-4747-acdc-c8a83a631556",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The study analyzed 2340 dengue patients from Vietnam with longitudinal viremia data. The cohort was predominantly children (75%), male (60%), with DENV-1 most prevalent (54%), and most infections were secondary (69%). DENV-2 had the highest proportion of severe outcomes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the large sample size as a strength, they raise concerns about generalizability and data imbalance. The second reviewer notes 'the majority of these patients had DENV-1 infection; few had DENV-4 infection. The data could thus be skewed by the imbalance in the prevalence of the different types of DENV.' The third reviewer states 'Due to the lower number of patients with primary dengue, cannot get an idea regarding viraemia kinetics and disease severity for different serotypes during primary infection.' These concerns suggest uncertainty about the representativeness of the cohort characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "4e2c5278-3bee-4f17-9efd-58cab47ff079",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The study has several acknowledged limitations: restriction to Vietnamese patients limiting generalizability, measurement of viral RNA including non-viable particles potentially overestimating infectious virus, and lack of data during the incubation period.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly raises the generalizability concern, stating 'The study only analysed data from dengue patients in Vietnam,' which aligns with the authors' acknowledged limitation. The reviewer also notes 'there is subjectivity and thus noise in the data' regarding symptom onset timing, which relates to the incubation period limitation. These limitations are recognized by both authors and reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "18c1e838-8766-4627-9d5e-7ddff91dc3c5",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Mean viremia levels were comparable between males and females and across different age groups.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these findings about sex and age effects on viremia. The lack of reviewer concern about these null findings, combined with the large sample size acknowledged as a strength, suggests acceptance of these results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "e14fa481-f1b2-499f-9e58-d5d947826b36",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The one-step PCR method detected viremia for a longer period compared to the two-step PCR, likely due to lower detection limits of the newer test.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise concerns about the methodological comparison between PCR methods. The second reviewer's comment about 'subjectivity and thus noise in the data' refers to symptom onset timing rather than PCR methodology, suggesting acceptance of the PCR comparison findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "efe346bd-c210-4fe2-93b6-c3293e4cc934",
+      "content_id": "2a121b70-2f4d-46fb-bf31-b7beae26d97d",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The addition of daily viremia measurements may not enhance prediction of clinical outcomes compared to single early measurements, but early febrile phase viremia measurement remains an important marker for clinical practice and research.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer explicitly affirms this conclusion, stating the findings 'provide compelling evidence of the importance of measuring viremia early in the phase of the disease.' The second reviewer notes the study 'systematically examined this notion' about early viremia measurement timing. No concerns were raised about this practical implication.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "69af3baf-c896-4d4d-b753-9d02ac480b48",
+      "result_id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58"
+    },
+    {
+      "claim_id": "0f6743fe-3cc1-40fe-b3b2-9c64dff26197",
+      "result_id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58"
+    },
+    {
+      "claim_id": "5038d27b-3899-48ee-8d63-ed159052cc18",
+      "result_id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58"
+    },
+    {
+      "claim_id": "24e5048f-e8bb-40a4-93b3-5a3a2beee832",
+      "result_id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58"
+    },
+    {
+      "claim_id": "d3d614ab-8ea6-4be0-bb21-89ff9d3ccb19",
+      "result_id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58"
+    },
+    {
+      "claim_id": "4c2fb00d-4267-4121-96b4-926399e03d2d",
+      "result_id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58"
+    },
+    {
+      "claim_id": "b0b6f466-7a98-4d72-89ab-82bb51c5aeed",
+      "result_id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58"
+    },
+    {
+      "claim_id": "2112a593-5b92-4216-87f2-f2faaf2077e1",
+      "result_id": "8dc22ca1-04fb-4a73-8c33-d299086bfa7a"
+    },
+    {
+      "claim_id": "55cd9c0f-5f42-4c2d-bfe5-a277d0f4cb03",
+      "result_id": "8dc22ca1-04fb-4a73-8c33-d299086bfa7a"
+    },
+    {
+      "claim_id": "44c1264b-c466-4731-b69e-21b7025b7166",
+      "result_id": "8dc22ca1-04fb-4a73-8c33-d299086bfa7a"
+    },
+    {
+      "claim_id": "e64b3e1b-747a-4777-869a-83413673656f",
+      "result_id": "8dc22ca1-04fb-4a73-8c33-d299086bfa7a"
+    },
+    {
+      "claim_id": "69ac8cae-248e-4e20-90e7-0b9df0b33359",
+      "result_id": "05717368-31ea-4e03-8e88-00348b8b378b"
+    },
+    {
+      "claim_id": "a193bc9b-602b-4160-8e4b-0be16255bf9d",
+      "result_id": "05717368-31ea-4e03-8e88-00348b8b378b"
+    },
+    {
+      "claim_id": "30a58bad-6f52-436e-a9c3-629df6e1ddb1",
+      "result_id": "05717368-31ea-4e03-8e88-00348b8b378b"
+    },
+    {
+      "claim_id": "5b0e729f-d486-4fac-8533-84bc48fa6158",
+      "result_id": "05717368-31ea-4e03-8e88-00348b8b378b"
+    },
+    {
+      "claim_id": "05c23b79-d029-4ea2-b4b3-eba29b22ecfa",
+      "result_id": "8834d320-c753-4e55-a172-033f743870be"
+    },
+    {
+      "claim_id": "89c8df32-ff2b-49ff-ab22-b4402d6ae731",
+      "result_id": "8834d320-c753-4e55-a172-033f743870be"
+    },
+    {
+      "claim_id": "4a227455-7f0d-4905-8fa6-9b3ea05addfb",
+      "result_id": "8834d320-c753-4e55-a172-033f743870be"
+    },
+    {
+      "claim_id": "d79e3058-d9f2-4e24-ac2f-3db0f63955f4",
+      "result_id": "8834d320-c753-4e55-a172-033f743870be"
+    },
+    {
+      "claim_id": "df94d6ef-db7a-46b1-a22e-0909e4932e1d",
+      "result_id": "8834d320-c753-4e55-a172-033f743870be"
+    },
+    {
+      "claim_id": "a95e4b91-4a57-46af-9cab-f30b381241ac",
+      "result_id": "8834d320-c753-4e55-a172-033f743870be"
+    },
+    {
+      "claim_id": "d133b993-f9f1-4b44-9836-b3d3484c2af2",
+      "result_id": "bbfd1448-e660-42fb-9b47-d033aec7d25f"
+    },
+    {
+      "claim_id": "dba2c8d7-69fe-485f-b679-13ae90869f27",
+      "result_id": "bbfd1448-e660-42fb-9b47-d033aec7d25f"
+    },
+    {
+      "claim_id": "e587c0a7-386f-427a-afb2-194295aa3ee9",
+      "result_id": "bbfd1448-e660-42fb-9b47-d033aec7d25f"
+    },
+    {
+      "claim_id": "39e0a51e-017b-4690-90ae-4bcfd34a5b76",
+      "result_id": "bbfd1448-e660-42fb-9b47-d033aec7d25f"
+    },
+    {
+      "claim_id": "0d9c7298-3642-4dc3-8068-9f06301c8764",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "e0191e38-a0fc-423b-879f-a40b2bbd6442",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "d81d4602-21fa-4d3c-bb6a-c3cca87b5436",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "0111dbc5-4751-497a-b3d1-5837998100aa",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "3af8ca0e-f8aa-4023-8d89-e6200a85bd17",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "b7aee492-555c-4f1b-a987-a6b7d1ae8c4c",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "311094ca-a502-4284-a678-c599cb72158f",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "4c94a522-da3f-4ddc-a1e9-7141b722425b",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "a2897081-c306-4f58-ac07-a068167df8be",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "5bcd9a7d-e084-4985-af70-60954caee086",
+      "result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a"
+    },
+    {
+      "claim_id": "37996c5e-7d93-4ad6-922e-d0346bdcc819",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "59e25f46-04d6-4b06-9b9e-00cc924286ef",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "6c5f221b-7647-4cc5-bb94-6d7d95757dfe",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "0d210d56-06f8-4bc2-9274-c7c67f097bac",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "7ea45618-6611-4c75-8195-743fb420fd2a",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "46215960-a032-4e58-9cc7-f58ac20b0276",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "05f46437-f1a3-441c-b1ae-f241f5bcf423",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "d098ee2e-1d50-418e-81a6-f5a6e903c42a",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "9496d2ff-e421-4079-a742-43181e6c7c8d",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "ae5a314b-ec3b-4d5c-9a0f-6153efbee87c",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "66532848-c0ef-4dd6-b578-171bd5a7dd47",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "a8434541-d643-4c1d-ac22-cd10a03fcfec",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "42b02d1f-ce9d-48e6-9971-b58d0e107a38",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "87a7c287-920d-4e00-a154-3c54dabf27dd",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "bec72271-34d6-4790-b555-ca0010d2d79e",
+      "result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed"
+    },
+    {
+      "claim_id": "b8e83e41-e919-4b21-a1a7-f49bcc1dc1ab",
+      "result_id": "f4beb306-d8a1-4270-8d26-43db89001d92"
+    },
+    {
+      "claim_id": "c7176466-94eb-4f2c-9578-f804ee90f896",
+      "result_id": "f4beb306-d8a1-4270-8d26-43db89001d92"
+    },
+    {
+      "claim_id": "e7767998-423e-4096-9389-62393bd091fc",
+      "result_id": "f4beb306-d8a1-4270-8d26-43db89001d92"
+    },
+    {
+      "claim_id": "f42966ef-bb11-4098-b016-90102f16e072",
+      "result_id": "f4beb306-d8a1-4270-8d26-43db89001d92"
+    },
+    {
+      "claim_id": "0ea329bd-b022-4630-86d0-175a6d92321c",
+      "result_id": "f4beb306-d8a1-4270-8d26-43db89001d92"
+    },
+    {
+      "claim_id": "e2377ae2-72bb-4195-bc29-97d8bd002d92",
+      "result_id": "4badb1e5-6799-4813-a06c-528c4ca9f7d1"
+    },
+    {
+      "claim_id": "2e59e00f-481d-41ea-93a1-41b6deeaf845",
+      "result_id": "4badb1e5-6799-4813-a06c-528c4ca9f7d1"
+    },
+    {
+      "claim_id": "f299af61-047e-4b5c-8b06-33bda956f8f4",
+      "result_id": "4badb1e5-6799-4813-a06c-528c4ca9f7d1"
+    },
+    {
+      "claim_id": "7c1c0174-06f0-432f-98dc-eb7171bee48a",
+      "result_id": "4badb1e5-6799-4813-a06c-528c4ca9f7d1"
+    },
+    {
+      "claim_id": "f7aa2c76-1c60-4b2b-b912-a012ca7d0cec",
+      "result_id": "4badb1e5-6799-4813-a06c-528c4ca9f7d1"
+    },
+    {
+      "claim_id": "cf4789fd-1822-443c-a398-5e74b7ae823f",
+      "result_id": "4badb1e5-6799-4813-a06c-528c4ca9f7d1"
+    },
+    {
+      "claim_id": "cf6f0cfd-6a8c-4ed7-ae10-fa24126765b6",
+      "result_id": "b60bd6d0-adc1-41d5-bb63-93c43a030dfe"
+    },
+    {
+      "claim_id": "6e2b8b1d-d1bf-4906-ab4a-d5b399e0bf44",
+      "result_id": "b60bd6d0-adc1-41d5-bb63-93c43a030dfe"
+    },
+    {
+      "claim_id": "cc7e403d-68c4-43f9-a9d4-daeaa3b5c4ca",
+      "result_id": "b60bd6d0-adc1-41d5-bb63-93c43a030dfe"
+    },
+    {
+      "claim_id": "30823223-8e51-45c3-9b4d-04bd1bae91cf",
+      "result_id": "b60bd6d0-adc1-41d5-bb63-93c43a030dfe"
+    },
+    {
+      "claim_id": "abf63819-2f68-462c-8954-59a571852481",
+      "result_id": "55479be6-594c-4385-9561-3315dd88f0ab"
+    },
+    {
+      "claim_id": "61c32ed6-cc4d-4ed9-8d46-6c7e7802b089",
+      "result_id": "55479be6-594c-4385-9561-3315dd88f0ab"
+    },
+    {
+      "claim_id": "38665732-e690-4ecd-be05-4075de732f5c",
+      "result_id": "55479be6-594c-4385-9561-3315dd88f0ab"
+    },
+    {
+      "claim_id": "1c348a22-0db0-4987-9fe6-df4360c1511d",
+      "result_id": "55479be6-594c-4385-9561-3315dd88f0ab"
+    },
+    {
+      "claim_id": "9abad19e-460b-4dc6-a1a9-62d79135c350",
+      "result_id": "55479be6-594c-4385-9561-3315dd88f0ab"
+    },
+    {
+      "claim_id": "5ad17076-a050-4ee3-93d9-ba431b166ea0",
+      "result_id": "de6386c1-2065-435d-9e7a-eeb6252c46c7"
+    },
+    {
+      "claim_id": "14f8397a-7123-4467-8c61-627cb9543452",
+      "result_id": "de6386c1-2065-435d-9e7a-eeb6252c46c7"
+    },
+    {
+      "claim_id": "19737b54-6bdb-414a-b3c2-02a37fec15ec",
+      "result_id": "1365025c-43c0-4499-b24d-e462191fe1d7"
+    },
+    {
+      "claim_id": "9009a2f2-06f0-4163-b1ca-b05607881c23",
+      "result_id": "1365025c-43c0-4499-b24d-e462191fe1d7"
+    },
+    {
+      "claim_id": "2813addf-1f39-4f4e-a7f0-4bf297da6e10",
+      "result_id": "170a9752-c137-41b2-b334-1b4a320d70fd"
+    },
+    {
+      "claim_id": "29bfba12-2da7-48b3-82f7-5740e9fc6ce2",
+      "result_id": "170a9752-c137-41b2-b334-1b4a320d70fd"
+    },
+    {
+      "claim_id": "e8a55fe0-c317-49b8-983d-79678fce7e8a",
+      "result_id": "170a9752-c137-41b2-b334-1b4a320d70fd"
+    },
+    {
+      "claim_id": "e19f8354-05e1-4546-84a7-d9487c2b813e",
+      "result_id": "170a9752-c137-41b2-b334-1b4a320d70fd"
+    },
+    {
+      "claim_id": "75a05f32-bcc9-48ad-bb70-a8947d6fe6d1",
+      "result_id": "3a58ca39-9bb8-4d02-bfb6-513edd0d09b2"
+    },
+    {
+      "claim_id": "787fc384-2912-407a-af83-c60548ab244b",
+      "result_id": "3a58ca39-9bb8-4d02-bfb6-513edd0d09b2"
+    },
+    {
+      "claim_id": "46e6cb46-3a0e-4cb1-a494-99a524594470",
+      "result_id": "3a58ca39-9bb8-4d02-bfb6-513edd0d09b2"
+    },
+    {
+      "claim_id": "5ef39b3c-6523-4da6-a3ac-e5e528862910",
+      "result_id": "0e108f26-a55c-49cc-86dc-85875e8a27fa"
+    },
+    {
+      "claim_id": "c376e0a7-51b5-40ae-ba7c-08536c8f7c94",
+      "result_id": "0e108f26-a55c-49cc-86dc-85875e8a27fa"
+    },
+    {
+      "claim_id": "95c69c2a-fe6a-4dce-9dfc-226df509a865",
+      "result_id": "0e108f26-a55c-49cc-86dc-85875e8a27fa"
+    },
+    {
+      "claim_id": "966833cf-816e-4157-9751-25eef385743e",
+      "result_id": "b894cf96-7b6f-48a4-a90e-1f7448d037c0"
+    },
+    {
+      "claim_id": "fe659422-9685-4627-a4f7-a63083947bd2",
+      "result_id": "b894cf96-7b6f-48a4-a90e-1f7448d037c0"
+    },
+    {
+      "claim_id": "90d0eda3-3ebc-4d8d-a596-47f1d42a162c",
+      "result_id": "b894cf96-7b6f-48a4-a90e-1f7448d037c0"
+    },
+    {
+      "claim_id": "852ae630-2d31-4953-a095-0832f5054b99",
+      "result_id": "cfc2ba42-3c0d-4691-a9f2-17cea42f4c58"
+    },
+    {
+      "claim_id": "6702a2c9-4233-4ac6-bb6c-db39255835e7",
+      "result_id": "cfc2ba42-3c0d-4691-a9f2-17cea42f4c58"
+    },
+    {
+      "claim_id": "7c6031ab-8a2b-4d8a-a1a0-23519842ee72",
+      "result_id": "cfc2ba42-3c0d-4691-a9f2-17cea42f4c58"
+    },
+    {
+      "claim_id": "adc80515-bd77-49c6-968f-5e35dbbcb489",
+      "result_id": "cfc2ba42-3c0d-4691-a9f2-17cea42f4c58"
+    },
+    {
+      "claim_id": "129bc841-762f-405c-91dc-f1c7a518ad9b",
+      "result_id": "e17b20d6-cf83-48c5-9c4b-592c7be220cd"
+    },
+    {
+      "claim_id": "f8f18147-54f5-4c28-bb2a-2b0ac4c3222d",
+      "result_id": "e17b20d6-cf83-48c5-9c4b-592c7be220cd"
+    },
+    {
+      "claim_id": "4e45d1b6-3a5b-4205-981a-616a3256085c",
+      "result_id": "eb8e24ad-06e0-4bbf-8617-98588d837710"
+    },
+    {
+      "claim_id": "37996c5e-7d93-4ad6-922e-d0346bdcc819",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "59e25f46-04d6-4b06-9b9e-00cc924286ef",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "6c5f221b-7647-4cc5-bb94-6d7d95757dfe",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "0d210d56-06f8-4bc2-9274-c7c67f097bac",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "7ea45618-6611-4c75-8195-743fb420fd2a",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "46215960-a032-4e58-9cc7-f58ac20b0276",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "05f46437-f1a3-441c-b1ae-f241f5bcf423",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "d098ee2e-1d50-418e-81a6-f5a6e903c42a",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "9496d2ff-e421-4079-a742-43181e6c7c8d",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "ae5a314b-ec3b-4d5c-9a0f-6153efbee87c",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "66532848-c0ef-4dd6-b578-171bd5a7dd47",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "abf63819-2f68-462c-8954-59a571852481",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "61c32ed6-cc4d-4ed9-8d46-6c7e7802b089",
+      "result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df"
+    },
+    {
+      "claim_id": "b8e83e41-e919-4b21-a1a7-f49bcc1dc1ab",
+      "result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3"
+    },
+    {
+      "claim_id": "c7176466-94eb-4f2c-9578-f804ee90f896",
+      "result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3"
+    },
+    {
+      "claim_id": "e7767998-423e-4096-9389-62393bd091fc",
+      "result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3"
+    },
+    {
+      "claim_id": "f42966ef-bb11-4098-b016-90102f16e072",
+      "result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3"
+    },
+    {
+      "claim_id": "0ea329bd-b022-4630-86d0-175a6d92321c",
+      "result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3"
+    },
+    {
+      "claim_id": "38665732-e690-4ecd-be05-4075de732f5c",
+      "result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3"
+    },
+    {
+      "claim_id": "e8a55fe0-c317-49b8-983d-79678fce7e8a",
+      "result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3"
+    },
+    {
+      "claim_id": "e19f8354-05e1-4546-84a7-d9487c2b813e",
+      "result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3"
+    },
+    {
+      "claim_id": "e2377ae2-72bb-4195-bc29-97d8bd002d92",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "2e59e00f-481d-41ea-93a1-41b6deeaf845",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "f299af61-047e-4b5c-8b06-33bda956f8f4",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "7c1c0174-06f0-432f-98dc-eb7171bee48a",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "f7aa2c76-1c60-4b2b-b912-a012ca7d0cec",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "cf4789fd-1822-443c-a398-5e74b7ae823f",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "1c348a22-0db0-4987-9fe6-df4360c1511d",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "9abad19e-460b-4dc6-a1a9-62d79135c350",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "787fc384-2912-407a-af83-c60548ab244b",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "46e6cb46-3a0e-4cb1-a494-99a524594470",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "5ef39b3c-6523-4da6-a3ac-e5e528862910",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "c376e0a7-51b5-40ae-ba7c-08536c8f7c94",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "95c69c2a-fe6a-4dce-9dfc-226df509a865",
+      "result_id": "22952032-7d0c-417c-9f0a-0689bb574f74"
+    },
+    {
+      "claim_id": "cf6f0cfd-6a8c-4ed7-ae10-fa24126765b6",
+      "result_id": "97c15229-c26f-4678-8460-33e3b0bb1d78"
+    },
+    {
+      "claim_id": "6e2b8b1d-d1bf-4906-ab4a-d5b399e0bf44",
+      "result_id": "97c15229-c26f-4678-8460-33e3b0bb1d78"
+    },
+    {
+      "claim_id": "cc7e403d-68c4-43f9-a9d4-daeaa3b5c4ca",
+      "result_id": "97c15229-c26f-4678-8460-33e3b0bb1d78"
+    },
+    {
+      "claim_id": "30823223-8e51-45c3-9b4d-04bd1bae91cf",
+      "result_id": "97c15229-c26f-4678-8460-33e3b0bb1d78"
+    },
+    {
+      "claim_id": "19737b54-6bdb-414a-b3c2-02a37fec15ec",
+      "result_id": "97c15229-c26f-4678-8460-33e3b0bb1d78"
+    },
+    {
+      "claim_id": "9009a2f2-06f0-4163-b1ca-b05607881c23",
+      "result_id": "97c15229-c26f-4678-8460-33e3b0bb1d78"
+    },
+    {
+      "claim_id": "df94d6ef-db7a-46b1-a22e-0909e4932e1d",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "a95e4b91-4a57-46af-9cab-f30b381241ac",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "0d9c7298-3642-4dc3-8068-9f06301c8764",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "e0191e38-a0fc-423b-879f-a40b2bbd6442",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "d81d4602-21fa-4d3c-bb6a-c3cca87b5436",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "0111dbc5-4751-497a-b3d1-5837998100aa",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "3af8ca0e-f8aa-4023-8d89-e6200a85bd17",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "b7aee492-555c-4f1b-a987-a6b7d1ae8c4c",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "311094ca-a502-4284-a678-c599cb72158f",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "4c94a522-da3f-4ddc-a1e9-7141b722425b",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "a2897081-c306-4f58-ac07-a068167df8be",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "5bcd9a7d-e084-4985-af70-60954caee086",
+      "result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556"
+    },
+    {
+      "claim_id": "966833cf-816e-4157-9751-25eef385743e",
+      "result_id": "4e2c5278-3bee-4f17-9efd-58cab47ff079"
+    },
+    {
+      "claim_id": "fe659422-9685-4627-a4f7-a63083947bd2",
+      "result_id": "4e2c5278-3bee-4f17-9efd-58cab47ff079"
+    },
+    {
+      "claim_id": "90d0eda3-3ebc-4d8d-a596-47f1d42a162c",
+      "result_id": "4e2c5278-3bee-4f17-9efd-58cab47ff079"
+    },
+    {
+      "claim_id": "a8434541-d643-4c1d-ac22-cd10a03fcfec",
+      "result_id": "18c1e838-8766-4627-9d5e-7ddff91dc3c5"
+    },
+    {
+      "claim_id": "42b02d1f-ce9d-48e6-9971-b58d0e107a38",
+      "result_id": "18c1e838-8766-4627-9d5e-7ddff91dc3c5"
+    },
+    {
+      "claim_id": "87a7c287-920d-4e00-a154-3c54dabf27dd",
+      "result_id": "e14fa481-f1b2-499f-9e58-d5d947826b36"
+    },
+    {
+      "claim_id": "129bc841-762f-405c-91dc-f1c7a518ad9b",
+      "result_id": "e14fa481-f1b2-499f-9e58-d5d947826b36"
+    },
+    {
+      "claim_id": "f8f18147-54f5-4c28-bb2a-2b0ac4c3222d",
+      "result_id": "e14fa481-f1b2-499f-9e58-d5d947826b36"
+    },
+    {
+      "claim_id": "5ad17076-a050-4ee3-93d9-ba431b166ea0",
+      "result_id": "efe346bd-c210-4fe2-93b6-c3293e4cc934"
+    },
+    {
+      "claim_id": "14f8397a-7123-4467-8c61-627cb9543452",
+      "result_id": "efe346bd-c210-4fe2-93b6-c3293e4cc934"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "da546935-c59a-41d6-81a8-b115e79ade6c",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "de6386c1-2065-435d-9e7a-eeb6252c46c7",
+      "peer_result_id": "efe346bd-c210-4fe2-93b6-c3293e4cc934",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Perfect alignment on claims C71-C72 regarding the importance of early viremia measurement. Both OpenEval (UNCERTAIN) and peer reviewers (SUPPORTED) address these claims, though OpenEval expresses more caution about the lack of formal comparative analysis while peer reviewers explicitly affirm the practical implications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "675aae03-e08a-4c2c-9cd1-966ea9e13c42",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b894cf96-7b6f-48a4-a90e-1f7448d037c0",
+      "peer_result_id": "4e2c5278-3bee-4f17-9efd-58cab47ff079",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on study limitations C85-C87. Both OpenEval and peer reviewers acknowledge geographic restriction, PCR measuring RNA not infectious virus, and symptom onset timing issues. Both rate these as SUPPORTED acknowledgments of legitimate methodological constraints.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "d1faaaa2-d875-4a7e-bf09-968a8a29e434",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "c5e7c18a-94e9-424e-96aa-db91f7028f7a",
+      "peer_result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "High overlap on baseline characteristics C26-C35 (plus C20-C21 in peer review). OpenEval rates these as SUPPORTED with clear reporting, while peer reviewers rate as UNCERTAIN due to concerns about data imbalance across serotypes and limited primary infection cases affecting generalizability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "0e184e10-820f-48dc-91f6-90f09d45b679",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b60bd6d0-adc1-41d5-bb63-93c43a030dfe",
+      "peer_result_id": "97c15229-c26f-4678-8460-33e3b0bb1d78",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on viral decline rate findings C62-C65. OpenEval rates as SUPPORTED and peer reviewers also rate as SUPPORTED. Peer review R4 additionally includes C73-C74 about therapeutic trial applications, which OpenEval addresses separately in R13 with more caution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "eca662f9-0dbb-43cd-b06f-2c0e6197cd5d",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "1365025c-43c0-4499-b24d-e462191fe1d7",
+      "peer_result_id": "97c15229-c26f-4678-8460-33e3b0bb1d78",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C73-C74 about viral decline and surrogate endpoints. OpenEval rates as UNCERTAIN, noting that establishing viremia kinetics as a validated surrogate endpoint requires substantial additional work. Peer reviewers rate as SUPPORTED, emphasizing relevance to antiviral therapeutic research without the same caveats.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "4ff36746-c9d2-4715-b631-88f9bf99d35d",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "e17b20d6-cf83-48c5-9c4b-592c7be220cd",
+      "peer_result_id": "e14fa481-f1b2-499f-9e58-d5d947826b36",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on PCR methodology comparison C91-C92. Both OpenEval and peer reviewers rate as SUPPORTED. OpenEval explicitly discusses the detection limit explanation for longer detection, while peer reviewers accept these findings without raising methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "89d4a072-56c1-48ae-8bde-a261b8932ef0",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed",
+      "peer_result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "High overlap on viremia kinetics characterization C36-C46. Both rate as SUPPORTED. OpenEval emphasizes statistical rigor and consistency with prior literature. Peer reviewers explicitly affirm these as 'fundamental findings' and 'compelling evidence' with no concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "91a16ea0-0b18-460b-92ee-41e8288a5409",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed",
+      "peer_result_id": "18c1e838-8766-4627-9d5e-7ddff91dc3c5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address null findings for sex and age effects C47-C48. OpenEval rates as SUPPORTED within R7's broader viremia kinetics evaluation. Peer reviewers also rate as SUPPORTED, with lack of concern suggesting acceptance of these null results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "f00c16bb-6c9a-4d85-a871-c31c10045814",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f4beb306-d8a1-4270-8d26-43db89001d92",
+      "peer_result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on viremia-platelet relationship C51-C55. Both rate as SUPPORTED. OpenEval notes the delayed effect and acknowledges limitation about unidirectional causality assumption. Peer reviewers explicitly confirm the temporal pattern without raising methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "0c34afec-ed57-4950-9888-af75031e1e15",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "4badb1e5-6799-4813-a06c-528c4ca9f7d1",
+      "peer_result_id": "22952032-7d0c-417c-9f0a-0689bb574f74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Moderate overlap on viremia-severity associations C56-C61. Both rate as SUPPORTED. Peer review R3 additionally includes claims C69-C70, C80-C84 about independent prediction and immune status, which OpenEval addresses in separate results (R11, R15, R16). All reviewers affirm these core findings as compelling evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "a0f8be43-5c92-4eb3-b7a1-aafa3e522f98",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "55479be6-594c-4385-9561-3315dd88f0ab",
+      "peer_result_id": "bd80f588-9fd5-48f2-9bf2-d76b721160df",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on summary conclusions C66-C67. OpenEval rates as SUPPORTED, noting comprehensive data support. Peer review R1 includes these claims within broader viremia kinetics findings (C36-C46), rating as SUPPORTED with explicit affirmation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "fbc63674-3a80-4903-be33-a87aad48907d",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "55479be6-594c-4385-9561-3315dd88f0ab",
+      "peer_result_id": "22952032-7d0c-417c-9f0a-0689bb574f74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C69-C70 about viremia as independent predictor. OpenEval rates as SUPPORTED within summary conclusions. Peer review R3 includes these within broader severity associations, rating as SUPPORTED with explicit reviewer affirmation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "091215e5-8542-44b1-bdec-df18cf6ec69e",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "55479be6-594c-4385-9561-3315dd88f0ab",
+      "peer_result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C68 about viremia-severity relationship. OpenEval includes this in summary conclusions rated as SUPPORTED. Peer review R2 includes it with platelet count findings, also rated as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "bad5683b-3065-4bd7-9a41-4eae0052bece",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "170a9752-c137-41b2-b334-1b4a320d70fd",
+      "peer_result_id": "e44572e6-523b-4f20-b7d9-a19d2879abd3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on mechanistic interpretation C77-C78. OpenEval rates as SUPPORTED, connecting temporal patterns to known biology. Peer review R2 includes these claims within viremia-platelet findings, rating as SUPPORTED without challenging the mechanistic interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "9be8687e-449e-4eb2-b895-c3955e7b96b0",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "3a58ca39-9bb8-4d02-bfb6-513edd0d09b2",
+      "peer_result_id": "22952032-7d0c-417c-9f0a-0689bb574f74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claims C80-C81 about early measurement timing. OpenEval rates as SUPPORTED with appropriate caution about complexity. Peer review R3 includes these within broader severity associations, rating as SUPPORTED with emphasis on early measurement importance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "efcc0979-cdb5-41e7-a255-3843d48b61c1",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "0e108f26-a55c-49cc-86dc-85875e8a27fa",
+      "peer_result_id": "22952032-7d0c-417c-9f0a-0689bb574f74",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on immune status independence C82-C84. OpenEval rates as SUPPORTED, noting independent effects and appropriate caution about pathways. Peer review R3 includes these within broader severity associations, rating as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "1cf9752b-60f7-4bea-9455-3c53e083c61c",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "8834d320-c753-4e55-a172-033f743870be",
+      "peer_result_id": "2ac86d1f-0bab-4747-acdc-c8a83a631556",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Minimal overlap on study design claims C20-C21. OpenEval rates as SUPPORTED with clear documentation. Peer review R5 includes these with baseline characteristics but rates as UNCERTAIN due to generalizability concerns about cohort composition.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "44c32899-29d4-4c07-94c8-b5856692c71c",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "c72b9eb9-f502-473c-9a85-f082f2d7aeed",
+      "peer_result_id": "e14fa481-f1b2-499f-9e58-d5d947826b36",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C49 about PCR method differences. OpenEval includes this in viremia kinetics findings rated as SUPPORTED. Peer review R8 includes it in PCR methodology comparison, also rated as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "c9627b75-45b4-48b6-9a93-42ab26f4b998",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "0591d217-b8b0-4905-adb7-0cd31e6f5d58",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R1 addresses background/context claims C1-C7 about dengue epidemiology and WHO publications, rating as SUPPORTED. No corresponding peer review evaluation found for these introductory claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "aa74f2c8-c28c-4dbf-8aa0-5d360caac605",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "8dc22ca1-04fb-4a73-8c33-d299086bfa7a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R2 addresses prior literature summary claims C8-C11, rating as SUPPORTED. No corresponding peer review evaluation found for these background claims establishing study rationale.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "475ffe7c-1c5c-4ff9-a813-c965444d3e50",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "05717368-31ea-4e03-8e88-00348b8b378b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R3 addresses literature review claims C12-C15 about viremia-outcome associations, rating as SUPPORTED. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "ce61d654-64dd-4fb0-a88a-fa1cf778081f",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "bbfd1448-e660-42fb-9b47-d033aec7d25f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R5 addresses PCR methodology claims C22-C25, rating as SUPPORTED but noting the unvalidated detection limit as a methodological limitation. No corresponding peer review evaluation specifically addresses these methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "fccd83a5-aa1e-4f0e-bd0f-80463399f212",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP23",
+      "openeval_result_id": "cfc2ba42-3c0d-4691-a9f2-17cea42f4c58",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R18 addresses potential confounding from incubation period differences C88-C90, C94, rating as SUPPORTED acknowledgment of limitations. No corresponding peer review evaluation specifically addresses these confounding concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    },
+    {
+      "id": "04ec4ff6-4d2e-4af6-b200-312bc4bc19c3",
+      "submission_id": "700c6597-fb1e-4d80-86d0-19de491e7b3b",
+      "comparison_id": "CMP24",
+      "openeval_result_id": "eb8e24ad-06e0-4bbf-8617-98588d837710",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R20 addresses claim C93 about unknown viral mechanisms underlying serotype differences, rating as SUPPORTED acknowledgment of knowledge gap. No corresponding peer review evaluation found for this specific limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:08.861190Z"
+    }
+  ]
+}

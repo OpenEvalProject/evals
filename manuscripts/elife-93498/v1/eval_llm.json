@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "During the second postnatal week (P8-P13), the number of functional synapses and the frequency of synaptic transmission events increase several-fold in layer 2/3 pyramidal neurons of mouse visual cortex. Synapse density and transmission frequency at individual synapses both show significant increases with age, resulting in substantially higher numbers of transmission events per dendrite by P12/13 compared to P8-10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C25, C26, and C27 are directly supported by experimental data shown in Figures 3A-D. The study used appropriate statistical methods (linear regression) with n=12 dendrites from 11 mice, providing adequate sample size. The findings are consistent with prior EM studies (C11-C13) and represent primary experimental observations from calcium imaging combined with electrophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C82"
+    ],
+    "result": "At the beginning of the second postnatal week (P8-P10), synapses assemble in confined dendritic segments with non-random spatial distribution, leaving other segments devoid of synapses. By P12-P13, synapse distribution becomes indistinguishable from random, indicating that dendrites become more uniformly covered with synapses during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40-C43, and C82 are supported by statistical analysis comparing observed inter-synapse distances to randomized distributions using Kolmogorov-Smirnov tests (Figure 5B). The methodology is appropriate, with 100 randomization runs providing robust comparison. The conclusion that synapses initially cluster in specific segments and later distribute more evenly is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "By the end of the second postnatal week (P12-P13), dendrites are almost entirely covered by domains of co-active synapses. Domain extent increases slightly, while the number of synapses per domain and domain density along dendrites approximately double. The fraction of dendritic length covered by domains increases from 27% to 61%, and the percentage of synapses within domains increases from 46% to 72%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C48-C52 are supported by quantitative analysis shown in Figures 6B-E. Statistical tests (t-tests) show significant differences between age groups with appropriate sample sizes (n=6 dendrites per group). The domain definition (based on high-activity synapses within 10 \u00b5m) is clearly described and consistently applied. The developmental trajectory is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Co-activity with neighboring synapses correlates with synaptic stabilization and potentiation. Synapses within domains show more positive activity trajectories (Mann-Kendall scores) than those outside domains. Individual synapses' Mann-Kendall scores correlate positively with their local co-activity within 10 \u00b5m, indicating that synchronized synapses become stabilized or more active compared to desynchronized neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C59-C61 are supported by correlation analysis shown in Figures 7A-C. The use of Mann-Kendall scores is appropriate for detecting monotonic trends in synaptic activity over time. The positive correlation between co-activity and plasticity scores (r=0.37, p=0.0015) provides statistical support. However, correlation does not establish causation, and the mechanism remains inferential despite citations to prior work (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C44"
+    ],
+    "result": "Spine synapses are more active than shaft synapses at both young (P8-10) and older (P12-13) ages. The majority (76%) of high-activity synapses are located on spines. Spine synapses show transmission frequencies of 0.55-0.67 min\u207b\u00b9 compared to 0.16-0.23 min\u207b\u00b9 for shaft synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C44 are supported by data in Figure 3G showing significant differences between spine and shaft synapse activity (Mann-Whitney U tests, p<10\u207b\u2079). Sample sizes are adequate (n=36-122 synapses per group). However, the method for distinguishing spine from shaft synapses has acknowledged limitations (potential misidentification due to z-resolution), which could introduce some uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "There was no significant relationship between age and the percentage of spine synapses across sampled dendrites during P8-P13. This is consistent with prior observations that spine development is maximal after P14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by statistical analysis (Figure 3E) showing no significant age-related change in spine percentage. Claim C29 provides context from prior literature. The finding is consistent with the developmental timeline, though the lack of significance could reflect limited statistical power (n=12 dendrites) or genuine biological stability during this period.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Most synaptic inputs (59-61%) occur during barrages of spontaneous activity. While barrage rate does not change significantly with age, there is a trend toward increased charge transfer per barrage and a significant increase in the number of transmission events per barrage during development. Event number correlates linearly with charge transfer, and event amplitude is higher during larger barrages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by data in Figures 4B-F. The analysis appropriately characterizes barrage properties and their developmental changes. Statistical tests show significant increases in events per barrage (C35) and correlation between events and charge (C36). The interpretation that larger event amplitudes during bigger barrages suggest multivesicular release (C37) is reasonable but remains inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C47"
+    ],
+    "result": "High-activity synapses occur frequently near each other. Neighbors of high-activity synapses (within 10 \u00b5m) are significantly more active than synapses located farther away, and this relationship is consistent across all ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C47 are supported by analysis shown in Figures 5C-F. The statistical comparison (t-tests) demonstrates significant differences in activity levels based on proximity to high-activity synapses. The 10 \u00b5m threshold appears somewhat arbitrary but is consistently applied and shows clear effects. The relationship holds across developmental ages, strengthening the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Synapses within domains show much higher local co-activity than synapses outside domains and are more synchronized with their domain neighbors than with synapses in other domains. Co-activity within domains is consistently higher than between domains across all dendrites, demonstrating that synapses with similar input patterns emerge in distinct, functionally separate dendritic domains rather than as smooth gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by co-activity analysis in Figures 6F-H. Statistical tests (Mann-Whitney U, Wilcoxon signed-rank) show highly significant differences (p<10\u207b\u2074 to 10\u207b\u2076). The co-activity metric is well-defined and appropriately normalized. The conclusion that domains are functionally distinct (C56-C57) is well-supported, though the inference about smooth gradients relies partly on interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Visual cortex neurons establish functional synapses at a very high rate during the week before eye opening, and synapses become organized into functional, spatially distinct domains based on synchronicity with neighbors. This organization occurs through plasticity mechanisms driven by spontaneous network activity, establishing structured synaptic inputs before visual experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 represent the study's main conclusions, integrating findings from multiple analyses. The high rate of synapse formation (C62) is supported by C4-C5, C25-C27. Domain organization (C63-C64) is supported by C6-C7, C40-C52. The plasticity mechanism (C65) is supported by C8, C59-C61. While the causal mechanism remains correlational, the overall conclusion is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "A fraction of structural spines remained inactive during recordings in both younger (25\u00b120%) and older (9\u00b19%) dendrites, possibly representing presynaptically silent synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C31 reports observed inactive spines with high variability (large standard deviations). The interpretation as presynaptically silent synapses is speculative and depends on recording duration (29\u00b18 and 26\u00b16 min). Some spines might be active at lower frequencies not detected during the recording window, or might represent false positives in spine identification. The biological interpretation requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The observed distribution of synaptic transmission frequencies is most likely determined by release probability differences between individual presynaptic terminals, representing a synapse feature of large dynamic range that is harnessed by developing circuits to adjust connection strength in response to fine-scale activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 represent interpretations of the transmission frequency distribution (Figure 3F) combined with cited prior work. The reasoning is logical: since presynaptic neurons fire homogeneously during spontaneous events (cited in C66), the observed variability likely reflects release probability differences. Support from prior studies (C68-C69) strengthens this interpretation, though direct measurement of release probabilities was not performed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Patterned spontaneous activity can be sufficient to sort synaptic inputs into domains to establish discrete computational modules before eye opening, preparing the visual cortex for high-sensitivity processing. This 'first guess' will be refined by visual inputs after eye opening based on environmental statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 are explicitly speculative (marked as SPECULATION in evidence_type). While the data support domain formation before eye opening, the sufficiency of spontaneous activity (C83) and the prediction about post-eye-opening refinement (C84) are not directly tested. These represent reasonable hypotheses based on the findings but require future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C85",
+      "C86",
+      "C90"
+    ],
+    "result": "The study imaged 12 dendritic areas from 11 C57BL/6J mice (P8-P13), identifying 354 functional synapses producing 3440 transmission events. The total dendritic length imaged per neuron was almost 10 times larger than in previous studies, achieved through in utero electroporation of GCaMP6s and DsRed at E16.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C85-C86, and C90 describe the experimental design and sample characteristics. These are straightforward methodological descriptions supported by the Methods section. The sample size (11-12 dendrites) is modest but appears adequate for the statistical analyses performed. The 10-fold increase in imaging area (C90) represents a significant technical improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Low-level anesthesia (0.7-1% isoflurane) does not change basic properties of spontaneous network activity such as participation rates and event amplitudes, and synaptic inputs are organized similarly in vivo under light anesthesia and in slice cultures. Therefore, the activity patterns investigated are not or only slightly affected by anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by citations to prior work by the authors (Siegel et al., 2012; Winnubst et al., 2015). While anesthesia does reduce event frequency, the cited studies provide evidence that the spatial organization and basic activity properties remain intact. This justification for the experimental approach is reasonable, though direct comparison with awake recordings in the current study would strengthen confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C29",
+      "C38",
+      "C39",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C91"
+    ],
+    "result": "The manuscript establishes context through extensive citation of prior work on synaptic clustering in adult systems, developmental synaptogenesis, dendritic integration, and spontaneous activity patterns. These claims provide the scientific background and rationale for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C20, C23-C24, C29, C38-C39, C68-C81, and C91 are all supported by appropriate citations to prior literature. The authors accurately represent established knowledge about synaptic clustering, development, and function. These background claims are not primary findings of the current study but provide essential context. The citations appear appropriate and accurately attributed.",
+    "result_type": "MINOR"
+  }
+]

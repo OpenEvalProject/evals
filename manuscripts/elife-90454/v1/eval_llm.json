@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C37"
+    ],
+    "result": "GPi neurons in dystonia exhibited lower firing rates, higher burst index, and higher coefficient of variation compared to PD. However, the firing rate difference did not survive Bonferroni correction for multiple comparisons, while burst index and coefficient of variation differences remained significant after correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 report statistically significant differences in neuronal firing properties between PD and dystonia based on Mann-Whitney U tests with appropriate sample sizes (C25-C26: 19 dystonia patients with 135 segments, 44 PD patients with 222 segments). While C37 notes that firing rate differences did not survive multiple comparison correction, the burstiness and variability measures remained significant, providing robust evidence for disease-specific neuronal firing patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "No significant differences were found in spiketrain oscillatory power across delta, theta, low-beta, or high-beta frequency bands between PD and dystonia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 consistently report non-significant Mann-Whitney U test results (p-values ranging from 0.1176 to 0.6265) for oscillatory features across multiple frequency bands. The statistical approach is appropriate and the negative findings are clearly reported with p-values, supporting the conclusion of no group-level differences in oscillatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "In dystonia, symptom severity negatively correlated with firing rate and positively correlated with coefficient of variation and theta oscillations. However, none of these correlations survived false discovery rate correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 and C42 report statistically significant Spearman correlations (p<0.05) between neuronal features and clinical severity in dystonia. However, C43 explicitly states that none survived Benjamini-Hochberg FDR correction. The authors acknowledge this limitation (C91) and suggest cautious interpretation. Without correction, the correlations appear meaningful, but the failure to survive multiple comparison correction raises uncertainty about their reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43"
+    ],
+    "result": "In PD, symptom severity positively correlated with low-beta spiketrain oscillations, with a marginally stronger correlation when considering only hypokinetic symptoms. However, these correlations did not survive false discovery rate correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 report significant Spearman correlations between low-beta oscillations and PD symptom severity (rho=0.30, p=0.0426 for total symptoms; rho=0.32, p=0.0330 for hypokinetic symptoms). However, C43 indicates these correlations did not survive FDR correction. The finding aligns with prior literature (C50, C57) on beta oscillations in PD, but the statistical correction failure limits confidence in the specific correlations reported here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Long-term plasticity, measured as increased fEP amplitudes after high-frequency stimulation, was significantly greater in PD compared to dystonia. In PD, post-HFS fEP amplitudes were significantly increased (p=0.0075), while in dystonia the increase approached but did not reach significance (p=0.0708). The percent change was significantly greater in PD (p=0.0396).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 report linear mixed model analyses with appropriate statistical design (patient ID as random factor) on plasticity data from 10 PD patients (13 sites) and 8 dystonia patients (12 sites) (C28-C29). The significant difference in percent change between groups (C46, p=0.0396) provides the strongest evidence for disease-specific plasticity differences. The marginal non-significance in dystonia alone (C45, p=0.0708) is appropriately reported and does not undermine the between-group comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C54"
+    ],
+    "result": "Short-term plasticity, measured as the rate of synaptic depression during high-frequency stimulation, was significantly slower in dystonia compared to PD. Half-life values from exponential fits were significantly greater in dystonia (p=0.0139).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 reports a statistically significant difference in synaptic depression dynamics using appropriate linear mixed model analysis with patient ID as random factor. The double exponential fitting approach to quantify depression rate is methodologically sound, and the significant p-value (0.0139) with reported effect size (1.04 \u00b1 0.37) provides robust evidence for disease-specific differences in short-term plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C55"
+    ],
+    "result": "The findings substantiate claims of hypofunctional GPi output in dystonia and hyperfunctional GPi output in PD, with lower firing rates in dystonia potentially reflecting greater inhibition of GPi producing decreased inhibitory output and under-inhibition of thalamocortical motor networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C49 and C55 represent interpretations of the firing rate data (C30) in the context of basal ganglia circuit models. While the lower firing rates in dystonia are experimentally supported, the mechanistic interpretation involves inference about circuit function that cannot be directly tested with the current data. The firing rate difference itself did not survive multiple comparison correction (C37), and the interpretation relies on circuit models from prior literature rather than direct measurement of GPi output effects on thalamocortical networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The findings provide cellular-level validation of the pathological nature of low-beta oscillations in PD and theta oscillations in dystonia through correlations between single-neuron oscillatory power and clinical symptom severity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 interpret the clinical correlations (C40, C42) as cellular-level validation of pathological oscillations. However, these correlations did not survive FDR correction (C43), limiting confidence in this validation. While the findings align with prior LFP studies (C15-C16, C57), the failure of multiple comparison correction and the correlational (not causal) nature of the relationship make this validation uncertain rather than definitively supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Circuit changes in PD and dystonia may be underlain by disease-related differences in plasticity of striato-pallidal synapses, with dystonia associated with less long-term plasticity, slower synaptic depression, and synapses that are more resistant to change compared to PD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C76-C77 are directly supported by the experimental plasticity data (C44-C47) showing significant differences in both long-term and short-term plasticity measures. Claims C52 and C78 represent reasonable inferences from these data. While the mechanistic link between plasticity differences and circuit changes involves some speculation (noted in C52's evidence type), the experimental plasticity findings themselves are robust and the inference is well-grounded in the data and prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The greater long-term plasticity observed in PD compared to dystonia may be explained by chronic sensitization of striato-pallidal synapses from prolonged levodopa use in PD patients, potentially relating to levodopa-induced dyskinesias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 present a speculative explanation for the unexpected finding of greater plasticity in PD. While C67 accurately describes the patient cohort and C68 cites prior work on levodopa effects, claims C69 and C71 are explicitly speculative (noted in evidence types). The 12-hour medication withdrawal (C86) may not be sufficient to eliminate chronic effects, but this remains hypothetical. The explanation is plausible and supported by citations (C69-C70), but lacks direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The findings may explain why functional benefits of DBS require longer time courses in dystonia compared to PD, potentially due to slower network reorganization related to the observed differences in synaptic plasticity dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 presents a speculative mechanistic link between the plasticity findings and clinical DBS response timescales. While the plasticity differences are experimentally supported (C44-C47) and the clinical timescale differences are well-documented in prior literature (C18-C19, C72-C75), the causal connection between these observations is inferred rather than directly demonstrated. The explanation is plausible and consistent with the data, but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Data were collected from 19 dystonia patients (135 segments) and 44 PD patients (222 segments) for single-neuron analysis, and from subsets of 8 dystonia patients (12 sites) and 10 PD patients (13 sites) for plasticity analysis, during awake GPi-DBS surgeries with overnight medication withdrawal in PD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 describe the study methodology and sample sizes. These are factual descriptions of the data collection procedures that are internally consistent and appropriate for the analyses performed. The sample sizes are reasonable for intraoperative human studies, though the plasticity subset is relatively small. The methodology is clearly described and follows established procedures (cited as Hutchison et al., 1994).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study has several acknowledged limitations including lack of stringent monitoring of medication intake and sedation levels, pooling of various dystonia subtypes, and failure of many findings to survive multiple comparison corrections, though results remain generally consistent with prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 transparently report study limitations. The authors appropriately acknowledge methodological constraints (C85), describe mitigation efforts (C86-C87), report robustness checks (C88, C90), and explicitly note statistical correction failures (C91). This honest reporting of limitations is appropriate and demonstrates scientific rigor. The claim that findings align with prior literature (C92) provides some external validation despite the statistical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Positive-going field-evoked potentials (fEPs) serve as valid measures of inhibitory synaptic transmission, with striatum-mediated fEPs in GPi being larger and subject to synaptic depression during high-frequency stimulation, unlike smaller GPe-mediated fEPs that are resilient to depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe the methodological foundation for interpreting fEP measurements, supported by the authors' prior work (Milosevic et al., 2019; Steiner et al., 2021) and animal studies (Yoshida and Precht, 1971; Precht and Yoshida, 1971). The ability to distinguish pathway-specific responses based on amplitude and depression characteristics is well-established in the cited literature and provides a sound basis for the plasticity measurements in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes the theoretical framework of PD and dystonia as hypo- and hyperkinetic disorders respectively, with opposing basal ganglia circuit pathologies involving direct and indirect pathways, differential GPi firing rates, frequency-specific oscillations, and different timescales of DBS response, all supported by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 summarize established knowledge from prior literature, appropriately cited throughout. These claims provide the theoretical context for the current study and are consistently supported by citations to relevant prior work. The authors appropriately note areas of controversy (C12-C14) where findings are inconsistent across studies. This background material is well-documented and provides appropriate context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

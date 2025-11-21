@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "FBXO24 is predominantly expressed in testis during post-meiotic spermatogenesis, with expression increasing around postnatal day 21 when round spermatids appear. The protein is highly conserved between mice and humans (88% amino acid identity) with the F-box domain located near the N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by RT-PCR data (C1, C2), single-cell RNA-seq analysis (C3, C4), and sequence alignment data (C5, C6). The expression pattern is confirmed by multiple independent methods and the conservation analysis is based on standard bioinformatic approaches. The timing correlation with round spermatid appearance is supported by citation to prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "FBXO24 interacts with SKP1 via its F-box domain to form the SCF complex. Wild-type FBXO24 co-immunoprecipitates with SKP1, while FBXO24 lacking the F-box domain does not, suggesting FBXO24 functions as a component of the SCF complex during post-meiotic spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by bidirectional co-immunoprecipitation experiments showing F-box domain-dependent interaction with SKP1. The conclusion (C10) that FBXO24 functions in the SCF complex is a reasonable inference from the interaction data combined with expression pattern, though direct functional evidence of SCF complex activity is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Fbxo24 knockout mice were generated using CRISPR/Cas9 with an 11,575 bp deletion. KO male mice are completely infertile with zero offspring despite successful mating (20 vaginal plugs detected), while showing no overt defects in development, behavior, or survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are well-supported by sequencing data confirming the deletion (C11), fertility test data showing complete infertility (C12), and observational phenotyping (C14). The sample size for fertility testing (3 males, 3 females each, 3 months) is adequate for establishing complete infertility. The conclusion that Fbxo24 is indispensable for male fertility (C13) is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Fbxo24 KO mice have normal testicular morphology and weights but exhibit impaired spermiation with retained step 16 spermatids in Stage IX tubules. KO spermatozoa show abnormal flagellar structures (bent/coiled) with normal head morphology, significantly reduced motility, and decreased velocity parameters, indicating FBXO24 is critical for sperm flagellum formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 are supported by histological analysis (C15-C16), morphological assessment (C17-C19), and computer-assisted sperm analysis (C20-C21). The data show consistent defects in flagellar structure and function. Statistical significance is demonstrated for motility and velocity parameters. The conclusion (C22) is well-supported by the convergent evidence of structural and functional defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Fbxo24 KO spermatozoa cannot fertilize eggs in vitro, and removing cumulus cells or zona pellucida does not rescue fertilization, suggesting defects in both sperm motility and acrosome reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by IVF experiments under different conditions. The inference (C26) that both motility and acrosome reaction are defective is reasonable given that zona removal did not rescue fertilization, though the acrosome reaction defect is more directly demonstrated in subsequent experiments (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C32"
+    ],
+    "result": "Fbxo24 KO spermatozoa show significantly higher percentages of dead cells and rarely undergo acrosome reaction even after Ca2+ ionophore treatment. However, no notable differences were found in SNARE-related proteins or PLCD4 between control and KO spermatozoa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by PI staining and acrosome reaction assays. Claims C30 and C32 are supported by mass spectrometry and immunoblotting data. The lack of differences in known acrosome reaction proteins suggests the mechanism of acrosome reaction failure may involve other factors not examined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Fbxo24 KO spermatozoa fail to migrate through the uterotubal junction despite normal ADAM3 processing and LY6K levels. The primary cause of infertility is likely impaired sperm migration due to reduced motility and lower viability, as the acrosome reaction is not essential for migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C37 are supported by in vivo migration assays and immunoblotting. The conclusion (C41) is a reasonable inference based on the motility defects, viability data, and literature citations (C39, C40) indicating motility defects can impair UTJ migration. However, the relative contributions of viability versus motility to the migration defect are not quantitatively determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Intracytoplasmic sperm injection (ICSI) can rescue male sterility of Fbxo24 KO mice, demonstrating that KO sperm nuclei have the potential to generate the next generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by ICSI experiments producing viable offspring (4 pups from 48 two-cell embryos from 91 injected oocytes). The success rate (53% two-cell, 8% pups) is within normal range for ICSI, confirming nuclear competence despite flagellar defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Fbxo24 KO spermatozoa exhibit disorganized mitochondria with normal SEPT4 localization. During mitochondrial sheath formation, early spherical mitochondria align correctly, but subsequent interlocking is irregular and elongating mitochondria remain disorganized. TEM confirms irregular mitochondrial arrangement with significantly higher frequency of abnormalities, and disrupted axoneme and outer dense fibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are supported by fluorescence microscopy (C44-C45), SEM (C47-C49), and TEM (C50-C52) observations. The temporal analysis of mitochondrial sheath formation identifies when defects arise. Quantification shows statistically significant increases in abnormal mitochondria. The multi-modal imaging approach provides strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Numerous membraneless electron-dense granules are frequently observed in the midpieces of Fbxo24 KO spermatozoa, including within the axoneme, and at low frequency in principal pieces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by TEM observations with quantification showing significantly higher frequency of granules in KO midpieces (~90% of sections vs ~15% in controls). The presence of granules in axonemes and principal pieces is documented with images. This is a novel and striking phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "No differences in amounts or localization of known RNP granule-related proteins (ADAD1, ADAD2, MILI, MIWI, RNF-17, YTHDC2, TSKS, TSSK1) were found between Fbxo24 heterozygous and KO testes, suggesting the accumulated granules are distinct from known RNP granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C58, C60 are supported by immunoblotting and immunostaining data showing no differences in protein amounts or localization patterns. Claims C59 and C61 describe normal localization patterns observed. This negative result is important for distinguishing the novel granules from known RNP granule types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C71"
+    ],
+    "result": "Mass spectrometry revealed that IPO5 and KPNB1, members of the karyopherin-\u03b2 family of nuclear transport receptors, significantly increase in Fbxo24 KO mature spermatozoa. Immunoblotting confirmed these increases, while KPNA2 levels remained comparable. IPO5 is detected in KO flagella but not in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C68 are supported by mass spectrometry validated by immunoblotting. Claim C69 provides important negative control showing specificity. Claim C71 is supported by immunostaining. The identification of IPO5 and KPNB1 as accumulated proteins is well-supported by multiple methods. Claims C64-C65 are background knowledge supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "FBXO24 interacts with IPO5 in mouse testes (confirmed by immunoprecipitation-MS and immunoblotting) and in HEK293T cells, but not with KPNB1. FBXO24 can ubiquitinate IPO5 in an F-box domain-dependent manner, suggesting FBXO24 recognizes and ubiquitinates IPO5 for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by immunoprecipitation experiments in vivo and in vitro, and ubiquitination assays. The F-box domain dependence (C75) confirms specificity. The conclusion (C76) is a reasonable inference from the interaction and ubiquitination data, though direct demonstration of degradation is not provided. The selective interaction with IPO5 but not KPNB1 (C73) is important for mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Total RNA is significantly increased in Fbxo24 KO spermatozoa. In COS7 cells, IPO5 and KPNB1 are recruited to cytoplasmic stress granules upon treatment with arsenite or proteasome inhibitor MG132, supporting the idea that RNP granules containing KPNB1 and IPO5 are formed in Fbxo24 KO spermatozoa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by RNA quantification. Claims C80-C82 are supported by immunostaining experiments in cultured cells showing stress-induced granule formation with IPO5/KPNB1 colocalization. The inference (C83) that similar granules form in KO spermatozoa is reasonable given the increased RNA, increased IPO5/KPNB1, and stress granule recruitment data, though direct demonstration in spermatozoa is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C123",
+      "C124",
+      "C136"
+    ],
+    "result": "FBXO24 is involved in the degradation of IPO5, and disruption leads to accumulation of abnormal RNP granules in sperm flagella. These granules are distinct from known RNP granules and may consist of IPO5 and KPNB1, similar to stress granules. The accumulation is specific to Fbxo24 deletion rather than general proteasome defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114, C124, C136 are reasonable inferences from the ubiquitination data, protein accumulation, and phenotype. Claim C116 is supported by comparison with PSME4/ECPAS double KO mice. Claims C117-C118 are inferences from the RNA increase and normal localization of known RNP markers. Claim C123 is an inference from the stress granule experiments. The overall model is well-supported though some mechanistic details remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "The primary cause of infertility in Fbxo24 KO mice is impaired sperm migration in the female reproductive tract due to reduced sperm motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 is a synthesis of multiple findings: complete infertility (C12), failed UTJ migration (C34), severely reduced motility (C20-C21), and ICSI rescue (C42). The conclusion is well-supported by the data, though the relative contributions of reduced motility, decreased viability, and impaired acrosome reaction are not quantitatively determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C113",
+      "C128",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "FBXO24 is essential for sperm flagellum formation and male fertility, likely playing a role in catalyzing protein degradation during spermiogenesis. FBXO24 may degrade multiple proteins including IPO5 and MIWI. The ability to generate RNP granules is present in wild-type testes but suppressed by FBXO24. Due to conservation, FBXO24 may play similar roles in human testes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C113 are well-supported conclusions from the overall study. Claim C128 is supported by the IPO5 data and citation to concurrent work on MIWI (C127). Claim C131 is an inference from the presence of some granules in controls. Claims C133-C134 are reasonable inferences from the conservation data (C5), though direct functional evidence in humans is lacking. Claim C132 is a reasonable conclusion about the significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Another group reported that Fbxo24 KO mice exhibit disorganized mitochondrial coiling and abnormal head morphology, with FBXO24 mediating degradation of MIWI via K48-linked polyubiquitination. Phenotypic differences between studies may be due to different genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125 and C127 are citations to concurrent work by another group. Claim C126 is speculation about the source of phenotypic differences. These claims appropriately acknowledge related work and potential explanations for differences, though the speculation about genetic background is not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C31",
+      "C33",
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C46",
+      "C57",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C78",
+      "C79",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C115",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Background knowledge and literature citations supporting the study's context, including information about F-box proteins, SCF complex, ubiquitin-proteasome system, sperm structure, RNP granules, stress granules, and prior work on related proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C7, C31, C33, C36, C38, C39, C40, C46, C57, C62, C64, C65, C66, C67, C70, C78, C79, C84-C90, C92-C103, C104-C110, C112, C115, C119-C122) are background knowledge supported by appropriate citations to prior literature. They provide necessary context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The acrosome reaction is a prerequisite for spermatozoa to pass through the zona pellucida and fuse with eggs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is established knowledge supported by citation. However, this appears to contradict claim C39 which states the acrosome reaction is not essential for migration. The distinction is that C27 refers to ZP penetration and egg fusion, while C39 refers to migration in the female tract before reaching the egg.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Small numbers of RNP granules are found even in control spermatozoa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by TEM quantification showing ~15% of control midpiece sections contain granules. This observation is important for the interpretation that FBXO24 suppresses granule formation rather than being absolutely required to prevent it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "This research may lead to development of new approaches to infertility treatment and nonhormonal male contraceptives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 is speculation about potential applications. While the identification of FBXO24 as essential for male fertility could theoretically inform contraceptive development, no data supporting this application is provided. This is appropriate speculation for a discussion section but not a supported result.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2851 @@
+{
+  "submission": {
+    "id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:51:12.495088Z",
+    "updated_at": "2025-11-20T22:51:12.495088Z"
+  },
+  "content": [
+    {
+      "id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "content_type": "manuscript",
+      "content_text": "# Pigmentation level of human iPSC-derived RPE does not indicate a specific gene expression profile\n\n## Authors\n\n- Yoko Nakai-Futatsugi<sup>1</sup> ([ORCID: 0000-0003-4187-6060](https://orcid.org/0000-0003-4187-6060)) \u2020\n- Jianshi Jin<sup>4</sup>\n- Taisaku Ogawa<sup>4</sup>\n- Noriko Sakai<sup>1</sup>\n- Akiko Maeda<sup>1</sup>\n- Ken-ichi Hironaka<sup>6</sup>\n- Masakazu Fukuda<sup>6</sup>\n- Hiroki Danno<sup>6</sup>\n- Yuji Tanaka<sup>1</sup>\n- Seiji Hori<sup>2</sup> ([ORCID: 0009-0009-7282-4838](https://orcid.org/0009-0009-7282-4838))\n- Katsuyuki Shiroguchi<sup>4</sup>\n- Masayo Takahashi<sup>1</sup>\n\n### Affiliations\n\n1. Laboratory for Retinal Regeneration, RIKEN Biosystems Dynamics Research (BDR) Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))\n2. VC Cell Therapy Inc Kobe Japan\n3. Ritsumeikan University Shiga Japan ([ROR:0197nmd03](https://ror.org/0197nmd03))\n4. Laboratory for Prediction of Cell Systems Dynamics, RIKEN Center for Biosystems Dynamics Research (BDR) Suita Japan ([ROR:023rffy11](https://ror.org/023rffy11))\n5. Kobe City Eye Hospital, Department of Ophthalmology Kobe Japan\n6. Knowledge Palette, Inc Kawasaki Japan\n7. Vision Care, Inc Kobe Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nRetinal pigment epithelium (RPE) cells show heterogeneous levels of pigmentation when cultured in vitro. To know whether their color in appearance is correlated with the function of the RPE, we analyzed the color intensities of human-induced pluripotent stem cell-derived RPE cells (iPSC-RPE) together with the gene expression profile at the single-cell level. For this purpose, we utilized our recent invention, Automated Live imaging and cell Picking System (ALPS), which enabled photographing each cell before RNA-sequencing analysis to profile the gene expression of each cell. While our iPSC-RPE were categorized into four clusters by gene expression, the color intensity of iPSC-RPE did not project any specific gene expression profiles. We reasoned this by less correlation between the actual color and the gene expressions that directly define the level of pigmentation, from which we hypothesized the color of RPE cells may be a temporal condition not strongly indicating the functional characteristics of the RPE.\n\n## Introduction\n\nRPE is a layer of cells paved by hexagonal, brown-pigmented cells, which locates between the neural retina and the choroid. RPE cells play an important role in maintaining the visual system by supplying nutrition to the photoreceptors, phagocytosing mature outer segments of the photoreceptors, facilitating visual/retinoid cycle to produce a photosensitive derivative of vitamin A, absorbing stray light for the vision, and secreting vascular endothelial growth factor (VEGF) for the maintenance of choroid blood vessels (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022). Abnormalities in the RPE cause a wide variety of retinal degenerative diseases such as age-related macular degeneration (AMD) which is a devastating disease leading to blindness. Medication for AMD is limited, and there are increasing attention on cell transplantation of RPE for the treatment. RPE transplantation for AMD to replace degenerated RPE with fetal RPE was introduced almost three decades ago (Algvere et al., 1994). Later, transplantation of autologous peripheral RPE to the degenerated site has also been reported (Binder et al., 2002). Our laboratory has pioneered in the production of RPE cells from iPSC and ocular transplantation of iPSC-derived RPE cells (iPSC-RPE) to replace degenerated RPE of AMD patients (Mandai et al., 2017; Sugita et al., 2020). For quality management of iPSC-RPE transplants, we routinely verify the expressions of key factors such as RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6 and microphthalmia transcription factor (MiTF) by immunostaining; and pigment epithelium-derived factor glycoprotein (PEDF) and VEGF by enzyme-linked immunosorbent assay (ELISA). The morphology and pigmentation are also qualitatively checked, but there has been no means to link these appearances with gene expression.\n\nOur recent invention, ALPS, enables the characterization of a cell that is actually showing a behavior of interest (Jin et al., 2023). While monitoring the cells in live, ALPS enables to pick up one single-cell for further manipulation. In the present study, we utilized this system to monitor the color of iPSC-RPE cells, then to pick up one of the cells, followed by RNA-sequencing analysis to profile the gene expression of that single-cell. In this way, we concluded the color of iPSC-RPE cells did not project any specific gene expression profile. We reasoned this by analyzing the correlation between the color and the expression level of each gene. We found the genes that define pigmentation itself had less correlation with the color, suggesting the color in appearance is a temporal condition that does not directly represent the function of the RPE.\n\n## Results\n\n### ALPS enabled photographing each cell before RNA extraction\n\niPSC-RPE cells were produced from two human iPSC-lines of the Center for iPS Cell Research and Application (CiRA; iPSC-lines 201B7 and 253G1). The quality of the generated iPSC-RPE cells were verified by the expressions of RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6, MiTF, and Bestrophin by immunostaining; and PEDF and VEGF by ELISA. Hexagonal morphology and pigmentation were also confirmed qualitatively (Figure 1A). Normally the degree of pigmentation of RPE cells increases during the culture period, culminating when the cells become confluent, and returns less pigmented when they are replated at sparse density. It is also normal that even at the most confluent state, RPE cells show diverse degrees of pigmentation (Figure 1A). To characterize the cells with different degrees of pigmentation, 2304 cells of iPSC-RPE (96 cells each from two different dishes of 12 independent cultures of iPSC201B7-RPE and iPSC253G1-RPE cultured for 6 and 12 weeks; Figure 1\u2014source data 1) were photographed under a light microscope (Figure 1B photos) and picked as single-cells by ALPS. The intensities of red, green, and blue channels were measured for each cell (Figure 1B plots). Because of the strong correlation (r>0.99) between the three channels (Figure 1\u2014video 1), we used the intensity of the blue channel, or the average intensity of the three channels (so-called brightness), as a proxy for the color intensity of each cell.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig1-v1.jpg)\n\n**Figure 1.:** (A) Human-induced pluripotent stem cell-derived RPE cell (iPSC-RPE) in vitro shows a diverse degree of pigmentation among the cells. Scale bar = 20 \u03bcm. ( B) Each cell was photographed under a light microscope and picked by ALPS. The intensities of red, green, and blue were measured. As there was no difference among the three intensities, the intensity of blue wavelength was used to represent the color intensity of each cell (see also Figure 1\u2014video 1).\n\n### Dark or white iPSC-RPE cells did not form a specific cluster by single-cell transcriptome analysis\n\nThe iPSC-RPE cells photographed and picked by ALPS were then subjected to RNA extraction followed by single-cell RNA sequencing analysis. To compare the gene expression profiles of our iPSC-RPE lines with other commercially available RPE cells, human fetal primary RPE cells purchased from Lonza were photographed and picked by ALPS after cultured for 6 and 12 weeks as well (Figure 1\u2014source data 1). The t\u2010distributed stochastic neighbor embedding (t\u2010SNE) plot of the transcriptomes of iPSC-RPE cells, Lonza-RPE cells together with undifferentiated human iPSCs and human fibroblasts showed our iPSC-RPE and Lonza-RPE in different clusters (Figure 2A and B). Although the parameters for t\u2010SNE were adjusted to have all the iPSC-RPEs (iPSC201B7-RPE and iPSC253G1-RPE cultured for 6 and 12 weeks; Figure 1\u2014source data 1) mingle regardless of the original iPSC-line or the culture period (Figure 2A), our iPSC-RPE was divided in four sub-clusters (Figure 2B). The major 2 clusters (cluster-0 and \u20131) did not show critical differences in the expressions of key factors of the RPE (Figure 2\u2014figure supplement 1) or the gene-ontology terms (Figure 2\u2014figure supplement 2). Interestingly, cluster-8 consists of 32 cells showed the expression of proliferation marker MKI67 which was not expressed in other clusters besides cluster-4 that represented iPSC (Figure 2\u2014figure supplement 3). Unlike iPSCs in cluster-4, the iPSC-RPE cells of cluster-8 did not show the expression of an iPSC-marker LIN28A (Figure 2\u2014figure supplement 3) denying the possibility of cluster-8 being a residual of iPSCs after RPE differentiation. It could be possible that cluster-8 implies the existence of an adult stem cell population of the RPE.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig2-v1.jpg)\n\n**Figure 2.:** Two-dimension plotting of the gene expression profile of each cell colored by the cell types (A), clusters defined by gene expression profiles (B) or color intensities (C), and a violin plot quantitatively showing color intensities of the cells in each cluster (D). Human-induced pluripotent stem cell-derived RPE cells (iPSC-RPE) formed a different cluster from Lonza-retinal pigment epithelium (RPE). (B) iPSC-RPE cells were a heterogeneous population consisting of four sub-clusters. (C, D) Either very black or very white cells did not localize to a specific sub-cluster of iPSC-RPE.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig2-figsupp3-v1.jpg)\n\nWhen the t-SNE plot was displayed with the color intensity of each cell, either deeply or lightly pigmented cells did not localize to a particular cluster (Figure 2C). Violin plots quantifying color intensities of the cells in each cluster showed all clusters having both dark- and light-colored cells (Figure 2D). Interestingly, Lonza-RPE showed biased distribution of cell color among the three clusters (cluster-2,\u20133, and \u20137), having highly pigmented cells in cluster-2 and \u20133 but not in \u20137 (Figure 2C and D). These results indicated the degree of pigmentation of our iPSC-RPE did not associate with a specific gene expression profile defined by t-SNE.\n\n### There was no strong correlation between the color of iPSC-RPE and the gene expression\n\nAs no correlation between the color and gene expression profile was revealed in our iPSC-RPE by clustering analysis, next we sought the correlation of individual genes with the color of the cells. When each of the 280,47 genes was analyzed for the correlation coefficient between its expression level and the color intensity in each cell, even for the gene with the highest positive- or negative-correlation with the color, the coefficient was 0.565 and \u20130.445, respectively (Figure 3). The gene with the highest correlation was CST3 (correlation coefficient 0.565) that encodes cystatin C, a cysteine-proteinase inhibitor. As melanin, the material of the color, is cysteine-rich (D'Alba and D\u2019Alba and Shawkey, 2019), it is reasonable to have increased level of melanin under upregulated CST3 that inhibits cysteine-targeted degradation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig3-v1.jpg)\n\n**Figure 3.:** List of the genes with positive (A) and negative (B) correlations to color intensities of iPSC-RPE cells are shown. Even for the gene with the highest correlation to the color, the correlation value was 0.565. Notably, the melanin-synthesis enzymes TYRP1 and tyrosinase (TYR) both showed only weak correlations (correlation value = 0.458 and 0.434, respectively). Program source code to create these plots is available in Figure 3\u2014source code 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** When cultured in vitro, retinal pigment epitheliums (RPEs) become more pigmented at higher cell density, and return less pigmented when re-plated to lower cell density. The material of the color in RPE is melanin, which is synthesized by the enzymes such as TYRP1 and TYR, although the expressions of TYRP1 and TYR were not strongly correlated with the color of RPE (Figure 3A). The interpretation for this could be. (i) When RPEs contact each other, the nature as protective epithelial cell makes them to synthesize melanin, with upregulation of TYRP1 and TYR. (ii) With a sufficient amount of melanin, TYRP1 and TYP become downregulated. (iii) Melanin will be divided among the daughter cells or secreted, which makes the cells less pigmented. (iv) When the amount of melanin becomes lower, TYRP1 and TYR become upregulated again. This model interprets the colors of iPSC-RPE cells are representing not a stable characteristic but a temporal condition of each cell, which makes it reasonable for the iPSC-RPE cells not having a specific gene expression profile associated with the degree of pigmentation (as shown in Figure 2).\n\nIntriguingly, the expressions of the genes directly related to the production of melanin were not the highest for the correlation with the color. For example, correlation coefficients between the expressions of the enzymes for melanin-synthesis, TYR and TYRP1, and color intensities were 0.434 and 0.458, respectively (Figure 3A). In other words, the darkest cells were not necessarily expressing the highest level of TYR or TYRP1 mRNAs. This suggests the degree of pigmentation is dynamically regulated in each cell, and there is a time-lag between mRNA expression, production of the enzymes, and synthesis of melanin (descriptive image in Figure 3\u2014figure supplement 1).\n\n### Biological aspects that correlated with the pigmentation of iPSC-RPE\n\nHaving the results suggesting the color of iPSC-RPE may not be an indicator of the expression levels of RPE markers (Figure 2\u2014figure supplement 1), next, we sought then which biological aspects underlie the degree of pigmentation of iPSC-RPE cells. For this purpose, we re-analyzed the transcriptome of our iPSC-RPE cells shown in Figure 1A. First, we calculated the weighted sum of the RGB channels, the so-called brightness, and used it as a proxy for the pigmentation level. Then, by gene set enrichment analysis (GSEA) (Korotkevich et al., 2021), we identified 15 biological pathways enriched in darker cells regardless of cell lineage (Lonza-RPE, iPS201-RPE, and iPS253-RPE), which included pathways involved in important functions the RPE, such as lysosome- and complement-related pathways (Figure 4). Among lysosome-related genes, PASP and CTSD correlated with the color intensity of the cells at correlation coefficients 0.34 and 0.31, respectively (Figure 4\u2014figure supplement 1). Among complement-related genes, C1R, C1S, and C3 correlated with the color intensity of the cells at correlation coefficients 0.31, 0.31, and 0.27, respectively (Figure 4\u2014figure supplement 2). This correlation was partially consistent with the analysis of independent genes (Figure 3), which showed complement-related genes C1R, C1QTNF5, and C1S, and lysosome-related gene CTSD within the top 20 of the genes that had a positive correlation with color intensity (Figure 3A list on the right).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-v1.jpg)\n\n**Figure 4.:** GSEA revealed 15 pathways that had a high correlation with the intensities of the color of iPSC-RPE. Among them, there were lysosome-related and complement-related pathways.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-figsupp1-v1.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-figsupp2-v1.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-figsupp3-v1.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/92510/elife-92510-fig4-figsupp4-v1.jpg)\n\nGene set related to retinoid recycling, an important feature of the RPE to supply the photoreceptor with retinal, showed weak correlation with the color intensity of iPSC-RPE cells with correlation coefficients of genes such as RDH11, BCO1, RDH10, DHRS3, and RDH5 at 0.25, 0.20, 0.16, 0.12, and 0.11, respectively (Figure 4\u2014figure supplement 3). The gene set related to melanin synthesis, including the genes such as DCT, TYRP1, and TYR, showed less correlation with the color intensity of iPSC-RPE (Figure 4\u2014figure supplement 4), which was consistent with the analysis of TYRP1 and TYR shown in Figure 3.\n\n## Discussion\n\nIn this study, we showed the degree of pigmentation of in vitro cultured iPSC-RPE cells did not project specific gene ontological clusters, although it correlated to some extent with the expressions of functional genes of the RPE, such as complement- and lysosome-related genes. Eye, as well as brain and testis, is an immune privilege organ, where inflammation by the immune system is minimized (Zhou and Caspi, 2010; Chen et al., 2019; Mohan et al., 2022). To protect the photoreceptors from pathogens in this immune suppressive environment, RPE has an immune cell-like aspect with the capability of complement activation (Kunchithapautham et al., 2014; Chen et al., 2019; Jensen et al., 2020; Tan et al., 2020; Sch\u00e4fer et al., 2020) and phagocytosis (Boulton, 2014; Lehmann et al., 2014). Although it was weak, the correlation of complement- and lysosome-related genes to the color shown in the present study, suggests the darker RPE cells may be prone to facilitate these functions.\n\nBesides these immunogenic aspects, pigmentation also confers a protective function on RPE from different biological aspects. The material of the dark pigments, melanin, is conserved from bacteria to mammals, with diverse protective functions against damaging ultraviolet rays, free radicals, or toxins (D\u2019Alba and Shawkey, 2019). In most species, melanin pigments are confined in an intracellular organelle called melanosome. In the eye, melanosomes are located in RPE cells and choroidal melanocytes, where they shield the photoreceptor to reduce backscattered light and remove free radicals (Boulton, 2014; Lehmann et al., 2014; D\u2019Alba and Shawkey, 2019). Unlike skin melanin that is constantly synthesized in epidermal melanocytes, melanin in RPE cells decreases with age, making the retina vulnerable with less protection by the RPE. Several attempts were made to re-pigment RPE cells by supplying them with melanosomes isolated from ex vivo RPE cells (Boulton, 2014) or more recently with artificial melanin-like nanoparticles (Kwon et al., 2022). In accordance with decreased amount of melanin in adult RPE, primary cultured adult RPE cells are less pigmented (Boulton, 2014). On the other hand, primary culture of fetal-derived RPE cells, although less pigmented initially, becomes heavily pigmented when confluent monolayers are formed (Maminishkis et al., 2006), reflecting the nature of melanosomes produced during a limited time window of embryogenesis (Boulton, 2014). More importantly, human embryonic stem cell (ESC)- or iPSC-derived RPE cells exhibit pigmentation when they become confluent (Boulton, 2014; Kamao et al., 2014) suggesting these cells may retain or have been reprogrammed to gain the characteristics of fetal RPE cells. The Lonza-RPE cells (line #476621) used in this study were fetal-derived. Our iPSC-RPE formed different clusters from Lonza-RPE by single-cell transcriptome analysis, which was consistent with our previous study showing the gene expression pattern of our iPSC-RPE was slightly different from Lonza-RPE, although it was closer than human RPE cell-line ARPE19, (Kamao et al., 2014). Interestingly, the pigmentation level of Lonza-RPE cells correlated with their gene expression profile (Figure 2D), which may reflect the developmental process of RPE that gains protective function, including melanogenesis, during embryogenesis. From this aspect, ESC- or iPSC-derived RPE cells may be more plastic, retaining immature profiles although apparently being pigmented spontaneously. In fact, there are several lines of evidence implying in vitro pigmentation of stem cell-derived RPE cells may not necessarily reflect their levels of functional maturation. For example, bone marrow-derived RPE cells that are poorly pigmented in vitro become highly pigmented when transplanted (Sengupta et al., 2009), as well as our iPSC-RPE cells that are not pigmented when prepared but actually become heavily pigmented after engrafted (Mandai et al., 2017; Sugita et al., 2020), suggest the significance of environmental niche for melanogenesis. When stem cell-derived RPE cells are cultured in vitro, they are apparently not pigmented at sparse density, probably due to dilution amongst daughter cells (Boulton, 2014) or secretion of melanin by the fusion of melanosome membrane to the plasma membrane as proposed in melanocytes (Moreiras et al., 2021), but they become pigmented when they form a confluent monolayer, which is a reversible effect as the dynamics of pigmentation repeats when they are re-plated at a sparse density and become confluent again (Figure 3\u2014figure supplement 1). This again suggests the involvement of extracellular cues for pigmentation, besides the intrinsic characteristics of each RPE cell. Indeed, it has been shown that in vitro pigmentations of RPE cells are enhanced by extracellular matrix (Boulton, 2014) or even more intriguingly by phagocytosis of rod outer segments (Schraermeyer et al., 2006).\n\nWithout the exposure to pathogens or photoreceptor outer segments, in vitro pigmentation of iPSC-RPE cells could be somewhat a spontaneous but not a necessary sign to show they are prone to execute their protective function.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>Human iPSC 201B7 (HPS4290)</td>\n      <td>RIKEN BRC / National BioResource Project of the MEXT/AMED, Japan</td>\n      <td></td>\n      <td>doi:10.1038/nbt1374</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Human iPSC 253G1 (HPS0002)</td>\n      <td>RIKEN BRC / National BioResource Project of the MEXT/AMED, Japan</td>\n      <td></td>\n      <td>doi:10.1038/nbt1374</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Human embryonic RPE (line #476621)</td>\n      <td>Lonza</td>\n      <td>Lonza: #476621</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>Human dermal fibroblasts</td>\n      <td>doi: 10.1167/iovs.14-15619</td>\n      <td>TLHD1</td>\n      <td>obtained from a healthy male donor</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Bravo NGS workstation</td>\n      <td>Agilent Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat v4</td>\n      <td>doi:10.1038/nbt.3192; doi:10.1038/nbt.4096; doi:10.1016/j.cell.2019.05.031; doi:10.1016/j.cell.2021.04.048</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R v4.2.1</td>\n      <td>R Development Core Team, 2022</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>weighted sum of the background-corrected intensities</td>\n      <td>International Telecommunication Union, 2022</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gene Set Enrichment Analysis; GSEA-preranked</td>\n      <td>GenePattern.org</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nThe study was approved by the ethical committees of the Institute of Biomedical Research and Innovation Hospital and the RIKEN Center for Developmental Biology, Japan. Human iPSC-lines 201B7 (HPS4290) and 253G1 (HPS0002) (Nakagawa et al., 2008) were provided by the RIKEN BRC through the National BioResource Project of the MEXT/AMED, Japan. iPSCs were cultured and differentiated into RPE cells as described previously (Kamao et al., 2014). Briefly, to differentiate human iPSCs into RPE cells, human iPSCs were cultured on gelatin-coated dishes in differentiation medium (GMEM (Sigma-Aldrich, St. Louis, MO) supplemented with 1 mM sodium pyruvate, 0.1 mM non-essential amino acids (Sigma-Aldrich), and 0.1 mM 2-mercaptoethanol (Sigma-Aldrich)) with 20% KnockOut Serum Replacement (KSR; Invitrogen, Waltham, MA) for four days, 15% KSR for six days, and 10% KSR for 20 days. Y-27632 (10 \u03bcM; FUJIFILM Wako, Osaka, Japan), SB431542 (5 \u03bcM; Sigma-Aldrich), and CKI7 (3 \u03bcM; Sigma-Aldrich) were added for the initial 18 days. After the emergence of pigmented cells, the medium was switched to SFRM (DMEM/F12 [7:3] supplemented with B27 (Invitrogen), 2 mM L-glutamine).\n\nLonza-RPE cells (line #476621; Lonza, Basel, Switzerland) were maintained in SFRM as well.\n\nHuman dermal fibroblasts were obtained from a healthy donor and cultured as described previously (Sugita et al., 2015).\n\n### Cell preparation for ALPS\n\nCell concentrations was measured using Hemocytometer Standard Specification (Improved Neubauer) (HIRSCHMANN LAB, Baden-W\u00fcrttemberg, Germany). 3 ml of PBS (D-PBS(-) without Ca and Mg, #14249\u201395, Nacalai Tesque, Kyoto, Japan) containing 0.25\u20131.0\u00d7104 cells were added onto a dish (PrimeSurface Dish 35, #MS-9035X, Sumitomo Bakelite, Tokyo, Japan).\n\n### Imaging, isolation, and RNA-seq for single-cells\n\nLive cell imaging, cell picking, and single-cell digital RNA-seq (Shiroguchi et al., 2012; Ogawa et al., 2017) were performed as described previously (Jin et al., 2023) except for the following: In total, 4032 cells (Figure 1\u2014source data 1) were measured and analyzed. Cell images (400 pixels \u00d7330 pixels; 0.36 \u03bcm/pixel) were captured by both bright field and fluorescent channels (filter unit: mCherry C-FLL-C, Nikon Co., Tokyo, Japan) with 20X objective (N.A. 0.7) and a color camera (Color Camera Nikon DS-Ri2, Nikon Co.). Exposure times for bright field and fluorescence were 10 ms and 100 ms, respectively. For both channels, Z-stacks (21 planes) were recorded at 1 \u03bcm interval. Randomly selected cells were picked (\u2018random selection\u2019 of ALPS Jin et al., 2023). For the picked single cells, library preparation including cell lysis, RNA fragmentation, cDNA generation with molecular barcode attachment, amplification, and purification was performed using the Bravo NGS workstation (Agilent Technologies, Santa Clara, CA) and thermal cyclers (Mastercycler X50s; Eppendorf, Hamburg, Germany). The libraries were mixed using different indexes, and sequenced on HiSeq (150 cycle; Illumina, San Diego, CA) using custom primers. Detected number of RNA molecules for each gene in each cell was counted based on molecular barcodes.\n\nTo estimate the RGB values of the cells within the cell images, first, the average intensities (0\u2013255) per pixel for R, G, and B channels, respectively, of a circular area with a radius of 50 pixels at the position (195, 169 (coordinates in pixel)) of each cell image that covered the cell, and the area other than the circular area (background) were calculated. Then, for each image and each channel, the average intensity of the background was subtracted from the average intensity of the circular area. Finally, for each cell and each channel, the mean and standard deviation of the subtracted average circular area intensities of all 21 Z-stack images were obtained. The circular area images of iPSC-RPE cells are illustrated in Figure 1B.\n\n### Single-cell transcriptome analysis\n\nSingle-cell RNA-seq data were analyzed using Seurat v4 (Satija et al., 2015; Butler et al., 2018; Stuart et al., 2019; Hao et al., 2021) with R v4.2.1 (R Development Core Team, 2022). For cluster analyses in Figure 2, the following parameters were used:\n\n### Brightness calculation\n\nThe brightness value $Y$ for each cell was calculated by taking a weighted sum of the background-corrected intensities of the RGB channels (International Telecommunication Union, 2022):\n\n$$\nY=(0.299,0.587,0.114)\u22c5(R_{corr},G_{corr},B_{corr}),\n$$\n\nwhere the background-corrected intensities of the RGB channels were obtained by adding a virtual white background to delta intensities of RGB channels of each cell:\n\n$$\n(R_{corr},G_{corr},B_{corr})=(255,255,255)+(\u0394R,\u0394G,\u0394B).\n$$\n\nIf the corrected intensity exceeded 255, it was replaced by the maximum value below 255 (there was only one such case). The resultant cellular brightness $Y\\in0,255$ had a skewed distribution around the background brightness value, 255. Then, normalized brightness $Y_{norm}$ was obtained by logit transformation, so that its range takes the entire real number.\n\n$$\nY_{norm}=log\u2061(\\frac{Y}{255\u2212Y})\n$$\n\nThe normalized brightness $Y_{norm}\\in-\u221e,\u221e$ was approximately normally distributed.\n\n### Pathway enrichment analysis\n\nFor each of the three RPE cell lineage (Lonza-RPE, iPS201-RPE, and iPS253-RPE), we explored biological pathways correlated with pigmentation levels according to the following steps:\n\nFinally, for each of the brightness-correlated and -uncorrelated significant pathways, we extracted the intersection, i.e., pathways commonly enriched in all three cell lineages. Note that although we found 15 common brightness-correlated pathways among three cell lines, no brightness-uncorrelated pathways were detected in any of the three cell lines.\n",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ivan Velasco, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92510.3.sa0](https://doi.org/10.7554/eLife.92510.3.sa0)\n\nThis useful work describes a novel microscopy-based method to correlate the degree of pigmentation with the gene expression profile of human-induced pluripotent stem cell-derived Retinal Pigmented Epithelial (iPSC-RPE) cells at the single cell level. The presented evidence is solid in showing that there is heterogeneous gene expression in iPSC-derived RPE cells, and there is no significant correlation with the pigmentation. By analyzing the expression of some genes related to function, lysosomal- and complement-related pathways were partially enriched in darker cells. This methodology can be used by other researchers interested in analyzing gene expression related to microscopic images.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92510.3.sa1](https://doi.org/10.7554/eLife.92510.3.sa1)\n\nSummary:\n\nin this paper authors show that the degree of pigmentation for RPE cells is not correlated with a level of maturation and function. They suggest that this status could be different in vitro than in vivo but do not provide proper experiments to validate this hypothesis. However, it is the first time that the absence of correlation between pigmentation and function is studied.\n\nStrengths:\n\nThe methods are good and experiments very rigorous\n\nComments on current version:\n\nThe authors have modified their title and focus on QC for in vitro process\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92510.3.sa2](https://doi.org/10.7554/eLife.92510.3.sa2)\n\nSummary:\n\nNakai-Futatsugi et al. present a novel method to analyze the correlation between the degree of pigmentation and the gene expression profile of human-induced pluripotent stem cell-derived RPE (iPSC-RPE) cells at the single cell level. This was achieved with the use of ALPS (Automated Live imaging and cell Picking system), an invention developed by the same authors. Briefly, it allows one to choose and photograph a specific cell from a culture dish and proceed to single cell digital RNA-seq. The authors identify clusters of cells that present differential gene expression, but this showed no association with the degree of pigmentation of the cells. Further data analysis allowed the authors to correlate the degree of pigmentation to some degree with the expression of complement and lysosome-related genes.\n\nStrengths:\n\nAn important amount of data related to gene expression and heterogeneity of the iPSC-RPE population has been generated in this work.\n\nWeaknesses:\n\nHowever, the justification of the analysis, and the physiological relevance of the hypothesis and the findings could be strengthened.\n\nImportantly, I fail to grasp from the introduction what is the previous evidence that leads to the hypothesis. Why would color intensity be related to the quality of cell transplantation? In fact, cell transplantation is not evaluated at all in this work. The authors mention \"quality metrics for clinical use\", but this concept is not further explained. Neither is the concept of \"sufficient degree of pigmentation\" explained.\n\nOn the other hand, the positive correlation of cluster formation with complement and lysosome-related genes is not discussed.\n\nAs a consequence it is very difficult to evaluate the impact of these findings on the field.\n",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c95b122b-bec7-45a7-8838-0c2c21af592a",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C1",
+      "claim": "RPE is a layer of cells paved by hexagonal, brown-pigmented cells, which locates between the neural retina and the choroid.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE is a layer of cells paved by hexagonal, brown-pigmented cells, which locates between the neural retina and the choroid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established anatomical knowledge about RPE structure and location.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "112c2963-0efd-4843-9cad-822600d58f68",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C2",
+      "claim": "RPE cells play an important role in maintaining the visual system by supplying nutrition to the photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE cells play an important role in maintaining the visual system by supplying nutrition to the photoreceptors, phagocytosing mature outer segments of the photoreceptors, facilitating visual/retinoid cycle to produce a photosensitive derivative of vitamin A, absorbing stray light for the vision, and secreting vascular endothelial growth factor (VEGF) for the maintenance of choroid blood vessels (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "ce4617b0-818a-4001-ba6b-c18572e2c9ee",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C3",
+      "claim": "RPE cells phagocytose mature outer segments of the photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE cells play an important role in maintaining the visual system by supplying nutrition to the photoreceptors, phagocytosing mature outer segments of the photoreceptors, facilitating visual/retinoid cycle to produce a photosensitive derivative of vitamin A, absorbing stray light for the vision, and secreting vascular endothelial growth factor (VEGF) for the maintenance of choroid blood vessels (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "92067393-202e-4a3c-aeb7-57a25d069867",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C4",
+      "claim": "RPE cells facilitate visual/retinoid cycle to produce a photosensitive derivative of vitamin A.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE cells play an important role in maintaining the visual system by supplying nutrition to the photoreceptors, phagocytosing mature outer segments of the photoreceptors, facilitating visual/retinoid cycle to produce a photosensitive derivative of vitamin A, absorbing stray light for the vision, and secreting vascular endothelial growth factor (VEGF) for the maintenance of choroid blood vessels (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "7d2cc961-76cd-47e6-a787-323f353485da",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C5",
+      "claim": "RPE cells absorb stray light for vision.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE cells play an important role in maintaining the visual system by supplying nutrition to the photoreceptors, phagocytosing mature outer segments of the photoreceptors, facilitating visual/retinoid cycle to produce a photosensitive derivative of vitamin A, absorbing stray light for the vision, and secreting vascular endothelial growth factor (VEGF) for the maintenance of choroid blood vessels (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "d5c9d4e2-cc5e-4367-bb50-0036f31b5a85",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C6",
+      "claim": "RPE cells secrete vascular endothelial growth factor (VEGF) for the maintenance of choroid blood vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE cells play an important role in maintaining the visual system by supplying nutrition to the photoreceptors, phagocytosing mature outer segments of the photoreceptors, facilitating visual/retinoid cycle to produce a photosensitive derivative of vitamin A, absorbing stray light for the vision, and secreting vascular endothelial growth factor (VEGF) for the maintenance of choroid blood vessels (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research (Kim et al., 2013; Lehmann et al., 2014; Lin et al., 2022).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "5987f3b6-2c92-4467-863d-94c00d645a32",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C7",
+      "claim": "Abnormalities in the RPE cause a wide variety of retinal degenerative diseases such as age-related macular degeneration (AMD).",
+      "claim_type": "EXPLICIT",
+      "source": "Abnormalities in the RPE cause a wide variety of retinal degenerative diseases such as age-related macular degeneration (AMD) which is a devastating disease leading to blindness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of ophthalmology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "cdbe7d3e-cc41-47da-9dbc-8ff59f98cd2d",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C8",
+      "claim": "AMD is a devastating disease leading to blindness.",
+      "claim_type": "EXPLICIT",
+      "source": "Abnormalities in the RPE cause a wide variety of retinal degenerative diseases such as age-related macular degeneration (AMD) which is a devastating disease leading to blindness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of ophthalmology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e1f261ba-210a-4e30-b15c-a74760d4ab36",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C9",
+      "claim": "Medication for AMD is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Medication for AMD is limited, and there are increasing attention on cell transplantation of RPE for the treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of ophthalmology and reflects current clinical practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "dbd55c71-8948-4e58-9346-4b472c048d3a",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C10",
+      "claim": "There is increasing attention on cell transplantation of RPE for the treatment of AMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Medication for AMD is limited, and there are increasing attention on cell transplantation of RPE for the treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects current trends in AMD research and treatment approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "227a6589-cef3-470b-9621-1512912b7d7a",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C11",
+      "claim": "RPE transplantation for AMD to replace degenerated RPE with fetal RPE was introduced almost three decades ago.",
+      "claim_type": "EXPLICIT",
+      "source": "RPE transplantation for AMD to replace degenerated RPE with fetal RPE was introduced almost three decades ago (Algvere et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Algvere et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "44bf6b3f-e5cf-4169-b9d2-2536b566352c",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C12",
+      "claim": "Transplantation of autologous peripheral RPE to the degenerated site has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, transplantation of autologous peripheral RPE to the degenerated site has also been reported (Binder et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Binder et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "93c7af2f-dbee-4735-a228-a37c786c723b",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C13",
+      "claim": "The authors' laboratory has pioneered in the production of RPE cells from iPSC and ocular transplantation of iPSC-derived RPE cells (iPSC-RPE) to replace degenerated RPE of AMD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Our laboratory has pioneered in the production of RPE cells from iPSC and ocular transplantation of iPSC-derived RPE cells (iPSC-RPE) to replace degenerated RPE of AMD patients (Mandai et al., 2017; Sugita et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the authors' own work (Mandai et al., 2017; Sugita et al., 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "a850a5d3-de79-480f-a654-afc81aa36ab4",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C14",
+      "claim": "For quality management of iPSC-RPE transplants, the authors routinely verify the expressions of key factors such as RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "For quality management of iPSC-RPE transplants, we routinely verify the expressions of key factors such as RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6 and microphthalmia transcription factor (MiTF) by immunostaining; and pigment epithelium-derived factor glycoprotein (PEDF) and VEGF by enzyme-linked immunosorbent assay (ELISA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the authors' established quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "9fbd77d6-b964-442a-8d5c-daeca76750a6",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C15",
+      "claim": "For quality management of iPSC-RPE transplants, the authors routinely verify PAX6 and microphthalmia transcription factor (MiTF) by immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "For quality management of iPSC-RPE transplants, we routinely verify the expressions of key factors such as RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6 and microphthalmia transcription factor (MiTF) by immunostaining; and pigment epithelium-derived factor glycoprotein (PEDF) and VEGF by enzyme-linked immunosorbent assay (ELISA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the authors' established quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "f9293b5f-922d-4d8c-b6f6-8cd6bcf69408",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C16",
+      "claim": "For quality management of iPSC-RPE transplants, the authors routinely verify pigment epithelium-derived factor glycoprotein (PEDF) and VEGF by enzyme-linked immunosorbent assay (ELISA).",
+      "claim_type": "EXPLICIT",
+      "source": "For quality management of iPSC-RPE transplants, we routinely verify the expressions of key factors such as RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6 and microphthalmia transcription factor (MiTF) by immunostaining; and pigment epithelium-derived factor glycoprotein (PEDF) and VEGF by enzyme-linked immunosorbent assay (ELISA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the authors' established quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "1063e52f-a521-4528-b434-02dda82c2db1",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C17",
+      "claim": "The morphology and pigmentation of iPSC-RPE are qualitatively checked for quality management.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology and pigmentation are also qualitatively checked, but there has been no means to link these appearances with gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the authors' established quality control procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "63ee4757-e8d7-4261-805b-0c53c1ab54ac",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C18",
+      "claim": "There has been no means to link the morphology and pigmentation appearances of iPSC-RPE with gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology and pigmentation are also qualitatively checked, but there has been no means to link these appearances with gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation in the field that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "1f31ae87-980f-4814-a1ef-aef1e51a4682",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C19",
+      "claim": "ALPS enables the characterization of a cell that is actually showing a behavior of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent invention, ALPS, enables the characterization of a cell that is actually showing a behavior of interest (Jin et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Jin et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "49c52914-c048-4bc4-9308-2991ff486519",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C20",
+      "claim": "ALPS enables picking up one single-cell for further manipulation while monitoring the cells in live.",
+      "claim_type": "EXPLICIT",
+      "source": "While monitoring the cells in live, ALPS enables to pick up one single-cell for further manipulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical capability of ALPS as used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "6af6f5b9-7ecd-4f48-a338-ccdc95902187",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C21",
+      "claim": "The authors utilized ALPS to monitor the color of iPSC-RPE cells, then to pick up one of the cells, followed by RNA-sequencing analysis to profile the gene expression of that single-cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we utilized this system to monitor the color of iPSC-RPE cells, then to pick up one of the cells, followed by RNA-sequencing analysis to profile the gene expression of that single-cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "a4d6b7e5-955e-4bc2-8ebc-507e63731199",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C22",
+      "claim": "The color of iPSC-RPE cells did not project any specific gene expression profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, we concluded the color of iPSC-RPE cells did not project any specific gene expression profile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "a1e60ec0-0ad4-418a-b45f-9d880f6298be",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C23",
+      "claim": "The genes that define pigmentation itself had less correlation with the color of iPSC-RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the genes that define pigmentation itself had less correlation with the color, suggesting the color in appearance is a temporal condition that does not directly represent the function of the RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "35495e4c-a62d-4d78-a6c1-8d7b477909b2",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C24",
+      "claim": "The color in appearance of iPSC-RPE is a temporal condition that does not directly represent the function of the RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the genes that define pigmentation itself had less correlation with the color, suggesting the color in appearance is a temporal condition that does not directly represent the function of the RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation/conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "1b0fc062-a940-4aa8-927a-6958510e38ba",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C25",
+      "claim": "iPSC-RPE cells were produced from two human iPSC-lines of the Center for iPS Cell Research and Application (CiRA; iPSC-lines 201B7 and 253G1).",
+      "claim_type": "EXPLICIT",
+      "source": "iPSC-RPE cells were produced from two human iPSC-lines of the Center for iPS Cell Research and Application (CiRA; iPSC-lines 201B7 and 253G1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the materials used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "285c0c43-6ab7-491d-8ff3-33e29e30a974",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C26",
+      "claim": "The quality of the generated iPSC-RPE cells were verified by the expressions of RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the generated iPSC-RPE cells were verified by the expressions of RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6, MiTF, and Bestrophin by immunostaining; and PEDF and VEGF by ELISA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "078b9305-437d-4f0f-b037-f2f1948d5947",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C27",
+      "claim": "The quality of the generated iPSC-RPE cells were verified by PAX6, MiTF, and Bestrophin by immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the generated iPSC-RPE cells were verified by the expressions of RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6, MiTF, and Bestrophin by immunostaining; and PEDF and VEGF by ELISA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "6fe2eb75-f355-49b8-a1a7-42a0f54892c8",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C28",
+      "claim": "The quality of the generated iPSC-RPE cells were verified by PEDF and VEGF by ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the generated iPSC-RPE cells were verified by the expressions of RPE65, Bestrophin, CRALBP, and MERTK by quantitative PCR; PAX6, MiTF, and Bestrophin by immunostaining; and PEDF and VEGF by ELISA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality control methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "b6640a72-982d-4b94-8039-c9822b03e46e",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C29",
+      "claim": "Hexagonal morphology and pigmentation of iPSC-RPE were confirmed qualitatively.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexagonal morphology and pigmentation were also confirmed qualitatively (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by both text and Figure 1A showing the morphology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "9c613081-2413-488c-93e9-56bc55858107",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C30",
+      "claim": "The degree of pigmentation of RPE cells increases during the culture period, culminating when the cells become confluent.",
+      "claim_type": "EXPLICIT",
+      "source": "Normally the degree of pigmentation of RPE cells increases during the culture period, culminating when the cells become confluent, and returns less pigmented when they are replated at sparse density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes observed behavior of RPE cells in culture.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "47bdb3fc-4363-4083-a8c9-a540b991ccb6",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C31",
+      "claim": "The degree of pigmentation of RPE cells returns less pigmented when they are replated at sparse density.",
+      "claim_type": "EXPLICIT",
+      "source": "Normally the degree of pigmentation of RPE cells increases during the culture period, culminating when the cells become confluent, and returns less pigmented when they are replated at sparse density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes observed behavior of RPE cells in culture.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "67515504-5aa7-4102-942a-bf366b39f2e0",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C32",
+      "claim": "Even at the most confluent state, RPE cells show diverse degrees of pigmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also normal that even at the most confluent state, RPE cells show diverse degrees of pigmentation (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by both text and Figure 1A showing the heterogeneity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "64d48458-5786-4745-82c3-78f606fc1fb3",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C33",
+      "claim": "2304 cells of iPSC-RPE were photographed under a light microscope and picked as single-cells by ALPS.",
+      "claim_type": "EXPLICIT",
+      "source": "To characterize the cells with different degrees of pigmentation, 2304 cells of iPSC-RPE (96 cells each from two different dishes of 12 independent cultures of iPSC201B7-RPE and iPSC253G1-RPE cultured for 6 and 12 weeks; Figure 1\u2014source data 1) were photographed under a light microscope (Figure 1B photos) and picked as single-cells by ALPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "217eea9e-9bba-4da1-8b54-4826290c6836",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C34",
+      "claim": "The intensities of red, green, and blue channels were measured for each iPSC-RPE cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The intensities of red, green, and blue channels were measured for each cell (Figure 1B plots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the measurement procedure, with data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "cfd64d41-bd7b-4729-a56a-ad72abdb1757",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C35",
+      "claim": "There is strong correlation (r>0.99) between the red, green, and blue channels in iPSC-RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the strong correlation (r>0.99) between the three channels (Figure 1\u2014video 1), we used the intensity of the blue channel, or the average intensity of the three channels (so-called brightness), as a proxy for the color intensity of each cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the data analysis, shown in Figure 1\u2014video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "18e8d572-2e11-4a38-ba95-2c53c11f06ed",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C36",
+      "claim": "The intensity of the blue channel was used as a proxy for the color intensity of each iPSC-RPE cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the strong correlation (r>0.99) between the three channels (Figure 1\u2014video 1), we used the intensity of the blue channel, or the average intensity of the three channels (so-called brightness), as a proxy for the color intensity of each cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "fbe29c0e-d85a-4824-91a3-14bd2c1e8057",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C37",
+      "claim": "The iPSC-RPE cells photographed and picked by ALPS were subjected to RNA extraction followed by single-cell RNA sequencing analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The iPSC-RPE cells photographed and picked by ALPS were then subjected to RNA extraction followed by single-cell RNA sequencing analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "5ed7644d-8c24-453a-bd9f-61ee6c0a3ff0",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C38",
+      "claim": "Human fetal primary RPE cells purchased from Lonza were photographed and picked by ALPS after cultured for 6 and 12 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare the gene expression profiles of our iPSC-RPE lines with other commercially available RPE cells, human fetal primary RPE cells purchased from Lonza were photographed and picked by ALPS after cultured for 6 and 12 weeks as well (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure for comparison samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "3264b831-25c1-4e64-9f80-d54ff335e786",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C39",
+      "claim": "The t\u2010SNE plot of the transcriptomes showed iPSC-RPE and Lonza-RPE in different clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The t\u2010distributed stochastic neighbor embedding (t\u2010SNE) plot of the transcriptomes of iPSC-RPE cells, Lonza-RPE cells together with undifferentiated human iPSCs and human fibroblasts showed our iPSC-RPE and Lonza-RPE in different clusters (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "2029c57e-a6fc-4e88-b45f-cc3b206f6524",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C40",
+      "claim": "iPSC-RPE was divided in four sub-clusters by gene expression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the parameters for t\u2010SNE were adjusted to have all the iPSC-RPEs (iPSC201B7-RPE and iPSC253G1-RPE cultured for 6 and 12 weeks; Figure 1\u2014source data 1) mingle regardless of the original iPSC-line or the culture period (Figure 2A), our iPSC-RPE was divided in four sub-clusters (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "eff63d96-c7c6-4591-9996-2e626f422515",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C41",
+      "claim": "The major 2 clusters (cluster-0 and \u20131) of iPSC-RPE did not show critical differences in the expressions of key factors of the RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "The major 2 clusters (cluster-0 and \u20131) did not show critical differences in the expressions of key factors of the RPE (Figure 2\u2014figure supplement 1) or the gene-ontology terms (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "4e5a0d2e-0909-41fa-a919-d2c4766bcca4",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C42",
+      "claim": "The major 2 clusters (cluster-0 and \u20131) of iPSC-RPE did not show critical differences in the gene-ontology terms.",
+      "claim_type": "EXPLICIT",
+      "source": "The major 2 clusters (cluster-0 and \u20131) did not show critical differences in the expressions of key factors of the RPE (Figure 2\u2014figure supplement 1) or the gene-ontology terms (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "64c5283e-d0d8-4d06-b9f3-70635eb94c72",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C43",
+      "claim": "Cluster-8 consists of 32 cells that showed the expression of proliferation marker MKI67.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cluster-8 consists of 32 cells showed the expression of proliferation marker MKI67 which was not expressed in other clusters besides cluster-4 that represented iPSC (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "c964a4cb-7df2-4367-a2b4-0f8ca5b4f869",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C44",
+      "claim": "MKI67 was not expressed in iPSC-RPE clusters other than cluster-8 and cluster-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cluster-8 consists of 32 cells showed the expression of proliferation marker MKI67 which was not expressed in other clusters besides cluster-4 that represented iPSC (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "cbe8ca3f-fe7f-4ccd-84d4-25af55739d17",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C45",
+      "claim": "The iPSC-RPE cells of cluster-8 did not show the expression of an iPSC-marker LIN28A.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike iPSCs in cluster-4, the iPSC-RPE cells of cluster-8 did not show the expression of an iPSC-marker LIN28A (Figure 2\u2014figure supplement 3) denying the possibility of cluster-8 being a residual of iPSCs after RPE differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e025c3f4-c0c2-4a3e-8cf3-6116b1338b92",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C46",
+      "claim": "Cluster-8 is not a residual of iPSCs after RPE differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike iPSCs in cluster-4, the iPSC-RPE cells of cluster-8 did not show the expression of an iPSC-marker LIN28A (Figure 2\u2014figure supplement 3) denying the possibility of cluster-8 being a residual of iPSCs after RPE differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the lack of LIN28A expression in cluster-8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "65dea1f9-1d48-469e-a8f6-fa6ff8c0fb57",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C47",
+      "claim": "Cluster-8 may imply the existence of an adult stem cell population of the RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be possible that cluster-8 implies the existence of an adult stem cell population of the RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the cluster-8 data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "5bd4532d-369b-4f25-af01-3d6ca2c8591e",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C48",
+      "claim": "Either very black or very white iPSC-RPE cells did not localize to a specific sub-cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "When the t-SNE plot was displayed with the color intensity of each cell, either deeply or lightly pigmented cells did not localize to a particular cluster (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "3f083ac6-325e-4674-bbc9-e35121b8984b",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C49",
+      "claim": "All iPSC-RPE clusters had both dark- and light-colored cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Violin plots quantifying color intensities of the cells in each cluster showed all clusters having both dark- and light-colored cells (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "0d18375c-9f99-4735-8100-d546a66997fe",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C50",
+      "claim": "Lonza-RPE showed biased distribution of cell color among the three clusters (cluster-2,\u20133, and \u20137), having highly pigmented cells in cluster-2 and \u20133 but not in \u20137.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Lonza-RPE showed biased distribution of cell color among the three clusters (cluster-2,\u20133, and \u20137), having highly pigmented cells in cluster-2 and \u20133 but not in \u20137 (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "a8ffa4aa-0363-4ca3-ac26-d1063695f307",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C51",
+      "claim": "The degree of pigmentation of iPSC-RPE did not associate with a specific gene expression profile defined by t-SNE.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated the degree of pigmentation of our iPSC-RPE did not associate with a specific gene expression profile defined by t-SNE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the clustering analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "059defe4-764b-4293-8e9e-03f6a7501697",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C52",
+      "claim": "The gene with the highest positive correlation with the color of iPSC-RPE had a correlation coefficient of 0.565.",
+      "claim_type": "EXPLICIT",
+      "source": "When each of the 280,47 genes was analyzed for the correlation coefficient between its expression level and the color intensity in each cell, even for the gene with the highest positive- or negative-correlation with the color, the coefficient was 0.565 and \u20130.445, respectively (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "27a15893-f766-47af-b27a-ef619a318cd5",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C53",
+      "claim": "The gene with the highest negative correlation with the color of iPSC-RPE had a correlation coefficient of \u20130.445.",
+      "claim_type": "EXPLICIT",
+      "source": "When each of the 280,47 genes was analyzed for the correlation coefficient between its expression level and the color intensity in each cell, even for the gene with the highest positive- or negative-correlation with the color, the coefficient was 0.565 and \u20130.445, respectively (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "bf2cdd10-3e04-4114-b594-d711e2d6f4bc",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C54",
+      "claim": "The gene with the highest correlation to color was CST3 with a correlation coefficient of 0.565.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene with the highest correlation was CST3 (correlation coefficient 0.565) that encodes cystatin C, a cysteine-proteinase inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "a0aa6dad-830e-4d9c-850b-090249ff4b42",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C55",
+      "claim": "CST3 encodes cystatin C, a cysteine-proteinase inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene with the highest correlation was CST3 (correlation coefficient 0.565) that encodes cystatin C, a cysteine-proteinase inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the CST3 gene.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e29b6a97-6701-4ac3-8688-25e1721bf6fe",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C56",
+      "claim": "Melanin is cysteine-rich.",
+      "claim_type": "EXPLICIT",
+      "source": "As melanin, the material of the color, is cysteine-rich (D'Alba and D'Alba and Shawkey, 2019), it is reasonable to have increased level of melanin under upregulated CST3 that inhibits cysteine-targeted degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to D'Alba and Shawkey, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "89d59097-b9f8-4fa8-8cd5-638d76995caf",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C57",
+      "claim": "It is reasonable to have increased level of melanin under upregulated CST3 that inhibits cysteine-targeted degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "As melanin, the material of the color, is cysteine-rich (D'Alba and D'Alba and Shawkey, 2019), it is reasonable to have increased level of melanin under upregulated CST3 that inhibits cysteine-targeted degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biochemical properties of melanin and CST3 function.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "fe6be473-3807-4de0-a224-ef6a552b4afc",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C58",
+      "claim": "The correlation coefficient between TYRP1 expression and color intensity was 0.458.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the expressions of the genes directly related to the production of melanin were not the highest for the correlation with the color. For example, correlation coefficients between the expressions of the enzymes for melanin-synthesis, TYR and TYRP1, and color intensities were 0.434 and 0.458, respectively (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "03ca0b7e-ce98-4401-9aac-809b543383b0",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C59",
+      "claim": "The correlation coefficient between TYR expression and color intensity was 0.434.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the expressions of the genes directly related to the production of melanin were not the highest for the correlation with the color. For example, correlation coefficients between the expressions of the enzymes for melanin-synthesis, TYR and TYRP1, and color intensities were 0.434 and 0.458, respectively (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "c83497cd-860d-482e-8e0e-1a957cd3b2f5",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C60",
+      "claim": "The darkest iPSC-RPE cells were not necessarily expressing the highest level of TYR or TYRP1 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the darkest cells were not necessarily expressing the highest level of TYR or TYRP1 mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "afaff9a5-c53b-4920-8920-51ca30698d65",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C61",
+      "claim": "The degree of pigmentation is dynamically regulated in each iPSC-RPE cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the degree of pigmentation is dynamically regulated in each cell, and there is a time-lag between mRNA expression, production of the enzymes, and synthesis of melanin (descriptive image in Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the weak correlation between melanin synthesis genes and color.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "7fbc9239-b21e-4015-bace-87d10b2bf641",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C62",
+      "claim": "There is a time-lag between mRNA expression, production of the enzymes, and synthesis of melanin in iPSC-RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests the degree of pigmentation is dynamically regulated in each cell, and there is a time-lag between mRNA expression, production of the enzymes, and synthesis of melanin (descriptive image in Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the weak correlation between melanin synthesis genes and color.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "9ce8233b-c05a-4b79-920f-9bc30875c191",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C63",
+      "claim": "GSEA identified 15 biological pathways enriched in darker iPSC-RPE cells regardless of cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, by gene set enrichment analysis (GSEA) (Korotkevich et al., 2021), we identified 15 biological pathways enriched in darker cells regardless of cell lineage (Lonza-RPE, iPS201-RPE, and iPS253-RPE), which included pathways involved in important functions the RPE, such as lysosome- and complement-related pathways (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the GSEA analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "4a0af580-e4e6-4096-af06-fff21f6631eb",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C64",
+      "claim": "Lysosome-related pathways were enriched in darker iPSC-RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, by gene set enrichment analysis (GSEA) (Korotkevich et al., 2021), we identified 15 biological pathways enriched in darker cells regardless of cell lineage (Lonza-RPE, iPS201-RPE, and iPS253-RPE), which included pathways involved in important functions the RPE, such as lysosome- and complement-related pathways (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the GSEA analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "7097ab02-201a-470e-b993-b2d984618c25",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C65",
+      "claim": "Complement-related pathways were enriched in darker iPSC-RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, by gene set enrichment analysis (GSEA) (Korotkevich et al., 2021), we identified 15 biological pathways enriched in darker cells regardless of cell lineage (Lonza-RPE, iPS201-RPE, and iPS253-RPE), which included pathways involved in important functions the RPE, such as lysosome- and complement-related pathways (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the GSEA analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "da9b2d3f-23a7-41ad-a1e6-ba9a69ef842b",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C66",
+      "claim": "Among lysosome-related genes, PASP correlated with the color intensity of iPSC-RPE cells at correlation coefficient 0.34.",
+      "claim_type": "EXPLICIT",
+      "source": "Among lysosome-related genes, PASP and CTSD correlated with the color intensity of the cells at correlation coefficients 0.34 and 0.31, respectively (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "569a964b-b907-49cc-a79f-75027811f4c3",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C67",
+      "claim": "Among lysosome-related genes, CTSD correlated with the color intensity of iPSC-RPE cells at correlation coefficient 0.31.",
+      "claim_type": "EXPLICIT",
+      "source": "Among lysosome-related genes, PASP and CTSD correlated with the color intensity of the cells at correlation coefficients 0.34 and 0.31, respectively (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "293d7e47-5c9b-4376-a5e7-6ab59d909a93",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C68",
+      "claim": "Among complement-related genes, C1R correlated with the color intensity of iPSC-RPE cells at correlation coefficient 0.31.",
+      "claim_type": "EXPLICIT",
+      "source": "Among complement-related genes, C1R, C1S, and C3 correlated with the color intensity of the cells at correlation coefficients 0.31, 0.31, and 0.27, respectively (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "42a6f387-e49b-4afe-aa95-4b5fe17472a1",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C69",
+      "claim": "Among complement-related genes, C1S correlated with the color intensity of iPSC-RPE cells at correlation coefficient 0.31.",
+      "claim_type": "EXPLICIT",
+      "source": "Among complement-related genes, C1R, C1S, and C3 correlated with the color intensity of the cells at correlation coefficients 0.31, 0.31, and 0.27, respectively (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "34f62ac1-8eca-4e95-b9de-dca4878fcfa9",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C70",
+      "claim": "Among complement-related genes, C3 correlated with the color intensity of iPSC-RPE cells at correlation coefficient 0.27.",
+      "claim_type": "EXPLICIT",
+      "source": "Among complement-related genes, C1R, C1S, and C3 correlated with the color intensity of the cells at correlation coefficients 0.31, 0.31, and 0.27, respectively (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "95ad56ae-8901-4f5d-bff5-8f70f9cb70bc",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C71",
+      "claim": "The correlation between complement-related genes and color was partially consistent with the analysis of independent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation was partially consistent with the analysis of independent genes (Figure 3), which showed complement-related genes C1R, C1QTNF5, and C1S, and lysosome-related gene CTSD within the top 20 of the genes that had a positive correlation with color intensity (Figure 3A list on the right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between two different analyses showing consistency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "6255f57d-17fb-42dc-ab5c-d95d45d455c6",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C72",
+      "claim": "Gene set related to retinoid recycling showed weak correlation with the color intensity of iPSC-RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene set related to retinoid recycling, an important feature of the RPE to supply the photoreceptor with retinal, showed weak correlation with the color intensity of iPSC-RPE cells with correlation coefficients of genes such as RDH11, BCO1, RDH10, DHRS3, and RDH5 at 0.25, 0.20, 0.16, 0.12, and 0.11, respectively (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the correlation analysis shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "f95b7ec4-df4d-4e42-9e4d-f43b812d5d27",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C73",
+      "claim": "The gene set related to melanin synthesis showed less correlation with the color intensity of iPSC-RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "The gene set related to melanin synthesis, including the genes such as DCT, TYRP1, and TYR, showed less correlation with the color intensity of iPSC-RPE (Figure 4\u2014figure supplement 4), which was consistent with the analysis of TYRP1 and TYR shown in Figure 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the correlation analysis shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "ed2473f4-657a-416c-86a0-ea78d5d82bb1",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C74",
+      "claim": "The degree of pigmentation of in vitro cultured iPSC-RPE cells did not project specific gene ontological clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we showed the degree of pigmentation of in vitro cultured iPSC-RPE cells did not project specific gene ontological clusters, although it correlated to some extent with the expressions of functional genes of the RPE, such as complement- and lysosome-related genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "58a07d35-bc48-46a1-acdc-716f0f074480",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C75",
+      "claim": "The degree of pigmentation of iPSC-RPE cells correlated to some extent with the expressions of functional genes of the RPE, such as complement- and lysosome-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we showed the degree of pigmentation of in vitro cultured iPSC-RPE cells did not project specific gene ontological clusters, although it correlated to some extent with the expressions of functional genes of the RPE, such as complement- and lysosome-related genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "47ab3d54-eade-4f41-b62c-0b36f1d81bc2",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C76",
+      "claim": "Eye is an immune privilege organ, where inflammation by the immune system is minimized.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye, as well as brain and testis, is an immune privilege organ, where inflammation by the immune system is minimized (Zhou and Caspi, 2010; Chen et al., 2019; Mohan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhou and Caspi, 2010; Chen et al., 2019; Mohan et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "09dc29b9-991a-4ae1-a632-2dae76652113",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C77",
+      "claim": "Brain is an immune privilege organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye, as well as brain and testis, is an immune privilege organ, where inflammation by the immune system is minimized (Zhou and Caspi, 2010; Chen et al., 2019; Mohan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhou and Caspi, 2010; Chen et al., 2019; Mohan et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "24a95dde-a4d2-44e6-b6c3-063c923ed7b0",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C78",
+      "claim": "Testis is an immune privilege organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye, as well as brain and testis, is an immune privilege organ, where inflammation by the immune system is minimized (Zhou and Caspi, 2010; Chen et al., 2019; Mohan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhou and Caspi, 2010; Chen et al., 2019; Mohan et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "2f7a979a-af02-4807-958e-4e443416c2f6",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C79",
+      "claim": "RPE has an immune cell-like aspect with the capability of complement activation.",
+      "claim_type": "EXPLICIT",
+      "source": "To protect the photoreceptors from pathogens in this immune suppressive environment, RPE has an immune cell-like aspect with the capability of complement activation (Kunchithapautham et al., 2014; Chen et al., 2019; Jensen et al., 2020; Tan et al., 2020; Sch\u00e4fer et al., 2020) and phagocytosis (Boulton, 2014; Lehmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kunchithapautham et al., 2014; Chen et al., 2019; Jensen et al., 2020; Tan et al., 2020; Sch\u00e4fer et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "d1ffbe07-350c-4152-9baf-e393a3d11302",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C80",
+      "claim": "RPE has an immune cell-like aspect with the capability of phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "To protect the photoreceptors from pathogens in this immune suppressive environment, RPE has an immune cell-like aspect with the capability of complement activation (Kunchithapautham et al., 2014; Chen et al., 2019; Jensen et al., 2020; Tan et al., 2020; Sch\u00e4fer et al., 2020) and phagocytosis (Boulton, 2014; Lehmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boulton, 2014; Lehmann et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "f867f40f-65c9-4d3c-988f-3cba0db157e0",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C81",
+      "claim": "The correlation of complement- and lysosome-related genes to the color of iPSC-RPE suggests the darker RPE cells may be prone to facilitate these functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was weak, the correlation of complement- and lysosome-related genes to the color shown in the present study, suggests the darker RPE cells may be prone to facilitate these functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "3b0afbda-4b2f-4aeb-a18a-886f79babd15",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C82",
+      "claim": "Melanin is conserved from bacteria to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The material of the dark pigments, melanin, is conserved from bacteria to mammals, with diverse protective functions against damaging ultraviolet rays, free radicals, or toxins (D'Alba and Shawkey, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to D'Alba and Shawkey, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "9dad7fa2-290a-4e65-825f-fbbb807f3ca3",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C83",
+      "claim": "Melanin has diverse protective functions against damaging ultraviolet rays, free radicals, or toxins.",
+      "claim_type": "EXPLICIT",
+      "source": "The material of the dark pigments, melanin, is conserved from bacteria to mammals, with diverse protective functions against damaging ultraviolet rays, free radicals, or toxins (D'Alba and Shawkey, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to D'Alba and Shawkey, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e46dc30c-de06-4871-9f90-50d8821a4089",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C84",
+      "claim": "In most species, melanin pigments are confined in an intracellular organelle called melanosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In most species, melanin pigments are confined in an intracellular organelle called melanosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about melanin biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "28eb08ba-9304-4847-9306-38bbf06f4d51",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C85",
+      "claim": "In the eye, melanosomes are located in RPE cells and choroidal melanocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the eye, melanosomes are located in RPE cells and choroidal melanocytes, where they shield the photoreceptor to reduce backscattered light and remove free radicals (Boulton, 2014; Lehmann et al., 2014; D'Alba and Shawkey, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boulton, 2014; Lehmann et al., 2014; D'Alba and Shawkey, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "40dbb631-25b2-4c08-878a-c8108c47fb53",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C86",
+      "claim": "Melanosomes in the eye shield the photoreceptor to reduce backscattered light.",
+      "claim_type": "EXPLICIT",
+      "source": "In the eye, melanosomes are located in RPE cells and choroidal melanocytes, where they shield the photoreceptor to reduce backscattered light and remove free radicals (Boulton, 2014; Lehmann et al., 2014; D'Alba and Shawkey, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boulton, 2014; Lehmann et al., 2014; D'Alba and Shawkey, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e9d4b539-a6fd-4127-a983-7cddf33e71e2",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C87",
+      "claim": "Melanosomes in the eye remove free radicals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the eye, melanosomes are located in RPE cells and choroidal melanocytes, where they shield the photoreceptor to reduce backscattered light and remove free radicals (Boulton, 2014; Lehmann et al., 2014; D'Alba and Shawkey, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boulton, 2014; Lehmann et al., 2014; D'Alba and Shawkey, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "b813af19-f4a9-4f46-a5d3-372fd3da3217",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C88",
+      "claim": "Melanin in RPE cells decreases with age.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike skin melanin that is constantly synthesized in epidermal melanocytes, melanin in RPE cells decreases with age, making the retina vulnerable with less protection by the RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about age-related changes in RPE.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "0666b9bc-8621-4d55-be5f-2e2eee578d0b",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C89",
+      "claim": "Decreased melanin in RPE cells with age makes the retina vulnerable with less protection by the RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike skin melanin that is constantly synthesized in epidermal melanocytes, melanin in RPE cells decreases with age, making the retina vulnerable with less protection by the RPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the protective role of melanin.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "f4d231ac-864f-4761-97b6-6f2fcf1c5587",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C90",
+      "claim": "Several attempts were made to re-pigment RPE cells by supplying them with melanosomes isolated from ex vivo RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Several attempts were made to re-pigment RPE cells by supplying them with melanosomes isolated from ex vivo RPE cells (Boulton, 2014) or more recently with artificial melanin-like nanoparticles (Kwon et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Boulton, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "6a9ec004-3bd9-4d18-8b7d-bb52b1ecc410",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C91",
+      "claim": "Attempts were made to re-pigment RPE cells with artificial melanin-like nanoparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "Several attempts were made to re-pigment RPE cells by supplying them with melanosomes isolated from ex vivo RPE cells (Boulton, 2014) or more recently with artificial melanin-like nanoparticles (Kwon et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kwon et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "7edd9172-2ec1-4102-bd84-60e08ae1d4e8",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C92",
+      "claim": "Primary cultured adult RPE cells are less pigmented.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with decreased amount of melanin in adult RPE, primary cultured adult RPE cells are less pigmented (Boulton, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Boulton, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "b35e1864-2da2-4182-bf89-999b18721c7d",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C93",
+      "claim": "Primary culture of fetal-derived RPE cells becomes heavily pigmented when confluent monolayers are formed.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, primary culture of fetal-derived RPE cells, although less pigmented initially, becomes heavily pigmented when confluent monolayers are formed (Maminishkis et al., 2006), reflecting the nature of melanosomes produced during a limited time window of embryogenesis (Boulton, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Maminishkis et al., 2006 and Boulton, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "40cfa864-18a0-4f0b-9df3-ad4dec6bb4d7",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C94",
+      "claim": "Melanosomes are produced during a limited time window of embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, primary culture of fetal-derived RPE cells, although less pigmented initially, becomes heavily pigmented when confluent monolayers are formed (Maminishkis et al., 2006), reflecting the nature of melanosomes produced during a limited time window of embryogenesis (Boulton, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Boulton, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "78cb5674-b495-458b-8192-771dd28dde99",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C95",
+      "claim": "Human embryonic stem cell (ESC)- or iPSC-derived RPE cells exhibit pigmentation when they become confluent.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, human embryonic stem cell (ESC)- or iPSC-derived RPE cells exhibit pigmentation when they become confluent (Boulton, 2014; Kamao et al., 2014) suggesting these cells may retain or have been reprogrammed to gain the characteristics of fetal RPE cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boulton, 2014 and Kamao et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "094afc18-28d3-4718-b21b-f3d6e62f2a9c",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C96",
+      "claim": "ESC- or iPSC-derived RPE cells may retain or have been reprogrammed to gain the characteristics of fetal RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, human embryonic stem cell (ESC)- or iPSC-derived RPE cells exhibit pigmentation when they become confluent (Boulton, 2014; Kamao et al., 2014) suggesting these cells may retain or have been reprogrammed to gain the characteristics of fetal RPE cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the pigmentation behavior.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "c405c800-b704-41f8-9bc0-f1a6252d79d2",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C97",
+      "claim": "The Lonza-RPE cells (line #476621) used in this study were fetal-derived.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lonza-RPE cells (line #476621) used in this study were fetal-derived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the Lonza-RPE cells used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "4af7fd35-585f-4816-952e-08cfea48b9b2",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C98",
+      "claim": "The authors' iPSC-RPE formed different clusters from Lonza-RPE by single-cell transcriptome analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our iPSC-RPE formed different clusters from Lonza-RPE by single-cell transcriptome analysis, which was consistent with our previous study showing the gene expression pattern of our iPSC-RPE was slightly different from Lonza-RPE, although it was closer than human RPE cell-line ARPE19, (Kamao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the current study consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "aa70a9de-98d2-4abb-a553-3e7fbdbc41af",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C99",
+      "claim": "The gene expression pattern of the authors' iPSC-RPE was slightly different from Lonza-RPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Our iPSC-RPE formed different clusters from Lonza-RPE by single-cell transcriptome analysis, which was consistent with our previous study showing the gene expression pattern of our iPSC-RPE was slightly different from Lonza-RPE, although it was closer than human RPE cell-line ARPE19, (Kamao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kamao et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "710e32f6-6d51-4ad7-8242-6492111c1763",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C100",
+      "claim": "The gene expression pattern of the authors' iPSC-RPE was closer to Lonza-RPE than to human RPE cell-line ARPE19.",
+      "claim_type": "EXPLICIT",
+      "source": "Our iPSC-RPE formed different clusters from Lonza-RPE by single-cell transcriptome analysis, which was consistent with our previous study showing the gene expression pattern of our iPSC-RPE was slightly different from Lonza-RPE, although it was closer than human RPE cell-line ARPE19, (Kamao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kamao et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "4cfdcdf2-064e-48ad-bbe4-826dc84b5c56",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C101",
+      "claim": "The pigmentation level of Lonza-RPE cells correlated with their gene expression profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the pigmentation level of Lonza-RPE cells correlated with their gene expression profile (Figure 2D), which may reflect the developmental process of RPE that gains protective function, including melanogenesis, during embryogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "ea32fc76-853c-4eb6-ab3b-e91825517d3d",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C102",
+      "claim": "The correlation between pigmentation level and gene expression profile in Lonza-RPE may reflect the developmental process of RPE that gains protective function, including melanogenesis, during embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the pigmentation level of Lonza-RPE cells correlated with their gene expression profile (Figure 2D), which may reflect the developmental process of RPE that gains protective function, including melanogenesis, during embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the Lonza-RPE data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "3a6c4024-6492-4d2f-a734-2751b4baec9e",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C103",
+      "claim": "ESC- or iPSC-derived RPE cells may be more plastic, retaining immature profiles although apparently being pigmented spontaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "From this aspect, ESC- or iPSC-derived RPE cells may be more plastic, retaining immature profiles although apparently being pigmented spontaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the comparison with Lonza-RPE.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "7a53c98e-9571-4add-8199-225fa0848d1c",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C104",
+      "claim": "Bone marrow-derived RPE cells that are poorly pigmented in vitro become highly pigmented when transplanted.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, bone marrow-derived RPE cells that are poorly pigmented in vitro become highly pigmented when transplanted (Sengupta et al., 2009), as well as our iPSC-RPE cells that are not pigmented when prepared but actually become heavily pigmented after engrafted (Mandai et al., 2017; Sugita et al., 2020), suggest the significance of environmental niche for melanogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sengupta et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "0095f50d-efd0-40fa-902f-411952759946",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C105",
+      "claim": "The authors' iPSC-RPE cells that are not pigmented when prepared become heavily pigmented after engrafted.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, bone marrow-derived RPE cells that are poorly pigmented in vitro become highly pigmented when transplanted (Sengupta et al., 2009), as well as our iPSC-RPE cells that are not pigmented when prepared but actually become heavily pigmented after engrafted (Mandai et al., 2017; Sugita et al., 2020), suggest the significance of environmental niche for melanogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mandai et al., 2017 and Sugita et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "2f9d0100-8856-4836-a28f-bd2d10998989",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C106",
+      "claim": "The environmental niche is significant for melanogenesis in RPE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, bone marrow-derived RPE cells that are poorly pigmented in vitro become highly pigmented when transplanted (Sengupta et al., 2009), as well as our iPSC-RPE cells that are not pigmented when prepared but actually become heavily pigmented after engrafted (Mandai et al., 2017; Sugita et al., 2020), suggest the significance of environmental niche for melanogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited observations of pigmentation changes after transplantation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "9c169536-c75c-40c2-926f-28503ab91ca8",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C107",
+      "claim": "In vitro pigmentations of RPE cells are enhanced by extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been shown that in vitro pigmentations of RPE cells are enhanced by extracellular matrix (Boulton, 2014) or even more intriguingly by phagocytosis of rod outer segments (Schraermeyer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Boulton, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "14f1f611-c236-4411-800f-f4abbc3b0fa4",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C108",
+      "claim": "In vitro pigmentations of RPE cells are enhanced by phagocytosis of rod outer segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been shown that in vitro pigmentations of RPE cells are enhanced by extracellular matrix (Boulton, 2014) or even more intriguingly by phagocytosis of rod outer segments (Schraermeyer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Schraermeyer et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "931637f9-d09c-45de-b682-3c7648e2264d",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "claim_id": "C109",
+      "claim": "Without the exposure to pathogens or photoreceptor outer segments, in vitro pigmentation of iPSC-RPE cells could be somewhat a spontaneous but not a necessary sign to show they are prone to execute their protective function.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the exposure to pathogens or photoreceptor outer segments, in vitro pigmentation of iPSC-RPE cells could be somewhat a spontaneous but not a necessary sign to show they are prone to execute their protective function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion based on the overall findings of the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The ALPS system was successfully used to photograph, measure RGB color intensities, and pick individual iPSC-RPE cells for single-cell RNA sequencing. 2304 iPSC-RPE cells were analyzed, with strong correlation (r>0.99) between RGB channels allowing blue channel intensity to serve as a proxy for cell color.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 and C33-C37 collectively describe a well-documented experimental workflow using ALPS technology. The methodology is clearly described with specific sample sizes (C33), quantitative measurements (C34-C35), and appropriate analytical decisions (C36). The strong correlation between RGB channels (C35) provides statistical justification for using blue channel as a proxy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "b2dbc39f-9b00-4704-80fd-de5b4caa6b0e",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The degree of pigmentation of iPSC-RPE cells did not associate with specific gene expression profiles or clusters. Dark and light pigmented cells were distributed across all clusters without localization to particular transcriptional states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C48-C49, C51, and C74 present the central finding supported by t-SNE clustering analysis (Figure 2C-D). The violin plots (C49) and visual inspection (C48) demonstrate that pigmentation heterogeneity exists within each transcriptional cluster, supporting the conclusion that color does not predict gene expression profile.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e345c0c1-4e45-4cac-9232-3eae57f37355",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Melanin synthesis genes (TYR, TYRP1) showed only moderate correlation with cell color (r=0.434 and 0.458), and the highest correlating gene (CST3) had r=0.565. The darkest cells did not necessarily express the highest levels of melanin synthesis enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C52-C53, C58-C60, and C73 present quantitative correlation data from Figure 3. The moderate correlation coefficients are explicitly stated and support the interpretation that pigmentation genes do not strongly predict visible color. This is internally consistent across multiple analytical approaches (individual gene analysis and gene set analysis).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "d972907c-2fd0-44af-997c-76675616fe5f",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The degree of pigmentation is dynamically regulated in each cell with a time-lag between mRNA expression, enzyme production, and melanin synthesis. Cell color represents a temporal condition rather than a stable functional characteristic.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C62 and C24 present interpretations based on the weak correlation data, but the time-lag hypothesis is speculative. While the weak correlation between melanin synthesis gene expression and color is demonstrated (C23, C58-C59), direct evidence for temporal dynamics or time-lag is not provided. This would require time-series data or protein-level measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "1dca0d0c-cfc8-4d01-99b9-c9c7eb12ebc5",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "iPSC-RPE and Lonza-RPE formed distinct clusters by t-SNE analysis. iPSC-RPE divided into four sub-clusters, with the two major clusters (0 and 1) showing no critical differences in RPE marker expression or gene ontology terms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 and C98 describe clustering results shown in Figure 2A-B and supplementary figures. The distinct clustering of iPSC-RPE vs Lonza-RPE is visually evident, and the lack of critical differences between major iPSC-RPE clusters is supported by supplementary data. This is consistent with prior work (C99-C100).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "8866cbc3-cc82-497d-a649-284b2753b63f",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cluster-8 (32 cells) expressed proliferation marker MKI67 but not iPSC marker LIN28A, suggesting it may represent an adult stem cell population of RPE rather than residual undifferentiated iPSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C45 present data on marker expression in cluster-8 (Figure 2\u2014figure supplement 3), which is well-documented. However, C46 makes an inference about cluster-8 not being residual iPSCs, and C47 speculates about adult stem cells. The negative LIN28A data supports C46, but the adult stem cell hypothesis (C47) is highly speculative without additional functional validation or comparison to known RPE stem cell markers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "2391d3fd-a044-4ce0-bce3-a880e4fed68f",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lonza-RPE showed biased distribution of pigmentation among clusters, with highly pigmented cells in clusters 2-3 but not cluster 7. This correlation between pigmentation and gene expression profile may reflect developmental processes during embryogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 describes a clear observation from Figure 2C-D showing differential pigmentation distribution in Lonza-RPE clusters. C101 confirms this correlation is present in the data. However, C102's interpretation about developmental processes is speculative, though reasonable given the fetal origin of Lonza cells (C97). The contrast with iPSC-RPE behavior strengthens the observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "2ef44494-d023-4d76-a175-27c5652d012e",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "GSEA identified 15 biological pathways enriched in darker iPSC-RPE cells, including lysosome-related and complement-related pathways. Individual genes from these pathways showed weak to moderate correlation with color (r=0.27-0.34).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C71 and C75 describe GSEA results (Figure 4) with specific correlation coefficients for individual genes. The pathway enrichment analysis is appropriately conducted across multiple cell lines, and the correlation values are consistent between pathway-level (C63-C65) and individual gene analyses (C66-C70, C71). The weak correlations are honestly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "90e5c7a7-245f-4d14-932a-d5cd03416928",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Retinoid recycling genes showed weak correlation with iPSC-RPE color intensity, with correlation coefficients ranging from 0.11 to 0.25 for genes including RDH11, BCO1, RDH10, DHRS3, and RDH5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 presents quantitative data from Figure 4\u2014figure supplement 3. The weak correlations are explicitly stated with specific values for multiple genes in this functionally important pathway. This finding is consistent with the overall conclusion that color does not strongly predict functional gene expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "ee2e055d-43ca-4d69-ae3b-795904f7e83f",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CST3 (encoding cystatin C, a cysteine-proteinase inhibitor) showed the highest correlation with color (r=0.565). Since melanin is cysteine-rich, increased melanin under upregulated CST3 that inhibits cysteine-targeted degradation is biochemically reasonable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 present the top correlation finding from the analysis. C56 cites established knowledge about melanin biochemistry. C57 makes a reasonable biochemical inference connecting CST3 function to melanin levels through cysteine metabolism. While the mechanism is not directly tested, the logic is sound and based on established biochemistry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e8f2da40-1fac-429f-aa7a-1fb738927c3e",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The correlation of complement- and lysosome-related genes with iPSC-RPE color suggests darker cells may be more prone to facilitate immune and phagocytic functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C81 makes a functional interpretation of the correlation data (C63-C70). While the correlations are documented, they are weak (r=0.27-0.34), and the claim uses cautious language ('may be prone'). However, no functional assays were performed to test whether darker cells actually have enhanced complement activation or phagocytic capacity. This remains a hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "20502650-51ad-455c-95dd-6f9c60d91bd2",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "iPSC-RPE cells were generated from two iPSC lines (201B7 and 253G1) and quality-controlled by verifying expression of RPE markers (RPE65, Bestrophin, CRALBP, MERTK) by qPCR, transcription factors (PAX6, MiTF) by immunostaining, and secreted factors (PEDF, VEGF) by ELISA, along with confirming hexagonal morphology and pigmentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 and C14-C16 describe standard quality control procedures for iPSC-RPE generation. The methods are well-established in the field and appropriate for validating RPE identity. Multiple orthogonal approaches (qPCR, immunostaining, ELISA, morphology) provide comprehensive characterization. This matches the authors' routine quality management procedures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "69511994-84a4-4dc3-b0a8-9bd38b58a3cd",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "RPE cell pigmentation increases during culture until confluence, then decreases when replated at sparse density. Even at confluence, cells show diverse degrees of pigmentation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 describe well-documented behavior of RPE cells in culture, supported by Figure 1A showing heterogeneous pigmentation. This is established knowledge in the field and consistent with the dynamic regulation hypothesis. The observation of heterogeneity at confluence (C32) is central to motivating the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e9eb1ab2-d378-422c-a4cd-9468269620cf",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RPE cells that are poorly pigmented in vitro become highly pigmented after transplantation, and in vitro pigmentation is enhanced by extracellular matrix and phagocytosis of rod outer segments, suggesting environmental niche is significant for melanogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 cite published observations from multiple sources including the authors' own transplantation studies. C106 makes a reasonable inference about environmental influence. C107-C108 cite additional supporting evidence for environmental modulation. The convergent evidence from multiple experimental systems (bone marrow-derived RPE, iPSC-RPE, in vitro culture conditions) supports the environmental niche hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e0562333-7b63-4190-9400-2a43465633c1",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "iPSC-derived RPE cells may be more plastic and retain immature profiles despite spontaneous pigmentation. In vitro pigmentation without exposure to pathogens or photoreceptor outer segments may be a spontaneous but not necessary sign of protective function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103, C96, and C109 present speculative interpretations. While based on the data showing lack of correlation between pigmentation and gene expression profiles, these claims make functional inferences without direct testing. The comparison with Lonza-RPE (C101-C102) provides some support, but the plasticity and functional readiness claims require experimental validation through functional assays or transplantation studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on RPE anatomy, function, role in disease, and therapeutic approaches including the authors' pioneering work on iPSC-RPE transplantation for AMD treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide established background knowledge about RPE biology, AMD pathology, and therapeutic development. These are well-supported by appropriate citations to the literature and represent accurate summaries of the field. The authors' contributions (C13) are documented in their cited publications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on immune privilege, RPE immune functions, melanin biology, age-related changes, and pigmentation characteristics of different RPE cell sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C95 provide comprehensive background on RPE immunobiology and melanin biology, all supported by appropriate citations. These represent established knowledge in the field and provide important context for interpreting the study's findings about pigmentation and gene expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "a747bcd9-ea81-4a81-8bc3-6968674498f6",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior to this study, there was no means to link morphology and pigmentation appearances of iPSC-RPE with gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 identifies a methodological gap that the current study addresses. This is a reasonable statement of the field's limitations and provides clear motivation for applying ALPS technology to this question. The claim is supported by the lack of prior single-cell studies linking photographed cell appearance to transcriptome.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "34ba4db0-39d7-4d14-9797-ee5e9ff47060",
+      "content_id": "0ab6baac-6c78-4828-8b55-94703d8ac028",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Lonza-RPE cells (fetal-derived, line #476621) were included as comparators and showed gene expression patterns slightly different from but closer to iPSC-RPE than the ARPE19 cell line.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C97, C99-C100 describe the comparative analysis design and results. The inclusion of Lonza-RPE as a fetal-derived comparator is appropriate, and the gene expression relationships are supported by prior work (Kamao et al., 2014) and confirmed in the current clustering analysis (C39, C98).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Using ALPS to correlate single-cell pigmentation with gene expression, the authors found that the degree of pigmentation in iPSC-RPE cells did not project specific gene expression profiles or clusters. Even genes directly related to melanin synthesis (TYR, TYRP1) showed only modest correlation with color (r=0.434-0.458), and the highest correlation was with CST3 (r=0.565), suggesting pigmentation is a temporal condition with time-lag between mRNA expression and melanin synthesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers accept this core finding. Reviewer 1 states 'The presented evidence is solid in showing that there is heterogeneous gene expression in iPSC-derived RPE cells, and there is no significant correlation with the pigmentation.' Reviewer 2 notes 'it is the first time that the absence of correlation between pigmentation and function is studied' and describes methods as 'good and experiments very rigorous.' Reviewer 3 acknowledges 'the authors identify clusters of cells that present differential gene expression, but this showed no association with the degree of pigmentation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "f3e13c76-10c2-4918-99f3-77719487e59f",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "GSEA analysis identified 15 biological pathways enriched in darker iPSC-RPE cells, including lysosome- and complement-related pathways. Specific genes showed modest correlations: PASP (r=0.34), CTSD (r=0.31) for lysosome pathways, and C1R, C1S (r=0.31), C3 (r=0.27) for complement pathways, suggesting darker cells may be more prone to facilitate these protective functions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge this finding but express concerns about its interpretation and significance. Reviewer 1 notes 'lysosomal- and complement-related pathways were partially enriched in darker cells' but does not elaborate on the strength of this finding. Reviewer 3 specifically critiques that 'the positive correlation of cluster formation with complement and lysosome-related genes is not discussed,' indicating the biological significance and interpretation remain unclear. The weak correlation coefficients (0.27-0.34) and lack of mechanistic discussion leave the functional relevance uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "d55fb4ec-f2f9-4166-934d-c32404318704",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors utilized ALPS (Automated Live imaging and cell Picking system) to photograph 2,304 iPSC-RPE cells, measure RGB channel intensities (which showed strong correlation r>0.99), pick individual cells, and perform single-cell RNA sequencing to correlate visual pigmentation with gene expression profiles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accept the methodology as sound. Reviewer 1 describes it as 'a novel microscopy-based method' and states 'This methodology can be used by other researchers interested in analyzing gene expression related to microscopic images.' Reviewer 2 notes 'The methods are good and experiments very rigorous.' Reviewer 3 acknowledges the technical achievement, stating the work 'present[s] a novel method to analyze the correlation between the degree of pigmentation and the gene expression profile...at the single cell level' using ALPS.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "0cdfd70b-d08b-4303-b73a-d569dccbf868",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "t-SNE analysis showed iPSC-RPE and Lonza-RPE formed different clusters, with iPSC-RPE dividing into four sub-clusters. The major clusters (0 and 1) showed no critical differences in key RPE factor expression or gene ontology terms, consistent with previous findings that iPSC-RPE gene expression is slightly different from but closer to Lonza-RPE than to ARPE19 cell line.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these clustering results without challenge. Reviewer 1 notes 'there is heterogeneous gene expression in iPSC-derived RPE cells' as solidly demonstrated. The comparative analysis with Lonza-RPE is acknowledged as part of the dataset generation ('An important amount of data related to gene expression and heterogeneity of the iPSC-RPE population has been generated' - Reviewer 3), and no concerns are raised about the clustering methodology or interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "2602e5eb-abe7-4a29-b601-a92515303ede",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Cluster-8, consisting of 32 cells, showed expression of proliferation marker MKI67 but not iPSC marker LIN28A, suggesting it is not residual iPSCs but may represent an adult stem cell population of RPE.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is not specifically challenged by reviewers, though it receives no explicit discussion. The characterization of cluster-8 as proliferative but not pluripotent (lacking LIN28A) is presented with supporting data (Figure 2\u2014figure supplement 3). The speculative interpretation about adult stem cells (C47) is appropriately hedged ('could be possible') and does not appear to concern reviewers, likely because it is clearly marked as speculation rather than a definitive claim.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "f877cc3b-d80d-4b66-90ff-d7509c3a6621",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Lonza-RPE showed biased distribution of cell color among clusters, with highly pigmented cells in clusters 2 and 3 but not 7, and pigmentation level correlated with gene expression profile, potentially reflecting the developmental process of RPE gaining protective function during embryogenesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding about Lonza-RPE is accepted without challenge. Reviewer 1 acknowledges the comparative analysis between iPSC-RPE and Lonza-RPE as part of the solid evidence. The differential behavior of Lonza-RPE (fetal-derived) versus iPSC-RPE supports the authors' interpretation that iPSC-RPE may be more plastic, though reviewers do not specifically comment on this distinction. The lack of reviewer concern suggests acceptance of this comparative observation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "c59570c6-fa42-4a4b-a127-2e51f528f646",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Gene sets related to retinoid recycling and melanin synthesis showed weak or less correlation with color intensity in iPSC-RPE cells, with retinoid recycling genes showing correlation coefficients of 0.11-0.25 and melanin synthesis genes showing similarly low correlations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These negative findings are implicitly accepted as part of the overall conclusion that pigmentation does not strongly correlate with functional gene expression. Reviewer 1's statement that 'there is no significant correlation with the pigmentation' encompasses these findings. The weak correlation with melanin synthesis genes specifically supports the main conclusion and is not challenged, though Reviewer 3 notes the need for better discussion of functional implications.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "iPSC-RPE cells were generated from two iPSC lines (201B7 and 253G1) and quality-verified by multiple methods (qPCR for RPE65/Bestrophin/CRALBP/MERTK, immunostaining for PAX6/MiTF/Bestrophin, ELISA for PEDF/VEGF), showing hexagonal morphology, pigmentation, and diverse degrees of pigmentation even at confluence. Lonza fetal RPE cells were used for comparison.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quality control methods and cell characterization are accepted without challenge. Reviewer 2 explicitly states 'The methods are good and experiments very rigorous.' The comprehensive quality verification using multiple established markers aligns with standard practices in the field and supports the validity of the experimental system. No reviewer questions the adequacy of cell characterization or quality control procedures.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18",
+      "content_id": "cebc8f07-f675-4d97-84c7-238854deb106",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors discuss that ESC/iPSC-derived RPE cells may be more plastic and retain immature profiles despite spontaneous pigmentation in vitro, and that environmental niche is significant for melanogenesis, as evidenced by cells becoming heavily pigmented after transplantation. They conclude that in vitro pigmentation may be a spontaneous but not necessary sign of protective function.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express significant concerns about the interpretation and physiological relevance of these conclusions. Reviewer 2 notes 'They suggest that this status could be different in vitro than in vivo but do not provide proper experiments to validate this hypothesis.' Reviewer 3 states 'I fail to grasp from the introduction what is the previous evidence that leads to the hypothesis. Why would color intensity be related to the quality of cell transplantation? In fact, cell transplantation is not evaluated at all in this work.' These critiques indicate the in vivo relevance and functional implications remain inadequately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1f31ae87-980f-4814-a1ef-aef1e51a4682",
+      "result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb"
+    },
+    {
+      "claim_id": "49c52914-c048-4bc4-9308-2991ff486519",
+      "result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb"
+    },
+    {
+      "claim_id": "6af6f5b9-7ecd-4f48-a338-ccdc95902187",
+      "result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb"
+    },
+    {
+      "claim_id": "64d48458-5786-4745-82c3-78f606fc1fb3",
+      "result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb"
+    },
+    {
+      "claim_id": "217eea9e-9bba-4da1-8b54-4826290c6836",
+      "result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb"
+    },
+    {
+      "claim_id": "cfd64d41-bd7b-4729-a56a-ad72abdb1757",
+      "result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb"
+    },
+    {
+      "claim_id": "18e8d572-2e11-4a38-ba95-2c53c11f06ed",
+      "result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb"
+    },
+    {
+      "claim_id": "fbe29c0e-d85a-4824-91a3-14bd2c1e8057",
+      "result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb"
+    },
+    {
+      "claim_id": "a4d6b7e5-955e-4bc2-8ebc-507e63731199",
+      "result_id": "b2dbc39f-9b00-4704-80fd-de5b4caa6b0e"
+    },
+    {
+      "claim_id": "5bd4532d-369b-4f25-af01-3d6ca2c8591e",
+      "result_id": "b2dbc39f-9b00-4704-80fd-de5b4caa6b0e"
+    },
+    {
+      "claim_id": "3f083ac6-325e-4674-bbc9-e35121b8984b",
+      "result_id": "b2dbc39f-9b00-4704-80fd-de5b4caa6b0e"
+    },
+    {
+      "claim_id": "a8ffa4aa-0363-4ca3-ac26-d1063695f307",
+      "result_id": "b2dbc39f-9b00-4704-80fd-de5b4caa6b0e"
+    },
+    {
+      "claim_id": "ed2473f4-657a-416c-86a0-ea78d5d82bb1",
+      "result_id": "b2dbc39f-9b00-4704-80fd-de5b4caa6b0e"
+    },
+    {
+      "claim_id": "a1e60ec0-0ad4-418a-b45f-9d880f6298be",
+      "result_id": "e345c0c1-4e45-4cac-9232-3eae57f37355"
+    },
+    {
+      "claim_id": "059defe4-764b-4293-8e9e-03f6a7501697",
+      "result_id": "e345c0c1-4e45-4cac-9232-3eae57f37355"
+    },
+    {
+      "claim_id": "27a15893-f766-47af-b27a-ef619a318cd5",
+      "result_id": "e345c0c1-4e45-4cac-9232-3eae57f37355"
+    },
+    {
+      "claim_id": "fe6be473-3807-4de0-a224-ef6a552b4afc",
+      "result_id": "e345c0c1-4e45-4cac-9232-3eae57f37355"
+    },
+    {
+      "claim_id": "03ca0b7e-ce98-4401-9aac-809b543383b0",
+      "result_id": "e345c0c1-4e45-4cac-9232-3eae57f37355"
+    },
+    {
+      "claim_id": "c83497cd-860d-482e-8e0e-1a957cd3b2f5",
+      "result_id": "e345c0c1-4e45-4cac-9232-3eae57f37355"
+    },
+    {
+      "claim_id": "f95b7ec4-df4d-4e42-9e4d-f43b812d5d27",
+      "result_id": "e345c0c1-4e45-4cac-9232-3eae57f37355"
+    },
+    {
+      "claim_id": "afaff9a5-c53b-4920-8920-51ca30698d65",
+      "result_id": "d972907c-2fd0-44af-997c-76675616fe5f"
+    },
+    {
+      "claim_id": "7fbc9239-b21e-4015-bace-87d10b2bf641",
+      "result_id": "d972907c-2fd0-44af-997c-76675616fe5f"
+    },
+    {
+      "claim_id": "35495e4c-a62d-4d78-a6c1-8d7b477909b2",
+      "result_id": "d972907c-2fd0-44af-997c-76675616fe5f"
+    },
+    {
+      "claim_id": "3264b831-25c1-4e64-9f80-d54ff335e786",
+      "result_id": "1dca0d0c-cfc8-4d01-99b9-c9c7eb12ebc5"
+    },
+    {
+      "claim_id": "2029c57e-a6fc-4e88-b45f-cc3b206f6524",
+      "result_id": "1dca0d0c-cfc8-4d01-99b9-c9c7eb12ebc5"
+    },
+    {
+      "claim_id": "eff63d96-c7c6-4591-9996-2e626f422515",
+      "result_id": "1dca0d0c-cfc8-4d01-99b9-c9c7eb12ebc5"
+    },
+    {
+      "claim_id": "4e5a0d2e-0909-41fa-a919-d2c4766bcca4",
+      "result_id": "1dca0d0c-cfc8-4d01-99b9-c9c7eb12ebc5"
+    },
+    {
+      "claim_id": "4af7fd35-585f-4816-952e-08cfea48b9b2",
+      "result_id": "1dca0d0c-cfc8-4d01-99b9-c9c7eb12ebc5"
+    },
+    {
+      "claim_id": "64c5283e-d0d8-4d06-b9f3-70635eb94c72",
+      "result_id": "8866cbc3-cc82-497d-a649-284b2753b63f"
+    },
+    {
+      "claim_id": "c964a4cb-7df2-4367-a2b4-0f8ca5b4f869",
+      "result_id": "8866cbc3-cc82-497d-a649-284b2753b63f"
+    },
+    {
+      "claim_id": "cbe8ca3f-fe7f-4ccd-84d4-25af55739d17",
+      "result_id": "8866cbc3-cc82-497d-a649-284b2753b63f"
+    },
+    {
+      "claim_id": "e025c3f4-c0c2-4a3e-8cf3-6116b1338b92",
+      "result_id": "8866cbc3-cc82-497d-a649-284b2753b63f"
+    },
+    {
+      "claim_id": "65dea1f9-1d48-469e-a8f6-fa6ff8c0fb57",
+      "result_id": "8866cbc3-cc82-497d-a649-284b2753b63f"
+    },
+    {
+      "claim_id": "0d18375c-9f99-4735-8100-d546a66997fe",
+      "result_id": "2391d3fd-a044-4ce0-bce3-a880e4fed68f"
+    },
+    {
+      "claim_id": "4cfdcdf2-064e-48ad-bbe4-826dc84b5c56",
+      "result_id": "2391d3fd-a044-4ce0-bce3-a880e4fed68f"
+    },
+    {
+      "claim_id": "ea32fc76-853c-4eb6-ab3b-e91825517d3d",
+      "result_id": "2391d3fd-a044-4ce0-bce3-a880e4fed68f"
+    },
+    {
+      "claim_id": "9ce8233b-c05a-4b79-920f-9bc30875c191",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "4a0af580-e4e6-4096-af06-fff21f6631eb",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "7097ab02-201a-470e-b993-b2d984618c25",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "da9b2d3f-23a7-41ad-a1e6-ba9a69ef842b",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "569a964b-b907-49cc-a79f-75027811f4c3",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "293d7e47-5c9b-4376-a5e7-6ab59d909a93",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "42a6f387-e49b-4afe-aa95-4b5fe17472a1",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "34f62ac1-8eca-4e95-b9de-dca4878fcfa9",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "95ad56ae-8901-4f5d-bff5-8f70f9cb70bc",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "58a07d35-bc48-46a1-acdc-716f0f074480",
+      "result_id": "2ef44494-d023-4d76-a175-27c5652d012e"
+    },
+    {
+      "claim_id": "6255f57d-17fb-42dc-ab5c-d95d45d455c6",
+      "result_id": "90e5c7a7-245f-4d14-932a-d5cd03416928"
+    },
+    {
+      "claim_id": "bf2cdd10-3e04-4114-b594-d711e2d6f4bc",
+      "result_id": "ee2e055d-43ca-4d69-ae3b-795904f7e83f"
+    },
+    {
+      "claim_id": "a0aa6dad-830e-4d9c-850b-090249ff4b42",
+      "result_id": "ee2e055d-43ca-4d69-ae3b-795904f7e83f"
+    },
+    {
+      "claim_id": "e29b6a97-6701-4ac3-8688-25e1721bf6fe",
+      "result_id": "ee2e055d-43ca-4d69-ae3b-795904f7e83f"
+    },
+    {
+      "claim_id": "89d59097-b9f8-4fa8-8cd5-638d76995caf",
+      "result_id": "ee2e055d-43ca-4d69-ae3b-795904f7e83f"
+    },
+    {
+      "claim_id": "f867f40f-65c9-4d3c-988f-3cba0db157e0",
+      "result_id": "e8f2da40-1fac-429f-aa7a-1fb738927c3e"
+    },
+    {
+      "claim_id": "1b0fc062-a940-4aa8-927a-6958510e38ba",
+      "result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2"
+    },
+    {
+      "claim_id": "285c0c43-6ab7-491d-8ff3-33e29e30a974",
+      "result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2"
+    },
+    {
+      "claim_id": "078b9305-437d-4f0f-b037-f2f1948d5947",
+      "result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2"
+    },
+    {
+      "claim_id": "6fe2eb75-f355-49b8-a1a7-42a0f54892c8",
+      "result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2"
+    },
+    {
+      "claim_id": "b6640a72-982d-4b94-8039-c9822b03e46e",
+      "result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2"
+    },
+    {
+      "claim_id": "a850a5d3-de79-480f-a654-afc81aa36ab4",
+      "result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2"
+    },
+    {
+      "claim_id": "9fbd77d6-b964-442a-8d5c-daeca76750a6",
+      "result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2"
+    },
+    {
+      "claim_id": "f9293b5f-922d-4d8c-b6f6-8cd6bcf69408",
+      "result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2"
+    },
+    {
+      "claim_id": "9c613081-2413-488c-93e9-56bc55858107",
+      "result_id": "69511994-84a4-4dc3-b0a8-9bd38b58a3cd"
+    },
+    {
+      "claim_id": "47bdb3fc-4363-4083-a8c9-a540b991ccb6",
+      "result_id": "69511994-84a4-4dc3-b0a8-9bd38b58a3cd"
+    },
+    {
+      "claim_id": "67515504-5aa7-4102-942a-bf366b39f2e0",
+      "result_id": "69511994-84a4-4dc3-b0a8-9bd38b58a3cd"
+    },
+    {
+      "claim_id": "7a53c98e-9571-4add-8199-225fa0848d1c",
+      "result_id": "e9eb1ab2-d378-422c-a4cd-9468269620cf"
+    },
+    {
+      "claim_id": "0095f50d-efd0-40fa-902f-411952759946",
+      "result_id": "e9eb1ab2-d378-422c-a4cd-9468269620cf"
+    },
+    {
+      "claim_id": "2f9d0100-8856-4836-a28f-bd2d10998989",
+      "result_id": "e9eb1ab2-d378-422c-a4cd-9468269620cf"
+    },
+    {
+      "claim_id": "9c169536-c75c-40c2-926f-28503ab91ca8",
+      "result_id": "e9eb1ab2-d378-422c-a4cd-9468269620cf"
+    },
+    {
+      "claim_id": "14f1f611-c236-4411-800f-f4abbc3b0fa4",
+      "result_id": "e9eb1ab2-d378-422c-a4cd-9468269620cf"
+    },
+    {
+      "claim_id": "3a6c4024-6492-4d2f-a734-2751b4baec9e",
+      "result_id": "e0562333-7b63-4190-9400-2a43465633c1"
+    },
+    {
+      "claim_id": "094afc18-28d3-4718-b21b-f3d6e62f2a9c",
+      "result_id": "e0562333-7b63-4190-9400-2a43465633c1"
+    },
+    {
+      "claim_id": "931637f9-d09c-45de-b682-3c7648e2264d",
+      "result_id": "e0562333-7b63-4190-9400-2a43465633c1"
+    },
+    {
+      "claim_id": "c95b122b-bec7-45a7-8838-0c2c21af592a",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "112c2963-0efd-4843-9cad-822600d58f68",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "ce4617b0-818a-4001-ba6b-c18572e2c9ee",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "92067393-202e-4a3c-aeb7-57a25d069867",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "7d2cc961-76cd-47e6-a787-323f353485da",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "d5c9d4e2-cc5e-4367-bb50-0036f31b5a85",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "5987f3b6-2c92-4467-863d-94c00d645a32",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "cdbe7d3e-cc41-47da-9dbc-8ff59f98cd2d",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "e1f261ba-210a-4e30-b15c-a74760d4ab36",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "dbd55c71-8948-4e58-9346-4b472c048d3a",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "227a6589-cef3-470b-9621-1512912b7d7a",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "44bf6b3f-e5cf-4169-b9d2-2536b566352c",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "93c7af2f-dbee-4735-a228-a37c786c723b",
+      "result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913"
+    },
+    {
+      "claim_id": "47ab3d54-eade-4f41-b62c-0b36f1d81bc2",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "09dc29b9-991a-4ae1-a632-2dae76652113",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "24a95dde-a4d2-44e6-b6c3-063c923ed7b0",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "2f7a979a-af02-4807-958e-4e443416c2f6",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "d1ffbe07-350c-4152-9baf-e393a3d11302",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "3b0afbda-4b2f-4aeb-a18a-886f79babd15",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "9dad7fa2-290a-4e65-825f-fbbb807f3ca3",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "e46dc30c-de06-4871-9f90-50d8821a4089",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "28eb08ba-9304-4847-9306-38bbf06f4d51",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "40dbb631-25b2-4c08-878a-c8108c47fb53",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "e9d4b539-a6fd-4127-a983-7cddf33e71e2",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "b813af19-f4a9-4f46-a5d3-372fd3da3217",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "0666b9bc-8621-4d55-be5f-2e2eee578d0b",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "f4d231ac-864f-4761-97b6-6f2fcf1c5587",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "6a9ec004-3bd9-4d18-8b7d-bb52b1ecc410",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "7edd9172-2ec1-4102-bd84-60e08ae1d4e8",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "b35e1864-2da2-4182-bf89-999b18721c7d",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "40cfa864-18a0-4f0b-9df3-ad4dec6bb4d7",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "78cb5674-b495-458b-8192-771dd28dde99",
+      "result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0"
+    },
+    {
+      "claim_id": "63ee4757-e8d7-4261-805b-0c53c1ab54ac",
+      "result_id": "a747bcd9-ea81-4a81-8bc3-6968674498f6"
+    },
+    {
+      "claim_id": "5ed7644d-8c24-453a-bd9f-61ee6c0a3ff0",
+      "result_id": "34ba4db0-39d7-4d14-9797-ee5e9ff47060"
+    },
+    {
+      "claim_id": "c405c800-b704-41f8-9bc0-f1a6252d79d2",
+      "result_id": "34ba4db0-39d7-4d14-9797-ee5e9ff47060"
+    },
+    {
+      "claim_id": "aa70a9de-98d2-4abb-a553-3e7fbdbc41af",
+      "result_id": "34ba4db0-39d7-4d14-9797-ee5e9ff47060"
+    },
+    {
+      "claim_id": "710e32f6-6d51-4ad7-8242-6492111c1763",
+      "result_id": "34ba4db0-39d7-4d14-9797-ee5e9ff47060"
+    },
+    {
+      "claim_id": "6af6f5b9-7ecd-4f48-a338-ccdc95902187",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "a4d6b7e5-955e-4bc2-8ebc-507e63731199",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "a1e60ec0-0ad4-418a-b45f-9d880f6298be",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "35495e4c-a62d-4d78-a6c1-8d7b477909b2",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "5bd4532d-369b-4f25-af01-3d6ca2c8591e",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "3f083ac6-325e-4674-bbc9-e35121b8984b",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "a8ffa4aa-0363-4ca3-ac26-d1063695f307",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "059defe4-764b-4293-8e9e-03f6a7501697",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "27a15893-f766-47af-b27a-ef619a318cd5",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "fe6be473-3807-4de0-a224-ef6a552b4afc",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "03ca0b7e-ce98-4401-9aac-809b543383b0",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "c83497cd-860d-482e-8e0e-1a957cd3b2f5",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "afaff9a5-c53b-4920-8920-51ca30698d65",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "7fbc9239-b21e-4015-bace-87d10b2bf641",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "ed2473f4-657a-416c-86a0-ea78d5d82bb1",
+      "result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a"
+    },
+    {
+      "claim_id": "9ce8233b-c05a-4b79-920f-9bc30875c191",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "4a0af580-e4e6-4096-af06-fff21f6631eb",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "7097ab02-201a-470e-b993-b2d984618c25",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "da9b2d3f-23a7-41ad-a1e6-ba9a69ef842b",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "569a964b-b907-49cc-a79f-75027811f4c3",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "293d7e47-5c9b-4376-a5e7-6ab59d909a93",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "42a6f387-e49b-4afe-aa95-4b5fe17472a1",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "34f62ac1-8eca-4e95-b9de-dca4878fcfa9",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "95ad56ae-8901-4f5d-bff5-8f70f9cb70bc",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "58a07d35-bc48-46a1-acdc-716f0f074480",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "f867f40f-65c9-4d3c-988f-3cba0db157e0",
+      "result_id": "f3e13c76-10c2-4918-99f3-77719487e59f"
+    },
+    {
+      "claim_id": "1f31ae87-980f-4814-a1ef-aef1e51a4682",
+      "result_id": "d55fb4ec-f2f9-4166-934d-c32404318704"
+    },
+    {
+      "claim_id": "49c52914-c048-4bc4-9308-2991ff486519",
+      "result_id": "d55fb4ec-f2f9-4166-934d-c32404318704"
+    },
+    {
+      "claim_id": "6af6f5b9-7ecd-4f48-a338-ccdc95902187",
+      "result_id": "d55fb4ec-f2f9-4166-934d-c32404318704"
+    },
+    {
+      "claim_id": "64d48458-5786-4745-82c3-78f606fc1fb3",
+      "result_id": "d55fb4ec-f2f9-4166-934d-c32404318704"
+    },
+    {
+      "claim_id": "217eea9e-9bba-4da1-8b54-4826290c6836",
+      "result_id": "d55fb4ec-f2f9-4166-934d-c32404318704"
+    },
+    {
+      "claim_id": "cfd64d41-bd7b-4729-a56a-ad72abdb1757",
+      "result_id": "d55fb4ec-f2f9-4166-934d-c32404318704"
+    },
+    {
+      "claim_id": "18e8d572-2e11-4a38-ba95-2c53c11f06ed",
+      "result_id": "d55fb4ec-f2f9-4166-934d-c32404318704"
+    },
+    {
+      "claim_id": "fbe29c0e-d85a-4824-91a3-14bd2c1e8057",
+      "result_id": "d55fb4ec-f2f9-4166-934d-c32404318704"
+    },
+    {
+      "claim_id": "3264b831-25c1-4e64-9f80-d54ff335e786",
+      "result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868"
+    },
+    {
+      "claim_id": "2029c57e-a6fc-4e88-b45f-cc3b206f6524",
+      "result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868"
+    },
+    {
+      "claim_id": "eff63d96-c7c6-4591-9996-2e626f422515",
+      "result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868"
+    },
+    {
+      "claim_id": "4e5a0d2e-0909-41fa-a919-d2c4766bcca4",
+      "result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868"
+    },
+    {
+      "claim_id": "4af7fd35-585f-4816-952e-08cfea48b9b2",
+      "result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868"
+    },
+    {
+      "claim_id": "aa70a9de-98d2-4abb-a553-3e7fbdbc41af",
+      "result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868"
+    },
+    {
+      "claim_id": "710e32f6-6d51-4ad7-8242-6492111c1763",
+      "result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868"
+    },
+    {
+      "claim_id": "64c5283e-d0d8-4d06-b9f3-70635eb94c72",
+      "result_id": "2602e5eb-abe7-4a29-b601-a92515303ede"
+    },
+    {
+      "claim_id": "c964a4cb-7df2-4367-a2b4-0f8ca5b4f869",
+      "result_id": "2602e5eb-abe7-4a29-b601-a92515303ede"
+    },
+    {
+      "claim_id": "cbe8ca3f-fe7f-4ccd-84d4-25af55739d17",
+      "result_id": "2602e5eb-abe7-4a29-b601-a92515303ede"
+    },
+    {
+      "claim_id": "e025c3f4-c0c2-4a3e-8cf3-6116b1338b92",
+      "result_id": "2602e5eb-abe7-4a29-b601-a92515303ede"
+    },
+    {
+      "claim_id": "65dea1f9-1d48-469e-a8f6-fa6ff8c0fb57",
+      "result_id": "2602e5eb-abe7-4a29-b601-a92515303ede"
+    },
+    {
+      "claim_id": "0d18375c-9f99-4735-8100-d546a66997fe",
+      "result_id": "f877cc3b-d80d-4b66-90ff-d7509c3a6621"
+    },
+    {
+      "claim_id": "4cfdcdf2-064e-48ad-bbe4-826dc84b5c56",
+      "result_id": "f877cc3b-d80d-4b66-90ff-d7509c3a6621"
+    },
+    {
+      "claim_id": "ea32fc76-853c-4eb6-ab3b-e91825517d3d",
+      "result_id": "f877cc3b-d80d-4b66-90ff-d7509c3a6621"
+    },
+    {
+      "claim_id": "6255f57d-17fb-42dc-ab5c-d95d45d455c6",
+      "result_id": "c59570c6-fa42-4a4b-a127-2e51f528f646"
+    },
+    {
+      "claim_id": "f95b7ec4-df4d-4e42-9e4d-f43b812d5d27",
+      "result_id": "c59570c6-fa42-4a4b-a127-2e51f528f646"
+    },
+    {
+      "claim_id": "1b0fc062-a940-4aa8-927a-6958510e38ba",
+      "result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09"
+    },
+    {
+      "claim_id": "285c0c43-6ab7-491d-8ff3-33e29e30a974",
+      "result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09"
+    },
+    {
+      "claim_id": "078b9305-437d-4f0f-b037-f2f1948d5947",
+      "result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09"
+    },
+    {
+      "claim_id": "6fe2eb75-f355-49b8-a1a7-42a0f54892c8",
+      "result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09"
+    },
+    {
+      "claim_id": "b6640a72-982d-4b94-8039-c9822b03e46e",
+      "result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09"
+    },
+    {
+      "claim_id": "67515504-5aa7-4102-942a-bf366b39f2e0",
+      "result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09"
+    },
+    {
+      "claim_id": "5ed7644d-8c24-453a-bd9f-61ee6c0a3ff0",
+      "result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09"
+    },
+    {
+      "claim_id": "3a6c4024-6492-4d2f-a734-2751b4baec9e",
+      "result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18"
+    },
+    {
+      "claim_id": "7a53c98e-9571-4add-8199-225fa0848d1c",
+      "result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18"
+    },
+    {
+      "claim_id": "0095f50d-efd0-40fa-902f-411952759946",
+      "result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18"
+    },
+    {
+      "claim_id": "2f9d0100-8856-4836-a28f-bd2d10998989",
+      "result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18"
+    },
+    {
+      "claim_id": "9c169536-c75c-40c2-926f-28503ab91ca8",
+      "result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18"
+    },
+    {
+      "claim_id": "14f1f611-c236-4411-800f-f4abbc3b0fa4",
+      "result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18"
+    },
+    {
+      "claim_id": "931637f9-d09c-45de-b682-3c7648e2264d",
+      "result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "fcf16b24-87eb-4ff2-8c80-33515e316ce9",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "40ee058b-a45d-4b08-84d2-0d9a848f1fcb",
+      "peer_result_id": "d55fb4ec-f2f9-4166-934d-c32404318704",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on ALPS methodology (C19-C21, C33-C37). Both evaluations find the experimental workflow well-documented and technically sound. OpenEval emphasizes quantitative validation (correlation between RGB channels), while peer reviewers highlight novelty and rigor of the method.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "335e5cf1-9d48-4e18-bdbb-8d06ef25e7a0",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b2dbc39f-9b00-4704-80fd-de5b4caa6b0e",
+      "peer_result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on core finding that pigmentation does not predict gene expression (C22, C48-C49, C51, C74). Both evaluations find this central claim well-supported by t-SNE clustering and violin plots. OpenEval rates as SUPPORTED, peer reviewers describe evidence as 'solid' across all three reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "ffe618e5-bdfa-4a27-a51a-07df0b17c7b4",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "e345c0c1-4e45-4cac-9232-3eae57f37355",
+      "peer_result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on weak correlation between pigmentation genes and color (C23, C52-C53, C58-C60, C73). Both evaluations accept the quantitative correlation data from Figure 3. OpenEval rates SUPPORTED with emphasis on internal consistency; peer reviewers accept this as part of the overall 'no significant correlation' finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "3de048ce-85a9-4584-b4c4-bb3dea2a40a2",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "d972907c-2fd0-44af-997c-76675616fe5f",
+      "peer_result_id": "5ea8fecb-e7c3-4721-8aac-da1735d38d4a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on uncertainty regarding time-lag hypothesis (C24, C61-C62). OpenEval rates UNCERTAIN due to lack of time-series data or protein measurements. Peer reviewers implicitly accept the weak correlation data but do not specifically address the temporal interpretation, suggesting it is appropriately hedged.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "182cff8d-d889-42ad-a0fa-190cec8a74bb",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "1dca0d0c-cfc8-4d01-99b9-c9c7eb12ebc5",
+      "peer_result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on clustering results distinguishing iPSC-RPE from Lonza-RPE (C39-C42, C98-C100). Both evaluations find the clustering analysis well-supported. OpenEval emphasizes visual evidence and consistency with prior work; peer reviewers accept heterogeneity findings without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "3857de9f-e151-40ca-a5d0-88813cad3b7e",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "8866cbc3-cc82-497d-a649-284b2753b63f",
+      "peer_result_id": "2602e5eb-abe7-4a29-b601-a92515303ede",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on cluster-8 characterization (C43-C47). Both evaluations accept the data on marker expression. OpenEval rates UNCERTAIN due to speculative adult stem cell hypothesis (C47); peer reviewers do not challenge this, likely because speculation is appropriately hedged.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "a774f707-58b8-4689-80a2-e9219d6e0048",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "2391d3fd-a044-4ce0-bce3-a880e4fed68f",
+      "peer_result_id": "f877cc3b-d80d-4b66-90ff-d7509c3a6621",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on Lonza-RPE differential behavior (C50, C101-C102). Both evaluations find the observation that Lonza-RPE shows pigmentation-cluster correlation well-supported. OpenEval notes developmental interpretation is speculative but reasonable; peer reviewers accept without specific concern.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "a537e05a-f4c3-4c31-8dd3-659884a00734",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "2ef44494-d023-4d76-a175-27c5652d012e",
+      "peer_result_id": "f3e13c76-10c2-4918-99f3-77719487e59f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial agreement on complement/lysosome pathway findings (C63-C71, C75). OpenEval rates SUPPORTED emphasizing honest reporting of weak correlations. Peer reviewers rate UNCERTAIN, with Reviewer 3 noting lack of discussion on biological significance and functional implications of these correlations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "5b9ebe9a-3d30-425d-9426-504317586465",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "90e5c7a7-245f-4d14-932a-d5cd03416928",
+      "peer_result_id": "c59570c6-fa42-4a4b-a127-2e51f528f646",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on weak visual cycle gene correlations (C72-C73). Both evaluations accept these negative findings as supporting the main conclusion. OpenEval emphasizes consistency with overall findings; peer reviewers implicitly accept as part of 'no significant correlation' conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "ab6207b9-cfea-4d03-818e-3a80a207c49c",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "e8f2da40-1fac-429f-aa7a-1fb738927c3e",
+      "peer_result_id": "f3e13c76-10c2-4918-99f3-77719487e59f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty of functional implications (C81). Both evaluations question whether weak correlations translate to functional differences. OpenEval rates UNCERTAIN noting lack of functional assays; peer reviewers express similar concerns about interpretation and note biological significance remains unclear.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "6794aa99-0a16-46be-8dbd-6f9d77f42336",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "20502650-51ad-455c-95dd-6f9c60d91bd2",
+      "peer_result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on quality control procedures (C25-C29). Both evaluations find the iPSC-RPE characterization methods appropriate and rigorous. OpenEval emphasizes multiple orthogonal approaches; peer reviewers explicitly state 'methods are good and experiments very rigorous.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "c2696a0d-9dea-43fa-8fba-2de15e80908b",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "e9eb1ab2-d378-422c-a4cd-9468269620cf",
+      "peer_result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on in vivo relevance claims (C104-C108). OpenEval rates SUPPORTED based on convergent evidence from multiple experimental systems. Peer reviewers rate UNCERTAIN, with Reviewer 2 noting lack of proper validation experiments and Reviewer 3 questioning the hypothesis foundation and noting cell transplantation is not evaluated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "efc6efad-01f6-4566-96bc-438e56914cd6",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "e0562333-7b63-4190-9400-2a43465633c1",
+      "peer_result_id": "3bf296b3-8b18-4be8-b5f8-ee35917e0d18",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on uncertainty of plasticity and functional readiness claims (C96, C103, C109). Both evaluations find these interpretations speculative. OpenEval rates UNCERTAIN noting need for functional validation; peer reviewers express significant concerns about physiological relevance and inadequate experimental support for in vivo hypotheses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "67c4e338-462e-435c-b630-a2707c683f0d",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "ee2e055d-43ca-4d69-ae3b-795904f7e83f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds CST3-melanin correlation and biochemical interpretation (C54-C57) SUPPORTED based on established melanin biochemistry. No corresponding peer review evaluation found; this specific finding is not discussed by reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "24d49944-56cb-42d2-88e9-38f71795c40d",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "69511994-84a4-4dc3-b0a8-9bd38b58a3cd",
+      "peer_result_id": "e7ae10c6-9121-43fe-9e6a-9f1327770d09",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on RPE heterogeneity observation (C30-C32). OpenEval rates SUPPORTED as established field knowledge motivating the study. Peer reviewers implicitly accept this as part of quality control and experimental design (C32 shared with R8).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "b93ea03b-a2c0-43c5-97f0-eb9aca1c1adb",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "89c9cb21-c3b3-42ea-ad62-2a29700d4913",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds background literature on RPE biology and AMD (C1-C13) SUPPORTED as accurate field summaries. No corresponding peer review evaluation; reviewers do not assess background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "f2f91be1-5a35-4a71-a21a-9b5450f6d19c",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "fd2ba9b5-d004-49ce-ba7b-d5a023b276c0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds background on RPE immunobiology and melanin biology (C76-C95) SUPPORTED with appropriate citations. No corresponding peer review evaluation; reviewers do not assess background literature claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "24cf12c8-f9f2-49ad-a9ea-e47a95cb9753",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "a747bcd9-ea81-4a81-8bc3-6968674498f6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds methodological gap identification (C18) SUPPORTED as reasonable motivation for the study. No corresponding peer review evaluation; reviewers do not specifically assess this motivational claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    },
+    {
+      "id": "79be9509-7c3f-4b00-90e6-38df34c1ac28",
+      "submission_id": "a4c10701-d49d-4eaf-91fb-96ecfe52ec63",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "34ba4db0-39d7-4d14-9797-ee5e9ff47060",
+      "peer_result_id": "0cdfd70b-d08b-4303-b73a-d569dccbf868",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on comparative analysis design (C38, C97, C99-C100). OpenEval rates SUPPORTED noting appropriate comparator choice and consistency with prior work. Peer reviewers accept the comparative dataset generation without challenge as part of clustering results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:51:12.495088Z"
+    }
+  ]
+}

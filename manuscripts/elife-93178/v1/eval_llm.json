@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Enterobacteriaceae species (Salmonella, E. coli, C. koseri) exhibit rapid chemotactic attraction to femtoliter volumes of human and animal serum within minutes, as demonstrated using the CIRA microfluidics assay. The bacterial population reorganizes within 40-120 seconds, with the CIRA microgradient validated to be accurate within 5-10% across relevant distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C20-C26, C54-C57, and C78-C81 collectively demonstrate robust attraction of multiple Enterobacteriaceae species to serum from multiple mammalian sources using a validated microfluidics system. The CIRA methodology is well-characterized with appropriate controls (pH, flow artifacts), mathematical modeling, and experimental validation with fluorescent dye. Multiple independent experiments across different bacterial strains and serum sources provide converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C74",
+      "C75",
+      "C76",
+      "C92"
+    ],
+    "result": "Chemotaxis is the primary mechanism mediating bacterial attraction to serum, with the chemoreceptor Tsr playing a significant but not exclusive role. The cheY mutant shows no attraction (70-fold difference from WT), while the tsr mutant shows reduced but not eliminated attraction (3:1 WT:tsr ratio), indicating multiple chemoreceptors contribute to serum taxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27-C29, C74-C76, and C92 are supported by well-controlled competition experiments comparing WT, cheY, and tsr mutants. The cheY mutant (chemotaxis-null) shows complete loss of attraction, definitively establishing chemotaxis as the mechanism. The tsr mutant phenotype (partial defect) logically supports involvement of multiple chemoreceptors. The quantitative competitive indices provide strong effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C43",
+      "C73"
+    ],
+    "result": "L-serine is the primary chemoattractant in serum sensed by Tsr, present at ~241 \u00b5M in human serum (>200-fold above the minimal effective concentration of 0.5-5 \u00b5M). Serine racemase treatment diminishes serum attraction, while NE and DHMA show no chemoattractant activity. The tsr mutant shows no attraction to L-serine but retains normal chemotaxis to L-aspartate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C30, C32-C38, C43, and C73 provide multiple lines of converging evidence: (1) mass spectrometry quantification of serum L-serine, (2) dose-response experiments establishing sensitivity thresholds, (3) serine racemase experiments showing L-enantiomer specificity, (4) negative results with NE/DHMA despite extensive testing, and (5) genetic specificity (tsr mutant phenotype specific to L-serine, not L-aspartate). The evidence is internally consistent and mechanistically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The first crystal structures of S. Typhimurium Tsr LBD in complex with L-serine were solved at 2.2 \u00c5 and 2.5 \u00c5 resolution, revealing high structural similarity to E. coli Tsr (100% identity in ligand-binding residues, 82.1% overall periplasmic domain identity, 0.24 \u00c5 rmsd). The structures show high quality metrics (99th percentile clashscore, 100th percentile MolProbity score) and full ligand occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C46-C49, C82-C87, and C89 are supported by standard crystallographic data including resolution, R-factors, validation metrics, and structural comparisons. The structures are deposited in the PDB (8FYV, 8VL8) and show appropriate quality for the stated resolution. Multiple independent views (5 monomers in asymmetric unit) and pH-independent validation strengthen confidence. The ITC binding data (KD ~5 \u00b5M) is consistent with functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The SeTsr structure reveals the correct orientation of L-serine in the binding pocket, correcting the previous EcTsr structure (PDB: 3ATP). The ligand forms optimal hydrogen bonding interactions with all binding site residues (Arg64, Asn68, Phe151, Phe152, Gln154), with the hydroxyl sidechain facing outward toward solvent. Paired refinement analysis shows that substituting the SeTsr ligand pose and binding residues into the EcTsr model improves Rwork/Rfree by -1.0%/-0.9%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by rigorous crystallographic analysis including electron density maps (2fo-fc and fo-fc omit maps), paired refinement comparisons, and detailed structural characterization. The improvement in R-factors from paired refinement provides quantitative validation. The hydrogen bonding network is fully characterized and energetically favorable. This represents a significant correction to prior structural work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C52",
+      "C53"
+    ],
+    "result": "Tsr is widely conserved among Gammaproteobacteria, particularly Enterobacteriaceae, Morganelliaceae, and Yersiniaceae families, including numerous WHO priority pathogens. A conserved L-serine recognition motif was identified across Tsr orthologues through sequence alignment and structural analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C52-C53 are supported by genomic database analysis (Figure 8B, Supplementary file 2) and sequence alignment showing conservation of ligand-binding residues (Figure 8A). The structural basis for defining the recognition motif is established by the crystal structure. The biological distribution analysis appears comprehensive, though the methods for database searching could be more explicitly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C39",
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "Human serum provides a growth advantage for Salmonella strains, with 2.5% v/v serum sufficient for 1.5-2.5-fold growth increase. However, L-serine alone (present at 241 \u00b5M \u00b1 48 in serum) does not recapitulate the full growth benefit, indicating other serum nutrients are primarily responsible for growth enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C39-C41, and C44 are supported by growth curve experiments (Figure 6) and mass spectrometry quantification of serum L-serine. The inference that L-serine functions primarily as a chemotactic cue rather than growth substrate is logical given the growth data. However, the failed serine dehydrogenase experiment limits direct testing of L-serine's nutritional contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In an ex vivo swine colonic hemorrhagic lesion model, wildtype S. Typhimurium outcompetes cheY mutants by ~10:1 and tsr mutants by ~2:1 in colonization of lesions, with bacteria penetrating >200 \u00b5m into wounded vasculature. This demonstrates that chemotaxis and Tsr provide competitive advantages for migration into hemorrhagic lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C58-C60 are supported by ex vivo experiments with appropriate controls (WT vs. cheY and WT vs. tsr competitions). The competitive indices show clear and quantifiable advantages for chemotaxis-competent bacteria. However, this is a single ex vivo model with limited replicates (n=3-4), and extrapolation to in vivo infection requires caution. The model is physiologically relevant but simplified compared to actual infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C61",
+      "C90",
+      "C95",
+      "C96",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose 'bacterial vampirism' as a conceptual framework describing bacterial taxis toward serum, colonization of hemorrhagic lesions, and consumption of serum nutrients, which may relate to the proclivity of Enterobacteriaceae for bloodstream infections. This phenomenon is suggested to be relevant across diverse host-microbe systems and may link to pathogenesis in inflammatory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C15, C61, C90, C95-C96, C99-C100 represent conceptual synthesis and speculation based on the experimental findings. While the individual experimental observations are well-supported, the connection to actual bloodstream infections and clinical pathogenesis remains speculative. The ex vivo model provides preliminary evidence but is insufficient to establish causality in disease. The authors appropriately use cautious language ('may relate,' 'could involve,' 'seems plausible'), acknowledging the speculative nature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Norepinephrine (NE) and DHMA show no evidence of binding to SeTsr LBD by isothermal titration calorimetry, contradicting previous reports that these neurotransmitters are Tsr ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by ITC experiments (Figure 7L-M) showing no binding. This is further corroborated by extensive CIRA experiments (17 videos provided) showing no chemotactic response to NE or DHMA under various conditions. The negative results are convincing given the thoroughness of testing and the positive controls with L-serine. This represents an important correction to the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C70"
+    ],
+    "result": "Enterobacteriaceae are associated with GI bleeding, bacteremia, and sepsis-related deaths in individuals with inflammatory bowel diseases. GI bleeding affects 40-150 per 100,000 individuals annually with 6-30% fatality rate, and afflicts 60% of infected children under five with Salmonella infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C17-C19, and C70 are supported by citations to clinical and epidemiological literature. These represent established medical knowledge providing context for the study rather than novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C42",
+      "C62",
+      "C69",
+      "C72",
+      "C91",
+      "C93",
+      "C94",
+      "C97",
+      "C98"
+    ],
+    "result": "Background information from prior literature establishes that: WHO priority pathogens employ chemotaxis for infection; ~99% of serum serine is L-serine; colitis increases luminal amino acids; S. Typhimurium uses Tsr to invade Peyer's patches; NE/DHMA circulate at ~10 nM; swine share human GI physiology; and Peyer's patches are near vasculature that can be damaged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C42, C62, C69, C72, C91, C93-C94, C97-C98 are supported by appropriate citations to prior literature. These provide important context and rationale for the current study but are not novel findings. The citations appear accurate based on the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Maximal attraction and dispersal rates for L-serine chemoattraction are similar, changing by approximately 4% per second, as measured by L-serine addition and removal experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by CIRA experiments with L-serine addition and removal (Figure 5F). This provides insight into the dynamics of chemotactic responses but is a relatively minor technical observation supporting the broader findings about serum taxis.",
+    "result_type": "MINOR"
+  }
+]

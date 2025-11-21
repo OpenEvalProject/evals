@@ -1,0 +1,1940 @@
+{
+  "submission": {
+    "id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T22:38:51.353231Z",
+    "updated_at": "2025-11-20T22:38:51.353231Z"
+  },
+  "content": [
+    {
+      "id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "content_type": "manuscript",
+      "content_text": "# Development of equation of motion deciphering locomotion including omega turns of Caenorhabditis elegans\n\n## Authors\n\n- Taegon Chung<sup>1</sup> ([ORCID: 0009-0004-2335-3500](https://orcid.org/0009-0004-2335-3500))\n- Iksoo Chang<sup>1</sup>\n- Sangyeol Kim<sup>1</sup> ([ORCID: 0009-0001-3200-9726](https://orcid.org/0009-0001-3200-9726)) \u2020\n\n### Affiliations\n\n1. Daegu Gyeongbuk Institute of Science and Technology Daegu Republic of Korea ([ROR:03frjya69](https://ror.org/03frjya69))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLocomotion is a fundamental behavior of Caenorhabditis elegans (C. elegans). Previous works on kinetic simulations of animals helped researchers understand the physical mechanisms of locomotion and the muscle-controlling principles of neuronal circuits as an actuator part. It has yet to be understood how C. elegans utilizes the frictional forces caused by the tension of its muscles to perform sequenced locomotive behaviors. Here, we present a two-dimensional rigid body chain model for the locomotion of C. elegans by developing Newtonian equations of motion for each body segment of C. elegans. Having accounted for friction-coefficients of the surrounding environment, elastic constants of C. elegans, and its kymogram from experiments, our kinetic model (ElegansBot) reproduced various locomotion of C. elegans such as, but not limited to, forward-backward-(omega turn)-forward locomotion constituting escaping behavior and delta-turn navigation. Additionally, ElegansBot precisely quantified the forces acting on each body segment of C. elegans to allow investigation of the force distribution. This model will facilitate our understanding of the detailed mechanism of various locomotive behaviors at any given friction-coefficients of the surrounding environment. Furthermore, as the model ensures the performance of realistic behavior, it can be used to research actuator-controller interaction between muscles and neuronal circuits.\n\n## Introduction\n\nWith only a few hundred neurons, Caenorhabditis Elegans (C. elegans) perform various behaviors such as locomotion, sleeping, reproduction, and hunting (Hall and Altun, 2008). The connectome structure among 302 neurons and 165 somatic cells of C. elegans was discovered by pioneering works (Cook et al., 2019; White et al., 1986). C. elegans is a cost-efficient and widely used model in neuronal research. Its small body size and minimal nutritional requirements contribute to its cost efficiency. The organism matures in a shorter period, about three days, compared to other model animals such as fruit flies or mice. Its transparent body allows for easy microscopic observation of its internal structures or artificially expressed green fluorescent proteins. Moreover, due to the hermaphroditic nature of C. elegans, offspring mostly share the same genotype as the parent, which simplifies the multiplication of the worm population for research purposes (Hall and Altun, 2008).\n\nC. elegans bends its body with a sinusoidal wave pattern when moving forward or backward. The driving force for this movement comes from the difference between perpendicular and parallel frictional forces, which it experienced from a surrounding environment. This thrust force pushes the worm along the ground surface with which the worm contacts (Berri et al., 2009; Boyle et al., 2012; Hu et al., 2009; Niebur and Erd\u00f6s, 1991). Even if a worm has a sinusoidal modulation generated inside it, it has difficulties in forward and backward locomotion if it does not feel the difference in frictional forces from its surroundings.\n\nMechanical simulators of rod-shaped animals such as C. elegans (Boyle et al., 2012; Niebur and Erd\u00f6s, 1991), fish (Ekeberg, 1993), and snakes Hu et al., 2009 have been used in various studies. These simulators demonstrate how the activities of muscle cells are represented as behavioral phenotypes, which are determined by signals from a neuronal circuit simulator (Boyle et al., 2012; Ekeberg, 1993; Niebur and Erd\u00f6s, 1991). They also show how muscle cells return proprioceptive signals back to the neuronal circuit simulator and how animals intentionally distribute body weight for locomotion patterns (Hu et al., 2009). Similarly, the kinematic simulator of fish (Ekeberg, 1993), which has a locomotion pattern in that the animal mostly undulates in a particular direction, was used with a neuronal network simulator to model the undulation of swimming behavior. This combination of kinematic simulator and neuronal network simulator was also used to model how the locomotion pattern changes due to a surrounding environment (Boyle et al., 2012) and how the central pattern generator arises from a few cells (Boyle et al., 2012; Izquierdo and Beer, 2018).\n\nEven though there were studies on kinematic simulation of rod-shaped animals (Boyle et al., 2012; Ekeberg, 1993; Hu et al., 2009), to our best knowledge, there was no kinetic model that reproduces complex locomotion behavior of C. elegans, which includes all of the various modes of locomotion of C. elegans such as forward locomotion, backward locomotion, and turn from experimental observations. Instead, muscle cell activities from Ansatz (Hu et al., 2009), a hypothesis of the solution, or signals from a neuronal circuit simulator (Boyle et al., 2012; Ekeberg, 1993) were applied to the kinematic simulators. A simulator should have an operational structure that imitates physical quantities from an experiment to reproduce the motion of C. elegans in the experiment. However, until now, no kinetic simulation has such a structure. If there is a simulator that reproduces the motion of individual experiments, analysis of the kinetics of motion of specific experiments, which provides information on the individual force that exerts on each body part of the animal, will be enabled. Also, as the kinetic simulation reproduces the motion of C. elegans, the behavioral phenotype that emerged from the muscle activity of neuronal circuit simulation will be more credible.\n\nWe built a Newtonian-mechanics two-dimensional rigid body chain model of C. elegans to reproduce its locomotion. We incorporated its body angle, related to the contraction of the body wall muscle of C. elegans, into the primary operating principle of our kinetic model so that the model simulates measurable physical quantities of C. elegans from its experimental video. The model includes a chain of multiple rod rigid bodies, a damped torsional spring between the rigid bodies, and a control angle, which is the dynamic baseline angle from the value of the kymogram of a physical experiment. We formulated Newtonian equations of translational and rotational motion of the rigid body model and computed the numerical solution of the equations by numerical integration using the semi-implicit Euler method. As a result, we were able to demonstrate trajectories and kinetics of the general locomotion of C. elegans, such as crawling, swimming (Vidal-Gadea et al., 2011), omega-turn, and delta-turn (Broekmans et al., 2016).\n\n## Results\n\n### Newton\u2019s equation of motion for locomotion of Caenorhabditis elegans: How does ElegansBot work?\n\nWe introduce the simple chain model of C. elegans' body. C. elegans has an elongated body along the head-to-tail axis. Thus, the worm\u2019s body can be approximated as a midline extended along the anterial-posterial axis in the xy-coordinate plane (Figure 1A). Let $M$ (=2 \u00b5g, details in \u2018Worm\u2019s mass, actuator elasticity coefficient, and damping coefficient\u2019 of Appendix) be the mass and $L$ (=1 mm) be the length of the worm. Midline was approximated as $n$ (=25) straight rods, whose ends are connected to the ends of neighboring rods (Figure 1A). The mass, length, and moment of inertia of each rod is $m=M/n$ , $2r=L/n$ , and $I=mr^{2}/3$, respectively. When numbering the rods in order, with the rod at the end of the head being labeled as \u20181-rod\u2019 and the rod at the end of the tail being labeled as \u2018n-rod,\u2019 let us designate the i-th rod as \u2018i-rod.\u2019 The point where i-rod and (i+1)-rod meets is \u2018i-joint.\u2019.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig1-v1.jpg)\n\n**Figure 1.:** (A) Chain model for C. elegans body. (B) Rods in chain model. (C) i-actuator, which is a damped torsional spring. (D) Frictional force (black arrow) due to the translation motion of a rod. (E) Frictional force (black arrow) due to the rotational motion of a rod. (F) Joint force (black arrows) acting on i-rod and (i+1)-rod.\n\nThe motion of the worm corresponds to the motion of all the rods. To describe the motion of each rod (i-rod), we need to determine the displacement vector ($d_{i}$), velocity vector ($v_{i}$), the angle measured counterclockwise from the positive x-axis to the tangential direction of the rod ($s_{i}$) (Figure 1B), and angular velocity ($\\omega_{i}$) of i-rod at a given time $t$. However, the minimum information required to describe the motion of all rods includes the displacement vector ($d_{c}$) and velocity vector ($v_{c}$) of the worm\u2019s center of mass, $s_{i}$ and $\\omega_{i}$ for each rod (Details in \u2018Minimum information required to describe the motion of each rod\u2019 of Appendix).\n\nValue of time-dependent variables such as $d_{c}$ , $v_{c}$ , $s_{i}$ , and $\\omega_{i}$ at a given time, $t$ will be expressed as $\u2217^{(t)}$. When initial values, $d_{c}^{(0)}$ , $v_{c}^{(0)}$ , $s_{i}^{(0)}$ , and $\\omega_{i}^{(0)}$ are given, the Newtonian equation of motion for acceleration, $a_{c}$ and angular acceleration, ${\\alpha_{i}}_{i\\in1,\u22ef,n}$ must be acquired and numerically integrated twice to find $d_{c}^{(t)}$ , $v_{c}^{(t)}$ , $s_{i}^{(t)}$ , and $\\omega_{i}^{(t)}$ at a given time, $t$. To obtain the Newtonian equations of motion, we must find every force and torque acting on each rod. There are frictional force, muscle force, and joint force among types of forces acting on the rod, and there are frictional torque, muscle torque, and joint torque among types of torques whose descriptions are as follows.\n\nThe only external force acting on the worm is a frictional force from a ground surface such as an agar plate or water. The frictional force is an anisotropic Stokes frictional force, with a magnitude proportional to the speed and assumed different friction coefficients in perpendicular and parallel directions (Boyle et al., 2012), which guarantees that linearity in velocity is preserved in frictional force as well (Details in \u2018Preservation of linearity in friction\u2019 of Appendix). Because of this preservation of linearity, the frictional forces of translational motion (Figure 1D) and rotational motion (Figure 1E) can be calculated separately and added together to find total frictional force and torque. Previously known values of the friction coefficients in perpendicular and parallel directions are used (Boyle et al., 2012).\n\nLet the perpendicular and parallel friction coefficients be $b_{\u22a5}$ and $b_{\u2225}$ for a straightened worm, respectively. Each rod experiences $1/n$ of the frictional force the worm gets. Thus, the perpendicular and parallel friction coefficients of each rod are $b_{\u22a5}/n$ , $b_{\u2225}/n$ , respectively. The ratio of perpendicular friction coefficient to parallel friction coefficient ($b_{\u22a5}/b_{\u2225}$) is 40 in agar plate and 1.5 in water (Berri et al., 2009; Boyle et al., 2012). This ratio is an important determining factor in whether the locomotion would be crawling or swimming (Boyle et al., 2012). The total frictional force that i-rod receives is $F_{b,i}=\u2212\\frac{b_{\u2225}}{n}(v_{i}\u22c5r^_{i})r^_{i}\u2212\\frac{b_{\u22a5}}{n}(v_{i}\u22c5N^_{i})N^_{i}$ (\u2018\u00b7\u2019: dot product of vectors, $r^_{i}\u2261[cos\u2061(s_{i})sin\u2061(s_{i})]^{T}$ : unit vector parallel to i-rod,  $N^_{i}\u2261[\u2212sin\u2061(s_{i})cos\u2061(s_{i})]^{T}$ : unit vector perpendicular to i-rod), and the total frictional torque that i-rod receives is $\\tau_{b,i}=\u2212\\frac{1}{3}\\frac{b_{\u22a5}}{n}r^{2}\\omega_{i}$ (positive or negative values are for torque pointing away from or into the paper plane, respectively.) (The proof is in \u2018Frictional torque by rotational motion\u2019 of Appendix).\n\nMature hermaphrodite C. elegans has four muscle strands at the left dorsal, right dorsal, left ventral, and right ventral part of the body, and each muscle strand has 24, 24, 23, and 24 muscle cells, respectively (White et al., 1986). Muscle cells at similar positions on the anterior-posterior axis have an activity pattern in that muscles on one side (either dorsal or ventral) cooperate, and those on the opposite side have alternative activities. (Hall and Altun, 2008).\n\nTherefore, we modeled a group of about four muscle cells, which are left dorsal, right dorsal, left ventral, and right ventral, at the same position on the anterior-posterior axis as one actuator (Figure 1C) so that there is a total of 24 ($\u224324+24+23+24/4$) actuators in the worm. On i-joint of the chain, there is an actuator labeled as i-actuator. As the number of actuators is 24, we set the number of rod($n$) as 25, which is one more than the number of actuators. The actuator was modeled as a damped torsional spring due to the viscoelastic characteristics of muscle (Boyle et al., 2012; Hill, 1938). If the dorsal muscles of i-actuator contract more than the ventral muscles, i-actuator will bend to the dorsal direction and vice versa. To express this phenomenon by an equation, we defined the torque that i-actuator exerts on i-rod as $\\tau_{i}=\\tau_{\u03ba,i}+\\tau_{c,i}$ that the elastic term is $\\tau_{\u03ba,i}=\u03ba\\theta_{i}-\\theta_{ctrl,i}$ and the damping term is $\\tau_{c,i}=c\\omega_{i+1}-\\omega_{i}$ where $\\theta_{ctrl,i}$ is control angle, $\\theta_{i}=s_{i+1}-s_{i}$ , and $\u03ba$ and $c$ are the elasticity and damping coefficients of an actuator, respectively.\n\nControl angle ($\\theta_{ctrl,i}$) is a variable inside the elastic part of the muscle torque ($\\tau_{\u03ba,i}$), to which $\\tau_{\u03ba,i}$ drives $\\theta_{i}$ close. Also, the control angle ($\\theta_{ctrl,i}$), which can be expressed by a heatmap (Figures 2A, C, 3A and B), is an input value based on experimental data, a numerical model, or a neuronal network model. $\\tau_{c,i}$ represents the damping effect of muscle cells and somatic cells near i-actuator. The elasticity coefficient ($\u03ba$) and damping coefficient ($c$) of an actuator were induced from previously known values (Boyle et al., 2012) (Details in \u2018Worm\u2019s mass, actuator elasticity coefficient, and damping coefficient\u2019 of Appendix).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig2-v1.jpg)\n\n**Figure 2.:** (A) Crawling kymogram. Kymogram indicates the angle of i-joint which is located between i-rod and (i+1)-rod. Red and blue color mean i-joint bend in the dorsal and ventral directions, respectively. (B) Crawling trajectory. The yellow circle indicates the position of the worm\u2019s head. The Orange and sky-blue lines show the worm\u2019s head and tail trajectories, respectively. (C) Swimming kymogram. (D) Swimming trajectory.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** During the worm\u2019s locomotion, the parts receiving force in the direction of progress are marked in red, and the parts receiving force in the opposite direction are marked in cyan. (A) Crawling propulsion mechanism. During crawling, the worm gains propulsion from the body parts diagonal to the direction of progress. (B) Swimming propulsion mechanism. During swimming, the worm generates propulsion when it bends into a C-shape. While the worm\u2019s speed is almost constant during crawling, it is not constant during swimming.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig3-v1.jpg)\n\n**Figure 3.:** The length and direction of a black arrow indicate the magnitude and direction of the frictional force ($\u2212F_{b,i}^{(t)}$) that the corresponding body part, which is the starting point of the arrow, exerts on the surface. (A) Escaping behavior kymogram. Triangles over the heatmap indicate the corresponding time of snapshots shown in Figure (C). (B) Delta-turn kymogram. Triangles over the heatmap indicate the corresponding time of snapshots shown in Figure (D). (C) Escaping behavior trajectory. (D) Delta-turn trajectory. The arrow length scale is different from Figure (C) to clearly show the arrows' directions and head and tail tracks.\n\nBy assuming that i-rod receives torque ($\\tau_{i}$) from i-actuator, and (i+1)-rod receives torque ($-\\tau_{i}$), we can depict the bending that arises from the differential contraction of the dorsal and ventral muscles in i-actuator. The total muscle torque that i-rod receives from damped torsional springs on both ends is $\\tau_{c\u03ba,i}=\\tau_{i}-\\tau_{i-1}$ . The total muscle force ($F_{c\u03ba,i}$) that i-rod receives from both of its ends is as follows (Details in \u2018Proof of muscle force\u2019 of Appendix).\n\n$$\nF_{c\u03ba,i}=\\sumj=\u221210\\frac{(\u22121)^{j\u22121}\\tau_{i+j}sin\u2061\\frac{\\theta_{i+j}}{2}}{rcos^{2}\u2061\\frac{\\theta_{i+j}}{2}}[cos\u2061(\\frac{s_{i+j}+s_{i+j+1}}{2})sin\u2061(\\frac{s_{i+j}+s_{i+j+1}}{2})]\n$$\n\nTwo neighboring rods (i-rod and (i+1)-rod) are connected at i-joint. Therefore, when a force is applied to i-rod, (i+1)-rod also receives distributed force (Figure 1F) which we name as \u2018joint force.\u2019 The joint force that (i+1)-rod exerts on i-rod is symbolized as $F_{i}\u2261F_{(i+1)i}$ . By Newton\u2019s third law of motion about action and reaction, the joint force that i-rod exerts on (i+1)-rod is $F_{i(i+1)}=\u2212F_{(i+1)i}=\u2212F_{i}$ (Figure 1F). Joint force ($F_{i}$) can be calculated from the previously introduced given values ($s_{i}$ , $F_{c\u03ba,i}$ , $F_{b,i}$ , $\\tau_{c\u03ba,i}$ , $\\tau_{b,i}$) (Details in \u2018Joint force calculation method\u2019 of Appendix). When $F_{0}=F_{n}=0$ , then the total joint force that i-rod receives is $F_{joint,i}=F_{i}\u2212F_{i\u22121}$ and the total torque caused by joint force is $\\tau_{joint,i}=[r_{i}\\times(F_{i}+F_{i+1})]$ where \u2018\u00d7\u2019 between two vectors means cross-product.\n\nAs all forces and torques are found, $d_{c}^{(t)}$ , $v_{c}^{(t)}$ , $s_{i}^{(t)}$ , $\\omega_{i}^{(t)}$ can be calculated by solving translational and rotational Newtonian equations of motion with numerical integration. The time-step ($\u0394t$) used in this work is $10^{-5}$ s unless otherwise noted. Because the only external force exerts on the worm is the frictional force, the equation of translational motion is $a_{c}=\\frac{\\sumiF_{b,i}}{M}$ . If friction coefficients ($b_{\u22a5}$ , $b_{\u2225}$) are significantly greater than $\\frac{M}{\u0394t}$ , numerical integration using the explicit Euler method ($v_{c}^{(t+\u0394t)}=v_{c}^{(t)}+a_{c}^{(t)}\u0394t=v_{c}^{(t)}+\\frac{\\sumiF_{b,i}}{M}\u0394t$) becomes unstable (Butcher, 2003). So, we tackled this instability of numerical integration by developing semi-implicit Euler Method ($v_{c}^{(t+\u0394t)}=v_{c}^{(t)}+a_{c}^{(t+\u0394t)}\u0394t\u2243v_{c}^{(t)}+\\frac{1}{1+\\frac{b_{\u22a5}\u0394t}{M}}\\frac{\\sumiF_{b,i}^{(t)}}{M}\u0394t$), which makes numerical integration stable when any frictional coefficients greater than or equal to 0 is given (Details in \u2018Proof of numerical integration for the translational motion of a worm using semi-implicit Euler method\u2019 of Appendix).\n\nThe equation of rotational motion of i-rod is $I\\alpha_{i}=\\tau_{total,i}=\\tau_{b,i}+\\tau_{c\u03ba,i}+\\tau_{joint,i}$ . When the friction-related value ($b_{\u2225}r^{2}$), elasticity-related value ($\u03ba\u0394t$), or damping coefficient($c$) is significantly larger than $\\frac{I}{\u0394t}$ , numerical integration using explicit Euler method ($\\omega_{i}^{(t+\u0394t)}=\\omega_{i}^{(t)}+\\alpha_{i}^{(t)}\u0394t=\\omega_{i}^{(t)}+\\frac{\\tau_{total,i}^{(t)}}{I}\u0394t$) becomes unstable (Butcher, 2003). To solve this instability, we constructed a semi-implicit Euler method for rotational motion and an error-corrected equation for angular momentum (Details in \u2018Numerical integration of the rotational motion of i-rod using semi-implicit Euler method\u2019 and \u2018Correction formula for the rotational inertia of the entire worm\u2019 of Appendix). By using these semi-implicit Euler methods, solutions for $d_{c}^{(t)}$ , $v_{c}^{(t)}$ , $s_{i}^{(t)}$ , $\\omega_{i}^{(t)}$ of a worm at a given time can be available for the ground surface of agar whose $b_{\u22a5}$ , $b_{\u2225}$ are significantly larger than $\\frac{M}{\u0394t}$ , water which has smaller friction coefficients than agar, or frictionless ground surface.\n\n### Can C. elegans in ElegansBot crawl or swim?\n\nA kymogram is a heatmap that shows body angle, $\\theta_{i}^{(t)}$ ($i\\in{1,\u22ef,n\u22121}$) at a given time, $t$. By fitting a sine function to the kymogram of previous work (Vidal-Gadea et al., 2011), we obtained linear-wavenumber (after this referred to as wavenumber) and period of C. elegans crawling on the agar plate and swimming in water. The wavenumber ($\u03bd$) and the period ($T$) are, respectively, 1.832 and 1.6 (s) on the agar plate and 0.667 and 0.4 (s) in water. For both crawling and swimming, amplitude ($A$) was set to 0.6 (rad) arbitrarily to match the trajectory shown in the experimental video (Vidal-Gadea et al., 2011). Each kymogram of crawling (Figure 2A) and swimming (Figure 2C) was calculated by substituting amplitude ($A$), wavenumber ($\u03bd$), and period ($T$) into into $\\theta_{ctrl,i}^{(t)}=Acos\u2061(2\\pi(\u03bd(i\u22121)/(n\u22122)\u2212t/T))$ .\n\nCrawling trajectory, which performs sinusoidal locomotion in the positive x-axis direction, was obtained by inputting a crawling kymogram as $\\theta_{ctrl,i}^{(t)}$ input to ElegansBot (Figure 2B). Regarding crawling, the head track and the tail track have similar shapes. However, the tail track is more toward the negative x-axis direction than the head track. The difference between the head and tail tracks indicates that the worm pushes the ground surface by the distance between the head track and tail track to obtain thrust (Figure 2B). Indeed, we found that the body part placed diagonally with respect to the direction of the worm\u2019s locomotion is pushing along the ground surface (Figure 2\u2014figure supplement 1A). The thrust force of the worm cancels out most of the drag force, which enables the worm to move at nearly constant velocity. The average velocity of the worm is 0.208 (mm/s), which is consistent with the known values (Cohen et al., 2012; Jung et al., 2016; Omura et al., 2012; Shen et al., 2012).\n\nIn the previous work, the worm showed swimming behavior in a water droplet on an agar plate (Vidal-Gadea et al., 2011). As the friction coefficient of water is smaller than that of agar, even though the area that the worm swept was wider during swimming than crawling, the worm did not move forward much in comparison to the area it swept (Figure 2D). The worm gained significant momentum in the forward direction of locomotion when the body bent in the c-shape (Figure 2\u2014figure supplement 1B). In contrast to crawling, during swimming, the worm did not receive constant thrust force over time. Thus, the speed of the worm exhibited significant oscillations over time (Figure 2\u2014figure supplement 1B), and the average velocity was 0.223 (mm/s).\n\n### ElegansBot exhibits more complex behavior including the turn motion\n\nUnlike previous C. elegans body kinematic simulation studies, our simulation can replicate the worm\u2019s behavior using a kymogram (Figure 3A and B) derived from experimental videos. We utilized open-source software, Tierpsy Tracker (Javer et al., 2018) and WormPose (Hebert et al., 2021), to obtain the kymogram input ($\\theta_{ctrl,i}^{(t)}$) for the ElegansBot. Through simulation, we aimed to reproduce the omega-turn and delta-turn behaviors observed in the experimental videos (Broekmans et al., 2016). When we used the vertical and horizontal friction coefficients $b_{\u22a5}$ and $b_{\u2225}$ on agar, as proposed in the previous work (Boyle et al., 2012), the trajectory was not accurately replicated. Given that the friction coefficients could vary depending on the concentration of the agar gel, we used $b_{\u22a5}/100$ and $b_{\u2225}/100$ for the vertical and horizontal friction coefficients, respectively, which resulted in a better trajectory replication (Details in \u2018Proper selection of friction coefficients\u2019 in Appendix).\n\nThe trajectory (Figure 3C and D, Figure 3\u2014videos 1 and 2) obtained from ElegansBot accurately reproduces the experimental video (Broekmans et al., 2016). The changes in the direction of movement caused by turns are well replicated. Additionally, during the omega-turn or delta-turn, the body briefly performs a deep bend, and we newly discovered the mechanism that gains significant propulsion from the deep bend region to change direction using ElegansBot (Figure 3C and D). Moreover, the ElegansBot accurately reproduces not only the turns but also complex behaviors like the sequence of forward-backward-turn-forward, also known as escaping behavior.\n\nAdditionally, we calculated the mechanical power of the worm as a quantitative indicator to explain its locomotion during sequenced locomotive behavior, based on behavior classification (forward, backward locomotion, or turn, as defined in Methods). During escaping behavior, the worm produced an average power of 2094 fW in the initial forward locomotion, followed by an average of 16,437 fW (7.85 times that of the initial forward locomotion) in backward locomotion, and an average of 11,118 fW (5.31 times that of the initial forward locomotion) during turning (Figure 4A). After turning and resuming forward locomotion, it produced an average power of 5480 fW (2.62 times that of the initial forward locomotion). This indicates that the worm produced more power than that of initial forward locomotion to escape sudden threats. Let\u2019s denote the average of a quantity for all given $i$ as $\u27e8\u2217\u27e9_{i}$ . At the moment the worm formed a deep bend (t=11.2 s), the average magnitude of frictional force of the body part forming the deep bend ($\u27e8|F_{b,i}^{(t)}|\u27e9_{i}$ where i=4 to 15) was 3536 pN, compared to the average magnitude of the remaining parts ($\u27e8|F_{b,i}^{(t)}|\u27e9_{i}$ = 1737 pN where i=1 to 3 or i=16 to 25), which was 2.04 times greater (Figure 3C, Figure 4A). We analyzed delta-turn in the same manner. The worm produced an average power of 3514 fW in the initial forward locomotion, followed by an average of 11,176 fW (3.18 times that of the initial forward locomotion) in subsequent backward locomotion. In the relatively short duration of forward locomotion following the backward locomotion, the worm produced an average power of 17,544 fW (4.99 times that of the initial forward locomotion), and an average of 13,046 fW (3.71 times that of the initial forward locomotion) during turns (Figure 4B). After the turn, when resuming forward locomotion, the worm produced an average power of 6429 fW (1.83 times that of the initial forward locomotion). At the moment the worm formed a deep bend (t=6.1 s), the average magnitude of frictional force of the body part ($\u27e8|F_{b,i}^{(t)}|\u27e9_{i}$ where i=16 to 25) was 10,497 pN, compared to the average magnitude of the remaining parts ($\u27e8|F_{b,i}^{(t)}|\u27e9_{i}$ = 2,677 pN where i=1 to 15), which was 3.92 times greater (Figure 3D, Figure 4B). In both escaping behavior and delta-turn, the worm consistently produced more power in the subsequent backward locomotion and turn than in the initial forward locomotion.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig4-v1.jpg)\n\n**Figure 4.:** (A) Escaping behavior. The top panel represents the frictional force $F_{b,i}^{(t)}$ experienced by i-rod. As indicated on the color wheel to the right, the hue of this heatmap represents the direction of the force, and the saturation represents the magnitude of the force. The second panel from the top shows the magnitude of the frictional force $|F_{b,i}^{(t)}|$ . The third panel from the top represents the average $\u27e8|F_{b,i}^{(t)}|\u27e9_{i}$ (black solid line) of each column in the middle panel and the power (red dotted line), which is the amount of energy the worm consumes per unit time. The bottom panel represents the classification of the worm\u2019s behavior (blue: forward locomotion, red: backward locomotion, green: turn) (The definitions of behavioral categories are in Methods). The triangles over each panel indicate the corresponding time of the snapshots depicted in Figure 3C. (B) Delta-turn. The triangles over each panel indicate the corresponding time of the snapshots depicted in Figure 3D.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Escaping behavior. The top heatmap represents the body angle $\\theta_{i}^{(t)}$ . The second panel from the top is the sine fitting of $\\theta_{i}^{(t)}$ , denoted as $\\theta^_{i}^{(t)}$ . The third to the eighth panels present the parameters derived from the sine fitting (amplitude $A^{(t)}$ , wavelength $\\lambda^{(t)}$ , phase $\u03be_{0}^{(t)}$ , body angle bias $\\theta_{0}^{(t)}$), and values derived from these parameters ($\u03be~_{0}^{(t)}$ , $\\frac{d\u03be~_{0}^{(t)}}{dt}$). The black solid line represents the actual value, and the red solid line represents the smoothed value. The bottom panel shows the behavior classification calculated from $\\theta_{0}^{(t)}$ and $\\frac{d\u03be~_{0}^{(t)}}{dt}$ (blue: forward locomotion, red: backward locomotion, green: turn). (B) Delta-turn.\n\n### ElegansBot presents body shape ensembles of C. elegans from a shape in water en route to agar\n\nWhile there have been studies on how locomotion patterns change in agar and water by merging neural and kinematic simulations (Boyle et al., 2012), there have been none that solely used kinetic simulation to analyze how speed manifests depending on the frequency and period of locomotion. We demonstrate this aspect. We studied the locomotion speed of the worm under different friction coefficients, which represent the influence of water, agar, and intermediate frictional environment, using ElegansBot. The vertical and horizontal friction coefficients in water are $b_{water,\u22a5}=5.2\\times10^{3}$ (\u03bcg/sec) and $b_{water,\u2225}=b_{water,\u22a5}/1.5$ , respectively, while in agar, these values are $b_{agar,\u22a5}=1.28\\times10^{8}$(\u03bcg/sec) and $b_{agar,\u2225}=b_{agar,\u22a5}/40$ (Boyle et al., 2012). For environmental index $\\sigma\\in0,1$ , we have defined the vertical and horizontal friction coefficients in the environment between water ($\\sigma=0$) and agar ($\\sigma=1$) as $b_{\\sigma,\u22a5}=b_{water,\u22a5}^{1\u2212\\sigma}b_{agar,\u22a5}^{\\sigma}$ and $b_{\\sigma,\u2225}=b_{water,\u2225}^{1\u2212\\sigma}b_{agar,\u2225}^{\\sigma}$ , respectively.\n\nUnder an environmental index $\\sigma$, for various pairs of frequency-period ($\u03bd$, $T$) when the control angle is $\\theta_{ctrl,i}^{(t)}=Acos\u2061(2\\pi(\u03bd\\frac{i\u22121}{23}\u2212\\frac{t}{T}))$ (with  $A$ = 0.6 (rad)), we have found the ($\u03bd$, $T$) that maximizes the worm\u2019s average velocity(optimal ($\u03bd$, $T$)) (Figure 5A). The optimal ($\u03bd$, $T$) exhibits a nearly linear distribution (Figure 5B). We noticed a transition from swimming body shape to crawling body shape as $\\sigma$ varies (Figure 5, Figure 5\u2014figure supplement 1). The optimal ($\u03bd$, $T$) for  $\\sigma$=0(water) is (0.65, 0.4 s), matching the actual ($\u03bd$, $T$) value of swimming behavior (Vidal-Gadea et al., 2011). The optimal ($\u03bd$, $T$) for  $\\sigma$=1(agar) is (1.9, 0.8 s), and the optimal $\u03bd$ (1.9) matches the actual $\u03bd$ value (1.832) for crawling behavior (Vidal-Gadea et al., 2011), with the optimal T (0.8 s) being half the actual T value (1.6 s).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig5-v1.jpg)\n\n**Figure 5.:** (A) Average velocity of the worm as a function of wavenumber ($\u03bd$) and period ($T$) for a given friction coefficient. The star symbol indicates the pair of ($\u03bd$, $T$) that maximizes the worm\u2019s average velocity. (B) For each environmental index $\\sigma$, the pair of ($\u03bd$, $T$) that maximizes the worm\u2019s average velocity. The worm figures inside the small rectangles pointed to by the arrows represent the body shape corresponding to the respective ($\u03bd$, $T$) pair.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Transition of body shape from water ($\\sigma=0$) to agar ($\\sigma=1$).(A) The average velocity of the worm according to the wavenumber $\u03bd$ and period $T$ to the friction coefficient by $\\sigma$. The star marker denotes the pair of ($\u03bd$, $T$) that maximizes the average velocity of the worm (i.e., optimal ($\u03bd$, $T$)). As $\\sigma$ increases and the friction coefficient gradually increases, the optimal ($\u03bd$, $T$) transitions from the upper left to the lower right. (B) The body shape and locomotion pattern due to the pair of ($\u03bd$, $T$) that maximizes the average velocity of the worm for the friction coefficient by $\\sigma$.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The effect of the environmental index $\\sigma$ on escaping behavior.(A) The trajectory of the worm depends on the environmental index $\\sigma$. (B) Characteristics of the trajectory. The top graph represents $E_{\\theta}=\u27e8|\\theta_{i}^{(t)}\u2212\\theta_{ctrl,i}^{(t)}|\u27e9_{i,t}$. The middle graph shows the total traveled distance of the worm. The bottom graph represents the total absolute angle change ($S=\\sumt=0T\u2212\u0394t|\u27e8s_{i}^{(t+\u0394t)}\u27e9_{i}\u2212\u27e8s_{i}^{(t)}\u27e9_{i}|$).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/92562/elife-92562-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The effect of the environmental index $\\sigma$ on the delta-turn.(A) The trajectory of the worm for each environmental index $\\sigma$. (B) Characteristics of the trajectory. The top graph represents $E_{\\theta}=\u27e8|\\theta_{i}^{(t)}\u2212\\theta_{ctrl,i}^{(t)}|\u27e9_{i,t}$ . The middle graph shows the total traveled distance of the worm. The bottom graph represents the total absolute angle change ($S=\\sumt=0T\u2212\u0394t|\u27e8s_{i}^{(t+\u0394t)}\u27e9_{i}\u2212\u27e8s_{i}^{(t)}\u27e9_{i}|$).\n\nWe wanted to understand the impact of the environmental index $\\sigma$ not only on forward locomotion but also on sequenced locomotive behavior. First, we analyzed the effect of the environmental index $\\sigma$ on escaping behavior as follows. Let\u2019s denote the set of a quantity for all pairs of index $i$ and time $t$ as ${\u2217}_{i,t}$ . When the escaping behavior kymogram input ${\\theta_{ctrl,i}^{(t)}}_{i,t}$ was same as Figure 3A, we explored the effect of vertical and horizontal friction coefficients on the worm\u2019s motion. Where $\\sigma$ ranged from 1.0 to 0, the trajectory varied with $\\sigma$ (Figure 5\u2014figure supplement 2A), and $E_{\\theta}=\u27e8|\\theta_{i}^{(t)}\u2212\\theta_{ctrl,i}^{(t)}|\u27e9_{i,t}$ decreased as $\\sigma$ decreased (Figure 5\u2014figure supplement 2B). From  $\\sigma$ = 1.0 to $\\sigma$ = 0.1, the total absolute angular change ($S=\\sumt=0T\u2212\u0394t|\u27e8s_{i}^{(t+\u0394t)}\u27e9_{i}\u2212\u27e8s_{i}^{(t)}\u27e9_{i}|$ where $T$ is the total time of the experimental video.) increased as $\\sigma$ decreased. However, from  $\\sigma$ = 0.7 to $\\sigma$ = 0, $S$ remained constant within the error of 0.33 rad, and the total traveled distance($\\sumt|v_{c}^{(t)}\u0394t|$) decreased as $\\sigma$ decreased. The maximum total traveled distance was at  $\\sigma$ = 0.8. Using the same analysis method with the kymogram input ${\\theta_{ctrl,i}^{(t)}}_{i,t}$ same as Figure 3B, we analyzed the impact of the environmental index $\\sigma$ on delta-turn. Where $\\sigma$ ranged from 1.0 to 0, the trajectory varied with $\\sigma$ (Figure 5\u2014figure supplement 3A), and $E_{\\theta}$ also decreased as $\\sigma$ decreased (Figure 5\u2014figure supplement 3B). From  $\\sigma$ = 1 to $\\sigma$ = 0.6, $S$ increased as $\\sigma$ decreased. From  $\\sigma$ = 0.6 to $\\sigma$ = 0, $S$ decreased as $\\sigma$ decreased. The maximum total traveled distance was at  $\\sigma$ = 0.9. From  $\\sigma$ = 0.9 to $\\sigma$ = 0, the total traveled distance decreased as $\\sigma$ decreased.\n\n## Discussion\n\n### ElegansBot is an advanced kinetic simulator that reproduces C. elegans' various locomotion\n\nThe known crawling speed range of C. elegans (Cohen et al., 2012; Jung et al., 2016; Omura et al., 2012; Shen et al., 2012) matches the speed in our simulation. The force dispersion pattern of the forward movement of a snake (Hu et al., 2009) is similar to the force dispersion pattern of crawling in our model, where the body part placed diagonally in the direction of movement generates thrust. The head and tail tracks of our simulation resemble the trace left on the agar plate by C. elegans during locomotion (Yeon et al., 2018), providing evidence of the mechanism where C. elegans moves forward by pushing along the ground surface. Given that friction and elasticity coefficients can vary between experiments, the appropriate selection of these values allows the trajectories of omega-turns and delta-turns in our simulations to match the experimental videos (Broekmans et al., 2016). Previous work (Berri et al., 2009; Boyle et al., 2012) eliminated inertia from the equations of motion, but our simulation includes it, allowing calculation even in cases where inertia is significant due to low friction coefficients. Using the crawling and swimming wavenumbers and periods from the experiments (Vidal-Gadea et al., 2011), we computed sine functions to create trajectories for crawling and swimming. We also analyzed how friction forces act on the worm during crawling and swimming, studying how the worm gains propulsion. We demonstrated that we could reproduce various locomotion observed in experimental videos, such as forward-backward-(omega turn)-forward constituting escaping behavior and delta-turn navigation, by providing the kymogram obtained from representative physical values from the experimental videos, as well as the kymogram obtained from a program (Hebert et al., 2021; Javer et al., 2018) extracting the body angles from actual experimental videos into ElegansBot. Our established Newtonian equations of motion are accurate and robust, suggesting that not only does our simulation replicate the experimental videos, but it also provides credible estimates for detailed forces.\n\n### ElegansBot will serve as a strong bridge for enhancing the knowledge in \u2018from-synapse-to-behavior\u2019 research\n\nOur method could be used for kinetic analysis of behaviors not covered in this paper. It could also be used when analyzing behavior changes caused by mutation or ablation experiments. Given that our simulation allows for kinetic analysis, it could be used to calculate the energy expended by the worm during locomotion, serving as an activity index. Our simulation only requires the body angles as input data, so even if the video angle shifts and trajectory information is lost, the trajectory can be recovered from the kymogram. Our simulation could also be used when studying neural circuit models of C. elegans. It could be used to check how signals from neural network models manifest as behaviors which is a needed function from previous work (Sakamoto et al., 2021), and it could be used when studying compound models of neural circuits and bodies. For example, when creating models that receive proprioception input based on body shape (Boyle et al., 2012; Ekeberg, 1993; Izquierdo and Beer, 2018; Niebur and Erd\u00f6s, 1991), our method could be used. Finally, our method could be used in general for the broad utility to analyze the motion of rod-shaped animals like snakes or eels and to simulate the motion of rod-shaped robots.\n\n## Methods\n\n### Frequency and wavelength of C. elegans locomotion\n\nSine function fitting was applied to the crawling and swimming kymograms (Vidal-Gadea et al., 2011) to determine the frequency and wavelength of C. elegans locomotion on agar and water.\n\n### C. elegans locomotion videos\n\nVideos of C. elegans' escaping behavior and foraging behavior were obtained from previous work (Broekmans et al., 2016). A single representative video out of a total of one hundred escaping behavior videos was used as data in this paper. Additionally, only the delta-turning portion of the foraging behavior videos was cut out and used as data in this paper.\n\n### Obtaining kymograms from video\n\nThe following method was used to extract the kymogram from the video of C. elegans: The body angles and midline were extracted using Tierpsy Tracker (Javer et al., 2018) from the original video where the worm is locomoting. Tierpsy Tracker failed to extract the midline of the worm when the body parts meet or the worm is coiled. The midline information of the frames successfully predicted by Tierpsy Tracker and the original video information were used as ground truth training data for a program called WormPose (Hebert et al., 2021). WormPose trained an artificial neural network to extract the body angles and midline of a coiled worm using a generative method based on the input data. The body angles were extracted from the original video using the trained WormPose program. For the frames where Tierpsy Tracker failed to extract the body angles, it was replaced with the body angles extracted by WormPose. Nonetheless, there were frames where the body angle extraction failed. If the period of failed body angle prediction was continuously less than three frames (about 0.01 s), the body angles for that period was predicted using linear interpolation.\n\n### Program code and programming libraries\n\nEquations for the chain model, friction model, muscle model, and numerical integration that constitute the ElegansBot were designed from the body angle information and kymogram that change every moment of time. Python (van Aken et al., 1995) version 3.8 was used to implement the equations constituting ElegansBot as a program. NumPy (Harris et al., 2020) version 1.19 was used for numerical calculations, and Numba (Lam et al., 2015) version 0.54 was used for CPU calculation acceleration. SciPy (Virtanen et al., 2020) version 1.5 was used for curve fitting and Savitzky-Golay filter (Savitzky and Golay, 1964) to classify the worm\u2019s behavioral categories. The Matplotlib (Hunter, 2007) library was used to represent C. elegans' body pose and trajectory in figures and videos. The program code used in the research can be obtained from the open database GitHub (Taegon Chung, 2023, ElegansBot, 1.0.1, https://github.com/taegonchung/elegansbot, copy archived at Chung, 2024) or Python software repository PyPI (https://pypi.org/project/ElegansBot/), and the web live demo can be found at GitHub Page (https://taegonchung.github.io/elegansbot/). This code calculated the ElegansBot simulation of 10 s of simulation time in about 10 s of run-time on an Intel E3-1230v5 CPU.\n\n### Physical constants of the ground surface\n\nThe friction coefficient values for the ground surface where C. elegans crawled and swam and the elastic and damping coefficients of C. elegans muscles were obtained from previous work (Boyle et al., 2012). The muscle elasticity and damping coefficients were converted into coefficients for the damped torsional spring to be used in our model (Details in \u2018Worm\u2019s mass, actuator elasticity coefficient, and damping coefficient\u2019 of Appendix).\n\n### Defining behavioral categories\n\nWe determined the classification of the worm\u2019s behavior over time as follows. Let $\u03be_{i}\u2261(i\u22121)/(n\u22122)$ (i.e., $0\\leq\u03be_{i}\\leq1$). We defined a sine function fitting for the body angle $\\theta_{i}^{(t)}$ as $\\theta^_{i}^{(t)}=A^{(t)}sin\u2061((2\\pi/\\lambda^{(t)})(\u03be_{i}\u2212\u03be_{0}^{(t)}))+\\theta_{0}^{(t)}$ (where $A^{(t)}\\geq0$ and $0\\leq\u03be_{0}^{(t)}<\\lambda^{(t)}$). Let us denote the set of a quantity for all $i$ as ${*}_{i}$ . For a given time $t$, by curve fitting the function $\\theta^_{i}^{(t)}$ to the set of body angles ${\\theta_{i}^{(t)}}_{i}$ , we can obtain the parameters ($A^{(t)}$ , $\\lambda^{(t)}$ , $\u03be_{0}^{(t)}$ , $\\theta_{0}^{(t)}$) (Figure 4\u2014figure supplement 1). For curve fitting, we used 'curve_fit' from the scipy library (Virtanen et al., 2020). \u2018curve_fit\u2019 requires the function to be fitted, the data, and the initial guess values of the function parameters. Therefore, we determined the initial guess values ($A^^{(t)}$ , $\\lambda^^{(t)}$ , $\u03be^_{0}^{(t)}$ , $\\theta^_{0}^{(t)}$) as follows. For $t=0$, we calculated ($A^^{(0)}$ , $\\lambda^^{(0)}$ , $\u03be^_{0}^{(0)}$ , $\\theta^_{0}^{(0)}$) using the following equations:\n\n$$\nA^^{(0)}=\\frac{1}{2}(maxi(\\theta_{i}^{(0)})\u2212mini(\\theta_{i}^{(0)}))\\lambda^^{(0)}=\\frac{2}{n\u22122}(argmaxi(\\theta_{i}^{(0)})\u2212argmini(\\theta_{i}^{(0)}))\u03be^_{0}^{(0)}=\\frac{1}{n\u22122}(argmaxi(\\theta_{i}^{(0)}))\u2212\\frac{\\lambda^^{(0)}}{4}\\theta^_{0}^{(0)}=\\frac{1}{n\u22121}(\\sumi\\theta_{i}^{(0)})\n$$\n\nUsing these initial guess values, we curve-fitted $\\theta^_{i}^{(0)}$ to ${\\theta_{i}^{(0)}}_{i}$ to obtain ($A^{(0)}$ , $\\lambda^{(0)}$ , $\u03be_{0}^{(0)}$ , $\\theta_{0}^{(0)}$). For $t\\geq\u0394t$, we obtained the initial guess values for curve fitting as $A^^{(t)}=A^{(t\u2212\u0394t)}$ , $\\lambda^^{(t)}=\\lambda^{(t\u2212\u0394t)}$ , $\u03be^_{0}^{(t)}=\u03be_{0}^{(t\u2212\u0394t)}$ , $\\theta^_{0}^{(t)}=\\theta_{0}^{(t\u2212\u0394t)}$ . Then, using these initial guess values, we curve-fitted $\\theta^_{i}^{(t)}$ to ${\\theta_{i}^{(t)}}_{i}$ to obtain ($A^{(t)}$ , $\\lambda^{(t)}$ , $\u03be_{0}^{(t)}$ , $\\theta_{0}^{(t)}$). Since the phase $\u03be_{0}^{(t)}$ is not continuous for all time $t$, we defined a continuous value $\u03be~_{0}^{(t)}$ for all time $t$ as follows (Figure 4\u2014figure supplement 1):\n\n$$\n\u03be~_{0}^{(t)}={\u03be_{0}^{(t)}if\u00a0t=0\u03be_{0}^{(t)}\u2212\u03be_{0}^{(t\u2212\u0394t)}+\u03be~_{0}^{(t\u2212\u0394t)}if\u00a0t>0\u00a0and\u00a0\u2212\\frac{\\lambda^{(t)}}{2}\\leq\u03be_{0}^{(t)}\u2212\u03be_{0}^{(t\u2212\u0394t)}\\leq\\frac{\\lambda^{(t)}}{2}\u03be_{0}^{(t)}\u2212\u03be_{0}^{(t\u2212\u0394t)}+\u03be~_{0}^{(t\u2212\u0394t)}+\\lambda^{(t)}if\u00a0t>0\u00a0and\u00a0\u03be_{0}^{(t)}\u2212\u03be_{0}^{(t\u2212\u0394t)}<\u2212\\frac{\\lambda^{(t)}}{2}\u03be_{0}^{(t)}\u2212\u03be_{0}^{(t\u2212\u0394t)}+\u03be~_{0}^{(t\u2212\u0394t)}\u2212\\lambda^{(t)}if\u00a0t>0\u00a0and\u00a0\\frac{\\lambda^{(t)}}{2}<\u03be_{0}^{(t)}\u2212\u03be_{0}^{(t\u2212\u0394t)}\n$$\n\nTo obtain the derivatives of the noise-reduced smoothed values $\u03be\u00af_{0}^{(t)}$ and $\\theta\u00af_{0}^{(t)}$ for the raw data $\u03be~_{0}^{(t)}$ and $\\theta_{0}^{(t)}$ , respectively, we applied a Savitzky-Golay filter (Savitzky and Golay, 1964; Virtanen et al., 2020). This filter, set with a smoothing time window of 0.5 s, a polynomial order of 2, and a derivative order of 1, yielded $\\frac{d\u03be\u00af_{0}^{(t)}}{dt}$ and $\\frac{d\\theta\u00af_{0}^{(t)}}{dt}$ . We then calculated the temporal integrals $\u03be^{\u2032}_{0}^{(\u03b6)}\u2261\\sumt=0\u03b6\\frac{d\u03be\u00af_{0}^{(t)}}{dt}\u0394t$ and $\\theta^{\u2032}_{0}^{(\u03b6)}\u2261\\sumt=0\u03b6\\frac{d\\theta\u00af_{0}^{(t)}}{dt}\u0394t$. Let us denote the average of a quantity for all time t as $\u27e8\u2217\u27e9_{t}$. We calculated $\u03be\u00af_{0}^{(t)}=\u03be^{\u2032}_{0}^{(t)}\u2212\u27e8\u03be^{\u2032}_{0}^{(t)}\u27e9_{t}+\u27e8\u03be~_{0}^{(t)}\u27e9_{t}$ and $\\theta\u00af_{0}^{(t)}=\\theta^{\u2032}_{0}^{(t)}\u2212\u27e8\\theta^{\u2032}_{0}^{(t)}\u27e9_{t}+\u27e8\\theta_{0}^{(t)}\u27e9_{t}$ (Figure 4\u2014figure supplement 1). Finally, we defined the worm\u2019s behavior classification as turn when $\\theta\u00af_{0}^{(t)}<\u22120.07$, as forward locomotion when $\\theta\u00af_{0}^{(t)}\\geq\u22120.07$ and $\\frac{d\u03be\u00af_{0}^{(t)}}{dt}>0$, and as backward locomotion when $\\theta\u00af_{0}^{(t)}\\geq\u22120.07$ and $\\frac{d\u03be\u00af_{0}^{(t)}}{dt}\\leq0$ (Figure 4\u2014figure supplement 1).\n",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gordon J Berman, Emory University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92562.3.sa0](https://doi.org/10.7554/eLife.92562.3.sa0)\n\nThis useful study introduces a simple mechanical model of C. elegans locomotion that captures aspects of the worm's behavioral repertoire beyond forward crawling. While the kinetic model (ElegansBot) provides a compromise and starting point to help understand the mechanical components of C. elegans behavior, the claim that this work improves on extant mechanical models is incomplete, including modeling a 3-dimensional turning behavior with a 2-dimensional model without sufficient justification. In addition, the results of the application of the model to previously unstudied behaviors are primarily qualitative and do not produce new predictions.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92562.3.sa1](https://doi.org/10.7554/eLife.92562.3.sa1)\n\nSummary:\n\nThis work describes a simple mechanical model of worm locomotion, using a series of rigid segments connected by damped torsional springs and immersed in a viscous fluid. It uses this model to simulate forward crawling movement, as well as omega turns.\n\nStrengths:\n\nThe primary strength is in applying a biomechanical model to omega-turn behaviors. The biomechanics of nematode turning behaviors are relatively less well described and understood than forward crawling, and the increase in power during omega turns is one of the more novel results. The model itself may be a useful implementation to other researchers, particularly owing to its simplicity.\n\nWeaknesses:\n\nThe strength of the model presented in this work relative to prior approaches is not well supported, and in general the paper would be improved with a better description of the broader context of existing modeling literature related to undulatory locomotion. This paper claims to improve on previous approaches to taking body shapes as inputs. However, the sole nematode model cited aims to do something different, and arguably more significant, which is to use experimentally derived parameters to model both the neural circuits that induce locomotion as well as the biomechanics and to subsequently compare the model to experimental data. Other modeling approaches do take experimental body kinematics as inputs and use them to produce force fields, however, they are not cited or discussed. Finally, the overall novelty of the approach is questionable. A functionally similar approach was developed in 2012 to describe worm locomotion in lattices (Majmudar, 2012, Roy. Soc. Int.), which is not discussed and would provide an interesting comparison and needed context.\n\nIn some sense, because the model takes kinematics as an input and uses previously established techniques to model mechanics, it is unsurprising that it can reproduce experimentally observed kinematics, however, the forces calculated and the variation of parameters could be of interest, but other methods derived from kinematics could provide similar results. It is unclear what the predictive power of the model is.\n\nRelatedly, a justification of why the drag coefficients had to be changed by a factor of 100 should be explored. Plate conditions are difficult to replicate and the rheology of plates likely depends on several factors, but is for example, changes in hydration level likely to produce a 100-fold change in drag? or something more interesting/subtle within the model producing the discrepancy?\n\nFinally, the language used to distinguish different modeling approaches was often unclear. For example, it was unclear in what sense the model presented in Boyle, 2012 was a \"kinetic model\" and in many situations, it appeared that the term kinematic might have been more appropriate. Other phrases like \"frictional forces caused by the tension of its muscles\" were unclear at first glance, and might benefit from revision and more canonical usage of terms.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92562.3.sa2](https://doi.org/10.7554/eLife.92562.3.sa2)\n\nSummary:\n\nDeveloping a mechanical model of C. elegans is difficult to do from basic principles because it moves at low (but not very small) Reynolds number, is itself visco-elastic, and often is measured moving at a solid/liquid interface. The ElegansBot is a good first step at a kinetic model that reproduces a wide range of C. elegans motility behavior.\n\nStrengths:\n\nThe model is general due to its simplicity and likely useful for various undulatory movements. The model reproduces experimental movement data using realistic physical parameters (e.g. drags, forces, etc). The model is predictive (semi?) as shown in the liquid to solid gait transition. The model is straightforward in implementation and so likely is adaptable to modification and addition of control circuits.\n\nComments on revised version:\n\nThis is a revised manuscript. I'm happy with the changes made, including the specific responses to my previous concerns.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92562.3.sa3](https://doi.org/10.7554/eLife.92562.3.sa3)\n\nA mechanical model of C. elegans, embedded in a resistive force environment, is used to calculate input torque patterns required to generate output curvature patterns and coordinates, corresponding to a number of different locomotion behaviors in C. elegans.\n\nStrengths:\n\nThe use of a mechanical model to study a variety of locomotor sequences and the grounding in empirical data are strengths. The matching of speeds (though requiring adjusted drag coefficients) is a strength.\n\nWeaknesses:\n\nThe paper lacks evidence of numerical validation or comparison with the results and tools in the literature. E.g. is it surprising that the uniform torque distribution yields maximal speed? What is the relation between input and output data? How does the input-output relation depend on the parameters of the model? What novel model predictions are made?\n\nIn particular, if validated, the breakdown of drag forces and torque distributions during forward locomotion and turning behaviors may be interesting to compare to predictions by other tools, and to empirical measurement. One caveat is that the worm touches itself during such turns, and even crosses over itself in delta turns, and so the estimated drag coefficients and the resultant mechanical forces are likely incorrect.\n",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "81ec35b9-9565-4817-b45b-453890ac8cba",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C1",
+      "claim": "C. elegans has 302 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The connectome structure among 302 neurons and 165 somatic cells of C. elegans was discovered by pioneering works (Cook et al., 2019; White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cook et al., 2019 and White et al., 1986",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "99078d61-3583-4f42-a038-6d309d0ebee9",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C2",
+      "claim": "C. elegans has 165 somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The connectome structure among 302 neurons and 165 somatic cells of C. elegans was discovered by pioneering works (Cook et al., 2019; White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cook et al., 2019 and White et al., 1986",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "9bf73a59-81b5-4fb9-8fac-eb72e93c3e18",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C3",
+      "claim": "C. elegans matures in about three days.",
+      "claim_type": "EXPLICIT",
+      "source": "The organism matures in a shorter period, about three days, compared to other model animals such as fruit flies or mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about C. elegans development",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "b20a2bed-ea59-4f40-99b7-0ca81d4e5baa",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C4",
+      "claim": "C. elegans has a transparent body that allows for easy microscopic observation of internal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Its transparent body allows for easy microscopic observation of its internal structures or artificially expressed green fluorescent proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about C. elegans physical properties",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "de38e61c-f429-4066-8ad7-af19ca8ac878",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C5",
+      "claim": "C. elegans is hermaphroditic.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, due to the hermaphroditic nature of C. elegans, offspring mostly share the same genotype as the parent, which simplifies the multiplication of the worm population for research purposes (Hall and Altun, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hall and Altun, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "62867694-0f4a-433c-9436-eaff923383b3",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C6",
+      "claim": "C. elegans bends its body with a sinusoidal wave pattern when moving forward or backward.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans bends its body with a sinusoidal wave pattern when moving forward or backward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge and supported by citations in the following sentence",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "ee67559d-d058-4a7a-85ed-fb096bf7b19e",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C7",
+      "claim": "The driving force for C. elegans movement comes from the difference between perpendicular and parallel frictional forces.",
+      "claim_type": "EXPLICIT",
+      "source": "The driving force for this movement comes from the difference between perpendicular and parallel frictional forces, which it experienced from a surrounding environment. This thrust force pushes the worm along the ground surface with which the worm contacts (Berri et al., 2009; Boyle et al., 2012; Hu et al., 2009; Niebur and Erd\u00f6s, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Berri et al., 2009; Boyle et al., 2012; Hu et al., 2009; Niebur and Erd\u00f6s, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "bb8d5f3a-14c3-4283-8d07-2256ddcc32d1",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C12",
+      "claim": "Mature hermaphrodite C. elegans has four muscle strands at the left dorsal, right dorsal, left ventral, and right ventral part of the body.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature hermaphrodite C. elegans has four muscle strands at the left dorsal, right dorsal, left ventral, and right ventral part of the body, and each muscle strand has 24, 24, 23, and 24 muscle cells, respectively (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White et al., 1986",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "259b66a2-d7bd-427c-8656-fadfd4883235",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C13",
+      "claim": "The left dorsal muscle strand has 24 muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature hermaphrodite C. elegans has four muscle strands at the left dorsal, right dorsal, left ventral, and right ventral part of the body, and each muscle strand has 24, 24, 23, and 24 muscle cells, respectively (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White et al., 1986",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "b673712b-2d91-4536-9e95-4e12ff72dd73",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C14",
+      "claim": "The right dorsal muscle strand has 24 muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature hermaphrodite C. elegans has four muscle strands at the left dorsal, right dorsal, left ventral, and right ventral part of the body, and each muscle strand has 24, 24, 23, and 24 muscle cells, respectively (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White et al., 1986",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "fbdd111f-b4de-4da8-b32a-2fe72e26c42d",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C15",
+      "claim": "The left ventral muscle strand has 23 muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature hermaphrodite C. elegans has four muscle strands at the left dorsal, right dorsal, left ventral, and right ventral part of the body, and each muscle strand has 24, 24, 23, and 24 muscle cells, respectively (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White et al., 1986",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "e3eb6728-0e1f-4dbd-be61-7d32c3b11ec3",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C16",
+      "claim": "The right ventral muscle strand has 24 muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mature hermaphrodite C. elegans has four muscle strands at the left dorsal, right dorsal, left ventral, and right ventral part of the body, and each muscle strand has 24, 24, 23, and 24 muscle cells, respectively (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White et al., 1986",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "f259a07a-02eb-4407-9b2e-f7c81b0c60e7",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C19",
+      "claim": "The actuator was modeled as a damped torsional spring due to the viscoelastic characteristics of muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "The actuator was modeled as a damped torsional spring due to the viscoelastic characteristics of muscle (Boyle et al., 2012; Hill, 1938).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Boyle et al., 2012 and Hill, 1938",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "73e2cf89-42d5-4efa-b2d4-5822a485f25e",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C24",
+      "claim": "The average velocity of the worm during crawling is 0.208 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The average velocity of the worm is 0.208 (mm/s), which is consistent with the known values (Cohen et al., 2012; Jung et al., 2016; Omura et al., 2012; Shen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from simulation and consistent with cited experimental values",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "59c6043e-7008-4ac6-a922-ccada896da31",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C25",
+      "claim": "The average velocity of the worm during swimming is 0.223 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the speed of the worm exhibited significant oscillations over time (Figure 2\u2014figure supplement 1B), and the average velocity was 0.223 (mm/s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from simulation and shown in Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "69febdb1-7dd5-493a-9355-8091e1606b7b",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C26",
+      "claim": "During crawling, the body part placed diagonally with respect to the direction of the worm's locomotion is pushing along the ground surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the body part placed diagonally with respect to the direction of the worm's locomotion is pushing along the ground surface (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Found from simulation results shown in Figure 2\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "98a0eedf-7bb0-4697-945c-2270241d1c0a",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C27",
+      "claim": "During swimming, the worm gained significant momentum in the forward direction when the body bent in the c-shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The worm gained significant momentum in the forward direction of locomotion when the body bent in the c-shape (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Found from simulation results shown in Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "0b6f2a44-7196-4eed-b65c-19617d12ceab",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C28",
+      "claim": "During swimming, the speed of the worm exhibited significant oscillations over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to crawling, during swimming, the worm did not receive constant thrust force over time. Thus, the speed of the worm exhibited significant oscillations over time (Figure 2\u2014figure supplement 1B), and the average velocity was 0.223 (mm/s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Found from simulation results shown in Figure 2\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "91a3b96c-75fd-4b45-84ca-a3118d156202",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C29",
+      "claim": "During escaping behavior, the worm produced an average power of 2094 fW in the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "During escaping behavior, the worm produced an average power of 2094 fW in the initial forward locomotion, followed by an average of 16,437 fW (7.85 times that of the initial forward locomotion) in backward locomotion, and an average of 11,118 fW (5.31 times that of the initial forward locomotion) during turning (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from simulation results shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "8d22a807-21d3-4bc1-a79b-cd5714bae8c7",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C30",
+      "claim": "During escaping behavior, the worm produced an average power of 16,437 fW in backward locomotion, which is 7.85 times that of the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "During escaping behavior, the worm produced an average power of 2094 fW in the initial forward locomotion, followed by an average of 16,437 fW (7.85 times that of the initial forward locomotion) in backward locomotion, and an average of 11,118 fW (5.31 times that of the initial forward locomotion) during turning (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from simulation results shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "2df36d12-6bdf-46bb-8a22-21d9a57ce9bc",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C31",
+      "claim": "During escaping behavior, the worm produced an average power of 11,118 fW during turning, which is 5.31 times that of the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "During escaping behavior, the worm produced an average power of 2094 fW in the initial forward locomotion, followed by an average of 16,437 fW (7.85 times that of the initial forward locomotion) in backward locomotion, and an average of 11,118 fW (5.31 times that of the initial forward locomotion) during turning (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from simulation results shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "854b2a17-c0d4-4968-9419-9cdf5ac264e9",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C32",
+      "claim": "During escaping behavior, after turning and resuming forward locomotion, the worm produced an average power of 5480 fW, which is 2.62 times that of the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "After turning and resuming forward locomotion, it produced an average power of 5480 fW (2.62 times that of the initial forward locomotion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "33d4296d-d4eb-419a-b387-af54162eacec",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C34",
+      "claim": "During delta-turn, the worm produced an average power of 3514 fW in the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The worm produced an average power of 3514 fW in the initial forward locomotion, followed by an average of 11,176 fW (3.18 times that of the initial forward locomotion) in subsequent backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "c887ba39-f76d-43b4-967e-ebf240c1ca1a",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C35",
+      "claim": "During delta-turn, the worm produced an average power of 11,176 fW in backward locomotion, which is 3.18 times that of the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The worm produced an average power of 3514 fW in the initial forward locomotion, followed by an average of 11,176 fW (3.18 times that of the initial forward locomotion) in subsequent backward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "6dae064c-4423-44f5-a308-9a415011f9ea",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C36",
+      "claim": "During delta-turn, in the relatively short duration of forward locomotion following the backward locomotion, the worm produced an average power of 17,544 fW, which is 4.99 times that of the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the relatively short duration of forward locomotion following the backward locomotion, the worm produced an average power of 17,544 fW (4.99 times that of the initial forward locomotion), and an average of 13,046 fW (3.71 times that of the initial forward locomotion) during turns (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from simulation results shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "07199137-c048-4844-b5e5-7f08f31565d9",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C37",
+      "claim": "During delta-turn, the worm produced an average power of 13,046 fW during turns, which is 3.71 times that of the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the relatively short duration of forward locomotion following the backward locomotion, the worm produced an average power of 17,544 fW (4.99 times that of the initial forward locomotion), and an average of 13,046 fW (3.71 times that of the initial forward locomotion) during turns (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from simulation results shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "cd3daf3d-689c-455c-b958-7cc61b9b9965",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C38",
+      "claim": "During delta-turn, after the turn and resuming forward locomotion, the worm produced an average power of 6429 fW, which is 1.83 times that of the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "After the turn, when resuming forward locomotion, the worm produced an average power of 6429 fW (1.83 times that of the initial forward locomotion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "ae611adb-39bd-4514-a2da-6c20f5937ceb",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C40",
+      "claim": "In both escaping behavior and delta-turn, the worm consistently produced more power in the subsequent backward locomotion and turn than in the initial forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "In both escaping behavior and delta-turn, the worm consistently produced more power in the subsequent backward locomotion and turn than in the initial forward locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the power calculations for both behaviors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "b2786869-86f3-400a-9953-7428c5325b0d",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C45",
+      "claim": "The ElegansBot reproduced various locomotion of C. elegans including forward-backward-(omega turn)-forward locomotion constituting escaping behavior and delta-turn navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we were able to demonstrate trajectories and kinetics of the general locomotion of C. elegans, such as crawling, swimming (Vidal-Gadea et al., 2011), omega-turn, and delta-turn (Broekmans et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulation results with references to experimental data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "33e57c6b-2e0e-4cd5-97e7-5064ae0f0d39",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C46",
+      "claim": "The trajectory obtained from ElegansBot accurately reproduces the experimental video.",
+      "claim_type": "EXPLICIT",
+      "source": "The trajectory (Figure 3C and D, Figure 3\u2014videos 1 and 2) obtained from ElegansBot accurately reproduces the experimental video (Broekmans et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by comparing simulation results with experimental videos from Broekmans et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "a5aa02d4-dc7b-4ddd-80e2-219f2ad28950",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C47",
+      "claim": "During the omega-turn or delta-turn, the body briefly performs a deep bend, and the worm gains significant propulsion from the deep bend region to change direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, during the omega-turn or delta-turn, the body briefly performs a deep bend, and we newly discovered the mechanism that gains significant propulsion from the deep bend region to change direction using ElegansBot (Figure 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Newly discovered from simulation results shown in Figure 3C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "a8df61eb-9e12-4a17-ba97-20958cd6f821",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C49",
+      "claim": "The only external force acting on the worm is a frictional force from a ground surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The only external force acting on the worm is a frictional force from a ground surface such as an agar plate or water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a modeling assumption",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "38d25f25-3edd-473d-a374-d9c937e58aca",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C50",
+      "claim": "The frictional force is an anisotropic Stokes frictional force, with a magnitude proportional to the speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The frictional force is an anisotropic Stokes frictional force, with a magnitude proportional to the speed and assumed different friction coefficients in perpendicular and parallel directions (Boyle et al., 2012), which guarantees that linearity in velocity is preserved in frictional force as well (Details in 'Preservation of linearity in friction' of Appendix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a modeling assumption with citation to Boyle et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "e9d7bc2a-fdf0-43d7-8afb-e90ca4667a67",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C55",
+      "claim": "The known crawling speed range of C. elegans matches the speed in the simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The known crawling speed range of C. elegans (Cohen et al., 2012; Jung et al., 2016; Omura et al., 2012; Shen et al., 2012) matches the speed in our simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of simulation results with cited experimental values",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "c53e19f9-b30c-4fda-ae72-52468a3d644e",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C56",
+      "claim": "The force dispersion pattern of the forward movement of a snake is similar to the force dispersion pattern of crawling in the ElegansBot model.",
+      "claim_type": "EXPLICIT",
+      "source": "The force dispersion pattern of the forward movement of a snake (Hu et al., 2009) is similar to the force dispersion pattern of crawling in our model, where the body part placed diagonally in the direction of movement generates thrust.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with results from Hu et al., 2009",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "b6fc4a02-3de5-4abc-a2b6-583d1f091ac5",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C57",
+      "claim": "The head and tail tracks of the simulation resemble the trace left on the agar plate by C. elegans during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "The head and tail tracks of our simulation resemble the trace left on the agar plate by C. elegans during locomotion (Yeon et al., 2018), providing evidence of the mechanism where C. elegans moves forward by pushing along the ground surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with experimental observations from Yeon et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "95ab9557-8b32-48c9-84ec-336fab51f56e",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C58",
+      "claim": "Previous work eliminated inertia from the equations of motion, but the ElegansBot simulation includes it.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work (Berri et al., 2009; Boyle et al., 2012) eliminated inertia from the equations of motion, but our simulation includes it, allowing calculation even in cases where inertia is significant due to low friction coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous work cited (Berri et al., 2009; Boyle et al., 2012)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "207ccc66-4dca-4cf3-a225-d4edbb095dd0",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C59",
+      "claim": "The ElegansBot simulation allows for kinetic analysis of behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that our simulation allows for kinetic analysis, it could be used to calculate the energy expended by the worm during locomotion, serving as an activity index.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a capability of the model based on its design",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "248ee4a4-ef54-450f-aaf4-76b0485e7dd9",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C60",
+      "claim": "The ElegansBot simulation only requires the body angles as input data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulation only requires the body angles as input data, so even if the video angle shifts and trajectory information is lost, the trajectory can be recovered from the kymogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a feature of the model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "b30a5ff4-27fd-4605-a4fe-5ca9be205088",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C61",
+      "claim": "The ElegansBot could be used to check how signals from neural network models manifest as behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be used to check how signals from neural network models manifest as behaviors which is a needed function from previous work (Sakamoto et al., 2021), and it could be used when studying compound models of neural circuits and bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a potential application with reference to Sakamoto et al., 2021",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "66352ce3-4c8a-4349-b646-65d7ca58faec",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C62",
+      "claim": "The ElegansBot method could be used in general for the broad utility to analyze the motion of rod-shaped animals like snakes or eels and to simulate the motion of rod-shaped robots.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our method could be used in general for the broad utility to analyze the motion of rod-shaped animals like snakes or eels and to simulate the motion of rod-shaped robots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a potential application based on the generality of the model",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "2bfbe549-8a87-47a2-bb14-64c885e2a894",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C63",
+      "claim": "Videos of C. elegans' escaping behavior and foraging behavior were obtained from previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "Videos of C. elegans' escaping behavior and foraging behavior were obtained from previous work (Broekmans et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the source of experimental data with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "5485d193-df20-4e8c-a962-c259918eee27",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C64",
+      "claim": "Tierpsy Tracker was used to extract the body angles and midline from the video of C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "The body angles and midline were extracted using Tierpsy Tracker (Javer et al., 2018) from the original video where the worm is locomoting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method with citation to Javer et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "4b1b9842-e648-4255-b78f-bec2fcf799da",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C65",
+      "claim": "WormPose was used to extract the body angles and midline of a coiled worm using a generative method.",
+      "claim_type": "EXPLICIT",
+      "source": "WormPose trained an artificial neural network to extract the body angles and midline of a coiled worm using a generative method based on the input data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a method with implicit reference to WormPose (Hebert et al., 2021)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "d652ca63-db21-45c6-b6ea-59cf0b0ac070",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C66",
+      "claim": "Python version 3.8 was used to implement the equations constituting ElegansBot.",
+      "claim_type": "EXPLICIT",
+      "source": "Python (van Aken et al., 1995) version 3.8 was used to implement the equations constituting ElegansBot as a program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as implementation detail with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "eb8b2bca-dd93-4b1f-bbf3-380dbb047fc4",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C67",
+      "claim": "The ElegansBot simulation of 10 s of simulation time was calculated in about 10 s of run-time on an Intel E3-1230v5 CPU.",
+      "claim_type": "EXPLICIT",
+      "source": "This code calculated the ElegansBot simulation of 10 s of simulation time in about 10 s of run-time on an Intel E3-1230v5 CPU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as performance metric",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "65bd34d6-e93f-4483-b20d-408018d2712d",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C68",
+      "claim": "The friction coefficient values for the ground surface and the elastic and damping coefficients of C. elegans muscles were obtained from previous work.",
+      "claim_type": "EXPLICIT",
+      "source": "The friction coefficient values for the ground surface where C. elegans crawled and swam and the elastic and damping coefficients of C. elegans muscles were obtained from previous work (Boyle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to Boyle et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "affeaf57-4984-481f-9cb5-0d78de0b23fe",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C71",
+      "claim": "The changes in the direction of movement caused by turns are well replicated by ElegansBot.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes in the direction of movement caused by turns are well replicated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "78b37df6-f5e6-4f2f-ba42-9a7f107d2fe1",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C72",
+      "claim": "The ElegansBot accurately reproduces complex behaviors like the sequence of forward-backward-turn-forward, also known as escaping behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the ElegansBot accurately reproduces not only the turns but also complex behaviors like the sequence of forward-backward-turn-forward, also known as escaping behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through simulation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "cfb5c8b2-d8ed-4f17-bdae-bb740c736312",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C73",
+      "claim": "C. elegans performs various behaviors such as locomotion, sleeping, reproduction, and hunting.",
+      "claim_type": "EXPLICIT",
+      "source": "With only a few hundred neurons, Caenorhabditis Elegans (C. elegans) perform various behaviors such as locomotion, sleeping, reproduction, and hunting (Hall and Altun, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to Hall and Altun, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "cd330107-f34f-4f55-a428-9b8bfae817f2",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C74",
+      "claim": "C. elegans is a cost-efficient and widely used model in neuronal research.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans is a cost-efficient and widely used model in neuronal research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "1be383a1-48b3-4305-b9c2-f364344d834c",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C75",
+      "claim": "The small body size and minimal nutritional requirements of C. elegans contribute to its cost efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Its small body size and minimal nutritional requirements contribute to its cost efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "abe73505-a196-42fd-8f14-09c0c5a2b1e5",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C76",
+      "claim": "Offspring of C. elegans mostly share the same genotype as the parent due to its hermaphroditic nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, due to the hermaphroditic nature of C. elegans, offspring mostly share the same genotype as the parent, which simplifies the multiplication of the worm population for research purposes (Hall and Altun, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to Hall and Altun, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "2fc31513-480a-43e5-adf5-de6aff50bfc0",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C77",
+      "claim": "A worm has difficulties in forward and backward locomotion if it does not feel the difference in frictional forces from its surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if a worm has a sinusoidal modulation generated inside it, it has difficulties in forward and backward locomotion if it does not feel the difference in frictional forces from its surroundings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a principle of locomotion",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "dbd42b15-0507-4090-afd9-3b5089929ce1",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C78",
+      "claim": "Mechanical simulators of rod-shaped animals have been used in various studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanical simulators of rod-shaped animals such as C. elegans (Boyle et al., 2012; Niebur and Erd\u00f6s, 1991), fish (Ekeberg, 1993), and snakes Hu et al., 2009 have been used in various studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "8167c063-315e-488c-bff1-6aea4e649cc7",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C79",
+      "claim": "These simulators demonstrate how the activities of muscle cells are represented as behavioral phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulators demonstrate how the activities of muscle cells are represented as behavioral phenotypes, which are determined by signals from a neuronal circuit simulator (Boyle et al., 2012; Ekeberg, 1993; Niebur and Erd\u00f6s, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citations to Boyle et al., 2012; Ekeberg, 1993; Niebur and Erd\u00f6s, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "8ed4da74-845d-4e6d-aebe-411c3e0873b1",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C80",
+      "claim": "To the authors' best knowledge, there was no kinetic model that reproduces complex locomotion behavior of C. elegans including all various modes of locomotion from experimental observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though there were studies on kinematic simulation of rod-shaped animals (Boyle et al., 2012; Ekeberg, 1993; Hu et al., 2009), to our best knowledge, there was no kinetic model that reproduces complex locomotion behavior of C. elegans, which includes all of the various modes of locomotion of C. elegans such as forward locomotion, backward locomotion, and turn from experimental observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a gap in the literature with citations to previous work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "d5d2dab2-31e1-4eb6-aab9-e9578fde0bce",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C81",
+      "claim": "The authors built a Newtonian-mechanics two-dimensional rigid body chain model of C. elegans to reproduce its locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "We built a Newtonian-mechanics two-dimensional rigid body chain model of C. elegans to reproduce its locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the main contribution of the work",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "14e52388-dc25-4c68-a784-7afdedc35d7b",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C82",
+      "claim": "The model includes a chain of multiple rod rigid bodies, a damped torsional spring between the rigid bodies, and a control angle.",
+      "claim_type": "EXPLICIT",
+      "source": "The model includes a chain of multiple rod rigid bodies, a damped torsional spring between the rigid bodies, and a control angle, which is the dynamic baseline angle from the value of the kymogram of a physical experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a description of the model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "6482f9c0-a0d4-4952-a7fc-8b56768c28c4",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C83",
+      "claim": "The authors formulated Newtonian equations of translational and rotational motion of the rigid body model and computed the numerical solution using the semi-implicit Euler method.",
+      "claim_type": "EXPLICIT",
+      "source": "We formulated Newtonian equations of translational and rotational motion of the rigid body model and computed the numerical solution of the equations by numerical integration using the semi-implicit Euler method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "4bac7a53-6077-4a58-aac8-cbbf2595e6ab",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "claim_id": "C84",
+      "claim": "The authors were able to demonstrate trajectories and kinetics of general locomotion of C. elegans, such as crawling, swimming, omega-turn, and delta-turn.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, we were able to demonstrate trajectories and kinetics of the general locomotion of C. elegans, such as crawling, swimming (Vidal-Gadea et al., 2011), omega-turn, and delta-turn (Broekmans et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the results with citations to experimental data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d16a382c-05cf-49a8-a9ea-5fac000dc895",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript presents established biological facts about C. elegans as a model organism, including its neuronal structure (302 neurons, 165 somatic cells), muscle anatomy (four muscle strands with specific cell counts), developmental timeline (~3 days to maturity), physical properties (transparent body, hermaphroditic reproduction), and suitability for research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C5, C12-C16, C73-C76) represent well-established knowledge about C. elegans supported by appropriate citations to authoritative sources (White et al., 1986; Cook et al., 2019; Hall and Altun, 2008). The claims are consistent with the scientific literature and serve as valid background for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "5bb92b17-2e63-406f-aa29-5438c64ab370",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "C. elegans locomotion is characterized by sinusoidal body bending driven by anisotropic friction forces, where the difference between perpendicular and parallel frictional forces generates thrust for forward/backward movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C77 describe established principles of C. elegans locomotion supported by multiple citations (Berri et al., 2009; Boyle et al., 2012; Hu et al., 2009; Niebur and Erd\u00f6s, 1991). These represent accepted mechanistic understanding of nematode movement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "995226c5-49ee-462a-b278-580a38f22044",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior mechanical simulators of rod-shaped animals exist but, according to the authors, no kinetic model previously reproduced complex C. elegans locomotion behaviors (forward, backward, turns) from experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C79 accurately cite prior work, but C80's assertion of novelty ('to our best knowledge') is difficult to verify without comprehensive literature review. The distinction between 'kinematic' and 'kinetic' models and what constitutes 'complex locomotion behavior' may be subjective, making the claimed gap uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "28c0a105-64ab-4493-a7e5-f23cd22142f7",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors developed ElegansBot, a Newtonian two-dimensional rigid body chain model consisting of 25 connected rods with damped torsional springs representing muscle actuators, anisotropic Stokes friction, and control angles derived from experimental kymograms, solved using semi-implicit Euler numerical integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83, C19, C49-C50 describe the model architecture and methodology. The approach is clearly documented with appropriate physical assumptions (anisotropic friction from Boyle et al., 2012; viscoelastic muscle properties from Hill, 1938). The semi-implicit Euler method is appropriate for the stiff equations encountered with high friction coefficients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "a367bd1e-5d87-416e-88f8-6a4338d5e7ca",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ElegansBot simulations of crawling behavior produce an average velocity of 0.208 mm/s, matching experimental values, with force distribution patterns showing diagonal body parts generating thrust, consistent with snake locomotion and experimental traces on agar plates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C55, C26, C56, C57 demonstrate validation of crawling behavior. The simulated velocity matches multiple experimental studies (Cohen et al., 2012; Jung et al., 2016; Omura et al., 2012; Shen et al., 2012), and force patterns are consistent with both snake locomotion (Hu et al., 2009) and C. elegans traces (Yeon et al., 2018). Figure 2 and Figure 2\u2014figure supplement 1A provide visual support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "2bad9b0e-2d45-4740-ae7a-7a7feab90dc1",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ElegansBot simulations of swimming behavior produce an average velocity of 0.223 mm/s with significant speed oscillations over time, where the worm gains momentum during c-shaped bending phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C27, C28 describe swimming dynamics with support from Figure 2\u2014figure supplement 1B. The oscillatory speed pattern and c-shape propulsion mechanism are consistent with lower friction coefficients in water compared to agar. However, no direct experimental velocity comparison is provided for swimming (unlike crawling).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "58387779-4e09-4949-a8d8-0f68b7bf59ba",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ElegansBot successfully reproduced complex C. elegans behaviors including crawling, swimming, omega-turns, delta-turns, and escaping behavior (forward-backward-turn-forward sequences), with trajectories accurately matching experimental videos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C46, C71, C72, C84 demonstrate the model's capability to reproduce diverse behaviors. Trajectories are compared to experimental videos (Broekmans et al., 2016; Vidal-Gadea et al., 2011) with visual evidence in Figures 2-3. The use of Tierpsy Tracker and WormPose (C63-C65) to extract kymograms provides methodological rigor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "e62ebd4b-283e-4803-961b-c9f1301cff27",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During omega-turns and delta-turns, the worm performs deep body bends that generate significant propulsion from the bend region to change direction, a mechanism newly discovered using ElegansBot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 presents a novel mechanistic insight supported by simulation data in Figures 3C and 3D. The force analysis during deep bends (also quantified in C29-C38) provides evidence for this propulsion mechanism. However, experimental validation of this specific mechanism would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "40afe2d1-b9d7-48ec-bcf3-b543dcd752b8",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "During escaping behavior, the worm produces 7.85\u00d7 more power during backward locomotion and 5.31\u00d7 more power during turning compared to initial forward locomotion, with 2.62\u00d7 more power after resuming forward movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32, C40 provide quantitative power analysis from simulation data shown in Figure 4A. The calculations are based on the model's force and velocity outputs. The behavioral classification method is detailed in the Methods section. However, these are model predictions without direct experimental power measurements for validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "47ed0b9f-2ffd-4482-8018-d52042107969",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "During delta-turns, the worm produces 3.18\u00d7 more power in backward locomotion, 4.99\u00d7 more power in brief forward locomotion following backward movement, and 3.71\u00d7 more power during turns compared to initial forward locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38, C40 provide quantitative power analysis for delta-turns from simulation data in Figure 4B. The pattern of increased power during complex maneuvers is consistent with escaping behavior. As with escaping behavior, these are model-derived predictions lacking direct experimental validation of power expenditure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "c88ce5a4-79b1-4b21-aff2-3362f73569b1",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Unlike previous work that eliminated inertia from equations of motion, ElegansBot includes inertia, allowing calculations in low-friction environments where inertia is significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 accurately contrasts the current model with prior work (Berri et al., 2009; Boyle et al., 2012). The inclusion of inertia and development of semi-implicit Euler methods for numerical stability represents a methodological advancement, particularly relevant for swimming simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "36b39664-1dd0-4a02-8cc3-bc66eca9f6f5",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ElegansBot enables kinetic analysis for calculating energy expenditure, can recover trajectories from kymograms alone, could interface with neural network models, and may generalize to other rod-shaped animals and robots.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C62 describe potential applications and capabilities. C59 and C60 are supported by the model's design, but C61-C62 are speculative ('could be used', 'may generalize'). These represent promising directions but lack demonstration or validation, making them uncertain as established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "72ee92b6-481a-433a-aaad-dd68235cf4f7",
+      "content_id": "a7a9930d-06d5-4a98-add8-a2442b3c495d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The implementation used experimental videos from Broekmans et al. (2016), extracted kymograms using Tierpsy Tracker and WormPose, implemented equations in Python 3.8, achieved real-time performance (10s simulation in 10s runtime), and used friction/elasticity coefficients from Boyle et al. (2012).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C68 describe methodological details with appropriate citations and specificity. The computational performance (C67) is clearly stated. The use of established software tools (Tierpsy Tracker, WormPose) and parameter values from literature provides methodological transparency and reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "6c7810ee-a2eb-4b2c-84e9-fc65a2ad30f4",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed a Newtonian-mechanics two-dimensional rigid body chain model (ElegansBot) of C. elegans locomotion, consisting of rigid segments connected by damped torsional springs, with anisotropic Stokes friction as the only external force.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the model's simplicity and general applicability as strengths, but raise concerns about its novelty and justification. One reviewer notes 'a functionally similar approach was developed in 2012 to describe worm locomotion in lattices (Majmudar, 2012)' which is not discussed. Another reviewer questions why drag coefficients 'had to be changed by a factor of 100' and whether this reflects physical reality or model limitations. The editor notes the model is '2-dimensional' applied to '3-dimensional turning behavior without sufficient justification.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The model reproduces forward crawling and swimming locomotion with velocities matching experimental observations (0.208 mm/s for crawling, 0.223 mm/s for swimming), and reveals that during crawling the body pushes diagonally along the ground surface while during swimming the worm gains momentum when bent in a c-shape.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm these results. One reviewer states 'the model reproduces experimental movement data using realistic physical parameters' and notes 'the matching of speeds (though requiring adjusted drag coefficients) is a strength.' Another reviewer acknowledges 'the biomechanics of nematode turning behaviors are relatively less well described' but does not challenge the forward locomotion results. However, the need for adjusted drag coefficients raises some questions about parameter validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "525726c1-6bf8-4b82-b6ac-7821e7fda542",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "ElegansBot successfully reproduces complex locomotion behaviors including omega-turns, delta-turns, and escaping behavior (forward-backward-turn-forward sequences), with trajectories accurately matching experimental videos.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express mixed views on these claims. One reviewer identifies 'applying a biomechanical model to omega-turn behaviors' as a primary strength since 'the biomechanics of nematode turning behaviors are relatively less well described.' However, the editor critically notes the model is '2-dimensional' applied to '3-dimensional turning behavior without sufficient justification.' Another reviewer cautions that 'the worm touches itself during such turns, and even crosses over itself in delta turns, and so the estimated drag coefficients and the resultant mechanical forces are likely incorrect.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "c002770a-31a3-4f7c-b847-267331b4bed2",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Power calculations show that during both escaping behavior and delta-turns, the worm produces substantially more power during backward locomotion and turning (3-8 times higher) compared to initial forward locomotion, with specific quantified values for each phase.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer identifies 'the increase in power during omega turns' as 'one of the more novel results,' suggesting this is a strength. However, another reviewer notes 'the results of the application of the model to previously unstudied behaviors are primarily qualitative and do not produce new predictions.' A third reviewer states 'the breakdown of drag forces and torque distributions during forward locomotion and turning behaviors may be interesting' but emphasizes these need validation and comparison with other tools, and notes the forces are 'likely incorrect' when the worm touches itself during turns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "13ad2444-629d-4e6a-9f5a-85807d36c63c",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "During omega-turn or delta-turn, the worm gains significant propulsion from deep bend regions to change direction, a mechanism newly discovered using ElegansBot.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While one reviewer notes that applying the model to turning behaviors is a strength since these are 'relatively less well described,' the editor states 'the results of the application of the model to previously unstudied behaviors are primarily qualitative and do not produce new predictions.' Another reviewer questions 'what novel model predictions are made?' suggesting the predictive power is unclear. The claim of 'newly discovered mechanism' is not explicitly validated by reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "2cb2ca56-5e3f-445f-9abd-acfca5090280",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "ElegansBot improves on previous models by including inertia in equations of motion, enabling kinetic analysis and requiring only body angles as input data to recover trajectories.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers directly challenge claims of improvement over prior work. One reviewer states 'the strength of the model presented in this work relative to prior approaches is not well supported' and notes 'the sole nematode model cited aims to do something different, and arguably more significant.' The editor concludes 'the claim that this work improves on extant mechanical models is incomplete.' Another reviewer notes 'it is unsurprising that it can reproduce experimentally observed kinematics' since the model takes kinematics as input, questioning what advantage this provides.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "6e707ffb-627c-4c6a-8732-29e77f2789f2",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "To the authors' knowledge, there was no prior kinetic model reproducing complex C. elegans locomotion including all modes (forward, backward, turns) from experimental observations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers explicitly challenge this novelty claim. One reviewer states 'the overall novelty of the approach is questionable' and notes 'a functionally similar approach was developed in 2012 to describe worm locomotion in lattices (Majmudar, 2012, Roy. Soc. Int.), which is not discussed.' The reviewer also notes 'other modeling approaches do take experimental body kinematics as inputs and use them to produce force fields, however, they are not cited or discussed,' indicating the literature review is incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "bbfc02d1-114b-4178-a7ab-2fd22584ce86",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "ElegansBot could be used to connect neural network models to behaviors and has broad utility for analyzing motion of other rod-shaped animals and robots.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "One reviewer affirms 'the model is straightforward in implementation and so likely is adaptable to modification and addition of control circuits.' Another states 'the model is general due to its simplicity and likely useful for various undulatory movements.' These potential applications are treated as reasonable extensions by reviewers, though they are speculative rather than demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "4b44b8a9-919f-443f-b0fe-381b2daa084f",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about C. elegans anatomy, development, physical properties, and locomotion principles based on established literature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are standard background claims about C. elegans supported by citations to established literature. Reviewers do not question these foundational facts, implicitly accepting them as established knowledge. One reviewer notes 'the grounding in empirical data' as a strength, supporting the use of established parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "7d9d86a8-41cc-4890-8ad1-8d9eb82e56e0",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Methodological details including data sources, tracking software (Tierpsy Tracker, WormPose), implementation in Python 3.8, computational performance, and parameter sources from prior work.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these methodological claims. One reviewer notes the model's computational efficiency and straightforward implementation as strengths. Another reviewer's concern about parameter validation (drag coefficients) relates to justification rather than the stated sources, and one reviewer explicitly states satisfaction with revisions addressing previous concerns.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "cb270356-9534-4fb0-8c36-fb3650780026",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The force dispersion pattern in the model resembles that of snake locomotion and the simulation tracks resemble experimental traces on agar plates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These comparative observations are not challenged by reviewers. One reviewer emphasizes 'the grounding in empirical data' as a strength, and another notes the model 'reproduces experimental movement data,' which implicitly supports these qualitative comparisons to other systems and experimental observations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "cdee3e50-a102-4254-870c-b7b3d45a6207",
+      "content_id": "c0c47ae1-03f2-4ea5-8827-6cf617c89e18",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Mechanical simulators of rod-shaped animals have been used in various studies to demonstrate how muscle activities are represented as behavioral phenotypes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This background claim about prior modeling work is not disputed by reviewers, though they do critique the authors' characterization of how their work relates to and improves upon these prior models. The existence and general purpose of such models is accepted as established context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "81ec35b9-9565-4817-b45b-453890ac8cba",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "99078d61-3583-4f42-a038-6d309d0ebee9",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "9bf73a59-81b5-4fb9-8fac-eb72e93c3e18",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "b20a2bed-ea59-4f40-99b7-0ca81d4e5baa",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "de38e61c-f429-4066-8ad7-af19ca8ac878",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "bb8d5f3a-14c3-4283-8d07-2256ddcc32d1",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "259b66a2-d7bd-427c-8656-fadfd4883235",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "b673712b-2d91-4536-9e95-4e12ff72dd73",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "fbdd111f-b4de-4da8-b32a-2fe72e26c42d",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "e3eb6728-0e1f-4dbd-be61-7d32c3b11ec3",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "cfb5c8b2-d8ed-4f17-bdae-bb740c736312",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "cd330107-f34f-4f55-a428-9b8bfae817f2",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "1be383a1-48b3-4305-b9c2-f364344d834c",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "abe73505-a196-42fd-8f14-09c0c5a2b1e5",
+      "result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895"
+    },
+    {
+      "claim_id": "62867694-0f4a-433c-9436-eaff923383b3",
+      "result_id": "5bb92b17-2e63-406f-aa29-5438c64ab370"
+    },
+    {
+      "claim_id": "ee67559d-d058-4a7a-85ed-fb096bf7b19e",
+      "result_id": "5bb92b17-2e63-406f-aa29-5438c64ab370"
+    },
+    {
+      "claim_id": "2fc31513-480a-43e5-adf5-de6aff50bfc0",
+      "result_id": "5bb92b17-2e63-406f-aa29-5438c64ab370"
+    },
+    {
+      "claim_id": "dbd42b15-0507-4090-afd9-3b5089929ce1",
+      "result_id": "995226c5-49ee-462a-b278-580a38f22044"
+    },
+    {
+      "claim_id": "8167c063-315e-488c-bff1-6aea4e649cc7",
+      "result_id": "995226c5-49ee-462a-b278-580a38f22044"
+    },
+    {
+      "claim_id": "8ed4da74-845d-4e6d-aebe-411c3e0873b1",
+      "result_id": "995226c5-49ee-462a-b278-580a38f22044"
+    },
+    {
+      "claim_id": "d5d2dab2-31e1-4eb6-aab9-e9578fde0bce",
+      "result_id": "28c0a105-64ab-4493-a7e5-f23cd22142f7"
+    },
+    {
+      "claim_id": "14e52388-dc25-4c68-a784-7afdedc35d7b",
+      "result_id": "28c0a105-64ab-4493-a7e5-f23cd22142f7"
+    },
+    {
+      "claim_id": "6482f9c0-a0d4-4952-a7fc-8b56768c28c4",
+      "result_id": "28c0a105-64ab-4493-a7e5-f23cd22142f7"
+    },
+    {
+      "claim_id": "f259a07a-02eb-4407-9b2e-f7c81b0c60e7",
+      "result_id": "28c0a105-64ab-4493-a7e5-f23cd22142f7"
+    },
+    {
+      "claim_id": "a8df61eb-9e12-4a17-ba97-20958cd6f821",
+      "result_id": "28c0a105-64ab-4493-a7e5-f23cd22142f7"
+    },
+    {
+      "claim_id": "38d25f25-3edd-473d-a374-d9c937e58aca",
+      "result_id": "28c0a105-64ab-4493-a7e5-f23cd22142f7"
+    },
+    {
+      "claim_id": "73e2cf89-42d5-4efa-b2d4-5822a485f25e",
+      "result_id": "a367bd1e-5d87-416e-88f8-6a4338d5e7ca"
+    },
+    {
+      "claim_id": "e9d7bc2a-fdf0-43d7-8afb-e90ca4667a67",
+      "result_id": "a367bd1e-5d87-416e-88f8-6a4338d5e7ca"
+    },
+    {
+      "claim_id": "69febdb1-7dd5-493a-9355-8091e1606b7b",
+      "result_id": "a367bd1e-5d87-416e-88f8-6a4338d5e7ca"
+    },
+    {
+      "claim_id": "c53e19f9-b30c-4fda-ae72-52468a3d644e",
+      "result_id": "a367bd1e-5d87-416e-88f8-6a4338d5e7ca"
+    },
+    {
+      "claim_id": "b6fc4a02-3de5-4abc-a2b6-583d1f091ac5",
+      "result_id": "a367bd1e-5d87-416e-88f8-6a4338d5e7ca"
+    },
+    {
+      "claim_id": "59c6043e-7008-4ac6-a922-ccada896da31",
+      "result_id": "2bad9b0e-2d45-4740-ae7a-7a7feab90dc1"
+    },
+    {
+      "claim_id": "98a0eedf-7bb0-4697-945c-2270241d1c0a",
+      "result_id": "2bad9b0e-2d45-4740-ae7a-7a7feab90dc1"
+    },
+    {
+      "claim_id": "0b6f2a44-7196-4eed-b65c-19617d12ceab",
+      "result_id": "2bad9b0e-2d45-4740-ae7a-7a7feab90dc1"
+    },
+    {
+      "claim_id": "b2786869-86f3-400a-9953-7428c5325b0d",
+      "result_id": "58387779-4e09-4949-a8d8-0f68b7bf59ba"
+    },
+    {
+      "claim_id": "33e57c6b-2e0e-4cd5-97e7-5064ae0f0d39",
+      "result_id": "58387779-4e09-4949-a8d8-0f68b7bf59ba"
+    },
+    {
+      "claim_id": "affeaf57-4984-481f-9cb5-0d78de0b23fe",
+      "result_id": "58387779-4e09-4949-a8d8-0f68b7bf59ba"
+    },
+    {
+      "claim_id": "78b37df6-f5e6-4f2f-ba42-9a7f107d2fe1",
+      "result_id": "58387779-4e09-4949-a8d8-0f68b7bf59ba"
+    },
+    {
+      "claim_id": "4bac7a53-6077-4a58-aac8-cbbf2595e6ab",
+      "result_id": "58387779-4e09-4949-a8d8-0f68b7bf59ba"
+    },
+    {
+      "claim_id": "a5aa02d4-dc7b-4ddd-80e2-219f2ad28950",
+      "result_id": "e62ebd4b-283e-4803-961b-c9f1301cff27"
+    },
+    {
+      "claim_id": "91a3b96c-75fd-4b45-84ca-a3118d156202",
+      "result_id": "40afe2d1-b9d7-48ec-bcf3-b543dcd752b8"
+    },
+    {
+      "claim_id": "8d22a807-21d3-4bc1-a79b-cd5714bae8c7",
+      "result_id": "40afe2d1-b9d7-48ec-bcf3-b543dcd752b8"
+    },
+    {
+      "claim_id": "2df36d12-6bdf-46bb-8a22-21d9a57ce9bc",
+      "result_id": "40afe2d1-b9d7-48ec-bcf3-b543dcd752b8"
+    },
+    {
+      "claim_id": "854b2a17-c0d4-4968-9419-9cdf5ac264e9",
+      "result_id": "40afe2d1-b9d7-48ec-bcf3-b543dcd752b8"
+    },
+    {
+      "claim_id": "ae611adb-39bd-4514-a2da-6c20f5937ceb",
+      "result_id": "40afe2d1-b9d7-48ec-bcf3-b543dcd752b8"
+    },
+    {
+      "claim_id": "33d4296d-d4eb-419a-b387-af54162eacec",
+      "result_id": "47ed0b9f-2ffd-4482-8018-d52042107969"
+    },
+    {
+      "claim_id": "c887ba39-f76d-43b4-967e-ebf240c1ca1a",
+      "result_id": "47ed0b9f-2ffd-4482-8018-d52042107969"
+    },
+    {
+      "claim_id": "6dae064c-4423-44f5-a308-9a415011f9ea",
+      "result_id": "47ed0b9f-2ffd-4482-8018-d52042107969"
+    },
+    {
+      "claim_id": "07199137-c048-4844-b5e5-7f08f31565d9",
+      "result_id": "47ed0b9f-2ffd-4482-8018-d52042107969"
+    },
+    {
+      "claim_id": "cd3daf3d-689c-455c-b958-7cc61b9b9965",
+      "result_id": "47ed0b9f-2ffd-4482-8018-d52042107969"
+    },
+    {
+      "claim_id": "ae611adb-39bd-4514-a2da-6c20f5937ceb",
+      "result_id": "47ed0b9f-2ffd-4482-8018-d52042107969"
+    },
+    {
+      "claim_id": "95ab9557-8b32-48c9-84ec-336fab51f56e",
+      "result_id": "c88ce5a4-79b1-4b21-aff2-3362f73569b1"
+    },
+    {
+      "claim_id": "207ccc66-4dca-4cf3-a225-d4edbb095dd0",
+      "result_id": "36b39664-1dd0-4a02-8cc3-bc66eca9f6f5"
+    },
+    {
+      "claim_id": "248ee4a4-ef54-450f-aaf4-76b0485e7dd9",
+      "result_id": "36b39664-1dd0-4a02-8cc3-bc66eca9f6f5"
+    },
+    {
+      "claim_id": "b30a5ff4-27fd-4605-a4fe-5ca9be205088",
+      "result_id": "36b39664-1dd0-4a02-8cc3-bc66eca9f6f5"
+    },
+    {
+      "claim_id": "66352ce3-4c8a-4349-b646-65d7ca58faec",
+      "result_id": "36b39664-1dd0-4a02-8cc3-bc66eca9f6f5"
+    },
+    {
+      "claim_id": "2bfbe549-8a87-47a2-bb14-64c885e2a894",
+      "result_id": "72ee92b6-481a-433a-aaad-dd68235cf4f7"
+    },
+    {
+      "claim_id": "5485d193-df20-4e8c-a962-c259918eee27",
+      "result_id": "72ee92b6-481a-433a-aaad-dd68235cf4f7"
+    },
+    {
+      "claim_id": "4b1b9842-e648-4255-b78f-bec2fcf799da",
+      "result_id": "72ee92b6-481a-433a-aaad-dd68235cf4f7"
+    },
+    {
+      "claim_id": "d652ca63-db21-45c6-b6ea-59cf0b0ac070",
+      "result_id": "72ee92b6-481a-433a-aaad-dd68235cf4f7"
+    },
+    {
+      "claim_id": "eb8b2bca-dd93-4b1f-bbf3-380dbb047fc4",
+      "result_id": "72ee92b6-481a-433a-aaad-dd68235cf4f7"
+    },
+    {
+      "claim_id": "65bd34d6-e93f-4483-b20d-408018d2712d",
+      "result_id": "72ee92b6-481a-433a-aaad-dd68235cf4f7"
+    },
+    {
+      "claim_id": "d5d2dab2-31e1-4eb6-aab9-e9578fde0bce",
+      "result_id": "6c7810ee-a2eb-4b2c-84e9-fc65a2ad30f4"
+    },
+    {
+      "claim_id": "14e52388-dc25-4c68-a784-7afdedc35d7b",
+      "result_id": "6c7810ee-a2eb-4b2c-84e9-fc65a2ad30f4"
+    },
+    {
+      "claim_id": "6482f9c0-a0d4-4952-a7fc-8b56768c28c4",
+      "result_id": "6c7810ee-a2eb-4b2c-84e9-fc65a2ad30f4"
+    },
+    {
+      "claim_id": "f259a07a-02eb-4407-9b2e-f7c81b0c60e7",
+      "result_id": "6c7810ee-a2eb-4b2c-84e9-fc65a2ad30f4"
+    },
+    {
+      "claim_id": "a8df61eb-9e12-4a17-ba97-20958cd6f821",
+      "result_id": "6c7810ee-a2eb-4b2c-84e9-fc65a2ad30f4"
+    },
+    {
+      "claim_id": "38d25f25-3edd-473d-a374-d9c937e58aca",
+      "result_id": "6c7810ee-a2eb-4b2c-84e9-fc65a2ad30f4"
+    },
+    {
+      "claim_id": "73e2cf89-42d5-4efa-b2d4-5822a485f25e",
+      "result_id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd"
+    },
+    {
+      "claim_id": "59c6043e-7008-4ac6-a922-ccada896da31",
+      "result_id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd"
+    },
+    {
+      "claim_id": "e9d7bc2a-fdf0-43d7-8afb-e90ca4667a67",
+      "result_id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd"
+    },
+    {
+      "claim_id": "69febdb1-7dd5-493a-9355-8091e1606b7b",
+      "result_id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd"
+    },
+    {
+      "claim_id": "98a0eedf-7bb0-4697-945c-2270241d1c0a",
+      "result_id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd"
+    },
+    {
+      "claim_id": "0b6f2a44-7196-4eed-b65c-19617d12ceab",
+      "result_id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd"
+    },
+    {
+      "claim_id": "b2786869-86f3-400a-9953-7428c5325b0d",
+      "result_id": "525726c1-6bf8-4b82-b6ac-7821e7fda542"
+    },
+    {
+      "claim_id": "33e57c6b-2e0e-4cd5-97e7-5064ae0f0d39",
+      "result_id": "525726c1-6bf8-4b82-b6ac-7821e7fda542"
+    },
+    {
+      "claim_id": "affeaf57-4984-481f-9cb5-0d78de0b23fe",
+      "result_id": "525726c1-6bf8-4b82-b6ac-7821e7fda542"
+    },
+    {
+      "claim_id": "78b37df6-f5e6-4f2f-ba42-9a7f107d2fe1",
+      "result_id": "525726c1-6bf8-4b82-b6ac-7821e7fda542"
+    },
+    {
+      "claim_id": "4bac7a53-6077-4a58-aac8-cbbf2595e6ab",
+      "result_id": "525726c1-6bf8-4b82-b6ac-7821e7fda542"
+    },
+    {
+      "claim_id": "91a3b96c-75fd-4b45-84ca-a3118d156202",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "8d22a807-21d3-4bc1-a79b-cd5714bae8c7",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "2df36d12-6bdf-46bb-8a22-21d9a57ce9bc",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "854b2a17-c0d4-4968-9419-9cdf5ac264e9",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "33d4296d-d4eb-419a-b387-af54162eacec",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "c887ba39-f76d-43b4-967e-ebf240c1ca1a",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "6dae064c-4423-44f5-a308-9a415011f9ea",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "07199137-c048-4844-b5e5-7f08f31565d9",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "cd3daf3d-689c-455c-b958-7cc61b9b9965",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "ae611adb-39bd-4514-a2da-6c20f5937ceb",
+      "result_id": "c002770a-31a3-4f7c-b847-267331b4bed2"
+    },
+    {
+      "claim_id": "a5aa02d4-dc7b-4ddd-80e2-219f2ad28950",
+      "result_id": "13ad2444-629d-4e6a-9f5a-85807d36c63c"
+    },
+    {
+      "claim_id": "95ab9557-8b32-48c9-84ec-336fab51f56e",
+      "result_id": "2cb2ca56-5e3f-445f-9abd-acfca5090280"
+    },
+    {
+      "claim_id": "207ccc66-4dca-4cf3-a225-d4edbb095dd0",
+      "result_id": "2cb2ca56-5e3f-445f-9abd-acfca5090280"
+    },
+    {
+      "claim_id": "248ee4a4-ef54-450f-aaf4-76b0485e7dd9",
+      "result_id": "2cb2ca56-5e3f-445f-9abd-acfca5090280"
+    },
+    {
+      "claim_id": "8ed4da74-845d-4e6d-aebe-411c3e0873b1",
+      "result_id": "6e707ffb-627c-4c6a-8732-29e77f2789f2"
+    },
+    {
+      "claim_id": "b30a5ff4-27fd-4605-a4fe-5ca9be205088",
+      "result_id": "bbfc02d1-114b-4178-a7ab-2fd22584ce86"
+    },
+    {
+      "claim_id": "66352ce3-4c8a-4349-b646-65d7ca58faec",
+      "result_id": "bbfc02d1-114b-4178-a7ab-2fd22584ce86"
+    },
+    {
+      "claim_id": "81ec35b9-9565-4817-b45b-453890ac8cba",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "99078d61-3583-4f42-a038-6d309d0ebee9",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "9bf73a59-81b5-4fb9-8fac-eb72e93c3e18",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "b20a2bed-ea59-4f40-99b7-0ca81d4e5baa",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "de38e61c-f429-4066-8ad7-af19ca8ac878",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "62867694-0f4a-433c-9436-eaff923383b3",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "ee67559d-d058-4a7a-85ed-fb096bf7b19e",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "bb8d5f3a-14c3-4283-8d07-2256ddcc32d1",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "259b66a2-d7bd-427c-8656-fadfd4883235",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "b673712b-2d91-4536-9e95-4e12ff72dd73",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "fbdd111f-b4de-4da8-b32a-2fe72e26c42d",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "e3eb6728-0e1f-4dbd-be61-7d32c3b11ec3",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "cfb5c8b2-d8ed-4f17-bdae-bb740c736312",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "cd330107-f34f-4f55-a428-9b8bfae817f2",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "1be383a1-48b3-4305-b9c2-f364344d834c",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "abe73505-a196-42fd-8f14-09c0c5a2b1e5",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "2fc31513-480a-43e5-adf5-de6aff50bfc0",
+      "result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f"
+    },
+    {
+      "claim_id": "2bfbe549-8a87-47a2-bb14-64c885e2a894",
+      "result_id": "7d9d86a8-41cc-4890-8ad1-8d9eb82e56e0"
+    },
+    {
+      "claim_id": "5485d193-df20-4e8c-a962-c259918eee27",
+      "result_id": "7d9d86a8-41cc-4890-8ad1-8d9eb82e56e0"
+    },
+    {
+      "claim_id": "4b1b9842-e648-4255-b78f-bec2fcf799da",
+      "result_id": "7d9d86a8-41cc-4890-8ad1-8d9eb82e56e0"
+    },
+    {
+      "claim_id": "d652ca63-db21-45c6-b6ea-59cf0b0ac070",
+      "result_id": "7d9d86a8-41cc-4890-8ad1-8d9eb82e56e0"
+    },
+    {
+      "claim_id": "eb8b2bca-dd93-4b1f-bbf3-380dbb047fc4",
+      "result_id": "7d9d86a8-41cc-4890-8ad1-8d9eb82e56e0"
+    },
+    {
+      "claim_id": "65bd34d6-e93f-4483-b20d-408018d2712d",
+      "result_id": "7d9d86a8-41cc-4890-8ad1-8d9eb82e56e0"
+    },
+    {
+      "claim_id": "c53e19f9-b30c-4fda-ae72-52468a3d644e",
+      "result_id": "cb270356-9534-4fb0-8c36-fb3650780026"
+    },
+    {
+      "claim_id": "b6fc4a02-3de5-4abc-a2b6-583d1f091ac5",
+      "result_id": "cb270356-9534-4fb0-8c36-fb3650780026"
+    },
+    {
+      "claim_id": "dbd42b15-0507-4090-afd9-3b5089929ce1",
+      "result_id": "cdee3e50-a102-4254-870c-b7b3d45a6207"
+    },
+    {
+      "claim_id": "8167c063-315e-488c-bff1-6aea4e649cc7",
+      "result_id": "cdee3e50-a102-4254-870c-b7b3d45a6207"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "9ab02c77-bf3d-49ca-8e89-177fcf034786",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "28c0a105-64ab-4493-a7e5-f23cd22142f7",
+      "peer_result_id": "6c7810ee-a2eb-4b2c-84e9-fc65a2ad30f4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the model architecture and methodology (C81-C83, C19, C49-C50). OpenEval finds the approach well-documented with appropriate physical assumptions and methods (SUPPORTED), while peer reviewers question novelty, cite missing prior work (Majmudar 2012), question the 100x drag coefficient adjustment, and note the 2D model applied to 3D behavior lacks justification (UNCERTAIN).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "c901e758-cd08-4624-9a29-30442af08805",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "58387779-4e09-4949-a8d8-0f68b7bf59ba",
+      "peer_result_id": "525726c1-6bf8-4b82-b6ac-7821e7fda542",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both assess the model's reproduction of diverse behaviors including omega and delta turns (C45, C46, C71, C72, C84). OpenEval finds the capability demonstrated with methodological rigor (SUPPORTED), while peer reviewers note mixed views: turning behavior application is a strength but the 2D model applied to 3D turns lacks justification, and drag coefficients are likely incorrect when the worm touches itself (UNCERTAIN).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "ff1d6308-222f-4eef-842b-acc3dc8fec67",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "e62ebd4b-283e-4803-961b-c9f1301cff27",
+      "peer_result_id": "13ad2444-629d-4e6a-9f5a-85807d36c63c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the novel mechanistic insight about deep bend propulsion (C47). OpenEval finds it supported by simulation data though experimental validation would strengthen it (SUPPORTED), while peer reviewers question whether the model produces new predictions, note results are primarily qualitative, and the 'newly discovered mechanism' claim lacks explicit validation (UNCERTAIN).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "f55c37d5-88b3-48d5-bae5-f7a04ed73a9c",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "72ee92b6-481a-433a-aaad-dd68235cf4f7",
+      "peer_result_id": "7d9d86a8-41cc-4890-8ad1-8d9eb82e56e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both assess methodological details and computational tools (C63-C68). OpenEval finds the methods clearly documented with appropriate citations and transparency (SUPPORTED), and peer reviewers do not challenge these claims, noting computational efficiency and straightforward implementation as strengths (SUPPORTED). Full agreement on methodological documentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "da170de1-a869-4b4c-a1d6-3bd135f77620",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d16a382c-05cf-49a8-a9ea-5fac000dc895",
+      "peer_result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate background claims about C. elegans biology and locomotion (C1-C5, C12-C16, C73-C77). OpenEval finds these well-established with appropriate citations (SUPPORTED), and peer reviewers implicitly accept them as established knowledge, noting 'grounding in empirical data' as a strength (SUPPORTED). Full agreement on background literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "ef0bf2bb-e53a-4913-8d7b-1fc49f785e57",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a367bd1e-5d87-416e-88f8-6a4338d5e7ca",
+      "peer_result_id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate crawling validation (C24, C55, C26) with OpenEval also covering C56-C57. OpenEval finds simulated velocity matches experimental studies with visual support (SUPPORTED). Peer reviewers affirm the model reproduces experimental data with realistic parameters, though note adjusted drag coefficients raise questions about parameter validity (SUPPORTED with reservations). Substantial agreement with caveats about parameters.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "7056a10c-990b-43e7-81e3-b428ef741c08",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "2bad9b0e-2d45-4740-ae7a-7a7feab90dc1",
+      "peer_result_id": "838b0921-fec9-44b7-a4bf-71f47f4e26cd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates swimming dynamics (C25, C27, C28) finding them consistent with physics but lacking direct experimental velocity comparison (SUPPORTED). Peer result R2 covers these claims alongside crawling (C24-C28), affirming reproduction of experimental movement data but questioning adjusted drag coefficients. Both support the results with parameter concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "c202ee28-3bb6-4c1b-83d3-ff2cf10a5a39",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "40afe2d1-b9d7-48ec-bcf3-b543dcd752b8",
+      "peer_result_id": "c002770a-31a3-4f7c-b847-267331b4bed2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates power analysis for escaping behavior (C29-C32, C40) finding quantitative analysis supported by simulation data but lacking experimental validation (SUPPORTED). Peer reviewers identify increased power during omega turns as novel but note results are primarily qualitative without new predictions, and forces likely incorrect when worm touches itself (UNCERTAIN). OpenEval more positive than peer reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "660cf5b1-93ca-4b56-a3fe-491a1a9d9a18",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "47ed0b9f-2ffd-4482-8018-d52042107969",
+      "peer_result_id": "c002770a-31a3-4f7c-b847-267331b4bed2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates power analysis for delta-turns (C34-C38, C40) finding patterns consistent with behavior but lacking experimental validation (SUPPORTED). Peer reviewers group this with escaping behavior analysis, noting potential interest but emphasizing need for validation and questioning accuracy when worm self-contacts (UNCERTAIN). Similar divergence as R9/R4 pairing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "727b914a-da6a-4545-a6c0-ff8d63a16174",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c88ce5a4-79b1-4b21-aff2-3362f73569b1",
+      "peer_result_id": "2cb2ca56-5e3f-445f-9abd-acfca5090280",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "OpenEval evaluates claims about improvements over prior work (C58) finding the methodological advancement accurately contrasted with prior models (SUPPORTED). Peer result R6 covers C58-C60, directly challenging claims of improvement, stating the strength relative to prior approaches is not well supported and the claim is incomplete (UNSUPPORTED). Strong disagreement on novelty and improvement claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "e05de2db-d982-419b-a45e-a36a982e9a5b",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "36b39664-1dd0-4a02-8cc3-bc66eca9f6f5",
+      "peer_result_id": "bbfc02d1-114b-4178-a7ab-2fd22584ce86",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate potential applications (C61-C62). OpenEval finds them promising but speculative without demonstration, making them uncertain as established results (UNCERTAIN). Peer reviewers affirm the model is straightforward and adaptable, treating these applications as reasonable extensions (SUPPORTED). Peer reviewers more positive about potential applications than OpenEval.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "c75ed809-d0f4-45af-aa6a-9dab6f3eb651",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "995226c5-49ee-462a-b278-580a38f22044",
+      "peer_result_id": "6e707ffb-627c-4c6a-8732-29e77f2789f2",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate novelty claims (C78-C80). OpenEval finds C78-C79 accurate but C80's novelty claim difficult to verify, making the claimed gap uncertain (UNCERTAIN). Peer reviewers explicitly challenge novelty, citing missing discussion of functionally similar 2012 work (Majmudar) and other uncited modeling approaches, indicating incomplete literature review (UNSUPPORTED for C80). Peer reviewers more critical of novelty claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "aa47f13d-9b4d-42d9-a69d-3402188b44f3",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "995226c5-49ee-462a-b278-580a38f22044",
+      "peer_result_id": "cdee3e50-a102-4254-870c-b7b3d45a6207",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates C78-C80 together finding prior work accurately cited but novelty uncertain. Peer result R12 evaluates only C78-C79, not disputing these background claims about prior modeling work though critiquing how the authors' work relates to them (SUPPORTED for C78-C79). Agreement on background claims but peer review addresses novelty separately in R7.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "72cdb8ea-5df4-452e-8e23-4fc312ec6cc3",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "a367bd1e-5d87-416e-88f8-6a4338d5e7ca",
+      "peer_result_id": "cb270356-9534-4fb0-8c36-fb3650780026",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates crawling validation including force pattern consistency (C56-C57) as part of broader validation (SUPPORTED). Peer result R11 covers these comparative observations, not challenging them and emphasizing 'grounding in empirical data' as a strength (SUPPORTED). Agreement on these specific comparative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "852ff008-3fed-492f-a134-aefcff115e17",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "36b39664-1dd0-4a02-8cc3-bc66eca9f6f5",
+      "peer_result_id": "2cb2ca56-5e3f-445f-9abd-acfca5090280",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates potential applications and model capabilities (C59-C62) finding C59-C60 supported by design but C61-C62 speculative (UNCERTAIN). Peer result R6 covers C58-C60 together, challenging improvement claims and stating the claim is incomplete (UNSUPPORTED for C58-C60 as a group). Disagreement stems from peer reviewers questioning the foundation for claimed advantages.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    },
+    {
+      "id": "b34f6a1c-b3fa-4707-93ce-39c7cd40a491",
+      "submission_id": "130bb0d0-73a4-440d-9e62-f38bf29fb67e",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "5bb92b17-2e63-406f-aa29-5438c64ab370",
+      "peer_result_id": "4b44b8a9-919f-443f-b0fe-381b2daa084f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates established locomotion principles (C6, C7, C77) finding them well-supported by citations (SUPPORTED). Peer result R9 covers broader background including these claims, implicitly accepting them as established knowledge (SUPPORTED). Agreement on these background claims about locomotion mechanics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T22:38:51.353231Z"
+    }
+  ]
+}

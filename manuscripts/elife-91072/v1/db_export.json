@@ -1,0 +1,2302 @@
+{
+  "submission": {
+    "id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T00:02:01.481169Z",
+    "updated_at": "2025-11-21T00:02:01.481169Z"
+  },
+  "content": [
+    {
+      "id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "content_type": "manuscript",
+      "content_text": "# Single-molecule analysis reveals the phosphorylation of FLS2 governs its spatiotemporal dynamics and immunity\n\n## Authors\n\n- Yaning Cui<sup>1</sup>\n- Hongping Qian<sup>2</sup> ([ORCID: 0009-0003-7332-6503](https://orcid.org/0009-0003-7332-6503))\n- Jinhuan Yin<sup>2</sup>\n- Changwen Xu<sup>2</sup>\n- Pengyun Luo<sup>2</sup>\n- Xi Zhang<sup>2</sup>\n- Meng Yu<sup>3</sup>\n- Bodan Su<sup>4</sup>\n- Xiaojuan Li<sup>2</sup>\n- Jinxing Lin<sup>1</sup> ([ORCID: 0000-0001-9338-1356](https://orcid.org/0000-0001-9338-1356)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Tree Genetics and Breeding, College of Biological Sciences and Technology, Beijing Forestry University Beijing China ([ROR:04xv2pc41](https://ror.org/04xv2pc41))\n2. National Engineering Research Center of Tree Breeding and Ecological Restoration, College of Biological Sciences and Technology, Beijing Forestry University Beijing China ([ROR:04xv2pc41](https://ror.org/04xv2pc41))\n3. College of Life Sciences, Hebei Agricultural University Baoding China ([ROR:009fw8j44](https://ror.org/009fw8j44))\n4. Biotechnology Research Institute Beijing China ([ROR:05vm76w92](https://ror.org/05vm76w92))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Arabidopsis thaliana FLAGELLIN-SENSITIVE2 (FLS2), a typical receptor kinase, recognizes the conserved 22 amino acid sequence in the N-terminal region of flagellin (flg22) to initiate plant defense pathways, which was intensively studied in the past decades. However, the dynamic regulation of FLS2 phosphorylation at the plasma membrane after flg22 recognition needs further elucidation. Through single-particle tracking, we demonstrated that upon flg22 treatment the phosphorylation of Ser-938 in FLS2 impacts its spatiotemporal dynamics and lifetime. Following F\u00f6rster resonance energy transfer-fluorescence lifetime imaging microscopy and protein proximity indexes assays revealed that flg22 treatment increased the co-localization of GFP-tagged FLS2/FLS2S938D but not FLS2S938A with AtRem1.3-mCherry, a sterol-rich lipid marker, indicating that the phosphorylation of FLS2S938 affects FLS2 sorting efficiency to AtRem1.3-associated nanodomains. Importantly, we found that the phosphorylation of Ser-938 enhanced flg22-induced FLS2 internalization and immune responses, demonstrating that the phosphorylation may activate flg22-triggered immunity through partitioning FLS2 into functional AtRem1.3-associated nanodomains, which fills the gap between the FLS2S938 phosphorylation and FLS2-mediated immunity.\n\n## Introduction\n\nPlasma membrane (PM) localized receptor kinase (RK) plays a crucial role in pattern-triggered immunity (PTI), the initial defense layer in plants, features with an extracellular domain, a single transmembrane region, and a cytoplasmic kinase domain (Liang and Zhou, 2018). FLAGELLIN-SENSING 2 (FLS2), a star RK in PTI, senses a conserved N-terminal epitope (flg22) of the bacterial flagellin (Hudson et al., 2024). Upon flg22 perception, FLS2 rapidly interacts with its co-receptor brassinosteroid insensitive1-associated kinase1 (BAK1) to form an active receptor complex (Chinchilla et al., 2006; Chinchilla et al., 2007; Heese et al., 2007), initiating phosphorylation events through activating receptor-like cytoplasmic kinases (RLCKs) such as BOTRYTIS-INDUCED KINASE 1 (BIK1) to elicit downstream immune responses (Lu et al., 2010; Zhang et al., 2010).\n\nProtein phosphorylation, a vital post-translational modification, plays an essential role in signal transduction. Previous studies suggest that protein phosphorylation alterations affect protein dynamics and subcellular trafficking (Kaiserli et al., 2009; Kontaxi et al., 2023). In plants, phosphorylation of proteins can coalesce into membrane nanodomains, forming platforms for active protein function at the PM (B\u00fccherl et al., 2017). For example, Xue et al., 2018 demonstrated that phosphorylation of the blue light receptor phot1 accelerates the protein movement, enhancing its interaction with a sterol-rich lipid marker AtRem1.3-mCherry, which underscores the crucial role of protein phosphorylation in protein dynamics and membrane partitioning. Upon flg22 treatment, multiple FLS2 phosphorylation sites are activated, with the Serine-938 phosphorylation playing a pivotal role in defense activation (Cao et al., 2013); nevertheless, how the phosphorylation of FLS2S938 impacts on plant immunity remains elusive.\n\nMembrane nanodomains, which are crucial in regulating PM protein behavior, are dynamic structures enriched with sterols and sphingolipids (Boutt\u00e9 and Jaillais, 2020) and uniquely labeled by proteins such as Flotillins and Remorins within living cells (Martini\u00e8re and Zelazny, 2021). Various stimuli are able to trigger PM proteins moving into mobile or immobile nanodomains, suggesting a connection between nanodomains and signal transduction (Wang et al., 2015). For example, Xing et al., 2022 demonstrated that sterol depletion significantly impacts the dynamics of flg22-activated FER-GFP, emphasizing the role of nanodomains in the lateral mobility and dissociation of FER from the PM under flg22 treatment. However, the spatial coordination of FLS2 dynamics and signaling at the PM, and their relationships with nanodomains remain poorly understood.\n\nTo investigate whether the FLS2S938 phosphorylation activates immune responses through nanodomains, we analyzed the diffusion and lifetime of FLS2 phospho-dead and phospho-mimic mutants at the PM before and after flg22 treatments. Our results show that flg22-induced dynamic and lifetime changes were abolished in FLS2S938A. Using FLIM-FRET and single-molecule protein proximity index (smPPI) techniques, we found that FLS2 phosphorylation variants exhibited distinct membrane nanodomain distribution and endocytosis. Importantly, we demonstrated that the immune response of phosphor-mimic FLS2S938D was comparable to wild-type FLS2, while the phosphor-dead version of FLS2S938A weakened the immune response. Our findings pinpoint the missing piece of FLS2-mediated immune signaling in planta.\n\n## Results and discussion\n\n### Ser-938 phosphorylation site changed the spatiotemporal dynamics of flg22-induced FLS2 at the plasma membrane\n\nPrevious studies highlight the crucial role of membrane protein phosphorylation in fundamental cellular processes, including PM dynamics (Vitrac et al., 2019; Offringa and Huang, 2013). In vitro mass spectrometry (MS) identified multiple phosphorylation sites in FLS2. Genetic analysis further identified Ser-938 as a functionally important site for FLS2 in vivo (Cao et al., 2013). FLS2 Ser-938 mutations impact flg22-induced signaling, while BAK1 binding remains unaffected, thereby suggesting Ser-938 regulates other aspects of FLS2 activity (Cao et al., 2013). To unravel the immune response regulation mechanisms via FLS2 phosphorylation, we generated transgenic Arabidopsis plants expressing C-terminal GFP-fused FLS2, S938A, or S938D under the FLS2 native promoter in the fls2 mutant background (Figure 1\u2014figure supplement 1). Using VA-TIRFM with single-particle tracking (SPT) (Figure 1A and B, Figure 1\u2014source data 1), we investigated the diffusion dynamics of FLS2 phospho-dead and phospho-mimic mutants, following previous reports (Geng et al., 2022). Upon flg22 treatment, FLS2/FLS2S938D-GFP spots demonstrated extended motion trajectories, contrasting with the shorter motion tracks of FLS2S938A-GFP spots (Figure 1C). The results indicate significant changes in the diffusion coefficients and motion ranges of FLS2/FLS2S938D-GFP after flg22 treatment, whereas FLS2S938A-GFP showed no significant differences (Figure 1D and E and Figure 1\u2014source data 2 and 3). Similar results were obtained using Uniform Manifold Approximation and Projection (UMAP) technology (Dorrity et al., 2020; Figure 1F and Figure 1\u2014figure supplement 2) and fluorescence recovery after photobleaching (FRAP) (Greig and Bulgakova, 2021; Figure 1G and H; Figure 1\u2014figure supplement 3), supporting the essential role of the S938 phosphorylation site in flg22-induced lateral diffusion of FLS2 at the PM.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig1-v1.jpg)\n\n**Figure 1.:** (A) VA-TIRFM images of a FLS2-expressing hypocotyl cell were analyzed. The 5-day-old transgenic Arabidopsis plant cells were observed under VA-TIRFM. The red balls indicate the positions of the identified points that appeared. Trajectories represent the track length of the identified points. Bar = 10 \u03bcm. (B) Time-lapse images of FLS2, FLS2S938A, and FLS2S938D. Bar = 2 \u03bcm. The fluorescence intensity changes among different 3D luminance plots. (C) The trajectories of representative individual FLS2, FLS2S938A, and FLS2S938D under 30 min for 10 \u03bcM flg22 processing and control. Bar = 0.5 \u03bcm. (D) Diffusion coefficients of FLS2 (control, n = 42 spots; flg22, n = 22 spots), FLS2S938A (control, n = 44 spots; flg22, n = 25 spots), and FLS2S938D (control, n = 27 spots; flg22, n = 23 spots) under different environments. Statistical significance was assessed using Student\u2019s t-test (***p<0.001). Error bars represent the SD. (E) Frequency of long- and short-range motions for FLS2 (control, n = 13 spots; flg22, n = 5 spots), FLS2S938A (control, n = 16 spots; flg22, n = 14 spots), and FLS2S938D (control, n = 14 spots; flg22, n = 10 spots) under different environments. Statistical significance was assessed using Student\u2019s t-test (***p<0.001). Error bars represent the SD. (F) Uniform Manifold Approximation and Projection (UMAP) visualization of FLS2 samples under different conditions (control, n = 25 spots; flg22, n = 22 spots). Dots represent the individual images and are colored according to the reaction conditions. (G) The representative FRAP time course of FLS2-GFP, FLS2S938A, and FLS2S938D under flg22 treatments. White squares indicate bleached regions. Bar = 5 \u03bcm. (H) Fluorescence recovery curves of the photobleached areas with or without the flg22 treatment. Three biological replicates were performed. Each experiment was repeated thrice independently (n = 3 images). Statistical significance was assessed using Student\u2019s t-test (***p<0.001). Error bars represent the SD. (I) Lifetime were analyzed for FLS2 (control, n = 13 spots; flg22, n = 9 spots), FLS2S938A (control, n = 28 spots; flg22, n = 21 spots), and FLS2S938D (control, n = 13 spots; flg22, n = 15 spots) under the control and flg22 treatments. The data points were collected from a TIRFM time series using an exposure time of 100 ms to capture a total duration of 20 s. Statistical significance was assessed using Student\u2019s t-test (*p<0.05, ***p<0.001). Error bars represent the SD.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The left images represent GFP signal showing the subcellular localization of FLS2 molecules under different phosphorylation states. The middle images represent red fluorescence signal showing plasma membrane (PM) stained with FM4-64. The right images represent the merge of GFP and FM4-64 staining. Bar = 20 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Dots represent individual images and are colored according to the reaction conditions.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** White squares indicate bleached regions. Bar = 5 \u03bcm.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** For short presentation, one frame is displayed for every 10 frames captured (at 100 ms intervals). Bar = 300 nm.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Bar = 2 s.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Bar = 1 \u03bcm.\n\nUsing VA-TIRFM, we analyzed FLS2 particle lifetime across various phosphorylation states. The results revealed that flg22 treatment significantly reduced the fluorescence trajectory of FLS2 molecules compared to the control (Figure 1\u2014figure supplement 4), indicating that Ser-938 phosphorylation influences flg22-induced lifetime of FLS2 at the PM. Subsequently, real-time dynamic analysis through the Kymograph technique provided spatiotemporal information via frame-by-frame tracking (Zhou et al., 2020; Su et al., 2023). Compared to FLS2-GFP and FLS2S938D-GFP, FLS2S938A-GFP showed nearly linear fluctuations in fluorescence intensity under flg22 conditions, and the duration of fluorescence retention was essentially unchanged (Figure 1\u2014figure supplement 5). To validate this, we used an exposure time of 100 ms to capture a time series with a total duration of 20 s. Therefore, we divided the times into three segments: 0\u20131 s, 1\u20134 s, and >4 s (B\u00fccherl et al., 2017). Numerous FLS2 molecules exhibited a short-lived lifetime, which could be attributed to fluorescence bleaching or potentially reflect the occurrence of abortive endocytic events (Bertot et al., 2018). Additionally, we focused on lifetimes exceeding 4 s. The results showed after flg22 treatment the lifetime of FLS2S938D-GFP greater than 4S significantly decreased, resembling that of FLS2-GFP. While FLS2S938A-GFP plants showed a minor decrease in lifetime upon flg22 treatment, this change was insignificant (Figure 1I, Figure 1\u2014source data 4, Figure 1\u2014figure supplement 6). This aligns with previous findings that indicated that NRT1.1 phosphorylation affects dynamics and lifetime (Zhang et al., 2019). Therefore, these results underscore the impact of Ser-938 phosphorylation on the spatiotemporal dynamics of flg22-induced FLS2.\n\n### Ser-938 phosphorylation enhances recruitment of FLS2/BAK1 heterodimerization into AtRem1.3-associated nanodomains\n\nProteins rarely act independently; they typically form multimers to enhance downstream signaling (Li et al., 2022). Flg22 treatment induces FLS2 and BAK1 to heterodimerize at the PM, signifying flg22 as a ligand promoting this heterodimerization (Orosa et al., 2018). To investigate the impact of Ser-938 phosphorylation on FLS2/BAK1 heterodimerization, we employed Tesseler technology, analyzing FLS2 and BAK1 co-localization in Nicotiana benthamiana epidermal cells. Partial co-localization of FLS2-GFP, FLS2S938A-GFP, and FLS2S938D-GFP with BAK1-mCherry was observed after treatment (Figure 2\u2014figure supplement 1), suggesting that heterodimerization formation is independent of Ser-938 phosphorylation. To further verify if FLS2/BAK1 heterodimerization requires Ser-938 phosphorylation, we analyzed the donor fluorescence lifetime (t) and corrected fluorescence resonance energy transfer (FRET) efficiency (IPS value). A significant decrease in GFP lifetime (t) was observed in leaves expressing FLS2/FLS2S938D/FLS2S938A and BAK1-mCherry upon flg22 application (Figure 2A, Figure 2\u2014source data 1). The FRET efficiency (IPS) between FLS2, FLS2S938D, and FLS2S938A with BAK1-mCherry significantly increased after flg22 treatment, suggesting that the FLS2 Ser-938 phosphorylation site is not essential for flg22-induced heterodimerization. To validate this observation, we quantified FLS2/FLS2S938D/FLS2S938A and BAK1-mCherry co-localization using Pearson correlation coefficients. A marked increase in the coefficient after flg22 treatment for FLS2/FLS2S938D/FLS2S938A and BAK1-mCherry (Figure 2B, Figure 2\u2014source data 2, Figure 2\u2014figure supplement 2) indicated flg22-induced interaction between FLS2-GFP and BAK1-mCherry, irrespective of FLS2 Ser-938 phosphorylation. Additionally, we applied protein proximity indexes (PPIs) to estimate the degree of co-localization between FLS2/FLS2S938D/FLS2S938A and BAK1-mCherry. After flg22 treatment, mean PPIs of FLS2, FLS2S938D, and FLS2S938A with BAK1 increased (Figure 2C, Figure 2\u2014source data 3, Figure 2\u2014figure supplement 3), thereby further supporting our findings. This aligns with the previous finding that flg22 acts as a molecular glue for FLS2 and BAK1 ectodomains (Sun et al., 2013), confirming the independence of FLS2/BAK1 heterodimerization from phosphorylation, with these events occurring sequentially.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig2-v1.jpg)\n\n**Figure 2.:** (A) FLIM-FRET was used to detect the co-expression of FLS2/FLS2S938A /FLS2S938D-GFP and BAK1-mCherry in the N. benthamiana epidermal cells stimulated by 1/2 MS or flg22 (10 \u03bcM) for 30 min. Average fluorescence lifetime (t) and the FRET efficiency were analyzed for FLS2 (control, n = 21 images; flg22, n = 14 images), FLS2S938A (control, n = 18 images; flg22, n = 12 images), or FLS2S938D (control, n = 24 images; flg22, n = 14 images) and BAK1. The fluorescence mean lifetime (t) of FLS2-GFP (n = 7 images). Statistical significance was assessed using Student\u2019s t-test (***p<0.001). Error bars represent the SD. (B) Pearson correlation coefficient values of co-localization between FLS2 (control, n = 21 images; flg22, n = 11 images), FLS2S938A (control, n = 4 images; flg22, n = 20 images), or FLS2S938D (control, n = 8 images; flg22, n = 10 images) and BAK1 upon stimulation with control or flg22. Statistical significance was assessed using Student\u2019s t-test (*p<0.05). Error bars represent the SD. (C) Mean protein proximity indexes showing FLS2 (control, n = 6 images; flg22, n = 5 images), FLS2S938A (control, n = 4 images; flg22, n = 3 images), or FLS2S938D (control, n = 4 images; flg22, n = 3 images) and BAK1 degree of proximity under different conditions. Statistical significance was assessed using Student\u2019s t-test (*p<0.05, **p<0.01). Error bars represent the SD. (D) TIRF-SIM images of the Arabidopsis leaf epidermal cells co-expressing FLS2/FLS2S938A/FLS2S938D-GFP and AtRem1.3-mCherry under different environments. The distribution of FLS2 and AtRem1.3 signals along the white line in the merged image. Bar = 5 \u03bcm. (E) The histogram shows the co-localization ratio of FLS2-GFP (control, n = 46 images; flg22, n = 59 images), FLS2S938A-GFP (control, n = 24 images; flg22, n = 36 images), or FLS2S938D-GFP (control, n = 30 images; flg22, n = 54 images) and AtRem1.3-mCherry. The sizes of the ROIs used for statistical analysis are 13.38 \u03bcm and 13.38 \u03bcm. Statistical significance was assessed using Student\u2019s t-test (*p<0.05). Error bars represent the SD. (F) FLS2/FLS2S938A/FLS2S938D-GFP and AtRem1.3-mCherry fluorescence signals as shown in (D). (G) The fluorescence mean lifetime (t) and the corrected fluorescence resonance efficiency (Rate) of FLS2 (control, n = 8 images; flg22, n = 13 images), FLS2S938A (control, n = 9 images; flg22, n = 11 images), or FLS2S938D (control, n = 10 images; flg22, n = 11 images) with co-expressed AtRem1.3. The fluorescence mean lifetime (t) of FLS2-GFP (n = 9 images). Statistical significance was assessed using Student\u2019s t-test (***p<0.001). Error bars represent the SD. (H) Intensity and lifetime maps of the Arabidopsis leaf epidermal cells co-expressing FLS2/FLS2S938A/FLS2S938D-GFP and AtRem1.3-mCherry as measured by FLIM-FRET. Bar = 2 \u00b5m. (I) Quantification of co-localization between FLS2, FLS2S938A or FLS2S938D and AtRem1.3 with and without stimulation with ligands. Pearson correlation coefficient values (r) were obtained between FLS2 (control, n = 62 images; flg22, n = 53 images)/FLS2S938A (control, n = 26 images; flg22, n = 40 images)/FLS2S938D-GFP (control, n = 28 images; flg22, n = 38 images) and AtRem1.3-mCherry. Statistical significance was assessed using Student\u2019s t-test (*p<0.05). Error bars represent the SD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Bar = 50 \u03bcm.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig2-figsupp3-v1.jpg)\n\nMembrane nanodomains serve as pivotal platforms for protein regulation, impacting cellular signaling dynamics (Martini\u00e8re and Zelazny, 2021). Studies reveal that specific PM proteins, responsive to developmental cues and environmental stimuli, exhibit dynamic movements within and outside these nanodomains (Lee et al., 2019). For instance, treatment with the secreted peptides RAPID ALKALINIZATION FACTOR (RALF1 and RALF23) enhances the presence of FERONIA (FER) in membrane nanodomains (Gronnier et al., 2022). Conversely, flg22-activated BSK1 translocates from membrane nanodomains to non-membrane nanodomains (Su et al., 2021). In a previous investigation, we demonstrated that flg22 induces FLS2 translocation from AtFlot1-negative to AtFlot1-positive nanodomains in the plasma membrane, implying a connection between FLS2 phosphorylation and membrane nanodomain distribution (Cui et al., 2018). To validate this, we assessed the association of FLS2/FLS2S938D/FLS2S938A with membrane nanodomains, using AtRem1.3-associated nanodomains as representatives (Lv et al., 2017; Huang et al., 2019). Upon observation using dual-color TIRM-SIM, partial co-localization was detected between FLS2-GFP, FLS2S938D-GFP, FLS2S938A-GFP, and AtRem1.3-mCherry foci on cell surfaces (Figure 2D). SPT was employed to quantify the co-localization ratio, revealing a small overlap in the cross-correlation signal for FLS2S938A-GFP and AtRem1.3-mCherry after flg22 treatment, similar to untreated cells. In contrast, flg22-treated seedlings displayed higher cross-correlation signals for FLS2-GFP/FLS2S938D-GFP and AtRem1.3-mCherry compared to untreated seedlings (Figure 2E and F), suggesting that phosphorylation increased the movement of FLS2 protein to membrane nanodomains. To further verify this result, FRET-FLIM was applied to examine the correlation between FLS2/FLS2S938D/FLS2S938A-GFP and AtRem1.3-mCherry. The results showed that, after flg22 treatment, plants co-expressing FLS2S938D-GFP with AtRem1.3-mCherry had a strongly reduced average GFP fluorescence lifetime compared to control seedlings, which was similar to that of FLS2-GFP seedlings (Figure 2G and H, Figure 2\u2014source data 4 and 5). Meanwhile, the flg22 treatment increased the IPS for FLS2 and FLS2S938D with AtRem1.3-mCherry. No significant difference was observed in the fluorescence lifetime and IPS of FLS2S938A-GFP co-expressed with AtRem1.3-mCherry, with or without flg22 treatment (Figure 2G and H, Figure 2\u2014source data 4 and 5), suggesting that Ser-938 phosphorylation may influence FLS2 partitioning into PM nanodomains. To further investigate the role of phosphorylation in FLS2 distribution into nanodomains, we used Pearson correlation coefficients to quantify the co-localization between FLS2/FLS2S938D/FLS2S938A-GFP and AtRem1.3-mCherry. It was found that the mean co-localization values between FLS2-GFP/FLS2S938D-GFP and AtRem1.3-mCherry under flg22 treatment were significantly higher compared to the control group (Figure 2I, Figure 2\u2014source data 6). Notably, FLS2S938A-GFP and AtRem1.3-mCherry demonstrated similar co-localization values under both control group and flg22 conditions (Figure 2I, Figure 2\u2014source data 6), indicating that the phosphorylated form of FLS2 may modify the distribution of PM nanodomains. These findings suggest that the phosphorylation state of FLS2 at Ser-938 influences its aggregation into AtRem1.3-associated nanodomains, providing an efficient mechanism for triggering the immune response.\n\n### Ser-938 phosphorylation maintains FLS2 protein homeostasis via flg22-induced endocytosis\n\nThe PM protein endocytosis is crucial for regulating intercellular signal transduction in response to environmental stimuli. Notably, Thr 867 mutation, a potential phosphorylation site on FLS2, results in impaired flg22-induced endocytosis, underscoring the significance of phosphorylation in FLS2 endocytosis (Robatzek et al., 2006). As shown in Figure 1I, both FLS2 and FLS2 phospho-mimetic mutants showed a reduced lifetime under flg22 treatment, implying a probable connection between FLS2 lifetime and endocytosis. We further found that FLS2/FLS2S938D/FLS2S938A-GFP accumulated in brefeldin A (BFA) compartments labeled with FM4-64, indicating that various Ser-938 phosphorylation states of FLS2 undergo BFA-dependent constitutive endocytosis (Figure 3A, Figure 3\u2014source data 1, Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig3-v1.jpg)\n\n**Figure 3.:** (A) Confocal images of FLS2/FLS2S938A/FLS2S938D-GFP in Arabidopsis thaliana leaf epidermal cells. Firstly, experiments were performed after pretreatment with CHX (50 \u03bcM) for 30 min. Subsequently, to observe subcellular localization, FLS2/FLS2S938A/FLS2S938D-GFP were treated with 60 min of BFA (50 \u03bcM) and then exposed or not to flg22 (10 \u03bcM). Finally, the transgenic seedlings were stained with FM4-64 (5 \u03bcM, 30 min). White arrows indicate BFA bodies. Bar = 3 \u03bcm. (B) Images of FLS2/FLS2S938A/FLS2S938D-GFP in Arabidopsis thaliana leaf epidermal cells treated with 10 \u03bcM flg22 for 15, 30, and 60 min. Bar = 3 \u03bcm. (C) Analysis of FLS2 (15 min, n = 4 images; 30 min, n = 4 images; 60 min, n = 4 images), FLS2S938A (15 min, n = 3 images; 30 min, n = 3 images; 60 min, n = 3 images), and FLS2S938D (15 min, n = 3 images; 30 min, n = 3 images; 60 min, n = 3 images) endocytic vesicle numbers in cells treated with 10 \u03bcM flg22 treatment over time. Statistical significance was assessed using Student\u2019s t-test (***p<0.001). Error bars represent the SD. (D) The signal density of FLS2 (control, n = 45 images; flg22, n = 24 images), FLS2S938A (control, n = 27 images; flg22, n = 31 images), and FLS2S938D (control, n = 18 images; flg22, n = 15 images) in cells after control or 10 \u03bcM flg22 treatments for 30 min as measured by fluorescence correlation spectroscopy (FCS). Statistical significance was assessed using Student\u2019s t-test (**p<0.01). Error bars represent the SD. (E) Immunoblot analysis of FLS2 protein in 10-day-old transgenic Arabidopsis plant upon stimulation with or without 10 \u03bcM flg22. CBB, a loading control dyed with Coomassie Brilliant Blue.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Bar = 5 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Arrows indicate BFA bodies of FLS2, inset images show details of BFA bodies. White arrows indicate BFA bodies. Bar = 5 \u03bcm.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Number analysis of FLS2-GFP (control, n = 19 images; flg22, n = 9 images), FLS2S938A-GFP (control, n = 28 images; flg22, n = 9 images) and FLS2S938D-GFP (control, n = 21 images; flg22, n = 7 images) signal in leaf epidermal cells of Arabidopsis.Statistical significance was assessed using Student\u2019s t-test. Error bars represent SD (n = 3). (B) Quantification of BFA body diameter in FLS2-GFP (control, n = 12 images; flg22, n = 8 images), FLS2S938A-GFP (control, n = 9 images; flg22, n = 10 images), and FLS2S938D-GFP (control, n = 8 images; flg22, n = 22 images). Statistical significance was assessed using Student\u2019s t-test (**p<0.01). Error bars represent the SD. (C) The fluorescence intensity of FLS2-GFP (control, n = 6 images; flg22, n = 5 images), FLS2S938A-GFP (control, n = 5 images; flg22, n = 5 images), and FLS2S938D-GFP (control, n = 3 images; flg22, n = 7 images) in the cytoplasm relative to the sum of the cytoplasm and PM in leaves epidermal cells under CHX + BFA + FM4-64 treatment; three biological replicates were performed. Statistical significance was assessed using Student\u2019s t-test (**p<0.01). Error bars represent the SD.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Statistical significance was assessed using Student\u2019s t-test (*p<0.05, ***p<0.001). Error bars represent the SD.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Control (CK) plants received no treatment. All the samples except CK were pretreated with flg22 for different times. Bar = 10 \u03bcm.\n\nNext, we investigated the impact of Ser-938 on flg22-induced FLS2 internalization. Under co-treatment with BFA and flg22, FLS2/FLS2S938D produced strong signals in both the BFA compartments. Interestingly, we found that FLS2S938A-GFP only produced BFA compartments, and most remained at the PM region with few intracellular puncta upon stimulation with BFA and flg22 (Figure 3\u2014figure supplements 2 and 3). We further tracked FLS2 endocytosis and quantified vesicle numbers over time; the results showed that both FLS2 and FLS2S938D vesicles appeared 15 min after-flg22 treatment, significantly increasing thereafter. Notably, only a few vesicles were detected in FLS2S938A-GFP, indicating Ser-938 phosphorylation of FLS2 impact on flg22-induced FLS2 endocytosis (Figure 3B and C, Figure 3\u2014source data 2, Figure 3\u2014source data 3, Figure 3\u2014figure supplement 4). Results revealed increased endocytic vesicles for FLS2 during flg22 treatment, aligning with previous studies (Leslie and Heese, 2017; Loiseau and Robatzek, 2017). Additionally, fluorescence correlation spectroscopy (FCS) (Chen et al., 2009) monitored molecular density of FLS2 changes on the PM before and after flg22 treatment (Figure 3\u2014figure supplement 5). Figure 3D shows that both FLS2-GFP and FLS2S938D-GFP densities significantly decreased after flg22 treatment, while FLS2S938A-GFP exhibited minimal changes, indicating Ser-938 phosphorylation affects FLS2 internalization (Figure 3D, Figure 3\u2014source data 4). Western blotting confirmed that Ser-938 phosphorylation influences FLS2 degradation after flg22 treatment (Figure 3E, Figure 3\u2014source data 5 and 6), consistent with single-molecule analysis findings. Therefore, our results strongly support the notion that Ser-938 phosphorylation expedited FLS2 internalization, potentially regulating its immune response capacity.\n\n### Ser-938 phosphorylation affects FLS2-mediated responses\n\nPTI plays a pivotal role in host defense against pathogenic infections (Macho and Zipfel, 2014; Ding et al., 2022; Ngou et al., 2022). Previous studies demonstrated that the perception of flg22 by FLS2 initiates a complex signaling network with multiple parallel branches, including calcium burst, mitogen-activated protein kinases (MAPKs) activation, callose deposition, and seedling growth inhibition (Chi et al., 2021; Zipfel et al., 2004; Li et al., 2016; Sanguankiattichai et al., 2022). Our focus was to investigate the significance of Ser-938 phosphorylation in flg22-induced plant immunity. Our results illustrate diverse immune responses in FLS2 and FLS2S938D plants following flg22 treatment (Figure 4A\u2013F, Figure 4\u2014source data 1\u20133, Figure 4\u2014figure supplements 1\u20133). These responses encompass calcium burst activation, MAPKs cascade reaction, callose deposition, hypocotyl growth inhibition, and activation of immune-responsive genes. In contrast, FLS2S938A exhibited limited immune responses, underscoring the importance of Ser-938 phosphorylation for FLS2-mediated PTI responses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig4-v1.jpg)\n\n**Figure 4.:** (A) The flg22-induced transient Ca2+ flux in 20-day-old transgenic leaf cells. The Ca2+ flux was continuously recorded for 12 min in the test medium. Each point represents the average value for about 12 individual plants \u00b1 SEM. (B) Phenotypes of 5-day-old etiolated seedlings grown in the presence of 1/2 MS (control) or 10 \u03bcM flg22 solid medium. Bar = 0.5 cm. (C) Hypocotyl length of FLS2 (control, n = 13 seedlings; flg22, n = 13 seedlings), FLS2S938A (control, n = 13 seedlings; flg22, n = 13 seedlings), and FLS2S938D (control, n = 13 seedlings; flg22, n = 13 seedlings) transgenic plants. Statistical significance was assessed using Student\u2019s t-test (***p<0.001). Error bars represent the SD. (D\u2013F) mRNA levels of the PTI marker genes FRK1/WRKY33/CYP81 were significantly different between the FLS2, FLS2S938A, and FLS2S938D 10-day-old transgenic Arabidopsis plant after treatment with 10 \u03bcM flg22 for 30 min. Total RNA was extracted from 10-day-old seedlings and analyzed using qRT-PCR, with transcript levels being normalized to UBQ5. Three biological replicates were performed. Each experiment was repeated thrice independently (n = 3). Statistical significance was assessed using Student\u2019s t-test (*p<0.05, **p<0.01, ***p<0.001). Error bars represent SD. (G) The working model for the spatiotemporal dynamic regulation of FLS2 phosphorylation at the plasma membrane upon flg22 stimulation. (H) Dynamic model of FLS2 with different Ser-938 phosphorylation states upon stimulation with flg22.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** CBB, a loading control dyed with Coomassie brilliant blue.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Detection of callose deposition in leaves of FLS2-GFP, FLS2S938A-GFP, and FLS2S938D-GFP Arabidopsis seedlings after treated with CK (1/2 MS liquid medium) or 10 \u03bcM flg22 for 12 hr. Callose was observed using a fluorescence microscope. Bar = 5 mm. (B) The amount of callose stained with aniline blue per unit area on FLS2-GFP (control, n = 7 images; flg22, n = 14 images), FLS2S938A-GFP (control, n = 10 images; flg22, n = 12 images), and FLS2S938D-GFP (control, n = 10 images; flg22, n = 13 images) image was quantitatively analyzed. Statistical significance was assessed using Student\u2019s t-test (***p<0.001). Error bars represent the SD.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/91072/elife-91072-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Scale bar = 0.5 cm.\n\nIn summary, our study confirmed that FLS2 phosphorylation regulated PAMP-triggered plant immunity by influencing spatiotemporal dynamics at the PM. Following flg22 treatment, activated FLS2 undergoes hetero-oligomerization and phosphorylation sequentially (Figure 4G and H). Crucially, phosphorylation at the Ser-938 site promotes FLS2 recruitment into AtRem1.3-associated nanodomains and endocytosis (Figure 4G and H). These results provided new insights into the phosphorylation-regulated dynamics of plant immunity, thereby providing a reference for future studies on signal transduction in intracellular complex nanostructures.\n\n## Materials and methods\n\n### Plant materials and construction\n\nMutants and transgenic lines used in all experiments were in the Arabidopsis thaliana Colombia-0 (Col-0) background. To generate the transgenic plants, specific constructs were PCR-amplified and cloned into the vector pCAMBIA2300. Plasmids were introduced into the mutant plants by Agrobacterium-mediated transformation. Dual-color lines expressing FLS2S938A-GFP and FLS2S938D-GFP with AtREM1.3-mCherry were generated by hybridization.\n\n### Transient infiltration of N. benthamiana leaves\n\nThe Agrobacterium tumefaciens strains GV3101 (obtained from Shanghai Weidi Biotechnology), harboring eukaryotic expression vectors, were infiltrated into the leaves of 8-week-old N. benthamiana plants. Plants were incubated at 22\u00b0C for 2 days before imaging.\n\n### Drug treatments\n\nAll chemicals were obtained from Sigma-Aldrich and dissolved in 100% DMSO to yield stock solutions at the following concentrations: BFA (50 mM in DMSO, 50 \u00b5M in working solution), CHX (50 mM in DMSO, 50 \u00b5M in working solution), and FM4-64 (5 mM in DMSO, 5 \u00b5M in working solution). The flg22 of flagellin peptides was synthesized by Shanghai GL Biochem Company and was used at a concentration of 10 \u00b5M in double-distilled H2O. Arabidopsis seedlings were treated in 1/2 MS growth liquid medium with added hormone or drug.\n\n### Quantitative reverse-transcription PCR\n\nTotal RNA was extracted using the Plant Kit (Tiangen) and then reverse transcribed into cDNA with FastQuant RT Kit (Tiangen). Next, qPCR was performed using TiangenSurperRealPreMix Plus (SYBR Green). The primers used were as follows: WRKY33 (At At2g38470) 5\u2032-GAAACAAATGGTGGGAATGG-3\u2032 and 5\u2032-TGTCGTGTGATGCTCTCTCC-3\u2032; CYP81 (At At2g23190) 5\u2032-AAATGGAGAGAGCAACACAATG-3\u2032 and 5\u2032-ATCGCCCATTCCAATGTTAC-3\u2032; FRK1 (AtAt2g19190) 5\u2032-TATATGGACACCGCGTATAGTG-3\u2032 and 5\u2032-ATAAAACTTTGCGTTAGGGTCG-3\u2032.\n\n### Aniline blue staining\n\nTo detect callose deposition, aniline blue staining was performed as described. Arabidopsis thaliana leaves were completely de-colored by the destaining solution (3 ml ethyl alcohol and 1 ml glacial acetic acid), rinsed in water and 50% ethanol, and then stained in 150 mM KH2PO4 (pH 9.5) plus 0.01% aniline blue for 2 hr. Samples were mounted in 25% glycerol, and then observed under a microscope that was equipped with a Leica DM2500 UV lamp.\n\n### Confocal laser scanning microscopy and image analysis\n\nConfocal microscopy was done with a TCS SP5 Confocal Microscope fitted with a \u00d763 water-immersion objective. GFP and FM4-64 were assayed using 488 nm and 514 nm wavelengths (multitrack mode). The fluorescence emissions were respectively detected with spectral detector set LP 560-640 (FM4-64) and BP 520-555 (GFP). Image analysis was performed with Leica TCS SP5 software and quantified using the ImageJ software bundle (NIH).\n\n### VA-TIRFM and single-particle fluorescence image analysis\n\nThe dynamics of FLS2 phospho-dead and phospho-mimic mutants were recorded using VA-TIRFM. This was done using an inverted microscope (IX-71, Olympus) equipped with a total internal reflective fluorescence illuminator (model no. IX2-RFAEVA-2; Olympus) and a 1003 oil-immersion objective (numerical aperture = 1.45). To track GFP-labeled proteins at the PM, living leaf epidermal cells of 6-day-old seedlings were observed under VA-TIRFM. To visualize GFP or mCherry fluorescent proteins, appropriate corresponding laser excitation (473 nm or 561 nm) was used and emission fluorescence was obtained with filters (BA510IF for GFP; HQ525/50 for mCherry). A digital EMCCD camera (Andor Technology, ANDOR iXon DV8897D-CS0-VP, Belfast, UK) was used to acquire the fluorescent signals, which were stored directly on computers and then analyzed using ImageJ software. Images of single particles were acquired with 100 ms exposure time.\n\n### UMAP analysis\n\nWe used an R package to perform dimensionality reduction and clustering analysis of single-particle tracking data. We performed nonlinear dimensionality reduction for visualization with the function \u2018UMAP\u2019 in the R package. We proceeded to cluster cells using the Louvain algorithm with the \u2018FindNeighbors\u2019 and \u2018FindClusters\u2019 functions in the R package carried out as previously described (Dorrity et al., 2020).\n\n### TIRF-SIM imaging and the co-localization analysis\n\nThe SIM images were taken using a 60\u00d7NA 1.49 objective on a structured illumination microscopy (SIM) platform (DeltaVision OMX SR) with a sCMOS camera (camera pixel size, 6.5 \u03bcm). The light source for TIRF-SIM included diode laser at 488 nm and 568 nm with pixel sizes (\u03bcm) of 0.0794 and 0.0794 (Barbieri et al., 2021).\n\nFor the dual-color imaging, FLS2/FLS2S938A/FLS2S938D-GFP (488 nm/30.0%) and AtRem1.3-mCherry (561 nm/30.0%) were excited sequentially. The exposure time of the camera was set at 50 ms throughout single-particle imaging. The time interval for time-lapse imaging was 100 ms, the total time was 2 s, and the total time points were 21 s. The Imaris intensity correlation analysis plugin was used to calculate the co-localization ratio as described previously. The sizes of the ROIs used for statistical analysis are 13.38 \u03bcm and 13.38 \u03bcm.\n\n### Ca2+ flux measurements in Arabidopsis leaves\n\nNet Ca2+ fluxes in Arabidopsis leaf cells were measured using the non-invasive micro-test technique, as described previously (Zhong et al., 2023). First, a small incision was made in the leaves of 14-day-old seedling. Then it was fixed at the bottom of 35 mm Petri dish and incubated in the test buffer (pH = 6.0, 0.1 mmol l\u22121 KCl/CaCl2/MgCl2, 0.2 mmol l\u22121 Na2SO4, 0.3 mmol l\u22121 MES, 0.5 mmol l\u22121 NaCl) for approximately 30 min. The Ca2+ concentration in the leaf cells was measured at 0.2 Hz near and 30 \u00b5m away from the cells. Each plant was measured once, and then using 1/2 MS (CK) or 10 \u03bcM flg22 treated the leaf and measured Ca2+flux again. The Ca2+ flux was calculated as described (Jiao et al., 2022).\n\n### Analysis of root growth\n\nThe transgenic seedlings were treated with different conditions, and imaging was performed by scanning the root systems at 500 dpi (Canon EOS 600D). ImageJ was used to analyze the root growth parameters. Three biological replicates were performed.\n\n### Fluorescence recovery after photobleaching analysis\n\nPlants were grown on 1/2 MS solid medium for 4 days prior to conducting FRAP analysis. The FRAP analysis was carried out using an Olympus FV1200 confocal microscope with an inverted microscope setup. The imaging was performed using 488 nm diode laser excitation and a water-immersed \u00d763 objective. The area of interest was bleached with a 488 nm laser at 100% laser power. The time interval for monitoring fluorescence recovery was 3 s. The fluorescence recovery data was subsequently analyzed using ImageJ and Origin 8.6 software following the methods outlined by Xing et al., 2022.\n\n### Fluorescence correlation spectroscopy\n\nFCS was performed in point-scanning mode on a Leica TCS SP5 FCS microscope equipped with a 488 nm argon laser, an Avalanche photodiode, and an in-house coupled correlator. After acquiring images on the PM of a cell in transmitted light mode, the diffusion of protein molecules into and out of the focal volume transformed the local concentration of fluorophores, leading to spontaneous fluctuation in the fluorescence intensity. Finally, the protein density was calculated on the basis of the protocol described previously.\n\n### FRET-FLIM\n\nFRET-FLIM analysis was performed using an inverted Olympus FV1200 microscope equipped with a Picoquant picoHarp300 controller. The excitation at 488 nm was implemented by a picosecond pulsed diode laser at a reduplication rate of 40 MHz by way of a water immersion objective (603, NA 1.2). The emitted light passed through a 520/35 nm bandpass filter and was detected by an MPD SPAD detector. Data were collected and performed using the SymphoTime 64 software (PicoQuant).\n\n### Western blot\n\nTotal proteins were extracted from 10-day-old seedlings of the acidic phosphomimic mutants FLS2S938A-GFP and FLS2S938D-GFP and transgenic FLS2-GFP lines under different conditions. Proteins were extracted using buffer E (includes 1.5125 g Tris-HCl [pH 8.8], 1.2409 g Na2S2O5, 11.1 ml glycerine, 1 g SDS, and 5 mM DTT). The proteins in PM fractions were obtained using the Invent Minute kit. Proteins were separated by 10% SDS-polyacrylamide gel and transferred to a nitrocellulose membrane. The membrane was blotted with anti-GFP antibody (Sigma-Aldrich) at a 1:4000 dilution.\n\n### SR-Tesseler\n\nThe association of FLS2/FLS2S938D/FLS2S938A with AtRem1.3-associated nanodomains was characterized using the open-source software packages ImageJ and SR-Tesseler. The specific operational steps were as previously described (Levet et al., 2015).\n\n### PPI analysis\n\nThe degree of correlation between proteins was analyzed by measuring the PPIs (Zinchuk et al., 2011). Recently, an smPPI was developed. Using single-molecule images acquired via VA-TIRFM, the smPPI can be calculated to quantitatively assess the co-localization of FLS2/FLS2S938D/FLS2S938A with AtRem1.3.\n\n### Kymograph analysis\n\nThe original images were uploaded to ImageJ, which includes the \u2018multiple kymograph\u2019 plugin. The image can be adjusted for optimum contrast by selecting \u2018Image/Adjustment/Brightness/Contrast\u2019. Subsequently, the individual particles of interest are selected using the \u2018straight line\u2019 tool, and the dynamic features are analyzed using the \u2018Multiple Kymograph\u2019 tool. Finally, the \u2018Image/Type/RGB color\u2019 tool is utilized to obtain typical images, which are then saved in TIFF format.\n\n### Pearson analysis\n\nThe co-localization analysis for FLS2/FLS2S938D/FLS2S938A with AtRem1.3/BAK1 was carried out using ImageJ as described previously (Zhang et al., 2019). The background subtraction was performed using the 'Rolling Ball' method with a radius of 50 pixels. The plugin \u2018PSC co-localization\u2019 in ImageJ was employed to derive the Pearson correlation coefficient (Rr).\n\n### Data analysis\n\nThe significance of arithmetic mean values for all data sets was assessed using Student\u2019s t-test. Error bars were calculated with the s.d. function in Microsoft Excel. The differences at p<0.05 were considered statistically significant. According to Student\u2019s t-test, characters in the figure represent statistically significant differences compared with control (*p<0.05, **p<0.01, and ***p<0.001).\n",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "b888faa4-7160-4200-8d82-04227237a26d",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jian-Min Zhou, Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91072.3.sa0](https://doi.org/10.7554/eLife.91072.3.sa0)\n\nThis potentially important study employs advanced imaging techniques to directly visualize molecular dynamics and of the immune receptor kinase FLS2 in specific microenvironments. The evidence supporting the ligand-induced association with remorin and the requirement of a previously reported phosphosite as presented is solid, although support by independent methods would be welcome. The work will be of interest to plant biologists working on cell surface receptors.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91072.3.sa1](https://doi.org/10.7554/eLife.91072.3.sa1)\n\nSummary:\n\nOrganization of cell surface receptors in membrane nanodomains is important for signaling, but how this is regulated is poorly understood. In this study the authors employ TIRFM single-molecule tracking combined with multiple analyses to show that ligand exposure increases diffusion of the immune receptor FLS2 in the plasma membrane and its co-localization with remorin REM1.3 in a manner dependent on the phosphosite S938. They additionally show that ligand increases dwell time of FLS2, and this is linked to FLS2 endocytosis, also in a manner dependent on S938 phosphorylation. The study uncovers a regulatory mechanism of FLS2 localization in the nanodomain crucial for signaling.\n\nStrengths:\n\nTIRFM single-molecule tracking, FRAP, FRET and endocytosis experiments were nicely done. A role of S938 phosphorylation is convincing.\n\nWeaknesses:\n\nIn the previous submission, reviewers pointed out multiple issues, which the reviewers believed the authors can address in the revision. The revised version does improve to some extent but still contains many issues in terms of data analysis and writing.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91072.3.sa2](https://doi.org/10.7554/eLife.91072.3.sa2)\n\nSummary:\n\nThe research conducted by Yaning Cui and colleagues delves into understanding FLS2-mediated immunity. This is achieved by comparing the spatiotemporal dynamics of a FLS2-S938A mutant and FLS2-WT, especially in relation to their association with the remorin protein. To delineate the differences between the FLS2-S938A mutant and FLS2-WT, they utilized a plethora of advanced fluorescent imaging techniques. By analyzing surface dynamics and interactions involving the receptor signal co-receptor BAK1 and remorin proteins, the authors propose a model of how FLS2 and BAK1 are assembled and positioned within a remorin-specific nano-enviroment during FLS2 ligand-induced immune responses.\n\nStrengths:\n\nThese techniques offer direct visualizations of molecular dynamics and interactions, helping us understand their spatial relationships and interactions during innate immune responses.\n\nAdvanced cell biology imaging techniques are crucial for obtaining high-resolution insights into the intracellular dynamics of biomolecules. The demonstrated imaging systems are excellent examples to be used in studying plant immunity by integrating other functional assays.\n\nWeaknesses:\n\nIt's essential to acknowledge that every fluorescence-based method, just like biochemical assays, comes with its unique limitations. These often pertain to spatial and temporal resolutions, as well as the sensitivity of the cameras employed in each setup. Meticulous interpretation is pivotal to guarantee an accurate depiction and to steer clear of potential misunderstandings when employing specific imaging systems to analyze molecular attributes. Moreover, a discerning interpretation and accurate image analysis can offer invaluable guidance for future studies on plant signaling molecules using these nice cell imaging techniques.\n\nFor instance, although single-particle analysis couldn't conclusively link FLS2 and remorin, FLIM-FRET effectively highlighted their ligand-triggered association and the disengagement brought on by mutations. While these methodologies seemed to present differing outcomes, they were described in the manuscript as harmonious. In reality, these differences could highlight distinct protein populations active in immune responses, each accentuated differently by the respective imaging techniques due to their individual spatial and temporal limitations. Addressing these variations is imperative, especially when designing future imaging explorations of immune complexes.\n",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4766b88c-aab9-4698-a11d-c075e57fe22c",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C1",
+      "claim": "FLS2 is a typical receptor kinase in Arabidopsis thaliana that recognizes the conserved 22 amino acid sequence in the N-terminal region of flagellin (flg22) to initiate plant defense pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The Arabidopsis thaliana FLAGELLIN-SENSITIVE2 (FLS2), a typical receptor kinase, recognizes the conserved 22 amino acid sequence in the N-terminal region of flagellin (flg22) to initiate plant defense pathways, which was intensively studied in the past decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established background information about FLS2 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "d91f32fa-cfe7-478f-b9b3-59de4396c942",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C2",
+      "claim": "The phosphorylation of Ser-938 in FLS2 impacts its spatiotemporal dynamics and lifetime upon flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Through single-particle tracking, we demonstrated that upon flg22 treatment the phosphorylation of Ser-938 in FLS2 impacts its spatiotemporal dynamics and lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this was demonstrated through single-particle tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "01de7017-3ef3-4bbd-b246-8b7a7ce37545",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C3",
+      "claim": "Flg22 treatment increased the co-localization of GFP-tagged FLS2 with AtRem1.3-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "Following F\u00f6rster resonance energy transfer-fluorescence lifetime imaging microscopy and protein proximity indexes assays revealed that flg22 treatment increased the co-localization of GFP-tagged FLS2/FLS2S938D but not FLS2S938A with AtRem1.3-mCherry, a sterol-rich lipid marker, indicating that the phosphorylation of FLS2S938 affects FLS2 sorting efficiency to AtRem1.3-associated nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes results from FRET-FLIM and protein proximity index assays showing increased co-localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "20930473-8ab8-4b4d-ac1b-d4dfcdd08aba",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C4",
+      "claim": "Flg22 treatment increased the co-localization of GFP-tagged FLS2S938D with AtRem1.3-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "Following F\u00f6rster resonance energy transfer-fluorescence lifetime imaging microscopy and protein proximity indexes assays revealed that flg22 treatment increased the co-localization of GFP-tagged FLS2/FLS2S938D but not FLS2S938A with AtRem1.3-mCherry, a sterol-rich lipid marker, indicating that the phosphorylation of FLS2S938 affects FLS2 sorting efficiency to AtRem1.3-associated nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes results from FRET-FLIM and protein proximity index assays showing increased co-localization for the phospho-mimic mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "ac4843b3-1757-4bf3-9a7f-f474ecf3c4a6",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C5",
+      "claim": "Flg22 treatment did not increase the co-localization of GFP-tagged FLS2S938A with AtRem1.3-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "Following F\u00f6rster resonance energy transfer-fluorescence lifetime imaging microscopy and protein proximity indexes assays revealed that flg22 treatment increased the co-localization of GFP-tagged FLS2/FLS2S938D but not FLS2S938A with AtRem1.3-mCherry, a sterol-rich lipid marker, indicating that the phosphorylation of FLS2S938 affects FLS2 sorting efficiency to AtRem1.3-associated nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes results from FRET-FLIM and protein proximity index assays showing no increased co-localization for the phospho-dead mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "df676196-dd96-481e-814e-a7db07a271d8",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C6",
+      "claim": "AtRem1.3 is a sterol-rich lipid marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Following F\u00f6rster resonance energy transfer-fluorescence lifetime imaging microscopy and protein proximity indexes assays revealed that flg22 treatment increased the co-localization of GFP-tagged FLS2/FLS2S938D but not FLS2S938A with AtRem1.3-mCherry, a sterol-rich lipid marker, indicating that the phosphorylation of FLS2S938 affects FLS2 sorting efficiency to AtRem1.3-associated nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly identifies AtRem1.3 as a sterol-rich lipid marker.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "bcb590e1-6b7a-4c4a-a8cb-71a24f03a5b3",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C7",
+      "claim": "The phosphorylation of FLS2S938 affects FLS2 sorting efficiency to AtRem1.3-associated nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Following F\u00f6rster resonance energy transfer-fluorescence lifetime imaging microscopy and protein proximity indexes assays revealed that flg22 treatment increased the co-localization of GFP-tagged FLS2/FLS2S938D but not FLS2S938A with AtRem1.3-mCherry, a sterol-rich lipid marker, indicating that the phosphorylation of FLS2S938 affects FLS2 sorting efficiency to AtRem1.3-associated nanodomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as an interpretation of the co-localization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "6ddb8834-51f1-491f-878e-dbe0732b10dd",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C8",
+      "claim": "The phosphorylation of Ser-938 enhanced flg22-induced FLS2 internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the phosphorylation of Ser-938 enhanced flg22-induced FLS2 internalization and immune responses, demonstrating that the phosphorylation may activate flg22-triggered immunity through partitioning FLS2 into functional AtRem1.3-associated nanodomains, which fills the gap between the FLS2S938 phosphorylation and FLS2-mediated immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "472aa59a-6584-4260-b821-2603dbd2d65f",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C9",
+      "claim": "The phosphorylation of Ser-938 enhanced flg22-induced immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the phosphorylation of Ser-938 enhanced flg22-induced FLS2 internalization and immune responses, demonstrating that the phosphorylation may activate flg22-triggered immunity through partitioning FLS2 into functional AtRem1.3-associated nanodomains, which fills the gap between the FLS2S938 phosphorylation and FLS2-mediated immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "9eaf7d76-8b14-4a88-972e-cbcfd0858c58",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C10",
+      "claim": "The phosphorylation may activate flg22-triggered immunity through partitioning FLS2 into functional AtRem1.3-associated nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the phosphorylation of Ser-938 enhanced flg22-induced FLS2 internalization and immune responses, demonstrating that the phosphorylation may activate flg22-triggered immunity through partitioning FLS2 into functional AtRem1.3-associated nanodomains, which fills the gap between the FLS2S938 phosphorylation and FLS2-mediated immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a mechanistic interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "55c6296d-99e4-4b16-84b8-d04631365ec3",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C11",
+      "claim": "Plasma membrane localized receptor kinase plays a crucial role in pattern-triggered immunity (PTI).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma membrane (PM) localized receptor kinase (RK) plays a crucial role in pattern-triggered immunity (PTI), the initial defense layer in plants, features with an extracellular domain, a single transmembrane region, and a cytoplasmic kinase domain (Liang and Zhou, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "bd77ef54-4b83-4867-8274-2f3c53a1549e",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C12",
+      "claim": "PTI is the initial defense layer in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma membrane (PM) localized receptor kinase (RK) plays a crucial role in pattern-triggered immunity (PTI), the initial defense layer in plants, features with an extracellular domain, a single transmembrane region, and a cytoplasmic kinase domain (Liang and Zhou, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "402c88b3-abc9-458e-be38-e97fbc497b0a",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C13",
+      "claim": "Receptor kinases feature an extracellular domain, a single transmembrane region, and a cytoplasmic kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma membrane (PM) localized receptor kinase (RK) plays a crucial role in pattern-triggered immunity (PTI), the initial defense layer in plants, features with an extracellular domain, a single transmembrane region, and a cytoplasmic kinase domain (Liang and Zhou, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "f69da335-81e2-4786-9e50-3ee5dd68addf",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C14",
+      "claim": "FLS2 senses a conserved N-terminal epitope (flg22) of the bacterial flagellin.",
+      "claim_type": "EXPLICIT",
+      "source": "FLAGELLIN-SENSING 2 (FLS2), a star RK in PTI, senses a conserved N-terminal epitope (flg22) of the bacterial flagellin (Hudson et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "69e14ccf-f871-444e-ab65-e32b71655fa7",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C15",
+      "claim": "Upon flg22 perception, FLS2 rapidly interacts with its co-receptor BAK1 to form an active receptor complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon flg22 perception, FLS2 rapidly interacts with its co-receptor brassinosteroid insensitive1-associated kinase1 (BAK1) to form an active receptor complex (Chinchilla et al., 2006; Chinchilla et al., 2007; Heese et al., 2007), initiating phosphorylation events through activating receptor-like cytoplasmic kinases (RLCKs) such as BOTRYTIS-INDUCED KINASE 1 (BIK1) to elicit downstream immune responses (Lu et al., 2010; Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "4b52595c-ee5f-4dda-8680-68cb1c85b01a",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C16",
+      "claim": "The FLS2-BAK1 complex initiates phosphorylation events through activating receptor-like cytoplasmic kinases (RLCKs) such as BIK1 to elicit downstream immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon flg22 perception, FLS2 rapidly interacts with its co-receptor brassinosteroid insensitive1-associated kinase1 (BAK1) to form an active receptor complex (Chinchilla et al., 2006; Chinchilla et al., 2007; Heese et al., 2007), initiating phosphorylation events through activating receptor-like cytoplasmic kinases (RLCKs) such as BOTRYTIS-INDUCED KINASE 1 (BIK1) to elicit downstream immune responses (Lu et al., 2010; Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "92707623-cc5a-4f45-8f99-762b0d22c2b3",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C17",
+      "claim": "Protein phosphorylation is a vital post-translational modification that plays an essential role in signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein phosphorylation, a vital post-translational modification, plays an essential role in signal transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "7d3401fd-3cce-4a22-8b5a-aa05618f8d35",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C18",
+      "claim": "Protein phosphorylation alterations affect protein dynamics and subcellular trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggest that protein phosphorylation alterations affect protein dynamics and subcellular trafficking (Kaiserli et al., 2009; Kontaxi et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "ae8f10c9-078d-4b2f-8b7e-8349571d9cfa",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C19",
+      "claim": "In plants, phosphorylation of proteins can coalesce into membrane nanodomains, forming platforms for active protein function at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, phosphorylation of proteins can coalesce into membrane nanodomains, forming platforms for active protein function at the PM (B\u00fccherl et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "8b59f6f5-207f-4f25-80dc-1ba5149f30aa",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C20",
+      "claim": "Phosphorylation of the blue light receptor phot1 accelerates the protein movement, enhancing its interaction with a sterol-rich lipid marker AtRem1.3-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Xue et al., 2018 demonstrated that phosphorylation of the blue light receptor phot1 accelerates the protein movement, enhancing its interaction with a sterol-rich lipid marker AtRem1.3-mCherry, which underscores the crucial role of protein phosphorylation in protein dynamics and membrane partitioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "16cacb89-8532-42bc-b23b-bf32020f345f",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C21",
+      "claim": "Upon flg22 treatment, multiple FLS2 phosphorylation sites are activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon flg22 treatment, multiple FLS2 phosphorylation sites are activated, with the Serine-938 phosphorylation playing a pivotal role in defense activation (Cao et al., 2013); nevertheless, how the phosphorylation of FLS2S938 impacts on plant immunity remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "66832e4f-da65-442b-ad8e-670648847d50",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C22",
+      "claim": "The Serine-938 phosphorylation plays a pivotal role in defense activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon flg22 treatment, multiple FLS2 phosphorylation sites are activated, with the Serine-938 phosphorylation playing a pivotal role in defense activation (Cao et al., 2013); nevertheless, how the phosphorylation of FLS2S938 impacts on plant immunity remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "ca2242d1-3591-4867-b97e-2ec852941866",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C23",
+      "claim": "Membrane nanodomains are dynamic structures enriched with sterols and sphingolipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane nanodomains, which are crucial in regulating PM protein behavior, are dynamic structures enriched with sterols and sphingolipids (Boutt\u00e9 and Jaillais, 2020) and uniquely labeled by proteins such as Flotillins and Remorins within living cells (Martini\u00e8re and Zelazny, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "6855ea7c-871c-4efb-931d-2845d229ca77",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C24",
+      "claim": "Membrane nanodomains are uniquely labeled by proteins such as Flotillins and Remorins within living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane nanodomains, which are crucial in regulating PM protein behavior, are dynamic structures enriched with sterols and sphingolipids (Boutt\u00e9 and Jaillais, 2020) and uniquely labeled by proteins such as Flotillins and Remorins within living cells (Martini\u00e8re and Zelazny, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "7156c803-31e4-48d3-8481-a3b765fb8de9",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C25",
+      "claim": "Various stimuli are able to trigger PM proteins moving into mobile or immobile nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Various stimuli are able to trigger PM proteins moving into mobile or immobile nanodomains, suggesting a connection between nanodomains and signal transduction (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "2ce7d358-cc2a-4eae-baea-8499619a6848",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C26",
+      "claim": "Sterol depletion significantly impacts the dynamics of flg22-activated FER-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Xing et al., 2022 demonstrated that sterol depletion significantly impacts the dynamics of flg22-activated FER-GFP, emphasizing the role of nanodomains in the lateral mobility and dissociation of FER from the PM under flg22 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "00de5508-38a0-4d20-92a0-f5986188f657",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C27",
+      "claim": "Upon flg22 treatment, FLS2/FLS2S938D-GFP spots demonstrated extended motion trajectories, contrasting with the shorter motion tracks of FLS2S938A-GFP spots.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon flg22 treatment, FLS2/FLS2S938D-GFP spots demonstrated extended motion trajectories, contrasting with the shorter motion tracks of FLS2S938A-GFP spots (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1C showing the trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "f9f71377-ebdb-4979-9aa4-df72456ef94d",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C28",
+      "claim": "Flg22 treatment causes significant changes in the diffusion coefficients of FLS2-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate significant changes in the diffusion coefficients and motion ranges of FLS2/FLS2S938D-GFP after flg22 treatment, whereas FLS2S938A-GFP showed no significant differences (Figure 1D and E and Figure 1\u2014source data 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1D showing diffusion coefficient data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "18fe92b8-ee08-4308-b9bc-cca0e0df8cfb",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C29",
+      "claim": "Flg22 treatment causes significant changes in the motion ranges of FLS2-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate significant changes in the diffusion coefficients and motion ranges of FLS2/FLS2S938D-GFP after flg22 treatment, whereas FLS2S938A-GFP showed no significant differences (Figure 1D and E and Figure 1\u2014source data 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1E showing motion range data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "720c5903-3934-4ba5-9eec-6d07c22dd026",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C30",
+      "claim": "Flg22 treatment causes significant changes in the diffusion coefficients of FLS2S938D-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate significant changes in the diffusion coefficients and motion ranges of FLS2/FLS2S938D-GFP after flg22 treatment, whereas FLS2S938A-GFP showed no significant differences (Figure 1D and E and Figure 1\u2014source data 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1D showing diffusion coefficient data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "25ee889d-e359-49a7-ac0b-6c9596f490b9",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C31",
+      "claim": "Flg22 treatment causes significant changes in the motion ranges of FLS2S938D-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate significant changes in the diffusion coefficients and motion ranges of FLS2/FLS2S938D-GFP after flg22 treatment, whereas FLS2S938A-GFP showed no significant differences (Figure 1D and E and Figure 1\u2014source data 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1E showing motion range data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "8e789ea1-88ff-4469-a408-3c50bfffb56b",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C32",
+      "claim": "FLS2S938A-GFP showed no significant differences in diffusion coefficients after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate significant changes in the diffusion coefficients and motion ranges of FLS2/FLS2S938D-GFP after flg22 treatment, whereas FLS2S938A-GFP showed no significant differences (Figure 1D and E and Figure 1\u2014source data 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1D showing diffusion coefficient data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "8a4dc5c7-d735-4176-99de-0bb06a0c2ca2",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C33",
+      "claim": "FLS2S938A-GFP showed no significant differences in motion ranges after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate significant changes in the diffusion coefficients and motion ranges of FLS2/FLS2S938D-GFP after flg22 treatment, whereas FLS2S938A-GFP showed no significant differences (Figure 1D and E and Figure 1\u2014source data 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1E showing motion range data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "b816b905-890a-48c4-8590-0415888e3dd5",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C34",
+      "claim": "The S938 phosphorylation site plays an essential role in flg22-induced lateral diffusion of FLS2 at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained using Uniform Manifold Approximation and Projection (UMAP) technology (Dorrity et al., 2020; Figure 1F and Figure 1\u2014figure supplement 2) and fluorescence recovery after photobleaching (FRAP) (Greig and Bulgakova, 2021; Figure 1G and H; Figure 1\u2014figure supplement 3), supporting the essential role of the S938 phosphorylation site in flg22-induced lateral diffusion of FLS2 at the PM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by UMAP and FRAP data in Figures 1F, 1G, and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "e3833aca-ab1d-4404-97c3-a26c4088675c",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C35",
+      "claim": "Flg22 treatment significantly reduced the fluorescence trajectory of FLS2 molecules compared to the control.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that flg22 treatment significantly reduced the fluorescence trajectory of FLS2 molecules compared to the control (Figure 1\u2014figure supplement 4), indicating that Ser-938 phosphorylation influences flg22-induced lifetime of FLS2 at the PM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "87d0b912-f306-4594-894d-749b245bb645",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C36",
+      "claim": "Ser-938 phosphorylation influences flg22-induced lifetime of FLS2 at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "The results revealed that flg22 treatment significantly reduced the fluorescence trajectory of FLS2 molecules compared to the control (Figure 1\u2014figure supplement 4), indicating that Ser-938 phosphorylation influences flg22-induced lifetime of FLS2 at the PM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the fluorescence trajectory data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "b877c2d9-917b-4125-9e32-9228c098ee7e",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C37",
+      "claim": "After flg22 treatment, FLS2S938A-GFP showed nearly linear fluctuations in fluorescence intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to FLS2-GFP and FLS2S938D-GFP, FLS2S938A-GFP showed nearly linear fluctuations in fluorescence intensity under flg22 conditions, and the duration of fluorescence retention was essentially unchanged (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1\u2014figure supplement 5 showing Kymograph analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "1dcea12f-3de8-462b-bd2a-f58845812c9e",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C38",
+      "claim": "The duration of fluorescence retention for FLS2S938A-GFP was essentially unchanged after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to FLS2-GFP and FLS2S938D-GFP, FLS2S938A-GFP showed nearly linear fluctuations in fluorescence intensity under flg22 conditions, and the duration of fluorescence retention was essentially unchanged (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1\u2014figure supplement 5 showing Kymograph analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "52b8893d-ae5a-497f-a3bc-6e2e735941ac",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C39",
+      "claim": "After flg22 treatment, the lifetime of FLS2S938D-GFP greater than 4 seconds significantly decreased, resembling that of FLS2-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed after flg22 treatment the lifetime of FLS2S938D-GFP greater than 4S significantly decreased, resembling that of FLS2-GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing lifetime analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "bee58005-2c52-4dfb-990c-2933a4ba19e1",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C40",
+      "claim": "FLS2S938A-GFP plants showed a minor decrease in lifetime upon flg22 treatment, but this change was insignificant.",
+      "claim_type": "EXPLICIT",
+      "source": "While FLS2S938A-GFP plants showed a minor decrease in lifetime upon flg22 treatment, this change was insignificant (Figure 1I, Figure 1\u2014source data 4, Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 1I showing lifetime data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "10d01ebe-353d-44da-8775-a520da5e175c",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C41",
+      "claim": "NRT1.1 phosphorylation affects dynamics and lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "This aligns with previous findings that indicated that NRT1.1 phosphorylation affects dynamics and lifetime (Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "4cf773b0-1c83-4721-bf0a-cf04b7ae3aa2",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C42",
+      "claim": "Flg22 treatment induces FLS2 and BAK1 to heterodimerize at the PM.",
+      "claim_type": "EXPLICIT",
+      "source": "Flg22 treatment induces FLS2 and BAK1 to heterodimerize at the PM, signifying flg22 as a ligand promoting this heterodimerization (Orosa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "530b28b9-6bcb-45bf-8448-96e14474be9a",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C43",
+      "claim": "Partial co-localization of FLS2-GFP with BAK1-mCherry was observed after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Partial co-localization of FLS2-GFP, FLS2S938A-GFP, and FLS2S938D-GFP with BAK1-mCherry was observed after treatment (Figure 2\u2014figure supplement 1), suggesting that heterodimerization formation is independent of Ser-938 phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "4f28b5e5-de3e-4c14-801c-891d6ecb758c",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C44",
+      "claim": "Partial co-localization of FLS2S938A-GFP with BAK1-mCherry was observed after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Partial co-localization of FLS2-GFP, FLS2S938A-GFP, and FLS2S938D-GFP with BAK1-mCherry was observed after treatment (Figure 2\u2014figure supplement 1), suggesting that heterodimerization formation is independent of Ser-938 phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "43481406-92cd-452c-bb43-8d062adc33af",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C45",
+      "claim": "Partial co-localization of FLS2S938D-GFP with BAK1-mCherry was observed after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Partial co-localization of FLS2-GFP, FLS2S938A-GFP, and FLS2S938D-GFP with BAK1-mCherry was observed after treatment (Figure 2\u2014figure supplement 1), suggesting that heterodimerization formation is independent of Ser-938 phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "d166fe74-326d-4071-b97d-b65e65572500",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C46",
+      "claim": "Heterodimerization formation is independent of Ser-938 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Partial co-localization of FLS2-GFP, FLS2S938A-GFP, and FLS2S938D-GFP with BAK1-mCherry was observed after treatment (Figure 2\u2014figure supplement 1), suggesting that heterodimerization formation is independent of Ser-938 phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the co-localization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "c322ea60-7922-4d52-8fd3-1c7c7e7fb8d3",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C47",
+      "claim": "A significant decrease in GFP lifetime was observed in leaves expressing FLS2 and BAK1-mCherry upon flg22 application.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant decrease in GFP lifetime (t) was observed in leaves expressing FLS2/FLS2S938D/FLS2S938A and BAK1-mCherry upon flg22 application (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2A showing FLIM-FRET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "f1edd473-cc38-42f6-810b-53fef8be1212",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C48",
+      "claim": "A significant decrease in GFP lifetime was observed in leaves expressing FLS2S938D and BAK1-mCherry upon flg22 application.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant decrease in GFP lifetime (t) was observed in leaves expressing FLS2/FLS2S938D/FLS2S938A and BAK1-mCherry upon flg22 application (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2A showing FLIM-FRET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "634e83eb-31a5-4be3-a612-299eaf3b014f",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C49",
+      "claim": "A significant decrease in GFP lifetime was observed in leaves expressing FLS2S938A and BAK1-mCherry upon flg22 application.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant decrease in GFP lifetime (t) was observed in leaves expressing FLS2/FLS2S938D/FLS2S938A and BAK1-mCherry upon flg22 application (Figure 2A, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2A showing FLIM-FRET data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "97754ce0-25fa-4d9e-97b8-9f7683c58347",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C50",
+      "claim": "The FRET efficiency (IPS) between FLS2 and BAK1-mCherry significantly increased after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET efficiency (IPS) between FLS2, FLS2S938D, and FLS2S938A with BAK1-mCherry significantly increased after flg22 treatment, suggesting that the FLS2 Ser-938 phosphorylation site is not essential for flg22-induced heterodimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing FRET efficiency measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "7c07010e-e830-46d8-9ddc-d4011fbabbee",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C51",
+      "claim": "The FRET efficiency (IPS) between FLS2S938D and BAK1-mCherry significantly increased after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET efficiency (IPS) between FLS2, FLS2S938D, and FLS2S938A with BAK1-mCherry significantly increased after flg22 treatment, suggesting that the FLS2 Ser-938 phosphorylation site is not essential for flg22-induced heterodimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing FRET efficiency measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "82c7d2c2-b425-4087-8290-676ce5ea6ad5",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C52",
+      "claim": "The FRET efficiency (IPS) between FLS2S938A and BAK1-mCherry significantly increased after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET efficiency (IPS) between FLS2, FLS2S938D, and FLS2S938A with BAK1-mCherry significantly increased after flg22 treatment, suggesting that the FLS2 Ser-938 phosphorylation site is not essential for flg22-induced heterodimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing FRET efficiency measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "af11e7e8-8e34-4430-8b50-cca9eab7b308",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C53",
+      "claim": "The FLS2 Ser-938 phosphorylation site is not essential for flg22-induced heterodimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET efficiency (IPS) between FLS2, FLS2S938D, and FLS2S938A with BAK1-mCherry significantly increased after flg22 treatment, suggesting that the FLS2 Ser-938 phosphorylation site is not essential for flg22-induced heterodimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the FRET efficiency data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "eedb1f7d-4356-4a40-baad-aba330884019",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C54",
+      "claim": "After flg22 treatment, mean PPIs of FLS2 with BAK1 increased.",
+      "claim_type": "EXPLICIT",
+      "source": "After flg22 treatment, mean PPIs of FLS2, FLS2S938D, and FLS2S938A with BAK1 increased (Figure 2C, Figure 2\u2014source data 3, Figure 2\u2014figure supplement 3), thereby further supporting our findings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2C showing PPI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "1b4b6584-7ca1-4368-a9c5-1ef507592541",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C55",
+      "claim": "After flg22 treatment, mean PPIs of FLS2S938D with BAK1 increased.",
+      "claim_type": "EXPLICIT",
+      "source": "After flg22 treatment, mean PPIs of FLS2, FLS2S938D, and FLS2S938A with BAK1 increased (Figure 2C, Figure 2\u2014source data 3, Figure 2\u2014figure supplement 3), thereby further supporting our findings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2C showing PPI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "36d54df8-353e-432b-8fd6-9056c0571f2d",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C56",
+      "claim": "After flg22 treatment, mean PPIs of FLS2S938A with BAK1 increased.",
+      "claim_type": "EXPLICIT",
+      "source": "After flg22 treatment, mean PPIs of FLS2, FLS2S938D, and FLS2S938A with BAK1 increased (Figure 2C, Figure 2\u2014source data 3, Figure 2\u2014figure supplement 3), thereby further supporting our findings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2C showing PPI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "a48350de-fb5b-4380-9cfc-816d679bd779",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C57",
+      "claim": "Flg22 acts as a molecular glue for FLS2 and BAK1 ectodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "This aligns with the previous finding that flg22 acts as a molecular glue for FLS2 and BAK1 ectodomains (Sun et al., 2013), confirming the independence of FLS2/BAK1 heterodimerization from phosphorylation, with these events occurring sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "0cc40938-2755-48b1-80c6-e159d86b2b6e",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C58",
+      "claim": "FLS2/BAK1 heterodimerization is independent from phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This aligns with the previous finding that flg22 acts as a molecular glue for FLS2 and BAK1 ectodomains (Sun et al., 2013), confirming the independence of FLS2/BAK1 heterodimerization from phosphorylation, with these events occurring sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the experimental data and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "03985aff-1575-4806-943a-a37a901a6bbf",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C59",
+      "claim": "FLS2/BAK1 heterodimerization and phosphorylation events occur sequentially.",
+      "claim_type": "EXPLICIT",
+      "source": "This aligns with the previous finding that flg22 acts as a molecular glue for FLS2 and BAK1 ectodomains (Sun et al., 2013), confirming the independence of FLS2/BAK1 heterodimerization from phosphorylation, with these events occurring sequentially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "ccfa732f-6533-4e48-88e8-8ff0556a8778",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C60",
+      "claim": "Flg22-treated seedlings displayed higher cross-correlation signals for FLS2-GFP and AtRem1.3-mCherry compared to untreated seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, flg22-treated seedlings displayed higher cross-correlation signals for FLS2-GFP/FLS2S938D-GFP and AtRem1.3-mCherry compared to untreated seedlings (Figure 2E and F), suggesting that phosphorylation increased the movement of FLS2 protein to membrane nanodomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figures 2E and 2F showing co-localization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "d267ae5e-31b4-4098-ae1b-3dc6ec2788e2",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C61",
+      "claim": "Flg22-treated seedlings displayed higher cross-correlation signals for FLS2S938D-GFP and AtRem1.3-mCherry compared to untreated seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, flg22-treated seedlings displayed higher cross-correlation signals for FLS2-GFP/FLS2S938D-GFP and AtRem1.3-mCherry compared to untreated seedlings (Figure 2E and F), suggesting that phosphorylation increased the movement of FLS2 protein to membrane nanodomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figures 2E and 2F showing co-localization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "da4c09c1-c054-4630-aaa8-131da6f334bb",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C62",
+      "claim": "Phosphorylation increased the movement of FLS2 protein to membrane nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, flg22-treated seedlings displayed higher cross-correlation signals for FLS2-GFP/FLS2S938D-GFP and AtRem1.3-mCherry compared to untreated seedlings (Figure 2E and F), suggesting that phosphorylation increased the movement of FLS2 protein to membrane nanodomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the cross-correlation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "925421b6-66d3-4020-895f-0f2fc49482c2",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C63",
+      "claim": "After flg22 treatment, plants co-expressing FLS2S938D-GFP with AtRem1.3-mCherry had a strongly reduced average GFP fluorescence lifetime compared to control seedlings.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that, after flg22 treatment, plants co-expressing FLS2S938D-GFP with AtRem1.3-mCherry had a strongly reduced average GFP fluorescence lifetime compared to control seedlings, which was similar to that of FLS2-GFP seedlings (Figure 2G and H, Figure 2\u2014source data 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figures 2G and 2H showing FRET-FLIM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "419df404-e36a-407b-8271-dabb15b60225",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C64",
+      "claim": "The flg22 treatment increased the IPS for FLS2 with AtRem1.3-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the flg22 treatment increased the IPS for FLS2 and FLS2S938D with AtRem1.3-mCherry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing FRET-FLIM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "8840b733-d89b-4237-bd68-58d98b63f7d8",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C65",
+      "claim": "The flg22 treatment increased the IPS for FLS2S938D with AtRem1.3-mCherry.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the flg22 treatment increased the IPS for FLS2 and FLS2S938D with AtRem1.3-mCherry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing FRET-FLIM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "c4de0b8f-9422-4dcd-9d7f-fa393ffdb347",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C66",
+      "claim": "No significant difference was observed in the fluorescence lifetime of FLS2S938A-GFP co-expressed with AtRem1.3-mCherry, with or without flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference was observed in the fluorescence lifetime and IPS of FLS2S938A-GFP co-expressed with AtRem1.3-mCherry, with or without flg22 treatment (Figure 2G and H, Figure 2\u2014source data 4 and 5), suggesting that Ser-938 phosphorylation may influence FLS2 partitioning into PM nanodomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figures 2G and 2H showing FRET-FLIM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "2d76fb37-918d-428a-8c22-dc80573dbebb",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C67",
+      "claim": "No significant difference was observed in the IPS of FLS2S938A-GFP co-expressed with AtRem1.3-mCherry, with or without flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference was observed in the fluorescence lifetime and IPS of FLS2S938A-GFP co-expressed with AtRem1.3-mCherry, with or without flg22 treatment (Figure 2G and H, Figure 2\u2014source data 4 and 5), suggesting that Ser-938 phosphorylation may influence FLS2 partitioning into PM nanodomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figures 2G and 2H showing FRET-FLIM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "b74312f2-33ae-4b9b-b095-3a2233ffe25c",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C68",
+      "claim": "Ser-938 phosphorylation may influence FLS2 partitioning into PM nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference was observed in the fluorescence lifetime and IPS of FLS2S938A-GFP co-expressed with AtRem1.3-mCherry, with or without flg22 treatment (Figure 2G and H, Figure 2\u2014source data 4 and 5), suggesting that Ser-938 phosphorylation may influence FLS2 partitioning into PM nanodomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the FRET-FLIM data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "ab9c3653-4ed7-46cb-b26a-f10184a41571",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C69",
+      "claim": "The mean co-localization values between FLS2-GFP and AtRem1.3-mCherry under flg22 treatment were significantly higher compared to the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that the mean co-localization values between FLS2-GFP/FLS2S938D-GFP and AtRem1.3-mCherry under flg22 treatment were significantly higher compared to the control group (Figure 2I, Figure 2\u2014source data 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2I showing Pearson correlation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "e4d0cb39-a3b3-48cd-98bf-0f86fcb0b570",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C70",
+      "claim": "The mean co-localization values between FLS2S938D-GFP and AtRem1.3-mCherry under flg22 treatment were significantly higher compared to the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that the mean co-localization values between FLS2-GFP/FLS2S938D-GFP and AtRem1.3-mCherry under flg22 treatment were significantly higher compared to the control group (Figure 2I, Figure 2\u2014source data 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2I showing Pearson correlation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "1790e977-14cc-4d7f-8173-438784bbb0d6",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C71",
+      "claim": "FLS2S938A-GFP and AtRem1.3-mCherry demonstrated similar co-localization values under both control group and flg22 conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, FLS2S938A-GFP and AtRem1.3-mCherry demonstrated similar co-localization values under both control group and flg22 conditions (Figure 2I, Figure 2\u2014source data 6), indicating that the phosphorylated form of FLS2 may modify the distribution of PM nanodomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 2I showing Pearson correlation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "5ef1312e-8c61-4003-bffb-5b3ab1335920",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C72",
+      "claim": "The phosphorylated form of FLS2 may modify the distribution of PM nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, FLS2S938A-GFP and AtRem1.3-mCherry demonstrated similar co-localization values under both control group and flg22 conditions (Figure 2I, Figure 2\u2014source data 6), indicating that the phosphorylated form of FLS2 may modify the distribution of PM nanodomains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the co-localization data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "4636153d-2b0c-4328-a069-09925d6c6e14",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C73",
+      "claim": "The phosphorylation state of FLS2 at Ser-938 influences its aggregation into AtRem1.3-associated nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the phosphorylation state of FLS2 at Ser-938 influences its aggregation into AtRem1.3-associated nanodomains, providing an efficient mechanism for triggering the immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the nanodomain co-localization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "48237117-1a41-40f7-a69b-ef34413f186b",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C74",
+      "claim": "Thr 867 mutation, a potential phosphorylation site on FLS2, results in impaired flg22-induced endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Thr 867 mutation, a potential phosphorylation site on FLS2, results in impaired flg22-induced endocytosis, underscoring the significance of phosphorylation in FLS2 endocytosis (Robatzek et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "04fe7c40-6686-4bc2-b076-12d138b1315e",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C75",
+      "claim": "FLS2, FLS2S938D, and FLS2S938A accumulated in brefeldin A (BFA) compartments labeled with FM4-64.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that FLS2/FLS2S938D/FLS2S938A-GFP accumulated in brefeldin A (BFA) compartments labeled with FM4-64, indicating that various Ser-938 phosphorylation states of FLS2 undergo BFA-dependent constitutive endocytosis (Figure 3A, Figure 3\u2014source data 1, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 3A showing BFA compartment accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "9e9cf877-d0d6-4318-a469-efe017f5b8ff",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C76",
+      "claim": "Various Ser-938 phosphorylation states of FLS2 undergo BFA-dependent constitutive endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that FLS2/FLS2S938D/FLS2S938A-GFP accumulated in brefeldin A (BFA) compartments labeled with FM4-64, indicating that various Ser-938 phosphorylation states of FLS2 undergo BFA-dependent constitutive endocytosis (Figure 3A, Figure 3\u2014source data 1, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the BFA compartment accumulation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "e6d45a7e-8b9b-4890-8468-09a9005d9a59",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C77",
+      "claim": "Under co-treatment with BFA and flg22, FLS2 produced strong signals in the BFA compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Under co-treatment with BFA and flg22, FLS2/FLS2S938D produced strong signals in both the BFA compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing BFA and flg22 co-treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "335c56b8-5169-48e0-b6aa-ddcec313f562",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C78",
+      "claim": "Under co-treatment with BFA and flg22, FLS2S938D produced strong signals in the BFA compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Under co-treatment with BFA and flg22, FLS2/FLS2S938D produced strong signals in both the BFA compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing BFA and flg22 co-treatment experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "edce8ac4-1882-4365-b8e2-eb9890e057a6",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C79",
+      "claim": "FLS2S938A-GFP only produced BFA compartments, and most remained at the PM region with few intracellular puncta upon stimulation with BFA and flg22.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that FLS2S938A-GFP only produced BFA compartments, and most remained at the PM region with few intracellular puncta upon stimulation with BFA and flg22 (Figure 3\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 3\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "c363640c-3297-44c2-b508-4a45f59dc9e4",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C80",
+      "claim": "Both FLS2 and FLS2S938D vesicles appeared 15 min after flg22 treatment, significantly increasing thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "We further tracked FLS2 endocytosis and quantified vesicle numbers over time; the results showed that both FLS2 and FLS2S938D vesicles appeared 15 min after-flg22 treatment, significantly increasing thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing time-course endocytosis tracking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "f34b6c73-496e-4796-8fb1-26067d95ea8a",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C81",
+      "claim": "Only a few vesicles were detected in FLS2S938A-GFP after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only a few vesicles were detected in FLS2S938A-GFP, indicating Ser-938 phosphorylation of FLS2 impact on flg22-induced FLS2 endocytosis (Figure 3B and C, Figure 3\u2014source data 2, Figure 3\u2014source data 3, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figures 3B and 3C showing vesicle quantification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "49da94ff-229b-4ab2-9614-aff12e1a54c0",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C82",
+      "claim": "Ser-938 phosphorylation of FLS2 impacts flg22-induced FLS2 endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only a few vesicles were detected in FLS2S938A-GFP, indicating Ser-938 phosphorylation of FLS2 impact on flg22-induced FLS2 endocytosis (Figure 3B and C, Figure 3\u2014source data 2, Figure 3\u2014source data 3, Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the vesicle quantification data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "126c9fb3-9f60-4aad-8940-6e67e6bcc9ba",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C83",
+      "claim": "Both FLS2-GFP and FLS2S938D-GFP densities significantly decreased after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3D shows that both FLS2-GFP and FLS2S938D-GFP densities significantly decreased after flg22 treatment, while FLS2S938A-GFP exhibited minimal changes, indicating Ser-938 phosphorylation affects FLS2 internalization (Figure 3D, Figure 3\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 3D showing FCS density measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "600b4fd7-abb3-4917-a216-ee624094183d",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C84",
+      "claim": "FLS2S938A-GFP exhibited minimal changes in density after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3D shows that both FLS2-GFP and FLS2S938D-GFP densities significantly decreased after flg22 treatment, while FLS2S938A-GFP exhibited minimal changes, indicating Ser-938 phosphorylation affects FLS2 internalization (Figure 3D, Figure 3\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 3D showing FCS density measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "e7595c7a-ba72-4505-9334-75d85e49e68d",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C85",
+      "claim": "Ser-938 phosphorylation affects FLS2 internalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3D shows that both FLS2-GFP and FLS2S938D-GFP densities significantly decreased after flg22 treatment, while FLS2S938A-GFP exhibited minimal changes, indicating Ser-938 phosphorylation affects FLS2 internalization (Figure 3D, Figure 3\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an interpretation of the FCS density data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "7da36922-c0fa-416c-a61d-4a08889a873b",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C86",
+      "claim": "Ser-938 phosphorylation influences FLS2 degradation after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting confirmed that Ser-938 phosphorylation influences FLS2 degradation after flg22 treatment (Figure 3E, Figure 3\u2014source data 5 and 6), consistent with single-molecule analysis findings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figure 3E showing Western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "152f41d3-756b-41c8-9516-4cac306611a7",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C87",
+      "claim": "Ser-938 phosphorylation expedited FLS2 internalization, potentially regulating its immune response capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our results strongly support the notion that Ser-938 phosphorylation expedited FLS2 internalization, potentially regulating its immune response capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the endocytosis and degradation data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "4f43f84b-c51b-4178-8ba8-4acfe99cdfbe",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C88",
+      "claim": "The perception of flg22 by FLS2 initiates a complex signaling network with multiple parallel branches, including calcium burst, mitogen-activated protein kinases (MAPKs) activation, callose deposition, and seedling growth inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies demonstrated that the perception of flg22 by FLS2 initiates a complex signaling network with multiple parallel branches, including calcium burst, mitogen-activated protein kinases (MAPKs) activation, callose deposition, and seedling growth inhibition (Chi et al., 2021; Zipfel et al., 2004; Li et al., 2016; Sanguankiattichai et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "12a90599-1ffa-497f-8e2e-2f7ed01dde85",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C89",
+      "claim": "FLS2 and FLS2S938D plants show diverse immune responses following flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results illustrate diverse immune responses in FLS2 and FLS2S938D plants following flg22 treatment (Figure 4A\u2013F, Figure 4\u2014source data 1\u20133, Figure 4\u2014figure supplements 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by Figures 4A-F showing various immune response measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "3b8017a6-7ed4-41df-8849-7d57c4da93e9",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C90",
+      "claim": "FLS2S938A exhibited limited immune responses after flg22 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, FLS2S938A exhibited limited immune responses, underscoring the importance of Ser-938 phosphorylation for FLS2-mediated PTI responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing immune response measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "099c00d0-3b77-44d6-bc4d-fc9b5baa7046",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C91",
+      "claim": "Ser-938 phosphorylation is important for FLS2-mediated PTI responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, FLS2S938A exhibited limited immune responses, underscoring the importance of Ser-938 phosphorylation for FLS2-mediated PTI responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion based on the immune response data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "1a13cc53-34ba-48f0-89ed-361becbec37c",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C92",
+      "claim": "Following flg22 treatment, activated FLS2 undergoes hetero-oligomerization and phosphorylation sequentially.",
+      "claim_type": "EXPLICIT",
+      "source": "Following flg22 treatment, activated FLS2 undergoes hetero-oligomerization and phosphorylation sequentially (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the summary section and supported by the working model in Figures 4G and 4H.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "44f43285-3e11-4193-bb4f-adfbd0959291",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C93",
+      "claim": "Phosphorylation at the Ser-938 site promotes FLS2 recruitment into AtRem1.3-associated nanodomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, phosphorylation at the Ser-938 site promotes FLS2 recruitment into AtRem1.3-associated nanodomains and endocytosis (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the summary section and supported by the working model in Figures 4G and 4H.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "260accc2-d171-4d98-a51b-691b6146c4d8",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "claim_id": "C94",
+      "claim": "Phosphorylation at the Ser-938 site promotes FLS2 endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, phosphorylation at the Ser-938 site promotes FLS2 recruitment into AtRem1.3-associated nanodomains and endocytosis (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the summary section and supported by the working model in Figures 4G and 4H.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ser-938 phosphorylation is essential for flg22-induced changes in FLS2 spatiotemporal dynamics at the plasma membrane. Upon flg22 treatment, FLS2 and FLS2S938D (phospho-mimic) showed significantly increased diffusion coefficients and motion ranges, while FLS2S938A (phospho-dead) showed no significant changes. This was confirmed by multiple complementary techniques including single-particle tracking, UMAP analysis, and FRAP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 provide converging evidence from multiple independent techniques (SPT, UMAP, FRAP) showing that Ser-938 phosphorylation is required for flg22-induced changes in FLS2 lateral diffusion. The phospho-mimic behaves like wild-type while the phospho-dead mutant shows no response, providing strong genetic evidence. Statistical significance is reported with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "5d2c36ff-ac0c-4996-9b18-0f1b9721f1c4",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ser-938 phosphorylation influences the lifetime of FLS2 at the plasma membrane upon flg22 treatment. FLS2 and FLS2S938D showed significantly reduced lifetimes (>4 seconds) after flg22 treatment, while FLS2S938A showed minimal, insignificant changes. Kymograph analysis revealed that FLS2S938A exhibited nearly linear fluorescence intensity fluctuations with unchanged retention duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 demonstrate through fluorescence trajectory analysis and Kymograph techniques that Ser-938 phosphorylation affects FLS2 lifetime at the PM. The data show clear differences between wild-type/phospho-mimic and phospho-dead mutants with statistical support (Figure 1I). The complementary analytical approaches strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "676cd055-8bc8-40dd-af68-969920aeb3f4",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FLS2/BAK1 heterodimerization upon flg22 treatment is independent of Ser-938 phosphorylation. All three variants (FLS2, FLS2S938A, FLS2S938D) showed partial co-localization with BAK1-mCherry, significant decreases in GFP lifetime, increased FRET efficiency, and increased protein proximity indexes after flg22 treatment, regardless of phosphorylation state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C56 provide multiple lines of evidence (co-localization, FRET-FLIM, PPI analysis) consistently showing that all FLS2 variants interact with BAK1 upon flg22 treatment. The independence from Ser-938 phosphorylation is well-supported by the observation that both phospho-dead and phospho-mimic mutants behave similarly to wild-type in heterodimerization assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ser-938 phosphorylation promotes FLS2 recruitment into AtRem1.3-associated membrane nanodomains upon flg22 treatment. FLS2 and FLS2S938D showed increased co-localization with AtRem1.3-mCherry after flg22 treatment as measured by cross-correlation signals, FRET-FLIM (reduced GFP lifetime, increased IPS), and Pearson correlation coefficients. In contrast, FLS2S938A showed no significant changes in co-localization with or without flg22 treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C60-C73 provide comprehensive evidence from multiple orthogonal techniques (TIRF-SIM, FRET-FLIM, Pearson correlation) demonstrating that Ser-938 phosphorylation is required for flg22-induced recruitment of FLS2 to AtRem1.3-associated nanodomains. The consistent lack of response in the phospho-dead mutant across all assays strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "4dadf555-3a19-47f5-8bad-443d2d06860f",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ser-938 phosphorylation enhances flg22-induced FLS2 internalization and degradation. All FLS2 variants underwent BFA-dependent constitutive endocytosis, but upon flg22 treatment, FLS2 and FLS2S938D showed strong signals in BFA compartments, increased vesicle numbers over time, decreased PM density by FCS, and enhanced degradation by Western blot. FLS2S938A showed minimal endocytic vesicles, remained mostly at the PM, and exhibited minimal density changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C75-C87 provide converging evidence from multiple techniques (BFA compartment analysis, time-course vesicle tracking, FCS, Western blot) that Ser-938 phosphorylation is required for efficient flg22-induced endocytosis. The phospho-dead mutant consistently shows impaired internalization across all assays, while the phospho-mimic behaves like wild-type, providing strong genetic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "82d680fa-dc3c-4cff-bb6e-0f29e283068c",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ser-938 phosphorylation is essential for FLS2-mediated immune responses. FLS2 and FLS2S938D plants showed diverse immune responses following flg22 treatment including calcium burst, MAPK activation, callose deposition, hypocotyl growth inhibition, and immune gene expression. In contrast, FLS2S938A exhibited limited immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C89-C91 demonstrate that Ser-938 phosphorylation is functionally important for PTI responses through multiple immune readouts (Figure 4A-F). The phospho-dead mutant shows consistently impaired responses across diverse immune assays, while the phospho-mimic behaves like wild-type, establishing the functional significance of this phosphorylation site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "618ef644-a1a3-4ecf-8608-b2bda7dd9960",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where flg22-triggered immunity is activated through sequential hetero-oligomerization, phosphorylation at Ser-938, recruitment into AtRem1.3-associated nanodomains, and endocytosis. This model integrates the observed spatiotemporal dynamics with immune function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C92-C94 present an integrative model supported by the collective experimental evidence from dynamics, nanodomain localization, endocytosis, and immune response studies. While speculative in mechanistic details, the model is well-supported by the data showing sequential events and the requirement of Ser-938 phosphorylation for nanodomain recruitment and endocytosis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background knowledge claims about FLS2, PTI, receptor kinases, protein phosphorylation, membrane nanodomains, and related signaling pathways are established from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C26, C41-C42, C57-C59, C74, and C88 are background knowledge supported by appropriate citations to prior work. These establish the context for the current study and are generally accepted in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "5940044f-9409-4ff8-b4be-bb7b143971ed",
+      "content_id": "3c02dc71-a080-49e1-9f77-80b1c33e483d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AtRem1.3 is identified as a sterol-rich lipid marker for membrane nanodomains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 is supported by prior literature establishing AtRem1.3 as a marker for sterol-rich membrane nanodomains, which is well-established in the plant cell biology field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "0769e07c-a95b-49b4-98eb-2efe52cad256",
+      "content_id": "b888faa4-7160-4200-8d82-04227237a26d",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "S938 phosphorylation affects FLS2 spatiotemporal dynamics upon flg22 treatment. Single-particle tracking showed that flg22 treatment increased diffusion coefficients and motion ranges of FLS2 and FLS2S938D, but not FLS2S938A. UMAP and FRAP analyses confirmed the essential role of S938 phosphorylation in flg22-induced lateral diffusion of FLS2 at the plasma membrane.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirmed this finding. One reviewer stated 'TIRFM single-molecule tracking, FRAP, FRET and endocytosis experiments were nicely done. A role of S938 phosphorylation is convincing.' The editor noted 'the evidence supporting the ligand-induced association with remorin and the requirement of a previously reported phosphosite as presented is solid.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "19eec941-1b82-4995-8f84-1e191c09615a",
+      "content_id": "b888faa4-7160-4200-8d82-04227237a26d",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "S938 phosphorylation influences flg22-induced lifetime of FLS2 at the plasma membrane. Flg22 treatment significantly reduced fluorescence trajectory and lifetime of FLS2 and FLS2S938D molecules, while FLS2S938A showed minimal changes in lifetime and fluorescence retention.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these lifetime measurements as part of the convincing evidence for S938 phosphorylation effects. One reviewer noted 'ligand increases dwell time of FLS2...in a manner dependent on S938 phosphorylation,' directly affirming these claims about lifetime changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504",
+      "content_id": "b888faa4-7160-4200-8d82-04227237a26d",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "FLS2-BAK1 heterodimerization is independent of S938 phosphorylation and occurs sequentially before phosphorylation. FRET-FLIM and PPI assays showed that all FLS2 variants (WT, S938A, S938D) exhibited increased interaction with BAK1 upon flg22 treatment, indicating heterodimerization formation is independent of Ser-938 phosphorylation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge this finding. The editor noted the evidence is 'solid' and reviewers affirmed the overall experimental approach. One reviewer stated the study 'uncovers a regulatory mechanism of FLS2 localization in the nanodomain crucial for signaling,' implicitly accepting the sequential model of heterodimerization followed by phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "dfc6a6d1-3765-48d9-aba7-c428efad0694",
+      "content_id": "b888faa4-7160-4200-8d82-04227237a26d",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "S938 phosphorylation promotes FLS2 recruitment into AtRem1.3-associated membrane nanodomains. FRET-FLIM, cross-correlation, and Pearson correlation analyses showed that flg22 treatment increased co-localization of FLS2 and FLS2S938D with AtRem1.3-mCherry, but not FLS2S938A, indicating phosphorylation affects FLS2 sorting efficiency to nanodomains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the editor stated the evidence for 'ligand-induced association with remorin' is 'solid,' one reviewer raised significant concerns about methodological interpretation: 'single-particle analysis couldn't conclusively link FLS2 and remorin, FLIM-FRET effectively highlighted their ligand-triggered association.' The reviewer noted these 'methodologies seemed to present differing outcomes' and emphasized that 'these differences could highlight distinct protein populations,' indicating uncertainty about the strength of the nanodomain association claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "2dd19df0-f39a-49f5-b529-822c5c65195c",
+      "content_id": "b888faa4-7160-4200-8d82-04227237a26d",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "S938 phosphorylation enhances flg22-induced FLS2 internalization and endocytosis. BFA compartment assays, vesicle tracking, FCS density measurements, and Western blotting showed that FLS2 and FLS2S938D underwent robust endocytosis upon flg22 treatment, while FLS2S938A showed minimal internalization.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirmed this finding. One reviewer stated 'endocytosis experiments were nicely done' and noted the study shows 'ligand increases dwell time of FLS2, and this is linked to FLS2 endocytosis, also in a manner dependent on S938 phosphorylation.' The editor welcomed the evidence as 'solid,' though noted 'support by independent methods would be welcome.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "e147a77e-d137-4277-ae0f-34e43ee5fd29",
+      "content_id": "b888faa4-7160-4200-8d82-04227237a26d",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "S938 phosphorylation enhances flg22-induced immune responses. FLS2 and FLS2S938D plants showed diverse immune responses (calcium burst, MAPK activation, callose deposition, gene expression) following flg22 treatment, while FLS2S938A exhibited limited responses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these immune response measurements. One reviewer summarized that the study 'uncovers a regulatory mechanism of FLS2 localization in the nanodomain crucial for signaling,' implicitly accepting the functional immune response data. The editor noted the work 'will be of interest to plant biologists working on cell surface receptors.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "07092258-4b76-49e0-955f-7abe07edd824",
+      "content_id": "b888faa4-7160-4200-8d82-04227237a26d",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Working model: Phosphorylation at S938 activates flg22-triggered immunity through partitioning FLS2 into functional AtRem1.3-associated nanodomains. Following flg22 treatment, FLS2 undergoes hetero-oligomerization with BAK1, then phosphorylation at S938 promotes recruitment into nanodomains and endocytosis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers found the overall evidence 'solid,' one reviewer raised concerns about interpretation consistency: 'these methodologies seemed to present differing outcomes, they were described in the manuscript as harmonious. In reality, these differences could highlight distinct protein populations.' This suggests the mechanistic model may oversimplify the data. The editor noted 'support by independent methods would be welcome,' indicating the model requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d91f32fa-cfe7-478f-b9b3-59de4396c942",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "00de5508-38a0-4d20-92a0-f5986188f657",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "f9f71377-ebdb-4979-9aa4-df72456ef94d",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "18fe92b8-ee08-4308-b9bc-cca0e0df8cfb",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "720c5903-3934-4ba5-9eec-6d07c22dd026",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "25ee889d-e359-49a7-ac0b-6c9596f490b9",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "8e789ea1-88ff-4469-a408-3c50bfffb56b",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "8a4dc5c7-d735-4176-99de-0bb06a0c2ca2",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "b816b905-890a-48c4-8590-0415888e3dd5",
+      "result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56"
+    },
+    {
+      "claim_id": "e3833aca-ab1d-4404-97c3-a26c4088675c",
+      "result_id": "5d2c36ff-ac0c-4996-9b18-0f1b9721f1c4"
+    },
+    {
+      "claim_id": "87d0b912-f306-4594-894d-749b245bb645",
+      "result_id": "5d2c36ff-ac0c-4996-9b18-0f1b9721f1c4"
+    },
+    {
+      "claim_id": "b877c2d9-917b-4125-9e32-9228c098ee7e",
+      "result_id": "5d2c36ff-ac0c-4996-9b18-0f1b9721f1c4"
+    },
+    {
+      "claim_id": "1dcea12f-3de8-462b-bd2a-f58845812c9e",
+      "result_id": "5d2c36ff-ac0c-4996-9b18-0f1b9721f1c4"
+    },
+    {
+      "claim_id": "52b8893d-ae5a-497f-a3bc-6e2e735941ac",
+      "result_id": "5d2c36ff-ac0c-4996-9b18-0f1b9721f1c4"
+    },
+    {
+      "claim_id": "bee58005-2c52-4dfb-990c-2933a4ba19e1",
+      "result_id": "5d2c36ff-ac0c-4996-9b18-0f1b9721f1c4"
+    },
+    {
+      "claim_id": "530b28b9-6bcb-45bf-8448-96e14474be9a",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "4f28b5e5-de3e-4c14-801c-891d6ecb758c",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "43481406-92cd-452c-bb43-8d062adc33af",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "d166fe74-326d-4071-b97d-b65e65572500",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "c322ea60-7922-4d52-8fd3-1c7c7e7fb8d3",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "f1edd473-cc38-42f6-810b-53fef8be1212",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "634e83eb-31a5-4be3-a612-299eaf3b014f",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "97754ce0-25fa-4d9e-97b8-9f7683c58347",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "7c07010e-e830-46d8-9ddc-d4011fbabbee",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "82c7d2c2-b425-4087-8290-676ce5ea6ad5",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "af11e7e8-8e34-4430-8b50-cca9eab7b308",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "eedb1f7d-4356-4a40-baad-aba330884019",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "1b4b6584-7ca1-4368-a9c5-1ef507592541",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "36d54df8-353e-432b-8fd6-9056c0571f2d",
+      "result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4"
+    },
+    {
+      "claim_id": "01de7017-3ef3-4bbd-b246-8b7a7ce37545",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "20930473-8ab8-4b4d-ac1b-d4dfcdd08aba",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "ac4843b3-1757-4bf3-9a7f-f474ecf3c4a6",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "ccfa732f-6533-4e48-88e8-8ff0556a8778",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "d267ae5e-31b4-4098-ae1b-3dc6ec2788e2",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "da4c09c1-c054-4630-aaa8-131da6f334bb",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "925421b6-66d3-4020-895f-0f2fc49482c2",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "419df404-e36a-407b-8271-dabb15b60225",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "8840b733-d89b-4237-bd68-58d98b63f7d8",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "c4de0b8f-9422-4dcd-9d7f-fa393ffdb347",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "2d76fb37-918d-428a-8c22-dc80573dbebb",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "b74312f2-33ae-4b9b-b095-3a2233ffe25c",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "ab9c3653-4ed7-46cb-b26a-f10184a41571",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "e4d0cb39-a3b3-48cd-98bf-0f86fcb0b570",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "1790e977-14cc-4d7f-8173-438784bbb0d6",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "5ef1312e-8c61-4003-bffb-5b3ab1335920",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "4636153d-2b0c-4328-a069-09925d6c6e14",
+      "result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909"
+    },
+    {
+      "claim_id": "6ddb8834-51f1-491f-878e-dbe0732b10dd",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "04fe7c40-6686-4bc2-b076-12d138b1315e",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "9e9cf877-d0d6-4318-a469-efe017f5b8ff",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "e6d45a7e-8b9b-4890-8468-09a9005d9a59",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "335c56b8-5169-48e0-b6aa-ddcec313f562",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "edce8ac4-1882-4365-b8e2-eb9890e057a6",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "c363640c-3297-44c2-b508-4a45f59dc9e4",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "f34b6c73-496e-4796-8fb1-26067d95ea8a",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "49da94ff-229b-4ab2-9614-aff12e1a54c0",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "126c9fb3-9f60-4aad-8940-6e67e6bcc9ba",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "600b4fd7-abb3-4917-a216-ee624094183d",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "e7595c7a-ba72-4505-9334-75d85e49e68d",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "7da36922-c0fa-416c-a61d-4a08889a873b",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "152f41d3-756b-41c8-9516-4cac306611a7",
+      "result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f"
+    },
+    {
+      "claim_id": "472aa59a-6584-4260-b821-2603dbd2d65f",
+      "result_id": "82d680fa-dc3c-4cff-bb6e-0f29e283068c"
+    },
+    {
+      "claim_id": "12a90599-1ffa-497f-8e2e-2f7ed01dde85",
+      "result_id": "82d680fa-dc3c-4cff-bb6e-0f29e283068c"
+    },
+    {
+      "claim_id": "3b8017a6-7ed4-41df-8849-7d57c4da93e9",
+      "result_id": "82d680fa-dc3c-4cff-bb6e-0f29e283068c"
+    },
+    {
+      "claim_id": "099c00d0-3b77-44d6-bc4d-fc9b5baa7046",
+      "result_id": "82d680fa-dc3c-4cff-bb6e-0f29e283068c"
+    },
+    {
+      "claim_id": "9eaf7d76-8b14-4a88-972e-cbcfd0858c58",
+      "result_id": "618ef644-a1a3-4ecf-8608-b2bda7dd9960"
+    },
+    {
+      "claim_id": "1a13cc53-34ba-48f0-89ed-361becbec37c",
+      "result_id": "618ef644-a1a3-4ecf-8608-b2bda7dd9960"
+    },
+    {
+      "claim_id": "44f43285-3e11-4193-bb4f-adfbd0959291",
+      "result_id": "618ef644-a1a3-4ecf-8608-b2bda7dd9960"
+    },
+    {
+      "claim_id": "260accc2-d171-4d98-a51b-691b6146c4d8",
+      "result_id": "618ef644-a1a3-4ecf-8608-b2bda7dd9960"
+    },
+    {
+      "claim_id": "4766b88c-aab9-4698-a11d-c075e57fe22c",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "55c6296d-99e4-4b16-84b8-d04631365ec3",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "bd77ef54-4b83-4867-8274-2f3c53a1549e",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "402c88b3-abc9-458e-be38-e97fbc497b0a",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "f69da335-81e2-4786-9e50-3ee5dd68addf",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "69e14ccf-f871-444e-ab65-e32b71655fa7",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "4b52595c-ee5f-4dda-8680-68cb1c85b01a",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "92707623-cc5a-4f45-8f99-762b0d22c2b3",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "7d3401fd-3cce-4a22-8b5a-aa05618f8d35",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "ae8f10c9-078d-4b2f-8b7e-8349571d9cfa",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "8b59f6f5-207f-4f25-80dc-1ba5149f30aa",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "16cacb89-8532-42bc-b23b-bf32020f345f",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "66832e4f-da65-442b-ad8e-670648847d50",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "ca2242d1-3591-4867-b97e-2ec852941866",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "6855ea7c-871c-4efb-931d-2845d229ca77",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "7156c803-31e4-48d3-8481-a3b765fb8de9",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "2ce7d358-cc2a-4eae-baea-8499619a6848",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "10d01ebe-353d-44da-8775-a520da5e175c",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "4cf773b0-1c83-4721-bf0a-cf04b7ae3aa2",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "a48350de-fb5b-4380-9cfc-816d679bd779",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "0cc40938-2755-48b1-80c6-e159d86b2b6e",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "03985aff-1575-4806-943a-a37a901a6bbf",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "48237117-1a41-40f7-a69b-ef34413f186b",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "4f43f84b-c51b-4178-8ba8-4acfe99cdfbe",
+      "result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404"
+    },
+    {
+      "claim_id": "df676196-dd96-481e-814e-a7db07a271d8",
+      "result_id": "5940044f-9409-4ff8-b4be-bb7b143971ed"
+    },
+    {
+      "claim_id": "d91f32fa-cfe7-478f-b9b3-59de4396c942",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "00de5508-38a0-4d20-92a0-f5986188f657",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "f9f71377-ebdb-4979-9aa4-df72456ef94d",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "18fe92b8-ee08-4308-b9bc-cca0e0df8cfb",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "720c5903-3934-4ba5-9eec-6d07c22dd026",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "25ee889d-e359-49a7-ac0b-6c9596f490b9",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "8e789ea1-88ff-4469-a408-3c50bfffb56b",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "8a4dc5c7-d735-4176-99de-0bb06a0c2ca2",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "b816b905-890a-48c4-8590-0415888e3dd5",
+      "result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256"
+    },
+    {
+      "claim_id": "e3833aca-ab1d-4404-97c3-a26c4088675c",
+      "result_id": "19eec941-1b82-4995-8f84-1e191c09615a"
+    },
+    {
+      "claim_id": "87d0b912-f306-4594-894d-749b245bb645",
+      "result_id": "19eec941-1b82-4995-8f84-1e191c09615a"
+    },
+    {
+      "claim_id": "b877c2d9-917b-4125-9e32-9228c098ee7e",
+      "result_id": "19eec941-1b82-4995-8f84-1e191c09615a"
+    },
+    {
+      "claim_id": "1dcea12f-3de8-462b-bd2a-f58845812c9e",
+      "result_id": "19eec941-1b82-4995-8f84-1e191c09615a"
+    },
+    {
+      "claim_id": "52b8893d-ae5a-497f-a3bc-6e2e735941ac",
+      "result_id": "19eec941-1b82-4995-8f84-1e191c09615a"
+    },
+    {
+      "claim_id": "bee58005-2c52-4dfb-990c-2933a4ba19e1",
+      "result_id": "19eec941-1b82-4995-8f84-1e191c09615a"
+    },
+    {
+      "claim_id": "530b28b9-6bcb-45bf-8448-96e14474be9a",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "4f28b5e5-de3e-4c14-801c-891d6ecb758c",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "43481406-92cd-452c-bb43-8d062adc33af",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "d166fe74-326d-4071-b97d-b65e65572500",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "c322ea60-7922-4d52-8fd3-1c7c7e7fb8d3",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "f1edd473-cc38-42f6-810b-53fef8be1212",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "634e83eb-31a5-4be3-a612-299eaf3b014f",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "97754ce0-25fa-4d9e-97b8-9f7683c58347",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "7c07010e-e830-46d8-9ddc-d4011fbabbee",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "82c7d2c2-b425-4087-8290-676ce5ea6ad5",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "af11e7e8-8e34-4430-8b50-cca9eab7b308",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "eedb1f7d-4356-4a40-baad-aba330884019",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "1b4b6584-7ca1-4368-a9c5-1ef507592541",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "36d54df8-353e-432b-8fd6-9056c0571f2d",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "0cc40938-2755-48b1-80c6-e159d86b2b6e",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "03985aff-1575-4806-943a-a37a901a6bbf",
+      "result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504"
+    },
+    {
+      "claim_id": "01de7017-3ef3-4bbd-b246-8b7a7ce37545",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "20930473-8ab8-4b4d-ac1b-d4dfcdd08aba",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "ac4843b3-1757-4bf3-9a7f-f474ecf3c4a6",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "bcb590e1-6b7a-4c4a-a8cb-71a24f03a5b3",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "ccfa732f-6533-4e48-88e8-8ff0556a8778",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "d267ae5e-31b4-4098-ae1b-3dc6ec2788e2",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "da4c09c1-c054-4630-aaa8-131da6f334bb",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "925421b6-66d3-4020-895f-0f2fc49482c2",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "419df404-e36a-407b-8271-dabb15b60225",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "8840b733-d89b-4237-bd68-58d98b63f7d8",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "c4de0b8f-9422-4dcd-9d7f-fa393ffdb347",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "2d76fb37-918d-428a-8c22-dc80573dbebb",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "b74312f2-33ae-4b9b-b095-3a2233ffe25c",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "ab9c3653-4ed7-46cb-b26a-f10184a41571",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "e4d0cb39-a3b3-48cd-98bf-0f86fcb0b570",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "1790e977-14cc-4d7f-8173-438784bbb0d6",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "5ef1312e-8c61-4003-bffb-5b3ab1335920",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "4636153d-2b0c-4328-a069-09925d6c6e14",
+      "result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694"
+    },
+    {
+      "claim_id": "6ddb8834-51f1-491f-878e-dbe0732b10dd",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "04fe7c40-6686-4bc2-b076-12d138b1315e",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "9e9cf877-d0d6-4318-a469-efe017f5b8ff",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "e6d45a7e-8b9b-4890-8468-09a9005d9a59",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "335c56b8-5169-48e0-b6aa-ddcec313f562",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "edce8ac4-1882-4365-b8e2-eb9890e057a6",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "c363640c-3297-44c2-b508-4a45f59dc9e4",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "f34b6c73-496e-4796-8fb1-26067d95ea8a",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "49da94ff-229b-4ab2-9614-aff12e1a54c0",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "126c9fb3-9f60-4aad-8940-6e67e6bcc9ba",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "600b4fd7-abb3-4917-a216-ee624094183d",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "e7595c7a-ba72-4505-9334-75d85e49e68d",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "7da36922-c0fa-416c-a61d-4a08889a873b",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "152f41d3-756b-41c8-9516-4cac306611a7",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "260accc2-d171-4d98-a51b-691b6146c4d8",
+      "result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c"
+    },
+    {
+      "claim_id": "472aa59a-6584-4260-b821-2603dbd2d65f",
+      "result_id": "e147a77e-d137-4277-ae0f-34e43ee5fd29"
+    },
+    {
+      "claim_id": "12a90599-1ffa-497f-8e2e-2f7ed01dde85",
+      "result_id": "e147a77e-d137-4277-ae0f-34e43ee5fd29"
+    },
+    {
+      "claim_id": "3b8017a6-7ed4-41df-8849-7d57c4da93e9",
+      "result_id": "e147a77e-d137-4277-ae0f-34e43ee5fd29"
+    },
+    {
+      "claim_id": "099c00d0-3b77-44d6-bc4d-fc9b5baa7046",
+      "result_id": "e147a77e-d137-4277-ae0f-34e43ee5fd29"
+    },
+    {
+      "claim_id": "9eaf7d76-8b14-4a88-972e-cbcfd0858c58",
+      "result_id": "07092258-4b76-49e0-955f-7abe07edd824"
+    },
+    {
+      "claim_id": "1a13cc53-34ba-48f0-89ed-361becbec37c",
+      "result_id": "07092258-4b76-49e0-955f-7abe07edd824"
+    },
+    {
+      "claim_id": "44f43285-3e11-4193-bb4f-adfbd0959291",
+      "result_id": "07092258-4b76-49e0-955f-7abe07edd824"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f323e755-87ba-4a76-8eac-c4d3daaccdaf",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "41114c93-4360-4149-a7ad-ec4f9c3dcd56",
+      "peer_result_id": "0769e07c-a95b-49b4-98eb-2efe52cad256",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C2, C27-C34 regarding Ser-938 phosphorylation effects on FLS2 lateral diffusion. Both evaluations find the evidence SUPPORTED with reviewers explicitly affirming the SPT, UMAP, and FRAP experiments as 'nicely done' and 'convincing.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "e12ff747-8b7d-45f9-a90f-ad1765b728ba",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "5d2c36ff-ac0c-4996-9b18-0f1b9721f1c4",
+      "peer_result_id": "19eec941-1b82-4995-8f84-1e191c09615a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C35-C40 regarding FLS2 lifetime at plasma membrane. Both evaluations find the evidence SUPPORTED, with peer reviewers affirming the lifetime measurements as part of convincing evidence for S938 phosphorylation effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "2f60e18d-5049-4f26-9446-137544fcd77e",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "82d680fa-dc3c-4cff-bb6e-0f29e283068c",
+      "peer_result_id": "e147a77e-d137-4277-ae0f-34e43ee5fd29",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C9, C89-C91 regarding functional PTI immune responses. Both evaluations find the evidence SUPPORTED, with peer reviewers implicitly accepting the functional data and noting the regulatory mechanism is 'crucial for signaling.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "282fe12b-8613-4f0b-9103-4e4f1bd54a23",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "90f3a5f1-8bff-408e-ab88-ae8906cfe909",
+      "peer_result_id": "dfc6a6d1-3765-48d9-aba7-c428efad0694",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C3-C5, C60-C73 regarding FLS2 recruitment to AtRem1.3 nanodomains. OpenEval finds evidence SUPPORTED across multiple techniques, but peer review rates UNCERTAIN due to methodological concerns about 'differing outcomes' between single-particle analysis and FLIM-FRET, suggesting distinct protein populations may exist.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "87c2279b-0836-4b7c-9559-61ecdc950ceb",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4dadf555-3a19-47f5-8bad-443d2d06860f",
+      "peer_result_id": "2dd19df0-f39a-49f5-b529-822c5c65195c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C8, C75-C87 regarding Ser-938 phosphorylation requirement for endocytosis. Both evaluations find evidence SUPPORTED with peer reviewers affirming endocytosis experiments were 'nicely done,' though peer review includes C94 (from model claims) while OpenEval does not, and editor notes 'support by independent methods would be welcome.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "234e8c8d-82d6-4b33-a79d-edd503910248",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "676cd055-8bc8-40dd-af68-969920aeb3f4",
+      "peer_result_id": "6fff69f1-e5d6-46a9-b0fa-6b7f880c4504",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C43-C56 regarding FLS2-BAK1 heterodimerization independence from Ser-938 phosphorylation. Both evaluations find evidence SUPPORTED. Peer review additionally includes C58-C59 (background claims) and implicitly accepts the sequential model of heterodimerization followed by phosphorylation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "7c565f52-525e-4b69-a326-d8f3dd3a1f0b",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "618ef644-a1a3-4ecf-8608-b2bda7dd9960",
+      "peer_result_id": "07092258-4b76-49e0-955f-7abe07edd824",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C10, C92-C93 regarding the integrative mechanistic model. OpenEval finds the model SUPPORTED by collective evidence, but peer review rates UNCERTAIN due to concerns about interpretation consistency and potential oversimplification of data showing 'distinct protein populations.' Editor notes additional validation methods would be welcome.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "3168af0d-158b-4a74-8473-fdde3feb2298",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "cdadb5cc-db82-49d4-bde8-ccfc27bb4404",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background/context claims C1, C11-C26, C41-C42, C57-C59, C74, C88 as SUPPORTED by prior literature. No corresponding peer review evaluation found, though peer review R3 includes overlapping background claims C58-C59.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    },
+    {
+      "id": "20a403ba-b3ca-4095-9153-6ccd4cadec56",
+      "submission_id": "2fc70eed-c721-48d2-ae1b-04f2f50f9890",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "5940044f-9409-4ff8-b4be-bb7b143971ed",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claim C6 (AtRem1.3 as nanodomain marker) as SUPPORTED by prior literature. No corresponding peer review evaluation found for this specific background claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:02:01.481169Z"
+    }
+  ]
+}

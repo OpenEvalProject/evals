@@ -1,0 +1,2769 @@
+{
+  "submission": {
+    "id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:43:48.618550Z",
+    "updated_at": "2025-11-20T23:43:48.618550Z"
+  },
+  "content": [
+    {
+      "id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "content_type": "manuscript",
+      "content_text": "# Tumor purity-related genes for predicting the prognosis and drug sensitivity of DLBCL patients\n\n## Authors\n\n- Zhenbang Ye<sup>1</sup> ([ORCID: 0000-0002-3169-5023](https://orcid.org/0000-0002-3169-5023))\n- Ning Huang<sup>2</sup> ([ORCID: 0000-0002-8874-2601](https://orcid.org/0000-0002-8874-2601))\n- Yongliang Fu<sup>1</sup>\n- Rongle Tian<sup>1</sup>\n- Liming Wang<sup>2</sup> ([ORCID: 0000-0002-0418-405X](https://orcid.org/0000-0002-0418-405X)) \u2020\n- Wenting Huang<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Pathology, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n2. Department of Hepatobiliary Surgery, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n3. Department of Pathology, National Cancer Center/National Clinical Research Center for Cancer/Cancer Hospital & Shenzhen Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Shenzhen China ([ROR:02drdmm93](https://ror.org/02drdmm93))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBackground:Diffuse large B-cell lymphoma (DLBCL) is the predominant type of malignant B-cell lymphoma. Although various treatments have been developed, the limited efficacy calls for more and further exploration of its characteristics.Methods:Datasets from the Gene Expression Omnibus (GEO) database were used for identifying the tumor purity of DLBCL. Survival analysis was employed for analyzing the prognosis of DLBCL patients. Immunohistochemistry was conducted to detect the important factors that influenced the prognosis. Drug-sensitive prediction was performed to evaluate the value of the model.Results:VCAN, CD3G, and C1QB were identified as three key genes that impacted the outcome of DLBCL patients both in GEO datasets and samples from our center. Among them, VCAN and CD3G+ T cells were correlated with favorable prognosis, and C1QB was correlated with worse prognosis. The ratio of CD68 + macrophages and CD8 + T cells was associated with better prognosis. In addition, CD3G+T cells ratio was significantly correlated with CD68 + macrophages, CD4 + T cells, and CD8 +T cells ratio, indicating it could play an important role in the anti-tumor immunity in DLBCL. The riskScore model constructed based on the RNASeq data of VCAN, C1QB, and CD3G work well in predicting the prognosis and drug sensitivity.Conclusions:VCAN, CD3G, and C1QB were three key genes that influenced the tumor purity of DLBCL, and could also exert certain impact on drug sensitivity and prognosis of DLBCL patients.Funding:This work is supported by the Shenzhen High-level Hospital Construction Fund and CAMS Innovation Fund for Medical Sciences (CIFMS) (2022-I2M-C&T-B-062).\n\n## Introduction\n\nThe latest refined classification by the World Health Organization (WHO) categorizes large B-cell lymphoma as a heterogeneous group of B-cell lymphomas (Alaggio et al., 2022). DLBCL is the most prevalent type among them, accounting for around 30% of all non-Hodgkin lymphomas. DLBCL was initially classified by the Hans algorithm into two subtypes: germinal center B-cell-like (GCB) and non-GCB (Hans et al., 2004). Further differentiation has since identified three distinct gene-based subtypes: GCB, activated B-cell-like (ABC), and the unclassified category (Sehn and Salles, 2021). After undergoing R-CHOP chemotherapy, about 60% of patients achieve long-term remission; however, approximately 30% of patients experience relapse, resulting in poor prognosis and a considerable number of deaths from refractory lymphoma (Autio et al., 2021). Consequently, to explore the characteristics of DLBCL in detail is urgently needed for developing more effective therapy.\n\nSolid tumor tissue comprises tumor cells and the surrounding stroma, which encompasses diverse types of matrix cells, immune cells, endothelial cells (Joyce and Pollard, 2009), etc. The tumor microenvironment (TME) is a complex and dynamic system that consists of the extracellular matrix and a variety of cellular components. Recent studies have unveiled multiple subgroups of immune cells within the microenvironment of DLBCL, including T cells, B cells, NK cells, monocytes/macrophages, dendritic cells, as well as the distribution of stromal cell components like fibroblasts and endothelial cells (Steen et al., 2021; Ciavarella et al., 2018). Despite the relatively limited composition of the TME in DLBCL, its role in tumor proliferation and evasion of the immune system should not be disregarded. The interaction between tumors and the microenvironment is a vital factor that impacts the development and prognosis of B-cell lymphoma (Ennishi et al., 2020). Nevertheless, the existing research on the influence of the TME on the prognosis of DLBCL patients is limited and lacks a consensus.\n\nMoreover, the comprehensive investigation of non-immune cell components in the TME is still lacking. Previous research on stroma in DLBCL has predominantly indicated that a higher quantity of extracellular matrix is associated with a more favorable prognosis, while increased vascular density is associated with poorer prognosis (Miyawaki et al., 2022). Furthermore, higher stromal scores have been associated with an improved prognosis in DLBCL patients (Schmitz et al., 2018). Additionally, a fibrotic tumor microenvironment has been correlated with a better prognosis after DLBCL chemotherapy and immunotherapy (Lou et al., 2022). These research findings stem from computational analysis of stromal and immune scoring in gene databases and have not been experimentally validated as of yet.\n\nTumor purity quantifies the relative ratio of tumor cells to the surrounding stromal components in solid tumors, elucidating the dynamics between tumor cells and their microenvironment (Gong et al., 2020). It can partly reflect the characteristics of TME, namely, a higher tumor purity indicates a lower abundance of stromal components in TME. Tumor purity is associated with patients\u2019 prognosis, and the strength of this association varies across different tumor types (Lou et al., 2021; Zhao et al., 2023; Zhang et al., 2017). Therefore, when investigating the influence of TME on the prognosis of DLBCL patients, it is crucial to analyze not only the immune cell components but also the significance of non-immune cell components.\n\nThis study utilized bioinformatic analysis to establish the relationship between immune and stromal components and the prognostic outcomes of DLBCL patients. We developed a novel immunohistochemical panel to assess prognostic outcomes and treatment sensitivity by detecting the expression of VCAN, CD3G, C1QB, CD68, CD4, and CD8 in both the TME and tumor cells of 190 DLBCL patients. We then explored their relationship with DLBCL clinicopathological features as well as overall survival (OS).\n\n## Materials and methods\n\n### Data collection and tumor purity-related genes (TPGs) selection\n\nThe RNA-Sequence and clinical data of GSE53786 and GSE32918 datasets were downloaded from GEO database. The first gene symbols of GSE53786 datasets were retained when one probe detected multiple genes. Average expression value of genes in each dataset were calculated and used when one gene was detected by multiple probes. Tumor purity was assessed by ESTIMATE (Estimation of Stromal and Immune cells in Malignant Tumor tissues using Expression data) algorithm (Yoshihara et al., 2013) and then its correlation with genes expression was analyzed. The genes with | r |\u22650.5 and p-value <0.05 was defined as the TPGs (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig1-v1.jpg)\n\n### TPGs function analysis\n\nGene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analyses were executed to analyze the biological processes, cellular components, molecular functions, and pathways related to the TPGs. The statistical significance was considered as p.adjust <0.05.\n\nThe protein-protein interactions (PPI) analysis was utilized to investigate the interaction among TPGs, and those with interactive confidence greater than 0.90 on the STRING platform (version 11.5) were selected to establish an interaction network with Cytoscape software (version 3.8.2).\n\n### Prognostic model\n\nThe prognostic model was constructed with \u2018survival\u2019 package in R (version 4.1.3). The genes enrolled in this model was selected among the prognostic and PPI hub TPGs by function \u2018step\u2019 in \u2018survival\u2019 package, which can optimize the model. The prognostic model was represented by riskScore = $\\sumi=1ngene\u00a0expression_{i}\u00a0\\timescoef_{i}\u00a0$ .\n\n### Clinical specimens and follow-up\n\n190 patients from the Cancer Hospital Chinese Academy of Medical Sciences, the CHCAMS cohort, were enrolled in this study (Supplementary file 1). All patients received surgery or biopsy during September, 2010 and September, 2020, and then standard follow-ups were carried out until March, 2023. The overall survival (OS) was defined as the interval between the operation and death or the last follow-up. The specimens from the CHCAMS cohort were used for immunohistochemistry assay.\n\n### IHC\n\nParaffin-embedded DLBCL tissues of CHCAMS Cohort were used for immunohistochemistry (IHC). After de-paraffinization and hydration, heat-induced method was performed for antigen retrieval. Primary antibody of VCAN (AB177480, 1:100, Abcam, USA), CD3G (AB134096, 1:1000, Abcam, USA), C1QB (AB92508, 1:50, Abcam, USA), CD68 (303565, 1:1000, Abcam, USA), CD4 (ZM-0418, ZSGB-BIO, China), CD8 (ZA-0508, ZSGB-BIO, China), CD206(24595 S, 1:400, CST, USA), and CD32(15625\u20131-AP, 1:1000, proteintech, China) was incubated at 4 \u00b0C overnight. Sections were washed with TBS-T buffer, and then incubated with secondary antibody, and finally stained with DAB. The quantitative analysis of the slices was conducted by QuPath-0.4.3. VCAN and C1QB were assessed by H-score, and CD3G, CD68, CD4, CD8, CD206, CD32 were assessed as the ratio of the corresponding positive cells among all cells.\n\n### Drug sensitivity prediction\n\nDrug sensitivity prediction was conducted utilizing \u2018oncoPredict\u2019 packages in R 4.1.3. The drug sensitivity data was collected from Genomics of Drug Sensitivity in Cancer (GDSC). The drugs that was analyzed in this study was selected according to clinical practice or clinical trials searched in Pubmed.\n\n### Statistical analysis\n\nData in this study was shown in the form of mean \u00b1 SEM. Correlation between two variates was determined with Spearman analysis. Kaplan\u2013Meier (K\u2013M) curve and Log rank test were used for survival analysis. The cut-offs of survival analysis were provided by X-tile. The independent risk factor analysis was performed with Cox regression analysis. Receiver operating characteristic (ROC) curve was used for test the efficacy of prognostic model. The clinicopathological characteristics difference analysis was conducted with $\u03c7^{2}$ test, Fisher\u2019s exact test, or Wilcoxon rank sum test. The drug sensitivity scores were compared with the Wilcoxon rank sum test. In this study, p<0.05 were considered statistically significant.\n\n## Results\n\n### Tumor purity-related genes were correlated with extracellular matrix organization and immune response\n\nBased on GSE53786 dataset, we first assessed the tumor purity of DLBCL, which ranged from 17.2 to 67.4% (Figure 2A). In order to screen out the TPGs, we then analyzed the correlation between genes expression and tumor purity. According to the thresholds mentioned above, 642 genes were identified as TPGs, among which 31 genes were positively correlated with tumor purity, while 611 genes were negatively correlated with it (Figure 2B). In addition, tumor purity did have influence on the prognosis of DLBCL patients, which showed that patients with high tumor purity had lower OS rates than those with low tumor purity (Figure 2C, p=0.025).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig2-v1.jpg)\n\n**Figure 2.:** (A) The range (17.2\u201367.4%) of tumor purity of samples in GSE53786. (B) The heatmap shows genes defined as TPGs. (C) The K\u2013M curve showed high tumor purity was correlated with poor prognosis in DLBCL patients in GSE53678 dataset (Patients were divided into two groups according to the best-cutoff provided by \u2018survminer\u2019 package in R). (D) GO analysis of TPGs. (E) KEGG analysis of TPGs. TPGs, tumor purity-related genes; K\u2013M, Kaplan-Meier; DLBCL, diffuse large B cell lymphoma; GO, gene ontology; KEGG, Kyoto Encyclopedia of Genes and Genomes.\n\nNext, we performed GO and KEGG enrichment analyses to explore the functions and signaling pathways in which these TPGs were involved. It turned out that the TPGs were mainly associated with extracellular matrix organization and immune response (Figure 2D and E). Not only did the enrichment results confirm that these genes were reliable to be related with the tumor purity, but it also laid solid foundations for the sequent analyses.\n\n### A prognostic model was constructed with three TPGs\n\nWith the 642 TPGs, we exerted PPI analysis to investigate their interaction and the hub genes (Figure 3A). The TPGs who had five or more interactive genes were shown in Figure 3B, and defined as hub genes. Then, we performed univariate Cox regression analysis to figure out the TPGs that were associated with the prognosis of DLBCL patients, and 103 genes were identified (Figure 3C). Interestingly, most of the TPGs were correlated with good outcomes (with HR <1), and only six genes were associated with poor outcomes (with HR >1). Through conducting intersection analysis, we found nine genes (LUM, VCAN, YAP1, COL5A2, SDC2, TWIST1, CD3G, C1QB, and C3) were intersection genes (Figure 3D), indicating that they had an active effect in modulating the tumor purity, as well as influencing the prognosis of DLBCL patients.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig3-v1.jpg)\n\n**Figure 3.:** (A) The PPI network of tumor purity-related genes (TPGs) (orange nodes representing genes positively correlated with tumor purity, and green nodes representing genes negatively correlated with tumor purity). (B) The barplot shows hub genes with five or more interactive genes. (C) The forest plot showing prognostic TPGs of diffuse large B-cell lymphoma (DLBCL) patients in GSE53786. (D) The Venn plot shows intersection genes of PPI hub gene and prognostic TPGs. PPI, protein-protein interaction.\n\nAfter ascertaining the key genes, we tried to construct a prognostic model with them. The model was constructed by Cox regression, and the three selected genes (VCAN, CD3G, C1QB) and their parameters like coefficient, HR, and 95% CI of HR, were shown in Figure 4A. It showed that VCAN and CD3G were correlated with good prognosis and C1QB was correlated with poor prognosis. All patients were divided into high (n = 59) and low-risk (n = 60) groups according to the median value of riskScore (Figure 4B). As expected, the high-risk group has worse prognosis than the low-risk group (Figure 4C). In addition, the three genes were differentially expressed between high and low-risk groups, with VCAN and CD3G showing high expression level in low-risk group, and C1QB showing high expression level in high-risk group, which was consistent with the coefficient (Figure 4D). To appraise the efficacy of this prognostic model, we conducted survival analysis and ROC analysis. High-risk group had lower OS rate than low-risk group (Figure 4E, p<0.001), and the areas under curve (AUC) for 1 year, 3 year, and 5 year ROC were 0.73, 0.77, and 0.77, respectively (Figure 4F). Just similar to tumor purity, the high riskScore indicated bad outcome, which was consistent with the positive correlation between tumor purity and riskScore (Figure 4G). This TPGs signature prognostic model manifested satisfying prognostic efficacy.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig4-v1.jpg)\n\n**Figure 4.:** (A) Three genes enrolled in the prognostic model. (B) The patients in GSE53786 dataset were divided into high (n = 59) and low-risk (n = 60) group according to the median riskScore based on the prognostic model. (C) High-risk group had worse prognosis than low-risk group. (D) The heatmap shows the expression discrepancy of the three genes. (E) Survival analysis revealed that high-risk group had poor prognosis in GSE53786 dataset. (n low = 60, n high = 59). (F) The ROC curve showed that the prognostic model performed well in predicting 1 year, 3 year, and 5 year prognosis in GSE53786 dataset. (G) Tumor purity was positively correlated with riskScore in GSE53786 dataset. ROC, receiver operating characteristic.\n\nWhen we applied this model to GSE32918 dataset, it still did excellently and the results were in accordance with that in GSE53786 dataset (Figures 5A and 4B; Figure 5\u2014figure supplement 1). Next, we analyzed the relationship between riskScore and some clinicopathological characteristics provided in GSE53786 dataset. The results showed that high-risk group had more ABC type DLBCL, while low-risk group had more the GCB type DLBCL (Figure 5C). Besides, high-risk group displayed higher lactic dehydrogenase (LDH) ratio (Figure 5F). However, the Eastern Cooperative Oncology Group (ECOG) performance and stage was not associated with the riskScore (Figure 5D and E). Still, the high-risk group has more Stage III and Stage IV patients, but less Stage I patients than low-risk group. Finally, we employed the univariate and multivariate analysis to explore whether riskScore was an independent prognostic factor for DLBCL patients. As expected, the riskScore was associated with the poor prognosis (Figure 5G, p<0.001, HR = 1.545, 95% CI 1.284\u20131.861) and was an independent prognostic factor (Figure 5H, p=0.002, HR = 1.474, 95% CI 1.156\u20131.879).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig5-v1.jpg)\n\n**Figure 5.:** (A) Survival analysis results in GSE32918 dataset was consistent to that of GSE53786 dataset (n Low = 124, n High = 125). (B) The prognostic model also did well in GSE32918 dataset. (C) High-risk group in GSE53786 dataset contained more ABC-type DLBCL, while low-risk group contained more GCB-type DLBCL (\u03c72 test). (D) The ECOG performance of two groups (GSE53786 dataset) showed no statistical difference (\u03c72 test). (E) More patients in high-risk group were at Stage III or Stage IV, and less patients were at Stage I, compared with low-risk group, although no statistical significance was shown (GSE53786 dataset) (\u03c72 test). (F) High-risk group had higher LDH ratio (GSE53786 dataset) (Wilcoxon rank sum test, data are shown as mean \u00b1 SEM). (G) The riskScore was associated with poor prognosis of DLBCL patients in GSE53786 dataset. (H) The riskSocre was an independent prognostic factor for DLBCL patients. *p<0.05, **p<0.01, ns, not significant. ABC, activated B cell; GCB, germinal center B cell; ECOG, Eastern Cooperative Oncology Group; LDH, lactic dehydrogenase.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) High ESTIMATE-Score group had better prognosis. (B) ESTIMATE-Score was negatively associated with riskScore. Note: ESTIMATE-Score manifests the tumor purity, with high ESTIMATE-Score indicating low tumor purity and high immune and stromal components. Because the GSE32918 datasets were sequenced with illumina platform, the ESTIMATE algorithm only provided ESTIMATE Score to represent the tumor purity.\n\n### The prognostic value of VCAN, CD3G, and C1QB were validated by IHC assay\n\nWith the purpose of the further validation of the prognostic value of VCAN, CD3G, and C1QB, we detected the expression of these genes in CHCAMS cohort by IHC. For VCAN, the patients were divided into high and low groups according to the cut-off of the H-score (275.42) provided by X-tile. The survival analysis showed that patients with high expression of VCAN had higher OS rate (Figure 6A, p=0.003). For CD3G, previous study revealed that it was a component of T cell receptor complex, for which it could be regarded as a marker of T cells (Wang et al., 2008). Therefore, we assessed the expression level of CD3G by counting the CD3G+ T cells ratio, and divided patients by the cut-off (2.5%). The survival analysis revealed that patients with high CD3G+ T cells infiltration showed favorable prognosis (Figure 6B, p<0.001). For C1QB, the patients in high expression group (cut-off=82.41) showed adverse prognosis (Figure 6C, p=0.015). Although the detection of protein level was not convenient to build a prognostic model for the difference of assessment methods and the lake of coefficient, these results were in accordance with those of GEO datasets, which successfully proved the prognostic value of VCAN, CD3G, and C1QB.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig6-v1.jpg)\n\n**Figure 6.:** (A) The representative image of VCAN staining of high and low expression groups and the survival analysis based on VCAN expression (n Low = 127, n High = 63). (B) The representative image of CD3G staining of high and low CD3G+ T cells ratio groups and the survival analysis based on CD3G+ T cells ratio (n Low = 61, n High = 129). (C) The representative image of C1QB staining of high and low expression groups and the survival analysis based on C1QB expression (n Low = 117, n High = 73). (D) The representative image of CD68 staining of high and low CD68 + macrophages ratio groups and the survival analysis based on CD68 + macrophages ratio (n Low = 125, n High = 65). (E) The representative image of CD8 staining of high and low CD8 + T cells ratio groups and the survival analysis based on CD8 + T cells ratio (n Low = 24, n High = 166). (F) The representative image of CD4 staining of high and low CD4 + T cells ratio groups and the survival analysis based on CD4 + T cells ratio (n Low = 132, n High = 58). (G) The correlation between VCAN, CD3G+ T cells ratio, C1QB and CD68 + macrophages, CD8 + T cells and CD4 + T cells ratio . \u2018\u00d7\u2019 means no statistical significance. (H-I) GSEA analysis based on the differentially expressed genes between high-risk and low-risk group in GSE53786 and GSE32918. (J) The CD3G+ T cells infiltration varied from colon to testis originating diffuse large B-cell lymphoma (DLBCL) in male (Fisher\u2019s exact test). (K) The VCAN expression level was different between intra- and extra-lymph node DLBCL (\u03c72 test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The ratio of CD68 + macrophages, CD8 + T cells, and CD4 + T cells in CHCAMS cohort (n = 190, Kruskal-Wallis Test and Dunn\u2019s Test, data are shown as mean \u00b1 SEM). (B-D) The correlation between VCAN, CD3G+ T cells, C1QB, and types of DLBCL in CHCAMS cohort (\u03c72 test). (E-K) The correlation between VCAN, CD3G+ T cells, C1QB, and DCBCL origination in CHCAMS cohort (E-G, I and K, \u03c72 test; H and J, Fisher\u2019s exact test ). \u2018Location to LN\u2019 means the relative location of the tumor to lymph node, that is, intra-lymph node or extra-lymph node. (L-M) The predicted M1 and M2 macrophages proportion in GSE53786 dataset (n = 119, Wilcoxon rank sum test, data are shown as mean \u00b1 SEM). (N-O) The predicted M1 and M2 macrophages proportion in GSE32918 dataset (n = 249, Wilcoxon rank sum test, data are shown as mean \u00b1 SEM). (P) The validation of M1 (CD32 + cells) and M2(CD206 + cells) macrophages infiltration in diffuse large B-cell lymphoma (DLBCL) in CHCAMS cohort (n = 44, Wilcoxon signed rank test). **p<0.01, ***p<0.001.\n\nGiven that these genes could potentially influence the tumor purity of DLBCL, we then analyzed the relationship between them and CD68 + macrophages, CD4 + T cells, and CD8 + T cells. As was shown in Figure 6\u2014figure supplement 1A, CD68 + macrophages [(17.75\u00b11.05) %] account for more ratio than CD4 + T cells [(0.68\u00b10.20) %] and CD8 + T cells [(6.69\u00b10.56) %] (p<0.001, Kruskal-Wallis Test and Dunn\u2019s Test). In the survival analysis of these three types of immune cells, we found that CD68 + macrophages, CD8 + T cells, and CD4 + T cells were associated with better prognosis (Figure 6D\u2013F, p=0.029, p=0.002, p=0.053). And XCELL and QUANTISEQ algorithms revealed that M1 macrophages accounted for more proportion than M2 macrophages in GSE53786 and GSE32918 (Figure 6\u2014figure supplement 1L\u2013O), which was confirmed in the CHCAMS cohort (Figure 6\u2014figure supplement 1P). Besides, the ratio of CD3G+ T cells was positively correlated with that of CD68 + macrophages, CD8 + T cells, and CD4 + T cells, C1QB expression level was positively correlated with CD8 + T cells, and VCAN expression level was positively correlated with CD8 + T cells ratio (Figure 6G). GSEA analysis based on the differentially expressed genes between high-risk and low-risk group in the GEO datasets above revealed that the cellular adhesion, extracellular structures, and immune-related processes could result in the different outcome (Figure 6H\u2013I).\n\nIn addition to the above analyses, we also explored the relationship between these three genes and location of DLBCL. It turned out that CD3G+ T cells ratio was higher in DLBCL originated from groin and testis, and VCAN featured higher expression in lymph node-originated DLBCL (Figure 6J\u2013K, p<0.05, p<0.01, Figure 6\u2014figure supplement 1B\u2013K).\n\nThese results showed that VCAN, CD3G, and C1QB played important roles in the microenvironment of DLBCL, possibly regulating the immune infiltration via modulating the extracellular organization and cellular interaction.\n\n### The TPGs signature model could also predict the drug sensitivity of DLBCL patients\n\nIn order to learn about the ability of the previously mentioned model to predict drug sensitivity, we performed the prediction with \u2018oncoPredict\u2019 package in R. Fifteen drugs (Supplementary file 2) included in the GDSC and used in clinical practice or under clinical trials (searched on Pubmed) were enrolled in this prediction analysis.\n\nAs is shown in Figure 7A (prediction of GSE53786), patients in high-risk group could be sensitive to Carmustine, Cytarabine, Oxaliplatin, Vincristine, Vorinostat, and Bortezomib, but no drug could work better in low-risk group. And in GSE32918 (Figure 7B), Carmustine, Cytarabine, Oxaliplatin, Vorinostat, Afuresertib, Bortezomib, Ibrutinib, and Tamoxifen could work better in high-risk group, and Vincristine (sensitivity score: low-risk vs high-risk=0.219\u00b10.026 vs 0.223\u00b10.031) could work better in low-risk group. The discrepancy between the prediction in two datasets might be due to the samples and sequencing platforms. However, the intersection analysis of the drugs to which the high-risk patients in both datasets could be sensitive revealed that Carmustine, Cytarabine, Oxaliplatin, Vorinostat, and Bortezomib could be reliable candidates for treating high-risk patients based on the three TPGs signature prognostic model (Supplementary file 2).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/92841/elife-92841-fig7-v1.jpg)\n\n**Figure 7.:** (A) Drug sensitivity prediction results with statistical significance in GSE53786 dataset (n Low = 60, n High = 59, Wilcoxon rank sum test, data are shown as mean \u00b1 SEM ). (B) Drug sensitivity prediction results with statistical significance in GSE32918 dataset (n Low = 124, n High = 125, Wilcoxon rank sum test, data are shown as mean \u00b1 SEM). According to \u2018oncoPredict\u2019 algorithm, sensitivity score indicates IC50 of drugs, with higher sensitivity score indicating lower sensitivity.\n\n## Discussion\n\nIn this study, bioinformatics techniques were employed to identify three genes (VCAN, CD3G, C1QB) that exhibit associations with prognosis in both immune and stromal environments, thereby revealing their relationship with the prognosis of DLBCL patients. The findings indicate that higher expression of VCAN, increased infiltration of CD3G+ T cells, and decreased expression of C1QB are correlated with favorable prognostic outcomes. Conversely, a lower infiltration of CD68 + macrophages and lower infiltration of CD8 + T cells are associated with poorer prognosis. Furthermore, we investigated the relationship between risk genes related to tumor purity and treatment sensitivity and established a list of possible drugs that might be helpful for enhancing outcomes.\n\nPrevious studies have extensively investigated the VCAN gene in relation to tumorigenesis and metastasis (Baghy et al., 2016). VCAN, also known as versican, is a crucial component of extracellular matrix (Wight, 2017), and exists in several isoforms (Fujii et al., 2015). Research has shown that VCAN plays a multifaceted role in TME depending on the cell type expressing it. When expressed by myeloid cells, VCAN induces an anti-inflammatory and immunosuppressive microenvironment. Conversely, its expression by stromal cells typically leads to a pro-inflammatory response (Wight et al., 2020). In gastric cancer, high expression of VCAN has been associated with increased infiltration of fibroblasts, significant enrichment of stromal-associated signaling pathways, and poor prognosis (Song et al., 2022). In hepatocellular carcinoma, VCAN exhibits a strong association with immune checkpoint gene expression (Wang et al., 2022). Despite these findings in other tumor types, the role of VCAN in DLBCL has not been explored yet. Our study reveals that high expression of VCAN is actually associated with a more favorable prognosis. This suggests that VCAN may have different functions in different tumor types. One possible mechanism through which VCAN influences prognosis is that VCAN overexpression in DLBCL may also impact tumor cell proliferation. A study has shown that overexpression of VCAN V1 has an inhibitory effect on cell proliferation, partly due to its promotion of activation-induced cell death in lymphoid cell lines (Fujii et al., 2015). Hence, the high expression of VCAN in DLBCL could impact not only the TME but also tumor cell proliferation, suggesting a potential mechanism for the observed preferable prognosis.\n\nC1q is synthesized in the tumor microenvironment and functions as an extracellular matrix protein, and C1QB is a component of C1q (Yang et al., 2022). Previous studies have provided insights into the diverse roles of C1q in cancer progression. However, the majority of these results, as observed in non-small cell lung carcinoma and gastric cancer, indicate that high C1q expression in TME is associated with a poor prognosis (Li et al., 2023; Mangogna et al., 2019; Jiang et al., 2020). Additionally, C1QB has been found to exert an impact on the TME and is positively associated with infiltration levels of CD8 + T cell, as well as with M1 and M2 macrophages in osteosarcoma (Chen et al., 2021a). Moreover, C1QB expression shows a positive correlation with predictive biomarkers for immunotherapy, such as PD-L1 expression and CD8 + T cell infiltration (Jiang et al., 2020). Furthermore, in malignant melanoma, C1QB promotes proliferation, migration, and invasion, while inhibiting cell apoptosis (Zheng et al., 2021), and the high-expression group exhibits significant enrichment of genes related to immune and apoptosis (Yang et al., 2022). In our study, we found that high expression of C1QB in DLBCL was associated with a worse prognosis and positively correlated with CD8 + T cells infiltration. Based on these findings, we propose that C1QB in DLBCL might share similarities with its functions in other tumor types, particularly regarding the promotion of recruitment and subsequent deactivation of CD8 + T cells within the TME through the induction of immune checkpoint effects. These results shed light on the intricate role of C1QB in TME and its potential significance as a prognostic marker in DLBCL.\n\nCD3G is a member of the TCR/CD3 complex primarily expressed in lymphocytes subgroups. It plays a crucial role in initiating the activation of T cells (Wang et al., 2008). It is also involved in coupling antigen recognition (Chen et al., 2021b). It is reported to be associated with long-term OS and good prognosis in breast invasive carcinoma (Wang et al., 2019) as well as in head and neck squamous cell carcinoma (Wang et al., 2021). However, its role in DLBCL has not been fully explored. In our study, we revealed that high infiltration of CD3G+ T cells is correlated with good prognosis. The infiltration of CD3G+ T cells was found to be positively related to the infiltration of CD8+, CD4 +, and CD68+ cells. This indicates that CD3G+ T cells in DLBCL may enhance the tumor antigen recognition process and stimulate the infiltration of immune cells, leading to an increased abundance of immune cell infiltration in the TME. The presence of CD3G+ T cells in the TME may contribute to a favorable prognosis by facilitating the activation of immune responses against tumor cells.\n\nMacrophages play a crucial role in TME, and CD68 is a surface marker specific to macrophages. Macrophages can be roughly classified into two types based on their functional features: M1 or M2. M1 macrophages exert anti-tumor effects, whereas M2 macrophages promote tumor growth and progression in TME (Zhang et al., 2021). A previous study found that low infiltration of CD68 + macrophages was associated with an inferior prognosis (Croci et al., 2021). Similarly, our study has yielded similar results, revealing a noteworthy correlation between a high proportion of CD68 + macrophages in the TME and improved prognosis. Additionally, by analyzing the datasets, we observed a higher proportion of M1 macrophages infiltration compared to M2 macrophages. This suggests that, within our DLBCL cohort, these macrophages may also exhibit the M1 phenotype and consequently play a protective role against tumor progression.\n\nCD8 is widely recognized as a marker of CD8 + T cells, also known as cytotoxic T cells (Farhood et al., 2019). These cells are crucial for the immune response against tumors. However, in DLBCL, CD8 + T cells exhibits elevated levels of inhibitory molecules on their surface, such as PD-1, PD-L1, and TIM3. High expression of TIM3, an inhibitory immune checkpoint receptor, on CD8 + T cells has been associated with tumor progression and poor outcomes (Roussel et al., 2021; Xu-Monette et al., 2019). These inhibitory molecules may impair the function of CD8 + T cells and hinder their anti-tumor activity. Surprisingly, our study demonstrates a correlation between the infiltration of CD8 +T cells and favorable prognosis in DLBCL. Here, we propose a hypothesis that in our study, the observed high expression of VCAN might create a suppressive environment for PD-1 + CD8+ T cells (Wight et al., 2020; Hirani et al., 2021). Intriguingly, our study revealed a statistically significant correlation between VCAN expression, C1QB expression, and CD8 + T cell infiltration. VCAN has the potential to modulate immune infiltration by reducing the immunosuppressive phenotype of immune cells (Huang et al., 2021), thus enabling a more efficient anti-tumor response. This aspect is still worth of consideration.\n\nTaken together, our findings underscore the significant roles of VCAN, CD3G, and C1QB, which influence both the TME and the behavior of tumor cells. The interaction between each component and the TME is rather complicated. To fully comprehend the underlying mechanisms and identify potential therapeutic targets in DLBCL, further investigation is required.\n\nHowever, this study still has several limitations that should be addressed. First, the patients included in this study were from a single center, which may introduce biases into the results. Although we made efforts to minimize these biases, it is inevitable that some may persist. Second, we hypothesized that VCAN, CD3G, and C1QB could serve as continuous prognostic parameters, thereby eliminating the need for a cut-off. However, the methodology used in this study, which utilized IHC staining to assess the protein expression levels, may have potential limitations. While IHC is a widely used technique, additional validation is needed to confirm the prognostic value of VCAN, CD3G, and C1QB in DLBCL. Furthermore, due to the potential variability in interpreting IHC results across different centers, a standardized coefficient and formula have not been established to calculate the final prognostic index for patients with DLBCL. Developing a standardized approach would be beneficial in ensuring consistent and accurate interpretation of IHC results. To address these limitations and expand upon our findings, future studies should strive to incorporate a diverse range of patients from multiple centers. Additionally, it is crucial to employ rigorous experimental techniques to authenticate the prognostic significance of VCAN, CD3G, and C1QB in DLBCL.\n",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mohammad M Karimi, King's College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92841.3.sa0](https://doi.org/10.7554/eLife.92841.3.sa0)\n\nThis study presents a predictive scoring system in DLBCL based on the expression of three tumour microenvironment-related genes. Such a scoring system seems useful for predicting tumour purity levels in DLBCL. The provided evidence showing an association between worse DLBLC prognosis and high-risk score is solid, but it is incomplete to draw a clear conclusion about the links between risk score and drug sensitivity.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92841.3.sa1](https://doi.org/10.7554/eLife.92841.3.sa1)\n\nIn this study, Zhenbang Ye and colleagues investigate the links between microenvironment signatures, gene expression profiles, and prognosis in diffuse large B-cell lymphoma (DLBCL). They show that increased tumor purity (ie, a higher proportion of tumor cells relative to surrounding stromal components) is associated with worse prognosis. They then show that three genes associated with tumor purity (VCAN, CD3G, and C1QB) correlate with patterns of immune cell infiltration and can be used to create a risk scoring system that predicts prognosis, which can be replicated by immunohistochemistry (IHC), and response to some therapies.\n\n(1) The two strengths of the study are its relatively large sample size (n = 190) and the strong prognostic significance of the risk scoring system. It is worth noting that the validation of this scoring with IHC, a simple technique already routinely used for the diagnosis and classification of DLBCL, increases the potential for clinical translation. However, the correlative nature of the study limits the conclusions that can be drawn in regards to links between the risk scoring system, the tumor microenvironment, and the biology of DLBCL.\n\n(2) The tumor microenvironment has been extensively studied in DLBCL and a prognostic implication has already been established (for instance, Steen et al., Cancer Cell, 2021). In addition, associations have already been established in non-Hodgkin lymphoma between prognosis and expression of C1QB (Rapier-Sharman et al., Journal of Bioinformatics and Systems Biology, 2022), VCAN (S. Hu et al., Blood, 2013), and CD3G (Chen et al., Medical Oncology, 2022). Nevertheless, one of the strengths and novelty aspect of the study is the combination of these 3 genes into a risk score that is also valid by immunohistochemistry (IHC), which substantially facilitates a potential clinical translation.\n\n(3) Figures 1A-B: tumor purity is calculated using the ESTIMATE (Estimation of Stromal and Immune cells in Malignant Tumor tissues using Expression data) algorithm (Yoshihara et al., Nature Communications, 2013). The ESTIMATE algorithm is based on two gene signatures (\"stromal\" and \"immune\"). It is therefore expected that tumor purity measured by the ESTIMATE algorithm will correlate with the expression of multiple genes. Importantly, C1QB is included in the stromal signature of the ESTIMATE algorithm meaning that, by definition, it will be correlated with tumor purity in that setting.\n\n(4) Figure 2A: as established in figure 1C, high tumor purity is associated with worse prognosis. Later in the manuscript, it is also shown that C1QB expression is associated with worse prognosis. However, figure 2A shows that C1QB is associated with decreased tumor purity. It therefore makes it less likely that the prognostic role of C1QB expression is related to its impact on tumor purity. The prognostic impact could be related to different patterns of immune cell infiltration, as shown later. However, the evidence presented in the study is correlative and nature and not sufficient to draw this conclusion.\n\n(5) Figure 3G: although there is a strong prognostic implication of the risk score on prognosis, the correlation between the risk score and tumor purity is significant but not very strong (R = 0.376). It is therefore likely that other important biological factors explain the correlation between the risk score and prognosis, as suggested in the gene set enrichment analysis that is later performed.\n\n(6) Figure 6: the drug sensitivity analysis includes a wide range of established and investigational drugs with varied mechanisms of action. Although the difference in sensitivity between tumors with low and high risk scores show statistical significance for certain drugs, the absolute difference appears small in most cases and is of unclear biological significance. In addition, even though the risk score is statistically related to drug sensitivity, there is no direct evidence that the differences in drug sensitivity are directly related to tumor purity.\n",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d3d22a75-182e-441c-8ced-86b27cd68736",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C1",
+      "claim": "DLBCL is the predominant type of malignant B-cell lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffuse large B-cell lymphoma (DLBCL) is the predominant type of malignant B-cell lymphoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a background statement about DLBCL.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "299aefdd-0baa-4db6-a17e-b7590372be54",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C2",
+      "claim": "DLBCL accounts for around 30% of all non-Hodgkin lymphomas.",
+      "claim_type": "EXPLICIT",
+      "source": "DLBCL is the most prevalent type among them, accounting for around 30% of all non-Hodgkin lymphomas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited statistic in the introduction providing epidemiological context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "ccd723eb-2b63-4856-93cf-9ee78aaddd8c",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C3",
+      "claim": "DLBCL was initially classified by the Hans algorithm into two subtypes: germinal center B-cell-like (GCB) and non-GCB.",
+      "claim_type": "EXPLICIT",
+      "source": "DLBCL was initially classified by the Hans algorithm into two subtypes: germinal center B-cell-like (GCB) and non-GCB (Hans et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hans et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "20c0c529-2c83-4a67-831a-1d169d1a5277",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C4",
+      "claim": "Three distinct gene-based subtypes of DLBCL have been identified: GCB, activated B-cell-like (ABC), and the unclassified category.",
+      "claim_type": "EXPLICIT",
+      "source": "Further differentiation has since identified three distinct gene-based subtypes: GCB, activated B-cell-like (ABC), and the unclassified category (Sehn and Salles, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is supported by citation to Sehn and Salles, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "308f805a-f910-4ba8-8b01-9fc1f85b4333",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C5",
+      "claim": "About 60% of DLBCL patients achieve long-term remission after undergoing R-CHOP chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "After undergoing R-CHOP chemotherapy, about 60% of patients achieve long-term remission; however, approximately 30% of patients experience relapse, resulting in poor prognosis and a considerable number of deaths from refractory lymphoma (Autio et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This treatment outcome statistic is supported by citation to Autio et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d9ca1767-88f8-4645-9588-7416b1954426",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C6",
+      "claim": "Approximately 30% of DLBCL patients experience relapse after R-CHOP chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "After undergoing R-CHOP chemotherapy, about 60% of patients achieve long-term remission; however, approximately 30% of patients experience relapse, resulting in poor prognosis and a considerable number of deaths from refractory lymphoma (Autio et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This relapse rate is supported by citation to Autio et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "53f43214-a0c7-454a-a24c-e698085c41e3",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C7",
+      "claim": "The tumor microenvironment (TME) is a complex and dynamic system that consists of the extracellular matrix and a variety of cellular components.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumor microenvironment (TME) is a complex and dynamic system that consists of the extracellular matrix and a variety of cellular components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about TME composition based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "e3559046-9ba2-4efe-a267-2e98853b87e4",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C8",
+      "claim": "Multiple subgroups of immune cells exist within the microenvironment of DLBCL, including T cells, B cells, NK cells, monocytes/macrophages, and dendritic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have unveiled multiple subgroups of immune cells within the microenvironment of DLBCL, including T cells, B cells, NK cells, monocytes/macrophages, dendritic cells, as well as the distribution of stromal cell components like fibroblasts and endothelial cells (Steen et al., 2021; Ciavarella et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about immune cell composition is supported by citations to Steen et al., 2021 and Ciavarella et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "19b77677-52f0-48a6-8e2b-0773196367af",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C9",
+      "claim": "Stromal cell components like fibroblasts and endothelial cells are distributed in the DLBCL microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have unveiled multiple subgroups of immune cells within the microenvironment of DLBCL, including T cells, B cells, NK cells, monocytes/macrophages, dendritic cells, as well as the distribution of stromal cell components like fibroblasts and endothelial cells (Steen et al., 2021; Ciavarella et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about stromal components is supported by citations to Steen et al., 2021 and Ciavarella et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "c921cddb-5544-46e0-9274-f0f19afc25cf",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C10",
+      "claim": "The interaction between tumors and the microenvironment is a vital factor that impacts the development and prognosis of B-cell lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between tumors and the microenvironment is a vital factor that impacts the development and prognosis of B-cell lymphoma (Ennishi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Ennishi et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "4d156b53-02cd-4b49-b3f2-fd59fa4160a0",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C11",
+      "claim": "A higher quantity of extracellular matrix in DLBCL is associated with a more favorable prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research on stroma in DLBCL has predominantly indicated that a higher quantity of extracellular matrix is associated with a more favorable prognosis, while increased vascular density is associated with poorer prognosis (Miyawaki et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is supported by citation to Miyawaki et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "9478d599-c609-4865-a356-28df2eeba595",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C12",
+      "claim": "Increased vascular density in DLBCL is associated with poorer prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research on stroma in DLBCL has predominantly indicated that a higher quantity of extracellular matrix is associated with a more favorable prognosis, while increased vascular density is associated with poorer prognosis (Miyawaki et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is supported by citation to Miyawaki et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "54749abb-b280-4c7d-a4e8-9541d877384a",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C13",
+      "claim": "Higher stromal scores have been associated with an improved prognosis in DLBCL patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, higher stromal scores have been associated with an improved prognosis in DLBCL patients (Schmitz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is supported by citation to Schmitz et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "afa9e602-3414-4100-b1a8-54e4d475aa5f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C14",
+      "claim": "A fibrotic tumor microenvironment has been correlated with a better prognosis after DLBCL chemotherapy and immunotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a fibrotic tumor microenvironment has been correlated with a better prognosis after DLBCL chemotherapy and immunotherapy (Lou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic correlation is supported by citation to Lou et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "c61a431b-593e-4166-b02a-424867d1b15c",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C15",
+      "claim": "Tumor purity quantifies the relative ratio of tumor cells to the surrounding stromal components in solid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor purity quantifies the relative ratio of tumor cells to the surrounding stromal components in solid tumors, elucidating the dynamics between tumor cells and their microenvironment (Gong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This definition is supported by citation to Gong et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "a05a0d23-5a3e-4b2a-944b-37c889250832",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C16",
+      "claim": "A higher tumor purity indicates a lower abundance of stromal components in TME.",
+      "claim_type": "EXPLICIT",
+      "source": "It can partly reflect the characteristics of TME, namely, a higher tumor purity indicates a lower abundance of stromal components in TME.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the definition of tumor purity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "cbfccd40-85dd-43a8-b37b-fce60f1f72eb",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C17",
+      "claim": "Tumor purity is associated with patients' prognosis, and the strength of this association varies across different tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor purity is associated with patients' prognosis, and the strength of this association varies across different tumor types (Lou et al., 2021; Zhao et al., 2023; Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Lou et al., 2021; Zhao et al., 2023; Zhang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "4408d15e-e503-4278-a67d-dd7abc7b4312",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C18",
+      "claim": "642 genes were identified as tumor purity-related genes (TPGs) in DLBCL, with 31 genes positively correlated and 611 genes negatively correlated with tumor purity.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the thresholds mentioned above, 642 genes were identified as TPGs, among which 31 genes were positively correlated with tumor purity, while 611 genes were negatively correlated with it (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is based on correlation analysis of gene expression data from GSE53786 dataset and is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "2f7d9102-ae3e-4e4b-8fc4-1577445ff744",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C19",
+      "claim": "Tumor purity in DLBCL ranged from 17.2 to 67.4% in the GSE53786 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on GSE53786 dataset, we first assessed the tumor purity of DLBCL, which ranged from 17.2 to 67.4% (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This range is calculated from the GSE53786 dataset using ESTIMATE algorithm and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "191e7a81-9223-41f8-8377-65fef159e274",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C20",
+      "claim": "Patients with high tumor purity had lower OS rates than those with low tumor purity in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, tumor purity did have influence on the prognosis of DLBCL patients, which showed that patients with high tumor purity had lower OS rates than those with low tumor purity (Figure 2C, p=0.025).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This survival analysis result is based on GSE53786 dataset with statistical significance (p=0.025) and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "a0d91283-617c-4fb5-a84f-eaba547ac376",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C21",
+      "claim": "TPGs were mainly associated with extracellular matrix organization and immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "It turned out that the TPGs were mainly associated with extracellular matrix organization and immune response (Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This functional association is determined by GO and KEGG enrichment analyses shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "82865506-019d-4d87-8326-0c1d08dd28b3",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C22",
+      "claim": "Nine genes (LUM, VCAN, YAP1, COL5A2, SDC2, TWIST1, CD3G, C1QB, and C3) were identified as intersection genes between PPI hub genes and prognostic TPGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Through conducting intersection analysis, we found nine genes (LUM, VCAN, YAP1, COL5A2, SDC2, TWIST1, CD3G, C1QB, and C3) were intersection genes (Figure 3D), indicating that they had an active effect in modulating the tumor purity, as well as influencing the prognosis of DLBCL patients.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is based on intersection analysis of PPI hub genes and prognostic genes, shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "9b589123-1bc2-4e79-b010-e22cf2e7c391",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C23",
+      "claim": "VCAN and CD3G were correlated with good prognosis in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "It showed that VCAN and CD3G were correlated with good prognosis and C1QB was correlated with poor prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is determined from the Cox regression model construction shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "87dbdf45-e630-4627-bb2e-dd238c9d9819",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C24",
+      "claim": "C1QB was correlated with poor prognosis in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "It showed that VCAN and CD3G were correlated with good prognosis and C1QB was correlated with poor prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is determined from the Cox regression model construction shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "bb9eccfa-a7e0-4317-8354-4f0f1114797c",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C25",
+      "claim": "The high-risk group has worse prognosis than the low-risk group based on the riskScore model.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the high-risk group has worse prognosis than the low-risk group (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by survival analysis in the GSE53786 dataset shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "ea69dd4c-4407-4f1f-bf34-53f23614cb0e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C26",
+      "claim": "High-risk group had lower OS rate than low-risk group in GSE53786 dataset (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "High-risk group had lower OS rate than low-risk group (Figure 4E, p<0.001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This survival difference is statistically significant (p<0.001) as shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "2bb7b9f3-e938-4b24-83d2-357843cd5dfa",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C27",
+      "claim": "The AUC for 1 year, 3 year, and 5 year ROC were 0.73, 0.77, and 0.77, respectively, in GSE53786 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "the areas under curve (AUC) for 1 year, 3 year, and 5 year ROC were 0.73, 0.77, and 0.77, respectively (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These AUC values are calculated from ROC analysis of the prognostic model in GSE53786 dataset, shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "75615a41-ce3b-4446-a089-ed1584f824b8",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C28",
+      "claim": "Tumor purity was positively correlated with riskScore in GSE53786 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Just similar to tumor purity, the high riskScore indicated bad outcome, which was consistent with the positive correlation between tumor purity and riskScore (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation is shown in Figure 4G based on analysis of GSE53786 dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "2466db5d-57c7-4f45-b491-5ba73882a663",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C29",
+      "claim": "High-risk group had more ABC type DLBCL, while low-risk group had more GCB type DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that high-risk group had more ABC type DLBCL, while low-risk group had more the GCB type DLBCL (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This association between riskScore and DLBCL subtype is shown in Figure 5C based on GSE53786 dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "91e103a1-764b-4c03-b976-cdb5f802e742",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C30",
+      "claim": "High-risk group displayed higher lactic dehydrogenase (LDH) ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, high-risk group displayed higher lactic dehydrogenase (LDH) ratio (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This association is shown in Figure 5F based on GSE53786 dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "0045e007-b00f-439b-bb8e-1db9522fb88f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C31",
+      "claim": "The riskScore was associated with poor prognosis (p<0.001, HR = 1.545, 95% CI 1.284\u20131.861) in univariate analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the riskScore was associated with the poor prognosis (Figure 5G, p<0.001, HR = 1.545, 95% CI 1.284\u20131.861)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This univariate Cox regression result is shown in Figure 5G with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "18a6870f-3965-4b7a-bc23-ebf9ee27d585",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C32",
+      "claim": "The riskScore was an independent prognostic factor (p=0.002, HR = 1.474, 95% CI 1.156\u20131.879) in multivariate analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "and was an independent prognostic factor (Figure 5H, p=0.002, HR = 1.474, 95% CI 1.156\u20131.879).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This multivariate Cox regression result is shown in Figure 5H with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "b3cdb1e4-101a-465d-9b0c-d558c59f94fc",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C33",
+      "claim": "Patients with high expression of VCAN had higher OS rate (p=0.003) in CHCAMS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival analysis showed that patients with high expression of VCAN had higher OS rate (Figure 6A, p=0.003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This survival analysis result is based on IHC data from CHCAMS cohort shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "7a5485e5-6953-4635-a111-fd067337dc7e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C34",
+      "claim": "Patients with high CD3G+ T cells infiltration showed favorable prognosis (p<0.001) in CHCAMS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The survival analysis revealed that patients with high CD3G+ T cells infiltration showed favorable prognosis (Figure 6B, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This survival analysis result is based on IHC data from CHCAMS cohort shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d1dde147-ecb7-4b87-a756-a3c537f80190",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C35",
+      "claim": "Patients in high C1QB expression group showed adverse prognosis (p=0.015) in CHCAMS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "For C1QB, the patients in high expression group (cut-off=82.41) showed adverse prognosis (Figure 6C, p=0.015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This survival analysis result is based on IHC data from CHCAMS cohort shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "b86b5a36-fc2b-4f7a-a821-cf0519b2aa13",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C36",
+      "claim": "CD68 + macrophages account for (17.75\u00b11.05)% ratio in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "As was shown in Figure 6\u2014figure supplement 1A, CD68 + macrophages [(17.75\u00b11.05) %] account for more ratio than CD4 + T cells [(0.68\u00b10.20) %] and CD8 + T cells [(6.69\u00b10.56) %] (p<0.001, Kruskal-Wallis Test and Dunn's Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This quantification is based on IHC analysis of CHCAMS cohort shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "4436bba2-9357-4988-9006-8614cff59382",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C37",
+      "claim": "CD4 + T cells account for (0.68\u00b10.20)% ratio in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "As was shown in Figure 6\u2014figure supplement 1A, CD68 + macrophages [(17.75\u00b11.05) %] account for more ratio than CD4 + T cells [(0.68\u00b10.20) %] and CD8 + T cells [(6.69\u00b10.56) %] (p<0.001, Kruskal-Wallis Test and Dunn's Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This quantification is based on IHC analysis of CHCAMS cohort shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d8cd8e57-edce-4936-830c-ffd3daf3c194",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C38",
+      "claim": "CD8 + T cells account for (6.69\u00b10.56)% ratio in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "As was shown in Figure 6\u2014figure supplement 1A, CD68 + macrophages [(17.75\u00b11.05) %] account for more ratio than CD4 + T cells [(0.68\u00b10.20) %] and CD8 + T cells [(6.69\u00b10.56) %] (p<0.001, Kruskal-Wallis Test and Dunn's Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This quantification is based on IHC analysis of CHCAMS cohort shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "9ffa6b55-5392-49cf-9191-c66493f2bbe6",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C39",
+      "claim": "CD68 + macrophages were associated with better prognosis (p=0.029) in CHCAMS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In the survival analysis of these three types of immune cells, we found that CD68 + macrophages, CD8 + T cells, and CD4 + T cells were associated with better prognosis (Figure 6D\u2013F, p=0.029, p=0.002, p=0.053).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This survival analysis result is based on IHC data from CHCAMS cohort shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "5d8b6ebd-0581-4daa-b1ed-5cbbe6f0401f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C40",
+      "claim": "CD8 + T cells were associated with better prognosis (p=0.002) in CHCAMS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In the survival analysis of these three types of immune cells, we found that CD68 + macrophages, CD8 + T cells, and CD4 + T cells were associated with better prognosis (Figure 6D\u2013F, p=0.029, p=0.002, p=0.053).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This survival analysis result is based on IHC data from CHCAMS cohort shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "9d73eb40-c962-4f78-be72-a78e050e2ade",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C41",
+      "claim": "CD4 + T cells were associated with better prognosis (p=0.053) in CHCAMS cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "In the survival analysis of these three types of immune cells, we found that CD68 + macrophages, CD8 + T cells, and CD4 + T cells were associated with better prognosis (Figure 6D\u2013F, p=0.029, p=0.002, p=0.053).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This survival analysis result is based on IHC data from CHCAMS cohort shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "ea7b03a6-1f2c-4cf6-9c6c-5797695290c6",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C42",
+      "claim": "The ratio of CD3G+ T cells was positively correlated with that of CD68 + macrophages, CD8 + T cells, and CD4 + T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, the ratio of CD3G+ T cells was positively correlated with that of CD68 + macrophages, CD8 + T cells, and CD4 + T cells, C1QB expression level was positively correlated with CD8 + T cells, and VCAN expression level was positively correlated with CD8 + T cells ratio (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation analysis is based on IHC data from CHCAMS cohort shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "77a835a0-8882-4fbf-a595-3017769bfb6c",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C43",
+      "claim": "C1QB expression level was positively correlated with CD8 + T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, the ratio of CD3G+ T cells was positively correlated with that of CD68 + macrophages, CD8 + T cells, and CD4 + T cells, C1QB expression level was positively correlated with CD8 + T cells, and VCAN expression level was positively correlated with CD8 + T cells ratio (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation analysis is based on IHC data from CHCAMS cohort shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "af21faff-56c2-402b-87f3-3f4e3e4f5953",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C44",
+      "claim": "VCAN expression level was positively correlated with CD8 + T cells ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, the ratio of CD3G+ T cells was positively correlated with that of CD68 + macrophages, CD8 + T cells, and CD4 + T cells, C1QB expression level was positively correlated with CD8 + T cells, and VCAN expression level was positively correlated with CD8 + T cells ratio (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This correlation analysis is based on IHC data from CHCAMS cohort shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "54b8f102-7001-4979-8ce7-ea8e5ca31397",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C45",
+      "claim": "M1 macrophages accounted for more proportion than M2 macrophages in GSE53786 and GSE32918 datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "And XCELL and QUANTISEQ algorithms revealed that M1 macrophages accounted for more proportion than M2 macrophages in GSE53786 and GSE32918 (Figure 6\u2014figure supplement 1L\u2013O), which was confirmed in the CHCAMS cohort (Figure 6\u2014figure supplement 1P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is based on computational analysis using XCELL and QUANTISEQ algorithms on GEO datasets, shown in Figure 6\u2014figure supplement 1L\u2013O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "33c89552-1f69-41c5-82f6-ab0480e90a44",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C46",
+      "claim": "CD3G+ T cells ratio was higher in DLBCL originated from groin and testis.",
+      "claim_type": "EXPLICIT",
+      "source": "It turned out that CD3G+ T cells ratio was higher in DLBCL originated from groin and testis, and VCAN featured higher expression in lymph node-originated DLBCL (Figure 6J\u2013K, p<0.05, p<0.01, Figure 6\u2014figure supplement 1B\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This association with tumor location is based on IHC analysis of CHCAMS cohort shown in Figure 6J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "582552c7-7e11-49fa-9b96-e0f88b8d4175",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C47",
+      "claim": "VCAN featured higher expression in lymph node-originated DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "It turned out that CD3G+ T cells ratio was higher in DLBCL originated from groin and testis, and VCAN featured higher expression in lymph node-originated DLBCL (Figure 6J\u2013K, p<0.05, p<0.01, Figure 6\u2014figure supplement 1B\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This association with tumor location is based on IHC analysis of CHCAMS cohort shown in Figure 6K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "a4ea7f52-978d-4f4e-89fa-6f03e3c0d96e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C48",
+      "claim": "Patients in high-risk group could be sensitive to Carmustine, Cytarabine, Oxaliplatin, Vincristine, Vorinostat, and Bortezomib in GSE53786 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "As is shown in Figure 7A (prediction of GSE53786), patients in high-risk group could be sensitive to Carmustine, Cytarabine, Oxaliplatin, Vincristine, Vorinostat, and Bortezomib, but no drug could work better in low-risk group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This drug sensitivity prediction is based on oncoPredict analysis of GSE53786 dataset shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "1a226f85-a0c4-4495-8299-6d42a84bce60",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C49",
+      "claim": "In GSE32918, Carmustine, Cytarabine, Oxaliplatin, Vorinostat, Afuresertib, Bortezomib, Ibrutinib, and Tamoxifen could work better in high-risk group.",
+      "claim_type": "EXPLICIT",
+      "source": "And in GSE32918 (Figure 7B), Carmustine, Cytarabine, Oxaliplatin, Vorinostat, Afuresertib, Bortezomib, Ibrutinib, and Tamoxifen could work better in high-risk group, and Vincristine (sensitivity score: low-risk vs high-risk=0.219\u00b10.026 vs 0.223\u00b10.031) could work better in low-risk group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This drug sensitivity prediction is based on oncoPredict analysis of GSE32918 dataset shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "0718d5c9-d991-4d84-86ba-00680bae3da5",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C50",
+      "claim": "Carmustine, Cytarabine, Oxaliplatin, Vorinostat, and Bortezomib could be reliable candidates for treating high-risk patients based on the three TPGs signature prognostic model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the intersection analysis of the drugs to which the high-risk patients in both datasets could be sensitive revealed that Carmustine, Cytarabine, Oxaliplatin, Vorinostat, and Bortezomib could be reliable candidates for treating high-risk patients based on the three TPGs signature prognostic model (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on intersection analysis of drug sensitivity predictions from both GSE53786 and GSE32918 datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "00567cc8-c929-45ae-ac80-2650a642bd7e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C51",
+      "claim": "VCAN is also known as versican and is a crucial component of extracellular matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "VCAN, also known as versican, is a crucial component of extracellular matrix (Wight, 2017), and exists in several isoforms (Fujii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about VCAN is supported by citations to Wight, 2017 and Fujii et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "02aeaf77-fca6-406d-bdeb-1d870a9b8bca",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C52",
+      "claim": "VCAN exists in several isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "VCAN, also known as versican, is a crucial component of extracellular matrix (Wight, 2017), and exists in several isoforms (Fujii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about VCAN isoforms is supported by citation to Fujii et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "fbdf1577-ff2e-4a06-9287-bba6241b173f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C53",
+      "claim": "When VCAN is expressed by myeloid cells, it induces an anti-inflammatory and immunosuppressive microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed by myeloid cells, VCAN induces an anti-inflammatory and immunosuppressive microenvironment. Conversely, its expression by stromal cells typically leads to a pro-inflammatory response (Wight et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role of VCAN is supported by citation to Wight et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "f9e16470-43d0-4312-ac34-4d499566d61a",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C54",
+      "claim": "When VCAN is expressed by stromal cells, it typically leads to a pro-inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed by myeloid cells, VCAN induces an anti-inflammatory and immunosuppressive microenvironment. Conversely, its expression by stromal cells typically leads to a pro-inflammatory response (Wight et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role of VCAN is supported by citation to Wight et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d90982ea-0794-407c-9649-75d5e47baeb5",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C55",
+      "claim": "In gastric cancer, high expression of VCAN has been associated with increased infiltration of fibroblasts, significant enrichment of stromal-associated signaling pathways, and poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In gastric cancer, high expression of VCAN has been associated with increased infiltration of fibroblasts, significant enrichment of stromal-associated signaling pathways, and poor prognosis (Song et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This association in gastric cancer is supported by citation to Song et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "1d3b4ab9-058c-41a6-a480-512ca5c103b2",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C56",
+      "claim": "In hepatocellular carcinoma, VCAN exhibits a strong association with immune checkpoint gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In hepatocellular carcinoma, VCAN exhibits a strong association with immune checkpoint gene expression (Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This association in hepatocellular carcinoma is supported by citation to Wang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "26b214f3-3c19-41b2-8626-9e20d71edfbf",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C57",
+      "claim": "Overexpression of VCAN V1 has an inhibitory effect on cell proliferation, partly due to its promotion of activation-induced cell death in lymphoid cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "A study has shown that overexpression of VCAN V1 has an inhibitory effect on cell proliferation, partly due to its promotion of activation-induced cell death in lymphoid cell lines (Fujii et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citation to Fujii et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "af279b08-c706-4da2-ae15-f1947ce0a43c",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C58",
+      "claim": "C1q is synthesized in the tumor microenvironment and functions as an extracellular matrix protein.",
+      "claim_type": "EXPLICIT",
+      "source": "C1q is synthesized in the tumor microenvironment and functions as an extracellular matrix protein, and C1QB is a component of C1q (Yang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about C1q is supported by citation to Yang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "2177d0e2-d988-4ccf-b8c6-34d8e5aee34e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C59",
+      "claim": "C1QB is a component of C1q.",
+      "claim_type": "EXPLICIT",
+      "source": "C1q is synthesized in the tumor microenvironment and functions as an extracellular matrix protein, and C1QB is a component of C1q (Yang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about C1QB is supported by citation to Yang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "54316664-c8f9-49dd-94be-e69ebff18701",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C60",
+      "claim": "High C1q expression in TME is associated with a poor prognosis in non-small cell lung carcinoma and gastric cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of these results, as observed in non-small cell lung carcinoma and gastric cancer, indicate that high C1q expression in TME is associated with a poor prognosis (Li et al., 2023; Mangogna et al., 2019; Jiang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is supported by citations to Li et al., 2023; Mangogna et al., 2019; Jiang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "22d6e468-1d06-4ecf-b32b-7de67dc6c405",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C61",
+      "claim": "C1QB has been found to exert an impact on the TME and is positively associated with infiltration levels of CD8 + T cell, as well as with M1 and M2 macrophages in osteosarcoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, C1QB has been found to exert an impact on the TME and is positively associated with infiltration levels of CD8 + T cell, as well as with M1 and M2 macrophages in osteosarcoma (Chen et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This association in osteosarcoma is supported by citation to Chen et al., 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "8f32721d-f5c4-4ac9-aa2e-3173354559c9",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C62",
+      "claim": "C1QB expression shows a positive correlation with predictive biomarkers for immunotherapy, such as PD-L1 expression and CD8 + T cell infiltration.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, C1QB expression shows a positive correlation with predictive biomarkers for immunotherapy, such as PD-L1 expression and CD8 + T cell infiltration (Jiang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This correlation is supported by citation to Jiang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "6293c3a7-16f5-4c93-ad7c-7ba9aa4be1b3",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C63",
+      "claim": "In malignant melanoma, C1QB promotes proliferation, migration, and invasion, while inhibiting cell apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in malignant melanoma, C1QB promotes proliferation, migration, and invasion, while inhibiting cell apoptosis (Zheng et al., 2021), and the high-expression group exhibits significant enrichment of genes related to immune and apoptosis (Yang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role in melanoma is supported by citations to Zheng et al., 2021 and Yang et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "61d76842-6675-4199-8518-fddd249033f2",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C64",
+      "claim": "CD3G is a member of the TCR/CD3 complex primarily expressed in lymphocytes subgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "CD3G is a member of the TCR/CD3 complex primarily expressed in lymphocytes subgroups. It plays a crucial role in initiating the activation of T cells (Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about CD3G is supported by citation to Wang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "7755e1eb-056c-4b19-8f3d-a5ba0576487f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C65",
+      "claim": "CD3G plays a crucial role in initiating the activation of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD3G is a member of the TCR/CD3 complex primarily expressed in lymphocytes subgroups. It plays a crucial role in initiating the activation of T cells (Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citation to Wang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "955815ad-af16-4a30-9531-28492f9e5d9d",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C66",
+      "claim": "CD3G is involved in coupling antigen recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also involved in coupling antigen recognition (Chen et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citation to Chen et al., 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "f39435f6-6f97-4bfa-9c88-087af146dfa8",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C67",
+      "claim": "CD3G is reported to be associated with long-term OS and good prognosis in breast invasive carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reported to be associated with long-term OS and good prognosis in breast invasive carcinoma (Wang et al., 2019) as well as in head and neck squamous cell carcinoma (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is supported by citation to Wang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "19285bf2-dd4c-4d0a-869b-55d649250a61",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C68",
+      "claim": "CD3G is reported to be associated with long-term OS and good prognosis in head and neck squamous cell carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "It is reported to be associated with long-term OS and good prognosis in breast invasive carcinoma (Wang et al., 2019) as well as in head and neck squamous cell carcinoma (Wang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is supported by citation to Wang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "2fcb5a34-5ba5-463e-aef9-13ea0c504f36",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C69",
+      "claim": "Macrophages can be roughly classified into two types based on their functional features: M1 or M2.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages can be roughly classified into two types based on their functional features: M1 or M2. M1 macrophages exert anti-tumor effects, whereas M2 macrophages promote tumor growth and progression in TME (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This classification is supported by citation to Zhang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "2b4acdd3-6db8-4f7d-b846-27d232123dc4",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C70",
+      "claim": "M1 macrophages exert anti-tumor effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages can be roughly classified into two types based on their functional features: M1 or M2. M1 macrophages exert anti-tumor effects, whereas M2 macrophages promote tumor growth and progression in TME (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citation to Zhang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "9ca883b1-ebef-4e4a-800d-9003106c5ec6",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C71",
+      "claim": "M2 macrophages promote tumor growth and progression in TME.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages can be roughly classified into two types based on their functional features: M1 or M2. M1 macrophages exert anti-tumor effects, whereas M2 macrophages promote tumor growth and progression in TME (Zhang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional role is supported by citation to Zhang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d8f37d98-8445-45a1-8618-55d23814a411",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C72",
+      "claim": "Low infiltration of CD68 + macrophages was associated with an inferior prognosis in a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study found that low infiltration of CD68 + macrophages was associated with an inferior prognosis (Croci et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prognostic association is supported by citation to Croci et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "bf7db2a9-2e61-469a-8bc8-4109830322b2",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C73",
+      "claim": "CD8 + T cells in DLBCL exhibit elevated levels of inhibitory molecules on their surface, such as PD-1, PD-L1, and TIM3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in DLBCL, CD8 + T cells exhibits elevated levels of inhibitory molecules on their surface, such as PD-1, PD-L1, and TIM3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of CD8+ T cells in DLBCL.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "89e7f5b9-e6ed-4f1b-9e46-8c4c0434a65f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C74",
+      "claim": "High expression of TIM3 on CD8 + T cells has been associated with tumor progression and poor outcomes in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of TIM3, an inhibitory immune checkpoint receptor, on CD8 + T cells has been associated with tumor progression and poor outcomes (Roussel et al., 2021; Xu-Monette et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This association is supported by citations to Roussel et al., 2021 and Xu-Monette et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "85c52166-265b-4d98-a85d-0a5cdd4ea245",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C75",
+      "claim": "VCAN has the potential to modulate immune infiltration by reducing the immunosuppressive phenotype of immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "VCAN has the potential to modulate immune infiltration by reducing the immunosuppressive phenotype of immune cells (Huang et al., 2021), thus enabling a more efficient anti-tumor response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citation to Huang et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "70f07e34-ab90-4135-b601-51a299af7e1c",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C76",
+      "claim": "The high expression of VCAN might create a suppressive environment for PD-1 + CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose a hypothesis that in our study, the observed high expression of VCAN might create a suppressive environment for PD-1 + CD8+ T cells (Wight et al., 2020; Hirani et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis supported by citations to Wight et al., 2020 and Hirani et al., 2021.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "60bf6b1a-e115-4fc6-93ce-4a12097de668",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C77",
+      "claim": "190 patients from the Cancer Hospital Chinese Academy of Medical Sciences were enrolled in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "190 patients from the Cancer Hospital Chinese Academy of Medical Sciences, the CHCAMS cohort, were enrolled in this study (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study cohort used for validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "808ddd3d-6809-4c46-8f62-1e792ecb2bba",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C78",
+      "claim": "All patients in the CHCAMS cohort received surgery or biopsy during September, 2010 and September, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "All patients received surgery or biopsy during September, 2010 and September, 2020, and then standard follow-ups were carried out until March, 2023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the timeframe for patient enrollment and follow-up.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "0ae63efb-77e1-41ea-b974-b70b5a5718af",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C79",
+      "claim": "The ESTIMATE algorithm was used to assess tumor purity.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor purity was assessed by ESTIMATE (Estimation of Stromal and Immune cells in Malignant Tumor tissues using Expression data) algorithm (Yoshihara et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used, supported by citation to Yoshihara et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "e9016dc5-5280-491d-88a4-75adbd504f02",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C80",
+      "claim": "Genes with |r|\u22650.5 and p-value <0.05 were defined as tumor purity-related genes (TPGs).",
+      "claim_type": "EXPLICIT",
+      "source": "The genes with | r |\u22650.5 and p-value <0.05 was defined as the TPGs (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the threshold criteria used to define TPGs in the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "58a0d187-ab77-41b9-bfed-f77aebd8cdcd",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C82",
+      "claim": "CD3G could be regarded as a marker of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For CD3G, previous study revealed that it was a component of T cell receptor complex, for which it could be regarded as a marker of T cells (Wang et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by citation to Wang et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "12895174-50b0-46bb-9c04-b41405d4255f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C83",
+      "claim": "CD68 is a surface marker specific to macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages play a crucial role in TME, and CD68 is a surface marker specific to macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CD68.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "1f05f441-ae91-4c5f-b97e-6cc7743a940c",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C84",
+      "claim": "CD8 is widely recognized as a marker of CD8 + T cells, also known as cytotoxic T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8 is widely recognized as a marker of CD8 + T cells, also known as cytotoxic T cells (Farhood et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Farhood et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "de7eb808-ecbe-459e-a207-59aeb7aa854d",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C85",
+      "claim": "The study used datasets GSE53786 and GSE32918 from the Gene Expression Omnibus (GEO) database.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-Sequence and clinical data of GSE53786 and GSE32918 datasets were downloaded from GEO database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data sources used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "25d1c528-9465-49af-a2bd-d10ff147a2f7",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C86",
+      "claim": "Drug sensitivity prediction was conducted utilizing 'oncoPredict' packages in R 4.1.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug sensitivity prediction was conducted utilizing 'oncoPredict' packages in R 4.1.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational tool used for drug sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "c3a77bde-3306-4dd4-a479-acf60261ae82",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C87",
+      "claim": "The drug sensitivity data was collected from Genomics of Drug Sensitivity in Cancer (GDSC).",
+      "claim_type": "EXPLICIT",
+      "source": "The drug sensitivity data was collected from Genomics of Drug Sensitivity in Cancer (GDSC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of drug sensitivity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "43c8a808-65d6-457b-a64d-55609c5c2812",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C88",
+      "claim": "VCAN, CD3G, and C1QB were three key genes that influenced the tumor purity of DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "VCAN, CD3G, and C1QB were three key genes that influenced the tumor purity of DLBCL, and could also exert certain impact on drug sensitivity and prognosis of DLBCL patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "2f8207af-4676-4a46-8c8c-19eeff3c5405",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C89",
+      "claim": "VCAN, CD3G, and C1QB could exert certain impact on drug sensitivity and prognosis of DLBCL patients.",
+      "claim_type": "EXPLICIT",
+      "source": "VCAN, CD3G, and C1QB were three key genes that influenced the tumor purity of DLBCL, and could also exert certain impact on drug sensitivity and prognosis of DLBCL patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "cd1b9a27-ae9b-41a0-b7ba-acbd4de5324b",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C90",
+      "claim": "VCAN and CD3G+ T cells were correlated with favorable prognosis in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, VCAN and CD3G+ T cells were correlated with favorable prognosis, and C1QB was correlated with worse prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "7eb70a7b-1f91-4c18-869f-e22bd1318c4c",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C91",
+      "claim": "C1QB was correlated with worse prognosis in DLBCL.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, VCAN and CD3G+ T cells were correlated with favorable prognosis, and C1QB was correlated with worse prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "97730e15-21db-4a00-9e2b-a09d4ca1742e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C92",
+      "claim": "The ratio of CD68 + macrophages and CD8 + T cells was associated with better prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of CD68 + macrophages and CD8 + T cells was associated with better prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "8432774d-10a8-489b-8e45-d80ca95b517f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C93",
+      "claim": "CD3G+T cells ratio was significantly correlated with CD68 + macrophages, CD4 + T cells, and CD8 +T cells ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CD3G+T cells ratio was significantly correlated with CD68 + macrophages, CD4 + T cells, and CD8 +T cells ratio, indicating it could play an important role in the anti-tumor immunity in DLBCL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This correlation is stated as a finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "4bd2fc45-d3bd-4b54-bd1a-df251eb51129",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C94",
+      "claim": "CD3G could play an important role in the anti-tumor immunity in DLBCL.",
+      "claim_type": "IMPLICIT",
+      "source": "In addition, CD3G+T cells ratio was significantly correlated with CD68 + macrophages, CD4 + T cells, and CD8 +T cells ratio, indicating it could play an important role in the anti-tumor immunity in DLBCL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "dc4f803e-5a65-4b18-b657-5fedf98fe04e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C95",
+      "claim": "The riskScore model constructed based on the RNASeq data of VCAN, C1QB, and CD3G works well in predicting the prognosis and drug sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The riskScore model constructed based on the RNASeq data of VCAN, C1QB, and CD3G work well in predicting the prognosis and drug sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "faaa5064-b8b3-40ba-92a9-67187ba2da3f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C96",
+      "claim": "This work is supported by the Shenzhen High-level Hospital Construction Fund and CAMS Innovation Fund for Medical Sciences (CIFMS) (2022-I2M-C&T-B-062).",
+      "claim_type": "EXPLICIT",
+      "source": "This work is supported by the Shenzhen High-level Hospital Construction Fund and CAMS Innovation Fund for Medical Sciences (CIFMS) (2022-I2M-C&T-B-062).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the funding statement for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "593a7d6e-ea86-4d33-8360-1a6dc87fe686",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C97",
+      "claim": "103 genes were identified as prognostic TPGs through univariate Cox regression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we performed univariate Cox regression analysis to figure out the TPGs that were associated with the prognosis of DLBCL patients, and 103 genes were identified (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is based on univariate Cox regression analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "aa4dbdf7-1703-4c45-8bea-e70c938711d1",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C98",
+      "claim": "Most of the prognostic TPGs were correlated with good outcomes (with HR <1).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most of the TPGs were correlated with good outcomes (with HR <1), and only six genes were associated with poor outcomes (with HR >1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on the Cox regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "ffd2eceb-68e4-4b27-bcb2-c37344470a37",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C99",
+      "claim": "Only six prognostic TPGs were associated with poor outcomes (with HR >1).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, most of the TPGs were correlated with good outcomes (with HR <1), and only six genes were associated with poor outcomes (with HR >1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on the Cox regression analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "149abee1-ba63-4f00-bb36-e665365a1fdd",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C100",
+      "claim": "The ECOG performance and stage was not associated with the riskScore.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Eastern Cooperative Oncology Group (ECOG) performance and stage was not associated with the riskScore (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This lack of association is shown in Figure 5D and E based on GSE53786 dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "ca47798d-b0fb-4376-9405-29beb732ff1f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C101",
+      "claim": "The high-risk group has more Stage III and Stage IV patients, but less Stage I patients than low-risk group.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the high-risk group has more Stage III and Stage IV patients, but less Stage I patients than low-risk group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is noted despite lack of statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "f31be599-1e85-4672-89f1-0c55cdfb7df8",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C102",
+      "claim": "VCAN, CD3G, and C1QB play important roles in the microenvironment of DLBCL, possibly regulating the immune infiltration via modulating the extracellular organization and cellular interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results showed that VCAN, CD3G, and C1QB played important roles in the microenvironment of DLBCL, possibly regulating the immune infiltration via modulating the extracellular organization and cellular interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined results of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "520ed07f-b9dd-4bb6-906f-26aa7b77c872",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C103",
+      "claim": "The patients included in this study were from a single center, which may introduce biases into the results.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the patients included in this study were from a single center, which may introduce biases into the results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is acknowledged as a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "9a13488a-59b4-46e5-a578-448440dcf912",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C104",
+      "claim": "The methodology using IHC staining to assess protein expression levels may have potential limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the methodology used in this study, which utilized IHC staining to assess the protein expression levels, may have potential limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is acknowledged as a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "ea071fa7-4a90-482d-873f-a10d1fe033f2",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "claim_id": "C105",
+      "claim": "A standardized coefficient and formula have not been established to calculate the final prognostic index for patients with DLBCL due to potential variability in interpreting IHC results across different centers.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, due to the potential variability in interpreting IHC results across different centers, a standardized coefficient and formula have not been established to calculate the final prognostic index for patients with DLBCL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is acknowledged as a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6eb1f096-93e3-4566-9c3f-8c64a9765824",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "642 tumor purity-related genes (TPGs) were identified in DLBCL using correlation analysis (|r|\u22650.5, p<0.05), with tumor purity ranging from 17.2-67.4%. High tumor purity was associated with poor prognosis (p=0.025), and TPGs were enriched in extracellular matrix organization and immune response pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 and C80 provide converging evidence from the GSE53786 dataset showing identification of TPGs, their correlation with tumor purity, prognostic significance, and functional enrichment. The statistical thresholds are clearly defined, survival analysis shows significance (p=0.025), and functional enrichment provides biological plausibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "71f1ee98-7a92-4530-ab69-399388420aef",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nine genes (LUM, VCAN, YAP1, COL5A2, SDC2, TWIST1, CD3G, C1QB, C3) were identified as key TPGs through intersection of PPI hub genes and 103 prognostic TPGs. VCAN and CD3G correlated with good prognosis while C1QB correlated with poor prognosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C97-C99 describe a systematic filtering approach combining network analysis and survival analysis to identify key genes. The methodology is sound, with most TPGs (97/103) showing protective effects (HR<1) and only 6 showing adverse effects, providing biological coherence to the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "dc95a720-1dc8-4176-b795-bb0e948220a1",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A three-gene prognostic model (VCAN, CD3G, C1QB) successfully stratified DLBCL patients into high- and low-risk groups with significant survival differences (p<0.001). The model showed good predictive performance (AUC: 0.73-0.77 for 1-5 years) and was an independent prognostic factor (HR=1.474, p=0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28, C31-C32 demonstrate robust model performance with statistically significant survival separation, reasonable AUC values, and independence from other clinical factors in multivariate analysis. The positive correlation between tumor purity and riskScore (C28) provides biological consistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "a2ba1899-439f-4fa2-a554-cd2660249c94",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "IHC validation in the CHCAMS cohort (n=190) confirmed that high VCAN expression (p=0.003) and high CD3G+ T cell infiltration (p<0.001) were associated with favorable prognosis, while high C1QB expression (p=0.015) was associated with adverse prognosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 provide independent validation of the three key genes using a different methodology (IHC) in an independent cohort. All three associations show statistical significance and directional consistency with the discovery cohort findings, strengthening the overall conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "750bc5a2-f5f0-45c6-884e-406dfc4065f8",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the DLBCL tumor microenvironment, CD68+ macrophages comprised 17.75\u00b11.05% of cells, significantly more than CD4+ T cells (0.68\u00b10.20%) and CD8+ T cells (6.69\u00b10.56%). Higher infiltration of CD68+ macrophages (p=0.029) and CD8+ T cells (p=0.002) was associated with better prognosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 provide quantitative characterization of immune cell composition with appropriate statistical testing (Kruskal-Wallis and Dunn's test). The survival associations are statistically significant for CD68+ and CD8+ cells, though CD4+ cells show borderline significance (p=0.053).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "c2660a02-21ea-4176-b371-92ce41c01bfc",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CD3G+ T cell ratio was positively correlated with CD68+ macrophages, CD8+ T cells, and CD4+ T cells. Both C1QB and VCAN expression levels were positively correlated with CD8+ T cell infiltration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C93 describe correlation patterns among the key genes and immune cell populations based on IHC data from the CHCAMS cohort. These correlations provide mechanistic insights into how these genes may influence the tumor microenvironment, though the manuscript does not provide specific correlation coefficients or p-values for all relationships.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "776fec2d-d44b-49be-afb0-e8df2166509e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The high-risk group had more ABC-type DLBCL and higher LDH ratios compared to the low-risk group. ECOG performance and stage showed no significant association with riskScore, though high-risk patients tended to have more advanced stage disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 show statistically significant associations with established prognostic factors (ABC subtype, LDH). Claims C100-C101 acknowledge lack of statistical significance for stage/ECOG but note directional trends, demonstrating appropriate interpretation of negative results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d55d11ca-3fd0-4bc2-aa08-4e0a444bc474",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Drug sensitivity prediction identified Carmustine, Cytarabine, Oxaliplatin, Vorinostat, and Bortezomib as potentially effective for high-risk DLBCL patients based on intersection analysis of predictions from both GSE53786 and GSE32918 datasets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48-C50 describe computational drug sensitivity predictions using the oncoPredict algorithm. While the intersection approach across two datasets provides some validation, these are in silico predictions without experimental validation. The clinical utility and accuracy of these predictions remain uncertain without prospective validation or functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "7215e33c-b1de-4241-ad82-ff444141696f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "M1 macrophages were more abundant than M2 macrophages in DLBCL based on computational analysis (XCELL, QUANTISEQ) and IHC validation. CD3G+ T cell infiltration was higher in groin/testis-originated DLBCL, while VCAN expression was higher in lymph node-originated DLBCL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 combine computational predictions with IHC validation for macrophage polarization, and identify anatomical site-specific patterns for CD3G and VCAN. The M1/M2 finding is validated across methods, and the anatomical associations show statistical significance (p<0.05, p<0.01).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "4b40cdfc-50c7-4e7c-b6dc-44bcdecb9aa3",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "VCAN, CD3G, and C1QB play important roles in the DLBCL microenvironment, influencing tumor purity, immune infiltration, drug sensitivity, and prognosis, possibly through modulation of extracellular organization and cellular interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89, C94, and C102 represent integrative conclusions drawn from multiple lines of evidence including correlation analyses, survival data, IHC validation, and functional enrichment. While mechanistic details remain speculative, the overall conclusion is well-supported by the convergent findings across multiple datasets and methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "124de834-bc1d-472f-a86a-e3dbe0f6880e",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study has limitations including single-center patient recruitment potentially introducing bias, potential limitations of IHC methodology for protein quantification, and lack of standardized coefficients for calculating a unified prognostic index across centers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 appropriately acknowledge study limitations. Single-center recruitment (C103) is a valid concern for generalizability. The IHC limitations (C104) and lack of standardization (C105) are legitimate methodological concerns that could affect clinical translation of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "06c70993-3fbb-470f-a4da-96cf5e49ed3d",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DLBCL is the predominant malignant B-cell lymphoma (30% of non-Hodgkin lymphomas) with established molecular subtypes (GCB, ABC, unclassified). Despite R-CHOP therapy achieving 60% long-term remission, 30% of patients relapse with poor outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide well-established background information about DLBCL epidemiology, classification, and treatment outcomes, all supported by appropriate citations to the literature. These claims establish the clinical context and rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "b06c3917-9542-4925-a368-138a99275711",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The DLBCL tumor microenvironment contains diverse immune and stromal cell populations. Prior studies have shown that higher extracellular matrix, stromal scores, and fibrotic TME are associated with favorable prognosis, while increased vascular density correlates with poor prognosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14 summarize established knowledge about the DLBCL microenvironment and its prognostic significance, all supported by appropriate citations. These claims provide the scientific rationale for investigating tumor purity and stromal components in DLBCL.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "8f51ae44-d2f6-4061-8ff1-396f41a8c5c7",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tumor purity quantifies the ratio of tumor cells to stromal components, with higher purity indicating lower stromal abundance. Tumor purity is associated with prognosis across different tumor types with varying strength of association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 define tumor purity and its prognostic relevance, supported by appropriate citations. These claims establish the conceptual framework for using tumor purity as an analytical approach in DLBCL.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "VCAN (versican) is an extracellular matrix component existing in multiple isoforms. Its function varies by cell type: myeloid cell expression induces immunosuppression while stromal expression promotes inflammation. VCAN has been associated with poor prognosis in gastric cancer and immune checkpoint expression in hepatocellular carcinoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 provide comprehensive background on VCAN biology from the literature, all supported by appropriate citations. These claims establish the biological plausibility for VCAN's role in DLBCL and contextualize the novel finding that VCAN associates with favorable prognosis in DLBCL, contrasting with other cancers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d67c4614-b135-4506-89a4-0aa52aef0e35",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "C1QB is a component of C1q, an extracellular matrix protein synthesized in the TME. High C1q/C1QB expression has been associated with poor prognosis in multiple cancers, positive correlation with CD8+ T cell infiltration and PD-L1 expression, and promotion of tumor cell proliferation and invasion in melanoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 comprehensively review C1QB biology and its roles in various cancers, all supported by appropriate citations. These claims provide biological context for C1QB's adverse prognostic role in DLBCL and its relationship with immune cell infiltration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "5396727b-dd10-43c4-b876-5e8794928b8f",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CD3G is a TCR/CD3 complex member crucial for T cell activation and antigen recognition coupling. CD3G has been associated with favorable prognosis in breast invasive carcinoma and head and neck squamous cell carcinoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 provide background on CD3G function and prognostic associations in other cancers, all supported by appropriate citations. These claims establish CD3G as a T cell marker and provide precedent for its favorable prognostic role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "dc619697-fdfb-4778-862c-3ce9d4053e56",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Macrophages are classified as M1 (anti-tumor) or M2 (pro-tumor). Low CD68+ macrophage infiltration has been associated with poor prognosis. In DLBCL, CD8+ T cells express elevated inhibitory molecules (PD-1, PD-L1, TIM3), with high TIM3 expression associated with poor outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C74 provide established knowledge about macrophage biology and T cell exhaustion in DLBCL, all supported by appropriate citations. These claims contextualize the immune cell findings and the apparent paradox of CD8+ T cells associating with favorable prognosis despite expressing exhaustion markers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "b4356c27-79de-42d1-a19c-3c008dcf09b6",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "VCAN can modulate immune infiltration by reducing immunosuppressive phenotypes. The authors hypothesize that high VCAN expression might create a suppressive environment for PD-1+ CD8+ T cells in DLBCL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 cites literature support for VCAN's immunomodulatory potential, but C76 is explicitly presented as a hypothesis without direct experimental validation. The proposed mechanism for how VCAN influences CD8+ T cell function in DLBCL remains speculative and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "acaba671-d8ea-4019-8a17-1c132abdde8a",
+      "content_id": "bd985f0e-bff7-4486-a62a-ec0d3019b2c3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The study utilized GSE53786 and GSE32918 datasets from GEO, assessed tumor purity using the ESTIMATE algorithm, and validated findings in 190 DLBCL patients from CHCAMS (2010-2020) using IHC for VCAN, CD3G (T cell marker), C1QB, CD68 (macrophage marker), CD4, and CD8. Drug sensitivity was predicted using oncoPredict with GDSC data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C87 describe the study design, data sources, and methodological approaches. The methods are clearly described with appropriate citations for algorithms and tools. The combination of public datasets and independent validation cohort strengthens the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "e53e4e4f-4a0d-4a87-a8db-5b4dabf62168",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors used the ESTIMATE algorithm to assess tumor purity in DLBCL, finding it ranged from 17.2 to 67.4% in the GSE53786 dataset, and that patients with high tumor purity had lower overall survival rates than those with low tumor purity (p=0.025).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raises a critical methodological concern that 'C1QB is included in the stromal signature of the ESTIMATE algorithm meaning that, by definition, it will be correlated with tumor purity in that setting.' This indicates the tumor purity measurement may be confounded by the algorithm's design. Additionally, Reviewer 1 notes 'it is therefore expected that tumor purity measured by the ESTIMATE algorithm will correlate with the expression of multiple genes,' suggesting the findings may be circular rather than biologically meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "5d2e9fae-4ee0-482a-9141-f851d77b725f",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors identified 642 tumor purity-related genes (TPGs) in DLBCL using correlation thresholds of |r|\u22650.5 and p<0.05, with 31 genes positively correlated and 611 genes negatively correlated with tumor purity. These TPGs were mainly associated with extracellular matrix organization and immune response.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not directly challenge the gene identification methodology, Reviewer 1's concern about the ESTIMATE algorithm's inherent correlation with gene expression ('It is therefore expected that tumor purity measured by the ESTIMATE algorithm will correlate with the expression of multiple genes') casts doubt on whether these correlations represent true biological relationships or methodological artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "044b06ba-da4e-4278-9070-7d1ee33385e4",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors identified nine intersection genes (including VCAN, CD3G, and C1QB) between PPI hub genes and prognostic TPGs. They found that VCAN and CD3G were correlated with good prognosis while C1QB was correlated with poor prognosis, and concluded these three key genes influenced tumor purity and could impact drug sensitivity and prognosis of DLBCL patients.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 identifies a logical inconsistency: 'high tumor purity is associated with worse prognosis. Later in the manuscript, it is also shown that C1QB expression is associated with worse prognosis. However, figure 2A shows that C1QB is associated with decreased tumor purity. It therefore makes it less likely that the prognostic role of C1QB expression is related to its impact on tumor purity.' This suggests the mechanistic link between these genes, tumor purity, and prognosis is not well-established. Reviewer 1 also notes the evidence is 'correlative in nature and not sufficient to draw this conclusion.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors constructed a riskScore model based on VCAN, CD3G, and C1QB expression that showed strong prognostic significance, with high-risk groups having significantly lower OS rates (p<0.001), AUC values of 0.73-0.77 for 1-5 year predictions, and the riskScore being an independent prognostic factor (p=0.002, HR=1.474). The riskScore was positively correlated with tumor purity (R=0.376).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers acknowledge the strong prognostic significance of the risk scoring system. Reviewer 1 states 'The two strengths of the study are its relatively large sample size (n = 190) and the strong prognostic significance of the risk scoring system.' The editor notes 'The provided evidence showing an association between worse DLBLC prognosis and high-risk score is solid.' However, Reviewer 1 notes that 'the correlation between the risk score and tumor purity is significant but not very strong (R = 0.376),' suggesting other biological factors may be more important.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "f2d79cc2-64da-4f35-b3dd-21109608f444",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors validated their findings using IHC in the CHCAMS cohort (n=190), showing that high expression of VCAN (p=0.003) and high CD3G+ T cell infiltration (p<0.001) were associated with favorable prognosis, while high C1QB expression (p=0.015) was associated with adverse prognosis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly acknowledges this as a strength: 'It is worth noting that the validation of this scoring with IHC, a simple technique already routinely used for the diagnosis and classification of DLBCL, increases the potential for clinical translation.' The editor also notes the study presents 'a predictive scoring system in DLBCL based on the expression of three tumour microenvironment-related genes' that 'seems useful for predicting tumour purity levels in DLBCL.' The IHC validation is not challenged by reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "be906703-b2bb-442e-8a4d-1327a1121be4",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors characterized immune cell infiltration in DLBCL, finding that CD68+ macrophages (17.75\u00b11.05%) were more abundant than CD4+ T cells (0.68\u00b10.20%) and CD8+ T cells (6.69\u00b10.56%). CD68+ macrophages, CD8+ T cells, and CD4+ T cells were all associated with better prognosis. CD3G+ T cell ratio was positively correlated with CD68+ macrophages, CD8+ T cells, and CD4+ T cells. M1 macrophages were more abundant than M2 macrophages.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these immune infiltration findings. Reviewer 1 acknowledges that 'The tumor microenvironment has been extensively studied in DLBCL and a prognostic implication has already been established,' indicating acceptance of this type of analysis. The correlative nature of the study is noted but these specific immune cell characterizations are not disputed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "3f551369-ec8f-49f3-9e28-786b3c7408ad",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors found that the high-risk group had more ABC type DLBCL while the low-risk group had more GCB type DLBCL, and that the high-risk group displayed higher LDH ratio. However, ECOG performance and stage were not significantly associated with the riskScore, though the high-risk group had more Stage III/IV patients.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These clinical-pathological associations are not challenged by reviewers. Reviewer 1 notes the study includes 'Analysis of clinicopathological characteristics' as part of the validation process, implicitly accepting these findings. The lack of association with ECOG and stage is reported transparently by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "fa981d44-0d48-4544-8d80-96cc853c7986",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors predicted drug sensitivity using the riskScore model, identifying that high-risk patients could be sensitive to Carmustine, Cytarabine, Oxaliplatin, Vorinostat, and Bortezomib based on intersection analysis of predictions from both GSE53786 and GSE32918 datasets.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Both reviewers express significant concerns about the drug sensitivity findings. The editor states 'it is incomplete to draw a clear conclusion about the links between risk score and drug sensitivity.' Reviewer 1 is more specific: 'Although the difference in sensitivity between tumors with low and high risk scores show statistical significance for certain drugs, the absolute difference appears small in most cases and is of unclear biological significance. In addition, even though the risk score is statistically related to drug sensitivity, there is no direct evidence that the differences in drug sensitivity are directly related to tumor purity.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "425d702b-1623-4678-aeaa-3ce49063a38e",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors found that CD3G+ T cell ratio was higher in DLBCL originating from groin and testis, while VCAN featured higher expression in lymph node-originated DLBCL.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These anatomical site-specific findings are not challenged by reviewers and appear to be accepted as part of the descriptive characterization of the cohort.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "bea232a5-bffe-46a4-a050-1d549ef133fd",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors conclude that VCAN, CD3G, and C1QB play important roles in the microenvironment of DLBCL, possibly regulating immune infiltration via modulating extracellular organization and cellular interaction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 explicitly states 'the correlative nature of the study limits the conclusions that can be drawn in regards to links between the risk scoring system, the tumor microenvironment, and the biology of DLBCL.' The mechanistic interpretation is challenged: 'The prognostic impact could be related to different patterns of immune cell infiltration, as shown later. However, the evidence presented in the study is correlative and nature and not sufficient to draw this conclusion.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "9a11942b-f6ce-4345-814d-6a04c911b0f4",
+      "content_id": "beebfafe-fa1d-43c9-8fb9-1e1bc99745d9",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors acknowledge limitations including single-center patient recruitment potentially introducing biases, potential limitations of IHC methodology for assessing protein expression, and lack of standardized coefficients for calculating a final prognostic index due to variability in IHC interpretation across centers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are author-acknowledged limitations that reviewers do not dispute. Reviewer 1 notes that despite IHC limitations, 'the validation of this scoring with IHC, a simple technique already routinely used for the diagnosis and classification of DLBCL, increases the potential for clinical translation,' suggesting the limitations are acceptable in context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4408d15e-e503-4278-a67d-dd7abc7b4312",
+      "result_id": "6eb1f096-93e3-4566-9c3f-8c64a9765824"
+    },
+    {
+      "claim_id": "2f7d9102-ae3e-4e4b-8fc4-1577445ff744",
+      "result_id": "6eb1f096-93e3-4566-9c3f-8c64a9765824"
+    },
+    {
+      "claim_id": "191e7a81-9223-41f8-8377-65fef159e274",
+      "result_id": "6eb1f096-93e3-4566-9c3f-8c64a9765824"
+    },
+    {
+      "claim_id": "a0d91283-617c-4fb5-a84f-eaba547ac376",
+      "result_id": "6eb1f096-93e3-4566-9c3f-8c64a9765824"
+    },
+    {
+      "claim_id": "e9016dc5-5280-491d-88a4-75adbd504f02",
+      "result_id": "6eb1f096-93e3-4566-9c3f-8c64a9765824"
+    },
+    {
+      "claim_id": "82865506-019d-4d87-8326-0c1d08dd28b3",
+      "result_id": "71f1ee98-7a92-4530-ab69-399388420aef"
+    },
+    {
+      "claim_id": "9b589123-1bc2-4e79-b010-e22cf2e7c391",
+      "result_id": "71f1ee98-7a92-4530-ab69-399388420aef"
+    },
+    {
+      "claim_id": "87dbdf45-e630-4627-bb2e-dd238c9d9819",
+      "result_id": "71f1ee98-7a92-4530-ab69-399388420aef"
+    },
+    {
+      "claim_id": "593a7d6e-ea86-4d33-8360-1a6dc87fe686",
+      "result_id": "71f1ee98-7a92-4530-ab69-399388420aef"
+    },
+    {
+      "claim_id": "aa4dbdf7-1703-4c45-8bea-e70c938711d1",
+      "result_id": "71f1ee98-7a92-4530-ab69-399388420aef"
+    },
+    {
+      "claim_id": "ffd2eceb-68e4-4b27-bcb2-c37344470a37",
+      "result_id": "71f1ee98-7a92-4530-ab69-399388420aef"
+    },
+    {
+      "claim_id": "bb9eccfa-a7e0-4317-8354-4f0f1114797c",
+      "result_id": "dc95a720-1dc8-4176-b795-bb0e948220a1"
+    },
+    {
+      "claim_id": "ea69dd4c-4407-4f1f-bf34-53f23614cb0e",
+      "result_id": "dc95a720-1dc8-4176-b795-bb0e948220a1"
+    },
+    {
+      "claim_id": "2bb7b9f3-e938-4b24-83d2-357843cd5dfa",
+      "result_id": "dc95a720-1dc8-4176-b795-bb0e948220a1"
+    },
+    {
+      "claim_id": "75615a41-ce3b-4446-a089-ed1584f824b8",
+      "result_id": "dc95a720-1dc8-4176-b795-bb0e948220a1"
+    },
+    {
+      "claim_id": "0045e007-b00f-439b-bb8e-1db9522fb88f",
+      "result_id": "dc95a720-1dc8-4176-b795-bb0e948220a1"
+    },
+    {
+      "claim_id": "18a6870f-3965-4b7a-bc23-ebf9ee27d585",
+      "result_id": "dc95a720-1dc8-4176-b795-bb0e948220a1"
+    },
+    {
+      "claim_id": "b3cdb1e4-101a-465d-9b0c-d558c59f94fc",
+      "result_id": "a2ba1899-439f-4fa2-a554-cd2660249c94"
+    },
+    {
+      "claim_id": "7a5485e5-6953-4635-a111-fd067337dc7e",
+      "result_id": "a2ba1899-439f-4fa2-a554-cd2660249c94"
+    },
+    {
+      "claim_id": "d1dde147-ecb7-4b87-a756-a3c537f80190",
+      "result_id": "a2ba1899-439f-4fa2-a554-cd2660249c94"
+    },
+    {
+      "claim_id": "b86b5a36-fc2b-4f7a-a821-cf0519b2aa13",
+      "result_id": "750bc5a2-f5f0-45c6-884e-406dfc4065f8"
+    },
+    {
+      "claim_id": "4436bba2-9357-4988-9006-8614cff59382",
+      "result_id": "750bc5a2-f5f0-45c6-884e-406dfc4065f8"
+    },
+    {
+      "claim_id": "d8cd8e57-edce-4936-830c-ffd3daf3c194",
+      "result_id": "750bc5a2-f5f0-45c6-884e-406dfc4065f8"
+    },
+    {
+      "claim_id": "9ffa6b55-5392-49cf-9191-c66493f2bbe6",
+      "result_id": "750bc5a2-f5f0-45c6-884e-406dfc4065f8"
+    },
+    {
+      "claim_id": "5d8b6ebd-0581-4daa-b1ed-5cbbe6f0401f",
+      "result_id": "750bc5a2-f5f0-45c6-884e-406dfc4065f8"
+    },
+    {
+      "claim_id": "9d73eb40-c962-4f78-be72-a78e050e2ade",
+      "result_id": "750bc5a2-f5f0-45c6-884e-406dfc4065f8"
+    },
+    {
+      "claim_id": "ea7b03a6-1f2c-4cf6-9c6c-5797695290c6",
+      "result_id": "c2660a02-21ea-4176-b371-92ce41c01bfc"
+    },
+    {
+      "claim_id": "77a835a0-8882-4fbf-a595-3017769bfb6c",
+      "result_id": "c2660a02-21ea-4176-b371-92ce41c01bfc"
+    },
+    {
+      "claim_id": "af21faff-56c2-402b-87f3-3f4e3e4f5953",
+      "result_id": "c2660a02-21ea-4176-b371-92ce41c01bfc"
+    },
+    {
+      "claim_id": "8432774d-10a8-489b-8e45-d80ca95b517f",
+      "result_id": "c2660a02-21ea-4176-b371-92ce41c01bfc"
+    },
+    {
+      "claim_id": "2466db5d-57c7-4f45-b491-5ba73882a663",
+      "result_id": "776fec2d-d44b-49be-afb0-e8df2166509e"
+    },
+    {
+      "claim_id": "91e103a1-764b-4c03-b976-cdb5f802e742",
+      "result_id": "776fec2d-d44b-49be-afb0-e8df2166509e"
+    },
+    {
+      "claim_id": "149abee1-ba63-4f00-bb36-e665365a1fdd",
+      "result_id": "776fec2d-d44b-49be-afb0-e8df2166509e"
+    },
+    {
+      "claim_id": "ca47798d-b0fb-4376-9405-29beb732ff1f",
+      "result_id": "776fec2d-d44b-49be-afb0-e8df2166509e"
+    },
+    {
+      "claim_id": "a4ea7f52-978d-4f4e-89fa-6f03e3c0d96e",
+      "result_id": "d55d11ca-3fd0-4bc2-aa08-4e0a444bc474"
+    },
+    {
+      "claim_id": "1a226f85-a0c4-4495-8299-6d42a84bce60",
+      "result_id": "d55d11ca-3fd0-4bc2-aa08-4e0a444bc474"
+    },
+    {
+      "claim_id": "0718d5c9-d991-4d84-86ba-00680bae3da5",
+      "result_id": "d55d11ca-3fd0-4bc2-aa08-4e0a444bc474"
+    },
+    {
+      "claim_id": "54b8f102-7001-4979-8ce7-ea8e5ca31397",
+      "result_id": "7215e33c-b1de-4241-ad82-ff444141696f"
+    },
+    {
+      "claim_id": "33c89552-1f69-41c5-82f6-ab0480e90a44",
+      "result_id": "7215e33c-b1de-4241-ad82-ff444141696f"
+    },
+    {
+      "claim_id": "582552c7-7e11-49fa-9b96-e0f88b8d4175",
+      "result_id": "7215e33c-b1de-4241-ad82-ff444141696f"
+    },
+    {
+      "claim_id": "f31be599-1e85-4672-89f1-0c55cdfb7df8",
+      "result_id": "4b40cdfc-50c7-4e7c-b6dc-44bcdecb9aa3"
+    },
+    {
+      "claim_id": "43c8a808-65d6-457b-a64d-55609c5c2812",
+      "result_id": "4b40cdfc-50c7-4e7c-b6dc-44bcdecb9aa3"
+    },
+    {
+      "claim_id": "2f8207af-4676-4a46-8c8c-19eeff3c5405",
+      "result_id": "4b40cdfc-50c7-4e7c-b6dc-44bcdecb9aa3"
+    },
+    {
+      "claim_id": "4bd2fc45-d3bd-4b54-bd1a-df251eb51129",
+      "result_id": "4b40cdfc-50c7-4e7c-b6dc-44bcdecb9aa3"
+    },
+    {
+      "claim_id": "520ed07f-b9dd-4bb6-906f-26aa7b77c872",
+      "result_id": "124de834-bc1d-472f-a86a-e3dbe0f6880e"
+    },
+    {
+      "claim_id": "9a13488a-59b4-46e5-a578-448440dcf912",
+      "result_id": "124de834-bc1d-472f-a86a-e3dbe0f6880e"
+    },
+    {
+      "claim_id": "ea071fa7-4a90-482d-873f-a10d1fe033f2",
+      "result_id": "124de834-bc1d-472f-a86a-e3dbe0f6880e"
+    },
+    {
+      "claim_id": "d3d22a75-182e-441c-8ced-86b27cd68736",
+      "result_id": "06c70993-3fbb-470f-a4da-96cf5e49ed3d"
+    },
+    {
+      "claim_id": "299aefdd-0baa-4db6-a17e-b7590372be54",
+      "result_id": "06c70993-3fbb-470f-a4da-96cf5e49ed3d"
+    },
+    {
+      "claim_id": "ccd723eb-2b63-4856-93cf-9ee78aaddd8c",
+      "result_id": "06c70993-3fbb-470f-a4da-96cf5e49ed3d"
+    },
+    {
+      "claim_id": "20c0c529-2c83-4a67-831a-1d169d1a5277",
+      "result_id": "06c70993-3fbb-470f-a4da-96cf5e49ed3d"
+    },
+    {
+      "claim_id": "308f805a-f910-4ba8-8b01-9fc1f85b4333",
+      "result_id": "06c70993-3fbb-470f-a4da-96cf5e49ed3d"
+    },
+    {
+      "claim_id": "d9ca1767-88f8-4645-9588-7416b1954426",
+      "result_id": "06c70993-3fbb-470f-a4da-96cf5e49ed3d"
+    },
+    {
+      "claim_id": "53f43214-a0c7-454a-a24c-e698085c41e3",
+      "result_id": "b06c3917-9542-4925-a368-138a99275711"
+    },
+    {
+      "claim_id": "e3559046-9ba2-4efe-a267-2e98853b87e4",
+      "result_id": "b06c3917-9542-4925-a368-138a99275711"
+    },
+    {
+      "claim_id": "19b77677-52f0-48a6-8e2b-0773196367af",
+      "result_id": "b06c3917-9542-4925-a368-138a99275711"
+    },
+    {
+      "claim_id": "c921cddb-5544-46e0-9274-f0f19afc25cf",
+      "result_id": "b06c3917-9542-4925-a368-138a99275711"
+    },
+    {
+      "claim_id": "4d156b53-02cd-4b49-b3f2-fd59fa4160a0",
+      "result_id": "b06c3917-9542-4925-a368-138a99275711"
+    },
+    {
+      "claim_id": "9478d599-c609-4865-a356-28df2eeba595",
+      "result_id": "b06c3917-9542-4925-a368-138a99275711"
+    },
+    {
+      "claim_id": "54749abb-b280-4c7d-a4e8-9541d877384a",
+      "result_id": "b06c3917-9542-4925-a368-138a99275711"
+    },
+    {
+      "claim_id": "afa9e602-3414-4100-b1a8-54e4d475aa5f",
+      "result_id": "b06c3917-9542-4925-a368-138a99275711"
+    },
+    {
+      "claim_id": "c61a431b-593e-4166-b02a-424867d1b15c",
+      "result_id": "8f51ae44-d2f6-4061-8ff1-396f41a8c5c7"
+    },
+    {
+      "claim_id": "a05a0d23-5a3e-4b2a-944b-37c889250832",
+      "result_id": "8f51ae44-d2f6-4061-8ff1-396f41a8c5c7"
+    },
+    {
+      "claim_id": "cbfccd40-85dd-43a8-b37b-fce60f1f72eb",
+      "result_id": "8f51ae44-d2f6-4061-8ff1-396f41a8c5c7"
+    },
+    {
+      "claim_id": "00567cc8-c929-45ae-ac80-2650a642bd7e",
+      "result_id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95"
+    },
+    {
+      "claim_id": "02aeaf77-fca6-406d-bdeb-1d870a9b8bca",
+      "result_id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95"
+    },
+    {
+      "claim_id": "fbdf1577-ff2e-4a06-9287-bba6241b173f",
+      "result_id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95"
+    },
+    {
+      "claim_id": "f9e16470-43d0-4312-ac34-4d499566d61a",
+      "result_id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95"
+    },
+    {
+      "claim_id": "d90982ea-0794-407c-9649-75d5e47baeb5",
+      "result_id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95"
+    },
+    {
+      "claim_id": "1d3b4ab9-058c-41a6-a480-512ca5c103b2",
+      "result_id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95"
+    },
+    {
+      "claim_id": "26b214f3-3c19-41b2-8626-9e20d71edfbf",
+      "result_id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95"
+    },
+    {
+      "claim_id": "af279b08-c706-4da2-ae15-f1947ce0a43c",
+      "result_id": "d67c4614-b135-4506-89a4-0aa52aef0e35"
+    },
+    {
+      "claim_id": "2177d0e2-d988-4ccf-b8c6-34d8e5aee34e",
+      "result_id": "d67c4614-b135-4506-89a4-0aa52aef0e35"
+    },
+    {
+      "claim_id": "54316664-c8f9-49dd-94be-e69ebff18701",
+      "result_id": "d67c4614-b135-4506-89a4-0aa52aef0e35"
+    },
+    {
+      "claim_id": "22d6e468-1d06-4ecf-b32b-7de67dc6c405",
+      "result_id": "d67c4614-b135-4506-89a4-0aa52aef0e35"
+    },
+    {
+      "claim_id": "8f32721d-f5c4-4ac9-aa2e-3173354559c9",
+      "result_id": "d67c4614-b135-4506-89a4-0aa52aef0e35"
+    },
+    {
+      "claim_id": "6293c3a7-16f5-4c93-ad7c-7ba9aa4be1b3",
+      "result_id": "d67c4614-b135-4506-89a4-0aa52aef0e35"
+    },
+    {
+      "claim_id": "61d76842-6675-4199-8518-fddd249033f2",
+      "result_id": "5396727b-dd10-43c4-b876-5e8794928b8f"
+    },
+    {
+      "claim_id": "7755e1eb-056c-4b19-8f3d-a5ba0576487f",
+      "result_id": "5396727b-dd10-43c4-b876-5e8794928b8f"
+    },
+    {
+      "claim_id": "955815ad-af16-4a30-9531-28492f9e5d9d",
+      "result_id": "5396727b-dd10-43c4-b876-5e8794928b8f"
+    },
+    {
+      "claim_id": "f39435f6-6f97-4bfa-9c88-087af146dfa8",
+      "result_id": "5396727b-dd10-43c4-b876-5e8794928b8f"
+    },
+    {
+      "claim_id": "19285bf2-dd4c-4d0a-869b-55d649250a61",
+      "result_id": "5396727b-dd10-43c4-b876-5e8794928b8f"
+    },
+    {
+      "claim_id": "2fcb5a34-5ba5-463e-aef9-13ea0c504f36",
+      "result_id": "dc619697-fdfb-4778-862c-3ce9d4053e56"
+    },
+    {
+      "claim_id": "2b4acdd3-6db8-4f7d-b846-27d232123dc4",
+      "result_id": "dc619697-fdfb-4778-862c-3ce9d4053e56"
+    },
+    {
+      "claim_id": "9ca883b1-ebef-4e4a-800d-9003106c5ec6",
+      "result_id": "dc619697-fdfb-4778-862c-3ce9d4053e56"
+    },
+    {
+      "claim_id": "d8f37d98-8445-45a1-8618-55d23814a411",
+      "result_id": "dc619697-fdfb-4778-862c-3ce9d4053e56"
+    },
+    {
+      "claim_id": "bf7db2a9-2e61-469a-8bc8-4109830322b2",
+      "result_id": "dc619697-fdfb-4778-862c-3ce9d4053e56"
+    },
+    {
+      "claim_id": "89e7f5b9-e6ed-4f1b-9e46-8c4c0434a65f",
+      "result_id": "dc619697-fdfb-4778-862c-3ce9d4053e56"
+    },
+    {
+      "claim_id": "85c52166-265b-4d98-a85d-0a5cdd4ea245",
+      "result_id": "b4356c27-79de-42d1-a19c-3c008dcf09b6"
+    },
+    {
+      "claim_id": "70f07e34-ab90-4135-b601-51a299af7e1c",
+      "result_id": "b4356c27-79de-42d1-a19c-3c008dcf09b6"
+    },
+    {
+      "claim_id": "60bf6b1a-e115-4fc6-93ce-4a12097de668",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "808ddd3d-6809-4c46-8f62-1e792ecb2bba",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "0ae63efb-77e1-41ea-b974-b70b5a5718af",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "58a0d187-ab77-41b9-bfed-f77aebd8cdcd",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "12895174-50b0-46bb-9c04-b41405d4255f",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "1f05f441-ae91-4c5f-b97e-6cc7743a940c",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "de7eb808-ecbe-459e-a207-59aeb7aa854d",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "25d1c528-9465-49af-a2bd-d10ff147a2f7",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "c3a77bde-3306-4dd4-a479-acf60261ae82",
+      "result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a"
+    },
+    {
+      "claim_id": "2f7d9102-ae3e-4e4b-8fc4-1577445ff744",
+      "result_id": "e53e4e4f-4a0d-4a87-a8db-5b4dabf62168"
+    },
+    {
+      "claim_id": "191e7a81-9223-41f8-8377-65fef159e274",
+      "result_id": "e53e4e4f-4a0d-4a87-a8db-5b4dabf62168"
+    },
+    {
+      "claim_id": "0ae63efb-77e1-41ea-b974-b70b5a5718af",
+      "result_id": "e53e4e4f-4a0d-4a87-a8db-5b4dabf62168"
+    },
+    {
+      "claim_id": "4408d15e-e503-4278-a67d-dd7abc7b4312",
+      "result_id": "5d2e9fae-4ee0-482a-9141-f851d77b725f"
+    },
+    {
+      "claim_id": "a0d91283-617c-4fb5-a84f-eaba547ac376",
+      "result_id": "5d2e9fae-4ee0-482a-9141-f851d77b725f"
+    },
+    {
+      "claim_id": "e9016dc5-5280-491d-88a4-75adbd504f02",
+      "result_id": "5d2e9fae-4ee0-482a-9141-f851d77b725f"
+    },
+    {
+      "claim_id": "82865506-019d-4d87-8326-0c1d08dd28b3",
+      "result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4"
+    },
+    {
+      "claim_id": "9b589123-1bc2-4e79-b010-e22cf2e7c391",
+      "result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4"
+    },
+    {
+      "claim_id": "87dbdf45-e630-4627-bb2e-dd238c9d9819",
+      "result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4"
+    },
+    {
+      "claim_id": "43c8a808-65d6-457b-a64d-55609c5c2812",
+      "result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4"
+    },
+    {
+      "claim_id": "2f8207af-4676-4a46-8c8c-19eeff3c5405",
+      "result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4"
+    },
+    {
+      "claim_id": "cd1b9a27-ae9b-41a0-b7ba-acbd4de5324b",
+      "result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4"
+    },
+    {
+      "claim_id": "7eb70a7b-1f91-4c18-869f-e22bd1318c4c",
+      "result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4"
+    },
+    {
+      "claim_id": "bb9eccfa-a7e0-4317-8354-4f0f1114797c",
+      "result_id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6"
+    },
+    {
+      "claim_id": "ea69dd4c-4407-4f1f-bf34-53f23614cb0e",
+      "result_id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6"
+    },
+    {
+      "claim_id": "2bb7b9f3-e938-4b24-83d2-357843cd5dfa",
+      "result_id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6"
+    },
+    {
+      "claim_id": "75615a41-ce3b-4446-a089-ed1584f824b8",
+      "result_id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6"
+    },
+    {
+      "claim_id": "0045e007-b00f-439b-bb8e-1db9522fb88f",
+      "result_id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6"
+    },
+    {
+      "claim_id": "18a6870f-3965-4b7a-bc23-ebf9ee27d585",
+      "result_id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6"
+    },
+    {
+      "claim_id": "dc4f803e-5a65-4b18-b657-5fedf98fe04e",
+      "result_id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6"
+    },
+    {
+      "claim_id": "b3cdb1e4-101a-465d-9b0c-d558c59f94fc",
+      "result_id": "f2d79cc2-64da-4f35-b3dd-21109608f444"
+    },
+    {
+      "claim_id": "7a5485e5-6953-4635-a111-fd067337dc7e",
+      "result_id": "f2d79cc2-64da-4f35-b3dd-21109608f444"
+    },
+    {
+      "claim_id": "d1dde147-ecb7-4b87-a756-a3c537f80190",
+      "result_id": "f2d79cc2-64da-4f35-b3dd-21109608f444"
+    },
+    {
+      "claim_id": "b86b5a36-fc2b-4f7a-a821-cf0519b2aa13",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "4436bba2-9357-4988-9006-8614cff59382",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "d8cd8e57-edce-4936-830c-ffd3daf3c194",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "9ffa6b55-5392-49cf-9191-c66493f2bbe6",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "5d8b6ebd-0581-4daa-b1ed-5cbbe6f0401f",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "9d73eb40-c962-4f78-be72-a78e050e2ade",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "ea7b03a6-1f2c-4cf6-9c6c-5797695290c6",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "77a835a0-8882-4fbf-a595-3017769bfb6c",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "af21faff-56c2-402b-87f3-3f4e3e4f5953",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "54b8f102-7001-4979-8ce7-ea8e5ca31397",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "97730e15-21db-4a00-9e2b-a09d4ca1742e",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "8432774d-10a8-489b-8e45-d80ca95b517f",
+      "result_id": "be906703-b2bb-442e-8a4d-1327a1121be4"
+    },
+    {
+      "claim_id": "2466db5d-57c7-4f45-b491-5ba73882a663",
+      "result_id": "3f551369-ec8f-49f3-9e28-786b3c7408ad"
+    },
+    {
+      "claim_id": "91e103a1-764b-4c03-b976-cdb5f802e742",
+      "result_id": "3f551369-ec8f-49f3-9e28-786b3c7408ad"
+    },
+    {
+      "claim_id": "149abee1-ba63-4f00-bb36-e665365a1fdd",
+      "result_id": "3f551369-ec8f-49f3-9e28-786b3c7408ad"
+    },
+    {
+      "claim_id": "ca47798d-b0fb-4376-9405-29beb732ff1f",
+      "result_id": "3f551369-ec8f-49f3-9e28-786b3c7408ad"
+    },
+    {
+      "claim_id": "a4ea7f52-978d-4f4e-89fa-6f03e3c0d96e",
+      "result_id": "fa981d44-0d48-4544-8d80-96cc853c7986"
+    },
+    {
+      "claim_id": "1a226f85-a0c4-4495-8299-6d42a84bce60",
+      "result_id": "fa981d44-0d48-4544-8d80-96cc853c7986"
+    },
+    {
+      "claim_id": "0718d5c9-d991-4d84-86ba-00680bae3da5",
+      "result_id": "fa981d44-0d48-4544-8d80-96cc853c7986"
+    },
+    {
+      "claim_id": "33c89552-1f69-41c5-82f6-ab0480e90a44",
+      "result_id": "425d702b-1623-4678-aeaa-3ce49063a38e"
+    },
+    {
+      "claim_id": "582552c7-7e11-49fa-9b96-e0f88b8d4175",
+      "result_id": "425d702b-1623-4678-aeaa-3ce49063a38e"
+    },
+    {
+      "claim_id": "f31be599-1e85-4672-89f1-0c55cdfb7df8",
+      "result_id": "bea232a5-bffe-46a4-a050-1d549ef133fd"
+    },
+    {
+      "claim_id": "520ed07f-b9dd-4bb6-906f-26aa7b77c872",
+      "result_id": "9a11942b-f6ce-4345-814d-6a04c911b0f4"
+    },
+    {
+      "claim_id": "9a13488a-59b4-46e5-a578-448440dcf912",
+      "result_id": "9a11942b-f6ce-4345-814d-6a04c911b0f4"
+    },
+    {
+      "claim_id": "ea071fa7-4a90-482d-873f-a10d1fe033f2",
+      "result_id": "9a11942b-f6ce-4345-814d-6a04c911b0f4"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "42591823-3e19-44b7-ae79-9e86366ead65",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a2ba1899-439f-4fa2-a554-cd2660249c94",
+      "peer_result_id": "f2d79cc2-64da-4f35-b3dd-21109608f444",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on IHC validation claims (C33-C35). Both evaluations find the IHC validation of the three key genes to be well-supported. OpenEval emphasizes statistical significance and directional consistency, while peer reviewers explicitly acknowledge this as a strength for clinical translation potential.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "875a6444-c057-466e-a0ce-b121dbb6ea20",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "776fec2d-d44b-49be-afb0-e8df2166509e",
+      "peer_result_id": "3f551369-ec8f-49f3-9e28-786b3c7408ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on clinical-pathological associations (C29-C30, C100-C101). Both evaluations support these findings. OpenEval notes appropriate interpretation of negative results for stage/ECOG, and peer reviewers accept these associations without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "f8cb11dd-74d3-4702-aba6-f1ed9f8f2962",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "d55d11ca-3fd0-4bc2-aa08-4e0a444bc474",
+      "peer_result_id": "fa981d44-0d48-4544-8d80-96cc853c7986",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Strong disagreement on drug sensitivity predictions (C48-C50). OpenEval rates as UNCERTAIN due to lack of experimental validation, while peer reviewers rate as UNSUPPORTED, citing small absolute differences of unclear biological significance and lack of direct evidence linking differences to tumor purity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "b650325b-af13-475f-8d73-b2c921aee6b8",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "124de834-bc1d-472f-a86a-e3dbe0f6880e",
+      "peer_result_id": "9a11942b-f6ce-4345-814d-6a04c911b0f4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on study limitations (C103-C105). Both evaluations support the authors' acknowledgment of single-center recruitment, IHC limitations, and lack of standardization as legitimate concerns, though peer reviewers note these are acceptable in context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "631b3d4a-7ec8-4e51-b24a-2f2d6caef13d",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "dc95a720-1dc8-4176-b795-bb0e948220a1",
+      "peer_result_id": "1e956921-7051-4f53-8c2f-3e81ccc49fd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on risk scoring model performance (C25-C28, C31-C32). Both evaluations support the statistical significance and prognostic value. OpenEval emphasizes robust model performance, while peer reviewers acknowledge strong prognostic significance as a study strength, though note the correlation with tumor purity is modest (R=0.376).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "a3c80fde-8c7b-46d8-8963-9d1186212a8e",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "7215e33c-b1de-4241-ad82-ff444141696f",
+      "peer_result_id": "425d702b-1623-4678-aeaa-3ce49063a38e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on anatomical site-specific findings (C46-C47). OpenEval supports these claims with statistical significance noted, and peer reviewers accept these findings without challenge as part of descriptive characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "59e532b8-f777-4f64-85f2-c4edf8863011",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "6eb1f096-93e3-4566-9c3f-8c64a9765824",
+      "peer_result_id": "5d2e9fae-4ee0-482a-9141-f851d77b725f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on TPG identification methodology (C18, C21, C80). OpenEval finds converging evidence well-supported with clear statistical thresholds. Peer reviewers rate as UNCERTAIN, questioning whether correlations represent true biological relationships or methodological artifacts due to ESTIMATE algorithm design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "e499c85b-f398-45ac-90e4-00817236db6c",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "6eb1f096-93e3-4566-9c3f-8c64a9765824",
+      "peer_result_id": "e53e4e4f-4a0d-4a87-a8db-5b4dabf62168",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on tumor purity correlations (C19-C20). OpenEval supports these findings as part of converging evidence. Peer reviewers rate as UNCERTAIN, raising critical concern that C1QB is included in ESTIMATE's stromal signature, creating circular/confounded measurements by definition.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "3f8e6926-6872-46fb-962c-0aab5b9e0a88",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "750bc5a2-f5f0-45c6-884e-406dfc4065f8",
+      "peer_result_id": "be906703-b2bb-442e-8a4d-1327a1121be4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on immune cell characterization (C36-C41). OpenEval supports quantitative characterization with appropriate statistical testing. Peer reviewers accept these immune infiltration findings without challenge, acknowledging that tumor microenvironment analysis is established in DLBCL.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "67f103a1-6582-460e-a4c4-971914a4b37f",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "c2660a02-21ea-4176-b371-92ce41c01bfc",
+      "peer_result_id": "be906703-b2bb-442e-8a4d-1327a1121be4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on correlation patterns (C42-C44, C93). OpenEval supports these correlations providing mechanistic insights, though notes lack of specific coefficients. Peer reviewers accept these findings as part of the correlative analysis without specific challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "2a127b92-dfc6-4eda-bfc1-f46d39aa8545",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "71f1ee98-7a92-4530-ab69-399388420aef",
+      "peer_result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on mechanistic interpretation (C22-C24 vs C88-C91). OpenEval supports the systematic filtering approach as sound methodology. Peer reviewers rate as UNCERTAIN, identifying logical inconsistency: high tumor purity associates with worse prognosis, C1QB associates with worse prognosis, but C1QB associates with decreased tumor purity, making the mechanistic link implausible. Evidence deemed correlative and insufficient.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "e919c01f-fd94-4ae9-91b6-3a3c8784eafd",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "4b40cdfc-50c7-4e7c-b6dc-44bcdecb9aa3",
+      "peer_result_id": "bea232a5-bffe-46a4-a050-1d549ef133fd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on integrative conclusions (C102, C88-C89, C94). OpenEval supports conclusions as well-supported by convergent findings despite speculative mechanisms. Peer reviewers rate as UNCERTAIN, explicitly stating the correlative nature limits conclusions about links between risk scoring, tumor microenvironment, and DLBCL biology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "4550d405-1d20-4c63-bf02-e85b22efe97b",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "4b40cdfc-50c7-4e7c-b6dc-44bcdecb9aa3",
+      "peer_result_id": "044b06ba-da4e-4278-9070-7d1ee33385e4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Related disagreement on mechanistic claims (C88-C89). OpenEval supports these as integrative conclusions from multiple evidence lines. Peer reviewers challenge the mechanistic interpretation as correlative and insufficient, noting the prognostic impact could relate to immune infiltration patterns but evidence doesn't support causal conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "ed11645c-0081-435e-ba22-7d2edfbeaf8c",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "06c70993-3fbb-470f-a4da-96cf5e49ed3d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background claims on DLBCL epidemiology and classification (C1-C6) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these introductory claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "822d85d0-3838-4e24-bdaa-b446f04a987e",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "b06c3917-9542-4925-a368-138a99275711",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background claims on DLBCL microenvironment (C7-C14) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "676b1810-4594-49ca-8b65-d72a0274b7e6",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "8f51ae44-d2f6-4061-8ff1-396f41a8c5c7",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated tumor purity definition claims (C15-C17) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these conceptual framework claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "732f0f32-2611-40f3-a05d-2b2a144a4905",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "decb35fe-972e-450e-8ac8-f2e4b3f47c95",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated VCAN biology background (C51-C57) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these literature review claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d296e5b3-b95e-4831-b64e-29e232e7d09f",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "d67c4614-b135-4506-89a4-0aa52aef0e35",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated C1QB biology background (C58-C63) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these literature review claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "aedc154e-0e3b-4454-950d-9dbdb592afe6",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "5396727b-dd10-43c4-b876-5e8794928b8f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated CD3G background (C64-C68) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these literature review claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "7d2650e3-0fe5-4e3c-869c-7bb6ae459c48",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "dc619697-fdfb-4778-862c-3ce9d4053e56",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated macrophage and T cell biology background (C69-C74) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "d1c7eb6a-b4d6-4f45-aced-380254059d84",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "b4356c27-79de-42d1-a19c-3c008dcf09b6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated VCAN mechanistic hypothesis (C75-C76) as UNCERTAIN, noting C76 is explicitly speculative without experimental validation. No corresponding peer review evaluation found for these mechanistic speculation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    },
+    {
+      "id": "cbdc45be-611f-4ec5-a2d4-94b6872de060",
+      "submission_id": "73b403d7-119f-44bf-bf13-d179c12ce65e",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "acaba671-d8ea-4019-8a17-1c132abdde8a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated study design and methods (C77-C87) as SUPPORTED with clear descriptions and appropriate citations. No corresponding peer review evaluation found for these methodological description claims, though peer reviewers did raise concerns about the ESTIMATE algorithm methodology in other contexts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:43:48.618550Z"
+    }
+  ]
+}

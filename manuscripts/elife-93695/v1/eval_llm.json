@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C33",
+      "C85",
+      "C86",
+      "C87",
+      "C108",
+      "C113",
+      "C114",
+      "C117",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "GPSite is a multi-task network that predicts binding residues for 10 ligand types (DNA, RNA, peptide, protein, ATP, HEM, Zn2+, Ca2+, Mg2+, Mn2+) using sequence embeddings from ProtTrans and predicted structures from ESMFold, without relying on MSA or native structures. The method employs a comprehensive geometric featurizer and edge-enhanced graph neural network on residue graphs to capture both residual and relational geometric contexts in an end-to-end manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C33, C85-C87, C108, C113-C114, C117, C132-C137 collectively describe the architecture and key features of GPSite. The method description is internally consistent and supported by the detailed architectural specifications provided in the Methods section. The claims about independence from MSA and native structures are substantiated by the use of ProtTrans embeddings and ESMFold predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C6"
+    ],
+    "result": "GPSite achieves average AUC values of 0.918 (cross-validation) and 0.921 (independent test), and average AUPR values of 0.603 (cross-validation) and 0.594 (independent test) across 10 ligand types. GPSite substantially outperforms state-of-the-art sequence-based and structure-based methods, with AUPR improvements ranging from 1.7% to 55.4% across different ligand types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 and C6 present quantitative performance metrics supported by experimental data shown in Figure 2 and Appendix tables. The consistent performance between validation and test sets (C36) supports robustness. The comparisons with 24 other methods across multiple benchmarks provide strong evidence for the superiority claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C107",
+      "C112",
+      "C120",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "GPSite demonstrates computational efficiency with feature extraction taking ~5 minutes for ~10,200 sequences, model training taking ~1.5 hours, and structure prediction for 568,326 Swiss-Prot sequences requiring ~8.5 days on 16 NVIDIA A100 GPUs. The complete annotation pipeline for Swiss-Prot was completed in approximately 9 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C68-C71, C107, C112, C120, C124-C126 provide specific computational timing measurements that are internally consistent and demonstrate the scalability of the method. The timing data is presented with appropriate hardware specifications (NVIDIA A100 GPUs) and sequence counts, making the claims verifiable and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C7"
+    ],
+    "result": "ESMFold produces high-quality structures in most cases (median TM-scores 0.76-0.96 across datasets, with most proteins having TM-score >0.7). GPSite maintains robust performance even on low-quality predicted structures (TM-score \u22640.7), consistently outperforming state-of-the-art structure-based methods using either predicted or native structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 and C7 are supported by TM-score distributions shown in Figure 3B and Appendix figures, and performance comparisons in Figure 3A. The analysis of proteins with TM-score <0.5 in the RNA test set (C48-C49) provides specific evidence for robustness. The case study of glucocorticoid receptor (C138-C140) further illustrates this robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Ablation studies demonstrate that ProtTrans embeddings are critical for GPSite performance (AUPR 0.594 vs 0.516 without), outperforming MSA profiles especially for proteins with few homologous sequences (3.9% AUC improvement for Neff <2, p=4.3\u00d710\u207b\u2078). Structure information is more critical than sequence information (AUPR 0.484 without structure vs 0.516 without sequence), and the geometric featurizer contributes substantially (AUPR drop from 0.594 to 0.533 when removed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 present systematic ablation study results shown in Figure 4A-B and Appendix tables. The comparisons are quantitative with appropriate statistical testing (C57). The relative importance of different components is clearly demonstrated through controlled experiments removing specific features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Multi-task learning in GPSite consistently outperforms single-task baselines, especially for ligands with limited training data. For HEM with only 176 training proteins, multi-task learning provides an AUPR increase of 0.086 (from 0.716 to 0.802), demonstrating that the shared network can compensate for data scarcity by leveraging common binding patterns across different ligand types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by quantitative comparisons shown in Figure 4C and Appendix tables. The HEM example (C62-C63) provides specific evidence for the benefit of multi-task learning on small datasets. The interpretation about shared binding patterns (C64) is a reasonable inference from the experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The latent representations from GPSite's pre-trained shared network effectively improve discriminability between binding and non-binding residues, as demonstrated by t-SNE visualization. Using these embeddings to train a simple MLP for carbohydrate-binding site prediction achieves AUC of 0.881, outperforming training GPSite from scratch (0.853) and other state-of-the-art methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by t-SNE visualizations in Figure 4D and quantitative results in Figure 4E. The carbohydrate-binding site prediction serves as an effective demonstration of transfer learning capability, showing that the pre-trained network captures generalizable binding patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "GPSite protein-level binding scores for Swiss-Prot proteins with corresponding ligand-binding molecular functions are significantly higher than those without such annotations (p<10\u207b\u00b9\u2076\u2075 for all ligands). GPSite achieves satisfactory AUC values for most ligands except protein (AUC 0.608). The predicted binding proteins are involved in biological processes consistent with existing knowledge (e.g., DNA-binding proteins in DNA repair and transcription, RNA-binding proteins in translation and RNA modification).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C76-C78 are supported by statistical analyses shown in Figure 5A-C and Appendix figures. The extremely low p-values (C73) provide strong statistical evidence. The biological process enrichment analysis (C76-C78) demonstrates biological validity of the predictions. However, the lower performance for protein-protein interactions (C74) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "20.67% of pathogenic variant sites on protein surfaces fall in GPSite-predicted interfaces, higher than benign variants (11.97%) or random baseline (16.35%). Pathogenicity of variants in predicted binding sites is higher than in non-binding sites, with ATP and metal ion binding sites showing particularly high pathogenic probabilities, likely because these binding interfaces comprise small pockets where single residue variants can substantially affect functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 present quantitative variant analysis results supported by Figure 5D-E. The enrichment of pathogenic variants in predicted binding sites provides validation of the predictions. The interpretation about ATP and metal ion binding sites (C83-C84) is a reasonable inference based on structural knowledge, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89",
+      "C95"
+    ],
+    "result": "GPSite's low computational cost enables genome-scale annotation of over 568,000 Swiss-Prot sequences within 9 days. These annotations are concordant with existing knowledge and capable of facilitating discoveries in protein function and genetic variants, establishing GPSite as a reliable, efficient, versatile tool for protein-ligand interaction analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C88-C89, C95 summarize the large-scale application and utility of GPSite. The computational feasibility is demonstrated by the actual Swiss-Prot annotation (C88). The concordance with existing knowledge and potential for new discoveries (C89) is supported by the downstream analyses in Figure 5. The characterization as a reliable tool (C95) is justified by the comprehensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Although trained on predicted structures, GPSite can use native structures as input, yielding average AUPR increase of 7.8%. Structure-based methods trained on native structures show substantial performance decreases when using predicted structures (e.g., GraphBind AUPR drops from 0.506 to 0.433 for RNA, ScanNet drops from 0.476 to 0.399 for protein), while GPSite maintains superior performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 demonstrate GPSite's flexibility and robustness advantage. The performance boost with native structures (C40) is supported by Appendix 3-figure 2. The comparisons with other methods (C41-C43) provide specific quantitative evidence for the advantage of training on predicted structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "For the glucocorticoid receptor (PDB: 7PRW) with overall TM-score of 0.72, the local structures of peptide and DNA binding domains are accurately predicted. GPSite correctly predicts all Zn\u00b2\u207a binding sites and precisely identifies DNA and peptide binding sites with AUPR values of 0.949 and 0.924, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 present a detailed case study supported by structural visualizations in Figure 3D-H. This example effectively illustrates how GPSite can perform well even when overall structure prediction quality is moderate, because local binding domain structures are accurately predicted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Benchmark datasets for DNA, RNA, peptide, ATP, and HEM were constructed from BioLiP with proteins having resolution \u22643.0 \u00c5 and length 50-1500. Binding residues were defined by atomic distance <0.5 \u00c5 plus Van der Waals radii. Redundancy was removed at 25% sequence identity, and datasets were temporally split (training: before Jan 2021, test: Jan 2021-Mar 2023). Protein-protein and metal ion datasets were from previous studies. Total: 8441 training and 1838 test sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 describe the dataset construction methodology. The procedures are clearly specified with appropriate criteria for structure quality, redundancy removal, and temporal splitting to avoid data leakage. The use of established datasets for some ligands (C102-C103) is properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "ESMFold is a fast, accurate end-to-end structure prediction model based on a 3B parameter language model pre-trained on UniRef50 with a folding head similar to AlphaFold2. ProtTrans is a 3B parameter T5 transformer pre-trained with BERT's denoising objective on BFD and fine-tuned on UniRef50, generating 1024-dimensional embeddings per residue from the last encoder layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C109-C111 describe the pre-trained models used in GPSite. These descriptions are supported by appropriate citations and accurately represent the published characteristics of ESMFold and ProtTrans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "GPSite was trained using five-fold cross-validation with Adam optimizer and one-cycle learning rate policy on binary cross-entropy loss. Each epoch used 25,000 randomly sampled sequences with batch size 16, training for up to 25 epochs with early stopping. Final predictions averaged outputs from all five models. AUPR was used for hyperparameter selection as it is more informative than AUC for imbalanced classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116, C118-C119, C121 describe the training and evaluation procedures. The methodology is standard and appropriate for the task. The choice of AUPR for hyperparameter selection (C121) is justified by citation and is appropriate for imbalanced datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "For Swiss-Prot analysis, 569,516 sequences were downloaded, with 1,190 sequences >2700 residues removed due to GPU memory limits, resulting in 568,326 sequences. For downstream analyses, only structures with length \u226550 and pTM >0.7 were used (370,140 structures). Interface residues were defined by predicted probabilities above pre-defined thresholds, and surface residues by RSA >5%. GO terms and variant annotations were obtained from UniProt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123, C127-C131 describe the data processing for large-scale analysis. The filtering criteria are reasonable and clearly specified. The quality thresholds (pTM >0.7, RSA >5%) are appropriate for ensuring reliable downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Protein binding sites with nucleic acids, peptides, and small ligands are important for disease mechanism elucidation and drug design. Proteins perform most biological functions through specific molecular interactions. While experimental techniques like X-ray crystallography can determine binding sites, they are costly, time-consuming, and unsuitable for proteins with unknown partners. The explosive growth of sequence databases necessitates computational methods for large-scale binding site prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C13 provide background context supported by citations and established knowledge in structural biology and bioinformatics. These statements accurately represent the motivation for developing computational binding site prediction methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Current binding site prediction methods rely on expensive MSA or experimental structures, limiting genome-scale applications. Comparative modeling is restricted without high-quality templates. Sequence-based methods have limited accuracy due to lack of structure information. Structure-based methods encode proteins as 2D images, 3D voxels, or graphs, but have restricted expressive capacity as protein geometry is not fully explored. MSA dependency leads to high computational cost, and structure-based methods show performance declines on predicted structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C14-C23 characterize limitations of existing methods. These assessments are supported by citations to relevant literature and represent reasonable critiques based on understanding of computational complexity and method dependencies. The characterizations provide appropriate motivation for GPSite's design choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Previous work validated using AlphaFold2 predicted structures for training, but the pipeline remains computationally intensive. Protein language models have shown competitive or better results than evolutionary features. ESMFold replaces MSA with pre-trained language models, achieving order-of-magnitude acceleration while maintaining accuracy. Geometric deep learning has flourished in protein applications. Current geometric predictors use surface point clouds or atom graphs, but surface calculations are time-consuming and atom graphs are memory-intensive. Global protein structure influences binding interface formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide context about recent advances in protein structure prediction and geometric deep learning, supported by appropriate citations. These statements accurately represent the state of the field and motivate GPSite's architectural choices (residue graphs, language models).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Most proteins in Swiss-Prot are no longer than 500 residues and predicted with high confidence (pTM >0.8) by ESMFold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by distributions shown in Appendix 3-figure 7. This characterization of the Swiss-Prot dataset provides context for the large-scale application and suggests that most predictions should be of high quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Protein-protein interactions are ubiquitous in living organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is established biological knowledge used to explain the lower AUC for protein-protein binding prediction (C74). This is a reasonable explanation for why the protein-level binding score performs less well for protein-protein interactions compared to other ligands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "GPSite may be improved by pre-training on ESM Metagenomic Atlas structures, using ESMFold hidden embeddings, adopting variational Expectation-Maximization for hierarchical atom-to-residue graphs, or exploring meta-learning for fast adaptation to unseen tasks with limited labels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C93 are speculative suggestions for future improvements with appropriate citations. These are reasonable directions for future work but have not been tested. They represent informed speculation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94",
+      "C96"
+    ],
+    "result": "The gap between unannotated and annotated sequences is expanding at an unparalleled rate. Researchers can use GPSite to uncover biological functions, gain insights into pathogenic mechanisms, or design drugs targeting specific binding pockets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C96 provide context about the annotation gap (supported by knowledge of database growth) and describe potential applications of GPSite. While C96 is somewhat speculative about future applications, it represents reasonable use cases based on the demonstrated capabilities of the method.",
+    "result_type": "MINOR"
+  }
+]

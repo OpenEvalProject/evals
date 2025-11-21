@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C73"
+    ],
+    "result": "H3-OPT achieves superior CDR-H3 prediction accuracy compared to other computational methods. The method provides an average RMSD of 2.24 \u00c5 for CDR-H3 loops, outperforming AlphaFold2 (2.85 \u00c5), IgFold (2.87 \u00c5), and other PLM-based methods, representing a 20% improvement over AF2 or IgFold.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly support these claims. Reviewer 1 states the results are 'quite convincing and support the authors' conclusions,' while Reviewer 3 notes 'a modest average accuracy gain is obtained in comparison to other state-of-the art methods.' The editor describes the work as 'supported by convincing experiments for validation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C65"
+    ],
+    "result": "H3-OPT was experimentally validated using three anti-VEGF nanobody structures. H3-OPT generated accurate predictions with C\u03b1-RMSDs of 1.510, 1.541, and 1.411 \u00c5 for WT, Mut1, and Mut2, respectively, outperforming IgFold which achieved RMSDs of 2.776, 2.888, and 2.448 \u00c5.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'the approach was validated by comparing three experimentally solved 3D structures of anti-VEGF nanobodies with the H3-Opt predictions' as a strength. The experimental validation is described clearly and no reviewer raises concerns about these specific validation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A high-quality, non-redundant dataset was constructed containing 1286 antibody structures with resolution <2.5 \u00c5 and sequence identity <0.8. The test set was stratified into three difficulty subgroups (Sub1: 0-2 \u00c5, Sub2: 2-4 \u00c5, Sub3: >4 \u00c5) based on AF2 prediction accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly praises this as a strength: 'The experimental design to train and validate the new approach has been clearly described, including the dataset compilation and its representative sampling into training, validation and test sets.' Reviewer 3 notes 'Authors use a well-defined dataset to test their new method.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "H3-OPT architecture consists of a template module (with confidence-based and template-grafting submodules) and a PLM-based structure prediction module. Ablation studies showed that the CBM improved Sub1 predictions by 0.62 \u00c5, while TGM improved Sub2 and Sub3 by 0.68 and 1.04 \u00c5 respectively, with templates being more effective for longer CDR-H3 loops.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 describes the framework as 'novel' and notes it 'can be easily adapted and improved.' The ablation studies demonstrating component contributions are not questioned by any reviewer, and the experimental design is praised by Reviewer 2 as 'clearly described.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Different PLMs were evaluated, with ESM2 outperforming ProtTrans-T5 and AntiBERTy. Fine-tuning all ESM2 hidden layers resulted in the final H3-OPT performance of 2.24 \u00c5 overall RMSD.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological detail is part of the overall experimental design that Reviewer 2 describes as 'clearly described.' No reviewer questions the PLM selection or fine-tuning approach, and it contributes to the overall performance gains that all reviewers acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39"
+    ],
+    "result": "AlphaFold2 demonstrated strong performance in antibody structure prediction with TM-scores of 0.93\u00b10.04 (DB1) and 0.94\u00b10.03 (DB2), outperforming other methods including DeepAb, with the conclusion that AF2 is highly effective for both mAbs and Nbs and produces CDR-H3 loops comparable to AI-based antibody-specific methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These benchmarking results are part of the comparative analysis that Reviewer 2 describes as 'quite convincing.' Reviewer 3 acknowledges the comparison with 'several state-of-the-art methods.' The AF2 baseline performance is accepted by all reviewers as context for H3-OPT's improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "QM-based re-ranking and optimization methods showed limited success. While re-ranking improved 8 of 14 targets by 0.69 \u00c5 on average in a small dataset, it failed to improve accuracy on larger datasets (DB3) or through optimization approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These negative results are presented transparently and are not challenged by reviewers. They contribute to the rationale for the PLM-based approach. Reviewer 2 notes the transparency of making datasets and code available, which would include these comparative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C85"
+    ],
+    "result": "MD simulations showed limited effectiveness for CDR-H3 optimization. While MD improved one target (7N0R) by 5.30 \u00c5 and demonstrated CDR-H3 flexibility, overall performance was poor with high RMSDs (>5 \u00c5) across 10 targets, attributed to inaccurately described solvent effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These negative results for MD-based approaches are presented as part of the methodological exploration and are not questioned by reviewers. They support the rationale for the chosen PLM-based approach and demonstrate thorough investigation of alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "H3-OPT more accurately predicts surface properties of CDR-H3 loops. H3-OPT predicted an average of 9.46 surface amino acids (SAAs) compared to native structures (9.40), while AF2 predicted 9.81. H3-OPT's SASA predictions also more closely resembled native structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly notes 'They also show the benefits of improving the structural predictions of the CDR-H3 in the evaluation of different properties that may be relevant for drug discovery and therapeutic design.' These surface property predictions are part of the demonstrated benefits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "H3-OPT demonstrates superior performance in predicting antibody-antigen interactions. It achieved median precision of 0.82 and accuracy of 0.98 for contact residue prediction (vs. AF2: 0.71 precision, 0.97 accuracy), lower distance errors (2.42 \u00c5 vs. 4.85 \u00c5), and binding affinities closer to experimental structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly acknowledges 'the benefits of improving the structural predictions of the CDR-H3 in the evaluation of different properties that may be relevant for drug discovery and therapeutic design.' These binding-related predictions directly support therapeutic applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "H3-OPT showed lower C\u03b1-RMSDs compared to AF2 or tFold-Ab for six of seven targets in the CAMEO 2022 benchmark dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This external validation on an independent benchmark is part of the overall validation strategy that Reviewer 2 describes as 'quite convincing.' The use of CAMEO 2022 data demonstrates generalizability beyond the training set.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "AF2 prediction accuracy correlates with CDR-H3 loop length. AF2 provides accurate predictions for short loops (<10 amino acids), while loops exceeding 25 residues remain challenging for all methods including H3-OPT. H3-OPT's improvement in Sub3 is attributed to fine-tuned ESM2 context.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes 'Although the accuracy gain is mainly ascribed to easy cases, the accuracy and precision for moderate to challenging cases is comparable to the best PLM methods...reflecting the present methodological limit in the field.' This acknowledges both the improvements and the remaining challenges for very long loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C92",
+      "C93"
+    ],
+    "result": "H3-OPT has strong potential for therapeutic antibody applications, including optimizing antibody-antigen binding and engineering antibodies with specialized biophysical properties for drug administration routes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states the work 'is important because the method can aid in the design of antibodies, which are key tools in many research and industrial applications.' Reviewer 3 notes the method's relevance for 'drug discovery and therapeutic design.' The demonstrated improvements in binding prediction support these applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "H3-OPT differs from IgFold in efficiency and training approach. H3-OPT is less efficient because it relies on AF2 structures, but was trained using high-quality, non-redundant structures, while IgFold uses an augmented dataset containing AF2-predicted structures that could propagate errors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly notes as a strength that 'The datasets used to train and validate the tool and the code are made available by the authors, which ensures transparency and reproducibility.' The training methodology differences are presented as part of the method description and not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C84",
+      "C86"
+    ],
+    "result": "Future improvements to H3-OPT are proposed, including using larger high-resolution datasets, PLMs with more parameters for loops of 10-25 amino acids, and more accurate physics-based methods for long loops.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are speculative future directions that are reasonable given the demonstrated results. Reviewer 3 notes the framework 'can be easily adapted and improved,' supporting the feasibility of these proposed enhancements. No reviewer challenges these forward-looking statements.",
+    "result_type": "MINOR"
+  }
+]

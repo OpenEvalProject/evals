@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript provides background on coronavirus biology, taxonomy, and host range. Coronaviruses are RNA viruses with four genera (Alpha-, Beta-, Gamma-, and Deltacoronavirus), infecting mammals, birds, and fishes, with seven or eight species infecting humans including three pathogenic ones (SARS-CoV, MERS-CoV, SARS-CoV-2). They are most diverse in mammals, particularly bats, suggesting but not confirming a bat origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 are well-supported by appropriate citations to prior literature. These are established facts about coronavirus biology, taxonomy, and epidemiology that provide necessary context for the study. The authors appropriately note that bat origin remains to be tested (C13).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work on coronavirus origins has produced conflicting estimates ranging from 10,000 years ago to 293 million years ago. Dating RNA virus phylogenies is difficult due to lack of endogenous viral elements. Previous studies have proposed long-term codiversification with hosts, but cophylogenetic signals can also arise from preferential host switches among related hosts without cospeciation. Most cophylogenetic methods rely on topology rather than branching times, allowing time-inconsistent host switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 accurately summarize prior work and methodological challenges, supported by appropriate citations. The authors correctly identify the key controversy (ancient vs. recent origin) and methodological limitations (topology-based methods allowing time-inconsistent switches) that motivate their study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study identified 35 coronavirus sOTUs associated with mammalian hosts from 116 species across 31 families and 10 orders. Phylogenetic analysis shows a clear split between alphacoronaviruses and other genera. Bats are the most common hosts (55 species), with 17 sOTUs found exclusively in bats. Eight sOTUs infect humans, six being betacoronaviruses including the three pathogenic ones. Betacoronaviruses infect more hosts and have broader host range than alphacoronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C41 describe the dataset and basic phylogenetic patterns, supported by data compilation and phylogenetic analyses shown in Figure 2 and supplements. The phylogenetic trees are constructed using standard methods (BEAST2, PhyloBayes) with appropriate models. The descriptive statistics are straightforward counts from the compiled dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Network visualization shows that mammals from the same orders tend to be infected by the same coronavirus sOTUs, bats host a specific set of coronaviruses, and humans show centrality in the mammal-coronavirus interaction network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by the network analysis shown in Figure 3. The Fruchterman-Reingold layout algorithm appropriately positions nodes based on interaction similarity, revealing the described patterns. However, this is primarily a qualitative visualization that motivates the quantitative phylogenetic signal tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Statistical tests reveal significant phylogenetic signal in coronavirus-mammal associations (Mantel test: r=0.38, p=0.0001 for coronaviruses; r=0.29, p=0.0001 for mammals). This signal is concentrated in deep nodes rather than shallow phylogenetic scales. Closely related coronaviruses infect similar numbers of hosts (r=0.29, p=0.002), but closely related mammals do not host similar numbers of coronaviruses (r=0.04, p=0.1), suggesting coronavirus host specificity is evolutionarily conserved while host specificity to coronaviruses is not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by appropriate Mantel tests that control for confounding phylogenetic signal in the number of partners (C45-C46, C48-C49). The subclade analyses (C47) and interpretation (C50) are reasonable. The statistical methods are appropriate for testing phylogenetic signal in interaction networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ALE reconciliations inferred 145 cospeciations, 65 losses, 0 duplications, and 92 host switches on average. However, 20% of host switches are time-inconsistent, including back-in-time switches >50 Myr. The majority (64%) of reconciliations found coronavirus origination in bats, specifically Pteropodidae, compared to 19% in rodents, 6% in artiodactyls, and 2% in carnivores. Random shuffling eliminated the bat origination signal, suggesting it is not artifactual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C57 present ALE results, but the high proportion of time-inconsistent switches (C52) undermines confidence in the cospeciation estimates (C51). The authors acknowledge this issue but the interpretation is complex. The bat origination (C53-C56) is supported by null model comparisons (C57), but the biological meaning of reconciliations with 20% time-inconsistent switches is unclear. The dated version of ALE failed, suggesting the undated version may not be appropriate for these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Using a star phylogeny approach, 68% of inferred host switches occurred within mammal orders (vs. 28% expected by chance). Host switches between bats and other orders were five times less frequent than expected (10.7% vs. 50.2%). When occurring, bat-to-other switches often targeted humans (1.9 per reconciliation) or domesticated mammals. Host switches to humans came mostly from domesticated mammals, house shrews, and house mice. SARS-CoV-2 experienced an intermediate number of host switches compared to other coronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by ALE analyses on a star phylogeny with appropriate null model comparisons. The star phylogeny approach is a reasonable way to test for preferential host switches while avoiding time-inconsistency issues. The finding of preferential within-order switches (C58-C59) and rare bat-to-other switches (C60) is well-supported by comparison to random expectations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Separate analyses of alpha- and betacoronaviruses reveal different patterns. Alphacoronaviruses: 69% origination in bats, 80% intra-order host switches. Betacoronaviruses: 76% origination in non-bat orders (rodents 25%, Artiodactyla 18%, Carnivora 13%), 61% inter-order host switches. The fraction of host switches relative to cospeciation is higher in betacoronaviruses (0.63) than alphacoronaviruses (0.54). This suggests the ancestral coronavirus originated in bats, gave rise to alphacoronaviruses in bats, then switched to non-bat hosts where it evolved into betacoronaviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by separate ALE analyses of the two main clades. The contrasting patterns between alpha- and betacoronaviruses are clear and well-documented. The inference about evolutionary history (C68) is a reasonable interpretation of these patterns, though it remains an inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Geographic analysis reveals coronavirus diversity hotspots in Eurasia (East Asia and Southern Europe) that have not colonized the whole world. The hotspot is more influenced by alphacoronaviruses than betacoronaviruses. Betacoronaviruses have more widespread distribution with less pronounced hotspots. Mammalian hosts show a hotspot in East Asia. The Americas and Australia have relatively low richness of coronaviruses and hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by geographic analyses shown in Figure 5 and supplements. The methods are appropriate (host-filling method, equal-area hexagonal grid cells, Faith's PD). The geographic patterns are consistent with a recent origination scenario and provide independent evidence supporting the phylogenetic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study concludes that extant mammalian coronaviruses originated recently in bats and diversified via preferential host switches rather than codiversification. Coronaviridae is a highly dynamic clade with rapid turnover of sOTUs through host switches much faster than host evolution. The timing is much more recent than the hundreds of millions of years suggested by Wertheim et al., 2013. Previously reported cases of long-term codiversification in RNA viruses have been over-estimated. Event-based cophylogenetic methods artifactually favor unrealistic scenarios with codiversification and back-in-time switches under scenarios of recent origination and preferential host switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C82 represent the main conclusions but have important limitations. The evidence for recent origination (C76, C80) is indirect\u2014based on time-inconsistent switches and geographic patterns rather than direct dating. The claim about over-estimation of codiversification (C81) is supported by the methodological findings (C82) but the study cannot definitively rule out ancient origination with extensive subsequent host switching. The inability to date the origination timing (acknowledged in C78) is a significant limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Host switches occurred more frequently within than between mammalian orders, suggesting shared mammalian characteristics and encounter frequency are important. Between-order switches occurred more frequently among non-flying mammals and orders containing humans and domesticated mammals, suggesting contact frequency is key. Host switches from bats to other species were rare, suggesting bats are a closed reservoir. When occurring, bat spillovers were most likely toward humans, suggesting humans acted as evolutionary intermediate hosts. Human abundance, distribution, and contact-forcing behavior make this unsurprising.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91 are supported by the ALE analyses and represent reasonable ecological interpretations. The preferential within-order switches (C83) are well-documented. The rare bat-to-other switches (C87-C88) and frequent bat-to-human switches (C89-C90) are supported by the data. The ecological reasoning (C84, C86, C91) is plausible though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "For SARS-CoV-2 and SARS-like coronaviruses, the dominant hypothesis is bat-to-intermediate host-to-human transmission. However, the study's results suggest more ancient coronavirus host switches may have occurred from bats to humans to non-bat mammals, though the molecular marker lacks resolution for species-level predictions. Large SARS-CoV-2 spillover from humans to wild mammals is well-documented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C94 contrast prior hypotheses with the study's findings. C92 is supported by citations. C93 is appropriately cautious about the limitation of the molecular marker but the inference remains speculative. C94 is supported by citations. The contrast between species-level transmission routes (C92) and deeper evolutionary patterns (C93) is not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Conservation of bat habitats away from human contact could help avoid further coronavirus spread. Alphacoronaviruses originated in bats and diversified mostly within bats; betacoronaviruses originated in non-bat lineages with higher host switching rates and more widespread geographic distribution. Coronaviruses likely originated in East Asia and Southern Europe with potential for future rapid spreading. Betacoronaviruses infecting humans are host generalists with high transmission rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C104 combine findings with predictions and recommendations. The alpha vs. beta differences (C96-C99) are well-supported by the analyses. The geographic origins (C100) are supported by Figure 5. The predictions about future spread (C101-C103) are reasonable extrapolations. The conservation recommendation (C95) follows logically from the findings about rare bat spillovers. C104 is supported by the data on betacoronaviruses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study acknowledges limitations: the RdRp palmprint marker is conserved and routinely used but cannot reconstruct recent evolutionary history. The tree topology matches other genome regions at the genus level. Recombination is important in viral evolution but analyses of different palmprint subparts gave similar results. The dataset is incomplete and biased toward bats and human-associated mammals, but sub-sampling analyses suggest main results are robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 appropriately acknowledge limitations and provide evidence for robustness. The palmprint marker validation (C105-C106) is supported by citations and comparisons. The limitation for recent history (C107) is honestly stated with a reasonable suggestion for future work (C108). The recombination concern (C109) is addressed by sensitivity analyses (C110). The sampling bias concern (C111) is addressed by sub-sampling analyses (C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study concludes that coronaviruses originated in bats and diversified through preferential host switches. Spillovers from bats were rare but likely human-induced, with humans as the evolutionary intermediate host. Host switches between primates and artiodactyls/perissodactyls/carnivorans occur frequently, suggesting potential for spread beyond current East Asian and European prevalence. Reducing human-bat contact through habitat conservation could serve as mitigation. Cases of long-term virus-host codiversification have been over-estimated. High host-switching rates indicate potential for rapid future spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 summarize the main conclusions. These are generally supported by the analyses, though with the caveats noted in previous result groups. The conclusions about recent origination and preferential host switches (C113, C119) are well-supported. The role of humans (C114, C120) is supported by the ALE analyses. The predictions (C116, C121) and recommendations (C117) are reasonable extrapolations. The methodological conclusion about over-estimation of codiversification (C118) is supported by the findings about time-inconsistent switches.",
+    "result_type": "MAJOR"
+  }
+]

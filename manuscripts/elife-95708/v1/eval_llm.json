@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript describes the established biological context of SARS-CoV-2 spike protein function, including its role in viral fusion, structural organization, ACE2 binding, co-receptor interactions, and the conformational changes required for viral entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are well-supported by appropriate citations to established literature (Walls et al., 2020; Wrapp et al., 2020; Jackson et al., 2022; Clausen et al., 2020; Nguyen et al., 2022; Lan et al., 2020; Dodero-Rojas et al., 2021). These represent accepted knowledge in the field and provide necessary background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The glycan shield covers over 60% of the S protein surface, with the RBD being targeted by ~90% of neutralizing antibodies. The RBD contains two highly conserved N-glycosylation sites at N331 and N343, with N343 forming a bridge across the protein surface connecting two helical regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are supported by multiple citations to established literature (Casalino et al., 2020; Piccoli et al., 2020; Harbison et al., 2022; Watanabe et al., 2020a) and structural data shown in Figure 1b. The structural characterization is consistent with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The N343 glycan adopts a bridging conformation that shields the hydrophobic beta sheet core of the RBD, forming hydrogen bonding and dispersion interactions with residues 365-375. The key anchoring residues S371, S373, and S375 are mutated to hydrophobic residues in all omicron variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are supported by MD simulation data shown in Figures 1b,c and Appendix 1-figure 2 (C22, C24), citations to structural studies (C21), and sequence analysis (C25). The structural characterization of the N343 glycan bridging conformation is well-documented through computational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The RBM encompasses aa 439-506, is heavily targeted by antibodies, carries mutations in all VoCs, and is largely unstructured and dynamic in unbound S. The RBM contains hydrophobic and hydrophilic patches that are highly conserved and important for ACE2 binding, with the N343 glycan from adjacent RBDs gating RBD opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 are supported by appropriate citations (Lan et al., 2020; Bangaru et al., 2022; Casalino et al., 2020; Sztain et al., 2021; Williams et al., 2022; Li et al., 2005) and MD simulation data. The structural and functional characterization of the RBM is consistent with established literature, though some claims involve speculation about functional importance (C30, C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The manuscript defines three antigenic regions of the RBD: Region 1 (aa 337-353, including N343), Region 2 (RBM), and Region 3 (aa 411-426). Region 1 has been highly conserved except in BA.2.86 which introduces a new glycosylation site at N354. The RBM binding cleft can bind various glycan co-receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are supported by citations to antibody screening studies (Bangaru et al., 2022; Carabelli et al., 2023; Harvey et al., 2021; Liu et al., 2021; Newby et al., 2023), sequence analysis (C41), and studies on glycan co-receptor binding (Clausen et al., 2020; Nguyen et al., 2022; Wu et al., 2023). The regional definitions are reasonable based on structural and functional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In WHu-1 RBD, loss of N343 glycosylation induces a conformational change where helical loops pull together, ultimately causing detachment of the hydrophilic patch from Region 1 through rupture of interactions between Y351 and residues S469/T470/L452. This allosterically controls RBM structure and dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C46-C51 are supported by extensive MD simulation data (>45 \u03bcs cumulative sampling) shown in Figures 1c, 2a, and Appendix 1-figure 2. The RMSD distributions (KDE plots) clearly demonstrate conformational changes upon N343 glycan removal. The molecular mechanism is well-characterized through the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In alpha and beta RBDs, loss of N343 glycosylation causes similar conformational changes as in WHu-1, bringing loops aa 335-345 and aa 365-375 closer together and ultimately causing detachment of the hydrophilic patch from Y351 in Region 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by MD simulation data shown in Figure 2b,c with 4 \u03bcs of sampling for each variant. The KDE plots demonstrate conformational changes consistent with those observed in WHu-1, supporting the generality of the mechanism across these early variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The WHu-1 RBD binds monosialylated gangliosides GM1os and GM2os at a predicted binding site located at the junction between Regions 1 and 2. Enzymatic removal of the N343 glycan by endoF3 treatment causes complete loss of GM1os/2os binding, with LC-MS showing 31% of glycoforms had N343 trimmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by prior work (Nguyen et al., 2022), MD simulation predictions (Figures 1c, 2e), and experimental ESI-MS affinity data (Figure 2d) combined with LC-MS characterization (Appendix 1-figures 5,6 and table 8). The experimental validation of the predicted binding site through glycan removal is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Binding of GM1os/2os to alpha RBD is slightly decreased relative to WHu-1, while binding to beta RBD is dramatically reduced. The E484K mutation in beta changes the key interaction with GM1os, and changes in RBM dynamics have been suggested to affect S opening kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C63-C66 are supported by ESI-MS affinity measurements (Figure 2d) and structural inference from the predicted binding site. The E484K mutation explanation (C65) is reasonable based on the binding site structure, though it involves inference. Citations support the connection to RBM dynamics (Williams et al., 2022; Wang et al., 2021).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In delta RBD (carrying L452R and T478K mutations), the L452R mutation reinforces the junction between Regions 1 and 2 through new hydrogen bonds with Y351 and CH-\u03c0 stacking via L492. Loss of N343 glycosylation causes loop tightening but does not affect the Region 1-2 junction structure or cause hydrophilic patch detachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by 12 \u03bcs of MD simulation data (conventional and GaMD) shown in Figure 3 and Appendix 1-figure 3. The structural mechanism explaining why delta is resistant to N343 glycan removal effects is well-characterized and represents a key finding distinguishing delta from earlier variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C17",
+      "C75",
+      "C76"
+    ],
+    "result": "In delta RBD, both N331 and N343 glycans were trimmed by endoF3 treatment, yet the delta RBD shows no loss of GM1os/2os binding upon N343 glycan removal, supporting the involvement of the Region 1-2 junction in ganglioside recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C75, and C76 are supported by mass spectrometry data (Appendix 1-figure 5, table 9) and ESI-MS affinity measurements (Figure 3f). The experimental validation that delta maintains GM1os/2os binding despite N343 glycan removal is consistent with the MD simulation predictions showing structural stability of the Region 1-2 junction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Omicron BA.1 carries 15 mutations including S371L, S373P, and S375F (retained in all omicron VoCs) that remove hydroxyl sidechains involved in N343 glycan hydrogen bonding. Despite these mutations, the N343 glycan still forms stable contacts with the aa 365-375 loop. Loss of N343 glycosylation causes loop tightening stabilized by hydrophobic packing of L371 and F375, but without hydrophilic patch detachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by sequence analysis (C77, C78), MD simulation data (12 \u03bcs) shown in Figures 1c, 4, and Appendix 1-figure 3. The structural mechanism showing how omicron mutations compensate for loss of hydrogen bonding through hydrophobic interactions is well-characterized and represents a key evolutionary insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C83",
+      "C84"
+    ],
+    "result": "Omicron BA.1 binds GM1os/2os only weakly, with beta and omicron exhibiting the weakest binding across VoCs. The E484A mutation in omicron may negate GM1os/2os binding based on the predicted binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C83, and C84 are supported by ESI-MS affinity measurements (Figure 3f) showing weak binding. The mechanistic explanation involving E484A (C84) is reasonable inference based on the predicted binding site structure (Figures 1d, 2e) and comparison with beta (E484K), though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C90"
+    ],
+    "result": "In BA.2.86, the new N-glycosylation site at N354 changes loop conformation and the N343 and N354 glycans are tightly intertwined throughout the trajectory, stabilizing Region 1 and significantly increasing shielding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C86, and C90 are supported by MD simulation data shown in Figure 4d-f. The structural characterization of the N354 glycan and its interaction with N343 is well-documented. This represents an important finding about the first change in RBD glycosylation since the ancestral strain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The RBD has evolved to make N343 glycosylation structurally dispensable. A shift of the glycosylation site within the sequence can potentially occur and may negatively affect antibody recognition, promoting immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C89 involve significant inference and speculation based on the cumulative MD results. While C87 is reasonably supported by the data showing delta and omicron maintain structural stability without N343 glycan, C88 and C89 are speculative about evolutionary potential and immune evasion. The speculation is reasonable but lacks direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Specific VoCs lost affinity for monosialylated gangliosides with a trend consistent with a binding site at the Region 1-RBM junction. Further mutations may switch affinity back on or shift preference toward other glycans recognizable within the N370 cleft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by ESI-MS affinity data and citation to Harbison et al., 2022. However, C92 is purely speculative about future mutations. While the speculation is reasonable given the data, it represents hypothesis generation rather than demonstrated findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Earlier work shows SARS-CoV-2 vaccines with increased efficacy due to N-glycan removal, and RBD-based vaccines may be designed with or without N-glycans. Understanding N-glycosylation effects on protein structure may be key to understanding epistatic interactions among RBD residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by appropriate citations (Huang et al., 2022; Cohen et al., 2022; M\u00e1s-Bermejo et al., 2022; Valdes-Balbin et al., 2021; Rochman et al., 2022; Witte et al., 2023). These claims appropriately contextualize the implications of the findings for vaccine design and evolutionary understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The computational methods employed all-atom MD simulations using AMBER 14 SB, GLYCAM06j-1, and TIP3P force fields, with conventional MD trajectories of minimum 2 \u03bcs and GaMD trajectories of 2 \u03bcs, totaling over 45 \u03bcs of cumulative sampling. Glycans at N331 and N343 were modeled as FA2G2 based on glycoproteomics data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe the computational methodology with appropriate citations (Maier et al., 2015; Kirschner et al., 2008; Jorgensen et al., 1983; Miao et al., 2015; Newby et al., 2023; Watanabe et al., 2020a; Ives et al., 2023). The methods are standard and well-documented. The extensive sampling (>45 \u03bcs) is appropriate for the conformational changes studied.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,400 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors performed 12 barcoded evolution experiments starting from ~300,000 barcoded yeast lineages, evolving them in different concentrations and combinations of fluconazole (FLU) and radicicol (RAD). They sampled ~21,000 isolates after 3-6 growth/transfer cycles (24-48 generations), then performed 24 competitive fitness experiments (2 replicates per condition) to measure fitness across all 12 environments. After applying a coverage threshold of >500 reads per lineage per condition, 774 lineages were retained for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with specific numbers and procedures (C21, C28, C33, C35). The methods are well-documented including drug selection rationale (C140-C142), barcode design (C143-C145), and strain construction (C138-C139, C146-C150). The sampling strategy and fitness measurement approach are justified by prior work (C29-C32) and reproducibility is demonstrated (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Whole genome sequencing of 53 lineages revealed that most (51/53) possessed single nucleotide mutations in known drug resistance genes. FLU-resistant lineages had mutations in PDR1, PDR3, SUR1, or UPC2, while RAD-resistant lineages had mutations in HDA1 or HSC82. Two lineages had no identifiable mutations, possibly due to ploidy changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequencing results are clearly reported (C38, C71-C74) and mutations are found in genes with established roles in drug resistance supported by multiple citations (C40-C43). The early sampling timepoint (C39) makes it plausible that lineages have only one or a few mutations. The observation that 51/53 lineages have identifiable adaptive mutations provides strong validation that the 774 lineages are genuinely adaptive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Ploidy changes contributed less to adaptation in this experiment (at most 9.4% diploid cells) compared to previous barcoded evolution experiments where 43-60% of cells became diploid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to previous work is properly cited (C45) and the current results are clearly stated with specific percentages (C46). This represents a methodological validation showing that the adaptive mutations observed are primarily due to sequence changes rather than ploidy alterations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The majority of the 774 adaptive lineages show cross-resistance, having higher fitness in multiple drug conditions. The 100 most fit lineages in high FLU are also beneficial in high RAD and combined drug conditions, but lose their fitness advantage in the absence of drug. These lineages predominantly originated from FLU-containing evolution experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fitness patterns are clearly demonstrated with supporting figures (C49-C51) and the evolutionary origins are traced using barcode sequencing (C52-C53). The observation of cross-resistance is directly supported by the data showing fitness advantages in multiple conditions (C47-C48). This represents a key finding about one class of drug-resistant mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A second distinct class of FLU-resistant mutants was identified: the top 100 most fit mutants in high RAD maintain fitness advantages in high FLU, high RAD, and in drug-free conditions. These lineages mainly originated from evolution experiments lacking FLU, suggesting a unique resistance mechanism that typical studies might miss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fitness profiles are clearly distinct from the first group (C55-C56) with supporting figures, and the evolutionary origins are documented (C58). The inference that this represents a different mechanism is reasonable given the different tradeoff patterns (C57). The observation that these mutants arise from non-FLU conditions (C58-C59) is important for understanding the diversity of resistance mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "UMAP dimensional reduction followed by Gaussian mixture model clustering identified 6 distinct clusters of adaptive mutants (plus one control cluster) based on fitness profiles across 12 environments. The clustering was robust to different analysis choices including coverage thresholds, normalization methods, and alternative clustering algorithms (hierarchical clustering, PCA), with 85-90% agreement between methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering methodology is clearly described (C63-C67) with appropriate quality control measures including BIC scores and multiple validation approaches (C69-C70, C155-C158). Reproducibility between replicates is demonstrated (C68) and robustness to different analytical choices is thoroughly tested (C69-C70, C154-C158). The use of multiple independent validation methods strengthens confidence in the clustering results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Cluster 1 mutants are genetically distinct from clusters 2 and 3, having mutations in SUR1 or UPC2 (membrane-related genes) rather than PDR1/PDR3 (drug efflux genes). Cluster 1 mutants perform best in low FLU concentrations with decreasing fitness at higher FLU concentrations, show inconsistent cross-resistance to RAD, and predominantly originated from low FLU evolution experiments. Growth curve experiments confirmed these fitness differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic differences are clearly documented (C75-C76) with functional context provided by citations (C77-C80). The fitness patterns are demonstrated across multiple FLU concentrations (C84-C86) and validated by independent growth curve measurements (C88-C89). The lack of consistent RAD cross-resistance (C81-C82) and evolutionary origins (C87) provide converging evidence that cluster 1 represents a mechanistically distinct class of FLU resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Clusters 2 and 3 both contain mutations to PDR1/PDR3 and have similarly shaped fitness profiles, but differ in magnitude and specific tradeoffs. After normalizing to remove magnitude differences, 37% of mutants switched between clusters 2 and 3, revealing that cluster 3 mutants perform better in medium/high RAD but have reduced fitness in drug-free conditions compared to cluster 2. These differences are reflected in their evolutionary origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The initial similarity between clusters 2 and 3 is documented (C91-C93) and the normalization analysis is clearly described (C94-C95). The specific fitness differences that distinguish the clusters are demonstrated (C96-C98) and corroborated by evolutionary origin data (C97). This represents an important finding that mutations in the same genes can have different fitness tradeoffs, though the mechanistic basis remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Among the three clusters advantageous in RAD and drug-free conditions, cluster 5 shows unexpected sensitivity to multidrug combinations (HRLF and LRLF) despite having advantages in the constituent single drug conditions. Cluster 4 maintains its advantage in multidrug conditions. These differences are confirmed by evolutionary origins and independent growth curve measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The unexpected fitness pattern in cluster 5 is clearly documented (C105-C106) and contrasted with cluster 4 (C107). The evolutionary origin data provides independent validation (C108), and growth curve experiments on individual isolates confirm the fitness differences (C109-C111). This represents an important finding about non-additive drug interactions that would be difficult to predict from single-drug fitness measurements alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "Cluster 6 is distinguished by having the largest fitness advantage in drug-free conditions, with over 50% of lineages originating from 'no drug' and 'DMSO' control evolution experiments. Sequenced mutants include three with IRA1 mutations, which was the most common adaptive target in previous no-drug evolution experiments. These mutants maintain fitness advantages in high concentrations of both drugs but uniquely lose their advantage in low FLU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fitness pattern is clearly documented (C112) and validated by evolutionary origins (C113-C114). The genetic basis is consistent with prior work (C115-C117) and the unusual sensitivity to low FLU is demonstrated (C120). The observation that IRA1 mutants maintain fitness in high drug concentrations (C119) contrasts with prior work showing strong tradeoffs in other environments, suggesting context-dependent pleiotropy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The 774 FLU-resistant mutants cluster into 6 groups with characteristic tradeoffs, including unintuitive groupings that segregate mutations within the same gene and distinguish mutants by unexpected fitness in multidrug conditions. These findings challenge strategies relying on consistent tradeoffs but suggest that predicting some mutations from others may be feasible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates findings from multiple clusters (C121-C123) and draws appropriate conclusions about implications for evolutionary medicine (C124-C125). The evaluation is balanced, acknowledging both challenges and opportunities. The claim that groupings are sometimes unintuitive is supported by the detailed analyses of clusters 2/3 (same gene, different tradeoffs) and clusters 4/5 (unexpected multidrug sensitivity).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The 6 clusters identified are incomplete and likely underestimate the true diversity of FLU-resistant mutants. Additional FLU-resistant mutants emerge from non-FLU conditions, some mutants grouped together here have different fitness profiles in other environments, the study used only one genetic background and early timepoints, and the coverage requirement excludes mutants with severe tradeoffs in any environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations are clearly acknowledged with specific examples (C126-C127) and supporting citations (C127, C129, C131). The experimental design constraints are explicitly stated (C128, C130) and their implications are reasonably inferred (C129, C132). This represents appropriate scientific caution about the completeness of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The 774 lineages studied are biased towards mutants that are reproducibly adaptive in multiple environments, excluding adaptive mutants with severe tradeoffs in any of the 12 environments due to the requirement for high-coverage fitness measurements in all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bias is explicitly acknowledged (C36) and the mechanism creating this bias is clearly explained (C37). This represents appropriate transparency about experimental limitations that affect interpretation of the results, particularly regarding the completeness of the diversity captured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The generalization that drug-resistant mutants do not have high fitness in the absence of drug is not universally supported, as some drug-resistant mutants can have fitness advantages rather than costs in drug-free conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim appropriately challenges an overgeneralization from prior work (C54) with specific counterexamples from the current data (C55). This represents an important correction to assumptions in the field, though the authors acknowledge that many mutants do show the expected cost in drug-free conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The observation that mutations to the same gene (PDR1) have different fitness tradeoffs is consistent with recent work and with the broader principle that mutations commonly affect multiple traits. Possible explanations include differential regulation of downstream targets (YOR1, SNQ2, PDR5) or additional undetected genetic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the observation is supported by data and consistent with prior work (C99-C101), the mechanistic explanations remain speculative (C102). The authors appropriately acknowledge this uncertainty and suggest possible mechanisms, but additional experiments would be needed to distinguish between these possibilities. The claim that this represents different mechanisms is plausible but not definitively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Despite the diversity of resistance mechanisms, strategies exploiting common tradeoffs have some success because not every infection harbors all mutant types. The finding that 774 mutants fall into 6 groups suggests that nuanced multidrug strategies accounting for multiple mutant types may be feasible and that evolutionary processes may be somewhat predictable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about implications for evolutionary medicine are appropriately cautious and well-supported by citations (C134). The inference that reducing 774 mutants to 6 groups makes prediction more feasible is reasonable (C135-C137) and supported by prior work on phenotypic vs. genetic diversity (C136-C137). However, these remain prospective claims about future applications rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "When comparing fitness in RAD vs. FLU across all 774 lineages, they largely fall into two main categories: one with equally high fitness in both drugs but no advantage without drugs, and another with very high RAD fitness, moderate FLU fitness, and moderate fitness without drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two main categories are clearly defined (C60-C61) and supported by pairwise correlation analysis (C62) with supporting figures. This represents an initial observation that motivated the more comprehensive UMAP analysis, though the authors appropriately note that this pairwise view excludes data from 10 of 12 environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "In this barcoded evolution platform, most mutations occur during the transformation that introduces DNA barcodes, and secondary mutations have minimal influence on fitness during the ~40 generations of the fitness competition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by citations to prior work that characterized this experimental system (C151-C152). This addresses an important potential confound - that fitness measurements might be biased by secondary mutations accumulated during the competition experiments. The reliance on prior characterization is appropriate for an established method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The introduction establishes the context and motivation for the study: fungal infections cause >1.5 million deaths annually, drug resistance is evolving faster than new drugs are developed, and understanding resistance mechanisms can inform multidrug strategies. However, these strategies work best when all resistant mutants have the same tradeoffs, which is often not the case. Laboratory experiments frequently find mutants that violate expected tradeoffs, and bulk sequencing methods miss low-frequency mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims in this background section are supported by appropriate citations (C1-C11). These represent established knowledge from prior work that motivates the current study. The logical flow from problem (drug resistance) to proposed solution (multidrug strategies) to challenge (diverse mechanisms) is clear and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The lineage-tracing method used can reveal a fuller spectrum of adaptive mutations by tracking all competing lineages before they accumulate multiple mutations. Previous work showed that genetically similar mutants in glucose-sensing pathways did not experience the same tradeoffs, supporting the idea that mutants with different fitness tradeoffs affect fitness through different mechanisms. The current study obtained 774 adaptive yeast strains by evolving in diverse drug concentrations and combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological advantages are supported by citations (C12-C14) and the rationale for using diverse evolution conditions is justified by prior work (C15). The example from prior work (C17-C18) effectively motivates the approach of using fitness tradeoffs to infer mechanistic differences (C19-C20). The number of strains obtained (C16) is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Fluconazole is a first-line antifungal drug with diverse known resistance mutations. Earlier work suggested FLU-resistant mutants are sensitive to radicicol, though some mutants show cross-resistance, and the prominent resistance mechanism can differ with drug concentration and selection intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims about FLU and RAD are supported by appropriate citations (C23-C27). This background information justifies the choice of drugs and the decision to study multiple concentrations and combinations. The acknowledgment of conflicting prior results (sensitivity vs. cross-resistance) motivates the comprehensive approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "The decision to sample after 3-6 growth/transfer cycles (24-48 generations) was based on prior work showing that adaptive lineage diversity peaks after a few dozen generations in this system, which occurs because the barcoding process is slightly mutagenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sampling strategy is justified by citations to prior work (C31-C32) that characterized the dynamics of this experimental system. This represents appropriate application of established knowledge to optimize the experimental design for capturing diverse adaptive mutations.",
+    "result_type": "MINOR"
+  }
+]

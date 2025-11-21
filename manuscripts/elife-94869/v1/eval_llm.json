@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C100"
+    ],
+    "result": "Both nucleosomal acidic patches are essential for SWR1C-mediated H2A.Z deposition. Using asymmetrically assembled nucleosomes with acidic patch mutations on either face, the authors demonstrate that disruption of a single acidic patch abolishes dimer exchange activity, regardless of which dimer is targeted for replacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is strongly supported by multiple independent assays (FRET-based and gel-based) using carefully constructed asymmetric nucleosomes (C40-C47). The experimental design directly tests the requirement for each acidic patch, and the data consistently show that both patches are necessary. The use of asymmetric nucleosomes is a key methodological strength that allows unambiguous assignment of acidic patch requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C101",
+      "C102"
+    ],
+    "result": "Loss of either acidic patch severely impairs SWR1C nucleosome binding and eliminates nucleosome-stimulated ATPase activity. Fluorescence polarization assays show that disruption of a single acidic patch reduces binding affinity by at least 10-fold (from Kd ~13.6 nM to unmeasurable), and ATPase assays demonstrate that asymmetric acidic patch mutant nucleosomes fail to stimulate SWR1C activity above basal levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding and ATPase data (C54-C60) provide strong mechanistic support for the functional requirement of both acidic patches. The FP assays are quantitative and show dramatic effects, while the ATPase data demonstrate functional consequences. The interpretation that binding defects likely explain the ATPase defects (C60, C102) is reasonable but acknowledges uncertainty about potential effects on Kcat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C83",
+      "C86",
+      "C92",
+      "C93"
+    ],
+    "result": "A conserved arginine-rich motif (RRKR) within the Swc5 subunit is essential for SWR1C activity. Mutation of this motif (Swc5RRKR-4A) abolishes dimer exchange activity and severely impairs nucleosome-stimulated ATPase activity. Multiple binding assays demonstrate that this arginine-rich domain directly interacts with the nucleosomal acidic patch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by convergent evidence from sequence alignment (C68), reconstitution experiments (C69-C73, C76), and multiple binding assays including gel shifts (C79-C83), TR-FRET (C84-C86), and fluorescence quenching (C87-C93). The combination of functional and binding data provides strong evidence for the role of this motif in acidic patch recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C74",
+      "C75",
+      "C117",
+      "C118",
+      "C130"
+    ],
+    "result": "The Swc5 subunit is essential for SWR1C nucleosome binding and activity. Removal of Swc5 eliminates H2A.Z deposition, nucleosome-stimulated ATPase activity, and severely impairs nucleosome binding, phenocopying the effects of acidic patch disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data showing that Swc5 deletion phenocopies acidic patch mutations (C64-C65, C74-C75, C117-C118) provides strong support for Swc5 as a key acidic patch-binding subunit. The rescue experiments with recombinant Swc5 (C75) serve as important controls. The conclusion that Swc5 is essential for high-affinity binding (C130) is well-supported by the FP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "Recombinant Swc5 binds nucleosomes with an apparent Kd of ~125-133 nM, and this binding requires an intact acidic patch. The Swc5RRKR-4A mutant shows ~3-fold reduced affinity (Kd ~379-593 nM), while binding to acidic patch mutant nucleosomes is similarly reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The binding data from gel shifts (C79-C82) and TR-FRET (C84-C85) are quantitative and show good agreement between methods. The ~3-fold effects are modest but consistent and statistically significant. The Swc5LDW-3A control (C80) demonstrates that the BCNT domain is not required for nucleosome binding, helping to isolate the role of the arginine-rich motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Fluorescence quenching assays demonstrate direct and specific interaction between Swc5 and the nucleosomal acidic patch. Wildtype Swc5 specifically quenches an Oregon Green probe positioned at the acidic patch but not one on the H4 tail. The Swc5RRKR-4A mutant is defective for acidic patch quenching, while the Swc5LDW-3A mutant retains this activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence quenching data (C87-C91) provide strong evidence for direct acidic patch interaction. The specificity controls (H4 tail probe, acidic patch mutant nucleosomes) are appropriate and demonstrate that the quenching is specific to the acidic patch region. The differential behavior of the RRKR-4A and LDW-3A mutants further supports the specific role of the arginine-rich motif.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C133"
+    ],
+    "result": "CryoEM structure of a Swc5-nucleosome complex reveals multivalent interactions including the acidic patch, H4 N-terminal tail, and H2B C-terminal helix (including K123). Despite structural heterogeneity, reconstructions show density consistent with an arginine anchor interaction at the acidic patch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryoEM data (C94-C97) provide structural support for the biochemical findings, though the authors appropriately acknowledge limitations due to Swc5 flexibility and heterogeneity. The identification of H2B-K123 as an interaction site (C96) is supported by the 3\u00c5 resolution of the nucleosome core. The observation of arginine anchor-like density (C95) is consistent with other acidic patch-binding proteins, though the specific arginine cannot be identified at this resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The Swc5 arginine-rich region is functionally important in vivo. A yeast strain expressing Swc5RRKR-4A shows severe growth defects on formamide media, a phenotype associated with loss of SWR1C function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic complementation data (C98-C99) provide important in vivo validation of the biochemical findings. The formamide sensitivity assay is an established readout for SWR1C function. The severe growth defect of the RRKR-4A mutant is consistent with its biochemical defects and demonstrates physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "SWR1C preferentially exchanges the linker distal H2A/H2B dimer ~3-fold faster than the linker proximal dimer. Surprisingly, incorporation of H2A.Z/H2B on the contralateral face stimulates the second round of exchange by ~20%, and linker DNA stimulates exchange rates for both positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The asymmetric nucleosome experiments (C48-C51, C122-C124) provide clear evidence for positional preferences and stimulatory effects. The data are quantitative and reproducible. The authors appropriately note that the ~20% stimulation by contralateral H2A.Z would not have been detected in prior studies using different conditions (C124). The control experiment at higher enzyme concentration (mentioned in text) confirms that the linker effect is not simply due to binding affinity differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C103",
+      "C104"
+    ],
+    "result": "The requirement for both acidic patches suggests SWR1C adopts a 'pincer-like' conformation, simultaneously engaging both patches. This implies that proteins occupying a single acidic patch could inhibit SWR1C activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pincer model (C5, C103) is a reasonable interpretation of the data showing that both acidic patches are required. However, this remains a model that has not been directly visualized. The inference about potential inhibition by other acidic patch-binding proteins (C104) is logical but speculative. The result is supported by the data but represents an interpretive model rather than direct observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The cryoEM structure shows Swc5 contacts H2B-K123, a residue subject to ubiquitination. The anti-correlation between H2B-K123ub and H2A.Z at the +1 nucleosome suggests that H2B ubiquitination may regulate H2A.Z deposition by disrupting the Swc5-nucleosome interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural observation of Swc5-K123 contact is supported (C133, C96), the regulatory hypothesis (C10, C137) is speculative. The anti-correlation data (C136) comes from prior ChIP-exo studies, not from experiments in this manuscript. No direct experiments test whether H2B ubiquitination affects Swc5 binding or SWR1C activity. This is an interesting hypothesis that requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C115",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Prior studies concluded that Swc5 does not play a role in nucleosome recognition, but the current work demonstrates that Swc5 is essential for high-affinity binding. The authors reconcile this by proposing that SWR1C makes strong nonspecific interactions through Swc2, while Swc5 provides high-affinity, specific binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately address the apparent contradiction with prior work (C125-C127) and provide a reasonable explanation (C128-C129). The distinction between general chromatin association (mediated by Swc2) and high-affinity specific binding (requiring Swc5) is supported by the cited literature and the current FP data. The limitation of the FP assay (10-fold detection limit, C130) is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C77",
+      "C78"
+    ],
+    "result": "The N-terminal acidic domain and C-terminal BCNT domain of Swc5 have distinct functions. The BCNT domain (Swc5LDW-3A mutant) is essential for dimer exchange and ZB dimer-stimulated ATPase activity but not for nucleosome binding. The N-terminal domain (Swc579-303 deletion) causes modest defects in dimer exchange but maintains wildtype ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional dissection of Swc5 domains (C66-C67, C77-C78) is well-supported by the reconstitution experiments. The differential effects of the LDW-3A and 79-303 mutations help define domain functions. These results are consistent with prior work (cited) and extend understanding of Swc5 structure-function relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Based on the existing SWR1C-nucleosome cryoEM structure and current findings, the authors propose that Swc5 contacts the H2A/H2B dimer targeted for eviction, positioned between the Arp6/Swc6 complex and Swr1 ATPase, with its N-terminal domain ideally positioned to capture the evicted dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a structural model (C119-C121) based on integration of prior cryoEM data with current biochemical findings. While the model is reasonable and consistent with known Swc5-Swr1 interactions (C120), it remains speculative since Swc5 was not visualized in the prior SWR1C-nucleosome structure. The model makes testable predictions but requires direct structural validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "The Swc5-H4 tail interaction observed in the cryoEM structure may be functionally important, as prior work showed that H4 tail acetylation influences SWR1C recruitment and activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is speculation (C132) based on the structural observation and prior literature (C131). No experiments in this manuscript test whether the Swc5-H4 interaction is functionally important or whether H4 acetylation affects this interaction. This represents a hypothesis for future investigation rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Analysis of cancer mutation databases reveals that Cfdp1 (human Swc5) mutations, particularly in the BCNT domain and adjacent to the arginine-rich region, are associated with uterine endometrial carcinomas, suggesting a tumor suppressor role for SRCAP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mutation analysis (C143-C144) is descriptive and the tumor suppressor hypothesis (C145) is speculative. No functional studies of these mutations are presented. The correlation between mutations and cancer type is interesting but does not establish causation or mechanism. This represents a bioinformatic observation that requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

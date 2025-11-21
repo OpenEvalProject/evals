@@ -1,0 +1,133 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Prior deep mutational scanning studies revealed that allosteric hotspots in TetR family transcription factors are broadly distributed across protein structures rather than forming well-defined pathways, and that hotspot mutation-induced allostery loss can be rescued by distributed additional mutations in a degenerate fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 accurately summarize findings from previous DMS studies on TetR family proteins, as evidenced by appropriate citations. These claims establish the experimental context and motivation for the current work, representing well-established prior findings rather than new results from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors developed a two-domain thermodynamic model for TetR allostery in which the protein is divided into ligand-binding and DNA-binding domains, each featuring two conformations (inactive and active) with different free energies, and the domains are allosterically coupled through a free energy penalty \u03b3 when both adopt active conformations simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 describe the fundamental architecture of the two-domain model. The model structure is clearly defined with three key parameters (\u03b5L, \u03b5D, \u03b3) and is grounded in established structural knowledge (C5) and classic allostery theory (C6). The model assumptions are reasonable simplifications for capturing TetR allostery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C22"
+    ],
+    "result": "The two-domain thermodynamic model accurately captures the in vivo induction data of 15 TetR mutants with physically transparent parameters, and the estimated binding affinities agree well with reported experimental values from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19, and C22 are strongly supported by the experimental data shown in Figure 3A, which demonstrates excellent fits to induction curves across diverse mutants. The agreement with literature binding affinity values (C22) provides external validation. The Bayesian inference approach enables parameter quantification with well-defined uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C40",
+      "C41"
+    ],
+    "result": "The two-domain model is argued to be a more generic and simpler description of allostery compared to the MWC model, requiring only three biophysical parameters versus at least four for MWC when applied to two-domain systems, and is more consistent with structural observations of TetR than MWC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C40-C41 present a comparative analysis of the two-domain model versus MWC and EAM frameworks. The arguments are supported by citations to previous work and structural observations. The claim of greater simplicity (3 vs 4+ parameters) is valid, though the comparison could benefit from more direct quantitative benchmarking against MWC fits to the same data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C31"
+    ],
+    "result": "The model analysis reveals that intra-domain and inter-domain properties are always modified together by mutations, demonstrating an intrinsic connection between these properties for allosteric regulation despite no a priori correlation being assumed in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C31 are supported by the parameter values shown in Figure 3B and Figure 5, which demonstrate a negative correlation (\u03c1 = -0.65) between \u03b5L and \u03b3 across all mutants analyzed. This emergent correlation from the data, despite independent model parameters, provides insight into the interconnected nature of allosteric networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Epistasis is observed in all eight queried mutation combinations and can be largely rationalized through physical reasoning, with distant mutations like C203V having effects on DBD energetics and inter-domain coupling that are dominated by mutations closer to these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by the epistasis analysis in Figure 4 and Figure 4\u2014figure supplement 1-2. The observation that modified additive models with physically motivated weight adjustments can capture epistatic effects provides mechanistic insight. However, one case (Y132A-G102D-T26A) shows strong epistasis that cannot be explained by simple modifications, indicating limits to the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "A comprehensive single-mutant TetR library was generated covering positions 2-207 with all 19 amino acid substitutions, totaling 3914 mutant sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 describes the experimental library construction, which is detailed in the Materials and methods section. The library design is appropriate for comprehensive mutational analysis, though the manuscript focuses on detailed characterization of 15 selected mutants rather than the full library.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The homodimeric nature of TetR is ignored in the current two-domain model to minimize the number of parameters, with acknowledgment that additional experimental data could necessitate a more complex model in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 explicitly acknowledges a key simplification of the model. This is a reasonable modeling choice for parsimony, and the authors appropriately note it as a limitation. The success of the three-parameter model in fitting the data suggests this simplification is adequate for the current analysis, though it may limit applicability to phenomena requiring explicit consideration of dimer cooperativity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "C203V and Y132A could not rescue a range of dead mutations including R49A, D53V, G102D, N129D, and G196D, as reported in previous experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 cites previous experimental observations (Leander et al., 2020) and is used to contextualize the epistasis analysis. The current work provides a mechanistic explanation for these observations through the two-domain model framework, showing how distant mutations like C203V have effects dominated by closer mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The negative correlation between \u03b5L and \u03b3 potentially offers a functional advantage of preventing mutants from regions of low allosteric response, facilitating efficient adaptation to new effectors during evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is explicitly speculative, proposing an evolutionary interpretation of the observed negative correlation between \u03b5L and \u03b3. While the correlation is well-supported by data (Figure 5), the functional advantage and evolutionary implications are hypothetical and would require additional evidence such as evolutionary analysis across TetR homologs or experimental evolution studies to validate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Cognitive impairment and dementia represent significant and growing public health concerns. At least 22.2% of individuals over 71 in the US have mild cognitive impairment, and global dementia cases are predicted to triple by 2050.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-supported by citations to published epidemiological studies (Plassman, 2008; Langa and Levine, 2014; Gillis et al., 2019; Feigin et al., 2020; Nichols and Vos, 2020). These are established prior work findings that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "C. elegans is a tractable model for studying neuronal aging, with a well-characterized temporal progression of cognitive decline: long-term memory is lost by Day 4, learning and short-term memory by Day 8, chemotaxis by Day 10-12, and motility by Day 16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are supported by citations to foundational work (White et al., 1986; Kauffman et al., 2010; Hahm et al., 2015). The temporal sequence of functional decline is well-established in prior literature and provides the rationale for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The IIS/FOXO pathway regulates longevity across species. In C. elegans, daf-2 mutants live twice as long as wild-type, requiring the FOXO transcription factor DAF-16, which controls expression of genes involved in stress response, proteostasis, autophagy, and metabolism. This pathway is conserved in Drosophila, mice, and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are well-supported by citations to seminal studies (Kenyon et al., 1993; Murphy et al., 2003; Clancy et al., 2001; Bl\u00fcher et al., 2003; Suh et al., 2008; Willcox et al., 2008). This established prior work provides the foundation for investigating neuronal aging in this pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "daf-2 mutants display improved and extended neuronal function with age, including better learning, memory, motility, maximum velocity, neuromuscular junctions, axon regeneration, and neuronal morphology compared to wild-type worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 are supported by citations to multiple prior studies (Kauffman et al., 2010; Hahm et al., 2015; Liu et al., 2013; Li et al., 2016; Byrne et al., 2014; Lakhina et al., 2019; Pan et al., 2011; Tank et al., 2011; Toth et al., 2012; Bansal et al., 2015). These establish the phenotypic basis for the current transcriptomic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Previous neuron-specific RNA-sequencing in young (Day 1) adult C. elegans identified neuron-specific targets that are distinct from whole-animal changes and necessary for improved memory and axon regeneration in daf-2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by citation to the authors' prior work (Kaletsky et al., 2016). This establishes the precedent for neuron-specific transcriptomics and provides context for the current study of aged neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Recent whole-animal single-cell RNA-seq datasets exist for wild-type and daf-2 worms but are insufficient for in-depth neuronal analysis due to limited sequencing depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by citations (Gao et al., 2023; Wang et al., 2022; Roux et al., 2023) and the authors' assessment. This justifies the need for the current FACS-based neuron-specific approach with deeper sequencing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "High-purity FACS isolation of neurons (>99.94% GFP+) from Day 1 and Day 8 wild-type worms, with 100,000 cells per replicate (6 replicates per condition), yielded high-quality RNA-seq data with an average of 41.6 million uniquely-counted reads, detecting 19,725 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are supported by experimental data shown in Figure 1 and Figure 1\u2014figure supplement 1. The FACS purity, sample sizes, sequencing depth, and gene detection are well-documented. The methods are appropriate for neuron-specific transcriptomics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "With age, wild-type neurons show significant differential expression: 1,146 genes are downregulated and 2,016 genes are upregulated. Downregulated genes encode neuronal function proteins including synaptic proteins, potassium channels, and transmembrane transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by RNA-seq data analysis shown in Figure 1c-f. The differential expression analysis uses appropriate statistical thresholds (adjusted p<0.001, log2FC>2) and GO analysis confirms functional enrichment. The findings are consistent with loss of neuronal identity with age.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Specific neuron-type genes decline with age, including ins-6 (an insulin-like peptide regulating longevity and learning) and srd-23 (a serpentine receptor in AWB neuron cilia).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by RNA-seq data (Figure 1g, Figure 1\u2014figure supplement 1f) and citations to prior functional studies (Taylor et al., 2021; Artan et al., 2016; Chen et al., 2013; Brear et al., 2014). The age-related decline of these functionally important genes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Loss of several genes that decline with age in neurons (ins-6, mec-7, unc-4, folt-2, madd-4, fbf-1) has been previously shown to cause behavioral dysfunction in motility and chemosensory abilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by citations to multiple prior functional studies (Chen et al., 2013; Savage et al., 1989; Lakhina et al., 2019; Maro et al., 2015; Stein and Murphy, 2014). This connects the observed transcriptional changes to known functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Aged wild-type neurons upregulate F-box genes with proteasome E3 activity, as well as transcription regulation and chromatin structure genes (including utx-1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by RNA-seq data analysis shown in Figure 2a-b. The upregulation of proteolysis and epigenetic regulators suggests dysregulation rather than maintenance of neuronal identity with age.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "utx-1, a histone demethylase that increases with age in neurons and is involved in development, lifespan, and cognition, shows that its adult-only knockdown improves 1 hr and 2 hr memory in young worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by citations (Vandamme et al., 2012; Jin et al., 2011; Maures et al., 2011; Guillermo et al., 2021; Shaw et al., 2023; Tang et al., 2017) and experimental data (Figure 2c-d). The finding that knockdown improves memory suggests the age-related increase is deleterious rather than compensatory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Loss-of-function of ins-19 and adult-only knockdown of nmgp-1, both upregulated with age, improve learning and memory in young worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by experimental data shown in Figure 2f and 2h. These findings, along with utx-1, demonstrate that at least some age-upregulated genes have deleterious effects on cognitive function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "daf-2 mutants maintain learning until Day 19 and memory until Day 15, while daf-16;daf-2 mutants have no memory ability even on Day 1, demonstrating that learning and memory are mechanistically distinct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by behavioral data shown in Figure 3a-b and citation to Stein and Murphy, 2014. The differential effects on learning vs memory in daf-16;daf-2 mutants provide strong evidence for mechanistic distinction. Sample sizes (n=10 plates) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "daf-2 mutants maintain learning and memory abilities proportional to (or slightly beyond) their lifespan extension, demonstrating improved healthspan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by behavioral data (Figure 3c-d) and lifespan data (Figure 3\u2014figure supplement 1c), with reference to Hahm et al., 2015. The proportional extension of cognitive function relative to lifespan is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Day 8 neuron RNA-seq achieved high sequencing depth (average 47.2 million reads per sample) and detected 16,488 genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by data stated in the text and shown in Figure 3\u2014figure supplement 1e and Supplementary file 5. The sequencing depth is sufficient for differential expression analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Day 8 daf-2 neurons upregulate stress response genes (heat shock, oxidative stress, metal stress) and proteolysis genes relative to daf-16;daf-2. Among the top 100 upregulated genes, 36 have identified orthologs, of which 32 (89%) have neuroprotective functions in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by RNA-seq data analysis and ortholog analysis shown in Table 1. The high proportion of genes with neuroprotective mammalian orthologs is compelling, though the functional inference from orthologs requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "RNAi knockdown of F08H9.4, mtl-1, and dod-24 significantly decreased learning in Day 6 daf-2 mutants, while knockdown of these genes plus C44B7.5 and alh-2 affected 1 hr memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by experimental data shown in Figure 4d-e. The RNAi experiments use neuron-sensitized strains and appropriate controls. Sample sizes (n=5 plates, 3 biological replicates) are adequate. Statistical analysis (one-way ANOVA with Dunnett's post-hoc) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Wild-type neuronal aging is characterized by downregulation of neuronal function genes and upregulation of proteolysis genes and transcriptional/epigenetic regulators, explaining loss of neuronal identity and function with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by RNA-seq data analysis shown in Figures 1 and 2. The bidirectional changes (loss of neuronal genes, gain of non-neuronal genes) provide a mechanistic explanation for cognitive decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "daf-2 neurons maintain higher expression of stress response genes and predicted neuronal homeostasis functions, which may confer resistance to environmental adversities and age-related decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is supported by RNA-seq data analysis shown in Figure 3f and Table 1. The upregulation of stress response and homeostasis genes in daf-2 provides a plausible mechanism for extended cognitive function, though direct causality requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "dod-24, traditionally classified as a Class II gene downregulated in whole-worm daf-2 and involved in immunity and lifespan, is upregulated in daf-2 neurons and required for extended learning and memory in aged worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by citations (Murphy et al., 2003; Tepper et al., 2013; Shapira et al., 2006; Eckl et al., 2017; Mack et al., 2022) and RNAi data (Figure 4d-e). This demonstrates tissue-specific regulation and highlights the value of neuron-specific analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C77",
+      "C104",
+      "C116"
+    ],
+    "result": "Day 8 daf-2 vs daf-16;daf-2 neuronal differentially-expressed genes differ substantially from Day 1 data, with many more genes differentially expressed at Day 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C104, and C116 are supported by comparison of current Day 8 data with previously published Day 1 data (Kaletsky et al., 2016), shown in Figure 4a and Figure 3\u2014figure supplement 2d. This demonstrates age-specific transcriptional programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "All top 50 genes and 90% of the top 100 genes with identified mammalian orthologs among Day 8 daf-2 upregulated genes are essential to neuronal functions in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by ortholog analysis shown in Table 1 with citations to mammalian studies. The high conservation of neuroprotective function is compelling, though functional validation in C. elegans would strengthen the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ins-19 is upregulated in aged wild-type neurons, downregulated in aged daf-2 neurons, and its downregulation in wild-type worms extends memory span.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by RNA-seq data (Figure 2e) and behavioral data (Figure 2f). This demonstrates that daf-2 reverses an age-related deleterious change, providing a mechanism for improved cognitive function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Wild-type neurons lose neuronal identity through loss of neuron-specific function genes and dysregulated increase in non-neuronal genes with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by RNA-seq data analysis shown in Figures 1 and 2. The bidirectional transcriptional changes provide a comprehensive mechanism for loss of neuronal identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "At least some genes upregulated with age play deleterious roles, as their knockdown improves function even in young animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by experimental data showing that knockdown of utx-1, ins-19, and nmgp-1 improves memory in young animals (Figure 2d, f, h). This challenges the compensatory model and suggests active dysregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Knockdown of individual top-ranked genes functioning in learning and memory can have large impacts, unlike the additive effects seen in longevity pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by experimental data (Figure 4d-e) showing significant effects of individual gene knockdowns. The contrast with longevity pathways is supported by citation to prior work (Murphy et al., 2003).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "dod-24, F08H9.4, C44B7.5, and alh-2 were previously not associated with memory function but are required for daf-2's age-related improvement in learning and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by the authors' literature knowledge and novel experimental findings (Figure 4d-e). These represent new discoveries linking specific genes to cognitive aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Genes required for daf-2's extended memory with age are distinct from Day 1 daf-2 vs daf-16;daf-2 upregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by comparison of Day 8 and Day 1 differentially expressed genes shown in Figure 4a. This demonstrates age-specific mechanisms for maintaining cognitive function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "High-depth sequencing with ribosomal RNA depletion detected more genes than other neuron-related datasets, uncovering genes not previously known to be expressed in neurons and revealing involvement of known neuronal genes (ins-6, srd-23) in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by comparison with other datasets (Wang et al., 2022; Figure 5\u2014figure supplement 1) and sequencing depth data. The methodological advantages of the approach are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Day 8 daf-2 upregulated genes are not canonical neuronal genes but metabolic and proteolytic genes with neuroprotective orthologs, suggesting daf-2 enhances neuronal resilience rather than simply mimicking a young state, requiring different mechanisms than in young animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by analysis of Day 8 differentially expressed genes and their functional categories. The inference that daf-2 uses active resilience mechanisms rather than passive maintenance is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C121"
+    ],
+    "result": "utx-1 is an H3K27me3 histone demethylase involved in development and lifespan through the IIS pathway. Its loss decreases methylation on daf-2, increasing DAF-16 nuclear localization and mimicking a daf-2 mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 and C121 are supported by citations to prior mechanistic studies (Vandamme et al., 2012; Jin et al., 2011; Maures et al., 2011; Guillermo et al., 2021). This provides mechanistic context for the observed effects on memory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Comparison of Day 8 whole worms and neurons reveals 174 shared and 396 neuron-specific daf-2 upregulated genes (including dod-24, srh-2, lin-42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by data shown in Figure 3h and Figure 3\u2014figure supplement 2c. This demonstrates the value of tissue-specific analysis for identifying neuron-specific regulatory changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "About one-third (338 genes) of daf-2-upregulated genes are shared between daf-2 vs daf-16;daf-2 and daf-2 vs N2 analyses. Genes specific to daf-2 vs N2 include bZIP transcription factors and proteasome components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by data shown in Figure 3\u2014figure supplement 3. This suggests additional transcription factors beyond DAF-16 may regulate daf-2 functions in aged neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "daf-2 worms are susceptible to RNAi in neurons. alh-2 and F08H9.4 are only expressed in neurons and cephalic sheath cells, while C44B7.5 and dod-24 were not upregulated in whole-worm daf-2 analysis, suggesting neuron-autonomous effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by citations (Kaletsky et al., 2016; Wang, 2004; Kaletsky et al., 2018) and data (Figure 3f). The tissue-specificity arguments support neuron-autonomous function, though formal tissue-specific rescue experiments would be definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "dod-24 is a Class 2 daf-2-downregulated gene in whole-animal analyses, suggesting its increase is specifically in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by prior whole-animal analyses (Murphy et al., 2003) and the current neuron-specific data. The inference of neuron-specific upregulation is reasonable given the opposite directions in whole-worm vs neuron data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C122"
+    ],
+    "result": "Insulin-like peptides exhibit diverse functions in development, dauer formation, longevity, and neuronal activities. Specific peptides (ins-6/ins-7, ins-22) regulate aversive learning and memory, and some (ins-7, ins-18) are downregulated in daf-2 mutants, possibly creating a feedback loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 and C122 are supported by citations to multiple prior studies (Murphy et al., 2003; Murphy et al., 2007; Chen et al., 2013; Lakhina et al., 2015; and others). This provides context for the role of insulin-like peptides in the observed phenotypes.",
+    "result_type": "MINOR"
+  }
+]

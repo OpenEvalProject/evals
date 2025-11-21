@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed an agent-based model (ABM) using the Cellular-Potts framework in CompuCell3D version 4.3.1 to simulate muscle regeneration. The model represents a 2D cross-section of approximately 50 murine muscle fibers over 28 days, includes seven cell types and seven diffusing cytokines, and was parameterized using over 100 published studies defining over 100 parameters and rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C24-C29 provide comprehensive technical details about model development, implementation, and scope. The authors clearly document the modeling framework, software version, spatial representation, temporal resolution, cell types, cytokines, and literature basis. These are methodological descriptions that are internally consistent and appropriately detailed for computational model development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The model incorporates detailed cellular behaviors for neutrophils, macrophages, satellite stem cells (SSCs), fibroblasts, and microvessels based on literature-derived rules. Each cell type has specific recruitment, chemotaxis, secretion, differentiation, and apoptosis behaviors governed by cytokine thresholds and temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C51 describe the biological rules implemented in the model, each supported by citations to experimental literature (Tables 1-6). The authors provide extensive documentation of cell behaviors with appropriate references. While the model is a simplification of reality, the rules are well-justified by cited literature and represent a reasonable abstraction of known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model was calibrated using CaliPro parameter density estimation with Latin hypercube sampling of 600 parameter sets run in triplicate over eight iterations. The final parameter set was validated with 100 replicate runs to ensure consistency with experimental trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe a rigorous calibration methodology appropriate for high-dimensional stochastic models. The iterative approach with 600 samples per iteration and final validation with 100 replicates demonstrates thoroughness. The choice of CaliPro is justified (C53) for handling model complexity without requiring a cost function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C59",
+      "C60"
+    ],
+    "result": "The calibrated model successfully reproduced experimental data for CSA recovery, SSC counts, and fibroblast counts. Model outputs showed 95% confidence intervals within experimental standard deviation for all calibration timepoints except SSCs at day 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C59-C60 are supported by Figure 3A-C showing good agreement between model predictions and experimental data. The quantitative assessment of confidence intervals relative to experimental variation provides appropriate statistical validation. The single exception (SSC day 3) is acknowledged, demonstrating scientific honesty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C57"
+    ],
+    "result": "The model was validated using independent datasets not used in calibration, including macrophage (M1, M2, total), neutrophil, and capillary counts, which followed experimental trends without additional tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C57 describe proper validation methodology using held-out data (Figure 3D-H). The validation metrics were deliberately kept separate from calibration criteria, which is appropriate practice. The agreement with experimental trends without additional tuning strengthens confidence in model generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Eight model perturbations were compared to published experimental studies to validate predictive capabilities. The model successfully reproduced experimental findings for VEGF-A injection, cell depletion, and hindered angiogenesis, showing both improved and diminished regeneration outcomes consistent with literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C58, C62-C65 are supported by Figure 4 and Table 8 showing systematic comparison of model predictions with experimental results. The use of 100 replicates per perturbation with statistical testing (two-sample t-test, \u03b1=0.05) is appropriate. The model correctly predicted directional changes for most perturbations, validating its predictive utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Two model perturbations (TNF-\u03b1 knockout and macrophage depletion) showed discrepancies with experimental results. The authors hypothesize these differences arise from missing model components (interferon cross-regulation) and experimental confounders (clodronate liposome effects).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 honestly report model limitations and provide plausible mechanistic explanations for discrepancies. The hypotheses are supported by citations (C67: Cantaert et al., 2010; C69: Liu et al., 2017). This transparent reporting of model failures alongside successes strengthens overall credibility and identifies areas for future improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "VEGF-A injection simulations revealed dose-dependent effects on muscle regeneration. High VEGF-A injection (10\u00b3 relative concentration) produced the greatest CSA recovery at 28 days, while medium and low doses showed transient benefits. All doses increased capillary counts proportionally, with dose-dependent effects on SSC and fibroblast peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by Figure 5A-F showing clear dose-response relationships. The nonlinear dose-response (C71-C72) and proportional capillary response (C73) demonstrate model capability to capture complex biological phenomena. The temporal dynamics (transient vs. sustained effects) add biological realism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Hindered angiogenesis simulations predicted elevated HGF, TGF-\u03b2, and IL-10 levels from days 5-28, altered MCP-1 dynamics, and reduced CSA recovery that failed to reach normal regeneration levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by Figure 5B, H, I, L showing cytokine and recovery dynamics under hindered angiogenesis. The predictions are consistent with experimental validation (C65) and provide mechanistic insight into how impaired angiogenesis affects the cytokine milieu and regeneration outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C92"
+    ],
+    "result": "Cytokine knockout simulations revealed complex temporal cross-talk between cytokines. MCP-1 KO increased most cytokines except VEGF-A at 12 hours; TNF-\u03b1 KO showed biphasic TGF-\u03b2 dynamics; IL-10 KO increased TNF-\u03b1 peaking at day 7. These results demonstrate cascading temporal impacts of single cytokine removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C92 are supported by Figure 6A-C showing cytokine dynamics following knockouts. The temporal complexity and non-intuitive interactions (e.g., biphasic responses) demonstrate model capability to capture network-level effects. The interpretation of cascading impacts (C92) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Sensitivity analysis using Latin hypercube sampling and partial rank correlation coefficient identified temporal relationships between cytokine parameters and regeneration metrics. HGF decay was the most influential parameter, affecting all outputs except M1 count. TGF-\u03b2 and MMP-9 decay positively correlated with CSA recovery, while HGF decay negatively correlated, with significance increasing after 12 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C81-C83 are supported by Table 9 and Figure 7\u2014figure supplement 1 showing PRCC analysis results. The sensitivity analysis methodology is appropriate for identifying key parameters in high-dimensional models. The temporal evolution of correlations (C83) provides insight into which parameters matter at different regeneration stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C9"
+    ],
+    "result": "In silico perturbations guided by sensitivity analysis showed that combined alterations of cytokine decay and diffusion parameters (lower HGF and VEGF-A decay, higher TGF-\u03b2, MMP-9, and MCP-1 decay, higher MCP-1 diffusion) produced synergistic effects. The combined perturbation resulted in 13% increased CSA recovery at 28 days compared to control, with higher SSC and fibroblast peaks than any single perturbation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88, C9 are supported by Figure 7A-F showing outcomes of individual and combined perturbations. The 13% improvement is quantitatively stated and the synergistic effects (higher peaks than individual perturbations) are clearly demonstrated. The approach of using sensitivity analysis to guide perturbations is scientifically sound and represents a key contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C94"
+    ],
+    "result": "The model provides insights into nonlinear cytokine effects and mechanisms of enhanced regeneration. Combined cytokine alterations enhance recovery through distinct mechanisms including increased capillaries, SSC counts, and reduced inflammatory cells. The model demonstrates advantages over experimental approaches by providing controlled conditions and enabling systematic exploration of parameter space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C94 represent interpretations and discussion of results that are well-supported by the data presented. The nonlinear effects (C91) are shown in Figure 7\u2014figure supplement 2, and the mechanistic interpretation (C94) is consistent with the combined perturbation results. The comparison to PRP therapy (C90) appropriately contextualizes findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The current model advances beyond prior muscle regeneration ABMs by incorporating spatial cytokine diffusion and decay dynamics, microvessel growth and remodeling, and rigorous calibration methodology. These additions enable investigation of angiogenesis impacts and cytokine alterations that were not possible in previous models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C104-C109 appropriately position the work relative to prior models with supporting citations. The claimed advances (spatial cytokines, microvasculature, calibration) are substantiated by the methods and results. The comparison to prior work (C108) shows consistency while highlighting new insights (C109), demonstrating incremental scientific progress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The model predictions have translational relevance for therapeutic development. Prior studies show individual cytokine effects on regeneration, and various delivery approaches exist (biomaterials, antagonists, plasmin activation). The model can guide optimization of cytokine combinations and temporal delivery schedules, potentially informing multi-component therapeutic strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93, C95-C97, C99-C100 appropriately cite prior experimental work on cytokine effects and delivery methods. However, claims C101-C103 about future therapeutic applications are speculative. While the model predictions are scientifically sound, experimental validation of the proposed multi-component intervention (C103) is needed before therapeutic relevance can be confirmed. The translational potential is plausible but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors acknowledge multiple model limitations including incomplete representation of cell types and cytokines, lack of hypertrophy, 2D geometry, heterogeneous calibration data sources, potential parameter non-uniqueness, and male-only calibration data. Some limitations are justified (C111, C114) while others require future work (C121).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C121 provide transparent and comprehensive discussion of limitations. The justifications for some limitations (redundant functions C111, 2D validity C114) are supported by citations. The acknowledgment of data limitations (C116, C120) and parameter uncertainty (C117-C118) demonstrates scientific rigor. The identification of needed future work (C121) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Muscle regeneration is a complex, multiscale process involving coordinated interactions between multiple cell types and cytokines across five phases. Current treatments lack scientific basis and have variable outcomes. Experimental approaches face challenges in studying cytokine dynamics due to complexity, cost, and the combinatorial nature of possible interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C20 provide background and motivation supported by appropriate citations. The epidemiological data (C10), clinical practice descriptions (C11-C12), and biological process descriptions (C13-C17) are well-established knowledge appropriately referenced. The justification for computational approaches (C19-C20) is logical given experimental constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Studies that deliver simple modulation of one or two cytokines typically have insufficient response to generate appreciable improvements in muscle regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is presented as general knowledge but lacks specific citations. While this may reflect the authors' synthesis of the literature and is consistent with the complexity of cytokine networks, the claim would be stronger with supporting references. The statement is plausible but not definitively supported as presented.",
+    "result_type": "MINOR"
+  }
+]

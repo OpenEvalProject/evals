@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C15",
+      "C16"
+    ],
+    "result": "TFIIIC binds directly to the amino-terminal transcriptional regulatory domain of MYCN. The MYCN amino-terminal region (aa 2-137) forms a stable 1:1:1:1 complex with the \u03c4A subcomplex of TFIIIC, as demonstrated by pull-down experiments, gel filtration, and native mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, C15, and C16 provide converging biochemical evidence for direct binding between MYCN and TFIIIC. Pull-down experiments recovered all six TFIIIC subunits with FLAG-tagged MYCN (C12), gel filtration showed co-elution of purified MYCN with \u03c4A (C15), and native mass spectrometry confirmed a 1:1:1:1 stoichiometry with molecular weight 204.7 kDa (C16). These multiple orthogonal approaches strongly support direct interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "TFIIIC has both general and MYCN-specific roles in neuroblastoma cell proliferation. Depletion of TFIIIC2 or TFIIIC3 attenuated proliferation under control conditions, while TFIIIC5 depletion had little effect. However, MYCN activation (4-OHT treatment) greatly enhanced the inhibitory effect of depleting any TFIIIC subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 are supported by growth curve data in Figure 1E showing differential effects of TFIIIC subunit depletion with and without MYCN activation. The additive effect of MYCN activation and TFIIIC depletion supports the inference of both general and MYCN-specific roles (C20). However, the mechanism underlying the differential effects of TFIIIC5 versus TFIIIC2/3 depletion is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C28",
+      "C4"
+    ],
+    "result": "MYCN and TFIIIC globally limit the accumulation of non-phosphorylated RNAPII at promoters. Activation of MYCN caused a global decrease in promoter association of non-phosphorylated RNAPII, and depletion of TFIIIC5 abrogated this MYCN-dependent decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C28 are well-supported by ChIP-seq data in Figure 2A-C showing global effects on non-phosphorylated RNAPII. The control experiment (C24) confirms specificity to MYCN activation. The abrogation of the MYCN effect by TFIIIC5 depletion (C28) demonstrates functional dependence on TFIIIC. Statistical analysis and spike-in normalization strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "TFIIIC has no discernible role in MYCN-dependent gene expression and transcription elongation. Depletion of TFIIIC5 had no effect on MYCN-dependent changes in transcription elongation (measured by pSer2-RNAPII at TES) or on steady-state mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29, C30, and C31 are supported by RNA-seq data (Figure 2E, Figure 2\u2014figure supplement 1D) and ChIP-seq data for pSer2-RNAPII (Figure 2A-C). The lack of significant effects on gene expression despite effects on non-phosphorylated RNAPII accumulation is surprising but well-documented. This dissociation between RNAPII dynamics and gene expression is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "MYCN and TFIIIC preferentially bind to promoters with paused RNAPII. Activation of MYCN enhanced TFIIIC5 association with active promoters, and DRB treatment (which stabilizes paused RNAPII) further increased TFIIIC5 association in an additive manner with MYCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C35 are supported by ChIP-seq data in Figure 2F showing enhanced TFIIIC5 association upon MYCN activation and DRB treatment. The additive effect of MYCN and DRB (C34) supports the inference that MYCN recruits TFIIIC5 to paused promoters (C35). However, the inference relies on the assumption that DRB specifically stabilizes paused RNAPII without other effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "MYCN broadly participates in hubs of active promoters. pLHiChIP identified 4,591 MYCN interactions, with 28% positioned on RNAPII promoters. MYCN participated in three-dimensional promoter hubs connecting up to 34 promoters and 10 enhancers, enriched for ribosomal protein and ribosome biogenesis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C44, and C46 are supported by pLHiChIP data (Figure 3) showing thousands of MYCN interactions and network reconstruction. Quality controls (Figure 3\u2014figure supplement 1C-E) validate the approach. The functional annotation showing enrichment for ribosomal genes (C46) is consistent with MYCN's known role in ribosome biogenesis. The hub size (up to 34 promoters) is consistent with published estimates (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C55",
+      "C56"
+    ],
+    "result": "Depletion of TFIIIC increases MYCN localization to promoter hubs. spLHiChIP experiments showed that depletion of TFIIIC5 strongly increased the number of chromatin interactions of MYCN, indicating that association with TFIIIC antagonizes MYCN participation in promoter hubs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C55, and C56 are supported by spLHiChIP data in Figure 4E-F showing increased MYCN interactions upon TFIIIC5 depletion. The spike-in normalization allows quantitative comparison. The inference that TFIIIC antagonizes MYCN hub participation (C56) is logical but represents a mechanistic interpretation. Alternative explanations (e.g., indirect effects through chromatin structure) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C71",
+      "C77"
+    ],
+    "result": "TFIIIC is required for the association of the nuclear exosome with active promoters. Depletion of TFIIIC5 strongly decreased the association of EXOSC5 (a core exosome subunit) with regions around the TSS in both control and MYCN-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C71, and C77 are supported by CUT&RUN data in Figure 5B showing decreased EXOSC5 association upon TFIIIC5 depletion. The effect is observed in both control and MYCN-expressing cells, indicating a general requirement for TFIIIC. However, the mechanism by which TFIIIC recruits or stabilizes the exosome is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "TFIIIC is required for MYCN-dependent recruitment of BRCA1 to active promoters. Induction of MYCN recruited BRCA1 to all tested promoters, but depletion of TFIIIC5 abrogated this MYCN-dependent BRCA1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C74-C76, and C78 are supported by ChIP data in Figure 5C and Figure 5\u2014figure supplement 1E showing loss of MYCN-dependent BRCA1 recruitment upon TFIIIC5 depletion. The data are consistent with previous observations (C73, C74). However, the experiments test only a limited number of promoters, and the generality of the effect is inferred rather than comprehensively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C119"
+    ],
+    "result": "MYCN and TFIIIC exert a censoring function in early transcription that limits promoter accumulation of inactive RNAPII and facilitates promoter-proximal degradation of nascent RNA. This quality control function may focus transcriptional resources on genes driving tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C10, and C119 represent integrative interpretations of multiple findings. While the individual observations (effects on non-phosphorylated RNAPII, exosome, and BRCA1) are well-supported, the proposed 'censoring function' is a mechanistic model that is not directly tested. The claim that this contributes to tumor growth (C119, C120) is speculative and would require additional functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MYCN and TFIIIC participate in common chromatin hubs. TFIIIC pLHiChIP identified 3,499 interactions, with 31% connecting RNAPII genes to SINE elements. 1,107 of 4,591 MYCN interactions shared anchors with TFIIIC interactions, and motif analysis showed E-boxes and A/B-boxes in shared interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 are supported by pLHiChIP data for TFIIIC (Figure 4A-D) and comparison with MYCN interactions. The overlap analysis (C49) and motif analysis (C51) support the inference that MYCN and TFIIIC participate in common hubs (C50, C52). However, the functional significance of TFIIIC-only interactions (C54) lacking promoter enrichment is not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "MYCN/TFIIIC5-bound genes are not part of three-dimensional promoter hubs. Expression of MYCN moderately decreased TFIIIC5 interactions, and DRB treatment strongly decreased TFIIIC5 interactions with promoters, gene bodies, and SINE elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by spLHiChIP data in Figure 4G-H and Figure 4\u2014figure supplement 1C. The inference that MYCN/TFIIIC5-bound genes are not in hubs (C60) is logical given the decreased interactions upon DRB treatment. However, this conclusion appears to contradict earlier claims that MYCN and TFIIIC participate in common hubs (C50), suggesting context-dependent behavior that requires clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Depletion of TFIIIC3 caused aberrant splicing (intron retention and exon skipping), but these alterations occurred mainly in downstream exons, were not observed for TFIIIC5, and were weakened by MYCN expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by rMATS analysis in Figure 5\u2014figure supplement 1A-B. However, the authors argue that these splicing effects do not account for the requirement for TFIIIC in MYCN-expressing cells (C63), as the effects are TFIIIC3-specific and weakened by MYCN. This suggests the splicing effects represent a TFIIIC function independent of the MYCN-TFIIIC interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "TFIIIC depletion affects proximity of RNAPII with termination factors. Activation of MYCN enhanced TFIIIC5-RNAPII proximity, while TFIIIC5 depletion enhanced RNAPII proximity with PP2A and PNUTS but had weak effects on NELFE proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by PLA data in Figure 5A and Figure 5\u2014figure supplement 1D. Appropriate controls (Figure 5\u2014figure supplement 1C) validate antibody specificity. The differential effects on different termination factors suggest specific roles for TFIIIC in recruiting certain factors. However, PLA measures proximity, not direct interaction, and the functional consequences are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The effects of TFIIIC on exosome and BRCA1 association with promoters are enhanced in MYCN-expressing cells and can account for the enhanced dependence of MYCN-expressing cells on TFIIIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C80 represent interpretations of the collective data. While the data show effects on exosome and BRCA1 (Figure 5B-C), the claim that these effects are 'enhanced' in MYCN-expressing cells (C79) requires quantitative comparison that is not clearly presented. The inference that these effects 'account for' the enhanced dependence (C80) is logical but not directly tested through rescue experiments or other functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "MYCN promoted an increase in transcription elongation as measured by pSer2-RNAPII occupancy at the TES, most pronounced on MYCN-activated genes, and this correlated closely with MYCN-dependent changes in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by ChIP-seq data for pSer2-RNAPII (Figure 2A, C) and correlation with RNA-seq data (Figure 2D). This confirms previous observations about MYCN's role in promoting elongation. The correlation between pSer2-RNAPII at TES and gene expression changes validates the functional relevance of the elongation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background on MYC/MYCN function: MYC and MYCN bind virtually all active promoters, promote pause release and elongation, limit R-loop accumulation, facilitate DNA repair, coordinate transcription with replication, and are central to cancer when dysregulated. MYCN has a causal role in neuroblastoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C93-C106 represent established knowledge supported by citations to prior work. These provide essential context for interpreting the current findings. The citations appear appropriate and the claims are consistent with the current understanding of MYC/MYCN biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background on TFIIIC function: TFIIIC is a general transcription factor for RNAPIII that also binds thousands of extra TFIIIC (ETC) sites at RNAPII promoters, often near MYCN binding sites. TFIIIC is an architectural protein affecting 3D chromatin organization, acting as an insulator, affecting cohesin loading, and compartmentalizing gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C92 represent established knowledge about TFIIIC supported by citations. These provide essential background for understanding the novelty of the current findings. The citations appear appropriate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background on transcriptional condensates: Active promoters coalesce at discrete nuclear sites, and transcription factors undergo liquid-liquid phase separation to form condensate-like structures. MYC proteins form condensates and enter mediator complex condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 represent established knowledge about transcriptional condensates supported by citations. This provides important context for the discussion of promoter hubs. The inference that transcription occurs in condensates (C109) is widely accepted but still represents a model rather than definitively proven mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Model for TFIIIC-Aurora-A competition: TFIIIC competes with Aurora-A kinase for MYCN binding, and since Aurora-A promotes RNAPII elongation, the competition between TFIIIC and Aurora-A may enable transcriptional elongation on MYCN-activated promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 represent established knowledge from prior work. However, the proposed model (C114) that competition between TFIIIC and Aurora-A enables elongation is speculative and not directly tested in this study. This represents a hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Background on nascent RNA fate: Nascent RNA fate is controlled by processes leading to splicing/polyadenylation or mis-splicing/termination/degradation. MYCN has been implicated in both processes. The nuclear exosome degrades aberrant nascent RNA, and BRCA1 recruits the decapping enzyme DCP1 at promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 represent established knowledge supported by citations, including prior work from the same group. This provides essential context for interpreting the findings on exosome and BRCA1 recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "TFIIIC structure and experimental observations: TFIIIC is composed of two subcomplexes (\u03c4A and \u03c4B), each with three subunits. The \u03c4B complex was too unstable to be isolated in the recombinant expression system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 represents established knowledge about TFIIIC structure. Claim C14 is an experimental observation explaining why the authors focused on the \u03c4A subcomplex. This is a methodological detail that is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The number of promoters in the largest MYCN hubs (up to 34) is consistent with published estimates for promoter hub size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by citation to published work (Palacio and Taatjes, 2022). This validation against published estimates strengthens confidence in the pLHiChIP methodology and data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "Background on termination factors: PP2A is recruited to promoters via interaction with the integrator termination complex. PNUTS is a PP1 targeting subunit involved in termination. EXOSC5 is a core structural subunit of the exosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, and C72 represent established knowledge supported by citations. These provide context for interpreting the PLA and CUT&RUN experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Only low amounts of BRCA1 were found at core promoters in SH-EP cells under basal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by ChIP data and is consistent with previous observations from the same group. This establishes the baseline for measuring MYCN-dependent BRCA1 recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Hypothesis: The TFIIIC/MYCN censoring function contributes to focusing transcription machinery and metabolic resources on genes that drive growth of MYCN-driven tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C120 is explicitly presented as a hypothesis by the authors. While it is a logical extension of the findings, it is speculative and would require additional experiments (e.g., tumor growth assays, metabolic profiling) to test. This represents a proposed model for future investigation.",
+    "result_type": "MINOR"
+  }
+]

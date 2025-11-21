@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors created an arrayed CRISPR/Cas9 knockout library targeting 90 intracellular lipid transfer proteins (LTPs) in MelJuSo cells, using three guide RNAs per gene in a 96-well format with 6 non-targeting controls. The library design enables both high and low throughput analysis and can be expanded to include newly identified LTPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 describe the library construction and validation with western blotting (Figure 1B), providing clear experimental evidence. Claims C114-C115 describe design features that are inherent to the arrayed format. The methodology is well-documented and the validation data supports successful library generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C30",
+      "C31",
+      "C33",
+      "C35"
+    ],
+    "result": "Lipidomics analysis of the LTP knockout library detected 17 lipid classes and confirmed both known and novel lipid disturbances. The analysis validated that glucosylceramide is the major hexosylceramide in MelJuSo cells, and non-targeting controls showed no z-scores above absolute value of 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C30-C31 describe the lipidomics methodology and scope. Claim C33 is validated by experimental data in Figure 1\u2014figure supplement 1 using metabolic chasing with fluorescent ceramide analogs and enzyme inhibitors. Claim C35 provides important quality control data showing the specificity of observed effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C36",
+      "C37"
+    ],
+    "result": "GLTP knockout cells showed lowered glucosylceramide levels, consistent with recent reports that loss of GLTP blocks ER-to-Golgi anterograde vesicular trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C36 report the experimental observation shown in Figure 2A and Figure 2\u2014figure supplement 1A-C. Claim C37 provides mechanistic context from recent literature (Nurmi et al., 2023), appropriately distinguishing between the authors' observations and prior mechanistic work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "NPC1 and NPC2 knockout cells showed elevated sphingolipid levels across all sphingolipid classes with lysosomal and cell surface accumulation, while phospholipid and surface protein levels remained unchanged. This confirms known sphingolipid accumulation phenotypes in Niemann-Pick disease type C models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are well-supported by multiple complementary approaches: lipidomics (Figure 2B-C), immunofluorescence with sphingomyelin biosensor (Figure 2D), and flow cytometry (Figure 2E-F). The specificity is demonstrated by unchanged phospholipid and CD63 surface protein levels. The findings are consistent with established knowledge about NPC1/NPC2 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CERT, ORP9, and ORP11 knockout cells all showed decreased sphingomyelin and increased glucosylceramide levels across multiple sphingolipid subspecies, with sensitivity to methyl-\u03b2-cyclodextrin treatment, but without major phospholipid imbalances or changes in CERT protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by lipidomics data (Figures 1C, 3A, 3C, Figure 3\u2014figure supplement 1A-B), functional assays (Figure 3D), and western blotting (Figure 3E). The convergent phenotypes of ORP9/ORP11 knockouts with CERT knockouts provide strong evidence for their involvement in sphingomyelin metabolism, while the lack of CERT protein changes rules out indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "ORP9 and ORP11 contain PH domains that mediate localization to the trans-Golgi, and loss of either protein does not alter Golgi ultrastructure as detected by light or electron microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 describes established protein domain architecture (Figure 3F-G) supported by prior literature. Claim C57 is validated by immunofluorescence and electron microscopy data (Figure 3\u2014figure supplement 2), ruling out gross structural defects as the cause of sphingolipid imbalances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ORP9 and ORP11 interact via coiled-coil regions between their PH and ORD domains, as predicted by AlphaFold-Multimer and validated by mitochondrial targeting experiments and co-immunoprecipitation. The coils are sufficient for dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 combine computational predictions (Figure 4A-D, Figure 4\u2014figure supplement 1) with experimental validation. The mitochondrial targeting experiment (Figure 4C-D) provides elegant functional evidence that the coils are both necessary and sufficient for dimerization. Co-immunoprecipitation (Figure 4E) provides biochemical confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "ORP9 contains a FFAT motif that interacts with ER-resident VAPA/VAPB, while ORP11 lacks this motif but can interact with VAPA/VAPB indirectly through dimerization with ORP9. BioID analysis confirmed proximity of both proteins to VAPA/VAPB but not other motif-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by co-immunoprecipitation experiments (Figure 4J) showing ORP11-VAPA interaction requires ORP9 co-expression and is abolished by VAPA mutations that prevent FFAT binding. Claim C74 provides orthogonal support from proximity labeling data (Figure 4\u2014figure supplement 1F). The logic is sound and the experiments are well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The PH domains of ORP9 and ORP11 show only partial Golgi localization individually, unlike OSBP and CERT PH domains. A chimera containing both PH domains localizes more efficiently to the Golgi, suggesting dimerization increases avidity for trans-Golgi membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by localization data (Figure 4H-I, Figure 6\u2014figure supplement 1I). Claim C79 is explicitly stated as a hypothesis, which is appropriate given the data. The chimera experiment provides strong support for the avidity model, though the claim correctly presents this as a mechanistic interpretation rather than direct proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Loss of either ORP9 or ORP11 reduces the other's localization to the trans-Golgi without affecting protein levels, demonstrating that dimerization via coils is required for simultaneous ER-trans-Golgi localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by immunofluorescence data (Figure 5) showing interdependent Golgi localization and western blotting (Figure 3E) showing unchanged protein levels. This provides strong evidence that the functional defect is due to mislocalization rather than protein instability, supporting the dimerization model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "ORP9 and ORP11 belong to the ORP family and carry conserved PS binding sites. In vitro assays demonstrate that their ORD domains can traffic both PS and PI(4)P between model membranes, with PS transfer enhanced by PI(4)P in acceptor liposomes, indicating counter-transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 are supported by phylogenetic analysis (Figure 6A), sequence conservation data (Figure 6\u2014figure supplement 1B), and in vitro lipid transfer assays (Figure 6B-E, Figure 6\u2014figure supplement 1C-E). The demonstration that ORP11 can transfer PI(4)P (C88) is novel and important. The counter-transport model is well-supported by the PI(4)P enhancement data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The ORP9-ORP11-VAPB complex displays improved lipid transfer capacity as a trimer in reconstituted membrane contact sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by PS transfer assays in reconstituted contact sites (Figure 6G-H). This elegant experiment demonstrates functional cooperation of the three proteins and provides mechanistic insight into how the complex operates at membrane contact sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "ORP9 and ORP11 knockout cells show decreased PS and increased PI(4)P levels in the Golgi, with more pronounced effects in ORP9 knockouts. Both phenotypes can be rescued by reconstitution of the missing protein, indicating the ORP9-ORP11 dimer is required for maintaining Golgi phospholipid homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by biosensor localization experiments (Figure 6I-L) and PI(4)P antibody staining (Figure 6\u2014figure supplement 1J). The rescue experiments provide strong evidence for specificity. The more pronounced effect in ORP9 knockouts is consistent with its unique FFAT motif. The conclusion about the dimer's role is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "ORP9, ORP11, and CERT knockout cells do not have reduced sphingomyelin synthesis capacity in whole-cell lysates, as measured by NBD-ceramide conversion assays, and show normal SMS1/SMS2 protein and mRNA levels. All three knockouts show increased glucosylceramide synthesis capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by enzymatic activity assays (Figure 7A-B), western blotting, and qRT-PCR (Figure 7\u2014figure supplement 1A-B). This important control distinguishes between loss of synthetic capacity versus defects in substrate delivery or localized synthesis, setting up the subsequent experiments on de novo synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "ORP9 and ORP11 knockouts show decreased conversion of palmitic acid to sphingomyelin in intact cells, with accumulation of ceramide and glucosylceramide, while CERT protein levels and Golgi localization remain normal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by palmitic acid alkyne metabolic labeling experiments (Figure 7C-E) and CERT localization studies (Figure 3E, Figure 7\u2014figure supplement 2). This demonstrates a defect in de novo sphingomyelin synthesis that is independent of CERT function, supporting a distinct role for ORP9/ORP11.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Lipidomics analysis of immunoisolated trans-Golgi membranes shows lowered PS and sphingomyelin levels but elevated ceramide levels in ORP9 and ORP11 knockouts, with reduced sphingomyelin synthesis capacity in isolated Golgi. Sphingomyelin synthase localization is not reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 are supported by Golgi isolation (Figure 7F-G), lipidomics of isolated fractions (Figure 7H-J, Figure 7\u2014figure supplement 3), and enzymatic assays on isolated Golgi (Figure 7K-L). The sphingomyelin synthase localization data (Figure 7\u2014figure supplement 4) rules out enzyme mislocalization. This is a critical result distinguishing ceramide delivery defects from local synthesis defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C150",
+      "C151"
+    ],
+    "result": "PS-PI(4)P exchange between the ER and trans-Golgi mediated by the ORP9-ORP11 complex is critical for de novo sphingomyelin synthesis in the trans-Golgi, revealing intertwining of lipid gradients along the secretory pathway at ER-trans-Golgi membrane contact sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C150, and C151 represent the main conclusion of the paper, integrating multiple lines of evidence: dimerization requirements, lipid transfer activities, phospholipid imbalances, and sphingomyelin synthesis defects. The conclusion is well-supported by the collective data, though the precise mechanism linking PS/PI(4)P exchange to sphingomyelin synthesis remains somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "STARD7 knockout cells show increased phosphatidylglycerol (PG) levels. STARD7 is a PC transfer protein that supplies PC to the mitochondrial inner membrane, and its loss reduces PC and cardiolipin levels. The PG accumulation may result from impaired cardiolipin synthase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is supported by lipidomics data (Figure 1C). Claims C117-C119 accurately cite prior literature. However, claim C120 is explicitly speculative and lacks direct experimental validation in this study. The proposed mechanism for PG accumulation is plausible but remains untested, making the overall result uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "ORP9 knockout cells display more pronounced phenotypes than ORP11 knockouts in sphingolipid imbalances, Golgi phospholipid levels, and sphingomyelin synthesis capacity. This is likely due to ORP9 providing the critical FFAT motif for contact site localization, while ORP11 loss may be partially compensated by ORP10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by multiple datasets showing differential severity. Claim C123 provides a logical mechanistic explanation based on the FFAT motif data. Claim C124 is appropriately presented as speculative, acknowledging uncertainty about ORP10 compensation. The interpretation is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The ORP9-ORP11 dimer localization is homologous to the ORP9-ORP10 dimer at ER-endosome/ER-Golgi contact sites, with ORP10 also using coiled coils to interact with ORP9. However, ORP10 knockout cells did not show sphingolipid imbalances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 are supported by citations to recent literature. Claims C127-C128 combine prior literature with the authors' own lipidomics data (Figure 8\u2014figure supplement 1A). This highlights functional differences between ORP10 and ORP11 despite structural similarities, though the mechanistic basis for this difference remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Expression analysis of >900 cancer cell lines shows ORP10 and ORP11 are not differentially expressed but show positive correlation. ORP9 might interact with ORP10 or ORP11 in different biological conditions or sub-cellular locations, potentially facilitating lipid flows at different Golgi sub-domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are supported by expression data analysis (Figure 8\u2014figure supplement 1B). Claims C134-C135 are appropriately presented as speculative possibilities rather than established facts. The expression correlation data is interesting but the functional implications remain to be tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "ORP9 loss causes more ceramide accumulation than CERT knockouts despite comparable sphingomyelin reduction. This may be explained by differential ceramide sensing: ER accumulation in CERT knockouts could activate feedback inhibition, while Golgi accumulation in ORP9 knockouts would not activate ER-localized ceramide sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 describes an interesting experimental observation. However, claims C140-C142 are explicitly speculative explanations lacking direct experimental validation. While the hypothesis is plausible and cites a candidate sensor (C141), the proposed mechanism remains untested. This represents an interesting observation requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The plasma membrane exhibits asymmetric lipid distribution with sphingomyelin/cholesterol on the outer leaflet and PS on the inner leaflet. The transition from thin, symmetrical ER membrane to thick, asymmetrical plasma membrane occurs in the Golgi. Various mechanisms drive lipid trafficking against concentration gradients, and the PI(4)P gradient could power anterograde PS trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C148 accurately summarize established knowledge from the literature with appropriate citations. Claim C149 is appropriately presented as a speculative extension of established mechanisms to explain PS trafficking. This provides important context for interpreting the ORP9-ORP11 results within the broader framework of secretory pathway lipid gradients.",
+    "result_type": "MINOR"
+  }
+]

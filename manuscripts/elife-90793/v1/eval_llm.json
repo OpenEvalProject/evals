@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The recall-gated consolidation model filters unreliable memories by gating LTM plasticity based on STM recall strength, resulting in higher SNR in LTM compared to STM and control models without gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C22-C33 collectively describe the core mechanism and demonstrate its effectiveness through simulations (Figure 2C). The theoretical framework is internally consistent, and simulation results show clear SNR improvements in the LTM module compared to both STM alone and parallel (non-interacting) STM+LTM models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Recall-gated consolidation improves performance in supervised learning, reinforcement learning, and unsupervised auto-associative memory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is directly supported by simulations shown in Figures 3E, F, and G, demonstrating improved classification accuracy, reward acquisition, and pattern recall across three distinct learning paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "As STM SNR increases (e.g., through larger N), stricter consolidation thresholds can be used, leading to greater SNR amplification in LTM and longer learnable timescales, particularly at high target SNRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by analytical theory and simulations in Figures 4A-C and supplements. The results show systematic improvements in LTM SNR and learnable timescale as system size increases, with recall-gated consolidation outperforming control models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Higher consolidation thresholds differentially affect reliable versus unreliable memories, allowing increased filtering of unreliable memories when reliable memories are reinforced multiple times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by Figures 4D-F, which demonstrate that consolidation rates for unreliable memories decrease more rapidly than for reliable memories as thresholds increase, enabling optimization of the reliability-consolidation rate tradeoff.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "Recall-gated consolidation achieves linear scaling of learnable timescale with number of repetitions R, outperforming synaptic consolidation models which achieve at best logarithmic scaling for simple models or linear scaling with large constant factor penalties for complex models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51, C53 are supported by analytical derivations (Appendix) and simulations (Figure 4G, supplements). The comparison across multiple synaptic models demonstrates the fundamental advantage of systems-level consolidation in scaling with repeated reinforcement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Non-monotonic gating functions produce spaced learning effects consistent with experimental observations, and these effects are more robust to intervening events than spacing effects arising from synaptic consolidation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by theoretical analysis (Figures 5A-B) and simulations comparing the model to synaptic models (Figure 5C, supplements). The model's spacing effects arise from population-level dynamics rather than synapse-local saturation, making them robust to interference. Consistency with experimental data (C55) is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "An extended model with multiple LTM subpopulations, each with distinct gating functions for different timescales, naturally produces the experimentally observed relationship between training spacing interval and memory retention timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by model simulations (Figures 5D-F, supplements) and appropriate citations to experimental literature (C61-C63). The model provides a mechanistic explanation for how spacing interval affects retention timescale through differential consolidation into subpopulations with varying plasticity rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The model predicts that memory recall responsibility shifts from STM to LTM over time, and that LTM update rates increase with both learning progress and environmental reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are directly demonstrated in simulations shown in Figures 6A-B. These predictions follow logically from the model's gating mechanism and are clearly illustrated in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The model predicts that optimal memory representations are sparser in STM than LTM, with LTM benefiting from denser representations that provide greater generalization and noise robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by analytical derivations (Appendix) and simulations (Figures 6C-D). The analysis shows that optimal sparsity depends on reinforcement rate \u03bb, which is effectively amplified in LTM, leading to the prediction of denser LTM representations. The connection to generalization (C73-C74) is supported by appropriate citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C82",
+      "C85",
+      "C87",
+      "C89",
+      "C91"
+    ],
+    "result": "Experimental evidence from Drosophila, songbirds, rodents, and hippocampal replay is consistent with predictions of the recall-gated consolidation model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79, C82, C85, C87, C89, C91 interpret existing experimental findings as consistent with the model. While the cited experiments (C75-C92) provide suggestive evidence, the authors appropriately acknowledge that these studies were not designed to test their model and that alternative interpretations are possible. The evidence is correlational rather than causal, and direct experimental tests of the model's predictions are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Recall-gated consolidation provides complementary benefits to synaptic consolidation, enabling slower decay of learnable timescale with target SNR, linear (or superlinear) scaling with repetitions, and allowing simple synaptic machinery to support long-term memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 summarize the theoretical advantages demonstrated throughout the manuscript. These are supported by the analytical framework and simulations in Figure 4 and supplements, showing that systems consolidation provides qualitatively different scaling properties than any synapse-local mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The model provides a mechanistic explanation for spaced training effects based on population-level forgetting curves rather than synapse-local saturation, with both mechanisms likely contributing at different timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by the analysis in Figure 5 and comparison with synaptic models. The distinction between mechanisms is clearly demonstrated, and the speculation about complementary contributions (C102) is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Systems consolidation, involving two neural systems with selective transfer from short-term to long-term memory, is observed across species and brain regions, suggesting broadly useful computational advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 establish the biological context and motivation for the study. These claims are well-supported by appropriate citations to experimental literature across multiple species and systems (mammals, songbirds, insects). The inference about computational advantages (C21) is reasonable given the ubiquity of the phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Neural circuit implementations of recall-gated consolidation involve plasticity rules modulated by globally broadcast signals such as prediction accuracy, confidence, and familiarity, and predict sparser representations in STM compared to LTM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 describe implementational details and predictions. C24 is supported by the derivations in Figure 3A and Methods, showing how recall factors map to biologically plausible signals. C25 is supported by the analysis in Figure 6C-D.",
+    "result_type": "MINOR"
+  }
+]

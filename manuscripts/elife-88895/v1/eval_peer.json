@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors used the Boruta feature selection algorithm with iterative resampling (200 trials) to identify 408 Core genes persistently differentially expressed between ecDNA(+) and ecDNA(-) samples. They then applied pvclust hierarchical clustering to identify 354 stable co-expression clusters, yielding a final set of 643 CorEx genes (408 Core + 235 co-expressed). The CorEx genes showed superior predictive performance (AUPRC 0.48-0.5) compared to top log-fold-change genes or GLM-selected genes (AUPRC 0.43 each), with significantly higher recall at precision \u22650.7.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers praised the methodological rigor. Reviewer 3 stated the authors 'presented a solid comparative analysis' using 'an established automated feature selection approach, Boruta' with 'iterative selection process and two-tier multiple hypothesis testing' ensuring 'reliable DEGs.' Reviewer 3 also noted 'the author showed that the DEG selected using Boruta has stronger predictive power than genes with top log-fold changes.' Reviewer 2 commented that 'the methods they used and analyses are rigorous.' The only minor comment was a request for justification of choosing Boruta over other methods, which was addressed in revision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The CorEx genes showed consistent directional expression patterns across multiple tumor types (significant in 10/11 types tested, exception: sarcoma). While CorEx genes had lower absolute log-fold changes (median 0.30) than top-LFC genes, they had higher overall expression levels and persistent differential expression across samples, consistent with a pan-cancer role in ecDNA biogenesis and maintenance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 noted that after revision 'the authors have addressed all my comments satisfactorily' regarding the pan-cancer analysis. The editor and reviewers accepted the finding that CorEx genes represent persistent transcriptional differences. The exception of sarcoma was appropriately contextualized by the authors with reference to chromothripsis, and reviewers did not challenge this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C39",
+      "C90",
+      "C91"
+    ],
+    "result": "Among 262 up-regulated CorEx genes, GO enrichment analysis identified 187 biological processes clustered into 11 categories. The major categories included cell-cycle regulation, cell division, DNA damage response (DNA Repair), and HOX genes. These categories explained 165 of the 262 up-regulated genes. The enrichment results were robust across different selection thresholds (82.9% of GO terms enriched in \u22655 of 8 cutoff criteria).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 stated 'the author performed a thorough interpretation of the findings with GO enrichment analysis of biological processes enriched in the identified DEG set and presented interesting findings, including the enrichment in DNA damage process among the genes upregulated in ecDNA(+) tumors.' Reviewer 1 noted the work 'points to specific GO processes associated (up and down) with ecDNA+ tumors, namely, specific DNA damage repair processes and specific oncogenic processes.' The robustness analysis was not specifically critiqued.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C106"
+    ],
+    "result": "Analysis of DNA damage response pathways revealed that alternative DSB repair pathways (Alt-EJ, SSA, and homologous recombination) were significantly up-regulated in ecDNA(+) tumors, while classical NHEJ was not significantly up-regulated (p=0.19). Key c-NHEJ genes (XLF/NHEJ1, LIG4, PNKP, POLL, POLM) were down-regulated, while Alt-EJ genes (PARP1, POLQ, LIG1, LIG3, FEN1) and HDR genes (BLM, EXO1, RPA1, RPA3, BRCA1, BRCA2, RAD51) were up-regulated, suggesting enhanced dependence on non-classical repair pathways.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly noted the work identifies 'specific DNA damage repair processes' associated with ecDNA+ tumors. Reviewer 3 highlighted 'the enrichment in DNA damage process among the genes upregulated in ecDNA(+) tumors' as an 'interesting finding.' The interpretation that alternative pathways are preferred over c-NHEJ is consistent with prior observations of microhomologies at breakpoint junctions (cited by authors), and reviewers did not challenge this mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C102",
+      "C103",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Among 271 down-regulated CorEx genes, GO enrichment identified 73 terms clustered into 7 categories, all of which were immunomodulatory. The largest category was Lymphocyte activation (75 genes), followed by Inflammation, Cytokine production, Leukocyte chemotaxis, and NF-\u03baB pathway regulation. Four categories mapped to distinct facets of the cancer immune cycle, with significant down-regulation in inflammation (p=0.005), T cell trafficking (p=0.03), and lymphocyte activation (p=0.0075). All ten TLRs were significantly down-regulated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 specifically highlighted that 'the observation that immune programs are downregulated in ecDNA+ cancers may initiate new preclinical and translational studies that impact the way ecDNA+ cancers are treated in the future' and noted this finding has 'important theoretical implications.' Reviewer 1 acknowledged the work identifies 'specific oncogenic processes' associated with ecDNA+ tumors. The comprehensive nature of immune pathway down-regulation across the cancer immune cycle was not challenged by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Total mutation burden was significantly higher in ecDNA(+) samples pan-cancer, though this was driven by specific cancer types (GBM, LGG, UCEC showed differential burden when controlling for type). TP53 was the only gene with significantly higher deleterious/high-impact mutations in ecDNA(+) (OR 2.67, adjusted p=4.22e-07), while BRAF mutations were more common in ecDNA(-). Gene mutation collections could not distinguish ecDNA(+) from ecDNA(-) samples using machine learning, contrasting with gene expression data. APOBEC mutational signatures (SBS2, SBS13) were enriched in ecDNA(+) samples.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these mutation findings without challenge. The TP53 enrichment was noted as 'consistent with previous findings' (cited literature), and the APOBEC signature finding 'recapitulated earlier findings.' The inability of mutations to classify ecDNA status was presented as a contrast to expression data, and reviewers did not dispute this negative result. The finding supports the authors' conclusion that transcriptional differences, not mutations, distinguish ecDNA(+) tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Ranking CorEx genes by harmonic mean of importance metrics identified 65 highly persistent genes (47 up-regulated, 18 down-regulated). The top up-regulated genes included cell division genes (TPX2, KIF2C, AURKA appearing in \u2265180/200 Boruta trials), which are associated with poor prognosis and represent potential therapeutic vulnerabilities. Only 2 of 24 genes most frequently on ecDNA (EGFR, CDK4) were among the 65 top-ranked genes, suggesting CorEx genes do not themselves appear frequently on ecDNA. Top down-regulated genes included tumor suppressors (CHMP7, XPO7, KIAA1967).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the ranking analysis or the identification of specific high-priority genes. The observation that CorEx genes are distinct from genes physically located on ecDNA supports the authors' interpretation that these represent global transcriptional responses rather than direct effects of ecDNA-encoded genes. This distinction was central to the manuscript's conclusions and was accepted by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Analysis of tumor microenvironment immune subtypes showed an increase in C1 and C2 subtypes and depletion of C3 and C6 in ecDNA(+) samples (p=3.96e-03), broadly consistent with a prior study associating ecDNA with immune evasion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding corroborates the broader immune down-regulation results and was not challenged by reviewers. It provides independent validation using a different analytical framework (immune subtyping) for the immune evasion phenotype associated with ecDNA(+) tumors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "cGAS was significantly up-regulated while STING was significantly down-regulated in ecDNA(+) samples, suggesting a potential role for STING agonists as therapeutic intervention.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the expression changes are presented as data, the therapeutic suggestion is speculative. Reviewer 2 noted 'the biological interpretation of the data remains observational' and 'the direct implication of these genes in ecDNA(+) tumors is not tested experimentally.' The editor similarly stated 'some of the data remain observational and the inferences would therefore be more robust with experimental validation.' This specific therapeutic hypothesis was not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors conclude that ecDNA-containing tumors have profound alterations in global transcriptional patterns involving DSB repair, cell cycle control, and immune regulation. These transcriptional differences do not arise solely from genes on ecDNAs themselves but suggest fundamental global processes contribute to ecDNA formation and pathogenesis. The results strengthen the case for targeting proteins involved in mitotic cell-division, cell-cycle regulation, and DNA damage response in ecDNA(+) cancers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accepted the descriptive transcriptional findings as rigorous and important, they consistently noted the interpretations and therapeutic implications remain observational. The editor stated 'some of the data remain observational and the inferences would therefore be more robust with experimental validation.' Reviewer 2 emphasized 'the biological interpretation of the data remains observational. The direct implication of these genes in ecDNA(+) tumors is not tested experimentally.' Reviewer 1 noted the work is 'important' but the mechanistic claims about causality (formation vs. consequence) and therapeutic targeting require experimental validation.",
+    "result_type": "MAJOR"
+  }
+]

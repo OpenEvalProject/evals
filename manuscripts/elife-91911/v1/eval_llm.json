@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C15",
+      "C17",
+      "C19",
+      "C22"
+    ],
+    "result": "The authors developed a neural network emulator trained on 31,908 action potential simulations generated using the ToR-ORd-dynCl simulator with 9 maximum conductance parameters as inputs (GNa, GNaL, PCa, Gto, GKr, GKs, GK1, GNCX, PNaK). Training used 40,000 Sobol' sequence samples with 1000 stimuli per parameter set to reach steady state, trained for 5000 epochs using ADAM optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C14, C15, C17, C19, and C22 provide comprehensive methodological details about simulator selection, data generation, training/validation split, input selection, and training procedure. These are well-documented with appropriate citations and specific quantitative details that enable reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C40",
+      "C45",
+      "C47",
+      "C53",
+      "C61",
+      "C72"
+    ],
+    "result": "The neural network emulator achieved a massive computational speed-up of more than 1000\u00d7 compared to the simulator, with single AP emulation taking 1.2 ms on GPU versus 293 seconds (or 30 seconds with adaptive timestep) for simulation. The emulator processed 104 APs in 0.6 seconds and 950 APs in 0.76 seconds, enabling efficient inverse problem solving that required 10^8 emulations in 3.5 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C40, C45, C47, C53, C61, and C72 provide consistent computational performance measurements across different hardware configurations and problem types. The speed-up claims are well-supported by direct timing comparisons, though the exact speed-up depends on simulation parameters (number of beats to steady state, time resolution).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C73"
+    ],
+    "result": "For the forward problem on normal action potentials (data set #2), the emulator achieved high accuracy with an average RMSE of 0.47 mV and maximum RMSE of 1.5 mV across 104 test cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C73 are directly supported by quantitative results shown in Figure 5. The RMSE values are specific and consistent, demonstrating high emulation accuracy for normal APs. The evaluation is straightforward and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C57",
+      "C74"
+    ],
+    "result": "For abnormal action potentials exhibiting early afterdepolarizations (EADs), the emulator achieved 72.5% sensitivity, 94.9% specificity, and 90.8% overall accuracy in EAD classification, with an average RMSE of 14.5 mV (maximum 37.1 mV) among EAD APs. This demonstrates the emulator's capability to account for discontinuities, a major advantage over existing emulation strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44, C57, and C74 provide specific classification metrics and error measurements for EAD detection shown in Figure 7 and Appendix 3. The results demonstrate reasonable but imperfect performance on discontinuous behavior. The claim of advantage over existing methods (C57) is supported by the theoretical limitations of Gaussian processes (C10) and the empirical results, though direct comparative experiments were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C50",
+      "C51",
+      "C75"
+    ],
+    "result": "For the inverse problem on synthetic data, control and drugged APs could be fitted with an average RMSE of 0.8 mV, and pharmacological parameters were estimated with high accuracy (RMSE \u22640.22). The smallest RMSE was found for GKr and the largest for GKs, with RMSEs increasing from control to drugged maximum conductances to pharmacological parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C50, C51, and C75 are supported by quantitative results shown in Figure 8. The progressive increase in error from control to drug to scaling factors is explained by error propagation. The differential accuracy across parameters is attributed to varying parameter identifiability, which is reasonable and supported by sensitivity analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "result": "Experimental data were collected from small right ventricular trabeculae and papillary tissue preparations from healthy human donor hearts at 37\u00b0C using conventional microelectrode technique. After excluding 7 pairs with biomarker values outside training data range, the final dataset contained 13 control-drug AP pairs across 5 drugs (cisapride, dofetilide, sotalol, terfenadine, verapamil).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C36-C37 provide clear documentation of experimental data sources, conditions, and exclusion criteria. The tissue source and experimental conditions are well-specified with appropriate ethical approvals. The exclusion criteria are reasonable given the emulator's training domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "When applied to experimental data, 50% of pharmacological parameters could be successfully estimated when compared to CiPA distributions. All GKs-related parameters were successfully estimated, while all GK1-related parameters failed estimation, with unsuccessful estimates found across other conductances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by quantitative results in Figure 10 and Table 5. The 50% success rate and specific patterns of success/failure across different conductances are clearly documented. However, the success criterion (\u03bc \u00b1 (0.15 + \u03c3) of CiPA distribution) appears somewhat arbitrary and is not well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Inaccuracies in estimating pharmacological parameters from experimental data are attributed to the mismatch between small tissue preparations used experimentally and single cardiomyocyte data used for training. Action potentials in tissue preparations differ from single cells due to electrotonic coupling and cell mixture including fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide a reasonable explanation for the larger inaccuracies observed with experimental data. The tissue-vs-cell mismatch is well-established in the literature (C60 supported by citations). However, this represents a significant limitation that undermines the practical applicability of the approach, as most experimental data come from tissue preparations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The continuous nature of the emulator enables action potential emulation at any desired resolution and allows accounting for timing offsets using t\u2080 in optimization without retraining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 are logical inferences from the emulator architecture described in the methods. The continuous time representation (neural network evaluating f_\u03d1(t)) inherently supports arbitrary temporal resolution and time shifting. These are valuable practical features, though not empirically demonstrated in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study has several acknowledged limitations: (1) emulator inputs are restricted to maximum conductances, excluding channel kinetics parameters; (2) drug-target interactions are oversimplified as conductance scaling; (3) only single stimulation protocol data were used; (4) limited number of drugs and concentrations in experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 represent honest acknowledgment of study limitations. Each limitation is well-articulated with supporting citations (C66, C67, C69). The authors appropriately identify these as areas for future work. These limitations are significant and affect the generalizability and practical applicability of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The introduction establishes that cardiomyocyte models have matured for pharmaceutical applications, particularly in CiPA for proarrhythmia assessment. Existing Gaussian process emulators cannot capture discontinuities, while neural networks theoretically can approximate discontinuous functions, motivating the current approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide appropriate background context supported by relevant citations. The motivation for using neural networks over Gaussian processes is well-established through theoretical (C11) and practical (C10) considerations. This background appropriately frames the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Synthetic test data set #2 for normal APs consisted of 100 control data pairs and 10,000 drug data pairs with no samples excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 provides specific information about the test dataset composition. The data generation procedure is clearly described in the methods, and the lack of exclusions indicates the synthetic drugs produced physiologically plausible APs within the training domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The presented approach can be straightforwardly applied to other transients such as intracellular [Ca2+] or sarcomere length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is speculative about potential extensions. While the general neural network approach could theoretically be applied to other time series outputs, no evidence is provided that this would be 'straightforward.' Different transients may have different characteristics (e.g., different timescales, coupling to other variables) that could affect emulator performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The findings underscore the potential of neural network emulators in improving the efficiency of future quantitative systems pharmacology studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 represents the overall conclusion. It is supported by the demonstrated speed-ups (C72) and reasonable accuracy on synthetic data (C38-C51, C73-C75). However, the significant limitations with experimental data (C54-C60) and acknowledged methodological constraints (C65-C70) suggest the potential is qualified rather than fully realized. The claim is appropriately cautious ('potential,' 'improving efficiency') rather than overstating the current capabilities.",
+    "result_type": "MAJOR"
+  }
+]

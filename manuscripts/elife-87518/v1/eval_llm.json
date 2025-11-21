@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C34",
+      "C35",
+      "C42"
+    ],
+    "result": "A genome-wide screen in yeast identified Snf1/AMPK as a negative regulator of misfolded protein (MP) import into mitochondria. The screen classified 145 mutants affecting MAGIC, with Snf1 activation (via \u0394reg1 or low glucose) significantly reducing FlucSM accumulation in mitochondria compared to high glucose conditions, while not affecting normal mitochondrial protein import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C30, C34-C35, and C42 collectively demonstrate that the genome-wide screen successfully identified Snf1 as a regulator of MP import, with robust experimental validation using multiple approaches (flow cytometry, confocal imaging, genetic manipulations). The differential effect on MPs versus normal mitochondrial proteins (C42) strengthens the specificity of the finding. Statistical significance is reported with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "AMPK regulates MP accumulation in mitochondria of human RPE-1 cells in a manner similar to yeast. Dorsomorphin (AMPK inhibitor) increased FlucDM accumulation in mitochondria, while AICAR (AMPK activator) reduced it, with no effect on the well-folded control protein GST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate conservation of AMPK's regulatory role across species using pharmacological manipulation. The specificity is confirmed by the lack of effect on GST (C45), and the data are supported by flow cytometry quantification with statistical significance. The caveat about potential mechanistic differences (C47) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Hap4, a transcription factor downstream of Snf1, is necessary and sufficient for inhibiting MP import. HAP4 deletion rescued the import defect in \u0394reg1 cells and in low glucose conditions, while Hap4 overexpression alone reduced FlucSM accumulation in high glucose medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C59-C62 provide strong genetic evidence through loss-of-function (C59-C60) and gain-of-function (C61) experiments that Hap4 mediates Snf1's effect on MP import. The specificity is demonstrated by testing multiple transcriptional activators (C59), with only HAP4 showing the effect. Statistical significance is reported with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74"
+    ],
+    "result": "The inhibition of MP import by Snf1 involves substrate competition, where elevated mitochondrial preprotein expression competes with MPs for limited TOM complexes. Overexpression of Tom70 cytosolic domain (Tom70cd), but not Tom20cd or Tom22cd, restored MP import in low glucose conditions, requiring both substrate binding and chaperone-interaction domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C64, C66-C69, and C74 collectively support the substrate competition mechanism through specific rescue experiments with Tom70cd (C66-C68) and the requirement for functional domains (C68). However, the mechanism involves some inference (C5, C64) and the exact molecular details remain incompletely defined. The specificity for Tom70cd over other TOM receptors strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MP import does not require Tom70/Tom71 as obligatory receptors but is regulated by TOM complex conformation. Deletion of TOM70/TOM71 increased MP accumulation, and deletion of TOM6 (which shifts equilibrium toward dimeric TOM) elevated FlucSM import, suggesting MPs preferentially use the dimeric TOM complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 and C77-C79 demonstrate that MPs can use alternative import pathways and that TOM complex conformation affects MP import. The Tom6 deletion experiments (C77) provide mechanistic insight, though the preferential use of dimeric TOM (C79) involves some speculation. The data are internally consistent and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Snf1 activation protects yeast cells from proteotoxic stress induced by FlucSM expression. FlucSM expression reduced growth rate in high glucose but not low glucose medium, and this protection was abolished by Tom70cd overexpression. Mitochondrial membrane potential (MMP) was reduced in spGFP-positive cells in high glucose but not low glucose, with Tom70cd overexpression increasing the fraction of cells with reduced MMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 provide comprehensive evidence linking Snf1 activation to cellular fitness protection through multiple complementary assays (growth rates, MMP measurements). The specificity is demonstrated by the Tom70cd rescue experiments (C83-C85) and appropriate negative controls (C85). The correlation between MP accumulation and MMP loss (C86-C88) supports the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Snf1 activation reduces mitochondrial accumulation of disease-associated proteins \u03b1-synuclein and FUSP525L in yeast, protecting mitochondrial fitness. Both proteins showed reduced mitochondrial import under Snf1 activation, which was reversed by Tom70cd overexpression. Their accumulation correlated with lower MMP and, for \u03b1-synuclein, increased formation of respiration-deficient petite cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 extend the findings to disease-relevant proteins with consistent results across multiple readouts (spGFP accumulation, MMP, respiratory capacity). The Tom70cd rescue experiments (C93, C95) confirm the mechanism is similar to FlucSM. The synergistic effect on petite formation (C97) provides functional validation of mitochondrial damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "AMPK activation protects human RPE-1 cells from FUSP525L-induced toxicity. FUSP525L was imported into mitochondrial matrix and caused MMP loss and elevated cell death, which were significantly reduced by AMPK activation via AICAR treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 demonstrate the protective role of AMPK in human cells using a disease-relevant protein. The data include multiple readouts (mitochondrial import, MMP, cell viability) with appropriate controls (GST). Statistical significance is reported, and the conclusion (C102) is appropriately cautious about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Snf1 activation prevents MP import rather than enhancing degradation or reducing cytosolic MPs. Overexpression of catalytically dead Pim1 (pim1S974D) increased FlucSM accumulation in high glucose but not under Snf1 activation. Snf1-active cells showed reduced FlucSM luciferase activity (more misfolding), and blocking autophagy or proteasome did not abolish the glucose-dependent difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 systematically rule out alternative explanations through well-designed experiments. The pim1S974D experiments (C49-C50) argue against enhanced degradation, the luciferase assay (C52) argues against reduced cytosolic MPs, and the autophagy/proteasome experiments (C53-C54) further support this. The logic is sound and the conclusion (C56) follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Mig1/Mig2-repressed gene expression is not sufficient to prevent MP import. Neither single deletion of MIG1 nor double deletion of MIG1 and MIG2 reduced FlucSM spGFP in high glucose medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide negative results that help define the pathway by ruling out transcriptional repressors. The data are clear and appropriately interpreted, though the conclusion (C58) involves inference from negative data. This supports the focus on transcriptional activators like Hap4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The reduced spGFP signal under Snf1 activation is not due to changes in reporter component abundance or reconstitution efficiency. FlucSM-GFP11 and Grx5-GFP1-10 levels were not reduced (and Grx5-GFP1-10 was elevated) under Snf1 activation, and Grx5 spGFP showed minimal changes after adjusting for GFP1-10 abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 address an important control by ruling out artifacts in the spGFP system. The immunoblot data (C38-C39) and the Grx5 spGFP measurements (C40) provide complementary evidence. The conclusion (C41) is appropriately stated as an inference, though the magnitude of the effect on Grx5 versus FlucSM could be more thoroughly quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose a model where Snf1/AMPK balances mitochondrial metabolic and proteostasis functions in response to glucose availability. Under high glucose, mitochondria perform MAGIC; under low glucose, Snf1/AMPK activation shuts down MAGIC and promotes import of essential mitochondrial preproteins through Hap4-dependent expression that competes with MPs for TOM complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 synthesize the experimental findings into a coherent model. While C107-C108 involve speculation about the physiological context, the core mechanism (C109) is well-supported by the experimental data. The model integrates multiple lines of evidence and provides a framework for understanding the regulation of MAGIC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose that MP import and degradation in mitochondria is well tolerated under normal conditions, but excessive MP load can overwhelm mitochondrial proteostasis capacity. They speculate this regulation could explain beneficial effects of caloric restriction on lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 are largely speculative inferences (C115-C116) and connections to caloric restriction (C117) that extend beyond the experimental data. While the data support that MP accumulation can damage mitochondria, the claims about physiological tolerance levels and lifespan effects require additional experiments and are appropriately presented as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The authors suggest that elevating AMPK activity may be beneficial for alleviating proteotoxicity associated with degenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 is a speculative therapeutic suggestion based on the protective effects observed in cell culture models. While the data support that AMPK activation reduces MP accumulation and protects cells in vitro, translation to disease treatment requires substantial additional validation in relevant disease models and consideration of AMPK's complex roles in different contexts (as noted in C118-C120).",
+    "result_type": "MINOR"
+  }
+]

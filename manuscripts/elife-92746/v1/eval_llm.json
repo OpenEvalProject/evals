@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C31",
+      "C32",
+      "C33",
+      "C38",
+      "C41",
+      "C42",
+      "C50",
+      "C51"
+    ],
+    "result": "ClpL functions as an autonomous, general disaggregase with activity comparable to or exceeding ClpG and superior to the canonical DnaK/ClpB system across multiple substrates. ClpL from L. monocytogenes showed substantial disaggregation activity toward heat-aggregated luciferase (0.67-fold reduced compared to ClpG, 3.1-fold higher than Lm KJE/ClpB), and high activity toward GFP, \u03b1-glucosidase, and MDH. L. gasseri ClpL exhibited similar high disaggregation activity, explaining why \u0394clpL cells are heat-sensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C51 collectively demonstrate ClpL's autonomous disaggregase function through multiple in vitro assays with diverse substrates (luciferase, MDH, GFP, \u03b1-glucosidase), statistical comparisons to ClpG and KJE/ClpB systems, ATP-dependence controls (C33), and functional validation in L. gasseri (C48-C51). The data consistently show ClpL activity is superior to canonical systems and comparable to ClpG, with appropriate statistical analysis (p-values provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C150"
+    ],
+    "result": "ClpL and ClpG exhibit enhanced threading power compared to canonical ClpB disaggregase, as demonstrated by their ability to unfold tightly folded YFP domains during disaggregation. ClpL showed rapid loss of YFP fluorescence that was even faster than ClpG, while Ec KJE/ClpB and Lm KJE/ClpB did not unfold YFP during disaggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C150 are supported by the luciferase-YFP unfolding assay (Figure 2B), which provides direct experimental evidence for differential threading power. The assay design is appropriate (using a fusion protein with a folded domain as a reporter), and results are consistent with prior literature (C53 cites Haslberger et al., 2008; Katikaridis et al., 2019). The conclusion about enhanced threading power logically follows from the YFP unfolding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "ClpL exhibits superior thermostability compared to DnaK, enabling function at extreme temperatures. Lm ClpL and ClpB showed comparable melting temperatures (60-63\u00b0C), while Lm DnaK had much lower thermal stability (TM: 47-50\u00b0C). Although DnaK unfolding at 55-58\u00b0C was reversible, incubation at 55\u00b0C would cause DnaK unfolding and abrogate KJE/ClpB disaggregation activity, while ClpL's higher thermal stability provides disaggregation power at 55\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 and C153-C156 are supported by thermal stability measurements using SYPRO Orange binding and nanoDSF (Figure 2C/D), with appropriate controls and statistical analysis. The inference about functional implications at 55\u00b0C (C64-C65, C154) is reasonable given the measured TM values and known protective effects of ClpL. Comparison with E. coli ClpG/DnaK (C155) is supported by citations. The conclusion links thermostability data to functional advantage at extreme temperatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C80",
+      "C157"
+    ],
+    "result": "The N-terminal domain (NTD) of ClpL is essential for disaggregation activity and mediates aggregate targeting, enabling autonomous function. Deletion of the NTD (\u0394N: \u0394A2-N61) resulted in total loss of disaggregation activity toward luciferase and MDH aggregates, despite only modest reduction in ATPase activity (65% of WT). In vivo, expression of clpL but not \u0394N-clpL restored luciferase reactivation and thermotolerance in E. coli \u0394clpB and dnaK103 mutant cells. Fusion of ClpL NTD to ClpB (LN-ClpB*) converted ClpB into a stand-alone disaggregase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 and C157 are supported by multiple complementary experiments: in vitro disaggregation assays (C71, Figure 3A), ATPase measurements (C72-C73, Figure 3B), in vivo luciferase reactivation (C74-C75, Figure 3C), thermotolerance assays (C76, Figure 3D/E), and gain-of-function experiments with LN-ClpB* chimera (C79-C80, Figure 3G). The disproportionate loss of disaggregation vs. ATPase activity (C73) argues against structural defects and supports a specific role in aggregate targeting. The LN-ClpB* experiment provides strong evidence for NTD sufficiency in conferring autonomous function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The ClpL NTD adopts a partially folded, highly mobile structure with a stable hydrophobic core formed by \u03b12 and \u03b2-sheet, while \u03b11 forms only transiently. AlphaFold2 predicted two \u03b1-helices and a \u03b2-sheet, but NMR data revealed that \u03b11 forms transiently without interacting with \u03b12. The NTD is highly mobile with the N-terminal region (up to A34) more flexible than the \u03b12/\u03b2-sheet core, and secondary structure elements are mobile relative to each other in the ps-ns timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C97 are supported by complementary structural biology approaches: AlphaFold2 predictions (C83-C87), NMR spectroscopy including 15N-HSQC (C88), secondary chemical shifts (C89-C90), NOE analysis (C91-C93), and 15N spin relaxation measurements (C94-C95). The NMR data appropriately validate and refine the AlphaFold2 predictions, showing that while the overall fold is partially correct, \u03b11 is more dynamic than predicted. The conclusion about mobility and partial folding (C96-C97) is well-supported by multiple NMR parameters (R1, R2, heteronuclear NOE values).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "Aromatic residues in the ClpL NTD are crucial for aggregate recognition and disaggregation activity. Sequence analysis revealed increased frequency of asparagine, glutamine, and phenylalanine residues, with aromatic and N/Q residues clustered in patches A-E outside the \u03b12/\u03b2-sheet core. Replacement of all aromatic residues (all Aro/Ala) abrogated disaggregation, while mutating all N/Q residues had no effect. Patch A and C mutants showed reduced or lost disaggregation activities, and loss of activity in \u0394N and all Aro/Ala mutants correlated with deficiency in binding aggregated luciferase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C113 are supported by sequence analysis (C98-C101, Figure 4C-D) and systematic mutagenesis studies (C105-C111, Figure 4E-G and supplements). The experimental design appropriately tests the role of aromatic vs. N/Q residues through comprehensive mutagenesis (individual patches, all aromatic, all N/Q, individual residues). ATPase controls (C102-C104) exclude indirect effects on protein folding/assembly. Aggregate binding assays (C109, Figure 4G) provide mechanistic support for the role of aromatic residues. Statistical analysis is provided for all comparisons. The conclusion about aromatic residue importance (C110, C113) is well-justified by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C161",
+      "C162"
+    ],
+    "result": "ClpL requires simultaneous binding of multiple NTDs (approximately 4-5) to protein aggregates for high disaggregation activity, achieving specificity through avidity effects. Mixing experiments with LN-ClpB*/\u0394N-ClpB* revealed that 4-5 NTDs must be present in a hexamer for high activity. Addition of up to 50-fold excess of isolated ClpL NTD did not reduce disaggregation activities of LN-ClpB* or ClpL, suggesting vast increase in binding affinity of hexamers harboring multiple NTDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 and C161-C162 are supported by well-designed mixing experiments (Figure 5A-B) using the LN-ClpB*/\u0394N-ClpB* system that exploits subunit exchange. The experimental approach includes appropriate controls (ATPase-deficient mutant poisoning, C117) and theoretical modeling to determine the number of NTDs required (C118). The competition experiment with isolated NTD (C119, Figure 5C-D) provides strong evidence for avidity effects, as isolated NTD cannot compete despite having the same binding determinants. Statistical analysis is provided (p-values for ANOVA). The inference about avidity effects (C120, C162) logically follows from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C126",
+      "C127",
+      "C128",
+      "C134",
+      "C135",
+      "C136",
+      "C172"
+    ],
+    "result": "ClpL displays remarkable structural plasticity, forming diverse assembly states including single hexameric and heptameric rings, dimers of rings, and tetrahedral structures. EM analysis revealed that ATP\u03b3S-bound ClpL adopts these diverse states. Dimers and tetramers form by MD-MD interactions, as MD deletion or point mutants (E352A, F354A) only form single rings. L. gasseri ClpL, which is highly active, forms hexamers as the most abundant state (69%), suggesting single rings are functional disaggregases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C136 and C172 are supported by negative stain EM (Figure 6B-C), SEC analysis (Figure 6\u2014supplement 1A), and functional assays of MD mutants (C131-C133, Figure 6D-E). The EM data show clear 2D class averages of different assembly states with quantification. The role of MD in higher-order assembly is demonstrated by deletion and point mutants that eliminate dimers/tetramers. The inference that single rings are functional (C135-C136) is supported by activity of MD mutants and Lg ClpL composition. However, the conclusion questions prior work (Kim et al., 2020) about heptamers being the active species, which could benefit from more direct functional comparison of hexamers vs. heptamers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Stabilizing ClpL ring dimers through covalent disulfide bonds strongly reduces disaggregation activity. ClpL-T355C purified under reducing conditions showed modest reductions in activity, but showed much stronger activity gain under reducing conditions compared to WT (6.6-fold vs 2.8-fold). In the absence of DTT, ClpL-T355C showed massive loss in disaggregation activity but became fully active upon DTT re-addition (18.2-fold increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 are supported by well-controlled crosslinking experiments (Figure 6F-G and supplements) with appropriate controls (oxidized WT as treatment control). The experimental design addresses the DTT sensitivity of the luciferase assay by using both luciferase refolding and YFP unfolding assays. The much stronger effect in T355C compared to WT (C138-C139) provides strong evidence that the effect is due to disulfide-mediated stabilization of dimers rather than general DTT effects. EM confirmation of dimer formation (Figure 6\u2014supplement 2C) and SDS-PAGE verification of crosslinking (Figure 6F) support the interpretation. The conclusion (C140) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C183"
+    ],
+    "result": "ClpL MD mutants that form only single ring assemblies create toxic effects in vivo, pointing to a protective role of ring dimers and tetramers in controlling ClpL activity. ClpL MD mutants (E352A, F354A) were produced at lower levels in E. coli \u0394clpB cells, correlating with cellular toxicity at 42\u00b0C. ClpL-WT did not cause toxicity at comparable levels, but higher production levels exerted toxic effects. Toxicity was dependent on NTD presence, as \u0394N-ClpL showed no toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 and C183 are supported by in vivo expression and toxicity assays (Figure 6\u2014supplement 3A-B). The correlation between reduced production levels and toxicity (C141-C142) is documented, and the NTD-dependence of toxicity (C144) is clearly demonstrated. The inference that single-ring assemblies are toxic (C145-C146) logically connects the structural data (MD mutants form only single rings) with the toxicity phenotype. However, the mechanism of toxicity is not directly demonstrated\u2014it could be due to inappropriate substrate engagement, sequestration of cellular factors, or other effects. The conclusion about protective roles of higher-order assemblies (C146, C183) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ClpL and DnaK systems compete for aggregate binding rather than cooperating in disaggregation. Addition of Lm KJE to ClpL increased luciferase reactivation 1.7-fold but did not significantly enhance disaggregation activity measured by turbidity. Combining ClpL with Lm KJE or Ec KJE led to strong reduction in disaggregation activity toward GFP, \u03b1-glucosidase, and MDH. The presence of DnaK systems reduced binding of ClpL to MDH aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C45 are supported by disaggregation assays using different readouts (luciferase activity vs. turbidity, C34-C35) and aggregate binding assays (C44, Figure 1\u2014supplement 2G). The differential effects on luciferase reactivation vs. disaggregation (C34-C35) appropriately lead to the inference that KJE supports refolding rather than disaggregation (C36-C37). The competition for aggregate binding is directly demonstrated (C44-C45). Statistical analysis is provided. The interpretation is consistent across multiple substrates, though luciferase shows different behavior (C46), which is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "ClpL exhibits high, concentration-independent ATPase activity (90.1\u00b126.1 ATP/min/monomer), and requires two functional AAA domains and an intact pore-2 site for disaggregation. ATPase activities of pore loop mutants were similar to WT, while Walker B mutants showed strong reductions. Pore-1 loop mutant Y170A retained partial disaggregation activity, while blocking ATP hydrolysis in one AAA domain (E197A, E520A) or mutating pore-2 (Y504A) abrogated disaggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by systematic mutagenesis of AAA domains (Figure 3\u2014supplement 1B-D) with appropriate controls. The ATPase measurements (C66-C67) establish baseline activity and show that pore loop mutations don't affect ATP hydrolysis, ruling out indirect effects. The disaggregation assays of mutants (C68-C69) demonstrate functional requirements. The conclusion (C70) appropriately notes similarity to ClpB and ClpG phenotypes, providing context. The experimental design is sound with proper controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The AAA threading motors and aggregate-targeting NTD of ClpL largely function independently. LN-ClpB* (ClpB with ClpL NTD) exhibited reduced threading power compared to ClpL, as revealed by differences in YFP unfolding activities when using aggregated luciferase-YFP as substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by the luciferase-YFP unfolding assay comparing ClpL and LN-ClpB* (Figure 3\u2014supplement 2D). The experimental design appropriately tests whether the NTD alone can confer full ClpL-like properties to ClpB. The observation that LN-ClpB* has ClpL-like aggregate targeting (C79-C80) but reduced threading power (C81) supports the inference of functional independence (C82). However, \"largely function independently\" may be an overstatement\u2014there could be allosteric communication or indirect effects not captured by these experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C151",
+      "C152"
+    ],
+    "result": "The enhanced threading power of ClpL/ClpG compared to ClpB is explained by their shortened middle domains (MDs), which lack the inhibitory intersubunit interactions present in ClpB's long coiled-coil MDs. This enhanced threading activity becomes particularly important upon extreme heat shock, which causes more complete protein unfolding and increases interactions between proteins in aggregates, demanding enhanced threading force for efficient disaggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 and C151-C152 integrate experimental findings with mechanistic interpretation based on literature. The structural explanation (C55-C56) is supported by citation to Deville et al., 2017 and comparison of MD lengths. The link between enhanced threading and higher disaggregation activity (C58) is supported by experimental data in this study. The toxicity of ClpB MD mutants (C57, C151) is supported by citations. However, the speculation about importance during extreme heat shock (C59-C60, C152) is reasonable but not directly tested\u2014it's an inference based on aggregate properties rather than experimental demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C174"
+    ],
+    "result": "The middle domain (MD) of ClpL has an auxiliary function in controlling disaggregation and ATPase activities. MD mutant E352A showed activity similar to WT, while F354A showed partially reduced disaggregation (48% for luciferase, 26% for MDH) and ATPase activities (36% at low concentration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 and C174 are supported by functional assays of MD mutants (Figure 6D-E and supplement 1F) with statistical analysis. The differential effects of E352A vs. F354A (C131-C132) suggest specific residue contributions. The concentration-dependence of F354A ATPase defect (C133) is appropriately noted. The inference about auxiliary function (C174) is reasonable given the partial rather than complete loss of activity. However, the mechanism of this auxiliary function is not elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C176"
+    ],
+    "result": "The NTD destabilizes ClpL ring dimers, potentially through steric hindrance on MD-MD interactions. \u0394N-ClpL only forms dimers of rings, while WT ClpL forms diverse assembly states. \u0394N-ClpL shows increased rigidity (higher TM) compared to ClpL-WT and ClpL-\u0394M. NTD point mutants showed minor changes compared to WT but did not resemble \u0394N-ClpL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 and C176 are supported by EM analysis (Figure 6C and supplement 1C) and thermal stability measurements (Figure 6\u2014supplement 1D). The observation that \u0394N-ClpL exclusively forms dimers (C128) while WT forms diverse states provides strong evidence for NTD's destabilizing role. The increased rigidity of \u0394N-ClpL (C129) supports this interpretation. The comparison with NTD point mutants (C130) appropriately distinguishes between effects of NTD presence vs. specific NTD residues. The inference about steric hindrance (C130, C176) is reasonable but not directly demonstrated\u2014alternative mechanisms (e.g., allosteric effects) are possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "The presence of ClpL on transmissible plasmids in L. monocytogenes poses a severe risk to food safety by substantially increasing pathogen survival in adverse environments like food processing plants, explaining the high prevalence of clpL in Listeria species isolated from ready-to-eat foods and dairy products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C148 represent reasonable inferences connecting the experimental findings (ClpL provides heat resistance, is on transmissible plasmids) with public health implications. The link to food safety (C147) logically follows from ClpL's function and genetic location. The explanation for clpL prevalence (C148) is supported by citations to prevalence studies (Parra-Flores et al., 2021; Ramadan et al., 2023). However, these are interpretive claims about implications rather than direct experimental results. The causal link between ClpL presence and prevalence in food products is inferred rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C149",
+      "C158",
+      "C159",
+      "C160",
+      "C163"
+    ],
+    "result": "ClpL and ClpG share mechanistic features as stand-alone disaggregases, including use of distinct NTDs for aggregate recognition. While ClpL and ClpG NTDs lack sequence or structural homology, both use hydrophobic or aromatic residues for aggregate recognition. The ClpL NTD represents a sticky tentacle with mobile aromatic residues that interact with hydrophobic patches on aggregates, similar to small heat shock proteins. This avidity-based binding principle provides substrate specificity while sparing non-aggregated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149, C158-C160, and C163 synthesize findings from this study with prior work on ClpG. The comparison is supported by experimental data on ClpL (this study) and citations to ClpG literature (C158, C161). The characterization of ClpL NTD as a \"sticky tentacle\" (C159) is supported by NMR data showing mobility and accessibility of aromatic residues. The comparison to small heat shock proteins (C160) is appropriate and supported by citations. The inference about substrate specificity through avidity (C163) logically follows from the requirement for multiple NTDs. However, the claim that this \"spares non-aggregated protein species\" is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Novel disaggregases (ClpL and ClpG) lack the IGL/F signature motif essential for ClpP cooperation, a feature shared with canonical ClpB, suggesting protein disaggregation is primarily linked to refolding rather than degradation. This underlines that loss of essential proteins upon heat-induced aggregation represents the major limiting factor for bacterial viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 are supported by sequence analysis (established knowledge, C164) and comparison with ClpB (C165, supported by citation to Weibezahn et al., 2004). The inference about linkage to refolding (C166) is reasonable given the lack of ClpP interaction motif. The conclusion about loss of essential proteins being the limiting factor (C167) is a logical inference from the disaggregase function, though not directly tested. These are primarily interpretive claims connecting structural features to functional implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Novel disaggregases are typically encoded on transmissible plasmids or mobile genomic islands, enabling acquisition via horizontal gene transfer and spreading of bacterial resistance to severe heat stress. ClpL in other Gram-positive bacteria is either plasmid-encoded or flanked by inverted repeats and truncated transposase genes in the core genome. Prolonged cultivation at high temperatures can lead to mobilization of chromosomal-encoded clpL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C171 are supported by established knowledge (C168), citations to literature on genetic location (C169: Huang et al., 1993; Suokko et al., 2005), and mobilization studies (C170: Suokko et al., 2005). The inference about horizontal gene transfer and spreading of resistance (C171) is reasonable given the genetic context. However, these claims primarily synthesize prior knowledge rather than presenting new experimental findings. The connection to this study's results is through establishing the broader context of ClpL biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C175",
+      "C177",
+      "C182"
+    ],
+    "result": "ClpL ring assemblies (dimers and tetramers) might represent storage states that reduce ClpL activity by shielding NTDs. The aggregate-targeting NTDs would be obstructed in these higher-order assemblies, precluding ClpL binding to aggregated proteins. The NTDs may increase ring dynamics, ensuring their accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175, C177, and C182 are explicitly speculative (\"might represent,\" \"may increase\"). While the inference about NTD obstruction in dimers/tetamers (C175) is reasonable based on structural considerations, it's not directly demonstrated. The speculation about storage states (C182) is supported by the toxicity data (C141-C146) showing that preventing dimer formation causes toxicity, but the \"storage state\" model is not directly tested. The claim about NTDs increasing ring dynamics (C177) is speculative without direct dynamics measurements. These represent reasonable hypotheses for future testing rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Ring dimer formation is observed for other AAA+ family members with diverse functional roles. p97 double rings are suggested to represent a potentiated state, Lon dodecamers regulate substrate selectivity with mostly reduced proteolytic activity, and the role of Skd3 ring dimers in disaggregation is controversial with both higher and lower activity reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 appropriately summarize literature on other AAA+ proteins to provide context for ClpL findings. Each claim is supported by appropriate citations (C179: Gao et al., 2022; C180: Vieux et al., 2013; C181: multiple 2022-2023 papers). The characterization of the Skd3 literature as \"controversial\" (C181) is appropriate given the conflicting reports cited. These claims serve to contextualize the ClpL results within the broader AAA+ protein field rather than presenting new findings.",
+    "result_type": "MINOR"
+  }
+]

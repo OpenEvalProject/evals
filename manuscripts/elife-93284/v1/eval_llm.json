@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C30",
+      "C52",
+      "C53",
+      "C56"
+    ],
+    "result": "The study utilized a diversity panel of 326 B. distachyon accessions from five published studies, covering five genetic clades (A_East, A_Italia, B_East, B_West, and C) that display little historical gene flow. The species underwent southward migration during the last glacial period and recolonized Europe and the Middle East within the last 5,000 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C30, C52, C53, and C56 are well-supported by citations to prior work (Stritt et al., 2022; Minadakis et al., 2023) and clearly describe the study system and dataset. The demographic history and population structure provide essential context for interpreting TE evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The study identified 97,660 TE polymorphisms (9,172 retrotransposons, 52,249 DNA-transposons, 36,239 unclassified) and 9 million SNPs across 326 samples. Age estimates for 50,891 TE polymorphisms and 108,855 synonymous SNPs were calculated using IBD-based methods, with validation showing that observed age-frequency correlations matched theoretical predictions for neutral evolution. Most TE polymorphisms were young with few very old.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C7, C8, and C9 describe the core dataset and methodological validation. The age estimation validation (C8) using Kimura and Ohta predictions strengthens confidence in the approach. The age distribution (C9) is directly observed and shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Retrotransposon diversity strongly correlated with demographic structure (Mantel test; r=0.79, p=0.001), while DNA-transposon diversity showed weaker correlation (r=0.36, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 report statistically significant Mantel test results with appropriate p-values. The differential correlation between retrotransposons and DNA-transposons suggests different evolutionary dynamics, though the biological interpretation requires caution as correlation does not imply causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "ANCOVA analyses revealed that the number of fixed TE polymorphisms and TE allele frequencies in genomic regions were not significantly affected by iHS (a measure of recent selective sweeps), but were significantly influenced by total TE number, TE superfamily, TE age, genetic clade, and regional genetic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, and C12 are supported by ANCOVA results presented in Tables 1 and 2. The statistical approach is appropriate for testing multiple factors simultaneously. The lack of iHS effect suggests TEs are not enriched in regions under recent positive selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "XtX analysis comparing observed to simulated data under a neutral demographic model showed that only 0.06% of TE polymorphisms were over-differentiated (above 97.5% quantile), while 4.3% were under-differentiated (below 2.5% quantile), suggesting limited positive selection but possible balancing selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 are supported by XtX analysis with appropriate simulation-based null model. The very small proportion of over-differentiated TEs provides strong evidence against widespread positive selection. The interpretation of under-differentiation as balancing selection (C14) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Genome-environment association analysis identified only nine of 97,660 TE polymorphisms (0.009%) significantly associated with environmental factors, with two located in genes and three within 2 kb of genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 are supported by GEA results with appropriate FDR correction (5%). The extremely low proportion of environmentally-associated TEs strongly supports the conclusion of limited TE contribution to adaptation. The genomic locations of these TEs are relevant for potential functional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C51"
+    ],
+    "result": "The study concludes that putatively adaptive TE polymorphisms are rare in wild B. distachyon populations and that TEs are not favored during evolution and adaptation over other mutation types such as point mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C51 represent the main conclusions synthesized from multiple complementary analyses (iHS, XtX, GEA). The convergence of evidence from different methods strengthens these conclusions, though they are specific to B. distachyon and may not generalize to all plant species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The folded site frequency spectrum of TE polymorphisms was shifted toward a higher proportion of rare minor alleles compared to neutral sites in all genetic clades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by SFS analysis shown in Figure 1C-G. The shift toward rare alleles is consistent with purifying selection, though changes in transposition rate could also produce similar patterns. This motivates the age-adjusted SFS analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Age-adjusted SFS analysis revealed that older retrotransposons are significantly less frequent than neutral SNPs of the same age, regardless of distance to genes. Retrotransposons appeared more deleterious than non-synonymous and high-effect SNPs, with the oldest age bin showing significantly more negative \u0394 frequency than other bins in three clades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are supported by age-adjusted SFS analyses with appropriate statistical testing (Wilcoxon tests with Bonferroni correction). The method accounts for variable transposition rates, a key strength. The finding that retrotransposons >5 kb from genes are also under selection is particularly notable and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "DNA-transposon polymorphisms showed significant deviations from neutrality in older age bins but appeared less deleterious than non-synonymous and high-effect SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by age-adjusted SFS analysis shown in supplementary figures with appropriate statistical testing. The differential effects between DNA-transposons and retrotransposons are interesting, though the authors acknowledge that back-mutations in DNA-transposons may complicate interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C49"
+    ],
+    "result": "Forward simulations revealed that the observed age-adjusted SFS of retrotransposons could only be reproduced if less than 10% of mutations evolved neutrally, indicating that only a small proportion of TE polymorphisms evolved neutrally in B. distachyon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C49 are supported by forward simulations testing different proportions of neutral mutations under various selection coefficients. The simulations appropriately model the demographic history and mating system. However, the simulations make assumptions about dominance and other parameters that could affect the precise estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C50"
+    ],
+    "result": "Simulations with moderately weak selection (S = -5 or S = -8) best fitted the observed data based on the ages of the oldest retrotransposons, indicating that the vast majority of TE polymorphisms are under moderate purifying selection regardless of distance to genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C50 are supported by comparing observed retrotransposon ages to simulated ages under different selection coefficients (Figure 3). The approach of using age distributions to infer selection strength is reasonable, though the precision of the estimate depends on simulation parameters. Sensitivity analyses with different selfing rates strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The number of fixed TE polymorphisms and TE frequency were negatively correlated with effective population size (Ne), and PCA based on TE polymorphisms explained less than 7% of variance, indicating that neutrally evolving TEs contribute only mildly to overall TE diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C44 are supported by ANCOVA results and PCA analysis. The negative correlation with Ne is consistent with more efficient purifying selection in larger populations. The low variance explained by PCA supports the simulation results suggesting few neutral TEs, though demographic history also contributes to PCA structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background information on B. distachyon establishes that TEs account for ~30% of the 272 Mb genome, genes comprise 42.5% of the genome, the species displays high selfing rates (~70%), TE activity is homogeneous across clades without lineage-specific family activity, and purifying selection shapes TE accumulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 and C31-C34 provide essential background information supported by appropriate citations to prior work. These establish the biological context for interpreting the current results. The information about genome composition, mating system, and prior evidence for purifying selection is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "General background on TE biology establishes that TEs can alter phenotypes through multiple mechanisms (gene disruption, regulatory changes, epigenetic effects, structural rearrangements), play major roles in plant genome evolution, can be stress-inducible, may cause more extreme expression changes than SNPs, and theoretical work suggests weak purifying selection is needed to maintain TE polymorphisms without uncontrolled accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 provide general background on TE biology supported by appropriate citations to prior literature. These establish the theoretical framework and biological context for the study. The citations appear appropriate and the claims represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior work in A. thaliana showed TEs near genes (<2 kb) cause downregulation, while in B. distachyon only specific TE families alter gene expression, and TEs are believed to affect gene expression in trans through small-interfering RNA production in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 cite prior work appropriately to provide context for interpreting TE effects on gene expression. These support the discussion of why TEs at various distances from genes might be under selection. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Methodological details specify that TIPs <100 bp apart in the same TE family were merged, all TE calls were treated as homozygous due to high selfing rates, and a mutation rate of 7\u00d710\u207b\u2079 substitutions/generation was used for age estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C57 describe key methodological decisions that are reasonable given the biological characteristics of the system. Treating TEs as homozygous is justified by the high selfing rate. The mutation rate is cited from prior work. These details are important for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

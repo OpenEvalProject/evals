@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Type II RAF inhibitors exhibit asymmetric allosteric coupling to BRAF dimerization, with the first inhibitor binding event (\u03b1) contributing orders of magnitude more to dimer stabilization than the second (\u03b2), while type I inhibitors show symmetric coupling with comparable \u03b1 and \u03b2 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C37, C38 are directly supported by global fitting analysis of FRET data shown in Figure 1f,g, demonstrating \u03b1 values as large as 10^4 and \u03b2 values no larger than 10^2 for type II inhibitors. Claim C39 shows type I inhibitors have approximately equal \u03b1 and \u03b2 values. The experimental design, data quality, and statistical analysis appear robust with well-constrained parameters confirmed by error surface analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C90"
+    ],
+    "result": "Allosteric asymmetry in type II inhibitors drives selective induction of partially occupied BBD dimers (with one inhibitor bound), with induction amplitude following a hyperbolic relationship with the \u03b1/\u03b2 ratio. Type II inhibitors induce BBD dimers at 11-78% of total BRAF, substantially higher than type I inhibitors (4-11%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by simulations using parameterized allosteric models (Figure 2a-c, Figure 2\u2014figure supplement 1-2). The hyperbolic relationship between BBD induction and \u03b1/\u03b2 ratio is demonstrated both theoretically and experimentally (C51, Figure 2c,d). The quantitative predictions from the model are validated against experimental kinase activity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Type II inhibitors induce strong dose-dependent BRAF activation (up to 19-fold) that correlates linearly (R\u00b2=0.93) with predicted BBD dimer induction. The catalytic turnover of BBD dimers (3.2\u00b10.3 \u00d7 10\u207b\u00b3 s\u207b\u00b9) matches published values for fully active BRAF dimers, demonstrating that partially occupied dimers are highly active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 are strongly supported by in vitro kinase activity assays (Figure 2a, Figure 2\u2014figure supplement 1-2) showing excellent agreement between measured activity and model predictions. The linear correlation (C55, Figure 2e) and turnover calculation (C56-C57) provide quantitative validation. The comparison with published data (Liau et al., 2020) strengthens the conclusion that BBD dimers are catalytically active.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C97"
+    ],
+    "result": "Type I and type II inhibitors stabilize distinct \u03b1C-helix conformations in solution, with type I inhibitor GDC0879 inducing shorter spin-spin distances than type II inhibitors (AZ628, LY3009120, TAK632) in DEER spectroscopy experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by DEER spectroscopy data (Figure 3b, Figure 3\u2014figure supplement 1d) showing distinct distance distributions for type I versus type II inhibitors. The experimental approach is appropriate and the data quality appears adequate. However, the structural interpretation could benefit from additional validation, as distance distributions alone provide limited conformational detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Type II inhibitors induce dose-dependent MAPK pathway activation in SK-MEL-2 cells at concentrations below 1 nM, with activation and inhibition occurring at concentrations differing by several orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by flow cytometry data measuring pMEK1/2 and pERK1/2 (Figure 3d, Figure 3\u2014figure supplement 2). The cellular data show activation at sub-nanomolar concentrations consistent with the ultrapotent binding predicted by the allosteric models. Statistical significance is demonstrated with appropriate controls and replicates (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C93"
+    ],
+    "result": "Type I inhibitors induce MAPK pathway activation in SK-MEL-2 cells across a wide concentration range, but this activation is mediated by BRAF:CRAF heterodimers rather than BRAF homodimers, as type I inhibitors lack sufficient allosteric asymmetry and bind CRAF less effectively than BRAF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is directly supported by flow cytometry data (Figure 3d, Figure 3\u2014figure supplement 2). Claims C67, C93 are inferences supported by the discrepancy between predicted and observed activation windows, combined with cited literature (C68-C70). Claim C71 provides supporting evidence via immunoblot (Figure 3\u2014figure supplement 3). The mechanistic interpretation is reasonable but relies partly on inference and prior literature rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "19F NMR spectroscopy reveals that BRAF homodimers are dynamically asymmetric, with subunits transitioning between a static \u03b1C-in state (\u03b1C-in^narrow) and a dynamic state with conformational fluctuations (\u03b1C-in^broad). The \u03b1C-in^broad state shows exchange broadening, concentration-dependent behavior, and temperature-dependent equilibrium with \u03b1C-in^narrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 are well-supported by 19F NMR data (Figure 4a-c, Figure 4\u2014figure supplement 1). Multiple independent lines of evidence support the two-state dimer model: spectral deconvolution (C75-C76), T2 relaxation (C77), mutation studies (C78), D2O exchange (C79), and temperature dependence (C80-C81). Claims C82-C83 represent reasonable interpretations of the data, though alternative models cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C84",
+      "C85"
+    ],
+    "result": "The dynamic asymmetry of BRAF dimers, where only one subunit is locked in the \u03b1C-in state, provides a structural mechanism for how binding of a single type II inhibitor molecule can dramatically increase BRAF dimerization and drive paradoxical activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is supported by 19F NMR data (Figure 4). Claims C84-C85 represent mechanistic interpretations connecting the NMR findings with the allosteric coupling data. While the interpretation is logical and consistent with all experimental observations, it remains somewhat speculative as the direct link between dynamic asymmetry and allosteric asymmetry is inferred rather than directly demonstrated. Additional experiments could strengthen this connection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C92"
+    ],
+    "result": "Type I inhibitors lack allosteric asymmetry (\u03b1 \u2248 \u03b2) and do not activate BRAF homodimers, lacking sufficient allosteric coupling asymmetry to induce paradoxical activation through this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C92 are supported by allosteric coupling data (Figure 1f,g) showing symmetric \u03b1 and \u03b2 values for type I inhibitors. Claim C7 is supported by kinase activity assays (Figure 2) and cellular data (Figure 3) showing minimal activation of BRAF homodimers. The conclusion is well-supported by multiple independent experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The baseline dimerization affinity of apo BRAF is 62.4\u00b12.9 \u03bcM, and all \u03b1C-in inhibitors induce large increases in FRET A/D ratio consistent with inhibitor-induced dimerization, with inhibitor-bound BRAF dimerizing with nanomolar affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is directly measured from FRET experiments (Figure 1\u2014figure supplement 2a,b) and agrees with published values. Claims C35-C36 are supported by FRET data (Figure 1b, Figure 1\u2014figure supplement 3). The experimental design is appropriate and the measurements appear robust with adequate controls and replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Type II inhibitors with large \u03b1 values exhibit picomolar affinity for the first dimer subunit while maintaining substantially weaker affinity for the second subunit, whereas type I inhibitors bind both subunits with comparable affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are calculated from the parameterized allosteric models derived from global fitting of FRET data. The calculations are mathematically sound given the model structure. Independent validation is provided by intramolecular FRET experiments (Figure 1\u2014figure supplement 7) and heterodimer experiments (Figure 1\u2014figure supplement 9).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In BRAF^A481F:BRAF heterodimer experiments that isolate the effects of \u03b1, type II inhibitors induce dimerization with low nanomolar affinity (10\u00b3-10\u2074 fold enhancement), while type I inhibitor GDC0879 fails to induce heterodimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by FRET experiments with BRAF^A481F:BRAF heterodimers (Figure 1\u2014figure supplement 9). This experimental design cleverly isolates the contribution of \u03b1 by blocking the second binding site. The results are consistent with the asymmetric model for type II inhibitors and symmetric model for type I inhibitors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "\u03b1C-out inhibitors (vemurafenib, dabrafenib, encorafenib) disrupt BRAF dimerization, with total decreases in dimerization affinity of 1-2 orders of magnitude, weaker than the dimer promotion by \u03b1C-in inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by FRET experiments with BRAF^E586K (Figure 1h, Figure 1\u2014figure supplement 10) and global fitting analysis (Figure 1f, Figure 1\u2014figure supplement 6). The use of the E586K mutation to enhance baseline dimerization is appropriate for studying dimer-disrupting inhibitors. The quantitative analysis appears sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32",
+      "C33",
+      "C86"
+    ],
+    "result": "Type II RAF inhibitors paradoxically activate BRAF at subsaturating concentrations through induction of BRAF dimers, a phenomenon observed for both FDA-approved \u03b1C-out inhibitors and newer \u03b1C-in inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C32-C33 represent established knowledge cited from prior literature and confirmed by the current study. Claim C86 summarizes this known phenomenon. While these claims are well-supported by the literature and the current data, they represent background knowledge rather than novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C91"
+    ],
+    "result": "For type II inhibitors, favorable allostery occurs through an asymmetric coupling mechanism where the first inhibitor binding event promotes dimerization much more strongly than the second, and this asymmetry fully accounts for the concentration dependence and amplitude of BRAF activation measured in vitro for 11 different \u03b1C-in inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91 represent summary statements of the main findings supported by the comprehensive dataset including FRET experiments (Figure 1), simulations (Figure 2), and kinase activity assays (Figure 2). The quantitative agreement between model predictions and experimental measurements across 11 inhibitors provides strong support for the mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Clinical resistance to belvarafenib and naporafenib can be mediated by induction of ARAF, and since both drugs bind ARAF less potently than BRAF, the disparity in drug affinities for heterodimer subunits may sustain activation at higher drug concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is supported by citations to prior literature. Claim C96 represents a speculative interpretation about resistance mechanisms based on differential binding affinities. While the reasoning is logical, this mechanism is not directly tested in the current study. The claim relies on inference and extrapolation from the BRAF homodimer data to ARAF/BRAF heterodimers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Ponatinib activates ERK in RAS-mutant cells at concentrations as low as 1 nM with suppression only above 1 \u03bcM (higher than achievable plasma levels), and belvarafenib increases MAPK signaling over a concentration range similar to LY3009120.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is supported by the current flow cytometry data and cited literature (Cotto-Rios et al., 2020; Ye et al., 2017). Claim C104 is supported by flow cytometry data (Figure 3d, Figure 3\u2014figure supplement 2) and cited literature. These observations have important clinical implications regarding the therapeutic window for these inhibitors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on BRAF biology, mutations, and inhibitor development: BRAF is a central MAPK pathway component; V600E is the most prevalent mutation conferring constitutive activity; FDA-approved inhibitors show initial responses but resistance emerges; \u03b1C-out inhibitors fail to inhibit dimers due to negative allostery; \u03b1C-in inhibitors were developed to bypass this but still cause paradoxical activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C31 represent established background knowledge from the literature, appropriately cited throughout the introduction. These claims provide essential context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

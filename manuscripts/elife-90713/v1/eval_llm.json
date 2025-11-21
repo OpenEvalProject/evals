@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Ribosome profiling in Drosophila heads successfully captured translation with 96.2% of footprints mapping to coding sequences and displaying characteristic 3-nt periodicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 report standard quality control metrics for Ribo-seq experiments. The high percentage of CDS mapping and 3-nt periodicity are expected hallmarks of successful ribosome profiling, supported by Figure 1B showing the periodicity pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9"
+    ],
+    "result": "Transcriptome and translatome show moderate correlation (R\u00b2=0.664) with substantial variability in translational efficiency across genes, exemplified by Trehalase showing much higher TE than Shaker despite similar transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C8-C9 collectively demonstrate post-transcriptional regulation through correlation analysis and specific examples. The R\u00b2 value, genome-wide TE variability (>20-fold), and the Sh/Treh comparison provide converging evidence for translational regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "KEGG pathway analysis reveals that transcripts for fatty acid metabolism and proteasome show high TE, while neuronal genes including ion channels, GPCRs, and ribosomal proteins show low TE, suggesting translational suppression of neuronal transcripts in whole heads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 report KEGG enrichment analysis results from whole-head Ribo-seq data. The findings are internally consistent and supported by Figure 1H-I, though the interpretation of 'translational suppression' for neuronal genes in whole heads may reflect tissue composition rather than active suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The UAS-RpL3::FLAG construct on the third chromosome shows minimal leakage expression, no morphological defects, and subcellular localization consistent with endogenous ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 validate the technical approach for cell-type-specific ribosome profiling. Immunohistochemistry data (Figure 2A, supplements) confirm proper expression and localization of the tagged ribosomal protein, establishing the validity of the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cell-type-specific Ribo-seq successfully profiled translatomes from neurons and glia with high reproducibility (R\u00b2>0.9), detecting footprints on ~78-80% of annotated genes, with strong enrichment of cell-type markers and depletion of non-target markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 establish the quality and specificity of cell-type-specific Ribo-seq. High reproducibility, appropriate marker enrichment/depletion, and KEGG pathway enrichment (Figure 2B, supplements) validate the immunoprecipitation approach for isolating cell-type-specific translatomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Neurons show greater protein synthesis of oxidative phosphorylation and mitochondrial ribosome proteins while glia show higher expression of glycolysis proteins, supporting the glia-neuron lactate shuttle hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 report differential metabolic protein synthesis between cell types. The KEGG analysis results are consistent with known metabolic specialization, though the support for the lactate shuttle hypothesis is inferential rather than direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Ribosome footprints detected on Hsr-\u03c9, previously annotated as a long non-coding RNA, suggest synthesis of undescribed polypeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29 report an interesting observation of ribosome footprints on a lncRNA. While the footprints are detected (C28), the inference of polypeptide synthesis (C29) requires additional validation such as mass spectrometry or functional studies to confirm translation products.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Fatty acid metabolism genes show lower TE in neurons and glia compared to whole heads, suggesting selective translational enhancement in fat bodies where these genes are highly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 integrate cell-type-specific TE data with published tissue expression data. The comparative analysis across whole head, neurons, and glia, combined with cited fat body expression data, supports the inference of tissue-specific translational regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Genes involved in neuroactive ligand-receptor interaction show significantly higher TE in neurons but lower in glia, with weak TE correlation between cell types (R\u00b2=0.534). Neuronal genes including ion channels, GPCRs, neuropeptides, and visual perception proteins show particularly low TE in glia, with cell-type distinctions more pronounced at the translational than transcriptional level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 collectively demonstrate cell-type-specific translational regulation. The weak TE correlation (C35), genome-wide trends (C36), specific gene categories (C37), and comparison to transcriptional differences (C38-C39) provide strong converging evidence that translation substantially enhances cell-type distinctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Fat-body-related genes show lower TE in neurons with remarkable ribosomal accumulation at start codons specifically in neurons; these mRNAs are highly abundant in fat bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 identify a specific pattern of ribosome stalling at initiation codons for fat body genes in neurons. The observation is supported by Ribo-seq data and reanalysis of published tissue expression data, suggesting translational control at the initiation-to-elongation transition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Glial ribosome footprints on differentially translated transcripts (DTTs) suppressed in glia show remarkable bias toward 5' leaders, commonly observed on neuronal genes like Rab3, Syt4, Arr1, and Syn, suggesting that translation of 5' leaders differentiates protein synthesis among cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 identify a key mechanism of cell-type-specific translational regulation. The 5' leader bias is specific to DTTs (C44-C45), observed across multiple neuronal genes (C46), and shows reciprocal patterns for glial genes in neurons (C47), supporting the proposed mechanism (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Metagene analysis reveals strong ribosome accumulation on upstream AUG codons and near-cognate codons in 5' leaders but not within CDS. Neuronal transcripts typically contain long 5' leaders with many upstream AUGs, leading to the proposal that glia suppress neuronal transcript translation via uORF-mediated ribosome stalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 provide mechanistic insight into 5' leader-mediated regulation. The metagene analysis (C49-C51), structural features of neuronal transcripts (C52), and integration of these observations support the uORF-mediated suppression model (C53), though direct causation requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "Rh1 shows active translation almost exclusively in neurons, with ribosome footprints heavily biased to 5' leader in glia and striking accumulation on putative uORFs composed of start and stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C56-C57 characterize Rh1 as a specific example of the general pattern. The Ribo-seq data showing cell-type-specific translation and 5' leader accumulation in glia are consistent with the proposed uORF-mediated regulation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Transgenic reporter experiments with Rh1 UTR sequences show that while reporter mRNA is detected in both neurons and glia, protein levels are strikingly weak in glia. Mutation of six-base putative uORFs significantly increases protein-to-mRNA ratio in glia but not neurons, demonstrating that small uORFs in the 5' leader confer selective translational suppression in glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 provide direct experimental validation of the uORF-mediated suppression mechanism. The reporter experiments with wild-type and mutant constructs, combined with quantification of protein-to-mRNA ratios, establish causality for uORF function in cell-type-specific translational control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Translational efficiency of neuronal proteins including ion channels and neurotransmitter receptors is maintained low in glia with ribosome footprints biased toward 5' leaders, leading to preferential translation in neurons and enhancing cell-type distinction in the nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 synthesize the main findings into the central conclusion. The comprehensive Ribo-seq data, mechanistic insights from uORF analysis, and experimental validation with reporters collectively support that translational regulation enhances cell-type distinctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Long 5' leaders with numerous uORFs are observed in mammalian neuronal transcripts, and 5' leader-mediated translational regulation is known to be critical for environmental stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 cite prior literature to contextualize the findings. These are well-established observations from previous studies that provide evolutionary and functional context for the mechanisms described in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Translation initiation factors eIF1, eIF2\u03b1 kinases, and DENR/MCT1 that facilitate translation of uORF-containing transcripts are expressed more in neurons than glia, potentially underlying cell-type-specific translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C71 report established knowledge and expression data, but C72 is speculative. While the differential expression of these factors is interesting and consistent with the model, direct functional evidence linking their activity to the observed cell-type-specific translation is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Transition from initiation to elongation may serve as a regulatory checkpoint enhancing cell-type distinctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by the ribosome stalling data at start codons (C42) and cited literature. The observation of initiation-elongation transition control in fat body genes provides evidence for this regulatory checkpoint, though more extensive validation would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Neurons allocate more ribosomes to neurotransmission, visual sensing, and oxidative phosphorylation proteins, while glia synthesize transporters and metabolic enzymes for amino acid, fatty acid, and carbohydrate metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 summarize cell-type-specific protein synthesis patterns from Ribo-seq data. These findings are consistent with known functional specializations of neurons and glia and are supported by the KEGG pathway analyses presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Neuronal and glial cells share common developmental origins from neuro-glioblasts, with cell fate alterable by single gene expression (gcm), suggesting translational regulation plays important roles in differentiating these sister cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 cite established developmental biology, while C80 makes a reasonable inference. The shared developmental origin combined with the demonstrated translational differences supports the interpretation that translational regulation contributes to cell-type specification beyond transcriptional control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Translational regulation may differentiate neuronal and glial subtypes, consistent with heterogeneous UAS-Rh1-Venus reporter expression among neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is speculative about subtype differentiation, while C83 reports observed heterogeneity. The reporter heterogeneity (C83) is suggestive but insufficient to establish that translational regulation differentiates subtypes without more detailed subtype-specific analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Multiple layers of transcriptional and post-transcriptional regulation shape proteome diversity of cell types in the nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 synthesizes the overall findings with cited literature. The comprehensive Ribo-seq and RNA-seq data demonstrating translational regulation, combined with cited examples of other post-transcriptional mechanisms, support this integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The cell-type-specific Ribo-seq and RNA-seq approach based on immunoprecipitation of tagged RpL3 may contain biases including underestimation of mRNAs with little translation and over/under-representation of cell types due to heterogeneous driver expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 acknowledge methodological limitations. These are valid concerns inherent to the TRAP-based approach, and the authors appropriately recognize potential biases that could affect quantitative interpretations of their data.",
+    "result_type": "MINOR"
+  }
+]

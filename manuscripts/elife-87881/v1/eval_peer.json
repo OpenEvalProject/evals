@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors claim that linear decoders (Kalman Filter) achieve comparable performance to nonlinear decoders (ANN) on behaviorally relevant signals extracted by d-VAE, suggesting that the motor cortex may use a linear readout mechanism to generate movement behaviors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Multiple reviewers explicitly challenge this interpretation. Reviewer 1 states 'your model performs a non-linear transformation, and while this is indeed linearly decodable, the motor system would need to do something similar first to achieve the same. In fact to me it seems to show the opposite.' Reviewer 2 notes 'to say \"linear readout is performed in motor cortex\" is an over-interpretation of what their model can show.' Reviewer 3 emphasizes that 'the mapping that the linearity/nonlinearity claims refer to is from the *inferred* behaviorally relevant neural signals, which themselves are inferred nonlinearly using the VAE' and that 'by construction, the VAE here is trained to have a linear readout from its embedding in its loss, which can bias its outputs toward doing well with a linear decoder.' The reviewers agree the overall mapping from neural data to behavior is always nonlinear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C61",
+      "C62"
+    ],
+    "result": "The d-VAE method achieves superior performance compared to other distillation models (PSID, pi-VAE, TNDM, LFADS) in extracting behaviorally relevant signals with high decoding performance, low irrelevant signal information content, and high neural similarity to raw signals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the method comparison, Reviewer 1 raises concerns that 'decoding performance can depend on a variety of model choices, and may not be ideal to discriminate between models' and notes that 'the R2 values reported in Figure 2 (e.g. the MC_RTT dataset) should be compared to the values reported in the neural latent benchmark, which represent well-tuned models (e.g. AutoLFADS). The numbers seem lower than what can be obtained with models without latent space disentanglement.' Reviewer 3 requests complete code for all methods to 'alleviate concerns and allow readers to confirm conclusions.' The editor notes 'the evidence supporting claims about encoding is incomplete as the results may stem, in part, from the properties of the method itself.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C42",
+      "C52"
+    ],
+    "result": "Weakly tuned neurons (smaller R\u00b2 neurons) contain rich behavioral information that is revealed after signal distillation, with ANN decoding performance improving by approximately 100% for these neurons, demonstrating that achieving accurate linear decoding requires weak neural responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises a fundamental concern about this claim: 'The d-VAE distilling processing is a population level embedding so the individual distilled neurons are not obtainable on their own without using the population data. This population level approach also raises the possibility that information can leak from one neuron to another during distillation... It is still quite likely that some of the improved behavior prediction of the distilled version of low-information neurons is due to leakage of behaviorally relevant information from other neurons, not the former's inherent behavioral information.' Reviewer 3 also notes that 'R2 \"signifies the proportion of neuronal activity variance explained by the linear encoding model, calculated using raw signals\"' should be clearly defined in the main text. The reviewers acknowledge this should be 'explicitly acknowledged in the manuscript.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C19",
+      "C37",
+      "C43",
+      "C56"
+    ],
+    "result": "Behaviorally relevant signals occupy a low-dimensional subspace (7, 13, and 9 dimensions for the three datasets), while raw signals overestimate neural dimensionality (26, 64, and 45 dimensions), indicating that movement behaviors occupy a higher-dimensional neural space than previously expected when considering often-ignored neural dimensions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 points out that 'this finding was presented in (Sani et al. 2021) and (Hurwitz et al. 2021), which is not clarified here' and that 'the manuscript does not properly put their work in the context of such prior works.' The editor notes 'the evidence supporting claims about encoding is incomplete as the results may stem, in part, from the properties of the method itself.' While the dimensionality findings are presented with data, the interpretation about 'higher-dimensional neural space' is questioned given the method's construction and lack of proper contextualization with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C31",
+      "C54",
+      "C72"
+    ],
+    "result": "Behaviorally irrelevant signals account for a large amount of trial-to-trial neuronal variability, with greater effects on weakly tuned neurons than strongly tuned neurons, and eliminating these signals enables more accurate observation of neural patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 states 'Agreeing with my critique is not sufficient; please provide the data or simulations that provides the context for the reference in the fano factor. I believe my critique is still valid.' This suggests the Fano factor analysis lacks proper context or baseline comparisons. Additionally, Reviewer 2 challenges the premise that signals are 'irrelevant' simply because they do not correlate with a fixed temporal lag with behavior, noting 'This is just a restatement of their definition, not a response to my concern, and does not address my concern that the method requires a fixed temporal lag and continual decoding/encoding.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C36",
+      "C38",
+      "C76",
+      "C77"
+    ],
+    "result": "Smaller variance PC signals (secondary signals) encode rich behavioral information in complex nonlinear ways, cannot be decoded linearly alone, but produce a synergy effect when combined with primary signals that substantially improves linear decoder performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The improved ability to linearly decode behaviour from the relevant subspace and the analysis of the linear subspace projections in my opinion convincingly demonstrates that the model picks up behaviour-relevant dynamics, and that these are distributed widely across the population.' While reviewers challenge the interpretation about motor cortex readout mechanisms, they appear to accept the empirical findings about the information content and synergistic effects of secondary signals as demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Relevant signals dominate larger variance raw PCs while irrelevant signals dominate smaller variance raw PCs, with only weak correlation between relevant and irrelevant signals, indicating they are nearly orthogonal and uncorrelated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'the analysis of the linear subspace projections in my opinion convincingly demonstrates that the model picks up behaviour-relevant dynamics.' The data showing the composition and orthogonality of relevant and irrelevant signals in PC space appears to be accepted by reviewers as a valid characterization of the separated signals, though the broader interpretations about encoding mechanisms are questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C73"
+    ],
+    "result": "The neuronal correlation of relevant signals is stronger than that of raw signals, and irrelevant signals weaken neuronal correlation, which may hinder accurate investigation of neural circuit organization.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding about correlation structure appears to be accepted as a valid observation from the data. Reviewer 1 acknowledges the analysis of 'the structure of the resulting latent spaces' and does not challenge the correlation findings. The correlation matrix visualizations and their interpretation are not specifically critiqued by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The rotational dynamics of behaviorally relevant signals are similar to those of raw signals, while the rotational dynamics of behaviorally irrelevant signals are irregular.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This jPCA analysis result is presented as validation that distilled signals preserve important dynamical properties of raw signals. Reviewers do not challenge this specific finding, and it serves as supporting evidence that the method preserves meaningful neural dynamics rather than creating artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C39"
+    ],
+    "result": "Secondary signals significantly improve estimation of lower speed more than higher speed, suggesting that smaller variance PC signals may be involved in regulating precise motor control.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This specific finding about differential improvement across speed ranges is presented with statistical testing and is not challenged by reviewers. While broader claims about motor cortex mechanisms are questioned, this empirical observation about speed-dependent effects appears to be accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The firing patterns of distilled relevant signals are similar to raw signals but more consistent and stable across trials, while irrelevant signals vary randomly across trials.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These observations about trial-to-trial consistency are presented as empirical findings and are not specifically challenged by reviewers. They serve as validation that the method produces signals with expected properties (relevant signals being more consistent, irrelevant signals being more variable).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Behaviorally relevant neural responses are entangled with irrelevant signals in motor cortex, the ground truth of relevant signals is unknown, and existing methods have limitations in extracting behaviorally relevant patterns at the single-neuron level.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 strongly challenges the framing: 'the abstract states \"One solution is to accurately separate behaviorally-relevant and irrelevant signals, but this approach remains elusive\", which is not the case given that these prior works have done that' (referring to PSID, TNDM, TAME-GP, pi-VAE, dPCA). Reviewer 3 states 'This issue of putting the work in context has been brought up by other reviewers previously but seems to remain largely unaddressed. The introduction is inaccurate also in that it mixes up methods that were designed for separation of behaviorally relevant information with those that are unsupervised.' The motivation and novelty claims are questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C58",
+      "C60"
+    ],
+    "result": "The complexity of encoding mechanisms may underlie the simplicity of decoding mechanisms, and linear readout might serve as a general principle in the brain, consistent with findings that nonlinear mixed selectivity can yield high-dimensional responses allowing linear readout.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "These speculative interpretations are not supported given the reviewers' critiques of the linear readout claims. Reviewer 1 states the findings 'seems to show the opposite, that behaviour-related information may not be generally accessible to linear decoders (including to down-stream brain areas).' Reviewer 2 notes these are 'over-interpretation of what their model can show.' The citations to prior work on linear readout across cortices do not validate the specific claims made here.",
+    "result_type": "MAJOR"
+  }
+]

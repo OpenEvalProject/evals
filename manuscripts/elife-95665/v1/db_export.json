@@ -1,0 +1,2329 @@
+{
+  "submission": {
+    "id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T00:17:48.762978Z",
+    "updated_at": "2025-11-21T00:17:48.762978Z"
+  },
+  "content": [
+    {
+      "id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "content_type": "manuscript",
+      "content_text": "# Decoupling of the onset of anharmonicity between a protein and its surface water around 200 K\n\n## Authors\n\n- Lirong Zheng<sup>1</sup> ([ORCID: 0000-0001-6803-5048](https://orcid.org/0000-0001-6803-5048))\n- Bingxin Zhou<sup>1</sup> ([ORCID: 0000-0002-3897-9766](https://orcid.org/0000-0002-3897-9766)) \u2020\n- Banghao Wu<sup>1</sup>\n- Yang Tan<sup>1</sup>\n- Juan Huang<sup>1</sup>\n- Madhusudan Tyagi<sup>5</sup>\n- Victoria Garc\u00eda Sakai<sup>7</sup>\n- Takeshi Yamada<sup>8</sup>\n- Hugh O'Neill<sup>9</sup>\n- Qiu Zhang<sup>9</sup>\n- Liang Hong<sup>1</sup> ([ORCID: 0000-0003-0107-336X](https://orcid.org/0000-0003-0107-336X)) \u2020\n\n### Affiliations\n\n1. Institute of Natural Sciences, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n2. Department of Cell and Developmental Biology & Michigan Neuroscience Institute, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n3. Shanghai National Center for Applied Mathematics (SJTU Center), Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n4. School of Life Sciences and Biotechnology, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n5. Department of Materials Science and Engineering, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))\n6. NIST Center for Neutron Research, National Institute of Standards and Technology (NIST) Gaithersburg United States ([ROR:05qgcra83](https://ror.org/05qgcra83))\n7. ISIS Pulsed Neutron and Muon Source, Rutherford Appleton Laboratory, Science & Technology Facilities Council Didcot United Kingdom ([ROR:01t8fg661](https://ror.org/01t8fg661))\n8. Neutron Science and Technology Center, Comprehensive Research Organization for Science and Society Ibaraki Japan ([ROR:03gb41d27](https://ror.org/03gb41d27))\n9. Biology and Soft Matter Division, Oak Ridge National Laboratory Oak Ridge United States ([ROR:01qz5mb56](https://ror.org/01qz5mb56))\n10. Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong Univeristy Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))\n11. Shanghai Artificial Intelligence Laboratory Shanghai China ([ROR:03wkvpx79](https://ror.org/03wkvpx79))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe protein dynamical transition at ~200 K, where the biomolecule transforms from a harmonic, non-functional form to an anharmonic, functional state, has been thought to be slaved to the thermal activation of dynamics in its surface hydration water. Here, by selectively probing the dynamics of protein and hydration water using elastic neutron scattering and isotopic labeling, we found that the onset of anharmonicity in the two components around 200 K is decoupled. The one in protein is an intrinsic transition, whose characteristic temperature is independent of the instrumental resolution time, but varies with the biomolecular structure and the amount of hydration, while the one of water is merely a resolution effect.\n\n## Introduction\n\nIt is well established that the internal dynamics of a protein is crucial for its functions, including allosteric conformational changes (Martin, 2001), ligand binding (Balog et al., 2004) and enzymatic reactions (Hay and Scrutton, 2012). In particular, hydrated proteins exhibit a dynamical transition around 200 K, across which the slope of the temperature dependence of the atomic displacements changes significantly and the biomolecule transforms from a rigid, harmonic state, to a flexible, anharmonic form (Rupley and Careri, 1991; Vitkup et al., 2000; Rasmussen et al., 1992; Wood et al., 2008; Roh et al., 2005; Zaccai, 2000; Doster et al., 1989; Hong et al., 2013; Schir\u00f3 et al., 2012). Although exceptions have been reported (Daniel et al., 1998), the dynamical transition has been linked to the thermal onset of function in a number of proteins, for example, myoglobin (MYO; Austin et al., 1975), ribonuclease (Rasmussen et al., 1992), elastase (Ding et al., 1994), and bacteriorhodopsin (Ferrand et al., 1993), all of which become inactive below the dynamical transition temperature. The dynamical transition of protein has garnered various explanations. One theory suggests it is due to the behavior of water in the hydration shell, transitioning from rigid to fluid at certain temperatures, thus influencing protein flexibility (Wood et al., 2008; Schir\u00f3 et al., 2012; Fenimore et al., 2002; Frauenfelder et al., 2009; Qin et al., 2016; Lewandowski et al., 2015). Another theory considers the transition as an inherent property of the protein, where thermal energy allows the protein to access a wider range of conformations (Nickels et al., 2012).\n\nA prevailing scenario is that the internal dynamics of the protein is slaved to the motion of the surrounding hydration water (Wood et al., 2008; Schir\u00f3 et al., 2012; Fenimore et al., 2002; Frauenfelder et al., 2009; Qin et al., 2016; Lewandowski et al., 2015), and thus the protein dynamical transition results from the changes in the dynamics of the hydration water with temperature (Vitkup et al., 2000; Wood et al., 2008; Schir\u00f3 et al., 2012; Frauenfelder et al., 2009; Tournier et al., 2003). This scenario is indirectly supported by the experimental finding that the presence of the protein dynamical transition requires a minimum amount of hydration water, ~0.2 g water/g protein (Rupley and Careri, 1991; Roh et al., 2005). Further support comes from the results of all-atom molecular dynamics simulations, suggesting that it is the activation of the translational motions of surface water molecules around 200 K that leads to the dynamical transition in the underlying protein (Vitkup et al., 2000; Wood et al., 2008; Tournier et al., 2003).\n\nThis \u2018slaving\u2019 scenario can be examined directly by an experiment using isotopic labeling in combination with elastic neutron scattering methods (Wood et al., 2008; Nickels et al., 2012). Neutrons are highly sensitive to hydrogen atoms as their incoherent scattering cross section is an order of magnitude higher than the incoherent and coherent scattering cross sections of other elements (Liu et al., 2017; Gaspar et al., 2010; Hong et al., 2014). Thus, neutron signals collected on an ordinary protein powder hydrated in D2O reflect the dynamics of the protein while signals from the perdeuterated sample in H2O inform about the motion of water. The experimental results derived from this combined approach are, however, inconsistent (Wood et al., 2008; Nickels et al., 2012; Benedetto, 2017). Measurements performed on perdeuterated maltose-binding protein hydrated in H2O revealed a harmonic-to-anharmonic transition for hydration water taking place at the same temperature as that of the underlying protein (Wood et al., 2008). In contrast, a similar experiment on perdeuterated green fluorescence protein showed that the anharmonic onset in hydration water occurs at a lower temperature than that of the protein (Nickels et al., 2012). More recent measurements on lysozyme (LYS) hydrated in both D2O and H2O found that the transition temperature of protein and water coincided when examining their atomic displacements at 1 ns, but took place at different temperatures when changing the explored time scale to 3 ns (Benedetto, 2017). Therefore, there remains an unanswered question concerning whether the transition in dynamics of protein around 200 K is indeed coupled to that of the hydration water, whose resolution is of fundamental importance to understand the mechanism governing the nature of their interaction.\n\nTo address this, it requires a systematic measurement of the temperature dependence of atomic displacements of the protein and its surface water separately, as a function of hydration levels, h (g water/g protein), and at different time scales (instrument resolutions). Here, we performed elastic neutron scattering experiments on a number of protein powders hydrated in D2O and on the perdeuterated counterparts hydrated in H2O, to track the dynamics of protein and hydration water independently. Moreover, using a range of neutron instruments with distinct resolutions, we tested the effect of the explored time scales on the dynamics of the two components. Four globular proteins with different secondary and tertiary structures (see Figure 1\u2014figure supplement 1 and Table 1) were studied here. We found that the onset temperature (Ton) of the protein dynamical transition varies with both biomolecular structure and hydration level, but is independent of the instrumental resolution time. Conversely, Ton of the hydration water is insensitive to both the protein structure and the level of hydration, but solely determined by the instrument resolution. Therefore, the dynamical transition of the protein is decoupled from the onset of anharmonic dynamics of its hydration water around 200 K. The onset in water cannot be assigned to a physical transition, but to a resolution effect. In contrast, the protein dynamical transition is an intrinsic change in the dynamics of the biomolecules. Complementary differential scanning calorimetry (DSC) measurements revealed a step-like change in the heat flow around the transition temperature of the protein, similar to the glass transition observed in polymers. This suggests that the dynamical transition in the protein results from a similar process involving the freezing of the structural relaxation of the protein molecules beyond equilibrium.\n\n## Results\n\n### Elastic neutron scattering experiments\n\nThe quantity measured in the neutron experiment is the elastic intensity, that is the intensity of the elastic peak in the dynamic structure factor, S(q, \u0394t), where q is the scattering wave vector and \u0394t is the resolution time of the neutron spectrometer. S(q, \u0394t) is an estimate of the average amplitude of the atomic motions up to \u0394t (Hong et al., 2013; Liu et al., 2017). Three neutron backscattering spectrometers were chosen to cover a wide range of time scales; HFBS at the NIST Center for Neutron Scattering, USA, DNA at the Materials and Life Science Experimental Facility at J-PARC in Japan, and OSIRIS at the ISIS Neutron and Muon Facility, UK. The instrumental energy resolutions are 1, 13, 25.4, and 100 \u00b5eV, corresponding to time scales of ~1 ns, ~80 ps, ~40 ps, and ~10 ps, respectively. Four globular proteins were investigated, MYO, cytochrome P450 (CYP), LYS, and green fluorescent protein (GFP), the detailed structural features of which are presented in Figure 1\u2014figure supplement 1 and Table 1. For simplicity, the hydrogenated and perdeuterated proteins are noted as H- and D-protein, respectively. Details of the sample preparation and neutron experiments are provided in Materials and Methods (Table 2).\n\n**Table 1.**\n Relative content of each secondary structure in the proteins.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Protein</th>\n      <th>Lysozyme</th>\n      <th>Myoglobin</th>\n      <th>Cytochrome P450</th>\n      <th>Green fluorescent protein</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Abbreviation</td>\n      <td>LYS</td>\n      <td>MYO</td>\n      <td>CYP</td>\n      <td>GFP</td>\n    </tr>\n    <tr>\n      <td>PDB ID</td>\n      <td>1AKI</td>\n      <td>2V1K</td>\n      <td>2ZAX</td>\n      <td>1EMB</td>\n    </tr>\n    <tr>\n      <td>Alpha-helix*</td>\n      <td>40%</td>\n      <td>76%</td>\n      <td>52%</td>\n      <td>7%</td>\n    </tr>\n    <tr>\n      <td>Beta-sheet*</td>\n      <td>12%</td>\n      <td>0%</td>\n      <td>11%</td>\n      <td>50%</td>\n    </tr>\n    <tr>\n      <td>Loop and turn*</td>\n      <td>48%</td>\n      <td>24%</td>\n      <td>37%</td>\n      <td>43%</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The relative content of each secondary structure is defined by mass fraction._\n\n**Table 2.**\n The secondary structure content of cytochrome P450 (CYP) protein at different hydration levels.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Alpha-helix</th>\n      <th>Beta-sheet</th>\n      <th>Loop and turn</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CYP (h = 0.2)</td>\n      <td>52%</td>\n      <td>11%</td>\n      <td>37%</td>\n    </tr>\n    <tr>\n      <td>CYP (h = 0.4)</td>\n      <td>52%</td>\n      <td>11%</td>\n      <td>37%</td>\n    </tr>\n  </tbody>\n</table>\n\n### Dynamics of protein\n\nFigure 1a\u2013g shows the temperature dependence of S(q, \u0394t) collected on H-LYS, H-MYO, and H-CYP in dry and hydrated state with D2O measured by neutron spectrometers of different resolutions, \u0394t. Since the measurements were performed on H-protein in D2O, the signals reflect the dynamics of the proteins. A clear deviation can be seen in the temperature dependence of S(q, \u0394t) for the hydrated protein from that of the dry powder, which is defined as the onset temperature, Ton (Roh et al., 2005; Schir\u00f3 et al., 2012; Benedetto, 2017; Roh et al., 2006; Schir\u00f2 et al., 2015), of the protein dynamical transition. The advantage of such definition is that it highlights the effect of hydration on the anharmonic dynamics in proteins while removing the contribution from the local side groups, for example, methyl groups, whose motions are hydration independent (Hong et al., 2013; Hong et al., 2012). As shown in Schir\u00f3 et al., 2012; Liu et al., 2018, the activation temperature of the rotations of methyl group varies with the instrument resolution, which will cloud the present analysis. Two important conclusions can be drawn from Figure 1 (Ton is summarized in Table 5). (1) Ton is distinct for each protein, LYS (213 K), MYO (198 K), and CYP (228 K), and (2) it is independent of the time scale explored even though the resolutions of the neutron spectrometers differ by orders of magnitude. Using the same set of data, we also analyzed the temperature dependence of the mean-squared atomic displacements, <x2(\u0394t)> (see results in Figure 1\u2014figure supplement 2) and obtained similar conclusions. We further calculated Ton of H-protein in D2O in the q-range from 0.45 to 0.9 and 1.1 to 1.75 \u212b\u22121. As shown in Table 3, Table 4, and Table 5, the q-range does not alter the Ton of proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig1-v1.jpg)\n\n**Figure 1.:** Neutron spectrometers with different resolutions (1, 13, 25.4, and 100 \u03bceV) were applied. Elatic intensity S(q, \u0394t) of (a, b) dry H-LYS and H-LYS in D2O at h = 0.3, (c, d) dry H-MYO and H-MYO in D2O at h = 0.3, and (e\u2013g) dry H-CYP and H-CYP in D2O at h = 0.4. All the experimental S(q, \u0394t) are normalized to data measured at ~10 K and summed over values of q ranging from 0.45 to 1.75 \u00c5\u22121. The dashed lines in each figure identify the onset temperatures of the transition, Ton, where the neutron data of the hydrated system deviate from the dry form.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Structures of (a) lysozyme (LYS), (b) myoglobin (MYO), (c) cytochrome P450 (CYP), and (d) green fluorescent protein (GFP).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Mean-squared atomic displacements <x2(\u0394t)> derived from Figure 1 using Gaussian approximation, of (a, b) dry H-LYS and H-LYS in D2O at h = 0.3, (c, d) dry H-MYO and H-MYO in D2O at h = 0.3, and (e\u2013g) dry H-CYP and H-CYP in D2O at h = 0.4.\n\n**Table 3.**\n Ton of protein in q-ranges from q = 0.45\u20130.9 \u212b\u22121.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>1 ns</th>\n      <th>80 ps</th>\n      <th>40 ps</th>\n      <th>10 ps</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LYS</td>\n      <td>213 K</td>\n      <td>213 K</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>MYO</td>\n      <td>198 K</td>\n      <td>198 K</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>CYP</td>\n      <td>228 K</td>\n      <td>-</td>\n      <td>228 K</td>\n      <td>228 K</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Ton of protein in q-ranges from q = 1.1\u20131.75 \u212b\u22121.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>1 ns</th>\n      <th>80 ps</th>\n      <th>40 ps</th>\n      <th>10 ps</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LYS</td>\n      <td>212 K</td>\n      <td>213 K</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>MYO</td>\n      <td>197 K</td>\n      <td>199 K</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>CYP</td>\n      <td>228 K</td>\n      <td>-</td>\n      <td>227 K</td>\n      <td>228 K</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 5.**\n Ton of protein at different time resolution.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>1 ns</th>\n      <th>80 ps</th>\n      <th>40 ps</th>\n      <th>10 ps</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LYS (h = 0.3)</td>\n      <td>213 K</td>\n      <td>213 K</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>MYO (h = 0.3)</td>\n      <td>198 K</td>\n      <td>198 K</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>CYP (h = 0.4)</td>\n      <td>228 K</td>\n      <td>-</td>\n      <td>228 K</td>\n      <td>228 K</td>\n    </tr>\n  </tbody>\n</table>\n\nThese findings suggest that the dynamical transition in the protein is an intrinsic property of the hydrated biomolecule, and it depends on the structure and chemistry of the protein concerned. Our results are consistent with Schir\u00f3 et al., 2012, which demonstrated that Ton in both protein and polypeptide is independent of the resolution of the neutron spectrometer, if one carefully removes the contributions from methyl rotations and vibrations to <x2(\u0394t)>measured by elastic neutron scattering. Additionally, Benedetto, 2017 showed that, as compared to the dry form, the D2O-hydrated LYS presents an approximately resolution-independent Ton, again in agreement with our findings.\n\nFigure 2 compares the temperature dependence of S(q, \u0394t) measured on H-CYP and H-LYS in D2O at different hydration levels, h (Ton is summarized in Table 6). Evidently Ton of the protein increases from 228 to 248 K when reducing h from 0.4 to 0.2 (Figure 2a) by using the neutron instrument with \u0394t = 1 ns. A similar hydration dependence of Ton is also observed when we replot the neutron data measured on H-LYS hydrated in D2O reported in Roh et al., 2006 (Figure 2c). It can be found that Ton of LYS changes systematically from 195 to 225 K, when decreasing h from 0.45 to 0.18. Similar conclusion can be obtained when we analyzed <x2(\u0394t)> (see Figure 2\u2014figure supplement 1). The dynamical transition temperature in lipid membranes is higher when the membrane is dry (Popova and Hincha, 2011). We also studied the secondary structure content and tertiary structure of CYP protein at different hydration levels (h = 0.2 and 0.4) through molecular dynamics simulation. As shown in Table 2 and Figure 2\u2014figure supplement 2, the extent of hydration does not alter the protein secondary structure content and overall packing. Thus, this result suggests that water molecules have more influence on protein dynamics than on protein structure.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig2-v1.jpg)\n\n**Figure 2.:** S(q, \u0394t) of (a) dry H-CYP and H-CYP in D2O at h = 0.2 and 0.4 and (c) dry H-LYS and H-LYS in D2O at h = 0.18, 0.30, and 0.45, all measured using HFBS with the instrumental resolution of 1 \u03bceV. All the data in (c) were replotted from Roh et al., 2006. (b) Differential scanning calorimetry (DSC) curves obtained for dry H-CYP and H-CYP in water at h = 0.2 and 0.4. TDSC is defined as the midpoint between two heat flow baselines, where \u0394H1 = \u0394H2 (Bassi et al., 2003; Stolwijk et al., 2013; ASTM International, 2014).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** $<x^{2}(\u0394t)>$, derived from Figure 2c using Gaussian approximation, of dry H-CYP and H-CYP in D2O at h = 0.2 and 0.4.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig2-figsupp3-v1.jpg)\n\n**Table 6.**\n Ton of protein at different hydration level.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>0.18</th>\n      <th>0.2</th>\n      <th>0.3</th>\n      <th>0.4</th>\n      <th>0.45</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LYS (1 ns)</td>\n      <td>225 K</td>\n      <td>-</td>\n      <td>213 K</td>\n      <td>-</td>\n      <td>195 K</td>\n    </tr>\n    <tr>\n      <td>CYP (1 ns)</td>\n      <td>-</td>\n      <td>248 K</td>\n      <td>-</td>\n      <td>228 K</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>CYP (TDSC)</td>\n      <td>-</td>\n      <td>245 K</td>\n      <td>-</td>\n      <td>225 K</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\nThe results from the neutron scattering experiments suggest that the dynamical transition in proteins is an intrinsic property of the biomolecule and strongly depends on the amount of water surrounding it. Such an intrinsic transition can result either from a critical phase transition, for example, water to ice (Wood et al., 2007; Fitter et al., 1999), or from freezing of the structural relaxation of the system beyond the equilibrium time (~100\u20131000 s) of the experiment, in analogy to the glass transition in polymers from rubbery state to the glass form (Ngai, 2004; Frick and Richter, 1995; Frick et al., 1995). Both of them will significantly increase the mechanical modulus of the material and suppress the atomic displacements at the fast time scales (pico-to-nanosecond) probed by the neutron spectrometers (Wood et al., 2007; Fitter et al., 1999; Ngai, 2004; Frick and Richter, 1995; Frick et al., 1995) like those used in this work. To explore the microscopic nature of the protein dynamical transition, we performed DSC measurements on CYP at dry, h = 0.2 and 0.4. As illustrated in Figure 2b, H-CYP at h = 0.2 and h = 0.4 exhibit a step-like transition in the heat flow at 245 and 225 K, respectively, while no such transition is observed in dry H-CYP. Such step-like transition in heat flow is normally defined as the glass transition in polymers (Bassi et al., 2003; Stolwijk et al., 2013).\n\nFor simplicity, the step-like transition identified by DSC is noted as TDSC. When comparing Figure 2b with Figure 2a, one can find that the values of TDSC approximate those of Ton probed by neutrons. TDSC of hydrated MYO was reported by literature to be 190 K (Jansson and Swenson, 2010), which is again in good agreement with the value of Ton in Figure 1. More importantly, TDSC and Ton present the same hydration dependence, that is, both increase with decrease of h (see Figure 2a, b). Therefore, we can conclude that the onset of anharmonicity around 200 K in proteins measured by neutron scattering as shown in Figure 1 results from the freezing of the structural relaxation of the biomolecule beyond the equilibrium when cooling the system below TDSC, similar to the glass transition in polymers. Similar interpretation has also been suggested in Ngai et al., 2013.\n\nAs the time scale probed by neutron spans from pico- to nanoseconds, it is too fast to allow us to directly \u2018see\u2019 structural relaxations of the protein around Ton. However, \u2018freezing\u2019 of the structural relaxation beyond the equilibrium time (~100\u20131000 s), that is, the measurement time of neutron experiments at each temperature, will turn the system into a \u2018frozen\u2019 solid form, which can significantly suppress the fast dynamics measured by neutron and cause the transition probed (Ngai, 2004; Frick and Richter, 1995; Frick et al., 1995; Ngai et al., 2013). Moreover, water can be considered here as lubricant or plasticizer which facilitates the motion of the biomolecule (Hong et al., 2012; Roh et al., 2009; Chen et al., 2018). As widely observed in polymeric systems (Verhoeven et al., 1989; Zhang et al., 1999; Cerveny et al., 2005), adding water as plasticizer will significantly reduce the glass transition temperature of the polymers. This rationalizes the hydration effect on TDSC and Ton, both decreasing with increase of h.\n\n### Dynamics in hydration water\n\nFigure 3a\u2013e shows the temperature dependence of S(q, \u0394t) measured on perdeuterated GFP and CYP in dry and H2O-hydrated forms. In these samples, the measured signal reflects primarily the motions of water molecules. Two important observations arise from the data. First, Ton of hydration water for these two proteins strongly depends on the resolution of the spectrometer, increasing drastically from 200 to 250 K when reducing \u0394t from 1 ns to 10 ps. Similar conclusions are obtained when we analyzed the temperature dependence of <x2(\u0394t)> (see Figure 3\u2014figure supplement 1). The observation of a dependence of Ton on \u0394t is typical for a thermally activated process, which occurs when the characteristic relaxation time becomes comparable to the instrumental resolution, and the relaxation process is said to enter the time window of the instrument (Liu et al., 2018; Schir\u00f3 et al., 2010). In this case, it means that the relaxation time, $\\tau$, of hydration water is 10 ps at 250 K, 40 ps at 234 K, and 1 ns at 200 K. Assuming an Arrhenius-type process, $\\tau=\\tau_{0}exp\u2061(\\frac{\u0394U}{k_{B}T})$, the energy barrier \u0394U can be estimated to be ~38 kJ/mol. Our results thus demonstrate that the anharmonic onset of the hydration water is in fact not a real physical transition but merely a resolution effect. It occurs as the relaxation time $\\tau$ of water, which varies continuously with temperature, happens to cross the instrument resolution, \u0394t, on the pico-to-nanosecond time scales at Ton. Our findings agree with reports from dielectric measurements, the signal of which is highly sensitive to the rotation of hydration water (Pawlus et al., 2008; Khodadadi et al., 2008). They showed a smooth temperature dependence of the characteristic relaxation time in the range from 170 to 250 K without any sudden changes (Pawlus et al., 2008; Khodadadi et al., 2008). Moreover, our data also agree with Doster et al., 2010, which demonstrated that the characteristic relaxation time of protein-surface water, measured on H2O-hydrated perdeuterated C-phycocyanin by quasi-elastic neutron scattering, changes smoothly over temperature without any disruptions around the dynamical transition temperature of the protein. Second, the onset temperature of the hydration water is independent of the protein structure when \u0394t is fixed, since the values of both GFP and CYP are identical.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig3-v1.jpg)\n\n**Figure 3.:** Neutron spectrometers with different resolutions (1, 25.4, and 100 \u03bceV) were applied. S(q, \u0394t) of (a, b) dry D-GFP and D-GFP in H2O at h = 0.4, and (c\u2013e) dry D-CYP and D-CYP in H2O at h = 0.4.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Mean-squared atomic displacements <x2(\u0394t)>, derived from Figure 3 using Gaussian approximation, of (a, b) dry D-GFP and D-GFP in H2O at h = 0.4, (c\u2013e) dry D-CYP and D-CYP in H2O at h = 0.4.\n\nFurthermore, the hydration dependence of the anharmonic onset of the water is presented in Figure 4, which shows that Ton remains constant with h as long as the instrument resolution is fixed. This behavior is drastically different from that of the protein (Figure 2). The same conclusions can be obtained when analyzing <x2(\u0394t)> (see Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig4-v1.jpg)\n\n**Figure 4.:** S(q, \u0394t), for dry D-CYP and D-CYP in H2O at h = 0.2 and 0.4, measured using HFBS neutron instrument with an energy resolution of 1 \u03bceV.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95665/elife-95665-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** <x2(\u0394t)>, derived from Figure 4 using Gaussian approximation, of dry D-CYP and D-CYP in H2O at h = 0.2 and 0.4.\n\n### Conclusion and discussion\n\nBy combining elastic neutron scattering with isotopic labeling, we have been able to probe the dynamics of the protein and surface water separately, as a function of temperature, protein structural composition, hydration level, and time scale. We found that the anharmonic onsets of the two components around 200 K are clearly decoupled and different in origin. The protein shows an intrinsic transition, whose temperature depends on the structure of the protein and the hydration level, and not on the instrument used to measure it. It has a thermodynamic signature similar to the glass transition in polymers as confirmed by DSC, and thus can be assigned to the freezing of the structural relaxation of the protein beyond the experimental equilibrium time (100\u20131000 s). In contrast, the temperature at which the onset of anharmonicity happens in the hydration water is given by the instrument resolution, independent of both the biomolecular structure and the level of hydration.\n\nBased on our findings, we can infer that, in some cases, the dynamical transition of a protein can coincide with the anharmonic onset of its surface water if one characterizes the system using a single-neutron instrument with a fixed resolution. But such coincidence will be torn apart if the measurements were conducted by using instruments of different resolutions or at different amounts of hydration, such as in the present work. This rationalizes the seemingly contradictive results reported in the literature (Wood et al., 2008; Nickels et al., 2012; Benedetto, 2017).\n\nThe protein dynamical transition has long been thought to connect to the thermal onset of the functionality of the biomolecule. Our experiments suggest that this transition in protein is an intrinsic property of the hydrated protein that its structural relaxation is activated upon heating above the onset temperature. This structural relaxation might be associated with conformational jumps of the biomolecules among different functional states, such as the states with the ligand-binding pocket being opened or closed. Unfreezing of the protein structural relaxation might facilitate these conformational jumps, turning on its functionality. However, as revealed by Mamontov et al., 2010, the denatured form of LYS also exhibits a dynamical transition, similar to that seen in its folded native form. Additionally, the dynamical transition also can be found in the mixture of amino acids (Schir\u00f3 et al., 2012). Hence, one can argue that the activation of the structural relaxation of the biomolecule above the dynamical transition temperature is a necessary but insufficient condition for the protein to function, as the latter also requires the biomolecule assuming the correctly folded three-dimensional structure. The findings in this work help further the understanding of the microscopic mechanism governing the dynamics in proteins and their hydration water, as well as their interactions at the cryogenic temperature. More importantly, we demonstrated that the protein dynamical transition is a real transition, connecting to unfreezing of the biomolecular structural relaxation, which could be crucial for activating the function.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Escherichia coli, BL21(DE3)</td>\n      <td>Sigma-Aldrich</td>\n      <td>CMC0016</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, Recombinant protein</td>\n      <td>Lysozyme, chicken egg white</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS: 12650-88-3</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, Recombinant protein</td>\n      <td>Myoglobin, equine skeletal muscle</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS: 100684-32-0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>H2O</td>\n      <td>Millipore</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>D2O</td>\n      <td>Sigma-Aldrich</td>\n      <td>CAS: 7789-20-0</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Sample preparation\n\nHydrogenated LYS from chicken egg white and hydrogenated MYO from equine skeletal muscle were purchased from Sigma-Aldrich (Shanghai, China). The expression and purification of hydrogenated and perdeuterated CYP (we used P450 from Pseudomonas putida for the study) and GFP are described previously Liu et al., 2017. In order to exclude the effect of ions, the proteins were dialyzed before experiments. For simplification, the hydrogenated protein and perdeuterated protein are denoted as H- and D-proteins in the manuscript, respectively. All the H-proteins were dissolved in D2O to allow full deuterium exchange of all exchangeable hydrogen atoms and then lyophilized for 12 hr to obtain the dry sample. The lyophilized H-protein is then put into a desiccator with D2O, placed in the glove box purged with nitrogen gas, to absorb D2O till the desired hydration level, h (g water/g protein). In contrast, the preparation of the deuterated proteins was conducted in the opposite way. The D-proteins were dissolved in H2O to allow full hydrogen exchange of all exchangeable deuterium atoms and then lyophilized for 12 hr to obtain the dry sample. The lyophilized D-protein is then put into a desiccator with H2O to absorb H2O till the desired h. The ultrapure water (H2O) was supplied by a Millipore Direct-Q system (18.2 M\u2126 cm at 25\u00b0C). The deuterium oxidized (D2O, 99.9 atom % D) was purchased from Sigma-Aldrich (Shanghai, China). The hydration levels of protein samples were controlled by measuring the sample weights before and after water adsorption. In this work, h ranges from 0.02 (lyophilized dry form), 0.2, 0.3\u20130.4, where h = 0.4 corresponds to a case that roughly a single layer of water molecules covers the protein\u2019s surface. The dry H-CYP, H-LYS, H-MYO, and their D2O-hydrated forms at h = 0.2, 0.3, or 0.4, and the dry D-GFP and D-CYP, and their H2O-hydrated powders at h = 0.4 are prepared for neutron scattering experiments. The accuracy of h is controlled within 10% error. For example, h = 0.4 \u00b1 0.04 g water/g protein. All samples were sealed tightly in the aluminum cans in nitrogen before the neutron scattering experiments.\n\nThe dry H-CYP lyophilized in H2O and the ones hydrated in H2O at h = 0.2 and 0.4 are prepared for the DSC measurement.\n\n### Elastic incoherent neutron scattering\n\nThe elastic scattering intensity $S(q,\u0394t)\u2248I_{inc}(q,\u0394t)=\\frac{1}{N}\\sumjNb_{j,inc}^{2}\u27e8exp\u2061[\u2212iq\u22c5r_{j}(0)]exp\u2061[iq\u22c5r_{j}(\u0394t)]\u27e9$ is normalized to the lowest temperature (~10 K) and is approximately the value of the intermediate scattering function when decaying to the instrument resolution time, \u0394t. All the S(q, \u0394t) was obtained in the temperature range of ~10\u2013300 K during heating process with the rate of 1.0 K/min by using the HFBS at NIST, DNA at J-PARC, and OSIRIS at ISIS. The energy resolutions of HFBS, DNA, and OSIRIS are 1, 13, 25.4, and 100 \u03bceV, corresponding to the resolution times of ~1 ns, ~80 ps, ~40 ps, and ~10 ps, respectively. The results from instruments with various resolutions were summed over the same q from 0.45 to 1.75 \u00c5\u22121.\n\n### Differential scanning calorimetry\n\nDSC measurements were performed by using the METTLER instruments DSC3+. The sample was sealed in a pan of aluminum. An empty pan was used as a reference. All the experiments were carried out in the temperature ranged from 150 to 300 K with heating rate of 1 K/min. The heating rate of DSC is the same as neutron experiments.\n\n### Estimation of the mean-squared atomic displacement\n\nThe mean-squared atomic displacement  $<x^{2}(\u0394t)>$ was estimated by performing Gaussian approximation, where  $S(q,\u0394t)=exp(\u2212\\frac{1}{6}q^{2}<x^{2}(\u0394t)>)$. The values of q used for Gaussian fitting ranges from 0.45 to 0.9 \u00c5\u22121.\n\n### Protein samples used for experiments\n\nWe studied four globular proteins, MYO, CYP, LYS, and GFP, the detailed structural features of which are presented in Figure 1\u2014figure supplement 1 and Table 1. The four proteins differ significantly in both secondary and tertiary structures. MYO is primarily a helix protein while GFP is dominated by beta sheets. Moreover, LYS contains two structural domains linked by a hinge while the other three are single-domain proteins.\n\n### Molecular dynamics simulation\n\nThe initial structure of protein CYP for simulations was taken from PDB crystal structure (2ZAX). Two protein monomers were filled in a cubic box. 1013 and 2025 water molecules were inserted into the box randomly to reach a mass ratio of 0.2 and 0.4 g water/1 g protein, respectively, which mimics the experimental condition. Then 34 sodium counter ions were added to keep the system neutral in charge. The CHARMM 27 force field in the GROMACS package was used for CYP, whereas the TIP4P/Ew model was chosen for water. The simulations were carried out at a broad range of temperatures from 360 to 100 K, with a step of 5 K. At each temperature, after the 5000 steps energy-minimization procedure, a 10-ns NVT (substance, volume, temperature) is conducted. After that, a 30-ns NPT (substance, pressure, temperature) simulation was carried out at 1 atm with the proper periodic boundary condition. As shown in Figure 2\u2014figure supplement 3, 30 ns is sufficient to equilibrate the system. The temperature and pressure of the system ar controlled by the velocity rescaling method and the method by Parrinello and Rahman, respectively. All bonds of water in all the simulations were constrained with the LINCS (Linear Constraint Solver) algorithm to maintain their equilibration length. In all the simulations, the system was propagated using the leap-frog integration algorithm with a time step of 2 fs. The electrostatic interactions were calculated using the Particle Mesh Ewalds method. A non-bond pair-list cutoff of 1 nm was used and the pair-list was updated every 20 fs. All MD simulations were performed using GROMACS 4.5.1 software packages.\n",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "69453f92-663c-450c-80d2-58f64d5bbd3e",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hannes Neuweiler, University of W\u00fcrzburg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95665.4.sa0](https://doi.org/10.7554/eLife.95665.4.sa0)\n\nThe study answers the important question of whether the conformational dynamics of proteins are slaved by the motion of solvent water or are intrinsic to the polypeptide. The results from neutron scattering experiments, involving isotopic labelling, carried out on a set of four structurally different proteins are convincing, showing that protein motions are not coupled to the solvent. A strength of this work is the study of a set of proteins using spectroscopy covering a range of resolutions. The work is of broad interest to researchers in the fields of protein biophysics and biochemistry.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95665.4.sa1](https://doi.org/10.7554/eLife.95665.4.sa1)\n\nZheng et al. study the 'glass' transitions that occurs in proteins at ca. 200K using neutron diffraction and differential isotopic labeling (hydrogen/deuterium) of the protein and solvent. To overcome limitations in previous studies, this work is conducted in parallel with 4 proteins (myoglobin, cytochrome P450, lysozyme and green fluorescent protein) and experiments were performed at a range of instrument time resolutions (1ns - 10ps). The author's data looks compelling, and suggests that transitions in the protein and solvent behavior are not coupled and contrary to some previous reports, the apparent water transition temperature is a 'resolution effect'; i.e. instrument response is limited. This is likely to be important in the field, as a reassessment of solvent 'slaving' and the role of the hydration shell on protein dynamics should be reassessed in light of these findings.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95665.4.sa2](https://doi.org/10.7554/eLife.95665.4.sa2)\n\nSummary:\n\nThe manuscript entitled \"Decoupling of the Onset of Anharmonicity between a Protein and Its Surface Water around 200 K\" by Zheng et al. presents a neutron scattering study trying to elucidate if at the dynamical transition temperature water and protein motions are coupled. The origin of the dynamical transition temperature has been debated for decades, specifically its relation to hydration.\n\nThe study is rather well conducted, with a lot of effort to acquire the perdeuterated proteins, and some results are interesting.\n",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "632ef429-c08b-4c1b-804f-89adffbd3b0d",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C1",
+      "claim": "The protein dynamical transition occurs at approximately 200 K.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein dynamical transition at ~200 K, where the biomolecule transforms from a harmonic, non-functional form to an anharmonic, functional state, has been thought to be slaved to the thermal activation of dynamics in its surface hydration water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known phenomenon being investigated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "8daa40df-b7d5-47a5-b207-97f9972e6eb0",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C2",
+      "claim": "At the dynamical transition, the biomolecule transforms from a harmonic, non-functional form to an anharmonic, functional state.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein dynamical transition at ~200 K, where the biomolecule transforms from a harmonic, non-functional form to an anharmonic, functional state, has been thought to be slaved to the thermal activation of dynamics in its surface hydration water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characterization of the transition is stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "a378c0f7-17f2-4fb2-9584-e65ef228d051",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C3",
+      "claim": "The onset of anharmonicity in protein and hydration water around 200 K is decoupled.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by selectively probing the dynamics of protein and hydration water using elastic neutron scattering and isotopic labeling, we found that the onset of anharmonicity in the two components around 200 K is decoupled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study as stated in the abstract, supported by experimental data from elastic neutron scattering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5dc7a6c1-624c-423f-8df4-105a0d57356e",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C4",
+      "claim": "The onset of anharmonicity in protein is an intrinsic transition whose characteristic temperature is independent of the instrumental resolution time.",
+      "claim_type": "EXPLICIT",
+      "source": "The one in protein is an intrinsic transition, whose characteristic temperature is independent of the instrumental resolution time, but varies with the biomolecular structure and the amount of hydration, while the one of water is merely a resolution effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the abstract and supported by measurements at different instrumental resolutions shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "089803e7-1ad1-41ee-9854-95f47e9e6e55",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C5",
+      "claim": "The onset temperature of the protein dynamical transition varies with the biomolecular structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The one in protein is an intrinsic transition, whose characteristic temperature is independent of the instrumental resolution time, but varies with the biomolecular structure and the amount of hydration, while the one of water is merely a resolution effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated by comparing different proteins (LYS, MYO, CYP) in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "c3395164-51bd-4317-90e3-b643a7935536",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C6",
+      "claim": "The onset temperature of the protein dynamical transition varies with the amount of hydration.",
+      "claim_type": "EXPLICIT",
+      "source": "The one in protein is an intrinsic transition, whose characteristic temperature is independent of the instrumental resolution time, but varies with the biomolecular structure and the amount of hydration, while the one of water is merely a resolution effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated by measurements at different hydration levels shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "bed6fd08-dddf-4a34-88ae-c414bccbb125",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C7",
+      "claim": "The onset of anharmonicity in hydration water is merely a resolution effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The one in protein is an intrinsic transition, whose characteristic temperature is independent of the instrumental resolution time, but varies with the biomolecular structure and the amount of hydration, while the one of water is merely a resolution effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the abstract and supported by measurements showing resolution-dependent onset temperatures for water in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "959c0a81-2c81-4bf5-b768-06b92c7c63bd",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C8",
+      "claim": "Internal dynamics of a protein is crucial for its functions, including allosteric conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that the internal dynamics of a protein is crucial for its functions, including allosteric conformational changes (Martin, 2001), ligand binding (Balog et al., 2004) and enzymatic reactions (Hay and Scrutton, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5448aca6-09a5-49ef-a92e-4a9939d25402",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C9",
+      "claim": "Internal dynamics of a protein is crucial for ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that the internal dynamics of a protein is crucial for its functions, including allosteric conformational changes (Martin, 2001), ligand binding (Balog et al., 2004) and enzymatic reactions (Hay and Scrutton, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "b31d1fc0-f14b-4ca7-a91c-d846dad6f8b9",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C10",
+      "claim": "Internal dynamics of a protein is crucial for enzymatic reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that the internal dynamics of a protein is crucial for its functions, including allosteric conformational changes (Martin, 2001), ligand binding (Balog et al., 2004) and enzymatic reactions (Hay and Scrutton, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5d7d341a-d7e9-402e-9139-ebe15fc835d0",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C11",
+      "claim": "Hydrated proteins exhibit a dynamical transition around 200 K where the slope of the temperature dependence of atomic displacements changes significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, hydrated proteins exhibit a dynamical transition around 200 K, across which the slope of the temperature dependence of the atomic displacements changes significantly and the biomolecule transforms from a rigid, harmonic state, to a flexible, anharmonic form (Rupley and Careri, 1991; Vitkup et al., 2000; Rasmussen et al., 1992; Wood et al., 2008; Roh et al., 2005; Zaccai, 2000; Doster et al., 1989; Hong et al., 2013; Schir\u00f3 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with multiple supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "504f4f84-6cb5-4e2b-994a-f35adfc17a21",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C12",
+      "claim": "The dynamical transition has been linked to the thermal onset of function in myoglobin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although exceptions have been reported (Daniel et al., 1998), the dynamical transition has been linked to the thermal onset of function in a number of proteins, for example, myoglobin (MYO; Austin et al., 1975), ribonuclease (Rasmussen et al., 1992), elastase (Ding et al., 1994), and bacteriorhodopsin (Ferrand et al., 1993), all of which become inactive below the dynamical transition temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "6ab91f04-d1a8-4f6f-a1a4-987b25464459",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C13",
+      "claim": "The dynamical transition has been linked to the thermal onset of function in ribonuclease.",
+      "claim_type": "EXPLICIT",
+      "source": "Although exceptions have been reported (Daniel et al., 1998), the dynamical transition has been linked to the thermal onset of function in a number of proteins, for example, myoglobin (MYO; Austin et al., 1975), ribonuclease (Rasmussen et al., 1992), elastase (Ding et al., 1994), and bacteriorhodopsin (Ferrand et al., 1993), all of which become inactive below the dynamical transition temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "c4de9c52-6d83-4cb8-aba6-f32b5d67fe77",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C14",
+      "claim": "The dynamical transition has been linked to the thermal onset of function in elastase.",
+      "claim_type": "EXPLICIT",
+      "source": "Although exceptions have been reported (Daniel et al., 1998), the dynamical transition has been linked to the thermal onset of function in a number of proteins, for example, myoglobin (MYO; Austin et al., 1975), ribonuclease (Rasmussen et al., 1992), elastase (Ding et al., 1994), and bacteriorhodopsin (Ferrand et al., 1993), all of which become inactive below the dynamical transition temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "d61fc404-3cc0-4993-9ba3-630fa7967acf",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C15",
+      "claim": "The dynamical transition has been linked to the thermal onset of function in bacteriorhodopsin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although exceptions have been reported (Daniel et al., 1998), the dynamical transition has been linked to the thermal onset of function in a number of proteins, for example, myoglobin (MYO; Austin et al., 1975), ribonuclease (Rasmussen et al., 1992), elastase (Ding et al., 1994), and bacteriorhodopsin (Ferrand et al., 1993), all of which become inactive below the dynamical transition temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "8c5f6c3c-133a-4a94-a9e0-b3c17ac5d2bc",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C16",
+      "claim": "Myoglobin, ribonuclease, elastase, and bacteriorhodopsin become inactive below the dynamical transition temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Although exceptions have been reported (Daniel et al., 1998), the dynamical transition has been linked to the thermal onset of function in a number of proteins, for example, myoglobin (MYO; Austin et al., 1975), ribonuclease (Rasmussen et al., 1992), elastase (Ding et al., 1994), and bacteriorhodopsin (Ferrand et al., 1993), all of which become inactive below the dynamical transition temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "4f49aaf8-f671-4211-96a4-bfeeb4f220c5",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C17",
+      "claim": "One theory suggests the protein dynamical transition is due to the behavior of water in the hydration shell, transitioning from rigid to fluid at certain temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "One theory suggests it is due to the behavior of water in the hydration shell, transitioning from rigid to fluid at certain temperatures, thus influencing protein flexibility (Wood et al., 2008; Schir\u00f3 et al., 2012; Fenimore et al., 2002; Frauenfelder et al., 2009; Qin et al., 2016; Lewandowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an existing theory with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5ec3bd74-8961-4769-9c80-d4ead0f11be7",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C18",
+      "claim": "Another theory considers the dynamical transition as an inherent property of the protein, where thermal energy allows the protein to access a wider range of conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Another theory considers the transition as an inherent property of the protein, where thermal energy allows the protein to access a wider range of conformations (Nickels et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an alternative theory with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "353d5eca-9fc1-4917-85a8-41bf7805fbe2",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C19",
+      "claim": "A prevailing scenario is that the internal dynamics of the protein is slaved to the motion of the surrounding hydration water.",
+      "claim_type": "EXPLICIT",
+      "source": "A prevailing scenario is that the internal dynamics of the protein is slaved to the motion of the surrounding hydration water (Wood et al., 2008; Schir\u00f3 et al., 2012; Fenimore et al., 2002; Frauenfelder et al., 2009; Qin et al., 2016; Lewandowski et al., 2015), and thus the protein dynamical transition results from the changes in the dynamics of the hydration water with temperature (Vitkup et al., 2000; Wood et al., 2008; Schir\u00f3 et al., 2012; Frauenfelder et al., 2009; Tournier et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prevailing scenario with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "2faf8911-8058-4ca9-b144-e976aa961fa3",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C20",
+      "claim": "The presence of the protein dynamical transition requires a minimum amount of hydration water, approximately 0.2 g water/g protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This scenario is indirectly supported by the experimental finding that the presence of the protein dynamical transition requires a minimum amount of hydration water, ~0.2 g water/g protein (Rupley and Careri, 1991; Roh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "21768f25-1b4b-452b-ad5a-902df1ea5bf7",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C21",
+      "claim": "All-atom molecular dynamics simulations suggest that the activation of translational motions of surface water molecules around 200 K leads to the dynamical transition in the underlying protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Further support comes from the results of all-atom molecular dynamics simulations, suggesting that it is the activation of the translational motions of surface water molecules around 200 K that leads to the dynamical transition in the underlying protein (Vitkup et al., 2000; Wood et al., 2008; Tournier et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from simulations with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "ad8db907-9ff3-491d-8c73-3375c34b9ac9",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C22",
+      "claim": "Neutrons are highly sensitive to hydrogen atoms as their incoherent scattering cross section is an order of magnitude higher than the incoherent and coherent scattering cross sections of other elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Neutrons are highly sensitive to hydrogen atoms as their incoherent scattering cross section is an order of magnitude higher than the incoherent and coherent scattering cross sections of other elements (Liu et al., 2017; Gaspar et al., 2010; Hong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of neutron scattering with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "6292df30-017b-4026-8273-4e697bf97fb2",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C23",
+      "claim": "Neutron signals collected on an ordinary protein powder hydrated in D2O reflect the dynamics of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, neutron signals collected on an ordinary protein powder hydrated in D2O reflect the dynamics of the protein while signals from the perdeuterated sample in H2O inform about the motion of water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the differential scattering properties of hydrogen and deuterium.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "23477a8c-c4af-496c-887e-3b38a257ff16",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C24",
+      "claim": "Neutron signals from perdeuterated protein samples in H2O inform about the motion of water.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, neutron signals collected on an ordinary protein powder hydrated in D2O reflect the dynamics of the protein while signals from the perdeuterated sample in H2O inform about the motion of water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the differential scattering properties of hydrogen and deuterium.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "11e186e7-8f59-401e-a407-af270063e364",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C25",
+      "claim": "Measurements on perdeuterated maltose-binding protein hydrated in H2O revealed a harmonic-to-anharmonic transition for hydration water taking place at the same temperature as that of the underlying protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements performed on perdeuterated maltose-binding protein hydrated in H2O revealed a harmonic-to-anharmonic transition for hydration water taking place at the same temperature as that of the underlying protein (Wood et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous experimental result with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "d13097ff-7294-4327-88d0-dbcec29ec1cd",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C26",
+      "claim": "An experiment on perdeuterated green fluorescence protein showed that the anharmonic onset in hydration water occurs at a lower temperature than that of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a similar experiment on perdeuterated green fluorescence protein showed that the anharmonic onset in hydration water occurs at a lower temperature than that of the protein (Nickels et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous experimental result with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "6584782e-b138-44ea-b2b3-a92f2ae5f549",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C27",
+      "claim": "Measurements on lysozyme hydrated in both D2O and H2O found that the transition temperature of protein and water coincided when examining their atomic displacements at 1 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent measurements on lysozyme (LYS) hydrated in both D2O and H2O found that the transition temperature of protein and water coincided when examining their atomic displacements at 1 ns, but took place at different temperatures when changing the explored time scale to 3 ns (Benedetto, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous experimental result with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "46dc9f86-defd-4e28-9798-fe3b8095367e",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C28",
+      "claim": "Measurements on lysozyme hydrated in both D2O and H2O found that the transition temperatures of protein and water took place at different temperatures when changing the explored time scale to 3 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent measurements on lysozyme (LYS) hydrated in both D2O and H2O found that the transition temperature of protein and water coincided when examining their atomic displacements at 1 ns, but took place at different temperatures when changing the explored time scale to 3 ns (Benedetto, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previous experimental result with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "53195e49-a1dc-4c2b-b6c8-540d93d3b0cc",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C29",
+      "claim": "The onset temperature (Ton) of the protein dynamical transition for LYS is 213 K.",
+      "claim_type": "EXPLICIT",
+      "source": "Two important conclusions can be drawn from Figure 1 (Ton is summarized in Table 5). (1) Ton is distinct for each protein, LYS (213 K), MYO (198 K), and CYP (228 K), and (2) it is independent of the time scale explored even though the resolutions of the neutron spectrometers differ by orders of magnitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "de5e3567-8907-4b0d-bfad-daa19dbe5a5a",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C30",
+      "claim": "The onset temperature (Ton) of the protein dynamical transition for MYO is 198 K.",
+      "claim_type": "EXPLICIT",
+      "source": "Two important conclusions can be drawn from Figure 1 (Ton is summarized in Table 5). (1) Ton is distinct for each protein, LYS (213 K), MYO (198 K), and CYP (228 K), and (2) it is independent of the time scale explored even though the resolutions of the neutron spectrometers differ by orders of magnitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "a50fb897-f047-4f6e-ab2a-d696715e334d",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C31",
+      "claim": "The onset temperature (Ton) of the protein dynamical transition for CYP is 228 K.",
+      "claim_type": "EXPLICIT",
+      "source": "Two important conclusions can be drawn from Figure 1 (Ton is summarized in Table 5). (1) Ton is distinct for each protein, LYS (213 K), MYO (198 K), and CYP (228 K), and (2) it is independent of the time scale explored even though the resolutions of the neutron spectrometers differ by orders of magnitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "4a0c8ede-5d58-400d-87b2-c1e46c16b904",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C32",
+      "claim": "The onset temperature (Ton) of the protein dynamical transition is independent of the time scale explored even though the resolutions of the neutron spectrometers differ by orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Two important conclusions can be drawn from Figure 1 (Ton is summarized in Table 5). (1) Ton is distinct for each protein, LYS (213 K), MYO (198 K), and CYP (228 K), and (2) it is independent of the time scale explored even though the resolutions of the neutron spectrometers differ by orders of magnitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "45b7d939-9ea5-4223-8c17-de29dcdf9adb",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C33",
+      "claim": "Ton of H-CYP increases from 228 to 248 K when reducing hydration level from 0.4 to 0.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently Ton of the protein increases from 228 to 248 K when reducing h from 0.4 to 0.2 (Figure 2a) by using the neutron instrument with \u0394t = 1 ns.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "37c235f2-cdfd-40dd-bfb6-f776ccda876f",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C34",
+      "claim": "Ton of LYS changes systematically from 195 to 225 K when decreasing hydration level from 0.45 to 0.18.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be found that Ton of LYS changes systematically from 195 to 225 K, when decreasing h from 0.45 to 0.18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by replotted data from Roh et al., 2006 shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5820a3cf-8f31-4ffc-a889-657a48f646c5",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C35",
+      "claim": "The extent of hydration does not alter the protein secondary structure content and overall packing of CYP.",
+      "claim_type": "EXPLICIT",
+      "source": "We also studied the secondary structure content and tertiary structure of CYP protein at different hydration levels (h = 0.2 and 0.4) through molecular dynamics simulation. As shown in Table 2 and Figure 2\u2014figure supplement 2, the extent of hydration does not alter the protein secondary structure content and overall packing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by molecular dynamics simulation results shown in Table 2 and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "dbb2b504-e844-4e66-979e-9bb6dfd09e97",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C36",
+      "claim": "Water molecules have more influence on protein dynamics than on protein structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this result suggests that water molecules have more influence on protein dynamics than on protein structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that hydration affects dynamics but not structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "a6f27c40-10b0-41f9-8b8a-d72e253f03df",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C37",
+      "claim": "H-CYP at h = 0.2 and h = 0.4 exhibit a step-like transition in the heat flow at 245 and 225 K, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 2b, H-CYP at h = 0.2 and h = 0.4 exhibit a step-like transition in the heat flow at 245 and 225 K, respectively, while no such transition is observed in dry H-CYP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by DSC data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "8bc4ad16-1289-42ae-aa67-ee1a629927e4",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C38",
+      "claim": "No step-like transition in heat flow is observed in dry H-CYP.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 2b, H-CYP at h = 0.2 and h = 0.4 exhibit a step-like transition in the heat flow at 245 and 225 K, respectively, while no such transition is observed in dry H-CYP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by DSC data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "f36aebad-0672-4eae-b5d0-1907115a8b3d",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C39",
+      "claim": "Step-like transition in heat flow is normally defined as the glass transition in polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Such step-like transition in heat flow is normally defined as the glass transition in polymers (Bassi et al., 2003; Stolwijk et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known definition with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "dc6cbd29-6a97-403b-8750-114d35b1888c",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C40",
+      "claim": "The values of TDSC approximate those of Ton probed by neutrons.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing Figure 2b with Figure 2a, one can find that the values of TDSC approximate those of Ton probed by neutrons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and can be verified by comparing the data in Figures 2a and 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5fa233d5-b155-4f27-aaa1-a876547f4757",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C41",
+      "claim": "TDSC of hydrated MYO is 190 K.",
+      "claim_type": "EXPLICIT",
+      "source": "TDSC of hydrated MYO was reported by literature to be 190 K (Jansson and Swenson, 2010), which is again in good agreement with the value of Ton in Figure 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "dce18e9a-4993-4229-ba03-9ed07184ee85",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C42",
+      "claim": "TDSC and Ton present the same hydration dependence, both increasing with decrease of hydration level.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, TDSC and Ton present the same hydration dependence, that is, both increase with decrease of h (see Figure 2a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figures 2a and 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "47871dff-99c7-47a9-8c8d-e40107d95069",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C43",
+      "claim": "The onset of anharmonicity around 200 K in proteins measured by neutron scattering results from the freezing of the structural relaxation of the biomolecule beyond the equilibrium when cooling the system below TDSC, similar to the glass transition in polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we can conclude that the onset of anharmonicity around 200 K in proteins measured by neutron scattering as shown in Figure 1 results from the freezing of the structural relaxation of the biomolecule beyond the equilibrium when cooling the system below TDSC, similar to the glass transition in polymers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of neutron scattering and DSC data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "3f35622f-fc54-4dd4-a8e9-ccd355782c20",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C44",
+      "claim": "Freezing of the structural relaxation beyond the equilibrium time will turn the system into a frozen solid form, which can significantly suppress the fast dynamics measured by neutron.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 'freezing' of the structural relaxation beyond the equilibrium time (~100\u20131000 s), that is, the measurement time of neutron experiments at each temperature, will turn the system into a 'frozen' solid form, which can significantly suppress the fast dynamics measured by neutron and cause the transition probed (Ngai, 2004; Frick and Richter, 1995; Frick et al., 1995; Ngai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "6efea199-b738-4ea0-a8da-fada5deb99c0",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C45",
+      "claim": "Water can be considered as lubricant or plasticizer which facilitates the motion of the biomolecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, water can be considered here as lubricant or plasticizer which facilitates the motion of the biomolecule (Hong et al., 2012; Roh et al., 2009; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "e5d7bdb0-73b7-46f5-81c4-2bb836f828f6",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C46",
+      "claim": "Adding water as plasticizer significantly reduces the glass transition temperature of polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "As widely observed in polymeric systems (Verhoeven et al., 1989; Zhang et al., 1999; Cerveny et al., 2005), adding water as plasticizer will significantly reduce the glass transition temperature of the polymers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known phenomenon in polymer science with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "10d9cd40-05d0-454c-baf7-632e82257228",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C47",
+      "claim": "Ton of hydration water for GFP and CYP strongly depends on the resolution of the spectrometer, increasing drastically from 200 to 250 K when reducing \u0394t from 1 ns to 10 ps.",
+      "claim_type": "EXPLICIT",
+      "source": "Two important observations arise from the data. First, Ton of hydration water for these two proteins strongly depends on the resolution of the spectrometer, increasing drastically from 200 to 250 K when reducing \u0394t from 1 ns to 10 ps.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "d1f9e642-cb8e-4855-af69-a130a8e99291",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C48",
+      "claim": "The relaxation time of hydration water is 10 ps at 250 K, 40 ps at 234 K, and 1 ns at 200 K.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, it means that the relaxation time, \u03c4, of hydration water is 10 ps at 250 K, 40 ps at 234 K, and 1 ns at 200 K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the resolution-dependent onset temperatures observed in the neutron scattering data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "2b3f7763-a3bf-44c5-9901-33cb5453629c",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C50",
+      "claim": "The anharmonic onset of the hydration water is not a real physical transition but merely a resolution effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus demonstrate that the anharmonic onset of the hydration water is in fact not a real physical transition but merely a resolution effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the resolution-dependent behavior observed in the neutron scattering data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5bac8d82-ba16-4cde-bbcb-53f68f7fab32",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C51",
+      "claim": "The anharmonic onset of hydration water occurs as the relaxation time of water crosses the instrument resolution on the pico-to-nanosecond time scales at Ton.",
+      "claim_type": "EXPLICIT",
+      "source": "It occurs as the relaxation time \u03c4 of water, which varies continuously with temperature, happens to cross the instrument resolution, \u0394t, on the pico-to-nanosecond time scales at Ton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the resolution effect.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "22f276a6-2ce4-427d-b820-f98dee8743b6",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C52",
+      "claim": "Dielectric measurements showed a smooth temperature dependence of the characteristic relaxation time of hydration water in the range from 170 to 250 K without any sudden changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings agree with reports from dielectric measurements, the signal of which is highly sensitive to the rotation of hydration water (Pawlus et al., 2008; Khodadadi et al., 2008). They showed a smooth temperature dependence of the characteristic relaxation time in the range from 170 to 250 K without any sudden changes (Pawlus et al., 2008; Khodadadi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "07b341f7-dc3c-4c72-ab48-95a90ed14b97",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C53",
+      "claim": "The characteristic relaxation time of protein-surface water changes smoothly over temperature without any disruptions around the dynamical transition temperature of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our data also agree with Doster et al., 2010, which demonstrated that the characteristic relaxation time of protein-surface water, measured on H2O-hydrated perdeuterated C-phycocyanin by quasi-elastic neutron scattering, changes smoothly over temperature without any disruptions around the dynamical transition temperature of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "e74b7945-5631-494e-9929-0795df948b61",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C54",
+      "claim": "The onset temperature of the hydration water is independent of the protein structure when the instrument resolution is fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the onset temperature of the hydration water is independent of the protein structure when \u0394t is fixed, since the values of both GFP and CYP are identical.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "70363f0a-bc36-4af2-81ad-f39abe6d2eee",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C55",
+      "claim": "Ton of hydration water remains constant with hydration level as long as the instrument resolution is fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the hydration dependence of the anharmonic onset of the water is presented in Figure 4, which shows that Ton remains constant with h as long as the instrument resolution is fixed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "96a1ddb5-d3a7-42a9-b45c-7a72babee468",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C56",
+      "claim": "The anharmonic onsets of protein and surface water around 200 K are clearly decoupled and different in origin.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining elastic neutron scattering with isotopic labeling, we have been able to probe the dynamics of the protein and surface water separately, as a function of temperature, protein structural composition, hydration level, and time scale. We found that the anharmonic onsets of the two components around 200 K are clearly decoupled and different in origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "83e2a45c-298a-459b-bbf2-33e36901ba9d",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C57",
+      "claim": "The protein shows an intrinsic transition whose temperature depends on the structure of the protein and the hydration level, and not on the instrument used to measure it.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein shows an intrinsic transition, whose temperature depends on the structure of the protein and the hydration level, and not on the instrument used to measure it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing resolution-independent but structure- and hydration-dependent onset temperatures for proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "b37edaae-1983-4dc8-a0d1-ed1cfa6a2697",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C58",
+      "claim": "The protein dynamical transition has a thermodynamic signature similar to the glass transition in polymers as confirmed by DSC.",
+      "claim_type": "EXPLICIT",
+      "source": "It has a thermodynamic signature similar to the glass transition in polymers as confirmed by DSC, and thus can be assigned to the freezing of the structural relaxation of the protein beyond the experimental equilibrium time (100\u20131000 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion supported by DSC measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "00f4ab8b-eb73-48a2-a890-3320f613347f",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C59",
+      "claim": "The temperature at which the onset of anharmonicity happens in the hydration water is given by the instrument resolution, independent of both the biomolecular structure and the level of hydration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the temperature at which the onset of anharmonicity happens in the hydration water is given by the instrument resolution, independent of both the biomolecular structure and the level of hydration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing resolution-dependent but structure- and hydration-independent onset temperatures for water.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "9449d3e8-7946-4b6e-8fee-50191c666344",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C60",
+      "claim": "In some cases, the dynamical transition of a protein can coincide with the anharmonic onset of its surface water if one characterizes the system using a single-neutron instrument with a fixed resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our findings, we can infer that, in some cases, the dynamical transition of a protein can coincide with the anharmonic onset of its surface water if one characterizes the system using a single-neutron instrument with a fixed resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "d2dee9a9-5877-4bc5-b531-05ba9cf3e3e4",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C61",
+      "claim": "The coincidence between protein dynamical transition and water anharmonic onset will be torn apart if the measurements were conducted using instruments of different resolutions or at different amounts of hydration.",
+      "claim_type": "EXPLICIT",
+      "source": "But such coincidence will be torn apart if the measurements were conducted by using instruments of different resolutions or at different amounts of hydration, such as in the present work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the contradictory results in the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5622cede-6833-4b8d-ad61-6bea5272d74b",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C62",
+      "claim": "The protein dynamical transition is an intrinsic property of the hydrated protein that its structural relaxation is activated upon heating above the onset temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein dynamical transition has long been thought to connect to the thermal onset of the functionality of the biomolecule. Our experiments suggest that this transition in protein is an intrinsic property of the hydrated protein that its structural relaxation is activated upon heating above the onset temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "80045edd-65d0-4d87-9696-2c0e6ab877b4",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C63",
+      "claim": "Unfreezing of the protein structural relaxation might facilitate conformational jumps among different functional states, turning on its functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural relaxation might be associated with conformational jumps of the biomolecules among different functional states, such as the states with the ligand-binding pocket being opened or closed. Unfreezing of the protein structural relaxation might facilitate these conformational jumps, turning on its functionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the functional implications of the structural relaxation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "fc8e8e8b-e59e-483e-8926-0f125665c011",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C64",
+      "claim": "The denatured form of LYS exhibits a dynamical transition similar to that seen in its folded native form.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as revealed by Mamontov et al., 2010, the denatured form of LYS also exhibits a dynamical transition, similar to that seen in its folded native form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "099058ba-93f2-48d7-b599-762600f60336",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C65",
+      "claim": "The dynamical transition can be found in the mixture of amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the dynamical transition also can be found in the mixture of amino acids (Schir\u00f3 et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "1a62b1c6-ce56-40a2-8b60-7d465d5742ee",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C66",
+      "claim": "The activation of the structural relaxation of the biomolecule above the dynamical transition temperature is a necessary but insufficient condition for the protein to function.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, one can argue that the activation of the structural relaxation of the biomolecule above the dynamical transition temperature is a necessary but insufficient condition for the protein to function, as the latter also requires the biomolecule assuming the correctly folded three-dimensional structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observations about denatured proteins and amino acid mixtures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "cadb7248-7cbd-411e-bf61-76cdd5a89b5e",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C67",
+      "claim": "The protein dynamical transition is a real transition, connecting to unfreezing of the biomolecular structural relaxation, which could be crucial for activating the function.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, we demonstrated that the protein dynamical transition is a real transition, connecting to unfreezing of the biomolecular structural relaxation, which could be crucial for activating the function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "49985211-9ad9-4c1f-b2cd-f73f132af088",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C68",
+      "claim": "Three neutron backscattering spectrometers were used: HFBS at the NIST Center for Neutron Scattering, DNA at the Materials and Life Science Experimental Facility at J-PARC in Japan, and OSIRIS at the ISIS Neutron and Muon Facility, UK.",
+      "claim_type": "EXPLICIT",
+      "source": "Three neutron backscattering spectrometers were chosen to cover a wide range of time scales; HFBS at the NIST Center for Neutron Scattering, USA, DNA at the Materials and Life Science Experimental Facility at J-PARC in Japan, and OSIRIS at the ISIS Neutron and Muon Facility, UK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "4e15be33-0134-483f-aeba-109c5b2f7def",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C69",
+      "claim": "The instrumental energy resolutions are 1, 13, 25.4, and 100 \u00b5eV, corresponding to time scales of approximately 1 ns, 80 ps, 40 ps, and 10 ps, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The instrumental energy resolutions are 1, 13, 25.4, and 100 \u00b5eV, corresponding to time scales of ~1 ns, ~80 ps, ~40 ps, and ~10 ps, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "a677648a-0121-410b-8e9c-895ec67e6b96",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C70",
+      "claim": "Four globular proteins were investigated: MYO, CYP, LYS, and GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Four globular proteins were investigated, MYO, cytochrome P450 (CYP), LYS, and green fluorescent protein (GFP), the detailed structural features of which are presented in Figure 1\u2014figure supplement 1 and Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5743c14b-e8e9-4c9f-a135-bf0b50100a84",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C71",
+      "claim": "LYS contains 40% alpha-helix, 12% beta-sheet, and 48% loop and turn structures by mass fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Relative content of each secondary structure in the proteins.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "4521fa14-2943-43cd-a40a-5453055fae61",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C72",
+      "claim": "MYO contains 76% alpha-helix, 0% beta-sheet, and 24% loop and turn structures by mass fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Relative content of each secondary structure in the proteins.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "6bd8b267-c8ab-416a-b020-65d8f6f5d598",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C73",
+      "claim": "CYP contains 52% alpha-helix, 11% beta-sheet, and 37% loop and turn structures by mass fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Relative content of each secondary structure in the proteins.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "b50b7d94-a612-4558-9b20-9efda59c2b7c",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C74",
+      "claim": "GFP contains 7% alpha-helix, 50% beta-sheet, and 43% loop and turn structures by mass fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Relative content of each secondary structure in the proteins.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "98efa5d3-a75d-4b76-8aa0-b24d00da0f31",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C75",
+      "claim": "MYO is primarily a helix protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The four proteins differ significantly in both secondary and tertiary structures. MYO is primarily a helix protein while GFP is dominated by beta sheets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section and supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "3c02939d-66bc-4f0d-aafb-d5a025489c5f",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C76",
+      "claim": "GFP is dominated by beta sheets.",
+      "claim_type": "EXPLICIT",
+      "source": "The four proteins differ significantly in both secondary and tertiary structures. MYO is primarily a helix protein while GFP is dominated by beta sheets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section and supported by Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "6e539944-dfb8-498e-8b71-b645b50a17ed",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C77",
+      "claim": "LYS contains two structural domains linked by a hinge.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, LYS contains two structural domains linked by a hinge while the other three are single-domain proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "369971d3-febf-4d91-bf77-3c895f07ed9a",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C78",
+      "claim": "MYO, CYP, and GFP are single-domain proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, LYS contains two structural domains linked by a hinge while the other three are single-domain proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "65ee19ee-2feb-485e-88b8-ad548edc9ea3",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C79",
+      "claim": "The elastic scattering intensity S(q, \u0394t) is an estimate of the average amplitude of the atomic motions up to \u0394t.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantity measured in the neutron experiment is the elastic intensity, that is the intensity of the elastic peak in the dynamic structure factor, S(q, \u0394t), where q is the scattering wave vector and \u0394t is the resolution time of the neutron spectrometer. S(q, \u0394t) is an estimate of the average amplitude of the atomic motions up to \u0394t (Hong et al., 2013; Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "c2d5d0f6-336f-4931-bc5e-6a6d03c889de",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C80",
+      "claim": "A clear deviation can be seen in the temperature dependence of S(q, \u0394t) for the hydrated protein from that of the dry powder, which is defined as the onset temperature, Ton, of the protein dynamical transition.",
+      "claim_type": "EXPLICIT",
+      "source": "A clear deviation can be seen in the temperature dependence of S(q, \u0394t) for the hydrated protein from that of the dry powder, which is defined as the onset temperature, Ton (Roh et al., 2005; Schir\u00f3 et al., 2012; Benedetto, 2017; Roh et al., 2006; Schir\u00f2 et al., 2015), of the protein dynamical transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "fcccdc7e-2c4c-4acd-b827-9d0a5b63e12b",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C81",
+      "claim": "The definition of Ton highlights the effect of hydration on the anharmonic dynamics in proteins while removing the contribution from the local side groups, for example, methyl groups, whose motions are hydration independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of such definition is that it highlights the effect of hydration on the anharmonic dynamics in proteins while removing the contribution from the local side groups, for example, methyl groups, whose motions are hydration independent (Hong et al., 2013; Hong et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "458cca46-dd67-4bb6-8aa6-9b53a8cfbb00",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C82",
+      "claim": "The activation temperature of the rotations of methyl groups varies with the instrument resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Schir\u00f3 et al., 2012; Liu et al., 2018, the activation temperature of the rotations of methyl group varies with the instrument resolution, which will cloud the present analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "ef65d9ee-ded5-468c-b5a1-dc2fd790f741",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C83",
+      "claim": "The q-range does not alter the Ton of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We further calculated Ton of H-protein in D2O in the q-range from 0.45 to 0.9 and 1.1 to 1.75 \u00c5\u22121. As shown in Table 3, Table 4, and Table 5, the q-range does not alter the Ton of proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Tables 3, 4, and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "01d61231-09c3-423f-be3b-ba329b0b6367",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C84",
+      "claim": "The dynamical transition temperature in lipid membranes is higher when the membrane is dry.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamical transition temperature in lipid membranes is higher when the membrane is dry (Popova and Hincha, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "b6a3e31d-0934-472c-a55a-c09dfd183312",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C85",
+      "claim": "Ton in both protein and polypeptide is independent of the resolution of the neutron spectrometer if one carefully removes the contributions from methyl rotations and vibrations to <x2(\u0394t)> measured by elastic neutron scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with Schir\u00f3 et al., 2012, which demonstrated that Ton in both protein and polypeptide is independent of the resolution of the neutron spectrometer, if one carefully removes the contributions from methyl rotations and vibrations to <x2(\u0394t)>measured by elastic neutron scattering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "d1593e4e-5df1-4c80-a5af-cdb42af7ead8",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C86",
+      "claim": "D2O-hydrated LYS presents an approximately resolution-independent Ton compared to the dry form.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Benedetto, 2017 showed that, as compared to the dry form, the D2O-hydrated LYS presents an approximately resolution-independent Ton, again in agreement with our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "e105e38b-ded4-4e1e-9655-b85496d83056",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C87",
+      "claim": "The CHARMM 27 force field was used for CYP in molecular dynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The CHARMM 27 force field in the GROMACS package was used for CYP, whereas the TIP4P/Ew model was chosen for water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "834994b3-fbea-4351-8c79-fe31a03e672d",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C88",
+      "claim": "The TIP4P/Ew model was chosen for water in molecular dynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The CHARMM 27 force field in the GROMACS package was used for CYP, whereas the TIP4P/Ew model was chosen for water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "46557009-049e-4fb4-bdc3-d00694ffc648",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C89",
+      "claim": "Molecular dynamics simulations were carried out at temperatures ranging from 360 to 100 K with a step of 5 K.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulations were carried out at a broad range of temperatures from 360 to 100 K, with a step of 5 K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "93701ba0-91b4-4d94-914b-a76c69f827db",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "claim_id": "C90",
+      "claim": "A 30-ns NPT simulation is sufficient to equilibrate the CYP system.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014figure supplement 3, 30 ns is sufficient to equilibrate the system.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the methods section and supported by Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The protein dynamical transition around 200 K is an intrinsic property of the hydrated protein, with onset temperature (Ton) that is independent of instrumental resolution time but varies with protein structure (LYS: 213 K, MYO: 198 K, CYP: 228 K) and hydration level (increasing Ton with decreasing hydration). This demonstrates that the protein transition is decoupled from hydration water dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 provide consistent Ton values across multiple instrumental resolutions (1 ns to 10 ps) for three different proteins, demonstrating resolution independence. Claims C33-C34 show systematic hydration dependence. The experimental design using isotopic labeling (C23-C24) and multiple instruments (C68-C69) provides robust evidence for decoupling (C3, C56).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The anharmonic onset observed in hydration water around 200 K is not a real physical transition but a resolution effect, where the onset temperature depends solely on instrumental resolution (200 K at 1 ns, 250 K at 10 ps) and is independent of protein structure and hydration level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 demonstrates strong resolution dependence of water Ton across multiple instruments. Claims C54-C55 show independence from protein structure and hydration level. The interpretation as a resolution effect (C50-C51) is supported by the observation that relaxation times cross instrumental resolution at different temperatures (C48), consistent with thermally activated dynamics rather than a phase transition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The protein dynamical transition exhibits a thermodynamic signature similar to glass transition in polymers, as demonstrated by DSC measurements showing step-like transitions in heat flow at temperatures (TDSC) that match neutron-derived Ton values and show the same hydration dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 provide DSC evidence of step-like transitions in hydrated but not dry protein. Claims C40-C42 demonstrate quantitative agreement between TDSC and Ton values and their hydration dependence. The analogy to polymer glass transition (C39, C43, C58) is supported by the thermodynamic signature, though the mechanistic interpretation involves some inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "5059de76-e4a0-416e-9e8e-a6ab37db1a61",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Water acts as a plasticizer that influences protein dynamics without altering protein secondary structure or overall packing, as demonstrated by molecular dynamics simulations showing identical structural content at different hydration levels despite different dynamical transition temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 provides direct MD simulation evidence that hydration level (h=0.2 vs 0.4) does not alter CYP structure. This supports the plasticizer interpretation (C45-C46) where water affects dynamics but not structure (C36). However, the MD simulations are limited to one protein and two hydration levels, and equilibration time (C90) may be insufficient to observe slow structural changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "8504bff8-220f-4655-8149-2786a6d690de",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The smooth temperature dependence of hydration water relaxation times without sudden changes around 200 K, as reported by dielectric measurements and quasi-elastic neutron scattering, supports the interpretation that the apparent water transition is a resolution effect rather than a true phase transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 cite prior work showing smooth relaxation time behavior, which is consistent with the current study's interpretation. However, these are citations of prior work rather than new experimental results from this study, serving primarily as corroborating evidence for the resolution effect interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "ac2b7db1-f57e-4dcb-97af-9c38358bfb21",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The apparent coincidence between protein dynamical transition and water anharmonic onset temperatures in some prior studies can be explained by the use of single instruments with fixed resolution, and this coincidence disappears when measurements are conducted using instruments of different resolutions or at different hydration levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 provide a logical explanation for contradictory literature results (C25-C28) based on the experimental findings. The explanation is consistent with the demonstrated resolution dependence of water Ton and resolution independence of protein Ton. This reconciles previously conflicting observations in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "6122d952-0e30-4d94-af30-6dfcaea9f2f3",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The protein dynamical transition represents unfreezing of structural relaxation that may facilitate conformational jumps among functional states, but is a necessary yet insufficient condition for protein function, as denatured proteins and amino acid mixtures also exhibit similar transitions without being functional.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is supported by the experimental data showing intrinsic transition. However, C63 is explicitly speculative ('might facilitate'), and the functional interpretation relies heavily on cited observations about denatured proteins (C64-C65) rather than direct functional measurements. The conclusion (C66) is logical but the mechanistic link between structural relaxation and function remains unproven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The experimental approach using elastic neutron scattering with isotopic labeling (H-protein in D2O vs D-protein in H2O) and multiple instruments with resolutions spanning 10 ps to 1 ns enables selective probing of protein and water dynamics separately.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 establish the physical basis for isotopic contrast. Claims C68-C70 document the instrumental setup. Claims C79-C81 define the measured quantity and analysis approach. The methodology is well-established and appropriately applied, though potential complications from incomplete deuteration exchange or residual hydrogen signals are not discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "69a75b73-1e56-4dae-9813-ebb3811b7c11",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The onset temperature (Ton) of the protein dynamical transition is independent of the q-range used in the analysis (0.45-0.9 \u00c5\u207b\u00b9 vs 1.1-1.75 \u00c5\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is directly supported by data in Tables 3-5 showing consistent Ton values across different q-ranges for all three proteins. This validates that the observed transition is not an artifact of the momentum transfer range selected for analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "22a60c0c-494f-47b0-9037-22fc08ba72c5",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The resolution independence of protein Ton is consistent with prior work by Schir\u00f3 et al. (2012) and Benedetto (2017) when contributions from methyl group rotations are properly removed from the analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 cite prior work showing similar resolution independence. The current study's approach of comparing hydrated vs dry protein (C80-C81) effectively removes methyl contributions, making the results directly comparable. This strengthens confidence in the findings through independent replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "295d6c65-9731-446f-9dd8-25b330ffc280",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations of CYP protein at different hydration levels were performed using CHARMM 27 force field and TIP4P/Ew water model, with 30-ns NPT simulations at temperatures from 100-360 K being sufficient for equilibration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C89 document the simulation protocol. Claim C90 asserts 30 ns is sufficient based on Figure 2-supplement 3, but no quantitative equilibration criteria are provided. For low-temperature simulations approaching glass transition, 30 ns may be insufficient to sample slow relaxation processes relevant to the dynamical transition. The simulations are used only to assess structural changes (C35), not dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "9b99bc51-eb59-4ad9-9c56-010d06a17568",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context establishing that protein dynamical transitions around 200 K have been observed and linked to protein function, with competing theories about whether the transition is slaved to hydration water dynamics or is an intrinsic protein property.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 provide literature context with appropriate citations. These establish the scientific question being addressed but are not new results from this study. The citations appear accurate and representative of the field, though the authors do not critically evaluate potential limitations of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "3c463e36-d9f0-404b-9ad5-ce03c955f730",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The four proteins studied (LYS, MYO, CYP, GFP) have distinct secondary and tertiary structures, with MYO being primarily helical (76%), GFP dominated by beta sheets (50%), and LYS having a two-domain structure while others are single-domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C78 are directly supported by Table 1 and structural analysis. The structural diversity is appropriate for testing whether Ton depends on protein structure (C5). However, the study does not systematically vary specific structural features to establish structure-property relationships.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "2464a818-90ec-4794-98bd-9d6fdc563cd1",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior studies using isotopic labeling and neutron scattering have reported contradictory results regarding whether protein and water dynamical transitions occur at the same or different temperatures, with results depending on the protein studied and instrumental resolution used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 accurately cite prior contradictory findings from the literature. These establish the motivation for the current systematic study but are not new experimental results. The authors use these contradictions to justify their multi-resolution, multi-protein approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "432af704-50e1-48ad-b64f-f35f97710fa9",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Freezing of structural relaxation beyond the equilibrium time (~100-1000 s) turns the system into a frozen solid form that suppresses fast dynamics measured by neutron scattering, causing the observed transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C44 provides a mechanistic explanation with citations, but the connection between slow structural relaxation (100-1000 s) and fast dynamics (ps-ns) is not directly demonstrated. The neutron experiments measure fast dynamics but cannot directly observe the slow structural relaxation. The interpretation relies on analogy to polymer glass transitions rather than direct evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "e9200723-c733-4013-9a5d-be3daa6ba57b",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The activation temperature of methyl group rotations varies with instrument resolution, which would confound the analysis of the protein dynamical transition if not properly accounted for.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 cites prior work showing resolution-dependent methyl activation. This justifies the study's approach of comparing hydrated vs dry protein to remove methyl contributions (C81). The concern is valid and the experimental design appropriately addresses it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "e0245634-b51f-4f57-a1c9-de1f10e07948",
+      "content_id": "817a5163-1382-42bb-bac5-268e12a2847d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The dynamical transition temperature in lipid membranes is higher when the membrane is dry, analogous to the hydration dependence observed in proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 cites prior work on lipid membranes showing similar hydration effects. This provides supporting context for the plasticizer interpretation but is not a new result from this study. The analogy strengthens the interpretation but lipid membranes and proteins may have different mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "35ab5c29-6d44-498f-946f-10db21bfeb26",
+      "content_id": "69453f92-663c-450c-80d2-58f64d5bbd3e",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study demonstrates that the onset of anharmonicity in protein and hydration water around 200 K is decoupled. The protein transition is intrinsic and resolution-independent but varies with protein structure (LYS: 213 K, MYO: 198 K, CYP: 228 K) and hydration level, while the water transition is merely a resolution effect dependent on instrument timescale.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers describe the data as 'convincing' and 'compelling,' with one reviewer stating the results 'suggest that transitions in the protein and solvent behavior are not coupled.' The reviewers explicitly affirm that 'protein motions are not coupled to the solvent' and note this work addresses 'the important question of whether the conformational dynamics of proteins are slaved by the motion of solvent water.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "1b2b6fab-4aac-460b-9c1c-7f804f641be7",
+      "content_id": "69453f92-663c-450c-80d2-58f64d5bbd3e",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The protein dynamical transition onset temperature increases with decreasing hydration level (CYP: 228 K at h=0.4 to 248 K at h=0.2; LYS: 195 K at h=0.45 to 225 K at h=0.18). Molecular dynamics simulations show hydration does not alter protein secondary structure or packing, suggesting water influences dynamics more than structure.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise concerns about the hydration dependence findings. One reviewer notes the study was 'rather well conducted, with a lot of effort to acquire the perdeuterated proteins,' implicitly accepting the experimental results including hydration effects. The lack of critique suggests acceptance of these supporting findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "0212eeac-d9f2-44f1-855c-4c1b3a503730",
+      "content_id": "69453f92-663c-450c-80d2-58f64d5bbd3e",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "DSC measurements reveal step-like transitions in heat flow at temperatures (245 K and 225 K for CYP at h=0.2 and h=0.4) that approximate the neutron-derived onset temperatures. This thermodynamic signature resembles glass transitions in polymers, suggesting the protein dynamical transition results from freezing of structural relaxation below the glass transition temperature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the overall study as 'well conducted' and the data as 'convincing,' without raising specific concerns about the DSC measurements or the glass transition interpretation. The acceptance of the main conclusions implicitly supports these complementary DSC findings that corroborate the neutron scattering results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "834b2c33-6b50-4db5-bfd7-3961bc87ba87",
+      "content_id": "69453f92-663c-450c-80d2-58f64d5bbd3e",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The onset temperature of hydration water strongly depends on instrument resolution (increasing from 200 K at 1 ns to 250 K at 10 ps), is independent of protein structure when resolution is fixed, and remains constant with hydration level. This demonstrates the water transition is a resolution effect, not a real physical transition, occurring when water relaxation time crosses the instrument resolution.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, with one stating the data 'suggests that transitions in the protein and solvent behavior are not coupled and contrary to some previous reports, the apparent water transition temperature is a \"resolution effect\"; i.e. instrument response is limited.' This direct acknowledgment confirms reviewer support for the resolution-dependent nature of the water transition.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "0fa07647-215b-4c55-8c37-11e4644e48f3",
+      "content_id": "69453f92-663c-450c-80d2-58f64d5bbd3e",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The findings agree with dielectric measurements showing smooth temperature dependence of hydration water relaxation time from 170-250 K without sudden changes, and with quasi-elastic neutron scattering showing protein-surface water relaxation changes smoothly without disruptions around the protein dynamical transition temperature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the consistency with prior literature. One reviewer notes this work will require 'a reassessment of solvent \"slaving\" and the role of the hydration shell on protein dynamics,' implicitly accepting the authors' interpretation that aligns with some prior studies while contradicting the water-slaving hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "7942bf88-3c19-4094-a0dc-783680058667",
+      "content_id": "69453f92-663c-450c-80d2-58f64d5bbd3e",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The protein dynamical transition is an intrinsic property where structural relaxation is activated upon heating above the onset temperature. This unfreezing might facilitate conformational jumps among functional states, turning on protein functionality, though it is a necessary but insufficient condition for function (as denatured proteins also show the transition).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the main conclusion that the protein transition is intrinsic and not slaved to water. One reviewer states the results show 'protein motions are not coupled to the solvent,' supporting the interpretation that the transition is an intrinsic protein property. The functional implications are presented cautiously and are not challenged by reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "f961801c-94bc-4859-bb68-73c39e1632a7",
+      "content_id": "69453f92-663c-450c-80d2-58f64d5bbd3e",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The experimental approach uses isotopic labeling (H-protein in D2O to probe protein dynamics; D-protein in H2O to probe water dynamics) combined with neutron backscattering spectroscopy at three facilities with resolutions spanning 1 ns to 10 ps, studying four structurally different proteins (LYS, MYO, CYP, GFP).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the methodology, with one noting 'A strength of this work is the study of a set of proteins using spectroscopy covering a range of resolutions' and another highlighting 'a lot of effort to acquire the perdeuterated proteins.' The multi-protein, multi-resolution approach is identified as overcoming 'limitations in previous studies.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a378c0f7-17f2-4fb2-9584-e65ef228d051",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "5dc7a6c1-624c-423f-8df4-105a0d57356e",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "089803e7-1ad1-41ee-9854-95f47e9e6e55",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "c3395164-51bd-4317-90e3-b643a7935536",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "53195e49-a1dc-4c2b-b6c8-540d93d3b0cc",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "de5e3567-8907-4b0d-bfad-daa19dbe5a5a",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "a50fb897-f047-4f6e-ab2a-d696715e334d",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "4a0c8ede-5d58-400d-87b2-c1e46c16b904",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "45b7d939-9ea5-4223-8c17-de29dcdf9adb",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "37c235f2-cdfd-40dd-bfb6-f776ccda876f",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "96a1ddb5-d3a7-42a9-b45c-7a72babee468",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "83e2a45c-298a-459b-bbf2-33e36901ba9d",
+      "result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705"
+    },
+    {
+      "claim_id": "bed6fd08-dddf-4a34-88ae-c414bccbb125",
+      "result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d"
+    },
+    {
+      "claim_id": "10d9cd40-05d0-454c-baf7-632e82257228",
+      "result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d"
+    },
+    {
+      "claim_id": "d1f9e642-cb8e-4855-af69-a130a8e99291",
+      "result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d"
+    },
+    {
+      "claim_id": "2b3f7763-a3bf-44c5-9901-33cb5453629c",
+      "result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d"
+    },
+    {
+      "claim_id": "5bac8d82-ba16-4cde-bbcb-53f68f7fab32",
+      "result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d"
+    },
+    {
+      "claim_id": "e74b7945-5631-494e-9929-0795df948b61",
+      "result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d"
+    },
+    {
+      "claim_id": "70363f0a-bc36-4af2-81ad-f39abe6d2eee",
+      "result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d"
+    },
+    {
+      "claim_id": "00f4ab8b-eb73-48a2-a890-3320f613347f",
+      "result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d"
+    },
+    {
+      "claim_id": "a6f27c40-10b0-41f9-8b8a-d72e253f03df",
+      "result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab"
+    },
+    {
+      "claim_id": "8bc4ad16-1289-42ae-aa67-ee1a629927e4",
+      "result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab"
+    },
+    {
+      "claim_id": "f36aebad-0672-4eae-b5d0-1907115a8b3d",
+      "result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab"
+    },
+    {
+      "claim_id": "dc6cbd29-6a97-403b-8750-114d35b1888c",
+      "result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab"
+    },
+    {
+      "claim_id": "5fa233d5-b155-4f27-aaa1-a876547f4757",
+      "result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab"
+    },
+    {
+      "claim_id": "dce18e9a-4993-4229-ba03-9ed07184ee85",
+      "result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab"
+    },
+    {
+      "claim_id": "47871dff-99c7-47a9-8c8d-e40107d95069",
+      "result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab"
+    },
+    {
+      "claim_id": "b37edaae-1983-4dc8-a0d1-ed1cfa6a2697",
+      "result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab"
+    },
+    {
+      "claim_id": "5820a3cf-8f31-4ffc-a889-657a48f646c5",
+      "result_id": "5059de76-e4a0-416e-9e8e-a6ab37db1a61"
+    },
+    {
+      "claim_id": "dbb2b504-e844-4e66-979e-9bb6dfd09e97",
+      "result_id": "5059de76-e4a0-416e-9e8e-a6ab37db1a61"
+    },
+    {
+      "claim_id": "6efea199-b738-4ea0-a8da-fada5deb99c0",
+      "result_id": "5059de76-e4a0-416e-9e8e-a6ab37db1a61"
+    },
+    {
+      "claim_id": "e5d7bdb0-73b7-46f5-81c4-2bb836f828f6",
+      "result_id": "5059de76-e4a0-416e-9e8e-a6ab37db1a61"
+    },
+    {
+      "claim_id": "22f276a6-2ce4-427d-b820-f98dee8743b6",
+      "result_id": "8504bff8-220f-4655-8149-2786a6d690de"
+    },
+    {
+      "claim_id": "07b341f7-dc3c-4c72-ab48-95a90ed14b97",
+      "result_id": "8504bff8-220f-4655-8149-2786a6d690de"
+    },
+    {
+      "claim_id": "9449d3e8-7946-4b6e-8fee-50191c666344",
+      "result_id": "ac2b7db1-f57e-4dcb-97af-9c38358bfb21"
+    },
+    {
+      "claim_id": "d2dee9a9-5877-4bc5-b531-05ba9cf3e3e4",
+      "result_id": "ac2b7db1-f57e-4dcb-97af-9c38358bfb21"
+    },
+    {
+      "claim_id": "5622cede-6833-4b8d-ad61-6bea5272d74b",
+      "result_id": "6122d952-0e30-4d94-af30-6dfcaea9f2f3"
+    },
+    {
+      "claim_id": "80045edd-65d0-4d87-9696-2c0e6ab877b4",
+      "result_id": "6122d952-0e30-4d94-af30-6dfcaea9f2f3"
+    },
+    {
+      "claim_id": "fc8e8e8b-e59e-483e-8926-0f125665c011",
+      "result_id": "6122d952-0e30-4d94-af30-6dfcaea9f2f3"
+    },
+    {
+      "claim_id": "099058ba-93f2-48d7-b599-762600f60336",
+      "result_id": "6122d952-0e30-4d94-af30-6dfcaea9f2f3"
+    },
+    {
+      "claim_id": "1a62b1c6-ce56-40a2-8b60-7d465d5742ee",
+      "result_id": "6122d952-0e30-4d94-af30-6dfcaea9f2f3"
+    },
+    {
+      "claim_id": "cadb7248-7cbd-411e-bf61-76cdd5a89b5e",
+      "result_id": "6122d952-0e30-4d94-af30-6dfcaea9f2f3"
+    },
+    {
+      "claim_id": "ad8db907-9ff3-491d-8c73-3375c34b9ac9",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "6292df30-017b-4026-8273-4e697bf97fb2",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "23477a8c-c4af-496c-887e-3b38a257ff16",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "49985211-9ad9-4c1f-b2cd-f73f132af088",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "4e15be33-0134-483f-aeba-109c5b2f7def",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "a677648a-0121-410b-8e9c-895ec67e6b96",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "65ee19ee-2feb-485e-88b8-ad548edc9ea3",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "c2d5d0f6-336f-4931-bc5e-6a6d03c889de",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "fcccdc7e-2c4c-4acd-b827-9d0a5b63e12b",
+      "result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add"
+    },
+    {
+      "claim_id": "ef65d9ee-ded5-468c-b5a1-dc2fd790f741",
+      "result_id": "69a75b73-1e56-4dae-9813-ebb3811b7c11"
+    },
+    {
+      "claim_id": "b6a3e31d-0934-472c-a55a-c09dfd183312",
+      "result_id": "22a60c0c-494f-47b0-9037-22fc08ba72c5"
+    },
+    {
+      "claim_id": "d1593e4e-5df1-4c80-a5af-cdb42af7ead8",
+      "result_id": "22a60c0c-494f-47b0-9037-22fc08ba72c5"
+    },
+    {
+      "claim_id": "e105e38b-ded4-4e1e-9655-b85496d83056",
+      "result_id": "295d6c65-9731-446f-9dd8-25b330ffc280"
+    },
+    {
+      "claim_id": "834994b3-fbea-4351-8c79-fe31a03e672d",
+      "result_id": "295d6c65-9731-446f-9dd8-25b330ffc280"
+    },
+    {
+      "claim_id": "46557009-049e-4fb4-bdc3-d00694ffc648",
+      "result_id": "295d6c65-9731-446f-9dd8-25b330ffc280"
+    },
+    {
+      "claim_id": "93701ba0-91b4-4d94-914b-a76c69f827db",
+      "result_id": "295d6c65-9731-446f-9dd8-25b330ffc280"
+    },
+    {
+      "claim_id": "632ef429-c08b-4c1b-804f-89adffbd3b0d",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "8daa40df-b7d5-47a5-b207-97f9972e6eb0",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "959c0a81-2c81-4bf5-b768-06b92c7c63bd",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "5448aca6-09a5-49ef-a92e-4a9939d25402",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "b31d1fc0-f14b-4ca7-a91c-d846dad6f8b9",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "5d7d341a-d7e9-402e-9139-ebe15fc835d0",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "504f4f84-6cb5-4e2b-994a-f35adfc17a21",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "6ab91f04-d1a8-4f6f-a1a4-987b25464459",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "c4de9c52-6d83-4cb8-aba6-f32b5d67fe77",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "d61fc404-3cc0-4993-9ba3-630fa7967acf",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "8c5f6c3c-133a-4a94-a9e0-b3c17ac5d2bc",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "4f49aaf8-f671-4211-96a4-bfeeb4f220c5",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "5ec3bd74-8961-4769-9c80-d4ead0f11be7",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "353d5eca-9fc1-4917-85a8-41bf7805fbe2",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "2faf8911-8058-4ca9-b144-e976aa961fa3",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "21768f25-1b4b-452b-ad5a-902df1ea5bf7",
+      "result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568"
+    },
+    {
+      "claim_id": "5743c14b-e8e9-4c9f-a135-bf0b50100a84",
+      "result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730"
+    },
+    {
+      "claim_id": "4521fa14-2943-43cd-a40a-5453055fae61",
+      "result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730"
+    },
+    {
+      "claim_id": "6bd8b267-c8ab-416a-b020-65d8f6f5d598",
+      "result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730"
+    },
+    {
+      "claim_id": "b50b7d94-a612-4558-9b20-9efda59c2b7c",
+      "result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730"
+    },
+    {
+      "claim_id": "98efa5d3-a75d-4b76-8aa0-b24d00da0f31",
+      "result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730"
+    },
+    {
+      "claim_id": "3c02939d-66bc-4f0d-aafb-d5a025489c5f",
+      "result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730"
+    },
+    {
+      "claim_id": "6e539944-dfb8-498e-8b71-b645b50a17ed",
+      "result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730"
+    },
+    {
+      "claim_id": "369971d3-febf-4d91-bf77-3c895f07ed9a",
+      "result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730"
+    },
+    {
+      "claim_id": "11e186e7-8f59-401e-a407-af270063e364",
+      "result_id": "2464a818-90ec-4794-98bd-9d6fdc563cd1"
+    },
+    {
+      "claim_id": "d13097ff-7294-4327-88d0-dbcec29ec1cd",
+      "result_id": "2464a818-90ec-4794-98bd-9d6fdc563cd1"
+    },
+    {
+      "claim_id": "6584782e-b138-44ea-b2b3-a92f2ae5f549",
+      "result_id": "2464a818-90ec-4794-98bd-9d6fdc563cd1"
+    },
+    {
+      "claim_id": "46dc9f86-defd-4e28-9798-fe3b8095367e",
+      "result_id": "2464a818-90ec-4794-98bd-9d6fdc563cd1"
+    },
+    {
+      "claim_id": "3f35622f-fc54-4dd4-a8e9-ccd355782c20",
+      "result_id": "432af704-50e1-48ad-b64f-f35f97710fa9"
+    },
+    {
+      "claim_id": "458cca46-dd67-4bb6-8aa6-9b53a8cfbb00",
+      "result_id": "e9200723-c733-4013-9a5d-be3daa6ba57b"
+    },
+    {
+      "claim_id": "01d61231-09c3-423f-be3b-ba329b0b6367",
+      "result_id": "e0245634-b51f-4f57-a1c9-de1f10e07948"
+    },
+    {
+      "claim_id": "a378c0f7-17f2-4fb2-9584-e65ef228d051",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "5dc7a6c1-624c-423f-8df4-105a0d57356e",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "089803e7-1ad1-41ee-9854-95f47e9e6e55",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "c3395164-51bd-4317-90e3-b643a7935536",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "bed6fd08-dddf-4a34-88ae-c414bccbb125",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "53195e49-a1dc-4c2b-b6c8-540d93d3b0cc",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "de5e3567-8907-4b0d-bfad-daa19dbe5a5a",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "a50fb897-f047-4f6e-ab2a-d696715e334d",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "4a0c8ede-5d58-400d-87b2-c1e46c16b904",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "96a1ddb5-d3a7-42a9-b45c-7a72babee468",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "83e2a45c-298a-459b-bbf2-33e36901ba9d",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "00f4ab8b-eb73-48a2-a890-3320f613347f",
+      "result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26"
+    },
+    {
+      "claim_id": "45b7d939-9ea5-4223-8c17-de29dcdf9adb",
+      "result_id": "1b2b6fab-4aac-460b-9c1c-7f804f641be7"
+    },
+    {
+      "claim_id": "37c235f2-cdfd-40dd-bfb6-f776ccda876f",
+      "result_id": "1b2b6fab-4aac-460b-9c1c-7f804f641be7"
+    },
+    {
+      "claim_id": "5820a3cf-8f31-4ffc-a889-657a48f646c5",
+      "result_id": "1b2b6fab-4aac-460b-9c1c-7f804f641be7"
+    },
+    {
+      "claim_id": "dbb2b504-e844-4e66-979e-9bb6dfd09e97",
+      "result_id": "1b2b6fab-4aac-460b-9c1c-7f804f641be7"
+    },
+    {
+      "claim_id": "dce18e9a-4993-4229-ba03-9ed07184ee85",
+      "result_id": "1b2b6fab-4aac-460b-9c1c-7f804f641be7"
+    },
+    {
+      "claim_id": "a6f27c40-10b0-41f9-8b8a-d72e253f03df",
+      "result_id": "0212eeac-d9f2-44f1-855c-4c1b3a503730"
+    },
+    {
+      "claim_id": "8bc4ad16-1289-42ae-aa67-ee1a629927e4",
+      "result_id": "0212eeac-d9f2-44f1-855c-4c1b3a503730"
+    },
+    {
+      "claim_id": "dc6cbd29-6a97-403b-8750-114d35b1888c",
+      "result_id": "0212eeac-d9f2-44f1-855c-4c1b3a503730"
+    },
+    {
+      "claim_id": "5fa233d5-b155-4f27-aaa1-a876547f4757",
+      "result_id": "0212eeac-d9f2-44f1-855c-4c1b3a503730"
+    },
+    {
+      "claim_id": "47871dff-99c7-47a9-8c8d-e40107d95069",
+      "result_id": "0212eeac-d9f2-44f1-855c-4c1b3a503730"
+    },
+    {
+      "claim_id": "b37edaae-1983-4dc8-a0d1-ed1cfa6a2697",
+      "result_id": "0212eeac-d9f2-44f1-855c-4c1b3a503730"
+    },
+    {
+      "claim_id": "10d9cd40-05d0-454c-baf7-632e82257228",
+      "result_id": "834b2c33-6b50-4db5-bfd7-3961bc87ba87"
+    },
+    {
+      "claim_id": "d1f9e642-cb8e-4855-af69-a130a8e99291",
+      "result_id": "834b2c33-6b50-4db5-bfd7-3961bc87ba87"
+    },
+    {
+      "claim_id": "2b3f7763-a3bf-44c5-9901-33cb5453629c",
+      "result_id": "834b2c33-6b50-4db5-bfd7-3961bc87ba87"
+    },
+    {
+      "claim_id": "5bac8d82-ba16-4cde-bbcb-53f68f7fab32",
+      "result_id": "834b2c33-6b50-4db5-bfd7-3961bc87ba87"
+    },
+    {
+      "claim_id": "e74b7945-5631-494e-9929-0795df948b61",
+      "result_id": "834b2c33-6b50-4db5-bfd7-3961bc87ba87"
+    },
+    {
+      "claim_id": "70363f0a-bc36-4af2-81ad-f39abe6d2eee",
+      "result_id": "834b2c33-6b50-4db5-bfd7-3961bc87ba87"
+    },
+    {
+      "claim_id": "22f276a6-2ce4-427d-b820-f98dee8743b6",
+      "result_id": "0fa07647-215b-4c55-8c37-11e4644e48f3"
+    },
+    {
+      "claim_id": "07b341f7-dc3c-4c72-ab48-95a90ed14b97",
+      "result_id": "0fa07647-215b-4c55-8c37-11e4644e48f3"
+    },
+    {
+      "claim_id": "5622cede-6833-4b8d-ad61-6bea5272d74b",
+      "result_id": "7942bf88-3c19-4094-a0dc-783680058667"
+    },
+    {
+      "claim_id": "80045edd-65d0-4d87-9696-2c0e6ab877b4",
+      "result_id": "7942bf88-3c19-4094-a0dc-783680058667"
+    },
+    {
+      "claim_id": "1a62b1c6-ce56-40a2-8b60-7d465d5742ee",
+      "result_id": "7942bf88-3c19-4094-a0dc-783680058667"
+    },
+    {
+      "claim_id": "cadb7248-7cbd-411e-bf61-76cdd5a89b5e",
+      "result_id": "7942bf88-3c19-4094-a0dc-783680058667"
+    },
+    {
+      "claim_id": "6292df30-017b-4026-8273-4e697bf97fb2",
+      "result_id": "f961801c-94bc-4859-bb68-73c39e1632a7"
+    },
+    {
+      "claim_id": "23477a8c-c4af-496c-887e-3b38a257ff16",
+      "result_id": "f961801c-94bc-4859-bb68-73c39e1632a7"
+    },
+    {
+      "claim_id": "49985211-9ad9-4c1f-b2cd-f73f132af088",
+      "result_id": "f961801c-94bc-4859-bb68-73c39e1632a7"
+    },
+    {
+      "claim_id": "4e15be33-0134-483f-aeba-109c5b2f7def",
+      "result_id": "f961801c-94bc-4859-bb68-73c39e1632a7"
+    },
+    {
+      "claim_id": "a677648a-0121-410b-8e9c-895ec67e6b96",
+      "result_id": "f961801c-94bc-4859-bb68-73c39e1632a7"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "a85400af-ffce-4b69-b627-ad9c00fb619b",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "8c6478b8-b57f-40b3-b6a1-5b48527d9705",
+      "peer_result_id": "35ab5c29-6d44-498f-946f-10db21bfeb26",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the core finding of protein-water decoupling. OpenEval emphasizes resolution independence of protein Ton (C29-C32) and systematic hydration dependence (C33-C34). Peer reviewers describe data as 'convincing' and 'compelling,' explicitly affirming that 'protein motions are not coupled to the solvent.' Both evaluations converge on supporting the decoupling claim (C3, C56).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "f054bdff-51f7-4232-8be1-d77184ceafa9",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3a48ae01-b198-45e6-83ea-1fe1c82b7c4d",
+      "peer_result_id": "834b2c33-6b50-4db5-bfd7-3961bc87ba87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the resolution-dependent nature of water transition. OpenEval provides detailed analysis of resolution dependence (C47-C48) and independence from protein structure (C54-C55). Peer reviewers explicitly acknowledge the 'resolution effect' interpretation, stating the 'apparent water transition temperature is a \"resolution effect\"; i.e. instrument response is limited.' Complete agreement on this key finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "ef9a1f47-c0fc-4259-b6f1-e389b5a64ad3",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "8504bff8-220f-4655-8149-2786a6d690de",
+      "peer_result_id": "0fa07647-215b-4c55-8c37-11e4644e48f3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect claim overlap (C52-C53). Both support consistency with prior literature showing smooth relaxation behavior. OpenEval notes these are citations rather than new results, serving as corroborating evidence. Peer reviewers accept this consistency and note the work will require 'a reassessment of solvent \"slaving\",' implicitly accepting the alignment with prior smooth relaxation studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "9e7bffef-44c4-4679-9fdf-0ff731e20139",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "29fc00ad-73b9-4ba0-9266-dc1257dc8fab",
+      "peer_result_id": "0212eeac-d9f2-44f1-855c-4c1b3a503730",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the DSC findings and glass transition interpretation. OpenEval provides detailed analysis of DSC evidence (C37-C38, C40-C42) and polymer glass transition analogy (C39, C43, C58). Peer reviewers describe the study as 'well conducted' with 'convincing' data, without raising concerns about DSC measurements or glass transition interpretation, indicating implicit acceptance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "7f213697-7ea9-4919-9a4b-d25e9c982c32",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "6122d952-0e30-4d94-af30-6dfcaea9f2f3",
+      "peer_result_id": "7942bf88-3c19-4094-a0dc-783680058667",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address functional implications but with different emphasis. OpenEval rates as UNCERTAIN, noting C62 is supported but C63 is speculative and functional links remain unproven. Peer reviewers rate as SUPPORTED, accepting the intrinsic nature of the transition and stating 'protein motions are not coupled to the solvent,' but do not critically evaluate the speculative functional claims. Peer review is less critical of mechanistic speculation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "b9e3f5dd-09a5-46e7-bd84-8fa0eb12d70a",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a22c6396-b1fa-4aa8-9b4e-ee4510e47add",
+      "peer_result_id": "f961801c-94bc-4859-bb68-73c39e1632a7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the experimental methodology. OpenEval evaluates isotopic contrast basis (C22-C24) and instrumental setup (C68-C70) as well-established, though notes potential complications not discussed. Peer reviewers explicitly praise the methodology, highlighting 'a lot of effort to acquire the perdeuterated proteins' and the multi-resolution approach as overcoming 'limitations in previous studies.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "9443bc99-9eaf-46b3-9659-b347217a703e",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "5059de76-e4a0-416e-9e8e-a6ab37db1a61",
+      "peer_result_id": "1b2b6fab-4aac-460b-9c1c-7f804f641be7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address MD simulations and hydration effects. OpenEval supports the structural findings (C35-C36) but notes limitations in protein coverage and equilibration time. Peer reviewers do not raise specific concerns about MD simulations, implicitly accepting them as part of the 'well conducted' study. Peer review less critical of simulation limitations than OpenEval.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "d72f7a79-272f-49ac-8952-a9a0601ee620",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "ac2b7db1-f57e-4dcb-97af-9c38358bfb21",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates the explanation for contradictory literature (C60-C61) as SUPPORTED, noting it reconciles conflicting observations through demonstrated resolution dependence. No corresponding specific peer review evaluation found, though peer reviewers' acceptance of the resolution effect interpretation implicitly supports this reconciliation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "63aa17c6-1469-40eb-a36d-b025b5b8df61",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "69a75b73-1e56-4dae-9813-ebb3811b7c11",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports q-range independence (C83) based on Tables 3-5 data, validating that findings are not artifacts of momentum transfer selection. No corresponding specific peer review evaluation found, though this technical validation is encompassed in peer reviewers' overall assessment of 'convincing' data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "18c5de47-e05c-45a5-ac19-823da0bc50d9",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "22a60c0c-494f-47b0-9037-22fc08ba72c5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports resolution independence findings (C85-C86) through comparison with prior work and the hydrated vs dry protein approach. No corresponding specific peer review evaluation found, though this contributes to the overall resolution independence conclusion that peer reviewers explicitly support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "7da5b952-eac8-4b64-8ca5-d294c72f7bec",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "295d6c65-9731-446f-9dd8-25b330ffc280",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates MD simulation protocol (C87-C90) as UNCERTAIN, questioning whether 30 ns equilibration is sufficient for low-temperature simulations approaching glass transition. No corresponding peer review evaluation found; peer reviewers do not critically examine simulation equilibration criteria.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "974c69ca-db8e-4870-b849-0fdb35fbccea",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "9b99bc51-eb59-4ad9-9c56-010d06a17568",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports literature context claims (C1-C2, C8-C21) as accurate citations establishing the scientific question, though notes lack of critical evaluation of prior work limitations. No corresponding specific peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "866036f2-dd36-4a88-88de-32c24f27e591",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "3c463e36-d9f0-404b-9ad5-ce03c955f730",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports protein structural characterization (C71-C78) as appropriate for testing structure dependence, though notes lack of systematic structure-property variation. No corresponding specific peer review evaluation found, though peer reviewers praise the multi-protein approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "4c53fec0-ce07-495c-acfa-5714c8123d32",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "2464a818-90ec-4794-98bd-9d6fdc563cd1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports accurate citation of contradictory prior findings (C25-C28) that motivate the study. No corresponding specific peer review evaluation found, though peer reviewers acknowledge this work addresses important questions about protein-solvent coupling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "e2b06b2b-5277-42a8-9730-8b146819e258",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "432af704-50e1-48ad-b64f-f35f97710fa9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates mechanistic explanation (C44) as UNCERTAIN, noting the connection between slow structural relaxation and fast dynamics is not directly demonstrated but relies on polymer glass transition analogy. No corresponding peer review evaluation found addressing this specific mechanistic claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "17b4591f-83da-44e9-8b8e-d77788cf8950",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "e9200723-c733-4013-9a5d-be3daa6ba57b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports citation of prior work on resolution-dependent methyl activation (C82), validating the experimental design approach. No corresponding specific peer review evaluation found for this methodological justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    },
+    {
+      "id": "fa56fd1b-c110-485f-bf39-630609ea0e24",
+      "submission_id": "c73ea32f-f91d-461e-8089-8f2b28275290",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "e0245634-b51f-4f57-a1c9-de1f10e07948",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports citation of lipid membrane analogy (C84) as strengthening the plasticizer interpretation, while noting potential mechanistic differences. No corresponding specific peer review evaluation found for this supporting context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:17:48.762978Z"
+    }
+  ]
+}

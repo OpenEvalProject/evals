@@ -1,0 +1,89 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C21",
+      "C26",
+      "C27",
+      "C29",
+      "C40",
+      "C41",
+      "C47",
+      "C53",
+      "C63"
+    ],
+    "result": "Statistical learning modulates pain perception through probabilistic expectations and confidence. Across all experimental conditions (varying volatility and stochasticity), expectation-weighted computational models (eKF and eRL) provided significantly better fits to participants' pain ratings than models without expectation weighting (approximately 2-4 sigma ELPD differences). This demonstrates that participants use learned expectations about stimulus sequences to weigh their perception of pain intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 provide strong model comparison evidence showing expectation-weighted models consistently outperform non-weighted models across conditions. The effect sizes (2-4 sigma) meet the authors' pre-specified significance threshold. Claims C40-C41 and C47 confirm this mechanism operates across different uncertainty levels. The convergence diagnostics (C77) and hierarchical Bayesian fitting approach (C75-C76) support the reliability of these modeling results, though parameter recovery analyses in appendices would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C39",
+      "C48"
+    ],
+    "result": "Pain perception and prediction during statistical learning are best described by Bayesian filtering (Kalman filter model) rather than model-free reinforcement learning. The winning model (eKF) updates beliefs about both the mean and uncertainty of pain sequences in a Bayesian manner, with trial-by-trial adjustments based on environmental uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C39 report that the Kalman filter model outperformed the RL model, though the text notes this difference was 'short of significance' in high stochasticity conditions (Figure 5). This partial support weakens the claim that Bayesian inference is definitively superior. The model comparison is rigorous with proper convergence checks (C77), but the advantage of KF over RL appears condition-dependent, suggesting the conclusion should be more nuanced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Confidence ratings systematically modulate response uncertainty in pain judgments. As confidence decreases, response uncertainty scales linearly with negative slopes ranging from -0.112 to -0.276 across experimental conditions, confirming that lower confidence produces greater uncertainty in pain ratings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 report a consistent linear relationship between confidence and response uncertainty across all conditions, with Figure 6 providing visual evidence. The negative slope parameters are estimated from the winning model with proper convergence (C77). This finding aligns with theoretical predictions from Bayesian inference and provides a quantitative characterization of confidence effects. The consistency across conditions strengthens this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Participants showed worse performance on prediction tasks compared to perception tasks, particularly in high stochasticity conditions, as measured by root mean square error (RMSE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 reports RMSE analysis with a significant two-way interaction between stochasticity and response type (F(1,26)=29.842, p<0.001, \u03b7\u00b2=0.534) referenced in Appendix 1-table 1. Figure 2 visualizes these differences. The statistical test is appropriate for the repeated-measures design, and the effect size is substantial. This is a straightforward behavioral finding that contextualizes the modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The experimental design employed 27 healthy participants (mean age 22.4\u00b12.7 years) who completed four 80-trial sequences of thermal pain stimuli with varying volatility and stochasticity in a 2\u00d72 factorial design. Participants rated pain perception or predicted next stimulus intensity along with confidence on each trial. Stimuli were calibrated to individual pain thresholds using the method of limits, and computational models were fit using hierarchical Bayesian methods with proper convergence diagnostics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C77 provide comprehensive methodological details that are internally consistent and follow established practices. The sample size (n=27 after exclusions from n=33) is modest but reasonable for computational modeling studies. Pain threshold calibration (C68-C70) and stimulus timing (C69) are justified with citations. The hierarchical Bayesian fitting approach (C75-C76) with convergence checks (C77, R-hat<1.1) follows best practices. However, the study lacks power analysis justification for the sample size.",
+    "result_type": "MINOR"
+  }
+]

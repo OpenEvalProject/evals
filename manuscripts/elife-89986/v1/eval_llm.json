@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C76",
+      "C77",
+      "C78",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C149",
+      "C150",
+      "C183"
+    ],
+    "result": "Cholinergic axons in mouse visual cortex provide a binary locomotion state signal rather than encoding locomotion velocity linearly. Approximately 52.3% of cholinergic axons responded significantly to locomotion onset with an average lag of 477 ms, while showing no significant responses to visual stimuli (gratings, visual flow) or visuomotor mismatch. The relationship between cholinergic activity and locomotion velocity was step-like rather than linear, with activity correlating better with binarized locomotion velocity than with continuous velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C68-C94, C149-C150, and C183 collectively demonstrate through calcium imaging (Figure 1) and GRAB-ACh measurements (Figure 2\u2014figure supplement 1) that cholinergic axons signal locomotion state in a binary manner. The data show consistent activity during locomotion bouts regardless of velocity changes (C86-C90), stronger correlation with binarized velocity (C93, Figure 2F), and lack of responses to visual stimuli (C77-C78, Figure 1K). Statistical tests confirm significance of locomotion responses while visual/mismatch responses are at chance level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C77",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "Cholinergic axons in visual cortex show no evidence of responses to visual stimuli (gratings, visual flow) or visuomotor prediction errors (mismatch). The fraction of axons responsive to these stimuli was not different from chance, and GRAB-ACh measurements confirmed no measurable acetylcholine increase for these conditions when corrected for hemodynamic artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C77-C78 are directly supported by data in Figure 1G-I and 1K showing no significant responses above chance level. Claims C81-C82 provide independent confirmation using GRAB-ACh sensor measurements (Figure 2\u2014figure supplement 1B-C). The hemodynamic artifact correction (Figure 2\u2014figure supplement 1D-F) strengthens the conclusion that the lack of response is genuine rather than masked by measurement artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C83"
+    ],
+    "result": "Calcium activity increases in cholinergic axons correspond to increases in extracellular acetylcholine levels in visual cortex, as confirmed by GRAB-ACh3.0 sensor measurements showing increased acetylcholine on locomotion onsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 and C83 are supported by GRAB-ACh3.0 measurements (Figure 2\u2014figure supplement 1A) that validate the calcium imaging approach. The correspondence between calcium activity and acetylcholine release is critical for interpreting the functional significance of the observed cholinergic axon responses. The hemodynamic correction controls strengthen this validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C128"
+    ],
+    "result": "The response latency of cholinergic axons to locomotion onset (477 ms) was longer than layer 2/3 neurons but shorter than layer 5 neurons, suggesting that the initial locomotion-related increase in layer 2/3 activity is not driven by cholinergic input from basal forebrain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 and C128 are supported by latency analysis data (Figure 1\u2014figure supplement 1A-D). The temporal ordering provides strong evidence against cholinergic drive of initial layer 2/3 responses. However, the inference in C75 and C128 assumes no other mechanisms could explain the timing relationship, which is reasonable but not definitively proven. The conclusion is further supported by the lack of direct cholinergic activation of neurons (C125).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Among locomotion velocity, pupil diameter, and facial movements, locomotion exhibited the most robust correlation with cholinergic activity in visual cortex across different visuomotor conditions. The correlation between cholinergic activity and locomotion velocity was independent of visuomotor condition, while correlations with pupil diameter varied systematically with lighting conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 are supported by correlation analyses across multiple behavioral variables and visuomotor conditions (Figure 3A-C, Figure 3\u2014figure supplement 1). The independence of locomotion-cholinergic correlation from visuomotor condition (C95) and the systematic variation in pupil correlations (C96-C97) are well-documented. Control for ceiling effects (C98) strengthens the interpretation. The comparison across behavioral variables (C99-C100) provides a comprehensive characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Optogenetic activation of cholinergic axons in visual cortex in isolation did not drive local neuronal activity in either layer 2/3 or layer 5, consistent with previous reports and suggesting that locomotion-related neuronal activity is not directly driven by acetylcholine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C125 are directly supported by optogenetic stimulation experiments (Figure 5C-D) showing no calcium activity increase in either layer. Claims C126-C127 provide literature support for this finding. Claim C128 draws a reasonable inference based on both the lack of direct activation and the timing data. The conclusion is strengthened by convergent evidence from multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C118",
+      "C151",
+      "C170"
+    ],
+    "result": "Optogenetic activation of cholinergic axons paired with visuomotor stimuli resulted in layer-specific increases of neuronal activity. In layer 5 neurons, responses to both bottom-up (gratings) and top-down (visuomotor mismatch, locomotion onset) inputs were increased in amplitude, while layer 2/3 neurons showed no significant changes. The effects could not be explained by locomotion changes or stimulation artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C103-C113 are well-supported by optogenetic experiments (Figure 4C-H) showing layer-specific effects. Controls for locomotion velocity changes (C105, Figure 4\u2014figure supplement 1) and stimulation artifacts (C106-C107, Figure 4\u2014figure supplement 3A-C) are appropriate. The smaller effect compared to natural locomotion (C108) is acknowledged. Claims C118, C151, and C170 provide summary statements consistent with the data. The layer specificity is a robust finding across multiple stimulus types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C114",
+      "C115",
+      "C119"
+    ],
+    "result": "Grating onset responses during locomotion were not modulated by optogenetic activation of cholinergic axons in layer 5, suggesting saturation of the cholinergic effect for bottom-up responses during locomotion. However, top-down responses (mismatch) were still enhanced, and acetylcholine only partially explains locomotion-driven increases in visual responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C114 are supported by data showing no additional effect of optogenetic stimulation during locomotion for grating responses (Figure 4\u2014figure supplement 3D-E) but continued enhancement for mismatch responses (C110). Claims C115 and C119 provide reasonable interpretations that acetylcholine is only one component of locomotion effects. The differential saturation for bottom-up vs. top-down inputs is an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Locomotion results in both multiplicative and additive changes in grating responses, while optogenetic stimulation of cholinergic axons resulted primarily in multiplicative gain of visual responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by analysis of orientation tuning curves (Figure 4\u2014figure supplement 4). The distinction between locomotion effects (both multiplicative and additive) and cholinergic effects (primarily multiplicative) is important for understanding the mechanisms. However, the analysis would benefit from more detailed statistical characterization of the multiplicative vs. additive components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C152",
+      "C153",
+      "C155",
+      "C171",
+      "C185"
+    ],
+    "result": "Acetylcholine underlies the locomotion-associated decorrelation of activity between neurons in both layer 2/3 and layer 5. Optogenetic activation of cholinergic axons while mice were stationary induced decorrelation, and chemogenetic manipulations bidirectionally modulated the decorrelation effect in layer 5 (but not layer 2/3), with activation increasing and inhibition decreasing decorrelation strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C129-C143 are supported by multiple lines of evidence: locomotion-induced decorrelation (Figure 6A-B), optogenetic induction (Figure 6C-D), and bidirectional chemogenetic modulation (Figure 6G-H). The layer-specific effects of chemogenetic manipulation (C142, C155) are notable, with layer 5 showing bidirectional modulation while layer 2/3 does not. Claims C152-C153 and C171, C185 provide summary statements. The convergent evidence from optogenetic and chemogenetic approaches strongly supports the causal role of acetylcholine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "The locomotion-induced decorrelation was observed primarily for neurons with low pairwise correlations, while pairs of neurons with high correlation tended to further increase their correlation during locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 are supported by analysis of correlation changes as a function of baseline correlation (Figure 6\u2014figure supplement 1). This differential effect based on baseline correlation is an important mechanistic detail that suggests acetylcholine's decorrelating effect is not uniform across all neuron pairs. The finding adds nuance to the overall decorrelation result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Systemic chemogenetic manipulation of basal forebrain cholinergic neurons resulted in behavioral changes, with DREADD activation increasing locomotion velocity and DREADD inhibition decreasing time spent locomoting, resulting in bidirectional modulation of total distance traveled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by behavioral measurements during chemogenetic experiments (Figure 6\u2014figure supplement 2). This is an important control observation that complicates interpretation of the chemogenetic effects on neural correlations, as the behavioral state itself is altered. The authors acknowledge this complexity, and the bidirectional nature of the effect strengthens the causal link between cholinergic activity and locomotion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Cholinergic input decreases the response latency of layer 5 neurons to grating stimuli. Responses appeared earlier during locomotion than while stationary in layer 5 (but not layer 2/3), and optogenetic activation of cholinergic axons recapitulated this decrease in layer 5 while leaving layer 2/3 latency unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C144-C148 are supported by latency analysis (Figure 7, Figure 7\u2014figure supplement 1). The layer-specific effect on response latency is a novel finding that complements the amplitude effects. The ability of optogenetic stimulation to recapitulate the locomotion effect (C146) provides strong evidence for a causal role of acetylcholine. The lack of effect in layer 2/3 (C145, C147) is consistent with other layer-specific findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C156",
+      "C184"
+    ],
+    "result": "Acetylcholine augments the responsiveness of layer 5 neurons to inputs from outside of the local network, with acute effects being stronger in layer 5 where they act to increase responsiveness to external inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C156, and C184 are interpretive conclusions based on the collective experimental findings (increased amplitude, decreased latency, decorrelation in layer 5). The interpretation that acetylcholine enhances responsiveness to external inputs is reasonable given the data showing enhanced responses to both bottom-up (gratings) and top-down (mismatch, locomotion onset) inputs. However, this is an inference about mechanism rather than a directly demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C165",
+      "C168",
+      "C175",
+      "C180",
+      "C186",
+      "C187"
+    ],
+    "result": "Acetylcholine possibly enables faster switching between internal representations during locomotion, could function to gate visuomotor plasticity to phases of self-motion, and may regulate the influence of external input on internal representation to affect conscious percept. These are speculative interpretations of the functional role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C165, C168, C175, C180, C186, and C187 are explicitly speculative (marked as SPECULATION in evidence_type). While these hypotheses are consistent with the experimental findings and are well-reasoned based on the literature, they are not directly tested in this study. The claims about plasticity gating (C165), movement state signaling (C168), and conscious perception (C187) require additional experiments to validate. These represent interesting future directions rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The pattern of cholinergic axon activation was not uniform across axons, consistent with heterogeneity in basal forebrain populations. Optogenetic activation likely induces acetylcholine release patterns similar to endogenous levels, though antidromic activation of basal forebrain soma may contribute to systemic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C160 address important methodological considerations. C157 is supported by data (Figures 1E, 2D), while C158 is a reasonable inference based on decorrelation effects. However, C159 acknowledges a potential confound (antidromic activation) that cannot be fully ruled out. C160 argues against systemic effects based on projection specificity, but this remains uncertain. These caveats are appropriately acknowledged by the authors but limit the certainty of some conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The Ef1\u03b1 promoter used for neuronal labeling is specific to neurons and predominantly labels excitatory neurons, but likely undersamples Tlx3-positive layer 5 neurons, which have distinct response properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C164 are supported by citations and represent important caveats about the neuronal populations sampled. The acknowledgment of potential sampling bias (C163) and the distinct properties of undersampled populations (C164) is appropriate. This limitation should be considered when generalizing the findings to all layer 5 neurons, but does not invalidate the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C169",
+      "C172",
+      "C173",
+      "C174",
+      "C176",
+      "C177",
+      "C181",
+      "C182"
+    ],
+    "result": "The authors propose that locomotion-driven neuronal activity is likely driven by motor-related top-down input and noradrenaline rather than acetylcholine, and that acetylcholine's effects on layer 5 can be explained by modifying attractor dynamics. This framework is consistent with predictive processing models and may relate to Alzheimer's disease mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C169 and C172-C177 present a theoretical framework for interpreting the results. C169 is a reasonable inference based on the lack of direct cholinergic activation (C125) and timing data (C73-C75). The attractor dynamics hypothesis (C172-C173) is speculative but consistent with the data. Claims C174, C176-C177 connect to broader theoretical frameworks (predictive processing, consciousness). Claims C181-C182 relate to Alzheimer's disease but are highly speculative. While these interpretations are thoughtful and well-reasoned, they require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C101",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C166",
+      "C167",
+      "C178",
+      "C179"
+    ],
+    "result": "The introduction provides extensive background on acetylcholine's role in cortical plasticity, the anatomy and heterogeneity of basal forebrain cholinergic projections, prior measurements of cholinergic activity in various cortical areas and behavioral contexts, and the known effects of acetylcholine on sensory responses and decorrelation. This background establishes the context and motivation for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C67 and C72, C101, C120-C124, C166-C167, C178-C179 are primarily citations of prior work that establish the scientific context. These are appropriately referenced and accurately represent the cited literature. While these are not results of the current study, they are important for understanding the significance and novelty of the findings. The authors correctly identify gaps in prior knowledge that their study addresses.",
+    "result_type": "MINOR"
+  }
+]

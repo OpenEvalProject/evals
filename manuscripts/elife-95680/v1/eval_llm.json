@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "LFP band-specific power can reliably derive RSN spatial patterns that closely match BOLD-derived RSNs. Gamma-band power-derived RSN maps explain up to 90% of spatial variance in BOLD-derived RSN maps for both M1 and ACC, while lower-frequency bands show inverse spatial patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C14, C19-C23 provide converging evidence from multiple analyses showing high spatial correlations (R=0.95 for M1 gamma, R=0.85 for ACC gamma) between LFP-derived and BOLD-derived RSN maps. The consistency across frequency bands, brain regions, and the systematic transition from negative to positive correlations across frequencies strongly supports this result. Statistical significance is demonstrated with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Temporal correlations between LFP band power and local BOLD signals are significantly weaker than spatial correlations. After accounting for noise effects through simulation, gamma-band power explains only approximately 35% of temporal variance in the BOLD signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, C24-C29 demonstrate weak temporal correlations (max CC=0.37 for gamma in M1) despite statistical significance. The simulation analysis (C28-C29) appropriately accounts for noise effects using CNR estimates, providing a corrected estimate of R\u00b2=0.35. The disparity between spatial (R\u00b2=0.90) and temporal (R\u00b2=0.35) correlations is statistically validated through paired t-tests across multiple frequency bands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C37"
+    ],
+    "result": "Regressing out LFP power time series from rsfMRI signals has minimal impact on BOLD-derived RSN spatial patterns, indicating that temporal fluctuations of LFP contribute only minimally to RSN spatial structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C33, C35, C37 demonstrate through multiple regression approaches (single-band, multi-band soft regression, peak removal) that removing LFP temporal information does not substantially alter RSN spatial patterns. The consistency of results across different regression methods and the use of soft regression to address multicollinearity strengthen this finding. However, the evaluation relies primarily on visual inspection and spatial correlation metrics rather than quantitative statistical tests of map differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The disparity between high spatial correlations and low temporal correlations persists in awake rats, demonstrating that this phenomenon is not specific to anesthesia but reflects fundamental aspects of the LFP-BOLD relationship across physiological states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 demonstrate replication of key findings in awake animals. While correlations are weaker in the awake state (likely due to motion and smaller sample size: 50 vs 159-172 scans), the consistent pattern of higher spatial than temporal correlations is maintained. The regression analyses (C43) further support the generalizability. The smaller sample size in awake animals is a limitation but does not invalidate the core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A theoretical model proposes that rsfMRI signals contain 'electrophysiology-invisible' components from sources like nNOS neurons, astrocytes, and neuromodulatory systems that contribute to NVC but are not captured by LFP recordings. These components may be temporally desynchronized from LFP activity but constrained by the same anatomical pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C46-C51 present a theoretical model to explain the observed disparity. While the model is plausible and consistent with the data, it remains speculative (evidence_type: SPECULATION). The model draws on established knowledge about nNOS neurons and astrocytes but does not provide direct experimental evidence for their specific contribution to the observed LFP-BOLD disparity. This is a proposed interpretation rather than a directly tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Cross-correlation analysis reveals that gamma-band power is positively correlated with the BOLD signal while lower-frequency bands show negative correlations, with a consistent hemodynamic lag of approximately 2 seconds across all frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe fundamental relationships validated through cross-correlation analysis. The 2-second lag is consistent with known HRF delays in rodents (supported by citations C18). The systematic frequency-dependent relationship provides a foundation for subsequent spatial and temporal analyses. The findings are well-supported by the data shown in Figure 1B-C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Simulation analysis demonstrates that the difference in number of data points between temporal (1200) and spatial (6157) correlation calculations has negligible influence on correlation values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 addresses a potential confound through simulation. The analysis appropriately controls for this methodological difference, strengthening the interpretation that the spatial-temporal disparity is not an artifact of sample size differences. This is a methodological validation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Mutual information analysis shows limited nonlinear relationships between LFP band power and rsfMRI signals, indicating that nonlinear components do not significantly influence RSN spatial patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides additional evidence that the LFP-BOLD relationship is primarily linear, consistent with recent literature (Nozari et al., 2024). This supports the use of linear correlation methods throughout the study. However, mutual information analysis is presented briefly without detailed methodology or quantitative results, limiting full evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "RSNs revealed by either BOLD or LFP signals closely resemble anatomical networks defined by axonal projection patterns from the Allen Brain Institute database, though functional connectivity can reflect both direct and indirect connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide anatomical validation of the functional findings. The comparison to Allen Brain Institute data strengthens the interpretation that RSN spatial patterns are constrained by anatomical connectivity. The acknowledgment that functional and anatomical connectivity may not be identical (C61) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Infraslow LFP activity (<1 Hz) shows low temporal correlation (R=0.08) with rsfMRI signals despite deriving consistent RSN spatial patterns (spatial correlation=0.7) in M1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 extends the main findings to infraslow frequencies, demonstrating that the spatial-temporal disparity is not limited to conventional frequency bands. This is consistent with the overall pattern but represents a specific frequency range analysis. The finding is supported by citation to Li et al., 2022.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study employed simultaneous whole-brain rsfMRI and electrophysiology recordings in M1 and ACC of rats under light sedation and awake states, with appropriate experimental protocols, data acquisition parameters, and preprocessing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C95-C112 describe the experimental methodology. The methods appear rigorous with appropriate controls for motion (FD thresholds), MRI artifact removal (template regression), and ethical approval. The use of MR-compatible electrodes, acclimation procedures for awake imaging, and detailed preprocessing steps support data quality. Sample sizes are adequate (6 rats with dual electrodes, 2 additional rats with single electrode).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C70"
+    ],
+    "result": "The manuscript contextualizes findings within existing literature on neurovascular coupling, RSN spatial patterns, and prior electrophysiology-fMRI studies, noting both consistencies and discrepancies with previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10, C52-C70 provide literature context through citations. The authors appropriately cite supporting evidence for RSN-anatomy correspondence, prior electrophysiology-fMRI studies, and NVC mechanisms. They also acknowledge discrepancies with some prior studies (e.g., C69-C70 regarding deeply anesthetized rats) and provide plausible explanations. The literature review appears comprehensive and balanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Literature evidence supports that electrophysiology-invisible components (nNOS neurons, astrocytes, neuromodulatory systems) can significantly influence hemodynamic signals through vasoactive mechanisms that may not be proportionately reflected in LFP recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C83 synthesize literature on mechanisms that could explain the observed LFP-BOLD disparity. The citations to studies on nNOS neurons (C74), astrocytes (C76-C78), inhibitory neurons (C79), and neuromodulators (C81) provide evidence for electrophysiology-invisible vasoactive mechanisms. However, these are cited as supporting evidence for the proposed model rather than direct tests of the model in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The proposed model can potentially explain why evoked brain activation shows both high spatial and temporal correlations between fMRI and electrophysiology, as external stimulation synchronizes both LFP and electrophysiology-invisible components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 extends the theoretical model to explain task-evoked conditions. While this is a logical extension and consistent with cited literature (Winder et al., 2017), it remains speculative as the current study only examined resting-state conditions. This prediction could be tested in future work but is not directly validated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors acknowledge potential limitations including temporal resolution (1 s TR), possible dynamic state-dependent relationships, and the possibility that alternative analysis methods might reveal stronger temporal relationships, though existing evidence suggests improvements would be modest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 demonstrate appropriate scientific caution by acknowledging limitations and alternative interpretations. The discussion of temporal resolution limitations (C86), dynamic connectivity (C85), and alternative methods (C88) is balanced. The citation to Nozari et al., 2024 (C89-C90) showing that various methods still yield R\u00b2<0.5 supports the robustness of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study provides a novel interpretation that BOLD-based RSNs may be dominated by signals not fully captured by electrophysiology, potentially making fMRI more important than previously thought as it may provide unique information beyond traditional electrophysiology measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 present the study's main conclusions and implications. These are logical inferences from the demonstrated spatial-temporal disparity (C1-C3, C15, C27). However, the strength of the conclusion depends on accepting that the ~35% temporal variance explained by LFP represents a 'minor' contribution, which could be debated. The interpretation is reasonable but involves subjective judgment about what constitutes 'dominant' contribution.",
+    "result_type": "MAJOR"
+  }
+]

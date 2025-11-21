@@ -1,0 +1,2382 @@
+{
+  "submission": {
+    "id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:05:46.553480Z",
+    "updated_at": "2025-11-20T23:05:46.553480Z"
+  },
+  "content": [
+    {
+      "id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "content_type": "manuscript",
+      "content_text": "# Neurexins control the strength and precise timing of glycinergic inhibition in the auditory brainstem\n\n## Authors\n\n- He-Hai Jiang<sup>1</sup>\n- Ruoxuan Xu<sup>1</sup>\n- Xiupeng Nie<sup>1</sup>\n- Zhenghui Su<sup>1</sup>\n- Xiaoshan Xu<sup>1</sup>\n- Ruiqi Pang<sup>4</sup>\n- Yi Zhou<sup>4</sup> ([ORCID: 0000-0002-2623-8960](https://orcid.org/0000-0002-2623-8960))\n- Fujun Luo<sup>1</sup> ([ORCID: 0000-0001-9487-6545](https://orcid.org/0000-0001-9487-6545)) \u2020\n\n### Affiliations\n\n1. Guangzhou National Laboratory Guangzhou China\n2. Bioland Laboratory Guangzhou China ([ROR:01n179w26](https://ror.org/01n179w26))\n3. School of Basic Medical Sciences, Guangzhou Medical University Guangzhou China ([ROR:00zat6v61](https://ror.org/00zat6v61))\n4. Department of Neurobiology, School of Basic Medicine, Army Medical University Chongqing China ([ROR:05w21nn13](https://ror.org/05w21nn13))\n5. Advanced Institute for Brain and Intelligence, School of Medicine, Guangxi University Nanning China ([ROR:02c9qn167](https://ror.org/02c9qn167))\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeurexins play diverse functions as presynaptic organizers in various glutamatergic and GABAergic synapses. However, it remains unknown whether and how neurexins are involved in shaping functional properties of the glycinergic synapses, which mediate prominent inhibition in the brainstem and spinal cord. To address these issues, we examined the role of neurexins in a model glycinergic synapse between the principal neuron in the medial nucleus of the trapezoid body (MNTB) and the principal neuron in the lateral superior olive (LSO) in the auditory brainstem. Combining RNAscope with stereotactic injection of AAV-Cre in the MNTB of neurexin1/2/3 conditional triple knockout mice, we showed that MNTB neurons highly express all isoforms of neurexins although their expression levels vary remarkably. Selective ablation of all neurexins in MNTB neurons not only reduced the amplitude but also altered the kinetics of the glycinergic synaptic transmission at LSO neurons. The synaptic dysfunctions primarily resulted from an impaired Ca2+ sensitivity of release and a loosened coupling between voltage-gated Ca2+ channels and synaptic vesicles. Together, our current findings demonstrate that neurexins are essential in controlling the strength and temporal precision of the glycinergic synapse, which therefore corroborates the role of neurexins as key presynaptic organizers in all major types of fast chemical synapses.\n\n## Introduction\n\nNeurexins are evolutionarily conserved synaptic adhesion molecules and their genetic mutations are highly associated with autism and schizophrenia (Gomez et al., 2021; S\u00fcdhof, 2008). In the vertebrates, neurexins are encoded by three genes Nrxn1, Nrxn2, and Nrxn3, each of which contains distinct promoters for expressing longer \u03b1- and shorter \u03b2-neurexins (Ullrich et al., 1995; Ushkaryov et al., 1992). Both \u03b1- and \u03b2-neurexins are critical and non-redundant in regulating the formation and function of synapses (Anderson et al., 2015; Missler et al., 2003; S\u00fcdhof, 2017). Triple knockout (KO) of \u03b1-neurexins causes a significant decrease in the density of GABAergic but not glutamatergic synapses while producing a strong reduction in both inhibitory and excitatory synaptic transmission (Missler et al., 2003). Triple KO of \u03b2-neurexins reveals a significant phenotype only in glutamatergic synapses, but not in GABAergic synapses (Anderson et al., 2015). Deletion of all neurexins, including Nrxn1/2/3 \u03b1- and \u03b2-neurexins, leads to profound but strikingly distinct phenotypes in different synapses, which further points to the diverse actions of neurexins in specific neurons (Chen et al., 2017; Luo et al., 2020). Consistently, transcriptomic analysis has revealed that the expression profiles of various neurexins differ remarkably in excitatory neurons versus inhibitory neurons even among distinct subtypes of interneurons (F\u00f6ldy et al., 2016; Fuccillo et al., 2015; Lukacsovich et al., 2019; Uchigashima et al., 2019). Despite the multifaceted roles of neurexins widely observed in various glutamatergic and GABAergic synapses (Boxer and Aoto, 2022; Chen et al., 2017; Luo et al., 2021; S\u00fcdhof, 2017), however, it remains largely unknown how neurexins may regulate the functional properties of the glycinergic synapses, which mediate essential inhibition in the spinal cord, brainstem and retina (Assareh et al., 2023; Brill et al., 2020; Chang et al., 2023; Feng et al., 1998; Foster et al., 2015; Gomeza et al., 2003a; Gomeza et al., 2003b; Zeilhofer et al., 2012).\n\nIn the mature mammalian auditory brainstem, it is well characterized that the principal neurons in the medial nucleus of the trapezoid body (MNTB) project glycinergic synaptic inputs to the lateral superior olive (LSO) (Fischer et al., 2019; Kotak et al., 1998; Nabekura et al., 2004; Sanes and Friauf, 2000). These synapses are robust, precise, and extremely reliable even during high-frequency stimulation (Kr\u00e4chan et al., 2017). Strong evidence has shown that the MNTB\u2013LSO glycinergic synapses are subject to extensive refinement during development, including transmitter type switch, the elaboration of dendrites and axonal arbors followed by synaptic pruning, to achieve exquisite control of fast inhibition (Brill et al., 2020; Kim and Kandler, 2003; Kotak et al., 1998; Nabekura et al., 2004; Sanes and Friauf, 2000). However, the molecular mechanisms of shaping their functional characteristic remain incompletely understood.\n\nWe utilized the triple Nrxn1/2/3 conditional KO mice (Nrxn123 cTKO) (Chen et al., 2017) to ablate all neurexins in MNTB principal neurons with stereotactic injection of adeno-associated virus (AAV) expressing Cre recombinase. Combining this with the RNAscope technique, we verified that MNTB neurons highly express various isoforms of neurexins. Selective injection of AAV-Cre, but not AAV-EGFP(enhanced green fluorescent protein), successfully blocked expression of all neurexins in MNTB neurons. Functionally, pan-neurexin deletion significantly impaired both the amplitude and the kinetics of the glycinergic synaptic transmission. Surprisingly, deletion of all neurexins led to a significantly higher number of glycinergic synapses innervating the LSO and higher frequency of spontaneous neurotransmitter release. Application of low extracellular Ca2+ blocked the glycinergic neurotransmission of both control and neurexin-deficient synapses, but with a significant difference in its effectiveness. Moreover, treatment with EGTA(ethylene glycol tetraacetic acid), a high-affinity Ca2+ chelator with slow binding kinetics, caused a much stronger inhibition of neurotransmission in neurexin-deficient synapses, suggesting a significant disruption of the tight coupling between voltage-gated Ca2+ channels and synaptic vesicles in the MNTB\u2013LSO glycinergic synapses.\n\n## Results\n\n### Neurexins are highly expressed in MNTB neurons\n\nTo study the role and mechanism of neurexins in the glycinergic synapse between MNTB neurons and LSO neurons, which are critical in computing sound localization in mammalian auditory brainstem (Grothe et al., 2010), we first characterized the expression of Nrxn1\u20133 in the principal neurons of the MNTB by fluorescent in situ hybridization (FISH) using the RNAscope technique. As shown in Figure 1, MNTB neurons in wild-type (WT) mice expressed Nrxn1, Nrxn2, and Nrxn3, although the expression level of each gene appeared to vary remarkably. As an initial exploration, we took advantage of Nrxn123 cTKO mice that enable deletion of all neurexins following the expression of Cre recombinase (Chen et al., 2017), to bypass the functional redundancy of different neurexins. Neuronal specific deletion of all neurexins was achieved by stereotactic injection of AAV-Cre-EGFP into the MNTB at P0 (TKO). As a control, AAV-EGFP was injected (Ctrl). Successful virus injection and expression of Cre recombinase in MNTB neurons were confirmed by strong EGFP fluorescence (Figure 1d, e). FISH data further demonstrated that the recombinase dramatically blocked the expression of all neurexins, as compared to the normal expression of neurexins when EGFP was expressed (Figure 1f, compared to Figure 1b). Altogether, these data show that the glycinergic neurons in the MNTB highly express various neurexin genes, which can be specifically deleted by stereotactic injection of AAV-Cre in Nrxn123 cTKO mice.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig1-v1.jpg)\n\n**Figure 1.:** (a) Immunohistochemistry and RNAscope fluorescent in situ hybridization (FISH) showing expression of various isoforms of neurexins in the MNTB, which make glycinergic synapses with lateral superior olive (LSO) neurons. (b) Summary of expression of various isoforms of neurexins in the MNTB of wild-type (WT) mice. Nrxn1 (n = 29), Nrxn2 (n = 29), p = 0.0001; Nrxn1 (n = 29), Nrxn3 (n = 24), p = 0.0001; Nrxn2 (n = 29), Nrxn3 (n = 24), p = 0.0001. (c) Diagram of auditory brainstem and virus injection in Nrxn123 cTKO mice. (d) Representative images of Nrxn3 FISH in the MNTB of mice injected with AAV-EGFP or AAV-Cre-EGFP. Scale bar: 50 \u03bcm. (e) Selected ROI(region of interest) in high magnification showing Nrxn3 FISH in MNTB neurons expressing EGFP or Cre-EGFP. Scale bar: 10 \u03bcm. (f) Summary of expression of various neurexins in the MNTB of Nrxn123 cTKO mice injected with AAV-EGFP and AAV-Cre-EGFP. Nrxn1: EGFP (n = 9), Cre (n = 19), p = 0.0053; Nrxn2: EGFP (n = 8), Cre (n = 14), p = 0.0038; Nrxn3: EGFP (n = 9), Cre (n = 14), p = 0.0016. Data are means \u00b1 standard error of the mean (SEM). Number of sections analyzed are indicated in the bars (b, f); statistical differences were assessed by Student\u2019s t-test (**p < 0.01, ***p < 0.001). Source data are provided as a Source Data file.\n\n### Neurexins are essential for dictating the strength and kinetics of the MNTB\u2013LSO glycinergic synapse\n\nSince neurexins play an essential role in orchestrating functional organization of various synapses including both glutamatergic and GABAergic synapses, we hypothesize that deletion of all neurexins may have a significant impact on glycinergic synapses. To test the hypothesis, we sought to examine how neurexins may regulate the function of the MNTB\u2013LSO glycinergic synapse in the auditory brainstem. Because LSO neurons receive excitatory glutamatergic inputs and inhibitory GABAergic/glycinergic inputs, we used a pharmacological approach to isolate the glycinergic inputs. By blocking glutamatergic inputs with CNQX and AP5, we were able to selectively record inhibitory postsynaptic currents (IPSCs) from LSO neurons, which can be completely inhibited by strychnine, a potent glycine receptor inhibitor (Figure 2\u2014figure supplement 1).\n\nTo specifically examine the role of neurexins in regulating the glycinergic synapse, we used an optogenetic approach in which two AAVs, AAV-Cre-EGFP and AAV-DIO-ChR2-mCherry, were co-injected in Nrxn123 cTKO mice. As a control, AAV-ChR2-EYFP was used for injection. Virus injection was performed at P0 and acute slices derived from these mice were analyzed at P13\u201314. We verified the successful expression of ChR2 by examining the fluorescence and further by recording optogenetically evoked action potentials (APs) from the soma of MNTB neurons. Reliable AP firing can be induced by single or repetitive high-frequency light stimulation (Figure 2\u2014figure supplement 1c). In control mice, optogenetic stimulation of MNTB neurons robustly triggered large IPSCs recorded from LSO neurons (Figure 2a, b), which can be fully blocked by strychnine (Figure 2\u2014figure supplement 1d) and are thus purely glycinergic. In TKO mice with co-injection of Cre and ChR2, however, optogenetic stimulation-induced significantly smaller IPSCs (Figure 2a, b). On average, we observed ~60% reduction in the peak amplitude (Figure 2b), similar to previous findings at other different synapses (Chen et al., 2017; Luo et al., 2020). Furthermore, the kinetics of IPSCs were dramatically reduced as indicated by significantly slower rise time and decay time in TKO mice as compared to the control (Figure 2c, d). Together, these data strongly suggest that neurexins are essential for the intact function of the glycinergic synapse.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig2-v1.jpg)\n\n**Figure 2.:** (a) Representative inhibitory postsynaptic current (IPSC) traces of lateral superior olive (LSO) neurons evoked by optogenetic stimulation of ChR2 expressed in medial nucleus of the trapezoid body (MNTB) neurons. (b\u2013d) Summary of IPSC amplitude, rise time, and decay time constant. Ctrl (n = 15), TKO (n = 11), p = 0.0119, p = 0.0004, p = 0.002. Unpaired two-sided t-test. (e\u2013h) Same as a\u2013d, except that IPSCs were evoked by afferent fiber stimulation. Ctrl (n = 15), TKO (n = 16), p = 0.0267, p = 0.152, p = 0.241. (i) Representative IPSCs traces of LSO neurons evoked by a pair of fiber stimulation at 50-ms interval. (j) Summary of paired-pulse ratio (PPR) of IPSCs in relationship to different paired-pulse intervals. Ctrl (n = 12), TKO (n = 12), p < 0.0001, two-way analysis of variance (ANOVA). Data are means \u00b1 standard error of the mean (SEM). Number of neurons are indicated in the bars (b\u2013d, f\u2013h) or graph (j). Statistical differences were assessed by Student\u2019s t-test or two-way ANOVA test (*p < 0.05, **p < 0.01, ***p < 0.001).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Representative sIPSC(spontaneous IPSC) traces of LSO neurons before and after application of potent glycine receptor blocker strychine (stry) (left) and summary of sIPSC amplitude without and with stry (right). (b) Representative eIPSC(evoked IPSC) traces of LSO neurons before and after stry application (left) and summary of eIPSC amplitude without and with stry (right). (c) Representative action potential (AP) firing of MNTB neurons infected with ChR2 during high-frequency repetitive pulse stimulation of 473 nm. (d) Representative oIPSC(optogenetically-evoked IPSC) traces of LSO neurons before and after stry application (left) and summary of oIPSC amplitude without and with stry (right). Statistical differences were assessed by Student\u2019s t-test (**p < 0.01, *** p < 0.001).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Representative IPSC traces of lateral superior olive (LSO) neurons evoked by paired-pulse (20 Hz) optogenetic stimulation of ChR2 expressed in medial nucleus of the trapezoid body (MNTB) neurons in control (a) and Nrxn TKO (b) mice. Top, individual trials. Bottom, averaged trace of IPSC. (c) Summary of PPR of IPSC amplitude. Statistical differences were assessed by Student\u2019s t-test (*p < 0.05).\n\nTo further address the physiological role of neurexins in AP-evoked neurotransmission at the glycinergic synapse, we applied electric stimulation to activate presynaptic fibers of MNTB neurons by placing a stimulating electrode in the midway between the MNTB and the LSO. Consistent with our optogenetic approach, afferent-evoked large IPSCs were predominantly glycinergic as they can also be fully blocked by strychnine (Figure 2\u2014figure supplement 1). A modest but significant decrease in synaptic strength was observed in Nrxn123 TKO mice as compared to control mice (Figure 2e, f), confirming the important role of neurexins in the glycinergic synapses. The modest effect of the pan-neurexin deletion on synaptic strength in the MNTB\u2013LSO synapses is likely due to the incomplete AAV transfection in MNTN neurons. Therefore, it is likely that a small fraction of MNTB neurons may still express relatively normal expression of neurexins. It is worth pointing out that extensive efforts were made to optimize our virus injection protocols by adjusting the injection parameters including the needle angle, virus titers, and volume. On average, it was estimated that approximately ~80% neurons in the MNTB expressed GFP and thus were infected by AAV-Cre. It is also possible that other sources of glycinergic inputs other than the MNTB afferents are likely to present but are obscured in WT animals by the predominant glycinergic inputs from MNTB neurons (Jalabi et al., 2013).\n\n### The mechanism of neurexins for regulating the MNTB\u2013LSO glycinergic synapse\n\nSince neurexins play multifaceted roles in regulating pre- and/or postsynaptic functions, we explored the potential mechanisms by initially examining the paired-pulse ratio (PPR) of IPSCs, which has been routinely used for identifying a presynaptic origin of regulation. As shown in Figure 2i, IPSCs evoked by two consecutive stimuli at various intervals showed a paired-pulse depression in both control and TKO mice. However, the PPRs were significantly increased by deletion of neurexins (Figure 2j, Figure 2\u2014figure supplement 2), suggesting that neurexins are required for maintaining a high release probability of the glycinergic nerve terminal.\n\nWe then recorded and analyzed spontaneous IPSCs from LSO neurons. Compared to the control, there was no significant difference in both the amplitude and kinetics of sIPSCs (Figure 3a\u2013d) in TKO mice, indicating the normal content of synaptic vesicle as well as the normal function of postsynaptic glycine receptors. Surprisingly, however, we found that deletion of all neurexins caused a small but significant increase in the frequency of sIPSCs (Figure 3a, b), which is opposite to previous reports of either no change or decrease in the miniature frequency at glutamatergic or GABAergic synapse (Chen et al., 2017; Luo et al., 2020). To test whether the increase in sIPSC frequency may be caused by an increase in the number of glycinergic synapses, we performed immunostaining of brainstem sections containing the LSO with antibodies specific for GlyT2 or VGAT(vesicular GABA transporter), synaptic markers for the glycinergic neurons. Consistent with the increased frequency of sIPSCs, we found a significant increase in the density of both GlyT2 (Figure 3e, f) and VGAT (Figure 3g, h) staining, suggesting more abundant glycinergic terminals at the LSO of TKO mice. Together, these data show that the pan-neurexin deletion in MNTB neurons has surprisingly increased the baseline glycinergic neurotransmission, which is distinct from the phenotypes observed in glutamatergic and GABAergic neurons (Chen et al., 2017; Luo et al., 2021).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig3-v1.jpg)\n\n**Figure 3.:** (a) Representative sIPSC traces of LSO neurons. (b) Summary of sIPSC amplitude and frequency. Ctrl (n = 14), TKO (n = 9), p = 0.057, p = 0.015, unpaired two-sided t-test. (c) Representative sIPSC waveforms of LSO neurons. (d) Summary of sIPSC rise time and decay time constant. Ctrl (n = 14), TKO (n = 9), p = 0.376, p = 0.82, unpaired two-sided t-test. (e) Representative confocal microscopy images of medial nucleus of the trapezoid body (MNTB)\u2013LSO-containing brainstem slice with specific labeling of GlyT2 (red) and EGFP (green) from both control and Nrxn123 TKO mice at P14. Scale bar, 10 \u00b5m. (f) Summary of glycinergic synaptic density quantified by GlyT2 immunostaining. Ctrl (n = 42), TKO (n = 42), p = 0.0001, unpaired two-sided t-test. (g, h) Same as (e, f) except for specific labeling of VGAT (red) and EGFP (green). Ctrl (n = 42), TKO (n = 42), p = 0.0047, unpaired two-sided t-test. Data are means \u00b1 standard error of the mean (SEM). Number of neurons or sections/animals for immunostaining are indicated in the bars (b, d, f, h). Statistical differences were assessed by Student\u2019s t-test (*p < 0.05, **p < 0.01, ***p < 0.001). Source data are provided as a Source Data file.\n\n### Deletion of neurexins impairs the tight coupling between voltage-gated Ca2+ channels and synaptic vesicles at the glycinergic synapse\n\nBecause neurexins are shown to exert diverse impacts including specifying the function of voltage-gated Ca2+ channels and their spatial clustering within the presynaptic active zone (Chen et al., 2017; Luo et al., 2020; Missler et al., 2003), we approached the matter by first exploring the effect of pan-neurexin deletion on the calcium sensitivity of neurotransmitter release at the MNTB\u2013LSO synapse. We perfused the brain slice with low Ca2+ (0.2 mM) ACSF(artificial cerebrospinal fluid) while recording IPSCs continuously. In both control and Nrxn123 TKO mice, the perfusion of low Ca2+ ACSF gradually decreased the amplitude of IPSCs (Figure 4a, c, Figure 4\u2014figure supplement 1). However, the reduction rate was much faster in TKO mice such that IPSC amplitudes dropped more than 50% in TKO versus ~10% in control when extracellular [Ca2+] reached to approximately 1.5 mM (Figure 4b, d). The extracellular [Ca2+] blocking 50% of IPSCs were estimated as 1.1 and 1.5 mM, respectively, for control and TKO mice, which are significantly different (Figure 4e, f), suggesting that neurexins indeed are crucial for regulating calcium sensitivity of transmitter release at the glycinergic synapse.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig4-v1.jpg)\n\n**Figure 4.:** (a) Representative time courses of inhibitory postsynaptic current (IPSC) amplitudes for individual lateral superior olive (LSO) neurons of control mice during the perfusion of low Ca2+ ACSF. (b) Representative IPSC traces of control mice before and during low Ca2+ perfusion at the indicated points in a. (c, d) Same as (a, b), except of TKO mice. (e) Summary of normalized IPSC amplitudes plotted against the calculated extracellular Ca2+ concentration for control and TKO mice. Ctrl (n = 7), TKO (n = 9), p = 0.0311 for 0.92 mM Ca2+, p = 0.0104 for 1.10 mM Ca2+, p = 0.0208 for 1.28 mM Ca2+, p = 0.0067 for 1.46 mM Ca2+, p = 0.0007 for 1.64 mm Ca2+, unpaired two-sided t-test. (f) Summary of EC50 of Ca2+ for half-blocking of IPSCs and the blocking effect of 0.2 mM Ca2+ on IPSC amplitude. Ctrl (n = 7), TKO (n = 9), p = 0.0139, p = 0.3985, unpaired two-sided t-test. Data are means \u00b1 standard error of the mean (SEM). Number of neurons are indicated in the graph (e) or bars (f). Statistical differences were assessed by Student\u2019s t-test (*p < 0.05, **p < 0.01, ***p < 0.001). Source data are provided as a Source Data file.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Summary of eIPSC amplitude of control during 0.2 mM Ca2+ perfusion. Mean \u00b1 standard error of the mean (SEM). (b) Summary of eIPSC amplitude of TKO during 0.2 mM Ca2+ perfusion. Mean \u00b1 SEM. (c) Average of eIPSC amplitude before and after 0.2 mM Ca2+ perfusion. Mean \u00b1 SEM (**p < 0.01, ***p < 0.001), paired t-test.\n\nOne of the critical factors affecting the calcium sensitivity of release is the spatial distance between Ca2+ channels and synaptic vesicles (Eggermann et al., 2011; Luo et al., 2020). Additionally, neurexins have been shown to promote tight coupling of Ca2+ channels with synaptic vesicle at the glutamatergic calyx of Held synapse (Luo et al., 2020). Because the MNTB\u2013LSO glycinergic synapse is similar on multiple aspects of the functional characteristics, being fast, robust, and precise, to the calyx of Held synapse, we tested whether neurexins are also required for the tight coupling of Ca2+ channels with synaptic vesicle. We incubated the brain slice with high-concentration EGTA-AM(Acetoxymethyle ester) and continuously recorded IPSCs from individual LSO neurons. As illustrated in Figure 5, EGTA-AM treatment slightly blocked IPSCs at control synapses, suggesting the relative ineffectiveness of EGTA in interfering neurotransmitter release (Figure 5a, b, Figure 5\u2014figure supplement 1). In contrast, at the neurexin-deficient synapses, EGTA-AM treatment remarkably impaired IPSCs (Figure 5c, d, Figure 5\u2014figure supplement 1). On average, the blocking effects of EGTA at neurexin-deficient synapses (53.2 \u00b1 5.4%) were much stronger than the effect at control synapses (15.6 \u00b1 4.3%). Therefore, consistent with previous studies at the calyx of Held synapse (Luo et al., 2020), our data provide further support that neurexins are key synaptic organizers for tightly clustering voltage-gated Ca2+ channels with synaptic vesicles at the glycinergic synapse.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig5-v1.jpg)\n\n**Figure 5.:** (a) Representative time courses of IPSC amplitudes for individual lateral superior olive (LSO) neurons of control mice during the treatment of high concentration of EGTA-AM. (b) Representative IPSC traces of control mice before and after EGTA. (c, d) Same as a, b, except of TKO mice. (e) Summary of IPSC amplitude before and after EGTA treatment of control mice. Ctrl (n = 7), TKO (n = 7), p = 0.0201, paired two-sided t-test. (f) Summary of IPSC amplitude before and after EGTA treatment of TKO mice. Ctrl (n = 7), TKO (n = 7), p = 0.0123, paired two-sided t-test. (g) Summary of the blocking percentage of IPSCs by EGTA. Ctrl (n = 7), TKO (n = 7), p = 0.0001, unpaired two-sided t-test. Data are means \u00b1 standard error of the mean (SEM). Number of neurons are indicated in the bars (e\u2013g). Statistical differences were assessed by Student\u2019s t-test (*p < 0.05, ***p < 0.001). Source data are provided as a Source Data file.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94315/elife-94315-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Summary of eIPSC amplitude of control during 10 mM EGTA-AM treatment. Mean \u00b1 standard error of the mean (SEM). (b) Summary of eIPSC amplitude of TKO during 10 mM EGTA-AM treatment. Mean \u00b1 SEM.\n\n## Discussion\n\nUsing the MNTB\u2013LSO synapse as a model, here we provide first assessment of the role of neurexins at glycinergic synapses that mediate prominent synaptic inhibition in the brainstem. Our findings in general strongly corroborate the idea that neurexins are central presynaptic organizers in all major types of fast chemical synapses including glutamatergic, GABAergic, and glycinergic.\n\nSpecifically, we have shown that various neurexin genes express concurrently in these glycinergic neurons but the expression level of each appears to vary significantly (Figure 1). This finding is consistent with many studies in glutamatergic and GABAergic neurons, which converge to show that multiple genes, isoforms, and splicing sites of neurexins normally co-express in individual neurons and the expression profiles are highly cell-type specific and brain region specific (Fuccillo et al., 2015; Schreiner et al., 2014; Treutlein et al., 2014; Uchigashima et al., 2019). Distinct neurexins may interact separately and/or redundantly with diverse signaling molecules to form specific molecular codes for shaping neuronal connectivity and functional properties (Aoto et al., 2015; Aoto et al., 2013; Dai et al., 2019; Lin et al., 2023; Lloyd et al., 2023; S\u00fcdhof, 2017). The observed differential expression of individual neurexins suggests the possibility that specific isoforms may exert dominant regulatory roles in neurotransmission in different synapses. For instance, compelling evidence indicates that Nrxn3, arguably the best studied neurexin isoform, is selectively required for intact synaptic function in the olfactory bulb GABAergic neurons (Aoto et al., 2015; Trotter et al., 2023). Understanding the distinct roles of each neurexin isoform in regulating glycinergic synaptic transmission is crucial for future studies. Particularly noteworthy is the potential involvement of Nrxn3, the most abundant isoform, in this synapse.\n\nWe further show that neurexins are critical in controlling the strength and precise timing of the glycinergic synaptic inhibition at LSO neurons by clustering Ca2+ channels tightly with synaptic vesicles in presynaptic release sites (Figures 2, 4,, 5). These data strongly corroborate two perspectives on the function of neurexins as central presynaptic organizers. First, deletion of all neurexins not only weakens the glycinergic synaptic connectivity but also impairs the temporal precision of synaptic inhibition, exactly as it does at the glutamatergic calyx of Held synapse (Luo et al., 2020). Since both the glutamatergic calyx of Held synapse and the glycinergic MNTB\u2013LSO synapse in the auditory brainstem are extremely strong and fast (Beiderbeck et al., 2018; Grothe, 2003), the orchestrating role of neurexins in controlling the timing and magnitude of their synaptic transmission is therefore desirable for the auditory information processing. Second, neurexins execute their role at the glycinergic synapse mainly by tightly organizing Ca2+ channels within the release sites, again exactly as it does at the calyx of Held synapse (Luo et al., 2020). Nanodomain coupling between Ca2+ channels and synaptic vesicles has been found in many fast central synapses and is functionally crucial for increasing the efficacy and speed of neurotransmission (Eggermann et al., 2011). This similar role of neurexins in clustering Ca2+ channels tightly at presynaptic active zones of not only the glutamatergic synapse but also the glycinergic synapse prompts a shared mechanism and further research on the potential molecular candidates.\n\nOn the other hand, our data surprisingly reveal that deletion of neurexins may promote the formation/maintenance of the glycinergic synapse, as evidenced by the increase in the frequency of spontaneous synaptic events measured at LSO neurons as well as the increase in the glycinergic synaptic density in Nrxn123 TKO mice (Figure 3). Early studies of TKOs of \u03b1- or \u03b2-neurexins lead to general conclusion that neurexins are not essential for the formation/maintenance of excitatory and inhibitory synapses (Anderson et al., 2015; Missler et al., 2003). Moreover, deletion of all \u03b1- and \u03b2-neurexins has no impact on the formation/maintenance of glutamatergic synapse (Luo et al., 2020) and GABAergic synapse made by somatostatin-positive interneurons (Chen et al., 2017), but produces partial loss (~30%) of GABAergic synapse made by parvalbumin-positive interneurons (Chen et al., 2017). There are several possibilities that may explain our present findings on the glycinergic synapse. First, the most parsimonious explanation would be that neurexins play contradictory dual roles at the glycinergic synapse: orchestrate the synchronized synaptic transmission by promoting tight coupling of Ca2+ channels with synaptic vesicles at the presynaptic active zone; restrict the formation of weaker synapse or spontaneous transmission. Another well-established example of synaptic protein with dual functions in synaptic transmission is synaptotagmin 1, which acts as a calcium sensor to trigger synchronous release while clamps and restricts spontaneous fusion of vesicles on the other hand (S\u00fcdhof, 2013). It is worthy of note that synaptotagmin can specifically interact with neurexins (Hata et al., 1993). Second, deletion of neurexins impairs the strength of the MNTB\u2013LSO synapse, which may indirectly interfere with synaptic elimination process and therefore lead to an increase in synaptic density. Third, the more abundant glycinergic synapses may arise from the developmental compensation of synapse formation by other sources of glycinergic neurons (Jalabi et al., 2013). Strong reduction in the strength of the MNTB\u2013LSO synapse caused by selective deletion of neurexins may shift the winner of synaptic competition toward other parallel but much weaker glycinergic inputs in normal animals.\n\n## Methods\n\n### Mouse breeding and virus injection\n\nAll animal experiments were approved by the Institutional Animal Care and Use Committee at Bioland Laboratory, Guangzhou National Laboratory, Guangzhou, China (IACUC2020062; GZLAB-AUCP202403A07). Transgenic Nrxn123 cTKO mice (gift from Sudhof\u2019s laboratory) (Chen et al., 2017) of either sex at ages P13\u201314 were used for all experiments. Mice were housed at room temperature on a 12-hr light\u2013dark cycle (7:00 to 19:00, light) with food and water freely available.\n\nTo delete neurexins in MNTB neurons, we injected P0 mice with AAV2/9-hSyn-EGFP-P2A-Cre-WPRE-hGH-Poly (Cat: PT-0156, BrainVTA Co, China). Mice were anesthetized on ice and immediately transferred to a stereotaxic apparatus (RWD Life Technology, China). Injection was achieved by connecting a glass pipette with tip diameter 20\u201330 \u03bcm to Nanoject III programmable nanoliter injector (Drummond Scientific Company, USA). To enhance virus infection efficiency, we decreased the dosage per injection while increasing the frequency of injections. Additionally, we ensured the pipette remained immobilized for 20\u201330 s to guarantee virus absorption at injection sites. As a result of this strategy, we estimated that the vast majority of MNTB neurons were inoculated by AAVs. Bilateral injections were performed at the following coordinates: AP from the most rostral point: 5.61 mm, ML: \u00b10.27 mm, DV: 3.58 mm. For optogenetics experiments, we injected 200 nl (AAV2/9-hSyn-EGFP-P2A-Cre-WPRE-hGH-PolyA and AAV2/9-EF1\u03b1-DIO-hChR2(H134R)-mCherry-WPRE-hGH-Poly, 1:1, Cat: PT-0002, BrainVTA Co, China) or 100 nl of AAV2/9-hSyn-hChR2(H123R)-EYFP-WPRE-hGH-PolyA (Cat: PT-1317, BrainVTA Co, China) into each side MNTB.\n\n### Acute slice preparation for electrophysiology\n\nCoronal brain slices containing both the MNTB and LSO were prepared similarly as described previously. In brief, mice of P13\u201314 were decapitated; brains were rapidly isolated and fixed on the cutting platform a vibratome (VT1200s; Leica, USA), which was immersed in oxygenated cold ACSF containing (in mM): 119 NaCl, 26 NaHCO3, 10 glucose, 1.25 NaH2PO4, 2.5 KCl, 0.05 CaCl2, 3 MgCl2, 2 Na-pyruvate, and 0.5 ascorbic acid, pH 7.4. Transverse slices of 250 \u03bcm were sectioned and transferred into a beaker with bubbled ACSF containing (in mM): 119 NaCl, 26 NaHCO3, 10 glucose, 1.25 NaH2PO4, 2.5 KCl, 2 CaCl2, 1 MgCl2, 2 Na-pyruvate, and 0.5 ascorbic acid, pH 7.4. Slices were recovered at 35\u00b0C for 30 min, and stored at room temperature (21\u201323\u00b0C) for experiments.\n\n### Whole-cell voltage-clamped recordings\n\nWhole-cell voltage-clamped recordings were made from visually identified LSO neurons in acute brain slices using an Axopatch 700B amplifier (Molecular Devices, USA) and pClamp 11 software (Molecular Devices, USA). Patch pipettes were pulled from borosilicate glass capillaries using a two-stage vertical puller (PC-100, Narashige, Japan). Pipette resistance was 4\u20136 M\u03a9 when filled with an internal solution containing (in mM): 145 K-gluconate, 6 KCl, 10 HEPES(4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid), 3 Na2-phosphocreatine, 4 Mg-ATP, 0.3 Na2-GTP, 0.2 EGTA, 2 Qx-314; pH 7.2 with KOH. With the extracellular [Cl\u2212] of 133 mM and a temperature of 22\u00b0C, the equilibrium potential of the Cl\u2212 was approximately \u221278.8 mV. In voltage-clamp configuration, IPSCs were recorded by holding cells at 10 mV in ACSF containing CNQX (20 \u03bcM), D-AP5 (50 \u03bcM), to block AMPA, NMDA receptors, respectively. For some experiments, 2 \u03bcM strychnine, a potent glycine receptor antagonist, was added to ACSF to verify that IPSCs recorded at LSO neurons are glycinergic. Membrane potentials were not corrected for liquid junction potential. Electrical fiber stimulation was performed using a concentric bipolar electrode (CBAEB75, FHC Inc, USA) positioned medially to the LSO and MNTB. Short pulses (0.1 ms) were delivered via an isolated stimulator (Model 2100; A-M Systems, USA). For optogenetics, a light simulation of 5 ms was delivered by LED (pE-300 white, CoolLED, UK).\n\n### Whole-cell current-clamp recordings\n\nWhole-cell current-clamped recordings were performed similarly as voltage-clamped recordings, except that the internal solution did not contain Qx-314. APs at MNTB neurons were recorded by holding the membrane potential at approximately \u221270 mV. For optogenetics, a light simulation of 5 ms was delivered by LED (pE-300 white, CoolLED, UK).\n\n### RNAscope FISH and immunohistochemistry\n\nMice were anesthetized and perfused at speed of 1 ml/min with 1\u00d7 phosphate-buffered saline for 10 min followed by 4% paraformaldehyde (PFA) for 10 min. Brains were removed and stored in 4% PFA overnight at 4\u00b0C. After going through a 10%, 20%, and 30% sucrose gradient for cryo-protection, the tissue was embedded in Tissue-Tek OCT compound (Cat: 14020108926, Leica) and rapidly frozen on dry ice. Transverse sections at 16 \u03bcm were cut at \u221220\u00b0C using a cryostat (CM3050-S, Leica) and mounted directly on Superfrost Plus slides (Cat: PRO-04, Matsunami Platinum Pro). FISH and immunohistochemistry were performed using the RNAscope multiplex platform (Multiplex Reagent Kit, Cat: 323100; Co-detection ancillary Kit, Cat: 323180, Advanced Cell Diagnostics) following the manufacturer\u2019s instructions. RNA probes for Nrxn1, Nrxn2, and Nrxn3 (Cat: 461511-C3, 533531-C2, and 505431, respectively, Advanced Cell Diagnostics) and primary antibody against VGluT1 (guinea pig, polyclonal, 1:500, Millipore) were used. Secondary antibodies were Alexa Fluor conjugates (1:400; Thermo Fisher). Samples were mounted with a Vectashield hard-set antifade mounting medium (Cat: H-1500, Vector Laboratories). Images were acquired using Zeiss LSM800 confocal microscope with a \u00d763 oil-immersion objective (1.4 numerical aperture) or OLYMPUS IXplore SpinSR confocal microscope with a \u00d760 oil-immersion objective (1.5 numerical aperture). Image analysis was performed using Zeiss 2.6, cellSens Dimension 3.2, and ImageJ.\n\n### Pharmacological manipulations\n\nTo estimate the calcium sensitivity of neurotransmitter release, we perfused the slice with ACSF containing low Ca2+ (0.2 mM) and continuously recorded eIPSC. EC50 of Ca2+ sensitivity was determined using a sigmoidal function (Y = Min + (Max \u2212 Min)/(1 + 10\u02c6((LogEC50 \u2212 X) \u2217 n))), where Y represents IPSC amplitude, X denotes the calculated extracellular Ca2+ concentration, Min refers to the minimal amplitude, and Max represents the maximum amplitude. To estimate the spatial relationship between voltage-gated Ca2+ channels and synaptic vesicles, we perfused the slice with ACSF containing 20 \u00b5M EGTA-AM for 25\u201330 min while continuously recording eIPSC. The blocking effect of EGTA on eIPSCs was evaluated by comparing eIPSCs before and after EGTA treatment.\n\n### Statistical analysis\n\nData were analyzed in the IgorPro (Version 8) and GraphPad Prism 9 software. Summary of data was displayed as mean \u00b1 standard error of the mean. Statistical analysis was performed using Student\u2019s t-test, two-way analysis of variance, and Mann\u2013Whitney U-test. Significance of difference was accepted at p < 0.05.\n",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew J King, University of Oxford United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.94315.3.sa0](https://doi.org/10.7554/eLife.94315.3.sa0)\n\nThis study provides important insights into the role of neurexins as regulators of synaptic strength and timing at the glycinergic synapse between neurons of the medial nucleus of the trapezoid body and the lateral superior olive, key components of the auditory brainstem circuit involved in computing sound source location from differences in the intensity of sounds arriving at the two ears. Through an elegant combination of genetic manipulation, fluorescence in-situ hybridization, ex vivo slice electrophysiology, pharmacology and optogenetics, the authors provide compelling and rigorous evidence to support their claims. While further work is needed to reveal the mechanistic basis by which neurexins influence glycinergic neurotransmission, this work will be of interest to both auditory and synaptic neuroscientists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94315.3.sa1](https://doi.org/10.7554/eLife.94315.3.sa1)\n\nJiang et al. demonstrated that ablating Neurexins results in alterations to glycinergic transmission and its calcium sensitivity, utilizing a robust experimental system. Specifically, the authors employed rAAV-Cre-EGFP injection around the MNTB in Nrxn1/2/3 triple conditional mice at P0, measuring Glycine receptor-dependent IPSCs from postsynaptic LSO neurons at P13-14. Notably, the authors presented a clear reduction of 60% and 30% in the amplitudes of opto- and electric stimulation-evoked IPSCs, respectively. Additionally, they observed changes in kinetics, alterations in PPR, and sensitivity to lower calcium and the calcium chelator, EGTA, indicating solid evidence for changes in presynaptic properties of glycinergic transmission.\n\nFurthermore, the authors uncovered an unexpected increase in sIPSC frequency without altering amplitude. Although the precise mechanism remains unknown, the authors discussed this complex phenotype by considering various possibilities, including the potential scenario where the augmentation in synapses may result from Nrxn deletion rather than being a causal effect.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94315.3.sa2](https://doi.org/10.7554/eLife.94315.3.sa2)\n\nSummary:\n\nIn this manuscript, Jiang et al., explore the role of neurexins at glycinergic MNTB-LSO synapses. The authors utilize elegant and compelling ex vivo slice electrophysiology to assess how the genetic conditional deletion of Nrxns1-3 impacts inhibitory glycinergic synaptic transmission and found that TKO of neurexins reduced electrically and optically evoked IPSC amplitudes, slowed optically evoked IPSC kinetics and reduced presynaptic release probability. The authors use classic approaches including reduced [Ca2+] in ACSF and EGTA chelation to propose that changes in these evoked properties are likely driven by the loss of calcium channel coupling. Intriguingly, while evoked transmission was impaired, the authors reported that spontaneous IPSC frequency was increased, due to an increase in the number of synapses in LSO. Overall, this manuscript provides important insight into the role of neurexins at the glycinergic MNTB-LSO synapse and further emphasizes the need for continued study of both the non-redundant and redundant roles of neurexins.\n\nThe authors have addressed all of my previous concerns.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94315.3.sa3](https://doi.org/10.7554/eLife.94315.3.sa3)\n\nSummary:\n\nThe authors investigate the hypothesis that neurexins serve a crucial role as regulators of the synaptic strength and timing at the glycinergic synapse between neurons of the medial nucleus of the trapezoid body (MNTB) and the lateral superior olivary complex (LSO). It is worth mentioning that LSO neurons are an integration station of the auditory brainstem circuit displaying high reliability and temporal precision. These features are necessary for computing interaural cues to derive sound source location from comparing the intensities of sounds arriving at the two ears. In this context, the authors' findings build up according to the hypothesis first by displaying that neurexins were expressed in the MNTB at varying levels. They followed this up with deletion of all neurexins in the MNTB through the employment of a triple knock-out (TKO). Using electrophysiological recordings in acute brainstem slices of these TKO mice, they gathered solid evidence for the role of neurexins in synaptic transmission at this glycinergic synapse primarily by ensuring tight coupling of Ca2+ channels and vesicular release sites. Additionally, the authors uncovered a connection between the deletion of neurexins and a higher number of glycinergic synapses of TKO mice, for which they provided evidence in the form of immunostainings and related it to electrophysiological data on spontaneous release. Consequently, this investigation expands our knowledge on the molecular regulation of synaptic transmission at glycinergic synapses, as well as on the auditory processing at the level of the brainstem.\n\nStrengths:\n\nThe authors demonstrate substantial results in support of the hypothesis of a critical role of neurexins for regulating glycinergic transmission in the LSO using various techniques. They provide evidence for the expression of neurexins in the MNTB and consecutively successfully generate and characterize the neurexin TKO. For their study on LSO IPSCs the authors transduced MNTB neurons by co-injection of virus carrying Cre and ChR2 and subsequently optogenetically evoke release of glycine. As a result, they observed a significant reduction in amplitude and significantly slower rise and decay times of the IPSCs of the TKO in comparison with control mice in which MNTB neurons were only transduced with ChR2. Furthermore, they observed an increased paired pulse ratio (PPR) of LSO IPSCs in the TKO mice, indicating lower release probability. Elaborating on the hypothesis that neurexins are essential for the coupling of synaptic vesicles to Ca2+ channels, the authors show lowered Ca2+ sensitivity in the TKO mice. Additionally, they reveal convincing evidence for the connection between the increased frequency of spontaneous IPSC and the higher number of glycinergic synapses of the LSO in the TKO mice, revealed by immunolabeling against the glycinergic presynaptic markers GlyT2 or VGAT.\n\nWeaknesses:\n\nA concern is on novelty as this work on the effects of pan-neurexin deletion in a glycinergic synapse is quite consistent with the authors prior work on glutamatergic synapses (Luo et al., 2020).\n",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "484e5de5-637c-4a0b-a81c-f42eea2e347d",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C1",
+      "claim": "Neurexins are evolutionarily conserved synaptic adhesion molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurexins are evolutionarily conserved synaptic adhesion molecules and their genetic mutations are highly associated with autism and schizophrenia (Gomez et al., 2021; S\u00fcdhof, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gomez et al., 2021 and S\u00fcdhof, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "3dadf802-1840-44fc-8e92-d8f817bd4d06",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C2",
+      "claim": "Genetic mutations in neurexins are highly associated with autism and schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurexins are evolutionarily conserved synaptic adhesion molecules and their genetic mutations are highly associated with autism and schizophrenia (Gomez et al., 2021; S\u00fcdhof, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gomez et al., 2021 and S\u00fcdhof, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "134fd649-c3bc-4351-ba40-e354a34c0121",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C3",
+      "claim": "In vertebrates, neurexins are encoded by three genes: Nrxn1, Nrxn2, and Nrxn3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vertebrates, neurexins are encoded by three genes Nrxn1, Nrxn2, and Nrxn3, each of which contains distinct promoters for expressing longer \u03b1- and shorter \u03b2-neurexins (Ullrich et al., 1995; Ushkaryov et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ullrich et al., 1995 and Ushkaryov et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "bc195335-a7d5-4813-a60d-e3821bd8f3af",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C4",
+      "claim": "Each neurexin gene contains distinct promoters for expressing longer \u03b1- and shorter \u03b2-neurexins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vertebrates, neurexins are encoded by three genes Nrxn1, Nrxn2, and Nrxn3, each of which contains distinct promoters for expressing longer \u03b1- and shorter \u03b2-neurexins (Ullrich et al., 1995; Ushkaryov et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ullrich et al., 1995 and Ushkaryov et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d1dbca95-8f4f-4175-9086-dc2775555a32",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C5",
+      "claim": "Both \u03b1- and \u03b2-neurexins are critical and non-redundant in regulating the formation and function of synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Both \u03b1- and \u03b2-neurexins are critical and non-redundant in regulating the formation and function of synapses (Anderson et al., 2015; Missler et al., 2003; S\u00fcdhof, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Anderson et al., 2015; Missler et al., 2003; and S\u00fcdhof, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "0b982cb6-c191-46f7-b7b7-d0562c428921",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C6",
+      "claim": "Triple knockout of \u03b1-neurexins causes a significant decrease in the density of GABAergic but not glutamatergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Triple knockout (KO) of \u03b1-neurexins causes a significant decrease in the density of GABAergic but not glutamatergic synapses while producing a strong reduction in both inhibitory and excitatory synaptic transmission (Missler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Missler et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "af2bff56-d779-498a-b5d9-4d93aef16b3c",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C7",
+      "claim": "Triple knockout of \u03b1-neurexins produces a strong reduction in both inhibitory and excitatory synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Triple knockout (KO) of \u03b1-neurexins causes a significant decrease in the density of GABAergic but not glutamatergic synapses while producing a strong reduction in both inhibitory and excitatory synaptic transmission (Missler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Missler et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "56815088-5564-4219-9c6e-0c90004a2d23",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C8",
+      "claim": "Triple knockout of \u03b2-neurexins reveals a significant phenotype only in glutamatergic synapses, but not in GABAergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Triple KO of \u03b2-neurexins reveals a significant phenotype only in glutamatergic synapses, but not in GABAergic synapses (Anderson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Anderson et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "67576f06-20fd-4145-bb9d-f46cea493f4c",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C9",
+      "claim": "Deletion of all neurexins (including Nrxn1/2/3 \u03b1- and \u03b2-neurexins) leads to profound but strikingly distinct phenotypes in different synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of all neurexins, including Nrxn1/2/3 \u03b1- and \u03b2-neurexins, leads to profound but strikingly distinct phenotypes in different synapses, which further points to the diverse actions of neurexins in specific neurons (Chen et al., 2017; Luo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chen et al., 2017 and Luo et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d5ccbc8e-01d7-4c3c-9a9b-dd97b03afd38",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C10",
+      "claim": "The expression profiles of various neurexins differ remarkably in excitatory neurons versus inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, transcriptomic analysis has revealed that the expression profiles of various neurexins differ remarkably in excitatory neurons versus inhibitory neurons even among distinct subtypes of interneurons (F\u00f6ldy et al., 2016; Fuccillo et al., 2015; Lukacsovich et al., 2019; Uchigashima et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to F\u00f6ldy et al., 2016; Fuccillo et al., 2015; Lukacsovich et al., 2019; and Uchigashima et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "817d91a7-fbba-4ede-bbfd-66bb27b0b291",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C11",
+      "claim": "Glycinergic synapses mediate essential inhibition in the spinal cord, brainstem and retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the multifaceted roles of neurexins widely observed in various glutamatergic and GABAergic synapses (Boxer and Aoto, 2022; Chen et al., 2017; Luo et al., 2021; S\u00fcdhof, 2017), however, it remains largely unknown how neurexins may regulate the functional properties of the glycinergic synapses, which mediate essential inhibition in the spinal cord, brainstem and retina (Assareh et al., 2023; Brill et al., 2020; Chang et al., 2023; Feng et al., 1998; Foster et al., 2015; Gomeza et al., 2003a; Gomeza et al., 2003b; Zeilhofer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Assareh et al., 2023; Brill et al., 2020; Chang et al., 2023; Feng et al., 1998; Foster et al., 2015; Gomeza et al., 2003a; Gomeza et al., 2003b; Zeilhofer et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "954f6b9f-6b70-47ca-ad62-a855782e09fc",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C12",
+      "claim": "In the mature mammalian auditory brainstem, principal neurons in the MNTB project glycinergic synaptic inputs to the LSO.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature mammalian auditory brainstem, it is well characterized that the principal neurons in the medial nucleus of the trapezoid body (MNTB) project glycinergic synaptic inputs to the lateral superior olive (LSO) (Fischer et al., 2019; Kotak et al., 1998; Nabekura et al., 2004; Sanes and Friauf, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fischer et al., 2019; Kotak et al., 1998; Nabekura et al., 2004; and Sanes and Friauf, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "22006386-d903-42fc-8087-ee34e7c10f96",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C13",
+      "claim": "MNTB-LSO glycinergic synapses are robust, precise, and extremely reliable even during high-frequency stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These synapses are robust, precise, and extremely reliable even during high-frequency stimulation (Kr\u00e4chan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kr\u00e4chan et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c824c674-7cfe-4426-a916-c263ce605350",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C14",
+      "claim": "MNTB-LSO glycinergic synapses are subject to extensive refinement during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong evidence has shown that the MNTB\u2013LSO glycinergic synapses are subject to extensive refinement during development, including transmitter type switch, the elaboration of dendrites and axonal arbors followed by synaptic pruning, to achieve exquisite control of fast inhibition (Brill et al., 2020; Kim and Kandler, 2003; Kotak et al., 1998; Nabekura et al., 2004; Sanes and Friauf, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brill et al., 2020; Kim and Kandler, 2003; Kotak et al., 1998; Nabekura et al., 2004; and Sanes and Friauf, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "9c619581-7ffb-4cb5-a5da-d1a2c4ffaa35",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C15",
+      "claim": "MNTB neurons in wild-type mice express Nrxn1, Nrxn2, and Nrxn3.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1, MNTB neurons in wild-type (WT) mice expressed Nrxn1, Nrxn2, and Nrxn3, although the expression level of each gene appeared to vary remarkably.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNAscope FISH data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "b08769dd-fcce-4b0b-9ea1-0f843fadb308",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C16",
+      "claim": "The expression level of each neurexin gene in MNTB neurons varies remarkably.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1, MNTB neurons in wild-type (WT) mice expressed Nrxn1, Nrxn2, and Nrxn3, although the expression level of each gene appeared to vary remarkably.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data in Figure 1b showing significant differences between Nrxn1, Nrxn2, and Nrxn3 expression levels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "8a466470-4328-4e9d-9375-db7a8d1fb73a",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C17",
+      "claim": "Stereotactic injection of AAV-Cre-EGFP into the MNTB at P0 enables deletion of all neurexins in MNTB neurons of Nrxn123 cTKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal specific deletion of all neurexins was achieved by stereotactic injection of AAV-Cre-EGFP into the MNTB at P0 (TKO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental description and confirmed by FISH data in Figure 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "0a0f4311-8f5c-401f-bfce-75f3b45996e3",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C18",
+      "claim": "AAV-Cre expression dramatically blocks the expression of all neurexins in MNTB neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "FISH data further demonstrated that the recombinase dramatically blocked the expression of all neurexins, as compared to the normal expression of neurexins when EGFP was expressed (Figure 1f, compared to Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data comparing AAV-EGFP and AAV-Cre-EGFP conditions in Figure 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "474f8701-e836-4c7f-a1b0-1a8f90c7ca89",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C19",
+      "claim": "Pan-neurexin deletion significantly impairs both the amplitude and the kinetics of glycinergic synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, pan-neurexin deletion significantly impaired both the amplitude and the kinetics of the glycinergic synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiological data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "3386ab4a-5cfd-4a8f-8a75-61c0b58fa9d3",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C20",
+      "claim": "Deletion of all neurexins leads to a significantly higher number of glycinergic synapses innervating the LSO.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, deletion of all neurexins led to a significantly higher number of glycinergic synapses innervating the LSO and higher frequency of spontaneous neurotransmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunostaining data in Figure 3e-h showing increased GlyT2 and VGAT density",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "1cf657e1-b382-4e1f-9adf-b5b6e7c86ae1",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C21",
+      "claim": "Deletion of all neurexins leads to higher frequency of spontaneous neurotransmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, deletion of all neurexins led to a significantly higher number of glycinergic synapses innervating the LSO and higher frequency of spontaneous neurotransmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sIPSC frequency data in Figure 3a-b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "8dbb7276-8446-4358-8294-0e4579eb6f79",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C22",
+      "claim": "Application of low extracellular Ca2+ blocks glycinergic neurotransmission of both control and neurexin-deficient synapses, but with a significant difference in effectiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of low extracellular Ca2+ blocked the glycinergic neurotransmission of both control and neurexin-deficient synapses, but with a significant difference in its effectiveness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by low Ca2+ perfusion experiments shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "3df99d97-9d41-46a0-999c-0b6c07024b04",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C23",
+      "claim": "Treatment with EGTA causes a much stronger inhibition of neurotransmission in neurexin-deficient synapses compared to control synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, treatment with EGTA(ethylene glycol tetraacetic acid), a high-affinity Ca2+ chelator with slow binding kinetics, caused a much stronger inhibition of neurotransmission in neurexin-deficient synapses, suggesting a significant disruption of the tight coupling between voltage-gated Ca2+ channels and synaptic vesicles in the MNTB\u2013LSO glycinergic synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EGTA-AM treatment experiments shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e47b80ea-5521-4902-b591-3a67e0e10f18",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C24",
+      "claim": "Neurexin deletion disrupts the tight coupling between voltage-gated Ca2+ channels and synaptic vesicles in MNTB-LSO glycinergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, treatment with EGTA(ethylene glycol tetraacetic acid), a high-affinity Ca2+ chelator with slow binding kinetics, caused a much stronger inhibition of neurotransmission in neurexin-deficient synapses, suggesting a significant disruption of the tight coupling between voltage-gated Ca2+ channels and synaptic vesicles in the MNTB\u2013LSO glycinergic synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential EGTA sensitivity between control and TKO synapses shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "7db4472e-68ae-4297-9cf3-32bd0346962d",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C25",
+      "claim": "Optogenetic stimulation of MNTB neurons robustly triggers large IPSCs recorded from LSO neurons in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice, optogenetic stimulation of MNTB neurons robustly triggered large IPSCs recorded from LSO neurons (Figure 2a, b), which can be fully blocked by strychnine (Figure 2\u2014figure supplement 1d) and are thus purely glycinergic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by optogenetic stimulation data in Figure 2a-b and strychnine blocking in Figure 2\u2014figure supplement 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "8ee7af3a-f5a2-4296-9b9d-90dfe5513954",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C26",
+      "claim": "Optogenetically-evoked IPSCs in LSO neurons can be fully blocked by strychnine.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice, optogenetic stimulation of MNTB neurons robustly triggered large IPSCs recorded from LSO neurons (Figure 2a, b), which can be fully blocked by strychnine (Figure 2\u2014figure supplement 1d) and are thus purely glycinergic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by strychnine blocking experiments in Figure 2\u2014figure supplement 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "976eb49d-691f-4eed-9aee-9da5c521e421",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C27",
+      "claim": "Optogenetically-evoked IPSCs in LSO neurons are purely glycinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice, optogenetic stimulation of MNTB neurons robustly triggered large IPSCs recorded from LSO neurons (Figure 2a, b), which can be fully blocked by strychnine (Figure 2\u2014figure supplement 1d) and are thus purely glycinergic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from complete strychnine blockade shown in Figure 2\u2014figure supplement 1d",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "524a7411-3689-42b1-a195-bc4733574a6e",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C28",
+      "claim": "In TKO mice, optogenetic stimulation induces significantly smaller IPSCs compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In TKO mice with co-injection of Cre and ChR2, however, optogenetic stimulation-induced significantly smaller IPSCs (Figure 2a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by optogenetic stimulation data comparing control and TKO in Figure 2a-b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "7c82a510-5a6c-4092-8926-10cf409c6276",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C29",
+      "claim": "Pan-neurexin deletion causes approximately 60% reduction in IPSC peak amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, we observed ~60% reduction in the peak amplitude (Figure 2b), similar to previous findings at other different synapses (Chen et al., 2017; Luo et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data in Figure 2b and comparison to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "cc73b7f3-5758-43f9-983d-dadeb080b11a",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C30",
+      "claim": "The kinetics of IPSCs are dramatically reduced in TKO mice as indicated by significantly slower rise time and decay time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the kinetics of IPSCs were dramatically reduced as indicated by significantly slower rise time and decay time in TKO mice as compared to the control (Figure 2c, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kinetic analysis data in Figure 2c-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "4b761851-640e-404a-8e0e-2391a53babe9",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C31",
+      "claim": "Neurexins are essential for the intact function of the glycinergic synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data strongly suggest that neurexins are essential for the intact function of the glycinergic synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple functional deficits observed in TKO mice shown in Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "790c10a9-fd3c-4104-adea-76bebc584b6f",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C32",
+      "claim": "Afferent-evoked IPSCs at LSO neurons are predominantly glycinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our optogenetic approach, afferent-evoked large IPSCs were predominantly glycinergic as they can also be fully blocked by strychnine (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by strychnine blocking experiments in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "5706bb96-d5f4-43b9-bc91-35a6b9d88067",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C33",
+      "claim": "A modest but significant decrease in synaptic strength was observed in Nrxn123 TKO mice compared to control mice using afferent fiber stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "A modest but significant decrease in synaptic strength was observed in Nrxn123 TKO mice as compared to control mice (Figure 2e, f), confirming the important role of neurexins in the glycinergic synapses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by afferent fiber stimulation data in Figure 2e-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c43911c2-79b9-453a-a39e-085b978da930",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C34",
+      "claim": "The modest effect of pan-neurexin deletion on synaptic strength is likely due to incomplete AAV transfection in MNTB neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The modest effect of the pan-neurexin deletion on synaptic strength in the MNTB\u2013LSO synapses is likely due to the incomplete AAV transfection in MNTN neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on experimental observations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "beedb469-ff04-4418-be5f-08e78d5215ac",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C35",
+      "claim": "Approximately 80% of neurons in the MNTB expressed GFP and were infected by AAV-Cre.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, it was estimated that approximately ~80% neurons in the MNTB expressed GFP and thus were infected by AAV-Cre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on experimental estimation from virus injection experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "859f3f62-dbf6-49e3-a17e-ba31b0eb0d61",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C36",
+      "claim": "IPSCs evoked by two consecutive stimuli at various intervals show paired-pulse depression in both control and TKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2i, IPSCs evoked by two consecutive stimuli at various intervals showed a paired-pulse depression in both control and TKO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by paired-pulse stimulation data in Figure 2i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e2752f81-51be-4033-8e35-933b25676cc8",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C37",
+      "claim": "Paired-pulse ratios are significantly increased by deletion of neurexins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the PPRs were significantly increased by deletion of neurexins (Figure 2j, Figure 2\u2014figure supplement 2), suggesting that neurexins are required for maintaining a high release probability of the glycinergic nerve terminal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PPR analysis in Figure 2j and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e9c0ab8b-a71b-4eaa-bf35-30ff6df8a059",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C38",
+      "claim": "Neurexins are required for maintaining a high release probability of the glycinergic nerve terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the PPRs were significantly increased by deletion of neurexins (Figure 2j, Figure 2\u2014figure supplement 2), suggesting that neurexins are required for maintaining a high release probability of the glycinergic nerve terminal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from increased PPR in TKO mice shown in Figure 2j",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e63de166-5c19-4370-b85f-d85fa7552d62",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C39",
+      "claim": "There is no significant difference in the amplitude and kinetics of sIPSCs between control and TKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the control, there was no significant difference in both the amplitude and kinetics of sIPSCs (Figure 3a\u2013d) in TKO mice, indicating the normal content of synaptic vesicle as well as the normal function of postsynaptic glycine receptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sIPSC analysis in Figure 3a-d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "34340efd-6b67-4b54-99b6-c7c26ba8495e",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C40",
+      "claim": "Normal sIPSC amplitude and kinetics in TKO mice indicate normal content of synaptic vesicles and normal function of postsynaptic glycine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the control, there was no significant difference in both the amplitude and kinetics of sIPSCs (Figure 3a\u2013d) in TKO mice, indicating the normal content of synaptic vesicle as well as the normal function of postsynaptic glycine receptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from unchanged sIPSC properties shown in Figure 3a-d",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d534a600-e12b-4f01-974b-bee0b4e6bdf0",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C41",
+      "claim": "Deletion of all neurexins causes a small but significant increase in the frequency of sIPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, we found that deletion of all neurexins caused a small but significant increase in the frequency of sIPSCs (Figure 3a, b), which is opposite to previous reports of either no change or decrease in the miniature frequency at glutamatergic or GABAergic synapse (Chen et al., 2017; Luo et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sIPSC frequency data in Figure 3a-b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e31176e3-df27-4940-9079-0904069530a3",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C42",
+      "claim": "The increase in sIPSC frequency in TKO mice is opposite to previous reports at glutamatergic or GABAergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, we found that deletion of all neurexins caused a small but significant increase in the frequency of sIPSCs (Figure 3a, b), which is opposite to previous reports of either no change or decrease in the miniature frequency at glutamatergic or GABAergic synapse (Chen et al., 2017; Luo et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison to previous studies cited as Chen et al., 2017 and Luo et al., 2020",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "0c98d564-e555-4317-8093-d630a14d3b60",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C43",
+      "claim": "There is a significant increase in the density of GlyT2 staining at the LSO of TKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the increased frequency of sIPSCs, we found a significant increase in the density of both GlyT2 (Figure 3e, f) and VGAT (Figure 3g, h) staining, suggesting more abundant glycinergic terminals at the LSO of TKO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining quantification in Figure 3e-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d3edb389-82bf-4e5e-b8f2-7eaff5c25237",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C44",
+      "claim": "There is a significant increase in the density of VGAT staining at the LSO of TKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the increased frequency of sIPSCs, we found a significant increase in the density of both GlyT2 (Figure 3e, f) and VGAT (Figure 3g, h) staining, suggesting more abundant glycinergic terminals at the LSO of TKO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining quantification in Figure 3g-h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "4de53d89-8ded-43df-b6bc-522383a65e62",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C45",
+      "claim": "Increased GlyT2 and VGAT staining suggests more abundant glycinergic terminals at the LSO of TKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the increased frequency of sIPSCs, we found a significant increase in the density of both GlyT2 (Figure 3e, f) and VGAT (Figure 3g, h) staining, suggesting more abundant glycinergic terminals at the LSO of TKO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from increased synaptic marker density shown in Figure 3e-h",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "b6b07688-2dce-4b34-869f-8931dc416b17",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C46",
+      "claim": "Pan-neurexin deletion in MNTB neurons has increased baseline glycinergic neurotransmission, which is distinct from phenotypes observed in glutamatergic and GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that the pan-neurexin deletion in MNTB neurons has surprisingly increased the baseline glycinergic neurotransmission, which is distinct from the phenotypes observed in glutamatergic and GABAergic neurons (Chen et al., 2017; Luo et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sIPSC and immunostaining data in Figure 3, compared to previous studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "084c6ef5-4a94-4b28-9f5d-9d0d0187e24f",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C47",
+      "claim": "Perfusion of low Ca2+ ACSF gradually decreases the amplitude of IPSCs in both control and Nrxn123 TKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In both control and Nrxn123 TKO mice, the perfusion of low Ca2+ ACSF gradually decreased the amplitude of IPSCs (Figure 4a, c, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by low Ca2+ perfusion experiments in Figure 4a, c, and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d4e78452-48ad-47bc-bdbe-54788a2507e0",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C48",
+      "claim": "The reduction rate of IPSC amplitude during low Ca2+ perfusion is much faster in TKO mice than in control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the reduction rate was much faster in TKO mice such that IPSC amplitudes dropped more than 50% in TKO versus ~10% in control when extracellular [Ca2+] reached to approximately 1.5 mM (Figure 4b, d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time course data in Figure 4b, d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "9ea1182c-9b99-4c6e-b8ae-aadeadd01ac9",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C49",
+      "claim": "The extracellular [Ca2+] blocking 50% of IPSCs is 1.1 mM for TKO mice and 1.5 mM for control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular [Ca2+] blocking 50% of IPSCs were estimated as 1.1 and 1.5 mM, respectively, for control and TKO mice, which are significantly different (Figure 4e, f), suggesting that neurexins indeed are crucial for regulating calcium sensitivity of transmitter release at the glycinergic synapse.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EC50 analysis in Figure 4e-f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "742a250c-8991-40c5-960d-0a3b48732245",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C50",
+      "claim": "Neurexins are crucial for regulating calcium sensitivity of transmitter release at the glycinergic synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "The extracellular [Ca2+] blocking 50% of IPSCs were estimated as 1.1 and 1.5 mM, respectively, for control and TKO mice, which are significantly different (Figure 4e, f), suggesting that neurexins indeed are crucial for regulating calcium sensitivity of transmitter release at the glycinergic synapse.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from differential Ca2+ sensitivity shown in Figure 4e-f",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "aa6905be-b46b-4d2b-8024-65bfd09449bf",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C51",
+      "claim": "Spatial distance between Ca2+ channels and synaptic vesicles is one of the critical factors affecting calcium sensitivity of release.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the critical factors affecting the calcium sensitivity of release is the spatial distance between Ca2+ channels and synaptic vesicles (Eggermann et al., 2011; Luo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Eggermann et al., 2011 and Luo et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d9b0fb06-0747-486b-9250-cc06da4f7d8a",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C52",
+      "claim": "Neurexins promote tight coupling of Ca2+ channels with synaptic vesicles at the glutamatergic calyx of Held synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, neurexins have been shown to promote tight coupling of Ca2+ channels with synaptic vesicle at the glutamatergic calyx of Held synapse (Luo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Luo et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c9abc7c6-ede8-40c4-b04d-77dd0f3a908d",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C53",
+      "claim": "The MNTB-LSO glycinergic synapse is similar to the calyx of Held synapse in being fast, robust, and precise.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the MNTB\u2013LSO glycinergic synapse is similar on multiple aspects of the functional characteristics, being fast, robust, and precise, to the calyx of Held synapse, we tested whether neurexins are also required for the tight coupling of Ca2+ channels with synaptic vesicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about these synapses",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "156d1dd4-8997-4ab4-b5dc-e2dbbfb06fd5",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C54",
+      "claim": "EGTA-AM treatment slightly blocks IPSCs at control synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 5, EGTA-AM treatment slightly blocked IPSCs at control synapses, suggesting the relative ineffectiveness of EGTA in interfering neurotransmitter release (Figure 5a, b, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EGTA-AM treatment data in Figure 5a-b and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "5d75352d-1f5c-487b-9c59-24cb9ae0bb59",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C55",
+      "claim": "EGTA-AM treatment remarkably impairs IPSCs at neurexin-deficient synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at the neurexin-deficient synapses, EGTA-AM treatment remarkably impaired IPSCs (Figure 5c, d, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EGTA-AM treatment data in Figure 5c-d and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "97837205-1f9d-4ce8-ae24-78ff84488eab",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C56",
+      "claim": "The blocking effect of EGTA at neurexin-deficient synapses (53.2 \u00b1 5.4%) is much stronger than at control synapses (15.6 \u00b1 4.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the blocking effects of EGTA at neurexin-deficient synapses (53.2 \u00b1 5.4%) were much stronger than the effect at control synapses (15.6 \u00b1 4.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative comparison of EGTA effects shown in Figure 5g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "182b620d-24c9-4457-8f0f-818722891502",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C57",
+      "claim": "Neurexins are key synaptic organizers for tightly clustering voltage-gated Ca2+ channels with synaptic vesicles at the glycinergic synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, consistent with previous studies at the calyx of Held synapse (Luo et al., 2020), our data provide further support that neurexins are key synaptic organizers for tightly clustering voltage-gated Ca2+ channels with synaptic vesicles at the glycinergic synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential EGTA sensitivity shown in Figure 5, consistent with previous studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "6fee6817-28b6-4c46-bb10-75555a0ab6b0",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C58",
+      "claim": "Neurexins are central presynaptic organizers in all major types of fast chemical synapses including glutamatergic, GABAergic, and glycinergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings in general strongly corroborate the idea that neurexins are central presynaptic organizers in all major types of fast chemical synapses including glutamatergic, GABAergic, and glycinergic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from current findings on glycinergic synapses combined with previous knowledge on glutamatergic and GABAergic synapses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "7bf11870-10f7-4503-9186-cad3aa3af728",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C59",
+      "claim": "Multiple neurexin genes, isoforms, and splicing sites normally co-express in individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with many studies in glutamatergic and GABAergic neurons, which converge to show that multiple genes, isoforms, and splicing sites of neurexins normally co-express in individual neurons and the expression profiles are highly cell-type specific and brain region specific (Fuccillo et al., 2015; Schreiner et al., 2014; Treutlein et al., 2014; Uchigashima et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fuccillo et al., 2015; Schreiner et al., 2014; Treutlein et al., 2014; and Uchigashima et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e30f577d-933c-4ae2-a71a-1df04079a973",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C60",
+      "claim": "Neurexin expression profiles are highly cell-type specific and brain region specific.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with many studies in glutamatergic and GABAergic neurons, which converge to show that multiple genes, isoforms, and splicing sites of neurexins normally co-express in individual neurons and the expression profiles are highly cell-type specific and brain region specific (Fuccillo et al., 2015; Schreiner et al., 2014; Treutlein et al., 2014; Uchigashima et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fuccillo et al., 2015; Schreiner et al., 2014; Treutlein et al., 2014; and Uchigashima et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c7869141-5333-4825-a7d7-c87a79adb963",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C61",
+      "claim": "Distinct neurexins may interact separately and/or redundantly with diverse signaling molecules to form specific molecular codes for shaping neuronal connectivity and functional properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct neurexins may interact separately and/or redundantly with diverse signaling molecules to form specific molecular codes for shaping neuronal connectivity and functional properties (Aoto et al., 2015; Aoto et al., 2013; Dai et al., 2019; Lin et al., 2023; Lloyd et al., 2023; S\u00fcdhof, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aoto et al., 2015; Aoto et al., 2013; Dai et al., 2019; Lin et al., 2023; Lloyd et al., 2023; and S\u00fcdhof, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "fd3900fe-de33-4ad2-8db7-6ba0bc35c5cb",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C62",
+      "claim": "Nrxn3 is selectively required for intact synaptic function in olfactory bulb GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, compelling evidence indicates that Nrxn3, arguably the best studied neurexin isoform, is selectively required for intact synaptic function in the olfactory bulb GABAergic neurons (Aoto et al., 2015; Trotter et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aoto et al., 2015 and Trotter et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "52e1e79f-4481-402a-a1e2-cdad48555912",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C63",
+      "claim": "Deletion of all neurexins not only weakens glycinergic synaptic connectivity but also impairs the temporal precision of synaptic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "First, deletion of all neurexins not only weakens the glycinergic synaptic connectivity but also impairs the temporal precision of synaptic inhibition, exactly as it does at the glutamatergic calyx of Held synapse (Luo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figure 2 and comparison to previous study",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "87dbe8dd-500e-452d-820a-dd256a15c5c3",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C64",
+      "claim": "Neurexins execute their role at the glycinergic synapse mainly by tightly organizing Ca2+ channels within the release sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, neurexins execute their role at the glycinergic synapse mainly by tightly organizing Ca2+ channels within the release sites, again exactly as it does at the calyx of Held synapse (Luo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Figures 4-5 and comparison to previous study",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "3cbda7e2-74b6-48aa-9f5c-2de2ce894cb2",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C65",
+      "claim": "Nanodomain coupling between Ca2+ channels and synaptic vesicles has been found in many fast central synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanodomain coupling between Ca2+ channels and synaptic vesicles has been found in many fast central synapses and is functionally crucial for increasing the efficacy and speed of neurotransmission (Eggermann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Eggermann et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "38d58943-e1b5-42b3-aaec-e67e083e6214",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C66",
+      "claim": "Nanodomain coupling between Ca2+ channels and synaptic vesicles is functionally crucial for increasing the efficacy and speed of neurotransmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanodomain coupling between Ca2+ channels and synaptic vesicles has been found in many fast central synapses and is functionally crucial for increasing the efficacy and speed of neurotransmission (Eggermann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Eggermann et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "bdf39a0e-3098-4596-ace2-5a956e6322f0",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C67",
+      "claim": "Early studies of TKOs of \u03b1- or \u03b2-neurexins lead to the general conclusion that neurexins are not essential for the formation/maintenance of excitatory and inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Early studies of TKOs of \u03b1- or \u03b2-neurexins lead to general conclusion that neurexins are not essential for the formation/maintenance of excitatory and inhibitory synapses (Anderson et al., 2015; Missler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Anderson et al., 2015 and Missler et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c789d6b1-bc3e-4145-bfb2-4aaf4cdef236",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C68",
+      "claim": "Deletion of all \u03b1- and \u03b2-neurexins has no impact on the formation/maintenance of glutamatergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, deletion of all \u03b1- and \u03b2-neurexins has no impact on the formation/maintenance of glutamatergic synapse (Luo et al., 2020) and GABAergic synapse made by somatostatin-positive interneurons (Chen et al., 2017), but produces partial loss (~30%) of GABAergic synapse made by parvalbumin-positive interneurons (Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Luo et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "1258cc34-501a-4a0c-9187-1b6c1e5b24ec",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C69",
+      "claim": "Deletion of all \u03b1- and \u03b2-neurexins has no impact on the formation/maintenance of GABAergic synapses made by somatostatin-positive interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, deletion of all \u03b1- and \u03b2-neurexins has no impact on the formation/maintenance of glutamatergic synapse (Luo et al., 2020) and GABAergic synapse made by somatostatin-positive interneurons (Chen et al., 2017), but produces partial loss (~30%) of GABAergic synapse made by parvalbumin-positive interneurons (Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "7ee4cff5-b26c-4cd8-8f0a-ef54e59c369f",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C70",
+      "claim": "Deletion of all \u03b1- and \u03b2-neurexins produces partial loss (~30%) of GABAergic synapses made by parvalbumin-positive interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, deletion of all \u03b1- and \u03b2-neurexins has no impact on the formation/maintenance of glutamatergic synapse (Luo et al., 2020) and GABAergic synapse made by somatostatin-positive interneurons (Chen et al., 2017), but produces partial loss (~30%) of GABAergic synapse made by parvalbumin-positive interneurons (Chen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "cc57a6bc-995e-4ce4-8d5f-5e91cfd755c1",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C71",
+      "claim": "Neurexins may play dual roles at the glycinergic synapse: orchestrating synchronized synaptic transmission while restricting formation of weaker synapses or spontaneous transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the most parsimonious explanation would be that neurexins play contradictory dual roles at the glycinergic synapse: orchestrate the synchronized synaptic transmission by promoting tight coupling of Ca2+ channels with synaptic vesicles at the presynaptic active zone; restrict the formation of weaker synapse or spontaneous transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed phenotypes",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "2a9825ba-93c5-464f-840a-2d8317072a13",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C72",
+      "claim": "Synaptotagmin 1 acts as a calcium sensor to trigger synchronous release while clamping and restricting spontaneous fusion of vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Another well-established example of synaptic protein with dual functions in synaptic transmission is synaptotagmin 1, which acts as a calcium sensor to trigger synchronous release while clamps and restricts spontaneous fusion of vesicles on the other hand (S\u00fcdhof, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to S\u00fcdhof, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "4941a8dd-d5e1-4c74-b7ab-be17269d005b",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C73",
+      "claim": "Synaptotagmin can specifically interact with neurexins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worthy of note that synaptotagmin can specifically interact with neurexins (Hata et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hata et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "335f3e42-74a6-47a1-ab95-59421abd0cef",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C74",
+      "claim": "Deletion of neurexins may indirectly interfere with synaptic elimination process, leading to an increase in synaptic density.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, deletion of neurexins impairs the strength of the MNTB\u2013LSO synapse, which may indirectly interfere with synaptic elimination process and therefore lead to an increase in synaptic density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for increased synaptic density",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d31e0b94-cca7-454c-a6b9-fd7bc74f8144",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C75",
+      "claim": "More abundant glycinergic synapses in TKO mice may arise from developmental compensation by other sources of glycinergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the more abundant glycinergic synapses may arise from the developmental compensation of synapse formation by other sources of glycinergic neurons (Jalabi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation with reference to Jalabi et al., 2013",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "0c777b69-4dda-421d-b0f1-df3da9528915",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C76",
+      "claim": "Strong reduction in MNTB-LSO synapse strength may shift synaptic competition toward other parallel but weaker glycinergic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong reduction in the strength of the MNTB\u2013LSO synapse caused by selective deletion of neurexins may shift the winner of synaptic competition toward other parallel but much weaker glycinergic inputs in normal animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for increased synaptic density",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "533b769f-492e-4023-a894-2eb5da35394f",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C77",
+      "claim": "All animal experiments were approved by the Institutional Animal Care and Use Committee at Bioland Laboratory, Guangzhou National Laboratory, Guangzhou, China.",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were approved by the Institutional Animal Care and Use Committee at Bioland Laboratory, Guangzhou National Laboratory, Guangzhou, China (IACUC2020062; GZLAB-AUCP202403A07).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical approval",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "659151c2-9b6b-4d82-a1be-64c5c10262e0",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C78",
+      "claim": "Transgenic Nrxn123 cTKO mice of either sex at ages P13-14 were used for all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic Nrxn123 cTKO mice (gift from Sudhof's laboratory) (Chen et al., 2017) of either sex at ages P13\u201314 were used for all experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental animals",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "2af64102-549b-4ee1-9625-96ccabec8088",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C79",
+      "claim": "Nrxn123 cTKO mice were a gift from Sudhof's laboratory.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic Nrxn123 cTKO mice (gift from Sudhof's laboratory) (Chen et al., 2017) of either sex at ages P13\u201314 were used for all experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Acknowledgment of mouse line source with citation to Chen et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "ef8d410e-2bde-45b2-b688-aebd0819142b",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C80",
+      "claim": "Virus injection in MNTB was performed at P0 and acute slices were analyzed at P13-14.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus injection was performed at P0 and acute slices derived from these mice were analyzed at P13\u201314.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental timeline",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "ea87759a-57cc-4d45-8a0c-b321ab421dc5",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C81",
+      "claim": "Reliable action potential firing can be induced in MNTB neurons by single or repetitive high-frequency light stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reliable AP firing can be induced by single or repetitive high-frequency light stimulation (Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by optogenetic stimulation data in Figure 2\u2014figure supplement 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "fe36bf79-05ea-469c-9f5e-9ba07c33d4ba",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C82",
+      "claim": "LSO neurons receive excitatory glutamatergic inputs and inhibitory GABAergic/glycinergic inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Because LSO neurons receive excitatory glutamatergic inputs and inhibitory GABAergic/glycinergic inputs, we used a pharmacological approach to isolate the glycinergic inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about LSO neuron connectivity",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "54939c75-eddd-4e43-8d00-bdb86556df9c",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C83",
+      "claim": "Blocking glutamatergic inputs with CNQX and AP5 allows selective recording of inhibitory postsynaptic currents from LSO neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By blocking glutamatergic inputs with CNQX and AP5, we were able to selectively record inhibitory postsynaptic currents (IPSCs) from LSO neurons, which can be completely inhibited by strychnine, a potent glycine receptor inhibitor (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pharmacological isolation experiments shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c0dd39e7-9711-4d52-8784-f1c3bcfbdfbc",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C84",
+      "claim": "The synaptic dysfunctions in neurexin-deficient glycinergic synapses primarily result from an impaired Ca2+ sensitivity of release.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptic dysfunctions primarily resulted from an impaired Ca2+ sensitivity of release and a loosened coupling between voltage-gated Ca2+ channels and synaptic vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Ca2+ sensitivity and EGTA experiments shown in Figures 4-5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "f7490a06-e32d-4a85-8af5-6216e683a968",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C85",
+      "claim": "The synaptic dysfunctions in neurexin-deficient glycinergic synapses primarily result from a loosened coupling between voltage-gated Ca2+ channels and synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptic dysfunctions primarily resulted from an impaired Ca2+ sensitivity of release and a loosened coupling between voltage-gated Ca2+ channels and synaptic vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from EGTA sensitivity experiments shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "df89017b-ffc9-4023-943f-256719a0a28f",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C86",
+      "claim": "Neurexins are essential in controlling the strength and temporal precision of the glycinergic synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our current findings demonstrate that neurexins are essential in controlling the strength and temporal precision of the glycinergic synapse, which therefore corroborates the role of neurexins as key presynaptic organizers in all major types of fast chemical synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple functional deficits shown in Figures 2-5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "a107f658-c251-4062-9dc1-1a8261e48306",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "claim_id": "C87",
+      "claim": "The findings corroborate the role of neurexins as key presynaptic organizers in all major types of fast chemical synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our current findings demonstrate that neurexins are essential in controlling the strength and temporal precision of the glycinergic synapse, which therefore corroborates the role of neurexins as key presynaptic organizers in all major types of fast chemical synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from current findings on glycinergic synapses combined with previous knowledge on other synapse types",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "46c5905a-a1ad-4d59-a711-7464c9cf4832",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MNTB neurons express all three neurexin genes (Nrxn1, Nrxn2, Nrxn3) at varying levels in wild-type mice, and stereotactic injection of AAV-Cre-EGFP at P0 successfully deletes all neurexins in MNTB neurons of Nrxn123 cTKO mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are well-supported by RNAscope FISH data in Figure 1 showing differential expression of neurexin genes in wild-type MNTB neurons and successful knockout following AAV-Cre injection. The quantification shows statistically significant differences in expression levels between neurexin isoforms and between control and Cre-expressing conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pan-neurexin deletion in MNTB neurons significantly impairs glycinergic synaptic transmission at LSO neurons, reducing IPSC amplitude by ~60% and slowing kinetics (rise time and decay time), as demonstrated by optogenetic stimulation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C31 are strongly supported by optogenetic stimulation data in Figure 2a-d showing statistically significant reductions in IPSC amplitude and slower kinetics in TKO mice. The strychnine blockade experiments confirm the glycinergic nature of the currents. Statistical tests show p<0.05 for all key comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "6d634b6d-3381-4027-b3a7-4afbec4d55b7",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Afferent fiber stimulation confirms a modest but significant decrease in glycinergic synaptic strength in Nrxn123 TKO mice, likely due to incomplete AAV transfection (~80% infection efficiency).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by electrical stimulation data in Figure 2e-f showing statistically significant reduction in IPSC amplitude. The authors acknowledge incomplete viral transfection as a limitation, which is reasonable given the technical challenges of neonatal stereotactic injections. However, C34 is speculative regarding the cause of modest effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "7009a235-8563-4fb5-bce0-d8460f2cfd35",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Paired-pulse ratio analysis reveals that neurexin deletion significantly increases PPR at glycinergic synapses, indicating reduced release probability at neurexin-deficient terminals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 are supported by paired-pulse stimulation data in Figure 2i-j showing paired-pulse depression in both groups but significantly increased PPR in TKO mice (p<0.0001, two-way ANOVA). The inference that this reflects reduced release probability (C38) is standard interpretation in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "018fb814-06a5-4688-bd3c-a96e74884727",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Spontaneous IPSC analysis reveals that neurexin deletion causes a small but significant increase in sIPSC frequency without affecting amplitude or kinetics, a phenotype opposite to that observed at glutamatergic and GABAergic synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 are supported by sIPSC recordings in Figure 3a-d showing unchanged amplitude and kinetics but increased frequency (p=0.015). The comparison to previous studies (C42) is appropriately cited. This unexpected finding is a key novel observation of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "cdd6b53b-6c0b-457f-b395-c73fb024b487",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neurexin deletion leads to increased glycinergic synapse density at LSO neurons, as evidenced by increased GlyT2 and VGAT immunostaining and elevated sIPSC frequency, representing a distinct phenotype from other synapse types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 and C43-C46 are well-supported by converging evidence from sIPSC frequency data (Figure 3a-b) and immunostaining quantification (Figure 3e-h) showing statistically significant increases in synaptic markers. The inference of increased synapse number (C45) is reasonable given the dual evidence, though direct synaptic counts would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "084b74cf-287e-4cf8-9bab-803d3036a64a",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Low extracellular Ca2+ perfusion experiments reveal that neurexin-deficient synapses have significantly increased calcium sensitivity, with EC50 values of 1.1 mM (TKO) versus 1.5 mM (control), indicating neurexins regulate calcium sensitivity of transmitter release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by low Ca2+ perfusion experiments in Figure 4 showing differential reduction rates and statistically significant differences in EC50 values (p=0.0139). However, there is a potential error: C49 states EC50 is 1.1 mM for TKO and 1.5 mM for control, but lower EC50 indicates higher sensitivity, which seems contradictory to the claim of impaired function. The data interpretation needs clarification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EGTA-AM treatment causes much stronger inhibition of neurotransmission in neurexin-deficient synapses (53.2\u00b15.4%) compared to control synapses (15.6\u00b14.3%), indicating that neurexins are essential for tight coupling between voltage-gated Ca2+ channels and synaptic vesicles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C54-C57 are strongly supported by EGTA-AM experiments in Figure 5 showing statistically significant differential effects (p=0.0001). The inference about disrupted Ca2+ channel-vesicle coupling (C24, C57) is well-established in the field and consistent with previous studies at the calyx of Held synapse.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "ab563cd0-571c-43d7-877b-5f3f198b4d22",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The mechanism by which neurexins regulate glycinergic synapses parallels their function at glutamatergic calyx of Held synapses, involving tight spatial organization of Ca2+ channels with synaptic vesicles in nanodomain coupling arrangements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 and C63-C66 are supported by appropriate citations to prior work and the current experimental data. The comparison to calyx of Held synapse (C52, C53, C63, C64) is well-justified given the functional similarities between these synapses and consistent findings across both systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c31fcccf-ca3e-4402-9e2f-ca822474d873",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose three speculative explanations for the unexpected increase in glycinergic synapse density: (1) neurexins may have dual roles in promoting synchronized transmission while restricting spontaneous transmission, (2) impaired synapse strength may interfere with synaptic elimination, or (3) developmental compensation from other glycinergic sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C76 are explicitly speculative explanations for the unexpected phenotype. While the authors appropriately acknowledge these as hypotheses and provide relevant citations (e.g., synaptotagmin dual function, C72-C73), none of these mechanisms are directly tested. These remain plausible but unvalidated interpretations requiring future experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "7b75b649-15ed-421b-95b9-1736bb33bb3b",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study demonstrates that neurexins are essential for controlling strength and temporal precision of glycinergic synapses, corroborating their role as key presynaptic organizers across all major types of fast chemical synapses (glutamatergic, GABAergic, and glycinergic).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 and C58 represent the main conclusions, which are well-supported by the convergent evidence from multiple experimental approaches (optogenetics, electrical stimulation, Ca2+ sensitivity, EGTA experiments). The extension to all synapse types (C58, C87) is justified by combining current findings with extensive prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e31b7ff6-5495-410b-a046-0f3492eff496",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establish that neurexins are conserved synaptic adhesion molecules associated with neuropsychiatric disorders, encoded by three genes with distinct isoforms, showing cell-type specific expression and diverse functions at glutamatergic and GABAergic synapses, while glycinergic synapses mediate essential inhibition in brainstem circuits like MNTB-LSO.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 are background/context claims supported by appropriate citations to established literature. These provide the scientific foundation for the current study and are not novel findings. All citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "afc006d5-3480-4863-af2f-de9411bef696",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion claims contextualize findings within prior literature, noting that neurexin expression is cell-type specific, different isoforms may have distinct roles, and previous knockout studies showed variable effects on synapse formation/maintenance depending on neuron type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 and C67-C70 are discussion points appropriately supported by citations to prior literature. These contextualize the current findings but do not represent new experimental results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "56d20221-7059-48ca-84a1-bcac5cf35fdb",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methods claims describe experimental procedures including ethical approval, use of Nrxn123 cTKO mice at P13-14, viral injection at P0, optogenetic validation, and pharmacological isolation of glycinergic currents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 are methodological descriptions supported by the Methods section and supplementary figures. These are adequately documented, though some details (e.g., exact viral titers, injection success rates) could be more precisely quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "16ad3039-be7c-482c-9c01-9c9e3b2dc582",
+      "content_id": "91fa7d35-91ec-4fc0-924b-922b9601d1f1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The abstract claims that synaptic dysfunctions in neurexin-deficient glycinergic synapses result from impaired Ca2+ sensitivity and loosened Ca2+ channel-vesicle coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 accurately summarize the main mechanistic findings supported by Figures 4-5. These are appropriate summary statements of the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "b39d8e86-4db2-49bf-98b4-62c8027a1b77",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "MNTB neurons in wild-type mice express all three neurexin genes (Nrxn1, Nrxn2, and Nrxn3), with expression levels varying remarkably between the genes as shown by RNAscope FISH data in Figure 1.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers acknowledge the expression data without critique. Reviewer 3 explicitly states 'the authors demonstrate substantial results' and notes they 'provide evidence for the expression of neurexins in the MNTB.' The editor describes the combination of techniques as 'elegant' and providing 'compelling and rigorous evidence.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "bd7a9fb8-47e1-43ce-ba61-3a22cdb93acb",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Stereotactic injection of AAV-Cre-EGFP into the MNTB at P0 successfully deletes all neurexins in MNTB neurons of Nrxn123 cTKO mice, as confirmed by FISH data showing dramatic blockade of neurexin expression compared to AAV-EGFP controls.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the genetic manipulation approach without objection. Reviewer 3 states the authors 'consecutively successfully generate and characterize the neurexin TKO.' Reviewer 1 notes the authors 'employed rAAV-Cre-EGFP injection around the MNTB in Nrxn1/2/3 triple conditional mice at P0' as part of their 'robust experimental system.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "b2519629-7e96-47c5-96bf-bc69731cde79",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Pan-neurexin deletion significantly impairs glycinergic synaptic transmission at MNTB-LSO synapses, causing ~60% reduction in optogenetically-evoked IPSC amplitude, slower kinetics (increased rise and decay times), and modest reduction in electrically-evoked responses, demonstrating that neurexins are essential for intact glycinergic synapse function and temporal precision.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm these findings. Reviewer 1 states the authors 'presented a clear reduction of 60% and 30% in the amplitudes of opto- and electric stimulation-evoked IPSCs, respectively' with 'changes in kinetics.' Reviewer 2 confirms 'TKO of neurexins reduced electrically and optically evoked IPSC amplitudes, slowed optically evoked IPSC kinetics.' Reviewer 3 notes 'significant reduction in amplitude and significantly slower rise and decay times' as substantial results. The editor describes the evidence as 'compelling and rigorous.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "00e858d4-c0dc-46e9-8157-09cfeffd7254",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Optogenetically-evoked and afferent-evoked IPSCs in LSO neurons are purely glycinergic, as demonstrated by complete blockade with strychnine, a glycine receptor antagonist.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this characterization without challenge. The pharmacological validation is treated as methodologically sound, with no reviewer questioning the glycinergic nature of the recorded currents. This is consistent with the reviewers' overall assessment of the experimental approach as 'elegant' and 'robust.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "29455cf4-edc3-4496-a4f4-5f63a50261cf",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Paired-pulse ratios are significantly increased in neurexin TKO mice compared to controls, indicating that neurexins are required for maintaining high release probability at glycinergic nerve terminals.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding. Reviewer 1 notes 'alterations in PPR' as solid evidence for presynaptic changes. Reviewer 2 states the authors 'reduced presynaptic release probability.' Reviewer 3 confirms 'increased paired pulse ratio (PPR) of LSO IPSCs in the TKO mice, indicating lower release probability' as substantial evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "dd6861aa-ca36-479f-b069-f38ed8403223",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Deletion of all neurexins causes a small but significant increase in spontaneous IPSC frequency without altering amplitude or kinetics, accompanied by increased density of glycinergic synaptic markers (GlyT2 and VGAT), suggesting more abundant glycinergic terminals at the LSO\u2014a phenotype opposite to that observed at glutamatergic or GABAergic synapses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers acknowledge this unexpected finding. Reviewer 1 states 'the authors uncovered an unexpected increase in sIPSC frequency without altering amplitude' and notes 'the precise mechanism remains unknown' but accepts the data. Reviewer 2 confirms 'spontaneous IPSC frequency was increased, due to an increase in the number of synapses in LSO.' Reviewer 3 provides 'convincing evidence for the connection between the increased frequency of spontaneous IPSC and the higher number of glycinergic synapses' via immunolabeling. The editor acknowledges the work provides 'important insights' despite mechanistic questions remaining.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "57c0516d-1076-459c-b30a-105da3f6cd8e",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Neurexin-deficient synapses show altered calcium sensitivity of neurotransmitter release, with faster reduction in IPSC amplitude during low Ca2+ perfusion and significantly different EC50 values (1.1 mM for TKO vs 1.5 mM for control), indicating neurexins are crucial for regulating calcium sensitivity at glycinergic synapses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support this finding. Reviewer 1 notes 'sensitivity to lower calcium' as solid evidence for presynaptic changes. Reviewer 2 states the authors 'use classic approaches including reduced [Ca2+] in ACSF' to demonstrate changes. Reviewer 3 confirms the authors 'show lowered Ca2+ sensitivity in the TKO mice' as part of their hypothesis elaboration. All reviewers treat this as convincing evidence for the calcium-related mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "64a32c73-e006-418c-a84c-5cb2959a57e3",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "EGTA treatment causes much stronger inhibition of neurotransmission in neurexin-deficient synapses (53.2%) compared to control synapses (15.6%), indicating that neurexin deletion disrupts the tight coupling between voltage-gated Ca2+ channels and synaptic vesicles at glycinergic synapses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this mechanistic finding. Reviewer 1 states the authors observed 'sensitivity to...the calcium chelator, EGTA, indicating solid evidence for changes in presynaptic properties.' Reviewer 2 notes the authors 'use classic approaches including...EGTA chelation to propose that changes in these evoked properties are likely driven by the loss of calcium channel coupling.' Reviewer 3 confirms this as 'solid evidence for the role of neurexins in synaptic transmission at this glycinergic synapse primarily by ensuring tight coupling of Ca2+ channels and vesicular release sites.' The editor notes 'further work is needed to reveal the mechanistic basis' but accepts the current evidence as compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "ee7a141e-4566-43b5-a573-12f6ce34f735",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The findings demonstrate that neurexins are essential for controlling strength and temporal precision of glycinergic synapses, corroborating their role as central presynaptic organizers in all major types of fast chemical synapses (glutamatergic, GABAergic, and glycinergic).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this broad conclusion. Reviewer 2 states 'this manuscript provides important insight into the role of neurexins at the glycinergic MNTB-LSO synapse and further emphasizes the need for continued study of both the non-redundant and redundant roles of neurexins.' Reviewer 3 notes 'this investigation expands our knowledge on the molecular regulation of synaptic transmission at glycinergic synapses.' The editor confirms the study 'provides important insights into the role of neurexins as regulators of synaptic strength and timing at the glycinergic synapse.' However, Reviewer 3 raises a concern about novelty, noting 'this work on the effects of pan-neurexin deletion in a glycinergic synapse is quite consistent with the authors prior work on glutamatergic synapses (Luo et al., 2020).'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e6771da4-36a4-4b6f-98d2-c43fb7f3a893",
+      "content_id": "4a5ecbeb-4ac5-4014-a42f-a71508b082e7",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors propose several speculative explanations for the increased synaptic density in TKO mice, including dual roles of neurexins, interference with synaptic elimination, developmental compensation from other glycinergic sources, or shifted synaptic competition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge these are speculative explanations for the unexpected phenotype. Reviewer 1 explicitly states 'the precise mechanism remains unknown' and notes 'the authors discussed this complex phenotype by considering various possibilities.' The editor notes 'further work is needed to reveal the mechanistic basis.' These explanations are treated as reasonable hypotheses rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9c619581-7ffb-4cb5-a5da-d1a2c4ffaa35",
+      "result_id": "46c5905a-a1ad-4d59-a711-7464c9cf4832"
+    },
+    {
+      "claim_id": "b08769dd-fcce-4b0b-9ea1-0f843fadb308",
+      "result_id": "46c5905a-a1ad-4d59-a711-7464c9cf4832"
+    },
+    {
+      "claim_id": "8a466470-4328-4e9d-9375-db7a8d1fb73a",
+      "result_id": "46c5905a-a1ad-4d59-a711-7464c9cf4832"
+    },
+    {
+      "claim_id": "0a0f4311-8f5c-401f-bfce-75f3b45996e3",
+      "result_id": "46c5905a-a1ad-4d59-a711-7464c9cf4832"
+    },
+    {
+      "claim_id": "474f8701-e836-4c7f-a1b0-1a8f90c7ca89",
+      "result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0"
+    },
+    {
+      "claim_id": "7db4472e-68ae-4297-9cf3-32bd0346962d",
+      "result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0"
+    },
+    {
+      "claim_id": "8ee7af3a-f5a2-4296-9b9d-90dfe5513954",
+      "result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0"
+    },
+    {
+      "claim_id": "976eb49d-691f-4eed-9aee-9da5c521e421",
+      "result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0"
+    },
+    {
+      "claim_id": "524a7411-3689-42b1-a195-bc4733574a6e",
+      "result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0"
+    },
+    {
+      "claim_id": "7c82a510-5a6c-4092-8926-10cf409c6276",
+      "result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0"
+    },
+    {
+      "claim_id": "cc73b7f3-5758-43f9-983d-dadeb080b11a",
+      "result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0"
+    },
+    {
+      "claim_id": "4b761851-640e-404a-8e0e-2391a53babe9",
+      "result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0"
+    },
+    {
+      "claim_id": "790c10a9-fd3c-4104-adea-76bebc584b6f",
+      "result_id": "6d634b6d-3381-4027-b3a7-4afbec4d55b7"
+    },
+    {
+      "claim_id": "5706bb96-d5f4-43b9-bc91-35a6b9d88067",
+      "result_id": "6d634b6d-3381-4027-b3a7-4afbec4d55b7"
+    },
+    {
+      "claim_id": "c43911c2-79b9-453a-a39e-085b978da930",
+      "result_id": "6d634b6d-3381-4027-b3a7-4afbec4d55b7"
+    },
+    {
+      "claim_id": "beedb469-ff04-4418-be5f-08e78d5215ac",
+      "result_id": "6d634b6d-3381-4027-b3a7-4afbec4d55b7"
+    },
+    {
+      "claim_id": "859f3f62-dbf6-49e3-a17e-ba31b0eb0d61",
+      "result_id": "7009a235-8563-4fb5-bce0-d8460f2cfd35"
+    },
+    {
+      "claim_id": "e2752f81-51be-4033-8e35-933b25676cc8",
+      "result_id": "7009a235-8563-4fb5-bce0-d8460f2cfd35"
+    },
+    {
+      "claim_id": "e9c0ab8b-a71b-4eaa-bf35-30ff6df8a059",
+      "result_id": "7009a235-8563-4fb5-bce0-d8460f2cfd35"
+    },
+    {
+      "claim_id": "e63de166-5c19-4370-b85f-d85fa7552d62",
+      "result_id": "018fb814-06a5-4688-bd3c-a96e74884727"
+    },
+    {
+      "claim_id": "34340efd-6b67-4b54-99b6-c7c26ba8495e",
+      "result_id": "018fb814-06a5-4688-bd3c-a96e74884727"
+    },
+    {
+      "claim_id": "d534a600-e12b-4f01-974b-bee0b4e6bdf0",
+      "result_id": "018fb814-06a5-4688-bd3c-a96e74884727"
+    },
+    {
+      "claim_id": "e31176e3-df27-4940-9079-0904069530a3",
+      "result_id": "018fb814-06a5-4688-bd3c-a96e74884727"
+    },
+    {
+      "claim_id": "3386ab4a-5cfd-4a8f-8a75-61c0b58fa9d3",
+      "result_id": "cdd6b53b-6c0b-457f-b395-c73fb024b487"
+    },
+    {
+      "claim_id": "1cf657e1-b382-4e1f-9adf-b5b6e7c86ae1",
+      "result_id": "cdd6b53b-6c0b-457f-b395-c73fb024b487"
+    },
+    {
+      "claim_id": "0c98d564-e555-4317-8093-d630a14d3b60",
+      "result_id": "cdd6b53b-6c0b-457f-b395-c73fb024b487"
+    },
+    {
+      "claim_id": "d3edb389-82bf-4e5e-b8f2-7eaff5c25237",
+      "result_id": "cdd6b53b-6c0b-457f-b395-c73fb024b487"
+    },
+    {
+      "claim_id": "4de53d89-8ded-43df-b6bc-522383a65e62",
+      "result_id": "cdd6b53b-6c0b-457f-b395-c73fb024b487"
+    },
+    {
+      "claim_id": "b6b07688-2dce-4b34-869f-8931dc416b17",
+      "result_id": "cdd6b53b-6c0b-457f-b395-c73fb024b487"
+    },
+    {
+      "claim_id": "084c6ef5-4a94-4b28-9f5d-9d0d0187e24f",
+      "result_id": "084b74cf-287e-4cf8-9bab-803d3036a64a"
+    },
+    {
+      "claim_id": "d4e78452-48ad-47bc-bdbe-54788a2507e0",
+      "result_id": "084b74cf-287e-4cf8-9bab-803d3036a64a"
+    },
+    {
+      "claim_id": "9ea1182c-9b99-4c6e-b8ae-aadeadd01ac9",
+      "result_id": "084b74cf-287e-4cf8-9bab-803d3036a64a"
+    },
+    {
+      "claim_id": "742a250c-8991-40c5-960d-0a3b48732245",
+      "result_id": "084b74cf-287e-4cf8-9bab-803d3036a64a"
+    },
+    {
+      "claim_id": "8dbb7276-8446-4358-8294-0e4579eb6f79",
+      "result_id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17"
+    },
+    {
+      "claim_id": "3df99d97-9d41-46a0-999c-0b6c07024b04",
+      "result_id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17"
+    },
+    {
+      "claim_id": "e47b80ea-5521-4902-b591-3a67e0e10f18",
+      "result_id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17"
+    },
+    {
+      "claim_id": "156d1dd4-8997-4ab4-b5dc-e2dbbfb06fd5",
+      "result_id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17"
+    },
+    {
+      "claim_id": "5d75352d-1f5c-487b-9c59-24cb9ae0bb59",
+      "result_id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17"
+    },
+    {
+      "claim_id": "97837205-1f9d-4ce8-ae24-78ff84488eab",
+      "result_id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17"
+    },
+    {
+      "claim_id": "182b620d-24c9-4457-8f0f-818722891502",
+      "result_id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17"
+    },
+    {
+      "claim_id": "aa6905be-b46b-4d2b-8024-65bfd09449bf",
+      "result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22"
+    },
+    {
+      "claim_id": "d9b0fb06-0747-486b-9250-cc06da4f7d8a",
+      "result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22"
+    },
+    {
+      "claim_id": "c9abc7c6-ede8-40c4-b04d-77dd0f3a908d",
+      "result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22"
+    },
+    {
+      "claim_id": "52e1e79f-4481-402a-a1e2-cdad48555912",
+      "result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22"
+    },
+    {
+      "claim_id": "87dbe8dd-500e-452d-820a-dd256a15c5c3",
+      "result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22"
+    },
+    {
+      "claim_id": "3cbda7e2-74b6-48aa-9f5c-2de2ce894cb2",
+      "result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22"
+    },
+    {
+      "claim_id": "38d58943-e1b5-42b3-aaec-e67e083e6214",
+      "result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22"
+    },
+    {
+      "claim_id": "cc57a6bc-995e-4ce4-8d5f-5e91cfd755c1",
+      "result_id": "c31fcccf-ca3e-4402-9e2f-ca822474d873"
+    },
+    {
+      "claim_id": "2a9825ba-93c5-464f-840a-2d8317072a13",
+      "result_id": "c31fcccf-ca3e-4402-9e2f-ca822474d873"
+    },
+    {
+      "claim_id": "4941a8dd-d5e1-4c74-b7ab-be17269d005b",
+      "result_id": "c31fcccf-ca3e-4402-9e2f-ca822474d873"
+    },
+    {
+      "claim_id": "335f3e42-74a6-47a1-ab95-59421abd0cef",
+      "result_id": "c31fcccf-ca3e-4402-9e2f-ca822474d873"
+    },
+    {
+      "claim_id": "d31e0b94-cca7-454c-a6b9-fd7bc74f8144",
+      "result_id": "c31fcccf-ca3e-4402-9e2f-ca822474d873"
+    },
+    {
+      "claim_id": "0c777b69-4dda-421d-b0f1-df3da9528915",
+      "result_id": "c31fcccf-ca3e-4402-9e2f-ca822474d873"
+    },
+    {
+      "claim_id": "df89017b-ffc9-4023-943f-256719a0a28f",
+      "result_id": "7b75b649-15ed-421b-95b9-1736bb33bb3b"
+    },
+    {
+      "claim_id": "a107f658-c251-4062-9dc1-1a8261e48306",
+      "result_id": "7b75b649-15ed-421b-95b9-1736bb33bb3b"
+    },
+    {
+      "claim_id": "6fee6817-28b6-4c46-bb10-75555a0ab6b0",
+      "result_id": "7b75b649-15ed-421b-95b9-1736bb33bb3b"
+    },
+    {
+      "claim_id": "484e5de5-637c-4a0b-a81c-f42eea2e347d",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "3dadf802-1840-44fc-8e92-d8f817bd4d06",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "134fd649-c3bc-4351-ba40-e354a34c0121",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "bc195335-a7d5-4813-a60d-e3821bd8f3af",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "d1dbca95-8f4f-4175-9086-dc2775555a32",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "0b982cb6-c191-46f7-b7b7-d0562c428921",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "af2bff56-d779-498a-b5d9-4d93aef16b3c",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "56815088-5564-4219-9c6e-0c90004a2d23",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "67576f06-20fd-4145-bb9d-f46cea493f4c",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "d5ccbc8e-01d7-4c3c-9a9b-dd97b03afd38",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "817d91a7-fbba-4ede-bbfd-66bb27b0b291",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "954f6b9f-6b70-47ca-ad62-a855782e09fc",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "22006386-d903-42fc-8087-ee34e7c10f96",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "c824c674-7cfe-4426-a916-c263ce605350",
+      "result_id": "e31b7ff6-5495-410b-a046-0f3492eff496"
+    },
+    {
+      "claim_id": "7bf11870-10f7-4503-9186-cad3aa3af728",
+      "result_id": "afc006d5-3480-4863-af2f-de9411bef696"
+    },
+    {
+      "claim_id": "e30f577d-933c-4ae2-a71a-1df04079a973",
+      "result_id": "afc006d5-3480-4863-af2f-de9411bef696"
+    },
+    {
+      "claim_id": "c7869141-5333-4825-a7d7-c87a79adb963",
+      "result_id": "afc006d5-3480-4863-af2f-de9411bef696"
+    },
+    {
+      "claim_id": "fd3900fe-de33-4ad2-8db7-6ba0bc35c5cb",
+      "result_id": "afc006d5-3480-4863-af2f-de9411bef696"
+    },
+    {
+      "claim_id": "bdf39a0e-3098-4596-ace2-5a956e6322f0",
+      "result_id": "afc006d5-3480-4863-af2f-de9411bef696"
+    },
+    {
+      "claim_id": "c789d6b1-bc3e-4145-bfb2-4aaf4cdef236",
+      "result_id": "afc006d5-3480-4863-af2f-de9411bef696"
+    },
+    {
+      "claim_id": "1258cc34-501a-4a0c-9187-1b6c1e5b24ec",
+      "result_id": "afc006d5-3480-4863-af2f-de9411bef696"
+    },
+    {
+      "claim_id": "7ee4cff5-b26c-4cd8-8f0a-ef54e59c369f",
+      "result_id": "afc006d5-3480-4863-af2f-de9411bef696"
+    },
+    {
+      "claim_id": "533b769f-492e-4023-a894-2eb5da35394f",
+      "result_id": "56d20221-7059-48ca-84a1-bcac5cf35fdb"
+    },
+    {
+      "claim_id": "659151c2-9b6b-4d82-a1be-64c5c10262e0",
+      "result_id": "56d20221-7059-48ca-84a1-bcac5cf35fdb"
+    },
+    {
+      "claim_id": "2af64102-549b-4ee1-9625-96ccabec8088",
+      "result_id": "56d20221-7059-48ca-84a1-bcac5cf35fdb"
+    },
+    {
+      "claim_id": "ef8d410e-2bde-45b2-b688-aebd0819142b",
+      "result_id": "56d20221-7059-48ca-84a1-bcac5cf35fdb"
+    },
+    {
+      "claim_id": "ea87759a-57cc-4d45-8a0c-b321ab421dc5",
+      "result_id": "56d20221-7059-48ca-84a1-bcac5cf35fdb"
+    },
+    {
+      "claim_id": "fe36bf79-05ea-469c-9f5e-9ba07c33d4ba",
+      "result_id": "56d20221-7059-48ca-84a1-bcac5cf35fdb"
+    },
+    {
+      "claim_id": "54939c75-eddd-4e43-8d00-bdb86556df9c",
+      "result_id": "56d20221-7059-48ca-84a1-bcac5cf35fdb"
+    },
+    {
+      "claim_id": "c0dd39e7-9711-4d52-8784-f1c3bcfbdfbc",
+      "result_id": "16ad3039-be7c-482c-9c01-9c9e3b2dc582"
+    },
+    {
+      "claim_id": "f7490a06-e32d-4a85-8af5-6216e683a968",
+      "result_id": "16ad3039-be7c-482c-9c01-9c9e3b2dc582"
+    },
+    {
+      "claim_id": "9c619581-7ffb-4cb5-a5da-d1a2c4ffaa35",
+      "result_id": "b39d8e86-4db2-49bf-98b4-62c8027a1b77"
+    },
+    {
+      "claim_id": "b08769dd-fcce-4b0b-9ea1-0f843fadb308",
+      "result_id": "b39d8e86-4db2-49bf-98b4-62c8027a1b77"
+    },
+    {
+      "claim_id": "8a466470-4328-4e9d-9375-db7a8d1fb73a",
+      "result_id": "bd7a9fb8-47e1-43ce-ba61-3a22cdb93acb"
+    },
+    {
+      "claim_id": "0a0f4311-8f5c-401f-bfce-75f3b45996e3",
+      "result_id": "bd7a9fb8-47e1-43ce-ba61-3a22cdb93acb"
+    },
+    {
+      "claim_id": "474f8701-e836-4c7f-a1b0-1a8f90c7ca89",
+      "result_id": "b2519629-7e96-47c5-96bf-bc69731cde79"
+    },
+    {
+      "claim_id": "524a7411-3689-42b1-a195-bc4733574a6e",
+      "result_id": "b2519629-7e96-47c5-96bf-bc69731cde79"
+    },
+    {
+      "claim_id": "7c82a510-5a6c-4092-8926-10cf409c6276",
+      "result_id": "b2519629-7e96-47c5-96bf-bc69731cde79"
+    },
+    {
+      "claim_id": "cc73b7f3-5758-43f9-983d-dadeb080b11a",
+      "result_id": "b2519629-7e96-47c5-96bf-bc69731cde79"
+    },
+    {
+      "claim_id": "4b761851-640e-404a-8e0e-2391a53babe9",
+      "result_id": "b2519629-7e96-47c5-96bf-bc69731cde79"
+    },
+    {
+      "claim_id": "5706bb96-d5f4-43b9-bc91-35a6b9d88067",
+      "result_id": "b2519629-7e96-47c5-96bf-bc69731cde79"
+    },
+    {
+      "claim_id": "52e1e79f-4481-402a-a1e2-cdad48555912",
+      "result_id": "b2519629-7e96-47c5-96bf-bc69731cde79"
+    },
+    {
+      "claim_id": "7db4472e-68ae-4297-9cf3-32bd0346962d",
+      "result_id": "00e858d4-c0dc-46e9-8157-09cfeffd7254"
+    },
+    {
+      "claim_id": "8ee7af3a-f5a2-4296-9b9d-90dfe5513954",
+      "result_id": "00e858d4-c0dc-46e9-8157-09cfeffd7254"
+    },
+    {
+      "claim_id": "976eb49d-691f-4eed-9aee-9da5c521e421",
+      "result_id": "00e858d4-c0dc-46e9-8157-09cfeffd7254"
+    },
+    {
+      "claim_id": "790c10a9-fd3c-4104-adea-76bebc584b6f",
+      "result_id": "00e858d4-c0dc-46e9-8157-09cfeffd7254"
+    },
+    {
+      "claim_id": "859f3f62-dbf6-49e3-a17e-ba31b0eb0d61",
+      "result_id": "29455cf4-edc3-4496-a4f4-5f63a50261cf"
+    },
+    {
+      "claim_id": "e2752f81-51be-4033-8e35-933b25676cc8",
+      "result_id": "29455cf4-edc3-4496-a4f4-5f63a50261cf"
+    },
+    {
+      "claim_id": "e9c0ab8b-a71b-4eaa-bf35-30ff6df8a059",
+      "result_id": "29455cf4-edc3-4496-a4f4-5f63a50261cf"
+    },
+    {
+      "claim_id": "e63de166-5c19-4370-b85f-d85fa7552d62",
+      "result_id": "dd6861aa-ca36-479f-b069-f38ed8403223"
+    },
+    {
+      "claim_id": "34340efd-6b67-4b54-99b6-c7c26ba8495e",
+      "result_id": "dd6861aa-ca36-479f-b069-f38ed8403223"
+    },
+    {
+      "claim_id": "d534a600-e12b-4f01-974b-bee0b4e6bdf0",
+      "result_id": "dd6861aa-ca36-479f-b069-f38ed8403223"
+    },
+    {
+      "claim_id": "e31176e3-df27-4940-9079-0904069530a3",
+      "result_id": "dd6861aa-ca36-479f-b069-f38ed8403223"
+    },
+    {
+      "claim_id": "0c98d564-e555-4317-8093-d630a14d3b60",
+      "result_id": "dd6861aa-ca36-479f-b069-f38ed8403223"
+    },
+    {
+      "claim_id": "d3edb389-82bf-4e5e-b8f2-7eaff5c25237",
+      "result_id": "dd6861aa-ca36-479f-b069-f38ed8403223"
+    },
+    {
+      "claim_id": "4de53d89-8ded-43df-b6bc-522383a65e62",
+      "result_id": "dd6861aa-ca36-479f-b069-f38ed8403223"
+    },
+    {
+      "claim_id": "b6b07688-2dce-4b34-869f-8931dc416b17",
+      "result_id": "dd6861aa-ca36-479f-b069-f38ed8403223"
+    },
+    {
+      "claim_id": "8dbb7276-8446-4358-8294-0e4579eb6f79",
+      "result_id": "57c0516d-1076-459c-b30a-105da3f6cd8e"
+    },
+    {
+      "claim_id": "084c6ef5-4a94-4b28-9f5d-9d0d0187e24f",
+      "result_id": "57c0516d-1076-459c-b30a-105da3f6cd8e"
+    },
+    {
+      "claim_id": "d4e78452-48ad-47bc-bdbe-54788a2507e0",
+      "result_id": "57c0516d-1076-459c-b30a-105da3f6cd8e"
+    },
+    {
+      "claim_id": "9ea1182c-9b99-4c6e-b8ae-aadeadd01ac9",
+      "result_id": "57c0516d-1076-459c-b30a-105da3f6cd8e"
+    },
+    {
+      "claim_id": "742a250c-8991-40c5-960d-0a3b48732245",
+      "result_id": "57c0516d-1076-459c-b30a-105da3f6cd8e"
+    },
+    {
+      "claim_id": "c0dd39e7-9711-4d52-8784-f1c3bcfbdfbc",
+      "result_id": "57c0516d-1076-459c-b30a-105da3f6cd8e"
+    },
+    {
+      "claim_id": "3df99d97-9d41-46a0-999c-0b6c07024b04",
+      "result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3"
+    },
+    {
+      "claim_id": "e47b80ea-5521-4902-b591-3a67e0e10f18",
+      "result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3"
+    },
+    {
+      "claim_id": "156d1dd4-8997-4ab4-b5dc-e2dbbfb06fd5",
+      "result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3"
+    },
+    {
+      "claim_id": "5d75352d-1f5c-487b-9c59-24cb9ae0bb59",
+      "result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3"
+    },
+    {
+      "claim_id": "97837205-1f9d-4ce8-ae24-78ff84488eab",
+      "result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3"
+    },
+    {
+      "claim_id": "182b620d-24c9-4457-8f0f-818722891502",
+      "result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3"
+    },
+    {
+      "claim_id": "87dbe8dd-500e-452d-820a-dd256a15c5c3",
+      "result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3"
+    },
+    {
+      "claim_id": "f7490a06-e32d-4a85-8af5-6216e683a968",
+      "result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3"
+    },
+    {
+      "claim_id": "6fee6817-28b6-4c46-bb10-75555a0ab6b0",
+      "result_id": "ee7a141e-4566-43b5-a573-12f6ce34f735"
+    },
+    {
+      "claim_id": "df89017b-ffc9-4023-943f-256719a0a28f",
+      "result_id": "ee7a141e-4566-43b5-a573-12f6ce34f735"
+    },
+    {
+      "claim_id": "a107f658-c251-4062-9dc1-1a8261e48306",
+      "result_id": "ee7a141e-4566-43b5-a573-12f6ce34f735"
+    },
+    {
+      "claim_id": "cc57a6bc-995e-4ce4-8d5f-5e91cfd755c1",
+      "result_id": "e6771da4-36a4-4b6f-98d2-c43fb7f3a893"
+    },
+    {
+      "claim_id": "335f3e42-74a6-47a1-ab95-59421abd0cef",
+      "result_id": "e6771da4-36a4-4b6f-98d2-c43fb7f3a893"
+    },
+    {
+      "claim_id": "d31e0b94-cca7-454c-a6b9-fd7bc74f8144",
+      "result_id": "e6771da4-36a4-4b6f-98d2-c43fb7f3a893"
+    },
+    {
+      "claim_id": "0c777b69-4dda-421d-b0f1-df3da9528915",
+      "result_id": "e6771da4-36a4-4b6f-98d2-c43fb7f3a893"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "470f6c47-ebb5-4088-9d43-9cd1f2b6bb2f",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "46c5905a-a1ad-4d59-a711-7464c9cf4832",
+      "peer_result_id": "b39d8e86-4db2-49bf-98b4-62c8027a1b77",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate neurexin expression data (C15, C16) as supported. OpenEval also includes knockout validation claims (C17, C18) in this result, while peer review separates these into R2. Both find the RNAscope FISH data compelling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "ac6c1101-88f4-44fe-b199-60d5f7ed5a83",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "46c5905a-a1ad-4d59-a711-7464c9cf4832",
+      "peer_result_id": "bd7a9fb8-47e1-43ce-ba61-3a22cdb93acb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R1 includes knockout validation (C17, C18) along with expression data, while peer R2 evaluates only the genetic manipulation approach (C17, C18). Both find the AAV-Cre approach well-supported and methodologically sound.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c2ed095a-0277-4890-b579-d2ab882df016",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0",
+      "peer_result_id": "b2519629-7e96-47c5-96bf-bc69731cde79",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate optogenetic stimulation findings showing reduced IPSC amplitude and altered kinetics (C19, C28-C31) as strongly supported. OpenEval groups these with pharmacological validation claims, while peer review includes electrical stimulation and calyx comparison claims. Both describe evidence as compelling and rigorous.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "1ede7b74-fcd2-4de6-846e-7429f3be0457",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0ca56eaf-b608-485a-9f9c-2446c4c867b0",
+      "peer_result_id": "00e858d4-c0dc-46e9-8157-09cfeffd7254",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R2 includes strychnine blockade validation (C25-C27) among optogenetic findings, while peer R4 evaluates glycinergic characterization separately. Both find the pharmacological validation methodologically sound without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "849e725b-4ed5-4d40-afc4-5026570d1bdc",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "6d634b6d-3381-4027-b3a7-4afbec4d55b7",
+      "peer_result_id": "b2519629-7e96-47c5-96bf-bc69731cde79",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluates electrical stimulation data (C32-C35) noting incomplete viral transfection as a limitation. Peer R3 includes electrical stimulation findings (C33) among broader optogenetic results. OpenEval flags C34 as speculative, while peer review accepts the data without this specific concern.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "c4c50809-6f2e-44dd-912f-990189f0e433",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "6d634b6d-3381-4027-b3a7-4afbec4d55b7",
+      "peer_result_id": "00e858d4-c0dc-46e9-8157-09cfeffd7254",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R3 addresses electrical stimulation (C32) which peer R4 groups with glycinergic characterization. Both support the findings but OpenEval specifically notes the modest effect size and incomplete transfection limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d259b13a-08ed-44d2-ba60-fd655a153eb6",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7009a235-8563-4fb5-bce0-d8460f2cfd35",
+      "peer_result_id": "29455cf4-edc3-4496-a4f4-5f63a50261cf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on paired-pulse ratio findings (C36-C38). Both evaluate the increased PPR in TKO mice as strongly supported evidence for reduced release probability. OpenEval notes p<0.0001 statistical significance, peer review confirms this as substantial evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "5cbc2543-ff23-4444-8633-3e2f1e52012d",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "018fb814-06a5-4688-bd3c-a96e74884727",
+      "peer_result_id": "dd6861aa-ca36-479f-b069-f38ed8403223",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the unexpected increase in sIPSC frequency (C39-C42) as supported. OpenEval focuses on the electrophysiological data, while peer R6 also includes immunostaining evidence (C43-C46) linking frequency increase to synapse number. Both acknowledge this as a key novel finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "89d04dc4-6791-4630-8d27-fffa3ddcfbcd",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "cdd6b53b-6c0b-457f-b395-c73fb024b487",
+      "peer_result_id": "dd6861aa-ca36-479f-b069-f38ed8403223",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate converging evidence from sIPSC frequency and immunostaining (C20-C21, C43-C46) supporting increased synapse number. OpenEval notes direct synaptic counts would strengthen conclusions, while peer review finds the immunolabeling evidence convincing for establishing the connection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "5bb19a40-0be4-4274-8efe-f89682d70979",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "084b74cf-287e-4cf8-9bab-803d3036a64a",
+      "peer_result_id": "57c0516d-1076-459c-b30a-105da3f6cd8e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate low Ca2+ perfusion experiments (C47-C50, C84) as supported evidence for altered calcium sensitivity. OpenEval identifies a potential interpretation error regarding EC50 values that needs clarification. Peer review accepts the calcium sensitivity findings without noting this concern.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "be8081ee-a165-4d61-8817-6499b4ca6235",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "91fb2521-f5d3-43ab-9f9b-32b8ced05f17",
+      "peer_result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on EGTA-AM experiments (C22-C24, C54-C57, C85) demonstrating disrupted Ca2+ channel-vesicle coupling. Both find this mechanistic evidence compelling and well-established. Peer review explicitly notes these as 'classic approaches' providing solid evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "049116f9-5107-4771-87ba-c4313b5ec7a5",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "c31fcccf-ca3e-4402-9e2f-ca822474d873",
+      "peer_result_id": "e6771da4-36a4-4b6f-98d2-c43fb7f3a893",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement that mechanistic explanations (C71-C76) are speculative hypotheses rather than established findings. Both acknowledge these as reasonable possibilities requiring future experimental validation. OpenEval and peer review both classify as uncertain/speculative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "e394b542-2afe-4b2f-8a70-59a1fcbecc06",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "7b75b649-15ed-421b-95b9-1736bb33bb3b",
+      "peer_result_id": "ee7a141e-4566-43b5-a573-12f6ce34f735",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate main conclusions (C58, C86-C87) about neurexin roles as supported by convergent evidence. However, peer R9 raises a novelty concern noting consistency with prior glutamatergic synapse work, which OpenEval does not address. Both affirm the broad conclusions while peer review questions incremental contribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "0bbf5c6f-e866-450c-a136-7dda8e61bbe9",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "e31b7ff6-5495-410b-a046-0f3492eff496",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background/context claims (C1-C14) as appropriately supported by literature citations. No corresponding peer review evaluation found, as reviewers did not separately assess background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "a5f8539a-10a6-47ec-ab9f-04d13d4ca9da",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "afc006d5-3480-4863-af2f-de9411bef696",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates discussion contextualization claims (C59-C62, C67-C70) as appropriately cited. No corresponding peer review evaluation found, as reviewers did not separately assess these literature-based discussion points.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "13ef6af0-9d8f-43ca-b02c-c9044a4accd2",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "56d20221-7059-48ca-84a1-bcac5cf35fdb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological descriptions (C77-C83) as adequately documented, suggesting some details could be more precisely quantified. No corresponding peer review evaluation found addressing these specific methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "a883a1ee-9d51-43ba-bef3-3be1e3974106",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "16ad3039-be7c-482c-9c01-9c9e3b2dc582",
+      "peer_result_id": "57c0516d-1076-459c-b30a-105da3f6cd8e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R15 evaluates summary statements (C84-C85) of calcium sensitivity and EGTA findings. Peer R7 evaluates the underlying experimental data for calcium sensitivity (C84). Both support these findings, with OpenEval treating them as appropriate summaries.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "7747948d-376d-4a52-8444-f28e957e2b27",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "16ad3039-be7c-482c-9c01-9c9e3b2dc582",
+      "peer_result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R15 includes EGTA mechanistic summary (C85), while peer R8 evaluates the full experimental evidence. Both find the EGTA-based coupling mechanism well-supported, with peer review describing it as solid evidence using classic approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "d6a7a07a-fd75-49d5-89cf-5e7389e931a9",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22",
+      "peer_result_id": "b2519629-7e96-47c5-96bf-bc69731cde79",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R9 evaluates comparison to calyx of Held synapse (C63) as well-justified by citations. Peer R3 includes this claim among broader optogenetic findings. Both accept the cross-synapse comparison as valid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    },
+    {
+      "id": "7f03e8f4-48fa-4b75-97f4-056222bf740e",
+      "submission_id": "7375a5b5-f1fe-4df9-a3e7-af6ede3d5571",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "ab563cd0-571c-43d7-877b-5f3f198b4d22",
+      "peer_result_id": "64a32c73-e006-418c-a84c-5cb2959a57e3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R9 evaluates calyx comparison claims (C64) as appropriately supported. Peer R8 includes this in the context of EGTA mechanistic evidence. Both find the comparison to prior calyx work valid and well-cited.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:05:46.553480Z"
+    }
+  ]
+}

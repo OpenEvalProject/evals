@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C50",
+      "C51"
+    ],
+    "result": "Analysis of ENCODE eCLIP data identified 99 RBPs with significant binding peaks within four ASAR lncRNAs, with several hnRNPs as abundant interactors. ASAR6-141 displays significant RBP interactions for 35 different RBPs across its transcribed region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C50, and C51 are supported by the eCLIP data analysis shown in Figure 1 and Figure 1\u2014source data 1. The identification of 99 RBPs and the specific finding of 35 RBPs interacting with ASAR6-141 are directly demonstrated by the computational analysis of publicly available ENCODE data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C90"
+    ],
+    "result": "An ~7 kb domain within the ~185 kb ASAR6-141 lncRNA contains virtually all significant eCLIP peaks of RBP interactions (58 independent peaks) in both K562 and HepG2 cell lines, despite contiguous expression across the entire locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C52, C53, and C90 are well-supported by the eCLIP data visualization in Figure 1G and the quantification in Figure 1E. The striking concentration of RBP binding sites in this small domain relative to the full transcript length is clearly demonstrated, though the biological significance of this clustering pattern could benefit from additional mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Genetic deletion of the ~7 kb RBPD from the expressed allele of ASAR6-141 results in delayed replication timing comparable to deletion of the entire ~185 kb ASAR6-141 locus, while deletion from the silent allele has no effect. Homozygous deletions also show asynchronous replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C54-C58 are supported by the CRISPR/Cas9 deletion experiments and BrdU incorporation assays shown in Figure 2E. The quantification demonstrates statistically significant delayed replication (p=0.00027) following deletion from the expressed allele, with appropriate controls including deletion from the silent allele and comparison to full ASAR6-141 deletion. The allele-specific effect is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Ectopic integration of the ~7 kb RBPD sense transgene into mouse autosomes results in chromosome territory-localized RNA expression (4/12 clones with large RNA clouds) and causes delayed replication timing and delayed mitotic condensation in cis, while antisense transgenes show only small pinpoint RNA signals and no replication delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by the transgene integration experiments shown in Figure 2G-L. The orientation-dependent effects on RNA localization (Figure 2G-I) and replication timing/mitotic condensation (Figure 2K-L) provide strong evidence for functional activity of the ~7 kb RBPD. However, the relatively low frequency of large RNA clouds (4/12 clones) suggests variable transgene expression or integration site effects that could be explored further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "shRNA-mediated depletion of HNRNPA1, HNRNPC, HNRNPL, HNRNPM, HNRNPU, or HNRNPUL1 results in significant protein depletion and causes dissociation of ASAR6-141 lncRNA from chromosome territories, with loss of nuclear localization and appearance of large cytoplasmic foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13, C66-C68 are supported by the immunofluorescence quantification (Figure 3K) showing significant protein depletion and RNA-FISH experiments (Figure 3M-U) demonstrating loss of chromosome-associated ASAR6-141 RNA. The consistency across multiple hnRNPs strengthens the conclusion, though the mechanism of cytoplasmic relocalization could be direct or indirect effects of RBP depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C81"
+    ],
+    "result": "shRNA-mediated depletion of PTBP1, PTBP2, MATR3, SAFB, SAFB2, or CTCF does not alter ASAR lncRNA chromosome territory localization, showing specificity of the hnRNP requirement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C81 are supported by the negative control experiments shown in Figure 3V, Figure 3\u2014figure supplement 2, and Figure 3\u2014figure supplement 2E-J. These controls demonstrate that not all RBPs affect ASAR localization, providing specificity for the hnRNP effects. This strengthens the conclusion that specific RBP-ASAR interactions are required for chromosome territory localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Following RBP depletion, XIST RNA remains detectable in nuclei but shows decreased nuclear signal size and appearance of cytoplasmic foci that colocalize with ASAR6-141 lncRNA, indicating partial dissociation from the inactive X chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by the RNA-FISH data in Figure 3M-V and quantification in Figure 3W showing significant decrease in XIST RNA cloud size. The colocalization of XIST and ASAR6-141 in cytoplasmic foci (Figure 3M-U) suggests these lncRNAs may share common retention mechanisms. However, the interpretation that XIST is 'dissociated' is somewhat speculative as substantial nuclear XIST signal remains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C111",
+      "C112"
+    ],
+    "result": "Integration of the ~7 kb RBPD transgene into the inactive X chromosome results in colocalization with Xist RNA, enhanced Xist signal intensity at the transgene site, and causes delayed replication timing and delayed mitotic condensation of the X chromosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77, C111-C112 are supported by the RNA-FISH data in Figure 4A-B showing colocalization and enhanced Xist signal, and the replication timing data in Figure 4C-H demonstrating DRT/DMC on the X chromosome containing the transgene. This provides strong evidence that the ~7 kb RBPD can function on heterologous chromosomes, though the mechanistic interpretation of 'interference' with Xist function (C113) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "shRNA depletion of HNRNPA1, HNRNPC, HNRNPL, HNRNPM, HNRNPU, HLTF, KHSRP, or UCHL5 causes loss of chromosome-associated localization of both ASAR1-187 and ASAR6 RNAs, with appearance of dispersed nuclear patterns and large cytoplasmic foci where the two ASAR RNAs colocalize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by the RNA-DNA FISH experiments in Figure 5D-Q showing loss of chromosome territory association for multiple ASAR RNAs following RBP depletion. The colocalization of ASAR1-187 and ASAR6 in cytoplasmic foci is particularly notable as these RNAs normally remain on separate chromosomes, suggesting disruption of chromosome-specific RNA retention mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C82",
+      "C83",
+      "C84",
+      "C92"
+    ],
+    "result": "shRNA-mediated depletion of HNRNPA1, HNRNPC, HNRNPL, HNRNPM, HNRNPU, HNRNPUL1, HLTF, KHSRP, or UCHL5 disrupts the normally synchronous replication timing between autosome pairs, causing dramatic differential BrdU incorporation and asynchronous replication across all chromosome pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C82-C84, and C92 are supported by the BrdU terminal label assays shown in Figure 6A-F. The quantification demonstrates statistically significant asynchronous replication (p<0.0001) for chromosomes 1 and 6 following depletion of multiple RBPs, with appropriate empty vector controls showing synchronous replication. The genome-wide effect across all autosome pairs (Figure 6B) is striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The DRT/DMC phenotype was detected in ~30% of mitotic spreads following shRNA depletion of HNRNPU, HNRNPUL1, HLTF, KHSRP, UCHL5, or HNRNPA1, and in ~10% following depletion of HNRNPC, HNRNPL, or HNRNPM, which also caused dramatic alterations in chromosome morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C86 are supported by the examples shown in Figure 6G-H and Figure 6\u2014figure supplement 2. The DRT/DMC phenotype is clearly visible in the images, though the quantification of frequency (~30% and ~10%) appears to be based on visual assessment rather than systematic quantification across a large number of cells. More rigorous quantification would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C100",
+      "C101"
+    ],
+    "result": "RBP depletion recapitulates the effect of individual ASAR knockouts on a genome-wide scale, demonstrating that the association of ASAR RNAs with multiple hnRNPs and other nuclear RBPs is essential for the synchronous replication timing program on mammalian chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C100, and C101 are supported by the comparison of RBP depletion phenotypes (genome-wide asynchronous replication and ASAR dissociation) with previously published ASAR knockout phenotypes. The consistency between loss of ASAR function and loss of RBP function provides strong evidence for the functional relationship, though the precise molecular mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C87"
+    ],
+    "result": "Human C0T-1 DNA can detect ASAR6 RNA expressed from a BAC transgene integrated into mouse chromosome 3, indicating that at least some of the RNA species detected by C0T-1 DNA represents ASAR lncRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C87 are supported by the RNA-FISH experiments in Figure 7A-B showing that human C0T-1 DNA hybridizes to human ASAR6 RNA in mouse cells. This provides direct evidence linking C0T-1 RNA detection to ASAR lncRNAs, though the extent to which C0T-1 RNA represents ASAR vs. other repeat-rich RNAs remains partially uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C93",
+      "C94"
+    ],
+    "result": "ASARs function as essential RNA scaffolds for the assembly of hnRNP complexes that maintain the structural integrity of each mammalian chromosome and control chromosome dynamics within mammalian nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16, C93, and C94 represent the authors' proposed model based on the experimental findings. While the data strongly support that ASARs interact with hnRNPs and are required for proper replication timing and chromosome structure, the specific 'RNA scaffold' mechanism and the proposal that ASARs represent the functional 'chromosome associated RNA' species are interpretations that require additional biochemical and structural evidence to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C113"
+    ],
+    "result": "Displacement of ASAR RNA from chromosome territories upon RBP knockdown is proposed as the primary cause of genome-wide replication timing asynchrony, and the ~7 kb RBPD RNA is suggested to interfere with Xist RNA function within a heteromeric condensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103 and C113 represent mechanistic interpretations of the experimental data. While the correlation between ASAR displacement and replication timing defects is well-documented, the causal relationship and the specific mechanism (e.g., whether displacement is direct or indirect, whether interference occurs via condensate disruption) remain speculative and would require additional experiments such as tethering assays or biochemical reconstitution to definitively establish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C88",
+      "C89"
+    ],
+    "result": "ASARs are a family of very-long noncoding RNAs (>180 kb) that control replication timing on individual human autosomes and are essential for chromosome stability. Eight ASARs have been genetically validated on chromosomes 1, 6, 8, 9, and 15, and 68 ASAR candidates have been identified on every human autosome. All known ASARs share distinctive characteristics including epigenetically regulated allelic expression imbalance, variable epigenetic replication timing, high LINE1 density (>30%), and retention within their parent chromosome territories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C18-C26, C88-C89 are supported by citations to previous work from the same laboratory (Donley et al., 2015; Heskett et al., 2020; Heskett et al., 2022; Stoffregen et al., 2011) and are consistent with the current experimental findings. The characteristics of ASARs are well-documented across multiple publications, and the current study builds on this foundation by identifying RBP interactors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C37",
+      "C102"
+    ],
+    "result": "ASAR6 lncRNA expressed from transgenes (ranging from ~180 kb BAC to ~3 kb PCR products) remains associated with chromosome territories and causes delayed replication timing and delayed mitotic condensation of entire chromosomes in cis. The critical sequences map to the antisense strand of L1 sequences, and the ASAR6 RNA itself is required for the replication timing effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31, C37, and C102 are supported by citations to previous work (Donley et al., 2013; Platt et al., 2018) and are consistent with the current findings using the ~7 kb RBPD. The prior demonstration that ASAR6 RNA is required for replication timing control (via oligonucleotide-mediated degradation) strengthens the interpretation that RNA, not just transcription, is functionally important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The expressed allele but not the silent allele of ASAR6-141 controls replication timing of human chromosome 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by the current deletion experiments (Figure 2E) showing that deletion of the ~7 kb RBPD from the expressed allele causes delayed replication while deletion from the silent allele does not, and by citation to previous work (Heskett et al., 2020) demonstrating the same allele-specific effect for the full ASAR6-141 locus. This allele-specific requirement is a key feature of ASAR function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Several hnRNPs (HNRNPA1, HNRNPC, HNRNPL, HNRNPM, HNRNPU, HNRNPUL1) and other RBPs (HLTF, KHSRP, UCHL5) are important interaction partners required for chromosome territory localization of multiple ASAR RNAs and for synchronous replication of autosome pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are well-supported by the combined eCLIP analysis (Figure 1), RNA-FISH experiments (Figures 3 and 5), and replication timing assays (Figure 6). The consistency of effects across multiple RBPs and multiple ASAR lncRNAs strengthens the conclusion that these are functionally important interactions, though the relative contributions of individual RBPs remain to be fully determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "HNRNPA1 and HNRNPC are components of the 40S hnRNP particle that forms nuclear biomolecular condensates, and HNRNPU/HNRNPUL1 interact with these subunits. ASAR RNAs normally remain associated exclusively with their parent chromosome territories and remain separate from each other, but RBP knockdowns release ASAR RNAs allowing colocalization in nuclear/cytoplasmic foci. Xist RNA participates in assembly of a nuclear heteromeric condensate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 combine cited literature (Domanski et al., 2022; Britton et al., 2014; Pandya-Jones et al., 2020) with experimental observations from the current study (Figure 5O-Q). The literature citations support the condensate model, and the experimental data showing ASAR colocalization after RBP depletion are consistent with this framework, though direct evidence for ASAR-containing condensates is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Deletion of the Xist gene on either the active or inactive X chromosomes results in delayed replication timing of the X chromosome, similar to ASAR loss-of-function mutations, suggesting parallels between ASAR and Xist mutation phenotypes and a shared mechanism for controlling replication timing in cis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are based on cited literature (Diaz-Perez et al., 2005; Diaz-Perez et al., 2006) and the authors' interpretation of parallels with ASAR phenotypes. The cited work on Xist deletion effects is from the literature, and the comparison to ASAR phenotypes is reasonable given the similar delayed replication timing outcomes. However, the suggestion of a 'shared mechanism' (C116) is more speculative and would require additional comparative studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C17",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C110"
+    ],
+    "result": "Background knowledge claims about mammalian DNA replication synchrony, chromosome-associated lncRNAs, heterogeneous nuclear RNA, C0T-1 RNA, hnRNPs, and Xist transgenes are established in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C32-C36, C40-C46, and C110 represent background knowledge supported by appropriate literature citations. These claims provide context for the current work and are generally well-established in the field. The citations appear appropriate and the statements accurately reflect the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ASAR6-141 lncRNA is localized within one of the chromosome 6 territories in both male HTD114 cells and female GM12878 cells, with variable RNA hybridization signal sizes ranging from large clouds occupying entire chromosome territories to small sites tightly associated with expressed alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by the RNA-FISH data shown in Figure 1A-B. The variability in signal size is noted and documented with appropriate citations to previous work. This variability could reflect differences in expression levels, cell cycle stage, or technical factors in the RNA-FISH assay, but the consistent chromosome territory localization is well-demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "ASAR RNAs are encoded by ~3% of the human genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by citation to recent work (Heskett et al., 2022) from the same laboratory. This represents a substantial fraction of the genome and underscores the potential importance of ASARs in genome organization, though independent validation of this estimate would be valuable.",
+    "result_type": "MINOR"
+  }
+]

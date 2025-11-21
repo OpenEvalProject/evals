@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study established a robust VSN activity assay using Ca2+ imaging in acute VNO slices. Of >43,000 K+-sensitive neurons recorded, 38.4% (16,715 VSNs) responded to urine stimulation, with 61.4% displaying generalist profiles and 38.6% categorized as specialists. Response reliability indices for both generalist and specialist VSNs were normally distributed around zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe the basic characterization of the VSN recording assay. The data are clearly presented in Figure 1 with appropriate sample sizes (>43,000 neurons), and the reliability indices demonstrate low experimental noise. The normal distribution of reliability indices centered around zero validates the robustness of the assay.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C33",
+      "C34"
+    ],
+    "result": "When C57BL/6 VSNs were challenged with male versus female same-strain urine, the fraction of specialist neurons doubled to 5% of all K+-sensitive neurons, with female urine recruiting more specialists than male urine. Among responding neurons, 19% were generalists with response preference indices narrowly distributed around zero.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C33-C34 describe sex-specific VSN responses supported by data in Figure 1e and 1h. The doubling of specialist neurons and the narrow distribution of generalist response indices are clearly documented. However, the biological interpretation of why female urine recruits more specialists despite having lower total protein concentration (C32) remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Molecular profiling identified 1006 molecules in mouse urine (40% VOCs, 60% proteins), with roughly half found in both sexes. Unexpectedly, females secreted a larger variety of proteins at low concentrations, while males showed substantially enriched total protein content. This pattern was consistent across C57BL/6, BALB/c, and wild mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 present comprehensive molecular profiling data supported by GCxGC-MS and nLC-MS/MS analyses (Figure 1e-g). The finding of increased protein variety in females despite lower total concentration is counterintuitive but well-documented across all three mouse groups. The Bradford assay data (Figure 1g) clearly shows statistical significance for sex differences in total protein content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Concentration indices for common compounds showed broad, non-normal distributions, contrasting with the narrow, normally distributed VSN response preference indices. This indicates that VSN responses do not simply reflect concentration differences between male and female same-strain stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe a key finding about VSN selectivity supported by data in Figure 1h. The mismatch between chemical concentration disparities and VSN response patterns is clearly demonstrated. However, the interpretation (C36) involves inference and alternative explanations are discussed but not fully resolved (e.g., whether low concentrations saturate receptors or whether many compounds are not chemosignals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Using a conservative criterion (\u22656/10 samples), 208 VOCs and 264 proteins were identified as enriched. Nearly half of VOCs (47.6%) and one-third of proteins (31.4%) were generic across all sex/strain combinations. Among sex-specific proteins, 89% were female-specific, while 64.2% of sex-specific VOCs were male-specific. About one-third of VOCs and one-quarter of proteins were unique to specific sex/strain combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 present detailed molecular characterization supported by Figure 2a-b. The sex-specific patterns are striking and well-documented. The finding that females secrete more protein variety while males secrete more VOCs suggests different chemical signaling strategies. The conservative detection criterion (\u22656/10 samples) strengthens confidence in these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Both VOC and protein profiles provided sufficient discriminative information to classify samples by sex, strain, or both using sPLS-DA. Protein content exhibited stronger discriminative power (21-24% and 11-12% explained variance) than VOC content (7-10% and 5-8% explained variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by sPLS-DA analysis in Figure 2c-h. The machine learning approach appropriately demonstrates that chemical profiles contain sufficient information for classification. The quantitative comparison of discriminative power between proteins and VOCs is clearly presented. However, the biological relevance of this discriminative power depends on whether the VNO can actually access and decode this information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Mup20 (darcin) was identified as the most informative protein for sex discrimination. Previous studies reported that Mup20 elicits innate attraction and conditioned place preference in females, while promoting aggression in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by Random Forest analysis (Figure 2\u2014figure supplement 1). Claims C47-C48 are properly cited to previous work (Demir et al., 2020; Roberts et al., 2012; Kaur et al., 2014). The identification of Mup20 as the top discriminator is consistent with its known role as a 'maleness signal,' though the current study does not test its behavioral effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Five urinary proteins (Ptk2b, Rnaset2, Psap, Ly6a, and Sod1) displayed pronounced strain-dependent concentration differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by proteomic data in Figure 2\u2014figure supplement 1d. These proteins show clear strain-specific patterns. However, none have been previously attributed chemosensory functions, and the current study does not test whether they act as vomeronasal ligands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Hierarchical clustering based exclusively on 27 lipocalins grouped individual samples into clusters corresponding to the six sex/strain combinations with very few exceptions (5/60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by hierarchical clustering analysis in Figure 2\u2014figure supplement 3. The high accuracy (55/60 correct classifications) demonstrates that lipocalin profiles alone contain sufficient information for sex/strain discrimination. This supports a combinatorial coding model rather than sparse coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Individual variability in protein and VOC content was significantly higher in wild mice compared to both laboratory strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by data in Figure 2\u2014figure supplement 2a with statistical significance indicated. This finding is consistent with expectations based on genetic diversity differences between wild and inbred populations. However, the authors acknowledge that pooling samples may obscure some of this individual variability (C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Previously reported semiochemicals were confirmed in both wild and laboratory mice, including VOCs and proteins. All MUPs (including Mup20) and most VOCs were found in both sexes, though Mup3, Mup17, and Mup20 showed male-biased concentrations. Only 2-sec-butyl-4,5-dihydrothiazole and farnesenes showed male-specific secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by data in Figure 2\u2014figure supplement 2b-c and appropriate citations. The finding that most 'male-specific' signals are actually present in both sexes at different concentrations challenges simple presence/absence models of chemical communication. The identification of only two truly male-specific compounds is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "When challenged with same-sex/different-strain stimuli, analysis of 17,416 K+-sensitive VSNs revealed that roughly half were generalists (with one exception for male C57BL/6 vs. wild stimuli). The fraction of strain-selective specialists was considerably larger than observed for sex-specific responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by data in Figure 3. The finding that strain selectivity exceeds sex selectivity is important and consistent with the molecular data showing substantial strain-specific chemical differences. The exception for C57BL/6 vs. wild male stimuli suggests some unique features of wild male secretions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In female urine, BALB/c-specific proteins were substantially underrepresented, but this was not reflected in VSN response profiles. The amount of strain-specific molecules in wild mouse urine did not vastly exceed that in inbred strains, and selective VSN responses to wild stimuli were not more common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by data in Figure 3d-f. The finding that wild mouse urine is not dramatically more complex than inbred urine is surprising but reassuring for the field. The lack of increased VSN selectivity to wild stimuli suggests that inbreeding has not fundamentally altered the chemosensory system's ability to detect relevant signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Analysis of 3366 generalist VSNs from male C57BL/6 mice showed response preference indices normally distributed around zero in all but one condition. However, protein concentration indices showed strong disparities across strains (low in C57BL/6, moderate in BALB/c, high in wild), which were not reflected in VSN response profiles. This suggests VSN population response strength is not strongly affected by strain-dependent protein concentration differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by data in Figure 4. The mismatch between protein concentration disparities and VSN responses is clearly demonstrated. However, the interpretation (C68) involves inference with multiple possible explanations discussed but not definitively resolved. The authors appropriately acknowledge uncertainty about whether proteins are actual ligands or whether concentration-invariant responses explain the pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Proportions of generalist and specialist VSNs differed significantly between BALB/c and C57BL/6 mice. BALB/c neurons showed striking insensitivity to wild-derived female urine (only 2-3% specialists vs. 11.2\u00b16.6% average), with comparatively few generalist responses. This pattern was not observed in C57BL/6 VSNs, suggesting substantial strain differences in VR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by data in Figure 5. The strain-specific differences in VSN responses, particularly to female stimuli, are clearly demonstrated. The inference about VR expression differences (C73) is reasonable given the data, though direct VR expression analysis was not performed. The authors appropriately rule out sampling bias along the anterior-posterior axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Analysis of 1741 generalist BALB/c neurons revealed less homogeneous response preference index distributions than C57BL/6, with five of six histograms showing multiple peaks. Comparison between strains revealed strong, consistent differences upon stimulation with female stimuli, indicating that vomeronasal representation of female semiochemicals differs considerably between the two inbred strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by data in Figure 5\u2014figure supplement 1. The multi-peaked distributions in BALB/c neurons contrast with single Gaussians in C57BL/6, suggesting more heterogeneous response properties. The strain-specific differences are particularly pronounced for female stimuli, consistent with the specialist neuron data. Statistical comparisons (Kolmogorov-Smirnov tests) support the claimed differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C79"
+    ],
+    "result": "The molecular spectrum of wild mouse urine does not dramatically exceed that of inbred strains. Large fractions of urine content are shared among all sex/strain combinations, and the amount of molecules selectively found in wild mouse urine does not dramatically exceed the urinary secretome of inbred strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C78-C79 present a major conclusion supported by comprehensive molecular profiling data in Figures 2-3. This finding is important for validating the use of inbred mice in chemosensory research. However, the authors acknowledge that increased individual variability in wild mice (C52) might be obscured by pooling samples (C94), which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Across strains, female-specific proteins vastly outnumber male-specific varieties (89% of sex-specific proteins were female), while overall protein concentration is substantially enriched in male urine. Concentrations of common proteins are relatively low in C57BL/6, moderate in BALB/c, and high in wild animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 summarize key molecular findings supported by data throughout the manuscript (Figures 1-4). The sex-specific patterns suggest different chemical signaling strategies between males and females. The strain-dependent concentration gradient (C57BL/6 < BALB/c < wild) is consistent across multiple analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Both secreted VOC and protein profiles provide sufficient information to distinguish sex, strain, or both. The rich urinary lipocalin repertoire alone might allow chemosensory discrimination of sex and/or strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by sPLS-DA analysis (Figure 2c-h) and hierarchical clustering of lipocalins (Figure 2\u2014figure supplement 3). The machine learning analyses demonstrate that the chemical information exists, though whether the VNO actually uses this information for discrimination is addressed separately through VSN recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "VSN population response profiles do not reflect the global molecular content of urine, suggesting the VNO functions as a selective molecular detector. Selective VSN responses to wild stimuli are rare, and VSN generalist signal strength is unlikely to encode semiochemical concentrations across the entire range of compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 present major conclusions about VSN selectivity supported by comparisons between chemical composition and VSN responses (Figures 1, 3-4). The selectivity is demonstrated by the mismatch between chemical diversity and response patterns. However, these are inferences with alternative explanations discussed (e.g., receptor saturation, non-ligand compounds). The conclusions are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89"
+    ],
+    "result": "Vomeronasal response profiles differ between C57BL/6 and BALB/c animals, with particularly disparate representations of female semiochemicals. Male BALB/c neurons display striking insensitivity to wild female urine, and vomeronasal representation of female semiochemicals differs considerably between inbred strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C88-C89 present a major finding supported by comprehensive VSN recordings from both strains (Figure 5). The strain-specific differences are particularly pronounced for female stimuli, suggesting genetic variation in VR expression affects sensory representations. This finding has important implications for interpreting studies using different mouse strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "While stimulus representations were similar between C57BL/6 and BALB/c in previous AOB recordings, clear differences in VSN activity were observed in the current study, particularly with female stimuli. A substantial fraction of AOB neurons were selective to wild stimuli, whereas relatively few VSNs showed such selectivity. These observations imply non-trivial transformations between VSN and AOB representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 compare current VSN data with previous AOB data from Bansal et al., 2021. The comparison reveals important differences between peripheral and central representations. The inference about non-trivial transformations (C112) is reasonable given the data, though the mechanisms remain to be elucidated. This highlights the importance of studying multiple levels of the sensory pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Pooling stimuli reduces individual variability but may mask relevant stimulus aspects. Given increased chemical variability in wild urine samples, pooling might obscure distinctive molecular features. VSN responses may be affected by donor estrus cycle stage, which was not monitored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 acknowledge important methodological limitations. The concerns about pooling are valid given the observed individual variability (C52). The lack of estrus stage monitoring is a limitation supported by citations showing cycle-dependent effects. These limitations are appropriately discussed and do not invalidate the main findings but suggest directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Responses to wild and inbred stimuli are qualitatively similar, with selective VSN responses to wild stimuli being rare. The authors speculate that inbreeding over hundreds of generations has resulted in 'microevolutionary' pressure to maintain sensitivity to same- or similar-strain signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96-C97 are supported by VSN response data. However, C98 is explicitly speculative and not directly tested. While the speculation is reasonable given the data and evolutionary considerations, alternative explanations exist (e.g., wild mice might not have dramatically different relevant signals). The speculation is appropriately labeled as such in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Genetic variability in VR repertoires is massively increased in wild-derived mice compared to C57BL/6. Among ~200 orthologous receptor genes, BALB/c shows 184 non-synonymous and one private SNP, while wild-derived PWK/PhJ shows 789 non-synonymous and 508 private SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by citation to Wynn et al., 2012. These genetic data provide context for interpreting the functional differences observed between strains. The dramatic difference in genetic variation between inbred and wild-derived strains supports the authors' interpretations about VR expression differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "When challenged with same-sex/different-strain stimuli, large VSN fractions selectively respond to just one stimulus. Concentration differences between compounds shared among strains are often substantial but are not reflected by similarly pronounced differences in generalist VSN response strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 summarize key findings about VSN selectivity supported by data in Figures 3-4. The selective responses demonstrate that the VNO does not simply respond to all compounds present. The mismatch between concentration differences and response patterns is clearly documented, though the mechanistic explanation remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Even in closely related inbred mice, strain-to-strain VR variation must be prominent. With monoallelic VR expression and 184 non-synonymous SNPs between C57BL/6 and BALB/c, it is likely that even individuals of the same strain express functionally different VSN arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are inferences based on observed functional differences and genetic data. The inference is reasonable and supported by citations to studies showing VR variation across strains. However, direct VR expression profiling in the specific animals used was not performed. The conclusion is appropriately presented as an inference rather than direct observation.",
+    "result_type": "MINOR"
+  }
+]

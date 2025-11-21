@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30"
+    ],
+    "result": "Acentrosomal cell lines were successfully generated using two methods: PLK4 inhibitor centrinone treatment (125 nM for 10 days) in RPE-1 TP53-/- and U2OS cells, and SASS6 deletion in RPE-1 TP53-/- cells. Both methods significantly increased the proportion of acentrosomal cells compared to controls, as measured by \u03b3-tubulin and centrin-3 staining (Figure 1a, 1a').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 describe well-established methods for generating acentrosomal cells with appropriate controls and validation. The use of TP53-/- background is properly justified (C26), and quantification shows significant increases in acentrosomal cells (C29, C30). The methodology is sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Acentrosomal cells exhibit elongated mitosis compared to control cells, specifically during the period from NEBD through anaphase onset, while the duration of anaphase through cytokinesis remains unchanged. This confirms prior observations and establishes the temporal specificity of the mitotic delay (Figure 1b, 1b').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are well-supported by live imaging data with appropriate quantification. The finding that only the NEBD-to-anaphase period is elongated (C33) while anaphase-to-cytokinesis is not (C34) is important for mechanistic interpretation. Statistical significance is shown and consistent with prior work (C3, C32).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MPS1 kinase activity is necessary for the extended mitosis in acentrosomal cells. MPS1 inhibition (CFI-402257 or MPS1-IN-1) shortens mitosis in both control and acentrosomal cells, but causes division failure specifically in acentrosomal cells, where the majority produce only one daughter cell instead of dividing bipolarly (Figure 1c-d, Figure 1\u2014figure supplement 1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide strong evidence using two independent MPS1 inhibitors showing consistent phenotypes. The differential effect on acentrosomal versus control cells (C40 vs C41) is well-documented with quantification. Live imaging data directly demonstrates the division failure phenotype, supporting the conclusion that MPS1 activity enforces the mitotic delay (C4, C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C43",
+      "C44"
+    ],
+    "result": "SAC-dependent mitotic delay is required for bipolar cell division in acentrosomal cells. When MPS1 is inhibited, acentrosomal cells form monopolar spindles (single \u03b1-tubulin punctum), exit mitosis prematurely, and produce mononucleate cells with abnormal nuclear morphology without completing cell division (Figure 1e, Figure 1\u2014figure supplement 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide direct visualization of monopolar spindle formation and premature mitotic exit using GFP-TUBA1B cells. Nuclear morphology analysis (C43-C44) confirms division failure. The data strongly support that SAC-mediated delay is functionally required for acentrosomal cell division (C5), not just correlated with it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "The phenotypes of elongated mitosis and MPS1 inhibition sensitivity are reversible upon centrinone washout and restoration of normal centriole number after 10 days (Figure 1\u2014figure supplement 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 demonstrates that the observed phenotypes are specifically due to centrosome loss rather than off-target effects or irreversible cellular changes. This is an important control that strengthens the causal interpretation of all other findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "APC/C inhibition with proTAME rescues the division failure phenotype in acentrosomal cells treated with MPS1 inhibitor. ProTAME treatment causes prolonged mitotic arrest (>6 hours) regardless of centrosome status, but allows many acentrosomal cells to eventually undergo bipolar division even with MPS1 inhibition, demonstrating that the division failure results from premature anaphase onset rather than other MPS1 activities (Figure 1f, Figure 2b-b'').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C62 provide strong mechanistic evidence through rescue experiments. The proTAME rescue (C49, C60-C61) demonstrates that extending mitosis through APC/C inhibition is sufficient to allow bipolar division in acentrosomal cells even without MPS1 activity. This supports the conclusion that timing of anaphase onset, not other MPS1 functions, is critical (C62). The >6 hour arrest criterion (C51, C59) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Aurora B inhibition (AZD1152) causes elongated mitosis in both control and acentrosomal cells, and both cell types successfully divide into two daughters. Co-treatment with MPS1 and Aurora B inhibitors results in shortened mitosis and division failure similar to MPS1 inhibition alone, suggesting that mitotic delay itself, rather than specific MPS1 activity, is necessary for acentrosomal cell division (Figure 2a-a'').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 provide important evidence that the requirement is for mitotic delay in general, not MPS1-specific functions. The Aurora B inhibition experiments (C54-C55) show that SAC perturbation without shortening mitosis allows division, while co-inhibition (C56-C57) phenocopies MPS1 inhibition alone. This supports the temporal interpretation (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C7"
+    ],
+    "result": "Acentrosomal cells are polyploid (confirmed by metaphase spreads), but polyploidy alone is not sufficient to cause MPS1 inhibition-sensitive division failure. Polyploid cells generated by blebbistatin-induced cytokinesis failure (binucleate cells with centrosomes) successfully divide under MPS1 inhibition, unlike acentrosomal polyploid cells (Figure 3a-c').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 provide critical evidence ruling out polyploidy as the causative factor. The blebbistatin experiment (C68) creates an appropriate control: polyploid cells with centrosomes. The observation that these cells divide successfully under MPS1 inhibition (C70-C71) while acentrosomal polyploid cells do not strongly supports the conclusion that centrosome absence, not polyploidy, drives the phenotype (C7, C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C74"
+    ],
+    "result": "The division failure in acentrosomal cells results from mitotic exit before spindles become bipolar. Control cells establish two tubulin-dense MTOCs before NEBD, while acentrosomal cells only establish two MTOCs well after NEBD and chromosome condensation (Figure 4a, 4a').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide direct visualization of the temporal difference in MTOC establishment using GFP-TUBA1B cells. The quantification (Figure 4a') shows 100% of control cells have two MTOCs before NEBD versus 0% of acentrosomal cells. This temporal delay in establishing bipolarity directly supports the mechanistic interpretation (C8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Prevention of centrosome separation using STLC (Eg5 inhibitor) is sufficient to make cell division reliant on SAC-dependent mitotic delay. STLC alone causes mitotic arrest, but combined MPS1 and Eg5 inhibition results in mitotic exit and division failure similar to acentrosomal cells, with monopolar spindles and frequent chromosome extrusion (Figure 4b-c).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 provide strong evidence that monopolar spindle configuration, not centrosome absence per se, drives the requirement for SAC-mediated delay. The STLC experiment (C9) phenocopies the acentrosomal phenotype in cells with centrosomes (C76), demonstrating sufficiency. The detailed imaging (C77-C79) shows monopolar spindles and asymmetric division attempts. This strongly supports the mechanistic model (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Centrosomes provide 'timely two-ness' by establishing two spindle poles early in mitosis through Eg5-mediated separation, allowing rapid establishment of bipolarity. This enables cells to successfully divide without requiring SAC-dependent mitotic delay. Acentrosomal cells rely on SAC-mediated delay to build bipolar spindles and successfully divide (Figure 4d).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C81-C83 represent the main conclusions synthesizing all experimental findings. The 'timely two-ness' concept (C10, C82) is well-supported by: (1) temporal MTOC establishment data (C73-C74), (2) STLC experiments showing monopolar spindles cause division failure (C75-C80), (3) rescue by prolonging mitosis (C49-C62), and (4) polyploidy control experiments (C65-C72). The model is internally consistent and parsimoniously explains all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "U2OS cells with endogenously tagged GFP-TUBA1B were generated using CRISPR/Cas9-mediated homologous recombination, with one allele edited and one unedited, validated by PCR, western blot, and functional imaging (Figure 1\u2014figure supplement 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 describes appropriate methodology with comprehensive validation including genotyping, protein expression, acetylation capacity, Cas9 absence, and localization. The supplementary figure provides adequate documentation of the cell line generation and characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The authors acknowledge it remains unclear why acentrosomal cells are prone to chromosome missegregation despite assembling bipolar spindles, citing relevant literature on this open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 appropriately identifies an unresolved question in the field. This is a reasonable acknowledgment of the limitations of current understanding and does not overstate the findings of the present work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The authors speculate that centrosome presence or loss may be a relevant clinical marker for predicting effects of MPS1 inhibition on division outcome in cancer therapy contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is speculative and extends beyond the experimental data, which used cultured cell lines. While the speculation is reasonable given the findings and the clinical development of MPS1 inhibitors (C86) and presence of acentrosomal cancer cells (C87), no clinical or tumor data are presented to support this specific translational claim. This represents a hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C28",
+      "C31",
+      "C35",
+      "C36",
+      "C37",
+      "C50",
+      "C52",
+      "C53",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C69",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The manuscript provides appropriate background on SAC function, centrosome biology, microtubule organization, and relevant prior work on acentrosomal cell division, MPS1 function, Aurora B function, and clinical context. These claims establish the scientific foundation and context for the experimental work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C23, C28, C31, C35-C37, C50, C52-C53, C63-C64, C66-C67, C69, C85-C87, C89 represent established knowledge appropriately cited from the literature. These provide necessary context and are accurately represented based on the citations provided. No misattribution of prior work is evident.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose and test the hypothesis that having two separate functional MTOCs at the beginning of mitosis facilitates timely division without requiring SAC-mediated delay, and that monopolar spindles are sufficient to cause division failure upon MPS1 inhibition even in cells with centrosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 represent hypotheses that were explicitly tested through the STLC experiments (C75-C80). The hypothesis (C90) is reasonable based on prior observations, and the experimental test (C91) directly addresses it. The STLC results support the hypothesis, making this a well-designed hypothesis-driven experiment.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study utilized 176 Diversity Outbred (DO) mouse embryonic stem cell samples profiled for genotype (via GigaMUGA array with 68,413 imputed haplotype calls), gene expression (RNA-seq, log2-TPM), and chromatin accessibility (ATAC-seq, TMM normalized). The DO population segregates millions of variants from eight founder strains with linkage disequilibrium blocks approaching TAD size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C24-C27, and C78-C84 collectively describe the experimental system, sample size, data types, and processing methods. The methods are clearly documented with appropriate citations and normalization procedures. The characterization of the DO population and its genetic properties is well-established in prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C7"
+    ],
+    "result": "Regression modeling of 39,021,625 gene-genotype-ATAC combinations identified 27,509 significant non-additive interaction models (Bonferroni adjusted p < 1\u00d710\u207b\u2077), representing 0.07% of tested models but four orders of magnitude more than expected under a null distribution, demonstrating that genetic-epigenetic interactions are common throughout the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 and C7 provide clear statistical evidence with appropriate multiple testing correction. The comparison to null expectations (C29) and the enrichment of significant results strongly support the conclusion that interactions are widespread. The stringent significance threshold addresses concerns about false positives from massive multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C8",
+      "C9"
+    ],
+    "result": "Genetic-epigenetic interactions occur locally, with 49% of significant models having elements within 4 Mb of the affected gene, and models with at least one element within the same TAD as the gene being 3.7 times more likely to reach significance (3.3% vs 0.9%), demonstrating that interaction locality corresponds to TAD structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C8-C9 demonstrate clear enrichment of intra-TAD interactions with appropriate statistical comparisons. The 3.7-fold enrichment is substantial and the finding that co-localization of variants and ATAC peaks is not the primary driver (C31, <10%) strengthens the TAD-based interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Non-additive interacting models represent 32.29% of significant intra-TAD models, with 41.81% of ATAC-seq peaks exclusive to interacting models, while genetic variants show more overlap between model types (26.35% shared between interacting and additive models).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 quantify the distribution of regulatory elements across model types. The high proportion of ATAC-seq peaks exclusive to interacting models (C35) supports the conclusion that interaction analysis reveals regulatory elements not detectable by single-omics approaches. The data are clearly presented with reference to figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C10",
+      "C44",
+      "C45"
+    ],
+    "result": "TAD boundaries constrain genetic-epigenetic interactions, with 52,511 ATAC-seq peaks sharing a TAD with their interacting gene versus 24,229 in different TADs (odds ratio 1.48, p < 2.2\u00d710\u207b\u00b9\u2076). The likelihood of interaction is most strongly defined by 3D TAD structure rather than linear DNA sequence, and TAD-based searches consistently outperform linear sequence-based searches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C10, C44-C45 provide strong statistical evidence for TAD-based constraints with highly significant enrichment. The comparison between TAD-based and linear search methods (C45) directly tests the hypothesis. The identification of 29 highly interactive ATAC peaks (C38, >200 interactions each) exclusively within TADs provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "To capture 95% of inter-TAD interactions, a window of ~2.1 Mb upstream and ~2.6 Mb downstream of gene TSS is required. Interacting ATAC-seq peaks are enriched in gene bodies (65.37%), exons (34.41%, especially first exons), promoters (24.06%), and enhancers (6.09%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide clear quantitative characterization of interaction distances and genomic distributions. The window size determination (C39) is data-driven and the genomic feature enrichments (C40-C43) are well-documented, though the enhancer overlap is relatively low (C43, 6.09%), which may reflect incomplete enhancer annotations or cell-type specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "24.31% of genes (12,437 genes) have a TAD boundary close upstream to their TSS, which may explain differences between TAD-based and linear search methods near gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 provides a clear quantitative finding with figure support. This observation helps explain the unexpected depletion of interactions immediately flanking genes noted in the analysis, though the definition of 'close upstream' could be more precisely specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Interaction effects were of greater absolute value than ATAC-seq effects 61.24% of the time. Models indicating redundancy or interference were most common (40.53-39.54%), synergistic effects occurred in 17.02% of models, and unexpectedly, increased ATAC-seq signal had negative effects on gene expression in 40.76% of models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 characterize the magnitude and directionality of interaction effects with clear percentages. The finding that interaction effects often exceed main effects (C47) is notable and well-quantified. The high proportion of negative ATAC effects (C50) is surprising but documented, motivating further investigation in subsequent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ATAC-seq peaks with negative effects on gene expression are enriched for CTCF-binding motifs (53.3% vs 35.3% in positive effectors, p < 2.0\u00d710\u207b\u00b9\u2074) and SMAD3-binding sites (p < 1.5\u00d710\u207b\u2078). Negative effector CTCF motifs contain SNPs at much higher rates (96.1% vs 18.0% for positive effectors, p < 2.2\u00d710\u207b\u00b9\u2076) and show minimal overlap with ENCODE CTCF ChIP-seq data (2.04% and 1.87% vs 17.45% and 16.20%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide strong statistical evidence for motif enrichment with highly significant p-values. The dramatic difference in SNP content between negative and positive effector CTCF motifs (C53, 96.1% vs 18.0%) and low overlap with existing ChIP-seq data (C54) support the hypothesis of strain-specific CTCF binding disruption. The motif analysis methods are appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The Platr2 TAD contains 1031 significant interaction models (179 for Platr2 expression itself), with motif enrichment analysis identifying Smad3-binding motifs at 16 sites and CTCF-binding motifs at 15 sites, suggesting modulation of CTCF-binding strength. Previous studies identified Platr2 as a trans-eQTL regulator of developmental genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 provide a detailed case study with clear quantification and motif analysis. The connection to prior work (C56) provides biological context. However, the interpretation that motifs 'suggest modulation of CTCF-binding strength' (C57) is somewhat speculative without direct binding measurements in this specific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C89"
+    ],
+    "result": "CTCF ChIP-seq in four DO founder strains (C57BL/6J, CAST/EiJ, PWK/Ph, WSB/EiJ) identified 65,541 significant peaks (68.21% of results), with 90.65% overlapping known TAD boundaries. Only 52% of peaks were shared across all four strains (48% strain-specific), and 13% showed high variance in binding intensity (fold enrichment variance >10). PCA showed strain clustering by subspecies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 and C89 describe the ChIP-seq validation experiment with clear methods and results. The finding of substantial strain-specific CTCF binding (48%, C62) is well-documented. However, one PWK and one WSB sample were lost, which may affect power for those strains. The overlap with existing data (C63, 36.45%) and TAD boundaries (C61, 90.65%) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C13",
+      "C74"
+    ],
+    "result": "DO genotype at CTCF-binding sites predicts strain-specific CTCF binding intensity, with predictive power increasing from 16% (all peaks) to 31% (peaks in ATAC-seq regions) to 37% (non-additive interacting models) to 39% (negative effector peaks). In high-density interaction regions, the gap between negative and positive effectors widened to 44% vs 27%, confirming strain-specific CTCF binding linked to genetic variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69, C13, and C74 demonstrate progressive enrichment of predictive power through increasingly refined subsets, providing strong validation of the regression model's ability to identify functionally relevant genetic-epigenetic interactions. The hierarchical analysis is logical and the trend is clear, though the correlation percentages represent proportions of significant t-tests (p<0.05) rather than effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C71",
+      "C72",
+      "C73",
+      "C16",
+      "C77"
+    ],
+    "result": "The study demonstrates bidirectional inference: stable 3D genome structure (TADs) effectively guides searches for regulatory elements, and conversely, regulatory elements in genetically diverse populations provide a means to infer 3D genome structure. Patterns of genetic-epigenetic interaction reflect TAD structure, with TAD boundaries being more important than chromatin density, and linear proximity being insufficient for identifying gene-regulatory associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C71-C73, C16, and C77 represent the major conceptual conclusions of the study. These are well-supported by the collective evidence from interaction enrichment within TADs (C32, 3.7-fold), superior performance of TAD-based searches (C45), and validation via CTCF ChIP-seq (C65-C69). The bidirectional inference claim is substantiated by both the use of known TADs to find interactions and the ability to predict CTCF binding from interaction models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Open chromatin regions participating in the most significant regression models are enriched for developmental genes and the TAD-forming CTCF-binding complex, providing an opportunity for statistical inference of shifting TAD boundaries during early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C15 state enrichment for developmental genes and CTCF-binding complex, which is supported by the motif analysis (C51, C15). However, the claim about 'opportunity for statistical inference of shifting TAD boundaries operating during early development' is speculative. The study uses mESCs at a single developmental stage, so direct evidence for shifting boundaries during development is not provided. This would require time-course or differentiation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Integrating multi-omics data analysis in genetically diverse populations allows for greater specificity and modeling of complex regulatory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is a general methodological conclusion supported by the entire study. The demonstration that 41.81% of ATAC-seq peaks are exclusive to interacting models (C35) and that interaction models better predict CTCF binding (C67-C68) provides evidence for this claim. This represents a valid inference from the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Statistical and analytical methods included Bonferroni-adjusted p-value cutoff of p < 1\u00d710\u207b\u2077 for significant models, TAD data from Dixon et al. 2012 (mm9 lifted to mm10), motif analysis via MEMEsuite (MEME, STREME, Tomtom), and CTCF ChIP-seq following Oomen et al. 2019 protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 document key methodological choices with appropriate citations. The Bonferroni correction (C85) is appropriately stringent given the massive multiple testing. The use of published TAD data (C86) and established protocols (C87-C88) is well-documented. However, the TAD data are from a single B6 mESC line, which may not capture strain-specific variation that the study aims to detect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C75",
+      "C76"
+    ],
+    "result": "The manuscript reviews established knowledge about genetic-epigenetic interactions, TAD structure, and their biological significance, noting that prior analyses have been limited in scope, typically using 100-500 kb windows that approximate TAD size. TADs are ~1.1 Mb chromatin loops formed by CTCF and cohesin, believed to be largely cell-type invariant and conserved across species, with alterations linked to development and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C17-C23, C75-C76 represent background knowledge and literature review with appropriate citations. These establish the scientific context and motivation for the study. The characterization of prior work limitations (C3, C17) and the correspondence between conventional window sizes and TAD size (C18-C19) provide important context for the study's contributions.",
+    "result_type": "MINOR"
+  }
+]

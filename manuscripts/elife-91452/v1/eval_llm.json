@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C69",
+      "C70"
+    ],
+    "result": "E. coli exhibits chemotaxis toward high potassium concentrations in a linear gradient, accumulating with a drift velocity of 0.45 \u00b1 0.02 \u03bcm/s and an exponential steady-state distribution similar to MeAsp chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C22, C69, and C70 collectively demonstrate chemotactic accumulation in microfluidic gradients with quantitative measurements of drift velocity and exponential distribution. The experimental design is appropriate, and the comparison to established MeAsp chemotaxis provides validation. The use of established relationships (C70) to calculate drift velocity from fitted parameters is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "The motor CW bias response to potassium results from the chemotaxis signaling pathway, not from PMF changes, as evidenced by constant motor speed and lack of response in chemotaxis-defective strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C25, C26 provide converging evidence from bead assays showing attractant-like CW bias response with constant motor speed (ruling out PMF effects) and no response in chemotaxis-defective mutants. The control experiments (C25) are critical and well-executed. Claims C73, C74, C76 provide additional characterization showing over-adaptation similar to osmotaxis but with different mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C49",
+      "C50",
+      "C51",
+      "C56",
+      "C57"
+    ],
+    "result": "E. coli exhibits sensitive chemotactic response to potassium (K0.5 = 0.33 \u00b1 0.06 mM after pH correction, Hill coefficient = 0.88 \u00b1 0.14) with fast adaptation, though apparent imprecise adaptation is an artifact of pH effects on fluorescent proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27, C35-C39, C49-C51 document dose-response and adaptation kinetics via FRET assays. The critical insight is the pH correction (C36, C38, C49, C51) which reveals that apparent imprecise adaptation (C28, C33) was artifactual. The corrected Hill coefficient (0.88 \u00b1 0.14) is close to MeAsp (~1.2), supporting physiological relevance. The low K0.5 (C38, C56) demonstrates high sensitivity. However, the pH correction methodology relies on measurements from a no-receptor strain and assumptions about fluorophore behavior that could introduce systematic errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C75",
+      "C76"
+    ],
+    "result": "The chemotactic response is specific to potassium ions rather than chloride ions, as demonstrated by equivalent responses to KCl and K2SO4 at matched potassium concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C75, C76 provide direct experimental evidence comparing KCl and K2SO4 responses in both FRET and bead assays. The control is well-designed, using equivalent potassium concentrations (10 mM K+ from either 10 mM KCl or 5 mM K2SO4) to isolate the effect of the cation. The qualitative similarity of responses (C76) strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C68"
+    ],
+    "result": "The attractant response to potassium is independent of osmotaxis, as 30 mM KCl induces an attractant response while 60 mM sucrose (equivalent osmotic pressure) induces a repellent response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C34, C68 demonstrate that potassium chemotaxis is distinct from osmotaxis through direct comparison of responses to KCl and sucrose at equivalent osmotic pressure. The opposite signs of the responses (attractant vs. repellent) provide strong evidence. The quantitative measurements (C33, C34) show the response to 30 mM KCl was 1.79 \u00b1 0.10 times that to MeAsp, while sucrose was \u22120.30 \u00b1 0.05 times, clearly distinguishing the mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C58",
+      "C67"
+    ],
+    "result": "Addition of extracellular potassium increases intracellular pH while maintaining constant PMF, and this pH change mediates the chemotactic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41 provide direct pH measurements using pHlourin2 showing immediate pH increase upon KCl addition. Claim C58 integrates this with the constant PMF observation (C24) to propose the mechanism. Claim C67 states this as the main mechanistic conclusion. The evidence is strong, though the causal link between pH change and chemotactic response relies partly on inference from receptor-specific responses (addressed in another result).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C52",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Tar and Tsr receptors respond differently to potassium: Tsr exhibits attractant response while Tar shows biphasic response (repellent at <10 mM, biphasic at \u226510 mM), consistent with their known differential responses to intracellular pH changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C43, C44 document the differential responses in receptor-only mutants via FRET. Claims C7, C42, C45 connect these observations to known pH responses from literature. Claims C52, C60 explain wild-type behavior based on receptor expression levels. Claims C61, C62 provide additional detail on Tar concentration-dependence. The consistency with prior pH response literature (C42) strengthens the mechanistic interpretation, though the biphasic Tar response at high concentrations remains incompletely explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The apparent imprecise adaptation observed in FRET measurements was not due to chemosensing but resulted from differential pH effects on eCFP and eYFP brightness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C48 identify and explain an important experimental artifact. The observation in no-receptor strains (C47) rules out chemosensing. The YFP bleaching experiments showing similar CFP response before and after bleaching (C48) provide direct evidence for the pH artifact explanation. This is critical for correct interpretation of adaptation kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C64",
+      "C65"
+    ],
+    "result": "Computational simulations based on the measured potassium sensing mechanism predict that E. coli cells are periodically attracted to biofilms with lag times of 11.7-14.8 min (for 1-4 hr periods), closely matching experimental observations in B. subtilis and P. aeruginosa biofilms (9-35 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C64, C65 describe simulation results using experimentally-derived parameters. The simulated lag times (C54) fall within the range observed experimentally in other species (C55), providing validation. The phase delay decreasing with driving period (C64) matches experimental trends. The robustness to L0 parameter (C65) strengthens confidence. However, the comparison is across different bacterial species, and the simulation makes simplifying assumptions about the chemotaxis pathway that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The biphasic response of Tar to high potassium concentrations might result from pH effects on intracellular enzymes like CheRB and CheA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 is explicitly speculative, proposing a mechanism for the observed biphasic Tar response at high potassium concentrations. While the speculation is reasonable and cites relevant literature on pH effects on enzyme activity, no direct experimental evidence is provided to test this hypothesis. This remains an interesting but unvalidated mechanistic proposal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The differential responses of Tsr and Tar receptors to potassium may allow bacteria to adjust their response at different growth stages when receptor expression ratios vary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 proposes an adaptive explanation for the differential receptor responses, citing literature on growth-stage-dependent receptor expression. While the speculation is plausible and grounded in known biology, it is explicitly presented as speculation without direct experimental support. Testing this would require measurements across different growth stages, which were not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C71",
+      "C72",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background knowledge claims about potassium physiology, chemotaxis signaling pathway, and prior observations of potassium-mediated bacterial communication in biofilms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C8-C23, C71-C72, C77-C82) represent established knowledge from literature or general biological principles, appropriately cited. They provide necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with established understanding of bacterial physiology and chemotaxis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "E. coli senses extracellular potassium concentration changes sensitively via the chemotaxis signaling pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is the overarching conclusion supported by the convergence of multiple experimental approaches: microfluidic chemotaxis (C2, C21), bead assays (C3, C24-C26), FRET measurements (C4, C36-C39), and pH measurements (C40-C41). The evidence from multiple independent assays provides strong support for this central conclusion.",
+    "result_type": "MAJOR"
+  }
+]

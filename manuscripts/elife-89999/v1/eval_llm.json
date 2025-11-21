@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "BNT162b2 vaccination elicited anti-S IgG antibodies that peaked at 6 weeks and declined by 56.8% on average by 24 weeks, with neutralization activity following a similar pattern. Side effects were more severe after the second dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C11 collectively demonstrate the humoral immune response kinetics following BNT162b2 vaccination. The data from 43 individuals (C2) show clear temporal patterns in antibody titers (C5-C8) supported by ELISA and neutralization assays (Figure 1B-C), with side effect profiles (C3-C4, Tables 2-3) consistent with prior reports. The quantitative decline (C8) and correlation between antibody titer and neutralization (C9) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Anti-S antibody titers at 6 weeks post-vaccination showed no significant differences based on donor sex or age group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by data in Figure 1\u2014figure supplement 1 showing no significant differences in antibody titers across sex or age groups (20-39, 40-49, 50-59, 60-69). However, the sample size (n=43) and age distribution (only 2 donors aged 60-69) may limit statistical power for detecting differences in smaller subgroups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Eight donors were classified as either sustainers (n=4, <30% antibody reduction) or decliners (n=4, >80% reduction) between 6-24 weeks. Sustainers were confirmed uninfected by anti-N antibody testing, and antibody sustainability did not correlate with bulk IFN\u03b3 responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 establish the study groups for subsequent analyses. The classification criteria are clearly defined (C14-C15), infection status is appropriately controlled (C16, Figure 2\u2014figure supplement 1B), and the lack of correlation with bulk T cell responses (C17) is documented. However, the small sample size (n=4 per group) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C78",
+      "C79"
+    ],
+    "result": "Single-cell analysis revealed that sustainers, but not decliners, had enriched S-reactive Tfh-like cells appearing from 6 weeks post-vaccination. These cells showed high Tfh signature scores and expressed characteristic Tfh markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 and C78-C79 describe the key finding linking Tfh cells to antibody sustainability. The scTCR/RNA-seq data (Figure 2B-F) demonstrate differential Tfh enrichment between groups, with appropriate molecular characterization (C20, Figure 2D). The inference that these cells were established after the 2nd vaccination (C22) is reasonable given the 6-week timepoint data, though direct evidence of germinal center Tfh would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "From 199 highly expanded TCR clonotypes reconstituted into reporter cells, 78 S epitopes were successfully determined (53 from post-vaccination, 18 from pre-vaccination samples). These epitopes were distributed across the S protein without clustering in specific regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C75-C77 describe the epitope mapping results. The methodology using TCR reconstitution into reporter cells is well-established, and the success rate (53/128 for post-vaccination) is reasonable. The data in Tables 4 and 6 and Figure 3 support the distribution of epitopes across S protein domains. The technical rigor of epitope determination is demonstrated in supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C44",
+      "C45"
+    ],
+    "result": "Approximately 72% of identified T cell epitopes were conserved in Delta and Omicron variants. While some RBD epitopes lost antigenicity in VOCs, most non-RBD epitopes maintained or increased recognition, suggesting vaccine-induced T cells can respond to antibody-escaping variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C44-C45 address epitope conservation across variants. The quantitative analysis (72% conservation, Table 5) is supported by experimental data showing differential responses to mutated peptides (Figure 3\u2014figure supplement 3). The inference that T cells can recognize VOCs (C28, C45) is reasonable given the epitope conservation data, though functional T cell responses to actual VOC infection would provide stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C46",
+      "C47",
+      "C48",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Pre-existing S-reactive T cells were diverse and present before vaccination. Upon vaccination, CD8+ cytotoxic clonotypes expanded while most CD4+ cross-reactive clonotypes contracted, with most pre-existing clonotypes cross-reacting with environmental or symbiotic microbes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C46-C48, C71-C73 describe pre-existing T cell responses. The scTCR/RNA-seq data from pre-vaccination samples (Figure 4A-B) support the diversity and differential expansion patterns. The observation that CD8+ clonotypes expanded while CD4+ contracted (C31-C32, C47-C48) is clearly shown in Figure 4B. Cross-reactivity with environmental microbes (C72, Table 6) is experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C51"
+    ],
+    "result": "From pre-vaccinated samples, 18 S epitopes were identified with cross-reactive antigens predominantly from environmental or symbiotic microbes. The majority of these pre-existing reactive clonotypes showed Treg signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C51 characterize pre-existing S-reactive T cells. The epitope identification (C33) and cross-reactive antigen determination (C34, Table 6) are supported by experimental data. The Treg signature observation (C35, C51, Figure 5) is based on transcriptional profiling. However, functional validation of Treg activity would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Six pre-existing clonotypes were detected in public TCR databases, showing comparable frequencies between pre-pandemic healthy donors and COVID-19 patients, suggesting these clonotypes did not expand during infection and are unlikely to contribute to S-reactive T cell pools during vaccination or infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 analyze public TCR database frequencies. The data in Figure 6 support comparable frequencies between healthy and COVID-19 cohorts for most clonotypes (C37). The inference that these clonotypes don't contribute to protective immunity (C39) is reasonable but somewhat speculative, as lack of expansion doesn't definitively prove lack of function. The analysis is limited to 6 clonotypes out of 80 analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C68",
+      "C74"
+    ],
+    "result": "Donors with sustained antibody titers had more S-responsive Tfh-like clonotypes maintained peripherally. Early acquisition of S-specific Tfh clonotypes after vaccination is associated with antibody longevity and may serve as a marker for antibody sustainability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C68, and C74 present the study's main conclusion. The correlation between Tfh clonotypes and antibody sustainability is supported by the data (Figures 2-3). The proposal that Tfh polarization can serve as a marker (C43) is a reasonable inference but requires prospective validation. The mechanistic link (C42) is speculative, relying on cited literature (C41) about circulating Tfh reflecting germinal center populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C55",
+      "C56"
+    ],
+    "result": "Pre-existing cross-reactive T clonotypes are unlikely to contribute to vaccine-driven immunity, potentially due to low avidity to S protein or their development for tolerance to environmental antigens given their Treg signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50, C52, C55-C56 present mechanistic interpretations of why pre-existing clonotypes don't contribute to immunity. While the contraction of these clonotypes is documented (C73), the proposed mechanisms are speculative. The low avidity explanation (C50) relies on a single citation, and the tolerance hypothesis (C52, C55-C56) is inferred from Treg signatures without functional validation. These remain plausible hypotheses requiring further experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Pre-existing S-reactive clonotypes did not react with HCoV S proteins but instead cross-reacted with environmental or symbiotic bacteria, contrasting with some prior reports suggesting HCoV cross-reactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 address the source of cross-reactivity. The lack of HCoV reactivity (C53) is experimentally demonstrated (Figure 5\u2014figure supplement 2), and bacterial cross-reactivity (C54) is shown in Table 6. The authors appropriately note this may reflect cohort or ethnic differences. However, only two clonotypes were tested against HCoV peptides, limiting the generalizability of this negative finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C69",
+      "C70"
+    ],
+    "result": "The mRNA vaccine can prime rare T cell clonotypes that become dominant post-vaccination, as dominant S-reactive clonotypes were undetectable pre-vaccination. The types of CD4+ T clonotypes developed after two doses may indicate antibody longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C69-C70 address vaccine-induced clonotype dynamics. The observation that dominant post-vaccination clonotypes were undetectable pre-vaccination (C69, Figure 4B) supports the inference about priming rare clonotypes (C58, C70). The proposal that early CD4+ T cell types predict antibody longevity (C59) is supported by the correlation data but requires prospective validation in larger cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Background context from literature: mRNA vaccines show >90% efficacy at 2 months but waning antibody titers over 6 months necessitate boosters. T cell characteristics are critically involved in antibody longevity, with Tfh function correlating with neutralizing antibodies and being impaired in severe COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 provide literature context. These are appropriately cited claims from prior studies establishing the rationale for the current work. The citations appear accurate and relevant to the study's motivation. These contextual claims support the study's premise but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

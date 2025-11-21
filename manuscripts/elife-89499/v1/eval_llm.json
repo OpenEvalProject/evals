@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C77"
+    ],
+    "result": "NvClk is essential for maintaining circadian rhythmic behavior in constant darkness (DD) and constant light (LL) conditions, but not under light-dark (LD) cycles. NvClk\u0394/\u0394 mutants lost circadian rhythmicity in DD (1/24 rhythmic) and LL (1/26 rhythmic) compared to WT (17/25 in DD, 7/25 in LL), while maintaining 24-hr rhythms in LD conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral data from multiple light conditions (C4, C44-C46) consistently demonstrate loss of circadian behavior in constant conditions while maintaining rhythms in LD. Sample sizes are adequate (n=20-27 per group), and the phenotype is robust with clear statistical differences. The conclusion (C48, C77) is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Under LD conditions, NvClk\u0394/\u0394 mutants maintain 24-hr behavioral rhythms but show altered rhythmicity characteristics compared to WT, including a delayed acrophase (17.3 hr vs 13.3 hr) and reduced proportion of rhythmic individuals (9/20 vs 15/21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral data (C40-C42) provide clear quantitative evidence for maintained 24-hr rhythms with altered phase and penetrance. The statistical significance of the acrophase difference is stated, and the inference about altered rhythmicity mechanism (C43) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C79",
+      "C80"
+    ],
+    "result": "NvClk\u0394/\u0394 mutants respond directly to light cues, displaying 12-hr rhythms under LD 6:6 cycles (13/26 mutants vs 1/25 WT), while WT polyps maintain ~22-hr rhythms. This reveals a light-response pathway independent of the circadian clock that is normally overridden by the circadian pacemaker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LD 6:6 experiment (C49-C51) provides strong evidence for a light-response pathway, with clear differences between genotypes. The lack of 12-hr rhythm in DD after LD 6:6 entrainment (C52) supports that this is light-driven rather than entrained. The conclusions (C79, C80) are well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C63",
+      "C64",
+      "C86"
+    ],
+    "result": "NvClk is required for recruiting rhythmic gene expression in constant darkness. Using combined JTK and RAIN algorithms (p<0.01), 107 rhythmic genes were identified in WT under DD compared to only 37 in NvClk\u0394/\u0394, while both genotypes showed comparable numbers under LD (119 WT vs 147 mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data show clear differences in rhythmic gene numbers (C54-C55), the statistical approach is problematic. The authors acknowledge avoiding multiple testing correction due to low gene counts with stringent methods (C108-C110), then combine two algorithms without correction, risking false positives. The conclusions (C63, C64, C86) may be valid but require more rigorous statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Rhythmic genes in WT polyps show light-condition-dependent characteristics: delayed acrophase (17.20 hr vs 12.93 hr) and higher relative amplitude (0.61 vs 0.43) in DD compared to LD. These differences are absent in NvClk\u0394/\u0394 polyps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptomic data (C56-C59) show statistically significant differences in WT (Mann-Whitney p<0.001 for acrophase, p<0.05 for amplitude) but not in mutants (p>0.05). This supports differential regulation by light conditions in WT that is lost in mutants. Sample sizes are adequate for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C87",
+      "C88"
+    ],
+    "result": "Rhythmic genes organize into transcriptional time clusters of ~7-8 genes in WT under both LD and DD conditions. In NvClk\u0394/\u0394 polyps, cluster size is significantly reduced in DD (4.1 vs 8.6 genes/cluster), indicating NvClk is essential for organizing rhythmic gene expression in the absence of light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis (C60-C62) shows statistically significant reduction in cluster size in mutants under DD (p<0.05) but not LD (p>0.05). The DPGP clustering method is appropriate for time-series data. The conclusions (C87-C88) are well-supported, though the biological significance of these clusters requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C89"
+    ],
+    "result": "NvClk regulates the temporal organization of pacemaker genes into two anticorrelated clusters: a daytime-peaking cluster containing NvClk and a night-peaking cluster containing NvCipc and NvPar-bzipc. This organization is disrupted in NvClk\u0394/\u0394 mutants, with weakened anticorrelation and altered cluster composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation matrix analysis (C68-C69) provides clear evidence for temporal clustering of pacemaker genes and its disruption in mutants. The arrhythmic expression in DD (C65) is consistent with prior work. The altered expression patterns (C66-C67) support the model. The inferences about pacemaker organization (C70-C71, C89) are reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C93"
+    ],
+    "result": "Candidate pacemaker genes show significant enrichment of circadian E-boxes (CACGTG) in their promoters (15.9%) compared to rhythmic genes in WT (5.6%), NvClk\u0394/\u0394 (4.8%), and non-rhythmic genes (6.8%), suggesting NvClk orchestrates timing interactions of pacemaker factors to select downstream rhythmic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The promoter analysis (C72) shows statistically significant enrichment specifically in pacemaker genes. This supports direct regulation by NvCLK:NvCYCLE dimers. The conclusion (C93) about orchestrating timing interactions is a reasonable inference, though the lack of E-box enrichment in other rhythmic genes suggests additional complexity in the regulatory mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C95",
+      "C96"
+    ],
+    "result": "NvClk has light-dependent non-circadian functions. In DD, NvClk\u0394/\u0394 polyps show 2450 down-regulated and 1770 up-regulated genes with enrichment in cell division/microtubule processes (down) and neuronal/sensory processes (up). In LD, 457 down- and 646 up-regulated genes show no GO enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression analysis (C73-C76) uses appropriate methods (DESeq2, p.adj<0.05) and shows clear light-dependent effects. The dramatic difference in gene numbers between LD and DD supports light-dependent functions. GO enrichment analysis is properly conducted. The conclusions (C95-C96) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C98",
+      "C103",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "CLOCK has a conserved role in preserving circadian behavioral rhythms in the absence of light cues across cnidarians (Nematostella), flies (Drosophila), zebrafish, and mice, representing conservation across ~600 million years of evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison across species (C103, C105-C107) is well-supported by citations to previous research. The current data on Nematostella (C4, C44-C46) combined with literature on other species supports evolutionary conservation. However, the mouse data (C107) shows complexity with paralog compensation, indicating the conservation is not absolute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "NvClk is positioned within the cnidarian branch phylogenetically, contains conserved bHLH and PAS domains, and is expressed throughout Nematostella polyp tissue with enrichment in tentacle endodermis and mesenteries, similar to larval expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis (C31), domain structure (C32-C33), and expression pattern (C34-C35) are all supported by appropriate data and methods. The in situ hybridization includes proper controls (C100). The comparison to larval stages is supported by citation (C35). This provides solid characterization of the gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C102"
+    ],
+    "result": "CRISPR/Cas9 generated a NvClk\u0394 allele with a 20 bp insertion causing a frameshift and premature stop codon, producing a truncated 203 amino acid protein lacking 459 amino acids including one PAS domain. F2 genotyping confirmed expected Mendelian ratios (25% homozygous mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular characterization (C38-C39) is well-documented with sequence data. The Mendelian inheritance (C102) confirms germline transmission and lack of lethality. The methods describe appropriate genotyping approaches. This provides solid evidence for a loss-of-function or dominant-negative allele.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Heterozygous NvClk+/\u0394 polyps show an intermediate behavioral phenotype in constant darkness, with reduced rhythmicity compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data show an intermediate phenotype (C47), the authors acknowledge they cannot distinguish between dominant-negative and loss-of-function effects. The sample size (n=19) is adequate, but without additional functional data, the mechanism remains unclear. This limits interpretation of the mutation's nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Most rhythmic genes identified in LD differ from those in DD in WT polyps, consistent with previous cnidarian studies. Overlap with Leach and Reitzel 2019 data underscores robustness of pacemaker rhythmic transcription in LD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between LD and DD rhythmic genes (C83) is supported by the data and consistent with prior work. The overlap analysis with published data (C84) provides validation. However, the lack of overlap for downstream genes raises questions about experimental variability that the authors acknowledge may be due to differences in conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C85"
+    ],
+    "result": "A light-responsive pathway can partially compensate for circadian clock disruption in Nematostella, and the Clock gene has evolved to synchronize rhythmic physiology and behavior with diel environmental rhythms. However, this pathway may not fully replicate normal pacemaker functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral data showing maintained rhythms in LD but not DD (C4-C5) combined with the LD 6:6 experiment (C49-C51) strongly support a light-response pathway. The transcriptomic data showing minimal overlap between WT and mutant rhythmic genes in LD (C85) suggests incomplete compensation. The evolutionary conclusion (C11) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Two clusters of pacemaker genes were identified: one containing NvClk and another containing NvCipc (a potential inhibitor), suggesting organization into interlocked feedback loops with antiphase peaks. Altered cluster composition in mutants may cause desynchronization of pacemaker factor availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis identifies two clusters (C90) supported by data and citations. The inference about interlocked feedback loops (C91) is reasonable and supported by citations to circadian clock models in other organisms. However, the speculation about desynchronization (C92) is acknowledged as speculative and requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Using whole animals for sampling may mask oscillating gene expression signals if present in small cell populations or if tissues show rhythms in different phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly acknowledged as speculation (C94) about a potential limitation. While this is a valid concern for whole-organism transcriptomics, it remains untested. The authors appropriately identify this as a limitation requiring future investigation with cell-type-specific approaches.",
+    "result_type": "MINOR"
+  }
+]

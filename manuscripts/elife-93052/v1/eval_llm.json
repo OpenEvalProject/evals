@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Female mice require 40% greater food restriction than males to achieve similar 15% weight loss, despite consuming equal ad libitum food intake and weighing ~80% of males. This demonstrates that females are more resistant to weight loss than males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are well-supported by experimental data (Figure 1B,C) showing food intake and body weight measurements with appropriate statistical tests. The finding is consistent with cited prior literature on sex differences in weight loss resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Food restriction caused a significant 72% decrease in serum leptin in males but only a non-significant 28% decrease in females, despite similar 15% weight loss. This indicates females are more resistant to fat loss than males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C28 are supported by ELISA measurements (Figure 1D) with appropriate statistical tests (p<0.0001 for males, p=0.32 for females). The interpretation that leptin reflects fat mass (C29) and females resist fat loss (C30) is supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "In V1, food restriction significantly increased AMPK Thr172 phosphorylation (2.9-fold) and PPAR\u03b1 activity in males but not females (1.4-fold non-significant increase for AMPK, no significant change for PPAR\u03b1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C38 are supported by ELISA measurements (Figure 1E) with appropriate statistical tests. The sex-specific activation of energy-sensing pathways is consistent with the differential leptin response and supports the main hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RNA sequencing revealed food restriction significantly altered 657 genes in males and 585 in females (p-adj\u22640.1), with only 125 common to both sexes. Gene set enrichment analysis identified 34 significantly altered gene sets in males and 14 in females (p-adj\u22640.05), with 13 common to both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by RNA sequencing data analyzed with DESeq2 and GSEA (Figure 2B,C). The analysis methods are appropriate and the large sex difference in transcriptional response supports the main findings. Sample size (n=4 per group) is adequate for RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "In males, food restriction significantly regulated gene sets for oxidative phosphorylation, mTOR signaling, and fatty acid metabolism\u2014canonical energy-regulating pathways. These pathways were not significantly regulated in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C49 are supported by GSEA data (Figure 2D) showing significant enrichment in males but not females. The pathways identified are biologically relevant to energy metabolism and consistent with the AMPK/PPAR\u03b1 findings. The connection to leptin/AMPK signaling (C48) is supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Food restriction significantly decreased cortical ATP usage during visual stimulation by 24% in males (p=0.0067) but only 12% non-significantly in females (p=0.18). ATP usage in darkness was unaffected by food restriction in either sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by two-photon ATP imaging using FRET-based sensors (Figure 3B,C and supplement 1). The methodology is appropriate, sample sizes are adequate (n=10-12 per group), and statistical tests are correctly applied. The stimulus-dependent effect strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Food restriction significantly reduced orientation selectivity by 27% in males (p=0.0009) but only 13% non-significantly in females (p=0.08). Direction selectivity showed similar sex-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by calcium imaging data (Figure 3E,F and supplement 3) with appropriate statistical tests. The methodology for calculating OSI and DSI is well-established. Sample sizes (n=7-9 mice per group) are adequate for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Bayes factor analysis revealed BF10 for males was consistently several-fold greater than females across all parameters. Only 3/10 parameters in females had BF10<0.33, suggesting food restriction may have modest effects below statistical detection limits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by appropriate Bayes factor analysis (Figure 3 supplement 3) using recommended methods. The authors appropriately acknowledge the limitation that they cannot definitively rule out smaller effects in females. This statistical approach strengthens the interpretation of sex differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C66",
+      "C67",
+      "C96",
+      "C97"
+    ],
+    "result": "Cortical function and energy usage in female mice are more resilient to food restriction than males. The neocortex contributes to sex-specific energy-saving adaptations, extending findings from peripheral tissues to the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C10-C11, C66-C67, C96-C97) are well-supported by the convergent evidence from leptin measurements, molecular analyses, RNA-seq, ATP imaging, and visual coding experiments. The conclusion appropriately integrates multiple lines of evidence showing consistent sex differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Gene sets for estrogen-regulating pathways were significantly regulated by food restriction in males but not females. Food restriction in males also altered gene expression for inflammation and reactive oxygen species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by GSEA data (Figure 2C). The interpretation linking estrogen to energy expenditure (C51) is supported by citations. Claim C52 on inflammation/ROS is supported by GSEA (Figure 2D) and consistent with prior cortical studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Animals were imaged in cardboard tubes without locomotion, and pupil size during visual stimuli did not differ between groups, ruling out behavioral/attentional state differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by experimental descriptions and pupil measurements (Figure 3 supplement 2). These controls appropriately address potential confounds from arousal or attention differences between groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Decreased leptin is necessary for energy-saving changes in V1 during food restriction (from prior work). The lack of significant leptin decrease in females may explain minimal cortical impacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70-C71 appropriately cite prior work (Padamsey et al., 2022) establishing leptin's necessity. Claim C72 is reasonable speculation connecting the current leptin findings to cortical outcomes, though the causal link is not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C77",
+      "C84"
+    ],
+    "result": "Females may rely on alternative energy-saving strategies like reducing reproductive function. Estrogen may have overlapping effects with food restriction. mTOR inhibition may underlie ATP savings in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68, C77, and C84 are speculative interpretations not directly tested in this study. While plausible based on the data and prior literature, these mechanistic explanations require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Mammals have evolved sex-specific adaptations to food scarcity that are well-described for peripheral tissues but less understood in the brain. Females lose muscle/bone mass but resist fat loss and suppress reproductive functions more than males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C12-C15 appropriately summarize established knowledge from cited literature. These provide important context for the study but represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C22",
+      "C29"
+    ],
+    "result": "The brain requires substantial energy (20% of caloric intake in humans, >50% used by cortex). Leptin is secreted by adipocytes in proportion to fat mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C22, and C29 accurately represent established knowledge supported by appropriate citations. These provide necessary background but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C48",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "AMPK is activated by metabolic stress and reduces ATP expenditure through mTOR inhibition and regulation of oxidative phosphorylation. PPAR\u03b1 regulates fatty acid metabolism. Estrogen suppresses food intake, promotes energy expenditure, and enhances ATP production. mTOR signaling increases ATP usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C37, C48, C73-C76, C79, C81-C82 accurately represent established knowledge about energy metabolism pathways, supported by appropriate citations. This background is essential for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C56"
+    ],
+    "result": "Prior work in males showed food restriction reduced V1 energy usage and orientation selectivity, requiring decreased leptin. Males' cortex can reduce energy usage during food scarcity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C23, and C56 appropriately cite prior published work (Padamsey et al., 2022). This provides essential context for the current study comparing males to females.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Sex differences in calorie restriction effects are absent in older mice with declined estrogen. Previous studies found sex- and tissue-dependent regulation of AMPK/mTOR, including in skeletal muscle and cardiac tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C85-C87 appropriately cite relevant prior literature on sex differences in metabolic responses. These support the novelty and biological plausibility of extending such findings to the neocortex (C88).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Food restriction is widely used to motivate animals in cortical studies. The current findings suggest these protocols have greater impacts on basal cortical function in males. Prior work showed food restriction in juveniles impacts adult cognitive flexibility in males but not females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C89-C91 appropriately cite literature and draw reasonable implications from the current findings for experimental design and interpretation in neuroscience research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Various factors impact physiological responses to dietary manipulations. Diet impacts neurological diseases, and calorie restriction may be beneficial, but sex dependency is understudied. Males and females may respond differently to dietary interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C92-C94 appropriately cite literature. Claim C95 is reasonable speculation about clinical implications, appropriately qualified as 'conceivable' rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C80",
+      "C88"
+    ],
+    "result": "Food restriction significantly modulated energy-regulating pathways, ATP usage, and visual coding in V1 of males but not females. This extends sex-specific regulation of energy pathways to the neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C80, and C88 are high-level summaries well-supported by the convergent molecular, transcriptomic, and functional data. These represent the core findings integrating multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "mTOR signaling is ideally situated to regulate ATP usage in neuronal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is a reasonable inference based on established knowledge about mTOR's role (C82) and the experimental findings, though the specific role in this context is not directly tested.",
+    "result_type": "MINOR"
+  }
+]

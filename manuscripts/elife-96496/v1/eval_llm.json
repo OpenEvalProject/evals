@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C86"
+    ],
+    "result": "The authors developed PAClight1P78A, a genetically encoded fluorescent sensor based on the human PAC1 receptor with high dynamic range (\u0394F/F0 = 1066% in HEK293T cells, 883% in neurons), excellent PACAP selectivity (abolished VIP response via P78A mutation), and rapid activation kinetics (\u03c4ON = 1.15 s). The sensor was engineered through iterative optimization of cpGFP insertion site, ICL2 mutations, C-terminal modifications, and ECD mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C22-C33, and C86 collectively demonstrate successful sensor development with well-characterized properties. The dynamic range measurements are supported by experimental data in multiple cell types (C32-C33), selectivity is demonstrated through VIP response abolishment (C31), and kinetics are quantified (C5, C37). The iterative optimization process is documented with specific \u0394F/F0 values at each step (C23-C29), providing strong evidence for the engineering approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The spectral properties of PAClight1P78A were characterized, showing excitation maximum at 498 nm in the saturated state, isosbestic point at 420 nm, and emission maximum at 514 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 report spectral characterization data that are standard measurements for fluorescent sensors. The values are explicitly stated and supported by Figure 1e showing excitation and emission spectra. These measurements are essential for proper sensor usage and are consistent with cpGFP-based sensors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The activation kinetics of PAClight1P78A can be modulated by antagonist peptides, with the response being approximately fourfold slower (\u03c4ON ~5.2 s) in the presence of PACAP6-38 antagonist compared to PACAP1-38 alone (\u03c4ON = 1.15 s), suggesting the sensor can be used to infer ECD occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 demonstrate that sensor kinetics reflect ligand-receptor interactions at the ECD. The fourfold difference in activation time constants is quantified and supported by Figure 1f-g. This finding is consistent with prior work on class-B1 sensors (C38) and provides mechanistic insight into sensor function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "PAClight1P78A shows stable fluorescence response to PACAP1-38 without internalization over extended imaging periods, and the response can be partially reversed by the PAC1R antagonist Max.d.4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 demonstrate sensor stability and reversibility through long-term imaging experiments (Figure 2a). The lack of internalization over >100 frames and partial reversibility with antagonist are important characteristics for drug screening applications. However, the incomplete reversal by Max.d.4 suggests either incomplete competition or slow off-kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "PAClight1P78A demonstrates high selectivity for PACAP ligands across species (mammalian PACAP1-38: 1052% \u0394F/F0, chicken PACAP38: 896%, zebrafish PACAP2: 898%) and partial activation by Maxadilan (416%), while showing no significant response to VIP (57%), Drosophila amnesiac peptide (26%), or other class-A and class-B1 GPCR ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 comprehensively demonstrate sensor specificity through systematic peptide screening (Figure 2b). Statistical significance is reported for PACAP responses (p < 0.05), while VIP and other peptides show no significant activation above baseline. The cross-species PACAP activation supports broad applicability, though the reduced Maxadilan response may reflect the P78A mutation's impact on ECD binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "PAClight1P78A does not recruit miniGs, miniGsq, or \u03b2-arrestin2 upon PACAP1-38 stimulation, while wild-type PAC1R shows significant recruitment of all three signaling partners, indicating the sensor does not induce artificial PACAP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate through NanoLuciferase complementation assays that the sensor is functionally inactive for downstream signaling (Figure 2\u2014figure supplement 1). This is critical for applications where endogenous signaling must not be perturbed. The positive control with wild-type PAC1R validates the assay, and the complete absence of recruitment in the sensor is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Control sensors PAClight1-ctrl and PAClight1P78A-ctrl were engineered with R199A/Y161A double mutations that abolish PACAP1-38 binding by disrupting interactions with the critical D3 residue of PACAP, reducing fluorescent response to baseline levels (PAClight1P78A-ctrl: 10.44% \u0394F/F0 vs. PAClight1P78A: 1034%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 describe structure-guided engineering of non-responsive control sensors. The approach is rational, based on cryo-EM structure (C56) and prior biochemical studies (C55). The dramatic reduction in response (>99% decrease) with statistical significance (p < 0.0001, C61) demonstrates successful abolishment of ligand binding. These controls are essential for in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "PAClight1 exhibits 2.15-fold higher basal brightness than the dopamine sensor dLight1.3b in stable cell lines, as measured by flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 reports a quantitative comparison of basal brightness between sensors using flow cytometry with appropriate statistical analysis (Welch's t-test, p < 0.0001). The comparison to dLight1.3b provides context for the sensor's brightness. However, the biological significance of this difference for practical applications is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Stable PAClight1P78A cell lines show 62.6% lower variability in expression levels compared to transiently transfected cells, as measured by standard deviation in FITC-A channel across titration series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 demonstrates improved homogeneity in stable cell lines through flow cytometry analysis (Figure 3b). The statistical significance (p = 0.0142) and large effect size support the conclusion. This finding is important for high-throughput screening applications where reproducibility is critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Dose-response characterization reveals PAClight1P78A has slightly lower affinity for PACAP1-38 (EC50 = 29.91 nM) than PAClight1 (EC50 = 22.97 nM), while PAClight1 shows much lower affinity for VIP (EC50 = 1.238 \u03bcM), consistent with 100-1000\u00d7 selectivity reported for native PAC1R. PAClight1P78A shows no detectable response to VIP up to 50 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide quantitative pharmacological characterization using stable cell lines and flow cytometry (Figure 3d). The EC50 values are well-determined, and the VIP selectivity data are consistent with prior literature (C66). The lack of VIP response in PAClight1P78A validates the P78A mutation's effectiveness. The slight affinity reduction in PAClight1P78A is expected given the ECD mutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "PAClight1P78A functions in acute mouse brain slices, showing dose-dependent fluorescence increases to PACAP1-38 (300 nM: +6.8% \u0394F/F0; 3000 nM: +17.5% \u0394F/F0) with statistically significant difference from control sensor at 3000 nM, while showing no response to VIP, CRF, or ENK at 3 \u03bcM, detecting concentrations >300 nM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C68-C73 demonstrate ex vivo functionality in brain tissue (Figure 4d-e). The dose-response is clear, though the dynamic range is much lower than in cell culture (~17% vs. ~1000%), likely due to tissue penetration and diffusion limitations. Statistical analysis supports the 3000 nM response, and specificity is maintained. The detection limit of >300 nM is appropriate for exogenous application studies but may limit endogenous detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In vivo fiber photometry in behaving mice shows PAClight1P78A responds to PACAP1-38 microinfusion (300 \u03bcM, 200 nl) with peak fluorescence increase of 165.5 \u00b1 58.0% \u0394F/F0 at 28 min, while control sensor shows only 16.7 \u00b1 2.6% increase. The sustained response and distance from injection site (~318 \u03bcm) suggest efficient diffusion and slow extracellular degradation of PACAP1-38 in neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C74-C78 demonstrate in vivo functionality with clear sensor vs. control differences (Figure 4g). The large dynamic range in vivo (>160%) is impressive. However, the slow kinetics (peak at 28 min) and sustained response raise questions about whether this reflects true PACAP dynamics or slow diffusion/clearance. The inference about diffusion and degradation (C77-C78) is reasonable but somewhat speculative without direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PAClight1P78A functions in living zebrafish larvae, showing strong fluorescence increase (~120 s post-ICV injection) with 70-fold higher peak \u0394F/F0 in PACAP1-38-injected animals (145.76%) vs. saline controls (2.06%), though with considerable inter- and intra-animal variability in dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C79-C85 demonstrate cross-species functionality in zebrafish (Figure 5). The statistical significance (Kolmogorov-Smirnov test p = 0.0079) and large effect size (70-fold difference) support the main finding. However, the high variability (C85) is concerning and may reflect differences in expression levels, injection accuracy, or local PACAP diffusion. The authors acknowledge but do not fully explain this variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors propose that variability in sensor responses in vivo may result from variations in PACAP1-38 diffusion rates and spatial patterns within brain tissue, distance from injection site, slow peptide clearance due to enzymatic saturation, or long-lasting PAC1R activation, and suggest the sensor could be used to study ligand diffusion properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C94 present multiple hypotheses to explain observed variability and slow kinetics, but these remain speculative (marked as SPECULATION in evidence_type). While the hypotheses are reasonable and supported by some observations (sustained fluorescence, distance effects), they lack direct experimental validation. Additional experiments measuring peptide concentration, enzymatic activity, or receptor occupancy would be needed to distinguish between these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors explicitly state they did not demonstrate detection of endogenous PACAP release, and suggest that bulk/epifluorescent imaging is unlikely to reveal endogenous release given femtomolar-nanomolar physiological concentrations, though future optimization and two-photon imaging near release sites may enable endogenous detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 appropriately acknowledge limitations and provide realistic assessment of the sensor's current capabilities. The inference that bulk imaging cannot detect endogenous PACAP (C96) is reasonable given the measured detection limit (>300 nM in slices) and reported physiological concentrations. The suggestions for future improvements (C97-C98) are speculative but well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The introduction establishes that class-B1 GPCRs are important drug targets that are difficult to study, PACAP/PAC1R system has widespread clinical relevance, and few GPCR-based sensors exist for class-B1 receptors, providing context for the sensor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C21 provide background context supported by appropriate citations to prior literature. These claims establish the scientific rationale for developing the sensor but do not represent novel findings from this work. The statements about PACAP biology, receptor pharmacology, and existing sensor limitations are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors suggest PAClight1P78A should be used when maximal PACAP selectivity is needed, PAClight1 for other applications to preserve wild-type ECD, and propose the sensors can be valuable for investigating PAC1R activation dynamics and drug diffusion in cells and animal models, with potential for grafting-based generation of additional class-B1 sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89, C99-C101 provide appropriate recommendations for sensor usage and suggest future applications. The recommendations about sensor choice (C88-C89) are logical given the characterized properties. The suggested applications (C99-C101) are reasonable extrapolations from the demonstrated capabilities, though some remain speculative (C87, C92, C101). The overall assessment that these are valuable tools is supported by the comprehensive characterization.",
+    "result_type": "MINOR"
+  }
+]

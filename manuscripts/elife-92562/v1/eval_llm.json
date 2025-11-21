@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The manuscript presents established biological facts about C. elegans as a model organism, including its neuronal structure (302 neurons, 165 somatic cells), muscle anatomy (four muscle strands with specific cell counts), developmental timeline (~3 days to maturity), physical properties (transparent body, hermaphroditic reproduction), and suitability for research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5, C12-C16, C73-C76) represent well-established knowledge about C. elegans supported by appropriate citations to authoritative sources (White et al., 1986; Cook et al., 2019; Hall and Altun, 2008). The claims are consistent with the scientific literature and serve as valid background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C77"
+    ],
+    "result": "C. elegans locomotion is characterized by sinusoidal body bending driven by anisotropic friction forces, where the difference between perpendicular and parallel frictional forces generates thrust for forward/backward movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C77 describe established principles of C. elegans locomotion supported by multiple citations (Berri et al., 2009; Boyle et al., 2012; Hu et al., 2009; Niebur and Erd\u00f6s, 1991). These represent accepted mechanistic understanding of nematode movement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Prior mechanical simulators of rod-shaped animals exist but, according to the authors, no kinetic model previously reproduced complex C. elegans locomotion behaviors (forward, backward, turns) from experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 accurately cite prior work, but C80's assertion of novelty ('to our best knowledge') is difficult to verify without comprehensive literature review. The distinction between 'kinematic' and 'kinetic' models and what constitutes 'complex locomotion behavior' may be subjective, making the claimed gap uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C19",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors developed ElegansBot, a Newtonian two-dimensional rigid body chain model consisting of 25 connected rods with damped torsional springs representing muscle actuators, anisotropic Stokes friction, and control angles derived from experimental kymograms, solved using semi-implicit Euler numerical integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C19, C49-C50 describe the model architecture and methodology. The approach is clearly documented with appropriate physical assumptions (anisotropic friction from Boyle et al., 2012; viscoelastic muscle properties from Hill, 1938). The semi-implicit Euler method is appropriate for the stiff equations encountered with high friction coefficients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C55",
+      "C26",
+      "C56",
+      "C57"
+    ],
+    "result": "ElegansBot simulations of crawling behavior produce an average velocity of 0.208 mm/s, matching experimental values, with force distribution patterns showing diagonal body parts generating thrust, consistent with snake locomotion and experimental traces on agar plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C55, C26, C56, C57 demonstrate validation of crawling behavior. The simulated velocity matches multiple experimental studies (Cohen et al., 2012; Jung et al., 2016; Omura et al., 2012; Shen et al., 2012), and force patterns are consistent with both snake locomotion (Hu et al., 2009) and C. elegans traces (Yeon et al., 2018). Figure 2 and Figure 2\u2014figure supplement 1A provide visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C28"
+    ],
+    "result": "ElegansBot simulations of swimming behavior produce an average velocity of 0.223 mm/s with significant speed oscillations over time, where the worm gains momentum during c-shaped bending phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C27, C28 describe swimming dynamics with support from Figure 2\u2014figure supplement 1B. The oscillatory speed pattern and c-shape propulsion mechanism are consistent with lower friction coefficients in water compared to agar. However, no direct experimental velocity comparison is provided for swimming (unlike crawling).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C71",
+      "C72",
+      "C84"
+    ],
+    "result": "ElegansBot successfully reproduced complex C. elegans behaviors including crawling, swimming, omega-turns, delta-turns, and escaping behavior (forward-backward-turn-forward sequences), with trajectories accurately matching experimental videos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, C71, C72, C84 demonstrate the model's capability to reproduce diverse behaviors. Trajectories are compared to experimental videos (Broekmans et al., 2016; Vidal-Gadea et al., 2011) with visual evidence in Figures 2-3. The use of Tierpsy Tracker and WormPose (C63-C65) to extract kymograms provides methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "During omega-turns and delta-turns, the worm performs deep body bends that generate significant propulsion from the bend region to change direction, a mechanism newly discovered using ElegansBot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 presents a novel mechanistic insight supported by simulation data in Figures 3C and 3D. The force analysis during deep bends (also quantified in C29-C38) provides evidence for this propulsion mechanism. However, experimental validation of this specific mechanism would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C40"
+    ],
+    "result": "During escaping behavior, the worm produces 7.85\u00d7 more power during backward locomotion and 5.31\u00d7 more power during turning compared to initial forward locomotion, with 2.62\u00d7 more power after resuming forward movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C40 provide quantitative power analysis from simulation data shown in Figure 4A. The calculations are based on the model's force and velocity outputs. The behavioral classification method is detailed in the Methods section. However, these are model predictions without direct experimental power measurements for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "During delta-turns, the worm produces 3.18\u00d7 more power in backward locomotion, 4.99\u00d7 more power in brief forward locomotion following backward movement, and 3.71\u00d7 more power during turns compared to initial forward locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C40 provide quantitative power analysis for delta-turns from simulation data in Figure 4B. The pattern of increased power during complex maneuvers is consistent with escaping behavior. As with escaping behavior, these are model-derived predictions lacking direct experimental validation of power expenditure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Unlike previous work that eliminated inertia from equations of motion, ElegansBot includes inertia, allowing calculations in low-friction environments where inertia is significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 accurately contrasts the current model with prior work (Berri et al., 2009; Boyle et al., 2012). The inclusion of inertia and development of semi-implicit Euler methods for numerical stability represents a methodological advancement, particularly relevant for swimming simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ElegansBot enables kinetic analysis for calculating energy expenditure, can recover trajectories from kymograms alone, could interface with neural network models, and may generalize to other rod-shaped animals and robots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62 describe potential applications and capabilities. C59 and C60 are supported by the model's design, but C61-C62 are speculative ('could be used', 'may generalize'). These represent promising directions but lack demonstration or validation, making them uncertain as established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The implementation used experimental videos from Broekmans et al. (2016), extracted kymograms using Tierpsy Tracker and WormPose, implemented equations in Python 3.8, achieved real-time performance (10s simulation in 10s runtime), and used friction/elasticity coefficients from Boyle et al. (2012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 describe methodological details with appropriate citations and specificity. The computational performance (C67) is clearly stated. The use of established software tools (Tierpsy Tracker, WormPose) and parameter values from literature provides methodological transparency and reproducibility.",
+    "result_type": "MINOR"
+  }
+]

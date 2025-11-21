@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C37",
+      "C38"
+    ],
+    "result": "Participants' confidence in judging collapse trajectories as normal decreased gradually as a function of the angle \u03b8 from vertical, best fit by a Gaussian distribution with \u03c3=19.9\u00b0. This pattern was consistent across participants (\u03c3 ranging 11.1-37.1\u00b0) and unaffected by azimuthal angle \u03c6 or the addition of a wall to block wind, suggesting gravity's direction is encoded as a Gaussian distribution rather than a deterministic vertical vector.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding, stating 'participants did not model gravity as single, fixed vector for gravity but instead as a distribution of possible vectors' with 'the width of this distribution was quite large (~20 degrees).' The experimental evidence is described as 'generally solid' and 'all experiments...being consistent with the proposed account.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C39",
+      "C40"
+    ],
+    "result": "The Gaussian representation of gravity's direction remained consistent across different visual contexts: participants showed high agreement between upright and upside-down conditions (r=0.91, p<0.01), with \u03c3 values not significantly different (19.9\u00b0 vs 17.2\u00b0). This cognitive impenetrability suggests the world model on gravity is encapsulated as a cognitive module.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the control experiments addressing cognitive impenetrability, noting 'the authors include several control experiments to test this possibility' of alternative explanations. The editor states 'the authors also added a number of control experiments that address some of the most pressing concerns,' indicating acceptance of this evidence for the stochastic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The Mental Gravity Simulator (MGS) with stochastic gravity representation better matched human stability judgments than the deterministic Natural Gravity Simulator (NGS). While both correlated with human judgments (NGS: r=0.70; MGS: r=0.75), the MGS showed no inference bias (0.04, p>0.05) compared to NGS's significant bias (-0.31, p<0.01). The MGS also replicated the human illusion that taller stacks are more prone to collapse, with inference bias increasing monotonically with height.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this finding, stating the stochastic model 'fits humans' stability inference behavior better than the deterministic model' and noting it 'provides new insight into the daily illusion that taller objects are perceived as more likely to collapse.' The experimental evidence is described as 'solid' and consistent with the proposed account.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C61",
+      "C62"
+    ],
+    "result": "A reinforcement learning framework demonstrated that a stochastic representation of gravity's direction emerges through agent-environment interactions. After training, the model converged to a Gaussian distribution (\u03c3=21.6\u00b0) similar to human participants. When trained on worlds with different stack heights, all models maintained Gaussian distributions but with \u03c3 decreasing monotonically as block numbers increased.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this computational finding, stating 'A reinforcement learning model with an initial uniform distribution for gravity's direction ultimately converged to a precision on the same order as the human participants, which lends support to the authors' conclusion and suggests that this distribution is learned through experience.' This is treated as strong supporting evidence for the origin of the stochastic representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The stochastic MGS provided superior efficiency compared to the deterministic NGS by balancing accuracy and speed. While NGS achieved higher plateau accuracy (95.3% vs 80.1%, p<0.001), MGS reached decision-making plateau much faster (27.1% vs 75.2% of total time, p<0.001), resulting in significantly higher overall efficiency (3.49 vs 1.32, p<0.001).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly recognize this finding, noting 'further simulations suggest that representing gravity with such a wide distribution may balance speed and accuracy, providing a potentially normative explanation for the world model with gravity as a distribution.' They describe this as providing 'a normative explanation based on a resource-rational framework' for the stochastic representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Human stability inference variance best matched the MGS after three simulations, suggesting humans run mental simulations a limited number of times rather than extensively sampling to infer stack stability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is implicitly accepted as part of the overall model validation. Reviewers state the 'experimental evidence is generally solid' and all simulations are 'consistent with the proposed account,' without raising concerns about this specific claim regarding simulation number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors argue their stochastic model is favored over a theoretically equivalent deterministic model with external perturbations based on cognitive impenetrability and self-consistency observed in the experiments, which do not require resorting to external noise to explain the illusory instability of taller objects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge this is a key theoretical distinction but express uncertainty about fully ruling out alternatives. The anonymous reviewer states 'The possibility of inferred external perturbations, as opposed to a stochastic world model, is difficult to rule out' and notes 'it will likely take many, clever studies, to fully reconcile these two alternative accounts.' While control experiments were added, complete disambiguation remains challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The study's main conclusion is that the world model on gravity is not a faithful replica of physical laws but rather a stochastic model encoding gravity's direction as a Gaussian distribution. This stochastic feature explains the height-instability illusion, likely originates from experience-dependent learning, and provides ecological advantages by balancing accuracy and speed for efficient survival.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support the main conclusions, with the editor stating this is 'a valuable study' presenting findings that 'people do not faithfully replicate the physics of the real world but rather have a stochastic world model, specifically a stochastic representation of gravity.' The evidence is described as 'generally solid' with 'all experiments and model simulations being consistent with the proposed account.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background claims establishing that humans can rapidly judge physical stability, that infants show early intuitive physics knowledge, that neural substrates exist for gravity-based inference, and that previous theories proposed noisy Newtonian frameworks where uncertainty arises from external sources rather than the world model itself.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are not directly discussed by reviewers but are implicitly accepted as established context. Reviewers focus their evaluation on the novel findings rather than questioning the foundational literature, indicating acceptance of this background framing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Methodological details about participant samples, experimental procedures, data exclusion criteria, and ethical approval for the psychophysics experiments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about the experimental methods or sample characteristics. The editor notes that 'the authors also added a number of control experiments that address some of the most pressing concerns,' suggesting methodological rigor was scrutinized and found acceptable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Theoretical interpretations and speculative implications suggesting the stochastic feature may emerge through predictive coding mechanisms, that this links human cognition to physical world constraints, and that these insights may inform development of human-like AI and provide ecological advantages for survival and adaptation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the theoretical framework, with the anonymous reviewer noting the authors 'provide a normative explanation based on a resource-rational framework for why people may have a stochastic world model instead of a deterministic world model.' These interpretations are treated as reasonable extensions of the empirical findings rather than being challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The stochastic world model on gravity provides an example of how a priori knowledge of the physical world is implemented in mind to help humans operate flexibly in open-ended environments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim is implicitly supported by reviewers' overall positive assessment. The editor describes this as 'a valuable study' and reviewers note it presents 'surprising findings' that contribute to understanding of intuitive physics, indicating acceptance of its significance as an example of world model implementation.",
+    "result_type": "MAJOR"
+  }
+]

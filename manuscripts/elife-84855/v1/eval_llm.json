@@ -1,0 +1,492 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C20",
+      "C21",
+      "C28",
+      "C34",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C135",
+      "C136"
+    ],
+    "result": "The study analyzed 22,001 Nature news articles from 2005-2020, extracting >88,000 quotes and >15,000 citations, and compared these to first/last authors from >10,000 Nature papers and 38,400 Springer Nature papers using computational methods to predict gender and name origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C20-C21, C28, C34, C42-C43, C45-C47, C135-C136 collectively describe a comprehensive data collection and processing pipeline. The manuscript provides detailed methodology, sample sizes, and processing steps with sufficient specificity to support the data acquisition claims. The use of established tools (Scrapy, coreNLP, Springer Nature API) and clear documentation of article types and filtering criteria strengthen the methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C185",
+      "C186"
+    ],
+    "result": "Gender prediction was performed using genderizeR/genderize.io with binary classification (\u226550% probability threshold), validated on 30 randomly selected articles, achieving <6% error rate overall but with reduced performance on Asian names; the study analyzed quote proportions rather than unique speakers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56, C185-C186 describe the gender prediction methodology with appropriate validation (C51) and acknowledgment of limitations (C50, C53). The cited error rate <6% (C52) is supported by external validation studies. The analytical choice to use quote proportions (C55-C56) is clearly justified. However, the reduced performance on Asian names (C53) combined with the finding of no large difference in gender prediction between East Asian and other origins (C54) requires careful interpretation but doesn't invalidate the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C73",
+      "C74",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Name origin prediction used Wiki-2019LSTM to classify names into 10 categories using probability assignments rather than hard classification to avoid bias, with the explicit purpose of estimating perceived ethnicity rather than assigning individual identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C73-C74, C144-C147 describe a methodologically sound approach to name origin prediction. The use of probability assignments (C60) rather than hard classification (C59) is justified by cited research on bias reduction. The clear statement that this estimates perceived ethnicity (C73-C74) rather than individual identity is an important conceptual clarification. The exclusion of US/Australia/Canada from training data (C146-C147) is a documented limitation that affects interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C64",
+      "C66",
+      "C67"
+    ],
+    "result": "Nature science journalism showed a skew toward quoting men, with the proportion declining from 87.09% in 2005 to 68.86% in 2020, with a notable decrease between 2017-2018; quotes from predicted men initially exceeded but currently fall below the proportion of male first/last authors in Nature papers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C23, C64, C66-C67 present a clear temporal trend in gender representation with specific quantitative data. The finding is supported by Figure 2c and consistent across multiple analytical approaches. The comparison to authorship rates (C23) provides important context. The identification of a specific temporal shift (2017-2018, C67) is data-driven and adds precision to the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C102"
+    ],
+    "result": "Quotation in Nature news is trending toward gender parity at a faster rate than authorship rates in academic publishing, with women's representation in scientific news increasing and outpacing first and last authorships on scientific papers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C102 describe a key comparative finding supported by temporal trend data in Figure 2c. The comparison between quote trends (declining male proportion) and relatively stable authorship proportions (C65) provides clear evidence for this conclusion. This represents a positive trend in journalism practices relative to the underlying academic demographics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C71",
+      "C72",
+      "C162",
+      "C163"
+    ],
+    "result": "Gender disparity in Nature quotes varied by article type, with 'Career Feature' achieving gender parity (449 quotes each from predicted men and women), and each article type independently trending toward parity; content focused on career aspects rather than recent publications may accelerate progress toward gender parity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C24, C71-C72, C162-C163 identify article-type-specific patterns with precise quantitative data for Career Feature (C71). The finding that Career Feature achieved parity while other types did not (C24) is well-supported by Figure 2e. The recommendation (C162) follows logically from the data, though the caveat (C163) appropriately notes that different forms of recognition may not be equally valued.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C80",
+      "C81",
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C103"
+    ],
+    "result": "There is significant over-representation of predicted Celtic/English name origins and under-representation of predicted East Asian name origins in both quotes and citations from Nature news articles, with the disparity more pronounced in quotes (never >8.2%) than citations, despite East Asian names constituting 7.3-24.6% of cited last authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C80-C81, C84, C87-C90, C103 describe a major finding on name origin disparities supported by extensive data in Figure 3 and Tables 6-7. The quantitative comparison between quote rates (<8.2%, C89) and citation rates (7.3-24.6%, C90) demonstrates a substantial disparity. The finding is consistent across multiple comparisons (Nature vs Springer Nature, first vs last authors) and represents a novel contribution (C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C159"
+    ],
+    "result": "The disparity in East Asian name representation was substantially reduced when considering only quoted speakers who were also cited in the same article, indicating that expert opinions gathered beyond manuscript authors are responsible for a large proportion of the observed disparities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C159 present a key mechanistic insight supported by Figure 3\u2014figure supplement 4. The comparison between all quotes and cited-only quotes reveals where in the journalistic process the disparity arises. This finding has important implications for interventions, though the inference about causation (C93) is reasonable but not definitively proven by the correlational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Journalists with predicted East Asian name origins quoted East Asian speakers at higher rates (24.3%) compared to journalists with Celtic/English (3.8%) or European (8.6%) predicted names, but this difference was nearly eliminated when restricting to quoted and cited speakers, suggesting journalist name origin associates with sources gathered outside directly cited works.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 identify an important pattern in journalist behavior supported by Tables 8-10. The quantitative differences are substantial (C94) and the attenuation when restricting to cited speakers (C95) supports the inference about source gathering patterns (C96). However, the sample size for East Asian journalists may be limited, and confounding factors (geographic location, language, networks) are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C69",
+      "C70"
+    ],
+    "result": "Last authors were more frequently predicted to be men than first authors in both Nature and Springer Nature papers, with gender proportions remaining relatively stable over time; quotes showed slight bias toward last authors, but this does not explain the temporal trend in quote gender ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C65, C69-C70 describe authorship patterns that provide important context for interpreting quote disparities. The finding of stable authorship proportions (C65, C70) contrasted with changing quote proportions (C66) is well-supported by Figure 2c. The analysis of authorship position of quoted speakers (C69) appropriately rules out this as an explanation for temporal trends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "In citations within news articles, Celtic/English and European name origins were most frequent (17.9-39.6%), East Asian third (7.3-28.1%), with all others <8.1%; citation patterns showed slight over-representation of Celtic/English and under-representation of East Asian names for first authors but not last authors when compared to Nature, with some differences when compared to Springer Nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C82-C83, C85-C86 describe citation patterns that are less disparate than quote patterns. The quantitative data from Figure 3\u2014figure supplement 1b-c and Tables 6-7 support these findings. The differential patterns for first vs last authors (C82) and Nature vs Springer Nature (C85-C86) add nuance, though the reasons for these differences are not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "There are more first authors with predicted East Asian name origins than last authors (contrasting with Celtic/English and European patterns), and this proportion is increasing faster than quotes are increasing, potentially leading to increasing erasure of early career scientists with East Asian name origins if trends continue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 describe a concerning temporal trend supported by the data, though C100-C101 are speculative projections about future impacts. The observation of differential representation by career stage (C97-C98) is well-supported, and the temporal divergence (C99) is documented. However, the projection of future erasure (C100) and the recommendation (C101) are reasonable inferences but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "The pattern of over-representation for Celtic/English and under-representation for East Asian name origins was also found in mentions (likely paraphrased speakers), with additional under-representation of Hispanic, South Asian, and Hebrew name origins when compared to Springer Nature authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 extend the quote findings to mentions, supported by Figure 3e and supplementary figures. The consistency across quotes and mentions (C160) strengthens the overall finding. The additional disparities for other name origins (C161) when using Springer Nature as comparator add complexity, though the absolute differences are noted as smaller than for Celtic/English and East Asian.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Statistical uncertainty was quantified using bootstrap methods with 1000 samples per year, sampling with replacement from the complete dataset, reporting mean and 5th/95th quantiles as confidence bounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 describe appropriate statistical methods for constructing confidence intervals. Bootstrap methods are well-suited for this type of proportion estimation, and 1000 samples (C149) is generally adequate. The reporting of quantiles (C151) provides appropriate uncertainty quantification visible in the figures as confidence bands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The computational tools have important limitations: inability to identify non-binary people, region-specific biases with reduced performance on Asian names, use of name origin as proxy rather than self-identified race/ethnicity, and inability to distinguish Black and White people from the US; future demographic data collection by publishers could enable more accurate analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 provide a thorough and honest assessment of methodological limitations. The acknowledgment of inability to capture non-binary identities (C105), regional biases (C106), and the proxy nature of name-based prediction (C107-C109) demonstrates appropriate scientific caution. The forward-looking statement (C110) is reasonable speculation about future improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The study could only analyze sources mentioned or cited in published articles, not all sources contacted by journalists; journalists don't quote/mention all interviewed sources due to length limitations, source preferences, or use of background information; a self-maintained interview record would provide more accurate source demographics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 identify a fundamental limitation of the approach: the study measures recognition/visibility (C120) rather than the complete journalistic process. The examples of why sources might not appear (C118) are reasonable, and the recommendation for self-maintained records (C119) is appropriate. This limitation means the study underestimates the true diversity of sources contacted but still provides valuable data on public visibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Nature's news articles target a specific readership that may not reflect broader scientific news outlets; preliminary analysis of The Guardian found similar disparities, but appropriate comparators are unclear; the pipeline could be applied to multiple outlets to identify consistent patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 address generalizability. The acknowledgment that Nature has a specific readership (C121) is important context. The preliminary Guardian analysis (C122) suggests patterns may generalize, though the lack of clear comparators (C123) limits interpretation. The recommendation for broader analysis (C124-C125) is reasonable and the availability of the pipeline supports reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study used only Nature and Springer Nature papers as comparators, assuming demographics of newsworthy science match all published science; not all papers are likely to be covered by journalists; the work could be extended to additional publishers, preprint servers, and topic-specific analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 identify limitations in the comparator datasets. The assumption that newsworthy papers match all papers demographically (C128) is stated but not validated, which is a significant limitation. The acknowledgment that not all papers are newsworthy (C127) is important. The recommendations for extension (C129-C130) are reasonable directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C18",
+      "C19",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Science journalism shapes public views and legitimizes experts; biases in source selection can propagate through interview chains and repeated expert selection; journalists are limited by who responds and by recommendations from scientists; both journalists and scientists can audit and change their practices to reduce disparities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C18-C19, C131-C134 provide conceptual framing and recommendations. The statements about journalism's role (C9, C133) are well-established in media studies. The mechanisms of bias propagation (C10, C18-C19) are logical inferences supported by cited literature. The recommendations for both journalists (C112-C114) and scientists (C132) to audit and change practices are reasonable applications of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior research found 17-40% of subjects in general news and 27-46% in science/health news were women (1985-2015); scientific news coverage is confounded by existing gender/racial demographics in science; this study uses academic authorship to estimate scientific field demographics, similar to prior studies of citation and funding disparities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 provide appropriate context from prior literature. The cited statistics (C11-C13) establish baseline expectations from previous media studies. The acknowledgment of confounding by field demographics (C14) and the methodological choice to use authorship as a proxy (C15) are clearly stated. The comparison to prior disparity studies (C16-C17) appropriately positions this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C111",
+      "C114"
+    ],
+    "result": "This work is the first to identify substantial under-representation of East Asian name origins in scientific journalism; the software can be repurposed for other text; awareness of bias can help journalists reduce it; guides, databases, and affinity groups exist to help expand expert identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C111, C114 describe the novelty and potential impact of the work. The claim of being first to identify East Asian under-representation (C25) appears supported by the literature review. The generalizability of the software (C26) is supported by code availability. The citations about awareness reducing bias (C27, C111) and available resources (C114) provide practical context for applying the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The manuscript was written using Manubot; all code and metadata are available on GitHub under BSD 3-Clause License; code to generate figures is available as R markdown; a Docker image enables re-running the analysis pipeline; scraping code and shell scripts are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C158 describe comprehensive code and data availability that supports reproducibility. The provision of Docker images (C155-C156), documented code (C154, C157), and clear licensing (C153) represent best practices in computational reproducibility. This substantially strengthens confidence in the technical implementation of the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Before 2010, quotes from predicted men were over-represented compared to both first and last authors; between 2010-2017, over-representation was only vs first authors; by 2020, slight over-representation of women in quotes vs authors but still under-represented vs general population; first authors are typically early career and more diverse than senior last authors; comparison to different authorship positions reveals different aspects of bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C171 provide nuanced temporal and career-stage analysis. The specific time periods (C164-C166) are data-driven from Figure 2c. The discussion of authorship conventions (C167) and diversity by career stage (C168) provides important context. The interpretation of what different comparisons reveal (C170) is thoughtful, and the hope for future impact (C171) is appropriately framed as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C182"
+    ],
+    "result": "The findings support prior studies identifying under-citation and under-recognition of East Asian people; under-citation is less pronounced than under-quotation; the disparity is not believed to be driven by paraphrasing non-native speakers; the findings argue for broader voices and potentially region-specific journalists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C178, C182 connect findings to prior literature and propose mechanisms and solutions. The support for prior work (C172-C173) strengthens the findings. The comparison of citation vs quotation disparities (C174) is well-supported. The inference about paraphrasing (C175) is reasonable given the mention analysis. The recommendations for region-specific journalists (C177-C178, C182) follow logically from the journalist name origin analysis (C94-C96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The study could not identify geographical bias of cited authors due to insufficient sample sizes from different countries; expanding to other outlets could help identify how geographic region, gender, and perceived ethnicity interact to affect scientific visibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C181 acknowledge a limitation in the geographic analysis and propose future work. The inability to robustly analyze geographic patterns (C179-C180) is an honest acknowledgment of data limitations. The recommendation for multi-outlet analysis (C181) is a reasonable direction for future research that could address this gap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study analyzed five journalist-written article types (Career Feature, News, News Feature, Technology Feature, Toolbox) and two scientist-written types (Career Column, News and Views); article type classifications and frequencies changed over time, with News decreasing and more specific types increasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33, C35-C41 provide detailed description of article types and temporal patterns supported by Figure 1b. The characterization of content focus for each type (C29-C33, C35-C36) provides context for interpreting differences. The acknowledgment of changing classifications (C31, C38) and temporal trends (C39-C41) is important for understanding potential confounding in temporal analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C183",
+      "C184"
+    ],
+    "result": "Data processing included pre-filtering articles with >25 quotes (2.69% removed), using humaniformat for name parsing, filtering non-name terms, removing abbreviated names, and excluding ~7% single-author papers; cached gender predictions were used to reduce API queries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143, C183-C184 describe detailed data processing steps with clear rationales. The pre-filtering threshold (C137-C138) prevents over-representation of unusual articles. The name processing steps (C139-C143) are appropriate for handling varied name formats. The exclusion of single-author papers (C183) and use of cached predictions (C184) are reasonable efficiency measures that don't compromise validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Springer Nature was chosen as comparator for multiple reasons (ease of use, large publisher, diverse subjects, high API query limit, affiliation data); the background set used first 200 English-language journal papers per month (2400/year, 2005-2020), which may not be completely random but is believed reasonably representative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C191 justify the choice of Springer Nature and describe the sampling approach. The multiple reasons for selection (C187) are practical and reasonable. The sampling method (C189) is clearly described, and the acknowledgment that it may not be completely random (C190) with the belief it's reasonably representative is appropriately cautious. The clarification that it's an additional comparator (C191) properly positions its role.",
+    "result_type": "MINOR"
+  }
+]

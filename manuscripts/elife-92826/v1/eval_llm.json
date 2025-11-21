@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Diabetic COVID-19 patients exhibit more severe disease with elevated CTSL levels. The study found diabetic patients had significantly higher risk of severe COVID-19, more symptoms (fever, cough, fatigue, dyspnea), higher inflammation markers, and specifically elevated CTSL levels that peaked on admission and decreased after discharge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are well-supported by the case-control study data shown in Figure 1. The study design appropriately matched 31 diabetic and 31 non-diabetic COVID-19 patients by age and gender (C83), and measured multiple biomarkers including ACE2, CTSL, and CTSB, finding only CTSL was significantly elevated in diabetic patients. The longitudinal measurements strengthen the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C5"
+    ],
+    "result": "Chronic hyperglycemia correlates positively with both CTSL activity and concentration in diabetic patients. The study demonstrated strong positive correlation between HbA1c and CTSL activity (r=0.53, p<0.0001), with significantly higher CTSL activity in diabetic versus euglycemic individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by data from 122 matched individuals (61 diabetic, 61 euglycemic) shown in Figure 2a-d. The correlation analysis is appropriate, sample size is adequate, and the positive trend for CTSL concentration (C28) is appropriately described as a 'trend' rather than claiming statistical significance. The matching for age and gender controls for confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C6",
+      "C70"
+    ],
+    "result": "Acute hyperglycemia specifically increases CTSL activity but not concentration. During a 160-minute hyperglycemic clamp study in 15 healthy males, CTSL activity increased with blood glucose levels while CTSL concentration remained stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by the hyperglycemic clamp study data in Figure 2e-j. The experimental design is rigorous with appropriate controls. The distinction between acute effects (activity only) versus chronic effects (both activity and concentration) is well-demonstrated. However, the sample is limited to males only, which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C7"
+    ],
+    "result": "High glucose, but not insulin, promotes SARS-CoV-2 infection in vitro. Cells cultured with diabetic serum showed higher infection rates than healthy serum, and high glucose levels increased infection in Huh7 cells while insulin had minimal impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by in vitro pseudovirus infection experiments shown in Figure 3a-c. The use of both diabetic serum and defined glucose concentrations provides converging evidence. However, the pseudovirus system only measures viral entry, not replication (C85), which is a limitation acknowledged by the authors. The choice of Huh7 cells is justified but may not fully represent respiratory tissue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C8",
+      "C40"
+    ],
+    "result": "CTSL knockout cells show reduced susceptibility to SARS-CoV-2 infection regardless of glucose levels. CTSL KO cells maintained low infection rates under both high and low glucose conditions, while WT cells showed glucose-dependent increases in infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are well-supported by the CTSL knockout experiments in Figure 3d-h. The CRISPR/Cas9 knockout is properly validated (C37, Figure 3d), and the rescue of glucose-induced infection enhancement in KO cells provides strong evidence for CTSL's mechanistic role. The experimental design with appropriate controls (WT vs KO, high vs low glucose) is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C9",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Hyperglycemia, not hyperinsulinemia, increases CTSL activity in cells and tissues. Elevated glucose stimulated CTSL activity dose-dependently in Huh7 cells and increased CTSL activity in diabetic mouse and human lung tissues, while insulin had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by multiple lines of evidence: in vitro cell culture (Figure 4b-e), mouse models (Figure 4f-i), and human tissue samples (Figure 4j). The convergence of evidence across different experimental systems strengthens the conclusion. However, the human tissue sample size is small (n=3 per group, Supplementary file 4), and pH control experiments (C41-C42) appropriately rule out acidosis as a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "High glucose promotes CTSL maturation without affecting transcription. Glucose levels did not affect CTSL mRNA but promoted conversion of proCTSL to mature forms (sc-mCTSL and dc-mCTSL) in a dose-dependent manner in cells, mouse tissues, and human tissues, while insulin had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 are well-supported by qRT-PCR (Figure 5\u2014figure supplement 1) and Western blot data (Figure 5b-e). The use of L-glucose as a control (C55) is particularly strong, demonstrating specificity for D-glucose metabolism rather than osmotic effects. The authors acknowledge that human tissue data may be less compelling due to glucose control prior to surgery, showing appropriate scientific caution. The conclusion that hyperglycemia drives post-translational maturation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C10"
+    ],
+    "result": "High glucose facilitates CTSL translocation from ER to lysosomes via the Golgi apparatus. Confocal microscopy showed CTSL co-localized with ER markers under low glucose but shifted to lysosomal co-localization under high glucose, with Golgi localization remaining unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by immunofluorescence co-localization studies in Figure 6b-g. The use of specific organelle markers (calreticulin for ER, GM130 for Golgi, lamp1 for lysosomes) is appropriate, and negative controls with IgG are shown (Figure 6\u2014figure supplement 1). The quantification of co-localization using Pearson's R values provides statistical support. This mechanistic insight explains how glucose increases CTSL activity through enhanced maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C80",
+      "C81"
+    ],
+    "result": "Hyperglycemia-induced CTSL maturation plays a pivotal role in diabetic comorbidities and complications, and targeting CTSL may be a promising therapeutic strategy. This represents the main conclusion integrating all findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11 and C80 represent broad conclusions that extend beyond the specific data presented. While the study demonstrates that hyperglycemia increases CTSL maturation and activity, and that this enhances SARS-CoV-2 infection in vitro, the claim about 'pivotal role in diabetic comorbidities and complications' broadly is not fully supported by the presented data, which focuses primarily on COVID-19. The therapeutic speculation (C81) is reasonable but requires future validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C78"
+    ],
+    "result": "CTSL activity and concentration correlate with other chronic comorbidities including hypertension and coronary heart disease, especially diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C78 are supported by correlation analysis presented in Supplementary file 3. However, these correlations do not establish causation, and the mechanisms linking CTSL to these other comorbidities are not explored in this study. The finding is descriptive and hypothesis-generating rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Elevated blood glucose levels were accompanied by increases in insulin and proinsulin C-peptide during acute hyperglycemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by measurements during the hyperglycemic clamp study (Figure 2f-g). This is an expected physiological response and serves to establish that hyperinsulinemia occurs alongside hyperglycemia, making the demonstration that insulin does not affect CTSL (C36, C44) more meaningful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Blood pH remained within normal range and CTSL activity was consistent despite pH variations in the study samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by pH measurements and CTSL activity assays (Figure 4a). This control experiment appropriately rules out metabolic acidosis as a confounding factor in the observed CTSL activity changes, strengthening the conclusion that glucose itself drives CTSL changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Diabetic Lepr^db/db mice showed significantly increased glucose, body weight, and fasting insulin levels compared to Lepr^db/+ control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by mouse characterization data in Figure 4f-h. This validates the diabetic mouse model used in the study and is essential for interpreting the tissue-level CTSL measurements. The characterization is appropriate and expected for this well-established model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "During acute hyperglycemia, CTSL concentration remains stable while activity increases rapidly through propeptide cleavage, occurring faster than protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 integrate findings from the hyperglycemic clamp study and mRNA data to explain the mechanism of rapid CTSL activation. The inference that propeptide cleavage occurs faster than protein synthesis is reasonable given the stable mRNA and protein concentration but increased activity. This mechanistic insight is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C64"
+    ],
+    "result": "Diabetes significantly increases the risk of severe COVID-19 outcomes and mortality, ranking as the second most prevalent comorbidity after hypertension, with higher glucose levels (HbA1c\u22657.5%) associated with worse outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C20, and C64 cite established literature (Khunti et al., 2021; Dennis et al., 2021; Shi et al., 2020; Williamson et al., 2020; CDC data) and represent accepted knowledge in the field. These claims provide important context for the study but are not novel findings. The citations appear appropriate and the claims are consistent with the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13"
+    ],
+    "result": "CTSL has been implicated in diabetic complications including nephropathy (proteinuria in podocytes) and retinopathy (intraocular angiogenesis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C13 cite prior literature (Reiser et al., 2004; Shimada et al., 2010) establishing CTSL's role in diabetic complications. These are background claims that motivate the current study but are not novel findings. The citations appear appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "CTSL is involved in SARS-CoV-2 spike protein cleavage, elevated CTSL correlates with COVID-19 severity, and CTSL is crucial for activation of all SARS-CoV-2 variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C16 cite the authors' previous work (Zhao et al., 2021b; Zhao et al., 2022) and other studies (Jackson et al., 2022; Muralidar et al., 2021). These establish the rationale for investigating CTSL in diabetic COVID-19 patients. The self-citations appear appropriate and provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "CTSL maturation involves translocation through the ER-Golgi-lysosome axis with propeptide removal in acidic lysosomes, converting inactive proCTSL (39 kDa) to active mature forms (sc-mCTSL 31 kDa or dc-mCTSL 24 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C86-C88 describe established knowledge about CTSL biology from the literature (Ishidoh and Kominami, 2002; Coutinho et al., 2012; Reiser et al., 2010). These provide essential background for understanding the study's mechanistic findings. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The liver is a significant target organ for COVID-19, and Huh7 cells offer practical advantages for studying SARS-CoV-2 infection despite some limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 cite literature (Gupta et al., 2020; Nie et al., 2021; Ciotti et al., 2020) justifying the use of Huh7 hepatoma cells as a model system. The authors appropriately acknowledge limitations while defending their model choice. This is methodological justification rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Prior studies showed D-glucose enhances mature cathepsin forms without affecting mRNA levels, and glucose metabolism promotes O-GlcNAcylation of CTSB leading to elevated mature CTSB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 cite prior literature (Tournu et al., 1998; Shi et al., 2022) that supports the current study's findings. These citations strengthen the manuscript by showing consistency with previous work on glucose effects on cathepsin maturation. The citations are appropriate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "It remains controversial whether diabetes results in up- or downregulation of ACE2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 acknowledges controversy in the literature regarding ACE2 regulation in diabetes. This appropriately contextualizes why the study focused on CTSL rather than ACE2, and explains the lack of significant ACE2 differences in their COVID-19 patient cohort (Figure 1d). This is a fair assessment of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Diabetic patients have lower serum 1,5-AG with antiviral activity against SARS-CoV-2, and diabetes may promote COVID-19 through multiple factors beyond CTSL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 discuss alternative mechanisms (citing Tong et al., 2022) and appropriately acknowledge that CTSL is one of several factors contributing to diabetes-COVID-19 interactions. This demonstrates scientific balance and appropriate caution in interpretation. Claim C77 is appropriately speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "In an angiotensin II-induced hypertension model, researchers observed increases in both blood pressure and CTSL activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 cites prior work (Lu et al., 2020) connecting CTSL to hypertension, supporting the correlation observed in this study (C32, C78). This citation appropriately contextualizes the broader implications of CTSL in cardiovascular comorbidities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study included 207 COVID-19 patients with 62 matched by age and gender (31 diabetic, 31 non-diabetic), used WHO-recommended RT-PCR for SARS-CoV-2 detection, and employed a pseudovirus system measuring viral entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 describe the study design and methods. The case-control design with matching is appropriate, the RT-PCR methodology follows WHO guidelines, and the pseudovirus system is properly characterized. These are methodological details that are adequately described.",
+    "result_type": "MINOR"
+  }
+]

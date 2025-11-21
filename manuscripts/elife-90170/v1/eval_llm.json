@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study used three Arabidopsis thaliana populations (REGMAP, LANGUEDOC, TOU-A) representing different geographic scales and genetic diversity levels, grown under ambient (~420 ppm) or elevated (900 ppm) CO2 conditions, with ionome composition measured for 8 elements (C, N, Na, Fe, Mg, Mn, Zn, Cu).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C26, and C143-C145 collectively describe the experimental design with appropriate detail. The use of ~600 accessions across three populations with different geographic scales is clearly stated, growth conditions are specified, and the choice of 900 ppm CO2 is justified by reference to IPCC projections. This represents a well-designed large-scale study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Elevated CO2 caused a global decrease in ionome content across all three populations, with particularly robust decreases in N and Fe content, though some elements (Zn, Cu, Mg, Mn, Na) showed population-specific variation in their response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C27-C35 are well-supported by the data presented in Figure 1B-D, which shows statistically significant decreases (indicated by asterisks) for most mineral elements under elevated CO2. The population-level analysis with appropriate statistical testing (Paired Wilcoxon test) provides strong evidence for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C47"
+    ],
+    "result": "A high range of genetic diversity in ionome response to elevated CO2 was observed, with accessions ranging from strongly negative effects to resilience or even benefit, showing relative changes from +100% to -60% for micronutrients and +20% to -50% for macronutrients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C36-C42, C47 are strongly supported by the distribution data in Figure 2, which clearly shows the wide range of responses across accessions. The quantitative ranges provided are consistent with the visual data, and the observation of both negative and positive responses represents a key finding of genetic diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PCA analysis revealed that the first principal component (37.6% of variation) showed an antagonistic trend between C content and other mineral elements, while the second component (15% of variation) was driven by N and C concentration changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by the PCA analysis shown in Figure 3. The overlap of populations in PC space (C43) and the loading patterns (C44, C46) are clearly visible in the figure. However, C45 involves some interpretation about mechanisms that is not directly tested, making it partially inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "K-means clustering of the REGMAP panel identified three distinct response groups: Cluster 1 with the most negative response, Cluster 2 with globally positive response, and Cluster 3 with attenuated/resilient response, with no apparent geographic clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by the clustering analysis in Figure 4 and the geographic distribution in Figure 4\u2014figure supplement 1. The identification of three distinct clusters with different response patterns is clear, and the lack of geographic structure is demonstrated. The clustering methodology appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "GWAS validation was demonstrated by detecting known associations: HKT1 for Na content and NIA1 for N content under ambient CO2, confirming the reliability of the association mapping approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 describe the GWAS validation using known gene-trait associations. The detection of HKT1 and NIA1 at expected loci (Figure 5\u2014figure supplement 1) with citations to prior work (Baxter et al., 2010; North et al., 2009) provides strong validation of the GWAS methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GWAS revealed polygenic architecture for ionome response to elevated CO2, with complexity varying by trait. Most top 50 SNPs were trait-specific, though some SNPs were shared between 2-3 traits, particularly for micronutrients and N, with notable multi-trait QTLs on chromosomes 1 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C72 describe the GWAS results supported by Figure 5 and supplementary figures. The identification of polygenic architecture, trait-specific and shared SNPs, and specific QTLs is well-documented. The analysis of SNP overlap provides insight into genetic architecture, though the biological interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Candidate gene identification within \u00b125 kb of top SNPs yielded 154-422 genes per trait, including known mineral homeostasis genes (ZIF1, ZIF-LIKE1, TIP2;2 for Zn; ASN1 for N; MCO2, MCO3 for Fe; ISU2 for Fe-S clusters), demonstrating the value of the GWAS approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C86 describe candidate gene identification with appropriate methodology (\u00b125 kb window based on LD decay from Kim et al., 2007). The identification of known genes involved in relevant processes (supported by multiple citations) validates the approach, though most candidates remain to be functionally tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "RNA-seq analysis identified 182 genes that were both associated by GWAS and differentially expressed under elevated CO2, with most deregulated in shoots and mainly associated with C-, Mg-, or Zn-related traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 describe the integration of GWAS and RNA-seq data, supported by Figure 6A-B. The intersection of genetic association and expression changes provides stronger evidence for candidate gene involvement, though this still requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Several candidate genes with known functions in nutrient metabolism showed both GWAS association and differential expression under elevated CO2, including ASN1 and DUR3 (N metabolism), BGP3 and CA1 (C metabolism/photosynthesis), AT1G64710 (alcohol dehydrogenase), and TIP2;2 (Zn translocation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C103 describe specific candidate genes supported by both GWAS and RNA-seq data (Figure 6C-D). The genes have established functions relevant to the associated traits, strengthening their candidacy. However, only TIP2;2 receives functional validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C135"
+    ],
+    "result": "A chromosome 4 QTL near TIP2;2 was associated with Zn relative change, with alternative alleles (haplotype 1) showing increased Zn content under elevated CO2 and reduced TIP2;2 expression in roots, with the reduction more pronounced under elevated CO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111 and C135 describe the TIP2;2 association supported by Figure 7A-D. The haplotype-specific expression differences measured by qRT-PCR provide strong evidence linking genetic variation at this locus to both gene expression and phenotype. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C136"
+    ],
+    "result": "The tip2;2-1 knockout mutant abolished the Zn decrease normally observed under elevated CO2 in wild-type plants, with Zn content under elevated CO2 being slightly higher than under ambient CO2 in the mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C113, and C136 describe the functional validation experiment supported by Figure 7E. The mutant phenotype provides strong causal evidence for TIP2;2's role in the CO2 effect on Zn content. However, the sample sizes (n=5-6) are modest, and only one mutant allele was tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C114",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "TIP2;2 function is involved in the negative effect of elevated CO2 on plant Zn composition, with variation in TIP2;2 expression associated with the effect of atmospheric CO2 on zinc levels, consistent with its role in Zn root retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C114, C137-C139 represent the main conclusion about TIP2;2 function. This is well-supported by the combination of GWAS, expression analysis, and knockout phenotype data. The mechanistic interpretation (C138-C139) is consistent with prior work (Wang et al., 2022) and the observed expression-phenotype relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11"
+    ],
+    "result": "Elevated atmospheric CO2 leads to a decline in plant mineral content, including nutrients essential for human nutrition (N, proteins, Fe, Zn), as observed worldwide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, and C11 state well-established findings supported by the current study's data and citation to Loladze, 2014. The experimental results across all three populations confirm this general phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The natural variation of ionome response to elevated CO2 in A. thaliana displays high genetic diversity across geographic scales, with PCA suggesting a unified ionome response opposite to C, though GWAS indicates mostly element-specific genetic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 synthesize the main findings in the Discussion. The high genetic diversity is well-supported by the data. The apparent contradiction between PCA (unified response) and GWAS (element-specific mechanisms) is acknowledged but not fully resolved, representing an interesting complexity in the genetic architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Geographic origin did not determine CO2 response, suggesting inherent genetic factors rather than local adaptation drive the response, consistent with elevated CO2 representing a novel environment not experienced for tens of millions of years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 present an interpretation supported by the lack of geographic clustering (Figure 4\u2014figure supplement 1) and citations to relevant literature. The reasoning is logical, though the inference about cryptic variation (C123) remains speculative without direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "ASN1 and DUR3, involved in N remobilization and reallocation, were identified by GWAS, suggesting that N remobilization may be involved in the CO2 effect on N content, in addition to previously identified root uptake and assimilation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 present a novel hypothesis supported by the GWAS identification of ASN1 and DUR3 and their known functions (cited literature). However, this remains a hypothesis requiring functional validation, as the current study only demonstrates genetic association and expression changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The decline in plant mineral content due to elevated CO2 poses a significant threat to food security, with modeling predicting decreased nutrient availability leading to additional risk of nutritional deficiency for hundreds of millions of people.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C12-C14 make important statements about food security implications, supported by citations to modeling studies (Medek et al., 2017; Ebi and Loladze, 2019). However, these are projections based on models rather than direct observations, and the current study focuses on A. thaliana rather than crop species, limiting direct applicability to food security.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Despite limited prior gene identification, genetic factors underlie the CO2 effect on plant mineral composition, and exploring natural genetic variability represents a major opportunity to understand mechanisms, though large-scale approaches have been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C15-C22 provide context from prior literature, supported by appropriate citations. These claims establish the rationale for the current study and are consistent with the cited literature, though they represent knowledge claims rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53",
+      "C86",
+      "C124",
+      "C140"
+    ],
+    "result": "The observed phenotypic diversity and identified candidate genes represent a valuable resource for understanding and potentially alleviating the negative response of plant mineral composition to elevated CO2, with implications for breeding programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C86, C124, and C140 represent forward-looking conclusions about the value of the resource generated. These are reasonable inferences based on the demonstrated genetic diversity and gene identification, though the practical utility for breeding remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "CA1, a \u03b2 carbonic anhydrase involved in stomatal regulation by elevated CO2 and photosynthetic efficiency regulation, was identified by GWAS, though it shows no significant effect under standard conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 describe CA1 function based on cited literature (Hu et al., 2015; Sharma et al., 2023). The GWAS identification of CA1 is supported, and the discussion of its potential role is reasonable, though functional validation under elevated CO2 is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Zn is essential for human metabolic processes, with deficiency affecting up to one third of the world's population and leading to severe health problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 state established knowledge about Zn importance for human health. These are well-established facts that provide context for the significance of the Zn-related findings but are not new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Leaf ionome is not always correlated with seed ionome in A. thaliana, so the effect of elevated CO2 on seed ionome in major crops must be analyzed to develop nutritious crops adapted to elevated CO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 acknowledge an important limitation (supported by citation to Campos et al., 2021) and propose future research directions. This is a reasonable caveat about the applicability of leaf ionome findings to seed nutritional quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "The tip2;2-1 mutant line corresponds to the SALK_152463 allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 provides a methodological detail about the mutant line used, with appropriate citation to Wang et al., 2022. This is a straightforward factual claim about materials.",
+    "result_type": "MINOR"
+  }
+]

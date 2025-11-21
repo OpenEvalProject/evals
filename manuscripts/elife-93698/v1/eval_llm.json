@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Direct lysis buffer (DirectPCR Lysis Reagent) provides superior DNA recovery compared to conventional column-based extraction methods. The Direct buffer yielded 5-fold higher bacterial genome copy numbers in SaOS2-OY samples and 100-fold higher in S. aureus strains SK2 and SK3, with better reproducibility and near-perfect linear correlation (R\u00b2>0.999) between genome copies and CFU counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide strong experimental evidence with quantitative data from Figure 1 showing statistically significant improvements in DNA recovery and reproducibility. The near-perfect linear regression (C16) validates complete DNA release. Claims C17-C18 are reasonable inferences supported by the data, though the mechanism of reduced sample loss could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CFU counts dramatically underestimate bacterial persistence in host-pathogen co-cultures compared to ddPCR genome quantification. CFU counts decreased 10\u00b3-10\u2076-fold over 5 days in both SK2 and SK3 infected SaOS2-OY cells, while ddPCR showed maintained genome levels for SK2 and only modest decreases for SK3. The discrepancy between methods reached 10\u2076-fold in co-cultures but was <2-fold in bacterial suspension cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C27-C28 are well-supported by experimental data in Figure 2 with appropriate statistical analysis. The comparison between co-culture and suspension culture conditions (C28) provides critical context. Claim C29's interpretation about host-pathogen interactions compromising CFU reliability is a reasonable inference from the data, though the specific mechanisms are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Host cell viability in co-culture is MOI-dependent. At low MOI, human genome copy counts remained similar to uninfected controls, while high MOI (10\u2078 cells/well) resulted in ~30% and ~50% reductions at 1 and 5 days post-infection, respectively, with similar trends for both SK2 and SK3 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by experimental data in Figure 2G-H with statistical analysis. The dose-dependent effect on host cell viability is clearly demonstrated. However, the manuscript does not specify the number of biological replicates or provide details on how human genome copies were normalized, which could affect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Phenotypic bacterial adaptation occurs during intracellular infection, with small colony variants (SCVs) observed particularly in SK2-infected cultures. The presence of SCVs, which feature reduced metabolic activity, is consistent with the observed discrepancy between reduced CFU recovery and maintained genome copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by visual evidence in Figure 2A showing phenotypic variations. Claim C31 about SCV characteristics is established knowledge. Claim C32 provides a reasonable mechanistic interpretation linking the phenotypic observations to the quantitative discrepancies, though direct characterization of the SCVs (e.g., growth rates, metabolic assays) would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Three culture-negative PJI cases were confirmed as infected by clinical criteria (MSIS) and histological evidence. All patients presented with sinus tracts, showed matrix degradation by Masson's trichrome staining (unlike OA control), and returned negative cultures from clinical laboratories and homogenized bone tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by clinical diagnostic data using established MSIS criteria. Claims C36-C38 are supported by histological evidence in Figure 3A-D with appropriate controls. Claim C39 confirms culture-negative status. The combination of clinical, histological, and microbiological evidence provides strong support for infection diagnosis despite negative cultures. Sample size is limited (n=3) but appropriate for proof-of-concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The developed workflow successfully identified and quantified bacterial pathogens in culture-negative PJI bone specimens. All three patient samples were bacterial genome-positive by PCR and ONT sequencing, identifying coagulase-negative staphylococcal species (S. haemolyticus, S. hominis, S. epidermidis) at levels of 2\u00d710\u2074 to 1\u00d710\u2076 bacterial copies per million human genome copies. Negative controls from non-infected patients confirmed absence of contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are well-supported by sequencing data (Figure 3E-G) and ddPCR quantification with appropriate error bars. Claim C43 provides essential negative controls (n=5) demonstrating specificity. The workflow successfully detected bacteria in culture-negative samples. However, the manuscript does not report the number of sequencing reads mapping to human vs. bacterial genomes, which would help assess potential bias in the PCR enrichment step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The tuf gene provides superior discriminatory power for staphylococcal species identification compared to 16S rRNA. A 271 bp tuf amplicon showed 4.1-8.1% sequence differences between four staphylococcal species, while equivalent discrimination with 16S rRNA requires >1000 bp amplicons. The short amplicon strategy reduces reaction time and minimizes non-specific products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by citation and sequence alignment data in Figure 3\u2014figure supplement 2. Claim C46 is stated as unpublished data, which weakens support but is plausible given known 16S conservation. Claims C47-C48 are reasonable inferences from PCR principles and in silico analysis. The choice of tuf is well-justified, though experimental validation comparing tuf vs. 16S performance in these samples would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The developed workflow combines direct lysis DNA preparation with ddPCR for absolute quantification, eliminating DNA extraction steps and standard curve requirements. This approach is rapid, labor-saving, minimizes sample loss, and achieves superior intra-assay consistency compared to conventional qPCR methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 accurately describe established principles of qPCR vs. ddPCR supported by citations. Claims C52-C54 are supported by the experimental data showing improved recovery and reproducibility. The workflow advantages are demonstrated rather than merely claimed. However, the manuscript does not provide direct time comparisons or cost analysis to quantitatively support the 'rapid and labor-saving' claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C55",
+      "C56"
+    ],
+    "result": "The workflow has potential clinical applications as a point-of-care diagnostic method with rapid turnover (hours vs. days), though universal primer coverage remains challenging and multiple primer sets may be needed for comprehensive pathogen detection. The approach could be useful for tracking infection status in longitudinal PJI patient samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 acknowledge known limitations and propose reasonable future directions. Claims C51, C55-C56 are speculative about clinical utility and are explicitly framed as 'potential' applications. While the proof-of-concept data are promising, no actual point-of-care testing, clinical validation, or longitudinal patient studies are presented. The 'hours vs. days' timeline is not experimentally demonstrated. These remain hypotheses requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "CFU plating should be retained alongside molecular methods to evaluate bacterial phenotypic adaptation in co-culture experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is a reasonable recommendation based on the observation of phenotypic variations (C30) that would be missed by molecular quantification alone. The complementary nature of CFU and ddPCR methods is demonstrated throughout the study. This represents sound scientific practice rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "result": "CFU counting is the standard method for bacterial quantification but has known limitations including low sensitivity, dependence on culturability, and susceptibility to various experimental factors. In osteomyelitis, 20-40% of cases are culture-negative despite infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C4-C5 accurately represent established knowledge in the field, supported by appropriate citations. These claims provide important context for the study but do not represent novel findings. The statistics on culture-negative osteomyelitis are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study employed established model systems: S. aureus (the most common osteomyelitis pathogen) strains SK2 (high virulence MRSA) and SK3 (low virulence MSSA), and differentiated SaOS2-OY osteocyte-like cells (the most abundant bone cell type). Standard histological methods (Masson's trichrome) were used for tissue analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C58-C62 accurately describe established knowledge and previously characterized model systems, all supported by appropriate citations. Claim C60 correctly describes the histological staining method. These are methodological details and background information rather than novel findings, but they are accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "There is a discrepancy between CFU and bacterial genome copy number in an osteomyelitis-relevant co-culture system, which is confirmed in clinical bone specimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the central finding of the manuscript, supported by extensive experimental data in both in vitro co-cultures (Figure 2) and clinical samples (Figure 3). This claim is well-supported by multiple lines of evidence and represents the primary contribution of the work. It is appropriately listed as a summary claim in the abstract.",
+    "result_type": "MAJOR"
+  }
+]

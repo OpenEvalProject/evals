@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In a predictive coding neural network model trained on a spatial navigation task, the network quickly converged to high performance with spatially tuned units, then exhibited a much slower phase of sparsification where the fraction of active units decreased while their spatial information increased, with initial learning being orders of magnitude faster than the subsequent sparsification phase.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers found the evidence for this core finding persuasive. Reviewer 1 stated 'the evidence presented in favor of these claims is concise, but on balance I find their evidence persuasive, at least in artificial network models.' Reviewer 2 noted 'the mechanism underlying RD in these models is clearly laid out and the explanation given is convincing.' Reviewer 3 stated 'Ratzon et al. clearly demonstrate that hidden layer units in their model undergo consistent changes even after the task is well-learned.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C38",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Analysis of four independent experimental datasets from CA1 hippocampal recordings showed that the fraction of place cells decreases while mean spatial information increases over time with exposure to the same environment, mirroring the model predictions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers found the experimental data analysis convincing as corroboration of the model. Reviewer 1 stated 'This paper includes a brief analysis of four independent experiments in Figure 3, which corroborates the main claims of the paper,' though noting 'Future work should dig deeper into the experimental data to provide a finer grained characterization.' Reviewer 3 noted the authors 'provide compelling evidence that there are continuous changes in network properties during learning.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C47",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "The authors propose a three-phase framework for learning: (1) fast initial learning and convergence to low-loss solutions, (2) slow directed movement on the low-loss manifold driven by implicit regularization, and (3) undirected random walk within the sub-manifold of maximum regularization, with these phases being overlapping rather than consecutive.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this theoretical framework as a key contribution. Reviewer 1 noted 'The contribution of this paper is to claim that drift can reflect a mixture of \"directed random motion\" as well as \"steady state null drift\"' and found the evidence persuasive. Reviewer 2 stated 'the authors provide compelling evidence that there are continuous changes in network properties during learning and that stationarity may be the hallmark of overfamiliarized environments.' Reviewer 3 noted the authors 'suggest that their findings indicate a three stage learning process' as a main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C98"
+    ],
+    "result": "Across 1151 simulations with varied parameters, learning rules (SGD, Adam, RMSprop, SED), and noise types (update noise, label noise), the phenomenon of directed drift leading to sparsification was robust, though timescales varied by orders of magnitude as a function of noise scale, and label noise produced qualitatively different dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers found the robustness analysis convincing. Reviewer 1 stated the authors 'make an important contribution by translating these findings into more biologically plausible models and showing that their core assumptions remain plausible.' Reviewer 2 noted 'they finally show that this separation of time-scales is a robust phenomenon and occurs for a number of distinct learning rules.' The extensive parameter exploration was not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C39",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The sparsification and drift phenomena are explained mechanistically as implicit regularization: noisy learning drives the network toward flatter regions of the loss landscape by reducing small eigenvalues of the Hessian, with sparsification occurring because inactive units become insensitive to noise perturbations, creating zero eigenvalues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers found the mechanistic explanation clear and convincing. Reviewer 1 stated 'To establish the possibility of implicit regularization in artificial networks, the authors cite convincing work from the machine learning community (Blanc et al. 2020, Li et al., 2021)' and 'The authors also develop helpful intuition in Figure 5 by showing a minimal model that captures the essence of their result.' Reviewer 2 noted 'The mechanism underlying RD in these models is clearly laid out and the explanation given is convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors position their work in relation to existing theories of representational drift, noting that drift has been suggested to result from continuous learning under noise and is driven by active experience in CA1, while previous computational work focused on the final phase of constant statistics rather than the directed drift phase.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this contextualization without challenge. Reviewer 1 noted 'Thus far, most work within the computational neuroscience literature has focused on the latter' (steady state null drift) and that the authors 'aim to challenge the latter viewpoint.' The positioning of the work relative to prior literature was not questioned by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors justify their modeling approach by arguing that both biological and artificial networks are overparameterized, noise is ubiquitous, and biologically plausible learning rules can be considered noisy versions of gradient descent, making their predictive coding model with spatially-selective cells appropriate for studying drift.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these modeling assumptions. Reviewer 1 explicitly stated the authors 'make an important contribution by translating these findings into more biologically plausible models and showing that their core assumptions remain plausible.' No reviewer questioned the biological plausibility of the modeling framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C74"
+    ],
+    "result": "The authors speculate that most experimental paradigms miss the directed drift phase because they require long pre-exposure periods, longer than needed for familiarization, thus only capturing the third phase of null drift.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this speculation as reasonable. Reviewer 2 noted 'the authors provide compelling evidence that there are continuous changes in network properties during learning and that stationarity may be the hallmark of overfamiliarized environments.' Reviewer 3 stated the paper 'promises to generate testable hypotheses to examine in real neural data, e.g., that drift rate should plateau over long timescales.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose that the specific aspects of the Hessian that are minimized (sum of log eigenvalues for update noise vs. sum of eigenvalues for label noise) depend on the learning rule and noise type, suggesting that the statistics of representational drift could be used to infer the learning rule of a network.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge this theoretical prediction. Reviewer 3 noted the paper 'promises to generate testable hypotheses to examine in real neural data' and 'provides another set of tools for the neuroscience community at large to use when analyzing the increasingly high-dimensional data sets collected today.' The theoretical framework connecting noise type to regularization was accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors provide background on representational drift as a phenomenon where neural tuning changes over time in constant environments across brain regions, with various proposed mechanistic and normative explanations from the literature including structural change, temporal encoding, dropout regularization, and random walks in solution space.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this background framing without challenge. Reviewer 1 stated 'While the extent to which biological systems exhibit drift is an active area of study and debate (as the authors acknowledge), there is enough interest in this topic to justify the development of theoretical models of drift.' The literature review was not questioned.",
+    "result_type": "MINOR"
+  }
+]

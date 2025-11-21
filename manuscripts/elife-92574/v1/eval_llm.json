@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C110"
+    ],
+    "result": "The HFS framework segments the human genome into 617,378 non-overlapping 4096 bp loci and uses the Sei deep learning model to compute 39 sequence class scores for each haplotype. The resulting HFS shows low linkage disequilibrium (median R\u00b2 = 0.013) between adjacent loci, substantially lower than SNP-based LD, primarily due to integration of rare variants and genomic segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 and C110 provide comprehensive methodological details and quantitative results demonstrating the genome segmentation strategy and LD characteristics. The reported median R\u00b2 of 0.013 for adjacent HFS loci, compared to 0.06 for SNPs and 0.14 for HFS without rare variants (C18-C20), is well-documented with statistical tests and supported by figures. The methodology is clearly described and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "HFS-based association analysis identified 3619 independent trait associations (p < 5\u00d710\u207b\u2078) across 14 complex traits in UK Biobank. While 98% of significant HFS loci also harbored significant SNPs, HFS association p-values were higher than GWAS p-values in 95% of loci, indicating HFS did not improve power for detecting marginal effects. Genomic inflation factors (\u03bbGC) were similar between HFS and SNP-based GWAS (PCC = 0.91, p = 0.16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C22-C29 present consistent association results with appropriate statistical comparisons. The finding that HFS does not improve marginal effect detection (C26) is honestly reported and supported by the p-value comparisons (C25). The similar inflation factors between methods (C27-C28) demonstrate that HFS does not introduce additional false positives, validating the approach's statistical properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "HFS-based fine-mapping using SUSIE identified 2699 causal loci-trait associations (PIP > 0.95), representing a median increase of 63 causal findings per trait compared to SNP-based methods (PolyFun and SbayesRC). Causal loci tagged 38-251% more heritability than SNP-based causal variants (median = 151%) with similar AIC values. Simulation analysis confirmed high accuracy (median AUC = 0.92) and low false discovery rate (median FDR = 0.059 at PIP > 0.95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30-C33, C35, C42-C46, and C100-C102 provide comprehensive validation of fine-mapping performance through multiple independent approaches: comparison with SNP-based methods (C31, C42), heritability analysis (C43-C45), and simulation studies (C46, C100-C102). The finding that 55.3% of causal signals would be missed without rare variants (C35) demonstrates the importance of HFS's ability to integrate rare variant effects. The consistency across validation methods strongly supports the superiority of HFS-based fine-mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Causal loci identified by HFS showed significant enrichment for functionally important sequence classes, including 'Promoter' (OR = 2.33, p = 1.41\u00d710\u207b\u00b9\u2074), 'Bivalent stem cell enhancer' (OR = 2.22, p = 1.11\u00d710\u207b\u2078), and 'Transcribed region 1' (OR = 1.71, p = 1.58\u00d710\u207b\u00b9\u2070). Enrichment was even stronger for pleiotropic loci ('Promoter': OR = 7.20, p = 3.35\u00d710\u207b\u2075), and trait-specific patterns were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 demonstrate biologically meaningful functional enrichment patterns with highly significant p-values and appropriate odds ratios. The progressive enrichment from causal loci to pleiotropic loci (C39) and the identification of trait-specific patterns (C40-C41) provide strong evidence for biological validity. These results align with expected functional genomic architecture and support the interpretability of HFS-based findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "HFS-based enrichment analysis identified 727 pathway-trait associations with strong biological interpretability. The most significant associations replicated known mechanisms (e.g., 'megakaryocyte differentiation' with platelet count, p = 2.26\u00d710\u207b\u00b3\u2074; 'circadian pathway' with chronotype, p = 4.25\u00d710\u207b\u00b9\u00b2) and revealed novel insights (e.g., 'arachidonic acid metabolism' with intelligence, p = 2.78\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C50-C65 present extensive pathway enrichment results with highly significant p-values after multiple testing correction. The associations replicate well-established biological mechanisms (C51-C61) while also identifying novel but biologically plausible connections (C62-C65). The consistency with prior biological knowledge (e.g., C104 citing the role of polyunsaturated fatty acids in neurodevelopment) validates the approach's ability to detect meaningful biological relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Cell type and tissue enrichment analysis identified 153 biologically interpretable associations. Key findings included fetal megakaryocyte (p = 5.67\u00d710\u207b\u00b2\u00b2) and child spleen (p = 2.15\u00d710\u207b\u00b9\u00b3) for platelet count, multiple immune cells for allergic disease (p < 4.79\u00d710\u207b\u00b9\u2076), and developmental stage-specific brain tissue associations for cognitive and behavioral traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 demonstrate tissue and cell type enrichment patterns that align with known biology. The identification of fetal megakaryocyte for platelet count (C67), immune cells for allergic disease (C69), and developmental stage-specific brain regions for cognitive traits (C71-C73) shows strong biological coherence. The highly significant p-values and consistency with tissue-specific gene expression patterns support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Integration of HFS fine-mapping with functional annotations highlighted 25 loci for platelet count linked to known platelet-regulating genes. Notably, HFS identified RBBP5 as a candidate gene in the 1q32.1 region with two causal loci (PIP > 0.9), while SNP-based fine-mapping could not resolve this signal (only finding seven signals with PIP = 0.1-0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 demonstrate a clear advantage of HFS over SNP-based methods in a specific genomic region. The identification of RBBP5, a known target of MEF2C during megakaryopoiesis (C76, C80), provides biological validation. The contrast between HFS (PIP > 0.9) and SNP-based fine-mapping (PIP = 0.1-0.5) in the same region (C77-C78) illustrates HFS's superior resolution, though the lack of independent experimental validation limits the strength of this specific gene-level claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "HFS-based fine-mapping of the MHC region for asthma identified 15 causal loci (PIP > 0.95), with good discrimination from non-causal loci (only six loci with PIP between 0.25-0.95). Integration with pathway enrichment and active chromatin data narrowed 105 potential target genes to five key candidates (LTA, LTB, TNF, PSMB8, PSMB9) involved in relevant immune pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 demonstrate HFS's ability to resolve signals in the challenging MHC region, which is typically excluded from fine-mapping due to long-range LD. The good discrimination between causal and non-causal loci (C82) and the biologically informed filtering from 105 to 5 candidate genes (C83-C84) show methodological rigor. However, the lack of independent validation and the inherent complexity of the MHC region warrant cautious interpretation of specific gene-level findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Integration of HFS with SNP-based polygenic risk scores using LASSO regression improved cross-ancestry prediction by 16.1-39.8% across non-British European, South Asian, East Asian, and African populations (p \u2264 0.002 for all). HFS-based PRS alone captured ~75.6% of SNP-based PRS variance in European populations, and loci with PIP > 0.4 captured ~80% of genome-wide variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C85-C87 demonstrate significant improvements in cross-ancestry prediction with appropriate statistical testing. The improvements are most pronounced in African populations (39.8%, C87), consistent with expectations given greater genetic diversity. The comparison with PolyFun-pred and SbayesRC (C88) provides appropriate benchmarking. However, the modest improvements in some populations (16.1-17.5%) and the fact that HFS alone captures only ~75% of SNP-based variance (C85) indicate that HFS complements rather than replaces SNP-based approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "HFS offers key advantages over SNP-based analysis: lower LD between adjacent loci enhancing fine-mapping precision, integration of effects from all variants regardless of frequency, and potential extensibility to whole-genome sequencing data to capture singleton mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C90 are supported by the empirical results presented (low LD in C18-C20, rare variant importance in C35). However, C91's claim about extensibility to whole-genome sequencing is speculative and lacks empirical demonstration. The computational costs reported in C92-C93 (hundreds of thousands of CPU hours for SNP data) raise practical concerns about WGS application. While the conceptual advantages are sound, the practical feasibility of WGS application remains undemonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "HFS has inherent limitations: it captures only variant effects mediated by functional genomics, missing effects on amino acids, post-transcriptional modifications, and 3D chromosomal structures. HFS-based prediction models captured approximately 70% of SNP-based model variance. Recent studies indicate deep learning models trained on reference genomes have limited accuracy in predicting inter-individual gene expression differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 provide an honest assessment of HFS limitations. The ~70% variance capture (C95) is consistent with the prediction results in C85. The citations to recent studies (C96) acknowledging limitations of DL models in predicting inter-individual differences demonstrate appropriate consideration of the broader literature. These limitations are important for contextualizing the results and are appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "HFS performs worse than SNP-based fine-mapping in coding regions. For height, only 16% (20/125) of loci harboring causal exonic SNPs (PIP > 0.95 by PolyFun) reached PIP > 0.5 in HFS analysis, leading to the recommendation that SNP-based analysis should be prioritized in coding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 honestly report a clear limitation of the HFS approach. The quantitative comparison (16% overlap, C106) provides specific evidence for this limitation. The recommendation to prioritize SNP-based analysis in coding regions (C107) is appropriate given the data. This transparent reporting of method limitations strengthens the overall credibility of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C99"
+    ],
+    "result": "The HFS framework has substantial computational costs: genotype-to-haplotype transformation required hundreds of thousands of CPU core hours for UK Biobank SNP data, and Sei required ~1.8 GPU hours per million sequences. Additionally, Sei predicts over 20,000 functional genomic features, but HFS uses only integrated sequence class scores, leaving most output unused.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 and C99 provide transparent reporting of computational requirements and inefficiencies. The computational costs are substantial and represent a significant practical limitation for widespread application. The observation that most Sei output is unused (C99) highlights an area for future optimization. These honest assessments of practical limitations are important for researchers considering adopting this approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Sliding-window analysis (2048 bp step) showed that 29.4% of causal loci remained causal, while 31.1% and 29.3% had overlapping loci that were causal. Removing indels increased significant associations by 9% but decreased causal associations by 4.7% with slightly increased inflation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate robustness testing of the HFS framework. The sliding-window analysis (C47-C48) shows moderate consistency (~60% of causal loci either remain causal or have adjacent causal loci), indicating some sensitivity to locus boundaries. The indel analysis (C49) shows their contribution to fine-mapping but not association detection. These sensitivity analyses appropriately characterize the method's robustness and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Simulation analysis revealed that when a non-reference sequence class score was associated with the trait, the reference class score could still capture a median of 70% of HFS-trait association R\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 reports a simulation result justifying the use of reference sequence class scores as HFS. The 70% capture rate indicates substantial but incomplete information retention, which is consistent with the overall performance results. This simulation provides important methodological validation for the choice to use reference class scores, though the 30% information loss represents a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript cites established limitations of GWAS: statistical power depends on variant frequency, most large-effect variants are rare, LD inflates false positives, and most trait-relevant variants reside in non-coding regions lacking direct functional annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 accurately cite established knowledge from the GWAS literature with appropriate references. These claims provide context for the motivation of the HFS framework. The citations appear accurate and the characterization of GWAS limitations is consistent with the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work on Polygenic Transcriptome Risk Scores (PTRS) achieved remarkable portability by using genetically determined transcription levels, but accuracy of imputing transcription from genotypes remains limited (R\u00b2 ~0.1 for most genes). Deep learning studies have achieved higher accuracy in predicting functional genomic levels compared to transcription levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 accurately characterize prior work with appropriate citations. The contrast between PTRS limitations (C10) and DL model capabilities (C11) provides clear motivation for the HFS approach. The citations to multiple DL studies (C11) and the specific R\u00b2 values (C10) demonstrate familiarity with the relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C110"
+    ],
+    "result": "The Sei deep learning model accepts DNA sequences in FASTA format and computes multiple sequence class scores representing different facets of functional genomic activities. In this study, 39 of Sei's sequence class scores were used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C110 accurately describe the Sei model's functionality as used in this study. The description is consistent with the Sei publication and provides necessary methodological detail. The choice to use 39 sequence class scores is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The study analyzed UK Biobank data (application ID 84436) and randomly selected 350,587 self-identified British ancestry Caucasians as the training sample, adhering to UK Biobank ethics and privacy policies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 provide essential methodological details about data source, sample size, and ethical compliance. The specific application ID and sample size are clearly stated, enabling reproducibility. The statement of ethical compliance is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The hg38 genome was divided into 1361 independent blocks as defined by MacDonald et al., 2022, and SUSIE was applied to loci HFS in each block with 4-2392 loci per block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 provide clear methodological details for the fine-mapping analysis with appropriate citation. The use of predefined independent blocks is a standard approach for fine-mapping, and the range of loci per block is clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "67 causal loci showed pleiotropic effects on at least two independent traits, including the 'CTCF-Cohesin' score of chr9:89596537-89600633 associated with age at menarche, BMI, and height (PIP > 0.97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 reports a specific finding about pleiotropy with a concrete example. The identification of 67 pleiotropic loci is consistent with expectations for complex traits, and the specific example provides appropriate detail. However, this is a descriptive finding without deeper mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C56",
+      "C76",
+      "C80",
+      "C103",
+      "C104"
+    ],
+    "result": "The manuscript cites several pieces of prior biological knowledge: PD-1 as a potential target for allergic diseases, RBBP5 as a target of MEF2C during megakaryopoiesis, PolyFun-pred + BOLT-LMM outperforming BOLT-LMM alone, and the role of polyunsaturated fatty acids in neurodevelopment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C76, C80, C103, and C104 cite prior biological and methodological knowledge with appropriate references. These citations provide context for interpreting the HFS results and appear accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The central dogma proposes that DNA alterations' effects on phenotype are mediated via RNA and protein changes. The authors conclude that HFS is a promising strategy for understanding the genetic basis of human complex traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 accurately states a fundamental principle of molecular biology that motivates the HFS approach. Claim C112 represents the main conclusion, which is supported by the comprehensive set of results presented throughout the manuscript, including improved fine-mapping, biological interpretability, and cross-ancestry prediction.",
+    "result_type": "MINOR"
+  }
+]

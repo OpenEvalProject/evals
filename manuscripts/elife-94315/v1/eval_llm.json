@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "MNTB neurons express all three neurexin genes (Nrxn1, Nrxn2, Nrxn3) at varying levels in wild-type mice, and stereotactic injection of AAV-Cre-EGFP at P0 successfully deletes all neurexins in MNTB neurons of Nrxn123 cTKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 are well-supported by RNAscope FISH data in Figure 1 showing differential expression of neurexin genes in wild-type MNTB neurons and successful knockout following AAV-Cre injection. The quantification shows statistically significant differences in expression levels between neurexin isoforms and between control and Cre-expressing conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Pan-neurexin deletion in MNTB neurons significantly impairs glycinergic synaptic transmission at LSO neurons, reducing IPSC amplitude by ~60% and slowing kinetics (rise time and decay time), as demonstrated by optogenetic stimulation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C31 are strongly supported by optogenetic stimulation data in Figure 2a-d showing statistically significant reductions in IPSC amplitude and slower kinetics in TKO mice. The strychnine blockade experiments confirm the glycinergic nature of the currents. Statistical tests show p<0.05 for all key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Afferent fiber stimulation confirms a modest but significant decrease in glycinergic synaptic strength in Nrxn123 TKO mice, likely due to incomplete AAV transfection (~80% infection efficiency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by electrical stimulation data in Figure 2e-f showing statistically significant reduction in IPSC amplitude. The authors acknowledge incomplete viral transfection as a limitation, which is reasonable given the technical challenges of neonatal stereotactic injections. However, C34 is speculative regarding the cause of modest effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Paired-pulse ratio analysis reveals that neurexin deletion significantly increases PPR at glycinergic synapses, indicating reduced release probability at neurexin-deficient terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by paired-pulse stimulation data in Figure 2i-j showing paired-pulse depression in both groups but significantly increased PPR in TKO mice (p<0.0001, two-way ANOVA). The inference that this reflects reduced release probability (C38) is standard interpretation in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Spontaneous IPSC analysis reveals that neurexin deletion causes a small but significant increase in sIPSC frequency without affecting amplitude or kinetics, a phenotype opposite to that observed at glutamatergic and GABAergic synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by sIPSC recordings in Figure 3a-d showing unchanged amplitude and kinetics but increased frequency (p=0.015). The comparison to previous studies (C42) is appropriately cited. This unexpected finding is a key novel observation of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Neurexin deletion leads to increased glycinergic synapse density at LSO neurons, as evidenced by increased GlyT2 and VGAT immunostaining and elevated sIPSC frequency, representing a distinct phenotype from other synapse types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C43-C46 are well-supported by converging evidence from sIPSC frequency data (Figure 3a-b) and immunostaining quantification (Figure 3e-h) showing statistically significant increases in synaptic markers. The inference of increased synapse number (C45) is reasonable given the dual evidence, though direct synaptic counts would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Low extracellular Ca2+ perfusion experiments reveal that neurexin-deficient synapses have significantly increased calcium sensitivity, with EC50 values of 1.1 mM (TKO) versus 1.5 mM (control), indicating neurexins regulate calcium sensitivity of transmitter release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by low Ca2+ perfusion experiments in Figure 4 showing differential reduction rates and statistically significant differences in EC50 values (p=0.0139). However, there is a potential error: C49 states EC50 is 1.1 mM for TKO and 1.5 mM for control, but lower EC50 indicates higher sensitivity, which seems contradictory to the claim of impaired function. The data interpretation needs clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "EGTA-AM treatment causes much stronger inhibition of neurotransmission in neurexin-deficient synapses (53.2\u00b15.4%) compared to control synapses (15.6\u00b14.3%), indicating that neurexins are essential for tight coupling between voltage-gated Ca2+ channels and synaptic vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C54-C57 are strongly supported by EGTA-AM experiments in Figure 5 showing statistically significant differential effects (p=0.0001). The inference about disrupted Ca2+ channel-vesicle coupling (C24, C57) is well-established in the field and consistent with previous studies at the calyx of Held synapse.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The mechanism by which neurexins regulate glycinergic synapses parallels their function at glutamatergic calyx of Held synapses, involving tight spatial organization of Ca2+ channels with synaptic vesicles in nanodomain coupling arrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 and C63-C66 are supported by appropriate citations to prior work and the current experimental data. The comparison to calyx of Held synapse (C52, C53, C63, C64) is well-justified given the functional similarities between these synapses and consistent findings across both systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose three speculative explanations for the unexpected increase in glycinergic synapse density: (1) neurexins may have dual roles in promoting synchronized transmission while restricting spontaneous transmission, (2) impaired synapse strength may interfere with synaptic elimination, or (3) developmental compensation from other glycinergic sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C76 are explicitly speculative explanations for the unexpected phenotype. While the authors appropriately acknowledge these as hypotheses and provide relevant citations (e.g., synaptotagmin dual function, C72-C73), none of these mechanisms are directly tested. These remain plausible but unvalidated interpretations requiring future experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C58"
+    ],
+    "result": "The study demonstrates that neurexins are essential for controlling strength and temporal precision of glycinergic synapses, corroborating their role as key presynaptic organizers across all major types of fast chemical synapses (glutamatergic, GABAergic, and glycinergic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 and C58 represent the main conclusions, which are well-supported by the convergent evidence from multiple experimental approaches (optogenetics, electrical stimulation, Ca2+ sensitivity, EGTA experiments). The extension to all synapse types (C58, C87) is justified by combining current findings with extensive prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establish that neurexins are conserved synaptic adhesion molecules associated with neuropsychiatric disorders, encoded by three genes with distinct isoforms, showing cell-type specific expression and diverse functions at glutamatergic and GABAergic synapses, while glycinergic synapses mediate essential inhibition in brainstem circuits like MNTB-LSO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 are background/context claims supported by appropriate citations to established literature. These provide the scientific foundation for the current study and are not novel findings. All citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Discussion claims contextualize findings within prior literature, noting that neurexin expression is cell-type specific, different isoforms may have distinct roles, and previous knockout studies showed variable effects on synapse formation/maintenance depending on neuron type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C67-C70 are discussion points appropriately supported by citations to prior literature. These contextualize the current findings but do not represent new experimental results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Methods claims describe experimental procedures including ethical approval, use of Nrxn123 cTKO mice at P13-14, viral injection at P0, optogenetic validation, and pharmacological isolation of glycinergic currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 are methodological descriptions supported by the Methods section and supplementary figures. These are adequately documented, though some details (e.g., exact viral titers, injection success rates) could be more precisely quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The abstract claims that synaptic dysfunctions in neurexin-deficient glycinergic synapses result from impaired Ca2+ sensitivity and loosened Ca2+ channel-vesicle coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 accurately summarize the main mechanistic findings supported by Figures 4-5. These are appropriate summary statements of the experimental results.",
+    "result_type": "MAJOR"
+  }
+]

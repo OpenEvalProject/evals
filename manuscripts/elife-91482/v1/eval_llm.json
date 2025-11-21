@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C84",
+      "C85",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "PARP-1 binds specifically to active mono-methylated histone marks (H4K20me1, H3K4me1, H3K36me1, H3K9me1, H3K27me1) in vitro and in vivo, with highest specificity for H4K20me1, while repressive marks (H3K9me2/3) reduce PARP-1 binding. This binding pattern is supported by peptide array data, ChIP-seq correlation analysis, and immunofluorescence on polytene chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C22, C27-C29, C31, C84-C85, C94-C96 provide converging evidence from multiple experimental approaches (peptide arrays, ChIP-seq, immunofluorescence) demonstrating PARP-1's preferential binding to active mono-methylated histone marks. The high reproducibility (r=0.92 for peptide arrays) and consistent correlations across methods strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Histone modifications can modulate PARP-1 binding in a context-dependent manner: H3K9me2/3 inhibits PARP-1 binding to H3K4me1-containing peptides, while H3K4me1 enhances PARP-1 binding to H3K9me2/3-containing peptides. Phosphorylation of residues near methylation sites (H3S10P, H3T11P near H3K9me1; H3S28P near H3K27me1) diminishes PARP-1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by peptide array data showing combinatorial effects of histone modifications on PARP-1 binding. The bidirectional modulation (inhibition and enhancement) and phosphorylation effects are directly demonstrated in the experimental data (Figure 1F and supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Both pr-set7 and parp-1 Drosophila mutants undergo developmental arrest during larval-to-pupal transition. The pr-set720 mutant eliminates PR-SET7 RNA/protein and abolishes H4K20me1, while PARP-1 loss does not affect PR-SET7 levels, indicating PARP-1 does not directly regulate pr-set7 in Drosophila (contrasting with human cell findings).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C36 are supported by experimental validation of mutant phenotypes and molecular characterization. The developmental arrest is established from prior work (C32), and the molecular validation (C33-C35) is shown in Figure 3 supplements. The contrast with human cells (C36) is appropriately cited and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RNA-seq analysis reveals high correlation (r=0.79) between differentially expressed genes in pr-set720 and parp-1C03256 mutants. At genes co-enriched with PARP-1 and H4K20me1, most differentially expressed genes in both mutants are upregulated (72%), and these genes show ~40% higher expression and increased Pol II occupancy in wild-type. However, genes differentially expressed in only one mutant show opposite patterns, indicating distinct functions for PARP-1 and H4K20me1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37-C44 are supported by comprehensive RNA-seq and ChIP-seq integration (Figure 3). The high correlation (C37), limited changes at co-enriched sites (C38), and differential patterns (C39-C43) are all directly shown in the data. The inference of distinct functions (C44) is reasonable given the opposing expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "At genes co-enriched with PARP-1 and H4K20me1, metabolic genes are upregulated while neurodevelopmental genes are downregulated in both mutants. The authors propose that H4K20me1 is required for PARP-1 binding to repress metabolic genes during development, and that disruption of this repression causes developmental arrest by creating metabolic imbalances incompatible with larval-to-pupal transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C46 are supported by gene ontology analysis (Figure 3F). However, the mechanistic proposals (C49, C91-C93) are speculative. While the correlation between metabolic gene dysregulation and developmental arrest is suggestive, direct causation is not demonstrated. The model requires additional functional validation such as rescue experiments or metabolite measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The distribution of PARP1 and H4K20me1 is correlated in human K562 cells, suggesting the interplay between PARP-1 and H4K20me1 is conserved beyond Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by ChIP-seq analysis in human cells (Figure 3\u2014figure supplement 5). The correlation demonstrates conservation of the PARP-1/H4K20me1 relationship across species, though the functional significance in human cells requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C69"
+    ],
+    "result": "PARP-1 and PR-SET7 are both essential for activating heat shock genes (hsp22, hsp23, hsp68, hsp70, hsp83) during heat stress. Prior to heat shock, PARP-1 occupies promoters of most heat shock genes, while H4K20me1 enrichment varies: low at hsp22/hsp68/hsp70 gene bodies (group A) but high at hsp23/hsp83 gene bodies (group B).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51-C54, C69 are supported by qRT-PCR showing reduced heat shock gene expression in mutants (Figure 4A) and ChIP-seq data showing differential H4K20me1 patterns before heat shock (Figure 4B-C). The requirement for both PARP-1 and PR-SET7 is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "During heat shock, H4K20me1 levels increase at group A gene bodies (initially low H4K20me1) but decrease at group B gene bodies (initially high H4K20me1). The authors suggest these dynamic changes regulate heat shock gene expression, and that H4K20me1 may not be necessary for PARP-1-mediated activation of group B genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55-C56 are supported by ChIP-qPCR data (Figure 4D-E) showing opposite H4K20me1 dynamics at the two gene groups. The inference about regulatory significance (C57) is reasonable given the correlation with gene activation. However, the conclusion that H4K20me1 is dispensable for group B genes (C58) is somewhat speculative\u2014the decrease could reflect active removal rather than dispensability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mutating pr-set7 disrupts H4K20 monomethylation and abolishes PARP-1 binding at heat shock loci after heat shock. Prior to heat shock, PARP-1 binding is normal in pr-set720 mutants, but after heat shock, PARP-1 binding is diminished from chromatin in mutants while concentrated at specific loci in wild-type. Correspondingly, pADPr levels increase 26.1-fold in wild-type but only 2.3-fold in pr-set720 mutants after heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C59-C61, C63-C65 are supported by immunofluorescence (Figure 5A) and Western blot data (Figure 5B). The dramatic difference in PARP-1 localization and pADPr accumulation between wild-type and mutant after heat shock strongly supports the conclusion that PR-SET7/H4K20me1 is crucial for PARP-1 function during heat stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C3"
+    ],
+    "result": "H4K20 monomethylation is a key triggering point in PARP-1 dependent processes in chromatin, playing a critical role in facilitating PARP-1 binding and regulation of PARP-1-dependent loci during both development and heat shock stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C3 represent the central conclusion of the manuscript, synthesizing evidence from multiple experimental systems (development and heat shock). The conclusion is well-supported by the convergence of in vitro binding data, genomic localization studies, mutant phenotypes, and functional assays showing requirement for both factors in gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C76"
+    ],
+    "result": "The authors propose mechanistic models for how H4K20me1 dynamics regulate heat shock genes: for group A genes, increased H4K20me1 may facilitate PARP-1 spreading to enhance activation; for group B genes, H4K20me1 removal may enable elongation, potentially requiring an unidentified demethylase and PR-SET7 non-catalytic functions. They also suggest H3K36me1 and H3K9me1 could substitute for H3K4me1 and H4K20me1 in controlling PARP-1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73, C76 are speculative hypotheses proposed to explain the observed H4K20me1 dynamics. While the models are reasonable interpretations of the data, they lack direct experimental validation. The proposal of an unidentified demethylase (C73) and functional redundancy among mono-methylated marks (C76) requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Drosophila embryos expressing unmodifiable H4K20A or catalytically-inactive trr mutants can still mature into adult flies, demonstrating that H3K4me1 and H4K20me1 are dispensable for transcription during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by citations to prior work. This finding appears to contradict the authors' model of H4K20me1 importance during development, though the authors address this by proposing functional redundancy with other mono-methylated marks. The apparent contradiction deserves more thorough discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose a model where PARP-1 is actively involved in histone modification turnover at highly transcribed genes: (1) PARP-1 binds mono-methylated marks, (2) upon activation, PARP-1 automodifies and disengages, facilitating nucleosome reassembly, (3) PARG cleaves pADPr, restoring PARP-1 binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C82 present a speculative model for PARP-1 function in maintaining active chromatin. While the model is consistent with known PARP-1 biochemistry and the observation that PARP-1 binds highly active genes, it lacks direct experimental support in this manuscript. The model would require time-resolved studies of PARP-1 binding, modification, and nucleosome dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C30",
+      "C50",
+      "C62",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C77",
+      "C78",
+      "C83",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "Background knowledge and prior work establishing the roles of chromatin structure, histone modifications, PARP-1 function, and the biological contexts (development, heat shock) relevant to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C20, C30, C50, C62, C66-C68, C70, C77-C78, C83, C86, C89-C90 represent established knowledge appropriately cited from the literature or the authors' prior work. These provide necessary context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

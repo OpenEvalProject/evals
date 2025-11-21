@@ -1,0 +1,171 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C79"
+    ],
+    "result": "The authors used the ESTIMATE algorithm to assess tumor purity in DLBCL, finding it ranged from 17.2 to 67.4% in the GSE53786 dataset, and that patients with high tumor purity had lower overall survival rates than those with low tumor purity (p=0.025).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises a critical methodological concern that 'C1QB is included in the stromal signature of the ESTIMATE algorithm meaning that, by definition, it will be correlated with tumor purity in that setting.' This indicates the tumor purity measurement may be confounded by the algorithm's design. Additionally, Reviewer 1 notes 'it is therefore expected that tumor purity measured by the ESTIMATE algorithm will correlate with the expression of multiple genes,' suggesting the findings may be circular rather than biologically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C21",
+      "C80"
+    ],
+    "result": "The authors identified 642 tumor purity-related genes (TPGs) in DLBCL using correlation thresholds of |r|\u22650.5 and p<0.05, with 31 genes positively correlated and 611 genes negatively correlated with tumor purity. These TPGs were mainly associated with extracellular matrix organization and immune response.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not directly challenge the gene identification methodology, Reviewer 1's concern about the ESTIMATE algorithm's inherent correlation with gene expression ('It is therefore expected that tumor purity measured by the ESTIMATE algorithm will correlate with the expression of multiple genes') casts doubt on whether these correlations represent true biological relationships or methodological artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors identified nine intersection genes (including VCAN, CD3G, and C1QB) between PPI hub genes and prognostic TPGs. They found that VCAN and CD3G were correlated with good prognosis while C1QB was correlated with poor prognosis, and concluded these three key genes influenced tumor purity and could impact drug sensitivity and prognosis of DLBCL patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 identifies a logical inconsistency: 'high tumor purity is associated with worse prognosis. Later in the manuscript, it is also shown that C1QB expression is associated with worse prognosis. However, figure 2A shows that C1QB is associated with decreased tumor purity. It therefore makes it less likely that the prognostic role of C1QB expression is related to its impact on tumor purity.' This suggests the mechanistic link between these genes, tumor purity, and prognosis is not well-established. Reviewer 1 also notes the evidence is 'correlative in nature and not sufficient to draw this conclusion.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C95"
+    ],
+    "result": "The authors constructed a riskScore model based on VCAN, CD3G, and C1QB expression that showed strong prognostic significance, with high-risk groups having significantly lower OS rates (p<0.001), AUC values of 0.73-0.77 for 1-5 year predictions, and the riskScore being an independent prognostic factor (p=0.002, HR=1.474). The riskScore was positively correlated with tumor purity (R=0.376).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers acknowledge the strong prognostic significance of the risk scoring system. Reviewer 1 states 'The two strengths of the study are its relatively large sample size (n = 190) and the strong prognostic significance of the risk scoring system.' The editor notes 'The provided evidence showing an association between worse DLBLC prognosis and high-risk score is solid.' However, Reviewer 1 notes that 'the correlation between the risk score and tumor purity is significant but not very strong (R = 0.376),' suggesting other biological factors may be more important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors validated their findings using IHC in the CHCAMS cohort (n=190), showing that high expression of VCAN (p=0.003) and high CD3G+ T cell infiltration (p<0.001) were associated with favorable prognosis, while high C1QB expression (p=0.015) was associated with adverse prognosis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly acknowledges this as a strength: 'It is worth noting that the validation of this scoring with IHC, a simple technique already routinely used for the diagnosis and classification of DLBCL, increases the potential for clinical translation.' The editor also notes the study presents 'a predictive scoring system in DLBCL based on the expression of three tumour microenvironment-related genes' that 'seems useful for predicting tumour purity levels in DLBCL.' The IHC validation is not challenged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors characterized immune cell infiltration in DLBCL, finding that CD68+ macrophages (17.75\u00b11.05%) were more abundant than CD4+ T cells (0.68\u00b10.20%) and CD8+ T cells (6.69\u00b10.56%). CD68+ macrophages, CD8+ T cells, and CD4+ T cells were all associated with better prognosis. CD3G+ T cell ratio was positively correlated with CD68+ macrophages, CD8+ T cells, and CD4+ T cells. M1 macrophages were more abundant than M2 macrophages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these immune infiltration findings. Reviewer 1 acknowledges that 'The tumor microenvironment has been extensively studied in DLBCL and a prognostic implication has already been established,' indicating acceptance of this type of analysis. The correlative nature of the study is noted but these specific immune cell characterizations are not disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors found that the high-risk group had more ABC type DLBCL while the low-risk group had more GCB type DLBCL, and that the high-risk group displayed higher LDH ratio. However, ECOG performance and stage were not significantly associated with the riskScore, though the high-risk group had more Stage III/IV patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These clinical-pathological associations are not challenged by reviewers. Reviewer 1 notes the study includes 'Analysis of clinicopathological characteristics' as part of the validation process, implicitly accepting these findings. The lack of association with ECOG and stage is reported transparently by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors predicted drug sensitivity using the riskScore model, identifying that high-risk patients could be sensitive to Carmustine, Cytarabine, Oxaliplatin, Vorinostat, and Bortezomib based on intersection analysis of predictions from both GSE53786 and GSE32918 datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Both reviewers express significant concerns about the drug sensitivity findings. The editor states 'it is incomplete to draw a clear conclusion about the links between risk score and drug sensitivity.' Reviewer 1 is more specific: 'Although the difference in sensitivity between tumors with low and high risk scores show statistical significance for certain drugs, the absolute difference appears small in most cases and is of unclear biological significance. In addition, even though the risk score is statistically related to drug sensitivity, there is no direct evidence that the differences in drug sensitivity are directly related to tumor purity.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The authors found that CD3G+ T cell ratio was higher in DLBCL originating from groin and testis, while VCAN featured higher expression in lymph node-originated DLBCL.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These anatomical site-specific findings are not challenged by reviewers and appear to be accepted as part of the descriptive characterization of the cohort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The authors conclude that VCAN, CD3G, and C1QB play important roles in the microenvironment of DLBCL, possibly regulating immune infiltration via modulating extracellular organization and cellular interaction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly states 'the correlative nature of the study limits the conclusions that can be drawn in regards to links between the risk scoring system, the tumor microenvironment, and the biology of DLBCL.' The mechanistic interpretation is challenged: 'The prognostic impact could be related to different patterns of immune cell infiltration, as shown later. However, the evidence presented in the study is correlative and nature and not sufficient to draw this conclusion.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors acknowledge limitations including single-center patient recruitment potentially introducing biases, potential limitations of IHC methodology for assessing protein expression, and lack of standardized coefficients for calculating a final prognostic index due to variability in IHC interpretation across centers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are author-acknowledged limitations that reviewers do not dispute. Reviewer 1 notes that despite IHC limitations, 'the validation of this scoring with IHC, a simple technique already routinely used for the diagnosis and classification of DLBCL, increases the potential for clinical translation,' suggesting the limitations are acceptable in context.",
+    "result_type": "MINOR"
+  }
+]

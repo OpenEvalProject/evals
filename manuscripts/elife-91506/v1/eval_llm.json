@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "NMR-restrained replica-averaged metadynamics (RAM) simulations reveal that apo PKA-C populates a broad ground state and multiple excited states, with ATP binding narrowing the conformational ensemble and ternary complex formation further reducing heterogeneity to a catalytically committed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C41 collectively demonstrate convergence of RAM simulations (C33), agreement with experimental NMR chemical shifts (C41), and systematic characterization of conformational landscapes for apo, binary, and ternary forms (C35-C37). The computational methodology is validated against prior NMR data, and the free energy landscapes show consistent trends across ligand-bound states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "Markov State Model (MSM) analysis identifies three major conformational basins for apo PKA-C: a dominant ground state (GS) matching crystal structures, a first excited state (ES1) with outward \u03b1C-helix orientation typical of inactive kinases, and a novel second excited state (ES2) featuring disrupted hydrophobic packing at the \u03b1C-\u03b24 loop with flipped F100/F102 configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C53 provide comprehensive MSM characterization with structural validation against crystal structures (C43, C45) and identification of a novel ES2 state not previously observed crystallographically (C49). The analysis includes detailed structural features (C46-C48) and demonstrates ATP-dependent population shifts (C50). The computational predictions are internally consistent and structurally well-defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "NMR CPMG and CEST experiments detect conformationally excited states in apo PKA-C, with one excited state corresponding to the computationally predicted ES2 basin, showing agreement between experimental (5\u00b11%) and MSM-predicted (6\u00b12%) populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 demonstrate strong agreement between independent experimental NMR measurements and computational MSM predictions. The population estimates are quantitatively consistent (C58-C59), and the chemical shift patterns support the ES2 assignment (C55-C57). This represents robust validation of the computational model with orthogonal experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C85"
+    ],
+    "result": "The F100A mutation preserves catalytic efficiency with Kemptide substrate, showing only a small reduction in kcat/KM (0.50\u00b10.04 for WT vs 0.41\u00b10.08 for F100A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C84-C85 are supported by steady-state enzyme assay data with quantitative kinetic parameters and error estimates. The measurements demonstrate that F100A maintains near-wild-type catalytic activity despite structural perturbations, which is a key finding for dissecting catalytic function from allosteric cooperativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The F100A mutation rearranges the \u03b1C-\u03b24 loop from a \u03b2-turn to a \u03b3-turn conformation, disrupting hydrogen bonding patterns (N99-Y156) and cation-\u03c0 interactions (F102-R308), thereby abolishing allosteric binding cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C60-C64 are supported by MD simulations showing structural rearrangements (C60-C62) and disrupted interactions (C63-C64), combined with ITC data demonstrating loss of cooperativity (C9). The structural and thermodynamic data are mutually consistent and provide mechanistic insight into how the mutation affects allostery while preserving catalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ITC measurements show that F100A maintains similar ATP binding affinity (Kd=73\u00b12 \u03bcM vs 83\u00b18 \u03bcM for WT) but exhibits threefold higher apo-substrate affinity and drastically reduced cooperativity coefficient (\u03c3~3 vs >100 for WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by quantitative ITC measurements with error estimates. The data demonstrate that the F100A mutation selectively disrupts allosteric cooperativity without affecting nucleotide binding, providing strong thermodynamic evidence for the proposed mechanism. The cooperativity coefficient reduction is dramatic and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "MD simulations reveal that F100A mutation propagates structural changes through the hydrophobic core, preventing R-spine residues from adopting a competent state upon ATP binding while altering both breathing (PC1) and shearing (PC2) motions of the two lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 are supported by MD simulation data including RMSD analysis (C67-C70) and principal component analysis (C71-C72). The analysis demonstrates long-range propagation of structural effects and provides mechanistic explanation for loss of cooperativity. The computational data are internally consistent and explain the thermodynamic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mutual information analysis shows that F100A disrupts the correlated motions characteristic of the dynamically committed state, displaying weaker and interspersed correlations with rewired allosteric communication, though the mutation does not drive the kinase into a completely inactive ES2 state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 are supported by mutual information analysis of MD trajectories, showing loss of coordinated motions (C74-C76) and altered correlation patterns (C77). The analysis is consistent with previous NMR studies (C75) and explains the mechanistic basis for loss of cooperativity. The conclusion that F100A doesn't fully adopt ES2 (C82) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "NMR spectroscopy reveals that F100A exhibits attenuated chemical shift perturbations upon ATP and substrate binding, with dramatic broadening of amide resonances suggesting intermediate conformational exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by NMR chemical shift perturbation data comparing WT and F100A. The observed broadening (C90-C91) and attenuated CSPs (C92-C94) are consistent with disrupted allosteric communication and provide direct experimental evidence for altered conformational dynamics in the mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "CONCISE analysis of NMR chemical shifts shows that F100A exhibits broader probability densities and a more open ternary complex structure compared to WT, indicating uncoordinated response to ligand binding and explaining the loss of cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by CONCISE analysis of NMR data, showing quantitative differences in conformational distributions between WT and F100A. The analysis provides population-level interpretation of chemical shift data and is consistent with the thermodynamic measurements of reduced cooperativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "CHESCA analysis reveals that F100A exhibits sparser and attenuated correlations compared to WT, with loss of critical inter-community correlations between C-spine/R-spine (ComE-ComC, ComD-ComC) and substrate recognition communities (ComF1-ComG-ComH), corresponding to reduced thermodynamic cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C111 are supported by CHESCA analysis of NMR chemical shift trajectories across multiple ligand-bound states. The analysis identifies specific loss of correlations between functional communities (C106-C108) and provides mechanistic explanation linking structural dynamics to thermodynamic cooperativity (C110-C111). The community-based analysis is well-defined and interpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C112",
+      "C123",
+      "C124"
+    ],
+    "result": "The \u03b1C-\u03b24 loop emerges as a pivotal regulatory element controlling synergistic nucleotide-substrate binding through allosteric coupling between the nucleotide-binding pocket and the inter-lobe interface, with F100/F102 constituting a critical hydrophobic node anchoring the N- to C-lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C112, C123-C124 synthesize the experimental and computational findings to identify the \u03b1C-\u03b24 loop as a key allosteric element. This conclusion is well-supported by the F100A mutant data, MD simulations, and NMR analyses presented throughout the study. The structural and functional importance is established through multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Previous studies on pathological PKA-C mutations linked to Cushing's syndrome demonstrate that activation loop mutations drastically reduce substrate-binding affinity and disrupt inter-lobe communication without preventing Kemptide phosphorylation, causing loss of substrate fidelity and aberrant downstream phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 summarize prior work by the authors on disease-associated mutations. These claims are supported by multiple citations to published studies (Olivieri et al., 2021; Walker et al., 2019, 2021; Omar et al., 2022) and provide important context for the current work. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Prior studies demonstrate that substrate-binding affinity can be controlled by changing nucleotide chemistry at the ATP-binding pocket, suggesting that substrate phosphorylation and ATP-substrate cooperativity may be controlled independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by citation to Walker et al., 2019 and represent an inference from collective prior findings. This provides important conceptual framework for the current study's focus on dissecting catalytic activity from allosteric cooperativity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Studies on EGFR and ErbB2 kinases show that the \u03b1C-\u03b24 loop acts as a molecular brake or autoinhibitory switch, with activating mutations and in-frame insertions frequently found in cancers, altering the conformational landscape in a length-dependent manner and displaying gradual drug responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C131 accurately summarize published literature on EGFR/ErbB2 with appropriate citations (Chen et al., 2007; Klein et al., 2015; Fan et al., 2008; Ruan and Kannan, 2018; Zhao et al., 2020; Yeung et al., 2020). These claims provide important context showing that \u03b1C-\u03b24 loop regulation is a conserved feature across kinase families.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The current study demonstrates that it is possible to abolish kinase binding cooperativity by increasing \u03b1C-\u03b24 loop flexibility (opposite to rigidification in EGFR insertions), identifying a new partially inactivating pathway (ES2) that provides understanding of how to control kinase dynamics and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 represent the key conceptual advance of the study, synthesizing the experimental and computational findings. The conclusion is well-supported by the F100A mutant data showing loss of cooperativity with maintained catalysis, and the identification of ES2 provides a novel mechanistic pathway. This represents a significant contribution to understanding kinase regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "PKA-C exhibits allosteric cooperativity between ATP and substrates, with positive cooperativity for ATP/unphosphorylated substrate binding and negative cooperativity for ADP/phosphorylated substrate in the exit complex, a property disrupted in disease-driven mutations and potentially affecting both substrate fidelity and regulatory processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C27-C32 establish the biological context and importance of cooperativity in PKA-C. These claims are supported by established literature (Lew et al., 1997; Wang et al., 2019) and prior work by the authors on disease mutations. The claims accurately represent known properties of PKA-C and motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PKA-C is a bilobal kinase with well-characterized structure featuring N-lobe (dynamic, \u03b2-sheets, \u03b1C helix, nucleotide-binding) and C-lobe (rigid, \u03b1-helices), with hydrophobic core crossed by catalytic and regulatory spines that assemble upon ATP binding and activation loop phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C26 provide established structural and mechanistic background on PKA-C, supported by extensive crystallographic literature (Knighton et al., 1991; Johnson et al., 2001; Kornev et al., 2006; Hu et al., 2015). These claims accurately represent the current understanding of PKA-C structure and function and provide necessary context for interpreting the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "The long-range synergistic action between ATP and substrates may regulate PKA's association with regulatory subunits and other binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C3 is presented as speculation ('may also regulate') in the abstract. While the homology between substrate and R-subunit recognition sequences (C31) provides circumstantial support, the current study does not directly test effects on R-subunit binding or other binding partners. This remains a hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The study identifies two excited states: ES1 corresponding to a previously characterized inactive state with \u03b1C helix swinging outward, and ES2 displaying disrupted hydrophobic packing around the R-spine with flipped F100/F102 configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are supported by MSM analysis and validated against known inactive structures for ES1 (C45) and NMR data for ES2 (C54-C59). The structural characterization is detailed and consistent across multiple analytical approaches. These represent key findings of the computational work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The importance of allosteric coupling between nucleotide-binding and substrate-binding sites has been emphasized for other kinases such as Src and ERK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is supported by citations to studies on Src and ERK2 (Foda et al., 2015; Iverson et al., 2020). This provides important context showing that the allosteric mechanisms identified in PKA-C may be generalizable across the kinase family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "CHESCA communities ComF1, ComG, and ComH orchestrate substrate recognition and R subunits binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is based on established knowledge about the functional roles of these structural communities in PKA-C, supported by the community definitions from McClendon et al., 2014. This provides interpretive context for the CHESCA analysis results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2802 @@
+{
+  "submission": {
+    "id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:28:00.902943Z",
+    "updated_at": "2025-11-20T23:28:00.902943Z"
+  },
+  "content": [
+    {
+      "id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "content_type": "manuscript",
+      "content_text": "# Arabidopsis transcriptome responses to low water potential using high-throughput plate assays\n\n## Authors\n\n- Stephen Gonzalez<sup>1</sup> ([ORCID: 0009-0005-8339-9911](https://orcid.org/0009-0005-8339-9911))\n- Joseph Swift<sup>1</sup> ([ORCID: 0000-0001-9559-1699](https://orcid.org/0000-0001-9559-1699)) \u2020\n- Adi Yaaran<sup>2</sup>\n- Jiaying Xu<sup>1</sup>\n- Charlotte Miller<sup>1</sup>\n- Natanella Illouz-Eliaz<sup>1</sup>\n- Joseph R Nery<sup>3</sup>\n- Wolfgang Busch<sup>1</sup>\n- Yotam Zait<sup>2</sup>\n- Joseph R Ecker<sup>1</sup> ([ORCID: 0000-0001-5799-5895](https://orcid.org/0000-0001-5799-5895)) \u2020\n\n### Affiliations\n\n1. Plant Biology Laboratory, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n2. The Robert H. Smith Institute of Plant Sciences and Genetics in Agriculture, Faculty of Agriculture, Food, and Environment, The Hebrew University of Jerusalem Rehovot Israel ([ROR:03qxff017](https://ror.org/03qxff017))\n3. Genomic Analysis Laboratory, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n4. Howard Hughes Medical Institute, The Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))\n\n\u2020 Corresponding author\n\n## Abstract\n\nSoil-free assays that induce water stress are routinely used to investigate drought responses in the plant Arabidopsis thaliana. Due to their ease of use, the research community often relies on polyethylene glycol (PEG), mannitol, and salt (NaCl) treatments to reduce the water potential of agar media, and thus induce drought conditions in the laboratory. However, while these types of stress can create phenotypes that resemble those of water deficit experienced by soil-grown plants, it remains unclear how these treatments compare at the transcriptional level. Here, we demonstrate that these different methods of lowering water potential elicit both shared and distinct transcriptional responses in Arabidopsis shoot and root tissue. When we compared these transcriptional responses to those found in Arabidopsis roots subject to vermiculite drying, we discovered many genes induced by vermiculite drying were repressed by low water potential treatments on agar plates (and vice versa). Additionally, we also tested another method for lowering water potential of agar media. By increasing the nutrient content and tensile strength of agar, we show the \u2018hard agar\u2019 (HA) treatment can be leveraged as a high-throughput assay to investigate natural variation in Arabidopsis growth responses to low water potential.\n\n## Introduction\n\nAs climate change advances, improving crop drought tolerance will be key for ensuring food security (Godfray et al., 2010; Battisti and Naylor, 2009). This has led to intense research at the molecular level to find novel loci and alleles that drive plant responses to drought conditions. Such investigations benefit from simple assays that can reproduce drought phenotypes at both the physiological and molecular levels. While some researchers use soil-based assays, these are cumbersome. For example, extracting intact root systems from the soil is difficult, and reproducing the rate at which water evaporates from the soil can be challenging (Dubois and Inz\u00e9, 2020). In light of this, chemical agents such as polyethylene glycol (PEG), mannitol, or salt (NaCl) are often employed to induce drought stress. When present in aqueous or agar media, they allow precise and dose-dependent control of water potential (Claeys et al., 2014; Hohl and Schopfer, 1991). When exposed to these media types, plants exhibit the hallmarks of drought physiology, such as reduced growth rate, reduced stomatal conductance, and increased leaf senescence (Claeys et al., 2014; Munns, 2002; Jisha and Puthur, 2014). While each of these methods lower water potential and thus induce a drought stress, each method exerts additional and distinct effects. For example, NaCl not only induces osmotic stress, but can cause salt toxicity (Munns, 2002). Since it is not metabolized by most plants mannitol is considered less toxic (Dubois and Inz\u00e9, 2020), however evidence suggests it may act as a signaling molecule (Hohl and Schopfer, 1991; Trontin et al., 2014). Since both NaCl and mannitol can enter the pores of plant cell walls (Verslues et al., 2006; Juenger and Verslues, 2023), they can induce plasmolysis, a process that does not typically occur under mild water deficit (Verslues et al., 2006). Due to its higher molecular weight, PEG treatment avoids this, and instead causes cytorrhysis (Verslues et al., 2006), a physiology more common under drought settings (Juenger and Verslues, 2023; van der Weele et al., 2000).\n\nThe unique impacts PEG, mannitol, and NaCl have on plant physiology may also extend to the level of gene expression. Indeed, a broad spectrum of transcriptional changes are documented in response to low water potential, which may be attributed to the specific method employed (Claeys et al., 2014; Zeller et al., 2009; Kreps et al., 2002). Here, we examine the transcriptional responses to PEG, mannitol, and NaCl in Arabidopsis, and compare these responses to those elicited when plants are exposed to vermiculite drying. Furthermore, we explore a new approach for reducing water potential.\n\n### Comparing differential gene expression responses elicited by PEG, mannitol, and NaCl treatment to vermiculite drying\n\nTo understand the impact PEG, mannitol, and NaCl treatment have on gene expression, we first tested their physiological effects across a range of doses. To this end, we grew Arabidopsis seedlings on agar plates supplemented with Linsmaier & Skoog (LS) nutrients for 14 days on three different doses of each stress type. Dose ranges were chosen based on published literature, and ranged from mild to severe stress levels (Dubois and Inz\u00e9, 2020; Claeys et al., 2014; van der Weele et al., 2000). As the dose of each stress type increased, the media\u2019s water potential significantly decreased in a dose-dependent manner (Pearson, p<8.5 \u00d7 10\u20135). Across the doses tested, we found that each stress type\u2019s impact on water potential was not statistically different from one other (ANCOVA post hoc, p>0.05). In response to these treatments, we found shoot biomass significantly decreased in a dose-dependent manner (Pearson, p<2 \u00d7 10\u20136) (Figure 1A\u2013C, Figure 1\u2014figure supplement 1, Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig1-v1.jpg)\n\n**Figure 1.:** (A) 22-day-old Arabidopsis growth on plates under either 1.67\u00d7 hard agar (HA), 20% polyethylene glycol (PEG), 100 mM mannitol, or 75 mM NaCl treatments. (B) Water potential measurements of treatment media (n=3\u20134). (C) Dry weight of 22-day-old Arabidopsis seedlings under different doses of each stress treatment (n=11\u201312). (D) Number and intersect of differentially expressed genes (DEGs) that are dose-responsive to each stress treatment within root and shoot tissue. (E\u2013I) Heatmaps displaying the top 50 most significant upregulated or downregulated genes in response to (E) HA, (F) PEG, (G) mannitol, (H) NaCl, and (I) vermiculite drying in the Arabidopsis root (n=2\u20133 biological replicates). Key genes and membership of Gene Ontology (GO) Terms for \u2018response to stress\u2019, \u2018response to chemical stimulus\u2019, or \u2018response to ABA stimulus\u2019 are indicated. ABA, abscisic acid.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013C) Images of 22-day-old Arabidopsis seedlings grown under different doses of each agar stress assay.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Heatmap displaying the top 50 most significant upregulated or downregulated genes in shoots in response to (A) hard agar (HA), (B) polyethylene glycol (PEG), (C) mannitol, (D) NaCl, and (E) vermiculite drying (n=2\u20133 biological replicates). Key genes and membership of Gene Ontology (GO) Terms for \u2018response to stress\u2019, \u2018response to chemical stimulus\u2019, or \u2018response to ABA stimulus\u2019 indicated. ABA, abscisic acid.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Overlap of dose-responsive differentially expressed genes in shoot (A) and root (B) in response to either hard agar (HA), polyethylene glycol (PEG), mannitol, or NaCl (replicated from Figure 1). Number of upregulated or downregulated dose-responsive genes in response to each treatment type in shoot (C) and root (D). Overlapping gene sets in (E) shoot or (F) root tissue (permutation test, p<0.001).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Field capacity measurements of vermiculite as water evaporated over a 5-day period (n=6\u201312). (B) Shoot dry weight of Arabidopsis rosettes as they grew either under well-watered conditions or drought conditions over a 5-day period (t-test, n=12). (C) Images of plants after 5 days of water stress. (D) Seed yield resulting from Arabidopsis plants after drought recovery (t-test, n=50).\n\nGenes that change their expression in response to an environmental signal often do so in a dose-responsive manner (Claeys et al., 2014; Swift et al., 2020). In light of this, we sought to discover genes whose expression was dose-responsive to the amount of PEG, mannitol, or NaCl applied. By identifying genes that were stress responsive across a range of doses, we ensured such genes responded to and were directional with the stress as a whole, and not induced or repressed at an individual dose. Taking this approach, we sequenced root and shoot bulk transcriptomes by RNA-seq, and associated each gene\u2019s expression with the dose of stress with a linear model. To ensure we captured steady-state differences in gene expression, and avoided those that were transient, we sequenced root and shoot transcriptome profiles after 14 days of stress exposure (Dubois and Inz\u00e9, 2020; Munns, 2002; Nikonorova et al., 2018). By these means, we found hundreds of genes that were dose-responsive to each treatment within root and shoot tissue (Figure 1E\u2013H, Figure 1\u2014figure supplement 2, Supplementary file 2) (adj. p<0.05). We found that a portion of these dose-responsive genes were shared across treatments, suggesting a common response to low water potential (Figure 1D, Figure 1\u2014figure supplement 3). Conversely, we also found a portion of dose-responsive genes were unique to each stress type.\n\nNext, we wanted to compare these different methods of lowering water potential to a pot-based water deficit assay. To perform this experiment, we subjected mature Arabidopsis plants grown in pots on vermiculite supplemented with LS media to a mild water stress by withholding water for 5 days. During this period, field capacity (FC) reduced from 100% to 41%. This treatment led to a reduction in plant biomass (t-test, p=1.8 \u00d7 10\u20133), as well as seed yield (t-test, p=1.2 \u00d7 10\u20134), but did not induce visible signs of senescence or wilting (Figure 1\u2014figure supplement 4, Supplementary file 3). We assayed root and shoot gene expression responses each day during water loss by RNA-seq. We observed a dose-dependent relationship between a decrease in FC and gene expression responses in both roots and shoots, identifying 1949 differentially expressed genes in roots and 1792 in shoots (DESeq, adj. p<0.01) (Figure 1I, Figure 1\u2014figure supplement 2, Supplementary file 2). We ensured these genes\u2019 expression patterns recovered upon rewatering (Figure 1I). We note that while vermiculite has greater aeration than soil, we found that the genes differentially expressed in roots in response to vermiculite drying largely agreed with a previous report detailing transcriptional responses to soil drying (Lozano-Elena et al., 2022; Figure 2\u2014figure supplement 1). We also found differentially expressed genes responsive to vermiculite drying agreed with those responsive to transient treatment with abscisic acid (ABA), a stress hormone whose levels rise in response to water deficit (Claeys et al., 2014; Figure 2\u2014figure supplement 2).\n\nTo assess how PEG, mannitol, and NaCl treatments compared to the vermiculite drying response described above, we overlapped genes found differentially expressed in each experiment. For shoot tissue, we found genes that were differentially expressed during vermiculite drying overlapped significantly with genes that were differentially expressed by either PEG, mannitol, and NaCl treatments (Fisher\u2019s exact test, adj. p<0.05). Additionally, there was 88\u201399% directional agreement within these overlaps, indicating that genes induced or repressed by vermiculite drying were similarly induced or repressed by low water potential treatments on agar (Figure 2A and B). Along these lines, across all conditions we saw differential expression of the desiccation associated genes RESPONSE TO DESSICATION 20;29B (RD20;29B) (Msanne et al., 2011; Takahashi et al., 2000), the osmo-protectant gene DELTA1-PYRROLINE-5-CARBOXYLATE SYNTHASE 1 (P5CS1), and ABA signaling and biosynthesis genes HOMEOBOX 7 (HB7) (Vald\u00e9s et al., 2012), and NINE-CIS-EPOXYCAROTENOID DIOXYGENASE (NCED3) (Tan et al., 2003; Figure 2\u2014figure supplement 3). We note that while we observed agreement in the direction of gene expression across assays, there were differences in the amplitude of gene expression (Figure 2\u2014figure supplement 3). This may be due to confounding factors, such as differences in the ranges of water potential tested (Figure 1B), or through comparing seedlings grown on plates with mature Arabidopsis plants grown on vermiculite.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig2-v1.jpg)\n\n**Figure 2.:** (A) Heatmap displaying genes differentially expressed in response to vermiculite drying in shoot or root tissue compared to their dose-responsive expression within each plate-based assay. Level of \u2018directional agreement\u2019 (i.e. differentially expressed in the same direction) found within each assay reported. (B) Overlap analysis of genes found differentially expressed due to vermiculite drying, compared to those found differentially expressed within each dose of PEG, mannitol, NaCl, or HA assays in both shoot and root (Fisher\u2019s exact test, adj. p<0.05). (C\u2013D) Expression patterns of HOMEOBOX12 (HB12) and DROUGHT HYPERSENSITIVE 2 (DRY2) across each assay in root tissue (n=2-3). (E) Shoot area of seedlings grown under increasing doses of HA, agar, or nutrient concentrations (n=19). (F) Number and percent overlap of genes found differentially expressed in response to increasing doses of HA, agar, or nutrient concentrations with those differentially expressed in response to vermiculite drying. (G) Total shoot area of Arabidopsis accessions grown under either 1\u00d7 or 2\u00d7 HA treatment (n=5\u201312). (H) Images of Arabidopsis Trs-0 or UKSE06-325 accessions grown on either 1\u00d7 or 2\u00d7 HA treatment.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Intersect analysis of root or shoot genes found differentially expressed in response to vermiculite drying within this study, and genes found differentially expressed in response to soil drying by Lozano-Elena et al., 2022, or by Wilkins et al., 2010 (permutation test, p<0.001). (B\u2013C) Intersect analysis of genes found differentially expressed in response to PEG treatment in shoot (B) or root (C) in this study, with those found differentially expressed in response to PEG treatment by Wong et al., 2019, and Wang et al., 2021 (permutation test, p<0.001). (D\u2013E) Heatmap displaying direction of shoot (D) or root (E) differentially expressed in response to vermiculite drying (this study) and Wilkins et al., 2010, or Lozano-Elena et al., 2022, respectively. Directional agreement with this study\u2019s vermiculite drying response indicated. (F\u2013G) Heatmap displaying direction of genes differentially expressed in response to PEG treatment across each study. We note that both Wong et al. and Wang et al. assess transcriptomic responses of whole seedlings (both root and shoot), and thus we compare our shoot (F) and root (G) data separately. (E) Examining the 119 genes that were differentially expressed in response to drought (this study), PEG treatment (this study), and PEG treatment reported in Wong et al.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Overlap analysis of genes found differentially expressed in response to vermiculite drying, compared to those within each dose of either transient ABA treatment, polyethylene glycol (PEG), mannitol, NaCl, or HA assays in both root and shoot (Fisher\u2019s exact test, adj. p<0.05). (B) Heatmap displaying genes differentially expressed under vermiculite drying in root tissue compared to their dose-responsive expression within each stress assay. Direction of gene expression agreement with vermiculite-drying responsive gene expression (i.e. \u2018directional agreement\u2019) indicated.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A\u2013E) Expression patterns of individual genes under doses of each assay in shoot tissue: (A) RD29B, (B) RD20, (C) HB7, (D) NCED3 and (E) P5CS1. (F\u2013H) Expression patterns of individual genes under doses of each assay in root tissue: (F) GCL1, (G) RD21, and (H) RHS18.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Measurement of primary root growth rate across 8 days of growth under 1\u00d7 HA (no treatment) and 2.5\u00d7 HA conditions (n=16, t-test p). (B) Shoot water potential measurements of seedlings grown under different HA media doses (n=3, Pearson p=0.009). (C) Measurement of maximum quantum yield of photosystem II (PSII) (Fv/Fm) under different HA media doses (n=4, t-test p).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Image of Arabidopsis seedlings grown on either (A) 1\u00d7 hard agar (HA) (i.e. 1\u00d7 Linsmaier & Skoog [LS], 2% agar) or (B) 2.5\u00d7 HA, which increased both nutrient and agar concentrations to 2.5\u00d7 and 5%, respectively. (C) Image of seedlings grown on an increased 2.5\u00d7 nutrient concentration (without a change in agar concentration). (D) Image of seedlings grown on an increased 5% agar concentration (without a change in nutrient concentration). (E) Water potential measurements of media presented in (A\u2013D) (n=3). (F) Intersection of differentially expressed genes responsive to either agar concentration, nutrient concentration, HA treatment, or drought stress (permutation test, p<0.001).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Comparing the impact HA treatment has on shoot size of 20 different Arabidopsis accessions to the change in their fitness found under drought conditions in the field, as reported in Exposito-Alonso et al., 2019.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/84747/elife-84747-fig2-figsupp7-v1.jpg)\n\n**Figure 2\u2014figure supplement 7.:** Image of Arabidopsis seedlings grown on either (A) 75 mL of 1\u00d7 HA, (B) 30 mL of 2.5\u00d7 HA, or (C) 75 mL of 2.5\u00d7 HA. Number of genes found differentially expressed is reported for comparisons (A) and (B), as well as (B) and (C) (DESeq, adj. p<0.01). Of the 29 genes found differentially expressed between (B) and (C), 13 are found in comparison (A) and (B). (E) Heatmap of genes found differentially expressed in either comparison.\n\nIn root tissue, we found greater variability in transcriptomic responses to the different methods of lowering water potential. In particular, we found a number of genes that were upregulated during vermiculite drying were downregulated by PEG, mannitol, and NaCl treatments (and vice versa) (Figure 2A). This trend persisted when we assessed genes found differentially expressed at each discrete dose of stress (Figure 2B). For example, 27% of PEG dose-responsive genes shared the same direction of expression seen in vermiculite drying responses. We note that previously published PEG transcriptome datasets largely agreed with our own (Figure 2\u2014figure supplement 1). Such differential regulation in comparison to vermiculite drying is exemplified by the expression of genes such as HOMEOBOX 12 (HB12) (Vald\u00e9s et al., 2012; Figure 2C), GRC2-LIKE 1 (GCL1) (Gao et al., 2007), and RESPONSE TO DEHYDRATION 21 (RD21) (Koizumi et al., 1993; Figure 2\u2014figure supplement 3). We found genes downregulated by PEG are over-represented in the \u2018monooxygenase activity\u2019, and \u2018oxygen binding\u2019 Gene Ontology (GO) Terms (p<1 \u00d7 10\u201315, Supplementary file 4). Mannitol and NaCl held a 48% and 57% agreement in gene expression direction with vermiculite drying respectively. Examples of genes that followed this pattern of differential regulation in mannitol and NaCl treatments were DROUGHT HYPERSENSITIVE 2 (DRY2) (Pos\u00e9 et al., 2009; Figure 2D) and ROOT HAIR SPECIFIC 18 (RHS18) (Ponce et al., 2022). NaCl-responsive GO Terms included a specific downregulation of \u2018phosphorous metabolic processes\u2019 (p=5.2 \u00d7 10\u20136), suggesting that the roots were changing phosphate levels in response to NaCl, a process known to help maintain ion homeostasis (Miura et al., 2011). For mannitol, we observed a specific downregulation of \u2018cell wall organization or biogenesis\u2019 and \u2018microtubule-based processes\u2019 (p<7.8 \u00d7 10\u20133) (Supplementary file 4).\n\n### Examining differential gene expression responses to \u2019hard agar\u2019 (HA) treatment\n\nIn addition to examining PEG, mannitol, and NaCl transcriptional responses, we also tested a new way of lowering water potential on an agar plate. We hypothesized that we could induce stress by increasing both the agar and nutrient concentration. We called this media \u2018hard agar\u2019 (HA), and by testing three different doses (1.25\u00d7, 1.67\u00d7, and 2.5\u00d7 fold increase in both agar and LS concentration, where 1.0\u00d7 is 2% agar and 1\u00d7 LS), found that it limited plant shoot dry weight and media water potential in a similar way to PEG, mannitol, and NaCl treatment (Figure 1A\u2013C). Additionally, we found that HA treatment limited Arabidopsis primary root growth rate, shoot water potential, and photosynthesis efficiency (Figure 2\u2014figure supplement 4). At the molecular level, RNA-seq revealed 1376 and 1921 genes that were dose-responsive to the level of HA stress in roots and shoots respectively (Figure 1E, Figure 1\u2014figure supplement 2). We found that these gene expression responses overlapped significantly with those found differentially expressed in response to vermiculite drying (Fisher\u2019s exact test, p<1 \u00d7 10\u201332, 87% directional agreement) (Figure 2A and B). HA\u2019s impact can be seen in the gene expression responses of HB12 (Figure 2C), GCL1, and RD21 (Figure 2\u2014figure supplement 3).\n\nAn increase in nutrient concentration can induce salt-like stress while increasing agar concentration will increase tensile stress (Verger et al., 2018). We tested each of these variables separately to understand the role each played in eliciting the gene expression responses found in the HA assay. To do this, we repeated our HA dose experiment, but now increasing only the concentration of LS nutrients (1\u00d7, 1.25\u00d7, 1.67\u00d7, and 2.5\u00d7) or the concentration of agar (2%, 2.5%, 3.3%, and 5%) (Figure 2E). We found a significant decrease in shoot area size in response to an increase in nutrient concentration (Pearson p=1.7 \u00d7 10\u20137) and agar concentration (Pearson p=3.9 \u00d7 10\u201313), where the latter more closely phenocopied the effect of HA (Figure 2E, Figure 2\u2014figure supplement 5, Supplementary file 5). Since the increase in nutrient concentration alone was responsible for changing media water potential, the phenotypic response to increased agar concentration was not in response to a lower water potential (Figure 2\u2014figure supplement 5). Next, we examined the transcriptional responses underlying nutrient and agar responses by sequencing root tissue across each dose tested. Through linear modeling, we found 1043 genes and 938 genes that were dose-responsive to nutrient or agar concentration, respectively. Then, we investigated how these genes compared to those found in vermiculite drying responses. We found that genes differentially expressed in response to an increase in agar or nutrient concentration overlapped 12% and 17% of vermiculite drying responsive gene expression respectively (permutation test, p<0.05) (Figure 2F, Figure 2\u2014figure supplement 5, Supplementary file 6). However, we found genes differentially expressed in response to HA treatment led to a higher overlap (26 %), suggesting that both nutrient and agar concentration contribute to the similarity between HA treatment and vermiculite drying.\n\nFinally, we tested if our HA assay was sensitive enough to detect phenotypic variability. To achieve this, we grew 20 different Arabidopsis ecotypes on 2\u00d7 HA (4% agar, 2\u00d7 LS), where ecotypes were selected from a previous drought study that assessed fitness in a common garden experiment (Exposito-Alonso et al., 2019). By comparing the total shoot area after 3 weeks of growth, we found that our assay revealed variability in shoot growth responses (Figure 2G and H, Supplementary file 7). Furthermore, we found that the greater the impact HA had on reducing an accession\u2019s relative shoot size, the better the accession\u2019s fitness was, as measured under field conditions (Exposito-Alonso et al., 2019) (Spearman p=0.04, Figure 2\u2014figure supplement 6). This is likely because smaller shoot systems have a better chance of survival and reproduction (Skirycz et al., 2011). This suggests that our assay may be useful for screening for novel drought-associated loci among a wider group of accessions or mutants.\n\nIn summary, our investigation has assessed the shared and unique impacts of agar-based low water potential treatments on gene expression. We also compared these effects with the expression patterns observed during vermiculite drying. We found each plate-based assay generated similar responses in shoot tissue, but more varied responses in root tissue. We note that our comparative analysis focuses largely on transcriptomic responses in Arabidopsis. We suggest investigating gene expression responses in other species as future work. Here, we also introduce another method for lowering water potential. By increasing nutrient and agar concentration, our HA approach also induced gene expression responses comparable to vermiculite drying. We describe how to make this media within the Materials and methods.\n\n## Materials and methods\n\n### HA stress assay\n\nArabidopsis seedlings were grown on vertical plates for 8 days under short-day conditions (8 hr light, 21\u00b0C, 150 \u00b5moles light) on agar media (1\u00d7 LS (Cassion LSP03) media, 1% sucrose, 2% agar, pH 5.7). We note LS media is identical to Murashige & Skoog media in inorganic salt content, but lacks glycine, nicotinic acid, and pyridoxine HCl. After 8 days, plants were transferred to HA plates. The 1.0\u00d7 plate consisted of 2% and 1\u00d7 LS media, with no sucrose (pH 5.7) at a final volume of 75 mL. Subsequent doses of increased nutrient and agar concentration (1.25\u00d7, 1.67\u00d7, and 2.5\u00d7 fold increase) were made by preparing the same media but reducing the amount of water present. For example, the 1.25\u00d7, treatment plate contained 60 mL of 2.5% agar and 1.25\u00d7 LS media. We note that the volume of HA itself has minimal impact gene expression responses (Figure 2\u2014figure supplement 7). On day 14, 2 hr after subjective dawn, shoot and root samples were flash-frozen (6 plants per replicate). In total, we collected 16 samples for RNA-seq analysis (2 organs, 2\u20133 biological replicates, 3 treatment levels). We also collected a non-treated control set (2 biological replicates).\n\nTo test different Arabidopsis accessions on HA, plants were sown on either 1\u00d7 or 2\u00d7 treatments as described above, however supplemented with 0.5% or 1% sucrose respectively to encourage germination. Seedlings were grown for 3 weeks under short-day conditions in before imaging plates in duplicate (n=2\u20135 plants per plate) (Supplementary file 7). Shoot area was calculated from images using Plant Growth Tracker (GitHub - https://github.com/jiayinghsu/plant-growth-tracker; Xu, 2022).\n\n### Vermiculite drying assay\n\nArabidopsis seedlings were grown on vertical plates for 17 days under short-day conditions (8 hr light, 21\u00b0C, 150 \u00b5moles light) on agar media (1\u00d7 LS, 1% sucrose, 2% agar, pH 5.7), before transfer to vermiculite saturated with 0.75\u00d7 LS media. We note at the timing of transfer lateral root formation had begun. Plants were then grown on vermiculite at 100% field capacity (FC) for 12 days (8 hr light, 21\u00b0C, 150 \u00b5moles light). On the 13th day, the first time point was sampled (4.5 hr after subjective dawn) where tissue was flash-frozen in liquid nitrogen. After this, excess aqueous solution was drained from each pot, and then each pot was calibrated to 1\u00d7 FC. Plant tissue was harvested each day on subsequent days at the same time of day. Each day, pots were weighed to measure extent of evaporation. By these means, FC was measured (Figure 1\u2014figure supplement 4). After the 5th day sample was taken, water was re-added to the remaining pots to an excess of 1\u00d7 FC. ~15 plants were sampled per time point. In total, we harvested 78 tissue samples for RNA-seq (3 biological replicates, 2 organ types, 7 days, 2 treatments). Plants were then left to grow under long-day conditions until flowering. Seeds were harvested, dried, and weighed (n=50 plants per treatment).\n\n### PEG stress assay\n\nArabidopsis seedlings were grown on vertical plates for 8 days under short-day conditions (8 hr light, 21\u00b0C, 150 \u00b5moles light) on agar media (1\u00d7 LS, 1% sucrose, 2% agar, pH 5.7), before transfer to PEG media of varying concentrations. PEG media plates were prepared by dissolving crystalline 6000 MW PEG into freshly autoclaved 1\u00d7 LS media pH 5.7 and pouring 50 mL of PEG media solution onto 1\u00d7 LS, 2% agar, media plates (pH 5.7), letting the PEG solution diffuse into the solid media overnight, then pouring off excess and transferring seedlings to PEG infused media plates as described in van der Weele et al., 2000. Plants were grown under three different treatments (12%, 20%, and 28% PEG solution wt/vol) for 14 days. On day 14, 2 hr after subjective dawn, shoot and root samples were flash-frozen (6 plants per replicate). In total, we collected 16 samples for RNA-seq analysis (2 organs, 2\u20133 biological replicates, 3 treatment levels).\n\n### Mannitol and NaCl osmotic stress assays\n\nArabidopsis seedlings were grown on vertical plates for 8 days under short-day conditions (8 hr light, 21\u00b0C, 150 \u00b5moles light) on agar media (1\u00d7 LS, 1% sucrose, 2% agar, pH 5.7), before transfer to either mannitol or salt (NaCl) media of varying concentrations. Mannitol and NaCl media plates were prepared by adding respective volume of stock solution to 1\u00d7 LS, 2% agar, pH 5.7 media before autoclaving. Plants were grown under three different treatments of mannitol or NaCl (50 mM, 100 mM, and 200 mM for mannitol, 30 mM, 75 mM, and 150 mM for NaCl) for 14 days. On day 14, 2 hr after subjective dawn, shoot and root samples were flash-frozen (6 plants per replicate). In total, for either mannitol or NaCl treatment experiments, we collected 18 samples for RNA-seq analysis (2 organs, 3 biological replicates, 3 treatment levels).\n\n### ABA exogenous treatment assay\n\nArabidopsis seedlings were grown on vertical plates for 8 days under short-day conditions (8 hr light, 21\u00b0C, 150 \u00b5moles light) on agar media (1\u00d7 LS, 1% sucrose, 2% agar, pH 5.7), before transfer to 1\u00d7 LS, 2% agar, pH 5.7 control media and grown for 14 days. On day 14, ABA solutions of 1 \u00b5M, 5 \u00b5M, and 10 \u00b5M were prepared from 10 mM ABA dissolved in ethanol stock, as well as a mock treatment solution containing 0.1% ethanol concentration. 30 min after subjective dawn, 15 mL of each solution was dispersed onto the roots of the seedlings. After 1 min of treatment, the ABA solution was removed from the plates, and the plates returned to the growth chamber. 2 hr after subjective dawn, shoot and root samples were flash-frozen (6 plants per replicate). In total, we collected 8 samples for RNA-seq analysis (root tissue only, 2 biological replicates, 4 conditions).\n\n### Osmotic potential measurements\n\nThe water potential of media was determined considering it equivalent to the osmotic potential (\u03a8s). Osmotic potential was measured using a vapor pressure osmometer (Model 5600, ELITech Group; Puteaux, France). Readings were taken from melted agar media constituted with the particular stress type. Osmolality readings for each sample obtained were converted to megapascals (MPa) using the equation \u03a8s = -CRT, where C is the molar concentration, R is the universal gas constant, T is the temperature in Kelvin. We note that to measure the water potential of PEG treatment media, we infiltrated the PEG solution into plates as described above, and then melted the PEG-infiltrated agar for measurement with the osmometer. We assessed the osmotic potential of shoot tissue 2 weeks after transplanting the seedlings to HA media. After immersion in liquid nitrogen 3 shoots were placed into 0.5 mL tubes and centrifuged to extract the tissue sap. The osmotic potential (\u03a8s) of the extracted sap was determined using a vapor pressure osmometer.\n\n### Chlorophyll fluorescence measurements\n\nChlorophyll fluorescence was assessed in eight seedlings of each plate using the Walz PAM IMAGING PAM M-series IMAG-K7 (MAXI) fluorometer. For every experiment, leaves were pre-conditioned in the dark for 1 hr. The maximum quantum yield of photosystem II (PSII) (Fv/Fm) was calculated using the formula:\n\n$$\nF_{v}/F_{m}=(F_{m}\u2212F_{o})/F_{m}\n$$\n\nwhere Fv is the variable fluorescence, Fm is the maximal fluorescence following 1 hr of dark adaptation, and F0 is the minimal fluorescence level of a dark-adapted leaf when all PSII reaction centers are open.\n\n### Root growth rate measurements\n\nArabidopsis seedlings were grown on vertical plates for 8 days under short-day conditions (8 hr light, 21\u00b0C, 150 \u00b5moles light) on agar media (1\u00d7 LS, 1% sucrose, 2% agar), before transfer to 2.5\u00d7 HA treatment plates as described above. Root images were acquired every 2 days for a total of 8 days using scanners. Primary root length, defined as the length (scaled to cm) from hypocotyl base to root tip, was quantified using ImageJ. For each treatment we screened 4 plates, with each plate holding 4 individual plants.\n\n### RNA extraction and library preparation\n\nPlant tissue was crushed using the TissueLyser (Agilent) and RNA extracted using RNeasy Mini Kit (QIAGEN). Number of biological replicates per library ranged between RNA quality was assessed using TapeStation High Sensitivity RNA assay (Agilent). 0.5\u20131 \u00b5g of total RNA proceeded to library preparation, where libraries were prepared using TruSeq stranded mRNA kit (Illumina). Resulting libraries were sequenced on the NovaSeq 6000 (Illumina) with 2\u00d7150 bp paired-end read chemistry. Read sequences were aligned to the Arabidopsis TAIR10 genome using HISAT2 (Kim et al., 2019), and gene counts called using HT-seq (Anders et al., 2015), by relying on Araport11 annotation (Cheng et al., 2017). Normalized counts can be found in Supplementary file 2. For each organ, libraries from all experiments were normalized together before calling differential expression.\n\n### Statistical analysis\n\nTo detect differential expression in our drought assay on vermiculite, we called differential expression using a linear model using the DESeq2 LRT function to associate a change in FC with change in gene expression. The same statistical approach was used to associate a change in a gene\u2019s expression to changes in dose of HA, PEG, mannitol, and NaCl, as well as changes in agar concentration, nutrient concentration, and volume of agar used. Resulting model p-values were adjusted to account for false discovery (p-value<0.05). The complete list of differentially expressed genes for each experiment can be found in Supplementary file 2 and Supplementary file 6. Pairwise differential gene expression was called using DESeq2 (Love et al., 2014). Specifically, for plate-based assays, we called differential expression by comparing the control treatment to each treatment dose, using an adjusted p-value threshold of 0.05. Overlap analyses were performed using Fisher\u2019s exact tests, with an adjusted p-value threshold of 0.05. The background for these intersects was all expressed genes within the respective organ. Permutation tests and GO Term enrichment analyses were performed in VirtualPlant (Katari et al., 2010), with all expressed genes within the respective organ used as background.\n",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dominique C Bergmann, Stanford University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.84747.3.sa0](https://doi.org/10.7554/eLife.84747.3.sa0)\n\nThis work critically evaluates several widely-used assays of transcriptional responses to water limitation in Arabidopsis grown on defined agar-solidified media and, finding inconsistent responses in root transcriptome responses, introduces a new 'hard agar' assay with more consistent responses. The work is valuable as a simple and alternative experimental system that would enable high-throughput genetic screening (and GWAS) to assess the impacts of environmental perturbations on transcriptional responses in various genetic backgrounds. Within this scope, the work is solid, though the debate about whether field-level physiological inferences can be made from such assays remains.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.84747.3.sa1](https://doi.org/10.7554/eLife.84747.3.sa1)\n\nThis manuscript describes new methodology to study low water potential (drought) stress responses in agar plates. They devote considerable effort in comparing transcriptome data among various previously published experimental systems, examining how different approaches of reducing water potential impact the Arabidopsis root and shoot transcriptome. Each method purported to reduce water potential in plate-grown seedlings has a different effect on Arabidopsis root transcriptome responses, which is problematic for the field. In this reviewer's view, differences in transcriptome are not as important, and often not as informative as measurement of physiological parameters, which they do very little of in their study.\n\nThe focus on transcriptome data to the almost complete exclusion of other types of data is a symptom of a broader over-emphasis on the transcriptome that is quite prevalent in plant science now. We measure transcriptomes because we can, not because it is inherently the most informative thing to do. The important thing is protein amount, and even more so protein activity/function, which we know has an imperfect, at best, correlation with transcript level. This reviewer acknowledges that using Arabidopsis transcriptomics is a commonly employed method, and as such, the outcomes of this study will hold value for a broad audience, even if largely as a cautionary tale. If transcriptomics is used to identify candidate genes for future investigations, an approach that has had some success, then appropriate cautions should be taken in translating expectations about gene, protein, and phenotypic responses in field conditions.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.84747.3.sa2](https://doi.org/10.7554/eLife.84747.3.sa2)\n\nThis work compares transcriptional responses of shoots and roots harvested from four plate-based assays that aim to simulate drought and from plants subjected to water deficit in pots using the model plant Arabidopsis thaliana with the goal to select a plate-based assay that best recapitulates transcriptional changes that are observed during water-deficit in pots. For the plate-based assays polyethylene glycol (PEG), mannitol, and sodium chloride (salt) treatments were used as well as a 'hard agar' assay which was newly developed by the authors. In the 'hard agar' assay, less water was added to the solid components of the media leading to an increase in agar strength and nutrient concentration. Plants in pots were grown on vermiculite with the same nutrient mix as used in the plates and drought was induced by withholding watering for five days.\n\nThe authors observed a good directional agreement of differential expressed genes for shoots between the plate assays on the vermiculite drying experiment. However, less directional agreement was observed for differential expressed genes of roots, except for their newly developed 'hard agar' assay which had good directional agreement. Testing whether the increase in agar strength or more concentrated nutrients are attributed to this, they found that both factors contributed to the effect of the 'hard agar'. Arabidopsis ecotypes that showed a stronger reduction in shoot size when grown on the 'hard agar' tended to have a lower fitness according to an external study which may indicate that the 'hard agar' assay simulates physiological relevant conditions.\n\nThe work highlights that transcriptional responses for simulated drought on plates and drought caused by water deficit are highly variable and dependent on the tissues that are observed. The authors demonstrate that transcriptomics can be used to select a suitable plate assay that most closely recapitulates drought through water deficit for plants grown in pots. Interestingly their newly developed 'hard agar' assay provides an alternative to traditional plate-based assays with improved directional agreement of differential expressed genes in roots in comparison to plants experiencing water deficit in vermiculite. It is promising that the impact of 'hard agar' on the shoot size of 20 diverse Arabidopsis accessions shows some association with plant fitness under drought in the field. Their methodology could be powerful in identifying a better substitute for plate-based high-throughput drought assays that have an emphasis on gene expression changes.\n",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "df572cf5-3534-492f-bc6c-bf2138bcfce7",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C1",
+      "claim": "Improving crop drought tolerance will be key for ensuring food security as climate change advances.",
+      "claim_type": "EXPLICIT",
+      "source": "As climate change advances, improving crop drought tolerance will be key for ensuring food security (Godfray et al., 2010; Battisti and Naylor, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Godfray et al., 2010 and Battisti and Naylor, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "58016c78-99b3-47c1-92c5-a5e5038ea421",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C2",
+      "claim": "Extracting intact root systems from soil is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, extracting intact root systems from the soil is difficult, and reproducing the rate at which water evaporates from the soil can be challenging (Dubois and Inz\u00e9, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dubois and Inz\u00e9, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "9fb786ab-c70d-4912-977e-c6b7e051a22a",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C3",
+      "claim": "Reproducing the rate at which water evaporates from soil can be challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, extracting intact root systems from the soil is difficult, and reproducing the rate at which water evaporates from the soil can be challenging (Dubois and Inz\u00e9, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dubois and Inz\u00e9, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "b7d73fed-30a3-4a8f-a3da-638634018f1c",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C4",
+      "claim": "Chemical agents such as PEG, mannitol, or salt (NaCl) allow precise and dose-dependent control of water potential when present in aqueous or agar media.",
+      "claim_type": "EXPLICIT",
+      "source": "When present in aqueous or agar media, they allow precise and dose-dependent control of water potential (Claeys et al., 2014; Hohl and Schopfer, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Claeys et al., 2014 and Hohl and Schopfer, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "00d0535b-84a9-42d7-97f8-2e5d73025435",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C5",
+      "claim": "Plants exposed to PEG, mannitol, or NaCl media exhibit reduced growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "When exposed to these media types, plants exhibit the hallmarks of drought physiology, such as reduced growth rate, reduced stomatal conductance, and increased leaf senescence (Claeys et al., 2014; Munns, 2002; Jisha and Puthur, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Claeys et al., 2014; Munns, 2002; Jisha and Puthur, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "a7aebeb3-4e42-47c2-9d24-1f7a9993a825",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C6",
+      "claim": "Plants exposed to PEG, mannitol, or NaCl media exhibit reduced stomatal conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "When exposed to these media types, plants exhibit the hallmarks of drought physiology, such as reduced growth rate, reduced stomatal conductance, and increased leaf senescence (Claeys et al., 2014; Munns, 2002; Jisha and Puthur, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Claeys et al., 2014; Munns, 2002; Jisha and Puthur, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "57a6cfba-f7a5-4ec3-84cc-80c032dc5d19",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C7",
+      "claim": "Plants exposed to PEG, mannitol, or NaCl media exhibit increased leaf senescence.",
+      "claim_type": "EXPLICIT",
+      "source": "When exposed to these media types, plants exhibit the hallmarks of drought physiology, such as reduced growth rate, reduced stomatal conductance, and increased leaf senescence (Claeys et al., 2014; Munns, 2002; Jisha and Puthur, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Claeys et al., 2014; Munns, 2002; Jisha and Puthur, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "72736a6a-19a2-414f-a4cc-4af07ca5d9f0",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C8",
+      "claim": "NaCl induces osmotic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, NaCl not only induces osmotic stress, but can cause salt toxicity (Munns, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Munns, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1c3a6b21-ddff-4c26-b638-a3b849ea8149",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C9",
+      "claim": "NaCl can cause salt toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, NaCl not only induces osmotic stress, but can cause salt toxicity (Munns, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Munns, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "0aef8b76-0308-4b61-8359-a1ddf20ad794",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C10",
+      "claim": "Mannitol is not metabolized by most plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it is not metabolized by most plants mannitol is considered less toxic (Dubois and Inz\u00e9, 2020), however evidence suggests it may act as a signaling molecule (Hohl and Schopfer, 1991; Trontin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dubois and Inz\u00e9, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "bb2e746b-f240-478a-897d-37a6ad8860d7",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C11",
+      "claim": "Mannitol is considered less toxic than NaCl.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it is not metabolized by most plants mannitol is considered less toxic (Dubois and Inz\u00e9, 2020), however evidence suggests it may act as a signaling molecule (Hohl and Schopfer, 1991; Trontin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dubois and Inz\u00e9, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1939567e-19eb-4fc3-8ac7-96fb02e41d2e",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C12",
+      "claim": "Mannitol may act as a signaling molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it is not metabolized by most plants mannitol is considered less toxic (Dubois and Inz\u00e9, 2020), however evidence suggests it may act as a signaling molecule (Hohl and Schopfer, 1991; Trontin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hohl and Schopfer, 1991 and Trontin et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "fe6a9c2c-3005-4f63-b4bc-7a52b4c38741",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C13",
+      "claim": "NaCl can enter the pores of plant cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both NaCl and mannitol can enter the pores of plant cell walls (Verslues et al., 2006; Juenger and Verslues, 2023), they can induce plasmolysis, a process that does not typically occur under mild water deficit (Verslues et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Verslues et al., 2006 and Juenger and Verslues, 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "2f2f72fa-7abe-45a0-bece-24fd7d9b41a0",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C14",
+      "claim": "Mannitol can enter the pores of plant cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both NaCl and mannitol can enter the pores of plant cell walls (Verslues et al., 2006; Juenger and Verslues, 2023), they can induce plasmolysis, a process that does not typically occur under mild water deficit (Verslues et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Verslues et al., 2006 and Juenger and Verslues, 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "2fc43e57-679d-4bcf-b2cb-e31f7f71f224",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C15",
+      "claim": "NaCl and mannitol can induce plasmolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both NaCl and mannitol can enter the pores of plant cell walls (Verslues et al., 2006; Juenger and Verslues, 2023), they can induce plasmolysis, a process that does not typically occur under mild water deficit (Verslues et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Verslues et al., 2006 and Juenger and Verslues, 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ed5e4264-3e33-499f-a6ff-ed77ffec65f5",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C16",
+      "claim": "Plasmolysis does not typically occur under mild water deficit.",
+      "claim_type": "EXPLICIT",
+      "source": "Since both NaCl and mannitol can enter the pores of plant cell walls (Verslues et al., 2006; Juenger and Verslues, 2023), they can induce plasmolysis, a process that does not typically occur under mild water deficit (Verslues et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Verslues et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "f3f0517d-5eb4-4d28-af17-67fff5e5bff2",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C17",
+      "claim": "PEG treatment avoids plasmolysis due to its higher molecular weight.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its higher molecular weight, PEG treatment avoids this, and instead causes cytorrhysis (Verslues et al., 2006), a physiology more common under drought settings (Juenger and Verslues, 2023; van der Weele et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Verslues et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "781eb4a1-f77c-4917-ae05-e513be18b409",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C18",
+      "claim": "PEG treatment causes cytorrhysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its higher molecular weight, PEG treatment avoids this, and instead causes cytorrhysis (Verslues et al., 2006), a physiology more common under drought settings (Juenger and Verslues, 2023; van der Weele et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Verslues et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "d2ab86d3-979e-4ace-a639-b0af49d7fec7",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C19",
+      "claim": "Cytorrhysis is a physiology more common under drought settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its higher molecular weight, PEG treatment avoids this, and instead causes cytorrhysis (Verslues et al., 2006), a physiology more common under drought settings (Juenger and Verslues, 2023; van der Weele et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Juenger and Verslues, 2023 and van der Weele et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "847c36f3-955b-4f00-bb7f-e3d43d767bca",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C20",
+      "claim": "A broad spectrum of transcriptional changes are documented in response to low water potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a broad spectrum of transcriptional changes are documented in response to low water potential, which may be attributed to the specific method employed (Claeys et al., 2014; Zeller et al., 2009; Kreps et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Claeys et al., 2014; Zeller et al., 2009; Kreps et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1b13948a-6ad0-4fd6-85d2-adf0e0077804",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C21",
+      "claim": "As the dose of each stress type increased, the media's water potential significantly decreased in a dose-dependent manner (Pearson, p<8.5 \u00d7 10\u20135).",
+      "claim_type": "EXPLICIT",
+      "source": "As the dose of each stress type increased, the media's water potential significantly decreased in a dose-dependent manner (Pearson, p<8.5 \u00d7 10\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis (Pearson correlation) and shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "fb06e8c8-aff5-4a6a-a71c-62b9184122bf",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C22",
+      "claim": "Across the doses tested, each stress type's impact on water potential was not statistically different from one other (ANCOVA post hoc, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Across the doses tested, we found that each stress type's impact on water potential was not statistically different from one other (ANCOVA post hoc, p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis (ANCOVA post hoc test)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "030c2aca-e314-48da-890f-8d5e2d56c15c",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C23",
+      "claim": "Shoot biomass significantly decreased in a dose-dependent manner in response to PEG, mannitol, and NaCl treatments (Pearson, p<2 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "In response to these treatments, we found shoot biomass significantly decreased in a dose-dependent manner (Pearson, p<2 \u00d7 10\u20136) (Figure 1A\u2013C, Figure 1\u2014figure supplement 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by statistical analysis (Pearson correlation) and shown in Figure 1A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "a0c72acb-af2c-4048-a598-7700d3db914c",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C24",
+      "claim": "Hundreds of genes were dose-responsive to each treatment within root and shoot tissue (adj. p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "By these means, we found hundreds of genes that were dose-responsive to each treatment within root and shoot tissue (Figure 1E\u2013H, Figure 1\u2014figure supplement 2, Supplementary file 2) (adj. p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis and shown in Figure 1E-H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "66f3f8e2-dcf0-42eb-8240-5309a6626385",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C25",
+      "claim": "A portion of dose-responsive genes were shared across treatments, suggesting a common response to low water potential.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a portion of these dose-responsive genes were shared across treatments, suggesting a common response to low water potential (Figure 1D, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "3fdc6440-ab84-4041-90d1-b4fc6ebc2bfd",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C26",
+      "claim": "A portion of dose-responsive genes were unique to each stress type.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we also found a portion of dose-responsive genes were unique to each stress type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overlap analysis of dose-responsive genes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "2d95af09-f575-4dee-a4da-da692f4e815e",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C27",
+      "claim": "During vermiculite drying, field capacity reduced from 100% to 41% over 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "During this period, field capacity (FC) reduced from 100% to 41%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by field capacity measurements shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "6da60859-bb32-4831-a22e-a66a746a26f5",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C28",
+      "claim": "Vermiculite drying treatment led to a reduction in plant biomass (t-test, p=1.8 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "This treatment led to a reduction in plant biomass (t-test, p=1.8 \u00d7 10\u20133), as well as seed yield (t-test, p=1.2 \u00d7 10\u20134), but did not induce visible signs of senescence or wilting (Figure 1\u2014figure supplement 4, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by t-test statistical analysis and shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "3a2e87bd-7019-41c2-b792-9b8e3da8c219",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C29",
+      "claim": "Vermiculite drying treatment led to a reduction in seed yield (t-test, p=1.2 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "This treatment led to a reduction in plant biomass (t-test, p=1.8 \u00d7 10\u20133), as well as seed yield (t-test, p=1.2 \u00d7 10\u20134), but did not induce visible signs of senescence or wilting (Figure 1\u2014figure supplement 4, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by t-test statistical analysis and shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "a847453c-b9c7-49e2-bca7-e05d382585c1",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C30",
+      "claim": "Vermiculite drying treatment did not induce visible signs of senescence or wilting.",
+      "claim_type": "EXPLICIT",
+      "source": "This treatment led to a reduction in plant biomass (t-test, p=1.8 \u00d7 10\u20133), as well as seed yield (t-test, p=1.2 \u00d7 10\u20134), but did not induce visible signs of senescence or wilting (Figure 1\u2014figure supplement 4, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by visual observation shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "165af788-c19f-48a2-b5af-b6a1b8054986",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C31",
+      "claim": "A dose-dependent relationship exists between a decrease in field capacity and gene expression responses in both roots and shoots during vermiculite drying.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dose-dependent relationship between a decrease in FC and gene expression responses in both roots and shoots, identifying 1949 differentially expressed genes in roots and 1792 in shoots (DESeq, adj. p<0.01) (Figure 1I, Figure 1\u2014figure supplement 2, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis and shown in Figure 1I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "982a1896-910e-497b-bdd5-031c6af9a738",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C32",
+      "claim": "1949 genes were differentially expressed in roots during vermiculite drying (DESeq, adj. p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dose-dependent relationship between a decrease in FC and gene expression responses in both roots and shoots, identifying 1949 differentially expressed genes in roots and 1792 in shoots (DESeq, adj. p<0.01) (Figure 1I, Figure 1\u2014figure supplement 2, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis using DESeq",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "49d6fdf1-45d5-4916-b827-9c374536216b",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C33",
+      "claim": "1792 genes were differentially expressed in shoots during vermiculite drying (DESeq, adj. p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dose-dependent relationship between a decrease in FC and gene expression responses in both roots and shoots, identifying 1949 differentially expressed genes in roots and 1792 in shoots (DESeq, adj. p<0.01) (Figure 1I, Figure 1\u2014figure supplement 2, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis using DESeq",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "7fb3ac59-5b8b-448e-b1b2-bad472eebd79",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C34",
+      "claim": "Gene expression patterns recovered upon rewatering after vermiculite drying.",
+      "claim_type": "EXPLICIT",
+      "source": "We ensured these genes' expression patterns recovered upon rewatering (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "5388c7ef-fe4f-4fa0-b88b-256a4ffae7f3",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C35",
+      "claim": "Genes differentially expressed in roots in response to vermiculite drying largely agreed with a previous report detailing transcriptional responses to soil drying.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that while vermiculite has greater aeration than soil, we found that the genes differentially expressed in roots in response to vermiculite drying largely agreed with a previous report detailing transcriptional responses to soil drying (Lozano-Elena et al., 2022; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison with Lozano-Elena et al., 2022 and shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "f476459c-ab3b-4ac4-ba66-453292e05481",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C36",
+      "claim": "Differentially expressed genes responsive to vermiculite drying agreed with those responsive to transient treatment with abscisic acid (ABA).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found differentially expressed genes responsive to vermiculite drying agreed with those responsive to transient treatment with abscisic acid (ABA), a stress hormone whose levels rise in response to water deficit (Claeys et al., 2014; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison with ABA treatment data shown in Figure 2\u2014figure supplement 2 and citation to Claeys et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "72b5970c-d89d-4366-84b5-d48ec933957d",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C37",
+      "claim": "ABA is a stress hormone whose levels rise in response to water deficit.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found differentially expressed genes responsive to vermiculite drying agreed with those responsive to transient treatment with abscisic acid (ABA), a stress hormone whose levels rise in response to water deficit (Claeys et al., 2014; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Claeys et al., 2014",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ed5ba89c-1b22-4aaa-bfaf-b447b49e69d0",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C38",
+      "claim": "For shoot tissue, genes differentially expressed during vermiculite drying overlapped significantly with genes differentially expressed by PEG, mannitol, and NaCl treatments (Fisher's exact test, adj. p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "For shoot tissue, we found genes that were differentially expressed during vermiculite drying overlapped significantly with genes that were differentially expressed by either PEG, mannitol, and NaCl treatments (Fisher's exact test, adj. p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fisher's exact test and shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "675eef6c-60ad-493b-9886-e53e87a6308b",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C39",
+      "claim": "There was 88\u201399% directional agreement in shoot gene expression between vermiculite drying and low water potential treatments on agar.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, there was 88\u201399% directional agreement within these overlaps, indicating that genes induced or repressed by vermiculite drying were similarly induced or repressed by low water potential treatments on agar (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by directional agreement analysis shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "06c0503a-ad07-4b1f-a8a5-3d895242d1df",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C40",
+      "claim": "RD20 and RD29B are desiccation associated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, across all conditions we saw differential expression of the desiccation associated genes RESPONSE TO DESSICATION 20;29B (RD20;29B) (Msanne et al., 2011; Takahashi et al., 2000), the osmo-protectant gene DELTA1-PYRROLINE-5-CARBOXYLATE SYNTHASE 1 (P5CS1), and ABA signaling and biosynthesis genes HOMEOBOX 7 (HB7) (Vald\u00e9s et al., 2012), and NINE-CIS-EPOXYCAROTENOID DIOXYGENASE (NCED3) (Tan et al., 2003; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Msanne et al., 2011 and Takahashi et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "f76c6e44-ef4b-47b8-9fda-6750096a916e",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C41",
+      "claim": "P5CS1 is an osmo-protectant gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, across all conditions we saw differential expression of the desiccation associated genes RESPONSE TO DESSICATION 20;29B (RD20;29B) (Msanne et al., 2011; Takahashi et al., 2000), the osmo-protectant gene DELTA1-PYRROLINE-5-CARBOXYLATE SYNTHASE 1 (P5CS1), and ABA signaling and biosynthesis genes HOMEOBOX 7 (HB7) (Vald\u00e9s et al., 2012), and NINE-CIS-EPOXYCAROTENOID DIOXYGENASE (NCED3) (Tan et al., 2003; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text as an osmo-protectant gene",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "b38e7f0a-bbc8-4471-a7c0-01140dd75c3e",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C42",
+      "claim": "HB7 is an ABA signaling and biosynthesis gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, across all conditions we saw differential expression of the desiccation associated genes RESPONSE TO DESSICATION 20;29B (RD20;29B) (Msanne et al., 2011; Takahashi et al., 2000), the osmo-protectant gene DELTA1-PYRROLINE-5-CARBOXYLATE SYNTHASE 1 (P5CS1), and ABA signaling and biosynthesis genes HOMEOBOX 7 (HB7) (Vald\u00e9s et al., 2012), and NINE-CIS-EPOXYCAROTENOID DIOXYGENASE (NCED3) (Tan et al., 2003; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vald\u00e9s et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "9cb81bfb-7fb5-4526-9d5c-bb3795126b75",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C43",
+      "claim": "NCED3 is an ABA signaling and biosynthesis gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, across all conditions we saw differential expression of the desiccation associated genes RESPONSE TO DESSICATION 20;29B (RD20;29B) (Msanne et al., 2011; Takahashi et al., 2000), the osmo-protectant gene DELTA1-PYRROLINE-5-CARBOXYLATE SYNTHASE 1 (P5CS1), and ABA signaling and biosynthesis genes HOMEOBOX 7 (HB7) (Vald\u00e9s et al., 2012), and NINE-CIS-EPOXYCAROTENOID DIOXYGENASE (NCED3) (Tan et al., 2003; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tan et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "e7643c77-1025-4fc3-881d-7d9f94479b7c",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C44",
+      "claim": "There were differences in the amplitude of gene expression across assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that while we observed agreement in the direction of gene expression across assays, there were differences in the amplitude of gene expression (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the data shown in Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "c3198808-71ed-456f-adf9-3d19e0f13951",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C45",
+      "claim": "Differences in the amplitude of gene expression may be due to differences in the ranges of water potential tested.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to confounding factors, such as differences in the ranges of water potential tested (Figure 1B), or through comparing seedlings grown on plates with mature Arabidopsis plants grown on vermiculite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated as a possible explanation for observed differences",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "449654b4-85d7-44ee-88d0-ad65ea8d686b",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C46",
+      "claim": "Differences in the amplitude of gene expression may be due to comparing seedlings grown on plates with mature Arabidopsis plants grown on vermiculite.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be due to confounding factors, such as differences in the ranges of water potential tested (Figure 1B), or through comparing seedlings grown on plates with mature Arabidopsis plants grown on vermiculite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated as a possible explanation for observed differences",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ea3f8417-8fe1-4940-a06e-ddb1591d4314",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C47",
+      "claim": "In root tissue, there was greater variability in transcriptomic responses to the different methods of lowering water potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In root tissue, we found greater variability in transcriptomic responses to the different methods of lowering water potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of root transcriptomic data across treatments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "240180b9-5fe6-4d74-9f0e-f0e371d13a00",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C48",
+      "claim": "A number of genes that were upregulated during vermiculite drying were downregulated by PEG, mannitol, and NaCl treatments in root tissue (and vice versa).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we found a number of genes that were upregulated during vermiculite drying were downregulated by PEG, mannitol, and NaCl treatments (and vice versa) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "e6ec462d-a1b3-4f23-ab11-55e6283f319f",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C49",
+      "claim": "27% of PEG dose-responsive genes shared the same direction of expression seen in vermiculite drying responses in root tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 27% of PEG dose-responsive genes shared the same direction of expression seen in vermiculite drying responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from overlap analysis of gene expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "deb3ccac-04f9-468f-9813-187bfc1f0536",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C50",
+      "claim": "Previously published PEG transcriptome datasets largely agreed with the current study's PEG data.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that previously published PEG transcriptome datasets largely agreed with our own (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "aaa2c2c6-00fd-4e30-9423-820e9b0b056d",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C51",
+      "claim": "Genes downregulated by PEG are over-represented in the 'monooxygenase activity' and 'oxygen binding' Gene Ontology Terms (p<1 \u00d7 10\u201315).",
+      "claim_type": "EXPLICIT",
+      "source": "We found genes downregulated by PEG are over-represented in the 'monooxygenase activity', and 'oxygen binding' Gene Ontology (GO) Terms (p<1 \u00d7 10\u201315, Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GO Term enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "009eaffe-b35f-4adf-9616-4c783ac384c6",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C52",
+      "claim": "Mannitol held a 48% agreement in gene expression direction with vermiculite drying in root tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Mannitol and NaCl held a 48% and 57% agreement in gene expression direction with vermiculite drying respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from overlap analysis of gene expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ac43b573-f3a7-48f2-bac6-453b4af48cd6",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C53",
+      "claim": "NaCl held a 57% agreement in gene expression direction with vermiculite drying in root tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Mannitol and NaCl held a 48% and 57% agreement in gene expression direction with vermiculite drying respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from overlap analysis of gene expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "d0dc23e1-d065-4e9e-bd3f-3fd4c94fc99f",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C54",
+      "claim": "NaCl-responsive GO Terms included a specific downregulation of 'phosphorous metabolic processes' (p=5.2 \u00d7 10\u20136).",
+      "claim_type": "EXPLICIT",
+      "source": "NaCl-responsive GO Terms included a specific downregulation of 'phosphorous metabolic processes' (p=5.2 \u00d7 10\u20136), suggesting that the roots were changing phosphate levels in response to NaCl, a process known to help maintain ion homeostasis (Miura et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GO Term enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "fe556357-62a3-4592-82dd-7d65fdfb074e",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C55",
+      "claim": "Roots change phosphate levels in response to NaCl to help maintain ion homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "NaCl-responsive GO Terms included a specific downregulation of 'phosphorous metabolic processes' (p=5.2 \u00d7 10\u20136), suggesting that the roots were changing phosphate levels in response to NaCl, a process known to help maintain ion homeostasis (Miura et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from GO Term analysis and supported by citation to Miura et al., 2011",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "488737bb-ff8a-4780-8a5d-06bb62dd7f1a",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C56",
+      "claim": "For mannitol, there was a specific downregulation of 'cell wall organization or biogenesis' and 'microtubule-based processes' (p<7.8 \u00d7 10\u20133).",
+      "claim_type": "EXPLICIT",
+      "source": "For mannitol, we observed a specific downregulation of 'cell wall organization or biogenesis' and 'microtubule-based processes' (p<7.8 \u00d7 10\u20133) (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by GO Term enrichment analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "9b980c2d-0a59-40bf-88af-973978191b0b",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C57",
+      "claim": "HA treatment limited plant shoot dry weight in a similar way to PEG, mannitol, and NaCl treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We called this media 'hard agar' (HA), and by testing three different doses (1.25\u00d7, 1.67\u00d7, and 2.5\u00d7 fold increase in both agar and LS concentration, where 1.0\u00d7 is 2% agar and 1\u00d7 LS), found that it limited plant shoot dry weight and media water potential in a similar way to PEG, mannitol, and NaCl treatment (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "684e79f6-b32e-4c6c-a0d4-17c116ecc7f0",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C58",
+      "claim": "HA treatment limited media water potential in a similar way to PEG, mannitol, and NaCl treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We called this media 'hard agar' (HA), and by testing three different doses (1.25\u00d7, 1.67\u00d7, and 2.5\u00d7 fold increase in both agar and LS concentration, where 1.0\u00d7 is 2% agar and 1\u00d7 LS), found that it limited plant shoot dry weight and media water potential in a similar way to PEG, mannitol, and NaCl treatment (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1A-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1549dfef-02c7-4ed6-9b78-afb33e2fd72c",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C59",
+      "claim": "HA treatment limited Arabidopsis primary root growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that HA treatment limited Arabidopsis primary root growth rate, shoot water potential, and photosynthesis efficiency (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "a0e0717b-11b3-43c2-bde1-5083349cb273",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C60",
+      "claim": "HA treatment limited shoot water potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that HA treatment limited Arabidopsis primary root growth rate, shoot water potential, and photosynthesis efficiency (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "055b8a58-1822-450a-8bbd-b6ca9cf45a2d",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C61",
+      "claim": "HA treatment limited photosynthesis efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that HA treatment limited Arabidopsis primary root growth rate, shoot water potential, and photosynthesis efficiency (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "8dea6278-efa7-4ba3-85b8-c7f3c14b5534",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C62",
+      "claim": "1376 genes were dose-responsive to the level of HA stress in roots.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, RNA-seq revealed 1376 and 1921 genes that were dose-responsive to the level of HA stress in roots and shoots respectively (Figure 1E, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "81fed687-a31a-42b5-98b4-0b4f9d794b65",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C63",
+      "claim": "1921 genes were dose-responsive to the level of HA stress in shoots.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, RNA-seq revealed 1376 and 1921 genes that were dose-responsive to the level of HA stress in roots and shoots respectively (Figure 1E, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis shown in Figure 1E and Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "428ca739-0cb9-40df-9a0a-625cc9c71fb6",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C64",
+      "claim": "Gene expression responses to HA overlapped significantly with those found differentially expressed in response to vermiculite drying (Fisher's exact test, p<1 \u00d7 10\u201332, 87% directional agreement).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these gene expression responses overlapped significantly with those found differentially expressed in response to vermiculite drying (Fisher's exact test, p<1 \u00d7 10\u201332, 87% directional agreement) (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fisher's exact test and shown in Figure 2A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "3e9282b3-4ea6-46a2-9cdc-59b8dc148863",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C65",
+      "claim": "There was a significant decrease in shoot area size in response to an increase in nutrient concentration (Pearson p=1.7 \u00d7 10\u20137).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant decrease in shoot area size in response to an increase in nutrient concentration (Pearson p=1.7 \u00d7 10\u20137) and agar concentration (Pearson p=3.9 \u00d7 10\u201313), where the latter more closely phenocopied the effect of HA (Figure 2E, Figure 2\u2014figure supplement 5, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Pearson correlation analysis and shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "e7683bd2-1333-4e6f-9ee6-bff8f1306932",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C66",
+      "claim": "There was a significant decrease in shoot area size in response to an increase in agar concentration (Pearson p=3.9 \u00d7 10\u201313).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant decrease in shoot area size in response to an increase in nutrient concentration (Pearson p=1.7 \u00d7 10\u20137) and agar concentration (Pearson p=3.9 \u00d7 10\u201313), where the latter more closely phenocopied the effect of HA (Figure 2E, Figure 2\u2014figure supplement 5, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Pearson correlation analysis and shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1f2d001c-1faf-4ed8-b4a1-51c9908fdd5b",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C67",
+      "claim": "Increased agar concentration more closely phenocopied the effect of HA than increased nutrient concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant decrease in shoot area size in response to an increase in nutrient concentration (Pearson p=1.7 \u00d7 10\u20137) and agar concentration (Pearson p=3.9 \u00d7 10\u201313), where the latter more closely phenocopied the effect of HA (Figure 2E, Figure 2\u2014figure supplement 5, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of phenotypic responses shown in Figure 2E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "725145d2-c015-4ce7-abcd-edd92eb3e692",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C68",
+      "claim": "The increase in nutrient concentration alone was responsible for changing media water potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the increase in nutrient concentration alone was responsible for changing media water potential, the phenotypic response to increased agar concentration was not in response to a lower water potential (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by water potential measurements shown in Figure 2\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "f862a618-1223-4697-8059-bd34d57d9cff",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C69",
+      "claim": "The phenotypic response to increased agar concentration was not in response to a lower water potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the increase in nutrient concentration alone was responsible for changing media water potential, the phenotypic response to increased agar concentration was not in response to a lower water potential (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from water potential measurements shown in Figure 2\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "7e945f96-cb3f-4fb3-a91a-c55ff4416600",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C70",
+      "claim": "1043 genes were dose-responsive to nutrient concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Through linear modeling, we found 1043 genes and 938 genes that were dose-responsive to nutrient or agar concentration, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data analysis using linear modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "a5ce4102-f7a1-4a4a-b7a6-65ece6495483",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C71",
+      "claim": "938 genes were dose-responsive to agar concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Through linear modeling, we found 1043 genes and 938 genes that were dose-responsive to nutrient or agar concentration, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq data analysis using linear modeling",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "9426748b-bbaf-4fd1-ba72-b0d4254f9624",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C72",
+      "claim": "Genes differentially expressed in response to an increase in agar concentration overlapped 12% of vermiculite drying responsive gene expression (permutation test, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that genes differentially expressed in response to an increase in agar or nutrient concentration overlapped 12% and 17% of vermiculite drying responsive gene expression respectively (permutation test, p<0.05) (Figure 2F, Figure 2\u2014figure supplement 5, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by permutation test and shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "b3367507-d2ec-42e9-8dc6-64aaee929d4a",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C73",
+      "claim": "Genes differentially expressed in response to an increase in nutrient concentration overlapped 17% of vermiculite drying responsive gene expression (permutation test, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that genes differentially expressed in response to an increase in agar or nutrient concentration overlapped 12% and 17% of vermiculite drying responsive gene expression respectively (permutation test, p<0.05) (Figure 2F, Figure 2\u2014figure supplement 5, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by permutation test and shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "6cea88a4-b68d-46ec-8bd2-749679b59f17",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C74",
+      "claim": "Genes differentially expressed in response to HA treatment led to a 26% overlap with vermiculite drying responsive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found genes differentially expressed in response to HA treatment led to a higher overlap (26 %), suggesting that both nutrient and agar concentration contribute to the similarity between HA treatment and vermiculite drying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from overlap analysis of gene expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "4f5bd2c3-ae03-4de8-96e3-71228f0e6a0b",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C75",
+      "claim": "Both nutrient and agar concentration contribute to the similarity between HA treatment and vermiculite drying.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found genes differentially expressed in response to HA treatment led to a higher overlap (26 %), suggesting that both nutrient and agar concentration contribute to the similarity between HA treatment and vermiculite drying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of overlap percentages",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "49a83273-18cd-488d-9843-42fbf893a53e",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C76",
+      "claim": "The HA assay revealed variability in shoot growth responses among 20 different Arabidopsis ecotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the total shoot area after 3 weeks of growth, we found that our assay revealed variability in shoot growth responses (Figure 2G and H, Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "9218eb88-ebb3-41b8-8211-7e88789199b9",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C77",
+      "claim": "The greater the impact HA had on reducing an accession's relative shoot size, the better the accession's fitness was under field conditions (Spearman p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the greater the impact HA had on reducing an accession's relative shoot size, the better the accession's fitness was, as measured under field conditions (Exposito-Alonso et al., 2019) (Spearman p=0.04, Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Spearman correlation analysis and comparison with field data from Exposito-Alonso et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "faf59e5f-87c6-461b-881e-a542b99d62ab",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C78",
+      "claim": "Smaller shoot systems have a better chance of survival and reproduction under drought conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely because smaller shoot systems have a better chance of survival and reproduction (Skirycz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Skirycz et al., 2011",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "0099fe97-a26e-4b1a-8a71-99751c1c57fb",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C79",
+      "claim": "The HA assay may be useful for screening for novel drought-associated loci among a wider group of accessions or mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that our assay may be useful for screening for novel drought-associated loci among a wider group of accessions or mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between HA response and field fitness",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "2ecd5e9e-7baa-4878-bb42-b244ef3b4d10",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C80",
+      "claim": "Each plate-based assay generated similar responses in shoot tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We found each plate-based assay generated similar responses in shoot tissue, but more varied responses in root tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summarized from the comparative analysis of transcriptomic data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "0eac4d8a-82d5-4fab-b092-614fa0ef5b3d",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C81",
+      "claim": "Each plate-based assay generated more varied responses in root tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We found each plate-based assay generated similar responses in shoot tissue, but more varied responses in root tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summarized from the comparative analysis of transcriptomic data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "fcd0b316-dff2-43af-8831-835441280d50",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C82",
+      "claim": "HA approach induced gene expression responses comparable to vermiculite drying.",
+      "claim_type": "EXPLICIT",
+      "source": "By increasing nutrient and agar concentration, our HA approach also induced gene expression responses comparable to vermiculite drying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by overlap analysis of gene expression data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "9bd8b1ab-b5c7-400a-89c0-234989d01ef3",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C83",
+      "claim": "Arabidopsis seedlings were grown on vertical plates for 8 days under short-day conditions before transfer to HA plates.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis seedlings were grown on vertical plates for 8 days under short-day conditions (8 hr light, 21\u00b0C, 150 \u00b5moles light) on agar media (1\u00d7 LS (Cassion LSP03) media, 1% sucrose, 2% agar, pH 5.7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "2ba1f453-d55b-473d-b446-7e128465181b",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C84",
+      "claim": "LS media is identical to Murashige & Skoog media in inorganic salt content.",
+      "claim_type": "EXPLICIT",
+      "source": "We note LS media is identical to Murashige & Skoog media in inorganic salt content, but lacks glycine, nicotinic acid, and pyridoxine HCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "9f6e68c7-9107-4c49-bec2-81aa5d7a94b4",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C85",
+      "claim": "LS media lacks glycine, nicotinic acid, and pyridoxine HCl compared to Murashige & Skoog media.",
+      "claim_type": "EXPLICIT",
+      "source": "We note LS media is identical to Murashige & Skoog media in inorganic salt content, but lacks glycine, nicotinic acid, and pyridoxine HCl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "b25e9d0e-d09d-43e9-a613-daba6b9a259b",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C86",
+      "claim": "The 1.0\u00d7 HA plate consisted of 2% agar and 1\u00d7 LS media, with no sucrose (pH 5.7) at a final volume of 75 mL.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1.0\u00d7 plate consisted of 2% and 1\u00d7 LS media, with no sucrose (pH 5.7) at a final volume of 75 mL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "18bb027c-69e9-48c1-aca0-49114a2c2131",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C87",
+      "claim": "The volume of HA itself has minimal impact on gene expression responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the volume of HA itself has minimal impact gene expression responses (Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "8ba66adc-3f57-4906-bdd6-565dd6b848e5",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C88",
+      "claim": "Arabidopsis seedlings were grown on vertical plates for 17 days before transfer to vermiculite for the vermiculite drying assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis seedlings were grown on vertical plates for 17 days under short-day conditions (8 hr light, 21\u00b0C, 150 \u00b5moles light) on agar media (1\u00d7 LS, 1% sucrose, 2% agar, pH 5.7), before transfer to vermiculite saturated with 0.75\u00d7 LS media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "26139dc5-08a3-43ca-8302-f1aa27815f7a",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C89",
+      "claim": "At the timing of transfer to vermiculite, lateral root formation had begun.",
+      "claim_type": "EXPLICIT",
+      "source": "We note at the timing of transfer lateral root formation had begun.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1148b408-f335-47d6-84cb-82d2308cfcba",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C90",
+      "claim": "PEG media plates were prepared by dissolving crystalline 6000 MW PEG into freshly autoclaved 1\u00d7 LS media and pouring onto 1\u00d7 LS, 2% agar media plates.",
+      "claim_type": "EXPLICIT",
+      "source": "PEG media plates were prepared by dissolving crystalline 6000 MW PEG into freshly autoclaved 1\u00d7 LS media pH 5.7 and pouring 50 mL of PEG media solution onto 1\u00d7 LS, 2% agar, media plates (pH 5.7), letting the PEG solution diffuse into the solid media overnight, then pouring off excess and transferring seedlings to PEG infused media plates as described in van der Weele et al., 2000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section with citation to van der Weele et al., 2000",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "fac80df6-91c5-4d33-9a72-e8dd0e305661",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C91",
+      "claim": "The osmotic potential of media was determined considering it equivalent to the water potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The water potential of media was determined considering it equivalent to the osmotic potential (\u03a8s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the Materials and methods section",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ba0f2fe0-946d-443c-b807-1c3e17c72bac",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C92",
+      "claim": "Osmotic potential was measured using a vapor pressure osmometer.",
+      "claim_type": "EXPLICIT",
+      "source": "Osmotic potential was measured using a vapor pressure osmometer (Model 5600, ELITech Group; Puteaux, France).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "c52a884e-1926-49d1-a526-8e4d677f0813",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C93",
+      "claim": "Read sequences were aligned to the Arabidopsis TAIR10 genome using HISAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Read sequences were aligned to the Arabidopsis TAIR10 genome using HISAT2 (Kim et al., 2019), and gene counts called using HT-seq (Anders et al., 2015), by relying on Araport11 annotation (Cheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section with citation to Kim et al., 2019",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "aedb3a8a-c086-4329-84d2-8fcadaaddb77",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C94",
+      "claim": "Gene counts were called using HT-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Read sequences were aligned to the Arabidopsis TAIR10 genome using HISAT2 (Kim et al., 2019), and gene counts called using HT-seq (Anders et al., 2015), by relying on Araport11 annotation (Cheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section with citation to Anders et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "b0d31c0b-4830-4243-bf42-03791ed978a0",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C95",
+      "claim": "Araport11 annotation was used for gene counting.",
+      "claim_type": "EXPLICIT",
+      "source": "Read sequences were aligned to the Arabidopsis TAIR10 genome using HISAT2 (Kim et al., 2019), and gene counts called using HT-seq (Anders et al., 2015), by relying on Araport11 annotation (Cheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section with citation to Cheng et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "df3b38e0-4273-471f-ac27-c85a51d6d4cd",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C96",
+      "claim": "Differential expression was called using a linear model using the DESeq2 LRT function to associate a change in field capacity with change in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To detect differential expression in our drought assay on vermiculite, we called differential expression using a linear model using the DESeq2 LRT function to associate a change in FC with change in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "f8c198eb-cf96-44d2-801b-ee606cc6f5a5",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C97",
+      "claim": "Pairwise differential gene expression was called using DESeq2.",
+      "claim_type": "EXPLICIT",
+      "source": "Pairwise differential gene expression was called using DESeq2 (Love et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section with citation to Love et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "a07c6255-2d90-414a-b4e4-8dad3c0ccd0c",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C98",
+      "claim": "Overlap analyses were performed using Fisher's exact tests, with an adjusted p-value threshold of 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlap analyses were performed using Fisher's exact tests, with an adjusted p-value threshold of 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "0694e774-1b38-44ad-a046-c4d2f9821da2",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "claim_id": "C99",
+      "claim": "Permutation tests and GO Term enrichment analyses were performed in VirtualPlant.",
+      "claim_type": "EXPLICIT",
+      "source": "Permutation tests and GO Term enrichment analyses were performed in VirtualPlant (Katari et al., 2010), with all expressed genes within the respective organ used as background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the Materials and methods section with citation to Katari et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f1b9b3e4-d9aa-4d90-bb03-132fe32cba98",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PEG, mannitol, and NaCl treatments dose-dependently reduce water potential and shoot biomass in Arabidopsis seedlings. All three treatments produced statistically equivalent effects on water potential across doses tested, and all significantly reduced shoot biomass in a dose-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 provide convergent statistical evidence (Pearson correlations with p<8.5\u00d710\u207b\u2075 and p<2\u00d710\u207b\u2076, ANCOVA p>0.05) supported by Figure 1A-C showing dose-dependent physiological responses. The experimental design with multiple doses and appropriate statistical tests supports these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "25af1528-bffb-4176-bbd8-f0ee877a0251",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Hundreds of genes show dose-responsive expression to PEG, mannitol, and NaCl treatments in both root and shoot tissue, with partial overlap suggesting both common and treatment-specific transcriptional responses to low water potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by RNA-seq analysis with appropriate statistical thresholds (adj. p<0.05) and shown in Figure 1D-H. The overlap analysis demonstrates both shared and unique gene expression patterns across treatments, providing evidence for both common water stress responses and treatment-specific effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1732480e-f0cb-4fc8-9e6a-c34f6e225bd4",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Vermiculite drying over 5 days reduces field capacity from 100% to 41% and significantly decreases plant biomass and seed yield without inducing visible senescence or wilting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by appropriate statistical tests (t-tests with p=1.8\u00d710\u207b\u00b3 and p=1.2\u00d710\u207b\u2074) and visual documentation in Figure 1\u2014figure supplement 4. The mild stress phenotype (reduced growth without senescence) is consistent with the experimental design and provides a physiologically relevant drought model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "9ec5aa86-77a6-43b0-b813-cef770f5b01f",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Vermiculite drying induces dose-dependent gene expression changes in both roots (1949 genes) and shoots (1792 genes) that are reversible upon rewatering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by RNA-seq analysis using DESeq with appropriate statistical thresholds (adj. p<0.01) and shown in Figure 1I. The reversibility upon rewatering (C34) provides important validation that the observed changes are specifically related to water deficit rather than irreversible damage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "833600a3-50e4-4423-bad0-cc95c4c1587d",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In shoot tissue, plate-based low water potential treatments (PEG, mannitol, NaCl) show significant overlap (88-99% directional agreement) with vermiculite drying responses, including differential expression of known drought-responsive genes, though with differences in expression amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 are supported by Fisher's exact test (adj. p<0.05), directional agreement analysis shown in Figure 2A-B, and expression of validated drought marker genes (RD20, RD29B, P5CS1, HB7, NCED3). The acknowledgment of amplitude differences (C44) with potential explanations (C45-C46) demonstrates appropriate scientific caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Root tissue shows greater variability in transcriptomic responses across water stress methods, with only 27-57% directional agreement between plate-based treatments and vermiculite drying, and treatment-specific GO term enrichments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 are supported by overlap analysis shown in Figure 2A, comparison with published datasets (Figure 2\u2014figure supplement 1), and GO term enrichment analysis (p<1\u00d710\u207b\u00b9\u2075 for PEG, p=5.2\u00d710\u207b\u2076 for NaCl). The lower directional agreement in roots compared to shoots represents a key finding about tissue-specific responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hard agar (HA) treatment, created by increasing both agar and nutrient concentration, reduces shoot biomass, water potential, root growth, and photosynthesis efficiency similarly to other plate-based treatments, and induces 1376 root and 1921 shoot dose-responsive genes with 87% directional agreement with vermiculite drying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 are supported by physiological measurements (Figure 1A-C, Figure 2\u2014figure supplement 4), RNA-seq analysis (Figure 1E), and Fisher's exact test (p<1\u00d710\u207b\u00b3\u00b2, 87% directional agreement) shown in Figure 2A-B. The convergence of physiological and molecular evidence supports HA as a valid drought stress method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "1cd6f346-16ec-47a0-800e-a62b56901bf4",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dissection of HA treatment reveals that both increased nutrient concentration (affecting water potential) and increased agar concentration (affecting mechanical stress) contribute to the drought-like transcriptional response, with HA combining both effects to achieve 26% overlap with vermiculite drying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C75 are supported by systematic dissection experiments with Pearson correlations (p=1.7\u00d710\u207b\u2077 and p=3.9\u00d710\u207b\u00b9\u00b3), water potential measurements (Figure 2\u2014figure supplement 5), RNA-seq analysis with linear modeling, and permutation tests (p<0.05) shown in Figure 2F. The mechanistic dissection strengthens understanding of how HA works.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "141ee705-5d52-4dc1-a284-13310ad74322",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The HA assay detects natural variation in drought responses among 20 Arabidopsis ecotypes, with reduced shoot size under HA correlating with better field fitness under drought (Spearman p=0.04), suggesting utility for genetic screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 are supported by phenotypic measurements across ecotypes (Figure 2G-H), correlation with published field data (Spearman p=0.04, Figure 2\u2014figure supplement 6), and citation to Exposito-Alonso et al., 2019. The correlation with field fitness validates the ecological relevance of the assay, though the modest p-value (0.04) and small sample size (n=20) suggest this finding would benefit from replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "d4ffcb77-54b5-4c8f-a7f4-2a56edd075b8",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Vermiculite drying transcriptional responses agree with previous soil drying studies and ABA treatment responses, validating the vermiculite system as a relevant drought model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by comparison with published datasets (Lozano-Elena et al., 2022; Wilkins et al., 2010) shown in Figure 2\u2014figure supplement 1-2, and agreement with ABA responses (Claeys et al., 2014). This cross-validation with independent studies strengthens confidence in the vermiculite drying model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "860eada9-73ca-49c2-bb8e-b06b2c8bc20e",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Treatment-specific GO term enrichments reveal distinct secondary effects: NaCl downregulates phosphorous metabolism (p=5.2\u00d710\u207b\u2076), potentially for ion homeostasis, while mannitol downregulates cell wall organization and microtubule processes (p<7.8\u00d710\u207b\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by GO term enrichment analysis with appropriate statistical thresholds and mechanistic interpretation supported by citation to Miura et al., 2011. These findings provide insight into treatment-specific secondary effects beyond osmotic stress.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "49689989-22ce-4b34-af14-1e25c8d15b7d",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Summary finding that plate-based assays generate similar shoot responses but varied root responses, with HA inducing gene expression comparable to vermiculite drying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 accurately summarize the major findings from the comparative transcriptomic analysis presented throughout the manuscript. These summary claims are supported by the collective evidence from multiple experiments and analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "31526402-82f1-4016-8d41-4e47f3d84228",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the importance of drought research, challenges with soil-based assays, and known physiological and molecular effects of chemical osmotic agents (PEG, mannitol, NaCl).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 are background/context claims supported by appropriate citations to published literature. These establish the rationale for the study and summarize prior knowledge about different drought stress methods. All claims are properly attributed to cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "2f5f7e63-bb79-41ee-993d-1c22438dd2ab",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Speculation that differences in gene expression amplitude across assays may result from differences in water potential ranges tested or developmental stage differences between seedlings and mature plants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45-C46 are explicitly speculative explanations for observed amplitude differences (C44). While these are reasonable hypotheses, they are not tested experimentally. The authors appropriately present these as potential explanations rather than established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d",
+      "content_id": "7326ff1b-6f73-4cf5-b65c-5116d2c7d79e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological details describing growth conditions, media composition, measurement techniques, and computational analysis pipelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C99 describe experimental methods with appropriate detail and citations to established protocols and software. These methodological claims are necessary for reproducibility and are consistent with standard practices in the field. The use of established tools (HISAT2, DESeq2, VirtualPlant) with proper citations supports reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "3fff62ea-e7e7-4b49-9924-3beb0cc9c423",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors demonstrate that PEG, mannitol, NaCl, and hard agar (HA) treatments all reduce water potential and shoot biomass in a dose-dependent manner, with no statistical difference in water potential effects between stress types.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the work as 'solid' and describe it as critically evaluating 'widely-used assays of transcriptional responses to water limitation.' The dose-dependent physiological effects are not questioned and form the foundation for the transcriptomic comparisons that follow.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "f3082c73-212e-48ab-8e0a-6976e681237e",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "RNA-seq analysis identified hundreds of dose-responsive genes for each treatment in roots and shoots, with partial overlap suggesting both common and treatment-specific responses to low water potential.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the transcriptomic data as valid, with one reviewer noting 'they devote considerable effort in comparing transcriptome data among various previously published experimental systems.' The finding of both shared and unique responses is central to the manuscript's conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Vermiculite drying reduced field capacity from 100% to 41% over 5 days, decreased plant biomass and seed yield without visible senescence, and induced dose-dependent gene expression changes in roots (1949 genes) and shoots (1792 genes) that recovered upon rewatering.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the vermiculite drying as a valid reference condition for drought. One reviewer states the work 'compares transcriptional responses...from plants subjected to water deficit in pots' and notes the methodology is sound. The physiological and transcriptomic responses are not challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "170862bf-ff62-45f4-b170-7f5e0249b005",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "In shoot tissue, genes differentially expressed during vermiculite drying showed significant overlap (88-99% directional agreement) with genes from PEG, mannitol, and NaCl treatments, indicating similar transcriptional responses across plate-based assays.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge this finding. One states 'the authors observed a good directional agreement of differential expressed genes for shoots between the plate assays on the vermiculite drying experiment.' This is treated as a key positive result.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "24730473-5871-4be1-bc9a-67c24e4e79fb",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Root tissue showed greater variability in transcriptomic responses across methods, with only 27-57% directional agreement between plate-based treatments and vermiculite drying, including genes showing opposite regulation patterns.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly recognize this as a central finding. One notes 'less directional agreement was observed for differential expressed genes of roots' and another states 'each method...has a different effect on Arabidopsis root transcriptome responses, which is problematic for the field.' This variability is accepted as demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "29213279-9095-47ea-8e38-25bf8b3ea80b",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The newly developed hard agar (HA) assay, which increases both agar and nutrient concentration, limited shoot biomass, water potential, root growth, and photosynthesis efficiency while inducing gene expression responses (1376 root genes, 1921 shoot genes) with 87% directional agreement to vermiculite drying.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers positively evaluate the HA assay as a methodological contribution. One states it is 'newly developed by the authors' with 'good directional agreement' in roots, and another describes it as 'an alternative to traditional plate-based assays with improved directional agreement.' The work is valued as introducing this new system.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ea65f705-294a-40d0-88d1-5ec91aee04e8",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Dissection of HA effects showed both increased agar concentration (938 responsive genes, 12% overlap with drought) and nutrient concentration (1043 genes, 17% overlap) contribute to drought-like responses, with combined HA treatment achieving 26% overlap with vermiculite drying.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this mechanistic dissection. One notes 'testing whether the increase in agar strength or more concentrated nutrients are attributed to this, they found that both factors contributed to the effect of the hard agar.' This analysis is treated as strengthening the HA assay characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "df9d0657-1a7f-4453-8715-a2feb4c906bb",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The HA assay revealed variability among 20 Arabidopsis ecotypes, with greater shoot size reduction correlating with better field fitness (Spearman p=0.04), suggesting the assay captures physiologically relevant drought responses and may be useful for genetic screening.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers view this correlation positively. One states 'it is promising that the impact of hard agar on the shoot size...shows some association with plant fitness under drought in the field.' Another notes the work 'would enable high-throughput genetic screening (and GWAS),' supporting the utility claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "df5a3393-67c4-4674-adcf-13b8121f7b82",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Vermiculite drying responses agreed with previous soil drying studies and ABA treatment data, and the current study's PEG data matched published PEG transcriptomes, validating the experimental approaches.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these validation comparisons. The agreement with prior literature supports the reliability of the methods and is implicitly accepted as part of the 'solid' work described by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "2b80f519-7bc8-40b7-bd22-351a6887e561",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Gene Ontology analysis revealed treatment-specific responses: PEG downregulated monooxygenase/oxygen binding genes, NaCl affected phosphorous metabolism (linked to ion homeostasis), and mannitol impacted cell wall organization and microtubule processes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these GO term findings. They are presented as supporting evidence for treatment-specific effects and are consistent with the accepted conclusion that different methods produce distinct root responses.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Known drought-responsive genes (RD20, RD29B, P5CS1, HB7, NCED3) showed differential expression across conditions, though with amplitude differences potentially due to varying water potential ranges or developmental stages (seedlings vs. mature plants).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the expression patterns of these marker genes or the authors' speculation about amplitude differences. These observations support the broader transcriptomic findings and are treated as consistent with the overall results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Background claims establish that drought tolerance is important for food security, that soil-based assays have technical challenges, and that chemical agents (PEG, mannitol, NaCl) induce drought-like physiology but with method-specific artifacts (e.g., plasmolysis vs. cytorrhysis, salt toxicity).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These introductory claims provide context and are not disputed by reviewers. They establish the rationale for comparing methods and are consistent with the reviewers' acknowledgment that the work addresses 'widely-used assays' and their limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a",
+      "content_id": "931829ce-a7bd-4065-b404-09a5277509ac",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "Methodological details describe growth conditions, media composition, water potential measurements, RNA-seq processing (HISAT2, DESeq2), and statistical analyses (Fisher's exact test, permutation tests, GO enrichment) used throughout the study.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the work as 'solid' and do not raise concerns about the experimental methods or statistical approaches. The methodology is implicitly accepted as appropriate for the study's goals.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1b13948a-6ad0-4fd6-85d2-adf0e0077804",
+      "result_id": "f1b9b3e4-d9aa-4d90-bb03-132fe32cba98"
+    },
+    {
+      "claim_id": "fb06e8c8-aff5-4a6a-a71c-62b9184122bf",
+      "result_id": "f1b9b3e4-d9aa-4d90-bb03-132fe32cba98"
+    },
+    {
+      "claim_id": "030c2aca-e314-48da-890f-8d5e2d56c15c",
+      "result_id": "f1b9b3e4-d9aa-4d90-bb03-132fe32cba98"
+    },
+    {
+      "claim_id": "a0c72acb-af2c-4048-a598-7700d3db914c",
+      "result_id": "25af1528-bffb-4176-bbd8-f0ee877a0251"
+    },
+    {
+      "claim_id": "66f3f8e2-dcf0-42eb-8240-5309a6626385",
+      "result_id": "25af1528-bffb-4176-bbd8-f0ee877a0251"
+    },
+    {
+      "claim_id": "3fdc6440-ab84-4041-90d1-b4fc6ebc2bfd",
+      "result_id": "25af1528-bffb-4176-bbd8-f0ee877a0251"
+    },
+    {
+      "claim_id": "2d95af09-f575-4dee-a4da-da692f4e815e",
+      "result_id": "1732480e-f0cb-4fc8-9e6a-c34f6e225bd4"
+    },
+    {
+      "claim_id": "6da60859-bb32-4831-a22e-a66a746a26f5",
+      "result_id": "1732480e-f0cb-4fc8-9e6a-c34f6e225bd4"
+    },
+    {
+      "claim_id": "3a2e87bd-7019-41c2-b792-9b8e3da8c219",
+      "result_id": "1732480e-f0cb-4fc8-9e6a-c34f6e225bd4"
+    },
+    {
+      "claim_id": "a847453c-b9c7-49e2-bca7-e05d382585c1",
+      "result_id": "1732480e-f0cb-4fc8-9e6a-c34f6e225bd4"
+    },
+    {
+      "claim_id": "165af788-c19f-48a2-b5af-b6a1b8054986",
+      "result_id": "9ec5aa86-77a6-43b0-b813-cef770f5b01f"
+    },
+    {
+      "claim_id": "982a1896-910e-497b-bdd5-031c6af9a738",
+      "result_id": "9ec5aa86-77a6-43b0-b813-cef770f5b01f"
+    },
+    {
+      "claim_id": "49d6fdf1-45d5-4916-b827-9c374536216b",
+      "result_id": "9ec5aa86-77a6-43b0-b813-cef770f5b01f"
+    },
+    {
+      "claim_id": "7fb3ac59-5b8b-448e-b1b2-bad472eebd79",
+      "result_id": "9ec5aa86-77a6-43b0-b813-cef770f5b01f"
+    },
+    {
+      "claim_id": "ed5ba89c-1b22-4aaa-bfaf-b447b49e69d0",
+      "result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d"
+    },
+    {
+      "claim_id": "675eef6c-60ad-493b-9886-e53e87a6308b",
+      "result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d"
+    },
+    {
+      "claim_id": "06c0503a-ad07-4b1f-a8a5-3d895242d1df",
+      "result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d"
+    },
+    {
+      "claim_id": "f76c6e44-ef4b-47b8-9fda-6750096a916e",
+      "result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d"
+    },
+    {
+      "claim_id": "b38e7f0a-bbc8-4471-a7c0-01140dd75c3e",
+      "result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d"
+    },
+    {
+      "claim_id": "9cb81bfb-7fb5-4526-9d5c-bb3795126b75",
+      "result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d"
+    },
+    {
+      "claim_id": "e7643c77-1025-4fc3-881d-7d9f94479b7c",
+      "result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d"
+    },
+    {
+      "claim_id": "ea3f8417-8fe1-4940-a06e-ddb1591d4314",
+      "result_id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5"
+    },
+    {
+      "claim_id": "240180b9-5fe6-4d74-9f0e-f0e371d13a00",
+      "result_id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5"
+    },
+    {
+      "claim_id": "e6ec462d-a1b3-4f23-ab11-55e6283f319f",
+      "result_id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5"
+    },
+    {
+      "claim_id": "deb3ccac-04f9-468f-9813-187bfc1f0536",
+      "result_id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5"
+    },
+    {
+      "claim_id": "aaa2c2c6-00fd-4e30-9423-820e9b0b056d",
+      "result_id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5"
+    },
+    {
+      "claim_id": "009eaffe-b35f-4adf-9616-4c783ac384c6",
+      "result_id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5"
+    },
+    {
+      "claim_id": "ac43b573-f3a7-48f2-bac6-453b4af48cd6",
+      "result_id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5"
+    },
+    {
+      "claim_id": "9b980c2d-0a59-40bf-88af-973978191b0b",
+      "result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097"
+    },
+    {
+      "claim_id": "684e79f6-b32e-4c6c-a0d4-17c116ecc7f0",
+      "result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097"
+    },
+    {
+      "claim_id": "1549dfef-02c7-4ed6-9b78-afb33e2fd72c",
+      "result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097"
+    },
+    {
+      "claim_id": "a0e0717b-11b3-43c2-bde1-5083349cb273",
+      "result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097"
+    },
+    {
+      "claim_id": "055b8a58-1822-450a-8bbd-b6ca9cf45a2d",
+      "result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097"
+    },
+    {
+      "claim_id": "8dea6278-efa7-4ba3-85b8-c7f3c14b5534",
+      "result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097"
+    },
+    {
+      "claim_id": "81fed687-a31a-42b5-98b4-0b4f9d794b65",
+      "result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097"
+    },
+    {
+      "claim_id": "428ca739-0cb9-40df-9a0a-625cc9c71fb6",
+      "result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097"
+    },
+    {
+      "claim_id": "3e9282b3-4ea6-46a2-9cdc-59b8dc148863",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "e7683bd2-1333-4e6f-9ee6-bff8f1306932",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "1f2d001c-1faf-4ed8-b4a1-51c9908fdd5b",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "725145d2-c015-4ce7-abcd-edd92eb3e692",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "f862a618-1223-4697-8059-bd34d57d9cff",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "7e945f96-cb3f-4fb3-a91a-c55ff4416600",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "a5ce4102-f7a1-4a4a-b7a6-65ece6495483",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "9426748b-bbaf-4fd1-ba72-b0d4254f9624",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "b3367507-d2ec-42e9-8dc6-64aaee929d4a",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "6cea88a4-b68d-46ec-8bd2-749679b59f17",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "4f5bd2c3-ae03-4de8-96e3-71228f0e6a0b",
+      "result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4"
+    },
+    {
+      "claim_id": "49a83273-18cd-488d-9843-42fbf893a53e",
+      "result_id": "141ee705-5d52-4dc1-a284-13310ad74322"
+    },
+    {
+      "claim_id": "9218eb88-ebb3-41b8-8211-7e88789199b9",
+      "result_id": "141ee705-5d52-4dc1-a284-13310ad74322"
+    },
+    {
+      "claim_id": "faf59e5f-87c6-461b-881e-a542b99d62ab",
+      "result_id": "141ee705-5d52-4dc1-a284-13310ad74322"
+    },
+    {
+      "claim_id": "0099fe97-a26e-4b1a-8a71-99751c1c57fb",
+      "result_id": "141ee705-5d52-4dc1-a284-13310ad74322"
+    },
+    {
+      "claim_id": "5388c7ef-fe4f-4fa0-b88b-256a4ffae7f3",
+      "result_id": "d4ffcb77-54b5-4c8f-a7f4-2a56edd075b8"
+    },
+    {
+      "claim_id": "f476459c-ab3b-4ac4-ba66-453292e05481",
+      "result_id": "d4ffcb77-54b5-4c8f-a7f4-2a56edd075b8"
+    },
+    {
+      "claim_id": "72b5970c-d89d-4366-84b5-d48ec933957d",
+      "result_id": "d4ffcb77-54b5-4c8f-a7f4-2a56edd075b8"
+    },
+    {
+      "claim_id": "d0dc23e1-d065-4e9e-bd3f-3fd4c94fc99f",
+      "result_id": "860eada9-73ca-49c2-bb8e-b06b2c8bc20e"
+    },
+    {
+      "claim_id": "fe556357-62a3-4592-82dd-7d65fdfb074e",
+      "result_id": "860eada9-73ca-49c2-bb8e-b06b2c8bc20e"
+    },
+    {
+      "claim_id": "488737bb-ff8a-4780-8a5d-06bb62dd7f1a",
+      "result_id": "860eada9-73ca-49c2-bb8e-b06b2c8bc20e"
+    },
+    {
+      "claim_id": "2ecd5e9e-7baa-4878-bb42-b244ef3b4d10",
+      "result_id": "49689989-22ce-4b34-af14-1e25c8d15b7d"
+    },
+    {
+      "claim_id": "0eac4d8a-82d5-4fab-b092-614fa0ef5b3d",
+      "result_id": "49689989-22ce-4b34-af14-1e25c8d15b7d"
+    },
+    {
+      "claim_id": "fcd0b316-dff2-43af-8831-835441280d50",
+      "result_id": "49689989-22ce-4b34-af14-1e25c8d15b7d"
+    },
+    {
+      "claim_id": "df572cf5-3534-492f-bc6c-bf2138bcfce7",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "58016c78-99b3-47c1-92c5-a5e5038ea421",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "9fb786ab-c70d-4912-977e-c6b7e051a22a",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "b7d73fed-30a3-4a8f-a3da-638634018f1c",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "00d0535b-84a9-42d7-97f8-2e5d73025435",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "a7aebeb3-4e42-47c2-9d24-1f7a9993a825",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "57a6cfba-f7a5-4ec3-84cc-80c032dc5d19",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "72736a6a-19a2-414f-a4cc-4af07ca5d9f0",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "1c3a6b21-ddff-4c26-b638-a3b849ea8149",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "0aef8b76-0308-4b61-8359-a1ddf20ad794",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "bb2e746b-f240-478a-897d-37a6ad8860d7",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "1939567e-19eb-4fc3-8ac7-96fb02e41d2e",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "fe6a9c2c-3005-4f63-b4bc-7a52b4c38741",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "2f2f72fa-7abe-45a0-bece-24fd7d9b41a0",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "2fc43e57-679d-4bcf-b2cb-e31f7f71f224",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "ed5e4264-3e33-499f-a6ff-ed77ffec65f5",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "f3f0517d-5eb4-4d28-af17-67fff5e5bff2",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "781eb4a1-f77c-4917-ae05-e513be18b409",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "d2ab86d3-979e-4ace-a639-b0af49d7fec7",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "847c36f3-955b-4f00-bb7f-e3d43d767bca",
+      "result_id": "31526402-82f1-4016-8d41-4e47f3d84228"
+    },
+    {
+      "claim_id": "c3198808-71ed-456f-adf9-3d19e0f13951",
+      "result_id": "2f5f7e63-bb79-41ee-993d-1c22438dd2ab"
+    },
+    {
+      "claim_id": "449654b4-85d7-44ee-88d0-ad65ea8d686b",
+      "result_id": "2f5f7e63-bb79-41ee-993d-1c22438dd2ab"
+    },
+    {
+      "claim_id": "9bd8b1ab-b5c7-400a-89c0-234989d01ef3",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "2ba1f453-d55b-473d-b446-7e128465181b",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "9f6e68c7-9107-4c49-bec2-81aa5d7a94b4",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "b25e9d0e-d09d-43e9-a613-daba6b9a259b",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "18bb027c-69e9-48c1-aca0-49114a2c2131",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "8ba66adc-3f57-4906-bdd6-565dd6b848e5",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "26139dc5-08a3-43ca-8302-f1aa27815f7a",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "1148b408-f335-47d6-84cb-82d2308cfcba",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "fac80df6-91c5-4d33-9a72-e8dd0e305661",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "ba0f2fe0-946d-443c-b807-1c3e17c72bac",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "c52a884e-1926-49d1-a526-8e4d677f0813",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "aedb3a8a-c086-4329-84d2-8fcadaaddb77",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "b0d31c0b-4830-4243-bf42-03791ed978a0",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "df3b38e0-4273-471f-ac27-c85a51d6d4cd",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "f8c198eb-cf96-44d2-801b-ee606cc6f5a5",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "a07c6255-2d90-414a-b4e4-8dad3c0ccd0c",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "0694e774-1b38-44ad-a046-c4d2f9821da2",
+      "result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d"
+    },
+    {
+      "claim_id": "1b13948a-6ad0-4fd6-85d2-adf0e0077804",
+      "result_id": "3fff62ea-e7e7-4b49-9924-3beb0cc9c423"
+    },
+    {
+      "claim_id": "fb06e8c8-aff5-4a6a-a71c-62b9184122bf",
+      "result_id": "3fff62ea-e7e7-4b49-9924-3beb0cc9c423"
+    },
+    {
+      "claim_id": "030c2aca-e314-48da-890f-8d5e2d56c15c",
+      "result_id": "3fff62ea-e7e7-4b49-9924-3beb0cc9c423"
+    },
+    {
+      "claim_id": "a0c72acb-af2c-4048-a598-7700d3db914c",
+      "result_id": "f3082c73-212e-48ab-8e0a-6976e681237e"
+    },
+    {
+      "claim_id": "66f3f8e2-dcf0-42eb-8240-5309a6626385",
+      "result_id": "f3082c73-212e-48ab-8e0a-6976e681237e"
+    },
+    {
+      "claim_id": "3fdc6440-ab84-4041-90d1-b4fc6ebc2bfd",
+      "result_id": "f3082c73-212e-48ab-8e0a-6976e681237e"
+    },
+    {
+      "claim_id": "2d95af09-f575-4dee-a4da-da692f4e815e",
+      "result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f"
+    },
+    {
+      "claim_id": "6da60859-bb32-4831-a22e-a66a746a26f5",
+      "result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f"
+    },
+    {
+      "claim_id": "3a2e87bd-7019-41c2-b792-9b8e3da8c219",
+      "result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f"
+    },
+    {
+      "claim_id": "a847453c-b9c7-49e2-bca7-e05d382585c1",
+      "result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f"
+    },
+    {
+      "claim_id": "165af788-c19f-48a2-b5af-b6a1b8054986",
+      "result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f"
+    },
+    {
+      "claim_id": "982a1896-910e-497b-bdd5-031c6af9a738",
+      "result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f"
+    },
+    {
+      "claim_id": "49d6fdf1-45d5-4916-b827-9c374536216b",
+      "result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f"
+    },
+    {
+      "claim_id": "7fb3ac59-5b8b-448e-b1b2-bad472eebd79",
+      "result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f"
+    },
+    {
+      "claim_id": "ed5ba89c-1b22-4aaa-bfaf-b447b49e69d0",
+      "result_id": "170862bf-ff62-45f4-b170-7f5e0249b005"
+    },
+    {
+      "claim_id": "675eef6c-60ad-493b-9886-e53e87a6308b",
+      "result_id": "170862bf-ff62-45f4-b170-7f5e0249b005"
+    },
+    {
+      "claim_id": "2ecd5e9e-7baa-4878-bb42-b244ef3b4d10",
+      "result_id": "170862bf-ff62-45f4-b170-7f5e0249b005"
+    },
+    {
+      "claim_id": "ea3f8417-8fe1-4940-a06e-ddb1591d4314",
+      "result_id": "24730473-5871-4be1-bc9a-67c24e4e79fb"
+    },
+    {
+      "claim_id": "240180b9-5fe6-4d74-9f0e-f0e371d13a00",
+      "result_id": "24730473-5871-4be1-bc9a-67c24e4e79fb"
+    },
+    {
+      "claim_id": "e6ec462d-a1b3-4f23-ab11-55e6283f319f",
+      "result_id": "24730473-5871-4be1-bc9a-67c24e4e79fb"
+    },
+    {
+      "claim_id": "009eaffe-b35f-4adf-9616-4c783ac384c6",
+      "result_id": "24730473-5871-4be1-bc9a-67c24e4e79fb"
+    },
+    {
+      "claim_id": "ac43b573-f3a7-48f2-bac6-453b4af48cd6",
+      "result_id": "24730473-5871-4be1-bc9a-67c24e4e79fb"
+    },
+    {
+      "claim_id": "0eac4d8a-82d5-4fab-b092-614fa0ef5b3d",
+      "result_id": "24730473-5871-4be1-bc9a-67c24e4e79fb"
+    },
+    {
+      "claim_id": "9b980c2d-0a59-40bf-88af-973978191b0b",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "684e79f6-b32e-4c6c-a0d4-17c116ecc7f0",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "1549dfef-02c7-4ed6-9b78-afb33e2fd72c",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "a0e0717b-11b3-43c2-bde1-5083349cb273",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "055b8a58-1822-450a-8bbd-b6ca9cf45a2d",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "8dea6278-efa7-4ba3-85b8-c7f3c14b5534",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "81fed687-a31a-42b5-98b4-0b4f9d794b65",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "428ca739-0cb9-40df-9a0a-625cc9c71fb6",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "fcd0b316-dff2-43af-8831-835441280d50",
+      "result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b"
+    },
+    {
+      "claim_id": "3e9282b3-4ea6-46a2-9cdc-59b8dc148863",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "e7683bd2-1333-4e6f-9ee6-bff8f1306932",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "1f2d001c-1faf-4ed8-b4a1-51c9908fdd5b",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "725145d2-c015-4ce7-abcd-edd92eb3e692",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "f862a618-1223-4697-8059-bd34d57d9cff",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "7e945f96-cb3f-4fb3-a91a-c55ff4416600",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "a5ce4102-f7a1-4a4a-b7a6-65ece6495483",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "9426748b-bbaf-4fd1-ba72-b0d4254f9624",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "b3367507-d2ec-42e9-8dc6-64aaee929d4a",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "6cea88a4-b68d-46ec-8bd2-749679b59f17",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "4f5bd2c3-ae03-4de8-96e3-71228f0e6a0b",
+      "result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8"
+    },
+    {
+      "claim_id": "49a83273-18cd-488d-9843-42fbf893a53e",
+      "result_id": "df9d0657-1a7f-4453-8715-a2feb4c906bb"
+    },
+    {
+      "claim_id": "9218eb88-ebb3-41b8-8211-7e88789199b9",
+      "result_id": "df9d0657-1a7f-4453-8715-a2feb4c906bb"
+    },
+    {
+      "claim_id": "faf59e5f-87c6-461b-881e-a542b99d62ab",
+      "result_id": "df9d0657-1a7f-4453-8715-a2feb4c906bb"
+    },
+    {
+      "claim_id": "0099fe97-a26e-4b1a-8a71-99751c1c57fb",
+      "result_id": "df9d0657-1a7f-4453-8715-a2feb4c906bb"
+    },
+    {
+      "claim_id": "5388c7ef-fe4f-4fa0-b88b-256a4ffae7f3",
+      "result_id": "df5a3393-67c4-4674-adcf-13b8121f7b82"
+    },
+    {
+      "claim_id": "f476459c-ab3b-4ac4-ba66-453292e05481",
+      "result_id": "df5a3393-67c4-4674-adcf-13b8121f7b82"
+    },
+    {
+      "claim_id": "deb3ccac-04f9-468f-9813-187bfc1f0536",
+      "result_id": "df5a3393-67c4-4674-adcf-13b8121f7b82"
+    },
+    {
+      "claim_id": "aaa2c2c6-00fd-4e30-9423-820e9b0b056d",
+      "result_id": "2b80f519-7bc8-40b7-bd22-351a6887e561"
+    },
+    {
+      "claim_id": "d0dc23e1-d065-4e9e-bd3f-3fd4c94fc99f",
+      "result_id": "2b80f519-7bc8-40b7-bd22-351a6887e561"
+    },
+    {
+      "claim_id": "fe556357-62a3-4592-82dd-7d65fdfb074e",
+      "result_id": "2b80f519-7bc8-40b7-bd22-351a6887e561"
+    },
+    {
+      "claim_id": "488737bb-ff8a-4780-8a5d-06bb62dd7f1a",
+      "result_id": "2b80f519-7bc8-40b7-bd22-351a6887e561"
+    },
+    {
+      "claim_id": "06c0503a-ad07-4b1f-a8a5-3d895242d1df",
+      "result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6"
+    },
+    {
+      "claim_id": "f76c6e44-ef4b-47b8-9fda-6750096a916e",
+      "result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6"
+    },
+    {
+      "claim_id": "b38e7f0a-bbc8-4471-a7c0-01140dd75c3e",
+      "result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6"
+    },
+    {
+      "claim_id": "9cb81bfb-7fb5-4526-9d5c-bb3795126b75",
+      "result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6"
+    },
+    {
+      "claim_id": "e7643c77-1025-4fc3-881d-7d9f94479b7c",
+      "result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6"
+    },
+    {
+      "claim_id": "c3198808-71ed-456f-adf9-3d19e0f13951",
+      "result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6"
+    },
+    {
+      "claim_id": "449654b4-85d7-44ee-88d0-ad65ea8d686b",
+      "result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6"
+    },
+    {
+      "claim_id": "df572cf5-3534-492f-bc6c-bf2138bcfce7",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "58016c78-99b3-47c1-92c5-a5e5038ea421",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "9fb786ab-c70d-4912-977e-c6b7e051a22a",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "b7d73fed-30a3-4a8f-a3da-638634018f1c",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "00d0535b-84a9-42d7-97f8-2e5d73025435",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "a7aebeb3-4e42-47c2-9d24-1f7a9993a825",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "57a6cfba-f7a5-4ec3-84cc-80c032dc5d19",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "72736a6a-19a2-414f-a4cc-4af07ca5d9f0",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "1c3a6b21-ddff-4c26-b638-a3b849ea8149",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "0aef8b76-0308-4b61-8359-a1ddf20ad794",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "bb2e746b-f240-478a-897d-37a6ad8860d7",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "1939567e-19eb-4fc3-8ac7-96fb02e41d2e",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "fe6a9c2c-3005-4f63-b4bc-7a52b4c38741",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "2f2f72fa-7abe-45a0-bece-24fd7d9b41a0",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "2fc43e57-679d-4bcf-b2cb-e31f7f71f224",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "ed5e4264-3e33-499f-a6ff-ed77ffec65f5",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "f3f0517d-5eb4-4d28-af17-67fff5e5bff2",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "781eb4a1-f77c-4917-ae05-e513be18b409",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "d2ab86d3-979e-4ace-a639-b0af49d7fec7",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "847c36f3-955b-4f00-bb7f-e3d43d767bca",
+      "result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7"
+    },
+    {
+      "claim_id": "9bd8b1ab-b5c7-400a-89c0-234989d01ef3",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "2ba1f453-d55b-473d-b446-7e128465181b",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "9f6e68c7-9107-4c49-bec2-81aa5d7a94b4",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "b25e9d0e-d09d-43e9-a613-daba6b9a259b",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "18bb027c-69e9-48c1-aca0-49114a2c2131",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "8ba66adc-3f57-4906-bdd6-565dd6b848e5",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "26139dc5-08a3-43ca-8302-f1aa27815f7a",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "1148b408-f335-47d6-84cb-82d2308cfcba",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "fac80df6-91c5-4d33-9a72-e8dd0e305661",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "ba0f2fe0-946d-443c-b807-1c3e17c72bac",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "c52a884e-1926-49d1-a526-8e4d677f0813",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "aedb3a8a-c086-4329-84d2-8fcadaaddb77",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "b0d31c0b-4830-4243-bf42-03791ed978a0",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "df3b38e0-4273-471f-ac27-c85a51d6d4cd",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "f8c198eb-cf96-44d2-801b-ee606cc6f5a5",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "a07c6255-2d90-414a-b4e4-8dad3c0ccd0c",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    },
+    {
+      "claim_id": "0694e774-1b38-44ad-a046-c4d2f9821da2",
+      "result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "98d51d94-4f69-4901-bcb8-2f6bb53adb39",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f1b9b3e4-d9aa-4d90-bb03-132fe32cba98",
+      "peer_result_id": "3fff62ea-e7e7-4b49-9924-3beb0cc9c423",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on C21-C23. Both evaluations find the dose-dependent physiological responses (water content, water potential, stomatal conductance) well-supported by statistical evidence and Figure 1A-C. Reviewers describe the work as 'solid' and do not question these foundational measurements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "010b6315-5f57-4dcb-927c-21397f1afe42",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "25af1528-bffb-4176-bbd8-f0ee877a0251",
+      "peer_result_id": "f3082c73-212e-48ab-8e0a-6976e681237e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on C24-C26. Both evaluations support the RNA-seq findings showing shared and unique gene expression patterns across treatments. Reviewers explicitly acknowledge the 'considerable effort in comparing transcriptome data' and accept these findings as valid and central to the manuscript.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "bfa40caa-da7a-4cdd-abc6-b9e206b624ec",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1732480e-f0cb-4fc8-9e6a-c34f6e225bd4",
+      "peer_result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on C27-C30 (vermiculite drying phenotype). OpenEval focuses on these specific claims while peer review groups them with C31-C34 (transcriptomic responses). Both evaluations support the vermiculite drying as a valid reference condition with appropriate physiological and molecular characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "efd47c04-267b-4a1d-ae13-44449fc99936",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "9ec5aa86-77a6-43b0-b813-cef770f5b01f",
+      "peer_result_id": "a40ba51d-4746-4427-a2b5-b5c09eeb911f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on C31-C34 (vermiculite transcriptomic responses and reversibility). OpenEval evaluates these separately while peer review combines them with C27-C30. Both find the transcriptomic data and reversibility upon rewatering well-supported and methodologically sound.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "c18c6aa8-6ebe-4d96-a1d5-da73751f1a15",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d",
+      "peer_result_id": "170862bf-ff62-45f4-b170-7f5e0249b005",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C38-C39 regarding directional agreement in shoots. OpenEval covers broader claims (C38-C44) including marker genes and amplitude differences, while peer review focuses on C38-C39 and C80 (summary claim). Both treat the shoot directional agreement as a key positive finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "e7044555-6c53-4dbb-82d3-9992f2872f4a",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "833600a3-50e4-4423-bad0-cc95c4c1587d",
+      "peer_result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on C40-C44 (marker gene expression and amplitude differences). OpenEval groups these with shoot directional agreement claims, while peer review evaluates them separately alongside C45-C46 (speculative explanations). Both accept the marker gene data and authors' cautious interpretation of amplitude differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "fbe23425-8bcc-405a-bc33-51493d99d356",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "1975bc0c-e4ba-40f0-8cae-0d2bc5f26dc5",
+      "peer_result_id": "24730473-5871-4be1-bc9a-67c24e4e79fb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on C47-C49, C52-C53 regarding poor directional agreement in roots. OpenEval covers C47-C53 while peer review adds C81 (summary claim). Both evaluations recognize this as a central, well-demonstrated finding showing tissue-specific variability across methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "0d292438-4056-4cd5-9f6d-7ee3b8a0304a",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "ab22ff8e-4223-4f30-944d-0ec9bb5e8097",
+      "peer_result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on C57-C64 supporting HA as a valid drought stress method. OpenEval covers C57-C64 while peer review extends to C82 (summary claim). Both evaluations positively assess HA's physiological and transcriptomic validation, with reviewers highlighting it as a methodological contribution with improved root directional agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ff11fe5c-96db-419e-ad9d-a606130fafa9",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "1cd6f346-16ec-47a0-800e-a62b56901bf4",
+      "peer_result_id": "ea65f705-294a-40d0-88d1-5ec91aee04e8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on C65-C75. Both evaluations support the mechanistic dissection showing agar strength and nutrient concentration both contribute to HA effects. Reviewers explicitly acknowledge this analysis as strengthening the HA assay characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "e8f2d8ea-af81-4f6b-9e86-0bb93b3012a8",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "141ee705-5d52-4dc1-a284-13310ad74322",
+      "peer_result_id": "df9d0657-1a7f-4453-8715-a2feb4c906bb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on C76-C79. Both evaluations support the correlation between HA phenotypes and field fitness data. OpenEval notes the modest p-value (0.04) suggesting replication would be beneficial, while reviewers view it as 'promising' and supporting high-throughput screening utility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "a4d7f933-320d-4c8a-92b1-a96198a2e9d2",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "d4ffcb77-54b5-4c8f-a7f4-2a56edd075b8",
+      "peer_result_id": "df5a3393-67c4-4674-adcf-13b8121f7b82",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C35-C36 regarding validation with published datasets. OpenEval covers C35-C37 while peer review includes C50. Both evaluations accept these cross-validation comparisons as supporting the reliability of the vermiculite drying model, though neither extensively discusses them.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "4b3be214-518a-4ada-8b12-593ce91cf7c4",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "860eada9-73ca-49c2-bb8e-b06b2c8bc20e",
+      "peer_result_id": "2b80f519-7bc8-40b7-bd22-351a6887e561",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on C54-C56 regarding GO term enrichment for treatment-specific effects. OpenEval focuses on C54-C56 while peer review adds C51. Both evaluations accept these findings as valid evidence for secondary effects beyond osmotic stress, consistent with root response variability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "50f69684-95b8-4f3d-a1ea-6d02dfaeb3aa",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "49689989-22ce-4b34-af14-1e25c8d15b7d",
+      "peer_result_id": "170862bf-ff62-45f4-b170-7f5e0249b005",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on summary claim C80. OpenEval groups C80-C82 as supported summary claims, while peer review mentions C80 alongside C38-C39 (shoot directional agreement). Both treat these high-level conclusions as accurately reflecting the experimental findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "ff1fb49f-413d-42c4-9483-4606f033b0dc",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "49689989-22ce-4b34-af14-1e25c8d15b7d",
+      "peer_result_id": "24730473-5871-4be1-bc9a-67c24e4e79fb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on summary claim C81. OpenEval groups C80-C82 together while peer review mentions C81 with root directional agreement findings (C47-C49, C52-C53). Both accept this summary as consistent with demonstrated results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "4ea11fcf-72f3-4629-be31-58db023f91fe",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "49689989-22ce-4b34-af14-1e25c8d15b7d",
+      "peer_result_id": "29213279-9095-47ea-8e38-25bf8b3ea80b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on summary claim C82. OpenEval groups C80-C82 together while peer review mentions C82 with HA validation claims (C57-C64). Both evaluations support these summary statements as accurately reflecting the collective evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "8757d62f-4eab-42f5-8ecf-6aec68c668c7",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "31526402-82f1-4016-8d41-4e47f3d84228",
+      "peer_result_id": "3cabee23-3a85-4195-b618-dbe4ea8d04c7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on C1-C20. Both evaluations support these background/context claims as properly cited and establishing appropriate rationale. Reviewers acknowledge the work addresses 'widely-used assays' and their limitations, consistent with the introductory framing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "cf5a547a-e66c-438f-81d2-380fef7af535",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "2f5f7e63-bb79-41ee-993d-1c22438dd2ab",
+      "peer_result_id": "8f1df21d-d552-4e6b-9e71-97dd19db6fd6",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on C45-C46 as speculative explanations. OpenEval explicitly labels these as 'UNCERTAIN' and notes they are untested hypotheses presented appropriately. Peer review groups them with marker gene data (C40-C44) and does not challenge the authors' cautious speculation about amplitude differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    },
+    {
+      "id": "aa89593a-3212-4a93-a9e3-dcd6e76be67c",
+      "submission_id": "c405cfc6-78fb-47f0-b212-1bb39836b29b",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "75d1b3c1-46cf-4fc9-9c07-4bddcde40f6d",
+      "peer_result_id": "2ff7799c-fd3d-4510-af0b-3c2720f6ab4a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on C83-C99. Both evaluations support the methodological descriptions as appropriate and sufficient for reproducibility. OpenEval notes proper use of established tools with citations, while reviewers describe the overall work as 'solid' without raising methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:28:00.902943Z"
+    }
+  ]
+}

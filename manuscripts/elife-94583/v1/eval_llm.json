@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "\u03b2-tubulin S172 phosphorylation status strongly affects neurite growth in C. elegans TRNs. The phospho-mimicking S172E mutation causes severe neurite shortening (antimorphic phenotype), while the non-phosphorylatable S172A mutation leads to ectopic neurite growth (neomorphic phenotype). The S172P mutation shows a loss-of-function phenotype. These effects are cell-autonomous as demonstrated by in vitro culture experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C46 provide convergent evidence from multiple experimental approaches (in vivo neurite measurements, genetic dominance tests, in vitro culture, antibody staining) showing that S172 phosphorylation status directly affects neurite growth. The phenotypic categorization matches previously established frameworks (C32, C34), and the cell-autonomous nature is demonstrated by in vitro experiments (C43-C46). The data are internally consistent and well-supported by quantitative measurements shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "\u03b2-tubulin S172 phosphorylation regulates microtubule dynamics in TRNs. S172E mutants show increased EBP-2 tracks and mixed MT polarity, indicating reduced MT stability. S172A mutants show fewer EBP-2 tracks under sensitized conditions, indicating increased MT stability while preserving MT polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 provide direct experimental evidence from EBP-2 tracking and MT polarity measurements. The use of colchicine treatment to sensitize the assay (C53) is appropriate for detecting differences between highly stable MT populations. The correlation between MT dynamics and neurite growth phenotypes is logical and well-supported. Claims C56-C58 about EBP-2 signal in cell bodies are more speculative but do not undermine the main result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "S172 phosphorylation status affects cargo transport in TRNs. S172E mutants show impaired mitochondrial and synaptic vesicle transport with cargo trapped in cell bodies. S172A mutants show altered mitochondrial distribution and mistargeting of synaptic vesicles to ectopic neurites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by imaging data showing cargo localization patterns. The transport defects are consistent with the MT stability changes observed in the previous result. The mistargeting of cargo to ectopic neurites in S172A mutants (C64) provides additional validation that these are functional neurites with organized MT networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "S172 phosphorylation affects touch sensitivity in TRNs. S172E and S172P mutants show strong defects in touch sensitivity similar to mec-7 deletion, while S172A mutants maintain normal touch sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by behavioral assay data. The results are consistent with the known requirement for stable MTs in mechanosensation (C67) and the MT stability phenotypes of the different mutants. The preservation of touch sensitivity in S172A mutants despite ectopic neurite growth is an interesting observation that suggests hyperstable MTs do not impair mechanosensory function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Optimal \u03b2-tubulin S172 phosphorylation is required for effective axonal regeneration. S172E mutants show severely impaired regeneration with short sprouts, while S172A mutants show abnormal branched regeneration with reduced directionality. Both phenotypes differ from dlk-1 mutants, indicating distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C82 provide detailed characterization of regeneration phenotypes using laser axotomy. The quantification of reconnection rates and regrowth lengths provides strong support. The comparison with dlk-1 mutants (C72-C75) helps distinguish the mechanism. The conclusion that optimal S172 phosphorylation is required (C82) is well-supported by the bidirectional effects of S172A and S172E mutations. The citation to another neomorphic allele with similar regeneration defects (C81) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Minibrain kinase homologs (mbk-1, mbk-2, hpk-1) are not responsible for S172 phosphorylation in TRNs. Multiple approaches including deletion mutants, RNAi knockdown, and protein degradation failed to produce the ectopic ALM-PN phenotype characteristic of loss of S172 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C94 describe a comprehensive negative result using multiple experimental approaches. The failure to detect MBK-2::GFP in TRNs (C89) and the lack of phenotype with ZIF-1 degradation (C90) provide strong evidence against MBK-2 involvement. The conclusion (C94) appropriately acknowledges two possibilities: redundancy or involvement of different kinases. This sets up the subsequent identification of CDK1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "CDK1 can phosphorylate \u03b2-tubulin S172 and likely regulates TRN morphogenesis. Loss of cdk-1 produces ectopic ALM-PN similar to S172A mutants, and the double mutant shows no enhancement. In vitro kinase assays confirm CDK1 can phosphorylate S172, while MBK-2 cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 provide strong evidence through genetic interaction (C95-C98) and biochemical validation (C99-C100). The genetic epistasis analysis (C98) is appropriate and well-executed. The in vitro kinase assays provide direct biochemical evidence. However, the conclusion that CDK1 regulates neuronal differentiation (C102) is somewhat speculative given the weak expression of cyclins in neurons (C101). The caveat about other kinases (C103) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "\u03b1-tubulin K40 acetylation has minimal effects on TRN morphology and function. Neither K40R nor K40Q mutations cause significant neurite growth defects. K40Q shows only minor defects in synaptic branching (~20%) and moderately reduced axonal regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 are well-supported by experimental data showing lack of major phenotypes. The antibody validation (C111) confirms the mutations affect acetylation status. The minor defects observed (C113, C115) are appropriately characterized as modest. This negative result is important for the field and contrasts with the strong effects of S172 and K252 modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "MEC-17 acetyltransferase has functions independent of K40 acetylation. The enzymatically dead mec-17(dW) mutant shows partial rescue of mec-17(-) phenotypes, while mec-12(K40R) shows no defects. This indicates MEC-17 functions through non-enzymatic mechanisms and/or acetylation of other substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C128 provide strong evidence through careful genetic dissection. The creation of enzymatically dead MEC-17 by endogenous locus editing (C119) is a key strength. The comparison between mec-17(-), mec-17(dW), and mec-12(K40R) phenotypes (C120-C126) provides clear evidence for K40-independent functions. This resolves a controversy in the field and is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "\u03b2-tubulin K252 acetylation strongly affects neurite development. Both K252Q (acetyl-mimicking) and K252R (unmodifiable) mutations cause severe neurite shortening similar to antimorphic alleles, with K252R showing stronger effects. The enzyme mediating K252 acetylation in C. elegans remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are well-supported by experimental data showing severe phenotypes. The unexpected finding that K252R is stronger than K252Q (C132) is puzzling and the authors appropriately acknowledge this (C135). The speculation about conformational changes (C135) is reasonable but unproven. The failure to identify the responsible enzyme (C136-C137) is a limitation but does not undermine the main finding about K252's importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Polyglutamylation of \u03b1-tubulin C-terminal tail regulates MT stability and neurite growth. Deletion or mutation of glutamic acid residues in the MEC-12 C-terminal tail leads to ectopic ALM-PN growth and reduced MT dynamics. The effects are additive, suggesting multiple glutamylation sites contribute to MT regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C154 provide systematic analysis of the C-terminal tail through deletion and point mutation studies. The additive effects (C150) support the interpretation of multiple functional sites. The EBP-2 tracking data (C153) directly demonstrates reduced MT dynamics. The preservation of MT polarity (C154) is an important control showing the defects are specific to dynamics rather than general MT organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "\u03b1-tubulin polyglutamylation inhibits axonal regeneration through kinesin-13. The mec-12(4Es-A) mutant shows enhanced regeneration similar to ttll-5(-) mutants. Genetic epistasis analysis indicates polyglutamylation acts through KLP-7/kinesin-13 rather than spastin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C165 are well-supported by regeneration assays and genetic interaction studies. The double mutant analysis with ttll-5 (C158) and klp-7 (C164) provides strong evidence for the pathway. The negative result with spastin (C160-C161) helps narrow down the mechanism. The conclusion about KLP-7 recruitment (C165) is speculative but reasonable given the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Polyglutamylation has subtle effects on TRN function. Unlike S172 mutants, mec-12(4Es-A) mutants show normal cargo transport, no mistargeting to ectopic neurites, and normal touch sensitivity, suggesting more specific effects on MT dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C170 are supported by experimental data and provide important context for interpreting the polyglutamylation results. The comparison with S172 mutants (C167-C168) helps establish that polyglutamylation has more subtle effects. The normal touch sensitivity (C169-C170) indicates polyglutamylation is not essential for mechanosensation, contrasting with S172 phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Both \u03b1-tubulin (MEC-12) and \u03b2-tubulin (MEC-7) are polyglutamylated in TRNs, but \u03b1-tubulin polyglutamylation has stronger functional effects. Antibody staining shows differential patterns in cell bodies versus axons. Mutations in MEC-7 polyglutamylation sites do not produce phenotypes or enhance MEC-12 mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C181 are supported by antibody staining data and genetic analysis. The differential staining patterns (C173-C174) provide insight into the nature of polyglutamylation in different cellular compartments. The lack of phenotype for MEC-7 mutations (C179-C180) and the conclusion about differential effects (C181) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Known TTLL enzymes are not responsible for polyglutamylation in TRN axons. Triple, quintuple, and sextuple ttll mutants eliminate polyglutamylation signal in cell bodies but not axons, and do not produce the ectopic ALM-PN phenotype seen in tubulin mutants lacking glutamylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C189 describe a surprising negative result that is well-documented through systematic analysis of ttll mutants. The anticorrelation between cell body and axon signals (C186) is particularly interesting. The phenotypic discrepancy (C188) strongly suggests either unknown glutamylases or non-glutamylation functions of TTLLs (C189). This is an important finding that opens new questions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "\u03b1-tubulin detyrosination and \u03942-tubulin modification have subtle effects on MT stability. Mutations preventing detyrosination (\u0394Y450, Y450A, \u0394EY) show short ectopic ALM-PN. Combinatorial effects between detyrosination and polyglutamylation are additive, suggesting independent contributions to MT stability through kinesin-13 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C198 are supported by systematic analysis of C-terminal tail mutations. The additive effects (C197-C198) provide strong evidence for independent mechanisms. The interpretation that both modifications affect kinesin-13 interaction (C196) is consistent with the genetic data, though the mechanism is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "Detyrosination occurs in C. elegans TRNs despite the absence of vasohibin homologs. Antibody staining shows weak detyrosination signals that are altered in mutants. The enzymes catalyzing tyrosination/detyrosination remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-C208 provide evidence for detyrosination in C. elegans using antibody staining. The validation through mutant analysis (C204) strengthens the interpretation. The caveat about antibody epitope recognition (C205) is appropriate. The consistency with previous work (C206) and the acknowledgment of unknown enzymes (C208) are appropriate. This resolves a question about whether detyrosination occurs in C. elegans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C209",
+      "C210"
+    ],
+    "result": "Normal neuronal development requires optimal levels of tubulin PTMs. Either complete absence or excessive accumulation of tubulin PTMs causes developmental defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C210 represent a high-level synthesis of the entire study. This conclusion is well-supported by the bidirectional effects observed for S172 phosphorylation (loss causes ectopic growth, excess causes severe shortening) and similar patterns for other PTMs. This is a major conceptual contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "S172E produces dominant-negative effects rather than simple loss-of-function. The antimorphic phenotype of S172E (severe defects) is stronger than S172P or mec-7 deletion (moderate defects), suggesting S172E-containing heterodimers poison MT assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C211-C214 present a mechanistic interpretation of the S172E phenotype. While the phenotypic comparison (C212) is well-documented, the proposed mechanism (C213-C214) is speculative. The hypothesis that S172E forms non-functional heterodimers with all \u03b1-tubulins is plausible but not directly tested. Alternative explanations (e.g., S172E affecting MT dynamics more severely than complete absence) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C215",
+      "C216"
+    ],
+    "result": "Complete elimination of K252 acetylation (K252R) causes more severe defects than acetyl-mimicking mutation (K252Q), suggesting K252 acetylation dynamics are important for MT stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C215-C216 describe an unexpected finding. While the phenotypic data are clear (C132), the interpretation is uncertain. The authors acknowledge the result is unexpected and offer speculation about conformational changes (C135), but this is not tested. The stronger K252R phenotype could reflect effects independent of acetylation status, which would complicate interpretation of the K252Q results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Residual anti-phospho-S172 signal in S172A mutants comes from other \u03b2-tubulin isotypes or nonspecific antibody binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 shows reduced but not absent staining in S172A mutants. The interpretation (C48) is speculative and not directly tested. The residual signal could also reflect incomplete antibody specificity or other technical factors. This is a minor observation that does not affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The unusual fiber-like EBP-2::GFP pattern in S172A cell bodies indicates possible MT bundles or altered GTP hydrolysis affecting EBP-2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 describes an interesting observation, but the interpretation is uncertain. Two hypotheses are offered (MT bundles in cell body vs. expanded EBP-2 binding region), but neither is directly tested. This observation does not affect the main conclusions about S172 phosphorylation effects on neurite growth and MT dynamics.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors examined four biophysical mechanisms for increasing synaptic reliability (calcium efflux, vesicle membrane, actin, and trafficking) and derived their associated energetic costs as power-law relationships. These costs are based on established biophysical principles such as calcium pumping costs, membrane metabolism, actin filament maintenance, and ATP-dependent vesicle transport.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'I also particularly appreciate the derivation of the reliability cost terms as a function of the different biophysical mechanisms (calcium efflux, vesicle membrane, actin and trafficking)' and notes these 'will be important for further studies on synaptic energetics.' The reviewers accept the biophysical basis and mathematical formulation of these mechanisms without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C66",
+      "C67",
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "The authors embedded energetic costs for reliability in artificial neural networks with trainable stochastic synapses and trained them on MNIST image classification. The resulting networks revealed a tradeoff between circuit performance and energetic cost of synaptic reliability, with heterogeneous noise allowing considerably improved accuracy at a given reliability cost compared to homogeneous noise.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'This paper provides a strong mix of theoretical analysis, simulations and comparison to experiments' and notes the model 'makes experimental predictions about the relationship between learning rate, variability and presynaptic firing rate.' The editor describes the study as making 'a compelling case that synapses are noisy because reducing noise is expensive.' No concerns are raised about the simulation methodology or the performance-reliability tradeoff finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The optimized networks showed that the system invests energy in improving reliability for 'important' synapses (those with large impact on predictions) while allowing unimportant synapses to have high variability. This heterogeneous allocation of reliability across synapses based on importance achieves lower overall costs than homogeneous variability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes the model 'makes experimental predictions' and describes it as 'a very strong candidate model' based on 'reasonable biological mechanisms.' The editor affirms the paper 'makes a compelling case' for the energy-efficiency explanation. The importance-based allocation of reliability is accepted as a key finding without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The optimized networks generated two testable predictions: (1) synapses with lower variability have higher input firing rates, and (2) synapses with lower variability have lower learning rates. These predictions are consistent with pre-existing experimental data from V1 synapses and represent phenomena also predicted by Bayesian inference frameworks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'the model makes experimental predictions about the relationship between learning rate, variability and presynaptic firing rate. Those predictions are consistent with experimental data, making it a strong candidate model.' Reviewer 3 notes 'Both predictions have some experimental support.' The consistency with existing data is affirmed by multiple reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C85",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors established a formal theoretical link between the performance-reliability cost tradeoff and Bayesian inference through variational inference. The predictions from energy-efficient optimization match those from Bayesian synapses, with a strong connection between synapse importance and uncertainty. The biophysical power-law reliability costs bound the ELBO used in variational Bayesian inference.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'the authors relate their cost of reliability to the cost used in variational Bayesian inference. Intriguingly, the biophysical cost provides an upper bound on the variational cost. This is intellectually satisfying, as it answers a \"why\" question.' Reviewer 3 notes 'The tight link between the Bayesian inference perspective and the energy efficiency perspective is elegant and well supported, both with numerical simulations as well as with analytical arguments.' The theoretical connection is affirmed by both reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The connection between energy efficiency and Bayesian inference suggests two incompatible interpretations: either evolution implemented Bayesian inference by optimizing energy efficiency, or energy-efficient synapses display signatures of Bayesian inference without actually performing Bayesian computation. The authors propose that distinguishing these requires determining whether downstream brain areas exploit uncertainty information from synaptic variability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges this interpretive ambiguity, stating 'working out whether the brain is using Bayesian inference to tune learning rules, or it just looks like it's Bayesian inference but the root cause is cost minimization, will be an interesting avenue for future research.' The reviewers accept both interpretations as valid possibilities arising from the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The authors explain the relationship between input firing rate and variability through synapse importance: higher input rates lead to more important synapses (higher Hessian), which receive larger gradients. In adaptive learning rate schemes, important synapses have higher root-mean-squared gradients and hence lower learning rates, connecting to the observed prediction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 describes the paper as providing 'additional mathematical insight' in the appendices and notes the predictions are 'consistent with experimental data.' The mechanistic explanation linking input rate, importance, gradients, and learning rates is accepted without critique as part of the theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors argue that the observed patterns are characteristic of energy-efficient networks and should not depend on the specific learning rule used. The fundamental principle is that variability in important synapses substantially impairs performance while variability in unimportant synapses impairs performance less, regardless of whether backpropagation or other learning rules are used.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes the model is based on 'reasonable biological mechanisms' and makes it 'a very strong candidate model.' The editor describes the study as providing 'deep insight' into synaptic noise. The generality of the energy-efficiency principle beyond specific learning algorithms is implicitly accepted through the reviewers' focus on the biological implications rather than methodological concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C47",
+      "C60",
+      "C61"
+    ],
+    "result": "The manuscript establishes foundational knowledge about synaptic transmission, including that biological synapses are unreliable, that this unreliability likely degrades performance, that biophysical mechanisms can increase reliability but cost energy, and that previous models have focused on information transmission between pairs of neurons rather than circuit-level computation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are accepted without question by all reviewers. Reviewer 2 states 'it has always seemed a bit strange that there are synaptic failures' and describes the paper's explanation as 'perfectly reasonable.' The editor notes synaptic noise is 'ubiquitous, but poorly understood.' The foundational premises are treated as established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors explain Bayesian synapse behavior: if variability/uncertainty is low, a Bayesian synapse is certain about the optimal value and should have lower learning rates. Bayesian synapses should become more certain and less variable with higher presynaptic firing rates because each spike provides information about the correct synaptic weight. This connects synaptic uncertainty to variability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes the predictions are 'nearly indistinguishable from the predictions made by a normative model Synaptic plasticity as Bayesian inference' and describes this as 'interesting.' Reviewer 3 affirms 'the tight link between the Bayesian inference perspective and the energy efficiency perspective is elegant and well supported.' The Bayesian interpretation is accepted as valid.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "C16 is a more potent WDR5 WIN site inhibitor than C6, with ~20-fold greater potency in inhibiting MLLr leukemia cell lines. Both compounds bind the WIN site of WDR5, with C16 having a Kd < 20 pM compared to C6's Kd = 100 pM. The difference in affinity is attributed to C16's bicyclic dihydroisoquinolinone core that locks it into a favorable binding conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are well-supported by crystal structure data (Figure 1B, C), binding affinity measurements from cited work (Tian et al., 2020; Aho et al., 2019a), and cell viability assays showing ~20-fold difference in GI50 values (Figure 1\u2014figure supplement 1B and C). The structural basis for the affinity difference is demonstrated through crystallographic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "C6 and C16 induce similar transcriptional responses in MLLr cells, with thousands of gene expression changes that are predominantly less than twofold in magnitude. Both compounds suppress WDR5-bound genes and induce p53 target genes, with >80% overlap in affected transcripts. The transcriptional effects on RPG expression are almost entirely confined to WDR5-bound RPGs, with the notable exception of RPL22L1, which is strongly suppressed despite not being a direct WDR5 target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 are supported by comprehensive RNA-seq data (Figure 1E-J, Figure 1\u2014figure supplement 1F) showing similar transcriptional profiles between C6 and C16, GSEA analysis demonstrating enrichment of WDR5-bound genes among suppressed genes (Figure 1H), and enrichment analysis showing induction of p53 pathways (Figure 1I, Figure 1\u2014figure supplement 2A-B). The RPL22L1 exception is consistently observed across multiple cell lines (Figure 1\u2014figure supplement 2C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "WINi induce a progressive, time-dependent decrease in protein synthesis capacity, with no significant effect at 24 hr but reaching ~40% reduction by 96 hr. Ribo-seq analysis reveals that WINi cause widespread translational inhibition affecting ~4,500-5,900 transcripts, with changes generally less than twofold in magnitude. The translational effects are largely independent of basal translation efficiencies, though mRNAs with 5'TOP motifs show less decrease in translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C61 are supported by OPP labeling data showing time-dependent decline in protein synthesis (Figure 2\u2014figure supplement 1A-B), comprehensive Ribo-seq data demonstrating widespread but modest decreases in translation efficiency (Figure 2A-E), and analysis showing that highly translated transcripts are more affected (Figure 2E). The 5'TOP motif observation is supported by data in Figure 2\u2014figure supplement 2E with appropriate citation to Philippe et al., 2020.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "WINi cause translational suppression that extends beyond transcriptional effects, affecting more genes in categories linked to MYC, E2F, mTORC1 signaling, and the G2M checkpoint. The translational effects include genes connected to the proteasome, spliceosome, mRNA surveillance, and translation machinery, including an expanded cohort of RPG transcripts beyond those directly bound by WDR5. This represents a widespread reduction in the ability of MLLr cells to efficiently translate mRNAs connected to protein synthesis and homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C72 are supported by comparative analysis of RNA-seq and Ribo-seq data showing that translational effects encompass more genes than transcriptional effects (Figure 2F-H, Figure 2\u2014figure supplement 2F-G), enrichment analysis demonstrating affected biological categories (Figure 2G, Figure 2\u2014source data 2), and data showing that translational effects on RPGs extend beyond WDR5-bound genes (Figure 2H). The PRMT5 substrate analysis (Figure 2\u2014figure supplement 2F) and codon usage analysis (Figure 2\u2014figure supplement 2I) provide additional mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "WINi deplete the entire inventory of cytosolic ribosomes, not just those encoded by WDR5-bound genes. LFQMS analysis tracking ~3,200 proteins shows progressive decline in ribosomal protein levels, with most changes less than twofold in magnitude. By 72 hr, almost all ribosomal subunits are in deficit regardless of WDR5 binding status. RPL22L1 is the most strongly suppressed protein at 72 hr, with levels reduced by an order of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C88 are supported by comprehensive LFQMS data (Figure 3A-G) showing time-dependent depletion of ribosomal proteins, enrichment analysis demonstrating significant enrichment of ribosome-linked proteins among those reduced in abundance (Figure 3\u2014figure supplement 2B), and specific data showing that both WDR5-bound and non-bound RPGs are affected at the protein level (Figure 3G). The progressive nature of the response is well-documented across the two timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "WINi trigger nucleolar stress responses, as evidenced by progressive decline in rRNA expression (measured by metabolic labeling with AzCyd) and decreased nucleolar enrichment of NPM1 at 72 hr. However, \u03b3-H2AX is only detected in morphologically apoptotic cells, not in non-apoptotic cells, indicating that widespread DNA damage induction is not a specific consequence of WINi action, unlike some rRNA inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by metabolic labeling data showing progressive decline in rRNA (Figure 3\u2014figure supplement 3), immunofluorescence data demonstrating NPM1 redistribution (Figure 3\u2014figure supplement 4B), and \u03b3-H2AX staining showing DNA damage only in apoptotic cells (Figure 3\u2014figure supplement 4A). The conclusion about nucleolar stress is appropriately supported by the NPM1 data and citation to Aho et al., 2019a, while the distinction from rRNA inhibitors is supported by the \u03b3-H2AX data and citation to Rogakou et al., 2000.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "A two-tier CRISPR screen identified genes that modulate the response to WINi in MLLr cells. TP53 is the most highly enriched gene, followed by RPL22. The tier 2 screen revealed that C6 and C16 have very similar response profiles, with 57 common genes enriched in four overlapping categories: p53 signaling, apoptosis, DNA damage response, and histone modifications. BRD3 emerged as a conspicuous sensitizing gene in the histone modification category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C107 are supported by comprehensive CRISPR screen data (Figure 4B-E, Figure 4\u2014figure supplement 1B-I) showing enrichment of TP53 and RPL22, high concordance between C6 and C16 responses (Figure 4C-D), GO enrichment analysis identifying the four major categories (Figure 4E, Figure 4\u2014figure supplement 1I), and specific data on BRD3 and SPOP (Figure 4E). The miRNA network analysis (Figure 4\u2014figure supplement 1E) and p53 effector data provide additional support for the importance of p53 signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "C16 shows synergy with multiple agents in MLLr cells, including mivebresib, pemrametostat, pinometostat, etoposide, harmine, and venetoclax in MV4;11 cells. Four agents (mivebresib, pemrametostat, pinometostat, and venetoclax) show particularly strong synergy (peak \u03b4-scores > 10) at doses consistent with on-target activity, and all four are synergistic with C16 in both MV4;11 and MOLM13 cells. Rapamycin shows potent antagonism with C16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 are supported by comprehensive synergy assay data using the ZIP model (Figure 5A-D, Figure 5\u2014figure supplement 1-2), showing peak \u03b4-scores for various combinations and demonstrating reproducibility across two MLLr cell lines. The data are appropriately analyzed with statistical thresholds and dose-response matrices are provided. The antagonism with rapamycin is clearly demonstrated with a peak \u03b4-score of -16.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The synergy between C16 and mivebresib is apparent at the transcript level, with >6,200 gene expression changes in the combination treatment compared to <1,800 for C16 and 2,700 for mivebresib alone. The two agents induce very distinct transcriptional profiles with <200 shared gene expression changes in each direction. The combination dysregulates similar categories of genes as each agent alone but with substantially more genes in each category, consistent with synergy resulting from alterations in distinct but complementary sets of genes that augment p53 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by RNA-seq data from combination treatment (Figure 5E-H, Figure 5\u2014figure supplement 3A-B) showing additive effects on RPG expression, distinct transcriptional profiles for each agent, and enhanced effects in the combination. The enrichment analysis (Figure 5\u2014source data 3) demonstrates that similar categories are affected but with more genes in the combination. However, the mechanistic interpretation (C118) is appropriately qualified as requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "WINi cause only a slight increase in p53 protein levels but promote accumulation of MDM4 transcripts in which exon 6 is skipped, leading to reduced MDM4 protein expression. WINi also lead to depletion of transcripts encoding the RPL22L1a isoform that is incorporated into ribosomes, while the splicing-relevant RPL22L1b isoform is insensitive to WINi. Alternative splicing analysis reveals ~1,000 differentially spliced mRNAs for each WINi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C129 are supported by western blot data showing modest p53 induction (Figure 6\u2014figure supplement 1A), alternative splicing analysis using rMATS (Figure 6A, Figure 6\u2014figure supplement 1B), Sashimi plots demonstrating MDM4 exon 6 skipping (Figure 6B) and RPL22L1 isoform changes (Figure 6\u2014figure supplement 1E), and validation by semi-quantitative and quantitative RT-PCR (Figure 6\u2014figure supplement 1F-G). The citations to prior work (Ghandi et al., 2019; Rallapalli et al., 1999; Francoz et al., 2006; Bieging-Rolett et al., 2020; Muys et al., 2021; Larionova et al., 2022) appropriately support the mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "RPL22 knockout decreases the sensitivity of MV4;11 and MOLM13 cells to C16 by 3- to 5-fold and attenuates p53 induction, while having no effect on p53-null K562 cells. RPL22 disruption does not impact the effect of WINi on WDR5-bound RPGs but blocks the effects on RPL22L1 and ZMAT3 expression and impairs induction of p53 signaling genes. RPL22 is needed for a majority of the characteristic responses of MLLr cells to WINi, including p53 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C137 are supported by cell viability assays showing reduced sensitivity in RPL22 KO cells (Figure 6C, Figure 6\u2014figure supplement 2B), western blot data showing attenuated p53 induction (Figure 6D), and comprehensive RNA-seq analysis (Figure 6E, Figure 6\u2014figure supplement 2C-H) demonstrating that RPL22 loss blocks specific aspects of the WINi response while not affecting WDR5-bound RPG suppression. The differential effect on K562 cells provides important specificity control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "RPL22 disruption promotes exon 6 retention in MDM4 and induces RPL22L1a expression in the absence of WINi. In the presence of C16, RPL22 disruption mitigates MDM4 exon 6 skipping and largely blocks suppression of the RPL22L1a-encoding mRNA isoform. These changes manifest at the protein level, with C16 suppressing both MDM4 and RPL22L1 protein expression, and RPL22 loss blocking the majority of C16's ability to reduce MDM4 and RPL22L1 proteins and to induce p21. Splicing-driven suppression of MDM4 is an important mechanism through which WINi activate p53 in MLLr cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C146 are supported by alternative splicing analysis showing the effects of RPL22 KO on MDM4 and RPL22L1 splicing (Figure 6F, Figure 6\u2014figure supplement 3B-C), western blot data demonstrating protein-level changes (Figure 6G), and the integration of these findings with prior work (Ghandi et al., 2019). The conclusion about splicing-driven MDM4 suppression as a mechanism of p53 activation is well-supported by the convergence of splicing, protein expression, and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The primary targets of WINi are proposed to be the ~40 RPGs bound by WDR5 in all cell types, which are rapidly transcriptionally suppressed and whose function depends on WDR5 recruiting MYC. Ribosomal protein depletion is driven partly by decreased translation of ribosomal mRNAs, with effects capping at ~30% decrease by 72 hr. This corresponds to a loss of up to 3 million ribosomes per cell and results in reduced translational efficiencies of about half of all actively translated mRNAs. WINi also trigger progressive decline in rRNA expression and promote nucleolar stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C157 are supported by integration of data from multiple experiments (RNA-seq, Ribo-seq, LFQMS, metabolic labeling, immunofluorescence) and appropriate citations to prior work (Aho et al., 2019a; Bryan et al., 2020; Florian et al., 2022; Thomas et al., 2019; Ahmadi et al., 2021; Siladi et al., 2022; Shore and Albert, 2022; D\u00f6rner et al., 2023). The proposed mechanism is appropriately qualified as a model and the quantitative estimates (30% decrease, 3 million ribosomes) are supported by cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Activation of p53 is a major point of convergence between WDR5 and rRNA inhibitors. While rRNA inhibitors are thought to activate p53 by generating excess ribosomal proteins that inactivate MDM2, WINi activate p53 through a second route involving alternative splicing of MDM4 mRNA to promote exon 6 skipping, driving down MDM4 protein levels. Because MDM4 inhibits p53 via proteolysis-independent mechanisms, this explains how WINi can induce a robust p53 target gene signature without frank induction of p53 protein, pointing to a dominant role of the MDM4-p53 axis in mediating the response to WIN site blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C165 are supported by the integration of data showing modest p53 protein induction (Figure 6\u2014figure supplement 1A), robust p53 target gene induction (Figure 1\u2014figure supplement 2A-B), MDM4 splicing changes (Figure 6B), and the functional importance of this pathway demonstrated by RPL22 KO experiments (Figure 6C-G). The mechanistic interpretation is appropriately supported by citations to prior work on MDM4 function (Francoz et al., 2006) and rRNA inhibitor mechanisms (Pfister, 2019). The conclusion about the dominant role of the MDM4-p53 axis is well-supported by the convergence of multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The mechanism through which WINi inactivate MDM4 may involve the balance of RPL22L1 and ZMAT3, which are oppositely regulated in response to WIN site inhibition. ZMAT3 is induced by p53 activation and promotes MDM4 exon 6 skipping, while RPL22L1 promotes exon 6 inclusion. However, the isoform of RPL22L1 suppressed by WINi (RPL22L1a) is linked to ribosome function rather than splicing in glioblastoma cells, while the splicing-relevant RPL22L1b isoform is resistant to WINi, creating a paradox regarding the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C173 represent speculative mechanistic proposals that are appropriately qualified as possibilities and alternatives. While the data on ZMAT3 induction and RPL22L1 suppression are supported (with appropriate citations to Bieging-Rolett et al., 2020 and Larionova et al., 2022), the authors acknowledge the paradox regarding RPL22L1 isoforms and present alternative explanations without definitive resolution. The uncertainty is appropriately acknowledged in the text, and the claims are presented as hypotheses requiring further investigation rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Loss of RPL22 causes induction of RPL22L1 and promotes inclusion of exon 6 in MDM4, as inferred from CCLE studies and demonstrated experimentally. RPL22 itself does not appear to play a role in the response to WINi in unperturbed MLLr cells; rather, its recovery as a resistance gene in the CRISPR screen is tied to its ability to suppress RPL22L1 expression and the ectopic effect of its deletion on preventing WINi-induced RPL22L1a decline. RPL22 status is likely highly relevant for patient selection, as RPL22 is frequently inactivated or deleted in 7% of CCLE lines and primary cancers, with a strong tendency for wild-type p53 retention. Cancers with RPL22 mutations/deletions or RPL22L1 overexpression would not be expected to robustly respond to WINi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C181 are supported by experimental data from RPL22 KO experiments (Figure 6\u2014figure supplement 3B-C, Figure 6G) demonstrating the effects on RPL22L1 and MDM4, appropriate citations to CCLE studies (Ghandi et al., 2019; Cao et al., 2017; Kandoth et al., 2013; Goudarzi and Lindstr\u00f6m, 2016), and citation to O'Leary et al., 2013 for RPL22's ability to suppress RPL22L1. The conclusion about patient selection criteria is a reasonable inference from the data, though it would require clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Although p53 is important for WINi action in MLLr cells, there are likely other stress response mechanisms that mediate cellular inhibition. Four resistance genes identified in the CRISPR screen (UBA6, BIRC6, KCMF1, and UBR4) encode members of the BIRC6 ubiquitin-ligase complex, which prevents aberrant activation of the integrated stress response (ISR). While there is no indication that the ISR is activated by WINi (ATF4 is suppressed), the finding that loss of all four BIRC6 complex members blunts the response to WINi implies that ISR activation can be a mechanism through which cells evade the full impact of these agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C187 are supported by the CRISPR screen data identifying the four BIRC6 complex members as resistance genes, appropriate citations to prior work on p53-independent nucleolar stress responses (Boglev et al., 2013; Pfister et al., 2015; Jayaraman et al., 2017) and the BIRC6 complex (Cervia et al., 2023), and RNA-seq/Ribo-seq data showing ATF4 suppression. The inference about ISR activation as a potential evasion mechanism is appropriately qualified and supported by the genetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Future single-agent WINi treatment paradigms are likely to encounter resistance through activation of protective responses or mutations in resistance genes. The combination with mivebresib is rationalized by identification of BRD3 as a sensitizing gene and likely results from C16 and mivebresib inhibiting distinct sets of genes connected to translation, enhancing p53 induction. This combination would be expected to be effective in other wild-type p53 cancer settings where WINi are active, such as neuroblastoma and rhabdoid tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C190 are supported by the CRISPR screen data identifying resistance genes (Figure 4), synergy data demonstrating strong synergy between C16 and mivebresib (Figure 5A-D), RNA-seq data showing distinct but complementary effects on translation-related genes (Figure 5E-H), and appropriate citations to prior work showing WINi activity in neuroblastoma and rhabdoid tumors (Bryan et al., 2020; Florian et al., 2022). However, C188 and C190 are appropriately qualified as expectations/predictions rather than established facts, as they would require clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "WDR5 is a highly conserved, multifunctional nuclear protein that rose to prominence as a component of H3K4 methyltransferase complexes but also acts outside these complexes to facilitate mitotic spindle integrity, gene bookmarking, and transcription of ribosomal protein genes via MYC recruitment. WDR5 is frequently overexpressed in cancer, correlating with aggressive disease and poor clinical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are background claims supported by appropriate citations to prior work (Guarnaccia and Tansey, 2018; Ali et al., 2017; Oh et al., 2020; Bryan et al., 2020; Thomas et al., 2019). These are well-established facts in the field that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "WDR5 is an auspicious target for inhibition in multiple malignancies including MLLr leukemias, MYC-driven cancers, and various other cancer types. Most drug discovery efforts have focused on small-molecule inhibition of key binding sites, particularly the WIN site, with multiple WINi described including orally bioavailable compounds with in vivo antitumor activity. However, controversy remains regarding the mechanism of action of WINi, even in MLLr leukemias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C21 are background claims supported by extensive citations to prior work documenting WDR5 as a therapeutic target in various cancers, the development of WIN site inhibitors, and the controversy regarding their mechanism of action (Weissmiller et al., 2024). These provide appropriate context for the current study. C20 is appropriately qualified as a likelihood rather than a certainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "MLLr leukemias are defined by translocation of MLL1, and early models proposed that these leukemias depend on wild-type MLL1 to support MLL1-fusion oncoproteins through WIN site interaction with WDR5. Early peptidomimetic WINi were reported to suppress H3K4 methylation at MLL1-fusion target genes. However, wild-type MLL1 was subsequently shown to be dispensable for transformation, and picomolar small-molecule WINi act without inducing significant changes in HOXA gene expression or H3K4 methylation levels. Instead, WINi displace WDR5 from chromatin and suppress transcription of ~50 genes connected to protein synthesis, provoke nucleolar stress, and induce p53-dependent cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 are background claims supported by appropriate citations to prior work (Guarnaccia and Tansey, 2018; Thiel et al., 2010; Alicea-Vel\u00e1zquez et al., 2016; Cao et al., 2014; Chen et al., 2017; Aho et al., 2019a). These provide important historical context for the evolution of understanding of WINi mechanism of action and set up the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Inhibition of rRNA production or processing is a feature of both existing chemotherapies and newer targeted RNA polymerase I inhibitors. These agents are generally thought to disrupt ribosome stoichiometry, leading to excess ribosomal proteins that inactivate MDM2 to induce p53-dependent cell death. A significant point of divergence from rRNA poisons is that WINi are proposed to induce p53 not by promoting excess ribosomal protein accumulation, but by causing a selective imbalance in the ribosome subunit inventory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are background claims supported by appropriate citations (Bruno et al., 2017; Drygin et al., 2011; Peltonen et al., 2014; Laham-Karam et al., 2020) that provide context for understanding WINi as a novel type of ribosome-directed therapy. C33 is appropriately qualified as a proposed model rather than an established fact, and the current study's data (showing depletion of the entire ribosome inventory rather than selective imbalance) actually refines this earlier model.",
+    "result_type": "MINOR"
+  }
+]

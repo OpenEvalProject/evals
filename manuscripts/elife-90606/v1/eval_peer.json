@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C17",
+      "C18",
+      "C47"
+    ],
+    "result": "The authors present qFit, an automated computational strategy for incorporating protein conformational heterogeneity into structural models, with algorithmic improvements including BIC-based scoring, B-factor sampling, and cryo-EM compatibility. These improvements are claimed to be substantiated by superior Rfree and geometry metrics across a wide range of proteins, and the method can identify alternative conformations in both X-ray and cryo-EM datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge qFit as 'state-of-the-art' and note 'convincing examples' but express concern that 'the paper does not provide a comparison to previous iterations of the software or quantitation of the effects of these specific improvements.' One reviewer specifically questions 'whether scoring is improved by the BIC, how the application of BIC has changed since the previous paper, whether sampling of B factors helps, and whether the code faster,' indicating insufficient evidence for the claimed 'substantial improvements.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "qFit models show improved Rfree values for 76% of structures (109/144) with an average absolute decrease of 0.6%, while maintaining similar R-gap values (mean 3.0% for both deposited and qFit models), suggesting improved fit to data without overfitting.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings, with one noting 'qFit improves the quality of refined structures at resolutions better than 2.0 \u00c5' and another stating the 'validation [is] thorough.' However, one reviewer notes that 'keeping Rfree values or their marginal decreasing can be considered as a sign that the model is not overfitted data but hardly as a strong argument in favor of the model,' suggesting the improvement magnitude is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "qFit dramatically increases the proportion of multiconformer residues from 2.9% in deposited models to 40.7% in qFit models, with the vast majority (92.5%) having only two alternative conformations, indicating qFit identifies widespread conformational heterogeneity without introducing excessive complexity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding as demonstrating qFit's ability to detect conformational heterogeneity. One reviewer notes 'the algorithm is well designed and does not introduce spurious or unnecessary conformational heterogeneity,' and another states the authors 'convincingly demonstrate that qFit provides a reliable means to detect and model conformational heterogeneity.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "qFit models show improved geometry metrics compared to deposited models, including better MolProbity scores (1.27 vs 1.09 median, p=0.006), bond lengths (0.010 \u00c5 vs 0.007 \u00c5 RMSD, p=0.021), bond angles (1.30\u00b0 vs 0.91\u00b0 RMSD, p=3.79e-16), and clashscores (2.50 vs 1.80 median, p=0.0028).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these geometry improvements, with one noting 'qFit improves the quality of refined structures...in terms of...geometry' and another stating 'improvement of the model geometry is a good choice' as a validation metric. However, one reviewer cautions that 'a total absence of geometric outliers is not necessarily required for the structures solved at a high resolution where diffraction data should have more freedom to place the atoms where the experiments \"see\" them.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C71",
+      "C72"
+    ],
+    "result": "Comparison of qFit and deposited models shows 93.7% of residues are 'Consistent' between models, with qFit identifying additional rotamers in 2.38% of residues. In specific examples like the Pyrococcus horikoshii fibrillarin structure, qFit identified new rotamers and potential coupled motions between alternative conformers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as evidence of qFit's performance. One reviewer notes the 'careful and extensive analysis of qFit's performance over a variety of metrics,' and the specific examples are treated as convincing demonstrations of the method's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48"
+    ],
+    "result": "Validation using the ultra-high-resolution SARS-CoV-2 Nsp3 macrodomain structure (7KR0) with 47% manually modeled alternative conformations shows qFit is consistently strong at capturing single-conformer residues across resolutions but shows a drop-off in detecting alternative conformations beyond ~1.8-2.0 \u00c5, demonstrating qFit can reliably detect manually modeled conformers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this validation approach and findings. One reviewer notes 'the authors observe a gradual loss of ability to correctly infer alternate conformations as resolution degrades past 2 \u00c5' and another states the authors 'convincingly demonstrate' qFit's performance. The resolution dependence is treated as an important limitation that is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C18",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "qFit has been updated for cryo-EM compatibility with modifications including electron scattering factors, removal of bulk solvent values, and adjusted occupancy thresholds. Application to eight high-resolution cryo-EM structures shows qFit increases multiconformer residues from 8.21% to 39.6%, with 77% correct modeling in the apoferritin structure.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express mixed views on the cryo-EM results. One reviewer found the cryo-EM section 'particularly enlightening' and notes it 'demonstrates the potential for discovery of conformational heterogeneity from such data,' but also acknowledges 'the analysis of its performance is more limited due to a limited number of high-resolution test cases.' Another reviewer emphasizes that cryo-EM practices 'are far from uniform, hampering the development and assessment of tools like qFit,' and the authors themselves note 'the lack of consistent map handling, validation, and metrics...is a major impediment.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "qFit requires both high-resolution maps (better than ~2 \u00c5) and well-refined input structures (Rfree below 20%) to perform optimally. Analysis shows 24% of qFit models have worse Rfree than deposited models, with the majority of these having deposited Rfree over 20%, suggesting qFit is best employed at late stages of modeling.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these limitations and recommendations. One reviewer notes the 'careful discussion of the limitations of qFit' and that the manuscript 'serves as a very useful guide for users in evaluating if and when qFit should be applied.' The resolution and input quality requirements are treated as important practical constraints that are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C55"
+    ],
+    "result": "qFit multiconformer models can be manually modified in major model building software (e.g., Coot) and further refined using standard pipelines (e.g., Phenix, Refmac, Buster) as long as the software uses the PDB standard altloc column.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly requests clarification: 'It would be helpful to add some guidance on how/whether qFit models can be further refined afterwards in Coot, Phenix, ..., or whether these models are strictly intended as the terminal step in refinement.' This indicates the claim about compatibility and refinement workflow is not sufficiently addressed in the manuscript despite being stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The test dataset consisted of 144 high-resolution (1.2-1.5 \u00c5) X-ray crystallography structures from the PDB, comprising single-chain proteins with no ligands or mutations, maximum 30% sequence identity, representing 72 CATH folds.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer questions the dataset composition: 'The exclusion of structures containing ligands and multichain protein models in the validation of qFit was puzzling since both are very common in the PDB. This may convey the impression that qFit cannot handle such use cases.' The reviewer requests explanation of 'why these would be excluded from analysis' and 'how a user of the software would handle scenarios with ligands and multiple chains.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C69",
+      "C70"
+    ],
+    "result": "Challenges in cryo-EM include disparities in map sharpening and masking practices, and discrepancies in resolution reporting (only 8 of 22 structures with depositor-reported resolution better than 2 \u00c5 have EMDB-calculated resolution better than 2 \u00c5). These inconsistencies represent a major impediment to qFit development for cryo-EM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these challenges as significant issues. One reviewer notes the manuscript 'clearly explains the hurdles towards this becoming common practice, including lack of uniformity in reporting resolution, and differences in map and solvent treatment.' Another states 'practices in cryo-EM analysis are far from uniform, hampering the development and assessment of tools like qFit.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The qFit algorithm samples backbone conformations, side-chain dihedral angles, and B-factors for each residue, with specific procedures for aromatic residues and anisotropic B-factors, using MIQP and BIC to select parsimonious multiconformer models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the algorithmic description. One reviewer notes 'the work provides a clear description of the algorithm used by qFit' and another states 'the algorithm is well designed.' However, one reviewer notes 'there is no information about how sharply [BIC] identifies the best model, how much it changes between the initial and final models; in overall there is not any feeling about its values,' suggesting more detail on BIC performance would strengthen the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Computational improvements include a new scheme for dividing large cryo-EM maps for parallelization, switching from IBM CPLEX to open-source CVXPY solver, outputting restraint files for group occupancy refinement, and iterative refinement with removal of low-occupancy conformations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge 'computational' improvements were made, one explicitly notes 'the paper does not provide...quantitation of the effects of these specific improvements, such as...whether the code faster.' The lack of performance benchmarking for these computational changes leaves their impact uncertain.",
+    "result_type": "MINOR"
+  }
+]

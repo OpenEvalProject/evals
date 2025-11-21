@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C48",
+      "C49",
+      "C50",
+      "C132"
+    ],
+    "result": "The Biome mobile app, launched in Japan in 2019 with gamification features and AI-assisted species identification, has rapidly accumulated over 6 million species observations by July 2023, accumulating data more than four times faster than GBIF in Japan during the same period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C34, C35, C48, C49, C50, and C132 provide consistent quantitative evidence of Biome's launch date, data accumulation rate, and comparison to GBIF. The app's features (C28-C33) are clearly described with supporting figures. The data accumulation metrics are internally consistent and supported by Figure 2B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C77",
+      "C78"
+    ],
+    "result": "Species identification accuracy in Biome data varies by taxonomic group, exceeding 95% for birds, reptiles, mammals, and amphibians, but falling below 90% for seed plants, molluscs, and fishes. Common species show higher identification accuracy (95%) than rare species (87%), particularly in taxonomically diverse groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C59-C66 present consistent data quality metrics from Table 1, with clear taxonomic patterns. The comparison to other apps (C77) and citizen science efforts (C78) provides external validation. The methodology for assessing accuracy is described in detail (Figure 4), though sample sizes vary by taxon (145 records for insects/plants, 70 for others).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C82",
+      "C89"
+    ],
+    "result": "Incorporating Biome data into traditional survey data significantly improved species distribution model (SDM) accuracy for 132 terrestrial species across Japan. Models using combined data achieved high accuracy (Boyce index \u22650.9) with ~294 records, while traditional data alone required ~2129 records, with the improvement attributed to more rapid accuracy gains as data volume increased (\u03b2=0.02\u00b10.01, t=3.72, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C67-C71 present statistically significant results from generalized linear mixed models with appropriate p-values and effect sizes. The methodology controls for data volume and uses spatial transferability for validation. However, C82 notes optimal performance at 50-70% Biome data from Appendix 1, suggesting the 50% proportion used may not be fully optimized. The test data composition (25% Biome) represents a compromise between datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C72",
+      "C73",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "For endangered species, blending Biome and traditional data dramatically reduced the number of records needed for accurate SDMs (Boyce index \u22650.9) from ~2336 records with traditional data alone to ~338 records with combined data, addressing the data deficit problem common for threatened species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C72, C73, C99, C100 provide consistent quantitative evidence for endangered species specifically. The ~7-fold reduction in required records is substantial and well-documented. Claims C98 and C101 appropriately cite literature supporting the data deficit problem for endangered species. The result is particularly important given conservation applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Biome data exhibits uniform coverage across urban-natural gradients, contrasting with traditional survey data that is substantially biased toward natural areas. This difference in spatial bias, captured by PC1 (6.1% of environmental variation), explains the improved SDM accuracy when combining data sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 present PCA results showing divergent distribution patterns along PC1, with supporting evidence in Figure 2C. Claims C8, C54, C55, C84-C86 consistently describe the urban-natural gradient difference. However, PC1 explains only 6.1% of total variation (C52), which is relatively low. The causal link between spatial coverage and SDM improvement (C84, C85) is inferential rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The majority of Biome records are insects (31.2%) and seed plants (41.8%), which are easily photographed with smartphones. After automatic filtering, 45% of submitted records (2,373,303 records) passed quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C58 provide clear quantitative data supported by Figure 2D. Claim C57 offers a reasonable explanation for taxonomic composition. The 45% filtering rate (C58) indicates substantial data quality issues, though the authors acknowledge this and describe filtering methods in detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Higher species identification accuracy in Biome compared to other platforms is attributed to two factors: community oversight through the 'suggest identification' feature incentivized by points, and AI algorithms that leverage accumulated local occurrence data to improve identification accuracy over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C81 present plausible mechanisms for data quality, but these are largely inferential (C79, C81 marked as INFERENCE). No direct experimental evidence is provided to isolate the contribution of each factor. The comparison to other apps (C77) supports overall quality but doesn't validate the specific mechanisms proposed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C82",
+      "C83",
+      "C90",
+      "C91"
+    ],
+    "result": "The optimal proportion of Biome data in combined datasets is 50-70%, and while best model performance did not differ between data sources (BI: 0.81\u00b10.20 for Biome+Traditional vs 0.83\u00b10.20 for Traditional), the primary benefit of incorporating Biome data is augmenting overall training data volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 provides clear statistical evidence that maximum performance is similar between approaches. Claims C82 and C90 reference Appendix 1 for the optimal proportion finding. However, the main analysis fixed Biome proportion at 50%, which may not represent optimal conditions for all species. Claim C91 appropriately acknowledges that practical benefit is primarily through data augmentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Seed plants exhibited lower SDM accuracy than other taxonomic groups with both data sources, potentially due to data quality issues including difficulty distinguishing wild from cultivated individuals and challenges identifying species without flowers present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 presents clear evidence from Figure 3 and supplementary figures. Claims C95-C97 offer reasonable explanations for lower accuracy, though these are inferential. Claim C92 appropriately notes limited prior research on plants in community science SDMs. The taxonomic variation in model performance is well-documented but mechanistic explanations remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Study limitations include inability to reidentify records lacking key traits, use of spatial rather than temporal transferability for validation (with test data containing 25% Biome data as compromise), and SDM outputs being indirect measures not directly comparable across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 appropriately acknowledge methodological limitations. C102 identifies a real constraint in data quality assessment. C104-C105 explain the validation approach and show robustness even under unfavorable test conditions. C106 is speculative about future possibilities. C107-C108 correctly note limitations of presence-only models. These limitations are honestly reported and don't invalidate main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Biome has collaborated with 9 prefectures and 29 local municipalities across Japan, potentially contributing to geographically dispersed user base and uniform spatial coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 states factual information about collaborations, but C88 is inferential about the effect on geographical coverage. No direct evidence is provided linking collaborations to the observed uniform spatial distribution. The causal relationship between government partnerships and data distribution patterns is plausible but undemonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Improved species distribution estimates from combining data sources enable multiple conservation applications including protected area selection, biodiversity hotspot identification, spatial conservation prioritization, cost-effective survey planning, and nature-related financial disclosures, though on-site surveys remain essential for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C127 describe potential applications of improved SDMs. Many are speculative (C110, C117, C121, C123 marked as SPECULATION) or inferential (C111, C115, C124, C125, C127). Claim C116 provides one concrete example with citation. While the applications are plausible given improved SDM accuracy, most represent future possibilities rather than demonstrated outcomes. Claim C114 appropriately notes continued need for field validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The Biome platform facilitates stakeholder collaboration and can contribute to biodiversity conservation goals by fostering nature-positive awareness and providing data tools for effective action, as experiencing nature leads to pro-nature decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 describes platform capabilities but provides no evidence of actual collaboration outcomes. Claims C129-C131 present broader implications supported by citations, but the connection between Biome specifically and these outcomes is inferential. No data is provided on user behavior changes, conservation decisions influenced, or societal impacts achieved through the platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The study employed rigorous methodological approaches including automatic EXIF data extraction, CNN-based species identification refined by local occurrence data, automatic concealment of endangered species locations, user certification systems, bias-corrected pseudo-absence selection, and appropriate environmental predictors and model parameters for MaxEnt SDMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C152 describe methodological details that are clearly documented and follow established best practices. The MaxEnt parameters (C151) fall within recommended ranges with appropriate citations. The pseudo-absence selection approach (C152) appropriately accounts for sampling bias. User classification systems (C143-C144) are clearly defined. The 132 species selection (C145-C146) meets minimum requirements for reliable Boyce index calculation. Methods are reproducible and well-justified.",
+    "result_type": "MINOR"
+  }
+]

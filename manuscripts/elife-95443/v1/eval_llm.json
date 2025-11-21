@@ -1,0 +1,550 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C32",
+      "C35",
+      "C36"
+    ],
+    "result": "Exopher production from ALMR neurons peaks at adult day 2-3, coinciding with C. elegans reproductive peak. Treatment with FUdR, which blocks reproduction, suppresses this early adult exopher peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C32 are supported by temporal data in Figure 1B showing parallel peaks. Claims C35-C36 demonstrate FUdR suppression (Figure 1C) with appropriate statistical testing (p<0.001). The correlation is well-established, though causality requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41"
+    ],
+    "result": "Genetic elimination of the germline using temperature-sensitive glp-4(bn2ts) mutants significantly reduces ALMR exopher production during the early adult peak period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 correctly describes the glp-4(ts) system (supported by citation). Claim C41 is supported by experimental data in Figure 1E with appropriate temperature controls and statistical significance. The experimental design properly controls for temperature effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Oocytes are required for early adult ALMR exopher production. In fem-3(q20ts) mutants that produce only sperm but no oocytes, exophergenesis is mostly diminished over the first five days of adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by experimental data in Figure 1F using appropriate temperature-sensitive controls. Claims C45-C46 represent reasonable inferences from the data. The conclusion that sperm alone are insufficient is well-supported by the genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Functional sperm are required for early adult ALMR exopher production. Blocking spermatogenesis using fem-1(lf) mutants or SPE-44 degradation via AID system abolishes ALMR exopher production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by experimental data in Figures 1G-H using two independent genetic approaches. Claims C50-C51 represent reasonable inferences. The dual requirement for both sperm and oocytes is well-established, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Disruption of eggshell biosynthesis genes or genes required for 1-2 cell stage embryonic development causes potent suppression of ALMR exophergenesis, while disruption of later-stage embryonic genes has negligible impact. This suggests the exopher-inducing signal is associated with the earliest stages of embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 are supported by RNAi data in Figures 2B-H. However, claim C61 acknowledges that eggshell formation and early cell divisions cannot be genetically separated, making claim C62 ambiguous. The inference in C60 is reasonable but the confounding of eggshell integrity with early embryonic events limits mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Restoring egg production in reproductively senescing hermaphrodites through mating with males extends the period of elevated exopher production. This demonstrates that the age-related decline in exophers is due to lack of eggs rather than chronological aging of neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by experimental data in Figures 3A-B with appropriate controls (sterile vs. fertile males). Claims C67-C68 represent reasonable inferences from the rescue experiment. The experimental design effectively distinguishes between egg presence and chronological age as causal factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Genetic interventions that block egg-laying and induce egg retention (egl-9, egl-3, sem-2 mutants, lin-39 RNAi) dramatically elevate ALMR exopher production. This effect occurs regardless of transgene expression level (multi-copy vs. single-copy) and is consistent across different genetic strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by experimental data in Figures 3D-H using multiple independent genetic approaches with appropriate statistical testing. Claim C74 is supported by comparison of multi-copy and single-copy transgenes (Figures 3G-H). The consistency across approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Pharmacological and genetic manipulation of egg-laying behavior modulates exopher production. Octopamine (promotes egg retention) enhances exophers, serotonin (promotes egg-laying) suppresses exophers, and goa-1 mutants (hyperactive egg-laying) show reduced exophers. Overall, uterine egg occupancy strongly correlates with exopher levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by experimental data in Figure 3I, though the 5-HT experiment uses fasting conditions which adds complexity. Claim C81 is supported by Figure 3J. Claim C82 represents a reasonable synthesis of the cumulative data. The correlation is well-established across multiple experimental paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "ALMR soma positioning within the egg zone strongly correlates with exopher production. Among neurons that produced exophers, 95% (36/37) were positioned within the egg zone, compared to 70% (63/91) of neurons that did not produce exophers (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 establish the anatomical context (supported by citations and EM data in Figure 4B). Claims C86-C88 are supported by positional analysis in Figure 4D with appropriate statistical testing. However, the correlation does not establish causality, and the 70% baseline positioning in the egg zone for non-exopher neurons suggests additional factors are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "Genetic manipulation of ALM neuron positioning using a mec-3 promoter fragment demonstrates that neurons positioned anterior to AVM (away from eggs) show dramatically reduced exopher production (~5%, 4/73) compared to posterior positioning (~71%, 55/78). This supports a model where proximity to the egg-filled uterus drives exopher production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is supported by citation (Toms et al., 2001). Claim C91 shows dramatic positional effects (Figure 4F). However, claim C90 reveals an unexpected high baseline (~40%) in rol-6 animals, which is a confounding factor not adequately addressed. The rol-6 mutation affects cuticle structure and could independently influence exopher production, making it difficult to attribute effects solely to position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "In sem-2(rf) mutants with expanded uteri, multiple touch neurons (ALML, AVM, PVM) that are normally positioned near the expanded uterus increase exopher production, while posterior PLM neurons that cannot be approached by the gonad do not produce exophers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by experimental data in Figure 4G showing differential effects on different touch neurons based on their proximity to the expanded uterus. This provides strong evidence that proximity to the egg-filled region is a key factor, though it remains correlative rather than demonstrating direct mechanical force.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Genetic interventions that promote exopher production are associated with expanded uterus lengths, while interventions that suppress exophers are associated with shorter uterus lengths. However, not all developmental compromises cause uterine extension, as mex-3 and gad-1 RNAi (which don't affect exophers) show normal uterine length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by uterine length measurements in Figures 5B-H with appropriate statistical testing. Claim C100 is supported by Figure 5H showing that not all embryonic disruptions cause uterine extension. The correlation between uterine length and exopher production is well-established, though the measurements are absolute rather than normalized to body length.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Uterine retention of dead eggs and egg remnants (via cbd-1 RNAi in sem-2(rf) background) is sufficient to elevate exopher production (~45%) despite disrupted eggshell formation and embryonic development. This demonstrates that intact eggshells and early embryonic divisions are not required for exopher induction when the uterus is expanded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by experimental data in Figures 6A-B showing high exophers and expanded uterus in cbd-1 RNAi; sem-2(rf) animals. Claims C105-C107 represent reasonable inferences. This is a critical experiment that begins to distinguish between chemical signals from viable embryos versus physical distention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Accumulation of unfertilized oocytes in egg-laying blocked animals (sem-2(rf) or lin-39 RNAi with SPE-44 AID) is sufficient to elevate exophers (~80% in sem-2(rf)) and expand the uterus. This demonstrates that fertilization, eggshells, and embryonic development are not essential for exopher induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by experimental data in Figures 6C-F showing high exophers and expanded uterus with oocyte retention. Claims C114-C115 represent reasonable inferences from this critical experiment. This strongly supports the mechanical distention hypothesis over chemical signaling from embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Blocking egg-laying without uterine filling (lin-39 RNAi + fem-3(gf) to eliminate oocytes, or sem-2(rf) + cbd-1 RNAi + fem-3(gf)) does not induce exophers. This demonstrates that disruption of egg-laying alone is insufficient; uterine filling is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by experimental data in Figures 6G-H showing that removing uterine contents eliminates exopher elevation even when egg-laying is blocked. Claim C118 represents a reasonable inference. This is a critical control experiment that strengthens the uterine filling hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "ALMR exophergenesis is strongly correlated with uterine length across multiple genetic conditions, as demonstrated by correlation analysis (Pearson r = 0.8839, p = 0.0003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by correlation analysis in Figure 6I combining data from multiple experiments. The strong correlation (r = 0.8839) with high statistical significance supports the uterine distention model. However, correlation does not establish causation, and the analysis would benefit from normalization to body length.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Sustained microinjection of M9 buffer into the uterus for 2+ minutes induces ALMR exophers in ~20% of vulvaless animals within 10 minutes. Injection into animals with functional vulvae (where fluid is rapidly expelled) fails to induce exophers, supporting that physical distortion rather than chemical effects drives exopher production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by experimental data in Figures 7C-E. Claim C122 represents a reasonable inference from the vulva control experiment. This is the most direct test of the mechanical force hypothesis, though the ~20% induction rate is modest and the injection contains dye which could have effects beyond mechanical distention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors conclude that mechanical force from uterine distention, rather than chemical signals from fertilized eggs, is the primary driver of early adult exopher production. This conclusion is based on the ability of eggs, dead eggs, oocytes, and fluid injection to induce exophers when the uterus is distended.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C126 represent the central conclusion of the manuscript, supported by cumulative evidence from Figures 1-7. However, while the evidence strongly supports a role for mechanical force, it does not definitively exclude chemical signaling. The experiments show that mechanical distention is sufficient but do not prove it is necessary or that chemical signals play no role. The injection experiment (C14) provides the most direct evidence but has limitations (modest induction rate, potential chemical effects of dye).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims establishing that C. elegans neurons produce exophers (~5 \u03bcm vesicles, 100X larger than exosomes) that carry deleterious proteins and organelles, that proteostasis disruption increases exopher production, that exophers can be neuroprotective, and that similar biology exists in mammalian systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C17-C30) are primarily supported by citations to prior work (Melentijevic et al., 2017; Cooper et al., 2021; Arnold et al., 2023; Wang et al., 2023; Nicol\u00e1s-\u00c1vila et al., 2020; etc.). Claim C25 is additionally supported by the mCherryAg2 strain used throughout this study. These establish the biological context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background claims about the temporal pattern of exopher production (adult-only, peak at days 2-3, later variable onset) and the effects of FUdR (blocks germline proliferation, impairs RNA metabolism, improves proteostasis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by citation (Melentijevic et al., 2017) and confirmed by Figure 1B. Claims C34, C37-C39 about FUdR are supported by established knowledge and citations (Burnaevskiy et al., 2018; Angeli et al., 2013). These provide context for the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C42",
+      "C47",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C63"
+    ],
+    "result": "Background claims about C. elegans reproductive biology including timing of spermatogenesis/oogenesis, sperm-induced ovulation, eggshell formation timeline, meiosis timing, first mitotic division timing, egg-laying stage, and sperm depletion in unmated hermaphrodites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C42, C47, C52-C56, C63) are supported by citations to established literature (Zanetti et al., 2012; Stein and Golden, 2018; Schneider and Bowerman, 2003; Medrano and Collins, 2023) and represent well-established knowledge of C. elegans reproductive biology. They provide essential context for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "Background claims about neurotransmitter regulation of egg-laying behavior (octopamine suppresses, serotonin promotes) and the effects of goa-1 mutations on egg-laying timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by citations (Chase and Koelle, 2007; Horvitz et al., 1982). Claim C80 is supported by citation (Waggoner et al., 2000). These provide context for the pharmacological and genetic manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Eggs can be observed to distort tissue structure in young adult C. elegans, and the uterus can approach and pressure surrounding tissues including touch neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by experimental observations in Figure 5A showing tissue distortion. Claim C96 is a reasonable inference from these observations. This provides visual evidence for the mechanical force hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background claims about the effects of cbd-1 RNAi on eggshell and embryonic development, and the behavior of unfertilized oocytes in the absence of sperm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 is supported by citation (Johnston et al., 2010). Claims C108-C111 are supported by established knowledge and citations (McGovern et al., 2007) with additional support from Figure 6\u2014figure supplement 1. These provide context for interpreting the dead egg and oocyte retention experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Discussion claims about the mechanical landscape of C. elegans reproduction, including expansion/contraction of gonad, spermatheca, and uterus, and evidence for mechanical signaling in the egg-laying circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are based on established knowledge of C. elegans reproductive biology. Claim C131 is supported by citations (Medrano and Collins, 2023; Ravi et al., 2018; Kopchock et al., 2021; Ravi et al., 2021). These provide context for discussing potential mechanotransduction mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Discussion claims about the source of exopher-promoting force, arguing against vulva, vulval muscle, and spermatheca as primary sources based on genetic evidence, and proposing that a filled uterus is the simplest model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 represent reasonable inferences from the experimental data (Figures 3, 6). Claim C137 represents a synthesis of the evidence. The logic is sound, though alternative explanations are not exhaustively tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Discussion of potential mechanotransduction mechanisms, including ion channels (Piezo, TRP, DEG/ENaC), adhesion GPCRs, and YAP/TAZ signaling, with speculation about which might be most appropriate for sustained uterine forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 are supported by established knowledge and citation (Delmas and Coste, 2013). Claims C140-C142 are supported by citations (Mee et al., 2004; Willson et al., 2004; Hutter et al., 2000; Panciera et al., 2017) and represent reasonable speculation about potential mechanisms. These are appropriately presented as hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "Discussion of the rapid timeframe of exopher induction after fluid injection (10 min after 2 min injection), suggesting that proteostressed touch neurons are poised to eliminate contents upon mechanical stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 is supported by experimental data in Figure 7. Claim C144 represents a reasonable inference from the rapid response. This observation has implications for understanding the mechanotransduction mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Discussion of mechanical signaling in reproduction across species, including Drosophila reproductive tract distention affecting maternal behavior (via PPK1 channel) and mammalian uterine stretch influencing maternal behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C147 are supported by citations (Gou et al., 2014; Kristal, 2009). These provide comparative context suggesting that mechanosensing in reproduction may be broadly conserved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Discussion of muscle exophers in C. elegans (Turek et al., 2021) showing similar temporal patterns and egg-dependence, leading to speculation that reproduction triggers a 'license' for EV/exopher production across tissues, potentially conferring selective advantage for maternal reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C149 are supported by citation (Turek et al., 2021). Claims C150-C152 are explicitly speculative. While the parallel with muscle exophers is interesting, the speculation about tissue-wide licensing and selective advantage goes beyond the data and would require additional experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Discussion of proteostasis reorganization in early adult C. elegans, including HSF-1 downregulation, enhanced proteasome activity, and speculation that exopher-mediated elimination represents another branch of this reconfiguration. The HSF-1 downregulation is blocked by cbd-1 RNAi, suggesting eggs signal across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C155 are supported by citations (Labbadia and Morimoto, 2014, 2015; Sala and Morimoto, 2022; Sala et al., 2020; Liu et al., 2011). Claim C157 is supported by citation (Sala et al., 2020). However, claims C156, C158-C159 are speculative and go beyond the data. The connection between HSF-1 regulation and exopher production is not directly tested in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Discussion of temporal 'clean up' phases in development, noting that exophers are not observed in larval stages and speculating about programmed proteome clean-up at developmental transitions, with examples from oocyte maturation and neuronal stem cell quiescence exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 is supported by citation (Melentijevic et al., 2017). Claims C164-C165 are supported by citations (Bohnert and Kenyon, 2017; Morrow et al., 2020). Claims C161-C163 are speculative but represent reasonable hypotheses based on the temporal patterns observed. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Discussion of mechanical stress and exopher-like vesicle production in mammalian systems (cardiomyocytes, kidney epithelial cells) and the general influence of biomechanical force on EV biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 are supported by citations (Nicol\u00e1s-\u00c1vila et al., 2020; Huang et al., 2023). Claims C168-C169 are supported by citation (Thompson and Papoutsakis, 2023) and represent accurate characterization of the field. These provide broader context for the mechanobiology findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Discussion of mechanical stress in neurodegeneration, including links between traumatic brain injury/hypertension/hydrocephalus and Alzheimer's pathology, with examples of mechanical effects on APP/\u03b2-secretase expression and microglial Piezo1 mechanosensing. The authors conclude their study reveals mechanical force can influence neuronal release of vesicles containing neurotoxic species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170, C172-C173 are supported by citations (Ramos-Cejudo et al., 2018; Malone et al., 2022; Gangoda et al., 2018; Hu et al., 2023). Claim C171 is speculative but reasonable. Claim C174 is supported by the cumulative experimental data in the manuscript. The connection to neurodegenerative disease is appropriately qualified as inviting further consideration.",
+    "result_type": "MINOR"
+  }
+]

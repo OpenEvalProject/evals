@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "PKR inhibitor C16 treatment ameliorates kidney injury in Tg26 mice, as demonstrated by reduced serum creatinine, albuminuria, pPKR abundance, urinary NGAL, glomerulosclerosis, microtubular dilatation, and fibrosis extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 collectively demonstrate therapeutic efficacy of C16 treatment through multiple convergent measures of kidney function and histopathology. The data include biochemical markers (creatinine, albumin, NGAL), immunofluorescence (pPKR), and quantitative histomorphometry (glomerulosclerosis, fibrosis), all showing consistent improvement with C16 treatment. Statistical significance is reported (p<0.05) with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Single-nucleus RNA-seq analysis of 56,976 nuclei identified 23 cell clusters including a novel PT-Mito cluster characterized by high mitochondrial gene expression, with PKR gene (Eif2ak2) expressed across glomeruli and tubular segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 describe the technical execution and primary findings of the snRNA-seq experiment. The identification of 23 clusters including PT-Mito is supported by UMAP visualization (Figure 2C) and marker gene analysis (Figure 2D). The novel PT-Mito cluster is validated by multiple lines of evidence including expression patterns and ISH confirmation (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Mitochondrial-related pathways are the most downregulated in Tg26 mice compared to WT, affecting both nuclear and mitochondrial genome-encoded genes, and C16 treatment reverses this downregulation at the transcriptional level without increasing mitochondrial DNA copy numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C60 demonstrate mitochondrial dysfunction through convergent evidence from bulk RNA-seq (GSEA), Western blot (mitochondrial complexes I/II), and snRNA-seq (multiple cell types). The rescue by C16 is shown at the transcriptional level (C52, C60) but not at the mtDNA copy number level (C56), providing mechanistic insight. The data are internally consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Mitochondrial DNA copy numbers were decreased in Tg26 mice but were not restored by C16 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 report a negative result that is important for mechanistic understanding. The data (Figure 3\u2014figure supplement 1E-F) show decreased mtDNA in Tg26 mice but no rescue with C16, distinguishing transcriptional rescue from changes in mitochondrial biogenesis. This finding is clearly stated and supported by quantitative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A novel PT-Mito cluster comprising 3.1-5.8% of kidney cortex cells shows pronounced mitochondrial dysfunction in Tg26 mice (Z-score -4.123 for oxidative phosphorylation), is conserved between mouse and human kidneys, and was likely previously undetected due to standard mitochondrial transcript filtering in snRNA-seq pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 characterize the PT-Mito cluster through multiple approaches: quantification (C61), spatial localization (C62), ISH validation (C63), cross-species confirmation (C64), and pathway analysis (C67-C70). The inference about prior filtering practices (C66) is reasonable given standard snRNA-seq protocols. The Z-score of -4.123 provides quantitative support for pronounced dysfunction in this cluster.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "An injured proximal tubule cluster (PT-Inj) is increased in Tg26 mice, shows gene expression profiles comparable to acute kidney injury and fibrosis models, and pseudotime analysis suggests these cells originate from PT-S1 segments, with C16 treatment reducing injury marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 identify and characterize the PT-Inj cluster through comparative analysis with published datasets (C72-C73), pseudotime trajectory analysis (C77), and treatment response (C75). The overlap with ischemia-reperfusion injury models (C74) is supported by comparative gene expression data (Figure 4\u2014figure supplement 3B). The inference about PT-S1 origin (C77) is supported by pseudotime analysis but represents computational inference rather than direct lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "PKR pathway activation is detected in Tg26 kidneys by IPA upstream analysis of bulk RNA-seq, with highest activation in the PT-Inj cluster by snRNA-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 demonstrate PKR pathway activation through computational pathway analysis at both bulk (C78) and single-cell resolution (C79). The data are shown in Figures 4G and 4H. While IPA is a widely used tool, the results represent computational inference from gene expression patterns rather than direct measurement of PKR activity, which is validated by other methods (C40, C82-C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "STAT3 is the most activated upstream regulator in Tg26 mice, confirmed by Western blot and immunohistochemistry showing increased phosphorylation, with activation across multiple cell types especially PT-Inj, suggesting PKR inhibition may be therapeutic through STAT3 deactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 identify STAT3 as a key mediator through multiple lines of evidence: computational analysis (C80, C85), protein validation (C82-C83), and established literature (C81). The therapeutic inference (C84) is reasonable given the data showing C16 reduces STAT3 activation, though it remains correlative rather than demonstrating direct causation. The convergence of computational and experimental validation strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "STAT3 may be an important mitochondrial regulator in HIVAN pathogenesis based on its known ability to translocate to mitochondria and alter cell metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 propose a mechanistic hypothesis connecting STAT3 to mitochondrial dysfunction. While C86 is supported by citation (Xu et al., 2016), C87 is explicitly speculative. The study shows STAT3 activation and mitochondrial dysfunction co-occur but does not demonstrate that STAT3 directly regulates mitochondrial function in this model. This would require additional experiments such as STAT3 inhibition or mitochondrial localization studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mitochondrial respiration capacity is reduced in both glomerular and proximal tubular tissues from Tg26 mice, and C16 treatment rescues this dysfunction by normalizing maximum respiration and spare respiratory capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 demonstrate functional mitochondrial impairment using Seahorse extracellular flux analysis in both glomerular (C88-C89) and proximal tubular (C90-C91) tissues. The data show statistically significant differences (p<0.05) and rescue with C16 treatment. This functional validation complements the transcriptional data (C50-C60), providing strong evidence for mitochondrial dysfunction and its reversal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "HIV-1 genes are expressed at high levels in podocytes in Tg26 mice, particularly vpr and nef, consistent with podocyte injury, and absolute podocyte loss is confirmed by p57 staining and PodoCount analysis, with recovery following C16 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 characterize HIV-1 gene expression patterns and podocyte loss using snRNA-seq (C93, C95) and quantitative histology (C96-C97). The high expression in podocytes (C93) is directly shown in Figure 7A. The inference about injury (C94) is reasonable given established knowledge and the observed pathology. PodoCount provides quantitative validation of podocyte loss and recovery, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Podocytes in Tg26 mice undergo dedifferentiation characterized by downregulation of podocyte markers, activation of RHOGDI signaling, deactivation of integrin and actin cytoskeleton pathways, and loss of p57 staining, with C16 treatment reversing or preventing this dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 demonstrate podocyte dedifferentiation through convergent evidence: pseudotime analysis (C98-C99), pathway analysis (C100-C101), gene expression (C103-C104), and histology (C105). The consistency with established models of podocyte injury (C102) and multiple validation approaches support the conclusion. The reversal by C16 treatment is shown at both molecular and histological levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Tg26 podocytes show increased expression of epithelial-mesenchymal transition markers (Ccn2), novel disease markers (Rbfox1), and pro-fibrotic/adhesion molecules (Itga4, Spp1, Tgfb2), with nef-positive podocytes showing lower expression of canonical podocyte markers and higher expression of injury markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 identify specific molecular changes in injured podocytes. The Ccn2 finding (C106) is validated by comparison with human FSGS data (C107). The Rbfox1 upregulation (C108) is novel and supported by expression data. The comparison between nef-positive and nef-negative podocytes (C112-C113) provides direct evidence linking HIV-1 gene expression to transcriptomic changes, though the small sample size (24 nef-positive cells) limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "A potential fibrogenic pathway involving PKR-STAT3-PDGF-D-PDGFR-B is identified in injured proximal tubules, with PDGF-D upregulated in PT-Inj in Tg26 mice, downregulated by C16 treatment, and detected by immunohistochemistry near dilated tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 propose a mechanistic pathway supported by gene expression data (C114-C115), cell-cell interaction analysis (C116), immunohistochemistry (C117), and established knowledge (C118). The pathway is plausible given cited literature (C145-C146), but the evidence is primarily correlative. The inference (C119) is reasonable but would benefit from functional validation such as PDGF-D or PDGFR-B inhibition studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study demonstrates that mitochondrial dysfunction occurs in various cell types in Tg26 kidney, with tubular pathology likely mediated by proximal tubular cell dysfunction and glomerular dysfunction mainly in endothelial cells, with PKR activation as one contributing process, consistent with recent reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 synthesize the findings and place them in context of prior work. The demonstration of cell-type-specific mitochondrial dysfunction (C121-C123) is supported by the snRNA-seq and Seahorse data. The inference about PKR as one of several processes (C124) is appropriately cautious. The comparison with Chen et al., 2023 (C125-C126) validates the findings, though the authors acknowledge this is a different model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The PT-Mito cluster was likely not previously recognized due to standard filtering practices in snRNA-seq that remove high mitochondrial transcript cells, and by retaining these transcripts (excluding only >20%), the authors identified dysregulation providing pathogenic insights, with validation of nuclear gene expression confirming these are nuclei rather than captured mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C137 explain the methodological innovation and its rationale. The explanation about filtering practices (C127-C129) is accurate regarding standard snRNA-seq protocols. The methodological choice (C132) is justified and validated by nuclear gene expression (C134). The speculative elements (C135-C137) are appropriately qualified. The approach is sound and the validation adequate, though the possibility of some mitochondrial contamination cannot be completely excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "Mitochondrial dysfunction likely plays a major role in HIVAN pathology based on downregulation of both nuclear and mitochondrial encoded genes involved in oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 represents a major conclusion synthesizing multiple lines of evidence from the study including transcriptional data (C50-C60), functional data (C88-C92), and cell-type-specific analysis (C59-C70). The conclusion is well-supported by convergent evidence, though the causal role of mitochondrial dysfunction versus being a consequence of other pathogenic processes is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "All HIV-1 transgene-encoded genes are detected across cell types with podocytes showing highest expression, consistent with prominent podocyte pathology, suggesting a shared mechanism in virus-related nephropathies, with possible tighter mitochondrial gene regulation in podocytes explaining their lack of overt mitochondrial gene dysregulation despite high HIV-1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C143 describe HIV-1 gene expression patterns (C139-C141 are well-supported by Figure 7A) but include speculative inferences (C142-C143). The suggestion of a shared mechanism in viral nephropathies (C142) is reasonable but not tested. The explanation for podocytes' mitochondrial gene regulation (C143) is speculative, citing Li et al., 2017, but not directly validated in this study. These hypotheses would require additional comparative studies across viral nephropathies and direct investigation of mitochondrial regulation in podocytes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "A putative PKR-STAT3-PDGF-D-PDGFR-B pathway is identified in injured proximal tubules, supported by prior literature showing this signaling cascade and the role of PDGF-D/PDGFR-B in fibrosis, suggesting this pathway may offer therapeutic opportunities, though further studies are needed to confirm relevance to human HIVAN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C148 propose a mechanistic pathway with supporting literature (C145-C146) but acknowledge the need for further validation (C148). The pathway is plausible and supported by correlative data from this study, but lacks functional validation (e.g., genetic or pharmacological perturbation of pathway components). The therapeutic speculation (C147) is reasonable but premature without additional validation. This represents a hypothesis-generating finding rather than a definitively established mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The study has limitations including use of a partial HIV-1 transgene that may not recapitulate all aspects of clinical HIVAN, potential secondary effects of C16 treatment beyond direct PKR inhibition, and possible non-specific effects of C16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 acknowledge important limitations. The Tg26 model limitation (C149) is well-recognized in the field. The concern about secondary effects (C150) is valid and difficult to completely address without additional time-course studies. The acknowledgment of possible C16 non-specificity (C151) is important and supported by citations, though the convergence of multiple lines of evidence (PKR pathway activation, pPKR reduction, phenotypic rescue) supports on-target effects. These are appropriately stated limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "By combining snRNA-seq and bulk RNA-seq, the study identifies mitochondrial dysfunction as the central mechanism for proximal tubule injury in Tg26 HIVAN mice, which is largely reversed by PKR inhibitor C16 treatment, suggesting that further studies of HIVAN-associated mitochondrial dysfunction may lead to targeted therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 summarize the main conclusions. The identification of mitochondrial dysfunction (C152) is well-supported by convergent evidence from multiple experimental approaches. The reversal by C16 (C153) is demonstrated at transcriptional, protein, and functional levels. The therapeutic speculation (C154) is appropriately cautious, acknowledging the need for further studies. The conclusions are justified by the data presented, though translation to human disease requires additional validation.",
+    "result_type": "MAJOR"
+  }
+]

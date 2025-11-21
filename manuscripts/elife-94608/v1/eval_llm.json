@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C41"
+    ],
+    "result": "Experiment 1 demonstrates that visual uncertainty increases linearly with perturbation size, showing approximately a sevenfold increase from 4\u00b0 to 64\u00b0 perturbations. This relationship is consistent across individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39, and C41 are well-supported by psychophysical measurements using a 2AFC task with the PEST procedure. The linear relationship (R\u00b2=0.255, p=2.53e-9) and the sevenfold increase in visual uncertainty are directly measured and statistically validated. Eye-tracking data (C104) confirms participants followed instructions to fixate on the target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Experiment 2 shows that implicit adaptation follows a concave pattern across perturbation sizes (2\u00b0-95\u00b0), with overcompensation for small perturbations and saturation/decline for larger ones. The PEA model accurately predicts this pattern (R\u00b2=0.975) using visual uncertainty data from Experiment 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 are strongly supported by experimental data from 84 participants across seven groups. Statistical analyses (ANOVA, planned contrasts) confirm the concave pattern. The PEA model's high predictive accuracy (R\u00b2=0.975) using only four free parameters and visual uncertainty from Experiment 1 provides compelling evidence for the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The PEA model outperforms alternative models (PReMo and causal inference) in explaining implicit adaptation patterns, as evidenced by superior R\u00b2 values and AIC scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by quantitative model comparisons. The PEA model achieves R\u00b2=0.975 compared to PReMo (R\u00b2=0.749) and causal inference (R\u00b2=0.711). AIC scores (PEA: 2255, PReMo: 3543, causal inference: 3283) strongly favor the PEA model. The alternative models fail to capture key features like the concave adaptation pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The PEA model accurately predicts temporal changes in active hand localization during implicit adaptation, including the initial negative bias toward the cursor followed by gradual drift away (R\u00b2=0.982).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by fitting the PEA model to previously published data (Tsay et al., 2020). The high R\u00b2 value (0.982) indicates excellent predictive accuracy. However, this is a post-hoc fit to existing data rather than a prospective prediction, which somewhat limits the strength of this evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Experiment 3 demonstrates that proprioceptive recalibration follows a concave function of perturbation size, with significant bias for 20\u00b0 and 40\u00b0 conditions but not for 10\u00b0 and 80\u00b0 conditions, consistent with PEA model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by experimental data from 11 participants using passive hand localization. Statistical analyses (repeated-measures ANOVA, pairwise comparisons, t-tests) confirm the concave pattern. The alignment with PEA model predictions strengthens the theoretical framework, though the sample size is relatively small (n=11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The PReMo model's predictions for proprioceptive bias (ramp function) deviate substantially from empirical findings showing a concave pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by comparing PReMo model predictions to experimental data from Experiment 3. The model assumes saturation of visual influence, leading to a ramp-like prediction that contradicts the observed concave pattern. This represents a critical failure of the PReMo model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Proprioceptive bias rapidly decays, becoming insignificant by the third trial in each proprioception test block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by statistical analysis (one-tailed t-tests, all p>0.18) of Experiment 3 data. This finding suggests rapid decay of the perceived hand estimate's influence, though the mechanism underlying this decay is not fully explained by the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Experiment 4 demonstrates that experimentally increasing visual uncertainty (cursor blurring) selectively attenuates adaptation for large perturbations (16\u00b0 and 64\u00b0) but not small perturbations (4\u00b0), consistent with PEA model predictions and inconsistent with PReMo and causal inference models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are strongly supported by experimental data from 19 participants. Statistical analyses (two-way repeated-measures ANOVA, post-hoc tests) confirm the interaction between visual uncertainty and perturbation size. This causal manipulation provides critical evidence distinguishing the PEA model from alternatives, as the pattern matches PEA predictions but contradicts PReMo and causal inference predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "The central theoretical claim is that perceptual error from Bayesian cue combination, rather than sensory prediction error, drives implicit motor adaptation. Overcompensation arises from sustained perceptual error, and saturation results from increasing visual uncertainty with eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, C27, C80, C81, and C85 represent the paper's main theoretical contribution, supported by converging evidence from all four experiments. The PEA model successfully explains multiple phenomena (overcompensation, saturation, proprioceptive changes) and outperforms alternative models. The causal manipulation in Experiment 4 provides particularly strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C29",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The PEA framework provides a unified account of implicit adaptation across multiple measures and perturbation sizes, outperforming existing models and explaining previously puzzling phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C29, C82-C84 summarize the overall success of the PEA framework. The model's ability to predict data from Experiment 2 using parameters from Experiment 1 (C83) is particularly compelling. The framework successfully integrates multiple lines of evidence and provides superior quantitative fits compared to alternatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Critical evaluation reveals that the PReMo model has several limitations: it mislabels perceptual error as proprioceptive error, lacks empirical validation for key assumptions, predicts a ramp-like pattern inconsistent with observed concave patterns, and makes incorrect predictions about visual uncertainty manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 provide a critical assessment of the PReMo model supported by empirical evidence from Experiments 2, 3, and 4. The critiques are well-founded, though some points (like C86) are more conceptual/terminological rather than empirical failures. The empirical contradictions (C88-C90) are more compelling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The causal inference model fails to account for implicit adaptation because it neglects visual uncertainty as a function of perturbation size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by the model comparison results showing poor fit (R\u00b2=0.711) and incorrect predictions for the visual uncertainty manipulation in Experiment 4. The explanation for why the model fails (neglecting eccentricity-dependent visual uncertainty) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C36"
+    ],
+    "result": "The PEA model is based on Bayesian cue combination of three sensory cues (visual, proprioceptive, and sensory prediction) and predicts a concave adaptation pattern due to linear increase in visual uncertainty with eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C34, C36 describe the theoretical foundation of the PEA model. The assumptions are reasonable and grounded in established principles (Bayesian cue combination, eccentricity effects on visual perception). The model's predictions are mathematically derived and subsequently validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The PEA model's retention rate (A) and learning rate (B) parameters are consistent with previous studies on visuomotor rotation adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by comparison to previous literature (Albert et al., 2022). This consistency suggests the model parameters are reasonable and generalizable, though the claim relies on citation rather than direct empirical validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Across perturbation sizes, faster early adaptation correlates with larger final adaptation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by correlation analysis shown in Figure 3\u2014figure supplement 2. This is a descriptive finding that provides additional characterization of the adaptation dynamics, though it's not central to the main theoretical claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior research has documented that implicit adaptation exhibits overcompensation for small perturbations and saturation for larger perturbations, phenomena that challenge existing state-space models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C13-C15 accurately summarize prior findings in the field with appropriate citations. These claims establish the motivation for the current study by identifying limitations of existing theories. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Traditional motor adaptation shows stable proprioceptive bias toward visual perturbation, while implicit adaptation shows initial bias toward perturbation followed by gradual drift in the opposite direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 accurately characterize differences between traditional and implicit adaptation based on cited literature. This distinction is important for motivating the study and is well-supported by prior research (Ruttle et al., 2016, 2021; Tsay et al., 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Existing theoretical accounts (causal inference, PReMo) have limitations in explaining implicit adaptation phenomena, and current models fail to capture time-dependent proprioceptive changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 provide an accurate assessment of limitations in prior theoretical work, supported by appropriate citations. These claims establish the gap in knowledge that the current study addresses. The characterization appears fair and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Prior models have overlooked that visual uncertainty increases with perturbation size due to eccentricity effects, and conventional theories define motor error according to sensory modality rather than perceptual error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 identify key oversights in prior work, supported by citations to visual perception literature (Klein and Levi, 1987; Levi et al., 1987). These claims establish the novelty of the current approach. The characterization of prior work appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Even in conventional visuomotor rotation paradigms, participants fixate on the desired direction rather than the cursor, suggesting similar visual uncertainty increases may occur in other paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is supported by citations (de Brouwer et al., 2018a, 2018b), but C94 is explicitly speculative. While the speculation is reasonable, it requires empirical validation. The generalization to other paradigms is plausible but not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The driving error signal for implicit learning should be considered perceptual rather than merely visual, and all factors influencing learning rate contribute to the perceptual estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 represent theoretical conclusions drawn from the study's findings. These are well-supported by the experimental evidence, though C96 is somewhat broad and would benefit from more specific elaboration. The shift from sensory to perceptual error is a key conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Traditional motor adaptation shows 'savings' during relearning, while implicit adaptation shows decreased learning rate. Washout of implicit adaptation is slower than acquisition, possibly involving distinct cue sets or mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C99 accurately summarize prior findings with appropriate citations. However, C100 is speculative about washout mechanisms. The current PEA model doesn't directly address these phenomena, and the speculation about distinct mechanisms requires future empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The study recruited 115 participants across four experiments with appropriate demographic characteristics and experimental designs. Eye-tracking confirmed compliance with fixation instructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 describe methodological details that are straightforward and well-documented. Sample sizes are reasonable for the experimental designs. Eye-tracking validation (C104) is particularly important for confirming that participants followed instructions to fixate on the target rather than the cursor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establish that sensorimotor adaptation occurs implicitly without conscious awareness, and conventional theories conceptualize it as error-based learning proportional to motor error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12 provide accurate background information supported by appropriate citations. These claims establish the general context for the study and are well-supported by prior literature. They represent established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

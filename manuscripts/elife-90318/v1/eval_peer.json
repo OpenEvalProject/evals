@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C96"
+    ],
+    "result": "The study found that sensory stimulation (visual and whisker) during absence seizures produced significantly reduced fMRI responses compared to interictal periods. Specifically, cortical activation was spatially narrower and weaker during ictal stimulation, with 136-179% more voxels showing significant activity during interictal versus ictal states. Hemodynamic response functions showed polarity changes, with negative responses in cortical regions during seizures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer (sa3) raises a fundamental methodological concern that 'the duration of the visual and tactile stimuli were 6 seconds, which is very close to the mean seizure duration,' making it impossible to 'disentangle fMRI signals related to absence seizures from fMRI signals related to the sensory stimuli.' The reviewer states that 'the models used therefore will not be able to effectively separate signals related to seizures and related to sensory stimulation' and that 'the only way to truly address the important weakness of this study would be to repeat the experiments using stimulus durations that do not match mean seizure duration.' While other reviewers found the conclusions solid, this unresolved methodological issue creates uncertainty about whether the observed differences truly reflect reduced sensory responsiveness versus confounded seizure-related signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C83"
+    ],
+    "result": "Analysis of seizure-related fMRI changes (without stimulation) showed negative hemodynamic responses predominantly in cortical regions (frontal, parietal, occipital) totaling 895 voxels, while deeper brain regions (thalamus, basal ganglia) showed positive responses. The authors interpret negative cortical HRFs as suggesting reduced neuronal activity during seizures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings about seizure-related fMRI patterns. One reviewer (sa2) notes 'some data show this nicely' regarding reduced responses during seizures, and the editor summary states the study provides 'new information suggesting reduced brain responsiveness during this type of seizure.' The spatial pattern of negative cortical and positive subcortical responses is consistent with prior literature cited by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C115",
+      "C116"
+    ],
+    "result": "A computational mean-field model was developed that could reproduce SWD-like patterns and simulate both interictal (asynchronous irregular) and ictal (oscillatory) dynamics by varying adaptation current strength. The model showed drastically restrained stimulus propagation during ictal periods compared to interictal periods, agreeing with the reduced fMRI responsiveness observed experimentally.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer sa2 notes that 'the authors use a model to analyze the data. This model is novel and while that is a strength, its validation is with a second model rather than empirical data.' Additionally, reviewer sa3 points out a contradiction in Figure 6-figure supplement 1, stating that 'part D (ictal)...actually shows larger firing rates for both excitatory and inhibitory neurons in visual cortex for sensory stimulation during seizures. This contradicts the claims in the rest of the paper that neural activity and fMRI signals are smaller.' The lack of empirical validation and internal contradictions in the modeling results create uncertainty about the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study successfully implemented a quiet ZTE fMRI sequence for awake rat imaging, achieving spatial SNR ~25, temporal SNR 30-60, and acoustic noise 35.8 dB quieter than EPI. Motion parameters were minimal (mean framewise translation 0.69\u00b10.32 \u00b5m, rotation 0.79\u00b10.55\u00b0), with motion occurrences (0.43\u00b10.45 motions/min) significantly lower than previous EPI studies (1.0\u00b10.20 motions/min).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the technical implementation or motion parameters. The editor summary notes the study 'conducted fMRI experiments in an inbred rat model' and one reviewer (sa3) acknowledges that 'use of an awake, habituated model is a valid and potentially powerful approach.' The methodological details about the ZTE sequence advantages are accepted without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The study successfully detected absence seizures in awake, restrained GAERS rats during fMRI sessions despite MRI noise. Exclusion rates included 27% of animals due to noisy EEG, 21% of sessions due to excessive movement, and 14% due to lack of seizures. Respiration remained stable (2.0-2.2 Hz) with no sudden changes due to stimulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the successful implementation of awake imaging. Reviewer sa3 states 'use of an awake, habituated model is a valid and potentially powerful approach' and the editor summary confirms the study 'conducted fMRI experiments in an inbred rat model of absence seizures.' The exclusion rates and physiological monitoring are reported transparently without reviewer objection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C57",
+      "C59"
+    ],
+    "result": "When sensory stimulation ended a seizure (rather than occurring during ongoing seizure), fMRI response amplitudes were significantly higher in both visual cortex (8.1\u00b17.0 vs -6.0\u00b12.0, p<0.001) and barrel cortex (4.8\u00b12.9 vs -9.0\u00b11.9, p<0.001). The authors speculate this could indicate the stimulation response exceeded a threshold to shift the brain back to a responsive state.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data showing higher amplitudes when stimulation ends seizures is not directly challenged, reviewer sa3's fundamental concern about the inability to separate seizure-related and stimulation-related signals due to matched durations applies equally to this finding. The interpretation that stimulation 'exceeded a threshold to shift the brain back to a responsive state' is speculative and potentially confounded by the same methodological issue affecting the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C88",
+      "C91",
+      "C92",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors conclude that reduced fMRI activation and limited propagation during ictal states indicates decreased responsiveness and information processing during external stimulation. They interpret this as showing that the 'wave' phase of SWD prevents responsiveness and that sensory processing is hindered or suppressed during absence seizures, although not fully abolished.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor notes 'reviewers had divergent opinions but on average thought the study was valuable and the conclusions were solid.' However, reviewer sa3's unresolved methodological concern fundamentally undermines these interpretive conclusions, stating that 'the main claim that the sensory stimuli do not elicit the same activations during seizures as they do in the interictal period may still be true. However the attempts to localize these differences in space or time will be contaminated by the seizure related signals.' Reviewer sa2 also notes 'it is not clear what conclusions can be made from the data' regarding HRF analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The introduction provides background on absence seizures, their clinical characteristics, neurophysiological mechanisms, and the GAERS model. Claims include that absence seizures arise from the somatosensory cortex, propagate to other structures including thalamus, and that previous fMRI studies showed cortical decreases and subcortical increases during seizures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-cited and not challenged by reviewers. Reviewer sa2 acknowledges 'this is a significant topic' and provides context confirming the clinical relevance of studying SWDs and consciousness. The characterization of the GAERS model and prior neuroimaging findings are accepted as established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The methods describe the use of 11 adult GAERS rats, EEG implantation procedures, habituation protocols, MRI acquisition parameters at 9.4T, visual and whisker stimulation protocols (both 6s duration), EEG recording at 1024 Hz, seizure identification criteria (\u22652s duration, 7-12 Hz SWD pattern), and fMRI preprocessing steps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While reviewer sa3 criticizes the choice of 6-second stimulation duration as matching seizure duration, the methods themselves are clearly described and the technical details are not disputed. Reviewer sa3 acknowledges 'the authors have clarified and improved the figure images and their description in the text based on previous specific comments' regarding methodological details. The issue is with the experimental design choice rather than the execution or reporting of methods.",
+    "result_type": "MINOR"
+  }
+]

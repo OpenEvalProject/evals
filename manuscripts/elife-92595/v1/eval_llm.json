@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "Four biophysical mechanisms for increasing synaptic reliability were identified and their energetic costs were derived: (1) calcium efflux with cost \u221d \u03c3^(-1/2), (2) vesicle membrane surface area with cost \u221d \u03c3^(-2/3), (3) actin structural support with cost \u221d \u03c3^(-4/3), and (4) vesicle trafficking with cost \u221d \u03c3^(-2). Each mechanism represents a different power-law relationship between energy cost and synaptic variability (\u03c3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-49, C51-53, C55, C57-58, C60-61 collectively establish four distinct biophysical mechanisms with specific power-law cost relationships. The mechanisms are grounded in established neurobiology (calcium pumping, membrane metabolism, actin dynamics, vesicle transport) with appropriate citations. The mathematical derivations linking each mechanism to specific cost exponents (\u03c1 = 1/2, 2/3, 4/3, 2) are stated to be in the appendix, providing theoretical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "Artificial neural networks with stochastic synapses were trained on MNIST classification with an objective function combining performance cost, magnitude cost, and reliability cost. The trained networks revealed a tradeoff between circuit performance and the energetic cost of synaptic reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-9, C119-121, C123 describe the computational methodology and main finding. The ANN architecture (2 hidden layers, 100 units, 784 input, 10 output), training procedure (Adam optimizer, minibatch size 20), and objective function are specified. Claim C9 states the tradeoff was observed, which is supported by data in Figures 2-3 showing accuracy decreasing as reliability costs increase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C71"
+    ],
+    "result": "Heterogeneous synaptic noise (where variability is optimized per-synapse) achieved considerably better accuracy than homogeneous noise at the same average noise level or reliability cost. This improvement arises because the system allocates low variability to important synapses and high variability to unimportant synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-67, C71 are directly supported by Figures 2-4. Figure 3 shows heterogeneous noise (green lines) achieves higher accuracy than homogeneous noise (grey lines) at equivalent average \u03c3 or reliability cost. Figure 4 provides mechanistic explanation showing how optimized allocation reduces performance cost while maintaining the same reliability cost. The quantitative comparisons are clear in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "In energy-efficient networks, synaptic noise is inversely related to synapse importance (measured by Hessian curvature). Important synapses with high curvature have low optimized noise levels, while unimportant synapses with low curvature have high noise levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-70, C72 describe the relationship between synapse importance and optimized variability. C72 states the finding directly, while C68-70 provide mechanistic explanation. Figure 5a shows clear negative correlation between Hessian (importance) and \u03c3\u00b2 across all four biophysical mechanisms. The use of Hessian as a formal measure of importance is justified through curvature arguments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C73",
+      "C76",
+      "C110"
+    ],
+    "result": "Synapses with lower variability tend to have higher input firing rates. This prediction from the optimized networks is consistent with experimental data from V1 layer 2/3 showing normalized EPSP variability decreases with input firing rate (slope = -0.62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C73, C76, C110 establish this prediction and its experimental validation. C73 shows the relationship in simulations (Figure 5b), while C76 cites Aitchison et al., 2021 data from V1 (Figure 6b). The consistency between simulation predictions and experimental observations across all four biophysical mechanisms strengthens the result. However, the correlation is noisy (as acknowledged in the text).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C74",
+      "C75",
+      "C111"
+    ],
+    "result": "Synapses with lower variability tend to have lower learning rates. This prediction from optimized networks is consistent with experimental data showing synapses with higher release probability (lower variability) demonstrate smaller LTP increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C74, C75, C111 establish this prediction and validation. C74 shows the relationship in simulations (Figure 5c), while C75 cites Schug et al., 2021 analysis of Sj\u00f6str\u00f6m et al., 2001 data (Figure 6a). The connection between learning rate and variability is mediated through adaptive learning rate schemes (Equation 7), which is standard in modern deep learning. The experimental validation strengthens the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "The relationship between input firing rate and synaptic variability arises because synapses with zero input rate have zero importance (zero Hessian), creating a tendency for higher input rates to correlate with higher importance and lower variability. The relationship between learning rate and variability arises because adaptive learning rates (\u03b7 \u221d 1/\u221a\u27e8g\u00b2\u27e9) cause important synapses with large gradients to have lower learning rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-78, C81-82, C84 provide mechanistic explanations for the observed correlations. C77 establishes the logical connection between input rate and importance (zero input \u2192 zero importance). C81-82, C84 explain how adaptive learning rates create the learning rate-importance connection. These are logical inferences supported by the mathematical framework (Equation 7) and standard deep learning practice. The explanations are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C85",
+      "C93",
+      "C94",
+      "C98"
+    ],
+    "result": "The patterns of synaptic variability from energy-efficient optimization match those predicted by Bayesian synapses. A formal theoretical connection exists between the performance-reliability cost tradeoff and Bayesian inference, with clear correlation between posterior variance and optimized variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-14, C85, C93-94, C98 establish the connection to Bayesian inference. C85 notes the surprising match between predictions. C93-94 show clear correlation in Figure 7a across all mechanisms and cost parameters. C98 states a theoretical derivation exists in the appendix. The empirical correlation is strong, though C95 notes optimized variability is less heterogeneous than posterior variance (slope < 1 in Figure 7b-c).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The connection between energy efficiency and Bayesian inference arises because synapse importance is strongly connected to uncertainty. Important synapses receive large gradients providing strong information about correct values, rapidly reducing uncertainty, while low uncertainty implies lower learning rates in Bayesian synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-92 provide intuitive and mechanistic explanations for the Bayesian connection. The logic is internally consistent: importance \u2192 large gradients \u2192 strong information \u2192 low uncertainty \u2192 low learning rate (C90-92), and low uncertainty \u2192 low variability \u2192 low learning rate in Bayesian framework (C86-87). C88-89 explain the input rate connection through information accumulation. These are logical inferences that connect the two frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A formal theoretical link exists between the biological power-law reliability costs and variational Bayesian inference. The biological costs bound the entropic reliability cost in the ELBO, such that reducing the overall cost (Equation 2) tightens the ELBO bound and improves the guarantee on Bayesian inference quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-102 establish the formal theoretical connection. C99-100 describe the ELBO and its entropic term (supported by standard citations). C101-102 state the key theoretical result that biological costs bound the ELBO. This is stated to be derived in Appendix 4. While the full derivation is not in the main text, the claim is explicit and the logic is sound: power-law costs bound entropy, therefore optimizing the biological cost optimizes a bound on the ELBO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The results suggest two incompatible interpretations: (1) evolution may have implemented Bayesian inference by optimizing energy efficiency, or (2) energy-efficient synapses may display signatures of Bayesian inference without actually performing Bayesian computation. Distinguishing these requires determining whether downstream areas exploit uncertainty information from synaptic variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-16, C114-118 present the two alternative interpretations and the challenge of distinguishing them. C114-115 state the main implication that Bayesian signatures can emerge from energy efficiency alone. C116-117 present the two possibilities explicitly. C118 identifies the critical experiment needed. This is appropriate scientific reasoning - the data support both interpretations, and the authors correctly identify what additional evidence would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The patterns of variability observed are characteristic of energy-efficient networks and should not depend on the specific learning rule (backpropagation) used to achieve energy efficiency. Backpropagation is merely the route used to reach an energy-efficient configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-105 address the biological plausibility concern about backpropagation. The argument is logical: the patterns emerge from the energy-efficiency constraint itself, not from the specific optimization method. This is a reasonable inference, though it remains an assumption that other biologically plausible learning rules would converge to the same solution. The claim is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The fundamental principle underlying the results is that variability in important synapses substantially impairs performance, while variability in unimportant synapses impairs performance less. This creates the tradeoff between biophysical reliability costs and performance costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-108 articulate the core principle. This is a logical statement supported by the mathematical framework (performance cost depends on weight deviations weighted by importance/curvature). The principle is illustrated in Figure 4 and underlies all the main results. This is sound reasoning about how the optimization problem is structured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C112"
+    ],
+    "result": "Energy efficiency considerations give rise to two phenomena consistent with Bayesian synapse predictions: (1) normalized variability decreases with higher presynaptic firing rates, and (2) synaptic plasticity is higher for synapses with higher variability. These findings suggest synapses connect uncertainty in optimal weight values to variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C112 summarize the main findings and their interpretation. C109 states the two phenomena with citation to prior Bayesian synapse work. C112 provides the interpretation about uncertainty-variability connection. These are supported by the data in Figures 5-6 and the mechanistic explanations in claims C77-92. The interpretation is reasonable given the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Biological synaptic transmission is unreliable, and this unreliability likely degrades neural circuit performance. While biophysical mechanisms exist to increase reliability (e.g., increasing vesicle release probability), these mechanisms cost energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-5 establish the foundational premises. C1, C3-5 are stated as established knowledge about synaptic biology. C2 is a logical inference that unreliability degrades performance. These are well-supported by the neuroscience literature and form the motivation for the study. The claims are appropriately cited and represent consensus knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "PSP amplitudes are highly variable, arising primarily from presynaptic mechanisms including variable vesicle release probabilities and quantal sizes. However, some synapses show low-noise transmission, and there is heterogeneity in reliability both across synapse types and within the same synapse type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-22 describe established neurobiology of synaptic variability. All claims are supported by appropriate citations to primary literature (Lisman and Harris 1993, Branco and Staras 2009, Paulsen and Heggelund 1994-96, Murthy et al. 1997, Dobrunz and Stevens 1997). This provides the biological context and motivation for why understanding variability patterns is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior work by Laughlin et al. (1998) showed that increasing synapse number can increase precision by averaging noise, but at extra energy cost per bit transmitted. Levy and Baxter (2002) demonstrated an optimal precision value that minimizes energy cost of information transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-26 accurately describe prior work on energy-information tradeoffs. The claims are appropriately cited and represent the historical context for the current study. These establish that energy-precision tradeoffs have been considered before, but primarily in two-neuron information transmission contexts rather than circuit computation contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The brain performs computation through neuronal interactions, not just information transfer. Previous energy-performance tradeoff models predominantly consider two-neuron transmission and treat synapses as isolated information conduits. In reality, individual synapse performance must be considered in the context of circuit-level computation and resource allocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-32 establish the conceptual framework and gap in prior work. C28-29 accurately characterize limitations of prior models (with appropriate citations). C27, C30-32 articulate the circuit-level perspective that motivates the current study. This is sound scientific reasoning about the need to move beyond pairwise information transmission to circuit computation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C47"
+    ],
+    "result": "Synaptic transmission involves spike arrival triggering calcium influx, causing vesicle release, neurotransmitter diffusion, and binding to postsynaptic ion channels producing PSPs. This process is quantified by the Katz and Miledi (1965) quantal model, supported by multi-peak PSP amplitude histograms and direct vesicle release measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-38, C47 describe established synaptic physiology. C33-37 outline the basic transmission process (standard textbook knowledge). C38 cites the classic quantal model. C47 provides experimental support (multi-peak histograms) with appropriate citations. This provides necessary biological background for the biophysical cost models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C83"
+    ],
+    "result": "Modern state-of-the-art ANN update rules almost always use adaptive learning rates, where learning rates are adjusted based on synapse importance. This enables fast, stable learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C83 describe standard practice in modern deep learning. C79 states adaptive learning rates are standard (true for Adam, RMSprop, etc.). C83 provides the rationale with appropriate citations to machine learning literature (LeCun et al. 2002, Kingma and Ba 2014, etc.). This establishes the connection between the ANN methodology and biological learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Optimized synaptic variability is less heterogeneous than Bayesian posterior variance, with the relationship having slope less than one when plotting optimized variance against posterior variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 describes a quantitative finding from Figure 7b-c. The figures clearly show slopes less than one, indicating optimized variability is more homogeneous than true posterior variance. This is an important nuance showing the match between energy-efficient and Bayesian synapses is not perfect, and the deviation depends on the power-law exponent \u03c1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Under the sampling hypothesis, neural activity represents potential states of the world and variability represents uncertainty, as supported by extensive prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 describes the sampling hypothesis with extensive citations (Hoyer and Hyv\u00e4rinen 2002, Knill and Pouget 2004, Ma et al. 2006, and many others through 2022). This provides context for interpreting synaptic variability as representing uncertainty. The claim accurately represents a major theoretical framework in computational neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "Source code for the simulations is available at https://github.com/JamesMalkin/EfficientBayes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 provides data availability information. This is a straightforward factual claim about code availability, which is important for reproducibility. The claim is explicit and verifiable.",
+    "result_type": "MINOR"
+  }
+]

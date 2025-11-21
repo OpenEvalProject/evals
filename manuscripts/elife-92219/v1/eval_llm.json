@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C82",
+      "C83"
+    ],
+    "result": "\u03b1K40 loops are structured when interacting with MIPs, particularly with DM10 domains. The study found that ordered \u03b1K40 loops are visible at positions where MIPs and tubulins interact, with certain protofilaments (A1, A3, A5, A12) showing all \u03b1K40 loops structured. The B-tubule has fewer structured loops, likely due to fewer MIPs. DM10 was identified as an \u03b1K40 loop interacting domain, with a conserved aromatic residue potentially responsible for the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44, C48-C52, C82-C83 are well-supported by cryo-EM structural data (Figures 1C-G, 2A-E) showing structured \u03b1K40 loops correlating with MIP presence. The identification of DM10 as an interacting domain is supported by structural analysis and sequence alignment. The conservation of \u03b1K40 loop conformations between species when interacting with conserved MIPs (C51) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Acetylation does not affect DMT and MIP assembly. Cryo-EM analysis showed that MIP decoration appears intact in MEC17-KO and K40R mutants compared to WT, and the \u03b1K40 loop-MIP interactions do not detectably change their structures between acetylated and non-acetylated \u03b1K40. This suggests that complete DMT with MIPs is assembled without acetylation, which occurs post-assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C85-C87 are supported by cryo-EM data (Figure 3A, supplementary figures) showing intact MIP decoration in acetylation mutants. The inference that acetylation occurs post-assembly (C87) is logical given the structural evidence, though it remains an inference rather than direct observation. The consistency with previous phenotypic observations (C55) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C108"
+    ],
+    "result": "Lack of \u03b1K40 acetylation causes changes in inter-protofilament angles, particularly in the B-tubule. Minor changes were observed in the A-tubule, but more prominent changes (3-6\u00b0) were found in the B-tubule between PFs B7-B8 and B9-B10. Statistical analysis showed that inter-PF rotation angles vary significantly more in acetylation mutants, suggesting that tubulin lattice changes can indicate microtubule stability when acetylation is lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C64, C108 are well-supported by quantitative cryo-EM measurements (Figure 4A-M, supplementary figures) with statistical analysis from biological replicates. The measurements show statistically significant differences in B-tubule inter-PF angles (p<0.05 to p<0.0001) while A-tubule changes are minor. The scale of changes (3-6\u00b0) is meaningful compared to known structural variations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C81"
+    ],
+    "result": "Acetylated \u03b1K40 loops adopt more rigid conformations than non-acetylated loops. Molecular dynamics simulations showed that acetylated and non-acetylated \u03b1K40 loops adopt distinctively different conformations, with acetylated loops forming fewer, more populated clusters (~50% in one cluster) compared to non-acetylated loops (five clusters of <30% each), indicating reduced flexibility upon acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C81 are supported by all-atom molecular dynamics simulation data (Figure 5A-B) using K-means clustering analysis. The clustering results clearly show separation between acetylated and non-acetylated conformations. This reinforces previous findings (C81 cites Eshun-Wilson et al., 2019), providing independent computational validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Acetylation does not significantly affect the interaction between \u03b1K40 and MIPs. Coarse-grained molecular dynamics simulations showed that both acetylated and non-acetylated \u03b1K40 have stabilizing effects when binding to CFAP52, with only slightly lower energy for the acetylated case (mean difference of ~0.35 kcal/mol), suggesting acetylation does not play a significant role in MIP interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by coarse-grained molecular dynamics simulations (Figure 5C-D) showing minimal energy differences between acetylated and non-acetylated states. The small energy difference (0.35 kcal/mol) is within thermal fluctuations at physiological temperature, supporting the conclusion of no significant effect. This is consistent with the cryo-EM observation that MIPs remain intact in acetylation mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C79",
+      "C80",
+      "C98"
+    ],
+    "result": "Mass spectrometry revealed a link between \u03b1K40 acetylation and phosphorylation in cilia. Most MIPs showed no significant abundance changes except CFAP112, CFAP141, and RIB27. However, 10 proteins were specifically upregulated and 3 proteins were significantly reduced in both K40R and MEC17-KO mutants. Notably, protein phosphatase 2A-related proteins (PP2A regulatory subunit A, PP2C, PP2A) and one kinase were downregulated, suggesting that lack of \u03b1K40 acetylation reduces PP2A activity and that acetylation and phosphorylation interact in DMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75, C79-C80, C98 are supported by quantitative mass spectrometry data (Figure 6, supplementary files) with biological triplicates and statistical analysis (p<0.05, >2-fold change threshold). The use of RIB72A/B-KO as a control to distinguish acetylation-specific effects from general DMT destabilization strengthens the analysis. The connection to phosphorylation is supported by prior literature (C76-C78) showing PP2A's role in cilia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C94"
+    ],
+    "result": "The study proposes a model where \u03b1K40 loop interactions with MIPs are the dominant stabilizing interactions regardless of acetylation status. When MIPs are fewer (as in the B-tubule), acetylation's contribution to lateral interactions between protofilaments becomes more significant. The lack of acetylation destabilizes DMT and leads to tubulin lattice alterations. This supports the notion that acetylation is a fine-tuning mechanism rather than a biphasic switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C94 represent the study's main interpretive model, which is well-supported by the integration of multiple lines of evidence: (1) intact MIPs in acetylation mutants, (2) minimal effect of acetylation on MIP binding energy, (3) greater inter-PF angle changes in B-tubule (fewer MIPs) than A-tubule, and (4) molecular dynamics showing subtle conformational effects. The model logically synthesizes the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C62",
+      "C63"
+    ],
+    "result": "Comparison of \u03b1K40 and \u03b1K60 loop structures did not reveal significant structural differences between acetylated and non-acetylated forms at the resolution achieved. Small changes in interdimer distances (0.3-0.5 \u00c5) were observed in specific protofilaments, but these are significantly smaller than changes caused by nucleotide state or missing MIPs (~2 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C62-C63 are supported by structural measurements from cryo-EM maps (Figure 3, Figure 4\u2014figure supplement 1C). The authors appropriately acknowledge resolution limitations (C57) and provide quantitative comparisons to known structural changes (C63), placing their observations in proper context. The small scale of changes is consistent with the subtle nature of acetylation's effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The \u03b1K40 loops adopt multiple conformations that might adapt to both inter-PF angles and interactions with contacting MIPs. Acetylated \u03b1K40 was not directly involved in tubulin-tubulin lateral interactions in any observed conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by structural analysis showing superimposed \u03b1K40 loop conformations (Figure 2A). The observation that acetylated \u03b1K40 is not directly involved in lateral interactions (C47) is important for understanding the mechanism, though the inference about adaptation to inter-PF angles and MIP interactions (C46) is speculative but reasonable given the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study suggests crosstalk between \u03b1K40 acetylation and other tubulin PTMs, particularly polymodification. Evidence includes: (1) previous findings that Tetrahymena mutants lacking TTLL3 have elevated \u03b1K40 acetylation, (2) downregulation of a tetratricopeptide repeat protein (homologous to IFT70) in acetylation mutants, and (3) the B-tubule being enriched in polymodification. The altered B-tubule structure in acetylation mutants could affect enzyme access for polymodification, suggesting PTMs in cilia exist in a balancing act.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C112 involve significant speculation (C110, C111 explicitly marked as speculation). While the mass spectrometry data showing downregulation of the IFT70 homolog (C105) is solid, the connection to polymodification is indirect. The B-tubule enrichment in polymodification (C109) is stated as knowledge but the mechanistic link to acetylation effects requires additional experimental validation. The overall concept of PTM crosstalk is plausible but not definitively demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study speculates that acetylation might play an essential role in the ciliary tip region to stabilize microtubules, based on observations that the tip region is acetylated early during growth and contains singlet microtubules without regular MIP binding patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 are based on citations to recent work (Viar et al., 2023; Legal et al., 2023) but represent speculation (C93 explicitly marked) about the functional significance in the tip region. While the logic is consistent with the study's model (fewer MIPs \u2192 greater acetylation importance), this remains a hypothesis requiring direct experimental testing in the tip region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The study's main findings are that \u03b1K40 acetylation exerts a small-scale effect on DMT structure and stability by influencing the lateral rotational angle, and that there is a link between \u03b1K40 acetylation and phosphorylation in cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 represent the study's primary conclusions stated in the abstract. Both are well-supported by the experimental data: C5 by the inter-PF angle measurements and molecular dynamics simulations, and C6 by the mass spectrometry identification of phosphatase changes. These summary claims accurately reflect the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The introduction provides extensive background on \u03b1K40 acetylation, cilia structure and function, and previous findings regarding the effects of acetylation on microtubule properties. This includes the role of acetyltransferases and deacetylases, phenotypes of acetylation mutants, and prior structural observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C38 are primarily background information supported by citations to established literature and general knowledge in the field. These claims appropriately set the context for the study and are well-documented. Some claims involve inferences (C4, C32, C36) or speculation (C37) that are reasonable given the cited evidence but represent hypotheses that the current study aims to address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The discussion contextualizes findings within broader concepts: that tubulin lattice can be a read-out for DMT stability, that different acetylation sites (like K394) may serve different purposes, and that there may be regulatory interactions between acetylation enzymes and kinases. Some of these represent speculation about mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C102 mix supported observations (C95 backed by current and cited data, C96, C99, C102 from literature) with speculation (C97, C100, C101 explicitly speculative). While the speculation is reasonable and hypothesis-generating, these claims about mechanisms (particularly C100-C101 regarding enzyme regulation) lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  }
+]

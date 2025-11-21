@@ -1,0 +1,1922 @@
+{
+  "submission": {
+    "id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-20T23:18:44.901523Z",
+    "updated_at": "2025-11-20T23:18:44.901523Z"
+  },
+  "content": [
+    {
+      "id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "content_type": "manuscript",
+      "content_text": "# Quantifying gliding forces of filamentous cyanobacteria by self-buckling\n\n## Authors\n\n- Maximilian Kurjahn<sup>1</sup> ([ORCID: 0000-0002-7395-7327](https://orcid.org/0000-0002-7395-7327)) \u2020\n- Antaran Deka<sup>1</sup>\n- Antoine Girot<sup>1</sup>\n- Leila Abbaspour<sup>3</sup> ([ORCID: 0000-0003-2546-9748](https://orcid.org/0000-0003-2546-9748))\n- Stefan Klumpp<sup>3</sup> ([ORCID: 0000-0003-0584-2146](https://orcid.org/0000-0003-0584-2146))\n- Maike Lorenz<sup>5</sup>\n- Oliver B\u00e4umchen<sup>1</sup>\n- Stefan Karpitschka<sup>1</sup> ([ORCID: 0000-0001-9210-2589](https://orcid.org/0000-0001-9210-2589)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Dynamics and Self-Organization (MPI-DS) G\u00f6ttingen Germany ([ROR:0087djs12](https://ror.org/0087djs12))\n2. Experimental Physics V, University of Bayreuth Bayreuth Germany ([ROR:0234wmv40](https://ror.org/0234wmv40))\n3. Max Planck School Matter to Life, University of G\u00f6ttingen G\u00f6ttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))\n4. Institute for Dynamics of Complex Systems, University of G\u00f6ttingen G\u00f6ttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))\n5. Department of Experimental Phycology and SAG Culture Collection of Algae Albrecht-von-Haller Institute for Plant Science, University of G\u00f6ttingen G\u00f6ttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))\n6. Fachbereich Physik, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))\n\n\u2020 Corresponding author\n\n## Abstract\n\nFilamentous cyanobacteria are one of the oldest and today still most abundant lifeforms on earth, with manifold implications in ecology and economics. Their flexible filaments, often several hundred cells long, exhibit gliding motility in contact with solid surfaces. The underlying force generating mechanism is not yet understood. Here, we demonstrate that propulsion forces and friction coefficients are strongly coupled in the gliding motility of filamentous cyanobacteria. We directly measure their bending moduli using micropipette force sensors, and quantify propulsion and friction forces by analyzing their self-buckling behavior, complemented with analytical theory and simulations. The results indicate that slime extrusion unlikely generates the gliding forces, but support adhesion-based hypotheses, similar to the better-studied single-celled myxobacteria. The critical self-buckling lengths align well with the peaks of natural length distributions, indicating the importance of self-buckling for the organization of their collective in natural and artificial settings.\n\n## Introduction\n\nFilamentous cyanobacteria are an omnipresent group of phototrophic prokaryotes, contributing majorly to the global fixation of atmospheric carbon dioxide. They played an important role already in the paleoclimate of our planet, having generated the atmospheric oxygen (Whitton, 2012; Sciuto and Moro, 2015) on which animal life is based. Today, giant marine and limnic blooms pose ecological and economical threats (Whitton, 2012; Sciuto and Moro, 2015; Bauer et al., 2020; Fastner et al., 2018), but also enable bioreactor applications, for instance as a renewable energy source (Whitton, 2012; Ruffing and Kallas, 2016). The long and flexible filaments contain up to several hundred, linearly stacked cells. Many species exhibit gliding motility when in contact with solid surfaces or other filaments, but no swimming motion (Burkholder, 1934). Motility enables filaments to aggregate into colonies, adapting their architecture to environmental conditions (Whitton, 2012; Khayatan et al., 2015). The force generating mechanism behind gliding is not yet understood (Halfen and Castenholz, 1971; Godwin et al., 1989; Hoiczyk and Baumeister, 1998; McBride, 2001; Gupta and Agrawal, 2006; Read et al., 2007; Koiller et al., 2010; Hanada et al., 2011; Khayatan et al., 2015; Wilde and Mullineaux, 2015). Slime extrusion (Hoiczyk and Baumeister, 1998), metachronal waves on surface fibrils (Halfen and Castenholz, 1971; Halfen, 1973; Read et al., 2007), and acoustic streaming (Koiller et al., 2010) have been proposed. A few species appear to employ a type-IV-pilus-related mechanism (Khayatan et al., 2015; Wilde and Mullineaux, 2015), similar to the better-studied myxobacteria (Godwin et al., 1989; Mignot et al., 2007; Nan et al., 2014; Copenhagen et al., 2021; Godwin et al., 1989), which are short, rod-shaped single cells that exhibit two types of motility: S (social) motility based on pilus extension and retraction, and A (adventurous) motility based on focal adhesion (Chen and Nan, 2022), for which also slime extrusion at the trailing cell pole was earlier postulated as mechanism (Wolgemuth, 2005). Yet, most gliding filamentous cyanobacteria do not exhibit visible pili and their gliding mechanism appears to be distinct from myxobacteria (Khayatan et al., 2015).\n\nHere, we measure the bending moduli of Kamptonema animale and Oscillatoria lutea (Figure 1A and B, respectively) by micropipette force sensors (Backholm and B\u00e4umchen, 2019). This allows us to quantify the propulsion and friction forces associated with gliding motility, by analyzing their self-buckling behavior. Self-Buckling is an important instability for self-propelling rod-like micro-organisms to change the orientation of their motion, enabling aggregation or the escape from traps (Fily et al., 2020; Man and Kanso, 2019; Isele-Holder et al., 2015; Isele-Holder et al., 2016). The notion of self-buckling goes back to work of Leonhard Euler in 1780, who described elastic columns subject to gravity (Elishakoff, 2000). Here, the principle is adapted to the self-propelling, flexible filaments (Fily et al., 2020; Man and Kanso, 2019; Sekimoto et al., 1995) that glide onto an obstacle. Filaments buckle if they exceed a certain critical length $L_{c}\u223c(B/f)^{1/3}$, where $B$ is the bending modulus and $f$ the propulsion force density. By recording numerous collision events, we obtain a comprehensive statistics to derive $L_{c}$. Kirchhoff beam theory provides an analytical expression for the prefactor in $L_{c}$, and we numerically calculate the evolution of the filament shape upon buckling. Comparing experiment with theory, we derive the propulsion force densities and friction coefficients of the living filaments. Force and friction are strongly coupled, which favors an adhesion-based propulsion mechanism (Khayatan et al., 2015; Wilde and Mullineaux, 2015) over the still customary slime-extrusion hypothesis (Hoiczyk and Baumeister, 1998; McBride, 2001). The critical lengths we found are close to the peak in the length distribution in freely growing colonies, indicating the importance of this quantity for their self-organization.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig1-v1.jpg)\n\n**Figure 1.:** (A, B) Colonies on agar plates (left) and individual filaments in liquid medium (right) of K. animale and O. lutea, respectively. (C) Schematic of a microscopic three-point bending test, pushing a filament into the gap between SU-8 pillars using a glass micropipette. (D) Schematic of a self-buckling test in a microfluidic chip: A filament glides into a V-shaped obstacle and buckles if its contour length $L$ exceeds the self-buckling threshold $L_{c}$.\n\n## Results\n\n### Bending measurements\n\nThe bending moduli $B$ of individual filaments of O. lutea and K. animale were measured by microscopic three-point bending tests (Backholm et al., 2013). Filaments that glide freely across liquid-immersed surfaces decorated with micro-pillars (SU-8 on glass) were pushed into a gap between two pillars with a Micropipette Force Sensor (MFS, see Figure 1C). The deflection of the lever arm of the micropipette is proportional to the load acting on its tip. The corresponding spring constant is obtained from independent calibration measurements (see Methods and Figure 2\u2014figure supplement 1A). The base of the pipette was actuated with a constant speed of \u00b15 \u00b5m/s to increase and release the force acting on the living filament. Pipette and filament deflections were analyzed with a custom-made image analysis procedure in Matlab (see Methods and Kreis et al., 2018; Kreis et al, 2019; Backholm and B\u00e4umchen, 2019; B\u00f6ddeker et al., 2020 for details).\n\nFigure 2A shows an exemplary force-displacement curve, accompanied with snapshots from the experiment, for K. animale. The measured force-distance relations were continuous, linear, largely speed-independent and free of hysteretic effects (Figure 2\u2014figure supplement 1B and C), allowing for an analysis with standard beam theory to derive the effective bending modulus $B$ from the slopes of the force-deflection curves.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative force-deflection measurement for K. animale. Insets: Bottom-view micrographs of the same experiment. (B) Box plot of the bending moduli for $N=35$ individuals of K. animale and O. lutea, shown as points (each tested 2-10 times). Box limits denote the first and third quartile, whiskers the last measurement within the inter-quartile distance away from the respective box limit. A p-value of 6.87 suggests different typical moduli for the two species.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Calibration of the force-sensing micropipette by the weight of an evaporating water droplet. (B) Testing the same filament with three different actuation speeds shows a negligible speed dependence of the force-deflection curves as compared to the spread between individual measurements. (C) Force-deflection curves for increasing (\u2018pushing\u2019) and decreasing (\u2018retraction\u2019) deflection, showing the absence of hysteresis. (D) Force-deflection measurements for four individual filaments of K. animale.\n\nEach individual filament was tested two to ten times at different locations along its contour (see Figure 2\u2014figure supplement 1D for a collection of individual measurements). We observed no systematic dependence of $B$ on the length of the filament or the position along the contour, i.e., no softening or stiffening toward the ends. Stiffness variations on scales below the pillar spacing can of course not be excluded. Figure 2B shows a box plot of the bending moduli. O. lutea appears to be slightly stiffer with $B=(1.4\\pm0.4)\\times10^{\u221216}Jm$ than K. animale with $B=(1.0\\pm0.3)\\times10^{\u221216}Jm$.\n\n### Buckling measurements\n\nWe now turn from micropipette bending measurements to self-buckling experiments. The buckling behavior was observed by optical microscopy in quasi-two-dimensional microfluidic compartments filled with liquid medium (Figure 1D, Figure 3A, and Methods). The height of the chambers was approximately 5 \u00b5m, only slightly larger than the diameter of the filaments, such that motion and buckling was confined to the $x$-$y$-plane. Filaments explored the entire device and occasionally entered channels that directed them onto V-shaped traps (opening angle 90\u00b0). The V-shape is not necessarily required but reduces the chance of filaments slipping sideways instead of buckling, as was observed sometimes for collisions with flat walls. For a collection of collision events with various obstacle architectures, see Figure 3\u2014figure supplement 1. After colliding, the filaments escaped these traps, either by reversing their gliding direction or, if they buckled, due to the reorientation of their front. In total, we collected 388 collision events for O. lutea and 280 for K. animale.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig3-v1.jpg)\n\n**Figure 3.:** (A) Snapshots of K. animale, before and after hitting the obstacle at $t=0$. Left, short filament with $L<L_{c}$, right, long filament with $L>L_{c}$. (B, C) Bar plot of the buckling frequency vs. filament length for O. lutea (B, totally $N=388$ events) and K. animale (C, totally $N=280$ events), together with the logistic regression (dashed curve). (D) Box plot of the quantiles of the critical length distribution from the logistic regression $p(L)$. Box limits denote first and third quartiles, whiskers the 5th and 95th percentile. (E, F) Velocity $v_{0}$ immediately before hitting the obstacle vs. filament length $L$ for O. lutea and K. animale, respectively, distinguishing buckling (dark) and non-buckling (light). The velocity-dependent median critical length $L_{c}(v_{0})$, as derived from a logistic regression with $L$ and $v_{0}$ as independent explanatory variables, is indicated by black lines. Note that axes in (B, C, E, F) are broken around $L=2L_{c}$ to emphasize the critical region. (G) $L_{c}(v_{0})$ (lines) and inter-quartile region (shaded), together with the simple logistic regression from (D), located at the mean velocity $v\u00af_{0}$ of the population (symbols & error bars).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Snapshots of K. animale (top row) and O. lutea (bottom row), before and after hitting the obstacle at time $t=0$. Left, four short filaments with length below the critical length, right, six long filaments above the critical length.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Length distributions of O. lutea (A) and K. animale (B), together with the buckling probability estimated by the logistic regression. Colonies were grown in quiescent liquid medium and then gently squeezed in between agar solidified medium and glass. Filaments glide from the colony into the glass-agar contact and form a sub-monolayer. After \u223c 6 hr, the layer is then analyzed by our modified U-Net segmentation procedure. Filaments remain intact and alive in this configuration for days, as inferred from their gliding velocity.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Chains of particles of diameter $\\sigma$ and separation $\\sigma/2$ are connected by torsional springs to generate an effective bending modulus. Each particle self-propels along the tangent of the particle chain, defined by the mean orientation of its two bonds. (A) Trajectory of active particle chains of 21, 127, and 201 particles, corresponding to filament lengths $L$ of 10 \u03c3, 63 \u03c3, and 100 \u03c3, respectively. (B) Front-Mid-End angle of particle chains as a function of time, after hitting the obstacle. Active force and torsional spring constant were chosen to obtain, from the analytical expression,.$L_{c}\u223c62.37$ The chain hits the obstacle slightly off-center, to induce a non-singular initial condition for self-buckling. For $L<L_{c}$ (red colors), curvature stagnates and then relaxes very slowly. For $L>L_{c}$ (green colors), curvature increases further. (C) Definition of the Geometry of the particle chains.\n\nThe observed events were classified as buckling or non-buckling manually by visual inspection (Figure 3A and Figure 3\u2014figure supplement 1). We observed no systematic dependence of the buckling behavior on the shape and size of the trap, nor on the angle of incidence. The filament length $L$ as well as the free gliding velocity $v_{0}$ prior to hitting the obstacle were determined by automated image processing (see Methods). Buckling frequencies (Figure 3B and C, bars) were evaluated by binning the observations into fixed intervals of the contour length $L$. Frequently, individual filaments were observed $N$ times, and previous buckling behavior is not readily repeated. Multiple observations of an individual filament were weighted with $1/N$ to obtain an unbiased representation of the population.\n\nThe weighted events were analyzed by a logistic regression of the buckling probability\n\n$$\np=sig(x)=(1+e^{\u2212x})^{\u22121},\n$$\n\nwith $x=(L\u2212L_{c})/\u0394L_{c}$. The median critical length $L_{c}$ and the width of its distribution $\u0394L_{c}$ are obtained by maximum likelihood estimation (Methods). The results are depicted as the dashed curves in Figure 3B and C. For O. lutea, we find $L_{c}\\pm\u0394L_{c}=$ (161 \u00b1 35) \u00b5m and for K. animale (148 \u00b1 18) \u00b5m. The corresponding box plot is shown in Figure 3D.\n\nThe substrate contact requires lubrication from polysaccharide slime to enable bacteria to glide (Khayatan et al., 2015). Thus we assume an over-damped motion with co-linear friction, for which the propulsion force $f$ and the free gliding velocity $v_{0}$ of a filament are related by $f=\u03b7v_{0}$, with a friction coefficient $\u03b7$. In this scenario, $f$ can be inferred both from the observed $L_{c}\u223c(f/B)^{\u22121/3}$ and, up to the proportionality coefficient $\u03b7$, from the observed free gliding velocity. Thus, by combining the two relations, one may expect also a strong correlation between $L_{c}$ and $v_{0}$. In order to test this relation for consistency with our data, we include $v_{0}$ as a second regressor, by setting $x=(L\u2212L_{c}(v_{0}))/\u0394L_{c}$ in Equation 1, with $L_{c}(v_{0})=(\u03b7v_{0}/(30.5722B))^{\u22121/3}$, to reflect our expectation from theory (see below). Now, $\u03b7$ rather than $f$ is the only unknown, and its ensemble distribution will be determined in the regression. Figure 3E and F show the buckling behavior as color code in terms of the filament length $L$ and the free gliding velocity $v_{0}$ prior to hitting the obstacle. From maximum likelihood estimation of $L_{c}(v_{0})$ (black lines), we obtain $\u03b7=(0.6\\pm0.4)nNs\\mum^{\u22122}$ for O. lutea and $\u03b7=(0.8\\pm0.6)nNs\\mum^{\u22122}$ for K. animale. In Figure 3G, we compare $L_{c}(v_{0})$ for both species, and the results from the one-parameter regression, placed at the mean velocity $v\u00af$.\n\nWithin the characteristic range of observed velocities (1\u20133 \u00b5m s\u20131), the median $L_{c}$ depends only mildly on $v_{0}$, as compared to its rather broad distribution, indicated by the bands in Figure 3G. Thus a possible correlation between $f$ and $v_{0}$ would only mildly alter $L_{c}$. The natural length distribution (Figure 3\u2014figure supplement 2), however, is very broad, and we conclude that growth rather than velocity or force distributions most strongly impacts the buckling propensity of cyanobacterial colonies. Also, we hardly observed short and fast filaments of K. animale, which might be caused by physiological limitations (Burkholder, 1934).\n\n### Buckling theory\n\nIn the classical self-buckling theory by Euler, the critical length for a vertical column, clamped at its lower end and free at its upper end, of uniform bending modulus $B$, subject to a gravitational force density $f_{g}$, is given by $L_{c}=(7.837B/f_{g})^{1/3}$(Elishakoff, 2000). The buckling of gliding filaments differs in two aspects: the propulsion forces are oriented tangentially instead of vertically, and the front end is supported instead of clamped. Therefore, with $L<L_{c}$ all initial orientations are indifferently stable, while for $L>L_{c}$, buckling induces curvature and a resultant torque on the head, leading to rotation (Fily et al., 2020; Chelakkot et al., 2014; Sekimoto et al., 1995). Buckling under concentrated tangential end-loads has also been investigated in literature (De Canio et al., 2017; Wolgemuth, 2005), but leads to substantially different shapes of buckled filaments.\n\nFollowing existing literature (Fily et al., 2020; Chelakkot et al., 2014; Sekimoto et al., 1995), we use classical Kirchhoff theory for a uniform beam of length $L$ and bending modulus $B$, subject to a force density $b\u2192=\u2212ft\u2192\u2212\u03b7v\u2192$, with an effective active force density $f$ along the tangent $t\u2192$, and an effective friction proportional to the local velocity $v\u2192$. Presumably, this friction is dominated by the lubrication drag from the contact with the substrate, filled by a thin layer of secreted polysaccharide slime which is much more viscous than the surrounding bulk fluid. Speculatively, the motility mechanism might also comprise adhering elements like pili (Khayatan et al., 2015) or foci (Mignot et al., 2007) that increase the overall friction (Pompe et al., 2011). Thus, the drag due to the surrounding bulk fluid can be neglected (Man and Kanso, 2019), and friction is assumed to be isotropic, a common assumption in motility models (Fei et al., 2020; Tchoufag et al., 2019; Wada et al., 2013). We assume a homogeneous and constant distribution of an effectively tangential active force along the filament. Since many cells contribute simultaneously to the gliding force, one may expect noise and fluctuations on the length scale of the individual cell, far below the filament length, which we thus neglect. Based on our observations, we assume a planar configuration and a vanishing twist. Thus we also neglect any helical components of active force or friction, since these appear to merely add rigid-body rotation during free gliding. We parametrize the beam by its orientational angle $\u03d5(s)$ as a function of the contour coordinate $s$ (see Figure 1D), to obtain the Kirchhoff equation (Audoly and Pomeau, 2018)\n\n$$\nB\u2202_{s}\u03ba\u2212n\u2192\u22c5\\int_{s}^{L}ds^{\u2032}(ft\u2192(s^{\u2032})+\u03b7v\u2192(s^{\u2032}))=0,\n$$\n\nwith $\u03ba=\u2202_{s}\u03d5$, the curvature and $n\u2192$, the unit normal vector. The head of the filament ($s=0$) is subject to a localized force $P\u2192$ that balances the load integral and thereby fixes its position. The tail ($s=L$) is naturally force-free, and the two boundary conditions are vanishing torques at the head and tail of the filament:\n\n$$\n\u03ba|_{s=0}=\u03ba|_{s=L}=0.\n$$\n\nThe local velocity is expressed through\n\n$$\nv\u2192=\u2202_{t}x\u2192=\u2202_{t}\\int_{0}^{s}ds^{\u2032}t\u2192(s^{\u2032})=\\int_{0}^{s}ds^{\u2032}n\u2192(s^{\u2032})\u2202_{t}\u03d5(s^{\u2032}).\n$$\n\nInserting Equation 4 into Equation 2 and changing the order of integration, the inner integral can be evaluated to obtain\n\n$$\nB\u2202_{s}^{2}\u03d5\u2212n\u2192\u22c5{\\int_{s}^{L}ds^{\u2032}{ft\u2192+\u03b7(L\u2212s^{\u2032})n\u2192\u2202_{t}\u03d5}+\u03b7(L\u2212s)\\int_{0}^{s}ds^{\u2032}n\u2192\u2202_{t}\u03d5}=0.\n$$\n\nEquation 5 is solved by the method of lines (see Methods and Figure 4\u2014figure supplement 2).\n\nTo derive the critical self-buckling length, Equation 5 can be linearized for two scenarios that lead to the same $L_{c}$: early-time small amplitude buckling and late-time stationary rotation at small and constant curvature (Fily et al., 2020; Chelakkot et al., 2014; Sekimoto et al., 1995). Scaling $s$ by $L$ and $t$ by $t_{0}=L^{4}\u03b7/B$, a single dimensionless parameter remains, the activity coefficient $\u0393=L^{3}f/B$, reminiscent of the flexure number typically used in statistical physics of active polymers (Isele-Holder et al., 2015; Isele-Holder et al., 2016). Seeking stationary rotor solutions $\u03d5(s,t)=\u03d5(s)+\\omegat$, rotating with angular frequency $\\omega$, Equation 5 reduces to (in scaled units) (Chelakkot et al., 2014; Fily et al., 2020; Sekimoto et al., 1995)\n\n$$\n\u2202_{s}^{2}\u03ba+\u0393(1\u2212s)\u03ba+\\omegas=0.\n$$\n\nThis second order ordinary differential equation is subject to three boundary conditions, $\u03ba|_{s=0}=\u03ba|_{s=1}=\u2202_{s}\u03ba|_{s=1}=0$, hence fixing $\\omega(\u0393)$. The trivial solution $\u03ba\u22610$ with $\\omega=0$ is amended by a first non-trivial branch of buckled filaments at $\u0393\u224830.5722$, the root of a combination of hypergeometric functions which is given in Methods and was first found by Sekimoto et al., 1995. Thus, in physical units, the critical length is given by $L_{c}=(30.5722B/f)^{1/3}$, which is reproduced in particle-based simulations (Figure 3\u2014figure supplement 3) analogous to those in Isele-Holder et al., 2015; Isele-Holder et al., 2016.\n\nInserting the population median and quartiles of the distributions of bending modulus and critical length, we can now quantify the distribution of the active force density for the filaments in the ensemble from the buckling measurements. We obtain nearly identical values for both species, $f\u223c(1.0\\pm0.6)nN/\\mum$, where the uncertainty represents a wide distribution of $f$ across the ensemble rather than a measurement error.\n\n### Profile analysis\n\nWe will now compare the evolution of theoretical profiles from Equation 5 to the evolution of the experimental buckling contours. The latter were extracted from the micrographs with an in-house trained convolutional neural network with modified U-Net architecture (Ronneberger et al., 2015) (see Figure 4A, green contour) and tracked from the moment of impact until parts other than the head made contact with the confining walls. This limitation narrows down the available data substantially because buckling frequently induced contact with the channel walls. Figure 4A shows a representative time series of a buckling filament, together with the extracted contour and the fitted solution of Equation 5 (see Methods for details of the fitting procedure). From the fit, we calculate $f$ and $\u03b7$ of individual filaments, using the median bending modulus of the respective species (Figure 4B and C). The dashed line on each panel indicates the value from the logistic regression, representative of the population. Filaments below the critical length do not buckle and no values can be derived from profile fitting: this region is indicated in gray. The light gray zone corresponds to the central quartiles of the critical length distribution, where data are biased toward larger forces because only part of the population can buckle. Indeed, here we record the strongest filaments. This bias is not present in the logistic regression, which is most sensitive in the transition region but equally accounts for buckling and non-buckling outcomes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig4-v1.jpg)\n\n**Figure 4.:** (A) Time series of a characteristic buckling event of O. lutea, overlaying the contour extracted from the images (green) and the best fit of the solution to Equation 5 (red). (B, C) $f_{act}$ and $\u03b7$ vs. filament length $L$, as determined from the fit, for O. lutea and K. animale, respectively. Light gray indicates $L\\inL_{c}\\pm\u0394L_{c}$ (see Figure 3D), dark gray $L<L_{c}\u2212\u0394L_{c}$, where buckling is not observed. The dashed lines are obtained from $L_{c}$ of logistic regression. The filament from (A) is indicated in red. (D) Free-gliding friction coefficient $f_{act}/v$ against $\u03b7$ from the buckling profile fit.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Active force $f_{act}$ and friction coefficient $\u03b7$ vs.filament velocity.Velocities were measured immediately before hitting the obstacle. Neither $f_{act}$ nor $\u03b7$ appears to be correlated with the velocity.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87450/elife-87450-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Equation 5 is discretized according to the scheme described in Methods and integrated over time, starting from a small-amplitude analytical solution to the linearized equations.\n\n## Discussion\n\nRemarkably, the median active forces for the two species match almost perfectly. The logistic regression gives a good estimate for the population average, and the distributions derived from individual profile fits are centered around this median. The similarity between the two species indicates a potential homology of their gliding apparati.\n\nThe comparison with Kirchhoff theory allows us to measure active forces and friction coefficients on an individual basis, going beyond the population mean. Thus it allows for a more insightful analysis, correlating, for instance, these values with length and free gliding speeds. We see no significant correlation between $L$ or $v_{0}$ and $f$ or $\u03b7$, but the observed values of $f$ and $\u03b7$ cover a wide range (Figure 4B and C and Figure 4\u2014figure supplement 1). This is consistent with the logistic regression, where using $v_{0}$ as a second regressor did not significantly reduce the width of the distribution of critical lengths or active forces. The two estimates of the friction coefficient, from logistic regression and individual profile fits, are measured in (predominantly) orthogonal directions: tangentially for the logistic regression where the free gliding velocity was used, and transversely for the evolution of the buckling profiles. Thus, we plot $f/v$ over $\u03b7$ in Figure 4D, finding nearly identical values over about two decades. Since $f$ and $\u03b7$ are not correlated with $v_{0}$, this is due to a correlation between $f$ and $\u03b7$. This relation is remarkable in two aspects: On the one hand, it indicates that friction is mainly isotropic. This suggests that friction is governed by an isotropic process like bond friction or lubrication from the slime layer in the contact with the substrate, the latter being consistent with the observation that mutations deficient in slime secretion do not glide but exogenous addition of slime restores motility (Khayatan et al., 2015). In contrast, hydrodynamic drag from the surrounding bulk fluid (Man and Kanso, 2019), or the internal friction of the gliding apparatus would be expected to generate strongly anisotropic friction. If the latter was dominant, a snapping-like transition into the buckling state would be expected, rather than the continuously growing amplitude that is observed in experiments. On the other hand, it indicates that friction and propulsion forces, despite being quite variable, correlate strongly. Thus, generating more force comes, inevitably, at the expense of added friction. For lubricated contacts, the friction coefficient is proportional to the thickness of the lubricating layer (Snoeijer et al., 2013), and we conjecture active force and drag both increase due to a more intimate contact with the substrate. This supports mechanisms like focal adhesion (Mignot et al., 2007) or a modified type-IV pilus (Khayatan et al., 2015), which generate forces through contact with extracellular surfaces, as the underlying mechanism of the gliding apparatus of filamentous cyanobacteria: more contacts generate more force, but also closer contact with the substrate, thereby increasing friction to the same extent. Force generation by slime extrusion (Hoiczyk and Baumeister, 1998), in contrast, would lead to the opposite behavior: More slime generates more propulsion, but also reduces friction. Besides fundamental fluid-mechanical considerations (Snoeijer et al., 2013), this is rationalized by two experimental observations: i. gliding velocity correlates positively with slime layer thickness (Dhahri et al., 2013) and ii. motility in slime-secretion deficient mutants is restored upon exogenous addition of polysaccharide slime. Still, we emphasize that many other possibilities exist. One could, for instance, postulate a regulation of the generated forces to the experienced friction, to maintain some preferred or saturated velocity.\n\nFinally, we remark that the distribution of $L_{c}$ aligns well with the peak of natural length distributions (see Figure 3\u2014figure supplement 2). Dwelling in soil or as floating aggregates, natural colonies experience less ideal geometries than in our experiments. Nonetheless, we expect a similar buckling behavior since gliding requires contact with a surface or other filaments. As a consequence, small changes in the propulsion force density or the length distribution determine whether the majority of the filaments in a colony is able to buckle or not. This, in turn, has dramatic consequences on the exploration behavior and the emerging patterns (Isele-Holder et al., 2015; Isele-Holder et al., 2016; Abbaspour et al., 2023; Duman et al., 2018; Prathyusha et al., 2018; Jung et al., 2020): $(L/L_{c})^{3}$ is, up to a numerical prefactor, identical to the flexure number (Isele-Holder et al., 2015; Isele-Holder et al., 2016; Duman et al., 2018; Winkler et al., 2017), the ratio of the P\u00e9clet number and the persistence length of active polymer melts. Thus, the ample variety of non-equilibrium phases in such materials (Isele-Holder et al., 2015; Isele-Holder et al., 2016; Prathyusha et al., 2018; Abbaspour et al., 2023) may well have contributed to the evolutionary success of filamentous cyanobacteria.\n\n## Methods\n\n### Cell cultivation\n\nSpecies Oscillatoria lutea (SAG 1459\u20133) and Kamptonema animale (SAG 1459\u20136) were obtained from The Culture Collection of Algae at G\u00f6ttingen University and seeded in T175 culture flask with standard BG-11 nutrition solution. The culture medium was exchanged for fresh BG-11 every four weeks. Cultures were kept in an incubator with an automated 12 hr day (30% light intensity (\u223c20 \u00b5E), 18\u00b0C) and 12 hr night (0% light intensity, 14\u00b0C) cycle, with a continuous 2 hr transition. All experiments were performed at a similar daytime to ensure comparable phases in their circadian rhythm. The night cycle began at 11 \u2009a.m. so experiments could typically be started in the morning towards the end of the bacteria\u2019s day.\n\n### Bending measurements\n\nRectangular arrays of cylindrical micropillars (base diameter 35 \u00b5m and pitch of 80 \u00b5m in both directions) were fabricated using standard SU-8 photolithography on transparent glass wafers. A liquid sample chamber was made by placing a rectangular microscope glass slide on top of the pillar-decorated substrate, using an O-ring cut into two pieces as spacers. After filling the chamber with standard BG-11 nutrient solution, a small fragment from the cyanobacterial cultures is introduced into the chamber with a syringe.\n\nAs filaments dispersed into the pillar-decorated surface autonomously by their gliding motility, a small region with sparsely distributed individual filaments is chosen for bending measurements. Then, a filament is bent between two pillars (about 6 orders of magnitude stiffer than the filament) with the nozzle of the L-bent glass micropipette force sensor (spring constant 9.5 \u00b1 0.3 nN/\u00b5m), mounted on a motorized linear actuator (Newport Corporation, LTA-HS). The speed at which the nozzle moves as well as the amplitude of its displacement is set by the actuator. A detailed procedure for the micropipette fabrication and calibration can be found in Backholm and B\u00e4umchen, 2019. In brief, the micropipette is calibrated by measuring the corresponding cantilever deflection under the applied weight of an evaporating water droplet hanging at the pipette nozzle (see Figure 2\u2014figure supplement 1A). The corresponding error on the pipette spring constant is given by the standard deviation after independent subsequent calibration measurements. We note that this calibration method provides the spring constant of the micropipette in the direction of the nozzle, while during the bending measurements, a sideways deflection is used. We assume that the elastic properties of the pipette cantilever are isotropic, and therefore consider the spring constant of sideways deflection to be equal to the calibration direction.\n\nImage sequences of deflections were recorded at 20\u00d7 magnification and 40 fps with an Olympus IX-83 inverted microscope and a scientific CMOS camera (PCO Edge 4.2). The images were then analyzed with a custom-made image analysis procedure in Matlab, to determine the deflections of the filament and the pipette simultaneously. The deflection of the micropipette is obtained by subtracting the time-dependent position of the piezo controller, which is actuating the base of the pipette, from the nozzle position in the image. The force exerted by the pipette is given by its spring constant times its deflection (Hooke\u2019s law, see Backholm and B\u00e4umchen, 2019). We note that no torsion of the micropipette cantilever was observed while bending the filament, thus, we assume that torsional modes do not play a significant role in the micropipette deflection analysis. The obtained data of the applied force and filament deflection results in a linear plot as shown in Figure 2A.\n\nWe derived the bending modulus according to standard beam theory, through $B=\\frac{\u0394x^{3}}{48}\u2202P/\u2202d$, where $\u0394x$ is the distance between the pillars, $P$ is the force provided through the pipette, at the center between the two pillars, and $d$ is the deflection of the filament. Our values are comparable but slightly larger than values recently derived from cross-flow drag experiments (Faluweki and Goehring, 2022).\n\nFigure 2\u2014figure supplement 1 shows results for different speeds, increasing and decreasing force, as well as a set of exemplary force-distance curves.\n\n### Buckling experiments\n\nWe prepared microfluidic devices according to standard procedures of SU-8 clean-room photo-lithography, followed by PDMS-based soft lithography (Fujii, 2002), binding the cured PDMS imprints to rectangular glass coverslip by plasma activation (Electronic Diener Pico plasma system, air, 50% exposure, 30 s). Prior to binding, two 1 mm holes for flushing the device with BG-11 medium, and one 2 mm hole for loading cyanobacteria to the device, were punched in the PDMS, keeping the punch-outs for sealing the chip later on. Four different device architectures, each with 20 \u00b5m and 40 \u00b5m wide channels, with heights of \u223c 5 \u00b5m were used.\n\nThe devices were first flushed with approximately 5 \u00b5L of conditioned BG-11 medium, through one of the small ports. Then, about 1mm3 of blue-greenish cyanobacteria were loaded into the device through the large port. Finally, the device was sealed with the cylindrical stoppers retained from the punching, and covered by a small round cover slip to minimize evaporation from the device during the experiment.\n\nBuckling experiments were observed by a Nikon Ti2-E inverted microscope on a passive anti-vibration table, with transmitted illumination at about 20 \u00b5E illumination intensity. Microscopy images were taken at 6x- or 10x-magnification with time intervals of either 1 s, 10 s, and 30 s for a couple of hours at a resolution of 4096 \u00d7 4096 pixels with a CMOS camera (Dalsa Genie Nano XL).\n\n### Image analysis of buckling events\n\nRegions of interest were cropped from the image sequences for each of the manually detected collision events, from 50 s before to 50 s after the collision, and analyzed further. The length of each filament was obtained by manually adding a path on top of the images in a standard image editor (Gimp). The decision of whether a filament buckles or not is made manually by watching the video of each event. The velocity is determined by extracting the position of the head of a filament prior to hitting the obstacle for up to six snapshots, and taking the mean traveled distance over this period.\n\nProfiles were extracted only for selected events in which no additional collisions of the filament with the confining walls were observed for at least 10 s after the first contact of the head with the obstacle. First, the microscopy images were processed by an in-house trained, modified U-Net to detect their mid-lines (contours). These contour representations of the images were then vectorized into subpixel-accurate $x$-$y$-coordinates, to obtain the green contour from Figure 4A.\n\n### Logistic regression\n\nWe perform a logistic regression on the individual (weighted) buckling events with a maximum likelihood estimation. This classification algorithm approximates the probability distribution by a logistic function; see Equation 1. By maximizing the log-likelihood, we find the parameters that best predict the buckling probability. The likelihood of correctly predicting the buckling ($y=1$) or non-buckling ($y=0$) behavior of a filament of known length $L$ is given by\n\n$$\nP(y|L)=[sig(\\frac{L\u2212L_{c}}{\u0394L_{c}})]^{y}\u22c5[1\u2212sig(\\frac{L\u2212L_{c}}{\u0394L_{c}})]^{1\u2212y},\n$$\n\nwith two parameters $L_{c}$ and $\u0394L_{c}$ that describe the median critical length and the width of the distribution, respectively. Each individual $i$ with length $L_{i}$ is observed $N_{i}$ times to determine the buckling outcomes $y_{i,j}$. The log-likelihood for representing all the data by a logistic distribution is then given by\n\n$$\nlog\u2061L(L_{c},\u0394L_{c})=\\sumi,j\\frac{y_{i,j}}{N_{i}}log\u2061sig(\\frac{L_{i}\u2212L_{c}}{\u0394L_{c}})+\\frac{1\u2212y_{i,j}}{N_{i}}log\u2061[1\u2212sig(\\frac{L_{i}\u2212L_{c}}{\u0394L_{c}})],\n$$\n\nwhere the weight of each observation is given by $1/N_{i}$, the number of observations of individual $i$, to yield an unbiased estimate for the subsample of the population. Maximal $L$ requires vanishing derivatives of $log\u2061L$ with respect to the parameters $L_{c}$, $\u0394L_{c}$. For the regression with two explanatory variables $L$ and $v_{0}$ i.e., $L_{c}(v_{0})=(\\alphav_{0})^{\u22121/3}$, the same procedure is used, adding the derivative with respect to $\\alpha$ to the minimization criteria.\n\n### Numerics and fitting\n\nThe evolution of the contour shapes according to Equation 5 was derived for 30 different values of $\u0393$, ranging from just above the critical length up to $L/L_{c}\u223c9$, by a numerical solution of Equation 5. Equation 5 was discretized into $n=64$ segments, defining the discrete $\u03d5_{i}$ on the midpoints of the intervals. Second order polynomial interpolation was then used to evaluate differential and integral terms. Time integration was performed with the method of lines, initialized with a solution to the linearized small-amplitude equation. Snapshots of the solution were stored for 64 times, ranging from small amplitude to head angles $\u03d5(s=0)\u223c90^{\u2218}$. These profiles were linearly interpolated in $s$ and $t$ to obtain a continuous function for fitting to the experimental contours.\n\nAs the residual for fitting theoretical profiles to the experiments, we used the square distance between the experimental and theoretical profiles, integrated along the contour. The activity coefficient $\u0393$ and time scale $t_{0}$, together with a rotational and two translational degrees of freedom, were then adapted to minimize the sum of the residuals. First, the theoretical profile with the smallest mean square distance is determined individually for each frame in an experimental time series, with simulation time, $L_{c}$, rotation, and translation as free parameters. The average over these individual fit results were then used as initial parameters for a global fit, where the sum of the residuals of all time steps was minimized simultaneously to derive a global parameter set, containing the time scale $t_{0}$, a time offset, the critical length $L_{c}$, rotation, and translation. In order to estimate the error of the fit, we applied a very coarse bootstrapping, repeating the fit 20 times with randomly chosen subsets of the time steps.\n\nFor molecular dynamics simulations of buckling, the filaments were discretized as chains of $N$ beads with diameter $\\sigma$ and a distance $\\sigma/2$ between consecutive beads. Flexibility is implemented with a harmonic bending potential, $U_{b}=\\frac{\u03ba_{b}}{2}\\sumj=2N\u22121(\\theta_{j}\u2212\\pi)^{2}$, where $\\theta_{j}$ is the angle between consecutive beads $i\u22121,i,i+1$, and self-propulsion by an active force $F_{a}$ on each bead, oriented tangentially along the chain (Abbaspour et al., 2023). The parameters $\u03ba_{b}$ and $f_{a}$ are related to the measured parameters $B$ and $f$ via $B\u2248\\sigma\u03ba_{b}/2$ and $f\u22482F_{a}/\\sigma$. Buckling is induced by steric interaction using a WCA potential (Abbaspour et al., 2023) with a V-shaped obstacle. The dynamics of the chain is given by an overdamped Langevin equation and simulated with the molecular dynamics software HOOMD-blue (Anderson et al., 2020).\n\n### Critical length\n\nTo derive an analytical expression for the critical $\u0393$ in Equation 6, we first solve the homogeneous equation by\n\n$$\n\u03ba_{\\omega=0}=c_{1}Ai(k^{1/3}r)+c_{2}Bi(k^{1/3}r),\n$$\n\nwith $r=s\u22121$, and give a particular solution to the inhomogeneous equation:\n\n$$\n\u03ba=\u03ba_{\\omega=0}+\\frac{1}{k}\u2212r^{2}\u22c5(0F_{1}(;\\frac{4}{3};\\frac{k}{9}r^{3})1F_{2}(\\frac{1}{3};\\frac{2}{3},\\frac{4}{3};\\frac{k}{9}r^{3})\u2212\\frac{1}{2}0F_{1}(;\\frac{2}{3};\\frac{k}{9}r^{3})1F_{2}(\\frac{2}{3};\\frac{4}{3},\\frac{5}{3};\\frac{k}{9}r^{3})),\n$$\n\nwhere the $pF_{q}$ are the generalized hypergeometric functions. The parameters $c_{1}$ and $c_{2}$ are determined by the torque boundary conditions. Then, $\u0393$ is found from the remaining force boundary condition, which boils down to the roots of\n\n$$\n2k0F_{1}(;\\frac{4}{3};\u2212\\frac{k}{9})1F_{2}(\\frac{1}{3};\\frac{2}{3},\\frac{4}{3};\u2212\\frac{k}{9})+0F_{1}(;\\frac{2}{3};\u2212\\frac{k}{9}){2\u2212k1F_{2}(\\frac{2}{3};\\frac{4}{3},\\frac{5}{3};\u2212\\frac{k}{9})}=2.\n$$\n\nThe smallest root is $k\u224830.5722$.\n",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pierre Sens, Institut Curie, CNRS UMR168 France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87450.3.sa0](https://doi.org/10.7554/eLife.87450.3.sa0)\n\nThis valuable paper describes innovative force measurements of the bending modulus of gliding cyanobacteria, along with measurements of the critical buckling length of the cells, which in combination lead to insight into how these cells produce the force necessary to move. Quantitative analysis convincingly shows that the propulsive force and resistive friction coefficient are strongly coupled, which supports propulsion based on adhesion forces rather than slime extrusion.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87450.3.sa1](https://doi.org/10.7554/eLife.87450.3.sa1)\n\nThe paper combines experiments on freely gliding cyanobacteria, buckling experiments using two-dimensional V shaped corners, and micropipette force measurements with theoretical models to study gliding forces in these organisms. The aim is to quantify these forces and use the results to perhaps discriminate between competing mechanisms by which these cells move. A large data set of possible collision events are analyzed, bucking events evaluated, and critical buckling lengths estimated. A line elasticity model is used to analyze the onset of buckling and estimate the effective (viscous type) friction/drag that controls the dynamics of the rotation that ensues post-buckling. This value of the friction/drag is compared to a second estimate obtained by consideration of the active forces and speeds in freely gliding filaments. The authors find that these two independent estimates of friction/drag correlate with each other and are comparable in magnitude. The experiments are conducted carefully, the device fabrication is novel, the data set is interesting, and the analysis is solid. The authors conclude that the experiments are consistent with the propulsion being generated by adhesion forces rather than slime extrusion. While consistent with the data, this conclusion is inferred.\n\nSummary:\n\nThe paper addresses important questions on the mechanisms driving the gliding motility of filamentous cyanobacteria. The authors aim to understand these by estimating the elastic properties of the filaments, and by comparing the resistance to gliding under (a) freely gliding conditions, and (b) in post-buckled rotational states. Experiments are used to estimate the propulsion force density on freely gliding filaments (assuming over damped conditions). Experiments are combined with a theoretical model based on Euler beam theory to extract friction (viscous) coefficients for filaments that buckle and begin to rotate about the pinned end. The main results are estimates for the bending stiffness of the bacteria, the propulsive tangential force density, the buckling threshold in terms of the length, and estimates of the resistive friction (viscous drag) providing the dissipation in the system and balancing the active force. It is found that experiments on the two bacterial species yield nearly identical value of \ud835\udc53 (albeit with rather large variations). The authors conclude that the experiments are consistent with the propulsion being generated by adhesion forces rather than slime extrusion.\n\nStrengths of the paper:\n\nThe strengths of the paper lie in the novel experimental setup and measurements that allow for the estimation of the propulsive force density, critical buckling length, and effective viscous drag forces for movement of the filament along its contour - the axial (parallel) drag coefficient, and the normal (perpendicular) drag coefficient (I assume this is the case, since the post-buckling analysis assumes the bent filament rotates at a constant frequency). These direct measurements are important for serious analysis and discrimination between motility mechanisms.\n\nWeaknesses:\n\nThere are aspects of the analysis and discussion that may be improved. I suggest that the authors take the following comments into consideration while revising their manuscript.\n\nThe conclusion that adhesion via focal adhesions is the cause for propulsion rather than slime protrusion, is consistent with the experimental results that the frictional drag correlates with propulsion force. At the same time, it is hard to rule out other factors that may result in this (friction) viscous drag - (active) force relationship while still being consistent with slime production. More detailed analysis aiming to discriminate between adhesion vs slime protrusion may be outside the scope of the study, but the authors may still want to elaborate on their inference. It would help if there was a detailed discussion on the differences in terms of the active force term for the focal adhesion-based motility vs the slime motility.\n\nCan the authors comment on possible mechanisms (perhaps from the literature) that indicate how isotropic friction may be generated in settings where focal adhesions drive motility. A key aspect here would probably be estimating the extent of this adhesion patch and comparing it to a characteristic contact area. Can lubrication theory be used to estimate characteristic areas of contact (knowing the radius of the filament, and assuming a height above substrate)? If the focal adhesions typically cover areas smaller than this lubrication area, it may suggest the possibility that bacteria essentially present a flat surface insofar as adhesion is concerned, leading to transversely isotropic response in terms of the drag. Of course, we will still require the effective propulsive force to act along the tangent.\n\nI am not sure why the authors mention that the power of the gliding apparatus is not rate limiting. The only way to verify this would be to put these in highly viscous fluids where the drag of the external fluid comes into the picture as well (if focal adhesions are on the substrate facing side, and the upper side is subject to ambient fluid drag). Also, the friction referred to here has the form of a viscous drag (no memory effect, and thus not viscoelastic or gel-like), and it is not clear if forces generated by adhesion involve other forms of drag such as chemical friction via temporary bonds forming and breaking. In quasi-static settings and under certain conditions such as separation of chemical and elastic time scales, bond friction may yield overall force proportional to local sliding velocities.\n\nFor readers from a non-fluids background, some additional discussion of the drag forces, and the forms of friction would help. For a freely gliding filament if \ud835\udc53 is the force density (per unit length), then steady gliding with a viscous frictional drag would suggest (as mentioned in the paper) \ud835\udc53 \u223c \ud835\udc63! \ud835\udc3f \ud835\udf02\u2225. The critical buckling length is then dependent on \ud835\udc53 and on \ud835\udc35 the bending modulus. Here the effective drag is defined per length. I can see from this that if the active force is fixed, and the viscous component resulting from the frictional mechanism is fixed, the critical buckling length will not depend on the velocity (unless I am missing something in their argument), since the velocity is not a primitive variable, and is itself an emergent quantity.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87450.3.sa2](https://doi.org/10.7554/eLife.87450.3.sa2)\n\nIn the presented manuscript, the authors first use structured microfluidic devices with gliding filamentous cyanobacteria inside in combination with micropipette force measurements to measure the bending rigidity of the filaments. The distribution of bending rigidities is very broad.\n\nNext, they use triangular structures to trap the bacteria with the front against an obstacle. Depending on the length and rigidity, the filaments buckle under the propulsive force of the cells. The authors use theoretical expressions for the buckling threshold to infer propulsive force, given the measured length and (mean-) stiffnesses. They find nearly identical values for both species, \ud835\udc53 \u223c (1.0 {plus minus} 0.6) nN\u2215\u00b5m, nearly independent of the velocity. These measurements have to be taken with additional care, as then inferred forces depend strongly on the bending rigidity, which already shows a broad distribution.\n\nFinally, they measure the shape of the filament dynamically to infer friction coefficients via Kirchhoff theory. In this section they report a strong correlation with velocity and report propulsive forces that vary over two orders of magnitude.\n\nFrom a theoretical perspective, not many new results are presented. The authors repeat the the well-known calculation for filaments buckling under propulsive load and arrive at the literature result of buckling when the dimensionless number (f L^3/B) is larger than 30.6 as previously derived by Sekimoto et al in 1995. In my humble opinion, the \"buckling theory\" section belongs to methods.\n\nFinally, the Authors use molecular dynamics type simulations similar to other models to reproduce the buckling dynamics from the experiments.\n\nData and source code are available via trusted institutional or third-party repositories that adhere to policies that make data discoverable, accessible and usable.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87450.3.sa3](https://doi.org/10.7554/eLife.87450.3.sa3)\n\nSummary:\n\nThis paper presents novel and innovative force measurements of the biophysics of gliding cyanobacteria filaments. These measurements allow for estimates of the resistive force between the cell and substrate and provide potential insight into the motility mechanism of these cells, which remains unknown.\n\nStrengths:\n\nThe authors used well-designed microfabricated devices to measure the bending modulus of these cells and to determine the critical length at which the cells buckle. I especially appreciated the way the authors constructed an array of pillars and used it to do 3-point bending measurements and the arrangement the authors used to direct cells into a V-shaped corner in order to examine at what length the cells buckled at. By examining the gliding speed of the cells before buckling events, the authors were able to determine how strongly the buckling length depends on the gliding speed, which could be an indicator of how the force exerted by the cells depends on cell length; however, the authors did not comment on this directly.\n\nWeaknesses:\n\nThere are no major weaknesses in the paper.\n",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e25883fa-0f20-4927-97d7-1c1d6e829a28",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C1",
+      "claim": "Filamentous cyanobacteria are one of the oldest and today still most abundant lifeforms on earth.",
+      "claim_type": "EXPLICIT",
+      "source": "Filamentous cyanobacteria are one of the oldest and today still most abundant lifeforms on earth, with manifold implications in ecology and economics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the evolutionary history and current abundance of filamentous cyanobacteria, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "9333e18e-a33d-4675-aa55-61cb89be7843",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C2",
+      "claim": "Filamentous cyanobacteria have manifold implications in ecology and economics.",
+      "claim_type": "EXPLICIT",
+      "source": "Filamentous cyanobacteria are one of the oldest and today still most abundant lifeforms on earth, with manifold implications in ecology and economics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about the ecological and economic impacts of cyanobacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "b91e05a8-bd79-4ce6-974e-36d3ec55b273",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C3",
+      "claim": "Filamentous cyanobacteria flexible filaments are often several hundred cells long.",
+      "claim_type": "EXPLICIT",
+      "source": "Their flexible filaments, often several hundred cells long, exhibit gliding motility in contact with solid surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive observation about the physical characteristics of the organisms studied, supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "ffa765ca-0869-4369-8e50-14e649c52dc4",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C4",
+      "claim": "Filamentous cyanobacteria exhibit gliding motility in contact with solid surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Their flexible filaments, often several hundred cells long, exhibit gliding motility in contact with solid surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characteristic of filamentous cyanobacteria, supported by scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "fdd9c8e6-8512-4c7d-9e54-87ce9c41679f",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C5",
+      "claim": "The force generating mechanism underlying gliding motility in filamentous cyanobacteria is not yet understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The underlying force generating mechanism is not yet understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of scientific knowledge about the mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "44f842c6-5d40-423e-8d63-1bd48ed19bbb",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C6",
+      "claim": "Propulsion forces and friction coefficients are strongly coupled in the gliding motility of filamentous cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that propulsion forces and friction coefficients are strongly coupled in the gliding motility of filamentous cyanobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by experimental data and analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "2d5711b2-a3c0-48a5-888c-de2a437b366c",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C7",
+      "claim": "Bending moduli of filamentous cyanobacteria can be directly measured using micropipette force sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "We directly measure their bending moduli using micropipette force sensors, and quantify propulsion and friction forces by analyzing their self-buckling behavior, complemented with analytical theory and simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "11bc960c-337f-4fd2-b258-86b1101f47a7",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C8",
+      "claim": "Propulsion and friction forces can be quantified by analyzing self-buckling behavior of filamentous cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We directly measure their bending moduli using micropipette force sensors, and quantify propulsion and friction forces by analyzing their self-buckling behavior, complemented with analytical theory and simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach used in the study to derive force measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "db8891f2-3417-4902-8d8a-d322e9133834",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C9",
+      "claim": "Slime extrusion is unlikely to generate the gliding forces in filamentous cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that slime extrusion unlikely generates the gliding forces, but support adhesion-based hypotheses, similar to the better-studied single-celled myxobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental results showing strong coupling between propulsion and friction forces.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "5fc9ce48-8d8d-420d-9b12-ef284e1184fb",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C10",
+      "claim": "The results support adhesion-based hypotheses for gliding motility, similar to myxobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that slime extrusion unlikely generates the gliding forces, but support adhesion-based hypotheses, similar to the better-studied single-celled myxobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data and comparison with known mechanisms in myxobacteria.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "096cd62f-d6aa-488a-804b-b4ab02314c86",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C11",
+      "claim": "The critical self-buckling lengths align well with the peaks of natural length distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical self-buckling lengths align well with the peaks of natural length distributions, indicating the importance of self-buckling for the organization of their collective in natural and artificial settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of measured critical lengths with observed length distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "b0e990f9-0921-4a4b-87f1-f7d4d28b3c7d",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C12",
+      "claim": "Self-buckling is important for the organization of filamentous cyanobacteria collectives in natural and artificial settings.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical self-buckling lengths align well with the peaks of natural length distributions, indicating the importance of self-buckling for the organization of their collective in natural and artificial settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the alignment between critical buckling lengths and natural length distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "57012117-3faf-4c51-bd96-980c819436f0",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C13",
+      "claim": "Filamentous cyanobacteria contributed majorly to the global fixation of atmospheric carbon dioxide.",
+      "claim_type": "EXPLICIT",
+      "source": "Filamentous cyanobacteria are an omnipresent group of phototrophic prokaryotes, contributing majorly to the global fixation of atmospheric carbon dioxide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the ecological role of cyanobacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "296233be-9bd4-4aea-af8f-b465d79738c2",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C14",
+      "claim": "Filamentous cyanobacteria played an important role in generating atmospheric oxygen in Earth's paleoclimate.",
+      "claim_type": "EXPLICIT",
+      "source": "They played an important role already in the paleoclimate of our planet, having generated the atmospheric oxygen (Whitton, 2012; Sciuto and Moro, 2015) on which animal life is based.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on the paleoclimate role of cyanobacteria.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "4e27dae6-d5de-4177-bed2-bf9a12e65b3e",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C15",
+      "claim": "Animal life is based on atmospheric oxygen generated by cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "They played an important role already in the paleoclimate of our planet, having generated the atmospheric oxygen (Whitton, 2012; Sciuto and Moro, 2015) on which animal life is based.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the evolution of life on Earth, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "0d0d2809-f36a-49a6-bcce-8c96a27ec377",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C16",
+      "claim": "Giant marine and limnic cyanobacterial blooms pose ecological and economical threats.",
+      "claim_type": "EXPLICIT",
+      "source": "Today, giant marine and limnic blooms pose ecological and economical threats (Whitton, 2012; Sciuto and Moro, 2015; Bauer et al., 2020; Fastner et al., 2018), but also enable bioreactor applications, for instance as a renewable energy source (Whitton, 2012; Ruffing and Kallas, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to scientific literature on cyanobacterial blooms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "4892bcb2-8efd-4bc2-a1e1-1d92a8e44f86",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C17",
+      "claim": "Cyanobacterial blooms enable bioreactor applications as a renewable energy source.",
+      "claim_type": "EXPLICIT",
+      "source": "Today, giant marine and limnic blooms pose ecological and economical threats (Whitton, 2012; Sciuto and Moro, 2015; Bauer et al., 2020; Fastner et al., 2018), but also enable bioreactor applications, for instance as a renewable energy source (Whitton, 2012; Ruffing and Kallas, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on bioreactor applications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "96a373b0-aced-4f9c-a801-ef0afd4119f2",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C18",
+      "claim": "Filamentous cyanobacteria contain up to several hundred linearly stacked cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The long and flexible filaments contain up to several hundred, linearly stacked cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive observation about the structure of filamentous cyanobacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "5410c846-508e-4c26-8543-a1386d76fff7",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C19",
+      "claim": "Many species of filamentous cyanobacteria exhibit gliding motility when in contact with solid surfaces or other filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Many species exhibit gliding motility when in contact with solid surfaces or other filaments, but no swimming motion (Burkholder, 1934).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to scientific literature on cyanobacterial motility.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "bb233946-3768-4084-ac94-d955fe8f164f",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C20",
+      "claim": "Filamentous cyanobacteria do not exhibit swimming motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Many species exhibit gliding motility when in contact with solid surfaces or other filaments, but no swimming motion (Burkholder, 1934).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to scientific literature on cyanobacterial motility.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "9577c364-1416-464b-971a-e2fe82cdd4ca",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C21",
+      "claim": "Motility enables filaments to aggregate into colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Motility enables filaments to aggregate into colonies, adapting their architecture to environmental conditions (Whitton, 2012; Khayatan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on cyanobacterial colony formation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "22c8a4bb-7e0e-483c-84f2-df976c8e22b9",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C22",
+      "claim": "Filamentous cyanobacteria adapt their colony architecture to environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Motility enables filaments to aggregate into colonies, adapting their architecture to environmental conditions (Whitton, 2012; Khayatan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on cyanobacterial colony behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "87b2e4b3-c0eb-470d-926f-956f9ab64b63",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C23",
+      "claim": "Slime extrusion has been proposed as a force generating mechanism for cyanobacterial gliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Slime extrusion (Hoiczyk and Baumeister, 1998), metachronal waves on surface fibrils (Halfen and Castenholz, 1971; Halfen, 1973; Read et al., 2007), and acoustic streaming (Koiller et al., 2010) have been proposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to scientific literature proposing this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "c1b3baef-f6ad-47dd-9cce-013e9e4b0c6a",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C24",
+      "claim": "Metachronal waves on surface fibrils have been proposed as a force generating mechanism for cyanobacterial gliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Slime extrusion (Hoiczyk and Baumeister, 1998), metachronal waves on surface fibrils (Halfen and Castenholz, 1971; Halfen, 1973; Read et al., 2007), and acoustic streaming (Koiller et al., 2010) have been proposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature proposing this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "7b280e26-ff8d-4498-9260-1f63e3fb5d56",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C25",
+      "claim": "Acoustic streaming has been proposed as a force generating mechanism for cyanobacterial gliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Slime extrusion (Hoiczyk and Baumeister, 1998), metachronal waves on surface fibrils (Halfen and Castenholz, 1971; Halfen, 1973; Read et al., 2007), and acoustic streaming (Koiller et al., 2010) have been proposed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to scientific literature proposing this mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "03c0d92a-b93e-41ba-b541-9a77d4de97f1",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C26",
+      "claim": "A few species of filamentous cyanobacteria appear to employ a type-IV-pilus-related mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "A few species appear to employ a type-IV-pilus-related mechanism (Khayatan et al., 2015; Wilde and Mullineaux, 2015), similar to the better-studied myxobacteria (Godwin et al., 1989; Mignot et al., 2007; Nan et al., 2014; Copenhagen et al., 2021; Godwin et al., 1989), which are short, rod-shaped single cells that exhibit two types of motility: S (social) motility based on pilus extension and retraction, and A (adventurous) motility based on focal adhesion (Chen and Nan, 2022), for which also slime extrusion at the trailing cell pole was earlier postulated as mechanism (Wolgemuth, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on type-IV pilus mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "796cb576-e3c8-415a-9255-253accc35846",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C27",
+      "claim": "Myxobacteria are short, rod-shaped single cells that exhibit two types of motility: S (social) motility and A (adventurous) motility.",
+      "claim_type": "EXPLICIT",
+      "source": "A few species appear to employ a type-IV-pilus-related mechanism (Khayatan et al., 2015; Wilde and Mullineaux, 2015), similar to the better-studied myxobacteria (Godwin et al., 1989; Mignot et al., 2007; Nan et al., 2014; Copenhagen et al., 2021; Godwin et al., 1989), which are short, rod-shaped single cells that exhibit two types of motility: S (social) motility based on pilus extension and retraction, and A (adventurous) motility based on focal adhesion (Chen and Nan, 2022), for which also slime extrusion at the trailing cell pole was earlier postulated as mechanism (Wolgemuth, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about myxobacteria, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "4ef8bce4-872f-4263-bb00-c0a04a4e42be",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C28",
+      "claim": "S (social) motility in myxobacteria is based on pilus extension and retraction.",
+      "claim_type": "EXPLICIT",
+      "source": "A few species appear to employ a type-IV-pilus-related mechanism (Khayatan et al., 2015; Wilde and Mullineaux, 2015), similar to the better-studied myxobacteria (Godwin et al., 1989; Mignot et al., 2007; Nan et al., 2014; Copenhagen et al., 2021; Godwin et al., 1989), which are short, rod-shaped single cells that exhibit two types of motility: S (social) motility based on pilus extension and retraction, and A (adventurous) motility based on focal adhesion (Chen and Nan, 2022), for which also slime extrusion at the trailing cell pole was earlier postulated as mechanism (Wolgemuth, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about myxobacterial motility, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "f474d6fe-946b-4d92-b966-61db533f8798",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C29",
+      "claim": "A (adventurous) motility in myxobacteria is based on focal adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "A few species appear to employ a type-IV-pilus-related mechanism (Khayatan et al., 2015; Wilde and Mullineaux, 2015), similar to the better-studied myxobacteria (Godwin et al., 1989; Mignot et al., 2007; Nan et al., 2014; Copenhagen et al., 2021; Godwin et al., 1989), which are short, rod-shaped single cells that exhibit two types of motility: S (social) motility based on pilus extension and retraction, and A (adventurous) motility based on focal adhesion (Chen and Nan, 2022), for which also slime extrusion at the trailing cell pole was earlier postulated as mechanism (Wolgemuth, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about myxobacterial motility, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "1bc2d765-7e0f-4632-8353-65eaf69af5a8",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C30",
+      "claim": "Slime extrusion at the trailing cell pole was earlier postulated as a mechanism for myxobacterial A motility.",
+      "claim_type": "EXPLICIT",
+      "source": "A few species appear to employ a type-IV-pilus-related mechanism (Khayatan et al., 2015; Wilde and Mullineaux, 2015), similar to the better-studied myxobacteria (Godwin et al., 1989; Mignot et al., 2007; Nan et al., 2014; Copenhagen et al., 2021; Godwin et al., 1989), which are short, rod-shaped single cells that exhibit two types of motility: S (social) motility based on pilus extension and retraction, and A (adventurous) motility based on focal adhesion (Chen and Nan, 2022), for which also slime extrusion at the trailing cell pole was earlier postulated as mechanism (Wolgemuth, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to scientific literature on myxobacterial motility mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "4b99473f-606a-4e37-90ce-881e8d875a90",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C31",
+      "claim": "Most gliding filamentous cyanobacteria do not exhibit visible pili.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, most gliding filamentous cyanobacteria do not exhibit visible pili and their gliding mechanism appears to be distinct from myxobacteria (Khayatan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to scientific literature on cyanobacterial structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "990289fd-b2ac-425c-bcad-b1c8338cff30",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C32",
+      "claim": "The gliding mechanism of most filamentous cyanobacteria appears to be distinct from myxobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, most gliding filamentous cyanobacteria do not exhibit visible pili and their gliding mechanism appears to be distinct from myxobacteria (Khayatan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to scientific literature comparing cyanobacterial and myxobacterial motility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "62974e93-3d6a-485d-86c0-5643db6bdc0d",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C33",
+      "claim": "Self-buckling is an important instability for self-propelling rod-like micro-organisms to change the orientation of their motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-Buckling is an important instability for self-propelling rod-like micro-organisms to change the orientation of their motion, enabling aggregation or the escape from traps (Fily et al., 2020; Man and Kanso, 2019; Isele-Holder et al., 2015; Isele-Holder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on self-buckling in microorganisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "7994a086-7ff3-4db4-bbac-6e2acb5bc5dd",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C34",
+      "claim": "Self-buckling enables aggregation or escape from traps in self-propelling rod-like micro-organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-Buckling is an important instability for self-propelling rod-like micro-organisms to change the orientation of their motion, enabling aggregation or the escape from traps (Fily et al., 2020; Man and Kanso, 2019; Isele-Holder et al., 2015; Isele-Holder et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on self-buckling behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "a46ddcb0-a9b3-4282-8f89-6beb368ea03d",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C35",
+      "claim": "The notion of self-buckling goes back to work of Leonhard Euler in 1780 on elastic columns subject to gravity.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion of self-buckling goes back to work of Leonhard Euler in 1780, who described elastic columns subject to gravity (Elishakoff, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is historical knowledge about the origin of buckling theory, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "a154831c-43d1-4457-b962-bce774cff45b",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C38",
+      "claim": "Force and friction are strongly coupled in filamentous cyanobacteria, which favors an adhesion-based propulsion mechanism over the slime-extrusion hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Force and friction are strongly coupled, which favors an adhesion-based propulsion mechanism (Khayatan et al., 2015; Wilde and Mullineaux, 2015) over the still customary slime-extrusion hypothesis (Hoiczyk and Baumeister, 1998; McBride, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing coupling between force and friction, and is supported by citations to relevant literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "7bb34dde-3b5d-4094-bf34-7471c7d36eaa",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C39",
+      "claim": "The critical lengths found are close to the peak in the length distribution in freely growing colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical lengths we found are close to the peak in the length distribution in freely growing colonies, indicating the importance of this quantity for their self-organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of measured critical lengths with observed length distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "cde0bd3f-0fc8-4201-8649-23a1b58f62a2",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C45",
+      "claim": "388 collision events were collected for O. lutea.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we collected 388 collision events for O. lutea and 280 for K. animale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "cb1cbc4c-599e-4f4d-9a8b-51b9f5899348",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C46",
+      "claim": "280 collision events were collected for K. animale.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we collected 388 collision events for O. lutea and 280 for K. animale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "09dfd3bf-8d87-46ba-9eb7-357508507390",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C52",
+      "claim": "Growth rather than velocity or force distributions most strongly impacts the buckling propensity of cyanobacterial colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "The natural length distribution (Figure 3\u2014figure supplement 2), however, is very broad, and we conclude that growth rather than velocity or force distributions most strongly impacts the buckling propensity of cyanobacterial colonies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is inferred from the comparison of length distributions with velocity and force distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "5e49dc97-f80f-4db4-8655-a6f4c9cbbf02",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C54",
+      "claim": "The buckling of gliding filaments differs from Euler's classical case in that propulsion forces are oriented tangentially instead of vertically.",
+      "claim_type": "EXPLICIT",
+      "source": "The buckling of gliding filaments differs in two aspects: the propulsion forces are oriented tangentially instead of vertically, and the front end is supported instead of clamped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration distinguishing the current study from classical buckling theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "248ebe5a-a395-4e0c-924d-0fc39dbef9e1",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C55",
+      "claim": "The buckling of gliding filaments differs from Euler's classical case in that the front end is supported instead of clamped.",
+      "claim_type": "EXPLICIT",
+      "source": "The buckling of gliding filaments differs in two aspects: the propulsion forces are oriented tangentially instead of vertically, and the front end is supported instead of clamped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration distinguishing the current study from classical buckling theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "7505d712-5672-445f-bad1-42d96e859f6f",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C58",
+      "claim": "The friction is dominated by the lubrication drag from the contact with the substrate, filled by a thin layer of secreted polysaccharide slime.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably, this friction is dominated by the lubrication drag from the contact with the substrate, filled by a thin layer of secreted polysaccharide slime which is much more viscous than the surrounding bulk fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the source of friction, based on inference from the experimental setup.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "6e6efe12-b31f-46f6-8e87-c2269e19e039",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C59",
+      "claim": "The polysaccharide slime layer is much more viscous than the surrounding bulk fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably, this friction is dominated by the lubrication drag from the contact with the substrate, filled by a thin layer of secreted polysaccharide slime which is much more viscous than the surrounding bulk fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference about the properties of the slime layer.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "d7bd3568-6249-45ae-a8f6-c4e4c2779697",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C60",
+      "claim": "The motility mechanism might comprise adhering elements like pili or foci that increase the overall friction.",
+      "claim_type": "EXPLICIT",
+      "source": "Speculatively, the motility mechanism might also comprise adhering elements like pili (Khayatan et al., 2015) or foci (Mignot et al., 2007) that increase the overall friction (Pompe et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation, supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "a3d124d5-12d9-4eca-8692-87d9f86280c3",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C61",
+      "claim": "The drag due to the surrounding bulk fluid can be neglected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the drag due to the surrounding bulk fluid can be neglected (Man and Kanso, 2019), and friction is assumed to be isotropic, a common assumption in motility models (Fei et al., 2020; Tchoufag et al., 2019; Wada et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This assumption is supported by citations to relevant literature on motility models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "2d4c9e64-819c-4406-9495-6ce7ac8fa97d",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C62",
+      "claim": "Friction is assumed to be isotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the drag due to the surrounding bulk fluid can be neglected (Man and Kanso, 2019), and friction is assumed to be isotropic, a common assumption in motility models (Fei et al., 2020; Tchoufag et al., 2019; Wada et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This assumption is supported by citations to relevant literature on motility models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "4744e8e2-280d-4304-803d-0d0d3d120b3e",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C63",
+      "claim": "A homogeneous and constant distribution of an effectively tangential active force along the filament is assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume a homogeneous and constant distribution of an effectively tangential active force along the filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption stated explicitly in the methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "7aabaa2f-0dca-4ae0-87aa-8c6cda10edea",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C64",
+      "claim": "Noise and fluctuations on the length scale of the individual cell are neglected.",
+      "claim_type": "EXPLICIT",
+      "source": "Since many cells contribute simultaneously to the gliding force, one may expect noise and fluctuations on the length scale of the individual cell, far below the filament length, which we thus neglect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption based on the scale of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "033bbdc8-1c04-400f-af35-ae12e4cd983d",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C65",
+      "claim": "A planar configuration and vanishing twist are assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our observations, we assume a planar configuration and a vanishing twist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "06b29cf0-489b-4459-af45-7b46a743e58c",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C66",
+      "claim": "Helical components of active force or friction are neglected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we also neglect any helical components of active force or friction, since these appear to merely add rigid-body rotation during free gliding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption based on observations of the system behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "8789dac6-51ab-41b7-969c-2fd675e5035a",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C69",
+      "claim": "The median active forces for the two species match almost perfectly.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the median active forces for the two species match almost perfectly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is based on the calculated force values from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "0b510f88-b01c-43b3-9008-0b9b28ee02e3",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C70",
+      "claim": "The similarity between the two species indicates a potential homology of their gliding apparati.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity between the two species indicates a potential homology of their gliding apparati.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity in measured forces and friction coefficients.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "c1a31eaa-fda7-4d14-aaf4-cbe973a7e0f3",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C74",
+      "claim": "Friction is mainly isotropic in filamentous cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This relation is remarkable in two aspects: On the one hand, it indicates that friction is mainly isotropic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of friction coefficients measured in orthogonal directions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "165ef970-2a02-4933-b021-d99664686d0a",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C75",
+      "claim": "Friction is governed by an isotropic process like bond friction or lubrication from the slime layer in the contact with the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that friction is governed by an isotropic process like bond friction or lubrication from the slime layer in the contact with the substrate, the latter being consistent with the observation that mutations deficient in slime secretion do not glide but exogenous addition of slime restores motility (Khayatan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the isotropic nature of friction and supported by citations to relevant literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "ad2fcc08-1b54-4233-b619-3b18a551c1c4",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C76",
+      "claim": "Mutations deficient in slime secretion do not glide but exogenous addition of slime restores motility.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that friction is governed by an isotropic process like bond friction or lubrication from the slime layer in the contact with the substrate, the latter being consistent with the observation that mutations deficient in slime secretion do not glide but exogenous addition of slime restores motility (Khayatan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is cited from the literature and supports the role of slime in motility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "86638675-05a9-4499-bd6a-11c86fbffb90",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C77",
+      "claim": "Friction and propulsion forces correlate strongly despite being quite variable.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, it indicates that friction and propulsion forces, despite being quite variable, correlate strongly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing the relationship between force and friction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "dd63d7b9-6fc8-4698-a4ee-e271359af0ce",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C78",
+      "claim": "Generating more force comes at the expense of added friction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, generating more force comes, inevitably, at the expense of added friction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed correlation between force and friction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "8e743ac9-c37e-45c6-ab62-91bd720a7d60",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C79",
+      "claim": "For lubricated contacts, the friction coefficient is proportional to the thickness of the lubricating layer.",
+      "claim_type": "EXPLICIT",
+      "source": "For lubricated contacts, the friction coefficient is proportional to the thickness of the lubricating layer (Snoeijer et al., 2013), and we conjecture active force and drag both increase due to a more intimate contact with the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from fluid mechanics, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "0878dc08-df34-479b-bfa7-89df5f5cd6d7",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C80",
+      "claim": "Active force and drag both increase due to a more intimate contact with the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "For lubricated contacts, the friction coefficient is proportional to the thickness of the lubricating layer (Snoeijer et al., 2013), and we conjecture active force and drag both increase due to a more intimate contact with the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conjecture based on the observed correlation and theoretical considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "a7375d96-94c0-4747-bdee-7afc107c28c5",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C81",
+      "claim": "Mechanisms like focal adhesion or modified type-IV pilus generate forces through contact with extracellular surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports mechanisms like focal adhesion (Mignot et al., 2007) or a modified type-IV pilus (Khayatan et al., 2015), which generate forces through contact with extracellular surfaces, as the underlying mechanism of the gliding apparatus of filamentous cyanobacteria: more contacts generate more force, but also closer contact with the substrate, thereby increasing friction to the same extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and supported by citations to relevant literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "be931658-a0f0-46b4-ab61-063d4abf618d",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C82",
+      "claim": "More contacts generate more force but also closer contact with the substrate, thereby increasing friction to the same extent.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports mechanisms like focal adhesion (Mignot et al., 2007) or a modified type-IV pilus (Khayatan et al., 2015), which generate forces through contact with extracellular surfaces, as the underlying mechanism of the gliding apparatus of filamentous cyanobacteria: more contacts generate more force, but also closer contact with the substrate, thereby increasing friction to the same extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation inferred from the observed correlation between force and friction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "6620bd8e-facf-45ec-abdc-67b80cff8fd9",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C83",
+      "claim": "Force generation by slime extrusion would lead to the opposite behavior: more slime generates more propulsion but also reduces friction.",
+      "claim_type": "EXPLICIT",
+      "source": "Force generation by slime extrusion (Hoiczyk and Baumeister, 1998), in contrast, would lead to the opposite behavior: More slime generates more propulsion, but also reduces friction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction about the expected behavior of slime extrusion mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "6c971f51-f212-4485-b57a-455979a4c2b2",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C84",
+      "claim": "Gliding velocity correlates positively with slime layer thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides fundamental fluid-mechanical considerations (Snoeijer et al., 2013), this is rationalized by two experimental observations: i. gliding velocity correlates positively with slime layer thickness (Dhahri et al., 2013) and ii. motility in slime-secretion deficient mutants is restored upon exogenous addition of polysaccharide slime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is cited from the literature and supports the role of slime in motility.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "306567f0-9ee1-46cd-b6cb-0eab264a9004",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C86",
+      "claim": "Small changes in the propulsion force density or the length distribution determine whether the majority of filaments in a colony is able to buckle or not.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, small changes in the propulsion force density or the length distribution determine whether the majority of the filaments in a colony is able to buckle or not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the relationship between critical length and the natural length distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "b4bdc25a-deea-46a4-9643-cec2a45573c3",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C88",
+      "claim": "The ample variety of non-equilibrium phases in active polymer melts may have contributed to the evolutionary success of filamentous cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ample variety of non-equilibrium phases in such materials (Isele-Holder et al., 2015; Isele-Holder et al., 2016; Prathyusha et al., 2018; Abbaspour et al., 2023) may well have contributed to the evolutionary success of filamentous cyanobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about evolutionary implications, supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "0f0f0345-bbf9-42eb-927d-24c7b633b472",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C89",
+      "claim": "Species Oscillatoria lutea (SAG 1459\u20133) and Kamptonema animale (SAG 1459\u20136) were obtained from The Culture Collection of Algae at G\u00f6ttingen University.",
+      "claim_type": "EXPLICIT",
+      "source": "Species Oscillatoria lutea (SAG 1459\u20133) and Kamptonema animale (SAG 1459\u20136) were obtained from The Culture Collection of Algae at G\u00f6ttingen University and seeded in T175 culture flask with standard BG-11 nutrition solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the source of the organisms studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "cbf3643c-e908-46a4-8319-7a4efe4ebd68",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C92",
+      "claim": "The V-shape of the trap reduces the chance of filaments slipping sideways instead of buckling.",
+      "claim_type": "EXPLICIT",
+      "source": "The V-shape is not necessarily required but reduces the chance of filaments slipping sideways instead of buckling, as was observed sometimes for collisions with flat walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the experimental design and its effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "15372b0e-773c-44d6-ada6-c9429120836f",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "claim_id": "C93",
+      "claim": "The bending modulus values are comparable but slightly larger than values recently derived from cross-flow drag experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Our values are comparable but slightly larger than values recently derived from cross-flow drag experiments (Faluweki and Goehring, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with values from the literature, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8a19bd69-9672-412a-a5d6-e3171c86edce",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors measured bending moduli of O. lutea and K. animale using micropipette force sensors in three-point bending tests. O. lutea showed B=(1.4\u00b10.4)\u00d710\u207b\u00b9\u2076 Jm and K. animale showed B=(1.0\u00b10.3)\u00d710\u207b\u00b9\u2076 Jm, with values comparable to but slightly larger than previous cross-flow drag experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C89, and C93 describe a well-established experimental method (micropipette force sensing) applied to measure bending moduli. The measurements show appropriate controls (speed independence, lack of hysteresis), multiple replicates per individual, and comparison with literature values, providing strong support for the reported bending moduli.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "a9c4db4e-4483-47d9-8a0b-305d09199b75",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors quantified propulsion and friction forces by analyzing self-buckling behavior of filaments colliding with V-shaped obstacles in microfluidic devices. They collected 388 collision events for O. lutea and 280 for K. animale, classifying buckling vs. non-buckling outcomes to determine critical lengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C45, C46, C54, C55, and C92 describe the experimental approach and data collection for buckling analysis. The method is clearly described with appropriate sample sizes, manual classification of buckling events, and theoretical justification for how buckling differs from classical Euler buckling. The V-shaped trap design is justified by observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "866bb06a-6df6-485c-ab88-e2a463b681c0",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate that propulsion forces and friction coefficients are strongly coupled in filamentous cyanobacteria, with friction being mainly isotropic. Generating more force inevitably comes at the expense of added friction, as shown by correlation between tangential and transverse friction measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C74, C77, and C78 present a key finding supported by measurements in orthogonal directions (tangential from free gliding, transverse from buckling profiles). The correlation between f/v and \u03b7 over two decades (Figure 4D) provides strong quantitative evidence for the coupling, though the mechanistic interpretation requires additional assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "42cfe2bd-0636-450c-8717-ee0bbfaba43e",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors conclude that slime extrusion is unlikely to generate gliding forces, instead supporting adhesion-based mechanisms (focal adhesion or type-IV pilus) similar to myxobacteria. This is based on the observed positive correlation between force and friction, which contradicts predictions for slime extrusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, C38, C81, C82, and C83 present a mechanistic conclusion supported by the force-friction coupling data and theoretical reasoning. The argument that slime extrusion would produce opposite behavior (more slime = more propulsion but less friction) is logically sound, though the conclusion relies on theoretical predictions rather than direct mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "71f08a77-a9be-42fd-8dba-8a5a6ca5ec1f",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The critical self-buckling lengths align well with peaks in natural length distributions of freely growing colonies, indicating that self-buckling is important for colony organization. Small changes in propulsion force density or length distribution determine whether most filaments can buckle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C12, C39, and C86 connect experimental measurements to ecological significance. The alignment between critical lengths (~150-160 \u03bcm) and natural length distribution peaks (Figure 3\u2014figure supplement 2) provides quantitative support, though the causal relationship between buckling propensity and colony organization is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "4b8b2228-f876-4543-b706-91733813fa8f",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The median active forces for O. lutea and K. animale match almost perfectly at f~(1.0\u00b10.6) nN/\u03bcm, suggesting potential homology of their gliding apparati.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C70 report a quantitative finding from the buckling analysis. The similarity in forces between species is well-supported by the data (Figure 4B,C), though the inference of homology is speculative and would require additional phylogenetic or molecular evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "7b46d661-3d00-40c4-84ec-adf5b07b24fa",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Growth rather than velocity or force distributions most strongly impacts the buckling propensity of cyanobacterial colonies, as the natural length distribution is very broad compared to the mild velocity dependence of critical length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is supported by comparison of the broad natural length distribution (Figure 3\u2014figure supplement 2) with the relatively narrow velocity-dependent variation in Lc (Figure 3G). The conclusion follows logically from the data, though it does not account for potential correlations between growth rate and force production.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors develop a theoretical model based on Kirchhoff beam theory with several key assumptions: friction dominated by lubrication drag from polysaccharide slime, isotropic friction, homogeneous tangential active force, planar configuration, and neglecting noise at the cell scale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C66 describe modeling assumptions that are reasonable given the experimental setup and supported by citations to relevant literature. The assumptions are explicitly stated (C58, C60 are marked as speculative), and the isotropic friction assumption is validated by experimental data (C74). However, some assumptions (e.g., homogeneous force distribution) are simplifications that may not fully capture biological complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "171b64bf-ba17-4a21-bd3a-ce3c9bdb8031",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Friction is governed by an isotropic process like bond friction or lubrication from the slime layer, consistent with observations that slime-deficient mutants don't glide but motility is restored by exogenous slime addition, and that gliding velocity correlates positively with slime layer thickness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C76, C79, C80, and C84 integrate the current findings with prior literature. The isotropic friction finding (C75) is supported by the current data, while C76 and C84 cite prior experimental observations. However, C80 is explicitly marked as conjecture, and the mechanistic link between slime thickness and friction requires additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "0378bb11-f004-4ec4-acf5-bb0abc71287c",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ample variety of non-equilibrium phases in active polymer melts may have contributed to the evolutionary success of filamentous cyanobacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is explicitly speculative and makes a broad evolutionary claim without direct evidence. While the connection between buckling behavior and the flexure number in active polymer physics is valid, the leap to evolutionary success is unsupported by the data presented and would require comparative evolutionary analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors provide background on filamentous cyanobacteria as ancient, abundant organisms with ecological and economic importance, describing their structure (hundreds of linearly stacked cells), gliding motility on surfaces, and role in carbon fixation and oxygen generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C13-C22 present established background knowledge supported by appropriate citations. These claims accurately represent the current understanding of cyanobacterial biology, ecology, and evolutionary history, though they are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "da77f9a7-0893-4f69-9f9f-1b97805657e5",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors review proposed mechanisms for cyanobacterial gliding (slime extrusion, metachronal waves, acoustic streaming, type-IV pili) and compare with myxobacterial motility systems, noting that most gliding cyanobacteria lack visible pili and appear mechanistically distinct from myxobacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C32 accurately summarize prior literature on proposed gliding mechanisms with appropriate citations. The comparison with myxobacteria is well-supported, and the distinction that most cyanobacteria lack visible pili (C31) is cited. This provides appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "51a5c963-463f-40dc-9d6a-d9f50f4e5eb2",
+      "content_id": "ccece0dd-2cd3-4994-b57a-412c68ee3ee6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors provide theoretical background on self-buckling as an important instability for self-propelling rod-like microorganisms, tracing the concept back to Euler's 1780 work on elastic columns under gravity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 accurately present the theoretical foundation for buckling analysis with appropriate citations to both historical (Euler) and contemporary literature on active matter. This background is essential for understanding the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "ea4db739-5821-461a-90b3-e1f6ddaccfdd",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors directly measured bending moduli of filamentous cyanobacteria using micropipette force sensors. The measured values are comparable but slightly larger than values from cross-flow drag experiments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple reviewers explicitly praised the bending modulus measurements as 'innovative' and 'novel.' Reviewer 3 stated the authors 'used well-designed microfabricated devices to measure the bending modulus' and 'especially appreciated the way the authors constructed an array of pillars.' Reviewer 2 noted the measurements were 'conducted carefully.' No concerns were raised about the methodology or results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "a17a17f4-6091-4bd7-8143-bf0b16522642",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors quantified propulsion and friction forces by analyzing self-buckling behavior of filaments in V-shaped traps. They collected 388 collision events for O. lutea and 280 for K. animale, finding that critical self-buckling lengths align well with peaks of natural length distributions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently praised the buckling experiments. The editor noted 'measurements of the critical buckling length of the cells' as a key strength. Reviewer 3 'especially appreciated...the arrangement the authors used to direct cells into a V-shaped corner in order to examine at what length the cells buckled at.' Reviewer 1 stated 'the data set is interesting, and the analysis is solid.' The experimental design and data collection were not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "407fb844-5e40-426e-96b5-56c5cf031f7d",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrate that propulsion forces and friction coefficients are strongly coupled, with friction being mainly isotropic. Generating more force comes at the expense of added friction, despite both being quite variable.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly stated 'Quantitative analysis convincingly shows that the propulsive force and resistive friction coefficient are strongly coupled.' Reviewer 1 noted 'the authors find that these two independent estimates of friction/drag correlate with each other and are comparable in magnitude' and described the experiments as 'conducted carefully' with 'solid' analysis. No reviewer challenged this core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "5eff3685-4e40-4872-884f-b9b864aff591",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The results indicate that slime extrusion is unlikely to generate gliding forces, instead supporting adhesion-based hypotheses (focal adhesion or modified type-IV pilus) similar to myxobacteria. More contacts generate more force but also increase friction proportionally, opposite to what slime extrusion would predict.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the editor stated the coupling 'supports propulsion based on adhesion forces rather than slime extrusion,' Reviewer 1 explicitly noted 'this conclusion is inferred' and 'While consistent with the data, this conclusion is inferred.' Reviewer 1 further stated 'it is hard to rule out other factors that may result in this (friction) viscous drag - (active) force relationship while still being consistent with slime production' and requested 'more detailed discussion on the differences in terms of the active force term for the focal adhesion-based motility vs the slime motility.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "473dc864-49dd-4888-ae22-bd9fecfe0872",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The median active forces for the two species (O. lutea and K. animale) match almost perfectly, indicating potential homology of their gliding apparati.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 noted 'It is found that experiments on the two bacterial species yield nearly identical value of f (albeit with rather large variations)' without raising concerns. Reviewer 2 acknowledged 'They find nearly identical values for both species, f \u223c (1.0 \u00b1 0.6) nN/\u00b5m' though cautioned about the broad distribution of bending rigidity. The finding itself was not disputed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "8088dd89-ba60-4046-875c-10ca1d81ff3a",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Self-buckling is important for the organization of filamentous cyanobacteria collectives. Growth rather than velocity or force distributions most strongly impacts buckling propensity, and small changes in propulsion force density or length distribution determine whether filaments can buckle.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 noted 'By examining the gliding speed of the cells before buckling events, the authors were able to determine how strongly the buckling length depends on the gliding speed.' The alignment between critical lengths and natural distributions was not challenged by any reviewer, and the overall analysis was described as 'solid' by Reviewer 1.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "59051752-c055-4731-a99e-64b7258e368b",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors developed a theoretical model for buckling of gliding filaments that differs from Euler's classical case in having tangential propulsion forces and a supported (not clamped) front end. The model assumes isotropic friction, homogeneous force distribution, planar configuration, and neglects bulk fluid drag and cell-scale fluctuations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 noted 'From a theoretical perspective, not many new results are presented' and that the authors 'arrive at the literature result of buckling when the dimensionless number (f L^3/B) is larger than 30.6 as previously derived by Sekimoto et al in 1995.' However, no reviewer challenged the validity of the modeling assumptions or their application. Reviewer 1 requested 'additional discussion of the drag forces, and the forms of friction' for clarity, but did not dispute the model itself.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "c510d76b-0131-4bc0-b16d-26e6abe5caac",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Friction is governed by an isotropic process like bond friction or lubrication from the slime layer. Mutations deficient in slime secretion do not glide but exogenous slime addition restores motility. Active force and drag both increase due to more intimate substrate contact.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 requested the authors 'comment on possible mechanisms (perhaps from the literature) that indicate how isotropic friction may be generated in settings where focal adhesions drive motility' and asked whether 'lubrication theory be used to estimate characteristic areas of contact.' The reviewer also noted 'it is not clear if forces generated by adhesion involve other forms of drag such as chemical friction via temporary bonds forming and breaking.' These requests indicate the mechanistic interpretation requires further elaboration.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "e0d6db52-aa2f-497d-8d8a-3e962efe875f",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The friction is presumably dominated by lubrication drag from contact with the substrate through a viscous polysaccharide slime layer. The motility mechanism might speculatively comprise adhering elements like pili or foci that increase friction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are explicitly speculative (using 'presumably' and 'speculatively' in the manuscript). Reviewer 1's request for 'more detailed discussion' and questions about mechanisms suggest these interpretations need further support. No reviewer explicitly endorsed these speculative mechanistic details.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "4aba773f-c806-4c33-a24b-20f0a4ef8c31",
+      "content_id": "c393901e-8940-4480-8b8f-ccf7706ff279",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The ample variety of non-equilibrium phases in active polymer melts may have contributed to the evolutionary success of filamentous cyanobacteria.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This speculative evolutionary claim was not addressed or challenged by any reviewer, suggesting implicit acceptance as a reasonable speculation based on the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2d5711b2-a3c0-48a5-888c-de2a437b366c",
+      "result_id": "8a19bd69-9672-412a-a5d6-e3171c86edce"
+    },
+    {
+      "claim_id": "0f0f0345-bbf9-42eb-927d-24c7b633b472",
+      "result_id": "8a19bd69-9672-412a-a5d6-e3171c86edce"
+    },
+    {
+      "claim_id": "15372b0e-773c-44d6-ada6-c9429120836f",
+      "result_id": "8a19bd69-9672-412a-a5d6-e3171c86edce"
+    },
+    {
+      "claim_id": "11bc960c-337f-4fd2-b258-86b1101f47a7",
+      "result_id": "a9c4db4e-4483-47d9-8a0b-305d09199b75"
+    },
+    {
+      "claim_id": "cde0bd3f-0fc8-4201-8649-23a1b58f62a2",
+      "result_id": "a9c4db4e-4483-47d9-8a0b-305d09199b75"
+    },
+    {
+      "claim_id": "cb1cbc4c-599e-4f4d-9a8b-51b9f5899348",
+      "result_id": "a9c4db4e-4483-47d9-8a0b-305d09199b75"
+    },
+    {
+      "claim_id": "5e49dc97-f80f-4db4-8655-a6f4c9cbbf02",
+      "result_id": "a9c4db4e-4483-47d9-8a0b-305d09199b75"
+    },
+    {
+      "claim_id": "248ebe5a-a395-4e0c-924d-0fc39dbef9e1",
+      "result_id": "a9c4db4e-4483-47d9-8a0b-305d09199b75"
+    },
+    {
+      "claim_id": "cbf3643c-e908-46a4-8319-7a4efe4ebd68",
+      "result_id": "a9c4db4e-4483-47d9-8a0b-305d09199b75"
+    },
+    {
+      "claim_id": "44f842c6-5d40-423e-8d63-1bd48ed19bbb",
+      "result_id": "866bb06a-6df6-485c-ab88-e2a463b681c0"
+    },
+    {
+      "claim_id": "c1a31eaa-fda7-4d14-aaf4-cbe973a7e0f3",
+      "result_id": "866bb06a-6df6-485c-ab88-e2a463b681c0"
+    },
+    {
+      "claim_id": "86638675-05a9-4499-bd6a-11c86fbffb90",
+      "result_id": "866bb06a-6df6-485c-ab88-e2a463b681c0"
+    },
+    {
+      "claim_id": "dd63d7b9-6fc8-4698-a4ee-e271359af0ce",
+      "result_id": "866bb06a-6df6-485c-ab88-e2a463b681c0"
+    },
+    {
+      "claim_id": "db8891f2-3417-4902-8d8a-d322e9133834",
+      "result_id": "42cfe2bd-0636-450c-8717-ee0bbfaba43e"
+    },
+    {
+      "claim_id": "5fc9ce48-8d8d-420d-9b12-ef284e1184fb",
+      "result_id": "42cfe2bd-0636-450c-8717-ee0bbfaba43e"
+    },
+    {
+      "claim_id": "a154831c-43d1-4457-b962-bce774cff45b",
+      "result_id": "42cfe2bd-0636-450c-8717-ee0bbfaba43e"
+    },
+    {
+      "claim_id": "a7375d96-94c0-4747-bdee-7afc107c28c5",
+      "result_id": "42cfe2bd-0636-450c-8717-ee0bbfaba43e"
+    },
+    {
+      "claim_id": "be931658-a0f0-46b4-ab61-063d4abf618d",
+      "result_id": "42cfe2bd-0636-450c-8717-ee0bbfaba43e"
+    },
+    {
+      "claim_id": "6620bd8e-facf-45ec-abdc-67b80cff8fd9",
+      "result_id": "42cfe2bd-0636-450c-8717-ee0bbfaba43e"
+    },
+    {
+      "claim_id": "096cd62f-d6aa-488a-804b-b4ab02314c86",
+      "result_id": "71f08a77-a9be-42fd-8dba-8a5a6ca5ec1f"
+    },
+    {
+      "claim_id": "b0e990f9-0921-4a4b-87f1-f7d4d28b3c7d",
+      "result_id": "71f08a77-a9be-42fd-8dba-8a5a6ca5ec1f"
+    },
+    {
+      "claim_id": "7bb34dde-3b5d-4094-bf34-7471c7d36eaa",
+      "result_id": "71f08a77-a9be-42fd-8dba-8a5a6ca5ec1f"
+    },
+    {
+      "claim_id": "306567f0-9ee1-46cd-b6cb-0eab264a9004",
+      "result_id": "71f08a77-a9be-42fd-8dba-8a5a6ca5ec1f"
+    },
+    {
+      "claim_id": "8789dac6-51ab-41b7-969c-2fd675e5035a",
+      "result_id": "4b8b2228-f876-4543-b706-91733813fa8f"
+    },
+    {
+      "claim_id": "0b510f88-b01c-43b3-9008-0b9b28ee02e3",
+      "result_id": "4b8b2228-f876-4543-b706-91733813fa8f"
+    },
+    {
+      "claim_id": "09dfd3bf-8d87-46ba-9eb7-357508507390",
+      "result_id": "7b46d661-3d00-40c4-84ec-adf5b07b24fa"
+    },
+    {
+      "claim_id": "7505d712-5672-445f-bad1-42d96e859f6f",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "6e6efe12-b31f-46f6-8e87-c2269e19e039",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "d7bd3568-6249-45ae-a8f6-c4e4c2779697",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "a3d124d5-12d9-4eca-8692-87d9f86280c3",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "2d4c9e64-819c-4406-9495-6ce7ac8fa97d",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "4744e8e2-280d-4304-803d-0d0d3d120b3e",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "7aabaa2f-0dca-4ae0-87aa-8c6cda10edea",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "033bbdc8-1c04-400f-af35-ae12e4cd983d",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "06b29cf0-489b-4459-af45-7b46a743e58c",
+      "result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67"
+    },
+    {
+      "claim_id": "165ef970-2a02-4933-b021-d99664686d0a",
+      "result_id": "171b64bf-ba17-4a21-bd3a-ce3c9bdb8031"
+    },
+    {
+      "claim_id": "ad2fcc08-1b54-4233-b619-3b18a551c1c4",
+      "result_id": "171b64bf-ba17-4a21-bd3a-ce3c9bdb8031"
+    },
+    {
+      "claim_id": "8e743ac9-c37e-45c6-ab62-91bd720a7d60",
+      "result_id": "171b64bf-ba17-4a21-bd3a-ce3c9bdb8031"
+    },
+    {
+      "claim_id": "0878dc08-df34-479b-bfa7-89df5f5cd6d7",
+      "result_id": "171b64bf-ba17-4a21-bd3a-ce3c9bdb8031"
+    },
+    {
+      "claim_id": "6c971f51-f212-4485-b57a-455979a4c2b2",
+      "result_id": "171b64bf-ba17-4a21-bd3a-ce3c9bdb8031"
+    },
+    {
+      "claim_id": "b4bdc25a-deea-46a4-9643-cec2a45573c3",
+      "result_id": "0378bb11-f004-4ec4-acf5-bb0abc71287c"
+    },
+    {
+      "claim_id": "e25883fa-0f20-4927-97d7-1c1d6e829a28",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "9333e18e-a33d-4675-aa55-61cb89be7843",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "b91e05a8-bd79-4ce6-974e-36d3ec55b273",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "ffa765ca-0869-4369-8e50-14e649c52dc4",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "fdd9c8e6-8512-4c7d-9e54-87ce9c41679f",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "57012117-3faf-4c51-bd96-980c819436f0",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "296233be-9bd4-4aea-af8f-b465d79738c2",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "4e27dae6-d5de-4177-bed2-bf9a12e65b3e",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "0d0d2809-f36a-49a6-bcce-8c96a27ec377",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "4892bcb2-8efd-4bc2-a1e1-1d92a8e44f86",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "96a373b0-aced-4f9c-a801-ef0afd4119f2",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "5410c846-508e-4c26-8543-a1386d76fff7",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "bb233946-3768-4084-ac94-d955fe8f164f",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "9577c364-1416-464b-971a-e2fe82cdd4ca",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "22c8a4bb-7e0e-483c-84f2-df976c8e22b9",
+      "result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770"
+    },
+    {
+      "claim_id": "87b2e4b3-c0eb-470d-926f-956f9ab64b63",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "c1b3baef-f6ad-47dd-9cce-013e9e4b0c6a",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "7b280e26-ff8d-4498-9260-1f63e3fb5d56",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "03c0d92a-b93e-41ba-b541-9a77d4de97f1",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "796cb576-e3c8-415a-9255-253accc35846",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "4ef8bce4-872f-4263-bb00-c0a04a4e42be",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "f474d6fe-946b-4d92-b966-61db533f8798",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "1bc2d765-7e0f-4632-8353-65eaf69af5a8",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "4b99473f-606a-4e37-90ce-881e8d875a90",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "990289fd-b2ac-425c-bcad-b1c8338cff30",
+      "result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5"
+    },
+    {
+      "claim_id": "62974e93-3d6a-485d-86c0-5643db6bdc0d",
+      "result_id": "51a5c963-463f-40dc-9d6a-d9f50f4e5eb2"
+    },
+    {
+      "claim_id": "7994a086-7ff3-4db4-bbac-6e2acb5bc5dd",
+      "result_id": "51a5c963-463f-40dc-9d6a-d9f50f4e5eb2"
+    },
+    {
+      "claim_id": "a46ddcb0-a9b3-4282-8f89-6beb368ea03d",
+      "result_id": "51a5c963-463f-40dc-9d6a-d9f50f4e5eb2"
+    },
+    {
+      "claim_id": "2d5711b2-a3c0-48a5-888c-de2a437b366c",
+      "result_id": "ea4db739-5821-461a-90b3-e1f6ddaccfdd"
+    },
+    {
+      "claim_id": "15372b0e-773c-44d6-ada6-c9429120836f",
+      "result_id": "ea4db739-5821-461a-90b3-e1f6ddaccfdd"
+    },
+    {
+      "claim_id": "11bc960c-337f-4fd2-b258-86b1101f47a7",
+      "result_id": "a17a17f4-6091-4bd7-8143-bf0b16522642"
+    },
+    {
+      "claim_id": "096cd62f-d6aa-488a-804b-b4ab02314c86",
+      "result_id": "a17a17f4-6091-4bd7-8143-bf0b16522642"
+    },
+    {
+      "claim_id": "7bb34dde-3b5d-4094-bf34-7471c7d36eaa",
+      "result_id": "a17a17f4-6091-4bd7-8143-bf0b16522642"
+    },
+    {
+      "claim_id": "cde0bd3f-0fc8-4201-8649-23a1b58f62a2",
+      "result_id": "a17a17f4-6091-4bd7-8143-bf0b16522642"
+    },
+    {
+      "claim_id": "cb1cbc4c-599e-4f4d-9a8b-51b9f5899348",
+      "result_id": "a17a17f4-6091-4bd7-8143-bf0b16522642"
+    },
+    {
+      "claim_id": "44f842c6-5d40-423e-8d63-1bd48ed19bbb",
+      "result_id": "407fb844-5e40-426e-96b5-56c5cf031f7d"
+    },
+    {
+      "claim_id": "c1a31eaa-fda7-4d14-aaf4-cbe973a7e0f3",
+      "result_id": "407fb844-5e40-426e-96b5-56c5cf031f7d"
+    },
+    {
+      "claim_id": "86638675-05a9-4499-bd6a-11c86fbffb90",
+      "result_id": "407fb844-5e40-426e-96b5-56c5cf031f7d"
+    },
+    {
+      "claim_id": "dd63d7b9-6fc8-4698-a4ee-e271359af0ce",
+      "result_id": "407fb844-5e40-426e-96b5-56c5cf031f7d"
+    },
+    {
+      "claim_id": "db8891f2-3417-4902-8d8a-d322e9133834",
+      "result_id": "5eff3685-4e40-4872-884f-b9b864aff591"
+    },
+    {
+      "claim_id": "5fc9ce48-8d8d-420d-9b12-ef284e1184fb",
+      "result_id": "5eff3685-4e40-4872-884f-b9b864aff591"
+    },
+    {
+      "claim_id": "a154831c-43d1-4457-b962-bce774cff45b",
+      "result_id": "5eff3685-4e40-4872-884f-b9b864aff591"
+    },
+    {
+      "claim_id": "a7375d96-94c0-4747-bdee-7afc107c28c5",
+      "result_id": "5eff3685-4e40-4872-884f-b9b864aff591"
+    },
+    {
+      "claim_id": "be931658-a0f0-46b4-ab61-063d4abf618d",
+      "result_id": "5eff3685-4e40-4872-884f-b9b864aff591"
+    },
+    {
+      "claim_id": "6620bd8e-facf-45ec-abdc-67b80cff8fd9",
+      "result_id": "5eff3685-4e40-4872-884f-b9b864aff591"
+    },
+    {
+      "claim_id": "8789dac6-51ab-41b7-969c-2fd675e5035a",
+      "result_id": "473dc864-49dd-4888-ae22-bd9fecfe0872"
+    },
+    {
+      "claim_id": "0b510f88-b01c-43b3-9008-0b9b28ee02e3",
+      "result_id": "473dc864-49dd-4888-ae22-bd9fecfe0872"
+    },
+    {
+      "claim_id": "b0e990f9-0921-4a4b-87f1-f7d4d28b3c7d",
+      "result_id": "8088dd89-ba60-4046-875c-10ca1d81ff3a"
+    },
+    {
+      "claim_id": "09dfd3bf-8d87-46ba-9eb7-357508507390",
+      "result_id": "8088dd89-ba60-4046-875c-10ca1d81ff3a"
+    },
+    {
+      "claim_id": "306567f0-9ee1-46cd-b6cb-0eab264a9004",
+      "result_id": "8088dd89-ba60-4046-875c-10ca1d81ff3a"
+    },
+    {
+      "claim_id": "5e49dc97-f80f-4db4-8655-a6f4c9cbbf02",
+      "result_id": "59051752-c055-4731-a99e-64b7258e368b"
+    },
+    {
+      "claim_id": "248ebe5a-a395-4e0c-924d-0fc39dbef9e1",
+      "result_id": "59051752-c055-4731-a99e-64b7258e368b"
+    },
+    {
+      "claim_id": "a3d124d5-12d9-4eca-8692-87d9f86280c3",
+      "result_id": "59051752-c055-4731-a99e-64b7258e368b"
+    },
+    {
+      "claim_id": "2d4c9e64-819c-4406-9495-6ce7ac8fa97d",
+      "result_id": "59051752-c055-4731-a99e-64b7258e368b"
+    },
+    {
+      "claim_id": "4744e8e2-280d-4304-803d-0d0d3d120b3e",
+      "result_id": "59051752-c055-4731-a99e-64b7258e368b"
+    },
+    {
+      "claim_id": "7aabaa2f-0dca-4ae0-87aa-8c6cda10edea",
+      "result_id": "59051752-c055-4731-a99e-64b7258e368b"
+    },
+    {
+      "claim_id": "033bbdc8-1c04-400f-af35-ae12e4cd983d",
+      "result_id": "59051752-c055-4731-a99e-64b7258e368b"
+    },
+    {
+      "claim_id": "06b29cf0-489b-4459-af45-7b46a743e58c",
+      "result_id": "59051752-c055-4731-a99e-64b7258e368b"
+    },
+    {
+      "claim_id": "165ef970-2a02-4933-b021-d99664686d0a",
+      "result_id": "c510d76b-0131-4bc0-b16d-26e6abe5caac"
+    },
+    {
+      "claim_id": "ad2fcc08-1b54-4233-b619-3b18a551c1c4",
+      "result_id": "c510d76b-0131-4bc0-b16d-26e6abe5caac"
+    },
+    {
+      "claim_id": "8e743ac9-c37e-45c6-ab62-91bd720a7d60",
+      "result_id": "c510d76b-0131-4bc0-b16d-26e6abe5caac"
+    },
+    {
+      "claim_id": "0878dc08-df34-479b-bfa7-89df5f5cd6d7",
+      "result_id": "c510d76b-0131-4bc0-b16d-26e6abe5caac"
+    },
+    {
+      "claim_id": "7505d712-5672-445f-bad1-42d96e859f6f",
+      "result_id": "e0d6db52-aa2f-497d-8d8a-3e962efe875f"
+    },
+    {
+      "claim_id": "6e6efe12-b31f-46f6-8e87-c2269e19e039",
+      "result_id": "e0d6db52-aa2f-497d-8d8a-3e962efe875f"
+    },
+    {
+      "claim_id": "d7bd3568-6249-45ae-a8f6-c4e4c2779697",
+      "result_id": "e0d6db52-aa2f-497d-8d8a-3e962efe875f"
+    },
+    {
+      "claim_id": "b4bdc25a-deea-46a4-9643-cec2a45573c3",
+      "result_id": "4aba773f-c806-4c33-a24b-20f0a4ef8c31"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "4a9d1e0e-0cbd-41b3-960b-48b18ff06155",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "866bb06a-6df6-485c-ab88-e2a463b681c0",
+      "peer_result_id": "407fb844-5e40-426e-96b5-56c5cf031f7d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C6, C74, C77, C78 regarding force-friction coupling. Both evaluations find this core finding SUPPORTED with strong quantitative evidence. OpenEval notes the correlation over two decades while peer reviewers describe the analysis as 'convincing' and 'solid.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "65e9d3d0-731f-4323-a210-d1cdfb418a8c",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "42cfe2bd-0636-450c-8717-ee0bbfaba43e",
+      "peer_result_id": "5eff3685-4e40-4872-884f-b9b864aff591",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C9, C10, C38, C81, C82, C83 regarding the adhesion-based propulsion mechanism. OpenEval rates SUPPORTED based on logical reasoning, while peer reviewers rate UNCERTAIN, explicitly noting 'this conclusion is inferred' and requesting more detailed discussion to rule out alternative mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "618c6e0f-469a-463e-b20c-fca667b5c76b",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "4b8b2228-f876-4543-b706-91733813fa8f",
+      "peer_result_id": "473dc864-49dd-4888-ae22-bd9fecfe0872",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C69, C70 regarding similar forces between species. Both evaluations find this SUPPORTED. OpenEval notes the data support but questions the homology inference, while peer reviewers acknowledge the finding without disputing it despite noting large variations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "e5c3378c-2a86-4074-bb17-16893d9cdfac",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0378bb11-f004-4ec4-acf5-bb0abc71287c",
+      "peer_result_id": "4aba773f-c806-4c33-a24b-20f0a4ef8c31",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claim C88 regarding evolutionary success. OpenEval rates UNCERTAIN, noting the evolutionary claim lacks direct evidence and is explicitly speculative. Peer reviewers rate SUPPORTED, with no challenges raised, suggesting implicit acceptance of the speculation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "abeab6d4-3144-4207-9c3a-892a192b4031",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "171b64bf-ba17-4a21-bd3a-ce3c9bdb8031",
+      "peer_result_id": "c510d76b-0131-4bc0-b16d-26e6abe5caac",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C75, C76, C79, C80 regarding friction mechanisms. OpenEval rates SUPPORTED with caveats about C80 being conjectural. Peer reviewers rate UNCERTAIN, requesting elaboration on mechanisms for isotropic friction generation and noting unclear aspects of adhesion-generated forces.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "99f152ad-823b-420e-9c36-0dea250b2ca2",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "8a19bd69-9672-412a-a5d6-e3171c86edce",
+      "peer_result_id": "ea4db739-5821-461a-90b3-e1f6ddaccfdd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C7, C93 regarding bending modulus measurements. Both evaluations find this SUPPORTED. OpenEval emphasizes appropriate controls and replicates, while peer reviewers praise the methodology as 'innovative' and 'novel' with well-designed devices.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "63a71615-010d-427f-9764-cd486a673325",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67",
+      "peer_result_id": "59051752-c055-4731-a99e-64b7258e368b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on modeling assumptions (claims C58-C66 in OpenEval, C54-C66 in peer review). Both rate SUPPORTED. OpenEval notes reasonable assumptions with appropriate citations, while peer reviewers acknowledge the theoretical approach arrives at established results without challenging validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "f306e27d-b2b7-40a0-9822-bf48478d07a3",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a9c4db4e-4483-47d9-8a0b-305d09199b75",
+      "peer_result_id": "a17a17f4-6091-4bd7-8143-bf0b16522642",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on buckling experiments (claims C8, C45, C46, C54, C55, C92 in OpenEval; C8, C11, C39, C45, C46 in peer review). Both rate SUPPORTED. OpenEval emphasizes clear methodology and sample sizes, while peer reviewers praise the V-shaped trap design as particularly appreciated and the analysis as 'solid.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "cfa7dc36-35fd-4c4c-8127-c8666e337e41",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "71f08a77-a9be-42fd-8dba-8a5a6ca5ec1f",
+      "peer_result_id": "8088dd89-ba60-4046-875c-10ca1d81ff3a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ecological significance claims (C11, C12, C39, C86 in OpenEval; C12, C52, C86 in peer review). Both rate SUPPORTED. OpenEval notes alignment between critical lengths and natural distributions, while peer reviewers acknowledge the speed-buckling relationship analysis without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "b32dfc73-7bad-48f9-ae23-55d845ac102b",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "7b46d661-3d00-40c4-84ec-adf5b07b24fa",
+      "peer_result_id": "8088dd89-ba60-4046-875c-10ca1d81ff3a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C52 regarding length distribution variation. Both rate SUPPORTED. OpenEval notes the logical comparison between broad natural distribution and narrow velocity-dependent variation, while peer reviewers implicitly accept this through their overall positive assessment of the buckling analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "8c883116-cef4-40cd-99c5-e07d53e7ea32",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ceb8747c-2106-4ef8-9bfc-f21d7bbeba67",
+      "peer_result_id": "e0d6db52-aa2f-497d-8d8a-3e962efe875f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on speculative mechanistic claims C58, C59, C60. OpenEval rates the broader set (C58-C66) as SUPPORTED with noted simplifications, while peer reviewers rate these specific speculative claims as UNCERTAIN, noting they are explicitly marked as speculative and need further support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "f5e91fd7-80f4-4dcb-b7af-09e7be22d11c",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "7bfa75af-21ea-407e-b8e3-4f393c1d2770",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background claims C1-C5, C13-C22 as SUPPORTED, representing established knowledge with appropriate citations. No corresponding peer review evaluation found, as reviewers typically do not assess background literature claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "d610c91d-3bd4-458b-bcc7-1b85726c5c2a",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "da77f9a7-0893-4f69-9f9f-1b97805657e5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated literature summary claims C23-C32 regarding gliding mechanisms as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as these are contextual background claims rather than novel findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    },
+    {
+      "id": "c13ec87e-bf27-4903-9447-aabde27e606e",
+      "submission_id": "4a4b656f-ec42-4598-9828-bc74fcf8227a",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "51a5c963-463f-40dc-9d6a-d9f50f4e5eb2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated theoretical foundation claims C33-C35 as SUPPORTED with appropriate citations to buckling theory. No corresponding peer review evaluation found, as reviewers did not separately assess this background theoretical framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-20T23:18:44.901523Z"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MPO Nts neurons are GABAergic, spontaneously active with burst firing patterns, and express both Nts and Slc32a1 transcripts. The neurons fire at ~4.3 Hz at 36\u00b0C, display low threshold spikes, and generate doublets/triplets of action potentials in response to depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 provide converging evidence from electrophysiology (firing patterns, capacitance, LTS) and molecular biology (scRT/PCR showing Nts and Slc32a1 expression, absence of Slc17a6) that characterize MPO Nts neurons as GABAergic with specific electrophysiological properties. The data are internally consistent and appropriately quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Optogenetic stimulation of MPO Nts neurons inhibits postsynaptic MPO neurons through GABA release, but unmasking with gabazine reveals an underlying excitatory effect mediated by NtsR1 activation. The excited neurons express Adcyap1 transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 demonstrate a dual inhibitory-excitatory mechanism through systematic pharmacological dissection. The gabazine experiments (C37) unmask excitation that is blocked by NtsR1 antagonist (C38-C39), and molecular identification of Adcyap1 in target neurons (C40) links to known thermoregulatory circuits. The experimental logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "MPO Nts neurons synaptically release GABA (instantaneous IPSCs) and Nts (delayed inward current after 20-40s) upon optogenetic stimulation. Brief stimulation (<10s) produces only IPSCs, while longer stimulation (>30s) additionally activates an NtsR1-dependent inward current (~9-11 pA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 establish temporal dissociation of GABA and Nts release through voltage-clamp experiments with appropriate pharmacological controls (glutamate receptor blockers, NtsR1 antagonist, gabazine). The duration-dependent effects (C44-C45) and replication in females (C48-C49) strengthen the findings. The inference about synaptic GABA release (C42-C43) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C98"
+    ],
+    "result": "MPO Nts neurons do not form reciprocal connections with each other but synapse onto MPO Adcyap1 neurons. No projections to known thermoregulatory output regions were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52, and C98 establish local circuit organization through negative findings (no reciprocal connections, no projections to downstream sites) and positive identification of Adcyap1 targets. While negative data require careful interpretation, the absence of responses in 8/8 neurons (C50) and lack of fluorescent signal at projection sites (C52) are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Optogenetic stimulation of MPO Nts neurons produces hyperthermia (~1.2-1.4\u00b0C), but deletion of Slc32a1 in these neurons reverses the effect to hypothermia (~1.4-1.6\u00b0C). This pattern is observed in both male and female mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 demonstrate a critical role for GABA release in determining the direction of temperature change. The reversal from hyperthermia to hypothermia upon Slc32a1 deletion is striking and replicated across sexes. Statistical significance is reported (p<0.01), and appropriate controls (eYFP mice) are included. The findings are internally consistent with in vitro data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "MPO Nts neurons lacking Slc32a1 retain normal basal properties but their optogenetic stimulation excites postsynaptic MPO neurons (increasing firing from 5.7 to 12.2 Hz) through NtsR1-dependent inward currents. Target neurons express Adcyap1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 show that removing GABA release unmasks pure excitatory effects. The quantitative data (C60), pharmacological blockade by NtsR1 antagonist (C61), voltage-clamp confirmation (C62), and molecular identification (C63) provide converging evidence. This complements the gabazine experiments in wild-type neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "RNAscope analysis confirms Nts and Slc32a1 transcript colocalization in control mice but not in Ntscre Slc32a1lox/lox mice, validating the genetic deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 provides essential validation of the genetic model through in situ hybridization. The presence of colocalization in controls and absence in knockouts directly confirms successful Slc32a1 deletion in Nts neurons. This is critical for interpreting all subsequent experiments in the knockout mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C108"
+    ],
+    "result": "Mice lacking Slc32a1 in Nts neurons show altered fever responses to LPS, with significantly lower core body temperature during intermediate and late fever phases, suggesting GABA signaling from neurotensinergic neurons contributes to hyperthermic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C108 demonstrate altered fever dynamics in knockout mice with appropriate statistical analysis. The inference about GABA involvement in hyperthermic mechanisms (C108) is reasonable given the data, though the authors acknowledge complexity and conflicting prior literature (C109-C111). The result is well-documented but interpretation remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C112",
+      "C113"
+    ],
+    "result": "During heat exposure, Ntscre Slc32a1lox/lox mice reach 41.5\u00b0C faster than controls (1.33 vs 1.53 hr, p=2.14\u00d710\u207b\u2074), suggesting GABA release from neurotensinergic neurons is involved in heat loss mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 provide quantitative evidence with appropriate statistics. The inference (C113) that GABA from Nts neurons controls heat loss is supported by prior literature (C112) and the observed phenotype. The faster temperature rise in knockouts is consistent with impaired heat dissipation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C117"
+    ],
+    "result": "Ntscre Slc32a1lox/lox mice show altered circadian body temperature rhythm with earlier onset (~1 hr) and later termination (~3 hr) of the active phase, supporting a role for neurotensinergic neurons in circadian temperature control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C117 document altered circadian patterns with appropriate temporal resolution. The inference about neurotensinergic involvement in circadian control (C117) is supported by citations and the observed phenotype, though the speculation about suprachiasmatic nucleus involvement requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "During cold exposure (4\u00b0C), Ntscre Slc32a1lox/lox mice display paradoxical hyperthermia (37.4\u00b0C) at onset and maintain higher temperatures throughout, contrasting with the expected hypothermia based on local preoptic GABA effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 document an unexpected phenotype during cold exposure. The authors acknowledge this contradicts predictions based on local preoptic GABA effects (C114) and offer speculative explanations involving extra-MPO Nts neurons (C116). While the data are clearly presented, the mechanistic interpretation remains uncertain and requires additional experiments to resolve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Chemogenetic activation of all central Nts neurons induces robust hypothermia (4.8\u00b10.6\u00b0C), which is blocked 76% by combined NtsR1 and NtsR2 antagonists in the MPO, indicating the MPO is the primary site of action with both receptor subtypes contributing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 demonstrate that widespread Nts neuron activation produces hypothermia comparable to exogenous Nts infusion. The systematic pharmacological dissection (C75-C77) with individual and combined antagonists provides strong evidence for MPO localization and dual receptor involvement. The 76% blockade (C77) supports but doesn't completely prove the MPO as the sole site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Chemogenetic activation of Nts neurons/projections in MPO slices excites Adcyap1 neurons (firing increases from 4.2 to 10.6 Hz) through NtsR1-mediated inward currents and increases both sEPSC and sIPSC frequency/amplitude. NtsR2 antagonist selectively reduces sEPSC amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 provide comprehensive characterization of chemogenetic effects with appropriate quantification and statistical analysis (C80). The differential effects of NtsR1 (inward current, C85) and NtsR2 (sEPSC amplitude, C86) antagonists reveal distinct receptor roles. The net excitatory effect on Adcyap1 neurons (C81) links to hypothermic outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "MPO Nts neurons co-release GABA and Nts with distinct temporal dynamics: GABA acts instantaneously while Nts acts after 20-40s delay. The net effect during stimulation is inhibition, with excitation unmasked only after stimulation ends or with GABA blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 synthesize multiple experimental findings into a coherent model of dual transmitter release with temporal separation. The characterization as GABAergic (C87), burst-firing neurosecretory-like neurons (C88), and the temporal dynamics (C90) are well-supported. The speculation about functional implications (C91) is reasonable but requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The inhibition-excitation sequence from MPO Nts neurons may serve to reset membrane potential, synchronize neural activity, generate oscillatory patterns, or modulate circuit gain, though these functional interpretations are speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C97 offer theoretical interpretations of the observed inhibition-excitation sequence based on general neurophysiological principles. While the speculation is informed by established concepts, these functional roles are not directly tested in the manuscript. The claims represent reasonable hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Stimulation of MPO Nts neurons alone is insufficient for hypothermia, but activation of all central Nts neurons produces torpor-like hypothermia (4-5\u00b0C). Neurotensinergic projections to preoptic Adcyap1 neurons may initiate torpor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106 and C118 synthesize key findings showing MPO stimulation alone produces hyperthermia while brain-wide activation produces hypothermia. The connection to torpor (C119-C120) is supported by prior literature and the magnitude/duration of hypothermia. The speculation about torpor initiation (C121) is reasonable but requires direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Chemogenetic activation increases sEPSCs beyond optogenetic effects, potentially through glutamatergic Nts projections from posterior thalamus/periaqueductal gray or through NtsR2-mediated astrocytic glutamate release at high Nts concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 documents an additional effect with chemogenetics. The proposed mechanisms (C123-C126) are speculative, invoking glutamatergic Nts neurons in other regions (with citations, C123-C124) or astrocytic NtsR2 activation (C125-C126). While plausible, these interpretations lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims establish that Nts is a neuromodulator with hypothermic effects when infused centrally or in the preoptic area, a region critical for thermoregulation with high densities of Nts neurons and receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 provide established background from prior literature with appropriate citations. These claims set up the scientific context and rationale for the study. The prior work is accurately represented and relevant to the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115"
+    ],
+    "result": "Background claims about Adcyap1 neurons, EP3 neurons, and GABA's complex thermoregulatory effects establish the known circuitry and prior findings that contextualize the current results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C115 accurately cite prior literature establishing that Adcyap1 neurons induce hypothermia, EP3 neurons control fever, and GABA has context-dependent thermoregulatory effects. These provide essential context for interpreting the current findings, particularly the unexpected cold exposure results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Summary claims state that optogenetic stimulation of preoptic Nts neurons produces hyperthermia through GABA release, while chemogenetic activation of all Nts neurons produces hypothermia through excitation of Adcyap1 neurons, demonstrating endogenous Nts can induce potent hypothermia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C12 accurately summarize the main findings of the study. These abstract-level claims are well-supported by the detailed experimental results presented in the manuscript. The dual role of GABA (determining direction of temperature change) and the requirement for brain-wide Nts activation for hypothermia are key conclusions.",
+    "result_type": "MAJOR"
+  }
+]

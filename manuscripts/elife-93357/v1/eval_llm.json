@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Participants successfully learned the graph structure with high performance. All but one participant learned the 10-image sequence embedded in the directed graph, requiring on average 5 blocks of learning (range 2-6) and achieving 76% accuracy in the last learning block. After an 8-minute rest period, retrieval performance improved marginally to 82% (p=0.053).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide converging behavioral evidence that participants learned the task successfully. The learning metrics (blocks needed, accuracy achieved) and marginal post-consolidation improvement are clearly reported with appropriate statistics. The marginal significance (p=0.053) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Machine learning decoders successfully discriminated between the 10 visual stimuli from MEG data. Decoders achieved ~42% peak accuracy (chance: 10%) at 210 ms post-stimulus onset, consistent with prior studies, and transferred effectively to retrieval trials with above-chance decoding of cued images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate successful decoder training and validation. The decoding accuracy substantially exceeds chance (42% vs 10%), the timing aligns with previous literature (C34), and transfer to retrieval trials (C35) validates the approach. These are essential methodological validations for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C9",
+      "C10"
+    ],
+    "result": "Sequential forward replay was detected during retrieval and negatively correlated with memory performance. Significant forward sequenceness was found at 40-50 ms lag (p=0.027), with a significant negative correlation between replay strength and retrieval performance (r=-0.46, p=0.031). Low-performing participants showed higher forward sequenceness compared to high performers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C9-C10 provide converging evidence for performance-dependent sequential replay. The statistical tests are appropriate (permutation testing for sequenceness, correlation for performance relationship), and findings replicate prior work (Wimmer et al., 2020). The negative correlation suggests replay reflects effortful retrieval in lower performers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Clustered reactivation of graph-related items was modulated by graph distance, but only during successful retrieval. Near items (distance \u22642) showed significantly stronger reactivation than distant items in a 220-260 ms window (p<0.05). Reactivation strength decreased with increasing graph distance (F(4,80)=2.98, p=0.023), but this relationship was significant only for correct trials (F(4,80)=5.0, p=0.001) and not incorrect trials (F(4,48)=1.45, p=0.230).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44, C6-C8 provide strong evidence for distance-modulated clustered reactivation during successful retrieval. The repeated-measures ANOVA appropriately tests the distance effect, and the correct/incorrect trial subdivision demonstrates specificity to successful retrieval. However, the lack of interaction (C44, p=0.13) and limited incorrect trials (n=14 participants) somewhat weaken the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Differential reactivation showed a nonsignificant increase from pre- to post-consolidation (t=-1.78, p=0.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 reports a trend toward increased reactivation after consolidation, but the effect is not statistically significant. The authors acknowledge this limitation and note design issues that prevent strong conclusions about consolidation effects. Additional data or improved design would be needed to support consolidation-related claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Participants were alert and in positive mood states during the experiment, as measured by standardized questionnaires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 report questionnaire data confirming participants were alert (Stanford Sleepiness Scale M=2.3) with positive affect (PANAS positive M=33.2, negative M=12.2). These are straightforward descriptive statistics that help characterize the sample state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C56",
+      "C57",
+      "C75",
+      "C76"
+    ],
+    "result": "The study demonstrates that learned graph items are retrieved via clustered reactivation with strength modulated by graph distance, resembling breadth-first search. This effect was specific to successful retrieval, indicating its functional importance for memory performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C56-C57, C75-C76 represent the primary conclusions integrating the clustered reactivation findings. The evidence from C40-C44 supports distance-modulated reactivation, and the correct-trial specificity (C42) supports functional relevance. The breadth-first search interpretation (C76) is a reasonable inference from the simultaneous, distance-graded activation pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C77"
+    ],
+    "result": "Sequential replay strength is negatively associated with memory performance, suggesting that replay versus clustered reactivation depends on memory trace stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C77 integrate the sequential replay findings with performance. The significant negative correlation (C38: r=-0.46, p=0.031) and replication of Wimmer et al. 2020 support this conclusion. The inference about memory trace stability (C59) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study has several acknowledged limitations including limited trial numbers, inability to perform subgroup analyses due to high performance, variable learning blocks across participants, lack of preregistration for retrieval analyses, and inability to distinguish very fast replay from clustered reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 transparently acknowledge multiple study limitations. These are important for interpreting the results and are appropriately disclosed. The limited trial numbers (C68, C72) particularly affect incorrect trial analyses (C73), and the lack of preregistration (C71) is honestly noted despite following established methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors speculate that clustered reactivation may reflect well-consolidated memories accessible via retrieval practice or sleep consolidation, with a potential switch from sequential replay to clustered reactivation as memories stabilize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67, C78-C79 are explicitly speculative interpretations. While grounded in the data and prior literature, these represent hypotheses for future testing rather than demonstrated findings. The speculation is reasonable but requires additional experimental manipulation of consolidation and learning to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study employed appropriate methods including 30 participants (21 after exclusions), validated stimuli, MEG recording with standard preprocessing, LASSO logistic regression for decoding, TDLM for sequential replay analysis, and differential reactivation analysis for clustered reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C117 describe the methodological approach in detail. The methods follow established practices from prior MEG replay studies (particularly Wimmer et al. 2020), use appropriate statistical approaches, and include reasonable quality control measures (30% decoding threshold, 50% retrieval performance threshold). The preprocessing pipeline is standard and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The introduction establishes theoretical background on memory reactivation, replay mechanisms, methodological approaches for studying replay in humans, and prior findings on sequential versus clustered reactivation, particularly from Wimmer et al. 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C26, C51-C55, C60-C65 accurately summarize established literature and theoretical frameworks. These are appropriately cited and provide necessary context for the study. The characterization of prior work, particularly Wimmer et al. 2020 (C21-C24), is accurate and relevant to the current study's design and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27"
+    ],
+    "result": "The experimental design involved learning associations between images embedded in a directed graph network (10 nodes, 12 edges, with 2 hub nodes), followed by an 8-minute consolidation period and retrieval testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C27 accurately describe the core experimental design. The graph structure is clearly specified and represents a novel extension of prior linear sequence paradigms to more complex semantic-like networks. This design is appropriate for testing the research questions about graph-based memory retrieval.",
+    "result_type": "MINOR"
+  }
+]

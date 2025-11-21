@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Progressive demyelination in single neuron models causes conduction velocity (CV) slowing and action potential (AP) failures. Removing 25% of lamellae had negligible effects, but complete removal of lamellae from 25% of segments caused 38\u00b110% CV slowing and 35\u00b113% AP failures, increasing to 72\u00b18% CV slowing and 45\u00b113% AP failures when 75% of segments were affected. Myelinated segment length was the strongest predictor of CV changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C33-C37 provide quantitative data from systematic single neuron model simulations across a cohort of 50 models with varying parameters. The findings are internally consistent, with dose-response relationships between demyelination severity and functional impairment. Lasso regression analysis (C36-C37) identifies key parameters controlling responses, adding analytical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Remyelination with shorter, thinner segments partially recovers CV and reduces AP failures, with recovery depending on the extent of remyelination and lamellae restoration. Complete remyelination with sufficient lamellae nearly eliminated AP failures (1.8\u00b11.1%), while incomplete remyelination left substantial failure rates (10.6-25.7%). Axons with more transitions between long and short segments showed slower CV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C47 present systematic remyelination simulations with quantitative outcomes across multiple conditions. The results show clear dose-response relationships and are consistent with prior modeling work (C41 cites Scurfield and Latimer, 2018). The finding that incomplete remyelination leaves high AP failure rates is novel and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In network models of working memory, AP failures from demyelination substantially impaired memory strength, duration, and precision, while propagation delays in biologically realistic ranges had negligible effects. This is explained by the asynchronous network state where spike timing is less critical than firing rate statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 demonstrate differential effects of AP failures versus delays in network simulations. The finding that delays have minimal impact is well-explained by network architecture (C50) and supported by supplementary data. The observation that AP failures reduce memory strength and increase diffusion is consistent with theoretical predictions (C55 cites mathematical analyses).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Network model simulations show memory duration was unaffected by removing up to 55% of myelin lamellae, but progressively declined with 55-100% removal, dropping to \u22641s with complete demyelination. Memory diffusion (precision) increased starting at 25-50% lamellae removal, with ceiling effects above 50% of segments affected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 present systematic network-level results showing threshold effects and dose-response relationships. The findings are internally consistent and show appropriate statistical averaging across 10 networks and 280 trials. The ceiling effects observed are biologically plausible and consistent with saturation of network dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Complete remyelination (100% of previously demyelinated segments) recovered memory duration to control levels regardless of initial demyelination severity, but full recovery of memory precision required restoring 75% of lamellae. Despite shorter and thinner sheaths, complete remyelination restored unperturbed network function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 demonstrate that complete remyelination can restore function despite altered myelin geometry. This is a key finding supported by systematic simulations across multiple demyelination conditions. The distinction between memory duration and precision recovery (C63-C64) shows appropriate sensitivity in the outcome measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Incomplete remyelination failed to restore network function when bare (completely demyelinated) segments remained, but partial recovery occurred when remyelinating 25-75% of previously partially demyelinated segments, with both memory duration and diffusion improving toward control values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 distinguish between remyelination following complete versus partial demyelination, showing that bare segments are particularly detrimental. This is supported by systematic simulations and is consistent with the single neuron findings showing high AP failure rates with bare segments (C45-C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "An activity-silent working memory model showed qualitatively similar impairments from AP failures as the delay-active model, with propagation delays again having minimal effect unless unrealistically large. The main findings do not critically depend on the specific working memory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 demonstrate robustness of the main findings across different mechanistic models of working memory. This strengthens the generalizability of the results, though the activity-silent model is described as novel for continuous spatial locations, which may require additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Network simulations with heterogeneous myelin alterations (mixing intact and demyelinated axons) showed that decreasing the percentage of normal sheaths significantly impaired memory duration and increased diffusion, consistent with empirical observations in aging rhesus monkeys. Myelin alterations alone can account for significant working memory impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 bridge computational predictions to empirical data from Peters and Sethares, 2002. The linear correlations shown in Figure 7B-C (r=0.703 and -0.802, both p<10^-10) provide strong statistical support. This is a key translational finding linking model predictions to observed cognitive decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Simulating networks with up to 45% new (shorter, thinner) myelin sheaths from incomplete remyelination showed significant impairment (memory duration ~1s, increased diffusion), consistent with empirical findings of increased paranodal profiles (5% young to 17% aged) correlating with cognitive impairment in rhesus monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide another empirical validation, linking remyelination patterns to cognitive outcomes. The consistency with Peters and Sethares, 2003 data strengthens the biological relevance. However, the model simulates up to 45% new sheaths while empirical data shows 17% in aged monkeys, suggesting the model may overestimate the effect or that other compensatory mechanisms exist in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The single neuron model's novelty lies in systematically exploring combined demyelination and remyelination across a wide parameter space, finding that mixed conditions (some segments demyelinated, others remyelinated) produce higher AP failure rates than previously reported. Basic findings (demyelination causes CV slowing and failures; remyelination with shorter segments slows CV) are consistent with prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 appropriately contextualize the work relative to prior studies (particularly Scurfield and Latimer, 2018). The claim of novelty (C80, C88) is justified by the systematic exploration of mixed conditions. The consistency with prior work (C86-C87) validates the model, while the new finding of higher AP failure rates (C88) represents a genuine advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Lasso regression identified axon diameter, node length, myelinated segment length, and nodal ion channel densities as key predictors of demyelination/remyelination responses, consistent with prior modeling studies. Better empirical measurements of these parameters in monkey dlPFC would improve predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 describe appropriate statistical analysis (Lasso regression with cross-validation) to identify important parameters. The consistency with prior work validates the approach. C91 is a reasonable suggestion for future work but acknowledges current limitations in empirical data availability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The multicompartment model was constrained by morphological and physiological data from rhesus monkey dlPFC, enabling future investigations of signal propagation through dendrites and axons, and potential extensions to explore spatially localized myelin perturbations and axon collateralization. This multiscale approach powerfully connects empirical data across scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 describe the model's foundation and capabilities. C92 is supported by citations to the rhesus monkey model system. C93-C95 are reasonable statements about model capabilities and potential extensions, though they describe future possibilities rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Network model findings show that increasing AP failure probabilities progressively impaired working memory precision and duration, while complete remyelination restored control-level performance. Propagation delays in realistic ranges had no effect because the network operates in an asynchronous state governed by firing rate statistics rather than precise spike timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 summarize key network findings with appropriate mechanistic explanation (C99 cites van Vreeswijk and Sompolinsky, 1996; Hansel and Mato, 2013). The results are well-supported by the simulations, though C99's explanation assumes the asynchronous state is the only relevant regime, which may not capture all aspects of PFC function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "While irregular persistent activity is observed in PFC during working memory, oscillations and synchronization at the mesoscopic level also play important roles. AP slowing may alter these oscillations and synchrony, potentially causing additional working memory impairment not captured by the current asynchronous network model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are well-supported by citations to empirical studies. C102 is a reasonable speculation about model limitations, appropriately acknowledging that the asynchronous model may not capture all relevant phenomena. This represents good scientific practice in discussing model scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The network model predicts age-related increases in systematic errors (bias) due to increased activity bump drift, and repulsive bias away from spatially localized demyelinated zones. Delay-dependent systematic working memory errors have been observed empirically, suggesting these predictions could be tested with aging studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 present model predictions supported by supplementary figures. C105 cites empirical observations of delay-dependent biases, providing context for testing the predictions. However, these are predictions rather than validated findings, and C104 assumes spatially localized demyelination which may not occur with normal aging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "For biologically realistic combinations of intact and demyelinated/remyelinated axons, the network model predicts myelin dystrophies alone would cause spatial working memory impairment with aging, supporting observations that cognitive impairment correlates with decreased normal sheaths and increased new shorter/thinner sheaths. Insufficiently remyelinated axons showed slower CV and more AP failures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 integrate findings across scales, connecting single neuron results (C111) to network predictions (C107, C109) and empirical observations (C108, C110). The consistency across these levels strengthens the conclusions, though the claim that myelin changes \"alone\" can account for impairment (C107) may overstate the case given the complexity of aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Empirical findings show aging oligodendroglia have decreased maturation capacity, correlating with working memory impairment. The models demonstrate that demyelinated or poorly insulated axons experience delayed/failed AP propagation causing working memory impairment, while complete remyelination with sufficient myelin and fewer transitions recovers function. Differences in demyelination/remyelination may explain cognitive variability in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 integrate empirical observations (C112-C113 cite Dimovasili et al., 2023) with model findings (C114, C116) and broader implications (C117). The logic connecting ineffective remyelination to impairment (C115) is sound. C117's suggestion about individual variability is reasonable but speculative, as the model doesn't directly simulate individual differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Previous modeling work showed that aged networks compensating synaptic loss with higher firing rates retained memory, while decreased excitatory drive reproduced lower firing rates observed in aged monkeys. The current study shows such decreased excitation could arise from AP failures due to myelin dystrophy, potentially explaining hypothesized homeostatic hyperexcitability as compensation for AP disruptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 appropriately connect the current work to prior studies by the same group (Iba\u00f1ez et al., 2019) and broader hypotheses (C122 cites Luebke et al., 2010). The integration is logical, though C121-C122 are speculative connections rather than directly tested hypotheses. This represents good scientific synthesis across studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Myelin dystrophy occurs in multiple neurological conditions (multiple sclerosis, schizophrenia, bipolar disorder, autism spectrum disorders, traumatic brain injury), with working memory often being particularly vulnerable. Since myelin changes alone can account for working memory impairment, the study points to myelin degradation as a key factor in working memory decline with normal aging and potentially in neuropathological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C125 are well-supported by citations establishing the broader context. However, C126-C127's conclusion that myelin changes \"alone\" can account for impairment is based on computational models that necessarily simplify biological complexity. While the models demonstrate sufficiency in silico, claiming this as evidence for necessity or primacy in vivo overstates the findings. The models don't rule out other contributing factors or test whether myelin changes are necessary for observed impairments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Normal aging leads to myelin alterations in rhesus monkey dlPFC that correlate with cognitive impairment. Remyelination with shorter/thinner sheaths is hypothesized to partially compensate for degradation, but computational modeling hasn't systematically explored these phenomena together. The models predict that biologically plausible myelin dystrophy levels, if uncompensated, can account for substantial working memory impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 frame the study's motivation and main conclusion. C1 is supported by empirical citations, C2 identifies the gap addressed, and C3 states the key prediction. The prediction (C3) is well-supported by the systematic modeling results presented throughout the paper, though the caveat \"if uncompensated by other factors\" is important and appropriately included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The introduction establishes that normal aging causes cognitive impairment in humans and non-human primates, accompanied by various neuronal changes in rhesus monkey dlPFC including myelin dystrophy (3-6% of sheaths affected), remyelination (90% increase in paranodal profiles), and abnormally short/thin sheaths. These changes correlate with cognitive impairment, but key determinants remain unclear, necessitating computational modeling to isolate individual factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C23 provide comprehensive background supported by extensive citations to empirical literature. The progression from general observations (C4-C6) through specific findings (C9-C15) to mechanistic hypotheses (C16-C19) and knowledge gaps (C22-C23) is logical and well-documented. The quantitative details (e.g., 3-6% affected sheaths, 90% increase in paranodal profiles) are specific and cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior modeling studies show demyelination leads to slower CV and AP failure, and remyelination with shorter/thinner internodes decreases CV. However, effects of widespread demyelination and remyelination on AP propagation in broad axon populations haven't been systematically explored. Previous work showed that increased firing rates and 30% synaptic loss can impair working memory, but didn't incorporate myelin changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 appropriately review prior modeling work, identifying both established findings and gaps. The citations support the statements about prior results, and C26 correctly identifies the novelty of the current systematic exploration. C27 cites the authors' own prior work, appropriately positioning the current study as an extension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The model cohort had g-ratio of 0.71\u00b10.02 and axon lengths of 1.2\u00b10.1 cm. Electron microscopy images show healthy compact myelin in young monkeys (10 years) and dystrophic myelin with splitting and balloons in aged monkeys (27 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 provide specific quantitative details about the model cohort (C128) and describe empirical data shown in Figure 1 (C129-C130). These are straightforward descriptive claims supported by the data presented. The g-ratio and axon lengths are within biologically plausible ranges for cortical axons.",
+    "result_type": "MINOR"
+  }
+]

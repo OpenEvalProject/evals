@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "BIN1 structure and function in centronuclear myopathy (CNM) are well-established from prior literature. BIN1 contains an N-terminal BAR domain for membrane binding and a C-terminal SH3 domain for partner recruitment. Mutations in either domain lead to CNM, with BAR domain mutations abolishing membrane remodeling and SH3 domain truncations preventing DNM2 recruitment while maintaining membrane tubulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 are all supported by citations to prior literature and represent established knowledge about BIN1 structure, function, and disease associations. These claims provide essential background context but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior knowledge about SH3 domains and BIN1 interactions is reviewed. SH3 domains recognize proline-rich motifs (PRMs) and are typically promiscuous. While DNM2 is a well-known BIN1 partner, only a handful of other SH3-mediated BIN1 interactions have been identified, and high-throughput interactomic studies show poor overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are supported by citations and data (Figure 1C showing poor overlap). These claims establish the rationale for the current study by highlighting gaps in knowledge about BIN1's interaction network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Three BIN1 SH3 variants (Y531S, D537V, F584S) show impaired DNM2 binding in vitro. In cellular membrane tubulation assays, all variants maintain tubule formation (BAR domain function), but Y531S and D537V show markedly reduced DNM2 recruitment similar to known CNM-causing variants. F584S unexpectedly recruits DNM2 in cells despite no in vitro binding, though tubules appear less organized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 are supported by experimental holdup assay data (Figure 2A), membrane tubulation assays (Figure 2B-C), and statistical analysis (Figure 2D). The discrepancy between in vitro and cellular results for F584S is acknowledged and discussed. The phenotypic similarity of Y531S and D537V to known CNM variants is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Native holdup (nHU) can reliably measure SH3 domain interactions. Purified DNM2 and endogenous DNM2 from myoblast extract both interact with BIN1 SH3 with an apparent Kd of ~100 nM, and both show partial binding activity. This validates nHU for measuring SH3 domain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by experimental titration holdup data (Figure 3A, Figure 3\u2014figure supplements 1-2) showing nearly identical binding parameters for purified and endogenous DNM2. This benchmarking experiment provides strong validation for the nHU approach used in subsequent proteome-wide screens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Proteome-wide nHU-MS identified 206 proteins that bind BIN1 SH3 with apparent Kd values of 0.5-34 \u03bcM. This represents the combination of two independent experiments that assayed 6,453 full-length endogenous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by experimental nHU-MS data (Figure 3B-C, Figure 3\u2014figure supplement 3A). Two independent experiments showed good agreement (recall of 0.86), and the combined dataset provides a comprehensive view of the BIN1 SH3 interactome. Technical replicates and validation on different mass spectrometers strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Comparative analysis of SH3 domain interactomes shows that AMPH SH3 and ARHGEF7 SH3 have similar affinity profiles to BIN1 SH3 (statistically significant correlation), while ABL1 SH3 and PRMT2 SH3 show substantially different profiles (no significant correlation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by comparative nHU-MS data (Figure 3D-E, Figure 3\u2014figure supplement 3). Statistical tests confirm significant correlation for related domains and lack of correlation for unrelated domains. This provides important context for understanding BIN1 SH3 specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Among the 206 BIN1 SH3 partners identified, only three were previously known from high-throughput studies (DNM2, ITCH, SMCHD1). Eight partners are encoded by genes associated with neuromuscular disorders, and five of these (DNM2, SMCHD1, DNMT1, MORC2, SBF1) show high affinity (Kd <10 \u03bcM). MTMR1, a paralog of the X-linked CNM gene MTM1, also binds BIN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by nHU-MS data (Figure 4) and comparison with literature and disease gene databases. The identification of multiple neuromuscular disorder-associated proteins as BIN1 partners is a significant finding that expands understanding of BIN1's role beyond DNM2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Bioinformatic analysis identified 417 putative PRMs in 133 BIN1 partners (65% of partners, >2.5-fold enrichment). Synthesis and testing of 448 PRMs revealed 176 functional binding sites in 97 proteins, providing site-specific affinity data for nearly half of all BIN1 partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by bioinformatic analysis and experimental fragmentomic holdup data (Figure 5A). The systematic synthesis and testing of all predicted PRMs represents a comprehensive approach to mapping direct interactions. The >2.5-fold enrichment of PRMs in partners supports their functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Comparison of full-length protein affinities with isolated PRM affinities reveals poor correlation (PCC=0.2). Over 85% of partners bind stronger as intact proteins than as isolated PRMs, with most isolated motifs binding 5-6 fold weaker (mean \u0394pKapp of 0.71-0.76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by comparative analysis of nHU-MS and fragmentomic holdup data (Figure 5B). This finding reveals important mechanistic insights: SH3 domain interactions involve contributions beyond individual PxxP motifs, likely through synergistic effects of multiple sites or flanking regions. This challenges simplified models of SH3-PRM interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "BIN1 SH3 shows clear preference for class 2 PxxP motifs over class 1, similar to AMPH and ARHGEF7. In contrast, ABL1 and OBSCN prefer class 1 motifs, while PRMT2 shows no marked preference. BIN1's affinity profile is most similar to AMPH. OBSCN SH3 binds only a handful of PRMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by fragmentomic holdup data (Figure 5C, Figure 5\u2014figure supplements 1-2). Affinity-weighted specificity logos clearly show motif preferences. The comparative analysis across multiple SH3 domains provides important insights into specificity determinants and validates the observed BIN1 preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Functional enrichment analysis reveals BIN1 partners are enriched in nuclear processes and mitotic processes. PRC1, identified as a medium-affinity BIN1 partner, contains two functional PRMs that overlap with mitotic phosphorylation sites and a nuclear localization signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by functional enrichment analysis (Figure 6A, Supplementary file 3) and fragmentomic holdup data for PRC1 (Figure 5). The identification of mitotic enrichment is novel and significant. The overlap of PRC1 PRMs with regulatory sites is supported by sequence analysis and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "BIN1-induced membrane tubules undergo dramatic rearrangement during mitosis, becoming absent or peripheral during early mitotic phases, then reappearing at higher density around the cleavage furrow and midbody during late anaphase and cytokinesis. PRC1 shows moderate affinity for BIN1 (Kd=1.4 \u03bcM) and co-localizes with BIN1 at the cleavage furrow and midbody during mitosis, while remaining separated in interphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by experimental observations in membrane tubulation assays (Figure 6B, Figure 6\u2014figure supplement 1), nHU titration data (Figure 6C), and immunofluorescence assays (Figure 6D). The cell cycle-dependent localization changes and co-localization with PRC1 provide strong evidence for BIN1's role in mitosis. However, the authors appropriately note that direct association requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Fragmentomic holdup analysis of BIN1 variants shows that Y531S and D537V cause perturbed affinity profiles (PAP) with general affinity interactome reshuffling, while F584S causes near-complete loss of function (LOF). Other variants, including the common T532M, show affinity interactomes nearly identical to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by fragmentomic holdup data (Figure 7A, 7C). The systematic measurement of variant effects across 448 PRMs provides comprehensive characterization of interactome perturbations. The correlation with genomic database information (T532M present 116 times homozygous with no phenotype) supports the benign classification of non-perturbing variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Structural analysis using AlphaFold2 shows Y531 and D537 are positioned near the PRM binding interface, while F584 is buried in the hydrophobic core. This suggests Y531S and D537V directly impact PRM binding, while F584S likely destabilizes the SH3 fold. The in vitro destabilization of F584S may be partially rescued in full-length BIN1 by intramolecular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by structural analysis using AlphaFold2 predictions (Figure 7B) and are consistent with the observed functional effects. The mechanistic interpretations (C70-C72) are reasonable inferences from the structural positions and experimental data, though they remain hypotheses. The proposed rescue mechanism for F584S in full-length protein is supported by citations and explains the in vitro/cellular discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "AlphaFold2 Multimer predictions showed no obvious indication of perturbed affinity interactomes for the pathological variants. This demonstrates that current structure-prediction tools cannot foresee the consequences of sequence variants, and experimental approaches like holdup assays remain essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by AlphaFold2 predictions (Figure 7\u2014figure supplement 1) that failed to predict the observed affinity perturbations. This is an important negative result that highlights limitations of current computational methods. The conclusion that experimental approaches remain essential (C75) is a reasonable inference from this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "BIN1 is involved in the regulation of cytokinesis. BIN1 expression fluctuates throughout the cell cycle, DNM2 co-localizes with midbody microtubules, and PRC1 cross-links microtubule bundles at the midbody. The membrane remodeling activities of BIN1's BAR domain likely mediate regulatory functions during cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by citations to prior literature. Claim C79 is supported by the experimental observations in this study (membrane tubulation and co-localization data) combined with mechanistic inference. While the precise mechanism requires further investigation, the evidence for BIN1's involvement in cytokinesis is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "DNM2 ranks among the highest affinity BIN1 interactions, confirming its importance. SMCHD1 is identified as a strong BIN1 partner with similar affinity to DNM2. SMCHD1 mutations are linked to FSHD, and both FSHD and CNM patients suffer from muscle weakness. The BIN1-SMCHD1 complex may play a role in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 are supported by nHU-MS data and citations. However, claim C84 is explicitly labeled as speculation in the evidence. While the identification of SMCHD1 as a high-affinity partner is well-supported, the proposed role in disease pathology requires experimental validation. The shared symptom of muscle weakness provides circumstantial support but is insufficient to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Disruptive mutations in the BIN1 SH3 domain will perturb all identified interactions, which collectively contribute to CNM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is supported by the demonstrated proteome-wide affinity perturbations caused by pathological BIN1 variants (fragmentomic holdup data). The inference that collective perturbation of multiple interactions contributes to CNM is reasonable given the identification of numerous high-affinity partners involved in relevant biological processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Affinity interactomics can identify and validate potentially disease-causing mutations in a highly quantitative manner. Most BIN1 SH3 variants show no detectable perturbation, but three rare variants (Y531S, D537V, F584S) cause affinity rewiring. This approach can associate rare variants with putative clinical risk even when genetic approaches cannot determine statistical causality due to variant rarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are supported by fragmentomic holdup data for multiple variants (Figure 7) and represent a key methodological contribution. The ability to detect molecular phenotypes for rare variants addresses a significant challenge in variant interpretation. The conclusion that affinity interactomics is suitable for variant testing (C90) is well-supported by the demonstrated applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study identified hundreds of new BIN1 interaction partners proteome-wide, many of which participate in cell division, suggesting a critical role for BIN1 in mitosis regulation. BIN1 mutations cause proteome-wide affinity perturbation, demonstrating the importance of unbiased affinity interactomic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 summarize the major findings and are supported by nHU-MS data (C91), functional enrichment analysis (C92), and fragmentomic holdup data for variants (C93). These represent the core contributions of the study and are well-supported by the experimental evidence presented.",
+    "result_type": "MAJOR"
+  }
+]

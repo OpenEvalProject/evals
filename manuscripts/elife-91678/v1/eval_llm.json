@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C78",
+      "C79"
+    ],
+    "result": "Proteasome activity recovery after pulse treatment with proteasome inhibitors is independent of DDI2. This was demonstrated using DDI2 knockout HAP1 cells, DDI2 knockdown in breast cancer cell lines (SUM149 and MDA-MB-231), and catalytically inactive DDI2 mutant (D252N) in HCT-116 cells, all showing comparable recovery to wild-type controls despite confirmed loss of DDI2-mediated Nrf1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25, C28, C29, C31, C32, C78, and C79 are strongly supported by convergent experimental evidence from multiple cell lines and genetic approaches (knockout, knockdown, and catalytic mutation). The data in Figures 1c, 1f, and 1g consistently show no significant difference in proteasome activity recovery between DDI2-deficient and wild-type cells, while Figure 1d confirms DDI2's role in Nrf1 activation is intact in controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Proteasome activity recovery precedes transcriptional upregulation of proteasome genes. Activity recovery begins immediately after 1-hour pulse treatment and plateaus by 8 hours, while significant increases in proteasomal mRNA expression only occur at 8 hours post-treatment, indicating the early recovery is not a transcriptional response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26, C33, C34, and C35 are well-supported by temporal data in Figure 2a-b showing activity recovery kinetics precede mRNA upregulation. The timing mismatch (activity recovery starts immediately and plateaus by 8h, while mRNA increases only at 8h) provides strong evidence that early recovery is transcription-independent. Statistical significance is reported for the 8h mRNA timepoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C36",
+      "C37"
+    ],
+    "result": "Proteasome activity recovery requires protein synthesis. Cycloheximide (CHX) treatment completely blocked recovery after the first hour, independent of DDI2 expression status, demonstrating that new protein synthesis is necessary for sustained proteasome activity recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C36, and C37 are supported by CHX blocking experiments shown in Figure 3a. The data demonstrate that protein synthesis inhibition prevents recovery in both wild-type and DDI2 KO cells across multiple inhibitor concentrations. The exception of the first hour suggests pre-existing proteasome assembly intermediates may contribute initially.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C80"
+    ],
+    "result": "Proteasome recovery occurs without upregulation of proteasomal mRNA translation. Polysome profiling revealed that 90% of proteasomal mRNAs are already ribosome/polysome-bound in untreated cells, and this fraction does not increase upon proteasome inhibitor treatment, indicating that increased translational efficiency does not explain the rapid recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, C40, C41, and C80 are supported by polysome profiling data in Figure 3b and Figure 3\u2014figure supplement 1. The finding that ~90% of proteasomal mRNAs are already actively translated and this fraction doesn't increase with inhibitor treatment is consistent with prior literature (C40, Wiita et al., 2013). This rules out translational upregulation as the mechanism for rapid recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C27",
+      "C42",
+      "C43",
+      "C60"
+    ],
+    "result": "Mammalian cells possess a novel DDI2-independent and transcription-independent pathway for rapid proteasome activity recovery. This pathway is responsible for the rapid synthesis of new proteasomes immediately after proteasome inhibition, operating in parallel to the known Nrf1/DDI2 transcriptional pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C27, C42, C43, and C60 represent the main conclusion, which is well-supported by the convergent evidence from claims grouped in Results 1-4. The DDI2-independence (Result 1), transcription-independence (Result 2), protein synthesis requirement (Result 3), and lack of translational upregulation (Result 4) collectively support the existence of a novel pathway. However, the molecular mechanism remains uncharacterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose a model where nascent proteasome subunits are partitioned between degradation and assembly, and proteasome inhibition blocks degradation, increasing assembly efficiency. This model would explain translation-independent recovery in the first hour and allow instantaneous upregulation of proteasome biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65, C66, C68, and C69 represent a speculative mechanistic model proposed in the Discussion section. While the model is consistent with the observed data (CHX-independent recovery in the first hour, C36) and supported by cited literature on nascent subunit degradation (C63, C64, C67), it lacks direct experimental validation in this study. The authors explicitly state this is a hypothesis to be tested in future experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Prior studies show that DDI2/Nrf1 pathway contributes partially (~30%) to proteasome activity recovery in some cell types. DDI2 knockout reduced recovery by ~30% in multiple myeloma and NIH-3T3 cells, and Nrf1 knockdown did not completely block recovery in mouse embryonal fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 accurately cite prior literature (Chen et al., 2022; Northrop et al., 2020; Radhakrishnan et al., 2010) showing partial contribution of DDI2/Nrf1 to recovery in specific cell types. The authors appropriately acknowledge these findings and note they conducted single pulse treatments, which may differ from repeated treatment protocols. This contextualizes their findings within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The role of DDI2/Nrf1 in basal proteasome expression varies by cell type and tissue. While prior studies reported DDI2/Nrf1 contributes to basal proteasome levels in MM cells, embryonic cells, brain, liver, and retina, the authors found no significant effect of DDI2 KO on basal proteasome activity in HAP1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by appropriate citations and the authors' own data in Figure 1\u2014figure supplement 1. The discrepancy between prior studies and the current findings is acknowledged and reasonably attributed to cell-type differences (C51). The authors appropriately note that certain cell types with high proteasome demand may rely more heavily on the DDI2/Nrf1 pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19"
+    ],
+    "result": "Rapid recovery of proteasome activity may contribute to intrinsic and acquired resistance to proteasome inhibitors and may explain discrepancies between in vitro efficacy and limited clinical efficacy outside MM and MCL. Recovery has been implicated in PI resistance in MM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1, C18, and C19 are speculative regarding clinical significance. While C19 is supported by citation (Op et al., 2022), claims C1 and C18 represent hypotheses about clinical implications that are not directly tested in this study. The authors appropriately present these as possibilities ('may contribute,' 'may explain') but provide no clinical data or resistance studies to support these speculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "Alternative mechanisms by which DDI2 may desensitize cells to proteasome inhibitors include: activation of Nrf1-dependent oxidative stress response genes to counteract ROS production, participation in degradation of large ubiquitin conjugates, or prevention of DNA damage that occurs when proteasome is impaired in DDI2's absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55, C56, C57, and C59 are speculative hypotheses about DDI2's role in PI sensitivity beyond the recovery pathway. While supported by citations to relevant literature, these mechanisms are not experimentally tested in this study. The authors appropriately present these as possibilities to explain the observed sensitization of DDI2 KO cells to PIs (C54), but no direct evidence is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C30"
+    ],
+    "result": "The DDI2/Nrf1 pathway for proteasome gene transcription is well-established from prior work. Nrf1 upregulates proteasome genes when activated by DDI2 protease cleavage under conditions of proteasome inhibition, while Nrf1 is constitutively degraded when proteasomes are fully functional. DDI2 knockdown blocks PI-induced transcription of proteasome genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C20, C21, C22, C23, and C30 accurately summarize well-established prior knowledge supported by multiple citations (Steffen et al., 2010; Radhakrishnan et al., 2010; Koizumi et al., 2016; Lehrbach and Ruvkun, 2016). Claim C30 is additionally confirmed by the authors' own data showing DDI2 activates Nrf1 (Figure 1d). This provides essential background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on proteasome inhibitors in cancer therapy: Malignant cells depend on proteasome function due to rapid division and abnormal protein production. Bortezomib, carfilzomib, and ixazomib are FDA-approved for MM, with bortezomib also approved for MCL. MM cells are particularly sensitive due to immunoglobulin production burden. Clinically, these drugs are administered as bolus injections, cause rapid proteasome inhibition, but are rapidly metabolized with drug concentrations dropping below cytotoxic levels within an hour, yet proteasome activity recovers within 24 hours despite slow off-rates or irreversible binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C17 provide established background knowledge about proteasome inhibitors, their clinical use, and pharmacokinetics, all supported by appropriate citations. These claims accurately represent the clinical context and rationale for studying proteasome activity recovery. The apparent paradox between irreversible/slow-dissociating inhibitors and activity recovery within 24h motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "Prior studies have shown that proteasomes degrade a significant fraction of nascent proteasome subunits within 2-4 hours after synthesis, after which the remaining fraction is highly stable. Increased expression of proteasome assembly chaperone POMP and proteasome assembly intermediates after PI treatment has been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C67 accurately cite prior literature (McShane et al., 2016; Meiners et al., 2003) and are supported by data shown in Figure 4a. These findings provide the basis for the authors' proposed model about partitioning of nascent subunits. The citations are appropriate and the data representation appears accurate.",
+    "result_type": "MINOR"
+  }
+]

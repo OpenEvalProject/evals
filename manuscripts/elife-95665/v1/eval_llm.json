@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C56",
+      "C57"
+    ],
+    "result": "The protein dynamical transition around 200 K is an intrinsic property of the hydrated protein, with onset temperature (Ton) that is independent of instrumental resolution time but varies with protein structure (LYS: 213 K, MYO: 198 K, CYP: 228 K) and hydration level (increasing Ton with decreasing hydration). This demonstrates that the protein transition is decoupled from hydration water dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide consistent Ton values across multiple instrumental resolutions (1 ns to 10 ps) for three different proteins, demonstrating resolution independence. Claims C33-C34 show systematic hydration dependence. The experimental design using isotopic labeling (C23-C24) and multiple instruments (C68-C69) provides robust evidence for decoupling (C3, C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C59"
+    ],
+    "result": "The anharmonic onset observed in hydration water around 200 K is not a real physical transition but a resolution effect, where the onset temperature depends solely on instrumental resolution (200 K at 1 ns, 250 K at 10 ps) and is independent of protein structure and hydration level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 demonstrates strong resolution dependence of water Ton across multiple instruments. Claims C54-C55 show independence from protein structure and hydration level. The interpretation as a resolution effect (C50-C51) is supported by the observation that relaxation times cross instrumental resolution at different temperatures (C48), consistent with thermally activated dynamics rather than a phase transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C58"
+    ],
+    "result": "The protein dynamical transition exhibits a thermodynamic signature similar to glass transition in polymers, as demonstrated by DSC measurements showing step-like transitions in heat flow at temperatures (TDSC) that match neutron-derived Ton values and show the same hydration dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 provide DSC evidence of step-like transitions in hydrated but not dry protein. Claims C40-C42 demonstrate quantitative agreement between TDSC and Ton values and their hydration dependence. The analogy to polymer glass transition (C39, C43, C58) is supported by the thermodynamic signature, though the mechanistic interpretation involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C45",
+      "C46"
+    ],
+    "result": "Water acts as a plasticizer that influences protein dynamics without altering protein secondary structure or overall packing, as demonstrated by molecular dynamics simulations showing identical structural content at different hydration levels despite different dynamical transition temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 provides direct MD simulation evidence that hydration level (h=0.2 vs 0.4) does not alter CYP structure. This supports the plasticizer interpretation (C45-C46) where water affects dynamics but not structure (C36). However, the MD simulations are limited to one protein and two hydration levels, and equilibration time (C90) may be insufficient to observe slow structural changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The smooth temperature dependence of hydration water relaxation times without sudden changes around 200 K, as reported by dielectric measurements and quasi-elastic neutron scattering, supports the interpretation that the apparent water transition is a resolution effect rather than a true phase transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 cite prior work showing smooth relaxation time behavior, which is consistent with the current study's interpretation. However, these are citations of prior work rather than new experimental results from this study, serving primarily as corroborating evidence for the resolution effect interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The apparent coincidence between protein dynamical transition and water anharmonic onset temperatures in some prior studies can be explained by the use of single instruments with fixed resolution, and this coincidence disappears when measurements are conducted using instruments of different resolutions or at different hydration levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide a logical explanation for contradictory literature results (C25-C28) based on the experimental findings. The explanation is consistent with the demonstrated resolution dependence of water Ton and resolution independence of protein Ton. This reconciles previously conflicting observations in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The protein dynamical transition represents unfreezing of structural relaxation that may facilitate conformational jumps among functional states, but is a necessary yet insufficient condition for protein function, as denatured proteins and amino acid mixtures also exhibit similar transitions without being functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is supported by the experimental data showing intrinsic transition. However, C63 is explicitly speculative ('might facilitate'), and the functional interpretation relies heavily on cited observations about denatured proteins (C64-C65) rather than direct functional measurements. The conclusion (C66) is logical but the mechanistic link between structural relaxation and function remains unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C68",
+      "C69",
+      "C70",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The experimental approach using elastic neutron scattering with isotopic labeling (H-protein in D2O vs D-protein in H2O) and multiple instruments with resolutions spanning 10 ps to 1 ns enables selective probing of protein and water dynamics separately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 establish the physical basis for isotopic contrast. Claims C68-C70 document the instrumental setup. Claims C79-C81 define the measured quantity and analysis approach. The methodology is well-established and appropriately applied, though potential complications from incomplete deuteration exchange or residual hydrogen signals are not discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The onset temperature (Ton) of the protein dynamical transition is independent of the q-range used in the analysis (0.45-0.9 \u00c5\u207b\u00b9 vs 1.1-1.75 \u00c5\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is directly supported by data in Tables 3-5 showing consistent Ton values across different q-ranges for all three proteins. This validates that the observed transition is not an artifact of the momentum transfer range selected for analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The resolution independence of protein Ton is consistent with prior work by Schir\u00f3 et al. (2012) and Benedetto (2017) when contributions from methyl group rotations are properly removed from the analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 cite prior work showing similar resolution independence. The current study's approach of comparing hydrated vs dry protein (C80-C81) effectively removes methyl contributions, making the results directly comparable. This strengthens confidence in the findings through independent replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Molecular dynamics simulations of CYP protein at different hydration levels were performed using CHARMM 27 force field and TIP4P/Ew water model, with 30-ns NPT simulations at temperatures from 100-360 K being sufficient for equilibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C89 document the simulation protocol. Claim C90 asserts 30 ns is sufficient based on Figure 2-supplement 3, but no quantitative equilibration criteria are provided. For low-temperature simulations approaching glass transition, 30 ns may be insufficient to sample slow relaxation processes relevant to the dynamical transition. The simulations are used only to assess structural changes (C35), not dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background context establishing that protein dynamical transitions around 200 K have been observed and linked to protein function, with competing theories about whether the transition is slaved to hydration water dynamics or is an intrinsic protein property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide literature context with appropriate citations. These establish the scientific question being addressed but are not new results from this study. The citations appear accurate and representative of the field, though the authors do not critically evaluate potential limitations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The four proteins studied (LYS, MYO, CYP, GFP) have distinct secondary and tertiary structures, with MYO being primarily helical (76%), GFP dominated by beta sheets (50%), and LYS having a two-domain structure while others are single-domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are directly supported by Table 1 and structural analysis. The structural diversity is appropriate for testing whether Ton depends on protein structure (C5). However, the study does not systematically vary specific structural features to establish structure-property relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior studies using isotopic labeling and neutron scattering have reported contradictory results regarding whether protein and water dynamical transitions occur at the same or different temperatures, with results depending on the protein studied and instrumental resolution used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 accurately cite prior contradictory findings from the literature. These establish the motivation for the current systematic study but are not new experimental results. The authors use these contradictions to justify their multi-resolution, multi-protein approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Freezing of structural relaxation beyond the equilibrium time (~100-1000 s) turns the system into a frozen solid form that suppresses fast dynamics measured by neutron scattering, causing the observed transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C44 provides a mechanistic explanation with citations, but the connection between slow structural relaxation (100-1000 s) and fast dynamics (ps-ns) is not directly demonstrated. The neutron experiments measure fast dynamics but cannot directly observe the slow structural relaxation. The interpretation relies on analogy to polymer glass transitions rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The activation temperature of methyl group rotations varies with instrument resolution, which would confound the analysis of the protein dynamical transition if not properly accounted for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 cites prior work showing resolution-dependent methyl activation. This justifies the study's approach of comparing hydrated vs dry protein to remove methyl contributions (C81). The concern is valid and the experimental design appropriately addresses it.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The dynamical transition temperature in lipid membranes is higher when the membrane is dry, analogous to the hydration dependence observed in proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 cites prior work on lipid membranes showing similar hydration effects. This provides supporting context for the plasticizer interpretation but is not a new result from this study. The analogy strengthens the interpretation but lipid membranes and proteins may have different mechanisms.",
+    "result_type": "MINOR"
+  }
+]

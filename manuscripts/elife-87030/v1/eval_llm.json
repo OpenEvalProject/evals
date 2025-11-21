@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In a Berlin cohort of 63 hospitalized COVID-19 patients (WHO severity grade 7) not receiving anti-inflammatory therapy, higher plasma CRP concentrations strongly correlated with mortality. Deceased patients had significantly higher CRP than survivors, mortality frequency increased proportionally with average CRP, and survival decreased significantly with increasing average CRP concentration (0-100, 100-200, 200-450 mg/L groups).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide converging evidence from multiple analytical approaches (direct comparison, clustering, survival analysis) all demonstrating a strong relationship between CRP levels and mortality in COVID-19 patients. The data are from a well-defined cohort with clear outcome measures and appropriate statistical analyses (Mann-Whitney, Mantel-Cox tests) referenced in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77"
+    ],
+    "result": "Dornase alfa significantly reduced CRP by approximately 33% compared to best available care (BAC) groups in the COVASE trial. In the ITT population (n=99), LS mean Ln(CRP) over 7 days was 3.15 (95% CI 2.87-3.42) in R-BAC+DA versus 3.55 (95% CI 3.35-3.75) in T-BAC (p=0.01), corresponding to mean CRP of 23.23 mg/L versus 34.82 mg/L. Similar significant reductions were observed in randomized participants only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C71-C75, C77 collectively demonstrate the primary endpoint with consistent statistical significance across multiple analysis populations (ITT and randomized only). The repeated measures mixed model analysis is appropriate, baseline characteristics were balanced (C59), and sensitivity analyses confirmed robustness (C37, C100). The p-values are significant and effect sizes are clinically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Dornase alfa increased live discharge rates by 63% with a hazard ratio of 1.63 (95% CI 1.01-2.61, p=0.03) in the ITT population. While 50% discharge rates were similar between groups, 80% discharge occurred by 8 days in R-BAC+DA versus 30 days in T-BAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C78-C80 demonstrate a significant improvement in time to discharge using appropriate survival analysis (Cox proportional hazards model). The hazard ratio is statistically significant with the confidence interval just excluding 1.0. However, the trial was not formally powered for this secondary endpoint (C101, C122), which introduces some uncertainty about the robustness of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C85",
+      "C86"
+    ],
+    "result": "Dornase alfa significantly increased lymphocyte counts with LS mean of 1.08 (95% CI 0.92-1.27) in R-BAC+DA versus 0.87 (95% CI 0.76-0.98) in T-BAC (p=0.02). Among participants with baseline lymphopenia (<1\u00d710\u2079/L), the R-BAC+DA group showed greater increases in lymphocyte numbers throughout treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C85-C86 demonstrate a consistent effect on lymphocyte recovery with appropriate statistical analysis. The subgroup analysis in lymphopenic patients (C86) strengthens the finding. However, no adjustment for multiple testing was performed (stated in manuscript), which could affect interpretation of this secondary endpoint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C87"
+    ],
+    "result": "Dornase alfa reduced D-dimer levels with an LS mean difference of 1657 \u03bcg/mL (95% CI 3131-877) between R-BAC+DA and T-BAC groups (p=0.004), indicating reduced coagulopathy risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C87 demonstrate a significant reduction in D-dimer, a marker of coagulopathy. The effect size is substantial and statistically significant. However, baseline D-dimer showed imbalances between groups (noted in Table 1), which could confound interpretation despite statistical adjustment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Plasma cell-free DNA (cf-DNA) levels were elevated in all COVID-19 participants compared to healthy donors. During treatment, cf-DNA was reduced in R-BAC+DA versus R-BAC participants. Higher final cf-DNA levels positively correlated with smaller CRP reductions, and samples with cf-DNA >100 \u03bcg/mL had significantly higher D-dimer levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 provide mechanistic insights through exploratory endpoints measured only in randomized participants. The correlations between cf-DNA, CRP reduction, and D-dimer are internally consistent and biologically plausible. However, these are exploratory analyses without pre-specification and involve smaller sample sizes, limiting definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "R-BAC+DA participants exhibited significantly lower procalcitonin (PCT) concentrations: mean 0.18 ng/mL (95% CI -0.2-0.56) versus 1.31 ng/mL (95% CI 0.56-2.05) in T-BAC (p=0.005).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 shows a statistically significant reduction in PCT, another inflammatory marker. However, PCT data were only available for a subset of participants (36 total per Table 1), and no adjustment for multiple testing was performed for this secondary endpoint, which limits confidence in this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Over 7 days follow-up, there was no significant difference between R-BAC+DA and T-BAC groups in ICU admission rates (23.3% vs 21.74%, p=0.866) or length of ICU stay (LS mean 21.25 vs 19.85 hours, p=0.883).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 report null findings for ICU-related outcomes with appropriate statistical tests. The lack of difference is clearly stated with p-values well above significance thresholds. This is consistent with the trial not being powered for these outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Over 35 days follow-up, 1 of 30 R-BAC+DA participants died versus 8 of 69 T-BAC participants. The hazard ratio for death was 0.47 (95% CI 0.06-3.86, p=0.460), showing a trend toward reduced mortality that did not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 report mortality data with appropriate survival analysis. However, the trial was explicitly not powered for mortality (C122), the confidence interval is very wide due to few events, and the p-value is not significant. While the point estimate suggests benefit, this cannot be considered a supported finding given the statistical uncertainty and study design limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Dornase alfa was well tolerated with no systemic side effects. There were 10 adverse events (AEs) total in 39 participants, with only one definitely related to dornase alfa and no treatment-related serious AEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C95-C98 demonstrate acceptable safety profile. The AE reporting is systematic and transparent. However, the small sample size (n=39 randomized) and short follow-up period limit the ability to detect rare or delayed adverse events. The open-label design could also affect AE reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C100"
+    ],
+    "result": "The anti-inflammatory effect of dornase alfa was confirmed through multiple sensitivity analyses including analysis of only randomized participants (excluding CC-BAC), demonstrating robustness of the primary finding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C100 describe sensitivity analyses that strengthen confidence in the primary endpoint. Table 2 shows consistent effects across multiple analysis populations and approaches. This addresses potential concerns about the use of contemporary controls and validates the main finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The COVASE trial was a single-site, open-label, randomized controlled trial conducted at UCLH from June 2020 to October 2021. It enrolled 41 randomized participants (39 evaluable: 30 R-BAC+DA, 9 R-BAC) plus 60 matched contemporary controls. The primary endpoint was change in CRP over 7 days. All participants received dexamethasone as standard care, with the intervention arm receiving additional nebulized dornase alfa (2.5 mg twice daily for 7 days). Baseline characteristics were well balanced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C66 describe the trial design, conduct, and baseline characteristics. These are factual statements about the study methodology that are internally consistent and appropriately documented. The use of contemporary controls (C48-C51) is clearly described with matching criteria. Baseline balance is demonstrated in Table 1 and Figure 1-supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Frequency distribution analysis showed that R-BAC+DA had a higher CRP reduction distribution with fewer non-responders (participants with increased CRP) compared to T-BAC over the 7-day treatment period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 describes a complementary analysis approach (frequency distribution) that supports the primary endpoint findings. This provides additional perspective on the treatment effect by examining individual response patterns rather than just mean changes. The analysis is referenced in Figure 3B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C102",
+      "C126"
+    ],
+    "result": "Nebulized dornase alfa significantly reduced systemic inflammation (measured by CRP) in severe COVID-19 pneumonia patients already receiving dexamethasone, suggesting a complementary mechanism of action that improves upon standard anti-inflammatory care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C102, C126 are summary conclusions directly supported by the primary endpoint results (C3-C6, C71-C75). The finding that dornase alfa works in addition to dexamethasone is important and well-supported by the trial design where all participants received dexamethasone (C34, C45, C65).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The reduction in plasma cf-DNA suggests dornase alfa suppresses proinflammatory properties of histones by stripping DNA from chromatin. The inverse correlation between cf-DNA and CRP reduction is consistent with links between circulating chromatin and systemic inflammation in animal models. Correlations between D-dimer/cf-DNA and improvements in lymphopenia support proposed mechanisms involving NETs and extracellular chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 propose mechanistic interpretations of the exploratory findings. While the correlations observed (C92-C93) are consistent with these mechanisms and supported by citations to prior work, these remain inferences from correlative data in a small exploratory analysis. The mechanisms are plausible but not directly demonstrated by the trial data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "The COVASE results confirm the role of extracellular chromatin in promoting systemic inflammation, coagulopathy, and immune dysfunction in acute respiratory infections, and suggest recombinant endonucleases provide an additional inexpensive therapeutic intervention to broaden anti-inflammatory regimen effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C128 make broad mechanistic conclusions that extend beyond what the trial directly demonstrates. While the trial shows dornase alfa reduces inflammation and improves outcomes, it does not definitively prove the mechanism involves extracellular chromatin degradation (despite supportive correlative data). The cost-effectiveness claim is not supported by formal economic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "The COVASE trial has several limitations: it was not powered for mortality or to overcome confounders (antivirals, tocilizumab); the open-label design could introduce placebo effect bias; however, underpowered subgroup analyses showed trends toward CRP reduction with dornase alfa regardless of tocilizumab/remdesivir use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C124-C125 appropriately acknowledge study limitations. These are honest assessments of the trial's constraints. The subgroup analysis by concomitant medications (C124, Table 2) shows trends in the expected direction but lacks power, which is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background literature establishes that: extracellular chromatin from NETs is found in COVID-19 and may promote pathology; SARS-CoV-2 pneumonia can cause severe outcomes; NETs are associated with coagulopathy; extracellular histones promote inflammation and lethality; endonuclease digestion suppresses histone activity; DNase treatment reduces pathology in animal models; endogenous DNase activity is defective in severe COVID-19 and correlates with mortality; dornase alfa is an approved recombinant DNase for cystic fibrosis; CRP is a reliable inflammation marker that predicts COVID-19 outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C31 summarize prior knowledge and literature that provides rationale for the trial. All claims are supported by appropriate citations. These establish the scientific foundation for testing dornase alfa in COVID-19 but are not results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C110",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C129"
+    ],
+    "result": "The authors speculate that dornase alfa may be useful for mild COVID-19 patients not requiring oxygen (where dexamethasone may be harmful), may be safer than cytokine-blocking therapies, could be warranted in severe COVID-19/sepsis given defective endogenous DNase activity, has potential for controlling immune pathology in various infections, and warrants further investigation in other respiratory infections with hyperinflammation and NET formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103, C110, C115-C118, C129 are speculative statements about potential future applications. While these are reasonable hypotheses based on the trial results and mechanistic understanding, they are not supported by data from this trial. These represent appropriate suggestions for future research rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "Despite not being formally powered for length of stay, dornase alfa reduced time to discharge over 35 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 acknowledges a limitation while reporting a positive secondary outcome. This is supported by the survival analysis data (C7, C78-C80) showing significant improvement in discharge rates. The acknowledgment of limited power is appropriate and honest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "The discussion contextualizes findings by noting: hospital occupancy reduction was critical during COVID-19; CRP/D-dimer associations with poor outcomes are established; meta-analyses show lymphopenia and elevated inflammatory markers predict poor outcomes; the CATALYST trial showed namilumab reduced CRP; dornase alfa showed comparable CRP reduction to namilumab at lower cost; dornase alfa can be administered outside healthcare settings; three small prior trials reported improved oxygenation with dornase alfa; tocilizumab reduces CRP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109, C119-C121, C123 provide context from prior literature and other trials. These are appropriately cited and help interpret the current findings. The cost comparison to namilumab (C109) is qualitative rather than based on formal economic analysis.",
+    "result_type": "MINOR"
+  }
+]

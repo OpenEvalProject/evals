@@ -1,0 +1,544 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The manuscript provides background information on Schistosoma mansoni, its life cycle, and the disease burden of schistosomiasis. The miracidium is described as the first larval stage that infects freshwater snails and transforms into a mother sporocyst, which generates daughter sporocysts and cercariae. Schistosomiasis causes 1.0\u20132.6 million DALYs and over 11,000 deaths annually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C5, C21-C27) are well-established facts about S. mansoni biology and schistosomiasis epidemiology, supported by citations to WHO, IHME, and peer-reviewed literature. They provide essential context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The miracidium is composed of approximately 365 cells (median=365, range 342-377 across three larvae). Single-cell RNA-seq generated data from 20,478 cells that passed quality control, with a median of 858 genes and 1761 UMI counts per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35-C37 report direct measurements from the study. The cell count is based on manual segmentation of DAPI-stained nuclei (C6), and the scRNA-seq metrics (C35-C37) are standard quality control measures that are clearly reported. These provide the foundational data for the atlas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Single-cell RNA sequencing identified 19 transcriptionally distinct cell clusters in the miracidium, comprising two muscle clusters (3934 cells), five neuronal clusters (3255 cells), one ciliary plate cluster (40 cells), one tegumental cluster (366 cells), one protonephridial cluster (539 cells), two parenchymal clusters (1698 cells), and seven stem cell clusters (10,686 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C38-C44 describe the primary clustering results from the scRNA-seq analysis. The identification of 19 clusters is supported by the UMAP visualization (Figure 1C) and marker gene expression (Figure 1D). The cell counts for each cluster are directly reported from the Seurat analysis. This is a core finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "In situ hybridization revealed that 93% of miracidium cells are somatic (57% neural, 19% muscle, 13% epidermal/tegument, 2% parenchyma, 2% protonephridia) and 7% are stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 report the cellular composition of the miracidium based on in situ hybridization and cell counting. These percentages are calculated from counts of marker-positive cells relative to the total ~365 cells per larva. The data are supported by multiple ISH experiments (Figures 2-5) with clear quantification. This is a major finding that defines the cellular architecture of the miracidium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Two muscle clusters were identified based on expression of paramyosin, troponin t, and titin. ISH identified 74 paramyosin-positive nuclei (~19% of cells), comprising 28 circular muscle nuclei, 33 longitudinal muscle nuclei, and 13 nuclei in an anterior unilateral cluster. Muscle cluster 1 (circular) expresses Kunitz-type protease inhibitor and Wnt-11-1 at the posterior pole, while Notum is expressed anteriorly. Muscle cluster 2 (longitudinal) expresses calcium-activated potassium channel and MyoD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C57 describe the muscle cell populations with detailed spatial and molecular characterization. The identification is based on known muscle markers (C45, citations provided), ISH with cell counting (C46-C51, Figure 2B-C), and differential marker expression (C52-C57, Figure 2D-F). The data clearly distinguish circular and longitudinal muscle subtypes with distinct transcriptional profiles and spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Five neural clusters were identified expressing complexin, prohormone convertase 2, and Smp_068500. Complexin was expressed in at least 209 nuclei (57% of cells), with 129 in the brain and 80 peripheral. Neuron 1 (1470 cells) contains subpopulations expressing neuropeptide precursors (PWamide, Neuropeptide F, Neuropeptide Y) and putative photoreceptor cells expressing opsins. Neurons 2-5 were characterized by specific markers including NPP-43, NPP-26, Smp_319480 (putative mTORC1), and an EF-hand domain protein, with distinct spatial localizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C80 comprehensively characterize the neural cell populations. The five clusters are identified by marker expression (C58, Figure 3A), with cell counts from ISH (C59-C61, Figure 3B). Subclustering of Neuron 1 (C62-C64) is supported by SAM analysis (Figure 3\u2014figure supplement 1). Neurons 2-5 are validated by ISH with specific markers (C65-C80, Figure 3C-F, supplementary figures). The identification of polycystin genes (C76) and functional predictions are reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Plate-based single-cell RNA-seq of 37 manually selected gland cells revealed co-expression of neural markers (Complexin, 7B2) and muscle markers (Myosin light chain 1, Troponin t, Actin-2), as well as five venom antigen-like (VAL) genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 describe the transcriptome of penetration gland cells using an alternative scRNA-seq approach. The co-expression of neural and muscle markers (C82) and VAL genes (C83) is shown in Figure 3\u2014figure supplement 6. This approach was necessary because gland cells were not captured in the 10X data (C148), and the findings are clearly supported by the plate-based data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A cluster of 40 cells was identified as ciliary plates based on expression of 16-kDa calcium-binding protein (CaBP) and p25 alpha. ISH revealed expression in ciliary plates and in six previously undescribed submuscular cells that project to the exterior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 identify the ciliary plate cluster and a novel submuscular cell type. The cluster identification is based on marker expression (C84, Figure 3A, citation to Wendt et al. 2020), and ISH confirms expression in ciliary plates and submuscular cells (C85-C86, Figure 3G). The discovery of the submuscular cells is a novel finding supported by clear imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A cluster of 366 cells was identified as tegumental based on expression of adult tegument markers including dynein light chain, DUF3421 domain protein, and MEG6. ISH showed 46 Meg6-positive cells with nuclei in the posterior two-thirds of the larva, with cytoplasmic protrusions forming epidermal ridges between ciliary plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 characterize the tegumental cell population. The cluster is identified by known tegument markers from adult worms (C87, citation to Wendt et al. 2020), with ISH validation showing spatial distribution and morphology (C89-C90, Figure 4C-D). The data clearly support the identification of these cells as tegumental precursors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The protonephridial cluster (536 cells) expressed genes common to excretory systems including nephrin and odd-skipped-related. Eighty percent of cells expressed Smp_335600 (ShKT-domain protein), which was localized around six nuclei in a bilaterally symmetrical pattern along the s-shaped excretory tubules connecting anterior and posterior flame cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 characterize the protonephridial system. The cluster is identified by conserved excretory markers (C92, citation to G\u0105siorowski et al. 2021) and a known protonephridia marker (C93, citation to Nanes Sarfati et al. 2021). ISH reveals the spatial organization of the excretory system (C94-C95, Figure 4E), consistent with known ultrastructure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Two parenchyma clusters (1093 and 605 cells) were identified expressing markers similar to later developmental stages. A zinc transporter Slc39a7 (Smp_318890) was expressed in 7-9 cells with long cytoplasmic protrusions filling intercellular spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 characterize the parenchymal cell populations. The clusters are identified by markers from later stages (C97, citations provided), with ISH showing spatial distribution and morphology (C99-C100, Figure 4B, F). The data support the identification of these cells as parenchyma, though the distinction between the two clusters is less clear from ISH alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Seven stem cell clusters (10,686 cells) were identified by expression of ago2-1. Stems A and B are Kappa-like (klf+, nanos-2+), while Stems C and D are Delta/Phi-like (nanos-2+, fgfrA+, fgfrB+, hesl+). The two populations are distinguished by sex-linked gene expression; when sex chromosome genes are removed, they collapse into single clusters. ISH showed 20-29 ago2-1+ cells (median 23, ~7% of cells), with 12-14 p53-1+ (Delta/Phi) and 8-9 UPPA+ (Kappa) cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C115 characterize the stem cell populations. The clusters are identified by known stem markers (C101, citations to Wang et al. 2013, 2018), with classification based on marker expression (C103-C104). The sex-based clustering is demonstrated by re-analysis after removing sex chromosome genes (C105-C106, Figure 5B). ISH validates the two main populations (C109-C115, Figure 5C-D). This is a major finding revealing sex-biased gene expression in stem cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Neurons represent the most diverse somatic cell types. Trajectory analysis indicates that one of the two main stem cell populations is the origin of the tegument lineage, while the other likely contains pluripotent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 summarize key findings. Neuronal diversity (C15) is evident from five distinct clusters. The trajectory analysis (C16-C18) is based on RNA velocity analysis combining miracidia and sporocyst data (Figure 6), showing Delta/Phi stem cells progressing toward tegument (C17) and Kappa cells expressing germline markers (C18). These are well-supported inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C108",
+      "C181",
+      "C182"
+    ],
+    "result": "Each of the two main stem cell populations shows sex-biased transcriptional signatures, suggesting cell-type-specific gene dosage compensation for sex chromosome-linked loci. Sex-linked gene dosage is not fully compensated in the miracidium, with tissue-specific variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C108, C181-C182 describe sex-biased gene expression in stem cells. The clustering by sex is clearly demonstrated (Figure 5A, Figure 5\u2014figure supplement 2), and the interpretation of incomplete dosage compensation (C108, C182) is a reasonable inference from the observed differences in ZSR gene expression between male and female cells. The tissue-specificity is supported by the observation that sex-biased clustering is most evident in stem cells (C181).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "DNA replication does not take place in stem or somatic cells during the free-swimming miracidium stage, as shown by lack of EdU incorporation. Since stem cells start proliferating ~20 hr post-infection in the mother sporocyst, both stem cell populations pause cell division for at least 26 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 report the absence of cell division in the miracidium. The lack of EdU incorporation (C116, Figure 5\u2014figure supplement 5) is clear experimental evidence. The inference about the pause in cell division (C118) is based on combining this observation with the timing of proliferation in sporocysts (C117, citation to Wang et al. 2013). This is a well-supported finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Many top markers for Delta/Phi and Kappa stem clusters are ribosomal proteins, forming networks enriched for translation and ribosome biogenesis. Six transcription factors are upregulated in Delta/Phi (lin-39, tiptop, hes-related, p53-1, Zfp-1, six-3-1), indicating a multipotent progenitor stage. GO analysis shows Delta/Phi genes are related to ribosome and translation (pre-activation markers), while Kappa genes are involved in transcription and metabolism (quiescent markers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C125 characterize the molecular states of the two stem populations. The enrichment of ribosomal proteins (C119-C120) is shown by STRING analysis (Figure 5\u2014figure supplement 6). Differential expression of transcription factors (C121) and metabolic genes (C123) is shown in Figure 5\u2014figure supplement 7A. The GO analysis (C124-C125) is supported by citations to studies on stem cell activation states. The interpretation of multipotency (C122) is a reasonable inference supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The Delta/Phi stem population co-expresses three tegument/epidermal lineage-specific transcription factors (p53-1, zfp-1, six3-1), suggesting it is the origin of miracidia tegument cells and the source of new tegument in the mother sporocyst. RNA velocity analysis indicates progression of Delta/Phi stem cells toward miracidia tegument cells, with high-speed differentiation to sporocyst tegument. The miracidia tegument cluster may contain cells ranging from post-mitotic stem cell progeny to terminally differentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 describe the tegument lineage trajectory. The co-expression of tegument-specific transcription factors (C126, citations provided) is shown in the scRNA-seq data. The RNA velocity analysis (C128-C129, Figure 6B-C) provides computational evidence for the developmental trajectory. The dynamics of p53-1 and zfp-1 expression (C131-C132, Figure 6D-E) support the progression model. This is a major finding linking stem cells to differentiated tegument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The Kappa stem population expresses genes detected in germline stem cells and germ cells in intra-mammalian stages, including p53-2 (highly expressed and actively transcribed) and germline-specific regulatory genes (eled, onecut1, irx, akkn, boule). Together, these data suggest Delta/Phi is the origin of the tegumental lineage and contributes to extra-embryonic somatic tissues, while Kappa likely contains pluripotent cells that will contribute to cercariae development and the germline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 characterize the Kappa population and propose its fate. The expression of germline markers (C133, C136, citations to Wang et al. 2018, Li et al. 2021) is shown in the scRNA-seq data and RNA velocity analysis (Figure 6F-G). The expression of p53-2 (C134-C135) is supported by RNA velocity and citation. The conclusions about lineage fates (C137-C138) are reasonable inferences from the combined expression and trajectory data, though they remain predictions requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior scRNA-seq studies have identified stem cell heterogeneity, classified differentiated cell types, and revealed key genes essential for parasite survival across the schistosome life cycle. Studies have been performed on mother sporocyst, schistosomulum, juvenile, and adult stages, but single-cell data for the miracidium larva was lacking prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 provide literature context. These are accurate summaries of prior work, supported by appropriate citations. The identification of the gap in miracidium single-cell data (C32) justifies the current study. These are minor contextual claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The miracidium is a short-lived, non-feeding stage relying on internal energy stores. Eight major systems have been previously identified at the ultrastructural level: musculature, nervous, penetration gland cells, excretory, interstitial (parenchyma), stem/germinal cells, epithelial, and terebratorium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 provide background on miracidium biology from prior ultrastructural studies, supported by citations to Pan 1980 and others. These are established facts that provide context for the molecular characterization in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The miracidium, with its diversity of differentiated cells in relatively low numbers (~365 cells), makes a simple and tractable system for understanding schistosome cell biology. Compared to later stages (cercariae ~1600 cells, schistosomulum ~900 cells, adults tens of thousands), the miracidium is a simple stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 provide context and conclusions about the utility of the miracidium as a model system. The cell counts for later stages are supported by citations (C140, C142) or stated as unpublished data (C143). The conclusion about simplicity and tractability (C139) is a reasonable inference from the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Stem cells accounted for ~52% of scRNA-seq data despite comprising only 7% of cells in the larva, indicating preferential recovery. Ciliary plates were only found in sufficient numbers in unsorted samples. Preferential recovery may be due to differences in cell robustness to dissociation, sorting, and/or 10X GEM capture. There are clear benefits to including unsorted samples to discover cell type diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 discuss technical aspects of the scRNA-seq approach. The overrepresentation of stem cells (C144) is documented in Supplementary file 1q. The observation about ciliary plates in unsorted samples (C146) is evident from Figure 1\u2014figure supplement 1. The speculation about causes (C145) and the conclusion about benefits of unsorted samples (C147) are reasonable inferences from the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C148",
+      "C149"
+    ],
+    "result": "Penetration glands were not captured in the 10X data, possibly due to their large size (20 \u00d7 50 \u00b5m) and irregular shape. Plate-based scRNA-seq was used for penetration glands to complete the cell-type transcriptome atlas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 explain the methodological approach for gland cells. The absence from 10X data and the use of plate-based scRNA-seq (C149) are clearly described in the methods. The speculation about size and shape (C148) is reasonable given the known dimensions of these cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The two muscle clusters correspond to circular and longitudinal body wall muscles. Differences between these muscle types have been observed in planaria. The expression of Wnt-11-1 and Notum at opposite poles suggests involvement in anterior-posterior axis definition. The unilateral expression of Notum suggests a dorso-ventral and/or left-right axis. Expression of axial patterning genes in muscles suggests they provide positional information to stem cells for patterning of daughter sporocysts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C157 discuss the muscle populations and their potential roles in patterning. The correspondence to circular and longitudinal muscles (C150) is supported by ISH data. The comparison to planaria (C151) and the role of Wnt signaling in patterning (C152) are supported by citations. The inferences about axis definition (C153-C154) and positional information (C156-C157) are reasonable interpretations of the expression patterns, though they remain hypotheses requiring functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The nervous system accounts for over 50% of cells and is the most transcriptionally heterogeneous tissue. At hatching, most miracidia neurons are fully differentiated. Neuron 4 cells resemble bipolar ganglion cells with multi-ciliated nerve endings described by Pan 1980. Their gene expression profile suggests they function as flow and/or vibration sensors. These receptors degenerate 12 hr after transformation to mother sporocyst.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C162 discuss the neural system. The abundance and heterogeneity (C158) are supported by cell counts and clustering data, with citations to similar observations in other animals. The inference about differentiation state (C159) is reasonable from the discrete clustering. The comparison to ultrastructural descriptions (C160, citation to Pan 1980) and functional predictions (C161) are supported by marker expression (polycystins). The degeneration timing (C162) is supported by citation to Poteaux et al. 2023.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The six submuscular cells expressing ciliary plate markers could play a role in ciliary plate development and function. Their projection into the external environment suggests a sensory role. They could function similarly to ciliomotor pacemaker neurons in Platynereis larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C165 propose functions for the novel submuscular cells. While the expression of ciliary plate markers (C163) is clearly shown, the proposed roles in development/function and sensory function (C163-C164) are inferences from anatomical observations. The comparison to Platynereis (C165, citation provided) is speculative. These are reasonable hypotheses but lack functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Ciliary plates are miracidium-specific and shed within 2-48 hr inside the snail. The 16 kDa CaBP is clearly important to ciliary plate function as it is highly expressed in both droplet- and plate-based scRNA-seq. Bulk RNA-seq shows this gene was detected in late embryonic stage, miracidia, and early mother sporocyst.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C169 discuss ciliary plate biology. The stage-specificity (C166) is established knowledge. The shedding timing (C167) is supported by citations. The importance of CaBP (C168) is inferred from high expression across platforms, which is reasonable. The developmental expression pattern (C169) is supported by citations to bulk RNA-seq studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Tegumental cell transcriptomes show a network of genes involved in protein folding, export, and translocation, consistent with ultrastructural observations of abundant RER, ribosomes, and Golgi. RNA velocity analysis revealed dynamic genes crucial in tegument cell maturation across the miracidium to sporocyst transition. Many molecular regulators and markers of adult tegument biogenesis are expressed in miracidia and sporocyst stem and tegument cells, indicating a conserved molecular programme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C174 discuss tegument cell biology. The STRING analysis results (C170) are shown in Figure 4\u2014figure supplement 1. The consistency with ultrastructure (C171-C172) is supported by citations to Pan 1980 and Meuleman et al. 1978. The RNA velocity findings (C173) are based on Figure 6. The conservation of the tegument developmental programme (C174) is supported by comparison across stages with citations. These are well-supported findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The transcriptomes of the two stem populations suggest they are in different activation states, aligning with the discovery of two stem cell populations in the mother sporocyst with different proliferation kinetics. The pre-activated state of Delta/Phi stem cells may signify they are the first to proliferate after transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C177 interpret the stem cell states. The different activation states (C175) are inferred from GO analysis (C124-C125). The alignment with sporocyst findings (C176) is supported by citation to Wang et al. 2013. The speculation about proliferation order (C177) is a reasonable hypothesis from the activation state, though it lacks direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The expression of eled and germline-specific regulatory genes in miracidia Kappa cells suggests that cells contributing to the germline may already be segregated at hatching. The presence of spliced-only copies of eled and boule could suggest they are maternal transcripts restricted to primordial germ cells during embryogenesis, though an alternative explanation is that unspliced transcripts are below detection threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C178-C180 propose early germline segregation. The expression of germline markers (C178) is clearly shown, and the inference about segregation is reasonable. However, the interpretation of spliced-only transcripts (C179) is speculative, with an alternative explanation provided (C180). The comparison to zebrafish (C179, citation provided) is suggestive but not definitive. This requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Tissue-specific variation could add a further dimension to dosage compensation in schistosomes. A similar phenomenon has been described in mouse and Drosophila. Sex differences in undifferentiated stem cells have not been reported in later schistosome stages, possibly because earlier studies used older genome versions where sex chromosomes were not well defined. The present study benefited from high coverage and improved genome annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C187 discuss the novelty and context of the sex-biased findings. The inference about tissue-specific dosage compensation (C183) is supported by the data and citation to Picard et al. 2019. The comparison to other organisms (C184) is supported by citation. The explanation for why this wasn't seen before (C185-C186) is reasonable, supported by citations. The advantages of the current study (C187) are factual.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The current understanding is that differentiated somatic cells of the miracidium do not continue beyond this stage; stem cells persist and differentiate into subsequent life stages. All miracidium somatic cells are miracidium-only cells. Their transcriptional signatures are similar to comparable tissue types at later stages, suggesting conserved tissue-specific molecular developmental programmes deployed multiple times during the life cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C191 provide context and conclusions. The understanding about somatic cell fate (C188) is supported by citation to Wang et al. 2018. The inference that somatic cells are stage-specific (C189) follows from this. The similarity of transcriptional signatures (C190) is supported by comparisons with citations. The conclusion about conserved programmes (C191) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  }
+]

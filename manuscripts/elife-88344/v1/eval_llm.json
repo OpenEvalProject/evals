@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C52",
+      "C53"
+    ],
+    "result": "The VEXAT model can replicate muscle response to length changes across multiple scales (small and large perturbations) while reproducing force-velocity and force-length relations, and is computationally efficient with few states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C52-C53 collectively establish the main contribution of the paper. The model's performance is demonstrated through simulations of multiple benchmark experiments (Kirsch et al. 1994, Herzog and Leonard 2002, Leonard et al. 2010, Hill 1938, Gordon et al. 1966) shown in Figures 6-12, with quantitative comparisons to both biological data and Hill-type models. The computational efficiency claim (C53) is supported by the model's state count (4-5 states vs. thousands for Huxley models).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The VEXAT model achieves 89% VAF at 90 Hz perturbations (within the 78-99% range of Kirsch et al. 1994), outperforming the Hill model (58% VAF), though both models show greater phase shift than biological muscle at low frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are directly supported by simulation data in Figure 6, comparing model outputs to Kirsch et al. 1994 experiments. The VAF values are quantitatively reported and compared to experimental benchmarks. The limitation regarding low-frequency phase response (C80) is acknowledged with visual evidence in Figure 6C, F, I, L.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C82"
+    ],
+    "result": "In simulations of Herzog and Leonard 2002 active lengthening experiments, the VEXAT model develops steadily increasing tension while the Hill model exhibits force drops due to negative stiffness on the descending limb of the force-length curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by simulation results in Figure 9B-C, showing divergent behavior between models. The VEXAT model's continued force development is mechanistically explained by the titin model, while the Hill model's negative stiffness is shown both in simulation and explained mathematically (Equation 26). This addresses a key limitation of Hill-type models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "When simulating Leonard et al. 2010 experiments of active lengthening beyond actin-myosin overlap, only the VEXAT model with linear titin element matches experimental data, while the Hill model cannot produce force beyond 1.62 optimal length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C89-C90 are supported by Figure 10B showing the VEXAT model (linear titin) matching experimental data up to 3.38 optimal length, while the Hill model fails beyond actin-myosin overlap. The titin-deletion control experiment (C89) from Leonard et al. 2010 provides mechanistic validation. However, the WLC titin model fails to reach observed lengths, suggesting model limitations at extreme extensions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The VEXAT model has limitations: the low frequency phase response can be improved, and the model lacks a mechanism to support passive force enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 are acknowledged limitations supported by data in Figure 6C, F showing phase deviations at low frequencies, and Figure 9B showing the model fails to capture passive force enhancement (\u0394fB) after deactivation. These are honest assessments of model shortcomings compared to biological muscle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The VEXAT model's force-velocity curve shows slightly weaker maximum shortening velocity than the embedded curve due to XE viscoelasticity, and the force-length profile is right-shifted due to XE series elasticity, both correctable through calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by Figure 11A and Figure 12A showing the deviations and their corrections. The mathematical basis for the shift (2/k\u0303\u2092\u02e3) is derived in Equations 30-31. The calibration approach (scaling v\u2098\u2090\u2093\u1d39 by 0.95 and shifting f\u1d38) successfully aligns the model with target curves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C74",
+      "C76"
+    ],
+    "result": "Kirsch et al. 1994 demonstrated that muscle behaves as a linear-time-invariant system for small perturbations, with a spring-damper capturing >90% of force variation across 4-90 Hz, and damping increasing as perturbation bandwidth decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C74, C76 accurately cite and describe the Kirsch et al. 1994 findings, which form a key experimental benchmark for the paper. These are well-established results in the literature used to validate the VEXAT model. The claims are consistent with the cited work and provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The origins of activation-dependent damping observed by Kirsch et al. 1994 are unknown, but the VEXAT model assumes it originates from attached crossbridges since damping varies linearly with activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 correctly identifies an open question in the field. Claim C97 presents a modeling assumption based on the linear relationship between damping and activation, but this remains unvalidated. The assumption is reasonable but speculative, as acknowledged in the Discussion. This represents a hypothesis requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Recent experiments (Tomalka et al. 2021) suggest the XE force might decrease during lengthening rather than increase, which would require model adjustments if replicated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 identify a potential conflict between the VEXAT model and recent experimental observations. However, the authors appropriately note this requires replication before model revision. This represents responsible acknowledgment of potentially contradictory evidence, but the uncertainty about replicability prevents definitive evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C109",
+      "C110"
+    ],
+    "result": "Hill-type models lack active spring elements, Huxley models lack active damping, and linearized models cannot capture nonlinear force-velocity and force-length relations, limiting their ability to replicate the full range of muscle behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C109-C110 accurately characterize limitations of existing model classes based on their mathematical structure and cited literature. These are well-established properties of these model types. The inferences about their inability to replicate certain experiments (C109-C110) follow logically from their structural limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Multiple existing muscle models (Forcinito et al. 1998, Tamura and Saito 2002, Haeufle et al. 2014, G\u00fcnther et al. 2018, De Groote et al. 2017/2018, Rode et al. 2009, Schappacher-Tilp et al. 2015) are unlikely to reproduce Kirsch et al. 1994 experiments due to structural limitations (serial vs. parallel spring-damper arrangements, missing damping elements, or reliance on Hill-type CE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C111-C118 provide systematic analysis of why existing models cannot replicate the Kirsch et al. 1994 experiments. The reasoning is based on: (1) mathematical structure of the models from cited papers, (2) Kirsch et al. 1994's explicit demonstration that serial spring-dampers fail (C31), and (3) impedance properties of series vs. parallel connections. The inferences are logical and well-supported, though direct simulation comparisons would strengthen the argument.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Titin is a complex, multi-segmented protein spanning the half-sarcomere with variable composition across muscle types and species, capable of activation-dependent interactions with actin and myosin at multiple sites (N2A, PEVK, IgD regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41, C64-C66 accurately summarize established knowledge about titin structure and interactions, supported by multiple citations to experimental work. These claims provide necessary biological context for the titin model development. The variety of reported interaction sites (C38-C41, C64-C66) reflects genuine complexity and uncertainty in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The VEXAT model assumes titin-actin interaction (rather than titin-myosin) based on weight of evidence, modeled as activation-dependent damping rather than rigid attachment, consistent with in vitro motility assays showing slowed but not stopped actin progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 present justified modeling choices based on experimental evidence. C67 acknowledges the weight of evidence favors titin-actin over titin-myosin interactions. C68-C69 justify the damping model based on Kellermayer and Granzier 1996 and Dutta et al. 2018 observations. These are reasonable modeling decisions given current evidence, though alternative mechanisms remain possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The VEXAT model treats actin and myosin filaments as rigid and lumps six titin filaments together to reduce computational states, justified by the much higher stiffness of actin/myosin filaments compared to crossbridges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 present modeling simplifications with clear justification. C61 is supported by citations showing actin/myosin stiffness greatly exceeds crossbridge stiffness. C62-C63 explicitly state these as simplifying assumptions to reduce model complexity. The trade-off between accuracy and computational efficiency is appropriate for the model's intended use in large-scale simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The VEXAT model assumes actin-myosin sliding acceleration occurs due to force imbalance in the XE, departing from Hill models (instantaneous velocity response) and Huxley models (velocity-dependent attachment/detachment rates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 clearly articulate a key modeling assumption (C100) and contrast it with established approaches (C101-C102). The assumption is stated transparently with mathematical support (Equation 16). While this represents a novel approach, it remains a hypothesis requiring experimental validation. The departure from previous models is accurately characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The VEXAT model's active titin assumes PEVK-actin bonds cannot do positive work on titin (similar to Rode et al. 2009 and Schappacher-Tilp et al. 2015), meaning titin cannot be actively preloaded and only develops force when stretched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 clearly state a modeling assumption and its consequence. C105 explores implications if the assumption were violated (titin preloading would reduce CE stiffness). The assumption is acknowledged as differing from alternative theories (winding filament, titin entanglement). This represents an honest presentation of a modeling choice with uncertain biological validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The VEXAT model has limitations: inaccuracy with single crossbridges (lumped model assumption), temperature-invariance assumption (contradicting temperature-sensitive interactions), and ignoring submaximal contraction phenomena (force-length peak shift, velocity scaling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 honestly acknowledge model limitations. C106 correctly identifies the breakdown of the lumped crossbridge approach at low crossbridge numbers. C107 notes temperature-sensitivity (supported by citations) is not captured. C108 identifies missing submaximal contraction phenomena (supported by citations). These represent appropriate scope limitations for the current model version.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C59"
+    ],
+    "result": "Mechanical properties scaling with size is commonly used in muscle modeling, and titin's passive force-length properties scale from single molecules to myofibrils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C59 cite established scaling principles in muscle modeling. C55 is supported by Zajac 1989, a foundational reference. C59 is supported by Herzog et al. 2012 and Prado et al. 2005 showing titin scaling. These provide justification for the model's scaling assumptions and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Muscle impedance (stiffness and damping) is fundamental to motor learning and stability, with small perturbations captured by LTI spring-damper systems and large stretches by compliant springs with activation-dependent fixing, relevant to locomotion and injury prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide well-established background context supported by appropriate citations. These claims accurately summarize the functional importance of muscle mechanical properties and motivate the need for models capturing both small and large perturbations. The claims represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23"
+    ],
+    "result": "No single existing muscle model can replicate force responses to both small and large perturbations while reproducing Hill 1938 and Gordon et al. 1966 experiments, potentially leading simulation studies to reach conclusions valid in simulation but not reality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22-C23 identify the gap in existing models that motivates the VEXAT development. These are inferences based on the authors' analysis of existing model capabilities. While C23 is somewhat speculative about simulation study conclusions, the core claim about model limitations (C6, C22) is supported by the systematic analysis of existing models provided later in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The CNS exploits muscle impedance for motor learning, unstable/noisy environments, using co-contraction to increase arm stiffness in unstable force fields, with co-contraction reducing as tasks become learned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 accurately cite and summarize motor control literature (Franklin et al. 2003, Trumbower et al. 2009, Selen et al. 2009, Burdet et al. 2001). These provide important functional context for why accurate impedance modeling matters. The claims represent well-established findings in motor control research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Active muscle stretched appreciably develops enormous titin forces that may prevent injury, with stiffness for small perturbations far exceeding that for large perturbations, both relevant to everyday movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide context for the importance of modeling both small and large perturbations. C18 is supported by Herzog and Leonard 2002 and Leonard et al. 2010. C19 is speculative (\"may prevent\") but reasonable. C20 compares stiffness across scales (supported by comparing cited studies). C21 provides functional motivation. These establish the biological relevance of the modeling challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The Sartori et al. 2015 approach of deriving stiffness from force-length curve slope predicts zero stiffness at optimal length and negative stiffness on descending limb, contradicting experimental evidence; De Groote et al. 2017/2018 short-range-stiffness model has sharp transitions and unchanged damping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 provide critical analysis of recent attempts to add stiffness to Hill models. The mathematical inferences about Sartori et al. 2015 (C45-C46) are correct given the approach described. The contradictions with experimental data (C47-C48, supported by Kirsch et al. 1994 and Herzog and Leonard 2002) are valid. The critiques of De Groote et al. 2017/2018 (C49-C51) are supported by comparison with Kirsch et al. 1994 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The Forcinito et al. 1998 model more faithfully replicates force development during ramp length changes (\u224810% optimal length, 4-11% max velocity) than Hill models; Tamura and Saito 2002 replicated force-length-velocity relations and qualitatively reproduced force-enhancement/depression profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 accurately cite improvements in previous models. These claims provide appropriate credit to prior work while setting up the argument that these models still cannot replicate the full range of experiments (particularly Kirsch et al. 1994). The characterization of these models' capabilities is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Most motor control simulations use the canonical linearized muscle model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by multiple citations to motor control simulation studies (Kearney et al. 1997, Perreault et al. 2004, Schouten et al. 2008, Trumbower et al. 2009, Mitrovic et al. 2010). This provides context for the practical importance of accurate impedance modeling in motor control applications.",
+    "result_type": "MINOR"
+  }
+]

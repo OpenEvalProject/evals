@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PC turnover rate decreases with mouse age. Young mice (6-8 weeks) show faster PC decay in both BM (t1/2 = 58 days) and spleen (t1/2 = 28 days) compared to middle-aged mice (20-24 weeks; BM t1/2 = 93 days, spleen t1/2 = 39 days), suggesting LLPCs accumulate with aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 provide consistent flow cytometry data tracking YFP+ PC decay over 150 days in young vs middle-aged mice. The half-life calculations (C44, C46) are based on absolute cell numbers fitted to decay curves, with appropriate statistical comparisons. The conclusion (C47) logically follows from the observed age-dependent differences in PC turnover rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "LLPCs display cell-intrinsic arrest and preferential clustering in the BM. Tomatobright LLPCs show reduced motility compared to Tomatodim bulk PCs at days 30 and 60 post-tamoxifen, and are more enriched in PC clusters and closer to neighboring PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 are supported by intravital two-photon imaging data with quantitative analysis of cell trajectories, velocities, and spatial organization. The temporal progression (similar dynamics at day 5, divergence by days 30-60) strengthens the cell-intrinsic interpretation. Both cluster enrichment and nearest-neighbor analyses converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "LLPC clustering is dependent on APRIL. PC clusters are spatially organized in the BM, PCs are less motile within clusters, and clusters are reduced in APRIL-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 cite previous work establishing PC clustering and APRIL dependence. Claim C4 extends this to LLPCs specifically using imaging data from the current study. The convergence of spatial organization (C52-C53) with APRIL dependence (C37) provides mechanistic insight, though the APRIL knockout data is from prior work rather than new experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "LLPCs express a unique transcriptome with fine-tuned surface receptor expression. Deep RNA-seq reveals differential expression of surface markers (CD93, CD81, CXCR4, CD326, CD44, CD48) and transcription factors, with pathway enrichment in cell survival, stress response, lipid metabolism, and adhesion/chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 and C95-C100 are supported by deep bulk RNA-seq (50M reads/sample, n=44 samples) with appropriate statistical analysis (DESeq2, padj<0.05). Unsupervised clustering shows clear separation of LLPC vs bulk PC samples. The surface marker findings (C54-C55) are validated by flow cytometry. GO term enrichment provides biological context. The depth of sequencing addresses prior concerns about detecting subtle changes in PC transcriptomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C93",
+      "C94"
+    ],
+    "result": "CXCR4 controls durability of humoral responses by promoting PC survival and retention in the BM. Conditional deletion of Cxcr4 in PCs leads to rapid mobilization from BM, reduced PC survival, decreased pro-survival factor expression (Mcl1, Bcl2), and accelerated antibody titer decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C61-C70 are supported by multiple complementary approaches: immunization studies with ELISA (C9, C61), competitive chimera experiments (C62-C67), and intratibial injection with PTX blockade (C68-C70). The CXCR4 deletion is confirmed at mRNA and protein levels (C93). The rapid mobilization phenotype (C68-C70) precedes survival defects, supporting a retention mechanism. However, incomplete CXCR4 deletion (C94) may underestimate the full effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The endogenous LLPC BCR repertoire exhibits reduced diversity, reduced somatic mutations, increased public clones, and enrichment in IgM isotypes (particularly in young mice), suggesting non-random LLPC specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 and C82-C87 are supported by BCR repertoire sequencing from RNA-seq data (>26,000 clones analyzed). Multiple independent metrics converge: Chao1 diversity (C82), SHM frequency (C83-C84), public clone enrichment (C85-C87), and IgM enrichment in young splenic LLPCs (C13, C81). The inference of non-random specification (C14) is reasonable given the convergent evidence, though alternative explanations (e.g., differential survival) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C59"
+    ],
+    "result": "The BM PC compartment becomes enriched in LLPCs with aging, which may outcompete and limit entry of new PCs. Middle-aged mice have higher frequency of quasi-LLPCs in BM compared to young mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 is supported by flow cytometry data (C59) showing increased quasi-LLPC frequency in middle-aged mice using the 6-marker panel. This is consistent with the PC turnover data (C41-C44). However, claim C16 is speculative ('may outcompete') and lacks direct experimental evidence of competition or niche limitation. The enrichment could reflect differential survival rather than active competition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CD93 expression is uniquely bimodal among tested markers, with LLPCs predominantly in the CD93high subset. A 6-marker panel (CD93, CD81, CXCR4, CD326, CD44, CD48) enriches for LLPCs up to sixfold. Glucose uptake (2NBDG) does not distinguish BM LLPCs from bulk PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by flow cytometry data across multiple timepoints and tissues. The CD93 bimodality (C54) is clearly shown in Figure 3C. The 6-marker enrichment (C58) is validated using YFP+ cells as ground truth. The negative result for 2NBDG (C57) challenges prior work using this as an LLPC marker, though the high frequency in both populations (C56) suggests metabolic activity is maintained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "IgA PCs are the major isotype in BM, while splenic LLPCs from young mice (6-8 weeks) are highly enriched in IgM compared to all other samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by BCR repertoire isotype analysis from RNA-seq data. The IgM enrichment in young splenic LLPCs is a striking and specific finding that suggests early specification of this subset, potentially from B-1 lineages as discussed. The comparison to bulk PCs from the same mice strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The BEC mouse model shows high specificity for PCs (>99% of BM PCs are TdTomato+, 94% of TdTomato+ cells are CD138high). Tamoxifen treatment induces robust YFP labeling (98% PCs at day 5), and labeled PCs mature phenotypically by day 60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 validate the BEC-YFP mouse model with flow cytometry data. The high specificity (C88-C89) and efficient labeling (C90) are critical for interpreting all subsequent experiments. The phenotypic maturation (C91-C92) provides temporal validation that Tomatobright cells at later timepoints represent true LLPCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background and prior work establishing the importance of LLPCs for vaccine responses, their tissue distribution, developmental pathways, and the role of CXCR4 in PC biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C17-C34 represent established knowledge and prior work cited in the introduction. These are appropriately referenced and provide context for the current study. The citations appear accurate based on the references provided, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  }
+]

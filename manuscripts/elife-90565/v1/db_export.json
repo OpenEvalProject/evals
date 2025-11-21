@@ -1,0 +1,2042 @@
+{
+  "submission": {
+    "id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T00:09:51.402723Z",
+    "updated_at": "2025-11-21T00:09:51.402723Z"
+  },
+  "content": [
+    {
+      "id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "content_type": "manuscript",
+      "content_text": "# Combining array tomography with electron tomography provides insights into leakiness of the blood-brain barrier in mouse cortex\n\n## Authors\n\n- Georg Kislinger<sup>1</sup>\n- Gunar Fabig<sup>3</sup> ([ORCID: 0000-0003-3017-0978](https://orcid.org/0000-0003-3017-0978))\n- Antonia Wehn<sup>4</sup>\n- Lucia Rodriguez<sup>1</sup>\n- Hanyi Jiang<sup>1</sup>\n- Cornelia Niemann<sup>1</sup>\n- Andrey S Klymchenko<sup>7</sup>\n- Nikolaus Plesnila<sup>4</sup> ([ORCID: 0000-0001-8832-228X](https://orcid.org/0000-0001-8832-228X))\n- Thomas Misgeld<sup>1</sup> ([ORCID: 0000-0001-9875-6794](https://orcid.org/0000-0001-9875-6794))\n- Thomas M\u00fcller-Reichert<sup>3</sup> ([ORCID: 0000-0003-0203-1436](https://orcid.org/0000-0003-0203-1436))\n- Igor Khalin<sup>4</sup>\n- Martina Schifferer<sup>2</sup> ([ORCID: 0000-0002-0500-8218](https://orcid.org/0000-0002-0500-8218)) \u2020\n\n### Affiliations\n\n1. Institute of Neuronal Cell Biology, Technical University Munich Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))\n2. German Center for Neurodegenerative Diseases (DZNE) Munich Germany ([ROR:043j0f473](https://ror.org/043j0f473))\n3. Experimental Center, Faculty of Medicine Carl Gustav Carus, Technische Universit\u00e4t Dresden Dresden Germany ([ROR:042aqky30](https://ror.org/042aqky30))\n4. Institute for Stroke and Dementia Research (ISD), LMU University Hospital, LMU Munich Munich Germany ([ROR:05591te55](https://ror.org/05591te55))\n5. Department of Neurosurgery, University of Munich Medical Center Munich Germany ([ROR:05591te55](https://ror.org/05591te55))\n6. Department of Psychiatry and Psychotherapy, University Medicine Greifswald Greifswald Germany ([ROR:025vngs54](https://ror.org/025vngs54))\n7. Laboratoire de Bioimagerie et Pathologies, Universit\u00e9 de Strasbourg Illkirch France ([ROR:00pg6eq24](https://ror.org/00pg6eq24))\n8. Munich Cluster of Systems Neurology (SyNergy) Munich Germany ([ROR:025z3z560](https://ror.org/025z3z560))\n9. Normandie University, UNICAEN, INSERM UMR-S U1237, Physiopathology and Imaging of 19 Neurological Disorders (PhIND), GIP Cyceron, Institute Blood and Brain Caen France ([ROR:051kpcy16](https://ror.org/051kpcy16))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLike other volume electron microscopy approaches, automated tape-collecting ultramicrotomy (ATUM) enables imaging of serial sections deposited on thick plastic tapes by scanning electron microscopy (SEM). ATUM is unique in enabling hierarchical imaging and thus efficient screening for target structures, as needed for correlative light and electron microscopy. However, SEM of sections on tape can only access the section surface, thereby limiting the axial resolution to the typical size of cellular vesicles with an order of magnitude lower than the acquired xy resolution. In contrast, serial-section electron tomography (ET), a transmission electron microscopy-based approach, yields isotropic voxels at full EM resolution, but requires deposition of sections on electron-stable thin and fragile films, thus making screening of large section libraries difficult and prone to section loss. To combine the strength of both approaches, we developed \u2018ATUM-Tomo, a hybrid method, where sections are first reversibly attached to plastic tape via a dissolvable coating, and after screening detached and transferred to the ET-compatible thin films. As a proof-of-principle, we applied correlative ATUM-Tomo to study ultrastructural features of blood-brain barrier (BBB) leakiness around microthrombi in a mouse model of traumatic brain injury. Microthrombi and associated sites of BBB leakiness were identified by confocal imaging of injected fluorescent and electron-dense nanoparticles, then relocalized by ATUM-SEM, and finally interrogated by correlative ATUM-Tomo. Overall, our new ATUM-Tomo approach will substantially advance ultrastructural analysis of biological phenomena that require cell- and tissue-level contextualization of the finest subcellular textures.\n\n## Introduction\n\nVolume electron microscopy (EM) provides high-resolution data of target structures that can be used to render complex biological morphologies in three dimensions (Peddie et al., 2022). While volume EM thus provides high spatial resolution, searching for a rare nanometer-sized structure of interest in sections of several hundreds of square micrometers is tedious. To bridge these scales, multimodal approaches like correlative light and electron microscopy (CLEM) (Scher and Avinoam, 2021) or micro-computed tomography combined with volume EM Karreman et al., 2017 have been applied. Among the available volume EM approaches, array tomography techniques (Wacker and Schroeder, 2013), such as ATUM (Kasthuri et al., 2015), have proven particularly powerful for correlating specific biological structures (Schifferer et al., 2021; Snaidero et al., 2020). Array tomography techniques require section collection onto a solid substrate, such as coated glass, silicon (Micheva and Smith, 2007) or plastic tape, and subsequent serial-section SEM. In ATUM-SEM, a reel-to-reel system transfers the sections from the diamond knife onto tape (Kubota et al., 2018). The tape strips are assembled on silicon wafers (Baena et al., 2019; Kislinger et al., 2023), thus generating tissue libraries that can be repetitively imaged by SEM at different resolution regimes. This separates the correlation task into two phases: (1) low-resolution screening for the region previously imaged by fluorescence microscopy and (2) imaging of re-located structures by high-resolution volume EM. High-resolution imaging by array tomography is, however, currently restricted by physical sectioning, resulting in typical voxels of 3 \u00d7 3 \u00d7 30\u2013100 nm, where SEM determines the lateral resolution of \u22483 nm. As a consequence, array tomography can reveal fine cellular processes down to \u224840 nm, but potentially misses smaller subcellular structures, such as vesicles or contact sites that can be hidden within a section volume. For higher-resolution imaging, typically transmission electron microscopy (TEM) is applied, with ET being the method of choice for high-resolution imaging of sub-cellular volumes (West et al., 2011; Mastronarde, 2005; He and He, 2014; Kiewisz et al., 2022; Redemann et al., 2017). In ET, semi-thick sections (200\u2013400 nm) are tilted in the electron beam and Fourier transformed for image reconstruction (Baumeister et al., 1999; Young and Villa, 2023; Frank, 2006), but even with serial semi-thick sections (Soto et al., 1994), the overall volume that can be reconstructed and visualized in three dimensions is limited.\n\nSo far, ATUM could not be combined with ET because the former necessitates attaching sections on a solid support, while the latter as a projection method, needs sections to be deposited on electron-transparent films. While section deposition is usually irreversible in ATUM, we reasoned that plastic tape coating could enable section removal after SEM and transfer onto ET-compatible films. Thus, selected semi-thick sections could be re-inspected by ET \u2013 a novel multimodal approach, which we call \u2018ATUM-Tomo\u2019. We exemplify the ATUM-Tomo approach by assessing structural determinants of BBB leakiness, a key adaptation of the neurovascular unit that controls substance exchange between blood and central nervous system parenchyma and can be locally disturbed in pathologies, including after ischemia, traumatic brain injury or multiple sclerosis (Zhang et al., 2019; Shi et al., 2020). We had previously characterized BBB leakage around impact-induced microclots using correlative confocal microscopy and ATUM of fluorescent lipid nanodroplets (LNDs) and gold nanoparticles (Khalin et al., 2022). At the BBB, the actual barrier function is determined by distinctive ultrastructural features, mostly within the endothelial layer, including tight junctions, pinocytosis, and vesicular transport (O\u2019Brown et al., 2019; Andreone et al., 2017; Nahirney et al., 2016; Hirano et al., 1994). As these structures lie below the 30 nm z-resolution limit of ATUM, they eluded our previous correlative imaging. Here, we demonstrate that triple correlation using confocal microscopy, volume SEM in combination with ET provides an integrated view of the cellular environment as well as the ultrastructural features of the compromised BBB. Our application shows that ATUM-Tomo in combination with CLEM is a powerful multimodal approach, enabling a bridging of scales from the mm to the nm range.\n\n## Results\n\n### Correlative confocal imaging and ATUM-SEM reveals sites of BBB disruption\n\nControlled cortical impact in mice is a model for traumatic brain injury that involves BBB damage. To mark sites of vessel injury, we injected LNDs and colloidal gold particles of similar size (30 nm) and surface chemistry (PEGylation) ensuring similar biodistribution. LNDs are highly fluorescent, while gold is electron dense \u2013 and both accumulate in microthrombi formed in the impact penumbra within 30\u201360 min post-injection (Khalin et al., 2022), enabling the tracking of microthrombi and BBB leakage sites. These particles were injected systemically 60 min after impact, followed by DyLight 649 lectin as a vessel lumen marker just before perfusion with fixative containing glutaraldehyde, which all fluorophores withstand (Figure 1A). We sliced the fixed brains in 80 \u03bcm thick coronal vibratome sections (Figure 1A) to allow confocal imaging and preserve some longer stretches of blood vessels, while restricting the axial depth of the search volume for correlation. After post-fixation in glutaraldehyde, sections were temporarily mounted on a glass slide with a cover slip and recorded \u22482 \u00d7 2 mm confocal overview of all cortical layers bearing the lesion and peri-lesional areas (Figure 1B). For correlative EM, we identified areas of vascular occlusions indicated by LNDs accumulations and sites of extravasation marked by perivascular LND fluorescence and locally acquired higher magnification confocal image stacks (Figure 1C). Tissue preservation was ensured by imaging for a maximum of 1 hr, followed by gentle removal of the cover slip by floating-off in the buffer.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic drawing of the ATUM-SEM correlative light and electron microscopy (CLEM) workflow. Controlled cortical impact (middle) is followed by systemic injection of 30 nm diameter lipid nanodroplets (LNDs) (magenta) and 30 nm diameter colloidal gold nanoparticles (black). DyLight 649 lectin (green) was injected 5 min before perfusion (1). After fixation, coronal vibratome sections are generated (2) and positioned onto glass slides with only laying the cover slip on top of the section for confocal imaging (3). The vibratome section is recovered by immersion into the petri dish (4). The previously imaged region of interest is dissected (5) and processed for EM including embedding into resin and contrast enhancement (6). Serial ultramicrotomy and tape collection (7) is followed by wafer mounting and SEM imaging (8). (B) Top: Sum projection of a confocal tile scan (lectin, green; LNDs, magenta; left) and corresponding binocular image (right) of the dissected vibratome section. The lesion area is indicated by a dashed line. Scale bars 200 \u00b5m. Middle: Lesion area identified in the overview tile scan (box in top image) is relocated in the sum projection confocal image and in the serial section low resolution SEM (right). Scale bars 50 \u00b5m. The region of interest (ROI, box) is chosen in the confocal image and re-located in the sum projection SEM image. Bottom: Region of interest confocal image (left) and three single SEM micrographs overlaid with the correlated confocal images (right). Scale bars 5 \u00b5m. (C) Scheme of the ATUM-SEM strategy for CLEM. A blood vessel of interest (magenta) in an 80 \u00b5m thick vibratome section is relocated by screening serial ultrathin sections at low resolution. The target region is reimaged at high resolution (up to 5 \u00d7 5 \u00d7 50 nm). (D) The correlated region in (B) was segmented and reconstructed from the ultrastructural data. Endothelium (ec, dark green), LNDs and gold particles (Au, magenta), monocyte (mc, orange), neutrophil (np, yellow), platelet (pt, blue), fibrin (fi, gray), erythrocytes (ery, red), pericyte (pc, bright green) are shown. Inset: SEM image of vessel lumen filled with equally sized, putative LNDs (magenta arrowhead) and gold particles (black arrowhead) and bigger aggregates thereof. Scale bar 100 nm. (E\u2013G) Segmented SEM image (top) and three-dimensional rendering thereof (bottom), showing (E) the extravasation site from of a neutrophil (yellow), (F) extraluminal gold particles (arrows) next to vessel lumen clotted with platelets (blue) and fibrin (gray) and (G) stalled erythrocytes (red) interspersed with colloidal gold particles. Scale bars 1 \u00b5m. (H) Endothelial morphologies from left to right: normal endothelium (dark green) with tight junction (white arrows) and gold particles (magenta arrows); thinned endothelium covered by a pericyte (bright green), swollen endothelium with mitochondria and tight junction. Immune cells (orange), erythrocytes (red), platelets (blue). Scale bars 1 \u00b5m.\n\nIn order to keep the section flat during EM processing and to minimize the search volume, we dissected the smallest possible tissue block around the region of interest based on tissue fiducials as a guide. The tissue was processed for EM by applying a standard reduced-osmium-thiocarbohydrazide-osmium (rOTO) en bloc staining protocol (Hua et al., 2015) in a way that facilitates the axial and lateral relocation of the area of interest (Kislinger et al., 2020a). Production of serial thin (100 nm) sections and collection of these sections on either carbon-coated Kapton (ccKapton) (Kasthuri et al., 2015) or carbon nanotube (Kubota et al., 2018) tape generated a library of ribbons. A typical 1000-section library was collected, which could then be imaged hierarchically and repetitively. For an overview to facilitate correlation, we imaged the entire area of every 10th section (i.e. 1000 nm axial sampling) with 200 \u00d7 200 nm lateral sampling. This allowed us to efficiently screen such a serial-section library for regions of interest, even if the confocal imaging and ultramicrotomy planes were not perfectly aligned.\n\nRegions with microthrombi and extravasation were identified by correlation and selected for high-resolution (4 \u00d7 4 \u00d7 100 nm) data acquisition by volume SEM. Microthrombi were characterized by a high LND signal, while sites of extravasation showed a perivascular halo. The microclot illustrated here consisted of luminal erythrocyte stalls (Figure 1D and G) in combination with platelets and immune cells (Figure 1D and H). An accumulation of platelets, interspersed with filamentous, electron-dense fibrin was found in the center and at the ends, \u2018plugging\u2019 the occlusion (Figure 1D, F and H). Correlating to the fluorescence pattern, we detected gold particles and brighter but less discrete particles of the same size, presumably representing LNDs, between luminal cells (Figure 1D). Healthy endothelium was characterized by an intact glycocalyx and hence lectin staining in the absence of LND fluorescence. In contrast, at sites of extravasation indicated by an LND halo, we found a neutrophil undergoing diapedesis (Figure 1E) and abluminal gold particles in its proximity (Figure 1F). Thus, we can assume that some microthrombi could serve not only as entry points for nanoparticles, but also for cells from the blood. Within the microthrombus periphery, regions of the endothelium were swollen with intact tight junctions, while in the core, regions with almost no discrete endothelial layer prevailed (Figure 1H). Colloidal gold was found at pathologically thinned endothelium, basement membrane, and in pericytes (Figure 1F\u2013H).\n\n### Development of reversible section attachment on coated tape for ATUM-Tomo\n\nATUM-SEM revealed the cellular composition of vascular occlusions and ultrastructural features of BBB leakiness. While transcellular or paracellular pathways are supposed to be involved, so far, early transport mechanisms have not been fully understood. The existence of morphologically normal tight junctions visualized by ATUM-SEM suggests that vesicular transport might be involved. However, resolving gold-particle loaded vesicles at 20\u201340 nm diameter or tight junctions challenges the axial resolution of ATUM-SEM (\u224830 nm). Therefore, we sought to combine ATUM-SEM and ET, as the latter would provide the required resolution (Michel, 2012; Feng et al., 2002; Wagner et al., 2012), but the former would allow efficient screening across an expanded field of view (Peddie et al., 2022). For this purpose, we devised a new method to reversibly attach semi-thick ATUM sections to plastic tape for SEM and then transfer them to TEM grids for ET.\n\nWe first tested if conventionally collected sections of mouse cortical tissue could be removed from ccKapton or carbon nanotube tape. However, such sections were stuck to the tape despite treatment with organic solvents and any other chemical or physical treatments that we tested (Figure 2A). We then hypothesized that adding a thin, dissolvable coating between tape and section could allow gentle detachment (Figure 2B and C). Polyvinyl formal (Formvar) was a good candidate, as thin films of this highly solvable polymer are commonly used to support sections for TEM. Moreover, it has been shown that sections can be transferred from Formvar-coated glass coverslips onto TEM grids by hydrofluoric acid (Paez-Segala et al., 2015). Therefore, we tested if an ultrathin tissue section could be removed from Formvar-coated tape by organic solvents. Short ccKapton tape strips were Formvar-coated using a standard film casting device (cfcKapton), onto which 100\u2013300 nm tissue sections were collected from the diamond knife water bath. Indeed, such sections could be recovered from the tape by incubation in chloroform or 1,2-dichlorethan. To coat longer stretches of tape, we designed a reel-to-reel coating device with a spraying unit (Figure 2\u2014figure supplement 1). We mounted such longer cfcKapton tape with tissue sections onto wafers, as required for ATUM-SEM, and subjected them to SEM imaging. We found that Formvar coating induced charging, depending on the thickness of the coat (Figure 2D). In addition, imaging at high resolution (<10 nm) prevented subsequent section detachment (Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic showing that sections on ccKapton mounted on a silicon wafer cannot be recovered for transmission electron microscopy (TEM). (B) Schematics of section removal from cpcKapton or cfcKapton. From left to right: The adhesive tape around the selected section (yellow border) is excised by a razor blade (cutting line: yellow dashed lines) and detached from the wafer. The section is detached from the tape by acetone rinsing using a pipette. The section is collected from the acetone bath onto a TEM slot grid. (C) Detachment workflow of a particular selected section (yellow border). From left to right: scanning electron microscopy (SEM) overview image of a section (scale bar 200 nm); the imaged section mounted on the wafer; the section is removed together with the underlying adhesive tape (cutting line: yellow dashed lines); the section is floating on a water bath of a diamond knife after acetone treatment; slot grid with the section. (D) SEM images of mouse cortex specimens collected onto different Kapton tapes. From left to right: ccKapton; cfcKapton showing a charging artifact (arrow); cpcKapton red with major charging; cpcKapton black without plasma treatment showing section folds; cpcKapton black after intense plasma treatment. Scale bars 50 \u00b5m. (E) Photograph of the coating unit with a permanent pen and halfway labeled ccKapton. (F) Photograph of cpcKapton before discharging (top), after mild (middle) and extensive (bottom) plasma discharging. (G) Ultrastructural quality of a cortical tissue section on ccKapton (left) and cpcKapton after plasma treatment (right) imaged at 10 \u00d7 10 nm resolution. Scale bars 2 \u00b5m. (H) Recovery of an ultrathin section. From left to right: SEM overview image of cortex with corpus callosum (scale bar 100 \u00b5m). SEM medium resolution image thereof (scale bar 20 \u00b5m). SEM high-resolution image (10\u00d710 nm) of a blood vessel cross-section (scale bar 2 \u00b5m). TEM image of the same section showing the selected blood vessel (scale bar 2 \u00b5m). High magnification image of a tight junction (arrowheads), scale bar 200 nm. High-magnification images of endothelial vesicles (scale bar 50 nm). Black boxes indicate location of the image to the right.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Ultrathin (80 nm) (A) and semi-thin (300 nm) (B) sections imaged by scanning electron microscopy (SEM) (BSD detector, 8 kV (increase in magnification from left to right)). Irregular Formvar coating can be detected on the left and middle image of ultrathin sections (A), while the semi-thin sections in (B) do not show any Formvar-related background. High-resolution images of both ultra- and semi-thin sections (right images in A and B) are free of background. Scale bars 100 \u00b5m (left), 50 \u00b5m (middle), 5 \u00b5m (right). (C) Photos of the tape coating unit attached to a spraying unit (Lubrimat L60) for dispersion of Formvar onto the tape. The top image shows the red spraying unit with Formvar reservoir (Falcon tube) as well as the reel-to-reel system for movement of the ccKapton tape. The bottom photo shows that the spray nozzle dispersing the Formvar is surrounded by a Plexiglas cylinder that the tape can transverse.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Ultrathin (100 nm thick) and (B) Semi-thin (400 nm thick) sections imaged at 10 nm (left) and 5 nm (right) lateral resolution at 5 kV, 4 kV beam deceleration. Only sections imaged at 10 nm lateral resolution could be detached from cpcKapton after imaging, the ones imaged at 5 nm resolution were stuck to the tape. Scale bars 2 \u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Ultrathin sections imaged by scanning electron microscopy (SEM) (left) and transmission electron microscopy (TEM) (right). The TEM image shows contaminations (arrows). Scale bars 2 \u00b5m (left), 5 \u00b5m (right). (B) Schematic illustration of a section collected on either cpcKapton (permanent marker coat, blue) tape (top row) or on a slot grid (bottom row). The side of the section facing the coating is contaminated (light blue) up to a thickness of 50 nm while the rest of the section thickness (gray) does not show any dirt originating from the coating. Single TEM images of a tomographic reconstruction at different depths, indicated in the scheme (z1\u2013z4) are shown. High-magnification images (bottom row) of the boxed regions (top row) reveal details of back projection artifacts due to the contamination. The left (z1, top image) and the middle left image (z2) show no artifacts; the middle right image (z3, 50 nm distance to the support) shows some gray spots (arrow), while the right image (z4, bottom section) appears \u2018dirty\u2019. Scale bars 1 \u00b5m (top row), 500 nm (bottom row).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Ultrathin section SEM and TEM images were compared after rigid (top) and affine (bottom) alignment to assess image distortion. We picked a clean example (A) and one region with some contamination (B). For both examples and alignment algorithms we calculated the Pearson coefficient between the SEM and TEM image. The images show the spatial distribution of colocalization (left, ImageJ \u2018Colocalization Finder\u2019) and mislocalization (middle, ImageJ \u2018Colocalization Highlighter\u2019). The right images are calculated from the transformation of rigid to affine alignment (ImageJ \u2018Image Registration\u2019 with SIFT\u2019). Matching is indicated in green, diverging positions are shown in red (right column). Scale bars 2 \u00b5m (A), 10 \u00b5m (B).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Section recovery was possible for all tested resin formulations, Durcupan (A), Epon (B), and LX112 (C). The first two columns show scanning electron microscopy (SEM) images at increasing magnifications. The third and fourth columns show single tomographic slices after reconstruction at increasing magnifications. The white boxes indicate the position of the zoomed-in image to the right, respectively. Scale bars 10 \u00b5m (SEM) and 2 \u00b5m (electron tomography, ET).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) Schematics with dimensions of the vacuum chamber and with the dynamic O-ring shaft seals. (B) Photo of the spool holder design: Plastic burls (red arrow) that fit into the spool indentation and prevent spool slip off as well as tightening of the turning rod (blue arrow) are highlighted. (C) Photos of the discharging unit: Front (top row), side (bottom left), and top (bottom right) views showing the easiGlow plasma discharging unit with its custom-built chamber and the gear motor mounted directly onto the reel holder. (D) Photos demonstrating the insertion of the reel into the vacuum chamber. Tape reel orientation (left), reel fixation using a finger (middle), and mounting onto the spool holder (right) are shown.\n\nIn order to avoid these problems, we considered other materials that are soluble in organic solvents, and settled on the simple and readily available solution of permanent markers. Marker pens consist of genuine pigmented alcohol-based ink and humectants while a special resin ensures that it is waterproof. We labeled ccKapton with a thin film of permanent marker with a wide tip (cpcKapton) and found that sections attached to such tape could be detached by intense rinsing with acetone. The resulting floating sections could be transferred to a water bath in a drop of acetone using a single-use Pasteur pipette. For longer stretches of tape as needed for serial sections, we rebuilt the coating unit by installing a permanent marker instead of the spraying unit (Figure 2E).\n\nNext, we assessed the SEM imaging characteristics of tissue sections mounted on cpcKapton attached to silicon wafers. Coatings with permanent marker of red color, but not black color partially detached from the plastic support and lead to strong charging during SEM imaging (Figure 2D). Tissue sections attached to cpcKapton, using pens of either color, showed major tissue section folds (Figure 2D). In order to remove these folds, we plasma discharged black cpcKapton tape extensively (see Material and Methods) until the film interference color changed from black to magenta (mild discharging) to gold (extensive discharging) (Figure 2F). Such plasma-discharged cpcKapton enabled reversible section attachment at certain SEM imaging conditions (10 nm lateral resolution at 3 \u00b5s dwell time) with ultrastructural quality comparable to ccKapton (Figure 2G).\n\nWe then assessed the tissue ultrastructure in the TEM and the possibility to relocate regions previously imaged by SEM. For this purpose, 80 nm sections on cpcKapton were wafer-mounted, imaged by SEM, and transferred to TEM grids. Despite extensive acetone rinsing the sections stayed intact with well-preserved ultrastructure. The en bloc embedding provided strong TEM image contrast without further post staining. If the section area exceeds the slot size, we deposited the region of interest at the grid center. We could efficiently relocate the previously SEM-imaged region in the TEM by using tissue-intrinsic fiducials at low resolution (Figure 2H). However, we detected dark deposits (Figure 2\u2014figure supplement 3A) on some regions of the section, which probably originate from tissue contact with the coating and accordingly are only superficial. Because ET mainly visualizes the inner tissue areas of the semi-thick sections, we considered these deposits as unproblematic, and cpcKapton hence as a potentially suitable support material for combining ATUM-SEM and ET to bridge across scales (Figure 3A and B). We further applied this approach to assess BBB integrity after traumatic brain injury.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the ATUM-Tomo workflow. Semi-thick sections are serially imaged by scanning electron microscopy (SEM). Targeted sections (yellow) bearing the site of interest (blood vessel, magenta) are selected for electron tomography (ET). (B) Schematic highlighting how ATUM-Tomo and correlative light and electron microscopy (CLEM)-ATUM-Tomo bridge scales in resolution and field of view. Transmission electron microscopy (TEM) tomography enables high-resolution imaging e.g., vesicular structures (diameter ~30 nm), ATUM can visualize the cellular composition and morphology (e.g. a neurovascular unit) and confocal provides a large field of view (e.g. highlighting a lesion site in cortex, 3 \u00d7 3 mm). (C) Confocal microscopy images of the traumatic brain injury lesion. Lectin (green), lipid nanodroplets (LNDs) (magenta). Numbered boxes indicate positions selected for SEM imaging. Scale bars 200 \u00b5m, 20 \u00b5m (D) Reconstruction of selected vessels as indicated in (C). Scale bar 10 \u00b5m. (E) Regions from the vessels 1 (a, b) and 2 (c) in (D) selected for ET. SEM image (first column), corresponding ET low- (second column) and high-magnification images with segmentation (third column) and three-dimensional reconstruction thereof (fourth column). (a) Example of particles in endothelial swellings (red arrow gold particle, magenta arrow LND). (b) Intact tight junctions (white arrow). (c) Endothelial disruption and gold particle localization in a platelet. Endothelium (green), pericyte (yellow), platelet (blue), basement membrane (cyan), LNDs (magenta), gold nanoparticles (red), tight junctions (white).\n\n### ATUM-CLEM and ATUM-Tomo of nanoparticles at the leaky BBB\n\nTo this end, confocal imaging and EM processing of a traumatic brain injury lesion were performed as described for correlative ATUM-SEM. We collected serial 400 nm semi-thick sections of the lesion area covering the entire volume of the vibratome section on cpcKapton. Typically, this resulted in 250 sections that can be mounted onto one or two wafers, dramatically speeding up the correlation process compared to ATUM-SEM (1000 sections on four wafers). We imaged the entire section areas at 100 nm lateral resolution to screen for rough anatomical landmarks. Two vessels with high LND fluorescence signal (Figure 3C) were correlated and selected for imaging at higher resolution (20 \u00d7 20 nm). Based on this ultrastructural volume and in order to unambiguously identify the localization of nanoparticles, we acquired single images of these target regions at 10 nm lateral resolution. Alignment and three-dimensional rendering of the volume EM data (Figure 3D) provided an overview of the underlying neurovascular unit despite the coarser axial resolution compared to ATUM-SEM. Based on these reconstructions and inspection of the ultrastructural volume, we selected sections with gold particles potentially crossing the BBB. These tissue sections were detached by acetone treatment and collected onto Formvar-coated slot grids, as needed for subsequent ET. We found that colloidal gold fiducials (20 nm diameter) needed for image reconstruction could be attached to the surface of these sections despite previous SEM imaging. Tomographic reconstructions of semi-thick sections removed from cpcKapton showed surface contamination only at the side that was facing the permanent marker coat (Figure 2\u2014figure supplement 3B). The superficial contamination caused reconstruction artifacts in the back projection down to down to a depth of up to 50 nm into the section. Sections that were collected at a nominal cutting thickness of 400 nm showed an actual thickness of 260\u2013300 nm after the tomographic reconstruction. This collapse is due to a mass loss after the interaction of the electron beam with the specimen (Luther et al., 1988; McEwen and Marko, 1998; O\u2019Toole et al., 2020). Moreover, we detected variable lateral shrinkage of about 20% and minor distortions between the SEM and TEM images of ultrathin sections, probably due to beam damage and acetone treatment (Figure 2\u2014figure supplement 4). The sections could be recovered even four months after collection and nine months after SEM imaging. Besides Epon/Araldite resin (LX112), we tested the detachment and re-imaging procedure with tissue sections embedded in standard Epon and Durcupan resins (Figure 2\u2014figure supplement 5). For all three types of resins, we were able to image by SEM, detach sections and collect them onto grids for re-imaging by TEM tomography.\n\nDespite the above-mentioned minor collapse of the section, the features of the targeted microthrombi and the surrounding neurovascular unit familiar from conventional thin-sectioning ATUM-SEM could be readily discerned: The unit\u2019s cellular layers with endothelial cells, basement membrane and pericytic processes could be visualized, even at pathological sites. Moreover, the injected colloidal gold particles and LNDs were accumulated in the vessel lumen, with the identification of LNDs \u2014compared to SEM images\u2014actually facilitated in the ET by the increased resolution (Figure 3E; Figure 3\u2014videos 1\u20133). We observed that the endothelial layer showed local edema and detachment from the basement membrane, while tight junctions were still intact (Figure 3E). Gold particles were detected in platelet vesicles, vacuoles of endothelial cell swellings, as well as in areas of endothelial detachment from the basement membrane (Figure 3E). We also recovered and reconstructed tomograms from nine serial semi-thick sections (Figure 4). Comparing the SEM reconstruction with the one from the corresponding serial ETs (Figure 4A) clearly showed that SEM imaging visualizes only the section surface resulting in a coarse three-dimensional rendering, while ET provided information of the entire section thickness (Figure 4B\u2013D; Figure 4\u2014videos 1\u20133). Taken together, this correlative ATUM-Tomo approach enabled the targeted visualization of extravasating nanoparticles and their ultrastructural organelle carriers within reconstructed CNS neuropil as contextualized by confocal and volume SEM imaging. With our valuable approach, we bridged micro- to nanoscales for the examination of healthy and diseased tissue samples by electron microscopy.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90565/elife-90565-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of the ATUM-Tomo workflow. Semi-thick sections are serially imaged by scanning electron microscopy (SEM). Targeted sections (yellow) bearing the site of interest (blood vessel, magenta) are selected for serial section ET. Tomograms from consecutive ET volumes can be aligned. (B\u2013D) The boxed region in Figure 3D (number 2) has been subjected to ET including nine consecutive sections. endothelium in green, pericyte in yellow, platelet in blue, basement membrane in cyan, lipid nanodroplets (LNDs) in magenta, gold nanoparticles in red. (B) Non-smoothed, raw reconstructions of nine consecutive SEM images. (C) Corresponding region of nine detached sections subjected to ET and reconstructed. (D) Side view (left) and longitudinal cut view (right) of the smoothed serial-section ET reconstruction. Scale bars 1 \u00b5m.\n\n## Discussion\n\nWe and others have shown previously that non-destructive array tomography-type volume EM methods like ATUM-SEM are particularly powerful for correlative workflows, because tissue libraries with re-imaging capabilities are generated (Schifferer et al., 2021). In contrast, destructive block-face volume EM methods only allow a single shot acquisition and are limited in field of view. The ATUM imaging process can be separated into screening at low resolution for the sites of interest and subsequent high-resolution volume acquisition. ATUM-SEM allows the rendering of cellular and organellar morphologies at the ultrastructural level. However, the visualization of the detailed subcellular environment of nanoscale structures is limited to the maximal lateral resolution achievable by SEM and the axial resolution set by physical section thickness (30 nm). To increase the axial resolution of target structures, we previously combined ATUM with Focused Ion Beam (FIB)-SEM. ATUM-FIB takes advantage of thick section (2\u201310 \u00b5m) imaging for screening combined with FIB-SEM acquisition of the target region at isotropic voxels (Kislinger et al., 2020a; Kislinger et al., 2020b). It enables targeted volume imaging at 3 \u00d7 3 \u00d7 3 nm resolution. The only room temperature volume EM methods that can provide higher resolution are serial-section TEM or ET (Peddie et al., 2022; Schneider et al., 2021). While serial-section ET has proven suitable to resolve and reconstruct volumes of abundant (Soto et al., 1994; Rachel et al., 2016; Horstmann et al., 2012) or relatively small biological targets such as spindles (Kiewisz et al., 2022; Redemann et al., 2017), the visualization of rare or correlated structures is tedious and time-consuming. So far, an automated way of serial TEM can only be done by serial ultrathin sections collected onto grid tape, a plastic tape with holes covered with a thin support film at defined distances (Graham et al., 2019). Besides the high costs for the tape, the ultramicrotome has to be automatized to make sure that the sections are positioned onto the slot and not the grid bar. Moreover, a standard TEM has to be re-designed for a reel-to-reel sample loading system (Maniates-Selvin et al., 2020; Yin et al., 2020), which is not compatible with ET and obviates its application in a standard EM facility.\n\nOur novel ATUM-Tomo approach provides a simple and inexpensive way of combining large-volume SEM with targeted TEM at isotropic, high-resolution voxels. As TEM is a projection method, it requires the removal of the solid substrate, which is needed for SEM imaging. Here, we developed a simple tape coating technique that allows consecutive section inspection by the two EM modalities. Formvar coating resulted in reversible section collection but heterogeneity in film thickness led to charging artifacts, background signal, and sites of irreversible section attachment. We found that marker pen coating provided a simple, reproducible, and homogenous coating. Using pen-coated tape, we were able to image hierarchically up to a lateral resolution of 10 nm by SEM, while retaining the recovery option for transfer onto grids. Detachment of semi-thick sections by acetone did not result in major section distortion. The detachment of ultrathin sections proved more difficult due to section folding and fragility during acetone rinsing. Moreover, surface contamination might potentially cover sites of interest which has more pronounced consequences for the information content of ultrathin than semi-thick sections. Surprisingly, previous SEM imaging does not affect the ultrastructural quality of the ET images. Section folds usually occur at sites within the tissue that have not been imaged by SEM before. This might be caused by reinforced section attachment to the tape caused by prolonged exposure to the electron beam. This effect is even beneficial as it guides the positioning of tissue sections onto the TEM grid slot if it exceeds its area. The SEM volume reconstructed from serial semi-thick sections shows a coarser morphology compared to serial ultrathin sections but still provides the information needed for the selection of sections to be subjected to ET. There was minor tissue loss between consecutive tomograms. This was probably caused by a combination of standard material loss due to sectioning (Hayworth et al., 2015; Kislinger et al., 2020b) and the incomplete tomographic reconstruction (missing cone) (Barth et al., 1988; Ding et al., 2019; Figure 2\u2014figure supplement 3; Figure 4B). While we observed tissue loss because of surface contamination and sectioning, we were able to recover and reconstruct a volume of up to nine consecutive semi-thick sections by ET. Thus, we demonstrate that en bloc stained tissue can be sequentially imaged by volume SEM and subsequent ET providing high ultrastructural details.\n\nWe inspected microthrombi in traumatic brain injury by both correlative ATUM and ATUM-Tomo. In both cases, CLEM was facilitated by the preservation of lectin and LND fluorescence despite glutaraldehyde fixation, a prerequisite for optimal ultrastructural preservation. While LNDs enable the detection of microthrombi and sites of BBB leakage by confocal microscopy, their size and contrast show variability in SEM and TEM micrographs. Here, the detection of abluminal gold particles served as a clear indicator of extravasation by virtue of the high electron density and discrete size of the gold particles. Nanoparticles were found among luminal cells and close to sites of immune cell diapedesis. By virtue of the novel ATUM-Tomo approach, we captured nanoparticles at sites of endothelial swellings. In line with our results, earlier studies already described endothelial edema preceding FITC-albumin early after middle cerebral artery occlusion (Krueger et al., 2015; Krueger et al., 2019), another model system for studying BBB leakiness. At later stages, these authors observed loss of endothelial cell integrity with discontinuous plasma membranes and detachment from the basement membrane. However, the DAB staining of FITC-albumin applied in these studies masks the endothelial ultrastructure and thus provides compromised EM information (Krueger et al., 2019). In contrast, our CLEM approach provides high ultrastructural quality by chemical fixation with glutaraldehyde. Endothelial swellings were identified at regions without lectin staining, only showing LND fluorescence. Lectin serves as a marker for intact glycocalyx and its loss indicates early pathological events leading to activation of transcellular transport. It was shown that the glycocalyx is critical for BBB integrity by suppressing caveolin1-dependent endothelial transcytosis following ischemic stroke (Zhu et al., 2022). This is in line with the detection of intact tight junctions and gold particles in vesicles at sites of BBB leakiness in the current and previous studies (Krueger et al., 2015). In contrast, the paracellular pathway seems not to be the first loophole and gains importance starting 48 hr after the injury (Knowland et al., 2014).\n\nIn summary, we developed a simple and low-cost method for multimodal EM imaging that combines the strengths of both volume SEM and ET. Our novel ATUM-Tomo approach enables the consecutive inspection of selected areas of interest by correlative serial SEM and TEM, optionally in combination with CLEM. ATUM-Tomo and also correlative ATUM-Tomo can bridge several scales, which is particularly important for ultrastructural analysis of focal pathologies or rare cellular and subcellular events. Both imaging modalities are non-destructive, thus allowing re-imaging and hierarchical imaging at the SEM and TEM levels, which is especially important for precious samples including human biopsies and complex CLEM experiments. While we demonstrate a neuropathology-related application, further biological targets that require high-resolution isotropic voxels and spatial orientation within a larger ultrastructural context can potentially be studied by ATUM-Tomo. This includes the detection of gap junctions for connectomics or for the study of long-range projections (Holler et al., 2021) and the subcellular location of virus particles (Wu et al., 2022; Roingeard, 2008; Pelchen-Matthews and Marsh, 2007). Thus, ATUM-Tomo opens up new avenues for multimodal volume EM imaging of diverse biological research areas.\n\n## Materials and methods\n\n### Controlled cortical impact model of traumatic brain injury\n\nAll animal experiments were approved by the Ethical Review Board of the Government of Upper Bavaria (ref. number Vet_02-18-39). Animals (male 23\u201325 g, 8 weeks old) were supplied from Charles River Laboratories (Sulzfeld, Germany). The data were collected in accordance with the ARRIVE guidelines (Kilkenny et al., 2010) recommendations (Guillen, 2012). Animal husbandry, health screens, and hygiene management checks were performed in accordance with the Federation of European Laboratory Animal Science Associations (FELASA) guidelines and recommendations. 12 C57Bl/6 N male mice, 23\u201325 g, underwent controlled cortical impact as described above and our in previous studies (Wehn et al., 2021).\n\nThis model induces a highly reproducible lesion that shares many characteristics of human traumatic brain injury. In short, after induction of anesthesia with buprenorphine (100 mg \u00d7 kg \u2212 1 Bw) and isoflurane (4%, 30 s), animals were sedated with 1.5\u20132.5% isoflurane in oxygen/air under continuous monitoring of body temperature and heart rate. After right parietal craniotomy, the impact is directly applied to the intact dura with a pressure-controlled custom made controlled cortical impact device (L. Kopacz, University of Mainz, Germany; 6 ms\u22121, 0.5 mm penetration depth, 150 ms contact time). After re-fixation of the skull plate and surgical closure, animals are ventilated with 100% oxygen until they re-gained consciousness, then were kept in an incubator at 34 \u00b0C and 60% humidity in order to prevent hypothermia. Perfusion, confocal imaging, and correlative ATUM-SEM were performed as previously described (Khalin et al., 2022).\n\n### Lipid nanodroplets\n\nDye-loaded LNDs were produced by spontaneous nanoemulsification by adapting previously described protocols (Bouchaala et al., 2016). Briefly, the 1% solution of R18/TPB (prepared as described earlier Reisch et al., 2014) in LabrafacWL was mixed with Kolliphor ELP, and the mixture was homogenized under magnetic stirring at 37 \u00b0C for 10 min. The amounts of LabrafacWL and Kolliphor ELP were 40 and 60 mg, respectively. Finally, LNDs were obtained by the addition of 230 mg Milli-Q water. Hydrodynamic diameter was measured by dynamic light scattering (DLS) using a Zetasizer Nano ZSP (Malvern Instruments S.A., Worcestershire, UK), based on volume statistics. The size of LNDs was 35.66\u00b11.66 nm, PDI index 0.113\u00b10.002.\n\n### Injection\n\nFor injection of lectin and NPs, we used an established femoral arterial catheterization protocol (Khalin et al., 2020). 1 mg/ml DyLight 649 Labeled Lycopersicon Esculentum (Tomato) Lectin (Vector Laboratories, Burlingame, CA, US) for labeling of blood vessels was injected in a quantity of 0.1 ml per mouse. Commercially available 30 nm colloidal gold nanoparticles with density 1.00 g/cm3, methyl terminated, PEG 2000 coated (Sigma-Aldrich, St. Louis, Missouri, USA) were injected through the femoral catheter into the mouse in the same dose as LNDs (4 \u03bcL/g animal) (Khalin et al., 2022).\n\n### Tissue collection\n\nAnimals were transcardially perfused with 4% PFA and 2.5% glutaraldehyde in PBS pH 7.4 in deep anesthesia. The brain was collected and the lesion area of fixed brains was subsequently vibratome-sectioned in the rostral-caudal direction into 80\u2013100 \u00b5m sections using a vibratome as previously described (Ghosh et al., 2015). In order to ensure high ultrastructural preservation, sections were postfixed for 16\u201324 hr in the same fixative mentioned above, washed in buffer, and carefully transferred using brushes. Instead of standard mounting which could harm the tissue, sections were mounted onto a glass slide using mounting medium (Aqueous Mounting Medium (ab128982), Abcam, Cambridge, UK) diluted with PBS at a ratio of 1:5. A cover slip (0.17 \u00b5m, Menzel Gl\u00e4ser, Braunschweig, Germany) was then placed onto it for imaging. After performing confocal microscopy, the mounted sections were submerged in PBS and the cover slip was carefully removed. Sections could then be transferred back into 24-well plates containing fresh buffer for further processing.\n\n### Confocal imaging for correlation\n\nImaging was performed using confocal microscopy (ZEISS LSM 900, Carl Zeiss Microscopy GmbH, Jena Germany). Confocal imaging revealed that lectin and LND fluorescence was possible with minimal autofluorescence despite perfusion fixation with glutaraldehyde. A 10 x objective (EC Plan-Neofluar 10 x/0.30 M27) was used with an image matrix of 1024 \u00d7 1024 pixels, a pixel scaling of 0.2 \u00d7 0.2 \u03bcm, and a color depth of 8 bit. The scanned region of approximately 2\u00d72 mm covered the whole cortical thickness of the lesion and peri-lesional area in order to generate overview maps for later correlation. Whole brain images were collected in z-stacks as tile scans with a slice-distance of 5 \u03bcm and a total range of 50 \u03bcm. Specific regions of interest including the microthrombi and sites of extravasation were collected in the single plane using 25 x magnification (objective: EC Plan-Neofluar 25 x/0.8 Imm Korr DIC M27) with an image matrix of 1024 \u00d7 1024 pixel, a pixel scaling of 0.2 \u00d7 0.2 \u03bcm and a depth of 8 bit. After imaging for a maximal 1 hr, the glass slide was immersed into a petri dish filled with 1 x PBS. As soon as the tissue section was floating from the glass sandwich, it was transferred to a fresh buffer for storage.\n\n### Embedding of vibratome sections for electron microscopy\n\nThe sections were stored in PBS at 4 \u00b0C for up to one week until the start of the post-embedding. For correlation, the confocal imaging plane was ideally parallel to the sectioning plane during ultramicrotomy. The searchable volume in the axial dimension is predetermined by and restricted to the vibratome section thickness. Usually, heavy metal impregnation leads to the bending of the section. In order to avoid this sample preparation artifact and minimize the lateral searchable area, we dissected a region of approximately 1.5 \u00d7 2 mm capturing the lesion and the perilesional area under the binocular using fine scalpels. The fluorescence overview tile scan was used as a template to relocate the previously imaged region. The overall section shape, including big blood vessels and bleedings that represent non-fluorescent regions in the confocal template, were used for this coarse lateral re-location.\n\nWe applied a standard reduced osmium thiocarbohydrazide osmium (rOTO) en bloc staining protocol (Kislinger et al., 2020a; Kislinger et al., 2023) including post-fixation in 2% osmium tetroxide (EMS), 1.5% potassium ferrocyanide (Sigma) in 0.1 M sodium cacodylate (Science Services) buffer (pH 7.4). Staining was enhanced by reaction with 1% thiocarbohydrazide (Sigma) for 45 min at 40 \u00b0C. The tissue was washed in water and incubated in 2% aqueous osmium tetroxide, washed and further contrasted by overnight incubation in 1% aqueous uranyl acetate at 4 \u00b0C and 2 hr at 50 \u00b0C. Samples were dehydrated in a graded series of ethanol and infiltrated with LX112 (LADD) resin. For the resin test (Figure 2\u2014figure supplement 5), we followed the same protocol while infiltrating samples in Durcupan (11.4 g component A, 10 g component B, 0.3 g component C and 0.1 g component D (Sigma-Aldrich, USA)) and Epon (21.4 g glycidether 100, 14.4 g DDSA, 11.3 g MNA and 0.84 g DMP-30 (Serva, Heidelberg, Germany)), respectively.\n\n### Plastic tape plasma discharging\n\nPlasma discharging increases hydrophilicity and thereby prevents wrinkle formation during serial section collection for ATUM and ATUM-Tomo approaches. In addition, ATUM-Tomo requires several rounds of plasma treatment after marker pen coating as the marker introduces hydrophobicity.\n\nFor this end, we built a plasma treatment instrument for tape reels based on a standard instrument (easiGlow, PELCO) with a custom-made vacuum chamber according to the plans proposed by Jeff Lichtman (Schalek et al., 2011) and Mark Terasaki (Baena et al., 2019), with slight modifications regarding the motor placement and the type of motor (Figure 2\u2014figure supplement 6), see also Kislinger et al., 2023. We used a dynamic O-ring shaft seal (Kurt J. Lesker Company) and a gear motor with a 150:1 reduction and a suitable controller (Pololu Corporation, Las Vegas, USA) and fixed it directly to the enclosure. In this setting, the motor achieves slow tape speeds (at 12 rpm) while maintaining necessary pulling forces. A more detailed description of the construction and the use as well as a parts list are deposited here: https://github.com/georgkislinger/GKislinger_elife_ATUM-Tomo, copy archived at Kislinger, 2024.\n\nWe plasma discharged (negative polarity, 0.35 mBar, 15 mA) as many times as needed to achieve a golden instead of a black appearance (Figure 2F; Figure 2\u2014figure supplement 6). In addition, hydrophobicity was tested by estimating the water contact angle by placing a drop of water onto the tape. It is ready to use if it spreads well with a contact angle below 45\u00b0 (see also Kislinger et al., 2023). This tape can be used for up to one month with one round of plasma discharging before each collection process. However, additional rounds of plasma discharging may increase charging artifacts and impede section recovery as the conductive carbon and pen coatings become thinner.\n\n### Plastic tape marker coating\n\nInitially, we coated ~10 cm long carbon-coated Kapton (ccKapton) (kindly provided by Jeff Lichtman and Richard Schalek) or carbon nanotube (Science Services) tape strips with 1% (w/v) Formvar in chloroform (Sigma) using a standard film casting device for grids (Science Services). In order to generate a homogenous film on longer ccKapton tape pieces, we designed a spray-coating device. This custom-built coating machine was equipped with a holder for the spraying unit (Lubrimat L60, Steidle) and two tape reels driven by a motor (Figure 2\u2014figure supplement 1). However, this method proved to be unreliable, as the chloroform caused deterioration of the spraying unit over time which, in turn, the poststain (i.e. lead) to an uneven and contaminated coating. Heterogeneous coating resulted in charging during or detachment problems after SEM imaging.\n\nIn order to enable section removal, we marked ccKapton tape on its coated side with a permanent marker (edding 3000, black, edding International GmbH, Germany). We used the before-mentioned coating machine and replaced the spraying unit with a permanent parker. Thereby, the marker was constantly pressed onto the tape as it was pulled under the marker tip to ensure uniform tape coating (Figure 2E).\n\n### Section collection onto coated tape\n\nFor the volume analysis, the block was trimmed at a depth of 100 \u00b5m and a 45\u00b0 angle on four sides using a trimming machine (EM TRIM, Leica). Serial sections were taken with a 35\u00b0 ultra-maxi diamond knife (Diatome) at a nominal cutting thickness of 80\u2013100 nm for ATUM-SEM and the TEM tests and 400 nm for ATUM-Tomo at the ATUMtome (Powertome, RMC). For ATUM-SEM, sections were collected onto freshly plasma-treated carbon nanotube tape (Science Services); for ATUM-Tomo, sections were collected on either cpcKapton (carbon- and permanent marker coated) or cfcKapton (carbon- and Formvar-coated) tape. Covering the whole sample thickness of 80 \u00b5m and considering its unevenness after contrasting, either 1000 sections at 100 nm thickness (ATUM-SEM) or 400 sections at 400 nm thickness (ATUM-Tomo) were taken. Plastic tape stripes were assembled onto adhesive carbon tape (Science Services) attached to four-inch silicon wafers (Siegert Wafer) and grounded by adhesive carbon tape strips (Science Services). For each sample, 4\u20136 (ATUM-SEM) or 1\u20132 (ATUM-Tomo) wafers each bearing 200\u2013300 sections were generated.\n\n### Serial-section acquisition by SEM\n\nATUM-SEM was performed on a Crossbeam Gemini 340 SEM (Zeiss) with a four-quadrant backscatter detector at 8 kV. Hierarchical imaging captures large areas at low resolution that can, in turn, be screened for structures of interest that are subsequently reimaged at higher resolution and so forth. In ATLAS5 Array Tomography (Fibics), wafer overview images were generated (1000 nm/pixel). We acquired whole section low-resolution images (0.1 \u00d7 0.1 \u00d7 1 \u00b5m) of every 10th section (thus simulating the thickness of one confocal plane covering 1 \u00b5m thickness) to generate overviews that can be correlated with the confocal imaging data. We used blood vessel patterns, bleedings, 1 and the different tissue layers as landmarks. Target regions were identified and acquired at medium resolution (20 \u00d7 20 \u00d7 200 nm). Within this volume, clots were selected for high-resolution imaging (4 \u2013 20 \u00d7 4 \u2013 20 \u00d7 200 nm).\n\nFor ATUM-Tomo, electron micrographs were acquired in a similar hierarchical scheme on an Apreo S2 SEM (Thermo Fisher Scientific) with the T1 detector. Serial-section acquisition was performed using the Maps2 (Thermo Fisher Scientific) software. We acquired images of whole sections at low resolution (100 \u00d7 100 \u00d7 400 nm) to facilitate re-location. Anatomical landmarks and vasculature patterns of single SEM overview images and a summed (in Fiji) stack of sections were compared to the confocal data sets in Fiji. Within this volume, we selected a region with clots, and transition zones, and extravasation for high-resolution imaging at 20 \u00d7 20 \u00d7 400 nm. We acquired subsets of these regions on each or every second section at 10 \u00d7 10 \u00d7 400 nm or 10 \u00d7 10 \u00d7 800 nm resolution, respectively.\n\n### Correlation and volume image analysis\n\nThere were two levels of correlation: first, we dissected the tissue according to the field of view of confocal imaging, and second, we identified occlusions of interest in the low-resolution SEM data for high-resolution imaging. At each step, anatomical landmarks (bleedings with accumulation of erythrocytes, the section outline, etc.) and vasculature patterns of single and summed sections were compared to the confocal data sets using either Fiji (Schindelin et al., 2012) or the ec-CLEM ICY plugin (Paul-Gilloteaux et al., 2017). We used both a single SEM image and the sum (in Fiji) of a stack of SEM images for relocation of the occlusions of interest. Serial-section data were aligned by a sequence of automatic and manual processing steps in Fiji TrakEM2 (Kislinger et al., 2023). The VAST software was used for manual segmentation of blood vessels (Berger et al., 2018) that were rendered in Blender (Brito, 2018) for better visualization.\n\n### Section retrieval from coated tape onto TEM grids\n\nBased on SEM-imaging results and the corresponding three-dimensional SEM data, we selected sections of interest for subsequent TEM imaging. We cut the carbon adhesive tape around the selected section on the wafer using a scalpel and peeled off the section-containing piece of cpcKapton from the adhesive tape (Figure 2B and C). Next, we submerged the piece of tape containing one single section of interest in a glass petri dish containing acetone. We then created a steady acetone flow with a plastic transfer pipette until the coating between the tape and section was dissolved, resulting in a section floating in the acetone bath. In our experience, the required rinsing time increases with previous beam exposure of the section in the SEM. Once floating in the acetone bath, we collected the single section in a plastic transfer pipette and released it into a water-filled boat (as used for sectioning with a diamond knife, kindly provided by Diatome). Through the surface tension of the water, the section stretched and floated on the water\u2019s surface. However, through the detachment from the tape in the acetone bath, it could happen that the sections were physically flipped on the water bath relative to the sectioning direction.\n\n### TEM of ultrathin sections\n\nUltrathin sections were removed from either cfcKapton or cpcKapton tape using chloroform or acetone. Retrieved sections were collected onto Formvar-coated copper grids (Science Services). Sections were imaged using a JEM-1400+ (JEOL) transmission electron microscope (TEM) equipped with an XF416 (TVIPS) camera operated by the EM-Menu software (TVIPS).\n\n### Electron tomography of semi-thin sections\n\nFor ET, single serial semi-thick (400 nm) sections were released as described above and collected on slot grids covered with a Formvar layer of golden interference color. Colloidal gold particles (diameter 20 nm, BBI) serving as fiducials for tomographic reconstruction were then attached to the sections by submerging the grids into a droplet of the pure colloidal gold solution for 1 min. Samples were blotted to remove residual solution and air-dried. Semi-thick sections were imaged using a Tecnai F30 transmission electron microscope (Thermo Fisher Scientific) operated at 300 kV and equipped with a 4k \u00d7 4k CMOS camera (OneView, Gatan) as previously described (Kiewisz et al., 2022). Using a dual-axis specimen holder (Type 2040, Fishione, USA), tilt series were recorded from \u201360\u00b0 to +60\u00b0 with 1\u00b0 increments at a magnification of 4700 x and a pixel size of 2.572 nm applying the SerialEM software package (Mastronarde, 2003; Mastronarde, 2005). For dual-tilt electron tomography, the grid was rotated for 90\u00b0 in the XY-plane and the second tilt series was acquired using identical microscope settings (Mastronarde, 1997). Both tomographic image stacks of the same positions were reconstructed, combined and flattened using IMOD (Kremer et al., 1996; Mastronarde and Held, 2017). Serial semi-thick sections were stitched, and combined by using the ZIB Amira (Zuse Institute Berlin, Germany) software package (Stalling et al., 2005; Lindow et al., 2021). After converting the image data into TIFF format, the image registration was manually refined in Fiji TrakEM2 followed by a final elastic alignment. Segmentation of cellular features was performed manually with the program VAST (Berger et al., 2018) and subsequently rendered in Blender (Brito, 2018). All movies were generated using Amira.\n\n### Materials and availability statement\n\nConfocal, array tomography, and electron tomography data are available on Bioimage Archive S-BIAD 1274 from August 15, 2024 on.\n",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "f38c09a9-969a-47db-82a1-f2d7d1799ffa",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nils Brose, Max Planck Institute of Experimental Medicine Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90565.3.sa0](https://doi.org/10.7554/eLife.90565.3.sa0)\n\nThe present paper describes an important methodological development that combines light (confocal) microscopy with scanning and transmission EM and EM tomography. The method expands the level of structural detail accessible to large-volume EM studies and thus represents an approach to integrate analyses of cellular and sub-cellular structures in biological samples. The study, which provides a compelling proof-of-principle, will be of particular value to cell biologists interested in the in-depth interpretation of high-resolution ultrastructural information from sparsely distributed targets - at multiple scales and in diverse biological structures.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90565.3.sa1](https://doi.org/10.7554/eLife.90565.3.sa1)\n\nThe present paper presents a new, simple, and cost-effective technique for multimodal EM imaging that combines the strengths of volume scanning electron microscopy (SEM) and electron microscopic tomography. The novel ATUM-Tomo approach enables the consecutive inspection of selected areas of interest by correlated serial SEM and TEM, optionally in combination with CLEM, as demonstrated. The most important finding of ATUM-Tomo and particularly correlative ATUM-Tomo is that it can bridge several scales from the cellular to the high-resolution subcellular scale, from the micrometer to low nanometer resolution, which is particularly important for the ultrastructural analysis of biological regions of interest as demonstrated here by focal pathologies or rare cellular and subcellular structures. Both imaging modalities are non-destructive, thus allowing re-imaging and hierarchical imaging at the SEM and TEM levels, which is particularly important for precious samples, such as human biopsies or specimens from complex CLEM experiments. The paper demonstrates that the new approach is very helpful in analyses of pathologically altered brains, including humans brain tissue samples, that require high-resolution SEM and TEM in combination with immunohistochemistry for analysis. Even the combination with tracers would be possible. In sum, ATUM-Tomo opens up new possibilities in multimodal volume EM imaging for diverse biological areas of research.\n\nStrengths\n\nThis paper is a very nice piece of work. It combines modern, high-end, state-of-the-art technology that allows to investigate diverse biological questions in different fields and at multiple scales. The paper is clear and well-written. It is accompanied by excellent figures, supplementals, and colored 3D-reconstructions that make it easy for the reader to follow the experimental procedure and the scientific context alike.\n\nWeaknesses\n\nThere is a bit of an imbalance between the description of the state-of-the-art methodology and the scientific context. The discussion of the latter could be expanded.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90565.3.sa2](https://doi.org/10.7554/eLife.90565.3.sa2)\n\nKislinger et al. present a method permitting a targeted, multi-scale ultrastructural imaging approach to bridge the resolution gap between large-scale scanning electron microscopy (SEM) and transmission electron microscopy (TEM). The key methodological development consists of an approach to recover sections of resin-embedded material produced by Automated Tape Collecting Ultramicrotomy (ATUM), thereby permitting regions of interest identified by serial section SEM (ATUM-SEM) screening to be subsequently re-examined at higher resolution by TEM tomography (ATUM-Tomo). The study shows that both formvar and permanent marker coatings are in principle compatible with solvent-based release of pre-screened sections from ATUM tape (carbon nanotubule or Kapton tape). However, a comparative analysis of potential limitations and artifacts introduced by these respective coatings revealed permanent marker to provide a superior coating; permanent marker coatings are more easily and reliably applied to tape with only minor contaminants affecting the recovered section-tape interface with negligible influence on tomogram interpretation. Convincing proof-of-principle is provided by integrating this novel ATUMTomo technique into a technically impressive correlated light and electron microscopy (CLEM) approach specifically tailored to investigate ultrastructural manifestations of trauma-induced changes in blood-brain barrier permeability.\n\nStrengths\n\nSchematics and figures are very well-constructed, illustrating the workflow in a logical and easily interpretable manner. Light and electron microscope image data are of excellent quality, and the efficacy of the ATUM-Tomo approach is evidenced by a qualitative assessment of ATUM-SEM performance using coated tape variants and a convincing correlation between scanning and transmission electron microscopy imaging modalities. Potential ultrastructural artifacts induced via solvent exposure and any subsequent mechanical stress incurred during section detachment were thoroughly and systematically investigated using appropriate methods and reported with commendable transparency. In summary, the presented data convincingly support the claims of the study. A major strength of this work includes its general applicability to a broad range of biological questions and ultrastructural targets demanding resolutions exceeding that obtained via serial section and destructive block-face imaging approaches alone. The level of methodological detail provided is sufficient for replication of the ATUM-Tomo technique in other laboratories. Consequently, this relatively simple and cost-effective technique is widely adoptable by electron microscopy laboratories, and its integration into existing ATUM-SEM workflows supports a versatile and non-destructive imaging regime enabling high-resolution details of targeted structures to be interpreted within anatomical and subcellular contexts.\n\nWeaknesses\n\nI find no significant weaknesses in the current version of the manuscript.\n",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1046e2d-b308-4e58-b993-cd896e00e1c4",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C1",
+      "claim": "ATUM enables imaging of serial sections deposited on thick plastic tapes by scanning electron microscopy (SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "Like other volume electron microscopy approaches, automated tape-collecting ultramicrotomy (ATUM) enables imaging of serial sections deposited on thick plastic tapes by scanning electron microscopy (SEM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characteristic of ATUM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "952dadba-f716-4d49-9028-efed16daaf82",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C2",
+      "claim": "ATUM is unique in enabling hierarchical imaging and thus efficient screening for target structures, as needed for correlative light and electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "ATUM is unique in enabling hierarchical imaging and thus efficient screening for target structures, as needed for correlative light and electron microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinguishing feature of ATUM in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "ab1c4ef5-72f2-4cc7-af0c-491e85545706",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C3",
+      "claim": "SEM of sections on tape can only access the section surface, thereby limiting the axial resolution to the typical size of cellular vesicles with an order of magnitude lower than the acquired xy resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, SEM of sections on tape can only access the section surface, thereby limiting the axial resolution to the typical size of cellular vesicles with an order of magnitude lower than the acquired xy resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This limitation of SEM imaging on tape is explicitly stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "f0de6872-ff0a-4f44-9154-d536f288d54e",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C4",
+      "claim": "Serial-section electron tomography (ET) yields isotropic voxels at full EM resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, serial-section electron tomography (ET), a transmission electron microscopy-based approach, yields isotropic voxels at full EM resolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of ET in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "b18ae43e-fabe-400f-a793-eee44c469a60",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C5",
+      "claim": "Serial-section electron tomography requires deposition of sections on electron-stable thin and fragile films, thus making screening of large section libraries difficult and prone to section loss.",
+      "claim_type": "EXPLICIT",
+      "source": "but requires deposition of sections on electron-stable thin and fragile films, thus making screening of large section libraries difficult and prone to section loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This limitation of ET is explicitly stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "7e23883c-6145-42ee-bd0c-57b3c1c7014c",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C6",
+      "claim": "In ATUM-Tomo, sections are first reversibly attached to plastic tape via a dissolvable coating, and after screening detached and transferred to the ET-compatible thin films.",
+      "claim_type": "EXPLICIT",
+      "source": "To combine the strength of both approaches, we developed 'ATUM-Tomo, a hybrid method, where sections are first reversibly attached to plastic tape via a dissolvable coating, and after screening detached and transferred to the ET-compatible thin films.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the key methodological innovation of ATUM-Tomo as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "a28830fc-ae7e-460e-8f78-666f40fe9128",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C7",
+      "claim": "Microthrombi and associated sites of BBB leakiness were identified by confocal imaging of injected fluorescent and electron-dense nanoparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "Microthrombi and associated sites of BBB leakiness were identified by confocal imaging of injected fluorescent and electron-dense nanoparticles, then relocalized by ATUM-SEM, and finally interrogated by correlative ATUM-Tomo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "f7e98f06-4f08-4f3d-90f4-964269b47e07",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C8",
+      "claim": "Volume electron microscopy provides high-resolution data of target structures that can be used to render complex biological morphologies in three dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Volume electron microscopy (EM) provides high-resolution data of target structures that can be used to render complex biological morphologies in three dimensions (Peddie et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "9fd92022-7312-4ac1-a4c9-394fb1d97264",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C9",
+      "claim": "Array tomography techniques, such as ATUM, have proven particularly powerful for correlating specific biological structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the available volume EM approaches, array tomography techniques (Wacker and Schroeder, 2013), such as ATUM (Kasthuri et al., 2015), have proven particularly powerful for correlating specific biological structures (Schifferer et al., 2021; Snaidero et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "51e50682-316b-4926-abca-14cc1787a0ec",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C10",
+      "claim": "In ATUM-SEM, a reel-to-reel system transfers the sections from the diamond knife onto tape.",
+      "claim_type": "EXPLICIT",
+      "source": "In ATUM-SEM, a reel-to-reel system transfers the sections from the diamond knife onto tape (Kubota et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ATUM-SEM process with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "7a8a408d-d198-48d5-9a07-fd1c2f79e451",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C11",
+      "claim": "High-resolution imaging by array tomography is currently restricted by physical sectioning, resulting in typical voxels of 3 \u00d7 3 \u00d7 30\u2013100 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution imaging by array tomography is, however, currently restricted by physical sectioning, resulting in typical voxels of 3 \u00d7 3 \u00d7 30\u2013100 nm, where SEM determines the lateral resolution of \u22483 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This limitation of array tomography is explicitly stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "de9cf20c-a667-46a5-96ba-25e28a2a270b",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C12",
+      "claim": "Array tomography can reveal fine cellular processes down to \u224840 nm, but potentially misses smaller subcellular structures, such as vesicles or contact sites that can be hidden within a section volume.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, array tomography can reveal fine cellular processes down to \u224840 nm, but potentially misses smaller subcellular structures, such as vesicles or contact sites that can be hidden within a section volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the resolution limitations of array tomography.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "443a598e-b53b-4f3c-8500-92e2c8779109",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C13",
+      "claim": "In electron tomography, semi-thick sections (200\u2013400 nm) are tilted in the electron beam and Fourier transformed for image reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "In ET, semi-thick sections (200\u2013400 nm) are tilted in the electron beam and Fourier transformed for image reconstruction (Baumeister et al., 1999; Young and Villa, 2023; Frank, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ET process with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "db8a30e7-2eaf-4cbe-8599-7482e85ce90e",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C14",
+      "claim": "ATUM could not be combined with ET because the former necessitates attaching sections on a solid support, while the latter as a projection method, needs sections to be deposited on electron-transparent films.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, ATUM could not be combined with ET because the former necessitates attaching sections on a solid support, while the latter as a projection method, needs sections to be deposited on electron-transparent films.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the technical incompatibility between ATUM and ET prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "098ed012-9f69-4943-9337-34c901146cd0",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C15",
+      "claim": "At the BBB, the actual barrier function is determined by distinctive ultrastructural features, mostly within the endothelial layer, including tight junctions, pinocytosis, and vesicular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "At the BBB, the actual barrier function is determined by distinctive ultrastructural features, mostly within the endothelial layer, including tight junctions, pinocytosis, and vesicular transport (O'Brown et al., 2019; Andreone et al., 2017; Nahirney et al., 2016; Hirano et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes BBB ultrastructure with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "52ba1fe1-2b24-4eac-ae00-c986961dc955",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C16",
+      "claim": "Controlled cortical impact in mice is a model for traumatic brain injury that involves BBB damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Controlled cortical impact in mice is a model for traumatic brain injury that involves BBB damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "6f8d73b6-5589-4f78-b1d2-d24b15fa25ec",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C17",
+      "claim": "LNDs and colloidal gold particles of similar size (30 nm) and surface chemistry (PEGylation) ensure similar biodistribution.",
+      "claim_type": "EXPLICIT",
+      "source": "To mark sites of vessel injury, we injected LNDs and colloidal gold particles of similar size (30 nm) and surface chemistry (PEGylation) ensuring similar biodistribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design rationale.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "b2811898-7878-467d-954f-62fee6509795",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C18",
+      "claim": "LNDs and gold particles accumulate in microthrombi formed in the impact penumbra within 30\u201360 min post-injection.",
+      "claim_type": "EXPLICIT",
+      "source": "LNDs are highly fluorescent, while gold is electron dense \u2013 and both accumulate in microthrombi formed in the impact penumbra within 30\u201360 min post-injection (Khalin et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavior of the injected nanoparticles with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "9e2bcd37-58cf-46f1-a700-cfe729e0221b",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C19",
+      "claim": "Tissue preservation was ensured by imaging for a maximum of 1 hr, followed by gentle removal of the cover slip by floating-off in the buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue preservation was ensured by imaging for a maximum of 1 hr, followed by gentle removal of the cover slip by floating-off in the buffer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological precaution taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "9f3f8fb8-a449-4313-8791-146a0d7d8cb6",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C20",
+      "claim": "A typical 1000-section library was collected, which could then be imaged hierarchically and repetitively.",
+      "claim_type": "EXPLICIT",
+      "source": "A typical 1000-section library was collected, which could then be imaged hierarchically and repetitively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scale of the section libraries generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "805ad5ce-aa3d-4938-ab7e-d5fbdad83a29",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C21",
+      "claim": "The microclot consisted of luminal erythrocyte stalls in combination with platelets and immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The microclot illustrated here consisted of luminal erythrocyte stalls (Figure 1D and G) in combination with platelets and immune cells (Figure 1D and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the cellular composition of microthrombi observed in the study, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "2804b562-7d31-4745-b2ce-582838967a16",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C22",
+      "claim": "An accumulation of platelets, interspersed with filamentous, electron-dense fibrin was found in the center and at the ends, 'plugging' the occlusion.",
+      "claim_type": "EXPLICIT",
+      "source": "An accumulation of platelets, interspersed with filamentous, electron-dense fibrin was found in the center and at the ends, 'plugging' the occlusion (Figure 1D, F and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the ultrastructural features of microthrombi with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "0ba7ab55-09b5-41b1-84d0-f4f7f110a91c",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C23",
+      "claim": "Gold particles and brighter but less discrete particles of the same size, presumably representing LNDs, were detected between luminal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlating to the fluorescence pattern, we detected gold particles and brighter but less discrete particles of the same size, presumably representing LNDs, between luminal cells (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the localization of nanoparticles observed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "6477a443-37ca-4b9b-9789-b888c6637bd7",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C24",
+      "claim": "At sites of extravasation indicated by an LND halo, a neutrophil undergoing diapedesis was found.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at sites of extravasation indicated by an LND halo, we found a neutrophil undergoing diapedesis (Figure 1E) and abluminal gold particles in its proximity (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a specific observation at sites of BBB leakage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "d91a9577-0436-4e85-b32d-a694be98bedf",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C25",
+      "claim": "Abluminal gold particles were found in proximity to the neutrophil undergoing diapedesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at sites of extravasation indicated by an LND halo, we found a neutrophil undergoing diapedesis (Figure 1E) and abluminal gold particles in its proximity (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the spatial relationship between immune cells and nanoparticles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "88b1c98c-04aa-4124-b09d-4011ed7040e5",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C26",
+      "claim": "Within the microthrombus periphery, regions of the endothelium were swollen with intact tight junctions, while in the core, regions with almost no discrete endothelial layer prevailed.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the microthrombus periphery, regions of the endothelium were swollen with intact tight junctions, while in the core, regions with almost no discrete endothelial layer prevailed (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the heterogeneous endothelial morphology at microthrombi.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "4cbec0d6-b55e-4303-b0c2-c549fc503de1",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C27",
+      "claim": "Colloidal gold was found at pathologically thinned endothelium, basement membrane, and in pericytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Colloidal gold was found at pathologically thinned endothelium, basement membrane, and in pericytes (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distribution of gold nanoparticles at the BBB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "c2044ffc-de8a-4881-89de-b61945ecf302",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C28",
+      "claim": "Sections collected on conventionally coated ccKapton or carbon nanotube tape were stuck to the tape despite treatment with organic solvents and any other chemical or physical treatments tested.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such sections were stuck to the tape despite treatment with organic solvents and any other chemical or physical treatments that we tested (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the initial challenge in developing the ATUM-Tomo method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "3143c0b8-ddc0-4a86-b11c-725d3b9a9f33",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C29",
+      "claim": "An ultrathin tissue section could be removed from Formvar-coated tape by incubation in chloroform or 1,2-dichlorethan.",
+      "claim_type": "EXPLICIT",
+      "source": "Short ccKapton tape strips were Formvar-coated using a standard film casting device (cfcKapton), onto which 100\u2013300 nm tissue sections were collected from the diamond knife water bath. Indeed, such sections could be recovered from the tape by incubation in chloroform or 1,2-dichlorethan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a successful approach to section recovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "d9b00059-ff62-4519-a086-329317a8ccd1",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C30",
+      "claim": "Formvar coating induced charging, depending on the thickness of the coat.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Formvar coating induced charging, depending on the thickness of the coat (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a problem with Formvar coating for SEM imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "22a935a6-a5bf-40f5-bd17-cf5fa5a50274",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C31",
+      "claim": "Imaging at high resolution (<10 nm) prevented subsequent section detachment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, imaging at high resolution (<10 nm) prevented subsequent section detachment (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a limitation of the Formvar coating approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "9acf139a-0554-4189-be11-62d817a95829",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C32",
+      "claim": "Sections attached to cpcKapton using permanent marker could be detached by intense rinsing with acetone.",
+      "claim_type": "EXPLICIT",
+      "source": "We labeled ccKapton with a thin film of permanent marker with a wide tip (cpcKapton) and found that sections attached to such tape could be detached by intense rinsing with acetone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the successful development of the permanent marker coating method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "eb6f0eb4-a511-4c52-a30e-8849d1644db7",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C33",
+      "claim": "Coatings with permanent marker of red color, but not black color partially detached from the plastic support and lead to strong charging during SEM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Coatings with permanent marker of red color, but not black color partially detached from the plastic support and lead to strong charging during SEM imaging (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes differences between marker colors in the coating approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "087108a9-4168-4d85-8df8-daa8ac492cd1",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C34",
+      "claim": "Tissue sections attached to cpcKapton, using pens of either color, showed major tissue section folds.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue sections attached to cpcKapton, using pens of either color, showed major tissue section folds (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a problem with the initial marker coating approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "12811713-e226-408b-ae26-d8867574413e",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C35",
+      "claim": "Plasma-discharged cpcKapton enabled reversible section attachment at certain SEM imaging conditions (10 nm lateral resolution at 3 \u00b5s dwell time) with ultrastructural quality comparable to ccKapton.",
+      "claim_type": "EXPLICIT",
+      "source": "Such plasma-discharged cpcKapton enabled reversible section attachment at certain SEM imaging conditions (10 nm lateral resolution at 3 \u00b5s dwell time) with ultrastructural quality comparable to ccKapton (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the successful optimization of the marker coating method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "bf4ec63e-8010-4cae-bcd5-b5d91c437781",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C36",
+      "claim": "Despite extensive acetone rinsing the sections stayed intact with well-preserved ultrastructure.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive acetone rinsing the sections stayed intact with well-preserved ultrastructure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality of sections after the detachment process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "2e6e7cef-aa2f-4eea-999a-a412808f7e06",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C37",
+      "claim": "The en bloc embedding provided strong TEM image contrast without further post staining.",
+      "claim_type": "EXPLICIT",
+      "source": "The en bloc embedding provided strong TEM image contrast without further post staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the sample preparation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "e8388a63-f304-4a28-a4c6-a2ab4137e897",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C38",
+      "claim": "Dark deposits were detected on some regions of the section, which probably originate from tissue contact with the coating and accordingly are only superficial.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we detected dark deposits (Figure 2\u2014figure supplement 3A) on some regions of the section, which probably originate from tissue contact with the coating and accordingly are only superficial.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a minor artifact of the method with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "cfbc7b86-bb18-4027-886b-32eaf7096667",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C39",
+      "claim": "Serial 400 nm semi-thick sections of the lesion area covering the entire volume of the vibratome section resulted in 250 sections that can be mounted onto one or two wafers.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected serial 400 nm semi-thick sections of the lesion area covering the entire volume of the vibratome section on cpcKapton. Typically, this resulted in 250 sections that can be mounted onto one or two wafers, dramatically speeding up the correlation process compared to ATUM-SEM (1000 sections on four wafers).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the efficiency advantage of ATUM-Tomo for this application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "a5b18c76-66d4-4f44-8798-58db17afdfcf",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C40",
+      "claim": "Colloidal gold fiducials (20 nm diameter) needed for image reconstruction could be attached to the surface of sections despite previous SEM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that colloidal gold fiducials (20 nm diameter) needed for image reconstruction could be attached to the surface of these sections despite previous SEM imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical capability of the ATUM-Tomo method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "7bc50013-67d9-45ae-b9e9-751e1db9a8d7",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C41",
+      "claim": "Tomographic reconstructions of semi-thick sections removed from cpcKapton showed surface contamination only at the side that was facing the permanent marker coat.",
+      "claim_type": "EXPLICIT",
+      "source": "Tomographic reconstructions of semi-thick sections removed from cpcKapton showed surface contamination only at the side that was facing the permanent marker coat (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the localization of contamination artifacts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "8047f7d2-a80e-4ecb-9d1d-23294b62244b",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C42",
+      "claim": "The superficial contamination caused reconstruction artifacts in the back projection down to a depth of up to 50 nm into the section.",
+      "claim_type": "EXPLICIT",
+      "source": "The superficial contamination caused reconstruction artifacts in the back projection down to down to a depth of up to 50 nm into the section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the extent of contamination artifacts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "303149bc-b842-4a47-b8ae-90a8c6f9189d",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C43",
+      "claim": "Sections that were collected at a nominal cutting thickness of 400 nm showed an actual thickness of 260\u2013300 nm after the tomographic reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Sections that were collected at a nominal cutting thickness of 400 nm showed an actual thickness of 260\u2013300 nm after the tomographic reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes section collapse during ET.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "b9f1b6f0-ee28-4f47-8366-290e181d7039",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C44",
+      "claim": "Variable lateral shrinkage of about 20% and minor distortions were detected between the SEM and TEM images of ultrathin sections, probably due to beam damage and acetone treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we detected variable lateral shrinkage of about 20% and minor distortions between the SEM and TEM images of ultrathin sections, probably due to beam damage and acetone treatment (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes and interprets distortions in the method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "b892b6ed-906a-4903-adfc-ab9446053011",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C45",
+      "claim": "The sections could be recovered even four months after collection and nine months after SEM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The sections could be recovered even four months after collection and nine months after SEM imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the long-term stability of sections on cpcKapton.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "355f4fe9-3ca0-4c20-927a-b9618269c472",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C46",
+      "claim": "For all three types of resins (LX112, Epon, and Durcupan), sections could be imaged by SEM, detached and collected onto grids for re-imaging by TEM tomography.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides Epon/Araldite resin (LX112), we tested the detachment and re-imaging procedure with tissue sections embedded in standard Epon and Durcupan resins (Figure 2\u2014figure supplement 5). For all three types of resins, we were able to image by SEM, detach sections and collect them onto grids for re-imaging by TEM tomography.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the generalizability of the method across resin types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "f05d4b6c-1f22-409e-935b-4437cf3f26e3",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C47",
+      "claim": "The identification of LNDs was facilitated in the ET by the increased resolution compared to SEM images.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the injected colloidal gold particles and LNDs were accumulated in the vessel lumen, with the identification of LNDs \u2014compared to SEM images\u2014actually facilitated in the ET by the increased resolution (Figure 3E; Figure 3\u2014videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an advantage of ET over SEM for identifying LNDs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "7338166d-abdc-4123-8675-1ff1f5d11efb",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C48",
+      "claim": "The endothelial layer showed local edema and detachment from the basement membrane, while tight junctions were still intact.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the endothelial layer showed local edema and detachment from the basement membrane, while tight junctions were still intact (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes ultrastructural features of the BBB at sites of leakage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "38242dcd-f074-407e-96a2-32d9a248667f",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C49",
+      "claim": "Gold particles were detected in platelet vesicles, vacuoles of endothelial cell swellings, as well as in areas of endothelial detachment from the basement membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Gold particles were detected in platelet vesicles, vacuoles of endothelial cell swellings, as well as in areas of endothelial detachment from the basement membrane (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the subcellular localization of gold nanoparticles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "75730626-e03b-45fd-bd3d-d472d46ae77b",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C50",
+      "claim": "Comparing the SEM reconstruction with the one from the corresponding serial ETs clearly showed that SEM imaging visualizes only the section surface resulting in a coarse three-dimensional rendering, while ET provided information of the entire section thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the SEM reconstruction with the one from the corresponding serial ETs (Figure 4A) clearly showed that SEM imaging visualizes only the section surface resulting in a coarse three-dimensional rendering, while ET provided information of the entire section thickness (Figure 4B\u2013D; Figure 4\u2014videos 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares the information content of SEM versus ET reconstructions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "a2f7c1d1-2c21-491e-9f2c-9918eb1fd506",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C51",
+      "claim": "Earlier studies described endothelial edema preceding FITC-albumin early after middle cerebral artery occlusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our results, earlier studies already described endothelial edema preceding FITC-albumin early after middle cerebral artery occlusion (Krueger et al., 2015; Krueger et al., 2019), another model system for studying BBB leakiness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This contextualizes the current findings with previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "8004e3d3-9a9d-462f-a737-a8f3ffbca141",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C52",
+      "claim": "At later stages after middle cerebral artery occlusion, loss of endothelial cell integrity with discontinuous plasma membranes and detachment from the basement membrane was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "At later stages, these authors observed loss of endothelial cell integrity with discontinuous plasma membranes and detachment from the basement membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from previous studies on BBB leakiness.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "4e6616d6-fa12-4af2-ab38-30494ddb5250",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C53",
+      "claim": "The DAB staining of FITC-albumin applied in previous studies masks the endothelial ultrastructure and thus provides compromised EM information.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the DAB staining of FITC-albumin applied in these studies masks the endothelial ultrastructure and thus provides compromised EM information (Krueger et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This critiques a limitation of previous methods.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "f674658e-12be-4e23-a5d2-b466c2744aba",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C54",
+      "claim": "The CLEM approach provides high ultrastructural quality by chemical fixation with glutaraldehyde.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, our CLEM approach provides high ultrastructural quality by chemical fixation with glutaraldehyde.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the current method over previous approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "3ac1691b-56b8-4b56-9770-d98910eb8308",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C55",
+      "claim": "Lectin serves as a marker for intact glycocalyx and its loss indicates early pathological events leading to activation of transcellular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Lectin serves as a marker for intact glycocalyx and its loss indicates early pathological events leading to activation of transcellular transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the significance of lectin staining patterns.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "8ac04b20-e4aa-49f6-99dd-ebda2e3500b8",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C56",
+      "claim": "The glycocalyx is critical for BBB integrity by suppressing caveolin1-dependent endothelial transcytosis following ischemic stroke.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that the glycocalyx is critical for BBB integrity by suppressing caveolin1-dependent endothelial transcytosis following ischemic stroke (Zhu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites previous work on the role of glycocalyx in BBB integrity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "4591b068-30fa-4f03-a15f-a1ec64af3bd3",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C57",
+      "claim": "Intact tight junctions and gold particles in vesicles were detected at sites of BBB leakiness.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with the detection of intact tight junctions and gold particles in vesicles at sites of BBB leakiness in the current and previous studies (Krueger et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "e0354469-04de-4095-bfa4-9f0872e87566",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C58",
+      "claim": "The paracellular pathway seems not to be the first loophole and gains importance starting 48 hr after the injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the paracellular pathway seems not to be the first loophole and gains importance starting 48 hr after the injury (Knowland et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interprets the temporal dynamics of BBB leakage pathways with citation support.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "41491f01-7ba4-469a-b771-79d52b7fcff8",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C59",
+      "claim": "ATUM-Tomo is a simple and low-cost method for multimodal EM imaging that combines the strengths of both volume SEM and ET.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we developed a simple and low-cost method for multimodal EM imaging that combines the strengths of both volume SEM and ET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the key contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "f9afa101-94e6-4bc4-a0d3-d40612989dd6",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C60",
+      "claim": "ATUM-Tomo enables the consecutive inspection of selected areas of interest by correlative serial SEM and TEM, optionally in combination with CLEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our novel ATUM-Tomo approach enables the consecutive inspection of selected areas of interest by correlative serial SEM and TEM, optionally in combination with CLEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of the ATUM-Tomo method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "fde46290-c8d3-46b8-8fa7-0d751fbbff1e",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C61",
+      "claim": "ATUM-Tomo can bridge several scales, which is particularly important for ultrastructural analysis of focal pathologies or rare cellular and subcellular events.",
+      "claim_type": "EXPLICIT",
+      "source": "ATUM-Tomo and also correlative ATUM-Tomo can bridge several scales, which is particularly important for ultrastructural analysis of focal pathologies or rare cellular and subcellular events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scale-bridging capability of the method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "e03cb122-7f9f-4e25-aec0-f272226c93d7",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C62",
+      "claim": "Both imaging modalities (SEM and TEM) are non-destructive, thus allowing re-imaging and hierarchical imaging at the SEM and TEM levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Both imaging modalities are non-destructive, thus allowing re-imaging and hierarchical imaging at the SEM and TEM levels, which is especially important for precious samples including human biopsies and complex CLEM experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the ATUM-Tomo approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "b9baa581-f0ce-46d8-828e-cd681d877d06",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C63",
+      "claim": "ATUM-Tomo opens up new avenues for multimodal volume EM imaging of diverse biological research areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ATUM-Tomo opens up new avenues for multimodal volume EM imaging of diverse biological research areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the broader impact of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "003c47b9-77eb-42d2-b764-9c18db041262",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C64",
+      "claim": "The size of LNDs was 35.66\u00b11.66 nm with a PDI index of 0.113\u00b10.002.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of LNDs was 35.66\u00b11.66 nm, PDI index 0.113\u00b10.002.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides quantitative characterization of the LNDs used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "68e98ae3-22f0-4232-8358-5336d7c420f5",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C65",
+      "claim": "Lectin and LND fluorescence was possible with minimal autofluorescence despite perfusion fixation with glutaraldehyde.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal imaging revealed that lectin and LND fluorescence was possible with minimal autofluorescence despite perfusion fixation with glutaraldehyde.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the compatibility of fluorescence imaging with glutaraldehyde fixation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "b793cd5e-8f0a-4cd3-a9c2-79e842645c6a",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C66",
+      "claim": "Plasma discharging increases hydrophilicity and thereby prevents wrinkle formation during serial section collection for ATUM and ATUM-Tomo approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasma discharging increases hydrophilicity and thereby prevents wrinkle formation during serial section collection for ATUM and ATUM-Tomo approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the purpose of plasma treatment in the method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "02a7b3a7-83c4-4765-be67-f4139aae7c22",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C67",
+      "claim": "ATUM-Tomo requires several rounds of plasma treatment after marker pen coating as the marker introduces hydrophobicity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ATUM-Tomo requires several rounds of plasma treatment after marker pen coating as the marker introduces hydrophobicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific requirement of the ATUM-Tomo method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "dda43c18-d397-4287-b3fb-5dfbc6ebaa9e",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C68",
+      "claim": "Tilt series were recorded from \u201360\u00b0 to +60\u00b0 with 1\u00b0 increments at a magnification of 4700 x and a pixel size of 2.572 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a dual-axis specimen holder (Type 2040, Fishione, USA), tilt series were recorded from \u201360\u00b0 to +60\u00b0 with 1\u00b0 increments at a magnification of 4700 x and a pixel size of 2.572 nm applying the SerialEM software package (Mastronarde, 2003; Mastronarde, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical parameters of ET acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "21bf1f0f-93d2-4511-a095-f2b38097a457",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C69",
+      "claim": "For dual-tilt electron tomography, the grid was rotated for 90\u00b0 in the XY-plane and the second tilt series was acquired using identical microscope settings.",
+      "claim_type": "EXPLICIT",
+      "source": "For dual-tilt electron tomography, the grid was rotated for 90\u00b0 in the XY-plane and the second tilt series was acquired using identical microscope settings (Mastronarde, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dual-tilt ET protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "bf4324ca-8270-44ee-909e-32bddb9ab9d4",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C70",
+      "claim": "Endothelial swellings were identified at regions without lectin staining, only showing LND fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Endothelial swellings were identified at regions without lectin staining, only showing LND fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the correlation between fluorescence patterns and ultrastructural features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "2081d7d5-593f-44c1-a45f-24fb993b2f72",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C71",
+      "claim": "Some microthrombi could serve not only as entry points for nanoparticles, but also for cells from the blood.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we can assume that some microthrombi could serve not only as entry points for nanoparticles, but also for cells from the blood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observation of neutrophil diapedesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "be0e5de7-3458-4729-8c53-b65a99942c50",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C72",
+      "claim": "Healthy endothelium was characterized by an intact glycocalyx and hence lectin staining in the absence of LND fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Healthy endothelium was characterized by an intact glycocalyx and hence lectin staining in the absence of LND fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the fluorescence signature of healthy BBB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "8ac69121-0415-4a1d-9872-0d243d4fa7fc",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C73",
+      "claim": "The required rinsing time for section detachment increases with previous beam exposure of the section in the SEM.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experience, the required rinsing time increases with previous beam exposure of the section in the SEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an empirical observation about the detachment process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "c38cd2fe-95fe-4b34-bb45-724315619573",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C74",
+      "claim": "Through the detachment from the tape in the acetone bath, sections could be physically flipped on the water bath relative to the sectioning direction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, through the detachment from the tape in the acetone bath, it could happen that the sections were physically flipped on the water bath relative to the sectioning direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a potential complication of the section transfer process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "c5be4a89-f785-4eeb-b5b3-06469ef110b9",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C75",
+      "claim": "Vesicular transport might be involved in BBB leakiness based on the existence of morphologically normal tight junctions visualized by ATUM-SEM.",
+      "claim_type": "IMPLICIT",
+      "source": "The existence of morphologically normal tight junctions visualized by ATUM-SEM suggests that vesicular transport might be involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of intact tight junctions at sites of leakage.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "6b4d356f-ba95-431f-9be3-a14da820382d",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C76",
+      "claim": "ATUM-Tomo provides an integrated view of the cellular environment as well as the ultrastructural features of the compromised BBB.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that triple correlation using confocal microscopy, volume SEM in combination with ET provides an integrated view of the cellular environment as well as the ultrastructural features of the compromised BBB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the capability demonstrated in the application.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "da5f75bd-522e-4faa-b642-69762d54f4e0",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "claim_id": "C77",
+      "claim": "ATUM-Tomo in combination with CLEM is a powerful multimodal approach, enabling a bridging of scales from the mm to the nm range.",
+      "claim_type": "EXPLICIT",
+      "source": "Our application shows that ATUM-Tomo in combination with CLEM is a powerful multimodal approach, enabling a bridging of scales from the mm to the nm range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the scale-bridging capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "06a6be09-d6ed-4455-a148-1e401af7933b",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed ATUM-Tomo, a novel method enabling reversible section attachment to plastic tape via dissolvable coatings (permanent marker or Formvar), allowing serial sections to be first imaged by SEM and then detached and transferred to TEM grids for electron tomography. The method involves plasma treatment to prevent section folds, works with multiple resin types, and enables sections to be recovered months after collection, though it introduces some artifacts including surface contamination (up to 50 nm depth), section collapse (400 nm nominal to 260-300 nm actual), and ~20% lateral shrinkage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C28-C46, C59-C62, C66-C67, C73-C74 collectively demonstrate successful development of the ATUM-Tomo method with detailed characterization of the approach, including both successes (reversible attachment, multi-resin compatibility, long-term stability) and limitations (contamination artifacts, dimensional changes). The method is well-documented with specific technical parameters, troubleshooting steps, and quantified artifacts. The figures provide visual evidence supporting the claims about section quality and successful transfer between imaging modalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "44018f97-6b1a-486e-87c8-98a72befc52c",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using correlative ATUM-SEM and ATUM-Tomo with fluorescent lipid nanodroplets (LNDs) and gold nanoparticles in a traumatic brain injury model, the authors identified microthrombi composition (erythrocytes, platelets, immune cells, fibrin) and characterized BBB leakage sites. ATUM-Tomo revealed that at sites of BBB compromise, the endothelium showed local edema and detachment from basement membrane while tight junctions remained intact, with gold particles detected in platelet vesicles, endothelial cell vacuoles, and areas of endothelial detachment. ET provided superior resolution compared to SEM for identifying subcellular structures and nanoparticle localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C16-C27, C39, C47-C50, C64-C65, C70, C72, C76-C77 provide converging evidence from confocal microscopy, ATUM-SEM, and ATUM-Tomo demonstrating the cellular and ultrastructural features of BBB leakage. The nanoparticle tracers are well-characterized (C64), the experimental workflow is documented (C7, C16-C20), and the ultrastructural observations are supported by multiple imaging modalities with figures showing the described features. The comparison between SEM and ET (C50) directly demonstrates the resolution advantage of the combined approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors propose that transcellular vesicular transport, rather than paracellular pathways, is involved in early BBB leakage after traumatic brain injury, based on observations of intact tight junctions at sites where gold nanoparticles were found in endothelial vesicles and swellings. Loss of lectin staining (indicating glycocalyx disruption) correlated with endothelial swellings and LND accumulation, suggesting glycocalyx loss precedes transcellular transport activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49, C55, C57, C70, C75 provide direct observational evidence (intact tight junctions with gold particles in vesicles at leakage sites), while C51-C53, C56, C58 contextualize these findings with prior literature. The interpretation that vesicular transport is involved (C75) is reasonably supported by the combination of intact tight junctions and intracellular nanoparticle localization. However, the mechanism remains somewhat inferential as direct demonstration of active transcytosis would require additional functional or temporal studies. The correlation with glycocalyx loss (C55, C70) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "8733bd19-3f66-4f72-879e-d31b2ffa3474",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ATUM-SEM enables hierarchical imaging of serial sections on tape with efficient screening capabilities but is limited by axial resolution (~30-100 nm) determined by section thickness, potentially missing subcellular structures smaller than ~40 nm such as vesicles or contact sites that may be hidden within section volumes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C12 accurately describe established characteristics and limitations of ATUM-SEM technology, supported by appropriate citations and consistent with the field's understanding. These claims provide necessary background context for the development of ATUM-Tomo. The resolution limitations are quantitatively specified and the hierarchical imaging capability is demonstrated in the experimental results (C20).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "9ca0a568-0d38-4dd5-a35f-a078e8bc9bc9",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Serial-section electron tomography (ET) provides isotropic voxels at full EM resolution by tilting semi-thick sections (200-400 nm) in the electron beam, but requires electron-transparent films that are fragile and make screening large section libraries difficult. Prior to this work, ATUM could not be combined with ET due to incompatible substrate requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C13-C14 accurately describe established ET technology and its limitations, with appropriate citations. These claims correctly identify the technical incompatibility that motivated the development of ATUM-Tomo (C14). The characterization is consistent with standard ET practice and provides clear rationale for the methodological innovation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "4355958a-6694-4fe6-87a4-7b273eab11e0",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BBB barrier function is determined by ultrastructural features including tight junctions, pinocytosis, and vesicular transport within the endothelial layer. ET acquisition used dual-axis tomography with tilt series from -60\u00b0 to +60\u00b0 at 1\u00b0 increments, 4700x magnification, and 2.572 nm pixel size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C68-C69 provide accurate background information about BBB ultrastructure (with citations) and detailed technical parameters for the ET acquisition. These are standard methodological details that are appropriately documented and support reproducibility of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "3ffd1861-7084-463d-839a-b10e64ad4bea",
+      "content_id": "e3063ab7-fe9c-4631-bb6b-00a10ae47a49",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ATUM-Tomo opens up new avenues for multimodal volume EM imaging of diverse biological research areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 is a broad concluding statement about future potential applications. While the successful demonstration of ATUM-Tomo for BBB studies provides proof-of-principle, the claim about opening 'new avenues' for 'diverse biological research areas' is speculative and not directly tested. The method's broader applicability remains to be demonstrated through additional applications beyond the single biological system studied here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "0ac6d538-5856-4102-a4d8-a79a20457ef4",
+      "content_id": "f38c09a9-969a-47db-82a1-f2d7d1799ffa",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed ATUM-Tomo, a hybrid method enabling reversible section attachment to plastic tape via dissolvable coatings (Formvar or permanent marker), allowing sections to be screened by SEM and then detached for TEM tomography. The method was systematically optimized, with permanent marker coating proving superior to Formvar, and was shown to work across multiple resin types with preserved ultrastructure despite some artifacts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm this methodological development. Reviewer 3 states the study 'shows that both formvar and permanent marker coatings are in principle compatible with solvent-based release' and notes 'permanent marker to provide a superior coating.' Reviewer 2 describes it as 'a new, simple, and cost-effective technique' and Reviewer 1 calls it 'an important methodological development.' The systematic investigation of artifacts is praised by Reviewer 3 as reported 'with commendable transparency.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea",
+      "content_id": "f38c09a9-969a-47db-82a1-f2d7d1799ffa",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The manuscript establishes the technical context and limitations of existing methods: ATUM-SEM enables hierarchical imaging but has limited axial resolution (~30-100 nm), while electron tomography provides isotropic resolution but requires fragile electron-transparent films incompatible with large-scale screening.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this technical background without challenge. Reviewer 3 explicitly states the method addresses 'the resolution gap between large-scale scanning electron microscopy (SEM) and transmission electron microscopy (TEM)' and Reviewer 1 notes the method 'expands the level of structural detail accessible to large-volume EM studies.' The characterization of existing limitations is treated as established context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "434659d2-3bcd-442f-a3ba-c21512712b97",
+      "content_id": "f38c09a9-969a-47db-82a1-f2d7d1799ffa",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors applied ATUM-Tomo to investigate BBB damage in traumatic brain injury, using fluorescent and electron-dense nanoparticles to identify microthrombi and leakage sites. The correlative approach revealed cellular composition of microthrombi, nanoparticle localization, endothelial ultrastructure including edema and detachment with intact tight junctions, and demonstrated superior resolution of ET compared to SEM for identifying subcellular features.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers unanimously praise this application as compelling proof-of-principle. Reviewer 3 describes it as 'a technically impressive correlated light and electron microscopy (CLEM) approach' and states 'the presented data convincingly support the claims of the study.' Reviewer 1 notes the method 'provides a compelling proof-of-principle' for 'in-depth interpretation of high-resolution ultrastructural information.' Reviewer 2 emphasizes the demonstration shows the approach 'can bridge several scales from the cellular to the high-resolution subcellular scale.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54",
+      "content_id": "f38c09a9-969a-47db-82a1-f2d7d1799ffa",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The ultrastructural findings at sites of BBB leakage\u2014including intact tight junctions, endothelial edema and detachment, gold particles in vesicles, and loss of glycocalyx\u2014suggest transcellular rather than paracellular transport as the early mechanism of BBB compromise, consistent with previous literature but with superior preservation compared to DAB-based methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these biological interpretations without critique. Reviewer 2 notes the method is 'very helpful in analyses of pathologically altered brains' and that it 'allows to investigate diverse biological questions.' While Reviewer 2 mentions 'a bit of an imbalance between the description of the state-of-the-art methodology and the scientific context' and suggests 'the discussion of the latter could be expanded,' this is a minor suggestion for improvement rather than a challenge to the findings themselves.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "16eaa20c-0561-4408-bf51-064e3c5f5f51",
+      "content_id": "f38c09a9-969a-47db-82a1-f2d7d1799ffa",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The manuscript provides detailed methodological parameters and observations including section numbers, nanoparticle characterization, fluorescence compatibility with glutaraldehyde fixation, plasma treatment requirements, ET acquisition parameters, and empirical observations about section handling and potential complications.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the methodological detail provided. Reviewer 3 explicitly states 'the level of methodological detail provided is sufficient for replication of the ATUM-Tomo technique in other laboratories' and praises that the method is 'widely adoptable by electron microscopy laboratories.' Reviewer 2 notes the paper is 'accompanied by excellent figures, supplementals, and colored 3D-reconstructions that make it easy for the reader to follow the experimental procedure.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7e23883c-6145-42ee-bd0c-57b3c1c7014c",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "c2044ffc-de8a-4881-89de-b61945ecf302",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "3143c0b8-ddc0-4a86-b11c-725d3b9a9f33",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "d9b00059-ff62-4519-a086-329317a8ccd1",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "22a935a6-a5bf-40f5-bd17-cf5fa5a50274",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "9acf139a-0554-4189-be11-62d817a95829",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "eb6f0eb4-a511-4c52-a30e-8849d1644db7",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "087108a9-4168-4d85-8df8-daa8ac492cd1",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "12811713-e226-408b-ae26-d8867574413e",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "bf4ec63e-8010-4cae-bcd5-b5d91c437781",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "2e6e7cef-aa2f-4eea-999a-a412808f7e06",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "e8388a63-f304-4a28-a4c6-a2ab4137e897",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "a5b18c76-66d4-4f44-8798-58db17afdfcf",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "7bc50013-67d9-45ae-b9e9-751e1db9a8d7",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "8047f7d2-a80e-4ecb-9d1d-23294b62244b",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "303149bc-b842-4a47-b8ae-90a8c6f9189d",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "b9f1b6f0-ee28-4f47-8366-290e181d7039",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "b892b6ed-906a-4903-adfc-ab9446053011",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "355f4fe9-3ca0-4c20-927a-b9618269c472",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "41491f01-7ba4-469a-b771-79d52b7fcff8",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "f9afa101-94e6-4bc4-a0d3-d40612989dd6",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "fde46290-c8d3-46b8-8fa7-0d751fbbff1e",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "e03cb122-7f9f-4e25-aec0-f272226c93d7",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "b793cd5e-8f0a-4cd3-a9c2-79e842645c6a",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "02a7b3a7-83c4-4765-be67-f4139aae7c22",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "8ac69121-0415-4a1d-9872-0d243d4fa7fc",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "c38cd2fe-95fe-4b34-bb45-724315619573",
+      "result_id": "06a6be09-d6ed-4455-a148-1e401af7933b"
+    },
+    {
+      "claim_id": "a28830fc-ae7e-460e-8f78-666f40fe9128",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "52ba1fe1-2b24-4eac-ae00-c986961dc955",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "6f8d73b6-5589-4f78-b1d2-d24b15fa25ec",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "b2811898-7878-467d-954f-62fee6509795",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "9e2bcd37-58cf-46f1-a700-cfe729e0221b",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "9f3f8fb8-a449-4313-8791-146a0d7d8cb6",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "805ad5ce-aa3d-4938-ab7e-d5fbdad83a29",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "2804b562-7d31-4745-b2ce-582838967a16",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "0ba7ab55-09b5-41b1-84d0-f4f7f110a91c",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "6477a443-37ca-4b9b-9789-b888c6637bd7",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "d91a9577-0436-4e85-b32d-a694be98bedf",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "88b1c98c-04aa-4124-b09d-4011ed7040e5",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "4cbec0d6-b55e-4303-b0c2-c549fc503de1",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "cfbc7b86-bb18-4027-886b-32eaf7096667",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "f05d4b6c-1f22-409e-935b-4437cf3f26e3",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "7338166d-abdc-4123-8675-1ff1f5d11efb",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "38242dcd-f074-407e-96a2-32d9a248667f",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "75730626-e03b-45fd-bd3d-d472d46ae77b",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "003c47b9-77eb-42d2-b764-9c18db041262",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "68e98ae3-22f0-4232-8358-5336d7c420f5",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "bf4324ca-8270-44ee-909e-32bddb9ab9d4",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "be0e5de7-3458-4729-8c53-b65a99942c50",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "6b4d356f-ba95-431f-9be3-a14da820382d",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "da5f75bd-522e-4faa-b642-69762d54f4e0",
+      "result_id": "44018f97-6b1a-486e-87c8-98a72befc52c"
+    },
+    {
+      "claim_id": "7338166d-abdc-4123-8675-1ff1f5d11efb",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "38242dcd-f074-407e-96a2-32d9a248667f",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "a2f7c1d1-2c21-491e-9f2c-9918eb1fd506",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "8004e3d3-9a9d-462f-a737-a8f3ffbca141",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "4e6616d6-fa12-4af2-ab38-30494ddb5250",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "f674658e-12be-4e23-a5d2-b466c2744aba",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "3ac1691b-56b8-4b56-9770-d98910eb8308",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "8ac04b20-e4aa-49f6-99dd-ebda2e3500b8",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "4591b068-30fa-4f03-a15f-a1ec64af3bd3",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "e0354469-04de-4095-bfa4-9f0872e87566",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "bf4324ca-8270-44ee-909e-32bddb9ab9d4",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "2081d7d5-593f-44c1-a45f-24fb993b2f72",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "c5be4a89-f785-4eeb-b5b3-06469ef110b9",
+      "result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117"
+    },
+    {
+      "claim_id": "d1046e2d-b308-4e58-b993-cd896e00e1c4",
+      "result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474"
+    },
+    {
+      "claim_id": "952dadba-f716-4d49-9028-efed16daaf82",
+      "result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474"
+    },
+    {
+      "claim_id": "ab1c4ef5-72f2-4cc7-af0c-491e85545706",
+      "result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474"
+    },
+    {
+      "claim_id": "f7e98f06-4f08-4f3d-90f4-964269b47e07",
+      "result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474"
+    },
+    {
+      "claim_id": "9fd92022-7312-4ac1-a4c9-394fb1d97264",
+      "result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474"
+    },
+    {
+      "claim_id": "51e50682-316b-4926-abca-14cc1787a0ec",
+      "result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474"
+    },
+    {
+      "claim_id": "7a8a408d-d198-48d5-9a07-fd1c2f79e451",
+      "result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474"
+    },
+    {
+      "claim_id": "de9cf20c-a667-46a5-96ba-25e28a2a270b",
+      "result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474"
+    },
+    {
+      "claim_id": "f0de6872-ff0a-4f44-9154-d536f288d54e",
+      "result_id": "9ca0a568-0d38-4dd5-a35f-a078e8bc9bc9"
+    },
+    {
+      "claim_id": "b18ae43e-fabe-400f-a793-eee44c469a60",
+      "result_id": "9ca0a568-0d38-4dd5-a35f-a078e8bc9bc9"
+    },
+    {
+      "claim_id": "443a598e-b53b-4f3c-8500-92e2c8779109",
+      "result_id": "9ca0a568-0d38-4dd5-a35f-a078e8bc9bc9"
+    },
+    {
+      "claim_id": "db8a30e7-2eaf-4cbe-8599-7482e85ce90e",
+      "result_id": "9ca0a568-0d38-4dd5-a35f-a078e8bc9bc9"
+    },
+    {
+      "claim_id": "098ed012-9f69-4943-9337-34c901146cd0",
+      "result_id": "4355958a-6694-4fe6-87a4-7b273eab11e0"
+    },
+    {
+      "claim_id": "dda43c18-d397-4287-b3fb-5dfbc6ebaa9e",
+      "result_id": "4355958a-6694-4fe6-87a4-7b273eab11e0"
+    },
+    {
+      "claim_id": "21bf1f0f-93d2-4511-a095-f2b38097a457",
+      "result_id": "4355958a-6694-4fe6-87a4-7b273eab11e0"
+    },
+    {
+      "claim_id": "b9baa581-f0ce-46d8-828e-cd681d877d06",
+      "result_id": "3ffd1861-7084-463d-839a-b10e64ad4bea"
+    },
+    {
+      "claim_id": "7e23883c-6145-42ee-bd0c-57b3c1c7014c",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "c2044ffc-de8a-4881-89de-b61945ecf302",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "3143c0b8-ddc0-4a86-b11c-725d3b9a9f33",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "d9b00059-ff62-4519-a086-329317a8ccd1",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "22a935a6-a5bf-40f5-bd17-cf5fa5a50274",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "9acf139a-0554-4189-be11-62d817a95829",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "eb6f0eb4-a511-4c52-a30e-8849d1644db7",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "087108a9-4168-4d85-8df8-daa8ac492cd1",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "12811713-e226-408b-ae26-d8867574413e",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "bf4ec63e-8010-4cae-bcd5-b5d91c437781",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "2e6e7cef-aa2f-4eea-999a-a412808f7e06",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "e8388a63-f304-4a28-a4c6-a2ab4137e897",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "a5b18c76-66d4-4f44-8798-58db17afdfcf",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "7bc50013-67d9-45ae-b9e9-751e1db9a8d7",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "8047f7d2-a80e-4ecb-9d1d-23294b62244b",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "303149bc-b842-4a47-b8ae-90a8c6f9189d",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "b9f1b6f0-ee28-4f47-8366-290e181d7039",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "b892b6ed-906a-4903-adfc-ab9446053011",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "355f4fe9-3ca0-4c20-927a-b9618269c472",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "41491f01-7ba4-469a-b771-79d52b7fcff8",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "f9afa101-94e6-4bc4-a0d3-d40612989dd6",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "fde46290-c8d3-46b8-8fa7-0d751fbbff1e",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "e03cb122-7f9f-4e25-aec0-f272226c93d7",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "b9baa581-f0ce-46d8-828e-cd681d877d06",
+      "result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4"
+    },
+    {
+      "claim_id": "d1046e2d-b308-4e58-b993-cd896e00e1c4",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "952dadba-f716-4d49-9028-efed16daaf82",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "ab1c4ef5-72f2-4cc7-af0c-491e85545706",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "f0de6872-ff0a-4f44-9154-d536f288d54e",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "b18ae43e-fabe-400f-a793-eee44c469a60",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "f7e98f06-4f08-4f3d-90f4-964269b47e07",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "9fd92022-7312-4ac1-a4c9-394fb1d97264",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "51e50682-316b-4926-abca-14cc1787a0ec",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "7a8a408d-d198-48d5-9a07-fd1c2f79e451",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "de9cf20c-a667-46a5-96ba-25e28a2a270b",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "443a598e-b53b-4f3c-8500-92e2c8779109",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "db8a30e7-2eaf-4cbe-8599-7482e85ce90e",
+      "result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea"
+    },
+    {
+      "claim_id": "a28830fc-ae7e-460e-8f78-666f40fe9128",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "52ba1fe1-2b24-4eac-ae00-c986961dc955",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "6f8d73b6-5589-4f78-b1d2-d24b15fa25ec",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "b2811898-7878-467d-954f-62fee6509795",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "9e2bcd37-58cf-46f1-a700-cfe729e0221b",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "9f3f8fb8-a449-4313-8791-146a0d7d8cb6",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "805ad5ce-aa3d-4938-ab7e-d5fbdad83a29",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "2804b562-7d31-4745-b2ce-582838967a16",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "0ba7ab55-09b5-41b1-84d0-f4f7f110a91c",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "6477a443-37ca-4b9b-9789-b888c6637bd7",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "d91a9577-0436-4e85-b32d-a694be98bedf",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "88b1c98c-04aa-4124-b09d-4011ed7040e5",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "4cbec0d6-b55e-4303-b0c2-c549fc503de1",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "f05d4b6c-1f22-409e-935b-4437cf3f26e3",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "7338166d-abdc-4123-8675-1ff1f5d11efb",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "38242dcd-f074-407e-96a2-32d9a248667f",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "75730626-e03b-45fd-bd3d-d472d46ae77b",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "bf4324ca-8270-44ee-909e-32bddb9ab9d4",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "be0e5de7-3458-4729-8c53-b65a99942c50",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "6b4d356f-ba95-431f-9be3-a14da820382d",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "da5f75bd-522e-4faa-b642-69762d54f4e0",
+      "result_id": "434659d2-3bcd-442f-a3ba-c21512712b97"
+    },
+    {
+      "claim_id": "098ed012-9f69-4943-9337-34c901146cd0",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "a2f7c1d1-2c21-491e-9f2c-9918eb1fd506",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "8004e3d3-9a9d-462f-a737-a8f3ffbca141",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "4e6616d6-fa12-4af2-ab38-30494ddb5250",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "f674658e-12be-4e23-a5d2-b466c2744aba",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "3ac1691b-56b8-4b56-9770-d98910eb8308",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "8ac04b20-e4aa-49f6-99dd-ebda2e3500b8",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "4591b068-30fa-4f03-a15f-a1ec64af3bd3",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "e0354469-04de-4095-bfa4-9f0872e87566",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "c5be4a89-f785-4eeb-b5b3-06469ef110b9",
+      "result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54"
+    },
+    {
+      "claim_id": "cfbc7b86-bb18-4027-886b-32eaf7096667",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "003c47b9-77eb-42d2-b764-9c18db041262",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "68e98ae3-22f0-4232-8358-5336d7c420f5",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "b793cd5e-8f0a-4cd3-a9c2-79e842645c6a",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "02a7b3a7-83c4-4765-be67-f4139aae7c22",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "dda43c18-d397-4287-b3fb-5dfbc6ebaa9e",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "21bf1f0f-93d2-4511-a095-f2b38097a457",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "2081d7d5-593f-44c1-a45f-24fb993b2f72",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "8ac69121-0415-4a1d-9872-0d243d4fa7fc",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    },
+    {
+      "claim_id": "c38cd2fe-95fe-4b34-bb45-724315619573",
+      "result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c5fba8b7-a08a-4bf2-871f-f5bf410e46ef",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "06a6be09-d6ed-4455-a148-1e401af7933b",
+      "peer_result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on ATUM-Tomo methodological development (C6, C28-C46, C59-C62). Both evaluations find the method well-supported with detailed characterization. OpenEval emphasizes technical parameters and artifact documentation (C66-C67, C73-C74), while peer review highlights transparency and compatibility findings. Peer review includes C63 (future applications) which OpenEval evaluates separately as uncertain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "b4ba7934-0b5d-4d85-b453-a3636675957e",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "44018f97-6b1a-486e-87c8-98a72befc52c",
+      "peer_result_id": "434659d2-3bcd-442f-a3ba-c21512712b97",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on BBB leakage cellular and ultrastructural findings (C7, C16-C27, C47-C50, C70, C72, C76-C77). Both evaluations find converging evidence from multiple imaging modalities compelling. OpenEval emphasizes multi-modal validation and resolution advantages, while peer review praises the CLEM approach and proof-of-principle demonstration. OpenEval includes additional tracer characterization claims (C64-C65) and methodological details (C39) not grouped in peer review R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "e81c5e18-8cf2-4d8f-ae53-55c5b5ba72de",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "8733bd19-3f66-4f72-879e-d31b2ffa3474",
+      "peer_result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on ATUM-SEM and ET background/limitations (C1-C3, C8-C14). Both evaluations accept these as established technical context. OpenEval focuses on C1-C3, C8-C12 for ATUM-SEM, while peer review groups all background claims together (C1-C14 including ET limitations C4-C5, C13-C14). Both note these provide rationale for ATUM-Tomo development.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "01e7ba35-e7b7-4718-946e-c7b60693d01a",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117",
+      "peer_result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on BBB biological interpretations and transcytosis mechanism (C51-C58, C75). Both evaluations support the vesicular transport interpretation. OpenEval includes direct observational evidence (C48-C49, C70) and notes mechanism remains somewhat inferential, while peer review accepts biological interpretations without critique and suggests expanding scientific context discussion. OpenEval emphasizes glycocalyx correlation (C55, C70).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "9b99f1ff-7fe1-4655-acb9-9d1681cf6874",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9ca0a568-0d38-4dd5-a35f-a078e8bc9bc9",
+      "peer_result_id": "bcc9b84b-6259-484f-9e3a-0ce3890574ea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ET technology background (C4-C5, C13-C14). OpenEval evaluates these as supported established ET limitations with appropriate citations, providing rationale for ATUM-Tomo. Peer review groups these with broader technical background (C1-C14) and accepts without challenge as established context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "4d3526c2-0cdc-4492-95e1-0b885bbc889e",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4355958a-6694-4fe6-87a4-7b273eab11e0",
+      "peer_result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on technical parameters. OpenEval evaluates BBB ultrastructure background (C15) and ET acquisition parameters (C68-C69) as supporting reproducibility. Peer review R5 includes these claims (C68-C69, C15 via C71 context) within broader affirmation of methodological detail sufficiency for replication, also covering additional claims (C39, C64-C67, C71, C73-C74).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "0aa12a43-d4c3-425e-96b6-5600c874c28a",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "4355958a-6694-4fe6-87a4-7b273eab11e0",
+      "peer_result_id": "f3ad0eca-0fde-4374-b9c2-4be8f648fb54",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C15 (BBB ultrastructure background). OpenEval groups C15 with technical ET parameters as standard documentation. Peer review R4 includes C15 with biological interpretations and BBB context, accepting without critique but suggesting expanded discussion of scientific context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "3afba712-77e7-4c19-983c-697b6f4f5656",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "3ffd1861-7084-463d-839a-b10e64ad4bea",
+      "peer_result_id": "0ac6d538-5856-4102-a4d8-a79a20457ef4",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on future applications claim (C63). OpenEval evaluates this as UNCERTAIN, noting the claim about 'diverse biological research areas' is speculative and not directly tested beyond the single biological system. Peer review R1 includes C63 with supported methodological development claims, implicitly accepting the broader applicability statement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "bf29e9eb-3e7d-49ab-9443-6a0a61d1c1c1",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "06a6be09-d6ed-4455-a148-1e401af7933b",
+      "peer_result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on methodological detail claims (C66-C67, C73-C74). OpenEval includes these with core ATUM-Tomo development as documenting limitations and artifacts. Peer review R5 groups these with broader methodological detail affirmation (C39, C64-C69, C71, C73-C74), praising sufficiency for replication and adoptability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "792c2f5c-c99d-4bd2-9d12-9637d0df335d",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "44018f97-6b1a-486e-87c8-98a72befc52c",
+      "peer_result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on experimental workflow and tracer details (C39, C64-C65). OpenEval includes these with BBB ultrastructural evidence as supporting multi-modal validation. Peer review R5 groups these with broader methodological detail documentation, affirming sufficiency for replication.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "0d146797-1560-4044-b069-a4a87296edb0",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117",
+      "peer_result_id": "434659d2-3bcd-442f-a3ba-c21512712b97",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on observational evidence (C48-C49, C70). OpenEval groups these with transcytosis mechanism interpretation (C51-C58, C75), noting direct evidence of intact tight junctions with intracellular nanoparticles. Peer review R3 includes these claims within broader proof-of-principle CLEM demonstration (C7, C16-C27, C47-C50, C70, C72, C76-C77).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    },
+    {
+      "id": "4482e880-fdcd-4937-9fdf-9844e343c17a",
+      "submission_id": "c92b20df-5487-4231-8586-7acf5e7bd2ce",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "c8e4eae7-911f-488f-a7f9-2e8f6985e117",
+      "peer_result_id": "16eaa20c-0561-4408-bf51-064e3c5f5f51",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C71 only. OpenEval does not explicitly evaluate C71 in isolation but includes it contextually with transcytosis mechanism. Peer review R5 includes C71 with broader methodological detail affirmation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T00:09:51.402723Z"
+    }
+  ]
+}

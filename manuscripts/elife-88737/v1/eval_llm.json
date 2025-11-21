@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study analyzed a complete combinatorial library of 160,000 protein variants at four sites in the recognition helix using a FACS-based Sort-seq assay in yeast. Categorization of variants into activation classes substantially reduced technical noise, achieving >97% concordance between replicates, and identified 1342 strong and 3166 weak activators across both response elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe the experimental design and data quality. The library design (C26), experimental methodology (C27), and data quality metrics (C28-C30) are clearly documented with quantitative measures. The high concordance between replicates (>97%) and the number of variants in each class provide strong evidence for the reliability of the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "An ordinal logistic regression model was developed to dissect genetic architecture, incorporating main effects and epistatic effects up to third order. The model achieved excellent fit to experimental data (99.5% correct classification, deviance 0.86) and genetic scores correlated well with independently measured binding energies (R\u00b2=0.75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 describe the model structure and validation. The model's predictive accuracy (C33), goodness-of-fit (C34), and correlation with independent measurements (C35) provide strong evidence that the model captures the genetic architecture effectively. The validation against independent binding measurements is particularly important for establishing model validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The genetic architecture of DNA recognition is dominated by main effects and pairwise epistasis, with higher-order epistasis playing only a minor role. Main effects account for more than half of genetic variance and primarily determine nonspecific binding, while pairwise interactions explain the majority of RE-specificity. Third-order epistasis accounts for only 2% of total variance. The architecture is dense at low orders, with the 99% variance set including all main effects and >80% of pairwise terms but only 5% of third-order terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C36-C43 present the core findings on genetic architecture. The variance decomposition analysis provides quantitative support for the dominance of low-order effects. The density of the architecture at first and second orders (C41-C43) is well-documented. However, the claim that higher-order epistasis is unimportant should be interpreted cautiously, as the study only examined up to third-order effects and used an ordinal model that may have reduced precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Structural rationalization of sequence-function relationships shows that small-volume amino acids at site 2 combined with basic residues at site 3 favor nonspecific binding, while small hydrophobic residues at site 4 favor SRE binding by packing against SRE-specific methyl groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide structural interpretation of the genetic architecture. These interpretations are consistent with known protein-DNA interaction principles and the structural data referenced (Figure 2J). However, these are post-hoc rationalizations rather than predictions, and alternative structural explanations may exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Epistatic interactions overwhelmingly enhance rather than impair protein function, contrary to the 'diminishing returns' expectation. Epistatic terms make net positive contributions to 100% of strong activators and 98% of weak activators, contributing an average of 64% of the score needed for strong activation. Removing epistasis reduces the number of strong activators by ~25% and changes which sequences are functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 demonstrate that epistasis enhances function. The quantitative data (C47-C51) strongly support this conclusion. The comparison between models with and without epistasis (C50-C51) provides direct evidence for epistasis's functional importance. The finding that states with positive main effects have positive epistatic interactions (C52) provides mechanistic insight. This is a major finding that challenges prevailing views about epistasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "There are >200,000 context-specific mutations that can transform null proteins into functional activators, involving 1160 different mutation types. In 99% of cases, epistatic effects are positive, in 94% epistasis is necessary for functional transitions, and in almost half it is sufficient. Sign epistasis is pervasive, with every mutation type showing positive effects in some backgrounds and negative effects in others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 characterize the mutational landscape. The large number of functional transitions (C53-C54) and the quantitative analysis of epistatic contributions (C55-C57) are well-supported by the model. The finding of universal sign epistasis (C58-C59) is particularly striking. These results depend on the model's accuracy, which has been validated, but the biological significance of mutations with small effects should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Hundreds of single-residue mutations can switch specificity from ERE to SRE, and epistasis is critical for these transitions. In every case, epistatic effects are necessary for specificity switching, and in almost half they are sufficient. Without epistasis, the number of specificity-switching mutations is reduced by >80%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 demonstrate epistasis's role in functional evolution. The quantitative data on specificity-switching mutations (C60, C63) and the necessity/sufficiency analysis (C61-C62) provide strong evidence. The comparison to the no-epistasis model (C63) directly demonstrates epistasis's importance. This is a key finding for understanding how new functions evolve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Despite pervasive sign epistasis, 99.8% of functional sequences are connected in a single mutually accessible network. Epistasis enlarges the network (1603 vs 1080 functional nodes), shortens evolutionary paths to new functions (average 25% reduction in path length, 10% shorter minimum distance), increases the number of single-step transitions between functions (2.5-fold more SRE-specific neighbors per ERE-specific node), and increases the number and diversity of evolutionary paths (average 65 paths per node, 20% more than without epistasis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 demonstrate that epistasis facilitates rather than constrains evolution. The network analysis provides multiple quantitative measures showing epistasis's facilitating effects. The evolutionary simulations (C66) and network metrics (C67-C70) converge on the same conclusion. However, these analyses assume that all functional variants are equally accessible evolutionarily, which may not reflect biological reality where fitness differences matter.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The historical ancestral sequences (egKa and GSKV) are only functional because of pairwise epistasis; they would be non-functional under a main-effects-only model. The evolutionary transition from ERE- to SRE-specificity altered the genetic architecture itself, changing which sites and pairs determine function. The final substitution replaced the initial determinants of SRE specificity with a different set of interactions, resulting in a final sequence with entirely different functional determinants than the ancestral sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 apply the model to historical evolution. The finding that ancestral sequences require epistasis for function (C71-C73) is well-supported by the model. The observation that genetic architecture changed during evolution (C74-C76) is a novel insight. However, these conclusions depend on the accuracy of ancestral sequence reconstruction and the assumption that the model accurately captures historical genetic architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study's findings differ from prior work because it takes a global rather than local view of epistasis and analyzes all 20 amino acid states. Unlike most previous studies, this work found only a small role for higher-order epistasis and a dense rather than sparse genetic architecture. These differences likely arise because prior work used reference-based methods and/or did not adequately account for global nonlinearities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 explain differences from prior work. The methodological differences (C77, C80) are clearly documented. The comparison to prior findings (C79, C81) is supported by citations. The proposed explanations for differences (C80, C82) are plausible but somewhat speculative. The authors appropriately acknowledge that analyzing all 20 states rather than just two may contribute to the observed density.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior work viewed epistasis as an evolutionary constraint by focusing on direct paths between designated sequences in binary sequence space. This study shows that epistasis primarily facilitates functional evolution by expanding the network of functional sequences and bringing variants with different functions closer together in sequence space, making the topography idiosyncratic enough for new functions to be accessible but not so idiosyncratic that functional nodes become isolated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 present the study's main conceptual contribution. The characterization of prior work (C84-C85) is accurate and well-cited. The facilitating role of epistasis (C83, C86) is supported by the network and evolutionary simulation results. However, the conclusion that epistasis facilitates evolution depends on the specific evolutionary scenarios modeled and may not generalize to all contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study has several limitations: the ordinal model may reduce precision compared to continuous data analysis, though it reduces noise impact; only four sites in one protein were studied, limiting generalizability; and results may not extrapolate to complex organismal phenotypes. However, the finding that higher-order epistasis is relatively unimportant suggests that modeling first- and second-order terms may be sufficient for most genetic variation in protein functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 acknowledge limitations and implications. The authors appropriately recognize methodological limitations (C87-C88) and scope limitations (C89, C92-C93). The suggestion that prior work on other proteins supports dense architecture (C90) is well-cited. The implication for future work (C91) is reasonable but should be tested empirically. The acknowledgment that results may not generalize to complex phenotypes (C92-C93) is important and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior research has proposed that protein genetic architecture is complex with pervasive epistatic interactions that constrain evolution. However, most prior work analyzed only direct paths between two proteins, assessed just two states per site, used reference-based methods that yield globally inaccurate estimates, and focused on single functions rather than functional specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C10-C17 characterize prior work and its limitations. These characterizations are well-supported by extensive citations. The authors accurately identify key limitations in prior approaches: focus on direct paths (C3, C14-C15), binary state analysis (C15-C16), and reference-based methods (C17). This provides important context for understanding why the current study's findings differ from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Steroid hormone receptors are ligand-activated transcription factors with two major subfamilies recognizing distinct DNA response elements: estrogen receptors bind ERE (AGGTCA) and ketosteroid receptors prefer SRE (AGAACA). The reconstructed ancestral proteins AncSR1 and AncSR2 were ERE-specific and SRE-specific, respectively, and three substitutions in the recognition helix during the interval between them caused the evolutionary change in specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 provide biological background and establish the evolutionary context. The characterization of steroid hormone receptors (C18-C21) represents established knowledge supported by citations. The ancestral reconstruction results (C22-C25) are from prior published work and provide the foundation for the current study. This background is well-established and appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A zebrafish glioblastoma model (p53EPS) was established by expressing EGFRvIII and PI3KCAH1047R under the her4.1 promoter in tp53-/- zebrafish, resulting in 15-20% tumor incidence by 45 dpf with glial identity confirmed by gfap:EGFP expression and transplantability demonstrating oncogenic transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C23 provide converging evidence for successful model generation including tumor formation kinetics (C2, C18, C19), anatomical distribution (C20, C21), glial identity (C22), and functional validation through transplantation (C23). The data includes quantitative incidence rates, imaging evidence, and transplantation success rates with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "p53EPS tumors display aggressive histological features including heterogeneous cell populations with high proliferation, elevated p-ERK and p-AKT signaling, and embryonal characteristics including rosette structures, though lacking typical glioblastoma features like necrosis and microvascular proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C30 are supported by detailed histological characterization with H&E staining, immunohistochemistry for proliferation markers (PCNA) and pathway activation (p-ERK, p-AKT), showing quantitative increases in signaling pathway activity. The observations are internally consistent and supported by imaging data in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "KRASG12D can substitute for EGFRvIII when combined with PI3KCAH1047R and tp53 loss to generate tumors with comparable onset and penetrance, suggesting MAPK/AKT pathway activation plays a dominant role downstream of RTK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by experimental data showing comparable tumor formation with KRASG12D substitution (Figure 1\u2014figure supplement 3). The inference about MAPK/AKT dominance (C32) is reasonable given the functional equivalence of two different upstream drivers, though additional mechanistic validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "p53EPS tumors exhibit a gene expression signature significantly enriched for human mesenchymal glioblastoma subtype with 236 upregulated and 28 downregulated genes, while showing no significant enrichment for other glioblastoma or medulloblastoma subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C38 are supported by bulk RNA-seq analysis with appropriate statistical thresholds (log2FC>2, padj<0.05) and GSEA showing significant enrichment for mesenchymal signatures from two independent human datasets (McLendon and Wang). PCA analysis (C33-C34) and lack of enrichment for other subtypes (C38) strengthen the specificity of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "p53EPS tumors display a strong inflammatory component with enrichment for interferon response, TNFA signaling, and inflammatory pathways, with increased immune and inflammatory gene expression in both tumor cells and stromal compartments including co-expression of immune markers rag2 and mpeg1.1 in tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C43 are supported by GSEA showing 7 of top 13 enriched Hallmark gene sets relate to inflammation (C39), FACS-sorted cell analysis showing inflammatory gene expression in both compartments (C41), and imaging evidence of immune marker co-expression (C42-C43). The convergence of transcriptional and imaging data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Phagocytic cells infiltrate early-stage p53EPS lesions starting at 7 dpf, with enrichment of activated tnfa:EGFP+ cells and mpeg1.1:EGFP+ microglia/macrophages displaying predominantly pro-inflammatory M1-like rather than M2-like gene expression signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C44-C49 are supported by temporal live imaging studies showing progressive infiltration from 5-9 dpf with quantification (C49: n=8/8 tumor-positive fish), neutral red staining (C44), transgenic reporter analysis (C45), and GSEA for macrophage polarization signatures (C46). The time-course provides strong evidence for early immune infiltration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C7"
+    ],
+    "result": "mpeg1.1:EGFP+ microglia/macrophages internalize tumor cells in early lesions, displaying activated morphology within tumors and ramified surveillance morphology outside tumors, suggesting negative regulatory pressure by pro-inflammatory cells on tumor growth at early stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50-C52, C7 are supported by live confocal imaging showing internalized mScarlet+ punctae within mpeg1.1:EGFP+ cells with quantification (Figure 3M), morphological characterization consistent with activation states, and video microscopy. The inference of negative regulatory pressure (C7) is supported by subsequent functional experiments (C8-C10) showing increased tumor formation when inflammatory pathways are disrupted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "CRISPR/Cas9-mediated knockdown of inflammatory transcription factors irf7 or irf8 significantly increases p53EPS tumor formation (65% for irf7, 42% for irf8 vs 20% control) with >90% and >65% targeting efficiency respectively, and reduces inflammatory gene expression in tumor-burdened brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C53-C59 are supported by quantitative tumor incidence data with statistical analysis (Fisher's exact test, p<0.0001 for irf7, p=0.0155 for irf8), ICE analysis confirming targeting efficiency, validation of irf8 knockdown by neutral red staining (C56), and RT-qPCR showing reduced inflammatory gene expression (C59). The convergence of genetic, phenotypic, and molecular data strongly supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "irf7 is expressed within early-stage p53EPS lesions and surrounding TME, and tumor cell-specific knockdown of irf7 or irf8 using Tg(her4.1:Cas9-2A-EGFP) does not significantly change tumor formation, suggesting the increased tumor initiation following Irf gene knockdown is a consequence of loss-of-function in the TME rather than tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by FISH showing irf7 expression in lesions and TME (C60-C61), and tumor cell-specific knockdown experiments showing no significant effect on tumor formation despite ~28% targeting efficiency (C62-C63). This cell-type-specific analysis provides strong evidence that the anti-tumor effects of Irf genes operate through the TME rather than tumor-intrinsic mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Suppression of phagocyte activity through Clodronate liposomes or irf8 knockdown in host animals significantly enhances p53EPS tumor cell engraftment (50% vs 23% with Clodronate, 46% vs 19% with irf8 knockdown), with Clodronate treatment inhibiting inflammatory gene expression in bulk tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C64-C68 are supported by transplantation experiments with quantitative engraftment data and statistical analysis (Fisher's exact test, p=0.0048 for Clodronate, p=0.0002 for irf8 knockdown). RT-qPCR data (C66) showing reduced inflammatory gene expression with Clodronate treatment provides mechanistic support. These functional experiments validate the anti-tumor role of phagocytes in an independent experimental context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The innate immune system plays important tumor-suppressive roles during glioblastoma initiation, as demonstrated through live imaging, genetic manipulation, and transplantation experiments in the zebrafish model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is a summary conclusion supported by the convergence of multiple experimental approaches: live imaging showing phagocyte infiltration and tumor cell engulfment (C5-C6, C44-C52), genetic knockdown experiments showing increased tumor formation with irf7/irf8 loss (C8-C9, C57-C58), cell-type-specific experiments localizing effects to TME (C62-C63), and transplantation experiments showing enhanced engraftment with phagocyte suppression (C64-C68). The multiple independent lines of evidence strongly support this overarching conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C70",
+      "C82"
+    ],
+    "result": "High-throughput vertebrate animal model systems for studying tumor development in an intact endogenous tumor microenvironment are currently lacking, with limitations in live visualization in non-transparent rodent models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C70, C82 represent statements about the current state of the field and limitations of existing models. These are supported by general knowledge and provide context/motivation for the study. While not directly tested experimentally in this manuscript, they represent accurate assessments of the field that justify the development of the zebrafish model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background claims about glioblastoma epidemiology, molecular characteristics, immune microenvironment, and existing model systems are presented based on published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17, C71-C97 are background/context claims supported by appropriate citations to published literature. These provide the scientific foundation and rationale for the study but are not novel findings from this work. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

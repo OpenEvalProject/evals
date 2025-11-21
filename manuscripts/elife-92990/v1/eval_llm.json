@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "MIPS2673 is a selective inhibitor of Plasmodium M1 aminopeptidases with improved physicochemical properties. The compound shows nanomolar potency against PfA-M1 (Ki = 211 \u00b1 11 nM) and PvA-M1 (Ki = 6.4 \u00b1 0.5 nM) with >4-fold and >155-fold selectivity over the respective M17 enzymes. MIPS2673 demonstrates minimal inhibition of human M1 homologues and low cytotoxicity to mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C44 provide comprehensive biochemical characterization of MIPS2673 through enzyme inhibition assays (C34-C42), physicochemical measurements (C32-C33), and cytotoxicity testing (C43-C44). The data demonstrate selectivity for M1 over M17 aminopeptidases and human homologues, with appropriate controls and replicates. The structural basis for binding is confirmed by X-ray crystallography.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MIPS2673 exhibits potent antimalarial activity against P. falciparum with an EC50 of 324 nM against the 3D7 strain, shows no cross-resistance with existing antimalarials, and demonstrates stage-specific activity against trophozoites. The compound also has transmission-blocking activity against early-stage gametocytes and causes parasite growth arrest at the ring-to-trophozoite transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 present consistent antiparasitic activity data from multiple assays including dose-response curves (C45), drug resistance panels (C46), stage-specificity assays (C47), microscopy (C49), and gametocyte assays (C50). The trophozoite-stage activity (C47) correlates with peak PfA-M1 expression (C48), providing mechanistic consistency. Data include appropriate replicates and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C91",
+      "C92"
+    ],
+    "result": "Thermal stability proteomics identified PfA-M1 as the primary target of MIPS2673 in parasite lysates. Among 1632 proteins detected, PfA-M1 showed concentration-dependent stabilization (1.8-fold at 1 \u00b5M and 2.8-fold at 4 \u00b5M) and was the only protein reproducibly identified across both thermal stability and limited proteolysis experiments. PfA-M17 was not stabilized by MIPS2673.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C91-C92 present unbiased chemoproteomics data from thermal stability experiments with appropriate statistical analysis (p<0.01), multiple concentrations, and biological replicates. The selective stabilization of PfA-M1 over PfA-M17 (C54) is consistent with the biochemical selectivity data. The convergence of two independent methods (thermal stability and LiP-MS) strengthens the conclusion that PfA-M1 is the primary target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Limited proteolysis-mass spectrometry (LiP-MS) confirmed PfA-M1 as the MIPS2673 target and mapped the binding site with peptide-level resolution. Nine structurally significant peptides were identified, with a median distance of 6.5 \u00c5 from bound MIPS2673, and the center of mass of these peptides was 5.2 \u00c5 from the drug. X-ray crystallography confirmed that MIPS2673 chelates the catalytic zinc ion, consistent with the LiP-MS data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 and C69-C73 demonstrate convergence between LiP-MS peptide mapping and X-ray crystallography. The statistical significance of peptide proximity to the binding site (p=0.025, C56) and identification of functionally important peptides (C71-C73) provide strong evidence for on-target binding. The structural data (C69) validates the LiP-MS predictions, demonstrating the utility of this approach for binding site mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Metabolomics analysis revealed that MIPS2673 treatment causes accumulation of short peptides, predominantly derived from hemoglobin. Of 97 significantly dysregulated peptides, ~80% mapped to hemoglobin \u03b1 and \u03b2 chains. The peptide profile induced by MIPS2673 was distinct from that of a PfA-M17 inhibitor, with specific accumulation of basic peptides containing Lys or Arg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 present comprehensive metabolomics data with appropriate statistical analysis (p<0.05, fold-change >1.5) and multiple biological replicates (4-9). The predominant accumulation of hemoglobin-derived peptides (C61-C63) is consistent with PfA-M1's known role in hemoglobin digestion. The distinct profile compared to PfA-M17 inhibition (C64-C65) supports target selectivity and is consistent with the different substrate specificities of the two enzymes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C67",
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The DIA-based thermal stability proteomics workflow achieved ~47% coverage of the detectable P. falciparum blood-stage proteome with high reproducibility. The method demonstrated selectivity, as proteins with metal ion binding GO terms were not significantly enriched (p=0.985), confirming that MIPS2673 does not interact indiscriminately with metalloproteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C89-C90 validate the technical performance of the proteomics approach with appropriate depth of coverage and specificity. The GO term analysis (C89-C90) provides important negative control data demonstrating that the method does not produce false positives from non-specific metalloprotein binding. Claims C93-C95 appropriately acknowledge methodological limitations and the value of complementary approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "MIPS2673 demonstrates excellent selectivity over human M1 homologues and causes a distinct phenotype compared to previous PfA-M1 inhibitors. Unlike bestatin-based probes that cause digestive vacuole swelling, MIPS2673 does not induce this phenotype, consistent with PfA-M1's cytoplasmic localization and specific inhibition of this enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C74-C79 integrate selectivity data, known biology of PfA-M1, and phenotypic observations to support on-target activity. The absence of digestive vacuole swelling (C77) is logically explained by PfA-M1's cytoplasmic localization (C78-C79). However, C80 is speculative about off-target effects of the bestatin probe without direct evidence, though this speculation is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Multiple lines of evidence argue against significant off-target effects of MIPS2673 on other Plasmodium aminopeptidases. MIPS2673 does not inhibit recombinant PfA-M18 or PfAPP at concentrations >120-fold above the EC50. While LiP-MS detected structural changes in PfA-M17, this enzyme was not thermally stabilized, and the distinct phenotypes and metabolic profiles suggest these changes result from substrate accumulation rather than direct inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 systematically address potential off-target effects through multiple orthogonal approaches (enzyme assays, thermal stability, phenotypic analysis, metabolomics). The convergence of negative evidence from these methods strengthens the conclusion of selectivity. C85 and C88 are appropriately labeled as speculation but are reasonable interpretations of the data. The lack of purine/polyamine pathway perturbations (C86-C87) within 1 hr provides additional evidence against PfADA as a functionally relevant target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Malaria remains a major global health burden with 247 million cases and 619,000 deaths in 2021, primarily caused by P. falciparum. Drug resistance has emerged to all antimalarial classes including artemisinins, with treatment failures reaching 50% in some Asian regions and artemisinin resistance now detected in Africa where most deaths occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 establish the public health context and rationale for antimalarial drug development. All claims are supported by appropriate citations to WHO reports and peer-reviewed literature. These background claims provide essential justification for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PfA-M1 and PfA-M17 are zinc-dependent metalloaminopeptidases involved in terminal hemoglobin digestion and are considered essential for parasite survival. PfA-M1 is a monomeric, cytosolic enzyme with broad substrate specificity that preferentially cleaves leucine and methionine. Achieving selectivity between PfA-M1 and PfA-M17 is challenging due to similar active site architecture, and few selective PfA-M1 inhibitors have been reported. Genetic manipulation of PfA-M1 has been unsuccessful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C28 provide comprehensive background on PfA-M1 and PfA-M17 biology, all supported by appropriate citations to prior literature. These claims establish the scientific rationale for targeting PfA-M1 and the challenges in achieving selectivity. The inability to genetically manipulate PfA-M1 (C16) justifies the need for chemical validation approaches used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C96",
+      "C97"
+    ],
+    "result": "Current approaches to antimalarial target identification have limitations. IVIEWGA can identify resistance mechanisms rather than direct targets, and most phenotypic screening hits act by unknown mechanisms. Thermal proteome profiling has been successfully applied in P. falciparum, but limited proteolysis proteomics has not previously been reported for drug target identification in this organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C96-C97 establish the methodological context and gaps that this study addresses. All claims are supported by appropriate citations. These background claims justify the development and application of the chemoproteomics approaches used in this study but do not represent findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The gene encoding PfA-M1 was previously shown to be refractory to knockout and is predicted to be essential for blood-stage growth, making it an attractive antimalarial drug target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 reiterates the genetic validation status of PfA-M1 with appropriate citations. This provides important context for why chemical validation approaches are necessary, but represents prior knowledge rather than a novel finding from this study.",
+    "result_type": "MINOR"
+  }
+]

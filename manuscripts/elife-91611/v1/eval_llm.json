@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "A genome-wide CRISPR screen identified SOD1 as the top synthetic-lethal dependency of PPM1D-mutant leukemia cells. This was validated through competitive proliferation assays showing significant growth reduction in PPM1D-mutant cells with SOD1 deletion in vitro, and through in vivo transplantation experiments demonstrating extended survival in mice receiving PPM1D-mutant cells with SOD1 deletion (median survival 55 days) compared to controls (32 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR screen methodology is sound with appropriate controls (C22-C23), and SOD1 emerged as the top hit by fitness score (C26). The synthetic-lethal relationship is convincingly demonstrated through multiple orthogonal approaches: genetic deletion in two different AML cell lines (C27-C28), and in vivo validation showing differential survival effects (C29-C31). The use of isogenic cell lines and multiple biological replicates strengthens the conclusions. Statistical significance is reported throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PPM1D-mutant cells demonstrate increased sensitivity to pharmacological SOD1 inhibition with two distinct inhibitors (LCS-1 and ATN-224) across three AML cell lines. This sensitivity is ROS-dependent, as NAC supplementation completely rescued the cytotoxic effects. PPM1D-mutant cells also showed increased baseline SOD activity and greater apoptosis upon SOD1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the dose-response data (C36) and NAC rescue experiments (C37) are compelling, the authors acknowledge significant concerns about inhibitor specificity. LCS-1 has known off-target effects, and ATN-224 is a copper chelator that may affect multiple copper-dependent enzymes beyond SOD1. The complete rescue by NAC (C37) supports an ROS-mediated mechanism but does not definitively prove SOD1 specificity. Additional experiments with SOD mimetics (TEMPOL, MnTBAP) would strengthen the conclusion that effects are specifically due to SOD1 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PPM1D-mutant cells exhibit elevated levels of reactive oxygen species including superoxide radicals, lipid peroxidation, and total ROS. This phenotype is observed not only in cancer cell lines but also in non-transformed germline PPM1D-mutant models (MEFs and LCLs), indicating that PPM1D mutations fundamentally alter redox homeostasis independent of cancer-associated metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ROS phenotype is comprehensively characterized using multiple complementary assays (dihydroethidium for superoxide C39, BODIPY for lipid peroxidation C41, DCFDA for total ROS C42). Critically, the demonstration of elevated ROS in germline models (C43-C44) provides strong evidence that this is a direct consequence of PPM1D mutation rather than a secondary effect of transformation. The use of multiple independent cell systems (three AML lines, MEFs, LCLs) strengthens the generalizability. Statistical significance is consistently reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PPM1D-mutant cells display mitochondrial dysfunction characterized by decreased mitochondrial respiration (basal, maximal, and ATP-linked) and reduced mitochondrial membrane potential, without changes in mitochondrial mass. This suggests functional impairment rather than quantitative changes in mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial phenotype is well-characterized using orthogonal methods: MitoTracker Green and western blot for mass (C49), seahorse assays for respiration (C51-C52), and MitoTracker CMXRos for membrane potential (C53). The finding that mitochondrial mass is unchanged (C49) while function is impaired is important for mechanistic interpretation. However, there is some variability across cell lines in maximal and ATP-linked respiration (C52), suggesting cell line-specific effects that warrant further investigation. Growth rate controls (C54) appropriately rule out confounding effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Multi-omic profiling (RNA-seq and RPPA) reveals that PPM1D-mutant cells have an inherently impaired oxidative stress response at baseline, with downregulation of pathways related to oxidative stress response, ROS metabolism, and oxidation-reduction. This is accompanied by reduced antioxidant capacity, decreased glutathione levels, and lower expression of key antioxidant enzymes (thioredoxin and catalase). Upon SOD1 deletion, mutant cells show transcriptional upregulation of oxidative stress response genes but continued protein-level suppression, suggesting a disconnect between transcription and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq analysis is appropriately powered with clear statistical thresholds (FDR <0.05, fold change >1.5) and identifies 2239 differentially expressed genes (C56). GSEA demonstrates consistent downregulation of oxidative stress pathways (C58, C64). The RPPA analysis of 264 proteins provides orthogonal validation at the protein level (C63-C64). The biochemical measurements of antioxidant capacity (C67), GSH levels (C68), and enzyme expression (C69-C70) provide functional validation. The discordance between RNA and protein responses after SOD1 deletion (C61-C62, C65) is intriguing and suggests post-transcriptional regulation, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "PPM1D-mutant cells exhibit increased genomic instability at baseline, characterized by elevated single- and double-stranded DNA breaks, increased oxidative DNA damage (8-oxo-dG), and approximately twofold more chromosomal aberrations per metaphase after cisplatin exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genomic instability phenotype is demonstrated through multiple complementary assays: alkaline comet assays for DNA breaks (C72), 8-oxo-dG staining for oxidative damage (C73), and metaphase spread analysis for chromosomal aberrations (C74-C75). The use of different model systems (MEFs for comet assays, mouse primary B-cells for metaphase spreads) strengthens generalizability. Sample sizes are adequate (\u2265150 comets, \u226550 metaphases). The twofold increase in chromosomal breaks (C74) is substantial and statistically significant. This result logically connects the oxidative stress phenotype to DNA damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C94"
+    ],
+    "result": "PPM1D-mutant cells show impaired non-homologous end-joining (NHEJ) DNA repair but intact homologous recombination (HR), as demonstrated by GFP reporter assays in U2OS cells and immunofluorescence analysis of repair foci. This represents the first demonstration of impaired NHEJ specifically in PPM1D-mutant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DNA repair phenotype is assessed using well-established reporter systems (C77-C78) with appropriate isogenic controls generated by CRISPR correction of the endogenous PPM1D mutation. The finding of decreased NHEJ (C78) but intact HR (C77) is validated by immunofluorescence showing reduced 53BP1 foci (C80) but normal Rad51 foci (C79). The interpretation that reduced 53BP1 foci reflect impaired repair rather than damage resolution is supported by parallel comet assays showing increased damage (C81). The novelty claim (C94) appears justified based on the cited literature. However, the mechanism linking PPM1D mutation to NHEJ impairment requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Genetic deletion of SOD1 does not significantly increase DNA breaks in either wild-type or PPM1D-mutant cells, suggesting that the synthetic-lethal relationship is not mediated by exacerbation of DNA damage but rather by other consequences of SOD1 dysregulation such as altered redox signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comet assay data after SOD1 deletion (C82) clearly shows no significant increase in DNA breaks, which is contrary to the authors' initial hypothesis. This negative result is important and appropriately reported. The interpretation that synthetic lethality is not mediated by DNA damage (C83) is logical given the data. The speculation about redox signaling (C84) is reasonable but remains to be tested. This result highlights the complexity of the SOD1-PPM1D relationship and suggests that ROS-mediated signaling, rather than ROS-induced damage, may be the critical factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on PPM1D function and clinical relevance: PPM1D is a master negative regulator of the DNA damage response that dephosphorylates key DDR proteins. Gain-of-function mutations and amplifications occur across multiple cancers and are associated with poor prognosis. PPM1D mutations are particularly enriched in therapy-related myeloid neoplasms, but effective inhibitors have not reached clinical trials due to poor bioavailability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This background information is well-supported by extensive citations to established literature (C1-C21). The claims accurately represent the current understanding of PPM1D biology and clinical significance. This contextualizes the rationale for seeking synthetic-lethal approaches as an alternative to direct PPM1D inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "SOD1 inhibitors are under development for cancer and ALS treatment. LCS-1 binds directly to SOD1, while ATN-224 is a copper chelator that reduces SOD1 activity by depleting its essential cofactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about inhibitor mechanisms are supported by appropriate citations (C86-C87). This information provides context for the pharmacological validation experiments but does not constitute a primary finding of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Discussion of potential mechanisms: PPM1D may affect mitochondrial function through ATM dephosphorylation, and p53 has complex context-dependent roles in oxidative stress responses that could be modulated by PPM1D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mechanistic speculations are appropriately supported by citations to relevant literature (C88-C92). However, these represent potential explanations rather than demonstrated mechanisms in this study. The authors appropriately present these as possibilities requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion of related literature: Previous studies suggested PPM1D roles in HR/NHEJ modulation, SOD1 has synthetic-lethal relationships with other DNA damage genes, ATN-224 can enhance cisplatin effects, and the Fanconi anemia pathway is involved in redox homeostasis and interacts with SOD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent findings from cited literature (C93-C99) and provide important context for interpreting the current results, particularly the enrichment of FA pathway genes in the CRISPR screen. However, these are not primary findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Limitations and future directions: PPM1D mutations are rare in de novo AML, and while PPM1D is an oncogenic driver in many cancers, the clinical importance of targeting pre-malignant PPM1D-associated clonal expansion is unclear. Further investigation is needed in other tissues where PPM1D mutations are prevalent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge limitations of their work (C100, C102) and suggest areas for future investigation (C103). This demonstrates scientific rigor and appropriate interpretation of the scope of their findings.",
+    "result_type": "MINOR"
+  }
+]

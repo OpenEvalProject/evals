@@ -1,0 +1,137 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C46",
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "In WHu-1, alpha, and beta variants, removal of the N343 glycan induces a dramatic conformational change in the RBD where helical loops flanking the hydrophobic beta sheet core pull towards each other, ultimately causing detachment of the hydrophilic loop from Region 1. This conformational change is demonstrated through extensive MD simulations (over 45 \u03bcs cumulative sampling) showing altered RMSD distributions and disruption of non-covalent interactions between Y351 and residues S469/T470/L452.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the quality and validity of the MD simulations. Reviewer 1 states 'the evidence supporting the claims of the authors is convincing, since appropriate and validated methodology in line with current state-of-the-art has been approached.' Reviewer 2 notes 'the authors are able to demonstrate that N343 glycosylation stabilizes the RBD' and describes the conformational changes as well-characterized. Reviewer 3 states 'The molecular dynamics characterization is well performed and demonstrates differences on the effect of glycosylation as a factor of evolution.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C52",
+      "C53",
+      "C56",
+      "C72",
+      "C74",
+      "C81",
+      "C82"
+    ],
+    "result": "In delta and omicron variants, the effects of N343 glycan removal on RBM structure and dynamics are significantly dampened by mutations that strengthen the RBD architecture. Specifically, the L452R mutation in delta reinforces the junction between Regions 1 and 2, preventing detachment of the hydrophilic patch. In omicron, the S371L, S373P, and S375F mutations enable more efficient packing of the aa 365-375 loop within the hydrophobic core, stabilizing the non-glycosylated RBD without hydrophilic patch detachment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly summarizes this finding: 'variants containing interface substitutions which increase RBD stability, including Delta substitution L452R, do not experience the same conformational change when the glycan is removed' and notes the authors 'explore structures corresponding to Alpha and Beta in which no structure-reinforcing substitutions were identified and two Omicron variants in which other substitutions with an analogous effect to L452R are present.' Reviewer 3 affirms 'even if glycosylation is conserved, the stabilization role of glycans at N343 differs among the strains.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C62",
+      "C76"
+    ],
+    "result": "Enzymatic removal of the N343 glycan affects binding of monosialylated ganglioside co-receptors (GM1os and GM2os) in the WHu-1 RBD, causing complete loss of binding, but does not affect binding in the delta variant. This was demonstrated through ESI-MS affinity measurements combined with endoF3 treatment to trim N-glycans.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly validates this experimental finding: 'The authors experimentally assessed these inferred structural changes by measuring the binding affinity of the RBD for the oligosaccharides of the monosialylated gangliosides GM1os and GM2os with and without the glycan at N343' and notes 'the comparison between Delta and Wuhan-hu-1 is clear: removal of the glycan abrogated binding for Wuhan-hu-1 and minimally affected Delta as predicted by structural simulations.' Reviewer 3 states 'The binding of different strains to human gangliosides shows variations of strong interest.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C63",
+      "C64",
+      "C83"
+    ],
+    "result": "The affinity of the RBD for GM1os and GM2os changes significantly across variants of concern, with beta and omicron exhibiting the weakest binding. Alpha shows slightly decreased binding relative to WHu-1, while beta shows dramatically reduced binding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 acknowledges this finding but notes complexity: 'While GM1os and GM2os binding is influenced by additional factors in the Beta and Omicron variants, the comparison between Delta and Wuhan-hu-1 is clear.' This indicates the reviewers accept the experimental measurements while recognizing that multiple factors contribute to the binding differences in some variants. No reviewer challenges the validity of the affinity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C65",
+      "C84",
+      "C91"
+    ],
+    "result": "The predicted GM1os binding site is located at the junction between Region 1 and Region 2 of the RBD, involving residues Y351, L452, S469, T470, and E484. Mutations at these positions (L452R in delta, E484K in beta, E484A in omicron) alter ganglioside binding affinity in a manner consistent with this predicted binding site location.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 implicitly accepts this structural prediction by stating the experimental results were 'as predicted by structural simulations' and noting the study 'emphasizes how glycosylation impacts both viral immune evasion and structural stability which may in turn impact receptor binding affinity and infectivity.' The consistency between computational predictions and experimental binding measurements across variants supports the validity of the predicted binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The RBD has evolved since WHu-1, alpha, and beta strains to make the N-glycosylation site at N343 structurally dispensable through compensatory mutations. This evolutionary trajectory potentially allows for shifts in glycosylation site location (as seen in BA.2.86 with the new N354 site) that may promote immune evasion while maintaining structural stability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly endorses this evolutionary interpretation: 'In summary, these findings suggest, in the words of the authors, that SARS-CoV-2 has evolved to render the N-glycosylation site at N343 \"structurally dispensable\"' and elaborates that 'Mutations which stabilize the antigen may relax the structural constraints on glycosylation opening up avenues for subsequent mutations which remove glycans and improve immune evasion.' Reviewer 1 notes the work has 'implications across different variants of concern' and 'will be of interest to evolutionary virologists.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "In the BA.2.86 variant, the new N-glycosylation site at N354 (introduced by the K356T mutation) changes the loop conformation and creates tightly intertwined N-glycans at N343 and N354 that stabilize Region 1 while significantly increasing shielding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While not explicitly discussed in detail by reviewers, this finding is part of the broader evolutionary narrative that Reviewer 2 endorses. The reviewer's acceptance of the overall conclusion that the virus has evolved to make N343 'structurally dispensable' implicitly includes acceptance of the BA.2.86 data showing an alternative glycosylation strategy. Reviewer 3's statement that the work is 'important for the surveillance of novel variants' supports the relevance of this BA.2.86 analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Taking into consideration the effects of N-glycosylation on protein structural stability and dynamics in the context of specific protein sequences may be key to understanding epistatic interactions among RBD residues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 strongly endorses this broader implication: 'This interplay between immune evasion and receptor stability may support complex epistatic interactions which may in turn substantially expand the predicted mutational repertoire of the virus relative to expectations which do not take into account glycosylation.' This directly affirms the authors' claim about the importance of considering glycosylation for understanding epistasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The computational methodology employed over 45 \u03bcs of cumulative sampling using conventional and Gaussian accelerated MD simulations with AMBER 14 SB, GLYCAM06j-1, and TIP3P force fields, with production trajectories of minimum 2 \u03bcs to ensure convergence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly validates the methodology: 'appropriate and validated methodology in line with current state-of-the-art has been approached.' Reviewer 2 describes the work as having 'extensively samples the conformational space of the RBD' and notes trajectories were computed 'until equilibrium is achieved.' Reviewer 3 states 'The molecular dynamics characterization is well performed.' All reviewers affirm the computational approach without raising methodological concerns.",
+    "result_type": "MINOR"
+  }
+]

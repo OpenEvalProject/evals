@@ -1,0 +1,397 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes the clinical and scientific context for developing antifungal vaccines. Invasive candidiasis causes >40% mortality despite current antifungal therapy, and C. albicans is the most frequently isolated species. Current antifungals (polyenes, echinocandins, azoles) have narrow spectrum and cytotoxicity issues, with 1.5 million yearly lethal fungal infections globally and no approved vaccine for human use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C12-C16) provide well-established background knowledge supported by appropriate citations to published literature. The mortality statistics, drug classes, and lack of approved vaccines are verifiable facts that set up the rationale for the study. No experimental validation is needed for these contextual claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Prior vaccine development efforts include recombinant vaccines (NDV-3A, PEV7) protecting against recurrent VVC in initial human trials, heat-killed strains partially protecting against experimental vaginal candidiasis, and genetically engineered attenuated strains (tet-NRG1, PCA-2, CM1613) protective against disseminated candidiasis in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C17-C19) accurately summarize prior work on Candida vaccines, supported by appropriate citations. The authors correctly characterize the state of the field, noting partial protection and preclinical/early clinical status of existing approaches. This provides proper context for their novel chemical attenuation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript establishes nutritional immunity as a defense mechanism where hosts limit metal availability to pathogens. Essential metals (iron, zinc, manganese, magnesium, copper) are required for fungal virulence, and the authors' previous work showed E. coli supernatant attenuated C. albicans virulence through metal sequestration, with exogenous metals rescuing growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 establish the conceptual foundation for using metal chelation to attenuate virulence. The nutritional immunity concept and metal requirements are supported by appropriate citations (C20-C23). The authors' prior work (C24-C26) is properly cited and provides direct precedent for the current EDTA approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "250 \u03bcM EDTA completely inhibited C. albicans growth but had minimal effect on cell viability during 12 hours, with the inhibitory effect due to slowing cell division rather than cell death. EDTA treatment did not alter cell morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are well-supported by multiple complementary assays shown in Figure 1 supplements. Growth curves, CFU analysis, flow cytometry (SYTOX Green), and microscopy (PI staining) consistently demonstrate fungistatic rather than fungicidal effects. The morphology data (Figure 1\u2014supplement 3) confirms minimal morphological changes. The concentration selection is appropriately justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The antagonizing effect of 250 \u03bcM EDTA on C. albicans was abolished by supplementing with divalent metals (MgSO4, MnCl2, FeCl2, ZnCl2), demonstrating EDTA is a fungistatic inhibitor whose effect can be reversed by metal complementation. Metal supplementation at 6 hr post-treatment significantly rescued growth, and biofilm inhibition was similarly reversed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are strongly supported by growth curve, CFU, and biofilm data (Figure 1A-D). The metal rescue experiments provide critical evidence that EDTA's effects are specifically due to metal chelation. The delayed supplementation experiment (C33) elegantly demonstrates reversibility. The consistency across multiple assays strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Multiple metal chelators (DTPA, TPEN, Aprotinin, CE) inhibited C. albicans growth and biofilm with varied efficiency. TPEN and CE showed more potent effects even at lower concentrations (100 \u03bcM), while DTPA and aprotinin effects were similar to EDTA. This demonstrates that essential metals (magnesium, manganese, iron, zinc) are required for C. albicans growth and biofilm development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by comprehensive data in Figure 1E-H showing growth curves, CFU, and biofilm assays for multiple chelators. The differential potencies are clearly demonstrated. However, the inference that specific metals are required (C37) is somewhat indirect\u2014it's based on the chelators' known specificities rather than direct measurement of which metals are limiting. The conclusion is reasonable but could be strengthened.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RNA-seq analysis obtained high-quality data (average 19,190,581 reads/sample, 98% mapping) showing EDTA-treated samples clustered separately from untreated in PCA. A total of 5915 genes were differentially expressed (3093 up, 2822 down), with 799 significantly dysregulated (411 up, 388 down) using FDR \u22640.05 and log2 FC \u22651 cutoffs. Selected genes were validated by qRT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe the RNA-seq experimental design and quality metrics, which are well-documented in Table 1 and supplementary figures. The PCA clustering (C39) demonstrates biological reproducibility. The statistical cutoffs are appropriate and clearly stated. The qRT-PCR validation (C42, Figure 2\u2014supplement 1B) confirms the RNA-seq results for representative genes, strengthening confidence in the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C48"
+    ],
+    "result": "Among the top 100 upregulated genes in CAET, 57% are uncharacterized. The characterized genes include 13 DEGs related to metal transport/homeostasis, 15 DEGs of cell wall/membrane-associated proteins, and 15 DEGs with other functions. Notably, 24 of the upregulated genes were previously associated with fungal virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C48 are supported by detailed analysis in Table 2 and Figure 2C. The high proportion of uncharacterized genes (57%) is notable and properly documented. The categorization of characterized genes is clear and supported by functional annotations. The virulence association (C48) is supported by appropriate citations, though the authors correctly note this creates an apparent paradox resolved later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "GO enrichment analysis of 411 upregulated genes revealed 37 GO terms (28 BP, 5 MF, 4 CC) enriched upon EDTA treatment. The most significant upregulated biological processes were oxidation-reduction, inter-species interaction, pathogenesis, and transition metal transport/utilization. STRING analysis identified network proteins involved in metal ion transport (18 nodes among 15/31 genes) and pathogenesis (9 DEGs among 33 genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by GO enrichment analysis (Figure 2E, Supplementary file 2A) and STRING network analysis (Figure 2G-H). The statistical significance of enriched terms is appropriate. The network analyses provide systems-level insight into coordinated responses. However, the manuscript could better address potential issues with multiple testing correction across the many GO terms tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Among the top 100 downregulated genes in CAET, 25 are uncharacterized. The characterized genes include 44 genes involved in metabolic processes (e.g., PHO100, PLB1, THI4, THI13) and 13 genes involved in ribosome biogenesis and function (e.g., RDN18, RBT7, RPS42, RPS28B).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by detailed analysis in Table 3 and Figure 2D. The categorization is clear and well-documented. The specific examples provided are appropriate representatives of their functional categories. The emphasis on ribosomal genes is particularly important for the mechanistic interpretation developed later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "GO enrichment analysis of 388 downregulated genes revealed 99 GO terms (64 BP, 12 MF, 23 CC). The most significant downregulated processes involve protein synthesis, ribosome biogenesis, and amino acid biosynthesis. STRING analysis revealed downregulation of cytosolic ribosomal proteins (74 genes: 30 from 40S, 31 from 60S, 13 other), mitochondrial ribosomal proteins (56 genes), and one-carbon metabolism enzymes (34 genes). These processes require high concentrations of divalent metals as cofactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 are well-supported by GO enrichment (Figure 2F, Supplementary file 2B) and STRING network analyses (Figure 2I-J, Figure 2\u2014supplement 1C). The connection between metal depletion and ribosome/metabolic downregulation is mechanistically coherent and supported by appropriate citations (C61, C63, C69). The one-carbon metabolism connection is particularly insightful. The interpretation that cells reduce these metal-dependent processes to cope with metal scarcity is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Only iron and zinc transporters were upregulated upon EDTA treatment, while magnesium transporter genes (ALR1, MRS2, LPE10, MNR2) remained unaltered. This is surprising given that EDTA chelates multiple divalent metals and magnesium supplementation rescues growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 identify an important observation from the RNA-seq data, but the interpretation is incomplete. The lack of magnesium transporter upregulation despite magnesium's ability to rescue growth (C31) is indeed surprising and unexplained. The authors acknowledge this requires further investigation, but don't adequately address whether: (1) the existing magnesium transporters are sufficient, (2) post-transcriptional regulation occurs, or (3) other genes compensate. This represents a gap in the mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "EDTA-treated C. albicans cells have a cell wall ~4-fold thicker (435\u00b122.3 nm) than untreated cells (113\u00b131 nm). The cell wall components (chitin, \u03b2-glucans, mannan) increased by 0.5-2.5 folds, with mannan most deposited. The increased chitin and glucan content likely provides rigidity to help cells withstand metal scarcity stress, resulting in the perfectly round shape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are strongly supported by TEM imaging (Figure 3A) and flow cytometry quantification (Figure 3B-D). The measurements are quantitative with appropriate error bars. The morphological changes are striking and well-documented. The interpretation that increased rigidity helps cells cope with stress (C68) is reasonable but somewhat speculative\u2014it's an inference rather than directly tested. The connection between cell wall composition and the observed phenotype is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Metal ions are essential for ribosome structure, stability, and function. EDTA-treated cells possessed lesser volumes of 40S, 60S, 80S, and polysome fractions compared to untreated C. albicans cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 connect established knowledge about metal requirements for ribosomes (C69, supported by citations) with experimental polysome profiling data (C70, Figure 3E). The polysome profiles clearly show reduced ribosomal content in CAET cells, consistent with the RNA-seq data showing downregulation of ribosomal genes. This provides direct biochemical evidence supporting the transcriptomic findings. The connection between metal depletion, reduced ribosome biogenesis gene expression, and reduced ribosome content is mechanistically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Macrophages efficiently phagocytosed both untreated and EDTA-treated C. albicans (78-90% double-positive), but CAET showed lower interaction at 3 hr (61% vs 78%). CFU analysis revealed more killing of CAET cells by macrophages, and PI staining confirmed more macrophage killing by untreated cells. EDTA-treated cells with thickened cell walls are recognized and eliminated faster by immune cells in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by multiple complementary assays: flow cytometry (Figure 4A), CFU analysis (Figure 4B), and PI staining (Figure 4C). The data consistently show differential interactions between macrophages and Ca vs CAET. However, there's an apparent contradiction: CAET shows lower phagocytosis at 3hr (C73) but more killing (C74). The authors interpret this as faster clearance, but the mechanism isn't fully explained. The conclusion (C76) is reasonable but could benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In mice challenged with 5\u00d710\u2075 fungal cells, untreated C. albicans caused death within 8 days, while CAET-injected mice survived similarly to saline controls without signs of infection. This demonstrates that EDTA treatment causes C. albicans to lose virulence attributes and become non-pathogenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are strongly supported by survival curve data (Figure 5A) showing 100% mortality in Ca-challenged mice vs 100% survival in CAET-challenged mice. The result is dramatic and reproducible (Figure 5\u2014supplement 1 shows two independent repeats). The conclusion that CAET is non-pathogenic (C79) is well-supported. However, the claim that cells \"lose\" virulence attributes is somewhat imprecise\u2014the cells retain viability and some virulence genes are upregulated, but the overall phenotype is attenuated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Saline-immunized control mice succumbed to virulent C. albicans challenge within 9 days, while CAET-immunized mice were protected against lethal re-challenge and survived until natural death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 demonstrate the vaccine potential of CAET, supported by survival curves (Figure 5A) and replicate experiments (Figure 5\u2014supplement 1). The protection is complete and reproducible. This is a key finding showing CAET not only is attenuated but also generates protective immunity. However, the manuscript lacks mechanistic details about the nature of this protection (antibody-mediated, cellular, trained immunity) which are only partially addressed in later cytokine analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Kidneys of infected mice had higher fungal loads (~10\u2075 cells) than liver and spleen (~500-1000 cells). PAS staining showed hyphal C. albicans in kidney cortex and medulla. EDTA-treated C. albicans reduces virulence drastically by altering cell wall structure and gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by CFU analysis (Figure 5B, Figure 5\u2014supplement 1) and histopathology (Figure 5C). The kidney tropism is consistent with known C. albicans pathogenesis. The PAS staining provides visual confirmation of fungal burden. The summary statement (C84) appropriately integrates the cell wall, transcriptomic, and virulence data, though it's somewhat general. The mechanistic connection between altered cell wall/gene expression and reduced virulence could be more explicitly detailed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "CAET cells replicate in the host initially but are gradually eliminated as they cannot evade the immune system. On day 7, kidney fungal load was ~35-40 fold less in CAET-challenged mice (~10\u2074 cells) than Ca-challenged mice (~3\u00d710\u2075 cells). Vaccinated mice (1\u00b0 CAET 2\u00b0 Ca) had minimal fungal burden (3\u00d710\u00b3 cells) only at day 7 with no detectable cells beyond this timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by kinetic CFU analysis (Figure 5E) showing temporal dynamics of fungal clearance. The data demonstrate that CAET cells are live and initially replicate (addressing a key question about the vaccine mechanism) but are cleared more rapidly than Ca. The vaccinated group shows even faster clearance, consistent with protective immunity. The quantitative comparisons are appropriate. This addresses an important mechanistic question about whether CAET is truly a \"live\" vaccine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Ca-infected mice showed 2-5 fold increases in peripheral WBC, monocytes, granulocytes, and platelets with reduced RBC on days 3 and 7 post-infection. CAET-infected mice showed only mild alterations in WBC and platelet counts compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by blood profiling data (Figure 5F). The differential blood cell responses between Ca and CAET groups are consistent with differential disease severity. The data support the interpretation that CAET causes minimal systemic inflammation. However, the manuscript doesn't fully explore the mechanistic significance of specific cell type changes (e.g., why platelets increase, the role of granulocytes). The statistical analyses appear appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "On day 3, all tested cytokines and chemokines were induced in fungal-infected mice regardless of virulence status, though at higher levels in Ca than CAET groups. CAET-infected mice showed gradual decline toward basal levels from days 3-30, while Ca-challenged mice showed significant rises on day 7. Th-1 cytokines (IL-1\u03b2, IL-10, GM-CSF), Th-2 cytokines (IL-4, IL-13), and IL-17 were highly induced on day 7 in virulent C. albicans-infected mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by comprehensive cytokine profiling (Figure 6). The temporal dynamics are well-documented with appropriate statistical analyses. The differential cytokine responses between Ca and CAET groups are consistent with the survival and fungal burden data. The day 7 spike in Ca-challenged mice correlates with disease progression. However, the manuscript could better address: (1) which cytokine changes are cause vs consequence, (2) whether the day 3 similarity despite different outcomes is surprising, (3) individual variation within groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Increased anti-inflammatory cytokines (IL-2, IL-3, IL-4, IL-5, IL-9, IL-10, IL-13) cause immunosuppression while pro-inflammatory cytokines (IL-1, IL-12, IL-6, IL-17, IFN-\u03b3, TNF-\u03b1) lead to hyperinflammation in untreated C. albicans-challenged mice. Chemokines (RANTES, MCP-1, MIP-1\u03b1/\u03b2, KC, EOTAXIN) were high in fungal-infected mice serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 interpret the cytokine data in the context of immune dysfunction. The interpretation is reasonable and supported by the data (Figure 6) and appropriate citations. However, these are inferences about mechanism rather than directly demonstrated causal relationships. The manuscript doesn't directly test whether blocking specific cytokines alters outcomes. The chemokine data (C96) is supported by measurements and consistent with prior literature (cited). The interpretation would be strengthened by additional functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "A critical balance of pro- and anti-inflammatory cytokines maintains immune responses in CAET-challenged mice to induce protective immunity, while both cytokine types remain high in pathogenic-challenged mice leading to immunosuppression and death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 synthesize the cytokine data into a mechanistic model. The interpretation is reasonable and consistent with the temporal dynamics shown in Figure 6. The concept of \"balance\" vs \"dysregulation\" is supported by the data patterns. However, this is an interpretive framework rather than a directly tested mechanism. The manuscript doesn't demonstrate causality (e.g., through cytokine blocking experiments) or define what constitutes \"critical balance\" quantitatively. The model is plausible but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "CAET cells are live but non-pathogenic and boost immune responses to protect against lethal fungal challenges in a pre-clinical model. CAET could be explored further as a potential whole-cell vaccine candidate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 represent the main conclusions of the study. C99 is well-supported by the comprehensive data showing: (1) CAET cells are viable (viability assays), (2) non-pathogenic (survival studies), (3) replicate initially in vivo (kinetic CFU), (4) generate protective immunity (vaccination-challenge experiments), and (5) induce balanced immune responses (cytokine profiling). C100 is appropriately cautious (\"could be explored\") given this is a pre-clinical proof-of-concept. However, significant additional work would be needed before clinical translation, including: safety studies, dose optimization, durability of protection, breadth against other Candida species, and mechanistic understanding of protective immunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "This is the first report to explore whether a critical concentration of EDTA or any other metal chelator can attenuate the virulence of a fungal pathogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 asserts novelty. While metal chelators' antifungal properties are known (C101, C103-C104), using a fungistatic concentration specifically to create an attenuated live vaccine strain appears novel. The authors appropriately distinguish their work from prior studies showing growth inhibition or synergy with antifungals. However, the novelty claim could be more precisely stated\u2014the innovation is not just using chelators to attenuate virulence, but demonstrating this creates a protective live vaccine. A more thorough literature search would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Despite upregulation of virulence genes, CAET cells were eliminated faster by macrophages and became avirulent in mice. This demonstrates that C. albicans virulence is complex and multifactorial, requiring network proteins. Downregulation of ribosome biogenesis and metabolic enzymes is the predominant factor suppressing virulence, while overexpression of cell-wall-associated virulence genes enhances immune recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 address an apparent paradox in the data and provide a mechanistic synthesis. The interpretation is logical and supported by the integrated dataset: upregulated virulence genes (RNA-seq) don't cause increased virulence (animal studies) because downregulated ribosomes/metabolism dominate the phenotype, and altered cell wall enhances immune clearance. This is a sophisticated interpretation that reconciles seemingly contradictory observations. However, it remains largely inferential\u2014the relative contributions of different factors aren't quantitatively tested. Experiments manipulating specific pathways would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126",
+      "C144"
+    ],
+    "result": "The thick cell wall of CAET with higher proportions of all components (especially \u03b2-glucan) likely enables efficient phagocytosis and clearance by macrophages. The role of trained immunity cannot be ruled out in CAET-mediated protection given the high \u03b2-glucan levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126 and C144 propose mechanisms for protective immunity but are speculative. C126 infers that altered cell wall composition drives enhanced immune recognition, which is plausible given known PAMP recognition pathways (C124-C125), but isn't directly tested. C144 suggests trained immunity may contribute, which is reasonable given \u03b2-glucan's role (C142-C143), but no experiments specifically address this (e.g., testing protection in Rag-/- mice to assess T-cell independence, or examining epigenetic marks in innate cells). These are interesting hypotheses requiring further investigation rather than supported conclusions.",
+    "result_type": "MAJOR"
+  }
+]

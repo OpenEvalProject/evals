@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Fear-conditioned mice showed significantly increased freezing during tone presentation compared to controls, while the mean normalized firing rate of all aIC pyramidal neurons remained steady in both groups. Theta frequency power was significantly reduced during CS presentation in conditioned mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are well-supported by behavioral and electrophysiological data with appropriate statistical tests (repeated-measures ANOVA, paired t-tests, Mann-Whitney U tests). The findings demonstrate successful fear conditioning and provide baseline characterization of population-level aIC activity. Sample sizes (11 conditioned mice, 3 control mice) appear adequate for behavioral measures, though control group is small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Single-unit recordings revealed that 29.6% of aIC pyramidal neurons were responsive to freezing behavior, with freezing-excited cells (65.6%) and freezing-inhibited cells (34.4%) showing opposite correlations with freezing. These cell types differed in their baseline firing rates, laminar locations, and temporal dynamics during CS presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C48 are supported by comprehensive single-unit recording data with appropriate correlation analyses and statistical tests. The classification of neurons based on Pearson correlation (p<0.05) is methodologically sound. The temporal analysis showing different peak times (10.5s vs 17.6s) for freezing-inhibited vs freezing-excited cells is particularly compelling. However, the non-significant trend (p=0.11) for more freezing-excited than freezing-inhibited cells (C37) should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "During fear expression, a subset of aIC neurons in conditioned mice showed significant correlation with tone, but during fear extinction, no neurons correlated with tone. This suggests that freezing-excited and freezing-inhibited cells are highly correlated with freezing behavior rather than tone per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by correlation analyses during both fear expression and extinction paradigms. The extinction experiment (Figure 2I-M) provides critical evidence distinguishing tone-related from freezing-related activity. The logic is sound: if neurons correlated with freezing during expression but not with tone during extinction (when freezing decreases), they likely encode freezing rather than tone. However, the sample size for extinction (N=7 mice, 35 cells) is relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Optogenetic stimulation parameters (ChR2 at 20Hz, NpHR3 continuous) did not induce aberrant behaviors, affect locomotion, or produce seizure-like activity, as confirmed by open-field testing and simultaneous LFP/single-unit recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide essential control data demonstrating that optogenetic manipulations are specific and do not produce confounding effects. The open-field test, LFP analysis, and single-unit recordings during stimulation provide converging evidence. These controls are critical for interpreting subsequent behavioral experiments. Sample sizes appear adequate (ChR2 n=13, NpHR3 n=7, Control n=13).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Optogenetic manipulation of aIC pyramidal neurons bidirectionally modulated fear behavior, with excitation (ChR2) increasing freezing and inhibition (NpHR3) decreasing freezing, particularly during tone-off periods. These effects were absent without optostimulation, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are well-supported by optogenetic behavioral data with appropriate statistical tests (Kruskal-Wallis, Wilcoxon signed test, ANOVA). The finding that effects were most pronounced during tone-off periods (C59) is interesting but complicates interpretation. The control experiment without optostimulation (C64-C65) is essential and strengthens the conclusion. However, the marginal significance for NpHR3 effect (p=0.063, C62) should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Retrograde tracing revealed that non-overlapping populations of aIC neurons project to the medial dorsal thalamus (mainly layer 6) versus the amygdala (mainly layer 5), with more neurons projecting to the thalamus than to the amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by dual retrograde tracing experiments with clear histological evidence (Figure 4). The finding of non-overlapping populations (no double-labeled neurons) is striking and well-documented. The laminar segregation and quantification of projection neurons are appropriately analyzed. Sample size (N=3 mice) is modest but typical for anatomical tracing studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Based on the laminar distribution of recorded neurons and projection patterns, the authors speculate that aIC\u2192medial thalamus neurons could be freezing-excited cells while aIC\u2192amygdala neurons may be freezing-inhibited cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C71 are explicitly speculative (using 'could be' and 'may be') and lack direct evidence linking single-unit recordings to projection targets. While the laminar distributions are suggestive, this remains a hypothesis requiring direct testing (e.g., combining retrograde tracing with electrophysiology or calcium imaging). The authors appropriately acknowledge this limitation in the Discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Optogenetic activation of aIC\u2192medial thalamus projections significantly reduced freezing, while activation of aIC\u2192amygdala projections significantly enhanced freezing. These effects were specific to stimulation periods and did not persist during retrieval tests or between stimulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are strongly supported by pathway-specific optogenetic experiments with robust statistical evidence (repeated measures ANOVA, p<0.001 for both pathways). The bidirectional modulation is clear and compelling. The control experiments showing no effect during retrieval (C76) and no lasting effects between stimulations (C77) strengthen the interpretation. Sample sizes are adequate (aIC\u2192thalamus: ChR2 n=12, control n=8; aIC\u2192amygdala: ChR2 n=6, control n=6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "General aIC activation produced residual behavioral effects during inter-trial periods when optostimulation was off, which was not due to seizure activity but may result from recruitment of multiple brain areas, as specific pathway activation did not produce lasting effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 describe an interesting phenomenon with adequate supporting evidence. The absence of seizure activity is well-documented (C97, supported by LFP and single-unit data). The speculation about mechanism (C98-C99) is reasonable given the comparison between general aIC activation and specific pathway activation. However, the exact mechanism remains unclear and would benefit from additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The aIC regulates conditioned fear through bidirectional control at multiple levels: balanced freezing-excited and freezing-inhibited neuronal activity at the local circuit level, and distinct populations projecting to different brain regions (amygdala increasing fear, medial thalamus decreasing fear).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 and C113-C115 represent the main conclusions of the study, integrating findings from single-unit recordings, optogenetics, and neural tracing. The evidence is comprehensive and internally consistent across multiple experimental approaches. The bidirectional modulation is demonstrated at both the cellular level (freezing-excited vs freezing-inhibited neurons) and circuit level (aIC\u2192amygdala vs aIC\u2192medial thalamus). Statistical support is robust throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The aIC shows approximately equal numbers of freezing-excited and freezing-inhibited neurons (unlike pIC which has more excitatory neurons), suggesting the aIC maintains E/I balance at the cellular level. Temporal differences in their activity may create windows for signal gating while maintaining global E/I balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 integrate the current findings with prior literature to propose a mechanistic framework. The comparison with pIC (C78, citing Casanova et al., 2018) is appropriate. The E/I balance concept is well-established (C80, C84). However, claims C83, C85, and C86 are partially speculative, as the study did not directly measure group-level activity changes or test the signal gating hypothesis. The reasoning is sound but requires further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The aIC may be specialized for regulating subjective fear and integrating anxiety and fear information, potentially receiving differential inputs from prefrontal cortex (to freezing-inhibited cells) and amygdala (to freezing-excited cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C92 are largely speculative, drawing on prior literature (Nicolas et al., 2023; Park et al., 2022; Gehrlach et al., 2020) and human studies to propose functional specialization. While the integration with existing literature is appropriate, these claims represent hypotheses rather than demonstrated findings. The proposed input patterns (C91-C92) are inferred from connectivity studies but not directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C104"
+    ],
+    "result": "This study demonstrates for the first time that controlling distinct aIC outputs bidirectionally regulates fear behaviors, suggesting that merely controlling total aIC output may be sufficient for therapeutic effects without specifically targeting freezing-excited or freezing-inhibited cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 and C104 represent important translational implications supported by the optogenetic data showing bidirectional modulation. The novelty claim (C104) appears justified as this is the first demonstration of pathway-specific bidirectional fear modulation from aIC. However, the therapeutic implications (C93-C94) are speculative extrapolations from mouse data and should be interpreted cautiously. The logic is sound but clinical validation would be required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The findings are consistent with prior studies showing amygdala activation promotes fear while thalamus activation reduces fear. The extensive connectivity of the insular cortex suggests multiple redundant circuits may fine-tune fear behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 appropriately contextualize the findings within existing literature. The consistency with prior work (C100-C101, citing Johansen et al., 2010; Lee et al., 2011; Baek et al., 2019) strengthens the interpretation. The acknowledgment of potential antidromic activation (C102-C103) is important for methodological transparency. The speculation about redundant circuits (C108) is reasonable given the known connectivity (C107, citing Gehrlach et al., 2020) but remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C120"
+    ],
+    "result": "The study used only male mice (F1 hybrids of C57BL/6J\u00d7129S4/SvJaeJ, 10-18 weeks old). While many studies report no sex differences in cued fear conditioning, the underlying circuit mechanisms may differ between sexes, and the bidirectional fear modulation observed here may be different in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 and C120 appropriately acknowledge a significant limitation of the study. The use of only male mice is clearly stated (C120), and the authors appropriately discuss potential sex differences (C109-C112, citing Day and Stevenson, 2020). The distinction between behavioral similarity and circuit similarity (C110) is an important conceptual point. This limitation should be addressed in future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The introduction establishes that the aIC is implicated in fear regulation in humans and animals, has distinct anatomical connections from pIC, and is ideally positioned to integrate high-level information, though how aIC connections to different brain regions modulate fear remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 provide appropriate background from prior literature with proper citations. These claims establish the rationale for the study by reviewing human imaging studies (C1-C2, C11-C13), animal studies (C14-C16), and anatomical organization (C17-C24). The knowledge claims are well-supported by the cited literature and provide clear motivation for investigating aIC circuit mechanisms in fear conditioning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study analyzed 108 putative pyramidal neurons (93% of isolated neurons) from 11 mice, distinguished from 8 putative interneurons (7%) based on action potential characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe the neuronal sample analyzed in the study. The classification method (action potential characteristics) is standard and appropriate. The proportions (93% pyramidal, 7% interneurons) are consistent with expected cortical composition. The sample size of 108 pyramidal neurons from 11 mice is adequate for single-unit analysis, though the control group (14 neurons from 3 mice) is relatively small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The findings contribute to understanding neural circuits underlying fear behavior and have potential implications for developing therapeutic strategies for fear and anxiety disorders. All experiments were conducted with appropriate ethical approval and in accordance with ARRIVE 2.0 guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 provide appropriate concluding statements and methodological transparency. The contribution to understanding fear circuits (C116) is well-supported by the data. The therapeutic implications (C117) are appropriately framed as potential rather than demonstrated. The ethical statements (C118-C119) provide necessary documentation of proper conduct and reporting standards.",
+    "result_type": "MINOR"
+  }
+]

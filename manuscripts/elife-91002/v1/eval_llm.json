@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A genome-wide CRISPR screen in RPE1 cells identified DBT as a major suppressor of MG132-induced cytotoxicity. Loss of DBT conferred robust resistance to proteasome inhibition-induced cell death, as validated through multiple independent approaches including shRNA knockdown and rescue experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CRISPR screen methodology is well-described (C16, C18), and the identification of DBT is supported by sequencing data (C20, C21). Multiple orthogonal validation approaches including dose-response curves, time courses, alternative proteasome inhibitors (bortezomib), shRNA knockdown, and rescue experiments with engineered DBT cDNA (C22-C25) provide strong convergent evidence. Cell death markers (cleaved PARP1 and Caspase 3) confirm the protective phenotype (C26-C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Loss of DBT prevents the accumulation of ubiquitinated proteins and protein aggregates under proteasome inhibition. DBT KO cells showed significantly reduced levels of poly-ubiquitinated proteins and protein aggregates compared to WT cells when treated with MG132.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reduction in ubiquitinated protein accumulation is demonstrated through both immunoblotting (C29-C31) and immunofluorescence (C32-C33) approaches. Protein aggregate measurements using ProteoStat dye provide orthogonal confirmation (C36-C37). The time-course data (C31) strengthens the conclusion by showing sustained effects over 3 days. The convergence of multiple independent assays supports the mechanistic interpretation (C34, C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Loss of DBT does not enhance proteasomal activity but prevents ubiquitinated protein accumulation through a proteasome-independent mechanism. DBT KO and WT cells showed equivalent proteasomal activity and proteasomal subunit levels both at baseline and under MG132 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteasome activity assays (C39-C40) and protein level measurements of multiple proteasomal subunits (C41) provide clear evidence that DBT loss does not affect proteasome function. This negative result is important for ruling out a direct mechanism and is well-controlled. The conclusion (C42) logically follows from the data, directing investigation toward alternative pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Loss of DBT preserves autophagy flux under proteasome inhibition. While WT cells showed impaired autophagy flux under MG132 treatment, DBT KO cells maintained functional autophagy as measured by LC3II and p62 levels with and without lysosomal inhibition. Inhibition of autophagy abolished the protective effect of DBT loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The autophagy flux measurements using Bafilomycin A1 and vinblastine are methodologically sound and show clear differences between WT and DBT KO cells under MG132 treatment (C45-C50, C51). Time-course data (C52-C53) and rescue experiments (C54) strengthen the conclusions. Both LC3II and p62 measurements converge on the same conclusion (C57-C59). The critical experiment showing that Bafilomycin A1 abolishes the protective effect of DBT loss (C60) provides strong evidence for the necessity of autophagy in the phenotype (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Blockade of BCAA catabolism, rather than BCAA accumulation per se, underlies resistance to MG132 toxicity. DBT KO cells showed elevated BCAA levels that remained unchanged with MG132 treatment. Exogenous BCAA supplementation did not protect WT cells, but knockout of other BCAA catabolic enzymes (BCAT, BCKDHA) conferred similar protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BCAA measurements clearly demonstrate accumulation in DBT KO cells (C64-C66). The critical negative control showing that exogenous BCAAs do not protect WT cells (C67-C68) rules out BCAA accumulation as sufficient. The genetic validation using knockouts of other enzymes in the pathway (C69-C70) provides strong support for the conclusion that pathway blockade, not metabolite accumulation, is key (C71). This is a well-designed set of experiments that distinguishes between alternative hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Loss of DBT combined with proteasomal inhibition leads to decreased ATP/ADP ratios, which correlates with preserved autophagic activity and resistance to cell death. Glucose supplementation reversed the protective effect in DBT KO cells, while glucose starvation protected WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ATP/ADP ratio measurements show clear differences between DBT KO and WT cells specifically under MG132 treatment (C72-C74). The glucose manipulation experiments provide strong support for the energetic mechanism: increasing glucose reverses protection in DBT KO cells in a dose-dependent manner (C75-C76), while glucose starvation protects WT cells (C77). These bidirectional manipulations strongly support the causal role of energy status (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "AMPK is activated in DBT KO cells under MG132 treatment and is required for the protective phenotype. AMPK knockdown or pharmacological inhibition abolished the resistance of DBT KO cells to MG132, while AMPK activation protected both WT and DBT KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "AMPK activation is clearly demonstrated by phosphorylation at T172 specifically in DBT KO cells under MG132 treatment (C80-C83). The requirement for AMPK is established through both genetic (shRNA knockdown, C84-C85) and pharmacological (Compound C, C86) loss-of-function approaches. The gain-of-function experiment with AMPK agonist EX229 (C87) provides additional support. The convergence of multiple approaches strongly supports the conclusion (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Loss of DBT activates the AMPK-ULK1 and AMPK-TSC2 signaling pathways under MG132 treatment. DBT KO cells showed increased phosphorylation of ULK1-S371 and TSC2-S1387 specifically under proteasome inhibition, and AMPK knockdown reduced autophagy flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphorylation data for both ULK1 (C94-C96) and TSC2 (C101-C102) show specific activation in DBT KO cells under MG132 treatment. The rescue experiment showing that DBT overexpression reduces phosphorylation of both targets (C97) provides additional validation. The connection to autophagy is established by showing that AMPK knockdown reduces autophagy flux (C90-C91). The data support activation of both downstream pathways (C98, C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "mTOR signaling plays a key role in the resistance of DBT KO cells to proteasome inhibition. TSC1 knockdown increased mTOR activity, reduced autophagy flux, and abolished the protective effect of DBT loss. mTOR inhibitors increased resistance of WT cells while mTOR agonists sensitized DBT KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The TSC1 knockdown experiments provide strong evidence: increased S6K phosphorylation confirms mTOR activation (C104), reduced LC3II and autophagy flux demonstrate impaired autophagy (C104-C105), and loss of the protective phenotype establishes functional importance (C106). Pharmacological experiments with both mTOR agonists (C107) and inhibitors (C108) provide bidirectional validation. The convergence of genetic and pharmacological approaches strongly supports the conclusion (C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Loss of DBT protects against TDP-43M337V-induced proteotoxicity in mammalian cells and neurons by promoting clearance of the mutant protein through enhanced autophagy and AMPK signaling. DBT KO cells showed increased survival, faster TDP-43M337V turnover (half-life ~4.5 hr vs >24 hr), and enhanced autophagy flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protective effect is demonstrated in both RPE1 cells (C112-C113) and differentiated motor neurons (C114-C115), providing validation across cell types. The mechanistic data showing reduced steady-state levels (C117), faster degradation kinetics (C118-C119), enhanced autophagy flux (C120), and selective AMPK activation (C121) provide strong support for the proposed mechanism (C122). The cycloheximide chase assay provides rigorous quantification of protein turnover.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Loss of DBT protects against TDP-43M337V-induced neurodegeneration in Drosophila. Both RNAi knockdown and CRISPR knockout of the Drosophila DBT homolog significantly rescued the rough eye phenotype caused by TDP-43M337V expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Drosophila experiments provide in vivo validation using two independent genetic approaches (RNAi and CRISPR knockout) that both show rescue of the rough eye phenotype (C123-C124). The convergence of results from two different genetic methods in an intact organism strengthens the conclusion (C125). This extends the findings beyond cell culture to a whole-organism context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The protective effects of DBT loss extend to polyglutamine (polyQ)-induced proteotoxicity. DBT KO cells showed increased survival and reduced polyQ protein levels, and both RNAi and CRISPR knockout of DBT protected against polyQ-induced eye degeneration in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The polyQ experiments demonstrate that DBT's role is not specific to TDP-43. Protection is shown in both mammalian cells (C126-C128) and Drosophila (C130), with evidence for enhanced protein turnover (C128-C129). The use of two independent genetic approaches in flies (C130) and validation across multiple model systems support the broad-spectrum conclusion (C131).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "DBT is upregulated in spinal cord tissues from ALS patients. Immunoblot analysis showed significantly elevated DBT protein levels in the majority of ALS cases compared to controls, and immunofluorescence revealed higher intensity and broader distribution of DBT in ALS spinal cord sections, particularly in motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The patient tissue analysis uses two complementary approaches (immunoblotting and immunofluorescence) on a reasonable cohort size (24 ALS cases, 8 controls). The immunoblot data show significant elevation (C132), and the immunofluorescence provides spatial information showing increased intensity and distribution (C133-C135). While the inference about compromised regulation (C136) is reasonable, the data primarily establish correlation rather than causation. The patient data provide important translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C35",
+      "C62",
+      "C63",
+      "C79",
+      "C89",
+      "C92",
+      "C93",
+      "C99",
+      "C100",
+      "C110",
+      "C111",
+      "C139",
+      "C140",
+      "C141",
+      "C144",
+      "C145"
+    ],
+    "result": "The manuscript establishes the biological context by citing established knowledge about proteotoxic stress in neurodegenerative diseases, protein quality control pathways (UPS and autophagy), BCAA metabolism, AMPK signaling, and the role of TDP-43 and protein aggregation in ALS and related disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge supported by appropriate citations to prior literature. They provide the necessary context for understanding the significance of the experimental findings. The citations appear appropriate and the statements reflect current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C137",
+      "C138",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors conclude that DBT is a master switch in the metabolic control of protein quality control with implications for neurodegenerative diseases. They propose that DBT-dependent BCAA catabolism is a critical energy source under proteasomal inhibition, and that the interplay between energy metabolism and AMPK signaling drives autophagic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive conclusions are well-supported by the extensive experimental data presented in the manuscript. The characterization as a 'master switch' (C10, C137) is justified by the demonstration that DBT loss affects multiple downstream pathways (metabolism, AMPK, autophagy) and protects against multiple forms of proteotoxicity. The mechanistic model (C142-C143) is supported by the energetic, signaling, and autophagy data. The translational relevance (C138) is supported by the patient tissue data, though causality in human disease remains to be established.",
+    "result_type": "MAJOR"
+  }
+]

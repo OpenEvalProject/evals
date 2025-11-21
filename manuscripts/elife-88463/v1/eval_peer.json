@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C30",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C63",
+      "C64",
+      "C68",
+      "C122",
+      "C170",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "The authors present napari-MM3, a complete and modular image analysis pipeline for mother machine data implemented as a plugin for the napari viewer. The software supports both classical (Otsu-based) and deep learning (U-Net) segmentation methods, accommodates phase contrast and fluorescence imaging, and has been tested with multiple bacterial species and experimental configurations. The pipeline consists of four main steps and allows users to run the entire analysis without leaving the napari interface.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers acknowledge the software as a valuable tool for the field. Reviewer 1 states the tool 'allows users to segment cells based on two previously published methods...with solid evidence for their robust performance.' Reviewer 2 notes the 'integrated one-stop pipeline' and 'interactive user-friendly interface' as strengths. Reviewer 3 confirms 'the tool comes with two different previously published methods to segment cells...which compare qualitatively and quantitatively well with the results of widely accessible tools.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors tested napari-MM3 on four publicly available mother machine datasets from different sources (E. coli datasets from DeLTA, MoMA, and BACMMAN, plus C. glutamicum from molyso). The software processed all datasets with minimal parameter adjustments, achieving high Jaccard indices (0.98-1.0) on three datasets, with somewhat lower performance (0.92) on the Lugagne et al. dataset due to difficulties with cells near channel openings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes 'solid evidence for their robust performance based on comparison with other methods and use of datasets from other labs.' Reviewer 3 states the methods 'compare qualitatively and quantitatively well with the results of widely accessible tools developed by others (BACNET, DelTA, Omnipose).' The testing on external datasets is accepted without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C99",
+      "C103",
+      "C104",
+      "C124",
+      "C163",
+      "C171"
+    ],
+    "result": "The authors compared four analysis methods (napari-MM3 Otsu, napari-MM3 U-Net, DeLTA, and BACMMAN) and found that correlations between physiological parameters and the hierarchy of coefficient of variation (CV) distributions are robust to the choice of analysis method. All four methods yielded consistent and reproducible results for key cell cycle parameters, provided care is taken in parameter adjustment and postprocessing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the tool provides 'solid evidence for their robust performance based on comparison with other methods.' Reviewer 3 notes 'the tool comes with...methods to segment cells...which compare qualitatively and quantitatively well with the results of widely accessible tools.' The finding that correlations are preserved across methods is not challenged by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C32",
+      "C34",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C113",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors demonstrate that small changes in thresholding parameters can systematically alter measured cell sizes and timing parameters. The classical Otsu method generated cells 5-10% larger than U-Net methods, with systematic shifts in birth and division timing. Training Omnipose models on different segmentation masks (Otsu vs. U-Net) propagated these biases to the model output, with models trained on larger masks producing larger segmentations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly acknowledges this finding: 'the authors emphasize that machine-learning methods for image segmentation reproduce average quantities of training datasets, such as the length at birth or division. Therefore, differences in training can propagate to differences in measured average quantities. This result is not surprising but good to remember before interpreting absolute measurements of cell shape.' The 'What You Put Is What You Get' (WYPIWYG) principle is accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C123",
+      "C14",
+      "C28",
+      "C38",
+      "C40",
+      "C41",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors identify accessibility and ease-of-use as major barriers to adoption of mother machine image analysis tools. They argue that existing tools often require programming experience, command-line familiarity, and movement between multiple interfaces, presenting a steep learning curve for non-experts. The main goal of napari-MM3 is to lower this barrier to entry.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the goal of user-friendliness, there is uncertainty about achievement. Reviewer 1 states 'it was difficult to assess the user-friendliness of the new GUI' and notes it 'appears to be valuable and promising.' Reviewer 2 identifies as a weakness that 'it is not clear that the goals are fully achieved' and notes 'there is little evidence that this tool has been adopted by other labs.' The aspiration is recognized but actual demonstration of improved accessibility is questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors discuss the implications of 5-10% variance in segmented cell size being comparable to CVs of physiological parameters. They argue that researchers must be aware of inherent limitations in spatial measurement accuracy, recommend 10% as a conservative lower bound for uncertainty in bacterial cell size measurements, and caution about comparing absolute measurements between different groups using different analysis methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly validates this discussion: 'the authors emphasize that machine-learning methods for image segmentation reproduce average quantities of training datasets...This result is not surprising but good to remember before interpreting absolute measurements of cell shape.' The practical guidance about measurement uncertainty is implicitly accepted through lack of criticism and the reviewer's acknowledgment of its utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C129",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors provide extensive discussion of deep learning methods for image analysis, including their advantages (generalization to new conditions), limitations (requirement for training data construction), and practical guidance for training data preparation (50-100 images for passable results, thousands for optimal performance, with data augmentation strategies).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 criticizes that 'Some paragraphs in the Discussion section are like blogs with general recommendations. Although the suggestions look pretty useful, it is not the focus of this manuscript. It might be more appropriate to put it in the GitHub repo or a documentation page.' This suggests the extensive methodological discussion, while potentially useful, may not be appropriately positioned as a primary contribution of the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The authors found that the pre-trained DeLTA model did not generalize well to their data, but after training a new model with representative data, accurate segmentation was achieved.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is presented as part of the validation testing and is not challenged by any reviewer. It supports the broader point about the need for representative training data in deep learning approaches, which Reviewer 3 acknowledges in discussing how 'differences in training can propagate to differences in measured average quantities.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "The authors report that for steady-state growth in the mother machine where cells are confined to one dimension, there is no significant difference between deep learning-based tracking and the non-learning tracking method implemented in MM3, with errors in both cases arising primarily from segmentation errors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is presented as an empirical finding from the authors' experience and is not challenged by reviewers. It is consistent with the overall message that different methods can yield comparable results when properly applied, which reviewers accept.",
+    "result_type": "MINOR"
+  }
+]

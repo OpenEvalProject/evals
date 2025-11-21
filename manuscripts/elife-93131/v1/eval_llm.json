@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Mouse JUNO and IZUMO1 ectodomains do not form a biochemically stable complex detectable by size-exclusion chromatography, unlike their human homologs. The mouse complex has a significantly lower affinity (KD 0.6-12 \u00b5M) compared to the human complex (KD ~50-90 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide converging experimental and literature evidence demonstrating species-specific differences in JUNO/IZUMO1 binding affinity. The SEC data (Figure 1) directly shows complex formation in human but not mouse proteins, and the cited KD values from prior studies provide quantitative support for the affinity differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "AlphaFold-Multimer generates high-confidence models for both human and mouse JUNO/IZUMO1 complexes despite their different binding affinities. The quality of predictions is not negatively affected by species-specific affinity differences when sufficient sequence alignments are available and the interaction is evolutionarily conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by computational data in Figure 2 showing comparable prediction confidence for both human and mouse complexes (rc = 0.87 and 0.85, respectively). The human model accurately reproduces the crystal structure (RMSD 2.34 \u00c5), validating the approach. The inference about AlphaFold's insensitivity to affinity is reasonable given the methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C58",
+      "C59"
+    ],
+    "result": "TMEM81 is identified as a structural homolog of IZUMO1 and SPACA6 despite low sequence identity (16-27%). TMEM81 is a type I transmembrane protein expressed in mouse and human spermatids, with a conserved Ig-like domain but a three-stranded \u03b2-sheet replacing the characteristic four-helix bundle of IZUMO1/SPACA6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C51-C53, C55-C56, C58-C59 are well-supported by multiple computational analyses (Foldseek E-values 1.40e-8 to 1.39e-6, Dali Z-score 13.0) and expression data citations. The structural analysis in Figure 3 clearly demonstrates the homology and key differences. The identification of TMEM81 as a novel fusion-related protein is a significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Systematic AlphaFold-Multimer screening of 120 pairwise interactions among 15 gamete fusion proteins identified a cluster of 7 interactions centered on IZUMO1, plus several isolated binary interactions including DCST1/DCST2, IZUMO2/IZUMO3, and TMEM95/FIMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 describe a systematic computational screen with results shown in Figure 4 and Supplementary file 1. The approach is clearly described and the predictions include confidence metrics. The DCST1/DCST2 prediction is validated by agreement with experimental data (C64), lending credibility to the other predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A pentameric complex consisting of egg JUNO and CD9 and sperm IZUMO1, SPACA6, and TMEM81 was identified through iterative modeling. CD9 and CD81 are predicted to be interchangeable, with CD9 preferred consistent with its greater importance in mouse fertility. IZUMO4 and SOF1 do not integrate into this core complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C65-C73 describe the refinement from an 8-protein to a 5-protein complex based on computational predictions (Figure 5) and biological reasoning. The exclusion of IZUMO4 (incompatible interface, C67-C68) and SOF1 (disordered, C69) is justified by structural analysis. The CD9/CD81 interchangeability (C65-C66) is supported by predictions and agrees with experimental data on their relative importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The predicted pentameric complex is structurally consistent with expected membrane topology and N-glycosylation patterns. All C-termini are correctly oriented relative to opposing gamete membranes, and predicted N-glycosylation sites are compatible with the complex architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C74-C77 provide biological validation of the computational model. The membrane topology analysis (C74-C75) is based on sound biological reasoning about transmembrane protein orientation. The N-glycosylation analysis (Figure 6, C76) shows compatibility with 10 known sites. The one uncertain site (CD9 N52, C77) is appropriately noted as unverified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The predicted CD9/IZUMO1 interface involves functionally important residues including IZUMO1 W113, W88, and L115, and CD9 F176. This architecture explains experimental observations about CD9 recruitment and agrees with sequence co-evolution data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 connect the structural predictions to experimental functional data. The interface analysis (Figure 7B) identifies specific residues previously implicated in fusion (C83-C84, C86). The explanation for CD9 recruitment (C79) is a reasonable inference from the structure. Agreement with co-evolution data (C80) provides independent support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The difficulty in biochemically detecting IZUMO1/SPACA6 complexes may be explained by low affinity typical of receptor-ligand interactions, the requirement for TMEM81 to stabilize the complex, or transient assembly to prevent inappropriate fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C90 acknowledge limitations and propose speculative explanations. C87 accurately cites experimental difficulties. However, C88-C90 are speculative hypotheses without direct experimental support. While these are reasonable possibilities, they remain untested and the result cannot be considered fully supported without validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The confidence of the CD9/IZUMO1+SPACA6 interface is difficult to assess due to its limited extent (~730 \u00c5\u00b2), and it cannot be excluded that another protein may be the true binding partner or that AlphaFold is simply filling a concave surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 appropriately acknowledge uncertainty in the predictions. The limited interface area (C92) is a valid concern for assessing confidence. The authors appropriately note alternative possibilities (C93-C94) rather than overstating their conclusions. This honest assessment of limitations is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "An independent zebrafish study provides experimental evidence for the IZUMO1/SPACA6/TMEM81 trimeric complex interacting with egg Bouncer. Given that mammalian Bouncer is on sperm and CD9 is more important in mammals than fish, CD9 may have evolutionarily substituted for Bouncer as a binding partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 integrate findings from an independent study with the current work. The zebrafish experimental data (C95-C96) provides strong validation of the trimeric sperm complex. The evolutionary hypothesis (C99) is appropriately presented as speculative but is well-reasoned based on comparative data about Bouncer localization (C97) and CD9 importance (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "JUNO and IZUMO1 mediate gamete membrane adhesion in mammals but their role in fusion remains unclear. Structural studies show neither resembles known fusogens, though recent in vitro data suggests mouse IZUMO1 may have fusogenic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C14 accurately summarize prior work on JUNO/IZUMO1 function. These are well-established findings from cited literature. The acknowledgment of uncertainty about fusion mechanism (C2, C14) and the distinction between in vitro and in vivo activity (C13-C14) appropriately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Multiple egg and sperm proteins beyond JUNO/IZUMO1 are essential for mammalian gamete fusion, including CD9/CD81, SPACA6, TMEM95, DCST1/2, FIMP, SOF1, and IZUMO2-4. The role of FCRL3/MAIA in human fertilization remains controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C30 provide comprehensive background on known fusion factors from prior literature. All claims are supported by appropriate citations to experimental studies. The acknowledgment of controversy regarding FCRL3/MAIA (C29-C30) appropriately represents conflicting findings in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A larger macromolecular complex likely orchestrates mammalian gamete fusion, but detection has been difficult, possibly due to transient assembly. The low affinity of mouse JUNO/IZUMO1 and potential species-specific affinity variations motivated the use of AlphaFold-Multimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 provide the rationale for the study. C31 is a reasonable inference from the number of required proteins. C32 accurately describes experimental difficulties. C33 is appropriately speculative. C34 is supported by the experimental data. C35 is a logical inference motivating the computational approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "AlphaFold can predict protein complexes highly accurately when sufficient sequences are available and is largely insensitive to species-specific binding affinities. This approach supports the hypothesis that JUNO and IZUMO1 are part of a larger complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe the rationale and validation of the AlphaFold approach. C36 is supported by citations to AlphaFold methodology. C37 is a reasonable inference about the method's properties, validated by the results in C48-C50. C38 summarizes the main finding supported by the computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C47",
+      "C91"
+    ],
+    "result": "The pentameric complex components could organize into a synapse-like assembly at the point of fusion. Low affinity interactions might be compensated by avidity or stabilization within a larger complex. This modeling approach may be broadly useful for studying transient complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C46-C47, C91 are speculative interpretations and future directions. While C8 is a reasonable inference from the structural data, it lacks direct experimental validation. C46-C47 propose plausible mechanisms but remain hypothetical. C91 suggests broader applicability but this is untested. These represent reasonable hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The study generated a comprehensive single-nucleus RNA-seq atlas of the human hippocampus using 10 donated post-mortem tissues across neonatal (n=1), adult (n=2), aging (n=6), and stroke-injury (n=1) groups. After quality control, 92,966 nuclei were analyzed and categorized into 16 main cell populations including various NSC subtypes, neurons, glia, and other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C29 collectively describe the experimental design, sample collection, sequencing methodology, and initial cell type classification. The methodology is clearly described with appropriate quality control metrics (median 3001 genes per nucleus), and the categorization into 16 populations is supported by classical markers and differential gene expression analysis with appropriate visualization (UMAP).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Cell composition analysis revealed that pNSC and aNSC numbers decreased markedly with aging but were recovered in stroke-injured hippocampus, while some GCs were lost in injury. The average number of detected genes per cell type was similar across groups, ruling out technical artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe age- and injury-related changes in cell populations with appropriate controls for technical artifacts (C32). The findings are supported by quantitative data presented in Figure 1E, though the study acknowledges limitations with only n=1 for neonatal and injury groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Cross-species comparison validated that human hippocampal neurogenic populations align with corresponding cell types from mouse, pig, and rhesus macaque, with human AS2/qNSCs and pNSCs aligning with astrocytes/RGLs, and aNSCs/NBs clustering with nIPCs/NBs from other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe cross-species validation using published datasets. The alignment analysis and marker gene expression patterns provide strong support for cell type identification, though the analysis depends on the accuracy of cell type annotations in the reference datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The AS2/qNSC population was subclustered into three distinct populations (AS2, qNSC1, qNSC2) using gene set score analysis. AS2 showed higher astrocyte scores and expressed classical astrocyte markers (S100B, GFAP), qNSC1 was characterized by HOPX expression, and qNSC2 showed intermediate quiescence with LPAR1 and neurogenic gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe the subclustering approach to distinguish qNSCs from astrocytes, a critical methodological challenge. The use of gene set scores based on published astrocyte gene sets provides reasonable support, though the authors acknowledge this distinction remains imperfect and that combined methods are needed for accurate classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Molecular characterization revealed distinct gene expression profiles for pNSCs (HOPX, VIM, SOX2, SOX4, CCND2; enriched for stem cell differentiation and signaling pathways), aNSCs (SOX2, SOX4, SOX11, CCND2; enriched for neuronal fate determination), and NBs (CCND2, SOX4, STMN2, SOX11, PROX1, NEUROD2). Cell cycle analysis confirmed qNSCs were in G0/G1 phase while aNSCs were in S/G2/M phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 provide comprehensive molecular characterization of NSC subtypes with appropriate GO term analysis and cell cycle validation. The findings are internally consistent and supported by multiple complementary analyses (gene expression, GO terms, cell cycle phase), providing strong evidence for the distinct identities of these populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C2",
+      "C100"
+    ],
+    "result": "Novel cell type-specific markers were identified using combined scHPF and FindAllMarkers analysis: LRRC3B, RHOJ, SLC4A4, GLI3 for qNSCs; CHI3L1 and EGFR for pNSCs (with EGFR being more specific); and NRGN, NRN1 for NBs. Additional NB-specific markers (CALM3, NEUROD2, NRGN, NGN1) were identified by excluding genes expressed in GABA-INs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C2, C100 describe the identification of novel markers using appropriate computational methods. The approach of combining two methods (scHPF and FindAllMarkers) and excluding interneuron-expressed genes is methodologically sound. However, protein-level validation is limited, and functional validation of these markers is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C99"
+    ],
+    "result": "Well-known NB/immature GC markers (DCX, PROX1, CALB2, STMN2) were found to be widely expressed in human GABA-INs, confirmed by co-immunostaining showing SST+ interneurons stained with DCX. This finding necessitates exclusion of interneuron contamination when identifying newborn neurons. NB-specific genes (CALM3, TTC9B, NRGN, FXYD7, NRN1, GNG3, TCEAL5, TMSB10, NEUROD2) were identified by filtering out interneuron-expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57, C99 identify a critical methodological issue with commonly used markers. The finding is well-supported by both transcriptomic data and immunostaining validation (C55), and addresses an important source of potential misidentification in the field. The identification of alternative markers provides a practical solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C110",
+      "C111"
+    ],
+    "result": "RNA velocity and pseudotime analysis revealed the developmental trajectory in neonatal hippocampus: pNSCs give rise to either quiescent cells/AS2 or aNSCs, which then generate NBs and two types of neurons (N1, N2). Immunostaining validated the presence of HOPX+NES+ RGLs, Ki67+NES+ proliferating NSCs, and PSA-NCAM+ NBs in postnatal day 4 hippocampus, confirming ongoing neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C110-C111 describe developmental trajectory analysis with immunostaining validation. The combination of computational trajectory inference and protein-level validation provides strong support. However, the trajectory analysis is based on computational inference from snapshot data rather than lineage tracing, which limits causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Quantification across age groups showed that qNSC1 and qNSC2 ratios increased significantly with age, while pNSC and aNSC populations sharply declined from neonatal to adult/aging stages. NBs were comparable in neonatal and adult brain but markedly reduced in aging. This suggests rapid decline of human neurogenesis after birth, with NBs having a longer maturation period in humans compared to rodents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 describe age-related changes in NSC populations with appropriate quantification. The findings are supported by both snRNA-seq data and immunostaining (C72-C74). However, the small sample sizes (n=1 neonatal, n=2 adult) limit statistical power, and the interpretation of 'rapid decline' is based on limited time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Gene expression analysis and immunostaining confirmed age-related changes: astrocyte/quiescence genes (LRRC3B, RHOJ, SLC4A4) were up-regulated with age, while pNSC, aNSC, and NB genes were down-regulated. NSC markers (HOPX, VIM, NES, CHI3L1) widely expressed in neonatal DG were almost lost in adult samples (32y, 50y, 56y), and PSA-NCAM was expressed in D4 and 32y but not in 50y and 56y hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 provide convergent evidence from transcriptomics and immunostaining for age-related decline in neurogenic markers. The consistency between RNA and protein levels strengthens the findings, though the immunostaining is limited to selected markers and time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C4"
+    ],
+    "result": "Comparison of neonatal and aged qNSCs revealed that aging qNSCs up-regulated proliferation/growth inhibition genes (BRINP1, CABLES1, TENM2, CNTN1) and oligodendrocyte genes (MBP, PLP1, MOBP), while down-regulating stem cell/regeneration genes (LPAR1, TNC, CASC15, SOX2, SOX4, HOPX, VIM). GO analysis indicated neurogenesis decline is due to repressed NSC proliferation, deficient autophagy/proteasomal processes, and increased glial differentiation, suggesting NSCs undergo deep quiescence and acquire glial properties during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80, C4 describe molecular changes in aging qNSCs with appropriate GO term analysis. The findings are internally consistent and provide mechanistic insights into neurogenesis decline. However, the interpretation of 'deep quiescence' versus terminal differentiation requires functional validation that is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The stroke-injured hippocampus (48y donor) showed significant loss of granule neurons and interneurons, with up-regulation of apoptosis, DNA damage, and autophagy genes in GCs and GABA-INs. TUNEL assay confirmed evident cell apoptosis in the stroke-injured DG but not in other adult or aging samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 characterize the injury state with both transcriptomic and histological validation. The TUNEL assay provides direct evidence of apoptosis specific to the injury sample. However, with only n=1 stroke sample and death occurring 2 days post-stroke, the generalizability and temporal dynamics remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C5"
+    ],
+    "result": "pNSCs and aNSCs were predominantly present in neonatal and stroke-injured samples with minimal presence in adult/aging groups, while qNSCs increased with aging and reduced upon injury. Immunostaining detected NES+KI67+, NES+VIM+, and NES+CHI3L1+ aNSCs with radial glia morphology in stroke-injured DG but not in other adult samples. Quantification showed pNSC and aNSC ratios in injury (17.3%, 11.7%) were comparable to neonatal and significantly higher than adult/aging, while qNSC ratios decreased in injury compared to adult/aging groups, suggesting qNSC reactivation upon stroke injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91, C5 describe injury-induced NSC reactivation with both transcriptomic and immunostaining evidence. The convergence of multiple lines of evidence (cell counts, marker expression, morphology) provides strong support. However, the n=1 injury sample and short survival time (2 days) limit interpretation of the full reactivation process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Trajectory analysis of stroke-injured hippocampus showed progression from qNSC1/qNSC2 to pNSCs to aNSCs/NBs. Gene expression cascade analysis revealed up-regulation of genes related to regeneration, autophagy, proliferation, inflammation, and metabolism in the injured hippocampus, indicating stroke-induced injury triggers qNSC activation to generate pNSCs and aNSCs with potential to give rise to neurons or oligodendrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 describe trajectory analysis and gene expression changes in injury. While the trajectory analysis is methodologically sound and gene expression changes are documented, the interpretation of developmental potential is based on computational inference and gene expression patterns rather than direct lineage tracing or functional validation. The short survival time (2 days post-stroke) and n=1 sample further limit certainty about the full developmental trajectory and functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C112",
+      "C113",
+      "C116",
+      "C117"
+    ],
+    "result": "The study revealed heterogeneity and developmental trajectories of hippocampal NSCs across different contexts, identifying distinct transcriptional states (qNSC, pNSC, aNSC) and distinguishing qNSCs from astrocytes using gene set score analysis. The results support NSC transition from active to quiescent status during aging and reactivation under injury, with detection of NBs in adult hippocampus and active NSCs in injured hippocampus by both snRNA-seq and immunostaining. These findings suggest reserved qNSCs can be activated by injury/disease stimuli, potentially explaining why adult hippocampal neurogenesis is generally difficult to observe but can be detected in specific cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98, C112-C113, C116-C117 summarize the major findings and their implications. The overall conclusions are supported by the convergence of multiple analyses (transcriptomics, trajectory inference, immunostaining, cross-species comparison). However, the mechanistic understanding of reactivation and the functional significance of reactivated NSCs require further validation. The small sample sizes (especially n=1 for neonatal and injury) and lack of functional/lineage tracing studies limit the strength of causal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Validation of recently reported markers showed ETNPPL (NSC marker) was highly expressed in qNSC1/2, and NBs with STMN1/2 positivity were maintained in adult hippocampus, consistent with recent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 validate findings from recent literature in the current dataset. The consistency with published markers provides additional validation of cell type identification, though this is confirmatory rather than novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study did not find comparable numbers of pNSCs, aNSCs, and imGCs in aged samples as reported by others, but detected reactivated NSCs in injured hippocampus. Integration with published data and consideration of health states (cancer, neurological diseases) suggests adult hippocampal neurogenesis is more easily detected in cases with diseases, cancer, and injuries, and discrepancies among studies might be caused by health state differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C109 attempt to reconcile discrepancies with published studies through post-hoc speculation about health states and injury/disease effects. While the hypothesis is plausible and supported by some cited evidence (C104, C107), the explanations are largely speculative (C105, C106, C109) without direct experimental validation. The integrative analysis with published datasets provides some support, but the small sample sizes and limited health information in the current study limit the strength of these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The existence of NBs but not aNSCs in adult hippocampus indicates a long maturation period of NBs in humans. Up-regulated neuronal and glial genes in the aNSC lineage in injured hippocampus imply potential to generate both neurons and glial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 provide interpretations of the observed cell type distributions and gene expression patterns. The interpretation of long NB maturation is supported by comparison with rodent literature (C114), though direct maturation kinetics are not measured. The potential for neuronal and glial differentiation (C115) is inferred from gene expression rather than demonstrated functionally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The authors acknowledge that snRNA-seq has limitations in distinguishing cells with very similar transcriptional signatures (qNSCs vs astrocytes), and the function of rare NSCs/NBs captured by snRNA-seq without protein detection needs further identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 represent appropriate acknowledgment of methodological limitations. These are valid concerns that the authors explicitly recognize, demonstrating appropriate scientific caution about the interpretation of their findings.",
+    "result_type": "MINOR"
+  }
+]

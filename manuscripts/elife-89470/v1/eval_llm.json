@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C88"
+    ],
+    "result": "The extended SMC framework (SMCtheo) that integrates hyper-mutable markers with SNPs improves demographic inference accuracy in recent times and can uncover bottleneck events that SNP-only methods fail to detect. This improvement is achieved even when the mutation rate of the hyper-mutable marker is unknown, and requires only a very small proportion (0.1-2%) of hyper-mutable sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide simulation evidence from Figure 2 showing that SMCtheo accurately recovers recent bottlenecks when hyper-mutable markers are included, while SNP-only methods (MSMC2, eSMC2) fail. The results hold across different population sizes (N=10,000 and N=1,000) and with minimal proportions of hyper-mutable sites. Table 2 and Figure 2C demonstrate improved recombination rate estimates when marker 2 mutation rate exceeds recombination rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C90"
+    ],
+    "result": "The SMCtheo framework can accurately infer mutation rates of hyper-mutable markers under a finite site model when the SNP mutation rate is known, provided the marker follows the model assumptions in Figure 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Table 1 demonstrates accurate estimation of marker 2 mutation rates across a range from 10^-8 to 10^-4, with coefficients of variation below 0.05. However, accuracy degrades at very high rates (10^-2), where estimates are off by approximately a factor of 3. The condition that markers must follow Figure 1 assumptions is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C79",
+      "C80",
+      "C105"
+    ],
+    "result": "Segregating single methylated polymorphisms (SMPs) satisfy the SMC modeling assumptions with virtually no linkage disequilibrium beyond 100 bp due to high epimutation rates, and the LD decay distance matches well with the estimated distance between recombination events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 4C and 4D demonstrate rapid LD decay for SMPs compared to SNPs in both simulations and A. thaliana data. The simulator generates SNPs, SMPs, and DMRs that fulfill the three key assumptions from Figure 1A (C58). The LD decay pattern for SMPs aligns with recombination event spacing (C105), supporting the suitability of SMPs for SMC analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C77",
+      "C78"
+    ],
+    "result": "Differentially methylated regions (DMRs) are not suitable for SMC analysis because their average length (222 bp) is approximately twice as large as the genomic distance between recombination events (137 bp), violating the assumption of homogeneous distribution of epimutations along the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 4B provides direct quantitative evidence comparing DMR lengths to genealogy spans in A. thaliana, showing DMRs average 222 bp versus 137 bp for genealogies (median 134 bp vs 62 bp). This size discrepancy means DMRs span multiple genealogies, violating the spatial homogeneity assumption illustrated in Figure 1C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The SMCm method can accurately recover site- and region-level epimutation rates except when rates exceed 10^-4, though even at very high rates (close to 10^-2) the estimates are within a factor of 10 of true values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Supplementary file 1c, d, and e along with Figure 4\u2014figure supplement 1 demonstrate the accuracy of epimutation rate estimation across different rate values. The accuracy limitation at high rates is clearly documented, but the method maintains reasonable performance even under challenging conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C66"
+    ],
+    "result": "Integrating SMPs with SNPs improves demographic inference, especially in recent times, with as little as 2% of CG sites being sufficient for improvement. When epimutation rates are known, sharp demographic changes are accurately detected; when unknown, the shape is well inferred despite scaling issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 5A and 5B demonstrate demographic inference accuracy with varying proportions of methylation sites (2%, 10%, 20%), showing similar improvements across all proportions. Figure 5C and 5D show substantial improvements with limited sequence data (10 Mb). Supplementary file 1f provides quantitative RMSE values supporting these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "DMR data improves demographic inference when region-level epimutation rates are known, but provides no significant gain when rates are unknown, regardless of DMR length (1 kb or 150 bp).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 5\u2014figure supplement 1 and 2 demonstrate this differential performance based on whether epimutation rates are known. Supplementary file 1h provides RMSE values quantifying the accuracy differences. The result is consistent across different DMR lengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "When both site and region-level epimutations occur at similar rates, inference accuracy depends on whether rates are known: unknown rates provide gains in recent times, while known rates lead to accuracy loss due to mislabeling of methylation region status. Ignoring either process decreases accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 5\u2014figure supplement 3 and 4 demonstrate these effects with clear mechanistic explanation (C69). The mislabeling occurs because methylated sites appear in unmethylated regions and vice versa when both processes operate at similar rates. Supplementary file 1i and j provide RMSE quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C95",
+      "C96"
+    ],
+    "result": "In A. thaliana, DMRs cannot simply emerge from spontaneous site-level epimutations following Poisson processes. Instead, stochastic changes in region-level methylation require both site- and region-level processes, with epimutation independence requiring distances over 2 kb\u2014larger than typical DMR sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Statistical tests reject binomial distribution of methylation sites for all 10 A. thaliana methylomes (C71). Figure 5\u2014figure supplement 5 shows p-values <0.05 for distances up to 2,000 bp. The HMM yields DMR average length of 222 bp (C73, Figure 4B). The model-based comparison between simulations and observed data provides strong evidence for the necessity of both site- and region-level processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The epimutation model cannot fully describe observed methylation diversity in A. thaliana. LD between SMPs at distances <100 bp is much higher in data than simulations, non-independence spans regions larger than genealogy spans, and methylation likely violates Poisson process assumptions along the genome and in time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 4C shows clear discrepancy between observed (red) and simulated (blue) LD patterns for SMPs at short distances. Figure 5\u2014figure supplement 5 demonstrates non-independence beyond expected distances. These observations, combined with citations to recent functional studies, provide strong evidence for model violations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C108"
+    ],
+    "result": "Applying SMCm to A. thaliana German accessions reveals a post-Last Glacial Maximum bottleneck (5,000-10,000 generations ago) followed by expansion when using SMPs, which was not detected using SNPs alone. Inferred site epimutation rates are 10,000 times faster than DNA mutation rates, consistent with experimental measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Figure 6 shows demographic inference results, with SNP-only analysis (purple) showing no clear post-LGM expansion, while SMP integration reveals bottleneck and expansion patterns (blue and green lines). However, the authors themselves express caution about result reliability due to model violations documented in C97-C99. The inferred epimutation rates (C85, Supplementary file 1k) match expected order of magnitude, but discrepancies with experimental measures are noted (C101). The biological interpretation requires additional validation given documented model violations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C89"
+    ],
+    "result": "Integrating epimutations slightly improves TMRCA inference accuracy when epimutation rates are known, but not when rates are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Supplementary file 1g provides RMSE values quantifying TMRCA inference accuracy under different conditions. The improvement is modest and conditional on knowing epimutation rates, which is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The method accounts for the finite site problem at hyper-mutable markers and high effective population sizes, and LD comparisons across markers provide a useful diagnostic for model assumption violations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finite site modeling is a design feature supported by theoretical citations (C91). Figure 4C and 4D demonstrate the utility of LD comparisons for detecting model violations, as evidenced by discrepancies between simulated and observed patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Caution is warranted for conclusions about natural selection based on population epigenomic data due to model assumption violations. Current A. thaliana demographic results are limited by inability to simultaneously account for background selection, population structure, and molecular rate variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-justified cautionary statement based on documented model violations (C97-C99) and known limitations in the field. Citations support that these evolutionary forces bias inference when not accounted for (C110). The statement appropriately tempers interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The consistency between SNP-based and methylation-based demographic inferences confirms that CG methylation sites are mainly heritable at the timescale of thousands of generations, and that fast ecological adaptation and stress responses are likely not prominent forces continuously reshaping CG methylation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the absence of conflicting demographic signals (Figure 6) provides some support, this inference is weakened by the documented model violations (C97-C99) and the uncertainty in the A. thaliana demographic results themselves. The conclusion about ecological adaptation and stress responses is speculative and based primarily on the absence of evidence rather than evidence of absence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The approach provides tools to infer marker rates and distribution processes when evolutionary mechanisms are poorly understood, and can integrate well-characterized markers to improve SMC performance. Accurate marker annotation with inheritance and mutational information is advisable for optimal results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Table 1 demonstrates the ability to estimate unknown mutation rates (C115). Figure 5B and 5D show improved inference when rates are known (C116). These are practical recommendations well-supported by the simulation results throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C130"
+    ],
+    "result": "An Ising model is suggested for modeling heterogeneous methylation processes, but preliminary work shows it generates non-homogeneous mutation processes violating current SMC assumptions. Continuous time Markov chains could address complexity from integrating multiple markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative suggestions for future methodological development (C102, C130). The limitation of the Ising model approach is noted based on preliminary work and cited simulations (C103), but no concrete solution is demonstrated. These represent research directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Technological advances in sequencing are improving genome quality and marker detection, which will enhance understanding of marker heritability and improve full genome approaches currently limited by nucleotide diversity. The framework is predicted to enable improved inference of biological traits, recombination rates, selection events, and represents the future direction of population genomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are primarily speculative predictions about future developments (C128, C131-C133) supported by citations to recent technological advances (C126, C127). While the technological trends are well-documented, the predicted improvements and applications remain to be demonstrated. These represent aspirational goals rather than established results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,176 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "A genome-wide CRISPR/Cas9 screen identified calreticulin (CRT) as a selective repressor of ATF6\u03b1 signalling. CRT-depleted cells constitutively activated the BiP::sfGFP ATF6\u03b1 reporter, had higher BiP protein levels, and showed ATF6\u03b1-dependent effects on IRE1 signalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen data (C2, C52, C53) directly identified CRT as a hit, and multiple independent experiments (C3-C5, C54-C57, C59-C60) consistently demonstrate that CRT depletion leads to constitutive ATF6\u03b1 activation. The phenotype is reversed by ATF6\u03b1 inactivation (C59-C60), confirming specificity. The selectivity for ATF6\u03b1 over CNX (C53, C58) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CRT depletion increases ATF6\u03b1 trafficking from ER to Golgi and enhances its proteolytic processing. CRT-depleted cells show increased Golgi localization of ATF6\u03b1 under basal conditions, elevated levels of processed N-ATF6\u03b1, and a higher monomer-to-dimer ratio under stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (confocal microscopy C61-C62, immunoblotting C63-C64, and redox analysis C65-C67) consistently demonstrate that CRT depletion enhances ATF6\u03b1 trafficking and processing. The data from engineered reporter systems (GFP-ATF6\u03b1 and 2K cells) provide direct visualization and quantification of these effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CRT directly interacts with the luminal domain of ATF6\u03b1 both in vitro and in cells. BLI experiments show reversible binding with slow kinetics and a KD of ~1 \u03bcM, consistent with physiological CRT concentrations in the ER. The interaction occurs with both glycosylated and non-glycosylated forms of ATF6\u03b1_LD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interaction is demonstrated by two independent methods: BLI with purified proteins (C6, C68-C70) and co-immunoprecipitation from cell lysates (C7, C71-C72). The KD value (C69) is physiologically relevant based on quantitative immunoblotting. The interaction with both glycosylated and non-glycosylated forms (C70-C71) suggests both lectin-dependent and -independent binding modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C55",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "CRT depletion exposes a negative feedback loop where ATF6\u03b1 represses IRE1 activity basally. CRT-depleted cells show reduced IRE1 reporter activity, lower IRE1 phosphorylation, and decreased XBP1 splicing under basal conditions, which can be reversed by CRT overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence (flow cytometry C55, RT-PCR C80-C81, immunoblotting C82-C83) consistently demonstrate reduced IRE1 activity in CRT-depleted cells under basal conditions. The rescue by CRT overexpression (C9) and the partial nature of the defect under stress (C84) support the feedback loop model. However, the mechanism remains indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C92",
+      "C95"
+    ],
+    "result": "CRT repression of ATF6\u03b1 involves both glycan-dependent and glycan-independent interactions. Wild-type CRT fully rescues the CRT-depleted phenotype, while the lectin mutant CRTY92A shows partial rescue ability, and the double mutant CRTY92A,W244A fails to rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments (C76-C79) with CRT mutants provide functional evidence for the role of glycan binding. The partial rescue by CRTY92A (C78) despite similar expression levels to wild-type (C79) suggests both lectin-dependent and -independent mechanisms (C92, C95). However, concerns about CRTY92A,W244A protein integrity (C77) limit conclusions about the Erp57 co-chaperone role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "N-glycosylation and disulfide bonds in ATF6\u03b1_LD are important for full ATF6\u03b1 functionality. Neither the non-glycosylated (\u0394Gly) nor the cysteine-free (\u0394C) ATF6\u03b1_LD variants fully restored BiP::sfGFP responsiveness to stress when knocked into ATF6\u03b1-depleted cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The knock-in rescue experiments (C73-C75) demonstrate that both N-glycosylation and disulfide bonds are required for full ATF6\u03b1 function. The partial functionality of the \u0394Gly allele (C75) compared to complete loss of function in \u0394C (C74) suggests differential importance of these modifications. However, the lower expression of \u0394Gly (C72) complicates interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C87",
+      "C88"
+    ],
+    "result": "The screen identified FURIN as a potential indirect regulator of ATF6\u03b1 signalling. FURIN deletion synergizes with S1P inhibitors in attenuating ATF6\u03b1 signalling, but purified ATF6\u03b1_LD is not a direct substrate for FURIN in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen data (C45-C47) and validation experiments (C48-C49, C87) consistently show FURIN's role in ATF6\u03b1 activation. The synergy with S1P inhibitors (C49, C87) and the presence of a putative FURIN cleavage motif (C88) suggest a role in processing. However, the failure of in vitro cleavage (C50) indicates FURIN acts indirectly, limiting mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The XC45-6S dual UPR reporter cell line enables independent monitoring of ATF6\u03b1 and IRE1 activities. The BiP::sfGFP reporter responds to ATF6\u03b1 activation and is blocked by Ceapin-A7 and S1P inhibitors, while the XBP1s::mCherry reporter responds to IRE1 activation and is blocked by 4\u03bc8C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reporter validation experiments (C37-C44) demonstrate that the dual reporter system responds appropriately to ER stress and specific inhibitors. ATF6\u03b1 knockout abolishes BiP::sfGFP responsiveness (C39) while derepressing IRE1 (C40), confirming reporter specificity. The system does not affect basal BiP levels (C38), indicating minimal perturbation of endogenous pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C86"
+    ],
+    "result": "Depletion of calnexin (CNX) or ERp18 had no impact on ATF6\u03b1 or IRE1 reporters in CHO-K1 cells, demonstrating cell-type-specific regulation of ATF6\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data (C58, C86) clearly show that CNX and ERp18 depletion do not affect the UPR reporters in CHO-K1 cells, contrasting with previous findings in other cell types. This demonstrates the specificity of CRT's role and highlights potential cell-type-specific differences in ATF6\u03b1 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose that CRT repression of ATF6\u03b1 may involve titration by competing ligands, coupling ATF6\u03b1 activity to the burden of unfolded glycoproteins in the ER. BiP may also play a role but was likely missed by the screen design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative mechanistic models (C90, C97, C98) inferred from the experimental data but not directly tested. While the titration model is plausible and illustrated in Figure 8, it requires additional experiments to validate. The suggestion about BiP (C90) is reasonable given the screen design but remains untested.",
+    "result_type": "MINOR"
+  }
+]

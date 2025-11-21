@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Principal component analysis (PCA) of 46 actin structures reveals that PC1 (45% variance) represents the G-actin to C-actin transition via nucleotide binding cleft closure, while PC2 (28% variance) represents the F-actin to C-actin transition via outer domain twisting. The analysis suggests that C-actin, rather than F-ADP-actin, is the favorable structure for cofilin binding, with single cofilin binding inducing ~5\u00b0 OD twisting and extensive binding inducing ~10\u00b0 twisting while maintaining a closed nucleotide binding cleft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PCA analysis is methodologically sound, using 46 PDB structures with appropriate alignment procedures (C27-C28). The identification of two principal modes of conformational change is well-supported by the data and consistent with previous structural studies (C30). The conclusion that C-actin represents the favorable binding state for cofilin (C20, C33, C39) is supported by the positioning of cofilin-bound structures in PC space, though this is correlative rather than directly demonstrating binding preference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Structural analysis demonstrates that cofilin clusters rotate the outer domains approximately 10\u00b0, burying SD2 and D-loops deeper into the filament core. This rotation increases the twisting angle between adjacent protomers from ~26\u00b0 to ~36\u00b0 when viewed from the outer side, and this global shortened half helical pitch (HHP) is directly related to the local outer domain twists of actin protomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural analysis comparing F-actin and C-actin is well-documented with specific angular measurements (C40-C41) and is consistent with previous cryo-EM studies (citations to Galkin et al., 2011; Tanaka et al., 2018). The connection between local OD twists and global HHP changes (C42) is logically demonstrated through the structural comparisons shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "HS-AFM observations reveal that half helices within long actin filaments exhibit heterogeneity in their lengths and number of protomers per HHP. The most common configurations are 6.5 pairs (60.9%) with MAD 5.1\u00b10.2 nm and 7.5 pairs (28.0%) with MAD 5.0\u00b10.3 nm. Notably, HHPs with fewer protomer pairs exhibit elongated MADs, with the slope from actual AFM measurements being smaller than calculated assuming constant MAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HS-AFM data provides direct experimental evidence for variable helical twisting with substantial sample sizes (n=2226 HHPs total, C45). The quantitative measurements of MAD values for different protomer pair configurations (C46) are well-documented. The observation that fewer protomer pairs correlate with elongated MADs (C47) is a key finding supported by the data in Table 3, though the extremely rare 4.5 pair configuration (0.2%, C48) has limited statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Temporal autocorrelation analysis of axial distances between adjacent actin protomers shows rapid decay within hundreds of milliseconds followed by gradual decay over seconds. The time constants (t1, t2) are similar between F-ADP-actin and F-ADP.Pi-actin at the current imaging rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal autocorrelation analysis is methodologically appropriate for assessing dynamic changes in actin structure (C49). The finding that time constants are similar between ADP and ADP.Pi conditions (C50) is supported by data in Table 4 and Figure 3\u2014figure supplement 1, though the authors acknowledge that current temporal resolution may not be sufficient to detect differences between these conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Spatial autocorrelation analysis of canonical actin filaments yields a decay constant (D1) of 26.8\u00b16.8 nm, suggesting that similarity in height among protomers persists within approximately 5 pairs (~10 actin protomers).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial autocorrelation analysis is well-described methodologically (Methods section) with appropriate sample size (n=200, C51). The interpretation that height similarity extends over ~5 pairs (C52) is a reasonable inference from the decay constant, though the authors acknowledge that limited lateral resolution (1-3 nm) prevents detailed structural analysis within this distance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HS-AFM reveals that shortened bare half helices adjacent to cofilin clusters on the pointed end (PE) side contain fewer actin protomers than normal helices, with MADs of 5.0-6.3 nm compared to 4.3-5.6 nm in typical helices. Notably, MAD elongation in cofilactin regions is transmitted beyond the cofilactin/bare actin boundary. Small cofilin clusters (2-4 molecules) can initiate supertwisting by reducing protomer pairs per HHP, implying allosteric structural transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HS-AFM observations provide direct evidence for structural changes in bare actin adjacent to cofilin clusters (C21-C22, C56-C57). The quantitative measurements of MAD differences are well-documented with specific examples (C54, C57). The inference of allosteric transmission (C55, C58) is strongly supported by the observation that 2-4 cofilin molecules can initiate supertwisting despite complete decoration requiring 9-11 molecules. However, the mechanism of this allosteric effect requires further structural characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Analysis of hybrid cofilactin/bare actin filaments shows that MAD6 (5.4\u00b10.3 nm) in shortened bare half helices on the PE side is significantly greater than MAD5 (5.0\u00b10.2 nm) in normal helices on the BE side. Spatial autocorrelation analysis indicates that structural similarity extends approximately 1-2 pairs (~2-4 protomers) from the bound cofilin region to unbound regions on both PE and BE sides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative comparison of MADs between PE and BE sides is well-supported with appropriate statistical testing (n=12, C59). The spatial autocorrelation analysis showing decay constants of 12.7\u00b17.0 nm (PE) and 12.6\u00b16.6 nm (BE) (C62) supports the conclusion about structural similarity extending 1-2 pairs (C63). However, the proposal in C63 is somewhat speculative and the authors acknowledge that limited lateral resolution prevents detailed structural characterization of these unbound protomers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Time-lapse HS-AFM demonstrates that cofilin cluster binding leads to ~1-2 nm height increase and ~25% HHP decrease in cofilactin regions. Even with 10 mM Pi, cofilin clusters can supertwist half helices, with supertwisted structures propagating beyond the cofilactin/bare actin boundary to shorten adjacent bare half helices before saturated clusters grow. This suggests that cooperative binding of cofilin is greatly influenced by cooperative conformational changes during helical twisting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HS-AFM observations of cofilin cluster effects are consistent with previous work (C64, citation to Ngo et al., 2015). The demonstration that Pi does not prevent supertwisting once clusters form (C65) is important and well-documented in Figures 7-8 and Videos 6, 10. The temporal analysis showing that bare half helix shortening precedes saturated cluster growth (C66, Table 6) provides strong evidence for allosteric propagation. The conclusion about cooperative conformational changes (C68) is well-supported by the comparative experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C68"
+    ],
+    "result": "Physical inhibition of torsional motion through stronger attachment to lipid membrane (DPPC/DPTAP 75/25) led to more pronounced inhibition of cofilin binding and cluster formation than 10 mM Pi in solution, demonstrating that cooperative binding is greatly influenced by torsional flexibility during helical twisting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design comparing physical constraint (strong membrane attachment) versus chemical inhibition (Pi) is well-conceived (C23). The observation that 2000 nM cofilin shows severely inhibited binding when torsional motion is restricted (Figure 8A, Video 7) provides strong evidence that torsional flexibility is critical. The comparison with Pi effects (C68) is supported by multiple experimental conditions shown in Figure 8B-D. This is a key mechanistic finding distinguishing torsional flexibility from nucleotide-state effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The growth rates of cofilin clusters within shortened bare half helices adjacent to existing clusters are not significantly different between F-ADP.Pi-actin and F-ADP-actin (p=0.47846), suggesting that bound Pi has only a minor effect on propagation of supertwisted helical structures to neighboring bare half helices on the PE side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative comparison of growth rates is well-documented with appropriate sample sizes (n=22 for F-ADP-actin, n=28 for F-ADP.Pi-actin) and statistical testing (C69). The conclusion that Pi has a minor effect on propagation (C70) is supported by this data, though the authors acknowledge uncertainty about when Pi is released during this process. This finding is important for distinguishing initial binding effects from cluster expansion effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C24",
+      "C74"
+    ],
+    "result": "Analysis of control actin filaments shows that mean HHPs are nearly identical across conditions (ADP, ATP+Pi, ATP+phalloidin), but variances differ significantly. F-ADP-actin exhibits more naturally supertwisted half helices (5.8% with HHP <30 nm) than F-ADP.Pi-actin (1.1%) or phalloidin-stabilized F-actin (0.2%). This suggests that bound Pi mainly inhibits initial cofilin binding by reducing the fraction of supertwisted helical structures rather than through large conformational changes in protomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative analysis of HHP distributions is well-documented with substantial sample sizes (n=2487 for each condition, C71-C73). The statistical analysis using one-way ANOVA appropriately identifies significant differences in variance (C72). The conclusion that Pi inhibits initial binding by reducing supertwisted structures (C74, C86) is a reasonable inference from the data, though it relies on the assumption that initial cofilin binding occurs at naturally supertwisted sites (citation to Galkin et al., 2001). This represents an important mechanistic insight distinguishing Pi effects from traditional nucleotide-state models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose a mechanistic model where: (1) longitudinal interactions between the D-loop of SD2 and SD1 pocket keep the nucleotide binding cleft closed and OD untwisted in F-actin; (2) cofilin binding causes OD twisting without affecting cleft closure; (3) cofilin clusters convert bare protomers in shortened bare half helices on the PE side to C-actin-like structures; (4) without rapid cofilin binding, these C-actin-like structures transition to G-actin via cleft opening, leading to filament severing at or near the cofilactin/bare actin boundary on the PE side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This mechanistic model integrates PCA results (C76-C78) with HS-AFM observations (C80-C81) and is consistent with previous studies (C82-C83, citations provided). However, several aspects are speculative: (1) the authors lack atomic structures of bare actin protomers adjacent to cofilin clusters to directly verify C-actin-like structures (C80); (2) the proposed C-actin to G-actin transition (C81) is inferred rather than directly observed; (3) the rapid conversion of F-ADP.Pi-actin to F-ADP-actin and C-actin-like structure (C84) is proposed but not directly demonstrated. The model contradicts some Cryo-EM interpretations (Huehn et al., 2020) regarding the extent of allosteric effects. While the model is well-reasoned and consistent with available data, key structural intermediates require direct verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The authors conclude that reduction in torsional flexibility associated with variable helical twists, rather than large conformational changes in F-actin protomers linked to ATP hydrolysis, accounts for Pi inhibition of cofilin binding. The absence of bound Pi possibly increases torsional flexibility during helical twisting of ADP-bound actin filaments compared to ADP.Pi-bound counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the integration of multiple experimental observations: (1) similar PC2 values for F-ADP and F-ADP.Pi structures (C37-C38); (2) reduced variance in HHPs for F-ADP.Pi-actin (C72); (3) reduced fraction of naturally supertwisted helices in F-ADP.Pi-actin (C73); (4) strong inhibition of cofilin binding when torsional motion is physically restricted (C23). The conclusion represents a significant mechanistic insight that challenges traditional nucleotide-state models. However, C87 is somewhat speculative about the mechanism by which Pi affects torsional flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction provides established background on cofilin as a member of the ADF/cofilin family with two mammalian isoforms, its role in actin depolymerization and severing, actin filament structure including domain organization and helical parameters, and previous cryo-EM studies of cofilactin showing ~25% HHP decrease and reduction to ~11 protomers per half helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge appropriately cited to primary literature (C1-C19). The structural descriptions of actin domains (C7-C11) and helical parameters (C12-C15) are standard in the field. The citations to previous cofilactin structures (C17-C19) are accurate. This background appropriately frames the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The discussion contextualizes the findings within the broader literature on HS-AFM capabilities, actin structure-dependent binding of ABPs, and previous studies showing effects of actin conformation on protein binding in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite relevant literature to contextualize the findings. The comparison of HS-AFM and Cryo-EM capabilities (C75) is accurate. The citations to previous work on actin structure-dependent ABP binding (C88-C91) are appropriate and relevant to the study's conclusions. This represents appropriate scholarly discussion of the work's significance.",
+    "result_type": "MINOR"
+  }
+]

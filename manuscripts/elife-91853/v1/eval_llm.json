@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C120"
+    ],
+    "result": "The authors established a collection of 58 NMEC isolates from seven geographic regions spanning 1974-2020, with 18 completely sequenced using Oxford Nanopore Technology. The collection showed phylogenetic diversity across 22 sequence types, with ST95 (34.5%) and ST1193 (15.5%) being most common, and 82.8% belonging to phylogroup B2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The collection establishment and characterization are well-documented with clear methodology (C20-C28, C31-C32). Phylogenetic analysis, sequence typing, and complete genome sequencing provide robust data. However, geographic representation is limited and acknowledged (C109), and the temporal distribution is uneven with ST1193 only appearing from 2013 onwards (C26), which could introduce sampling bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The authors suggest that ST95 and ST1193 exhibit specific virulence features associated with their capacity to cause neonatal meningitis, based on their overrepresentation in NMEC compared to their prevalence in the broader ExPEC population in the Enterobase database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is presented as inference (C29-C30) based on comparative database analysis. While the observation of differential prevalence is data-supported, the causal claim about 'specific virulence features' requires experimental validation. The comparison relies on database representation which may have ascertainment bias. Alternative explanations (e.g., transmission dynamics, host factors) are not adequately excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C119"
+    ],
+    "result": "Antibiotic resistance profiling revealed overall low resistance levels in the collection, with ST1193 isolates containing fluoroquinolone resistance mutations (gyrA S83L D87N, parC S80I) and 77.8% harboring genes for aminoglycoside, trimethoprim, and sulphonamide resistance. Cambodian isolates showed higher resistance gene prevalence, with CAM-NMEC-6 containing 14 resistance genes including third-generation cephalosporin and carbapenem resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The resistance profiling is well-documented through genomic analysis (C33-C37) with specific mutations and genes identified. The geographic pattern (C35) is appropriately contextualized with citation. However, phenotypic confirmation of resistance is only mentioned for the recrudescence cases (C69), not systematically for the collection. The claim of 'overall low resistance' (C119) may be influenced by the geographic and temporal sampling bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C117",
+      "C118"
+    ],
+    "result": "Virulence gene profiling showed no single conserved profile across all isolates, but identified prevalent genes for iron acquisition systems (enterobactin 98%, yersiniabactin 98%, aerobactin 62%, salmochelin 55%), adhesins (type 1 fimbriae 100%, mat fimbriae 98%, fdeC 98%), and the uropathogenic genotoxin usp (83%, phylogroup B2 only). The ColV-plasmid was present in 33% of isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The virulence gene analysis is comprehensive and well-documented (C38-C54, C117-C118) using established bioinformatics tools with appropriate thresholds (90% identity, 80% coverage). The prevalence data are clearly stated. However, gene presence does not confirm expression or functional activity. The phylogroup-specific distribution of usp (C46) is noted but not mechanistically explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "ST95 isolates contained significantly more virulence factors than ST1193 isolates (p<0.001, Mann-Whitney two-tailed unpaired test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical comparison is appropriate (Mann-Whitney test for non-parametric data) with clear significance (C55). The result is supported by Figure 1-figure supplement 3. However, the biological significance of 'more virulence factors' is unclear without functional validation, and the comparison doesn't account for which specific factors may be more important for pathogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Serotype analysis revealed K1 as the dominant capsule type (74.1%), confirmed by ELISA in 32/34 tested isolates. O18 (27.6%), O75 (13.9%), and O2 (12.1%) were the most common O antigens, while H7 (32.8%), H5 (22.4%), and H4 (15.5%) were the most common H antigens. The most common complete serotype was O18:H7:K1 (24.1%), associated with ST95 clonal complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The serotyping is well-executed using both in silico prediction and experimental validation (C56-C67). The ELISA confirmation (C57) strengthens the K1 capsule claims, though 2/34 isolates predicted to have K1 did not express it, suggesting potential regulatory or technical issues. The serotype-ST associations are clearly documented and consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C107"
+    ],
+    "result": "Three patients suffered recrudescent invasive NMEC infection during 2019-2020 despite appropriate antibiotic therapy. Whole-genome sequencing demonstrated that recrudescent isolates were identical or nearly identical (0-1 SNP) to the original causative isolates in all three cases, with isolates susceptible to the cephalosporin therapy used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recrudescence cases are well-documented with detailed clinical timelines and genomic analysis (C68-C79, C107). The WGS comparison provides strong evidence for same-strain recurrence. The single SNP in Patient 2's blood isolate (mdoH V453G, C74) is interesting but its functional significance (C75-C76) is speculative. The antibiotic susceptibility data (C69) are clearly stated. However, the small sample size (n=3) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In Patient 2, the causative E. coli ST537 isolate was detected in fecal samples at the time of recrudescent infection (day 77) and at follow-up timepoints (days 149 and 174) using multiple methods including bacterial culture, short-read metagenomic sequencing, long-read metagenomic sequencing, StrainGE analysis, and fimH amplicon sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multi-method detection of the causative strain in gut samples (C80-C88) provides strong convergent evidence. The use of complementary sequencing approaches (short-read, long-read, amplicon) and strain-level analysis (StrainGE) is rigorous. The complete genome reconstruction from metagenomic data (C86) is particularly compelling. However, the lack of pre-treatment samples (C110) prevents assessment of whether the strain was present before infection or represents true persistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Patients with recrudescent infection exhibited severe gut dysbiosis. Patient 2's microbiome was dominated by Enterobacter, Achromobacter, and Bacteroides with E. coli at 2-4% relative abundance. Patient 3 showed extreme dysbiosis with >93% Enterococcus and E. coli below detection limits (<0.01%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dysbiosis characterization is well-documented through metagenomic sequencing (C82-C83, C89-C91). The extreme dominance by single genera indicates severe disruption. The inference that dysbiosis resulted from antibiotic treatment (C92) is reasonable but cannot be definitively proven without pre-treatment samples. The contrast between Patient 2 (detectable E. coli) and Patient 3 (undetectable E. coli) is notable but not mechanistically explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors conclude that NMEC colonization of the gut provides a reservoir that can seed recrudescent infection, and that appropriate antibiotics may not eliminate intestinally-residing NMEC, revealing a need for diagnostic and therapeutic interventions to mitigate recrudescence risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the detection of the causative strain in Patient 2's gut (C80-C88) supports the reservoir hypothesis, this is based on a single case with detectable E. coli. Patient 3 had undetectable E. coli yet still experienced recrudescence, suggesting alternative mechanisms. The claims (C94, C114-C116) are presented as suggestions/conclusions but lack: (1) demonstration that gut eradication prevents recurrence, (2) assessment of whether strains were present pre-infection, (3) mechanistic understanding of how bacteria evade antibiotics, (4) evaluation of alternative sources (e.g., maternal transmission, C111-C112). The therapeutic implications (C115) are premature without intervention studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The authors suggest that ST1193's resistance profile may lead to clinical failure of empiric ampicillin-gentamicin regimens used to treat neonatal meningitis and early-onset sepsis, particularly given reports of co-resistance to third-generation cephalosporins in some ST1193 isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The concern about treatment failure (C102) is based on genotypic resistance data and cited literature (C103) but lacks clinical outcome data from this study. The claim uses 'may lead to' indicating speculation. No patients in this study experienced treatment failure due to resistance (all recrudescent isolates were susceptible, C69). The clinical significance requires prospective studies correlating genotype with treatment outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The authors speculate that the dominance of ST95 and ST1193 in neonatal meningitis is due to the K1 polysialic acid capsule in combination with other virulence factors and the immature immune system of preterm infants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation (C104) and represents a hypothesis rather than a demonstrated result. While K1 prevalence is documented (C56-C57) and ST95/ST1193 dominance is shown (C24), the causal mechanism is not tested. The claim conflates correlation with causation and doesn't account for: (1) ST1193 isolates having fewer virulence factors than ST95 (C55), (2) other K1-expressing STs not being equally dominant, (3) lack of experimental validation of enhanced virulence in neonatal models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study acknowledges several limitations: geographic restriction to seven regions, lack of complete pre- and post-treatment stool samples, absence of maternal samples to rule out mother-to-child transmission, and missing gestational age data preventing preterm vs. term infant comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge significant limitations (C109-C113) that impact interpretation. The lack of pre-treatment samples (C110) is particularly critical for the gut reservoir hypothesis. The inability to rule out maternal transmission (C111-C112) is an important alternative explanation for recrudescence. These limitations are honestly reported and appropriately constrain the conclusions.",
+    "result_type": "MINOR"
+  }
+]

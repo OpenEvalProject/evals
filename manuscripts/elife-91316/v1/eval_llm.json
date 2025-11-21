@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C72",
+      "C73"
+    ],
+    "result": "Nociceptors showed the greatest regeneration after sciatic nerve crush, followed by motoneurons, mechanoreceptors, and proprioceptors. At 7 days post-injury (dpi) and 17 mm from the injury site, nociceptors had significantly higher relative regeneration than motoneurons (p=0.012). By 9 dpi, motoneurons showed collateral branching with significantly more axons than controls at 12 mm (p=0.038). This regeneration hierarchy was maintained in vitro, where nociceptors extended the longest neurites and proprioceptors the shortest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13-C19, C72-C73 provide converging evidence from in vivo axon counting at multiple time points and distances, statistical comparisons, and in vitro neurite outgrowth assays. The data consistently show nociceptors > motoneurons > mechanoreceptors > proprioceptors in regenerative capacity. Statistical significance is reported with appropriate p-values and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Only 20% of regulated genes were common among the four neuronal subtypes after axotomy, with 3546, 4053, 3461, and 3281 genes differentially expressed in motoneurons, proprioceptors, mechanoreceptors, and nociceptors, respectively. Specific gene expression patterns distinguished muscle neurons (motoneurons and proprioceptors) from cutaneous neurons (mechanoreceptors and nociceptors), with 20 genes uniquely regulated in cutaneous neurons and 15 in muscle neurons (log2 fold-change >|2|).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C28-C30 are based on RNA-sequencing differential expression analysis with clear quantitative data. The 20% overlap calculation is directly supported by the reported numbers of DEGs. The identification of neuron-type-specific genes with fold-change thresholds is methodologically sound and well-documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C71"
+    ],
+    "result": "MED12 is proposed as a specific regulator of proprioceptor regeneration. Med12 was upregulated in proprioceptors (20.1 log2 fold-change) but downregulated in mechanoreceptors and nociceptors after injury. siRNA knockdown of Med12 (57% reduction, p=0.001) significantly increased the longest neurite (p=0.039) and total neurite extension (p=0.014) specifically in proprioceptors, with no effect on non-proprioceptive neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C43, C45-C47, C71 provide strong evidence through RNA-seq showing differential Med12 expression and functional validation via siRNA knockdown with cell-type-specific effects. The specificity is demonstrated by the lack of effect in PV- neurons. Statistical significance is reported for both knockdown efficiency and functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Neurotrophic factors differentially modulate neurite extension in sensory neuron subtypes. NT-3 specifically increased proprioceptor neurite length (2.32-fold, p=0.011) but not mechanoreceptors or nociceptors. NGF specifically increased neurite length in nociceptors (2.03-fold, p<0.0001) and mechanoreceptors (1.69-fold) but not proprioceptors (0.45-fold). This demonstrates that NT-3 acts as a 'muscle factor' and NGF as a 'cutaneous factor'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C78-C80 are supported by quantitative neurite outgrowth measurements in DRG explants from genetically labeled neurons. The differential responses are statistically significant with appropriate controls and multiple comparisons. The fold-change normalization allows direct comparison across neuron types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Pathway enrichment analysis revealed both common and neuron-type-specific regenerative pathways. All neurons activated focal adhesion, MAPK, and cAMP signaling pathways. Muscle neurons (motoneurons and proprioceptors) specifically enriched ErbB, VEGF, and semaphorin-plexin pathways. Cutaneous neurons enriched PKG and aldosterone pathways. JNK pathway was enriched only in nociceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are based on KEGG and GO enrichment analysis of RNA-seq data. The pathway assignments are appropriate for the differentially expressed genes identified. However, the functional significance of these pathway enrichments is not experimentally validated, only inferred from the transcriptomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The Ribotag approach successfully isolated neuron-type-specific translatomes. Cre/Ribotag mice showed HA-tagged ribosome expression in specific neuronal populations. RT-qPCR demonstrated several-fold enrichment of cell-type-specific transcripts (Chat, Pvalb, Npy2r, Trpv1) in respective immunoprecipitates, while the glial transcript Fabp7 was depleted. Regeneration markers (Gap43, Atf3, Tubb2b, Stm2) were enriched in all injured neuron populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 validate the Ribotag methodology through multiple approaches: immunostaining showing HA expression pattern, RT-qPCR showing enrichment of neuron-specific markers and depletion of glial markers, and RNA-seq showing expected regeneration marker upregulation. The validation is thorough and appropriate for establishing method specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "TRPV1-Cre/Ai9 mice label mostly peptidergic (42.8 \u00b1 1.2% co-labeling with CGRP) and non-peptidergic (30.1 \u00b1 1.4% IB4-reactive) small-diameter neurons in the DRG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by immunofluorescence co-labeling data with quantification. The percentages indicate that TRPV1-Cre labels a mixed population of nociceptors, which is consistent with known TRPV1 expression patterns. However, the sum of peptidergic and non-peptidergic percentages is ~73%, leaving ~27% uncharacterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Specific genes were differentially upregulated in individual neuron types after injury. Ngfr (p75NTR) was specifically enriched in lesioned motoneurons, confirmed by immunohistochemistry. Proprioceptors were the only population significantly upregulating Nrp1 and Nrp2. Increased ATF2-positive nuclei were observed in cutaneous mechanoreceptors after injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by RNA-seq data with immunohistochemical validation for p75NTR and ATF2. The specificity of Nrp1/Nrp2 upregulation in proprioceptors is based on RNA-seq differential expression analysis. The immunohistochemical validation strengthens the RNA-seq findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The intrinsic regenerative capacity differs between peripheral neuron subtypes. Sensory regeneration is inversely proportional to fiber size: large, myelinated neurons regenerate less robustly than smaller, less myelinated neurons. Motoneuron regeneration exceeds large-size DRG neurons but not small-size sensory neurons despite their large fiber size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are conclusions drawn from the experimental data on regeneration rates (C2, C13-C19). The inverse relationship between fiber size and regeneration in sensory neurons is supported by the observation that nociceptors (small, unmyelinated) > mechanoreceptors (mixed) > proprioceptors (large, myelinated). The motoneuron exception is documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Neurotrophic factors increased neurite length in DRG explants. NGF produced the largest increase (927.5\u00b185.0 \u00b5m, p<0.0001 vs control 441.7\u00b132.0 \u00b5m). BDNF significantly increased neurite length (771.1\u00b154.8 \u00b5m, p<0.0001). NT-3 produced a modest but significant increase (64.0\u00b148.6 \u00b5m, p=0.044).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are based on neurite length measurements in DRG explants with pan-neuronal PGP9.5 labeling. The statistical comparisons are appropriate. However, the NT-3 effect is very small (64 \u00b5m increase) with a large standard error (\u00b148.6 \u00b5m), suggesting high variability and a marginal effect despite statistical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The upregulation of MED12 in proprioceptors could hinder axon regeneration through inhibition of TGF-\u03b2 receptor 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is a hypothesis based on known MED12 function in cancer cells (C44, C51) and the role of TGF-\u03b2 in regeneration (C52). While Med12 knockdown increased proprioceptor neurite extension (C46), the mechanism was not validated. qPCR of TGF-\u03b2 pathway genes showed no significant changes (Figure 6\u2014supplement 1), leaving the mechanism uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Potential mechanisms for differential regeneration include: high Il6ra expression in nociceptors contributing to their greater regeneration; lack of Ndel1 upregulation in proprioceptors consistent with their limited regeneration; and repulsive effects of semaphorins through NRP2 potentially accounting for impaired proprioceptive axon growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 are speculations based on observed gene expression patterns and known functions from the literature. While the gene expression data (Il6ra upregulation in nociceptors, Nrp2 upregulation in proprioceptors, lack of Ndel1 upregulation in proprioceptors) are supported, the causal relationships to regeneration phenotypes are not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Potential explanations for observed regeneration patterns include: unmyelinated Npy2r+ fibers may regenerate faster than motoneurons but this might be masked by motor regenerative collaterals and heterogeneity in Npy2r+ neurons; and axotomy might trigger expression of regeneration inhibitory factors in proprioceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 are speculations to explain observed data. C81 attempts to reconcile the mechanoreceptor regeneration data with known fiber type differences, but this is not tested. C82 is a hypothesis that led to the Med12 investigation, but other inhibitory factors were not systematically explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior literature on peripheral neuron regeneration shows: single-cell RNA-seq has distinguished up to 11 DRG subtypes; sensory neurons regenerate faster than motoneurons; unmyelinated fibers recover function earlier than myelinated fibers (though some studies show equal speeds); and specific signaling pathways (Ras/Raf/MAPK, PI3K/Akt, JNK/c-Jun, cAMP/PKA/CREB) are activated after axotomy, with some showing neuron-type-specific activation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 are literature review claims supported by appropriate citations. These establish the context and prior knowledge for the current study. The citations appear relevant and the claims accurately represent the cited work based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Literature-based context for differentially expressed genes includes: MED12 inhibits TGF-\u03b2 signaling in cancer cells; NT-3 is a 'muscle factor' for proprioceptors and motoneurons; NGF acts on small sensory and sympathetic neurons; MED12 is a Mediator subunit regulating transcription; TGF-\u03b2 pathway promotes regeneration; and various other genes (BCAM, MYADM, GPC2, p75NTR, NRP2, NDEL1, ATF2, IL-6) have documented roles in cell adhesion, migration, axon guidance, or pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C48-C67 are literature review claims with appropriate citations. These provide context for interpreting the RNA-seq findings and support the rationale for focusing on specific genes like Med12. The citations appear relevant to the claims made.",
+    "result_type": "MINOR"
+  }
+]

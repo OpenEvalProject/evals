@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study successfully generated high-quality ChIP-seq and RNA-seq data from 58 frontal cortex samples (29 schizophrenia, 29 controls) using MOWChIP-seq technology with cell-type specific sorting (NeuN+ and NeuN- nuclei). Quality metrics including FRiP, PBC, NSC, and RSC values met or exceeded recommended thresholds, and cell-type identity was confirmed through marker gene expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C46 and C116-C124 collectively demonstrate robust experimental design and data quality. The quality control metrics (C39-C41) meet established standards, cell-type separation is validated by marker gene expression (C42), and the methodology is clearly described with appropriate controls including matched pairs processed in the same batch (C123). The data quality is comparable to state-of-the-art reference epigenomes (C124).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Schizophrenia subjects exhibited thousands of cell-type-specific epigenetic differences compared to controls, including 2,301 differential enhancers and 262 differential promoters in NeuN+ nuclei, and 2,657 differential enhancers and 360 differential promoters in NeuN- nuclei. These differences were enriched at known schizophrenia susceptibility loci including NRG1, DISC1, DRD3, and GRM3, with schizophrenia being the most significantly enriched trait in GWAS enrichment analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C47-C54 are well-supported by the differential analysis data presented in Figure 2 and Supplementary files. The identification of thousands of differential peaks with FDR <0.05 (C47-C48), their localization to known schizophrenia risk loci (C49-C52), and the GWAS enrichment analysis showing schizophrenia as the most enriched trait (C53-C54) provide converging evidence for schizophrenia-associated epigenetic alterations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study identified differentially expressed genes (DEGs) that showed significant overlap with previous single-nucleus RNA sequencing studies, with 236 of 802 DEGs in NeuN+ nuclei and 63 of 1,043 DEGs in NeuN- nuclei replicated. Additionally, 66 genes in NeuN+ and 148 genes in NeuN- nuclei showed concordant changes in both epigenetic marks and gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 demonstrate validation through independent replication and multi-omic concordance. The significant overlap with Ruzicka et al., 2020 (p-values provided) and the integration of epigenetic and transcriptomic changes provide strong support for the biological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "EpiSig integrative analysis identified 814 epigenomic clusters grouped into 6 sections, revealing cell-type-specific patterns of schizophrenia-associated changes. Section II clusters showed positive association with schizophrenia in genes enriched for 'Trans-synaptic signaling' in NeuN+ nuclei, while Section III showed negative association with 'Amyloid fibril formation' in NeuN+ nuclei and positive association with 'Neuron projection development' in NeuN- nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by the EpiSig analysis presented in Figure 3 and Supplementary files 10-11. The unbiased clustering approach integrating multiple data types and the identification of functionally relevant GO term enrichments provide strong evidence for cell-type-specific epigenomic patterns in schizophrenia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Taiji network analysis identified cell-type-specific transcription factors (TFs) and their regulatees altered in schizophrenia. In NeuN+ nuclei, all top 10 TFs were cell-type specific, with 207 regulatees involved in synaptic processes including 'Neurexins and neuroligins' and 'Protein-protein interactions at synapses'. In NeuN- nuclei, all top 10 TFs were also cell-type specific, with regulatees enriched in 'RAF/MAP kinase cascade' and 'RHO GTPase cycle'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by the Taiji analysis presented in Figure 4 and Supplementary file 12. The construction of 116 individual transcriptional networks and identification of cell-type-specific TFs with functionally relevant downstream targets provides strong evidence for transcriptional dysregulation in schizophrenia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Analysis of antipsychotic-free (AF) versus antipsychotic-treated (AT) schizophrenia cohorts identified alterations reversed by treatment. In NeuN+ nuclei, 116 cohort-specific DEGs were enriched in pathways including glutamatergic neurotransmission ('Activation of AMPK downstream of NMDARs'), IQGAP scaffold ('Rho GTPases activate IQGAPs'), and autophagy ('Aggrephagy' and 'Macroautophagy'). In NeuN- nuclei, TFs SOX11 and MGA showed AF-specific changes with 77 regulatees and 21 cohort-specific DEGs enriched in 'Post NMDA receptor activation events' and 'Long-term potentiation'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11 and C69-C80 identify pathways altered in AF-schizophrenia but not AT-schizophrenia, suggesting reversal by treatment. However, the lack of significant TFs in NeuN+ nuclei at FDR <0.05 (C70) weakens the evidence. The interpretation of 'reversal' is complicated by the cross-sectional design and potential confounders including treatment discontinuation in the AF group (acknowledged in Discussion). Longitudinal studies would be needed to confirm causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Analysis identified alterations specific to antipsychotic-treated (AT) schizophrenia subjects that were not present in antipsychotic-free (AF) subjects. In NeuN+ nuclei, FOXO1 showed AT-specific changes with 84 regulatees and 41 cohort-specific DEGs enriched in 'Regulation of p53 activity through phosphorylation', with all p53-related genes showing lower expression in AT-schizophrenics. No significant TFs were identified in NeuN- nuclei for AT-specific changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C85-C91 are supported by the comparative analysis between AF and AT cohorts presented in Figure 5 and Supplementary file 13. The identification of FOXO1 (FDR 4.89\u00d710\u207b\u00b2) and its regulatees involved in p53 regulation, along with the consistent direction of expression changes, provides evidence for antipsychotic-induced alterations distinct from schizophrenia pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Separate differential analyses of AF-schizophrenia/control and AT-schizophrenia/control cohorts revealed more differential features in AT-schizophrenia for most comparisons. In NeuN+ nuclei, AT-schizophrenia showed 3,658 differential enhancers versus 2,069 in AF-schizophrenia, though fewer differential promoters (36 vs 574). In NeuN- nuclei, AT-schizophrenia showed more differential features across all categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by the cohort-specific differential analyses presented in Figure 6 and Supplementary file 15. The data clearly show more differential enhancers and DEGs in AT-schizophrenia, though the dramatic reduction in differential promoters in AT NeuN+ nuclei (36 vs 574) is notable and may warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Age differentially affected gene expression and TF regulation in AT-schizophrenia subjects compared to AF-schizophrenia and controls. In NeuN+ nuclei, 77.2% of age-correlated genes in controls showed decreased expression with age, while only 2.8% in AF-schizophrenia and 35.1% in AT-schizophrenia showed this pattern. AT-schizophrenia showed 310 genes and 48 TFs with high age correlations, enriched in 'Regulation of protein kinase activity' and 'NGF-stimulated transcription'. Similar patterns were observed in NeuN- nuclei with enrichment in WNT signaling and NOTCH pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C92-C108 are well-supported by the age correlation analysis presented in Figure 7 and Supplementary file 19. The differential effects of age across cohorts, particularly the more pronounced effects in AT-schizophrenia, are clearly demonstrated with specific gene examples and pathway enrichments. The pairwise analysis controlling for individual matching strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript reviews prior work establishing that genetic factors alone are insufficient to explain schizophrenia etiology, citing GWAS studies identifying >270 loci (mostly in non-coding regions), twin studies showing 33% concordance in monozygotic twins, and epidemiological evidence for environmental risk factors including prenatal maternal infection and adverse life events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C14-C21 accurately summarize established knowledge from the cited literature. The heritability estimates, GWAS findings, twin concordance rates, and environmental risk factors are well-documented in the cited references (Sawa and Snyder 2002, Hilker et al. 2018, Trubetskoy et al. 2022, etc.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The manuscript reviews prior epigenetic research in schizophrenia, noting that most previous studies focused on DNA methylation rather than histone modifications, used bulk tissue rather than cell-type-specific approaches, and did not address the effects of antipsychotic treatment. Previous ChIP-seq studies in control subjects showed enrichment of schizophrenia GWAS variants in neuronal H3K27ac and H3K4me3 peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C22-C35 accurately summarize the state of prior epigenetic research in schizophrenia based on the cited literature (Bryois et al. 2018, Girdhar et al. 2018, 2022, etc.). The identification of gaps in the literature (lack of cell-type-specific histone modification studies addressing antipsychotic effects) appropriately motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study provides evidence for alterations in histone modifications at schizophrenia risk loci and identifies epigenomic signatures distinguishing AF-schizophrenia subjects from AT-schizophrenia subjects. Novel pathways altered in AF-schizophrenia (glutamatergic neurotransmission, IQGAP scaffold, autophagy in neurons; NMDA receptor activation and long-term potentiation in glia) were statistically unaffected in AT-schizophrenia, while alterations in p53 activity appeared as a consequence of antipsychotic treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 represent summary statements in the Discussion that are well-supported by the data presented throughout the Results section. The identification of cell-type-specific alterations, the distinction between AF and AT cohorts, and the pathway-level findings are all backed by the analyses presented in Figures 2-7 and associated supplementary data.",
+    "result_type": "MAJOR"
+  }
+]

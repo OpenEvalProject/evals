@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Traditional structural biology methods (X-ray crystallography and cryo-EM) produce ensemble-averaged density maps, but most deposited models represent only single conformations, despite biomolecules exchanging between multiple functionally important conformational states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C11 establish the biological and methodological context through established knowledge and citations to prior work. These claims accurately describe the fundamental problem that motivates the study: the disconnect between ensemble-rich experimental data and single-conformation modeling practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Manual creation of multiconformer models is complicated by difficulty distinguishing signal from noise, though multiconformer models are more interpretable than ensemble approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C12-C15 are supported by citations to prior work and established knowledge about the challenges of manual modeling and the advantages of multiconformer representations over ensemble methods. These claims provide appropriate background for the qFit method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "qFit is an automated computational strategy that incorporates conformational heterogeneity into models from high-resolution density maps, with algorithmic improvements including BIC-based selection, B-factor sampling, and cryo-EM compatibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C16-C20 describe the qFit method and its requirements. These are supported by the manuscript's data and appropriate citations to prior qFit versions. The claims accurately represent the method's capabilities and input requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The qFit algorithm samples backbone conformations, aromatic angles, and dihedral angles, then uses MIQP and BIC to select parsimonious multiconformer models for each residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 describe the core algorithmic steps of qFit with appropriate detail and are illustrated in Figure 1A. The sampling procedures and optimization approach are clearly documented and represent methodological contributions of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The test dataset consisted of 144 high-resolution (1.2-1.5 \u00c5) X-ray structures representing 72 folds with maximum 30% sequence identity, containing single-chain proteins without ligands or mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe the test dataset composition with specific criteria. The dataset design is appropriate for benchmarking, with good structural diversity and clear selection criteria to avoid bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "qFit models showed improved Rfree values in 76% of structures (median decrease of 0.6%) with similar R-gap values compared to deposited models, indicating improved model-data agreement without overfitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by data in Figure 2A and supplementary materials with appropriate statistical analysis. The Rfree improvement is consistent with theoretical expectations (cited), and the maintained R-gap values provide evidence against overfitting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "qFit dramatically increased multiconformer modeling from 2.9% of residues in deposited models to 40.7% in qFit models, with 92.5% of multiconformers having only two alternative conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by data analysis presented in Figure 2C. The substantial increase in multiconformer residues demonstrates qFit's ability to detect previously unmodeled conformational heterogeneity, with most being parsimonious two-state models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Rotamer analysis showed 93.7% of residues were 'Consistent' between deposited and qFit models, with 2.38% having additional rotamers in qFit models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by rotamer classification analysis presented in Figure 2D. The high consistency rate indicates qFit generally agrees with deposited models while identifying additional conformational states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "In the Pyrococcus horikoshii fibrillarin structure, qFit identified new rotamers for Leu58 and Met175 and detected potential coupled motions between alternative conformers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by data shown in Figure 2B. The identification of new rotamers demonstrates qFit's ability to detect unmodeled conformations, though the coupled motion inference (C72) is more speculative based on altloc labeling patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "qFit models showed improved geometry metrics including MolProbity scores (1.27 to 1.09, p=0.006), bond lengths (0.010 to 0.007 \u00c5, p=0.021), bond angles (1.30\u00b0 to 0.91\u00b0, p=3.79e-16), and clashscores (2.50 to 1.80, p=0.0028).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by data in Figure 3 with appropriate statistical tests. The improvements in multiple geometry metrics indicate that multiconformer modeling relieves strain from forcing single conformers to explain heterogeneous density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "24% of qFit models had worse Rfree than deposited models, mostly for structures with deposited Rfree >20%, suggesting qFit performs best on well-refined input models at late modeling stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by data analysis. The observation that qFit performs poorly on low-quality input models is important for understanding the method's limitations and appropriate use cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Validation using synthetic data from the ultra-high-resolution 7KR0 structure (47% multiconformers) showed qFit consistently captures single-conformer residues across resolutions but shows decreased detection of alternative conformations beyond ~1.8-2.0 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by synthetic data analysis presented in Figure 4. The resolution-dependent performance provides important guidance on when qFit is appropriate, though the synthetic noise model may not fully capture real experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "In cryo-EM structures, qFit increased multiconformer residues from 8.21% to 39.6% and correctly modeled 77% of residues in the apoferritin structure (PDB: 7A4M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by cryo-EM data analysis. The ability to recapitulate manually modeled conformations and identify new ones demonstrates qFit's applicability to high-resolution cryo-EM data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "qFit can uncover widespread conformational heterogeneity that better represents the underlying ensemble as demonstrated by lower Rfree values and can reliably detect manually modeled alternative conformers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are summary claims supported by the collective data throughout the manuscript, including Rfree improvements, rotamer analysis, and validation against manually modeled structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "qFit requires both high-resolution maps and very well-modeled input structures to effectively detect signal from noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by the resolution dependence data and the observation that qFit performs poorly on structures with high input Rfree. These represent important limitations for the method's applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "New qFit features include improved parallelization for large cryo-EM maps, electron scattering factors, modified solvent handling, switch to open-source CVXPY solver, and iterative refinement with occupancy-based conformation removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 describe specific algorithmic and computational improvements to qFit. These are methodological details supported by the implementation and appropriate citations (e.g., CVXPY).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C69",
+      "C70"
+    ],
+    "result": "Current cryo-EM classification approaches cannot sort based on alternative side-chain conformations, and inconsistent map handling and resolution reporting present challenges for qFit development in cryo-EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C69-C70 are supported by citations to prior work and data showing discrepancies between depositor-reported and EMDB-calculated resolutions. These identify important limitations in the cryo-EM field that affect qFit application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Improved modeling of macromolecules and solvent could further reduce R-factors, but current PDB/mmCIF formats limit ensemble representation, though qFit models are compatible with standard software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 discuss future improvements and format limitations. C53 is supported by citations to simulation work, while C54-C55 reflect knowledge of file format standards and software compatibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "AlphaFold has achieved success predicting structure from single-conformation models, but future improvements might come from better modeling of conformational heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 are speculative about future directions. While C56 accurately describes AlphaFold's success (with citation), C57 is explicitly speculative about potential future improvements without supporting data.",
+    "result_type": "MINOR"
+  }
+]

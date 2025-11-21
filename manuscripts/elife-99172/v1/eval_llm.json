@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A biochemical protocol was developed to isolate TNTs from U2OS cells, separating them from cell bodies and EVPs through mechanical shaking and differential centrifugation. The isolated TNT and EVP fractions were validated by TEM, nanoFCM, and western blot, showing distinct morphological and compositional characteristics while confirming minimal contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protocol is well-validated through multiple orthogonal approaches (TEM showing cylindrical TNT fragments vs circular EVPs, nanoFCM showing actin-chromobody enrichment in TNTs, western blots showing differential marker distribution). Controls demonstrate minimal contamination (absence of GM130, calnexin, low H2B-GFP). The serum-free culture validation confirms TNT nature is preserved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Mass spectrometry analysis of 12 independent TNT preparations identified 1177 proteins (the TNTome), revealing TNTs are enriched in cytoskeletal proteins (especially actin), RNA-associated proteins, metabolic enzymes, and specific membrane proteins. The TNTome shows partial overlap with but distinct composition from focal adhesions, filopodia, and EVPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic analysis is comprehensive with appropriate replication (12 preparations, requiring presence in \u22659). Validation includes finding known TNT proteins (actin, Myosin10, ERp29, N-cadherin) and demonstrating absence of contaminating markers (focal adhesion proteins, filopodia-specific proteins). The compositional differences from related structures are well-documented through comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Comparative proteomic analysis of TNTs versus EVPs from the same cultures identified 801 proteins for differential analysis, revealing 75% overlap but with 174 TNT-specific proteins. CD9 and CD81 tetraspanins were identified as abundant membrane proteins in TNTs, with CD81 showing similar levels in both TNTs and EVPs while CD9 was more abundant in EVPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis uses appropriate filtering (proteins present in \u22653 of 4 preparations and in the TNTome) and statistical methods (limma t-test with FDR correction). The differential abundance of tetraspanins is validated by western blot and immunofluorescence. The identification of CD9 and CD81 as major TNT components is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "In SH-SY5Y neuronal cells, CD9 and CD81 were confirmed as markers present on all TNTs (defined as actin-containing, substrate-unattached protrusions connecting cells), along with CD151, Integrin \u03b21, and vinculin, while Paxillin and GM130 were absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation in SH-SY5Y cells provides independent confirmation of the U2OS findings. The immunofluorescence data clearly shows CD9 and CD81 on all morphologically-defined TNTs. The presence of predicted proteins (CD151, Integrin \u03b21, vinculin) and absence of non-TNT markers (Paxillin, GM130) supports the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "CD9 knockout significantly reduced TNT-connected cells (~20% decrease), while CD81 knockout had no effect on TNT number. Double knockout showed even greater reduction. CD9 overexpression increased TNT-connected cells (~50% increase), while CD81 overexpression had no effect, indicating CD9 plays a role in TNT formation/stabilization with possible partial complementation by CD81.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic manipulation experiments (KO and OE) show consistent, statistically significant effects across multiple independent experiments (N=3). The complementary approaches (loss-of-function and gain-of-function) support the same conclusion. The double KO showing additive effects supports partial redundancy. Statistical analysis appears appropriate (p-values provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Both CD9 and CD81 positively regulate vesicle transfer through TNTs in donor cells. CD9 KO reduced transfer consistent with reduced TNT number, while CD81 KO reduced transfer despite normal TNT number. CD9 OE increased both TNT number and transfer, while CD81 OE increased transfer without affecting TNT number, suggesting distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The vesicle transfer assays are well-controlled with secretion controls showing minimal contribution. Flow cytometry provides quantitative data with appropriate gating strategies. The dissociation between TNT number and transfer function in CD81 manipulations is a key finding supported by consistent results across KO and OE experiments. Statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "CD9 and CD81 have non-redundant roles in TNT biology: CD81 KO in CD9 OE cells did not prevent increased TNT formation but CD9 OE compensated for CD81 absence in vesicle transfer. Conversely, CD9 KO in CD81 OE cells reduced both TNT number and transfer, showing CD81 cannot compensate for CD9 in TNT formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The epistasis experiments (OE + KO combinations) provide strong evidence for distinct, non-redundant functions. The asymmetric compensation (CD9 can compensate for CD81 but not vice versa) is demonstrated through multiple complementary experiments with consistent results. The conclusion of different roles is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Anti-CD9 antibody treatment induced CD9 clustering and increased TNT-connected cells by >30% and vesicle transfer by 30% in WT cells. This effect on TNT number occurred independently of CD81 (similar increase in CD81 KO cells), but the increased vesicle transfer required CD81, supporting CD9's role in TNT stabilization and CD81's role in functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The antibody clustering experiments provide functional validation of CD9's role with appropriate controls (CD46 AB, CTR AB showing no effect). The differential effects in CD81 KO cells (TNT number increased but transfer not increased) provide strong evidence for distinct functions. The experiments are well-controlled and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Time-lapse imaging showed CD9 antibody treatment significantly increased TNT duration from ~11 minutes to >22 minutes in both WT and CD81 KO cells, accompanied by CD9 enrichment at TNT bases, confirming CD9's role in TNT stabilization independent of CD81.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The live imaging provides direct evidence of TNT stabilization with quantitative measurements of duration. The effect is consistent across genotypes (WT and CD81 KO) and statistically significant. The visualization of CD9 enrichment at TNT bases provides mechanistic insight. Control antibody (CD46) shows no effect, validating specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "CD81 KO cells showed increased proportion of TNTs containing DiD-labeled vesicles and reduced percentage of 'fully green' TNTs (from 69% to 34%) in actin-chromobody cocultures, suggesting CD81 regulates completion of iTNT formation by facilitating docking/fusion with opposing cells rather than vesicle entry into TNTs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments provide mechanistic insight into CD81 function through complementary approaches: fixed cell analysis showing vesicle accumulation in TNTs and coculture experiments showing incomplete iTNT extension. The interpretation that vesicles enter but cannot complete transfer is supported by both datasets. The proposed mechanism of CD81 regulating docking/fusion is reasonable but appropriately presented as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The TNTome shows minimal overlap with midbody proteins (13 common TM proteins, absence of specific midbody markers) and migrasomes (different attachment properties, absence of migrasome-specific markers), confirming TNTs have a unique composition distinct from other cellular structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately addresses potential contamination concerns through comparative analysis with known proteomes of related structures. The absence of specific markers for midbodies (CRIK, CEP55, PLK1, etc.) and migrasomes (TSPAN4/9, NDST1, etc.) despite their expression in U2OS cells provides strong negative evidence. The conclusion of unique composition is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "CD9 and CD81 are positive regulators of TNT function but have minimal impact on EVP production or function, as demonstrated by lack of effect on secretion-mediated transfer and supported by recent literature showing minimal impact on EV composition and delivery. This suggests independent regulation of TNTs and EVPs by tetraspanins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The secretion control experiments consistently show no effect of CD9/CD81 manipulation on EVP-mediated transfer, supporting specificity for TNTs. The integration with recent literature (Fan et al., 2023; Tognoli et al., 2023) strengthens the conclusion. The proposal of independent regulation is appropriately qualified as a suggestion while acknowledging possible crosstalk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "CD9 stabilizes TNTs (demonstrated by increased TNT duration with antibody treatment and CD9 enrichment at TNT bases), while CD81 regulates TNT functionality by facilitating iTNT completion and membrane docking/fusion (demonstrated by vesicle accumulation in TNTs and reduced 'fully green' TNTs in CD81 KO cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis of the mechanistic findings is well-supported by the collective experimental evidence from multiple approaches (genetic manipulation, antibody treatment, live imaging, vesicle tracking). The proposed mechanisms are consistent with all observations and appropriately distinguish between demonstrated effects (stabilization, vesicle transfer) and proposed mechanisms (docking/fusion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "CD9 and CD81 show partial functional redundancy: double KO shows greater reduction than single KO, CD9 OE can bypass CD81 requirement for vesicle transfer, but CD81 cannot compensate for CD9 in TNT formation. A working model proposes CD9 stabilizes iTNT interactions and recruits CD81 to docking sites for membrane anchoring and channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evidence for partial redundancy is strong from multiple epistasis experiments. The asymmetric compensation is clearly demonstrated. The working model (Figure 7D) integrates all findings coherently, though the specific molecular mechanisms remain speculative. The model is appropriately presented as a proposal based on the data rather than proven fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "TNTs and EVPs are cellular structures with partially overlapping composition (75% common proteins), but CD9 and CD81 tetraspanins are fundamental regulators of TNT formation with complementary, non-redundant roles in TNT biogenesis, potentially through formation of protective tetraspanin-enriched microdomains at fusion sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary accurately reflects the major findings of the study. The partial overlap between TNTs and EVPs is quantified. The complementary roles of CD9 and CD81 are well-established through the extensive functional studies. The speculation about TEM protection at fusion sites is appropriately qualified and based on recent literature (Huang et al., 2022).",
+    "result_type": "MAJOR"
+  }
+]

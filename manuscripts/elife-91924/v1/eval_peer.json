@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed a comprehensive agent-based model using the Cellular-Potts framework in CompuCell3D, incorporating over 100 parameters from more than 100 published studies. The model represents a 2D cross-section of murine skeletal muscle tissue with approximately 50 muscle fibers, includes seven cell types (muscle fibers, SSCs, fibroblasts, neutrophils, macrophages, microvessels, lymphatic vessels) and seven diffusing cytokines, and simulates 28 days of regeneration with 15-minute timesteps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly recognize this as a comprehensive, well-developed model. Reviewer 1 states it is 'so-far the most comprehensive, spatially resolved in 2D, dynamical, multicellular model of murine muscle regeneration.' Reviewer 2 notes it 'extends previous agent-based models...by incorporating additional agent rules (altogether now based on over 100 published studies).' Reviewer 3 confirms 'the manuscript identified relevant model parameters from a long list of biological studies.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model was calibrated using parameter density estimation (CaliPro algorithm) with Latin hypercube sampling of 600 samples run in triplicate. Initial ranges for 52 unknown parameters were determined by literature review or model testing, and the parameter space was narrowed through eight iterations. The final parameter set was validated with 100 runs to ensure consistency despite stochastic variation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'The estimation of 52 unknown parameters against three time courses of tissue-scale observables...employs the CaliPro algorithm (Joslyn et al., 2021) and sensitivity analysis.' Reviewer 3 notes 'The mathematical methods used for parameterization and validation are transparent.' No reviewer raises concerns about the calibration methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Following calibration, the model successfully captured SSC and fibroblast cellular behaviors as well as CSA outcomes that aligned with experimental studies. The model data were consistent with experimental trends, with 95% confidence intervals within the standard deviation for all calibration timepoints except SSCs at day 3.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'the presented analysis is solid' and the model has been 'calibrated' into 'one coherent calibrated framework.' Reviewer 2 confirms the model was calibrated 'against three time courses of tissue-scale observables (muscle cross-sectional area recovery, satellite stem cell count and fibroblast cell count).' No concerns are raised about the calibration results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C57"
+    ],
+    "result": "The calibrated model was validated by comparing model outputs for M1, M2, and total macrophage counts, neutrophil counts, and capillary counts to published experimental data. These outputs were kept separate from calibration criteria and followed experimental trends without requiring extra model tuning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'The model is validated against additional time courses of tissue-scale observables and qualitative perturbation data, which match almost all conditions.' Reviewer 1 notes 'the presented analysis is solid.' No reviewer questions the validation approach or results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Eight model perturbations varying cell or cytokine conditions were compared to published experimental studies to validate predictive capabilities. The model reproduced findings showing both improved and diminished regeneration, including VEGF-A injection effects, cell depletion impacts, and hindered angiogenesis outcomes, with most predictions aligning with experimental results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 confirms the model 'is validated against...qualitative perturbation data, which match almost all conditions.' Reviewer 1 states the model 'has the potential to be a very valuable tool' and the 'presented analysis is solid.' The successful validation across multiple perturbation types is recognized without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Two model perturbations showed discrepancies with experimental results: TNF-\u03b1 knockout predicted increased CSA recovery while experiments showed decreased recovery, and macrophage depletion predicted sustained decreased TGF-\u03b2 while experiments showed initial decrease followed by increases at days 7 and 14. The authors attribute these differences to missing model components (interferon cross-regulation) and experimental methodology limitations (clodronate liposome effects).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the model 'match almost all conditions' (Reviewer 2), the explicit acknowledgment of these two discrepancies and the authors' hypothetical explanations indicate limitations in predictive accuracy for specific perturbations. No reviewer directly addresses these discrepancies, suggesting they were noted but not considered fatal flaws.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Latin hypercube sampling and partial rank correlation coefficient (PRCC) analysis of cytokine decay and diffusion parameters identified temporal relationships between cytokine parameters and regeneration metrics. HGF decay was the most influential parameter, and positive correlations were found between CSA recovery and TGF-\u03b2/MMP-9 decay, while HGF decay was negatively correlated with CSA recovery.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly mentions 'sensitivity analysis' as part of the parameter estimation approach. Reviewer 1 notes the model enables 'analysis of emergent behavior across multiple spatial scales.' The sensitivity analysis methodology and results are not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Combined alterations of specific cytokine decay and diffusion parameters (lower HGF decay, higher TGF-\u03b2 decay, higher MMP-9 decay, higher MCP-1 diffusion, lower VEGF-A decay) resulted in synergistic effects with 13% increase in CSA recovery at 28 days compared to unaltered regeneration. This combined perturbation showed greater fibroblast and SSC proliferation, faster capillary regeneration, and higher peaks in cell counts than individual perturbations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states the model 'is here used to predict (also non-monotonic) responses of (combinations of) cytokine perturbations' and describes 'Testable model predictions of (also non-monotonic) emergent behaviors.' Reviewer 1 notes the model 'has the potential to be a very valuable tool.' The combined cytokine perturbation predictions are presented as a key model output without reviewer criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C91"
+    ],
+    "result": "VEGF-A injection simulations showed dose-dependent effects with a non-monotonic response: CSA recovery increased up to the high dose (10\u00b3 relative concentration) but plateaued at extra high dose (2\u00d710\u00b3). All doses increased capillary counts proportionally, and the impact on SSC and fibroblast peaks was dose-dependent, with medium and low doses showing transient benefits.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly highlights 'Testable model predictions of (also non-monotonic) emergent behaviors are derived and discussed,' directly referencing this type of dose-response finding. The non-monotonic behavior is recognized as a valuable model prediction. No concerns are raised about these simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Hindered angiogenesis simulations predicted elevated HGF, TGF-\u03b2, and IL-10 levels from days 5-28, lower MCP-1 peak with elevated late-stage levels, and persistently lower CSA recovery that did not achieve unaltered regeneration levels throughout the 28-day simulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions are part of the validated perturbation studies. Reviewer 2 notes the model 'match almost all conditions' in validation. The hindered angiogenesis results align with experimental observations as stated in the manuscript, and no reviewer questions these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C92"
+    ],
+    "result": "Cytokine knockout simulations revealed complex temporal cross-talk between cytokines: MCP-1 KO increased most other cytokines except VEGF-A at 12 hours; TNF-\u03b1 KO decreased TGF-\u03b2 early but strongly increased it by day 28; IL-10 KO increased TNF-\u03b1 peaking at day 7. These results demonstrate that removal of one cytokine has cascading temporal impacts on the cytokine network.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 describes the model as enabling 'analysis of emergent behavior across multiple spatial scales in a physiologically relevant system.' The cytokine cross-talk findings represent emergent network behaviors that reviewers recognize as valuable model outputs. No concerns are raised about these predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C105",
+      "C106"
+    ],
+    "result": "The current model advances beyond previous agent-based models by incorporating spatial representations of cytokine behaviors with decay and diffusion dynamics, microvessel adaptations including angiogenesis, and dynamic extracellular matrix properties. These additions enable investigation of cytokine alterations and angiogenesis impacts that were not possible in prior models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'This work extends previous agent-based models...by incorporating additional agent rules...threshold parameters and interactions with fields of cytokines and growth factors as well as capillaries (dynamically changing through damage and angiogenesis).' Reviewer 1 confirms it is 'the most comprehensive' model to date. The advances over prior models are clearly recognized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C101",
+      "C102",
+      "C107"
+    ],
+    "result": "The model provides a more controlled environment for studying muscle regeneration than in vivo experiments, has the capability to test and optimize various cytokine combinations and temporal treatment schedules, and demonstrates a novel approach using parameter identification to guide perturbations for generating new hypotheses about enhanced regeneration.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states the model 'represents a valuable resource for further analysis of emergent behavior' and is 'a good starting point for future work.' Reviewer 1 notes it 'has the potential to be a very valuable tool in the areas of tissue morphogenesis, regenerative therapies, quantitative modeling and simulation.' The methodological contributions are recognized by all reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors acknowledge multiple model limitations including: incomplete representation of all relevant cell types and cytokines (though likely with redundant functions), lack of hypertrophy representation, 2D rather than 3D geometry (justified by prior studies), integration of datasets from diverse sources, potential inability to capture behaviors outside calibration data, possible non-unique parameter sets, calibration only to male mice data, and limited availability of female muscle regeneration data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges 'The single-used parameter set is a good starting point for future work that can...analyze model results from the full distribution of matching parameter values and for a spectrum of realistic tissue configurations,' directly addressing the parameter uniqueness and configuration limitations. All reviewers recognize this as a starting point for future refinement, implicitly accepting the stated limitations as reasonable for the current work.",
+    "result_type": "MINOR"
+  }
+]

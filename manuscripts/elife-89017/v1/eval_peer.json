@@ -1,0 +1,152 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26"
+    ],
+    "result": "DUX4 expression is more prevalent and at higher levels in metastatic cancers compared to primary tumors. The authors report that ~10-50% of advanced bladder, breast, kidney, prostate, and skin cancers express DUX4, with markedly higher proportions and absolute expression levels in metastatic cohorts compared to TCGA (primarily primary) cancers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes this finding is 'striking' but raises an important concern that TCGA melanoma cohort contains mostly locoregional metastatic samples (367 metastatic vs 81 primary), suggesting the comparison may not be as clear-cut as presented. The reviewer requests analysis of primary vs. locoregional vs. distant metastatic samples to clarify this finding. While the validation using matched FFPE/frozen samples is acknowledged as 'nice,' the fundamental comparison remains questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "DUX4 expression is detectable by both poly(A)-selection and hybrid probe capture sequencing methods, with higher levels typically detected by poly(A) sequencing. The authors conclude this validates that high DUX4 expression rates in metastatic cohorts reflect true expression rather than technical artifacts from FFPE tissue processing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'The analysis of tumors with matched FFPE and flash frozen samples with hybrid probe capture and polyA sequencing, respectively is a nice validation to show that the difference in Dux4 expression is not due to differences in preservation of starting material/sequencing.' This methodological validation is accepted without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DUX4 expression in metastatic urothelial carcinoma is associated with an immunodeficient tumor microenvironment, including downregulation of immune-related genes, suppression of IFN-\u03b3 activity, reduced expression of MHC class I and II antigen presentation machinery, decreased CD8+ T cell infiltration, immune cell exclusion phenotypes, reduced chemokine expression, and decreased PD-L1 levels on tumor and immune cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states the findings are 'clear and unambiguous using multiple lines of data and analyses (bulk RNAseq, DUX4-positive vs DUX4-negative tumors, different immune cell and cytokine signatures; IHC showing an association with immune deserts and immune excluded phenotypes).' However, the reviewer critically notes 'this is an association and does not demonstrate causality,' indicating the mechanistic interpretation is not fully supported by the observational data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C49"
+    ],
+    "result": "DUX4 expression is associated with decreased objective response to PD-L1 blockade in urothelial carcinoma patients, as measured by RECIST criteria.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'This study presents a valuable finding on the association between DUX4 expression with features of immune evasion in human tissue and clinical outcomes in patients with advanced urothelial cancer.' Reviewer 1 acknowledges the association with clinical outcomes without specific critique of the response rate findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C74"
+    ],
+    "result": "DUX4 expression is an independent predictor of survival in urothelial carcinoma patients treated with PD-L1 blockade, remaining significant after controlling for TMB and other clinical/molecular features. DUX4 positivity is associated with a 3.2-fold increased risk of death and a median survival reduction of over 1 year.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states the survival analyses 'show fairly convincingly that Dux4 provide independent predictive information beyond clinical variables and TMB,' but raises a critical methodological concern: 'the choice to split the cohort into Dux4 negative (defined as < 0.25 TPM) and Dux4 positive (> 1 TPM) while excluding a large number of patients (n=126 pts) that fall in between has significant impact on the rigor of conclusions.' Reviewer 3 extensively critiques the inconsistent DUX4 categorization thresholds used across different analyses and the exclusion of intermediate patients, stating this 'has significant impact on the rigor of conclusions' and makes 'interpreting the resulting model awkward.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Random Survival Forest (RSF) modeling confirms DUX4 as an important predictor of survival, with the model showing appropriate fit (test error 32.6%), predicting ~20% decrease in 1- and 1.5-year survival probabilities for DUX4+ patients, and identifying DUX4 as the third most important feature after ECOG PS and TMB. Time-dependent analyses show DUX4's importance is most prominent at later timepoints.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The use of random survival forests to quantify the (predictive) marginal effect of Dux4+ vs Dux4- expression on survival in a non-parametric model as well as shed light on association with survival at different landmark times using Shapley values is quite interesting and well conducted.' The editor notes 'Figure 5 now illustrates the key features of survival probability estimates over time for patients assigned to with the test or training set,' indicating improvements were made and accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors define DUX4-positive samples as >1 TPM and DUX4-negative as <0.25 TPM for Cox PH and RSF analyses, excluding 126 patients with intermediate expression to avoid misclassifications due to RNA-seq sensitivity limitations at low expression levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 extensively critiques this approach, stating 'the definition of negative versus positive DUX4 expression varies throughout the paper' with different thresholds used in different figures. The reviewer notes 'If categorization is needed, a rationale should be provided (ideally prospectively and not based upon the observed data, so as to avoid the perception of forking paths analyses), and it should be consistently applied.' Reviewer 1 similarly states the exclusion of intermediate patients 'has significant impact on the rigor of conclusions' and requests 'showing all the data (e.g. including the 3rd group of in-betweens in the survival analyses as a separate group).'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C78"
+    ],
+    "result": "DUX4-positive metastatic tumors transcribe the full-length coding region (including the C-terminal domain), suggesting intact capability as a STAT1 suppressor, while B-cell ALL exhibits expected C-terminal truncation due to DUX4-IGH fusion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer raises concerns about the RNA-seq coverage analysis or the interpretation regarding full-length vs. truncated transcripts. This technical finding is implicitly accepted as supporting the functional interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Binary categorization of patients by DUX4 expression status is sufficient to stratify patients according to ICI response, suggesting that screening for DUX4 tumor expression through methods like IHC could have clinical utility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Reviewer 1 acknowledges the stratification works, they question whether 'Dux4 expression better than other correlated immune signatures/markers (e.g. interferon gamma, T effector signature, overall immune infiltrate) in providing additional information?' This suggests the clinical utility claim requires additional comparative validation. The binary categorization approach itself is critiqued by Reviewers 1 and 3 regarding threshold selection and patient exclusion.",
+    "result_type": "MAJOR"
+  }
+]

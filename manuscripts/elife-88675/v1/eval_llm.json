@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The manuscript provides epidemiological context for colorectal cancer (CRC), citing that CRC ranks as the 3rd most commonly diagnosed and 2nd most lethal cancer worldwide in 2020, with progression from normal mucosa to metastatic carcinoma taking over 20 years. Advanced adenoma (AA) is identified as a crucial precancerous lesion, with about 40% progressing to invasive CRC within 10 years. Early detection through endoscopy can achieve >90% 5-year survival for T1a stage CRC, but current screening methods face limitations in compliance and cost-effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C60-C66 are all supported by appropriate citations to peer-reviewed literature (Sung et al. 2021, Brenner et al. 2007, Li et al. 2019, Cao et al. 2018, Chen et al. 2016, Siegel et al. 2017, Force 2016, Sung et al. 2015). These claims establish the clinical context and rationale for the study, representing well-established epidemiological and clinical knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C67"
+    ],
+    "result": "Current screening methods FOBT and FIT show poor sensitivity for detecting advanced adenoma (AA), with FOBT exhibiting 20% sensitivity (95% CI 6.8-40.7%) and FIT showing 32% sensitivity (95% CI 14.9-53.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C67 are supported by citations to Graser et al. 2009 and Haug et al. 2011, providing specific statistical data with confidence intervals. This establishes the clinical need for improved AA detection methods and justifies the development of alternative screening approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Isolated plasma small extracellular vesicles (sEVs) were characterized and validated according to standard criteria, showing cup-shaped vesicle-like structures by TEM, size distribution of 75-200nm by NTA, enrichment of positive markers (CD9, TSG101, Alix) and absence of negative marker (Calnexin) by Western blot, with an RNA concentration of 3.70\u00b12.39 ng per mL plasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 describe proper sEV characterization following MISEV2018 guidelines, with multiple orthogonal validation methods (TEM, NTA, Western blot) and quantitative RNA measurements. The data shown in Figure 2a-c support these characterization claims, demonstrating rigorous isolation and validation procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Comprehensive RNA profiling of plasma sEVs identified 58,333 annotated RNAs, including 2,694 miRNAs (1,838 known, 856 novel), 24,927 mRNAs (18,947 known, 5,980 novel), and 30,712 lncRNAs (12,928 known, 17,784 novel).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C40-C42 report direct RNA sequencing results with specific counts for different RNA species. The data are deposited in SRA (PRJNA639943) and the methods describe appropriate RNA-seq library preparation and bioinformatics pipelines. The large number of novel RNAs identified is consistent with deep sequencing of sEV cargo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C19",
+      "C20",
+      "C43"
+    ],
+    "result": "Differential expression analysis identified 1,615 sEV-RNAs differentially expressed in T1a stage CRC vs. normal controls and 888 sEV-RNAs in AA vs. normal controls, with 519 (58%) overlapping between the two comparisons. A total of 2,621 RNA species showed potential for distinguishing colorectal tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C19-C20, C43 report differential expression analysis results with specific numbers and overlap percentages shown in Venn diagrams (Figure 2g). The 58% overlap between AA and CRC DEGs supports the inference that most sEV-RNAs remain abnormally expressed during progression. Statistical methods (Mann-Whitney U test, FDR adjustment) are appropriately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C21"
+    ],
+    "result": "The top 100 miRNAs, mRNAs, and lncRNAs could distinguish T1a stage CRC patients from AA and NC participants by unsupervised hierarchical clustering, and differentially expressed genes were enriched in cancer-related pathways including Pathways in cancer, MAPK signaling, and Focal Adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C21 are supported by hierarchical clustering results (Figure 2e) and KEGG pathway enrichment analysis (Figure 2h). The clustering shows clear separation of groups, and pathway enrichment provides biological context. However, the term \"roughly distinguish\" in C18 suggests imperfect separation, which is appropriate given the complexity of the disease states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Cell-specific feature analysis using ssGSEA revealed that sEV-RNAs from CRC and AA patients showed higher expression of inflammation-promoting cell markers, MHC class I, HLA, TIL, and Paneth cells, with significantly higher Immune and Estimate scores compared to normal controls. This indicates a higher proportion of inflammatory cell-originated sEVs in plasma of CRC, RC, and AA patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by ssGSEA analysis (Figure 3c-e) and microenvironmental score calculations using the ESTIMATE algorithm. The statistical significance is indicated in the figures. The inference about inflammatory cell origin (C26) is reasonable based on the enrichment patterns, though it remains an interpretation of the data rather than direct evidence of cellular origin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C27",
+      "C28"
+    ],
+    "result": "Weighted gene coexpression network analysis (WGCNA) categorized 1,525 differentially expressed sEV-RNAs into six coexpression modules, with most miRNAs categorized into the brown module, suggesting coordinated regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C27-C28 describe WGCNA results shown in Figure 4a-d. The module construction is appropriately described with specific parameters (minimum module size 30, merge threshold 0.1). The observation that most miRNAs cluster in the brown module (C28) is supported by the module composition data and leads to a reasonable inference about coordinated regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "A 60-gene t-SNE model consisting of the top 10 RNAs from each of six WGCNA modules could distinguish T1a stage CRC/AA from normal control samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by t-SNE clustering results shown in Figure 4f, which demonstrates clear separation of the three groups (NC, AA, CRC). The model uses orthogonal features from different modules, which is a strength. However, the phrase \"could well distinguish\" is somewhat qualitative; quantitative performance metrics would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Module-trait correlation analysis revealed that different WGCNA modules were significantly associated with specific clinical features: the red module with endoscopic classification, the black module with endoscopic classification and LST morphology, and the green module with LST morphology and multiple-sited features. RT-qPCR validation confirmed that flat lesions showed overexpressed MT-ND2 levels and LST tumors showed higher HIST2H2AA4 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by module-trait correlation analysis (Figure 6a) and RT-qPCR validation (Figure 6b). The correlations are statistically significant as shown in the heatmap, and the RT-qPCR validation in an independent set of samples strengthens these findings. This demonstrates that sEV-RNA profiles can provide information beyond simple diagnosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "For CRC prediction, an 8-gene sEV-RNA signature achieved an AUC of 0.76 using Lasso regression, with the highest AUC of 0.80 achieved using SVM algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 report ROC analysis results for CRC prediction shown in Table 2 and Figure 7a-d. The comparison of three algorithms (logistic regression, Lasso, SVM) is appropriate, and the performance metrics are clearly reported. The validation was performed in an independent cohort of 124 participants (C53), which strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "For AA prediction, a 9-gene sEV-RNA signature achieved an AUC of 0.88 using Lasso regression, representing excellent efficacy in AA detection among noncancerous individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 reports ROC analysis results for AA prediction shown in Table 2 and Figure 7e-h. The AUC of 0.88 is notably higher than the performance of current screening methods (FOBT 20%, FIT 32% sensitivity for AA), representing a substantial improvement. The validation in an independent cohort supports this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C38",
+      "C39"
+    ],
+    "result": "An optimized classifier using quadratic discriminant analysis (QDA) achieved 79.3% specificity and 99.0% sensitivity for identifying high-risk individuals (AA/CC/RC), with an overall accuracy of 78% (ranging from 63% to 100%) for direct sample classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C38-C39 report QDA classification performance shown in Figure 7i-j. The high sensitivity (99.0%) with only one CC sample missed is particularly important for a screening test, though the specificity (79.3%) suggests some false positives. The overall accuracy of 78% is reasonable for a multi-class classification problem. These metrics are clearly reported and supported by the confusion matrix.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The authors claim this is the first published whole-transcriptomic profile (including miRNA, mRNA, and lncRNA) dataset from human plasma EVs and the first attempt to simultaneously diagnose early CRC and precancerous AA by a plasma sEV-RNA signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C45 assert novelty based on the authors' knowledge of the literature. While the comprehensive profiling of miRNA, mRNA, and lncRNA in plasma sEVs for early CRC and AA detection appears novel, these claims cannot be fully verified without exhaustive literature review. The phrase \"to our knowledge\" appropriately qualifies the novelty claim, but independent verification would be needed to confirm these are truly \"first\" achievements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C58",
+      "C59",
+      "C73",
+      "C74"
+    ],
+    "result": "Several identified sEV-RNAs have been previously reported in cancer-related functions: miR-425-5p promotes CRC via BRAF/RAS/MAPK pathways, let-7f-5p regulates osteosarcoma proliferation, PPDPF expression correlates with worse prognosis, HIST1H2BK predicts poor prognosis in glioma, lncARSR promotes sunitinib resistance in renal cancer, HChrR6 mRNA shows therapeutic effects in breast cancer, and HIST2H2AA4/MT-ND2 reflect proliferation rate and energy metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C58-C59, C73-C74 cite appropriate literature (Angius et al. 2019, Chen et al. 2020, Mao et al. 2019, Liu et al. 2020, Qu et al. 2016, Forterre et al. 2020, Sun et al. 2009) to support the biological relevance of identified biomarkers. These citations provide context for the functional significance of the sEV-RNAs, though they do not directly validate the findings in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The authors speculate that elevated levels of HIST2H2AA4 and MT-ND2 in sEVs could be a potential indicator of invasiveness, based on their association with proliferation rate and energy metabolism in tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is a speculative inference connecting tissue-level observations (C73-C74) to sEV-RNA levels. While the correlation with morphological features (C33-C34) provides some support, the mechanistic link between elevated sEV-RNA levels and tumor invasiveness is not directly demonstrated. This remains a hypothesis requiring further validation through functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study enrolled 60 participants for biomarker discovery (31 T1a stage CRC including 22 colon and 9 rectum cancer, 19 AA, 10 NC) and 124 participants for validation (47 CRC, 24 AA, 53 NC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe the study cohorts with specific numbers and clinical characteristics. The two-stage design (discovery and validation) is appropriate for biomarker studies. However, the relatively small discovery cohort (n=60) and the use of non-cancerous outpatients with gastrointestinal symptoms as controls (rather than healthy individuals) are potential limitations not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The manuscript establishes the biological rationale for studying sEV-RNAs, noting that sEVs are 40-100 nm membrane particles derived from endosomes that participate in cell-cell communication, their phospholipid bilayer protects enclosed RNA from RNase degradation, and sEV-encapsulated miRNAs outperform free-floating counterparts in diagnostic liquid biopsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by appropriate citations (An et al. 2015, Th\u00e9ry 2015, Vlaeminck-Guillem 2018, Min et al. 2019b) and represent established knowledge in the EV field. Claim C57 specifically cites the authors' previous work demonstrating superior performance of sEV-miRNAs, providing rationale for the current study's focus on sEV-RNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors conclude that circulating sEVs of T1a stage CRC and AA patients have distinct RNA profiles that successfully enable detection via liquid biopsy and provide a specific plasma sEV-RNA profile that could offer insights into CRC carcinogenesis mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 represent the main conclusions of the study, supported by the comprehensive profiling data (C8-C10), differential expression analysis (C9-C10, C19-C20), classification performance (C35-C39), and validation in an independent cohort (C53). The distinct RNA profiles are well-demonstrated, and the diagnostic performance supports the claim of successful detection. However, C70's suggestion about mechanistic insights is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C76"
+    ],
+    "result": "The authors speculate that the plasma sEV-RNA profile could provide insights into CRC carcinogenesis mechanisms, that a comprehensive biomarker panel combining sEV-RNAs and proteins could be promising for identifying both early and advanced CRC patients, and that in-depth data mining of sEV-RNAs would be helpful in healthcare decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72, C76 are speculative statements about future applications and potential of the findings. While reasonable based on the current results and literature (e.g., Zheng et al. 2020 on sEV-protein profiling), these represent hypotheses for future work rather than demonstrated results. The claims appropriately use qualifying language (\"could be,\" \"would be\") to indicate their speculative nature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,403 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The study collected 69 full-term placental samples (35 Tibetans, 34 Han migrants) at 3650m elevation, dissected into seven layers. Tibetan newborns had significantly higher birth weight (p=0.0121) but no differences in placental weight or volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 describe the study design and basic phenotypic findings. The sample collection is clearly documented, and the birth weight difference is supported by appropriate statistical testing (unpaired t-test, p=0.0121). The lack of differences in placental weight/volume is also statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Maternal-fetal origin analysis showed UC and VF are 100% fetal, VM/VI/CP/AN are >95% fetal, while CN is 70% maternal. RNA-seq data primarily represents newborn transcriptomes except for CN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe the maternal-fetal composition analysis using genomic and transcriptomic data (Figure 1B). The methodology is sound and the interpretation that RNA-seq primarily reflects fetal transcriptomes is logically derived from the composition data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PCA analysis shows placental samples cluster by tissue layer rather than population, with trophoblast layers (CP, VF, VI, VM) forming a single cluster, indicating transcriptomic differences between layers exceed between-population differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by PCA analysis in Figure 1C. The clustering pattern is clearly visible and the interpretation that structural differences exceed population differences is reasonable. The trophoblast clustering reflects their shared developmental origin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C2"
+    ],
+    "result": "579 DEGs were identified between Tibetans and Han (3.4% of expressed genes), with VF and VI showing the largest divergence (478/579 DEGs, 82.56%). Most DEGs (68.91%) are layer-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50, C2 describe differential expression analysis with clear quantitative results supported by Figure 2A. The statistical approach using DESeq2 with appropriate covariates and FDR correction is sound. The layer-specific pattern is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C3",
+      "C4"
+    ],
+    "result": "GO enrichment analysis revealed Tibetans show up-regulated mRNA metabolic processes and down-regulated immune response in VF, and decreased ER stress-related expression in VI compared to Han.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C3-C4 are supported by GO enrichment analysis (Figure 2B) with appropriate statistical thresholds (adjusted p<0.05). The functional interpretation aligns with known hypoxia responses and provides mechanistic insight into Tibetan adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "KCNE1 is significantly up-regulated in all four trophoblast layers of Tibetans and is the top up-regulated DEG in VF and VI. Previous studies show KCNE1 is down-regulated in preeclampsia and hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by expression data (Figures 2D, 2E). Claims C56-C57 are properly cited. However, C58 is speculative about beneficial effects. The expression pattern is clear, but the functional interpretation requires caution as it's based on inference from other contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PADI1 (3.4-fold lower in Tibetans, VF-specific) and TAC3 (>3-fold lower in Tibetans, VI-VF-shared) are down-regulated in Tibetans. Both genes are associated with adverse pregnancy outcomes when highly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61 are supported by expression data with appropriate statistics. Claims C60, C62-C63 are properly cited from previous literature. The pattern suggests adaptive down-regulation in Tibetans, though the causal relationship requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C5"
+    ],
+    "result": "Gender-separated analysis revealed striking sex-biased expression divergence: male placentas show 759 DEGs vs. 31 in females, with no overlap. Males contribute 128 shared DEGs with gender-combined analysis vs. only 5 for females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68, C5 describe a major finding supported by Figure 3A and supplementary data. The sex-biased pattern is dramatic and statistically robust. The analysis appropriately accounts for sex as a variable, revealing biology that would be missed in combined analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "In male placentas, UC, AN, and VF contain 95.49% of DEGs (396, 177, 189 genes respectively). In female placentas, UC contains the majority (23/31 DEGs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by differential expression analysis (Figure 3A). The layer-specific distribution differs dramatically by sex, with UC showing the most pronounced sex-biased divergence. The quantitative data are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In male UC, Tibetans show up-regulated cytoplasmic translational initiation and transcription factor activity, and down-regulated presynaptic endocytosis. In AN, Tibetans show down-regulated metabolic processes including cholesterol biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by GO enrichment analysis (Figure 3D) with appropriate statistical thresholds. The functional categories suggest adaptive responses to hypoxia, though the biological interpretation requires caution as GO terms can be broad.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C6",
+      "C7"
+    ],
+    "result": "WGCNA identified 10 significantly differential modules (SDMs) in males vs. 4 in females. Male UC has 3 SDMs significantly associated with birth weight and placental volume, supporting UC's role in sex-biased fetal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80, C6-C7 are supported by WGCNA analysis (Figure 4A) with appropriate statistical thresholds (Bonferroni-corrected p<0.0125). The association between UC modules and birth weight is statistically significant, though correlation does not establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Module 8 in male UC contains 196 DEGs, mostly down-regulated in Tibetans, and is negatively correlated with birth weight (R=-0.45, p=8.6\u00d710\u207b\u00b3), suggesting this down-regulated module contributes to higher Tibetan birth weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by WGCNA data (Figures 4B-C). However, C84's causal interpretation is speculative. The negative correlation is statistically significant, but the claim that down-regulation 'contributes to' higher birth weight is an inference that requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "GHR is the only DEG in female SDMs, with expression in VF positively correlated with fundal height (R=0.44, p=0.017) in females only. GHR is up-regulated in Tibetans, corresponding to higher fundal height.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by WGCNA and correlation analysis (Figure 4, supplement). C89 combines current data with cited previous work. The sex-specific correlation is interesting, though the sample size for females is modest (n=19 Tibetan, 13 Han).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C8",
+      "C9"
+    ],
+    "result": "Histological analysis revealed sex-biased differences in UC: Tibetan males have significantly larger umbilical vein wall (p=0.003) and artery intima/media (p=0.03) than Han males, with no differences in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91, C8-C9 are supported by histological measurements (Figures 5B-C) with appropriate statistics. However, the sample size is small (n=5 per group), which limits statistical power. The sex-biased pattern is consistent with transcriptomic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C96",
+      "C10"
+    ],
+    "result": "In male placentas, Tibetans have more villi in VI (p<0.0001) and significantly lower syncytial knot/villi ratio (p<0.0001), indicating healthier placental structure. No differences were observed in females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C96, C10 are supported by histological analysis (Figures 5D-E) with highly significant p-values. The interpretation of fewer syncytial knots as 'healthier' is supported by cited literature (C95). The sex-biased pattern is striking and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "13 DEGs overlap with 192 Tibetan selection-nominated genes (TSNGs): 4 from gender-combined analysis, 9 from male-only (significantly over-represented, p<1e-4), and 0 from female-only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by overlap analysis (Figure 6A) and permutation testing (Figure 6, supplement 1). The statistical approach is appropriate, demonstrating that male DEGs are significantly enriched for selection signals, linking adaptation to sex-biased placental function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "EPAS1 shows significant down-regulation in Tibetan UC (p=0.04). Previous GWAS identified EPAS1 SNPs associated with birth weight. The down-regulation likely reflects blunted hypoxic response improving vasodilation and birth weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C100 is supported by expression data (Figure 6B), though p=0.04 is marginal after multiple testing. C101 is properly cited. However, C102 is highly speculative, proposing a mechanistic pathway without direct experimental evidence. The interpretation requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "FOXJ3 expression in CN correlates with placental weight (p=0.02) and birth weight (p=0.004). HSD11B1 is lower in Tibetans (p=0.01), potentially reducing cortisol stress hormone levels beneficial under hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C103 is supported by correlation analysis (Figure 6, supplement 2) with significant p-values. C104 is supported by expression data (Figure 6B). However, the functional interpretations are speculative, inferring beneficial effects without direct measurement of cortisol or functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C111"
+    ],
+    "result": "EGLN1 is down-regulated in Tibetan male UC (p=0.01) but not females (p=0.91). Tibetan-enriched EGLN1 missense mutations are associated with lower erythropoiesis. Down-regulation may reduce hypoxia-induced hypertension risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C106 is supported by expression data (Figure 6C) showing clear sex-specificity. C107 is properly cited. However, C111 is speculative, proposing a functional mechanism without direct evidence. The sex-biased expression pattern is robust, but the functional interpretation requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "MKL1 is involved in hypoxia-induced vasoconstriction and possesses Tibetan-enriched variants. Rat knockout models show MKL1 deletion improves hypoxia-induced pulmonary hypertension. A Tibetan-enriched 163bp deletion associates with lower pulmonary arterial pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are all properly cited from previous literature. The evidence comes from multiple sources including functional studies in rats and genetic associations in Tibetans. This provides strong support for MKL1's role in high-altitude adaptation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "VF and VI show the largest expression divergence between populations, with down-regulated immune response and ER stress in Tibetans. This suggests Tibetans acquired ability to overcome hypoxia-induced inflammation and ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C112-C113 are supported by differential expression and GO enrichment data. C114-C115 are properly cited. However, C116 is speculative, proposing 'acquired ability' without demonstrating causation or ruling out alternative explanations. The pattern is clear but the adaptive interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Fetal sex impacts developmental status, with maternal hypoxia altering placental formation sex-specifically in rodents and Andeans. The male-biased expression divergence suggests male placentas are more sensitive to hypoxic stress at altitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C117-C119 are properly cited from previous literature establishing sex-biased placental biology. C120 is an inference from the current data showing male-biased DEG patterns. The interpretation is reasonable given the data, though the mechanism of differential sensitivity remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C123",
+      "C6"
+    ],
+    "result": "Under hypoxic stress, UC and other non-trophoblast layers are crucial for male fetal development, with UC playing a key role in sex-biased expression divergence associated with birth weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C123 and C6 are inferred from the combined transcriptomic and WGCNA results showing UC's prominence in male-specific DEGs and associations with birth weight. The inference is reasonable given the data, though the specific mechanisms require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Tibetans prevent hypoxia-associated IUGR with higher uteroplacental blood flow. UC is influenced by hemodynamic conditions, and preeclampsia associates with smaller UC vessels. Tibetans' larger UAW/UAIM suggests beneficial UC remodeling due to decreased inflammation, achieving better reproductive outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C125-C129 are properly cited from previous literature. C130-C131 integrate current histological findings with prior knowledge. However, the causal chain from decreased inflammation to UC remodeling to better outcomes is speculative. The histological differences are real, but the mechanistic interpretation requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Selected EPAS1 variants associate with lower hemoglobin in Tibetans, and low hemoglobin causally associates with better reproductive success. Selective pressure on EPAS1 is likely through hemoglobin effects rather than direct reproductive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C135-C136 are properly cited from previous research establishing the EPAS1-hemoglobin-reproduction pathway. C137 is speculative but represents a reasonable interpretation given the indirect nature of the relationship. The speculation is appropriately qualified with 'likely' and 'speculate.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Hypoxia leads to inhibited protein synthesis and ER stress activation. Cholesterol plays important roles in embryonic development through DHCR7-Shh interactions. DHCR7 accumulation and cholesterol deficiency cause developmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are all properly cited from previous literature and represent established biological knowledge. These provide important context for interpreting the observed down-regulation of cholesterol biosynthetic processes in Tibetan placentas.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "SNRNP70 is a hypoxia-inducible target gene. TSC2 is required for mTOR pathway inhibition by hypoxia, leading to cell proliferation under hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are properly cited from previous research and provide functional context for hub genes identified in Module 8. These genes' roles in hypoxia response support the interpretation of their down-regulation in Tibetan placentas as adaptive.",
+    "result_type": "MINOR"
+  }
+]

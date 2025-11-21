@@ -1,0 +1,519 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C32",
+      "C33",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "SPARK physically interacts with an elongin-like protein named SPARKEL (TGGT1_291010). This interaction was demonstrated through multiple orthogonal approaches including immunoprecipitation-mass spectrometry (IP-MS) and proximity labeling (TurboID) experiments, which consistently enriched SPARKEL in SPARK pulldowns and vice versa. SPARKEL is a 23 kDa protein containing a C-terminal SKP1/BTB/POZ domain with homology to metazoan Elongin C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C24-C27, C32-C33, C38, C41-C44 collectively demonstrate the SPARK-SPARKEL interaction through multiple independent experimental approaches (IP-MS with and without degron, reciprocal IP, TurboID from both N- and C-termini). The consistency across methods and the structural characterization of SPARKEL provide strong converging evidence for this protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "SPARKEL homologs are present in free-living alveolates (Vitrella brassicaformis and Chromera velia) but absent in Aconoidasida, suggesting the gene was present in the apicomplexan ancestor but selectively lost in some lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 describe phylogenetic distribution based on sequence analysis and are supported by Figure 1C showing the phylogenetic tree. The inference about ancestral presence and selective loss (C36) is reasonable given the phylogenetic pattern, though alternative evolutionary scenarios (e.g., horizontal gene transfer) are not explicitly ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Conditional depletion of SPARKEL via the auxin-inducible degron (AID) system leads to co-depletion of SPARK within 1 hour, and vice versa. Parasites depleted of SPARKEL fail to form plaques in host cell monolayers. However, both proteins have low abundance approaching the limit of detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 demonstrate reciprocal co-depletion through immunoblot experiments (Figure 2B-C) and functional consequences (plaque assays, Figure 2A). The co-depletion is well-documented, though C52 appropriately notes the technical limitation of low protein abundance. The authors acknowledge they cannot formally exclude degradation products running at expected molecular weights.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "SPARK and SPARKEL depletion phenotypes develop over time. After 24 hours of IAA treatment, parasites show reduced invasion, egress efficiency, and calcium mobilization. However, 3 hours of depletion is insufficient to impact motility or calcium signaling, indicating phenotypes develop gradually rather than acutely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 describe time-course phenotypic characterization with appropriate controls. The distinction between 3-hour and 24-hour timepoints is well-supported by multiple assays (replication, invasion, egress, calcium imaging; Figure 2D-J). The conclusion that phenotypes develop over time (C57, C60) is justified by the data, though the molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Extended SPARK or SPARKEL depletion (24 hours) leads to down-regulation of PKG and PKA catalytic and regulatory subunits, with protein abundances beginning to drop after 8 hours of IAA treatment. Concurrently, bradyzoite-specific proteins (MAG1, BRP1, CST1, CST10, MIC13, BFD2) are up-regulated, primarily between 8-24 hours of treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 are supported by quantitative proteomics with TMT multiplexing and time-course analysis (Figure 3A, C-D, Table 1). The temporal dynamics are well-characterized with appropriate biological replicates. The conclusion that SPARK-SPARKEL depletion affects both AGC kinase stability and stage-specific protein expression is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Phosphoproteomics of SPARK depletion identified 18,518 phosphopeptides, revealing broad effects on post-translational modification cascades. SPARK depletion reduced phosphorylation of cyclic nucleotide-regulated kinases and several phosphatases, while increasing phosphorylation of other kinases and phosphatases. Down-regulated phosphosites include proteins involved in DNA accessibility, transcription, RNA modification, and transport. Gaussian mixture modeling clustered phosphopeptides into seven kinetically distinct response signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 describe comprehensive phosphoproteomics analysis with appropriate statistical methods (PCA, modified Z-scores, Gaussian mixture modeling). The scale of the dataset (18,518 phosphopeptides) and clustering analysis (Figure 3H) support the conclusion of broad cellular effects. Gene ontology enrichment (Figure 3G) validates functional categories, though some effects may be indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "SPARK proximity labeling (TurboID) identified PKG as enriched and PKA C1 as narrowly missing cutoffs. A putative HECT E3 ubiquitin ligase (TGGT1_280660) with SPARK-dependent phosphoregulation was also identified. PKA C3, a coccidian-specific PKA ortholog, was enriched in the SPARK-TurboID experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 describe TurboID proximity labeling results (Figure 3I, Supplementary file 3). The enrichment of PKG and PKA C3 is well-supported, though PKA C1 narrowly missing cutoffs (C81) suggests borderline significance. The integration with phosphoproteomics data (C82) strengthens the evidence for functional relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "SPARK depletion reduces phosphorylation of PKA C1 activation loop (T190) and C-terminal tail (T341), as well as PKA R N-terminal phosphosites (S17, S27, S94). PKA C1 and PKA R protein levels decrease after 8 hours of SPARK depletion, as confirmed by immunofluorescence and flow cytometry, without changes in transcript levels. PKA C1-dependent phosphopeptides significantly decrease between 8-24 hours of SPARK depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 integrate phosphoproteomics (Figure 4A-B), qRT-PCR (Figure 4\u2014supplement 1), immunofluorescence (Figure 4D), and flow cytometry (Figure 4E-F) to demonstrate post-translational regulation of PKA C1/R. The lack of transcript changes (C87) supports protein-level regulation. Comparative analysis with PKA R depletion phosphoproteome (Figure 4G) strengthens the conclusion about PKA C1 substrate regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SPARK depletion reduces phosphorylation of PKG N-terminal sites and activation loop (T838). SPARK-depleted parasites are sensitized to PKG inhibitor Compound 1 in A23187-induced egress assays, suggesting decreased PKG activity. PKG-dependent phosphopeptides significantly decrease between 8-24 hours of SPARK depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 combine phosphoproteomics (Figure 5A) with chemical-genetic validation (Figure 5B-C) and comparative analysis with PKG depletion phosphoproteome (Figure 5D). The sensitization to Compound 1 (C93) provides functional evidence for reduced PKG activity, though the mechanism (reduced protein vs. reduced activity) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Prolonged SPARK, SPARKEL, or PKA C3 depletion elevates differentiation to bradyzoites under normal and alkaline stress conditions, as measured by dolichos lectin staining. PKA C3 depletion phenocopies SPARK/SPARKEL depletion. Differentiation depends on the BFD1 transcriptional circuit, as SPARK-AID/\u0394bfd1 and PKA C3-AID/\u0394bfd1 mutants fail to differentiate. PKG or CDPK1 depletion does not enhance differentiation, indicating egress defects alone are insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C106 demonstrate stage conversion through multiple approaches: immunofluorescence (Figure 6A-H), genetic epistasis with BFD1 knockout (Figure 6G-H), and transcriptomics (Figure 6I). The specificity is supported by negative controls (PKG, CDPK1 depletion; C101) and validation in ME49 strain (C102). The BFD1-dependence (C103-C104) is well-supported, though the molecular mechanism linking SPARK/PKA C3 to BFD1 activation remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "PKA C3 physically interacts with SPARK, as demonstrated by reciprocal immunoprecipitation-mass spectrometry. SPARKEL was also co-purified with PKA C3 to a lesser extent. PKA C3 does not interact with the canonical PKA regulatory subunit, consistent with prior reports. Together with TurboID data, these results support a strong physical interaction between SPARK and PKA C3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 demonstrate SPARK-PKA C3 interaction through IP-MS (Figure 7A) and integrate with TurboID data (Figure 3I). The consistency with prior literature (C109) and reciprocal validation strengthen the conclusion. However, the stoichiometry and functional significance of the interaction require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Unlike PKA C1, PKA C3 protein levels are not reduced following SPARK depletion. After 24 hours of IAA treatment, PKA C3 levels are unaltered or slightly elevated by immunoblot, with a non-significant trend toward increased abundance by immunofluorescence and flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by immunoblot (Figure 7B-C), immunofluorescence, and flow cytometry (Figure 7D-F). The distinction from PKA C1 regulation is important for the model. However, the trend toward increased PKA C3 (C112) is not statistically significant, and the biological significance is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "PKA C3 depletion phosphoproteomics identified 4,792 proteins and 12,721 phosphopeptides, with up-regulation of bradyzoite-stage proteins. Gaussian mixture modeling clustered phosphopeptides into three classes. PKA C3-dependent phosphopeptides significantly decrease within 3 hours of SPARK depletion, faster than the bulk phosphoproteome. However, SPARK and PKA C3 phosphoproteomes diverge regarding dense granule protein regulation, with some PKA C3-dependent phosphopeptides increasing upon SPARK depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 describe PKA C3 depletion phosphoproteomics with appropriate statistical analysis (PCA, clustering, comparative analysis; Figure 7H-K). The rapid decrease of PKA C3-dependent phosphopeptides upon SPARK depletion (C118) supports functional regulation. The divergence in dense granule protein regulation (C119) is interesting but mechanistically unclear, possibly reflecting indirect effects or compensation by other kinases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C145",
+      "C151",
+      "C179",
+      "C180"
+    ],
+    "result": "The authors propose a model in which SPARK is required for activation and stabilization of PKG, PKA C1, and PKA C3. Genetic evidence supports that SPARK phenotypes (motility, egress, invasion) arise from dysregulated PKA C1 and PKG activities. In T. gondii, SPARK inhibition releases PKA C1 brakes on egress while reducing PKG activity, resulting in parasite stasis. Proper SPARK function preserves tachyzoite physiology and promotes acute-stage cycling over differentiation to bradyzoites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C145, C151, C179-C180 present the central model integrating genetic, proteomic, and phenotypic data. The model is well-supported by: (1) physical interactions (IP-MS, TurboID), (2) temporal correlation between kinase down-regulation and phenotype development, (3) phosphoproteomics showing reduced kinase activity signatures, (4) chemical-genetic validation (Compound 1 sensitization), and (5) epistasis experiments (BFD1 dependence). However, direct biochemical evidence for SPARK kinase activity on PKA/PKG is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131"
+    ],
+    "result": "Quantitative proteomics revealed PKA and PKG abundances begin to decrease after more than 3 hours of SPARK depletion. Proximity labeling experiments suggest SPARK, PKA, and PKG are spatially associated within the parasite cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 summarize key findings from time-course proteomics and TurboID experiments. The temporal dynamics (C130) are well-supported by Figure 3C. Spatial association (C131) is inferred from TurboID enrichment, though the resolution of proximity labeling (~10 nm radius) does not prove direct interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C158",
+      "C159"
+    ],
+    "result": "TgPKG and TgPKA C1 possess PDK1-interacting fragment (FXXF) motifs: PKA C1 terminates in FTSW, while PKG has two non-terminal FXXF motifs (FGDF and FLYF). PKA C3 possesses a canonical PDK1-interacting fragment (FDNF) and shares an activation loop motif with PKA C1. T-loop phosphorylation sites (PKA C1 T190, PKG T838) were detected and down-regulated following SPARK knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C137, C158-C159 describe sequence features and phosphorylation sites. The presence of FXXF motifs is supported by sequence analysis, and T-loop phosphorylation changes are documented in phosphoproteomics (Figure 4A, 5A). However, the functional importance of these motifs for SPARK interaction is not directly tested (e.g., through mutagenesis).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The requirement of T-loop threonine phosphorylation for PKG activity is unclear, as recombinant Plasmodium PKG remained active when this residue was mutated. Conformational changes due to cGMP binding appear particularly important for PKG activity. Upon SPARK depletion, multiple N-terminal and cyclic nucleotide-binding domain phosphosites of PKG decrease, suggesting phosphorylation may regulate these domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C141 discuss PKG regulation mechanisms. C138 cites prior work showing T-loop phosphorylation may not be essential, creating uncertainty about the functional significance of T838 down-regulation observed here. C140 documents multiple phosphosite changes, but C141's conclusion that \"phosphorylation may function in regulation\" is speculative without functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The cause for reduction of PKA C1 and PKG levels requires further study. Down-regulation was only observed after 8 hours of SPARK depletion, longer than the T. gondii cell cycle, suggesting dilution through cell division. SPARK could also indirectly stabilize kinase abundances by phosphorylating and inhibiting a ubiquitin ligase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C144 acknowledge mechanistic uncertainty. C143 provides temporal data supporting dilution, but C144 proposes an alternative ubiquitin-mediated mechanism without direct evidence. The authors appropriately identify this as requiring further study (C142), and the proposed mechanisms remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The authors propose SPARK depletion leads to down-regulation of PKA C3 activity separately from protein abundance changes. SPARK and PKA C3 depletion phenocopy each other regarding in vitro differentiation. Candidates for molecular targets responsible for differentiation may reside in overlapping phosphosites between SPARK and PKA C3 depletion phosphoproteomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C162 propose activity-based regulation of PKA C3. C161 is well-supported by differentiation assays (Figure 6A-B). C160 is a reasonable inference given unchanged protein levels (C111-C113) but decreased PKA C3-dependent phosphopeptides upon SPARK depletion (C118). However, C162 is speculative, as overlapping phosphosites could reflect indirect effects or shared substrates rather than direct differentiation targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C174"
+    ],
+    "result": "The regulation of SPARK remains unclear. Mammalian PDK1 is constitutively active through auto-phosphorylation and PH domain-mediated homodimerization upon PIP3 binding. SPARK lacks the PH domain, suggesting apicomplexans evolved alternative regulatory mechanisms. The SPARK-SPARKEL-TGGT1_205550 complex may represent a means of modulating SPARK activity, but further biochemical studies are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C168, C174 discuss SPARK regulation mechanisms. The absence of the PH domain (C166) is established, and the inference about alternative mechanisms (C167) is reasonable. However, C168's proposal that the SPARKEL complex modulates SPARK activity is speculative. C174 appropriately acknowledges the need for further biochemical studies, as co-depletion complicates interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C173",
+      "C175",
+      "C176"
+    ],
+    "result": "SPARK and SPARKEL IPs and proximity experiments failed to identify obvious components of stable ubiquitin ligase complexes. Unlike most apicomplexans, Plasmodium spp. appear to have lost SPARKEL, possibly requiring alternative mechanisms to control SPARK activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C173 is supported by the IP-MS and TurboID data (Supplementary files 1-3) showing no enrichment of canonical E3 ligase complex components. Claims C175-C176 are supported by phylogenetic analysis (Figure 1C) showing SPARKEL absence in Plasmodium. However, C176's speculation about \"alternative mechanisms\" is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C121",
+      "C128"
+    ],
+    "result": "SPARK is an apicomplexan ortholog of metazoan PDK1, identified as a fitness-conferring candidate in pooled screens of the T. gondii kinome. PDK1 is considered a key regulator of AGC kinases in mammals. SPARK was previously identified in a genetic screen distinguishing acute and delayed death phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C121, C128 provide background context from prior work (Smith et al., 2022) and established knowledge. The orthology relationship (C1, C121) is well-established in the literature. These claims appropriately cite prior work and are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on apicomplexan biology and second messenger signaling: Apicomplexans parasitize a majority of warm-blooded species. T. gondii acute infection induces disease pathology through invasion, replication, and lysis cycles. Apicomplexans possess complete second messenger signaling repertoires. PKG is necessary for secretion of adhesins and perforins. PKA regulates egress and invasion differently in T. gondii vs. Plasmodium. PKA C3 maintains acute-stage infection. Second messenger networks show documented crosstalk. Metazoan mTOR and PDK1 prime AGC kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21 provide established background knowledge with appropriate citations. These are not primary findings of this study but contextualize the work. The claims accurately represent prior literature and are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Background on AGC kinase regulation: AGC kinases share structural features (activation segment, C-terminal motifs) required for activity. In mammals, AGC kinases depend on PDK1 in various ways. Akt requires PDK1 and mTOR phosphorylation for full activation. PKC isoforms undergo sequential phosphorylation by PDK1. PKA T-loop phosphorylation can be autocatalytic or PDK1-dependent depending on context. PDK1 dysregulation is associated with cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 provide background on mammalian AGC kinase regulation with appropriate citations. These establish the conceptual framework for understanding SPARK function but are not primary findings. The claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C153"
+    ],
+    "result": "Background on PKA and PKG function in apicomplexans: In T. gondii, PKA negatively regulates egress and positively regulates invasion-to-replication transition. In P. falciparum, PKA mediates invasion. PKG is broadly required for motility, invasion, and egress through calcium mobilization. Genetic pathway analysis suggests PKG lies downstream of PKA in T. gondii. Studies implicate negative feedback between cAMP and cGMP pathways. In Plasmodium, PKA is indispensable for invasion but not egress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150, C152-C153 provide background on AGC kinase functions in apicomplexans with appropriate citations. These contextualize the current findings but are not primary results. The claims accurately represent prior literature and highlight species-specific differences in signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Background on PKA C3: T. gondii has two additional PKA catalytic subunit paralogs (PKA C2 and PKA C3) relative to Plasmodium. PKA C2 expression is low outside sexual stages. PKA C3 disruption increases bradyzoite conversion. PKA C3 and SPARK associate through reciprocal interaction approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C156 provide background with appropriate citations. C157 is a primary finding supported by IP-MS and TurboID data (Figures 3I, 7A). The association between PKA C3 and SPARK is well-documented through multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Background on Elongin C: Elongin C forms components of multiprotein complexes, with E3 ubiquitin ligases being well-known examples. However, elongin C can affect protein levels through mechanisms distinct from ubiquitination. In metazoans, PDK1 associates with E3 ligases and exhibits monoubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C172 provide background on Elongin C function with appropriate citations. These contextualize the SPARKEL findings but are not primary results. The claims accurately represent established knowledge about Elongin C and PDK1 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C182"
+    ],
+    "result": "Summary statements: Unbiased proteomic approaches uncovered ancient signaling network features and revealed repurposing for parasitism. Apicomplexans are well-adapted to transition between life stages. In principle, SPARK may serve as a central node for asexual stage regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C178, C182 are summary/concluding statements. C177 is supported by the comprehensive proteomic analyses presented. C178 is established background. C182 is appropriately qualified as speculative (\"in principle, may\") and represents a reasonable hypothesis based on the data, though direct evidence for centrality is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C129",
+      "C133"
+    ],
+    "result": "Prior work on SPARK: Parasites depleted of SPARK for multiple replication cycles failed to enter and exit host cells upon zaprinast stimulation. Zaprinast elevates cGMP in parasites. The P. falciparum SPARK ortholog regulates invasion and proliferation through PKA. Parasites with conditional SPARK alleles were previously assessed only after entire lytic cycles. PDK1 mutations in P. falciparum suppress PfPKA overexpression toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C22-C23, C129, C133 cite prior work (Smith et al., 2022; Hitz et al., 2021) to provide context. These are not primary findings of this study but establish the rationale for the current investigation. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C37",
+      "C84"
+    ],
+    "result": "Background on other proteins: The AGC kinase TGGT1_205550 is restricted to coccidians and dispensable during acute infection. TGGT1_291010 contributes to parasite fitness. Elongin C-like domain function has not been widely investigated in unicellular eukaryotes. PKA C3 is a coccidian-specific PKA ortholog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C37, C84 provide background information with appropriate citations or inferences from the data. C30 is inferred from the decision to focus on TGGT1_291010 (SPARKEL) rather than TGGT1_205550. These claims appropriately contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C31",
+      "C45"
+    ],
+    "result": "Technical observations: TGGT1_291010 (SPARKEL) is a 23 kDa protein with a C-terminal SKP1/BTB/POZ domain. The low expression level of SPARKEL precluded robust colocalization with SPARK by microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C45 describe technical observations. C31 is supported by sequence analysis and Figure 1B. C45 appropriately acknowledges a technical limitation of the colocalization experiment (Figure 1F), demonstrating appropriate scientific rigor in reporting limitations.",
+    "result_type": "MINOR"
+  }
+]

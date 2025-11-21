@@ -1,0 +1,166 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Two distinct cell types emerge from the aortic floor with radically different morphodynamics: EHT pol+ cells characterized by reinforcement of apicobasal polarity and maintenance of the apical/luminal membrane, and EHT pol- cells emerging via a process reminiscent of trans-endothelial migration without enrichment of polarity markers at the luminal membrane. Both cell types express hematopoietic markers and maintain their morphological characteristics after division, with an approximate ratio of 2:1 (EHT pol+:EHT pol-).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C17-C22 provide converging evidence from live imaging with polarity markers (eGFP-podxl2, mKate2-podxl2) showing two morphologically and molecularly distinct EHT cell types. The data include time-lapse imaging, quantitative cell counts, and CD41 expression analysis. The ratio estimation and division observations are based on systematic imaging across multiple embryos and time windows.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "HE cells do not appear to be polarized at the initiation of the EHT time-window (28-30 hpf) based on the absence of Podxl2 enrichment at luminal membranes. Instead, HE cell cytoplasm is filled with membrane vesicles carrying eGFP-podxl2, suggesting that loss of apicobasal polarity may be part of the programme initiating the EHT process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by confocal microscopy data showing equal partitioning of Podxl2 between luminal and basal membranes in HE cells, contrasting with polarized aortic endothelial cells. The presence of large intracellular vesicles (up to 30 \u00b5m) is documented. The inference about EHT initiation (C25) is reasonable given the temporal correlation and comparison with later polarized EHT pol+ cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Interfering with Runx1 function using a dominant-negative mutant (dt-runx1) leads to accumulation of HE cells, increased proportion of EHT pol+ cells (particularly in lateral positions), maintenance of HE cell polarity, increased myb expression in hemogenic cells, decreased sub-aortic hematopoietic cells, and increased thymus cellularity at 5 dpf. The balance between EHT pol+ and pol- emergence types depends on tuning apicobasal polarity at the HE level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26-C34 are supported by multiple complementary approaches: live imaging with quantitative cell counts (C26-C28), RNAscope in situ hybridization with spatial analysis (C29-C32), confocal microscopy of polarity markers (C33), and thymus morphometry (C34). The dt-runx1 mutant produces a consistent phenotype across multiple readouts. However, the mechanism by which Runx1 controls polarity (C5) remains inferential, though well-supported by the accumulation of polarized HE cells and EHT pol+ cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Pard3ba, one of four Pard3 proteins in zebrafish, is expressed in the aorta during the EHT time-window with heterogeneous spatial distribution along the aortic axis (mRNA enriched regions, MERs). Pard3ba expression is sensitive to Runx1 interference, showing ~300% increase in dt-Runx1 mutants. Pard3ba mRNAs are preferentially localized in aortic endothelial cells (AECs) in direct vicinity of hemogenic/EHT cells (>50% within 5-10 \u00b5m), and the spatial densification of Pard3ba spots strongly correlates with hemogenic/EHT cell count (R=-0.84), suggesting signaling crosstalk between aortic and hemogenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35-C42 are supported by qRT-PCR on FACS-sorted cells and RNAscope in situ hybridization with quantitative spatial analysis. The specificity of Pard3ba response to Runx1 interference is demonstrated by comparison with other Pard3 family members. The spatial correlation analysis (C41) is rigorous with strong correlation coefficients. The inference of signaling crosstalk (C42) is reasonable given the spatial proximity data, though the molecular mechanism remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Tri-junctional pools enriched with eGFP-Jam3b molecules at antero-posterior poles of EHT cells are significantly more dynamic for EHT pol+ cells compared to EHT pol- cells, with 128% increase in median early recovery slopes at EHT pol+ - EC versus EHT pol- - EC junctional interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by FRAP measurements on transgenic embryos expressing eGFP-Jam3b. The analysis includes appropriate controls (EC-EC junctions) and quantitative metrics (recovery slopes, maximum amplitude). The result is counterintuitive to the authors' initial hypothesis but is supported by the data. Sample sizes appear adequate (n values stated in figures), though the high biological variability noted by the authors suggests caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "ArhGEF11, ArhGEF12b, Tiam1b, and Tiam2a expression levels are significantly reduced upon dt-runx1 expression at 48 hpf, indicating positive regulation by Runx1 during peak EHT emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by qRT-PCR data comparing control and dt-runx1 conditions with statistical significance. The analysis was performed on trunk dissections at the appropriate developmental stage. This result provides a molecular link between Runx1 activity and cytoskeletal regulation during EHT.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "ArhGEF11/PDZ-RhoGEF plays an essential role in controlling the HE-endothelial cell dynamic interface and cell-cell intercalation required for EHT completion. Interfering with ArhGEF11 exon 38 splicing (morpholino) or C-terminal deletion (CRISPR) leads to accumulation of hemogenic cells in the aortic floor, reduction in morphologically characterized EHT cells, increased aortic perimeter, altered hemogenic cell morphology, and decreased HSPC generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C46-C52 are supported by complementary genetic approaches (morpholino and CRISPR) with consistent phenotypes. The analysis includes quantitative morphometry of cell shape, position, and counts using semi-automated segmentation. The CD41:eGFP analysis (C50-C51) provides functional validation of impaired hematopoiesis. The phenotypic differences between morpholino and CRISPR mutants (C49) are noted and discussed appropriately. The inference about intercalation (C9) is supported by the accumulation of cells and morphological changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "ArhGEF11 interference differentially affects junctional dynamics at distinct tri-cellular interfaces: morpholino treatment increases FRAP recovery parameters at HE-HE-EC tri-junctions (particularly early recovery speed), while CRISPR C-terminal deletion mutants show a tendency for increased mobile pool at HE-EC-EC tri-junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by FRAP measurements at specific junctional interfaces identified using 2D cartography. The differential effects of morpholino versus CRISPR mutants suggest distinct functions of the exon 38-encoded region versus the C-terminus. However, the CRISPR result (C54) is described as a 'small tendency,' indicating weaker statistical support. The biological interpretation is complex and the authors appropriately note the limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background knowledge claims establishing that hematopoietic stem cells emerge from the hemogenic endothelium in the AGM region during a narrow developmental time window, with the HE characterized by inherent heterogeneity contributing to both pre-HSCs and more restricted progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C16 represent established knowledge in the field, supported by appropriate citations to seminal studies. These provide necessary context for the current work and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "There is a signaling crosstalk controlling cell polarity and its associated features between aortic and hemogenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 is inferred from the observation that Pard3ba expression in aortic cells is sensitive to Runx1 activity (C6) and the spatial proximity of Pard3ba-expressing cells to hemogenic/EHT cells (C39-C42). While the spatial and molecular data are supportive, the claim of 'signaling crosstalk' implies bidirectional communication and specific molecular mechanisms that have not been directly demonstrated. The authors appropriately present this as a hypothesis in the discussion, noting alternative explanations (e.g., shared developmental history of aortic and HE cells).",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "During perception, orientation decoding in early visual cortex (V1-V3) is modulator-specific: classifiers trained on one modulator type (radial or angular) can decode orientations only within the same modulator type but fail to cross-decode between modulator types, demonstrating that aperture biases affect perceptual decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are well-supported by data in Figure 2A showing significant within-modulator decoding but chance-level cross-modulator decoding in V1-V3. This replicates prior work (Roth et al., 2018) and establishes the baseline perceptual aperture bias effect that is critical for comparison with WM results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "During working memory maintenance, orientation representations are immune to aperture biases: classifiers can successfully cross-decode orientations between radial and angular modulators in visual cortex (V1-V3AB), parietal cortex (IPS0/1-IPS2/3), and frontal cortex (sPCS), indicating that WM representations share a common format independent of the perceptual aperture bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are strongly supported by Figure 2B showing significant cross-modulator decoding during WM delay across multiple brain regions. This contrasts sharply with the perception results (C22-C24) and provides direct evidence that WM representations differ from perceptual representations. Statistical tests confirm significance across regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cross-task decoding from perception to WM reveals that classifiers trained on perceptual data can decode WM orientations in early visual cortex only when the aperture bias aligns with the carrier orientation (radial modulator), but not when orthogonal (angular modulator), except in V3AB which shows successful decoding regardless of modulator type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by Figure 2C data showing asymmetric cross-task decoding success. The radial modulator (aligned bias) enables WM decoding while angular (orthogonal bias) does not in V1-V3, with V3AB as an exception. This provides evidence that WM representations only partially overlap with perceptual representations when aperture biases happen to align.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C43"
+    ],
+    "result": "Spatial reconstruction analysis reveals that during WM delay, line-like representations emerge in V1-V3AB and IPS0/1 that are aligned with the carrier orientation regardless of modulator type, demonstrating that mnemonic representations are recoded into a spatial topographic format matching the target orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C43 are supported by Figure 3A showing clear line-like patterns aligned with carrier orientation for both modulators during WM. Quantitative fidelity analysis (Figure 3B) confirms these patterns statistically. This provides direct visualization evidence that WM representations abstract away from aperture biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C52"
+    ],
+    "result": "During perception, spatial reconstruction reveals that line-like patterns in early visual cortex (V1-V2) are aligned with the aperture bias rather than the carrier orientation, with radial modulators producing strong responses aligned with orientation but angular modulators producing orthogonal patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C52 are supported by Figure 3C-D showing modulator-dependent line orientations during perception. The radial modulator produces lines aligned with carrier orientation while angular produces orthogonal lines in V1-V2. This contrasts with WM results and confirms that perceptual representations are influenced by aperture biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "Computational modeling using a V1 model confirms that aperture biases produce line-like patterns aligned with the bias (not carrier orientation) during perception, while WM representations resemble model outputs for simple line stimuli, suggesting participants store simplified abstractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C53-C54, and C56 are supported by Figure 4 showing model simulations that match empirical perception data for aperture biases and match WM data for line inputs. The model provides mechanistic support for the interpretation that WM representations are abstractions. However, the model is descriptive rather than predictive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C59",
+      "C60",
+      "C62",
+      "C64"
+    ],
+    "result": "WM representations in early visual cortex are fundamentally distinct from perceptual representations: they are reformatted abstractions immune to aperture biases that affect perception, providing conclusive evidence against the strong form of the sensory recruitment hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C44-C46, C51, C59-C60, C62, and C64 represent the main conclusions drawn from the combined results. These are well-supported by the convergent evidence from decoding analyses (C22-C31) and spatial reconstruction (C35-C42). The logic is sound: if WM were simply maintained sensory representations, they would show the same aperture biases as perception, but they do not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "These findings necessitate revisions to the sensory recruitment hypothesis of WM, which predicts interchangeable patterns between perception and memory if they use the same encoding mechanisms, but the data show distinct patterns requiring the hypothesis to account for representational reformatting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C65-C66 present theoretical implications that logically follow from the empirical results. The sensory recruitment hypothesis does predict interchangeability (C65), which is contradicted by the data (C64). The call for revision (C63, C66) is justified, though the specific form of revision remains open.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The experimental design uses radial and angular modulators that produce orthogonal aperture biases: radial modulators evoke biases aligned with carrier orientation while angular modulators evoke biases orthogonal to carrier orientation, as predicted by computational models of V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C76-C79 describe the stimulus design and model predictions. These are supported by citations to prior work (Roth et al., 2018) and Figure 1C. The orthogonal biases are the critical manipulation that enables testing whether WM representations depend on aperture biases. The model predictions are validated by the perception control task results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Eye-tracking analysis confirms that participants maintained central fixation during the delay period (>96% of samples within 2\u00b0 eccentricity) and eye position did not correlate with target orientation, ruling out eye movements as an alternative explanation for the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by quantitative eye-tracking data with statistical tests showing no significant correlation between eye position and target orientation. This is an important control that strengthens the interpretation that the observed neural patterns reflect internal representations rather than oculomotor confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study employed 16 participants who completed WM and perceptual control tasks using modulated gratings (radial and angular) with carefully controlled stimulus parameters, task timing, and trial numbers to enable within-subject comparisons between perception and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C90 describe methodological details that are clearly documented in the Methods section. The experimental design is appropriate for testing the hypotheses, with adequate sample size (n=16), sufficient trials (240 per task), and proper controls. The perceptual control task (C89-C90) is well-designed to isolate perceptual processing without memory demands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior literature establishes that WM content can be decoded from early visual cortex and that the sensory recruitment hypothesis posits shared mechanisms between perception and memory, with evidence that WM representations in visual cortex predict behavior and can coexist with perceptual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 accurately summarize prior literature with appropriate citations. These establish the theoretical context and motivation for the current study. The characterization of the sensory recruitment hypothesis (C2, C5) and supporting evidence (C3-C4, C6-C8) is fair and balanced, acknowledging both supporting evidence and the inference that behavioral correlations (C7-C9) suggest functional relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior evidence against the sensory recruitment hypothesis includes the lack of persistent activity in V1 (except for spatial WM), reduced cross-decoding from perception to WM compared to within-WM decoding, and temporal changes in WM representations suggesting reformatting from sensory-like to behavior-relevant formats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 accurately characterize evidence that challenges the sensory recruitment hypothesis, with appropriate citations. These claims establish that the field already recognized limitations of the hypothesis, providing context for why the current study's approach (testing aperture bias effects) offers a novel and decisive test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The theoretical understanding of orientation decoding has evolved from fine-scale columnar sampling to coarse-scale factors including aperture biases and topographic inhomogeneities, but how these biases affect WM decoding remained unknown, motivating the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C47-C50 accurately describe the evolution in understanding of orientation decoding mechanisms, with appropriate citations. The identification of the knowledge gap (C18) provides clear motivation for the study. This historical context is important for understanding why the current findings are significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The study predicted that if WM representations are sensory-like, decoding would conform to aperture biases as observed during perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 states a clear, testable prediction that follows logically from the sensory recruitment hypothesis. This prediction is falsified by the results (C26-C27), making it a successful strong inference design. The prediction is appropriately framed as conditional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C55",
+      "C57",
+      "C61"
+    ],
+    "result": "The authors hypothesized and propose that WM representations are recoded into simple line-like spatial codes matching the carrier orientation, representing simplified abstractions of the physical stimuli, extending prior work showing line-like recoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C55, C57, and C61 present the line-recoding hypothesis and proposal. C34 is explicitly stated as a hypothesis supported by prior work (Kwak and Curtis, 2022). The spatial reconstruction results (C35-C36) confirm this hypothesis. C55 and C57 are proposals/inferences that are reasonable given the data but remain somewhat speculative about the cognitive mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C67"
+    ],
+    "result": "The findings may explain why WM representations do not undergo normalization like perceptual representations, and suggest that WM representations can morph into different formats depending on behavioral goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58 and C67 are speculative extensions beyond the current data. C58 connects to normalization literature (Bloem et al., 2018) but this connection is not directly tested. C67 suggests task-dependent flexibility but the current study only examines one task type. These are reasonable speculations for future work but lack direct empirical support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The experimental design ensures that measured fMRI activity can be attributed to either carrier orientation or the interaction between carrier orientation and the static modulator, but not to modulator changes alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is a logical inference from the experimental design (C80) where only carrier orientation varies across trials while modulator type is blocked. This is an important design feature that enables clean interpretation of the results, though it also means that any modulator-specific effects must be interaction effects rather than main effects.",
+    "result_type": "MINOR"
+  }
+]

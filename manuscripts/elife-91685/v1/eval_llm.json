@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C35",
+      "C49",
+      "C50"
+    ],
+    "result": "In the monkey ventral visual hierarchy, factorization of object identity from non-identity information (pose and background) increased from V4 to IT, and this factorization strongly contributed to object identity decoding performance. A lesion experiment demonstrated that reducing factorization while preserving invariance significantly impaired decoding accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C16-C20, C35, C49-C50 collectively provide strong converging evidence from neural recordings, statistical controls (shuffle), and a targeted lesion experiment. The lesion specifically manipulated factorization while controlling for other statistics, demonstrating its causal importance for decoding. The results are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Training DNNs consistently increased factorization of all tested scene parameters (background, lighting, object pose, camera viewpoint) relative to untrained networks. The degree of factorization in models correlated with their ability to predict IT neural activity, suggesting IT representations exhibit factorization. Training had mixed effects on invariance, increasing it for appearance factors but decreasing it for spatial transforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by systematic analysis across diverse DNN models with appropriate untrained controls (C21-C22). The correlation between model factorization and neural predictivity (C23) provides indirect but consistent evidence for factorization in IT (C24-C25). The inference about IT representations (C24-C25) is appropriately qualified as correlative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C26",
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Across 12 datasets spanning monkey and human neural recordings, fMRI, and behavior, DNN models with greater factorization of scene parameters consistently matched biological data better. Invariance to appearance factors (background, lighting) correlated with brain-like models, but invariance to spatial transforms (pose, viewpoint) did not. These findings were robust to architecture, analysis method (encoding vs. RDM), factorization metric, and stimulus type (synthetic vs. natural movies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C26-C28, C36-C38, C51-C53 demonstrate remarkable consistency across multiple datasets, species, brain regions, and methodological variations. The extensive controls (architecture-matched models C51, RDM analysis C52, alternative factorization metric C53, natural movies C36-C37) and the differential pattern for invariance (C27-C28) strengthen confidence in the specificity of the factorization effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C38"
+    ],
+    "result": "Factorization scores significantly improved prediction of neural and behavioral data beyond what could be explained by object classification performance or dimensionality alone. Combining factorization with classification performance provides better understanding of brain-like model properties than classification alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C38 are supported by cross-validated regression analyses (Figure 6) that explicitly control for classification performance and dimensionality. The statistical approach appropriately tests whether factorization provides independent predictive power, and the results show it does across multiple datasets and analysis methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C39",
+      "C40"
+    ],
+    "result": "Simulation demonstrated that factorized representations (orthogonal encoding of variables) enable better generalization in few-shot decoding scenarios compared to non-factorized representations. High-dimensional representations facilitate factorization, and factorized representations better support classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C39-C40 are supported by simulation data (Figure 1C) showing the computational benefits of factorization. The simulation appropriately isolates the effect of factorization (angle between variable subspaces) while controlling for other factors. The claims about relationships between dimensionality, factorization, and classification are logically consistent with the geometric framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "The positive correlation between factorization and neural predictivity was robust to the choice of PCA threshold (50-99%) used to define the subspaces for computing factorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is supported by sensitivity analysis (Figure 5\u2014figure supplement 3) showing consistent results across a wide range of threshold values. This addresses a potential methodological concern about arbitrary parameter choices in the PCA-based factorization metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C57"
+    ],
+    "result": "Object classification has been proposed as a principal objective of the ventral visual stream and used as an optimization target for DNNs. DNNs trained for classification produce representations similar to primate V4 and IT, with similarity correlating with classification performance, though this relationship saturates beyond a threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C13, C57 accurately summarize established prior work with appropriate citations (Yamins et al., 2014; Schrimpf et al., 2020; Cadieu et al., 2014). These claims provide necessary context for the current work and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C14"
+    ],
+    "result": "Visual brain areas represent many types of information beyond object identity, and optimizing for classification alone does not constrain how other information is encoded. High-level ventral stream neurons simultaneously encode multiple forms of information including object pose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C14 are supported by established neuroscience knowledge and appropriate citations to prior work (Freiwald and Tsao, 2010; Hong et al., 2016; Kravitz et al., 2013; Peters and Kriegeskorte, 2021). These claims accurately represent the motivation for studying factorization as an alternative to pure invariance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The authors' definition of factorization is closely related to manifold disentanglement and can be seen as a generalization to high-dimensional visual scene parameters like object pose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 appropriately relate the current work to prior concepts (DiCarlo and Cox, 2007; Chung et al., 2018). The conceptual connection is reasonable and helps position the work within existing frameworks, though the generalization claim (C33) is somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C42",
+      "C43"
+    ],
+    "result": "Factorization enables simultaneous decoding of multiple parameters supporting diverse behaviors, relates to the concept of abstraction in representational geometry, and is one factor determining few-shot classification performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C42-C43 connect factorization to related concepts with appropriate citations (Johnston and Fusi, 2023; Bernardi et al., 2020; Sorscher et al., 2022). The connections are logical and help contextualize the functional significance of factorization, though some aspects are inferential (C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Local straightening of natural movies is important for early visual cortex but not necessarily high-level visual cortex, where factorization may play a role instead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 appropriately cite prior work (Toosi and Issa, 2022) and make a reasonable inference about the complementary role of factorization in high-level cortex. The inference (C45) is appropriately qualified and consistent with the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Factorization increases with higher dimensionality because this decreases overlap between variable subspaces. In high dimensions, angles between points approach 90 degrees (orthogonality). For fixed dimensions, factorization is driven by the angle between variable subspaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present mathematically sound reasoning about high-dimensional geometry. The claims about asymptotic behavior in high dimensions (C47) and the geometric basis of factorization (C48) are consistent with established mathematical principles and the authors' formal definitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Factorization of non-class information is an important strategy used by high-level visual cortex and by DNNs that predict primate neural and behavioral data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 represent the main synthesis of findings from both neural data (Figure 2) and DNN analyses (Figures 4-5). These summary claims are well-supported by the convergent evidence from multiple experiments and datasets presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Prior work indicates that both supporting object classification performance and preserving high-dimensional information about natural images are important principles of the primate visual system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 accurately summarizes prior work with appropriate citations (Cadieu et al., 2014; Elmoznino and Bonner, 2022; Conwell et al., 2022). The claim appropriately acknowledges some controversy (\"though see Conwell et al., 2022\") and provides context for the current contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Machine learning models designed to infer disentangled representations displayed single-unit responses resembling individual macaque IT neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 accurately cites prior work (Higgins et al., 2021) connecting disentanglement to neural responses. This provides relevant context for the relationship between factorization/disentanglement and biological neural representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Maintaining non-class information in factorized subspaces is often preferred to dropping it altogether, and factorization is a widely used strategy in brains and DNN models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 represent key interpretive conclusions supported by the differential effects of factorization versus invariance across datasets (C8, C27-C28). The inference that maintaining information in factorized form is \"preferred\" is reasonable given the consistent positive correlation of factorization but mixed results for invariance.",
+    "result_type": "MAJOR"
+  }
+]

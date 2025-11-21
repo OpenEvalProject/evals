@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "HGPRT is absent in Drosophila melanogaster, making Aprt the sole purine-recycling enzyme. Phylogenetic analysis reveals HGPRT is ancient but strikingly rare in insects, with the few insect HGPRT proteins likely acquired by horizontal gene transfer. No HGPRT enzymatic activity or structural homologs were detected in D. melanogaster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C58-C68 are well-supported by enzymatic assays (Table 2), phylogenetic analysis (Figure 1\u2014figure supplement 2, 3), and structural similarity searches. The convergence of multiple independent lines of evidence (enzymatic, phylogenetic, structural) strongly supports the absence of HGPRT in Drosophila and establishes Aprt as the only purine salvage enzyme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C75",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Aprt5 mutants exhibit metabolic disturbances including 37.7% increased uric acid levels and reduced lifespan (38 vs 50 days median). Allopurinol treatment rescues uric acid levels but not neurological defects, paralleling human LND.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C75, C83-C85 are supported by HPLC measurements (Figure 1B), longevity assays (Figure 1A), and allopurinol rescue experiments. The data show statistically significant differences (p<0.01 for uric acid, p<0.001 for lifespan) with appropriate controls. The parallel to human LND strengthens the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Aprt deficiency causes early-onset locomotor impairments in the SING assay, starting at 1 day after eclosion and stabilizing by 8 days. Adult-specific Aprt inactivation is sufficient to induce defects, indicating this is not a developmental phenotype. Allopurinol does not rescue locomotor defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C86-C97 are strongly supported by SING assay data across multiple genotypes (Figure 1C-G) with appropriate statistical tests (p<0.001). The temporal control experiment using Gal80ts (C95-C97) provides critical evidence that adult-specific knockdown is sufficient, ruling out developmental confounds. Multiple independent genetic approaches (mutant, RNAi, hemizygous) converge on the same phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Aprt is required in both neurons and specific glial subsets for normal SING performance. Neuronal Aprt re-expression partially rescues locomotor defects in Aprt5 mutants, while glial re-expression does not, indicating neuronal Aprt is sufficient for partial rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C98-C105 are supported by cell-specific knockdown and rescue experiments (Figure 2A-E) with appropriate driver and effector controls. The differential rescue effects (neuronal vs. glial) provide strong evidence for cell-type specificity. However, the partial nature of the neuronal rescue (PI=0.70 vs 0.52) suggests additional complexity not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "PAM dopaminergic neurons and mushroom body neurons are critical sites for Aprt function in locomotor control. Aprt knockdown in PAM neurons (but not other DA neurons) or mushroom body neurons reproduces the SING defect observed in pan-neuronal knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C106-C119 are well-supported by systematic cell-specific knockdown experiments using multiple independent drivers (Figure 3A-H). The specificity is demonstrated by negative results with TH-Gal4 (C106) and positive results with drivers including PAM neurons (C108, C114). The convergence of multiple driver lines targeting the same cell populations strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Aprt5 mutants exhibit sleep disturbances including reduced total sleep, increased nighttime activity (26.2%), reduced walking speed, and shorter sleep bout duration. Sleep defects are neuron-specific, as neuronal but not glial Aprt knockdown reproduces the phenotype. ATP levels are unchanged, ruling out energy metabolism defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C121-C130 are supported by comprehensive sleep monitoring data (Figure 4A-G) with appropriate statistical tests. The cell-specificity experiments (C127-C129) provide strong evidence for neuronal requirement. The ATP measurements (C126, Figure 4\u2014figure supplement 3) appropriately rule out a major alternative hypothesis. The circadian activity profile data (C121) provides important negative control information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Contrary to expectations based on LND patients, Aprt5 mutants show increased (not decreased) brain dopamine levels and tyrosine hydroxylase expression. TH protein increased 17.5%, DA levels increased 17.0%, and DTH1 transcript and protein levels were elevated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 are supported by multiple complementary methods: immunostaining (Figure 5A-D), RT-qPCR (Figure 5E-F), and Western blot (Figure 5G-H). The convergence of protein, transcript, and immunofluorescence data strengthens the conclusion. This unexpected finding is important as it distinguishes the fly model from human LND and suggests alternative mechanisms. Statistical significance is demonstrated (p<0.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C137",
+      "C142",
+      "C143",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Aprt deficiency reduces adenosine levels (61% in whole flies, 48% in heads) and increases Ent2 transporter expression (2.3-fold), indicating reduced adenosinergic signaling. AdoR mutants show reciprocal effects with decreased Aprt activity (78.4%), suggesting feedback regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C137, C142-C143, C148-C152 are supported by UPLC measurements (Figure 6A) and RT-qPCR data (Figure 6B-C) with appropriate statistical tests (p<0.01 to p<0.001). The reciprocal relationship between Aprt and AdoR (C148-C150) provides evidence for feedback regulation, though the proposed mechanism (C150) remains speculative. The convergence of adenosine measurements and transporter expression data strengthens the conclusion about reduced adenosinergic signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Aged Aprt mutants (30 days) exhibit seizure-like bang sensitivity behavior with prolonged recovery times (17.3s vs 2.5s for wild-type). The phenotype requires Aprt knockdown in multiple cell types and longer duration than SING defects, suggesting developmental origins. Allopurinol does not rescue the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C153-C161 are supported by bang sensitivity assays (Figure 7A-D) with appropriate controls. The cell-specificity experiments (C157-C158) and temporal control (C159-C160) provide important mechanistic insights, though they also reveal limitations in understanding the cellular basis. The lack of allopurinol rescue (C161) parallels human LND. However, the requirement for multiple cell types (C158) and developmental timing (C160) introduces uncertainty about the precise mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Developmental administration of adenosine or N6-methyladenosine (500 \u03bcM) fully rescues the bang sensitivity phenotype but not SING defects in Aprt mutants. This differential rescue indicates distinct mechanisms underlie the two behavioral phenotypes and suggests reduced adenosine levels cause seizure-like behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C163-C168 are supported by pharmacological rescue experiments (Figure 7E-F, Figure 7\u2014figure supplement 3) with appropriate controls. The specificity of rescue (BS but not SING) and requirement for developmental exposure provide strong evidence for distinct mechanisms. The rescue by m6A (which cannot be incorporated into nucleic acids) supports a signaling rather than metabolic role for adenosine. However, the lack of SING rescue (C163) is notable and limits the therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Pan-neuronal expression of LND-associated mutant HGPRT-I42T (but not wild-type HGPRT) induces early locomotor defects (PI=0.71 at 15 days) and bang sensitivity (2.3s recovery at 30 days), phenocopying Aprt deficiency. The mutant retains 19.5% enzymatic activity compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C169-C177 are supported by behavioral assays (Figure 8C-D), enzymatic activity measurements (Table 2), and RT-PCR validation (Figure 8A-B). The specificity of the mutant effect (C23-C25, C175) provides strong evidence for a toxic gain-of-function mechanism. However, the relatively mild phenotypes compared to Aprt5 mutants and the residual enzymatic activity (19.5%) raise questions about whether this fully recapitulates LND pathology or represents a partial model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background on purine metabolism, APRT/HGPRT function, and Lesch-Nyhan disease in humans. APRT and HGPRT are structurally related purine salvage enzymes. HGPRT deficiency causes LND with hyperuricemia and severe neurological symptoms. No effective treatment exists for neurological defects, and no animal model fully recapitulates LND symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C8, C26-C51 represent established knowledge about purine metabolism and LND, supported by appropriate citations. These provide essential context for the study but are not novel findings. The claims accurately represent the current state of knowledge based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Summary claims about Aprt function in Drosophila and the novelty of demonstrating toxic gain-of-function effects of mutant HGPRT. These are high-level conclusions synthesizing multiple experimental results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55, C57 are supported by the collective evidence from multiple experiments described in other result groups. These represent valid summary statements of the major findings. However, they are derivative of the primary experimental results rather than independent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Characterization of the Aprt5 mutant allele. The mutant was generated by chemical mutagenesis and contains multiple amino acid changes including three conserved residues. Enzymatic assays confirm loss of activity in homozygous and hemizygous mutants. The mutants are viable and fertile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are supported by enzymatic assays (Table 1, Figure 1\u2014figure supplement 4), cDNA sequencing (Figure 1\u2014figure supplement 5), and viability observations. The characterization is thorough and appropriate for establishing the genetic tool. The inference that conserved residue mutations cause loss of activity (C73) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Quantitative measurements of Aprt enzymatic activity in various genotypes, showing activity ranges from 0.02-2.77 nmol/min/mg protein depending on genotype and sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are directly supported by enzymatic activity measurements presented in Table 1. These are straightforward quantitative measurements with appropriate controls and replication. The data quality appears sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Background information on Drosophila adenosine receptors and nucleoside transporters. Drosophila has one adenosine receptor (AdoR) and three putative nucleoside transporters (Ent1-3), with only Ent2 showing transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141, C145-C147 represent established knowledge about Drosophila adenosine signaling components, supported by appropriate citations. These provide necessary context for interpreting the adenosine-related findings but are not novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C150"
+    ],
+    "result": "Mechanistic hypotheses about Ent2 upregulation as compensatory response to adenosine shortage and feedback regulation of Aprt by adenosine uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144 and C150 are explicitly speculative hypotheses proposed by the authors to explain observed correlations. While the correlations are supported by data (increased Ent2 in Aprt mutants, decreased Aprt in AdoR mutants), the proposed causal mechanisms are not directly tested. These represent reasonable interpretations but require further experimental validation.",
+    "result_type": "MINOR"
+  }
+]

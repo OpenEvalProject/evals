@@ -1,0 +1,984 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Biomolecules in their folded state exchange between multiple conformational states that are crucial for their function.",
+    "claim_type": "EXPLICIT",
+    "source": "In their folded state, biomolecules exchange between multiple conformational states that are crucial for their function.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about biomolecular behavior that draws from established scientific understanding.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Traditional structural biology methods such as X-ray crystallography and cryogenic electron microscopy produce density maps that are ensemble averages.",
+    "claim_type": "EXPLICIT",
+    "source": "Traditional structural biology methods, such as X-ray crystallography and cryogenic electron microscopy (cryo-EM), produce density maps that are ensemble averages, reflecting molecules in various conformations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement reflects established knowledge about how these experimental methods work.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Most models derived from X-ray crystallography and cryo-EM maps explicitly represent only a single conformation.",
+    "claim_type": "EXPLICIT",
+    "source": "Yet, most models derived from these maps explicitly represent only a single conformation, overlooking the complexity of biomolecular structures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by established knowledge about common modeling practices in structural biology.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The challenge of distinguishing signal from noise complicates manual efforts to create multiconformer models.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the challenge of distinguishing signal from noise complicates manual efforts to create these models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on inference from the practical challenges described in structural biology.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "qFit is an automated computational strategy designed to incorporate protein conformational heterogeneity into models built into density maps.",
+    "claim_type": "EXPLICIT",
+    "source": "In response, we introduce the latest enhancements to qFit, an automated computational strategy designed to incorporate protein conformational heterogeneity into models built into density maps.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a direct description of the qFit method presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Algorithmic improvements in qFit are substantiated by superior Rfree and geometry metrics across a wide range of proteins.",
+    "claim_type": "EXPLICIT",
+    "source": "These algorithmic improvements in qFit are substantiated by superior Rfree and geometry metrics across a wide range of proteins.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental data presented in the manuscript comparing qFit models to deposited models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Multiconformer models produced by qFit can be manually modified in most major model building software.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, unlike more complex multicopy ensemble models, the multiconformer models produced by qFit can be manually modified in most major model building software (e.g., Coot) and fit can be further improved by refinement using standard pipelines (e.g., Phenix, Refmac, Buster).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge of software compatibility and the PDB format standards.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "X-ray crystallography and cryo-EM experiments cannot capture all conformations present in solution as many would disrupt the ability to obtain crystals or align classifiable particles.",
+    "claim_type": "EXPLICIT",
+    "source": "These experiments cannot capture all conformations present in solution as many would disrupt the ability to obtain crystals or align classifiable particles (Cheng, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Careful modeling from high-resolution X-ray crystallography and cryo-EM data can reveal widespread conformational heterogeneity, particularly for protein side chains and local backbone regions.",
+    "claim_type": "EXPLICIT",
+    "source": "However, careful modeling from high-resolution X-ray crystallography and cryo-EM data can reveal widespread conformational heterogeneity, particularly for protein side chains and local backbone regions (Smith et al., 1986; Herzik et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Discrete, local conformational heterogeneity is significant for many biological functions, including macromolecular binding, catalysis, and allostery.",
+    "claim_type": "EXPLICIT",
+    "source": "Such discrete, local conformational heterogeneity is significant for many biological functions, including macromolecular binding, catalysis, and allostery (Keedy et al., 2018; Wankowicz et al., 2022; Yabukarski et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Most depositions in the Protein Data Bank reflect only an averaged, single ground state set of atomic coordinates.",
+    "claim_type": "EXPLICIT",
+    "source": "Most depositions in the Protein Data Bank reflect only an averaged, single ground state set of atomic coordinates (Furnham et al., 2006), ignoring weak but potentially biologically rich signals encoding alternative conformations sampled by distinct copies of the protein in the experiment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The two ways to model conformational heterogeneity present in the sample are to create ensembles or use alternative conformations (multiconformers).",
+    "claim_type": "EXPLICIT",
+    "source": "The two ways to model the conformational heterogeneity present in the sample are to create ensembles or use alternative conformations (multiconformers) (Woldeyes et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Ensemble refinement approaches are implemented in phenix.ensemble_refinement and Vagabond.",
+    "claim_type": "EXPLICIT",
+    "source": "Ensemble refinement approaches are implemented in phenix.ensemble_refinement (Burnley et al., 2012) and Vagabond (Ginn, 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work describing these software implementations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Multiconformer models are notably easier to modify and more interpretable in software like Coot than ensemble methods that generate multiple complete protein copies.",
+    "claim_type": "EXPLICIT",
+    "source": "Multiconformer models are notably easier to modify and more interpretable in software like Coot (Emsley et al., 2010), unlike ensemble methods that generate multiple complete protein copies (Burnley et al., 2012; Ploscariu et al., 2021; Burling and Br\u00fcnger, 1994).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work and knowledge of software capabilities.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Interpreting weak density is complicated by noise arising from many sources, including crystal imperfections, radiation damage, and poor modeling in X-ray crystallography.",
+    "claim_type": "EXPLICIT",
+    "source": "Interpreting weak density is complicated by noise arising from many sources, including crystal imperfections, radiation damage, and poor modeling (Weichenberger et al., 2015; Kabsch, 2010; Karplus and Diederichs, 2012) in X-ray crystallography, and errors in particle alignment and classification, poor modeling of beam-induced motion, and imperfect Detector Quantum Efficiency in high-resolution cryo-EM (Glaeser, 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work describing sources of noise.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "qFit takes a refined single-conformer structure and either a high-resolution X-ray or cryo-EM map as input.",
+    "claim_type": "EXPLICIT",
+    "source": "As input, qFit takes a refined single-conformer structure and either a high-resolution X-ray or cryo-EM map as input, and then leverages powerful optimization algorithms to identify alternative protein (Keedy et al., 2015; Riley et al., 2021) or ligand (van Zundert et al., 2018) conformations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the qFit method supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "qFit updates include algorithmic changes to protein conformation selection based on Bayesian information criteria (BIC), B-factor sampling, and updated cryo-EM scoring.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we present updates to qFit including algorithmic changes to protein conformation selection based on Bayesian information criteria (BIC), B-factor sampling, and updated cryo-EM scoring.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the new features presented in this manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "qFit can identify alternative side-chain conformations in high-resolution cryo-EM datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "We further demonstrate that qFit can identify alternative side-chain conformations in high-resolution cryo-EM datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data presented in the manuscript showing qFit application to cryo-EM structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "qFit requires a high-resolution density map (generally better than ~2 \u00c5) and a well-refined single-conformer structure (generally Rfree below 20%).",
+    "claim_type": "EXPLICIT",
+    "source": "qFit protein is a tool that automatically identifies alternative conformations based on a high-resolution density map (generally better than ~2 \u00c5) and a well-refined single-conformer structure (generally Rfree below 20%).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the input requirements for qFit based on the method's design.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "For X-ray maps, a composite omit map is recommended as input to minimize model bias.",
+    "claim_type": "EXPLICIT",
+    "source": "For X-ray maps, we recommend using a composite omit map as input to minimize model bias (Terwilliger et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This recommendation is supported by a citation to prior work on composite omit maps.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "For each residue, qFit samples backbone conformations, side-chain dihedral angles, and B-factors.",
+    "claim_type": "EXPLICIT",
+    "source": "For each residue, qFit samples backbone conformations, side-chain dihedral angles, and B-factors (Figure 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes the qFit algorithm and is illustrated in Figure 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "qFit uses mixed quadratic programming (MIQP) and BIC to select a parsimonious multiconformer for each residue.",
+    "claim_type": "EXPLICIT",
+    "source": "Using mixed quadratic programming (MIQP) and BIC, we select a parsimonious multiconformer for each residue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the optimization approach used in qFit.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "qFit performs a collective translation of backbone atom coordinates for each residue.",
+    "claim_type": "EXPLICIT",
+    "source": "For each residue, we perform a collective translation of backbone atom (N, C, C\u03b1, O) coordinates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a specific step in the qFit algorithm.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "If the model has anisotropic B-factors, backbone translation is guided by the anisotropic B-factors of the C\u03b2.",
+    "claim_type": "EXPLICIT",
+    "source": "If the model has anisotropic B-factors, this translation is guided by the anisotropic B-factors of the C\u03b2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how qFit handles anisotropic B-factors in the algorithm.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "For aromatic residues (His, Tyr, Phe, Trp), qFit samples the C\u03b1-C\u03b2-C\u03b3 angle.",
+    "claim_type": "EXPLICIT",
+    "source": "For aromatic residues (His, Tyr, Phe, Trp), qFit takes the conformations from the backbone step (above) and builds part of the side chain out to C\u03b3 (start of the aromatic ring) based on the input model coordinates (Figure 1A.2). Then, we alter the C\u03b1-C\u03b2-C\u03b3 angle ('the aromatic angle') in steps of \u00b13.75\u00b0, extending to \u00b17.5\u00b0, creating five partial side-chain conformations per backbone conformation.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This describes a specific sampling step for aromatic residues in the qFit algorithm, illustrated in Figure 1A.2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "qFit samples around the \u03c71 dihedral angle by enumerating a conformation every 6\u00b0 for 24\u00b0 on each side of an idealized rotamer angle.",
+    "claim_type": "EXPLICIT",
+    "source": "We sample around the \u03c71 dihedral angle by enumerating a conformation every 6\u00b0 for 24\u00b0 on each side of an idealized rotamer (Xie et al., 2020) angle.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the dihedral angle sampling procedure in qFit, with a citation to the rotamer library used.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The BIC provides a numerical value of the tradeoff between the difference between the calculated and experimental density and the number of parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "The BIC provides a numerical value of the tradeoff between the difference between the calculated and experimental density (residual sum of squares) and the number of parameters (k).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes how BIC is used in the qFit algorithm.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The qFit model has a lower (improved) Rfree value for 76% (109/144) of structures compared to deposited models.",
+    "claim_type": "EXPLICIT",
+    "source": "The qFit model has a lower (improved) Rfree value for 76% (109/144) of structures (Figure 2A, Figure 2\u2014figure supplement 2A, Supplementary file 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data presented in Figure 2A and supplementary materials.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "On average, there is an absolute decrease of Rfree value by 0.6% between deposited and qFit models.",
+    "claim_type": "EXPLICIT",
+    "source": "On average, there is an absolute decrease of Rfree value by 0.6% (median deposited models Rfree: 18.1%, median qFit models Rfree: 17.5%), which is in line with theoretical expectations for the increase in model complexity created by qFit (Holton et al., 2014; Vitkup et al., 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis and citations to theoretical work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "qFit models have similar R-gap values compared to deposited models (mean: 3.0% for both models).",
+    "claim_type": "EXPLICIT",
+    "source": "qFit models have similar R-gap values compared to deposited models (mean: 3.0% for both models).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis comparing R-gap values.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Only 2.9% of residues in the deposited models were multiconformers (two or more alternative conformations, n = 970).",
+    "claim_type": "EXPLICIT",
+    "source": "Only 2.9% of residues in the deposited models were multiconformers (two or more alternative conformations, n = 970).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis of the deposited models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "40.7% (n = 11,049) of residues in the qFit models were multiconformers.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, 40.7% (n = 11,049) of residues in the qFit models were multiconformers (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data presented in Figure 2C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The vast majority (92.5%) of multiconformer residues in the qFit models have only two alternative conformations.",
+    "claim_type": "EXPLICIT",
+    "source": "The vast majority (92.5%) of multiconformer residues in the qFit models have only two alternative conformations; only 2.4% of residues have more than two alternative conformations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis of qFit models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "93.7% of residues (n = 42,626) in the dataset are classified as 'Consistent' between deposited and qFit models.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall this category, 'Consistent', represents 93.7% of residues (n = 42,626) in the dataset.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis comparing rotamer assignments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "2.38% of residues (n = 1082) are classified as 'Additional Rotamer(s) in qFit model'.",
+    "claim_type": "EXPLICIT",
+    "source": "This category, Additional Rotamer(s) in qFit model, represents 2.38% of residues (n = 1082).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis comparing rotamer assignments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "qFit models had improved MolProbity scores compared to deposited models (1.27 median deposited vs. 1.09 median qFit, p=0.006 from two-sided t-test).",
+    "claim_type": "EXPLICIT",
+    "source": "Compared to deposited models, qFit models had improved MolProbity scores (1.27 median deposited vs. 1.09 median qFit, p=0.006 from two-sided t-test; Figure 3A), which indicated that overall qFit improves the geometry while also usually improving fit to data.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data presented in Figure 3A with statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "qFit models have considerable improvements in bond lengths (RMSD between idealized values: 0.010 \u00c5 median deposited vs. 0.007 \u00c5 median qFit, p=0.021 from two-sided t-test).",
+    "claim_type": "EXPLICIT",
+    "source": "This included considerable improvements in bond lengths and angles in the qFit models (RMSD between idealized values for bond lengths: 0.010 \u00c5 median deposited vs. 0.007 \u00c5 median qFit, p=0.021 from two-sided t-test; RMSD between idealized values for bond angles: 1.30\u00b0 median deposited vs. 0.91\u00b0 median qFit, p=3.79e-16 from two-sided t-test; Figure 3B and C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data presented in Figure 3B with statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "qFit models have considerable improvements in bond angles (RMSD between idealized values: 1.30\u00b0 median deposited vs. 0.91\u00b0 median qFit, p=3.79e-16 from two-sided t-test).",
+    "claim_type": "EXPLICIT",
+    "source": "This included considerable improvements in bond lengths and angles in the qFit models (RMSD between idealized values for bond lengths: 0.010 \u00c5 median deposited vs. 0.007 \u00c5 median qFit, p=0.021 from two-sided t-test; RMSD between idealized values for bond angles: 1.30\u00b0 median deposited vs. 0.91\u00b0 median qFit, p=3.79e-16 from two-sided t-test; Figure 3B and C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data presented in Figure 3C with statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "qFit models have improved clashscores (2.50 median deposited, 1.80 median qFit, p=0.0028 from two-sided t-test).",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, qFit models have improved clashscores (2.50 median deposited, 1.80 median qFit, p=0.0028 from two-sided t-test; Figure 3D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data presented in Figure 3D with statistical analysis.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The ultra-high-resolution structure of the SARS-CoV-2 Nsp3 macrodomain (PDB: 7KR0) had a high proportion of residues (47%) manually modeled as alternative conformations.",
+    "claim_type": "EXPLICIT",
+    "source": "This model had a high proportion of residues (47%) manually modeled as alternative conformations and did not employ qFit during model building or refinement, making it an ideal comparison structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the properties of the 7KR0 structure used for validation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "50 out of the 169 residues (30%) in the ground truth 7KR0 model are classified as multiconformers using a 0.5 \u00c5 RMSD cutoff.",
+    "claim_type": "EXPLICIT",
+    "source": "From this cutoff, 50 out of the 169 residues (30%) in the ground truth model are classified as multiconformers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis of the 7KR0 structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "qFit is consistently strong at capturing single-conformer residues across resolutions.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed that qFit is consistently strong at capturing single-conformer residues (single conformer match) across resolutions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis of qFit performance on synthetic data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "qFit shows a drop off of detecting alternative conformations beyond resolutions of ~1.8\u20132.0 \u00c5.",
+    "claim_type": "EXPLICIT",
+    "source": "We did observe a drop off of detecting alternative conformations (multiconformer match) beyond resolutions of ~1.8\u20132.0 \u00c5 (Figure 4B, Figure 4\u2014figure supplement 1C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data presented in Figure 4B and supplementary figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "8.21% (n = 64) of residues in the deposited cryo-EM models had at least two alternative conformers compared with 39.6% (n = 266) in the qFit model.",
+    "claim_type": "EXPLICIT",
+    "source": "Across the first asymmetric unit of the eight models, 8.21% (n = 64) of residues in the deposited model had at least two alternative conformers in the deposited structure compared with 39.6% (n = 266) in the qFit model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis of cryo-EM structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "qFit correctly models 77% of residues in the first asymmetric unit of the apoferritin structure (PDB: 7A4M).",
+    "claim_type": "EXPLICIT",
+    "source": "qFit correctly models 77% of residues in the first asymmetric unit.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis comparing qFit to the deposited apoferritin structure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "qFit can uncover widespread conformational heterogeneity that better represents the true underlying conformational ensemble data as demonstrated by lower Rfree values.",
+    "claim_type": "EXPLICIT",
+    "source": "Here we demonstrate that qFit can uncover widespread conformational heterogeneity that better represents the true underlying conformational ensemble data as demonstrated by lower Rfree values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim supported by the data presented throughout the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "qFit can reliably pick up on alternative conformers that were modeled manually.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, we determine that qFit can reliably pick up on alternative conformers that were modeled manually, highlighting that qFit could be used as a tool to significantly speed up modeling of high-resolution structures.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data comparing qFit models to manually modeled structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "qFit needs a high-resolution map to be able to detect signal from noise.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our data here show that not only does qFit need a high-resolution map to be able to detect signal from noise, it also requires a very well-modeled structure as input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on inference from the resolution dependence data presented in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "qFit requires a very well-modeled structure as input.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our data here show that not only does qFit need a high-resolution map to be able to detect signal from noise, it also requires a very well-modeled structure as input.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on inference from the performance data showing poor results with high Rfree input structures.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Current classification approaches do not allow sorting based on signals as small as alternative side-chain conformations.",
+    "claim_type": "EXPLICIT",
+    "source": "Current classification approaches do not allow sorting based on signals as small as alternative side-chain conformations (Zhong et al., 2021; Chen and Ludtke, 2021; Kinman et al., 2023), necessitating approaches like qFit for modeling.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work on classification methods.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "There are disparities in how cryo-EM maps are sharpened and how masks are used to exclude noise or lower experimental signals.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, there are still disparities in how maps are sharpened and how masks are used to exclude noise or lower experimental signals, such as solvent (Wang et al., 2022; Lawson et al., 2021), making it very challenging to evaluate whether models, especially multiconformer or ensemble models, have improved fit to the data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work discussing cryo-EM map processing challenges.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Subpar modeling of the macromolecule(s) and surrounding solvent is a major potential avenue to further reduce R-factors.",
+    "claim_type": "EXPLICIT",
+    "source": "Simulations have demonstrated that subpar modeling of the macromolecule(s) and surrounding solvent is a major potential avenue to further reduce R-factors (Holton et al., 2014; Vitkup et al., 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior simulation work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The current data format for structural models (PDB, mmCIF) does not allow for more complex representation of ensembles.",
+    "claim_type": "EXPLICIT",
+    "source": "But the current data format for structural models (PDB, mmCIF) does not allow for more complex representation of ensembles.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge of the limitations of current file formats.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "qFit is compatible with manual modification and further refinement as long as the subsequent software uses the PDB standard altloc column.",
+    "claim_type": "EXPLICIT",
+    "source": "qFit is compatible with manual modification and further refinement as long as the subsequent software uses the PDB standard altloc column, as is common in most popular modeling and refinement programs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is based on knowledge of software compatibility with PDB format standards.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "AlphaFold has achieved stunning success in predicting protein structure by training against single-conformation models.",
+    "claim_type": "EXPLICIT",
+    "source": "While AlphaFold (Jumper et al., 2021) has achieved stunning success in predicting protein structure by training against single-conformation models, future improvements to structure prediction might be gained by more accurately modeling the extent of conformational heterogeneity (Lane, 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to AlphaFold and a discussion of future directions.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Future improvements to structure prediction might be gained by more accurately modeling the extent of conformational heterogeneity.",
+    "claim_type": "EXPLICIT",
+    "source": "While AlphaFold (Jumper et al., 2021) has achieved stunning success in predicting protein structure by training against single-conformation models, future improvements to structure prediction might be gained by more accurately modeling the extent of conformational heterogeneity (Lane, 2023).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about future directions, supported by a citation.",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The test dataset consisted of 144 high-resolution (1.2\u20131.5 \u00c5) X-ray crystallography structures deposited in the PDB.",
+    "claim_type": "EXPLICIT",
+    "source": "To test the impact of algorithmic changes in qFit, we created a dataset of 144 high-resolution (1.2\u20131.5 \u00c5) X-ray crystallography structures deposited in the PDB (Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the dataset used for testing qFit.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "The test dataset structures were single-chain protein structures with no ligands or mutations.",
+    "claim_type": "EXPLICIT",
+    "source": "These were single-chain protein structures (in the asymmetric unit and at the level of biological assembly) and contained no ligands or mutations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the selection criteria for the test dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "The maximum sequence identity between any two structures in the test dataset was set as 30%.",
+    "claim_type": "EXPLICIT",
+    "source": "The maximum sequence identity between any two structures was set as 30%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the diversity criteria for the test dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The test dataset structures represented 72 folds based on CATH classification.",
+    "claim_type": "EXPLICIT",
+    "source": "Based on CATH classification (Orengo et al., 1997), the resultant entries represented 72 folds (Supplementary file 1).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the structural diversity of the test dataset, with a citation to CATH.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "qFit has implemented a new scheme to divide the density map into portions centered around each residue to handle large cryo-EM maps.",
+    "claim_type": "EXPLICIT",
+    "source": "We have now implemented a new scheme to divide the density map into portions centered around each residue of interest and feed those portions of the map into our parallelization.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a new computational feature of qFit.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "qFit now uses electron scattering factors when calculating the modeled electron density for cryo-EM structures.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we now use electron scattering factors when calculating the modeled electron density.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a new feature for cryo-EM compatibility in qFit.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "qFit has removed bulk solvent electron density values for cryo-EM structures.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, we have removed bulk solvent electron density values (set at 0.3 in X-ray qFit protein).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a modification for cryo-EM compatibility in qFit.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "qFit restricted the occupancy threshold cardinality to 0.3 for cryo-EM structures compared to 0.2 in X-ray qFit protein.",
+    "claim_type": "EXPLICIT",
+    "source": "We also restricted the occupancy threshold cardinality to be 0.3 (compared to 0.2 in X-ray qFit protein) to reduce misplaced conformations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a parameter adjustment for cryo-EM compatibility in qFit.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "qFit has switched from IBM CPLEX to CVXPY, an open-source QP and MIQP solver.",
+    "claim_type": "EXPLICIT",
+    "source": "qFit previously relied on IBM CPLEX to score conformations. While this is free to academics, it is not open source. We have switched to CVXPY, an open-source QP and MIQP solver (Agrawal et al., 2018; Diamond and Boyd, 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a software implementation change in qFit, with citations to CVXPY.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "qFit now outputs a restraint file for group occupancy refinement during X-ray refinement.",
+    "claim_type": "EXPLICIT",
+    "source": "To help refine segments (i.e., sets of residues with alternative conformations flanked by residues with only a single conformation) during X-ray refinement, we now output a restraint file at the end of the qFit protein run for X-ray refinement.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a new feature for refinement in qFit.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "qFit iteratively runs five macrocycles of refinement followed by removal of conformations with occupancy less than 0.10.",
+    "claim_type": "EXPLICIT",
+    "source": "We iteratively run five macrocycles of refinement followed by a script that removes any conformations with occupancy less than 0.10.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the iterative refinement protocol used with qFit.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The lack of consistent map handling, validation, and metrics with cryo-EM structures and maps is a major impediment to further development of qFit for cryo-EM.",
+    "claim_type": "EXPLICIT",
+    "source": "While we have made significant progress in modeling alternative conformations in cryo-EM data, the lack of consistent map handling, validation, and metrics with cryo-EM structures and maps is a major impediment to further development.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the challenges encountered in applying qFit to cryo-EM data.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Only eight out of 22 structures with depositor-provided resolution better than 2 \u00c5 have a resolution better than 2 \u00c5 when calculated by EMDB.",
+    "claim_type": "EXPLICIT",
+    "source": "However, only eight of these structures have a resolution better than 2 \u00c5 (FSC at 0.143) when calculated by the Electron Microscopy Data Bank (EMDB) (Chiu et al., 2021).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes a discrepancy in resolution reporting for cryo-EM structures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "qFit identified new rotamers for Leu58 (tp) and Met175 (ttp and mtp) in the Pyrococcus horikoshii fibrillarin pre-rRNA processing protein (PDB: 1G8A).",
+    "claim_type": "EXPLICIT",
+    "source": "Among these residues, qFit identified well-justified alternative conformations for residues Leu58, Phe69, and Met175, including new rotamers for Leu58 and Met175, that were not present in the deposited model (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This claim is supported by data shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "qFit identified potential coupled motions between alternative conformers in the Pyrococcus horikoshii fibrillarin structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Beyond detecting alternative conformers in each of these residues, the qFit labeling process identified potential coupled motions between the alternative conformers. For example, when Leu58 is in the 'up' position (altloc A), Phe69 is also in the 'up' position (altloc A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the altloc labeling patterns observed in the qFit model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "24% of the qFit models have worse Rfree than the deposited models (n = 35).",
+    "claim_type": "EXPLICIT",
+    "source": "Despite this general trend of improved models, 24% of the qFit models have worse Rfree than the deposited models (n = 35).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by data analysis of Rfree values.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The majority of structures with worse qFit Rfree had a deposited model Rfree of over 20%.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of these structures had a deposited model Rfree of over 20%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is based on data analysis of structures where qFit performed poorly.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "qFit is best employed at a late stage of modeling, after the single-structure model is of sufficient quality that it would be deposited in the PDB.",
+    "claim_type": "EXPLICIT",
+    "source": "It further suggests that qFit is best employed at a late stage of modeling, after the single-structure model is of sufficient quality that it would be deposited in the PDB.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the observation that qFit performs poorly with low-quality input models.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

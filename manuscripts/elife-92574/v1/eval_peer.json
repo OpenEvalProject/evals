@@ -1,0 +1,191 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The HFS framework identified 3619 independent HFS\u2013trait associations across 14 complex traits in UK Biobank. The authors claim HFS-based association tests had adequate power and did not introduce additional p-value inflation, though HFS did not improve power to detect marginal effects compared to SNP-based GWAS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the method identifies trait associations but express concern about 'how the quality of these associations compares to those detected using conventional methods.' The editor notes it is 'unclear how the quality of these associations compares' and requests 'additional work assessing this method's power and characterizing false positives / false negative regions.' This indicates uncertainty about the validity and quality of the associations despite the reported statistical measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Fine-mapping with HFS + SUSIE identified 2699 causal loci\u2013trait associations (PIP >0.95), representing a median increase of 63 causal findings per trait compared to SNP-based methods. The authors validated these findings through enrichment for causal SNPs, heritability tagging, LDSC analysis, and simulation studies showing high accuracy (median AUC = 0.92) and low FDR (median 0.059).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer raises a critical concern that 'HFS-based association is going to miss coding variation as well as noncoding regulatory variants such as splicing variants/polyadenylation variants which are not modeled by Sei. This will lead to false negatives in the HFS-based association and additionally false negatives + associated false positives in the finemapping.' Another reviewer notes concerns about window choice effects and false positives from correlated neighboring windows. While the validation analyses are acknowledged, these methodological limitations create uncertainty about the completeness and accuracy of the fine-mapping results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "HFS-based enrichment analysis identified 727 pathway\u2013trait associations and 153 tissue\u2013trait associations with strong biological interpretability, including well-established connections like 'circadian pathway-chronotype' and 'megakaryocyte differentiation-platelet count' as well as novel associations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer explicitly states 'the findings are largely biologically interpretable' and another notes 'the finemapping and pathway identification analyses suggest that HFS-based associations identify relevant causal pathways and genes from an association study.' The biological plausibility of the enrichment results is not questioned by reviewers, indicating acceptance of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Integration of fine-mapping, pathway, and tissue enrichment analyses highlighted specific candidate genes for traits, including RBBP5 for platelet count and five genes (LTA, LTB, TNF, PSMB8, PSMB9) in the MHC region for asthma. HFS + SUSIE showed superior resolution compared to SNP-based fine-mapping in complex regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these specific gene identification results. One reviewer notes 'the finemapping and pathway identification analyses suggest that HFS-based associations identify relevant causal pathways and genes,' implicitly supporting these integrated analyses. The case studies are presented as examples of the method's utility and are not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Integration of HFS prediction scores with SNP-based polygenic risk scores using LASSO regression showed 16.1\u201339.8% improvement in cross-ancestry polygenic prediction across non-British European, South Asian, East Asian, and African populations, outperforming integration with other SNP-based methods (PolyFun-pred, SbayesRC).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer explicitly states the method 'can slightly improve polygenic scores when combined with standard SNP-based PRS' and another notes 'identifying associations at the level of functional genomics increases portability of PRSs across populations.' The cross-ancestry prediction improvements are acknowledged as a strength without specific critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C89"
+    ],
+    "result": "The correlation between sequence class scores of adjacent loci was low (median R2 = 0.013), much lower than SNP LD, which the authors claim enhances the precision of statistical fine-mapping. This low LD was attributed to integration of rare variants and genome segmentation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer raises concern that 'Sei predicts chromatin status / ChIP-seq peaks in the center of a 4kb region. It is thus not clear therefore whether the functional effects of variants not in the center of the 4kb region would be captured in a single Sei score. It also remains unclear how much the choice of window affects the association tests / finemapping.' Another notes 'there are going to be cases where there's an association driven by a variant that is correlated with a Sei prediction in a neighboring window. These would represent false positives.' These concerns about window effects and potential false positives create uncertainty about the claimed advantages of low LD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "HFS captures only variant effects mediated by functional genomics and cannot capture coding variants, with HFS-based prediction models capturing approximately 70% of the variance explainable by SNP-based models. The authors recommend SNP-based analysis should be prioritized in coding regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer explicitly states 'HFS-based association is going to miss coding variation as well as noncoding regulatory variants such as splicing variants/polyadenylation variants which are not modeled by Sei.' The authors acknowledge this limitation and the reviewers accept it as an inherent constraint of the method. The recommendation to prioritize SNP-based analysis in coding regions is consistent with reviewer concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The computational requirements of the HFS framework are substantial, with the genotype-to-haplotype transformation requiring hundreds of thousands of CPU core hours and Sei requiring about 1.8 GPU hours per million sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer explicitly notes 'while not a weakness of the manuscript, the proposed method is computationally intensive.' This acknowledges the computational burden without treating it as a critical flaw, indicating acceptance of this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21"
+    ],
+    "result": "The human genome was segmented into 617,378 discrete 4096 bp loci, of which 590,959 carried at least one non-reference haplotype in the UKB cohort, containing approximately 1.2 billion haplotypes. Substantial haplotype diversity was observed, with 49.7% of loci showing different sequence classes from reference and simulation showing reference class scores could capture median 70% of association R2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer questions 'whether the functional effects of variants not in the center of the 4kb region would be captured in a single Sei score' and notes 'it remains unclear how much the choice of window affects the association tests / finemapping.' These concerns about the 4096 bp window choice and its effects on capturing variant impacts create uncertainty about the appropriateness of the genome segmentation strategy.",
+    "result_type": "MINOR"
+  }
+]

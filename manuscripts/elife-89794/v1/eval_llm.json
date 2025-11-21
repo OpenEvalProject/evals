@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C46"
+    ],
+    "result": "The manuscript establishes that inhomogeneous diffusivity is a known feature of the cellular interior based on prior research. Multiple recent studies have documented position-dependent diffusivity in cells, providing the biological context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, and C46 are well-supported by multiple citations to prior experimental work demonstrating heterogeneous diffusivity in cellular environments. These claims appropriately characterize the state of prior knowledge and provide valid motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C16",
+      "C47"
+    ],
+    "result": "The authors identify a gap in current knowledge: while inhomogeneous diffusivity has been documented, its implications for particle mobility, concentration, compartmentalization, and mesoscale dynamics remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C16, and C47 accurately characterize the knowledge gap that motivates this study. These are reasonable statements about the current state of the field that justify the research direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C48"
+    ],
+    "result": "Using agent-based simulations under the It\u00f4 convention, the authors demonstrate that particles accumulate in low-diffusivity zones in both step-like and smooth diffusivity gradients. This accumulation, termed 'diffusive lensing,' is consistent with theoretical predictions and represents the core phenomenon investigated in the manuscript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C22, and C48 are well-supported by simulation data (Figures 1A-D) and agreement with theoretical predictions from Tupper and Yang (2012). The simulations appropriately implement the It\u00f4 convention and demonstrate the accumulation phenomenon clearly. However, the biological relevance depends critically on whether the It\u00f4 convention is the appropriate model for cellular systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors acknowledge the It\u00f4-Stratonovich dilemma: different mathematical interpretations of stochastic diffusion with position-dependent diffusivity yield different physical predictions, and the appropriate convention depends on microscopic parameters not captured in coarse-grained models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C67-C69 accurately describe a well-established theoretical issue in modeling inhomogeneous diffusion, supported by appropriate citations. The authors appropriately acknowledge this fundamental ambiguity, though the choice of It\u00f4 convention for cellular systems requires stronger justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors justify their use of the It\u00f4 convention for modeling the nonequilibrium cellular interior while acknowledging that other conventions may be more appropriate in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C73 acknowledge methodological choices but provide limited justification for why the It\u00f4 convention is appropriate for cellular systems beyond citing that cells are nonequilibrium. The citations provided (Gnesotto et al., 2018; Phillips et al., 2012) support the nonequilibrium nature of cells but do not directly validate the It\u00f4 convention choice. This is a critical assumption that affects all subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C54"
+    ],
+    "result": "The authors demonstrate that diffusive lensing modulates interaction-mediated clustering in a manner dependent on the relative strengths and timescales of diffusive lensing versus inter-particle interactions. At low interaction strength, clustering occurs only in low-diffusivity regions, while at high interaction strength, clustering occurs throughout the simulation region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 and C54 are supported by simulation data (Figure 2 and supplements) showing differential clustering behavior under weak versus strong interaction regimes. The neighbor-sensing interaction model is heuristic but reasonable for exploring the interplay between diffusive lensing and clustering. The conclusions about relative timescales are appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C52",
+      "C62"
+    ],
+    "result": "Using in silico microrheology (MSD analysis), the authors show that inhomogeneous diffusivity creates apparent confinement effects that differ from homogeneous diffusion. Particles in diffusivity gradients exhibit intermediate dynamics between high and low diffusivity extremes, with reduced saturation MSD indicating effective confinement. The diffusion coefficient alone is insufficient to describe dynamics in heterogeneous environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38, C52, and C62 are well-supported by MSD analysis (Figure 3 and supplements) with appropriate sample sizes (10,000 trajectories). The findings that saturation MSD depends on diffusivity distribution rather than just average diffusivity, and that position of low-diffusive zones matters, are clearly demonstrated. The conclusion that a single diffusion coefficient is insufficient is a logical inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Using in silico FRAP, the authors demonstrate that inhomogeneous diffusivity creates 'diffusive highways' where bulk regions between low-diffusive granules enable faster effective dynamics than equivalent homogeneous diffusivity distributions. The decrease in mobility arises from increased dwell times in low-diffusive granules, and dynamics can be tuned by modulating diffusivity distribution parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C57-C59 are supported by in silico FRAP simulations (Figure 4 and supplements) showing that heterogeneous diffusivity distributions produce faster recovery than homogeneous distributions with the same weighted-average diffusivity. The mechanistic explanation involving fluxes and dwell times is supported by the data. The concept of 'diffusive highways' is a reasonable interpretation of the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C50",
+      "C51",
+      "C77"
+    ],
+    "result": "The authors propose that diffusive lensing is relevant for living systems, may be a key driver of mesoscale cytoplasmic dynamics with far-reaching implications for biochemical processes, can occur across a wide parameter space, and may be ubiquitous in living systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C6, C50, C51, and C77 make broad statements about biological relevance that are not directly supported by the simulation data. While the simulations demonstrate the phenomenon under the It\u00f4 convention, the biological relevance depends on: (1) whether the It\u00f4 convention appropriately describes cellular diffusion, (2) whether the parameter ranges explored are biologically relevant, and (3) experimental validation in living cells. The authors appropriately mark some claims as speculative (C51), but others are stated more definitively than the evidence supports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C70"
+    ],
+    "result": "The authors speculate about potential implications of diffusive lensing for biochemical reaction rates, positive feedback loops in systems where particle concentration affects diffusivity, cellular compensation mechanisms, and modulation by various sources of diffusivity heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55, C56, C60, C61, and C70 are explicitly speculative or qualified with 'may.' These represent reasonable hypotheses based on the simulation results but lack direct supporting evidence. They appropriately identify directions for future work but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors cite prior work establishing relationships between diffusivity and viscosity, the role of viscosity in protein mobility and potentially activity, examples of accumulation phenomena at various scales, and changes in viscosity during cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, C12, C14, C15, and C63-C65 appropriately cite prior research to establish context. Claim C11 about viscosity influencing protein activity is appropriately qualified as speculative and supported by citations. These claims accurately represent prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors claim that their 2D simulation results extend directly to 3D because diffusion equations contain additive, separable contributions from each dimension, and that 2D simulations were chosen for simplicity and visualization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C79, and C80 assert that 2D results extend to 3D based on mathematical separability. While the mathematical argument (C79) is correct for the diffusion equation itself, the claim that all conclusions extend directly to 3D (C49) is not rigorously demonstrated. Geometric effects, packing constraints, and flux dynamics may differ in 3D. This limitation should be acknowledged more explicitly or validated with 3D simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C66",
+      "C74"
+    ],
+    "result": "The authors connect their findings to prior observations of anomalous diffusion in cells, note that mechanisms maintaining position-dependent diffusivity remain unclear, and recommend future experimental work examining diffusivity distributions and their temporal evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C66, and C74 appropriately connect the work to prior observations, acknowledge knowledge gaps, and suggest reasonable directions for future research. These are well-justified based on the simulation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The authors speculate that diffusive lensing could represent a rudimentary mode of prebiotic compartmentalization, with lensing-driven accumulation potentially serving as an antecedent to more sophisticated organizational modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75 and C76 are explicitly marked as speculative and represent highly hypothetical extensions of the work to prebiotic chemistry. While creative, these claims lack any supporting evidence and make assumptions about prebiotic conditions that are not validated. This speculation is interesting but should be clearly distinguished from the supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors describe their computational methods: 2D agent-based random walk simulations with E. coli-like geometry, It\u00f4 convention implementation, neighbor-sensing interaction model, MSD analysis from 10^4 trajectories, and in silico FRAP with specified parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C81, C83-C86, C88, C91-C93, and C95-C100 provide methodological details that are internally consistent and adequately described. The use of fixed random seeds (C85) supports reproducibility. Sample sizes appear adequate for the analyses performed. The methods are appropriate for the research questions, though the fundamental choice of It\u00f4 convention remains a critical assumption.",
+    "result_type": "MINOR"
+  }
+]

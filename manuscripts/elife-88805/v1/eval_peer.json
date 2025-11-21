@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C29",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors demonstrate that in a network model with heterogeneous plasticity rules (varying degrees of temporal symmetry), retrieval speed can be controlled by varying external inputs. Neurons with symmetric plasticity act as 'brakes' slowing dynamics, while neurons with asymmetric plasticity act as 'accelerators.'",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this as a 'novel alternative to other mechanisms proposed in the literature' and describe the use of heterogeneous plasticity rules to allow external currents to control speed as a valuable contribution. The mechanism is characterized as convincing through simulations and theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C71"
+    ],
+    "result": "The model demonstrates that networks with heterogeneous plasticity can generate transitions between fixed-point attractor-like 'preparatory' periods and sequential 'execution' phases by modulating external input. With nonlinear plasticity rules, retrieval can be stopped completely, creating stable persistent activity states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the model's ability to demonstrate transitions between preparatory and execution activity as part of the 'convincing characterization of relevant properties of recall via simulations and theory.' This finding is treated as a key feature of the model's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "Networks with uniform distribution of heterogeneity in plasticity rules (rather than bimodal) exhibit qualitatively similar flexible sequence retrieval, though stable persistent activity requires a finite fraction of neurons with symmetric plasticity rules.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about these findings, which are presented as extensions demonstrating the robustness of the main mechanism. The characterization is described as convincing, implicitly accepting these supporting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C72"
+    ],
+    "result": "A reinforcement learning rule can be used to learn the mapping between external input values and desired retrieval speed, and once learned, this mapping generalizes to control the speed of other stored sequences without relearning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers describe the overall characterization of the model as convincing and do not challenge the learning mechanism. The generalization property is treated as part of the model's advantages over prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C73"
+    ],
+    "result": "The speed control mechanism extends to spiking neural networks, where small external input biases (~1mV) are sufficient to generate temporal rescaling of approximately 2-fold, provided the excitatory network is subdivided into asymmetric and symmetric neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the 'convincing characterization' through simulations, which includes the spiking network implementation. No concerns are raised about the extension to spiking networks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "In networks with homogeneous or bimodal plasticity distributions, retrieval speed depends on the parameter z (degree of temporal symmetry) and on external inputs to symmetric and asymmetric populations. The magnitude (not sign) of input determines speed, and nonlinear plasticity rules enable a wider range of speeds than bilinear rules.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers describe the characterization of model properties as convincing and do not challenge these specific quantitative findings about speed control mechanisms. These are treated as part of the thorough analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Single neuron activity in the heterogeneous network is temporally sparse, and the model reproduces landmark features of delayed motor tasks. Stability of persistent activity requires nonlinear dependence of plasticity on firing rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these characterizations of network dynamics. The comparison to experimental observations is implicitly accepted as part of the convincing analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The proposed mechanism differs from prior models by not requiring adaptation mechanisms, delays, or multiple training exemplars. However, the mapping between input strength and speed must be learned, though once learned it generalizes to other sequences unlike the Wang et al. 2018 model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly note this as a 'novel alternative to other mechanisms proposed in the literature,' affirming the distinctiveness and advantages of the approach compared to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The findings suggest a functional role for experimentally observed diversity in synaptic plasticity rules. Heterogeneity in temporal asymmetry could arise from biophysical parameters controlling calcium dynamics, though current experimental methods may miss heterogeneity within local networks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers note that 'a better mapping to biologically plausible mechanisms is left for future work' and that biological plausibility of learning 'remains an open question.' This indicates the biological interpretation is not fully resolved, though the discussion is deemed sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The model generates testable predictions: retrieval speed could be modified by targeting symmetric vs. asymmetric populations with different external inputs or optogenetic stimulation, these populations should have distinct plasticity profiles, and 'null' input directions should exist where speed is unchanged.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the predictions, which are presented as logical consequences of the model. The predictions are implicitly accepted as part of the valuable analysis, though their experimental validation is acknowledged as future work.",
+    "result_type": "MINOR"
+  }
+]

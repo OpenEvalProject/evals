@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "circHIPK3 knockdown in bladder cancer cell lines UMUC3 and J82 results in thousands of differentially expressed genes with high reproducibility between cell lines, without affecting the linear HIPK3 transcript or protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively demonstrate successful specific knockdown of circHIPK3 (C4) leading to differential expression of thousands of genes (C5) with significant overlap between cell lines (C6, C7). The experimental design, statistical analysis (FDR <0.1), and biological replicates support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C102"
+    ],
+    "result": "circHIPK3 does not function as a miRNA sponge, as miRNA target sites are not enriched in downregulated genes upon circHIPK3 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C102 provide consistent evidence against miRNA sponging. Despite identifying 11 conserved miRNA target sites (C8), statistical testing shows no enrichment of these sites in downregulated genes (C9, p > 0.05). This contradicts prior literature but is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C103"
+    ],
+    "result": "An 11-mer motif (AGGCCCCC(A/T)GC) within circHIPK3 is significantly enriched in genes downregulated upon circHIPK3 knockdown across multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 demonstrate identification of the 11-mer motif using computational methods (Regmex) and show statistically significant enrichment (p < 1e-28 to p < 1e-39) in downregulated genes across UMUC3, J82, and FL3 cell lines. The consistency across cell lines strengthens this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C104",
+      "C105"
+    ],
+    "result": "The 11-mer motif in circHIPK3 constitutes a binding site for IGF2BP2, as demonstrated by eCLIP data analysis and RNA immunoprecipitation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C18-C19 provide convergent evidence from computational (eCLIP) and experimental (RIP) approaches. The RIP experiments show strong specific binding of circHIPK3 to IGF2BP2 but not to control proteins (GRWD1) or mRNAs (ACTB), supporting the specificity of the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C70",
+      "C106",
+      "C107"
+    ],
+    "result": "IGF2BP2 knockdown counteracts the effects of circHIPK3 knockdown, with genes containing IGF2BP2-binding sites and the 11-mer motif showing opposite regulation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C70, C106-C107 demonstrate reciprocal effects of circHIPK3 and IGF2BP2 knockdowns with statistical significance (p < 2.2e-16 for overlap, p < 6e-19 for motif enrichment). The consistency across multiple cell lines and the opposing regulatory patterns strongly support a functional relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Proliferation pathways including E2F targets and G2/M checkpoint are upregulated upon circHIPK3 knockdown but downregulated upon IGF2BP2 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 show opposing effects on proliferation pathways with statistical significance (p < 0.05) using gene set enrichment analysis. However, the functional significance is somewhat limited as claim C4 notes only subtle differences in cell cycle distribution by flow cytometry, suggesting the pathway changes may not translate to strong phenotypic effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C108",
+      "C110"
+    ],
+    "result": "STAT3 is a specific target of the circHIPK3-IGF2BP2 axis, with STAT3 mRNA being downregulated upon circHIPK3 knockdown and showing increased IGF2BP2 binding after circHIPK3 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 provide multiple lines of evidence: STAT3 contains the 11-mer motif (C22), shows reciprocal regulation by circHIPK3 and IGF2BP2 knockdowns (C23-C24, p < 0.001), and demonstrates increased IGF2BP2 binding upon circHIPK3 depletion (C26, p < 0.007). The mechanistic chain is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C111"
+    ],
+    "result": "The 11-mer motif is necessary for circHIPK3-IGF2BP2 interaction and competition with STAT3 mRNA, as demonstrated by motif scrambling experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 shows that scrambling the 11-mer motif significantly reduces IGF2BP2 binding to circHIPK3 (~2-fold, p = 0.028) while increasing STAT3 mRNA binding (~7-fold, p = 0.036). This provides direct evidence for the motif's functional importance, though the experiment is performed in HEK293 cells rather than the bladder cancer cell lines used elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C42",
+      "C109"
+    ],
+    "result": "circHIPK3 knockdown leads to upregulation of TP53 mRNA and p53 protein, consistent with STAT3-mediated transcriptional repression of TP53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 demonstrate upregulation of TP53/p53 at both mRNA (p = 1.7e-05) and protein levels (p < 0.05 by western blot, p = 1.7e-30 for nuclear p53 by immunofluorescence) upon circHIPK3 knockdown. This is consistent with the known STAT3-TP53 regulatory relationship (C42), providing functional validation of the circHIPK3-IGF2BP2-STAT3 axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C65",
+      "C112"
+    ],
+    "result": "Absolute quantification reveals that IGF2BP2 outnumbers circHIPK3 by orders of magnitude (~40-51 circHIPK3 molecules vs ~127,500-261,000 IGF2BP2 molecules per cell), inconsistent with a simple 1:1 ceRNA model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 present careful quantification using qPCR standard curves for circHIPK3 and western blotting with purified protein for IGF2BP2. The methods are well-described and the stoichiometry clearly contradicts a simple ceRNA mechanism. However, the RT efficiency assumption (25%) for circHIPK3 quantification could affect absolute numbers, though the order of magnitude difference would remain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C60",
+      "C66",
+      "C67",
+      "C113"
+    ],
+    "result": "Ectopic expression of circHIPK3 induces IGF2BP2 condensation in cells, suggesting that circHIPK3 can nucleate multiple IGF2BP2 molecules potentially via phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 shows a significant increase in IGF2BP2 condensates upon circHIPK3 overexpression (80% vs 29%). However, this is based on overexpression experiments which may not reflect endogenous conditions. Claims C60, C66-C67 propose phase separation as a mechanism, but this is largely speculative (evidence_type includes SPECULATION). Direct evidence for phase separation (e.g., FRAP, material properties) is not provided. The condensate observation is interesting but the mechanistic interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C61"
+    ],
+    "result": "circHIPK3 expression is higher in non-muscle invasive bladder cancer compared to muscle invasive disease and positively correlates with overall survival in NMIBC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 show statistically significant associations: higher expression in NMIBC (p < 3.3e-09) and positive correlation with survival (p < 0.009, Log-Rank test) in an independent cohort of 56 NMIBC patients. The clinical relevance is well-supported, though the survival analysis uses median expression as cutoff which may not be optimal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "circHIPK3 functions as a competing endogenous RNA for IGF2BP2, regulating STAT3 expression and p53 levels through modulation of IGF2BP2 binding affinity to target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C59 and C62-C64 summarize the proposed ceRNA mechanism. While the individual experimental results support interactions between circHIPK3, IGF2BP2, and STAT3, the ceRNA interpretation is complicated by the stoichiometry problem (C34, C65, C112). The authors propose nucleation/condensation as an alternative mechanism (C60, C66), but this remains speculative. The functional relationship is supported, but the precise molecular mechanism (ceRNA vs. nucleation vs. other) remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The 11-mer motif overlaps significantly with the IGF2BP2 KH34 recognition element, and this element is enriched in downregulated genes upon circHIPK3 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 show significant overlap between the 11-mer motif and the previously identified IGF2BP2 KH34 RE (p < 2.2e-16) and enrichment in downregulated genes (p < 0.002). This provides independent validation of the 11-mer motif's relevance to IGF2BP2 binding using a different sequence definition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "circHIPK3 knockdown does not significantly affect IGF2BP2 gene expression in UMUC3 and shows only slight effects in J82 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 demonstrate that the observed effects are not due to changes in IGF2BP2 expression levels (p = 0.41 in UMUC3, p = 0.003 in J82 at later timepoints). This control is important for interpreting the mechanism as involving protein sequestration rather than transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Antisense oligonucleotide targeting of the 11-mer motif shows trends toward increased STAT3-IGF2BP2 binding and decreased circHIPK3-IGF2BP2 binding, though not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C76 report effects in the expected direction (2.9-fold increase in STAT3 binding, 30% decrease in circHIPK3 binding) but neither reaches statistical significance (p = 0.078 and p = 0.27). The ASO approach is clever but the lack of statistical significance limits the strength of this evidence. This could be due to incomplete ASO blocking or insufficient sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Wild-type and 11-mer mutant circHIPK3 are expressed at similar levels in overexpression experiments, with circHIPK3 produced in ~4-fold excess over the linear precursor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 provide important controls for the mutant circHIPK3 experiments (C27), showing that expression differences do not confound the interpretation. Northern blotting confirms similar RNase R-resistant circHIPK3 levels and qPCR shows the circular form predominates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Double knockdown of circHIPK3 and IGF2BP2 restores target mRNA expression to control levels in J82 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 provides genetic epistasis evidence supporting the ceRNA model, showing that removing both circHIPK3 and IGF2BP2 negates the effect of removing either alone. This is strong evidence for a functional relationship, though it would be strengthened by quantitative data and statistical analysis beyond the figure reference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "circHIPK3 and most circHIPK3-binding RBPs are localized to the cytoplasm, consistent with cytoplasmic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 establish appropriate subcellular localization for the proposed interactions using RNA-Seq of fractionated cells and immunofluorescence data. This is an important control, though the data are from ENCODE cell lines (HepG2, K562) rather than the bladder cancer cell lines used for functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Alternative mechanisms for circHIPK3 function are proposed, including recruitment of enzymatic modifiers or scaffolding of multiple RBPs, but these remain speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 and C92-C95 acknowledge alternative mechanisms but explicitly state these are speculative and await further experimentation. These represent honest discussion of mechanistic uncertainty rather than supported results. The authors appropriately distinguish between demonstrated interactions and speculative mechanisms.",
+    "result_type": "MINOR"
+  }
+]
